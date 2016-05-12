@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.ca5dcd998fdf.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.4822bfebc23e.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -254,7 +254,7 @@ catch(bt){}
 ;}
 ,createNamespace:qx.Bootstrap.createNamespace,setRoot:function(by){qx.$$namespaceRoot=by;}
 ,base:qx.Bootstrap.base,define:qx.Bootstrap.define,setDisplayName:qx.Bootstrap.setDisplayName,setDisplayNames:qx.Bootstrap.setDisplayNames,genericToString:qx.Bootstrap.genericToString,extendClass:function(clazz,construct,superClass,name,basename){var superproto=superClass.prototype;var helper=new Function();helper.prototype=superproto;var proto=new helper();clazz.prototype=proto;proto.name=proto.classname=name;proto.basename=basename;construct.base=superClass;clazz.superclass=superClass;construct.self=clazz.constructor=proto.constructor=clazz;}
-,__a:[],addPendingDefer:function(bA,bz){if(qx.$$loader.delayDefer){this.__a.push(bA);bA.$$pendingDefer=bz;}
+,__a:[],addPendingDefer:function(bA,bz){if(qx.$$loader&&qx.$$loader.delayDefer){this.__a.push(bA);bA.$$pendingDefer=bz;}
 else {bz.call(bA);}
 ;}
 ,executePendingDefers:function(bG){var bE=function(bK){if(bK.environment){var bI=bK.environment.required;if(bI){for(var bL in bI){var bH=bI[bL];if(bH.load&&bH.className){bC(bH.className);}
@@ -4014,7 +4014,7 @@ else {var o=d+qx.bom.storage.UserData.__cr;qx.bom.storage.UserData.__cr++ ;}
 )();
 (function(){var a="q";qx.Bootstrap.define(a,{extend:qxWeb});q=qxWeb;}
 )();
-(function(){var a="text",b="Unsupported input type.",c="nowrap",d="radio",e="textarea",f="auto",g="",h="qx.debug",j="input",k="option",m="value",n="select",o="soft",p="number",q="off",r="qx.bom.Input",s="normal",t="mshtml",u="engine.name",v="wrap",w="checkbox",x="select-one";qx.Bootstrap.define(r,{statics:{__jW:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(A,B,y){if(qx.core.Environment.get(h)){qx.core.Assert.assertKeyInMap(A,this.__jW,b);}
+(function(){var a="text",b="Unsupported input type.",c="nowrap",d="radio",e="textarea",f="auto",g="",h="qx.debug",j="input",k="option",m="value",n="select",o="soft",p="number",q="off",r="qx.bom.Input",s="normal",t="mshtml",u="engine.name",v="wrap",w="checkbox",x="select-one";qx.Bootstrap.define(r,{statics:{__jU:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(A,B,y){if(qx.core.Environment.get(h)){qx.core.Assert.assertKeyInMap(A,this.__jU,b);}
 ;var B=B?qx.lang.Object.clone(B):{};var z;if(A===e||A===n){z=A;}
 else {z=j;B.type=A;}
 ;return qx.dom.Element.create(z,B,y);}

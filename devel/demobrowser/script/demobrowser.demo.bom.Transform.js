@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Transform.b5921c72b106.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Transform.a664a736fbcf.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -254,7 +254,7 @@ catch(bt){}
 ;}
 ,createNamespace:qx.Bootstrap.createNamespace,setRoot:function(by){qx.$$namespaceRoot=by;}
 ,base:qx.Bootstrap.base,define:qx.Bootstrap.define,setDisplayName:qx.Bootstrap.setDisplayName,setDisplayNames:qx.Bootstrap.setDisplayNames,genericToString:qx.Bootstrap.genericToString,extendClass:function(clazz,construct,superClass,name,basename){var superproto=superClass.prototype;var helper=new Function();helper.prototype=superproto;var proto=new helper();clazz.prototype=proto;proto.name=proto.classname=name;proto.basename=basename;construct.base=superClass;clazz.superclass=superClass;construct.self=clazz.constructor=proto.constructor=clazz;}
-,__a:[],addPendingDefer:function(bA,bz){if(qx.$$loader.delayDefer){this.__a.push(bA);bA.$$pendingDefer=bz;}
+,__a:[],addPendingDefer:function(bA,bz){if(qx.$$loader&&qx.$$loader.delayDefer){this.__a.push(bA);bA.$$pendingDefer=bz;}
 else {bz.call(bA);}
 ;}
 ,executePendingDefers:function(bG){var bE=function(bK){if(bK.environment){var bI=bK.environment.required;if(bI){for(var bL in bI){var bH=bI[bL];if(bH.load&&bH.className){bC(bH.className);}
