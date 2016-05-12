@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.ddf50ab21105.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.ab2733d285f8.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2324,9 +2324,8 @@ else if(!qx.dom.Node.isWindow(q)){q=window;}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="qx.core.MProperty",b="get",c="reset",d="No such property: ",e="set";qx.Mixin.define(a,{members:{set:function(g,h){var f=qx.core.Property.$$method.set;if(qx.Bootstrap.isString(g)){if(!this[f[g]]){if(this[e+qx.Bootstrap.firstUp(g)]!=undefined){this[e+qx.Bootstrap.firstUp(g)](h);return this;}
@@ -2475,16 +2474,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;return false;}
 }});}
 )();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
-}});}
-)();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b="qx.debug",c="Invalid argument value 'cancelable'.",d="Cannot prevent default action on a non cancelable event: ",e="Invalid argument value 'canBubble'.",f="qx.event.type.Event";qx.Class.define(f,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{init:function(h,g){if(qx.core.Environment.get(b)){if(h!==undefined){qx.core.Assert.assertBoolean(h,e);}
 ;if(g!==undefined){qx.core.Assert.assertBoolean(g,c);}
 ;}
@@ -2557,6 +2546,17 @@ else if(!(event instanceof s)){this.error(g+v+c+event.classname+b);}
 ;}
 ;}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
+});}
+)();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
 });}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__cX:null,__cY:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__cX=c;this.__cY=d;return this;}
@@ -2779,17 +2779,17 @@ finally{qx.core.ObjectRegistry.shutdown();}
 )();
 (function(){var a="change",b="visibilityState",c="visibilitychange",d="visible",f="Hidden",g="qx.bom.PageVisibility",h="Event",j="VisibilityState",k="hidden";qx.Bootstrap.define(g,{extend:qx.event.Emitter,statics:{getInstance:function(){if(!this.$$instance){this.$$instance=new qx.bom.PageVisibility();}
 ;return this.$$instance;}
-},construct:function(document){this.__mJ=document||window.document;this.__tu();var self=this;qx.bom.Event.addNativeListener(this.__mJ,this.__hy,function(e){self.emit(a,e);}
+},construct:function(document){this.__mJ=document||window.document;this.__tv();var self=this;qx.bom.Event.addNativeListener(this.__mJ,this.__hy,function(e){self.emit(a,e);}
 );}
-,events:{"change":h},members:{__mJ:null,__ts:null,__tt:null,__hy:null,__tu:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__mJ[m]!=undefined){this.__ts=m;this.__hy=l[i].toLowerCase()+c;break;}
+,events:{"change":h},members:{__mJ:null,__tt:null,__tu:null,__hy:null,__tv:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__mJ[m]!=undefined){this.__tt=m;this.__hy=l[i].toLowerCase()+c;break;}
 ;}
-;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__mJ[m]!=undefined){this.__tt=m;break;}
+;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__mJ[m]!=undefined){this.__tu=m;break;}
 ;}
-;if(this.__ts==null){this.__ts=k;this.__hy=c;}
-;if(this.__tt==null){this.__tt=b;}
+;if(this.__tt==null){this.__tt=k;this.__hy=c;}
+;if(this.__tu==null){this.__tu=b;}
 ;}
-,isHidden:function(){return !!this.__mJ[this.__ts];}
-,getVisibilityState:function(){return this.__mJ[this.__tt]||d;}
+,isHidden:function(){return !!this.__mJ[this.__tt];}
+,getVisibilityState:function(){return this.__mJ[this.__tu]||d;}
 }});}
 )();
 (function(){var b="'!",c='Invalid include in theme "',d="fonts",e="appearances",f='The configuration key "',g="Mixin theme is not a valid theme!",h='" is not allowed!',j="icons",k="You can only define one theme category per file! Invalid theme: ",m="string",n="decorations",o="other",p="Found base flag in entry '",q="qx.debug",r='Invalid patch in theme "',s="widgets",t="[Theme ",u="borders",v="' are not compatible '",w="The mixins '",x='": ',y="' of theme '",z='" is invalid: ',A='Invalid extend in theme "',B='Invalid type of key "',C='The key "',D='"!',E="]",F='"! The value needs to be a map!',G='"! The type of the key must be "',H="undefined",I='The type of the key "',J="qx.Theme",K='The content of a meta theme must reference to other themes. The value for "',L='" inside the meta block is wrong.',M='" in theme "',N="colors",O='Invalid key "',P='"! The value is undefined/null!',Q="Theme",R="meta",S='" is not allowed inside a meta theme block.',T="'. Base flags are not allowed for themes without a valid super theme!",U="object";qx.Bootstrap.define(J,{statics:{define:function(name,W){if(!W){var W={};}
