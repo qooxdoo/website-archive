@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.324f4e039a2f.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.98d42a24c471.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5016,8 +5016,8 @@ catch(F){continue;}
 ,unsubscribe:function(o,n,p){return this.getInstance().unsubscribe(o,n,p);}
 ,dispatch:function(q){return this.getInstance().dispatch.apply(this.getInstance(),arguments);}
 ,dispatchByName:function(name,r){return this.getInstance().dispatchByName.apply(this.getInstance(),arguments);}
-},construct:function(){this.__xQ={};}
-,members:{__xQ:null,getSubscriptions:function(){return this.__xQ;}
+},construct:function(){this.__xP={};}
+,members:{__xP:null,getSubscriptions:function(){return this.__xP;}
 ,subscribe:function(t,s,v){if(!t||typeof s!=a){this.error(d+[t,s,v]);return false;}
 ;var u=this.getSubscriptions();if(this.checkSubscription(t)){if(this.checkSubscription(t,s,v)){this.warn(e+t);return false;}
 ;u[t].push({subscriber:s,context:v||null});return true;}
@@ -5036,14 +5036,14 @@ else {if(!D){D=null;}
 while(i);}
 ;}
 ;return false;}
-,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__xR(G[K],L);I=true;}
+,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__xQ(G[K],L);I=true;}
 ;}
-else {if(K===H){this.__xR(G[H],L);I=true;}
+else {if(K===H){this.__xQ(G[H],L);I=true;}
 ;}
 ;}
 ;return I;}
 ,dispatchByName:function(name,N){var M=new qx.event.message.Message(name,N);return this.dispatch(M);}
-,__xR:function(P,O){for(var i=0;i<P.length;i++ ){var R=P[i].subscriber;var Q=P[i].context;if(Q&&Q.isDisposed){if(Q.isDisposed()){P.splice(i,1);i-- ;}
+,__xQ:function(P,O){for(var i=0;i<P.length;i++ ){var R=P[i].subscriber;var Q=P[i].context;if(Q&&Q.isDisposed){if(Q.isDisposed()){P.splice(i,1);i-- ;}
 else {R.call(Q,O);}
 ;}
 else {R.call(Q,O);}
