@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.root.Inline.bdf872c71f62.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.root.Inline.98bea19758d1.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2304,23 +2304,24 @@ else if(!qx.dom.Node.isWindow(q)){q=window;}
 )();
 (function(){var a="qx.core.MEvent";qx.Mixin.define(a,{members:{__cT:qx.event.Registration,addListener:function(d,b,self,c){if(!this.$$disposed){return this.__cT.addListener(this,d,b,self,c);}
 ;return null;}
-,addListenerOnce:function(h,f,self,g){var i=function(e){this.removeListener(h,f,this,g);f.call(self||this,e);}
-;if(!f.$$wrapped_callback){f.$$wrapped_callback={};}
-;f.$$wrapped_callback[h+this.$$hash]=i;return this.addListener(h,i,this,g);}
-,removeListener:function(l,j,self,k){if(!this.$$disposed){if(j.$$wrapped_callback&&j.$$wrapped_callback[l+this.$$hash]){var m=j.$$wrapped_callback[l+this.$$hash];delete j.$$wrapped_callback[l+this.$$hash];j=m;}
-;return this.__cT.removeListener(this,l,j,self,k);}
+,addListenerOnce:function(j,g,i,f){var self=this;if(!i){i=this;}
+;var h=function(e){self.removeListener(j,g,i,f);g.call(i,e);}
+;if(!g.$$wrapped_callback){g.$$wrapped_callback={};}
+;g.$$wrapped_callback[j+this.$$hash]=h;return this.addListener(j,h,i,f);}
+,removeListener:function(m,k,self,l){if(!this.$$disposed){if(k.$$wrapped_callback&&k.$$wrapped_callback[m+this.$$hash]){var n=k.$$wrapped_callback[m+this.$$hash];delete k.$$wrapped_callback[m+this.$$hash];k=n;}
+;return this.__cT.removeListener(this,m,k,self,l);}
 ;return false;}
-,removeListenerById:function(n){if(!this.$$disposed){return this.__cT.removeListenerById(this,n);}
+,removeListenerById:function(o){if(!this.$$disposed){return this.__cT.removeListenerById(this,o);}
 ;return false;}
-,hasListener:function(p,o){return this.__cT.hasListener(this,p,o);}
-,dispatchEvent:function(q){if(!this.$$disposed){return this.__cT.dispatchEvent(this,q);}
+,hasListener:function(q,p){return this.__cT.hasListener(this,q,p);}
+,dispatchEvent:function(r){if(!this.$$disposed){return this.__cT.dispatchEvent(this,r);}
 ;return true;}
-,fireEvent:function(s,t,r){if(!this.$$disposed){return this.__cT.fireEvent(this,s,t,r);}
+,fireEvent:function(t,u,s){if(!this.$$disposed){return this.__cT.fireEvent(this,t,u,s);}
 ;return true;}
-,fireNonBubblingEvent:function(v,w,u){if(!this.$$disposed){return this.__cT.fireNonBubblingEvent(this,v,w,u);}
+,fireNonBubblingEvent:function(w,x,v){if(!this.$$disposed){return this.__cT.fireNonBubblingEvent(this,w,x,v);}
 ;return true;}
-,fireDataEvent:function(z,A,x,y){if(!this.$$disposed){if(x===undefined){x=null;}
-;return this.__cT.fireNonBubblingEvent(this,z,qx.event.type.Data,[A,x,!!y]);}
+,fireDataEvent:function(A,B,y,z){if(!this.$$disposed){if(y===undefined){y=null;}
+;return this.__cT.fireNonBubblingEvent(this,A,qx.event.type.Data,[B,y,!!z]);}
 ;return true;}
 }});}
 )();
