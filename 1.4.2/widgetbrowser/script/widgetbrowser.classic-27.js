@@ -1,0 +1,104 @@
+qx.$$packageData['32b29da277fc']={"locales":{},"resources":{"qx/icon/Oxygen/16/apps/office-calendar.png":[16,16,"png","qx"]},"translations":{}};
+
+qx.Part.$$notifyLoad("32b29da277fc", function() {
+(function(){var c="",b="qx.ui.table.headerrenderer.Icon",a="String";
+qx.Class.define(b,{extend:qx.ui.table.headerrenderer.Default,construct:function(d,e){qx.ui.table.headerrenderer.Default.call(this);
+
+if(d==null){d=c;
+}this.setIconUrl(d);
+
+if(e){this.setToolTip(e);
+}},properties:{iconUrl:{check:a,init:c}},members:{updateHeaderCell:function(f,g){qx.ui.table.headerrenderer.Default.prototype.updateHeaderCell.call(this,f,g);
+g.setIcon(this.getIconUrl());
+}}});
+})();
+(function(){var u="px",t="gecko",s=".qooxdoo-table-cell-icon {",r="abstract",q="top",p="",o="qx.ui.table.cellrenderer.AbstractImage",n=" qooxdoo-table-cell-icon",m="<div></div>",l="engine.name",e="no-repeat",k="}",h="  text-align:center;",c="inline-block",b="static",g="engine.version",f="  padding-top:1px;",i="title='",a="string",j="-moz-inline-box",d="'";
+qx.Class.define(o,{extend:qx.ui.table.cellrenderer.Abstract,type:r,construct:function(){qx.ui.table.cellrenderer.Abstract.call(this);
+var v=this.self(arguments);
+
+if(!v.stylesheet){v.stylesheet=qx.bom.Stylesheet.createElement(s+h+f+k);
+}},members:{__rb:16,__rc:16,__rd:null,_insetY:2,_identifyImage:function(w){throw new Error("_identifyImage is abstract");
+},_getImageInfos:function(x){var y=this._identifyImage(x);
+if(y==null||typeof y==a){y={url:y,tooltip:null};
+}if(!y.imageWidth||!y.imageHeight){var z=this.__re(y.url);
+y.imageWidth=z.width;
+y.imageHeight=z.height;
+}y.width=y.imageWidth;
+y.height=y.imageHeight;
+return y;
+},__re:function(A){var D=qx.util.ResourceManager.getInstance();
+var C=qx.io.ImageLoader;
+var B,E;
+if(D.has(A)){B=D.getImageWidth(A);
+E=D.getImageHeight(A);
+}else if(C.isLoaded(A)){B=C.getWidth(A);
+E=C.getHeight(A);
+}else{B=this.__rb;
+E=this.__rc;
+}return {width:B,height:E};
+},createDataCellHtml:function(F,G){this.__rd=this._getImageInfos(F);
+return qx.ui.table.cellrenderer.Abstract.prototype.createDataCellHtml.call(this,F,G);
+},_getCellClass:function(H){return qx.ui.table.cellrenderer.Abstract.prototype._getCellClass.call(this)+n;
+},_getContentHtml:function(I){var content=m;
+if(this.__rd.url){content=qx.bom.element.Decoration.create(this.__rd.url,e,{width:this.__rd.width+u,height:this.__rd.height+u,display:qx.core.Environment.get(l)==t&&qx.core.Environment.get(g)<1.9?j:c,verticalAlign:q,position:b});
+}return content;
+},_getCellAttributes:function(J){var K=this.__rd.tooltip;
+
+if(K){return i+K+d;
+}else{return p;
+}}},destruct:function(){this.__rd=null;
+}});
+})();
+(function(){var a="widgetbrowser.pages.Table";
+qx.Class.define(a,{extend:widgetbrowser.pages.AbstractPage,construct:function(){widgetbrowser.pages.AbstractPage.call(this);
+this.initWidgets();
+},members:{__RT:0,initWidgets:function(){var b=this._widgets=new qx.type.Array();
+var c=this.__RU();
+c.setFocusedCell(2,5);
+b.push(c);
+this.add(c);
+},__RU:function(){var f=this.__RV(50);
+var e=new qx.ui.table.model.Simple();
+e.setColumns(["ID","A number","A date","Boolean"]);
+e.setData(f);
+e.setColumnEditable(1,true);
+e.setColumnEditable(2,true);
+e.setColumnSortable(3,false);
+var g=new qx.ui.table.Table(e);
+g.set({width:600,height:400,decorator:null});
+g.getSelectionModel().setSelectionMode(qx.ui.table.selection.Model.MULTIPLE_INTERVAL_SELECTION);
+var d=g.getTableColumnModel();
+d.setDataCellRenderer(3,new qx.ui.table.cellrenderer.Boolean());
+d.setHeaderCellRenderer(2,new qx.ui.table.headerrenderer.Icon("icon/16/apps/office-calendar.png","A date"));
+return g;
+},__RV:function(h){var k=[];
+var j=new Date().getTime();
+var l=400*24*60*60*1000;
+
+for(var m=0;m<h;m++){var i=new Date(j+Math.random()*l-l/2);
+k.push([this.__RT++,Math.random()*10000,i,(Math.random()>0.5)]);
+}return k;
+}}});
+})();
+(function(){var g="String",f="_applyIconTrue",e="decoration/table/boolean-true.png",d="qx.ui.table.cellrenderer.Boolean",c=";padding-top:4px;",b="decoration/table/boolean-false.png",a="_applyIconFalse";
+qx.Class.define(d,{extend:qx.ui.table.cellrenderer.AbstractImage,construct:function(){qx.ui.table.cellrenderer.AbstractImage.call(this);
+this.__yi=qx.util.AliasManager.getInstance();
+this.initIconTrue();
+this.initIconFalse();
+},properties:{iconTrue:{check:g,init:e,apply:f},iconFalse:{check:g,init:b,apply:a}},members:{__yj:null,__yk:false,__yi:null,_applyIconTrue:function(h){this.__yj=this.__yi.resolve(h);
+},_applyIconFalse:function(i){this.__yk=this.__yi.resolve(i);
+},_insetY:5,_getCellStyle:function(j){return qx.ui.table.cellrenderer.AbstractImage.prototype._getCellStyle.call(this,j)+c;
+},_identifyImage:function(k){var l={imageWidth:11,imageHeight:11};
+
+switch(k.value){case true:l.url=this.__yj;
+break;
+case false:l.url=this.__yk;
+break;
+default:l.url=null;
+break;
+}return l;
+}},destruct:function(){this.__yi=null;
+}});
+})();
+
+});

@@ -1,0 +1,240 @@
+qx.$$packageData['be2fef6b40b2']={"resources":{}};
+(function(){var b="showcase.page.theme.Content";
+qx.Class.define(b,{extend:showcase.AbstractContent,construct:function(a){arguments.callee.base.call(this,a);
+this.setView(this._createView());
+},members:{_createView:function(){var f=new qx.ui.window.Desktop(new qx.ui.window.Manager());
+var e=new showcase.page.theme.calc.view.Calculator(true);
+f.add(e);
+e.moveTo(60,40);
+e.open();
+var d=new showcase.page.theme.calc.Model();
+var c=new showcase.page.theme.calc.Presenter(e,d);
+var e=new showcase.page.theme.calc.view.Calculator(false);
+f.add(e);
+e.moveTo(340,40);
+e.open();
+var d=new showcase.page.theme.calc.Model();
+var c=new showcase.page.theme.calc.Presenter(e,d);
+return f;
+}}});
+})();
+(function(){var b="calculator-button",a="showcase.page.theme.calc.view.Button";
+qx.Class.define(a,{extend:qx.ui.form.Button,construct:function(c,d,e,f,g,h){arguments.callee.base.call(this,c);
+this.set({rich:true,focusable:false,keepActive:true,allowShrinkX:false,allowShrinkY:false});
+this.setLayoutProperties({row:d,column:e,rowSpan:f||1,colSpan:g||1});
+this._keyIdentifier=h||null;
+},properties:{appearance:{refine:true,init:b}},members:{getKeyIdentifier:function(){return this._keyIdentifier;
+}}});
+})();
+(function(){var o="memory",n="operation",m="label",l="M",k="0",j="Boolean",i="",h="showcase.page.theme.calc.view.Display",g="_applyOperation",f="_applyDisplay",c="_applyMemory",e="String",d="display";
+qx.Class.define(h,{extend:qx.ui.core.Widget,construct:function(){arguments.callee.base.call(this);
+this._setLayout(new qx.ui.layout.Canvas());
+this._add(this.getChildControl(m),{top:0,right:0});
+this._add(this.getChildControl(o),{bottom:0,left:0});
+this._add(this.getChildControl(n),{bottom:0,left:0});
+},properties:{appearance:{refine:true,init:d},display:{init:k,apply:f},memory:{check:j,init:false,apply:c},operation:{check:e,init:i,apply:g}},members:{_createChildControlImpl:function(a){var b;
+
+switch(a){case m:b=new qx.ui.basic.Label(this.getDisplay());
+break;
+case o:b=new qx.ui.basic.Label(l);
+b.exclude();
+break;
+case n:b=new qx.ui.basic.Label(this.getOperation());
+b.setRich(true);
+break;
+}return b||arguments.callee.base.call(this,a);
+},_applyDisplay:function(p,q){this.getChildControl(m).setValue(p.toString());
+},_applyMemory:function(t,u){if(t){this._showChildControl(o);
+}else{this._excludeChildControl(o);
+}},_applyOperation:function(r,s){this.getChildControl(n).setValue(r.toString());
+}}});
+})();
+(function(){var d="String",c="Boolean",b="showcase.page.theme.calc.view.ICalculator",a="qx.event.type.Data";
+qx.Interface.define(b,{events:{"buttonPress":a},properties:{display:{},memory:{check:c},operation:{check:d}}});
+})();
+(function(){var n="display",m="0",l="-",k="operation",j="+",i="7",h="5",g="memory",f="3",d="2",Q="8",P="*",O="6",N="4",M="1",L=".",K="9",J="Boolean",I="keydown",H="button",u="qx.event.type.Data",v="modern-calculator",s="showcase.page.theme.calc.view.Calculator",t="changeOperation",q="execute",r="calculator",o="/",p="String",w="&divide;",x="",A="Calculator",z="buttonPress",C="keyup",B="changeDisplay",E="keypress",D="Enter",y="=",G="changeMemory",F="&plusmn;";
+qx.Class.define(s,{extend:qx.ui.window.Window,implement:[showcase.page.theme.calc.view.ICalculator],construct:function(bb){arguments.callee.base.call(this,A);
+this._isModern=!!bb;
+
+if(this._isModern){this.setAppearance(v);
+}this.set({showMinimize:false,showMaximize:false,showClose:false});
+this.setLayout(new qx.ui.layout.VBox());
+this._initButtons();
+var bc=this.getChildControl(n);
+this.add(this.getChildControl(n));
+this.add(this._createButtonContainer(),{flex:1});
+this._initKeyIdentifier();
+this.addListener(I,this._onKeyDown,this);
+this.addListener(C,this._onKeyUp,this);
+this.addListener(E,this._onKeyPress,this);
+},events:{"buttonPress":u},properties:{appearance:{refine:true,init:r},display:{init:m,event:B},memory:{check:J,init:false,event:G},operation:{check:p,init:x,event:t}},members:{_buttons:null,_keyIdentifier:null,_pressedButton:null,_initButtons:function(){this._buttons={"MC":new showcase.page.theme.calc.view.Button("MC",0,0),"M+":new showcase.page.theme.calc.view.Button("M+",0,1),"M-":new showcase.page.theme.calc.view.Button("M-",0,2),"MR":new showcase.page.theme.calc.view.Button("MR",0,3),"C":new showcase.page.theme.calc.view.Button("C",1,0),"sign":new showcase.page.theme.calc.view.Button(F,1,1),"/":new showcase.page.theme.calc.view.Button(w,1,2,null,null,o),"*":new showcase.page.theme.calc.view.Button(P,1,3,null,null,P),"7":new showcase.page.theme.calc.view.Button(i,2,0,null,null,i),"8":new showcase.page.theme.calc.view.Button(Q,2,1,null,null,Q),"9":new showcase.page.theme.calc.view.Button(K,2,2,null,null,K),"-":new showcase.page.theme.calc.view.Button(l,2,3,null,null,l),"4":new showcase.page.theme.calc.view.Button(N,3,0,null,null,N),"5":new showcase.page.theme.calc.view.Button(h,3,1,null,null,h),"6":new showcase.page.theme.calc.view.Button(O,3,2,null,null,O),"+":new showcase.page.theme.calc.view.Button(j,3,3,null,null,j),"1":new showcase.page.theme.calc.view.Button(M,4,0,null,null,M),"2":new showcase.page.theme.calc.view.Button(d,4,1,null,null,d),"3":new showcase.page.theme.calc.view.Button(f,4,2,null,null,f),"=":new showcase.page.theme.calc.view.Button(y,4,3,2,null,D),"0":new showcase.page.theme.calc.view.Button(m,5,0,null,2,m),".":new showcase.page.theme.calc.view.Button(L,5,2,null,null,L)};
+
+if(this._isModern){for(var a in this._buttons){this._buttons[a].setAppearance(H);
+}}},_initKeyIdentifier:function(){this._keyIdentifier=[];
+
+for(var name in this._buttons){var R=this._buttons[name];
+var S=R.getKeyIdentifier();
+R.addListener(q,this._onButtonExecute,this);
+
+if(S){this._keyIdentifier[S]=R;
+}}},_createChildControlImpl:function(b){if(b===n){var c=new showcase.page.theme.calc.view.Display();
+this.bind(n,c,n);
+this.bind(g,c,g);
+this.bind(k,c,k);
+return c;
+}else{return arguments.callee.base.call(this,b);
+}},_createButtonContainer:function(){var X=new qx.ui.container.Composite();
+var W=new qx.ui.layout.Grid(5,5);
+X.setLayout(W);
+for(var ba=0;ba<6;ba++){W.setRowFlex(ba,1);
+}
+for(var Y=0;Y<6;Y++){W.setColumnFlex(Y,1);
+}for(var name in this._buttons){X.add(this._buttons[name]);
+}return X;
+},_onButtonExecute:function(e){var name=qx.lang.Object.getKeyFromValue(this._buttons,e.getTarget());
+this.fireDataEvent(z,name);
+},_onKeyDown:function(e){var T=this._keyIdentifier[e.getKeyIdentifier()];
+
+if(!T){return;
+}T.press();
+
+if(this._pressedButton&&this._pressedButton!==T){this._pressedButton.release();
+}this._pressedButton=T;
+e.stop();
+},_onKeyUp:function(e){var U=this._keyIdentifier[e.getKeyIdentifier()];
+
+if(!U){return;
+}U.release();
+e.stop();
+},_onKeyPress:function(e){var V=this._keyIdentifier[e.getKeyIdentifier()];
+
+if(!V){return;
+}V.execute();
+e.stop();
+}}});
+})();
+(function(){var n="",m="_applyViewModel",l="waitForNumber",k="number",j="showcase.page.theme.calc.view.ICalculator",i="showcase.page.theme.calc.Presenter",h="error";
+qx.Class.define(i,{extend:qx.core.Object,construct:function(o,p){arguments.callee.base.call(this);
+this.setView(o);
+this.setModel(p);
+},properties:{view:{check:j,apply:m},model:{apply:m,init:null}},members:{_applyViewModel:function(c,d){if(d){throw new Error("The view and model cannot be changed!");
+}var f=this.getModel();
+var g=this.getView();
+
+if(!f||!g){return;
+}this.__GI();
+this.__GJ();
+},__GI:function(){this.getView().addListener("buttonPress",this._onButtonPress,this);
+},_onButtonPress:function(e){this.getModel().readToken(e.getData());
+},__GJ:function(){var q=this.getModel();
+var r=this.getView();
+q.bind("operator",r,"operation");
+q.bind("memory",r,"memory",{converter:function(s){return s===null?false:true;
+}});
+q.addListener("changeState",this._updateDisplay,this);
+q.addListener("changeInput",this._updateDisplay,this);
+q.addListener("changeValue",this._updateDisplay,this);
+q.addListener("changeErrorMessage",this._updateDisplay,this);
+},_updateDisplay:function(e){var a;
+var b=this.getModel();
+
+switch(this.getModel().getState()){case k:a=b.getInput();
+break;
+case l:a=b.getValue()+n;
+break;
+case h:a=b.getErrorMessage();
+break;
+}this.getView().setDisplay(a||n);
+}}});
+})();
+(function(){var t="number",s="Number",r="error",q="String",p="-",o="waitForNumber",n="C",m="showcase.page.theme.calc.Model",l="changeValue",k="M+",L="changeInput",K="MC",J="0",I="sign",H="+",G="_applyState",F="changeState",E="/",D="*",C="",A="MR",B="changeOperator",y="M-",z="changeErrorMessage",w="=",x="changeMemory",u="changeOperant",v=".";
+qx.Class.define(m,{extend:qx.core.Object,construct:function(){arguments.callee.base.call(this);
+this.initState();
+},properties:{state:{check:[t,o,r],event:F,init:t,apply:G},errorMessage:{check:q,init:C,event:z},input:{check:q,nullable:true,event:L},operator:{check:[H,p,D,E],nullable:true,event:B},operant:{check:s,nullable:true,event:u},value:{check:s,nullable:true,event:l},memory:{check:s,nullable:true,event:x}},members:{readToken:function(d){if(d.match(/^[0123456789]$/)){this.__GM(d);
+}else if(d.match(/^[\+\-\*\/]$/)){this.__GP(d);
+}else if(d==I){this.__GN();
+}else if(d==v){this.__GO();
+}else if(d==w){this.__GQ();
+}else if(d==n){this.__GR();
+}else if(d==k){this.__GS(d);
+}else if(d==y){this.__GS(d);
+}else if(d==K){this.__GU();
+}else if(d==A){this.__GT();
+}},__GK:function(){return parseFloat(this.getInput());
+},__GL:function(M,N,O){switch(O){case "+":return M+N;
+case "-":return M-N;
+case "*":return M*N;
+case "/":if(N==0){this.setErrorMessage("Division by zero!");
+this.setState("error");
+return null;
+}else{return M/N;
+}}},_applyState:function(U,V){if(U==t){this.setInput(J);
+}else if(U==r){this.setOperator(null);
+}},__GM:function(Y){this.setState("number");
+var ba=this.getInput();
+
+if(Y=="0"){if(ba!=="0"){ba+="0";
+}}else{if(ba=="0"){ba=Y;
+}else{ba+=Y;
+}}this.setInput(ba);
+},__GN:function(){this.setState("number");
+var i=this.getInput();
+
+if(i=="0"){return;
+}var j=i.charAt(0)=="-";
+
+if(j){i=i.substr(1);
+}else{i="-"+i;
+}this.setInput(i);
+},__GO:function(){this.setState("number");
+var W=this.getInput();
+var X=W.indexOf(".")!==-1;
+
+if(!X){W+=".";
+}this.setInput(W);
+},__GP:function(e){var g=this.getState();
+
+if(g=="error"){return;
+}else if(g=="waitForNumber"){this.setOperator(e);
+return;
+}this.setState("waitForNumber");
+var f=this.__GK();
+var h=this.getValue();
+
+if(h!==null){this.setValue(this.__GL(h,f,this.getOperator()));
+}else{this.setValue(f);
+}this.setOperant(f);
+this.setOperator(e);
+},__GQ:function(){var a=this.getOperator();
+
+if(!a){return;
+}var c=this.getValue();
+
+if(this.getState()=="waitForNumber"){this.setValue(this.__GL(c,this.getOperant(),a));
+return;
+}this.setState("waitForNumber");
+var b=this.__GK();
+this.setOperant(b);
+this.setValue(this.__GL(c,b,a));
+},__GR:function(){this.setState("number");
+this.setOperator(null);
+this.setValue(null);
+this.setInput("0");
+},__GS:function(P){var Q=this.getState();
+var R;
+
+if(Q=="error"){return;
+}else if(Q=="waitForNumber"){R=this.getValue();
+}else{R=this.__GK();
+}var S=this.getMemory()||0;
+
+if(P=="M+"){this.setMemory(S+R);
+}else{this.setMemory(S-R);
+}},__GT:function(){var T=this.getMemory();
+
+if(T==null){return;
+}this.setState("number");
+this.setInput(T.toString());
+},__GU:function(){this.setMemory(null);
+}}});
+})();

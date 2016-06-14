@@ -1,0 +1,9 @@
+.eventcontainer {
+  min-height:200px;
+  background-color:green;
+  color:#ffffff;
+}
+
+.marginExpander {
+  margin-right: 5px;
+}

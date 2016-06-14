@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>q API Documentation</title>
+  <script type="text/javascript" charset="utf-8" src="script/q-core-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-animation-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-blocker-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-cookie-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-dataset-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-dev-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-io-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-matchmedia-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-messaging-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-placeholder-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-placement-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-rest-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-storage-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-template-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-transform-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="script/q-util-3.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="viewer.js"></script>
+  <link href="http://resources.qooxdoo.org/stylesheets/reset.css" rel="stylesheet" type="text/css">
+  <link href="http://resources.qooxdoo.org/stylesheets/base.css" rel="stylesheet" type="text/css">
+  <link href="http://resources.qooxdoo.org/stylesheets/layout.css" rel="stylesheet" type="text/css">
+  <link href="api.css" rel="stylesheet" type="text/css">
+
+  <script src="highlight.pack.js"></script>
+  <link rel="stylesheet" href="default.highlight.css">
+  <script type="text/javascript">
+  if (location.hostname === "demo.qooxdoo.org") {
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-415440-1']);
+    _gaq.push(['_setDomainName', 'qooxdoo.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header-wrapper">
+    <div id="header">
+      <h1>qx.Website API Documentation</h1>
+      <div id="plugintoggle"><span>show</span> plugin API</div>
+    </div>
+    <div class="decoration"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="list"></div>
+  <div id="content">
+    <div id="warning"><h1 style='color: #C00F00'>Error while loading!</h1><em>Has the application been generated? (generate.py api)</em></div>
+  </div>
+
+  <!-- TEMPLATES -->
+  <script type="text/template" charset="utf-8" id="list-item">
+    <li class="{{#plugin}}plugin{{/plugin}}">{{#missing}}<b style="color: red;">!! </b>{{/missing}}<a href="#{{link}}">{{name}}</a></li>
+  </script>
+
+  <script type="text/template" charset="utf-8" id="method">
+  <div id="{{name}}" class="method{{#plugin}} plugin{{/plugin}}">
+    <h2 class="method-header box">{{name}} ({{{printParams}}}) <span class="returns">{{{returns.printTypes}}}</span></h2>
+    <div>
+    {{{desc}}}
+    </div>
+    {{#paramsExist}}
+    <h4>Parameters</h4>
+    <div>
+      <ul>
+        {{#params}}
+        <li>{{{printTypes}}} <code>{{name}}</code> {{#defaultValue}}<em>(default: {{{defaultValue}}})</em> {{/defaultValue}} {{{desc}}}</li>
+        {{/params}}
+      </ul>
+    </div>
+    {{/paramsExist}}
+    {{#returns.desc}}
+    <h4>Returns</h4>
+    <div class="inline return-desc"><p>{{{returns.printTypes}}}<p> {{{returns.desc}}}</div>
+    {{/returns.desc}}
+  </div>
+  </script>
+
+  <script type="text/template" charset="utf-8" id="events">
+    <div class="events">
+      <h2>Events</h2>
+      <ul>
+        {{#events}}
+        <li class="inline">{{{type}}} <code>{{name}}</code> {{{desc}}}</li>
+        {{/events}}
+      </ul>
+    <div>
+  </script>
+
+  <script type="text/template" charset="utf-8" id="types">
+    <div class="event-types">
+      <h3>Applied to these event types:</h3>
+      <ul>
+        {{#types}}
+        <li class="inline"><code>{{.}}</code></li>
+        {{/types}}
+      </ul>
+    <div>
+  </script>
+
+</body>
+</html>
