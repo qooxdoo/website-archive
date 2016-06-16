@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.531423d516be.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.d88691b98c48.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -3941,11 +3941,11 @@ finally{qx.core.ObjectRegistry.shutdown();}
 ,terminate:function(){}
 }});}
 )();
-(function(){var a="<em>no content</em>",b="Memory Storage",c="html.storage.local",d="html.storage.userdata",e="",f="list",g="save",h="value",i="Web Storage",j="demobrowser.demo.bom.Storage",k="<br>",l="tap",m="clear",n=":",o="using",p="remove",r="key",s="userData Storage";qx.Class.define(j,{extend:qx.application.Native,members:{__fQ:null,main:function(){qx.application.Native.prototype.main.call(this);this.setUsing();this.__fQ=qx.bom.Storage.getLocal();var v=document.getElementById(g);var t=document.getElementById(m);var u=document.getElementById(p);var self=this;q(v).on(l,function(){var w=qx.bom.Input.getValue(document.getElementById(r));var x=qx.bom.Input.getValue(document.getElementById(h));self.__fQ.setItem(w,x);self.updateList();}
-);q(t).on(l,function(){self.__fQ.clear();self.updateList();}
-);q(u).on(l,function(){self.__fQ.removeItem(self.__fQ.getKey(0));self.updateList();}
+(function(){var a="<em>no content</em>",b="Memory Storage",c="html.storage.local",d="html.storage.userdata",e="",f="list",g="save",h="value",i="Web Storage",j="demobrowser.demo.bom.Storage",k="<br>",l="tap",m="clear",n=":",o="using",p="remove",r="key",s="userData Storage";qx.Class.define(j,{extend:qx.application.Native,members:{__a:null,main:function(){qx.application.Native.prototype.main.call(this);this.setUsing();this.__a=qx.bom.Storage.getLocal();var v=document.getElementById(g);var t=document.getElementById(m);var u=document.getElementById(p);var self=this;q(v).on(l,function(){var w=qx.bom.Input.getValue(document.getElementById(r));var x=qx.bom.Input.getValue(document.getElementById(h));self.__a.setItem(w,x);self.updateList();}
+);q(t).on(l,function(){self.__a.clear();self.updateList();}
+);q(u).on(l,function(){self.__a.removeItem(self.__a.getKey(0));self.updateList();}
 );this.updateList();}
-,updateList:function(){var y=document.getElementById(f);y.innerHTML=e;this.__fQ.forEach(function(z,A){y.innerHTML+=z+n+A+k;}
+,updateList:function(){var y=document.getElementById(f);y.innerHTML=e;this.__a.forEach(function(z,A){y.innerHTML+=z+n+A+k;}
 ,y);if(y.innerHTML==e){y.innerHTML=a;}
 ;}
 ,setUsing:function(){var B=document.getElementById(o);if(qx.core.Environment.get(c)){B.innerHTML=i;}

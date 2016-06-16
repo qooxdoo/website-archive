@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Cells.90064b673f74.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Cells.f79763de4bb6.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8554,25 +8554,25 @@ else {top+=B;}
 ,runTest:function(H){this.setUp();this[H]();}
 ,setUp:function(){this.container=new qx.ui.container.Composite(new qx.ui.layout.VBox(2));this.topContainer.add(this.container);}
 ,tearDown:function(){this.container.destroy();}
-,testStringCell:function(){var J={value:[A,p,r,null],states:[{},{selected:1}]};var I=new qx.ui.virtual.cell.String;qx.util.Permutation.permute(J,function(L){var K=this.__uC(I,L.value,L.states);this.container.add(K);}
+,testStringCell:function(){var J={value:[A,p,r,null],states:[{},{selected:1}]};var I=new qx.ui.virtual.cell.String;qx.util.Permutation.permute(J,function(L){var K=this.__bl(I,L.value,L.states);this.container.add(K);}
 ,this);}
 ,testNumberCell:function(){var M={value:[-1.666666,0,null],format:[null,new qx.util.format.NumberFormat().set({maximumFractionDigits:2})],states:[{},{selected:1}]};var N=new qx.ui.virtual.cell.Number();qx.util.Permutation.permute(M,function(P){if(P.format){N.setNumberFormat(P.format);}
 else {N.resetNumberFormat();}
-;var O=this.__uC(N,P.value,P.states);this.container.add(O);}
+;var O=this.__bl(N,P.value,P.states);this.container.add(O);}
 ,this);}
 ,testDateCell:function(){var Q={value:[new Date(),null],format:[null,new qx.util.format.DateFormat(qx.locale.Date.getDateFormat(x))],states:[{},{selected:1}]};var R=new qx.ui.virtual.cell.Date();qx.util.Permutation.permute(Q,function(T){if(T.format){R.setDateFormat(T.format);}
 else {R.resetDateFormat();}
-;var S=this.__uC(R,T.value,T.states);this.container.add(S);}
+;var S=this.__bl(R,T.value,T.states);this.container.add(S);}
 ,this);}
-,testHtmlCell:function(){var U={value:[A,p,r,null],states:[{},{selected:1}]};var V=new qx.ui.virtual.cell.Html;qx.util.Permutation.permute(U,function(X){var W=this.__uC(V,X.value,X.states);this.container.add(W);}
+,testHtmlCell:function(){var U={value:[A,p,r,null],states:[{},{selected:1}]};var V=new qx.ui.virtual.cell.Html;qx.util.Permutation.permute(U,function(X){var W=this.__bl(V,X.value,X.states);this.container.add(W);}
 ,this);}
-,testImageCell:function(){var Y={value:[{url:C,tooltip:E},{url:w,tooltip:u},null],states:[{},{selected:1}]};var ba=new qx.ui.virtual.cell.Image;qx.util.Permutation.permute(Y,function(bc){var bb=this.__uC(ba,bc.value,bc.states);this.container.add(bb);}
+,testImageCell:function(){var Y={value:[{url:C,tooltip:E},{url:w,tooltip:u},null],states:[{},{selected:1}]};var ba=new qx.ui.virtual.cell.Image;qx.util.Permutation.permute(Y,function(bc){var bb=this.__bl(ba,bc.value,bc.states);this.container.add(bb);}
 ,this);}
-,testBooleanCell:function(){var bd={value:[true,false,null],states:[{},{selected:1}]};var be=new qx.ui.virtual.cell.Boolean;qx.util.Permutation.permute(bd,function(bg){var bf=this.__uC(be,bg.value,bg.states);this.container.add(bf);}
+,testBooleanCell:function(){var bd={value:[true,false,null],states:[{},{selected:1}]};var be=new qx.ui.virtual.cell.Boolean;qx.util.Permutation.permute(bd,function(bg){var bf=this.__bl(be,bg.value,bg.states);this.container.add(bf);}
 ,this);}
-,testBooleanCellCustomImage:function(){var bh={value:[true,false,null],states:[{},{selected:1}]};var bi=new qx.ui.virtual.cell.Boolean;bi.setIconFalse(B);bi.setIconTrue(D);qx.util.Permutation.permute(bh,function(bk){var bj=this.__uC(bi,bk.value,bk.states);this.container.add(bj);}
+,testBooleanCellCustomImage:function(){var bh={value:[true,false,null],states:[{},{selected:1}]};var bi=new qx.ui.virtual.cell.Boolean;bi.setIconFalse(B);bi.setIconTrue(D);qx.util.Permutation.permute(bh,function(bk){var bj=this.__bl(bi,bk.value,bk.states);this.container.add(bj);}
 ,this);}
-,__uC:function(bn,bo,bq){var br=100;var bp=30;var bt=new qx.ui.embed.Html().set({width:br,height:bp,decorator:bq.selected?null:z});var bm=bn.getCellProperties(bo,bq);var bl=bm.insets;var bs=[d,F,this._getCellSizeStyle(br,bp,bl[0],bl[1]),bm.style,e,g,bm.classes,e,bm.attributes,l,bm.content,c].join(r);bt.setHtml(bs);return bt;}
+,__bl:function(bn,bo,bq){var br=100;var bp=30;var bt=new qx.ui.embed.Html().set({width:br,height:bp,decorator:bq.selected?null:z});var bm=bn.getCellProperties(bo,bq);var bl=bm.insets;var bs=[d,F,this._getCellSizeStyle(br,bp,bl[0],bl[1]),bm.style,e,g,bm.classes,e,bm.attributes,l,bm.content,c].join(r);bt.setHtml(bs);return bt;}
 ,_getCellSizeStyle:function(bu,by,bw,bx){var bv=r;if(qx.core.Environment.get(k)==s){bu-=bw;by-=bx;}
 ;bv+=h+bu+y;bv+=m+by+y;return bv;}
 }});}

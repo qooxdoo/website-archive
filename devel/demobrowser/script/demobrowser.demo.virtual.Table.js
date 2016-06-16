@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Table.ae121ed67b44.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Table.f6af69903cf6.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,10 +8549,10 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a=" / ",b="horizontal",c="demobrowser.demo.virtual.Table",d="__uB",e="white",f="#EEE",g="vertical";qx.Class.define(c,{extend:qx.application.Standalone,members:{__uB:null,main:function(){qx.application.Standalone.prototype.main.call(this);var h=new qx.ui.virtual.core.Scroller(10000,10000,20,100);for(var i=0;i<10000;i++ ){h.getPane().getRowConfig().setItemSize(i,20+Math.round(Math.random()*40));h.getPane().getColumnConfig().setItemSize(i,50+Math.round(Math.random()*80));}
-;this.getRoot().add(h,{edge:20});h.getPane().addLayer(new qx.ui.virtual.layer.Row(e,f));h.getPane().addLayer(new qx.ui.virtual.layer.GridLines(b));h.getPane().addLayer(new qx.ui.virtual.layer.GridLines(g));h.getPane().addLayer(new qx.ui.virtual.layer.HtmlCell(this));this.__uB=new qx.ui.virtual.cell.Cell();}
-,getCellProperties:function(k,j){return this.__uB.getCellProperties(k+a+j);}
-},destruct:function(){this._disposeObjects(d);}
+(function(){var a=" / ",b="horizontal",c="demobrowser.demo.virtual.Table",d="white",e="__bk",f="#EEE",g="vertical";qx.Class.define(c,{extend:qx.application.Standalone,members:{__bk:null,main:function(){qx.application.Standalone.prototype.main.call(this);var h=new qx.ui.virtual.core.Scroller(10000,10000,20,100);for(var i=0;i<10000;i++ ){h.getPane().getRowConfig().setItemSize(i,20+Math.round(Math.random()*40));h.getPane().getColumnConfig().setItemSize(i,50+Math.round(Math.random()*80));}
+;this.getRoot().add(h,{edge:20});h.getPane().addLayer(new qx.ui.virtual.layer.Row(d,f));h.getPane().addLayer(new qx.ui.virtual.layer.GridLines(b));h.getPane().addLayer(new qx.ui.virtual.layer.GridLines(g));h.getPane().addLayer(new qx.ui.virtual.layer.HtmlCell(this));this.__bk=new qx.ui.virtual.cell.Cell();}
+,getCellProperties:function(k,j){return this.__bk.getCellProperties(k+a+j);}
+},destruct:function(){this._disposeObjects(e);}
 });}
 )();
 (function(){var a="mouse",b="scrollbar-y",c="qx.ui.core.scroll.MRoll",d="pointerdown",f="scrollbar-x",g="roll";qx.Mixin.define(c,{members:{__ru:null,_addRollHandling:function(){this.addListener(g,this._onRoll,this);this.addListener(d,this._onPointerDownForRoll,this);}

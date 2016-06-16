@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.8e5c48b2d73e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.d9b94a4b79f2.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2759,11 +2759,11 @@ finally{qx.core.ObjectRegistry.shutdown();}
 )();
 (function(){var a="</th></tr>",b="demobrowser.demo.event.EventDemo",c="</th><th>",d="",e="</td><td>",f="<table><tr><th>",g="<tr><td>",h="btnClear",j="tap",k="</table>",l="</td></tr>";qx.Class.define(b,{extend:qx.application.Native,members:{main:function(){qx.application.Native.prototype.main.call(this);var m=document.getElementById(h);if(m){qx.bom.Element.addListener(m,j,this._clearLog,this);}
 ;}
-,_initLogger:function(p,n,o){this.__tI=f+p.join(c)+a;this.__tJ=o||50;this.__tK=n;this._clearLog();}
-,_clearLog:function(){this.__tK.innerHTML=this.__tI+k;this.__tL=[];}
-,_log:function(q){this.__tL.unshift(q);this.__tL=this.__tL.slice(0,this.__tJ);var r=[this.__tI];for(var i=0;i<this.__tL.length;i++ ){r.push(g,this.__tL[i].join(e),l);}
-;r.push(k);this.__tK.innerHTML=r.join(d);this.__tK.scrollTop=0;}
-,__tI:null,__tJ:null,__tK:null,__tL:null},destruct:function(){this.__tK=this.__tL=null;}
+,_initLogger:function(p,n,o){this.__q=f+p.join(c)+a;this.__r=o||50;this.__s=n;this._clearLog();}
+,_clearLog:function(){this.__s.innerHTML=this.__q+k;this.__t=[];}
+,_log:function(q){this.__t.unshift(q);this.__t=this.__t.slice(0,this.__r);var r=[this.__q];for(var i=0;i<this.__t.length;i++ ){r.push(g,this.__t[i].join(e),l);}
+;r.push(k);this.__s.innerHTML=r.join(d);this.__s.scrollTop=0;}
+,__q:null,__r:null,__s:null,__t:null},destruct:function(){this.__s=this.__t=null;}
 });}
 )();
 (function(){var a="text",b="engine.version",c="keydown",d="radio",f="textarea",g="password",h="propertychange",j="select-multiple",k="change",m="input",n="value",p="select",q="browser.documentmode",r="browser.version",s="opera",t="keyup",u="mshtml",v="engine.name",w="keypress",x="checkbox",y="qx.event.handler.Input",z="checked";qx.Class.define(y,{extend:qx.core.Object,implement:qx.event.IEventHandler,construct:function(){qx.core.Object.call(this);this._onChangeCheckedWrapper=qx.lang.Function.listener(this._onChangeChecked,this);this._onChangeValueWrapper=qx.lang.Function.listener(this._onChangeValue,this);this._onInputWrapper=qx.lang.Function.listener(this._onInput,this);this._onPropertyWrapper=qx.lang.Function.listener(this._onProperty,this);if((qx.core.Environment.get(v)==s)){this._onKeyDownWrapper=qx.lang.Function.listener(this._onKeyDown,this);this._onKeyUpWrapper=qx.lang.Function.listener(this._onKeyUp,this);}

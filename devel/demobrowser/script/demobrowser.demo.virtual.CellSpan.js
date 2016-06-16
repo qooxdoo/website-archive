@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellSpan.141d5f7a6686.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellSpan.8983d9da7883.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,13 +8549,13 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a=" / ",b="Widget Cells",c="yellow",d="bold",e="demobrowser.demo.virtual.CellSpan",f="table-scroller-header",g="__uB",h="HTML Cells",i="green",j="x";qx.Class.define(e,{extend:qx.application.Standalone,members:{__uB:null,main:function(){qx.application.Standalone.prototype.main.call(this);var k=new qx.ui.layout.Grid(5,0);k.setRowFlex(1,1);k.setColumnFlex(0,1);k.setColumnFlex(1,1);var l=new qx.ui.container.Composite(k);this.getRoot().add(l,{edge:0});l.add(new qx.ui.basic.Label(h).set({font:d,decorator:f,padding:3,allowGrowX:true}),{row:0,column:0});var m=this.getHtmlCellSpanScroller();l.add(m,{row:1,column:0});l.add(new qx.ui.basic.Label(b).set({font:d,decorator:f,padding:3,allowGrowX:true}),{row:0,column:1});var m=this.getWidgetCellSpanScroller();l.add(m,{row:1,column:1});this.__uB=new qx.ui.virtual.cell.Cell();}
+(function(){var a=" / ",b="Widget Cells",c="yellow",d="bold",e="demobrowser.demo.virtual.CellSpan",f="table-scroller-header",g="HTML Cells",h="green",i="__bk",j="x";qx.Class.define(e,{extend:qx.application.Standalone,members:{__bk:null,main:function(){qx.application.Standalone.prototype.main.call(this);var k=new qx.ui.layout.Grid(5,0);k.setRowFlex(1,1);k.setColumnFlex(0,1);k.setColumnFlex(1,1);var l=new qx.ui.container.Composite(k);this.getRoot().add(l,{edge:0});l.add(new qx.ui.basic.Label(g).set({font:d,decorator:f,padding:3,allowGrowX:true}),{row:0,column:0});var m=this.getHtmlCellSpanScroller();l.add(m,{row:1,column:0});l.add(new qx.ui.basic.Label(b).set({font:d,decorator:f,padding:3,allowGrowX:true}),{row:0,column:1});var m=this.getWidgetCellSpanScroller();l.add(m,{row:1,column:1});this.__bk=new qx.ui.virtual.cell.Cell();}
 ,getHtmlCellSpanScroller:function(){var n=new qx.ui.virtual.core.Scroller(1000,100,50,120);var o=n.getPane();var p=new qx.ui.virtual.layer.HtmlCellSpan(this,o.getRowConfig(),o.getColumnConfig());p.setCellSpan(1,1,2,2);p.setCellSpan(1,5,3,3);p.setCellSpan(7,4,2,4);p.setCellSpan(6,0,10,2);p.setCellSpan(10,9,10,5);p.setCellSpan(11,3,6,3);n.getPane().addLayer(p);return n;}
-,getCellProperties:function(s,q){var r=(s+q)%2==0?c:i;this.__uB.setBackgroundColor(r);return this.__uB.getCellProperties(s+a+q);}
+,getCellProperties:function(s,q){var r=(s+q)%2==0?c:h;this.__bk.setBackgroundColor(r);return this.__bk.getCellProperties(s+a+q);}
 ,getWidgetCellSpanScroller:function(){var t=new qx.ui.virtual.core.Scroller(1000,100,50,120);var u=t.getPane();var v=new qx.ui.virtual.layer.WidgetCellSpan(this,u.getRowConfig(),u.getColumnConfig());v.setCellSpan(1,1,2,2);v.setCellSpan(1,5,3,3);v.setCellSpan(7,4,2,4);v.setCellSpan(6,0,10,2);v.setCellSpan(10,9,10,5);v.setCellSpan(11,3,6,3);t.getPane().addLayer(v);this._pool=[];return t;}
-,getCellWidget:function(y,w){var x=this._pool.pop()||new qx.ui.basic.Label().set({allowGrowX:true});x.set({backgroundColor:(y+w)%2==0?c:i,value:y+j+w,padding:3});return x;}
+,getCellWidget:function(y,w){var x=this._pool.pop()||new qx.ui.basic.Label().set({allowGrowX:true});x.set({backgroundColor:(y+w)%2==0?c:h,value:y+j+w,padding:3});return x;}
 ,poolCellWidget:function(z){this._pool.push(z);}
-},destruct:function(){this._disposeObjects(g);this._pool=null;}
+},destruct:function(){this._disposeObjects(i);this._pool=null;}
 });}
 )();
 (function(){var a="' must be defined!",b="height",c="vAlign",d="hAlign",e="' is not supported by the Grid layout!",f="bottom",g="Invalid parameter 'column'",h="Integer",m="The property '",n="'",o="_applyLayoutChange",p="qx.debug",q="Value must be positive",r="center",s="qx.ui.layout.Grid",t="middle",u="maxHeight",v="Cannot add widget '",w="width",z=") for '",A="'!. ",B="top",C="minHeight",D="right",E="' in this cell (",F=", ",G="The layout properties 'row' and 'column' of the child widget '",H="minWidth",I="flex",J="left",K="maxWidth",L="Invalid parameter 'row'",M="There is already a widget '";qx.Class.define(s,{extend:qx.ui.layout.Abstract,construct:function(O,N){qx.ui.layout.Abstract.call(this);this.__pj=[];this.__pk=[];if(O){this.setSpacingX(O);}

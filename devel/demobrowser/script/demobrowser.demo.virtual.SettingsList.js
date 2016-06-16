@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.SettingsList.6a481e94144a.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.SettingsList.68a41d97cb6c.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,19 +8549,19 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="name",b="group.checked",c="#ddd",d="Fruits",f="label",g="Apple",h="Carrot",j="Vegetables",k="demobrowser.demo.virtual.SettingsList",l="value",m="changeValue",n="Orange",o="Potato",p="checked";qx.Class.define(k,{extend:qx.application.Standalone,members:{__cX:null,main:function(){qx.application.Standalone.prototype.main.call(this);var q=[];var s=[g,n,o,h];for(var i=0;i<s.length;i++ ){q[i]={name:s[i],checked:i<2,group:null};}
-;this.__cX=qx.data.marshal.Json.createModel(q,true);var t=[];for(var i=0;i<2;i++ ){t[i]={name:null,checked:false};}
-;t=qx.data.marshal.Json.createModel(t,true);t.getItem(0).setName(d);t.getItem(1).setName(j);this.__cX.toArray().forEach(function(u,v){v=v<2?0:1;u.setGroup(t.getItem(v));}
-);var r=new qx.ui.list.List();r.setWidth(150);this.getRoot().add(r,{left:20,top:20});r.setDelegate(this);r.setModel(this.__cX);}
+(function(){var a="name",b="group.checked",c="#ddd",d="Fruits",f="label",g="Apple",h="Carrot",j="Vegetables",k="demobrowser.demo.virtual.SettingsList",l="value",m="changeValue",n="Orange",o="Potato",p="checked";qx.Class.define(k,{extend:qx.application.Standalone,members:{__bv:null,main:function(){qx.application.Standalone.prototype.main.call(this);var q=[];var s=[g,n,o,h];for(var i=0;i<s.length;i++ ){q[i]={name:s[i],checked:i<2,group:null};}
+;this.__bv=qx.data.marshal.Json.createModel(q,true);var t=[];for(var i=0;i<2;i++ ){t[i]={name:null,checked:false};}
+;t=qx.data.marshal.Json.createModel(t,true);t.getItem(0).setName(d);t.getItem(1).setName(j);this.__bv.toArray().forEach(function(u,v){v=v<2?0:1;u.setGroup(t.getItem(v));}
+);var r=new qx.ui.list.List();r.setWidth(150);this.getRoot().add(r,{left:20,top:20});r.setDelegate(this);r.setModel(this.__bv);}
 ,createItem:function(){return new qx.ui.form.CheckBox();}
 ,configureItem:function(w){w.setPadding(3);}
 ,createGroupItem:function(){return new qx.ui.form.CheckBox();}
 ,configureGroupItem:function(x){x.setBackgroundColor(c);x.setTriState(true);x.addListener(m,function(e){if(x.getValue()===null){return;}
-;var y=e.getData();this.__cX.forEach(function(z){if(x.getLabel()==z.getGroup().getName()){z.setChecked(y);}
+;var y=e.getData();this.__bv.forEach(function(z){if(x.getLabel()==z.getGroup().getName()){z.setChecked(y);}
 ;}
 );}
 ,this);}
-,bindItem:function(B,A,D){B.bindProperty(a,f,null,A,D);B.bindProperty(p,l,null,A,D);B.bindPropertyReverse(p,l,null,A,D);var C=this.__cX;B.bindPropertyReverse(b,l,{converter:function(H,J){var I=J.getItem(D);var F=I.getGroup();var G=C.toArray().filter(function(L){return L.getGroup()==F;}
+,bindItem:function(B,A,D){B.bindProperty(a,f,null,A,D);B.bindProperty(p,l,null,A,D);B.bindPropertyReverse(p,l,null,A,D);var C=this.__bv;B.bindPropertyReverse(b,l,{converter:function(H,J){var I=J.getItem(D);var F=I.getGroup();var G=C.toArray().filter(function(L){return L.getGroup()==F;}
 );var E=G.every(function(M){return M.getChecked();}
 );var K=G.some(function(N){return N.getChecked();}
 );if(K){return E?true:null;}

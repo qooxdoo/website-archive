@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SearchAsYouType.cceec02cd920.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SearchAsYouType.ff6ddbca2e55.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10076,12 +10076,12 @@ else if(bQ.length<this.__ua.length){for(var j=bQ.length;j<this.__ua.length;j++ )
 },destruct:function(){this.removeListener(c,this._onPointerOver,this);this.removeListener(f,this._onPointerOut,this);}
 });}
 )();
-(function(){var a="_applySearchString",b="demobrowser.demo.data.filter.SearchAsYouTypeFilter",c="String",d="";qx.Class.define(b,{extend:qx.core.Object,construct:function(e){qx.core.Object.call(this);this.__tH=e;this.filter=qx.lang.Function.bind(function(f){return f.search(this.getSearchString())!=-1;}
-,this);this.__oi=null;}
-,properties:{searchString:{check:c,apply:a,init:d}},members:{__oi:null,__tH:null,_applySearchString:function(h,g){var i=qx.util.TimerManager.getInstance();if(this.__oi!=null){i.stop(this.__oi);this.__oi=null;}
-;this.__oi=i.start(function(){this.__tH.update();this.__oi=null;}
+(function(){var a="_applySearchString",b="demobrowser.demo.data.filter.SearchAsYouTypeFilter",c="String",d="";qx.Class.define(b,{extend:qx.core.Object,construct:function(e){qx.core.Object.call(this);this.__o=e;this.filter=qx.lang.Function.bind(function(f){return f.search(this.getSearchString())!=-1;}
+,this);this.__p=null;}
+,properties:{searchString:{check:c,apply:a,init:d}},members:{__p:null,__o:null,_applySearchString:function(h,g){var i=qx.util.TimerManager.getInstance();if(this.__p!=null){i.stop(this.__p);this.__p=null;}
+;this.__p=i.start(function(){this.__o.update();this.__p=null;}
 ,0,this,null,200);}
-,filter:null},destruct:function(){this.__tH=null;}
+,filter:null},destruct:function(){this.__o=null;}
 });}
 )();
 (function(){var a="number",b="qx.util.TimerManager",c="interval",d="singleton";qx.Class.define(b,{extend:qx.core.Object,type:d,statics:{__xL:[],__xM:{},__st:0},members:{__xN:false,start:function(h,g,j,e,k){if(typeof k!=a){k=g||0;}

@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Flash.53ca48ba6d7b.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Flash.6a7c6ce6a0e4.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,20 +8549,20 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="2) this html page is not loaded from the file system, but a webserver.",b="Flash Player Version",c="right",d="qooxdoo is the best!",f="Message from Flash:",g="execute",h="__uR",i="Simple demo with FlashVars",j="bgcolor",k="demobrowser.demo.widget.Flash",l="demobrowser/demo/flash/TestFlash.swf",m="1) no pop-up or advertising blocker is activated.\n",n="Send to Flash",o="demobrowser/demo/flash/FlashVersion.swf",p="No message.",q="Flash:",r="<b>qooxdoo:</b>",s="__cE",t="demobrowser.demo.widget.Flash.sendMessage",u="demobrowser.demo.widget.Flash.flashReady",v="__uQ",w="Couldn't connect to Flash Player! Please make sure that:\n",x="__uS",y="demobrowser/demo/flash/fo_tester.swf",z="this is passed in via FlashVars",A="Two way communication (ActionScript <-> JavaScript)",B="__uT",C="Message to Flash:",D="Show Flash Player version",E="noscale",F="#FF6600";qx.Class.define(k,{extend:qx.application.Standalone,members:{__cE:null,main:function(){qx.application.Standalone.prototype.main.call(this);var J=new qx.ui.tabview.TabView();J.setContentPadding([8,8,8,8]);var G=this.getRoot();G.add(J,{edge:0});var H=new qx.ui.tabview.Page(i);H.setLayout(new qx.ui.layout.Canvas());H.add(this.createFlashDemo1(),{edge:0});J.add(H);var I=new qx.ui.tabview.Page(A);I.setLayout(new qx.ui.layout.Canvas());I.add(this.createFlashDemo2(),{edge:0});J.add(I);this.__cE=this.createWindow();G.add(this.__cE,{top:20,left:20});}
+(function(){var a="2) this html page is not loaded from the file system, but a webserver.",b="Flash Player Version",c="__bF",d="right",f="qooxdoo is the best!",g="Message from Flash:",h="execute",i="Simple demo with FlashVars",j="bgcolor",k="demobrowser.demo.widget.Flash",l="demobrowser/demo/flash/TestFlash.swf",m="1) no pop-up or advertising blocker is activated.\n",n="Send to Flash",o="demobrowser/demo/flash/FlashVersion.swf",p="No message.",q="Flash:",r="<b>qooxdoo:</b>",s="__bC",t="__bG",u="demobrowser.demo.widget.Flash.sendMessage",v="demobrowser.demo.widget.Flash.flashReady",w="Couldn't connect to Flash Player! Please make sure that:\n",x="demobrowser/demo/flash/fo_tester.swf",y="this is passed in via FlashVars",z="Two way communication (ActionScript <-> JavaScript)",A="__bD",B="Message to Flash:",C="__bE",D="Show Flash Player version",E="noscale",F="#FF6600";qx.Class.define(k,{extend:qx.application.Standalone,members:{__bC:null,main:function(){qx.application.Standalone.prototype.main.call(this);var J=new qx.ui.tabview.TabView();J.setContentPadding([8,8,8,8]);var G=this.getRoot();G.add(J,{edge:0});var H=new qx.ui.tabview.Page(i);H.setLayout(new qx.ui.layout.Canvas());H.add(this.createFlashDemo1(),{edge:0});J.add(H);var I=new qx.ui.tabview.Page(z);I.setLayout(new qx.ui.layout.Canvas());I.add(this.createFlashDemo2(),{edge:0});J.add(I);this.__bC=this.createWindow();G.add(this.__bC,{top:20,left:20});}
 ,createWindow:function(){var K=new qx.ui.window.Window(b).set({width:300,height:200,contentPadding:[0,0,0,0]});K.setLayout(new qx.ui.layout.Canvas());K.add(new qx.ui.embed.Flash(o),{edge:0});return K;}
-,createFlashDemo1:function(){var N=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));var L={flashVarText:z};var M=new qx.ui.embed.Flash(y).set({scale:E,variables:L});M.getContentElement().setParam(j,F);N.add(M,{flex:1});var O=new qx.ui.form.Button(D);O.addListener(g,function(){this.__cE.open();}
+,createFlashDemo1:function(){var N=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));var L={flashVarText:y};var M=new qx.ui.embed.Flash(x).set({scale:E,variables:L});M.getContentElement().setParam(j,F);N.add(M,{flex:1});var O=new qx.ui.form.Button(D);O.addListener(h,function(){this.__bC.open();}
 ,this);N.add(O);return N;}
-,__uQ:null,__uR:null,__uS:null,__uT:null,createFlashDemo2:function(){this.self(arguments).setCallBackInstance(this);var R=new qx.ui.container.Composite(new qx.ui.layout.HBox(8));var Q=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));R.add(Q,{flex:1});Q.add(new qx.ui.basic.Label(r).set({rich:true}));Q.add(new qx.ui.basic.Label(f));this.__uR=new qx.ui.form.TextArea(p);this.__uR.setEnabled(false);Q.add(this.__uR,{flex:1});Q.add(new qx.ui.basic.Label(C));this.__uS=new qx.ui.form.TextArea(d);Q.add(this.__uS,{flex:1});var S=new qx.ui.container.Composite(new qx.ui.layout.HBox(0,c));this.__uT=new qx.ui.form.Button(n);this.__uT.setEnabled(false);this.__uT.addListener(g,function(e){this.__uQ.getFlashElement().sendMessage(this.__uS.getValue());}
-,this);S.add(this.__uT);Q.add(S);var P=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));R.add(P,{flex:1});P.add(new qx.ui.basic.Label(q).set({rich:true}));this.__uQ=new qx.ui.embed.Flash(l);this.__uQ.setVariables({init:u});P.add(this.__uQ,{flex:1});return R;}
-,sendMessage:function(T){this.__uR.setValue(T);}
-,initFlash:function(){if(this.__uQ.getFlashElement().setup){this.__uQ.getFlashElement().setup(t);this.__uT.setEnabled(true);}
+,__bD:null,__bE:null,__bF:null,__bG:null,createFlashDemo2:function(){this.self(arguments).setCallBackInstance(this);var R=new qx.ui.container.Composite(new qx.ui.layout.HBox(8));var Q=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));R.add(Q,{flex:1});Q.add(new qx.ui.basic.Label(r).set({rich:true}));Q.add(new qx.ui.basic.Label(g));this.__bE=new qx.ui.form.TextArea(p);this.__bE.setEnabled(false);Q.add(this.__bE,{flex:1});Q.add(new qx.ui.basic.Label(B));this.__bF=new qx.ui.form.TextArea(f);Q.add(this.__bF,{flex:1});var S=new qx.ui.container.Composite(new qx.ui.layout.HBox(0,d));this.__bG=new qx.ui.form.Button(n);this.__bG.setEnabled(false);this.__bG.addListener(h,function(e){this.__bD.getFlashElement().sendMessage(this.__bF.getValue());}
+,this);S.add(this.__bG);Q.add(S);var P=new qx.ui.container.Composite(new qx.ui.layout.VBox(4));R.add(P,{flex:1});P.add(new qx.ui.basic.Label(q).set({rich:true}));this.__bD=new qx.ui.embed.Flash(l);this.__bD.setVariables({init:v});P.add(this.__bD,{flex:1});return R;}
+,sendMessage:function(T){this.__bE.setValue(T);}
+,initFlash:function(){if(this.__bD.getFlashElement().setup){this.__bD.getFlashElement().setup(u);this.__bG.setEnabled(true);}
 else {alert(w+m+a);}
 ;}
-},statics:{__uU:null,setCallBackInstance:function(U){demobrowser.demo.widget.Flash.__uU=U;}
-,sendMessage:function(V){demobrowser.demo.widget.Flash.__uU.sendMessage(V);}
-,flashReady:function(){demobrowser.demo.widget.Flash.__uU.initFlash();}
-},destruct:function(){this._disposeObjects(h,x,B,v,s);}
+},statics:{__bH:null,setCallBackInstance:function(U){demobrowser.demo.widget.Flash.__bH=U;}
+,sendMessage:function(V){demobrowser.demo.widget.Flash.__bH.sendMessage(V);}
+,flashReady:function(){demobrowser.demo.widget.Flash.__bH.initFlash();}
+},destruct:function(){this._disposeObjects(C,c,t,A,s);}
 });}
 )();
 (function(){var a="qx.ui.core.ISingleSelection",b="qx.event.type.Data";qx.Interface.define(a,{events:{"changeSelection":b},members:{getSelection:function(){return true;}

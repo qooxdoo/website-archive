@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.GroupedList.d0d7540014c4.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.GroupedList.95a92a767b7b.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,23 +8549,23 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var c="persons.json</a> and binds the created model to all list widgets. ",d="demobrowser.demo.virtual.GroupedList",e="firstname",f="Friends",g="json/persons.json",h="by first name and groups it by the 'group' model property. The ",i="third list is configured  to use a customized group item for rendering.",j="Grouped by last name:",k="<b>Grouped List</b><br/>",l="Raw List:",m="The second list sorts the items by last name and groups the items ",n="Colleagues",o="model.persons",p="icon",q="#005E00",r="Loads the json file <a href='json/persons.json' target='_blank'>",s="The first list shows only the row data and uses a converter for the ",t=", ",u="Grouped by group:",v="bold",w="icon/16/emotes/face-laugh.png",x="model",y="by the first letter of the last name. The third list sorts the items ",z="label",A="icon/16/categories/system.png",B="no model...",C="icon/16/categories/office.png",D=" ",E="white",F="label that concatenates the first and last name. ";qx.Class.define(d,{extend:qx.application.Standalone,members:{__tB:null,__uG:null,__uH:null,main:function(){qx.application.Standalone.prototype.main.call(this);var J=this.createFirstExample();var L=this.createSecondExample();var K=this.createThirdExample();this.loadData();var G=new qx.ui.container.Composite(new qx.ui.layout.VBox(10));this.getRoot().add(G,{edge:20});var H=new qx.ui.basic.Label();H.setRich(true);H.setWidth(470);H.setSelectable(true);H.setValue(k+r+c+s+F+m+y+h+i);G.add(H);var I=new qx.ui.container.Composite(new qx.ui.layout.HBox(20));G.add(I,{flex:1});I.add(J);I.add(L);I.add(K);}
-,loadData:function(){var M=g;var N=new qx.data.store.Json(M);N.bind(o,this.__tB,x);N.bind(o,this.__uG,x);N.bind(o,this.__uH,x);}
-,createFirstExample:function(){var O=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var Q=new qx.ui.basic.Label(l).set({font:v});O.add(Q);var P=this.__tB=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(S,R){return R?S+D+R.getLastname():B;}
+(function(){var c="persons.json</a> and binds the created model to all list widgets. ",d="demobrowser.demo.virtual.GroupedList",e="firstname",f="Friends",g="json/persons.json",h="by first name and groups it by the 'group' model property. The ",i="third list is configured  to use a customized group item for rendering.",j="Grouped by last name:",k="<b>Grouped List</b><br/>",l="Raw List:",m="The second list sorts the items by last name and groups the items ",n="Colleagues",o="model.persons",p="icon",q="#005E00",r="Loads the json file <a href='json/persons.json' target='_blank'>",s="The first list shows only the row data and uses a converter for the ",t=", ",u="Grouped by group:",v="bold",w="icon/16/emotes/face-laugh.png",x="model",y="by the first letter of the last name. The third list sorts the items ",z="label",A="icon/16/categories/system.png",B="no model...",C="icon/16/categories/office.png",D=" ",E="white",F="label that concatenates the first and last name. ";qx.Class.define(d,{extend:qx.application.Standalone,members:{__i:null,__bq:null,__br:null,main:function(){qx.application.Standalone.prototype.main.call(this);var J=this.createFirstExample();var L=this.createSecondExample();var K=this.createThirdExample();this.loadData();var G=new qx.ui.container.Composite(new qx.ui.layout.VBox(10));this.getRoot().add(G,{edge:20});var H=new qx.ui.basic.Label();H.setRich(true);H.setWidth(470);H.setSelectable(true);H.setValue(k+r+c+s+F+m+y+h+i);G.add(H);var I=new qx.ui.container.Composite(new qx.ui.layout.HBox(20));G.add(I,{flex:1});I.add(J);I.add(L);I.add(K);}
+,loadData:function(){var M=g;var N=new qx.data.store.Json(M);N.bind(o,this.__i,x);N.bind(o,this.__bq,x);N.bind(o,this.__br,x);}
+,createFirstExample:function(){var O=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var Q=new qx.ui.basic.Label(l).set({font:v});O.add(Q);var P=this.__i=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(S,R){return R?S+D+R.getLastname():B;}
 }});O.add(P,{top:20});return O;}
-,createSecondExample:function(){var U=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var W=new qx.ui.basic.Label(j).set({font:v});U.add(W);var T=this.__uG=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(Y,X){return X?X.getLastname()+t+Y:B;}
+,createSecondExample:function(){var U=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var W=new qx.ui.basic.Label(j).set({font:v});U.add(W);var T=this.__bq=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(Y,X){return X?X.getLastname()+t+Y:B;}
 }});U.add(T,{top:20});var V={sorter:function(a,b){a=a.getLastname();b=b.getLastname();return a>b?1:a<b?-1:0;}
 ,group:function(ba){return ba.getLastname().charAt(0).toUpperCase();}
-};T.setDelegate(V);T.setSelection(this.__tB.getSelection());return U;}
-,createThirdExample:function(){var bc=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var be=new qx.ui.basic.Label(u).set({font:v});bc.add(be);var bb=this.__uH=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(bg,bf){return bf?bg+D+bf.getLastname():B;}
+};T.setDelegate(V);T.setSelection(this.__i.getSelection());return U;}
+,createThirdExample:function(){var bc=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var be=new qx.ui.basic.Label(u).set({font:v});bc.add(be);var bb=this.__br=new qx.ui.list.List().set({height:280,width:150,labelPath:e,labelOptions:{converter:function(bg,bf){return bf?bg+D+bf.getLastname():B;}
 }});bc.add(bb,{top:20});var bd={sorter:function(a,b){a=a.getLastname();b=b.getLastname();return a>b?1:a<b?-1:0;}
 ,group:function(bh){return bh.getGroup?bh.getGroup():null;}
 ,createGroupItem:function(){return new qx.ui.form.ListItem();}
 ,configureGroupItem:function(bi){bi.setBackgroundColor(q);bi.setTextColor(E);}
 ,bindGroupItem:function(bk,bj,bl){bk.bindProperty(null,z,null,bj,bl);bk.bindProperty(null,p,{converter:function(bm){switch(bm){case f:return w;case n:return C;default:return A;};}
 },bj,bl);}
-};bb.setDelegate(bd);bb.setSelection(this.__tB.getSelection());return bc;}
-},destruct:function(){this.__tB.dispose();this.__uG.dispose();this.__uH.dispose();this.__tB=this.__uG=this.__uH=null;}
+};bb.setDelegate(bd);bb.setSelection(this.__i.getSelection());return bc;}
+},destruct:function(){this.__i.dispose();this.__bq.dispose();this.__br.dispose();this.__i=this.__bq=this.__br=null;}
 });}
 )();
 (function(){var a="Decorator",b="_applyLayoutChange",c="center",d="_applyReversed",e="qx.debug",f="bottom",g="' is not supported by the VBox layout!",h="qx.ui.layout.VBox",j="flex",k="top",m="left",n="height",o="middle",p="Integer",q="The property '",r="right",s="Boolean";qx.Class.define(h,{extend:qx.ui.layout.Abstract,construct:function(t,u,v){qx.ui.layout.Abstract.call(this);if(t){this.setSpacing(t);}

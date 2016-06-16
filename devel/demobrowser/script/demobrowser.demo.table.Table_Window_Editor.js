@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Window_Editor.a4d4d2a12c44.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Window_Editor.2f7391aa6339.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9286,16 +9286,16 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="abstract method call",b="_controls",c="OK",d="",f="_table",g="center",h="en",i="icon/16/apps/office-spreadsheet.png",j="icon/32/status/dialog-information.png",k="demobrowser.demo.table.TableDemo",l="_container",m="execute";qx.Class.define(k,{extend:qx.application.Standalone,include:demobrowser.demo.table.MUtil,members:{__uk:null,main:function(){qx.application.Standalone.prototype.main.call(this);qx.locale.Manager.getInstance().setLocale(h);this._container=new qx.ui.window.Window(this.getCaption(),i).set({width:600,height:400,contentPadding:[0,0,0,0],showClose:false,showMinimize:false});this._container.setLayout(new qx.ui.layout.VBox());this._container.open();this.getRoot().add(this._container,{left:50,top:10});this._table=this.createTable();this._controls=this.createControls();if(this._controls){this._container.add(this._controls);}
+(function(){var a="abstract method call",b="_controls",c="OK",d="",f="_table",g="center",h="en",i="icon/16/apps/office-spreadsheet.png",j="icon/32/status/dialog-information.png",k="demobrowser.demo.table.TableDemo",l="_container",m="execute";qx.Class.define(k,{extend:qx.application.Standalone,include:demobrowser.demo.table.MUtil,members:{__R:null,main:function(){qx.application.Standalone.prototype.main.call(this);qx.locale.Manager.getInstance().setLocale(h);this._container=new qx.ui.window.Window(this.getCaption(),i).set({width:600,height:400,contentPadding:[0,0,0,0],showClose:false,showMinimize:false});this._container.setLayout(new qx.ui.layout.VBox());this._container.open();this.getRoot().add(this._container,{left:50,top:10});this._table=this.createTable();this._controls=this.createControls();if(this._controls){this._container.add(this._controls);}
 ;this._container.add(this._table,{flex:1});}
 ,nextId:0,createRandomRows:function(o){var p=[];var r=new Date().getTime();var n=400*24*60*60*1000;for(var s=0;s<o;s++ ){var q=new Date(r+Math.random()*n-n/2);p.push([this.nextId++ ,Math.random()*10000,q,(Math.random()>0.5)]);}
 ;return p;}
 ,getCaption:function(){return d;}
 ,createTable:function(){throw new Error(a);}
 ,createControls:function(){return null;}
-,showDialog:function(t){if(!this.__uk){var v=this.__uk=new qx.ui.window.Window().set({modal:true,showMinimize:false,showMaximize:false,width:180,contentPadding:[10,10,10,10]});v.moveTo(315,100);var w=new qx.ui.layout.Grid(15,15);w.setRowFlex(0,1);w.setColumnFlex(1,1);v.setLayout(w);v.add(new qx.ui.basic.Image(j),{row:0,column:0});v.add(new qx.ui.basic.Label().set({rich:true,allowGrowY:true}),{row:0,column:1});var u=new qx.ui.form.Button(c).set({alignX:g,allowGrowX:false,padding:[2,10]});u.addListener(m,function(e){v.close();}
+,showDialog:function(t){if(!this.__R){var v=this.__R=new qx.ui.window.Window().set({modal:true,showMinimize:false,showMaximize:false,width:180,contentPadding:[10,10,10,10]});v.moveTo(315,100);var w=new qx.ui.layout.Grid(15,15);w.setRowFlex(0,1);w.setColumnFlex(1,1);v.setLayout(w);v.add(new qx.ui.basic.Image(j),{row:0,column:0});v.add(new qx.ui.basic.Label().set({rich:true,allowGrowY:true}),{row:0,column:1});var u=new qx.ui.form.Button(c).set({alignX:g,allowGrowX:false,padding:[2,10]});u.addListener(m,function(e){v.close();}
 ,this);v.add(u,{row:1,column:0,colSpan:2});}
-;this.__uk.getChildren()[1].setValue(t);this.__uk.open();this.__uk.getChildren()[2].focus();}
+;this.__R.getChildren()[1].setValue(t);this.__R.open();this.__R.getChildren()[2].focus();}
 },destruct:function(){this._disposeObjects(f,b,l);}
 });}
 )();
@@ -9615,11 +9615,11 @@ else {u=null;}
 (function(){var a="Enter",b="A boolean",c="A number",d="Table with window cell editor",f="A date",g="",h="1*",i="50%",j="demobrowser.demo.table.Table_Window_Editor",k="appear",l="demobrowser.demo.table.ModalCellEditorFactory",m="Cell Editor",n="ID",o="execute",p="Save";qx.Class.define(j,{extend:demobrowser.demo.table.TableDemo,members:{getCaption:function(){return d;}
 ,createTable:function(){var u=this.createRandomRows(50);var t=new qx.ui.table.model.Simple();t.setColumns([n,c,f,b]);t.setData(u);t.setColumnEditable(1,true);var r={tableColumnModel:function(w){return new qx.ui.table.columnmodel.Resize(w);}
 };var v=new qx.ui.table.Table(t,r);v.getSelectionModel().setSelectionMode(qx.ui.table.selection.Model.MULTIPLE_INTERVAL_SELECTION);var s=v.getTableColumnModel();var q=s.getBehavior();q.set(0,{width:h,minWidth:40,maxWidth:80});q.setWidth(1,i);q.setMinWidth(1,100);q.setMaxWidth(1,320);q.set(3,{width:100});s.setDataCellRenderer(3,new qx.ui.table.cellrenderer.Boolean());v.setShowCellFocusIndicator(false);s.setCellEditorFactory(1,new demobrowser.demo.table.ModalCellEditorFactory());return v;}
-}});qx.Class.define(l,{extend:qx.core.Object,implement:qx.ui.table.ICellEditorFactory,members:{createCellEditor:function(x){var A=new qx.ui.window.Window(m);A.setLayout(new qx.ui.layout.HBox(4));A.set({padding:3,modal:true,showClose:false,showMaximize:false,showMinimize:false});A.moveTo(300,250);A.addListener(k,function(e){A.__ut.focus();A.__ut.setTextSelection(0,A.__ut.getValue().length);}
-);A.__ut=new qx.ui.form.TextField(x.value+g).set({allowGrowY:true});A.add(A.__ut);var y=new qx.ui.form.Button(p);y.addListener(o,function(e){A.close();}
+}});qx.Class.define(l,{extend:qx.core.Object,implement:qx.ui.table.ICellEditorFactory,members:{createCellEditor:function(x){var A=new qx.ui.window.Window(m);A.setLayout(new qx.ui.layout.HBox(4));A.set({padding:3,modal:true,showClose:false,showMaximize:false,showMinimize:false});A.moveTo(300,250);A.addListener(k,function(e){A.__bc.focus();A.__bc.setTextSelection(0,A.__bc.getValue().length);}
+);A.__bc=new qx.ui.form.TextField(x.value+g).set({allowGrowY:true});A.add(A.__bc);var y=new qx.ui.form.Button(p);y.addListener(o,function(e){A.close();}
 );A.add(y);var z=new qx.ui.command.Command(a);z.addListener(o,function(e){y.execute();z.dispose();z=null;}
 );return A;}
-,getCellEditorValue:function(B){return parseFloat(B.__ut.getValue());}
+,getCellEditorValue:function(B){return parseFloat(B.__bc.getValue());}
 }});}
 )();
 (function(){var a="qx.event.type.Event",b="qx.ui.table.ITableModel",c="qx.event.type.Data";qx.Interface.define(b,{events:{"dataChanged":c,"metaDataChanged":a,"sorted":c},members:{getRowCount:function(){}
@@ -10167,10 +10167,10 @@ else if(dk==dg[0]){dk=dt;}
 ;this.__zs=false;}
 ;}
 ,_onKeyPress:function(ep){if(!this.getEnabled()){return;}
-;var en=this.__zi;var ek=true;var eo=ep.getKeyIdentifier();if(this.isEditing()){if(ep.getModifiers()==0){switch(eo){case cb:this.stopEditing();var en=this.__zi;this.moveFocusedCell(0,1);if(this.__zi!=en){ek=this.startEditing();}
+;var en=this.__zi;var ek=false;var eo=ep.getKeyIdentifier();if(this.isEditing()){if(ep.getModifiers()==0){switch(eo){case cb:this.stopEditing();var en=this.__zi;this.moveFocusedCell(0,1);if(this.__zi!=en){ek=this.startEditing();}
 ;break;case u:this.cancelEditing();this.focus();break;default:ek=false;break;};}
 ;}
-else {if(ep.isCtrlPressed()){ek=true;switch(eo){case v:var el=this.getTableModel().getRowCount();if(el>0){this.getSelectionModel().setSelectionInterval(0,el-1);}
+else {ek=true;if(ep.isCtrlPressed()){switch(eo){case v:var el=this.getTableModel().getRowCount();if(el>0){this.getSelectionModel().setSelectionInterval(0,el-1);}
 ;break;default:ek=false;break;};}
 else {switch(eo){case co:this.__zA.handleSelectKeyDown(this.__zi,ep);break;case cs:case cb:this.startEditing();ek=true;break;case bX:this.setFocusedCell(this.__zj,0,true);break;case bM:var el=this.getTableModel().getRowCount();this.setFocusedCell(this.__zj,el-1,true);break;case z:this.moveFocusedCell(-1,0);break;case cr:this.moveFocusedCell(1,0);break;case ck:this.moveFocusedCell(0,-1);break;case B:this.moveFocusedCell(0,1);break;case p:case cd:var ej=this.getPaneScroller(0);var em=ej.getTablePane();var ei=this.getRowHeight();var eh=(eo==p)?-1:1;el=em.getVisibleRowCount()-1;ej.setScrollY(ej.getScrollY()+eh*el*ei);this.moveFocusedCell(0,eh*el);break;default:ek=false;};}
 ;}

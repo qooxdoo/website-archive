@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Tree.59aedc419d28.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Tree.b7e3f272159e.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8549,12 +8549,12 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="Show Leafs",b="Show top level open/close icons",c="item",d="changeValue",f="loaded",g="execute",h="drop",j="File #",k="demobrowser.demo.virtual.Tree",l="Enable drag selection",m="Open mode:",n="change",o="Hide Root Node",p="Update Model",q="Control",r=" items",s="icon/48/places/folder.png",t="move",u="New Item ",v="Enable multi selection",w="copy",x="name",y="dragstart",z="",A="mode",B="multi",C="changeSelection",D="Drag me:",E="double tap",F="single",G="Selection: ",H="children",I="Tree:",J="json/tree.json",K="model",L="none",M="Selection:",N="Root node:",O="tap",P="Toggle Height";qx.Class.define(k,{extend:qx.application.Standalone,members:{i:0,__uL:null,main:function(){qx.application.Standalone.prototype.main.call(this);var T=new qx.ui.container.Composite(new qx.ui.layout.HBox(20));this.getRoot().add(T,{top:20,left:20});var R=new qx.ui.tree.VirtualTree(null,x,H).set({width:200,height:400});T.add(R);R.setDroppable(true);R.setDraggable(true);R.addListener(y,function(e){e.addType(c);e.addAction(t);}
+(function(){var a="Show Leafs",b="Show top level open/close icons",c="item",d="changeValue",f="loaded",g="execute",h="drop",j="File #",k="demobrowser.demo.virtual.Tree",l="Enable drag selection",m="Open mode:",n="change",o="Hide Root Node",p="Update Model",q="Control",r=" items",s="icon/48/places/folder.png",t="move",u="New Item ",v="Enable multi selection",w="copy",x="name",y="dragstart",z="",A="mode",B="multi",C="changeSelection",D="Drag me:",E="double tap",F="single",G="Selection: ",H="children",I="Tree:",J="json/tree.json",K="model",L="none",M="Selection:",N="Root node:",O="tap",P="Toggle Height";qx.Class.define(k,{extend:qx.application.Standalone,members:{i:0,__bw:null,main:function(){qx.application.Standalone.prototype.main.call(this);var T=new qx.ui.container.Composite(new qx.ui.layout.HBox(20));this.getRoot().add(T,{top:20,left:20});var R=new qx.ui.tree.VirtualTree(null,x,H).set({width:200,height:400});T.add(R);R.setDroppable(true);R.setDraggable(true);R.addListener(y,function(e){e.addType(c);e.addAction(t);}
 );R.addListener(h,function(e){var W=e.getOriginalTarget();var X=W&&W.getModel?W.getModel():U.getModel();var V;if(e.getCurrentAction()==t){V=e.getDragTarget().getModel();this.removeItem(U.getModel(),V);}
 else {V=qx.data.marshal.Json.createModel({"name":u+this.i++ ,"children":[]});}
 ;if(X.getChildren){X.getChildren().push(V);}
 ;}
-,this);var Q=J;var U=new qx.data.store.Json(Q);this.__uL=U;U.bind(K,R,K);U.addListener(f,function(){R.openNode(R.getModel().getChildren().getItem(0));}
+,this);var Q=J;var U=new qx.data.store.Json(Q);this.__bw=U;U.bind(K,R,K);U.addListener(f,function(){R.openNode(R.getModel().getChildren().getItem(0));}
 ,this);var S=this.getCommandFrame(R);T.add(S);}
 ,removeItem:function(ba,Y){if(!ba.getChildren||ba==Y){return;}
 ;var bb=ba.getChildren();for(var i=0;i<bb.length;i++ ){if(bb.getItem(i)==Y){bb.remove(Y);return;}
