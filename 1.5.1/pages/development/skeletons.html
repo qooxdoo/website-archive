@@ -1,0 +1,239 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Application Skeletons &mdash; qooxdoo v1.6 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.6',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo v1.6 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="Logging System" href="logging.html" />
+    <link rel="prev" title="Development" href="../development.html" /> 
+  </head>
+  <body>
+
+		<div class="header">
+			<div class="headcenter">
+		    <a href="/"><img id="logo" src="http://resources.qooxdoo.org/images/logo.gif" alt="qooxdoo logo"/></a>
+		
+		    <h1 style="display: none;">qooxdoo</h1>
+		    <h2 class="subline">Universal JavaScript Framework</h2>
+		  </div>
+			<div class="navigation">
+				<a href="http://qooxdoo.org">Home</a>
+				<a href="http://qooxdoo.org/about">About</a>
+				<a href="http://news.qooxdoo.org/">News</a>
+				<a href="http://qooxdoo.org/demo">Demo</a>
+				<a class="current" href="http://qooxdoo.org/documentation">Documentation</a>
+				<a href="http://qooxdoo.org/community">Community</a>
+				<a href="http://qooxdoo.org/download">Download</a>
+				<a href="http://bugzilla.qooxdoo.org/">Bugs</a>
+			</div>
+			<div class="subheader">&nbsp;</div>
+		</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="logging.html" title="Logging System"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../development.html" title="Development"
+             accesskey="P">previous</a> |</li>
+				<li> &raquo; <a href="http://qooxdoo.org">Home</a> &raquo;</li>
+        <li><a href="../../index.html">qooxdoo v1.6 documentation</a> &raquo;</li>
+          <li><a href="../../toc.html" >Table of Contents</a> &raquo;</li>
+          <li><a href="../development.html" accesskey="U">Development</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="application-skeletons">
+<span id="pages-development-skeletons-skeletons"></span><h1>Application Skeletons<a class="headerlink" href="#application-skeletons" title="Permalink to this headline">¶</a></h1>
+<p>qooxdoo comes with several different application templates or <em>skeletons</em>. Each is meant for a specific usage scenario and includes a different subset of the qooxdoo framework (see the <a class="reference internal" href="../getting_started/architecture.html#pages-architecture-architecture"><em>architecture diagram</em></a> for reference).</p>
+<p>When creating a new application using <a class="reference internal" href="../getting_started/helloworld.html#pages-getting-started-helloworld-hello-world"><em>create-application.py</em></a>, the <em>-t</em> or <em>--type</em> parameter specifies the type of skeleton to be used, e.g.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qooxdoo</span><span class="o">-</span><span class="mf">1.6</span><span class="o">-</span><span class="nx">sdk</span><span class="o">/</span><span class="nx">tool</span><span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">create</span><span class="o">-</span><span class="nx">application</span><span class="p">.</span><span class="nx">py</span> <span class="o">--</span><span class="nx">name</span><span class="o">=</span><span class="nx">custom</span> <span class="o">--</span><span class="nx">type</span><span class="o">=</span><span class="nx">mobile</span>
+</pre></div>
+</div>
+<p>The following skeletons are available:</p>
+<div class="section" id="gui">
+<h2>Gui<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h2>
+<p>For a GUI application that looks &amp; feels like a native desktop application (often called “RIA” – Rich Internet Application).</p>
+<p>Such a stand-alone application typically creates and updates all content dynamically. Often it is called a “single-page application”, since the document itself is never reloaded or changed.</p>
+<p>This is the default choice if the <em>--type</em> parameter is not specified.</p>
+<p>Inherits from <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.application.Standalone">qx.application.Standalone</a></p>
+<div class="section" id="included-layers">
+<h3>Included layers<a class="headerlink" href="#included-layers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Core</li>
+<li>Runtime Abstraction</li>
+<li>Low-Level</li>
+<li>GUI Toolkit</li>
+</ul>
+</div>
+</div>
+<div class="section" id="inline">
+<h2>Inline<a class="headerlink" href="#inline" title="Permalink to this headline">¶</a></h2>
+<p>For a GUI application on a traditional, HTML-dominated web page.</p>
+<p>The ideal environment for typical portal sites which use just a few qooxdoo widgets, embedded into the page's existing HTML content.</p>
+<p>Inherits from <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.application.Inline">qx.application.Inline</a></p>
+<div class="section" id="id1">
+<h3>Included layers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Core</li>
+<li>Runtime Abstraction</li>
+<li>Low-Level</li>
+<li>GUI Toolit</li>
+</ul>
+</div>
+</div>
+<div class="section" id="mobile">
+<h2>Mobile<a class="headerlink" href="#mobile" title="Permalink to this headline">¶</a></h2>
+<p>For a <a class="reference internal" href="../mobile/mobile_overview.html#pages-mobile-mobile-overview-overview"><em>mobile application</em></a> running in a WebKit-based browser on iOS or Android (and also on desktop machines). Supports the <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.ui.mobile">mobile widget set</a>.</p>
+<p>Inherits from <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.application.Mobile">qx.application.Mobile</a></p>
+<div class="section" id="id2">
+<h3>Included layers<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Core</li>
+<li>Runtime Abstraction</li>
+<li>Mobile UI</li>
+</ul>
+</div>
+</div>
+<div class="section" id="native">
+<h2>Native<a class="headerlink" href="#native" title="Permalink to this headline">¶</a></h2>
+<p>For applications using custom HTML/CSS-based GUIs instead of qooxdoo's widget layer.</p>
+<p>Inherits from <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.application.Native">qx.application.Native</a></p>
+<div class="section" id="id3">
+<h3>Included layers<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Core</li>
+<li>Runtime Abstraction</li>
+<li>Low-Level</li>
+</ul>
+</div>
+</div>
+<div class="section" id="bom">
+<h2>Bom<a class="headerlink" href="#bom" title="Permalink to this headline">¶</a></h2>
+<p>Pre-configured <a class="reference internal" href="../low_level/setup_a_low-level_library.html#pages-setup-a-low-level-library-setup-a-low-level-library"><em>low-level library</em></a>.</p>
+<div class="section" id="id4">
+<h3>Included layers<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Runtime Abstraction (partially)</li>
+<li>Low-Level (partially)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="basic">
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
+<p>For applications running in &quot;browserless&quot; or server-side environments such as node.js and Rhino.</p>
+<p>Inherits from <a class="reference external" href="http://demo.qooxdoo.org/1.6/apiviewer/#qx.application.Basic">qx.application.Basic</a></p>
+<div class="section" id="id5">
+<h3>Included layers<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Core</li>
+</ul>
+</div>
+</div>
+<div class="section" id="contribution">
+<h2>Contribution<a class="headerlink" href="#contribution" title="Permalink to this headline">¶</a></h2>
+<p>For a <a class="reference external" href="http://qooxdoo.org/contrib/">qooxdoo-contrib</a> application, component or library. Enables integration with the <a class="reference external" href="http://demo.qooxdoo.org/contrib/demobrowser/">Contribution Demo Browser</a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference internal" href="#">Application Skeletons</a><ul>
+<li><a class="reference internal" href="#gui">Gui</a><ul>
+<li><a class="reference internal" href="#included-layers">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#inline">Inline</a><ul>
+<li><a class="reference internal" href="#id1">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mobile">Mobile</a><ul>
+<li><a class="reference internal" href="#id2">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#native">Native</a><ul>
+<li><a class="reference internal" href="#id3">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bom">Bom</a><ul>
+<li><a class="reference internal" href="#id4">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basic">Basic</a><ul>
+<li><a class="reference internal" href="#id5">Included layers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contribution">Contribution</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../development.html"
+                                  title="previous chapter">Development</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="logging.html"
+                                  title="next chapter">Logging System</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/pages/development/skeletons.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2011, qooxdoo developers.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

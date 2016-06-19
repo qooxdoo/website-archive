@@ -1,193 +1,252 @@
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>qooxdoo &raquo; Demo</title>
-  <style type="text/css">
-*{
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body{
-  font-size: 12px;
-  font-family: Arial, "Bitstream Vera Sans", Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-p{
-  margin: 6px 0;
-}
-
-.hide, .publish {
-	display: none;
-}
-
-#demoHead,
-#demoFoot{
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  background: #134275;
-  padding: 5px 8px;
-  color: #DEFF83;
-  font-weight: bold;
-  overflow: hidden;
-  z-index: 1000000000;
-}
-
-#demoHead{
-  top: 0px;
-}
-
-#demoHead span{
-  font-weight: normal;
-  color: white;
-}
-
-img{
-  box-sizing: content-box;
-  -moz-box-sizing: content-box;
-}
-
-#content{
-  margin: 40px 20px 0;
-  width: 400px;
-}
-
-h1{
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #134275;
-}
-
-h2{
-  font-size: 14px;
-  color: #1D65B3;
-}
-
-a{
-  color: #335EA8;
-}
-
-li{
-  margin-left: 16px;
-  list-style: square;
-  margin-bottom: 20px;
-}
-
-p{
-  font-size: 12px;
-}
-
-ul ul{
-  margin-top: 20px;
-}
-  </style>
-</head>
-<body>
-  <div id="demoHead">qooxdoo<span> - Universal JavaScript Framework</span></div>
-
-  <div id="content" style="position:absolute;top:0px;left:0px">
-
-    <h1>Demo Applications</h1>
-
-    <ul>
-      <li>
-        <h2>Showcase</h2>
-        <p>Highlights some of qooxdoo's main features and provides a good overview of what can be achieved.</p>
-        <span class="local hide"><a href="showcase/build/index.html"><b>Build</b></a> | <a href="showcase/source/index.html">Source (Developer)</a></span>
-        <span><a href="showcase/index.html"><b>Open Showcase</b></a></span>
-      </li>
-      <li>
-        <h2>Widget Browser</h2>
-        <p>Shows the widgets and themes available in qooxdoo.</p>
-        <span class="local hide"><a href="widgetbrowser/build/index.html"><b>Build</b></a> | <a href="widgetbrowser/source/index.html">Source (Developer)</a></span>
-        <span><a href="widgetbrowser/index.html"><b>Open Widget Browser</b></a></span>
-      </li>
-      <li>
-        <h2>Demo Browser</h2>
-        <p>Contains many examples and tests for widgets, layouts and other framework functionality.</p>
-        <span class="local hide"><a href="demobrowser/build/index.html"><b>Build</b></a> | <a href="demobrowser/source/index.html">Source (Developer)</a></span>
-        <span><a href="demobrowser/index.html"><b>Open Demo Browser</b></a></span>
-      </li>
-      <li>
-        <h2>Playground</h2>
-        <p>Explore qooxdoo programming interactively: edit qooxdoo code in one pane, and see the result running in another.</p>
-        <span class="local hide"><a href="playground/build/index.html"><b>Build</b></a> | <a href="playground/source/index.html">Source (Developer)</a></span>
-        <span><a href="playground/index.html"><b>Open Playground</b></a></span>
-      </li>
-      <li>
-        <h2>Feed Reader</h2>
-        <p>A hybrid application for displaying RSS feeds, available as a RIA (all browsers) and a mobile application (Smartphones: Android 1.6+, iOS; Desktop: Safari 5, Chrome 10+).</p>
-        <span class="local hide">RIA: <a href="feedreader/build/index.html"><b>Build</b></a> | <a href="feedreader/source/index.html">Source (Developer)</a></span>
-        <span><a href="feedreader/index.html"><b>Open Feed Reader (RIA)</b></a></span>
-        <span class="local hide"><br>mobile: <a href="feedreader/build-mobile/index.html"><b>Build</b></a> | <a href="feedreader/source/index-mobile.html">Source (Developer)</a></span>
-        <span><br><a href="feedreader-mobile/index.html"><b>Open Feed Reader (mobile)</b></a></span>
-        <span class="local hide"><br>website: <a href="feedreader/build-website/index.html"><b>Build</b></a> | <a href="feedreader/source/index-website.html">Source (Developer)</a></span>
-        <span><br><a href="feedreader-website/index.html"><b>Open Feed Reader (website)</b></a></span>
-      </li>
-      <li>
-        <h2>Portal</h2>
-        <p>A low-level, DOM-oriented application without any high-level qooxdoo widgets.</p>
-        <span class="local hide"><a href="portal/build/index.html"><b>Build</b></a> | <a href="portal/source/index.html">Source (Developer)</a></span>
-        <span><a href="portal/index.html"><b>Open Portal</b></a></span>
-      </li>
-      <li>
-        <h2>ToDo</h2>
-        <p>A DOM-oriented application using data binding, offline and templating.</p>
-        <span class="local hide"><a href="todo/build/index.html"><b>Build</b></a> | <a href="todo/source/index.html">Source (Developer)</a></span>
-        <span><a href="todo/index.html"><b>Open ToDo</b></a></span>
-      </li>
-      <li>
-        <h2>Mobile Showcase</h2>
-        <p>An experimental showcase for mobile widgets (Smartphones: Android 1.6+, iOS; Desktop: Safari 5, Chrome 10+).</p>
-        <span class="local hide"><a href="mobileshowcase/build/index.html"><b>Build</b></a> | <a href="mobileshowcase/source/index.html">Source (Developer)</a></span>
-        <span><a href="mobileshowcase/index.html"><b>Open Mobile Showcase</b></a></span>
-      </li>
-    </ul>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <br/>
-    
-    <h1>Developer Tools</h1>
-      
-    <ul>  
-      <li>
-        <h2>API Viewer</h2>
-        <p>Searchable API reference of the qooxdoo framework.</p>
-        <span class="local hide"><a href="apiviewer/build/index.html"><b>Build</b></a> | <a href="apiviewer/source/index.html">Source (Developer)</a></span>
-        <span><a href="apiviewer/index.html"><b>Open API Viewer</b></a></span>
-      </li>
-      <li>
-        <h2>Test Runner</h2>
-        <p>Integrated unit testing framework similar to (but not requiring) JSUnit.</p>
-        <span class="local hide"><a href="testrunner/build/index.html"><b>Build</b></a> | <a href="testrunner/source/index.html">Source (Developer)</a></span>
-        <span><a href="testrunner/index.html"><b>Open Test Runner</b></a></span>
-        <span class="local hide"><br><a href="testrunner/build/script/testrunner-portable.js"><b>Portable Test Runner</b></a></span>
-        <span><br><a href="testrunner/testrunner-portable.js"><b>Portable Test Runner</b></a></span>
-      </li>
-      <li>
-        <h2>Inspector</h2>
-        <p>A debugging tool to inspect a qooxdoo application, featuring an interactive console, an object and widget finder, and a property editor.</p>
-        <span class="local hide"><a href="inspector/build/index.html"><b>Build</b></a> | <a href="inspector/source/index.html">Source (Developer)</a></span>
-        <span><a href="inspector/index.html"><b>Open Inspector</b></a></span>
-      </li>
-      <li>
-        <h2>Feature Configuration Editor</h2>
-        <p>A tool that aids developers in creating configurations for feature-based builds.</p>
-        <span class="local hide"><a href="featureconfigeditor/build/index.html"><b>Build</b></a> | <a href="featureconfigeditor/source/index.html">Source (Developer)</a></span>
-        <span><a href="featureconfigeditor/index.html"><b>Open Feature Configuration Editor</b></a></span>
-      </li>
-      <li>
-        <h2>qooxdoo OO Layer</h2>
-        <p>Not a demo, but a compact JS package that encapsulates qooxdoo's OO layer, to be downloaded to add qooxdoo classes and properties to e.g. sparse JS environments like Webworkers, Rhino or node.js. (<em>experimental</em>)</p>
-        <span class="local hide"><a href="framework/build/script/qx-oo.js"><b>qx-oo.js</b></a> | <a href="framework/build/script/qx-oo-noopt.js"><b>qx-oo-noopt.js</b></a> (not optimized)</span>
-        <span><a href="framework/qx-oo.js"><b>qx-oo.js</b></a> | <a href="framework/qx-oo-noopt.js"><b>qx-oo-noopt.js</b></a> (not optimized)</span>
-      </li>
-    </ul>
-  </div>
-</body>
+    <title>Manual 1.6.1 &mdash; qooxdoo 1.6.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.6.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo 1.6.1 documentation" href="#" />
+    <link rel="next" title="Table of Contents" href="toc.html" /> 
+  </head>
+  <body>
+
+		<div class="header">
+			<div class="headcenter">
+		    <a href="/"><img id="logo" src="http://resources.qooxdoo.org/images/logo.gif" alt="qooxdoo logo"/></a>
+		
+		    <h1 style="display: none;">qooxdoo</h1>
+		    <h2 class="subline">Universal JavaScript Framework</h2>
+		  </div>
+			<div class="navigation">
+				<a href="http://qooxdoo.org">Home</a>
+				<a href="http://qooxdoo.org/about">About</a>
+				<a href="http://news.qooxdoo.org/">News</a>
+				<a href="http://qooxdoo.org/demo">Demo</a>
+				<a class="current" href="http://qooxdoo.org/documentation">Documentation</a>
+				<a href="http://qooxdoo.org/community">Community</a>
+				<a href="http://qooxdoo.org/download">Download</a>
+				<a href="http://bugzilla.qooxdoo.org/">Bugs</a>
+			</div>
+			<div class="subheader">&nbsp;</div>
+		</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="toc.html" title="Table of Contents"
+             accesskey="N">next</a> |</li>
+				<li> &raquo; <a href="http://qooxdoo.org">Home</a> &raquo;</li>
+        <li><a href="#">Manual (v1.6.1)</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="manual-version">
+<h1>Manual 1.6.1<a class="headerlink" href="#manual-version" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Welcome to the qooxdoo manual. Here are some highlights of what you can find here. For a full overview proceed to the <a class="reference internal" href="toc.html"><em>table of contents</em></a>.</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="o_star" src="_images/development.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Getting Started</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="pages/getting_started/helloworld.html#pages-getting-started-helloworld-requirements"><em>Prerequisites</em></a></li>
+<li><a class="reference internal" href="pages/getting_started/helloworld.html#pages-getting-started-helloworld-download"><em>Download</em></a></li>
+<li><a class="reference internal" href="pages/getting_started/helloworld.html#pages-getting-started-helloworld-installation"><em>Installation</em></a></li>
+<li><a class="reference internal" href="pages/getting_started/helloworld.html#pages-getting-started-helloworld-create-your-application"><em>&quot;Hello World&quot;</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="tutorial" src="_images/internet-blog1.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Tutorials</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="pages/tutorials/tutorial-part-1.html"><em>Rich Internet Applications</em></a></li>
+<li><a class="reference internal" href="pages/mobile/tutorial.html"><em>Mobile Apps</em></a></li>
+<li><a class="reference internal" href="pages/tool/tutorial_basics.html"><em>Tooling</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="g_book" src="_images/utilities-notes.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Core Concepts</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="pages/core/oo_introduction.html"><em>Classes</em></a></li>
+<li><a class="reference internal" href="pages/core/understanding_properties.html"><em>Properties</em></a></li>
+<li><a class="reference internal" href="pages/data_binding/data_binding.html"><em>Data Binding</em></a></li>
+<li><a class="reference internal" href="pages/core/environment.html"><em>Environment</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="g_write" src="_images/office-contact.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>APIs</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="pages/gui_toolkit/ui_widgets.html"><em>Widgets</em></a></li>
+<li><a class="reference internal" href="pages/low_level/low_level_apis.html"><em>Low-level</em></a></li>
+<li><a class="reference internal" href="pages/mobile/mobile_overview.html"><em>Mobile</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="o_folder" src="_images/utilities-dictionary.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Reference</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="toc.html"><em>Table of Contents</em></a></li>
+<li><a class="reference internal" href="pages/references.html"><em>Collection of technical references</em></a></li>
+<li><a class="reference internal" href="pages/glossary.html"><em>Glossary</em></a></li>
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="g_faq" src="_images/engineering.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Migration</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference internal" href="pages/migration/migration_guide.html"><em>Migration Guide</em></a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><img alt="o_save" src="_images/document-open.png" /></td>
+<td><dl class="first last docutils">
+<dt><strong>Offline Manual</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="qooxdoo.pdf">Get the PDF</a></li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Next topic</h4>
+            <p class="topless"><a href="toc.html"
+                                  title="next chapter">Table of Contents</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2011-2012, qooxdoo developers.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
 </html>

@@ -1,0 +1,1207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>From jQuery to qooxdoo &mdash; qooxdoo 1.6.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.6.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo 1.6.1 documentation" href="../../index.html" />
+    <link rel="up" title="Low Level Framework" href="../low_level.html" />
+    <link rel="next" title="GUI Toolkit" href="../gui_toolkit.html" />
+    <link rel="prev" title="Transforms and Animations (CSS3)" href="css3animation.html" /> 
+  </head>
+  <body>
+
+		<div class="header">
+			<div class="headcenter">
+		    <a href="/"><img id="logo" src="http://resources.qooxdoo.org/images/logo.gif" alt="qooxdoo logo"/></a>
+		
+		    <h1 style="display: none;">qooxdoo</h1>
+		    <h2 class="subline">Universal JavaScript Framework</h2>
+		  </div>
+			<div class="navigation">
+				<a href="http://qooxdoo.org">Home</a>
+				<a href="http://qooxdoo.org/about">About</a>
+				<a href="http://news.qooxdoo.org/">News</a>
+				<a href="http://qooxdoo.org/demo">Demo</a>
+				<a class="current" href="http://qooxdoo.org/documentation">Documentation</a>
+				<a href="http://qooxdoo.org/community">Community</a>
+				<a href="http://qooxdoo.org/download">Download</a>
+				<a href="http://bugzilla.qooxdoo.org/">Bugs</a>
+			</div>
+			<div class="subheader">&nbsp;</div>
+		</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../gui_toolkit.html" title="GUI Toolkit"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="css3animation.html" title="Transforms and Animations (CSS3)"
+             accesskey="P">previous</a> |</li>
+				<li> &raquo; <a href="http://qooxdoo.org">Home</a> &raquo;</li>
+        <li><a href="../../index.html">Manual (v1.6.1)</a> &raquo;</li>
+          <li><a href="../../toc.html" >Table of Contents</a> &raquo;</li>
+          <li><a href="../low_level.html" accesskey="U">Low Level Framework</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="from-jquery-to-qooxdoo">
+<span id="pages-fromjquery-from-jquery-to-qooxdoo"></span><h1>From jQuery to qooxdoo<a class="headerlink" href="#from-jquery-to-qooxdoo" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note that the features described here are still experimental, so the API may change in the future.</p>
+</div>
+<p>This article may be a good transition guide for experienced jQuery developers to work with qooxdoo. qooxdoo 0.8.2 and beyond supports a selector engine and an experimental collection handling, which is comparable to the feature set of <a class="reference external" href="http://jquery.com">jQuery</a> 1.3.2 and after.</p>
+<p>For more info also see the following information:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://demo.qooxdoo.org/1.6.1/demobrowser/index.html#bom~Selector.html">Selector demo</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/1.6.1/apiviewer/#qx.bom.Selector">Selector API</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/1.6.1/apiviewer/#qx.bom.Collection">Collection API</a></li>
+</ul>
+<div class="section" id="jquery-s-method">
+<h2>jQuery's $() Method<a class="headerlink" href="#jquery-s-method" title="Permalink to this headline">¶</a></h2>
+<p>jQuery's main method <tt class="docutils literal"><span class="pre">$()</span></tt> behaves different depending on the parameters supplied:</p>
+<ul class="simple">
+<li>Converting a DOM node into a collection</li>
+<li>Selecting a set of elements via CSS expression</li>
+<li>Processing HTML code and wrapping it into a collection</li>
+<li>Registering functions for being executed at document load</li>
+</ul>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="nx">domNode</span><span class="p">).</span><span class="nx">doSomething</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;expression&quot;</span><span class="p">).</span><span class="nx">doSomething</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;HTML &lt;b&gt;string&lt;/b&gt;&quot;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="nx">initFunction</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The resulting jQuery object is an instance of <tt class="docutils literal"><span class="pre">qx.bom.Collection</span></tt> (or short a &quot;collection&quot;) on the qooxdoo side. In general qooxdoo is intentionally a bit more verbose in terms of API, since it often is disadvantageous to use all too much implicit magic (a lesson learned from early qooxdoo).</p>
+</div>
+<div class="section" id="wrapping-dom-elements">
+<h2>1. Wrapping DOM Elements<a class="headerlink" href="#wrapping-dom-elements" title="Permalink to this headline">¶</a></h2>
+<p>You create a collection in qooxdoo by invoking the static method <tt class="docutils literal"><span class="pre">qx.bom.Collection.create</span></tt> with an existing DOM node:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">coll</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>   <span class="c1">// qooxdoo</span>
+</pre></div>
+</div>
+<p>This is basically the same as the following jQuery code:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">coll</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>   <span class="c1">// jQuery</span>
+</pre></div>
+</div>
+<p>Like jQuery, qooxdoo's collection supports an array as first argument, where each element of the array is an existing DOM node:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">coll</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">create</span><span class="p">([</span><span class="nx">li1</span><span class="p">,</span> <span class="nx">li2</span><span class="p">,</span> <span class="nx">li3</span><span class="p">]);</span>   <span class="c1">// qooxdoo</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="css-selector-engine">
+<h2>2. CSS Selector Engine<a class="headerlink" href="#css-selector-engine" title="Permalink to this headline">¶</a></h2>
+<p>It is also possible to select DOM elements by a CSS selector. qooxdoo uses exactly the same powerful <a class="reference external" href="http://sizzlejs.org">Sizzle</a> engine as jQuery. So the feature set is almost identical.</p>
+<p>In jQuery you may select all <tt class="docutils literal"><span class="pre">h2</span></tt> and <tt class="docutils literal"><span class="pre">h3</span></tt> headers by doing this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;h2,h3&quot;</span><span class="p">);</span>   <span class="c1">// jQuery</span>
+</pre></div>
+</div>
+<p>In qooxdoo you use the static method <tt class="docutils literal"><span class="pre">qx.bom.Collection.query</span></tt>, which expects a CSS like selector. This is how the code in qooxdoo to query the document for h2 and h3 headers looks like:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;h2,h3&quot;</span><span class="p">);</span>   <span class="c1">// qooxdoo</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html-parser">
+<h2>3. HTML Parser<a class="headerlink" href="#html-parser" title="Permalink to this headline">¶</a></h2>
+<p>In jQuery it is possible to reuse existing HTML. The result may be further processed by the methods on the jQuery object.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Some HTML&lt;/b&gt;&quot;</span><span class="p">);</span>   <span class="c1">// jQuery</span>
+</pre></div>
+</div>
+<p>In qooxdoo the same is achieved by having the collection parse HTML:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Some HTML&lt;/b&gt;&quot;</span><span class="p">);</span>   <span class="c1">// qooxdoo</span>
+</pre></div>
+</div>
+<p>A more explicit way to parse HTML is to use the static method <tt class="docutils literal"><span class="pre">qx.bom.Collection.html</span></tt>, so you could also say:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Some HTML&lt;/b&gt;&quot;</span><span class="p">);</span>   <span class="c1">// qooxdoo</span>
+</pre></div>
+</div>
+<p>Internally, <tt class="docutils literal"><span class="pre">create</span></tt> uses <tt class="docutils literal"><span class="pre">html</span></tt> when the first parameter is a valid HTML string.</p>
+</div>
+<div class="section" id="load-event-registration">
+<h2>4. Load Event Registration<a class="headerlink" href="#load-event-registration" title="Permalink to this headline">¶</a></h2>
+<p>To attach load events simply use qooxdoo's regular event registration. There is no convenience handling for this on the selector or collection classes. First the code for jQuery:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// jQuery (Variant 1)</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;executed at load&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>As this is also a shorthand in jQuery, here the same code when using the classical variant:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// jQuery (Variant 2)</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;executed at load&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>In qooxdoo you do it the familiar way:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// qooxdoo</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">Registration</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="nb">window</span><span class="p">,</span> <span class="s2">&quot;ready&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;executed at load&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="collection-features">
+<h2>Collection Features<a class="headerlink" href="#collection-features" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// Every listed qooxdoo method is a method of qx.bom.Collection</span>
+<span class="c1">// Look below for some short examples</span>
+<span class="kd">var</span> <span class="nx">allDivElements</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">howMany</span> <span class="o">=</span> <span class="nx">allDivElements</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">indexOfElement</span> <span class="o">=</span> <span class="nx">allDivElements</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">aDivElement</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Detect the length of a collection</td>
+<td>size() / length</td>
+<td>length</td>
+</tr>
+<tr class="row-odd"><td>Get an element by index</td>
+<td>get(0)</td>
+<td>[0]</td>
+</tr>
+<tr class="row-even"><td>Get elements as array</td>
+<td>get()</td>
+<td>toArray()</td>
+</tr>
+<tr class="row-odd"><td>Iterate over items</td>
+<td>each(callback)</td>
+<td>forEach(callback, context)</td>
+</tr>
+<tr class="row-even"><td>Get the index of an element</td>
+<td>index(elem)</td>
+<td>indexOf(elem)</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>qooxdoo uses native methods if possible. Current browsers implement them with a performance superior to the handwritten code. The names <tt class="docutils literal"><span class="pre">forEach()</span></tt>, <tt class="docutils literal"><span class="pre">indexOf()</span></tt> and others, are also the names of these methods on native Arrays. This reduces the learning curve for new JavaScript developers as only one API has to be understood.</li>
+<li><tt class="docutils literal"><span class="pre">forEach()</span></tt> comes with the arguments <tt class="docutils literal"><span class="pre">callback</span></tt> and <tt class="docutils literal"><span class="pre">obj</span></tt>, where <tt class="docutils literal"><span class="pre">callback</span></tt> is the method to execute and <tt class="docutils literal"><span class="pre">obj</span></tt> is the context in which it should be executed. In jQuery the method is called <tt class="docutils literal"><span class="pre">each()</span></tt> and has only a <tt class="docutils literal"><span class="pre">callback</span></tt> argument, not allowing to define the context in which the method is executed. Actually it is executed in the context of the current item. So this is always the &quot;current&quot; element, whereas in qooxdoo this is the first argument sent to the callback function.</li>
+<li>get() jquery function can get the last element with a negative argument passed to it: get(-1), while in qooxdoo indexOf() method has a fromIndex as second argument making it more suited in case of large collections.</li>
+</ul>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general">
+<h3>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Read an attribute</td>
+<td>attr(name)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getAttribute">getAttribute(name)</a></td>
+</tr>
+<tr class="row-odd"><td>Set an attribute</td>
+<td>attr(name, value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setAttribute">setAttribute(name, value)</a></td>
+</tr>
+<tr class="row-even"><td>Set an attribute to a computed value</td>
+<td>attr(name, function)</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Set attributes</td>
+<td>attr(map)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.html.Element~setAttributes">setAttributes(map)</a></td>
+</tr>
+<tr class="row-even"><td>Remove an attribute</td>
+<td>removeAttr(name)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~resetAttribute">resetAttribute(name)</a></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>qooxdoo distinguishes between setters and getters. In jQuery these two variants are usually melted into a single function, which decides about the action from the arguments given. This may be a problem when unintentionally <tt class="docutils literal"><span class="pre">undefined</span></tt> values are passed to these methods as these do not throw an error in this case.</li>
+<li>Each getter on a qooxdoo collection only returns the value of the first element of the collection. This is the same as in jQuery, except for the <tt class="docutils literal"><span class="pre">text()</span></tt> method, which concats the text content of all elements in the collection into one large string.</li>
+</ul>
+</div>
+<div class="section" id="html">
+<h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Get the HTML content</td>
+<td>html()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getAttribute">getAttribute(&quot;html&quot;)</a></td>
+</tr>
+<tr class="row-odd"><td>Set the HTML content</td>
+<td>html(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setAttribute">setAttribute(&quot;html&quot;, value)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="text">
+<h3>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Get the textual content</td>
+<td>text()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getAttribute">getAttribute(&quot;text&quot;)</a></td>
+</tr>
+<tr class="row-odd"><td>Set the textual content</td>
+<td>text(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setAttribute">setAttribute(&quot;text&quot;, value)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="class">
+<h3>Class<a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Add a class</td>
+<td>addClass(classname)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~addClass">addClass(classname)</a></td>
+</tr>
+<tr class="row-odd"><td>Check for a class</td>
+<td>hasClass(classname)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~hasClass">hasClass(classname)</a></td>
+</tr>
+<tr class="row-even"><td>Remove class</td>
+<td>removeClass(classname)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~removeClass">removeClass(classname)</a></td>
+</tr>
+<tr class="row-odd"><td>Toggle class</td>
+<td>toggleClass(classname)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~toggleClass">toggleClass(classname)</a></td>
+</tr>
+<tr class="row-even"><td>Toggle class based on switch</td>
+<td>toggleClass(classname, toggle)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~toggleClass">toggleClass(classname, toggle)</a></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>jQuery's <tt class="docutils literal"><span class="pre">hasClass()</span></tt> checks if at least one class in the collection matches the given class name, whereas in qooxdoo (consistent with the way all getters work), only queries the first element. Both return Boolean values. As an alternative to jQuery's method you may call the method <tt class="docutils literal"><span class="pre">is()</span></tt> instead, which exists in both frameworks with a comparable implementation.</li>
+</ul>
+</div>
+<div class="section" id="value">
+<h3>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Read a value</td>
+<td>val()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getValue">getValue()</a></td>
+</tr>
+<tr class="row-odd"><td>Set a value</td>
+<td>val(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setValue">setValue(value)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="css">
+<h2>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="style">
+<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Reading a style</td>
+<td>css(name)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getStyle">getStyle(name)</a></td>
+</tr>
+<tr class="row-odd"><td>Setting a style</td>
+<td>css(name, value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setStyle">setStyle(name, value)</a></td>
+</tr>
+<tr class="row-even"><td>Setting styles</td>
+<td>css(map)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setStyles">setStyles(map)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="position">
+<h3>Position<a class="headerlink" href="#position" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Get absolute position to document</td>
+<td>offset()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getOffset">getOffset()</a></td>
+</tr>
+<tr class="row-odd"><td>Get the offset parent</td>
+<td>offsetParent()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getOffsetParent">getOffsetParent()</a></td>
+</tr>
+<tr class="row-even"><td>Get position in relation to offset parent</td>
+<td>position()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.element.Location~getPosition">getPosition()</a></td>
+</tr>
+<tr class="row-odd"><td>Get vertical scroll position</td>
+<td>scrollTop()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getScrollTop">getScrollTop()</a></td>
+</tr>
+<tr class="row-even"><td>Set vertical scroll position</td>
+<td>scrollTop(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setScrollTop">setScrollTop(value)</a></td>
+</tr>
+<tr class="row-odd"><td>Get horizontal scroll position</td>
+<td>scrollLeft()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~getScrollLeft">getScrollLeft()</a></td>
+</tr>
+<tr class="row-even"><td>Set horizontal scroll position</td>
+<td>scrollLeft(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setScrollLeft">setScrollLeft(value)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dimension">
+<h3>Dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Returns the rendered width</td>
+<td>width()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.element.Dimension~getContentWidth">getContentWidth()</a></td>
+</tr>
+<tr class="row-odd"><td>Configures the width</td>
+<td>width(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setStyle">setStyle(&quot;width&quot;, value+&quot;px&quot;)</a></td>
+</tr>
+<tr class="row-even"><td>Returns the rendered height</td>
+<td>height()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.element.Dimension~getContentHeight">getContentHeight()</a></td>
+</tr>
+<tr class="row-odd"><td>Configures the height</td>
+<td>height(value)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~setStyle">setStyle(&quot;height&quot;, value+&quot;px&quot;)</a></td>
+</tr>
+<tr class="row-even"><td>Returns the inner width</td>
+<td>innerWidth()</td>
+<td><em>see notes</em></td>
+</tr>
+<tr class="row-odd"><td>Returns the inner width</td>
+<td>innerHeight()</td>
+<td><em>see notes</em></td>
+</tr>
+<tr class="row-even"><td>Returns the outer width</td>
+<td>outerWidth()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.element.Dimension~getWidth">getWidth()</a></td>
+</tr>
+<tr class="row-odd"><td>Returns the inner width</td>
+<td>outerHeight()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.element.Dimension~getHeight">getHeight()</a></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>There are a few differences between the APIs of qooxdoo and jQuery here. The <tt class="docutils literal"><span class="pre">width()</span></tt> method of jQuery returns the content width, qooxdoo's <tt class="docutils literal"><span class="pre">getWidth()</span></tt> returns the box width instead (think of the &quot;user-visible&quot; width). The content width in qooxdoo is available from the method <tt class="docutils literal"><span class="pre">getContentWidth()</span></tt>. The box width in jQuery is available via <tt class="docutils literal"><span class="pre">outerWidth()</span></tt>.</li>
+<li>jQuery has a few more convenience methods, but they are typically used less often. The inner width in jQuery is basically the content width plus left and right padding. The outer width in jQuery also supports an optional flag to respect the margin as well (margin box). You can calculate both dimensions quite easily using <tt class="docutils literal"><span class="pre">qx.bom.element.Style.get()</span></tt>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="traversing">
+<h2>Traversing<a class="headerlink" href="#traversing" title="Permalink to this headline">¶</a></h2>
+<p>Collection modifiers are available to extend or filter the current collection and to create a new collection to be returned. The method <tt class="docutils literal"><span class="pre">end()</span></tt> exits the last extension or filter and returns the previous collection. This is especially useful when working with chaining.</p>
+<div class="section" id="filtering">
+<h3>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Filter by index</td>
+<td>eq(index)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~eq">eq(index)</a></td>
+</tr>
+<tr class="row-odd"><td>Filter by selector</td>
+<td>filter(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~filter">filter(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Filter by function</td>
+<td>filter(function)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~filter">filter(function)</a></td>
+</tr>
+<tr class="row-odd"><td>Whether content matches expression</td>
+<td>is(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~is">is(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Translate one collection into another</td>
+<td>map(function)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.type.BaseArray~map">map(function, context?)</a></td>
+</tr>
+<tr class="row-odd"><td>Remove elements matching the expression</td>
+<td>not(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~not">not(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Select a subset of the collection</td>
+<td>slice(start, end)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.type.BaseArray~slice">slice(start, end)</a></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>In qooxdoo the methods <tt class="docutils literal"><span class="pre">map()</span></tt> and <tt class="docutils literal"><span class="pre">slice()</span></tt> are implemented by the native <tt class="docutils literal"><span class="pre">Array</span></tt> methods and this way guarantee an optimal performance. There are a lot more functions available in qooxdoo, as most <tt class="docutils literal"><span class="pre">Array</span></tt> methods are simply inherited, e.g. <tt class="docutils literal"><span class="pre">splice()</span></tt>, <tt class="docutils literal"><span class="pre">sort()</span></tt>, etc.</li>
+<li>For the method <tt class="docutils literal"><span class="pre">hasClass()</span></tt> please have a look at the &quot;Attributes&quot; section above. Be aware that the qooxdoo implementation only works on the first element and this way is not equivalent to jQuery's implementation.</li>
+</ul>
+</div>
+<div class="section" id="finding">
+<h3>Finding<a class="headerlink" href="#finding" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Add elements</td>
+<td>add(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~add">add(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Get children matching the selector</td>
+<td>children(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~children">children(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Closest parent that matches</td>
+<td>closest(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~closest">closest(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Get all child nodes (non-recursive)</td>
+<td>contents()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~contents">contents()</a></td>
+</tr>
+<tr class="row-even"><td>Replace with matched children</td>
+<td>find(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~find">find(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Replace with matched children</td>
+<td>find(function)</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-even"><td>Get next element</td>
+<td>next(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~next">next(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Get all next elements</td>
+<td>nextAll(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~nextAll">nextAll(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Get all next elements up to a limit</td>
+<td>nextUntil(selector)</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Get parent element</td>
+<td>parent(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~parent">parent(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Get all parent elements</td>
+<td>parents(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~parents">parents(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Get all parent elements up to a limit</td>
+<td>parentsUntil(selector)</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-even"><td>Get previous element</td>
+<td>prev(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~prev">prev(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Get all previous elements</td>
+<td>prevAll(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~prevAll">prevAll(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Get all previous elements up to a limit</td>
+<td>prevUntil(selector)</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Get siblings</td>
+<td>siblings(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~siblings">siblings(selector)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="chaining">
+<h3>Chaining<a class="headerlink" href="#chaining" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Goto previous collection</td>
+<td>end()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~end">end()</a></td>
+</tr>
+<tr class="row-odd"><td>Merge current and previous collection</td>
+<td>andSelf()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~andSelf">andSelf()</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="content-manipulation">
+<h2>Content Manipulation<a class="headerlink" href="#content-manipulation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inserting">
+<h3>Inserting<a class="headerlink" href="#inserting" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Append content to the inside</td>
+<td>append(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~append">append(content)</a></td>
+</tr>
+<tr class="row-odd"><td>Prepend content to the inside</td>
+<td>prepend(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~prepend">prepend(content)</a></td>
+</tr>
+<tr class="row-even"><td>Append collection to given selector</td>
+<td>appendTo(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~appendTo">appendTo(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Prepend collection to given selector</td>
+<td>prependTo(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~prependTo">prependTo(selector)</a></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Please note that qooxdoo does not support adding <tt class="docutils literal"><span class="pre">tr</span></tt> elements directly to a <tt class="docutils literal"><span class="pre">table</span></tt> element as jQuery does. This reduces implementation overhead and it can easily be overcome if you use a <tt class="docutils literal"><span class="pre">tbody</span></tt> element as the parent and then <tt class="docutils literal"><span class="pre">append()</span></tt> or <tt class="docutils literal"><span class="pre">prepend()</span></tt> the <tt class="docutils literal"><span class="pre">tr</span></tt> elements.</li>
+</ul>
+</div>
+<div class="section" id="attaching">
+<h3>Attaching<a class="headerlink" href="#attaching" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Insert content after</td>
+<td>after(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~after">after(content)</a></td>
+</tr>
+<tr class="row-odd"><td>Insert content before</td>
+<td>before(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~before">before(content)</a></td>
+</tr>
+<tr class="row-even"><td>Insert collection after selector</td>
+<td>insertAfter(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~insertAfter">insertAfter(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Insert collection before selector</td>
+<td>insertBefore(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~insertBefore">insertBefore(selector)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wrapping">
+<h3>Wrapping<a class="headerlink" href="#wrapping" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Wrap content around selected elements</td>
+<td>wrap(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~wrap">wrap(content)</a></td>
+</tr>
+<tr class="row-odd"><td>Combine and wrap selected elements</td>
+<td>wrapAll(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~wrapAll">wrapAll(content)</a></td>
+</tr>
+<tr class="row-even"><td>Wrap inner of each element</td>
+<td>wrapInner(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~wrapInner">wrapInner(content)</a></td>
+</tr>
+<tr class="row-odd"><td>Replace selected elements' parents within the document</td>
+<td>unwrap()</td>
+<td><em>Not supported</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="replacing">
+<h3>Replacing<a class="headerlink" href="#replacing" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Replace collection with given content</td>
+<td>replaceWith(content)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~replaceWith">replaceWith(content)</a></td>
+</tr>
+<tr class="row-odd"><td>Replace given selector result with collection</td>
+<td>replaceAll(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~replaceAll">replaceAll(selector)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="removing">
+<h3>Removing<a class="headerlink" href="#removing" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Remove collection from parent node(s)</td>
+<td>detach(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~remove">remove(selector)</a></td>
+</tr>
+<tr class="row-odd"><td>Destroy collection from parent node(s)</td>
+<td>remove(selector)</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~destroy">destroy(selector)</a></td>
+</tr>
+<tr class="row-even"><td>Clear content of collection</td>
+<td>empty()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~empty">empty()</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="copying">
+<h3>Copying<a class="headerlink" href="#copying" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Clone collection (and DOM nodes)</td>
+<td>clone()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~clone">clone()</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="effects">
+<h2>Effects<a class="headerlink" href="#effects" title="Permalink to this headline">¶</a></h2>
+<p>The effects module in jQuery and qooxdoo are not so similar, so a comparison method for method is not the best way to describe them. The main function in jQuery to handle effects is animate().  Here are the arguments that you can pass to it:</p>
+<ul class="simple">
+<li>a map of properties and their values. ex: <tt class="docutils literal"><span class="pre">{width:</span> <span class="pre">100,height:</span> <span class="pre">'200%',left:</span> <span class="pre">'+=100',opacity:</span> <span class="pre">0.9}</span></tt>. you can give absolute values <tt class="docutils literal"><span class="pre">{width:</span> <span class="pre">100}</span></tt>, and if the property is already at that value the effect does not run for that property, or you can give a relative value <tt class="docutils literal"><span class="pre">{left:</span> <span class="pre">'+=100'}</span></tt>.</li>
+<li>a duration how long the effect will be running</li>
+<li>easing : the name of the function that will tell the effect how it will progress</li>
+<li>complete : the function that will be called when the effect is done</li>
+<li>step : a function that will be called on every step of the transition</li>
+<li>queue : a flag that will indicate if the effect will be added in the effect queue or will start immediately</li>
+<li>specialEasing : defines special easing function for each property in effect.</li>
+</ul>
+<p>In qooxdoo, we have qx.fx.Base class which all effects extend, and if you want something custom, this is the one to build upon. Both have handy functions/classes for widely used effects:
+<tt class="docutils literal"><span class="pre">hide()</span></tt>, <tt class="docutils literal"><span class="pre">show()</span></tt>, <tt class="docutils literal"><span class="pre">toggle()</span></tt>, <tt class="docutils literal"><span class="pre">fadeIn()</span></tt>, <tt class="docutils literal"><span class="pre">fadeOut()</span></tt>, <tt class="docutils literal"><span class="pre">fadeTo()</span></tt></p>
+<p>An easy translation between the 2 fx modules is listed below:</p>
+<ul class="simple">
+<li>the map of properties in jQuery does not have a similar map in qooxdoo. The properties are specified in each effect class as considered fit for the effect. qx.fx.effect.core.Style works on a single property passed as argument in the constructor, qx.fx.effect.core.Scale works on top,left,width,height and fontSize properties declared internally.</li>
+<li>duration is a property in qx.fx.Base so it can be set with setDuration() method.</li>
+<li>easing is transition in qooxdoo and can be set with setTransition() in qx.fx.Base</li>
+<li>complete is finish in qooxdoo and it is an event. you specify the jquery complete handler function like this: qx.fx.Base.addListener('finish',Func);</li>
+<li>step is update in qooxdoo and it is an event.</li>
+<li>in addition to these 2 events, qooxdoo has setup event, and you can handle it when the effect starts.</li>
+<li>queue. if you want to queue an effect in qooxdoo you would use qx.fx.queue.Queue class, and add the effect there. jQuery has some functions to handle the queue like queue() to get the effects left to run, dequeue() to execute the next effect in the queue, clearqueue() to remove all effects left in the queue. These functions are not found in qooxdoo's Queue class.</li>
+<li>specialEasing. not needed per se, as we define the transition function for each effect we create.</li>
+</ul>
+<p>jQuery has a way to terminate all animations by setting jQuery.fx.off = true, also it has a way to specify the speed of the animations by jQuery.fx.interval, which unfortunately is a global one - the corresponding property in qooxdoo is fps and can be set per effect.</p>
+<p><tt class="docutils literal"><span class="pre">stop()</span></tt> is the jQuery function to terminate animation, <tt class="docutils literal"><span class="pre">end()</span></tt> is the method for qooxdoo.
+You can get all elements being animated by using :animated selector in jQuery only. qooxdoo has no such selector, one would have to manually keep a collection of these elements.</p>
+</div>
+<div class="section" id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
+<p>Both libraries have some useful functions that come in handy.</p>
+<p><tt class="docutils literal"><span class="pre">jQuery.support</span></tt> has some properties to check for the existence of some browser featues/bugs. This was added in 1.3 replacing properties like <tt class="docutils literal"><span class="pre">jQuery.boxModel</span></tt> with <tt class="docutils literal"><span class="pre">jQuery.support.boxModel</span></tt></p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">qx.core.Environment.get(&quot;css.boxmodel&quot;)</span></tt> in qooxdoo. Many of these properties do not exist in qooxdoo, where each method hides this stuff from the user and takes care of browser inconsistencies on its own, without relying on such global properties. Here are some of them:</li>
+</ul>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">jQuery.support.changeBubbles</span></tt> - change event bubbles up the DOM tree</li>
+<li><tt class="docutils literal"><span class="pre">jQuery.support.cssFloat</span></tt> - name of the property containing the CSS float value is .cssFloat</li>
+<li><tt class="docutils literal"><span class="pre">jQuery.support.hrefNormalized</span></tt> - .getAttribute() method retrieves the href attribute of elements unchanged or full URI</li>
+<li><tt class="docutils literal"><span class="pre">jQuery.support.htmlSerialize</span></tt> - browser is able to serialize/insert &lt;link&gt; elements using the .innerHTML</li>
+</ul>
+<p>There is also a browser property named jQuery.browser which can be replaced by qooydoos environment class.</p>
+<div class="section" id="type-utilities">
+<h3>Type utilities<a class="headerlink" href="#type-utilities" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Checks if the object is Array</td>
+<td>jQuery.isArray()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isArray">qx.lang.Type.isArray()</a></td>
+</tr>
+<tr class="row-odd"><td>Checks if object has no keys</td>
+<td>jQuery.isEmptyObject()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Object~isEmpty">qx.lang.Object.isEmpty()</a></td>
+</tr>
+<tr class="row-even"><td>Checks if the object is a Function</td>
+<td>jQuery.isFunction()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isFunction">qx.lang.Type.isFunction()</a></td>
+</tr>
+<tr class="row-odd"><td>Cheks if the Object is a pure js object [ex: {}]</td>
+<td>jQuery.isPlainObject()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isObject">qx.lang.Type.isObject()</a></td>
+</tr>
+<tr class="row-even"><td>Checks to see if the argument is a window</td>
+<td>jQuery.isWindow()</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Checks to see if a DOM node is within an XML document (or is an XML document)</td>
+<td>jQuery.isXMLDoc()</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-even"><td>Checks to see if the object is a Boolean</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isBoolean">qx.lang.Type.isBoolean()</a></td>
+</tr>
+<tr class="row-odd"><td>Checks to see if the object is a Date</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isDate">qx.lang.Type.isDate()</a></td>
+</tr>
+<tr class="row-even"><td>Checks to see if the object is an Error</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isError">qx.lang.Type.isError()</a></td>
+</tr>
+<tr class="row-odd"><td>Checks to see if the object is a Number</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isNumber">qx.lang.Type.isNumber()</a></td>
+</tr>
+<tr class="row-even"><td>Checks to see if the object is a String</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isString">qx.lang.Type.isString()</a></td>
+</tr>
+<tr class="row-odd"><td>Checks to see if the object is a RegExp</td>
+<td><em>Not supported</em></td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~isRegExp">qx.lang.Type.isRegExp()</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="other-utilities">
+<h3>Other utilities<a class="headerlink" href="#other-utilities" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Checks if a node is within another node</td>
+<td>jQuery.contains()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.dom.Hierarchy~contains">qx.dom.Hierarchy.contains</a></td>
+</tr>
+<tr class="row-odd"><td>Merge 2 objects into the first</td>
+<td>jQuery.extend()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Object~merge">qx.lang.Object.merge</a></td>
+</tr>
+<tr class="row-even"><td>Merge 2 arrays into the first</td>
+<td>jQuery.merge()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Array~append">qx.lang.Array.append</a></td>
+</tr>
+<tr class="row-odd"><td>Execute some JavaScript code globally</td>
+<td>jQuery.globalEval()</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-even"><td>Filters an array</td>
+<td>jQuery.grep()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.type.BaseArray~filter">qx.type.BaseArray.filter</a></td>
+</tr>
+<tr class="row-odd"><td>Converts an array-like object to a true JS array</td>
+<td>jQuery.makeArray()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Array~toArray">qx.lang.Array.toArray</a></td>
+</tr>
+<tr class="row-even"><td>Translate all items of an array to another array of items</td>
+<td>jQuery.map()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.type.BaseArray~map">qx.type.BaseArray.map</a></td>
+</tr>
+<tr class="row-odd"><td>Serializes an array/object into a query string</td>
+<td>jQuery.param()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.util.Serializer~toUriParameter">qx.util.Serializer.toUriParameter</a></td>
+</tr>
+<tr class="row-even"><td>Parses a JSON object</td>
+<td>jQuery.parseJSON()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Json~parse">qx.lang.Json.parse()</a></td>
+</tr>
+<tr class="row-odd"><td>Removes duplicates from array</td>
+<td>jQuery.unique()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Array~unique">qx.lang.Array.unique()</a></td>
+</tr>
+<tr class="row-even"><td>Trims a string</td>
+<td>jQuery.trim()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.String~trim">qx.lang.String.trim</a></td>
+</tr>
+<tr class="row-odd"><td>Returns the  internal JavaScript Class of an object</td>
+<td>jQuery.type()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.lang.Type~getClass">qx.lang.Type.getClass()</a></td>
+</tr>
+</tbody>
+</table>
+<p>In jQuery there are 2 functions to serialize form data: .serialize(), which makes a string suited for submission out of the elements and their values, and .serializeArray() which makes an array out of them. The equivalent in qooxdoo is the model of the qx.data.controller.Form.</p>
+<p>Last 2 functions in utilities are <tt class="docutils literal"><span class="pre">noop()</span></tt> - the function that does nothing and <tt class="docutils literal"><span class="pre">sub()</span></tt> which duplicates jQuery global variable in order to extend it without affecting the original jQuery object. No qooxdoo equivalent for these 2.</p>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<p>Event module in the 2 libraries are similar, with few differences shown below:
+* in jQuery there is a concept of adding an event to a collection in a &quot;live&quot; fashion - that means if the collection adds more elements to itself they automatically get the event handlers, no need for a new call to <tt class="docutils literal"><span class="pre">bind()</span></tt>. this is represented by <tt class="docutils literal"><span class="pre">live()</span></tt>, <tt class="docutils literal"><span class="pre">die()</span></tt> functions.</p>
+<ul class="simple">
+<li>in jQuery you can delegate an event to be caught and handled in a root of a set of elements with <tt class="docutils literal"><span class="pre">delegate()</span></tt>. In qooxdoo this is default for certain events.</li>
+<li><tt class="docutils literal"><span class="pre">jQuery.proxy()</span></tt> returns a function that will always have a particular context and this is used as event handlers so that you can be sure what <tt class="docutils literal"><span class="pre">this</span></tt> stands for. In qooxdoo <tt class="docutils literal"><span class="pre">proxy()</span></tt> function is not needed as the context is an argument for the addListener method and at that time you pass it.</li>
+<li>jquery has shortcuts for common events: <tt class="docutils literal"><span class="pre">blur()</span></tt>, <tt class="docutils literal"><span class="pre">click()</span></tt> have <tt class="docutils literal"><span class="pre">addListener('blur',handler)</span></tt> and <tt class="docutils literal"><span class="pre">addListener('click'.handler)</span></tt> in qooxdoo as possible counterparts. Also, <tt class="docutils literal"><span class="pre">hover()</span></tt> and <tt class="docutils literal"><span class="pre">toggle()</span></tt> shortcuts get 2 handlers as arguments so that they can handle in &amp; out states or hover and alternate clicks for toggle. Just handy shortcuts, nothing more.</li>
+<li>in jQuert there is support for <tt class="docutils literal"><span class="pre">stopImmediatePropagation</span></tt> with <tt class="docutils literal"><span class="pre">event.isImmediatePropagationStopped()</span></tt> and <tt class="docutils literal"><span class="pre">event.stopImmediatePropagation()</span></tt>.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Description</th>
+<th class="head">jQuery</th>
+<th class="head">qooxdoo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Attaches a handler for an event</td>
+<td>jQuery.bind()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~addListener">addListener</a></td>
+</tr>
+<tr class="row-odd"><td>Fires an event</td>
+<td>jQuery.trigger()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.event.Registration~fireEvent">qx.event.Registration.fireEvent</a></td>
+</tr>
+<tr class="row-even"><td>Fires an event without fireing the native event</td>
+<td>jQuery.triggerlHandler()</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Attaches a handler once, then removes itself</td>
+<td>.one()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.core.Object~addListenerOnce">addListenerOnce()</a></td>
+</tr>
+<tr class="row-even"><td>Removes a handler</td>
+<td>.unbind()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.bom.Collection~removeListener">removeListener()</a></td>
+</tr>
+<tr class="row-odd"><td>Namespace of the event when it was fired</td>
+<td>event.namespace</td>
+<td>can be obtained through the context(this)</td>
+</tr>
+<tr class="row-even"><td>Data to add to an event</td>
+<td>event.data</td>
+<td><em>Not supported</em></td>
+</tr>
+<tr class="row-odd"><td>Time when the event was fired</td>
+<td>event.timeStamp</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.event.type.Event~getTimeStamp">qx.event.type.Event.getTimeStamp()</a></td>
+</tr>
+<tr class="row-even"><td>Global error handler</td>
+<td>.error()</td>
+<td><a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.event.GlobalError~setErrorHandler">qx.event.GlobalError.setErrorHandler</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>jQuery has 2 method <tt class="docutils literal"><span class="pre">data()</span></tt> and <tt class="docutils literal"><span class="pre">removeData()</span></tt> to handle storage of arbitrary data associated with the matched elements. As of jQuery 1.4.3 HTML 5 data - attributes will be automatically pulled in to jQuery's data object that acts as the storage.
+no qooxdoo API for it yet.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="../../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference internal" href="#">From jQuery to qooxdoo</a><ul>
+<li><a class="reference internal" href="#jquery-s-method">jQuery's $() Method</a></li>
+<li><a class="reference internal" href="#wrapping-dom-elements">1. Wrapping DOM Elements</a></li>
+<li><a class="reference internal" href="#css-selector-engine">2. CSS Selector Engine</a></li>
+<li><a class="reference internal" href="#html-parser">3. HTML Parser</a></li>
+<li><a class="reference internal" href="#load-event-registration">4. Load Event Registration</a></li>
+<li><a class="reference internal" href="#collection-features">Collection Features</a></li>
+<li><a class="reference internal" href="#basics">Basics</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#html">HTML</a></li>
+<li><a class="reference internal" href="#text">Text</a></li>
+<li><a class="reference internal" href="#class">Class</a></li>
+<li><a class="reference internal" href="#value">Value</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#css">CSS</a><ul>
+<li><a class="reference internal" href="#style">Style</a></li>
+<li><a class="reference internal" href="#position">Position</a></li>
+<li><a class="reference internal" href="#dimension">Dimension</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#traversing">Traversing</a><ul>
+<li><a class="reference internal" href="#filtering">Filtering</a></li>
+<li><a class="reference internal" href="#finding">Finding</a></li>
+<li><a class="reference internal" href="#chaining">Chaining</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#content-manipulation">Content Manipulation</a><ul>
+<li><a class="reference internal" href="#inserting">Inserting</a></li>
+<li><a class="reference internal" href="#attaching">Attaching</a></li>
+<li><a class="reference internal" href="#wrapping">Wrapping</a></li>
+<li><a class="reference internal" href="#replacing">Replacing</a></li>
+<li><a class="reference internal" href="#removing">Removing</a></li>
+<li><a class="reference internal" href="#copying">Copying</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#effects">Effects</a></li>
+<li><a class="reference internal" href="#utilities">Utilities</a><ul>
+<li><a class="reference internal" href="#type-utilities">Type utilities</a></li>
+<li><a class="reference internal" href="#other-utilities">Other utilities</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#events">Events</a></li>
+<li><a class="reference internal" href="#data">Data</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="css3animation.html"
+                                  title="previous chapter">Transforms and Animations (CSS3)</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="../gui_toolkit.html"
+                                  title="next chapter">GUI Toolkit</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../../_sources/pages/low_level/fromjquery.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2011-2012, qooxdoo developers.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
