@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> qooxdoo &raquo; Home </title>
+
+    <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/pages.css" rel="stylesheet" type="text/css" />
+
+    <!-- TODO: Load from script on demand -->
+    <link href="/stylesheets/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+    <script src="/javascripts/html5shiv.js">
+    <![endif]-->
+
+    <!-- Dokuwiki -->
+    <meta name="generator" content="DokuWiki"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="date" content="2015-09-15T16:38:58+0200"/>
+    <meta name="keywords" content="home"/>
+    <link rel="start" href="/"/>
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='';var JSINFO = {"id":"home","namespace":"","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+    <link rel="shortcut icon" href="/images/qx-favicon.png" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body id="home" class="home dokuwiki">
+
+    <div id="main-wrapper">
+    
+    <!-- HEADER -->
+    <div id="header-wrapper">
+      <section id="header">
+  <h1><a href="/">qooxdoo</a></h1>
+  <nav>
+    <ul>
+      <li>
+        <a class="" href="/demos.html">demos</a>
+      </li>
+      <li>
+        <a class="" href="https://github.com/qooxdoo/qooxdoo">downloads</a>
+      </li>
+      <li>
+        <a class="" href="/current">docs</a>
+      </li>
+      <li>
+        <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+      </li>
+      <li>
+        <a class="" href="https://gitter.im/qooxdoo/qooxdoo">gitter</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<div class="decoration">
+</div>
+    </div>
+
+    
+    <!-- MAIN -->
+          <!-- RAW HTML -->
+      <section id="wrapper" class="show">
+        
+<h1 class="sectionedit1"><a name="home" id="home">Home</a></h1>
+<div class="level1">
+
+<div id="callout">
+<h1>
+  a <em>universal</em> JavaScript framework
+</h1>
+<h2>
+   with a coherent set of individual components
+</h2>
+</div>
+
+<section id="domains">
+  <div class="container">
+    <div class="icons">
+      <img data-domain="website" src="/images/website.png">
+      <img data-domain="mobile" src="/images/mobile.png">
+      <img data-domain="desktop" src="/images/desktop.png">
+      <img data-domain="server" src="/images/server.png">
+    </div>
+
+    <!-- Website -->
+    <section id="website" class="domain">
+      <header>
+        <h2>
+          Website
+        </h2>
+        <div class="tagline">
+          DOM, Events, Templating
+        </div>
+      </header>
+      <div class="description" style="display: block; ">
+        <div class="introduction">
+          <p>
+            A cross-browser DOM manipulation library to enhance websites
+            with a rich user experience.
+          </p>
+          <div class="feature" style="top: 76px; ">
+            <h3>
+              Features
+            </h3>
+            <ul>
+              <li>Browser abstraction</li>
+              <li>DOM manipulation</li>
+              <li>Events</li>
+              <li>Templating</li>
+              <li>Animation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sample">
+          <div class="container">
+            <pre class="brush:js">
+            q.create("<h1></h1>")
+              .setHtml("Hello")
+              .setStyle("color", "blue")
+              .on("click", function() { alert("click") })
+              .appendTo("#container");
+            </pre>
+          </div>
+        </div>
+        <div class="action">
+          <p>
+            <a href="/demos.html#website" class="button">Demos</a>
+            <a href="/current/pages/website/overview.html" class="button">Getting Started</a>
+            <a href="/current/pages/website.html" class="button">Documentation</a>
+            <a href="/downloads/qx.website" class="button download">
+              <span>Download Options</span>
+              <span class="note">
+                qx.Website
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile -->
+    <section id="mobile" class="domain">
+      <header>
+        <h2>
+          Mobile
+        </h2>
+        <div class="tagline">
+          Android, iOS, WP8, HTML5
+        </div>
+      </header>
+      <div class="description" style="display: block; ">
+        <div class="introduction">
+          <p>
+            Create mobile apps that run on all major mobile platforms and modern desktop browsers,
+            without writing any HTML.
+          </p>
+          <div class="feature" style="top: 76px; ">
+            <h3>
+              Features
+            </h3>
+            <ul>
+              <li>Pages</li>
+              <li>Navigation</li>
+              <li>Forms</li>
+              <li>Layouting</li>
+              <li>Theming</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sample">
+          <div class="container">
+            <pre class="brush:js">
+              var manager = new qx.ui.mobile.page.Manager();
+              var page = new qx.ui.mobile.page.NavigationPage();
+              page.setTitle("Hello World");
+              page.addListener("initialize", function() {
+                var button = new qx.ui.mobile.form.Button();
+                page.getContent().add(button);
+                button.addListener("tap", function() {
+                  alert("Hello World");
+                }, this);
+              },this);
+              manager.addDetail(page);
+              page.show();
+            </pre>
+          </div>
+          <div class="run">
+            <a target="_blank" href="/current/playground/#Hello%20World-mobile" class="button">
+              Run
+            </a>
+          </div>
+        </div>
+        <div class="action">
+          <p>
+            <a href="/demos.html#mobile" class="button">Demos</a>
+            <a href="/current/pages/mobile/tutorial.html" class="button">Getting Started</a>
+            <a href="/current/pages/mobile.html" class="button">Documentation</a>
+            <a href="http://downloads.sourceforge.net/qooxdoo/qooxdoo-5.0.1-sdk.zip" class="button download">
+              <span>Download</span>
+              <span class="note">
+                qooxdoo-5.0.1-sdk.zip
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desktop -->
+    <section id="desktop" class="domain">
+      <header>
+        <h2>
+          Desktop
+        </h2>
+        <div class="tagline">
+          Single-page applications
+        </div>
+      </header>
+      <div class="description" style="display: block; ">
+        <div class="introduction">
+          <p>
+            Create desktop-style applications. Features a rich and extendable
+            set of widgets. No HTML/CSS knowledge required.
+          </p>
+          <div class="feature" style="top: 76px; ">
+            <h3>
+              Features
+            </h3>
+            <ul>
+              <li>Windows, Tabs, …</li>
+              <li>Forms, Lists, Trees, …</li>
+              <li>Toolbars, Menus, …</li>
+              <li>Layouting, Theming</li>
+              <li>Data binding</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sample">
+          <div class="container">
+            <pre class="brush:js">
+              var button = new qx.ui.form.Button("Button");
+              var doc = this.getRoot();
+
+              this.getRoot().add(button, {
+                left: 100,
+                top: 50
+              });
+
+              button.addListener("execute", function(evt) {
+                alert("Hello World!");
+              });
+            </pre>
+          </div>
+          <div class="run">
+            <a target="_blank" href="/current/playground/#Hello%20World-ria" class="button">
+              Run
+            </a>
+          </div>
+        </div>
+        <div class="action">
+          <p>
+            <a href="/demos.html#desktop" class="button">Demos</a>
+            <a href="/current/pages/desktop/tutorials/tutorial-part-1.html" class="button">Getting Started</a>
+            <a href="/current/pages/desktop.html" class="button">Documentation</a>
+            <a href="http://downloads.sourceforge.net/qooxdoo/qooxdoo-5.0.1-sdk.zip" class="button download">
+              <span>Download</span>
+              <span class="note">
+                qooxdoo-5.0.1-sdk.zip
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Server -->
+    <section id="server" class="domain">
+      <header>
+        <h2>
+          Server
+        </h2>
+        <div class="tagline">
+          Node.js &amp; Rhino
+        </div>
+      </header>
+      <div class="description" style="display: block; ">
+        <div class="introduction">
+          <p>
+            Use the same OOP pattern known from the client side, reuse code and generate
+            files you can deploy in your server environment.
+          </p>
+          <div class="feature" style="top: 76px; ">
+            <h3>
+              Features
+            </h3>
+            <ul>
+              <li>Classes, mixins, interfaces</li>
+              <li>Properties</li>
+              <li>Events</li>
+              <li>Single Value Binding</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sample">
+          <div class="container">
+            <pre class="brush:js">
+              var qx = require("qx");
+              qx.Class.define("Monkey", {
+                extend: Animal,
+                properties : {
+                  legs : { init: 2 }
+                },
+                members: {}
+              });
+
+              var monkey = new Monkey();
+              monkey.getLegs();
+            </pre>
+          </div>
+        </div>
+        <div class="action">
+          <p>
+            <!-- <a href="/demos#server" class="button">Demos</a> -->
+            <a href="/current/pages/server/overview.html" class="button">Getting Started</a>
+            <a href="/current/pages/server.html" class="button">Documentation</a>
+            <a href="http://demo.qooxdoo.org/5.0.1/framework/qx-oo-5.0.1.min.js" class="button download">
+              <span>Download</span>
+              <span class="note">
+                qx.Server
+              </span>
+            </a>
+            <span class="alternative">
+              Download <a href="http://demo.qooxdoo.org/5.0.1/framework/qx-oo-5.0.1.js">uncompressed</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<section id="main">
+<section id="about">
+  <section id="content">
+    <h1 class="page">about</h1>
+    <p>
+      qooxdoo is a universal JavaScript framework with a coherent set of
+      individual components and a powerful
+      <a href="/current/pages/tool.html">toolchain</a>. It is open source
+      under liberal <a href="/license.html">licenses</a> and supported by the qooxdoo community around the world.
+    </p>
+    <h3>Universal</h3>
+    <p>
+      With qooxdoo you build <a href="/current/pages/desktop.html">rich</a>, interactive applications, native-like apps for
+      <a href="/current/pages/mobile.html">mobile</a> devices, light-weight single-page oriented <a href="/current/pages/website.html">web</a> applications
+      or even applications to run <a href="/current/pages/server.html">outside</a> the browser.
+    </p>
+    <h3>Coherent</h3>
+    <p>
+      No matter what target platform you choose – at its core, all variants of qooxdoo use
+      the same <a href="/current/pages/core.html">object-oriented</a> programming model, found in the Core component.
+      This ensures consistency across projects and facilitates code reusage.
+    </p>
+    <h3 id="powerful">Powerful</h3>
+    <p>
+      qooxdoo comes with a set of powerful <a href="/current/pages/development.html">tools</a>
+      that help you develop advanced JavaScript applications.
+    </p>
+    <p>
+      <a href="/current/">More</a>
+    </p>
+  </section>
+  <section class="action">
+    <h2 style="margin-top: 0">Shared components</h2>
+    <h3>Core</h3>
+    <p>
+      Enhances JavaScript with classes, interfaces and mixins.
+      <br>
+      <a href="/current/pages/core/oo_introduction.html">Getting Started</a>
+      <a href="/current/pages/core.html">Documentation</a>
+    </p>
+    <h3>Tooling</h3>
+    <p>
+      Command line and browser-based tools to create and maintain qooxdoo apps. Part of the SDK.<br>
+      <a href="/current/pages/tool/getting_started.html">Getting Started</a>
+      <a href="/current/pages/tool.html">Documentation</a>
+    </p>
+  </section>
+</section>
+</section>
+
+</div>
+
+      </section>
+    
+    </div>
+    <!-- FOOTER -->
+    <div id="footer-wrapper">
+      <footer id="footer">
+  <div id="sitemap">
+    <div>
+      <h3><a href="/">Home</a></h3>
+      <ul>
+        <li>
+          <a href="/demos.html">Demos</a>
+        </li>
+        <li>
+          <a href="https://github.com/qooxdoo/qooxdoo">Downloads</a>
+        </li>
+        <li>
+          <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a>
+        </li>
+        <li>
+          <a href="/license.html">License</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3><a href="/current">Docs</a></h3>
+      <ul>
+        <li>
+          <a href="/current/pages/introduction/about.html">About</a>
+        </li>
+        <li>
+          <a href="/current/pages/getting_started.html">Getting Started</a>
+        </li>
+        <li>
+          <a href="/current/pages/website.html">Website</a>
+        </li>
+        <li>
+          <a href="/current/pages/mobile.html">Mobile</a>
+        </li>
+        <li>
+          <a href="/current/pages/desktop.html">Desktop</a>
+        </li>
+        <li>
+          <a href="/current/pages/server.html">Server</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3><a href="/community.html">Community</a></h3>
+      <ul>
+        <li>
+          <a href="https://gitter.im/qooxdoo/qooxdoo">Gitter</a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="meta">
+    <div class="social">
+      <a href="http://twitter.com/qooxdoo">
+        <img src="/images/twitter.png">
+      </a>
+      <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+        <img src="/images/facebook.png">
+      </a>
+      <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+        <img src="/images/feed.png">
+      </a>
+    </div>
+  </div>
+</footer>
+    </div>
+    </div>
+
+    <script src="/javascripts/q.js"></script>
+    <script src="/javascripts/q.domain.js"></script>
+    <script src="/javascripts/q.sticky.js"></script>
+    <script src="/javascripts/q.placeholder.js"></script>
+    <script src="/javascripts/shCore.js"></script>
+    <script src="/javascripts/shBrushJScript.js"></script>
+    <script src="/javascripts/application.js"></script>
+  </body>
+</html>

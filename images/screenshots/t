@@ -1,0 +1,15 @@
+wget http://qooxdoo.org/_media/screenshots/widgetbrowser.png
+wget http://qooxdoo.org/_media/screenshots/showcase-desktop.png
+wget http://qooxdoo.org/_media/screenshots/feedreader-desktop.png
+wget http://qooxdoo.org/_media/screenshots/playground.png
+wget http://qooxdoo.org/_media/screenshots/tutorial.png
+wget http://qooxdoo.org/_media/screenshots/showcase-mobile.png
+wget http://qooxdoo.org/_media/screenshots/feedreader-mobile.png
+wget http://qooxdoo.org/_media/screenshots/tutorial-mobile.png
+wget http://qooxdoo.org/_media/screenshots/websitewidgetbrowser.png
+wget http://qooxdoo.org/_media/screenshots/website-api.png
+wget http://qooxdoo.org/_media/screenshots/feedreader-website.png
+wget http://qooxdoo.org/_media/screenshots/todo.png
+wget http://qooxdoo.org/_media/screenshots/apiviewer.png
+wget http://qooxdoo.org/_media/screenshots/demobrowser.png
+wget http://qooxdoo.org/_media/screenshots/testrunner.png
