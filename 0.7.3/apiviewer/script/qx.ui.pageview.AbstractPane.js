@@ -1,1 +1,0 @@
-{type:"class",attributes:{"isAbstract":"true","name":"AbstractPane","packageName":"qx.ui.pageview","superClass":"qx.ui.layout.CanvasLayout","childClasses":"qx.ui.pageview.buttonview.Pane,qx.ui.pageview.radioview.Pane,qx.ui.pageview.tabview.Pane","fullName":"qx.ui.pageview.AbstractPane","type":"class"}}
