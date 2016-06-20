@@ -1,0 +1,371 @@
+/* MAIN */
+
+body {
+    background: rgb(197,204,211) url(../../icon/ios/pinstripes.png);
+    font-family: Helvetica;
+    color : #666;
+    font-weight:normal;
+    font-size:0.8em;
+}
+
+body > * {
+    background: rgb(197,204,211) url(../../icon/ios/pinstripes.png);
+}
+
+.content {
+  margin: 10px;
+}
+
+/* FONTS */
+
+.fontNormal {
+  color : #666;
+  font-weight:normal;
+  font-size:0.8em;
+}
+
+/* HEADINGS */
+
+h1, h2 {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+h1 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+  margin-left:4px;
+  margin-right:4px;
+}
+
+
+h2 {
+   font-size: 18px;
+   margin-left: 5px;
+   margin-top: 10px;
+   margin-bottom:10px;
+   text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+   color: rgb(76, 86, 108);
+}
+
+
+/* LINKS */
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited {  color: rgb(76, 86, 108); }
+a:hover {  color:rgb(76, 86, 108); }
+
+
+/* BUTTONS */
+
+.button, {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: black;
+  background: #fff;
+  border: 1px solid #B4B4B4;
+  font: bold 17px Helvetica;
+  -webkit-border-radius: 8px;
+  line-height : 40px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+}
+
+
+.button.active {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4583fd), color-stop(100%,#194ae4));
+    color: #fff;
+}
+
+
+/* LISTS */
+
+.list-itemimage {
+   margin-right:7px;
+}
+
+.list-itemtext {
+ 
+}
+
+ul {
+    color: black;
+    background: #fff;
+    border: 1px solid #B4B4B4;
+    font: bold 17px Helvetica;
+    padding: 0;
+    -webkit-border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    color: #666;
+    border-top: 1px solid #B4B4B4;
+    list-style-type: none;
+    padding: 10px 25px 10px 10px;
+}
+
+ul li * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul li.arrow {
+    background: url("../../icon/ios/arrow.png") no-repeat right center;
+}
+
+ul li.active.arrow,  ul li.selected.arrow {
+    background: url("../../icon/ios/arrow_pressed.png") no-repeat right center, -webkit-gradient(linear, left top, left bottom, from(#4583fd), to(#194ae4));
+}
+
+ul li.active,  ul li.selected {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4583fd), to(#194ae4));
+    color: #fff;
+}
+
+ul li .subtitle {
+  font-weight:normal;
+  font-size:0.8em;
+  color : #585858;
+}
+
+
+/* when you have a first LI item on any list */
+
+li:first-child, li:first-child a {
+    border-top: 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+li:last-child, li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+
+/* FORMS */
+
+input, select { vertical-align:middle; }
+input, select, textarea { 
+  font-family: Helvetica;
+  font-size:.9em;
+}
+
+ul.form {
+  margin-bottom: 10px;
+}
+
+ul.form ul li {
+    padding: 10px 10px 10px 10px;
+}
+
+ul.form ul li.error {
+    border: 2px solid red;
+}
+
+ul.form ul li.error + li.error {
+    border-top: 0;
+}
+
+ul.form ul li * {
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+ul li input[type="text"], ul li input[type="password"], ul li textarea, ul li select {
+    color: #777;
+    background: #fff url(../.png);
+    border: 0;
+    font: normal 17px Helvetica;
+    padding: 0;
+    display: inline-block;
+    margin-left: 0px;
+    width: 100%;
+    -webkit-appearance: textarea;
+    outline: none;
+}
+
+ul li textarea {
+    height: 120px;
+    padding: 0;
+}
+
+ul li select {
+    text-indent: 0px;
+    background: transparent url("../../icon/ios/arrow.png") no-repeat 103% 3px;
+    -webkit-appearance: textfield;
+    margin-left: -6px;
+    width: 104%;
+}
+
+ul li input[type="checkbox"], ul li input[type="radio"] {
+    margin: 0;
+    color: rgb(50,79,133);
+    padding: 10px 10px;
+}
+
+ul li input[type="checkbox"]:after, ul li input[type="radio"]:after {
+    content: attr(title);
+    font: 17px Helvetica;
+    display: block;
+    width: 246px;
+    margin: -12px 0 0 17px;
+}
+
+
+/* TOGGLE BUTTON */
+
+.toggleButton {
+    width: 94px;
+    height: 27px;
+    display: block;
+    overflow: hidden;
+    position:relative;
+    -webkit-border-radius: 5px;
+}
+
+.toggleButton > div.checked {
+    left: 0px;
+}
+
+.toggleButton > div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin: 0;
+    -webkit-border-radius: 5px;
+    background: #fff url(../../icon/ios/on_off.png) 0 0 no-repeat;
+    height: 27px;
+    overflow: hidden;
+    width: 149px;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: left .15s;
+    position: absolute;
+    top: 0px;
+    left: -55px;
+}
+
+
+/* SLIDER */
+
+.slider {
+  position:relative;
+  border: 1px solid #B4B4B4;
+  height:30px;
+}
+
+.slider > div {
+  position:absolute;
+  border:1px solid #6b6d6b;
+  -webkit-border-radius: 15px;
+  top:0px;
+  left:0%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4583fd), color-stop(100%,#194ae4));
+  width:30px;
+  height:30px;
+}
+
+
+/* TABBAR */
+
+.tabBar {
+  height:45px;
+  border-top:1px solid #333333;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#232323), color-stop(50%,#111111), color-stop(51%,#000000), color-stop(100%,#000000));
+  
+}
+
+.tabButton {
+  height:42px !important;
+  text-align: center;
+  line-height: 45px;
+  -webkit-box-sizing: border-box;
+}
+
+.tabButton.active, .tabButton.selected {
+  color:#ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#393939), color-stop(50%,#292929), color-stop(51%,#1d1d1d),color-stop(100%,#1c1c1c));
+}
+
+
+/* NAVIGATIONBAR */
+
+
+
+.navigationbar {
+    border-bottom: 1px solid #2d3642;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 45px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cdd5df), to(#6d84a2), color-stop(0.5, #8195af));    
+}
+
+
+.navigationbar-button, .navigationbar-backbutton {
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-width: 0 5px;
+    padding: 0 3px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+    -webkit-border-image: url(../../icon/ios/toolButton.png) 0 5 0 5;
+}
+
+.navigationbar-button.active {
+    -webkit-border-image: url(../../icon/ios/toolButton_pressed.png) 0 5 0 5;
+}
+
+.navigationbar-backbutton {
+    padding: 0;
+    max-width: 55px;
+    border-width: 0 8px 0 14px;
+    -webkit-border-image: url(../../icon/ios/backButton.png) 0 8 0 14;
+}
+
+.navigationbar-backbutton.active {
+    -webkit-border-image: url(../../icon/ios/backButton_pressed.png) 0 8 0 14;
+}
+
+
+/* SCROLLBAR */
+
+.scrollbar {
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    height: 1px;
+    border-width: 3px;
+    -webkit-border-image: url(../../icon/ios/scrollbar.png) 3;
+}
+
+.scrollbar.horizontal {
+    bottom: 1px;
+    left: 1px;
+}
+
+.scrollbar.vertical {
+    top: 1px;
+    right: 1px;
+}

@@ -1,0 +1,1 @@
+{type:"class",attributes:{"name":"PasswordField","packageName":"qx.ui.form","superClass":"qx.ui.form.TextField","fullName":"qx.ui.form.PasswordField","type":"class"}}

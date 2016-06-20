@@ -1,0 +1,631 @@
+
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>qooxdoo-contrib &mdash; qooxdoo 4.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '4.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo 4.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="Parts and Packages Overview" href="parts_overview.html" />
+    <link rel="prev" title="Custom Libraries" href="library_custom.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-415440-1']);
+      _gaq.push(['_setDomainName', 'qooxdoo.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </head>
+  <body>
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <!--
+        <li>
+          <a class="" href="http://qooxdoo.org/">home</a>
+        </li>
+        -->
+        <li>
+          <a href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="http://qooxdoo.org/demos">demos</a>
+        </li>
+        <li>
+          <a class="" href="http://qooxdoo.org/downloads">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="http://qooxdoo.org/docs">docs</a>
+        </li>
+        <li>
+          <a class="" href="http://qooxdoo.org/community">community</a>
+        </li>
+      </ul>
+    </nav>
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &raquo;
+    <a href="../../index.html">Manual (v4.0.2)</a>
+       &raquo;
+      <a href="../development.html" accesskey="U">Development</a>
+     &raquo;
+    <a href="">qooxdoo-contrib</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="qooxdoo-contrib">
+<h1>qooxdoo-contrib<a class="headerlink" href="#qooxdoo-contrib" title="Permalink to this headline">¶</a></h1>
+<p><em>qooxdoo-contrib</em> is qooxdoo's infrastructure for third-party code that is
+useful for other users building qooxdoo projects. A lot of those contributions take
+the form of qooxdoo libraries ranging from small helper classes to full-blown
+and complex widgets and themes. But you may also find server-side
+implementations for RPC's, translation files or simple auxiliary stuff. It is
+community-provided content, and is also used as an incubator area for the
+framework itself. Some contributions are actively maintained, others are rather
+stale, so you may find there code of any stage of maturity (and consequently,
+immaturity).</p>
+<div class="section" id="where-to-find-what">
+<h2>Where to find what?<a class="headerlink" href="#where-to-find-what" title="Permalink to this headline">¶</a></h2>
+<p>This page deals with <strong>how to use contributions</strong> as well as what to bear in mind
+when <strong>writing your own contributions</strong>. If you are interested in <strong>what contributions
+are available</strong> check out the <a class="reference external" href="http://qooxdoo.org/contrib/catalog">catalog website</a>,
+which makes finding a suitable contrib much easier.</p>
+<div class="section" id="more-context">
+<h3>More Context<a class="headerlink" href="#more-context" title="Permalink to this headline">¶</a></h3>
+<p>With qooxdoo 3.0 a new contribution infrastructure was introduced. The old
+contrib platform was <em>repository-based</em>, meaning that all contributions had to
+be in a certain source repository on SourceForge to be recognized as
+contributions. The new platform is <em>catalog-based</em>, meaning that it doesn't
+require that the contribution is in any particular data store or version control
+system.  The catalog includes links where each specific contribution can be
+downloaded.</p>
+<p>This page deals specifically with library-style contributions as they can be
+included in app development.</p>
+</div>
+</div>
+<div class="section" id="library-style-contributions">
+<span id="pages-development-contrib-library-style-contributions"></span><h2>Library-style Contributions<a class="headerlink" href="#library-style-contributions" title="Permalink to this headline">¶</a></h2>
+<p>There are basically two aspects to contributions</p>
+<ul class="simple">
+<li>the <em>user view</em>, meaning how to use a particular contribution in application
+development</li>
+<li>the <em>maintainer view</em>, meaning how to provide and maintain a particular
+contribution</li>
+</ul>
+<div class="section" id="user-view">
+<span id="pages-tool-generator-generator-config-articles-contrib-libraries"></span><h3>User View<a class="headerlink" href="#user-view" title="Permalink to this headline">¶</a></h3>
+<p>Contributions can be included in a configuration like any other libraries: You
+add an appropriate entry in the <tt class="docutils literal"><span class="pre">library</span></tt> array of your configuration. Like
+other libraries, the contribution must provide a <a class="reference internal" href="../tool/sdk/manifest.html#pages-application-structure-manifest-manifest-json"><em>Manifest.json</em></a> file with appropriate
+contents.</p>
+<p>If the contribution resides on your local file system, there is actually no
+difference to any other library. Specify the relative path to its Manifest file
+and you're basically set.</p>
+<p>The really new part comes when the contribution resides online, and needs to be
+downloaded to be used. This is directly supported by the Generator.  With
+running a compile job (e.g. <em>source</em>, <em>build</em>) the Generator will now query the
+catalog for that version of the contribution, evaluate the corresponding Json
+file, and access the download value. The corresponding contribution will be
+downloaded to the local disk and used as a library as usual.</p>
+<p>In such a case you use a special syntax to specify the location a catalog
+Manifest file that pertains to the contrib's particular version. It is URL-like
+with a <tt class="docutils literal"><span class="pre">contrib</span></tt> scheme and will usually look like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">contrib</span><span class="o">:</span><span class="c1">//&lt;ContributionName&gt;/&lt;Version&gt;/&lt;ManifestFile&gt;</span>
+</pre></div>
+</div>
+<p>The contribution source tree will then be downloaded from the repository, the
+generator will adjust to the local path, and the contribution is then used just
+like a local library. The local path where the contribution is placed is a
+subdirectory of the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-cache"><em>cache/downloads</em></a>
+config key, which you can adapt.</p>
+<p>When re-running the build job, the Generator will check if the contribution has
+changed, and will re-download it if that is the case.</p>
+<p>Putting it all together here is an sample <em>config.json</em> snippet:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;jobs&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;library&quot;</span> <span class="o">:</span> <span class="p">[{</span>
+      <span class="s2">&quot;manifest&quot;</span><span class="o">:</span> <span class="s2">&quot;contrib://UploadMgr/0.5/Manifest.json&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>(The wrapping in the predefined <em>libraries</em> includer job makes it easily
+available to build jobs).</p>
+<p>Mind that this is <strong>not</strong> the Manifest file that is part of the library, but the
+catalog entry. Though they can be almost identical, the catalog Manifest will
+only be searched for the <em>info/download</em> key, and a few others related to downloading
+the contribution. The Manifest in the actual contribution library is then
+searched for e.g the <em>provides/class</em> key, to find the class path in the
+library.</p>
+<div class="section" id="contrib-uris-and-internet-access">
+<h4>contrib:// URIs and Internet Access<a class="headerlink" href="#contrib-uris-and-internet-access" title="Permalink to this headline">¶</a></h4>
+<p>As contrib libraries are downloaded from an online location you need Internet
+access to use them. Here are some tips on how to address offline usage and
+Internet proxies.</p>
+<div class="section" id="avoiding-online-access">
+<h5>Avoiding Online Access<a class="headerlink" href="#avoiding-online-access" title="Permalink to this headline">¶</a></h5>
+<p>If you need to work with a contrib offline, it is best to download it to your
+hard disk, and then use it like any local qooxdoo library. The simplest way to
+do this to download it using its <em>contrib://</em> URL once, then move the entire
+contribution from the download cache (use <em>generate.py info</em> to locate this) to
+some other path, and then adjust your <em>config.json</em> to match the new local path
+on disk. Moving it away from the download cache is so that it is not deleted
+when you run <em>generate.py distclean</em>.</p>
+<p>Alternatively, you can download the archive directly. To find its download URL
+you go to the catalog repo, locate the catalog Manifest for the contrib's
+version, and pick the <em>info/download</em> URL from it. Then download and unpack the
+archive on your local disk, and adjust the <em>config.json</em> to reflect its path.</p>
+<p>In any case you are now using the contribution like a local library.  The only
+thing you are missing this way is the automatic online check for updates, where
+a newer version of the contrib would be detected and downloaded.  You need to do
+this by hand, re-checking when you can, and re-downloading a newer version if
+there is one.</p>
+</div>
+<div class="section" id="accessing-online-from-behind-a-proxy">
+<h5>Accessing Online from behind a Proxy<a class="headerlink" href="#accessing-online-from-behind-a-proxy" title="Permalink to this headline">¶</a></h5>
+<p>If you are sitting behind a proxy, here is what you can do. The generator uses
+the <em>urllib</em> module of Python to access web-based resources. This module honors
+proxies:</p>
+<ul>
+<li><p class="first">It checks for a <em>http_proxy</em> environment variable in the shell running the
+generator. On Bash-like shells you can set it like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http_proxy</span><span class="o">=</span><span class="s2">&quot;http://www.someproxy.com:3128&quot;</span><span class="p">;</span> <span class="kr">export</span> <span class="nx">http_proxy</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">If there is no such shell setting on Windows, the registry is queried for the
+Internet Options.</p>
+</li>
+<li><p class="first">On MacOS, the Internet Config is queried in this case.</p>
+</li>
+<li><p class="first">See the <a class="reference external" href="http://docs.python.org/2/library/urllib.html">module documentation</a> for more
+details.</p>
+</li>
+</ul>
+<p>The remainder of this chapter now details the maintainer view, or how to provide
+a contribution.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-catalog-a-github-repo">
+<h2>The Catalog - A Github Repo<a class="headerlink" href="#the-catalog-a-github-repo" title="Permalink to this headline">¶</a></h2>
+<p>The central piece of the contrib infrastructure is the catalog, it is like the
+index of known contributions. To make maintenance of the catalog simple and
+straight-forward, we decided to implement it as a Github repository. It will
+basically have the same directory structure you might know from the Sourceforge
+qooxdoo-contrib repo. Under a root path,</p>
+<ul class="simple">
+<li>the <em>contribution names</em> are top-level</li>
+<li>beneath each contribution there is a set of directories with <em>version names</em>,
+and potentially a general readme file.</li>
+<li>in each version directory is a <em>Manifest.json</em> file that applies to this particular
+version of the contribution</li>
+</ul>
+<p>The Manifest.json file is exactly the Manifest file you know from qooxdoo
+libraries. The intent is that you can copy it straight over from your project to
+the catalog repo. You need to make sure, though, that all necessary fields in it
+will be filled, particularly the <em>info/download</em> field. A Generator job,
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-validate-manifest"><em>validate-manifest</em></a>, will help you
+with that.</p>
+<p>In practice that means that maintaining your contribution in the catalog will
+require you to fork the <a class="reference external" href="https://github.com/qooxdoo/contrib-catalog">catalog repo</a>, make suitable changes like adding
+or updating the information about a contribution, and then issue a pull request.
+(This obviously also means you will need a Github account to be a contribution
+maintainer, but we hope this requirement to be trivial.) As soon as the
+request is merged into the main repo, using your contribution from an
+application's config.json will work.</p>
+</div>
+<div class="section" id="providing-a-contribution">
+<h2>Providing a Contribution<a class="headerlink" href="#providing-a-contribution" title="Permalink to this headline">¶</a></h2>
+<p>This was the general approach, now to the nitty-gritty.</p>
+<div class="section" id="contributions-come-as-archives">
+<h3>Contributions come as Archives<a class="headerlink" href="#contributions-come-as-archives" title="Permalink to this headline">¶</a></h3>
+<p>The actual contribution code, i.e. the code somebody would download and use,
+needs to be provided through the Manifest's <em>info/download</em> URL. The value should be
+a HTTP(S) URL to an archive (like zip or tar.gz) ready to be downloaded.</p>
+<p>The archive should contain a single root folder with arbitrary name, and beneath
+that the contents of the contribution. I.e. for a standard qooxdoo library the
+second level should contain its Manifest.json.</p>
+<p>A SHA-1 checksum must then be calculated over the archive file, and the result be
+entered in the catalog's <em>Manifest.json/info/checksum</em> field (At this point the
+catalog's and the contrib's Manifest.json necessarily deviate from each other).
+This checksum is used to verify the downloaded archive later on the client side,
+and also to check for updates of the contribution.</p>
+<p>Here are the corresponding Manifest.json entries for some Github-hosted
+contribution:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="s2">&quot;download&quot;</span> <span class="o">:</span> <span class="s2">&quot;https://github.com/myuid/mycontrib/archive/master.tar.gz&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;checksum&quot;</span> <span class="o">:</span> <span class="s2">&quot;e3241b1e1c44c3620b07972411a15cf3f05cfa4c&quot;</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="supported-archive-formats">
+<h4>Supported Archive Formats<a class="headerlink" href="#supported-archive-formats" title="Permalink to this headline">¶</a></h4>
+<p>The following archive formats/extensions are supported:</p>
+<ul class="simple">
+<li>.zip</li>
+<li>.tar</li>
+<li>.tar.gz</li>
+<li>.tgz</li>
+<li>.tar.bz2</li>
+</ul>
+</div>
+<div class="section" id="sourceforge-based-contributions">
+<h4>Sourceforge-based Contributions<a class="headerlink" href="#sourceforge-based-contributions" title="Permalink to this headline">¶</a></h4>
+<p>For the time being we will support an exception from the above. If the
+contribution is still hosted at the old Sourceforge qooxdoo-contrib SVN
+repository, the download URL need not end in an archive name, but in the standard
+SVN URL for this contribution's version. (The current Sourceforge SVN interface
+doesn't support archive downloads anymore). The Generator will then use the old
+Web spidering to download the contribution to the client side. Here is an
+example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="s2">&quot;download&quot;</span> <span class="o">:</span> <span class="s2">&quot;http://svn.code.sf.net/p/qooxdoo-contrib/code/trunk/qooxdoo-contrib/SkeletonWidget/0.9/&quot;</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <em>checksum</em> for such a contribution is not used. Rather, the SVN revision
+number from SourceForge will be used to detect updates.</p>
+</div>
+</div>
+<div class="section" id="further-manual-keys">
+<h3>Further manual keys<a class="headerlink" href="#further-manual-keys" title="Permalink to this headline">¶</a></h3>
+<p>We added a <em>info/category</em> field to the Manifest file which allows you
+to label your contrib with one or more of these supported categories:</p>
+<ul class="simple">
+<li>theme</li>
+<li>widget</li>
+<li>drawing</li>
+<li>tool</li>
+<li>backend</li>
+<li>utility</li>
+</ul>
+<p>We will use this information to categorize the contribs in a future
+web interface. If you provide more than one category, the first one
+will be regarded as primary category.</p>
+<p>So an example would be:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="s2">&quot;category&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;theme&quot;</span><span class="p">],</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="maintainer-s-workflow">
+<h3>Maintainer's Workflow<a class="headerlink" href="#maintainer-s-workflow" title="Permalink to this headline">¶</a></h3>
+<p>So the basic workflow for an author having a new revision of his contribution's
+version is:</p>
+<ul class="simple">
+<li>Create an <em>archive</em> containing the contribution and put it <em>online</em>.</li>
+<li>Edit the contribution's Manifest.json to contain the <em>download</em> location and a
+SHA-1 <em>checksum</em> over the archive.</li>
+<li>Copy this Manifest.json to the appropriate path in the <em>catalog</em> repo.</li>
+<li>Send a <em>pull request</em> for the catalog.</li>
+</ul>
+<p>For an author choosing Github to host his contribution all this can be quite
+easily achieved (except for the checksum thing) by maintaining contribution
+versions as Git <em>branches</em> and exploiting the archive downloads that Github
+offers. You just use an URL like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">https</span><span class="o">:</span><span class="c1">//github.com/&lt;user&gt;/&lt;contrib&gt;/archive/&lt;branch_name&gt;&lt;archive_suffix&gt;</span>
+</pre></div>
+</div>
+<p>as the Manifest's download URL, with e.g. <em>branch_name</em> being <em>master</em> and <em>suffix</em>
+being <em>.zip</em>.</p>
+</div>
+</div>
+<div class="section" id="pull-request-maintenance">
+<h2>Pull Request Maintenance<a class="headerlink" href="#pull-request-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>This list should ease validating pull requests:</p>
+<ul class="simple">
+<li>Check pull request manually - is something obvious missing?</li>
+<li>Review the changes on your machine in a <em>contrib-catalog</em> clone:<ul>
+<li><a class="reference external" href="https://help.github.com/articles/merging-a-pull-request">Merge it locally</a> e.g. by
+<tt class="docutils literal"><span class="pre">curl</span> <span class="pre">https://github.com/qooxdoo/contrib-catalog/pull/{n}.patch</span> <span class="pre">|</span> <span class="pre">git</span> <span class="pre">am</span></tt></li>
+<li>Validate the Manifest: <tt class="docutils literal"><span class="pre">./generate.py</span> <span class="pre">validate-manifest</span> <span class="pre">../path/to/catalog/Manifest.json</span></tt></li>
+<li>Is an (optional) archive download (e.g. <em>*.zip/*.tar.gz</em>) provided? Then a
+valid SHA1 checksum has to be provided too or the contrib can't be used.</li>
+<li>The SHA1 checksum can be checked like this:<ul>
+<li><tt class="docutils literal"><span class="pre">curl</span> <span class="pre">-LO</span> <span class="pre">https://github.com/{user}/{contrib}/archive/master.zip</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">shasum</span> <span class="pre">master.zip</span></tt></li>
+</ul>
+</li>
+<li>You can also try out the catalog changes locally (not always needed):<ul>
+<li>Adapt the <em>CONTRIB_CATALOG_BASEURL</em> setting of the <em>base.json</em> within your
+qooxdoo clone to let it point to your own contrib-catalog repo and
+then create a new app which uses the new contrib -
+is the contrib downloaded correctly?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If everything is okay use the <em>&quot;Merge pull request&quot;</em> button from GitHub.</li>
+</ul>
+<p>If there are merge conflicts or something is wrong/missing just point out the
+issues and ask the author of the pull request for improvement. If the pull
+request was created <a class="reference external" href="https://help.github.com/articles/using-pull-requests">like GitHub recommends it</a> there is no need for
+another pull request:</p>
+<blockquote>
+<div>&quot;After your pull request is sent, any new commits pushed to your branch will
+automatically be added to the pull request. This is especially useful if you
+need to make more changes.&quot;</div></blockquote>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="library_custom.html"
+             title="previous chapter">« Custom Libraries</a>
+          <span class="separator">|</span>
+          <a class="next" href="parts_overview.html"
+             title="next chapter">Parts and Packages Overview »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">qooxdoo-contrib</a><ul>
+<li><a class="reference internal" href="#where-to-find-what">Where to find what?</a><ul>
+<li><a class="reference internal" href="#more-context">More Context</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#library-style-contributions">Library-style Contributions</a><ul>
+<li><a class="reference internal" href="#user-view">User View</a><ul>
+<li><a class="reference internal" href="#contrib-uris-and-internet-access">contrib:// URIs and Internet Access</a><ul>
+<li><a class="reference internal" href="#avoiding-online-access">Avoiding Online Access</a></li>
+<li><a class="reference internal" href="#accessing-online-from-behind-a-proxy">Accessing Online from behind a Proxy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-catalog-a-github-repo">The Catalog - A Github Repo</a></li>
+<li><a class="reference internal" href="#providing-a-contribution">Providing a Contribution</a><ul>
+<li><a class="reference internal" href="#contributions-come-as-archives">Contributions come as Archives</a><ul>
+<li><a class="reference internal" href="#supported-archive-formats">Supported Archive Formats</a></li>
+<li><a class="reference internal" href="#sourceforge-based-contributions">Sourceforge-based Contributions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#further-manual-keys">Further manual keys</a></li>
+<li><a class="reference internal" href="#maintainer-s-workflow">Maintainer's Workflow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pull-request-maintenance">Pull Request Maintenance</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="parts_overview.html"
+                        title="next chapter">Parts and Packages Overview</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="library_custom.html"
+                        title="previous chapter">Custom Libraries</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="supported-by">
+      <a href="http://1and1.com">
+        <img src="http://resources.qooxdoo.org/images/1and1.png">
+      </a>
+      <p class="claim">
+        Brought to you by <a href="http://1and1.com">1&amp;1</a>, one of the world's leading web hosts
+      </p>
+      <p class="legal">
+        © 1&amp;1 Internet AG<br>
+        <a href="http://qooxdoo.org/legal">Legal notice</a>
+      </a>
+    </div>
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a href="http://qooxdoo.org/demos">Demos</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/download">Download</a>
+          </li>
+          <li>
+            <a href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a href="http://bugs.qooxdoo.org">Bugs</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/license">License</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="http://qooxdoo.org/docs">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="http://manual.qooxdoo.org/4.0.2/pages/server.html">Server</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="http://qooxdoo.org/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="http://qooxdoo.org/community/contribution">Get Involved</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/community/mailing_lists">Mailing List</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/community/real_life_examples">Real Life Examples</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/community/events">Events</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/community/jobs_services">Jobs &amp; Services</a>
+          </li>
+          <li>
+            <a href="http://qooxdoo.org/contrib">Contributions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/contrib.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2013, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>
