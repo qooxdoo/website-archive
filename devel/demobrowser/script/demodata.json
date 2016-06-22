@@ -1013,6 +1013,23 @@
                 "nr": 0
             },
             {
+                "name": "SearchAsYouType.html",
+                "tags": [
+                    "noPlayground",
+                    "databinding",
+                    "filter",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "SearchAsYouType",
+                "nr": 0
+            },
+            {
                 "name": "OwnCodeInModel.html",
                 "tags": [
                     "databinding",
@@ -1028,23 +1045,6 @@
                     "qx.Mixin.define"
                 ],
                 "title": "OwnCodeInModel",
-                "nr": 0
-            },
-            {
-                "name": "SearchAsYouType.html",
-                "tags": [
-                    "noPlayground",
-                    "databinding",
-                    "filter",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "SearchAsYouType",
                 "nr": 0
             },
             {
@@ -1328,21 +1328,6 @@
         "classname": "layout",
         "tests": [
             {
-                "name": "Basic.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Basic",
-                "nr": 0
-            },
-            {
                 "name": "Canvas_Fixed.html",
                 "tags": [
                     "noPlayground",
@@ -1593,6 +1578,21 @@
                 ],
                 "title": "Dock PercentSize",
                 "nr": "PercentSize"
+            },
+            {
+                "name": "Basic.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Basic",
+                "nr": 0
             },
             {
                 "name": "Dock_Separator.html",
@@ -4495,22 +4495,6 @@
                 "nr": 0
             },
             {
-                "name": "Popup.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.popup.Popup",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.Button",
-                    "qx.ui.popup.Popup",
-                    "qx.ui.basic.Atom"
-                ],
-                "title": "Popup",
-                "nr": 0
-            },
-            {
                 "name": "ProgressBar.html",
                 "tags": [
                     "qx.Class.define",
@@ -4537,6 +4521,22 @@
                     "qx.ui.form.RadioGroup"
                 ],
                 "title": "RadioButton",
+                "nr": 0
+            },
+            {
+                "name": "Popup.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.popup.Popup",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.Button",
+                    "qx.ui.popup.Popup",
+                    "qx.ui.basic.Atom"
+                ],
+                "title": "Popup",
                 "nr": 0
             },
             {
