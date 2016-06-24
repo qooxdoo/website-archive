@@ -2709,6 +2709,7 @@
                     "qx.ui.table.headerrenderer.Icon",
                     "qx.ui.toolbar.ToolBar",
                     "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
                     "qx.ui.toolbar.Button",
                     "qx.ui.toolbar.Button",
                     "qx.ui.toolbar.Button",
