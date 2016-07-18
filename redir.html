@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>qooxdoo redirector </title>
+    <!-- fallback redirect -->
+    <meta http-equiv="refresh" content="1; URL='http://www.qooxdoo.org'" />
+    <script>
+    function redir () {
+      var hash = window.location.hash;
+      var rel = "current";
+      if (hash.match(/devel/)){
+        rel = "devel";
+      }
+      if (hash.match(/playground/)){
+        return rel+"/playground/";
+      }
+      if (hash.match(/apiviewer/)){
+        return rel+"/apiviewer/";
+      }
+      if (hash.match(/demobrowser/)){
+        return rel+"/demobrowser/";
+      }
+      return "";
+    }   
+    window.location.href = "http://www.qooxdoo.org/" + redir();
+    </script>
+  </head>
+  <body>
+  <p>one moment please redirecting you ... </p>
+  </body>
+</html>
