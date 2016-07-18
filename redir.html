@@ -7,18 +7,12 @@
     <script>
     function redir () {
       var hash = window.location.hash;
-      var rel = "current";
-      if (hash.match(/devel/)){
-        rel = "devel";
+      var m;
+      if (m = hash.match(/^#api\/([^\/]*)/)){
+         return m[1]+"/apiviewer/";
       }
-      if (hash.match(/playground/)){
-        return rel+"/playground/";
-      }
-      if (hash.match(/apiviewer/)){
-        return rel+"/apiviewer/";
-      }
-      if (hash.match(/demobrowser/)){
-        return rel+"/demobrowser/";
+      if (m = hash.match(/^#playground\/([^\/]*)/)){
+         return m[1]+"/playground/";
       }
       return "";
     }   
