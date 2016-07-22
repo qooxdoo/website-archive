@@ -50,15 +50,28 @@
         "4.1": "4.1.1",
         "5.0": "5.0.1"
       };
-      var newHref = window.location.href.replace(
+
+      var lmap = {
+        "http://www.qooxdoo.org/downloads" : "https://github.com/qooxdoo/qooxdoo/releases",
+        "http://www.qooxdoo.org/community" : "https://gitter.im/qooxdoo/qooxdoo"
+      };
+      
+      var href = window.location.href;
+      var newHref = href.replace(
           /\/(\d\.\d)(?:\.\d)?\//,
           function ( match,p1 ){
               return '/'+(vmap[p1] || match)+'/';
           }
       );
+      newHref = href.replace(
+          /^(.+)$/,
+          function ( match,p1 ){
+              return ( lmap[p1] || match);
+          }
+      );
       if (newHref != window.location.href){
           window.location.href = newHref;
-      }
+      }     
     </script>
     <link rel="shortcut icon" href="/images/qx-favicon.png" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
