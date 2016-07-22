@@ -22,9 +22,44 @@
     <meta name="date" content="2015-09-15T16:38:58+0200"/>
     <meta name="keywords" content="home"/>
     <link rel="start" href="/"/>
-    <script type="text/javascript"><!--//--><![CDATA[//><!--
-var NS='';var JSINFO = {"id":"home","namespace":"","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
-//--><!]]></script>
+    <script type="text/javascript">
+      var NS='';
+      var JSINFO = {
+        "id":"home",
+        "namespace":"",
+        "plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}
+      };
+
+      /* redirect requests for old versions */
+      var vmap = {
+        "0.6": "0.6.7",
+        "0.7": "0.7.4",
+        "0.8": "0.8.3",
+        "1.0": "1.0.2",
+        "1.1": "1.1.2",
+        "1.2": "1.2.2",
+        "1.3": "1.3.1",
+        "1.4": "1.4.2",
+        "1.5": "1.5.1",
+        "1.6": "1.6.1",
+        "2.0": "2.0.4",
+        "2.1": "2.1.2",
+        "3.0": "3.0.2",
+        "3.5": "3.5.1",
+        "4.0": "4.0.2",
+        "4.1": "4.1.1",
+        "5.0": "5.0.1"
+      };
+      var newHref = window.location.href.replace(
+          /\/(\d\.\d)(?:\.\d)?\//,
+          function ( match,p1 ){
+              return '/'+(vmap[p1] || match)+'/';
+          }
+      );
+      if (newHref != window.location.href){
+          window.location.href = newHref;
+      }
+    </script>
     <link rel="shortcut icon" href="/images/qx-favicon.png" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   </head>
