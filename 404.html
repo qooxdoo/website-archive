@@ -54,6 +54,7 @@
       var lmap = {
         "http://www.qooxdoo.org/downloads" : "https://github.com/qooxdoo/qooxdoo/releases",
         "http://www.qooxdoo.org/docs" : "http://www.qooxdoo.org/current",
+        "http://www.qooxdoo.org/current/demos.html" : "http://www.qooxdoo.org/current/demo.html",
         "http://www.qooxdoo.org/demos" : "http://www.qooxdoo.org/current/demo.html",
         "http://www.qooxdoo.org/community" : "https://gitter.im/qooxdoo/qooxdoo"
       };
@@ -65,7 +66,7 @@
               return '/'+(vmap[p1] || match)+'/';
           }
       );
-      newHref = href.replace(
+      newHref = newHref.replace(
           /^(.+)$/,
           function ( match,p1 ){
               return ( lmap[p1] || match);
