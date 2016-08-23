@@ -61,7 +61,7 @@
       
       var href = window.location.href;
       var newHref = href.replace(
-          /\/(\d\.\d)(?:\.\d)?\//,
+          /\/(\d\.\d)(?:\.\d)?(\/|$)/,
           function ( match,p1 ){
               return '/'+(vmap[p1] || match)+'/';
           }
