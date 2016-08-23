@@ -63,9 +63,13 @@
       var newHref = href.replace(
           /\/(\d\.\d)(?:\.\d)?(\/|$)/,
           function ( match,p1 ){
-              return '/'+(vmap[p1] || match)+'/';
+              if (vmap[p1]){
+                return '/'+vmap[p1]+'/';
+              }
+              return match;
           }
       );
+      newHref = newHref.replace(/\/apiviewer\//,'/api/');
       newHref = newHref.replace(
           /^(.+)$/,
           function ( match,p1 ){
