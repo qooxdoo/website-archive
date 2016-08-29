@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Gallery.4f70b4d02ac3.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Gallery.3cf8f793d0d1.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8064,7 +8064,8 @@ else {bp[i]=bq;}
 ,getLayout:function(){return this.getChildrenContainer().getLayout();}
 }});}
 )();
-(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){this.assertInterface(b,qx.ui.window.IDesktop);}
+(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){if(b!==null){this.assertInterface(b,qx.ui.window.IDesktop);}
+;}
 ,changeActiveWindow:function(c,d){}
 ,updateStack:function(){}
 ,bringToFront:function(e){this.assertInstance(e,qx.ui.window.Window);}

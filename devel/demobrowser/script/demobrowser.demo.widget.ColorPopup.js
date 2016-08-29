@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorPopup.02ab344775f6.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorPopup.0b84f4adb169.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8923,7 +8923,8 @@ else if(this.getLegendPosition()==i){u.setLayoutProperties({"top":w});}
 ;return {width:y,height:w};}
 }});}
 )();
-(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){this.assertInterface(b,qx.ui.window.IDesktop);}
+(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){if(b!==null){this.assertInterface(b,qx.ui.window.IDesktop);}
+;}
 ,changeActiveWindow:function(c,d){}
 ,updateStack:function(){}
 ,bringToFront:function(e){this.assertInstance(e,qx.ui.window.Window);}

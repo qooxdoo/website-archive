@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.treevirtual.TreeVirtual_Multiple_Columns.c47cf7c300b9.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.treevirtual.TreeVirtual_Multiple_Columns.bcb2dcfcdeb5.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11218,7 +11218,8 @@ else {return i;}
 ;}
 }});}
 )();
-(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){this.assertInterface(b,qx.ui.window.IDesktop);}
+(function(){var a="qx.ui.window.IWindowManager";qx.Interface.define(a,{members:{setDesktop:function(b){if(b!==null){this.assertInterface(b,qx.ui.window.IDesktop);}
+;}
 ,changeActiveWindow:function(c,d){}
 ,updateStack:function(){}
 ,bringToFront:function(e){this.assertInstance(e,qx.ui.window.Window);}
