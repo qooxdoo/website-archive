@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Transform.19031ff5c61e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Transform.604e80dca2bc.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -684,7 +684,7 @@ else {H.splice(i+1,0,J);}
 ;if(M instanceof qx.data.Array){M=M.toArray();}
 ;if(qx.core.Environment.get(f)){qx.core.Assert&&qx.core.Assert.assertArray(N,g);qx.core.Assert&&qx.core.Assert.assertArray(M,a);}
 ;Array.prototype.push.apply(N,M);return N;}
-,exclude:function(P,O){if(P instanceof qx.data.Array){return P.exclude(P,O);}
+,exclude:function(P,O){if(P instanceof qx.data.Array){return P.exclude(O);}
 ;if(qx.core.Environment.get(f)){qx.core.Assert&&qx.core.Assert.assertArray(P,g);qx.core.Assert&&qx.core.Assert.assertArray(O,a);}
 ;O.forEach(function(Q){var R=P.indexOf(Q);if(R!=-1){P.splice(R,1);}
 ;}
