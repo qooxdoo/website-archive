@@ -188,14 +188,6 @@ controller.</p>
 </pre></div>
 </div>
 <p>This adds a listener to the <tt class="docutils literal"><span class="pre">change</span></tt> event of the selection array. The controller also offer a <tt class="docutils literal"><span class="pre">changeSelection</span></tt> event which is not, like you might expect, an event fired as soon as any selected item changes. It is the change event for the selection property which holds the selection array.</p>
-<p>It's not recommended to set the whole selection array but you can still do that. There are two good  reasons why you shouldn't. First, you have to make sure your change listener is back in place and second, you have to make sure the old array is properly disposed. Here is a sample how it should be done.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">oldSelection</span> <span class="o">=</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">getSelection</span><span class="p">();</span>
-<span class="nx">oldSelection</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_onChange</span><span class="p">);</span>
-<span class="nx">oldSelection</span><span class="p">.</span><span class="nx">dispose</span><span class="p">();</span>
-<span class="nx">controller</span><span class="p">.</span><span class="nx">setSelection</span><span class="p">(</span><span class="nx">newSelection</span><span class="p">);</span>
-<span class="nx">newSelection</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;change&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_onChange</span><span class="p">);</span>
-</pre></div>
-</div>
 <p>For more details about the data array, check out the <a class="reference internal" href="models.html#pages-data-binding-models-data-array"><em>models page</em></a>.</p>
 </div>
 <div class="section" id="delegate">
