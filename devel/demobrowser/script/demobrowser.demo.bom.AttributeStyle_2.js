@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.AttributeStyle_2.632afce4f5f0.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.AttributeStyle_2.3988bd484ac2.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2019,35 +2019,35 @@ else {name=e;qx.Bootstrap.warn(n+window.navigator.userAgent+r);}
 },defer:function(F){qx.core.Environment.add(j,F.getVersion);qx.core.Environment.add(t,F.getName);}
 });}
 )();
-(function(){var a="rim_tabletos",b="10.1",c="Darwin",d="10.3",e="Windows Phone",f="os.version",g="10.7",h="2003",i=")",j="iPhone",k="android",l="unix",m="ce",n="7",o="SymbianOS",p="10.5",q="os.name",r="10.9",s="|",t="MacPPC",u="95",v="iPod",w="10.8",x="\.",y="Win64",z="linux",A="me",B="10.2",C="Macintosh",D="Android",E="Windows",F="98",G="ios",H="10",I="vista",J="8",K="blackberry",L="2000",M="8.1",N="(",O="",P="win",Q="Linux",R="10.6",S="BSD",T="10.0",U="10.4",V="Mac OS X",W="iPad",X="X11",Y="xp",br="symbian",bs="qx.bom.client.OperatingSystem",bt="g",bn="Win32",bo="10.10",bp="osx",bq="webOS",bw="RIM Tablet OS",bx="BlackBerry",by="nt4",bz=".",bu="MacIntel",bv="webos";qx.Bootstrap.define(bs,{statics:{getName:function(){if(!navigator){return O;}
-;var bA=navigator.platform||O;var bB=navigator.userAgent||O;if(bA.indexOf(E)!=-1||bA.indexOf(bn)!=-1||bA.indexOf(y)!=-1||bB.indexOf(e)!=-1){return P;}
-else if(bA.indexOf(C)!=-1||bA.indexOf(t)!=-1||bA.indexOf(bu)!=-1||bA.indexOf(V)!=-1){return bp;}
-else if(bB.indexOf(bw)!=-1){return a;}
-else if(bB.indexOf(bq)!=-1){return bv;}
-else if(bA.indexOf(v)!=-1||bA.indexOf(j)!=-1||bA.indexOf(W)!=-1){return G;}
-else if(bB.indexOf(D)!=-1){return k;}
-else if(bA.indexOf(Q)!=-1){return z;}
-else if(bA.indexOf(X)!=-1||bA.indexOf(S)!=-1||bA.indexOf(c)!=-1){return l;}
-else if(bA.indexOf(o)!=-1){return br;}
-else if(bA.indexOf(bx)!=-1){return K;}
-;return O;}
-,__cE:{"Windows NT 10.0":H,"Windows NT 6.3":M,"Windows NT 6.2":J,"Windows NT 6.1":n,"Windows NT 6.0":I,"Windows NT 5.2":h,"Windows NT 5.1":Y,"Windows NT 5.0":L,"Windows 2000":L,"Windows NT 4.0":by,"Win 9x 4.90":A,"Windows CE":m,"Windows 98":F,"Win98":F,"Windows 95":u,"Win95":u,"Mac OS X 10_10":bo,"Mac OS X 10.10":bo,"Mac OS X 10_9":r,"Mac OS X 10.9":r,"Mac OS X 10_8":w,"Mac OS X 10.8":w,"Mac OS X 10_7":g,"Mac OS X 10.7":g,"Mac OS X 10_6":R,"Mac OS X 10.6":R,"Mac OS X 10_5":p,"Mac OS X 10.5":p,"Mac OS X 10_4":U,"Mac OS X 10.4":U,"Mac OS X 10_3":d,"Mac OS X 10.3":d,"Mac OS X 10_2":B,"Mac OS X 10.2":B,"Mac OS X 10_1":b,"Mac OS X 10.1":b,"Mac OS X 10_0":T,"Mac OS X 10.0":T},getVersion:function(){var bC=qx.bom.client.OperatingSystem.__cF(navigator.userAgent);if(bC==null){bC=qx.bom.client.OperatingSystem.__cG(navigator.userAgent);}
-;if(bC!=null){return bC;}
-else {return O;}
+(function(){var a="rim_tabletos",b="10.1",c="Darwin",d="10.3",e="Windows Phone",f="os.version",g="10.7",h="2003",i=")",j="iPhone",k="android",l="unix",m="ce",n="7",o="10.11",p="SymbianOS",q="10.5",r="os.name",s="10.12",t="10.9",u="|",v="MacPPC",w="95",x="iPod",y="10.8",z="\.",A="Win64",B="linux",C="me",D="10.2",E="Macintosh",F="Android",G="Windows",H="98",I="ios",J="10",K="vista",L="8",M="blackberry",N="2000",O="8.1",P="(",Q="",R="win",S="Linux",T="10.6",U="BSD",V="10.0",W="10.4",X="Mac OS X",Y="iPad",bu="X11",bv="xp",bw="symbian",bq="qx.bom.client.OperatingSystem",br="g",bs="Win32",bt="10.10",bA="osx",bB="webOS",bC="RIM Tablet OS",bD="BlackBerry",bx="nt4",by=".",bz="MacIntel",bp="webos";qx.Bootstrap.define(bq,{statics:{getName:function(){if(!navigator){return Q;}
+;var bE=navigator.platform||Q;var bF=navigator.userAgent||Q;if(bE.indexOf(G)!=-1||bE.indexOf(bs)!=-1||bE.indexOf(A)!=-1||bF.indexOf(e)!=-1){return R;}
+else if(bE.indexOf(E)!=-1||bE.indexOf(v)!=-1||bE.indexOf(bz)!=-1||bE.indexOf(X)!=-1){return bA;}
+else if(bF.indexOf(bC)!=-1){return a;}
+else if(bF.indexOf(bB)!=-1){return bp;}
+else if(bE.indexOf(x)!=-1||bE.indexOf(j)!=-1||bE.indexOf(Y)!=-1){return I;}
+else if(bF.indexOf(F)!=-1){return k;}
+else if(bE.indexOf(S)!=-1){return B;}
+else if(bE.indexOf(bu)!=-1||bE.indexOf(U)!=-1||bE.indexOf(c)!=-1){return l;}
+else if(bE.indexOf(p)!=-1){return bw;}
+else if(bE.indexOf(bD)!=-1){return M;}
+;return Q;}
+,__cE:{"Windows NT 10.0":J,"Windows NT 6.3":O,"Windows NT 6.2":L,"Windows NT 6.1":n,"Windows NT 6.0":K,"Windows NT 5.2":h,"Windows NT 5.1":bv,"Windows NT 5.0":N,"Windows 2000":N,"Windows NT 4.0":bx,"Win 9x 4.90":C,"Windows CE":m,"Windows 98":H,"Win98":H,"Windows 95":w,"Win95":w,"Mac OS X 10_12":s,"Mac OS X 10.12":s,"Mac OS X 10_11":o,"Mac OS X 10.11":o,"Mac OS X 10_10":bt,"Mac OS X 10.10":bt,"Mac OS X 10_9":t,"Mac OS X 10.9":t,"Mac OS X 10_8":y,"Mac OS X 10.8":y,"Mac OS X 10_7":g,"Mac OS X 10.7":g,"Mac OS X 10_6":T,"Mac OS X 10.6":T,"Mac OS X 10_5":q,"Mac OS X 10.5":q,"Mac OS X 10_4":W,"Mac OS X 10.4":W,"Mac OS X 10_3":d,"Mac OS X 10.3":d,"Mac OS X 10_2":D,"Mac OS X 10.2":D,"Mac OS X 10_1":b,"Mac OS X 10.1":b,"Mac OS X 10_0":V,"Mac OS X 10.0":V},getVersion:function(){var bG=qx.bom.client.OperatingSystem.__cF(navigator.userAgent);if(bG==null){bG=qx.bom.client.OperatingSystem.__cG(navigator.userAgent);}
+;if(bG!=null){return bG;}
+else {return Q;}
 ;}
-,__cF:function(bD){var bG=[];for(var bF in qx.bom.client.OperatingSystem.__cE){bG.push(bF);}
-;var bH=new RegExp(N+bG.join(s).replace(/\./g,x)+i,bt);var bE=bH.exec(bD);if(bE&&bE[1]){return qx.bom.client.OperatingSystem.__cE[bE[1]];}
+,__cF:function(bH){var bK=[];for(var bJ in qx.bom.client.OperatingSystem.__cE){bK.push(bJ);}
+;var bL=new RegExp(P+bK.join(u).replace(/\./g,z)+i,br);var bI=bL.exec(bH);if(bI&&bI[1]){return qx.bom.client.OperatingSystem.__cE[bI[1]];}
 ;return null;}
-,__cG:function(bN){var bI=bN.indexOf(e)!=-1;var bO=bN.indexOf(D)!=-1;var bJ=bN.match(/(iPad|iPhone|iPod)/i)?true:false;if(bI){var bQ=new RegExp(/Windows Phone (\d+(?:\.\d+)+)/i);var bL=bQ.exec(bN);if(bL&&bL[1]){return bL[1];}
+,__cG:function(bR){var bM=bR.indexOf(e)!=-1;var bS=bR.indexOf(F)!=-1;var bN=bR.match(/(iPad|iPhone|iPod)/i)?true:false;if(bM){var bU=new RegExp(/Windows Phone (\d+(?:\.\d+)+)/i);var bP=bU.exec(bR);if(bP&&bP[1]){return bP[1];}
 ;}
-else if(bO){var bM=new RegExp(/ Android (\d+(?:\.\d+)+)/i);var bP=bM.exec(bN);if(bP&&bP[1]){return bP[1];}
+else if(bS){var bQ=new RegExp(/ Android (\d+(?:\.\d+)+)/i);var bT=bQ.exec(bR);if(bT&&bT[1]){return bT[1];}
 ;}
-else if(bJ){var bR=new RegExp(/(CPU|iPhone|iPod) OS (\d+)_(\d+)(?:_(\d+))*\s+/);var bK=bR.exec(bN);if(bK&&bK[2]&&bK[3]){if(bK[4]){return bK[2]+bz+bK[3]+bz+bK[4];}
-else {return bK[2]+bz+bK[3];}
+else if(bN){var bV=new RegExp(/(CPU|iPhone|iPod) OS (\d+)_(\d+)(?:_(\d+))*\s+/);var bO=bV.exec(bR);if(bO&&bO[2]&&bO[3]){if(bO[4]){return bO[2]+by+bO[3]+by+bO[4];}
+else {return bO[2]+by+bO[3];}
 ;}
 ;}
 ;return null;}
-},defer:function(bS){qx.core.Environment.add(q,bS.getName);qx.core.Environment.add(f,bS.getVersion);}
+},defer:function(bW){qx.core.Environment.add(r,bW.getName);qx.core.Environment.add(f,bW.getVersion);}
 });}
 )();
 (function(){var a="CSS1Compat",b="IEMobile",c=" OPR/",d="msie",e="android",f="operamini",g="AdobeAIR|Titanium|Fluid|Chrome|Android|Epiphany|Konqueror|iCab|iPad|iPhone|OmniWeb|Maxthon|Pre|PhantomJS|Mobile Safari|Safari",h="browser.quirksmode",i="browser.name",j="trident",k="mobile chrome",l=")(/| )([0-9]+\.[0-9])",m="iemobile",n="prism|Fennec|Camino|Kmeleon|Galeon|Netscape|SeaMonkey|Namoroka|Firefox",o="IEMobile|Maxthon|MSIE|Trident",p="opera mobi",q="Mobile Safari",r="operamobile",s="ie",t="mobile safari",u="qx.bom.client.Browser",v="",w="opera mini",x="(",y="browser.version",z="opera",A="ce",B=")(/|)?([0-9]+\.[0-9])?",C="mshtml",D="Opera Mini|Opera Mobi|Opera",E="edge",F="webkit",G="browser.documentmode",H="5.0",I="Mobile/";qx.Bootstrap.define(u,{statics:{getName:function(){var L=navigator.userAgent;var M=new RegExp(x+qx.bom.client.Browser.__cH+B);var K=L.match(M);if(!K){return v;}
@@ -2409,8 +2409,9 @@ else if(!qx.dom.Node.isWindow(q)){q=window;}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
 }});}
 )();
 (function(){var a="$$init_",b="No such property: ",c="set",d="qx.debug",e="get",f="$$user_",g="qx.core.MProperty",h="reset";qx.Mixin.define(g,{members:{set:function(j,k){var i=qx.core.Property.$$method.set;if(qx.Bootstrap.isString(j)){if(!this[i[j]]){if(this[c+qx.Bootstrap.firstUp(j)]!=undefined){this[c+qx.Bootstrap.firstUp(j)](k);return this;}
@@ -2565,6 +2566,16 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;return false;}
 }});}
 )();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
+)();
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
+}});}
+)();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b="qx.debug",c="Invalid argument value 'cancelable'.",d="Cannot prevent default action on a non cancelable event: ",e="Invalid argument value 'canBubble'.",f="qx.event.type.Event";qx.Class.define(f,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{init:function(h,g){if(qx.core.Environment.get(b)){if(h!==undefined){qx.core.Assert.assertBoolean(h,e);}
 ;if(g!==undefined){qx.core.Assert.assertBoolean(g,c);}
 ;}
@@ -2636,17 +2647,6 @@ else if(!(event instanceof s)){this.error(g+v+c+event.classname+b);}
 ;}
 ;}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
-});}
-)();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
 });}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dd:null,__de:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dd=c;this.__de=d;return this;}
