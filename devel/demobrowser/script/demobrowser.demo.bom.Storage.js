@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.d4130a3ccb1d.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.ad01e46cf47d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2629,10 +2629,10 @@ else {k.dispose();}
 else if(!(event instanceof s)){this.error(g+v+c+event.classname+b);}
 ;}
 ;}
-;event.setEventPhase(qx.event.type.Event.AT_TARGET);var t=this._manager.getListeners(r,w,false);if(t){for(var i=0,l=t.length;i<l;i++ ){var u=t[i].context||r;if(qx.core.Environment.get(f)){if(u&&u.isDisposed&&u.isDisposed()&&!u.isDisposing()){this.warn(d+u+h+w+j+r+m);}
+;event.setEventPhase(qx.event.type.Event.AT_TARGET);var t=this._manager.getListeners(r,w,false);if(t){for(var i=0,l=t.length;i<l;i++ ){if(this._manager.isBlacklisted(t[i].unique)){continue;}
+;var u=t[i].context||r;if(qx.core.Environment.get(f)){if(u&&u.isDisposed&&u.isDisposed()&&!u.isDisposing()){this.warn(d+u+h+w+j+r+m);}
 ;}
-;if(!this._manager.isBlacklisted(t[i].unique)){t[i].handler.call(u,event);}
-;}
+;t[i].handler.call(u,event);}
 ;}
 ;}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
@@ -4221,7 +4221,7 @@ else {var o=d+qx.bom.storage.UserData.__ci;qx.bom.storage.UserData.__ci++ ;}
 )();
 (function(){var a="q";qx.Bootstrap.define(a,{extend:qxWeb});q=qxWeb;}
 )();
-(function(){var a="text",b="Unsupported input type.",c="nowrap",d="radio",e="textarea",f="auto",g="",h="qx.debug",j="input",k="option",m="value",n="select",o="soft",p="number",q="off",r="qx.bom.Input",s="normal",t="mshtml",u="engine.name",v="wrap",w="checkbox",x="select-one";qx.Bootstrap.define(r,{statics:{__kk:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(A,B,y){if(qx.core.Environment.get(h)){qx.core.Assert.assertKeyInMap(A,this.__kk,b);}
+(function(){var a="text",b="Unsupported input type.",c="nowrap",d="radio",e="textarea",f="auto",g="",h="qx.debug",j="input",k="option",m="value",n="select",o="soft",p="number",q="off",r="qx.bom.Input",s="normal",t="mshtml",u="engine.name",v="wrap",w="checkbox",x="select-one";qx.Bootstrap.define(r,{statics:{__ki:{text:1,textarea:1,select:1,checkbox:1,radio:1,password:1,hidden:1,submit:1,image:1,file:1,search:1,reset:1,button:1},create:function(A,B,y){if(qx.core.Environment.get(h)){qx.core.Assert.assertKeyInMap(A,this.__ki,b);}
 ;var B=B?qx.lang.Object.clone(B):{};var z;if(A===e||A===n){z=A;}
 else {z=j;B.type=A;}
 ;return qx.dom.Element.create(z,B,y);}

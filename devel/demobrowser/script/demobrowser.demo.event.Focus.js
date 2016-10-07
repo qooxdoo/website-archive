@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Focus.f84e54cb9d52.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Focus.992d0e5f75ff.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2629,10 +2629,10 @@ else {k.dispose();}
 else if(!(event instanceof s)){this.error(g+v+c+event.classname+b);}
 ;}
 ;}
-;event.setEventPhase(qx.event.type.Event.AT_TARGET);var t=this._manager.getListeners(r,w,false);if(t){for(var i=0,l=t.length;i<l;i++ ){var u=t[i].context||r;if(qx.core.Environment.get(f)){if(u&&u.isDisposed&&u.isDisposed()&&!u.isDisposing()){this.warn(d+u+h+w+j+r+m);}
+;event.setEventPhase(qx.event.type.Event.AT_TARGET);var t=this._manager.getListeners(r,w,false);if(t){for(var i=0,l=t.length;i<l;i++ ){if(this._manager.isBlacklisted(t[i].unique)){continue;}
+;var u=t[i].context||r;if(qx.core.Environment.get(f)){if(u&&u.isDisposed&&u.isDisposed()&&!u.isDisposing()){this.warn(d+u+h+w+j+r+m);}
 ;}
-;if(!this._manager.isBlacklisted(t[i].unique)){t[i].handler.call(u,event);}
-;}
+;t[i].handler.call(u,event);}
 ;}
 ;}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
