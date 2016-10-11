@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Internet Explorer specific settings &mdash; qooxdoo 5.1 documentation</title>
+    <title>Using non-qooxdoo, third-party libraries &mdash; qooxdoo 5.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -35,8 +35,8 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="qooxdoo 5.1 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
-    <link rel="next" title="Using non-qooxdoo, third-party libraries" href="using_non_qx_libs.html" />
-    <link rel="prev" title="An Aspect Template Class" href="aspects_template.html" />
+    <link rel="next" title="Standard Applications" href="../application.html" />
+    <link rel="prev" title="Internet Explorer specific settings" href="internet_explorer_specific_settings.html" />
     <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
     <script type="text/javascript">
       // decorate jQuery.getQueryParameters to always process search words
@@ -136,61 +136,144 @@
        &raquo;
       <a href="../development.html" accesskey="U">Development</a>
      &raquo;
-    <a href="">Internet Explorer specific settings</a>
+    <a href="">Using non-qooxdoo, third-party libraries</a>
     </section>
     <section id="content">
       <div class="body">
         
-  <div class="section" id="internet-explorer-specific-settings">
-<span id="pages-internet-explorer-specific-settings-internet-explorer-specific-settings"></span><h1>Internet Explorer specific settings<a class="headerlink" href="#internet-explorer-specific-settings" title="Permalink to this headline">¶</a></h1>
-<p>This page describes all settings which are used/implemented by qooxdoo to workaround/solve IE-specific issues.</p>
-<div class="section" id="document-mode-in-ie8">
-<span id="pages-internet-explorer-specific-settings-document-mode-in-ie8"></span><h2>Document Mode in IE8<a class="headerlink" href="#document-mode-in-ie8" title="Permalink to this headline">¶</a></h2>
-<p>qooxdoo uses <em>Internet Explorer 8 standard mode</em> as the default for all generated applications. This is achieved by setting a XHTML 1.2 Doctype to all <em>index.html</em> files provided by the framework.</p>
-</div>
-<div class="section" id="using-alpha-transparent-pngs">
-<span id="pages-internet-explorer-specific-settings-using-alpha-transparent-pngs"></span><h2>Using alpha-transparent PNGs<a class="headerlink" href="#using-alpha-transparent-pngs" title="Permalink to this headline">¶</a></h2>
-<p>IE7 and IE8 have built-in support for loading alpha-transparent PNGs. qooxdoo however does use the AlphaImageLoader for all IE versions whenever a PNG image has to be loaded. This has several reasons:</p>
+  <div class="section" id="using-non-qooxdoo-third-party-libraries">
+<h1>Using non-qooxdoo, third-party libraries<a class="headerlink" href="#using-non-qooxdoo-third-party-libraries" title="Permalink to this headline">¶</a></h1>
+<p>Aside from normal qooxdoo libraries like contributions there may be times when you want to include a third-party JavaScript library in your application that just comes as a (potentially minified) <em>.js</em> file. (This could e.g. be a graphics or charting library.) There are basically two ways to integrate such a library into your application:</p>
 <ul class="simple">
-<li>Performance issues in IE8 - native alpha PNG support is slower when running IE8 standards mode</li>
-<li>Rendering bug in IE - reported at <a class="reference external" href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1287">Bug #1287</a></li>
+<li>Using the third-party library like a resource of your app.</li>
+<li>Wrapping the third-party code in an own qooxdoo library.</li>
 </ul>
+<p>Here is how each of them works.</p>
+<div class="section" id="using-the-third-party-library-like-a-resource-of-your-application">
+<h2>Using the third-party library like a resource of your application<a class="headerlink" href="#using-the-third-party-library-like-a-resource-of-your-application" title="Permalink to this headline">¶</a></h2>
+<p>Let's assume you found this wonderful JavaScript library for charting, called <em>PonyCharts</em>. It is available as minified <em>ponycharts.js</em> download from the project's web site. It exposes an API for creating and manipulating charts, and you want ot use such charts as part of your qooxdoo application. This means calling into the library's API from your qooxdoo code, which in turn means the library has to be loaded ahead of your code in the browser.</p>
+<ol class="arabic">
+<li><p class="first">As a first step, copy the <em>.js</em> file into your app's resource tree, e.g. as</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="o">/</span><span class="nx">resource</span><span class="o">/</span><span class="nx">ponycharts</span><span class="o">/</span><span class="nx">ponycharts</span><span class="p">.</span><span class="nx">js</span>
+</pre></div>
 </div>
-<div class="section" id="url-rewriting-under-https">
-<span id="pages-internet-explorer-specific-settings-url-rewriting-under-https"></span><h2>URL-Rewriting under HTTPS<a class="headerlink" href="#url-rewriting-under-https" title="Permalink to this headline">¶</a></h2>
-<p>Every IE version does show a <em>Mixed Content</em> warning whenever a resource (image, script, etc.) is loaded with a regular HTTP request when the containing page runs under HTTPS. However, this useful warning is also appearing in situations it is not acceptable, e.g. for relative paths like <em>./path/to/my/resource</em>.
-In order to solve these issues every URL of a resource managed by qooxdoo is rewritten in IE under HTTPS to an absolute URL to prevent the warning. See <a class="reference external" href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2427">Bug #2427</a> for more details.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Then, make sure your new resource is used by your application code. The main consequence of this is that the <em>.js</em> file will be copied over to the build tree of your application, and is being made known to ${qooxdoo}'s ResourceManager. You achieve that by adding an <em>&#64;asset</em> hint to the main class of your application or library.</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * This is the main class of your custom application &quot;foo&quot;.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @asset(foo/*)</span>
+<span class="cm"> * @asset(ponycharts/ponycharts.js)</span>
+<span class="cm"> */</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;foo.Application&quot;</span><span class="p">,</span>
+    <span class="p">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>It makes sense to add the <em>.js</em> file under its own directory, thereby creating a namespace for it. This allows you to use wildcards should the third-party lib consist of multiple files (e.g. comes with an <em>.css</em> file, images, etc.). You could then write</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * ...</span>
+<span class="cm"> * @asset(ponycharts/*)</span>
+<span class="cm"> */</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p class="first">Make sure the PonyCharts <em>.js</em> file is loaded before your application code. A simple way to achieve this is to use the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-add-script"><em>add-script</em></a> config key. In your <cite>config.json</cite>, under <em>jobs</em>, add a <em>common</em> job like this.</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;common&quot;</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;add-script&quot;</span> <span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;uri&quot;</span> <span class="o">:</span> <span class="s2">&quot;resource/ponycharts/ponycharts.js&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>This will assure the lib is loaded in source and build versions of your app before your code starts. You can now code happily against PonyChart's API.</p>
+</div>
+<div class="section" id="wrapping-the-third-party-code-in-an-own-qooxdoo-library">
+<h2>Wrapping the third-party code in an own qooxdoo library<a class="headerlink" href="#wrapping-the-third-party-code-in-an-own-qooxdoo-library" title="Permalink to this headline">¶</a></h2>
+<p>There is a more elaborate way to use an external JavaScript package, by wrapping it in its own qooxdoo library. Although more work, this has some advantages:</p>
+<ul class="simple">
+<li>Easier reuse, e.g. when you want to use the external package in multiple qooxdoo projects.</li>
+<li>Single point of concern, e.g. when the external package needs configuration or certain steps to initialize it.</li>
+<li>Exposing the package's API through a qooxdoo class.</li>
+<li>Automatic dependency management wherever the wrapper class is used.</li>
+</ul>
+<p>Here are the necessary steps.</p>
+<ol class="arabic">
+<li><p class="first">Create a fresh qooxdoo project using <cite>create-application.py</cite>.</p>
+</li>
+<li><p class="first">As before, copy the external package's files to a suitable place under the <cite>resource</cite> folder, e.g. <cite>source/resource/ponycharts/ponycharts.js</cite></p>
+</li>
+<li><p class="first">Add an <cite>&#64;asset</cite> hint in the project's main class</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * This is the main class of the PonyCharts wrapper.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @asset(ponycharts/ponycharts.js)</span>
+<span class="cm"> */</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;ponycharts.PonyCharts&quot;</span><span class="p">,</span>
+    <span class="p">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Add code this class that loads <cite>ponycharts.js</cite>, does necessary initialization, and adds a qooxdoo-ish API to it.</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">TBD</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">In the using qooxdoo application, call the correpsonding methods of the wrapper class.</p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">TBD</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
 </div>
 </div>
 
 
       </div>
       <div class="bottom-nav">
-          <a class="prev" href="aspects_template.html"
-             title="previous chapter">« An Aspect Template Class</a>
+          <a class="prev" href="internet_explorer_specific_settings.html"
+             title="previous chapter">« Internet Explorer specific settings</a>
           <span class="separator">|</span>
-          <a class="next" href="using_non_qx_libs.html"
-             title="next chapter">Using non-qooxdoo, third-party libraries »</a>
+          <a class="next" href="../application.html"
+             title="next chapter">Standard Applications »</a>
       </div>
     </section>
     <section id="sidebar">
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
-<li><a class="reference internal" href="#">Internet Explorer specific settings</a><ul>
-<li><a class="reference internal" href="#document-mode-in-ie8">Document Mode in IE8</a></li>
-<li><a class="reference internal" href="#using-alpha-transparent-pngs">Using alpha-transparent PNGs</a></li>
-<li><a class="reference internal" href="#url-rewriting-under-https">URL-Rewriting under HTTPS</a></li>
+<li><a class="reference internal" href="#">Using non-qooxdoo, third-party libraries</a><ul>
+<li><a class="reference internal" href="#using-the-third-party-library-like-a-resource-of-your-application">Using the third-party library like a resource of your application</a></li>
+<li><a class="reference internal" href="#wrapping-the-third-party-code-in-an-own-qooxdoo-library">Wrapping the third-party code in an own qooxdoo library</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>» Next topic</h4>
-  <p class="topless"><a href="using_non_qx_libs.html"
-                        title="next chapter">Using non-qooxdoo, third-party libraries</a></p>
+  <p class="topless"><a href="../application.html"
+                        title="next chapter">Standard Applications</a></p>
   <h4>« Previous topic</h4>
-  <p class="topless"><a href="aspects_template.html"
-                        title="previous chapter">An Aspect Template Class</a></p>
+  <p class="topless"><a href="internet_explorer_specific_settings.html"
+                        title="previous chapter">Internet Explorer specific settings</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../../search.html" method="get">
@@ -288,7 +371,7 @@ In order to solve these issues every URL of a resource managed by qooxdoo is rew
       <div class="notice">
         <p class="source">
           <strong>
-            <a href="../../_sources/pages/development/internet_explorer_specific_settings.txt" rel="nofollow">Show Source</a>
+            <a href="../../_sources/pages/development/using_non_qx_libs.txt" rel="nofollow">Show Source</a>
           </strong>
         </p>
         <p class="page">
