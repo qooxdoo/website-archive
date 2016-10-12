@@ -2551,6 +2551,24 @@
                 "nr": 0
             },
             {
+                "name": "IconFont.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.locale.Manager.getInstance",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Image",
+                    "qx.theme.manager.Font.getInstance",
+                    "qx.Theme.define",
+                    "qx.Theme.include"
+                ],
+                "title": "IconFont",
+                "nr": 0
+            },
+            {
                 "name": "Localization.html",
                 "tags": [
                     "showcase",
@@ -4228,7 +4246,11 @@
                     "qx.ui.basic.Image",
                     "qx.ui.basic.Image",
                     "qx.ui.basic.Image",
-                    "qx.ui.form.ToggleButton"
+                    "qx.ui.basic.Image",
+                    "qx.ui.form.ToggleButton",
+                    "qx.theme.manager.Font.getInstance",
+                    "qx.Theme.define",
+                    "qx.Theme.include"
                 ],
                 "title": "Image",
                 "nr": 0

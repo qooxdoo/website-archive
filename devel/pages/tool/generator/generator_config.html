@@ -296,121 +296,124 @@ and they will be ignored in the processing.</p>
 <tr class="row-odd"><td>slice-images</td>
 <td>Triggers cutting images into regions.</td>
 </tr>
-<tr class="row-even"><td>translate</td>
+<tr class="row-even"><td>font-map</td>
+<td>Triggers creation of a font map for use with icon fonts.</td>
+</tr>
+<tr class="row-odd"><td>translate</td>
 <td>Triggers updating of .po files.</td>
 </tr>
-<tr class="row-odd"><td>validation-config</td>
+<tr class="row-even"><td>validation-config</td>
 <td>Validate a configuration file.</td>
 </tr>
-<tr class="row-even"><td>validation-manifest</td>
+<tr class="row-odd"><td>validation-manifest</td>
 <td>Validate the Manifest.json.</td>
 </tr>
-<tr class="row-odd"><td>watch-files</td>
+<tr class="row-even"><td>watch-files</td>
 <td>Execute a job when some files change.</td>
 </tr>
-<tr class="row-even"><td>web-server</td>
+<tr class="row-odd"><td>web-server</td>
 <td>Start a mini web-server to serve the current app.</td>
 </tr>
-<tr class="row-odd"><td>web-server-config</td>
+<tr class="row-even"><td>web-server-config</td>
 <td>Generate a configuration snippet (e.g. for Apache), for the current app.</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td><strong>Structure-changing Keys</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="row-even"><td>default-job (top-level)</td>
-<td>Default job to be run.</td>
-</tr>
-<tr class="row-odd"><td>export (top-level)</td>
-<td>List of jobs to be exported to other config files.</td>
-</tr>
-<tr class="row-even"><td>extend</td>
-<td>Extend the current job with other jobs.</td>
-</tr>
-<tr class="row-odd"><td>include (top-level)</td>
-<td>Include external config files.</td>
-</tr>
-<tr class="row-even"><td>jobs (top-level)</td>
-<td>Define jobs.</td>
-</tr>
-<tr class="row-odd"><td>let</td>
-<td>Define macros.</td>
-</tr>
-<tr class="row-even"><td>let (top-level)</td>
-<td>Define default macros.</td>
-</tr>
-<tr class="row-odd"><td>run</td>
-<td>Define a list of jobs to run.</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td><strong>Input/Output-setting Keys</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="row-even"><td>add-css</td>
-<td>Include arbitrary CSS URIs to be loaded by the app.</td>
-</tr>
-<tr class="row-odd"><td>add-script</td>
-<td>Includes arbitrary script URIs to be loaded by the app.</td>
-</tr>
-<tr class="row-even"><td>asset-let</td>
-<td>Defines macros that will be replaced in &#64;asset hints.</td>
-</tr>
-<tr class="row-odd"><td>compile-options</td>
-<td>Various options that tailor the <em>compile</em> action.</td>
-</tr>
-<tr class="row-even"><td>dependencies</td>
-<td>Fine-tune dependency processing.</td>
-</tr>
-<tr class="row-odd"><td>exclude</td>
-<td>Exclude classes from processing of the job.</td>
-</tr>
-<tr class="row-even"><td>include</td>
-<td>Include classes to be processed in the job.</td>
-</tr>
-<tr class="row-odd"><td>library</td>
-<td>Define libraries to be taken into account for this job.</td>
-</tr>
-<tr class="row-even"><td>packages</td>
-<td>Define packages for this app.</td>
-</tr>
-<tr class="row-odd"><td>require</td>
-<td>Define prerequisite classes (load time).</td>
-</tr>
-<tr class="row-even"><td>environment</td>
-<td>Define key:value pairs for the app.</td>
-</tr>
-<tr class="row-odd"><td>use</td>
-<td>Define prerequisite classes (run time).</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td><strong>Runtime-setting Keys</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="row-even"><td>cache</td>
-<td>Define the path to the cache directory.</td>
-</tr>
-<tr class="row-odd"><td>config-warnings (experimental)</td>
-<td>Suppress warnings relating to configuration.</td>
-</tr>
-<tr class="row-even"><td>log</td>
-<td>Tailor log output options.</td>
 </tr>
 <tr class="row-odd"><td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><strong>Miscellaneous Keys</strong></td>
+<tr class="row-even"><td><strong>Structure-changing Keys</strong></td>
 <td><strong>Description</strong></td>
 </tr>
-<tr class="row-odd"><td>desc</td>
+<tr class="row-odd"><td>default-job (top-level)</td>
+<td>Default job to be run.</td>
+</tr>
+<tr class="row-even"><td>export (top-level)</td>
+<td>List of jobs to be exported to other config files.</td>
+</tr>
+<tr class="row-odd"><td>extend</td>
+<td>Extend the current job with other jobs.</td>
+</tr>
+<tr class="row-even"><td>include (top-level)</td>
+<td>Include external config files.</td>
+</tr>
+<tr class="row-odd"><td>jobs (top-level)</td>
+<td>Define jobs.</td>
+</tr>
+<tr class="row-even"><td>let</td>
+<td>Define macros.</td>
+</tr>
+<tr class="row-odd"><td>let (top-level)</td>
+<td>Define default macros.</td>
+</tr>
+<tr class="row-even"><td>run</td>
+<td>Define a list of jobs to run.</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><strong>Input/Output-setting Keys</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-odd"><td>add-css</td>
+<td>Include arbitrary CSS URIs to be loaded by the app.</td>
+</tr>
+<tr class="row-even"><td>add-script</td>
+<td>Includes arbitrary script URIs to be loaded by the app.</td>
+</tr>
+<tr class="row-odd"><td>asset-let</td>
+<td>Defines macros that will be replaced in &#64;asset hints.</td>
+</tr>
+<tr class="row-even"><td>compile-options</td>
+<td>Various options that tailor the <em>compile</em> action.</td>
+</tr>
+<tr class="row-odd"><td>dependencies</td>
+<td>Fine-tune dependency processing.</td>
+</tr>
+<tr class="row-even"><td>exclude</td>
+<td>Exclude classes from processing of the job.</td>
+</tr>
+<tr class="row-odd"><td>include</td>
+<td>Include classes to be processed in the job.</td>
+</tr>
+<tr class="row-even"><td>library</td>
+<td>Define libraries to be taken into account for this job.</td>
+</tr>
+<tr class="row-odd"><td>packages</td>
+<td>Define packages for this app.</td>
+</tr>
+<tr class="row-even"><td>require</td>
+<td>Define prerequisite classes (load time).</td>
+</tr>
+<tr class="row-odd"><td>environment</td>
+<td>Define key:value pairs for the app.</td>
+</tr>
+<tr class="row-even"><td>use</td>
+<td>Define prerequisite classes (run time).</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><strong>Runtime-setting Keys</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-odd"><td>cache</td>
+<td>Define the path to the cache directory.</td>
+</tr>
+<tr class="row-even"><td>config-warnings (experimental)</td>
+<td>Suppress warnings relating to configuration.</td>
+</tr>
+<tr class="row-odd"><td>log</td>
+<td>Tailor log output options.</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><strong>Miscellaneous Keys</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>desc</td>
 <td>A descriptive string for the job.</td>
 </tr>
-<tr class="row-even"><td>name (top-level)</td>
+<tr class="row-odd"><td>name (top-level)</td>
 <td>A descriptive string for the configuration file.</td>
 </tr>
 </tbody>
@@ -459,6 +462,7 @@ and they will be ignored in the processing.</p>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-require"><em>require</em></a> Define prerequisite classes needed at load time. Takes a map, where the keys are class names and the values lists of prerequisite classes.</li>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-run"><em>run</em></a> Define a list of jobs to run in place of the current job. (See the special section on <a class="reference internal" href="generator_config_articles.html#pages-tool-generator-generator-config-articles-run-key"><em>&quot;run&quot; semantics</em></a>).</li>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-shell"><em>shell</em></a> Triggers the execution of one or more external command(s).</li>
+<li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-font-map-ref"><em>font-map</em></a> Triggers creation of font maps used by icon fonts.</li>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-slice-images"><em>slice-images</em></a> Triggers cutting images into regions.</li>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-translate"><em>translate</em></a> (Re-)generate .po files from source classes.</li>
 <li><a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-use"><em>use</em></a> Define prerequisite classes needed at run time. Takes a map, where the keys are class names and the values lists of prerequisite classes.</li>

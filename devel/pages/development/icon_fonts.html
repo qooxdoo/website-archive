@@ -1,0 +1,390 @@
+
+﻿
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Using icon fonts &mdash; qooxdoo 5.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo 5.1 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="Reporting Bugs" href="reporting_bugs.html" />
+    <link rel="prev" title="Image clipping and combining" href="image_clipping_and_combining.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body>
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &raquo;
+    <a href="../../index.html">Manual (v5.1)</a>
+       &raquo;
+      <a href="../development.html" accesskey="U">Development</a>
+     &raquo;
+    <a href="">Using icon fonts</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="using-icon-fonts">
+<span id="pages-icon-fonts-icon-fonts"></span><h1>Using icon fonts<a class="headerlink" href="#using-icon-fonts" title="Permalink to this headline">¶</a></h1>
+<p>Qooxdoo integrates the support for icon fonts like <a class="reference external" href="http://fontawesome.io/">FontAwesome</a>. The
+itegration is generic, so that it does not collide with the frameworks <a class="reference internal" href="../desktop/ui_theming.html"><em>appearance themes</em></a>.</p>
+<p>Font icons can be addressed using <tt class="docutils literal"><span class="pre">&#64;FontName/GlyphName</span></tt> or <tt class="docutils literal"><span class="pre">&#64;FontName/HexUnicode</span></tt> in the source
+property of your <tt class="docutils literal"><span class="pre">qx.ui.basic.Image</span></tt>.</p>
+<div class="section" id="configuration">
+<span id="pages-icon-fonts-setup"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To be able to use font map generation, you need a locally installed
+<a class="reference internal" href="../introduction/third_party_components.html"><em>FontForge</em></a> and its python
+package.</p>
+</div>
+<p>To use this feature you have to configure a dedicated generator job to extract
+the available glyph-names and a character aspect ratio from the defined fonts.
+You can add this job to your standard <tt class="docutils literal"><span class="pre">config.json</span></tt> file, or, as the
+configuration for these tasks is fairly self-contained, put them in an own file</p>
+<blockquote>
+<div>like <tt class="docutils literal"><span class="pre">fonts.json</span></tt>, as we do in the framework.</div></blockquote>
+<p>Here is the general layout for the image manipulating jobs configuration:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;jobs&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;common&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;RESPATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;./source/resource&quot;</span>
+      <span class="p">},</span>
+
+      <span class="s2">&quot;cache&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;compile&quot;</span> <span class="o">:</span> <span class="s2">&quot;../../cache&quot;</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+
+    <span class="s2">&quot;make-font-map&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <tt class="docutils literal"><span class="pre">common</span></tt> job is used to set up the basic settings which are shared between
+the specific jobs, described in the following sections.</p>
+<div class="section" id="creating-a-font-map">
+<span id="pages-icon-fonts-make-font-map"></span><h3>Creating a font map<a class="headerlink" href="#creating-a-font-map" title="Permalink to this headline">¶</a></h3>
+<p>Creating a font map is needed whenever you add or change a font that is intended
+to be used as an icon font.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;make-font-map&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;common&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;desc&quot;</span> <span class="o">:</span> <span class="s2">&quot;Build a font mapping from glyphname to unicode id&quot;</span><span class="p">,</span>
+
+  <span class="s2">&quot;font-map&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;fonts&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;${RESPATH}/project/fonts/fontawesome-webfont.ttf&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+        <span class="s2">&quot;prefix&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${RESPATH}&quot;</span> <span class="p">],</span>
+        <span class="s2">&quot;alias&quot;</span> <span class="o">:</span> <span class="s2">&quot;FontAwesome&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;size&quot;</span> <span class="o">:</span> <span class="mi">40</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>The key has to be the path to the <em>source</em> font. It is recommended to use
+a TTF font here.</li>
+<li>The <tt class="docutils literal"><span class="pre">prefix</span></tt> entry will set the base file path for all the result map.</li>
+<li>The entry <tt class="docutils literal"><span class="pre">size</span></tt> sets the default size of the font icons, since qooxdoo
+expects icons to have a specific size. It is possible to set a specific
+size for icon font based images, of course.</li>
+</ul>
+<p>See the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-font-map-ref"><em>make-font-map reference</em></a> for all configuration
+details.</p>
+</div>
+</div>
+<div class="section" id="running-font-jobs">
+<span id="pages-icon-fonts-run-image-jobs"></span><h2>Running font jobs<a class="headerlink" href="#running-font-jobs" title="Permalink to this headline">¶</a></h2>
+<p>If you are finished with the definition of your fonts to generate a font map for,
+you can use the <tt class="docutils literal"><span class="pre">generator</span></tt> to let it be created for you.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">make</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">map</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="drawbacks">
+<span id="pages-icon-fonts-drawbacks"></span><h2>Drawbacks<a class="headerlink" href="#drawbacks" title="Permalink to this headline">¶</a></h2>
+<p>Only qx.ui.basic.Image and qx.ui.table.cellrenderer.Image support icon
+fonts. It is not possible to use these icon font based images in decorators.</p>
+</div>
+<div class="section" id="benefits">
+<span id="pages-icon-fonts-benefits"></span><h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<p>There are several benefits for using icon fonts.</p>
+<ul class="simple">
+<li>Fewer HTTP requests mean better performance when using icon fonts.</li>
+<li>State changes are faster, because just the character needs to be changed.</li>
+<li>They have no color and can be styled according to your needs.</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="image_clipping_and_combining.html"
+             title="previous chapter">« Image clipping and combining</a>
+          <span class="separator">|</span>
+          <a class="next" href="reporting_bugs.html"
+             title="next chapter">Reporting Bugs »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Using icon fonts</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li><a class="reference internal" href="#creating-a-font-map">Creating a font map</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-font-jobs">Running font jobs</a></li>
+<li><a class="reference internal" href="#drawbacks">Drawbacks</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="reporting_bugs.html"
+                        title="next chapter">Reporting Bugs</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="image_clipping_and_combining.html"
+                        title="previous chapter">Image clipping and combining</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.1/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.1/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.1/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.1/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.1/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.1/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/icon_fonts.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

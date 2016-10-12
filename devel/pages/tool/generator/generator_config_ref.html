@@ -1268,6 +1268,45 @@ is on a new line (default: <em>false</em>)</li>
 </li>
 </ul>
 </div>
+<div class="section" id="font-map">
+<span id="pages-tool-generator-generator-config-ref-font-map-ref"></span><h2>font-map<a class="headerlink" href="#font-map" title="Permalink to this headline">¶</a></h2>
+<p>Triggers the creation of a font map needed for icon fonts. This command uses the FontForge
+package to analyze a given font. The resulting data is saved in your application package, so that
+it is possible to lookup image sources like &#64;FontAwesome/house.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;font-map&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;fonts&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;${RESPATH}/foo/fonts/fontawesome-webfont.ttf&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;prefix&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${RESPATH}&quot;</span> <span class="p">],</span>
+      <span class="s2">&quot;alias&quot;</span> <span class="o">:</span> <span class="s2">&quot;FontAwesome&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;size&quot;</span> <span class="o">:</span> <span class="mi">40</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">peer-keys: <a class="reference internal" href="#pages-tool-generator-generator-config-ref-cache"><em>cache</em></a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This key requires an external library (FontForge) to run successfully.</p>
+</div>
+<ul class="simple">
+<li><strong>fonts</strong> : map with font entries.<ul>
+<li><strong>&lt;input_font&gt;</strong> :  path to input file for the slicing; may be relative to config file location<ul>
+<li><strong>prefix</strong> <em>(required)</em> : file name prefix used for the output files; will be interpreted relative to the input file location (so a plain name will result in output files in the same directory, but you can also navigate away with <tt class="docutils literal"><span class="pre">../../....</span></tt> etc.)</li>
+<li><strong>alias</strong> : Alias used in the source identifier (i.e. FontAwesome as an alias will lead to &#64;FontAwesome/ prefixes in your image source)</li>
+<li><strong>size</strong> : pixel width that is used for the icon font by default.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="section" id="translate">
 <span id="pages-tool-generator-generator-config-ref-translate"></span><h2>translate<a class="headerlink" href="#translate" title="Permalink to this headline">¶</a></h2>
 <p>(Re-)generate the .po files (usually located in <tt class="docutils literal"><span class="pre">source/translation</span></tt>) from source classes. Takes a map. The source classes of the  specified name space are scanned for translatable strings. Those strings are extracted and put into map files (.po files), one for each language. Those .po files can then be edited to contain the proper translations of the source strings. For a new locale, a new file will be generated. For existing .po files, re-running the job will add and remove entries as appropriate, but otherwise keep existing translations.</p>
@@ -1622,6 +1661,7 @@ can be contacted for which the configuration is being generated. (default: <em>h
 <li><a class="reference internal" href="#run">run</a></li>
 <li><a class="reference internal" href="#shell">shell</a></li>
 <li><a class="reference internal" href="#slice-images">slice-images</a></li>
+<li><a class="reference internal" href="#font-map">font-map</a></li>
 <li><a class="reference internal" href="#translate">translate</a></li>
 <li><a class="reference internal" href="#use">use</a></li>
 <li><a class="reference internal" href="#validation-config">validation-config</a></li>
