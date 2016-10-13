@@ -154,15 +154,12 @@
 <p>Let's assume you found this wonderful JavaScript library for charting, called <em>PonyCharts</em>. It is available as minified <em>ponycharts.js</em> download from the project's web site. It exposes an API for creating and manipulating charts, and you want ot use such charts as part of your qooxdoo application. This means calling into the library's API from your qooxdoo code, which in turn means the library has to be loaded ahead of your code in the browser.</p>
 <ol class="arabic">
 <li><p class="first">As a first step, copy the <em>.js</em> file into your app's resource tree, e.g. as</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="o">/</span><span class="nx">resource</span><span class="o">/</span><span class="nx">ponycharts</span><span class="o">/</span><span class="nx">ponycharts</span><span class="p">.</span><span class="nx">js</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="o">/</span><span class="nx">resource</span><span class="o">/</span><span class="nx">ponycharts</span><span class="o">/</span><span class="nx">ponycharts</span><span class="p">.</span><span class="nx">js</span>
 </pre></div>
 </div>
-</div></blockquote>
 </li>
 <li><p class="first">Then, make sure your new resource is used by your application code. The main consequence of this is that the <em>.js</em> file will be copied over to the build tree of your application, and is being made known to ${qooxdoo}'s ResourceManager. You achieve that by adding an <em>&#64;asset</em> hint to the main class of your application or library.</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * This is the main class of your custom application &quot;foo&quot;.</span>
 <span class="cm"> *</span>
 <span class="cm"> * @asset(foo/*)</span>
@@ -172,22 +169,16 @@
     <span class="p">...</span>
 </pre></div>
 </div>
-</div></blockquote>
-</li>
-</ol>
 <p>It makes sense to add the <em>.js</em> file under its own directory, thereby creating a namespace for it. This allows you to use wildcards should the third-party lib consist of multiple files (e.g. comes with an <em>.css</em> file, images, etc.). You could then write</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * ...</span>
 <span class="cm"> * @asset(ponycharts/*)</span>
 <span class="cm"> */</span>
 </pre></div>
 </div>
-</div></blockquote>
-<ol class="arabic" start="3">
+</li>
 <li><p class="first">Make sure the PonyCharts <em>.js</em> file is loaded before your application code. A simple way to achieve this is to use the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-add-script"><em>add-script</em></a> config key. In your <cite>config.json</cite>, under <em>jobs</em>, add a <em>common</em> job like this.</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;common&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;common&quot;</span> <span class="o">:</span> <span class="p">{</span>
     <span class="s2">&quot;add-script&quot;</span> <span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
             <span class="s2">&quot;uri&quot;</span> <span class="o">:</span> <span class="s2">&quot;resource/ponycharts/ponycharts.js&quot;</span>
@@ -196,10 +187,9 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
+<p>This will assure the lib is loaded in source and build versions of your app before your code starts. You can now code happily against PonyChart's API.</p>
 </li>
 </ol>
-<p>This will assure the lib is loaded in source and build versions of your app before your code starts. You can now code happily against PonyChart's API.</p>
 </div>
 <div class="section" id="wrapping-the-third-party-code-in-an-own-qooxdoo-library">
 <h2>Wrapping the third-party code in an own qooxdoo library<a class="headerlink" href="#wrapping-the-third-party-code-in-an-own-qooxdoo-library" title="Permalink to this headline">¶</a></h2>
@@ -210,40 +200,80 @@
 <li>Exposing the package's API through a qooxdoo class.</li>
 <li>Automatic dependency management wherever the wrapper class is used.</li>
 </ul>
-<p>Here are the necessary steps.</p>
+<div class="section" id="step-by-step-instructions">
+<h3>Step-by-Step Instructions<a class="headerlink" href="#step-by-step-instructions" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Create a fresh qooxdoo project using <cite>create-application.py</cite>.</p>
 </li>
-<li><p class="first">As before, copy the external package's files to a suitable place under the <cite>resource</cite> folder, e.g. <cite>source/resource/ponycharts/ponycharts.js</cite></p>
+<li><p class="first">As in the approach above, copy the external package's files to a suitable place under the <cite>resource</cite> folder, e.g. <cite>source/resource/ponycharts/ponycharts.js</cite>.</p>
 </li>
-<li><p class="first">Add an <cite>&#64;asset</cite> hint in the project's main class</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
+<li><p class="first">Likewise, add an <cite>&#64;asset</cite> hint in the library's main class to include the external package as a resource (full example further below).</p>
+</li>
+<li><p class="first">Add code to this class that loads the external package, does necessary initialization and potentially adds a qooxdoo-ish API to it.</p>
+<p>There is a framework class to help you with the loading part, <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.util.DynamicScriptLoader">qx.util.DynamicScriptLoader</a>, which does most of the work to make the package available in the current browser context. Using this, here is how your wrapper class may look like:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * This is the main class of the PonyCharts wrapper.</span>
 <span class="cm"> *</span>
-<span class="cm"> * @asset(ponycharts/ponycharts.js)</span>
+<span class="cm"> * @asset(ponycharts/*)</span>
 <span class="cm"> */</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;ponycharts.PonyCharts&quot;</span><span class="p">,</span>
-    <span class="p">...</span>
+<span class="p">{</span>
+  <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nb">Object</span><span class="p">,</span>
+
+  <span class="nx">construct</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// initialize the script loading</span>
+    <span class="kd">var</span> <span class="nx">dynLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">DynamicScriptLoader</span><span class="p">([</span>
+        <span class="s2">&quot;ponycharts/ponycharts.js&quot;</span>
+    <span class="p">]);</span>
+
+    <span class="nx">dynLoader</span><span class="p">.</span><span class="nx">addListenerOnce</span><span class="p">(</span><span class="s1">&#39;ready&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;all scripts have been loaded!&quot;</span><span class="p">);</span>
+      <span class="nx">ThePonyChartsTopLevelSymbol</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+    <span class="p">});</span>
+
+    <span class="nx">dynLoader</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+      <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getData</span><span class="p">();</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;failed to load &quot;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">script</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">dynLoader</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+  <span class="p">},</span>
+
+  <span class="nx">members</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">paint</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">ThePonyChartsTopLevelSymbol</span><span class="p">.</span><span class="nx">paint_demo</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
+<p>See <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.util.DynamicScriptLoader">qx.util.DynamicScriptLoader</a> for full details.</p>
 </li>
-<li><p class="first">Add code this class that loads <cite>ponycharts.js</cite>, does necessary initialization, and adds a qooxdoo-ish API to it.</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">TBD</span>
+<li><p class="first">Add the new qooxdoo library to your main application's configuration. In its <em>config.json</em>, add under the <em>jobs</em> key</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="s2">&quot;library&quot;</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="s2">&quot;path&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;path_to_ponycharts_lib&gt;/Manifest.json&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
 </li>
 <li><p class="first">In the using qooxdoo application, call the correpsonding methods of the wrapper class.</p>
-<blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">TBD</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;foo.Application&quot;</span><span class="p">,</span>
+<span class="p">{</span>
+  <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Application</span><span class="p">,</span>
+
+  <span class="nx">construct</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">myPonyCharts</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ponyCharts</span><span class="p">.</span><span class="nx">PonyCharts</span><span class="p">();</span>
+    <span class="nx">myPonyCharts</span><span class="p">.</span><span class="nx">paint</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
 </li>
 </ol>
+<p>This should give you a basic outline how you can wrap an external package as a qooxdoo library. You can now use the library for multiple projects, or even publish it as a contribution.</p>
+</div>
 </div>
 </div>
 
@@ -263,7 +293,10 @@
   <ul>
 <li><a class="reference internal" href="#">Using non-qooxdoo, third-party libraries</a><ul>
 <li><a class="reference internal" href="#using-the-third-party-library-like-a-resource-of-your-application">Using the third-party library like a resource of your application</a></li>
-<li><a class="reference internal" href="#wrapping-the-third-party-code-in-an-own-qooxdoo-library">Wrapping the third-party code in an own qooxdoo library</a></li>
+<li><a class="reference internal" href="#wrapping-the-third-party-code-in-an-own-qooxdoo-library">Wrapping the third-party code in an own qooxdoo library</a><ul>
+<li><a class="reference internal" href="#step-by-step-instructions">Step-by-Step Instructions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
