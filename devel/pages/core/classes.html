@@ -256,12 +256,13 @@
 <li><em>protected</em>: members start with a single underscore <tt class="docutils literal"><span class="pre">_</span></tt></li>
 <li><em>private</em>: members start with a double underscore <tt class="docutils literal"><span class="pre">__</span></tt></li>
 </ul>
-<p>There are some possibilities to enforce or at least check the various degrees of accessibility:</p>
-<ul class="simple">
-<li>automatic renaming of private members in the build version could trigger errors when testing the final app</li>
-<li>checking  instance of <tt class="docutils literal"><span class="pre">this</span></tt> in protected methods</li>
-<li>...</li>
-</ul>
+<p>In the source version of an app, these conventions only notify the programmer
+of the type of access that is intended, but there is no prevention of
+accessing them &quot;incorrectly.&quot; In the build version, however, <em>private</em> member
+names are obfuscated, so they are not easily accessible outside of their own
+class. <em>Be aware that programs where private members are accessed from outside
+of their own class will work in the source version, but will fail to work in
+the build version!</em></p>
 </div>
 <div class="section" id="special-types-of-classes">
 <span id="pages-classes-special-types-of-classes"></span><h3>Special Types of Classes<a class="headerlink" href="#special-types-of-classes" title="Permalink to this headline">¶</a></h3>
