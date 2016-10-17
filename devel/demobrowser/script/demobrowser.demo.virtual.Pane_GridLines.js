@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Pane_GridLines.e8687b17cf1d.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Pane_GridLines.6b04c76984f1.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9659,17 +9659,17 @@ else {return T.rangeStart+T.firstItemSize+(S-T.startIndex-1)*this.defaultItemSiz
 }});}
 )();
 (function(){var a="qx.ui.virtual.layer.Abstract",b="abstract",c="Abstract method '_fullUpdate' called!";qx.Class.define(a,{extend:qx.ui.core.Widget,type:b,implement:[qx.ui.virtual.core.ILayer],construct:function(){qx.ui.core.Widget.call(this);this.__jI={};}
-,properties:{anonymous:{refine:true,init:true}},members:{__jI:null,__bU:null,__xB:null,__xC:null,__xb:null,__oB:null,getFirstRow:function(){return this.__xB;}
-,getFirstColumn:function(){return this.__xC;}
+,properties:{anonymous:{refine:true,init:true}},members:{__jI:null,__bU:null,__xC:null,__xD:null,__xb:null,__oB:null,getFirstRow:function(){return this.__xC;}
+,getFirstColumn:function(){return this.__xD;}
 ,getRowSizes:function(){return this.__xb||[];}
 ,getColumnSizes:function(){return this.__oB||[];}
 ,syncWidget:function(e){if(!this.getContentElement().getDomElement()){return;}
 ;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow&&this.__jI.updateLayerData){this._fullUpdate.apply(this,this.__bU);}
 else if(this.__jI.updateLayerWindow){this._updateLayerWindow.apply(this,this.__bU);}
 else if(this.__jI.updateLayerData&&this.__xb){this._updateLayerData();}
-;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow){var d=this.__bU;this.__xB=d[0];this.__xC=d[1];this.__xb=d[2];this.__oB=d[3];}
+;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow){var d=this.__bU;this.__xC=d[0];this.__xD=d[1];this.__xb=d[2];this.__oB=d[3];}
 ;this.__jI={};}
-,_updateLayerData:function(){this._fullUpdate(this.__xB,this.__xC,this.__xb,this.__oB);}
+,_updateLayerData:function(){this._fullUpdate(this.__xC,this.__xD,this.__xb,this.__oB);}
 ,_fullUpdate:function(g,i,h,f){throw new Error(c);}
 ,_updateLayerWindow:function(k,m,l,j){this._fullUpdate(k,m,l,j);}
 ,updateLayerData:function(){this.__jI.updateLayerData=true;qx.ui.core.queue.Widget.add(this);}
@@ -9680,29 +9680,29 @@ else if(this.__jI.updateLayerData&&this.__xb){this._updateLayerData();}
 )();
 (function(){var a="</div>",b="background-color:",c="horizontal",d="top:",e="",f="height: ",g="position: absolute;",h="gray",i="qx.debug",j="width: 100%;",k="width: ",l="height: 100%;",m="<div style='",n="'>",o="qx.ui.virtual.layer.GridLines",p="left:",q="px;",r="html",s="Color",t="PositiveInteger",u="top: 0px;";qx.Class.define(o,{extend:qx.ui.virtual.layer.Abstract,construct:function(w,z,v){qx.ui.virtual.layer.Abstract.call(this);this.setZIndex(11);if(z){this.setDefaultLineColor(z);}
 ;if(v!==undefined){this.setDefaultLineSize(v);}
-;this.__Cr=[];this.__Cs=[];this._isHorizontal=(w||c)==c;}
-,properties:{defaultLineColor:{init:h,check:s,themeable:true},defaultLineSize:{init:1,check:t,themeable:true}},members:{__Cr:null,__Cs:null,isHorizontal:function(){return this._isHorizontal;}
+;this.__Cs=[];this.__Ct=[];this._isHorizontal=(w||c)==c;}
+,properties:{defaultLineColor:{init:h,check:s,themeable:true},defaultLineSize:{init:1,check:t,themeable:true}},members:{__Cs:null,__Ct:null,isHorizontal:function(){return this._isHorizontal;}
 ,setLineColor:function(B,A){if(qx.core.Environment.get(i)){qx.core.Assert.assertPositiveNumber(B);qx.core.Assert.assertString(A);}
-;this.__Cr[B]=A;if(this.__Ct(B)){this.updateLayerData();}
+;this.__Cs[B]=A;if(this.__Cu(B)){this.updateLayerData();}
 ;}
 ,setLineSize:function(C,D){if(qx.core.Environment.get(i)){qx.core.Assert.assertPositiveInteger(C);qx.core.Assert.assertPositiveInteger(D);}
-;this.__Cs[C]=D;if(this.__Ct(C)){this.updateLayerData();}
+;this.__Ct[C]=D;if(this.__Cu(C)){this.updateLayerData();}
 ;}
-,__Ct:function(E){if(this._isHorizontal){var I=this.getFirstColumn();var G=I+this.getColumnSizes().length-1;return E>=I&&E<=G;}
+,__Cu:function(E){if(this._isHorizontal){var I=this.getFirstColumn();var G=I+this.getColumnSizes().length-1;return E>=I&&E<=G;}
 else {var H=this.getFirstRow();var F=H+this.getRowSizes().length-1;return E>=H&&E<=F;}
 ;}
-,getLineSize:function(J){return this.__Cs[J]||this.getDefaultLineSize();}
-,getLineColor:function(K){return this.__Cr[K]||this.getDefaultLineColor();}
-,__Cu:function(P,M,O){var top=0;var L,N;for(var y=0;y<O.length-1;y++ ){L=this.getLineColor(M+y);N=this.getLineSize(M+y);top+=O[y];P.push(m,g,f+N+q,j,d,top-((N>1)?Math.floor(N/2):1),q,b,L,n,a);}
+,getLineSize:function(J){return this.__Ct[J]||this.getDefaultLineSize();}
+,getLineColor:function(K){return this.__Cs[K]||this.getDefaultLineColor();}
+,__Cv:function(P,M,O){var top=0;var L,N;for(var y=0;y<O.length-1;y++ ){L=this.getLineColor(M+y);N=this.getLineSize(M+y);top+=O[y];P.push(m,g,f+N+q,j,d,top-((N>1)?Math.floor(N/2):1),q,b,L,n,a);}
 ;}
-,__Cv:function(T,Q,S){var V=0;var R,U;for(var x=0;x<S.length-1;x++ ){R=this.getLineColor(Q+x);U=this.getLineSize(Q+x);V+=S[x];T.push(m,g,k+U+q,l,u,p,V-((U>1)?Math.floor(U/2):1),q,b,R,n,a);}
+,__Cw:function(T,Q,S){var V=0;var R,U;for(var x=0;x<S.length-1;x++ ){R=this.getLineColor(Q+x);U=this.getLineSize(Q+x);V+=S[x];T.push(m,g,k+U+q,l,u,p,V-((U>1)?Math.floor(U/2):1),q,b,R,n,a);}
 ;}
-,_fullUpdate:function(ba,bb,X,W){var Y=[];if(this._isHorizontal){this.__Cu(Y,ba,X);}
-else {this.__Cv(Y,bb,W);}
+,_fullUpdate:function(ba,bb,X,W){var Y=[];if(this._isHorizontal){this.__Cv(Y,ba,X);}
+else {this.__Cw(Y,bb,W);}
 ;this.getContentElement().setAttribute(r,Y.join(e));}
 ,_updateLayerWindow:function(be,bf,bg,bd){var bh=be!==this.getFirstRow()||bg.length!==this.getRowSizes().length;var bc=bf!==this.getFirstColumn()||bd.length!==this.getColumnSizes().length;if((this._isHorizontal&&bh)||(!this._isHorizontal&&bc)){this._fullUpdate(be,bf,bg,bd);}
 ;}
-},destruct:function(){this.__Cr=this.__Cs=null;}
+},destruct:function(){this.__Cs=this.__Ct=null;}
 });}
 )();
 (function(){var a="JosefinSlab",b="Verdana",c="qx/decoration/Indigo/font/JosefinSlab-SemiBold.ttf",d="qx/decoration/Indigo/font/JosefinSlab-SemiBold.woff",e="Lucida Grande",f="sans-serif",g="qx.theme.indigo.Font",h="monospace",i="font",j="serif",k="DejaVu Sans",l="Courier New",m="DejaVu Sans Mono";qx.Theme.define(g,{fonts:{"default":{size:12,family:[e,k,b,f],color:i,lineHeight:1.8},"bold":{size:12,family:[e,k,b,f],bold:true,color:i,lineHeight:1.8},"headline":{size:22,family:[j],sources:[{family:a,source:[d,c]}]},"small":{size:11,family:[e,k,b,f],color:i,lineHeight:1.8},"monospace":{size:11,family:[m,l,h],color:i,lineHeight:1.8}}});}

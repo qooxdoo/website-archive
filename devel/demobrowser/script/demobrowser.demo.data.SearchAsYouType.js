@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SearchAsYouType.ce67b75edc7b.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SearchAsYouType.4a0b8252a9ca.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10227,21 +10227,21 @@ else if(bQ.length<this.__ui.length){for(var j=bQ.length;j<this.__ui.length;j++ )
 ,filter:null},destruct:function(){this.__o=null;}
 });}
 )();
-(function(){var a="number",b="qx.util.TimerManager",c="interval",d="singleton";qx.Class.define(b,{extend:qx.core.Object,type:d,statics:{__xS:[],__xT:{},__sB:0},members:{__xU:false,start:function(h,g,j,e,k){if(typeof k!=a){k=g||0;}
-;var f=(new Date()).getTime()+k;this.self(arguments).__xT[ ++this.self(arguments).__sB]={callback:h,userData:e||null,expireAt:f,recurTime:g,context:j||this};this.__xV(f,this.self(arguments).__sB);return this.self(arguments).__sB;}
-,stop:function(l){var m=this.self(arguments).__xS;var length=m.length;for(var i=0;i<length;i++ ){if(m[i]==l){m.splice(i,1);break;}
+(function(){var a="number",b="qx.util.TimerManager",c="interval",d="singleton";qx.Class.define(b,{extend:qx.core.Object,type:d,statics:{__xT:[],__xU:{},__sB:0},members:{__xV:false,start:function(h,g,j,e,k){if(typeof k!=a){k=g||0;}
+;var f=(new Date()).getTime()+k;this.self(arguments).__xU[ ++this.self(arguments).__sB]={callback:h,userData:e||null,expireAt:f,recurTime:g,context:j||this};this.__xW(f,this.self(arguments).__sB);return this.self(arguments).__sB;}
+,stop:function(l){var m=this.self(arguments).__xT;var length=m.length;for(var i=0;i<length;i++ ){if(m[i]==l){m.splice(i,1);break;}
 ;}
-;delete this.self(arguments).__xT[l];if(m.length==0&&this.__xU){qx.event.Idle.getInstance().removeListener(c,this.__xW,this);this.__xU=false;}
+;delete this.self(arguments).__xU[l];if(m.length==0&&this.__xV){qx.event.Idle.getInstance().removeListener(c,this.__xX,this);this.__xV=false;}
 ;}
-,__xV:function(n,q){var p=this.self(arguments).__xS;var o=this.self(arguments).__xT;var length=p.length;for(var i=0;i<length;i++ ){if(o[p[i]].expireAt>n){p.splice(i,0,q);break;}
+,__xW:function(n,q){var p=this.self(arguments).__xT;var o=this.self(arguments).__xU;var length=p.length;for(var i=0;i<length;i++ ){if(o[p[i]].expireAt>n){p.splice(i,0,q);break;}
 ;}
 ;if(p.length==length){p.push(q);}
-;if(!this.__xU){qx.event.Idle.getInstance().addListener(c,this.__xW,this);this.__xU=true;}
+;if(!this.__xV){qx.event.Idle.getInstance().addListener(c,this.__xX,this);this.__xV=true;}
 ;}
-,__xW:function(){var s=(new Date()).getTime();var u=this.self(arguments).__xS;var t=this.self(arguments).__xT;while(u.length>0&&t[u[0]].expireAt<=s){var w=u.shift();var r=t[w];r.callback.call(r.context,r.userData,w);if(r.recurTime&&t[w]){var v=(new Date()).getTime();r.expireAt=v+r.recurTime;this.__xV(r.expireAt,w);}
+,__xX:function(){var s=(new Date()).getTime();var u=this.self(arguments).__xT;var t=this.self(arguments).__xU;while(u.length>0&&t[u[0]].expireAt<=s){var w=u.shift();var r=t[w];r.callback.call(r.context,r.userData,w);if(r.recurTime&&t[w]){var v=(new Date()).getTime();r.expireAt=v+r.recurTime;this.__xW(r.expireAt,w);}
 else {delete t[w];}
 ;}
-;if(u.length==0&&this.__xU){qx.event.Idle.getInstance().removeListener(c,this.__xW,this);this.__xU=false;}
+;if(u.length==0&&this.__xV){qx.event.Idle.getInstance().removeListener(c,this.__xX,this);this.__xV=false;}
 ;}
 }});}
 )();

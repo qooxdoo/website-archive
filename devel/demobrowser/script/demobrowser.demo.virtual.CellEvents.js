@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.18df3ed2e9d7.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.65171fa20b68.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9664,17 +9664,17 @@ else {return T.rangeStart+T.firstItemSize+(S-T.startIndex-1)*this.defaultItemSiz
 }});}
 )();
 (function(){var a="qx.ui.virtual.layer.Abstract",b="abstract",c="Abstract method '_fullUpdate' called!";qx.Class.define(a,{extend:qx.ui.core.Widget,type:b,implement:[qx.ui.virtual.core.ILayer],construct:function(){qx.ui.core.Widget.call(this);this.__jI={};}
-,properties:{anonymous:{refine:true,init:true}},members:{__jI:null,__bU:null,__xB:null,__xC:null,__xb:null,__oB:null,getFirstRow:function(){return this.__xB;}
-,getFirstColumn:function(){return this.__xC;}
+,properties:{anonymous:{refine:true,init:true}},members:{__jI:null,__bU:null,__xC:null,__xD:null,__xb:null,__oB:null,getFirstRow:function(){return this.__xC;}
+,getFirstColumn:function(){return this.__xD;}
 ,getRowSizes:function(){return this.__xb||[];}
 ,getColumnSizes:function(){return this.__oB||[];}
 ,syncWidget:function(e){if(!this.getContentElement().getDomElement()){return;}
 ;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow&&this.__jI.updateLayerData){this._fullUpdate.apply(this,this.__bU);}
 else if(this.__jI.updateLayerWindow){this._updateLayerWindow.apply(this,this.__bU);}
 else if(this.__jI.updateLayerData&&this.__xb){this._updateLayerData();}
-;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow){var d=this.__bU;this.__xB=d[0];this.__xC=d[1];this.__xb=d[2];this.__oB=d[3];}
+;if(this.__jI.fullUpdate||this.__jI.updateLayerWindow){var d=this.__bU;this.__xC=d[0];this.__xD=d[1];this.__xb=d[2];this.__oB=d[3];}
 ;this.__jI={};}
-,_updateLayerData:function(){this._fullUpdate(this.__xB,this.__xC,this.__xb,this.__oB);}
+,_updateLayerData:function(){this._fullUpdate(this.__xC,this.__xD,this.__xb,this.__oB);}
 ,_fullUpdate:function(g,i,h,f){throw new Error(c);}
 ,_updateLayerWindow:function(k,m,l,j){this._fullUpdate(k,m,l,j);}
 ,updateLayerData:function(){this.__jI.updateLayerData=true;qx.ui.core.queue.Widget.add(this);}

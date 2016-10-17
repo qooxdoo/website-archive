@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.1952cf81492c.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.e2d4d51ebcb1.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5228,8 +5228,8 @@ catch(F){continue;}
 ,unsubscribe:function(o,n,p){return this.getInstance().unsubscribe(o,n,p);}
 ,dispatch:function(q){return this.getInstance().dispatch.apply(this.getInstance(),arguments);}
 ,dispatchByName:function(name,r){return this.getInstance().dispatchByName.apply(this.getInstance(),arguments);}
-},construct:function(){this.__xY={};}
-,members:{__xY:null,getSubscriptions:function(){return this.__xY;}
+},construct:function(){this.__ya={};}
+,members:{__ya:null,getSubscriptions:function(){return this.__ya;}
 ,subscribe:function(t,s,v){if(!t||typeof s!=a){this.error(d+[t,s,v]);return false;}
 ;var u=this.getSubscriptions();if(this.checkSubscription(t)){if(this.checkSubscription(t,s,v)){this.warn(e+t);return false;}
 ;u[t].push({subscriber:s,context:v||null});return true;}
@@ -5248,14 +5248,14 @@ else {if(!D){D=null;}
 while(i);}
 ;}
 ;return false;}
-,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__ya(G[K],L);I=true;}
+,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__yb(G[K],L);I=true;}
 ;}
-else {if(K===H){this.__ya(G[H],L);I=true;}
+else {if(K===H){this.__yb(G[H],L);I=true;}
 ;}
 ;}
 ;return I;}
 ,dispatchByName:function(name,N){var M=new qx.event.message.Message(name,N);var O=this.dispatch(M);M.dispose();M=null;return O;}
-,__ya:function(Q,P){for(var i=0;i<Q.length;i++ ){var S=Q[i].subscriber;var R=Q[i].context;if(R&&R.isDisposed){if(R.isDisposed()){Q.splice(i,1);i-- ;}
+,__yb:function(Q,P){for(var i=0;i<Q.length;i++ ){var S=Q[i].subscriber;var R=Q[i].context;if(R&&R.isDisposed){if(R.isDisposed()){Q.splice(i,1);i-- ;}
 else {S.call(R,P);}
 ;}
 else {S.call(R,P);}
