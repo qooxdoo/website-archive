@@ -172,6 +172,18 @@
 </pre></div>
 </div>
 <p>The listener now shows an alert box which should present the identification ID (classname + hash code) of the drag target. Theoretically this could already be used to transfer data from A to B.</p>
+<p>A common need is to retrieve information from the model of the specific list
+item which was dragged from <tt class="docutils literal"><span class="pre">dragTarget</span></tt> which is an instance of
+<tt class="docutils literal"><span class="pre">qx.ui.form.List</span></tt>. This can be easily accomplished in the <tt class="docutils literal"><span class="pre">drop</span></tt> event
+handler, using the event argument which provides a manager which provides the
+actual drag target (the <tt class="docutils literal"><span class="pre">qx.ui.form.ListItem</span></tt>).</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">dropTarget</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">listItem</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getManager</span><span class="p">().</span><span class="nx">getDragTarget</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">listItem</span><span class="p">.</span><span class="nx">getModel</span><span class="p">();</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="data-handling">
 <span id="pages-desktop-ui-dragdrop-data-handling"></span><h2>Data Handling<a class="headerlink" href="#data-handling" title="Permalink to this headline">¶</a></h2>
