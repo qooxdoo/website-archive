@@ -1,1 +1,1 @@
-# qooxdoo.github.io pages
+# qooxdoo.github.io site
