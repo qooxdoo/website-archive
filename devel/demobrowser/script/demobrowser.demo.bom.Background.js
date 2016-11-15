@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Background.8d60e9ad9fbf.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Background.766818b7447d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5954,7 +5954,7 @@ else {var cw=this.__hH[cu.pointerId];cu.delta={x:-cw.velocityX,y:-cw.velocityY,a
 ;this._stopObserver();this.__ge=this.__gf=null;}
 }});}
 )();
-(function(){var b="ease-in-out",c="Number",d="css.animation.requestframe",e="qx.bom.AnimationFrame",f="frame",g="end",h="linear",j="ease-in",k="ease-out";qx.Bootstrap.define(e,{extend:qx.event.Emitter,events:{"end":undefined,"frame":c},members:{__gP:false,startSequence:function(l){this.__gP=false;var m=+(new Date());var n=function(p){if(this.__gP){this.id=null;return;}
+(function(){var b="ease-in-out",c="Number",d="css.animation.requestframe",e="qx.bom.AnimationFrame",f="frame",g="end",h="linear",j="ease-in",k="ease-out";qx.Bootstrap.define(e,{extend:qx.event.Emitter,events:{"end":undefined,"frame":c},members:{__gP:false,startSequence:function(l){this.__gP=false;var m=(window.performance&&performance.now)?(performance.now()+qx.bom.AnimationFrame.__gQ):Date.now();var n=function(p){if(this.__gP){this.id=null;return;}
 ;if(p>=m+l){this.emit(g);this.id=null;}
 else {var o=Math.max(p-m,0);this.emit(f,o);this.id=qx.bom.AnimationFrame.request(n,this);}
 ;}
@@ -5968,7 +5968,7 @@ else {var a=[-0.0021,0.2472,9.8054,-21.6869,17.7611,-5.1226];}
 ;var y=0;for(var i=0;i<a.length;i++ ){y+=a[i]*Math.pow(x,i);}
 ;return y;}
 ,request:function(u,t){var s=qx.core.Environment.get(d);var r=function(v){if(v<1e10){v=qx.bom.AnimationFrame.__gQ+v;}
-;v=v||+(new Date());u.call(t,v);}
+;v=v||Date.now();u.call(t,v);}
 ;if(s){return window[s](r);}
 else {return window.setTimeout(function(){r();}
 ,qx.bom.AnimationFrame.TIMEOUT);}

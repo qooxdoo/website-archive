@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SingleValueBinding.bb91a05b3b15.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SingleValueBinding.493b52b95bd7.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5525,7 +5525,7 @@ else {bm+=bj+p+bk+c;}
 ;return bt;}
 }});}
 )();
-(function(){var b="ease-in-out",c="Number",d="css.animation.requestframe",e="qx.bom.AnimationFrame",f="frame",g="end",h="linear",j="ease-in",k="ease-out";qx.Bootstrap.define(e,{extend:qx.event.Emitter,events:{"end":undefined,"frame":c},members:{__gP:false,startSequence:function(l){this.__gP=false;var m=+(new Date());var n=function(p){if(this.__gP){this.id=null;return;}
+(function(){var b="ease-in-out",c="Number",d="css.animation.requestframe",e="qx.bom.AnimationFrame",f="frame",g="end",h="linear",j="ease-in",k="ease-out";qx.Bootstrap.define(e,{extend:qx.event.Emitter,events:{"end":undefined,"frame":c},members:{__gP:false,startSequence:function(l){this.__gP=false;var m=(window.performance&&performance.now)?(performance.now()+qx.bom.AnimationFrame.__gQ):Date.now();var n=function(p){if(this.__gP){this.id=null;return;}
 ;if(p>=m+l){this.emit(g);this.id=null;}
 else {var o=Math.max(p-m,0);this.emit(f,o);this.id=qx.bom.AnimationFrame.request(n,this);}
 ;}
@@ -5539,7 +5539,7 @@ else {var a=[-0.0021,0.2472,9.8054,-21.6869,17.7611,-5.1226];}
 ;var y=0;for(var i=0;i<a.length;i++ ){y+=a[i]*Math.pow(x,i);}
 ;return y;}
 ,request:function(u,t){var s=qx.core.Environment.get(d);var r=function(v){if(v<1e10){v=qx.bom.AnimationFrame.__gQ+v;}
-;v=v||+(new Date());u.call(t,v);}
+;v=v||Date.now();u.call(t,v);}
 ;if(s){return window[s](r);}
 else {return window.setTimeout(function(){r();}
 ,qx.bom.AnimationFrame.TIMEOUT);}
@@ -9188,8 +9188,8 @@ else {u=null;}
 ;};}
 }});}
 )();
-(function(){var a="changeNames",b="changeName",c="Validation Error: ",d="- ",e="",f="changeChild",g="qx.data.Array",h="changeColor",j="Marge",k="AFFE",l="is no number (parseFloat says so!).",m="Homer",n="\n",o="demobrowser.demo.data.model.Node",p="__c",q="String",r="changeName2",s="changeChildren";qx.Class.define(o,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.setChildren(new qx.data.Array());}
-,properties:{children:{check:g,event:s},child:{check:o,event:f,nullable:true},names:{check:g,event:a,init:new qx.data.Array(m,j)},name:{check:q,init:k,event:b},name2:{check:q,event:r},number:{init:10,validate:p},color:{event:h,nullable:true}},members:{__c:function(t){if(!isNaN(parseFloat(t))){if(/^\d+$/.test(t)){return;}
+(function(){var a="changeNames",b="changeName",c="Validation Error: ",d="- ",e="",f="changeChild",g="qx.data.Array",h="changeColor",j="Marge",k="AFFE",l="is no number (parseFloat says so!).",m="Homer",n="\n",o="__i",p="demobrowser.demo.data.model.Node",q="String",r="changeName2",s="changeChildren";qx.Class.define(p,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.setChildren(new qx.data.Array());}
+,properties:{children:{check:g,event:s},child:{check:p,event:f,nullable:true},names:{check:g,event:a,init:new qx.data.Array(m,j)},name:{check:q,init:k,event:b},name2:{check:q,event:r},number:{init:10,validate:o},color:{event:h,nullable:true}},members:{__i:function(t){if(!isNaN(parseFloat(t))){if(/^\d+$/.test(t)){return;}
 ;}
 ;throw new qx.core.ValidationError(c+t+l);}
 ,toString:function(v){if(v==undefined){v=0;}
