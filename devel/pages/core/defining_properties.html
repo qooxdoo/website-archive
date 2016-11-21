@@ -441,7 +441,7 @@
 
 <span class="nx">members</span> <span class="o">:</span>
 <span class="p">{</span>
-   <span class="nx">_transformWidth</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span>
+   <span class="nx">_transformWidth</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">oldValue</span><span class="p">)</span>
    <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">Type</span><span class="p">.</span><span class="nx">isString</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">)</span>
       <span class="p">{</span>
@@ -453,6 +453,7 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>The transform function is passed a second parameter which is the value previously set - note that the first time that transform is called, the oldValue parameter will be undefined</p>
 </div>
 </div>
 <div class="section" id="validation-of-incoming-values">
