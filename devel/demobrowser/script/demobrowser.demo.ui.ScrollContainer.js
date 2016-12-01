@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.ScrollContainer.6a024210f990.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.ScrollContainer.30130412fd31.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8066,6 +8066,7 @@ else {O=p+K+i;}
 ;this.__lI=j;return this;}
 ,setValue:function(l){this._setProperty(a,l);return this;}
 ,getValue:function(){return this._getProperty(a);}
+,resetValue:function(){return this._removeProperty(a);}
 }});}
 )();
 (function(){var a="text",b="function",c="px",d="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul",e="crop",f="nowrap",g="end",h="div",i="100%",j="auto",k="0",l="css.textoverflow",m="qx.debug",n="html.xul",o="value",p="visible",q="qx.bom.Label",r="",s="ellipsis",t="normal",u="inherit",v="block",w="label",x="-1000px",y="hidden",z="absolute";qx.Bootstrap.define(q,{statics:{__lJ:{fontFamily:1,fontSize:1,fontWeight:1,fontStyle:1,lineHeight:1},__lK:function(){var A=this.__lM(false);document.body.insertBefore(A,document.body.firstChild);return this._textElement=A;}
