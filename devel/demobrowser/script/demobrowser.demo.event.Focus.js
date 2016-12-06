@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Focus.5696a19e60ca.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Focus.0da9d39dc921.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4452,7 +4452,7 @@ else if(!this._isBelowTapMaxDistance(X)){var bb=this.__hU(X,Y);if(bb){X.swipe=bb
 ;}
 ,updateGestureTarget:function(bk,bl){this.__hI[bk].target=bl;}
 ,__hS:function(bq,br,bn,bo,bt){var bs=bn.timeoutId;if(!bt&&this.__hL[bn.pointerId]){this.stopMomentum(this.__hL[bn.pointerId]);}
-;if((Math.abs(br)<1&&Math.abs(bq)<1)||this.__hK[bs]){delete this.__hK[bs];delete this.__hL[bn.pointerId];return;}
+;if((Math.abs(br)<1&&Math.abs(bq)<1)||this.__hK[bs]||!this.getWindow()){delete this.__hK[bs];delete this.__hL[bn.pointerId];return;}
 ;if(!bt){bt=1;var bp=2.8;br=br/bp;bq=bq/bp;}
 ;bt+=0.0006;br=br/bt;bq=bq/bt;var bm=qx.bom.AnimationFrame.request(qx.lang.Function.bind(function(bu,bv,bw,bx,by){this.__hS(bu,bv,bw,bx,by);}
 ,this,bq,br,bn,bo,bt));bq=Math.round(bq*100)/100;br=Math.round(br*100)/100;bn.delta={x:-bq,y:-br};bn.momentum=true;bn.timeoutId=bm;this.__hL[bn.pointerId]=bm;this._fireEvent(bn,h,bn.target||bo);}
@@ -5159,7 +5159,8 @@ else if(e.deltaY!==undefined){y=this.__ib(e.deltaY);}
 }});}
 )();
 (function(){var a="dblclick",b="mshtml",c="engine.name",d="dispose",e="useraction",f="gesturemove",g="gesturecancel",h="checkAndFireGesture",i="gesturebegin",j="qx.event.handler.Gesture",k="gesturefinish",l="browser.documentmode";qx.Class.define(j,{extend:qx.event.handler.GestureCore,implement:[qx.event.IEventHandler,qx.core.IDisposable],statics:{PRIORITY:qx.event.Registration.PRIORITY_NORMAL,SUPPORTED_TYPES:{tap:1,swipe:1,longtap:1,dbltap:1,rotate:1,pinch:1,track:1,trackstart:1,trackend:1,roll:1},GESTURE_EVENTS:[i,k,f,g],TARGET_CHECK:qx.event.IEventHandler.TARGET_DOMNODE+qx.event.IEventHandler.TARGET_DOCUMENT,IGNORE_CAN_HANDLE:true,EVENT_CLASSES:{"tap":qx.event.type.Tap,"longtap":qx.event.type.Tap,"dbltap":qx.event.type.Tap,"swipe":qx.event.type.Swipe,"rotate":qx.event.type.Rotate,"pinch":qx.event.type.Pinch,"track":qx.event.type.Track,"trackstart":qx.event.type.Track,"trackend":qx.event.type.Track,"roll":qx.event.type.Roll}},construct:function(m){this.__dn=m;this.__cJ=m.getWindow();this.__dD=this.__cJ.document;qx.event.handler.GestureCore.apply(this,[this.__dD]);}
-,members:{__dn:null,__cJ:null,__dD:null,__fY:null,__id:null,__ie:null,canHandleEvent:function(o,n){}
+,members:{__dn:null,__cJ:null,__dD:null,__fY:null,__id:null,__ie:null,getWindow:function(){return this.__cJ;}
+,canHandleEvent:function(o,n){}
 ,registerEvent:function(r,q,p){}
 ,unregisterEvent:function(u,t,s){}
 ,_initObserver:function(){this.__fY=qx.lang.Function.listener(this.checkAndFireGesture,this);qx.event.handler.Gesture.GESTURE_EVENTS.forEach(function(w){qx.event.Registration.addListener(this.__dD,w,this.__fY,this);}
