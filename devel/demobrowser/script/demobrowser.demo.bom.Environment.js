@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.5468a0dc0d26.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.38145077428f.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4021,7 +4021,7 @@ else {var N=L[3];if(!N){return O;}
 ;}
 ;var M=e;if((qx.core.Environment.get(b)==a)&&qx.core.Environment.get(d)){M=this.self(arguments).__dW[N];}
 ;return M+qx.util.LibraryManager.getInstance().get(N,p)+o+O;}
-,toDataUri:function(R){var Q=this.constructor.__u[R];var T=this.constructor.__u[Q[4]];var S;if(T){var P=T[4][R];S=m+P[h]+n+P[f]+s+P[l];}
+,toDataUri:function(R){var Q=this.constructor.__u[R];var T=Q?this.constructor.__u[Q[4]]:null;var S;if(T){var P=T[4][R];S=m+P[h]+n+P[f]+s+P[l];}
 else {S=this.toUri(R);}
 ;return S;}
 ,isFontUri:function(U){return U?U.startsWith(j):false;}
