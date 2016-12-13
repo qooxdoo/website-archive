@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorSelector.59381ec9e690.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorSelector.4ddcd255b0f3.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -907,210 +907,210 @@ else {return false;}
 ;}
 });}
 )();
-(function(){var b="of property '",c='var msg = "Invalid incoming value for property \'',d='qx.lang.Type.isString(value) && qx.util.ColorUtil.isValidPropertyValue(value)',e='value !== null && qx.theme.manager.Font.getInstance().isDynamic(value)',f="set",g="function",h=';',j="resetThemed",k='value !== null && value.nodeType === 9 && value.documentElement',m='value !== null && value.$$type === "Mixin"',n='return init;',o='var init=this.',p='(value, old);',q='value !== null && value.nodeType === 1 && value.attributes',r="var parent = this.getLayoutParent();",s="Error in property ",t='var old;',u="property",v='.check.call(this, value)',w='if((computed===undefined||computed===inherit)&&',x="();",y='.validate.call(this, value);',z='qx.core.Assert.assertInstance(value, Date, msg) || true',A='else{',B="Cannot add the non themable property '",C="if (!parent) return;",D=" in method ",E='qx.core.Assert.assertInstance(value, Error, msg) || true',F='=computed;',G='Undefined value is not allowed!',H='(backup);',I='if(',J="Invalid type for 'isEqual' attribute ",K='else ',L='=true;',M="' to the themable property group '",N='if(old===undefined)old=this.',O='if(computed===inherit){',P="]: ",Q="inherit",R='if(this.',S='return this.',T='else if(this.',U='!==inherit){',V='Is invalid!',W='if(value===undefined)prop.error(this,2,"',X='", "',Y='if(a[i].',ba='else if(computed===undefined)',bb="Malformed generated code to unwrap method: ",bc='delete this.',bd="resetRuntime",be="': ",bf=" of class ",bg='value !== null && value.nodeType !== undefined',bh='===undefined)return;',bi='value !== null && qx.theme.manager.Decoration.getInstance().isValidPropertyValue(value)',bj="Could not add check to property ",bk='function(a,b){return !!(',bl='function(a,b){return !!',bm="reset",bn="string",bo="')){",bp="module.events",bq="return this.",br='qx.core.Assert.assertPositiveInteger(value, msg) || true',bs="Code[",bt='value=this.',bu="Cannot create property group '",bv='","',bw='if(init==qx.core.Property.$$inherit)init=null;',bx='qx.core.Assert.assertInArray(value, ',by="get",bz='value !== null && value.$$type === "Interface"',bA='var inherit=prop.$$inherit;',bB=')prop.error(this,5,"',bC="var value = parent.",bD="$$useinit_",bE='computed=undefined;delete this.',bF='(value);',bG="' in class '",bH="(value);",bI=');};',bJ='this.',bK='Requires exactly one argument!',bL='",value);',bM='computed=value;',bN='}else{',bO="$$runtime_",bP="setThemed",bQ='if(this.$$initialized)prop.error(this,0,"',bR='qx.core.Assert.assertInstance(value, qx.Class.getByName("',bS='var equ=',bT="$$user_",bU='if(value===null)prop.error(this,4,"',bV='!==undefined)',bW='){',bX='!',bY='qx.core.Assert.assertArray(value, msg) || true',ca='if(computed===undefined||computed===inherit){',cb=";",cc='var a=this._getChildren();if(a)for(var i=0,l=a.length;i<l;i++){',cd='qx.core.Assert.assertPositiveNumber(value, msg) || true',ce=".prototype",cf="' including non-existing property '",cg="Boolean",ch='.isEqual.call(this,a,b);};',ci=")}",cj="(a[",ck='(computed, old, "',cl="setRuntime",cm='return value;',cn="this.",co='.check, msg)',cp="if(reg.hasListener(this, '",cq='Does not allow any arguments!',cr='\'";',cs=')a[i].',ct="()",cu=';}',cv="var a=arguments[0] instanceof Array?arguments[0]:arguments;",cw='.$$properties.',cx='value !== null && value.$$type === "Theme"',cy='if(equ.call(this,old,value))return value;',cz='if(value!==null)',cA="'!",cB="var reg=qx.event.Registration;",cC="())",cD='=value;',cE='function(a,b){return a===b;};',cF='return null;',cG='!==undefined){',cH='qx.core.Assert.assertObject(value, msg) || true',cI='");',cJ='var old=this.',cK='qx.core.Assert.assertString(value, msg) || true',cL='!==undefined&&',cM="\n",cN='var pa=this.getLayoutParent();if(pa)computed=pa.',cO="if (value===undefined) value = parent.",cP='value !== null && value.$$type === "Class"',cQ='qx.core.Assert.assertFunction(value, msg) || true',cR='old=this.',cS="', qx.event.type.Data, [computed, old]",cT='var backup=computed;',cU=".",cV='}',cW='"), msg)',cX="object",cY="$$init_",da='qx.core.Assert.assertInterface(value, qx.Interface.getByName("',db="$$theme_",dc="qx.debug.property.level",dd='if(computed===undefined)computed=null;',de='\' of class \'',df="Unknown reason: ",dg='if(arguments.length!==1)prop.error(this,1,"',dh="init",di='qx.core.Assert.assertMap(value, msg) || true',dj='!(',dk="Generating property wrappers: ",dl="'",dm='qx.core.Assert.assertNumber(value, msg) || true',dn="qx.debug",dp="reg.fireEvent(this, '",dq='Null value is not allowed!',dr='if(value!==inherit)',ds='qx.core.Assert.assertInteger(value, msg) || true',dt="value",du='var computed;',dv="shorthand",dw='computed=this.',dx="Generating property group: ",dy='qx.core.Assert.assertInstance(value, RegExp, msg) || true',dz='value !== null && value.type !== undefined',dA='value !== null && value.document',dB="",dC='throw new Error("Property ',dD="(!this.",dE='qx.core.Assert.assertBoolean(value, msg) || true',dF="qx.aspects",dG=' of an instance of ',dH="toggle",dI="refresh",dJ="$$inherit_",dK='var prop=qx.core.Property;',dL='else this.',dM='if(old===undefined)old=null;',dN="undefined",dO="boolean",dP='if(equ.call(this,old,computed))return value;',dQ=" with incoming value '",dR=')',dS='if(arguments.length!==0)prop.error(this,3,"',dT="a=qx.lang.Array.fromShortHand(qx.lang.Array.fromArguments(a));",dU='if(computed===undefined||computed==inherit)computed=null;',dV="qx.core.Property",dW="is",dX=' is not (yet) ready!");',dY="]);",ea='Could not change or apply init value after constructing phase!';qx.Bootstrap.define(dV,{statics:{__A:function(){if(qx.core.Environment.get(bp)){qx.event.type.Data;qx.event.dispatch.Direct;}
+(function(){var b="of property '",c='var msg = "Invalid incoming value for property \'',d='qx.lang.Type.isString(value) && qx.util.ColorUtil.isValidPropertyValue(value)',e='value !== null && qx.theme.manager.Font.getInstance().isDynamic(value)',f="set",g="function",h=';',j="resetThemed",k='value !== null && value.nodeType === 9 && value.documentElement',m='value !== null && value.$$type === "Mixin"',n='return init;',o='var init=this.',p='(value, old);',q='value !== null && value.nodeType === 1 && value.attributes',r="var parent = this.getLayoutParent();",s="Error in property ",t='var old;',u="property",v='.check.call(this, value)',w='if((computed===undefined||computed===inherit)&&',x="();",y='.validate.call(this, value);',z='qx.core.Assert.assertInstance(value, Date, msg) || true',A='else{',B="Cannot add the non themable property '",C="if (!parent) return;",D=" in method ",E='qx.core.Assert.assertInstance(value, Error, msg) || true',F='=computed;',G='Undefined value is not allowed!',H='(backup);',I='if(',J="Invalid type for 'isEqual' attribute ",K='else ',L='=true;',M="' to the themable property group '",N='if(old===undefined)old=this.',O='if(computed===inherit){',P="]: ",Q=',value))return value;',R="inherit",S='if(this.',T='return this.',U='else if(this.',V='!==inherit){',W='Is invalid!',X='if(value===undefined)prop.error(this,2,"',Y='", "',ba='if(a[i].',bb='else if(computed===undefined)',bc="Malformed generated code to unwrap method: ",bd='delete this.',be="resetRuntime",bf="': ",bg=" of class ",bh='value !== null && value.nodeType !== undefined',bi='===undefined)return;',bj='value !== null && qx.theme.manager.Decoration.getInstance().isValidPropertyValue(value)',bk="Could not add check to property ",bl='function(a,b){return !!(',bm='function(a,b){return !!',bn="reset",bo="string",bp="')){",bq="module.events",br="return this.",bs='qx.core.Assert.assertPositiveInteger(value, msg) || true',bt="Code[",bu='value=this.',bv="Cannot create property group '",bw='","',bx='if(init==qx.core.Property.$$inherit)init=null;',by='qx.core.Assert.assertInArray(value, ',bz="get",bA='value !== null && value.$$type === "Interface"',bB='var inherit=prop.$$inherit;',bC=')prop.error(this,5,"',bD="var value = parent.",bE="$$useinit_",bF='computed=undefined;delete this.',bG='(value);',bH="' in class '",bI="(value);",bJ=');};',bK='this.',bL='Requires exactly one argument!',bM='",value);',bN='computed=value;',bO='}else{',bP="$$runtime_",bQ="setThemed",bR='if(this.$$initialized)prop.error(this,0,"',bS='qx.core.Assert.assertInstance(value, qx.Class.getByName("',bT='var equ=',bU="$$user_",bV='if(value===null)prop.error(this,4,"',bW='!==undefined)',bX='){',bY='!',ca='qx.core.Assert.assertArray(value, msg) || true',cb='if(computed===undefined||computed===inherit){',cc=";",cd='var a=this._getChildren();if(a)for(var i=0,l=a.length;i<l;i++){',ce='qx.core.Assert.assertPositiveNumber(value, msg) || true',cf=".prototype",cg="' including non-existing property '",ch="Boolean",ci='.isEqual.call(this,a,b);};',cj=")}",ck="(a[",cl='(computed, old, "',cm="setRuntime",cn='return value;',co="this.",cp='.check, msg)',cq="if(reg.hasListener(this, '",cr='Does not allow any arguments!',cs='\'";',ct=')a[i].',cu="()",cv=';}',cw="var a=arguments[0] instanceof Array?arguments[0]:arguments;",cx='.$$properties.',cy='value !== null && value.$$type === "Theme"',cz='if(value!==null)',cA="'!",cB="var reg=qx.event.Registration;",cC="())",cD='=value;',cE='function(a,b){return a===b;};',cF='return null;',cG='!==undefined){',cH='qx.core.Assert.assertObject(value, msg) || true',cI='");',cJ='var old=this.',cK='qx.core.Assert.assertString(value, msg) || true',cL='!==undefined&&',cM="\n",cN='var pa=this.getLayoutParent();if(pa)computed=pa.',cO="if (value===undefined) value = parent.",cP='value !== null && value.$$type === "Class"',cQ='qx.core.Assert.assertFunction(value, msg) || true',cR='old=this.',cS="', qx.event.type.Data, [computed, old]",cT='var backup=computed;',cU=".",cV='}',cW='"), msg)',cX="object",cY="$$init_",da='qx.core.Assert.assertInterface(value, qx.Interface.getByName("',db="$$theme_",dc="qx.debug.property.level",dd='if(computed===undefined)computed=null;',de='\' of class \'',df="Unknown reason: ",dg='if(arguments.length!==1)prop.error(this,1,"',dh="init",di='qx.core.Assert.assertMap(value, msg) || true',dj='!(',dk="Generating property wrappers: ",dl="'",dm='qx.core.Assert.assertNumber(value, msg) || true',dn="qx.debug",dp="reg.fireEvent(this, '",dq='Null value is not allowed!',dr='if(value!==inherit)',ds='qx.core.Assert.assertInteger(value, msg) || true',dt="value",du='var computed;',dv="shorthand",dw='computed=this.',dx="Generating property group: ",dy='qx.core.Assert.assertInstance(value, RegExp, msg) || true',dz='value !== null && value.type !== undefined',dA='value !== null && value.document',dB="",dC='throw new Error("Property ',dD="(!this.",dE='qx.core.Assert.assertBoolean(value, msg) || true',dF='if(equ.call(this,this.',dG="qx.aspects",dH=' of an instance of ',dI="toggle",dJ="refresh",dK="$$inherit_",dL='var prop=qx.core.Property;',dM='else this.',dN='if(old===undefined)old=null;',dO="undefined",dP="boolean",dQ='if(equ.call(this,old,computed))return value;',dR=" with incoming value '",dS=')',dT='if(arguments.length!==0)prop.error(this,3,"',dU="a=qx.lang.Array.fromShortHand(qx.lang.Array.fromArguments(a));",dV='if(computed===undefined||computed==inherit)computed=null;',dW="qx.core.Property",dX="is",dY=' is not (yet) ready!");',ea="]);",eb='Could not change or apply init value after constructing phase!';qx.Bootstrap.define(dW,{statics:{__A:function(){if(qx.core.Environment.get(bq)){qx.event.type.Data;qx.event.dispatch.Direct;}
 ;}
-,__B:{"Boolean":dE,"String":cK,"Number":dm,"Integer":ds,"PositiveNumber":cd,"PositiveInteger":br,"Error":E,"RegExp":dy,"Object":cH,"Array":bY,"Map":di,"Function":cQ,"Date":z,"Node":bg,"Element":q,"Document":k,"Window":dA,"Event":dz,"Class":cP,"Mixin":m,"Interface":bz,"Theme":cx,"Color":d,"Decorator":bi,"Font":e},__C:{"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},$$inherit:Q,$$store:{runtime:{},user:{},theme:{},inherit:{},init:{},useinit:{}},$$method:{get:{},set:{},reset:{},init:{},refresh:{},setRuntime:{},resetRuntime:{},setThemed:{},resetThemed:{}},$$allowedKeys:{"@":cX,name:bn,dereference:dO,inheritable:dO,nullable:dO,themeable:dO,refine:dO,init:null,apply:bn,event:bn,check:null,transform:bn,deferredInit:dO,validate:null,isEqual:null},$$allowedGroupKeys:{"@":cX,name:bn,group:cX,mode:bn,themeable:dO},$$inheritable:{},__D:function(ed){var eb=this.__E(ed);if(!eb.length){var ec=function(){}
+,__B:{"Boolean":dE,"String":cK,"Number":dm,"Integer":ds,"PositiveNumber":ce,"PositiveInteger":bs,"Error":E,"RegExp":dy,"Object":cH,"Array":ca,"Map":di,"Function":cQ,"Date":z,"Node":bh,"Element":q,"Document":k,"Window":dA,"Event":dz,"Class":cP,"Mixin":m,"Interface":bA,"Theme":cy,"Color":d,"Decorator":bj,"Font":e},__C:{"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},$$inherit:R,$$store:{runtime:{},user:{},theme:{},inherit:{},init:{},useinit:{}},$$method:{get:{},set:{},reset:{},init:{},refresh:{},setRuntime:{},resetRuntime:{},setThemed:{},resetThemed:{}},$$allowedKeys:{"@":cX,name:bo,dereference:dP,inheritable:dP,nullable:dP,themeable:dP,refine:dP,init:null,apply:bo,event:bo,check:null,transform:bo,deferredInit:dP,validate:null,isEqual:null},$$allowedGroupKeys:{"@":cX,name:bo,group:cX,mode:bo,themeable:dP},$$inheritable:{},__D:function(ee){var ec=this.__E(ee);if(!ec.length){var ed=function(){}
 ;}
-else {ec=this.__F(eb);}
-;ed.prototype.$$refreshInheritables=ec;}
-,__E:function(ee){var ef=[];while(ee){var eg=ee.$$properties;if(eg){for(var name in this.$$inheritable){if(eg[name]&&eg[name].inheritable){ef.push(name);}
+else {ed=this.__F(ec);}
+;ee.prototype.$$refreshInheritables=ed;}
+,__E:function(ef){var eg=[];while(ef){var eh=ef.$$properties;if(eh){for(var name in this.$$inheritable){if(eh[name]&&eh[name].inheritable){eg.push(name);}
 ;}
 ;}
-;ee=ee.superclass;}
-;return ef;}
-,__F:function(inheritables){var inherit=this.$$store.inherit;var init=this.$$store.init;var refresh=this.$$method.refresh;var code=[r,C];for(var i=0,l=inheritables.length;i<l;i++ ){var name=inheritables[i];code.push(bC,inherit[name],cb,cO,init[name],cb,cn,refresh[name],bH);}
+;ef=ef.superclass;}
+;return eg;}
+,__F:function(inheritables){var inherit=this.$$store.inherit;var init=this.$$store.init;var refresh=this.$$method.refresh;var code=[r,C];for(var i=0,l=inheritables.length;i<l;i++ ){var name=inheritables[i];code.push(bD,inherit[name],cc,cO,init[name],cc,co,refresh[name],bI);}
 ;return new Function(code.join(dB));}
-,attachRefreshInheritables:function(eh){eh.prototype.$$refreshInheritables=function(){qx.core.Property.__D(eh);return this.$$refreshInheritables();}
+,attachRefreshInheritables:function(ei){ei.prototype.$$refreshInheritables=function(){qx.core.Property.__D(ei);return this.$$refreshInheritables();}
 ;}
-,attachMethods:function(ej,name,ei){ei.group?this.__G(ej,ei,name):this.__H(ej,ei,name);}
+,attachMethods:function(ek,name,ej){ej.group?this.__G(ek,ej,name):this.__H(ek,ej,name);}
 ,__G:function(clazz,config,name){var upname=qx.Bootstrap.firstUp(name);var members=clazz.prototype;var themeable=config.themeable===true;if(qx.core.Environment.get(dn)){if(qx.core.Environment.get(dc)>1){qx.Bootstrap.debug(dx+name);}
 ;}
 ;var setter=[];var resetter=[];if(themeable){var styler=[];var unstyler=[];}
-;var argHandler=cv;setter.push(argHandler);if(themeable){styler.push(argHandler);}
-;if(config.mode==dv){var shorthand=dT;setter.push(shorthand);if(themeable){styler.push(shorthand);}
+;var argHandler=cw;setter.push(argHandler);if(themeable){styler.push(argHandler);}
+;if(config.mode==dv){var shorthand=dU;setter.push(shorthand);if(themeable){styler.push(shorthand);}
 ;}
-;for(var i=0,a=config.group,l=a.length;i<l;i++ ){if(qx.core.Environment.get(dn)){if(!this.$$method.set[a[i]]||!this.$$method.reset[a[i]]){throw new Error(bu+name+cf+a[i]+cA);}
+;for(var i=0,a=config.group,l=a.length;i<l;i++ ){if(qx.core.Environment.get(dn)){if(!this.$$method.set[a[i]]||!this.$$method.reset[a[i]]){throw new Error(bv+name+cg+a[i]+cA);}
 ;}
-;setter.push(cn,this.$$method.set[a[i]],cj,i,dY);resetter.push(cn,this.$$method.reset[a[i]],x);if(themeable){if(qx.core.Environment.get(dn)){if(!this.$$method.setThemed[a[i]]){throw new Error(B+a[i]+M+name+dl);}
+;setter.push(co,this.$$method.set[a[i]],ck,i,ea);resetter.push(co,this.$$method.reset[a[i]],x);if(themeable){if(qx.core.Environment.get(dn)){if(!this.$$method.setThemed[a[i]]){throw new Error(B+a[i]+M+name+dl);}
 ;}
-;styler.push(cn,this.$$method.setThemed[a[i]],cj,i,dY);unstyler.push(cn,this.$$method.resetThemed[a[i]],x);}
+;styler.push(co,this.$$method.setThemed[a[i]],ck,i,ea);unstyler.push(co,this.$$method.resetThemed[a[i]],x);}
 ;}
-;this.$$method.set[name]=f+upname;members[this.$$method.set[name]]=new Function(setter.join(dB));this.$$method.reset[name]=bm+upname;members[this.$$method.reset[name]]=new Function(resetter.join(dB));if(themeable){this.$$method.setThemed[name]=bP+upname;members[this.$$method.setThemed[name]]=new Function(styler.join(dB));this.$$method.resetThemed[name]=j+upname;members[this.$$method.resetThemed[name]]=new Function(unstyler.join(dB));}
+;this.$$method.set[name]=f+upname;members[this.$$method.set[name]]=new Function(setter.join(dB));this.$$method.reset[name]=bn+upname;members[this.$$method.reset[name]]=new Function(resetter.join(dB));if(themeable){this.$$method.setThemed[name]=bQ+upname;members[this.$$method.setThemed[name]]=new Function(styler.join(dB));this.$$method.resetThemed[name]=j+upname;members[this.$$method.resetThemed[name]]=new Function(unstyler.join(dB));}
 ;}
 ,__H:function(clazz,config,name){var upname=qx.Bootstrap.firstUp(name);var members=clazz.prototype;if(qx.core.Environment.get(dn)){if(qx.core.Environment.get(dc)>1){qx.Bootstrap.debug(dk+name);}
 ;}
-;if(config.dereference===undefined&&typeof config.check===bn){config.dereference=this.__I(config.check);}
-;var method=this.$$method;var store=this.$$store;store.runtime[name]=bO+name;store.user[name]=bT+name;store.theme[name]=db+name;store.init[name]=cY+name;store.inherit[name]=dJ+name;store.useinit[name]=bD+name;method.get[name]=by+upname;members[method.get[name]]=function(){return qx.core.Property.executeOptimizedGetter(this,clazz,name,by);}
-;members[method.get[name]].$$install=function(ek){qx.core.Property.installOptimizedGetter(this,clazz,name,by,arguments);}
-;method.set[name]=f+upname;members[method.set[name]]=function(el){return qx.core.Property.executeOptimizedSetter(this,clazz,name,f,arguments);}
-;members[method.set[name]].$$install=function(em){qx.core.Property.installOptimizedSetter(this,clazz,name,f,arguments);}
-;method.reset[name]=bm+upname;members[method.reset[name]]=function(){return qx.core.Property.executeOptimizedSetter(this,clazz,name,bm);}
-;members[method.reset[name]].$$install=function(){qx.core.Property.installOptimizedSetter(this,clazz,name,bm);}
-;if(config.inheritable||config.apply||config.event||config.deferredInit){method.init[name]=dh+upname;members[method.init[name]]=function(en){return qx.core.Property.executeOptimizedSetter(this,clazz,name,dh,arguments);}
+;if(config.dereference===undefined&&typeof config.check===bo){config.dereference=this.__I(config.check);}
+;var method=this.$$method;var store=this.$$store;store.runtime[name]=bP+name;store.user[name]=bU+name;store.theme[name]=db+name;store.init[name]=cY+name;store.inherit[name]=dK+name;store.useinit[name]=bE+name;method.get[name]=bz+upname;members[method.get[name]]=function(){return qx.core.Property.executeOptimizedGetter(this,clazz,name,bz);}
+;members[method.get[name]].$$install=function(el){qx.core.Property.installOptimizedGetter(this,clazz,name,bz,arguments);}
+;method.set[name]=f+upname;members[method.set[name]]=function(em){return qx.core.Property.executeOptimizedSetter(this,clazz,name,f,arguments);}
+;members[method.set[name]].$$install=function(en){qx.core.Property.installOptimizedSetter(this,clazz,name,f,arguments);}
+;method.reset[name]=bn+upname;members[method.reset[name]]=function(){return qx.core.Property.executeOptimizedSetter(this,clazz,name,bn);}
+;members[method.reset[name]].$$install=function(){qx.core.Property.installOptimizedSetter(this,clazz,name,bn);}
+;if(config.inheritable||config.apply||config.event||config.deferredInit){method.init[name]=dh+upname;members[method.init[name]]=function(eo){return qx.core.Property.executeOptimizedSetter(this,clazz,name,dh,arguments);}
 ;if(qx.core.Environment.get(dn)){members[method.init[name]].$$propertyMethod=true;}
 ;}
-;if(config.inheritable){method.refresh[name]=dI+upname;members[method.refresh[name]]=function(eo){return qx.core.Property.executeOptimizedSetter(this,clazz,name,dI,arguments);}
+;if(config.inheritable){method.refresh[name]=dJ+upname;members[method.refresh[name]]=function(ep){return qx.core.Property.executeOptimizedSetter(this,clazz,name,dJ,arguments);}
 ;if(qx.core.Environment.get(dn)){members[method.refresh[name]].$$propertyMethod=true;}
 ;}
-;method.setRuntime[name]=cl+upname;members[method.setRuntime[name]]=function(ep){return qx.core.Property.executeOptimizedSetter(this,clazz,name,cl,arguments);}
-;method.resetRuntime[name]=bd+upname;members[method.resetRuntime[name]]=function(){return qx.core.Property.executeOptimizedSetter(this,clazz,name,bd);}
-;if(config.themeable){method.setThemed[name]=bP+upname;members[method.setThemed[name]]=function(eq){return qx.core.Property.executeOptimizedSetter(this,clazz,name,bP,arguments);}
+;method.setRuntime[name]=cm+upname;members[method.setRuntime[name]]=function(eq){return qx.core.Property.executeOptimizedSetter(this,clazz,name,cm,arguments);}
+;method.resetRuntime[name]=be+upname;members[method.resetRuntime[name]]=function(){return qx.core.Property.executeOptimizedSetter(this,clazz,name,be);}
+;if(config.themeable){method.setThemed[name]=bQ+upname;members[method.setThemed[name]]=function(er){return qx.core.Property.executeOptimizedSetter(this,clazz,name,bQ,arguments);}
 ;method.resetThemed[name]=j+upname;members[method.resetThemed[name]]=function(){return qx.core.Property.executeOptimizedSetter(this,clazz,name,j);}
 ;if(qx.core.Environment.get(dn)){members[method.setThemed[name]].$$propertyMethod=true;members[method.resetThemed[name]].$$propertyMethod=true;}
 ;}
-;if(config.check===cg){members[dH+upname]=new Function(bq+method.set[name]+dD+method.get[name]+cC);members[dW+upname]=new Function(bq+method.get[name]+ct);if(qx.core.Environment.get(dn)){members[dH+upname].$$propertyMethod=true;members[dW+upname].$$propertyMethod=true;}
+;if(config.check===ch){members[dI+upname]=new Function(br+method.set[name]+dD+method.get[name]+cC);members[dX+upname]=new Function(br+method.get[name]+cu);if(qx.core.Environment.get(dn)){members[dI+upname].$$propertyMethod=true;members[dX+upname].$$propertyMethod=true;}
 ;}
 ;if(qx.core.Environment.get(dn)){members[method.get[name]].$$propertyMethod=true;members[method.set[name]].$$propertyMethod=true;members[method.reset[name]].$$propertyMethod=true;members[method.setRuntime[name]].$$propertyMethod=true;members[method.resetRuntime[name]].$$propertyMethod=true;}
 ;}
-,__I:function(er){return !!this.__C[er];}
-,__J:{'0':ea,'1':bK,'2':G,'3':cq,'4':dq,'5':V},error:function(es,ez,ey,et,eu){var ev=es.constructor.classname;var ew=s+ey+bf+ev+D+this.$$method[et][ey]+dQ+eu+be;throw new Error(ew+(this.__J[ez]||df+ez));}
-,__K:function(eD,eE,name,eC,eA,eB){var eF=this.__L(eD,eE,name,eC,eA,eB);if(eB===undefined){return eF.call(eD);}
-else if(qx.core.Environment.get(dn)){return eF.apply(eD,eB);}
-else {return eF.call(eD,eB[0]);}
+,__I:function(es){return !!this.__C[es];}
+,__J:{'0':eb,'1':bL,'2':G,'3':cr,'4':dq,'5':W},error:function(et,eA,ez,eu,ev){var ew=et.constructor.classname;var ey=s+ez+bg+ew+D+this.$$method[eu][ez]+dR+ev+bf;throw new Error(ey+(this.__J[eA]||df+eA));}
+,__K:function(eE,eF,name,eD,eB,eC){var eG=this.__L(eE,eF,name,eD,eB,eC);if(eC===undefined){return eG.call(eE);}
+else if(qx.core.Environment.get(dn)){return eG.apply(eE,eC);}
+else {return eG.call(eE,eC[0]);}
 ;}
-,__L:function(instance,members,name,variant,code,args){var store=this.$$method[variant][name];if(qx.core.Environment.get(dn)){if(qx.core.Environment.get(dc)>1){qx.Bootstrap.debug(bs+this.$$method[variant][name]+P+code.join(dB));}
+,__L:function(instance,members,name,variant,code,args){var store=this.$$method[variant][name];if(qx.core.Environment.get(dn)){if(qx.core.Environment.get(dc)>1){qx.Bootstrap.debug(bt+this.$$method[variant][name]+P+code.join(dB));}
 ;try{members[store]=new Function(dt,code.join(dB));}
-catch(eG){throw new Error(bb+this.$$method[variant][name]+cM+code.join(dB));}
+catch(eH){throw new Error(bc+this.$$method[variant][name]+cM+code.join(dB));}
 ;}
 else {members[store]=new Function(dt,code.join(dB));}
-;if(qx.core.Environment.get(dF)){members[store]=qx.core.Aspect.wrap(instance.classname+cU+store,members[store],u);}
-;qx.Bootstrap.setDisplayName(members[store],instance.classname+ce,store);return instance[store];}
-,executeOptimizedGetter:function(eK,eJ,name,eI){var eH=this.__M(eK,eJ,name,eI);var eL=eJ.prototype;return this.__K(eK,eL,name,eI,eH);}
-,installOptimizedGetter:function(eP,eO,name,eN){var eM=this.__M(eP,eO,name,eN);var eQ=eO.prototype;this.__L(eP,eQ,name,eN,eM);}
-,__M:function(eU,eT,name,eS){var eV=eT.$$properties[name];var eR=[];var eW=this.$$store;eR.push(R,eW.runtime[name],bV);eR.push(S,eW.runtime[name],h);if(eV.inheritable){eR.push(T,eW.inherit[name],bV);eR.push(S,eW.inherit[name],h);eR.push(K);}
-;eR.push(R,eW.user[name],bV);eR.push(S,eW.user[name],h);if(eV.themeable){eR.push(T,eW.theme[name],bV);eR.push(S,eW.theme[name],h);}
-;if(eV.deferredInit&&eV.init===undefined){eR.push(T,eW.init[name],bV);eR.push(S,eW.init[name],h);}
-;eR.push(K);if(eV.init!==undefined){if(eV.inheritable){eR.push(o,eW.init[name],h);if(eV.nullable){eR.push(bw);}
-;eR.push(n);}
-else {eR.push(S,eW.init[name],h);}
+;if(qx.core.Environment.get(dG)){members[store]=qx.core.Aspect.wrap(instance.classname+cU+store,members[store],u);}
+;qx.Bootstrap.setDisplayName(members[store],instance.classname+cf,store);return instance[store];}
+,executeOptimizedGetter:function(eL,eK,name,eJ){var eI=this.__M(eL,eK,name,eJ);var eM=eK.prototype;return this.__K(eL,eM,name,eJ,eI);}
+,installOptimizedGetter:function(eQ,eP,name,eO){var eN=this.__M(eQ,eP,name,eO);var eR=eP.prototype;this.__L(eQ,eR,name,eO,eN);}
+,__M:function(eV,eU,name,eT){var eW=eU.$$properties[name];var eS=[];var eX=this.$$store;eS.push(S,eX.runtime[name],bW);eS.push(T,eX.runtime[name],h);if(eW.inheritable){eS.push(U,eX.inherit[name],bW);eS.push(T,eX.inherit[name],h);eS.push(K);}
+;eS.push(S,eX.user[name],bW);eS.push(T,eX.user[name],h);if(eW.themeable){eS.push(U,eX.theme[name],bW);eS.push(T,eX.theme[name],h);}
+;if(eW.deferredInit&&eW.init===undefined){eS.push(U,eX.init[name],bW);eS.push(T,eX.init[name],h);}
+;eS.push(K);if(eW.init!==undefined){if(eW.inheritable){eS.push(o,eX.init[name],h);if(eW.nullable){eS.push(bx);}
+;eS.push(n);}
+else {eS.push(T,eX.init[name],h);}
 ;}
-else if(eV.inheritable||eV.nullable){eR.push(cF);}
-else {eR.push(dC,name,dG,eT.classname,dX);}
-;return eR;}
-,executeOptimizedSetter:function(fc,fb,name,fa,eY){var eX=this.__N(fc,fb,name,fa,eY);var fd=fb.prototype;return this.__K(fc,fd,name,fa,eX,eY);}
-,installOptimizedSetter:function(fi,fh,name,fg,ff){var fe=this.__N(fi,fh,name,fg,ff);var fj=fh.prototype;return this.__L(fi,fj,name,fg,fe,ff);}
-,__N:function(fr,fq,name,fp,fo){var ft=fq.$$properties[name];var fs=fq.prototype;var fl=[];var fk=fp===f||fp===bP||fp===cl||(fp===dh&&ft.init===undefined);var fm=ft.apply||ft.event||ft.inheritable;var fu=this.__O(fp,name);this.__P(fl,fq,ft,name);this.__Q(fl,ft,name,fp,fk);if(fk||fm){this.__W(fl,ft,name);}
-;if(fk){this.__R(fl,fq,ft,name);}
-;if(fm){this.__S(fl,fk,fu,fp);}
-;if(ft.inheritable){fl.push(bA);}
-;if(qx.core.Environment.get(dn)){if(fk){this.__T(fl,ft,fq,name,fp);}
+else if(eW.inheritable||eW.nullable){eS.push(cF);}
+else {eS.push(dC,name,dH,eU.classname,dY);}
+;return eS;}
+,executeOptimizedSetter:function(fd,fc,name,fb,fa){var eY=this.__N(fd,fc,name,fb,fa);var fe=fc.prototype;return this.__K(fd,fe,name,fb,eY,fa);}
+,installOptimizedSetter:function(fj,fi,name,fh,fg){var ff=this.__N(fj,fi,name,fh,fg);var fk=fi.prototype;return this.__L(fj,fk,name,fh,ff,fg);}
+,__N:function(fs,fr,name,fq,fp){var fu=fr.$$properties[name];var ft=fr.prototype;var fm=[];var fl=fq===f||fq===bQ||fq===cm||(fq===dh&&fu.init===undefined);var fo=fu.apply||fu.event||fu.inheritable;var fv=this.__O(fq,name);this.__P(fm,fr,fu,name);this.__Q(fm,fu,name,fq,fl);if(fl||fo){this.__W(fm,fu,name);}
+;if(fl){this.__R(fm,fr,fu,name);}
+;if(fo){this.__S(fm,fl,fv,fq);}
+;if(fu.inheritable){fm.push(bB);}
+;if(qx.core.Environment.get(dn)){if(fl){this.__T(fm,fu,fr,name,fq);}
 ;}
-;if(!fm){this.__U(fl,name,fp,fk);}
-else {this.__V(fl,ft,name,fp,fk);}
-;if(ft.inheritable){this.__X(fl,ft,name,fp);}
-else if(fm){this.__Y(fl,ft,name,fp);}
-;if(fm){this.__ba(fl,ft,name,fp);if(ft.inheritable&&fs._getChildren){this.__bb(fl,name);}
+;if(!fo){this.__U(fm,name,fq,fl);}
+else {this.__V(fm,fu,name,fq,fl);}
+;if(fu.inheritable){this.__X(fm,fu,name,fq);}
+else if(fo){this.__Y(fm,fu,name,fq);}
+;if(fo){this.__ba(fm,fu,name,fq);if(fu.inheritable&&ft._getChildren){this.__bb(fm,name);}
 ;}
-;if(fk){fl.push(cm);}
-;return fl;}
-,__O:function(fv,name){if(fv===cl||fv===bd){var fw=this.$$store.runtime[name];}
-else if(fv===bP||fv===j){fw=this.$$store.theme[name];}
-else if(fv===dh){fw=this.$$store.init[name];}
-else {fw=this.$$store.user[name];}
-;return fw;}
-,__P:function(fx,fA,fy,name){fx.push(bS);if(typeof fy.isEqual===g){fx.push(bl,fA.classname,cw,name,ch);}
-else if(typeof fy.isEqual===bn){var fz=fA.prototype;if(fz[fy.isEqual]!==undefined){fx.push(bJ,fy.isEqual,h);}
-else {fx.push(bk,fy.isEqual,bI);}
+;if(fl){fm.push(cn);}
+;return fm;}
+,__O:function(fw,name){if(fw===cm||fw===be){var fx=this.$$store.runtime[name];}
+else if(fw===bQ||fw===j){fx=this.$$store.theme[name];}
+else if(fw===dh){fx=this.$$store.init[name];}
+else {fx=this.$$store.user[name];}
+;return fx;}
+,__P:function(fy,fB,fz,name){fy.push(bT);if(typeof fz.isEqual===g){fy.push(bm,fB.classname,cx,name,ci);}
+else if(typeof fz.isEqual===bo){var fA=fB.prototype;if(fA[fz.isEqual]!==undefined){fy.push(bK,fz.isEqual,h);}
+else {fy.push(bl,fz.isEqual,bJ);}
 ;}
-else if(typeof fy.isEqual===dN){fx.push(cE);}
-else {throw new Error(J+b+name+bG+fA.classname+dl);}
+else if(typeof fz.isEqual===dO){fy.push(cE);}
+else {throw new Error(J+b+name+bH+fB.classname+dl);}
 ;}
-,__Q:function(fD,fB,name,fE,fC){if(qx.core.Environment.get(dn)){fD.push(dK);if(fE===dh){fD.push(bQ,name,bv,fE,bL);}
-;if(fE===dI){}
-else if(fC){fD.push(dg,name,bv,fE,bL);fD.push(W,name,bv,fE,bL);}
-else {fD.push(dS,name,bv,fE,bL);}
+,__Q:function(fE,fC,name,fF,fD){if(qx.core.Environment.get(dn)){fE.push(dL);if(fF===dh){fE.push(bR,name,bw,fF,bM);}
+;if(fF===dJ){}
+else if(fD){fE.push(dg,name,bw,fF,bM);fE.push(X,name,bw,fF,bM);}
+else {fE.push(dT,name,bw,fF,bM);}
 ;}
-else {if(!fB.nullable||fB.check||fB.inheritable){fD.push(dK);}
-;if(fE===f){fD.push(W,name,bv,fE,bL);}
-;}
-;}
-,__R:function(fF,fH,fG,name){if(fG.transform){fF.push(bt,fG.transform,p);}
-;if(fG.validate){if(typeof fG.validate===bn){fF.push(bJ,fG.validate,bF);}
-else if(fG.validate instanceof Function){fF.push(fH.classname,cw,name);fF.push(y);}
+else {if(!fC.nullable||fC.check||fC.inheritable){fE.push(dL);}
+;if(fF===f){fE.push(X,name,bw,fF,bM);}
 ;}
 ;}
-,__S:function(fJ,fI,fL,fK){var fM=(fK===bm||fK===j||fK===bd);if(fI){fJ.push(cy);}
-else if(fM){fJ.push(R,fL,bh);}
+,__R:function(fG,fI,fH,name){if(fH.transform){fG.push(bu,fH.transform,p);}
+;if(fH.validate){if(typeof fH.validate===bo){fG.push(bK,fH.validate,bG);}
+else if(fH.validate instanceof Function){fG.push(fI.classname,cx,name);fG.push(y);}
 ;}
-,__T:qx.core.Environment.select(dn,{"true":function(fO,fN,fQ,name,fP){if(!fN.nullable){fO.push(bU,name,bv,fP,bL);}
-;if(fN.check!==undefined){fO.push(c+name+de+fQ.classname+cr);if(fN.nullable){fO.push(cz);}
-;if(fN.inheritable){fO.push(dr);}
-;fO.push(I);if(this.__B[fN.check]!==undefined){fO.push(dj,this.__B[fN.check],dR);}
-else if(qx.Class.isDefined(fN.check)){fO.push(bR,fN.check,cW);}
-else if(qx.Interface&&qx.Interface.isDefined(fN.check)){fO.push(da,fN.check,cW);}
-else if(typeof fN.check===g){fO.push(bX,fQ.classname,cw,name);fO.push(v);}
-else if(typeof fN.check===bn){fO.push(dj,fN.check,dR);}
-else if(fN.check instanceof Array){fO.push(bx,fQ.classname,cw,name,co);}
-else {throw new Error(bj+name+bf+fQ.classname);}
-;fO.push(bB,name,bv,fP,bL);}
 ;}
-,"false":undefined}),__U:function(fS,name,fT,fR){if(fT===cl){fS.push(bJ,this.$$store.runtime[name],cD);}
-else if(fT===bd){fS.push(R,this.$$store.runtime[name],bV);fS.push(bc,this.$$store.runtime[name],h);}
-else if(fT===f){fS.push(bJ,this.$$store.user[name],cD);}
-else if(fT===bm){fS.push(R,this.$$store.user[name],bV);fS.push(bc,this.$$store.user[name],h);}
-else if(fT===bP){fS.push(bJ,this.$$store.theme[name],cD);}
-else if(fT===j){fS.push(R,this.$$store.theme[name],bV);fS.push(bc,this.$$store.theme[name],h);}
-else if(fT===dh&&fR){fS.push(bJ,this.$$store.init[name],cD);}
+,__S:function(fK,fJ,fM,fL){var fN=(fL===bn||fL===j||fL===be);if(fJ){fK.push(dF,fM,Q);}
+else if(fN){fK.push(S,fM,bi);}
 ;}
-,__V:function(fW,fU,name,fX,fV){fW.push(du);fW.push(R,this.$$store.runtime[name],cG);if(fX===cl){fW.push(dw,this.$$store.runtime[name],cD);}
-else if(fX===bd){fW.push(bc,this.$$store.runtime[name],h);fW.push(R,this.$$store.user[name],bV);fW.push(dw,this.$$store.user[name],h);fW.push(T,this.$$store.theme[name],bV);fW.push(dw,this.$$store.theme[name],h);fW.push(T,this.$$store.init[name],cG);fW.push(dw,this.$$store.init[name],h);fW.push(bJ,this.$$store.useinit[name],L);fW.push(cV);}
-else {fW.push(dw,this.$$store.runtime[name],h);if(fX===f){fW.push(bJ,this.$$store.user[name],cD);}
-else if(fX===bm){fW.push(bc,this.$$store.user[name],h);}
-else if(fX===bP){fW.push(bJ,this.$$store.theme[name],cD);}
-else if(fX===j){fW.push(bc,this.$$store.theme[name],h);}
-else if(fX===dh&&fV){fW.push(bJ,this.$$store.init[name],cD);}
+,__T:qx.core.Environment.select(dn,{"true":function(fP,fO,fR,name,fQ){if(!fO.nullable){fP.push(bV,name,bw,fQ,bM);}
+;if(fO.check!==undefined){fP.push(c+name+de+fR.classname+cs);if(fO.nullable){fP.push(cz);}
+;if(fO.inheritable){fP.push(dr);}
+;fP.push(I);if(this.__B[fO.check]!==undefined){fP.push(dj,this.__B[fO.check],dS);}
+else if(qx.Class.isDefined(fO.check)){fP.push(bS,fO.check,cW);}
+else if(qx.Interface&&qx.Interface.isDefined(fO.check)){fP.push(da,fO.check,cW);}
+else if(typeof fO.check===g){fP.push(bY,fR.classname,cx,name);fP.push(v);}
+else if(typeof fO.check===bo){fP.push(dj,fO.check,dS);}
+else if(fO.check instanceof Array){fP.push(by,fR.classname,cx,name,cp);}
+else {throw new Error(bk+name+bg+fR.classname);}
+;fP.push(bC,name,bw,fQ,bM);}
 ;}
-;fW.push(cV);fW.push(T,this.$$store.user[name],cG);if(fX===f){fW.push(dw,this.$$store.user[name],cD);}
-else if(fX===bm){fW.push(bc,this.$$store.user[name],h);fW.push(R,this.$$store.runtime[name],bV);fW.push(dw,this.$$store.runtime[name],h);fW.push(R,this.$$store.theme[name],bV);fW.push(dw,this.$$store.theme[name],h);fW.push(T,this.$$store.init[name],cG);fW.push(dw,this.$$store.init[name],h);fW.push(bJ,this.$$store.useinit[name],L);fW.push(cV);}
-else {if(fX===cl){fW.push(dw,this.$$store.runtime[name],cD);}
-else if(fU.inheritable){fW.push(dw,this.$$store.user[name],h);}
-else {fW.push(dw,this.$$store.user[name],h);}
-;if(fX===bP){fW.push(bJ,this.$$store.theme[name],cD);}
-else if(fX===j){fW.push(bc,this.$$store.theme[name],h);}
-else if(fX===dh&&fV){fW.push(bJ,this.$$store.init[name],cD);}
+,"false":undefined}),__U:function(fT,name,fU,fS){if(fU===cm){fT.push(bK,this.$$store.runtime[name],cD);}
+else if(fU===be){fT.push(S,this.$$store.runtime[name],bW);fT.push(bd,this.$$store.runtime[name],h);}
+else if(fU===f){fT.push(bK,this.$$store.user[name],cD);}
+else if(fU===bn){fT.push(S,this.$$store.user[name],bW);fT.push(bd,this.$$store.user[name],h);}
+else if(fU===bQ){fT.push(bK,this.$$store.theme[name],cD);}
+else if(fU===j){fT.push(S,this.$$store.theme[name],bW);fT.push(bd,this.$$store.theme[name],h);}
+else if(fU===dh&&fS){fT.push(bK,this.$$store.init[name],cD);}
 ;}
-;fW.push(cV);if(fU.themeable){fW.push(T,this.$$store.theme[name],cG);if(fX===cl){fW.push(dw,this.$$store.runtime[name],cD);}
-else if(fX===f){fW.push(dw,this.$$store.user[name],cD);}
-else if(fX===bP){fW.push(dw,this.$$store.theme[name],cD);}
-else if(fX===j){fW.push(bc,this.$$store.theme[name],h);fW.push(R,this.$$store.init[name],cG);fW.push(dw,this.$$store.init[name],h);fW.push(bJ,this.$$store.useinit[name],L);fW.push(cV);}
-else if(fX===dh){if(fV){fW.push(bJ,this.$$store.init[name],cD);}
-;fW.push(dw,this.$$store.theme[name],h);}
-else if(fX===dI){fW.push(dw,this.$$store.theme[name],h);}
-;fW.push(cV);}
-;fW.push(T,this.$$store.useinit[name],bW);if(fX===dh){if(fV){fW.push(dw,this.$$store.init[name],cD);}
-else {fW.push(dw,this.$$store.init[name],h);}
+,__V:function(fX,fV,name,fY,fW){fX.push(du);fX.push(S,this.$$store.runtime[name],cG);if(fY===cm){fX.push(dw,this.$$store.runtime[name],cD);}
+else if(fY===be){fX.push(bd,this.$$store.runtime[name],h);fX.push(S,this.$$store.user[name],bW);fX.push(dw,this.$$store.user[name],h);fX.push(U,this.$$store.theme[name],bW);fX.push(dw,this.$$store.theme[name],h);fX.push(U,this.$$store.init[name],cG);fX.push(dw,this.$$store.init[name],h);fX.push(bK,this.$$store.useinit[name],L);fX.push(cV);}
+else {fX.push(dw,this.$$store.runtime[name],h);if(fY===f){fX.push(bK,this.$$store.user[name],cD);}
+else if(fY===bn){fX.push(bd,this.$$store.user[name],h);}
+else if(fY===bQ){fX.push(bK,this.$$store.theme[name],cD);}
+else if(fY===j){fX.push(bd,this.$$store.theme[name],h);}
+else if(fY===dh&&fW){fX.push(bK,this.$$store.init[name],cD);}
 ;}
-else if(fX===f||fX===cl||fX===bP||fX===dI){fW.push(bc,this.$$store.useinit[name],h);if(fX===cl){fW.push(dw,this.$$store.runtime[name],cD);}
-else if(fX===f){fW.push(dw,this.$$store.user[name],cD);}
-else if(fX===bP){fW.push(dw,this.$$store.theme[name],cD);}
-else if(fX===dI){fW.push(dw,this.$$store.init[name],h);}
+;fX.push(cV);fX.push(U,this.$$store.user[name],cG);if(fY===f){fX.push(dw,this.$$store.user[name],cD);}
+else if(fY===bn){fX.push(bd,this.$$store.user[name],h);fX.push(S,this.$$store.runtime[name],bW);fX.push(dw,this.$$store.runtime[name],h);fX.push(S,this.$$store.theme[name],bW);fX.push(dw,this.$$store.theme[name],h);fX.push(U,this.$$store.init[name],cG);fX.push(dw,this.$$store.init[name],h);fX.push(bK,this.$$store.useinit[name],L);fX.push(cV);}
+else {if(fY===cm){fX.push(dw,this.$$store.runtime[name],cD);}
+else if(fV.inheritable){fX.push(dw,this.$$store.user[name],h);}
+else {fX.push(dw,this.$$store.user[name],h);}
+;if(fY===bQ){fX.push(bK,this.$$store.theme[name],cD);}
+else if(fY===j){fX.push(bd,this.$$store.theme[name],h);}
+else if(fY===dh&&fW){fX.push(bK,this.$$store.init[name],cD);}
 ;}
-;fW.push(cV);if(fX===f||fX===cl||fX===bP||fX===dh){fW.push(A);if(fX===cl){fW.push(dw,this.$$store.runtime[name],cD);}
-else if(fX===f){fW.push(dw,this.$$store.user[name],cD);}
-else if(fX===bP){fW.push(dw,this.$$store.theme[name],cD);}
-else if(fX===dh){if(fV){fW.push(dw,this.$$store.init[name],cD);}
-else {fW.push(dw,this.$$store.init[name],h);}
-;fW.push(bJ,this.$$store.useinit[name],L);}
-;fW.push(cV);}
+;fX.push(cV);if(fV.themeable){fX.push(U,this.$$store.theme[name],cG);if(fY===cm){fX.push(dw,this.$$store.runtime[name],cD);}
+else if(fY===f){fX.push(dw,this.$$store.user[name],cD);}
+else if(fY===bQ){fX.push(dw,this.$$store.theme[name],cD);}
+else if(fY===j){fX.push(bd,this.$$store.theme[name],h);fX.push(S,this.$$store.init[name],cG);fX.push(dw,this.$$store.init[name],h);fX.push(bK,this.$$store.useinit[name],L);fX.push(cV);}
+else if(fY===dh){if(fW){fX.push(bK,this.$$store.init[name],cD);}
+;fX.push(dw,this.$$store.theme[name],h);}
+else if(fY===dJ){fX.push(dw,this.$$store.theme[name],h);}
+;fX.push(cV);}
+;fX.push(U,this.$$store.useinit[name],bX);if(fY===dh){if(fW){fX.push(dw,this.$$store.init[name],cD);}
+else {fX.push(dw,this.$$store.init[name],h);}
 ;}
-,__W:function(fY,ga,name){if(ga.inheritable){fY.push(cJ,this.$$store.inherit[name],h);}
-else {fY.push(t);}
-;fY.push(R,this.$$store.runtime[name],cG);fY.push(cR,this.$$store.runtime[name],h);fY.push(cV);if(!ga.inheritable){fY.push(T,this.$$store.user[name],cG);fY.push(cR,this.$$store.user[name],h);fY.push(cV);if(ga.themeable){fY.push(T,this.$$store.theme[name],cG);fY.push(cR,this.$$store.theme[name],h);fY.push(cV);}
-;fY.push(T,this.$$store.useinit[name],bW);fY.push(cR,this.$$store.init[name],h);fY.push(cV);}
+else if(fY===f||fY===cm||fY===bQ||fY===dJ){fX.push(bd,this.$$store.useinit[name],h);if(fY===cm){fX.push(dw,this.$$store.runtime[name],cD);}
+else if(fY===f){fX.push(dw,this.$$store.user[name],cD);}
+else if(fY===bQ){fX.push(dw,this.$$store.theme[name],cD);}
+else if(fY===dJ){fX.push(dw,this.$$store.init[name],h);}
 ;}
-,__X:function(gc,gb,name,gd){gc.push(ca);if(gd===dI){gc.push(bM);}
-else {gc.push(cN,this.$$store.inherit[name],h);}
-;gc.push(w);gc.push(bJ,this.$$store.init[name],cL);gc.push(bJ,this.$$store.init[name],U);gc.push(dw,this.$$store.init[name],h);gc.push(bJ,this.$$store.useinit[name],L);gc.push(bN);gc.push(bc,this.$$store.useinit[name],cu);gc.push(cV);gc.push(dP);gc.push(O);gc.push(bE,this.$$store.inherit[name],h);gc.push(cV);gc.push(ba);gc.push(bc,this.$$store.inherit[name],h);gc.push(dL,this.$$store.inherit[name],F);gc.push(cT);if(gb.init!==undefined&&gd!==dh){gc.push(N,this.$$store.init[name],cb);}
-else {gc.push(dM);}
-;gc.push(dU);}
-,__Y:function(gf,ge,name,gg){if(gg!==f&&gg!==cl&&gg!==bP){gf.push(dd);}
-;gf.push(dP);if(ge.init!==undefined&&gg!==dh){gf.push(N,this.$$store.init[name],cb);}
-else {gf.push(dM);}
+;fX.push(cV);if(fY===f||fY===cm||fY===bQ||fY===dh){fX.push(A);if(fY===cm){fX.push(dw,this.$$store.runtime[name],cD);}
+else if(fY===f){fX.push(dw,this.$$store.user[name],cD);}
+else if(fY===bQ){fX.push(dw,this.$$store.theme[name],cD);}
+else if(fY===dh){if(fW){fX.push(dw,this.$$store.init[name],cD);}
+else {fX.push(dw,this.$$store.init[name],h);}
+;fX.push(bK,this.$$store.useinit[name],L);}
+;fX.push(cV);}
 ;}
-,__ba:function(gi,gh,name,gj){if(gh.apply){gi.push(bJ,gh.apply,ck,name,X,gj,cI);}
-;if(gh.event){gi.push(cB,cp,gh.event,bo,dp,gh.event,cS,ci);}
+,__W:function(ga,gb,name){if(gb.inheritable){ga.push(cJ,this.$$store.inherit[name],h);}
+else {ga.push(t);}
+;ga.push(S,this.$$store.runtime[name],cG);ga.push(cR,this.$$store.runtime[name],h);ga.push(cV);if(!gb.inheritable){ga.push(U,this.$$store.user[name],cG);ga.push(cR,this.$$store.user[name],h);ga.push(cV);if(gb.themeable){ga.push(U,this.$$store.theme[name],cG);ga.push(cR,this.$$store.theme[name],h);ga.push(cV);}
+;ga.push(U,this.$$store.useinit[name],bX);ga.push(cR,this.$$store.init[name],h);ga.push(cV);}
 ;}
-,__bb:function(gk,name){gk.push(cc);gk.push(Y,this.$$method.refresh[name],cs,this.$$method.refresh[name],H);gk.push(cV);}
+,__X:function(gd,gc,name,ge){gd.push(cb);if(ge===dJ){gd.push(bN);}
+else {gd.push(cN,this.$$store.inherit[name],h);}
+;gd.push(w);gd.push(bK,this.$$store.init[name],cL);gd.push(bK,this.$$store.init[name],V);gd.push(dw,this.$$store.init[name],h);gd.push(bK,this.$$store.useinit[name],L);gd.push(bO);gd.push(bd,this.$$store.useinit[name],cv);gd.push(cV);gd.push(dQ);gd.push(O);gd.push(bF,this.$$store.inherit[name],h);gd.push(cV);gd.push(bb);gd.push(bd,this.$$store.inherit[name],h);gd.push(dM,this.$$store.inherit[name],F);gd.push(cT);if(gc.init!==undefined&&ge!==dh){gd.push(N,this.$$store.init[name],cc);}
+else {gd.push(dN);}
+;gd.push(dV);}
+,__Y:function(gg,gf,name,gh){if(gh!==f&&gh!==cm&&gh!==bQ){gg.push(dd);}
+;gg.push(dQ);if(gf.init!==undefined&&gh!==dh){gg.push(N,this.$$store.init[name],cc);}
+else {gg.push(dN);}
+;}
+,__ba:function(gj,gi,name,gk){if(gi.apply){gj.push(bK,gi.apply,cl,name,Y,gk,cI);}
+;if(gi.event){gj.push(cB,cq,gi.event,bp,dp,gi.event,cS,cj);}
+;}
+,__bb:function(gl,name){gl.push(cd);gl.push(ba,this.$$method.refresh[name],ct,this.$$method.refresh[name],H);gl.push(cV);}
 }});}
 )();
 (function(){var b=': ',c="The mixin to include into class '",d="constructor",e="' is abstract! It is not possible to instantiate it.",f="environment",g='"! The value is undefined: ',h="Property module disabled.",j='Invalid check definition of property "',k="singleton",m="qx.event.type.Data",n='Forbidden environment setting "',o='". It is forbidden to define a default setting for an external namespace!',p=": the event value needs to be a string with the class name of the event object which will be fired.",q='Invalid include definition in class "',r=" could not refine property: ",s='Invalid config in class "',t="toString",u="! Key: ",v="events",w='Invalid type of key "',x='Invalid transform definition of property "',y="@",z="Interface",A='Annonation for static "',B="Please initialize '",C='Assumed static class because no "extend" key was found. ',D="'.",E="' objects using the new keyword!",F=": the event value/type cannot be changed from ",G="destructor",H="destruct",I='"! The value is undefined/null!',J='" of Class "',K='" contains an invalid mixin at position ',L='Annonation for "',M="Could not refine an init value if there was previously no init value defined. Property '",N='" of property "',O='Interface "',P="extend",Q="module.property",R='Error in include definition of class "',S="string",T='Overwriting member "',U="module.events",V='Cannot annotate private member "',W='" definition for class "',X="@destruct",Y="members",cH='". It is forbidden to define a ',cI="' is a singleton! It is not possible to instantiate it directly. Use the static getInstance() method instead.",cJ=" already has a property: ",cD="Events module not enabled.",cE="The mixin to patch class '",cF="' of class: '",cG='"!',cO='"extend" parameter is null or undefined',cP='.',cV="' is undefined/null!",cQ=" could not be refined!",cK="Could not refine non-existent property: '",cL=".prototype",cM="function",cN='The configuration key "',cU='" is not allowed!',dy=": the events must be defined as map!",eh="static",cW='undefined',cR='"! The type of the key must be "',cS='extend',ed='Cannot annotate private static "',cT="refine",cX="!",cY='@',da="properties",df="'!",dg='"! ',dh="_",db="The class '",dc="Class",dd='"! The value needs to be a map!',de='Forbidden variant "',dl='"! Needs to be a String.',dm='"! Only interfaces and arrays of interfaces are allowed!',dn='The include definition in class "',dp='" found in "',di=".",dj='". It is forbidden to define a variant for an external namespace!',ee="object",dk="$$init_",dt='"! Only mixins and arrays of mixins are allowed!',du='!',eg='"! Needs to be a String, Array or Function.',dv='"! Every non-static class has to extend at least the "qx.core.Object" class.',dq="init",dr='" without a "refine" flag in the property definition! This class: ',ef="qx.aspects",ds="Incomplete parameters!",dw="@construct",dx='" does not exist!',dJ="Class ",dI="Array",dH="variants",dN='The implement definition in class "',dM='" is already used by Class "',dL='Overwriting private member "',dK='Invalid type "',dC="/",dB="statics",dA='Invalid key "',dz=" to ",dG="' of class '",dF="",dE="]",dD="member",dU=', original class: ',dT='" contains an invalid interface at position ',dS="qx.Class",dR='Could not refine property "',dY="Mixin",dX="settings",dW="[Class ",dV="abstract",dQ='environment setting for an external namespace!',dP='" in class "',dO="The class ',",ec='Invalid implement definition in class "',eb="qx.debug",ea='Forbidden setting "';qx.Bootstrap.define(dS,{statics:{__bc:qx.core.Environment.get(Q)?qx.core.Property:null,define:function(name,el){if(!el){el={};}
@@ -2409,8 +2409,9 @@ else if(!qx.dom.Node.isWindow(q)){q=window;}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
 }});}
 )();
 (function(){var a="$$init_",b="No such property: ",c="set",d="qx.debug",e="get",f="$$user_",g="qx.core.MProperty",h="reset";qx.Mixin.define(g,{members:{set:function(j,k){var i=qx.core.Property.$$method.set;if(qx.Bootstrap.isString(j)){if(!this[i[j]]){if(this[c+qx.Bootstrap.firstUp(j)]!=undefined){this[c+qx.Bootstrap.firstUp(j)](k);return this;}
@@ -2565,6 +2566,16 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;return false;}
 }});}
 )();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
+)();
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
+}});}
+)();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b="qx.debug",c="Invalid argument value 'cancelable'.",d="Cannot prevent default action on a non cancelable event: ",e="Invalid argument value 'canBubble'.",f="qx.event.type.Event";qx.Class.define(f,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{init:function(h,g){if(qx.core.Environment.get(b)){if(h!==undefined){qx.core.Assert.assertBoolean(h,e);}
 ;if(g!==undefined){qx.core.Assert.assertBoolean(g,c);}
 ;}
@@ -2636,17 +2647,6 @@ else if(!(event instanceof s)){this.error(g+v+c+event.classname+b);}
 ;}
 ;}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
-});}
-)();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
 });}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__de:null,__df:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__de=c;this.__df=d;return this;}
@@ -9364,7 +9364,7 @@ else {this.setFocusable(true);this.blur();this.setFocusable(false);}
 ;if(M!==undefined){this.setValue(M);}
 else {this.initValue();}
 ;}
-,properties:{appearance:{refine:true,init:A},focusable:{refine:true,init:true},singleStep:{check:C,init:1},pageStep:{check:C,init:10},minimum:{check:C,apply:u,init:0,event:H},value:{check:B,nullable:true,apply:o,init:0,event:f},maximum:{check:C,apply:E,init:100,event:G},wrap:{check:b,init:false,apply:d},editable:{check:b,init:true,apply:c},numberFormat:{check:v,apply:I,nullable:true},allowShrinkY:{refine:true,init:false}},members:{__yl:null,__ym:false,__yn:false,_createChildControlImpl:function(Q,P){var O;switch(Q){case t:O=new qx.ui.form.TextField();O.setFilter(this._getFilterRegExp());O.addState(l);O.setWidth(40);O.setFocusable(false);O.addListener(f,this._onTextChange,this);this._add(O,{column:0,row:0,rowSpan:2});break;case y:O=new qx.ui.form.RepeatButton();O.addState(l);O.setFocusable(false);O.addListener(k,this._countUp,this);this._add(O,{column:1,row:0});break;case q:O=new qx.ui.form.RepeatButton();O.addState(l);O.setFocusable(false);O.addListener(k,this._countDown,this);this._add(O,{column:1,row:1});break;};return O||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,Q);}
+,properties:{appearance:{refine:true,init:A},focusable:{refine:true,init:true},singleStep:{check:C,init:1},pageStep:{check:C,init:10},minimum:{check:C,apply:u,init:0,event:H},value:{check:B,nullable:true,apply:o,init:0,event:f},maximum:{check:C,apply:E,init:100,event:G},wrap:{check:b,init:false,apply:d},editable:{check:b,init:true,apply:c},numberFormat:{check:v,apply:I,nullable:true},allowShrinkY:{refine:true,init:false}},members:{__yh:null,__yi:false,__yj:false,_createChildControlImpl:function(Q,P){var O;switch(Q){case t:O=new qx.ui.form.TextField();O.setFilter(this._getFilterRegExp());O.addState(l);O.setWidth(40);O.setFocusable(false);O.addListener(f,this._onTextChange,this);this._add(O,{column:0,row:0,rowSpan:2});break;case y:O=new qx.ui.form.RepeatButton();O.addState(l);O.setFocusable(false);O.addListener(k,this._countUp,this);this._add(O,{column:1,row:0});break;case q:O=new qx.ui.form.RepeatButton();O.addState(l);O.setFocusable(false);O.addListener(k,this._countDown,this);this._add(O,{column:1,row:1});break;};return O||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,Q);}
 ,_getFilterRegExp:function(){var S,W,U;if(this.getNumberFormat()!==null){U=this.getNumberFormat().getLocale();}
 else {U=qx.locale.Manager.getInstance().getLocale();}
 ;S=qx.locale.Number.getDecimalSeparator(U);W=qx.locale.Number.getGroupSeparator(U);var V=r;var T=r;if(this.getNumberFormat()!==null){V=this.getNumberFormat().getPrefix()||r;T=this.getNumberFormat().getPostfix()||r;}
@@ -9380,7 +9380,7 @@ else {this._updateButtons();}
 ;}
 ,_applyEnabled:function(be,bd){qx.ui.core.Widget.prototype._applyEnabled.call(this,be,bd);this._updateButtons();}
 ,_checkValue:function(bf){return typeof bf===s&&bf>=this.getMinimum()&&bf<=this.getMaximum();}
-,_applyValue:function(bi,bh){var bg=this.getChildControl(t);this._updateButtons();this.__yl=bi;if(bi!==null){if(this.getNumberFormat()){bg.setValue(this.getNumberFormat().format(bi));}
+,_applyValue:function(bi,bh){var bg=this.getChildControl(t);this._updateButtons();this.__yh=bi;if(bi!==null){if(this.getNumberFormat()){bg.setValue(this.getNumberFormat().format(bi));}
 else {bg.setValue(bi+r);}
 ;}
 else {bg.setValue(r);}
@@ -9390,7 +9390,7 @@ else {bg.setValue(r);}
 ,_applyWrap:function(bn,bm){this._updateButtons();}
 ,_applyNumberFormat:function(bq,bp){var bo=this.getChildControl(t);bo.setFilter(this._getFilterRegExp());if(bp){bp.removeListener(F,this._onChangeNumberFormat,this);}
 ;var br=this.getNumberFormat();if(br!==null){br.addListener(F,this._onChangeNumberFormat,this);}
-;this._applyValue(this.__yl,undefined);}
+;this._applyValue(this.__yh,undefined);}
 ,_getContentPaddingTarget:function(){return this.getChildControl(t);}
 ,_updateButtons:function(){var bt=this.getChildControl(y);var bs=this.getChildControl(q);var bu=this.getValue();if(!this.getEnabled()){bt.setEnabled(false);bs.setEnabled(false);}
 else {if(this.getWrap()){bt.setEnabled(true);bs.setEnabled(true);}
@@ -9401,8 +9401,8 @@ else {bs.setEnabled(false);}
 ;}
 ;}
 ;}
-,_onKeyDown:function(e){switch(e.getKeyIdentifier()){case a:this.__ym=true;case p:this.getChildControl(y).press();break;case m:this.__yn=true;case h:this.getChildControl(q).press();break;default:return;};e.stopPropagation();e.preventDefault();}
-,_onKeyUp:function(e){switch(e.getKeyIdentifier()){case a:this.getChildControl(y).release();this.__ym=false;break;case p:this.getChildControl(y).release();break;case m:this.getChildControl(q).release();this.__yn=false;break;case h:this.getChildControl(q).release();break;};}
+,_onKeyDown:function(e){switch(e.getKeyIdentifier()){case a:this.__yi=true;case p:this.getChildControl(y).press();break;case m:this.__yj=true;case h:this.getChildControl(q).press();break;default:return;};e.stopPropagation();e.preventDefault();}
+,_onKeyUp:function(e){switch(e.getKeyIdentifier()){case a:this.getChildControl(y).release();this.__yi=false;break;case p:this.getChildControl(y).release();break;case m:this.getChildControl(q).release();this.__yj=false;break;case h:this.getChildControl(q).release();break;};}
 ,_onRoll:function(e){if(e.getPointerType()!=D){return;}
 ;var bv=e.getDelta().y;if(bv<0){this._countUp();}
 else if(bv>0){this._countDown();}
@@ -9413,20 +9413,20 @@ catch(by){}
 ;if(bx===undefined){bx=parseFloat(bw.getValue());}
 ;if(!isNaN(bx)){if(bx>this.getMaximum()){bx=this.getMaximum();}
 else if(bx<this.getMinimum()){bx=this.getMinimum();}
-;if(bx===this.__yl){this._applyValue(this.__yl);}
+;if(bx===this.__yh){this._applyValue(this.__yh);}
 else {this.setValue(bx);}
 ;}
-else {this._applyValue(this.__yl,undefined);}
+else {this._applyValue(this.__yh,undefined);}
 ;}
 ,_onChangeLocale:function(bA){if(this.getNumberFormat()!==null){this.setNumberFormat(this.getNumberFormat());var bz=this.getChildControl(t);bz.setFilter(this._getFilterRegExp());bz.setValue(this.getNumberFormat().format(this.getValue()));}
 ;}
 ,_onChangeNumberFormat:function(bC){var bB=this.getChildControl(t);bB.setFilter(this._getFilterRegExp());bB.setValue(this.getNumberFormat().format(this.getValue()));}
-,_countUp:function(){if(this.__ym){var bE=this.getValue()+this.getPageStep();}
+,_countUp:function(){if(this.__yi){var bE=this.getValue()+this.getPageStep();}
 else {var bE=this.getValue()+this.getSingleStep();}
 ;if(this.getWrap()){if(bE>this.getMaximum()){var bD=this.getMaximum()-bE;bE=this.getMinimum()-bD-1;}
 ;}
 ;this.gotoValue(bE);}
-,_countDown:function(){if(this.__yn){var bG=this.getValue()-this.getPageStep();}
+,_countDown:function(){if(this.__yj){var bG=this.getValue()-this.getPageStep();}
 else {var bG=this.getValue()-this.getSingleStep();}
 ;if(this.getWrap()){if(bG<this.getMinimum()){var bF=this.getMinimum()+bG;bG=this.getMaximum()+bF+1;}
 ;}
