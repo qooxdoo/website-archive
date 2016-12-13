@@ -1079,25 +1079,6 @@
                 "nr": 0
             },
             {
-                "name": "TreeController.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.tree.Tree",
-                    "qx.data.controller.Tree",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "TreeController",
-                "nr": 0
-            },
-            {
                 "name": "SingleValueBinding.html",
                 "tags": [
                     "noPlayground",
@@ -1131,6 +1112,25 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SingleValueBinding",
+                "nr": 0
+            },
+            {
+                "name": "TreeController.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.tree.Tree",
+                    "qx.data.controller.Tree",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "TreeController",
                 "nr": 0
             },
             {
