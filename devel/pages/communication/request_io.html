@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Higher-level requests &mdash; qooxdoo 5.1 documentation</title>
+    <title>Higher-level requests &mdash; qooxdoo 5.1-296bcd1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '5.1',
+        VERSION:     '5.1-296bcd1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1 documentation" href="../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-296bcd1 documentation" href="../../index.html" />
     <link rel="up" title="Communication" href="../communication.html" />
     <link rel="next" title="AJAX" href="remote_io.html" />
     <link rel="prev" title="Communication" href="../communication.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../index.html">Manual (v5.1)</a>
+    <a href="../../index.html">Manual (v5.1-296bcd1)</a>
        &raquo;
       <a href="../communication.html" accesskey="U">Communication</a>
      &raquo;
@@ -161,7 +161,7 @@
 <li><strong>requestData</strong>: Data to be send as part of the request.</li>
 <li><strong>requestHeaders</strong>: Headers to send with the request</li>
 </ul>
-<p>For a complete list of properties, please refer to the API Documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.io.request">qx.io.request</a>:</p>
+<p>For a complete list of properties, please refer to the API Documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.io.request">qx.io.request</a>:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// Instantiate request</span>
 <span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">Xhr</span><span class="p">();</span>
 
@@ -198,7 +198,7 @@
 <li><strong>statusError</strong>: Request completed successfully (like <tt class="docutils literal"><span class="pre">load</span></tt>) <em>but</em> the additional requirements for <tt class="docutils literal"><span class="pre">success</span></tt> are not met. For <tt class="docutils literal"><span class="pre">Xhr</span></tt> this event is typically fired when the server reports that an erroneous or unknown resource was requested (e.g. <tt class="docutils literal"><span class="pre">500</span></tt> or <tt class="docutils literal"><span class="pre">404</span></tt>). For <tt class="docutils literal"><span class="pre">Jsonp</span></tt>, this event is associated with an invalid response for whatever reasons.</li>
 <li><strong>fail</strong>: Any kind of error occurred. Catches distinct events <tt class="docutils literal"><span class="pre">error</span></tt>, <tt class="docutils literal"><span class="pre">statusError</span></tt> and <tt class="docutils literal"><span class="pre">timeout</span></tt>.</li>
 </ul>
-<p>For a complete list of events, please refer to the API Documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.io.request">qx.io.request</a>:</p>
+<p>For a complete list of events, please refer to the API Documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.io.request">qx.io.request</a>:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">req</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;success&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getTarget</span><span class="p">();</span>
   <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">getResponse</span><span class="p">();</span>
@@ -376,22 +376,22 @@
         <ul>
           <li>
             
-            <a href="/current/5.1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-296bcd1/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-296bcd1/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1/pages/website.html">Website</a>
+            <a href="/current/5.1-296bcd1/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-296bcd1/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-296bcd1/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1/pages/server.html">Server</a>
+            <a href="/current/5.1-296bcd1/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
