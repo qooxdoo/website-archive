@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial: Creating a Tweets Client with qooxdoo mobile &mdash; qooxdoo 5.1-296bcd1 documentation</title>
+    <title>Tutorial: Creating a Tweets Client with qooxdoo mobile &mdash; qooxdoo 5.1-58b8330 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '5.1-296bcd1',
+        VERSION:     '5.1-58b8330',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-296bcd1 documentation" href="../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-58b8330 documentation" href="../../index.html" />
     <link rel="up" title="qx.Mobile" href="../mobile.html" />
     <link rel="next" title="Mobile and tablet switch" href="mobile_tablet_switch.html" />
     <link rel="prev" title="Getting Started with qooxdoo qx.Mobile" href="getting_started.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../index.html">Manual (v5.1-296bcd1)</a>
+    <a href="../../index.html">Manual (v5.1-58b8330)</a>
        &raquo;
       <a href="../mobile.html" accesskey="U">qx.Mobile</a>
      &raquo;
@@ -143,13 +143,13 @@
         
   <div class="section" id="tutorial-creating-a-tweets-client-with-qooxdoo-mobile">
 <h1>Tutorial: Creating a Tweets Client with qooxdoo mobile<a class="headerlink" href="#tutorial-creating-a-tweets-client-with-qooxdoo-mobile" title="Permalink to this headline">¶</a></h1>
-<p>In this tutorial you will learn how to create a simple tweets app with the <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.ui.mobile">qooxdoo mobile</a> widgets.</p>
+<p>In this tutorial you will learn how to create a simple tweets app with the <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/apiviewer/#qx.ui.mobile">qooxdoo mobile</a> widgets.</p>
 <p><a class="reference external" href="http://identi.ca">identica</a> is a twitter-like service for reading and posting public short messages - called &quot;tweets&quot;. It has a <a class="reference external" href="http://status.net/wiki/Twitter-compatible_API">twitter-compatible API</a> for accessing data.</p>
-<p><a class="reference external" href="http://twitter.com">Twitter</a> itself made its authorization scheme more complex, as it starts requiring OAuth even to read public tweets. For this basic tutorial it would be too complex to handle such advanced authorization. If your are interested in OAuth, check out how you could handle that in a qooxdoo app by looking at the <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/demobrowser/#data~Github.html">Github demo</a>.</p>
+<p><a class="reference external" href="http://twitter.com">Twitter</a> itself made its authorization scheme more complex, as it starts requiring OAuth even to read public tweets. For this basic tutorial it would be too complex to handle such advanced authorization. If your are interested in OAuth, check out how you could handle that in a qooxdoo app by looking at the <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/demobrowser/#data~Github.html">Github demo</a>.</p>
 <p>We use a mock for the identica service to be sure this tutorial always works.</p>
 <p>The app that is to be created in this tutorial should display all
 tweets of a certain user. When a tweet is selected, the details of the
-tweet should be shown. You can find the code of the tutorial <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-296bcd1/component/tutorials/mobiletweets">here</a>.</p>
+tweet should be shown. You can find the code of the tutorial <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-58b8330/component/tutorials/mobiletweets">here</a>.</p>
 <div class="section" id="requirements-and-getting-started">
 <h2>Requirements and Getting Started<a class="headerlink" href="#requirements-and-getting-started" title="Permalink to this headline">¶</a></h2>
 <p>Please visit the <a class="reference internal" href="getting_started.html"><em>getting started section</em></a> and follow the introduction which describes how to create a qx.Mobile Application.</p>
@@ -215,7 +215,7 @@ when you want to display a page.</p>
 </div>
 <div class="section" id="navigation-between-pages">
 <h2>Navigation between Pages<a class="headerlink" href="#navigation-between-pages" title="Permalink to this headline">¶</a></h2>
-<p id="index-0">qooxdoo mobile comes with different <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.ui.mobile.page.manager.Animation">animations</a> for page transitions.
+<p id="index-0">qooxdoo mobile comes with different <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/apiviewer/#qx.ui.mobile.page.manager.Animation">animations</a> for page transitions.
 Showing a second page is as easy as showing one page. Just call the
 <tt class="docutils literal"><span class="pre">show</span></tt> method of the second page and qooxdoo will do the rest. To
 navigate back to the first page you have to call, you have guessed it,
@@ -345,7 +345,7 @@ pages by tapping on the &quot;Show&quot; and on the &quot;Back&quot; button. Nic
 <p>Ok, here we are. You have learned how to create two pages and to wire
 them by reacting on defined events. That is pretty cool, but without
 data to display our app is worthless. To display the tweets
-of a user we will use the public Tweet service of identica. <a class="reference external" href="http://manual.qooxdoo.org/5.1-296bcd1/pages/core.html#data-binding">Data
+of a user we will use the public Tweet service of identica. <a class="reference external" href="http://manual.qooxdoo.org/5.1-58b8330/pages/core.html#data-binding">Data
 binding</a> is a powerful concept of qooxdoo which you can leverage off in
 your mobile applications as well. Extend the <tt class="docutils literal"><span class="pre">members</span></tt> section of the
 &quot;Application&quot; class by the following code:</p>
@@ -364,7 +364,7 @@ your mobile applications as well. Extend the <tt class="docutils literal"><span 
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>In the <tt class="docutils literal"><span class="pre">__loadTweets</span></tt> method we create a new <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.data.store.Jsonp">JSONP</a> store which will
+<p>In the <tt class="docutils literal"><span class="pre">__loadTweets</span></tt> method we create a new <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/apiviewer/#qx.data.store.Jsonp">JSONP</a> store which will
 automatically retrieve the data from the given URL. By binding the
 <tt class="docutils literal"><span class="pre">model</span></tt> property to the <tt class="docutils literal"><span class="pre">tweets</span></tt> property, the <tt class="docutils literal"><span class="pre">tweets</span></tt> property
 will be automatically updated whenever the <tt class="docutils literal"><span class="pre">model</span></tt> property of the
@@ -749,22 +749,22 @@ mobile applications work on Android and iOS devices.</p>
         <ul>
           <li>
             
-            <a href="/current/5.1-296bcd1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-58b8330/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-58b8330/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/website.html">Website</a>
+            <a href="/current/5.1-58b8330/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-58b8330/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-58b8330/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/server.html">Server</a>
+            <a href="/current/5.1-58b8330/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

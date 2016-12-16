@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial Part 1: The Beginning of a Tweets App &mdash; qooxdoo 5.1-296bcd1 documentation</title>
+    <title>Tutorial Part 1: The Beginning of a Tweets App &mdash; qooxdoo 5.1-58b8330 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-296bcd1',
+        VERSION:     '5.1-58b8330',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-296bcd1 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-58b8330 documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="Tutorial Part 2: Finishing the UI" href="tutorial-part-2.html" />
     <link rel="prev" title="Using qx.Website in qx.Desktop" href="../using_q.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-296bcd1)</a>
+    <a href="../../../index.html">Manual (v5.1-58b8330)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -145,9 +145,9 @@
 <span id="pages-tutorial-part-1-tutorial-part-1-the-beginning-of-a-tweets-app"></span><h1>Tutorial Part 1: The Beginning of a Tweets App<a class="headerlink" href="#tutorial-part-1-the-beginning-of-a-tweets-app" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <span id="pages-tutorial-part-1-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This tutorial covers many practical aspects of developing desktop-like qooxdoo apps. It is set up as a series of tutorials that go beyond the must-read <a class="reference internal" href="../../tool/getting_started.html#pages-getting-started-helloworld-helloworld"><em>&quot;Hello World&quot; tutorial</em></a>. For even more samples of app code you can check the <a class="reference external" href="http://demo.qooxdoo.org">demo applications</a> included in the framework, for instance the <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/feedreader">Feedreader</a>.</p>
+<p>This tutorial covers many practical aspects of developing desktop-like qooxdoo apps. It is set up as a series of tutorials that go beyond the must-read <a class="reference internal" href="../../tool/getting_started.html#pages-getting-started-helloworld-helloworld"><em>&quot;Hello World&quot; tutorial</em></a>. For even more samples of app code you can check the <a class="reference external" href="http://demo.qooxdoo.org">demo applications</a> included in the framework, for instance the <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/feedreader">Feedreader</a>.</p>
 <p>As the headline of this tutorial says, we are building a simple tweets application. <a class="reference external" href="http://identi.ca">identica</a> is a twitter-like service for reading and posting public short messages - called &quot;tweets&quot;. It has a <a class="reference external" href="http://status.net/wiki/Twitter-compatible_API">twitter-compatible API</a> for accessing data.</p>
-<p><a class="reference external" href="http://twitter.com">Twitter</a> itself made its authorization scheme more complex, as it starts requiring OAuth even to read public tweets. For this basic tutorial it would be too complex to handle such advanced authorization. If your are interested in OAuth, check out how you could handle that in a qooxdoo app by looking at the <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/demobrowser/#data~Github.html">Github demo</a>.</p>
+<p><a class="reference external" href="http://twitter.com">Twitter</a> itself made its authorization scheme more complex, as it starts requiring OAuth even to read public tweets. For this basic tutorial it would be too complex to handle such advanced authorization. If your are interested in OAuth, check out how you could handle that in a qooxdoo app by looking at the <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/demobrowser/#data~Github.html">Github demo</a>.</p>
 <p>The following mockup shows you how the application should look like at the end.</p>
 <a class="reference internal image-reference" href="../../../_images/identicamockup1.png"><img alt="../../../_images/identicamockup1.png" src="../../../_images/identicamockup1.png" /></a>
 <p>If you take a closer look at the mockup, you see a <a class="reference internal" href="../../widget/window.html"><em>window</em></a> containing a <a class="reference internal" href="../../widget/toolbar.html"><em>toolbar</em></a>, a <a class="reference internal" href="../../widget/list.html"><em>list</em></a>, a <a class="reference internal" href="../../widget/textarea.html"><em>text area</em></a> and a <a class="reference internal" href="../../widget/button.html"><em>button</em></a> to post messages. This should cover some common scenarios of a typical qooxdoo application.</p>
@@ -173,7 +173,7 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>We have created our own class extending the qooxdoo Window. In the constructor, we already set the caption of the window, which is the <a class="reference external" href="http://demo.qooxdoo.org/5.1-296bcd1/apiviewer/#qx.ui.window.Window">first constructor parameter of the qooxdoo window</a>. So you already have guessed it, <tt class="docutils literal"><span class="pre">this.base(arguments)</span></tt> calls the overridden method of the superclass, in this case the constructor.
+<p>We have created our own class extending the qooxdoo Window. In the constructor, we already set the caption of the window, which is the <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/apiviewer/#qx.ui.window.Window">first constructor parameter of the qooxdoo window</a>. So you already have guessed it, <tt class="docutils literal"><span class="pre">this.base(arguments)</span></tt> calls the overridden method of the superclass, in this case the constructor.
 To test the window, we need to create an instance of it in the main application. Add these two lines of code in the Application.js file to create and open the window. Make sure to add it at the end of the main function in the application class.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">tweets</span><span class="p">.</span><span class="nx">MainWindow</span><span class="p">();</span>
 <span class="nx">main</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
@@ -202,7 +202,7 @@ To test the window, we need to create an instance of it in the main application.
 </div>
 <p>At this point, your application should look like this.</p>
 <p><img alt="step 1" src="../../../_images/step11.png" /></p>
-<p>That's it for the first part. If you want to have the <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-296bcd1/component/tutorials/tweets/step1">code from the tutorial</a>, take a look at the project at Github and just fork the project.
+<p>That's it for the first part. If you want to have the <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-58b8330/component/tutorials/tweets/step1">code from the tutorial</a>, take a look at the project at Github and just fork the project.
 The next part of the tutorial will contain the building of the other parts of the UI. If you have feedback or want to see something special in further tutorials, just let us know!</p>
 </div>
 </div>
@@ -283,22 +283,22 @@ The next part of the tutorial will contain the building of the other parts of th
         <ul>
           <li>
             
-            <a href="/current/5.1-296bcd1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-58b8330/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-58b8330/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/website.html">Website</a>
+            <a href="/current/5.1-58b8330/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-58b8330/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-58b8330/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-296bcd1/pages/server.html">Server</a>
+            <a href="/current/5.1-58b8330/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
