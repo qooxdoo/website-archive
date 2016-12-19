@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial Part 3: Time for Communication &mdash; qooxdoo 5.1-58b8330 documentation</title>
+    <title>Tutorial Part 3: Time for Communication &mdash; qooxdoo 5.1-c6843c1 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-58b8330',
+        VERSION:     '5.1-c6843c1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-58b8330 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-c6843c1 documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="Tutorial Part 4.1: Form Handling" href="tutorial-part-4-1.html" />
     <link rel="prev" title="Tutorial Part 2: Finishing the UI" href="tutorial-part-2.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-58b8330)</a>
+    <a href="../../../index.html">Manual (v5.1-c6843c1)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -158,7 +158,7 @@ In this tutorial, we won't use the service itself due to API changes and availab
 <div class="section" id="creating-the-data-access-class">
 <span id="pages-desktop-tutorials-tutorial-part-3-creating-the-data-access-class"></span><h2>Creating the Data Access Class<a class="headerlink" href="#creating-the-data-access-class" title="Permalink to this headline">¶</a></h2>
 <p>Now, that we know how we want to communicate, we can tackle the first task, fetching the public timeline. identica offers a <a class="reference external" href="http://status.net/wiki/Twitter-compatible_API#Timeline_resources">JSONP service for that</a> which we can use. Luckily, there is no login process on the server side so we don't need to bother with that in the client. The following URL returns the public timeline wrapped in a JavaScript method call (that's what JSONP is about):</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//demo.qooxdoo.org/5.1-58b8330/tweets_step4.5/resource/tweets/service.js</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//demo.qooxdoo.org/5.1-c6843c1/tweets_step4.5/resource/tweets/service.js</span>
 </pre></div>
 </div>
 <p>Now we know how to get the data from identica. Its time for us to go back to the qooxdoo code. It is, like in the case of the UI, a good idea to create a separate class for the communication layer. Therefore, we create a class named <tt class="docutils literal"><span class="pre">IdenticaService</span></tt>. We don't want to inherit from any advanced qooxdoo class so we extend straight from <tt class="docutils literal"><span class="pre">qx.core.Object</span></tt>. The code for that class should looks like this:</p>
@@ -182,7 +182,7 @@ In this tutorial, we won't use the service itself due to API changes and availab
 </div>
 <p>Now it's time to get this method working. But how do we load the data in qooxdoo? As it is a JSONP service, we can use the <a class="reference internal" href="../../data_binding/stores.html#pages-data-binding-stores-jsonp-store"><em>JSONP data store</em></a> contained in the data binding layer of qooxdoo. But we only want to create it once and not every time the method is called. That's why we save the store as a private instance member and check for the existence of it before we create the store. Just take a look at the method implementation to see how it works.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">__store</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;  http://demo.qooxdoo.org/5.1-58b8330/tweets_step4.5/resource/tweets/service.js&quot;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&quot;  http://demo.qooxdoo.org/5.1-c6843c1/tweets_step4.5/resource/tweets/service.js&quot;</span><span class="p">;</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">__store</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">store</span><span class="p">.</span><span class="nx">Jsonp</span><span class="p">();</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">__store</span><span class="p">.</span><span class="nx">setCallbackName</span><span class="p">(</span><span class="s2">&quot;callback&quot;</span><span class="p">);</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">__store</span><span class="p">.</span><span class="nx">setUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
@@ -281,7 +281,7 @@ In this tutorial, we won't use the service itself due to API changes and availab
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>You see that the method has one parameter which is the current UI element which needs to be configured. This item is a <a class="reference external" href="http://demo.qooxdoo.org/5.1-58b8330/apiviewer/#qx.ui.form.ListItem">list item</a> which stores its icon as a child control you can access with the <tt class="docutils literal"><span class="pre">getChildControl</span></tt> method. After that, you can set the width, height and the scaling of the icon. The last line in the configurator set the item to rich, which allows the text to be wrapped. Save your file and give it a try!</p>
+<p>You see that the method has one parameter which is the current UI element which needs to be configured. This item is a <a class="reference external" href="http://demo.qooxdoo.org/5.1-c6843c1/apiviewer/#qx.ui.form.ListItem">list item</a> which stores its icon as a child control you can access with the <tt class="docutils literal"><span class="pre">getChildControl</span></tt> method. After that, you can set the width, height and the scaling of the icon. The last line in the configurator set the item to rich, which allows the text to be wrapped. Save your file and give it a try!</p>
 <p><img alt="step 3" src="../../../_images/step3.png" /></p>
 <p>Now it should be the way we like it to be. Sure it's not perfect because it has no error handling but that should be good enough for the tutorial.</p>
 </div>
@@ -291,7 +291,7 @@ In this tutorial, we won't use the service itself due to API changes and availab
 <ul class="simple">
 <li>identica uses OAuth authentication for postings. Don't make yourself too much work by implementing the whole OAuth thing. Invoking an alert should be enough.</li>
 </ul>
-<p>That should be possible for you right now! If you need to take a look at an implementation, you can always take a look at the <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-58b8330/component/tutorials/tweets/step3">code on github</a> or fork the project.</p>
+<p>That should be possible for you right now! If you need to take a look at an implementation, you can always take a look at the <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-c6843c1/component/tutorials/tweets/step3">code on github</a> or fork the project.</p>
 <p>That's it for the third part of the tutorial. With this tutorial, the application should be ready and we can continue our next tutorial lines based on this state of the application. As always, if you have any feedback, please let us know!</p>
 </div>
 </div>
@@ -375,22 +375,22 @@ In this tutorial, we won't use the service itself due to API changes and availab
         <ul>
           <li>
             
-            <a href="/current/5.1-58b8330/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-c6843c1/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-58b8330/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-c6843c1/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-58b8330/pages/website.html">Website</a>
+            <a href="/current/5.1-c6843c1/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-58b8330/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-c6843c1/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-58b8330/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-c6843c1/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-58b8330/pages/server.html">Server</a>
+            <a href="/current/5.1-c6843c1/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
