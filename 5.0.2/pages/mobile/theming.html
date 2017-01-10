@@ -1,0 +1,525 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Theming &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Mobile" href="../mobile.html" />
+    <link rel="next" title="Migrating a qx.Mobile theme to another version" href="theme_migration.html" />
+    <link rel="prev" title="Mobile and tablet switch" href="mobile_tablet_switch.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../mobile.html" accesskey="U">qx.Mobile</a>
+     &#187;
+    <a href="">Theming</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="theming">
+<span id="pages-mobile-theming-theming"></span><h1>Theming<a class="headerlink" href="#theming" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="css-and-scss">
+<h2>CSS and SCSS<a class="headerlink" href="#css-and-scss" title="Permalink to this headline">¶</a></h2>
+<p>Theming in qx.Mobile is done with <a class="reference external" href="http://www.sass-lang.com/">SCSS</a>.
+SCSS is an extension for CSS to enable style sheets to be more modular and
+maintainable.  In SCSS you can you use variables, create mixins, import other
+style files and reuse CSS statements.</p>
+<p>Despite our use of SCSS you do not have to be an SCSS expert. The main SCSS
+parts are maintained by us in the framework. You will usually just need some
+knowledge of CSS.</p>
+<p>If you want to extend or change the qooxdoo mobile themes you should always
+modify the SCSS files (*.scss) in the folder
+<code class="docutils literal"><span class="pre">&lt;APP_ROOT&gt;/source/theme/&lt;APP_NAMESPACE&gt;/scss</span></code>. After you modified
+any SCSS files they have to be compiled into CSS, otherwise you will not see any
+changes.</p>
+</div>
+<div class="section" id="scss-compilation">
+<span id="pages-mobile-theming-scss-compilation"></span><h2>SCSS Compilation<a class="headerlink" href="#scss-compilation" title="Permalink to this headline">¶</a></h2>
+<p>qx.Mobile uses the official <a class="reference external" href="http://sass-lang.com/install">Sass compiler</a> to leverage the changes you
+make to your application's *.scss files.</p>
+<p>It requires both a <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> and <a class="reference external" href="http://rubygems.org/">RubyGems</a> installation on your machine.</p>
+<p>You can either invoke it manually through the <code class="docutils literal"><span class="pre">compile-scss</span></code> Generator job
+(which utilizes the <code class="docutils literal"><span class="pre">sass</span></code> command line tool) or by running the
+<code class="docutils literal"><span class="pre">watch-scss</span></code> Generator job (see further below). Moreover it is invoked
+automatically during <code class="docutils literal"><span class="pre">build</span></code> and <code class="docutils literal"><span class="pre">source</span></code> runs.</p>
+</div>
+<div class="section" id="coming-from-css-and-never-heard-of-sass-and-scss">
+<h2>Coming from CSS (... and never heard of Sass and SCSS)?<a class="headerlink" href="#coming-from-css-and-never-heard-of-sass-and-scss" title="Permalink to this headline">¶</a></h2>
+<p>Two important points for clarification:</p>
+<ul class="simple">
+<li>Valid CSS is also valid SCSS</li>
+<li>If you don't want to install Sass your app will still work but you can only
+edit the CSS files (*.css) to adapt the appearance of your app - editing
+the SCSS files (*.scss) will have no effect. Furthermore you won't
+benefit from some of the features promoted here so we strongly recommend
+using Sass.</li>
+</ul>
+</div>
+<div class="section" id="scss-vs-sass">
+<h2>SCSS vs. Sass<a class="headerlink" href="#scss-vs-sass" title="Permalink to this headline">¶</a></h2>
+<p>Names can be confusing. Sass is both the name of the reference implementation
+and the name of a syntax. Sass offers two syntax flavors:</p>
+<p>SCSS (Sassy CSS):</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>#main {
+  color: blue;
+  font-size: 0.3em;
+
+  a {
+    font: {
+      weight: bold;
+      family: serif;
+    }
+}
+</pre></div>
+</div>
+<p>Sass:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>#main
+  color: blue
+  font-size: 0.3em
+
+  a
+    font:
+      weight: bold
+      family: serif
+</pre></div>
+</div>
+<p>We use the SCSS syntax throughout.</p>
+</div>
+<div class="section" id="watching-scss-files">
+<h2>Watching SCSS files<a class="headerlink" href="#watching-scss-files" title="Permalink to this headline">¶</a></h2>
+<p>Layout design through CSS is typically done by experimentation. You often
+change a stylesheet and reload the corresponding application to see the effect.
+Using SCSS you would need to compile the SCSS file after each change of your
+stylesheet files.</p>
+<p>To automatically compile the SCSS files on change/save, you can use the
+generator <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-watch-scss"><span class="std std-ref">watch-scss</span></a> job:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">watch</span><span class="o">-</span><span class="nx">scss</span>
+</pre></div>
+</div>
+<p>It recognizes any changes made to the SCSS files in your qx.Mobile application
+and triggers the compilation to CSS automatically.</p>
+<p>This is the job configuration of your app-specific <code class="docutils literal"><span class="pre">config.json</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;watch-scss&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;desc&quot;</span>   <span class="o">:</span> <span class="s2">&quot;Watch and compile the theme scss&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;cache&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;QX_MOBILE_THEME_PATH&quot;</span>      <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;QX_SHARED_THEME_PATH&quot;</span>      <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/framework/source/resource/qx/scss&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;APPLICATION_THEME_PATH&quot;</span>    <span class="o">:</span> <span class="s2">&quot;source/theme/${APPLICATION}&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;APPLICATION_RESOURCE_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;source/resource/${APPLICATION}&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;shell&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;command&quot;</span> <span class="o">:</span> <span class="s2">&quot;sass -C -t compressed -I ${QX_MOBILE_THEME_PATH} -I ${QX_SHARED_THEME_PATH} --watch ${APPLICATION_THEME_PATH}/scss:${APPLICATION_RESOURCE_PATH}/css&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;command-not-found&quot;</span> <span class="o">:</span> <span class="s2">&quot;It seems that Sass (http://sass-lang.com/) is not installed and/or executable, which is needed for the SCSS-compilation.&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>As mentioned before, it needs the official Sass compiler installed on your system.</p>
+</div>
+<div class="section" id="qx-mobile-themes">
+<h2>qx.Mobile Themes<a class="headerlink" href="#qx-mobile-themes" title="Permalink to this headline">¶</a></h2>
+<p>qx.Mobile provides a custom theme which you can adjust to fit your application's design goals. This could either follow your corporate design or the guidelines of native platforms like iOS, Android, Windows Phone or Blackberry OS.</p>
+<p>Instead of trying to deliver several stylesheets which mimic some native look, we
+provide a powerful yet easy system to create custom themes. This way you have all the possibilities to adapt your mobile app to  any look &amp; feel.</p>
+<p>As a starting point use the qx.Mobile &quot;Indigo&quot; theme. This theme can be modified
+by developers in many ways, like setting colors or change the appearance of widgets, e.g. their border
+radius, etc. See the section below on custom theming.</p>
+</div>
+<div class="section" id="using-qx-mobile-flat-theme">
+<h2>Using qx.Mobile Flat theme<a class="headerlink" href="#using-qx-mobile-flat-theme" title="Permalink to this headline">¶</a></h2>
+<p>If you want to use our Flat theme instead of the Indigo theme, you have to copy the content of the following file:</p>
+<p><code class="docutils literal"><span class="pre">qooxdoo/framework/source/resource/qx/mobile/scss/theme/flat/_styles.scss</span></code></p>
+<p>Into your project's theme file:</p>
+<p><code class="docutils literal"><span class="pre">&lt;APP_ROOT&gt;/source/theme/&lt;APP_NAME&gt;/scss/_styles.scss</span></code></p>
+<p>After changing this, you have to run the source job in your application's
+root:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adjusting-the-custom-theme">
+<h2>Adjusting the custom theme<a class="headerlink" href="#adjusting-the-custom-theme" title="Permalink to this headline">¶</a></h2>
+<p>In the qx.Mobile Showcase you can have a look at the default theme, called
+&quot;Indigo&quot;. This theme's styles will become the starting point for your custom theme.</p>
+<p>For customization, please follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Start the SCSS watch job by running</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">watch</span><span class="o">-</span><span class="nx">scss</span>
+</pre></div>
+</div>
+<p>in your application's root.</p>
+<p>This job re-compiles your theme everytime you save the <code class="docutils literal"><span class="pre">_styles.scss</span></code> file.</p>
+</li>
+<li><p class="first">Have a look in your application's resource folder:
+<code class="docutils literal"><span class="pre">&lt;APP_ROOT&gt;/source/theme/&lt;APP_NAME&gt;/scss/_styles.scss</span></code></p>
+<p>This is the key file for customizing the default theme to your needs.</p>
+<p>In <code class="docutils literal"><span class="pre">_styles.scss</span></code> you find various variables for the customization of
+your qx.Mobile application.</p>
+</li>
+<li><p class="first">Give it a try: Change the background of the NavigationBar to the color
+<code class="docutils literal"><span class="pre">green</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">:</span> <span class="nx">green</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Your customized theme is compiled automatically by the SCSS watch job to:
+<code class="docutils literal"><span class="pre">&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/css/custom.css</span></code></p>
+</li>
+<li><p class="first">Reload your qx.Mobile application and check your changes. The NavigationBar should look
+like this:</p>
+<a class="reference internal image-reference" href="../../_images/gradient-green.png"><img alt="../../_images/gradient-green.png" src="../../_images/gradient-green.png" style="width: 200.0px; height: 49.5px;" /></a>
+</li>
+</ol>
+<p>That is all you need to know to get started customizing the theme of your qx.Mobile app. Continue to adjust the other
+SCSS variables inside <code class="docutils literal"><span class="pre">_styles.scss</span></code>!</p>
+</div>
+<div class="section" id="the-background-variables">
+<h2>The background variables<a class="headerlink" href="#the-background-variables" title="Permalink to this headline">¶</a></h2>
+<p>Most theming variables accept only a single value.
+Background variables are special: With only one value you set the background to a single color. With multiple values, separated by <code class="docutils literal"><span class="pre">,</span></code> you create linear gradients. Additionally you can adjust the position
+of the color stops and adjust the direction of the gradient, just as you know from CSS linear gradient syntax.</p>
+<p>This feature works for all variables which end in <code class="docutils literal"><span class="pre">-background</span></code>. It accepts up to 10 color stops.</p>
+<p>Examples:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// This creates a red background</span>
+<span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">:</span>  <span class="nx">red</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/red.png"><img alt="../../_images/red.png" src="../../_images/red.png" style="width: 199.5px; height: 47.5px;" /></a>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// This creates a vertical background gradient from red to maroon</span>
+<span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">:</span>  <span class="nx">red</span><span class="p">,</span> <span class="nx">maroon</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/gradient.png"><img alt="../../_images/gradient.png" src="../../_images/gradient.png" style="width: 199.5px; height: 49.0px;" /></a>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// This creates a diagonal background from red to black</span>
+<span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">:</span>  <span class="mi">45</span><span class="nx">deg</span><span class="p">,</span> <span class="nx">red</span><span class="p">,</span> <span class="nx">black</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/gradient-diagonal.png"><img alt="../../_images/gradient-diagonal.png" src="../../_images/gradient-diagonal.png" style="width: 199.0px; height: 48.0px;" /></a>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// This creates a diagonal background gradient</span>
+<span class="c1">// from red to maroon to black, with special positions</span>
+<span class="c1">// of the color stops</span>
+<span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">:</span>  <span class="mi">45</span><span class="nx">deg</span><span class="p">,</span> <span class="nx">red</span> <span class="mi">33</span><span class="o">%</span><span class="p">,</span> <span class="nx">maroon</span> <span class="mi">50</span><span class="o">%</span><span class="p">,</span> <span class="nx">black</span> <span class="mi">66</span><span class="o">%</span><span class="p">;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/gradient-diagonal-stops.png"><img alt="../../_images/gradient-diagonal-stops.png" src="../../_images/gradient-diagonal-stops.png" style="width: 200.0px; height: 48.0px;" /></a>
+</div>
+<div class="section" id="extending-the-customized-theme-with-css">
+<h2>Extending the customized theme with CSS<a class="headerlink" href="#extending-the-customized-theme-with-css" title="Permalink to this headline">¶</a></h2>
+<p>In addition to the customization of variables in <code class="docutils literal"><span class="pre">_styles.scss</span></code> you can
+extend the theme with your own CSS rules. In this case you can append your CSS statements to this file:</p>
+<p><code class="docutils literal"><span class="pre">&lt;APP_ROOT&gt;/source/theme/&lt;APP_NAME&gt;/scss/custom.scss</span></code></p>
+<p>As mentioned before, you do not need to be an expert in SCSS for theming.  But
+if you want to know more about this exciting CSS enhancement technology, please
+have a look at the Sass website:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.sass-lang.com/">Sass official website</a></li>
+</ul>
+</div>
+<div class="section" id="resolution-independence">
+<h2>Resolution Independence<a class="headerlink" href="#resolution-independence" title="Permalink to this headline">¶</a></h2>
+<p>A qx.Mobile theme can be scaled to adjust the application to
+the resolution of your target devices.</p>
+<p>To reach this goal, qx.Mobile theming strictly uses <code class="docutils literal"><span class="pre">rem</span></code>
+units instead of <code class="docutils literal"><span class="pre">px</span></code> inside its stylesheets.</p>
+<p>If you are not familiar with the CSS unit <code class="docutils literal"><span class="pre">rem</span></code>, please have a look at
+<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">MDN CSS Units</a>.</p>
+<p>Thinking in <code class="docutils literal"><span class="pre">rem</span></code> units might be difficult, and that is why we added a SCSS function named <code class="docutils literal"><span class="pre">rem()</span></code>.
+This function gives you the possibility to continue to think in <code class="docutils literal"><span class="pre">px</span></code>, but converts the <code class="docutils literal"><span class="pre">px</span></code> value
+to a corresponding <code class="docutils literal"><span class="pre">rem</span></code> on SCSS compilation. As you certainly want to keep the feature of resolution independence in your custom theme, always avoid <code class="docutils literal"><span class="pre">px</span></code> and use this function inside your <code class="docutils literal"><span class="pre">_styles.scss</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// text size should be about 32px, this gets converted to 2rem.</span>
+<span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">text</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span>  <span class="nx">rem</span><span class="p">(</span><span class="mi">32</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="improving-your-theming-workflow">
+<h2>Improving your theming workflow<a class="headerlink" href="#improving-your-theming-workflow" title="Permalink to this headline">¶</a></h2>
+<p>With the following suggestion you can further improve the theming workflow of your qx.Mobile application:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://chrome.google.com/webstore/detail/css-auto-reload/fiikhcfekfejbleebdkkjjgalkcgjoip">CSS Auto Reload for Chrome</a></li>
+</ul>
+<p>This plug-in recognizes when a website's CSS has changed and updates the CSS
+automatically, without reloading the entire document. This plug-in works perfectly in
+combination with the SCSS watch job.</p>
+<p>The result: You just have to change a qx.Mobile's SCSS, save it and the qx.Mobile application in Chrome
+updates after a few seconds, while keeping the current state of the application.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="mobile_tablet_switch.html"
+             title="previous chapter">« Mobile and tablet switch</a>
+          <span class="separator">|</span>
+          <a class="next" href="theme_migration.html"
+             title="next chapter">Migrating a qx.Mobile theme to another version »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Theming</a><ul>
+<li><a class="reference internal" href="#css-and-scss">CSS and SCSS</a></li>
+<li><a class="reference internal" href="#scss-compilation">SCSS Compilation</a></li>
+<li><a class="reference internal" href="#coming-from-css-and-never-heard-of-sass-and-scss">Coming from CSS (... and never heard of Sass and SCSS)?</a></li>
+<li><a class="reference internal" href="#scss-vs-sass">SCSS vs. Sass</a></li>
+<li><a class="reference internal" href="#watching-scss-files">Watching SCSS files</a></li>
+<li><a class="reference internal" href="#qx-mobile-themes">qx.Mobile Themes</a></li>
+<li><a class="reference internal" href="#using-qx-mobile-flat-theme">Using qx.Mobile Flat theme</a></li>
+<li><a class="reference internal" href="#adjusting-the-custom-theme">Adjusting the custom theme</a></li>
+<li><a class="reference internal" href="#the-background-variables">The background variables</a></li>
+<li><a class="reference internal" href="#extending-the-customized-theme-with-css">Extending the customized theme with CSS</a></li>
+<li><a class="reference internal" href="#resolution-independence">Resolution Independence</a></li>
+<li><a class="reference internal" href="#improving-your-theming-workflow">Improving your theming workflow</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="theme_migration.html"
+                        title="next chapter">Migrating a qx.Mobile theme to another version</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="mobile_tablet_switch.html"
+                        title="previous chapter">Mobile and tablet switch</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/mobile/theming.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

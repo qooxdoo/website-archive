@@ -1,0 +1,1337 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>JSDoc Reference &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="@ignore" href="api_jsdoc_at_ignore.html" />
+    <link rel="prev" title="Writing API Documentation" href="write_api_documentation.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../development.html" accesskey="U">Development</a>
+     &#187;
+    <a href="">JSDoc Reference</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="jsdoc-reference">
+<h1>JSDoc Reference<a class="headerlink" href="#jsdoc-reference" title="Permalink to this headline">¶</a></h1>
+<p>The declarative language used in JSDoc-like comments in qooxdoo has grown including specific extensions, maybe in some cases deviating from the <a class="reference external" href="http://code.google.com/p/jsdoc-toolkit/">official implementation</a>, so it makes sense to summarize the supported constructs.</p>
+<div class="section" id="overall-jsdoc-structure">
+<span id="pages-development-api-jsdoc-ref-the-structure-of-a-documentation-comment"></span><h2>Overall JSDoc Structure<a class="headerlink" href="#overall-jsdoc-structure" title="Permalink to this headline">¶</a></h2>
+<p>A doc comment appears right before the structure (class, property, method or constant) it describes. It begins with <code class="docutils literal"><span class="pre">/**</span></code> and ends with <code class="docutils literal"><span class="pre">*/</span></code>. The rows in between start with a <code class="docutils literal"><span class="pre">*</span></code> followed by the text of the particular row. Within this frame there is a description text at the beginning. Afterwards attributes may follow, describing more aspects.</p>
+<p>Description texts may also include HTML tags for a better structuring.</p>
+<p>An example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* Handles a drop.</span>
+<span class="cm">*</span>
+<span class="cm">* @param dragSource {qx.bla.DragSource} the drag source that was dropped.</span>
+<span class="cm">* @param targetElement {Element} the target element the drop aims to.</span>
+<span class="cm">* @param dropType {Integer ? null} the drop type. This is the same type</span>
+<span class="cm">*        as used in {@link qx.bla.DragEvent}.</span>
+<span class="cm">* @return {Boolean} whether the event was handled.</span>
+<span class="cm">* @throws if the targetElement is no child of this drop target.</span>
+<span class="cm">*</span>
+<span class="cm">* @see #getDragEvent(dragSource, elem, x, y)</span>
+<span class="cm">* @see com.ptvag.webcomponent.ui.dnd.DragEvent</span>
+<span class="cm">*/</span>
+<span class="nx">handleDrop</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">dragSource</span><span class="p">,</span> <span class="nx">targetElement</span><span class="p">,</span> <span class="nx">dropType</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<span id="pages-development-api-jsdoc-ref-inline-markup"></span><h2>Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<p>Running text can be formatted using inline markup which uses special characters around the target text:</p>
+<ul class="simple">
+<li>*strong* (will render as <strong>strong</strong>)</li>
+<li>__emphasis__  (will render as <em>emphasis</em>)</li>
+</ul>
+<p>There is no escape character, so in order to e.g. enter a literal &quot;<em>&#64;</em>&quot; into the text, use the HTML entity equivalent (&quot;<em>&amp;#64;</em>&quot; in this case).</p>
+<div class="section" id="html">
+<h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<p>There is limited support for HTML markup. You should be able to use all of the
+character-level tags, like <code class="docutils literal"><span class="pre">&lt;a&gt;</span></code> or <code class="docutils literal"><span class="pre">&lt;code&gt;</span></code>, as well as paragraph-level
+tags like <code class="docutils literal"><span class="pre">&lt;p&gt;</span></code> or <code class="docutils literal"><span class="pre">&lt;ul&gt;</span></code>. <code class="docutils literal"><span class="pre">&lt;pre&gt;</span></code> is particularly suited for code
+snippets, as it allows you to add syntax highlighting for JavaScript with <code class="docutils literal"><span class="pre">&lt;pre</span>
+<span class="pre">class=&quot;javascript&quot;&gt;</span></code>.</p>
+</div>
+</div>
+<div class="section" id="attributes-documentation-tags">
+<span id="pages-development-api-jsdoc-ref-attributes"></span><h2>Attributes / Documentation Tags<a class="headerlink" href="#attributes-documentation-tags" title="Permalink to this headline">¶</a></h2>
+<p>After the general description text there may follow any number of attributes or
+&quot;documentation tags&quot; (as the JSDoc3 spec calls them). They all have a common
+general syntax:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s1">&#39;@&#39;</span> <span class="o">&lt;</span><span class="nx">key</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">key_data</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>That is they all start with an at-sign, <code class="docutils literal"><span class="pre">&#64;</span></code>, as the first thing on a line within
+the JSDoc comment block. Then follows a special key from a pre-defined set of
+keys, like <cite>param</cite>, <cite>return</cite>, <cite>throws</cite> and the like. The key data is then
+key-specific and varies a bit. There might be keys that have no data at all.
+Some use a parenthesized syntax to indicate arguments (like <cite>&quot;&#64;ignore(foo)&quot;</cite>),
+other use a more verb-like syntax (like <cite>&quot;&#64;deprecated {5.0.2} use bar
+instead&quot;</cite>). Many of them allow free comment text at the end. See the <a class="reference internal" href="#section-reference">Section
+Reference</a> for a full list of supported attributes and their individual
+syntaxes.</p>
+<p>A new attribute entry or the end of the JSDoc comment terminate an attribute
+specification. Attributes may stretch across multiple lines. Lines following an
+attribute key are logically appended to the first line (i.e. the effect is as if
+you had written one long line).</p>
+<p>You can <strong>comment out</strong> an attribute by just prefixing it with another <code class="docutils literal"><span class="pre">&#64;</span></code>, like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@@ignore(foo)
+</pre></div>
+</div>
+<p>Then this attribute will simply be ignored.</p>
+<p>The following sections before the reference list of supported attributes give some
+general information that apply to some of them.</p>
+</div>
+<div class="section" id="handling-of-data-types">
+<span id="pages-development-api-jsdoc-ref-handling-of-data-types"></span><h2>Handling of Data Types<a class="headerlink" href="#handling-of-data-types" title="Permalink to this headline">¶</a></h2>
+<p>Because JavaScript has no strong typing, the types of the parameters accepted by a method may not be read from the method's definition. For showing the accepted types in the API documentation the data type may be specified in the doc attributes <code class="docutils literal"><span class="pre">&#64;param</span></code> and <code class="docutils literal"><span class="pre">&#64;return</span></code>.</p>
+<p>The following type indicators are accepted:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">Primitive</th>
+<td><code class="docutils literal"><span class="pre">var</span></code>, <code class="docutils literal"><span class="pre">void</span></code>, <code class="docutils literal"><span class="pre">undefined</span></code></td>
+</tr>
+<tr class="row-even"><th class="stub">Builtin classes</th>
+<td><code class="docutils literal"><span class="pre">Object</span></code>, <code class="docutils literal"><span class="pre">Boolean</span></code>, <code class="docutils literal"><span class="pre">String</span></code>, <code class="docutils literal"><span class="pre">Number</span></code>, <code class="docutils literal"><span class="pre">Integer</span></code>, <code class="docutils literal"><span class="pre">Float</span></code>,
+<code class="docutils literal"><span class="pre">Double</span></code>, <code class="docutils literal"><span class="pre">Regexp</span></code>, <code class="docutils literal"><span class="pre">Function</span></code>, <code class="docutils literal"><span class="pre">Error</span></code>, <code class="docutils literal"><span class="pre">Map</span></code>, <code class="docutils literal"><span class="pre">Date</span></code>,
+<code class="docutils literal"><span class="pre">Element</span></code></td>
+</tr>
+<tr class="row-odd"><th class="stub">Other classes</th>
+<td>Here the full qualified name is specified (e.g. <code class="docutils literal"><span class="pre">qx.ui.core.Widget</span></code>). If
+the referenced class is in the same package as the currently documented
+class, the plain class name is sufficient (e.g. <code class="docutils literal"><span class="pre">Widget</span></code>).</td>
+</tr>
+<tr class="row-even"><th class="stub">Lists</th>
+<td>Homogenous lists are indicated by adding one or more <code class="docutils literal"><span class="pre">[]</span></code> to the type,
+e.g. <code class="docutils literal"><span class="pre">String[]</span></code>, <code class="docutils literal"><span class="pre">Integer[][]</span></code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="syntax-of-a-type-specification">
+<span id="pages-development-api-jsdoc-ref-types-syntax"></span><h3>Syntax of a Type Specification<a class="headerlink" href="#syntax-of-a-type-specification" title="Permalink to this headline">¶</a></h3>
+<p>Here is the full syntax for a type specification as used in concrete doc
+attributes:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="sb">`{`</span> <span class="p">[</span> <span class="nx">Type1</span> <span class="sb">`|`</span> <span class="nx">Type2</span> <span class="sb">`|`</span> <span class="p">...</span> <span class="p">[</span> <span class="sb">`?`</span> <span class="p">[</span><span class="o">&lt;</span><span class="nx">default_value</span><span class="p">]]</span>  <span class="p">]</span> <span class="sb">`}`</span>
+</pre></div>
+</div>
+<p>That is, between curly braces an optional list of type indicators (as described
+above), separated by <code class="docutils literal"><span class="pre">|</span></code>, following an optional <code class="docutils literal"><span class="pre">?</span></code> to indicate the entire
+parameter is optional, followed by an optional default value (the last two for
+<code class="docutils literal"><span class="pre">&#64;param</span></code> attributes).</p>
+<p>For a parameter description the meaning is: The expected parameter can be of
+Type1 or Type2 or ..., is optional, i.e. can be left out, and will default to
+<em>&lt;default_value&gt;</em>.</p>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nb">String</span><span class="o">|</span><span class="nx">Integer</span> <span class="o">?</span> <span class="kc">null</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="matching-of-names-in-code">
+<span id="pages-development-api-jsdoc-ref-symbol-matching"></span><h2>Matching of Names in Code<a class="headerlink" href="#matching-of-names-in-code" title="Permalink to this headline">¶</a></h2>
+<p>Many of the JSDoc keys take some sort of symbol names as parameters, e.g. the
+<code class="docutils literal"><span class="pre">foo</span></code> in <code class="docutils literal"><span class="pre">&#64;ignore(foo)</span></code>, which are then matched against names found in the
+code. These parameters include global variables, built-in functions, function
+arguments, namespaces, and the like. It is important that you are aware of the
+semantics of those parameters, i.e. the way they are used to establish a match with a
+name actually found in the code. The left arrow in the schematics, <code class="docutils literal"><span class="pre">-&gt;</span></code>, can
+be read as &quot;matches&quot;.</p>
+<ul>
+<li><p class="first"><strong>Exact Match</strong></p>
+<p>The name matches the parameter exactly. Some keys restrict themselves to exact
+matches, e.g. the <em>alert</em> in <code class="docutils literal"><span class="pre">&#64;lint</span> <span class="pre">ignoreDeprecated(alert)</span></code> will only
+match the global symbol <em>alert</em> in the code, neither <em>aler</em> nor <em>alerty</em>
+nor <em>alert.foo</em>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">foo</span> <span class="p">(</span><span class="nx">parameter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">foo</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following match types include exact match, but also allow other kinds of
+matches. Non-exact matches always honor object boundaries (not just simple
+string prefixes), so e.g. <code class="docutils literal"><span class="pre">foo</span></code> might match <code class="docutils literal"><span class="pre">foo.bar</span></code> but will never match
+<code class="docutils literal"><span class="pre">foobar</span></code>.</p>
+</li>
+<li><p class="first"><strong>Prefix Match</strong></p>
+<p>The name matches a prefix of the parameter. Some keys regard the name from the
+code as a (pot. complete) prefix of their parameters. E.g. if you use
+<code class="docutils literal"><span class="pre">foo.bar.baz</span></code> as a parameter, <code class="docutils literal"><span class="pre">foo</span></code>, <code class="docutils literal"><span class="pre">foo.bar</span></code> and <code class="docutils literal"><span class="pre">foo.bar.baz</span></code> will
+be matched.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span> <span class="p">(</span><span class="nx">parameter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">foo</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Extension Match</strong></p>
+<p>The parameter matches a prefix of the name. Some keys regard the parameter as
+a prefix of the name from the code, again usually restricting it to object
+boundaries. In that case, a name <code class="docutils literal"><span class="pre">foo.bar</span></code> will match a parameter of
+<code class="docutils literal"><span class="pre">foo</span></code>, while the name <code class="docutils literal"><span class="pre">foozy</span></code> will not.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">foo</span> <span class="p">(</span><span class="nx">parameter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Wildcard Match</strong></p>
+<p>Some keys need an explicit, glob-style wildcard at the end to support
+extension matches. In that case you need to provide a parameter like
+<code class="docutils literal"><span class="pre">foo.*</span></code>, in order to match a name of <code class="docutils literal"><span class="pre">foo.bar</span></code> from the code . Again, a
+match has to honor object boundaries. In the case of a wildcard like
+<code class="docutils literal"><span class="pre">foo.*</span></code>, a simple <code class="docutils literal"><span class="pre">foo</span></code> will also be matched, so the exact match (without
+dot and wildcard) is included.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">foo</span><span class="p">.</span><span class="o">*</span> <span class="p">(</span><span class="nx">parameter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>The individual tags should make it clear which of those match semantics they use
+when checking actual code names. Many keys will allow not only one parameter,
+but a list of parameters. Matching is then applied to each parameter in turn,
+and if one of them matches the key applies.</p>
+</div>
+<div class="section" id="section-reference">
+<span id="pages-development-api-jsdoc-ref-supported-attributes"></span><h2>Section Reference<a class="headerlink" href="#section-reference" title="Permalink to this headline">¶</a></h2>
+<p>A JSDoc comment consists of different sections, where a section is either a leading text, the description, or an entry starting with an <code class="docutils literal"><span class="pre">&#64;</span></code> attribute. Here is a complete list of the supported sections.</p>
+<p><strong>Overview</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>API Documentation</td>
+<td><ul class="first last simple">
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#abstract">&#64;abstract</a></li>
+<li><a class="reference internal" href="#childcontrol">&#64;childControl</a></li>
+<li><a class="reference internal" href="#deprecated">&#64;deprecated</a></li>
+<li><a class="reference internal" href="#group">&#64;group</a></li>
+<li><a class="reference internal" href="#internal">&#64;internal</a></li>
+<li><a class="reference internal" href="#link">&#64;link</a></li>
+<li><a class="reference internal" href="#param">&#64;param</a></li>
+<li><a class="reference internal" href="#protected">&#64;protected</a></li>
+<li><a class="reference internal" href="#return">&#64;return</a></li>
+<li><a class="reference internal" href="#see">&#64;see</a></li>
+<li><a class="reference internal" href="#signature">&#64;signature</a></li>
+<li><a class="reference internal" href="#throws">&#64;throws</a></li>
+<li><a class="reference internal" href="#type">&#64;type</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Lint Checking</td>
+<td><ul class="first last simple">
+<li><a class="reference internal" href="#lint">&#64;lint</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Compiler</td>
+<td><ul class="first last simple">
+<li><a class="reference internal" href="#cldr">&#64;cldr</a></li>
+<li><a class="reference internal" href="#asset">&#64;asset</a></li>
+<li><a class="reference internal" href="#attach">&#64;attach</a></li>
+<li><a class="reference internal" href="#attachstatic">&#64;attachStatic</a></li>
+<li><a class="reference internal" href="#ignore">&#64;ignore</a></li>
+<li><a class="reference internal" href="#require">&#64;require</a></li>
+<li><a class="reference internal" href="#use">&#64;use</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Extra</td>
+<td><ul class="first last simple">
+<li><a class="reference internal" href="#tag">&#64;tag</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="api-ref section" id="description">
+<span id="pages-development-api-jsdoc-ref-description"></span><h3>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>General description of the item the JSDoc comment refers to.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div>Free text, without any leading <code class="docutils literal"><span class="pre">&#64;</span></code> attribute, containing HTML and/or markup, and some <code class="docutils literal"><span class="pre">&#64;</span></code> attributes that may be embedded in text (see further). If given must be the first section in the doc comment.</div></blockquote>
+</div>
+<div class="api-ref section" id="abstract">
+<span id="pages-development-api-jsdoc-ref-abstract"></span><h3>&#64;abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>methods</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Used to signify abstract methods in regular classes.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;abstract</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="childcontrol">
+<span id="pages-development-api-jsdoc-ref-childcontrol"></span><h3>&#64;childControl<a class="headerlink" href="#childcontrol" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>class</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>In a class description of a widget that is composed of various sub-widgets the <code class="docutils literal"><span class="pre">&#64;childControl</span></code> entry informs about those sub-widgets. This is relevant for users that want to apply a <a class="reference internal" href="../desktop/ui_appearance.html#pages-desktop-ui-appearance-appearance"><span class="std std-ref">custom theme</span></a> to the widget (the name is the default appearance ID), or implement <a class="reference internal" href="../desktop/ui_develop.html#pages-desktop-ui-develop-child-controls"><span class="std std-ref">own widgets</span></a> that derive from this.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;childControl</span> <span class="pre">&lt;name&gt;</span> <span class="pre">{</span> <span class="pre">&lt;type&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>An identifying name for the child control</td>
+</tr>
+<tr class="row-even"><th class="stub">type</th>
+<td>The <a class="reference internal" href="#pages-development-api-jsdoc-ref-types-syntax"><span class="std std-ref">type specification</span></a> of the child control widget</td>
+</tr>
+<tr class="row-odd"><th class="stub">description</th>
+<td><em>(opt.)</em> What the child control is used for in the context of this widget</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@childControl title {qx.ui.basic.Label} caption of the window
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="param">
+<span id="pages-development-api-jsdoc-ref-param"></span><h3>&#64;param<a class="headerlink" href="#param" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>functions</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Describes a parameter. <code class="docutils literal"><span class="pre">&#64;param</span></code> is followed by the name of the parameter. Following that is the type in curly brackets (Example: <code class="docutils literal"><span class="pre">{Integer}</span></code>), followed by the description text.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;param</span> <span class="pre">&lt;name&gt;</span> <span class="pre">{</span> <span class="pre">&lt;type&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>Name of formal parameter to function</td>
+</tr>
+<tr class="row-even"><th class="stub">type</th>
+<td>A <a class="reference internal" href="#pages-development-api-jsdoc-ref-types-syntax"><span class="std std-ref">type specification</span></a> like <code class="docutils literal"><span class="pre">{Boolean</span> <span class="pre">|</span> <span class="pre">Integer</span> <span class="pre">?</span> <span class="pre">0}</span></code></td>
+</tr>
+<tr class="row-odd"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text of the parameter</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@param foo {Integer} The main factor
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="protected">
+<span id="pages-development-api-jsdoc-ref-rotected"></span><h3>&#64;protected<a class="headerlink" href="#protected" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>functions</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Marks the method as protected. This is helpful if for some reason a protected
+method name cannot start with &quot;_&quot; (single underscore). With this attribute the Apiviewer can
+still classify the method as protected.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;protected</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text of the parameter</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@protected
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="type">
+<span id="pages-development-api-jsdoc-ref-type"></span><h3>&#64;type<a class="headerlink" href="#type" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Data</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;type</span></code> is usually used to document data items, esp. when the type is not immediately apparent in the code. This is for example the case when a class member is initialized with <code class="docutils literal"><span class="pre">null</span></code> and a value of some other type is then assigned in the constructor, so as to not share a single data value across multiple instances.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;type</span> <span class="pre">{</span> <span class="pre">&lt;type&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">type</th>
+<td>A <a class="reference internal" href="#pages-development-api-jsdoc-ref-types-syntax"><span class="std std-ref">type indicator</span></a> like <code class="docutils literal"><span class="pre">Map</span></code></td>
+</tr>
+<tr class="row-even"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text of the type</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@type {Map}
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="return">
+<span id="pages-development-api-jsdoc-ref-return"></span><h3>&#64;return<a class="headerlink" href="#return" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>functions</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Describes the return value.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;return</span> <span class="pre">{</span> <span class="pre">&lt;type&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">type</th>
+<td>The <a class="reference internal" href="#pages-development-api-jsdoc-ref-types-syntax"><span class="std std-ref">type</span></a> of the return value.</td>
+</tr>
+<tr class="row-even"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@return {Integer} The sum of the arguments
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="throws">
+<span id="pages-development-api-jsdoc-ref-throws"></span><h3>&#64;throws<a class="headerlink" href="#throws" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Functions</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Describes in which cases an exception is thrown.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;throws</span> <span class="pre">{</span> <span class="pre">&lt;type&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">type</th>
+<td>The <a class="reference internal" href="#pages-development-api-jsdoc-ref-types-syntax"><span class="std std-ref">type</span></a> of the exception</td>
+</tr>
+<tr class="row-even"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text under which circumstances this exception is thrown.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@throws {Error} If the parameter &#39;X&#39; is out of range.
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="see">
+<span id="pages-development-api-jsdoc-ref-see"></span><h3>&#64;see<a class="headerlink" href="#see" title="Permalink to this headline">¶</a></h3>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Adds a cross reference to another structure (class, property, method or constant).</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;see</span> <span class="pre">&lt;class_item&gt;</span> <span class="pre">[&lt;link_text&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">class_item</th>
+<td><p class="first">A class item is either a class name, or a class name followed by a <code class="docutils literal"><span class="pre">#</span></code>, followed by the name of a class attribute like property, method or constant. If you refer to a structure within the same class, then the class name may be omitted. If you refer to a class in the same package, then the package name before the class may be omitted. In all other cases you have to specify the fully qualified class name (e.g. <code class="docutils literal"><span class="pre">qx.ui.table.Table</span></code>). Some examples:</p>
+<ul class="last simple">
+<li><code class="docutils literal"><span class="pre">qx.ui.form.Button</span></code> refers to the class <code class="docutils literal"><span class="pre">Button</span></code> in the package <code class="docutils literal"><span class="pre">qx.ui.form</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">qx.constant.Type#NUMBER</span></code> links to the constant <code class="docutils literal"><span class="pre">NUMBER</span></code> of the class <code class="docutils literal"><span class="pre">qx.constant.Type</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">qx.core.Init#defineMain</span></code> refers to the method <code class="docutils literal"><span class="pre">defineMain</span></code> in the class <code class="docutils literal"><span class="pre">qx.core.Init</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><th class="stub">link_text</th>
+<td>An optional display text for the link. If missing <code class="docutils literal"><span class="pre">&lt;class_item&gt;</span></code> is shown.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;see</span> <span class="pre">qx.constant.Type#NUMBER</span> <span class="pre">the</span> <span class="pre">NUMBER</span> <span class="pre">types</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="link">
+<span id="pages-development-api-jsdoc-ref-link"></span><h3>&#64;link<a class="headerlink" href="#link" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Embedded in descriptive text, <a class="reference internal" href="#description">Description</a>.</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>The <code class="docutils literal"><span class="pre">&#64;link</span></code> attribute is similar to the <a class="reference internal" href="#see">&#64;see</a> attribute, but it is used for linking within description texts. Unlike the other attributes, the <code class="docutils literal"><span class="pre">&#64;link</span></code> attribute is not standalone, but in curly brackets and within the main description text or a description text of another attribute.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">{</span> <span class="pre">&#64;link</span> <span class="pre">&lt;class_item&gt;</span> <span class="pre">[&lt;link_text&gt;]</span> <span class="pre">}</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div>See <a class="reference internal" href="#see">&#64;see</a>.</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">You</span> <span class="pre">will</span> <span class="pre">find</span> <span class="pre">more</span> <span class="pre">information</span> <span class="pre">about</span> <span class="pre">NUMBER</span> <span class="pre">types</span> <span class="pre">{&#64;link</span> <span class="pre">qx.constant.Type#NUMBER</span> <span class="pre">here}.</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="signature">
+<span id="pages-development-api-jsdoc-ref-signature"></span><h3>&#64;signature<a class="headerlink" href="#signature" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Functions</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Sometimes the API documentation generator is not able to extract the method signature from the source code. This for example is the case when the method is defined using a <code class="docutils literal"><span class="pre">qx.core.Environment</span></code> selection, or if the method is assigned from a method constant like <code class="docutils literal"><span class="pre">qx.lang.Function.returnTrue</span></code>. In these cases the method signature can be declared inside the documentation comment using the <code class="docutils literal"><span class="pre">&#64;signature</span></code> attribute.  You can also add individual parameter names to the signature, but then need to provide <code class="docutils literal"><span class="pre">&#64;param</span></code> entries for each of them.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;signature</span> <span class="pre">function</span> <span class="pre">(</span> <span class="pre">&lt;param&gt;,</span> <span class="pre">...</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">param</th>
+<td>Names for parameters; must match potential <code class="docutils literal"><span class="pre">&#64;param</span></code> sections.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">members</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Always returns true</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return {Boolean} returns true</span>
+<span class="cm">     * @signature function()</span>
+<span class="cm">     */</span>
+    <span class="nx">sayTrue</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nb">Function</span><span class="p">.</span><span class="nx">returnTrue</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>With parameters:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">members</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Always returns false, but takes some parameters.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return {Boolean} returns false</span>
+<span class="cm">     *</span>
+<span class="cm">     * @signature function(foo, bar, baz)</span>
+<span class="cm">     * @param foo {String} ...</span>
+<span class="cm">     * @param bar {Integer} ...</span>
+<span class="cm">     * @param baz {Map} ...</span>
+<span class="cm">     */</span>
+    <span class="nx">sayFalse</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="p">...</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="internal">
+<span id="pages-development-api-jsdoc-ref-internal"></span><h3>&#64;internal<a class="headerlink" href="#internal" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Class, function</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Mark the given entity as internal, i.e. not part of the library's public API. A method marked internal will be hidden in the Apiviewer. A class marked internal is still shown in the Apiviewer, but is highlighted as internal. Classes marked internal should not be instantiated in code using the library, internal methods should not be called from outside of it.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;internal</span></code></div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@internal
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="deprecated">
+<span id="pages-development-api-jsdoc-ref-deprecated"></span><h3>&#64;deprecated<a class="headerlink" href="#deprecated" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Class, function</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Mark the given entity as deprecated, i.e. library users should no longer use this entry. It will be removed over time.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;deprecated</span> <span class="pre">{</span> <span class="pre">&lt;since_version&gt;</span> <span class="pre">}</span> <span class="pre">[&lt;description&gt;]</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">since_version</th>
+<td>qooxdoo version with which the corresponding item was deprecated</td>
+</tr>
+<tr class="row-even"><th class="stub">description</th>
+<td><em>(opt.)</em> Descriptive text of the deprecation</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@deprecated {2.1} Please use Object.keys instead
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="lint">
+<span id="pages-development-api-jsdoc-ref-lint"></span><h3>&#64;lint<a class="headerlink" href="#lint" title="Permalink to this headline">¶</a></h3>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><p>Taylor warning messages for the source code. This attribute is evaluated at compile time, and influences the warnings issued by the generator. It has no relevance for the API documentation of the code.
+The general idea is to switch off warnings for certain situations in the code, mostly related to the identifiers used.</p>
+<p>Within one JSDoc comment, the same subkey can appear multiple times.</p>
+</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;lint</span> <span class="pre">&lt;subkey&gt;</span> <span class="pre">(</span> <span class="pre">&lt;name&gt;</span> <span class="pre">,...</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">subkey</th>
+<td><dl class="first last docutils">
+<dt>The following subkeys are supported:</dt>
+<dd><ul class="first last">
+<li><p class="first"><strong>environmentNonLiteralKey</strong></p>
+<p>Don't warn about calls to <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.core.Environment">qx.core.Environment</a> methods without a literal key argument (as such calls cannot be optimized). With no argument, applies to all calls to <em>qx.core.Environment.(get|select)</em> in the scope. If given arguments, only the calls using the corresponding variables as keys are exempted.</p>
+</li>
+<li><p class="first"><strong>ignoreDeprecated</strong></p>
+<p>Use of deprecated globals (like <code class="docutils literal"><span class="pre">alert</span></code>).</p>
+</li>
+<li><p class="first"><strong>ignoreNoLoopBlock</strong></p>
+<p>Don't warn about loop or condition statements which don't have a block (<code class="docutils literal"><span class="pre">{...}</span></code>) as body. Takes no argument.</p>
+</li>
+<li><p class="first"><strong>ignoreReferenceField</strong></p>
+<p>A class map member that is initialized with a reference value (object, array, map, ...), as those will be shared among class instances.</p>
+</li>
+<li><p class="first"><strong>ignoreUndefined</strong></p>
+<p><em>(Deprecated)</em> This key is deprecated for the more general <a class="reference internal" href="#pages-development-api-jsdoc-ref-ignore"><span class="std std-ref">&#64;ignore</span></a> hint.</p>
+</li>
+<li><p class="first"><strong>ignoreUnused</strong></p>
+<p>Scoped variables (function parameters, function expression's identifier, or variables declared with <code class="docutils literal"><span class="pre">var</span></code>) which are never used.</p>
+</li>
+<li><p class="first"><strong>ignoreJsdocKey</strong></p>
+<p>JSDoc &#64; keys which are either unknown (i.e. not documented on this page) or do not comply with the syntax given here.</p>
+</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><th class="stub">name</th>
+<td>The identifier which the lint subkey should be applied to.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p>To turn off warnings for a global symbol <code class="docutils literal"><span class="pre">foo</span></code> that is not known to the generator, but will be available at runtime of the code, use</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@lint ignoreUndefined(foo)
+</pre></div>
+</div>
+<p>To silence warnings for non-literal key arguments in Environment calls use</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@lint environmentNonLiteralKey()
+</pre></div>
+</div>
+<p>To apply this only to calls using a specific key argument <code class="docutils literal"><span class="pre">foo</span></code> use</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@lint environmentNonLiteralKey(foo)
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="cldr">
+<span id="pages-development-api-jsdoc-ref-cldr"></span><h3>&#64;cldr<a class="headerlink" href="#cldr" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Class</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>This hint indicates that the class needs CLDR data (e.g. names of months or
+week-days). It takes no arguments.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;cldr()</span></code></div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;cldr()</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="asset">
+<span id="pages-development-api-jsdoc-ref-asset"></span><h3>&#64;asset<a class="headerlink" href="#asset" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Class</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><p>Request resources, like images, that this class uses to be included in a build.</p>
+<p>You can also use <code class="docutils literal"><span class="pre">*</span></code> as a wildcard character, to request entire
+resource namespaces: <code class="docutils literal"><span class="pre">&#64;asset(foo/*)</span></code> will request all resources found under
+the &quot;foo/&quot; namespace.</p>
+</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;asset</span> <span class="pre">(</span> <span class="pre">&lt;resource_id&gt;</span> <span class="pre">,</span> <span class="pre">[&lt;resource_id&gt;]</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">resource_id</th>
+<td>The resource ID or resource pattern to be added.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&#64;asset(custom/test.png)</span></code></p>
+<p>This will add the image <code class="docutils literal"><span class="pre">custom/test.png</span></code> to the build.</p>
+<p><code class="docutils literal"><span class="pre">&#64;asset(custom/*)</span></code></p>
+<p>Add all resources under the <code class="docutils literal"><span class="pre">custom</span></code> name space to the build.</p>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="attach">
+<span id="pages-development-api-jsdoc-ref-attach"></span><h3>&#64;attach<a class="headerlink" href="#attach" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Function</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Attach the function to the <em>members</em> section of the given class, using the opt. second parameter as the member name.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;attach</span> <span class="pre">{</span> <span class="pre">&lt;class&gt;</span> <span class="pre">,</span> <span class="pre">[&lt;feature_name&gt;]</span> <span class="pre">}</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">class</th>
+<td>Class ID where the function should be attached.</td>
+</tr>
+<tr class="row-even"><th class="stub">feature_name</th>
+<td><em>(opt.)</em> Feature name under which the function should be attached; if missing, the original function name is used.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&#64;attach{foo.MyClass,</span> <span class="pre">bar}</span></code></p>
+<p>This will attach the given function to the class <code class="docutils literal"><span class="pre">foo.MyClass</span></code> as a member function, under the name <code class="docutils literal"><span class="pre">bar</span></code>, so you can call it like <code class="docutils literal"><span class="pre">f=new</span> <span class="pre">foo.MyClass();</span> <span class="pre">f.bar()</span></code>.</p>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="attachstatic">
+<span id="pages-development-api-jsdoc-ref-attachstatic"></span><h3>&#64;attachStatic<a class="headerlink" href="#attachstatic" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Function</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>As with <a class="reference internal" href="#attach">&#64;attach</a> above, but attach the function to the <em>statics</em> section of the given class, using the opt. second parameter as the statics' name.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;attachStatic</span> <span class="pre">{</span> <span class="pre">&lt;class&gt;</span> <span class="pre">,</span> <span class="pre">[&lt;feature_name&gt;]</span> <span class="pre">}</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">class</th>
+<td>Class ID where the function should be attached.</td>
+</tr>
+<tr class="row-even"><th class="stub">feature_name</th>
+<td><em>(opt.)</em> Feature name under which the function should be attached; if missing, the original function name is used.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&#64;attachStatic{foo.MyClass,</span> <span class="pre">bar}</span></code></p>
+<p>This will attach the given function to the class <code class="docutils literal"><span class="pre">foo.MyClass</span></code> as a static function, under the name <code class="docutils literal"><span class="pre">bar</span></code>, so you can call it like <code class="docutils literal"><span class="pre">foo.MyClass.bar()</span></code>.</p>
+</div></blockquote>
+</div>
+<div class="api-ref section" id="group">
+<span id="pages-development-api-jsdoc-ref-group"></span><h3>&#64;group<a class="headerlink" href="#group" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>Class</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>Adds a 'group' attribute to the API data of this class. This attribute is additionally copied to every method in this class that also has an &#64;attach or &#64;attachStatic hint.</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;group</span> <span class="pre">(</span> <span class="pre">&lt;name&gt;</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>Group name.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;group</span> <span class="pre">(Event_Normalization)</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="require">
+<span id="pages-development-api-jsdoc-ref-require"></span><h3>&#64;require<a class="headerlink" href="#require" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>File</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><p>Enforce the inclusion of a required class <em>before</em> the current code. Use this
+only if the generator cannot determine the dependency automatically.</p>
+<p>There is one special name, <code class="docutils literal"><span class="pre">feature-checks</span></code>, which is reserved for internal
+use and shouldn't be used in normal application code. This will add all known
+feature check classes as load time dependencies to the current class.</p>
+</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;require</span> <span class="pre">(</span> <span class="pre">&lt;name&gt;</span> <span class="pre">,...</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>Class name to include.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;require(qx.core.Object)</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="use">
+<span id="pages-development-api-jsdoc-ref-use"></span><h3>&#64;use<a class="headerlink" href="#use" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>File</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><p>Enforce the inclusion of a required class. Use this only if the generator
+cannot determine the dependency automatically.</p>
+<p>There is one special name, <code class="docutils literal"><span class="pre">feature-checks</span></code>, which is reserved for internal
+use and shouldn't be used in normal application code. This will add all known
+feature check classes as run time dependencies to the current class.</p>
+</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;use</span> <span class="pre">(</span> <span class="pre">&lt;name&gt;</span> <span class="pre">,...</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>Class name to include.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;use(qx.core.Object)</span></code></div></blockquote>
+</div>
+<div class="api-ref section" id="ignore">
+<span id="pages-development-api-jsdoc-ref-ignore"></span><h3>&#64;ignore<a class="headerlink" href="#ignore" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>File, class, function</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div><p>Ignore the occurrence of global symbols. This &#64; hint has two implications:</p>
+<ul class="simple">
+<li>Don't warn about it if the symbol is unknown (i.e. is not in any known library
+or a known built-in), i.e. it influences the lint system.</li>
+<li>Don't include the symbol in the build, i.e. it influences the compiler
+system which then also doesn't follow the symbol's dependencies.</li>
+</ul>
+<p>There are two special names that may be used in application code:</p>
+<ul class="simple">
+<li><strong>auto-require</strong> : Ignore all load time dependencies detected by the
+automatic analysis; they will not be added to the class' load dependencies.
+<em>This effectively turns off the automatic processing of load time
+dependencies for this class</em>.</li>
+<li><strong>auto-use</strong> : Ignore all run time dependencies detected by the automatic
+analysis; they will not be added to the class' run dependencies. <em>This
+effectively turns off the automatic processing of run time dependencies for
+this class</em>.</li>
+</ul>
+<p>You can also use <code class="docutils literal"><span class="pre">*</span></code> as a wildcard character, to ignore entire
+class APIs or namespaces: <code class="docutils literal"><span class="pre">&#64;ignore(foo.*)</span></code> will ignore &quot;foo&quot;
+and any symbol starting with &quot;foo.&quot;. Otherwise, matches are exact so
+<cite>&#64;ignore(foo)</cite> will only ignore &quot;foo&quot;, but not &quot;foo.bar&quot;.</p>
+</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;ignore</span> <span class="pre">(</span> <span class="pre">&lt;name&gt;</span> <span class="pre">,...</span> <span class="pre">)</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">name</th>
+<td>Class name to include. The name can include trailing wildcards, to
+ignore entire class APIs or namespaces, e.g. <code class="docutils literal"><span class="pre">qx.dev.Debug.*</span></code> or
+<code class="docutils literal"><span class="pre">qx.dev.unit.*</span></code>.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;ignore(qx.dev.unit.TestSuite)</span></code></div></blockquote>
+<p><strong>See</strong></p>
+<blockquote>
+<div>Special section on <a class="reference internal" href="api_jsdoc_at_ignore.html"><span class="doc">&#64;ignore</span></a>.</div></blockquote>
+</div>
+<div class="api-ref section" id="tag">
+<span id="pages-development-api-jsdoc-ref-tag"></span><h3>&#64;tag<a class="headerlink" href="#tag" title="Permalink to this headline">¶</a></h3>
+<p><strong>Scope</strong></p>
+<blockquote>
+<div>any</div></blockquote>
+<p><strong>Description</strong></p>
+<blockquote>
+<div>The <code class="docutils literal"><span class="pre">&#64;tag</span></code> entry allows to do arbitrary tagging on the entity that is being documented (class, method, ...). This allows for pre-processing of the source code with custom programs, e.g. to extract those tags and make them available to the application at runtime (see the <a class="reference internal" href="../application/demobrowser.html"><span class="doc">Demobrowser</span></a> application for an example of this).</div></blockquote>
+<p><strong>Syntax</strong></p>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">&#64;tag</span> <span class="pre">&lt;text&gt;</span></code></div></blockquote>
+<p><strong>Parameters</strong></p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">text</th>
+<td>Arbitrary text, usually short or composed tag names</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span></span>@tag noPlayground
+@tag single value binding
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="write_api_documentation.html"
+             title="previous chapter">« Writing API Documentation</a>
+          <span class="separator">|</span>
+          <a class="next" href="api_jsdoc_at_ignore.html"
+             title="next chapter">&#64;ignore »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">JSDoc Reference</a><ul>
+<li><a class="reference internal" href="#overall-jsdoc-structure">Overall JSDoc Structure</a></li>
+<li><a class="reference internal" href="#inline-markup">Inline Markup</a><ul>
+<li><a class="reference internal" href="#html">HTML</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#attributes-documentation-tags">Attributes / Documentation Tags</a></li>
+<li><a class="reference internal" href="#handling-of-data-types">Handling of Data Types</a><ul>
+<li><a class="reference internal" href="#syntax-of-a-type-specification">Syntax of a Type Specification</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#matching-of-names-in-code">Matching of Names in Code</a></li>
+<li><a class="reference internal" href="#section-reference">Section Reference</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#abstract">&#64;abstract</a></li>
+<li><a class="reference internal" href="#childcontrol">&#64;childControl</a></li>
+<li><a class="reference internal" href="#param">&#64;param</a></li>
+<li><a class="reference internal" href="#protected">&#64;protected</a></li>
+<li><a class="reference internal" href="#type">&#64;type</a></li>
+<li><a class="reference internal" href="#return">&#64;return</a></li>
+<li><a class="reference internal" href="#throws">&#64;throws</a></li>
+<li><a class="reference internal" href="#see">&#64;see</a></li>
+<li><a class="reference internal" href="#link">&#64;link</a></li>
+<li><a class="reference internal" href="#signature">&#64;signature</a></li>
+<li><a class="reference internal" href="#internal">&#64;internal</a></li>
+<li><a class="reference internal" href="#deprecated">&#64;deprecated</a></li>
+<li><a class="reference internal" href="#lint">&#64;lint</a></li>
+<li><a class="reference internal" href="#cldr">&#64;cldr</a></li>
+<li><a class="reference internal" href="#asset">&#64;asset</a></li>
+<li><a class="reference internal" href="#attach">&#64;attach</a></li>
+<li><a class="reference internal" href="#attachstatic">&#64;attachStatic</a></li>
+<li><a class="reference internal" href="#group">&#64;group</a></li>
+<li><a class="reference internal" href="#require">&#64;require</a></li>
+<li><a class="reference internal" href="#use">&#64;use</a></li>
+<li><a class="reference internal" href="#ignore">&#64;ignore</a></li>
+<li><a class="reference internal" href="#tag">&#64;tag</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="api_jsdoc_at_ignore.html"
+                        title="next chapter">&#64;ignore</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="write_api_documentation.html"
+                        title="previous chapter">Writing API Documentation</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/api_jsdoc_ref.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

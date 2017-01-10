@@ -1,0 +1,313 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Code Organisation Introduction &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="Custom Libraries" href="library_custom.html" />
+    <link rel="prev" title="Test Runner" href="frame_apps_testrunner.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../development.html" accesskey="U">Development</a>
+     &#187;
+    <a href="">Code Organisation Introduction</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="code-organisation-introduction">
+<h1>Code Organisation Introduction<a class="headerlink" href="#code-organisation-introduction" title="Permalink to this headline">¶</a></h1>
+<p>From a conceptual point of view there are only two broad categories in
+qooxdoo's programming model, <strong>libraries</strong> and <strong>applications</strong>.</p>
+<p><em>Libraries</em> are basically containers that hold resources of any kind, class
+files, JS code, images, html and translation files, you name it. In this sense,
+the framework class library and its resources is nothing more than a big library.
+<em>Applications</em> are artefacts that are built from the resources of these
+libraries. They are the &quot;deliverables&quot; that can be deployed, can be run under
+some runtime environment like a browser or Node.js, or are shipped to be
+consumed elsewhere. Libraries provide the &quot;parts&quot;, applications are the
+&quot;products&quot; made from these parts.</p>
+<p>What constitutes a library is its <a class="reference internal" href="../tool/sdk/manifest.html"><span class="doc">Manifest.json</span></a> file which provides the main meta-data, and
+paths on disk which hold class code and
+resources. That's it, and this is exactly what most application <a class="reference internal" href="skeletons.html"><span class="doc">skeletons</span></a> create. So once
+you've run <em>create-application.py</em> the result can immediately be used as a
+library. (The fact that it has a main class which can be run as
+an application doesn't matter).</p>
+<p>In contrast to libraries which hold the majority of all the files you deal with
+(hence this little saying that in qooxdoo <em>&quot;everything is in a library&quot;</em>),
+applications, which are basically generated artefacts, are related only with two
+standard files, <code class="docutils literal"><span class="pre">config.json</span></code> and <code class="docutils literal"><span class="pre">generate.py</span></code>, or more abstractly build
+configuration and build tool interface. That means you can put a qooxdoo
+configuration file anywhere on your file system, enter some paths to existing
+libraries and some build options, and invoking <cite>tool/bin/generator.py</cite> create a
+qooxdoo application right away. Bang! But for convenience these files are
+also included with the skeletons, making each skeleton a library (Manifest.json)
+and a build environment (config.json) at the same time <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><em>In addition to referring to a generated artefact that can e.g. run in a
+browser we sometimes speak about an &quot;application&quot; and mean the library which
+contains the main class, the one that will be used to start the entire
+application at runtime.</em></td></tr>
+</tbody>
+</table>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="frame_apps_testrunner.html"
+             title="previous chapter">« Test Runner</a>
+          <span class="separator">|</span>
+          <a class="next" href="library_custom.html"
+             title="next chapter">Custom Libraries »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="library_custom.html"
+                        title="next chapter">Custom Libraries</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="frame_apps_testrunner.html"
+                        title="previous chapter">Test Runner</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/code_organisation.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

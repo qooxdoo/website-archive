@@ -1,0 +1,417 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Three steps for efficient theme development &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="The Event Layer" href="event_layer_impl.html" />
+    <link rel="prev" title="Using themes of contributions in your application" href="ui_using_themes_of_contribs.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">Three steps for efficient theme development</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="three-steps-for-efficient-theme-development">
+<span id="pages-ui-using-widgetbrowser-for-theme-development-three-steps-for-efficient-theme-development"></span><h1>Three steps for efficient theme development<a class="headerlink" href="#three-steps-for-efficient-theme-development" title="Permalink to this headline">¶</a></h1>
+<p>The widgetbrowser application is used by the framework to showcase the widgets
+and the available themes. With the feature to switch the themes at run-time you
+can quickly get an overview of the theming capabilities of the desktop widget
+set.</p>
+<p>So this should be a perfect match if you like to develop an own custom theme,
+right? Every widget is displayed within the widgetbrowser and this would help a
+lot to develop an own custom them from scratch.</p>
+<p>To turn this into reality the widgetbrowser application got some enhancements
+and now it is very easy to use it for theme development. This little tutorial
+will show you the three steps you need.</p>
+<div class="section" id="kickoff-create-a-new-application">
+<h2>Kickoff: Create a new application<a class="headerlink" href="#kickoff-create-a-new-application" title="Permalink to this headline">¶</a></h2>
+<p>We will demonstrate a desktop theme so we will create a desktop app here
+and integrate the widgetbrowser. If you are writing a theme for a different
+kind of app, then you have to use the corresponding type (i.e. mobile or website)
+during app creation and corresponding showcase app (i.e. Mobile Showcase or
+Website Widget Browser).</p>
+<p>Creating a desktop skeleton is one command away:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span># -t desktop could be omitted cause it&#39;s the default
+create-application.py -t desktop -n &lt;NAME_OF_YOUR_THEME&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="integration-how-the-widgetbrowser-joins-the-game">
+<h2>Integration: How the widgetbrowser joins the game<a class="headerlink" href="#integration-how-the-widgetbrowser-joins-the-game" title="Permalink to this headline">¶</a></h2>
+<p>Pulling in the widgetbrowser into your application is done by editing two files: the <code class="docutils literal"><span class="pre">config.json</span></code> and the <code class="docutils literal"><span class="pre">Application.js</span></code> of your demo application.</p>
+<p>The configuration has to be edited like this (original values are commented out):</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Point the top-level include to the widgetbrowser configuration</span>
+<span class="s2">&quot;include&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="c1">//&quot;path&quot; : &quot;${QOOXDOO_PATH}/tool/data/config/application.json&quot;</span>
+    <span class="s2">&quot;path&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/application/widgetbrowser/config.json&quot;</span>
+  <span class="p">}</span>
+<span class="p">],</span>
+
+
+<span class="c1">// Change the default theme of your application</span>
+<span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="c1">// ...</span>
+
+  <span class="c1">//&quot;QXTHEME&quot;      : &quot;NAMESPACE.demo.theme.Theme&quot;,</span>
+  <span class="s2">&quot;QXTHEME&quot;</span>      <span class="o">:</span> <span class="s2">&quot;NAMESPACE.theme.modern.Theme&quot;</span><span class="p">,</span>
+
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+
+
+<span class="c1">// Add the widgetbrowser as library at the &#39;libraries&#39; job</span>
+<span class="s2">&quot;libraries&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;library&quot;</span> <span class="o">:</span>
+  <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;manifest&quot;</span> <span class="o">:</span> <span class="s2">&quot;../../Manifest.json&quot;</span>
+    <span class="p">},</span>
+
+    <span class="p">{</span>
+      <span class="s2">&quot;manifest&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/application/widgetbrowser/Manifest.json&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+
+
+<span class="c1">// Add a custom &#39;common&#39; job right after the existing &#39;libraries&#39; job</span>
+<span class="s2">&quot;common&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;packages&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;parts&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;boot&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+        <span class="s2">&quot;include&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${APPLICATION}.Application&quot;</span><span class="p">,</span> <span class="s2">&quot;${QXTHEME}&quot;</span> <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>With these modification you pulled the configuration of the widgetbrowser into your own application. Basically your application is now a kind of copy of the widgetbrowser. But wait: how about the JavaScript part?</p>
+<p>Well this is done by editing the <code class="docutils literal"><span class="pre">Application.js</span></code> of your application. To keep it simple just replace your existing class by this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;NAMESPACE.demo.Application&quot;</span><span class="p">,</span>
+<span class="p">{</span>
+  <span class="c1">// use the application class of the widgetbrowser as parent class</span>
+  <span class="nx">extend</span> <span class="o">:</span> <span class="nx">widgetbrowser</span><span class="p">.</span><span class="nx">Application</span><span class="p">,</span>
+
+  <span class="cm">/*</span>
+<span class="cm">  *******************************************************************</span>
+<span class="cm">     MEMBERS</span>
+<span class="cm">  *******************************************************************</span>
+<span class="cm">  */</span>
+
+  <span class="nx">members</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="c1">// extend the &#39;getThemes&#39; method and add your own theme to the list</span>
+    <span class="nx">getThemes</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">([</span>
+        <span class="p">{</span><span class="s2">&quot;Indigo&quot;</span> <span class="o">:</span> <span class="s2">&quot;qx.theme.Indigo&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;Modern&quot;</span> <span class="o">:</span> <span class="s2">&quot;qx.theme.Modern&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;Simple&quot;</span> <span class="o">:</span> <span class="s2">&quot;qx.theme.Simple&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;Classic&quot;</span> <span class="o">:</span> <span class="s2">&quot;qx.theme.Classic&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;new theme&quot;</span> <span class="o">:</span> <span class="s2">&quot;NAMESPACE.theme.modern.Theme&quot;</span><span class="p">}</span>
+      <span class="p">]);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>That's it! Run <code class="docutils literal"><span class="pre">generate.py</span></code> within the <code class="docutils literal"><span class="pre">demo</span></code> folder and open it in your favorite browser.</p>
+</div>
+<div class="section" id="final-touch-add-your-theme-name-and-version">
+<h2>Final touch: Add your theme name and version<a class="headerlink" href="#final-touch-add-your-theme-name-and-version" title="Permalink to this headline">¶</a></h2>
+<p>At the right upper corner of the widgetbrowser application you can easily replace the default name and version with your own to inform the user about the name of the theme and its version.</p>
+<p>This is an additional minor adjustment in the <code class="docutils literal"><span class="pre">config.json</span></code> file:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// ...</span>
+
+<span class="c1">// Add these lines to your &#39;common&#39; job and adapt it to your needs</span>
+<span class="s2">&quot;environment&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;versionLabel.name&quot;</span> <span class="o">:</span> <span class="s2">&quot;YOUR THEME NAME&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;versionLabel.version&quot;</span> <span class="o">:</span> <span class="s2">&quot;YOUR THEME VERSION&quot;</span>
+<span class="p">},</span>
+
+<span class="c1">// ...</span>
+</pre></div>
+</div>
+<p>Re-run the <code class="docutils literal"><span class="pre">generate.py</span></code> script to get this update into your application and enjoy!</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="ui_using_themes_of_contribs.html"
+             title="previous chapter">« Using themes of contributions in your application</a>
+          <span class="separator">|</span>
+          <a class="next" href="event_layer_impl.html"
+             title="next chapter">The Event Layer »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Three steps for efficient theme development</a><ul>
+<li><a class="reference internal" href="#kickoff-create-a-new-application">Kickoff: Create a new application</a></li>
+<li><a class="reference internal" href="#integration-how-the-widgetbrowser-joins-the-game">Integration: How the widgetbrowser joins the game</a></li>
+<li><a class="reference internal" href="#final-touch-add-your-theme-name-and-version">Final touch: Add your theme name and version</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="event_layer_impl.html"
+                        title="next chapter">The Event Layer</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="ui_using_themes_of_contribs.html"
+                        title="previous chapter">Using themes of contributions in your application</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/ui_using_widgetbrowser_for_theme_development.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

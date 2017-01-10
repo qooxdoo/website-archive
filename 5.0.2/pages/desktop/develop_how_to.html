@@ -1,0 +1,437 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How to Develop a qx.Desktop Application &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="Widget" href="../widget.html" />
+    <link rel="prev" title="Overview" href="ui_overview.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">How to Develop a qx.Desktop Application</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="how-to-develop-a-qx-desktop-application">
+<h1>How to Develop a qx.Desktop Application<a class="headerlink" href="#how-to-develop-a-qx-desktop-application" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-cycle-of-activities">
+<h2>General Cycle of Activities<a class="headerlink" href="#general-cycle-of-activities" title="Permalink to this headline">¶</a></h2>
+<p>The general cycle of development activities while creating a desktop application is roughly:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Create a <em>source</em> version of your app.</li>
+<li>Load it in a browser.</li>
+<li>Test, experiment, debug.</li>
+<li>Make changes to the source code.</li>
+<li>Cycle to 2.</li>
+</ol>
+</div></blockquote>
+<p>This will be the main cycle of your activities.</p>
+<p>Mind that you start with a Generator run creating your application. This is
+necessary to produce a runnable application that will work in a browser. You
+might have to re-run this step, depending on the variant of source version you
+created. (In such a case, you will cycle to 1. instead of 2.). The currently
+available source jobs include
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source"><span class="std std-ref">source</span></a>,
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-all"><span class="std std-ref">source-all</span></a> and
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-hybrid"><span class="std std-ref">source-hybrid</span></a>. You can also use our <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-watch"><span class="std std-ref">watch</span></a> job which will mirror all your changes and start the generation job automatically. See their individual job descriptions for details.</p>
+</div>
+<div class="section" id="build-version">
+<h2>Build Version<a class="headerlink" href="#build-version" title="Permalink to this headline">¶</a></h2>
+<p>The basic programming model of qooxdoo suggests that you develop your
+application in its source version, and once you're satisfied create
+the <em>build</em> version of it, which is then deployed on a web server.
+qooxdoo's build versions of an application are self-contained, they encompass
+all script files, resources like images and style sheets, and any helper files
+that are necessary for the application. You can safely copy the build
+directory to the document forest of a web server, or zip it up in an archive
+and send it by mail; the recipient should be able to unpack it and run the
+application without flaws.</p>
+<p>For a bit of background, here are more details of the build version.</p>
+<div class="section" id="class-code">
+<h3>Class Code<a class="headerlink" href="#class-code" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Class code is compressed and optimized, and put in only a few script files,
+which are later loaded by the loader script.</li>
+<li>The number of script files is
+highly configurable, depending mainly on the us of <a class="reference internal" href="../development/parts_overview.html#pages-parts-overview-parts-and-packages-overview"><span class="std std-ref">parts</span></a>. In general, the Generator
+tries to minimize the number of script files.</li>
+</ul>
+</div>
+<div class="section" id="resources">
+<h3>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Images like icons or decorators that are required by the classes which go into
+the application are copied from the various libraries they belong to. A
+<cite>resource</cite> directory tree is created in the build folder that reflects the
+various name spaces of the included images.</li>
+<li>The same applies to other static resources like style sheets, HTML files, or
+media files.</li>
+<li>The <cite>index.html</cite> file is copied from the source directory.</li>
+</ul>
+</div>
+<div class="section" id="translations-and-localisation-data">
+<h3>Translations and Localisation Data<a class="headerlink" href="#translations-and-localisation-data" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Translated strings and localisation data like calendar items are compiled into
+the JS script files, together with the class code.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="running-the-source-version-through-a-web-server">
+<span id="pages-desktop-develop-how-to-source-through-web-server"></span><h2>Running the Source Version through a Web Server<a class="headerlink" href="#running-the-source-version-through-a-web-server" title="Permalink to this headline">¶</a></h2>
+<p>Basically, the source version of an application can be run off of the file
+system (i.e. opening it with the <em>file://</em> protocol in your
+browser). But there are reasons why you would want to run it over a web server.
+You might need to integrate with backend services during development time, so
+frontend and backend service points need to be on the same web server.
+Same-origin-policy for other resources you want to use in your app might force
+you into the same direction. And, browsers have increasingly become constraint,
+e.g. when XHR requests go to the local disk from the <em>file://</em> protocol. This
+impedes applications that just want to load some JSON data.</p>
+<p>The issue with the the source version is that the generated loader script just
+references source code and resources with relative paths, wherever they happen
+to be on your file system. This poses some challenges when run from a web
+server. Even if you include your application in a server-accessible path
+(somewhere down from its document root or one of the defined aliases), chances
+are that the source script references files which are <strong>outside</strong> the document
+scope of the web server.</p>
+<div class="section" id="web-server-jobs">
+<h3>Web Server Jobs<a class="headerlink" href="#web-server-jobs" title="Permalink to this headline">¶</a></h3>
+<p>We have therefore provided two Generator jobs that address this situation, and
+which you can run in your application main directory. Both build on the fact
+that you can usually find a <em>common root</em> of all involved paths on the file
+system, and to use that common root as an entry point for a web server.</p>
+<p>The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-server"><span class="std std-ref">source-server</span></a> job starts
+a simple built-in web server that exports the common root as its document root.
+The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-httpd-config"><span class="std std-ref">source-httpd-config</span></a> job,
+on the other hand, generates a web server configuration file, suitable for the
+most popular web servers, so you can include it with your existing web server
+setup. Both jobs will print on the console the URL with which you can load your
+source application.</p>
+</div>
+<div class="section" id="rolling-your-own">
+<h3>Rolling your own<a class="headerlink" href="#rolling-your-own" title="Permalink to this headline">¶</a></h3>
+<p>We recommend using one of the above jobs. But if you find yourself in the
+situation where you cannot utilize those, but need to work your own way through
+the issue, here are some hints to guide you:</p>
+<ul>
+<li><p class="first">Make the <em>source</em> directory of your application accessible to the web server,
+so that it is reachable through a valid URL like
+<em>http://your.web.server/path/to/yourapp/source/index.html</em>.</p>
+</li>
+<li><p class="first">Make sure all components that are used by your application, as there are the
+qooxdoo SDK itself and any additional qooxdoo library or contribution that you
+use, are equally accessible by the web server.</p>
+</li>
+<li><p class="first">Make sure the relative paths on the web server match those on your file
+system, e.g. if your app lives on the file system at</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/a/b/A/myapp
+</pre></div>
+</div>
+<p>and your qooxdoo installation is at</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/a/b/Z/qooxdoo-sdk
+</pre></div>
+</div>
+<p>and the server path to your app is</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/web/apps/myapp
+</pre></div>
+</div>
+<p>then make sure the server path to qooxdoo is</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/web/Z/qooxdoo-sdk
+</pre></div>
+</div>
+<p>so that relative references like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">..</span><span class="o">/</span><span class="nx">Z</span><span class="o">/</span><span class="nx">qooxdoo</span><span class="o">-</span><span class="nx">sdk</span>
+</pre></div>
+</div>
+<p>will work under the web server.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h3>
+<p>All of the above really boils down to the following: Running the source version from a web server requires having the web server root be higher in the file system hierarchy than ALL the application source root and the qooxdoo SDK root and any qooxdoo contribs you might be using, so that all libraries are accessible from the application via relative paths at the server. (It corresponds to <em>file://</em> usage if the web server root is in fact the file system root.)</p>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="ui_overview.html"
+             title="previous chapter">« Overview</a>
+          <span class="separator">|</span>
+          <a class="next" href="../widget.html"
+             title="next chapter">Widget »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">How to Develop a qx.Desktop Application</a><ul>
+<li><a class="reference internal" href="#general-cycle-of-activities">General Cycle of Activities</a></li>
+<li><a class="reference internal" href="#build-version">Build Version</a><ul>
+<li><a class="reference internal" href="#class-code">Class Code</a></li>
+<li><a class="reference internal" href="#resources">Resources</a></li>
+<li><a class="reference internal" href="#translations-and-localisation-data">Translations and Localisation Data</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-the-source-version-through-a-web-server">Running the Source Version through a Web Server</a><ul>
+<li><a class="reference internal" href="#web-server-jobs">Web Server Jobs</a></li>
+<li><a class="reference internal" href="#rolling-your-own">Rolling your own</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="../widget.html"
+                        title="next chapter">Widget</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="ui_overview.html"
+                        title="previous chapter">Overview</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/develop_how_to.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,484 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Image clipping and combining &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="Reporting Bugs" href="reporting_bugs.html" />
+    <link rel="prev" title="@ignore" href="api_jsdoc_at_ignore.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../development.html" accesskey="U">Development</a>
+     &#187;
+    <a href="">Image clipping and combining</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="image-clipping-and-combining">
+<span id="pages-image-clipping-and-combining-image-clipping-and-combining"></span><h1>Image clipping and combining<a class="headerlink" href="#image-clipping-and-combining" title="Permalink to this headline">¶</a></h1>
+<p>qooxdoo integrates the support for clipped and combined images in the
+framework where both features are heavily used, mainly in the
+different themes like <a class="reference internal" href="../desktop/ui_theming.html"><span class="doc">appearance or decoration themes</span></a>.</p>
+<div class="section" id="configuration">
+<span id="pages-image-clipping-and-combining-setup"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To be able to use image clipping and combining you need a locally installed
+<a class="reference internal" href="../introduction/third_party_components.html"><span class="doc">ImageMagick</span></a> package. The
+latest version known to work is 6.6.1.</p>
+</div>
+<p>To use the two features you have to configure dedicated generator jobs.  the
+generator to clip or combine images. You can add those jobs to your standard
+<code class="docutils literal"><span class="pre">config.json</span></code> file, or, as the configuration for these tasks is fairly
+self-contained, put them in an own file like <code class="docutils literal"><span class="pre">image.json</span></code>, as we do in the
+framework.</p>
+<p>Here is the general layout for the image manipulating jobs configuration:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;jobs&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;common&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;RESPATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;./source/resource&quot;</span>
+      <span class="p">},</span>
+
+      <span class="s2">&quot;cache&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;compile&quot;</span> <span class="o">:</span> <span class="s2">&quot;../../cache&quot;</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+
+    <span class="s2">&quot;image-clipping&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+
+    <span class="s2">&quot;image-combining&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">common</span></code> job is used to set up the basic settings which are shared between
+the specific jobs <code class="docutils literal"><span class="pre">image-clipping</span></code> and <code class="docutils literal"><span class="pre">image-combine</span></code>, described
+in the following sections.</p>
+<div class="section" id="image-clipping">
+<span id="pages-image-clipping-and-combining-image-clipping"></span><h3>Image clipping<a class="headerlink" href="#image-clipping" title="Permalink to this headline">¶</a></h3>
+<p>Clipping images is needed whenever you have a base image, e.g. a complete image
+for your button with rounded borders, and want to cut it into several parts. A
+common use case in the framework is to use such images for <code class="docutils literal"><span class="pre">grid</span></code> decorators.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;image-clipping&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+   <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;common&quot;</span><span class="p">],</span>
+
+   <span class="s2">&quot;slice-images&quot;</span> <span class="o">:</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;convert-cmd&quot;</span> <span class="o">:</span> <span class="s2">&quot;convert %(infile)s -crop \</span>
+<span class="s2">          %(xoff)sx%(yoff)s+%(xorig)s+%(yorig)s +repage %(outfile)s&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;${RESPATH}/custom/image/source/groupBox.png&quot;</span> <span class="o">:</span>
+         <span class="p">{</span>
+            <span class="s2">&quot;prefix&quot;</span> <span class="o">:</span> <span class="s2">&quot;../../clipped/groupBox&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;border-width&quot;</span> <span class="o">:</span> <span class="mi">4</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>(Mind that you cannot split a string across lines in Json, so the <code class="docutils literal"><span class="pre">\</span></code> in the
+value of <code class="docutils literal"><span class="pre">convert-cmd</span></code> is only for better readability here in the manual.)
+Each entry in the <code class="docutils literal"><span class="pre">images</span></code> block represents one source image to clip.</p>
+<ul class="simple">
+<li>The key has to be the path to the <em>source</em> image.</li>
+<li>The <code class="docutils literal"><span class="pre">prefix</span></code> entry will set the base file path for all the result images.
+The resulting file paths will follow the rule <code class="docutils literal"><span class="pre">prefix</span> <span class="pre">+</span> <span class="pre">imagepart</span> <span class="pre">+</span>
+<span class="pre">extension</span></code> where imagepart will specify the spacial location from which
+the clip has been taken, e.g. <code class="docutils literal"><span class="pre">tl</span></code> for top-left or <code class="docutils literal"><span class="pre">br</span></code> for bottom-right
+etc. So one result image will be <em>&quot;../../clipped/groupBox-tl.png&quot;</em>.</li>
+<li>The entry <code class="docutils literal"><span class="pre">border-width</span></code> defines how deep from the border into the image the
+cut will run. If you look at your source image you can determine the
+border-width by selecting a rectangle (which your graphic tool) which encloses
+the corner of the image completely. The edge of the rectangle is your
+border-width (see further).</li>
+</ul>
+<p>See the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-slice-images"><span class="std std-ref">slice-images reference</span></a> for all configuration
+details.</p>
+<div class="section" id="visual-example">
+<h4>Visual example<a class="headerlink" href="#visual-example" title="Permalink to this headline">¶</a></h4>
+<p>Here is an example illustration for the border-width case.</p>
+<p><img alt="groupbox_clipping.png" src="../../_images/groupbox_clipping.png" /></p>
+<p>The selection rectangle has the size of 4 x 4 pixels (a single pixel is
+indicated by the embedded square at the bottom-right corner), thus the
+<code class="docutils literal"><span class="pre">border-width</span></code> value is 4. Differing border width values for each of the four
+sides are also supported. In that case, the value for border-width must be an
+array containing the four values in the order: top, right, bottom, left.</p>
+</div>
+</div>
+<div class="section" id="image-combining">
+<span id="pages-image-clipping-and-combining-image-combining"></span><h3>Image combining<a class="headerlink" href="#image-combining" title="Permalink to this headline">¶</a></h3>
+<p>Complementary to image clipping image combining takes multiple images as sources
+and generates a single image out of them. The result image is like a box that
+contains the input images side by side. Here is a configuration sample:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;image-combine&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+   <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;common&quot;</span><span class="p">],</span>
+
+   <span class="s2">&quot;combine-images&quot;</span> <span class="o">:</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;montage-cmd&quot;</span> <span class="o">:</span> <span class="s2">&quot;montage @%(tempfile)s -geometry +0+0 -gravity \</span>
+<span class="s2">        NorthWest -tile %(orientation)s -background None %(combinedfile)s&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;${RESPATH}/custom/image-combined/combined.png&quot;</span><span class="o">:</span>
+         <span class="p">{</span>
+            <span class="s2">&quot;prefix&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${RESPATH}&quot;</span> <span class="p">],</span>
+            <span class="s2">&quot;layout&quot;</span> <span class="o">:</span> <span class="s2">&quot;vertical&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;input&quot;</span>  <span class="o">:</span>
+            <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="s2">&quot;prefix&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${RESPATH}&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;files&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;${RESPATH}/custom/image/clipped/groupBox*.png&quot;</span> <span class="p">]</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>(Mind that you cannot split a string across lines in Json, so the <code class="docutils literal"><span class="pre">\</span></code> in the
+value of <code class="docutils literal"><span class="pre">montage-cmd</span></code> is only for better readability here in the manual.)
+Basically the structure is the same as for the <code class="docutils literal"><span class="pre">image-clipping</span></code> job. Let's
+take a look at the details.</p>
+<ul class="simple">
+<li>The key has to be the path of the <em>result</em> image.</li>
+<li>The <code class="docutils literal"><span class="pre">layout</span></code> key takes the two possible values &quot;horizontal&quot; or
+&quot;vertical&quot; and determines the alignment of the source images inside the
+combined image.</li>
+<li><code class="docutils literal"><span class="pre">files</span></code> is an array which takes several input images that share the same
+path prefix. (This is relevant as the <code class="docutils literal"><span class="pre">prefix</span></code> will be stripped from the index
+which is also generated together with the output image. The individual files in
+the index are only identified by their paths <em>after</em> the prefix.)</li>
+</ul>
+<p>The layout depends on the sizes of the source images and their intended purpose.
+Combining images of same sizes saves white space &quot;noise&quot; in the result image,
+thus decreasing transfer size. If the combined image contains images that need
+to be stretched <em>horizontally</em> by the browser, the images need to be aligned
+<em>vertically</em>, and vice versa. If you are free in this respect the horizontal
+layout is usually the better choice</p>
+<p>For more information see the
+<a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-combine-images"><span class="std std-ref">combine-images</span></a>
+reference section.</p>
+</div>
+</div>
+<div class="section" id="running-image-jobs">
+<span id="pages-image-clipping-and-combining-run-image-jobs"></span><h2>Running Image Jobs<a class="headerlink" href="#running-image-jobs" title="Permalink to this headline">¶</a></h2>
+<p>If you are finished with the definition of your images to clip and/or to combine you can use the <code class="docutils literal"><span class="pre">generator</span></code> to actually let them created for you.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">clipping</span>
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">combine</span>
+</pre></div>
+</div>
+<p>If you include the following job in your <code class="docutils literal"><span class="pre">image.json</span></code> jobs list</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+   <span class="s2">&quot;run&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;image-clipping&quot;</span><span class="p">,</span> <span class="s2">&quot;image-combine&quot;</span> <span class="p">]</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>the execution of</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">images</span>
+</pre></div>
+</div>
+<p>will run both jobs at once.</p>
+</div>
+<div class="section" id="benefits">
+<span id="pages-image-clipping-and-combining-benefits"></span><h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<p>There are several benefits for setting up the image clipping and combining.</p>
+<ul class="simple">
+<li>Fewer HTTP requests mean better performance when using combined images.</li>
+<li>Widgets using the <code class="docutils literal"><span class="pre">grid</span></code> decorator are easier to use. If you do not use
+the tool-based clipping you have to slice the source image and name the parts
+manually.</li>
+<li>State changes are faster with combined images as the browser does not have to
+change the source of the displayed image. Instead it only changes the value of
+the CSS property <code class="docutils literal"><span class="pre">background-position</span></code> to display the desired part of the
+combined image.</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="api_jsdoc_at_ignore.html"
+             title="previous chapter">« &#64;ignore</a>
+          <span class="separator">|</span>
+          <a class="next" href="reporting_bugs.html"
+             title="next chapter">Reporting Bugs »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Image clipping and combining</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li><a class="reference internal" href="#image-clipping">Image clipping</a><ul>
+<li><a class="reference internal" href="#visual-example">Visual example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#image-combining">Image combining</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-image-jobs">Running Image Jobs</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="reporting_bugs.html"
+                        title="next chapter">Reporting Bugs</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="api_jsdoc_at_ignore.html"
+                        title="previous chapter">&#64;ignore</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/image_clipping_and_combining.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

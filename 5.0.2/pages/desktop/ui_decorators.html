@@ -1,0 +1,383 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Decorators &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="Web Fonts" href="ui_webfonts.html" />
+    <link rel="prev" title="Custom Themes" href="ui_custom_themes.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">Decorators</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="decorators">
+<span id="pages-desktop-ui-decorators-decorators"></span><h1>Decorators<a class="headerlink" href="#decorators" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<span id="pages-desktop-ui-decorators-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Decorations are used to style widgets. The idea is to have an independent layer around the widget content that can be freely styled. This way you can have separate decorators that define all kinds of decoration (colors, background image, corners, ...), and apply them to existing widgets, without interfering with the widget code itself.</p>
+</div>
+<div class="section" id="using-decorators">
+<span id="pages-desktop-ui-decorators-using-decorators"></span><h2>Using Decorators<a class="headerlink" href="#using-decorators" title="Permalink to this headline">¶</a></h2>
+<p>Generally all decorators used should be part of the selected decorator theme. The convention is that each decorator instance is stored under a semantic name. To use names which describe the appearance of the decorator is bad because it may make themes less compatible to each other.</p>
+<p>It is also regarded as bad style to make use of so-named inline decorators which are created by hand as part of a function call. The reason for this is that generally decorators defined by the theme may be used in multiple places. This means that widgets and application code should not directly deal with decorator instances.</p>
+</div>
+<div class="section" id="decoration-theme">
+<span id="pages-desktop-ui-decorators-decoration-theme"></span><h2>Decoration Theme<a class="headerlink" href="#decoration-theme" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned above, it is common to define the decorators in a decorator theme. This is really easy because you have to specify only a few details about the decorator.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;main&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="nx">style</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">width</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nx">color</span> <span class="o">:</span> <span class="s2">&quot;background-selected&quot;</span>
+  <span class="p">}</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>The first thing you see is the name of the decorator, in this case, <code class="docutils literal"><span class="pre">main</span></code>. The specified decorator is available using that name in the entire application code, especially in the appearance theme. Then there's the styles map which contains values for decorator properties. You can see all possible style value as properties of the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.Decorator">Decorator class</a>.</p>
+<p>Sometimes it is very handy to change only little details about the decorator. Imagine a special decorator for hovered buttons. Inheritance comes in very handy in such a case.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;scroll-knob-pressed&quot;</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="nx">include</span> <span class="o">:</span> <span class="s2">&quot;scroll-knob&quot;</span><span class="p">,</span>
+
+  <span class="nx">style</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">backgroundColor</span> <span class="o">:</span> <span class="s2">&quot;scrollbar-dark&quot;</span>
+  <span class="p">}</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>As you can see here, we include the previously defined decorator and override the backgroundColor property. That's all you need to do!</p>
+</div>
+<div class="section" id="custom-decorators">
+<span id="pages-desktop-ui-decorators-custom-decorators"></span><h2>Custom Decorators<a class="headerlink" href="#custom-decorators" title="Permalink to this headline">¶</a></h2>
+<p>Custom decorators are created by extending the decorator theme and adding new ones or overwriting existing ones. Each decorator class comes with a set of properties for configuration of the instance. These properties are defined by mixins in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration">qx.ui.decoration namespace</a>. Following is a short description of the available mixins:</p>
+<ul class="simple">
+<li><strong>MBackgroundColor</strong>: Renders a background color.</li>
+<li><strong>MBackgroundImage</strong>: Renders a background image.</li>
+<li><strong>MSingleBorder</strong>: Renders a single border.</li>
+<li><strong>MDoubleBorder</strong>: Renders an outer and an inner border, e.g. to achieve a bevel effect.</li>
+<li><strong>MBorderImage</strong>: Uses an image to create a border.</li>
+<li><strong>MBorderRadius</strong>: Used to render rounded corners.</li>
+<li><strong>MBoxShadow</strong>: Renders a shadow.</li>
+<li><strong>MLinearBackgroundGradient</strong>: Renders a linear color gradient.</li>
+</ul>
+<p>As you may have guessed, the last three mixins do not work cross browser due to the fact that they rely on CSS properties not available in all browsers. If you want more details, take a look at the <a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.ui.decoration">API documentations of the mixins</a>.</p>
+<p>Each entry of the theme is automatically made available using the <code class="docutils literal"><span class="pre">setDecorator</span></code> function of the widget class. The instances needed are automatically created when required initially. This mechanism keeps instance numbers down and basically ignores decorators which are defined but never used.</p>
+</div>
+<div class="section" id="writing-decorator-mixins">
+<span id="pages-desktop-ui-decorators-writing-decorator-mixins"></span><h2>Writing Decorator Mixins<a class="headerlink" href="#writing-decorator-mixins" title="Permalink to this headline">¶</a></h2>
+<p>The recommended way is to write a simple decoration mixin and add it to the default decorator qooxdoo delivers. There is only one method your mixin should supply:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">_style&lt;yourName&gt;</span></code>: This method has a styles map as parameter which should be manipulated directly. That way, you can just append your styles and That's it. But you should make sure you don't manipulate / override any style another mixin could uses.</li>
+</ul>
+<p>As you can see, every mixin can define its own methods for <code class="docutils literal"><span class="pre">style</span></code>. The theme system combines all the methods given by the separate widgets to one big working method.</p>
+<p>Here is a sample text shadow decorator mixin:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Mixin</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;my.MTextShadow&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">properties</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">textShadowColor</span> <span class="o">:</span> <span class="p">{</span>
+      <span class="nx">nullable</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">check</span> <span class="o">:</span> <span class="s2">&quot;Color&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+
+  <span class="nx">members</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">_styleTextShadow</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">styles</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getTextShadowColor</span><span class="p">();</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nx">color</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">manager</span><span class="p">.</span><span class="nx">Color</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span>
+      <span class="nx">styles</span><span class="p">[</span><span class="s2">&quot;text-shadow&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">color</span> <span class="o">+</span> <span class="s2">&quot; 1px 1px&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// patch the original decorator class</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">patch</span><span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">decoration</span><span class="p">.</span><span class="nx">Decorator</span><span class="p">,</span> <span class="nx">my</span><span class="p">.</span><span class="nx">MTextShadow</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="writing-decorators">
+<span id="pages-desktop-ui-decorators-writing-decorators"></span><h2>Writing Decorators<a class="headerlink" href="#writing-decorators" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to write custom decorators, although they are not usable in the decoration theme. You can only create instances in the application code and assign the instances. For that reason, the recommendation is to write a decorator mixin instead. <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.IDecorator">The interface</a> is quite trivial to implement. There are only three methods which needs to be implemented:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">getInsets</span></code>: Returns a map of insets (space the decorator needs) e.g. the border width plus padding</li>
+<li><code class="docutils literal"><span class="pre">getPadding</span></code>: Returns the configured padding minus the border width.</li>
+<li><code class="docutils literal"><span class="pre">getStyle</span></code>: Returns the decorator's CSS styles as a map.</li>
+</ul>
+<p>Decorators are regarded as immutable. Once they are used somewhere there is no need to be able to change them anymore.</p>
+<p>Each decorator configuration means exactly one decorator instance (created with the first usage). Even when dozens of widgets use the decorator only one instance is used. To cache the styles is a good way to improve the initial time to create new element instances.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="ui_custom_themes.html"
+             title="previous chapter">« Custom Themes</a>
+          <span class="separator">|</span>
+          <a class="next" href="ui_webfonts.html"
+             title="next chapter">Web Fonts »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Decorators</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#using-decorators">Using Decorators</a></li>
+<li><a class="reference internal" href="#decoration-theme">Decoration Theme</a></li>
+<li><a class="reference internal" href="#custom-decorators">Custom Decorators</a></li>
+<li><a class="reference internal" href="#writing-decorator-mixins">Writing Decorator Mixins</a></li>
+<li><a class="reference internal" href="#writing-decorators">Writing Decorators</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="ui_webfonts.html"
+                        title="next chapter">Web Fonts</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="ui_custom_themes.html"
+                        title="previous chapter">Custom Themes</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/ui_decorators.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

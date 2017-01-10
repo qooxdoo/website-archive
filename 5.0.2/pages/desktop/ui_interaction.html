@@ -1,0 +1,394 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Interaction &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="Resources" href="ui_resources.html" />
+    <link rel="prev" title="Basic Widgets" href="ui_widgets.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">Interaction</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="interaction">
+<span id="pages-desktop-ui-interaction-interaction"></span><h1>Interaction<a class="headerlink" href="#interaction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="register-listeners">
+<span id="pages-desktop-ui-interaction-register-listeners"></span><h2>Register listeners<a class="headerlink" href="#register-listeners" title="Permalink to this headline">¶</a></h2>
+<p>To register listeners to a widget or other qooxdoo object just call <code class="docutils literal"><span class="pre">addListener()</span></code> with the given event type and callback method on them. The method will be executed every time the event occurs. Some types of events will bubble up the parent widget chain (such as pointer events, ...) while others are only fired on the original object (e.g. property changes, ...). A typical registration might look like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">obj</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;changeColor&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_onChangeColor</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first parameter is the name of the event. The events supported by an object are listed in the API documentation of each class in the &quot;Events&quot; section. The second argument is a pointer to a function to call. The function can also be defined inline (in a closure). The third argument defines the context in which the function is executed. This argument is optional and defaults to the object which is listened to, e.g. a listener on a button will call a function on the button.</p>
+<p>The method is called with the event object as the first and only argument. The event object contains all information about the target and state of the event and also contains some other useful data: Pointer events may contain coordinates while focus events may contain the focused element. Data events typically contain the current value of the data field listened to.</p>
+<p>Please note that event objects are automatically pooled after their dispatch. This is mainly for performance reasons; event objects are reused during the application runtime. That's why keeping references to event instances is not a good idea! If some of the data is needed later during the application runtime it is best to store the actual data and not the event object, e.g. store the coordinates instead of the pointer event object.</p>
+</div>
+<div class="section" id="event-phases">
+<span id="pages-desktop-ui-interaction-event-phases"></span><h2>Event Phases<a class="headerlink" href="#event-phases" title="Permalink to this headline">¶</a></h2>
+<p>In the browser most user input events like pointer or keyboard events are propagated from the target element up to the document root. In qooxdoo these events bubble up the widget hierarchy. This event propagation happens in two phases, the capturing and the bubbling event phase. The last parameter of the <code class="docutils literal"><span class="pre">addListener(type,</span> <span class="pre">listener,</span> <span class="pre">context,</span> <span class="pre">capture)</span></code> method defines whether the listener should be attached to the capturing (<code class="docutils literal"><span class="pre">true</span></code>) or bubbling (<code class="docutils literal"><span class="pre">false</span></code>) phase.</p>
+<p>In the capturing phase, the event is dispatched on the root widget first. Then it is dispatched on all widgets down the widget tree until the event target is reached. Now the event enters the bubbling phase. In this phase the event is dispatched in the opposite direction starting from the event target up to the root widget.</p>
+<p>Most of the time only the bubbling phase is used but sometimes the capturing phase can be very useful. For example a capturing listener for &quot;pointerdown&quot; events on the root widget is guaranteed to receive every &quot;pointerdown&quot; event even if the target widget calls <code class="docutils literal"><span class="pre">stopPropagation()</span></code> on the event. Further it can be used to block events from sub widgets.</p>
+</div>
+<div class="section" id="pointer-events">
+<span id="pages-desktop-ui-interaction-pointer-events"></span><h2>Pointer Events<a class="headerlink" href="#pointer-events" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo abstracts mouse and touch events in pointer events. This is the preferred way to react to user input from either a mouse or a touch device. Check out the <a class="reference internal" href="../core/pointer.html#pages-pointer-pointer-events"><span class="std std-ref">specified manual page about pointer events</span></a> for more details on that topic. Mouse and touch events are also supported and can be used.</p>
+</div>
+<div class="section" id="mouse-events">
+<span id="pages-desktop-ui-interaction-mouse-events"></span><h2>Mouse Events<a class="headerlink" href="#mouse-events" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo supports all the typical mouse events: <code class="docutils literal"><span class="pre">mousedown</span></code>, <code class="docutils literal"><span class="pre">mouseup</span></code>, <code class="docutils literal"><span class="pre">click</span></code> and <code class="docutils literal"><span class="pre">dblclick</span></code> as well as <code class="docutils literal"><span class="pre">mouseover</span></code> and <code class="docutils literal"><span class="pre">mouseout</span></code>. For most action-related widgets <code class="docutils literal"><span class="pre">execute</span></code> is the better choice than <code class="docutils literal"><span class="pre">click</span></code> (see the <a class="reference internal" href="ui_widgets.html#pages-ui-widgets-widgets"><span class="std std-ref">section about basic widgets</span></a>). All these events behave identically in all supported browsers, even the sequence in which they are fired is identical. All of them come with a usable <code class="docutils literal"><span class="pre">target</span></code> and sometimes even with a <code class="docutils literal"><span class="pre">relatedTarget</span></code> for <code class="docutils literal"><span class="pre">mouseover</span></code> and <code class="docutils literal"><span class="pre">mouseout</span></code> events.</p>
+<p>Every mouse event propagates the screen (e.g. <code class="docutils literal"><span class="pre">getScreenLeft()</span></code>), document (e.g. <code class="docutils literal"><span class="pre">getDocumentLeft()</span></code>) or viewport (e.g. <code class="docutils literal"><span class="pre">getViewportLeft()</span></code>) coordinates through the available getters. The <code class="docutils literal"><span class="pre">getWheelDelta()</span></code> delta method provides information about the scroll amount of a <code class="docutils literal"><span class="pre">mousewheel</span></code> event. Some widgets like Spinners or SelectBoxes make use of this event already.</p>
+<p>During every mouse event it is possible to check the status of modifier keys through the methods <code class="docutils literal"><span class="pre">isCtrlPressed()</span></code>, <code class="docutils literal"><span class="pre">isAltPressed()</span></code> or <code class="docutils literal"><span class="pre">isShiftPressed()</span></code>. The pressed button can be detected by calling one of the methods <code class="docutils literal"><span class="pre">isLeftPressed()</span></code>, <code class="docutils literal"><span class="pre">isMiddlePressed()</span></code> or <code class="docutils literal"><span class="pre">isRightPressed()</span></code> on the mouse event.</p>
+<p>See the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.event.type.Mouse">API documentation of the MouseEvent</a> for a full list of all available methods.</p>
+</div>
+<div class="section" id="touch-events">
+<span id="pages-desktop-ui-interaction-touch-events"></span><h2>Touch Events<a class="headerlink" href="#touch-events" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo supports all the touch events: <code class="docutils literal"><span class="pre">touchstart</span></code>, <code class="docutils literal"><span class="pre">touchmove</span></code>, <code class="docutils literal"><span class="pre">touchend</span></code> and <code class="docutils literal"><span class="pre">touchcancel</span></code>.</p>
+<p>Every touch event propagates the screen (e.g. <code class="docutils literal"><span class="pre">getScreenLeft()</span></code>), document (e.g. <code class="docutils literal"><span class="pre">getDocumentLeft()</span></code>) or viewport (e.g. <code class="docutils literal"><span class="pre">getViewportLeft()</span></code>) coordinates through the available getters.</p>
+<p>See the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.event.type.Touch">API documentation of the TouchEvent</a> for a full list of all available methods.</p>
+</div>
+<div class="section" id="event-capturing">
+<span id="pages-desktop-ui-interaction-event-capturing"></span><h2>Event Capturing<a class="headerlink" href="#event-capturing" title="Permalink to this headline">¶</a></h2>
+<p>Usually only the widget underneath the pointer will receive events. This can be a problem in drag operations where the pointer can easily leave the dragged widget. This issue can be resolved in qooxdoo by declaring this widget a capturing widget using the widget's <code class="docutils literal"><span class="pre">capture()</span></code> method.</p>
+<p>If a widget is a capturing widget, all pointer events will be dispatched on this widget, regardless of the pointer's position. Capturing is active until either a different widget is set to capture events, the browser loses focus or the user taps the primary button. If a widget loses its capture state a <code class="docutils literal"><span class="pre">losecapture</span></code> event is dispatched on the widget.</p>
+<p>Internally, qooxdoo uses capturing in menus, split panes or sliders for example.</p>
+</div>
+<div class="section" id="keyboard-support">
+<span id="pages-desktop-ui-interaction-keyboard-support"></span><h2>Keyboard Support<a class="headerlink" href="#keyboard-support" title="Permalink to this headline">¶</a></h2>
+<p>DOM3-like event handling was the prototype for qooxdoo's key event support. This means that key identifiers can be used (instead of non-unified key codes) which is much more comfortable than what is known from most web application frameworks. Basically each key on the keyboard has a name like <code class="docutils literal"><span class="pre">Ctrl</span></code>, <code class="docutils literal"><span class="pre">Shift</span></code>, <code class="docutils literal"><span class="pre">F3</span></code> or <code class="docutils literal"><span class="pre">Enter</span></code>. A complete list of all supported keys is available in <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.event.type.KeySequence~getKeyIdentifier">the API documentation</a>.</p>
+<p>All the typical key sequence events <code class="docutils literal"><span class="pre">keyup</span></code>, <code class="docutils literal"><span class="pre">keydown</span></code> and <code class="docutils literal"><span class="pre">keypress</span></code> support the key identifier. The <code class="docutils literal"><span class="pre">keypress</span></code> event is repeated during the time the key is pressed. That's why <code class="docutils literal"><span class="pre">keypress</span></code> is the best candidate for most action related keyboard events. Only use <code class="docutils literal"><span class="pre">keyup</span></code> and <code class="docutils literal"><span class="pre">keydown</span></code> when you <em>really</em> depend on the status of the key.</p>
+<p>To handle character inputs e.g. on text boxes, there is a special <code class="docutils literal"><span class="pre">keyinput</span></code> event which has nice unified accessors, <code class="docutils literal"><span class="pre">getChar()</span></code> and <code class="docutils literal"><span class="pre">getCharCode()</span></code>, to detect the pressed character. This even automatically respects the effects modifier keys have, supporting e.g. German umlauts. The API lists all available methods of the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.event.type.KeyInput">KeyInput</a> event.</p>
+</div>
+<div class="section" id="working-with-commands">
+<span id="pages-desktop-ui-interaction-working-with-commands"></span><h2>Working with Commands<a class="headerlink" href="#working-with-commands" title="Permalink to this headline">¶</a></h2>
+<p>Commands (<a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.command.Command">API</a>) are used to bundle a command to be used by multiple buttons. They can also be used to define a global shortcut to be used for this action.</p>
+<p>Creating new commands is as easy as it can be. A shortcut can simply be defined through the constructor, e.g.:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">findCommand</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="s2">&quot;Ctrl+F&quot;</span><span class="p">);</span>
+<span class="nx">findCommand</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;execute&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">_onFind</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The command can easily be attached to many types of Buttons etc. Some of them, like the <code class="docutils literal"><span class="pre">MenuButtons</span></code>, automatically display the configured shortcut as well. As seen above, the Commands also make use of the key identifiers.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Search&quot;</span><span class="p">);</span>
+<span class="nx">button</span><span class="p">.</span><span class="nx">setCommand</span><span class="p">(</span><span class="nx">findCommand</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Sometimes it's useful to create groups of commands, especially if you want to define the same shortcut in different commands. With the (<a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.command.Group">API</a>) class, you can logically organize your commands as well as activate or deactivate all added commands at once.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">group1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Group</span><span class="p">();</span>
+<span class="nx">group1</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;find&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="s2">&quot;Ctrl+F&quot;</span><span class="p">));</span>
+<span class="nx">group1</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;copy&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="s2">&quot;Ctrl+C&quot;</span><span class="p">));</span>
+<span class="nx">group1</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;paste&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="s2">&quot;Ctrl+V&quot;</span><span class="p">));</span>
+<span class="nx">group1</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;showPage2&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">Command</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">));</span>
+<span class="nx">group1</span><span class="p">.</span><span class="nx">setActive</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">// all commands will be deactivated</span>
+</pre></div>
+</div>
+<p>We also provide you with a manager to handle command groups more comfortable. A common use case is to create multiple instances of one view. If every instance creates the same set of commands, a global shortcut will invoke the command on all instances. Now you can easily add your command groups to a command group manager which will activate only one group. An implementation could look like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">command</span><span class="p">.</span><span class="nx">GroupManager</span><span class="p">();</span>
+<span class="nx">manager</span><span class="p">.</span><span class="nx">addGroup</span><span class="p">(</span><span class="nx">group1</span><span class="p">);</span>
+<span class="nx">manager</span><span class="p">.</span><span class="nx">addGroup</span><span class="p">(</span><span class="nx">group2</span><span class="p">);</span>
+<span class="nx">manager</span><span class="p">.</span><span class="nx">addGroup</span><span class="p">(</span><span class="nx">group3</span><span class="p">);</span>
+<span class="nx">manager</span><span class="p">.</span><span class="nx">setActiveGroup</span><span class="p">(</span><span class="nx">group2</span><span class="p">);</span> <span class="c1">// this will deactivate all command groups except group2</span>
+</pre></div>
+</div>
+<p>Furthermore you are able to block even the active command group by the manager. This is useful for disabling commands on focused input field.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">setPlaceholder</span><span class="p">(</span><span class="s2">&quot;If focused here, all commands will be disabled!&quot;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;focusin&quot;</span><span class="p">,</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">block</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;focusout&quot;</span><span class="p">,</span> <span class="nx">manager</span><span class="p">.</span><span class="nx">unblock</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Here you can find an example:
+(<a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#ui~CommandGroupManager.html">Demobrowser</a>)</p>
+</div>
+<div class="section" id="focus-handling">
+<span id="pages-desktop-ui-interaction-focus-handling"></span><h2>Focus Handling<a class="headerlink" href="#focus-handling" title="Permalink to this headline">¶</a></h2>
+<p>Good keyboard support also means good focus support. One major feature is the seamless integration between DOM focus handling and qooxdoo's focus handling. Both system communicate with each other. This makes it possible to integrate qooxdoo into normal web pages while still supporting the advanced focus features qooxdoo has to offer in qooxdoo-powered isles.</p>
+<p>Focus handling in qooxdoo also means sophisticated support for the <code class="docutils literal"><span class="pre">Tab</span></code> key. While qooxdoo can also use the functionality provided by the browser, it adds its own layer for tab focus handling by default. This layer supports focus roots: A focus root is basically a widget which manages its own tab sequence. This is frequently used for many types of windows inside complex applications: Instead of leaving the window when reaching the last of its child widgets, the focus is moved back to the first child widget. The tab handling in qooxdoo is based on coordinates of each widget on the screen. It follows the visible structure and not the internal application (or even markup) structure. This is often seen as a huge benefit as it improves the usability of such applications out-of-the-box.
+It is also possible to define a <code class="docutils literal"><span class="pre">tabIndex</span></code> on widgets which should be reachable in a static hard-coded way. It is not advisable to use this feature too much. The automatic handling works quite well out of the box without hard-wiring every widget to a specific tab position.</p>
+<p>To make a widget focusable just enable the property <code class="docutils literal"><span class="pre">focusable</span></code> (<a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.Widget~focusable">API</a>) on it. For most widgets, this will also means that the widget is reachable using the <code class="docutils literal"><span class="pre">Tab</span></code> key, but this depends on the widget's implementation of the method <code class="docutils literal"><span class="pre">isTabable()</span></code>.</p>
+<p>Every widget can function as a focus root. To register a widget as a focus root just call the method <code class="docutils literal"><span class="pre">addRoot()</span></code> of the <code class="docutils literal"><span class="pre">FocusHandler</span></code> like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">FocusHandler</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">addRoot</span><span class="p">(</span><span class="nx">myWidget</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Activation is related to focus. While focus is limited to widgets which are marked as <code class="docutils literal"><span class="pre">focusable</span></code>, any widget can be activated. Usually, the activation moves around while tapping on widgets (during the <code class="docutils literal"><span class="pre">pointerup</span></code> event). The focus is applied to the next focusable parent while the activation directly happens on the widget that was tapped on. Activation is mainly used for keyboard support (key events start bubbling from the active widget). Compared to the focus, there is no visual highlighting for this state. To change the currently focused or active widget just call <code class="docutils literal"><span class="pre">focus()</span></code> or <code class="docutils literal"><span class="pre">activate()</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">myInputField</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>The properties <code class="docutils literal"><span class="pre">keepFocus</span></code> and <code class="docutils literal"><span class="pre">keepActive</span></code> are targeted more towards advanced users and developers of custom widgets. Both prevent the focus or active state from moving away (from the widget that currently has it) to the widget which has the specified property disabled. This is appropriate for complex widgets like a ComboBox where the activation should be kept on the ComboBox itself when selecting items from the dropdown list.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="ui_widgets.html"
+             title="previous chapter">« Basic Widgets</a>
+          <span class="separator">|</span>
+          <a class="next" href="ui_resources.html"
+             title="next chapter">Resources »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Interaction</a><ul>
+<li><a class="reference internal" href="#register-listeners">Register listeners</a></li>
+<li><a class="reference internal" href="#event-phases">Event Phases</a></li>
+<li><a class="reference internal" href="#pointer-events">Pointer Events</a></li>
+<li><a class="reference internal" href="#mouse-events">Mouse Events</a></li>
+<li><a class="reference internal" href="#touch-events">Touch Events</a></li>
+<li><a class="reference internal" href="#event-capturing">Event Capturing</a></li>
+<li><a class="reference internal" href="#keyboard-support">Keyboard Support</a></li>
+<li><a class="reference internal" href="#working-with-commands">Working with Commands</a></li>
+<li><a class="reference internal" href="#focus-handling">Focus Handling</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="ui_resources.html"
+                        title="next chapter">Resources</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="ui_widgets.html"
+                        title="previous chapter">Basic Widgets</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/ui_interaction.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

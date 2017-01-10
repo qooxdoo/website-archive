@@ -1,0 +1,407 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>AJAX &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Communication" href="../communication.html" />
+    <link rel="next" title="REST (Representational State Transfer)" href="rest.html" />
+    <link rel="prev" title="Higher-level requests" href="request_io.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../communication.html" accesskey="U">Communication</a>
+     &#187;
+    <a href="">AJAX</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="ajax">
+<span id="pages-remote-io-ajax"></span><h1>AJAX<a class="headerlink" href="#ajax" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>qx.io.remote.Request</cite> will be deprecated in a future release. Use <cite>qx.io.request.Xhr</cite> instead.</p>
+</div>
+<p>This system is (as everything else in qooxdoo) completely event based. It currently supports communication by <strong>XMLHttp</strong>, <strong>Iframes</strong> or <strong>Script</strong>. The system wraps most of the differences between the implementations and unifies them for the user/developer.</p>
+<p>For all your communication needs you need to create a new instance of Request:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">remote</span><span class="p">.</span><span class="nx">Request</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Constructor arguments of Request:</p>
+<ol class="arabic simple">
+<li>URL: Any valid http/https/file URL</li>
+<li>Method: You can choose between POST and GET.</li>
+<li>Response mimetype: What mimetype do you await as response</li>
+</ol>
+<div class="section" id="mimetypes-supported">
+<span id="pages-remote-io-mimetypes-supported"></span><h2>Mimetypes supported<a class="headerlink" href="#mimetypes-supported" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>application/xml</li>
+<li>text/plain</li>
+<li>text/html</li>
+<li>text/javascript</li>
+<li>application/json</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal"><span class="pre">text/javascript</span></code> and <code class="docutils literal"><span class="pre">application/json</span></code> will be directly evaluated. As content you will get the return value.</p>
+</div>
+<p>If you use the iframe transport implementation the functionality of the type is more dependent on the server side response than for the XMLHttp case. For example the text/html mimetypes really need the response in HTML and can't convert it. This also depends greatly on the mimetype sent out by the server.</p>
+</div>
+<div class="section" id="request-data">
+<span id="pages-remote-io-request-data"></span><h2>Request data<a class="headerlink" href="#request-data" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">setRequestHeader(key,</span> <span class="pre">value)</span></code>: Setup a request header to send.</li>
+<li><code class="docutils literal"><span class="pre">getRequestHeader(key)</span></code>: Returns the configured value of the request header.</li>
+<li><code class="docutils literal"><span class="pre">setParameter(key,</span> <span class="pre">value)</span></code>: Add a parameter to send with your request.</li>
+<li><code class="docutils literal"><span class="pre">getParameter(key)</span></code>: Returns the value of the given parameter.</li>
+<li><code class="docutils literal"><span class="pre">setData(value)</span></code>: Sets the data which should be sent with the request (only useful for POST)</li>
+<li><code class="docutils literal"><span class="pre">getData()</span></code>: Returns the data currently set for the request</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Parameters are always sent as part of the URL, even if you select POST. If you select POST, use the setData method to set the data for the request body.</p>
+</div>
+</div>
+<div class="section" id="request-configuration-properties">
+<span id="pages-remote-io-request-configuration-properties"></span><h2>Request configuration (properties)<a class="headerlink" href="#request-configuration-properties" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">asynchronous</span></code>: Should the request be asynchronous? This is <code class="docutils literal"><span class="pre">true</span></code> by default. Otherwise it will stop the script execution until the response was received.</li>
+<li><code class="docutils literal"><span class="pre">data</span></code>: Data to send with the request. Only used for POST requests. This is the actual post data. Generally this is a string of url-encoded key-value pairs.</li>
+<li><code class="docutils literal"><span class="pre">username</span></code>: The user name to authorize for the server. Configure this to enable authentication.</li>
+<li><code class="docutils literal"><span class="pre">password</span></code>: The password to authenticate for the server.</li>
+<li><code class="docutils literal"><span class="pre">timeout</span></code>: Configure the timeout in milliseconds of each request. After this timeout the request will be automatically canceled.</li>
+<li><code class="docutils literal"><span class="pre">prohibitCaching</span></code>: Add a random numeric key-value pair to the url to securely prohibit caching in IE. Enabled by default.</li>
+<li><code class="docutils literal"><span class="pre">crossDomain</span></code>: Enable/disable cross-domain transfers. This is <code class="docutils literal"><span class="pre">false</span></code> by default. If you need to acquire data from a server of a different domain you would need to setup this as <code class="docutils literal"><span class="pre">true</span></code>. (<strong>Caution:</strong> this would switch to &quot;script&quot; transport, which is a security risk as you evaluate code from an external source. Please understand the security issues involved.)</li>
+<li><code class="docutils literal"><span class="pre">fileUpload</span></code>: Indicate that the request will be used for a file upload. The request will be used for a file upload. This switches the concrete implementation that is used for sending the request from <code class="docutils literal"><span class="pre">qx.io.remote.transport.XmlHttp</span></code> to <code class="docutils literal"><span class="pre">qx.io.remote.IFrameTransport</span></code>, because only the latter can handle file uploads.</li>
+</ul>
+</div>
+<div class="section" id="available-events">
+<span id="pages-remote-io-available-events"></span><h2>Available events<a class="headerlink" href="#available-events" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">sending</span></code>: Request was configured and is sending data to the server.</li>
+<li><code class="docutils literal"><span class="pre">receiving</span></code>: The client receives the response of the server.</li>
+<li><code class="docutils literal"><span class="pre">completed</span></code>: The request was executed successfully.</li>
+<li><code class="docutils literal"><span class="pre">failed</span></code>: The request failed through some reason.</li>
+<li><code class="docutils literal"><span class="pre">timeout</span></code>: The request has got a timeout event.</li>
+<li><code class="docutils literal"><span class="pre">aborted</span></code>: The request was aborted.</li>
+</ul>
+<p>The last four events give you a <code class="docutils literal"><span class="pre">qx.event.type.Data</span></code> as the first parameter of the event handler. As always for <code class="docutils literal"><span class="pre">qx.event.type.Data</span></code> you can access the stored data using <code class="docutils literal"><span class="pre">getData()</span></code>. The return value of this function is an instance of <code class="docutils literal"><span class="pre">qx.io.remote.Response</span></code>.</p>
+</div>
+<div class="section" id="response-object">
+<span id="pages-remote-io-response-object"></span><h2>Response object<a class="headerlink" href="#response-object" title="Permalink to this headline">¶</a></h2>
+<p>The response object <code class="docutils literal"><span class="pre">qx.io.remote.Response</span></code> stores all the returning data of a <code class="docutils literal"><span class="pre">qx.io.remote.Request</span></code>. This object comes with the following methods:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">getContent</span></code>: Returns the content data of the response. This should be the type of content you acquired using the request.</li>
+<li><code class="docutils literal"><span class="pre">getResponseHeader</span></code>: Returns the content of the given header entry.</li>
+<li><code class="docutils literal"><span class="pre">getResponseHeaders</span></code>: Return all available response headers. This is a hash-map using typical key-values pairs.</li>
+<li><code class="docutils literal"><span class="pre">getStatusCode</span></code>: Returns the HTTP status code.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Response headers and status code information are not supported for iframe based communication!</p>
+</div>
+</div>
+<div class="section" id="simple-example">
+<span id="pages-remote-io-simple-example"></span><h2>Simple example<a class="headerlink" href="#simple-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// get text from the server</span>
+<span class="nx">req</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">remote</span><span class="p">.</span><span class="nx">Request</span><span class="p">(</span><span class="nx">val</span><span class="p">.</span><span class="nx">getLabel</span><span class="p">(),</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">);</span>
+<span class="c1">// request a javascript file from the server</span>
+<span class="c1">// req = new qx.io.remote.Request(val.getLabel(), &quot;GET&quot;, &quot;text/javascript&quot;);</span>
+
+<span class="c1">// Switching to POST</span>
+<span class="c1">// req.setMethod(&quot;POST&quot;);</span>
+<span class="c1">// req.setRequestHeader(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);</span>
+
+<span class="c1">// Adding parameters - will be added to the URL</span>
+<span class="c1">// req.setParameter(&quot;test1&quot;, &quot;value1&quot;);</span>
+<span class="c1">// req.setParameter(&quot;test2&quot;, &quot;value2&quot;);</span>
+
+<span class="c1">// Adding data to the request body</span>
+<span class="c1">// req.setData(&quot;foobar&quot;);</span>
+
+<span class="c1">// Force to testing iframe implementation</span>
+<span class="c1">// req.setCrossDomain(true);</span>
+
+<span class="nx">req</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;completed&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">getContent</span><span class="p">());</span>
+  <span class="c1">// use the following for qooxdoo versions &lt;= 0.6.7:</span>
+  <span class="c1">// alert(e.getData().getContent());</span>
+<span class="p">});</span>
+
+<span class="c1">// Sending</span>
+<span class="nx">req</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Please post questions to <a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/qooxdoo-devel">our mailinglist</a>.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="request_io.html"
+             title="previous chapter">« Higher-level requests</a>
+          <span class="separator">|</span>
+          <a class="next" href="rest.html"
+             title="next chapter">REST (Representational State Transfer) »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">AJAX</a><ul>
+<li><a class="reference internal" href="#mimetypes-supported">Mimetypes supported</a></li>
+<li><a class="reference internal" href="#request-data">Request data</a></li>
+<li><a class="reference internal" href="#request-configuration-properties">Request configuration (properties)</a></li>
+<li><a class="reference internal" href="#available-events">Available events</a></li>
+<li><a class="reference internal" href="#response-object">Response object</a></li>
+<li><a class="reference internal" href="#simple-example">Simple example</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="rest.html"
+                        title="next chapter">REST (Representational State Transfer)</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="request_io.html"
+                        title="previous chapter">Higher-level requests</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/communication/remote_io.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

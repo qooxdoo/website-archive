@@ -1,0 +1,370 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTML Element Handling &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="The Focus Layer" href="focus_layer_impl.html" />
+    <link rel="prev" title="The Event Layer" href="event_layer_impl.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">HTML Element Handling</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="html-element-handling">
+<span id="pages-html-element-handling-html-element-handling"></span><h1>HTML Element Handling<a class="headerlink" href="#html-element-handling" title="Permalink to this headline">¶</a></h1>
+<p>This document describes the ideas and concepts behind the classes in the <code class="docutils literal"><span class="pre">qx.html</span></code> namespace (<a class="reference external" href="http://api.qooxdoo.org/#qx.html">API</a>). qooxdoo also comes with a basic low-level abstraction API for DOM manipulation. For details about this API please have a look at the <a class="reference internal" href="../website/tech_website_apis.html"><span class="doc">corresponding documentation</span></a>.</p>
+<div class="section" id="pages-html-element-handling-idea">
+<span id="idea"></span><h2>Idea<a class="headerlink" href="#pages-html-element-handling-idea" title="Permalink to this headline">¶</a></h2>
+<p>The classes in <code class="docutils literal"><span class="pre">qx.html</span></code> are wrapper for native DOM elements, which basically were created to solve one major issue:</p>
+<p><strong>Automatically keeping care of DOM manipulation and creation while dealing with large number of elements.</strong></p>
+<p>In details this means:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Automatic performance</strong>: Programmatically constructing DOM hierarchies is hard to get fast because the order in which elements are nested can heavily influence the runtime performance.  What <code class="docutils literal"><span class="pre">qx.html.Element</span></code> does is trying to keep the number of element instances to the minimum actually needed (DOM nodes are expensive, both performance and memory aside) and to insert the DOM nodes in an efficient manner. Further all changes to the DOM are cached and applied in batch mode, which improves the performance even more.</li>
+<li><strong>Normalized API</strong>: Working with HTML DOM elements usually involves many browser switches. Especially when it comes to reading and setting of attributes or styles. For each style one has to remember whether a normalization method should be called or if the value can be set directly. <code class="docutils literal"><span class="pre">qx.html.Element</span></code> does this kind of normalization transparently. The browser normalization is based on the <a class="reference internal" href="../website/tech_website_apis.html"><span class="doc">existing low-level APIs</span></a>.</li>
+<li><strong>Convenience methods</strong>: These elements have additional convenience API, which is not available on pure DOM elements. They have e.g. the functionality to manage children with methods like <code class="docutils literal"><span class="pre">addBefore()</span></code> or <code class="docutils literal"><span class="pre">moveAfter()</span></code>.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="typical-use-cases">
+<span id="pages-html-element-handling-typical-use-cases"></span><h2>Typical Use Cases<a class="headerlink" href="#typical-use-cases" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Building a widget system on top</li>
+<li>Massively building DOM elements from data structures</li>
+</ul>
+</div></blockquote>
+<p>It may be used for smaller things as well, but brings in quite some overhead. The size of the API, additional to a basic low-level package of qooxdoo is about 20 KB (5 KB gzipped). Also it consumes a bit more memory when all underlying DOM elements are created. Keep in mind that the instances are around all the time. Even when all jobs for a instance are done at the moment.</p>
+</div>
+<div class="section" id="features">
+<span id="pages-html-element-handling-features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Automatic DOM insertion and element management</li>
+<li>Full cross-browser support through usage of low-level APIs e.g. <code class="docutils literal"><span class="pre">setStyle()</span></code>, <code class="docutils literal"><span class="pre">getAttribute()</span></code>, ...</li>
+<li>Advanced children handling with a lot of convenience methods e.g. <code class="docutils literal"><span class="pre">addAfter()</span></code>, ...</li>
+<li>Reuse existing markup as a base of any element via <code class="docutils literal"><span class="pre">useMarkup()</span></code></li>
+<li>Reuse an existing DOM node via <code class="docutils literal"><span class="pre">useElement()</span></code></li>
+<li>Powerful visibility handling to <code class="docutils literal"><span class="pre">include()</span></code> or <code class="docutils literal"><span class="pre">exclude()</span></code> specific sub trees</li>
+<li>Support for scrolling and scroll into view (<code class="docutils literal"><span class="pre">scrollTo()</span></code>, <code class="docutils literal"><span class="pre">scrollIntoView()</span></code>, ...)</li>
+<li>Integration of text selection APIs (<code class="docutils literal"><span class="pre">setSelection()</span></code>, <code class="docutils literal"><span class="pre">getSelection()</span></code>, ...)</li>
+<li>Automatic interaction with event managers (<code class="docutils literal"><span class="pre">addListener()</span></code>, <code class="docutils literal"><span class="pre">removeListener()</span></code>, ...)</li>
+<li>Connection to focus/activation handler</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="specific-html-elements">
+<span id="pages-html-element-handling-specific-html-elements"></span><h2>Specific HTML Elements<a class="headerlink" href="#specific-html-elements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="roots">
+<span id="pages-html-element-handling-roots"></span><h3>Roots<a class="headerlink" href="#roots" title="Permalink to this headline">¶</a></h3>
+<p>A root is one essential element type when dealing with the API. Every user of <code class="docutils literal"><span class="pre">qx.html.Element</span></code> needs at least one instance of <code class="docutils literal"><span class="pre">qx.html.Root</span></code> to insert children to it. The root is always marked as being visible and is typically the body DOM element or any other directly inserted element. This element can be assigned to be used by the root using the method <code class="docutils literal"><span class="pre">useElement()</span></code>.</p>
+</div>
+<div class="section" id="labels">
+<span id="pages-html-element-handling-labels"></span><h3>Labels<a class="headerlink" href="#labels" title="Permalink to this headline">¶</a></h3>
+<p>Used for all types of text content. Supports text or HTML content togglable using the <code class="docutils literal"><span class="pre">setRich()</span></code> method. When using the text mode ellipsis is supports in all browsers to show an indication when the text is larger than the available space. Highly depends on the API of <a class="reference external" href="http://api.qooxdoo.org#qx.bom.Label">qx.bom.Label</a>.</p>
+</div>
+<div class="section" id="images">
+<span id="pages-html-element-handling-images"></span><h3>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
+<p>An element pre-configured as a <code class="docutils literal"><span class="pre">IMG</span></code> tag. Supports scaled and unscaled images. Supports image clipping (without scaling) to more efficiently deal with a lot of images. Depends on the API brought in by <a class="reference external" href="http://api.qooxdoo.org#qx.bom.element.Decoration">qx.bom.element.Decoration</a>.</p>
+</div>
+<div class="section" id="input">
+<span id="pages-html-element-handling-input"></span><h3>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
+<p>This element is used for all types of input fields. The type can be given using a constructor parameter. It allows configuration of the <code class="docutils literal"><span class="pre">value</span></code> and the text wrapping (requires type <code class="docutils literal"><span class="pre">textarea</span></code>). Depends on the API brought in by <a class="reference external" href="http://api.qooxdoo.org#qx.bom.Input">qx.bom.Input</a>.</p>
+</div>
+<div class="section" id="iframe">
+<span id="pages-html-element-handling-iframe"></span><h3>Iframe<a class="headerlink" href="#iframe" title="Permalink to this headline">¶</a></h3>
+<p>This element is used to create iframes to embed content from other sources to the DOM. It wraps the features of <a class="reference external" href="http://api.qooxdoo.org#qx.bom.Iframe">qx.bom.Iframe</a>. Supports to configure the source of the iframe as well as its name. Comes with accessors to the document or window object of the iframe.</p>
+</div>
+<div class="section" id="canvas">
+<span id="pages-html-element-handling-canvas"></span><h3>Canvas<a class="headerlink" href="#canvas" title="Permalink to this headline">¶</a></h3>
+<p>Renders a <a class="reference external" href="https://html.spec.whatwg.org/multipage/scripting.html#the-canvas-element">HTML5 Canvas</a> to the DOM. Has methods to access the render context as well to configure the dimensions of the Canvas.</p>
+</div>
+</div>
+<div class="section" id="the-queue">
+<span id="pages-html-element-handling-the-queue"></span><h2>The Queue<a class="headerlink" href="#the-queue" title="Permalink to this headline">¶</a></h2>
+<p>Internally most actions applied to the instances of <code class="docutils literal"><span class="pre">qx.html.Element</span></code> are applied lazily to the DOM. All style or attribute changes are queued for example to set them at once. This is especially useful to allow to bump out changes at once to the browser even when these happens in multi places and more important on more than one element.</p>
+<p>Even things like focus handling or scrolling may be queued. It depends on if the element is currently visible etc. whether these are queued. <code class="docutils literal"><span class="pre">focus</span></code> makes often more sense when it is directly executed as the following code may make assumptions that the changes are applied already. Generally qooxdoo allows it to apply most changes without the queue as well using a <code class="docutils literal"><span class="pre">direct</span></code> flag which is part of most setters offered by <code class="docutils literal"><span class="pre">qx.html.Element</span></code>.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="event_layer_impl.html"
+             title="previous chapter">« The Event Layer</a>
+          <span class="separator">|</span>
+          <a class="next" href="focus_layer_impl.html"
+             title="next chapter">The Focus Layer »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">HTML Element Handling</a><ul>
+<li><a class="reference internal" href="#pages-html-element-handling-idea">Idea</a></li>
+<li><a class="reference internal" href="#typical-use-cases">Typical Use Cases</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#specific-html-elements">Specific HTML Elements</a><ul>
+<li><a class="reference internal" href="#roots">Roots</a></li>
+<li><a class="reference internal" href="#labels">Labels</a></li>
+<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#input">Input</a></li>
+<li><a class="reference internal" href="#iframe">Iframe</a></li>
+<li><a class="reference internal" href="#canvas">Canvas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-queue">The Queue</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="focus_layer_impl.html"
+                        title="next chapter">The Focus Layer</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="event_layer_impl.html"
+                        title="previous chapter">The Event Layer</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/html_element_handling.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,359 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Property features summarized &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Core" href="../core.html" />
+    <link rel="next" title="Environment" href="environment.html" />
+    <link rel="prev" title="Initialization Behavior" href="property_behavior.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../core.html" accesskey="U">Core</a>
+     &#187;
+    <a href="">Property features summarized</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="property-features-summarized">
+<span id="pages-property-features-property-features"></span><h1>Property features summarized<a class="headerlink" href="#property-features-summarized" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The chapter gives you an compact but extensive overview of the features offered by qooxdoo's property system.
+Please refer to <a class="reference internal" href="defining_properties.html"><span class="doc">Properties in more detail</span></a> for an explanation of how to define and use properties.</p>
+</div>
+<div class="section" id="value-checks">
+<span id="pages-property-features-value-checks"></span><h2>Value checks<a class="headerlink" href="#value-checks" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Built-in types for most common things</li>
+<li>Runtime checks (development version only)</li>
+<li>Instance checks by simply define the classname of the class to check for (always use an instanceof operation - a real classname is not available anymore)</li>
+<li>Custom check method by simply attaching a function to the declaration</li>
+<li>Custom check defined by a string which will be compiled into the resulting setters (faster than the above variant)</li>
+<li>Define multiple possible (primitive) values using an array</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="validation">
+<span id="pages-property-features-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Validation in both development and build version</li>
+<li>Predefined validators for default validation</li>
+<li>Throws a special validation error</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="advanced-value-handling">
+<span id="pages-property-features-advanced-value-handling"></span><h2>Advanced value handling<a class="headerlink" href="#advanced-value-handling" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Multi value support. Support to store different values for init, inheritance, style and user including a automatic fallback mechanism between them.</li>
+<li>Inheritance support. Inheritance of properties defined by a parent widget e.g. inherit enabled from a groupbox to all form elements. Uses the inheritance if the computed value would be <code class="docutils literal"><span class="pre">undefined</span></code> or explicitly set to <code class="docutils literal"><span class="pre">&quot;inherit&quot;</span></code>. The getter simply returns <code class="docutils literal"><span class="pre">&quot;inherit&quot;</span></code> for inheritable properties which are otherwise unset.</li>
+<li>Blocks unintentionally <code class="docutils literal"><span class="pre">undefined</span></code> values in all setters with an exception. To reset a value one must use the <code class="docutils literal"><span class="pre">reset</span></code> or <code class="docutils literal"><span class="pre">unstyle</span></code> method which are available too.</li>
+<li>Overriding of a value by setting a property explicitly to <code class="docutils literal"><span class="pre">null</span></code></li>
+<li>Properties must be explicitly configured as <code class="docutils literal"><span class="pre">&quot;nullable&quot;</span></code> (like in .Net). The default is <code class="docutils literal"><span class="pre">false</span></code> which means that incoming <code class="docutils literal"><span class="pre">null</span></code> values will result in an exception.</li>
+<li>Accessing nullable properties with <code class="docutils literal"><span class="pre">undefined</span></code> values will result in a normalization to <code class="docutils literal"><span class="pre">null</span></code>.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="convenience">
+<span id="pages-property-features-convenience"></span><h2>Convenience<a class="headerlink" href="#convenience" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Convenient toggle method for boolean properties</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="notification">
+<span id="pages-property-features-notification"></span><h2>Notification<a class="headerlink" href="#notification" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Support for a custom apply routine</li>
+<li>Event firing with a custom named event</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="initialization">
+<span id="pages-property-features-initialization"></span><h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo automatically correctly initializes properties. This is true for both, properties which have defined an <code class="docutils literal"><span class="pre">init</span></code> value and also for the other properties which are <code class="docutils literal"><span class="pre">nullable</span></code>. This means that after you have created an instance the properties correctly reflect the applied value. Default values assigned by <code class="docutils literal"><span class="pre">init</span></code> also execute the configured <code class="docutils literal"><span class="pre">apply</span></code> methods and dispatch configured events to inform already added listeners.</p>
+<p><a class="reference internal" href="property_behavior.html"><span class="doc">Initialization Behavior</span></a></p>
+</div>
+<div class="section" id="performance">
+<span id="pages-property-features-performance"></span><h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
+<p>Automatic optimization of all setters to the optimal highly-tuned result code. Impressive tailor made high performance setters are the result.</p>
+<p>Please note that after the definition point of a property the setters are not yet available. Wrappers for them will be created with the first instance and the final code will be generated with the first use of such a setter. This first use will also automatically unwrap the property setter to directly use the generated one.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="property_behavior.html"
+             title="previous chapter">« Initialization Behavior</a>
+          <span class="separator">|</span>
+          <a class="next" href="environment.html"
+             title="next chapter">Environment »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Property features summarized</a><ul>
+<li><a class="reference internal" href="#value-checks">Value checks</a></li>
+<li><a class="reference internal" href="#validation">Validation</a></li>
+<li><a class="reference internal" href="#advanced-value-handling">Advanced value handling</a></li>
+<li><a class="reference internal" href="#convenience">Convenience</a></li>
+<li><a class="reference internal" href="#notification">Notification</a></li>
+<li><a class="reference internal" href="#initialization">Initialization</a></li>
+<li><a class="reference internal" href="#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="environment.html"
+                        title="next chapter">Environment</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="property_behavior.html"
+                        title="previous chapter">Initialization Behavior</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/core/property_features.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,424 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Generator Config Macros &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="References" href="../../references.html" />
+    <link rel="next" title="qooxdoo Generator Cheat Sheet - v.5.0.2" href="cheat_sheet.html" />
+    <link rel="prev" title="Generator Config Keys" href="generator_config_ref.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../references.html" accesskey="U">References</a>
+     &#187;
+    <a href="">Generator Config Macros</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="generator-config-macros">
+<span id="pages-tool-generator-generator-config-macros-configuration-macro-reference"></span><h1>Generator Config Macros<a class="headerlink" href="#generator-config-macros" title="Permalink to this headline">¶</a></h1>
+<p>This page lists the macros which are pre-defined in qooxdoo, and can (mostly) be overridden in custom configuration files. (Others, like PYTHON_CMD or QOOXDOO_VERSION, you would only want to reference, but not set).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="40%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Macro name</th>
+<th class="head">Description</th>
+<th class="head">Default value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-add-nocache-param">ADD_NOCACHE_PARAM</p>
+</td>
+<td>turn <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-compile-options"><span class="std std-ref">compile-options/uris/add-nocache-param</span></a>  on/off for <em>source</em> builds</td>
+<td>false</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-api-exclude">API_EXCLUDE</p>
+</td>
+<td>list of class pattern to exclude from the api documentation</td>
+<td>[]</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-api-include">API_INCLUDE</p>
+</td>
+<td>list of class pattern to include in the api documentation</td>
+<td>[&quot;qx.*&quot;, &quot;${APPLICATION}.*&quot;]</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-application">APPLICATION</p>
+</td>
+<td>application name space</td>
+<td>&lt;undef&gt;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-application-main-class">APPLICATION_MAIN_CLASS</p>
+</td>
+<td>application main class</td>
+<td>${APPLICATION}.Application</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-build-path">BUILD_PATH</p>
+</td>
+<td>output path for the &quot;build&quot; job (can be rel. to config dir)</td>
+<td>./build</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-cache">CACHE</p>
+</td>
+<td>path to the compile cache (can be rel. to config dir)</td>
+<td>${TMPDIR}/cache</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-cache-key">CACHE_KEY</p>
+</td>
+<td>takes the value of a complete <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-cache"><span class="std std-ref">cache</span></a> configuration key (i.e. a map)</td>
+<td>{ &quot;compile&quot; : &quot;${CACHE}&quot;, &quot;downloads&quot; : &quot;${CACHE}/downloads&quot;, &quot;invalidate-on-tool-change&quot; : true }</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-compile-with-lint">COMPILE_WITH_LINT</p>
+</td>
+<td>turn <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-compile-options"><span class="std std-ref">lint-check</span></a> on/off during compile runs</td>
+<td>true</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-generator-opts">GENERATOR_OPTS</p>
+</td>
+<td>(read-only) string with the command line options the generator was invoked with (e.g. <em>&quot;-c myconf.json -q&quot;</em>)</td>
+<td>&lt;undef&gt;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-home">HOME</p>
+</td>
+<td>(read-only) value of the (process) environment variable &quot;HOME&quot;</td>
+<td>&quot;.&quot; <em>(for safety reasons)</em></td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-locales">LOCALES</p>
+</td>
+<td>list of locales for this application</td>
+<td>[ &quot;en&quot; ]</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-optimize">OPTIMIZE</p>
+</td>
+<td>list of <a class="reference internal" href="generator_optimizations.html"><span class="doc">optimization options</span></a> for build version</td>
+<td>[&quot;basecalls&quot;, &quot;comments&quot;, &quot;privates&quot;, &quot;statics&quot;, &quot;strings&quot;, &quot;variables&quot;, &quot;variants&quot;, &quot;whitespace&quot;]</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-qooxdoo-path">QOOXDOO_PATH</p>
+</td>
+<td>path to the qooxdoo installation root dir</td>
+<td>&lt;undef&gt;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-qooxdoo-version">QOOXDOO_VERSION</p>
+</td>
+<td>the current qooxdoo version</td>
+<td>5.0.2</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-qooxdoo-revision">QOOXDOO_REVISION</p>
+</td>
+<td>(read-only) the current qooxdoo repository revision</td>
+<td>(only defined in a repository checkout)</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-qxicontheme">QXICONTHEME</p>
+</td>
+<td>icon theme to use for this application</td>
+<td>[&quot;Tango&quot;]</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-qxtheme">QXTHEME</p>
+</td>
+<td>theme to use for this application</td>
+<td>&quot;qx.theme.Modern&quot;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-python-cmd">PYTHON_CMD</p>
+</td>
+<td>(read-only) Python executable</td>
+<td>(your system's default Python executable)</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-root">ROOT</p>
+</td>
+<td>application root dir (rel. to config dir)</td>
+<td>&quot;.&quot;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-source-server-port">SOURCE_SERVER_PORT</p>
+</td>
+<td>port the <a class="reference internal" href="default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-server"><span class="std std-ref">source-server</span></a> should run on</td>
+<td>0 (meaning an arbitrary free port will be picked)</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-test-include">TEST_INCLUDE</p>
+</td>
+<td>class pattern to search for unit test classes</td>
+<td>&quot;${APPLICATION}.test.*&quot;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-test-exclude">TEST_EXCLUDE</p>
+</td>
+<td>class pattern to exclude unit test classes</td>
+<td>&quot;${APPLICATION}.test.oldtests.*&quot;</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-test-script">TESTS_SCRIPT</p>
+</td>
+<td>script file name for the test application (the &quot;AUT&quot;)</td>
+<td>&quot;tests.js&quot;</td>
+</tr>
+<tr class="row-even"><td><p class="first last" id="pages-tool-generator-generator-config-macros-tmpdir">TMPDIR</p>
+</td>
+<td>(read-only) path to tmp directory</td>
+<td>(platform-dependent, like /tmp etc.; run <em>generate.py info</em> to find out)</td>
+</tr>
+<tr class="row-odd"><td><p class="first last" id="pages-tool-generator-generator-config-macros-username">USERNAME</p>
+</td>
+<td>(read-only) value of the (process) environment variable &quot;USERNAME&quot;</td>
+<td>&lt;undef&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="generator_config_ref.html"
+             title="previous chapter">« Generator Config Keys</a>
+          <span class="separator">|</span>
+          <a class="next" href="cheat_sheet.html"
+             title="next chapter">qooxdoo Generator Cheat Sheet - v.5.0.2 »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="cheat_sheet.html"
+                        title="next chapter">qooxdoo Generator Cheat Sheet - v.5.0.2</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="generator_config_ref.html"
+                        title="previous chapter">Generator Config Keys</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/generator_config_macros.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

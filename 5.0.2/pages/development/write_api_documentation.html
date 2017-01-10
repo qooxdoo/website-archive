@@ -1,0 +1,384 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Writing API Documentation &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="JSDoc Reference" href="api_jsdoc_ref.html" />
+    <link rel="prev" title="Internationalization" href="internationalization.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../development.html" accesskey="U">Development</a>
+     &#187;
+    <a href="">Writing API Documentation</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="writing-api-documentation">
+<span id="pages-write-api-documentation-writing-api-documentation"></span><h1>Writing API Documentation<a class="headerlink" href="#writing-api-documentation" title="Permalink to this headline">¶</a></h1>
+<p>For documenting the qooxdoo API special comments in the source code (so-called &quot;doc comments&quot;) are used. The doc comments in qooxdoo are similar to <a class="reference external" href="http://code.google.com/p/jsdoc-toolkit/">JSDoc comments</a> or <a class="reference external" href="http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html">Javadoc</a> comments. To account for some qooxdoo specific needs there are certain differences to the two systems mentioned above. For a complete treatment of the syntax see the <a class="reference internal" href="api_jsdoc_ref.html"><span class="doc">JSDoc reference</span></a>.</p>
+<div class="section" id="an-introductory-example">
+<span id="pages-write-api-documentation-the-structure-of-a-documentation-comment"></span><h2>An introductory example<a class="headerlink" href="#an-introductory-example" title="Permalink to this headline">¶</a></h2>
+<p>Doc comments are specially formatted comment blocks enclosed by <code class="docutils literal"><span class="pre">/**</span></code> and <code class="docutils literal"><span class="pre">*/</span></code>. A typical use case is to put them in front of a method definition. You start with a general description of the method, and then add sections that start with <code class="docutils literal"><span class="pre">&#64;</span></code> followed by a special key that describes e.g. a parameter or the return type of the method. Here is an example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Shows a message to the user.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param text {string} the message to show.</span>
+<span class="cm"> */</span>
+<span class="nx">showMessage</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal"><span class="pre">&#64;param</span></code> attribute entry describes the parameter <code class="docutils literal"><span class="pre">text</span></code>. Description texts may also include markup for highlighting and structure.</p>
+<p>Here is a longer example that covers an entire class file:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * General class description.</span>
+<span class="cm"> */</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;mypackage.MyClass&quot;</span><span class="p">,</span>
+<span class="p">{</span>
+  <span class="nx">extend</span> <span class="o">:</span> <span class="nx">blubb</span><span class="p">.</span><span class="nx">MySuperClass</span><span class="p">,</span>
+
+  <span class="cm">/**</span>
+<span class="cm">   * Constructor description.</span>
+<span class="cm">   *</span>
+<span class="cm">   * @param param1 {Integer} description of first parameter\</span>
+<span class="cm">   */</span>
+  <span class="nx">construct</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">param1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">properties</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="cm">/** Property definitions. */</span>
+  <span class="s2">&quot;myProperty&quot;</span> <span class="o">:</span>
+   <span class="p">{</span>
+      <span class="nx">check</span> <span class="o">:</span> <span class="s2">&quot;Number&quot;</span><span class="p">,</span>
+      <span class="nx">init</span> <span class="o">:</span> <span class="mi">0</span>
+   <span class="p">}</span>
+<span class="p">},</span>
+
+<span class="nx">members</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="cm">/** Method description */</span>
+  <span class="nx">myMethod</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bla</span><span class="p">,</span> <span class="nx">blubb</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">}</span>
+<span class="p">},</span>
+
+<span class="nx">statics</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="cm">/** Static method description */</span>
+  <span class="nx">myStaticMethod</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">bla</span><span class="p">,</span> <span class="nx">blubb</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">},</span>
+
+  <span class="cm">/** Constant description */</span>
+  <span class="nx">MY_CONSTANT</span> <span class="o">:</span> <span class="mi">100</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>The class description is taken as the first comment in the file which starts with <code class="docutils literal"><span class="pre">/**</span></code>. Therefore if you have a comment at the start of the file which has a first line of <code class="docutils literal"><span class="pre">/**********</span></code>, that will be taken as the class description, overriding any comment above the class itself. Therefore use <code class="docutils literal"><span class="pre">/*</span> <span class="pre">*********</span></code> or <code class="docutils literal"><span class="pre">/*</span> <span class="pre">==========</span></code> etc.</p>
+</div>
+<div class="section" id="advanced-doc-comments">
+<span id="pages-write-api-documentation-example"></span><h2>Advanced Doc Comments<a class="headerlink" href="#advanced-doc-comments" title="Permalink to this headline">¶</a></h2>
+<p>Here is a more advanced example of a method documentation block that uses more <code class="docutils literal"><span class="pre">&#64;</span></code> keys to provide structured information about the method.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* Handles a drop.</span>
+<span class="cm">*</span>
+<span class="cm">* @param dragSource {qx.bla.DragSource} the drag source that was dropped.</span>
+<span class="cm">* @param targetElement {Element} the target element the drop aims to.</span>
+<span class="cm">* @param dropType {Integer ? null} the drop type. This is the same type</span>
+<span class="cm">*        as used in {@link qx.bla.DragEvent}.</span>
+<span class="cm">* @return {Boolean} whether the event was handled.</span>
+<span class="cm">* @throws {Error} if the targetElement is no child of this drop target.</span>
+<span class="cm">*</span>
+<span class="cm">* @see #getDragEvent</span>
+<span class="cm">* @see qx.bla.DragEvent</span>
+<span class="cm">*/</span>
+<span class="nx">handleDrop</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">dragSource</span><span class="p">,</span> <span class="nx">targetElement</span><span class="p">,</span> <span class="nx">dropType</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This will render in the Apiviewer similarly to this:</p>
+<img alt="../../_images/apiviewer_method.png" src="../../_images/apiviewer_method.png" />
+<p>As mentioned above the <a class="reference internal" href="api_jsdoc_ref.html"><span class="doc">JSDoc reference</span></a> has the complete list of possible section keys and markup possibilities.</p>
+</div>
+<div class="section" id="package-documentation">
+<span id="pages-write-api-documentation-init-js-files"></span><h2>Package documentation<a class="headerlink" href="#package-documentation" title="Permalink to this headline">¶</a></h2>
+<p>While documenting a class files where JSDoc comments are interleaved with the class code seems straight forward, this is not so obvious if you want to provide documentation for a <em>package</em>, i.e. a collection of classes under a common namespace (like <em>qx.ui.core</em>, <em>qx.util</em>, etc.).</p>
+<p>In order to fill this gap you can add a <code class="docutils literal"><span class="pre">__init__.js</span></code> file to the package. This file should contain only a single JSDoc comment that describes the package as a whole. These files are then scanned during a <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></code> run and the documentation is inserted at the package nodes, together with a list of classes of the corresponding package, in the documentation tree. See the API documentation for the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.fx">framework packages</a> as examples.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="internationalization.html"
+             title="previous chapter">« Internationalization</a>
+          <span class="separator">|</span>
+          <a class="next" href="api_jsdoc_ref.html"
+             title="next chapter">JSDoc Reference »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Writing API Documentation</a><ul>
+<li><a class="reference internal" href="#an-introductory-example">An introductory example</a></li>
+<li><a class="reference internal" href="#advanced-doc-comments">Advanced Doc Comments</a></li>
+<li><a class="reference internal" href="#package-documentation">Package documentation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="api_jsdoc_ref.html"
+                        title="next chapter">JSDoc Reference</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="internationalization.html"
+                        title="previous chapter">Internationalization</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/write_api_documentation.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

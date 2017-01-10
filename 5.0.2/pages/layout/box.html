@@ -1,0 +1,363 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HBox/VBox &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Layout Reference" href="../layout.html" />
+    <link rel="next" title="Flow" href="flow.html" />
+    <link rel="prev" title="Canvas" href="canvas.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../references.html" >References</a>
+       &#187;
+      <a href="../layout.html" accesskey="U">Layout Reference</a>
+     &#187;
+    <a href="">HBox/VBox</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="hbox-vbox">
+<span id="pages-layout-box-hbox-vbox"></span><h1>HBox/VBox<a class="headerlink" href="#hbox-vbox" title="Permalink to this headline">¶</a></h1>
+<p>The box layouts lay out their children one after the other. The horizontal box layout lays out widgets in a horizontal row, from left to right, while the vertical box layout lays out widgets in a vertical column, from top to bottom.</p>
+<div class="section" id="preview-image">
+<span id="pages-layout-box-preview-image"></span><h2>Preview Image<a class="headerlink" href="#preview-image" title="Permalink to this headline">¶</a></h2>
+<p><img alt="layout/hbox.png" src="../../_images/hbox.png" /></p>
+</div>
+<div class="section" id="features">
+<span id="pages-layout-box-features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Respects Minimum and maximum dimensions</li>
+<li>Prioritized growing/shrinking (flex)</li>
+<li>Margins with horizontal (HBox) resp. vertical (VBox) collapsing)</li>
+<li>Auto sizing (ignoring percent values)</li>
+<li>Percent widths (not size hint relevant)</li>
+<li>Alignment (Children property {&#64;link qx.ui.core.LayoutItem#alignX} is ignored)</li>
+<li>Horizontal (HBox) resp. vertical (VBox) spacing (collapsed with margins)</li>
+<li>Property to reverse children ordering (starting from last to first)</li>
+<li>Vertical (HBox) resp. horizontal (VBox) children stretching (respecting size hints)</li>
+</ul>
+</div>
+<div class="section" id="description">
+<span id="pages-layout-box-description"></span><h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Both box layouts lay out their children one after the other. This description will discuss the horizontal box layout. Everything said about the horizontal box layout applies equally to the vertical box layout just with a vertical orientation.</p>
+<p>In addition to the child widget's own preferred width the width of a child can also be defined as <a class="reference internal" href="../desktop/ui_layouting.html#pages-ui-layouting-percent"><span class="std std-ref">percent</span></a> values. The percent value is relative to the inner width of the parent widget without any spacings. This means a horizontal box layout with two children of width <code class="docutils literal"><span class="pre">50%</span></code> and with a spacing will fit exactly in the parent.</p>
+<p>The horizontal box layout tries to stretch all children vertically to the height of the box layout. This can be suppressed by setting the child property <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.LayoutItem~setAllowGrowY">allowGrowY</a> to false. If a child is smaller than the layout and cannot be stretched it will be aligned according to its <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.LayoutItem~setAlignY">alignY</a> value. The <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.layout.HBox~setAlignX">alignX</a> property of the layout itself defines the horizontal alignment of all the children as a whole.</p>
+<p>The horizontal spacing can be defined using the property <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.layout.HBox~setSpacing">spacing</a>. In addition to the spacing property each widget can define left and a right <code class="docutils literal"><span class="pre">margin</span></code>. Margins and the spacing are always collapsed to the largest single value. If for example the layout has a spacing of <code class="docutils literal"><span class="pre">10</span></code> pixel and two consecutive child widgets A and B - A with a right margin of <code class="docutils literal"><span class="pre">15</span></code> and B with a left margin of <code class="docutils literal"><span class="pre">5</span></code> - than the spacing between these widgets would be <code class="docutils literal"><span class="pre">15</span></code>, the maximum of these values.</p>
+<p>The preferred height of an horizontal box layout is determined by the highest child widget. The preferred with is the sum of the widths of each child plus the spacing resulting from margins and the <code class="docutils literal"><span class="pre">spacing</span></code> property.</p>
+</div>
+<div class="section" id="layout-properties">
+<span id="pages-layout-box-layout-properties"></span><h2>Layout properties<a class="headerlink" href="#layout-properties" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>flex</strong> <em>(Integer)</em>: Defines the flexibility (stretching factor) of the child (defaults to <code class="docutils literal"><span class="pre">0</span></code>)</li>
+<li><strong>width</strong> <em>(String)</em>: Defines a percent width for the item. The percent width,  when specified, is used instead of the width defined by the size hint. The minimum and maximum width still takes care of the elements limitations.  It has no influence on the layout's size hint. Percents are mainly useful for widgets which are sized by the outer hierarchy.</li>
+</ul>
+</div>
+<div class="section" id="alternative-names">
+<span id="pages-layout-box-alternative-names"></span><h2>Alternative Names<a class="headerlink" href="#alternative-names" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>QVBoxLayout (Qt)</li>
+<li>StackPanel (XAML)</li>
+<li>RowLayout (SWT)</li>
+</ul>
+</div>
+<div class="section" id="demos">
+<span id="pages-layout-box-demos"></span><h2>Demos<a class="headerlink" href="#demos" title="Permalink to this headline">¶</a></h2>
+<p>Here are some links that demonstrate the usage of the layout:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox.html">Simple HBox usage</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_Flex.html">HBox with flex widths</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_Margin.html">HBox with child margins</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_Percent.html">HBox with percent widths</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_Reversed.html">HBox with switchable ''reversed'' property</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_Separator.html">HBox with separators</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~HBox_ShrinkY.html">HBox with vertical shrinking</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox.html">Simple VBox usage</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_Flex.html">VBox with flex heights</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_Margin.html">VBox with child margins</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_Percent.html">VBox with percent heights</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_Reversed.html">VBox with switchable ''reversed'' property</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_Separator.html">VBox with separators</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#layout~VBox_ShrinkX.html">VBox with horizontal shrinking</a></li>
+</ul>
+</div>
+<div class="section" id="api">
+<span id="pages-layout-box-api"></span><h2>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>Here is a link to the API of the layout manager:</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/index.html#qx.ui.layout.HBox">qx.ui.layout.HBox</a></div>
+<div class="line"><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/index.html#qx.ui.layout.VBox">qx.ui.layout.VBox</a></div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="canvas.html"
+             title="previous chapter">« Canvas</a>
+          <span class="separator">|</span>
+          <a class="next" href="flow.html"
+             title="next chapter">Flow »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">HBox/VBox</a><ul>
+<li><a class="reference internal" href="#preview-image">Preview Image</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#layout-properties">Layout properties</a></li>
+<li><a class="reference internal" href="#alternative-names">Alternative Names</a></li>
+<li><a class="reference internal" href="#demos">Demos</a></li>
+<li><a class="reference internal" href="#api">API</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="flow.html"
+                        title="next chapter">Flow</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="canvas.html"
+                        title="previous chapter">Canvas</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/layout/box.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

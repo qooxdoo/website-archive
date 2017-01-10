@@ -1,0 +1,500 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Generator Features &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="Tooling" href="../../tool.html" />
+    <link rel="next" title="Generator Usage" href="generator_usage.html" />
+    <link rel="prev" title="Generator Overview" href="generator.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Generator Features</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="generator-features">
+<h1>Generator Features<a class="headerlink" href="#generator-features" title="Permalink to this headline">¶</a></h1>
+<p>This is a functional overview over the feature areas of the Generator, answering the question &quot;What can I achieve with the Generator?&quot;.</p>
+<div class="section" id="application-generation">
+<h2>Application Generation<a class="headerlink" href="#application-generation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="code-dependency-analysis">
+<h3>Code Dependency Analysis<a class="headerlink" href="#code-dependency-analysis" title="Permalink to this headline">¶</a></h3>
+<p>The Generator automatically detects dependencies between classes. These dependencies are explored recursively, so only the minimal set of start classes needs to be provided, in order to create a full application consisting of many classes. Except for rare cases, no explicit &quot;requiring&quot; of other classes is necessary in application code.</p>
+</div>
+<div class="section" id="code-selection">
+<h3>Code Selection<a class="headerlink" href="#code-selection" title="Permalink to this headline">¶</a></h3>
+<p>Depending on dependency information the classes necessary for an application are selected from all classes provided by the involved libraries.</p>
+</div>
+<div class="section" id="variant-builds">
+<h3>Variant Builds<a class="headerlink" href="#variant-builds" title="Permalink to this headline">¶</a></h3>
+<p>You can create variants of your application, where in each of them only code is contained that complies with a specific set of values that can be defined in configuration. Those values may pertain to browser features, runtime settings, or user-defined properties. A common application is to remove debug code from optimized builds, or to specialize code for a specific rendering engine like Gecko or Webkit.</p>
+</div>
+<div class="section" id="code-optimization">
+<h3>Code Optimization<a class="headerlink" href="#code-optimization" title="Permalink to this headline">¶</a></h3>
+<p>Besides variant generation (that optimizes by removing dead code) various optimizations and compressions can be applied to class code, to make script files smaller and execution faster. Those optimizations include variable shortening, partial evaluation, call inlining, or constant folding (the latter for environment queries).</p>
+</div>
+<div class="section" id="script-and-loader-generation">
+<h3>Script and Loader Generation<a class="headerlink" href="#script-and-loader-generation" title="Permalink to this headline">¶</a></h3>
+<p>All the code that eventually goes into the application needs to be sorted, so that symbols are available in the JavaScript interpreter when they are referenced. This is achieved by generating sorted script files, and generating a loader script that loads them in the right order. The loader script is the single entry point for the hosting HTML page to load the qooxdoo application.</p>
+</div>
+<div class="section" id="zip-compression">
+<h3>Zip Compression<a class="headerlink" href="#zip-compression" title="Permalink to this headline">¶</a></h3>
+<p>Script files can optionally be gzipped.</p>
+</div>
+<div class="section" id="application-environment">
+<h3>Application Environment<a class="headerlink" href="#application-environment" title="Permalink to this headline">¶</a></h3>
+<p>An open set of key-value bindings can be established in the generator configuration. Those bindings are evaluated by the Generator at compile time (e.g. in the form of partial evaluating access to them), as well as at runtime.</p>
+</div>
+<div class="section" id="file-inclusion">
+<h3>File Inclusion<a class="headerlink" href="#file-inclusion" title="Permalink to this headline">¶</a></h3>
+<p>You can add arbitrary .js and .css files to your application that will be loaded ahead of any qooxdoo code.</p>
+</div>
+<div class="section" id="contribution-inclusion">
+<h3>Contribution Inclusion<a class="headerlink" href="#contribution-inclusion" title="Permalink to this headline">¶</a></h3>
+<p>Online hosted qooxdoo contributions can be included like local libraries.</p>
+</div>
+<div class="section" id="lazy-loading-parts">
+<h3>Lazy-Loading Parts<a class="headerlink" href="#lazy-loading-parts" title="Permalink to this headline">¶</a></h3>
+<p>You can define parts of your application that are generated as distinct units that can be loaded on demand during runtime. This reduces network and memory footprint when the main application is loaded, and the overall footprint when the optional part is not needed over the app's life cycle.</p>
+</div>
+<div class="section" id="deployment-builds">
+<h3>Deployment Builds<a class="headerlink" href="#deployment-builds" title="Permalink to this headline">¶</a></h3>
+<p>The deployment build creates an optimized version of the application, together with all its static resources like images, translation strings, Css files, into a self-contained directory tree. This tree can then be copied to arbitrary locations and will run there out of the box.</p>
+</div>
+<div class="section" id="file-watching">
+<h3>File Watching<a class="headerlink" href="#file-watching" title="Permalink to this headline">¶</a></h3>
+<p>TBD [Watching files or directory trees for changes, and take a predefined action like re-generating an application, compile Less to Css files, or run a documentation generator.]</p>
+</div>
+</div>
+<div class="section" id="code-maintenance">
+<h2>Code Maintenance<a class="headerlink" href="#code-maintenance" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lint-checking">
+<h3>Lint Checking<a class="headerlink" href="#lint-checking" title="Permalink to this headline">¶</a></h3>
+<p>You code can be inspected for flaws and potential pitfalls, beyond it being syntactically correct.</p>
+</div>
+<div class="section" id="whitespace-fixing">
+<h3>Whitespace Fixing<a class="headerlink" href="#whitespace-fixing" title="Permalink to this headline">¶</a></h3>
+<p>Irregular whitespace can be an annoyance, like tab width differences or the inclusion of unusual Unicode whitespace characters (e.g. BOM). The Generator can fix this.</p>
+</div>
+<div class="section" id="pretty-printing">
+<h3>Pretty-Printing<a class="headerlink" href="#pretty-printing" title="Permalink to this headline">¶</a></h3>
+<p>Your code can be re-formatted to comply to some rules of regularity, which are customizable through configuration.</p>
+</div>
+</div>
+<div class="section" id="resource-handling">
+<h2>Resource Handling<a class="headerlink" href="#resource-handling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resource-selection">
+<h3>Resource Selection<a class="headerlink" href="#resource-selection" title="Permalink to this headline">¶</a></h3>
+<p>From a rich set of application resources like images only those are chosen that are required by the classes that are selected for the application. This reduces the size footprint of the application.</p>
+</div>
+<div class="section" id="image-slicing-and-combining">
+<h3>Image Slicing and Combining<a class="headerlink" href="#image-slicing-and-combining" title="Permalink to this headline">¶</a></h3>
+<p>The Generator provides a high-level interface to the ImageMagick tool suite, in order to slice a complex image in smaller parts (e.g. border, edges and the central part), or to combine a set of images into a combined image.</p>
+</div>
+<div class="section" id="base64-combined-images">
+<h3>Base64 Combined Images<a class="headerlink" href="#base64-combined-images" title="Permalink to this headline">¶</a></h3>
+<p>A special case of image combining, the generator can create Base64 representations of a set of images into a single file. These images can then be used with <code class="docutils literal"><span class="pre">data:</span></code> URLs.</p>
+</div>
+<div class="section" id="css-compression">
+<h3>CSS Compression<a class="headerlink" href="#css-compression" title="Permalink to this headline">¶</a></h3>
+<p>Css files can be compressed.</p>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="api-data">
+<h3>API Data<a class="headerlink" href="#api-data" title="Permalink to this headline">¶</a></h3>
+<p>From class code JSDoc comments can be extracted, and fed into one of the Apiviewer instances to be viewed in the browser.</p>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unit-tests">
+<h3>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h3>
+<p>An &quot;Application Under Test&quot; can be generated, combining application test classes and classes from qooxdoo's unit testing framework into a runnable application. To control the testing, both command-line as well as browser-based runners are available.</p>
+</div>
+</div>
+<div class="section" id="internationalization">
+<h2>Internationalization<a class="headerlink" href="#internationalization" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="po-files">
+<h3>PO Files<a class="headerlink" href="#po-files" title="Permalink to this headline">¶</a></h3>
+<p>The Generator allows you to extract tagged strings from class code and place them in PO files which can then be translated by translators.</p>
+</div>
+<div class="section" id="runtime-support">
+<h3>Runtime Support<a class="headerlink" href="#runtime-support" title="Permalink to this headline">¶</a></h3>
+<p>For a given list of locales message keys with their translations will be extracted from the PO files and included with the application. Locales can then be switched a runtime, or be lazily loaded on demand.</p>
+</div>
+</div>
+<div class="section" id="file-system">
+<h2>File System<a class="headerlink" href="#file-system" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-copying">
+<h3>File Copying<a class="headerlink" href="#file-copying" title="Permalink to this headline">¶</a></h3>
+<p>Various files can be copied, especially for the deployment version of the application.</p>
+</div>
+<div class="section" id="artefacts-cleanup">
+<h3>Artefacts Cleanup<a class="headerlink" href="#artefacts-cleanup" title="Permalink to this headline">¶</a></h3>
+<p>Clean jobs can be deployed to remove generated artefacts and cached content.</p>
+</div>
+</div>
+<div class="section" id="migration">
+<h2>Migration<a class="headerlink" href="#migration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="application-code-migration">
+<h3>Application Code Migration<a class="headerlink" href="#application-code-migration" title="Permalink to this headline">¶</a></h3>
+<p>The Generator supports automatic migration of application code across several qooxdoo versions.</p>
+</div>
+</div>
+<div class="section" id="logging-and-reporting">
+<h2>Logging and Reporting<a class="headerlink" href="#logging-and-reporting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dependency-logging">
+<h3>Dependency Logging<a class="headerlink" href="#dependency-logging" title="Permalink to this headline">¶</a></h3>
+<p>Dependency relations between classes can be logged in several formats, json, flare, graphviz/dot or formatted text.</p>
+</div>
+<div class="section" id="library-classes">
+<h3>Library Classes<a class="headerlink" href="#library-classes" title="Permalink to this headline">¶</a></h3>
+<p>Unused classes of a library can be logged during application build.</p>
+</div>
+<div class="section" id="library-translations">
+<h3>Library Translations<a class="headerlink" href="#library-translations" title="Permalink to this headline">¶</a></h3>
+<p>The Generator can which and how much PO entries of a library are translated.</p>
+</div>
+<div class="section" id="installation-information">
+<h3>Installation Information<a class="headerlink" href="#installation-information" title="Permalink to this headline">¶</a></h3>
+<p>A general 'info' job gathers information about the installed qooxdoo version, the current cache, Python version, asf. This is helpful for debugging client problems.</p>
+</div>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="shell-commands">
+<h3>Shell Commands<a class="headerlink" href="#shell-commands" title="Permalink to this headline">¶</a></h3>
+<p>Arbitrary shell commands can be issued through the Generator, allowing to bind in other child processes in the build system.</p>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="generator.html"
+             title="previous chapter">« Generator Overview</a>
+          <span class="separator">|</span>
+          <a class="next" href="generator_usage.html"
+             title="next chapter">Generator Usage »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Generator Features</a><ul>
+<li><a class="reference internal" href="#application-generation">Application Generation</a><ul>
+<li><a class="reference internal" href="#code-dependency-analysis">Code Dependency Analysis</a></li>
+<li><a class="reference internal" href="#code-selection">Code Selection</a></li>
+<li><a class="reference internal" href="#variant-builds">Variant Builds</a></li>
+<li><a class="reference internal" href="#code-optimization">Code Optimization</a></li>
+<li><a class="reference internal" href="#script-and-loader-generation">Script and Loader Generation</a></li>
+<li><a class="reference internal" href="#zip-compression">Zip Compression</a></li>
+<li><a class="reference internal" href="#application-environment">Application Environment</a></li>
+<li><a class="reference internal" href="#file-inclusion">File Inclusion</a></li>
+<li><a class="reference internal" href="#contribution-inclusion">Contribution Inclusion</a></li>
+<li><a class="reference internal" href="#lazy-loading-parts">Lazy-Loading Parts</a></li>
+<li><a class="reference internal" href="#deployment-builds">Deployment Builds</a></li>
+<li><a class="reference internal" href="#file-watching">File Watching</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#code-maintenance">Code Maintenance</a><ul>
+<li><a class="reference internal" href="#lint-checking">Lint Checking</a></li>
+<li><a class="reference internal" href="#whitespace-fixing">Whitespace Fixing</a></li>
+<li><a class="reference internal" href="#pretty-printing">Pretty-Printing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#resource-handling">Resource Handling</a><ul>
+<li><a class="reference internal" href="#resource-selection">Resource Selection</a></li>
+<li><a class="reference internal" href="#image-slicing-and-combining">Image Slicing and Combining</a></li>
+<li><a class="reference internal" href="#base64-combined-images">Base64 Combined Images</a></li>
+<li><a class="reference internal" href="#css-compression">CSS Compression</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li><a class="reference internal" href="#api-data">API Data</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#testing">Testing</a><ul>
+<li><a class="reference internal" href="#unit-tests">Unit Tests</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#internationalization">Internationalization</a><ul>
+<li><a class="reference internal" href="#po-files">PO Files</a></li>
+<li><a class="reference internal" href="#runtime-support">Runtime Support</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-system">File System</a><ul>
+<li><a class="reference internal" href="#file-copying">File Copying</a></li>
+<li><a class="reference internal" href="#artefacts-cleanup">Artefacts Cleanup</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#migration">Migration</a><ul>
+<li><a class="reference internal" href="#application-code-migration">Application Code Migration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#logging-and-reporting">Logging and Reporting</a><ul>
+<li><a class="reference internal" href="#dependency-logging">Dependency Logging</a></li>
+<li><a class="reference internal" href="#library-classes">Library Classes</a></li>
+<li><a class="reference internal" href="#library-translations">Library Translations</a></li>
+<li><a class="reference internal" href="#installation-information">Installation Information</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a><ul>
+<li><a class="reference internal" href="#shell-commands">Shell Commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="generator_usage.html"
+                        title="next chapter">Generator Usage</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="generator.html"
+                        title="previous chapter">Generator Overview</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/features.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

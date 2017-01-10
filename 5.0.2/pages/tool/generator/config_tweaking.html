@@ -1,0 +1,405 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tweaking Configurations &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="Tooling" href="../../tool.html" />
+    <link rel="next" title="Generator Configuration Details" href="generator_config_articles.html" />
+    <link rel="prev" title="Configuration Usage" href="config_usage.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Tweaking Configurations</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="tweaking-configurations">
+<h1>Tweaking Configurations<a class="headerlink" href="#tweaking-configurations" title="Permalink to this headline">¶</a></h1>
+<p>So what if you find that the existing jobs do not suffice for you to achieve
+what you want? There is usually a layered approach of steps you can take, going
+from simple (but less powerful) to advanced (but more challenging). These steps
+are:</p>
+<ul class="simple">
+<li>Adapt macros.</li>
+<li>Extend existing jobs.</li>
+<li>Define new jobs.</li>
+</ul>
+<p>We will look at each of these steps in turn.</p>
+<div class="section" id="macros">
+<h2>Macros<a class="headerlink" href="#macros" title="Permalink to this headline">¶</a></h2>
+<p>Macros are simple named placeholders that are used in Generator
+configuration files. They make it easy to define values that are used in
+multiple jobs in a single place (e.g. the application name), or expose a
+value in a specific job so this value can be customized (e.g. a list of
+packages to ignore when building an application-specific Apiviewer). One
+way to change a macro is to edit the <em>config.json</em> file of your
+application. Start your favorite text editor and load the configuration
+file.</p>
+<p>Let's suppose you want to add support for additional locales to your
+application. Then locate the <code class="docutils literal"><span class="pre">&quot;let&quot;</span></code> entry in the configuration map.
+The <em>let</em> key lets you define macros. Locate the macro named <em>&quot;LOCALES&quot;</em>,
+and add two more locales so the value looks something like this: <em>[
+&quot;en&quot;, &quot;fr&quot;, &quot;de&quot; ]</em>. With the next run of the command <em>generate.py translation</em>
+files <em>fr.po</em> and <em>de.po</em> will be added to your <em>source/translation</em> directory.</p>
+<p>There is also the possibility to pass a macro definition on the command
+line when you invoke the Generator:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>generate.py source --macro  CACHE:/tmp/cache
+</pre></div>
+</div>
+<p>This tells the Generator to use the path <em>/tmp/cache</em> for its caching.
+Passing macros in this manner allows you to change a macro on a
+per-invocation basis. The command-line value will take precedence over a
+potential existing definition in config.json.</p>
+</div>
+<div class="section" id="overriding-existing-jobs">
+<h2>Overriding Existing Jobs<a class="headerlink" href="#overriding-existing-jobs" title="Permalink to this headline">¶</a></h2>
+<p>The second approach that goes beyond just modifying a macro is to
+override an existing job. The default <em>config.json</em> comes with a
+commented-out sample for this. Let's suppose you want to add some
+extra newlines that are sprinkled throughout the build version of your
+app. In the <em>&quot;jobs&quot;</em> section of the config you find a job entry named
+<em>&quot;build-script&quot;</em>. It has a sub-key <em>compile-options/code/format</em> (the &quot;/&quot;
+indicates nesting in the Json maps) which is
+set to false (the default). Just uncomment this job, set the <em>format</em> value to
+true, run generate.py build again, and you'll find newlines added to
+the generated code. This illustrates the general principle:</p>
+<ol class="arabic simple">
+<li><strong>Identify the job you are not contempt with.</strong> This might require
+that you look at the Generator output, or consult the basic
+configuration file, <em>tool/data/config/base.json</em>, as some jobs which
+you can invoke with the Generator are broken down into sub-jobs.</li>
+<li><strong>Add an entry of the same name in your config.json.</strong> The Generator,
+once you run it the next time, will indicate this by issuing a hint
+in the console output that the respective job has been shadowed.</li>
+<li><strong>Add those keys to the job entry that you want to change, with
+suitable values.</strong> Use the default job's definition to find out which
+config key you need to tweak. To achieve this you can look at the
+job's definition, e.g. in <code class="docutils literal"><span class="pre">base.json</span></code>, or run the Generator with
+the <code class="docutils literal"><span class="pre">-w</span></code> command line flag; this will print the full job definition
+before the job is run.</li>
+</ol>
+<p>As mentioned above, on the next time you run the Generator it will
+indicate that you have successfully overridden a predefined job. The
+message will be something like this:</p>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">- Warning: ! Shadowing job &quot;build-script&quot; with local one</span>
+</pre></div>
+</div>
+<p>(This is also helpful to prevent you from accidentally overriding an
+existing job with a custom job that is supposed to be new).</p>
+</div>
+<div class="section" id="custom-jobs">
+<h2>Custom Jobs<a class="headerlink" href="#custom-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Custom jobs are jobs that you freely define in your config.json. You add
+them to the <code class="docutils literal"><span class="pre">jobs</span></code> section just as in the previous step, but making sure
+you are <strong>not</strong> using an existing name for them (check the Generator
+console output when you run the job to make sure). The challenge with a
+custom job is that you have to build it up from scratch, and it might
+take you through some trial-and-error until you come up with a job
+definition that is fully functional. To help you with that, many basic
+configuration entries that almost any job would need are available in
+dedicated job definitions of their own (like <code class="docutils literal"><span class="pre">&quot;cache&quot;</span></code> or
+<code class="docutils literal"><span class="pre">&quot;libraries&quot;</span></code>), and we recommend using them. (This gives you another
+hint at the configuration system of the tool chain: Jobs need not do
+anything useful; they can also just be containers for configuration
+snippets that can be included in other jobs to make their definition
+more modular or compliant). Here is a simple custom job that just copies
+two files to the build path of the application:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;myjob&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;cache&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;copy-files&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;files&quot;</span>  <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;foo1.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;foo2.txt&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;source&quot;</span> <span class="o">:</span> <span class="s2">&quot;/home/myhome/tmp&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;target&quot;</span> <span class="o">:</span> <span class="s2">&quot;./build&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Don't forget to add the entry <em>&quot;myjob&quot;</em> in your config's <code class="docutils literal"><span class="pre">&quot;export&quot;</span></code> list,
+so it is available on the command line.</p>
+</div>
+<div class="section" id="further-resources">
+<h2>Further Resources<a class="headerlink" href="#further-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>If you want to embark on the effort of creating custom jobs you're well
+advised to make yourself familiar with the <a class="reference internal" href="generator_config.html"><span class="doc">general Generator configuration
+overview</span></a>, and</li>
+<li>the <a class="reference internal" href="generator_config_ref.html"><span class="doc">reference of configuration keys</span></a> that can be used.</li>
+<li>Also, there is an example configuration file in <em>tool/data/config/example.json</em> to look at.</li>
+<li>The basic configuration file, <em>tool/data/config/base.json</em>,</li>
+<li>and the configuration files for the Testrunner (<em>component/testrunner/testrunner.json</em>)</li>
+<li>and Apiviewer (<em>component/apiviewer/api.json</em>) also provide good examples to learn from.</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="config_usage.html"
+             title="previous chapter">« Configuration Usage</a>
+          <span class="separator">|</span>
+          <a class="next" href="generator_config_articles.html"
+             title="next chapter">Generator Configuration Details »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Tweaking Configurations</a><ul>
+<li><a class="reference internal" href="#macros">Macros</a></li>
+<li><a class="reference internal" href="#overriding-existing-jobs">Overriding Existing Jobs</a></li>
+<li><a class="reference internal" href="#custom-jobs">Custom Jobs</a></li>
+<li><a class="reference internal" href="#further-resources">Further Resources</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="generator_config_articles.html"
+                        title="next chapter">Generator Configuration Details</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="config_usage.html"
+                        title="previous chapter">Configuration Usage</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/config_tweaking.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

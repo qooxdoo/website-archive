@@ -1,0 +1,414 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Custom Libraries &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Development" href="../development.html" />
+    <link rel="next" title="qooxdoo-contrib" href="contrib.html" />
+    <link rel="prev" title="Code Organisation Introduction" href="code_organisation.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../development.html" accesskey="U">Development</a>
+     &#187;
+    <a href="">Custom Libraries</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="custom-libraries">
+<h1>Custom Libraries<a class="headerlink" href="#custom-libraries" title="Permalink to this headline">¶</a></h1>
+<p>Once your application has grown beyond a certain size, or when you start a
+second application that could re-use some of the code of the first, you start
+thinking about factoring code out into separately manageable units. This is when
+you create dedicated libraries.</p>
+<p>In qooxdoo <em>all code</em> is organized in <a class="reference internal" href="code_organisation.html"><span class="doc">libraries</span></a>. Also the code tree that holds your
+application's main class is, conceptually, a library. So even in the simplest
+skeleton you are already working <em>in</em> a library (the skeleton), <em>with</em> a library
+(the framework classes). Creating and using further libraries is only a
+repetition of that.</p>
+<div class="section" id="creating-a-custom-library">
+<span id="pages-development-library-custom-creating-a-custom-library"></span><h2>Creating a Custom Library<a class="headerlink" href="#creating-a-custom-library" title="Permalink to this headline">¶</a></h2>
+<p>Just run <a class="reference internal" href="../tool/create_application.html"><span class="doc">create-application.py</span></a>. The
+default application type (&quot;desktop&quot;) is good enough for this purpose. If you
+have existing code that you want to put into the library, just move the files
+over to their new location under the <em>source/class/&lt;namespace&gt;</em> path. Don't
+forget to adapt the class name as given in the call to e.g. <em>qx.Class.define</em>.
+The name passed in this call has to match the path suffix of the class file,
+like <em>&quot;&lt;namespace&gt;.Foo&quot;</em>.</p>
+<p>If you don't plan to develop a small demo application along with the library
+classes, you could put away with the <em>Application.js</em> file that is part of every
+skeleton by default. But you could just as well keep this file, as it allows you
+to build an application in your library directly (also see further).</p>
+</div>
+<div class="section" id="using-the-library">
+<span id="pages-development-library-custom-using-the-library"></span><h2>Using the Library<a class="headerlink" href="#using-the-library" title="Permalink to this headline">¶</a></h2>
+<p>In an existing application, to use your new library you have to do two things.</p>
+<div class="section" id="make-it-known-to-the-generator">
+<h3>Make it known to the Generator<a class="headerlink" href="#make-it-known-to-the-generator" title="Permalink to this headline">¶</a></h3>
+<p>You need to make the new library known to the existing application so it knows
+where to look for resources. In principle this means that every job that
+evaluates libraries (like <em>source</em>, <em>build</em>, etc.) needs to be informed about it
+through the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><span class="std std-ref">library</span></a>
+configuration key.</p>
+<p>To make it easier for you, so you don't have to add the new library to each and
+every job individually, there is the <em>libraries</em> job. If you override this one,
+all standard jobs that use the <em>library</em> key will automatically inherit it:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;manifest&quot;</span><span class="o">:</span> <span class="s2">&quot;path/to/new/library/Manifest.json&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>It suffices that you enter the new library, since other default libraries will
+be added automatically.</p>
+</div>
+<div class="section" id="use-it-in-your-code">
+<h3>Use it in your Code<a class="headerlink" href="#use-it-in-your-code" title="Permalink to this headline">¶</a></h3>
+<p>Now all you have to do is just to reference resources from the new library, e.g.
+a library class, in your code:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mylib</span><span class="p">.</span><span class="nx">Foo</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-the-library-itself">
+<h3>&quot;Building&quot; the library itself<a class="headerlink" href="#building-the-library-itself" title="Permalink to this headline">¶</a></h3>
+<p>This was what you have to do to use the library in <em>another</em> application. But
+there is nothing to stop you from creating a little demo application in the
+library itself. This is quite useful as it helps you to develop your library
+API further without the need to test it in other (potentially more complex)
+applications which include it. Just keep the default <em>Application.js</em> class
+around and use it to instantiate and exercise classes from the library. You
+don't have to change anything in the library's <em>config.json</em>, as the &quot;local&quot;
+library is always included.</p>
+<p>Without the main <em>Application.js</em> there is not much sense in running the
+application-generating build jobs of the tool chain, like &quot;source&quot; or &quot;build&quot;,
+in the library directly. You can still run other jobs that do not create an
+application from your code, like &quot;api&quot;, &quot;test&quot; or &quot;lint&quot;.</p>
+</div>
+</div>
+<div class="section" id="sharing-a-namespace">
+<span id="pages-development-library-custom-sharing-a-namespace"></span><h2>Sharing a Namespace<a class="headerlink" href="#sharing-a-namespace" title="Permalink to this headline">¶</a></h2>
+<p>You can share a common namespace prefix across libraries. This is especially
+interesting if you split up a large application into multiple libraries that can
+be developed independently. But it is important that every library has its own,
+individual namespace.</p>
+<p>Let's illustrate that with an example. Imagine you have been developing your
+application to quite some size. You have already organized the classes in
+subdirectories of the namespace root, e.g. like this</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>source/class/myapp
+               /model
+                 Foo.js
+               /view
+                 Bar.js
+               Application.js
+</pre></div>
+</div>
+<p>Now you want to factor out the <em>model</em> and <em>view</em> components into their own
+libraries. In a suitable path you create two new skeletons:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ create-application.py -n my_model -s myapp.model
+$ create-application.py -n my_view  -s myapp.view
+</pre></div>
+</div>
+<p>Now you can move <em>Foo.js</em> to the first library, into its
+<em>source/class/myapp/model/</em> path, and <em>Bar.js</em> to the second, into its
+<em>source/class/myapp/view/</em> path. So together with your initial application you
+now have three libraries, with namespaces <em>myapp</em>, <em>myapp.model</em> and
+<em>myapp.view</em>, respectively. The namespaces are all distinct, but share the common prefix
+<em>myapp</em>.</p>
+<p>Mind that in the original situation <em>Foo</em>'s class id was <em>myapp.model.Foo</em>. This
+hasn't changed! The class id is the same in the new library, so you don't have
+to edit the class itself (i.e. its call to <em>qx.Class.define</em>), nor do you have to
+adapt any location referencing <em>Foo</em> in other code (like in <em>&quot;var c = new
+myapp.model.Foo();&quot;</em>). But strictly speaking the class was formerly allocated in
+a namespace <em>myapp</em> with a path of <em>model/Foo.js</em>, while now it is allocated in
+a namespace <em>myapp.model</em> with a path of <em>Foo.js</em>.</p>
+</div>
+<div class="section" id="speed-up-cold-cache-compile-time">
+<span id="pages-development-library-custom-speed-up-cold-cache"></span><h2>Speed up Cold-Cache Compile Time<a class="headerlink" href="#speed-up-cold-cache-compile-time" title="Permalink to this headline">¶</a></h2>
+<p>Once you have settled in using an own library and the library's code is stable
+you can speed up usage of the library classes by running the
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-dependencies"><span class="std std-ref">compile-scss</span></a> job. This will
+create a file with dependency information for the library which can be used to
+compile your main application. (The SDK comes with such a file pre-compiled for
+the framework classes.) You can then work in your main application, even run
+<em>clean</em> and <em>distclean</em> jobs but the dependency information for your library
+will pertain.</p>
+<p>The file will not be used, though, if you again modify code in the library,
+to make sure the information is always current. But you can re-run the
+<em>dependencies</em> job after a while when the code has stabilized.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="code_organisation.html"
+             title="previous chapter">« Code Organisation Introduction</a>
+          <span class="separator">|</span>
+          <a class="next" href="contrib.html"
+             title="next chapter">qooxdoo-contrib »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Custom Libraries</a><ul>
+<li><a class="reference internal" href="#creating-a-custom-library">Creating a Custom Library</a></li>
+<li><a class="reference internal" href="#using-the-library">Using the Library</a><ul>
+<li><a class="reference internal" href="#make-it-known-to-the-generator">Make it known to the Generator</a></li>
+<li><a class="reference internal" href="#use-it-in-your-code">Use it in your Code</a></li>
+<li><a class="reference internal" href="#building-the-library-itself">&quot;Building&quot; the library itself</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sharing-a-namespace">Sharing a Namespace</a></li>
+<li><a class="reference internal" href="#speed-up-cold-cache-compile-time">Speed up Cold-Cache Compile Time</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="contrib.html"
+                        title="next chapter">qooxdoo-contrib</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="code_organisation.html"
+                        title="previous chapter">Code Organisation Introduction</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/development/library_custom.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

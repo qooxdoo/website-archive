@@ -1,0 +1,419 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Migration from qx.Desktop 2.x &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../../desktop.html" />
+    <link rel="next" title="qx.Mobile" href="../../mobile.html" />
+    <link rel="prev" title="Tutorial Part 4.5: Virtual List" href="../tutorials/tutorial-part-4-5.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">Migration from qx.Desktop 2.x</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="migration-from-qx-desktop-2-x">
+<h1>Migration from qx.Desktop 2.x<a class="headerlink" href="#migration-from-qx-desktop-2-x" title="Permalink to this headline">¶</a></h1>
+<p>qx.Desktop 3.0 introduces some major improvements to the internals of qooxdoo's desktop widget system. This was made possible by taking advantage of  features in modern browsers while trying to implement graceful degradation in older browsers and discontinuing support for some legacy browsers.</p>
+<p>In order to improve UI performance and decrease memory load, every widget now consists of <strong>just one content element</strong>. Before, each desktop widget consisted of (at least) two DOM elements and their <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.html.Element">JavaScript object representations</a>: container and content. Usually widgets also had a decorator element. Now widgets no longer have decorator, container or protector elements.</p>
+<p>Most modifications were made &quot;under the hood&quot;, affecting mostly internal APIs. Therefore regular users should immediately benefit from those improvements without being required to adjust their application code. If custom themes and/or custom layouts are used however, some manual adjustments to existing applications based on qx.Desktop 2.x may be required. Additionally, some theming features no longer have fallback implementations for legacy browsers (see below for details).</p>
+<div class="section" id="legacy-browsers">
+<h2>Legacy Browsers<a class="headerlink" href="#legacy-browsers" title="Permalink to this headline">¶</a></h2>
+<p>Some browsers unfortunately lack built-in functionality for some features common to modern browsers. To work around those technical limitations is either too complex or simply impossible. Therefore browser support in qx.Desktop 3.0 had to be adjusted accordingly:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Browser versions <strong>no longer</strong> supported:</dt>
+<dd><ul class="first last simple">
+<li><strong>IE 6, 7</strong></li>
+<li><strong>Firefox 3.5</strong> and below</li>
+<li><strong>Safari 3</strong></li>
+<li><strong>Opera 11</strong> and below</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Browser versions with <strong>limited</strong> support:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><strong>IE 8</strong>:</dt>
+<dd><ul class="first last simple">
+<li>double borders on input elements no longer supported</li>
+<li>border-image decorations no longer supported</li>
+<li>PNGs are no longer supported as background images in combination with the backgroundRepeat values 'scale' and 'no-repeat'</li>
+<li>PNGs with alpha transparency are no longer supported as background images</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>IE 9, 10</strong>:</dt>
+<dd><ul class="first last simple">
+<li>border-image decorations no longer supported</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="built-in-themes">
+<h2>Built-in Themes<a class="headerlink" href="#built-in-themes" title="Permalink to this headline">¶</a></h2>
+<p>Along with the changes in the qx.Desktop GUI toolkit, the themes that ship with the SDK have also been adjusted. They no longer contain the image-based fallbacks for legacy browsers that were used to work around missing CSS3 features.</p>
+<ul class="simple">
+<li>Indigo, Simple: no changes from previous releases</li>
+<li>Modern: shadows and rounded borders no longer available in IE 8</li>
+<li>Classic: shadows no longer available in IE 8; text fields and text areas only with single not double borders</li>
+</ul>
+<p>This is also relevant if you used some of the decorators for your custom widgets. They might have been renamed or deleted.</p>
+</div>
+<div class="section" id="custom-themes">
+<h2>Custom Themes<a class="headerlink" href="#custom-themes" title="Permalink to this headline">¶</a></h2>
+<p>The following information applies to user-defined themes. The framework's built-in themes are already up to date.</p>
+<div class="section" id="decoration-theme">
+<h3>Decoration Theme<a class="headerlink" href="#decoration-theme" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <code class="docutils literal"><span class="pre">inset</span></code> properties of the decorators have been set to read-only. Any inset definitions in your decoration theme or application code should be removed and replaced with the corresponding <code class="docutils literal"><span class="pre">padding</span></code> and/or <code class="docutils literal"><span class="pre">margin</span></code> in the appearance theme.</li>
+<li>The <code class="docutils literal"><span class="pre">decorator</span></code> theme key will be ignored. All decorations now use <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.Decorator">a common class</a>, which supports all decoration features. You can simply remove any <code class="docutils literal"><span class="pre">decorator</span></code> keys from your custom theme.</li>
+<li>The decorators <code class="docutils literal"><span class="pre">qx.ui.decoration.Grid</span></code>, <code class="docutils literal"><span class="pre">qx.ui.decoration.GridDiv</span></code>, <code class="docutils literal"><span class="pre">qx.ui.decoration.BoxDiv</span></code>, <code class="docutils literal"><span class="pre">qx.ui.decoration.AbstractBox</span></code>, <code class="docutils literal"><span class="pre">qx.ui.decoration.HBox</span></code>, and <code class="docutils literal"><span class="pre">qx.ui.decoration.VBox</span></code> have been removed. These classes were responsible for providing image-based fallback implementations for border-image and background-gradient decorators, meaning <strong>border-image decorations are no longer available in Internet Explorer 8 - 10</strong>. The properties of <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MBorderImage">MBorderImage</a> provide these features for most modern browsers. Change every occurrence of the <code class="docutils literal"><span class="pre">baseImage</span></code> key to its new equivalent, <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MBorderImage~borderImage!property">borderImage</a>.</li>
+<li>The <code class="docutils literal"><span class="pre">qx.ui.decoration.Beveled</span></code> and <code class="docutils literal"><span class="pre">qx.ui.decoration.Uniform</span></code> decorators are deprecated. Replace them with <code class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></code> and use the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MSingleBorder~width!property">width</a>, <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MSingleBorder~style!property">style</a> and <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MSingleBorder~color!property">color</a> properties.</li>
+<li>The decorator <code class="docutils literal"><span class="pre">qx.ui.decoration.Double</span></code> is also deprecated. Replace it with <code class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></code> and use the properties of <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.MDoubleBorder">MDoubleBorder</a>.</li>
+<li><code class="docutils literal"><span class="pre">qx.ui.decoration.DynamicDecorator</span></code> has been deprecated. Replace it with <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.Decorator">decoration.Decorator</a>.</li>
+</ul>
+</div>
+<div class="section" id="custom-decorators">
+<h3>Custom Decorators<a class="headerlink" href="#custom-decorators" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">qx.ui.decoration.IDecoration</span></code> interface has been updated. The methods <code class="docutils literal"><span class="pre">getMarkup</span></code>, <code class="docutils literal"><span class="pre">tint</span></code> and <code class="docutils literal"><span class="pre">resize</span></code> were removed. <code class="docutils literal"><span class="pre">getStyles</span></code> was added: This method is responsible for adding the Decorator's CSS styles to a map of existing styles.</p>
+</div>
+<div class="section" id="appearance-theme">
+<h3>Appearance Theme<a class="headerlink" href="#appearance-theme" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The key <code class="docutils literal"><span class="pre">shadow</span></code> is no longer supported in the map returned by the <code class="docutils literal"><span class="pre">style</span></code> function. Use the properties of <code class="docutils literal"><span class="pre">qx.ui.decoration.MBoxShadow</span></code> instead (in the decoration theme).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="custom-layouts">
+<h2>Custom Layouts<a class="headerlink" href="#custom-layouts" title="Permalink to this headline">¶</a></h2>
+<p>Custom layouts extending <code class="docutils literal"><span class="pre">qx.ui.layout.Abstract</span></code> must be adjusted: The <code class="docutils literal"><span class="pre">renderLayout</span></code> method is now called with a map containing the container's <code class="docutils literal"><span class="pre">top</span></code>, <code class="docutils literal"><span class="pre">bottom</span></code>, <code class="docutils literal"><span class="pre">left</span></code> and <code class="docutils literal"><span class="pre">right</span></code> padding values as an additional third argument. These values must be taken into consideration when calculating the layout children's size and position.</p>
+</div>
+<div class="section" id="custom-widgets">
+<h2>Custom Widgets<a class="headerlink" href="#custom-widgets" title="Permalink to this headline">¶</a></h2>
+<p>The following information is only relevant for authors of custom widgets using the <code class="docutils literal"><span class="pre">qx.html</span></code> layer directly.</p>
+<ul class="simple">
+<li>With the removal of the decorator element, the method <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getDecoratorElement</span></code> was also removed. For most use cases it should be sufficient to use the content element instead, which can be accessed by <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getContentElement</span></code>.</li>
+<li>The same applies to the container element and <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getContainerElement</span></code>. This method is deprecated and returns the content element. Use <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getContentElement</span></code> instead.</li>
+<li>As with the container element itself, the method <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getContainerLocation</span></code> is deprecated. Just use <code class="docutils literal"><span class="pre">qx.ui.core.Widget.getContentLocation</span></code> instead.</li>
+<li>The <code class="docutils literal"><span class="pre">shadow</span></code> property has been removed. Use a decorator setting the properties of <code class="docutils literal"><span class="pre">qx.ui.decoration.MBoxShadow</span></code> instead.</li>
+</ul>
+</div>
+<div class="section" id="other-code-changes">
+<h2>Other Code Changes<a class="headerlink" href="#other-code-changes" title="Permalink to this headline">¶</a></h2>
+<p>The blocking implementation (<code class="docutils literal"><span class="pre">qx.ui.core.Blocker</span></code>, <code class="docutils literal"><span class="pre">qx.ui.core.MBlocker</span></code>) was simplified:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">unblockContent</span></code> was removed. Use <code class="docutils literal"><span class="pre">unblock</span></code> instead.</li>
+<li><code class="docutils literal"><span class="pre">isContentBlocked</span></code> was removed. Use <code class="docutils literal"><span class="pre">isBlocked</span></code> instead.</li>
+<li><code class="docutils literal"><span class="pre">forceUnblockContent</span></code> was removed. Use <code class="docutils literal"><span class="pre">forceUnblock</span></code> instead.</li>
+</ul>
+</div>
+<div class="section" id="implementation-details">
+<h2>Implementation Details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h2>
+<p>This section lists all further internal changes. They should not be relevant for you as an application developer. Nevertheless, this information could be useful for anyone interested in the framework's internals.</p>
+<ul class="simple">
+<li>The new implementation is based on <code class="docutils literal"><span class="pre">box-sizing:</span> <span class="pre">border-box</span></code>. As a consequence, <strong>Internet Explorer 6 and 7 is no longer supported</strong>.</li>
+<li>Decorations are compiled as CSS classes and applied to a central style sheet.</li>
+<li>Background gradients are rendered using Canvas in IE9.</li>
+<li>CSS clip is used to apply padding to combined images.</li>
+<li>For the legacy browser fallback implementation of the text fields' placeholder property, the placeholder element is attached to the field's layout parent.</li>
+<li>The blocker element of <code class="docutils literal"><span class="pre">qx.ui.embed.Iframe</span></code> is now attached to the application root.</li>
+<li><code class="docutils literal"><span class="pre">qx.ui.core.Blocker</span></code> is attached to the blocked widget's layout parent.</li>
+<li>The default <code class="docutils literal"><span class="pre">zIndex</span></code> value for Widgets is now 10.</li>
+<li><code class="docutils literal"><span class="pre">qx.html.Element</span></code> now supports addition and removal of CSS classes.</li>
+<li><code class="docutils literal"><span class="pre">qx.ui.tooltip.ToolTip</span></code> offers a new child control named <code class="docutils literal"><span class="pre">arrow</span></code>. It is used to render an arrow for error tooltips in the Modern theme.</li>
+<li>The padding of <code class="docutils literal"><span class="pre">qx.ui.basic.Image</span></code> instances is applied as background-position.</li>
+<li>Separators are now instances of <code class="docutils literal"><span class="pre">qx.ui.core.Widget</span></code> instead of <code class="docutils literal"><span class="pre">qx.html.Element</span></code>.</li>
+<li>The infrastructure classes <code class="docutils literal"><span class="pre">qx.ui.core.DecoratorFactory</span></code> and <code class="docutils literal"><span class="pre">qx.html.Decorator</span></code> have been removed.</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="../tutorials/tutorial-part-4-5.html"
+             title="previous chapter">« Tutorial Part 4.5: Virtual List</a>
+          <span class="separator">|</span>
+          <a class="next" href="../../mobile.html"
+             title="next chapter">qx.Mobile »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Migration from qx.Desktop 2.x</a><ul>
+<li><a class="reference internal" href="#legacy-browsers">Legacy Browsers</a></li>
+<li><a class="reference internal" href="#built-in-themes">Built-in Themes</a></li>
+<li><a class="reference internal" href="#custom-themes">Custom Themes</a><ul>
+<li><a class="reference internal" href="#decoration-theme">Decoration Theme</a></li>
+<li><a class="reference internal" href="#custom-decorators">Custom Decorators</a></li>
+<li><a class="reference internal" href="#appearance-theme">Appearance Theme</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-layouts">Custom Layouts</a></li>
+<li><a class="reference internal" href="#custom-widgets">Custom Widgets</a></li>
+<li><a class="reference internal" href="#other-code-changes">Other Code Changes</a></li>
+<li><a class="reference internal" href="#implementation-details">Implementation Details</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="../../mobile.html"
+                        title="next chapter">qx.Mobile</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="../tutorials/tutorial-part-4-5.html"
+                        title="previous chapter">Tutorial Part 4.5: Virtual List</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/desktop/migration/migration_from_2_x.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

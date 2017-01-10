@@ -1,0 +1,561 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Migrating a qx.Mobile theme to another version &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Mobile" href="../mobile.html" />
+    <link rel="next" title="Resolution and Pixel Density" href="resolution.html" />
+    <link rel="prev" title="Theming" href="theming.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../mobile.html" accesskey="U">qx.Mobile</a>
+     &#187;
+    <a href="">Migrating a qx.Mobile theme to another version</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="migrating-a-qx-mobile-theme-to-another-version">
+<span id="pages-mobile-theme-migration-theme-migration"></span><h1>Migrating a qx.Mobile theme to another version<a class="headerlink" href="#migrating-a-qx-mobile-theme-to-another-version" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="migration-from-3-1-to-3-5">
+<h2>Migration from 3.1 to 3.5<a class="headerlink" href="#migration-from-3-1-to-3-5" title="Permalink to this headline">¶</a></h2>
+<p>Here is an introduction of how to migrate your qx.Mobile theme from version <code class="docutils literal"><span class="pre">3.1</span></code> to <code class="docutils literal"><span class="pre">3.5</span></code>.
+The qx.Mobile theming system was extended to provide much more customization
+possibilities for each widget.</p>
+<div class="section" id="step-1-update-your-custom-scss">
+<h3>Step 1: Update your custom.scss<a class="headerlink" href="#step-1-update-your-custom-scss" title="Permalink to this headline">¶</a></h3>
+<p>Please replace the following lines of your <code class="docutils literal"><span class="pre">custom.scss</span></code></p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/common/base&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/styles&quot;;
+@import &quot;styles&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/basic/basic&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/theme&quot;;
+</pre></div>
+</div>
+<p>through these lines:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@import &quot;common/all&quot;;
+@import &quot;styles&quot;;
+@import &quot;ui/all&quot;;
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-2-update-your-watch-scss-job">
+<h3>Step 2: Update your watch-scss job<a class="headerlink" href="#step-2-update-your-watch-scss-job" title="Permalink to this headline">¶</a></h3>
+<p>The watch-scss job was changed in <code class="docutils literal"><span class="pre">3.5</span></code>. Please replace your existing <code class="docutils literal"><span class="pre">watch-scss</span></code> job at your app-specific <code class="docutils literal"><span class="pre">config.json</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;watch-scss&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;desc&quot;</span>   <span class="o">:</span> <span class="s2">&quot;Watch and compile custom.scss&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;cache&quot;</span><span class="p">],</span>
+   <span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;MOBILE_THEME_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;SHARED_THEME_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/framework/source/resource/qx/scss&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;watch-files&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;paths&quot;</span>    <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;source/resource/${APPLICATION_PATH}/scss&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;command&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;line&quot;</span>  <span class="o">:</span> <span class="s2">&quot;${PYTHON_CMD} ${QOOXDOO_PATH}/tool/bin/scss.py source/resource/${APPLICATION_PATH}/scss/custom.scss -o source/resource/${APPLICATION_PATH}/css/custom.css --load-path=source/resource/${APPLICATION_PATH}/scss,${MOBILE_THEME_PATH},${SHARED_THEME_PATH}&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;exec-on-startup&quot;</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;per-file&quot;</span> <span class="o">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-3-reset-your-app-specific-variables">
+<h3>Step 3: Reset your app-specific variables<a class="headerlink" href="#step-3-reset-your-app-specific-variables" title="Permalink to this headline">¶</a></h3>
+<p>In the newest qx.Mobile version we added a lot of new variables for expanding the customization possibilities of our theming system.</p>
+<p>As there were a lot of changes, we propose to reset your <code class="docutils literal"><span class="pre">_styles.scss</span></code> and to restart from our &quot;Indigo&quot; or &quot;Flat&quot; theme version <code class="docutils literal"><span class="pre">3.5</span></code>. After resetting your file, you can migrate your recent theming variables.</p>
+<ol class="arabic simple">
+<li>Please save the content of your recent <code class="docutils literal"><span class="pre">_styles.scss</span></code> inside another file e.g.:</li>
+</ol>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_old.scss
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Please remove any content inside your <code class="docutils literal"><span class="pre">_styles.scss</span></code>.</li>
+<li>Now copy the content of this file:</li>
+</ol>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;QOOXDOO_PATH&gt;/framework/source/resource/qx/mobile/scss/theme/&lt;THEME_NAME&gt;/_styles.scss
+</pre></div>
+</div>
+<p>Into your app-specific <code class="docutils literal"><span class="pre">styles.scss</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_styles.scss
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>After the replacement, your theme should build again by calling the watch-job:</li>
+</ol>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">watch</span><span class="o">-</span><span class="nx">scss</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-4-migrate-your-recent-style-variables">
+<h3>Step 4: Migrate your recent style variables<a class="headerlink" href="#step-4-migrate-your-recent-style-variables" title="Permalink to this headline">¶</a></h3>
+<p>If you already have changed some theme variables in your <code class="docutils literal"><span class="pre">_old.scss</span></code>, you should now copy/migrate these values into the corresponding variables of your new <code class="docutils literal"><span class="pre">_styles.scss</span></code>.</p>
+<p>Most of the changes are caused by renaming the variable endings from &quot;background-color&quot;, to &quot;background&quot;.</p>
+<p>Here is a full list of changes we applied to the theming variables by releasing version <code class="docutils literal"><span class="pre">3.5</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span> <span class="c1">// NavigationBar</span>
+
+<span class="o">-</span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">text</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">padding</span>
+<span class="o">+</span><span class="nx">$navigationbar</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+<span class="c1">// Page</span>
+<span class="o">-</span><span class="nx">$navigationpage</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$navigationpage</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// NavigationBar Button</span>
+
+<span class="o">-</span><span class="nx">$navigationbarbutton</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$navigationbarbutton</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$navigationbarbutton</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$navigationbarbutton</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$navigationbarbutton</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+ <span class="c1">// Dialog</span>
+
+<span class="o">-</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">arrow</span><span class="o">-</span><span class="nx">up</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">arrow</span><span class="o">-</span><span class="nx">down</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">arrow</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">arrow</span><span class="o">-</span><span class="nx">position</span><span class="o">-</span><span class="nx">offset</span>
+<span class="o">+</span><span class="nx">$dialog</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+ <span class="c1">// Group</span>
+
+<span class="o">-</span><span class="nx">$group</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$group</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// List</span>
+
+<span class="o">-</span><span class="nx">$list</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$list</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">title</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">title</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">subtitle</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$list</span><span class="o">-</span><span class="nx">arrow</span><span class="o">-</span><span class="nx">thickness</span>
+
+ <span class="c1">// Form</span>
+
+<span class="o">-</span><span class="nx">$form</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$form</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$form</span><span class="o">-</span><span class="nx">label</span><span class="o">-</span><span class="nx">text</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$form</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+ <span class="c1">// Input</span>
+
+<span class="o">+</span><span class="nx">$input</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// Checkbox</span>
+
+<span class="o">-</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">-</span><span class="mi">2</span>
+<span class="o">+</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">tick</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">tick</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">tick</span><span class="o">-</span><span class="nx">shadow</span>
+<span class="o">+</span><span class="nx">$checkbox</span><span class="o">-</span><span class="nx">background</span>
+
+<span class="c1">// Radiobutton</span>
+
+<span class="o">-</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span><span class="o">-</span><span class="mi">2</span>
+<span class="o">-</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">inner</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$radiobutton</span><span class="o">-</span><span class="nx">dot</span><span class="o">-</span><span class="nx">shadow</span>
+
+ <span class="c1">// Tabbar</span>
+
+<span class="o">-</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">inactive</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">height</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">divider</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">inactive</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">inactive</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$tabbar</span><span class="o">-</span><span class="nx">button</span><span class="o">-</span><span class="nx">distance</span>
+
+ <span class="c1">// ToggleButton</span>
+
+<span class="o">-</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">height</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">inset</span><span class="o">-</span><span class="nx">shadow</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">shadow</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$togglebutton</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+ <span class="c1">// Carousel</span>
+
+<span class="o">-</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$carousel</span><span class="o">-</span><span class="nx">pagination</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+
+ <span class="c1">// Button</span>
+
+<span class="o">-</span><span class="nx">$button</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$button</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$button</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$button</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+<span class="o">+</span><span class="nx">$button</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$button</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// SelectBox</span>
+
+<span class="o">-</span><span class="nx">$selectbox</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$selectbox</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$selectbox</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$selectbox</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// Slider</span>
+
+<span class="o">-</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">area</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">height</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">area</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">height</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">knob</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">shadow</span>
+<span class="o">+</span><span class="nx">$slider</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">color</span>
+
+ <span class="c1">// Toolbar</span>
+
+<span class="o">-</span><span class="nx">$toolbar</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$toolbar</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$toolbar</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$toolbar</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$toolbar</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">weight</span>
+
+ <span class="c1">// Menu</span>
+
+<span class="o">-</span><span class="nx">$menu</span><span class="o">-</span><span class="nx">item</span><span class="o">-</span><span class="nx">selected</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$menu</span><span class="o">-</span><span class="nx">item</span><span class="o">-</span><span class="nx">selected</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// Picker</span>
+
+<span class="o">-</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">overlay</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">highlight</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">border</span><span class="o">-</span><span class="nx">radius</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">divider</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">spinning</span><span class="o">-</span><span class="nx">wheel</span><span class="o">-</span><span class="nx">divider</span><span class="o">-</span><span class="nx">width</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">label</span><span class="o">-</span><span class="nx">height</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">label</span><span class="o">-</span><span class="nx">font</span><span class="o">-</span><span class="nx">size</span>
+<span class="o">+</span><span class="nx">$picker</span><span class="o">-</span><span class="nx">height</span>
+
+ <span class="c1">// Drawer</span>
+
+<span class="o">-</span><span class="nx">$drawer</span><span class="o">-</span><span class="nx">above</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$drawer</span><span class="o">-</span><span class="nx">below</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$drawer</span><span class="o">-</span><span class="nx">above</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$drawer</span><span class="o">-</span><span class="nx">below</span><span class="o">-</span><span class="nx">background</span>
+
+ <span class="c1">// Collapsible</span>
+
+<span class="o">-</span><span class="nx">$collapsible</span><span class="o">-</span><span class="nx">header</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">-</span><span class="nx">$collapsible</span><span class="o">-</span><span class="nx">header</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span><span class="o">-</span><span class="nx">color</span>
+<span class="o">+</span><span class="nx">$collapsible</span><span class="o">-</span><span class="nx">header</span><span class="o">-</span><span class="nx">background</span>
+<span class="o">+</span><span class="nx">$collapsible</span><span class="o">-</span><span class="nx">header</span><span class="o">-</span><span class="nx">active</span><span class="o">-</span><span class="nx">background</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="theming.html"
+             title="previous chapter">« Theming</a>
+          <span class="separator">|</span>
+          <a class="next" href="resolution.html"
+             title="next chapter">Resolution and Pixel Density »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Migrating a qx.Mobile theme to another version</a><ul>
+<li><a class="reference internal" href="#migration-from-3-1-to-3-5">Migration from 3.1 to 3.5</a><ul>
+<li><a class="reference internal" href="#step-1-update-your-custom-scss">Step 1: Update your custom.scss</a></li>
+<li><a class="reference internal" href="#step-2-update-your-watch-scss-job">Step 2: Update your watch-scss job</a></li>
+<li><a class="reference internal" href="#step-3-reset-your-app-specific-variables">Step 3: Reset your app-specific variables</a></li>
+<li><a class="reference internal" href="#step-4-migrate-your-recent-style-variables">Step 4: Migrate your recent style variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="resolution.html"
+                        title="next chapter">Resolution and Pixel Density</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="theming.html"
+                        title="previous chapter">Theming</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/mobile/theme_migration.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,379 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Resolution and Pixel Density &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Mobile" href="../mobile.html" />
+    <link rel="next" title="Debugging" href="debugging.html" />
+    <link rel="prev" title="Migrating a qx.Mobile theme to another version" href="theme_migration.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../mobile.html" accesskey="U">qx.Mobile</a>
+     &#187;
+    <a href="">Resolution and Pixel Density</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="resolution-and-pixel-density">
+<span id="pages-mobile-resolution-resolution"></span><h1>Resolution and Pixel Density<a class="headerlink" href="#resolution-and-pixel-density" title="Permalink to this headline">¶</a></h1>
+<p>Typical mobile devices like smartphones and tablets come in all kinds of resolutions and pixel densities. qx.Mobile applications are able to adapt to all those different environments as described in the following sections.</p>
+<p>Fortunately, you don't have to care much, as the framework handles most of it automatically. But it also enables you to further optimize for a great user experience on such devices as explained below.</p>
+<div class="section" id="high-pixel-density">
+<h2>High Pixel Density<a class="headerlink" href="#high-pixel-density" title="Permalink to this headline">¶</a></h2>
+<p>Many modern devices ship with high pixel density displays. The measurement of pixel density is in units of <code class="docutils literal"><span class="pre">ppi</span></code> (&quot;pixels per inch&quot;), sometimes called <code class="docutils literal"><span class="pre">dpi</span></code> (&quot;dots per inch&quot;). Starting at about 300ppi a display's individual pixels become indistinguishable to the human eye at regular viewing distance. Therefore such devices are commonly said to have &quot;Retina&quot; displays.</p>
+<p>In order to let applications continue with their pixel values used internally (e.g. CSS sizes like <code class="docutils literal"><span class="pre">width:</span> <span class="pre">100px;</span></code>) high-density devices introduced another parameter: a ratio that maps CSS pixels to hardware pixels. This ratio is called the &quot;device pixel ratio&quot;. The device takes care of scaling the CSS pixels (also called &quot;device-independent pixels (dips)&quot;) to the physical pixels of the device.</p>
+<p>The following device pixel ratios are common on mobile devices:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>iOS</dt>
+<dd><ul class="first last simple">
+<li>1</li>
+<li>2 (&quot;Retina&quot;)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Android</dt>
+<dd><ul class="first last simple">
+<li>1 (mdpi)</li>
+<li>1.5 (hdpi)</li>
+<li>2 (xhdpi)</li>
+<li>3 (xxhdpi)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The device pixel ratio is chosen by the manufacturer to properly match the pixel-density to the device's physical resolution and dimensions. But surprisingly and despite its name, it is not just a device-specific, fixed value. For instance, modern desktop browsers also change the value of device pixel ratio at runtime when you change the browser's font size. qx.Mobile handles that for you transparently.</p>
+<p>In summary, a qx.Mobile app takes high-density displays into account for layout sizes, font sizes, and high-resolution images.</p>
+</div>
+<div class="section" id="resolution-independent-theming">
+<h2>Resolution-independent Theming<a class="headerlink" href="#resolution-independent-theming" title="Permalink to this headline">¶</a></h2>
+<p>Since qx.Mobile 3.5 all themes that ship with the SDK are resolution-independent. They no longer use pixel values internally, but derive all their individual sizes (such as paddings or border widths) from the global application font size. Technically this is achieved by using the relative unit <code class="docutils literal"><span class="pre">rem</span></code> throughout the theme.</p>
+<p>Thus, at startup (or at reload) your app will layout with respect to the font size setting of your browser. Also at runtime, whenever you decrease or increase the application's font size, the theme (and therefore the entire visual part of your app) will adjust itself accordingly.</p>
+</div>
+<div class="section" id="font-scale">
+<h2>Font Scale<a class="headerlink" href="#font-scale" title="Permalink to this headline">¶</a></h2>
+<p>You can easily change the font size of your qx.Mobile app programmatically. For instance, this allowed you to offer the users a settings dialog to adjust the total scale of the app to their liking.</p>
+<p>The change is relative to the global font size (e.g. predefined by your browser's settings). You set the new relative value, e.g. a factor of 2 for 200% scaling) through the method <code class="docutils literal"><span class="pre">setFontScale</span></code> on <code class="docutils literal"><span class="pre">qx.ui.mobile.core.Root</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">setFontScale</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The first image shows a font scale of <code class="docutils literal"><span class="pre">0.5</span></code>, the scale on the second is <code class="docutils literal"><span class="pre">1.5</span></code>:</p>
+<a class="reference internal image-reference" href="../../_images/resolution-50.png"><img alt="../../_images/resolution-50.png" src="../../_images/resolution-50.png" style="width: 120.0px; height: 188.5px;" /></a>
+<a class="reference internal image-reference" href="../../_images/resolution-150.png"><img alt="../../_images/resolution-150.png" src="../../_images/resolution-150.png" style="width: 120.5px; height: 188.5px;" /></a>
+</div>
+<div class="section" id="app-scale">
+<h2>App Scale<a class="headerlink" href="#app-scale" title="Permalink to this headline">¶</a></h2>
+<p>The font scale isn't the only scale parameter. Usually one would be interested in the total app scale. This app scale expresses the effective scaling of your app. For instance, if the app scale is <code class="docutils literal"><span class="pre">1.75</span></code>, an image with an original width of 100px, would appear on the display as 175 pixels wide.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">scale</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">getAppScale</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>The app scale calculation takes into account both the font scale as well as the reported device pixel ratio. As mentioned above modern desktop browsers tend to modify the pixel ratio when changing  built-in font sizes. So with both parameters the effective app scale can be determined quite reliably on many modern browsers.</p>
+</div>
+<div class="section" id="high-resolution-images">
+<h2>High-Resolution Images<a class="headerlink" href="#high-resolution-images" title="Permalink to this headline">¶</a></h2>
+<p>The total app scale is important when displaying images. Regular bitmap-based images would get blurry for high app scales. This can largely be overcome by supplying additional versions of the same image.</p>
+<p>You only have to follow a simple naming convention for those additional resources. The framework picks the best match for each image from the supplied high-resolution versions. The code of your app doesn't have to be modified. This is possible because your app's images are handled as &quot;managed resources&quot; by the qx.Mobile toolchain. In whatever scale or on whatever high-pixel device your app runs, it will internally look-up the best possible fit based on the determined app scale.</p>
+</div>
+<div class="section" id="location-and-naming-conventions">
+<h2>Location and naming conventions<a class="headerlink" href="#location-and-naming-conventions" title="Permalink to this headline">¶</a></h2>
+<p>The high-resolution images are assumed to be located in the same folder as the
+default resolution image, but are annotated with the corresponding optimal scale:</p>
+<p><code class="docutils literal"><span class="pre">&lt;filename&gt;&#64;&lt;appScale&gt;.&lt;fileextension&gt;</span></code></p>
+<p>As an example, assume the following medium resolution image is part of your project's resources:
+<code class="docutils literal"><span class="pre">source/resource/&lt;APP_NAME&gt;/icon/image.png</span></code></p>
+<p>The &quot;resolution&quot; of an image is given by the total amount of pixels available in each dimension. Lets say <code class="docutils literal"><span class="pre">image.png</span></code> is 200 x 100 pixels. In your image processing tool (e.g. Photoshop) take the original, high-quality sources that you created the regular image from. Now create a high-resolution version. Optimized for app scale 200% its resolution would become 400 x 200 pixels. Save that larger image as <code class="docutils literal"><span class="pre">image&#64;2x.png</span></code>. Do so for any scales and images you like to support. That's it.</p>
+<p>Remember that not just the device pixel ratio determines the effective app scale. If device pixel ratio returns <code class="docutils literal"><span class="pre">1.5</span></code> but your font scale  is <code class="docutils literal"><span class="pre">2</span></code>, then the best image resolution would be <code class="docutils literal"><span class="pre">3x</span></code>. The application would try to display the resource <code class="docutils literal"><span class="pre">image&#64;3x.png</span></code>.</p>
+</div>
+<div class="section" id="fallback">
+<h2>Fallback<a class="headerlink" href="#fallback" title="Permalink to this headline">¶</a></h2>
+<p>qx.Mobile by default checks for the most common image resolutions:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&#64;3x</span></code></li>
+<li><code class="docutils literal"><span class="pre">&#64;2x</span></code></li>
+<li><code class="docutils literal"><span class="pre">&#64;1.5x</span></code></li>
+</ul>
+<p>In your app you can adjust the set of scale factors to check by modifying this static array:</p>
+<p><code class="docutils literal"><span class="pre">qx.ui.mobile.basic.Image.PIXEL_RATIOS</span></code></p>
+<p>For the best visual result qx.Mobile uses the following fallback logic:</p>
+<ol class="arabic simple">
+<li>It searches for an image with an exact or higher resolution, which is nearest to the actual app scale.</li>
+<li>It searches for an image with a lower resolution, which is nearest to the actual app scale.</li>
+<li>If no high-resolution image is found, the medium resolution image is displayed.</li>
+</ol>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="theme_migration.html"
+             title="previous chapter">« Migrating a qx.Mobile theme to another version</a>
+          <span class="separator">|</span>
+          <a class="next" href="debugging.html"
+             title="next chapter">Debugging »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Resolution and Pixel Density</a><ul>
+<li><a class="reference internal" href="#high-pixel-density">High Pixel Density</a></li>
+<li><a class="reference internal" href="#resolution-independent-theming">Resolution-independent Theming</a></li>
+<li><a class="reference internal" href="#font-scale">Font Scale</a></li>
+<li><a class="reference internal" href="#app-scale">App Scale</a></li>
+<li><a class="reference internal" href="#high-resolution-images">High-Resolution Images</a></li>
+<li><a class="reference internal" href="#location-and-naming-conventions">Location and naming conventions</a></li>
+<li><a class="reference internal" href="#fallback">Fallback</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="debugging.html"
+                        title="next chapter">Debugging</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="theme_migration.html"
+                        title="previous chapter">Migrating a qx.Mobile theme to another version</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/mobile/resolution.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,406 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Hello World &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Tooling" href="../tool.html" />
+    <link rel="next" title="SDK Structure" href="sdk/sdk_structure.html" />
+    <link rel="prev" title="SDK Installation Troubleshooting" href="sdk/sdk_install_troubleshoot.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Hello World</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="hello-world">
+<span id="pages-getting-started-helloworld-helloworld"></span><h1>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial is a fast-paced, high-level <em>tour de force</em>, to get you acquainted with working with the SDK. For that purpose we will create a minimal Desktop application.</p>
+<div class="section" id="set-up-the-framework">
+<span id="pages-getting-started-helloworld-setup-the-framework"></span><h2>Set up the Framework<a class="headerlink" href="#set-up-the-framework" title="Permalink to this headline">¶</a></h2>
+<p>To follow this, make sure your computer meets the requirements for the SDK as outlined on the <a class="reference internal" href="sdk/sdk_requirements.html"><span class="doc">SDK Requirements</span></a> page.  Go to the <a class="reference external" href="http://qooxdoo.org/downloads">download</a> page and grab the latest stable Desktop component. After downloading, all you have to do is to unzip the archive to a suitable path on your hard drive.</p>
+</div>
+<div class="section" id="create-your-application">
+<span id="pages-getting-started-helloworld-create-your-application"></span><h2>Create your Application<a class="headerlink" href="#create-your-application" title="Permalink to this headline">¶</a></h2>
+<p>It is easy to setup your own application using the platform-independent script <code class="docutils literal"><span class="pre">create-application.py</span></code> in the <em>tool/bin</em> path of the SDK. It will create a skeleton application in a directory you specify, that is automatically configured to work with your version of the qooxdoo framework.</p>
+<p>To create a new skeleton with <code class="docutils literal"><span class="pre">create-application.py</span></code> you will need to follow some initial <em>platform-dependent</em> steps - even when the rest of your development is independent of the platform. Please see the appropriate section below for <a class="reference internal" href="#pages-getting-started-helloworld-windows"><span class="std std-ref">Windows </span></a>, <a class="reference internal" href="#pages-getting-started-helloworld-cygwin"><span class="std std-ref">Cygwin </span></a> or <a class="reference internal" href="#pages-getting-started-helloworld-mac-linux"><span class="std std-ref">Mac  , Linux </span></a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you have any problems setting up the qooxdoo tool chain, please see some additional help for <a class="reference internal" href="sdk/sdk_install_troubleshoot.html#pages-troubleshooting-troubleshooting"><span class="std std-ref">troubleshooting</span></a>.</p>
+</div>
+<div class="section" id="windows-image0">
+<span id="pages-getting-started-helloworld-windows"></span><h3>Windows <img alt="image0" src="../../_images/windows.png" /><a class="headerlink" href="#windows-image0" title="Permalink to this headline">¶</a></h3>
+<p>Open a command shell like <code class="docutils literal"><span class="pre">cmd</span></code> or <code class="docutils literal"><span class="pre">PowerShell</span></code>. Let's create an application named <code class="docutils literal"><span class="pre">custom</span></code> in the current directory, with the qooxdoo SDK available at <code class="docutils literal"><span class="pre">C:\qooxdoo-5.0.2-sdk</span></code>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>C:\qooxdoo-5.0.2-sdk\tool\bin\create-application.py --name=custom
+</pre></div>
+</div>
+</div>
+<div class="section" id="cygwin-image1">
+<span id="pages-getting-started-helloworld-cygwin"></span><h3>Cygwin <img alt="image1" src="../../_images/cygwin.png" /><a class="headerlink" href="#cygwin-image1" title="Permalink to this headline">¶</a></h3>
+<p>Open a command shell like <code class="docutils literal"><span class="pre">bash</span></code>. To create your application <code class="docutils literal"><span class="pre">custom</span></code> in the current directory, with the qooxdoo SDK available at <code class="docutils literal"><span class="pre">C:\qooxdoo-5.0.2-sdk</span></code>, call the script as follows:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/cygdrive/c/qooxdoo-5.0.2-sdk/tool/bin/create-application.py --name=custom
+</pre></div>
+</div>
+</div>
+<div class="section" id="mac-image2-linux-image3">
+<span id="pages-getting-started-helloworld-mac-linux"></span><h3>Mac <img alt="image2" src="../../_images/macosx.png" /> , Linux <img alt="image3" src="../../_images/linux.png" /><a class="headerlink" href="#mac-image2-linux-image3" title="Permalink to this headline">¶</a></h3>
+<p>Open a command shell like <code class="docutils literal"><span class="pre">bash</span></code>. To create an application <code class="docutils literal"><span class="pre">custom</span></code> in the current directory, with a qooxdoo SDK available at <code class="docutils literal"><span class="pre">/opt/qooxdoo-5.0.2-sdk</span></code>, call the script as follows:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/opt/qooxdoo-5.0.2-sdk/tool/bin/create-application.py --name=custom
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="run-your-application">
+<span id="pages-getting-started-helloworld-run-your-application"></span><h2>Run your Application<a class="headerlink" href="#run-your-application" title="Permalink to this headline">¶</a></h2>
+<p>Now that your application is set up, let's generate a version that can be opened in your browser. Change to the newly created application directory and kick off the automatic build process:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">cd</span> <span class="nx">custom</span>
+<span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span><span class="o">-</span><span class="nx">all</span>
+</pre></div>
+</div>
+<p>Under non-Windows systems you might have to prefix the command with the local directory, i.e. execute <code class="docutils literal"><span class="pre">./generate.py</span> <span class="pre">source-all</span></code> instead.</p>
+<p>Now that the application has been generated, open the <code class="docutils literal"><span class="pre">source/index.html</span></code> file in your web browser to run your application and tap the button:</p>
+<p><a class="reference external" href="../../_images/running_application.png"><img alt="Running application" src="../../_images/running_application.png" style="width: 500px;" /></a></p>
+<p>As you go on with your application development it might be advantageous to run
+your application through a web server. So alternatively to opening
+<code class="docutils literal"><span class="pre">source/index.html</span></code> in the browser directly, you can start a local mini-
+web server by issuing the following command on the shell</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span><span class="o">-</span><span class="nx">server</span>
+</pre></div>
+</div>
+<p>Watch the output of the command, it will tell you the URL under which your
+source application is available over the web server (Just copy-paste it to the
+location field of your web browser). Once you're done hit <code class="docutils literal"><span class="pre">Ctrl-C</span></code> in the
+shell window to terminate the server process.</p>
+</div>
+<div class="section" id="write-application-code">
+<span id="pages-getting-started-helloworld-write-application-code"></span><h2>Write Application Code<a class="headerlink" href="#write-application-code" title="Permalink to this headline">¶</a></h2>
+<p>The folder <code class="docutils literal"><span class="pre">source/class</span></code> contains all application classes. When starting with a newly created application, there is only a single file for application logic, <code class="docutils literal"><span class="pre">custom/Application.js</span></code>. Open it in your favorite editor or IDE.</p>
+<p>The method <code class="docutils literal"><span class="pre">main()</span></code> contains the entire code of your little skeleton app. Even if you haven't done any qooxdoo programming before, you should be able to figure out what the code does. Get familiar with the code and change it, e.g. modify the label of the button, move the button to another position or add a second button.</p>
+<p>To see the changes, you just have to refresh your document in the browser, e.g. by hitting <code class="docutils literal"><span class="pre">F5</span></code>. During development there usually is no need to re-generate this so-called &quot;source&quot; version of your app. Only if you later introduce new classes or if dependencies between classes change, you would have to re-generate your app. To do so, execute <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source-all</span></code> (to include all source classes) or <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></code> (to only include the required classes) before refreshing your browser.</p>
+</div>
+<div class="section" id="debugging">
+<span id="pages-getting-started-helloworld-debugging"></span><h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>In your newly created application you should have noticed the following code:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;qx.debug&quot;</span><span class="p">))</span>
+<span class="p">{</span>
+  <span class="nx">qx</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">appender</span><span class="p">.</span><span class="nx">Native</span><span class="p">;</span>
+  <span class="nx">qx</span><span class="p">.</span><span class="nx">log</span><span class="p">.</span><span class="nx">appender</span><span class="p">.</span><span class="nx">Console</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This code turns on two different ways of &quot;logging&quot;, i.e. capturing and printing out information about the operation of your application.</p>
+<p><code class="docutils literal"><span class="pre">qx.log.appender.Native</span></code> uses the native logging capabilities of your client if available, e.g. <a class="reference external" href="http://getfirebug.com">Firebug</a> in Firefox (use <code class="docutils literal"><span class="pre">F12</span></code> to toggle). If your browser doesn't come with developer-friendly logging, <code class="docutils literal"><span class="pre">qx.log.appender.Console</span></code> provides such a feature for <em>all</em> browsers: the console prints out the log messages in an area inside your browser window. It also includes an interactive JavaScript shell (use <code class="docutils literal"><span class="pre">F7</span></code> to toggle):</p>
+<p><a class="reference external" href="../../_images/debug_application.png"><img alt="Debug application" src="../../_images/debug_application.png" style="width: 500px;" /></a></p>
+<p>The reason for enclosing the two logging classes in a so-called &quot;debug&quot; variant is explained in more detail in the next section. It ensures that logging is only turned on in the development version (i.e. &quot;source&quot; version) of your app. It will automatically be turned off in the final version of your app that is to be deployed.</p>
+</div>
+<div class="section" id="deployment">
+<span id="pages-getting-started-helloworld-deployment"></span><h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>The development version of a qooxdoo app is called the &quot;source&quot; version, the deployment version of an app is called &quot;build&quot; version. The latter is similarly created by executing</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">build</span>
+</pre></div>
+</div>
+<p>After successful completion let the browser open <code class="docutils literal"><span class="pre">index.html</span></code> from the newly created <code class="docutils literal"><span class="pre">build</span></code> folder. Although you probably won't see a difference between this deployment version of your app and the previous &quot;source&quot; version, it should have started up faster.</p>
+<p>Unlike the &quot;source&quot; version, with its numerous unmodified JavaScript files, the &quot;build&quot; version only has to load a single, optimized JavaScript file.</p>
+<p>Manually creating such a &quot;custom build&quot; from your application class (or classes) would have been a very tedious and complex job. In fact most other JavaScript libraries do provide built-in support to automate this task. Building your app strips off unneeded whitespaces and comments, optimizes and reorganizes your code, uses a JS linker to only include classes that your application needs, and many more refinements and optimizations as well.</p>
+<p>A lot of debugging code is also removed when a &quot;build&quot; is generated that would only be useful during development of your application, e.g. printing out informative warnings or coding hints. Just like the logging code in the section above, you can put arbitrary code into such &quot;variants&quot;, which may then be automatically removed during &quot;conditional compilation&quot; of the build process. This lets you receive information on your app when you're developing it, but removes this for your final code, so your end users don't see it.</p>
+</div>
+<div class="section" id="api-reference">
+<span id="pages-getting-started-helloworld-api-reference"></span><h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo supports inline comments that are similar to Javadoc or JSDoc comments. They allow for JavaScript and qooxdoo specific features, and look like <code class="docutils literal"><span class="pre">/**</span> <span class="pre">your</span> <span class="pre">comment</span> <span class="pre">*/</span></code>.</p>
+<p>From those comments a complete, interactive API reference can be generated:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">api</span>
+</pre></div>
+</div>
+<p>To start the <a class="reference internal" href="../application/apiviewer.html"><span class="doc">API Viewer application</span></a>, open <code class="docutils literal"><span class="pre">index.html</span></code> from the newly created <code class="docutils literal"><span class="pre">api</span></code> folder in your browser. It includes fully cross-linked and searchable documentation of your application classes as well as the framework classes.</p>
+<p><a class="reference external" href="../../_images/api_viewer.png"><img alt="API Viewer" src="../../_images/api_viewer.png" style="width: 500px;" /></a></p>
+</div>
+<div class="section" id="unit-testing">
+<span id="pages-getting-started-helloworld-unit-testing"></span><h2>Unit Testing<a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h2>
+<p>You might have noticed the <code class="docutils literal"><span class="pre">test/DemoTest.js</span></code> file in the <code class="docutils literal"><span class="pre">source/class</span></code> folder of your application. This class demonstrates how to define &quot;unit tests&quot; for your application. qooxdoo comes with its own unit testing framework, it does not require any additional software installation. Simply execute the following command:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">test</span>
+</pre></div>
+</div>
+<p>Open <code class="docutils literal"><span class="pre">index.html</span></code> from the newly created top-level <code class="docutils literal"><span class="pre">test</span></code> folder in your browser. The <a class="reference internal" href="../application/testrunner.html"><span class="doc">Testrunner application</span></a> allows you to select and run the tests under your application namespace:</p>
+<p><a class="reference external" href="../../_images/testrunner.png"><img alt="Testrunner application" src="../../_images/testrunner1.png" style="width: 500px;" /></a></p>
+<p>You may skip the rather advanced topic of unit tests while continuing to extend your custom application code. In case you are interested in test-driven development and creating your own unit tests, please see the corresponding <a class="reference internal" href="../development/unit_testing.html"><span class="doc">Unit Testing</span></a> documentation.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="sdk/sdk_install_troubleshoot.html"
+             title="previous chapter">« SDK Installation Troubleshooting</a>
+          <span class="separator">|</span>
+          <a class="next" href="sdk/sdk_structure.html"
+             title="next chapter">SDK Structure »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Hello World</a><ul>
+<li><a class="reference internal" href="#set-up-the-framework">Set up the Framework</a></li>
+<li><a class="reference internal" href="#create-your-application">Create your Application</a><ul>
+<li><a class="reference internal" href="#windows-image0">Windows </a></li>
+<li><a class="reference internal" href="#cygwin-image1">Cygwin </a></li>
+<li><a class="reference internal" href="#mac-image2-linux-image3">Mac  , Linux </a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#run-your-application">Run your Application</a></li>
+<li><a class="reference internal" href="#write-application-code">Write Application Code</a></li>
+<li><a class="reference internal" href="#debugging">Debugging</a></li>
+<li><a class="reference internal" href="#deployment">Deployment</a></li>
+<li><a class="reference internal" href="#api-reference">API Reference</a></li>
+<li><a class="reference internal" href="#unit-testing">Unit Testing</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="sdk/sdk_structure.html"
+                        title="next chapter">SDK Structure</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="sdk/sdk_install_troubleshoot.html"
+                        title="previous chapter">SDK Installation Troubleshooting</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/tool/getting_started.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,704 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Default Action Jobs &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="References" href="../../references.html" />
+    <link rel="next" title="Default Includer Jobs" href="default_jobs_includers.html" />
+    <link rel="prev" title="Grow" href="../../layout/grow.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../references.html" accesskey="U">References</a>
+     &#187;
+    <a href="">Default Action Jobs</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="default-action-jobs">
+<span id="pages-tool-generator-generator-default-jobs-action-jobs"></span><h1>Default Action Jobs<a class="headerlink" href="#default-action-jobs" title="Permalink to this headline">¶</a></h1>
+<p>This page describes the jobs that are automatically available to all
+skeleton-based applications (particularly, applications with config.json files
+that include the framework's <em>application.json</em> config file). Mainly this is
+just a reference list with short descriptions of what the jobs do. But in some
+cases, there is comprehensive documentation about the interface of this job and
+how it can be parametrized (This would usually require changing your
+<em>config.json</em> configuration file).</p>
+<p>These jobs can be invoked with the generator, e.g. as <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">&lt;jobname&gt;</span></code>.</p>
+<div class="section" id="api">
+<span id="pages-tool-generator-generator-default-jobs-api"></span><h2>api<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<p>Create api doc for the current library. Use the following macros to tailor the
+scope of classes that are going to show up in the customized apiviewer
+application:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;API_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
+<span class="s2">&quot;API_EXCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
+</pre></div>
+</div>
+<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><span class="std std-ref">include</span></a> config key.</p>
+<p>Classes, which are not covered by <code class="docutils literal"><span class="pre">API_INCLUDE</span></code>, are nevertheless included in
+the api data with their full class description <em>if</em> they are required for
+inheritance relationships (e.g. a class that is included derives from a class
+which is not). If such a required class is explicitly <em>excluded</em> with
+<code class="docutils literal"><span class="pre">API_EXCLUDE</span></code>, a stub entry for it will be included in the api data to just
+show the inheritance relationship.</p>
+</div>
+<div class="section" id="api-data">
+<span id="pages-tool-generator-generator-default-jobs-api-data"></span><h2>api-data<a class="headerlink" href="#api-data" title="Permalink to this headline">¶</a></h2>
+<p>Create the api data for the current library. This is included in the <a class="reference internal" href="#pages-tool-generator-generator-default-jobs-api"><span class="std std-ref">api</span></a> job, but allows you to
+re-generate the api data <em>.json</em> files for the classes without re-generating the
+Apiviewer application as well. Moreover, you can supply class names as command
+line arguments to only re-generate the api data for those:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">sh</span><span class="o">&gt;</span> <span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">api</span><span class="o">-</span><span class="nx">data</span> <span class="nx">my</span><span class="p">.</span><span class="nx">own</span><span class="p">.</span><span class="nx">ClassA</span> <span class="p">...</span>
+</pre></div>
+</div>
+<p>Beware though that in such a case the tree information provided to the Apiviewer
+(i.e. what you see in the Apiviewer's tree view on the left) is also restricted
+to those classes (augmented by stubs for their ancestors for hierarchy
+resolution). But this should be fine for developing API documentation for
+specific classes.</p>
+</div>
+<div class="section" id="build">
+<span id="pages-tool-generator-generator-default-jobs-build"></span><h2>build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<p>Create build version of current application.</p>
+</div>
+<div class="section" id="build-min">
+<span id="pages-tool-generator-generator-default-jobs-build-min"></span><h2>build-min<a class="headerlink" href="#build-min" title="Permalink to this headline">¶</a></h2>
+<p>This job is available in the qx.Website skeleton.
+Create minified build version of current application.</p>
+</div>
+<div class="section" id="build-module-all">
+<span id="pages-tool-generator-generator-default-jobs-build-module-all"></span><h2>build-module-all<a class="headerlink" href="#build-module-all" title="Permalink to this headline">¶</a></h2>
+<p>This job is available in the qx.Website skeleton. Instead of building a single
+all-in-one qx.Website script file (see <a class="reference internal" href="#build">build</a> and <a class="reference internal" href="#build-min">build-min</a>) this will build all
+modules separately (qx.Website splitted in n files).</p>
+</div>
+<div class="section" id="build-module-all-min">
+<span id="pages-tool-generator-generator-default-jobs-build-module-all-min"></span><h2>build-module-all-min<a class="headerlink" href="#build-module-all-min" title="Permalink to this headline">¶</a></h2>
+<p>This job is available in the qx.Website skeleton. Instead of building a single
+all-in-one qx.Website script file (see <a class="reference internal" href="#build">build</a> and <a class="reference internal" href="#build-min">build-min</a>) this will build all
+modules separately (qx.Website splitted in n files) and minified.</p>
+</div>
+<div class="section" id="clean">
+<span id="pages-tool-generator-generator-default-jobs-clean"></span><h2>clean<a class="headerlink" href="#clean" title="Permalink to this headline">¶</a></h2>
+<p>Remove local cache and generated .js files (source/build).</p>
+</div>
+<div class="section" id="compile-scss">
+<span id="pages-tool-generator-generator-default-jobs-dependencies"></span><h2>compile-scss<a class="headerlink" href="#compile-scss" title="Permalink to this headline">¶</a></h2>
+<p>This job is available in the qx.Mobile skeleton. The <em>compile-scss</em> job
+compiles SCSS files to CSS (See the article about <a class="reference internal" href="../../mobile/theming.html"><span class="doc">mobile theming</span></a>). The *.scss files usually reside in your
+application's <code class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/mobile/scss</span></code> folder, and will be
+compiled into the <code class="docutils literal"><span class="pre">css</span></code> sibling folder. This job is run automatically
+during each <code class="docutils literal"><span class="pre">source</span></code> and <code class="docutils literal"><span class="pre">build</span></code> run. See <a class="reference internal" href="#watch-scss">watch-scss</a> if you
+want automatic compilations when changing the SCSS files.</p>
+</div>
+<div class="section" id="dependencies">
+<h2>dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Create dependency information for the current library which is stored as a Json
+file (under <em>source/script/dependencies.json</em>). If this file exists and is
+current, the Generator will use its information when following dependencies of
+the classes of the library.</p>
+<p>This is particularly interesting for libraries that are used in other
+applications. It allows you to speed up cold-cache builds for the other
+application. (Mind that it doesn't make much sense for the application itself,
+as a <em>generate.py clean</em> or <em>distclean</em> will also wipe the dependencies Json file).</p>
+</div>
+<div class="section" id="distclean">
+<span id="pages-tool-generator-generator-default-jobs-distclean"></span><h2>distclean<a class="headerlink" href="#distclean" title="Permalink to this headline">¶</a></h2>
+<p>Remove the cache and all generated artefacts of this library (source, build,
+...).</p>
+</div>
+<div class="section" id="fix">
+<span id="pages-tool-generator-generator-default-jobs-fix"></span><h2>fix<a class="headerlink" href="#fix" title="Permalink to this headline">¶</a></h2>
+<p>Normalize whitespace in .js files of the current library (tabs, eol, ...).</p>
+</div>
+<div class="section" id="info">
+<span id="pages-tool-generator-generator-default-jobs-info"></span><h2>info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
+<p>Running this job will print out various information about your setup on the
+console. Information includes your qooxdoo and Python version, whether source
+and/or build version of your app has been built, stats on the cache, asf.</p>
+</div>
+<div class="section" id="lint">
+<span id="pages-tool-generator-generator-default-jobs-lint"></span><h2>lint<a class="headerlink" href="#lint" title="Permalink to this headline">¶</a></h2>
+<p>Check the source code of the .js files of the current library.</p>
+</div>
+<div class="section" id="migration">
+<span id="pages-tool-generator-generator-default-jobs-migration"></span><h2>migration<a class="headerlink" href="#migration" title="Permalink to this headline">¶</a></h2>
+<p>Migrate the .js files of the current library to the current qooxdoo version.</p>
+<div class="section" id="running-the-migration-job">
+<h3>Running the migration job<a class="headerlink" href="#running-the-migration-job" title="Permalink to this headline">¶</a></h3>
+<p>Here is a sample run of the migration job:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">migration</span>
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">NOTE</span><span class="o">:</span>    <span class="nx">To</span> <span class="nx">apply</span> <span class="nx">only</span> <span class="nx">the</span> <span class="nx">necessary</span> <span class="nx">changes</span> <span class="nx">to</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">,</span> <span class="nx">we</span>
+         <span class="nx">need</span> <span class="nx">to</span> <span class="nx">know</span> <span class="nx">the</span> <span class="nx">qooxdoo</span> <span class="nx">version</span> <span class="nx">it</span> <span class="nx">currently</span> <span class="nx">works</span> <span class="kd">with</span><span class="p">.</span>
+
+<span class="nx">Please</span> <span class="nx">enter</span> <span class="nx">your</span> <span class="nx">current</span> <span class="nx">qooxdoo</span> <span class="nx">version</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">]</span> <span class="o">:</span>
+</pre></div>
+</div>
+<p>Enter your qooxdoo version or just hit return if you are using the version given
+in square brackets.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">MIGRATION</span> <span class="nx">SUMMARY</span><span class="o">:</span>
+
+<span class="nx">Current</span> <span class="nx">qooxdoo</span> <span class="nx">version</span><span class="o">:</span>   <span class="mf">1.0</span>
+<span class="nx">Upgrade</span> <span class="nx">path</span><span class="o">:</span>              <span class="mf">1.0</span><span class="p">.</span><span class="mi">1</span> <span class="o">-&gt;</span> <span class="mf">1.1</span> <span class="o">-&gt;</span> <span class="mf">1.2</span>
+
+<span class="nx">Affected</span> <span class="nx">Classes</span><span class="o">:</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">Header</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">Article</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">Tree</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">PreferenceWindow</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">ToolBar</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">FeedParser</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">view</span><span class="p">.</span><span class="nx">Table</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">Application</span>
+    <span class="nx">feedreader</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">DemoTest</span>
+
+<span class="nx">NOTE</span><span class="o">:</span>    <span class="nx">It</span> <span class="nx">is</span> <span class="nx">advised</span> <span class="nx">to</span> <span class="k">do</span> <span class="nx">a</span> <span class="s1">&#39;generate.py distclean&#39;</span> <span class="nx">before</span> <span class="nx">migrating</span> <span class="nx">any</span> <span class="nx">files</span><span class="p">.</span>
+         <span class="nx">If</span> <span class="nx">you</span> <span class="nx">choose</span> <span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="nx">a</span> <span class="nx">subprocess</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">invoked</span> <span class="nx">to</span> <span class="nx">run</span> <span class="nx">distclean</span><span class="p">,</span>
+         <span class="nx">and</span> <span class="nx">after</span> <span class="nx">completion</span> <span class="nx">you</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">prompted</span> <span class="k">if</span> <span class="nx">you</span> <span class="nx">want</span> <span class="nx">to</span>
+         <span class="k">continue</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">migration</span><span class="p">.</span> <span class="nx">If</span> <span class="nx">you</span> <span class="nx">choose</span> <span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">distclean</span>
+         <span class="nx">step</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">skipped</span> <span class="p">(</span><span class="nx">which</span> <span class="nx">might</span> <span class="nx">result</span> <span class="k">in</span> <span class="nx">potentially</span> <span class="nx">unnecessary</span>
+         <span class="nx">files</span> <span class="nx">being</span> <span class="nx">migrated</span><span class="p">).</span>
+
+<span class="nx">Do</span> <span class="nx">you</span> <span class="nx">want</span> <span class="nx">to</span> <span class="nx">run</span> <span class="s1">&#39;distclean&#39;</span> <span class="nx">now</span><span class="o">?</span> <span class="p">[</span><span class="nx">yes</span><span class="p">]</span> <span class="o">:</span>
+</pre></div>
+</div>
+<p>Enter &quot;yes&quot;.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">WARNING</span><span class="o">:</span> <span class="nx">The</span> <span class="nx">migration</span> <span class="nx">process</span> <span class="nx">will</span> <span class="nx">update</span> <span class="nx">the</span> <span class="nx">files</span> <span class="k">in</span> <span class="nx">place</span><span class="p">.</span> <span class="nx">Please</span> <span class="nx">make</span>
+         <span class="nx">sure</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">backup</span> <span class="k">of</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">.</span> <span class="nx">The</span> <span class="nx">complete</span> <span class="nx">output</span> <span class="k">of</span> <span class="nx">the</span>
+         <span class="nx">migration</span> <span class="nx">process</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">logged</span> <span class="nx">to</span> <span class="s1">&#39;migration.log&#39;</span><span class="p">.</span>
+
+<span class="nx">Do</span> <span class="nx">you</span> <span class="nx">want</span> <span class="nx">to</span> <span class="nx">start</span> <span class="nx">the</span> <span class="nx">migration</span> <span class="nx">now</span><span class="o">?</span> <span class="p">[</span><span class="nx">no</span><span class="p">]</span> <span class="o">:</span>
+</pre></div>
+</div>
+<p>Enter &quot;yes&quot;.</p>
+<p>Check <code class="docutils literal"><span class="pre">migration.log</span></code> for messages that contain <em>foo.js has been modified.
+Storing modifications ...</em> to verify changes to class code.</p>
+</div>
+</div>
+<div class="section" id="pretty">
+<span id="pages-tool-generator-generator-default-jobs-pretty"></span><h2>pretty<a class="headerlink" href="#pretty" title="Permalink to this headline">¶</a></h2>
+<p>Pretty-formatting of the source code of the current library.</p>
+</div>
+<div class="section" id="source">
+<span id="pages-tool-generator-generator-default-jobs-source"></span><h2>source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h2>
+<p>Create a source version of the application, using the original file path for
+each class.</p>
+<p>The source version of an application is tailored towards development activities.
+It makes it easy to write code, run the application, test, debug and inspect the
+application code, fix issues, add enhancements, and repeat.</p>
+<p>With the <em>source</em> job all the classes of the application are in their original
+source form, and their files are directly loaded from their original paths on
+the file system. If you inspect your application in a JavaScript debugger like
+Firebug or Chrome Developer Tools, you can identify each file individually, read
+its code and comments, set breakpoints, inspect variables and so forth.</p>
+<p>If you find yourself in a situation where you want to inspect more than your
+current application's class files in the debugger (e.g. because you are
+debugging another library along the way), this job is preferable.</p>
+<p>You have to re-run this job  when you introduce new dependencies, e.g.  by
+instantiating a class you haven't used before.  This changes the set of
+necessary classes for your application, and the generator has to re-create the
+corresponding loader.</p>
+<p>There are two variants of the <em>source</em> job available which you might find
+interesting.  One is called <a class="reference internal" href="#source-all">source-all</a> and will include all available classes
+of all involved libraries, the other is <a class="reference internal" href="#source-hybrid">source-hybrid</a> which improves loading
+speed by concatenating some of the class code. See their respective entries.</p>
+</div>
+<div class="section" id="source-all">
+<span id="pages-tool-generator-generator-default-jobs-source-all"></span><h2>source-all<a class="headerlink" href="#source-all" title="Permalink to this headline">¶</a></h2>
+<p>Create a source version of the application, with all classes.</p>
+<p><em>source-all</em> will include all known classes, be they part of your application,
+the qooxdoo framework, or any other qooxdoo library or contribution you might be
+using. All those classes are included in the build, whether they are currently
+required or not. This allows you develop your code more freely as you don't have
+to re-generate the application when introducing new dependencies to existing
+classes. All classes are already there. You only have to re-run this job when
+you add an entirely new class that you want to use.</p>
+<p>The downside of this job is that due to the number of classes your application
+is larger and loads slower in the browser, so it is a trade-off between
+development speed and loading speed.</p>
+</div>
+<div class="section" id="source-hybrid">
+<span id="pages-tool-generator-generator-default-jobs-source-hybrid"></span><h2>source-hybrid<a class="headerlink" href="#source-hybrid" title="Permalink to this headline">¶</a></h2>
+<p>Create a source version of the application, concatenating some of the class code.</p>
+<p>The <em>source-hybrid</em> job concatenates the contents of the classes that make up
+the application into a few files, only leaving your own application classes
+separate.  Having the other class files (framework, libraries, contribs) chunked
+together you get the loading speed of nearly the build version, while at the
+same time retaining the accessibility of your own application files for
+debugging. This makes this job ideal for fast and focused development of the
+application-specific classes.</p>
+<p>Only the classes that are actually needed for the application are included, so
+you have to re-run this job when you introduce new dependencies.</p>
+<p>To review the three different source jobs, if you are just getting
+started with qooxdoo development, use the <a class="reference internal" href="#source-all">source-all</a> version, which is
+the most convenient if you are not too impatient. If you are concerned
+about loading speed during development, but don't mind hitting the up
+and return keys in your shell window once in a while, go with the default
+<a class="reference internal" href="#source-hybrid">source-hybrid</a> job. If your emphasis on the other hand is on
+inspection, and you want to see exactly which class files get loaded
+into your application and which code they provide, the <a class="reference internal" href="#source">source</a> version
+will be your choice.</p>
+</div>
+<div class="section" id="source-server">
+<span id="pages-tool-generator-generator-default-jobs-source-server"></span><h2>source-server<a class="headerlink" href="#source-server" title="Permalink to this headline">¶</a></h2>
+<p><em>(experimental)</em></p>
+<p>Run a mini web server that serves the source version of an application. The web
+server will export as document root a root path common to all libraries used by
+the source version. This overcomes e.g. restrictions by modern browsers that do
+not allow XHR requests over the <em>file://</em> protocol by default.</p>
+<p>By default the server will randomly pick a free port on the local machine to run
+at. You can assign it a fixed port by setting the <a class="reference internal" href="generator_config_macros.html#pages-tool-generator-generator-config-macros-source-server-port"><span class="std std-ref">SOURCE_SERVER_PORT</span></a> macro, e.g. like <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source-server</span> <span class="pre">-m</span> <span class="pre">SOURCE_SERVER_PORT:44161</span></code>.</p>
+</div>
+<div class="section" id="source-server-reload">
+<span id="pages-tool-generator-generator-default-jobs-source-server-reload"></span><h2>source-server-reload<a class="headerlink" href="#source-server-reload" title="Permalink to this headline">¶</a></h2>
+<p><em>(experimental)</em></p>
+<p>Same as <a class="reference internal" href="#source-server">source-server</a>, but adds an automatic reload feature. The web server
+watches the loader file of the exported source version (usually
+<em>source/script/&lt;application&gt;.js</em>), and triggers an automatic reload of the
+application in the browser if this changes. You usually want to use this job
+together with the <a class="reference internal" href="#watch">watch</a> job (running separately) which automatically
+re-generates the loader when the application classes change. This way, both jobs
+work hand in hand to reload the most up-to-date version of the application in
+the browser whenever the source files change. If the generation fails, e.g. due
+to a syntax error, the loader is not updated and hence the browser not reloaded.</p>
+<p>Like with <em>source-server</em> the server prints at startup the URL to the
+application's index.html. If you want to load the application through the reload
+server it is <em>important that you use exactly this URL in your browser</em> (including
+the trailing &quot;.../index.html&quot;). On requesting this URL the reload server will instrument
+the file with information necessary for the reload behavior.</p>
+<p>The reload feature can also be used when running the main application from the
+file system (with the <em>file://</em> protocol) or over a separate web server like
+Apache. In this case you just have to manually add the URL of the reload client
+script in the app's <code class="docutils literal"><span class="pre">index.html</span></code>, e.g. adding</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://localhost:44161/_active_reload/active_reload.js&quot;</span><span class="o">/&gt;</span>
+</pre></div>
+</div>
+<p>to the header section, assuming that <code class="docutils literal"><span class="pre">44161</span></code> is the port where the source
+server runs on.  <em>/_active_reload/active_reload.js</em> is the URL path to the reload
+client script.  You then load the application over your standard web server.
+Just the reload notification is handled over the source server.</p>
+</div>
+<div class="section" id="source-httpd-config">
+<span id="pages-tool-generator-generator-default-jobs-source-httpd-config"></span><h2>source-httpd-config<a class="headerlink" href="#source-httpd-config" title="Permalink to this headline">¶</a></h2>
+<p><em>(experimental)</em></p>
+<p>This job is similar in intent to the <a class="reference internal" href="#source-server">source-server</a> job. But instead of starting
+a dedicated web server, it will create a small web server configuration to be
+used with an already existing web server on your machine. Various popular web
+servers are supported (Apache, lighttpd, nginx) and it is usually
+straight-forward to include the generated configuration file into the main
+server/virtual host configuration. The file contains hints how to achieve that
+for the given server implementation. You can tweak most of the settings involved
+in the job (server type, server URL, ...), the config key behind it is
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-web-server-config"><span class="std std-ref">web-server-config</span></a>.</p>
+<p>In this way the source version of your application is integrated with an
+existing web server environment which comes in handy if you e.g. want to
+interact with backend services that are already hosted on the same web server.</p>
+<p>The generated configuration is actually template-driven so you can add your own
+templates if your web server is not yet supported.</p>
+</div>
+<div class="section" id="test">
+<span id="pages-tool-generator-generator-default-jobs-test"></span><h2>test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
+<p>Create a test runner app for unit tests of the current library.</p>
+<ul>
+<li><p class="first">Use the following macro to tailor the scope of classes in which unit test
+classes are searched for:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;TEST_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
+</pre></div>
+</div>
+<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><span class="std std-ref">include</span></a> config key.</p>
+</li>
+<li><p class="first">The libraries from the
+<a class="reference internal" href="default_jobs_includers.html#pages-tool-generator-generator-default-jobs-libraries"><span class="std std-ref">libraries</span></a> job will be
+included when building the test application (the application containing your
+unit tests is a separate application which is loaded into the runner
+application).</p>
+</li>
+<li><p class="first">If you want to break out from the reliance on the <em>libraries</em> job altogether,
+or have very specific settings that must be applied to the test application, you
+can provide a custom includer job <em>common-tests</em> which may contain a custom
+<em>library</em> key and other keys. But then you have to make sure it contains the
+Testrunner library as well.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;common-tests&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;extend&quot;</span>    <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;libraries&quot;</span> <span class="p">],</span>
+
+  <span class="s2">&quot;let&quot;</span> <span class="o">:</span>      <span class="p">{</span> <span class="s2">&quot;LOCALES&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;de&quot;</span><span class="p">,</span> <span class="s2">&quot;de_DE&quot;</span><span class="p">,</span> <span class="s2">&quot;fr&quot;</span><span class="p">,</span> <span class="s2">&quot;fr_FR&quot;</span> <span class="p">]</span> <span class="p">},</span>
+
+  <span class="s2">&quot;library&quot;</span> <span class="o">:</span>
+  <span class="p">[</span>
+    <span class="p">{</span> <span class="s2">&quot;manifest&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QOOXDOO_PATH}/framework/Manifest.json&quot;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="s2">&quot;manifest&quot;</span> <span class="o">:</span> <span class="s2">&quot;${TESTRUNNER_ROOT}/Manifest.json&quot;</span> <span class="p">}</span>
+  <span class="p">],</span>
+
+  <span class="s2">&quot;include&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;testrunner.TestLoader&quot;</span><span class="p">,</span> <span class="s2">&quot;${TEST_INCLUDE}&quot;</span><span class="p">,</span> <span class="s2">&quot;${QXTHEME}&quot;</span><span class="p">],</span>
+
+  <span class="s2">&quot;environment&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;qx.theme&quot;</span> <span class="o">:</span> <span class="s2">&quot;${QXTHEME}&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;qx.globalErrorHandling&quot;</span> <span class="o">:</span> <span class="kc">true</span>
+  <span class="p">},</span>
+
+  <span class="s2">&quot;cache&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;compile&quot;</span> <span class="o">:</span> <span class="s2">&quot;${CACHE}&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This allows you to tailor most of the parameters that influence the creation
+of the test application.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="test-source">
+<span id="pages-tool-generator-generator-default-jobs-test-source"></span><h2>test-source<a class="headerlink" href="#test-source" title="Permalink to this headline">¶</a></h2>
+<p>Create a test runner app for unit tests (source version) of the current library.</p>
+<p>The same customization interface applies as for the default
+<a class="reference internal" href="#pages-tool-generator-generator-default-jobs-test"><span class="std std-ref">test</span></a> job.</p>
+</div>
+<div class="section" id="translation">
+<span id="pages-tool-generator-generator-default-jobs-translation"></span><h2>translation<a class="headerlink" href="#translation" title="Permalink to this headline">¶</a></h2>
+<p>Create .po files for the current library.</p>
+</div>
+<div class="section" id="validate-config">
+<span id="pages-tool-generator-generator-default-jobs-validate-config"></span><h2>validate-config<a class="headerlink" href="#validate-config" title="Permalink to this headline">¶</a></h2>
+<p>Validates the Config (<em>config.json</em>) - and recursively all included Configs -
+against a schema. If a jobname argument is given only this job map (within the
+root Config) is checked.</p>
+<p>This job helps especially with nested config keys, where a misconfiguration
+might be silently disregarded by the Generator which eventually leads to
+unexpected behaviour.</p>
+</div>
+<div class="section" id="validate-manifest">
+<span id="pages-tool-generator-default-jobs-actions-validate-manifest"></span><h2>validate-manifest<a class="headerlink" href="#validate-manifest" title="Permalink to this headline">¶</a></h2>
+<p>Validates the <em>Manifest.json</em> against a schema.</p>
+<p>Some entries in <a class="reference internal" href="../sdk/manifest.html"><span class="doc">Manifest</span></a> files are
+informational and therefore optional, others are required to successfully use
+the current library with the Generator. The job is especially helpful for
+developers of <a class="reference internal" href="../../development/contrib.html"><span class="doc">contributions</span></a>, as those
+require some extra keys.</p>
+</div>
+<div class="section" id="watch">
+<span id="pages-tool-generator-default-jobs-actions-watch"></span><h2>watch<a class="headerlink" href="#watch" title="Permalink to this headline">¶</a></h2>
+<p>The <em>watch</em> job watches the <em>source/class</em> path of your application for changed
+JavaScript files, and automatically runs the default Generator job (usually
+<em>&quot;source-hybrid&quot;</em>) in case of a change. The config key behind it is
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-watch-files"><span class="std std-ref">watch-files</span></a>.</p>
+<p>When you run the job the process will starting telling you the path it is
+watching, and will continue until you terminate it with Ctrl-C. On *ix like
+systems you can put the job in the shell's background with <code class="docutils literal"><span class="pre">&amp;</span></code>, in order to
+get your shell prompt back. The job will continue running, and only produce some
+console output when its associate command is being run. In order to terminate it
+you have to bring it to the foreground again and then press Ctrl-C (Or you can
+use a process manager to kill it).</p>
+<p>The implementation uses a simple polling mechanism to detect file changes, the
+check interval is configurable. There are technological alternatives that hook
+into OS kernel events, but these approaches come with a certain overhead and are
+more difficult to maintain cross-platform.</p>
+</div>
+<div class="section" id="watch-scss">
+<span id="pages-tool-generator-default-jobs-actions-watch-scss"></span><h2>watch-scss<a class="headerlink" href="#watch-scss" title="Permalink to this headline">¶</a></h2>
+<p>This job is available in the qx.Mobile skeleton. The <em>watch-scss</em> job watches
+SCSS files, and compiles them to CSS once they change (See the article about
+<a class="reference internal" href="../../mobile/theming.html"><span class="doc">mobile theming</span></a>). The *.scss files usually reside
+in your application's <code class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/scss</span></code> folder, and
+will be compiled into <code class="docutils literal"><span class="pre">source/resource&lt;name_space&gt;/css</span></code>.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="../../layout/grow.html"
+             title="previous chapter">« Grow</a>
+          <span class="separator">|</span>
+          <a class="next" href="default_jobs_includers.html"
+             title="next chapter">Default Includer Jobs »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Default Action Jobs</a><ul>
+<li><a class="reference internal" href="#api">api</a></li>
+<li><a class="reference internal" href="#api-data">api-data</a></li>
+<li><a class="reference internal" href="#build">build</a></li>
+<li><a class="reference internal" href="#build-min">build-min</a></li>
+<li><a class="reference internal" href="#build-module-all">build-module-all</a></li>
+<li><a class="reference internal" href="#build-module-all-min">build-module-all-min</a></li>
+<li><a class="reference internal" href="#clean">clean</a></li>
+<li><a class="reference internal" href="#compile-scss">compile-scss</a></li>
+<li><a class="reference internal" href="#dependencies">dependencies</a></li>
+<li><a class="reference internal" href="#distclean">distclean</a></li>
+<li><a class="reference internal" href="#fix">fix</a></li>
+<li><a class="reference internal" href="#info">info</a></li>
+<li><a class="reference internal" href="#lint">lint</a></li>
+<li><a class="reference internal" href="#migration">migration</a><ul>
+<li><a class="reference internal" href="#running-the-migration-job">Running the migration job</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pretty">pretty</a></li>
+<li><a class="reference internal" href="#source">source</a></li>
+<li><a class="reference internal" href="#source-all">source-all</a></li>
+<li><a class="reference internal" href="#source-hybrid">source-hybrid</a></li>
+<li><a class="reference internal" href="#source-server">source-server</a></li>
+<li><a class="reference internal" href="#source-server-reload">source-server-reload</a></li>
+<li><a class="reference internal" href="#source-httpd-config">source-httpd-config</a></li>
+<li><a class="reference internal" href="#test">test</a></li>
+<li><a class="reference internal" href="#test-source">test-source</a></li>
+<li><a class="reference internal" href="#translation">translation</a></li>
+<li><a class="reference internal" href="#validate-config">validate-config</a></li>
+<li><a class="reference internal" href="#validate-manifest">validate-manifest</a></li>
+<li><a class="reference internal" href="#watch">watch</a></li>
+<li><a class="reference internal" href="#watch-scss">watch-scss</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="default_jobs_includers.html"
+                        title="next chapter">Default Includer Jobs</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="../../layout/grow.html"
+                        title="previous chapter">Grow</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/default_jobs_actions.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

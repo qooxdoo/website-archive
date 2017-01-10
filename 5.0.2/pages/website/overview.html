@@ -1,0 +1,351 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>qx.Website Overview &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Website" href="../website.html" />
+    <link rel="next" title="Module Overview" href="modules.html" />
+    <link rel="prev" title="qx.Website" href="../website.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../website.html" accesskey="U">qx.Website</a>
+     &#187;
+    <a href="">qx.Website Overview</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="qx-website-overview">
+<span id="pages-webite-overview-overview"></span><h1>qx.Website Overview<a class="headerlink" href="#qx-website-overview" title="Permalink to this headline">¶</a></h1>
+<p>This page is an overview of qx.Website's capabilities. It collects the existing
+documentation and tries to show the big picture.</p>
+<div class="section" id="basic-concept">
+<span id="pages-webite-overview-basic"></span><h2>Basic Concept<a class="headerlink" href="#basic-concept" title="Permalink to this headline">¶</a></h2>
+<p>The basic concept is simple. qx.Website offers one global object called <code class="docutils literal"><span class="pre">q</span></code>
+(short for query). This global object's main task is to query the DOM using
+selectors and offer convenience methods on the returned collection of elements.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">setStyle</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>As you can see in the example above, qx.Website's idea of API design is to have
+an explicit API with a clear scope and readable names. In most cases, methods
+come in pairs: a getter and a setter. Another API concept is chaining:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">setStyle</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Unless noted otherwise, methods return the collection for chaining, such as the
+setStyle method in the example. It returns the collection created with
+<code class="docutils literal"><span class="pre">q(&quot;#test&quot;)</span></code> on which the append method is called.</p>
+<p><code class="docutils literal"><span class="pre">q</span></code> also offers static utility functions. These functions are usually attached
+to q in their own sub object. Let's take a look at a sample:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">type</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">123</span><span class="p">);</span> <span class="c1">// returns &quot;Number&quot;</span>
+</pre></div>
+</div>
+<p>The sub object (which could also be called a namespace) in the sample is
+<code class="docutils literal"><span class="pre">type</span></code> and contains a function <code class="docutils literal"><span class="pre">get</span></code> which will determine the type of a
+given argument.</p>
+<p>The code base of <code class="docutils literal"><span class="pre">q</span></code> is organized in modules, as you can see in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer#qx.module">API
+viewer for qx.Desktop</a>. Using the
+generator, you can build your own library containing only the modules you need.
+Similarly, it is possible to include your own modules into a single, optimized
+file. Take a look at the <a class="reference internal" href="../development/skeletons.html#pages-development-skeletons-website"><span class="std std-ref">Documentation of the qx.Website skeleton</span></a> to learn more.</p>
+</div>
+<div class="section" id="api-documentation">
+<span id="pages-webite-overview-api"></span><h2>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h2>
+<p>The best documentation is found in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/website-api">API viewer</a> for qx.Website. It offers a
+detailed documentation of all available methods, sorted into modules.</p>
+</div>
+<div class="section" id="css-selector-support">
+<h2>CSS Selector Support<a class="headerlink" href="#css-selector-support" title="Permalink to this headline">¶</a></h2>
+<p>qx.Website uses the same CSS selector engine as jQuery, which is called <a class="reference external" href="http://sizzlejs.org">Sizzle</a>. Please check the <a class="reference external" href="https://github.com/jquery/sizzle/wiki/Sizzle-Home">Sizzle Documentation</a> for more details.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#id&quot;</span><span class="p">);</span> <span class="c1">// query for id</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span> <span class="c1">// query for all div&#39;s</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugins">
+<h2>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h2>
+<p>qx.Website supports a plugin mechanism. All modules are written as qx.Website
+plugins. For further details about how to write plugins, take a look at the
+<a class="reference internal" href="plugins.html"><span class="doc">plugins documentation</span></a>.</p>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<p>qx.Website is divided into several modules. Besides using a single all-in-one
+qx.Website script file (e.g. <code class="docutils literal"><span class="pre">q-5.0.2.min.js</span></code>), which contains <strong>every
+module</strong>, you can also use the modules separately, i.e. only those modules you
+need (qx.Website splitted in n files).  Note that you always need the core
+module when you decide to use the modules separately. So for example you could
+use <code class="docutils literal"><span class="pre">q-core-5.0.2.min.js</span></code>, <code class="docutils literal"><span class="pre">q-animation-5.0.2.min.js</span></code> and
+<code class="docutils literal"><span class="pre">q-cookie-5.0.2.min.js</span></code> together.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="../website.html"
+             title="previous chapter">« qx.Website</a>
+          <span class="separator">|</span>
+          <a class="next" href="modules.html"
+             title="next chapter">Module Overview »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">qx.Website Overview</a><ul>
+<li><a class="reference internal" href="#basic-concept">Basic Concept</a></li>
+<li><a class="reference internal" href="#api-documentation">API Documentation</a></li>
+<li><a class="reference internal" href="#css-selector-support">CSS Selector Support</a></li>
+<li><a class="reference internal" href="#plugins">Plugins</a></li>
+<li><a class="reference internal" href="#modules">Modules</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="next chapter">Module Overview</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="../website.html"
+                        title="previous chapter">qx.Website</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/website/overview.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

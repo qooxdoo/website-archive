@@ -1,0 +1,387 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Generator Usage &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="Tooling" href="../../tool.html" />
+    <link rel="next" title="Generator Script Optimizations" href="generator_optimizations.html" />
+    <link rel="prev" title="Generator Features" href="features.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Generator Usage</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="generator-usage">
+<span id="pages-tool-generator-generator-usage-generator-usage"></span><h1>Generator Usage<a class="headerlink" href="#generator-usage" title="Permalink to this headline">¶</a></h1>
+<p>The generator is a command-line utility which serves as the single entry front-end for all qooxdoo tool chain functions (nearly; there are a few functions that are available through other programs, but these really serve special purposes).</p>
+<p>The generator is started to execute various jobs. Those jobs represent the feature set of the tool chain. This page is about how to invoke the generator.</p>
+<div class="section" id="files-and-folder-structure">
+<span id="pages-tool-generator-generator-usage-files-and-folder-structure"></span><h2>Files and Folder Structure<a class="headerlink" href="#files-and-folder-structure" title="Permalink to this headline">¶</a></h2>
+<p>The qooxdoo SDK has a dedicated <code class="docutils literal"><span class="pre">tool</span></code> folder that contains all elements that make up the tool chain. The general structure is like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">tool</span>
+   <span class="o">|-</span> <span class="nx">app</span>   <span class="o">--</span> <span class="nx">helper</span> <span class="nx">apps</span>
+   <span class="o">|-</span> <span class="nx">bin</span>   <span class="o">--</span> <span class="nx">stand</span><span class="o">-</span><span class="nx">alone</span> <span class="nx">programs</span> <span class="nx">and</span> <span class="nx">scripts</span>
+   <span class="o">|-</span> <span class="nx">data</span>  <span class="o">--</span> <span class="nx">various</span> <span class="nx">data</span> <span class="nx">files</span>
+   <span class="o">|-</span> <span class="nx">pylib</span> <span class="o">--</span> <span class="nx">Python</span> <span class="nx">modules</span>
+</pre></div>
+</div>
+<p>The generator is actually the program <code class="docutils literal"><span class="pre">tool/bin/generator.py</span></code>.</p>
+</div>
+<div class="section" id="generate-py">
+<span id="pages-tool-generator-generator-usage-generate-py"></span><h2>generate.py<a class="headerlink" href="#generate-py" title="Permalink to this headline">¶</a></h2>
+<p>To make it easier to invoke the generator, each library in the SDK (framework, applications, components) contains a <code class="docutils literal"><span class="pre">generate.py</span></code> script that is really just a proxy for the generator itself. It is also part of each project created by the <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-create-your-application"><span class="std std-ref">create-application.py</span></a> wizard. The aim is to hide the actual path to the generator program. You can omit using it if you add <em>&lt;QOOXDOO_PATH&gt;/tool/bin</em> to your PATH environment variable.</p>
+</div>
+<div class="section" id="command-line-options">
+<span id="pages-tool-generator-generator-usage-command-line-options"></span><h2>Command-line Options<a class="headerlink" href="#command-line-options" title="Permalink to this headline">¶</a></h2>
+<p>Since the generator is nearly completely driven by its configuration files, there are rather few command-line options:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">shell</span><span class="o">&gt;</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">h</span>
+<span class="nx">Usage</span><span class="o">:</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">py</span> <span class="p">[</span><span class="nx">options</span><span class="p">]</span> <span class="nx">job</span><span class="p">,...</span>
+
+<span class="nx">Arguments</span><span class="o">:</span>
+  <span class="nx">job</span><span class="p">,...</span>               <span class="nx">a</span> <span class="nx">list</span> <span class="k">of</span> <span class="nx">jobs</span> <span class="p">(</span><span class="nx">like</span> <span class="s1">&#39;source&#39;</span> <span class="nx">or</span> <span class="s1">&#39;copy-files&#39;</span><span class="p">,</span>
+                        <span class="nx">without</span> <span class="nx">the</span> <span class="nx">quotes</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">run</span>
+  <span class="nx">x</span>                     <span class="nx">use</span> <span class="s1">&#39;x&#39;</span> <span class="p">(</span><span class="nx">or</span> <span class="nx">some</span> <span class="kc">undefined</span> <span class="nx">job</span> <span class="nx">name</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">get</span> <span class="nx">a</span>
+                        <span class="nx">list</span> <span class="k">of</span> <span class="nx">all</span> <span class="nx">available</span> <span class="nx">jobs</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">configuration</span> <span class="nx">file</span>
+
+<span class="nx">Options</span><span class="o">:</span>
+  <span class="o">-</span><span class="nx">h</span><span class="p">,</span> <span class="o">--</span><span class="nx">help</span>            <span class="nx">show</span> <span class="k">this</span> <span class="nx">help</span> <span class="nx">message</span> <span class="nx">and</span> <span class="nx">exit</span>
+  <span class="o">-</span><span class="nx">c</span> <span class="nx">CFGFILE</span><span class="p">,</span> <span class="o">--</span><span class="nx">config</span><span class="o">=</span><span class="nx">CFGFILE</span>
+                        <span class="nx">path</span> <span class="nx">to</span> <span class="nx">configuration</span> <span class="nx">file</span> <span class="nx">containing</span> <span class="nx">job</span> <span class="nx">definitions</span>
+                        <span class="p">(</span><span class="k">default</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">json</span><span class="p">)</span>
+  <span class="o">-</span><span class="nx">q</span><span class="p">,</span> <span class="o">--</span><span class="nx">quiet</span>           <span class="nx">quiet</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="p">(</span><span class="nx">extra</span> <span class="nx">quiet</span><span class="p">)</span>
+  <span class="o">-</span><span class="nx">v</span><span class="p">,</span> <span class="o">--</span><span class="nx">verbose</span>         <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="k">of</span> <span class="nx">job</span> <span class="nx">processing</span>
+  <span class="o">-</span><span class="nx">w</span><span class="p">,</span> <span class="o">--</span><span class="nx">config</span><span class="o">-</span><span class="nx">verbose</span>  <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="k">of</span> <span class="nx">configuration</span> <span class="nx">processing</span>
+  <span class="o">-</span><span class="nx">l</span> <span class="nx">FILENAME</span><span class="p">,</span> <span class="o">--</span><span class="nx">logfile</span><span class="o">=</span><span class="nx">FILENAME</span>
+                        <span class="nx">log</span> <span class="nx">file</span>
+  <span class="o">-</span><span class="nx">s</span><span class="p">,</span> <span class="o">--</span><span class="nx">stacktrace</span>      <span class="nx">enable</span> <span class="nx">stack</span> <span class="nx">traces</span> <span class="nx">on</span> <span class="nx">fatal</span> <span class="nx">exceptions</span>
+  <span class="o">-</span><span class="nx">m</span> <span class="nx">KEY</span><span class="o">:</span><span class="nx">VAL</span><span class="p">,</span> <span class="o">--</span><span class="nx">macro</span><span class="o">=</span><span class="nx">KEY</span><span class="o">:</span><span class="nx">VAL</span>
+                        <span class="nx">define</span><span class="o">/</span><span class="nx">overwrite</span> <span class="nx">a</span> <span class="nx">global</span> <span class="s1">&#39;let&#39;</span> <span class="nx">macro</span> <span class="nx">KEY</span> <span class="kd">with</span> <span class="nx">value</span>
+                        <span class="nx">VAL</span>
+  <span class="o">-</span><span class="nx">I</span><span class="p">,</span> <span class="o">--</span><span class="nx">no</span><span class="o">-</span><span class="nx">progress</span><span class="o">-</span><span class="nx">indicator</span>
+                        <span class="nx">suppress</span> <span class="nx">animated</span> <span class="nx">progress</span> <span class="nx">indication</span>
+</pre></div>
+</div>
+<p>The most important options are the path of the config file to use (<em>-c</em> option), and the list of jobs to execute. The <em>-m</em> option allows Json-type values, scalars like strings and numbers, but also maps <em>{...}</em> and lists <em>[...]</em> <a class="footnote-reference" href="#m-option" id="id1">[1]</a>.</p>
+</div>
+<div class="section" id="configuration-files">
+<span id="pages-tool-generator-generator-usage-configuration-files"></span><h2>Configuration Files<a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h2>
+<p>The single most important way to control the actions of the generator is through specialized configuration files. These files have a <a class="reference external" href="http://www.json.org">JSON</a> syntax and contain the definitions for the various jobs the generator is supposed to execute. There is a <a class="reference internal" href="generator_config.html"><span class="doc">whole section</span></a> in this manual dedicated to these config files.</p>
+</div>
+<div class="section" id="usage-patterns">
+<span id="pages-tool-generator-generator-usage-usage-patterns"></span><h2>Usage Patterns<a class="headerlink" href="#usage-patterns" title="Permalink to this headline">¶</a></h2>
+<p>As a few quick hints on how you would invoke the generator, here are the most common use cases. All these examples name a single job to run, and rely on the availability of the default config file <code class="docutils literal"><span class="pre">config.json</span></code> in the current directory:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></code>  -- when you just started to create your application and every time you have added new classes to it.</li>
+<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></code>  -- when you have completed your application and/or want to create an optimized, deployable version of it.</li>
+<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></code>  -- when your application is getting complex and/or you want to have a local version of the standard <a class="reference external" href="http://api.qooxdoo.org">Apiviewer</a> application that includes the documentation of all of your application classes.</li>
+<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">test</span></code>  -- when you have created unit test classes for your application and want to run them in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/testrunner">Testrunner</a> frame application.</li>
+</ul>
+<p>The <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-helloworld"><span class="std std-ref">Helloworld</span></a> tutorial will give the complete steps how to start a project and get going.</p>
+</div>
+<div class="section" id="default-jobs">
+<span id="pages-tool-generator-generator-usage-default-jobs"></span><h2>Default Jobs<a class="headerlink" href="#default-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Arguments like <code class="docutils literal"><span class="pre">source</span></code> or <code class="docutils literal"><span class="pre">api</span></code>, as shown in the previous section, are so called <em>jobs</em> in qooxdoo lingo. If you are working on a skeleton-based application you automatically get a whole list of such pre-defined jobs to work with. For a quick overview, invoke the generator script with an undefined job argument, like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">X</span>
+</pre></div>
+</div>
+<p>This gives you a list of all jobs available through your current config file, many of them with a few words of explanation about what they do:</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>- api          -- create api doc for the current library
+- build        -- create build version of current application
+- clean        -- remove local cache and generated .js files (source/build)
+- distclean    -- remove the cache and all generated artefacts of this library...
+- fix          -- normalize whitespace in .js files of the current library ...
+- lint         -- check the source code of the .js files of the current library
+- migration    -- migrate the .js files of the current library to the current ...
+- pretty       -- pretty-formatting of the source code of the current library
+- profiling    -- includer job, to activate profiling
+- source       -- create source version of current application
+- source-all   -- create source version of current application, with all classes
+- test         -- create a test runner app for unit tests of the current library
+- test-source          -- create a test runner app for unit tests (source...
+- translation          -- create .po files for current library
+</pre></div>
+</div>
+<p>For an exhaustive reference of these default jobs, see the <a class="reference internal" href="default_jobs_actions.html"><span class="doc">default jobs page</span></a>.</p>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="m-option" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Caveat: The latter two might push you to the brink of your shell's quoting capabilities :-) .</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="features.html"
+             title="previous chapter">« Generator Features</a>
+          <span class="separator">|</span>
+          <a class="next" href="generator_optimizations.html"
+             title="next chapter">Generator Script Optimizations »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Generator Usage</a><ul>
+<li><a class="reference internal" href="#files-and-folder-structure">Files and Folder Structure</a></li>
+<li><a class="reference internal" href="#generate-py">generate.py</a></li>
+<li><a class="reference internal" href="#command-line-options">Command-line Options</a></li>
+<li><a class="reference internal" href="#configuration-files">Configuration Files</a></li>
+<li><a class="reference internal" href="#usage-patterns">Usage Patterns</a></li>
+<li><a class="reference internal" href="#default-jobs">Default Jobs</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="generator_optimizations.html"
+                        title="next chapter">Generator Script Optimizations</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="features.html"
+                        title="previous chapter">Generator Features</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/generator_usage.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

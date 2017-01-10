@@ -1,0 +1,452 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Custom Widgets &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Desktop" href="../desktop.html" />
+    <link rel="next" title="Form Handling" href="ui_form_handling.html" />
+    <link rel="prev" title="Inline Widgets" href="ui_inline.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../desktop.html" accesskey="U">qx.Desktop</a>
+     &#187;
+    <a href="">Custom Widgets</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <blockquote>
+<div></div></blockquote>
+<div class="section" id="custom-widgets">
+<span id="pages-desktop-ui-develop-custom-widgets"></span><h1>Custom Widgets<a class="headerlink" href="#custom-widgets" title="Permalink to this headline">¶</a></h1>
+<p>Most widgets are built using a combination of pre-existing, more basic widgets. This is also true for custom widgets made for a specific application or as an extension to the existing feature set of qooxdoo.</p>
+<div class="section" id="inheritance-structure">
+<span id="pages-desktop-ui-develop-inheritance-structure"></span><h2>Inheritance Structure<a class="headerlink" href="#inheritance-structure" title="Permalink to this headline">¶</a></h2>
+<p>A more complex widget usually extends the base class <code class="docutils literal"><span class="pre">qx.ui.core.Widget</span></code>. A widget can manage children using a set of protected methods. Extending from a richer widget often has the side effect that the final class contains APIs which do not make sense in the derived class anymore. Also be sure not to extend from <code class="docutils literal"><span class="pre">Composite</span></code> or a widget based on this class. This is mainly because it has public methods for the normally internal layout and children handling and would propagate all the internal information to the outside when children are added or the layout is modified by the derived class.</p>
+<p>A good example: Most rich text editors implemented in JavaScript make use of an iframe. One could imagine using the <code class="docutils literal"><span class="pre">Iframe</span></code> class as a base to build such a component. The problem is that most of the methods and properties like <code class="docutils literal"><span class="pre">setSource</span></code> or <code class="docutils literal"><span class="pre">reload</span></code> do not make a lot of sense on an editor component. It's better to embed the needed widgets into the outer widget to hide their functionality in the custom class.</p>
+<p>The qooxdoo <code class="docutils literal"><span class="pre">Spinner</span></code> for example extends the <code class="docutils literal"><span class="pre">Widget</span></code> as well and adds a <code class="docutils literal"><span class="pre">TextField</span></code> and two <code class="docutils literal"><span class="pre">RepeatButton</span></code> instances. The layout is done by a Grid layout. All the children and the chosen layout are hidden from the outside. There are no public accessors for the layout or the children. This makes sense as no one is interested in the children of a <code class="docutils literal"><span class="pre">Spinner</span></code> widget. These methods would also mean a lot of bloat added to the API of such an widget.</p>
+</div>
+<div class="section" id="setup-content">
+<span id="pages-desktop-ui-develop-setup-content"></span><h2>Setup Content<a class="headerlink" href="#setup-content" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="for-a-widget">
+<h3>For a Widget<a class="headerlink" href="#for-a-widget" title="Permalink to this headline">¶</a></h3>
+<p>The following methods may be used to manage children:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">_getChildren</span></code></li>
+<li><code class="docutils literal"><span class="pre">_add</span></code>, <code class="docutils literal"><span class="pre">_addAt</span></code>, <code class="docutils literal"><span class="pre">_addBefore</span></code>, <code class="docutils literal"><span class="pre">_addAfter</span></code></li>
+<li><code class="docutils literal"><span class="pre">_remove</span></code>, <code class="docutils literal"><span class="pre">_removeAt</span></code>, <code class="docutils literal"><span class="pre">_removeAll</span></code></li>
+</ul>
+<p>It is possible to use any layout available. To set up the layout just use <code class="docutils literal"><span class="pre">_setLayout</span></code>. To access it afterwards use <code class="docutils literal"><span class="pre">_getLayout</span></code>.</p>
+<p>For details refer to the API documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.Widget">qx.ui.core.Widget</a>.</p>
+</div>
+<div class="section" id="for-a-container">
+<h3>For a Container<a class="headerlink" href="#for-a-container" title="Permalink to this headline">¶</a></h3>
+<p>If the custom widget is a container widget, the author has to decide:</p>
+<ul class="simple">
+<li>Whether the children will be added directly to the widget or into some nested sub widget.</li>
+<li>Whether the user should be able to set a layout manager</li>
+</ul>
+<p>This results in four possible combinations:</p>
+<ol class="arabic simple">
+<li><strong>The children are added directly to the container and setting a layout manager is possible:</strong> Inherit from qx.ui.container.Composite. This class has the whole children and layout handling API exposed as public API.</li>
+<li><strong>The children are added directly to the container but setting a layout manager is not possible:</strong> Inherit from qx.ui.core.Widget and add the children handling API by including the mixin qx.ui.core.MChildrenHandling. (Example: HBox widget with predefined horizontal box layout)</li>
+<li><strong>The children are added to a nested sub widget and setting a layout manager is possible:</strong> Inherit from qx.ui.core.Widget and add the children and layout handling API by including the mixins qx.ui.core.MRemoteChildrenHandling and qx.ui.core.MRemoteLayoutHandling. The container must implement the method getChildrenContainer, which has to return the widget, to which the child widgets should be added. (Example: Window, Groupbox)</li>
+<li><strong>The children are added to a nested sub widget and setting a layout manager is not possible:</strong> The same as the previous case but don't include qx.ui.core.MRemoteLayoutHandling. (Example: List, SelectBox)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="child-controls">
+<span id="pages-desktop-ui-develop-child-controls"></span><h2>Child Controls<a class="headerlink" href="#child-controls" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo supports a mechanism called child controls. A child control is a widget as part of another widget. Child controls were introduced to have a common way of accessing these controls and to make it easy to refine them when a class should be extended. Each child control is accessible using an identifier which is basically a string. By convention these strings are all lower-case and use dashes to structure complex identifiers. Typical identifiers are <code class="docutils literal"><span class="pre">button</span></code>, <code class="docutils literal"><span class="pre">icon</span></code> or <code class="docutils literal"><span class="pre">arrow-up</span></code>. Never use slashes (<code class="docutils literal"><span class="pre">/</span></code>) as this might conflict with the appearance system.</p>
+<p>Instances for the supported child controls are created dynamically as needed. A widget developer just needs to override the method <code class="docutils literal"><span class="pre">_createChildControlImpl</span></code>, let the method work on the customized controls, and just call the super class method when the incoming ID is not supported. For example, such a method might look like:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">_createChildControlImpl</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">control</span><span class="p">;</span>
+
+  <span class="k">switch</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">case</span> <span class="s2">&quot;icon&quot;</span><span class="o">:</span>
+      <span class="nx">control</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Image</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">_add</span><span class="p">(</span><span class="nx">control</span><span class="p">);</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">control</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">base</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="nx">id</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Each child control should directly add itself to the parent. As mentioned before child controls are automatically created as needed. This basically means that if nobody asks for a specific child control it is never created or added. This is an important feature for dynamic widgets as it reduces the initial memory and CPU usage. A child control is always created when some code asks for it. This can happen through different methods:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">getChildControl(id,</span> <span class="pre">notcreate)</span></code>: Returns the child control with the given ID. May return <code class="docutils literal"><span class="pre">null</span></code> if the second argument is <code class="docutils literal"><span class="pre">true</span></code>. This is basically used to check if the child control has already been created and then apply something to it. In some more complex scenarios this makes sense, but it can be ignored for the moment.</li>
+<li><code class="docutils literal"><span class="pre">_showChildControl(id)</span></code>: Executes <code class="docutils literal"><span class="pre">show()</span></code> on the child control. This method also creates the control if that hasn't happened yet. It also returns the control so other properties can be applied to it.</li>
+<li><code class="docutils literal"><span class="pre">_excludeChildControl(id)</span></code>: Excludes the widget using <code class="docutils literal"><span class="pre">exclude()</span></code>. When the control is not yet created the function does nothing. The method has no return value.</li>
+<li><code class="docutils literal"><span class="pre">_isChildControlVisible(id)</span></code>: Returns <code class="docutils literal"><span class="pre">true</span></code> if the child control with the given ID is created and visible.</li>
+<li><code class="docutils literal"><span class="pre">hasChildControl(id)</span></code>: Returns <code class="docutils literal"><span class="pre">true</span></code> if the child control with the given ID has been created.</li>
+</ul>
+</div>
+<div class="section" id="styling">
+<span id="pages-desktop-ui-develop-styling"></span><h2>Styling<a class="headerlink" href="#styling" title="Permalink to this headline">¶</a></h2>
+<p>Child controls are automatically supported by the appearance system. For every child control a selector is generated which starts with the first widget which is not a child control itself. Typical selectors look like:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">spinner/up-button</span></code></li>
+<li><code class="docutils literal"><span class="pre">groupbox/legend</span></code></li>
+<li><code class="docutils literal"><span class="pre">tree-item/icon</span></code></li>
+</ul>
+<p>As a container for child controls may be a child control for another container as well, even more complex selectors are possible:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">list/scrollbar-x/slider</span></code></li>
+<li><code class="docutils literal"><span class="pre">splitbutton/button/icon</span></code></li>
+</ul>
+<p>This means that even the deepest child control can be easily accessed by theme authors. Widget authors should define the styling of a widget in the appearance theme and not in the widget itself. The widget and the <code class="docutils literal"><span class="pre">_createChildControlImpl</span></code> method should only apply functional properties like <code class="docutils literal"><span class="pre">zIndex</span></code> or <code class="docutils literal"><span class="pre">tabIndex</span></code>, but no decorations, colors or fonts for example.</p>
+<p>As mentioned, a key always starts with the appearance of the first widget which is not itself a child control. Appearance values of the inner widgets are ignored as long as they are used as a child control. Instead, the ID of the child control is used. The <code class="docutils literal"><span class="pre">/</span></code> is used to separate the child controls. All widgets added through user code start with their own appearance. For example, the items of the <code class="docutils literal"><span class="pre">List</span></code> widget have the appearance <code class="docutils literal"><span class="pre">list-item</span></code>. Their appearance key is also <code class="docutils literal"><span class="pre">list-item</span></code> and not <code class="docutils literal"><span class="pre">list/item</span></code>.</p>
+<p>For details about styling please refer to <a class="reference internal" href="ui_theming.html"><span class="doc">the theming article</span></a>.</p>
+</div>
+<div class="section" id="html-elements">
+<span id="pages-desktop-ui-develop-html-elements"></span><h2>HTML Elements<a class="headerlink" href="#html-elements" title="Permalink to this headline">¶</a></h2>
+<p>A normal qooxdoo widget consists of one HTML Element (<a class="reference external" href="http://api.qooxdoo.org/#qx.html.Element">API</a>), the content element.</p>
+<p>This elements is an instances of <code class="docutils literal"><span class="pre">qx.html.Element</span></code> so it come with a cross-browser fixed API to apply styles and attributes to the DOM node. All of these things can be done without the DOM element needing to be created or inserted. For details on <code class="docutils literal"><span class="pre">qx.html.Element</span></code> please have a look at <a class="reference internal" href="html_element_handling.html"><span class="doc">the technical documentation</span></a>.</p>
+<p>The element is accessible through the functions <code class="docutils literal"><span class="pre">getContentElement()</span></code> and is stored privately in each widget instance.</p>
+</div>
+<div class="section" id="custom-elements">
+<span id="pages-desktop-ui-develop-custom-elements"></span><h2>Custom Elements<a class="headerlink" href="#custom-elements" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo normally generates a bunch of styled <code class="docutils literal"><span class="pre">div</span></code> elements. Some widgets like iframes or images need other elements, though. To use a different DOM element, the method <code class="docutils literal"><span class="pre">_createContentElement</span></code> needs to be overwritten. The overwritten method should create an instance of <code class="docutils literal"><span class="pre">qx.html.Element</span></code> (or a derived class), configure it with some static attributes or styles, and finally return it. For most natively supported types there exists a class which can be used already. In special cases the widget author also needs to write a special low-level class which is derived from <code class="docutils literal"><span class="pre">qx.html.Element</span></code>.</p>
+</div>
+<div class="section" id="working-with-events">
+<span id="pages-desktop-ui-develop-working-with-events"></span><h2>Working with Events<a class="headerlink" href="#working-with-events" title="Permalink to this headline">¶</a></h2>
+<p>Events can be added to the HTML element as well as to the child controls. The names of the methods assigned should follow the following names for convention.</p>
+<ul class="simple">
+<li>For the HTML elements use: <code class="docutils literal"><span class="pre">_onContentXXX</span></code></li>
+<li>For the child controls use: <code class="docutils literal"><span class="pre">_onIconXXX</span></code> or <code class="docutils literal"><span class="pre">_onFieldXXX</span></code> etc.</li>
+</ul>
+<p>Where <code class="docutils literal"><span class="pre">XXX</span></code> stands for the name of the event or of the change that happens. This will result in names like <code class="docutils literal"><span class="pre">_onIframeLoad</span></code> or <code class="docutils literal"><span class="pre">_onContentInput</span></code>.</p>
+</div>
+<div class="section" id="anonymous-widgets">
+<span id="pages-desktop-ui-develop-anonymous-widgets"></span><h2>Anonymous Widgets<a class="headerlink" href="#anonymous-widgets" title="Permalink to this headline">¶</a></h2>
+<p>Anonymous widgets are ignored in the event hierarchy. This is useful for combined widgets where the internal structure does not have a custom appearance with a different styling from the enclosing element. This is especially true for widgets like checkboxes or buttons where the text or icon are handled synchronously for state changes to the outer widget.</p>
+<p>A good example is the <code class="docutils literal"><span class="pre">SelectBox</span></code> widget where the <code class="docutils literal"><span class="pre">pointerover</span></code> event should affect the entire widget at once and not the different child controls of which it consists. So setting the child controls (in this case an <code class="docutils literal"><span class="pre">atom</span></code> and an <code class="docutils literal"><span class="pre">image</span></code> widget) to <code class="docutils literal"><span class="pre">anonymous</span></code> keeps these child control widgets from receiving any events and the event handling is done completely by the parent widget (the <code class="docutils literal"><span class="pre">SelectBox</span></code> itself).</p>
+</div>
+<div class="section" id="defining-the-api">
+<h2>Defining the API<a class="headerlink" href="#defining-the-api" title="Permalink to this headline">¶</a></h2>
+<p>The number of constructor parameters should be kept short. Long parameter lists especially with optional parameters can result in code, which is very hard to read. As an example lets take this hypothetical LinkAtom widget:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;custom.LinkAtom&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Atom</span><span class="p">,</span>
+
+  <span class="nx">construct</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">icon</span><span class="p">,</span> <span class="nx">toolTipText</span><span class="p">,</span> <span class="nx">underline</span><span class="p">,</span> <span class="nx">bold</span><span class="p">,</span> <span class="nx">wrap</span><span class="p">,</span> <span class="nx">underlineOnHover</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>All parameters are optional. This can make the code using this class very hard to read:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">custom</span><span class="p">.</span><span class="nx">LinkAtom</span><span class="p">(</span><span class="s2">&quot;Help&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">custom</span><span class="p">.</span><span class="nx">LinkAtom</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>While the first line is perfectly readable, it is virtually impossible to understand the second line without referring to the API documentation of LinkAtom.</p>
+<p>In this case it helps to keep only those parameters, which are required or used with almost every instance. All other parameters should be converted into properties:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;custom.LinkAtom&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Atom</span><span class="p">,</span>
+
+  <span class="nx">construct</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">icon</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+
+  <span class="nx">properties</span> <span class="p">{</span>
+    <span class="nx">toolTipText</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+    <span class="nx">underline</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+    <span class="nx">bold</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+    <span class="nx">wrap</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+    <span class="nx">underlineOnHover</span><span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>Now only the text and icon parameter remain in the constructor. All other parameters have been converted into properties. The hard to read example now becomes:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">custom</span><span class="p">.</span><span class="nx">LinkAtom</span><span class="p">(</span><span class="s2">&quot;create&quot;</span><span class="p">).</span><span class="nx">set</span><span class="p">({</span>
+  <span class="nx">underline</span><span class="o">:</span> <span class="kc">false</span>
+  <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">wrap</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">underlineOnHover</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>For someone reading this code it is immediately obvious, what's happening.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Keep parameter lists small and use properties instead of optional constructor parameters.</p>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="ui_inline.html"
+             title="previous chapter">« Inline Widgets</a>
+          <span class="separator">|</span>
+          <a class="next" href="ui_form_handling.html"
+             title="next chapter">Form Handling »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Custom Widgets</a><ul>
+<li><a class="reference internal" href="#inheritance-structure">Inheritance Structure</a></li>
+<li><a class="reference internal" href="#setup-content">Setup Content</a><ul>
+<li><a class="reference internal" href="#for-a-widget">For a Widget</a></li>
+<li><a class="reference internal" href="#for-a-container">For a Container</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#child-controls">Child Controls</a></li>
+<li><a class="reference internal" href="#styling">Styling</a></li>
+<li><a class="reference internal" href="#html-elements">HTML Elements</a></li>
+<li><a class="reference internal" href="#custom-elements">Custom Elements</a></li>
+<li><a class="reference internal" href="#working-with-events">Working with Events</a></li>
+<li><a class="reference internal" href="#anonymous-widgets">Anonymous Widgets</a></li>
+<li><a class="reference internal" href="#defining-the-api">Defining the API</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="ui_form_handling.html"
+                        title="next chapter">Form Handling</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="ui_inline.html"
+                        title="previous chapter">Inline Widgets</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/desktop/ui_develop.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

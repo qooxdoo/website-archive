@@ -1,0 +1,362 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Manifest.json &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="Tooling" href="../../tool.html" />
+    <link rel="next" title="Code Structure" href="code_structure.html" />
+    <link rel="prev" title="Application Structure" href="application_structure.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Manifest.json</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="manifest-json">
+<span id="pages-application-structure-manifest-manifest-json"></span><h1>Manifest.json<a class="headerlink" href="#manifest-json" title="Permalink to this headline">¶</a></h1>
+<p>qooxdoo's <a class="reference external" href="http://en.wikipedia.org/wiki/Manifest_file">Manifest files</a> serve to provide meta information for a library in a structured way. Their syntax is in JSON. They have a more informational part (keyed <code class="docutils literal"><span class="pre">info</span></code>), which is more interesting for human readers, and a technical part (named <code class="docutils literal"><span class="pre">provides</span></code>) that is used in the processing of generator configurations. Here is a brief sample with all the possible keys:</p>
+<p>Manifest files are referenced in application's <cite>config.json</cite> files (in the <a class="reference internal" href="../generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><span class="std std-ref">library</span></a> key), to identify the library they stand for.</p>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<p>This is a sample file:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;info&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;Custom Application&quot;</span><span class="p">,</span>
+
+    <span class="s2">&quot;summary&quot;</span> <span class="o">:</span> <span class="s2">&quot;Custom Application&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span> <span class="o">:</span> <span class="s2">&quot;This is a skeleton for a custom application with qooxdoo.&quot;</span><span class="p">,</span>
+
+    <span class="s2">&quot;keywords&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;custom&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;homepage&quot;</span> <span class="o">:</span> <span class="s2">&quot;http://some.homepage.url/&quot;</span><span class="p">,</span>
+
+    <span class="s2">&quot;license&quot;</span> <span class="o">:</span> <span class="s2">&quot;SomeLicense&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;authors&quot;</span> <span class="o">:</span>
+    <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;First Author (uid)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span> <span class="o">:</span> <span class="s2">&quot;first.author@some.domain&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+
+    <span class="s2">&quot;version&quot;</span> <span class="o">:</span> <span class="s2">&quot;trunk&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;qooxdoo-versions&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;trunk&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;sourceViewUri&quot;</span> <span class="o">:</span> <span class="s2">&quot;https://github.com/someuser/custom/blob/master/source/class/%{classFilePath}#L%{lineNumber}&quot;</span>
+  <span class="p">},</span>
+
+  <span class="s2">&quot;provides&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;namespace&quot;</span>   <span class="o">:</span> <span class="s2">&quot;custom&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;encoding&quot;</span>    <span class="o">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;class&quot;</span>       <span class="o">:</span> <span class="s2">&quot;source/class&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource&quot;</span>    <span class="o">:</span> <span class="s2">&quot;source/resource&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;translation&quot;</span> <span class="o">:</span> <span class="s2">&quot;source/translation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span>        <span class="o">:</span> <span class="s2">&quot;application&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="description-of-keys">
+<h3>Description of Keys:<a class="headerlink" href="#description-of-keys" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>info</strong>: All entries in this section are optional.<ul>
+<li><strong>name</strong>: Name of the library.</li>
+<li><strong>summary</strong>: Short summary of its purpose.</li>
+<li><strong>description</strong>: Descriptive text.</li>
+<li><strong>keywords</strong>: List of keywords, tags.</li>
+<li><strong>homepage</strong>: Homepage URL of the library.</li>
+<li><strong>license</strong>: License name(s) of the library.</li>
+<li><strong>authors</strong>: Author(s) of the library. A list of maps, each map containing the following fields:<ul>
+<li><strong>name</strong> : Author name.</li>
+<li><strong>email</strong> : Author email address.</li>
+</ul>
+</li>
+<li><strong>version</strong>: Version of  the library.</li>
+<li><strong>qooxdoo-versions</strong>: List of versions of the qooxdoo framework this library is compatible with.</li>
+<li><strong>sourceViewUri</strong>: URL to view the library's class code online. This URL will be used in generated API documentation. It has a special syntax and allows for placeholders (e.g. for the class name and the source line number). See the <a class="reference internal" href="../../application/apiviewer.html#pages-application-apiviewer-linking"><span class="std std-ref">Apiviewer documentation</span></a> for details.</li>
+</ul>
+</li>
+<li><strong>provides</strong>: Entries in this section are mandatory.<ul>
+<li><strong>namespace</strong>: Library namespace (i.e. the namespace elements all class names in this library are prefixed with, e.g. <code class="docutils literal"><span class="pre">foo</span></code> for a main application class with name <code class="docutils literal"><span class="pre">foo.Application</span></code>).</li>
+<li><strong>encoding</strong>: File encoding of source code files (should be utf-8).</li>
+<li><strong>class</strong>: Path to the library's class code relative to the Manifest.json file, up to but not including the root namespace folder (e.g. <code class="docutils literal"><span class="pre">source/class</span></code>).</li>
+<li><strong>resource</strong>: Path to the library's resources relative to the Manifest.json file, up to but not including the root namespace folder (e.g. <code class="docutils literal"><span class="pre">source/resource</span></code>).</li>
+<li><strong>translation</strong>: Path to the library's translation files relative to the Manifest.json file (e.g. <code class="docutils literal"><span class="pre">source/translation</span></code>).</li>
+<li><strong>type</strong>: One of [<code class="docutils literal"><span class="pre">library</span></code>, <code class="docutils literal"><span class="pre">application</span></code>].</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="application_structure.html"
+             title="previous chapter">« Application Structure</a>
+          <span class="separator">|</span>
+          <a class="next" href="code_structure.html"
+             title="next chapter">Code Structure »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Manifest.json</a><ul>
+<li><a class="reference internal" href="#reference">Reference</a><ul>
+<li><a class="reference internal" href="#description-of-keys">Description of Keys:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="code_structure.html"
+                        title="next chapter">Code Structure</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="application_structure.html"
+                        title="previous chapter">Application Structure</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/sdk/manifest.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

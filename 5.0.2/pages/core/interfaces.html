@@ -1,0 +1,441 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Interfaces &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Core" href="../core.html" />
+    <link rel="next" title="Mixins" href="mixins.html" />
+    <link rel="prev" title="Classes" href="classes.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../core.html" accesskey="U">Core</a>
+     &#187;
+    <a href="">Interfaces</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="interfaces">
+<span id="pages-interfaces-interfaces"></span><h1>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h1>
+<p>qooxdoo supports Java like interfaces.</p>
+<p>Interface definitions look very similar to normal class definitions.</p>
+<p>Example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Interface</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.ISample&quot;</span><span class="p">,</span>
+ <span class="p">{</span>
+   <span class="nx">extend</span><span class="o">:</span> <span class="p">[</span><span class="nx">SuperInterfaces</span><span class="p">],</span>
+
+   <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="o">:</span> <span class="p">{},</span> <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="p">{}</span> <span class="p">},</span>
+
+   <span class="nx">members</span><span class="o">:</span>
+   <span class="p">{</span>
+     <span class="nx">meth1</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+     <span class="nx">meth2</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">this</span><span class="p">.</span><span class="nx">assertArgumentsCount</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+     <span class="p">},</span>
+     <span class="nx">meth3</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="p">{</span>
+       <span class="k">this</span><span class="p">.</span><span class="nx">assertInterface</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">some</span><span class="p">.</span><span class="nx">IInterface</span><span class="p">);</span>
+     <span class="p">}</span>
+   <span class="p">},</span>
+
+   <span class="nx">statics</span><span class="o">:</span>
+   <span class="p">{</span>
+     <span class="nx">PI</span> <span class="o">:</span> <span class="mf">3.14</span>
+   <span class="p">},</span>
+
+   <span class="nx">events</span> <span class="o">:</span>
+   <span class="p">{</span>
+     <span class="nx">keydown</span> <span class="o">:</span> <span class="s2">&quot;qx.event.type.KeyEvent&quot;</span>
+   <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<div class="section" id="definition">
+<span id="pages-interfaces-definition"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<p>Interfaces are declared using <code class="docutils literal"><span class="pre">qx.Interface.define</span></code>. Interface names start by convention with an <code class="docutils literal"><span class="pre">I</span></code> (uppercase &quot;i&quot;). They can inherit from other interfaces using the <code class="docutils literal"><span class="pre">extend</span></code> key. Multiple inheritance of interfaces is supported.</p>
+<div class="section" id="properties">
+<span id="pages-interfaces-properties"></span><h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
+<p>Properties in interfaces state that each class implementing this interface must have a property of the given name. The <a class="reference internal" href="defining_properties.html"><span class="doc">property definition</span></a> is not evaluated and may be empty.</p>
+</div>
+<div class="section" id="members">
+<span id="pages-interfaces-members"></span><h3>Members<a class="headerlink" href="#members" title="Permalink to this headline">¶</a></h3>
+<p>The member section of the interface lists all member functions which must be implemented. The function body is used as a precondition of the implementation. By implementing an interface the qooxdoo class definition automatically wraps all methods required by the interface. Before the actual implementation is called, the precondition of the interface is called with the same arguments. The precondition should raise an exception if the arguments are don't meet the expectations. Usually the methods defined in <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.core.MAssert">qx.core.MAssert</a> are used to check the incoming parameters.</p>
+</div>
+<div class="section" id="statics">
+<span id="pages-interfaces-statics"></span><h3>Statics<a class="headerlink" href="#statics" title="Permalink to this headline">¶</a></h3>
+<p>Statics behave exactly like statics defined in mixins and qooxdoo classes, with the different that only constants are allowed. They are accessible through their fully-qualified name. For example, the static variable <code class="docutils literal"><span class="pre">PI</span></code> could be used like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">ISample</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="p">(</span><span class="nx">r</span><span class="o">*</span><span class="nx">r</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="events">
+<span id="pages-interfaces-events"></span><h3>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h3>
+<p>Each event defined in the interface must be declared in the implementing classes. The syntax matches the <code class="docutils literal"><span class="pre">events</span></code> key of the class declaration.</p>
+</div>
+</div>
+<div class="section" id="implementation">
+<span id="pages-interfaces-implementing-interfaces"></span><h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<p>With <code class="docutils literal"><span class="pre">implement</span></code> key of the class declaration, a list of interfaces can be listed, which the class implements. The class must implement all properties, members and events declared in the interfaces. Otherwise a runtime error will be thrown.</p>
+<p>Example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Sample&quot;</span><span class="p">,</span>
+ <span class="p">{</span>
+   <span class="nx">implement</span><span class="o">:</span> <span class="p">[</span><span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">ISample</span><span class="p">],</span>
+
+   <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+     <span class="s2">&quot;color&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;color&quot;</span><span class="p">},</span>
+     <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">}</span>
+   <span class="p">},</span>
+
+   <span class="nx">members</span><span class="o">:</span>
+   <span class="p">{</span>
+     <span class="nx">meth1</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">42</span><span class="p">;</span> <span class="p">},</span>
+     <span class="nx">meth2</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">a</span><span class="o">+</span><span class="nx">b</span> <span class="p">},</span>
+     <span class="nx">meth3</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="p">{</span> <span class="nx">c</span><span class="p">.</span><span class="nx">foo</span><span class="p">()</span> <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="nx">events</span> <span class="o">:</span>
+   <span class="p">{</span>
+     <span class="nx">keydown</span> <span class="o">:</span> <span class="s2">&quot;qx.event.type.KeyEvent&quot;</span>
+   <span class="p">}</span>
+
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="validation">
+<span id="pages-interfaces-validating-interfaces"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">qx.Class</span></code> contains several static methods to check, whether a class or an object implements an interface:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">qx.Class.hasInterface()</span></code>: Whether a given class or any of its superclasses includes a given interface.</li>
+<li><code class="docutils literal"><span class="pre">qx.Class.implementsInterface()</span></code>: Checks whether all methods defined in the interface are implemented in the class. The class does not need to implement the interface explicitly.</li>
+</ul>
+</div></blockquote>
+<p>It is further possible to use interfaces as property checks.</p>
+</div>
+<div class="section" id="summary">
+<span id="pages-interfaces-interfaces-quick-ref"></span><h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>extend</td>
+<td>Interface | Interface[]</td>
+<td>Single interface or array of interfaces this interface inherits from.</td>
+</tr>
+<tr class="row-odd"><td>members</td>
+<td>Map</td>
+<td>Map of members of the interface.</td>
+</tr>
+<tr class="row-even"><td>statics</td>
+<td>Map</td>
+<td>Map of statics of the interface. The statics will not get copied into the target class. This is the same behavior as statics in mixins.</td>
+</tr>
+<tr class="row-odd"><td>properties</td>
+<td>Map</td>
+<td>Map of properties and their definitions.</td>
+</tr>
+<tr class="row-even"><td>events</td>
+<td>Map</td>
+<td>Map of event names and the corresponding event class name.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="interface_quickref.html"><span class="doc">Interfaces Quick Ref</span></a> - a syntax quick reference for interfaces</li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.Interface">API Documentation for Interface</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="classes.html"
+             title="previous chapter">« Classes</a>
+          <span class="separator">|</span>
+          <a class="next" href="mixins.html"
+             title="next chapter">Mixins »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Interfaces</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#members">Members</a></li>
+<li><a class="reference internal" href="#statics">Statics</a></li>
+<li><a class="reference internal" href="#events">Events</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#implementation">Implementation</a></li>
+<li><a class="reference internal" href="#validation">Validation</a></li>
+<li><a class="reference internal" href="#summary">Summary</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="mixins.html"
+                        title="next chapter">Mixins</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="classes.html"
+                        title="previous chapter">Classes</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/core/interfaces.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

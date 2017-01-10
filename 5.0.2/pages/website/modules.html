@@ -1,0 +1,659 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module Overview &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Website" href="../website.html" />
+    <link rel="next" title="qx.Website Widgets" href="widgets.html" />
+    <link rel="prev" title="qx.Website Overview" href="overview.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../website.html" accesskey="U">qx.Website</a>
+     &#187;
+    <a href="">Module Overview</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="module-overview">
+<span id="pages-website-module-overview"></span><h1>Module Overview<a class="headerlink" href="#module-overview" title="Permalink to this headline">¶</a></h1>
+<p>This page gives a short introduction into each module with samples attached.
+More samples can be found in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/website-api">API viewer</a> for qx.Website.</p>
+<p>Note that you always need the core module when you decide to use
+the modules separately - which encloses all modules prefixed
+with <strong>&quot;Core:&quot;</strong> in the following list.</p>
+<div class="section" id="core">
+<h2>Core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h2>
+<p>This module contains elementary static functions and furthermore consolidates
+several other modules. Some of those elementary functions are:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#myId&quot;</span><span class="p">)...</span>
+
+<span class="nx">q</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;MyObject&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">construct</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{},</span>
+  <span class="nx">members</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">method</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">q</span><span class="p">(</span><span class="s1">&#39;.desc&#39;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-attributes">
+<h2>Core: Attributes<a class="headerlink" href="#core-attributes" title="Permalink to this headline">¶</a></h2>
+<p>qx.Website offers an easy and elegant way to manipulate attributes and
+properties of DOM elements. This also includes setting the HTML content of an
+element.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// sets the HTML content</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">setHtml</span><span class="p">(</span><span class="s2">&quot;&lt;h2&gt;TEST&lt;/h2&gt;&quot;</span><span class="p">);</span>
+<span class="c1">// returns the value of the placeholder attribute</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;placeholder&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-css">
+<h2>Core: CSS<a class="headerlink" href="#core-css" title="Permalink to this headline">¶</a></h2>
+<p>Working with CSS can be easy with the help of qx.Website. The CSS module
+includes many convenient helpers to set styles, classes, or dimensions.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// cross browser opacity setting</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">setStyle</span><span class="p">(</span><span class="s2">&quot;opacity&quot;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="c1">// checks if &#39;myClass&#39; is applied</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">hasClass</span><span class="p">(</span><span class="s2">&quot;myClass&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-environment">
+<h2>Core: Environment<a class="headerlink" href="#core-environment" title="Permalink to this headline">¶</a></h2>
+<p>qx.Website covers most cross browser issues. Still, the environment module
+offers a lot of information about the environment the app is running in. This
+includes simple checks like browser name as well as information about the
+application itself.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// returns e.g. &quot;webkit&quot;</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;engine.name&quot;</span><span class="p">);</span>
+<span class="c1">// can be used to remove debugging code from the deployment version</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;qx.debug&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-event">
+<h2>Core: Event<a class="headerlink" href="#core-event" title="Permalink to this headline">¶</a></h2>
+<p>Of course there is also basic event handling available in qx.Website.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ready to go</span>
+<span class="p">});</span>
+
+<span class="nx">q</span><span class="p">(</span><span class="s1">&#39;#someElement&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="nx">handleInput</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-manipulating">
+<h2>Core: Manipulating<a class="headerlink" href="#core-manipulating" title="Permalink to this headline">¶</a></h2>
+<p>The manipulating module provides helpers to change the structure of the DOM.
+Appending or creating elements is also part of this module, as is manipulating
+the scroll position.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">setScrollTop</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span> <span class="c1">// removes all content</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="core-polyfill">
+<h2>Core: Polyfill<a class="headerlink" href="#core-polyfill" title="Permalink to this headline">¶</a></h2>
+<p>A polyfill is best explained by a quote from an informative blog post:</p>
+<blockquote>
+<div><em>&quot;A polyfill, or polyfiller, is a piece of code (or plugin) that provides the
+technology that you, the developer, expect the browser to provide natively.
+Flattening the API landscape if you will.&quot;</em> <a class="footnote-reference" href="#id2" id="id1">[1]</a></div></blockquote>
+<p>A list of included polyfills can be found in the API documentation of the module.</p>
+</div>
+<div class="section" id="core-traversing">
+<h2>Core: Traversing<a class="headerlink" href="#core-traversing" title="Permalink to this headline">¶</a></h2>
+<p>In the traversing module, you'll find helpers that work with the collection. A
+good example is the filter method, which reduces the number of elements in the
+collection. Other methods of this module will find children, ancestors or
+siblings of the elements in the collection.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// returns the children</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="c1">// returns all siblings having the class &#39;myClass&#39;</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">getSiblings</span><span class="p">(</span><span class="s2">&quot;.myClass&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="animation">
+<h2>Animation<a class="headerlink" href="#animation" title="Permalink to this headline">¶</a></h2>
+<p>Animations can enhance the user experience and help create appealing and user
+interfaces that feel natural. With modern browsers, CSS Animations and
+Transforms are emerging as new way of efficiently realizing this goal. No need
+to do it programmatically in JavaScript.</p>
+<p>To use animations with qx.Website, you can use the animation module. This is a
+cross-browser wrapper for CSS Animations and Transforms with the goal to conform
+closely to the specifications wherever possible. If no CSS Animations are
+supported, a JavaScript solution will work in place offering the same API and
+almost the same functionality as the CSS based solution.</p>
+<p>For further details, take a look at the <a class="reference internal" href="css3animation.html"><span class="doc">Animations and Transforms
+documentation</span></a>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="blocker">
+<h2>Blocker<a class="headerlink" href="#blocker" title="Permalink to this headline">¶</a></h2>
+<p>The blocker module offers a way to block elements. This means they won't receive
+any native events until they are unblocked.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">block</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cookie">
+<h2>Cookie<a class="headerlink" href="#cookie" title="Permalink to this headline">¶</a></h2>
+<p>A convenient way to work with cookies is implemented in the cookie module.
+Setting, reading and deleting cookies is supported across browsers.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">cookie</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">cookie</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dataset">
+<h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h2>
+<p>With this module you can operate on HTML5 <code class="docutils literal"><span class="pre">data-*</span></code> attributes concerning
+the elements in your current collection. It's a wrapper and polyfill around
+the native HTML5 <code class="docutils literal"><span class="pre">dataset</span></code> property.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.info a&quot;</span><span class="p">).</span><span class="nx">setData</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.info a&quot;</span><span class="p">).</span><span class="nx">getData</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dev">
+<h2>Dev<a class="headerlink" href="#dev" title="Permalink to this headline">¶</a></h2>
+<p>Currently there is only one utility available under the dev namespace and that's
+the FakeServer: A wrapper around <a class="reference external" href="http://sinonjs.org/docs/#server">Sinon.JS’s FakeXMLHttpRequest and FakeServer
+features</a> that allows quick and simple
+configuration of mock HTTP backends for testing and development. Head over to
+the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/website-api#dev.FakeServer">qx.Website API viewer</a> to see a sample.</p>
+</div>
+<div class="section" id="io">
+<h2>IO<a class="headerlink" href="#io" title="Permalink to this headline">¶</a></h2>
+<p>Pulling data from remote sources is another one of the most common use cases and
+usually the next logical step when it comes to improving your existing
+JavaScript powered website / application. Of course, you expect the underlying
+framework to provide you with a nice abstracted cross-browser solution that is
+easy to use. qx.Website offers multiple implementations to pull data.</p>
+<p>The first option is <a class="reference external" href="http://en.wikipedia.org/wiki/XHR">XHR</a>. qx.Website comes
+with <a class="reference internal" href="../communication.html#pages-communication-low-level-requests"><span class="std std-ref">a wrapper around this widely used browser API</span></a> which hides inconsistencies and works
+around browser bugs.  The second option is to use <a class="reference external" href="http://en.wikipedia.org/wiki/JSONP">JSONP</a>. This approach enables you to overcome
+<a class="reference external" href="http://en.wikipedia.org/wiki/Same_origin_policy">same orgin policy</a>
+restrictions and talk to any server which offers a JSON API like e.g <a class="reference external" href="https://dev.twitter.com/">Twitter</a>. qx.Website provides a <a class="reference internal" href="../communication/request_io.html"><span class="doc">nice and powerful API</span></a> with the same interface as the XHR transport
+to let you easily access any JSONP API out there.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">xhr</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;loadend&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">)</span> <span class="p">{});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="matchmedia">
+<h2>Matchmedia<a class="headerlink" href="#matchmedia" title="Permalink to this headline">¶</a></h2>
+<p>A module for mediaqueries evaluation. This module is a wrapper for <a class="reference external" href="https://github.com/paulirish/matchMedia.js/">media.match.js</a> that implements a polyfill for
+<code class="docutils literal"><span class="pre">window.matchMedia</span></code> when it's not supported natively.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">matchMedia</span><span class="p">(</span><span class="s2">&quot;screen and (min-width: 480px)&quot;</span><span class="p">).</span><span class="nx">matches</span> <span class="c1">// true or false</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="media-queries-and-css-classes">
+<h2>Media queries and css classes<a class="headerlink" href="#media-queries-and-css-classes" title="Permalink to this headline">¶</a></h2>
+<p>Adds screen size classes (e.g. small-only or medium-up) by pre-defined media queries using em. The range goes from small to medium, large and xlarge up to xxlarge:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">class name</th>
+<th class="head">size</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>small</td>
+<td>0em – 40em</td>
+</tr>
+<tr class="row-odd"><td>medium</td>
+<td>40.063em – 64em</td>
+</tr>
+<tr class="row-even"><td>large</td>
+<td>64.063em – 90em</td>
+</tr>
+<tr class="row-odd"><td>xlarge</td>
+<td>90.063em – 120em</td>
+</tr>
+<tr class="row-even"><td>xxlarge</td>
+<td>120.063em</td>
+</tr>
+</tbody>
+</table>
+<p>The suffix of the class name indicates either that the current screen is larger than this size (-up) or in that range (-only).</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">addSizeClasses</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;html&quot;</span><span class="p">).</span><span class="nx">getClass</span><span class="p">());</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="messaging">
+<h2>Messaging<a class="headerlink" href="#messaging" title="Permalink to this headline">¶</a></h2>
+<p>The messaging module offers a message bus. It offers a separation by channel and
+type and also offers a way to react on types for every channel.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">messaging</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;CHANNEL-X&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something clever</span>
+<span class="p">});</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">messaging</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s2">&quot;CHANNEL-X&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="placeholder">
+<h2>Placeholder<a class="headerlink" href="#placeholder" title="Permalink to this headline">¶</a></h2>
+<p>The placeholder module offers fallback implementation for placeholders. The
+module offers two methods, one for updating all input and textarea elements on
+the site and one for updating only the elements in the given collection</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// update all elements on the page</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">placeholder</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+<span class="c1">// update only the placeholder for the given element</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#nameInput&quot;</span><span class="p">).</span><span class="nx">updatePlaceholder</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>In case the executing browser supports native placeholders, those two method
+calls won't do anything. This is only relevant for browsers not supporting
+placeholders like IE &lt; 10.</p>
+</div>
+<div class="section" id="placement">
+<h2>Placement<a class="headerlink" href="#placement" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes it can be necessary to place an element right beside another one.
+Think about a popup message or tooltip offering some context sensitive help. The
+placement module offers a method to place one element relative to another using
+one of several algorithms and taking available space into account.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#test&quot;</span><span class="p">).</span><span class="nx">placeTo</span><span class="p">(</span><span class="nx">target</span><span class="p">,</span> <span class="s2">&quot;top-right&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rest">
+<h2>REST<a class="headerlink" href="#rest" title="Permalink to this headline">¶</a></h2>
+<p>The rest module can be used to work against RESTful web-services in an elegant
+way. Rather than requesting URLs with a specific HTTP method manually, a
+resource representing the remote resource is instantiated and actions are
+invoked on this resource.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">resourceDesc</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;get&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">method</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;/photo/{id}&quot;</span> <span class="p">},</span>
+  <span class="s2">&quot;put&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">method</span><span class="o">:</span> <span class="s2">&quot;PUT&quot;</span><span class="p">,</span> <span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;/photo/{id}&quot;</span><span class="p">}</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">resource</span> <span class="o">=</span> <span class="nx">q</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">resource</span><span class="p">(</span><span class="nx">resourceDesc</span><span class="p">);</span>
+
+<span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
+<span class="nx">photo</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Monkey&quot;</span><span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="storage">
+<h2>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<p>The storage module offers a cross browser way to store data offline. For that,
+it uses the <a class="reference external" href="http://www.w3.org/TR/webstorage/">Web Storage API</a>. If That's
+not available (i.e. in IE &lt; 8) a fallback is used. If non of the storage API is
+available, a non persistent in memory storage is returned which means you can
+always use the same API. Check out the separate <a class="reference internal" href="storage.html"><span class="doc">page about storage</span></a> for more details.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">q</span><span class="p">.</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;my_custom_key&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="template">
+<h2>Template<a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h2>
+<p>Templating is a powerful tool in web development. qx.Website uses mustache.js as
+its templating engine. For further information, see the <a class="reference external" href="https://github.com/janl/mustache.js/">mustache.js
+documentation</a>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// returns a collection containing the new element</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">template</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;templateId&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="s2">&quot;test&quot;</span><span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="transform">
+<h2>Transform<a class="headerlink" href="#transform" title="Permalink to this headline">¶</a></h2>
+<p>The transform module offers a cross browser convenience API for CSS transforms.
+This includes scaling, skewing, rotating and translating.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#myId&quot;</span><span class="p">).</span><span class="nx">rotate</span><span class="p">(</span><span class="s2">&quot;45deg&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="util">
+<h2>Util<a class="headerlink" href="#util" title="Permalink to this headline">¶</a></h2>
+<p>As the name implies this module provides static utility functions for Strings and Arrays
+and generic helpers e.g. for requesting the type of a value.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Strings</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s2">&quot;hamster&quot;</span><span class="p">,</span> <span class="s2">&quot;ham&quot;</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">string</span><span class="p">.</span><span class="nx">camelCase</span><span class="p">(</span><span class="s2">&quot;i-like-cookies&quot;</span><span class="p">);</span>  <span class="c1">// &quot;ILikeCookies&quot;</span>
+
+<span class="c1">// Arrays</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">array</span><span class="p">.</span><span class="nx">equals</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">]);</span> <span class="c1">// true</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">array</span><span class="p">.</span><span class="nx">unique</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">]);</span>   <span class="c1">// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</span>
+
+<span class="c1">// General</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">type</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span> <span class="c1">// &quot;String&quot;, &quot;Array&quot;, &quot;Object&quot;, &quot;Function&quot; ...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="widget">
+<h2>Widget<a class="headerlink" href="#widget" title="Permalink to this headline">¶</a></h2>
+<p>The Widget module contains a collection of self-contained UI elements. They can be created from pre-existing
+HTML or entirely from JavaScript and customized by overwriting default rendering templates.
+See the dedicated manual page for more information:</p>
+<p><a class="reference internal" href="widgets.html#pages-website-widgets-widgets"><span class="std std-ref">qx.Website Widgets</span></a></p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// JS-only widget creation</span>
+<span class="nx">q</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="s1">&#39;&lt;div&gt;&lt;/div&gt;&#39;</span><span class="p">).</span><span class="nx">slider</span><span class="p">().</span><span class="nx">appendTo</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>
+
+<span class="c1">// Changing the configuration of an existing widget</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">setConfig</span><span class="p">(</span><span class="s2">&quot;step&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">]).</span><span class="nx">render</span><span class="p">();</span>
+
+<span class="c1">// Modifying an existing widget&#39;s rendering template</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">setTemplate</span><span class="p">(</span><span class="s2">&quot;knobContent&quot;</span><span class="p">,</span> <span class="s1">&#39;&lt;span id=&quot;knob-label&quot;&gt;{{value}}&lt;/span&gt;&#39;</span><span class="p">)</span>
+<span class="p">.</span><span class="nx">render</span><span class="p">();</span>
+
+<span class="c1">// Events</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;changeValue&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;New slider value:&quot;</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Disposal (clean up DOM references to prevent memory leaks)</span>
+<span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">dispose</span><span class="p">().</span><span class="nx">remove</span><span class="p">();</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://remysharp.com/2010/10/08/what-is-a-polyfill/">Remy Sharp, &quot;What is a polyfill&quot;</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="overview.html"
+             title="previous chapter">« qx.Website Overview</a>
+          <span class="separator">|</span>
+          <a class="next" href="widgets.html"
+             title="next chapter">qx.Website Widgets »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Module Overview</a><ul>
+<li><a class="reference internal" href="#core">Core</a></li>
+<li><a class="reference internal" href="#core-attributes">Core: Attributes</a></li>
+<li><a class="reference internal" href="#core-css">Core: CSS</a></li>
+<li><a class="reference internal" href="#core-environment">Core: Environment</a></li>
+<li><a class="reference internal" href="#core-event">Core: Event</a></li>
+<li><a class="reference internal" href="#core-manipulating">Core: Manipulating</a></li>
+<li><a class="reference internal" href="#core-polyfill">Core: Polyfill</a></li>
+<li><a class="reference internal" href="#core-traversing">Core: Traversing</a></li>
+<li><a class="reference internal" href="#animation">Animation</a></li>
+<li><a class="reference internal" href="#blocker">Blocker</a></li>
+<li><a class="reference internal" href="#cookie">Cookie</a></li>
+<li><a class="reference internal" href="#dataset">Dataset</a></li>
+<li><a class="reference internal" href="#dev">Dev</a></li>
+<li><a class="reference internal" href="#io">IO</a></li>
+<li><a class="reference internal" href="#matchmedia">Matchmedia</a></li>
+<li><a class="reference internal" href="#media-queries-and-css-classes">Media queries and css classes</a></li>
+<li><a class="reference internal" href="#messaging">Messaging</a></li>
+<li><a class="reference internal" href="#placeholder">Placeholder</a></li>
+<li><a class="reference internal" href="#placement">Placement</a></li>
+<li><a class="reference internal" href="#rest">REST</a></li>
+<li><a class="reference internal" href="#storage">Storage</a></li>
+<li><a class="reference internal" href="#template">Template</a></li>
+<li><a class="reference internal" href="#transform">Transform</a></li>
+<li><a class="reference internal" href="#util">Util</a></li>
+<li><a class="reference internal" href="#widget">Widget</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="widgets.html"
+                        title="next chapter">qx.Website Widgets</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">qx.Website Overview</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/website/modules.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,370 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Source Code Validation &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="Tooling" href="../tool.html" />
+    <link rel="next" title="Create Application" href="create_application.html" />
+    <link rel="prev" title="Grunt frontend" href="grunt.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../tool.html" accesskey="U">Tooling</a>
+     &#187;
+    <a href="">Source Code Validation</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="source-code-validation">
+<span id="pages-tool-source-code-validation-source-code-validation"></span><h1>Source Code Validation<a class="headerlink" href="#source-code-validation" title="Permalink to this headline">¶</a></h1>
+<p>qooxdoo includes its own Javascript validator, <strong>Ecmalint</strong>, which application developers can use to check their source files for errors. It is started by running the <em>lint</em> generator job in an application directory:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">lint</span>
+</pre></div>
+</div>
+<div class="section" id="critical-warnings">
+<span id="pages-tool-source-code-validation-critical-warnings"></span><h2>Critical Warnings<a class="headerlink" href="#critical-warnings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="use-of-undefined-or-global-identifier">
+<span id="pages-tool-source-code-validation-use-of-undefined-or-global-identifier"></span><h3>Use of undefined or global identifier<a class="headerlink" href="#use-of-undefined-or-global-identifier" title="Permalink to this headline">¶</a></h3>
+<p>This warning indicates that an unknown global variable is used. This can be caused by:</p>
+<ul class="simple">
+<li>The variable is not declared as local variable using <code class="docutils literal"><span class="pre">var</span></code></li>
+<li>The variable name is misspelled</li>
+<li>It is OK to use this global but EcmaLint does not know about it. This can be fixed by passing the variable name as known variable to the EcmaLint call or by adding a <code class="docutils literal"><span class="pre">&#64;lint</span> <span class="pre">ignoreUndefined(VARIABLE_NAME)</span></code> doc comment to the method's API doc comment</li>
+</ul>
+</div>
+<div class="section" id="unused-identifier">
+<span id="pages-tool-source-code-validation-unused-identifier"></span><h3>Unused identifier<a class="headerlink" href="#unused-identifier" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="map-key-redefined">
+<span id="pages-tool-source-code-validation-map-key-redefined"></span><h3>Map key redefined<a class="headerlink" href="#map-key-redefined" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="data-field-has-a-reference-value">
+<span id="pages-tool-source-code-validation-data-field-has-a-reference-value"></span><h3>Data field has a reference value<a class="headerlink" href="#data-field-has-a-reference-value" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hint:</strong> If data fields are initialized in the members map with reference values like arrays or maps they will be shared between all instances of the class. Usually it is better to set the value to 'null' and initialize it in the constructor</p>
+</div>
+<div class="section" id="use-of-deprecated-identifier">
+<span id="pages-tool-source-code-validation-use-of-deprecated-identifier"></span><h3>Use of deprecated identifier<a class="headerlink" href="#use-of-deprecated-identifier" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="critical-warning-for-framework">
+<span id="pages-tool-source-code-validation-critical-warning-for-framework"></span><h2>Critical Warning (for framework)<a class="headerlink" href="#critical-warning-for-framework" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="potentially-non-local-private-data-field">
+<span id="pages-tool-source-code-validation-potentially-non-local-private-data-field"></span><h3>Potentially non-local private data field<a class="headerlink" href="#potentially-non-local-private-data-field" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hint:</strong> You should never do this.</p>
+</div>
+<div class="section" id="protected-data-field">
+<span id="pages-tool-source-code-validation-protected-data-field"></span><h3>Protected data field<a class="headerlink" href="#protected-data-field" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hint:</strong> Protected data fields are deprecated. Better use private fields in combination with getter and setter methods.</p>
+<p><strong>Comment:</strong> It appears that this isn't an issue that is generically to be solved as the hint suggest. See the corresponding <a class="reference external" href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2095">bug report</a>.</p>
+</div>
+<div class="section" id="undeclared-private-data-field">
+<span id="pages-tool-source-code-validation-undeclared-private-data-field"></span><h3>Undeclared private data field<a class="headerlink" href="#undeclared-private-data-field" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hint:</strong> You should list this field in the members section.</p>
+</div>
+</div>
+<div class="section" id="coding-style-warnings">
+<span id="pages-tool-source-code-validation-coding-style-warnings"></span><h2>Coding Style Warnings<a class="headerlink" href="#coding-style-warnings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-statement-of-loops-and-conditions-must-be-enclosed-by-a-block-in-braces">
+<span id="pages-tool-source-code-validation-the-statement-of-loops-and-conditions-must-be-enclosed-by-a-block-in-braces"></span><h3>The statement of loops and conditions must be enclosed by a block in braces<a class="headerlink" href="#the-statement-of-loops-and-conditions-must-be-enclosed-by-a-block-in-braces" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="multiply-declared-identifier">
+<span id="pages-tool-source-code-validation-multiply-declared-identifier"></span><h3>Multiply declared identifier<a class="headerlink" href="#multiply-declared-identifier" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="explicitly-ignoring-messages">
+<span id="pages-tool-source-code-validation-explicitly-ignoring-messages"></span><h2>Explicitly ignoring messages<a class="headerlink" href="#explicitly-ignoring-messages" title="Permalink to this headline">¶</a></h2>
+<p>Here are some of the &#64; hints that can be used to explicitly suppress specific lint messages:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>@lint ignoreUnused(x, y)
+@lint ignoreDeprecated(alert)
+@lint ignoreUndefined(button1, foo)
+@lint ignoreReferenceField(field)
+</pre></div>
+</div>
+<p>For a comprehensive list of possible &#64;lint hints see the <a class="reference internal" href="../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-lint"><span class="std std-ref">JSDoc reference</span></a>. Before lint prints a warning it walks up the AST and looks for the next enclosing API doc comment. Usually these comments should be placed in method JsDoc comments or in the class comment.</p>
+<p>There are additional warning for which there is currently no key to suppress them as they are deemed too important (e.g. duplicate map keys). On the other hand, there might be additional checks to be wanting which are currently not implemented (e.g. checking protected fields).</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="grunt.html"
+             title="previous chapter">« Grunt frontend</a>
+          <span class="separator">|</span>
+          <a class="next" href="create_application.html"
+             title="next chapter">Create Application »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Source Code Validation</a><ul>
+<li><a class="reference internal" href="#critical-warnings">Critical Warnings</a><ul>
+<li><a class="reference internal" href="#use-of-undefined-or-global-identifier">Use of undefined or global identifier</a></li>
+<li><a class="reference internal" href="#unused-identifier">Unused identifier</a></li>
+<li><a class="reference internal" href="#map-key-redefined">Map key redefined</a></li>
+<li><a class="reference internal" href="#data-field-has-a-reference-value">Data field has a reference value</a></li>
+<li><a class="reference internal" href="#use-of-deprecated-identifier">Use of deprecated identifier</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#critical-warning-for-framework">Critical Warning (for framework)</a><ul>
+<li><a class="reference internal" href="#potentially-non-local-private-data-field">Potentially non-local private data field</a></li>
+<li><a class="reference internal" href="#protected-data-field">Protected data field</a></li>
+<li><a class="reference internal" href="#undeclared-private-data-field">Undeclared private data field</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#coding-style-warnings">Coding Style Warnings</a><ul>
+<li><a class="reference internal" href="#the-statement-of-loops-and-conditions-must-be-enclosed-by-a-block-in-braces">The statement of loops and conditions must be enclosed by a block in braces</a></li>
+<li><a class="reference internal" href="#multiply-declared-identifier">Multiply declared identifier</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explicitly-ignoring-messages">Explicitly ignoring messages</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="create_application.html"
+                        title="next chapter">Create Application</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="grunt.html"
+                        title="previous chapter">Grunt frontend</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/tool/source_code_validation.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

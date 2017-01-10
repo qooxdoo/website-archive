@@ -1,0 +1,835 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>qooxdoo Generator Cheat Sheet - v.5.0.2 &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
+    <link rel="up" title="References" href="../../references.html" />
+    <link rel="next" title="Syntax Diagrams" href="../ebnf_like.html" />
+    <link rel="prev" title="Generator Config Macros" href="generator_config_macros.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../../references.html" accesskey="U">References</a>
+     &#187;
+    <a href="">qooxdoo Generator Cheat Sheet - v.5.0.2</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="qooxdoo-generator-cheat-sheet-v-5-0-2">
+<h1>qooxdoo Generator Cheat Sheet - v.5.0.2<a class="headerlink" href="#qooxdoo-generator-cheat-sheet-v-5-0-2" title="Permalink to this headline">¶</a></h1>
+<p>This cheat sheet summarizes the options available for the generator and its Json config files. For full reference see: <a class="reference external" href="http://manual.qooxdoo.org/5.0.2/pages/tool/generator/generator.html">http://manual.qooxdoo.org/5.0.2/pages/tool/generator/generator.html</a></p>
+<div class="section" id="command-line-options">
+<h2>Command-line Options<a class="headerlink" href="#command-line-options" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none"><div class="highlight"><pre><span></span>shell&gt; generator.py -h
+Usage: generator.py [options] job,...
+
+Arguments:
+  job,...               a list of jobs (like &#39;source&#39; or &#39;copy-files&#39;,
+                        without the quotes) to run
+  x                     use &#39;x&#39; (or some undefined job name) to get a
+                        list of all available jobs from the configuration file
+
+Options:
+  -h, --help            show this help message and exit
+  -c CFGFILE, --config=CFGFILE
+                        path to configuration file containing job definitions
+                        (default: config.json)
+  -q, --quiet           quiet output mode (extra quiet)
+  -v, --verbose         verbose output mode of job processing
+  -w, --config-verbose  verbose output mode of configuration processing
+  -l FILENAME, --logfile=FILENAME
+                        log file
+  -s, --stacktrace      enable stack traces on fatal exceptions
+  -m KEY:VAL, --macro=KEY:VAL
+                        define/overwrite a global &#39;let&#39; macro KEY with value
+                        VAL
+  -I, --no-progress-indicator
+                        suppress animated progress indication
+</pre></div>
+</div>
+</div>
+<div class="section" id="default-jobs">
+<h2>Default Jobs<a class="headerlink" href="#default-jobs" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>api</td>
+<td>create api doc for the current library</td>
+</tr>
+<tr class="row-even"><td>api-data</td>
+<td>create api doc json data files</td>
+</tr>
+<tr class="row-odd"><td>build</td>
+<td>create build version of current application</td>
+</tr>
+<tr class="row-even"><td>clean</td>
+<td>remove local cache and generated .js files (source/build)</td>
+</tr>
+<tr class="row-odd"><td>distclean</td>
+<td>remove the cache and all generated artefacts of this library (source, build, ...)</td>
+</tr>
+<tr class="row-even"><td>fix</td>
+<td>normalize whitespace in .js files of the current library (tabs, eol, ...)</td>
+</tr>
+<tr class="row-odd"><td>info</td>
+<td>collects environment information like the qooxdoo version etc., and prints it out</td>
+</tr>
+<tr class="row-even"><td>lint</td>
+<td>check the source code of the .js files of the current library</td>
+</tr>
+<tr class="row-odd"><td>migration</td>
+<td>migrate the .js files of the current library to the current qooxdoo version</td>
+</tr>
+<tr class="row-even"><td>pretty</td>
+<td>pretty-formatting of the source code of the current library</td>
+</tr>
+<tr class="row-odd"><td>profiling</td>
+<td>includer job, to activate profiling</td>
+</tr>
+<tr class="row-even"><td>source</td>
+<td>create source version of current application</td>
+</tr>
+<tr class="row-odd"><td>source-all</td>
+<td>create source version of current application, with all classes</td>
+</tr>
+<tr class="row-even"><td>source-httpd-config</td>
+<td>generate a httpd configuration for the source version</td>
+</tr>
+<tr class="row-odd"><td>source-hybrid</td>
+<td>create a hybrid application (application classes as individual files, others concatenated)</td>
+</tr>
+<tr class="row-even"><td>source-server</td>
+<td>start a lightweight web server that exports the source version</td>
+</tr>
+<tr class="row-odd"><td>test</td>
+<td>create a test runner app for unit tests of the current library</td>
+</tr>
+<tr class="row-even"><td>test-source</td>
+<td>create a test runner app for unit tests (source version) of the current library</td>
+</tr>
+<tr class="row-odd"><td>translation</td>
+<td>create .po files for current library</td>
+</tr>
+<tr class="row-even"><td>validate-config</td>
+<td>validates the <em>config.json</em> itself - if jobname arg is given checks dedicated job only</td>
+</tr>
+<tr class="row-odd"><td>validate-manifest</td>
+<td>validates the given filepath as manifest (defaults to <em>./Manifest.json</em>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="config-file-layout">
+<h2>Config File Layout<a class="headerlink" href="#config-file-layout" title="Permalink to this headline">¶</a></h2>
+<p>This is an overview of the available configuration keys with their corresponding nesting level.</p>
+<ul class="simple">
+<li><strong>name</strong> - A name or descriptive text for the configuration file.</li>
+<li><strong>include</strong> - Include external config files. Takes a list of maps, where each map specifies an external configuration file, and options how to include it.</li>
+<li><strong>let</strong> - Define default macros. Takes a map (see the description of the job-level 'let' further down). This let map is included automatically into every job run. There is no explicit reference to it, so be aware of side effects.</li>
+<li><strong>export</strong> - List of jobs to be exported if this config file is included by another.</li>
+<li><strong>default-job</strong> - The name of a job to be run as default, i.e. when invoking the generator without job arguments.</li>
+<li><strong>config-warnings</strong> - <em>(experimental)</em> Suppress warnings from configuration aspects which you know are ok.</li>
+<li><strong>jobs</strong> - Map of jobs. Each key is the name of a job.<ul>
+<li><strong>&lt;jobname&gt;</strong> Each job's value is a map describing the job. The describing map can have any number of the following keys:<ul>
+<li><strong>add-script</strong> - A list of URIs that will be loaded first thing when the app starts.</li>
+<li><strong>api</strong> - Triggers the generation of a custom Apiviewer application.</li>
+<li><strong>asset-let</strong> - Defines macros that will be replaced in &#64;asset hints in source files.</li>
+<li><strong>cache</strong> - Define the path to cache directories, most importantly to the compile cache.</li>
+<li><strong>clean-files</strong> - Triggers clean-up of files and directories within a project and the framework, e.g. deletion of generated files, cache contents, etc.</li>
+<li><strong>collect-environment-info</strong> - Collects various information about the qooxdoo environment (like version, cache, etc.) and prints it to the console.</li>
+<li><strong>combine-images</strong> - Triggers creation of a combined image file that contains various images.</li>
+<li><strong>compile</strong> - Triggers the generation of a source or build version of the application.</li>
+<li><strong>compile-options</strong> - Define various options that influence compile runs (both source and build version).</li>
+<li><strong>config-warnings</strong> - <em>(experimental)</em> Suppress warnings from configuration aspects which you know are ok.</li>
+<li><strong>copy-files</strong> - Triggers files/directories to be copied, usually between source and build version.</li>
+<li><strong>copy-resources</strong> - Triggers the copying of resources, usually between source and build version.</li>
+<li><strong>dependencies</strong> - Fine-tune the processing of class dependencies.</li>
+<li><strong>desc</strong> - A string describing the job.</li>
+<li><strong>environment</strong> - Define key:value pairs for the application, covering settings, variants and features.</li>
+<li><strong>exclude</strong> - List classes to be excluded from the job. Takes an array of class specifiers.</li>
+<li><strong>extend</strong> - Extend the current job with other jobs. Takes an array of job names. The information of these jobs are merged into the current job description, so the current job sort of &quot;inherits&quot; their settings.</li>
+<li><strong>fix-files</strong> - Fix white space in source files.</li>
+<li><strong>include</strong> - List classes to be processed in the job. Takes an array of class specifiers.</li>
+<li><strong>let</strong> - Define macros. Takes a map where each key defines a macro and the value its expansion.</li>
+<li><strong>library</strong> - Define libraries to be taken into account for this job. Takes an array of maps, each map specifying one library to consider. The most important part therein is the &quot;manifest&quot; specification.</li>
+<li><strong>lint-check</strong> - Check source code with a lint-like utility.</li>
+<li><strong>log</strong> - Tailor log output of job.</li>
+<li><strong>migrate-files</strong> - Migrate source code to the current qooxdoo version.</li>
+<li><strong>packages</strong> - Define packages for the application.</li>
+<li><strong>pretty-print</strong> - Triggers code beautification of source class files (in-place-editing). An empty map value triggers default formatting, but further keys can tailor the output.</li>
+<li><strong>provider</strong> - Collects classes, resources and dependency information and puts them in a specific directory structure under the provider root.</li>
+<li><strong>require</strong> - Define prerequisite classes needed at load time. Takes a map, where the keys are class names and the values lists of prerequisite classes.</li>
+<li><strong>run</strong> - Define a list of jobs to run in place of the current job.</li>
+<li><strong>shell</strong> - Triggers the execution of one or more external command(s).</li>
+<li><strong>slice-images</strong> - Triggers cutting images into regions.</li>
+<li><strong>translate</strong> - Re-generate .po files from source classes.</li>
+<li><strong>use</strong> - Define prerequisite classes needed at run time. Takes a map, where the keys are class names and the values lists of prerequisite classes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="configuration-keys">
+<h2>Configuration Keys<a class="headerlink" href="#configuration-keys" title="Permalink to this headline">¶</a></h2>
+<p>Here are the configuration keys with their individual value syntax.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;add-css&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;uri&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;css-uri&gt;&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="s2">&quot;add-script&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;uri&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;script-uri&gt;&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="s2">&quot;api&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;path&quot;</span>   <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;verify&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;links&quot;</span><span class="p">,</span> <span class="s2">&quot;types&quot;</span><span class="p">,</span> <span class="s2">&quot;statistics&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;warnings&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;output&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;console&quot;</span> <span class="p">]</span>
+  <span class="p">}</span>
+  <span class="s2">&quot;sitemap&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;link-uri&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;uri&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;file&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;asset-let&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;macro_name&gt;&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span> <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;cache&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;compile&quot;</span>     <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;downloads&quot;</span>   <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;invalidate-on-tool-change&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;clean-files&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;doc_string&gt;&quot;</span> <span class="o">:</span>
+  <span class="p">[</span>
+    <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&lt;path&gt;&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;collect-environment-info&quot;</span> <span class="o">:</span> <span class="p">{}</span>
+
+<span class="s2">&quot;combine-images&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;montage-cmd&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;string_template&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;&lt;output_image&gt;&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;prefix&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;altstring&gt;&quot;</span> <span class="p">],</span>
+      <span class="s2">&quot;layout&quot;</span><span class="o">:</span> <span class="p">(</span><span class="s2">&quot;horizontal&quot;</span><span class="o">|</span><span class="s2">&quot;vertical&quot;</span><span class="p">),</span>
+      <span class="s2">&quot;input&quot;</span> <span class="o">:</span>
+      <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">&quot;prefix&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;altstring&gt;&quot;</span> <span class="p">],</span>
+          <span class="s2">&quot;files&quot;</span>  <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;path&gt;&quot;</span> <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;compile&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;(source|build|hybrid)&quot;</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;compile-options&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;paths&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;file&quot;</span>            <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;file-prefix&quot;</span>     <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;app-root&quot;</span>        <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gzip&quot;</span>            <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+    <span class="s2">&quot;loader-template&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;uris&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;script&quot;</span>          <span class="o">:</span> <span class="s2">&quot;script&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource&quot;</span>        <span class="o">:</span> <span class="s2">&quot;resource&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;add-nocache-param&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;code&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;format&quot;</span>          <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+    <span class="s2">&quot;locales&quot;</span>         <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;de&quot;</span><span class="p">,</span> <span class="s2">&quot;en&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;optimize&quot;</span>        <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;basecalls&quot;</span><span class="p">,</span> <span class="s2">&quot;comments&quot;</span><span class="p">,</span> <span class="s2">&quot;privates&quot;</span><span class="p">,</span> <span class="s2">&quot;strings&quot;</span><span class="p">,</span> <span class="s2">&quot;variables&quot;</span><span class="p">,</span> <span class="s2">&quot;variants&quot;</span><span class="p">,</span> <span class="s2">&quot;whitespace&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;decode-uris-plug&quot;</span>  <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;except&quot;</span>          <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;myapp.classA&quot;</span><span class="p">,</span> <span class="s2">&quot;myapp.util.*&quot;</span><span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;config-warnings&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;job-shadowing&quot;</span>    <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;source-script&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;tl-unknown-keys&quot;</span>  <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;baz&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;job-unknown-keys&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;&lt;config_key&gt;&quot;</span>     <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;*&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;copy-files&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;files&quot;</span>     <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;path&gt;&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;source&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;target&quot;</span>  <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;copy-resources&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;target&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;default-job&quot;</span> <span class="o">:</span> <span class="s2">&quot;source&quot;</span>
+
+<span class="s2">&quot;dependencies&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;follow-static-initializers&quot;</span>  <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;sort-topological&quot;</span>            <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;desc&quot;</span> <span class="o">:</span> <span class="s2">&quot;Some text.&quot;</span>
+
+<span class="s2">&quot;environment&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;key&gt;&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">value</span> <span class="o">|</span> <span class="p">[</span><span class="o">&lt;</span><span class="nx">value</span><span class="o">&gt;</span><span class="p">,</span> <span class="p">...</span> <span class="p">])</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;exclude&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;qx.util.*&quot;</span><span class="p">]</span>
+<span class="s2">&quot;export&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;job1&quot;</span><span class="p">,</span> <span class="s2">&quot;job2&quot;</span><span class="p">,</span> <span class="s2">&quot;job3&quot;</span><span class="p">]</span>
+
+<span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;job1&quot;</span><span class="p">,</span> <span class="s2">&quot;job2&quot;</span><span class="p">,</span> <span class="s2">&quot;job3&quot;</span> <span class="p">]</span>
+
+<span class="s2">&quot;fix-files&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;eol-style&quot;</span> <span class="o">:</span> <span class="s2">&quot;(LF|CR|CRLF)&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;tab-width&quot;</span> <span class="o">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;include&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;qx.util.*&quot;</span><span class="p">]</span>
+
+<span class="s2">&quot;include&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span>   <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;as&quot;</span>     <span class="o">:</span> <span class="s2">&quot;&lt;name&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;import&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;job1&quot;</span><span class="p">,</span> <span class="s2">&quot;job2&quot;</span><span class="p">,</span> <span class="s2">&quot;job3&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;block&quot;</span>  <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;job4&quot;</span><span class="p">,</span> <span class="s2">&quot;job5&quot;</span><span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="s2">&quot;jobs&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;job_name&gt;&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="o">&lt;</span><span class="nx">job_definition</span><span class="o">&gt;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;macro_name&gt;&quot;</span>  <span class="o">:</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;&lt;macro_name1&gt;&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="p">...</span> <span class="p">],</span>
+  <span class="s2">&quot;&lt;macro_name2&gt;&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;library&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;manifest&quot;</span>   <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;uri&quot;</span>        <span class="o">:</span> <span class="s2">&quot;&lt;from_html_to_manifest_dir&gt;&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="s2">&quot;lint-check&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;allowed-globals&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx&quot;</span><span class="p">,</span> <span class="s2">&quot;${APPLICATION}&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;ignore-catch-param&quot;</span>            <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-deprecated-symbols&quot;</span>     <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-environment-nonlit-key&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-multiple-mapkeys&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-multiple-vardecls&quot;</span>      <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-no-loop-block&quot;</span>          <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-reference-fields&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-undeclared-privates&quot;</span>    <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-undefined-globals&quot;</span>      <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-shadowing-locals&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-unused-parameter&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;ignore-unused-variables&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;run&quot;</span>                           <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;warn-unknown-jsdoc-keys&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;warn-jsdoc-key-syntax&quot;</span>         <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;log&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;classes-unused&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;custom.*&quot;</span><span class="p">,</span> <span class="s2">&quot;qx.util.*&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;dependencies&quot;</span>   <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span>         <span class="o">:</span> <span class="p">(</span><span class="s2">&quot;using&quot;</span><span class="o">|</span><span class="s2">&quot;used-by&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;phase&quot;</span>        <span class="o">:</span> <span class="p">(</span><span class="s2">&quot;runtime&quot;</span><span class="o">|</span><span class="s2">&quot;loadtime&quot;</span><span class="o">|</span><span class="kc">null</span><span class="p">),</span>
+    <span class="s2">&quot;include-transitive-load-deps&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+    <span class="s2">&quot;force-fresh-deps&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+    <span class="s2">&quot;format&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="s2">&quot;txt&quot;</span><span class="o">|</span><span class="s2">&quot;dot&quot;</span><span class="o">|</span><span class="s2">&quot;json&quot;</span><span class="o">|</span><span class="s2">&quot;provider&quot;</span><span class="o">|</span><span class="s2">&quot;flare&quot;</span><span class="o">|</span><span class="s2">&quot;term&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;dot&quot;</span>          <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;root&quot;</span>           <span class="o">:</span> <span class="s2">&quot;custom.Application&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;file&quot;</span>           <span class="o">:</span> <span class="s2">&quot;&lt;filename&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;radius&quot;</span>         <span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+      <span class="s2">&quot;span-tree-only&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+      <span class="s2">&quot;compiled-class-size&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;json&quot;</span>         <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;file&quot;</span>       <span class="o">:</span> <span class="s2">&quot;&lt;filename&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;pretty&quot;</span>     <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;flare&quot;</span>        <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;file&quot;</span>       <span class="o">:</span> <span class="s2">&quot;&lt;filename&gt;&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;pretty&quot;</span>     <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;filter&quot;</span>         <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;debug&quot;</span>        <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;generator.code.PartBuilder.*&quot;</span> <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;privates&quot;</span>       <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;resources&quot;</span>      <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;file&quot;</span>         <span class="o">:</span> <span class="s2">&quot;&lt;filename&gt;&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;translations&quot;</span>   <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;untranslated-keys&quot;</span><span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;skip-locales&quot;</span>   <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;C&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;migrate-files&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+   <span class="s2">&quot;from-version&quot;</span> <span class="o">:</span> <span class="s2">&quot;0.7&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;migrate-html&quot;</span> <span class="o">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;Some text.&quot;</span>
+
+<span class="s2">&quot;packages&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;parts&quot;</span>  <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;&lt;part_name&gt;&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;include&quot;</span>                  <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;app.class1&quot;</span><span class="p">,</span> <span class="s2">&quot;app.class2&quot;</span><span class="p">,</span> <span class="s2">&quot;app.class3.*&quot;</span> <span class="p">],</span>
+      <span class="s2">&quot;expected-load-order&quot;</span>      <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s2">&quot;no-merge-private-package&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;sizes&quot;</span>  <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;min-package&quot;</span>           <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;min-package-unshared&quot;</span>  <span class="o">:</span> <span class="mi">1</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;init&quot;</span>             <span class="o">:</span> <span class="s2">&quot;&lt;part_name&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;separate-loader&quot;</span>  <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;i18n-as-parts&quot;</span>    <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;additional-merge-constraints&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;verifier-bombs-on-error&quot;</span>      <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;pretty-print&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;general&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;indent-string&quot;</span>        <span class="o">:</span> <span class="s2">&quot;  &quot;</span><span class="p">,</span>
+    <span class="s2">&quot;text-width&quot;</span>           <span class="o">:</span> <span class="mi">80</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;comments&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;block&quot;</span>  <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;add&quot;</span>  <span class="o">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;trailing&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;keep-column&quot;</span>        <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;comment-cols&quot;</span>       <span class="o">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">90</span><span class="p">],</span>
+      <span class="s2">&quot;padding&quot;</span>            <span class="o">:</span> <span class="s2">&quot;  &quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;code&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;align-with-curlies&quot;</span>   <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;open-curly&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+      <span class="s2">&quot;newline-before&quot;</span>     <span class="o">:</span> <span class="s2">&quot;m&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;indent-before&quot;</span>      <span class="o">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;provider&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;app-root&quot;</span> <span class="o">:</span> <span class="s2">&quot;./provider&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;include&quot;</span>  <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;${APPLICATION}.*&quot;</span><span class="p">],</span>
+  <span class="s2">&quot;exclude&quot;</span>  <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;${APPLICATION}.test.*&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;require&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;class_name&gt;&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.util&quot;</span><span class="p">,</span> <span class="s2">&quot;qx.fx&quot;</span> <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;run&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;&lt;job1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;job2&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;job3&gt;&quot;</span> <span class="p">]</span>
+
+<span class="s2">&quot;shell&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;command&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="s2">&quot;echo foo bar baz&quot;</span><span class="o">|</span><span class="p">[</span><span class="s2">&quot;echo foo&quot;</span><span class="p">,</span> <span class="s2">&quot;echo bar&quot;</span><span class="p">,</span> <span class="s2">&quot;echo baz&quot;</span><span class="p">])</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;slice-images&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;convert-cmd&quot;</span> <span class="o">:</span> <span class="s2">&quot;&lt;string_template&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;&lt;input_image&gt;&quot;</span> <span class="o">:</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;prefix&quot;</span>       <span class="o">:</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;border-width&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="mi">5</span> <span class="o">|</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]),</span>
+        <span class="s2">&quot;trim-width&quot;</span>   <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;translate&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;namespaces&quot;</span>               <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.util&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;locales&quot;</span>                  <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;pofile-with-metadata&quot;</span>     <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="s2">&quot;poentry-with-occurrences&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;use&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;&lt;class_name&gt;&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.util&quot;</span><span class="p">,</span> <span class="s2">&quot;qx.fx&quot;</span> <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;watch-files&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;paths&quot;</span>   <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;file/or/dir/to/watch&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;command&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;line&quot;</span>  <span class="o">:</span> <span class="s2">&quot;generate.py source&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;per-file&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="s2">&quot;include&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;*.js&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;include-dirs&quot;</span>    <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;check-interval&quot;</span>  <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="s2">&quot;exit-on-retcode&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;web-server&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;document-root&quot;</span> <span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;server-port&quot;</span>  <span class="o">:</span> <span class="mi">8080</span><span class="p">,</span>
+  <span class="s2">&quot;log-level&quot;</span>    <span class="o">:</span> <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;allow-remote-access&quot;</span> <span class="o">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+
+<span class="s2">&quot;web-server-config&quot;</span> <span class="o">:</span>
+<span class="p">{</span>
+  <span class="s2">&quot;output-dir&quot;</span>     <span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;template-dir&quot;</span>   <span class="o">:</span> <span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;httpd-type&quot;</span>     <span class="o">:</span> <span class="s2">&quot;apache2&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;httpd-host-url&quot;</span> <span class="o">:</span> <span class="s2">&quot;http://localhost:8080&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="generator_config_macros.html"
+             title="previous chapter">« Generator Config Macros</a>
+          <span class="separator">|</span>
+          <a class="next" href="../ebnf_like.html"
+             title="next chapter">Syntax Diagrams »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">qooxdoo Generator Cheat Sheet - v.5.0.2</a><ul>
+<li><a class="reference internal" href="#command-line-options">Command-line Options</a></li>
+<li><a class="reference internal" href="#default-jobs">Default Jobs</a></li>
+<li><a class="reference internal" href="#config-file-layout">Config File Layout</a></li>
+<li><a class="reference internal" href="#configuration-keys">Configuration Keys</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="../ebnf_like.html"
+                        title="next chapter">Syntax Diagrams</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="generator_config_macros.html"
+                        title="previous chapter">Generator Config Macros</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../../_sources/pages/tool/generator/cheat_sheet.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

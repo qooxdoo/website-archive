@@ -1,0 +1,400 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>qx.Website &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../index.html" />
+    <link rel="up" title="Table of Contents" href="../toc.html" />
+    <link rel="next" title="qx.Website Overview" href="website/overview.html" />
+    <link rel="prev" title="Gesture Events" href="core/gestures.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../index.html">Manual (v5.0.2)</a>
+     &#187;
+    <a href="">qx.Website</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="qx-website">
+<h1>qx.Website<a class="headerlink" href="#qx-website" title="Permalink to this headline">¶</a></h1>
+<p>You use qx.Website to build light-weight, integrated, low-level components for web sites or other browser-like environments where you don't want to add graphical elements with qooxdoo. It features a DOM selector engine (Sizzle), BOM and HTML abstraction layers, and cross-browser keyboard and pointer (mouse / touch / pen) events. As it does not contain visual elements, it is independent of image resources and theming. Its code can be shrink-wrapped into a single JavaScript file, and is available as an individual download. You can include it like any other JavaScript library in your projects.</p>
+<p>This section provides tutorials and introductory material. For your daily work with qx.Website the only other thing you need is the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/website-api">API reference</a>.</p>
+<div class="section" id="general">
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/overview.html">qx.Website Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/overview.html#basic-concept">Basic Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/overview.html#api-documentation">API Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/overview.html#css-selector-support">CSS Selector Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/overview.html#plugins">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/overview.html#modules">Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="website/modules.html">Module Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core">Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-attributes">Core: Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-css">Core: CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-environment">Core: Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-event">Core: Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-manipulating">Core: Manipulating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-polyfill">Core: Polyfill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#core-traversing">Core: Traversing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#animation">Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#blocker">Blocker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#cookie">Cookie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#dataset">Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#dev">Dev</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#io">IO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#matchmedia">Matchmedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#media-queries-and-css-classes">Media queries and css classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#messaging">Messaging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#placeholder">Placeholder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#placement">Placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#rest">REST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#storage">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#template">Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#transform">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#util">Util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/modules.html#widget">Widget</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="widget-library">
+<h2>Widget Library<a class="headerlink" href="#widget-library" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/widgets.html">qx.Website Widgets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/widgets.html#creating-widgets-and-working-with-widget-collections">Creating widgets and working with widget collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/widgets.html#existing-markup">Existing markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/widgets.html#configuring-widgets">Configuring widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/widgets.html#overriding-templates">Overriding templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/widgets.html#preventing-memory-leaks">Preventing memory leaks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/tutorial_web_developers.html">Tutorial: Building Notifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/tutorial_web_developers.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/tutorial_web_developers.html#basics">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/tutorial_web_developers.html#popup">Popup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/tutorial_web_developers.html#notify">notify</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="layouts">
+<h2>Layouts<a class="headerlink" href="#layouts" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/layouts.html">Layouts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/layouts.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/layouts.html#including-the-flexbox-styles">Including the flexbox styles</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="technical-topics">
+<h2>Technical Topics<a class="headerlink" href="#technical-topics" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/plugins.html">Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="website/plugins.html#regular-plugins">Regular Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/plugins.html#event-normalization-plugins">Event Normalization Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="website/plugins.html#howto">HowTo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="referring-to-the-qx-bom-api">
+<h3>Referring to the qx.bom API<a class="headerlink" href="#referring-to-the-qx-bom-api" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="website/tech_website_apis.html">Technical view on the low-level APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="website/storage.html">Client-side Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="website/css3animation.html">Transforms and Animations (CSS3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="website/back-button_and_bookmark_support.html">Back-Button and Bookmark Support</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="core/gestures.html"
+             title="previous chapter">« Gesture Events</a>
+          <span class="separator">|</span>
+          <a class="next" href="website/overview.html"
+             title="next chapter">qx.Website Overview »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">qx.Website</a><ul>
+<li><a class="reference internal" href="#general">General</a></li>
+<li><a class="reference internal" href="#widget-library">Widget Library</a></li>
+<li><a class="reference internal" href="#tutorials">Tutorials</a></li>
+<li><a class="reference internal" href="#layouts">Layouts</a></li>
+<li><a class="reference internal" href="#technical-topics">Technical Topics</a><ul>
+<li><a class="reference internal" href="#referring-to-the-qx-bom-api">Referring to the qx.bom API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="website/overview.html"
+                        title="next chapter">qx.Website Overview</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="core/gestures.html"
+                        title="previous chapter">Gesture Events</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../_sources/pages/website.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

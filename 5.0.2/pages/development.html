@@ -1,0 +1,476 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Development &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../index.html" />
+    <link rel="up" title="Table of Contents" href="../toc.html" />
+    <link rel="next" title="Application Skeletons" href="development/skeletons.html" />
+    <link rel="prev" title="FakeServer" href="communication/fake_server.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../index.html">Manual (v5.0.2)</a>
+     &#187;
+    <a href="">Development</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="development">
+<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
+<p>This section touches on various aspects and tools related to development
+activities with qooxdoo. Topics range from the various qooxdoo application
+types, over discussions of performance, unit testing and debugging, to
+internationalization and parts, a specific means to partition and lazily load
+application components.</p>
+<div class="section" id="application-creation">
+<h2>Application Creation<a class="headerlink" href="#application-creation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/skeletons.html">Application Skeletons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#desktop">Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#inline">Inline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#mobile">Mobile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#native">Native</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#website">Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/skeletons.html#server">Server</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/develop_how_to.html">How to Develop a qooxdoo Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/develop_how_to.html#application-layout">Application Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/develop_how_to.html#generate-before-run">Generate before Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/develop_how_to.html#source-versus-build">Source versus Build</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/logging.html">Logging System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/logging.html#writing-log-messages">Writing Log Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/logging.html#log-appenders">Log Appenders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/logging.html#writing-custom-log-appenders">Writing Custom Log Appenders</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/debugging.html">Debugging Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#introspection">Introspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#memory-leaks">Memory leaks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#ajax">AJAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#debugging-tools">Debugging Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#code-instrumentation-idioms">Code Instrumentation Idioms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#getting-at-your-objects">Getting at your Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/debugging.html#firebug-usage-idioms">Firebug Usage Idioms</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="performance">
+<h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/memory_management.html">Memory Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/memory_management.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/memory_management.html#disposing-an-application">Disposing an application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/memory_management.html#example-destructor">Example destructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/memory_management.html#how-to-test-the-destructor">How to test the destructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/memory_management.html#finding-memory-leaks">Finding memory leaks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/profiling.html">Profiling Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/profiling.html#how-to-enable-the-profiler">How to enable the Profiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/profiling.html#how-to-use-the-profiler">How to use the Profiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/profiling.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/profiling.html#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/unit_testing.html">Unit Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/frame_apps_testrunner.html">Test Runner</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="code-organisation">
+<h2>Code Organisation<a class="headerlink" href="#code-organisation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/code_organisation.html">Code Organisation Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/library_custom.html">Custom Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/contrib.html">qooxdoo-contrib</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="parts">
+<h2>Parts<a class="headerlink" href="#parts" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/parts_overview.html">Parts and Packages Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_overview.html#motivation">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_overview.html#development-model">Development Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_overview.html#loading-parts">Loading Parts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/parts_using.html">Using Parts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_using.html#basic-usage">Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_using.html#in-depth-configuring-the-include-key-of-your-parts">In Depth: Configuring the &quot;include&quot; Key of your Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/parts_using.html#advanced-usage-part-collapsing">Advanced Usage: Part Collapsing</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="further-resources">
+<h3>Further Resources<a class="headerlink" href="#further-resources" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-packages"><span class="std std-ref">Generator Configuration</span></a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/index.html#qx.io.PartLoader">qooxdoo API</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="internationalization">
+<h2>Internationalization<a class="headerlink" href="#internationalization" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/internationalization.html">Internationalization, Localization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/internationalization.html#localization">Localization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/internationalization.html#translation">Translation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="tool/translation/po_format.html"><span class="doc">PO File Cheat Sheet</span></a></li>
+</ul>
+</div>
+<div class="section" id="documenting-code">
+<h2>Documenting Code<a class="headerlink" href="#documenting-code" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/write_api_documentation.html">Writing API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/write_api_documentation.html#an-introductory-example">An introductory example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/write_api_documentation.html#advanced-doc-comments">Advanced Doc Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/write_api_documentation.html#package-documentation">Package documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/api_jsdoc_ref.html">JSDoc Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#overall-jsdoc-structure">Overall JSDoc Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#inline-markup">Inline Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#attributes-documentation-tags">Attributes / Documentation Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#handling-of-data-types">Handling of Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#matching-of-names-in-code">Matching of Names in Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_ref.html#section-reference">Section Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/api_jsdoc_at_ignore.html">&#64;ignore</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_at_ignore.html#variadic-arguments">Variadic Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_at_ignore.html#double-relevance">Double Relevance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_at_ignore.html#name-globbing">Name Globbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/api_jsdoc_at_ignore.html#scoped-application">Scoped Application</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/image_clipping_and_combining.html">Image clipping and combining</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/image_clipping_and_combining.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/image_clipping_and_combining.html#running-image-jobs">Running Image Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/image_clipping_and_combining.html#benefits">Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development/reporting_bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/aspects_template.html">An Aspect Template Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/internet_explorer_specific_settings.html">Internet Explorer specific settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/internet_explorer_specific_settings.html#document-mode-in-ie8">Document Mode in IE8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/internet_explorer_specific_settings.html#using-alpha-transparent-pngs">Using alpha-transparent PNGs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development/internet_explorer_specific_settings.html#url-rewriting-under-https">URL-Rewriting under HTTPS</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="communication/fake_server.html"
+             title="previous chapter">« FakeServer</a>
+          <span class="separator">|</span>
+          <a class="next" href="development/skeletons.html"
+             title="next chapter">Application Skeletons »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Development</a><ul>
+<li><a class="reference internal" href="#application-creation">Application Creation</a></li>
+<li><a class="reference internal" href="#debugging">Debugging</a></li>
+<li><a class="reference internal" href="#performance">Performance</a></li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+<li><a class="reference internal" href="#code-organisation">Code Organisation</a></li>
+<li><a class="reference internal" href="#parts">Parts</a><ul>
+<li><a class="reference internal" href="#further-resources">Further Resources</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#internationalization">Internationalization</a></li>
+<li><a class="reference internal" href="#documenting-code">Documenting Code</a></li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="development/skeletons.html"
+                        title="next chapter">Application Skeletons</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="communication/fake_server.html"
+                        title="previous chapter">FakeServer</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../_sources/pages/development.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

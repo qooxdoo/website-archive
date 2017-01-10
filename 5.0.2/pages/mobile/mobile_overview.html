@@ -1,0 +1,414 @@
+
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Overview &#8212; qooxdoo 5.0.2 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
+    <link rel="up" title="qx.Mobile" href="../mobile.html" />
+    <link rel="next" title="Tutorial: Creating a Tweets Client with qooxdoo mobile" href="tutorial.html" />
+    <link rel="prev" title="qx.Mobile" href="../mobile.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body role="document">
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &#187;
+    <a href="../../index.html">Manual (v5.0.2)</a>
+       &#187;
+      <a href="../mobile.html" accesskey="U">qx.Mobile</a>
+     &#187;
+    <a href="">Overview</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="overview">
+<span id="pages-mobile-mobile-overview-overview"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>This is an introduction into qooxdoo's mobile framework. qooxdoo mobile
+provides a optimized widget set to build applications for mobile devices.</p>
+<div class="section" id="supported-mobile-operating-systems">
+<h2>Supported Mobile Operating Systems<a class="headerlink" href="#supported-mobile-operating-systems" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo mobile was tested with the native browsers of the following operating
+systems:</p>
+<ul class="simple">
+<li>iOS</li>
+<li>Android 1.6+ (Stock Browser and Chrome Mobile)</li>
+<li>Windows Phone 8</li>
+<li>BlackBerry 10 OS</li>
+</ul>
+</div>
+<div class="section" id="supported-desktop-browsers">
+<h2>Supported Desktop Browsers<a class="headerlink" href="#supported-desktop-browsers" title="Permalink to this headline">¶</a></h2>
+<p>qooxdoo mobile was tested with the following desktop browsers:</p>
+<ul class="simple">
+<li>Safari 5</li>
+<li>Chrome 10+</li>
+<li>Firefox 10+ (Experimental)</li>
+<li>Internet Explorer 10+</li>
+</ul>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple" id="index-0">
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.mobile">Mobile widget set</a></li>
+<li><a class="reference internal" href="theming.html"><span class="doc">Theming via CSS and SCSS</span></a></li>
+<li>Pointer events: pointerdown, pointerup, pointermove, pointerover, pointerout</li>
+<li>Touch events: touchstart, touchmove, touchend, touchcancel</li>
+<li>Gesture events: swipe, tap, longtap, dbltap, roll</li>
+<li>Animations between pages</li>
+<li>Fixed toolbars and momentum scrolling via <a class="reference external" href="http://cubiq.org/iscroll-4">iScroll</a></li>
+<li>Basic <a class="reference external" href="http://www.phonegap.com/">PhoneGap</a> support</li>
+<li>Support for high-resolution displays (&quot;Retina display support&quot;)</li>
+<li>Built-in handling of high DPI images for variable pixel densities</li>
+</ul>
+</div>
+<div class="section" id="api-documentation">
+<span id="pages-mobile-overview-api"></span><h2>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.application.Mobile">qx.application.Mobile</a>:
+The mobile application.</li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.mobile">qx.ui.mobile</a>:
+This package contains all mobile widgets. See the API documentation for more
+information.</li>
+</ul>
+</div>
+<div class="section" id="create-a-mobile-application">
+<h2>Create a Mobile Application<a class="headerlink" href="#create-a-mobile-application" title="Permalink to this headline">¶</a></h2>
+<p>To create a mobile application <code class="docutils literal"><span class="pre">mobileapp</span></code> in your home directory with your shell, change to your home directory (just <code class="docutils literal"><span class="pre">cd</span></code>). With a qooxdoo SDK available at <code class="docutils literal"><span class="pre">/opt/qooxdoo-5.0.2-sdk</span></code>, call the script as follows:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>/opt/qooxdoo-5.0.2-sdk/create-application.py --type=mobile --name=mobileapp --out=.
+</pre></div>
+</div>
+<p>Have a look into the API documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.mobile.page.Page">qx.ui.mobile.page.Page</a>
+to understand the basic concepts of qooxdoo mobile.</p>
+<p>To learn how to develop a basic mobile application, you should try the <a class="reference internal" href="tutorial.html"><span class="doc">mobile tweets client tutorial</span></a>.</p>
+<p>If you are new to qooxdoo, make sure you have read the <a class="reference internal" href="../tool/getting_started.html#pages-getting-started-helloworld-setup-the-framework"><span class="std std-ref">getting started</span></a> tutorial to
+understand the basics of qooxdoo.</p>
+</div>
+<div class="section" id="environment-keys">
+<h2>Environment Keys<a class="headerlink" href="#environment-keys" title="Permalink to this headline">¶</a></h2>
+<p>The following environment keys are available:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">qx.mobile.nativescroll:</span> <span class="pre">true|false</span></code> - Whether to use native scrolling or
+<a class="reference external" href="http://cubiq.org/iscroll-4">iScroll</a> for scrolling.</li>
+<li><code class="docutils literal"><span class="pre">device.pixelRatio:</span> <span class="pre">Number</span></code> - the ratio between physical pixels and device-independent pixels (dips) on the device.</li>
+<li><code class="docutils literal"><span class="pre">device.type:</span> <span class="pre">String</span></code> - Determines on what type of device the application is running. Valid values are: &quot;mobile&quot;, &quot;tablet&quot; or &quot;desktop&quot;.</li>
+</ul>
+</div>
+<div class="section" id="differences-to-desktop-widgets">
+<h2>Differences to Desktop Widgets<a class="headerlink" href="#differences-to-desktop-widgets" title="Permalink to this headline">¶</a></h2>
+<p>The qooxdoo mobile widget set is optimized for the use on mobile devices. In fact,
+the qooxdoo mobile widget set is up to six times faster than the desktop widget set
+on mobile devices.
+We have tried to keep the differences of the API as low as possible, so that a qooxdoo
+developer will have his first qooxdoo mobile application running within minutes.
+Of course, respecting the speed advantage, not all features of the desktop widget set
+could be retained. There are some differences, listed below:</p>
+<ul class="simple">
+<li>Theming: The theming is done via CSS files. Have a look into the existing themes, to see
+how the styling is done. You can find the themes under <code class="docutils literal"><span class="pre">framework/source/resource/qx/mobile/css/</span></code>.
+To change the theme, just change the included CSS file in the <code class="docutils literal"><span class="pre">index.html</span></code> and change the loaded
+assets in your mobile application. There is a <code class="docutils literal"><span class="pre">index.html</span></code> file for the build version as well. You can
+find it in the <code class="docutils literal"><span class="pre">source/resource/</span></code> folder of your application.</li>
+<li>No layout item: Only a few, essential, styles are provided by a widget. You
+should set all other styles of a widget via CSS, using the <code class="docutils literal"><span class="pre">addCssClass</span></code> method of a widget.</li>
+<li>No queues: Elements are created directly. There is no element, layout, display queue. Keep this in
+mind when you create and add widgets.</li>
+<li>Layouts: Layouts are done via CSS(3). HBox / VBox layouts are implemented using the
+<a class="reference external" href="http://www.w3.org/TR/css3-flexbox/">flexible box layout</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.mobile.page.Page">qx.ui.mobile.page.Page</a>:
+A page is a widget that provides a screen which users can interact with in order to do something. Most times a page provides a single task or a group of related tasks. A qooxdoo mobile application is usually composed of one or more loosely bound pages.
+Typically there is one page that presents the &quot;main&quot; view.</li>
+</ul>
+</div>
+<div class="section" id="demo-applications">
+<h2>Demo Applications<a class="headerlink" href="#demo-applications" title="Permalink to this headline">¶</a></h2>
+<p>To see qooxdoo mobile applications in action or to see how to implement an application,
+you can have a look on the following demo applications:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/mobileshowcase">Mobile Showcase</a> - see all mobile widgets in action</li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/feedreader-mobile">Mobile Feedreader</a> - the feedreader as a mobile app. Using the same logic and models as the feedreader for desktop browsers does.</li>
+</ul>
+<p>All applications can be found in the <code class="docutils literal"><span class="pre">application</span></code> folder of your qooxdoo checkout.</p>
+</div>
+<div class="section" id="how-to-contribute">
+<h2>How to contribute?<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h2>
+<p>You can contribute in different ways:</p>
+<ul class="simple">
+<li>Testing: Test qooxdoo mobile on your mobile device and give us feedback.</li>
+<li>Theming: You can optimize the current CSS files or even create your own theme.</li>
+<li>Widgets: Widget / Feature missing? Create an widget an post it back to us.</li>
+<li>Bugs: If you have found a bug, or when you have fixed it already, please open
+a bug report in the qooxdoo <a class="reference external" href="http://bugzilla.qooxdoo.org/">Bugzilla</a> with the
+<code class="docutils literal"><span class="pre">core-mobile</span></code> component.</li>
+<li>Devices: If you have an old smartphone (Android, iPhone, Blackberry, Windows Phone, WebOS, etc.)
+that you don't need anymore, you could donate it to qooxdoo. We would be happy to test qooxdoo mobile on it.</li>
+<li>Discussion/Feedback: Please post questions to <a class="reference external" href="http://lists.sourceforge.net/lists/listinfo/qooxdoo-devel">our mailing list</a>.</li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="../mobile.html"
+             title="previous chapter">« qx.Mobile</a>
+          <span class="separator">|</span>
+          <a class="next" href="tutorial.html"
+             title="next chapter">Tutorial: Creating a Tweets Client with qooxdoo mobile »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Overview</a><ul>
+<li><a class="reference internal" href="#supported-mobile-operating-systems">Supported Mobile Operating Systems</a></li>
+<li><a class="reference internal" href="#supported-desktop-browsers">Supported Desktop Browsers</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#api-documentation">API Documentation</a></li>
+<li><a class="reference internal" href="#create-a-mobile-application">Create a Mobile Application</a></li>
+<li><a class="reference internal" href="#environment-keys">Environment Keys</a></li>
+<li><a class="reference internal" href="#differences-to-desktop-widgets">Differences to Desktop Widgets</a></li>
+<li><a class="reference internal" href="#demo-applications">Demo Applications</a></li>
+<li><a class="reference internal" href="#how-to-contribute">How to contribute?</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="tutorial.html"
+                        title="next chapter">Tutorial: Creating a Tweets Client with qooxdoo mobile</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="../mobile.html"
+                        title="previous chapter">qx.Mobile</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/5.0.2/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/5.0.2/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/mobile/mobile_overview.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>
