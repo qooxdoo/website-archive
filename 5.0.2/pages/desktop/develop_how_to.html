@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How to Develop a qx.Desktop Application &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>How to Develop a qx.Desktop Application &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Widget" href="../widget.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">How to Develop a qx.Desktop Application</a>
     </section>
     <section id="content">
@@ -162,9 +161,9 @@ necessary to produce a runnable application that will work in a browser. You
 might have to re-run this step, depending on the variant of source version you
 created. (In such a case, you will cycle to 1. instead of 2.). The currently
 available source jobs include
-<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source"><span class="std std-ref">source</span></a>,
-<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-all"><span class="std std-ref">source-all</span></a> and
-<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-hybrid"><span class="std std-ref">source-hybrid</span></a>. You can also use our <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-watch"><span class="std std-ref">watch</span></a> job which will mirror all your changes and start the generation job automatically. See their individual job descriptions for details.</p>
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source"><em>source</em></a>,
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-all"><em>source-all</em></a> and
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-hybrid"><em>source-hybrid</em></a>. You can also use our <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-watch"><em>watch</em></a> job which will mirror all your changes and start the generation job automatically. See their individual job descriptions for details.</p>
 </div>
 <div class="section" id="build-version">
 <h2>Build Version<a class="headerlink" href="#build-version" title="Permalink to this headline">¶</a></h2>
@@ -184,7 +183,7 @@ application without flaws.</p>
 <li>Class code is compressed and optimized, and put in only a few script files,
 which are later loaded by the loader script.</li>
 <li>The number of script files is
-highly configurable, depending mainly on the us of <a class="reference internal" href="../development/parts_overview.html#pages-parts-overview-parts-and-packages-overview"><span class="std std-ref">parts</span></a>. In general, the Generator
+highly configurable, depending mainly on the us of <a class="reference internal" href="../development/parts_overview.html#pages-parts-overview-parts-and-packages-overview"><em>parts</em></a>. In general, the Generator
 tries to minimize the number of script files.</li>
 </ul>
 </div>
@@ -232,9 +231,9 @@ scope of the web server.</p>
 which you can run in your application main directory. Both build on the fact
 that you can usually find a <em>common root</em> of all involved paths on the file
 system, and to use that common root as an entry point for a web server.</p>
-<p>The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-server"><span class="std std-ref">source-server</span></a> job starts
+<p>The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-server"><em>source-server</em></a> job starts
 a simple built-in web server that exports the common root as its document root.
-The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-httpd-config"><span class="std std-ref">source-httpd-config</span></a> job,
+The <a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-httpd-config"><em>source-httpd-config</em></a> job,
 on the other hand, generates a web server configuration file, suitable for the
 most popular web servers, so you can include it with your existing web server
 setup. Both jobs will print on the console the URL with which you can load your
@@ -256,23 +255,19 @@ use, are equally accessible by the web server.</p>
 </li>
 <li><p class="first">Make sure the relative paths on the web server match those on your file
 system, e.g. if your app lives on the file system at</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>/a/b/A/myapp
-</pre></div>
+<div class="highlight-javascript"><pre>/a/b/A/myapp</pre>
 </div>
 <p>and your qooxdoo installation is at</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>/a/b/Z/qooxdoo-sdk
-</pre></div>
+<div class="highlight-javascript"><pre>/a/b/Z/qooxdoo-sdk</pre>
 </div>
 <p>and the server path to your app is</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>/web/apps/myapp
-</pre></div>
+<div class="highlight-javascript"><pre>/web/apps/myapp</pre>
 </div>
 <p>then make sure the server path to qooxdoo is</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>/web/Z/qooxdoo-sdk
-</pre></div>
+<div class="highlight-javascript"><pre>/web/Z/qooxdoo-sdk</pre>
 </div>
 <p>so that relative references like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">..</span><span class="o">/</span><span class="nx">Z</span><span class="o">/</span><span class="nx">qooxdoo</span><span class="o">-</span><span class="nx">sdk</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">..</span><span class="o">/</span><span class="nx">Z</span><span class="o">/</span><span class="nx">qooxdoo</span><span class="o">-</span><span class="nx">sdk</span>
 </pre></div>
 </div>
 <p>will work under the web server.</p>
@@ -297,7 +292,7 @@ system, e.g. if your app lives on the file system at</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">How to Develop a qx.Desktop Application</a><ul>
@@ -426,7 +421,7 @@ system, e.g. if your app lives on the file system at</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

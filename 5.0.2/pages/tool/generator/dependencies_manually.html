@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Adding Dependency Information Manually &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Adding Dependency Information Manually &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Generator Configuration File" href="generator_config.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Adding Dependency Information Manually</a>
     </section>
     <section id="content">
@@ -151,18 +150,18 @@ class dynamically, you need to inform the Generator about these dependencies
 explicitly. There are different ways to achieve that.</p>
 <div class="section" id="in-the-class-file">
 <h2>In the class file<a class="headerlink" href="#in-the-class-file" title="Permalink to this headline">¶</a></h2>
-<p>You can declare dependencies at the top of the class file using the <a class="reference internal" href="../sdk/code_structure.html#pages-code-structure-details"><span class="std std-ref">require</span></a> and
-<a class="reference internal" href="../sdk/code_structure.html#pages-code-structure-details"><span class="std std-ref">use</span></a> compiler hints. They are embedded in specific comments and don't interfere
+<p>You can declare dependencies at the top of the class file using the <a class="reference internal" href="../sdk/code_structure.html#pages-code-structure-details"><em>require</em></a> and
+<a class="reference internal" href="../sdk/code_structure.html#pages-code-structure-details"><em>use</em></a> compiler hints. They are embedded in specific comments and don't interfere
 with normal JavaScript syntax. For example</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * @require(qx.module.Animation)</span>
 <span class="cm"> * @use(qx.module.Cookie)</span>
 <span class="cm"> */</span>
 </pre></div>
 </div>
-<p>Mind the difference between <code class="docutils literal"><span class="pre">require</span></code> and <code class="docutils literal"><span class="pre">use</span></code>. <code class="docutils literal"><span class="pre">use</span></code> should be preferred
+<p>Mind the difference between <tt class="docutils literal"><span class="pre">require</span></tt> and <tt class="docutils literal"><span class="pre">use</span></tt>. <tt class="docutils literal"><span class="pre">use</span></tt> should be preferred
 as it only says that the required class has to be available &quot;eventually&quot; at
-runtime. <code class="docutils literal"><span class="pre">require</span></code> imposes a stronger constraint as it demands that the
+runtime. <tt class="docutils literal"><span class="pre">require</span></tt> imposes a stronger constraint as it demands that the
 required class is loaded <em>ahead</em> of the current class, and should only be used
 when the required class is used at load-time of the current class (e.g. in the
 <em>defer</em> method).</p>
@@ -171,9 +170,9 @@ when the required class is used at load-time of the current class (e.g. in the
 <h2>In the configuration<a class="headerlink" href="#in-the-configuration" title="Permalink to this headline">¶</a></h2>
 <p>You can specify dependencies in the configuration of the jobs that create your
 application. The corresponding configuration keys are (not surprisingly)
-<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-require"><span class="std std-ref">require</span></a> and
-<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-use"><span class="std std-ref">use</span></a>. Here is an example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;source-script&quot;</span> <span class="o">:</span>
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-require"><em>require</em></a> and
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-use"><em>use</em></a>. Here is an example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;source-script&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="s2">&quot;require&quot;</span> <span class="o">:</span>
   <span class="p">{</span>
@@ -187,7 +186,7 @@ application. The corresponding configuration keys are (not surprisingly)
 </pre></div>
 </div>
 <p>Remember that source and build jobs are independent from each other so you
-usually want to add this configuration also to the <code class="docutils literal"><span class="pre">build-script</span></code> job to have
+usually want to add this configuration also to the <tt class="docutils literal"><span class="pre">build-script</span></tt> job to have
 the dependencies available in both build types.</p>
 <p>Passing dependency information via configuration is interesting when you don't
 want to hard-wire this information into the class file. E.g. if you are building
@@ -207,7 +206,7 @@ dependencies, the configuration method is preferable.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Adding Dependency Information Manually</a><ul>
@@ -325,7 +324,7 @@ dependencies, the configuration method is preferable.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

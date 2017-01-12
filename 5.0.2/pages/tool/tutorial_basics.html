@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial: Basic Tool Chain Usage &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Tutorial: Basic Tool Chain Usage &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Tooling" href="../tool.html" />
     <link rel="next" title="Grunt frontend" href="grunt.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Tutorial: Basic Tool Chain Usage</a>
     </section>
     <section id="content">
@@ -156,7 +155,7 @@ is the configuration file that steers the Generator and its actions.
 When invoked, the Generator looks for a file of this name in the current
 directory for default instructions, but you can supply an alternative
 configuration file with a command line option. Invoking</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">h</span> <span class="o">|--</span><span class="nx">help</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">h</span> <span class="o">|--</span><span class="nx">help</span>
 </pre></div>
 </div>
 <p>gives you a complete list of those options.</p>
@@ -167,7 +166,7 @@ run the &quot;default job&quot; if the configuration defines one.</p>
 <p>Supplying a non-existing job name will result in
 the Generator providing a list of known jobs which it can perform. You
 can try this by using a made-up job name like &quot;<em>x</em>&quot;:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">x</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">x</span>
 </pre></div>
 </div>
 <p>The ensuing list can be daunting at first, but we will pick out the most
@@ -197,14 +196,14 @@ be run.</p>
 reflected by the available generation jobs, &quot;source&quot;, &quot;source-hybrid&quot;,
 &quot;source-all&quot; and &quot;build&quot;. The most important for starting and building up your
 app, are the source jobs. Running</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span>
 </pre></div>
 </div>
 <p>will generate the so-called &quot;source version&quot; of your application in the default variant.</p>
 <p>In general, the source version of an app is tailored towards development activities. It
 makes it easy to write code, run the application, test, debug and
 inspect the application code, fix issues, add enhancements, and repeat.</p>
-<p>In the <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source"><span class="std std-ref">source</span></a> job, all the classes of the app are in their original source form, and loaded from their original file paths on the file system.
+<p>In the <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source"><em>source</em></a> job, all the classes of the app are in their original source form, and loaded from their original file paths on the file system.
 If you inspect your application in a JavaScript debugger like Firebug or
 Chrome Developer Tools, you can identify each of your custom files individually, read
 its code and comments, set breakpoints, inspect variables and so forth.
@@ -213,8 +212,8 @@ This job is particular interesting when you want to debug classes outside your c
 dependencies, e.g. by instantiating a class you haven't used before.
 This changes the set of necessary classes for your application, and the
 Generator has to re-create the corresponding loader.</p>
-<p>In the <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-hybrid"><span class="std std-ref">source-hybrid</span></a> version, the Generator will concatenate class files into a bunch of script files, except for your application classes which are loaded directly from their original path on the file system. This allows for a reasonable loading speed of your application in the browser while still providing convenient debug access to your own class files.</p>
-<p>With <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-all"><span class="std std-ref">source-all</span></a> all existing classes will be included, be they
+<p>In the <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-hybrid"><em>source-hybrid</em></a> version, the Generator will concatenate class files into a bunch of script files, except for your application classes which are loaded directly from their original path on the file system. This allows for a reasonable loading speed of your application in the browser while still providing convenient debug access to your own class files.</p>
+<p>With <a class="reference internal" href="generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-source-all"><em>source-all</em></a> all existing classes will be included, be they
 part of your application, the qooxdoo framework, or any other qooxdoo
 library or contribution you might be using. All those classes are
 included in the build, whether they are currently required or not. This
@@ -235,11 +234,11 @@ might be your preference.</p>
 </div>
 <div class="section" id="a-deployment-build">
 <h2>A Deployment Build<a class="headerlink" href="#a-deployment-build" title="Permalink to this headline">¶</a></h2>
-<p>On the other end of the spectrum there is the <code class="docutils literal"><span class="pre">build</span></code> version of you
+<p>On the other end of the spectrum there is the <tt class="docutils literal"><span class="pre">build</span></tt> version of you
 app. The &quot;build&quot; version is what you want to create at the end of a
 development cycle, when your app is stable and you want to deploy it
 into production. Running</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">build</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">build</span>
 </pre></div>
 </div>
 <p>will create a highly optimized version of your app. All necessary code
@@ -247,20 +246,19 @@ is stripped, squeezed and compressed, and put into as few JS files as
 possible. Everything is geared towards small size, fast transport, fast
 loading and minimal memory footprint. Along with the code, all other
 required resources, such as icons and images, are collected together
-under a common root directory, usually named <code class="docutils literal"><span class="pre">build</span></code>. The good thing
+under a common root directory, usually named <tt class="docutils literal"><span class="pre">build</span></tt>. The good thing
 here is that this makes the contents of this directory self-contained so
 you can copy it to the document tree of a web server, zip it up and send
 it by mail, and so forth. All necessary content will be included, and the
 app will just run when the contained <em>index.hmtl</em> is loaded.</p>
-<p>For an example let's suppose you have an application <code class="docutils literal"><span class="pre">myapp</span></code> and a web server
-instance running on a machine called <code class="docutils literal"><span class="pre">fooserv</span></code>. Then, given suitable network
+<p>For an example let's suppose you have an application <tt class="docutils literal"><span class="pre">myapp</span></tt> and a web server
+instance running on a machine called <tt class="docutils literal"><span class="pre">fooserv</span></tt>. Then, given suitable network
 connection and setup, the following command will copy your build version to the
 web server:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>scp -r build bar@fooserv:~/public_html/myapp
-</pre></div>
+<div class="highlight-javascript"><pre>scp -r build bar@fooserv:~/public_html/myapp</pre>
 </div>
 <p>and you can load it in the browser with</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">:</span><span class="c1">//fooserv/~bar/myapp/</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">http</span><span class="o">:</span><span class="c1">//fooserv/~bar/myapp/</span>
 </pre></div>
 </div>
 </div>
@@ -269,35 +267,35 @@ web server:</p>
 <p>So now you know about the basic jobs to create a runnable application
 using the Generator. There is a whole bunch of jobs that is not
 concerned with creating a runnable version of your app, but do other
-things. One of those is addressed in the <a class="reference internal" href="../desktop/tutorials/tutorial-part-4-3.html"><span class="doc">tweets tutorial</span></a> which is
+things. One of those is addressed in the <a class="reference internal" href="../desktop/tutorials/tutorial-part-4-3.html"><em>tweets tutorial</em></a> which is
 concerned with internationalization of an application. The Generator job
-in this context is <code class="docutils literal"><span class="pre">translation</span></code>, and extracts translatable strings
+in this context is <tt class="docutils literal"><span class="pre">translation</span></tt>, and extracts translatable strings
 from your JavaScript source files into <em>.po</em> files. Here is a quick
 topical overview of those kinds of jobs:</p>
 <p>Internationalization:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">translation</span></code> -- extract translatable strings into .po files</li>
+<li><tt class="docutils literal"><span class="pre">translation</span></tt> -- extract translatable strings into .po files</li>
 </ul>
 <p>Source Code:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">lint</span></code> -- check source code for potential issues</li>
-<li><code class="docutils literal"><span class="pre">fix</span></code> -- fix white space in source code</li>
-<li><code class="docutils literal"><span class="pre">pretty</span></code> -- re-format source code</li>
+<li><tt class="docutils literal"><span class="pre">lint</span></tt> -- check source code for potential issues</li>
+<li><tt class="docutils literal"><span class="pre">fix</span></tt> -- fix white space in source code</li>
+<li><tt class="docutils literal"><span class="pre">pretty</span></tt> -- re-format source code</li>
 </ul>
 <p>Development:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">api</span></code> -- create an application-specific instance of the Apiviewer</li>
-<li><code class="docutils literal"><span class="pre">test</span></code> -- create an application-specific instance of the Testrunner</li>
+<li><tt class="docutils literal"><span class="pre">api</span></tt> -- create an application-specific instance of the Apiviewer</li>
+<li><tt class="docutils literal"><span class="pre">test</span></tt> -- create an application-specific instance of the Testrunner</li>
 </ul>
 <p>Files:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">clean</span></code> -- clean up generated files for this app</li>
-<li><code class="docutils literal"><span class="pre">distclean</span></code> -- clean up generated files for this app, and delete
+<li><tt class="docutils literal"><span class="pre">clean</span></tt> -- clean up generated files for this app</li>
+<li><tt class="docutils literal"><span class="pre">distclean</span></tt> -- clean up generated files for this app, and delete
 the Generator cache</li>
 </ul>
 <p>As mentioned before, for a full list of available jobs with short
-descriptions run <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">x</span></code>, or see the
-the list of <a class="reference internal" href="generator/default_jobs_actions.html"><span class="doc">default jobs</span></a>.</p>
+descriptions run <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">x</span></tt>, or see the
+the list of <a class="reference internal" href="generator/default_jobs_actions.html"><em>default jobs</em></a>.</p>
 </div>
 <div class="section" id="tweaking-jobs">
 <h2>Tweaking Jobs<a class="headerlink" href="#tweaking-jobs" title="Permalink to this headline">¶</a></h2>
@@ -312,7 +310,7 @@ jobs can be freely defined or altered. The system is in fact so
 configurable that we have thought of means of limiting its flexibility,
 for the sake of an easier user interface. If you feel you want to change
 the way in which a particular Generator job works, or define one from scratch,
-see a <a class="reference internal" href="generator/config_tweaking.html"><span class="doc">dedicated page</span></a> on this topic.</p>
+see a <a class="reference internal" href="generator/config_tweaking.html"><em>dedicated page</em></a> on this topic.</p>
 </div>
 </div>
 
@@ -327,7 +325,7 @@ see a <a class="reference internal" href="generator/config_tweaking.html"><span 
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Tutorial: Basic Tool Chain Usage</a><ul>
@@ -448,7 +446,7 @@ see a <a class="reference internal" href="generator/config_tweaking.html"><span 
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

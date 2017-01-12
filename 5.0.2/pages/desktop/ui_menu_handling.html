@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Menu Handling &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Menu Handling &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Window Management" href="window_management.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Menu Handling</a>
     </section>
     <section id="content">
@@ -151,11 +150,11 @@
 <p><img alt="context_menu.png" src="../../_images/context_menu.png" /></p>
 <p>The <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/demobrowser/#widget~Menu.html">Demobrowser</a> provides further examples.</p>
 <p>Menus can be constructed in a qooxdoo application using widgets from the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.menu">qx.ui.menu</a> name space.
-The main class from this package is <code class="docutils literal"><span class="pre">Menu</span></code>. Other classes allow you to tailor the appearance and the behaviour of the menu you create. You can even use checkboxes and radiobuttons inside your menus.</p>
+The main class from this package is <tt class="docutils literal"><span class="pre">Menu</span></tt>. Other classes allow you to tailor the appearance and the behaviour of the menu you create. You can even use checkboxes and radiobuttons inside your menus.</p>
 <div class="section" id="simple-example">
 <span id="pages-ui-menu-handling-simple-example"></span><h2>Simple Example<a class="headerlink" href="#simple-example" title="Permalink to this headline">¶</a></h2>
 <p>Here is a simple menu example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Create the menu</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// Create the menu</span>
 <span class="kd">var</span> <span class="nx">menu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">Menu</span><span class="p">();</span>
 
 <span class="c1">// Creates the command</span>
@@ -182,20 +181,20 @@ The main class from this package is <code class="docutils literal"><span class="
 </div>
 <p>There are a couple of things to note here:</p>
 <ul class="simple">
-<li>The main widget is the <code class="docutils literal"><span class="pre">menu</span></code> of type <code class="docutils literal"><span class="pre">qx.ui.menu.Menu</span></code>.</li>
-<li>Menu buttons are of type <code class="docutils literal"><span class="pre">qx.ui.menu.Button</span></code> and are created individually.</li>
+<li>The main widget is the <tt class="docutils literal"><span class="pre">menu</span></tt> of type <tt class="docutils literal"><span class="pre">qx.ui.menu.Menu</span></tt>.</li>
+<li>Menu buttons are of type <tt class="docutils literal"><span class="pre">qx.ui.menu.Button</span></tt> and are created individually.</li>
 <li>They are then added to the menu. The buttons will appear in the menu in the order they are added.</li>
-<li>The <code class="docutils literal"><span class="pre">closeButton</span></code> is created with the minimal set of parameters, namely just the string for the button label. For a more advanced solution, see the <code class="docutils literal"><span class="pre">openButton</span></code>: you can optionally specify a button icon, and a command <code class="docutils literal"><span class="pre">qx.event.Command</span></code> that is invoked if the button or the shortcut is pressed/selected.</li>
-<li>You can supply missing or updated features after the widget's creation; e.g. the callback function for the <code class="docutils literal"><span class="pre">closeButton</span></code> is provided in a separate method call to <code class="docutils literal"><span class="pre">addListener()</span></code>.</li>
-<li>The canonical event for the selection of a menu button is the <code class="docutils literal"><span class="pre">execute</span></code> event. (This is in line with other button flavors throughout the qooxdoo framework, e.g. the regular <code class="docutils literal"><span class="pre">qx.ui.form.Button</span></code>).</li>
+<li>The <tt class="docutils literal"><span class="pre">closeButton</span></tt> is created with the minimal set of parameters, namely just the string for the button label. For a more advanced solution, see the <tt class="docutils literal"><span class="pre">openButton</span></tt>: you can optionally specify a button icon, and a command <tt class="docutils literal"><span class="pre">qx.event.Command</span></tt> that is invoked if the button or the shortcut is pressed/selected.</li>
+<li>You can supply missing or updated features after the widget's creation; e.g. the callback function for the <tt class="docutils literal"><span class="pre">closeButton</span></tt> is provided in a separate method call to <tt class="docutils literal"><span class="pre">addListener()</span></tt>.</li>
+<li>The canonical event for the selection of a menu button is the <tt class="docutils literal"><span class="pre">execute</span></tt> event. (This is in line with other button flavors throughout the qooxdoo framework, e.g. the regular <tt class="docutils literal"><span class="pre">qx.ui.form.Button</span></tt>).</li>
 </ul>
 </div>
 <div class="section" id="complex-menu-sample">
 <span id="pages-ui-menu-handling-complex-menu-sample"></span><h2>Complex Menu Sample<a class="headerlink" href="#complex-menu-sample" title="Permalink to this headline">¶</a></h2>
 <p>This example should show how to create a menu structure with submenu and how to handle with groups.</p>
-<p>Qooxdoo has some widgets that need a menu to handle user interaction. For this sample we will chose the <code class="docutils literal"><span class="pre">qx.ui.toolbar.ToolBar</span></code> to create the menu structure. To see a overview, witch widgets uses a menu, take a look in the <a class="reference internal" href="../widget/menu.html"><span class="doc">Menu</span></a>.</p>
+<p>Qooxdoo has some widgets that need a menu to handle user interaction. For this sample we will chose the <tt class="docutils literal"><span class="pre">qx.ui.toolbar.ToolBar</span></tt> to create the menu structure. To see a overview, witch widgets uses a menu, take a look in the <a class="reference internal" href="../widget/menu.html"><em>Menu</em></a>.</p>
 <p>This code snippet show how to create a &quot;ToolBar&quot; with to menu items &quot;File&quot; and &quot;View&quot;:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Create the toolbar and add to the DOM</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// Create the toolbar and add to the DOM</span>
 <span class="kd">var</span> <span class="nx">toolBar</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">toolbar</span><span class="p">.</span><span class="nx">ToolBar</span><span class="p">();</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">toolBar</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">left</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
@@ -234,14 +233,14 @@ The main class from this package is <code class="docutils literal"><span class="
 <dl class="docutils">
 <dt>There are a couple of things to note here:</dt>
 <dd><ul class="first last simple">
-<li>The <code class="docutils literal"><span class="pre">qx.ui.menu.Menu</span></code> could get some different children (Button, Separator, CheckBox, ...)</li>
-<li>The fourth parameter in <code class="docutils literal"><span class="pre">qx.ui.menu.Button</span></code> is also a menu. So it is possible to create submenus.</li>
-<li>There are tow kinds to add a separator to a menu. The first kind is to create a <code class="docutils literal"><span class="pre">Separator</span></code> instance and add this to the menu. Or the other kind is to call the <code class="docutils literal"><span class="pre">addSeparator</span></code> method from the <code class="docutils literal"><span class="pre">Menu</span></code> instance.</li>
+<li>The <tt class="docutils literal"><span class="pre">qx.ui.menu.Menu</span></tt> could get some different children (Button, Separator, CheckBox, ...)</li>
+<li>The fourth parameter in <tt class="docutils literal"><span class="pre">qx.ui.menu.Button</span></tt> is also a menu. So it is possible to create submenus.</li>
+<li>There are tow kinds to add a separator to a menu. The first kind is to create a <tt class="docutils literal"><span class="pre">Separator</span></tt> instance and add this to the menu. Or the other kind is to call the <tt class="docutils literal"><span class="pre">addSeparator</span></tt> method from the <tt class="docutils literal"><span class="pre">Menu</span></tt> instance.</li>
 </ul>
 </dd>
 </dl>
 <p>The next code snipped should explain how to create a menu, which contain RadioButtons, but only one could be selected:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">__getSyntaxMenu</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">__getSyntaxMenu</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">syntaxMenu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">menu</span><span class="p">.</span><span class="nx">Menu</span><span class="p">();</span>
 
@@ -269,8 +268,8 @@ The main class from this package is <code class="docutils literal"><span class="
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>You can see, that the menu contains <code class="docutils literal"><span class="pre">RadioButton</span></code> and all <code class="docutils literal"><span class="pre">RadioButton</span></code> should grouped in one <code class="docutils literal"><span class="pre">RadioGroup</span></code>, but the <code class="docutils literal"><span class="pre">RadioButton</span></code> in the submenu &quot;C Dialect&quot; should also be considered in the <code class="docutils literal"><span class="pre">RadioGroup</span></code>.</p>
-<p>To add a <code class="docutils literal"><span class="pre">RadioButton</span></code> to the <code class="docutils literal"><span class="pre">RadioGroup</span></code> call the <code class="docutils literal"><span class="pre">add()</span></code> method from the <code class="docutils literal"><span class="pre">RadioGroup</span></code>. The parameter from <code class="docutils literal"><span class="pre">add()</span></code> is a variable number of items which should be added. You can see that the code calls a <code class="docutils literal"><span class="pre">langGroup.add.apply()</span></code> method to add the <code class="docutils literal"><span class="pre">RadioButton</span></code> from the &quot;C Dialect&quot; submenu. This is no qooxdoo construction, the <code class="docutils literal"><span class="pre">apply()</span></code> method is a construction from JavaScript and it is not important to know how thus the method works.</p>
+<p>You can see, that the menu contains <tt class="docutils literal"><span class="pre">RadioButton</span></tt> and all <tt class="docutils literal"><span class="pre">RadioButton</span></tt> should grouped in one <tt class="docutils literal"><span class="pre">RadioGroup</span></tt>, but the <tt class="docutils literal"><span class="pre">RadioButton</span></tt> in the submenu &quot;C Dialect&quot; should also be considered in the <tt class="docutils literal"><span class="pre">RadioGroup</span></tt>.</p>
+<p>To add a <tt class="docutils literal"><span class="pre">RadioButton</span></tt> to the <tt class="docutils literal"><span class="pre">RadioGroup</span></tt> call the <tt class="docutils literal"><span class="pre">add()</span></tt> method from the <tt class="docutils literal"><span class="pre">RadioGroup</span></tt>. The parameter from <tt class="docutils literal"><span class="pre">add()</span></tt> is a variable number of items which should be added. You can see that the code calls a <tt class="docutils literal"><span class="pre">langGroup.add.apply()</span></tt> method to add the <tt class="docutils literal"><span class="pre">RadioButton</span></tt> from the &quot;C Dialect&quot; submenu. This is no qooxdoo construction, the <tt class="docutils literal"><span class="pre">apply()</span></tt> method is a construction from JavaScript and it is not important to know how thus the method works.</p>
 </div>
 <div class="section" id="additional-menu-topics">
 <span id="pages-ui-menu-handling-additional-menu-topics"></span><h2>Additional Menu Topics<a class="headerlink" href="#additional-menu-topics" title="Permalink to this headline">¶</a></h2>
@@ -293,7 +292,7 @@ The main class from this package is <code class="docutils literal"><span class="
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Menu Handling</a><ul>
@@ -415,7 +414,7 @@ The main class from this package is <code class="docutils literal"><span class="
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

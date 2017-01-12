@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Image clipping and combining &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Image clipping and combining &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Reporting Bugs" href="reporting_bugs.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">Image clipping and combining</a>
     </section>
     <section id="content">
@@ -146,22 +145,22 @@
 <span id="pages-image-clipping-and-combining-image-clipping-and-combining"></span><h1>Image clipping and combining<a class="headerlink" href="#image-clipping-and-combining" title="Permalink to this headline">¶</a></h1>
 <p>qooxdoo integrates the support for clipped and combined images in the
 framework where both features are heavily used, mainly in the
-different themes like <a class="reference internal" href="../desktop/ui_theming.html"><span class="doc">appearance or decoration themes</span></a>.</p>
+different themes like <a class="reference internal" href="../desktop/ui_theming.html"><em>appearance or decoration themes</em></a>.</p>
 <div class="section" id="configuration">
 <span id="pages-image-clipping-and-combining-setup"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To be able to use image clipping and combining you need a locally installed
-<a class="reference internal" href="../introduction/third_party_components.html"><span class="doc">ImageMagick</span></a> package. The
+<a class="reference internal" href="../introduction/third_party_components.html"><em>ImageMagick</em></a> package. The
 latest version known to work is 6.6.1.</p>
 </div>
 <p>To use the two features you have to configure dedicated generator jobs.  the
 generator to clip or combine images. You can add those jobs to your standard
-<code class="docutils literal"><span class="pre">config.json</span></code> file, or, as the configuration for these tasks is fairly
-self-contained, put them in an own file like <code class="docutils literal"><span class="pre">image.json</span></code>, as we do in the
+<tt class="docutils literal"><span class="pre">config.json</span></tt> file, or, as the configuration for these tasks is fairly
+self-contained, put them in an own file like <tt class="docutils literal"><span class="pre">image.json</span></tt>, as we do in the
 framework.</p>
 <p>Here is the general layout for the image manipulating jobs configuration:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
   <span class="s2">&quot;jobs&quot;</span> <span class="o">:</span>
   <span class="p">{</span>
     <span class="s2">&quot;common&quot;</span> <span class="o">:</span>
@@ -184,15 +183,15 @@ framework.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">common</span></code> job is used to set up the basic settings which are shared between
-the specific jobs <code class="docutils literal"><span class="pre">image-clipping</span></code> and <code class="docutils literal"><span class="pre">image-combine</span></code>, described
+<p>The <tt class="docutils literal"><span class="pre">common</span></tt> job is used to set up the basic settings which are shared between
+the specific jobs <tt class="docutils literal"><span class="pre">image-clipping</span></tt> and <tt class="docutils literal"><span class="pre">image-combine</span></tt>, described
 in the following sections.</p>
 <div class="section" id="image-clipping">
 <span id="pages-image-clipping-and-combining-image-clipping"></span><h3>Image clipping<a class="headerlink" href="#image-clipping" title="Permalink to this headline">¶</a></h3>
 <p>Clipping images is needed whenever you have a base image, e.g. a complete image
 for your button with rounded borders, and want to cut it into several parts. A
-common use case in the framework is to use such images for <code class="docutils literal"><span class="pre">grid</span></code> decorators.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;image-clipping&quot;</span> <span class="o">:</span>
+common use case in the framework is to use such images for <tt class="docutils literal"><span class="pre">grid</span></tt> decorators.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;image-clipping&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
    <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;common&quot;</span><span class="p">],</span>
 
@@ -212,23 +211,23 @@ common use case in the framework is to use such images for <code class="docutils
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>(Mind that you cannot split a string across lines in Json, so the <code class="docutils literal"><span class="pre">\</span></code> in the
-value of <code class="docutils literal"><span class="pre">convert-cmd</span></code> is only for better readability here in the manual.)
-Each entry in the <code class="docutils literal"><span class="pre">images</span></code> block represents one source image to clip.</p>
+<p>(Mind that you cannot split a string across lines in Json, so the <tt class="docutils literal"><span class="pre">\</span></tt> in the
+value of <tt class="docutils literal"><span class="pre">convert-cmd</span></tt> is only for better readability here in the manual.)
+Each entry in the <tt class="docutils literal"><span class="pre">images</span></tt> block represents one source image to clip.</p>
 <ul class="simple">
 <li>The key has to be the path to the <em>source</em> image.</li>
-<li>The <code class="docutils literal"><span class="pre">prefix</span></code> entry will set the base file path for all the result images.
-The resulting file paths will follow the rule <code class="docutils literal"><span class="pre">prefix</span> <span class="pre">+</span> <span class="pre">imagepart</span> <span class="pre">+</span>
-<span class="pre">extension</span></code> where imagepart will specify the spacial location from which
-the clip has been taken, e.g. <code class="docutils literal"><span class="pre">tl</span></code> for top-left or <code class="docutils literal"><span class="pre">br</span></code> for bottom-right
+<li>The <tt class="docutils literal"><span class="pre">prefix</span></tt> entry will set the base file path for all the result images.
+The resulting file paths will follow the rule <tt class="docutils literal"><span class="pre">prefix</span> <span class="pre">+</span> <span class="pre">imagepart</span> <span class="pre">+</span>
+<span class="pre">extension</span></tt> where imagepart will specify the spacial location from which
+the clip has been taken, e.g. <tt class="docutils literal"><span class="pre">tl</span></tt> for top-left or <tt class="docutils literal"><span class="pre">br</span></tt> for bottom-right
 etc. So one result image will be <em>&quot;../../clipped/groupBox-tl.png&quot;</em>.</li>
-<li>The entry <code class="docutils literal"><span class="pre">border-width</span></code> defines how deep from the border into the image the
+<li>The entry <tt class="docutils literal"><span class="pre">border-width</span></tt> defines how deep from the border into the image the
 cut will run. If you look at your source image you can determine the
 border-width by selecting a rectangle (which your graphic tool) which encloses
 the corner of the image completely. The edge of the rectangle is your
 border-width (see further).</li>
 </ul>
-<p>See the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-slice-images"><span class="std std-ref">slice-images reference</span></a> for all configuration
+<p>See the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-slice-images"><em>slice-images reference</em></a> for all configuration
 details.</p>
 <div class="section" id="visual-example">
 <h4>Visual example<a class="headerlink" href="#visual-example" title="Permalink to this headline">¶</a></h4>
@@ -236,7 +235,7 @@ details.</p>
 <p><img alt="groupbox_clipping.png" src="../../_images/groupbox_clipping.png" /></p>
 <p>The selection rectangle has the size of 4 x 4 pixels (a single pixel is
 indicated by the embedded square at the bottom-right corner), thus the
-<code class="docutils literal"><span class="pre">border-width</span></code> value is 4. Differing border width values for each of the four
+<tt class="docutils literal"><span class="pre">border-width</span></tt> value is 4. Differing border width values for each of the four
 sides are also supported. In that case, the value for border-width must be an
 array containing the four values in the order: top, right, bottom, left.</p>
 </div>
@@ -246,7 +245,7 @@ array containing the four values in the order: top, right, bottom, left.</p>
 <p>Complementary to image clipping image combining takes multiple images as sources
 and generates a single image out of them. The result image is like a box that
 contains the input images side by side. Here is a configuration sample:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;image-combine&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;image-combine&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
    <span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;common&quot;</span><span class="p">],</span>
 
@@ -273,17 +272,17 @@ contains the input images side by side. Here is a configuration sample:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>(Mind that you cannot split a string across lines in Json, so the <code class="docutils literal"><span class="pre">\</span></code> in the
-value of <code class="docutils literal"><span class="pre">montage-cmd</span></code> is only for better readability here in the manual.)
-Basically the structure is the same as for the <code class="docutils literal"><span class="pre">image-clipping</span></code> job. Let's
+<p>(Mind that you cannot split a string across lines in Json, so the <tt class="docutils literal"><span class="pre">\</span></tt> in the
+value of <tt class="docutils literal"><span class="pre">montage-cmd</span></tt> is only for better readability here in the manual.)
+Basically the structure is the same as for the <tt class="docutils literal"><span class="pre">image-clipping</span></tt> job. Let's
 take a look at the details.</p>
 <ul class="simple">
 <li>The key has to be the path of the <em>result</em> image.</li>
-<li>The <code class="docutils literal"><span class="pre">layout</span></code> key takes the two possible values &quot;horizontal&quot; or
+<li>The <tt class="docutils literal"><span class="pre">layout</span></tt> key takes the two possible values &quot;horizontal&quot; or
 &quot;vertical&quot; and determines the alignment of the source images inside the
 combined image.</li>
-<li><code class="docutils literal"><span class="pre">files</span></code> is an array which takes several input images that share the same
-path prefix. (This is relevant as the <code class="docutils literal"><span class="pre">prefix</span></code> will be stripped from the index
+<li><tt class="docutils literal"><span class="pre">files</span></tt> is an array which takes several input images that share the same
+path prefix. (This is relevant as the <tt class="docutils literal"><span class="pre">prefix</span></tt> will be stripped from the index
 which is also generated together with the output image. The individual files in
 the index are only identified by their paths <em>after</em> the prefix.)</li>
 </ul>
@@ -294,28 +293,28 @@ to be stretched <em>horizontally</em> by the browser, the images need to be alig
 <em>vertically</em>, and vice versa. If you are free in this respect the horizontal
 layout is usually the better choice</p>
 <p>For more information see the
-<a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-combine-images"><span class="std std-ref">combine-images</span></a>
+<a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-combine-images"><em>combine-images</em></a>
 reference section.</p>
 </div>
 </div>
 <div class="section" id="running-image-jobs">
 <span id="pages-image-clipping-and-combining-run-image-jobs"></span><h2>Running Image Jobs<a class="headerlink" href="#running-image-jobs" title="Permalink to this headline">¶</a></h2>
-<p>If you are finished with the definition of your images to clip and/or to combine you can use the <code class="docutils literal"><span class="pre">generator</span></code> to actually let them created for you.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">clipping</span>
+<p>If you are finished with the definition of your images to clip and/or to combine you can use the <tt class="docutils literal"><span class="pre">generator</span></tt> to actually let them created for you.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">clipping</span>
 </pre></div>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">combine</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">image</span><span class="o">-</span><span class="nx">combine</span>
 </pre></div>
 </div>
-<p>If you include the following job in your <code class="docutils literal"><span class="pre">image.json</span></code> jobs list</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;images&quot;</span> <span class="o">:</span>
+<p>If you include the following job in your <tt class="docutils literal"><span class="pre">image.json</span></tt> jobs list</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;images&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
    <span class="s2">&quot;run&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;image-clipping&quot;</span><span class="p">,</span> <span class="s2">&quot;image-combine&quot;</span> <span class="p">]</span>
 <span class="p">},</span>
 </pre></div>
 </div>
 <p>the execution of</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">images</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">c</span> <span class="nx">image</span><span class="p">.</span><span class="nx">json</span> <span class="nx">images</span>
 </pre></div>
 </div>
 <p>will run both jobs at once.</p>
@@ -325,12 +324,12 @@ reference section.</p>
 <p>There are several benefits for setting up the image clipping and combining.</p>
 <ul class="simple">
 <li>Fewer HTTP requests mean better performance when using combined images.</li>
-<li>Widgets using the <code class="docutils literal"><span class="pre">grid</span></code> decorator are easier to use. If you do not use
+<li>Widgets using the <tt class="docutils literal"><span class="pre">grid</span></tt> decorator are easier to use. If you do not use
 the tool-based clipping you have to slice the source image and name the parts
 manually.</li>
 <li>State changes are faster with combined images as the browser does not have to
 change the source of the displayed image. Instead it only changes the value of
-the CSS property <code class="docutils literal"><span class="pre">background-position</span></code> to display the desired part of the
+the CSS property <tt class="docutils literal"><span class="pre">background-position</span></tt> to display the desired part of the
 combined image.</li>
 </ul>
 </div>
@@ -347,7 +346,7 @@ combined image.</li>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Image clipping and combining</a><ul>
@@ -473,7 +472,7 @@ combined image.</li>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

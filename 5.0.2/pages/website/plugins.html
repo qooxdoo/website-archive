@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Plugins &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Plugins &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Website" href="../website.html" />
     <link rel="next" title="Technical view on the low-level APIs" href="tech_website_apis.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../website.html" accesskey="U">qx.Website</a>
-     &#187;
+     &raquo;
     <a href="">Plugins</a>
     </section>
     <section id="content">
@@ -146,7 +145,7 @@
 <span id="pages-website-plugins"></span><h1>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h1>
 <p>The qx.Website library is built from separate modules. Each module offers a set
 of functionality covering a common topic like CSS, (DOM) Traversing or
-Animations. You can see a listing of all modules in the <a class="reference internal" href="modules.html#pages-website-module-overview"><span class="std std-ref">overview</span></a>. These modules use the same plugin
+Animations. You can see a listing of all modules in the <a class="reference internal" href="modules.html#pages-website-module-overview"><em>overview</em></a>. These modules use the same plugin
 API that qx.Website offers to all developers. This developer API can be found
 in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/website-api">API reference</a> as
 well but by default, these methods are hidden and can be displayed using the
@@ -154,13 +153,13 @@ little link in the top right corner.</p>
 <div class="section" id="regular-plugins">
 <h2>Regular Plugins<a class="headerlink" href="#regular-plugins" title="Permalink to this headline">¶</a></h2>
 <p>The core module offers a plugin API to write common plugins. This is the
-default case and can be used to extend the static <code class="docutils literal"><span class="pre">q</span></code> object or the
-collections returned by the <code class="docutils literal"><span class="pre">q</span></code> function call.</p>
+default case and can be used to extend the static <tt class="docutils literal"><span class="pre">q</span></tt> object or the
+collections returned by the <tt class="docutils literal"><span class="pre">q</span></tt> function call.</p>
 <p>Surely you've noticed that the plugin-related methods have one thing in common:
-They are all prefixed with <code class="docutils literal"><span class="pre">$</span></code>. Extending the static object is easily
-accomplished by using the <code class="docutils literal"><span class="pre">$attachStatic</span></code> function, which offers a convenient
+They are all prefixed with <tt class="docutils literal"><span class="pre">$</span></tt>. Extending the static object is easily
+accomplished by using the <tt class="docutils literal"><span class="pre">$attachStatic</span></tt> function, which offers a convenient
 way to attach static modules with conflict detection.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// attach a new module</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// attach a new module</span>
 <span class="nx">q</span><span class="p">.</span><span class="nx">$attachStatic</span><span class="p">({</span><span class="s2">&quot;doSomethingAwesome&quot;</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{}});</span>
 
 <span class="c1">// use the module</span>
@@ -168,14 +167,14 @@ way to attach static modules with conflict detection.</p>
 </pre></div>
 </div>
 <p>Extending the returned collection is more interesting but just as easy as the first sample.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// attach a new module</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// attach a new module</span>
 <span class="nx">q</span><span class="p">.</span><span class="nx">$attach</span><span class="p">({</span><span class="s2">&quot;doSomethingAwesome&quot;</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{}});</span>
 
 <span class="c1">// use the module</span>
 <span class="nx">q</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">).</span><span class="nx">doSomethingAwesome</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>In the attached method, you can access the collection using the <code class="docutils literal"><span class="pre">this</span></code>
+<p>In the attached method, you can access the collection using the <tt class="docutils literal"><span class="pre">this</span></tt>
 keyword. This means that you have access to all included methods and the items
 stored in the collection as well.</p>
 </div>
@@ -184,17 +183,17 @@ stored in the collection as well.</p>
 <p>Another kind of plugin is used to normalize events. qx.Website includes
 normalization for e.g. Keyboard or pointer events. The plugin API for that use
 case is included in the events module and offers one important method.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">normalizer</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{};</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">normalizer</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{};</span>
 <span class="nx">q</span><span class="p">.</span><span class="nx">$registerEventNormalization</span><span class="p">([</span><span class="s2">&quot;click&quot;</span><span class="p">],</span> <span class="nx">normalizer</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>After adding these two lines of code, the normalizer will be called on every
-<code class="docutils literal"><span class="pre">click</span></code> event, giving the plugin author the chance to attach additional
+<tt class="docutils literal"><span class="pre">click</span></tt> event, giving the plugin author the chance to attach additional
 information to the event.</p>
 </div>
 <div class="section" id="howto">
 <h2>HowTo<a class="headerlink" href="#howto" title="Permalink to this headline">¶</a></h2>
-<p>Check out the <a class="reference internal" href="../development/skeletons.html#pages-development-skeletons-website"><span class="std std-ref">qx.Website skeleton</span></a>
+<p>Check out the <a class="reference internal" href="../development/skeletons.html#pages-development-skeletons-website"><em>qx.Website skeleton</em></a>
 included in the <a class="reference external" href="http://qooxdoo.org/downloads">SDK</a> to get a starting point.
 This makes it easy to write unit tests and documentation for your plugin.</p>
 </div>
@@ -211,7 +210,7 @@ This makes it easy to write unit tests and documentation for your plugin.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Plugins</a><ul>
@@ -330,7 +329,7 @@ This makes it easy to write unit tests and documentation for your plugin.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

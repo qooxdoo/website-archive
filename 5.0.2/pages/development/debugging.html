@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Debugging Applications &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Debugging Applications &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Memory Management" href="memory_management.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">Debugging Applications</a>
     </section>
     <section id="content">
@@ -149,13 +148,13 @@
 <span id="pages-debugging-introspection"></span><h2>Introspection<a class="headerlink" href="#introspection" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">qx.io.Json.stringify()</span></code></li>
-<li><code class="docutils literal"><span class="pre">qx.dev.Debug()</span></code></li>
+<li><tt class="docutils literal"><span class="pre">qx.io.Json.stringify()</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">qx.dev.Debug()</span></tt></li>
 </ul>
 </div></blockquote>
 <p>Included in the latter is qx.dev.Debug.debugObject() which will print out a complete recursive hierarchy (or up to some max level) of an object.</p>
 <p>This is taken from a firebug interactive session:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kd">var</span> <span class="nx">myTest</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="nx">c</span><span class="o">:</span><span class="mi">4</span><span class="p">}</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kd">var</span> <span class="nx">myTest</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="nx">c</span><span class="o">:</span><span class="mi">4</span><span class="p">}</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">dev</span><span class="p">.</span><span class="nx">Debug</span><span class="p">.</span><span class="nx">debugObject</span><span class="p">(</span><span class="nx">myTest</span><span class="p">)</span>
 <span class="mi">1665905</span><span class="o">:</span> <span class="nb">Object</span><span class="p">,</span> <span class="nx">count</span><span class="o">=</span><span class="mi">3</span><span class="o">:</span>
 <span class="o">------------------------------------------------------------</span>
@@ -172,7 +171,7 @@
 <span id="pages-debugging-memory-leaks"></span><h2>Memory leaks<a class="headerlink" href="#memory-leaks" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>Setting <code class="docutils literal"><span class="pre">qx.debug.dispose.level</span></code></li>
+<li>Setting <tt class="docutils literal"><span class="pre">qx.debug.dispose.level</span></tt></li>
 </ul>
 </div></blockquote>
 </div>
@@ -180,8 +179,8 @@
 <span id="pages-debugging-ajax"></span><h2>AJAX<a class="headerlink" href="#ajax" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>Setting <code class="docutils literal"><span class="pre">qx.debug.io.remote</span></code></li>
-<li>Setting <code class="docutils literal"><span class="pre">qx.debug.io.remote.data</span></code></li>
+<li>Setting <tt class="docutils literal"><span class="pre">qx.debug.io.remote</span></tt></li>
+<li>Setting <tt class="docutils literal"><span class="pre">qx.debug.io.remote.data</span></tt></li>
 </ul>
 </div></blockquote>
 </div>
@@ -194,16 +193,16 @@
 <p>These are helpful idioms you might want to include in your code, i.e. you use them at <em>programming time</em>.</p>
 <div class="section" id="this-debug">
 <span id="pages-debugging-this-debug"></span><h3>this.debug()<a class="headerlink" href="#this-debug" title="Permalink to this headline">¶</a></h3>
-<p>With <code class="docutils literal"><span class="pre">this.debug()</span></code> you can print out any string you want to see in the console during execution of your application. Of course you might want to interpolate variable values in the output. If you pass an entire object reference, the whole object will by stringified and printed. So beware: for big objects you get the entire instantiation in code printed out!</p>
+<p>With <tt class="docutils literal"><span class="pre">this.debug()</span></tt> you can print out any string you want to see in the console during execution of your application. Of course you might want to interpolate variable values in the output. If you pass an entire object reference, the whole object will by stringified and printed. So beware: for big objects you get the entire instantiation in code printed out!</p>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="k">this</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="s2">&quot;I found this value for myVar: &quot;</span><span class="o">+</span><span class="nx">myVar</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="k">this</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="s2">&quot;I found this value for myVar: &quot;</span><span class="o">+</span><span class="nx">myVar</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="console-log">
 <span id="pages-debugging-console-log"></span><h3>console.log()<a class="headerlink" href="#console-log" title="Permalink to this headline">¶</a></h3>
-<p>In contrast to this.debug(), if you pass an object reference to <code class="docutils literal"><span class="pre">console.log()</span></code> Firebug will provide you with a nice hyperlink to the live object which you can follow to inspect the object in a structured way. This is much easier to navigate than to skim through pages of source output.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">();</span>
+<p>In contrast to this.debug(), if you pass an object reference to <tt class="docutils literal"><span class="pre">console.log()</span></tt> Firebug will provide you with a nice hyperlink to the live object which you can follow to inspect the object in a structured way. This is much easier to navigate than to skim through pages of source output.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">();</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -211,7 +210,7 @@
 <div class="section" id="this-trace">
 <span id="pages-debugging-this-trace"></span><h3>this.trace()<a class="headerlink" href="#this-trace" title="Permalink to this headline">¶</a></h3>
 <p>Will log the current stack trace using the defined logger. This can be useful to inspect from which method the current function was called.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="k">this</span><span class="p">.</span><span class="nx">trace</span><span class="p">()</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="k">this</span><span class="p">.</span><span class="nx">trace</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -221,8 +220,8 @@
 <p>This section shows you how to access objects of your application at <em>run time</em>, i.e. while it executes. Access to those objects is possible through JavaScript, either in the form of another piece of JavaScript code, or - especially interesting for debugging - from an interactive shell, like Firebug or Venkman, that allows for interactive input and execution of JavaScript commands.</p>
 <div class="section" id="qx-core-init-getapplication">
 <span id="pages-debugging-qx-core-init-getapplication"></span><h3>qx.core.Init.getApplication()<a class="headerlink" href="#qx-core-init-getapplication" title="Permalink to this headline">¶</a></h3>
-<p>In your running app, the singleton <code class="docutils literal"><span class="pre">Init</span></code> object provides you with the <code class="docutils literal"><span class="pre">getApplication()</span></code> method, to access the root object of your application. All members and sub-members that you have attached to your application class in your code are accessible this way.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">();</span>
+<p>In your running app, the singleton <tt class="docutils literal"><span class="pre">Init</span></tt> object provides you with the <tt class="docutils literal"><span class="pre">getApplication()</span></tt> method, to access the root object of your application. All members and sub-members that you have attached to your application class in your code are accessible this way.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
@@ -231,8 +230,8 @@
 <span id="pages-debugging-firebug-usage-idioms"></span><h2>Firebug Usage Idioms<a class="headerlink" href="#firebug-usage-idioms" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="inspect">
 <span id="pages-debugging-inspect"></span><h3>&quot;Inspect&quot;<a class="headerlink" href="#inspect" title="Permalink to this headline">¶</a></h3>
-<p>Getting at your application objects fast is a common requirement when debugging. A useful idiom (or usage pattern) with Firebug is to press the <em>&quot;Inspect&quot;</em> button and select the visible page element you are interested in. This will take Firebug to its HTML tab in a split-pane view. The left side holds the HTML code underlying your selection (which is probably not very enlightening). The right side though has a <em>&quot;DOM&quot;</em> tab, among others. Selecting this will show a display of the underlying DOM node, which features a <code class="docutils literal"><span class="pre">qx_Widget</span></code> attribute. This attribute is added to the outermost HTML tag representing a qooxdoo widget. For complex widgets that are made up of nested HTML elements, make sure to select the outermost container node that actually has this attribute <code class="docutils literal"><span class="pre">qx_Widget</span></code>. It takes you straight to the qooxdoo object associated with the selected DOM node.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">Inspect</span> <span class="o">-&gt;</span> <span class="nx">Web</span> <span class="nx">page</span> <span class="nx">element</span> <span class="o">-&gt;</span> <span class="nx">HTML</span> <span class="nx">tab</span> <span class="o">-&gt;</span> <span class="nx">right</span> <span class="nx">side</span> <span class="o">-&gt;</span> <span class="nx">DOM</span> <span class="nx">tab</span> <span class="o">-&gt;</span> <span class="nx">qx_Widget</span> <span class="nx">link</span>
+<p>Getting at your application objects fast is a common requirement when debugging. A useful idiom (or usage pattern) with Firebug is to press the <em>&quot;Inspect&quot;</em> button and select the visible page element you are interested in. This will take Firebug to its HTML tab in a split-pane view. The left side holds the HTML code underlying your selection (which is probably not very enlightening). The right side though has a <em>&quot;DOM&quot;</em> tab, among others. Selecting this will show a display of the underlying DOM node, which features a <tt class="docutils literal"><span class="pre">qx_Widget</span></tt> attribute. This attribute is added to the outermost HTML tag representing a qooxdoo widget. For complex widgets that are made up of nested HTML elements, make sure to select the outermost container node that actually has this attribute <tt class="docutils literal"><span class="pre">qx_Widget</span></tt>. It takes you straight to the qooxdoo object associated with the selected DOM node.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">Inspect</span> <span class="o">-&gt;</span> <span class="nx">Web</span> <span class="nx">page</span> <span class="nx">element</span> <span class="o">-&gt;</span> <span class="nx">HTML</span> <span class="nx">tab</span> <span class="o">-&gt;</span> <span class="nx">right</span> <span class="nx">side</span> <span class="o">-&gt;</span> <span class="nx">DOM</span> <span class="nx">tab</span> <span class="o">-&gt;</span> <span class="nx">qx_Widget</span> <span class="nx">link</span>
 </pre></div>
 </div>
 </div>
@@ -250,7 +249,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Debugging Applications</a><ul>
@@ -384,7 +383,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

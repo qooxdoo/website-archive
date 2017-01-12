@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Drag &amp; Drop &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Drag &amp; Drop &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Inline Widgets" href="ui_inline.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Drag &amp; Drop</a>
     </section>
     <section id="content">
@@ -153,21 +152,21 @@
 <div class="section" id="basics">
 <span id="pages-desktop-ui-dragdrop-basics"></span><h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
 <p>To enable Drag &amp; Drop the properties <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.Widget~draggable">draggable</a> and  <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.core.Widget~droppable">droppable</a> must be enabled on the specific widgets. For list type sources or targets it's often enough to make the top-level widget drag- or droppable e.g. the list instead of the list items.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">dragTarget</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">List</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">dragTarget</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">List</span><span class="p">();</span>
 <span class="nx">dragTarget</span><span class="p">.</span><span class="nx">setDraggable</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">dropTarget</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">List</span><span class="p">();</span>
 <span class="nx">dropTarget</span><span class="p">.</span><span class="nx">setDroppable</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The basic drag&amp;drop should start working with these properties enabled, but it will show the no-drop cursor over all potential targets. To fix this one needs to register actions (and optionally data types) supported by the drag target. This can be done during the <code class="docutils literal"><span class="pre">dragstart</span></code> event which is fired on the drag target:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">dragTarget</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<p>The basic drag&amp;drop should start working with these properties enabled, but it will show the no-drop cursor over all potential targets. To fix this one needs to register actions (and optionally data types) supported by the drag target. This can be done during the <tt class="docutils literal"><span class="pre">dragstart</span></tt> event which is fired on the drag target:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">dragTarget</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">addAction</span><span class="p">(</span><span class="s2">&quot;move&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>The drop target can then add a listener to react for the <code class="docutils literal"><span class="pre">drop</span></code> event.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">dropTarget</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<p>The drop target can then add a listener to react for the <tt class="docutils literal"><span class="pre">drop</span></tt> event.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">dropTarget</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">alert</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">getRelatedTarget</span><span class="p">());</span>
 <span class="p">});</span>
 </pre></div>
@@ -177,8 +176,8 @@
 <div class="section" id="data-handling">
 <span id="pages-desktop-ui-dragdrop-data-handling"></span><h2>Data Handling<a class="headerlink" href="#data-handling" title="Permalink to this headline">¶</a></h2>
 <p>qooxdoo also supports advanced data handling in drag&amp;drop sessions. The basic idea is to register the supported drag data types and then let the drop target choose which one to handle (if any at all).</p>
-<p>To register some types write a listener for <code class="docutils literal"><span class="pre">dragstart</span></code>:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<p>To register some types write a listener for <tt class="docutils literal"><span class="pre">dragstart</span></tt>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">addAction</span><span class="p">(</span><span class="s2">&quot;move&quot;</span><span class="p">);</span>
 
   <span class="nx">e</span><span class="p">.</span><span class="nx">addType</span><span class="p">(</span><span class="s2">&quot;qx/list-items&quot;</span><span class="p">);</span>
@@ -186,9 +185,9 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>This is basically only the registration for the types which could theoretically be delivered to the target. The IDs used are just strings. They have no special meaning. They could be identical to typical mime-types like <code class="docutils literal"><span class="pre">text/plain</span></code> but there is no need for this.</p>
-<p>The preparation of the data (if not directly available) is done lazily by the <code class="docutils literal"><span class="pre">droprequest</span></code> event which will explained later. The next step is to let the target work with the incoming data. The following code block appends all the dropped children to the end of the list.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">target</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<p>This is basically only the registration for the types which could theoretically be delivered to the target. The IDs used are just strings. They have no special meaning. They could be identical to typical mime-types like <tt class="docutils literal"><span class="pre">text/plain</span></tt> but there is no need for this.</p>
+<p>The preparation of the data (if not directly available) is done lazily by the <tt class="docutils literal"><span class="pre">droprequest</span></tt> event which will explained later. The next step is to let the target work with the incoming data. The following code block appends all the dropped children to the end of the list.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">target</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getData</span><span class="p">(</span><span class="s2">&quot;qx/list-items&quot;</span><span class="p">);</span>
   <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nx">l</span><span class="o">=</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">l</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">items</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
@@ -197,7 +196,7 @@
 </pre></div>
 </div>
 <p>The last step needed to get the thing to fly is to prepare the data for being dragged around. This might look like the following example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;droprequest&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;droprequest&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">type</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getCurrentType</span><span class="p">();</span>
 
@@ -217,8 +216,8 @@
 </div>
 <div class="section" id="support-multiple-actions">
 <span id="pages-desktop-ui-dragdrop-support-multiple-actions"></span><h3>Support Multiple Actions<a class="headerlink" href="#support-multiple-actions" title="Permalink to this headline">¶</a></h3>
-<p>One thing one might consider is to add support for multiple actions. In the above example it would be imaginable to copy or move the items around. To make this possible one could add all supported actions during the <code class="docutils literal"><span class="pre">drag</span></code> event. This might look like the following:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+<p>One thing one might consider is to add support for multiple actions. In the above example it would be imaginable to copy or move the items around. To make this possible one could add all supported actions during the <tt class="docutils literal"><span class="pre">drag</span></tt> event. This might look like the following:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="c1">// Register supported actions</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">addAction</span><span class="p">(</span><span class="s2">&quot;copy&quot;</span><span class="p">);</span>
@@ -230,8 +229,8 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>The action to use is modifiable by the user through pressing of modifier keys during the drag&amp;drop process. The preparation of the data is done through the <code class="docutils literal"><span class="pre">droprequest</span></code> as well. Here one can use the action (call <code class="docutils literal"><span class="pre">e.getCurrentAction()</span></code> to get the selected action) to apply different modifications on the original data. A modified version of the code listed above might look like the following:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;droprequest&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+<p>The action to use is modifiable by the user through pressing of modifier keys during the drag&amp;drop process. The preparation of the data is done through the <tt class="docutils literal"><span class="pre">droprequest</span></tt> as well. Here one can use the action (call <tt class="docutils literal"><span class="pre">e.getCurrentAction()</span></tt> to get the selected action) to apply different modifications on the original data. A modified version of the code listed above might look like the following:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;droprequest&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">action</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getCurrentAction</span><span class="p">();</span>
   <span class="kd">var</span> <span class="nx">type</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">getCurrentType</span><span class="p">();</span>
@@ -271,17 +270,17 @@
 </div>
 <p>As known from major operating systems, exactly three actions are supported:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">move</span></code></li>
-<li><code class="docutils literal"><span class="pre">copy</span></code></li>
-<li><code class="docutils literal"><span class="pre">alias</span></code></li>
+<li><tt class="docutils literal"><span class="pre">move</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">copy</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">alias</span></tt></li>
 </ul>
-<p>which could be combined in any way the developer likes. qooxdoo renders a matching cursor depending on the currently selected action during the drag&amp;drop sequence. The event <code class="docutils literal"><span class="pre">dragchange</span></code> is fired on the source widget on every change of the currently selected action. It is also fired on the target and is cancelable which enables the developers to allow only certain actions on targets.</p>
+<p>which could be combined in any way the developer likes. qooxdoo renders a matching cursor depending on the currently selected action during the drag&amp;drop sequence. The event <tt class="docutils literal"><span class="pre">dragchange</span></tt> is fired on the source widget on every change of the currently selected action. It is also fired on the target and is cancelable which enables the developers to allow only certain actions on targets.</p>
 </div>
 </div>
 <div class="section" id="runtime-checks">
 <span id="pages-desktop-ui-dragdrop-runtime-checks"></span><h2>Runtime checks<a class="headerlink" href="#runtime-checks" title="Permalink to this headline">¶</a></h2>
-<p>There are a few other pleasantries. For example it is possible for <code class="docutils literal"><span class="pre">droppable</span></code> widgets to ignore a specific incoming data type. This can be done by preventing the default action on the incoming <code class="docutils literal"><span class="pre">dragover</span></code> event:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">target</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragover&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+<p>There are a few other pleasantries. For example it is possible for <tt class="docutils literal"><span class="pre">droppable</span></tt> widgets to ignore a specific incoming data type. This can be done by preventing the default action on the incoming <tt class="docutils literal"><span class="pre">dragover</span></tt> event:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">target</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragover&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">someRunTimeCheck</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
@@ -289,9 +288,9 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>This could be used to dynamically accept or disallow specific types of drop events depending on the application status or any other given condition. The user then gets a <code class="docutils literal"><span class="pre">nodrop</span></code> cursor to signal that the hovered target does not accept the data. To query the source object for supported types or actions one would call the methods <code class="docutils literal"><span class="pre">supportsAction</span></code> or <code class="docutils literal"><span class="pre">supportsType</span></code> on the incoming event object.</p>
-<p>Something comparable is possible during the <code class="docutils literal"><span class="pre">dragstart</span></code> event:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+<p>This could be used to dynamically accept or disallow specific types of drop events depending on the application status or any other given condition. The user then gets a <tt class="docutils literal"><span class="pre">nodrop</span></tt> cursor to signal that the hovered target does not accept the data. To query the source object for supported types or actions one would call the methods <tt class="docutils literal"><span class="pre">supportsAction</span></tt> or <tt class="docutils literal"><span class="pre">supportsType</span></tt> on the incoming event object.</p>
+<p>Something comparable is possible during the <tt class="docutils literal"><span class="pre">dragstart</span></tt> event:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">source</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">someRunTimeCheck</span><span class="p">())</span> <span class="p">{</span>
     <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
@@ -303,25 +302,25 @@
 </div>
 <div class="section" id="drag-session">
 <span id="pages-desktop-ui-dragdrop-drag-session"></span><h2>Drag Session<a class="headerlink" href="#drag-session" title="Permalink to this headline">¶</a></h2>
-<p>During the drag session the <code class="docutils literal"><span class="pre">drag</span></code> event is fired for every move of the pointer. This event may be used to &quot;attach&quot; an image or widget to the pointer to indicate the type of data or object dragged around. It may also be used to render a line during a reordering drag&amp;drop session (see next paragraph). It supports the methods <code class="docutils literal"><span class="pre">getDocumentLeft</span></code> and <code class="docutils literal"><span class="pre">getDocumentTop</span></code> known from the <code class="docutils literal"><span class="pre">pointermove</span></code> event. This data may be used for the positioning of a cursor.</p>
-<p>When hovering a widget the <code class="docutils literal"><span class="pre">dragover</span></code> event is fired on the &quot;interim&quot; target. When leaving the widget the <code class="docutils literal"><span class="pre">dragleave</span></code> event is fired. The <code class="docutils literal"><span class="pre">dragover</span></code> is cancelable and has information about the related target (the source widget) through <code class="docutils literal"><span class="pre">getRelatedTarget</span></code> on the incoming event object.</p>
-<p>Another quite useful event is the <code class="docutils literal"><span class="pre">dragend</span></code> event which is fired at every end of the drag session. This event is fired in both cases, when the transaction has modified anything or not. It is fired when pressing Escape or stopping the session any other way as well.</p>
+<p>During the drag session the <tt class="docutils literal"><span class="pre">drag</span></tt> event is fired for every move of the pointer. This event may be used to &quot;attach&quot; an image or widget to the pointer to indicate the type of data or object dragged around. It may also be used to render a line during a reordering drag&amp;drop session (see next paragraph). It supports the methods <tt class="docutils literal"><span class="pre">getDocumentLeft</span></tt> and <tt class="docutils literal"><span class="pre">getDocumentTop</span></tt> known from the <tt class="docutils literal"><span class="pre">pointermove</span></tt> event. This data may be used for the positioning of a cursor.</p>
+<p>When hovering a widget the <tt class="docutils literal"><span class="pre">dragover</span></tt> event is fired on the &quot;interim&quot; target. When leaving the widget the <tt class="docutils literal"><span class="pre">dragleave</span></tt> event is fired. The <tt class="docutils literal"><span class="pre">dragover</span></tt> is cancelable and has information about the related target (the source widget) through <tt class="docutils literal"><span class="pre">getRelatedTarget</span></tt> on the incoming event object.</p>
+<p>Another quite useful event is the <tt class="docutils literal"><span class="pre">dragend</span></tt> event which is fired at every end of the drag session. This event is fired in both cases, when the transaction has modified anything or not. It is fired when pressing Escape or stopping the session any other way as well.</p>
 <p>A typical sequence of events could look like this:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">dragstart</span></code> on source (once)</li>
-<li><code class="docutils literal"><span class="pre">drag</span></code> on source (pointer move)</li>
-<li><code class="docutils literal"><span class="pre">dragover</span></code> on target (pointer over)</li>
-<li><code class="docutils literal"><span class="pre">dragchange</span></code> on source (action change)</li>
-<li><code class="docutils literal"><span class="pre">dragleave</span></code> on target (pointer out)</li>
-<li><code class="docutils literal"><span class="pre">drop</span></code> on target (once)</li>
-<li><code class="docutils literal"><span class="pre">droprequest</span></code> on source (normally once)</li>
-<li><code class="docutils literal"><span class="pre">dragend</span></code> on source (once)</li>
+<li><tt class="docutils literal"><span class="pre">dragstart</span></tt> on source (once)</li>
+<li><tt class="docutils literal"><span class="pre">drag</span></tt> on source (pointer move)</li>
+<li><tt class="docutils literal"><span class="pre">dragover</span></tt> on target (pointer over)</li>
+<li><tt class="docutils literal"><span class="pre">dragchange</span></tt> on source (action change)</li>
+<li><tt class="docutils literal"><span class="pre">dragleave</span></tt> on target (pointer out)</li>
+<li><tt class="docutils literal"><span class="pre">drop</span></tt> on target (once)</li>
+<li><tt class="docutils literal"><span class="pre">droprequest</span></tt> on source (normally once)</li>
+<li><tt class="docutils literal"><span class="pre">dragend</span></tt> on source (once)</li>
 </ul>
 </div>
 <div class="section" id="reordering-items">
 <span id="pages-desktop-ui-dragdrop-reordering-items"></span><h2>Reordering Items<a class="headerlink" href="#reordering-items" title="Permalink to this headline">¶</a></h2>
 <p>Items may also be reordered inside one widget using the drag&amp;drop API. This action is normally not directly data related and may be used without adding any types to the drag&amp;drop session.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">reorder</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">reorder</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;dragstart&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">e</span><span class="p">.</span><span class="nx">addAction</span><span class="p">(</span><span class="s2">&quot;move&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 
@@ -358,7 +357,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Drag &amp; Drop</a><ul>
@@ -482,7 +481,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

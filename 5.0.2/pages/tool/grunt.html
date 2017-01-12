@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Grunt frontend &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Grunt frontend &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Tooling" href="../tool.html" />
     <link rel="next" title="Source Code Validation" href="source_code_validation.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Grunt frontend</a>
     </section>
     <section id="content">
@@ -151,7 +150,7 @@
 <p>There is experimental support for a <a class="reference external" href="http://gruntjs.com/">Grunt</a> &quot;flavored&quot;
 tool chain, build on top of the Generator, acting as a frontend to
 the known Generator jobs and living side-by-side to the existing Generator.</p>
-<p>Applications created with <a class="reference internal" href="getting_started.html#pages-getting-started-helloworld-create-your-application"><span class="std std-ref">create-application.py</span></a> do now contain a
+<p>Applications created with <a class="reference internal" href="getting_started.html#pages-getting-started-helloworld-create-your-application"><em>create-application.py</em></a> do now contain a
 file called <a class="reference external" href="http://gruntjs.com/sample-gruntfile">Gruntfile.js</a>, which is the
 entry point for Grunt.</p>
 <div class="section" id="what">
@@ -195,13 +194,13 @@ So you only need to know as much as you want to. :)</p>
 </div>
 <div class="section" id="verifying-grunt-works">
 <h2>Verifying Grunt works<a class="headerlink" href="#verifying-grunt-works" title="Permalink to this headline">¶</a></h2>
-<p>Running <code class="docutils literal"><span class="pre">grunt</span> <span class="pre">--version</span></code> in a random directory should print:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ grunt --version
+<p>Running <tt class="docutils literal"><span class="pre">grunt</span> <span class="pre">--version</span></tt> in a random directory should print:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>grunt --version
 grunt-cli v0.1.11
 </pre></div>
 </div>
-<p>In a directory containing a <code class="docutils literal"><span class="pre">Gruntfile.js</span></code> it should also print the Grunt version:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ grunt --version
+<p>In a directory containing a <tt class="docutils literal"><span class="pre">Gruntfile.js</span></tt> it should also print the Grunt version:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>grunt --version
 grunt-cli v0.1.11
 grunt v0.4.2
 </pre></div>
@@ -212,8 +211,8 @@ grunt v0.4.2
 <h2>Setup the qooxdoo Grunt toolchain<a class="headerlink" href="#setup-the-qooxdoo-grunt-toolchain" title="Permalink to this headline">¶</a></h2>
 <p>The toolchain itself needs a setup where all required npm packages are installed
 and the qooxdoo packages are wired together. You have to run:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ npm install
-$ grunt setup
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>npm install
+<span class="nv">$ </span>grunt setup
 </pre></div>
 </div>
 <div class="admonition note">
@@ -226,7 +225,7 @@ $ grunt setup
 <h2>Using the Generator through Grunt<a class="headerlink" href="#using-the-generator-through-grunt" title="Permalink to this headline">¶</a></h2>
 <p>Every job (i.e. <em>source</em>, <em>build</em> ...) you know from the Generator can also be
 run through the Grunt frontend (in Grunt lingo those are called <strong>tasks</strong>
-then) via <code class="docutils literal"><span class="pre">grunt</span> <span class="pre">generate:{oldJobName}</span></code>. This ensures that you are still able to use
+then) via <tt class="docutils literal"><span class="pre">grunt</span> <span class="pre">generate:{oldJobName}</span></tt>. This ensures that you are still able to use
 all the Generator functionality already available.</p>
 <p>See also the FAQ below for important differences between Grunt
 and the Generator.</p>
@@ -234,15 +233,15 @@ and the Generator.</p>
 <div class="section" id="id1">
 <h2>Grunt Plugins<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Nearly all functionality Grunt offers is implemented as plugin. <a class="reference external" href="http://gruntjs.com/plugins">Grunt
-Plugins</a> are basically regular npm packages with the keyword <code class="docutils literal"><span class="pre">gruntplugin</span></code>,
+Plugins</a> are basically regular npm packages with the keyword <tt class="docutils literal"><span class="pre">gruntplugin</span></tt>,
 which are distributed via <a class="reference external" href="https://npmjs.org/">npmjs.org</a>. A common
-convention is to prefix them with <code class="docutils literal"><span class="pre">&quot;grunt-&quot;</span></code>.</p>
+convention is to prefix them with <tt class="docutils literal"><span class="pre">&quot;grunt-&quot;</span></tt>.</p>
 <p>Use them to accomplish custom goals or even <a class="reference external" href="http://gruntjs.com/creating-tasks">write your own ones</a>.</p>
 </div>
 <div class="section" id="the-gruntfile-in-detail">
 <h2>The Gruntfile in detail<a class="headerlink" href="#the-gruntfile-in-detail" title="Permalink to this headline">¶</a></h2>
 <p>This is how a Gruntfile might look like after creating a new qooxdoo app:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// requires</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// requires</span>
 <span class="kd">var</span> <span class="nx">util</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;util&#39;</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">qx</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;${REL_QOOXDOO_PATH}/tool/grunt&quot;</span><span class="p">);</span>
 
@@ -251,7 +250,7 @@ convention is to prefix them with <code class="docutils literal"><span class="pr
   <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
 
     <span class="nx">generator_config</span><span class="o">:</span> <span class="p">{</span>
-      <span class="kd">let</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">let</span><span class="o">:</span> <span class="p">{</span>
       <span class="p">}</span>
     <span class="p">},</span>
 
@@ -291,7 +290,7 @@ convention is to prefix them with <code class="docutils literal"><span class="pr
 </div></blockquote>
 <p>This will register a task for each Generator job (under the same name). The
 tasks may be written in Python (from the Generator) or in JavaScript. After
-<code class="docutils literal"><span class="pre">qxTasks.registerTasks()</span></code> you are free to include the Grunt plugins
+<tt class="docutils literal"><span class="pre">qxTasks.registerTasks()</span></tt> you are free to include the Grunt plugins
 you like to use (custom or 3rd party).</p>
 </div>
 <div class="section" id="gruntify-existing-apps">
@@ -302,32 +301,32 @@ Grunt compatible. You need:</p>
 <div><ul class="simple">
 <li>Node.js and the Grunt-CLI installed as stated above.</li>
 <li>a current version of the SDK, which means qooxdoo 3.5 or above.</li>
-<li>a Gruntfile (file called <code class="docutils literal"><span class="pre">Gruntfile.js</span></code>)</li>
-<li>a file called <code class="docutils literal"><span class="pre">package.json</span></code></li>
+<li>a Gruntfile (file called <tt class="docutils literal"><span class="pre">Gruntfile.js</span></tt>)</li>
+<li>a file called <tt class="docutils literal"><span class="pre">package.json</span></tt></li>
 </ul>
 </div></blockquote>
 <p>In order to get the last two files and Grunt (locally) installed:</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li>Create a new app of the same type as your existing app (via
-<a class="reference internal" href="getting_started.html#pages-getting-started-helloworld-create-your-application"><span class="std std-ref">create-application.py</span></a>)
+<a class="reference internal" href="getting_started.html#pages-getting-started-helloworld-create-your-application"><em>create-application.py</em></a>)
 and then copy those two files over to your project's root dir.</li>
-<li>Run <code class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span></code> in your project's root dir which installs Grunt locally
-to your project (this will create a dir called <code class="docutils literal"><span class="pre">node_modules</span></code>).</li>
+<li>Run <tt class="docutils literal"><span class="pre">npm</span> <span class="pre">install</span></tt> in your project's root dir which installs Grunt locally
+to your project (this will create a dir called <tt class="docutils literal"><span class="pre">node_modules</span></tt>).</li>
 </ol>
 </div></blockquote>
-<p>Now try <code class="docutils literal"><span class="pre">grunt</span> <span class="pre">info</span></code> - it should run <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">info</span></code>.</p>
+<p>Now try <tt class="docutils literal"><span class="pre">grunt</span> <span class="pre">info</span></tt> - it should run <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">info</span></tt>.</p>
 </div>
 <div class="section" id="faq">
 <h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt>Which tasks are available?</dt>
-<dd>Run <code class="docutils literal"><span class="pre">grunt</span> <span class="pre">--help</span></code> to see all registered tasks.</dd>
+<dd>Run <tt class="docutils literal"><span class="pre">grunt</span> <span class="pre">--help</span></tt> to see all registered tasks.</dd>
 <dt>Will Grunt also register my newly added (and exported!) jobs from my config.json?</dt>
 <dd>Yes it should, otherwise it's a bug.</dd>
-<dt>How do I provide Generator options like <code class="docutils literal"><span class="pre">-v</span></code>?</dt>
-<dd>You have to use <code class="docutils literal"><span class="pre">--gargs</span></code>. For example <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">lint</span> <span class="pre">-v</span></code>
-translates to <code class="docutils literal"><span class="pre">grunt</span> <span class="pre">lint</span> <span class="pre">--gargs=&quot;-v&quot;</span></code></dd>
+<dt>How do I provide Generator options like <tt class="docutils literal"><span class="pre">-v</span></tt>?</dt>
+<dd>You have to use <tt class="docutils literal"><span class="pre">--gargs</span></tt>. For example <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">lint</span> <span class="pre">-v</span></tt>
+translates to <tt class="docutils literal"><span class="pre">grunt</span> <span class="pre">lint</span> <span class="pre">--gargs=&quot;-v&quot;</span></tt></dd>
 </dl>
 </div>
 </div>
@@ -343,7 +342,7 @@ translates to <code class="docutils literal"><span class="pre">grunt</span> <spa
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Grunt frontend</a><ul>
@@ -469,7 +468,7 @@ translates to <code class="docutils literal"><span class="pre">grunt</span> <spa
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

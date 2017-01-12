@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Server Overview &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Server Overview &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,11 +33,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Server" href="../server.html" />
-    <link rel="next" title="RequireJS Support" href="requirejs.html" />
+    <link rel="next" title="qx.Server Requirements" href="requirements.html" />
     <link rel="prev" title="qx.Server" href="../server.html" />
     <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
     <script type="text/javascript">
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../server.html" accesskey="U">qx.Server</a>
-     &#187;
+     &raquo;
     <a href="">Server Overview</a>
     </section>
     <section id="content">
@@ -149,15 +148,15 @@
 <span id="pages-server-overview-included-features"></span><h2>Included Features<a class="headerlink" href="#included-features" title="Permalink to this headline">¶</a></h2>
 <p>This listing shows the core features of the <em>qooxdoo qx.Server</em> package. If you build your own package with the skeleton way of using qooxdoo, the feature set might be extended depending on your application code.</p>
 <ul class="simple">
-<li><a class="reference internal" href="../core/oo_introduction.html"><span class="doc">Object Orientation</span></a><ul>
-<li><a class="reference internal" href="../core/classes.html"><span class="doc">Classes</span></a></li>
-<li><a class="reference internal" href="../core/mixins.html"><span class="doc">Mixins</span></a></li>
-<li><a class="reference internal" href="../core/interfaces.html"><span class="doc">Interfaces</span></a></li>
-<li><a class="reference internal" href="../core/understanding_properties.html"><span class="doc">Properties</span></a></li>
+<li><a class="reference internal" href="../core/oo_introduction.html"><em>Object Orientation</em></a><ul>
+<li><a class="reference internal" href="../core/classes.html"><em>Classes</em></a></li>
+<li><a class="reference internal" href="../core/mixins.html"><em>Mixins</em></a></li>
+<li><a class="reference internal" href="../core/interfaces.html"><em>Interfaces</em></a></li>
+<li><a class="reference internal" href="../core/understanding_properties.html"><em>Properties</em></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="../desktop/event_layer_impl.html"><span class="doc">Events</span></a></li>
-<li><a class="reference internal" href="../data_binding/single_value_binding.html"><span class="doc">Single Value Binding</span></a></li>
+<li><a class="reference internal" href="../desktop/event_layer_impl.html"><em>Events</em></a></li>
+<li><a class="reference internal" href="../data_binding/single_value_binding.html"><em>Single Value Binding</em></a></li>
 </ul>
 <p>Most of the features can be found in qooxdoo's core layer and should be familiar to qooxdoo developers.</p>
 </div>
@@ -171,12 +170,12 @@
 </div>
 <div class="section" id="installation">
 <span id="pages-server-overview-basic-example"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>See <a class="reference internal" href="requirements.html"><span class="doc">Requirements</span></a> for details on how to obtain and install qooxdoo qx.Server.</p>
+<p>See <a class="reference internal" href="requirements.html"><em>Requirements</em></a> for details on how to obtain and install qooxdoo qx.Server.</p>
 </div>
 <div class="section" id="basic-example">
 <h2>Basic Example<a class="headerlink" href="#basic-example" title="Permalink to this headline">¶</a></h2>
 <p>The following example shows how to use the <em>qooxdoo qx.Server</em> package in a node environment, having installed the package via npm.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">qx</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;qooxdoo&#39;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">qx</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;qooxdoo&#39;</span><span class="p">);</span>
 
 <span class="c1">// create anmial class</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;my.Animal&quot;</span><span class="p">,</span> <span class="p">{</span>
@@ -200,14 +199,14 @@
 <span class="nx">dog</span><span class="p">.</span><span class="nx">bark</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>Only two lines in this example are specific to the server environment: The first one, where you include the qooxdoo package and the implementation of the <code class="docutils literal"><span class="pre">bark</span></code> function, which uses node's <code class="docutils literal"><span class="pre">console</span></code> object. To run the example in Rhino, simply change the first line to something like this:</p>
+<p>Only two lines in this example are specific to the server environment: The first one, where you include the qooxdoo package and the implementation of the <tt class="docutils literal"><span class="pre">bark</span></tt> function, which uses node's <tt class="docutils literal"><span class="pre">console</span></tt> object. To run the example in Rhino, simply change the first line to something like this:</p>
 <blockquote>
-<div><div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">load</span><span class="p">([</span><span class="s2">&quot;path/to/qx-oo-5.0.2.js&quot;</span><span class="p">]);</span>
+<div><div class="highlight-javascript"><div class="highlight"><pre><span class="nx">load</span><span class="p">([</span><span class="s2">&quot;path/to/qx-oo-5.0.2.js&quot;</span><span class="p">]);</span>
 </pre></div>
 </div>
 </div></blockquote>
-<p>and replace <code class="docutils literal"><span class="pre">console.log</span></code> with <code class="docutils literal"><span class="pre">print</span></code>.</p>
-<p>The rest of the code is plain qooxdoo-style JavaScript which can be run in a browser, too. For more information on that topic, take a look at the documentation about <a class="reference internal" href="../core/oo_introduction.html"><span class="doc">Object Orientation</span></a>.</p>
+<p>and replace <tt class="docutils literal"><span class="pre">console.log</span></tt> with <tt class="docutils literal"><span class="pre">print</span></tt>.</p>
+<p>The rest of the code is plain qooxdoo-style JavaScript which can be run in a browser, too. For more information on that topic, take a look at the documentation about <a class="reference internal" href="../core/oo_introduction.html"><em>Object Orientation</em></a>.</p>
 </div>
 <div class="section" id="additional-scenarios">
 <span id="pages-server-overview-additional-scenarios"></span><h2>Additional Scenarios<a class="headerlink" href="#additional-scenarios" title="Permalink to this headline">¶</a></h2>
@@ -221,12 +220,12 @@
           <a class="prev" href="../server.html"
              title="previous chapter">« qx.Server</a>
           <span class="separator">|</span>
-          <a class="next" href="requirejs.html"
-             title="next chapter">RequireJS Support »</a>
+          <a class="next" href="requirements.html"
+             title="next chapter">qx.Server Requirements »</a>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Server Overview</a><ul>
@@ -240,8 +239,8 @@
 </ul>
 
   <h4>» Next topic</h4>
-  <p class="topless"><a href="requirejs.html"
-                        title="next chapter">RequireJS Support</a></p>
+  <p class="topless"><a href="requirements.html"
+                        title="next chapter">qx.Server Requirements</a></p>
   <h4>« Previous topic</h4>
   <p class="topless"><a href="../server.html"
                         title="previous chapter">qx.Server</a></p>
@@ -347,7 +346,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SDK Requirements &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>SDK Requirements &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="SDK Installation Troubleshooting" href="sdk_install_troubleshoot.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">SDK Requirements</a>
     </section>
     <section id="content">
@@ -145,10 +144,10 @@
   <div class="section" id="sdk-requirements">
 <span id="pages-tool-requirements-requirements"></span><h1>SDK Requirements<a class="headerlink" href="#sdk-requirements" title="Permalink to this headline">¶</a></h1>
 <p>qooxdoo offers a platform-independent and user-friendly tool chain, in form
-of an SDK. It comes with the <a class="reference internal" href="../../desktop.html"><span class="doc">qx.Desktop</span></a> and <a class="reference internal" href="../../mobile.html"><span class="doc">qx.Mobile</span></a>
+of an SDK. It comes with the <a class="reference internal" href="../../desktop.html"><em>qx.Desktop</em></a> and <a class="reference internal" href="../../mobile.html"><em>qx.Mobile</em></a>
 downloads. For those components you use it for <em>creating and developing</em> a
 qooxdoo application. It is not needed for <em>running</em> the application. For
-the <a class="reference internal" href="../../website.html"><span class="doc">qx.Website</span></a> and <a class="reference internal" href="../../server.html"><span class="doc">qx.Server</span></a> components there are
+the <a class="reference internal" href="../../website.html"><em>qx.Website</em></a> and <a class="reference internal" href="../../server.html"><em>qx.Server</em></a> components there are
 pre-build libraries to download, so you don't need the SDK.</p>
 <div class="section" id="python">
 <span id="pages-tool-requirements-python"></span><h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
@@ -156,7 +155,7 @@ pre-build libraries to download, so you don't need the SDK.</p>
 Use a standard <strong>Python 2.x</strong> release, version 2.6 or above. Python 3 is
 currently <a class="reference external" href="http://qooxdoo.org/docs/general/python_3_support">not supported</a>. (If in doubt you can
 query the version of your local Python installation by running the command
-<code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code>). As a qooxdoo user you do not need any Python knowledge, it
+<tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt>). As a qooxdoo user you do not need any Python knowledge, it
 is merely a technology used internally for the tools. Python comes either
 pre-installed on many systems or it can be installed very easily:</p>
 <div class="section" id="image0-windows">
@@ -164,7 +163,7 @@ pre-installed on many systems or it can be installed very easily:</p>
 <p>It is trivial! Just download and install the excellent <a class="reference external" href="http://www.activestate.com/activepython/downloads">ActivePython</a> package. Its default
 settings of the installation wizard are fine, there is nothing to configure.
 You can as well use the Windows package from <a class="reference external" href="http://www.python.org/download/releases/2.7/">Python.org</a>, but this might require
-additional manual <a class="reference internal" href="sdk_install_troubleshoot.html#pages-troubleshooting-windows"><span class="std std-ref">configuration</span></a>.</p>
+additional manual <a class="reference internal" href="sdk_install_troubleshoot.html#pages-troubleshooting-windows"><em>configuration</em></a>.</p>
 <div class="section" id="windows-shells-interop">
 <h4>Windows Shells Interop<a class="headerlink" href="#windows-shells-interop" title="Permalink to this headline">¶</a></h4>
 <p>A word concerning various shells available under Windows and how they
@@ -184,7 +183,7 @@ has seen increased popularity with the growing distribution of the <a class="ref
 not recommend mixing SDK usage with git bash, as it (at the time of checking)
 uses a file system interface that is neither like Windows nor Cygwin (but rather
 reminiscent of an old Cygwin interface, using drive letters and forward slashes
-like <code class="docutils literal"><span class="pre">c:/foo/bar</span></code>). It's unclear whether using only git bash would
+like <tt class="docutils literal"><span class="pre">c:/foo/bar</span></tt>). It's unclear whether using only git bash would
 work for qooxdoo projects, and we wouldn't be able to provide support for any issues that
 might arise.</p>
 </div>
@@ -212,7 +211,7 @@ manager to install a suitable package.</p>
 <span id="pages-tool-requirements-disk-space"></span><h2>Disk Space<a class="headerlink" href="#disk-space" title="Permalink to this headline">¶</a></h2>
 <p>The unpacked SDK will require around <strong>110 MB</strong> disk space (a big
 part of this is due to media files like images).</p>
-<p>During runtime the tool chain also uses a subdirectory in your system's <code class="docutils literal"><span class="pre">TMP</span></code>
+<p>During runtime the tool chain also uses a subdirectory in your system's <tt class="docutils literal"><span class="pre">TMP</span></tt>
 path, to cache intermediate results and downloaded files. Depending on your
 activities this cache directory can become between <strong>0.5</strong> and
 <strong>1.5 GB</strong> in size. If the <a class="reference external" href="http://qooxdoo.org/docs/general/snippets#finding_your_system-wide_tmp_directory">default cache path</a>
@@ -226,8 +225,8 @@ an SDK archive. Unzip it to a suitable path on your hard disk. The archive
 contains a single top-level folder, which in turn contains all the SDK's files
 and sub-folders.</p>
 <p>This is all as far as the SDK is concerned. As an additional convenience you
-might want to add the <code class="docutils literal"><span class="pre">&lt;sdk-root-path&gt;/tool/bin</span></code> directory to your system
-environment <code class="docutils literal"><span class="pre">PATH</span></code> variable. This is a prerequisite for invoking the
+might want to add the <tt class="docutils literal"><span class="pre">&lt;sdk-root-path&gt;/tool/bin</span></tt> directory to your system
+environment <tt class="docutils literal"><span class="pre">PATH</span></tt> variable. This is a prerequisite for invoking the
 executable programs of the tool chain without the need to address them with
 their path.</p>
 </div>
@@ -252,7 +251,7 @@ their path.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">SDK Requirements</a><ul>
@@ -268,7 +267,9 @@ their path.</p>
 </li>
 <li><a class="reference internal" href="#disk-space">Disk Space</a></li>
 <li><a class="reference internal" href="#installation-and-setup">Installation and Setup</a></li>
-<li><a class="reference internal" href="#installation-troubleshooting">Installation Troubleshooting</a></li>
+<li><a class="reference internal" href="#installation-troubleshooting">Installation Troubleshooting</a><ul>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -381,7 +382,7 @@ their path.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

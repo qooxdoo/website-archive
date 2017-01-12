@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Deployment &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Deployment &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Mobile" href="../mobile.html" />
     <link rel="next" title="qx.Server" href="../server.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../mobile.html" accesskey="U">qx.Mobile</a>
-     &#187;
+     &raquo;
     <a href="">Deployment</a>
     </section>
     <section id="content">
@@ -158,12 +157,12 @@
 to deploy your qx.Mobile application on your mobile device.</p>
 <p>Follow these steps:</p>
 <ol class="arabic simple">
-<li>Build your application with <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></code>.</li>
-<li>Duplicate content of your qx.Mobile build folder, into Cordova deploy folder <code class="docutils literal"><span class="pre">assets/www</span></code> including the <code class="docutils literal"><span class="pre">index.html</span></code>.</li>
-<li>Paste the following line in head part of <code class="docutils literal"><span class="pre">assets/www/index.html</span></code>:</li>
+<li>Build your application with <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></tt>.</li>
+<li>Duplicate content of your qx.Mobile build folder, into Cordova deploy folder <tt class="docutils literal"><span class="pre">assets/www</span></tt> including the <tt class="docutils literal"><span class="pre">index.html</span></tt>.</li>
+<li>Paste the following line in head part of <tt class="docutils literal"><span class="pre">assets/www/index.html</span></tt>:</li>
 </ol>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">&lt;script</span> <span class="pre">type=&quot;text/javascript&quot;</span> <span class="pre">charset=&quot;utf-8&quot;</span> <span class="pre">src=&quot;cordova-1.6.0.js&quot;&gt;&lt;/script&gt;</span></code></div></blockquote>
+<div><tt class="docutils literal"><span class="pre">&lt;script</span> <span class="pre">type=&quot;text/javascript&quot;</span> <span class="pre">charset=&quot;utf-8&quot;</span> <span class="pre">src=&quot;cordova-1.6.0.js&quot;&gt;&lt;/script&gt;</span></tt></div></blockquote>
 <ol class="arabic simple" start="4">
 <li>Cross-check the version of the &quot;cordova.js&quot; in script tag, against the version you use.</li>
 </ol>
@@ -173,8 +172,8 @@ connected Mobile Device. For executing the deployment, have a look on <a class="
 <div class="section" id="update-application-on-your-mobile-device">
 <h2>Update application on your mobile device<a class="headerlink" href="#update-application-on-your-mobile-device" title="Permalink to this headline">¶</a></h2>
 <p>If you want to update your qx.Mobile application, you just have
-to copy the folders <code class="docutils literal"><span class="pre">resource</span></code> and <code class="docutils literal"><span class="pre">script</span></code> into Cordova's deploy folder <code class="docutils literal"><span class="pre">assets/www/</span></code>.
-An update of the <code class="docutils literal"><span class="pre">assets/www/index.html</span></code> is not necessary.</p>
+to copy the folders <tt class="docutils literal"><span class="pre">resource</span></tt> and <tt class="docutils literal"><span class="pre">script</span></tt> into Cordova's deploy folder <tt class="docutils literal"><span class="pre">assets/www/</span></tt>.
+An update of the <tt class="docutils literal"><span class="pre">assets/www/index.html</span></tt> is not necessary.</p>
 </div>
 </div>
 
@@ -189,7 +188,7 @@ An update of the <code class="docutils literal"><span class="pre">assets/www/ind
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Deployment</a><ul>
@@ -308,7 +307,7 @@ An update of the <code class="docutils literal"><span class="pre">assets/www/ind
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

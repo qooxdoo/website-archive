@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Configuration Usage &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Configuration Usage &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Tweaking Configurations" href="config_tweaking.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Configuration Usage</a>
     </section>
     <section id="content">
@@ -157,7 +156,7 @@ to use it.</p>
 <div class="section" id="skeleton-configuration">
 <h2>Skeleton Configuration<a class="headerlink" href="#skeleton-configuration" title="Permalink to this headline">¶</a></h2>
 <p>When you create an application skeleton, a basic configuration file,
-<code class="docutils literal"><span class="pre">config.json</span></code>, is created along the way. With this config file you have access
+<tt class="docutils literal"><span class="pre">config.json</span></tt>, is created along the way. With this config file you have access
 to all the standard jobs that are available for this type of skeleton. Usually,
 you will just run these jobs and be done with it, so there might never be a need
 for you to actually look inside the config file. The Generator will read the
@@ -166,9 +165,9 @@ gave on the command line using the definitions provided through the
 configuration.</p>
 <p>If you do, though, you will find that it doesn't contain much. The important
 part is that it includes job definitions from a system configuration file (like
-<code class="docutils literal"><span class="pre">application.json</span></code>). The other important item is a global <code class="docutils literal"><span class="pre">&quot;let&quot;</span></code> entry which
+<tt class="docutils literal"><span class="pre">application.json</span></tt>). The other important item is a global <tt class="docutils literal"><span class="pre">&quot;let&quot;</span></tt> entry which
 gives you a first hold into customizing jobs. We'll get back to this later.</p>
-<p>Moreover, there is a <code class="docutils literal"><span class="pre">&quot;jobs</span></code> section which is mostly empty except for some
+<p>Moreover, there is a <tt class="docutils literal"><span class="pre">&quot;jobs</span></tt> section which is mostly empty except for some
 comments that aim to guide you to fill it up should you find the need to do so.</p>
 <p><img alt="image2" src="../../../_images/generate_config2.png" /></p>
 </div>
@@ -190,7 +189,7 @@ properties of the job it is extending. This way you can &quot;subclass&quot; job
 customize them, or &quot;abstract&quot; common properties into jobs that are extended by
 several others.</p>
 <p>There are two basic mechanisms of job extension. One is explicit, using the
-<code class="docutils literal"><span class="pre">extend</span></code> keyword in the job definition. The other is implicit, by defining a job
+<tt class="docutils literal"><span class="pre">extend</span></tt> keyword in the job definition. The other is implicit, by defining a job
 in your configuration file that has the <em>same name</em> as a job you are importing
 from another file.</p>
 <p>In the <em>extend</em> key you refer to other jobs by name. The resolution of such
@@ -204,13 +203,13 @@ one will be used. Otherwise, the job &quot;bar&quot; from the imported file will
 places of the configuration, by referring to the macro's name. Values can
 basically be any allowed JSON value type (strings, numbers, boolean, ...).
 Macros can only be defined with the
-<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-let"><span class="std std-ref">let</span></a> configuration key. It takes
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-let"><em>let</em></a> configuration key. It takes
 a map, the map keys are the macro names, each key's value is the macro value.</p>
-<p>To reference a macro, surround it with curly braces and put a <code class="docutils literal"><span class="pre">$</span></code> in front.
+<p>To reference a macro, surround it with curly braces and put a <tt class="docutils literal"><span class="pre">$</span></tt> in front.
 Referencing macros is <em>always done in string literals</em> (otherwise you would
 break JSON syntax). If the macro's value is itself a string, this value will be
 interpolated into the string it is referenced. An example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;let&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;let&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;foo&quot;</span> <span class="o">:</span> <span class="s2">&quot;bar&quot;</span>
 <span class="p">},</span>
 <span class="s2">&quot;descr&quot;</span> <span class="o">:</span> <span class="s2">&quot;This is the ${foo} job&quot;</span>
@@ -218,7 +217,7 @@ interpolated into the string it is referenced. An example:</p>
 </div>
 <p>If the macro has some other value the reference to it must be the only contents
 of the string:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;let&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;let&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;foo&quot;</span> <span class="o">:</span> <span class="kc">true</span>
 <span class="p">},</span>
 <span class="s2">&quot;compile-options&quot;</span> <span class="o">:</span> <span class="p">{</span>
@@ -257,7 +256,7 @@ definitions (e.g. through extending), in the order the jobs are incorporated
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Configuration Usage</a><ul>
@@ -380,7 +379,7 @@ definitions (e.g. through extending), in the order the jobs are incorporated
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

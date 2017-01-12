@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Generator Usage &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Generator Usage &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Generator Script Optimizations" href="generator_optimizations.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Generator Usage</a>
     </section>
     <section id="content">
@@ -148,31 +147,31 @@
 <p>The generator is started to execute various jobs. Those jobs represent the feature set of the tool chain. This page is about how to invoke the generator.</p>
 <div class="section" id="files-and-folder-structure">
 <span id="pages-tool-generator-generator-usage-files-and-folder-structure"></span><h2>Files and Folder Structure<a class="headerlink" href="#files-and-folder-structure" title="Permalink to this headline">¶</a></h2>
-<p>The qooxdoo SDK has a dedicated <code class="docutils literal"><span class="pre">tool</span></code> folder that contains all elements that make up the tool chain. The general structure is like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">tool</span>
+<p>The qooxdoo SDK has a dedicated <tt class="docutils literal"><span class="pre">tool</span></tt> folder that contains all elements that make up the tool chain. The general structure is like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">tool</span>
    <span class="o">|-</span> <span class="nx">app</span>   <span class="o">--</span> <span class="nx">helper</span> <span class="nx">apps</span>
    <span class="o">|-</span> <span class="nx">bin</span>   <span class="o">--</span> <span class="nx">stand</span><span class="o">-</span><span class="nx">alone</span> <span class="nx">programs</span> <span class="nx">and</span> <span class="nx">scripts</span>
    <span class="o">|-</span> <span class="nx">data</span>  <span class="o">--</span> <span class="nx">various</span> <span class="nx">data</span> <span class="nx">files</span>
    <span class="o">|-</span> <span class="nx">pylib</span> <span class="o">--</span> <span class="nx">Python</span> <span class="nx">modules</span>
 </pre></div>
 </div>
-<p>The generator is actually the program <code class="docutils literal"><span class="pre">tool/bin/generator.py</span></code>.</p>
+<p>The generator is actually the program <tt class="docutils literal"><span class="pre">tool/bin/generator.py</span></tt>.</p>
 </div>
 <div class="section" id="generate-py">
 <span id="pages-tool-generator-generator-usage-generate-py"></span><h2>generate.py<a class="headerlink" href="#generate-py" title="Permalink to this headline">¶</a></h2>
-<p>To make it easier to invoke the generator, each library in the SDK (framework, applications, components) contains a <code class="docutils literal"><span class="pre">generate.py</span></code> script that is really just a proxy for the generator itself. It is also part of each project created by the <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-create-your-application"><span class="std std-ref">create-application.py</span></a> wizard. The aim is to hide the actual path to the generator program. You can omit using it if you add <em>&lt;QOOXDOO_PATH&gt;/tool/bin</em> to your PATH environment variable.</p>
+<p>To make it easier to invoke the generator, each library in the SDK (framework, applications, components) contains a <tt class="docutils literal"><span class="pre">generate.py</span></tt> script that is really just a proxy for the generator itself. It is also part of each project created by the <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-create-your-application"><em>create-application.py</em></a> wizard. The aim is to hide the actual path to the generator program. You can omit using it if you add <em>&lt;QOOXDOO_PATH&gt;/tool/bin</em> to your PATH environment variable.</p>
 </div>
 <div class="section" id="command-line-options">
 <span id="pages-tool-generator-generator-usage-command-line-options"></span><h2>Command-line Options<a class="headerlink" href="#command-line-options" title="Permalink to this headline">¶</a></h2>
 <p>Since the generator is nearly completely driven by its configuration files, there are rather few command-line options:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">shell</span><span class="o">&gt;</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">h</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">shell</span><span class="o">&gt;</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">py</span> <span class="o">-</span><span class="nx">h</span>
 <span class="nx">Usage</span><span class="o">:</span> <span class="nx">generator</span><span class="p">.</span><span class="nx">py</span> <span class="p">[</span><span class="nx">options</span><span class="p">]</span> <span class="nx">job</span><span class="p">,...</span>
 
 <span class="nx">Arguments</span><span class="o">:</span>
-  <span class="nx">job</span><span class="p">,...</span>               <span class="nx">a</span> <span class="nx">list</span> <span class="k">of</span> <span class="nx">jobs</span> <span class="p">(</span><span class="nx">like</span> <span class="s1">&#39;source&#39;</span> <span class="nx">or</span> <span class="s1">&#39;copy-files&#39;</span><span class="p">,</span>
+  <span class="nx">job</span><span class="p">,...</span>               <span class="nx">a</span> <span class="nx">list</span> <span class="nx">of</span> <span class="nx">jobs</span> <span class="p">(</span><span class="nx">like</span> <span class="s1">&#39;source&#39;</span> <span class="nx">or</span> <span class="s1">&#39;copy-files&#39;</span><span class="p">,</span>
                         <span class="nx">without</span> <span class="nx">the</span> <span class="nx">quotes</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">run</span>
   <span class="nx">x</span>                     <span class="nx">use</span> <span class="s1">&#39;x&#39;</span> <span class="p">(</span><span class="nx">or</span> <span class="nx">some</span> <span class="kc">undefined</span> <span class="nx">job</span> <span class="nx">name</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">get</span> <span class="nx">a</span>
-                        <span class="nx">list</span> <span class="k">of</span> <span class="nx">all</span> <span class="nx">available</span> <span class="nx">jobs</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">configuration</span> <span class="nx">file</span>
+                        <span class="nx">list</span> <span class="nx">of</span> <span class="nx">all</span> <span class="nx">available</span> <span class="nx">jobs</span> <span class="nx">from</span> <span class="nx">the</span> <span class="nx">configuration</span> <span class="nx">file</span>
 
 <span class="nx">Options</span><span class="o">:</span>
   <span class="o">-</span><span class="nx">h</span><span class="p">,</span> <span class="o">--</span><span class="nx">help</span>            <span class="nx">show</span> <span class="k">this</span> <span class="nx">help</span> <span class="nx">message</span> <span class="nx">and</span> <span class="nx">exit</span>
@@ -180,8 +179,8 @@
                         <span class="nx">path</span> <span class="nx">to</span> <span class="nx">configuration</span> <span class="nx">file</span> <span class="nx">containing</span> <span class="nx">job</span> <span class="nx">definitions</span>
                         <span class="p">(</span><span class="k">default</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">json</span><span class="p">)</span>
   <span class="o">-</span><span class="nx">q</span><span class="p">,</span> <span class="o">--</span><span class="nx">quiet</span>           <span class="nx">quiet</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="p">(</span><span class="nx">extra</span> <span class="nx">quiet</span><span class="p">)</span>
-  <span class="o">-</span><span class="nx">v</span><span class="p">,</span> <span class="o">--</span><span class="nx">verbose</span>         <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="k">of</span> <span class="nx">job</span> <span class="nx">processing</span>
-  <span class="o">-</span><span class="nx">w</span><span class="p">,</span> <span class="o">--</span><span class="nx">config</span><span class="o">-</span><span class="nx">verbose</span>  <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="k">of</span> <span class="nx">configuration</span> <span class="nx">processing</span>
+  <span class="o">-</span><span class="nx">v</span><span class="p">,</span> <span class="o">--</span><span class="nx">verbose</span>         <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="nx">of</span> <span class="nx">job</span> <span class="nx">processing</span>
+  <span class="o">-</span><span class="nx">w</span><span class="p">,</span> <span class="o">--</span><span class="nx">config</span><span class="o">-</span><span class="nx">verbose</span>  <span class="nx">verbose</span> <span class="nx">output</span> <span class="nx">mode</span> <span class="nx">of</span> <span class="nx">configuration</span> <span class="nx">processing</span>
   <span class="o">-</span><span class="nx">l</span> <span class="nx">FILENAME</span><span class="p">,</span> <span class="o">--</span><span class="nx">logfile</span><span class="o">=</span><span class="nx">FILENAME</span>
                         <span class="nx">log</span> <span class="nx">file</span>
   <span class="o">-</span><span class="nx">s</span><span class="p">,</span> <span class="o">--</span><span class="nx">stacktrace</span>      <span class="nx">enable</span> <span class="nx">stack</span> <span class="nx">traces</span> <span class="nx">on</span> <span class="nx">fatal</span> <span class="nx">exceptions</span>
@@ -196,27 +195,27 @@
 </div>
 <div class="section" id="configuration-files">
 <span id="pages-tool-generator-generator-usage-configuration-files"></span><h2>Configuration Files<a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h2>
-<p>The single most important way to control the actions of the generator is through specialized configuration files. These files have a <a class="reference external" href="http://www.json.org">JSON</a> syntax and contain the definitions for the various jobs the generator is supposed to execute. There is a <a class="reference internal" href="generator_config.html"><span class="doc">whole section</span></a> in this manual dedicated to these config files.</p>
+<p>The single most important way to control the actions of the generator is through specialized configuration files. These files have a <a class="reference external" href="http://www.json.org">JSON</a> syntax and contain the definitions for the various jobs the generator is supposed to execute. There is a <a class="reference internal" href="generator_config.html"><em>whole section</em></a> in this manual dedicated to these config files.</p>
 </div>
 <div class="section" id="usage-patterns">
 <span id="pages-tool-generator-generator-usage-usage-patterns"></span><h2>Usage Patterns<a class="headerlink" href="#usage-patterns" title="Permalink to this headline">¶</a></h2>
-<p>As a few quick hints on how you would invoke the generator, here are the most common use cases. All these examples name a single job to run, and rely on the availability of the default config file <code class="docutils literal"><span class="pre">config.json</span></code> in the current directory:</p>
+<p>As a few quick hints on how you would invoke the generator, here are the most common use cases. All these examples name a single job to run, and rely on the availability of the default config file <tt class="docutils literal"><span class="pre">config.json</span></tt> in the current directory:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></code>  -- when you just started to create your application and every time you have added new classes to it.</li>
-<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></code>  -- when you have completed your application and/or want to create an optimized, deployable version of it.</li>
-<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></code>  -- when your application is getting complex and/or you want to have a local version of the standard <a class="reference external" href="http://api.qooxdoo.org">Apiviewer</a> application that includes the documentation of all of your application classes.</li>
-<li><code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">test</span></code>  -- when you have created unit test classes for your application and want to run them in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/testrunner">Testrunner</a> frame application.</li>
+<li><tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></tt>  -- when you just started to create your application and every time you have added new classes to it.</li>
+<li><tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></tt>  -- when you have completed your application and/or want to create an optimized, deployable version of it.</li>
+<li><tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></tt>  -- when your application is getting complex and/or you want to have a local version of the standard <a class="reference external" href="http://api.qooxdoo.org">Apiviewer</a> application that includes the documentation of all of your application classes.</li>
+<li><tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">test</span></tt>  -- when you have created unit test classes for your application and want to run them in the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/testrunner">Testrunner</a> frame application.</li>
 </ul>
-<p>The <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-helloworld"><span class="std std-ref">Helloworld</span></a> tutorial will give the complete steps how to start a project and get going.</p>
+<p>The <a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-helloworld"><em>Helloworld</em></a> tutorial will give the complete steps how to start a project and get going.</p>
 </div>
 <div class="section" id="default-jobs">
 <span id="pages-tool-generator-generator-usage-default-jobs"></span><h2>Default Jobs<a class="headerlink" href="#default-jobs" title="Permalink to this headline">¶</a></h2>
-<p>Arguments like <code class="docutils literal"><span class="pre">source</span></code> or <code class="docutils literal"><span class="pre">api</span></code>, as shown in the previous section, are so called <em>jobs</em> in qooxdoo lingo. If you are working on a skeleton-based application you automatically get a whole list of such pre-defined jobs to work with. For a quick overview, invoke the generator script with an undefined job argument, like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">X</span>
+<p>Arguments like <tt class="docutils literal"><span class="pre">source</span></tt> or <tt class="docutils literal"><span class="pre">api</span></tt>, as shown in the previous section, are so called <em>jobs</em> in qooxdoo lingo. If you are working on a skeleton-based application you automatically get a whole list of such pre-defined jobs to work with. For a quick overview, invoke the generator script with an undefined job argument, like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">X</span>
 </pre></div>
 </div>
 <p>This gives you a list of all jobs available through your current config file, many of them with a few words of explanation about what they do:</p>
-<div class="highlight-text"><div class="highlight"><pre><span></span>- api          -- create api doc for the current library
+<div class="highlight-text"><div class="highlight"><pre>- api          -- create api doc for the current library
 - build        -- create build version of current application
 - clean        -- remove local cache and generated .js files (source/build)
 - distclean    -- remove the cache and all generated artefacts of this library...
@@ -232,7 +231,7 @@
 - translation          -- create .po files for current library
 </pre></div>
 </div>
-<p>For an exhaustive reference of these default jobs, see the <a class="reference internal" href="default_jobs_actions.html"><span class="doc">default jobs page</span></a>.</p>
+<p>For an exhaustive reference of these default jobs, see the <a class="reference internal" href="default_jobs_actions.html"><em>default jobs page</em></a>.</p>
 <hr class="docutils" />
 <table class="docutils footnote" frame="void" id="m-option" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -254,7 +253,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Generator Usage</a><ul>
@@ -376,7 +375,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

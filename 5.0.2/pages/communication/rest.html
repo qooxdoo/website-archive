@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>REST (Representational State Transfer) &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>REST (Representational State Transfer) &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Communication" href="../communication.html" />
     <link rel="next" title="RPC (Remote Procedure Call)" href="rpc.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../communication.html" accesskey="U">Communication</a>
-     &#187;
+     &raquo;
     <a href="">REST (Representational State Transfer)</a>
     </section>
     <section id="content">
@@ -144,17 +143,17 @@
         
   <div class="section" id="rest-representational-state-transfer">
 <h1>REST (Representational State Transfer)<a class="headerlink" href="#rest-representational-state-transfer" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal"><span class="pre">qx.io.rest.Resource</span></code> allows to encapsulate the specifics of a REST
+<p><tt class="docutils literal"><span class="pre">qx.io.rest.Resource</span></tt> allows to encapsulate the specifics of a REST
 interface. Rather than requesting URLs with a specific HTTP method manually, a
 resource representing the remote resource is instantiated and <strong>actions</strong> are
 invoked on this resource. A resource with its actions can be configured
 declaratively or programmatically.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>When to use <code class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></code>? Mostly <code class="docutils literal"><span class="pre">qx.io.rest.Resource</span></code> delegates
-to <code class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></code> and adds some features on top. For <strong>qx.Desktop</strong>
-apps you probably want to use <code class="docutils literal"><span class="pre">qx.io.rest.Resource</span></code> but when developing an
-app/website with <strong>qx.Website</strong> only <code class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></code> is available
+<p>When to use <tt class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></tt>? Mostly <tt class="docutils literal"><span class="pre">qx.io.rest.Resource</span></tt> delegates
+to <tt class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></tt> and adds some features on top. For <strong>qx.Desktop</strong>
+apps you probably want to use <tt class="docutils literal"><span class="pre">qx.io.rest.Resource</span></tt> but when developing an
+app/website with <strong>qx.Website</strong> only <tt class="docutils literal"><span class="pre">qx.bom.rest.Resource</span></tt> is available
 (i.e. exposed as website module).</p>
 <p class="last">See the package description for a detailed comparison:
 <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.bom.rest">qx.bom.rest</a> .</p>
@@ -162,7 +161,7 @@ app/website with <strong>qx.Website</strong> only <code class="docutils literal"
 <div class="section" id="configuring-actions">
 <h2>Configuring actions<a class="headerlink" href="#configuring-actions" title="Permalink to this headline">¶</a></h2>
 <p>Given a REST-like interface with URLs that comply to the following pattern.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">GET</span>      <span class="o">/</span><span class="nx">photo</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">GET</span>      <span class="o">/</span><span class="nx">photo</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
 <span class="nx">PUT</span>      <span class="o">/</span><span class="nx">photo</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
 <span class="nx">DELETE</span>   <span class="o">/</span><span class="nx">photo</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
 
@@ -170,11 +169,11 @@ app/website with <strong>qx.Website</strong> only <code class="docutils literal"
 <span class="nx">POST</span>     <span class="o">/</span><span class="nx">photos</span>
 </pre></div>
 </div>
-<p>Note <code class="docutils literal"><span class="pre">{id}</span></code> stands for a placeholder.</p>
-<p>This interface comprises of two resources: <code class="docutils literal"><span class="pre">photo</span></code> and <code class="docutils literal"><span class="pre">photos</span></code>.</p>
+<p>Note <tt class="docutils literal"><span class="pre">{id}</span></tt> stands for a placeholder.</p>
+<p>This interface comprises of two resources: <tt class="docutils literal"><span class="pre">photo</span></tt> and <tt class="docutils literal"><span class="pre">photos</span></tt>.</p>
 <p>To declare the specifics of the REST interface declaratively, pass a description
 to the constructor.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// Singular resource</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// Singular resource</span>
 <span class="kd">var</span> <span class="nx">photo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">({</span>
   <span class="c1">// Retrieve photo</span>
   <span class="nx">get</span><span class="o">:</span> <span class="p">{</span>
@@ -212,7 +211,7 @@ to the constructor.</p>
 </pre></div>
 </div>
 <p>Or programmatically, for each action.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">photo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">photo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">();</span>
 <span class="nx">photo</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s2">&quot;get&quot;</span><span class="p">,</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="s2">&quot;/photo/{id}&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -221,7 +220,7 @@ to the constructor.</p>
 <h2>Invoking actions<a class="headerlink" href="#invoking-actions" title="Permalink to this headline">¶</a></h2>
 <p>Once configured, actions can be invoked. They are invoked by calling a method
 that is dynamically added to the resource on configuration of the action.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
 <span class="c1">// Alternatively: photo.invoke(&quot;get&quot;, {id: 1});</span>
 <span class="c1">// --&gt; GET /photo/1</span>
 
@@ -237,7 +236,7 @@ that is dynamically added to the resource on configuration of the action.</p>
 <p>If the URL contains parameters, the position where the parameters should be
 inserted can be specified by using <a class="reference external" href="http://tools.ietf.org/html/draft-gregorio-uritemplate-07">URI templates</a>. Parameters are
 optional unless a check is defined. A default value can be provided.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">photo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">photo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">();</span>
 <span class="nx">photo</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s2">&quot;get&quot;</span><span class="p">,</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="s2">&quot;/photo/{id}/{size=medium}&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span>  <span class="nx">qx</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">rest</span><span class="p">.</span><span class="nx">Resource</span><span class="p">.</span><span class="nx">REQUIRED</span><span class="p">});</span>
 
 <span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">size</span><span class="o">:</span> <span class="s2">&quot;large&quot;</span><span class="p">});</span>
@@ -256,12 +255,12 @@ optional unless a check is defined. A default value can be provided.</p>
 <p>Data that should be included in the request's body can be given as second
 parameter. All types accepted by <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.io.request.AbstractRequest~requestData">qx.io.request.AbstractRequest#requestData</a>
 are supported.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">photo</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Monkey&quot;</span><span class="p">});</span> <span class="c1">// URL encoded</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">photo</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Monkey&quot;</span><span class="p">});</span> <span class="c1">// URL encoded</span>
 <span class="nx">photo</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">},</span> <span class="s2">&quot;title=monkey&quot;</span><span class="p">);</span> <span class="c1">// Raw</span>
 </pre></div>
 </div>
-<p>Note that the behavior changes when the request body content type is switched to <code class="docutils literal"><span class="pre">application/json</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">photos</span><span class="p">.</span><span class="nx">configureRequest</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">)</span> <span class="p">{</span>
+<p>Note that the behavior changes when the request body content type is switched to <tt class="docutils literal"><span class="pre">application/json</span></tt>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">photos</span><span class="p">.</span><span class="nx">configureRequest</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">req</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span> <span class="s2">&quot;application/json&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 
@@ -274,9 +273,9 @@ are supported.</p>
 <h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
 <p>Events are fired by the resource when the request was successful or any kind of
 error occurred. There are general resource events and action specific events.
-Handlers receive a <code class="docutils literal"><span class="pre">qx.event.type.Rest</span></code> event that, among other properties,
+Handlers receive a <tt class="docutils literal"><span class="pre">qx.event.type.Rest</span></tt> event that, among other properties,
 includes the response.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
 <span class="nx">photo</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
 
 <span class="c1">// &quot;success&quot; is fired when any request associated to resource receives a response</span>
@@ -294,8 +293,8 @@ includes the response.</p>
 </div>
 <p>If the same action should be invoked multiple times and the events fired for
 each request be handled differently, it is possible to remember the id of the
-action's invocation. The <code class="docutils literal"><span class="pre">Rest</span></code> event includes this id.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">getPhotoId</span> <span class="o">=</span> <span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
+action's invocation. The <tt class="docutils literal"><span class="pre">Rest</span></tt> event includes this id.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">getPhotoId</span> <span class="o">=</span> <span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
 <span class="kd">var</span> <span class="nx">getLargePhotoId</span> <span class="o">=</span> <span class="nx">photo</span><span class="p">.</span><span class="nx">get</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">size</span><span class="o">:</span> <span class="s2">&quot;large&quot;</span><span class="p">});</span>
 <span class="nx">photo</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;getSuccess&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">getId</span><span class="p">()</span> <span class="o">===</span> <span class="nx">getLargePhotoId</span><span class="p">)</span> <span class="p">{</span>
@@ -316,10 +315,10 @@ action's invocation. The <code class="docutils literal"><span class="pre">Rest</
 </div>
 <div class="section" id="data-binding">
 <h2>Data binding<a class="headerlink" href="#data-binding" title="Permalink to this headline">¶</a></h2>
-<p>A <code class="docutils literal"><span class="pre">qx.data.store.Rest</span></code> store can be attached to an action. Whenever a response
+<p>A <tt class="docutils literal"><span class="pre">qx.data.store.Rest</span></tt> store can be attached to an action. Whenever a response
 is received, the model property of the store is updated with the marshaled
 response.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">store</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">store</span><span class="p">.</span><span class="nx">Rest</span><span class="p">(</span><span class="nx">photos</span><span class="p">,</span> <span class="s2">&quot;get&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">store</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">store</span><span class="p">.</span><span class="nx">Rest</span><span class="p">(</span><span class="nx">photos</span><span class="p">,</span> <span class="s2">&quot;get&quot;</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">List</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">controller</span><span class="p">.</span><span class="nx">List</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">list</span><span class="p">);</span>
 <span class="nx">store</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span> <span class="nx">controller</span><span class="p">,</span> <span class="s2">&quot;model&quot;</span><span class="p">);</span>
@@ -340,7 +339,7 @@ response.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">REST (Representational State Transfer)</a><ul>
@@ -463,7 +462,7 @@ response.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

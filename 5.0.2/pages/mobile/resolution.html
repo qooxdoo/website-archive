@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Resolution and Pixel Density &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Resolution and Pixel Density &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Mobile" href="../mobile.html" />
     <link rel="next" title="Debugging" href="debugging.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../mobile.html" accesskey="U">qx.Mobile</a>
-     &#187;
+     &raquo;
     <a href="">Resolution and Pixel Density</a>
     </section>
     <section id="content">
@@ -148,8 +147,8 @@
 <p>Fortunately, you don't have to care much, as the framework handles most of it automatically. But it also enables you to further optimize for a great user experience on such devices as explained below.</p>
 <div class="section" id="high-pixel-density">
 <h2>High Pixel Density<a class="headerlink" href="#high-pixel-density" title="Permalink to this headline">¶</a></h2>
-<p>Many modern devices ship with high pixel density displays. The measurement of pixel density is in units of <code class="docutils literal"><span class="pre">ppi</span></code> (&quot;pixels per inch&quot;), sometimes called <code class="docutils literal"><span class="pre">dpi</span></code> (&quot;dots per inch&quot;). Starting at about 300ppi a display's individual pixels become indistinguishable to the human eye at regular viewing distance. Therefore such devices are commonly said to have &quot;Retina&quot; displays.</p>
-<p>In order to let applications continue with their pixel values used internally (e.g. CSS sizes like <code class="docutils literal"><span class="pre">width:</span> <span class="pre">100px;</span></code>) high-density devices introduced another parameter: a ratio that maps CSS pixels to hardware pixels. This ratio is called the &quot;device pixel ratio&quot;. The device takes care of scaling the CSS pixels (also called &quot;device-independent pixels (dips)&quot;) to the physical pixels of the device.</p>
+<p>Many modern devices ship with high pixel density displays. The measurement of pixel density is in units of <tt class="docutils literal"><span class="pre">ppi</span></tt> (&quot;pixels per inch&quot;), sometimes called <tt class="docutils literal"><span class="pre">dpi</span></tt> (&quot;dots per inch&quot;). Starting at about 300ppi a display's individual pixels become indistinguishable to the human eye at regular viewing distance. Therefore such devices are commonly said to have &quot;Retina&quot; displays.</p>
+<p>In order to let applications continue with their pixel values used internally (e.g. CSS sizes like <tt class="docutils literal"><span class="pre">width:</span> <span class="pre">100px;</span></tt>) high-density devices introduced another parameter: a ratio that maps CSS pixels to hardware pixels. This ratio is called the &quot;device pixel ratio&quot;. The device takes care of scaling the CSS pixels (also called &quot;device-independent pixels (dips)&quot;) to the physical pixels of the device.</p>
 <p>The following device pixel ratios are common on mobile devices:</p>
 <ul>
 <li><dl class="first docutils">
@@ -178,24 +177,24 @@
 </div>
 <div class="section" id="resolution-independent-theming">
 <h2>Resolution-independent Theming<a class="headerlink" href="#resolution-independent-theming" title="Permalink to this headline">¶</a></h2>
-<p>Since qx.Mobile 3.5 all themes that ship with the SDK are resolution-independent. They no longer use pixel values internally, but derive all their individual sizes (such as paddings or border widths) from the global application font size. Technically this is achieved by using the relative unit <code class="docutils literal"><span class="pre">rem</span></code> throughout the theme.</p>
+<p>Since qx.Mobile 3.5 all themes that ship with the SDK are resolution-independent. They no longer use pixel values internally, but derive all their individual sizes (such as paddings or border widths) from the global application font size. Technically this is achieved by using the relative unit <tt class="docutils literal"><span class="pre">rem</span></tt> throughout the theme.</p>
 <p>Thus, at startup (or at reload) your app will layout with respect to the font size setting of your browser. Also at runtime, whenever you decrease or increase the application's font size, the theme (and therefore the entire visual part of your app) will adjust itself accordingly.</p>
 </div>
 <div class="section" id="font-scale">
 <h2>Font Scale<a class="headerlink" href="#font-scale" title="Permalink to this headline">¶</a></h2>
 <p>You can easily change the font size of your qx.Mobile app programmatically. For instance, this allowed you to offer the users a settings dialog to adjust the total scale of the app to their liking.</p>
-<p>The change is relative to the global font size (e.g. predefined by your browser's settings). You set the new relative value, e.g. a factor of 2 for 200% scaling) through the method <code class="docutils literal"><span class="pre">setFontScale</span></code> on <code class="docutils literal"><span class="pre">qx.ui.mobile.core.Root</span></code>:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">setFontScale</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<p>The change is relative to the global font size (e.g. predefined by your browser's settings). You set the new relative value, e.g. a factor of 2 for 200% scaling) through the method <tt class="docutils literal"><span class="pre">setFontScale</span></tt> on <tt class="docutils literal"><span class="pre">qx.ui.mobile.core.Root</span></tt>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">setFontScale</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The first image shows a font scale of <code class="docutils literal"><span class="pre">0.5</span></code>, the scale on the second is <code class="docutils literal"><span class="pre">1.5</span></code>:</p>
-<a class="reference internal image-reference" href="../../_images/resolution-50.png"><img alt="../../_images/resolution-50.png" src="../../_images/resolution-50.png" style="width: 120.0px; height: 188.5px;" /></a>
-<a class="reference internal image-reference" href="../../_images/resolution-150.png"><img alt="../../_images/resolution-150.png" src="../../_images/resolution-150.png" style="width: 120.5px; height: 188.5px;" /></a>
+<p>The first image shows a font scale of <tt class="docutils literal"><span class="pre">0.5</span></tt>, the scale on the second is <tt class="docutils literal"><span class="pre">1.5</span></tt>:</p>
+<a class="reference internal image-reference" href="../../_images/resolution-50.png"><img alt="../../_images/resolution-50.png" src="../../_images/resolution-50.png" /></a>
+<a class="reference internal image-reference" href="../../_images/resolution-150.png"><img alt="../../_images/resolution-150.png" src="../../_images/resolution-150.png" /></a>
 </div>
 <div class="section" id="app-scale">
 <h2>App Scale<a class="headerlink" href="#app-scale" title="Permalink to this headline">¶</a></h2>
-<p>The font scale isn't the only scale parameter. Usually one would be interested in the total app scale. This app scale expresses the effective scaling of your app. For instance, if the app scale is <code class="docutils literal"><span class="pre">1.75</span></code>, an image with an original width of 100px, would appear on the display as 175 pixels wide.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">scale</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">getAppScale</span><span class="p">();</span>
+<p>The font scale isn't the only scale parameter. Usually one would be interested in the total app scale. This app scale expresses the effective scaling of your app. For instance, if the app scale is <tt class="docutils literal"><span class="pre">1.75</span></tt>, an image with an original width of 100px, would appear on the display as 175 pixels wide.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">scale</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Init</span><span class="p">.</span><span class="nx">getApplication</span><span class="p">().</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">getAppScale</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>The app scale calculation takes into account both the font scale as well as the reported device pixel ratio. As mentioned above modern desktop browsers tend to modify the pixel ratio when changing  built-in font sizes. So with both parameters the effective app scale can be determined quite reliably on many modern browsers.</p>
@@ -209,22 +208,22 @@
 <h2>Location and naming conventions<a class="headerlink" href="#location-and-naming-conventions" title="Permalink to this headline">¶</a></h2>
 <p>The high-resolution images are assumed to be located in the same folder as the
 default resolution image, but are annotated with the corresponding optimal scale:</p>
-<p><code class="docutils literal"><span class="pre">&lt;filename&gt;&#64;&lt;appScale&gt;.&lt;fileextension&gt;</span></code></p>
+<p><tt class="docutils literal"><span class="pre">&lt;filename&gt;&#64;&lt;appScale&gt;.&lt;fileextension&gt;</span></tt></p>
 <p>As an example, assume the following medium resolution image is part of your project's resources:
-<code class="docutils literal"><span class="pre">source/resource/&lt;APP_NAME&gt;/icon/image.png</span></code></p>
-<p>The &quot;resolution&quot; of an image is given by the total amount of pixels available in each dimension. Lets say <code class="docutils literal"><span class="pre">image.png</span></code> is 200 x 100 pixels. In your image processing tool (e.g. Photoshop) take the original, high-quality sources that you created the regular image from. Now create a high-resolution version. Optimized for app scale 200% its resolution would become 400 x 200 pixels. Save that larger image as <code class="docutils literal"><span class="pre">image&#64;2x.png</span></code>. Do so for any scales and images you like to support. That's it.</p>
-<p>Remember that not just the device pixel ratio determines the effective app scale. If device pixel ratio returns <code class="docutils literal"><span class="pre">1.5</span></code> but your font scale  is <code class="docutils literal"><span class="pre">2</span></code>, then the best image resolution would be <code class="docutils literal"><span class="pre">3x</span></code>. The application would try to display the resource <code class="docutils literal"><span class="pre">image&#64;3x.png</span></code>.</p>
+<tt class="docutils literal"><span class="pre">source/resource/&lt;APP_NAME&gt;/icon/image.png</span></tt></p>
+<p>The &quot;resolution&quot; of an image is given by the total amount of pixels available in each dimension. Lets say <tt class="docutils literal"><span class="pre">image.png</span></tt> is 200 x 100 pixels. In your image processing tool (e.g. Photoshop) take the original, high-quality sources that you created the regular image from. Now create a high-resolution version. Optimized for app scale 200% its resolution would become 400 x 200 pixels. Save that larger image as <tt class="docutils literal"><span class="pre">image&#64;2x.png</span></tt>. Do so for any scales and images you like to support. That's it.</p>
+<p>Remember that not just the device pixel ratio determines the effective app scale. If device pixel ratio returns <tt class="docutils literal"><span class="pre">1.5</span></tt> but your font scale  is <tt class="docutils literal"><span class="pre">2</span></tt>, then the best image resolution would be <tt class="docutils literal"><span class="pre">3x</span></tt>. The application would try to display the resource <tt class="docutils literal"><span class="pre">image&#64;3x.png</span></tt>.</p>
 </div>
 <div class="section" id="fallback">
 <h2>Fallback<a class="headerlink" href="#fallback" title="Permalink to this headline">¶</a></h2>
 <p>qx.Mobile by default checks for the most common image resolutions:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">&#64;3x</span></code></li>
-<li><code class="docutils literal"><span class="pre">&#64;2x</span></code></li>
-<li><code class="docutils literal"><span class="pre">&#64;1.5x</span></code></li>
+<li><tt class="docutils literal"><span class="pre">&#64;3x</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">&#64;2x</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">&#64;1.5x</span></tt></li>
 </ul>
 <p>In your app you can adjust the set of scale factors to check by modifying this static array:</p>
-<p><code class="docutils literal"><span class="pre">qx.ui.mobile.basic.Image.PIXEL_RATIOS</span></code></p>
+<p><tt class="docutils literal"><span class="pre">qx.ui.mobile.basic.Image.PIXEL_RATIOS</span></tt></p>
 <p>For the best visual result qx.Mobile uses the following fallback logic:</p>
 <ol class="arabic simple">
 <li>It searches for an image with an exact or higher resolution, which is nearest to the actual app scale.</li>
@@ -245,7 +244,7 @@ default resolution image, but are annotated with the corresponding optimal scale
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Resolution and Pixel Density</a><ul>
@@ -368,7 +367,7 @@ default resolution image, but are annotated with the corresponding optimal scale
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

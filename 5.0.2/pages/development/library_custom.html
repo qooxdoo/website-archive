@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Custom Libraries &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Custom Libraries &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="qooxdoo-contrib" href="contrib.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">Custom Libraries</a>
     </section>
     <section id="content">
@@ -148,14 +147,14 @@
 second application that could re-use some of the code of the first, you start
 thinking about factoring code out into separately manageable units. This is when
 you create dedicated libraries.</p>
-<p>In qooxdoo <em>all code</em> is organized in <a class="reference internal" href="code_organisation.html"><span class="doc">libraries</span></a>. Also the code tree that holds your
+<p>In qooxdoo <em>all code</em> is organized in <a class="reference internal" href="code_organisation.html"><em>libraries</em></a>. Also the code tree that holds your
 application's main class is, conceptually, a library. So even in the simplest
 skeleton you are already working <em>in</em> a library (the skeleton), <em>with</em> a library
 (the framework classes). Creating and using further libraries is only a
 repetition of that.</p>
 <div class="section" id="creating-a-custom-library">
 <span id="pages-development-library-custom-creating-a-custom-library"></span><h2>Creating a Custom Library<a class="headerlink" href="#creating-a-custom-library" title="Permalink to this headline">¶</a></h2>
-<p>Just run <a class="reference internal" href="../tool/create_application.html"><span class="doc">create-application.py</span></a>. The
+<p>Just run <a class="reference internal" href="../tool/create_application.html"><em>create-application.py</em></a>. The
 default application type (&quot;desktop&quot;) is good enough for this purpose. If you
 have existing code that you want to put into the library, just move the files
 over to their new location under the <em>source/class/&lt;namespace&gt;</em> path. Don't
@@ -175,12 +174,12 @@ to build an application in your library directly (also see further).</p>
 <p>You need to make the new library known to the existing application so it knows
 where to look for resources. In principle this means that every job that
 evaluates libraries (like <em>source</em>, <em>build</em>, etc.) needs to be informed about it
-through the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><span class="std std-ref">library</span></a>
+through the <a class="reference internal" href="../tool/generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><em>library</em></a>
 configuration key.</p>
 <p>To make it easier for you, so you don't have to add the new library to each and
 every job individually, there is the <em>libraries</em> job. If you override this one,
 all standard jobs that use the <em>library</em> key will automatically inherit it:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">[</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">[</span>
   <span class="p">{</span>
     <span class="s2">&quot;manifest&quot;</span><span class="o">:</span> <span class="s2">&quot;path/to/new/library/Manifest.json&quot;</span>
   <span class="p">}</span>
@@ -194,7 +193,7 @@ be added automatically.</p>
 <h3>Use it in your Code<a class="headerlink" href="#use-it-in-your-code" title="Permalink to this headline">¶</a></h3>
 <p>Now all you have to do is just to reference resources from the new library, e.g.
 a library class, in your code:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mylib</span><span class="p">.</span><span class="nx">Foo</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mylib</span><span class="p">.</span><span class="nx">Foo</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
@@ -223,7 +222,7 @@ individual namespace.</p>
 <p>Let's illustrate that with an example. Imagine you have been developing your
 application to quite some size. You have already organized the classes in
 subdirectories of the namespace root, e.g. like this</p>
-<div class="highlight-text"><div class="highlight"><pre><span></span>source/class/myapp
+<div class="highlight-text"><div class="highlight"><pre>source/class/myapp
                /model
                  Foo.js
                /view
@@ -233,8 +232,8 @@ subdirectories of the namespace root, e.g. like this</p>
 </div>
 <p>Now you want to factor out the <em>model</em> and <em>view</em> components into their own
 libraries. In a suitable path you create two new skeletons:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ create-application.py -n my_model -s myapp.model
-$ create-application.py -n my_view  -s myapp.view
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>create-application.py -n my_model -s myapp.model
+<span class="nv">$ </span>create-application.py -n my_view  -s myapp.view
 </pre></div>
 </div>
 <p>Now you can move <em>Foo.js</em> to the first library, into its
@@ -255,7 +254,7 @@ a namespace <em>myapp.model</em> with a path of <em>Foo.js</em>.</p>
 <span id="pages-development-library-custom-speed-up-cold-cache"></span><h2>Speed up Cold-Cache Compile Time<a class="headerlink" href="#speed-up-cold-cache-compile-time" title="Permalink to this headline">¶</a></h2>
 <p>Once you have settled in using an own library and the library's code is stable
 you can speed up usage of the library classes by running the
-<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-dependencies"><span class="std std-ref">compile-scss</span></a> job. This will
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-dependencies"><em>compile-scss</em></a> job. This will
 create a file with dependency information for the library which can be used to
 compile your main application. (The SDK comes with such a file pre-compiled for
 the framework classes.) You can then work in your main application, even run
@@ -278,7 +277,7 @@ to make sure the information is always current. But you can re-run the
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Custom Libraries</a><ul>
@@ -403,7 +402,7 @@ to make sure the information is always current. But you can re-run the
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

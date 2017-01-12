@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>@ignore &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>@ignore &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Image clipping and combining" href="image_clipping_and_combining.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">&#64;ignore</a>
     </section>
     <section id="content">
@@ -144,17 +143,15 @@
         
   <div class="section" id="ignore">
 <h1>&#64;ignore<a class="headerlink" href="#ignore" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="api_jsdoc_ref.html#pages-development-api-jsdoc-ref-ignore"><span class="std std-ref">&#64;ignore</span></a> is a very powerful construct that probably deserves a bit elaboration on the reference information.</p>
+<p><a class="reference internal" href="api_jsdoc_ref.html#pages-development-api-jsdoc-ref-ignore"><em>&#64;ignore</em></a> is a very powerful construct that probably deserves a bit elaboration on the reference information.</p>
 <div class="section" id="variadic-arguments">
 <h2>Variadic Arguments<a class="headerlink" href="#variadic-arguments" title="Permalink to this headline">¶</a></h2>
 <p>Like many &#64;-hints &#64;ignore is capable of a variable number of arguments. So instead of writing</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>@ignore(foo)
-@ignore(bar)
-</pre></div>
+<div class="highlight-javascript"><pre>@ignore(foo)
+@ignore(bar)</pre>
 </div>
 <p>you can write</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>@ignore(foo, bar)
-</pre></div>
+<div class="highlight-javascript"><pre>@ignore(foo, bar)</pre>
 </div>
 <p>to the same effect. (Of course you can also have two separate &#64;ignore entries if you prefer that).</p>
 </div>
@@ -179,12 +176,12 @@ that effectively means that the symbol can be left out from the build, and the
 compiler can safely skip it.</p>
 <p>But if you actually have symbols in your code that are provided by another
 contribution or library which are not known to the <em>lint</em> job, it is not a good
-idea to simply add <code class="docutils literal"><span class="pre">&#64;ignore(...&lt;symbols&gt;...)</span></code> in the affected classes, as then
+idea to simply add <tt class="docutils literal"><span class="pre">&#64;ignore(...&lt;symbols&gt;...)</span></tt> in the affected classes, as then
 you would also skip those symbols when building the application,
 which might result in a broken app.</p>
 <p>Rather, to just cover the <em>lint</em> behavior modify the configuration for the
-<code class="docutils literal"><span class="pre">lint</span></code> job in your <em>config.json</em> by adding the missing top-level symbols:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;jobs&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<tt class="docutils literal"><span class="pre">lint</span></tt> job in your <em>config.json</em> by adding the missing top-level symbols:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;jobs&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;lint&quot;</span> <span class="o">:</span> <span class="p">{</span>
     <span class="s2">&quot;lint-check&quot;</span> <span class="o">:</span> <span class="p">{</span>
       <span class="s2">&quot;allowed-globals&quot;</span> <span class="o">:</span> <span class="p">[</span>
@@ -243,7 +240,7 @@ control.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">&#64;ignore</a><ul>
@@ -366,7 +363,7 @@ control.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

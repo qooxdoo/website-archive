@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Code Structure &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Code Structure &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Generator Overview" href="../generator/generator.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Code Structure</a>
     </section>
     <section id="content">
@@ -150,7 +149,7 @@
 <ul class="simple">
 <li>Define <strong>one</strong> class per file.</li>
 <li>The base <strong>class name</strong> (like &quot;Application&quot; in <em>&quot;custom.Application&quot;</em>) has to match the <strong>file name</strong> (e.g. <em>&quot;Application.js&quot;</em>).</li>
-<li>The class <strong>name space</strong> (like &quot;custom&quot; in <em>&quot;custom.Application&quot;</em>) has to match the <strong>directory path</strong> of the file under the <code class="docutils literal"><span class="pre">source/class</span></code> root (like e.g. <em>&quot;custom/Application.js&quot;</em>).<ul>
+<li>The class <strong>name space</strong> (like &quot;custom&quot; in <em>&quot;custom.Application&quot;</em>) has to match the <strong>directory path</strong> of the file under the <tt class="docutils literal"><span class="pre">source/class</span></tt> root (like e.g. <em>&quot;custom/Application.js&quot;</em>).<ul>
 <li>This applies recursively for sub-directories. E.g. a class in the file <em>&quot;custom/foo/Bar.js&quot;</em> has to be named <em>&quot;custom.foo.Bar&quot;</em>.</li>
 </ul>
 </li>
@@ -163,14 +162,14 @@
 </li>
 <li><p class="first"><strong>Header</strong> <em>(optional)</em> : A comment holding author, copyrights, etc.</p>
 </li>
-<li><p class="first"><strong>Compiler Hints</strong> <em>(optional)</em> : Enclosed in a <a class="reference internal" href="../../development/api_jsdoc_ref.html"><span class="doc">JSDoc</span></a> comment you can have any number of the
+<li><p class="first"><strong>Compiler Hints</strong> <em>(optional)</em> : Enclosed in a <a class="reference internal" href="../../development/api_jsdoc_ref.html"><em>JSDoc</em></a> comment you can have any number of the
 following <cite>&#64;</cite> attributes that serve as hints to the compiler:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-use"><span class="std std-ref">&#64;use</span></a></li>
-<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-require"><span class="std std-ref">&#64;require</span></a></li>
-<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-ignore"><span class="std std-ref">&#64;ignore</span></a></li>
-<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-asset"><span class="std std-ref">&#64;asset</span></a></li>
-<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-cldr"><span class="std std-ref">&#64;cldr</span></a></li>
+<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-use"><em>&#64;use</em></a></li>
+<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-require"><em>&#64;require</em></a></li>
+<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-ignore"><em>&#64;ignore</em></a></li>
+<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-asset"><em>&#64;asset</em></a></li>
+<li><a class="reference internal" href="../../development/api_jsdoc_ref.html#pages-development-api-jsdoc-ref-cldr"><em>&#64;cldr</em></a></li>
 </ul>
 <p>See their respective descriptions on the JSDoc page for details. Currently,
 <cite>&#64;use</cite>, <cite>&#64;require</cite>, <cite>&#64;asset</cite> and <cite>&#64;cldr</cite> are interpreted global to the file
@@ -180,11 +179,11 @@ beginning). Only <cite>&#64;ignore</cite> will scope over the construct it prece
 JSDoc reference explains.</p>
 </li>
 <li><p class="first"><strong>Single Definition</strong> : One call to a <em>define()</em> method, such as
-qx.(<a class="reference internal" href="../../core/classes.html"><span class="doc">Class</span></a>|<a class="reference internal" href="../../desktop/ui_theming.html"><span class="doc">Theme</span></a>|<a class="reference internal" href="../../core/interfaces.html"><span class="doc">Interface</span></a>|<a class="reference internal" href="../../core/mixins.html"><span class="doc">Mixin</span></a>|...).define().</p>
+qx.(<a class="reference internal" href="../../core/classes.html"><em>Class</em></a>|<a class="reference internal" href="../../desktop/ui_theming.html"><em>Theme</em></a>|<a class="reference internal" href="../../core/interfaces.html"><em>Interface</em></a>|<a class="reference internal" href="../../core/mixins.html"><em>Mixin</em></a>|...).define().</p>
 </li>
 </ul>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/* ************************************************************************</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/* ************************************************************************</span>
 
 <span class="cm">   Copyright:</span>
 
@@ -221,7 +220,7 @@ qx.(<a class="reference internal" href="../../core/classes.html"><span class="do
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Code Structure</a><ul>
@@ -339,7 +338,7 @@ qx.(<a class="reference internal" href="../../core/classes.html"><span class="do
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

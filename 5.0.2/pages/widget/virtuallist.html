@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Virtual List &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Virtual List &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Widget Reference List" href="toctree.html" />
     <link rel="next" title="Virtual ComboBox" href="virtualcombobox.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,15 +131,15 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../references.html" >References</a>
-       &#187;
+       &raquo;
       <a href="widget_ref.html" >Widget Reference</a>
-       &#187;
+       &raquo;
       <a href="toctree.html" accesskey="U">Widget Reference List</a>
-     &#187;
+     &raquo;
     <a href="">Virtual List</a>
     </section>
     <section id="content">
@@ -155,7 +154,7 @@
 </div>
 <div class="section" id="description">
 <span id="pages-widget-virtuallist-description"></span><h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">qx.ui.list.List</span></code> is based on the virtual infrastructure and supports filtering, sorting, grouping, single selection, multi selection, data binding and custom rendering.</p>
+<p>The <tt class="docutils literal"><span class="pre">qx.ui.list.List</span></tt> is based on the virtual infrastructure and supports filtering, sorting, grouping, single selection, multi selection, data binding and custom rendering.</p>
 <p>Using the virtual infrastructure has considerable advantages when there is a huge amount of model items to render: Widgets are created only for visible items and reused. This saves both creation time and memory.</p>
 <p>With the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.list.core.IListDelegate">qx.ui.list.core.IListDelegate</a> interface, it is possible to configure the list's behavior (item and group renderer configuration, filtering, sorting, grouping, etc.).</p>
 <div class="admonition note">
@@ -166,7 +165,7 @@
 <div class="section" id="code-example">
 <span id="pages-widget-virtuallist-codeexample"></span><h2>Code Example<a class="headerlink" href="#code-example" title="Permalink to this headline">¶</a></h2>
 <p>Here's an example. We create a simple list example with 2500 items, sort the items (ascending), select the 20th item and log each selection change.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">//create the model data</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">//create the model data</span>
 <span class="kd">var</span> <span class="nx">rawData</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">2500</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">rawData</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Item No &quot;</span> <span class="o">+</span> <span class="nx">i</span><span class="p">;</span>
@@ -224,7 +223,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Virtual List</a><ul>
@@ -345,7 +344,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

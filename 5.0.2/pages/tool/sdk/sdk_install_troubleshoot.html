@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SDK Installation Troubleshooting &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>SDK Installation Troubleshooting &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="SDK Requirements" href="sdk_requirements.html" />
     <link rel="next" title="Hello World" href="../getting_started.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,13 +131,13 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" >Tooling</a>
-       &#187;
+       &raquo;
       <a href="sdk_requirements.html" accesskey="U">SDK Requirements</a>
-     &#187;
+     &raquo;
     <a href="">SDK Installation Troubleshooting</a>
     </section>
     <section id="content">
@@ -152,7 +151,7 @@
 <span id="pages-troubleshooting-python-3-0"></span><h3>Python 3.0<a class="headerlink" href="#python-3-0" title="Permalink to this headline">¶</a></h3>
 <p>Please make sure that you use a regular <strong>Python 2.x</strong> release (v2.6 or above).
 <strong>Python 3.0 is currently not supported</strong>.</p>
-<p>Execute <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code> in a console to get the installed Python version.</p>
+<p>Execute <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt> in a console to get the installed Python version.</p>
 </div>
 <div class="section" id="windows">
 <span id="pages-troubleshooting-windows"></span><h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
@@ -166,22 +165,21 @@
 installation step is conveniently handled within its graphical installation
 wizard.</p>
 </div>
-<p>After your successful <a class="reference internal" href="sdk_requirements.html#pages-tool-requirements-python"><span class="std std-ref">Python installation</span></a>, you need to add the installation folder to
-the so-called <code class="docutils literal"><span class="pre">PATH</span></code> environment variable, which contains a list of
+<p>After your successful <a class="reference internal" href="sdk_requirements.html#pages-tool-requirements-python"><em>Python installation</em></a>, you need to add the installation folder to
+the so-called <tt class="docutils literal"><span class="pre">PATH</span></tt> environment variable, which contains a list of
 directories that are searched for executables.</p>
-<p>Suppose you installed Python to its default location <code class="docutils literal"><span class="pre">C:\Python26</span></code>, open a
-Windows command shell (choose menu <code class="docutils literal"><span class="pre">Start</span> <span class="pre">-&gt;</span> <span class="pre">Run...</span></code> and type <code class="docutils literal"><span class="pre">cmd</span></code>). The
-following command prepends the installation folder to the value of <code class="docutils literal"><span class="pre">PATH</span></code>,
+<p>Suppose you installed Python to its default location <tt class="docutils literal"><span class="pre">C:\Python26</span></tt>, open a
+Windows command shell (choose menu <tt class="docutils literal"><span class="pre">Start</span> <span class="pre">-&gt;</span> <span class="pre">Run...</span></tt> and type <tt class="docutils literal"><span class="pre">cmd</span></tt>). The
+following command prepends the installation folder to the value of <tt class="docutils literal"><span class="pre">PATH</span></tt>,
 separated by a semicolon:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>set PATH=C:\Python26;%PATH%
-</pre></div>
+<div class="highlight-javascript"><pre>set PATH=C:\Python26;%PATH%</pre>
 </div>
-<p>When you now execute <code class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></code>, it should print out its version number.</p>
-<p>The modification of the <code class="docutils literal"><span class="pre">PATH</span></code> variable as described above is only
+<p>When you now execute <tt class="docutils literal"><span class="pre">python</span> <span class="pre">-V</span></tt>, it should print out its version number.</p>
+<p>The modification of the <tt class="docutils literal"><span class="pre">PATH</span></tt> variable as described above is only
 <em>temporary</em>. In order not to repeat the command each time you open a new
-command shell, modify the <code class="docutils literal"><span class="pre">PATH</span></code> variable permanently: in <code class="docutils literal"><span class="pre">Start</span> <span class="pre">-&gt;</span>
-<span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">System</span></code> choose <code class="docutils literal"><span class="pre">Environment</span> <span class="pre">variables</span></code> under the <code class="docutils literal"><span class="pre">Advanced</span></code>
-tab. Edit the system variable <code class="docutils literal"><span class="pre">Path</span></code> by prepending <code class="docutils literal"><span class="pre">C:\Python26;</span></code>.</p>
+command shell, modify the <tt class="docutils literal"><span class="pre">PATH</span></tt> variable permanently: in <tt class="docutils literal"><span class="pre">Start</span> <span class="pre">-&gt;</span>
+<span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">System</span></tt> choose <tt class="docutils literal"><span class="pre">Environment</span> <span class="pre">variables</span></tt> under the <tt class="docutils literal"><span class="pre">Advanced</span></tt>
+tab. Edit the system variable <tt class="docutils literal"><span class="pre">Path</span></tt> by prepending <tt class="docutils literal"><span class="pre">C:\Python26;</span></tt>.</p>
 </div>
 <div class="section" id="file-association">
 <span id="pages-troubleshooting-file-association"></span><h4>File association<a class="headerlink" href="#file-association" title="Permalink to this headline">¶</a></h4>
@@ -192,21 +190,20 @@ tab. Edit the system variable <code class="docutils literal"><span class="pre">P
 <a class="reference external" href="http://www.activestate.com/activepython/downloads">ActivePython</a> this installation step is conveniently handled within its
 graphical installation wizard.</p>
 </div>
-<p>In a standard Python installation on Windows, the <code class="docutils literal"><span class="pre">.py</span></code> file extension gets
+<p>In a standard Python installation on Windows, the <tt class="docutils literal"><span class="pre">.py</span></tt> file extension gets
 associated with the Python interpreter. This allows you to invoke .py files
 directly. You can check that in the following way at a command prompt:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>C:\&gt;assoc .py
-.py=Python.File
-</pre></div>
+<div class="highlight-javascript"><pre>C:\&gt;assoc .py
+.py=Python.File</pre>
 </div>
-<p>If this doesn't work, you can add a file association through <code class="docutils literal"><span class="pre">Windows</span> <span class="pre">Explorer</span>
-<span class="pre">-&gt;</span> <span class="pre">Extras</span> <span class="pre">-&gt;</span> <span class="pre">Folder</span> <span class="pre">Options</span> <span class="pre">-&gt;</span> <span class="pre">File</span> <span class="pre">Types</span></code>.</p>
+<p>If this doesn't work, you can add a file association through <tt class="docutils literal"><span class="pre">Windows</span> <span class="pre">Explorer</span>
+<span class="pre">-&gt;</span> <span class="pre">Extras</span> <span class="pre">-&gt;</span> <span class="pre">Folder</span> <span class="pre">Options</span> <span class="pre">-&gt;</span> <span class="pre">File</span> <span class="pre">Types</span></tt>.</p>
 <p>If for any reason you cannot use a file association for .py files, you can
 still invoke the Python interpreter directly, passing the original command line
 as arguments. In this case, make sure to provide a path prefix for the script
 name, even for scripts in the same directory, like so (this will be fixed
 later):</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">python</span> <span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">python</span> <span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
 </pre></div>
 </div>
 </div>
@@ -216,8 +213,8 @@ later):</p>
 <p>To run qooxdoo's Python-based tools without problems, it is important to have
 Python installed as an administrator &quot;for all&quot; users.</p>
 <p>Administrators installing Python &quot;for all&quot; users on Windows Vista <em>either</em> need
-to be logged in as user <code class="docutils literal"><span class="pre">Administrator</span></code>, <em>or</em> use the runas command, as in:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">runas</span> <span class="o">/</span><span class="nx">user</span><span class="o">:</span><span class="nx">Administrator</span> <span class="s2">&quot;msiexec /i &lt;path&gt;\&lt;file&gt;.msi&quot;</span>
+to be logged in as user <tt class="docutils literal"><span class="pre">Administrator</span></tt>, <em>or</em> use the runas command, as in:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">runas</span> <span class="o">/</span><span class="nx">user</span><span class="o">:</span><span class="nx">Administrator</span> <span class="s2">&quot;msiexec /i &lt;path&gt;\&lt;file&gt;.msi&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -226,7 +223,7 @@ to be logged in as user <code class="docutils literal"><span class="pre">Adminis
 <p>It has been reported that you need to use the PowerShell that comes with
 Windows 7 for the tools to work properly. The simple command shell doesn't seem
 to be sufficient. To launch the PowerShell, hit the <em>WIN+R</em> keys and enter
-<code class="docutils literal"><span class="pre">powershell</span></code>.</p>
+<tt class="docutils literal"><span class="pre">powershell</span></tt>.</p>
 </div>
 <div class="section" id="mac-os-x">
 <span id="pages-troubleshooting-mac-os-x"></span><h3>Mac OS X<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h3>
@@ -237,12 +234,11 @@ overwhelming recommendation of the &quot;MacPython&quot; community is to upgrade
 Python by downloading and installing a newer version from <a class="reference external" href="http://www.python.org/download/releases/">the Python standard
 release page</a>.&quot;</p>
 <p>If the generator is very slow on your Mac, it may be due to Spotlight or more
-precisely it's indexing daemon <code class="docutils literal"><span class="pre">mds</span></code>. <code class="docutils literal"><span class="pre">mds</span></code> can end up in an infinite loop
+precisely it's indexing daemon <tt class="docutils literal"><span class="pre">mds</span></tt>. <tt class="docutils literal"><span class="pre">mds</span></tt> can end up in an infinite loop
 resulting in very high disk load. While this is a general Mac issue, the
 generator can trigger this behaviour. To end the infinite loop:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span># Delete Spotlight cache
-sudo rm -r /.Spotlight-V100
-</pre></div>
+<div class="highlight-javascript"><pre># Delete Spotlight cache
+sudo rm -r /.Spotlight-V100</pre>
 </div>
 </div>
 </div>
@@ -259,7 +255,7 @@ sudo rm -r /.Spotlight-V100
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">SDK Installation Troubleshooting</a><ul>
@@ -387,7 +383,7 @@ sudo rm -r /.Spotlight-V100
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

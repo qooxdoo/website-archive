@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Interfaces &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Interfaces &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Core" href="../core.html" />
     <link rel="next" title="Mixins" href="mixins.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../core.html" accesskey="U">Core</a>
-     &#187;
+     &raquo;
     <a href="">Interfaces</a>
     </section>
     <section id="content">
@@ -147,7 +146,7 @@
 <p>qooxdoo supports Java like interfaces.</p>
 <p>Interface definitions look very similar to normal class definitions.</p>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Interface</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.ISample&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Interface</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.ISample&quot;</span><span class="p">,</span>
  <span class="p">{</span>
    <span class="nx">extend</span><span class="o">:</span> <span class="p">[</span><span class="nx">SuperInterfaces</span><span class="p">],</span>
 
@@ -178,10 +177,10 @@
 </div>
 <div class="section" id="definition">
 <span id="pages-interfaces-definition"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
-<p>Interfaces are declared using <code class="docutils literal"><span class="pre">qx.Interface.define</span></code>. Interface names start by convention with an <code class="docutils literal"><span class="pre">I</span></code> (uppercase &quot;i&quot;). They can inherit from other interfaces using the <code class="docutils literal"><span class="pre">extend</span></code> key. Multiple inheritance of interfaces is supported.</p>
+<p>Interfaces are declared using <tt class="docutils literal"><span class="pre">qx.Interface.define</span></tt>. Interface names start by convention with an <tt class="docutils literal"><span class="pre">I</span></tt> (uppercase &quot;i&quot;). They can inherit from other interfaces using the <tt class="docutils literal"><span class="pre">extend</span></tt> key. Multiple inheritance of interfaces is supported.</p>
 <div class="section" id="properties">
 <span id="pages-interfaces-properties"></span><h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
-<p>Properties in interfaces state that each class implementing this interface must have a property of the given name. The <a class="reference internal" href="defining_properties.html"><span class="doc">property definition</span></a> is not evaluated and may be empty.</p>
+<p>Properties in interfaces state that each class implementing this interface must have a property of the given name. The <a class="reference internal" href="defining_properties.html"><em>property definition</em></a> is not evaluated and may be empty.</p>
 </div>
 <div class="section" id="members">
 <span id="pages-interfaces-members"></span><h3>Members<a class="headerlink" href="#members" title="Permalink to this headline">¶</a></h3>
@@ -189,21 +188,21 @@
 </div>
 <div class="section" id="statics">
 <span id="pages-interfaces-statics"></span><h3>Statics<a class="headerlink" href="#statics" title="Permalink to this headline">¶</a></h3>
-<p>Statics behave exactly like statics defined in mixins and qooxdoo classes, with the different that only constants are allowed. They are accessible through their fully-qualified name. For example, the static variable <code class="docutils literal"><span class="pre">PI</span></code> could be used like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">ISample</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="p">(</span><span class="nx">r</span><span class="o">*</span><span class="nx">r</span><span class="p">);</span>
+<p>Statics behave exactly like statics defined in mixins and qooxdoo classes, with the different that only constants are allowed. They are accessible through their fully-qualified name. For example, the static variable <tt class="docutils literal"><span class="pre">PI</span></tt> could be used like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">ISample</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="p">(</span><span class="nx">r</span><span class="o">*</span><span class="nx">r</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="events">
 <span id="pages-interfaces-events"></span><h3>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h3>
-<p>Each event defined in the interface must be declared in the implementing classes. The syntax matches the <code class="docutils literal"><span class="pre">events</span></code> key of the class declaration.</p>
+<p>Each event defined in the interface must be declared in the implementing classes. The syntax matches the <tt class="docutils literal"><span class="pre">events</span></tt> key of the class declaration.</p>
 </div>
 </div>
 <div class="section" id="implementation">
 <span id="pages-interfaces-implementing-interfaces"></span><h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
-<p>With <code class="docutils literal"><span class="pre">implement</span></code> key of the class declaration, a list of interfaces can be listed, which the class implements. The class must implement all properties, members and events declared in the interfaces. Otherwise a runtime error will be thrown.</p>
+<p>With <tt class="docutils literal"><span class="pre">implement</span></tt> key of the class declaration, a list of interfaces can be listed, which the class implements. The class must implement all properties, members and events declared in the interfaces. Otherwise a runtime error will be thrown.</p>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Sample&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Sample&quot;</span><span class="p">,</span>
  <span class="p">{</span>
    <span class="nx">implement</span><span class="o">:</span> <span class="p">[</span><span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">ISample</span><span class="p">],</span>
 
@@ -230,11 +229,11 @@
 </div>
 <div class="section" id="validation">
 <span id="pages-interfaces-validating-interfaces"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal"><span class="pre">qx.Class</span></code> contains several static methods to check, whether a class or an object implements an interface:</p>
+<p><tt class="docutils literal"><span class="pre">qx.Class</span></tt> contains several static methods to check, whether a class or an object implements an interface:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">qx.Class.hasInterface()</span></code>: Whether a given class or any of its superclasses includes a given interface.</li>
-<li><code class="docutils literal"><span class="pre">qx.Class.implementsInterface()</span></code>: Checks whether all methods defined in the interface are implemented in the class. The class does not need to implement the interface explicitly.</li>
+<li><tt class="docutils literal"><span class="pre">qx.Class.hasInterface()</span></tt>: Whether a given class or any of its superclasses includes a given interface.</li>
+<li><tt class="docutils literal"><span class="pre">qx.Class.implementsInterface()</span></tt>: Checks whether all methods defined in the interface are implemented in the class. The class does not need to implement the interface explicitly.</li>
 </ul>
 </div></blockquote>
 <p>It is further possible to use interfaces as property checks.</p>
@@ -282,7 +281,7 @@
 <div class="section" id="references">
 <h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference internal" href="interface_quickref.html"><span class="doc">Interfaces Quick Ref</span></a> - a syntax quick reference for interfaces</li>
+<li><a class="reference internal" href="interface_quickref.html"><em>Interfaces Quick Ref</em></a> - a syntax quick reference for interfaces</li>
 <li><a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.Interface">API Documentation for Interface</a></li>
 </ul>
 </div>
@@ -300,7 +299,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Interfaces</a><ul>
@@ -430,7 +429,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

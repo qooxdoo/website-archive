@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Dock &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Dock &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Layout Reference" href="../layout.html" />
     <link rel="next" title="Grid" href="grid.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,13 +131,13 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../references.html" >References</a>
-       &#187;
+       &raquo;
       <a href="../layout.html" accesskey="U">Layout Reference</a>
-     &#187;
+     &raquo;
     <a href="">Dock</a>
     </section>
     <section id="content">
@@ -166,12 +165,12 @@
 </div>
 <div class="section" id="description">
 <span id="pages-layout-dock-description"></span><h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal"><span class="pre">Dock</span></code> layout attaches the children to the edges of the available space. The space distribution respects the child order and starts with the first child. Every added child reduces the available space of the other ones. This is important because for example a left attached child reduces the available width for top attached children and vice-versa. This layout is mainly used for the basic application layout structure.</p>
+<p>The <tt class="docutils literal"><span class="pre">Dock</span></tt> layout attaches the children to the edges of the available space. The space distribution respects the child order and starts with the first child. Every added child reduces the available space of the other ones. This is important because for example a left attached child reduces the available width for top attached children and vice-versa. This layout is mainly used for the basic application layout structure.</p>
 </div>
 <div class="section" id="layout-properties">
 <span id="pages-layout-dock-layout-properties"></span><h2>Layout properties<a class="headerlink" href="#layout-properties" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><strong>edge</strong> <em>(String)</em>: The edge where the layout item should be docked. This may be one of <code class="docutils literal"><span class="pre">north</span></code>, <code class="docutils literal"><span class="pre">east</span></code>, <code class="docutils literal"><span class="pre">south</span></code>, <code class="docutils literal"><span class="pre">west</span></code> or <code class="docutils literal"><span class="pre">center</span></code>. (Required)</li>
+<li><strong>edge</strong> <em>(String)</em>: The edge where the layout item should be docked. This may be one of <tt class="docutils literal"><span class="pre">north</span></tt>, <tt class="docutils literal"><span class="pre">east</span></tt>, <tt class="docutils literal"><span class="pre">south</span></tt>, <tt class="docutils literal"><span class="pre">west</span></tt> or <tt class="docutils literal"><span class="pre">center</span></tt>. (Required)</li>
 <li><strong>width</strong> <em>(String)</em>: Defines a percent width for the item. The percent width, when specified, is used instead of the width defined by the size hint. This is only supported for children added to the north or south edge or are centered in the middle of the layout. The minimum and maximum width still takes care of the elements limitations. It has no influence on the layout's size hint. Percents are mainly useful for widgets which are sized by the outer hierarchy.</li>
 <li><strong>height</strong> <em>(String)</em>: Defines a percent height for the item. The percent height, when specified, is used instead of the height defined by the size hint. This is only supported for children added to the west or east edge or are centered in the middle of the layout. The minimum and maximum height still takes care of the elements limitations. It has no influence on the layout's size hint. Percents are mainly useful for widgets which are sized by the outer hierarchy.</li>
 </ul>
@@ -218,7 +217,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Dock</a><ul>
@@ -341,7 +340,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

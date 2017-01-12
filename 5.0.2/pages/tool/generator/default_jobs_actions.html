@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Default Action Jobs &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Default Action Jobs &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="References" href="../../references.html" />
     <link rel="next" title="Default Includer Jobs" href="default_jobs_includers.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../references.html" accesskey="U">References</a>
-     &#187;
+     &raquo;
     <a href="">Default Action Jobs</a>
     </section>
     <section id="content">
@@ -151,31 +150,31 @@ just a reference list with short descriptions of what the jobs do. But in some
 cases, there is comprehensive documentation about the interface of this job and
 how it can be parametrized (This would usually require changing your
 <em>config.json</em> configuration file).</p>
-<p>These jobs can be invoked with the generator, e.g. as <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">&lt;jobname&gt;</span></code>.</p>
+<p>These jobs can be invoked with the generator, e.g. as <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">&lt;jobname&gt;</span></tt>.</p>
 <div class="section" id="api">
 <span id="pages-tool-generator-generator-default-jobs-api"></span><h2>api<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
 <p>Create api doc for the current library. Use the following macros to tailor the
 scope of classes that are going to show up in the customized apiviewer
 application:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;API_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;API_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
 <span class="s2">&quot;API_EXCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
 </pre></div>
 </div>
-<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><span class="std std-ref">include</span></a> config key.</p>
-<p>Classes, which are not covered by <code class="docutils literal"><span class="pre">API_INCLUDE</span></code>, are nevertheless included in
+<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><em>include</em></a> config key.</p>
+<p>Classes, which are not covered by <tt class="docutils literal"><span class="pre">API_INCLUDE</span></tt>, are nevertheless included in
 the api data with their full class description <em>if</em> they are required for
 inheritance relationships (e.g. a class that is included derives from a class
 which is not). If such a required class is explicitly <em>excluded</em> with
-<code class="docutils literal"><span class="pre">API_EXCLUDE</span></code>, a stub entry for it will be included in the api data to just
+<tt class="docutils literal"><span class="pre">API_EXCLUDE</span></tt>, a stub entry for it will be included in the api data to just
 show the inheritance relationship.</p>
 </div>
 <div class="section" id="api-data">
 <span id="pages-tool-generator-generator-default-jobs-api-data"></span><h2>api-data<a class="headerlink" href="#api-data" title="Permalink to this headline">¶</a></h2>
-<p>Create the api data for the current library. This is included in the <a class="reference internal" href="#pages-tool-generator-generator-default-jobs-api"><span class="std std-ref">api</span></a> job, but allows you to
+<p>Create the api data for the current library. This is included in the <a class="reference internal" href="#pages-tool-generator-generator-default-jobs-api"><em>api</em></a> job, but allows you to
 re-generate the api data <em>.json</em> files for the classes without re-generating the
 Apiviewer application as well. Moreover, you can supply class names as command
 line arguments to only re-generate the api data for those:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">sh</span><span class="o">&gt;</span> <span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">api</span><span class="o">-</span><span class="nx">data</span> <span class="nx">my</span><span class="p">.</span><span class="nx">own</span><span class="p">.</span><span class="nx">ClassA</span> <span class="p">...</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">sh</span><span class="o">&gt;</span> <span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">api</span><span class="o">-</span><span class="nx">data</span> <span class="nx">my</span><span class="p">.</span><span class="nx">own</span><span class="p">.</span><span class="nx">ClassA</span> <span class="p">...</span>
 </pre></div>
 </div>
 <p>Beware though that in such a case the tree information provided to the Apiviewer
@@ -212,10 +211,10 @@ modules separately (qx.Website splitted in n files) and minified.</p>
 <div class="section" id="compile-scss">
 <span id="pages-tool-generator-generator-default-jobs-dependencies"></span><h2>compile-scss<a class="headerlink" href="#compile-scss" title="Permalink to this headline">¶</a></h2>
 <p>This job is available in the qx.Mobile skeleton. The <em>compile-scss</em> job
-compiles SCSS files to CSS (See the article about <a class="reference internal" href="../../mobile/theming.html"><span class="doc">mobile theming</span></a>). The *.scss files usually reside in your
-application's <code class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/mobile/scss</span></code> folder, and will be
-compiled into the <code class="docutils literal"><span class="pre">css</span></code> sibling folder. This job is run automatically
-during each <code class="docutils literal"><span class="pre">source</span></code> and <code class="docutils literal"><span class="pre">build</span></code> run. See <a class="reference internal" href="#watch-scss">watch-scss</a> if you
+compiles SCSS files to CSS (See the article about <a class="reference internal" href="../../mobile/theming.html"><em>mobile theming</em></a>). The *.scss files usually reside in your
+application's <tt class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/mobile/scss</span></tt> folder, and will be
+compiled into the <tt class="docutils literal"><span class="pre">css</span></tt> sibling folder. This job is run automatically
+during each <tt class="docutils literal"><span class="pre">source</span></tt> and <tt class="docutils literal"><span class="pre">build</span></tt> run. See <a class="reference internal" href="#watch-scss">watch-scss</a> if you
 want automatic compilations when changing the SCSS files.</p>
 </div>
 <div class="section" id="dependencies">
@@ -254,10 +253,10 @@ and/or build version of your app has been built, stats on the cache, asf.</p>
 <div class="section" id="running-the-migration-job">
 <h3>Running the migration job<a class="headerlink" href="#running-the-migration-job" title="Permalink to this headline">¶</a></h3>
 <p>Here is a sample run of the migration job:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">migration</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">migration</span>
 </pre></div>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">NOTE</span><span class="o">:</span>    <span class="nx">To</span> <span class="nx">apply</span> <span class="nx">only</span> <span class="nx">the</span> <span class="nx">necessary</span> <span class="nx">changes</span> <span class="nx">to</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">,</span> <span class="nx">we</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">NOTE</span><span class="o">:</span>    <span class="nx">To</span> <span class="nx">apply</span> <span class="nx">only</span> <span class="nx">the</span> <span class="nx">necessary</span> <span class="nx">changes</span> <span class="nx">to</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">,</span> <span class="nx">we</span>
          <span class="nx">need</span> <span class="nx">to</span> <span class="nx">know</span> <span class="nx">the</span> <span class="nx">qooxdoo</span> <span class="nx">version</span> <span class="nx">it</span> <span class="nx">currently</span> <span class="nx">works</span> <span class="kd">with</span><span class="p">.</span>
 
 <span class="nx">Please</span> <span class="nx">enter</span> <span class="nx">your</span> <span class="nx">current</span> <span class="nx">qooxdoo</span> <span class="nx">version</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">]</span> <span class="o">:</span>
@@ -265,7 +264,7 @@ and/or build version of your app has been built, stats on the cache, asf.</p>
 </div>
 <p>Enter your qooxdoo version or just hit return if you are using the version given
 in square brackets.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">MIGRATION</span> <span class="nx">SUMMARY</span><span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">MIGRATION</span> <span class="nx">SUMMARY</span><span class="o">:</span>
 
 <span class="nx">Current</span> <span class="nx">qooxdoo</span> <span class="nx">version</span><span class="o">:</span>   <span class="mf">1.0</span>
 <span class="nx">Upgrade</span> <span class="nx">path</span><span class="o">:</span>              <span class="mf">1.0</span><span class="p">.</span><span class="mi">1</span> <span class="o">-&gt;</span> <span class="mf">1.1</span> <span class="o">-&gt;</span> <span class="mf">1.2</span>
@@ -292,15 +291,15 @@ in square brackets.</p>
 </pre></div>
 </div>
 <p>Enter &quot;yes&quot;.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">WARNING</span><span class="o">:</span> <span class="nx">The</span> <span class="nx">migration</span> <span class="nx">process</span> <span class="nx">will</span> <span class="nx">update</span> <span class="nx">the</span> <span class="nx">files</span> <span class="k">in</span> <span class="nx">place</span><span class="p">.</span> <span class="nx">Please</span> <span class="nx">make</span>
-         <span class="nx">sure</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">backup</span> <span class="k">of</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">.</span> <span class="nx">The</span> <span class="nx">complete</span> <span class="nx">output</span> <span class="k">of</span> <span class="nx">the</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">WARNING</span><span class="o">:</span> <span class="nx">The</span> <span class="nx">migration</span> <span class="nx">process</span> <span class="nx">will</span> <span class="nx">update</span> <span class="nx">the</span> <span class="nx">files</span> <span class="k">in</span> <span class="nx">place</span><span class="p">.</span> <span class="nx">Please</span> <span class="nx">make</span>
+         <span class="nx">sure</span><span class="p">,</span> <span class="nx">you</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">backup</span> <span class="nx">of</span> <span class="nx">your</span> <span class="nx">project</span><span class="p">.</span> <span class="nx">The</span> <span class="nx">complete</span> <span class="nx">output</span> <span class="nx">of</span> <span class="nx">the</span>
          <span class="nx">migration</span> <span class="nx">process</span> <span class="nx">will</span> <span class="nx">be</span> <span class="nx">logged</span> <span class="nx">to</span> <span class="s1">&#39;migration.log&#39;</span><span class="p">.</span>
 
 <span class="nx">Do</span> <span class="nx">you</span> <span class="nx">want</span> <span class="nx">to</span> <span class="nx">start</span> <span class="nx">the</span> <span class="nx">migration</span> <span class="nx">now</span><span class="o">?</span> <span class="p">[</span><span class="nx">no</span><span class="p">]</span> <span class="o">:</span>
 </pre></div>
 </div>
 <p>Enter &quot;yes&quot;.</p>
-<p>Check <code class="docutils literal"><span class="pre">migration.log</span></code> for messages that contain <em>foo.js has been modified.
+<p>Check <tt class="docutils literal"><span class="pre">migration.log</span></tt> for messages that contain <em>foo.js has been modified.
 Storing modifications ...</em> to verify changes to class code.</p>
 </div>
 </div>
@@ -376,7 +375,7 @@ server will export as document root a root path common to all libraries used by
 the source version. This overcomes e.g. restrictions by modern browsers that do
 not allow XHR requests over the <em>file://</em> protocol by default.</p>
 <p>By default the server will randomly pick a free port on the local machine to run
-at. You can assign it a fixed port by setting the <a class="reference internal" href="generator_config_macros.html#pages-tool-generator-generator-config-macros-source-server-port"><span class="std std-ref">SOURCE_SERVER_PORT</span></a> macro, e.g. like <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source-server</span> <span class="pre">-m</span> <span class="pre">SOURCE_SERVER_PORT:44161</span></code>.</p>
+at. You can assign it a fixed port by setting the <a class="reference internal" href="generator_config_macros.html#pages-tool-generator-generator-config-macros-source-server-port"><em>SOURCE_SERVER_PORT</em></a> macro, e.g. like <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source-server</span> <span class="pre">-m</span> <span class="pre">SOURCE_SERVER_PORT:44161</span></tt>.</p>
 </div>
 <div class="section" id="source-server-reload">
 <span id="pages-tool-generator-generator-default-jobs-source-server-reload"></span><h2>source-server-reload<a class="headerlink" href="#source-server-reload" title="Permalink to this headline">¶</a></h2>
@@ -398,11 +397,11 @@ the file with information necessary for the reload behavior.</p>
 <p>The reload feature can also be used when running the main application from the
 file system (with the <em>file://</em> protocol) or over a separate web server like
 Apache. In this case you just have to manually add the URL of the reload client
-script in the app's <code class="docutils literal"><span class="pre">index.html</span></code>, e.g. adding</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://localhost:44161/_active_reload/active_reload.js&quot;</span><span class="o">/&gt;</span>
+script in the app's <tt class="docutils literal"><span class="pre">index.html</span></tt>, e.g. adding</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://localhost:44161/_active_reload/active_reload.js&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 </div>
-<p>to the header section, assuming that <code class="docutils literal"><span class="pre">44161</span></code> is the port where the source
+<p>to the header section, assuming that <tt class="docutils literal"><span class="pre">44161</span></tt> is the port where the source
 server runs on.  <em>/_active_reload/active_reload.js</em> is the URL path to the reload
 client script.  You then load the application over your standard web server.
 Just the reload notification is handled over the source server.</p>
@@ -418,7 +417,7 @@ straight-forward to include the generated configuration file into the main
 server/virtual host configuration. The file contains hints how to achieve that
 for the given server implementation. You can tweak most of the settings involved
 in the job (server type, server URL, ...), the config key behind it is
-<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-web-server-config"><span class="std std-ref">web-server-config</span></a>.</p>
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-web-server-config"><em>web-server-config</em></a>.</p>
 <p>In this way the source version of your application is integrated with an
 existing web server environment which comes in handy if you e.g. want to
 interact with backend services that are already hosted on the same web server.</p>
@@ -431,13 +430,13 @@ templates if your web server is not yet supported.</p>
 <ul>
 <li><p class="first">Use the following macro to tailor the scope of classes in which unit test
 classes are searched for:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;TEST_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;TEST_INCLUDE&quot;</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&lt;class_patt1&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;class_patt2&gt;&quot;</span><span class="p">,</span> <span class="p">...]</span>
 </pre></div>
 </div>
-<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><span class="std std-ref">include</span></a> config key.</p>
+<p>The syntax for the class pattern is like those for the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include"><em>include</em></a> config key.</p>
 </li>
 <li><p class="first">The libraries from the
-<a class="reference internal" href="default_jobs_includers.html#pages-tool-generator-generator-default-jobs-libraries"><span class="std std-ref">libraries</span></a> job will be
+<a class="reference internal" href="default_jobs_includers.html#pages-tool-generator-generator-default-jobs-libraries"><em>libraries</em></a> job will be
 included when building the test application (the application containing your
 unit tests is a separate application which is loaded into the runner
 application).</p>
@@ -447,7 +446,7 @@ or have very specific settings that must be applied to the test application, you
 can provide a custom includer job <em>common-tests</em> which may contain a custom
 <em>library</em> key and other keys. But then you have to make sure it contains the
 Testrunner library as well.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;common-tests&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;common-tests&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="s2">&quot;extend&quot;</span>    <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;libraries&quot;</span> <span class="p">],</span>
 
@@ -483,7 +482,7 @@ of the test application.</p>
 <span id="pages-tool-generator-generator-default-jobs-test-source"></span><h2>test-source<a class="headerlink" href="#test-source" title="Permalink to this headline">¶</a></h2>
 <p>Create a test runner app for unit tests (source version) of the current library.</p>
 <p>The same customization interface applies as for the default
-<a class="reference internal" href="#pages-tool-generator-generator-default-jobs-test"><span class="std std-ref">test</span></a> job.</p>
+<a class="reference internal" href="#pages-tool-generator-generator-default-jobs-test"><em>test</em></a> job.</p>
 </div>
 <div class="section" id="translation">
 <span id="pages-tool-generator-generator-default-jobs-translation"></span><h2>translation<a class="headerlink" href="#translation" title="Permalink to this headline">¶</a></h2>
@@ -501,10 +500,10 @@ unexpected behaviour.</p>
 <div class="section" id="validate-manifest">
 <span id="pages-tool-generator-default-jobs-actions-validate-manifest"></span><h2>validate-manifest<a class="headerlink" href="#validate-manifest" title="Permalink to this headline">¶</a></h2>
 <p>Validates the <em>Manifest.json</em> against a schema.</p>
-<p>Some entries in <a class="reference internal" href="../sdk/manifest.html"><span class="doc">Manifest</span></a> files are
+<p>Some entries in <a class="reference internal" href="../sdk/manifest.html"><em>Manifest</em></a> files are
 informational and therefore optional, others are required to successfully use
 the current library with the Generator. The job is especially helpful for
-developers of <a class="reference internal" href="../../development/contrib.html"><span class="doc">contributions</span></a>, as those
+developers of <a class="reference internal" href="../../development/contrib.html"><em>contributions</em></a>, as those
 require some extra keys.</p>
 </div>
 <div class="section" id="watch">
@@ -512,10 +511,10 @@ require some extra keys.</p>
 <p>The <em>watch</em> job watches the <em>source/class</em> path of your application for changed
 JavaScript files, and automatically runs the default Generator job (usually
 <em>&quot;source-hybrid&quot;</em>) in case of a change. The config key behind it is
-<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-watch-files"><span class="std std-ref">watch-files</span></a>.</p>
+<a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-watch-files"><em>watch-files</em></a>.</p>
 <p>When you run the job the process will starting telling you the path it is
 watching, and will continue until you terminate it with Ctrl-C. On *ix like
-systems you can put the job in the shell's background with <code class="docutils literal"><span class="pre">&amp;</span></code>, in order to
+systems you can put the job in the shell's background with <tt class="docutils literal"><span class="pre">&amp;</span></tt>, in order to
 get your shell prompt back. The job will continue running, and only produce some
 console output when its associate command is being run. In order to terminate it
 you have to bring it to the foreground again and then press Ctrl-C (Or you can
@@ -529,9 +528,9 @@ more difficult to maintain cross-platform.</p>
 <span id="pages-tool-generator-default-jobs-actions-watch-scss"></span><h2>watch-scss<a class="headerlink" href="#watch-scss" title="Permalink to this headline">¶</a></h2>
 <p>This job is available in the qx.Mobile skeleton. The <em>watch-scss</em> job watches
 SCSS files, and compiles them to CSS once they change (See the article about
-<a class="reference internal" href="../../mobile/theming.html"><span class="doc">mobile theming</span></a>). The *.scss files usually reside
-in your application's <code class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/scss</span></code> folder, and
-will be compiled into <code class="docutils literal"><span class="pre">source/resource&lt;name_space&gt;/css</span></code>.</p>
+<a class="reference internal" href="../../mobile/theming.html"><em>mobile theming</em></a>). The *.scss files usually reside
+in your application's <tt class="docutils literal"><span class="pre">source/theme/&lt;name_space&gt;/scss</span></tt> folder, and
+will be compiled into <tt class="docutils literal"><span class="pre">source/resource&lt;name_space&gt;/css</span></tt>.</p>
 </div>
 </div>
 
@@ -546,7 +545,7 @@ will be compiled into <code class="docutils literal"><span class="pre">source/re
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Default Action Jobs</a><ul>
@@ -693,7 +692,7 @@ will be compiled into <code class="docutils literal"><span class="pre">source/re
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

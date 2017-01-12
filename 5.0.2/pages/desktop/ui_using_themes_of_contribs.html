@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Using themes of contributions in your application &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Using themes of contributions in your application &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Three steps for efficient theme development" href="ui_using_widgetbrowser_for_theme_development.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Using themes of contributions in your application</a>
     </section>
     <section id="content">
@@ -157,8 +156,8 @@
 <p>For an easier understanding this tutorial explains the necessary setup at the example of the <a class="reference external" href="http://qooxdoo.org/contrib/project#tileview">TileView</a> widget.</p>
 <div class="section" id="adjust-your-configuration">
 <span id="pages-ui-using-themes-of-contribs-adjust-your-configuration"></span><h2>Adjust your configuration<a class="headerlink" href="#adjust-your-configuration" title="Permalink to this headline">¶</a></h2>
-<p>The interesting part of the <code class="docutils literal"><span class="pre">config.json</span></code> looks like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">...</span>
+<p>The interesting part of the <tt class="docutils literal"><span class="pre">config.json</span></tt> looks like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">...</span>
 <span class="s2">&quot;jobs&quot;</span> <span class="o">:</span>
   <span class="p">{</span>
     <span class="s2">&quot;libraries&quot;</span> <span class="o">:</span>
@@ -182,9 +181,9 @@
 </div>
 <div class="section" id="include-appearance-theme">
 <span id="pages-ui-using-themes-of-contribs-include-appearance-theme"></span><h2>Include appearance theme<a class="headerlink" href="#include-appearance-theme" title="Permalink to this headline">¶</a></h2>
-<p>If you use the latest GUI skeleton template you will get an own appearance theme class (among all other theme classes) already setup for you. All you need to do is to include the appearance class provided by the <code class="docutils literal"><span class="pre">TileView</span></code> widget into your own appearance class.</p>
-<p>Include the <code class="docutils literal"><span class="pre">TileView</span></code> appearance:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;yourApp.theme.Appearance&quot;</span><span class="p">,</span>
+<p>If you use the latest GUI skeleton template you will get an own appearance theme class (among all other theme classes) already setup for you. All you need to do is to include the appearance class provided by the <tt class="docutils literal"><span class="pre">TileView</span></tt> widget into your own appearance class.</p>
+<p>Include the <tt class="docutils literal"><span class="pre">TileView</span></tt> appearance:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;yourApp.theme.Appearance&quot;</span><span class="p">,</span>
 <span class="p">{</span>
   <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">modern</span><span class="p">.</span><span class="nx">Appearance</span><span class="p">,</span>
 
@@ -199,11 +198,11 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>So all you need to add is this little <code class="docutils literal"><span class="pre">include</span></code> key with the corresponding appearance class to include it into your application.</p>
+<p>So all you need to add is this little <tt class="docutils literal"><span class="pre">include</span></tt> key with the corresponding appearance class to include it into your application.</p>
 <div class="section" id="known-issues">
 <span id="pages-ui-using-themes-of-contribs-known-issues"></span><h3>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h3>
-<p>The following code which could reside in your <code class="docutils literal"><span class="pre">Application</span></code> class <strong>won't</strong> work:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">include</span><span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">modern</span><span class="p">.</span><span class="nx">Appearance</span><span class="p">,</span> <span class="nx">tileview</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">Appearance</span><span class="p">);</span>
+<p>The following code which could reside in your <tt class="docutils literal"><span class="pre">Application</span></tt> class <strong>won't</strong> work:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Theme</span><span class="p">.</span><span class="nx">include</span><span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">modern</span><span class="p">.</span><span class="nx">Appearance</span><span class="p">,</span> <span class="nx">tileview</span><span class="p">.</span><span class="nx">theme</span><span class="p">.</span><span class="nx">Appearance</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The reason is that this include above will be resolved at <strong>runtime</strong> which does not work anymore. The first solution is resolved at <strong>loading time</strong>, so the include is already performed at startup.
@@ -223,7 +222,7 @@ This issue is already filed under <a class="reference external" href="http://bug
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Using themes of contributions in your application</a><ul>
@@ -344,7 +343,7 @@ This issue is already filed under <a class="reference external" href="http://bug
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

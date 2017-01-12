@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Resources &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Resources &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Selection Handling" href="ui_selection.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Resources</a>
     </section>
     <section id="content">
@@ -147,23 +146,23 @@
 <p>Resources comprise images, icons, style sheets, Flash files, helper HTML files, and so forth. The framework itself provides many icons and some other useful resources you can use right away in your application without any customization. This article however explains how to specify and use custom resources for your application.</p>
 <div class="section" id="technical-overview">
 <span id="pages-ui-resources-technical-overview"></span><h2>Technical overview<a class="headerlink" href="#technical-overview" title="Permalink to this headline">¶</a></h2>
-<p>Resources live in the <code class="docutils literal"><span class="pre">source/resource/&lt;namespace&gt;</span></code> subtree of each library. You explicitly reference a resource in your application code by just naming the path of the corresponding file <strong>under</strong> this root (This is also referred to as the <strong>resource id</strong>).</p>
-<p>So if there is a resource in your &quot;myapp&quot; application under the path <code class="docutils literal"><span class="pre">myapp/source/resource/myapp/icons/tray.png</span></code> you would refer to it in your application code with <code class="docutils literal"><span class="pre">myapp/icons/tray.png</span></code>.</p>
-<p>To find the corresponding file during a build, qooxdoo searches all those paths of all the libraries your application is using. The first hit will be regarded as the resource you want to use. (During the generation of a <code class="docutils literal"><span class="pre">build</span></code> version of your app, these resource files will be copied to the <code class="docutils literal"><span class="pre">build</span></code> folder, so your build version will be self-contained).</p>
-<p>The libraries are searched in the order they are declared in your config.json file. This usually means that your own resource folder comes first, then the framework's resource folder, and then the resource folders of all further libraries you have included. This way, you can <em>shadow</em> resources of like names, e.g. by adding a file <code class="docutils literal"><span class="pre">qx/static/blank.gif</span></code> under your source/resource folder you will shadow the file of the same resource id in the framework.</p>
+<p>Resources live in the <tt class="docutils literal"><span class="pre">source/resource/&lt;namespace&gt;</span></tt> subtree of each library. You explicitly reference a resource in your application code by just naming the path of the corresponding file <strong>under</strong> this root (This is also referred to as the <strong>resource id</strong>).</p>
+<p>So if there is a resource in your &quot;myapp&quot; application under the path <tt class="docutils literal"><span class="pre">myapp/source/resource/myapp/icons/tray.png</span></tt> you would refer to it in your application code with <tt class="docutils literal"><span class="pre">myapp/icons/tray.png</span></tt>.</p>
+<p>To find the corresponding file during a build, qooxdoo searches all those paths of all the libraries your application is using. The first hit will be regarded as the resource you want to use. (During the generation of a <tt class="docutils literal"><span class="pre">build</span></tt> version of your app, these resource files will be copied to the <tt class="docutils literal"><span class="pre">build</span></tt> folder, so your build version will be self-contained).</p>
+<p>The libraries are searched in the order they are declared in your config.json file. This usually means that your own resource folder comes first, then the framework's resource folder, and then the resource folders of all further libraries you have included. This way, you can <em>shadow</em> resources of like names, e.g. by adding a file <tt class="docutils literal"><span class="pre">qx/static/blank.gif</span></tt> under your source/resource folder you will shadow the file of the same resource id in the framework.</p>
 </div>
 <div class="section" id="declaring-resources-in-the-code">
 <span id="pages-ui-resources-declaring-resources-in-the-code"></span><h2>Declaring resources in the code<a class="headerlink" href="#declaring-resources-in-the-code" title="Permalink to this headline">¶</a></h2>
-<p id="index-0">You have to declare the resources you wish to use in your application code in an <code class="docutils literal"><span class="pre">&#64;asset</span></code> compiler hint near the top of your source file.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<p id="index-0">You have to declare the resources you wish to use in your application code in an <tt class="docutils literal"><span class="pre">&#64;asset</span></tt> compiler hint near the top of your source file.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> *</span>
 <span class="cm"> * @asset(myapp/icons/16/folder-open.png)</span>
 <span class="cm"> */</span>
 </pre></div>
 </div>
-<p>This is essential, since these hints are evaluated during the compile step, which searches for the corresponding files, generates appropriate URIs to them and copies them to the <code class="docutils literal"><span class="pre">build</span></code> folder.</p>
+<p>This is essential, since these hints are evaluated during the compile step, which searches for the corresponding files, generates appropriate URIs to them and copies them to the <tt class="docutils literal"><span class="pre">build</span></tt> folder.</p>
 <p>Instead of adding meta information for each individual resource, you may as well use simple (shell) wildcards to specify a whole set of resources:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> *</span>
 <span class="cm"> * @asset(myapp/icons/16/*)</span>
 <span class="cm"> */</span>
@@ -175,7 +174,7 @@
 <span id="pages-ui-resources-using-resources-with-widgets"></span><h2>Using resources with widgets<a class="headerlink" href="#using-resources-with-widgets" title="Permalink to this headline">¶</a></h2>
 <p>Once you've declared the resource in your code, you can equip any compatible widget with it.</p>
 <p>Here's an example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Button B&quot;</span><span class="p">,</span> <span class="s2">&quot;myapp/icons/16/folder-open.png&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Button B&quot;</span><span class="p">,</span> <span class="s2">&quot;myapp/icons/16/folder-open.png&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -191,14 +190,14 @@ contain the icons' theme name explicitly.</li>
 <li>Use a macro to get the icons from the current theme. This would
 allow for a later change of icon themes at the config file level,
 without the need to adjust any resource IDs in your application code.
-The <a class="reference internal" href="../tool/generator/generator_config_articles.html#pages-tool-generator-generator-config-articles-asset-let-key"><span class="std std-ref">Generator documentation</span></a>
+The <a class="reference internal" href="../tool/generator/generator_config_articles.html#pages-tool-generator-generator-config-articles-asset-let-key"><em>Generator documentation</em></a>
 explains how to declare these macros.</li>
 <li>Copy the icons you are interested in from the original location in
 the qooxdoo framework to the local resource folder of your
 application. You are now independent of the qooxdoo icon theme folders
 and can manage these icons as you would with any other custom images.</li>
 </ol>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * @asset(qx/icon/Oxygen/16/apps/utilities-dictionary.png)</span>
 <span class="cm"> * @asset(qx/icon/${qx.icontheme}/16/apps/utilities-dictionary.png)</span>
 <span class="cm"> * @asset(myapp/icons/16/utilities-dictionary.png)</span>
@@ -221,7 +220,7 @@ theme need to be in sync. The default icon set for most themes is
 <em>Tango</em>, but if you want to use the <em>Classic</em> theme make sure that
 icons from the <em>Oxygen</em> icon theme are used. You can achieve this by
 editing your <cite>config.json</cite> like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
   <span class="s2">&quot;name&quot;</span>    <span class="o">:</span> <span class="s2">&quot;myapp&quot;</span><span class="p">,</span>
 
   <span class="p">...</span>
@@ -242,7 +241,7 @@ editing your <cite>config.json</cite> like this:</p>
 <div class="section" id="obtaining-the-url-for-a-resource">
 <span id="pages-ui-resources-obtaining-the-url-for-a-resource"></span><h2>Obtaining the URL for a resource<a class="headerlink" href="#obtaining-the-url-for-a-resource" title="Permalink to this headline">¶</a></h2>
 <p>To obtain a URL for a resource, use the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.util.ResourceManager">ResourceManager</a>:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">iframe</span> <span class="o">=</span> <span class="k">new</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">iframe</span> <span class="o">=</span> <span class="k">new</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">embed</span><span class="p">.</span><span class="nx">Iframe</span><span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">ResourceManager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">toUri</span><span class="p">(</span><span class="s2">&quot;myapp/html/FAQ.htm&quot;</span><span class="p">));</span>
 </pre></div>
 </div>
@@ -250,7 +249,7 @@ editing your <cite>config.json</cite> like this:</p>
 <div class="section" id="modifying-the-resource-or-script-uris-at-runtime">
 <h2>Modifying the resource or script URIs at runtime<a class="headerlink" href="#modifying-the-resource-or-script-uris-at-runtime" title="Permalink to this headline">¶</a></h2>
 <p>In some usage scenarios, it can be necessary to modify the URIs used to reference code and resources after the application was started. This can be achieved using the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.util.LibraryManager">Library Manager</a>:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">LibraryManager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;myapp&quot;</span><span class="p">,</span> <span class="s2">&quot;resourceUri&quot;</span><span class="p">,</span> <span class="s2">&quot;http://example.com/resources&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">LibraryManager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;myapp&quot;</span><span class="p">,</span> <span class="s2">&quot;resourceUri&quot;</span><span class="p">,</span> <span class="s2">&quot;http://example.com/resources&quot;</span><span class="p">);</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">ResourceManager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">toUri</span><span class="p">(</span><span class="s2">&quot;myapp/html/FAQ.htm&quot;</span><span class="p">);</span> <span class="c1">//returns &quot;http://example.com/resources/myapp/html/FAQ.htm&quot;</span>
 </pre></div>
 </div>
@@ -268,7 +267,7 @@ editing your <cite>config.json</cite> like this:</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Resources</a><ul>
@@ -390,7 +389,7 @@ editing your <cite>config.json</cite> like this:</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

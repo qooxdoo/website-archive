@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Transforms and Animations (CSS3) &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Transforms and Animations (CSS3) &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Website" href="../website.html" />
     <link rel="next" title="Back-Button and Bookmark Support" href="back-button_and_bookmark_support.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../website.html" accesskey="U">qx.Website</a>
-     &#187;
+     &raquo;
     <a href="">Transforms and Animations (CSS3)</a>
     </section>
     <section id="content">
@@ -162,7 +161,7 @@ elements. The basic transform functions will give you an idea what is possible
 with transforms: Scale, Translate, Rotate, Skew.</p>
 <p><img alt="Transform.png" src="../../_images/Transform.png" /></p>
 <p>But lets take a look at the transforms applied in the demo above.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">box</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;scale&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">box</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;scale&quot;</span><span class="p">);</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">bom</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">Transform</span><span class="p">.</span><span class="nx">scale</span><span class="p">(</span><span class="nx">box</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
 
 <span class="nx">box</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;translate&quot;</span><span class="p">);</span>
@@ -187,7 +186,7 @@ can expect, animations define a change of something over a given amount of
 time. That's the key feature of animations. But what can be changed and how can
 we define that?  The first question is easy to answer: We can change CSS
 properties. To answer the second question, see the following code:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">desc</span> <span class="o">=</span> <span class="p">{</span><span class="nx">duration</span><span class="o">:</span> <span class="mi">1000</span><span class="p">,</span> <span class="nx">timing</span><span class="o">:</span> <span class="s2">&quot;ease-out&quot;</span><span class="p">,</span> <span class="nx">keyFrames</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">desc</span> <span class="o">=</span> <span class="p">{</span><span class="nx">duration</span><span class="o">:</span> <span class="mi">1000</span><span class="p">,</span> <span class="nx">timing</span><span class="o">:</span> <span class="s2">&quot;ease-out&quot;</span><span class="p">,</span> <span class="nx">keyFrames</span> <span class="o">:</span> <span class="p">{</span>
   <span class="mi">0</span> <span class="o">:</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span> <span class="o">:</span> <span class="s2">&quot;30px&quot;</span><span class="p">},</span>
   <span class="mi">70</span> <span class="o">:</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span> <span class="o">:</span> <span class="s2">&quot;100px&quot;</span><span class="p">},</span>
   <span class="mi">100</span> <span class="o">:</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span><span class="o">:</span> <span class="s2">&quot;30px&quot;</span><span class="p">}</span>
@@ -220,7 +219,7 @@ you use a webkit-based browser like Safari or Chrome.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Transforms and Animations (CSS3)</a><ul>
@@ -338,7 +337,7 @@ you use a webkit-based browser like Safari or Chrome.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

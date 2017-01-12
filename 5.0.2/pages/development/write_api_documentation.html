@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Writing API Documentation &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Writing API Documentation &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="JSDoc Reference" href="api_jsdoc_ref.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">Writing API Documentation</a>
     </section>
     <section id="content">
@@ -144,11 +143,11 @@
         
   <div class="section" id="writing-api-documentation">
 <span id="pages-write-api-documentation-writing-api-documentation"></span><h1>Writing API Documentation<a class="headerlink" href="#writing-api-documentation" title="Permalink to this headline">¶</a></h1>
-<p>For documenting the qooxdoo API special comments in the source code (so-called &quot;doc comments&quot;) are used. The doc comments in qooxdoo are similar to <a class="reference external" href="http://code.google.com/p/jsdoc-toolkit/">JSDoc comments</a> or <a class="reference external" href="http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html">Javadoc</a> comments. To account for some qooxdoo specific needs there are certain differences to the two systems mentioned above. For a complete treatment of the syntax see the <a class="reference internal" href="api_jsdoc_ref.html"><span class="doc">JSDoc reference</span></a>.</p>
+<p>For documenting the qooxdoo API special comments in the source code (so-called &quot;doc comments&quot;) are used. The doc comments in qooxdoo are similar to <a class="reference external" href="http://code.google.com/p/jsdoc-toolkit/">JSDoc comments</a> or <a class="reference external" href="http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html">Javadoc</a> comments. To account for some qooxdoo specific needs there are certain differences to the two systems mentioned above. For a complete treatment of the syntax see the <a class="reference internal" href="api_jsdoc_ref.html"><em>JSDoc reference</em></a>.</p>
 <div class="section" id="an-introductory-example">
 <span id="pages-write-api-documentation-the-structure-of-a-documentation-comment"></span><h2>An introductory example<a class="headerlink" href="#an-introductory-example" title="Permalink to this headline">¶</a></h2>
-<p>Doc comments are specially formatted comment blocks enclosed by <code class="docutils literal"><span class="pre">/**</span></code> and <code class="docutils literal"><span class="pre">*/</span></code>. A typical use case is to put them in front of a method definition. You start with a general description of the method, and then add sections that start with <code class="docutils literal"><span class="pre">&#64;</span></code> followed by a special key that describes e.g. a parameter or the return type of the method. Here is an example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<p>Doc comments are specially formatted comment blocks enclosed by <tt class="docutils literal"><span class="pre">/**</span></tt> and <tt class="docutils literal"><span class="pre">*/</span></tt>. A typical use case is to put them in front of a method definition. You start with a general description of the method, and then add sections that start with <tt class="docutils literal"><span class="pre">&#64;</span></tt> followed by a special key that describes e.g. a parameter or the return type of the method. Here is an example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * Shows a message to the user.</span>
 <span class="cm"> *</span>
 <span class="cm"> * @param text {string} the message to show.</span>
@@ -158,9 +157,9 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">&#64;param</span></code> attribute entry describes the parameter <code class="docutils literal"><span class="pre">text</span></code>. Description texts may also include markup for highlighting and structure.</p>
+<p>The <tt class="docutils literal"><span class="pre">&#64;param</span></tt> attribute entry describes the parameter <tt class="docutils literal"><span class="pre">text</span></tt>. Description texts may also include markup for highlighting and structure.</p>
 <p>Here is a longer example that covers an entire class file:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * General class description.</span>
 <span class="cm"> */</span>
 <span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;mypackage.MyClass&quot;</span><span class="p">,</span>
@@ -209,12 +208,12 @@
 <span class="p">},</span>
 </pre></div>
 </div>
-<p>The class description is taken as the first comment in the file which starts with <code class="docutils literal"><span class="pre">/**</span></code>. Therefore if you have a comment at the start of the file which has a first line of <code class="docutils literal"><span class="pre">/**********</span></code>, that will be taken as the class description, overriding any comment above the class itself. Therefore use <code class="docutils literal"><span class="pre">/*</span> <span class="pre">*********</span></code> or <code class="docutils literal"><span class="pre">/*</span> <span class="pre">==========</span></code> etc.</p>
+<p>The class description is taken as the first comment in the file which starts with <tt class="docutils literal"><span class="pre">/**</span></tt>. Therefore if you have a comment at the start of the file which has a first line of <tt class="docutils literal"><span class="pre">/**********</span></tt>, that will be taken as the class description, overriding any comment above the class itself. Therefore use <tt class="docutils literal"><span class="pre">/*</span> <span class="pre">*********</span></tt> or <tt class="docutils literal"><span class="pre">/*</span> <span class="pre">==========</span></tt> etc.</p>
 </div>
 <div class="section" id="advanced-doc-comments">
 <span id="pages-write-api-documentation-example"></span><h2>Advanced Doc Comments<a class="headerlink" href="#advanced-doc-comments" title="Permalink to this headline">¶</a></h2>
-<p>Here is a more advanced example of a method documentation block that uses more <code class="docutils literal"><span class="pre">&#64;</span></code> keys to provide structured information about the method.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<p>Here is a more advanced example of a method documentation block that uses more <tt class="docutils literal"><span class="pre">&#64;</span></tt> keys to provide structured information about the method.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm">* Handles a drop.</span>
 <span class="cm">*</span>
 <span class="cm">* @param dragSource {qx.bla.DragSource} the drag source that was dropped.</span>
@@ -234,12 +233,12 @@
 </div>
 <p>This will render in the Apiviewer similarly to this:</p>
 <img alt="../../_images/apiviewer_method.png" src="../../_images/apiviewer_method.png" />
-<p>As mentioned above the <a class="reference internal" href="api_jsdoc_ref.html"><span class="doc">JSDoc reference</span></a> has the complete list of possible section keys and markup possibilities.</p>
+<p>As mentioned above the <a class="reference internal" href="api_jsdoc_ref.html"><em>JSDoc reference</em></a> has the complete list of possible section keys and markup possibilities.</p>
 </div>
 <div class="section" id="package-documentation">
 <span id="pages-write-api-documentation-init-js-files"></span><h2>Package documentation<a class="headerlink" href="#package-documentation" title="Permalink to this headline">¶</a></h2>
 <p>While documenting a class files where JSDoc comments are interleaved with the class code seems straight forward, this is not so obvious if you want to provide documentation for a <em>package</em>, i.e. a collection of classes under a common namespace (like <em>qx.ui.core</em>, <em>qx.util</em>, etc.).</p>
-<p>In order to fill this gap you can add a <code class="docutils literal"><span class="pre">__init__.js</span></code> file to the package. This file should contain only a single JSDoc comment that describes the package as a whole. These files are then scanned during a <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></code> run and the documentation is inserted at the package nodes, together with a list of classes of the corresponding package, in the documentation tree. See the API documentation for the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.fx">framework packages</a> as examples.</p>
+<p>In order to fill this gap you can add a <tt class="docutils literal"><span class="pre">__init__.js</span></tt> file to the package. This file should contain only a single JSDoc comment that describes the package as a whole. These files are then scanned during a <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">api</span></tt> run and the documentation is inserted at the package nodes, together with a list of classes of the corresponding package, in the documentation tree. See the API documentation for the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.fx">framework packages</a> as examples.</p>
 </div>
 </div>
 
@@ -254,7 +253,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Writing API Documentation</a><ul>
@@ -373,7 +372,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>
