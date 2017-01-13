@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Single Value Binding &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Single Value Binding &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Data Binding" href="../data_binding.html" />
     <link rel="next" title="Controller" href="controller.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,13 +131,13 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../core.html" >Core</a>
-       &#187;
+       &raquo;
       <a href="../data_binding.html" accesskey="U">Data Binding</a>
-     &#187;
+     &raquo;
     <a href="">Single Value Binding</a>
     </section>
     <section id="content">
@@ -151,34 +150,34 @@ The single value binding is mostly a basis for the higher concepts of the data b
 <div class="section" id="binding-a-single-property-to-another-property">
 <span id="pages-data-binding-single-value-binding-binding-a-single-property-to-another-property"></span><h2>Binding a single property to another property<a class="headerlink" href="#binding-a-single-property-to-another-property" title="Permalink to this headline">¶</a></h2>
 <p>The simplest form of single value binding is to bind one property to another. Technically the source property needs to fire a change event. Without that no binding is possible. But if this requirement is met, the binding itself is quite simple. You can see this in the following code snippet, which binds two properties of the label value together:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">label1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">label1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">label2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">();</span>
 
 <span class="nx">label1</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="nx">label2</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">label1</span></code> is the source object to bind, with the following three arguments to that call:</p>
+<p><tt class="docutils literal"><span class="pre">label1</span></tt> is the source object to bind, with the following three arguments to that call:</p>
 <ol class="arabic simple">
 <li>The name of the property which should be the source of the binding.</li>
 <li>The target object which has the target property.</li>
 <li>The name of the property as the endpoint of the binding.</li>
 </ol>
-<p>With that code every change of the value property of <code class="docutils literal"><span class="pre">label1</span></code> will automatically synchronize the value property of <code class="docutils literal"><span class="pre">label2</span></code>.</p>
+<p>With that code every change of the value property of <tt class="docutils literal"><span class="pre">label1</span></tt> will automatically synchronize the value property of <tt class="docutils literal"><span class="pre">label2</span></tt>.</p>
 </div>
 <div class="section" id="binding-a-data-event-to-property">
 <span id="pages-data-binding-single-value-binding-binding-a-data-event-to-property"></span><h2>Binding a data event to property<a class="headerlink" href="#binding-a-data-event-to-property" title="Permalink to this headline">¶</a></h2>
 <p>Some properties of objects used as models can only be accessed through a
 method or an event. Those properties cannot be bound directly, but they can
 be bound through a method or an event that references them. One common case
-is the TextField widget, which does not have a direct <code class="docutils literal"><span class="pre">value</span></code> property,
-unlike the Label of the previous example, which does have a <code class="docutils literal"><span class="pre">value</span></code>
-property. The <code class="docutils literal"><span class="pre">value</span></code> of a TextField is only addressed through getter /
+is the TextField widget, which does not have a direct <tt class="docutils literal"><span class="pre">value</span></tt> property,
+unlike the Label of the previous example, which does have a <tt class="docutils literal"><span class="pre">value</span></tt>
+property. The <tt class="docutils literal"><span class="pre">value</span></tt> of a TextField is only addressed through getter /
 setter methods and change events. Indirectly therefore Textfield does indeed
 have a property for binding, though it is not implemented as a direct
-property. Using the <code class="docutils literal"><span class="pre">changeValue`</span></code> event, the value can be bound as is shown in
+property. Using the <tt class="docutils literal"><span class="pre">changeValue`</span></tt> event, the value can be bound as is shown in
 the example snippet. The API is essentially the same as the property binding
 case.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">();</span>
 
 <span class="nx">textField</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;changeValue&quot;</span><span class="p">,</span> <span class="nx">label</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
@@ -186,9 +185,9 @@ case.</p>
 </div>
 <p>As you can see, the same method has been used. The difference is that the
 first argument is a data event name and not a property name.</p>
-<p>In a similar fashion, a controller can bind to the implicit <code class="docutils literal"><span class="pre">value</span></code> property
+<p>In a similar fashion, a controller can bind to the implicit <tt class="docutils literal"><span class="pre">value</span></tt> property
 of the TextField:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 
 <span class="c1">// create the controller</span>
 <span class="kd">var</span> <span class="nx">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">controller</span><span class="p">.</span><span class="nb">Object</span><span class="p">(</span><span class="nx">model</span><span class="p">);</span>
@@ -202,8 +201,8 @@ getValue() and setValue() methods.</p>
 </div>
 <div class="section" id="bind-a-property-chain-to-another-property">
 <span id="pages-data-binding-single-value-binding-bind-a-property-chain-to-another-property"></span><h2>Bind a property chain to another property<a class="headerlink" href="#bind-a-property-chain-to-another-property" title="Permalink to this headline">¶</a></h2>
-<p>A more advanced feature of the single value binding is to bind a hierarchy of properties to a target property. To understand what that means take a look at the following code. For using that code a qooxdoo class is needed which is named <code class="docutils literal"><span class="pre">Node</span></code> and does have a <code class="docutils literal"><span class="pre">child</span></code> and a <code class="docutils literal"><span class="pre">name</span></code> property, both firing change events.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the object hierarchy</span>
+<p>A more advanced feature of the single value binding is to bind a hierarchy of properties to a target property. To understand what that means take a look at the following code. For using that code a qooxdoo class is needed which is named <tt class="docutils literal"><span class="pre">Node</span></tt> and does have a <tt class="docutils literal"><span class="pre">child</span></tt> and a <tt class="docutils literal"><span class="pre">name</span></tt> property, both firing change events.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the object hierarchy</span>
 <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Node</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span>      <span class="c1">// set the name to „a“</span>
 <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Node</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">);</span>      <span class="c1">// set the name to „b“</span>
 <span class="nx">a</span><span class="p">.</span><span class="nx">setChild</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
@@ -212,20 +211,20 @@ getValue() and setValue() methods.</p>
 <span class="nx">a</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;child.name&quot;</span><span class="p">,</span> <span class="nx">label</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Now every change of the <code class="docutils literal"><span class="pre">name</span></code> of <code class="docutils literal"><span class="pre">b</span></code> will change the labels value. But also a change of the <code class="docutils literal"><span class="pre">child</span></code> property of <code class="docutils literal"><span class="pre">a</span></code> to another Node with another name will change the value of the label to the new name.
+<p>Now every change of the <tt class="docutils literal"><span class="pre">name</span></tt> of <tt class="docutils literal"><span class="pre">b</span></tt> will change the labels value. But also a change of the <tt class="docutils literal"><span class="pre">child</span></tt> property of <tt class="docutils literal"><span class="pre">a</span></tt> to another Node with another name will change the value of the label to the new name.
 With that mechanism a even deeper binding in a hierarchy is possible. Just separate every property with a dot. But always keep in mind that every property needs to fire a change event to work with the property binding.</p>
 </div>
 <div class="section" id="bind-an-array-to-a-property">
 <span id="pages-data-binding-single-value-binding-bind-an-array-to-a-property"></span><h2>Bind an array to a property<a class="headerlink" href="#bind-an-array-to-a-property" title="Permalink to this headline">¶</a></h2>
-<p>The next step in binding would be the ability to bind a value of an array. That's possible but the array needs to be a special data array because the binding component needs to know when the array changes one of its values. Such an array is the <code class="docutils literal"><span class="pre">qx.data.Array</span></code> class. It wraps the native array and adds the change event to every change in the array. The following code example shows what a binding of an array could look like. As a precondition there is an object <code class="docutils literal"><span class="pre">a</span></code> having a property of the <code class="docutils literal"><span class="pre">qx.data.Array</span></code> type and that array containing strings.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// bind the first array element to a label&#39;s value</span>
+<p>The next step in binding would be the ability to bind a value of an array. That's possible but the array needs to be a special data array because the binding component needs to know when the array changes one of its values. Such an array is the <tt class="docutils literal"><span class="pre">qx.data.Array</span></tt> class. It wraps the native array and adds the change event to every change in the array. The following code example shows what a binding of an array could look like. As a precondition there is an object <tt class="docutils literal"><span class="pre">a</span></tt> having a property of the <tt class="docutils literal"><span class="pre">qx.data.Array</span></tt> type and that array containing strings.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// bind the first array element to a label&#39;s value</span>
 <span class="nx">a</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;array[0]&quot;</span><span class="p">,</span> <span class="nx">labelFirst</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
 
 <span class="c1">// bind the last array element to a label&#39;s value</span>
 <span class="nx">a</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s2">&quot;array[last]&quot;</span><span class="p">,</span> <span class="nx">labelFirst</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>You can use any numeric value in the brackets or the string value <code class="docutils literal"><span class="pre">last</span></code> which maps to <code class="docutils literal"><span class="pre">length</span> <span class="pre">-</span> <span class="pre">1</span></code>. That way you can easily map the top of a stack to something else.
+<p>You can use any numeric value in the brackets or the string value <tt class="docutils literal"><span class="pre">last</span></tt> which maps to <tt class="docutils literal"><span class="pre">length</span> <span class="pre">-</span> <span class="pre">1</span></tt>. That way you can easily map the top of a stack to something else.
 For binding of an array the same method will be used as for the binding of chains. So there is also the possibility to combine these two things and use arrays in such property chains.</p>
 </div>
 <div class="section" id="options-conversion-and-validation">
@@ -243,7 +242,7 @@ For binding of an array the same method will be used as for the binding of chain
 </div>
 <div class="section" id="managing-bindings">
 <span id="pages-data-binding-single-value-binding-managing-bindings"></span><h2>Managing bindings<a class="headerlink" href="#managing-bindings" title="Permalink to this headline">¶</a></h2>
-<p>If you want to manage the bindings, there are some ways to get that. First aspect of managing is showing the existing bindings. You can find all these function on the static <code class="docutils literal"><span class="pre">qx.data.SingleValueBinding</span></code> class or parts of it on every object.</p>
+<p>If you want to manage the bindings, there are some ways to get that. First aspect of managing is showing the existing bindings. You can find all these function on the static <tt class="docutils literal"><span class="pre">qx.data.SingleValueBinding</span></tt> class or parts of it on every object.</p>
 <blockquote>
 <div><ul class="simple">
 <li><strong>getAllBindingsForObject</strong> is a function which is in the data binding class and returns all bindings for the given object. The object needs to be the source object.</li>
@@ -261,7 +260,7 @@ For binding of an array the same method will be used as for the binding of chain
 </div>
 <div class="section" id="debugging">
 <span id="pages-data-binding-single-value-binding-debugging"></span><h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
-<p>Working with bindings is in most cases some magic and it just works. But the worse part of that magic is, if it does not work. For that the data binding component offers two methods for debugging on the static <code class="docutils literal"><span class="pre">qx.data.SingleValueBinding</span></code> class.</p>
+<p>Working with bindings is in most cases some magic and it just works. But the worse part of that magic is, if it does not work. For that the data binding component offers two methods for debugging on the static <tt class="docutils literal"><span class="pre">qx.data.SingleValueBinding</span></tt> class.</p>
 <blockquote>
 <div><ul class="simple">
 <li><strong>showBindingInLog</strong> shows the given binding in the qooxdoo logger as a string. The result could look something like this: <em>Binding from 'qx.ui.form.TextField[1t]' (name) to the object 'qx.ui.form.TextField[1y]' (name).</em> That shows the source object and property and the target object and property.</li>
@@ -273,7 +272,7 @@ For binding of an array the same method will be used as for the binding of chain
 <span id="pages-data-binding-single-value-binding-tech-notes"></span><h2>Tech notes<a class="headerlink" href="#tech-notes" title="Permalink to this headline">¶</a></h2>
 <p>For everyone who is interested on how that whole thing works, here are some small notes on the inside of the data binding.
 Every binding function maps to the event binding function. This is where the heart of the data binding lies. In that function a listener will be added to the source object listening to the change event. The key part of the listener is the following code part.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">targetObject</span><span class="p">[</span><span class="s2">&quot;set&quot;</span> <span class="o">+</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nb">String</span><span class="p">.</span><span class="nx">firstUp</span><span class="p">(</span><span class="nx">targetProperty</span><span class="p">)](</span><span class="nx">data</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">targetObject</span><span class="p">[</span><span class="s2">&quot;set&quot;</span> <span class="o">+</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nb">String</span><span class="p">.</span><span class="nx">firstUp</span><span class="p">(</span><span class="nx">targetProperty</span><span class="p">)](</span><span class="nx">data</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>In that line the listener sets the data given by the data event to the target property.</p>
@@ -291,7 +290,7 @@ Every binding function maps to the event binding function. This is where the hea
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Single Value Binding</a><ul>
@@ -415,7 +414,7 @@ Every binding function maps to the event binding function. This is where the hea
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

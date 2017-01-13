@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>FakeServer &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>FakeServer &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Communication" href="../communication.html" />
     <link rel="next" title="Development" href="../development.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../communication.html" accesskey="U">Communication</a>
-     &#187;
+     &raquo;
     <a href="">FakeServer</a>
     </section>
     <section id="content">
@@ -156,7 +155,7 @@ transparent: No modifications to the client code are required.</p>
 Only matching requests will receive a mock response, other requests will be processed
 by the browser as usual. Here is an example configuration that defines mock
 responses for two different requests:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">responseData</span> <span class="o">=</span> <span class="p">[</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">responseData</span> <span class="o">=</span> <span class="p">[</span>
   <span class="p">{</span>
     <span class="nx">method</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span>
     <span class="nx">url</span><span class="o">:</span> <span class="sr">/\/api\/resource\/\d+/</span><span class="p">,</span>
@@ -214,7 +213,7 @@ configuration, for example one mock class per REST resource class. By loading
 these classes only if a custom environment setting is active, it's easy to
 ensure the mock backend is never included in the deployment version of the
 application. Here is an example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;myapp.mock.User&quot;</span><span class="p">,</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;myapp.mock.User&quot;</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">statics</span> <span class="o">:</span> <span class="p">{</span>
     <span class="nx">mockData</span> <span class="o">:</span>
     <span class="p">[</span>
@@ -239,7 +238,7 @@ application. Here is an example:</p>
 <p>By calling FakeServer's <cite>configure</cite> method in the class' <cite>defer</cite> block, we make
 sure that the mock backend is ready as soon  as the class is loaded. In the
 application, we only need to add a dependency:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;myapp.mockBackend&quot;</span><span class="p">))</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;myapp.mockBackend&quot;</span><span class="p">))</span> <span class="p">{</span>
   <span class="nx">myapp</span><span class="p">.</span><span class="nx">mock</span><span class="p">.</span><span class="nx">User</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
@@ -258,7 +257,7 @@ application, we only need to add a dependency:</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">FakeServer</a><ul>
@@ -380,7 +379,7 @@ application, we only need to add a dependency:</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

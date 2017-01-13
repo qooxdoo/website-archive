@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>qx.Server Requirements &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>qx.Server Requirements &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,12 +33,10 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
-    <link rel="up" title="Getting Started" href="../getting_started.html" />
-    <link rel="next" title="Getting Started with qooxdoo qx.Server" href="getting_started.html" />
-    <link rel="prev" title="Getting Started with qooxdoo qx.Mobile" href="../mobile/getting_started.html" />
+    <link rel="up" title="qx.Server" href="../server.html" />
+    <link rel="next" title="RequireJS Support" href="requirejs.html" />
+    <link rel="prev" title="Server Overview" href="overview.html" />
     <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
     <script type="text/javascript">
       // decorate jQuery.getQueryParameters to always process search words
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,13 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
-      <a href="../introduction.html" >Introduction</a>
-       &#187;
-      <a href="../getting_started.html" accesskey="U">Getting Started</a>
-     &#187;
+       &raquo;
+      <a href="../server.html" accesskey="U">qx.Server</a>
+     &raquo;
     <a href="">qx.Server Requirements</a>
     </section>
     <section id="content">
@@ -165,19 +162,19 @@
 <div class="section" id="npm">
 <h3>Npm<a class="headerlink" href="#npm" title="Permalink to this headline">¶</a></h3>
 <p>If you are using Node.js, there is an alternative installation using <a class="reference external" href="http://npmjs.org/">npm</a>, the Node package manager. If you have this installed, issue on your system shell:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ npm install qooxdoo
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>npm install qooxdoo
 </pre></div>
 </div>
 <p>This will install the qooxdoo package into your current folder from where you can include it easily into your applications.</p>
 <p>In both cases, to verify the installation use your runtime's loading primitive to include it in a program, e.g. for Node:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">qx</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;qooxdoo&#39;</span><span class="p">)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">qx</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;qooxdoo&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="sdk">
 <h3>SDK<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h3>
-<p>You can also use the <a class="reference internal" href="../tool/sdk/sdk_introduction.html"><span class="doc">SDK</span></a> to work with qx.Server. It provides a dedicated <a class="reference internal" href="../development/skeletons.html#pages-development-skeletons-basic"><span class="std std-ref">skeleton</span></a> which you can utilize. This offers you additional features like dependency detection, optimization, API doc generation, unit testing and generated loaders that work under both Node.js and Rhino. As with all types of qooxdoo skeletons, <code class="docutils literal"><span class="pre">create-application.py</span></code> is used to create a new custom application:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ qooxdoo-5.0.2-sdk/tool/bin/create-application.py --name<span class="o">=</span>myapp --type<span class="o">=</span>basic
+<p>You can also use the <a class="reference internal" href="../tool/sdk/sdk_introduction.html"><em>SDK</em></a> to work with qx.Server. It provides a dedicated <a class="reference internal" href="../development/skeletons.html#pages-development-skeletons-basic"><em>skeleton</em></a> which you can utilize. This offers you additional features like dependency detection, optimization, API doc generation, unit testing and generated loaders that work under both Node.js and Rhino. As with all types of qooxdoo skeletons, <tt class="docutils literal"><span class="pre">create-application.py</span></tt> is used to create a new custom application:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>qooxdoo-5.0.2-sdk/tool/bin/create-application.py --name<span class="o">=</span>myapp --type<span class="o">=</span>basic
 </pre></div>
 </div>
 </div>
@@ -187,15 +184,15 @@
 
       </div>
       <div class="bottom-nav">
-          <a class="prev" href="../mobile/getting_started.html"
-             title="previous chapter">« Getting Started with qooxdoo qx.Mobile</a>
+          <a class="prev" href="overview.html"
+             title="previous chapter">« Server Overview</a>
           <span class="separator">|</span>
-          <a class="next" href="getting_started.html"
-             title="next chapter">Getting Started with qooxdoo qx.Server »</a>
+          <a class="next" href="requirejs.html"
+             title="next chapter">RequireJS Support »</a>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">qx.Server Requirements</a><ul>
@@ -211,11 +208,11 @@
 </ul>
 
   <h4>» Next topic</h4>
-  <p class="topless"><a href="getting_started.html"
-                        title="next chapter">Getting Started with qooxdoo qx.Server</a></p>
+  <p class="topless"><a href="requirejs.html"
+                        title="next chapter">RequireJS Support</a></p>
   <h4>« Previous topic</h4>
-  <p class="topless"><a href="../mobile/getting_started.html"
-                        title="previous chapter">Getting Started with qooxdoo qx.Mobile</a></p>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">Server Overview</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../../search.html" method="get">
@@ -318,7 +315,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

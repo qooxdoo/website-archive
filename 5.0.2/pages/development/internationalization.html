@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Internationalization &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Internationalization &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Writing API Documentation" href="write_api_documentation.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">Internationalization</a>
     </section>
     <section id="content">
@@ -199,18 +198,18 @@ the translated application.</p>
 <p>To translate an application, all translatable strings must be marked using one
 of the following functions:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">this.tr()</span></code>: translate a message</li>
-<li><code class="docutils literal"><span class="pre">this.trn()</span></code>: translate a message that supports a plural form</li>
-<li><code class="docutils literal"><span class="pre">this.trc()</span></code>: translate a message and providing a comment</li>
-<li><code class="docutils literal"><span class="pre">this.trnc()</span></code>: translate a message that supports a plural form and
+<li><tt class="docutils literal"><span class="pre">this.tr()</span></tt>: translate a message</li>
+<li><tt class="docutils literal"><span class="pre">this.trn()</span></tt>: translate a message that supports a plural form</li>
+<li><tt class="docutils literal"><span class="pre">this.trc()</span></tt>: translate a message and providing a comment</li>
+<li><tt class="docutils literal"><span class="pre">this.trnc()</span></tt>: translate a message that supports a plural form and
 providing a comment</li>
-<li><code class="docutils literal"><span class="pre">this.marktr()</span></code>: mark a string for translation, but do not perform any
+<li><tt class="docutils literal"><span class="pre">this.marktr()</span></tt>: mark a string for translation, but do not perform any
 translation</li>
 </ul>
 <p>You can use these methods right away for your own classes if they are derived
-from <code class="docutils literal"><span class="pre">qx.ui.core.Widget</span></code> or <code class="docutils literal"><span class="pre">qx.application.AbstractGui</span></code>. If that's not the
-case you have to include the mixin <code class="docutils literal"><span class="pre">qx.locale.MTranslation</span></code> manually:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;custom.MyClass&quot;</span><span class="p">,</span>
+from <tt class="docutils literal"><span class="pre">qx.ui.core.Widget</span></tt> or <tt class="docutils literal"><span class="pre">qx.application.AbstractGui</span></tt>. If that's not the
+case you have to include the mixin <tt class="docutils literal"><span class="pre">qx.locale.MTranslation</span></tt> manually:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;custom.MyClass&quot;</span><span class="p">,</span>
 <span class="p">{</span>
   <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nb">Object</span><span class="p">,</span>
   <span class="nx">include</span> <span class="o">:</span> <span class="p">[</span><span class="nx">qx</span><span class="p">.</span><span class="nx">locale</span><span class="p">.</span><span class="nx">MTranslation</span><span class="p">],</span>
@@ -221,11 +220,11 @@ case you have to include the mixin <code class="docutils literal"><span class="p
 <div class="section" id="example">
 <span id="pages-internationalization-example"></span><h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
 <p>Change original code like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>to:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">tr</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">));</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">tr</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">));</span>
 </pre></div>
 </div>
 <p>Following, the four methods are explained in more detail:</p>
@@ -233,37 +232,37 @@ case you have to include the mixin <code class="docutils literal"><span class="p
 <div class="section" id="tr">
 <span id="pages-internationalization-tr"></span><h4>tr<a class="headerlink" href="#tr" title="Permalink to this headline">¶</a></h4>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">tr</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">));</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">tr</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">));</span>
 </pre></div>
 </div>
-<p><em>tr</em> marks the string <code class="docutils literal"><span class="pre">&quot;Hello</span> <span class="pre">World&quot;</span></code> for translation (This string is often
+<p><em>tr</em> marks the string <tt class="docutils literal"><span class="pre">&quot;Hello</span> <span class="pre">World&quot;</span></tt> for translation (This string is often
 referred to as the <em>message id</em>, as it serves as the lookup key for any
 provided translation). This means that the string itself will be extracted when
-the appropriate generator job is run (see <a class="reference internal" href="#pages-internationalization-extract-the-messages"><span class="std std-ref">further</span></a>). During application run
+the appropriate generator job is run (see <a class="reference internal" href="#pages-internationalization-extract-the-messages"><em>further</em></a>). During application run
 time, <em>tr</em> returns the translation of the given string <em>under the current
 locale</em>. That means, the actual string you get at this point in time depends on
 the locale in effect. If, on the other hand, the environment setting
-<a class="reference internal" href="../core/environment.html#pages-core-environment-environment"><span class="std std-ref">qx.dynlocale</span></a> is set to &quot;true&quot;, <em>tr</em>
-returns an instance of <code class="docutils literal"><span class="pre">qx.locale.LocalizedString</span></code>. The <code class="docutils literal"><span class="pre">toString()</span></code> method
+<a class="reference internal" href="../core/environment.html#pages-core-environment-environment"><em>qx.dynlocale</em></a> is set to &quot;true&quot;, <em>tr</em>
+returns an instance of <tt class="docutils literal"><span class="pre">qx.locale.LocalizedString</span></tt>. The <tt class="docutils literal"><span class="pre">toString()</span></tt> method
 of the returned object performs the actual translation based on the current
 locale. This has the advantage that later changes to the locale (see
-<a class="reference internal" href="#pages-internationalization-run-the-translated-application"><span class="std std-ref">further</span></a>) are
+<a class="reference internal" href="#pages-internationalization-run-the-translated-application"><em>further</em></a>) are
 immediately reflected in the widgets using this object, as most know how to
 handle and re-evaluate LocalizedString's. But you only need that setting if you
 plan to support locale switching during run time.</p>
 <p>If the string given to <em>tr</em> does not have a translation under the current
 locale, the string itself will be returned.</p>
 <p>There is one exception to the simple rule that all strings can just be replaced
-by wrapping them in an appropriate <code class="docutils literal"><span class="pre">this.tr()</span></code> function call: If init values
-of <a class="reference internal" href="../core/understanding_properties.html"><span class="doc">dynamic properties</span></a> are meant
+by wrapping them in an appropriate <tt class="docutils literal"><span class="pre">this.tr()</span></tt> function call: If init values
+of <a class="reference internal" href="../core/understanding_properties.html"><em>dynamic properties</em></a> are meant
 to be localizable, the init value has either to be set in the class constructor
-using <code class="docutils literal"><span class="pre">this.tr()</span></code>, or <code class="docutils literal"><span class="pre">qx.locale.Manager.tr()</span></code> has to be used inside the
-property declaration. See documentation on <a class="reference internal" href="../core/defining_properties.html#pages-defining-properties-defining-an-init-value"><span class="std std-ref">Defining an init value</span></a> for details.</p>
+using <tt class="docutils literal"><span class="pre">this.tr()</span></tt>, or <tt class="docutils literal"><span class="pre">qx.locale.Manager.tr()</span></tt> has to be used inside the
+property declaration. See documentation on <a class="reference internal" href="../core/defining_properties.html#pages-defining-properties-defining-an-init-value"><em>Defining an init value</em></a> for details.</p>
 </div>
 <div class="section" id="trn">
 <span id="pages-internationalization-trn"></span><h4>trn<a class="headerlink" href="#trn" title="Permalink to this headline">¶</a></h4>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">trn</span><span class="p">(</span><span class="s2">&quot;Copied one file.&quot;</span><span class="p">,</span>
 <span class="s2">&quot;Copied %1 files.&quot;</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">n</span><span class="p">));</span>
 </pre></div>
@@ -277,7 +276,7 @@ chosen. All remaining parameters are the inputs for the format string.</p>
 <div class="section" id="trc">
 <span id="pages-internationalization-trc"></span><h4>trc<a class="headerlink" href="#trc" title="Permalink to this headline">¶</a></h4>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">trc</span><span class="p">(</span><span class="s2">&quot;Helpful comment for the</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">trc</span><span class="p">(</span><span class="s2">&quot;Helpful comment for the</span>
 <span class="s2">translator&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">));</span>
 </pre></div>
 </div>
@@ -289,7 +288,7 @@ for the given string.</p>
 <div class="section" id="trnc">
 <span id="pages-internationalization-marktr"></span><h4>trnc<a class="headerlink" href="#trnc" title="Permalink to this headline">¶</a></h4>
 <p>Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">basic</span><span class="p">.</span><span class="nx">Label</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">trnc</span><span class="p">(</span><span class="s2">&quot;Helpful comment for</span>
 <span class="s2">translator&quot;</span><span class="p">,</span> <span class="s2">&quot;Copied one file.&quot;</span><span class="p">,</span> <span class="s2">&quot;Copied %1 files.&quot;</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">n</span><span class="p">));</span>
 </pre></div>
@@ -300,28 +299,28 @@ for the given string.</p>
 <span id="pages-internationalization-trnc"></span><h4>marktr<a class="headerlink" href="#marktr" title="Permalink to this headline">¶</a></h4>
 <p>Sometimes it is necessary to mark a string for translation but not yet perform
 the translation. Example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">marktr</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">marktr</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Marks the string <code class="docutils literal"><span class="pre">Hello</span></code> for translation and returns the string unmodified.</p>
+<p>Marks the string <tt class="docutils literal"><span class="pre">Hello</span></tt> for translation and returns the string unmodified.</p>
 </div>
 <div class="section" id="format-strings">
 <span id="pages-internationalization-format-strings"></span><h4>Format Strings<a class="headerlink" href="#format-strings" title="Permalink to this headline">¶</a></h4>
 <p>Since sentences in different languages can have different structures, it is
 always better to prefer a format string over string concatenation to compose
 messages. This is why the methods above all support format strings like
-<code class="docutils literal"><span class="pre">Copied</span> <span class="pre">%1</span> <span class="pre">files</span></code> as messages and a variable number of additional arguments.
+<tt class="docutils literal"><span class="pre">Copied</span> <span class="pre">%1</span> <span class="pre">files</span></tt> as messages and a variable number of additional arguments.
 The additional arguments are converted to strings and inserted into the
-original message. <code class="docutils literal"><span class="pre">%</span></code> is used as an escape character and the number following
-<code class="docutils literal"><span class="pre">%</span></code> references the corresponding additional argument.</p>
+original message. <tt class="docutils literal"><span class="pre">%</span></tt> is used as an escape character and the number following
+<tt class="docutils literal"><span class="pre">%</span></tt> references the corresponding additional argument.</p>
 </div>
 </div>
 <div class="section" id="extract-the-messages">
 <span id="pages-internationalization-extract-the-messages"></span><h3>Extract the Messages<a class="headerlink" href="#extract-the-messages" title="Permalink to this headline">¶</a></h3>
 <p>After the source code has been prepared, the desired languages of the
-application may be specified in <code class="docutils literal"><span class="pre">config.json</span></code>, in the <code class="docutils literal"><span class="pre">LOCALES</span></code> macro
-within the global <code class="docutils literal"><span class="pre">let</span></code> section, for example</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;let&quot;</span> <span class="o">:</span>
+application may be specified in <tt class="docutils literal"><span class="pre">config.json</span></tt>, in the <tt class="docutils literal"><span class="pre">LOCALES</span></tt> macro
+within the global <tt class="docutils literal"><span class="pre">let</span></tt> section, for example</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;let&quot;</span> <span class="o">:</span>
   <span class="p">{</span>
     <span class="c1">// ...</span>
     <span class="s2">&quot;LOCALES&quot;</span>       <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;de&quot;</span><span class="p">,</span> <span class="s2">&quot;fr&quot;</span><span class="p">]</span>
@@ -331,46 +330,46 @@ within the global <code class="docutils literal"><span class="pre">let</span></c
 <p>This would add a German and a French translation to the project. For a more
 exhaustive list of available locales see <a class="reference external" href="http://unicode.org/cldr/apps/survey">here</a>.</p>
 <p>A run of</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">translation</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">translation</span>
 </pre></div>
 </div>
-<p>will generate a <code class="docutils literal"><span class="pre">.po</span></code> file for each configured locale, with all translatable
+<p>will generate a <tt class="docutils literal"><span class="pre">.po</span></tt> file for each configured locale, with all translatable
 strings of the application (These files are usually stored in the
-<code class="docutils literal"><span class="pre">source/translation</span></code> folder of the application).</p>
+<tt class="docutils literal"><span class="pre">source/translation</span></tt> folder of the application).</p>
 <p>If a specified translation does not yet exist, a new translation file will be
-created. In this example two files, <code class="docutils literal"><span class="pre">source/translation/de.po</span></code> and
-<code class="docutils literal"><span class="pre">source/translation/fr.po</span></code>, would be created.</p>
+created. In this example two files, <tt class="docutils literal"><span class="pre">source/translation/de.po</span></tt> and
+<tt class="docutils literal"><span class="pre">source/translation/fr.po</span></tt>, would be created.</p>
 <p>If such a file already exists, the newly extracted strings will be merged with
 this file, retaining all existing translations. Therefore, you can re-run
-<code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">translation</span></code> as often as you want. You should re-run it at least
+<tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">translation</span></tt> as often as you want. You should re-run it at least
 whenever you introduced new translatable strings into the source code, so they
-will be added to the .po files (see <a class="reference internal" href="#pages-internationalization-update-the-application"><span class="std std-ref">further</span></a>).</p>
+will be added to the .po files (see <a class="reference internal" href="#pages-internationalization-update-the-application"><em>further</em></a>).</p>
 </div>
 <div class="section" id="translate-the-messages">
 <span id="pages-internationalization-translate-the-messages"></span><h3>Translate the Messages<a class="headerlink" href="#translate-the-messages" title="Permalink to this headline">¶</a></h3>
-<p>These <code class="docutils literal"><span class="pre">.po</span></code> files are the actual files you - or your translator ;-) - would
+<p>These <tt class="docutils literal"><span class="pre">.po</span></tt> files are the actual files you - or your translator ;-) - would
 have to edit. Since qooxdoo internally uses well-established tools and formats
 for internationalization (<a class="reference external" href="http://en.wikipedia.org/wiki/GNU_gettext">GNU gettext</a> via <a class="reference external" href="http://pypi.python.org/pypi/polib">polib</a>), any &quot;po&quot;-aware editor or even a simple
 text editor can be used.</p>
-<p>Some of the programs that support manipulation of <code class="docutils literal"><span class="pre">.po</span></code> files are:</p>
+<p>Some of the programs that support manipulation of <tt class="docutils literal"><span class="pre">.po</span></tt> files are:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.poedit.net/">Poedit</a> (Windows, Mac OS X, Linux)</li>
 <li><a class="reference external" href="http://www.macupdate.com/app/mac/16246/locfactory-editor">LocFactory Editor</a> (Mac OS X)</li>
 <li><a class="reference external" href="http://l10n.kde.org/tools/">Lokalize</a> (Linux)</li>
 <li><a class="reference external" href="http://projects.gnome.org/gtranslator/">Gtranslator</a> (Linux)</li>
 </ul>
-<p>If you want to know more about the details of <code class="docutils literal"><span class="pre">.po</span></code> files, see
-<a class="reference internal" href="../tool/translation/po_format.html#pages-tool-translation-po-format"><span class="std std-ref">The Format of PO Files</span></a>.</p>
+<p>If you want to know more about the details of <tt class="docutils literal"><span class="pre">.po</span></tt> files, see
+<a class="reference internal" href="../tool/translation/po_format.html#pages-tool-translation-po-format"><em>The Format of PO Files</em></a>.</p>
 </div>
 <div class="section" id="update-the-application">
 <span id="pages-internationalization-update-the-application"></span><h3>Update the Application<a class="headerlink" href="#update-the-application" title="Permalink to this headline">¶</a></h3>
-<p>After editing and saving the <code class="docutils literal"><span class="pre">.po</span></code> files, the next <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></code> run
+<p>After editing and saving the <tt class="docutils literal"><span class="pre">.po</span></tt> files, the next <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></tt> run
 integrates the translations into your application's source version. To get the
 effect of the new translations it can simply be reloaded in your browser.</p>
 <p>If the source code changes, e.g. by adding, removing or changing translatable
 strings, it can be merged with the existing translation files just by calling
-<code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">translation</span></code> again. Moreover, each <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></code> - or
-<code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></code> if you are about to deploy your application - will pick
+<tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">translation</span></tt> again. Moreover, each <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">source</span></tt> - or
+<tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">build</span></tt> if you are about to deploy your application - will pick
 up all current translatable strings from the source files and will merge them
 on the fly with the information from the .po files, using the result for the
 corresponding build job. This way, the generated application always contains
@@ -380,17 +379,17 @@ can have actual translations with them).</p>
 <div class="section" id="run-the-translated-application">
 <span id="pages-internationalization-run-the-translated-application"></span><h3>Run the translated Application<a class="headerlink" href="#run-the-translated-application" title="Permalink to this headline">¶</a></h3>
 <p>By default qooxdoo tries to use the browser's default language as its locale.
-You can change the language of the application by using <code class="docutils literal"><span class="pre">qx.locale.Manager</span></code>.
+You can change the language of the application by using <tt class="docutils literal"><span class="pre">qx.locale.Manager</span></tt>.
 For example, the following sets the language of the application to French:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">locale</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">setLocale</span><span class="p">(</span><span class="s2">&quot;fr&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">locale</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">setLocale</span><span class="p">(</span><span class="s2">&quot;fr&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The qooxdoo widgets are supposed to update their contents on a locale change.
 Custom widgets may have to be modified to allow for an update on locale change.
 To inform the application of a language change, qooxdoo fires a
-<code class="docutils literal"><span class="pre">changeLocale</span></code> event.</p>
+<tt class="docutils literal"><span class="pre">changeLocale</span></tt> event.</p>
 <p>A widget that needs custom update logic may listen to this event:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">locale</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;changeLocale&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">locale</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">().</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;changeLocale&quot;</span><span class="p">,</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">_update</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -409,7 +408,7 @@ To inform the application of a language change, qooxdoo fires a
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Internationalization</a><ul>
@@ -543,7 +542,7 @@ To inform the application of a language change, qooxdoo fires a
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>qx.Website Widgets &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>qx.Website Widgets &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Website" href="../website.html" />
     <link rel="next" title="Tutorial: Building Notifications" href="tutorial_web_developers.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../website.html" accesskey="U">qx.Website</a>
-     &#187;
+     &raquo;
     <a href="">qx.Website Widgets</a>
     </section>
     <section id="content">
@@ -152,16 +151,16 @@
 <div class="section" id="widget-factory-methods">
 <h3>Widget factory methods<a class="headerlink" href="#widget-factory-methods" title="Permalink to this headline">¶</a></h3>
 <p>Any collection of DIV elements can be turned into a widget collection by calling a widget factory method:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This will turn any elements matching the CSS selector into Slider widgets. Required child elements such as the slider's knob will be created if they're not already present.</p>
 <p>Widget collections support all standard collection methods from qx.Website Core:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">().</span><span class="nx">setStyle</span><span class="p">(</span><span class="s2">&quot;background-color&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">().</span><span class="nx">setStyle</span><span class="p">(</span><span class="s2">&quot;background-color&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Additionally, the widget's own methods are now available:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">slider</span><span class="p">();</span>
 <span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">setValue</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -171,16 +170,15 @@
 <div class="section" id="html-data-attributes">
 <h3>HTML data attributes<a class="headerlink" href="#html-data-attributes" title="Permalink to this headline">¶</a></h3>
 <p>Alternatively, the <cite>data-qx-class</cite> attribute can be used to define a widget's type before it's initialized:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;div id=&quot;foo&quot; data-qx-class=&quot;qx.ui.website.Slider&quot;&gt;&lt;/div&gt;
-</pre></div>
+<div class="highlight-javascript"><pre>&lt;div id="foo" data-qx-class="qx.ui.website.Slider"&gt;&lt;/div&gt;</pre>
 </div>
 <p>This element can be turned into a Slider by calling the <cite>init</cite> method:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#foo&quot;</span><span class="p">).</span><span class="nx">init</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#foo&quot;</span><span class="p">).</span><span class="nx">init</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This can be useful in scenarios where the UI is defined by the (server-side) code that generates the HTML: The JavaScript code doesn't need to know about the different types of widgets so client-side logic can be kept to a minimum.</p>
 <p>Widget initialization can be even more simple and generic. Multiple widgets of different types can be initialized all at once using the static <cite>initWidgets</cite> method:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">.</span><span class="nx">initWidgets</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">.</span><span class="nx">initWidgets</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This will query the document for any DOM elements with <cite>data-qx-class</cite> attributes and initialize them all.</p>
@@ -189,17 +187,15 @@
 <div class="section" id="existing-markup">
 <h2>Existing markup<a class="headerlink" href="#existing-markup" title="Permalink to this headline">¶</a></h2>
 <p>Upon initialization, widgets will create the child elements they need. Additional elements will generally not be removed, so if this DIV element is turned into a Slider widget:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;div id=&quot;foo&quot;&gt;
-  &lt;h3&gt;Hi, I&#39;m a heading&lt;/h3&gt;
-&lt;/div&gt;
-</pre></div>
+<div class="highlight-javascript"><pre>&lt;div id="foo"&gt;
+  &lt;h3&gt;Hi, I'm a heading&lt;/h3&gt;
+&lt;/div&gt;</pre>
 </div>
 <p>the Slider will insert its knob element after the existing H3 element.</p>
 <p>Required child elements can also be predefined by using the CSS class names expected by the widget:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;div id=&quot;foo&quot;&gt;
-  &lt;button class=&quot;qx-slider-knob&quot;&gt;Pre-existing button&lt;/button&gt;
-&lt;/div&gt;
-</pre></div>
+<div class="highlight-javascript"><pre>&lt;div id="foo"&gt;
+  &lt;button class="qx-slider-knob"&gt;Pre-existing button&lt;/button&gt;
+&lt;/div&gt;</pre>
 </div>
 <p>In this case, the existing button element will be used as the Slider's knob. The <a class="reference external" href="http://demo.qooxdoo.org/current/website-api">qx.Website API Viewer</a> lists the class names used for the child elements.</p>
 </div>
@@ -209,15 +205,14 @@
 <div class="section" id="configuration-methods">
 <h3>Configuration methods<a class="headerlink" href="#configuration-methods" title="Permalink to this headline">¶</a></h3>
 <p>Options can be manipulated using the getConfig and setConfig methods:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">setConfig</span><span class="p">(</span><span class="s2">&quot;offset&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">setConfig</span><span class="p">(</span><span class="s2">&quot;offset&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
 <h3>HTML data attributes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Default settings can also be overridden using HTML data attributes:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;div data-qx-config-offset=&quot;20&quot;&gt;&lt;/div&gt;
-</pre></div>
+<div class="highlight-javascript"><pre>&lt;div data-qx-config-offset="20"&gt;&lt;/div&gt;</pre>
 </div>
 <p>If this element is turned into a Slider widget, its offset config setting will be set to 20. Note that
 getConfig and setConfig use camelCased names while the data attributes are hyphenated and prefixed with &quot;qx-config&quot;, i.e. &quot;hideAnimation&quot; vs. &quot;data-qx-config-hide-animation&quot;.</p>
@@ -228,7 +223,7 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
 <p>Widgets use templates to render their UI. Much like configuration settings, templates can be overriden.</p>
 <div class="section" id="template-methods">
 <h3>Template methods<a class="headerlink" href="#template-methods" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">setTemplate</span><span class="p">(</span><span class="s2">&quot;knobContent&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;span&gt;{{value}}&lt;/span&gt;&quot;</span><span class="p">).</span><span class="nx">render</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">setTemplate</span><span class="p">(</span><span class="s2">&quot;knobContent&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;span&gt;{{value}}&lt;/span&gt;&quot;</span><span class="p">).</span><span class="nx">render</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This will wrap the content of the Slider's knob in a span element when rendered. The value is a placeholder which will be replaced with the actual numerical value. Note the render() call: This triggers a UI update after a template was changed.</p>
@@ -236,15 +231,14 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
 <div class="section" id="id4">
 <h3>HTML data attributes<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Of course, templates can also be defined as HTML attributes, again using hyphenated names prefixed with &quot;qx-template&quot;:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;div id=&quot;slider1&quot; data-qx-template-knob-content=&quot;&lt;span&gt;{{value}}&lt;/span&gt;&quot;&gt;&lt;/div&gt;
-</pre></div>
+<div class="highlight-javascript"><pre>&lt;div id="slider1" data-qx-template-knob-content="&lt;span&gt;{{value}}&lt;/span&gt;"&gt;&lt;/div&gt;</pre>
 </div>
 </div>
 </div>
 <div class="section" id="preventing-memory-leaks">
 <h2>Preventing memory leaks<a class="headerlink" href="#preventing-memory-leaks" title="Permalink to this headline">¶</a></h2>
 <p>If a widget is no longer needed, it must be disposed:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">dispose</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;.qx-slider&quot;</span><span class="p">).</span><span class="nx">dispose</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This removes all event listeners and other cross-references between DOM nodes and JavaScript objects, making sure that the runtime's garbage collector can do its job properly.</p>
@@ -262,7 +256,7 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">qx.Website Widgets</a><ul>
@@ -395,7 +389,7 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

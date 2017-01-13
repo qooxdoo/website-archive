@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>qooxdoo-contrib &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>qooxdoo-contrib &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Parts and Packages Overview" href="parts_overview.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../development.html" accesskey="U">Development</a>
-     &#187;
+     &raquo;
     <a href="">qooxdoo-contrib</a>
     </section>
     <section id="content">
@@ -194,13 +193,13 @@ or <em>info/homepage</em>). If its a contrib hosted by SourceForge and you don't
 to install a SVN Client then download the whole <a class="reference external" href="http://sourceforge.net/p/qooxdoo-contrib/code/HEAD/tarball">qooxdoo-contrib repo</a> (and use only
 the files you need).</p>
 <p>Contributions can be included in a configuration like any other libraries: You
-add an appropriate entry in the <code class="docutils literal"><span class="pre">library</span></code> array of your configuration. Like
-other libraries, the contribution must provide a <a class="reference internal" href="../tool/sdk/manifest.html#pages-application-structure-manifest-manifest-json"><span class="std std-ref">Manifest.json</span></a> file with appropriate
+add an appropriate entry in the <tt class="docutils literal"><span class="pre">library</span></tt> array of your configuration. Like
+other libraries, the contribution must provide a <a class="reference internal" href="../tool/sdk/manifest.html#pages-application-structure-manifest-manifest-json"><em>Manifest.json</em></a> file with appropriate
 contents.</p>
 <p>It's best practice to include the code of the contrib you are using within your
 project (e.g. within the top-level dir contribs). Putting it all together here
 is a sample <em>config.json</em> snippet:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;jobs&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;jobs&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;libraries&quot;</span> <span class="o">:</span> <span class="p">{</span>
     <span class="s2">&quot;library&quot;</span> <span class="o">:</span> <span class="p">[{</span>
       <span class="s2">&quot;manifest&quot;</span><span class="o">:</span> <span class="s2">&quot;contribs/dialog/1.2/Manifest.json&quot;</span>
@@ -230,7 +229,7 @@ version of the contribution</li>
 libraries. The intent is that you can copy it straight over from your project to
 the catalog repo. You need to make sure, though, that all necessary fields in it
 will be filled, particularly the <em>info/download</em> field. A Generator job,
-<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-validate-manifest"><span class="std std-ref">validate-manifest</span></a>, will help you
+<a class="reference internal" href="../tool/generator/default_jobs_actions.html#pages-tool-generator-default-jobs-actions-validate-manifest"><em>validate-manifest</em></a>, will help you
 with that.</p>
 <p>The actual contribution code, i.e. the code somebody would download and use,
 should be provided through the Manifest's <em>info/download</em> URL. The value should be
@@ -240,7 +239,7 @@ that the contents of the contribution. I.e. for a standard qooxdoo library the
 second level should contain its Manifest.json.</p>
 <p>Here are the corresponding Manifest.json entries for some Github-hosted
 contribution:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;download&quot;</span> <span class="o">:</span> <span class="s2">&quot;https://github.com/myuid/mycontrib/archive/master.tar.gz&quot;</span><span class="p">,</span>
   <span class="p">...</span>
 <span class="p">}</span>
@@ -248,7 +247,7 @@ contribution:</p>
 </div>
 <p>If the contribution is still hosted at the old Sourceforge qooxdoo-contrib SVN
 repository use a standard SVN URL:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;info&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="s2">&quot;download&quot;</span> <span class="o">:</span> <span class="s2">&quot;http://svn.code.sf.net/p/qooxdoo-contrib/code/trunk/qooxdoo-contrib/SkeletonWidget/0.9/&quot;</span><span class="p">,</span>
   <span class="p">...</span>
 <span class="p">}</span>
@@ -268,7 +267,7 @@ version is:</p>
 easily achieved by maintaining contribution
 versions as Git <em>branches</em> and exploiting the archive downloads that Github
 offers. You just use an URL like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//github.com/&lt;user&gt;/&lt;contrib&gt;/archive/&lt;branch_name&gt;&lt;archive_suffix&gt;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">https</span><span class="o">:</span><span class="c1">//github.com/&lt;user&gt;/&lt;contrib&gt;/archive/&lt;branch_name&gt;&lt;archive_suffix&gt;</span>
 </pre></div>
 </div>
 <p>as the Manifest's download URL, with e.g. <em>branch_name</em> being <em>master</em> and <em>suffix</em>
@@ -289,7 +288,7 @@ being <em>.zip</em>.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">qooxdoo-contrib</a><ul>
@@ -415,7 +414,7 @@ being <em>.zip</em>.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

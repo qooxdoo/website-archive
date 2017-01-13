@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Audio.42623b07dcfc.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Audio.a045ddb43f7d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8792,15 +8792,15 @@ else if(this.hasState(c)){this.execute();}
 (function(){var a="complete",b="0%",c="progressbar",d="change",e="progress",f="qx.ui.indicator.ProgressBar",g="qx.event.type.Event",h="%",i="qx.event.type.Data";qx.Class.define(f,{extend:qx.ui.container.Composite,construct:function(k,j){qx.ui.container.Composite.call(this);this._createChildControl(e);this.setLayout(new qx.ui.layout.HBox());if(j!=null){this.setMaximum(j);}
 ;if(k!=null){this.setValue(k);}
 ;}
-,properties:{appearance:{refine:true,init:c}},events:{complete:g,change:i},members:{__xj:0,__xk:100,getValue:function(){return this.__xj;}
+,properties:{appearance:{refine:true,init:c}},events:{complete:g,change:i},members:{__sF:0,__sG:100,getValue:function(){return this.__sF;}
 ,setValue:function(m){var l=this.getMaximum();if(!qx.lang.Type.isNumber(m)||!isFinite(m)){return null;}
 ;if(m<0){m=0;}
 ;if(m>l){m=l;}
-;this.__xj=m;this._changeProgress(m/l);return m;}
-,getMaximum:function(){return this.__xk;}
+;this.__sF=m;this._changeProgress(m/l);return m;}
+,getMaximum:function(){return this.__sG;}
 ,setMaximum:function(o){var n=o;var p=this.getValue();if(!qx.lang.Type.isNumber(n)||!isFinite(n)||n<=0){return null;}
 ;if(n<p){n=p;}
-;this.__xk=n;this._changeProgress(p/n);return n;}
+;this.__sG=n;this._changeProgress(p/n);return n;}
 ,_createChildControlImpl:function(s,r){var q;switch(s){case e:q=new qx.ui.container.Composite(new qx.ui.layout.Canvas());this._add(q,{width:b});break;};return q||qx.ui.container.Composite.prototype._createChildControlImpl.call(this,s);}
 ,_changeProgress:function(v){var u=this.getChildControl(e);var t=Math.floor(v*100);var w=parseInt(u.getLayoutProperties().width,10);u.setLayoutProperties({width:t+h});if(t!=w){this.fireDataEvent(d,t,w);}
 ;if(t===100){this.fireEvent(a);}

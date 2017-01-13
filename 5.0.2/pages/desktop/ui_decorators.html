@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Decorators &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Decorators &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Web Fonts" href="ui_webfonts.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Decorators</a>
     </section>
     <section id="content">
@@ -156,7 +155,7 @@
 <div class="section" id="decoration-theme">
 <span id="pages-desktop-ui-decorators-decoration-theme"></span><h2>Decoration Theme<a class="headerlink" href="#decoration-theme" title="Permalink to this headline">¶</a></h2>
 <p>As mentioned above, it is common to define the decorators in a decorator theme. This is really easy because you have to specify only a few details about the decorator.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;main&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;main&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="nx">style</span> <span class="o">:</span> <span class="p">{</span>
     <span class="nx">width</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nx">color</span> <span class="o">:</span> <span class="s2">&quot;background-selected&quot;</span>
@@ -164,9 +163,9 @@
 <span class="p">},</span>
 </pre></div>
 </div>
-<p>The first thing you see is the name of the decorator, in this case, <code class="docutils literal"><span class="pre">main</span></code>. The specified decorator is available using that name in the entire application code, especially in the appearance theme. Then there's the styles map which contains values for decorator properties. You can see all possible style value as properties of the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.Decorator">Decorator class</a>.</p>
+<p>The first thing you see is the name of the decorator, in this case, <tt class="docutils literal"><span class="pre">main</span></tt>. The specified decorator is available using that name in the entire application code, especially in the appearance theme. Then there's the styles map which contains values for decorator properties. You can see all possible style value as properties of the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.Decorator">Decorator class</a>.</p>
 <p>Sometimes it is very handy to change only little details about the decorator. Imagine a special decorator for hovered buttons. Inheritance comes in very handy in such a case.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;scroll-knob-pressed&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;scroll-knob-pressed&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="nx">include</span> <span class="o">:</span> <span class="s2">&quot;scroll-knob&quot;</span><span class="p">,</span>
 
   <span class="nx">style</span> <span class="o">:</span> <span class="p">{</span>
@@ -191,17 +190,17 @@
 <li><strong>MLinearBackgroundGradient</strong>: Renders a linear color gradient.</li>
 </ul>
 <p>As you may have guessed, the last three mixins do not work cross browser due to the fact that they rely on CSS properties not available in all browsers. If you want more details, take a look at the <a class="reference external" href="http://demo.qooxdoo.org/current/apiviewer/#qx.ui.decoration">API documentations of the mixins</a>.</p>
-<p>Each entry of the theme is automatically made available using the <code class="docutils literal"><span class="pre">setDecorator</span></code> function of the widget class. The instances needed are automatically created when required initially. This mechanism keeps instance numbers down and basically ignores decorators which are defined but never used.</p>
+<p>Each entry of the theme is automatically made available using the <tt class="docutils literal"><span class="pre">setDecorator</span></tt> function of the widget class. The instances needed are automatically created when required initially. This mechanism keeps instance numbers down and basically ignores decorators which are defined but never used.</p>
 </div>
 <div class="section" id="writing-decorator-mixins">
 <span id="pages-desktop-ui-decorators-writing-decorator-mixins"></span><h2>Writing Decorator Mixins<a class="headerlink" href="#writing-decorator-mixins" title="Permalink to this headline">¶</a></h2>
 <p>The recommended way is to write a simple decoration mixin and add it to the default decorator qooxdoo delivers. There is only one method your mixin should supply:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">_style&lt;yourName&gt;</span></code>: This method has a styles map as parameter which should be manipulated directly. That way, you can just append your styles and That's it. But you should make sure you don't manipulate / override any style another mixin could uses.</li>
+<li><tt class="docutils literal"><span class="pre">_style&lt;yourName&gt;</span></tt>: This method has a styles map as parameter which should be manipulated directly. That way, you can just append your styles and That's it. But you should make sure you don't manipulate / override any style another mixin could uses.</li>
 </ul>
-<p>As you can see, every mixin can define its own methods for <code class="docutils literal"><span class="pre">style</span></code>. The theme system combines all the methods given by the separate widgets to one big working method.</p>
+<p>As you can see, every mixin can define its own methods for <tt class="docutils literal"><span class="pre">style</span></tt>. The theme system combines all the methods given by the separate widgets to one big working method.</p>
 <p>Here is a sample text shadow decorator mixin:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Mixin</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;my.MTextShadow&quot;</span><span class="p">,</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Mixin</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;my.MTextShadow&quot;</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">properties</span> <span class="o">:</span> <span class="p">{</span>
     <span class="nx">textShadowColor</span> <span class="o">:</span> <span class="p">{</span>
       <span class="nx">nullable</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -230,9 +229,9 @@
 <span id="pages-desktop-ui-decorators-writing-decorators"></span><h2>Writing Decorators<a class="headerlink" href="#writing-decorators" title="Permalink to this headline">¶</a></h2>
 <p>It is possible to write custom decorators, although they are not usable in the decoration theme. You can only create instances in the application code and assign the instances. For that reason, the recommendation is to write a decorator mixin instead. <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.decoration.IDecorator">The interface</a> is quite trivial to implement. There are only three methods which needs to be implemented:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">getInsets</span></code>: Returns a map of insets (space the decorator needs) e.g. the border width plus padding</li>
-<li><code class="docutils literal"><span class="pre">getPadding</span></code>: Returns the configured padding minus the border width.</li>
-<li><code class="docutils literal"><span class="pre">getStyle</span></code>: Returns the decorator's CSS styles as a map.</li>
+<li><tt class="docutils literal"><span class="pre">getInsets</span></tt>: Returns a map of insets (space the decorator needs) e.g. the border width plus padding</li>
+<li><tt class="docutils literal"><span class="pre">getPadding</span></tt>: Returns the configured padding minus the border width.</li>
+<li><tt class="docutils literal"><span class="pre">getStyle</span></tt>: Returns the decorator's CSS styles as a map.</li>
 </ul>
 <p>Decorators are regarded as immutable. Once they are used somewhere there is no need to be able to change them anymore.</p>
 <p>Each decorator configuration means exactly one decorator instance (created with the first usage). Even when dozens of widgets use the decorator only one instance is used. To cache the styles is a good way to improve the initial time to create new element instances.</p>
@@ -250,7 +249,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Decorators</a><ul>
@@ -372,7 +371,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

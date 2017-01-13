@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Property features summarized &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Property features summarized &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Core" href="../core.html" />
     <link rel="next" title="Environment" href="environment.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../core.html" accesskey="U">Core</a>
-     &#187;
+     &raquo;
     <a href="">Property features summarized</a>
     </section>
     <section id="content">
@@ -147,7 +146,7 @@
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The chapter gives you an compact but extensive overview of the features offered by qooxdoo's property system.
-Please refer to <a class="reference internal" href="defining_properties.html"><span class="doc">Properties in more detail</span></a> for an explanation of how to define and use properties.</p>
+Please refer to <a class="reference internal" href="defining_properties.html"><em>Properties in more detail</em></a> for an explanation of how to define and use properties.</p>
 </div>
 <div class="section" id="value-checks">
 <span id="pages-property-features-value-checks"></span><h2>Value checks<a class="headerlink" href="#value-checks" title="Permalink to this headline">¶</a></h2>
@@ -177,11 +176,11 @@ Please refer to <a class="reference internal" href="defining_properties.html"><s
 <blockquote>
 <div><ul class="simple">
 <li>Multi value support. Support to store different values for init, inheritance, style and user including a automatic fallback mechanism between them.</li>
-<li>Inheritance support. Inheritance of properties defined by a parent widget e.g. inherit enabled from a groupbox to all form elements. Uses the inheritance if the computed value would be <code class="docutils literal"><span class="pre">undefined</span></code> or explicitly set to <code class="docutils literal"><span class="pre">&quot;inherit&quot;</span></code>. The getter simply returns <code class="docutils literal"><span class="pre">&quot;inherit&quot;</span></code> for inheritable properties which are otherwise unset.</li>
-<li>Blocks unintentionally <code class="docutils literal"><span class="pre">undefined</span></code> values in all setters with an exception. To reset a value one must use the <code class="docutils literal"><span class="pre">reset</span></code> or <code class="docutils literal"><span class="pre">unstyle</span></code> method which are available too.</li>
-<li>Overriding of a value by setting a property explicitly to <code class="docutils literal"><span class="pre">null</span></code></li>
-<li>Properties must be explicitly configured as <code class="docutils literal"><span class="pre">&quot;nullable&quot;</span></code> (like in .Net). The default is <code class="docutils literal"><span class="pre">false</span></code> which means that incoming <code class="docutils literal"><span class="pre">null</span></code> values will result in an exception.</li>
-<li>Accessing nullable properties with <code class="docutils literal"><span class="pre">undefined</span></code> values will result in a normalization to <code class="docutils literal"><span class="pre">null</span></code>.</li>
+<li>Inheritance support. Inheritance of properties defined by a parent widget e.g. inherit enabled from a groupbox to all form elements. Uses the inheritance if the computed value would be <tt class="docutils literal"><span class="pre">undefined</span></tt> or explicitly set to <tt class="docutils literal"><span class="pre">&quot;inherit&quot;</span></tt>. The getter simply returns <tt class="docutils literal"><span class="pre">&quot;inherit&quot;</span></tt> for inheritable properties which are otherwise unset.</li>
+<li>Blocks unintentionally <tt class="docutils literal"><span class="pre">undefined</span></tt> values in all setters with an exception. To reset a value one must use the <tt class="docutils literal"><span class="pre">reset</span></tt> or <tt class="docutils literal"><span class="pre">unstyle</span></tt> method which are available too.</li>
+<li>Overriding of a value by setting a property explicitly to <tt class="docutils literal"><span class="pre">null</span></tt></li>
+<li>Properties must be explicitly configured as <tt class="docutils literal"><span class="pre">&quot;nullable&quot;</span></tt> (like in .Net). The default is <tt class="docutils literal"><span class="pre">false</span></tt> which means that incoming <tt class="docutils literal"><span class="pre">null</span></tt> values will result in an exception.</li>
+<li>Accessing nullable properties with <tt class="docutils literal"><span class="pre">undefined</span></tt> values will result in a normalization to <tt class="docutils literal"><span class="pre">null</span></tt>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -204,8 +203,8 @@ Please refer to <a class="reference internal" href="defining_properties.html"><s
 </div>
 <div class="section" id="initialization">
 <span id="pages-property-features-initialization"></span><h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
-<p>qooxdoo automatically correctly initializes properties. This is true for both, properties which have defined an <code class="docutils literal"><span class="pre">init</span></code> value and also for the other properties which are <code class="docutils literal"><span class="pre">nullable</span></code>. This means that after you have created an instance the properties correctly reflect the applied value. Default values assigned by <code class="docutils literal"><span class="pre">init</span></code> also execute the configured <code class="docutils literal"><span class="pre">apply</span></code> methods and dispatch configured events to inform already added listeners.</p>
-<p><a class="reference internal" href="property_behavior.html"><span class="doc">Initialization Behavior</span></a></p>
+<p>qooxdoo automatically correctly initializes properties. This is true for both, properties which have defined an <tt class="docutils literal"><span class="pre">init</span></tt> value and also for the other properties which are <tt class="docutils literal"><span class="pre">nullable</span></tt>. This means that after you have created an instance the properties correctly reflect the applied value. Default values assigned by <tt class="docutils literal"><span class="pre">init</span></tt> also execute the configured <tt class="docutils literal"><span class="pre">apply</span></tt> methods and dispatch configured events to inform already added listeners.</p>
+<p><a class="reference internal" href="property_behavior.html"><em>Initialization Behavior</em></a></p>
 </div>
 <div class="section" id="performance">
 <span id="pages-property-features-performance"></span><h2>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
@@ -225,7 +224,7 @@ Please refer to <a class="reference internal" href="defining_properties.html"><s
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Property features summarized</a><ul>
@@ -348,7 +347,7 @@ Please refer to <a class="reference internal" href="defining_properties.html"><s
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

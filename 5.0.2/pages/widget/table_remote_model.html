@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Using the remote table model &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Using the remote table model &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Communication" href="../communication.html" />
     <link rel="next" title="FakeServer" href="../communication/fake_server.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../communication.html" accesskey="U">Communication</a>
-     &#187;
+     &raquo;
     <a href="">Using the remote table model</a>
     </section>
     <section id="content">
@@ -149,8 +148,8 @@
 <p>To get this model up and running you have to implement the actual loading of the row data by yourself in a subclass.</p>
 <div class="section" id="implement-your-subclass">
 <span id="pages-remote-table-model-implement-your-subclass"></span><h2>Implement your subclass<a class="headerlink" href="#implement-your-subclass" title="Permalink to this headline">¶</a></h2>
-<p>To correctly implement the remote table model you have to define/overwrite two methods <code class="docutils literal"><span class="pre">_loadRowCount</span></code> and <code class="docutils literal"><span class="pre">_loadRowData</span></code>. Both are automatically called by the table widget.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;myApplication.table.RemoteDataModel&quot;</span><span class="p">,</span>
+<p>To correctly implement the remote table model you have to define/overwrite two methods <tt class="docutils literal"><span class="pre">_loadRowCount</span></tt> and <tt class="docutils literal"><span class="pre">_loadRowData</span></tt>. Both are automatically called by the table widget.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;myApplication.table.RemoteDataModel&quot;</span><span class="p">,</span>
 <span class="p">{</span>
   <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">Remote</span><span class="p">,</span>
 
@@ -214,7 +213,7 @@
 <div class="section" id="using-your-remote-model">
 <span id="pages-remote-table-model-using-your-remote-model"></span><h3>Using your remote model<a class="headerlink" href="#using-your-remote-model" title="Permalink to this headline">¶</a></h3>
 <p>Now that you've set up the remote table model the table component can use it.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">remoteTableModelInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">myApplication</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">RemoteDataModel</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">remoteTableModelInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">myApplication</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">RemoteDataModel</span><span class="p">();</span>
 <span class="nx">yourTableInstance</span><span class="p">.</span><span class="nx">setTableModel</span><span class="p">(</span><span class="nx">remoteTableModelInstance</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -223,8 +222,8 @@
 <div class="section" id="sorting-your-data">
 <span id="pages-remote-table-model-sorting-your-data"></span><h3>Sorting your data<a class="headerlink" href="#sorting-your-data" title="Permalink to this headline">¶</a></h3>
 <p>The table component offers sortable columns to let users sort the data the way they like. You can enable this sorting ability for each column.
-Since you have to pull the data into the table yourself you have to update the table data once the user changes the sorting criteria. You have to enhance the <code class="docutils literal"><span class="pre">_loadRowData</span></code> method with this information to inform your backend how to sort the data.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// &quot;_loadRowData&quot; with sorting support</span>
+Since you have to pull the data into the table yourself you have to update the table data once the user changes the sorting criteria. You have to enhance the <tt class="docutils literal"><span class="pre">_loadRowData</span></tt> method with this information to inform your backend how to sort the data.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// &quot;_loadRowData&quot; with sorting support</span>
 <span class="nx">_loadRowData</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">firstRow</span><span class="p">,</span> <span class="nx">lastRow</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Call the backend service (example) - using XmlHttp</span>
@@ -255,14 +254,14 @@ Since you have to pull the data into the table yourself you have to update the t
 <span id="pages-remote-table-model-backend"></span><h2>Backend<a class="headerlink" href="#backend" title="Permalink to this headline">¶</a></h2>
 <p>The backend has to deliver the requested data in a JSON data structure in order to display the data correctly. The data structure has to use the same IDs as the remote table model instance at the client-side.</p>
 <p>For example</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">remoteModel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">myApplication</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">RemoteDataModel</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">remoteModel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">myApplication</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">RemoteDataModel</span><span class="p">();</span>
 
 <span class="c1">// first param: displayed names, second param: IDs</span>
 <span class="nx">remoteModel</span><span class="p">.</span><span class="nx">setColumns</span><span class="p">(</span> <span class="p">[</span> <span class="s2">&quot;First name&quot;</span><span class="p">,</span> <span class="s2">&quot;Last name&quot;</span> <span class="p">],</span> <span class="p">[</span> <span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="s2">&quot;last&quot;</span> <span class="p">]</span> <span class="p">);</span>
 </pre></div>
 </div>
 <p>Then the data delivered by the backend should have the following structure:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">result</span> <span class="o">=</span> <span class="p">{[</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">result</span> <span class="o">=</span> <span class="p">{[</span>
   <span class="p">{</span> <span class="s2">&quot;first&quot;</span> <span class="o">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;last&quot;</span> <span class="o">:</span> <span class="s2">&quot;Doe&quot;</span>  <span class="p">},</span>
   <span class="p">{</span> <span class="s2">&quot;first&quot;</span> <span class="o">:</span> <span class="s2">&quot;Homer&quot;</span><span class="p">,</span> <span class="s2">&quot;last&quot;</span> <span class="o">:</span> <span class="s2">&quot;Simpson&quot;</span>  <span class="p">},</span>
   <span class="p">{</span> <span class="s2">&quot;first&quot;</span> <span class="o">:</span> <span class="s2">&quot;Charlie&quot;</span><span class="p">,</span> <span class="s2">&quot;last&quot;</span> <span class="o">:</span> <span class="s2">&quot;Brown&quot;</span>  <span class="p">},</span>
@@ -270,7 +269,7 @@ Since you have to pull the data into the table yourself you have to update the t
 <span class="p">]};</span>
 </pre></div>
 </div>
-<p>Moreover, the backend has to deliver the row count, i. e. the number of rows the table contains. This is what the <code class="docutils literal"><span class="pre">_loadRowCount</span></code> function of your subclass expects to get. Please make sure that the URLs <code class="docutils literal"><span class="pre">http://localhost/services/getTableCount.php</span></code> and <code class="docutils literal"><span class="pre">http://localhost/services/getTableRowData.php</span></code> of your subclass point to the right location.</p>
+<p>Moreover, the backend has to deliver the row count, i. e. the number of rows the table contains. This is what the <tt class="docutils literal"><span class="pre">_loadRowCount</span></tt> function of your subclass expects to get. Please make sure that the URLs <tt class="docutils literal"><span class="pre">http://localhost/services/getTableCount.php</span></tt> and <tt class="docutils literal"><span class="pre">http://localhost/services/getTableRowData.php</span></tt> of your subclass point to the right location.</p>
 </div>
 <div class="section" id="summary">
 <span id="pages-remote-table-model-summary"></span><h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
@@ -290,7 +289,7 @@ Since you have to pull the data into the table yourself you have to update the t
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Using the remote table model</a><ul>
@@ -413,7 +412,7 @@ Since you have to pull the data into the table yourself you have to update the t
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Migration Guide &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Migration Guide &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="References" href="../../references.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Migration Guide</a>
     </section>
     <section id="content">
@@ -145,7 +144,7 @@
   <div class="section" id="migration-guide">
 <span id="pages-migration-guide-migration-guide"></span><h1>Migration Guide<a class="headerlink" href="#migration-guide" title="Permalink to this headline">¶</a></h1>
 <p>Migrating from a previous qooxdoo version to a current release often requires
-nothing more than just running the <code class="docutils literal"><span class="pre">migration</span></code> job in your application. Yet,
+nothing more than just running the <tt class="docutils literal"><span class="pre">migration</span></tt> job in your application. Yet,
 some changes between releases may involve manual modifications as detailed in
 the migration guide of each <a class="reference external" href="http://qooxdoo.org/project/release_notes">individual release</a>. The following guide covers both
 cases.</p>
@@ -158,7 +157,7 @@ migration process changes source files in place, modifying your code base.</p>
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Then, after you have unpacked the new qooxdoo SDK on your system, change
-references to it in your <code class="docutils literal"><span class="pre">config.json</span></code> and possibly in <code class="docutils literal"><span class="pre">generate.py</span></code> to
+references to it in your <tt class="docutils literal"><span class="pre">config.json</span></tt> and possibly in <tt class="docutils literal"><span class="pre">generate.py</span></tt> to
 point to the new version (look for &quot;QOOXDOO_PATH&quot;). Make sure that the path
 ends in the root directory of the SDK (like <em>&quot;.../qooxdoo-5.0.2-sdk&quot;</em>).</li>
 <li>Check the current <a class="reference external" href="http://qooxdoo.org/project/release_notes/5.0.2">release notes</a> and those of
@@ -166,12 +165,12 @@ ends in the root directory of the SDK (like <em>&quot;.../qooxdoo-5.0.2-sdk&quot
 current version and 5.0.2 for changes to the generator configuration, as
 they have to be done by hand. Make sure you  apply them to your config.json
 as far as they affect you. For example, with 0.8.1 the config.json macro
-<code class="docutils literal"><span class="pre">QOOXDOO_PATH</span></code> does not include the trailing &quot;framework&quot; part anymore, so
+<tt class="docutils literal"><span class="pre">QOOXDOO_PATH</span></tt> does not include the trailing &quot;framework&quot; part anymore, so
 make sure to add that in references to the qooxdoo class library. E.g. if you
 list the qooxdoo framework Manifest.json explicitly in your config using
 QOOXDOO_PATH, it should read <em>&quot;${QOOXDOO_PATH}/framework/Manifest.json&quot;</em>.</li>
 <li>Alternatively, particularly if you config.json is rather small, create a
-<a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-create-your-application"><span class="std std-ref">separate gui skeleton</span></a> elsewhere and
+<a class="reference internal" href="../getting_started.html#pages-getting-started-helloworld-create-your-application"><em>separate gui skeleton</em></a> elsewhere and
 copy its config.json over to your application, and port the config settings
 from your old configuration to this file. This might be the simpler approach.</li>
 </ul>
@@ -179,18 +178,18 @@ from your old configuration to this file. This might be the simpler approach.</l
 <div class="section" id="run-migration">
 <h2>Run Migration<a class="headerlink" href="#run-migration" title="Permalink to this headline">¶</a></h2>
 <p>Then change to your application's top-level directory and invoke the command</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">migration</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">migration</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li>Answer the interactive questions during its progress. For more information
-about this script, see the <a class="reference internal" href="../generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-migration"><span class="std std-ref">corresponding job description</span></a>.</li>
+about this script, see the <a class="reference internal" href="../generator/default_jobs_actions.html#pages-tool-generator-generator-default-jobs-migration"><em>corresponding job description</em></a>.</li>
 </ul>
 </div>
 <div class="section" id="migration-log">
 <h2>Migration Log<a class="headerlink" href="#migration-log" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Check the <code class="docutils literal"><span class="pre">migration.log</span></code> which is created during the run of the migration
+<li>Check the <tt class="docutils literal"><span class="pre">migration.log</span></tt> which is created during the run of the migration
 script. Check all hints and deprecation warnings in the log and apply them to
 your code.</li>
 </ul>
@@ -206,7 +205,7 @@ version and the target version, as far as they concern you.</li>
 <div class="section" id="test">
 <h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
 <p>You now have an up-to-date source tree in your application. Run</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
 </pre></div>
 </div>
 <p>to check that the generation process goes through and test your application in
@@ -217,25 +216,25 @@ warnings and hints at runtime.</p>
 <h2>Special Issues<a class="headerlink" href="#special-issues" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="compiler-hints">
 <h3>Compiler Hints<a class="headerlink" href="#compiler-hints" title="Permalink to this headline">¶</a></h3>
-<p>Compiler hints of the <code class="docutils literal"><span class="pre">#</span></code> form are deprecated with qooxdoo 3.0. Use <code class="docutils literal"><span class="pre">&#64;</span></code>
-hints in <a class="reference internal" href="../../development/api_jsdoc_ref.html"><span class="doc">JSDoc comments</span></a> instead.
-This affects all of <code class="docutils literal"><span class="pre">#asset,</span> <span class="pre">#require,</span> <span class="pre">#use,</span> <span class="pre">#ignore</span></code> and <code class="docutils literal"><span class="pre">#cldr</span></code>. There
+<p>Compiler hints of the <tt class="docutils literal"><span class="pre">#</span></tt> form are deprecated with qooxdoo 3.0. Use <tt class="docutils literal"><span class="pre">&#64;</span></tt>
+hints in <a class="reference internal" href="../../development/api_jsdoc_ref.html"><em>JSDoc comments</em></a> instead.
+This affects all of <tt class="docutils literal"><span class="pre">#asset,</span> <span class="pre">#require,</span> <span class="pre">#use,</span> <span class="pre">#ignore</span></tt> and <tt class="docutils literal"><span class="pre">#cldr</span></tt>. There
 is mostly a one-to-one translation of the arguments, with unchanged semantics:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">#</span></code>asset<em>(&lt;args&gt;)</em> -&gt; <code class="docutils literal"><span class="pre">&#64;</span></code>asset<em>(&lt;args&gt;)</em></li>
-<li><code class="docutils literal"><span class="pre">#</span></code>require<em>(&lt;args&gt;)</em> -&gt; <code class="docutils literal"><span class="pre">&#64;</span></code>require<em>(&lt;args&gt;)</em></li>
-<li><code class="docutils literal"><span class="pre">#</span></code>use<em>(&lt;args&gt;)</em> -&gt; <code class="docutils literal"><span class="pre">&#64;</span></code>use<em>(&lt;args&gt;)</em></li>
-<li><code class="docutils literal"><span class="pre">#</span></code>ignore<em>(&lt;args&gt;)</em> -&gt; <code class="docutils literal"><span class="pre">&#64;</span></code>ignore<em>(&lt;args&gt;)</em> The semantics of <em>&#64;ignore</em> are
+<li><tt class="docutils literal"><span class="pre">#</span></tt>asset<em>(&lt;args&gt;)</em> -&gt; <tt class="docutils literal"><span class="pre">&#64;</span></tt>asset<em>(&lt;args&gt;)</em></li>
+<li><tt class="docutils literal"><span class="pre">#</span></tt>require<em>(&lt;args&gt;)</em> -&gt; <tt class="docutils literal"><span class="pre">&#64;</span></tt>require<em>(&lt;args&gt;)</em></li>
+<li><tt class="docutils literal"><span class="pre">#</span></tt>use<em>(&lt;args&gt;)</em> -&gt; <tt class="docutils literal"><span class="pre">&#64;</span></tt>use<em>(&lt;args&gt;)</em></li>
+<li><tt class="docutils literal"><span class="pre">#</span></tt>ignore<em>(&lt;args&gt;)</em> -&gt; <tt class="docutils literal"><span class="pre">&#64;</span></tt>ignore<em>(&lt;args&gt;)</em> The semantics of <em>&#64;ignore</em> are
 slightly different from <em>#ignore</em> in that there is no <em>implicit</em> globbing on
-symbol names anymore, so that you might need to append a <code class="docutils literal"><span class="pre">.*</span></code> to a few
+symbol names anymore, so that you might need to append a <tt class="docutils literal"><span class="pre">.*</span></tt> to a few
 of the arguments to achieve the same effect.</li>
-<li><code class="docutils literal"><span class="pre">#</span></code>cldr -&gt; <code class="docutils literal"><span class="pre">&#64;</span></code>cldr<em>()</em> Mind that <em>&#64;cldr</em> requires a pair of empty parentheses
+<li><tt class="docutils literal"><span class="pre">#</span></tt>cldr -&gt; <tt class="docutils literal"><span class="pre">&#64;</span></tt>cldr<em>()</em> Mind that <em>&#64;cldr</em> requires a pair of empty parentheses
 (to make the syntax consistent with other &#64;-hints).</li>
 </ul>
-<p>However, note that it's <strong>not</strong> just a change from <code class="docutils literal"><span class="pre">#</span></code> to <code class="docutils literal"><span class="pre">&#64;</span></code>. It's also a comment
+<p>However, note that it's <strong>not</strong> just a change from <tt class="docutils literal"><span class="pre">#</span></tt> to <tt class="docutils literal"><span class="pre">&#64;</span></tt>. It's also a comment
 type change (JS comments vs. JSDoc comments). Have a look at the examples:</p>
 <p><strong>Example for #asset (qooxdoo &lt; 3.0):</strong></p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/* ************************************************</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/* ************************************************</span>
 
 <span class="cm">#asset(myApp/*)</span>
 
@@ -251,7 +250,7 @@ type change (JS comments vs. JSDoc comments). Have a look at the examples:</p>
 </pre></div>
 </div>
 <p><strong>Example for &#64;asset (qooxdoo &gt;= 3.0):</strong></p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
 <span class="cm"> * This is ... of your custom application &quot;myApp&quot;</span>
 <span class="cm"> *</span>
 <span class="cm"> * @asset(myApp/*)</span>
@@ -289,7 +288,7 @@ document.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Migration Guide</a><ul>
@@ -416,7 +415,7 @@ document.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

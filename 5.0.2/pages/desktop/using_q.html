@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Using qx.Website in qx.Desktop &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Using qx.Website in qx.Desktop &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Tutorial Part 1: The Beginning of a Tweets App" href="tutorials/tutorial-part-1.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Using qx.Website in qx.Desktop</a>
     </section>
     <section id="content">
@@ -155,11 +154,11 @@ qx.Website.</p>
 <div class="section" id="understanding-the-setup">
 <h2>Understanding the Setup<a class="headerlink" href="#understanding-the-setup" title="Permalink to this headline">¶</a></h2>
 <p>The basic structure of qx.Website is module-based and with that loosely
-coupled. The base class called  <code class="docutils literal"><span class="pre">qxWeb</span></code>, or <code class="docutils literal"><span class="pre">q</span></code>, only contains minor
+coupled. The base class called  <tt class="docutils literal"><span class="pre">qxWeb</span></tt>, or <tt class="docutils literal"><span class="pre">q</span></tt>, only contains minor
 functionality, e.g. the plugin API. All other functionality is offered by
-<a class="reference internal" href="../website/modules.html#pages-website-module-overview"><span class="std std-ref">modules</span></a>, even though the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qxWeb">API
+<a class="reference internal" href="../website/modules.html#pages-website-module-overview"><em>modules</em></a>, even though the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qxWeb">API
 Viewer</a> shows a
-different picture. <code class="docutils literal"><span class="pre">qxWeb</span></code> does not have any built-in reference to any of
+different picture. <tt class="docutils literal"><span class="pre">qxWeb</span></tt> does not have any built-in reference to any of
 these modules. This means that the dependency analysis, which is done by the
 generator and gathers all necessary classes, cannot detect the dependencies to
 the modules you are using.</p>
@@ -167,34 +166,33 @@ the modules you are using.</p>
 <div class="section" id="use-require-hints">
 <h2>Use require hints<a class="headerlink" href="#use-require-hints" title="Permalink to this headline">¶</a></h2>
 <p>But the generator offers an easy-to-use way to tell it what to include. Let's
-say you want to use the method named <code class="docutils literal"><span class="pre">fadeIn</span></code> like in the following sample.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="nx">el</span><span class="p">;</span> <span class="c1">// DOM Element</span>
+say you want to use the method named <tt class="docutils literal"><span class="pre">fadeIn</span></tt> like in the following sample.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="nx">el</span><span class="p">;</span> <span class="c1">// DOM Element</span>
 <span class="nx">qxWeb</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>The generator detects the dependency to the class <code class="docutils literal"><span class="pre">qxWeb</span></code> and makes sure it
+<p>The generator detects the dependency to the class <tt class="docutils literal"><span class="pre">qxWeb</span></tt> and makes sure it
 is available for your application. But the module attaching the method
-<code class="docutils literal"><span class="pre">fadeIn</span></code> is still missing and that's where we need to take care of adding
+<tt class="docutils literal"><span class="pre">fadeIn</span></tt> is still missing and that's where we need to take care of adding
 this requirement.</p>
 <p>But which class adds this method? The API Viewer can tell you that. Just <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qxWeb~fadeIn">open
 that method</a>  and
 check the details. It shows you a link to the original method and the
 implementing module. That's the module we need to include by adding a
-<a class="reference internal" href="../tool/sdk/code_structure.html#pages-code-structure-details"><span class="std std-ref">require hint</span></a> to the class. At the top of
-the file using the <code class="docutils literal"><span class="pre">fadeIn</span></code> method, add</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>@use(qx.module.Animation)
-</pre></div>
+<a class="reference internal" href="../tool/sdk/code_structure.html#pages-code-structure-details"><em>require hint</em></a> to the class. At the top of
+the file using the <tt class="docutils literal"><span class="pre">fadeIn</span></tt> method, add</p>
+<div class="highlight-javascript"><pre>@use(qx.module.Animation)</pre>
 </div>
-<p>(assuming the call to <code class="docutils literal"><span class="pre">fadeIn</span></code> is executed after the entire application has been
-loaded). Once loaded the <code class="docutils literal"><span class="pre">qx.module.Animation</span></code> module will register itself
-with <code class="docutils literal"><span class="pre">qxWeb</span></code> and its API will be available.</p>
-<p>Mind that there are <a class="reference internal" href="../tool/generator/dependencies_manually.html"><span class="doc">alternative ways</span></a> to declare additional
+<p>(assuming the call to <tt class="docutils literal"><span class="pre">fadeIn</span></tt> is executed after the entire application has been
+loaded). Once loaded the <tt class="docutils literal"><span class="pre">qx.module.Animation</span></tt> module will register itself
+with <tt class="docutils literal"><span class="pre">qxWeb</span></tt> and its API will be available.</p>
+<p>Mind that there are <a class="reference internal" href="../tool/generator/dependencies_manually.html"><em>alternative ways</em></a> to declare additional
 dependencies towards the Generator.</p>
 </div>
 <div class="section" id="the-easy-way">
 <h2>The easy way<a class="headerlink" href="#the-easy-way" title="Permalink to this headline">¶</a></h2>
 <p>If you use a lot of the qx.Website API in your app, it might be worth to
-include the code modules by requiring <code class="docutils literal"><span class="pre">qx.module.Core</span></code> and with that the
+include the code modules by requiring <tt class="docutils literal"><span class="pre">qx.module.Core</span></tt> and with that the
 basic qx.Website modules. But keep in mind that you might include classes you
 don't need, which adds to the code size of your application.</p>
 </div>
@@ -211,7 +209,7 @@ don't need, which adds to the code size of your application.</p>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Using qx.Website in qx.Desktop</a><ul>
@@ -331,7 +329,7 @@ don't need, which adds to the code size of your application.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

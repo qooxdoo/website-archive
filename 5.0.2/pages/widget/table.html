@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Table &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Table &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Widget Reference List" href="toctree.html" />
     <link rel="next" title="TabView" href="tabview.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,15 +131,15 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../references.html" >References</a>
-       &#187;
+       &raquo;
       <a href="widget_ref.html" >Widget Reference</a>
-       &#187;
+       &raquo;
       <a href="toctree.html" accesskey="U">Widget Reference List</a>
-     &#187;
+     &raquo;
     <a href="">Table</a>
     </section>
     <section id="content">
@@ -155,7 +154,7 @@
 </div>
 <div class="section" id="description">
 <span id="pages-widget-table-description"></span><h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>A <code class="docutils literal"><span class="pre">Table</span></code> is a widget to show a set of data in a column based view. It is based on the idea of virtual rendering. This means that only the visible rows will be rendered, which increases the performance of the widget and makes the table capable of displaying thousands of rows. But it is important to know that the table has only virtual rows, not columns. Having a huge number of columns can still decrease performance.</p>
+<p>A <tt class="docutils literal"><span class="pre">Table</span></tt> is a widget to show a set of data in a column based view. It is based on the idea of virtual rendering. This means that only the visible rows will be rendered, which increases the performance of the widget and makes the table capable of displaying thousands of rows. But it is important to know that the table has only virtual rows, not columns. Having a huge number of columns can still decrease performance.</p>
 </div>
 <div class="section" id="features">
 <span id="pages-widget-table-features"></span><h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
@@ -258,7 +257,7 @@
 <div class="section" id="simple">
 <h3>Simple<a class="headerlink" href="#simple" title="Permalink to this headline">¶</a></h3>
 <p>The most simple table can be build in five lines of code, as you can see in this example:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// table model</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// table model</span>
 <span class="kd">var</span> <span class="nx">tableModel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">Simple</span><span class="p">();</span>
 <span class="nx">tableModel</span><span class="p">.</span><span class="nx">setColumns</span><span class="p">([</span><span class="s2">&quot;ID&quot;</span><span class="p">,</span> <span class="s2">&quot;A number&quot;</span><span class="p">]);</span>
 <span class="nx">tableModel</span><span class="p">.</span><span class="nx">setData</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">12.23</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">849759438750</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">]]);</span>
@@ -273,7 +272,7 @@
 <div class="section" id="editable-column">
 <h3>Editable Column<a class="headerlink" href="#editable-column" title="Permalink to this headline">¶</a></h3>
 <p>Making for example the second column of our simple example editable can be done in one line:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// make second column editable</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// make second column editable</span>
 <span class="nx">tableModel</span><span class="p">.</span><span class="nx">setColumnEditable</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -282,16 +281,16 @@
 <div class="section" id="sorting">
 <h3>Sorting<a class="headerlink" href="#sorting" title="Permalink to this headline">¶</a></h3>
 <p>Also adding a default sort order for the table is easy in one single line:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// sort the table on startup</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// sort the table on startup</span>
 <span class="nx">tableModel</span><span class="p">.</span><span class="nx">sortByColumn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Again, the first argument is the column. The second argument is responsible for the sort order, <code class="docutils literal"><span class="pre">true</span></code> for ascending.</p>
+<p>Again, the first argument is the column. The second argument is responsible for the sort order, <tt class="docutils literal"><span class="pre">true</span></tt> for ascending.</p>
 </div>
 <div class="section" id="conditional-cell-rendering">
 <h3>Conditional Cell Rendering<a class="headerlink" href="#conditional-cell-rendering" title="Permalink to this headline">¶</a></h3>
 <p>As a last addition to our example we build something more complex. We want to render all negative numbers in red and all positive numbers in green:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// conditional rendering</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// conditional rendering</span>
 <span class="kd">var</span> <span class="nx">newRenderer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">cellrenderer</span><span class="p">.</span><span class="nx">Conditional</span><span class="p">();</span>
 <span class="nx">newRenderer</span><span class="p">.</span><span class="nx">addNumericCondition</span><span class="p">(</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">);</span>
 <span class="nx">newRenderer</span><span class="p">.</span><span class="nx">addNumericCondition</span><span class="p">(</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">);</span>
@@ -326,7 +325,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Table</a><ul>
@@ -454,7 +453,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Generator Configuration - Under the Hood &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Generator Configuration - Under the Hood &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Tutorial: Basic Tool Chain Usage" href="../tutorial_basics.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Generator Configuration - Under the Hood</a>
     </section>
     <section id="content">
@@ -184,7 +183,7 @@
 <span id="pages-generator-config-background-when-the-config-file-is-read"></span><h3>When the Config File is Read<a class="headerlink" href="#when-the-config-file-is-read" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>The Json data structure is parsed into an internal data structure; this is standard Json processing.</li>
-<li>If the config file contains a global <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-let"><span class="std std-ref">let</span></a> section these macros are expanded among themselves (for macros referencing other macros) temporarily. This intermediate <em>let</em> map is then used for other top-level keys, to expand potential macros and finalize their values. E.g. a global <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include-top-level"><span class="std std-ref">include</span></a> key might use macros to encode paths to other config files. Then these macros are resolved with the local knowledge to derive real paths. The <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-jobs"><span class="std std-ref">jobs</span></a> key and the <em>let</em> key itself are explicitly not expanded, to allow for later (re-) evaluation in another config file.</li>
+<li>If the config file contains a global <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-let"><em>let</em></a> section these macros are expanded among themselves (for macros referencing other macros) temporarily. This intermediate <em>let</em> map is then used for other top-level keys, to expand potential macros and finalize their values. E.g. a global <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-include-top-level"><em>include</em></a> key might use macros to encode paths to other config files. Then these macros are resolved with the local knowledge to derive real paths. The <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-jobs"><em>jobs</em></a> key and the <em>let</em> key itself are explicitly not expanded, to allow for later (re-) evaluation in another config file.</li>
 <li>If there is a global <em>include</em> key, the listed config files are included (next section).</li>
 </ul>
 </div>
@@ -253,7 +252,7 @@
 </div>
 <div class="section" id="how-to-add-a-new-component">
 <span id="pages-generator-config-background-how-to-add-a-new-component"></span><h2>How to add a new Component<a class="headerlink" href="#how-to-add-a-new-component" title="Permalink to this headline">¶</a></h2>
-<p>qooxdoo comes with a set of helper applications, so called &quot;components&quot;, that can be custom-build for any standard application. Examples are the API Viewer and Test Runner. Suppose we had a new such component, how would this be made available as a standard job to skeleton-based applications? This section provides an implementation view to the more end-user oriented introduction <a class="reference internal" href="generator_config_articles.html#pages-tool-generator-generator-config-articles-include-key-top-level-adding-features"><span class="std std-ref">here</span></a>.</p>
+<p>qooxdoo comes with a set of helper applications, so called &quot;components&quot;, that can be custom-build for any standard application. Examples are the API Viewer and Test Runner. Suppose we had a new such component, how would this be made available as a standard job to skeleton-based applications? This section provides an implementation view to the more end-user oriented introduction <a class="reference internal" href="generator_config_articles.html#pages-tool-generator-generator-config-articles-include-key-top-level-adding-features"><em>here</em></a>.</p>
 <div class="section" id="basics">
 <span id="pages-generator-config-background-basics"></span><h3>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h3>
 <p>Usually, you simply want to run a job already defined for the component, such as the <em>build</em> job that creates an optimized version of it. But in virtually all cases such a component needs to be passed information about the application that tries to build it. This ranges from simple things like the output path, where a script is stored, over the information which class libraries the application uses (think of the application's test classes for the <em>Testrunner</em>),  up to arbitrary modification of job settings (variants, compile options, ...). So, generally speaking, you need to pass some information to, or <em>parameterize</em>, the component job. These kinds of modifications are discussed in this section.</p>
@@ -278,20 +277,20 @@
 <li><strong>Macros</strong></li>
 <li><strong>Includer Jobs</strong></li>
 </ul>
-<p>In both cases, it is essential that both the invoking environment (custom application) and the providing component agree on the way how information is passed. In clear terms this means, it has to be part of the documentation of the component how it allows its job to be tailored. (This documentation for the existing component jobs of qooxdoo is available from the <a class="reference internal" href="../../tool.html#pages-tool-references"><span class="std std-ref">list of default jobs</span></a>).</p>
+<p>In both cases, it is essential that both the invoking environment (custom application) and the providing component agree on the way how information is passed. In clear terms this means, it has to be part of the documentation of the component how it allows its job to be tailored. (This documentation for the existing component jobs of qooxdoo is available from the <a class="reference internal" href="../../tool.html#pages-tool-references"><em>list of default jobs</em></a>).</p>
 <div class="section" id="parameterizing-a-remote-job-through-macros">
 <span id="pages-generator-config-background-parameterizing-a-remote-job-through-macros"></span><h4>Parameterizing a remote job through Macros<a class="headerlink" href="#parameterizing-a-remote-job-through-macros" title="Permalink to this headline">¶</a></h4>
 <p>Macros are a simple way to pass information around. The component job uses a macro in a place that should be parameterized, e.g. a part in a path.</p>
 <p>A typical example is the BUILD_PATH macro. The component job stores its output in a file like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;outfile&quot;</span> <span class="o">:</span> <span class="s2">&quot;${BUILD_PATH}/job_output.js&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;outfile&quot;</span> <span class="o">:</span> <span class="s2">&quot;${BUILD_PATH}/job_output.js&quot;</span>
 </pre></div>
 </div>
 <p>The component will usually provide a sensible default for the macro, e.g.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;BUILD_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;./script&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;BUILD_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;./script&quot;</span>
 </pre></div>
 </div>
 <p>The invoking context can now tailor the output path by overriding the BUILD_PATH macro:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;BUILD_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;my/other/path&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;BUILD_PATH&quot;</span> <span class="o">:</span> <span class="s2">&quot;my/other/path&quot;</span>
 </pre></div>
 </div>
 <p>and running the component job with this macro binding will cause the output be written in the alternate directory. Of course you have to make sure the new macro binding is in effect when the component job is being run (see also further down for this). In the simplest case you just put the macro definition in the <em>global let section</em> of the application <em>config.json</em>. As these let bindings are included in every job of the config, also to the jobs that are imported from other configs, these bindings apply to effectively every job that is accessible through this config. As it is applied very early, the binding in this let section take precedence over bindings of the same macros defined in imported jobs. Thus it is possible to pass the new binding into a job defined in another configuration file.</p>
@@ -301,12 +300,12 @@
 <span id="pages-generator-config-background-parameterizing-a-remote-job-through-includer-jobs"></span><h4>Parameterizing a remote job through Includer Jobs<a class="headerlink" href="#parameterizing-a-remote-job-through-includer-jobs" title="Permalink to this headline">¶</a></h4>
 <p>A more powerful but also more complex way to tailor a remote job is through an <em>includer job</em>, a job that is included by others to add additional configuration to them. Used to parameterize another job includer jobs are akin to dependency injection in programming languages.</p>
 <p>The component job would <em>extend</em> the includer job in its own definition:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;includer-job&quot;</span> <span class="p">]</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;includer-job&quot;</span> <span class="p">]</span>
 </pre></div>
 </div>
 <p>Again, the component would usually provide an <em>includer-job</em> of its own, with sensible defaults.</p>
 <p>The invoking context can then tailor the remote job by tailoring the includer job:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;includer-job&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;includer-job&quot;</span> <span class="o">:</span>
     <span class="p">{</span>
        <span class="s2">&quot;library&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
        <span class="s2">&quot;environment&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
@@ -325,24 +324,24 @@
 <li><p class="first">Split the component's <em>config.json</em> into two.This is usually helpful to keep config settings for the component that are just necessary to develop the component itself, from the definitions that are interesting to other applications that want to run the &quot;exported&quot; job(s) of that component. See e.g. the <em>Testrunner</em> application, where the configuration is split between the local <em>config.json</em> and the includeable <em>testrunner.json</em>.</p>
 </li>
 <li><p class="first">Include the export config of the component in <em>application.json</em>. This will usually be done with a dedicated name space prefix, like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
   <span class="s2">&quot;path&quot;</span> <span class="o">:</span> <span class="s2">&quot;path/to/component/component.json&quot;</span><span class="p">,</span>
   <span class="s2">&quot;as&quot;</span>   <span class="o">:</span> <span class="s2">&quot;comp&quot;</span>   <span class="c1">// something meaningful</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Create a new job in <em>application.json</em>.Choose a name as you would want it to appear to the end user when he invokes <code class="docutils literal"><span class="pre">generate.py</span> <span class="pre">x</span></code>. Optionally, add a descriptive <em>&quot;desc&quot;</em> key that will appear next to the job's name in the listing.</p>
+<li><p class="first">Create a new job in <em>application.json</em>.Choose a name as you would want it to appear to the end user when he invokes <tt class="docutils literal"><span class="pre">generate.py</span> <span class="pre">x</span></tt>. Optionally, add a descriptive <em>&quot;desc&quot;</em> key that will appear next to the job's name in the listing.</p>
 </li>
 <li><p class="first">Make this job extend the component's job you want to make available, e.g. like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;comp::build&quot;</span> <span class="p">]</span> <span class="c1">// &quot;build&quot; is the job you want in most cases</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;extend&quot;</span> <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;comp::build&quot;</span> <span class="p">]</span> <span class="c1">// &quot;build&quot; is the job you want in most cases</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Add further keys, like a <em>let</em> section with macros you want to override, or other job keys.</p>
 </li>
 <li><p class="first">If the component's job honors an includer job, define such a job in <em>application.json</em>. You will usually also need to prefix it with the component's &quot;as&quot; prefix you used above:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;comp::&lt;includer job name&gt;&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="o">&lt;</span><span class="nx">includer</span> <span class="nx">job</span> <span class="nx">keys</span><span class="o">&gt;</span><span class="p">...</span> <span class="p">}</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;comp::&lt;includer job name&gt;&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="o">&lt;</span><span class="nx">includer</span> <span class="nx">job</span> <span class="nx">keys</span><span class="o">&gt;</span><span class="p">...</span> <span class="p">}</span>
 </pre></div>
 </div>
 <p>The component's worker job will automatically include your includer job.</p>
@@ -365,7 +364,7 @@
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Generator Configuration - Under the Hood</a><ul>
@@ -505,7 +504,7 @@
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

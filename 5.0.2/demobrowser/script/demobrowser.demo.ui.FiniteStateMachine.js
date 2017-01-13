@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FiniteStateMachine.3114904be069.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FiniteStateMachine.5b73d0e8431b.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9199,172 +9199,172 @@ while((Math.abs(this.startCell.row-this.endCell.row)<this.numRows/2)||(Math.abs(
 ,markCell:function(M){var N=Math.ceil(this.cellSize/5);var o=new qx.ui.basic.Label(c,null,g);o.set({height:N,width:N,paddingTop:(this.cellSize-N)/2,paddingLeft:(this.cellSize-N)/2,rich:true});this.cells[M.row][M.col].add(o);}
 }});}
 )();
-(function(){var b="TERMINATED",c="__BX",d=" => ",f="#autoActionsBeforeOnexit",g=": Could not find friendly name for '",h=": event '",j=" blocked.  Re-queuing.",k="string",l="qx.event.type.Data",m="'",n="Attempt to transition to nonexistent state ",o="__BY",p="Saved-state stack is empty",q="Internal error: invalid nextState",r=" not handled.  Ignoring.",s="State ",u="#autoActionsBeforeOntransition",v=" returned a value other than ",w="#",x=" already exists",y="Attempt to transition to POP_STATE_STACK ",z=":",A="Transition ",B=" does not exist",C="' on '",D="qx.util.fsm.FiniteStateMachine",E="String",F="terminated",G="#autoActionsAfterOntransition",H="",I="#actionsAfterOnentry",J="Saved-state stack is full",K="#autoActionsBeforeOnentry",L=": no transition found.  No state change.",M="#autoActionsAfterOnentry",N="#actionsBeforeOnentry",O="', because the finite state machine is not running.",P=": Pushed event: ",Q=": Cannot listen to event '",R="Machine started with no available states",S=": Process event: ",T="#entry",U="#ontransition",V=" on ",W="Invalid state: not an instance of ",X="Number",Y="#exit",bp="true, false, or null.",bq="Explicit transition ",br="  ",bl="qx.util.fsm.State",bm="while state stack is empty.",bn=".  Ignoring.",bo="#autoActionsAfterOnexit",bs=": Event '",bt="object",bu=" not handled for target ",bv=": Queued event: ";qx.Class.define(D,{extend:qx.core.Object,construct:function(bw){qx.core.Object.call(this);this.setName(bw);this.__jO={};this.__BV=null;this.__BW=[];this.__BX=[];this.__BY=[];this.__Ca={};this.__Cb={};this.__Cc={};this.__Cd={};this.__Ce={};}
-,statics:{StateChange:{CURRENT_STATE:1,POP_STATE_STACK:2,TERMINATE:3},EventHandling:{PREDICATE:1,BLOCKED:2},DebugFlags:{EVENTS:1,TRANSITIONS:2,FUNCTION_DETAIL:4,OBJECT_NOT_FOUND:8}},events:{"terminated":l},properties:{name:{check:E,nullable:true},state:{check:E,nullable:true},previousState:{check:E,nullable:true},nextState:{check:E,nullable:true},maxSavedStates:{check:X,init:2},debugFlags:{check:X,init:7}},members:{__jO:null,__BV:null,__BX:null,__BY:null,__BW:null,__Ca:null,__Cb:null,__Cc:null,__Cd:null,__Ce:null,__Cf:false,__Cg:true,isTerminated:function(){return this.__Cg;}
+(function(){var b="TERMINATED",c=" => ",d="#autoActionsBeforeOnexit",f=": Could not find friendly name for '",g=": event '",h=" blocked.  Re-queuing.",j="string",k="qx.event.type.Data",l="'",m="__AW",n="Attempt to transition to nonexistent state ",o="Saved-state stack is empty",p="Internal error: invalid nextState",q=" not handled.  Ignoring.",r="State ",s="#autoActionsBeforeOntransition",u=" returned a value other than ",v="#",w=" already exists",x="Attempt to transition to POP_STATE_STACK ",y=":",z="Transition ",A=" does not exist",B="' on '",C="qx.util.fsm.FiniteStateMachine",D="String",E="terminated",F="#autoActionsAfterOntransition",G="",H="#actionsAfterOnentry",I="Saved-state stack is full",J="#autoActionsBeforeOnentry",K=": no transition found.  No state change.",L="#autoActionsAfterOnentry",M="#actionsBeforeOnentry",N="', because the finite state machine is not running.",O=": Pushed event: ",P=": Cannot listen to event '",Q="Machine started with no available states",R=": Process event: ",S="#entry",T="#ontransition",U=" on ",V="__AV",W="Invalid state: not an instance of ",X="Number",Y="#exit",bp="true, false, or null.",bq="Explicit transition ",br="  ",bl="qx.util.fsm.State",bm="while state stack is empty.",bn=".  Ignoring.",bo="#autoActionsAfterOnexit",bs=": Event '",bt="object",bu=" not handled for target ",bv=": Queued event: ";qx.Class.define(C,{extend:qx.core.Object,construct:function(bw){qx.core.Object.call(this);this.setName(bw);this.__jO={};this.__AT=null;this.__AU=[];this.__AV=[];this.__AW=[];this.__AX={};this.__AY={};this.__Ba={};this.__Bb={};this.__Bc={};}
+,statics:{StateChange:{CURRENT_STATE:1,POP_STATE_STACK:2,TERMINATE:3},EventHandling:{PREDICATE:1,BLOCKED:2},DebugFlags:{EVENTS:1,TRANSITIONS:2,FUNCTION_DETAIL:4,OBJECT_NOT_FOUND:8}},events:{"terminated":k},properties:{name:{check:D,nullable:true},state:{check:D,nullable:true},previousState:{check:D,nullable:true},nextState:{check:D,nullable:true},maxSavedStates:{check:X,init:2},debugFlags:{check:X,init:7}},members:{__jO:null,__AT:null,__AV:null,__AW:null,__AU:null,__AX:null,__AY:null,__Ba:null,__Bb:null,__Bc:null,__Bd:false,__Be:true,isTerminated:function(){return this.__Be;}
 ,addState:function(bx){if(!bx instanceof qx.util.fsm.State){throw new Error(W+bl);}
-;var by=bx.getName();if(by in this.__jO){throw new Error(s+by+x);}
-;if(this.__BV==null){this.__BV=by;}
+;var by=bx.getName();if(by in this.__jO){throw new Error(r+by+w);}
+;if(this.__AT==null){this.__AT=by;}
 ;this.__jO[by]=bx;}
 ,replaceState:function(bC,bB){if(!bC instanceof qx.util.fsm.State){throw new Error(W+bl);}
 ;var bA=bC.getName();var bz=this.__jO[bA];this.__jO[bA]=bC;if(bB){bz._bNeedDispose=true;}
 ;return bz;}
-,addObject:function(bG,bD,bE){var bH=bD.toHashCode();this.__Cb[bG]=bH;this.__Cc[bH]=bG;this.__Ca[bG]=bD;if(!bE){return;}
-;if(typeof (bE)==k){bE=[bE];}
-;for(var i=0;i<bE.length;i++ ){var bF=bE[i];if(!this.__Cd[bF]){this.__Cd[bF]={};}
-;this.__Cd[bF][bG]=true;if(!this.__Ce[bG]){this.__Ce[bG]=[];}
-;this.__Ce[bG].push(bF);}
+,addObject:function(bG,bD,bE){var bH=bD.toHashCode();this.__AY[bG]=bH;this.__Ba[bH]=bG;this.__AX[bG]=bD;if(!bE){return;}
+;if(typeof (bE)==j){bE=[bE];}
+;for(var i=0;i<bE.length;i++ ){var bF=bE[i];if(!this.__Bb[bF]){this.__Bb[bF]={};}
+;this.__Bb[bF][bG]=true;if(!this.__Bc[bG]){this.__Bc[bG]=[];}
+;this.__Bc[bG].push(bF);}
 ;}
-,removeObject:function(bL){var bI;var bJ;var bK;var bM;bI=this.__Cb[bL];if(this.__Ce[bL]){for(var i=0;i<this.__Ce[bL].length;i++ ){bJ=this.__Ce[bL][i];delete this.__Cd[bJ][bL];bM=true;for(bK in this.__Cd[bJ]){bM=false;break;}
-;if(bM){delete this.__Cd[bJ];}
+,removeObject:function(bL){var bI;var bJ;var bK;var bM;bI=this.__AY[bL];if(this.__Bc[bL]){for(var i=0;i<this.__Bc[bL].length;i++ ){bJ=this.__Bc[bL][i];delete this.__Bb[bJ][bL];bM=true;for(bK in this.__Bb[bJ]){bM=false;break;}
+;if(bM){delete this.__Bb[bJ];}
 ;}
-;delete this.__Ce[bL];}
-;delete this.__Cc[bI];delete this.__Cb[bL];delete this.__Ca[bL];}
-,getObject:function(bN){return this.__Ca[bN];}
-,getFriendlyName:function(bO){var bP=bO?bO.toHashCode():null;return bP?this.__Cc[bP]:null;}
-,getGroupObjects:function(bQ){var a=[];for(var name in this.__Cd[bQ]){a.push(name);}
+;delete this.__Bc[bL];}
+;delete this.__Ba[bI];delete this.__AY[bL];delete this.__AX[bL];}
+,getObject:function(bN){return this.__AX[bN];}
+,getFriendlyName:function(bO){var bP=bO?bO.toHashCode():null;return bP?this.__Ba[bP]:null;}
+,getGroupObjects:function(bQ){var a=[];for(var name in this.__Bb[bQ]){a.push(name);}
 ;return a;}
-,displayAllObjects:function(){for(var bR in this.__Cb){var bT=this.__Cb[bR];var bS=this.getObject(bR);this.debug(bR+d+bT);this.debug(br+bT+d+this.__Cc[bT]);this.debug(br+bR+d+this.getObject(bR));this.debug(br+this.getObject(bR)+d+this.getFriendlyName(bS));}
+,displayAllObjects:function(){for(var bR in this.__AY){var bT=this.__AY[bR];var bS=this.getObject(bR);this.debug(bR+c+bT);this.debug(br+bT+c+this.__Ba[bT]);this.debug(br+bR+c+this.getObject(bR));this.debug(br+this.getObject(bR)+c+this.getFriendlyName(bS));}
 ;}
-,_getInternalData:function(){return ({"states":this.__jO,"startState":this.__BV,"eventQueue":this.__BX,"blockedEvents":this.__BY,"savedStates":this.__BW,"friendlyToObject":this.__Ca,"friendlyToHash":this.__Cb,"hashToFriendly":this.__Cc,"groupToFriendly":this.__Cd,"friendlyToGroups":this.__Ce});}
-,start:function(){this.__Cg=false;var bV=this.__BV;if(bV==null){throw new Error(R);}
-;this.setState(bV);this.setPreviousState(null);this.setNextState(null);var bU=(this.getDebugFlags()&qx.util.fsm.FiniteStateMachine.DebugFlags.FUNCTION_DETAIL);if(bU){this.debug(this.getName()+w+bV+N);}
-;this.__jO[bV].getAutoActionsBeforeOnentry()(this);if(bU){this.debug(this.getName()+w+bV+T);}
-;this.__jO[bV].getOnentry()(this,null);if(bU){this.debug(this.getName()+w+bV+I);}
+,_getInternalData:function(){return ({"states":this.__jO,"startState":this.__AT,"eventQueue":this.__AV,"blockedEvents":this.__AW,"savedStates":this.__AU,"friendlyToObject":this.__AX,"friendlyToHash":this.__AY,"hashToFriendly":this.__Ba,"groupToFriendly":this.__Bb,"friendlyToGroups":this.__Bc});}
+,start:function(){this.__Be=false;var bV=this.__AT;if(bV==null){throw new Error(Q);}
+;this.setState(bV);this.setPreviousState(null);this.setNextState(null);var bU=(this.getDebugFlags()&qx.util.fsm.FiniteStateMachine.DebugFlags.FUNCTION_DETAIL);if(bU){this.debug(this.getName()+v+bV+M);}
+;this.__jO[bV].getAutoActionsBeforeOnentry()(this);if(bU){this.debug(this.getName()+v+bV+S);}
+;this.__jO[bV].getOnentry()(this,null);if(bU){this.debug(this.getName()+v+bV+H);}
 ;this.__jO[bV].getAutoActionsAfterOnentry()(this);}
-,pushState:function(bW){if(this.__BW.length>=this.getMaxSavedStates()){throw new Error(J);}
-;if(bW===true){this.__BW.push(this.getState());}
-else if(bW){this.__BW.push(bW);}
-else {this.__BW.push(this.getPreviousState());}
+,pushState:function(bW){if(this.__AU.length>=this.getMaxSavedStates()){throw new Error(I);}
+;if(bW===true){this.__AU.push(this.getState());}
+else if(bW){this.__AU.push(bW);}
+else {this.__AU.push(this.getPreviousState());}
 ;}
-,popState:function(){if(this.__BW.length==0){throw new Error(p);}
-;return this.__BW.pop();}
-,postponeEvent:function(event){this.__BY.unshift(event);}
-,enqueueEvent:function(event,bX){if(bX){this.__BX.push(event);}
-else {this.__BX.unshift(event);}
-;if(this.getDebugFlags()&qx.util.fsm.FiniteStateMachine.DebugFlags.EVENTS){var bY=this.getFriendlyName(event.getTarget());if(bX){this.debug(this.getName()+P+event.getType()+(bY?V+bY:H));}
-else {this.debug(this.getName()+bv+event.getType()+(bY?V+bY:H));}
+,popState:function(){if(this.__AU.length==0){throw new Error(o);}
+;return this.__AU.pop();}
+,postponeEvent:function(event){this.__AW.unshift(event);}
+,enqueueEvent:function(event,bX){if(bX){this.__AV.push(event);}
+else {this.__AV.unshift(event);}
+;if(this.getDebugFlags()&qx.util.fsm.FiniteStateMachine.DebugFlags.EVENTS){var bY=this.getFriendlyName(event.getTarget());if(bX){this.debug(this.getName()+O+event.getType()+(bY?U+bY:G));}
+else {this.debug(this.getName()+bv+event.getType()+(bY?U+bY:G));}
 ;}
 ;}
-,eventListener:function(event){if(this.__Cg){this.debug(this.getName()+Q+event.getType()+O);return;}
-;var e=event.clone();this.enqueueEvent(e,false);this.__Ch();}
-,fireImmediateEvent:function(cb,cc,ca){if(this.__Cg){this.debug(this.getName()+Q+cb+O);return;}
+,eventListener:function(event){if(this.__Be){this.debug(this.getName()+P+event.getType()+N);return;}
+;var e=event.clone();this.enqueueEvent(e,false);this.__Bf();}
+,fireImmediateEvent:function(cb,cc,ca){if(this.__Be){this.debug(this.getName()+P+cb+N);return;}
 ;if(ca){var event=qx.event.Registration.createEvent(cb,qx.event.type.Data,[ca,null,false]);}
 else {var event=qx.event.Registration.createEvent(cb,qx.event.type.Event,[false,false]);}
 ;event.setTarget(cc);this.eventListener(event);}
 ,scheduleEvent:function(ce,cf,cd,cg){qx.event.Timer.once(function(){this.fireImmediateEvent(ce,cf,cd);}
 ,this,cg||20);}
-,__Ch:function(){if(this.__Cf){return;}
-;this.__Cf=true;while(this.__BX.length>0){var event=this.__BX.pop();var ch=this.__Ci(event);if(ch){event.dispose();}
+,__Bf:function(){if(this.__Bd){return;}
+;this.__Bd=true;while(this.__AV.length>0){var event=this.__AV.pop();var ch=this.__Bg(event);if(ch){event.dispose();}
 ;}
-;this.__Cf=false;}
-,__Ci:function(event){var ck;var cl;var cj;var cn;var cq;var e;var cp;var ci=this.getDebugFlags();var cu=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.EVENTS;var cs=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.TRANSITIONS;var cr=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.FUNCTION_DETAIL;var co=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.OBJECT_NOT_FOUND;var ct=this.getFriendlyName(event.getTarget());if(cu){this.debug(this.getName()+S+event.getType()+(ct?V+ct:H));}
-;ck=this.getState();cn=this.__jO[ck];cq=cn.transitions;e=cn.getEvents()[event.getType()];if(!e){if(cu){this.debug(this.getName()+bs+event.getType()+m+r);}
+;this.__Bd=false;}
+,__Bg:function(event){var ck;var cl;var cj;var cn;var cq;var e;var cp;var ci=this.getDebugFlags();var cu=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.EVENTS;var cs=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.TRANSITIONS;var cr=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.FUNCTION_DETAIL;var co=ci&qx.util.fsm.FiniteStateMachine.DebugFlags.OBJECT_NOT_FOUND;var ct=this.getFriendlyName(event.getTarget());if(cu){this.debug(this.getName()+R+event.getType()+(ct?U+ct:G));}
+;ck=this.getState();cn=this.__jO[ck];cq=cn.transitions;e=cn.getEvents()[event.getType()];if(!e){if(cu){this.debug(this.getName()+bs+event.getType()+l+q);}
 ;return true;}
-;if(typeof (e)==bt){if(!ct){if(co){this.debug(this.getName()+g+event.getType()+C+event.getTarget()+m);}
+;if(typeof (e)==bt){if(!ct){if(co){this.debug(this.getName()+f+event.getType()+B+event.getTarget()+l);}
 ;return true;}
-;cp=e[ct];if(!cp){if(cu){this.debug(this.getName()+bs+event.getType()+m+bu+ct+bn);}
+;cp=e[ct];if(!cp){if(cu){this.debug(this.getName()+bs+event.getType()+l+bu+ct+bn);}
 ;return true;}
 ;}
 else {cp=e;}
-;switch(cp){case qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE:break;case qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED:if(cu){this.debug(this.getName()+bs+event.getType()+m+j);}
-;this.__BY.unshift(event);return false;default:if(typeof (cp)==k){if(cq[cp]){var cm=cq[cp];cq={};cq[cp]=cm;}
-else {throw new Error(bq+cp+B);}
+;switch(cp){case qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE:break;case qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED:if(cu){this.debug(this.getName()+bs+event.getType()+l+h);}
+;this.__AW.unshift(event);return false;default:if(typeof (cp)==j){if(cq[cp]){var cm=cq[cp];cq={};cq[cp]=cm;}
+else {throw new Error(bq+cp+A);}
 ;break;}
-;};for(var t in cq){var cm=cq[t];switch(cm.getPredicate()(this,event)){case true:break;case false:continue;case null:return true;default:throw new Error(A+ck+z+t+v+bp);};cl=cm.getNextState();if(typeof (cl)==k){if(!cl in this.__jO){throw new Error(n+cl);}
+;};for(var t in cq){var cm=cq[t];switch(cm.getPredicate()(this,event)){case true:break;case false:continue;case null:return true;default:throw new Error(z+ck+y+t+u+bp);};cl=cm.getNextState();if(typeof (cl)==j){if(!cl in this.__jO){throw new Error(n+cl);}
 ;this.setNextState(cl);}
-else {switch(cl){case qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:cl=ck;this.setNextState(cl);break;case qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:if(this.__BW.length==0){throw new Error(y+bm);}
-;cl=this.__BW.pop();this.setNextState(cl);break;case qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:this.__Cg=true;this.setNextState(null);break;default:throw new Error(q);};}
-;if(cr){this.debug(this.getName()+w+ck+w+t+u);}
-;cm.getAutoActionsBeforeOntransition()(this);if(cr){this.debug(this.getName()+w+ck+w+t+U);}
-;cm.getOntransition()(this,event);if(cr){this.debug(this.getName()+w+ck+w+t+G);}
-;cm.getAutoActionsAfterOntransition()(this);if(cr){this.debug(this.getName()+w+ck+f);}
-;cn.getAutoActionsBeforeOnexit()(this);if(cr){this.debug(this.getName()+w+ck+Y);}
-;cn.getOnexit()(this,event);if(cr){this.debug(this.getName()+w+ck+bo);}
+else {switch(cl){case qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:cl=ck;this.setNextState(cl);break;case qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:if(this.__AU.length==0){throw new Error(x+bm);}
+;cl=this.__AU.pop();this.setNextState(cl);break;case qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:this.__Be=true;this.setNextState(null);break;default:throw new Error(p);};}
+;if(cr){this.debug(this.getName()+v+ck+v+t+s);}
+;cm.getAutoActionsBeforeOntransition()(this);if(cr){this.debug(this.getName()+v+ck+v+t+T);}
+;cm.getOntransition()(this,event);if(cr){this.debug(this.getName()+v+ck+v+t+F);}
+;cm.getAutoActionsAfterOntransition()(this);if(cr){this.debug(this.getName()+v+ck+d);}
+;cn.getAutoActionsBeforeOnexit()(this);if(cr){this.debug(this.getName()+v+ck+Y);}
+;cn.getOnexit()(this,event);if(cr){this.debug(this.getName()+v+ck+bo);}
 ;cn.getAutoActionsAfterOnexit()(this);if(cn._bNeedDispose){cn.dispose();}
-;if(this.__Cg){if(cr){this.debug(this.getName()+w+b);}
-;this.fireDataEvent(F,ck);return true;}
-;cn=this.__jO[this.getNextState()];this.setPreviousState(ck);this.setState(this.getNextState());this.setNextState(null);cj=ck;ck=cl;cl=undefined;if(cr){this.debug(this.getName()+w+ck+K);}
-;cn.getAutoActionsBeforeOnentry()(this);if(cr){this.debug(this.getName()+w+ck+T);}
-;cn.getOnentry()(this,event);if(cr){this.debug(this.getName()+w+ck+M);}
-;cn.getAutoActionsAfterOnentry()(this);for(var i=0;i<this.__BY.length;i++ ){e=this.__BY.pop();this.__BX.unshift(e);}
-;if(cs){this.debug(this.getName()+w+cj+d+this.getName()+w+ck);}
+;if(this.__Be){if(cr){this.debug(this.getName()+v+b);}
+;this.fireDataEvent(E,ck);return true;}
+;cn=this.__jO[this.getNextState()];this.setPreviousState(ck);this.setState(this.getNextState());this.setNextState(null);cj=ck;ck=cl;cl=undefined;if(cr){this.debug(this.getName()+v+ck+J);}
+;cn.getAutoActionsBeforeOnentry()(this);if(cr){this.debug(this.getName()+v+ck+S);}
+;cn.getOnentry()(this,event);if(cr){this.debug(this.getName()+v+ck+L);}
+;cn.getAutoActionsAfterOnentry()(this);for(var i=0;i<this.__AW.length;i++ ){e=this.__AW.pop();this.__AV.unshift(e);}
+;if(cs){this.debug(this.getName()+v+cj+c+this.getName()+v+ck);}
 ;return true;}
-;if(cs){this.debug(this.getName()+w+ck+h+event.getType()+m+L);}
+;if(cs){this.debug(this.getName()+v+ck+g+event.getType()+l+K);}
 ;return true;}
-},destruct:function(){this._disposeArray(c);this._disposeArray(o);this.__BW=this.__jO=null;}
+},destruct:function(){this._disposeArray(V);this._disposeArray(m);this.__AU=this.__jO=null;}
 });}
 )();
-(function(){var b="State info must be an object",c="function",d="  var groupObjects = ",h="__Ck",k="__Cj",l="parameters",m=")",n=" fsm.getObject('",o="groups",p="Invalid function parameters: ",q="Invalid onexit type: ",r="  for (var i = 0; i < groupObjects.length; i++)",s="context",t="string",u="autoActionsAfterOnentry",v="__Cq",w='"',x="Invalid numeric value in events object: ",y="Invalid state name",z=" value: ",A="');",B="State ",C="autoActionsBeforeOnexit",D="autoActionsBeforeOnentry",E="}",F="): ",G="__Co",H="events must be an object",I="__Cm",J="onexit",K="{",L="Invalid function request type: ",M=": ",N="expected array, found ",O="Invalid friendly name in 'objects' list: ",P="autoActionsAfterOnexit",Q="  fsm.debug(ex);",R="(",S="Invalid onentry type: ",T="    fsm.getObject(objName).",U=")(fsm)",V="events",W="undefined",X="Invalid ",Y="try",ba="__Cp",bb="    var objName = groupObjects[i];",bc="Invalid value in events object: ",bd="').",be="objects",bf="expected object, found ",bg="qx.util.fsm.Transition",bh="The events object must be provided in new state info",bi="catch(ex)",bj="  {",bk="    fsm.getGroupObjects('",bl="Invalid value in events object ",bm="Invalid transition: not an instance of ",bn="  }",bo="Invalid numeric value in events object ",bp="Invalid 'objects' list: expected array, got ",bq="__Cn",br="qx.util.fsm.State",bs="onentry",bt=";",bu="__Cl",bv="Invalid function request parameter type: ",bw="Invalid 'groups' list: expected array, got ",bx="fsm",by=",",bz="Adding user-provided field to state: ",bA="number",bB="object";qx.Class.define(br,{extend:qx.core.Object,construct:function(bD,bF){var bE;qx.core.Object.call(this);this.setName(bD);if(typeof (bF)!=bB){throw new Error(b);}
-;bE=bF.context||window;this.setUserData(s,bE);for(var bC in bF){switch(bC){case bs:this.setOnentry(this.__Cr(bF[bC],bE));break;case J:this.setOnexit(this.__Cr(bF[bC],bE));break;case D:this.setAutoActionsBeforeOnentry(bF[bC]);break;case u:this.setAutoActionsAfterOnentry(bF[bC]);break;case C:this.setAutoActionsBeforeOnexit(bF[bC]);break;case P:this.setAutoActionsAfterOnexit(bF[bC]);break;case V:this.setEvents(bF[bC]);break;case s:break;default:this.setUserData(bC,bF[bC]);this.debug(B+bD+M+bz+bC);break;};}
+(function(){var b="State info must be an object",c="function",d="  var groupObjects = ",h="__Bm",k="parameters",l=")",m=" fsm.getObject('",n="groups",o="Invalid function parameters: ",p="Invalid onexit type: ",q="  for (var i = 0; i < groupObjects.length; i++)",r="__Bn",s="context",t="string",u="autoActionsAfterOnentry",v="Invalid onentry type: ",w='"',x="Invalid numeric value in events object: ",y="Invalid state name",z="__Bh",A=" value: ",B="');",C="State ",D="autoActionsBeforeOnexit",E="autoActionsBeforeOnentry",F="}",G="): ",H="events must be an object",I="onexit",J="{",K="Invalid function request type: ",L=": ",M="__Bo",N="expected array, found ",O="Invalid friendly name in 'objects' list: ",P="autoActionsAfterOnexit",Q="  fsm.debug(ex);",R="(",S="__Bk",T="__Bl",U="    fsm.getObject(objName).",V=")(fsm)",W="events",X="undefined",Y="Invalid ",ba="try",bb="    var objName = groupObjects[i];",bc="Invalid value in events object: ",bd="').",be="objects",bf="expected object, found ",bg="qx.util.fsm.Transition",bh="The events object must be provided in new state info",bi="catch(ex)",bj="  {",bk="    fsm.getGroupObjects('",bl="Invalid value in events object ",bm="Invalid transition: not an instance of ",bn="  }",bo="Invalid numeric value in events object ",bp="Invalid 'objects' list: expected array, got ",bq="__Bi",br="qx.util.fsm.State",bs="onentry",bt="__Bj",bu=";",bv="Invalid function request parameter type: ",bw="Invalid 'groups' list: expected array, got ",bx="fsm",by=",",bz="Adding user-provided field to state: ",bA="number",bB="object";qx.Class.define(br,{extend:qx.core.Object,construct:function(bD,bF){var bE;qx.core.Object.call(this);this.setName(bD);if(typeof (bF)!=bB){throw new Error(b);}
+;bE=bF.context||window;this.setUserData(s,bE);for(var bC in bF){switch(bC){case bs:this.setOnentry(this.__Bp(bF[bC],bE));break;case I:this.setOnexit(this.__Bp(bF[bC],bE));break;case E:this.setAutoActionsBeforeOnentry(bF[bC]);break;case u:this.setAutoActionsAfterOnentry(bF[bC]);break;case D:this.setAutoActionsBeforeOnexit(bF[bC]);break;case P:this.setAutoActionsAfterOnexit(bF[bC]);break;case W:this.setEvents(bF[bC]);break;case s:break;default:this.setUserData(bC,bF[bC]);this.debug(C+bD+L+bz+bC);break;};}
 ;if(!this.getEvents()){throw new Error(bh);}
 ;this.transitions={};}
-,statics:{_commonTransformAutoActions:function(actionType,value,context){if(typeof (value)!=bB){throw new Error(X+actionType+z+typeof (value));}
-;var funcFragment;var func=Y+K;var param;var objectAndGroupList;for(var f in value){var functionRequest=value[f];if(!functionRequest instanceof Array){throw new Error(L+N+typeof (functionRequest));}
+,statics:{_commonTransformAutoActions:function(actionType,value,context){if(typeof (value)!=bB){throw new Error(Y+actionType+A+typeof (value));}
+;var funcFragment;var func=ba+J;var param;var objectAndGroupList;for(var f in value){var functionRequest=value[f];if(!functionRequest instanceof Array){throw new Error(K+N+typeof (functionRequest));}
 ;for(var i=0;i<functionRequest.length;i++ ){objectAndGroupList=functionRequest[i];if(typeof (objectAndGroupList)!=bB){throw new Error(bv+bf+typeof (functionRequest[param]));}
-;var params=objectAndGroupList[l];if(!params){params=[];}
-else {if(!params instanceof Array){throw new Error(p+N+typeof (params));}
+;var params=objectAndGroupList[k];if(!params){params=[];}
+else {if(!params instanceof Array){throw new Error(o+N+typeof (params));}
 ;}
 ;funcFragment=f+R;for(var j=0;j<params.length;j++ ){if(j!=0){funcFragment+=by;}
-;if(typeof (params[j])==c){funcFragment+=R+params[j]+U;}
+;if(typeof (params[j])==c){funcFragment+=R+params[j]+V;}
 else if(typeof (params[j])==t){funcFragment+=w+params[j]+w;}
 else {funcFragment+=params[j];}
 ;}
-;funcFragment+=m;var a=objectAndGroupList[be];if(!a){a=[];}
+;funcFragment+=l;var a=objectAndGroupList[be];if(!a){a=[];}
 else if(!a instanceof Array){throw new Error(bp+typeof (a));}
 ;for(var j=0;j<a.length;j++ ){if(typeof (a[j])!=t){throw new Error(O+a[j]);}
-;func+=n+a[j]+bd+funcFragment+bt;}
-;var g=objectAndGroupList[o];if(g){if(!g instanceof Array){throw new Error(bw+typeof (g));}
-;for(j=0;j<g.length;j++ ){func+=d+bk+g[j]+A+r+bj+bb+T+funcFragment+bt+bn;}
+;func+=m+a[j]+bd+funcFragment+bu;}
+;var g=objectAndGroupList[n];if(g){if(!g instanceof Array){throw new Error(bw+typeof (g));}
+;for(j=0;j<g.length;j++ ){func+=d+bk+g[j]+B+q+bj+bb+U+funcFragment+bu+bn;}
 ;}
 ;}
 ;}
-;func+=E+bi+K+Q+E;return qx.lang.Function.bind(new Function(bx,func),context);}
-},properties:{name:{transform:k,nullable:true},onentry:{transform:h,nullable:true,init:function(bG,event){}
-},onexit:{transform:bu,nullable:true,init:function(bH,event){}
-},autoActionsBeforeOnentry:{transform:bq,nullable:true,init:function(bI,event){}
-},autoActionsAfterOnentry:{transform:G,nullable:true,init:function(bJ,event){}
-},autoActionsBeforeOnexit:{transform:ba,nullable:true,init:function(bK,event){}
-},autoActionsAfterOnexit:{transform:v,nullable:true,init:function(bL,event){}
-},events:{transform:I,nullable:true}},members:{__Cj:function(bM){if(typeof (bM)!=t||bM.length<1){throw new Error(y);}
+;func+=F+bi+J+Q+F;return qx.lang.Function.bind(new Function(bx,func),context);}
+},properties:{name:{transform:z,nullable:true},onentry:{transform:bq,nullable:true,init:function(bG,event){}
+},onexit:{transform:bt,nullable:true,init:function(bH,event){}
+},autoActionsBeforeOnentry:{transform:T,nullable:true,init:function(bI,event){}
+},autoActionsAfterOnentry:{transform:h,nullable:true,init:function(bJ,event){}
+},autoActionsBeforeOnexit:{transform:r,nullable:true,init:function(bK,event){}
+},autoActionsAfterOnexit:{transform:M,nullable:true,init:function(bL,event){}
+},events:{transform:S,nullable:true}},members:{__Bh:function(bM){if(typeof (bM)!=t||bM.length<1){throw new Error(y);}
 ;return bM;}
-,__Ck:function(bN){switch(typeof (bN)){case W:return function(bO,event){}
-;case c:return qx.lang.Function.bind(bN,this.getUserData(s));default:throw new Error(S+typeof (bN));};}
-,__Cl:function(bP){switch(typeof (bP)){case W:return function(bQ,event){}
-;case c:return qx.lang.Function.bind(bP,this.getUserData(s));default:throw new Error(q+typeof (bP));};}
-,__Cm:function(bT){if(typeof (bT)!=bB){throw new Error(H);}
-;for(var e in bT){var bR=bT[e];if(typeof (bR)==bA&&bR!=qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE&&bR!=qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED){throw new Error(x+e+M+bR);}
-else if(typeof (bR)==bB){for(var bS in bR){if(typeof (bR[bS])==bA&&bR[bS]!=qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE&&bR[bS]!=qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED){throw new Error(bo+R+e+F+bS+M+bR[bS]);}
-else if(typeof (bR[bS])!=t&&typeof (bR[bS])!=bA){throw new Error(bl+R+e+F+bS+M+bR[bS]);}
+,__Bi:function(bN){switch(typeof (bN)){case X:return function(bO,event){}
+;case c:return qx.lang.Function.bind(bN,this.getUserData(s));default:throw new Error(v+typeof (bN));};}
+,__Bj:function(bP){switch(typeof (bP)){case X:return function(bQ,event){}
+;case c:return qx.lang.Function.bind(bP,this.getUserData(s));default:throw new Error(p+typeof (bP));};}
+,__Bk:function(bT){if(typeof (bT)!=bB){throw new Error(H);}
+;for(var e in bT){var bR=bT[e];if(typeof (bR)==bA&&bR!=qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE&&bR!=qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED){throw new Error(x+e+L+bR);}
+else if(typeof (bR)==bB){for(var bS in bR){if(typeof (bR[bS])==bA&&bR[bS]!=qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE&&bR[bS]!=qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED){throw new Error(bo+R+e+G+bS+L+bR[bS]);}
+else if(typeof (bR[bS])!=t&&typeof (bR[bS])!=bA){throw new Error(bl+R+e+G+bS+L+bR[bS]);}
 ;}
 ;}
-else if(typeof (bR)!=t&&typeof (bR)!=bA){throw new Error(bc+e+M+bT[e]);}
+else if(typeof (bR)!=t&&typeof (bR)!=bA){throw new Error(bc+e+L+bT[e]);}
 ;}
 ;return bT;}
-,__Cn:function(bU){return qx.util.fsm.State._commonTransformAutoActions(D,bU,this.getUserData(s));}
-,__Co:function(bV){return qx.util.fsm.State._commonTransformAutoActions(u,bV,this.getUserData(s));}
-,__Cp:function(bW){return qx.util.fsm.State._commonTransformAutoActions(C,bW,this.getUserData(s));}
-,__Cq:function(bX){return qx.util.fsm.State._commonTransformAutoActions(P,bX,this.getUserData(s));}
-,__Cr:function(f,bY){if(typeof (f)==c){f=qx.lang.Function.bind(f,bY);}
+,__Bl:function(bU){return qx.util.fsm.State._commonTransformAutoActions(E,bU,this.getUserData(s));}
+,__Bm:function(bV){return qx.util.fsm.State._commonTransformAutoActions(u,bV,this.getUserData(s));}
+,__Bn:function(bW){return qx.util.fsm.State._commonTransformAutoActions(D,bW,this.getUserData(s));}
+,__Bo:function(bX){return qx.util.fsm.State._commonTransformAutoActions(P,bX,this.getUserData(s));}
+,__Bp:function(f,bY){if(typeof (f)==c){f=qx.lang.Function.bind(f,bY);}
 ;return f;}
 ,addTransition:function(ca){if(!ca instanceof qx.util.fsm.Transition){throw new Error(bm+bg);}
 ;this.transitions[ca.getName()]=ca;}
 }});}
 )();
-(function(){var a="function",b="autoActionsBeforeOntransition",c="or one of the Fsm.StateChange constants",d="autoActionsAfterOntransition",e="context",g="string",h="__Ct",i="predicate",j="ontransition",k="__Cs",l="nextState must be an explicit state name, ",m="Transition ",n=": ",o="String",p="number",q="Invalid transition nextState type: ",r="Invalid transition nextState value: ",s="Adding user-provided field to transition: ",t="__Cw",u="__Cu",v="Invalid transition predicate type: ",w="__Cv",x="undefined",y="nextState",z="Invalid ontransition type: ",A="qx.util.fsm.Transition",B="boolean";qx.Class.define(A,{extend:qx.core.Object,construct:function(F,D){var E;qx.core.Object.call(this);this.setName(F);E=D.context||window;this.setUserData(e,E);for(var C in D){switch(C){case i:this.setPredicate(this.__Cr(D[C],E));break;case y:this.setNextState(D[C]);break;case b:this.setAutoActionsBeforeOntransition(this.__Cr(D[C],E));break;case d:this.setAutoActionsAfterOntransition(this.__Cr(D[C],E));break;case j:this.setOntransition(this.__Cr(D[C],E));break;case e:break;default:this.setUserData(C,D[C]);this.debug(m+F+n+s+C);break;};}
+(function(){var a="function",b="autoActionsBeforeOntransition",c="or one of the Fsm.StateChange constants",d="Invalid ontransition type: ",e="autoActionsAfterOntransition",g="context",h="__Br",i="string",j="predicate",k="__Bq",l="__Bu",m="nextState must be an explicit state name, ",n="Transition ",o=": ",p="__Bs",q="String",r="number",s="Invalid transition nextState type: ",t="Invalid transition nextState value: ",u="Adding user-provided field to transition: ",v="ontransition",w="Invalid transition predicate type: ",x="boolean",y="nextState",z="__Bt",A="qx.util.fsm.Transition",B="undefined";qx.Class.define(A,{extend:qx.core.Object,construct:function(F,D){var E;qx.core.Object.call(this);this.setName(F);E=D.context||window;this.setUserData(g,E);for(var C in D){switch(C){case j:this.setPredicate(this.__Bp(D[C],E));break;case y:this.setNextState(D[C]);break;case b:this.setAutoActionsBeforeOntransition(this.__Bp(D[C],E));break;case e:this.setAutoActionsAfterOntransition(this.__Bp(D[C],E));break;case v:this.setOntransition(this.__Bp(D[C],E));break;case g:break;default:this.setUserData(C,D[C]);this.debug(n+F+o+u+C);break;};}
 ;}
-,properties:{name:{check:o,nullable:true},predicate:{init:function(G,event){return true;}
+,properties:{name:{check:q,nullable:true},predicate:{init:function(G,event){return true;}
 ,transform:k},nextState:{init:qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE,transform:h},autoActionsBeforeOntransition:{init:function(H,event){}
-,transform:u},autoActionsAfterOntransition:{init:function(I,event){}
-,transform:w},ontransition:{init:function(J,event){}
-,transform:t}},members:{__Cs:function(K){switch(typeof (K)){case x:return function(L,event){return true;}
-;case B:return function(M,event){return K;}
-;case a:return qx.lang.Function.bind(K,this.getUserData(e));default:throw new Error(v+typeof (K));};}
-,__Ct:function(N){switch(typeof (N)){case g:return N;case p:switch(N){case qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:case qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:case qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:return N;default:throw new Error(r+N+n+l+c);};break;default:throw new Error(q+typeof (N));};}
-,__Cu:function(O){return qx.util.fsm.State._commonTransformAutoActions(b,O,this.getUserData(e));}
-,__Cv:function(P){return qx.util.fsm.State._commonTransformAutoActions(d,P,this.getUserData(e));}
-,__Cw:function(Q){switch(typeof (Q)){case x:return function(R,event){}
-;case a:return qx.lang.Function.bind(Q,this.getUserData(e));default:throw new Error(z+typeof (Q));};}
-,__Cr:function(f,S){if(typeof (f)==a){f=qx.lang.Function.bind(f,S);}
+,transform:p},autoActionsAfterOntransition:{init:function(I,event){}
+,transform:z},ontransition:{init:function(J,event){}
+,transform:l}},members:{__Bq:function(K){switch(typeof (K)){case B:return function(L,event){return true;}
+;case x:return function(M,event){return K;}
+;case a:return qx.lang.Function.bind(K,this.getUserData(g));default:throw new Error(w+typeof (K));};}
+,__Br:function(N){switch(typeof (N)){case i:return N;case r:switch(N){case qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:case qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:case qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:return N;default:throw new Error(t+N+o+m+c);};break;default:throw new Error(s+typeof (N));};}
+,__Bs:function(O){return qx.util.fsm.State._commonTransformAutoActions(b,O,this.getUserData(g));}
+,__Bt:function(P){return qx.util.fsm.State._commonTransformAutoActions(e,P,this.getUserData(g));}
+,__Bu:function(Q){switch(typeof (Q)){case B:return function(R,event){}
+;case a:return qx.lang.Function.bind(Q,this.getUserData(g));default:throw new Error(d+typeof (Q));};}
+,__Bp:function(f,S){if(typeof (f)==a){f=qx.lang.Function.bind(f,S);}
 ;return f;}
 }});}
 )();

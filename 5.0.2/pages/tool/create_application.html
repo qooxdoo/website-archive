@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Create Application &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Create Application &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="Tooling" href="../tool.html" />
     <link rel="next" title="Migration Guide" href="migration/migration_guide.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../tool.html" accesskey="U">Tooling</a>
-     &#187;
+     &raquo;
     <a href="">Create Application</a>
     </section>
     <section id="content">
@@ -144,16 +143,16 @@
         
   <div class="section" id="create-application">
 <span id="pages-tool-create-application-create-application"></span><h1>Create Application<a class="headerlink" href="#create-application" title="Permalink to this headline">¶</a></h1>
-<p>There is a command-line tool named <code class="docutils literal"><span class="pre">create-application.py</span></code>, available from both the SDK root and <em>tool/bin</em> directories, that helps you start a new application or library. It basically creates a folder structure with some essential files and values filled in. This basic setup already comprises a minimal working application which you can build and run, with no changes. But of course the intention is that you then go ahead and change the files' contents, particularly the JavaScript source files, add new classes, and evolve this skeleton into your desired application.</p>
+<p>There is a command-line tool named <tt class="docutils literal"><span class="pre">create-application.py</span></tt>, available from both the SDK root and <em>tool/bin</em> directories, that helps you start a new application or library. It basically creates a folder structure with some essential files and values filled in. This basic setup already comprises a minimal working application which you can build and run, with no changes. But of course the intention is that you then go ahead and change the files' contents, particularly the JavaScript source files, add new classes, and evolve this skeleton into your desired application.</p>
 <p>The same file structure is suitable to hold a library, i.e. a set of classes that you want to reuse in several applications. You can even have libraries that only hold images or other static resources, like CSS files.</p>
 <p>You start it at the command prompt. The minimal set of options you have to provide is an application name (<em>-n</em>), and optionally an application type (<em>-t</em>). Other options let you select e.g. an output directory, a different application namespace, or a log file.</p>
 <p>Here is a simple example:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ create-application.py -n foo -t native
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>create-application.py -n foo -t native
 </pre></div>
 </div>
-<p>Several tutorials in this manual make use of <em>create-application.py</em>, e.g. the <a class="reference internal" href="getting_started.html"><span class="doc">Hello World</span></a> tutorial. There is also a dedicated page that describes the <a class="reference internal" href="../development/skeletons.html"><span class="doc">various application types</span></a>.</p>
-<p>For the most current information about the options please refer to the interactive help you get with <code class="docutils literal"><span class="pre">create-application.py</span> <span class="pre">--help</span></code>. Here is a sample capture:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>$ create-application.py --help
+<p>Several tutorials in this manual make use of <em>create-application.py</em>, e.g. the <a class="reference internal" href="getting_started.html"><em>Hello World</em></a> tutorial. There is also a dedicated page that describes the <a class="reference internal" href="../development/skeletons.html"><em>various application types</em></a>.</p>
+<p>For the most current information about the options please refer to the interactive help you get with <tt class="docutils literal"><span class="pre">create-application.py</span> <span class="pre">--help</span></tt>. Here is a sample capture:</p>
+<div class="highlight-none"><div class="highlight"><pre>$ create-application.py --help
 Usage: create-application.py --name APPLICATIONNAME [--out DIRECTORY]
                              [--namespace NAMESPACE] [--type TYPE]
                              [-logfile LOGFILE] [--skeleton-path PATH]
@@ -210,7 +209,7 @@ Options:
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>» Next topic</h4>
   <p class="topless"><a href="migration/migration_guide.html"
@@ -320,7 +319,7 @@ Options:
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

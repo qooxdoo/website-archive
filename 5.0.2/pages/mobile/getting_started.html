@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Getting Started with qooxdoo qx.Mobile &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Getting Started with qooxdoo qx.Mobile &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,11 +33,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
-    <link rel="up" title="Getting Started" href="../getting_started.html" />
-    <link rel="next" title="qx.Server Requirements" href="../server/requirements.html" />
+    <link rel="up" title="qx.Mobile" href="../mobile.html" />
+    <link rel="next" title="Tutorial: Creating a Tweets Client with qooxdoo mobile" href="tutorial.html" />
     <link rel="prev" title="qx.Mobile Requirements" href="requirements.html" />
     <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
     <script type="text/javascript">
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,13 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
-      <a href="../introduction.html" >Introduction</a>
-       &#187;
-      <a href="../getting_started.html" accesskey="U">Getting Started</a>
-     &#187;
+       &raquo;
+      <a href="../mobile.html" accesskey="U">qx.Mobile</a>
+     &raquo;
     <a href="">Getting Started with qooxdoo qx.Mobile</a>
     </section>
     <section id="content">
@@ -146,31 +143,31 @@
         
   <div class="section" id="getting-started-with-qooxdoo-qx-mobile">
 <span id="pages-mobile-getting-started-getting-started"></span><h1>Getting Started with qooxdoo qx.Mobile<a class="headerlink" href="#getting-started-with-qooxdoo-qx-mobile" title="Permalink to this headline">¶</a></h1>
-<p>Working with qx.Mobile requires downloading and using qooxdoo's SDK. See here for the <a class="reference internal" href="../tool/sdk/sdk_requirements.html"><span class="doc">SDK's requirements</span></a>, and follow its <em>Installation and Setup</em> section. This requirement applies to the development phase only, the final app is independent of the SDK.</p>
-<p>The first step is to create a mobile skeleton, by calling the <code class="docutils literal"><span class="pre">create-applicaton.py</span></code> script from the
+<p>Working with qx.Mobile requires downloading and using qooxdoo's SDK. See here for the <a class="reference internal" href="../tool/sdk/sdk_requirements.html"><em>SDK's requirements</em></a>, and follow its <em>Installation and Setup</em> section. This requirement applies to the development phase only, the final app is independent of the SDK.</p>
+<p>The first step is to create a mobile skeleton, by calling the <tt class="docutils literal"><span class="pre">create-applicaton.py</span></tt> script from the
 command line. Navigate to the qooxdoo folder and execute the following
 command:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">tool</span><span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">create</span><span class="o">-</span><span class="nx">application</span><span class="p">.</span><span class="nx">py</span> <span class="o">--</span><span class="nx">type</span><span class="o">=</span><span class="nx">mobile</span> <span class="o">--</span><span class="nx">name</span><span class="o">=</span><span class="nx">helloworld</span> <span class="o">--</span><span class="nx">out</span><span class="o">=</span><span class="p">..</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">tool</span><span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">create</span><span class="o">-</span><span class="nx">application</span><span class="p">.</span><span class="nx">py</span> <span class="o">--</span><span class="nx">type</span><span class="o">=</span><span class="nx">mobile</span> <span class="o">--</span><span class="nx">name</span><span class="o">=</span><span class="nx">helloworld</span> <span class="o">--</span><span class="nx">out</span><span class="o">=</span><span class="p">..</span>
 </pre></div>
 </div>
 <p>A new folder &quot;helloworld&quot; will be created next to the qooxdoo folder,
 containing the mobile skeleton application. Right now the application is
-pretty useless, until we create the <code class="docutils literal"><span class="pre">source</span></code> version of it. Navigate
+pretty useless, until we create the <tt class="docutils literal"><span class="pre">source</span></tt> version of it. Navigate
 to the created folder and call the qooxdoo generator with the following
 command:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">.</span><span class="o">/</span><span class="nx">generate</span><span class="p">.</span><span class="nx">py</span> <span class="nx">source</span>
 </pre></div>
 </div>
 <p>After a few seconds the generator has analyzed all class dependencies
 and created a source version of the application. You can test the
-application by opening the <code class="docutils literal"><span class="pre">source/index.html</span></code> file in your Chrome /
+application by opening the <tt class="docutils literal"><span class="pre">source/index.html</span></tt> file in your Chrome /
 Safari browser. You should see a page &quot;Page 1&quot; with a button &quot;Next
 Page&quot;. When you tap on the button, the next page &quot;Page 2&quot;, with a
 &quot;Back&quot; button in the upper left corner, is displayed.</p>
 <p><strong>Congratulations, you have just created your first qooxdoo mobile application!</strong></p>
-<p>Now it is your turn. Just open <code class="docutils literal"><span class="pre">source/class/helloworld/Application.js</span></code> and enhance your cross-platform mobile application.</p>
+<p>Now it is your turn. Just open <tt class="docutils literal"><span class="pre">source/class/helloworld/Application.js</span></tt> and enhance your cross-platform mobile application.</p>
 <p>If you need a more detailed tutorial, please have a look at our mobiletweets tutorial:</p>
-<p><a class="reference internal" href="tutorial.html"><span class="doc">qx.Mobile Tweets Client Tutorial</span></a></p>
+<p><a class="reference internal" href="tutorial.html"><em>qx.Mobile Tweets Client Tutorial</em></a></p>
 </div>
 
 
@@ -179,16 +176,16 @@ Page&quot;. When you tap on the button, the next page &quot;Page 2&quot;, with a
           <a class="prev" href="requirements.html"
              title="previous chapter">« qx.Mobile Requirements</a>
           <span class="separator">|</span>
-          <a class="next" href="../server/requirements.html"
-             title="next chapter">qx.Server Requirements »</a>
+          <a class="next" href="tutorial.html"
+             title="next chapter">Tutorial: Creating a Tweets Client with qooxdoo mobile »</a>
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>» Next topic</h4>
-  <p class="topless"><a href="../server/requirements.html"
-                        title="next chapter">qx.Server Requirements</a></p>
+  <p class="topless"><a href="tutorial.html"
+                        title="next chapter">Tutorial: Creating a Tweets Client with qooxdoo mobile</a></p>
   <h4>« Previous topic</h4>
   <p class="topless"><a href="requirements.html"
                         title="previous chapter">qx.Mobile Requirements</a></p>
@@ -294,7 +291,7 @@ Page&quot;. When you tap on the button, the next page &quot;Page 2&quot;, with a
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Table Styling &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Table Styling &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Layouting" href="ui_layouting.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Table Styling</a>
     </section>
     <section id="content">
@@ -174,7 +173,7 @@
 <li>Scrollbar</li>
 <li>Editable Cells (controls like Textfield, SelectBox and ComboBox)</li>
 </ul>
-<p>This tutorial assumes you're implementing all styling changes of the table widget in your own application theme classes. If you're new to the theming layer of qooxdoo it's a good idea to recap the manual section for the <a class="reference internal" href="ui_theming.html"><span class="doc">theming layer</span></a>.</p>
+<p>This tutorial assumes you're implementing all styling changes of the table widget in your own application theme classes. If you're new to the theming layer of qooxdoo it's a good idea to recap the manual section for the <a class="reference internal" href="ui_theming.html"><em>theming layer</em></a>.</p>
 <p>If you're familiar with the theming layer we can dive right into the first topic.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -183,11 +182,11 @@
 <div class="section" id="table-widget">
 <h2>Table Widget<a class="headerlink" href="#table-widget" title="Permalink to this headline">¶</a></h2>
 <p>Since this widget is the container of all sub-components the styling possibilities are naturally limited. However, limited possibilities does not result in low importance. You can e.g. change the border of the widget which can have a great visual impact.
-Since the border is a <a class="reference internal" href="ui_decorators.html"><span class="doc">decorator</span></a> you can use all possibilities like different kind of borders, shadows and the like.</p>
+Since the border is a <a class="reference internal" href="ui_decorators.html"><em>decorator</em></a> you can use all possibilities like different kind of borders, shadows and the like.</p>
 <p>Sample of a table widget using a decorator with shadow:</p>
 <p><img alt="table_widget_styling.png" src="../../_images/table_widget_styling.png" /></p>
-<p>To achieve this you can re-define the <code class="docutils literal"><span class="pre">table</span></code> decorator in your application theme as following:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table&quot;</span> <span class="o">:</span>
+<p>To achieve this you can re-define the <tt class="docutils literal"><span class="pre">table</span></tt> decorator in your application theme as following:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="c1">// the decorator &#39;MBoxShadow&#39; is only supported by modern browsers</span>
   <span class="c1">// Firefox 3.5+, IE9+, Safari 3.0+, Opera 10.5+ and Chrome 4.0+</span>
@@ -211,7 +210,7 @@ Since the border is a <a class="reference internal" href="ui_decorators.html"><s
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">To get this example working you additionally have to define the colors <code class="docutils literal"><span class="pre">table-border-main</span></code> and <code class="docutils literal"><span class="pre">table-shadow</span></code> in your color theme. It's considered as best practice  to define all colors as named color in your color theme. This way you can use these named colors all over your application.</p>
+<p class="last">To get this example working you additionally have to define the colors <tt class="docutils literal"><span class="pre">table-border-main</span></tt> and <tt class="docutils literal"><span class="pre">table-shadow</span></tt> in your color theme. It's considered as best practice  to define all colors as named color in your color theme. This way you can use these named colors all over your application.</p>
 </div>
 </div>
 <div class="section" id="header">
@@ -219,7 +218,7 @@ Since the border is a <a class="reference internal" href="ui_decorators.html"><s
 <div class="section" id="header-styling">
 <h3>Header styling<a class="headerlink" href="#header-styling" title="Permalink to this headline">¶</a></h3>
 <p>The header widget is a simple widget containing the header cells and the column visibility button. However, if you want to change the e.g. the background of the whole header you're here in the right place, since the container does the styling of the background and not the header cells themselves.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// change the whole background of the header by changing the decorator</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// change the whole background of the header by changing the decorator</span>
 <span class="s2">&quot;table-scroller-header-css&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">decorator</span> <span class="o">:</span> <span class="p">[</span>
@@ -240,16 +239,16 @@ Since the border is a <a class="reference internal" href="ui_decorators.html"><s
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Make sure the color <code class="docutils literal"><span class="pre">table-header-background</span></code> is part of your color theme.</p>
+<p class="last">Make sure the color <tt class="docutils literal"><span class="pre">table-header-background</span></tt> is part of your color theme.</p>
 </div>
 <p>This code snippet will result in the following:</p>
 <p><img alt="table_header_styling.png" src="../../_images/table_header_styling.png" /></p>
-<p>Additionally you can change the height of the whole header by using the <code class="docutils literal"><span class="pre">headerCellHeight</span></code> property. Changing this property might make sense if you also want to customize the appearance of the header cells (e.g. using a larger font).</p>
+<p>Additionally you can change the height of the whole header by using the <tt class="docutils literal"><span class="pre">headerCellHeight</span></tt> property. Changing this property might make sense if you also want to customize the appearance of the header cells (e.g. using a larger font).</p>
 </div>
 <div class="section" id="removing-the-header">
 <h3>Removing the header<a class="headerlink" href="#removing-the-header" title="Permalink to this headline">¶</a></h3>
 <p>You want to get rid off the whole header? That's also possible by setting two additional themeable properties. So you only have to drop those two line in your appearance theme and you're done:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">alias</span> <span class="o">:</span> <span class="s2">&quot;widget&quot;</span><span class="p">,</span>
 
@@ -282,7 +281,7 @@ Since the border is a <a class="reference internal" href="ui_decorators.html"><s
 <p>Beside the settings for alignment and paddings all other appearance customizations are directly applied to the header cell appearance. If you want to e.g. change the hover effect for the header cell you can easily change the decorator (and the padding if necessary) to get an custom styling.
 Exchanging the sort icon is also supported. The sort icons are shown whenever the user does tap at one header cell the very first time.</p>
 <p>The default appearance for each header cell looks like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-header-cell&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-header-cell&quot;</span> <span class="o">:</span>
  <span class="p">{</span>
    <span class="nx">alias</span> <span class="o">:</span> <span class="s2">&quot;atom&quot;</span><span class="p">,</span>
    <span class="nx">style</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">states</span><span class="p">)</span>
@@ -300,14 +299,14 @@ Exchanging the sort icon is also supported. The sort icons are shown whenever th
  <span class="p">},</span>
 </pre></div>
 </div>
-<p>The default decorator for the hover effect does show a 1 pixel border at the bottom of the hovered header cell. If you only want to change this color you can go ahead and add the <code class="docutils literal"><span class="pre">table-header-hovered</span></code> color in the color theme of your application</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-header-hovered&quot;</span> <span class="o">:</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span>
+<p>The default decorator for the hover effect does show a 1 pixel border at the bottom of the hovered header cell. If you only want to change this color you can go ahead and add the <tt class="docutils literal"><span class="pre">table-header-hovered</span></tt> color in the color theme of your application</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-header-hovered&quot;</span> <span class="o">:</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 <p>to get a result like this</p>
 <p><img alt="table_header_cell_hover.png" src="../../_images/table_header_cell_hover.png" /></p>
-<p>A bigger change of the header cells might be to change the background color at hovering. To do so you can simply modify the existing <code class="docutils literal"><span class="pre">table-header-cell-hovered</span></code> decorator like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-header-cell-hovered&quot;</span> <span class="o">:</span>
+<p>A bigger change of the header cells might be to change the background color at hovering. To do so you can simply modify the existing <tt class="docutils literal"><span class="pre">table-header-cell-hovered</span></tt> decorator like</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-header-cell-hovered&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">style</span> <span class="o">:</span>
   <span class="p">{</span>
@@ -320,7 +319,7 @@ Exchanging the sort icon is also supported. The sort icons are shown whenever th
 <p><img alt="table_header_cell_decorator_hover.png" src="../../_images/table_header_cell_decorator_hover.png" /></p>
 <p>Additionally, you can change the styling of the different child controls (label, icon and sort icon) of the header cells. So if you want to change the font you can simply customize the label child control of the header cell to change the alignment, existing padding and the like.</p>
 <p>The default appearance of the child controls are defined as</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-header-cell/label&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-header-cell/label&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">style</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">states</span><span class="p">)</span>
   <span class="p">{</span>
@@ -372,7 +371,7 @@ Exchanging the sort icon is also supported. The sort icons are shown whenever th
 <p>One picture says more than thousand words :) The pane with red background color to demonstrate:</p>
 <p><img alt="table_pane_styling.png" src="../../_images/table_pane_styling.png" /></p>
 <p>The corresponding code in the color theme of your application is a simple one-liner:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-pane&quot;</span> <span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-pane&quot;</span> <span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 </div>
@@ -389,9 +388,9 @@ Exchanging the sort icon is also supported. The sort icons are shown whenever th
 </ul>
 </div></blockquote>
 <p>The first solution path is the quick one which is done by customize color of the color theme and <strong>no</strong> additional coding. However, you have also limited possibilities to customize.
-The second solution is the coding one. Start right away and extend the classes <code class="docutils literal"><span class="pre">qx.ui.table.rowrenderer.Default</span></code> and <code class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Abstract</span></code>, implement the necessary interfaces and create your very own appearance by putting together the necessary CSS styles.</p>
+The second solution is the coding one. Start right away and extend the classes <tt class="docutils literal"><span class="pre">qx.ui.table.rowrenderer.Default</span></tt> and <tt class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Abstract</span></tt>, implement the necessary interfaces and create your very own appearance by putting together the necessary CSS styles.</p>
 <p>Since the latter solution is a more complex one, I'll only explain the first solution which helps you in styling the table rows and columns in a quick way.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// these two lines have to inserted in your application color theme</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// these two lines have to inserted in your application color theme</span>
 <span class="c1">// to remove the grid lines</span>
 <span class="s2">&quot;table-row-line&quot;</span> <span class="o">:</span> <span class="s2">&quot;transparent&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-column-line&quot;</span> <span class="o">:</span> <span class="s2">&quot;transparent&quot;</span><span class="p">,</span>
@@ -400,7 +399,7 @@ The second solution is the coding one. Start right away and extend the classes <
 <p>Okay, we're cheating here a bit by hiding and not removing them, but anyway the goal is achieved and this in a very quick manner, right?</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The use of <code class="docutils literal"><span class="pre">transparent</span></code> as a named color is <strong>not</strong> working for the IE6. If you want to support this browser you have to write your own cellrenderer.</p>
+<p class="last">The use of <tt class="docutils literal"><span class="pre">transparent</span></tt> as a named color is <strong>not</strong> working for the IE6. If you want to support this browser you have to write your own cellrenderer.</p>
 </div>
 </div>
 <div class="section" id="text-and-background-colors">
@@ -409,16 +408,16 @@ The second solution is the coding one. Start right away and extend the classes <
 <p>Customizing these colors is as easy as hiding the grid lines. You can adapt the styling of the rows and columns by just setting different colors. These colors are available and can be overwritten in your application color theme:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">table-pane</span></code> - background color of the pane when less entries are used than available space</li>
-<li><code class="docutils literal"><span class="pre">table-row</span></code> - text color of the cells</li>
-<li><code class="docutils literal"><span class="pre">table-row-background-even</span></code> - background color of even rows</li>
-<li><code class="docutils literal"><span class="pre">table-row-background-odd</span></code> - background color of odd rows</li>
+<li><tt class="docutils literal"><span class="pre">table-pane</span></tt> - background color of the pane when less entries are used than available space</li>
+<li><tt class="docutils literal"><span class="pre">table-row</span></tt> - text color of the cells</li>
+<li><tt class="docutils literal"><span class="pre">table-row-background-even</span></tt> - background color of even rows</li>
+<li><tt class="docutils literal"><span class="pre">table-row-background-odd</span></tt> - background color of odd rows</li>
 </ul>
 </div></blockquote>
 <p>By changing one or more of these colors you can e.g. achieve this:</p>
 <p><img alt="table_pane_cell_backgrounds.png" src="../../_images/table_pane_cell_backgrounds.png" /></p>
 <p>by defining these colors:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-row-background-even&quot;</span> <span class="o">:</span> <span class="s2">&quot;#CD661D&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-row-background-even&quot;</span> <span class="o">:</span> <span class="s2">&quot;#CD661D&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-row-background-odd&quot;</span> <span class="o">:</span> <span class="s2">&quot;#EEAD0E&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-row&quot;</span> <span class="o">:</span> <span class="s2">&quot;#EEE9E9&quot;</span><span class="p">,</span>
 
@@ -432,14 +431,14 @@ The second solution is the coding one. Start right away and extend the classes <
 <p>If you customized the colors like above this is only the first part of it. Now the colors for the selection join the game. If you don't adapt these colors the result will for sure not satisfy you. So let's dive into this topic.</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">table-row-selected</span></code> - text color for cells are selected but <strong>not</strong> focused</li>
-<li><code class="docutils literal"><span class="pre">table-row-background-selected</span></code> - cells are selected but <strong>not</strong> focused</li>
-<li><code class="docutils literal"><span class="pre">table-row-background-focused-selected</span></code> - cells are selected <strong>and</strong> focused</li>
-<li><code class="docutils literal"><span class="pre">table-row-background-focused</span></code> - cells are focused but <strong>not</strong> selected</li>
+<li><tt class="docutils literal"><span class="pre">table-row-selected</span></tt> - text color for cells are selected but <strong>not</strong> focused</li>
+<li><tt class="docutils literal"><span class="pre">table-row-background-selected</span></tt> - cells are selected but <strong>not</strong> focused</li>
+<li><tt class="docutils literal"><span class="pre">table-row-background-focused-selected</span></tt> - cells are selected <strong>and</strong> focused</li>
+<li><tt class="docutils literal"><span class="pre">table-row-background-focused</span></tt> - cells are focused but <strong>not</strong> selected</li>
 </ul>
 </div></blockquote>
 <p>To better visualize this the following example does use colors which are easy to distinguish:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-row-selected&quot;</span> <span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-row-selected&quot;</span> <span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-row-background-selected&quot;</span> <span class="o">:</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-row-background-focused-selected&quot;</span> <span class="o">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-row-background-focused&quot;</span> <span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
@@ -455,7 +454,7 @@ The second solution is the coding one. Start right away and extend the classes <
 <p>This section is rather for the sake of completeness. If you want to have full control over the cell styling you can create your own cellrenderer classes and apply them for each column of your table.
 This topic is more a programmatic one and it does not fit in this scope of this article. However, a short introduction and a beginners guide will fit in here :)</p>
 <p>A list of existing cell renderer is available at the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.ui.table.cellrenderer">API Viewer</a>. If one of these is suitable for you all you have to do to use it is</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tcm</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">getTableColumnModel</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">tcm</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">getTableColumnModel</span><span class="p">();</span>
 
 <span class="c1">// Display a checkbox in column 3</span>
 <span class="nx">tcm</span><span class="p">.</span><span class="nx">setDataCellRenderer</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">table</span><span class="p">.</span><span class="nx">cellrenderer</span><span class="p">.</span><span class="nb">Boolean</span><span class="p">());</span>
@@ -463,7 +462,7 @@ This topic is more a programmatic one and it does not fit in this scope of this 
 </div>
 <p>to e.g. display a checkbox for the fourth column. This assumes the cell renderer fits with the provided data.</p>
 <p>If that's still no a solution for you, because you really need some extras for the cell rendering the solution has to be an own cell renderer. To get into it it's recommended to take a look at the existing cell renderers and the base class.
-So basically you should study the implementation of the <code class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Abstract</span></code> class and as first start the implementation of <code class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Default</span></code> to give a good overview of this topic. Depending on your needs you can start right away by copying the <code class="docutils literal"><span class="pre">default</span></code> renderer and play around a bit to get a impression of how to customize it.</p>
+So basically you should study the implementation of the <tt class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Abstract</span></tt> class and as first start the implementation of <tt class="docutils literal"><span class="pre">qx.ui.table.cellrenderer.Default</span></tt> to give a good overview of this topic. Depending on your needs you can start right away by copying the <tt class="docutils literal"><span class="pre">default</span></tt> renderer and play around a bit to get a impression of how to customize it.</p>
 </div>
 </div>
 <div class="section" id="focus-indicator">
@@ -475,9 +474,9 @@ So basically you should study the implementation of the <code class="docutils li
 <li>hide this indicator completely</li>
 </ul>
 </div></blockquote>
-<p>The first possibility is the fast way for customization if you decided to keep the focus indicator visible. The available decorator is a simple 2 pixel border one and the color <code class="docutils literal"><span class="pre">table-focus-indicator</span></code> is defining this border color of the decorator.
+<p>The first possibility is the fast way for customization if you decided to keep the focus indicator visible. The available decorator is a simple 2 pixel border one and the color <tt class="docutils literal"><span class="pre">table-focus-indicator</span></tt> is defining this border color of the decorator.
 So either replacing the decorator by an own one or just changing the color has a direct effect. So let's look at an example where the decorator is changed:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-scroller-focus-indicator&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-scroller-focus-indicator&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">decorator</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">decoration</span><span class="p">.</span><span class="nx">Double</span><span class="p">,</span>
 
@@ -502,14 +501,14 @@ So either replacing the decorator by an own one or just changing the color has a
 <p class="last">It's better to stick with decorators which are only affecting the border for the focus indicator. A background-related decorator won't have any impact because of the background color styling of the cells.</p>
 </div>
 <p>If you want to hide the focus indicator itself this is a one-liner</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">table</span><span class="p">.</span><span class="nx">setShowCellFocusIndicator</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">table</span><span class="p">.</span><span class="nx">setShowCellFocusIndicator</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="resize-line">
 <h3>Resize Line<a class="headerlink" href="#resize-line" title="Permalink to this headline">¶</a></h3>
 <p>This is a minor topic, since it only can be customized by its color. You may ask: what is the resize line all about? Point your input device to a column border and start the resizing of the column by tapping at the border. The vertical line which gets visible is the resize line. So a table with a green resize line would like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-scroller/resize-line&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-scroller/resize-line&quot;</span> <span class="o">:</span>
  <span class="p">{</span>
    <span class="nx">style</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">states</span><span class="p">)</span>
    <span class="p">{</span>
@@ -526,13 +525,13 @@ So either replacing the decorator by an own one or just changing the color has a
 </div>
 <div class="section" id="statusbar">
 <h2>Statusbar<a class="headerlink" href="#statusbar" title="Permalink to this headline">¶</a></h2>
-<p>You might guessed it already: yes, the statusbar can also be hidden <em>or</em> customized by changing a decorator in your decorator theme of your application. This kind of repetition is quite nice, because if you do understand those basic things you can take a look at the <code class="docutils literal"><span class="pre">Modern</span></code> appearance or decorator theme and you quickly know what to include in your own theme in order to change the styling of a component.</p>
+<p>You might guessed it already: yes, the statusbar can also be hidden <em>or</em> customized by changing a decorator in your decorator theme of your application. This kind of repetition is quite nice, because if you do understand those basic things you can take a look at the <tt class="docutils literal"><span class="pre">Modern</span></tt> appearance or decorator theme and you quickly know what to include in your own theme in order to change the styling of a component.</p>
 <p>Hiding the statusbar is again an one-liner:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">table</span><span class="p">.</span><span class="nx">setStatusBarVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">table</span><span class="p">.</span><span class="nx">setStatusBarVisible</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>And the default implementation of the corresponding decorator looks like</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-statusbar&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-statusbar&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">decorator</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">decoration</span><span class="p">.</span><span class="nx">Single</span><span class="p">,</span>
 
@@ -546,7 +545,7 @@ So either replacing the decorator by an own one or just changing the color has a
 </pre></div>
 </div>
 <p>As you can see there is no additional background and no other fancy stuff. If you like to change this e.g. setting an own background gradient you can use the following</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-statusbar&quot;</span> <span class="o">:</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-statusbar&quot;</span> <span class="o">:</span>
  <span class="p">{</span>
    <span class="nx">decorator</span> <span class="o">:</span>  <span class="p">[</span>
      <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">decoration</span><span class="p">.</span><span class="nx">MLinearBackgroundGradient</span><span class="p">,</span>
@@ -578,8 +577,8 @@ So either replacing the decorator by an own one or just changing the color has a
 <li>table-editor-combobox</li>
 </ul>
 </div></blockquote>
-<p>Basically those appearances do include the corresponding widget appearance and only modify single properties. In the <code class="docutils literal"><span class="pre">Modern</span></code> appearance theme this looks like this:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span> <span class="s2">&quot;table-editor-textfield&quot;</span> <span class="o">:</span>
+<p>Basically those appearances do include the corresponding widget appearance and only modify single properties. In the <tt class="docutils literal"><span class="pre">Modern</span></tt> appearance theme this looks like this:</p>
+<div class="highlight-javascript"><div class="highlight"><pre> <span class="s2">&quot;table-editor-textfield&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="nx">include</span> <span class="o">:</span> <span class="s2">&quot;textfield&quot;</span><span class="p">,</span>
 
@@ -622,19 +621,19 @@ So either replacing the decorator by an own one or just changing the color has a
 </pre></div>
 </div>
 <p>As you can see: only minor changes to the existing appearances. And that's also the hint for your customizations: start with the existing appearances and only modify single properties by overwriting or adding them.</p>
-<p>Here's a little example with an editable textfield with <code class="docutils literal"><span class="pre">orange</span></code> background color:</p>
+<p>Here's a little example with an editable textfield with <tt class="docutils literal"><span class="pre">orange</span></tt> background color:</p>
 <p><img alt="table_editable_cells.png" src="../../_images/table_editable_cells.png" /></p>
 </div>
 <div class="section" id="scrollbars">
 <h2>Scrollbars<a class="headerlink" href="#scrollbars" title="Permalink to this headline">¶</a></h2>
 <p>Each widget which uses the scrolling capabilities (as the table pane scroller does) can use themed scrollbars. By using them you can also style them, since they are rendered by decorators which are now quite common to you, right?
 So this section won't dive too deep into styling scrollbars and just gives hints at which appearance you have to get your hands on. The default appearance of the scrollbars for the table is</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;table-scroller/scrollbar-x&quot;</span><span class="o">:</span> <span class="s2">&quot;scrollbar&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;table-scroller/scrollbar-x&quot;</span><span class="o">:</span> <span class="s2">&quot;scrollbar&quot;</span><span class="p">,</span>
 <span class="s2">&quot;table-scroller/scrollbar-y&quot;</span><span class="o">:</span> <span class="s2">&quot;scrollbar&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
-<p>so the scrollbars of the <code class="docutils literal"><span class="pre">table-scroller</span></code> widget integrates the scrollbars as child controls and does use the same decorators as the default scrollbars. If you want to theme those scrollbars you should take a look at the <code class="docutils literal"><span class="pre">scrollbar</span></code> appearance and all other child controls of this widget.
-As first step you can copy this definitions and modify it to suit your needs. Instead of using the default scrollbars for the table you have to point the <code class="docutils literal"><span class="pre">table-scroller/scrollbar-x</span></code> and <code class="docutils literal"><span class="pre">table-scroller/scrollbar-y</span></code> to your own appearance entries and you're done.</p>
+<p>so the scrollbars of the <tt class="docutils literal"><span class="pre">table-scroller</span></tt> widget integrates the scrollbars as child controls and does use the same decorators as the default scrollbars. If you want to theme those scrollbars you should take a look at the <tt class="docutils literal"><span class="pre">scrollbar</span></tt> appearance and all other child controls of this widget.
+As first step you can copy this definitions and modify it to suit your needs. Instead of using the default scrollbars for the table you have to point the <tt class="docutils literal"><span class="pre">table-scroller/scrollbar-x</span></tt> and <tt class="docutils literal"><span class="pre">table-scroller/scrollbar-y</span></tt> to your own appearance entries and you're done.</p>
 <p>Here's a quick reminder how the table does look like with themed scrollbars:</p>
 <p><img alt="table_scrollbars.png" src="../../_images/table_scrollbars.png" /></p>
 </div>
@@ -651,7 +650,7 @@ As first step you can copy this definitions and modify it to suit your needs. In
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Table Styling</a><ul>
@@ -790,7 +789,7 @@ As first step you can copy this definitions and modify it to suit your needs. In
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>

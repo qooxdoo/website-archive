@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 
@@ -7,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Form Handling &#8212; qooxdoo 5.0.2 documentation</title>
+    <title>Form Handling &mdash; qooxdoo 5.0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -32,8 +33,6 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="top" title="qooxdoo 5.0.2 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Menu Handling" href="ui_menu_handling.html" />
@@ -62,7 +61,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 <div id="main-wrapper" class="sphinx">
 <div id="header-wrapper">
   <section id="header">
@@ -132,11 +131,11 @@
 <section id="main">
   <section id="breadcrumb">
       
-  <a href="http://qooxdoo.org">Home</a> &#187;
+  <a href="http://qooxdoo.org">Home</a> &raquo;
     <a href="../../index.html">Manual (v5.0.2)</a>
-       &#187;
+       &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
-     &#187;
+     &raquo;
     <a href="">Form Handling</a>
     </section>
     <section id="content">
@@ -144,7 +143,7 @@
         
   <div class="section" id="form-handling">
 <span id="pages-desktop-ui-form-handling-form-handling"></span><h1>Form Handling<a class="headerlink" href="#form-handling" title="Permalink to this headline">¶</a></h1>
-<p>The <code class="docutils literal"><span class="pre">qx.ui.form</span></code> package contains several classes for the construction of forms. Some widgets -- like <code class="docutils literal"><span class="pre">Button</span></code>, <code class="docutils literal"><span class="pre">List</span></code> or <code class="docutils literal"><span class="pre">TextField</span></code> -- may look familiar if you have worked with HTML before, but this package also contains more complex widgets that you may know from your operating system and/or native desktop applications (e.g. <code class="docutils literal"><span class="pre">Spinner</span></code>, <code class="docutils literal"><span class="pre">Slider</span></code> or <code class="docutils literal"><span class="pre">DateField</span></code>).</p>
+<p>The <tt class="docutils literal"><span class="pre">qx.ui.form</span></tt> package contains several classes for the construction of forms. Some widgets -- like <tt class="docutils literal"><span class="pre">Button</span></tt>, <tt class="docutils literal"><span class="pre">List</span></tt> or <tt class="docutils literal"><span class="pre">TextField</span></tt> -- may look familiar if you have worked with HTML before, but this package also contains more complex widgets that you may know from your operating system and/or native desktop applications (e.g. <tt class="docutils literal"><span class="pre">Spinner</span></tt>, <tt class="docutils literal"><span class="pre">Slider</span></tt> or <tt class="docutils literal"><span class="pre">DateField</span></tt>).</p>
 <div class="section" id="pages-desktop-ui-form-handling-idea-1">
 <span id="idea"></span><h2>Idea<a class="headerlink" href="#pages-desktop-ui-form-handling-idea-1" title="Permalink to this headline">¶</a></h2>
 <p>The idea of the form API is to make handling of form widgets as simple as possible, but also as generic as possible within the entire framework. There has been a thorough <a class="reference external" href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2099">discussion</a> on what would be the best solution and how to design a solid API. This is what we ended up with.</p>
@@ -188,28 +187,28 @@
 <p>The entire form API is defined by a couple of interfaces. These interfaces contain the most important methods and events for the form widgets. The following listing shows the interfaces, their purpose and how you can benefit from them.</p>
 <div class="section" id="form">
 <span id="pages-desktop-ui-form-handling-form"></span><h3>Form<a class="headerlink" href="#form" title="Permalink to this headline">¶</a></h3>
-<p>The interface <code class="docutils literal"><span class="pre">qx.ui.form.IForm</span></code> defines a set of methods and events for every visible form widget. It contains the listed events and methods.</p>
+<p>The interface <tt class="docutils literal"><span class="pre">qx.ui.form.IForm</span></tt> defines a set of methods and events for every visible form widget. It contains the listed events and methods.</p>
 <p><img alt="iform.png" src="../../_images/iform.png" /></p>
 <p>As you can see, the interface defines accessors for four different properties.</p>
 <ul class="simple">
 <li>The enabled property is usually inherited from the widget class and is used to deactivate a form element.</li>
 <li>The required property is just a boolean flag signaling that the form widget is required. This can be used by some kind of form manager or parent widget to display the status of the widget.</li>
-<li>The valid property is a boolean flag containing <code class="docutils literal"><span class="pre">true</span></code> if the content of the widget is valid, but the form widgets do not have any kind of code to set this property. It needs to be set from outside. If it is set to <code class="docutils literal"><span class="pre">false</span></code>, the appearance will change automatically to properly signal the invalid state.</li>
-<li>The invalidMessage property should contain a message which will be shown in a tooltip if the valid flag is set to <code class="docutils literal"><span class="pre">false</span></code>. If no message is given, no tooltip will appear.</li>
+<li>The valid property is a boolean flag containing <tt class="docutils literal"><span class="pre">true</span></tt> if the content of the widget is valid, but the form widgets do not have any kind of code to set this property. It needs to be set from outside. If it is set to <tt class="docutils literal"><span class="pre">false</span></tt>, the appearance will change automatically to properly signal the invalid state.</li>
+<li>The invalidMessage property should contain a message which will be shown in a tooltip if the valid flag is set to <tt class="docutils literal"><span class="pre">false</span></tt>. If no message is given, no tooltip will appear.</li>
 </ul>
 </div>
 <div class="section" id="executable">
 <span id="pages-desktop-ui-form-handling-executable"></span><h3>Executable<a class="headerlink" href="#executable" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">qx.ui.form.IExecutable</span></code> interface defines the essential components for all executable widgets. The best example for an executable widget is a button. It defines the following events and methods.</p>
+<p>The <tt class="docutils literal"><span class="pre">qx.ui.form.IExecutable</span></tt> interface defines the essential components for all executable widgets. The best example for an executable widget is a button. It defines the following events and methods.</p>
 <p><img alt="iexecutable.png" src="../../_images/iexecutable.png" /></p>
 <p>As you can see, the interface defines accessors for only one property.</p>
 <ul class="simple">
-<li>The command property can take a <code class="docutils literal"><span class="pre">qx.event.Command</span></code>. The execute method executes the given command.</li>
+<li>The command property can take a <tt class="docutils literal"><span class="pre">qx.event.Command</span></tt>. The execute method executes the given command.</li>
 </ul>
 </div>
 <div class="section" id="range">
 <span id="pages-desktop-ui-form-handling-range"></span><h3>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">qx.ui.form.IRange</span></code> interface defines the essential components for all widgets dealing with ranges. It defines the following methods.</p>
+<p>The <tt class="docutils literal"><span class="pre">qx.ui.form.IRange</span></tt> interface defines the essential components for all widgets dealing with ranges. It defines the following methods.</p>
 <p><img alt="irange.png" src="../../_images/irange.png" /></p>
 <p>As you can see, the interface defines accessors for four properties.</p>
 <ul class="simple">
@@ -225,11 +224,11 @@
 <div class="section" id="pages-desktop-ui-form-handling-interfaces-1">
 <span id="id1"></span><h4>Interfaces<a class="headerlink" href="#pages-desktop-ui-form-handling-interfaces-1" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Number : <code class="docutils literal"><span class="pre">qx.ui.form.INumberForm</span></code></li>
-<li>String : <code class="docutils literal"><span class="pre">qx.ui.form.IStringForm</span></code></li>
-<li>Color : <code class="docutils literal"><span class="pre">qx.ui.form.IColorForm</span></code></li>
-<li>Date : <code class="docutils literal"><span class="pre">qx.ui.form.IDateForm</span></code></li>
-<li>Boolean : <code class="docutils literal"><span class="pre">qx.ui.form.IBooleanForm</span></code></li>
+<li>Number : <tt class="docutils literal"><span class="pre">qx.ui.form.INumberForm</span></tt></li>
+<li>String : <tt class="docutils literal"><span class="pre">qx.ui.form.IStringForm</span></tt></li>
+<li>Color : <tt class="docutils literal"><span class="pre">qx.ui.form.IColorForm</span></tt></li>
+<li>Date : <tt class="docutils literal"><span class="pre">qx.ui.form.IDateForm</span></tt></li>
+<li>Boolean : <tt class="docutils literal"><span class="pre">qx.ui.form.IBooleanForm</span></tt></li>
 </ul>
 <p>The color interface takes a string which has to be formatted like the <a class="reference external" href="http://demo.qooxdoo.org/5.0.2/apiviewer/#qx.util.ColorUtil">common colors</a> in qooxdoo.</p>
 <p><img alt="iformvalue.png" src="../../_images/iformvalue.png" /></p>
@@ -241,17 +240,17 @@
 </div>
 <div class="section" id="model-modelselection">
 <span id="pages-desktop-ui-form-handling-model-modelselection"></span><h3>Model / ModelSelection<a class="headerlink" href="#model-modelselection" title="Permalink to this headline">¶</a></h3>
-<p>Most of the form items handling a selection had a value property in the old API. We replaced that with a model property since the value property is used for user input values. The methods for accessing the model data are defined in an interface called <code class="docutils literal"><span class="pre">qx.ui.form.IModel</span></code>.</p>
+<p>Most of the form items handling a selection had a value property in the old API. We replaced that with a model property since the value property is used for user input values. The methods for accessing the model data are defined in an interface called <tt class="docutils literal"><span class="pre">qx.ui.form.IModel</span></tt>.</p>
 <p><img alt="Diagram of IModel" src="../../_images/imodel.png" /></p>
 <p>The model property can be used to store additional data which is represented by the widget. The data does not need to be a string like in the old value property. You can store references to objects, numbers, strings and so on.
-Accessing the model is very easy. Every widget containing a widget implementing the <code class="docutils literal"><span class="pre">qx.ui.form.IModel</span></code> interface has its own interface to access the current selected model.</p>
+Accessing the model is very easy. Every widget containing a widget implementing the <tt class="docutils literal"><span class="pre">qx.ui.form.IModel</span></tt> interface has its own interface to access the current selected model.</p>
 <p><img alt="Diagram of IModelSelection" src="../../_images/imodelselection.png" /></p>
 <p>As you can see in the diagram, you can get the currently selected model and also set the selection using the models.</p>
 </div>
 </div>
 <div class="section" id="pages-desktop-ui-form-handling-widgets2">
 <span id="id2"></span><h2>Widgets<a class="headerlink" href="#pages-desktop-ui-form-handling-widgets2" title="Permalink to this headline">¶</a></h2>
-<p>The following listing shows the form widgets and their corresponding interfaces. To see more details about a widget, take a look at the <a class="reference internal" href="../widget/widget_ref.html"><span class="doc">widgets</span></a> documentation.</p>
+<p>The following listing shows the form widgets and their corresponding interfaces. To see more details about a widget, take a look at the <a class="reference internal" href="../widget/widget_ref.html"><em>widgets</em></a> documentation.</p>
 <html>
 <style type="text/css">
 table {border: 1px solid black; border-collapse:collapse; background-color: white}
@@ -777,8 +776,8 @@ td {border: 1px solid black; padding:5px}
 </html></div>
 <div class="section" id="sample-usage">
 <span id="pages-desktop-ui-form-handling-sample-usage-1"></span><h2>Sample Usage<a class="headerlink" href="#sample-usage" title="Permalink to this headline">¶</a></h2>
-<p>The first example is a simple one, showing how to use two widgets implementing the <code class="docutils literal"><span class="pre">IStringForm</span></code> interface:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create and add a textfield</span>
+<p>The first example is a simple one, showing how to use two widgets implementing the <tt class="docutils literal"><span class="pre">IStringForm</span></tt> interface:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create and add a textfield</span>
 <span class="kd">var</span> <span class="nx">textfield</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">textfield</span><span class="p">,</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">top</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
 
@@ -791,8 +790,8 @@ td {border: 1px solid black; padding:5px}
 <span class="nx">label</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="s2">&quot;Text&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The second example shows how to react on a change in a widget implementing the <code class="docutils literal"><span class="pre">INumberForm</span></code> interface. The value of the slider will be shown as a label:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create and add a slider</span>
+<p>The second example shows how to react on a change in a widget implementing the <tt class="docutils literal"><span class="pre">INumberForm</span></tt> interface. The value of the slider will be shown as a label:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create and add a slider</span>
 <span class="kd">var</span> <span class="nx">slider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Slider</span><span class="p">();</span>
 <span class="nx">slider</span><span class="p">.</span><span class="nx">setWidth</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">slider</span><span class="p">,</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">top</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
@@ -808,8 +807,8 @@ td {border: 1px solid black; padding:5px}
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The last example shows how to use the <code class="docutils literal"><span class="pre">IForm</span></code> interface and how to mark a widget as invalid:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create and add a slider</span>
+<p>The last example shows how to use the <tt class="docutils literal"><span class="pre">IForm</span></tt> interface and how to mark a widget as invalid:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create and add a slider</span>
 <span class="kd">var</span> <span class="nx">slider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Slider</span><span class="p">();</span>
 <span class="nx">slider</span><span class="p">.</span><span class="nx">setWidth</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
 <span class="nx">slider</span><span class="p">.</span><span class="nx">setValue</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
@@ -831,7 +830,7 @@ td {border: 1px solid black; padding:5px}
 </div>
 <div class="section" id="validation">
 <span id="pages-desktop-ui-form-handling-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h2>
-<p>Form validation is essential in most of the common use cases of forms. That's why qooxdoo supports the application developer with a validation component named <code class="docutils literal"><span class="pre">qx.ui.form.validation.Manager</span></code>. This manager is responsible for managing the form items which need to be validated.
+<p>Form validation is essential in most of the common use cases of forms. That's why qooxdoo supports the application developer with a validation component named <tt class="docutils literal"><span class="pre">qx.ui.form.validation.Manager</span></tt>. This manager is responsible for managing the form items which need to be validated.
 We tried to keep the API as minimal as possible but simultaneously as flexible as possible. The following class diagram shows the user API of the component.</p>
 <p><img alt="The validation package" src="../../_images/validationmanager.png" /></p>
 <p>The events, properties and methods can be divided into three groups:</p>
@@ -859,13 +858,13 @@ We tried to keep the API as minimal as possible but simultaneously as flexible a
 <p>The first part with which the application developer gets in contact is the add method. It takes form items and a validator. But what are form items?</p>
 <div class="section" id="requirements">
 <span id="pages-desktop-ui-form-handling-requirements"></span><h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
-<p>Form items need two things. First of all, a given form item must be able to handle an invalid state and must have an invalid message. This is guaranteed by the <a class="reference internal" href="#pages-desktop-ui-form-handling-form"><span class="std std-ref">IForm</span></a> interface already introduced. But that's not all: The manager needs to access the value of the form item. Therefore, the form item needs to specify a value property. This value property is defined in the <a class="reference internal" href="#pages-desktop-ui-form-handling-number-string-color-date-boolean"><span class="std std-ref">data specific form interfaces</span></a> also introduced above. So all widgets implementing the <code class="docutils literal"><span class="pre">IForm</span></code> interface and one of the value defining interfaces can be used by the validation. For a list of widgets and the interfaces they implement, take a look at the <a class="reference internal" href="#pages-desktop-ui-form-handling-widgets1"><span class="std std-ref">widgets section</span></a> in this document.</p>
+<p>Form items need two things. First of all, a given form item must be able to handle an invalid state and must have an invalid message. This is guaranteed by the <a class="reference internal" href="#pages-desktop-ui-form-handling-form"><em>IForm</em></a> interface already introduced. But that's not all: The manager needs to access the value of the form item. Therefore, the form item needs to specify a value property. This value property is defined in the <a class="reference internal" href="#pages-desktop-ui-form-handling-number-string-color-date-boolean"><em>data specific form interfaces</em></a> also introduced above. So all widgets implementing the <tt class="docutils literal"><span class="pre">IForm</span></tt> interface and one of the value defining interfaces can be used by the validation. For a list of widgets and the interfaces they implement, take a look at the <a class="reference internal" href="#pages-desktop-ui-form-handling-widgets1"><em>widgets section</em></a> in this document.</p>
 <p>Now that we know what the manager can validate, it's time to learn how to validate. In general, there are two different approaches in validation. The first approach is client side validation, which is commonly synchronous. On the other hand, server side validation is asynchronous in most cases. We will cover both possibilities in the following sections.</p>
 </div>
 <div class="section" id="synchronous">
 <span id="pages-desktop-ui-form-handling-synchronous"></span><h3>Synchronous<a class="headerlink" href="#synchronous" title="Permalink to this headline">¶</a></h3>
 <p>The following subsections cover some common scenarios of synchronous validation. See this code snippet as basis for all the examples shown in the subsections.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">validation</span><span class="p">.</span><span class="nx">Manager</span><span class="p">();</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">validation</span><span class="p">.</span><span class="nx">Manager</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">checkBox</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">CheckBox</span><span class="p">();</span>
 </pre></div>
@@ -873,7 +872,7 @@ We tried to keep the API as minimal as possible but simultaneously as flexible a
 <div class="section" id="required-form-fields">
 <span id="pages-desktop-ui-form-handling-required-form-fields"></span><h4>Required Form Fields<a class="headerlink" href="#required-form-fields" title="Permalink to this headline">¶</a></h4>
 <p>One of the most obvious validations is a check for a non-empty field. This can be seen in common forms as required fields, which are easy to define in qooxdoo. Just define the specific widget as required and add it to the validation manager without any validator.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">textField</span><span class="p">.</span><span class="nx">setRequired</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">textField</span><span class="p">.</span><span class="nx">setRequired</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 <span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -881,16 +880,16 @@ We tried to keep the API as minimal as possible but simultaneously as flexible a
 </div>
 <div class="section" id="default-validator">
 <span id="pages-desktop-ui-form-handling-default-validator"></span><h4>Default Validator<a class="headerlink" href="#default-validator" title="Permalink to this headline">¶</a></h4>
-<p>Another common use case of validation is to check for specific input types like email addresses, URLs or similar. For those common checks, qooxdoo offers a set of predefined validators in <code class="docutils literal"><span class="pre">qx.util.Validate</span></code>. The example here shows the usage of a predefined email validator.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Validate</span><span class="p">.</span><span class="nx">email</span><span class="p">());</span>
+<p>Another common use case of validation is to check for specific input types like email addresses, URLs or similar. For those common checks, qooxdoo offers a set of predefined validators in <tt class="docutils literal"><span class="pre">qx.util.Validate</span></tt>. The example here shows the usage of a predefined email validator.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Validate</span><span class="p">.</span><span class="nx">email</span><span class="p">());</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="custom-validator">
 <span id="pages-desktop-ui-form-handling-custom-validator"></span><h4>Custom Validator<a class="headerlink" href="#custom-validator" title="Permalink to this headline">¶</a></h4>
-<p>Sometimes, the predefined validators are not enough and you need to create an application-specific validator. That's also no problem because the synchronous validator is just a JavaScript function. In this function, you can either return a boolean which signals the validation result or you can throw a <code class="docutils literal"><span class="pre">qx.core.ValidationError</span></code> containing the message to be displayed as an invalid message. The validation manager can handle both kinds of validators.
+<p>Sometimes, the predefined validators are not enough and you need to create an application-specific validator. That's also no problem because the synchronous validator is just a JavaScript function. In this function, you can either return a boolean which signals the validation result or you can throw a <tt class="docutils literal"><span class="pre">qx.core.ValidationError</span></tt> containing the message to be displayed as an invalid message. The validation manager can handle both kinds of validators.
 The example here checks if the value of the text field has a length of at least 3.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">value</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">;</span>
 <span class="p">});</span>
 </pre></div>
@@ -899,7 +898,7 @@ The example here checks if the value of the text field has a length of at least 
 <div class="section" id="validation-in-the-context-of-the-form">
 <span id="pages-desktop-ui-form-handling-validation-in-the-context-of-the-form"></span><h4>Validation in the context of the form<a class="headerlink" href="#validation-in-the-context-of-the-form" title="Permalink to this headline">¶</a></h4>
 <p>All shown validation rules validate each form item in its own context. But it might be necessary to include more than one form item in the validation. For such scenarios, the manager itself can have a validator too. The example here demonstrates how to ensure that the text field is not empty if the checkbox is checked.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">manager</span><span class="p">.</span><span class="nx">setValidator</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">manager</span><span class="p">.</span><span class="nx">setValidator</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">checkBox</span><span class="p">.</span><span class="nx">getValue</span><span class="p">())</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">textField</span><span class="p">.</span><span class="nx">getValue</span><span class="p">();</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">value</span> <span class="o">||</span> <span class="nx">value</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
@@ -917,8 +916,8 @@ The example here checks if the value of the text field has a length of at least 
 <div class="section" id="asynchronous">
 <span id="pages-desktop-ui-form-handling-asynchronous"></span><h3>Asynchronous<a class="headerlink" href="#asynchronous" title="Permalink to this headline">¶</a></h3>
 <p>Imagine a scenario where you want to check if a username is already taken during a registration process or you want to verify a credit card number. This type of validation can only be done by a server and not in the client. But you don't want the user to wait for the server to process your request and send the answer back. So you need some kind of asynchronous validation.</p>
-<p>For all asynchronous validation cases, we need a wrapper for the validator, the <code class="docutils literal"><span class="pre">qx.ui.form.validation.AsyncValidator</span></code>. But that does not mean a lot work for the application developer. Just take a look at the following example to see the AsyncValidator in action.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">validation</span><span class="p">.</span><span class="nx">AsyncValidator</span><span class="p">(</span>
+<p>For all asynchronous validation cases, we need a wrapper for the validator, the <tt class="docutils literal"><span class="pre">qx.ui.form.validation.AsyncValidator</span></tt>. But that does not mean a lot work for the application developer. Just take a look at the following example to see the AsyncValidator in action.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">manager</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">validation</span><span class="p">.</span><span class="nx">AsyncValidator</span><span class="p">(</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">validator</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// here comes the async call</span>
     <span class="nx">qx</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">Timer</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -940,14 +939,14 @@ The example here checks if the value of the text field has a length of at least 
 <div class="section" id="pages-desktop-ui-form-handling-idea-2">
 <span id="id3"></span><h3>Idea<a class="headerlink" href="#pages-desktop-ui-form-handling-idea-2" title="Permalink to this headline">¶</a></h3>
 <p>The main idea behind this was to ensure that it cooperates nicely with features like the form widgets and the corresponding data binding components. So we decided to split the problem into two different parts. The first part is storing the data held in the view components as a model. The second part takes that model and serializes its data.
-Sounds like <a class="reference internal" href="../data_binding/data_binding.html"><span class="doc">data binding</span></a>? It is data binding!</p>
+Sounds like <a class="reference internal" href="../data_binding/data_binding.html"><em>data binding</em></a>? It is data binding!</p>
 <p><img alt="Serialization in qooxdoo" src="../../_images/serialization.png" /></p>
 <p>But you don't have to connect all these widgets yourself. qooxdoo offers an object controller which can take care of most of the work. But where do you get the model? Writing a specific qooxdoo class for every form sounds like a bit of overkill. But qooxdoo has a solution for that, too. The creation of classes and model instances is already a part of the data binding components and can also be used here. Sounds weird? Take a look at the following common scenarios to see how it works.</p>
 </div>
 <div class="section" id="common-scenarios">
 <span id="pages-desktop-ui-form-handling-common-scenarios"></span><h3>Common Scenarios<a class="headerlink" href="#common-scenarios" title="Permalink to this headline">¶</a></h3>
 <p>The most common scenario is to serialize a number of form items without any special additions. Just get the values of the entire form and serialize them.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the ui</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the ui</span>
 <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 <span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">PasswordField</span><span class="p">();</span>
 
@@ -963,15 +962,15 @@ Sounds like <a class="reference internal" href="../data_binding/data_binding.htm
 <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Serializer</span><span class="p">.</span><span class="nx">toUriParameter</span><span class="p">(</span><span class="nx">model</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The result will be <code class="docutils literal"><span class="pre">name=a&amp;password=b</span></code> because the initial values of the model are <code class="docutils literal"><span class="pre">a</span></code> and <code class="docutils literal"><span class="pre">b</span></code>.</p>
+<p>The result will be <tt class="docutils literal"><span class="pre">name=a&amp;password=b</span></tt> because the initial values of the model are <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt>.</p>
 <p>This way, the serialization is separated from the form itself. So hidden form fields are as easy as it could be. Just add another property to the model.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">marshal</span><span class="p">.</span><span class="nx">Json</span><span class="p">.</span><span class="nx">createModel</span><span class="p">(</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">marshal</span><span class="p">.</span><span class="nx">Json</span><span class="p">.</span><span class="nx">createModel</span><span class="p">(</span>
   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="nx">password</span><span class="o">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="nx">c</span><span class="o">:</span> <span class="s2">&quot;i am hidden&quot;</span><span class="p">}</span>
 <span class="p">);</span>
 </pre></div>
 </div>
 <p>Keep in mind that you're creating a model with that and you can access every property you created using the default getters and setters.</p>
-<p>You might be asking yourself &quot;What if i want to convert the values for serialization? My server needs some different values...&quot;. That brings us to the topic of conversion. But as we have seen before, the mapping from the view to the model is handled by the data binding layer which already includes conversion. Take a look at the <a class="reference internal" href="../data_binding/single_value_binding.html#pages-data-binding-single-value-binding-options-conversion-and-validation"><span class="std std-ref">data binding documentation</span></a> for more information on conversion.</p>
+<p>You might be asking yourself &quot;What if i want to convert the values for serialization? My server needs some different values...&quot;. That brings us to the topic of conversion. But as we have seen before, the mapping from the view to the model is handled by the data binding layer which already includes conversion. Take a look at the <a class="reference internal" href="../data_binding/single_value_binding.html#pages-data-binding-single-value-binding-options-conversion-and-validation"><em>data binding documentation</em></a> for more information on conversion.</p>
 <div class="section" id="need-something-special">
 <span id="pages-desktop-ui-form-handling-need-something-special"></span><h4>Need something special?<a class="headerlink" href="#need-something-special" title="Permalink to this headline">¶</a></h4>
 <p>In some cases, you might want to have something really special like serializing one value only if another value has a special value or something similar. In that case, you can write your own serializer which handles serialization the way you need it.</p>
@@ -985,17 +984,17 @@ Sounds like <a class="reference internal" href="../data_binding/data_binding.htm
 <li>The validation manager is not the right place for resetting because it handles only the validation.</li>
 <li>The form widget, responsible for layouting forms, is a good place, but we don't want to force developers to use it if they just want the reset feature.</li>
 </ul>
-<p>So we decided to create a standalone implementation for resetting called <code class="docutils literal"><span class="pre">qx.ui.form.Resetter</span></code>.</p>
+<p>So we decided to create a standalone implementation for resetting called <tt class="docutils literal"><span class="pre">qx.ui.form.Resetter</span></tt>.</p>
 <p><img alt="Resetter Class" src="../../_images/resetter.png" /></p>
 <p>Like the task of resetting itself, the API is not too complicated. We have one method for adding items, and another one for resetting all added items.</p>
 <div class="section" id="how-it-works">
 <span id="pages-desktop-ui-form-handling-how-it-works"></span><h3>How It Works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h3>
-<p>Technically, it's not really a challenge thanks to the new form API. You can add any items either having a value property defined by one of the <a class="reference internal" href="#pages-desktop-ui-form-handling-number-string-color-date-boolean"><span class="std std-ref">data specific form interfaces</span></a> or implementing the <a class="reference internal" href="ui_selection.html"><span class="doc">selection API</span></a> of qooxdoo. On every addition, the resetter grabs the current value and stores it. On a reset all stored values are set.</p>
+<p>Technically, it's not really a challenge thanks to the new form API. You can add any items either having a value property defined by one of the <a class="reference internal" href="#pages-desktop-ui-form-handling-number-string-color-date-boolean"><em>data specific form interfaces</em></a> or implementing the <a class="reference internal" href="ui_selection.html"><em>selection API</em></a> of qooxdoo. On every addition, the resetter grabs the current value and stores it. On a reset all stored values are set.</p>
 </div>
 <div class="section" id="pages-desktop-ui-form-handling-sample-usage-2">
 <span id="id4"></span><h3>Sample Usage<a class="headerlink" href="#pages-desktop-ui-form-handling-sample-usage-2" title="Permalink to this headline">¶</a></h3>
 <p>The following sample shows how to use the resetter with three input fields: A textfield, a checkbox and a list.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create a textfield</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create a textfield</span>
 <span class="kd">var</span> <span class="nx">textField</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">(</span><span class="s2">&quot;acb&quot;</span><span class="p">);</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">textField</span><span class="p">,</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">top</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
 
@@ -1029,13 +1028,13 @@ Sounds like <a class="reference internal" href="../data_binding/data_binding.htm
 </div>
 <div class="section" id="form-object">
 <span id="pages-desktop-ui-form-handling-form-object"></span><h2>Form Object<a class="headerlink" href="#form-object" title="Permalink to this headline">¶</a></h2>
-<p>We've already covered most parts of form handling. But one thing we've left out completely until now is layouting the form items. That's where the <code class="docutils literal"><span class="pre">qx.ui.form.Form</span></code> widget comes into play.</p>
+<p>We've already covered most parts of form handling. But one thing we've left out completely until now is layouting the form items. That's where the <tt class="docutils literal"><span class="pre">qx.ui.form.Form</span></tt> widget comes into play.</p>
 <div class="section" id="what-is-it">
 <span id="pages-desktop-ui-form-handling-what-is-it"></span><h3>What is it?<a class="headerlink" href="#what-is-it" title="Permalink to this headline">¶</a></h3>
 <p>The qooxdoo form is an object which includes three main parts.</p>
 <ul class="simple">
-<li><a class="reference internal" href="#pages-desktop-ui-form-handling-validation"><span class="std std-ref">Validation</span></a> using the <code class="docutils literal"><span class="pre">qx.ui.form.validation.Manager</span></code> class</li>
-<li><a class="reference internal" href="#pages-desktop-ui-form-handling-resetting"><span class="std std-ref">Resetting</span></a> using the <code class="docutils literal"><span class="pre">qx.ui.form.Resetter</span></code> class</li>
+<li><a class="reference internal" href="#pages-desktop-ui-form-handling-validation"><em>Validation</em></a> using the <tt class="docutils literal"><span class="pre">qx.ui.form.validation.Manager</span></tt> class</li>
+<li><a class="reference internal" href="#pages-desktop-ui-form-handling-resetting"><em>Resetting</em></a> using the <tt class="docutils literal"><span class="pre">qx.ui.form.Resetter</span></tt> class</li>
 <li>Handling the layout of the form</li>
 </ul>
 <p>As we have already talked about the first two items, I'll cover the last item in a more detailed way.</p>
@@ -1045,7 +1044,7 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 </div>
 <div class="section" id="renderer">
 <span id="pages-desktop-ui-form-handling-renderer"></span><h3>Renderer<a class="headerlink" href="#renderer" title="Permalink to this headline">¶</a></h3>
-<p>As the diagram shows, qooxdoo provides an interface for FormRenderer, the <code class="docutils literal"><span class="pre">IFormRenderer</span></code> interface. It defines two methods, one for adding a group of form items and one for adding buttons.</p>
+<p>As the diagram shows, qooxdoo provides an interface for FormRenderer, the <tt class="docutils literal"><span class="pre">IFormRenderer</span></tt> interface. It defines two methods, one for adding a group of form items and one for adding buttons.</p>
 <ul class="simple">
 <li>addItems(items : qx.ui.form.IForm[], names : String[], title : String) : void</li>
 <li>addButton(button : qx.ui.form.Button) : void</li>
@@ -1074,12 +1073,12 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 <span id="id5"></span><h3>Sample Usage<a class="headerlink" href="#pages-desktop-ui-form-handling-sample-usage-3" title="Permalink to this headline">¶</a></h3>
 <p>After we've seen how it should look, here come some examples showing how it works. In this example, we want to create a form for an address management tool. So we divide our input fields into two groups. The first group contains two text fields, one for the first name and one for the last name. The second group contains some contact data like email, phone number and company name. Finally, we want to add two buttons to the form, one for saving the data if it is valid and another for resetting the form. So here we go...</p>
 <p>First, we need a form object.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the form</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the form</span>
 <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Form</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>After that, we can create the first two input fields. As these two fields are required, we should mark them as such.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the first two input fields</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the first two input fields</span>
 <span class="kd">var</span> <span class="nx">firstname</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
 <span class="nx">firstname</span><span class="p">.</span><span class="nx">setRequired</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">lastname</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">();</span>
@@ -1087,21 +1086,21 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 </pre></div>
 </div>
 <p>As you can see, the input fields are text fields as described above. Next, we can add those input fields to the form.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add the first group</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add the first group</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">addGroupHeader</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">firstname</span><span class="p">,</span> <span class="s2">&quot;Firstname&quot;</span><span class="p">);</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">lastname</span><span class="p">,</span> <span class="s2">&quot;Lastname&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>First, we added a group header to create a headline above the two input fields. After that, we added them with a name but without a validator. The required flag we set earlier is enough. We need to add another group of input fields for the contact data.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add the second group</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add the second group</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">addGroupHeader</span><span class="p">(</span><span class="s2">&quot;Contact&quot;</span><span class="p">);</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">(),</span> <span class="s2">&quot;Email&quot;</span><span class="p">,</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Validate</span><span class="p">.</span><span class="nx">email</span><span class="p">());</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">(),</span> <span class="s2">&quot;Phone&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>After adding the second group header, you'll see the text field for the email address, which uses a predefined email validator from the framework. The phone number does not get any validator at all. The last missing thing are the buttons. First, add the save button.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add a save button</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add a save button</span>
 <span class="kd">var</span> <span class="nx">savebutton</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Save&quot;</span><span class="p">);</span>
 <span class="nx">savebutton</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;execute&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">form</span><span class="p">.</span><span class="nx">validate</span><span class="p">())</span> <span class="p">{</span>
@@ -1112,7 +1111,7 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 </pre></div>
 </div>
 <p>The save button gets an execute listener which first validates the form and, if the form is valid, alerts the user. The reset button is analogous.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add a reset button</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add a reset button</span>
 <span class="kd">var</span> <span class="nx">resetbutton</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Reset&quot;</span><span class="p">);</span>
 <span class="nx">resetbutton</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;execute&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">form</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
@@ -1121,14 +1120,14 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 </pre></div>
 </div>
 <p>Now the form is complete and we can use the default renderer to render the form and add it to the document.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the view and add it</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the view and add it</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">Single</span><span class="p">(</span><span class="nx">form</span><span class="p">),</span> <span class="p">{</span><span class="nx">left</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">top</span><span class="o">:</span> <span class="mi">10</span><span class="p">});</span>
 </pre></div>
 </div>
 <p>Running this code will create a form as described above which will look like this:</p>
 <p><img alt="Result of the code example" src="../../_images/codesampleform.png" /></p>
 <p>If you want to get a different look and feel, you can create a different renderer.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the view and add it</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the view and add it</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span>
   <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">SinglePlaceholder</span><span class="p">(</span><span class="nx">form</span><span class="p">),</span>
   <span class="p">{</span><span class="nx">left</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">top</span><span class="o">:</span> <span class="mi">10</span><span class="p">}</span>
@@ -1141,17 +1140,17 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 <div class="section" id="pages-desktop-ui-form-handling-form-controller">
 <span id="id6"></span><h2>Form Controller<a class="headerlink" href="#pages-desktop-ui-form-handling-form-controller" title="Permalink to this headline">¶</a></h2>
 <p>Data binding for a form certainly is a handy feature. Using a model to access data in the form brings form handling to another level of abstraction. That's exactly what the form controller offers.</p>
-<p>The form controller is fully covered in the <a class="reference internal" href="../data_binding/controller.html#pages-data-binding-controller-form-controller"><span class="std std-ref">data binding documentation</span></a>.</p>
+<p>The form controller is fully covered in the <a class="reference internal" href="../data_binding/controller.html#pages-data-binding-controller-form-controller"><em>data binding documentation</em></a>.</p>
 <div class="section" id="pages-desktop-ui-form-handling-sample-usage-4">
 <span id="id7"></span><h3>Sample Usage<a class="headerlink" href="#pages-desktop-ui-form-handling-sample-usage-4" title="Permalink to this headline">¶</a></h3>
 <p>The following example shows how to use the controller with a simple form, which contains three text fields: One for salutation, one for first name and one for last name.</p>
 <p>First, we create the form:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the form</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the form</span>
 <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Form</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>In a second step we add the three text fields. The important thing here is that if no name is given - as in the first two cases - each label will also be used as a name. For that, all spaces in the label are removed.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add the first TextField (&quot;Salutation&quot; will be the property name)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add the first TextField (&quot;Salutation&quot; will be the property name)</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">(),</span> <span class="s2">&quot;Salutation&quot;</span><span class="p">);</span>
 <span class="c1">// add the second TextField (&quot;FirstName&quot; will be the property name)</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">TextField</span><span class="p">(),</span> <span class="s2">&quot;First Name&quot;</span><span class="p">);</span>
@@ -1160,24 +1159,24 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
 </pre></div>
 </div>
 <p>After we add the text fields, we can add the view to the application root.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// add the form to the root</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// add the form to the root</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">Single</span><span class="p">(</span><span class="nx">form</span><span class="p">));</span>
 </pre></div>
 </div>
-<p>Now that the form has been created, we can take care of the data binding controller. We simply supply the form instance as an argument to the constructor. But we don't have a model yet, so we just pass <code class="docutils literal"><span class="pre">null</span></code> for the model.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the controller with the form</span>
+<p>Now that the form has been created, we can take care of the data binding controller. We simply supply the form instance as an argument to the constructor. But we don't have a model yet, so we just pass <tt class="docutils literal"><span class="pre">null</span></tt> for the model.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the controller with the form</span>
 <span class="kd">var</span> <span class="nx">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">controller</span><span class="p">.</span><span class="nx">Form</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="nx">form</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The final step for data binding is to create the actual model.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// create the model</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// create the model</span>
 <span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">createModel</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Take a look at the following sequence diagram to see how it works internally.
 <img alt="Creation of the model" src="../../_images/sd-createmodel-473x400.png" /></p>
 <p>Now we have managed to set up a form and a model connected by bidirectional bindings. So we can simply use the model to set values in the form.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="c1">// set some values in the form</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// set some values in the form</span>
 <span class="nx">model</span><span class="p">.</span><span class="nx">setSalutation</span><span class="p">(</span><span class="s2">&quot;Mr.&quot;</span><span class="p">);</span>
 <span class="nx">model</span><span class="p">.</span><span class="nx">setFirstName</span><span class="p">(</span><span class="s2">&quot;Martin&quot;</span><span class="p">);</span>
 <span class="nx">model</span><span class="p">.</span><span class="nx">setLast</span><span class="p">(</span><span class="s2">&quot;Wittemann&quot;</span><span class="p">);</span>
@@ -1206,7 +1205,7 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
       </div>
     </section>
     <section id="sidebar">
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <ul>
 <li><a class="reference internal" href="#">Form Handling</a><ul>
@@ -1384,7 +1383,7 @@ To achieve this, we applied a pattern used widely across the qooxdoo framework, 
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.8.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
         </p>
       </div>
     </div>
