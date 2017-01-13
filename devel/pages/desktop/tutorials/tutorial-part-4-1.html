@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial Part 4.1: Form Handling &mdash; qooxdoo 5.1-c6843c1 documentation</title>
+    <title>Tutorial Part 4.1: Form Handling &mdash; qooxdoo 5.1-08f99de documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-c6843c1',
+        VERSION:     '5.1-08f99de',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-c6843c1 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-08f99de documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="Tutorial Part 4.2: Custom Widgets" href="tutorial-part-4-2.html" />
     <link rel="prev" title="Tutorial Part 3: Time for Communication" href="tutorial-part-3.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-c6843c1)</a>
+    <a href="../../../index.html">Manual (v5.1-08f99de)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -144,14 +144,14 @@
   <div class="section" id="tutorial-part-4-1-form-handling">
 <span id="pages-desktop-tutorials-tutorial-part-4-1-tutorial-part-4-1-form-handling"></span><h1>Tutorial Part 4.1: Form Handling<a class="headerlink" href="#tutorial-part-4-1-form-handling" title="Permalink to this headline">¶</a></h1>
 <p>In the previous steps of this tutorial, we <a class="reference internal" href="tutorial-part-1.html"><em>laid the groundwork</em></a> for a tweets client application, gave it a <a class="reference internal" href="tutorial-part-2.html"><em>neat UI</em></a> and implemented a <a class="reference internal" href="tutorial-part-3.html"><em>communication layer</em></a>. One thing this application still lacks is a nice way for users to input their identica user name and password in order to post a status update. Fortunately, qooxdoo comes with a <a class="reference internal" href="../ui_form_handling.html"><em>forms API</em></a> that takes the pain out of creating form elements and handling user input.</p>
-<p>Before we get started, make sure you're working on the version of the tweets tutorial application tagged with <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-c6843c1/component/tutorials/tweets/step3">&quot;Step 3&quot; in the GitHub repository</a>. This includes the posting part of the communication layer that we'll be using in this tutorial.</p>
+<p>Before we get started, make sure you're working on the version of the tweets tutorial application tagged with <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-08f99de/component/tutorials/tweets/step3">&quot;Step 3&quot; in the GitHub repository</a>. This includes the posting part of the communication layer that we'll be using in this tutorial.</p>
 <div class="section" id="the-plan">
 <span id="pages-desktop-tutorials-tutorial-part-4-1-the-plan"></span><h2>The plan<a class="headerlink" href="#the-plan" title="Permalink to this headline">¶</a></h2>
 <p>We want to create a new window with user name and password fields that pops up when the tweets application starts. The values will be used to retrieve the user's list of Tweets. Seems simple enough, so let's get right down to business.</p>
 </div>
 <div class="section" id="creating-the-login-window">
 <span id="pages-desktop-tutorials-tutorial-part-4-1-creating-the-login-window"></span><h2>Creating the login window<a class="headerlink" href="#creating-the-login-window" title="Permalink to this headline">¶</a></h2>
-<p>We start by creating a new class called tweets.LoginWindow that inherits from <a class="reference external" href="http://demo.qooxdoo.org/5.1-c6843c1/apiviewer/index.html#qx.ui.window.Window">qx.ui.window.Window</a>, similar to the MainWindow class from the first part of this tutorial:</p>
+<p>We start by creating a new class called tweets.LoginWindow that inherits from <a class="reference external" href="http://demo.qooxdoo.org/5.1-08f99de/apiviewer/index.html#qx.ui.window.Window">qx.ui.window.Window</a>, similar to the MainWindow class from the first part of this tutorial:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;tweets.LoginWindow&quot;</span><span class="p">,</span>
 <span class="p">{</span>
   <span class="nx">extend</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nb">window</span><span class="p">.</span><span class="nx">Window</span><span class="p">,</span>
@@ -189,7 +189,7 @@
 <span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">createModel</span><span class="p">();</span>
 </pre></div>
 </div>
-<p>Just like in the previous tutorial, we create a <a class="reference external" href="http://demo.qooxdoo.org/5.1-c6843c1/apiviewer/index.html#qx.data.controller.Form">controller</a> without a model. Then, we ask the controller to create a model from the form's elements. This model will be used to serialize the form data.</p>
+<p>Just like in the previous tutorial, we create a <a class="reference external" href="http://demo.qooxdoo.org/5.1-08f99de/apiviewer/index.html#qx.data.controller.Form">controller</a> without a model. Then, we ask the controller to create a model from the form's elements. This model will be used to serialize the form data.</p>
 <p>The form still needs a &quot;submit&quot; button, so we'll add one, plus a &quot;cancel&quot; button to close the window:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">loginbutton</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="s2">&quot;Login&quot;</span><span class="p">);</span>
 <span class="nx">form</span><span class="p">.</span><span class="nx">addButton</span><span class="p">(</span><span class="nx">loginbutton</span><span class="p">);</span>
@@ -201,12 +201,12 @@
 <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>That's all the elements we need, let's get them displayed. We'll let one of qooxdoo's built-in <a class="reference external" href="http://demo.qooxdoo.org/5.1-c6843c1/apiviewer/index.html#qx.ui.form.renderer">form renderer</a> classes worry about the form's layout:</p>
+<p>That's all the elements we need, let's get them displayed. We'll let one of qooxdoo's built-in <a class="reference external" href="http://demo.qooxdoo.org/5.1-08f99de/apiviewer/index.html#qx.ui.form.renderer">form renderer</a> classes worry about the form's layout:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">renderer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">Single</span><span class="p">(</span><span class="nx">form</span><span class="p">);</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">renderer</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>The renderer is a widget, so we can just add it to the window. In addition to the standard renderers, it's fairly simple to create a custom renderer by subclassing <a class="reference external" href="http://demo.qooxdoo.org/5.1-c6843c1/apiviewer/index.html#qx.ui.form.renderer.AbstractRenderer">qx.ui.form.renderer.AbstractRenderer</a>, though that's outside the scope of this tutorial.</p>
+<p>The renderer is a widget, so we can just add it to the window. In addition to the standard renderers, it's fairly simple to create a custom renderer by subclassing <a class="reference external" href="http://demo.qooxdoo.org/5.1-08f99de/apiviewer/index.html#qx.ui.form.renderer.AbstractRenderer">qx.ui.form.renderer.AbstractRenderer</a>, though that's outside the scope of this tutorial.</p>
 </div>
 <div class="section" id="accessing-the-form-values">
 <span id="pages-desktop-tutorials-tutorial-part-4-1-accessing-the-form-values"></span><h2>Accessing the form values<a class="headerlink" href="#accessing-the-form-values" title="Permalink to this headline">¶</a></h2>
@@ -251,7 +251,7 @@ In the main application class, we'll create an instance of tweets.LoginWindow, p
 <p>OK, time to run <tt class="docutils literal"><span class="pre">generate.py</span></tt> and load the application in a browser to make sure everything works like it's supposed to.</p>
 <p><img alt="Tweets client application with login window" src="../../../_images/step41.png" /></p>
 <p>Tweets client application with login window</p>
-<p>And that's it for the form handling chapter. As usual, you'll find the tutorial <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-c6843c1/component/tutorials/tweets/step4.1">code on GitHub</a>. Watch out for the next chapter, which will focus on developing your own custom widgets.</p>
+<p>And that's it for the form handling chapter. As usual, you'll find the tutorial <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-08f99de/component/tutorials/tweets/step4.1">code on GitHub</a>. Watch out for the next chapter, which will focus on developing your own custom widgets.</p>
 </div>
 </div>
 
@@ -333,22 +333,22 @@ In the main application class, we'll create an instance of tweets.LoginWindow, p
         <ul>
           <li>
             
-            <a href="/current/5.1-c6843c1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-08f99de/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-08f99de/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/website.html">Website</a>
+            <a href="/current/5.1-08f99de/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-08f99de/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-08f99de/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/server.html">Server</a>
+            <a href="/current/5.1-08f99de/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Generator Configuration - Under the Hood &mdash; qooxdoo 5.1-c6843c1 documentation</title>
+    <title>Generator Configuration - Under the Hood &mdash; qooxdoo 5.1-08f99de documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-c6843c1',
+        VERSION:     '5.1-08f99de',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-c6843c1 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-08f99de documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Tutorial: Basic Tool Chain Usage" href="../tutorial_basics.html" />
     <link rel="prev" title="Branching in Configuration Files" href="config_branching.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-c6843c1)</a>
+    <a href="../../../index.html">Manual (v5.1-08f99de)</a>
        &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
      &raquo;
@@ -150,7 +150,7 @@
 <p>If you create a new application with <em>create-application.py</em> you'll find a pre-configured <em>config.json</em> in the application directory that is ready to run. When you look into it, you'll find that it provides - besides a handful of macro definitions - only an <em>include</em> key to the SDK's central application configuration file, <em>application.json</em>.</p>
 <div class="section" id="application-json-and-base-json">
 <span id="pages-generator-config-background-application-json-and-base-json"></span><h3>application.json and base.json<a class="headerlink" href="#application-json-and-base-json" title="Permalink to this headline">¶</a></h3>
-<p>The configuration infrastructure of qooxdoo 5.1-c6843c1 is based on two main configuration files, both in the <em>tool/data/config</em> folder, <em>application.json</em> and <em>base.json</em>.</p>
+<p>The configuration infrastructure of qooxdoo 5.1-08f99de is based on two main configuration files, both in the <em>tool/data/config</em> folder, <em>application.json</em> and <em>base.json</em>.</p>
 <p><em>base.json</em> defines all the basic jobs that a normal application would want to deploy. Most significant are the <em>source</em> and <em>build</em> jobs that create the source and build version of an application, respectively. Other jobs contained here are concerned with cleaning up (<em>clean</em> and <em>distclean</em>), creating translation files (<em>translate</em>) or formatting the Javascript code (<em>pretty</em>). It is also basic in the sense that it doesn't rely on any other config file.</p>
 <p>But there is a distinct class of jobs missing from <em>base.json</em>, those that create helper applications for the current project and rely on additional libraries. Currently, this class is represented by the <em>api</em> and <em>test</em> jobs.</p>
 <p>This is where <em>application.json</em> comes into play. <em>application.json</em> creates a superset of the jobs from <em>base.json</em> by including it, so all of its jobs are available also through <em>application.json</em>. The added value of <em>application.json</em> is that it also integrates the core configuration files of the <em>Apiviewer</em> and the <em>Testrunner</em>. These applications export jobs that can be run in the context of other applications, in order to build customized Apiviewer and Testrunner applications, within the respective project.</p>
@@ -450,22 +450,22 @@
         <ul>
           <li>
             
-            <a href="/current/5.1-c6843c1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-08f99de/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-08f99de/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/website.html">Website</a>
+            <a href="/current/5.1-08f99de/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-08f99de/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-08f99de/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-c6843c1/pages/server.html">Server</a>
+            <a href="/current/5.1-08f99de/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
