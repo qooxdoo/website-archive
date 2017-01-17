@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Generator Script Optimizations &mdash; qooxdoo 5.1-bf40e72 documentation</title>
+    <title>Generator Script Optimizations &mdash; qooxdoo 5.1-079c1a1 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-bf40e72',
+        VERSION:     '5.1-079c1a1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-bf40e72 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-079c1a1 documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Adding Dependency Information Manually" href="dependencies_manually.html" />
     <link rel="prev" title="Generator Usage" href="generator_usage.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-bf40e72)</a>
+    <a href="../../../index.html">Manual (v5.1-079c1a1)</a>
        &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
      &raquo;
@@ -227,10 +227,10 @@ should add an appropriate hint in the this class:</p>
 <div class="section" id="variants">
 <span id="pages-tool-generator-generator-optimizations-variants"></span><h2>variants<a class="headerlink" href="#variants" title="Permalink to this headline">¶</a></h2>
 <p>With giving the <em>variants</em> optimization key, code will be removed that is not relevant for the current build. The decision about relevance is based on the settings given in the job configuration's <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-environment"><em>environment</em></a> key. Often, these settings will be queried in class code to select a certain code branch. If the value of the setting is known at compile time, the correct branch can be selected right away, and all other branches be removed. This allows to omit code that wouldn't be executed at run time anyway (&quot;dead code removal&quot;).</p>
-<p>The way environment settings are queried in class code is through certain APIs of the <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer#qx.core.Environment">qx.core.Environment</a> class. These API calls are searched for, and depending on context safe optimizations are applied. Here are the different calls and how they are treated.</p>
+<p>The way environment settings are queried in class code is through certain APIs of the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer#qx.core.Environment">qx.core.Environment</a> class. These API calls are searched for, and depending on context safe optimizations are applied. Here are the different calls and how they are treated.</p>
 <div class="section" id="get">
 <h3>.get()<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer#qx.core.Environment~get">qx.core.Environment.get()</a> references the environment key as its first parameter. If this parameter is a literal, i.e. a string, representing a known environment key, the call can be replaced by the environment key's value. This is applied in all situations, and saves the method call at run time:</p>
+<p><a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer#qx.core.Environment~get">qx.core.Environment.get()</a> references the environment key as its first parameter. If this parameter is a literal, i.e. a string, representing a known environment key, the call can be replaced by the environment key's value. This is applied in all situations, and saves the method call at run time:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;myapp.foo&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -262,7 +262,7 @@ should add an appropriate hint in the this class:</p>
 </div>
 <div class="section" id="select">
 <h3>.select()<a class="headerlink" href="#select" title="Permalink to this headline">¶</a></h3>
-<p>With <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer#qx.core.Environment~select">qx.core.Environment.select()</a> you can choose an expression from a set of expressions according to the current value of an environment key. The first parameter to the call is again the environment key, the second is a map that maps possible values to arbitrary expressions.</p>
+<p>With <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer#qx.core.Environment~select">qx.core.Environment.select()</a> you can choose an expression from a set of expressions according to the current value of an environment key. The first parameter to the call is again the environment key, the second is a map that maps possible values to arbitrary expressions.</p>
 <p>Again, if the key is a literal string and can be found in the environment settings known to the generator, the whole <em>qx.core.Environment.select()</em> expression is replaced by the corresponding expression from the map parameter.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;myapp.foo&quot;</span><span class="p">,</span> <span class="p">{</span>
   <span class="s2">&quot;bar&quot;</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">x</span><span class="o">+</span><span class="mi">3</span><span class="p">;},</span>
@@ -275,7 +275,7 @@ should add an appropriate hint in the this class:</p>
 </div>
 <div class="section" id="filter">
 <h3>.filter()<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
-<p>Similar to <tt class="docutils literal"><span class="pre">.select()</span></tt>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer#qx.core.Environment~filter">qx.core.Environment.filter()</a> takes a map. But this time the map keys are different environment keys (not possible values of a single key).</p>
+<p>Similar to <tt class="docutils literal"><span class="pre">.select()</span></tt>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer#qx.core.Environment~filter">qx.core.Environment.filter()</a> takes a map. But this time the map keys are different environment keys (not possible values of a single key).</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">include</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Environment</span><span class="p">.</span><span class="nx">filter</span><span class="p">({</span>
   <span class="s2">&quot;module.databinding&quot;</span> <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">MBinding</span><span class="p">,</span>
   <span class="s2">&quot;module.logger&quot;</span>      <span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">MLogging</span><span class="p">,</span>
@@ -384,22 +384,22 @@ should add an appropriate hint in the this class:</p>
         <ul>
           <li>
             
-            <a href="/current/5.1-bf40e72/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-079c1a1/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-079c1a1/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/website.html">Website</a>
+            <a href="/current/5.1-079c1a1/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-079c1a1/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-079c1a1/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/server.html">Server</a>
+            <a href="/current/5.1-079c1a1/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

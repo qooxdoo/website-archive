@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Migration from qx.Desktop 2.x &mdash; qooxdoo 5.1-bf40e72 documentation</title>
+    <title>Migration from qx.Desktop 2.x &mdash; qooxdoo 5.1-079c1a1 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-bf40e72',
+        VERSION:     '5.1-079c1a1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-bf40e72 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-079c1a1 documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="qx.Mobile" href="../../mobile.html" />
     <link rel="prev" title="Tutorial Part 4.5: Virtual List" href="../tutorials/tutorial-part-4-5.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-bf40e72)</a>
+    <a href="../../../index.html">Manual (v5.1-079c1a1)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -144,7 +144,7 @@
   <div class="section" id="migration-from-qx-desktop-2-x">
 <h1>Migration from qx.Desktop 2.x<a class="headerlink" href="#migration-from-qx-desktop-2-x" title="Permalink to this headline">¶</a></h1>
 <p>qx.Desktop 3.0 introduces some major improvements to the internals of qooxdoo's desktop widget system. This was made possible by taking advantage of  features in modern browsers while trying to implement graceful degradation in older browsers and discontinuing support for some legacy browsers.</p>
-<p>In order to improve UI performance and decrease memory load, every widget now consists of <strong>just one content element</strong>. Before, each desktop widget consisted of (at least) two DOM elements and their <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.html.Element">JavaScript object representations</a>: container and content. Usually widgets also had a decorator element. Now widgets no longer have decorator, container or protector elements.</p>
+<p>In order to improve UI performance and decrease memory load, every widget now consists of <strong>just one content element</strong>. Before, each desktop widget consisted of (at least) two DOM elements and their <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.html.Element">JavaScript object representations</a>: container and content. Usually widgets also had a decorator element. Now widgets no longer have decorator, container or protector elements.</p>
 <p>Most modifications were made &quot;under the hood&quot;, affecting mostly internal APIs. Therefore regular users should immediately benefit from those improvements without being required to adjust their application code. If custom themes and/or custom layouts are used however, some manual adjustments to existing applications based on qx.Desktop 2.x may be required. Additionally, some theming features no longer have fallback implementations for legacy browsers (see below for details).</p>
 <div class="section" id="legacy-browsers">
 <h2>Legacy Browsers<a class="headerlink" href="#legacy-browsers" title="Permalink to this headline">¶</a></h2>
@@ -206,11 +206,11 @@
 <h3>Decoration Theme<a class="headerlink" href="#decoration-theme" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>The <tt class="docutils literal"><span class="pre">inset</span></tt> properties of the decorators have been set to read-only. Any inset definitions in your decoration theme or application code should be removed and replaced with the corresponding <tt class="docutils literal"><span class="pre">padding</span></tt> and/or <tt class="docutils literal"><span class="pre">margin</span></tt> in the appearance theme.</li>
-<li>The <tt class="docutils literal"><span class="pre">decorator</span></tt> theme key will be ignored. All decorations now use <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.Decorator">a common class</a>, which supports all decoration features. You can simply remove any <tt class="docutils literal"><span class="pre">decorator</span></tt> keys from your custom theme.</li>
-<li>The decorators <tt class="docutils literal"><span class="pre">qx.ui.decoration.Grid</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.GridDiv</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.BoxDiv</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.AbstractBox</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.HBox</span></tt>, and <tt class="docutils literal"><span class="pre">qx.ui.decoration.VBox</span></tt> have been removed. These classes were responsible for providing image-based fallback implementations for border-image and background-gradient decorators, meaning <strong>border-image decorations are no longer available in Internet Explorer 8 - 10</strong>. The properties of <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MBorderImage">MBorderImage</a> provide these features for most modern browsers. Change every occurrence of the <tt class="docutils literal"><span class="pre">baseImage</span></tt> key to its new equivalent, <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MBorderImage~borderImage!property">borderImage</a>.</li>
-<li>The <tt class="docutils literal"><span class="pre">qx.ui.decoration.Beveled</span></tt> and <tt class="docutils literal"><span class="pre">qx.ui.decoration.Uniform</span></tt> decorators are deprecated. Replace them with <tt class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></tt> and use the <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MSingleBorder~width!property">width</a>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MSingleBorder~style!property">style</a> and <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MSingleBorder~color!property">color</a> properties.</li>
-<li>The decorator <tt class="docutils literal"><span class="pre">qx.ui.decoration.Double</span></tt> is also deprecated. Replace it with <tt class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></tt> and use the properties of <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.MDoubleBorder">MDoubleBorder</a>.</li>
-<li><tt class="docutils literal"><span class="pre">qx.ui.decoration.DynamicDecorator</span></tt> has been deprecated. Replace it with <a class="reference external" href="http://demo.qooxdoo.org/5.1-bf40e72/apiviewer/#qx.ui.decoration.Decorator">decoration.Decorator</a>.</li>
+<li>The <tt class="docutils literal"><span class="pre">decorator</span></tt> theme key will be ignored. All decorations now use <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.Decorator">a common class</a>, which supports all decoration features. You can simply remove any <tt class="docutils literal"><span class="pre">decorator</span></tt> keys from your custom theme.</li>
+<li>The decorators <tt class="docutils literal"><span class="pre">qx.ui.decoration.Grid</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.GridDiv</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.BoxDiv</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.AbstractBox</span></tt>, <tt class="docutils literal"><span class="pre">qx.ui.decoration.HBox</span></tt>, and <tt class="docutils literal"><span class="pre">qx.ui.decoration.VBox</span></tt> have been removed. These classes were responsible for providing image-based fallback implementations for border-image and background-gradient decorators, meaning <strong>border-image decorations are no longer available in Internet Explorer 8 - 10</strong>. The properties of <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MBorderImage">MBorderImage</a> provide these features for most modern browsers. Change every occurrence of the <tt class="docutils literal"><span class="pre">baseImage</span></tt> key to its new equivalent, <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MBorderImage~borderImage!property">borderImage</a>.</li>
+<li>The <tt class="docutils literal"><span class="pre">qx.ui.decoration.Beveled</span></tt> and <tt class="docutils literal"><span class="pre">qx.ui.decoration.Uniform</span></tt> decorators are deprecated. Replace them with <tt class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></tt> and use the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MSingleBorder~width!property">width</a>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MSingleBorder~style!property">style</a> and <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MSingleBorder~color!property">color</a> properties.</li>
+<li>The decorator <tt class="docutils literal"><span class="pre">qx.ui.decoration.Double</span></tt> is also deprecated. Replace it with <tt class="docutils literal"><span class="pre">qx.ui.decoration.Decorator</span></tt> and use the properties of <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.MDoubleBorder">MDoubleBorder</a>.</li>
+<li><tt class="docutils literal"><span class="pre">qx.ui.decoration.DynamicDecorator</span></tt> has been deprecated. Replace it with <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.decoration.Decorator">decoration.Decorator</a>.</li>
 </ul>
 </div>
 <div class="section" id="custom-decorators">
@@ -353,22 +353,22 @@
         <ul>
           <li>
             
-            <a href="/current/5.1-bf40e72/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-079c1a1/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-079c1a1/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/website.html">Website</a>
+            <a href="/current/5.1-079c1a1/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-079c1a1/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-079c1a1/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-bf40e72/pages/server.html">Server</a>
+            <a href="/current/5.1-079c1a1/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
