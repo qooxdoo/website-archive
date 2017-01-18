@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Test Runner &mdash; qooxdoo 5.1-079c1a1 documentation</title>
+    <title>Test Runner &mdash; qooxdoo 5.1-49af188 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '5.1-079c1a1',
+        VERSION:     '5.1-49af188',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-079c1a1 documentation" href="../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-49af188 documentation" href="../../index.html" />
     <link rel="up" title="Development" href="../development.html" />
     <link rel="next" title="Code Organisation Introduction" href="code_organisation.html" />
     <link rel="prev" title="Unit Testing" href="unit_testing.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../index.html">Manual (v5.1-079c1a1)</a>
+    <a href="../../index.html">Manual (v5.1-49af188)</a>
        &raquo;
       <a href="../development.html" accesskey="U">Development</a>
      &raquo;
@@ -151,7 +151,7 @@
 <img alt="../../_images/testrunner_widget.png" src="../../_images/testrunner_widget.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">See the Test Runner in action in the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/testrunner/">online demo</a>.</p>
+<p class="last">See the Test Runner in action in the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/testrunner/">online demo</a>.</p>
 </div>
 <p>The Test Runner framework can also be deployed for <em>your own</em> application. It provides a GUI, a layer of infrastructure and a certain interface for arbitrary test classes. So now you can write your own test classes and take advantage of the Test Runner environment.</p>
 <div class="section" id="how-to-deploy-test-runner-for-your-own-development">
@@ -169,7 +169,7 @@
 <li>To model your test method behaviour, you can use the methods inherited from <tt class="docutils literal"><span class="pre">qx.dev.unit.TestCase</span></tt> which encapsulate exceptions in the form of assertions:<ul>
 <li><tt class="docutils literal"><span class="pre">assert</span></tt>, <tt class="docutils literal"><span class="pre">assertFalse</span></tt>, <tt class="docutils literal"><span class="pre">assertEquals</span></tt>, <tt class="docutils literal"><span class="pre">assertNumber</span></tt>, ... - These functions take values which are compared (either among each other or to some predefined value) and a message string, and raise an exception if the comparison fails.</li>
 <li>A similar list of methods of the form <tt class="docutils literal"><span class="pre">assert*DebugOn</span></tt> is available, which are only evaluated if the debug environment setting <tt class="docutils literal"><span class="pre">qx.debug</span></tt> is on (see <a class="reference internal" href="../core/environment.html"><em>Environment</em></a>).</li>
-<li>See the documentation for the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.TestCase">qx.dev.unit.TestCase</a> class for more information on the available assertions.</li>
+<li>See the documentation for the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.TestCase">qx.dev.unit.TestCase</a> class for more information on the available assertions.</li>
 </ul>
 </li>
 </ul>
@@ -214,7 +214,7 @@ Requirements are defined for individual tests; if one or more aren't satisfied, 
 </div>
 <div class="section" id="using-requirements">
 <h4>Using Requirements<a class="headerlink" href="#using-requirements" title="Permalink to this headline">¶</a></h4>
-<p>To make use of the requirements feature, test classes must include either the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MRequirementsBasic">MRequirementsBasic</a> mixin (for tests running in non-browser environments such as node.js or Rhino) or the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MRequirements">MRequirements</a> mixin which provides additional requirement checks for browser environments.
+<p>To make use of the requirements feature, test classes must include either the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MRequirementsBasic">MRequirementsBasic</a> mixin (for tests running in non-browser environments such as node.js or Rhino) or the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MRequirements">MRequirements</a> mixin which provides additional requirement checks for browser environments.
 The mixins provide a <tt class="docutils literal"><span class="pre">require</span></tt> method that takes an array of strings: The requirement IDs. This method is either called from the <tt class="docutils literal"><span class="pre">setUp</span></tt> method or from a test function <strong>before</strong> the actual logic of the test, e.g.:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">testBackendRequest</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
 <span class="p">{</span>
@@ -223,8 +223,8 @@ The mixins provide a <tt class="docutils literal"><span class="pre">require</spa
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><tt class="docutils literal"><span class="pre">require</span></tt> then searches the current test instance for a method that verifies the listed requirements: The naming convention is &quot;has&quot; + the requirement ID with the first letter capitalized, e.g. <tt class="docutils literal"><span class="pre">hasBackend</span></tt>. This method is the called with the requirement ID as the only parameter. If it returns <tt class="docutils literal"><span class="pre">true</span></tt>, the test code will be executed. Otherwise a <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.RequirementError">RequirementError</a> is thrown. The Test Runner will catch these and mark the test as &quot;skipped&quot; in the results list. Any test code after the <tt class="docutils literal"><span class="pre">require</span></tt> call will not be executed.</p>
-<p>If no &quot;has&quot; method for a given feature is found, <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.core.Environment">qx.core.Environment</a> will be checked for a key that matches the feature name. This way, any Environment key that has a boolean value can be used as a test requirement, e.g.:</p>
+<p><tt class="docutils literal"><span class="pre">require</span></tt> then searches the current test instance for a method that verifies the listed requirements: The naming convention is &quot;has&quot; + the requirement ID with the first letter capitalized, e.g. <tt class="docutils literal"><span class="pre">hasBackend</span></tt>. This method is the called with the requirement ID as the only parameter. If it returns <tt class="docutils literal"><span class="pre">true</span></tt>, the test code will be executed. Otherwise a <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.RequirementError">RequirementError</a> is thrown. The Test Runner will catch these and mark the test as &quot;skipped&quot; in the results list. Any test code after the <tt class="docutils literal"><span class="pre">require</span></tt> call will not be executed.</p>
+<p>If no &quot;has&quot; method for a given feature is found, <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.core.Environment">qx.core.Environment</a> will be checked for a key that matches the feature name. This way, any Environment key that has a boolean value can be used as a test requirement, e.g.:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="k">this</span><span class="p">.</span><span class="nx">require</span><span class="p">([</span><span class="s2">&quot;event.touch&quot;</span><span class="p">,</span> <span class="s2">&quot;css.textoverflow&quot;</span><span class="p">]);</span>
 </pre></div>
 </div>
@@ -233,7 +233,7 @@ The mixins provide a <tt class="docutils literal"><span class="pre">require</spa
 <div class="section" id="spies-stubs-and-mocks">
 <span id="pages-frame-apps-testrunner-spies-stubs-mocks"></span><h4>Spies, stubs and mocks<a class="headerlink" href="#spies-stubs-and-mocks" title="Permalink to this headline">¶</a></h4>
 <p>Spies are test functions that records details for all its calls. Stubs are spies with pre-programmed behavior. Mocks are fake methods are like spies and stubs, but also come with pre-programmed expectations. Generally speaking, spies, stubs and mocks are fakes that allow fine-grained unit testing. They constitute important tools for test driven development.</p>
-<p>In order to use fakes in your tests, test classes must include the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">MMock</a> mixin. Here are some example tests that demonstrate the usage of spies and stubs.</p>
+<p>In order to use fakes in your tests, test classes must include the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">MMock</a> mixin. Here are some example tests that demonstrate the usage of spies and stubs.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;test: spy&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">spy</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">spy</span><span class="p">();</span>
   <span class="nx">spy</span><span class="p">();</span>
@@ -247,7 +247,7 @@ The mixins provide a <tt class="docutils literal"><span class="pre">require</spa
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">MMock</a> also provides custom assertions tailored to work with fakes. Whenever possible, custom assertions should be used instead of lower level assertions because they provide more detailed error messages.</p>
+<p><a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">MMock</a> also provides custom assertions tailored to work with fakes. Whenever possible, custom assertions should be used instead of lower level assertions because they provide more detailed error messages.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;test: assert called&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">spy</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">sinon</span><span class="p">.</span><span class="nx">spy</span><span class="p">();</span>
 
@@ -279,11 +279,11 @@ The mixins provide a <tt class="docutils literal"><span class="pre">require</spa
 <span class="p">},</span>
 </pre></div>
 </div>
-<p>For more details, please refer to the API documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">MMock</a>. Additional examples can be found in <tt class="docutils literal"><span class="pre">qx.test.dev.unit.Sinon</span></tt>.</p>
+<p>For more details, please refer to the API documentation of <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">MMock</a>. Additional examples can be found in <tt class="docutils literal"><span class="pre">qx.test.dev.unit.Sinon</span></tt>.</p>
 <p>MMock is based on <a class="reference external" href="http://sinonjs.org/">Sinon.JS</a>. The original <tt class="docutils literal"><span class="pre">sinon</span></tt> object can be retrieved by calling <tt class="docutils literal"><span class="pre">qx.dev.unit.Sinon.getSinon()</span></tt>.</p>
 <div class="section" id="sandboxing">
 <span id="pages-frame-apps-testrunner-sandboxing"></span><h5>Sandboxing<a class="headerlink" href="#sandboxing" title="Permalink to this headline">¶</a></h5>
-<p>Stubs can override original behavior. To prevent tests from leaking, it is recommended to restore fakes on tear down. Every fake (including stubs) created by <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">MMock</a> is contained within a sandbox. Here is how to restore all fakes recorded in the sandbox.</p>
+<p>Stubs can override original behavior. To prevent tests from leaking, it is recommended to restore fakes on tear down. Every fake (including stubs) created by <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">MMock</a> is contained within a sandbox. Here is how to restore all fakes recorded in the sandbox.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">tearDown</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">getSandbox</span><span class="p">().</span><span class="nx">restore</span><span class="p">();</span>
 <span class="p">}</span>
@@ -407,7 +407,7 @@ Views are selected by overriding the <tt class="docutils literal"><span class="p
 <div class="section" id="portable-test-runner">
 <span id="pages-frame-apps-testrunner-portable-test-runner"></span><h2>Portable Test Runner<a class="headerlink" href="#portable-test-runner" title="Permalink to this headline">¶</a></h2>
 <p>A stand-alone version of the qooxdoo's unit testing sub-system, requiring <strong>no compile step</strong> and with <strong>no external dependencies</strong>. It comes in the form of a single .js file that can simply be added to an HTML page along with the code to be tested and unit test definitions (as inline JavaScript).</p>
-<p>Its main purpose is to provide a comprehensive unit testing framework including <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.core.Assert">Assertions</a>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">Sinon</a>, <a class="reference internal" href="#pages-frame-apps-testrunner-requirements"><em>Requirements</em></a> and a Test Runner GUI to developers working on non-qooxdoo JavaScript applications.</p>
+<p>Its main purpose is to provide a comprehensive unit testing framework including <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.core.Assert">Assertions</a>, <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">Sinon</a>, <a class="reference internal" href="#pages-frame-apps-testrunner-requirements"><em>Requirements</em></a> and a Test Runner GUI to developers working on non-qooxdoo JavaScript applications.</p>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <p>The fictional non-qooxdoo JavaScript library <tt class="docutils literal"><span class="pre">foo.js</span></tt> provides a <tt class="docutils literal"><span class="pre">Bar</span></tt> class, with a constructor that takes a string parameter. This test checks if the <tt class="docutils literal"><span class="pre">getName</span></tt> method returns that string:</p>
@@ -438,7 +438,7 @@ Views are selected by overriding the <tt class="docutils literal"><span class="p
 <span class="nt">&lt;/html&gt;</span>
 </pre></div>
 </div>
-<p>The important thing to note here is the map argument for <tt class="docutils literal"><span class="pre">testrunner.define</span></tt>: It's equivalent to the <tt class="docutils literal"><span class="pre">members</span></tt> section of a class extending <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.TestCase">qx.dev.unit.TestCase</a> and including <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MMock">qx.dev.unit.MMock</a> and <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.dev.unit.MRequirements">qx.dev.unit.MRequirements</a>, allowing full access to these APIs. Multiple test classes can be defined by additional calls to <tt class="docutils literal"><span class="pre">testrunner.define</span></tt>.</p>
+<p>The important thing to note here is the map argument for <tt class="docutils literal"><span class="pre">testrunner.define</span></tt>: It's equivalent to the <tt class="docutils literal"><span class="pre">members</span></tt> section of a class extending <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.TestCase">qx.dev.unit.TestCase</a> and including <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MMock">qx.dev.unit.MMock</a> and <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.dev.unit.MRequirements">qx.dev.unit.MRequirements</a>, allowing full access to these APIs. Multiple test classes can be defined by additional calls to <tt class="docutils literal"><span class="pre">testrunner.define</span></tt>.</p>
 <p>The <tt class="docutils literal"><span class="pre">classname</span></tt> key is optional. If present, its value will be used as the name of the test class, making it easier to create logical groups of tests. Otherwise, the generated classes will be named <tt class="docutils literal"><span class="pre">TestN</span></tt> where N is the running count of <tt class="docutils literal"><span class="pre">testrunner.define</span></tt> calls. All test classes will be grouped under the top-level name space <tt class="docutils literal"><span class="pre">test</span></tt>.</p>
 <p>The Portable Test Runner can be downloaded from the Demo section of the qooxdoo website, or generated from within the SDK:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nb">cd </span>component/testrunner
@@ -598,22 +598,22 @@ Fortunately, there is a much simple solution: <a class="reference external" href
         <ul>
           <li>
             
-            <a href="/current/5.1-079c1a1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-49af188/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-49af188/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/website.html">Website</a>
+            <a href="/current/5.1-49af188/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-49af188/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-49af188/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/server.html">Server</a>
+            <a href="/current/5.1-49af188/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

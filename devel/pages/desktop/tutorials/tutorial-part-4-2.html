@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial Part 4.2: Custom Widgets &mdash; qooxdoo 5.1-079c1a1 documentation</title>
+    <title>Tutorial Part 4.2: Custom Widgets &mdash; qooxdoo 5.1-49af188 documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '5.1-079c1a1',
+        VERSION:     '5.1-49af188',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-079c1a1 documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 5.1-49af188 documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="Tutorial Part 4.2.1: Basic Theming" href="tutorial-part-4-2-1.html" />
     <link rel="prev" title="Tutorial Part 4.1: Form Handling" href="tutorial-part-4-1.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v5.1-079c1a1)</a>
+    <a href="../../../index.html">Manual (v5.1-49af188)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -146,10 +146,10 @@
 <p>In this tutorial we will deal with how to create a custom widget for our tweets application. It is necessary that you finished the tutorials part 1 through part 3 to work with this tutorial, but previous knowledge from tutorial 4.1 is not needed.</p>
 <p>Do you remember the mockup from tutorial part 1?</p>
 <p><img alt="Mockup" src="../../../_images/identicamockup1.png" /></p>
-<p>You can see that one tweet consists of a photo, a text and a creation date, but at the moment the tweets application doesn't show the creation date of a tweet.  This is because we use the default <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.form.ListItem">ListItem</a> to show a tweet and a ListItem can only show an image and/or label. To achieve our goal, we have to create a custom widget which we can use instead of the ListItem.</p>
+<p>You can see that one tweet consists of a photo, a text and a creation date, but at the moment the tweets application doesn't show the creation date of a tweet.  This is because we use the default <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.ui.form.ListItem">ListItem</a> to show a tweet and a ListItem can only show an image and/or label. To achieve our goal, we have to create a custom widget which we can use instead of the ListItem.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The code in this tutorial should also work when you haven't completed the 4.1 tutorial because it doesn't depend on the code changes from tutorial 4.1. But if you have any problems to run the tutorial, you can also checkout the code from tutorial 4.1 on <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-079c1a1/component/tutorials/tweets/step4.1">github</a>.</p>
+<p class="last">The code in this tutorial should also work when you haven't completed the 4.1 tutorial because it doesn't depend on the code changes from tutorial 4.1. But if you have any problems to run the tutorial, you can also checkout the code from tutorial 4.1 on <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-49af188/component/tutorials/tweets/step4.1">github</a>.</p>
 </div>
 <div class="section" id="the-plan">
 <span id="pages-desktop-tutorials-tutorial-part-4-2-the-plan"></span><h2>The plan<a class="headerlink" href="#the-plan" title="Permalink to this headline">¶</a></h2>
@@ -169,7 +169,7 @@
 <span class="p">});</span>
 </pre></div>
 </div>
-<p>The attentive reader noticed that we use the <tt class="docutils literal"><span class="pre">include</span></tt> key for the first time. <tt class="docutils literal"><span class="pre">include</span></tt> is used to include a <a class="reference internal" href="../../core/mixins.html"><em>mixin</em></a> in a class. This is necessary in our case to support Data Binding. Our tweets application uses it and therefore it is expected that the new widget implements the <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.form.IModel">qx.ui.form.IModel</a> interface. Otherwise the widget can't be used with Data Binding. But fortunately the mixin <tt class="docutils literal"><span class="pre">qx.ui.form.MModelProperty</span></tt> already implements it, so we can reuse the implementation.</p>
+<p>The attentive reader noticed that we use the <tt class="docutils literal"><span class="pre">include</span></tt> key for the first time. <tt class="docutils literal"><span class="pre">include</span></tt> is used to include a <a class="reference internal" href="../../core/mixins.html"><em>mixin</em></a> in a class. This is necessary in our case to support Data Binding. Our tweets application uses it and therefore it is expected that the new widget implements the <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.ui.form.IModel">qx.ui.form.IModel</a> interface. Otherwise the widget can't be used with Data Binding. But fortunately the mixin <tt class="docutils literal"><span class="pre">qx.ui.form.MModelProperty</span></tt> already implements it, so we can reuse the implementation.</p>
 </div>
 <div class="section" id="define-the-needed-properties">
 <span id="pages-desktop-tutorials-tutorial-part-4-2-define-the-needed-properties"></span><h2>Define the needed properties<a class="headerlink" href="#define-the-needed-properties" title="Permalink to this headline">¶</a></h2>
@@ -217,7 +217,7 @@
 <div class="section" id="using-child-control">
 <span id="pages-desktop-tutorials-tutorial-part-4-2-using-child-control"></span><h2>Using Child Control<a class="headerlink" href="#using-child-control" title="Permalink to this headline">¶</a></h2>
 <p>qooxdoo has a special system to realize combined widgets like in our case. This system is called child controls and you can find a detailed documentation in our <a class="reference internal" href="../ui_develop.html"><em>manual</em></a>.</p>
-<p>Okay, back to our problem. To achieve the requirements we need an <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.basic.Image">Image</a> for the photo, a Label for the post and another <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.basic.Label">Label</a> for the creation time. So three widgets, also called sub widgets, are needed for our custom widget. And last but not least the familiar <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.ui.layout.Grid">Grid</a> layout for layouting, but that's not created in the child control implementation. We just need to keep it in mind when adding the child control with <tt class="docutils literal"><span class="pre">_add</span></tt>.</p>
+<p>Okay, back to our problem. To achieve the requirements we need an <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.ui.basic.Image">Image</a> for the photo, a Label for the post and another <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.ui.basic.Label">Label</a> for the creation time. So three widgets, also called sub widgets, are needed for our custom widget. And last but not least the familiar <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.ui.layout.Grid">Grid</a> layout for layouting, but that's not created in the child control implementation. We just need to keep it in mind when adding the child control with <tt class="docutils literal"><span class="pre">_add</span></tt>.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">members</span> <span class="o">:</span>
 <span class="p">{</span>
   <span class="c1">// overridden</span>
@@ -271,7 +271,7 @@
 <span class="p">);</span>
 </pre></div>
 </div>
-<p>The property for the date saves only a date object and our requirement from the mockup describes a spacial format and a simple <tt class="docutils literal"><span class="pre">toString</span></tt> usage is not enough. Therefore we need a special transformation which we can achieve by using <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.util.format.DateFormat">DateFormat</a>.</p>
+<p>The property for the date saves only a date object and our requirement from the mockup describes a spacial format and a simple <tt class="docutils literal"><span class="pre">toString</span></tt> usage is not enough. Therefore we need a special transformation which we can achieve by using <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.util.format.DateFormat">DateFormat</a>.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// initialize the layout and allow wrap for &quot;post&quot;</span>
 <span class="kd">var</span> <span class="nx">layout</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">layout</span><span class="p">.</span><span class="nx">Grid</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 <span class="nx">layout</span><span class="p">.</span><span class="nx">setColumnFlex</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
@@ -379,7 +379,7 @@
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">controller</span><span class="p">.</span><span class="nx">bindProperty</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="s2">&quot;post&quot;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">id</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Let us have a look at the above example. The <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.data.controller.List~bindProperty">bindProperty</a> method is responsible for the binding between model and widget. The first parameter is the path from the model, the second is the name of the property in the widget, the third parameter is an <a class="reference external" href="http://demo.qooxdoo.org/5.1-079c1a1/apiviewer/#qx.data.SingleValueBinding~bind">options map</a> to do e. g. a conversion, the fourth parameter is the widget and the last is the index.</p>
+<p>Let us have a look at the above example. The <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.data.controller.List~bindProperty">bindProperty</a> method is responsible for the binding between model and widget. The first parameter is the path from the model, the second is the name of the property in the widget, the third parameter is an <a class="reference external" href="http://demo.qooxdoo.org/5.1-49af188/apiviewer/#qx.data.SingleValueBinding~bind">options map</a> to do e. g. a conversion, the fourth parameter is the widget and the last is the index.</p>
 <p>In our case the photo and the post need no conversion because the source data and target data are of the same type. But the creation time needs a conversion because the model contains a String with the UTC time while the widget expects a date object. So we have to convert the data:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">converter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
@@ -389,7 +389,7 @@
 <p>The converter method creates a date object from the given number (time in milliseconds). The <tt class="docutils literal"><span class="pre">configureItem</span></tt> method should be known from <a class="reference internal" href="tutorial-part-3.html"><em>tutorial part 3</em></a>, there are only some improvements to keep the same behavior as before.</p>
 <p>Great, now we've got it! Run <tt class="docutils literal"><span class="pre">generate.py</span></tt> to create the application.</p>
 <p><img alt="Step 4-2" src="../../../_images/step42.png" /></p>
-<p>Again, if you want to take a <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-079c1a1/component/tutorials/tweets/step4.2">look at the code</a>, fork the project on github.</p>
+<p>Again, if you want to take a <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_5_1-49af188/component/tutorials/tweets/step4.2">look at the code</a>, fork the project on github.</p>
 </div>
 </div>
 
@@ -474,22 +474,22 @@
         <ul>
           <li>
             
-            <a href="/current/5.1-079c1a1/pages/introduction/about.html">About</a>
+            <a href="/current/5.1-49af188/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1-49af188/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/website.html">Website</a>
+            <a href="/current/5.1-49af188/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1-49af188/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1-49af188/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-079c1a1/pages/server.html">Server</a>
+            <a href="/current/5.1-49af188/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
