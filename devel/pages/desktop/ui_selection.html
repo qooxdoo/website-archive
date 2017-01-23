@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Selection Handling &mdash; qooxdoo 5.1-7145f70 documentation</title>
+    <title>Selection Handling &mdash; qooxdoo 5.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '5.1-7145f70',
+        VERSION:     '5.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 5.1-7145f70 documentation" href="../../index.html" />
+    <link rel="top" title="qooxdoo 5.1 documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Drag &amp; Drop" href="ui_dragdrop.html" />
     <link rel="prev" title="Resources" href="ui_resources.html" />
@@ -132,7 +132,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../index.html">Manual (v5.1-7145f70)</a>
+    <a href="../../index.html">Manual (v5.1)</a>
        &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -147,15 +147,15 @@
 <p>Here is a list of widgets which support single and/or multi selection:</p>
 <ul class="simple">
 <li>Multi Selection:<ul>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~Tree.html">Tree</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.tree.Tree">(API)</a></li>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~List.html">List</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.form.List">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~Tree.html">Tree</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.tree.Tree">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~List.html">List</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.form.List">(API)</a></li>
 </ul>
 </li>
 <li>Single Selection:<ul>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~SelectBox.html">SelectBox</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.form.SelectBox">(API)</a></li>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~RadioButton.html">RadioGroup</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.form.RadioGroup">(API)</a></li>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~TabView.html">TabView</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.tabview.TabView">(API)</a></li>
-<li><a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/demobrowser/#widget~StackContainer.html">Stack</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.container.Stack">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~SelectBox.html">SelectBox</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.form.SelectBox">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~RadioButton.html">RadioGroup</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.form.RadioGroup">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~TabView.html">TabView</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.tabview.TabView">(API)</a></li>
+<li><a class="reference external" href="http://demo.qooxdoo.org/5.1/demobrowser/#widget~StackContainer.html">Stack</a> <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.container.Stack">(API)</a></li>
 </ul>
 </li>
 </ul>
@@ -183,13 +183,13 @@
 </div>
 <div class="section" id="single-selection">
 <span id="pages-ui-selection-single-selection-methods"></span><h2>Single Selection<a class="headerlink" href="#single-selection" title="Permalink to this headline">¶</a></h2>
-<p>The listed single selection widgets above implement the <tt class="docutils literal"><span class="pre">ISingleSelection</span></tt>. To implement the behavior they use the <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.core.MSingleSelectionHandling">MSingleSelectionHandling</a> mixin. This mixin offers the methods for selection handling and also initializes the manager for selection management.</p>
+<p>The listed single selection widgets above implement the <tt class="docutils literal"><span class="pre">ISingleSelection</span></tt>. To implement the behavior they use the <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.core.MSingleSelectionHandling">MSingleSelectionHandling</a> mixin. This mixin offers the methods for selection handling and also initializes the manager for selection management.</p>
 <p>The widget itself configures the mixin to allowing an empty selection or not. Dependent on the configuration, <tt class="docutils literal"><span class="pre">resetSelection</span></tt> clears the current selection (empty array) or selects the first selectable element.</p>
 <p>User interactions (pointer and keyboard) are managed from the widget, which only calls the selection methods if the user interaction has an effect on the selection. So the selection management and the user interaction handling are separated. This is one thing that has changed with the new selection API.</p>
 </div>
 <div class="section" id="multi-selection">
 <span id="pages-ui-selection-multi-selection-methods"></span><h2>Multi Selection<a class="headerlink" href="#multi-selection" title="Permalink to this headline">¶</a></h2>
-<p>The multi selection implementation has hardly changed at all. The widgets supporting multi selection, also listed above, have already used a mixin called <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.core.MSelectionHandling">MSelectionHandling</a> for selection handling. Like the mixin for the single selection, it offers the selection methods and initializes the selection manager. The mixin has only been changed to conform to the new <tt class="docutils literal"><span class="pre">IMultiSelection</span></tt> interface.</p>
+<p>The multi selection implementation has hardly changed at all. The widgets supporting multi selection, also listed above, have already used a mixin called <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.core.MSelectionHandling">MSelectionHandling</a> for selection handling. Like the mixin for the single selection, it offers the selection methods and initializes the selection manager. The mixin has only been changed to conform to the new <tt class="docutils literal"><span class="pre">IMultiSelection</span></tt> interface.</p>
 <div class="section" id="selection-modes">
 <span id="pages-ui-selection-selection-modes"></span><h3>Selection Modes<a class="headerlink" href="#selection-modes" title="Permalink to this headline">¶</a></h3>
 <p>Due to the small changes the configuration for the selection mode hasn't changed. The widgets also support the property <tt class="docutils literal"><span class="pre">selectionMode</span></tt> with these different modes:</p>
@@ -223,7 +223,7 @@
 <span id="pages-ui-selection-how-to-use-the-selection-api"></span><h2>How to use the selection API<a class="headerlink" href="#how-to-use-the-selection-api" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="pages-ui-selection-single-selection">
 <span id="id1"></span><h3>Single Selection<a class="headerlink" href="#pages-ui-selection-single-selection" title="Permalink to this headline">¶</a></h3>
-<p>The example below shows how to use the single selection API. This example uses the <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.form.SelectBox">SelectBox</a> widget:</p>
+<p>The example below shows how to use the single selection API. This example uses the <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.form.SelectBox">SelectBox</a> widget:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// creates the SelectBox</span>
 <span class="kd">var</span> <span class="nx">selectBox</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">SelectBox</span><span class="p">();</span>
 <span class="k">this</span><span class="p">.</span><span class="nx">getRoot</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">selectBox</span><span class="p">,</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mi">20</span><span class="p">});</span>
@@ -257,7 +257,7 @@
 </div>
 <div class="section" id="pages-ui-selection-multi-selection">
 <span id="id2"></span><h3>Multi Selection<a class="headerlink" href="#pages-ui-selection-multi-selection" title="Permalink to this headline">¶</a></h3>
-<p>The next example uses the <a class="reference external" href="http://demo.qooxdoo.org/5.1-7145f70/apiviewer/#qx.ui.form.List">List</a> widget:</p>
+<p>The next example uses the <a class="reference external" href="http://demo.qooxdoo.org/5.1/apiviewer/#qx.ui.form.List">List</a> widget:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="c1">// creates the List and sets the selection mode</span>
 <span class="kd">var</span> <span class="nx">list</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">ui</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">List</span><span class="p">();</span>
 <span class="nx">list</span><span class="p">.</span><span class="nx">setSelectionMode</span><span class="p">(</span><span class="s2">&quot;multi&quot;</span><span class="p">);</span>
@@ -379,22 +379,22 @@
         <ul>
           <li>
             
-            <a href="/current/5.1-7145f70/pages/introduction/about.html">About</a>
+            <a href="/current/5.1/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/5.1-7145f70/pages/getting_started.html">Getting Started</a>
+            <a href="/current/5.1/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/5.1-7145f70/pages/website.html">Website</a>
+            <a href="/current/5.1/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/5.1-7145f70/pages/mobile.html">Mobile</a>
+            <a href="/current/5.1/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/5.1-7145f70/pages/desktop.html">Desktop</a>
+            <a href="/current/5.1/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/5.1-7145f70/pages/server.html">Server</a>
+            <a href="/current/5.1/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
