@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Maps.3a635055893f.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Maps.38fac42644e2.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8822,20 +8822,18 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="mshtml",b="engine.name",c="Google Maps",d="<b>",e="center_changed",f="Karlsruhe",g="Yahoo Maps",h="appear",i="</b>",j="Could not create Google map!<br/>",k="Could not create Yahoo map!<br/>",l="demobrowser.demo.showcase.Maps",m="main",n='zIndex',o="IE 10 is not yet supported by Yahoo maps.",p="browser.documentmode";qx.Class.define(l,{extend:qx.application.Standalone,members:{main:function(){qx.application.Standalone.prototype.main.call(this);var q=this._createYahooMap();var r=this._createGoogleMap();this.getRoot().add(this._createMapContainer(g,q),{left:20,top:20});this.getRoot().add(this._createMapContainer(c,r),{left:490,top:20});}
-,_createMapContainer:function(u,t){var v=new qx.ui.container.Composite();v.setLayout(new qx.ui.layout.VBox().set({spacing:10}));v.setWidth(450);v.setHeight(400);var s=new qx.ui.basic.Label(d+u+i).set({rich:true});v.add(s);v.add(t);return v;}
-,_createYahooMap:function(){var w=new qx.ui.core.Widget().set({width:450,height:400,decorator:m});w.addListenerOnce(h,function(){try{var y=new YMap(w.getContentElement().getDomElement());y.addTypeControl();y.setMapType(YAHOO_MAP_REG);y.drawZoomAndCenter(f,5);}
-catch(z){var x;if(qx.core.Environment.get(b)==a&&qx.core.Environment.get(p)>9){x=o;}
-else {x=k+z.toString();}
-;this.getContentElement().getDomElement().innerHTML+=x;}
+(function(){var a="Google Maps",b="LeafletMap Maps",c="center_changed",d="Could not create Leaflet map!<br/>",e='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',f="appear",g="</b>",h="<b>",i="demobrowser.demo.showcase.Maps",j="main",k='zIndex',l="Could not create Google map!<br/>";qx.Class.define(i,{extend:qx.application.Standalone,members:{main:function(){qx.application.Standalone.prototype.main.call(this);var m=this._createLeafletMap();var n=this._createGoogleMap();this.getRoot().add(this._createMapContainer(b,m),{left:20,top:20});this.getRoot().add(this._createMapContainer(a,n),{left:490,top:20});}
+,_createMapContainer:function(q,p){var r=new qx.ui.container.Composite();r.setLayout(new qx.ui.layout.VBox().set({spacing:10}));r.setWidth(450);r.setHeight(400);var o=new qx.ui.basic.Label(h+q+g).set({rich:true});r.add(o);r.add(p);return r;}
+,_createLeafletMap:function(){var s=new qx.ui.core.Widget().set({width:450,height:400,decorator:j});s.addListenerOnce(f,function(){try{var u=new L.Map(s.getContentElement().getDomElement(),{center:new L.LatLng(43.6400,3.9658),zoom:14,layers:new L.TileLayer(e)});}
+catch(v){var t=d+v.toString();this.getContentElement().getDomElement().innerHTML+=t;}
+;}
+);return s;}
+,_createGoogleMap:function(){var w=new qx.ui.core.Widget().set({width:450,height:400});w.setDecorator(j);w.addListenerOnce(f,function(){try{var y=new google.maps.Map(w.getContentElement().getDomElement(),{zoom:13,mapTypeId:google.maps.MapTypeId.ROADMAP});google.maps.event.addListenerOnce(y,c,function(){window.setTimeout(function(){var z=w.getContentElement().getStyle(k);w.getContentElement().getDomElement().style.zIndex=z;}
+,500);}
+);y.setCenter(new google.maps.LatLng(49.011899,8.403311));}
+catch(A){var x=l+A.toString();this.getContentElement().getDomElement().innerHTML+=x;}
 ;}
 );return w;}
-,_createGoogleMap:function(){var A=new qx.ui.core.Widget().set({width:450,height:400});A.setDecorator(m);A.addListenerOnce(h,function(){try{var C=new google.maps.Map(A.getContentElement().getDomElement(),{zoom:13,mapTypeId:google.maps.MapTypeId.ROADMAP});google.maps.event.addListenerOnce(C,e,function(){window.setTimeout(function(){var D=A.getContentElement().getStyle(n);A.getContentElement().getDomElement().style.zIndex=D;}
-,500);}
-);C.setCenter(new google.maps.LatLng(49.011899,8.403311));}
-catch(E){var B=j+E.toString();this.getContentElement().getDomElement().innerHTML+=B;}
-;}
-);return A;}
 }});}
 )();
 (function(){var a="Decorator",b="_applyLayoutChange",c="center",d="_applyReversed",e="qx.debug",f="bottom",g="' is not supported by the VBox layout!",h="qx.ui.layout.VBox",j="flex",k="top",m="left",n="height",o="middle",p="Integer",q="The property '",r="right",s="Boolean";qx.Class.define(h,{extend:qx.ui.layout.Abstract,construct:function(t,u,v){qx.ui.layout.Abstract.call(this);if(t){this.setSpacing(t);}
