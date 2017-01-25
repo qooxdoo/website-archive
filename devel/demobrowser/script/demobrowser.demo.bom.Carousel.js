@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Carousel.feebf7282d22.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Carousel.0514870cf5ec.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5321,32 +5321,35 @@ else if(this._native){return qx.bom.Event.getTarget(this._native);}
 ,getScale:function(){return this._native.scale;}
 }});}
 )();
-(function(){var a="foo",b="function",c="event.mouseevent",d="UIEvents",f="qx.bom.client.Event",g="event.dispatchevent",h="event.mousecreateevent",j="mousewheel",k="event.touch",l="onhelp",m="event.help",n="event.hashchange",o="PointerEvent",p="pointerEnabled",q="event.customevent",r="click",s="documentMode",t="ontouchstart",u="mshtml",v="MouseEvents",w="onhashchange",x="event.mousewheel",y="wheel",z="DOMMouseScroll",A="msPointerEnabled",B="event.mspointer";qx.Bootstrap.define(f,{statics:{getTouch:function(){return (t in window);}
-,getMsPointer:function(){if(o in window){return true;}
-;if(p in window.navigator){return window.navigator.pointerEnabled;}
-else if(A in window.navigator){return window.navigator.msPointerEnabled;}
+(function(){var a="foo",b="function",c="event.mouseevent",d="UIEvents",f="qx.bom.client.Event",g="event.dispatchevent",h="event.auxclick",j="event.mousecreateevent",k="mousewheel",l="event.touch",m="onhelp",n="event.help",o="event.hashchange",p="PointerEvent",q="pointerEnabled",r="event.customevent",s="onauxclick",t="click",u="documentMode",v="ontouchstart",w="mshtml",x="MouseEvents",y="onhashchange",z="event.mousewheel",A="wheel",B="DOMMouseScroll",C="msPointerEnabled",D="event.mspointer";qx.Bootstrap.define(f,{statics:{getTouch:function(){return (v in window);}
+,getMsPointer:function(){if(p in window){return true;}
+;if(q in window.navigator){return window.navigator.pointerEnabled;}
+else if(C in window.navigator){return window.navigator.msPointerEnabled;}
 ;return false;}
-,getHelp:function(){return (l in document);}
-,getHashChange:function(){var C=qx.bom.client.Engine.getName();var D=w in window;return (C!==u&&D)||(C===u&&s in document&&document.documentMode>=8&&D);}
+,getHelp:function(){return (m in document);}
+,getHashChange:function(){var E=qx.bom.client.Engine.getName();var F=y in window;return (E!==w&&F)||(E===w&&u in document&&document.documentMode>=8&&F);}
 ,getDispatchEvent:function(){return typeof document.dispatchEvent==b;}
 ,getCustomEvent:function(){if(!window.CustomEvent){return false;}
 ;try{new window.CustomEvent(a);return true;}
-catch(E){return false;}
+catch(G){return false;}
 ;}
 ,getMouseEvent:function(){if(!window.MouseEvent){return false;}
 ;try{new window.MouseEvent(a);return true;}
-catch(F){return false;}
+catch(H){return false;}
 ;}
-,getMouseCreateEvent:function(){try{var e=document.createEvent(v);var G=e.pageX;e.initMouseEvent(r,false,false,window,0,0,0,G+1,0,false,false,false,false,0,null);if(e.pageX!==G){return v;}
+,getMouseCreateEvent:function(){try{var e=document.createEvent(x);var I=e.pageX;e.initMouseEvent(t,false,false,window,0,0,0,I+1,0,false,false,false,false,0,null);if(e.pageX!==I){return x;}
 ;return d;}
-catch(H){return d;}
+catch(J){return d;}
 ;}
-,getMouseWheel:function(I){if(!I){I=window;}
-;var L=[I,I.document,I.document.body];var K=I;var J=z;for(var i=0;i<L.length;i++ ){if(qx.bom.Event.supportsEvent(L[i],y)){J=y;K=L[i];break;}
-;if(qx.bom.Event.supportsEvent(L[i],j)){J=j;K=L[i];break;}
+,getMouseWheel:function(K){if(!K){K=window;}
+;var N=[K,K.document,K.document.body];var M=K;var L=B;for(var i=0;i<N.length;i++ ){if(qx.bom.Event.supportsEvent(N[i],A)){L=A;M=N[i];break;}
+;if(qx.bom.Event.supportsEvent(N[i],k)){L=k;M=N[i];break;}
 ;}
-;return {type:J,target:K};}
-},defer:function(M){qx.core.Environment.add(k,M.getTouch);qx.core.Environment.add(c,M.getMouseEvent);qx.core.Environment.add(h,M.getMouseCreateEvent);qx.core.Environment.add(g,M.getDispatchEvent);qx.core.Environment.add(q,M.getCustomEvent);qx.core.Environment.add(B,M.getMsPointer);qx.core.Environment.add(m,M.getHelp);qx.core.Environment.add(n,M.getHashChange);qx.core.Environment.add(x,M.getMouseWheel);}
+;return {type:L,target:M};}
+,getAuxclickEvent:function(){var O=false;try{O=(s in document.documentElement);}
+catch(P){}
+;return (O?true:false);}
+},defer:function(Q){qx.core.Environment.add(l,Q.getTouch);qx.core.Environment.add(c,Q.getMouseEvent);qx.core.Environment.add(j,Q.getMouseCreateEvent);qx.core.Environment.add(g,Q.getDispatchEvent);qx.core.Environment.add(r,Q.getCustomEvent);qx.core.Environment.add(D,Q.getMsPointer);qx.core.Environment.add(n,Q.getHelp);qx.core.Environment.add(o,Q.getHashChange);qx.core.Environment.add(z,Q.getMouseWheel);qx.core.Environment.add(h,Q.getAuxclickEvent);}
 });}
 )();
 (function(){var a="ipod",b="pc",c="ps3",d=")",e="device.type",f="psp",g="wii",h="xbox",i="\.",j="iemobile",k="ipad",l="ds",m="(",n="mobile",o="tablet",p="ontouchstart",q="g",r="iphone",s="|",t="qx.bom.client.Device",u="desktop",v="device.name",w="device.touch",x="undefined",y="device.pixelRatio";qx.Bootstrap.define(t,{statics:{__bV:{"Windows Phone":j,"iPod":a,"iPad":k,"iPhone":r,"PSP":f,"PLAYSTATION 3":c,"Nintendo Wii":g,"Nintendo DS":l,"XBOX":h,"Xbox":h},getName:function(){var B=[];for(var A in qx.bom.client.Device.__bV){B.push(A);}
