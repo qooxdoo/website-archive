@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Menu.b9388931b5fb.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Menu.290398e8f842.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10594,8 +10594,8 @@ else {return this.__cW.getLeadItem();}
 )();
 (function(){var a="qx.ui.form.List",b="text",c="Boolean",d="one",f="addChildWidget",g="_applySpacing",h="Enter",j="Integer",k="action",m="keyinput",n="qx.event.type.Data",o="addItem",p="vertical",q="removeChildWidget",r="",s="_applyOrientation",t="__sh",u="single",v="keypress",w="list",x="horizontal",y="label",z="pane",A="removeItem";qx.Class.define(a,{extend:qx.ui.core.scroll.AbstractScrollArea,implement:[qx.ui.core.IMultiSelection,qx.ui.form.IForm,qx.ui.form.IModelSelection],include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.core.MMultiSelectionHandling,qx.ui.form.MForm,qx.ui.form.MModelSelection],construct:function(B){qx.ui.core.scroll.AbstractScrollArea.call(this);this.__sh=this._createListItemContainer();this.__sh.addListener(f,this._onAddChild,this);this.__sh.addListener(q,this._onRemoveChild,this);this.getChildControl(z).add(this.__sh);if(B){this.setOrientation(x);}
 else {this.initOrientation();}
-;this.addListener(v,this._onKeyPress);this.addListener(m,this._onKeyInput);this.__tW=r;}
-,events:{addItem:n,removeItem:n},properties:{appearance:{refine:true,init:w},focusable:{refine:true,init:true},orientation:{check:[x,p],init:p,apply:s},spacing:{check:j,init:0,apply:g,themeable:true},enableInlineFind:{check:c,init:true}},members:{__tW:null,__tX:null,__sh:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__sh;}
+;this.addListener(v,this._onKeyPress);this.addListener(m,this._onKeyInput);this.__tm=r;}
+,events:{addItem:n,removeItem:n},properties:{appearance:{refine:true,init:w},focusable:{refine:true,init:true},orientation:{check:[x,p],init:p,apply:s},spacing:{check:j,init:0,apply:g,themeable:true},enableInlineFind:{check:c,init:true}},members:{__tm:null,__tn:null,__sh:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__sh;}
 ,_onAddChild:function(e){this.fireDataEvent(o,e.getData());}
 ,_onRemoveChild:function(e){this.fireDataEvent(A,e.getData());}
 ,handleKeyPress:function(e){if(!this._onKeyPress(e)){this._getManager().handleKeyPress(e);}
@@ -10608,9 +10608,9 @@ else {this.initOrientation();}
 ;return false;}
 ,_onKeyInput:function(e){if(!this.getEnableInlineFind()){return;}
 ;var J=this.getSelectionMode();if(!(J===u||J===d)){return;}
-;if(((new Date).valueOf()-this.__tX)>1000){this.__tW=r;}
-;this.__tW+=e.getChar();var K=this.findItemByLabelFuzzy(this.__tW);if(K){this.setSelection([K]);}
-;this.__tX=(new Date).valueOf();}
+;if(((new Date).valueOf()-this.__tn)>1000){this.__tm=r;}
+;this.__tm+=e.getChar();var K=this.findItemByLabelFuzzy(this.__tm);if(K){this.setSelection([K]);}
+;this.__tn=(new Date).valueOf();}
 ,findItemByLabelFuzzy:function(M){M=M.toLowerCase();var L=this.getChildren();for(var i=0,l=L.length;i<l;i++ ){var N=L[i].getLabel();if(N&&N.toLowerCase().indexOf(M)==0){return L[i];}
 ;}
 ;return null;}
