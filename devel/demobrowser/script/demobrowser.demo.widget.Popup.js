@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Popup.fbc10ffa0432.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Popup.81c33d5eab6f.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -7822,7 +7822,8 @@ else {dI.resetValue();}
 ,__kT:function(dU,dR){var dJ=dR&&qx.lang.String.startsWith(dR,X);if(dJ){var dN=qx.util.ResourceManager.getInstance();var dQ=qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)/)[1]);var dO=qx.lang.Object.clone(dQ.getStyles());delete dO.color;dU.setStyles(dO);dU.setStyle(H);dU.setStyle(bS,bA);dU.setStyle(A,bE);dU.setStyle(C,F);if(this.getScale()){dU.setStyle(y,(this.__kB>this.__kC?this.__kC:this.__kB)+c);}
 else {dU.setStyle(y,dQ.getSize()+c);}
 ;var dL=dN.getData(dR);if(dL){dU.setValue(String.fromCharCode(dL[2]));}
-else {var dV=parseInt(qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)\/(.*)$/)[2]),16);this.assertNumber(dV,z);dU.setValue(String.fromCharCode(dV));}
+else {var dV=parseInt(qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)\/(.*)$/)[2]),16);if(qx.core.Environment.get(B)){this.assertNumber(dV,z);}
+;dU.setValue(String.fromCharCode(dV));}
 ;return;}
 else if(dU.getNodeName()==n){var dX=qx.theme.manager.Decoration.getInstance().resolve(this.getDecorator());if(dX){var dS=(dX.getStartColor()&&dX.getEndColor());var dP=dX.getBackgroundImage();if(dS||dP){var dK=this.getScale()?j:bP;var dM=qx.bom.element.Decoration.getAttributes(dR,dK);var dW=dX.getStyles(true);var dT={"backgroundImage":dM.style.backgroundImage,"backgroundPosition":(dM.style.backgroundPosition||x),"backgroundRepeat":(dM.style.backgroundRepeat||bP)};if(dP){dT[P]+=V+dW[bQ]||x;dT[d]+=bB+dX.getBackgroundRepeat();}
 ;if(dS){dT[P]+=bT;dT[d]+=bI;}

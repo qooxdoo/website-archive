@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.layout.VBox_Margin.8c9ae0e60062.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.layout.VBox_Margin.ae5cc597ec90.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -7822,7 +7822,8 @@ else {dI.resetValue();}
 ,__kT:function(dU,dR){var dJ=dR&&qx.lang.String.startsWith(dR,X);if(dJ){var dN=qx.util.ResourceManager.getInstance();var dQ=qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)/)[1]);var dO=qx.lang.Object.clone(dQ.getStyles());delete dO.color;dU.setStyles(dO);dU.setStyle(H);dU.setStyle(bS,bA);dU.setStyle(A,bE);dU.setStyle(C,F);if(this.getScale()){dU.setStyle(y,(this.__kB>this.__kC?this.__kC:this.__kB)+c);}
 else {dU.setStyle(y,dQ.getSize()+c);}
 ;var dL=dN.getData(dR);if(dL){dU.setValue(String.fromCharCode(dL[2]));}
-else {var dV=parseInt(qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)\/(.*)$/)[2]),16);this.assertNumber(dV,z);dU.setValue(String.fromCharCode(dV));}
+else {var dV=parseInt(qx.theme.manager.Font.getInstance().resolve(dR.match(/@([^/]+)\/(.*)$/)[2]),16);if(qx.core.Environment.get(B)){this.assertNumber(dV,z);}
+;dU.setValue(String.fromCharCode(dV));}
 ;return;}
 else if(dU.getNodeName()==n){var dX=qx.theme.manager.Decoration.getInstance().resolve(this.getDecorator());if(dX){var dS=(dX.getStartColor()&&dX.getEndColor());var dP=dX.getBackgroundImage();if(dS||dP){var dK=this.getScale()?j:bP;var dM=qx.bom.element.Decoration.getAttributes(dR,dK);var dW=dX.getStyles(true);var dT={"backgroundImage":dM.style.backgroundImage,"backgroundPosition":(dM.style.backgroundPosition||x),"backgroundRepeat":(dM.style.backgroundRepeat||bP)};if(dP){dT[P]+=V+dW[bQ]||x;dT[d]+=bB+dX.getBackgroundRepeat();}
 ;if(dS){dT[P]+=bT;dT[d]+=bI;}
@@ -8834,12 +8835,12 @@ else {top+=B;}
 ;if(E){this.setSeparatorX(E);}
 ;if(D){this.setSeparatorY(D);}
 ;}
-,properties:{sort:{check:[m,o,A],init:m,apply:r},separatorX:{check:p,nullable:true,apply:h},separatorY:{check:p,nullable:true,apply:h},connectSeparators:{check:a,init:false,apply:h},spacingX:{check:f,init:0,apply:h},spacingY:{check:f,init:0,apply:h}},members:{__gz:null,__wb:null,verifyLayoutProperty:qx.core.Environment.select(j,{"true":function(F,name,G){this.assertInArray(name,[y,w,c,k],g+name+l);if(name===w){this.assertInArray(G,[s,x,d,v,n]);}
+,properties:{sort:{check:[m,o,A],init:m,apply:r},separatorX:{check:p,nullable:true,apply:h},separatorY:{check:p,nullable:true,apply:h},connectSeparators:{check:a,init:false,apply:h},spacingX:{check:f,init:0,apply:h},spacingY:{check:f,init:0,apply:h}},members:{__gz:null,__wR:null,verifyLayoutProperty:qx.core.Environment.select(j,{"true":function(F,name,G){this.assertInArray(name,[y,w,c,k],g+name+l);if(name===w){this.assertInArray(G,[s,x,d,v,n]);}
 else if(name===y){this.assertNumber(G);this.assert(G>=0);}
 else {this.assertMatch(G,qx.ui.layout.Util.PERCENT_VALUE);}
 ;}
 ,"false":null}),_applySort:function(){this._invalidChildrenCache=true;this._applyLayoutChange();}
-,__wc:{north:1,south:2,west:3,east:4,center:5},__wd:{'1':t,'2':e,'3':z,'4':u},__mm:function(){var H=this._getLayoutChildren();var P,J;var length=H.length;var L=[];var O=[];var K=[];var I=this.getSort()===o;var N=this.getSort()===A;for(var i=0;i<length;i++ ){P=H[i];K=P.getLayoutProperties().edge;if(K===n){if(J){throw new Error(b);}
+,__wS:{north:1,south:2,west:3,east:4,center:5},__wT:{'1':t,'2':e,'3':z,'4':u},__mm:function(){var H=this._getLayoutChildren();var P,J;var length=H.length;var L=[];var O=[];var K=[];var I=this.getSort()===o;var N=this.getSort()===A;for(var i=0;i<length;i++ ){P=H[i];K=P.getLayoutProperties().edge;if(K===n){if(J){throw new Error(b);}
 ;J=P;}
 else if(N||I){if(K===s||K===x){I?L.push(P):O.push(P);}
 else if(K===d||K===v){I?O.push(P):L.push(P);}
@@ -8847,10 +8848,10 @@ else if(K===d||K===v){I?O.push(P):L.push(P);}
 else {L.push(P);}
 ;}
 ;var Q=L.concat(O);if(J){Q.push(J);}
-;this.__gz=Q;var M=[];for(var i=0;i<length;i++ ){K=Q[i].getLayoutProperties().edge;M[i]=this.__wc[K]||5;}
-;this.__wb=M;delete this._invalidChildrenCache;}
+;this.__gz=Q;var M=[];for(var i=0;i<length;i++ ){K=Q[i].getLayoutProperties().edge;M[i]=this.__wS[K]||5;}
+;this.__wR=M;delete this._invalidChildrenCache;}
 ,renderLayout:function(bl,bb,bt){if(this._invalidChildrenCache){this.__mm();}
-;var bk=qx.ui.layout.Util;var W=this.__gz;var bm=this.__wb;var length=W.length;var ba,bu,Y,bf,bg,br,bd,T,S;var bx=[];var bc=[];var bs=this._getSeparatorWidths();var bB=this.getSpacingX();var bA=this.getSpacingY();var X=-bB;var bn=-bA;if(bs.x){X-=bs.x+bB;}
+;var bk=qx.ui.layout.Util;var W=this.__gz;var bm=this.__wR;var length=W.length;var ba,bu,Y,bf,bg,br,bd,T,S;var bx=[];var bc=[];var bs=this._getSeparatorWidths();var bB=this.getSpacingX();var bA=this.getSpacingY();var X=-bB;var bn=-bA;if(bs.x){X-=bs.x+bB;}
 ;if(bs.y){bn-=bs.y+bA;}
 ;for(var i=0;i<length;i++ ){bu=W[i];bf=bu.getLayoutProperties();Y=bu.getSizeHint();bd=Y.width;T=Y.height;if(bf.width!=null){bd=Math.floor(bl*parseFloat(bf.width)/100);if(bd<Y.minWidth){bd=Y.minWidth;}
 else if(bd>Y.maxWidth){bd=Y.maxWidth;}
@@ -8873,7 +8874,7 @@ else if(T>Y.maxHeight){T=Y.maxHeight;}
 ;};}
 ;var U=bk.computeFlexOffsets(ba,bb,bn);for(var i in U){S=U[i].offset;bc[i]+=S;bn+=S;}
 ;}
-;this._clearSeparators();var bw=this.getSeparatorX(),bv=this.getSeparatorY();var by=this.getConnectSeparators();var bi=0,bq=0;var bF,top,bd,T,bh,bC;var bj,bz,bE,bo;var bD,R,be,V;var bp=this.__wd;for(var i=0;i<length;i++ ){bu=W[i];bC=bm[i];Y=bu.getSizeHint();bD=bu.getMarginTop();R=bu.getMarginBottom();be=bu.getMarginLeft();V=bu.getMarginRight();switch(bC){case 1:case 2:bd=bl-be-V;if(bd<Y.minWidth){bd=Y.minWidth;}
+;this._clearSeparators();var bw=this.getSeparatorX(),bv=this.getSeparatorY();var by=this.getConnectSeparators();var bi=0,bq=0;var bF,top,bd,T,bh,bC;var bj,bz,bE,bo;var bD,R,be,V;var bp=this.__wT;for(var i=0;i<length;i++ ){bu=W[i];bC=bm[i];Y=bu.getSizeHint();bD=bu.getMarginTop();R=bu.getMarginBottom();be=bu.getMarginLeft();V=bu.getMarginRight();switch(bC){case 1:case 2:bd=bl-be-V;if(bd<Y.minWidth){bd=Y.minWidth;}
 else if(bd>Y.maxWidth){bd=Y.maxWidth;}
 ;T=bc[i];top=bi+bk.computeVerticalAlignOffset(bp[bC],T,bb,bD,R);bF=bq+bk.computeHorizontalAlignOffset(bu.getAlignX()||z,bd,bl,be,V);if(bs.y){if(bC==1){bz=bi+T+bD+bA+R;}
 else {bz=bi+bb-T-bD-bA-R-bs.y;}
@@ -8902,7 +8903,7 @@ else if(T>Y.maxHeight){T=Y.maxHeight;}
 ;if(bG){var bO=bK.resolve(bG);var bI=bO.getInsets();var bL=bI.top+bI.bottom;}
 ;return {x:bM||0,y:bL||0};}
 ,_computeSizeHint:function(){if(this._invalidChildrenCache){this.__mm();}
-;var bS=this.__gz;var cd=this.__wb;var length=bS.length;var bW,ce;var bY,bX;var ca=0,cl=0;var bP=0,cg=0;var cb=0,ck=0;var bQ=0,cf=0;var ch=this._getSeparatorWidths();var cj=this.getSpacingX(),ci=this.getSpacingY();var bU=-cj,bT=-ci;if(ch.x){bU-=ch.x+cj;}
+;var bS=this.__gz;var cd=this.__wR;var length=bS.length;var bW,ce;var bY,bX;var ca=0,cl=0;var bP=0,cg=0;var cb=0,ck=0;var bQ=0,cf=0;var ch=this._getSeparatorWidths();var cj=this.getSpacingX(),ci=this.getSpacingY();var bU=-cj,bT=-ci;if(ch.x){bU-=ch.x+cj;}
 ;if(ch.y){bT-=ch.y+ci;}
 ;for(var i=0;i<length;i++ ){ce=bS[i];bW=ce.getSizeHint();bY=ce.getMarginLeft()+ce.getMarginRight();bX=ce.getMarginTop()+ce.getMarginBottom();switch(cd[i]){case 1:case 2:cb=Math.max(cb,bW.width+ca+bY);ck=Math.max(ck,bW.minWidth+cl+bY);bQ+=bW.height+bX;cf+=bW.minHeight+bX;bT+=ci;if(ch.y){bT+=ch.y+ci;}
 ;break;case 3:case 4:bP=Math.max(bP,bW.height+bQ+bX);cg=Math.max(cg,bW.minHeight+cf+bX);ca+=bW.width+bY;cl+=bW.minWidth+bY;bU+=cj;if(ch.x){bU+=ch.x+cj;}
@@ -8910,7 +8911,7 @@ else if(T>Y.maxHeight){T=Y.maxHeight;}
 ;bT+=ci;if(ch.y){bT+=ch.y+ci;}
 ;};}
 ;var bV=Math.max(cl,ck)+bU;var cm=Math.max(ca,cb)+bU;var cc=Math.max(cg,cf)+bT;var bR=Math.max(bP,bQ)+bT;return {minWidth:bV,width:cm,minHeight:cc,height:bR};}
-},destruct:function(){this.__wb=this.__gz=null;}
+},destruct:function(){this.__wR=this.__gz=null;}
 });}
 )();
 (function(){var a="qx.nativeScrollBars",b="qx.ui.core.scroll.MScrollBarFactory";qx.core.Environment.add(a,false);qx.Mixin.define(b,{members:{_createScrollBar:function(c){if(qx.core.Environment.get(a)){return new qx.ui.core.scroll.NativeScrollBar(c);}
