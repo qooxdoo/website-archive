@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:dc693af","qx.theme":"apiviewer.Theme","qx.version":"5.1"};
+var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:e8f0954","qx.theme":"apiviewer.Theme","qx.version":"5.1"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:apiviewer.881840be5b62.js"]}},
+  packages : {"0":{"uris":["__out__:apiviewer.9775d3f66103.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8756,43 +8756,43 @@ else {parent=this._widget.getLayoutParent();}
 ;delete (this.__ex[p]);}
 }});}
 )();
-(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='" src="',u=' title="',v="Internal:",w="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",x="apiviewer/image/nextlevel.gif",y="https://developer.mozilla.org/en/DOM/event",z=".js",A="events",B="Included mixins:",C="margin-right:-18px;",D="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",E="opera",F=' | ',G='</p>',H="mixin",I="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",J=' </span>',K=" is deprecated!",L='/>',M="https://developer.mozilla.org/en/CSS/font",N="position:absolute;top:0px;left:0px;padding-right:18px;",O='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',P='px',Q='" target="_blank" title="View Source">',R=' class',S="methods-static",T="string",U="<h2>",V="apiviewer/image/event18.gif",W='tap',X='"',Y="apiviewer/image/property18.gif",cX="https://developer.mozilla.org/en/DOM/window",cY="Deprecated:",da='Static Methods',cT="sub mixins",cU="apiviewer/image/method_public18.gif",cV=":",cW='<img src="',df='25px',dg='</small>',dh="sourceViewUri",di="position:absolute;top:0px;left:0px",db="https://developer.mozilla.org/en/CSS/color",dc="Singleton ",dd="<div>",de='">',dm='<img',dP='" class="img"',eN='"/>',dn="number",dj="Direct ",dk="apiviewer/image/constant18.gif",eK="function",dl="apiviewer/image/class18.gif",dp='<span style="display:inline;position:relative;top:-2px;width:',dq=" is internal!",dr="px",dw='<span class="type">',dx="https://developer.mozilla.org/en/DOM/element",dy="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",dt="Classes including this mixin:",du="constants",dv="This ",dD='px;height:',dE="0",dF="</h2>",dG="class",dz="interface",dA="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dB="Implemented interfaces:",dC='</a>',dK='<h2 class="warning">',dL="properties",eM="apiviewer/image/childcontrol18.gif",dM="https://developer.mozilla.org/en/DOM/node",dH="https://developer.mozilla.org/en/DOM/document",dI="Class",eL="top",dJ="apiviewer/image/constructor18.gif",dN='webkit',dO="margin-left:",eb="engine.name",ea='margin-left',dY='</a></span>',ef="construct",ee="left",ed=".",ec='<div>',dT="child controls",dS="Abstract ",dR="sub classes",dQ='',dX=' style="',dW="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",dU='!',em='HEAD:dc693af',el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(A,A,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(S,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(du,du,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(dL,dL,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dT));this.getContentElement().setAttribute(dG,eo);this._init(new apiviewer.dao.Class({}));}
-,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":y,"Window":cX,"Document":dH,"Element":dx,"Node":dM,"Date":w,"Function":eH,"Array":ds,"Object":dW,"Map":dW,"RegExp":dA,"Error":dy,"Number":D,"Boolean":I,"String":dV,"undefined":eB,"arguments":ex,"Font":M,"Color":db},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+z;}
-,lineNumber:function(eQ){if(eQ.getLineNumber&&typeof eQ.getLineNumber()==dn){return eQ.getLineNumber()+ez;}
-else {return dE;}
+(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='" src="',u=' title="',v="Internal:",w="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",x="apiviewer/image/nextlevel.gif",y="https://developer.mozilla.org/en/DOM/event",z=".js",A="events",B="Included mixins:",C="margin-right:-18px;",D="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",E="opera",F=' | ',G='</p>',H="mixin",I="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",J=' </span>',K=" is deprecated!",L='/>',M="https://developer.mozilla.org/en/CSS/font",N="position:absolute;top:0px;left:0px;padding-right:18px;",O='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',P='px',Q='" target="_blank" title="View Source">',R=' class',S="methods-static",T="string",U="<h2>",V="apiviewer/image/event18.gif",W='tap',X='"',Y="apiviewer/image/property18.gif",cX="https://developer.mozilla.org/en/DOM/window",cY="Deprecated:",da='Static Methods',cT="sub mixins",cU="apiviewer/image/method_public18.gif",cV=":",cW='<img src="',df='25px',dg='</small>',dh="sourceViewUri",di="position:absolute;top:0px;left:0px",db="https://developer.mozilla.org/en/CSS/color",dc="Singleton ",dd="<div>",de='">',dm='<img',dP='" class="img"',eN='"/>',dn='HEAD:e8f0954',dj="number",dk="Direct ",eK="apiviewer/image/constant18.gif",dl="function",dp="apiviewer/image/class18.gif",dq='<span style="display:inline;position:relative;top:-2px;width:',dr=" is internal!",dw="px",dx='<span class="type">',dy="https://developer.mozilla.org/en/DOM/element",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",dt="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",du="Classes including this mixin:",dv="constants",dD="This ",dE='px;height:',dF="0",dG="</h2>",dz="class",dA="interface",dB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dC="Implemented interfaces:",dK='</a>',dL='<h2 class="warning">',eM="properties",dM="apiviewer/image/childcontrol18.gif",dH="https://developer.mozilla.org/en/DOM/node",dI="https://developer.mozilla.org/en/DOM/document",eL="Class",dJ="top",dN="apiviewer/image/constructor18.gif",dO='webkit',eb="margin-left:",ea="engine.name",dY='margin-left',ef='</a></span>',ee="construct",ed="left",ec=".",dT='<div>',dS="child controls",dR="Abstract ",dQ="sub classes",dX='',dW=' style="',dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dU="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",em='!',el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(A,A,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(S,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(dv,dv,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(eM,eM,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dS));this.getContentElement().setAttribute(dz,eo);this._init(new apiviewer.dao.Class({}));}
+,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":y,"Window":cX,"Document":dI,"Element":dy,"Node":dH,"Date":w,"Function":eH,"Array":dt,"Object":dV,"Map":dV,"RegExp":dB,"Error":ds,"Number":D,"Boolean":I,"String":dU,"undefined":eB,"arguments":ex,"Font":M,"Color":db},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+z;}
+,lineNumber:function(eQ){if(eQ.getLineNumber&&typeof eQ.getLineNumber()==dj){return eQ.getLineNumber()+ez;}
+else {return dF;}
 ;}
-,qxGitBranch:function(eR){return em.split(cV)[1];}
-},createImageHtml:function(eT,eU,eS){if(typeof eT==T){return cW+qx.util.ResourceManager.getInstance().toUri(eT)+dP+(eS?dX+eS+X:ez)+L;}
+,qxGitBranch:function(eR){return dn.split(cV)[1];}
+},createImageHtml:function(eT,eU,eS){if(typeof eT==T){return cW+qx.util.ResourceManager.getInstance().toUri(eT)+dP+(eS?dW+eS+X:ez)+L;}
 else {if(eS){eS+=s;}
 else {eS=ek;}
 ;return apiviewer.ui.ClassViewer.createOverlayImageHtml(18,18,eT,eU,eS);}
 ;}
-,createOverlayImageHtml:function(fa,eY,eV,eX,fc){var fb=dQ;var eW;if(qx.core.Environment.get(eb)==eJ){fb=dp+fa+dD+eY+P+((fc==null)?dQ:(g+fc))+de;}
-else {fb=O+fa+dD+eY+P+((fc==null)?dQ:(g+fc))+de;}
-;if(qx.core.Environment.get(eb)==eJ){eW=N;}
-else if(qx.core.Environment.get(eb)==E){eW=C;}
+,createOverlayImageHtml:function(fa,eY,eV,eX,fc){var fb=dX;var eW;if(qx.core.Environment.get(ea)==eJ){fb=dq+fa+dE+eY+P+((fc==null)?dX:(g+fc))+de;}
+else {fb=O+fa+dE+eY+P+((fc==null)?dX:(g+fc))+de;}
+;if(qx.core.Environment.get(ea)==eJ){eW=N;}
+else if(qx.core.Environment.get(ea)==E){eW=C;}
 else {eW=di;}
 ;for(var i=0;i<eV.length;i++ ){fb+=dm;if(eX!=null){fb+=u+eX+X;}
-;fb+=dX+eW+t+qx.util.ResourceManager.getInstance().toUri(eV[i])+eN;}
+;fb+=dW+eW+t+qx.util.ResourceManager.getInstance().toUri(eV[i])+eN;}
 ;fb+=a;return fb;}
 ,getSourceUri:function(fd){var ff;if(fd instanceof apiviewer.dao.Class){ff=fd;}
 else {ff=fd.getClass();}
-;var fh=ff.getFullName().split(ed)[0];if(!qx.util.LibraryManager.getInstance().has(fh)){return null;}
+;var fh=ff.getFullName().split(ec)[0];if(!qx.util.LibraryManager.getInstance().has(fh)){return null;}
 ;var fj=qx.util.LibraryManager.getInstance().get(fh,dh);if(!fj){return null;}
-;var fe=this.SOURCE_VIEW_MACROS;for(var fi in fe){var fg=eI+fi+k;if(fj.indexOf(fg)>=0&&typeof fe[fi]==eK){var fk=fe[fi](fd);if(typeof fk==T){fj=fj.replace(new RegExp(fg),fk);}
+;var fe=this.SOURCE_VIEW_MACROS;for(var fi in fe){var fg=eI+fi+k;if(fj.indexOf(fg)>=0&&typeof fe[fi]==dl){var fk=fe[fi](fd);if(typeof fk==T){fj=fj.replace(new RegExp(fg),fk);}
 ;}
 ;}
 ;if(fj.indexOf(eI)>=0){{}
 ;return null;}
 ;return fj;}
-},members:{_getTitleHtml:function(fp){var fo=dI;switch(fp.getType()){case H:fo=et;break;case dz:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dg);fl.add(dw);if(fp.isAbstract()){fl.add(dS);}
+},members:{_getTitleHtml:function(fp){var fo=eL;switch(fp.getType()){case H:fo=et;break;case dA:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dg);fl.add(dx);if(fp.isAbstract()){fl.add(dR);}
 else if(fp.isStatic()){fl.add(ei);}
 else if(fp.isSingleton()){fl.add(dc);}
-;fl.add(fo,J);var fm=fp.getName();var fn=this.self(arguments).getSourceUri(fp);if(fn){fm=ev+fn+Q+fm+dC;}
+;fl.add(fo,J);var fm=fp.getName();var fn=this.self(arguments).getSourceUri(fp);if(fn){fm=ev+fn+Q+fm+dK;}
 ;fl.add(apiviewer.ui.panels.InfoPanel.setTitleClass(fp,fm));return fl.get();}
-,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,A,S,du,dL,eh,m];var fw={"events":V,"constructor":dJ,"properties":Y,"methods":cU,"methods-static":[cU,eE],"constants":dk,"childControls":eM};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
+,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,A,S,dv,eM,eh,m];var fw={"events":V,"constructor":dN,"properties":Y,"methods":cU,"methods-static":[cU,eE],"constants":eK,"childControls":dM};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
 ;var fx=null;for(var i=0,l=fr.length;i<l;i++ ){var fv=fy.getItemList(fr[i]);this.sortItems(fv);var ft=false;if(fv.length>0){ft=true;}
-else {if(this.getShowInherited()&&(fr[i]==A||fr[i]==dL||fr[i]==eh)){var fu=null;if(fy.getType()==dz){fu=fy.getInterfaceHierarchy();}
+else {if(this.getShowInherited()&&(fr[i]==A||fr[i]==eM||fr[i]==eh)){var fu=null;if(fy.getType()==dA){fu=fy.getInterfaceHierarchy();}
 else {fu=fy.getClassHierarchy();}
 ;for(var j=0;j<fu.length;j++ ){if(apiviewer.dao.Class.isNativeObject(fu[j])&&fu[j].name===en){continue;}
 ;fv=fu[j].getItemList(fr[i]);if(fv.length>0){ft=true;break;}
@@ -8800,44 +8800,44 @@ else {fu=fy.getClassHierarchy();}
 ;}
 ;}
 ;if(ft){if(fx){fz.appendChild(document.createTextNode(F));}
-;var fB=qx.dom.Element.create(eD);qx.bom.element.Class.add(fB,c);fB.innerHTML=apiviewer.ui.ClassViewer.createImageHtml(fw[fr[i]],fr[i])+es;q(fB).on(W,(function(fE,fD){return (function(){this.__mv(fD,fD.getName());qx.bom.element.Scroll.intoView(fE.getTitleElement(),null,ee,eL);if(!fE.getIsOpen()){this.togglePanelVisibility(fE);}
+;var fB=qx.dom.Element.create(eD);qx.bom.element.Class.add(fB,c);fB.innerHTML=apiviewer.ui.ClassViewer.createImageHtml(fw[fr[i]],fr[i])+es;q(fB).on(W,(function(fE,fD){return (function(){this.__mv(fD,fD.getName());qx.bom.element.Scroll.intoView(fE.getTitleElement(),null,ed,dJ);if(!fE.getIsOpen()){this.togglePanelVisibility(fE);}
 ;}
 ).bind(this);}
-).bind(this)(fA[fr[i]],fv[0]),false);var fs=qx.dom.Element.create(eD);if(fr[i]===eu&&qx.core.Environment.get(eb)==dN){qx.bom.element.Style.set(fs,ea,df);}
+).bind(this)(fA[fr[i]],fv[0]),false);var fs=qx.dom.Element.create(eD);if(fr[i]===eu&&qx.core.Environment.get(ea)==dO){qx.bom.element.Style.set(fs,dY,df);}
 ;fs.appendChild(document.createTextNode(es));fs.appendChild(document.createTextNode(fr[i]===eu?da:qx.lang.String.capitalize(fr[i])));fB.appendChild(fs);fz.appendChild(fB);fx=fB;}
 ;}
 ;return fz;}
-,_getDescriptionHtml:function(fG){var fF=dR;var fK=fG.getDescription();switch(fG.getType()){case H:fF=cT;break;case dz:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
+,_getDescriptionHtml:function(fG){var fF=dQ;var fK=fG.getDescription();switch(fG.getType()){case H:fF=cT;break;case dA:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
 ;var fI=apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(fG);if(fI){if(fH.length>0){fH.splice(-1,0,fI);}
 else {fH.add(fI);}
 ;}
 ;if(fG.getErrors().length>0){fH.add(el,apiviewer.ui.panels.InfoPanel.createErrorHtml(fG,fG),f);}
-;if(fG.getType()===dz){fH.add(this.__mu(fG));}
+;if(fG.getType()===dA){fH.add(this.__mu(fG));}
 else {fH.add(this.__mt(fG));}
-;fH.add(this.__ms(fG.getChildClasses(),dj+fF+cV));fH.add(this.__ms(fG.getInterfaces(),dB));fH.add(this.__ms(fG.getMixins(),B));fH.add(this.__ms(fG.getImplementations(),h));fH.add(this.__ms(fG.getIncluder(),dt));if(fG.isDeprecated()){fH.add(dK,cY,p);fH.add(ej);fK=fG.getDeprecationText();if(fK){fH.add(apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG));}
-else {fH.add(dv,fG.getType(),K);}
+;fH.add(this.__ms(fG.getChildClasses(),dk+fF+cV));fH.add(this.__ms(fG.getInterfaces(),dC));fH.add(this.__ms(fG.getMixins(),B));fH.add(this.__ms(fG.getImplementations(),h));fH.add(this.__ms(fG.getIncluder(),du));if(fG.isDeprecated()){fH.add(dL,cY,p);fH.add(ej);fK=fG.getDeprecationText();if(fK){fH.add(apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG));}
+else {fH.add(dD,fG.getType(),K);}
 ;fH.add(G);}
-;if(fG.isInternal()){fH.add(dK,v,p);fH.add(ej);var fJ=fG.getType();if(fJ==r){fJ+=R;}
-;fH.add(dv,fJ,dq);fH.add(G);}
+;if(fG.isInternal()){fH.add(dL,v,p);fH.add(ej);var fJ=fG.getType();if(fJ==r){fJ+=R;}
+;fH.add(dD,fJ,dr);fH.add(G);}
 ;return fH.get();}
-,__ms:function(fL,fN){var fM=ez;if(fL.length>0){fM=new qx.util.StringBuilder(U,fN,dF);for(var i=0;i<fL.length;i++ ){if(i!==0){fM.add(o);}
+,__ms:function(fL,fN){var fM=ez;if(fL.length>0){fM=new qx.util.StringBuilder(U,fN,dG);for(var i=0;i<fL.length;i++ ){if(i!==0){fM.add(o);}
 ;fM.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fL[i],null,true,false));}
 ;fM=fM.get();}
 ;return fM;}
-,__mt:function(fQ){var fS=apiviewer.ui.ClassViewer;var fR=new qx.util.StringBuilder(U,eF,dF);var fP=fQ.getClassHierarchy(true);fR.add(fS.createImageHtml(dl),eq);var fO=0;for(var i=fP.length-1;i>=0;i-- ){if(apiviewer.dao.Class.isNativeObject(fP[i])&&fP[i]===Object){continue;}
-;fR.add(ec);fR.add(fS.createImageHtml(x,null,dO+fO+dr),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dl));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
-else {var name=Object.prototype.toString.call(new fP[i]).match(/^\[object (.*)\]$/)[1];fR.add(ey+apiviewer.ui.ClassViewer.MDC_LINKS[name]+ew+name+de+name+dY);}
+,__mt:function(fQ){var fS=apiviewer.ui.ClassViewer;var fR=new qx.util.StringBuilder(U,eF,dG);var fP=fQ.getClassHierarchy(true);fR.add(fS.createImageHtml(dp),eq);var fO=0;for(var i=fP.length-1;i>=0;i-- ){if(apiviewer.dao.Class.isNativeObject(fP[i])&&fP[i]===Object){continue;}
+;fR.add(dT);fR.add(fS.createImageHtml(x,null,eb+fO+dw),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dp));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
+else {var name=Object.prototype.toString.call(new fP[i]).match(/^\[object (.*)\]$/)[1];fR.add(ey+apiviewer.ui.ClassViewer.MDC_LINKS[name]+ew+name+de+name+ef);}
 ;}
 else {fR.add(fP[i].getFullName());}
 ;fO+=18;fR.add(f);}
 ;return fR.get();}
 ,__mu:function(fY){var ga=apiviewer.ui.ClassViewer;var fX=apiviewer.TreeUtil;var fU=apiviewer.ui.panels.InfoPanel;var fV=fY.getInterfaceHierarchy();var fW=new qx.util.StringBuilder();if(fV.length<=1){return;}
-;fW.add(U,eF,dF);var fT=0;for(var i=fV.length-1;i>=0;i-- ){var name=fV[i].getFullName();var gb=fX.getIconUrl(fV[i]);fW.add(dd);if(fV[i].getSuperInterfaces().length>0){fW.add(ga.createImageHtml(x,null,dO+fT+dr));fW.add(ga.createImageHtml(gb));fW.add(i!==0?fU.createItemLinkHtml(name,null,false):name);fT+=18;}
+;fW.add(U,eF,dG);var fT=0;for(var i=fV.length-1;i>=0;i-- ){var name=fV[i].getFullName();var gb=fX.getIconUrl(fV[i]);fW.add(dd);if(fV[i].getSuperInterfaces().length>0){fW.add(ga.createImageHtml(x,null,eb+fT+dw));fW.add(ga.createImageHtml(gb));fW.add(i!==0?fU.createItemLinkHtml(name,null,false):name);fT+=18;}
 else {fW.add(ga.createImageHtml(gb));fW.add(fU.createItemLinkHtml(name,null,false));}
 ;fW.add(b);}
 ;return fW.get();}
-,showItem:function(gg){var gh;var gf={"event":A,"method_public":eh,"method_protected":eh,"method_private":eh,"property":dL,"property_private":dL,"property_protected":dL,"constant":du,"childcontrol":m};if(gg==ef){gh=this.getDocNode().getConstructor();}
-else {if(gg.indexOf(dU)!=-1){var ge=gg.split(dU);gh=this.getDocNode().getItemByListAndName(gf[ge[1]],ge[0]);if(!gh){gh=this.getDocNode().getItem(ge[0]);}
+,showItem:function(gg){var gh;var gf={"event":A,"method_public":eh,"method_protected":eh,"method_private":eh,"property":eM,"property_private":eM,"property_protected":eM,"constant":dv,"childcontrol":m};if(gg==ee){gh=this.getDocNode().getConstructor();}
+else {if(gg.indexOf(em)!=-1){var ge=gg.split(em);gh=this.getDocNode().getItemByListAndName(gf[ge[1]],ge[0]);if(!gh){gh=this.getDocNode().getItem(ge[0]);}
 ;}
 else {gh=this.getDocNode().getItem(gg);}
 ;}
@@ -8845,7 +8845,7 @@ else {gh=this.getDocNode().getItem(gg);}
 ;this.__mv(gh,gg);var gi=this._getPanelForItemNode(gh);if(!gi.getIsOpen()){this.togglePanelVisibility(gi);}
 ;var gc=gi.getItemElement(gh.getName());if(!gc){return false;}
 ;var gd=gc.parentNode.parentNode;if(this._markedElement){this._markedElement.className=apiviewer.ui.panels.InfoPanel.getItemCssClasses(this._markedItemNode);}
-;gd.className=er;this._markedElement=gd;this._markedItemNode=gh;qx.event.Timer.once(function(e){qx.bom.element.Scroll.intoView(gd,null,ee,eL);}
+;gd.className=er;this._markedElement=gd;this._markedItemNode=gh;qx.event.Timer.once(function(e){qx.bom.element.Scroll.intoView(gd,null,ed,dJ);}
 ,this,0);return true;}
 ,__mv:function(gl,gk){var gj=apiviewer.UiModel.getInstance();if(gl.isFromProperty&&gl.isFromProperty()){gj.setExpandProperties(true);if(gl.isProtected()){gj.setShowProtected(true);}
 ;if(gl.isPrivate()){gj.setShowPrivate(true);}
@@ -13346,110 +13346,113 @@ else if(cQ==H){cP.setContent(cR.getResponseContent());}
 ;if(window.XMLHttpRequest){return new XMLHttpRequest;}
 ;}
 }),isSupported:function(){return !!this.createRequestObject();}
+,__cU:0,setTimeout:function(bc){this.__cU=bc;}
+,getTimeout:function(){return this.__cU;}
 },properties:{parseJson:{check:d,init:true}},members:{__sT:false,__sU:0,__sV:null,getRequest:function(){if(this.__sV===null){this.__sV=qx.io.remote.transport.XmlHttp.createRequestObject();this.__sV.onreadystatechange=qx.lang.Function.bind(this._onreadystatechange,this);}
 ;return this.__sV;}
-,send:function(){this.__sU=0;var bg=this.getRequest();var bc=this.getMethod();var bj=this.getAsynchronous();var bi=this.getUrl();var be=(window.location.protocol===T&&!(/^http(s){0,1}\:/.test(bi)));this.__sT=be;var bm=this.getParameters(false);var bk=[];for(var bd in bm){var bh=bm[bd];if(bh instanceof Array){for(var i=0;i<bh.length;i++ ){bk.push(encodeURIComponent(bd)+V+encodeURIComponent(bh[i]));}
+,send:function(){this.__sU=0;var bh=this.getRequest();var bd=this.getMethod();var bk=this.getAsynchronous();var bj=this.getUrl();var bf=(window.location.protocol===T&&!(/^http(s){0,1}\:/.test(bj)));this.__sT=bf;var bo=this.getParameters(false);var bl=[];for(var be in bo){var bi=bo[be];if(bi instanceof Array){for(var i=0;i<bi.length;i++ ){bl.push(encodeURIComponent(be)+V+encodeURIComponent(bi[i]));}
 ;}
-else {bk.push(encodeURIComponent(bd)+V+encodeURIComponent(bh));}
+else {bl.push(encodeURIComponent(be)+V+encodeURIComponent(bi));}
 ;}
-;if(bk.length>0){bi+=(bi.indexOf(S)>=0?O:S)+bk.join(O);}
-;if(this.getData()===null){var bm=this.getParameters(true);var bk=[];for(var bd in bm){var bh=bm[bd];if(bh instanceof Array){for(var i=0;i<bh.length;i++ ){bk.push(encodeURIComponent(bd)+V+encodeURIComponent(bh[i]));}
+;if(bl.length>0){bj+=(bj.indexOf(S)>=0?O:S)+bl.join(O);}
+;if(this.getData()===null){var bo=this.getParameters(true);var bl=[];for(var be in bo){var bi=bo[be];if(bi instanceof Array){for(var i=0;i<bi.length;i++ ){bl.push(encodeURIComponent(be)+V+encodeURIComponent(bi[i]));}
 ;}
-else {bk.push(encodeURIComponent(bd)+V+encodeURIComponent(bh));}
+else {bl.push(encodeURIComponent(be)+V+encodeURIComponent(bi));}
 ;}
-;if(bk.length>0){this.setData(bk.join(O));}
+;if(bl.length>0){this.setData(bl.join(O));}
 ;}
-;var bl=function(bw){var bv=G;var bq=I;var bp,bo,bn;var bs,bt,bu,br;var i=0;do {bp=bw.charCodeAt(i++ );bo=bw.charCodeAt(i++ );bn=bw.charCodeAt(i++ );bs=bp>>2;bt=((bp&3)<<4)|(bo>>4);bu=((bo&15)<<2)|(bn>>6);br=bn&63;if(isNaN(bo)){bu=br=64;}
-else if(isNaN(bn)){br=64;}
-;bq+=bv.charAt(bs)+bv.charAt(bt)+bv.charAt(bu)+bv.charAt(br);}
-while(i<bw.length);return bq;}
-;try{if(this.getUsername()){if(this.getUseBasicHttpAuth()){bg.open(bc,bi,bj);bg.setRequestHeader(t,n+bl(this.getUsername()+K+this.getPassword()));}
-else {bg.open(bc,bi,bj,this.getUsername(),this.getPassword());}
+;var bn=function(by){var bx=G;var bs=I;var br,bq,bp;var bu,bv,bw,bt;var i=0;do {br=by.charCodeAt(i++ );bq=by.charCodeAt(i++ );bp=by.charCodeAt(i++ );bu=br>>2;bv=((br&3)<<4)|(bq>>4);bw=((bq&15)<<2)|(bp>>6);bt=bp&63;if(isNaN(bq)){bw=bt=64;}
+else if(isNaN(bp)){bt=64;}
+;bs+=bx.charAt(bu)+bx.charAt(bv)+bx.charAt(bw)+bx.charAt(bt);}
+while(i<by.length);return bs;}
+;try{if(this.getUsername()){if(this.getUseBasicHttpAuth()){bh.open(bd,bj,bk);bh.setRequestHeader(t,n+bn(this.getUsername()+K+this.getPassword()));}
+else {bh.open(bd,bj,bk,this.getUsername(),this.getPassword());}
 ;}
-else {bg.open(bc,bi,bj);}
+else {bh.open(bd,bj,bk);}
 ;}
-catch(bx){this.error(r+bx);this.failed();return;}
-;if(!(qx.core.Environment.get(P)==U)){bg.setRequestHeader(h,window.location.href);}
-;var bf=this.getRequestHeaders();for(var bd in bf){bg.setRequestHeader(bd,bf[bd]);}
+catch(bz){this.error(r+bz);this.failed();return;}
+;var bm=qx.io.remote.transport.XmlHttp.getTimeout();if(bm&&bk){bh.timeout=bm;}
+;if(!(qx.core.Environment.get(P)==U)){bh.setRequestHeader(h,window.location.href);}
+;var bg=this.getRequestHeaders();for(var be in bg){bh.setRequestHeader(be,bg[be]);}
 ;try{{}
-;if(be&&bj&&qx.core.Environment.get(P)==J&&(qx.core.Environment.get(m)==9&&qx.core.Environment.get(F)==9)){qx.event.Timer.once(function(){bg.send(this.getData());}
+;if(bf&&bk&&qx.core.Environment.get(P)==J&&(qx.core.Environment.get(m)==9&&qx.core.Environment.get(F)==9)){qx.event.Timer.once(function(){bh.send(this.getData());}
 ,this,0);}
-else {bg.send(this.getData());}
+else {bh.send(this.getData());}
 ;}
-catch(by){if(be){this.failedLocally();}
-else {this.error(Y+bi+f+by,v);this.failed();}
+catch(bA){if(bf){this.failedLocally();}
+else {this.error(Y+bj+f+bA,v);this.failed();}
 ;return;}
-;if(!bj){this._onreadystatechange();}
+;if(!bk){this._onreadystatechange();}
 ;}
 ,failedLocally:function(){if(this.getState()===N){return;}
 ;this.warn(E+this.getUrl());this.failed();}
 ,_onreadystatechange:qx.event.GlobalError.observeMethod(function(e){switch(this.getState()){case M:case o:case N:case X:{}
-;return;};var bz=this.getReadyState();if(bz==4){if(!qx.io.remote.Exchange.wasSuccessful(this.getStatusCode(),bz,this.__sT)){if(this.getState()===R){this.setState(w);}
+;return;};var bB=this.getReadyState();if(bB==4){if(!qx.io.remote.Exchange.wasSuccessful(this.getStatusCode(),bB,this.__sT)){if(this.getState()===R){this.setState(w);}
 ;this.failed();return;}
 ;}
-;if(bz==3&&this.__sU==1){this.setState(qx.io.remote.Exchange._nativeMap[ ++this.__sU]);}
-;while(this.__sU<bz){this.setState(qx.io.remote.Exchange._nativeMap[ ++this.__sU]);}
+;if(bB==3&&this.__sU==1){this.setState(qx.io.remote.Exchange._nativeMap[ ++this.__sU]);}
+;while(this.__sU<bB){this.setState(qx.io.remote.Exchange._nativeMap[ ++this.__sU]);}
 ;}
-),getReadyState:function(){var bA=null;try{bA=this.getRequest().readyState;}
-catch(bB){}
-;return bA;}
-,setRequestHeader:function(bC,bD){this.getRequestHeaders()[bC]=bD;}
-,getResponseHeader:function(bE){var bF=null;try{bF=this.getRequest().getResponseHeader(bE)||null;}
-catch(bG){}
-;return bF;}
-,getStringResponseHeaders:function(){var bI=null;try{var bH=this.getRequest().getAllResponseHeaders();if(bH){bI=bH;}
+),getReadyState:function(){var bC=null;try{bC=this.getRequest().readyState;}
+catch(bD){}
+;return bC;}
+,setRequestHeader:function(bE,bF){this.getRequestHeaders()[bE]=bF;}
+,getResponseHeader:function(bG){var bH=null;try{bH=this.getRequest().getResponseHeader(bG)||null;}
+catch(bI){}
+;return bH;}
+,getStringResponseHeaders:function(){var bK=null;try{var bJ=this.getRequest().getAllResponseHeaders();if(bJ){bK=bJ;}
 ;}
-catch(bJ){}
-;return bI;}
-,getResponseHeaders:function(){var bK=this.getStringResponseHeaders();var bN={};if(bK){var bM=bK.split(/[\r\n]+/g);for(var i=0,l=bM.length;i<l;i++ ){var bL=bM[i].match(/^([^:]+)\s*:\s*(.+)$/i);if(bL){bN[bL[1]]=bL[2];}
+catch(bL){}
+;return bK;}
+,getResponseHeaders:function(){var bM=this.getStringResponseHeaders();var bP={};if(bM){var bO=bM.split(/[\r\n]+/g);for(var i=0,l=bO.length;i<l;i++ ){var bN=bO[i].match(/^([^:]+)\s*:\s*(.+)$/i);if(bN){bP[bN[1]]=bN[2];}
 ;}
 ;}
-;return bN;}
-,getStatusCode:function(){var bO=-1;try{bO=this.getRequest().status;if(bO===1223){bO=204;}
+;return bP;}
+,getStatusCode:function(){var bQ=-1;try{bQ=this.getRequest().status;if(bQ===1223){bQ=204;}
 ;}
-catch(bP){}
-;return bO;}
-,getStatusText:function(){var bQ=I;try{bQ=this.getRequest().statusText;}
 catch(bR){}
 ;return bQ;}
-,getResponseText:function(){var bS=null;try{bS=this.getRequest().responseText;}
-catch(bT){bS=null;}
+,getStatusText:function(){var bS=I;try{bS=this.getRequest().statusText;}
+catch(bT){}
 ;return bS;}
-,getResponseXml:function(){var bW=null;var bU=this.getStatusCode();var bV=this.getReadyState();if(qx.io.remote.Exchange.wasSuccessful(bU,bV,this.__sT)){try{bW=this.getRequest().responseXML;}
-catch(bX){}
+,getResponseText:function(){var bU=null;try{bU=this.getRequest().responseText;}
+catch(bV){bU=null;}
+;return bU;}
+,getResponseXml:function(){var bY=null;var bW=this.getStatusCode();var bX=this.getReadyState();if(qx.io.remote.Exchange.wasSuccessful(bW,bX,this.__sT)){try{bY=this.getRequest().responseXML;}
+catch(ca){}
 ;}
-;if(typeof bW==bb&&bW!=null){if(!bW.documentElement){var s=String(this.getRequest().responseText).replace(/<\?xml[^\?]*\?>/,I);bW.loadXML(s);}
-;if(!bW.documentElement){throw new Error(u);}
-;if(bW.documentElement.tagName==Q){throw new Error(x);}
+;if(typeof bY==bb&&bY!=null){if(!bY.documentElement){var s=String(this.getRequest().responseText).replace(/<\?xml[^\?]*\?>/,I);bY.loadXML(s);}
+;if(!bY.documentElement){throw new Error(u);}
+;if(bY.documentElement.tagName==Q){throw new Error(x);}
 ;}
 else {throw new Error(z+this.getRequest().responseText+L);}
-;return bW;}
-,getFetchedLength:function(){var bY=this.getResponseText();return typeof bY==q?bY.length:0;}
-,getResponseContent:function(){var ca=this.getState();if(ca!==M&&ca!=N){{}
+;return bY;}
+,getFetchedLength:function(){var cb=this.getResponseText();return typeof cb==q?cb.length:0;}
+,getResponseContent:function(){var cc=this.getState();if(cc!==M&&cc!=N){{}
 ;return null;}
 ;{}
-;var cb=this.getResponseText();if(ca==N){{}
-;return cb;}
+;var cd=this.getResponseText();if(cc==N){{}
+;return cd;}
 ;switch(this.getResponseType()){case C:case j:{}
-;return cb;case g:{}
-;try{if(cb&&cb.length>0){var cc;if(this.getParseJson()){cc=qx.lang.Json.parse(cb);cc=(cc===0?0:(cc||null));}
-else {cc=cb;}
-;return cc;}
+;return cd;case g:{}
+;try{if(cd&&cd.length>0){var ce;if(this.getParseJson()){ce=qx.lang.Json.parse(cd);ce=(ce===0?0:(ce||null));}
+else {ce=cd;}
+;return ce;}
 else {return null;}
 ;}
-catch(cd){this.error(k+cb+L,cd);return B+cb+p;}
+catch(cf){this.error(k+cd+L,cf);return B+cd+p;}
 ;case D:{}
-;try{if(cb&&cb.length>0){var cc=window.eval(cb);return (cc===0?0:(cc||null));}
+;try{if(cd&&cd.length>0){var ce=window.eval(cd);return (ce===0?0:(ce||null));}
 else {return null;}
 ;}
-catch(ce){this.error(H+cb+L,ce);return null;}
-;case a:cb=this.getResponseXml();{}
-;return (cb===0?0:(cb||null));default:this.warn(A+this.getResponseType()+b);return null;};}
-,_applyState:function(cg,cf){{}
-;switch(cg){case W:this.fireEvent(W);break;case R:this.fireEvent(R);break;case w:this.fireEvent(w);break;case y:this.fireEvent(y);break;case M:this.fireEvent(M);break;case N:this.fireEvent(N);break;case o:this.getRequest().abort();this.fireEvent(o);break;case X:this.getRequest().abort();this.fireEvent(X);break;};}
+catch(cg){this.error(H+cd+L,cg);return null;}
+;case a:cd=this.getResponseXml();{}
+;return (cd===0?0:(cd||null));default:this.warn(A+this.getResponseType()+b);return null;};}
+,_applyState:function(ci,ch){{}
+;switch(ci){case W:this.fireEvent(W);break;case R:this.fireEvent(R);break;case w:this.fireEvent(w);break;case y:this.fireEvent(y);break;case M:this.fireEvent(M);break;case N:this.fireEvent(N);break;case o:this.getRequest().abort();this.fireEvent(o);break;case X:this.getRequest().abort();this.fireEvent(X);break;};}
 },defer:function(){qx.io.remote.Exchange.registerType(qx.io.remote.transport.XmlHttp,c);}
-,destruct:function(){var ch=this.getRequest();if(ch){ch.onreadystatechange=(function(){}
-);switch(ch.readyState){case 1:case 2:case 3:ch.abort();};}
+,destruct:function(){var cj=this.getRequest();if(cj){cj.onreadystatechange=(function(){}
+);switch(cj.readyState){case 1:case 2:case 3:cj.abort();};}
 ;this.__sV=null;}
 });}
 )();
@@ -13917,12 +13920,12 @@ else {this.setStyle(j,o);this.setStyle(q,null);this.setStyle(t,m);}
 ,setTop:function(J,I){var top=I-J;this.setStyle(e,top+n);}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c="qooxdoo",d="",e="versionLabel.version",f='5.1',g=" ",h='HEAD:dc693af';qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
-;if(i==undefined){i=qx.core.Environment.get(e);if(i==null){i=h;if(i==d){i=f;}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='HEAD:e8f0954',d="qooxdoo",e="",f="versionLabel.version",g='5.1',h=" ";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=c;if(i==e){i=g;}
 ;}
 ;}
-;qx.ui.basic.Label.call(this,j+g+i);}
-,defer:function(){qx.core.Environment.add(b,c);qx.core.Environment.add(e,null);}
+;qx.ui.basic.Label.call(this,j+h+i);}
+,defer:function(){qx.core.Environment.add(b,d);qx.core.Environment.add(f,null);}
 });}
 )();
 (function(){var a="tabView",b="classLinkTapped",c="apiviewer.TabViewController",d="changeSelection",e="itemName",f="qx.event.type.Data";qx.Class.define(c,{extend:qx.core.Object,construct:function(g){qx.core.Object.call(this);apiviewer.TabViewController.instance=this;this._tabView=g.getWidgetById(a);this._tabView.addListener(d,this.__pg,this);}
