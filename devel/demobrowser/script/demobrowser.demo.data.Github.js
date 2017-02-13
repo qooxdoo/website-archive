@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Github.39cd85ea3a41.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Github.b4f7ddc2d44b.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -3316,7 +3316,7 @@ else {this._emit(u);}
 ;}
 ;this._emit(q);}
 ,__sQ:function(){var bC;if(this._getProtocol()===P){bC=!this.responseText;}
-else {bC=!this.statusText&&this.status!==204;}
+else {bC=this.status===0;}
 ;return bC;}
 ,__sR:function(){var bD=this.__sG;this.readyState=qx.bom.request.Xhr.DONE;this.__cU=true;bD.aborted=true;bD.abort();this.responseText=B;this.responseXML=null;this.__sO();}
 ,__sS:function(){var bE=this.readyState===qx.bom.request.Xhr.DONE;if(this._getProtocol()===P&&this.status===0&&bE){if(!this.__sQ()){this.status=200;}
