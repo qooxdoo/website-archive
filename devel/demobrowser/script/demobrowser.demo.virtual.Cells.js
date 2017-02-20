@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Cells.fcdd2e588207.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Cells.f903b8e95080.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10733,9 +10733,9 @@ else {content=d+I+i;content+=H+g;}
 (function(){var a="cell-image",b="qx.ui.virtual.cell.Image";qx.Class.define(b,{extend:qx.ui.virtual.cell.AbstractImage,properties:{appearance:{refine:true,init:a}},members:{_identifyImage:function(c){return c;}
 }});}
 )();
-(function(){var a="_applyIconFalse",b="qx.ui.virtual.cell.Boolean",c="_applyIconTrue",d="String",e="cell-boolean";qx.Class.define(b,{extend:qx.ui.virtual.cell.AbstractImage,construct:function(){qx.ui.virtual.cell.AbstractImage.call(this);this.__AX=qx.util.AliasManager.getInstance();}
-,properties:{appearance:{refine:true,init:e},iconTrue:{check:d,themeable:true,apply:c},iconFalse:{check:d,themeable:true,apply:a}},members:{__CJ:null,__CK:null,__AX:null,_applyIconTrue:function(f){this.__CJ=this.__AX.resolve(f);}
-,_applyIconFalse:function(g){this.__CK=this.__AX.resolve(g);}
+(function(){var a="_applyIconFalse",b="qx.ui.virtual.cell.Boolean",c="_applyIconTrue",d="String",e="cell-boolean";qx.Class.define(b,{extend:qx.ui.virtual.cell.AbstractImage,construct:function(){qx.ui.virtual.cell.AbstractImage.call(this);this.__Bt=qx.util.AliasManager.getInstance();}
+,properties:{appearance:{refine:true,init:e},iconTrue:{check:d,themeable:true,apply:c},iconFalse:{check:d,themeable:true,apply:a}},members:{__CJ:null,__CK:null,__Bt:null,_applyIconTrue:function(f){this.__CJ=this.__Bt.resolve(f);}
+,_applyIconFalse:function(g){this.__CK=this.__Bt.resolve(g);}
 ,_identifyImage:function(h){return h==true?this.__CJ:this.__CK;}
 }});}
 )();
