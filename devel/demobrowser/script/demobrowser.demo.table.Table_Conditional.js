@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Conditional.67a728f4a057.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Conditional.20cb2fc3acfa.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -13205,8 +13205,8 @@ else {this.setLabel(o);}
 ;}
 }});}
 )();
-(function(){var a="regex cannot be null!",b="font-weight",c="==",d="Condition not recognized or value1/value2 is null!",e="Condition not recognized or value is null!",f="",g=">",h="text-align",j="between",k="<",l=";",m='g',n="regex",o=":",p="qx.ui.table.cellrenderer.Conditional",q="!between",r=">=",s="color",t="font-style",u="!=",v="<=";qx.Class.define(p,{extend:qx.ui.table.cellrenderer.Default,construct:function(y,w,x,z){qx.ui.table.cellrenderer.Default.call(this);this.numericAllowed=[c,u,g,k,r,v];this.betweenAllowed=[j,q];this.conditions=[];this.__Bx=y||f;this.__By=w||f;this.__Bz=x||f;this.__BA=z||f;}
-,members:{__Bx:null,__By:null,__Bz:null,__BA:null,__BB:function(B,A){if(B[1]!=null){A[h]=B[1];}
+(function(){var a="regex cannot be null!",b="font-weight",c="==",d="Condition not recognized or value1/value2 is null!",e="Condition not recognized or value is null!",f="",g=">",h="text-align",j="between",k="<",l=";",m='g',n="regex",o=":",p="qx.ui.table.cellrenderer.Conditional",q="!between",r=">=",s="color",t="font-style",u="!=",v="<=";qx.Class.define(p,{extend:qx.ui.table.cellrenderer.Default,construct:function(y,w,x,z){qx.ui.table.cellrenderer.Default.call(this);this.numericAllowed=[c,u,g,k,r,v];this.betweenAllowed=[j,q];this.conditions=[];this.__Bl=y||f;this.__Bm=w||f;this.__Bn=x||f;this.__Bo=z||f;}
+,members:{__Bl:null,__Bm:null,__Bn:null,__Bo:null,__Bp:function(B,A){if(B[1]!=null){A[h]=B[1];}
 ;if(B[2]!=null){A[s]=B[2];}
 ;if(B[3]!=null){A[t]=B[3];}
 ;if(B[4]!=null){A[b]=B[4];}
@@ -13225,7 +13225,7 @@ else {throw new Error(d);}
 ;if(ba!=null){this.conditions.push(ba);}
 else {throw new Error(a);}
 ;}
-,_getCellStyle:function(bi){var bf=bi.table.getTableModel();var i;var be;var bb;var bd={"text-align":this.__Bx,"color":this.__By,"font-style":this.__Bz,"font-weight":this.__BA};for(i in this.conditions){be=false;if(qx.lang.Array.contains(this.numericAllowed,this.conditions[i][0])){if(this.conditions[i][6]==null){bb=bi.value;}
+,_getCellStyle:function(bi){var bf=bi.table.getTableModel();var i;var be;var bb;var bd={"text-align":this.__Bl,"color":this.__Bm,"font-style":this.__Bn,"font-weight":this.__Bo};for(i in this.conditions){be=false;if(qx.lang.Array.contains(this.numericAllowed,this.conditions[i][0])){if(this.conditions[i][6]==null){bb=bi.value;}
 else {bb=bf.getValueById(this.conditions[i][6],bi.row);}
 ;switch(this.conditions[i][0]){case c:if(bb==this.conditions[i][5]){be=true;}
 ;break;case u:if(bb!=this.conditions[i][5]){be=true;}
@@ -13242,7 +13242,7 @@ else {bb=bf.getValueById(this.conditions[i][7],bi.row);}
 else if(this.conditions[i][0]==n){if(this.conditions[i][6]==null){bb=bi.value;}
 else {bb=bf.getValueById(this.conditions[i][6],bi.row);}
 ;var bc=new RegExp(this.conditions[i][5],m);be=bc.test(bb);}
-;if(be==true){this.__BB(this.conditions[i],bd);}
+;if(be==true){this.__Bp(this.conditions[i],bd);}
 ;}
 ;var bg=[];for(var bh in bd){if(bd[bh]){bg.push(bh,o,bd[bh],l);}
 ;}
