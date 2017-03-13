@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Conditional.20cb2fc3acfa.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Conditional.8ed4b2e6d670.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8469,7 +8469,7 @@ else {var cw=this.__iM[cu.pointerId];cu.delta={x:-cw.velocityX,y:-cw.velocityY,a
 ,unregisterEvent:function(u,t,s){}
 ,_initObserver:function(){this.__fk=qx.lang.Function.listener(this.checkAndFireGesture,this);qx.event.handler.Gesture.GESTURE_EVENTS.forEach(function(w){qx.event.Registration.addListener(this.__dU,w,this.__fk,this);}
 .bind(this));if(qx.core.Environment.get(c)==b&&qx.core.Environment.get(l)<9){this.__jf=qx.lang.Function.listener(this._onDblClick,this);qx.bom.Event.addNativeListener(this.__dU,a,this.__jf);}
-;var v=qx.bom.client.Event.getMouseWheel(this.__cr);this.__jg=qx.lang.Function.listener(this._fireRoll,this);qx.bom.Event.addNativeListener(v.target,v.type,this.__jg,this);}
+;var v=qx.bom.client.Event.getMouseWheel(this.__cr);this.__jg=qx.lang.Function.listener(this._fireRoll,this);qx.bom.Event.addNativeListener(v.target,v.type,this.__jg,true);}
 ,checkAndFireGesture:function(y,x,z){this.__ii(h,[y.getNativeEvent(),y.getType(),y.getTarget()]);}
 ,_stopObserver:function(){qx.event.handler.Gesture.GESTURE_EVENTS.forEach(function(B){qx.event.Registration.removeListener(this.__dU,B,this.__fk);}
 .bind(this));if(qx.core.Environment.get(c)==b&&qx.core.Environment.get(l)<9){qx.bom.Event.removeNativeListener(this.__dU,a,this.__jf);}
