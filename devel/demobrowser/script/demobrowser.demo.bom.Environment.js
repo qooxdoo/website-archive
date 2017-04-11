@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.29c3c2799540.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.189265fe8452.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4877,10 +4877,12 @@ else if(N<0){return false;}
 ;return i;}
 ,getVariant:function(){var k=qx.bom.client.Locale.__me();var m=d;var l=k.indexOf(b);if(l!=-1){m=k.substr(l+1);}
 ;return m;}
-,__me:function(){var n=(navigator.userLanguage||navigator.language||d);if(qx.bom.client.OperatingSystem.getName()==e){var o=/(\w{2})-(\w{2})/i.exec(navigator.userAgent);if(o){n=o[0];}
+,__me:function(){var n=(navigator.userLanguage||navigator.language||d);if(qx.bom.client.OperatingSystem.getName()==e){var o=/^(\d+)\.(\d+)(\..+)?/i.exec(qx.bom.client.OperatingSystem.getVersion());if(qx.lang.Type.isArray(o)&&o.length>=3){if(parseInt(o[1])<4||(parseInt(o[1])===4&&parseInt(o[2])<4)){var p=/(\w{2})-(\w{2})/i.exec(navigator.userAgent);if(p){n=p[0];}
+;}
+;}
 ;}
 ;return n.toLowerCase();}
-},defer:function(p){qx.core.Environment.add(c,p.getLocale);qx.core.Environment.add(f,p.getVariant);qx.core.Environment.add(h,g);}
+},defer:function(q){qx.core.Environment.add(c,q.getLocale);qx.core.Environment.add(f,q.getVariant);qx.core.Environment.add(h,g);}
 });}
 )();
 (function(){var a="qx.bom.client.PhoneGap",b="cordova",c="phonegap.notification",d="notification",e="Cordova",f="PhoneGap",g="phonegap";qx.Bootstrap.define(a,{statics:{getPhoneGap:function(){return (b in window||e in window||f in window);}
