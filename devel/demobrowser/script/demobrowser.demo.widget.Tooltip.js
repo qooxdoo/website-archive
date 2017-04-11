@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tooltip.8426b62af772.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tooltip.958024621693.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8454,6 +8454,17 @@ else if(typeof P===o){var Q=P.constructor;return qx.Class.hasInterface(Q,qx.ui.d
 ,getInsets:function(){}
 }});}
 )();
+(function(){var a="transitionDelay",b="transitionProperty",c="This decorator is already in-use. Modification is not possible anymore!",d="qx.debug",e='0s',f='ease',g="transitionDuration",h="css.transition",j='all',k="transitionTimingFunction",l="qx.ui.decoration.MTransition",m="_applyTransition",n=' ',o=",";qx.Mixin.define(l,{properties:{transitionProperty:{nullable:true,apply:m},transitionDuration:{nullable:true,apply:m},transitionTimingFunction:{nullable:true,apply:m},transitionDelay:{nullable:true,apply:m}},members:{_styleTransition:function(p){var r=qx.core.Environment.get(h);if(!r||this.getTransitionDuration()==null){return;}
+;r=qx.bom.Style.getCssName(r.name);var q=[b,g,k,a];(function(x,z,u,y){for(var i=0;i<x.length;i++ ){var t=x[i]||j;var s=z[i]||e;var A=u[i]||f;var w=y[i]||e;var v=t+n+s+n+A+n+w;if(!p[r]){p[r]=v;}
+else {p[r]+=o+v;}
+;}
+;}
+).apply(this,this._getExtendedPropertyValueArrays(q));}
+,_applyTransition:function(){if(qx.core.Environment.get(d)){if(this._isInitialized()){throw new Error(c);}
+;}
+;}
+}});}
+)();
 (function(){var a=" 0",b="),to(",c="px",d="css.borderradius",e="from(",f=")",g="css.gradient.filter",h='background',j="orientation",k="filter",l="', ",m="0",n="_applyLinearBackgroundGradient",o="-webkit-gradient(linear,",p="%",q="qx.debug",r="background-color",s="deg, ",t="url(",u="css.gradient.legacywebkit",v="EndColorStr='#FF",w="startColor",x="shorthand",y="qx.theme",z="px 100%",A=") ",B="(GradientType=",C="vertical",D="",E="transparent",F="qx.ui.decoration.MLinearBackgroundGradient",G="% 100%",H="endColorPosition",I="canvas",J="(",K="css.gradient.linear",L="';)",M="endColor",N=", ",O="background",P="horizontal",Q="This decorator is already in-use. Modification is not possible anymore!",R="progid:DXImageTransform.Microsoft.Gradient",S="StartColorStr='#FF",T="100% ",U='2d',V="startColorPosition",W=" ",X="white",Y="colorPositionUnit",bd="linear-gradient",be='getOrderGradientsFront',bf=",";qx.Mixin.define(F,{properties:{startColor:{nullable:true,apply:n},endColor:{nullable:true,apply:n},orientation:{init:C,apply:n},startColorPosition:{init:0,apply:n},endColorPosition:{init:100,apply:n},colorPositionUnit:{init:p,apply:n},gradientStart:{group:[w,V],mode:x},gradientEnd:{group:[M,H],mode:x}},members:{_styleLinearBackgroundGradient:function(bg){var bi=[];if(!this.getStartColor()||!this.getEndColor()){return;}
 ;var bh=this.__km;if(qx.core.Environment.get(u)){bh=this.__ki;}
 else if(qx.core.Environment.get(g)&&!qx.core.Environment.get(K)&&qx.core.Environment.get(d)){bh=this.__kj;}
@@ -8621,7 +8632,7 @@ else {C[i]=r;}
 },destruct:function(){this.__ks=null;}
 });}
 )();
-(function(){var a=', ',b="qx.ui.decoration.Decorator",c="_style",d="_getDefaultInsetsFor",e="left",f="top",g="bottom",h="right";qx.Class.define(b,{extend:qx.ui.decoration.Abstract,implement:[qx.ui.decoration.IDecorator],include:[qx.ui.decoration.MBackgroundColor,qx.ui.decoration.MBorderRadius,qx.ui.decoration.MBoxShadow,qx.ui.decoration.MDoubleBorder,qx.ui.decoration.MLinearBackgroundGradient,qx.ui.decoration.MBorderImage],members:{__cU:false,getPadding:function(){var l=this.getInset();var j=this._getDefaultInsetsForBorderImage();var o=l.top-(j.top?j.top:this.getWidthTop());var n=l.right-(j.right?j.right:this.getWidthRight());var k=l.bottom-(j.bottom?j.bottom:this.getWidthBottom());var m=l.left-(j.left?j.left:this.getWidthLeft());return {top:l.top?o:this.getInnerWidthTop(),right:l.right?n:this.getInnerWidthRight(),bottom:l.bottom?k:this.getInnerWidthBottom(),left:l.left?m:this.getInnerWidthLeft()};}
+(function(){var a=', ',b="qx.ui.decoration.Decorator",c="_style",d="_getDefaultInsetsFor",e="left",f="top",g="bottom",h="right";qx.Class.define(b,{extend:qx.ui.decoration.Abstract,implement:[qx.ui.decoration.IDecorator],include:[qx.ui.decoration.MBackgroundColor,qx.ui.decoration.MBorderRadius,qx.ui.decoration.MBoxShadow,qx.ui.decoration.MDoubleBorder,qx.ui.decoration.MLinearBackgroundGradient,qx.ui.decoration.MBorderImage,qx.ui.decoration.MTransition],members:{__cU:false,getPadding:function(){var l=this.getInset();var j=this._getDefaultInsetsForBorderImage();var o=l.top-(j.top?j.top:this.getWidthTop());var n=l.right-(j.right?j.right:this.getWidthRight());var k=l.bottom-(j.bottom?j.bottom:this.getWidthBottom());var m=l.left-(j.left?j.left:this.getWidthLeft());return {top:l.top?o:this.getInnerWidthTop(),right:l.right?n:this.getInnerWidthRight(),bottom:l.bottom?k:this.getInnerWidthBottom(),left:l.left?m:this.getInnerWidthLeft()};}
 ,getStyles:function(s){if(s){return this._getStyles();}
 ;var r={};var q=this._getStyles();for(var p in q){r[qx.lang.String.camelCase(p)]=q[p];}
 ;return r;}
