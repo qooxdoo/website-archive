@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Label.c8ab9c1406e7.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Label.b8f02f264e49.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10790,8 +10790,8 @@ else {ey+=eF.height;}
 )();
 (function(){var a="changeModel",b="qx.core.Object",c="qx.data.controller.Object",d="get",e="[",f="reset",g="_applyModel",h="last";qx.Class.define(c,{extend:qx.core.Object,construct:function(j){qx.core.Object.call(this);this.__ds={};this.__hJ=[];if(j!=null){this.setModel(j);}
 ;}
-,properties:{model:{check:b,event:a,apply:g,nullable:true,dereference:true}},members:{__hJ:null,__ds:null,_applyModel:function(o,l){for(var i=0;i<this.__hJ.length;i++ ){var t=this.__hJ[i][0];var q=this.__hJ[i][1];var n=this.__hJ[i][2];var r=this.__hJ[i][3];var p=this.__hJ[i][4];var m=this.__hJ[i][5];if(l!=undefined&&!l.isDisposed()){this.__vU(t,q,n,l);}
-;if(o!=undefined){this.__vT(t,q,n,r,p,m);}
+,properties:{model:{check:b,event:a,apply:g,nullable:true,dereference:true}},members:{__hJ:null,__ds:null,_applyModel:function(o,l){for(var i=0;i<this.__hJ.length;i++ ){var t=this.__hJ[i][0];var q=this.__hJ[i][1];var n=this.__hJ[i][2];var r=this.__hJ[i][3];var p=this.__hJ[i][4];var m=this.__hJ[i][5];if(l!=undefined&&!l.isDisposed()){this.__vR(t,q,n,l);}
+;if(o!=undefined){this.__vQ(t,q,n,r,p,m);}
 else {if(t.isDisposed()||qx.core.ObjectRegistry.inShutDown){continue;}
 ;if(q.indexOf(e)==-1){t[f+qx.lang.String.firstUp(q)]();}
 else {var open=q.indexOf(e);var k=parseInt(q.substring(open+1,q.length-1),10);q=q.substring(0,open);var s=t[d+qx.lang.String.firstUp(q)]();if(k==h){k=s.length;}
@@ -10800,15 +10800,15 @@ else {var open=q.indexOf(e);var k=parseInt(q.substring(open+1,q.length-1),10);q=
 ;}
 ;}
 ;}
-,addTarget:function(z,w,u,x,y,v){this.__hJ.push([z,w,u,x,y,v]);this.__vT(z,w,u,x,y,v);}
-,__vT:function(F,D,B,G,E,A){if(this.getModel()==null){return;}
+,addTarget:function(z,w,u,x,y,v){this.__hJ.push([z,w,u,x,y,v]);this.__vQ(z,w,u,x,y,v);}
+,__vQ:function(F,D,B,G,E,A){if(this.getModel()==null){return;}
 ;var C=this.getModel().bind(B,F,D,E);var I=null;if(G){I=F.bind(D,this.getModel(),B,A);}
 ;var H=F.toHashCode();if(this.__ds[H]==undefined){this.__ds[H]=[];}
 ;this.__ds[H].push([C,I,D,B,E,A]);}
-,removeTarget:function(K,J,L){this.__vU(K,J,L,this.getModel());for(var i=0;i<this.__hJ.length;i++ ){if(this.__hJ[i][0]==K&&this.__hJ[i][1]==J&&this.__hJ[i][2]==L){this.__hJ.splice(i,1);}
+,removeTarget:function(K,J,L){this.__vR(K,J,L,this.getModel());for(var i=0;i<this.__hJ.length;i++ ){if(this.__hJ[i][0]==K&&this.__hJ[i][1]==J&&this.__hJ[i][2]==L){this.__hJ.splice(i,1);}
 ;}
 ;}
-,__vU:function(R,O,N,M){if(!(R instanceof qx.core.Object)){return;}
+,__vR:function(R,O,N,M){if(!(R instanceof qx.core.Object)){return;}
 ;var P=this.__ds[R.toHashCode()];if(P==undefined||P.length==0){return;}
 ;for(var i=0;i<P.length;i++ ){if(P[i][2]==O&&P[i][3]==N){var Q=P[i][0];M.removeBinding(Q);if(P[i][1]!=null){R.removeBinding(P[i][1]);}
 ;P.splice(i,1);return;}
@@ -10930,7 +10930,7 @@ else {this.addState(j);}
 ,"false":null}),_onChangeTheme:function(){qx.ui.core.Widget.prototype._onChangeTheme.call(this);if(this._placeholder){this._placeholder.dispose();this._placeholder=null;}
 ;if(!this.__qy&&qx.ui.form.AbstractField.__fG){qx.bom.Stylesheet.removeSheet(qx.ui.form.AbstractField.__fG);qx.ui.form.AbstractField.__fG=null;qx.ui.form.AbstractField.__qx();}
 ;}
-,_validateInput:function(dw){var dv=dw;var dt=this.getFilter();if(dt!=null){dv=cm;var du=dw.search(dt);var dx=dw;while((du>=0)&&(dx.length>0)){dv=dv+(dx.charAt(du));dx=dx.substring(du+1,dx.length);du=dx.search(dt);}
+,_validateInput:function(dw){var dv=dw;var dt=this.getFilter();if(dt!==null){dv=cm;var du=dw.search(dt);var dx=dw;while((du>=0)&&(dx.length>0)){dv=dv+(dx.charAt(du));dx=dx.substring(du+1,dx.length);du=dx.search(dt);}
 ;}
 ;return dv;}
 ,_applyPlaceholder:function(dz,dy){if(this.__qy){this._getPlaceholderElement().setValue(dz);if(dz!=null){this.addListener(V,this._removePlaceholder,this);this.addListener(ct,this._showPlaceholder,this);this._showPlaceholder();}
