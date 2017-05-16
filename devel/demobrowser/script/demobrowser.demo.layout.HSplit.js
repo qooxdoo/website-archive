@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.layout.HSplit.dbaec879e710.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.layout.HSplit.6755ce34d0b4.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9701,8 +9701,9 @@ else if(bg.alias){be=t;}
 ;}
 ;if(!this.__mu){return;}
 ;if(!this.__cK(h,this.__mo,this.__mn,true,e)){this.clearSession();}
-;var bv=e.getTarget();var by=this.getCursor();if(!by){by=qx.ui.core.DragDropCursor.getInstance();}
-;var bx=by.getContentElement().getDomElement();if(bv!==bx){var bw=this.__mC(bv);if(bw&&bw!=this.__mn){if(this.__mn){this.__cK(F,this.__mn,this.__mo,false,e);}
+;var bv=e.getTarget();if(this.__my.target===bv){bv=e.getNativeEvent().view.document.elementFromPoint(e.getDocumentLeft(),e.getDocumentTop());}
+;var by=this.getCursor();if(!by){by=qx.ui.core.DragDropCursor.getInstance();}
+;var bx=by.getContentElement().getDomElement();if(bv!==bx&&(!bx||!bx.contains(bv))){var bw=this.__mC(bv);if(bw&&bw!=this.__mn){if(this.__mn){this.__cK(F,this.__mn,this.__mo,false,e);}
 ;this.__mv=true;this.__mn=bw;this.__mv=this.__cK(H,bw,this.__mo,true,e);}
 else if(!bw&&this.__mn){this.__cK(F,this.__mn,this.__mo,false,e);this.__mn=null;this.__mv=false;qx.event.Timer.once(this.__mA,this,0);}
 ;}
