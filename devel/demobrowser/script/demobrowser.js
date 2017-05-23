@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:d337490","qx.theme":"demobrowser.Theme","qx.version":"5.1"};
+var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:5fd3353","qx.theme":"demobrowser.Theme","qx.version":"5.1"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.9da5726799be.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.55f0cd6be3fc.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -12599,7 +12599,8 @@ catch(e){if(qx.core.Environment.get(k)){this.warn(j);}
 ;}
 ;}
 ;}
-,_syncSourceAfterDOMMove:function(){var bc=this.getContentElement().getDomElement();var bb=bc.src;if(bb.charAt(bb.length-1)==q){bb=bb.substring(0,bb.length-1);}
+,_syncSourceAfterDOMMove:function(){var bc=this.getContentElement()&&this.getContentElement().getDomElement();if(!bc){return;}
+;var bb=bc.src;if(bb.charAt(bb.length-1)==q){bb=bb.substring(0,bb.length-1);}
 ;if(bb!=this.getSource()){if(qx.core.Environment.get(f)!=C&&qx.core.Environment.get(f)!=s){qx.bom.Iframe.getWindow(bc).stop();}
 ;bc.src=this.getSource();}
 ;}
@@ -13951,7 +13952,7 @@ else {s=t.substring(1);if(s.match(/^\d+$/gi)){r=String.fromCharCode(parseInt(s,1
 );}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c="qooxdoo",d="",e='HEAD:d337490',f="versionLabel.version",g='5.1',h=" ";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c="qooxdoo",d="",e='HEAD:5fd3353',f="versionLabel.version",g='5.1',h=" ";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
 ;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=e;if(i==d){i=g;}
 ;}
 ;}
