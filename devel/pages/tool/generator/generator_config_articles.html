@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -319,7 +318,7 @@ each locale)</li>
 <p>and the &quot;joblist&quot; key will get the value [1,2,3].</p>
 <p>A special situation arises if you are using a <strong>top-level let</strong>, i.e. a <em>let</em> section on the highest level in the config file, and not in any job definition. This <em>let</em> map will be automatically applied to every job run, without any explicit reference (so be aware of undesired side effects of bindings herein).</p>
 <p>When assembling a job to run, the precedence of all the various <em>let</em> maps is</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">local</span> <span class="nx">job</span> <span class="nx">let</span> <span class="o">&lt;</span> <span class="nx">config</span><span class="o">-</span><span class="nx">level</span> <span class="nx">let</span> <span class="o">&lt;</span> <span class="s1">&#39;extend&#39;</span> <span class="nx">job</span> <span class="nx">lets</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">local</span> <span class="nx">job</span> <span class="kd">let</span> <span class="o">&lt;</span> <span class="nx">config</span><span class="o">-</span><span class="nx">level</span> <span class="kd">let</span> <span class="o">&lt;</span> <span class="s1">&#39;extend&#39;</span> <span class="nx">job</span> <span class="nx">lets</span>
 </pre></div>
 </div>
 <p>With imported jobs top-level definitions will take precedence over any definitions from the external config file (as if they were the 'first' let section in the chain).</p>
@@ -436,13 +435,15 @@ macros, references have to be in curly braces and prefixed with <tt class="docut
 </pre></div>
 </div>
 <p>and a corresponding <em>&#64;asset</em> hint might use it as:</p>
-<div class="highlight-javascript"><pre>@asset(qx/icon/${qx.icontheme}/${mySizes}/*)</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@asset(qx/icon/${qx.icontheme}/${mySizes}/*)
+</pre></div>
 </div>
 <p>The values of these macros are lists, and each reference will be expanded into all possible values with all possible combinations. So the above asset declaration would essentially be expanded into:</p>
-<div class="highlight-javascript"><pre>@asset(qx/icon/Tango/16/*)
+<div class="highlight-javascript"><div class="highlight"><pre>@asset(qx/icon/Tango/16/*)
 @asset(qx/icon/Tango/32/*)
 @asset(qx/icon/Oxygen/16/*)
-@asset(qx/icon/Oxygen/32/*)</pre>
+@asset(qx/icon/Oxygen/32/*)
+</pre></div>
 </div>
 </div>
 <div class="section" id="library-key-and-manifest-files">
@@ -985,7 +986,7 @@ time. This can be a workaround for the time being.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  

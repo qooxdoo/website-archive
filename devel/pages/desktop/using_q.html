@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -181,7 +180,8 @@ check the details. It shows you a link to the original method and the
 implementing module. That's the module we need to include by adding a
 <a class="reference internal" href="../tool/sdk/code_structure.html#pages-code-structure-details"><em>require hint</em></a> to the class. At the top of
 the file using the <tt class="docutils literal"><span class="pre">fadeIn</span></tt> method, add</p>
-<div class="highlight-javascript"><pre>@use(qx.module.Animation)</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@use(qx.module.Animation)
+</pre></div>
 </div>
 <p>(assuming the call to <tt class="docutils literal"><span class="pre">fadeIn</span></tt> is executed after the entire application has been
 loaded). Once loaded the <tt class="docutils literal"><span class="pre">qx.module.Animation</span></tt> module will register itself
@@ -330,7 +330,7 @@ don't need, which adds to the code size of your application.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  

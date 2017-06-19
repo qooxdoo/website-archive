@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -1400,46 +1399,32 @@ are:</p>
 <col width="90%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first last">Key</p>
-</th>
-<th class="head"><p class="first last">Description</p>
-</th>
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><p class="first last"><tt class="docutils literal"><span class="pre">FILELIST</span></tt></p>
-</td>
-<td><p class="first last">the (space-separated) list of file paths that have changed (e.g.
-<em>foo/bar/baz.js foo/bar/yeo.js</em>)</p>
-</td>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">FILELIST</span></tt></td>
+<td>the (space-separated) list of file paths that have changed (e.g.
+<em>foo/bar/baz.js foo/bar/yeo.js</em>)</td>
 </tr>
-<tr class="row-odd"><td><p class="first last"><tt class="docutils literal"><span class="pre">FILE</span></tt></p>
-</td>
-<td><p class="first last">the individual file path that has changed (e.g. <em>foo/bar/baz.js</em>;
-interesting when <em>per-file</em> is true)</p>
-</td>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">FILE</span></tt></td>
+<td>the individual file path that has changed (e.g. <em>foo/bar/baz.js</em>;
+interesting when <em>per-file</em> is true)</td>
 </tr>
-<tr class="row-even"><td><p class="first last"><tt class="docutils literal"><span class="pre">DIRNAME</span></tt></p>
-</td>
-<td><p class="first last">the directory path of an individual file (e.g. <em>foo/bar</em> in
-<em>foo/bar/baz.js</em>)</p>
-</td>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">DIRNAME</span></tt></td>
+<td>the directory path of an individual file (e.g. <em>foo/bar</em> in
+<em>foo/bar/baz.js</em>)</td>
 </tr>
-<tr class="row-odd"><td><p class="first last"><tt class="docutils literal"><span class="pre">BASENAME</span></tt></p>
-</td>
-<td><p class="first last">just the basename of an individual file including extension (e.g.
-<em>baz.js</em> in <em>foo/bar/baz.js</em>)</p>
-</td>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">BASENAME</span></tt></td>
+<td>just the basename of an individual file including extension (e.g.
+<em>baz.js</em> in <em>foo/bar/baz.js</em>)</td>
 </tr>
-<tr class="row-even"><td><p class="first last"><tt class="docutils literal"><span class="pre">FILENAME</span></tt></p>
-</td>
-<td><p class="first last">the file name without path and extension (e.g. <em>baz</em> in <em>foo/bar/baz.js</em>)</p>
-</td>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">FILENAME</span></tt></td>
+<td>the file name without path and extension (e.g. <em>baz</em> in <em>foo/bar/baz.js</em>)</td>
 </tr>
-<tr class="row-odd"><td><p class="first last"><tt class="docutils literal"><span class="pre">EXTENSION</span></tt></p>
-</td>
-<td><p class="first last">the file extension (e.g. <em>.js</em> in <em>foo/bar/baz.js</em>)</p>
-</td>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">EXTENSION</span></tt></td>
+<td>the file extension (e.g. <em>.js</em> in <em>foo/bar/baz.js</em>)</td>
 </tr>
 </tbody>
 </table>
@@ -1564,36 +1549,26 @@ generation process. Macros are referenced in the template with
 <col width="60%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head"><p class="first last">Macro</p>
-</th>
-<th class="head"><p class="first last">Description</p>
-</th>
+<tr class="row-odd"><th class="head">Macro</th>
+<th class="head">Description</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><p class="first last"><tt class="docutils literal"><span class="pre">APP_DOCUMENT_ROOT</span></tt></p>
-</td>
-<td><p class="first last">the common root path of all libraries making up the application; this is
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">APP_DOCUMENT_ROOT</span></tt></td>
+<td>the common root path of all libraries making up the application; this is
 usually mapped to an alias in the web server, so that all relative URLs to
-application files continue to work under the web server</p>
-</td>
+application files continue to work under the web server</td>
 </tr>
-<tr class="row-odd"><td><p class="first last"><tt class="docutils literal"><span class="pre">APP_NAMESPACE_AS_PATH</span></tt></p>
-</td>
-<td><p class="first last">the application's namespace, but with &quot;/&quot; in place of &quot;.&quot; if it is a
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">APP_NAMESPACE_AS_PATH</span></tt></td>
+<td>the application's namespace, but with &quot;/&quot; in place of &quot;.&quot; if it is a
 complex name; this is usually used as a web server alias in the
-configuration</p>
-</td>
+configuration</td>
 </tr>
-<tr class="row-even"><td><p class="first last"><tt class="docutils literal"><span class="pre">APP_HTTPD_CONFIG</span></tt></p>
-</td>
-<td><p class="first last">the absolute path to the generated configuration file</p>
-</td>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">APP_HTTPD_CONFIG</span></tt></td>
+<td>the absolute path to the generated configuration file</td>
 </tr>
-<tr class="row-odd"><td><p class="first last"><tt class="docutils literal"><span class="pre">LOCALHOST_APP_URL</span></tt></p>
-</td>
-<td><p class="first last">the URL with which the source version can be loaded</p>
-</td>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">LOCALHOST_APP_URL</span></tt></td>
+<td>the URL with which the source version can be loaded</td>
 </tr>
 </tbody>
 </table>
@@ -1782,7 +1757,7 @@ can be contacted for which the configuration is being generated. (default: <em>h
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  

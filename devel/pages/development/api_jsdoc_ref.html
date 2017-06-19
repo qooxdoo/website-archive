@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -207,7 +206,8 @@ specification. Attributes may stretch across multiple lines. Lines following an
 attribute key are logically appended to the first line (i.e. the effect is as if
 you had written one long line).</p>
 <p>You can <strong>comment out</strong> an attribute by just prefixing it with another <tt class="docutils literal"><span class="pre">&#64;</span></tt>, like</p>
-<div class="highlight-javascript"><pre>@@ignore(foo)</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@@ignore(foo)
+</pre></div>
 </div>
 <p>Then this attribute will simply be ignored.</p>
 <p>The following sections before the reference list of supported attributes give some
@@ -246,7 +246,8 @@ e.g. <tt class="docutils literal"><span class="pre">String[]</span></tt>, <tt cl
 <span id="pages-development-api-jsdoc-ref-types-syntax"></span><h3>Syntax of a Type Specification<a class="headerlink" href="#syntax-of-a-type-specification" title="Permalink to this headline">¶</a></h3>
 <p>Here is the full syntax for a type specification as used in concrete doc
 attributes:</p>
-<div class="highlight-javascript"><pre>`{` [ Type1 `|` Type2 `|` ... [ `?` [&lt;default_value]]  ] `}`</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>`{` [ Type1 `|` Type2 `|` ... [ `?` [&lt;default_value]]  ] `}`
+</pre></div>
 </div>
 <p>That is, between curly braces an optional list of type indicators (as described
 above), separated by <tt class="docutils literal"><span class="pre">|</span></tt>, following an optional <tt class="docutils literal"><span class="pre">?</span></tt> to indicate the entire
@@ -430,7 +431,8 @@ and if one of them matches the key applies.</p>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@childControl title {qx.ui.basic.Label} caption of the window</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@childControl title {qx.ui.basic.Label} caption of the window
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -467,7 +469,8 @@ and if one of them matches the key applies.</p>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@param foo {Integer} The main factor</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@param foo {Integer} The main factor
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -500,7 +503,8 @@ still classify the method as protected.</div></blockquote>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@protected</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@protected
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -534,7 +538,8 @@ still classify the method as protected.</div></blockquote>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@type {Map}</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@type {Map}
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -568,7 +573,8 @@ still classify the method as protected.</div></blockquote>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@return {Integer} The sum of the arguments</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@return {Integer} The sum of the arguments
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -602,7 +608,8 @@ still classify the method as protected.</div></blockquote>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@throws {Error} If the parameter 'X' is out of range.</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@throws {Error} If the parameter &#39;X&#39; is out of range.
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -732,7 +739,8 @@ still classify the method as protected.</div></blockquote>
 <div><tt class="docutils literal"><span class="pre">&#64;internal</span></tt></div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@internal</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@internal
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -766,7 +774,8 @@ still classify the method as protected.</div></blockquote>
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@deprecated {2.1} Please use Object.keys instead</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@deprecated {2.1} Please use Object.keys instead
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -831,13 +840,16 @@ The general idea is to switch off warnings for certain situations in the code, m
 <p><strong>Example</strong></p>
 <blockquote>
 <div><p>To turn off warnings for a global symbol <tt class="docutils literal"><span class="pre">foo</span></tt> that is not known to the generator, but will be available at runtime of the code, use</p>
-<div class="highlight-javascript"><pre>@lint ignoreUndefined(foo)</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@lint ignoreUndefined(foo)
+</pre></div>
 </div>
 <p>To silence warnings for non-literal key arguments in Environment calls use</p>
-<div class="highlight-javascript"><pre>@lint environmentNonLiteralKey()</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@lint environmentNonLiteralKey()
+</pre></div>
 </div>
 <p>To apply this only to calls using a specific key argument <tt class="docutils literal"><span class="pre">foo</span></tt> use</p>
-<div class="highlight-javascript"><pre>@lint environmentNonLiteralKey(foo)</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@lint environmentNonLiteralKey(foo)
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -1142,8 +1154,9 @@ ignore entire class APIs or namespaces, e.g. <tt class="docutils literal"><span 
 </div></blockquote>
 <p><strong>Example</strong></p>
 <blockquote>
-<div><div class="highlight-javascript"><pre>@tag noPlayground
-@tag single value binding</pre>
+<div><div class="highlight-javascript"><div class="highlight"><pre>@tag noPlayground
+@tag single value binding
+</pre></div>
 </div>
 </div></blockquote>
 </div>
@@ -1315,7 +1328,7 @@ ignore entire class APIs or namespaces, e.g. <tt class="docutils literal"><span 
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  

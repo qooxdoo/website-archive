@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -151,16 +150,18 @@ possibilities for each widget.</p>
 <div class="section" id="step-1-update-your-custom-scss">
 <h3>Step 1: Update your custom.scss<a class="headerlink" href="#step-1-update-your-custom-scss" title="Permalink to this headline">¶</a></h3>
 <p>Please replace the following lines of your <tt class="docutils literal"><span class="pre">custom.scss</span></tt></p>
-<div class="highlight-javascript"><pre>@import "../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/common/base";
-@import "../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/styles";
-@import "styles";
-@import "../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/basic/basic";
-@import "../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/theme";</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/common/base&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/styles&quot;;
+@import &quot;styles&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/basic/basic&quot;;
+@import &quot;../../../../${REL_QOOXDOO_PATH}/framework/source/resource/qx/mobile/scss/theme/theme&quot;;
+</pre></div>
 </div>
 <p>through these lines:</p>
-<div class="highlight-javascript"><pre>@import "common/all";
-@import "styles";
-@import "ui/all";</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>@import &quot;common/all&quot;;
+@import &quot;styles&quot;;
+@import &quot;ui/all&quot;;
+</pre></div>
 </div>
 </div>
 <div class="section" id="step-2-update-your-watch-scss-job">
@@ -196,16 +197,19 @@ possibilities for each widget.</p>
 <ol class="arabic simple">
 <li>Please save the content of your recent <tt class="docutils literal"><span class="pre">_styles.scss</span></tt> inside another file e.g.:</li>
 </ol>
-<div class="highlight-javascript"><pre>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_old.scss</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_old.scss
+</pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li>Please remove any content inside your <tt class="docutils literal"><span class="pre">_styles.scss</span></tt>.</li>
 <li>Now copy the content of this file:</li>
 </ol>
-<div class="highlight-javascript"><pre>&lt;QOOXDOO_PATH&gt;/framework/source/resource/qx/mobile/scss/theme/&lt;THEME_NAME&gt;/_styles.scss</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;QOOXDOO_PATH&gt;/framework/source/resource/qx/mobile/scss/theme/&lt;THEME_NAME&gt;/_styles.scss
+</pre></div>
 </div>
 <p>Into your app-specific <tt class="docutils literal"><span class="pre">styles.scss</span></tt>:</p>
-<div class="highlight-javascript"><pre>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_styles.scss</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;APP_ROOT&gt;/source/resource/&lt;APP_NAME&gt;/mobile/scss/_styles.scss
+</pre></div>
 </div>
 <ol class="arabic simple" start="4">
 <li>After the replacement, your theme should build again by calling the watch-job:</li>
@@ -545,7 +549,7 @@ possibilities for each widget.</p>
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  

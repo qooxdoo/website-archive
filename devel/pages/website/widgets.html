@@ -1,4 +1,3 @@
-
 ﻿
 <!doctype html>
 
@@ -170,7 +169,8 @@
 <div class="section" id="html-data-attributes">
 <h3>HTML data attributes<a class="headerlink" href="#html-data-attributes" title="Permalink to this headline">¶</a></h3>
 <p>Alternatively, the <cite>data-qx-class</cite> attribute can be used to define a widget's type before it's initialized:</p>
-<div class="highlight-javascript"><pre>&lt;div id="foo" data-qx-class="qx.ui.website.Slider"&gt;&lt;/div&gt;</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;div id=&quot;foo&quot; data-qx-class=&quot;qx.ui.website.Slider&quot;&gt;&lt;/div&gt;
+</pre></div>
 </div>
 <p>This element can be turned into a Slider by calling the <cite>init</cite> method:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">q</span><span class="p">(</span><span class="s2">&quot;#foo&quot;</span><span class="p">).</span><span class="nx">init</span><span class="p">();</span>
@@ -187,15 +187,17 @@
 <div class="section" id="existing-markup">
 <h2>Existing markup<a class="headerlink" href="#existing-markup" title="Permalink to this headline">¶</a></h2>
 <p>Upon initialization, widgets will create the child elements they need. Additional elements will generally not be removed, so if this DIV element is turned into a Slider widget:</p>
-<div class="highlight-javascript"><pre>&lt;div id="foo"&gt;
-  &lt;h3&gt;Hi, I'm a heading&lt;/h3&gt;
-&lt;/div&gt;</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;div id=&quot;foo&quot;&gt;
+  &lt;h3&gt;Hi, I&#39;m a heading&lt;/h3&gt;
+&lt;/div&gt;
+</pre></div>
 </div>
 <p>the Slider will insert its knob element after the existing H3 element.</p>
 <p>Required child elements can also be predefined by using the CSS class names expected by the widget:</p>
-<div class="highlight-javascript"><pre>&lt;div id="foo"&gt;
-  &lt;button class="qx-slider-knob"&gt;Pre-existing button&lt;/button&gt;
-&lt;/div&gt;</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;div id=&quot;foo&quot;&gt;
+  &lt;button class=&quot;qx-slider-knob&quot;&gt;Pre-existing button&lt;/button&gt;
+&lt;/div&gt;
+</pre></div>
 </div>
 <p>In this case, the existing button element will be used as the Slider's knob. The <a class="reference external" href="http://demo.qooxdoo.org/current/website-api">qx.Website API Viewer</a> lists the class names used for the child elements.</p>
 </div>
@@ -212,7 +214,8 @@
 <div class="section" id="id3">
 <h3>HTML data attributes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Default settings can also be overridden using HTML data attributes:</p>
-<div class="highlight-javascript"><pre>&lt;div data-qx-config-offset="20"&gt;&lt;/div&gt;</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;div data-qx-config-offset=&quot;20&quot;&gt;&lt;/div&gt;
+</pre></div>
 </div>
 <p>If this element is turned into a Slider widget, its offset config setting will be set to 20. Note that
 getConfig and setConfig use camelCased names while the data attributes are hyphenated and prefixed with &quot;qx-config&quot;, i.e. &quot;hideAnimation&quot; vs. &quot;data-qx-config-hide-animation&quot;.</p>
@@ -231,7 +234,8 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
 <div class="section" id="id4">
 <h3>HTML data attributes<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Of course, templates can also be defined as HTML attributes, again using hyphenated names prefixed with &quot;qx-template&quot;:</p>
-<div class="highlight-javascript"><pre>&lt;div id="slider1" data-qx-template-knob-content="&lt;span&gt;{{value}}&lt;/span&gt;"&gt;&lt;/div&gt;</pre>
+<div class="highlight-javascript"><div class="highlight"><pre>&lt;div id=&quot;slider1&quot; data-qx-template-knob-content=&quot;&lt;span&gt;{{value}}&lt;/span&gt;&quot;&gt;&lt;/div&gt;
+</pre></div>
 </div>
 </div>
 </div>
@@ -390,7 +394,7 @@ getConfig and setConfig use camelCased names while the data attributes are hyphe
         </p>
         <p class="page">
               &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
-            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
         </p>
       </div>
 -->	  
