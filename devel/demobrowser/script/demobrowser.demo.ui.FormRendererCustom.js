@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormRendererCustom.26bf4b8ad28f.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormRendererCustom.4668445c91ce.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10500,12 +10500,12 @@ else {ey+=eF.height;}
 ;}
 ,this);y.addButton(A);var z=new qx.ui.form.Button(m);z.addListener(h,function(){y.reset();}
 ,this);y.addButton(z);var B=new demobrowser.demo.ui.CustomRenderer(y);this.getRoot().add(B,{left:10,top:10});}
-}});qx.Class.define(j,{extend:qx.ui.form.renderer.Single,members:{__BL:0,__BM:0,addItems:function(E,H,D,I){var J=0;if(D!=null){this._add(this._createHeader(D),{row:J,column:this.__BL,colSpan:2});J++ ;}
-;for(var i=0;i<E.length;i++ ){var F=this._createLabel(H[i],E[i]);this._add(F,{row:J,column:this.__BL});var G=E[i];F.setBuddy(G);if(G instanceof qx.ui.form.RadioGroup){G=this._createWidgetForRadioGroup(G);}
-;this._add(G,{row:J,column:this.__BL+1});if(I[i]&&I[i].placeholder){G.setPlaceholder(I[i].placeholder);}
+}});qx.Class.define(j,{extend:qx.ui.form.renderer.Single,members:{__Cc:0,__Cd:0,addItems:function(E,H,D,I){var J=0;if(D!=null){this._add(this._createHeader(D),{row:J,column:this.__Cc,colSpan:2});J++ ;}
+;for(var i=0;i<E.length;i++ ){var F=this._createLabel(H[i],E[i]);this._add(F,{row:J,column:this.__Cc});var G=E[i];F.setBuddy(G);if(G instanceof qx.ui.form.RadioGroup){G=this._createWidgetForRadioGroup(G);}
+;this._add(G,{row:J,column:this.__Cc+1});if(I[i]&&I[i].placeholder){G.setPlaceholder(I[i].placeholder);}
 ;J++ ;}
-;this.__BL+=2;this.__BM<J?this.__BM=J:null;}
-,addButton:function(K){if(this._buttonRow==null){this._buttonRow=new qx.ui.container.Composite();this._buttonRow.setMarginTop(5);var L=new qx.ui.layout.HBox();L.setAlignX(s);L.setSpacing(5);this._buttonRow.setLayout(L);this._add(this._buttonRow,{row:this.__BM,column:0,colSpan:this.__BL});}
+;this.__Cc+=2;this.__Cd<J?this.__Cd=J:null;}
+,addButton:function(K){if(this._buttonRow==null){this._buttonRow=new qx.ui.container.Composite();this._buttonRow.setMarginTop(5);var L=new qx.ui.layout.HBox();L.setAlignX(s);L.setSpacing(5);this._buttonRow.setLayout(L);this._add(this._buttonRow,{row:this.__Cd,column:0,colSpan:this.__Cc});}
 ;this._buttonRow.add(K);}
 }});}
 )();

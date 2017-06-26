@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.DragDrop.2fb37841c848.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.DragDrop.19e3f14d55bd.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10324,7 +10324,7 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="black",b="__AY",c="drag",d="TextArea Target",f="solid",g="drop",h="icon/16/places/folder.png",j="Copy Even Items",k="value",m="Reorderable",n="qx.ui.form.ListItem",o="move",p="droprequest",q="copy",r="Source",s="Related of droprequest: ",t="dragstart",u="multi",v="demobrowser.demo.ui.DragDrop",w="Simple Target",x="Enable drag",y="dragchange",z="\n",A="dragend",B="dragover",C="items",D="Item ",E="Related of drop: ";qx.Class.define(v,{extend:qx.application.Standalone,members:{__AY:null,__BJ:null,main:function(){qx.application.Standalone.prototype.main.call(this);var S=this.getRoot();var K=new qx.ui.container.Scroll();var F=new qx.ui.layout.Basic();var I=new qx.ui.container.Composite(F).set({allowStretchY:false,allowStretchX:false});K.add(I);S.add(K,{edge:0});var R=new qx.ui.basic.Label(r);I.add(R,{left:20,top:20});var P=new qx.ui.form.List();P.setDraggable(true);P.setSelectionMode(u);I.add(P,{left:20,top:40});for(var i=0;i<20;i++ ){P.add(new qx.ui.form.ListItem(D+i,h));}
+(function(){var a="black",b="__AY",c="drag",d="TextArea Target",f="solid",g="drop",h="icon/16/places/folder.png",j="Copy Even Items",k="value",m="Reorderable",n="qx.ui.form.ListItem",o="move",p="droprequest",q="copy",r="Source",s="Related of droprequest: ",t="dragstart",u="multi",v="demobrowser.demo.ui.DragDrop",w="Simple Target",x="Enable drag",y="dragchange",z="\n",A="dragend",B="dragover",C="items",D="Item ",E="Related of drop: ";qx.Class.define(v,{extend:qx.application.Standalone,members:{__AY:null,__Ca:null,main:function(){qx.application.Standalone.prototype.main.call(this);var S=this.getRoot();var K=new qx.ui.container.Scroll();var F=new qx.ui.layout.Basic();var I=new qx.ui.container.Composite(F).set({allowStretchY:false,allowStretchX:false});K.add(I);S.add(K,{edge:0});var R=new qx.ui.basic.Label(r);I.add(R,{left:20,top:20});var P=new qx.ui.form.List();P.setDraggable(true);P.setSelectionMode(u);I.add(P,{left:20,top:40});for(var i=0;i<20;i++ ){P.add(new qx.ui.form.ListItem(D+i,h));}
 ;var O=new qx.ui.form.CheckBox(x);O.setValue(true);I.add(O,{left:20,top:260});P.addListener(t,function(e){if(!O.isValue()){e.preventDefault();}
 ;e.addType(k);e.addType(C);e.addAction(q);e.addAction(o);}
 );P.addListener(p,function(e){this.debug(s+e.getRelatedTarget());var X=e.getCurrentAction();var ba=e.getCurrentType();var W;var U=this.getSelection();var V=e.getDragTarget();if(U.length===0){U.push(V);}
@@ -10351,15 +10351,15 @@ else if(U.indexOf(V)==-1){U=[V];}
 );var N=new qx.ui.basic.Label(m);I.add(N,{left:600,top:20});var G=this.__AY=new qx.ui.form.List();G.setDraggable(true);G.setDroppable(true);G.setSelectionMode(u);I.add(G,{left:600,top:40});for(var i=0;i<20;i++ ){G.add(new qx.ui.form.ListItem(D+i,h));}
 ;var H=new qx.ui.core.Widget();H.setDecorator(new qx.ui.decoration.Decorator().set({widthTop:1,styleTop:f,colorTop:a}));H.setHeight(0);H.setOpacity(0.5);H.setZIndex(100);H.setLayoutProperties({left:-1000,top:-1000});H.setDroppable(true);this.getRoot().add(H);G.addListener(t,function(e){e.addAction(o);}
 );G.addListener(A,function(e){H.setDomPosition(-1000,-1000);}
-);G.addListener(c,function(e){var bf=e.getOriginalTarget();if(bf instanceof qx.ui.form.ListItem){qx.core.Init.getApplication().__BJ=bf;}
+);G.addListener(c,function(e){var bf=e.getOriginalTarget();if(bf instanceof qx.ui.form.ListItem){qx.core.Init.getApplication().__Ca=bf;}
 ;if(!qx.ui.core.Widget.contains(this,bf)&&bf!=H){return;}
 ;var be=bf.getContentLocation();H.setWidth(bf.getBounds().width);H.setDomPosition(be.left,be.top);}
 );G.addListener(B,function(e){if(e.getRelatedTarget()){e.preventDefault();}
 ;}
-);G.addListener(g,function(e){this.__BK(e.getOriginalTarget(),e.getDragTarget());}
-,this);H.addListener(g,function(e){this.__BK(this.__BJ);}
+);G.addListener(g,function(e){this.__Cb(e.getOriginalTarget(),e.getDragTarget());}
+,this);H.addListener(g,function(e){this.__Cb(this.__Ca);}
 ,this);}
-,__BK:function(bi,bg){if(bi.classname!=n){return;}
+,__Cb:function(bi,bg){if(bi.classname!=n){return;}
 ;var bh=this.__AY.getSortedSelection();if(bh.length===0){bh=[bg];}
 else if(bh.indexOf(bg)==-1){bh=[bg];}
 ;for(var i=0,l=bh.length;i<l;i++ ){this.__AY.addBefore(bh[i],bi);}

@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.313099be5287.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.1574776b7a41.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10325,10 +10325,10 @@ else {top+=B;}
 }});}
 )();
 (function(){var a="logger",b="cellDbltap",c="",d='<p style="color:yellow;">You rightclicked cell ',f='<p style="color:green;">You tappeded on cell ',g='<p style="color:red;">You double tapped cell ',h='</p>',i=' / ',j="demobrowser.demo.virtual.CellEvents",k="main",l="cellTap",m="cellContextmenu",n="layer";qx.Class.define(j,{extend:qx.application.Standalone,members:{main:function(){qx.application.Standalone.prototype.main.call(this);var o=new qx.ui.virtual.core.Scroller(20,20,40,40).set({width:400,height:300});this.layer=new qx.test.ui.virtual.layer.LayerSimple(this);var p=o.getPane();p.addListener(l,this._onCellTap,this);p.addListener(m,this._onContextMenu,this);p.addListener(b,this._onDbltapPane,this);p.addLayer(this.layer);this.logger=new qx.ui.embed.Html().set({width:400,height:300,html:c,decorator:k});this.getRoot().add(o,{left:20,top:10});this.getRoot().add(this.logger,{left:450,top:10});}
-,_onCellTap:function(e){var q=f+e.getRow()+i+e.getColumn()+h;this.__BO(q);}
-,_onContextMenu:function(e){var r=d+e.getRow()+i+e.getColumn()+h;this.__BO(r);}
-,_onDbltapPane:function(e){var s=g+e.getRow()+i+e.getColumn()+h;this.__BO(s);}
-,__BO:function(t){this.logger.setHtml(this.logger.getHtml()+t);}
+,_onCellTap:function(e){var q=f+e.getRow()+i+e.getColumn()+h;this.__BI(q);}
+,_onContextMenu:function(e){var r=d+e.getRow()+i+e.getColumn()+h;this.__BI(r);}
+,_onDbltapPane:function(e){var s=g+e.getRow()+i+e.getColumn()+h;this.__BI(s);}
+,__BI:function(t){this.logger.setHtml(this.logger.getHtml()+t);}
 },destruct:function(){this._disposeObjects(n,a);}
 });}
 )();

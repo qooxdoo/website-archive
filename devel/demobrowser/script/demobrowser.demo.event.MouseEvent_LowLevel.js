@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.MouseEvent_LowLevel.2b86a4e77b39.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.MouseEvent_LowLevel.d2496c0c0f6d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9723,11 +9723,11 @@ else {var h=qx.dom.Node.getWindow(this._native.srcElement);return Math.round(thi
 (function(){var a="qx.event.type.Focus";qx.Class.define(a,{extend:qx.event.type.Event,members:{init:function(d,b,c){qx.event.type.Event.prototype.init.call(this,c,false);this._target=d;this._relatedTarget=b;return this;}
 }});}
 )();
-(function(){var a="demobrowser.demo.event.MouseEvent_LowLevel",b="mouseout",c="mousedown",d="clientX",f="dblclick",g="relatedTarget",h="mouse",j="button",k="mousemove",l="screenX",m="logger",n="",o="_",p="mouseover",q="check_",r="click",s="Event",t="Target",u="clientY",v="mouseup",w="contextmenu",x="change",y="screenY";qx.Class.define(a,{extend:demobrowser.demo.event.EventDemo,members:{__AQ:null,main:function(){demobrowser.demo.event.EventDemo.prototype.main.call(this);this.__AQ=qx.lang.Function.bind(this.logMouseEvent,this);this._initLogger([t,s,j,d,u,l,y,g],document.getElementById(m),50);var z=document.getElementById(h);var B=[c,v,r,f,w,k,p,b];for(var i=0;i<B.length;i++ ){var A=document.getElementById(q+B[i]);if(A.checked){qx.bom.Event.addNativeListener(z,B[i],this.__AQ);}
-;qx.bom.Event.addNativeListener(A,x,qx.lang.Function.bind(this.__AR,this));}
+(function(){var a="demobrowser.demo.event.MouseEvent_LowLevel",b="mouseout",c="mousedown",d="clientX",f="dblclick",g="relatedTarget",h="mouse",j="button",k="mousemove",l="screenX",m="logger",n="",o="_",p="mouseover",q="check_",r="click",s="Event",t="Target",u="clientY",v="mouseup",w="contextmenu",x="change",y="screenY";qx.Class.define(a,{extend:demobrowser.demo.event.EventDemo,members:{__AR:null,main:function(){demobrowser.demo.event.EventDemo.prototype.main.call(this);this.__AR=qx.lang.Function.bind(this.logMouseEvent,this);this._initLogger([t,s,j,d,u,l,y,g],document.getElementById(m),50);var z=document.getElementById(h);var B=[c,v,r,f,w,k,p,b];for(var i=0;i<B.length;i++ ){var A=document.getElementById(q+B[i]);if(A.checked){qx.bom.Event.addNativeListener(z,B[i],this.__AR);}
+;qx.bom.Event.addNativeListener(A,x,qx.lang.Function.bind(this.__AQ,this));}
 ;}
-,__AR:function(e){var E=qx.bom.Event.getTarget(e);var F=E.id.split(o)[1];var C=E.checked;var D=document.getElementById(h);if(C){qx.bom.Event.addNativeListener(D,F,this.__AQ);}
-else {qx.bom.Event.removeNativeListener(D,F,this.__AQ);}
+,__AQ:function(e){var E=qx.bom.Event.getTarget(e);var F=E.id.split(o)[1];var C=E.checked;var D=document.getElementById(h);if(C){qx.bom.Event.addNativeListener(D,F,this.__AR);}
+else {qx.bom.Event.removeNativeListener(D,F,this.__AR);}
 ;}
 ,logMouseEvent:function(G){qx.bom.Event.preventDefault(G);this._log([qx.bom.Event.getTarget(G).id,G.type,G.button,G.clientX,G.clientY,G.screenX,G.screenY,qx.bom.Event.getRelatedTarget(G)?qx.bom.Event.getRelatedTarget(G).id:n]);}
 }});}

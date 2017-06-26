@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.PointerEvent.06719ad864bc.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.PointerEvent.a66914a9b681.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9724,13 +9724,13 @@ else {var h=qx.dom.Node.getWindow(this._native.srcElement);return Math.round(thi
 }});}
 )();
 (function(){var a="swipe",b="pinch",c="pointerover",d="longtap",f="demobrowser.demo.event.PointerEvent",g="capture",h="clientX",j="relatedTarget",k="change",l="button",m="rotate",n="pointer",o="pageY",p="screenX",q="dbltap",r="logger",s="pointerup",t="",u="_",v="check_",w="pointerdown",x="Event",y="Target",z="clientY",A="losecapture",B="track",C="screenY",D="tap",E="pointermove",F="pageX",G="pointerout";qx.Class.define(f,{extend:demobrowser.demo.event.EventDemo,members:{main:function(){demobrowser.demo.event.EventDemo.prototype.main.call(this);this._initLogger([y,x,l,F,o,h,z,p,C,j],document.getElementById(r),50);var J=document.getElementById(n);var H=[w,s,D,q,d,E,c,G,a,B,m,b];for(var i=0;i<H.length;i++ ){var I=document.getElementById(v+H[i]);if(I.checked){qx.bom.Element.addListener(J,H[i],this.logPointerEvent,this);}
-;qx.bom.Element.addListener(I,k,this.__AR,this);}
+;qx.bom.Element.addListener(I,k,this.__AQ,this);}
 ;var K=document.getElementById(g);K.checked=false;qx.bom.Element.addListener(K,k,function(e){var L=e.getTarget().checked;if(L){qx.bom.Element.capture(J);}
 else {qx.bom.Element.releaseCapture(J);}
 ;}
 ,this);qx.bom.Element.addListener(J,A,function(e){K.checked=false;}
 ,this);}
-,__AR:function(e){var O=e.getTarget().id.split(u)[1];var M=e.getTarget().checked;var N=document.getElementById(n);if(M){qx.bom.Element.addListener(N,O,this.logPointerEvent,this);}
+,__AQ:function(e){var O=e.getTarget().id.split(u)[1];var M=e.getTarget().checked;var N=document.getElementById(n);if(M){qx.bom.Element.addListener(N,O,this.logPointerEvent,this);}
 else {qx.bom.Element.removeListener(N,O,this.logPointerEvent,this);}
 ;}
 ,logPointerEvent:function(P){P.preventDefault();this._log([P.getTarget().id,P.getType(),P.getButton(),P.getDocumentLeft(),P.getDocumentTop(),P.getScreenLeft(),P.getScreenTop(),P.getViewportLeft(),P.getViewportTop(),P.getRelatedTarget()?P.getRelatedTarget().id:t]);}

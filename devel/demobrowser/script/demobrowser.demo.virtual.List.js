@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.List.4297ed81a9b2.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.List.83d26a659e95.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10324,9 +10324,9 @@ else {top+=B;}
 ,members:{useElement:function(c){qx.html.Element.prototype.useElement.call(this,c);this.setRoot(true);qx.html.Element._modified[this.$$hash]=this;}
 }});}
 )();
-(function(){var a="Julian",b="Show Icon",c="one",d="Kevin",f="demobrowser.demo.virtual.List",g="changeValue",h="Marvin",j="Marc",k="Configurable",l="icon/16/places/folder.png",m="changeSelection",n="Jason",o="show",p="Jakob",q="Lukas",r="Julius",s="Selection: ",t="additive",u="Jan",v="bold",w="Tobias",x="Mika",y="Nils",z="Noah",A="Quick selection is only available for the modes multi or additive",B="Tom",C="Nico",D="Multi Selection",E="Felix",F="Leon",G="Enable drag selection",H="icon",I="Show Both",J="48",K="changeShowMode",L="Fabian",M="Drag selection is only available for the modes multi or additive",N="Joel",O="Dominic",P="Show Label",Q="Enable quick selection",R="Item No ",S="Finn",T="One as selection mode",U="Jannis",V="Alexander",W="Additive Selection",X="change",Y="Erik",bV="addaptive",bW="Johannes",bX="16",bR="Jonas",bS="icon/",bT="David",bU="Maximilian",cd="enabled",ce="Tim",cf="Justin",cg="Single Selection",bY="Linus",ca="Daniel",cb="Paul",cc="Philipp",ck="Niclas",cC="One Selection",cD="Nick",cl="Jonathan",ch="Ben",ci="on",cF="showMode",cj="Vincent",cm="/places/folder.png",cn="Robin",co="both",cs="Jannick",cG="Luis",ct="value",cp="Lennard",cq="Moritz",cE="Florian",cr="",cx="multi",cy="Marlon",cI="Luca",cz="single",cu="Simon",cv="Colin",cH="label",cw="Max",cA="Additive selection",cB="Elias";qx.Class.define(f,{extend:qx.application.Standalone,properties:{showMode:{init:co,check:[cH,H,co],event:K}},members:{__BW:null,__BX:null,__BY:null,main:function(){qx.application.Standalone.prototype.main.call(this);var cJ=this.getRoot();cJ.add(this.createConfigurableList(),{left:20,top:20});cJ.add(this.createOneSelectionList(),{left:330,top:20});cJ.add(this.createAdditiveSelectionList(),{left:520,top:20});}
+(function(){var a="Julian",b="Show Icon",c="one",d="Kevin",f="demobrowser.demo.virtual.List",g="changeValue",h="Marvin",j="Marc",k="Configurable",l="icon/16/places/folder.png",m="changeSelection",n="Jason",o="show",p="Jakob",q="Lukas",r="Julius",s="Selection: ",t="additive",u="Jan",v="bold",w="Tobias",x="Mika",y="Nils",z="Noah",A="Quick selection is only available for the modes multi or additive",B="Tom",C="Nico",D="Multi Selection",E="Felix",F="Leon",G="Enable drag selection",H="icon",I="Show Both",J="48",K="changeShowMode",L="Fabian",M="Drag selection is only available for the modes multi or additive",N="Joel",O="Dominic",P="Show Label",Q="Enable quick selection",R="Item No ",S="Finn",T="One as selection mode",U="Jannis",V="Alexander",W="Additive Selection",X="change",Y="Erik",bV="addaptive",bW="Johannes",bX="16",bR="Jonas",bS="icon/",bT="David",bU="Maximilian",cd="enabled",ce="Tim",cf="Justin",cg="Single Selection",bY="Linus",ca="Daniel",cb="Paul",cc="Philipp",ck="Niclas",cC="One Selection",cD="Nick",cl="Jonathan",ch="Ben",ci="on",cF="showMode",cj="Vincent",cm="/places/folder.png",cn="Robin",co="both",cs="Jannick",cG="Luis",ct="value",cp="Lennard",cq="Moritz",cE="Florian",cr="",cx="multi",cy="Marlon",cI="Luca",cz="single",cu="Simon",cv="Colin",cH="label",cw="Max",cA="Additive selection",cB="Elias";qx.Class.define(f,{extend:qx.application.Standalone,properties:{showMode:{init:co,check:[cH,H,co],event:K}},members:{__BQ:null,__BR:null,__BS:null,main:function(){qx.application.Standalone.prototype.main.call(this);var cJ=this.getRoot();cJ.add(this.createConfigurableList(),{left:20,top:20});cJ.add(this.createOneSelectionList(),{left:330,top:20});cJ.add(this.createAdditiveSelectionList(),{left:520,top:20});}
 ,createConfigurableList:function(){var cM=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var cN=new qx.ui.basic.Label(k).set({font:v});cM.add(cN);var cV=[];for(var i=0;i<2500;i++ ){cV[i]={label:R+i,icon:(i%4)?bX:J};}
-;var dc=qx.data.marshal.Json.createModel(cV);var cQ=this.__BW=new qx.ui.list.List(dc).set({scrollbarX:ci,selectionMode:cx,height:280,width:150,labelPath:cH,iconPath:H,iconOptions:{converter:function(de){return bS+de+cm;}
+;var dc=qx.data.marshal.Json.createModel(cV);var cQ=this.__BQ=new qx.ui.list.List(dc).set({scrollbarX:ci,selectionMode:cx,height:280,width:150,labelPath:cH,iconPath:H,iconOptions:{converter:function(de){return bS+de+cm;}
 }});cM.add(cQ,{top:20});var cP=this;var cX={configureItem:function(df){cP.bind(cF,df,o);}
 ,bindItem:function(dh,dg,di){dh.bindDefaultProperties(dg,di);dh.bindProperty(cH,cd,{converter:function(dj){return parseInt(dj.replace(/Item No /g,cr))%9!=0;}
 },dg,di);}
@@ -10335,22 +10335,22 @@ else {top+=B;}
 ,this);var cT=cQ.getPane().getRowConfig();for(var i=0;i<2500;i++ ){if(i%4==0){cT.setItemSize(i,56);}
 else {cT.setItemSize(i,25);}
 ;}
-;var cU=new qx.ui.form.RadioButton(cg);var cL=new qx.ui.form.RadioButton(D);var cW=new qx.ui.form.RadioButton(W);var db=new qx.ui.form.RadioButton(cC);cU.setUserData(ct,cz);cL.setUserData(ct,cx);cW.setUserData(ct,t);db.setUserData(ct,c);cM.add(cU,{left:160,top:20});cM.add(cL,{left:160,top:40});cM.add(cW,{left:160,top:60});cM.add(db,{left:160,top:80});var cR=new qx.ui.form.RadioButton(P);var dd=new qx.ui.form.RadioButton(b);var cK=new qx.ui.form.RadioButton(I);cR.setUserData(ct,cH);dd.setUserData(ct,H);cK.setUserData(ct,co);cM.add(cR,{left:160,top:120});cM.add(dd,{left:160,top:140});cM.add(cK,{left:160,top:160});var cS=this.__BX=new qx.ui.form.CheckBox(G);var cY=this.__BY=new qx.ui.form.CheckBox(Q).set({enabled:false});cM.add(cS,{left:160,top:200});cM.add(cY,{left:160,top:220});var da=new qx.ui.form.RadioGroup(cU,cL,cW,db);da.setSelection([cL]);da.addListener(m,this.onSelectionModeChange,this);var cO=new qx.ui.form.RadioGroup(cR,dd,cK);cO.setSelection([cK]);cO.addListener(m,this.onShowModeChange,this);cS.addListener(g,this.onDragCheckChange,this);cY.addListener(g,this.onQuickCheckChange,this);return cM;}
+;var cU=new qx.ui.form.RadioButton(cg);var cL=new qx.ui.form.RadioButton(D);var cW=new qx.ui.form.RadioButton(W);var db=new qx.ui.form.RadioButton(cC);cU.setUserData(ct,cz);cL.setUserData(ct,cx);cW.setUserData(ct,t);db.setUserData(ct,c);cM.add(cU,{left:160,top:20});cM.add(cL,{left:160,top:40});cM.add(cW,{left:160,top:60});cM.add(db,{left:160,top:80});var cR=new qx.ui.form.RadioButton(P);var dd=new qx.ui.form.RadioButton(b);var cK=new qx.ui.form.RadioButton(I);cR.setUserData(ct,cH);dd.setUserData(ct,H);cK.setUserData(ct,co);cM.add(cR,{left:160,top:120});cM.add(dd,{left:160,top:140});cM.add(cK,{left:160,top:160});var cS=this.__BR=new qx.ui.form.CheckBox(G);var cY=this.__BS=new qx.ui.form.CheckBox(Q).set({enabled:false});cM.add(cS,{left:160,top:200});cM.add(cY,{left:160,top:220});var da=new qx.ui.form.RadioGroup(cU,cL,cW,db);da.setSelection([cL]);da.addListener(m,this.onSelectionModeChange,this);var cO=new qx.ui.form.RadioGroup(cR,dd,cK);cO.setSelection([cK]);cO.addListener(m,this.onShowModeChange,this);cS.addListener(g,this.onDragCheckChange,this);cY.addListener(g,this.onQuickCheckChange,this);return cM;}
 ,createOneSelectionList:function(){var dl=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var dm=new qx.ui.basic.Label(T).set({font:v});dl.add(dm);var dq=new qx.data.Array();for(var i=0;i<250;i++ ){var dp=new demobrowser.demo.virtual.model.Item(R+i,l);dq.push(dp);}
 ;var dn=new qx.ui.list.List(dq).set({selectionMode:c,height:280,width:150,labelPath:cH,iconPath:H,draggable:true,droppable:true});dl.add(dn,{top:20});dn.getSelection().push(dq.getItem(16));return dl;}
 ,createAdditiveSelectionList:function(){var ds=new qx.ui.container.Composite(new qx.ui.layout.Canvas());var dt=new qx.ui.basic.Label(cA).set({font:v});ds.add(dt);var du=[F,q,cI,S,ce,E,bR,cG,bU,a,cw,cb,ck,u,ch,cB,cs,cc,z,B,cq,C,bT,y,cu,L,Y,cf,V,p,cE,cD,bY,x,n,ca,cp,h,U,w,O,cy,j,bW,cl,r,cv,N,d,cj,cn];var dx=new qx.data.Array();var dr=new qx.data.Array();for(var i=0;i<du.length;i++ ){var dw=new demobrowser.demo.virtual.model.Item(du[i]);dx.push(dw);if(i==10||i==12||i==16){dr.push(dw);}
 ;}
 ;var dv=new qx.ui.list.List(dx).set({selectionMode:t,height:200,width:150,labelPath:cH,iconPath:H});ds.add(dv,{top:20});dv.setSelection(dr);return ds;}
-,onSelectionModeChange:function(e){var dy=e.getData()[0].getUserData(ct);this.__BW.setSelectionMode(dy);if(dy==cz||dy==c){this.__BX.setEnabled(false);this.__BY.setEnabled(true);}
-else if(dy==cx||dy==bV){this.__BX.setEnabled(true);this.__BY.setEnabled(false);}
+,onSelectionModeChange:function(e){var dy=e.getData()[0].getUserData(ct);this.__BQ.setSelectionMode(dy);if(dy==cz||dy==c){this.__BR.setEnabled(false);this.__BS.setEnabled(true);}
+else if(dy==cx||dy==bV){this.__BR.setEnabled(true);this.__BS.setEnabled(false);}
 ;}
 ,onShowModeChange:function(e){var dz=e.getData()[0].getUserData(ct);this.setShowMode(dz);}
-,onDragCheckChange:function(e){if(e.getData()){var dA=this.__BW.getSelectionMode();if(dA==cz||dA==c){this.debug(M);}
+,onDragCheckChange:function(e){if(e.getData()){var dA=this.__BQ.getSelectionMode();if(dA==cz||dA==c){this.debug(M);}
 ;}
-;this.__BW.setDragSelection(e.getData());}
-,onQuickCheckChange:function(e){if(e.getData()){var dB=this.__BW.getSelectionMode();if(dB==cx||dB==t){this.debug(A);}
+;this.__BQ.setDragSelection(e.getData());}
+,onQuickCheckChange:function(e){if(e.getData()){var dB=this.__BQ.getSelectionMode();if(dB==cx||dB==t){this.debug(A);}
 ;}
-;this.__BW.setQuickSelection(e.getData());}
+;this.__BQ.setQuickSelection(e.getData());}
 }});}
 )();
 (function(){var a="qx.data.marshal.IMarshaler";qx.Interface.define(a,{members:{toClass:function(b,c){}
