@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Blocker.9b049ab2d8b2.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Blocker.6e7d3b48b45b.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9795,11 +9795,11 @@ else {var h=qx.dom.Node.getWindow(this._native.srcElement);return Math.round(thi
 }});}
 )();
 (function(){var a="resize",b="mshtml",c="backgroundColor",d="block",f="transparent",g="px",h="zIndex",i="src",j="engine.name",k="0px",l="allowTransparency",m="div",n="javascript:false;",o="qx.bom.Blocker",p="absolute";qx.Class.define(o,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.__fh();}
-,members:{__xP:null,__rB:null,__xQ:null,__xR:false,__xS:10000,__xT:0,__xU:f,block:function(r){if(!this.__xR){qx.event.Registration.addListener(window,a,this.__nG,this);this.__xQ=r;var q=this.__xX();this.__xY(q);this.__xR=true;}
+,members:{__tJ:null,__rB:null,__tK:null,__tL:false,__tM:10000,__tN:0,__tO:f,block:function(r){if(!this.__tL){qx.event.Registration.addListener(window,a,this.__nG,this);this.__tK=r;var q=this.__tR();this.__tS(q);this.__tL=true;}
 ;}
-,unblock:function(){if(this.__xR){this.__ya();qx.event.Registration.removeListener(window,a,this.__nG,this);this.__xR=false;}
+,unblock:function(){if(this.__tL){this.__tT();qx.event.Registration.removeListener(window,a,this.__nG,this);this.__tL=false;}
 ;}
-,isBlocked:function(){return this.__xR;}
+,isBlocked:function(){return this.__tL;}
 ,getBlockerElement:function(){return this.__rB;}
 ,setBlockerColor:function(s){qx.bom.element.Style.set(this.__rB,c,s);}
 ,getBlockerColor:function(){return qx.bom.element.Style.get(this.__rB,c);}
@@ -9807,23 +9807,23 @@ else {var h=qx.dom.Node.getWindow(this._native.srcElement);return Math.round(thi
 ,getBlockerOpacity:function(){return qx.bom.element.Opacity.get(this.__rB);}
 ,setBlockerZIndex:function(u){qx.bom.element.Style.set(this.__rB,h,u);}
 ,getBlockerZIndex:function(){return qx.bom.element.Style.get(this.__rB,h);}
-,__fh:function(){this.__xV();if((qx.core.Environment.get(j)==b)){this.__xW();}
+,__fh:function(){this.__tP();if((qx.core.Environment.get(j)==b)){this.__tQ();}
 ;}
-,__xV:function(){this.__rB=qx.dom.Element.create(m);qx.bom.element.Style.setStyles(this.__rB,{display:d,opacity:this.__xT,backgroundColor:this.__xU});this.setBlockerZIndex(this.__xS);}
-,__xW:function(){this.__xP=qx.bom.Iframe.create();qx.bom.element.Attribute.set(this.__xP,l,false);qx.bom.element.Attribute.set(this.__xP,i,n);qx.bom.element.Style.setStyles(this.__xP,{display:d,opacity:this.__xT});}
-,__xX:function(){var v={position:p};if(this.__yc()){v.left=k;v.top=k;v.right=null;v.bottom=null;v.width=qx.bom.Document.getWidth()+g;v.height=qx.bom.Document.getHeight()+g;}
-else {v.width=qx.bom.element.Dimension.getWidth(this.__xQ)+g;v.height=qx.bom.element.Dimension.getHeight(this.__xQ)+g;v.left=qx.bom.element.Location.getLeft(this.__xQ)+g;v.top=qx.bom.element.Location.getTop(this.__xQ)+g;}
+,__tP:function(){this.__rB=qx.dom.Element.create(m);qx.bom.element.Style.setStyles(this.__rB,{display:d,opacity:this.__tN,backgroundColor:this.__tO});this.setBlockerZIndex(this.__tM);}
+,__tQ:function(){this.__tJ=qx.bom.Iframe.create();qx.bom.element.Attribute.set(this.__tJ,l,false);qx.bom.element.Attribute.set(this.__tJ,i,n);qx.bom.element.Style.setStyles(this.__tJ,{display:d,opacity:this.__tN});}
+,__tR:function(){var v={position:p};if(this.__tV()){v.left=k;v.top=k;v.right=null;v.bottom=null;v.width=qx.bom.Document.getWidth()+g;v.height=qx.bom.Document.getHeight()+g;}
+else {v.width=qx.bom.element.Dimension.getWidth(this.__tK)+g;v.height=qx.bom.element.Dimension.getHeight(this.__tK)+g;v.left=qx.bom.element.Location.getLeft(this.__tK)+g;v.top=qx.bom.element.Location.getTop(this.__tK)+g;}
 ;return v;}
-,__xY:function(w){var x=document.body;qx.bom.element.Style.setStyles(this.__rB,w);qx.dom.Element.insertEnd(this.__rB,x);if((qx.core.Environment.get(j)==b)){w.zIndex=this.getBlockerZIndex()-1;qx.bom.element.Style.setStyles(this.__xP,w);qx.dom.Element.insertEnd(this.__xP,document.body);}
+,__tS:function(w){var x=document.body;qx.bom.element.Style.setStyles(this.__rB,w);qx.dom.Element.insertEnd(this.__rB,x);if((qx.core.Environment.get(j)==b)){w.zIndex=this.getBlockerZIndex()-1;qx.bom.element.Style.setStyles(this.__tJ,w);qx.dom.Element.insertEnd(this.__tJ,document.body);}
 ;}
-,__ya:function(){qx.dom.Element.remove(this.__rB);if((qx.core.Environment.get(j)==b)){qx.dom.Element.remove(this.__xP);}
+,__tT:function(){qx.dom.Element.remove(this.__rB);if((qx.core.Environment.get(j)==b)){qx.dom.Element.remove(this.__tJ);}
 ;}
-,__nG:function(e){if(this.__yc()){this.__yb({width:k,height:k});qx.event.Timer.once(function(){var y={width:qx.bom.Document.getWidth()+g,height:qx.bom.Document.getHeight()+g};this.__yb(y);}
+,__nG:function(e){if(this.__tV()){this.__tU({width:k,height:k});qx.event.Timer.once(function(){var y={width:qx.bom.Document.getWidth()+g,height:qx.bom.Document.getHeight()+g};this.__tU(y);}
 ,this,0);}
 ;}
-,__yb:function(z){qx.bom.element.Style.setStyles(this.__rB,z);if((qx.core.Environment.get(j)==b)){qx.bom.element.Style.setStyles(this.__xP,z);}
+,__tU:function(z){qx.bom.element.Style.setStyles(this.__rB,z);if((qx.core.Environment.get(j)==b)){qx.bom.element.Style.setStyles(this.__tJ,z);}
 ;}
-,__yc:function(){return (this.__xQ==null||qx.dom.Node.isWindow(this.__xQ)||qx.dom.Node.isDocument(this.__xQ));}
+,__tV:function(){return (this.__tK==null||qx.dom.Node.isWindow(this.__tK)||qx.dom.Node.isDocument(this.__tK));}
 }});}
 )();
 (function(){var a="JosefinSlab",b="Verdana",c="qx/decoration/Indigo/font/JosefinSlab-SemiBold.ttf",d="qx/decoration/Indigo/font/JosefinSlab-SemiBold.woff",e="Lucida Grande",f="sans-serif",g="qx.theme.indigo.Font",h="monospace",i="font",j="serif",k="DejaVu Sans",l="Courier New",m="DejaVu Sans Mono";qx.Theme.define(g,{fonts:{"default":{size:12,family:[e,k,b,f],color:i,lineHeight:1.8},"bold":{size:12,family:[e,k,b,f],bold:true,color:i,lineHeight:1.8},"headline":{size:22,family:[j],sources:[{family:a,source:[d,c]}]},"small":{size:11,family:[e,k,b,f],color:i,lineHeight:1.8},"monospace":{size:11,family:[m,l,h],color:i,lineHeight:1.8}}});}
