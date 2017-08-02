@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Cell_Editor.30df24762e06.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Cell_Editor.7d8d1e717ffa.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10818,7 +10818,8 @@ else {v.removeListener(s,r,this.__ef,this,true);v.removeListener(s,n,this.__eg,t
 else {w.placeToPoint(this.__dX);}
 ;w.show();}
 ;this.__dV.stop();}
-,__ec:function(e){var x=this.getCurrent();if(x&&!x.isDisposed()){x.exclude();}
+,__ec:function(e){var x=this.getCurrent();if(!x.getAutoHide()){return;}
+;if(x&&!x.isDisposed()){x.exclude();}
 ;this.__dW.stop();this.resetCurrent();}
 ,__ed:function(e){var y=this.__dX;y.left=Math.round(e.getDocumentLeft());y.top=Math.round(e.getDocumentTop());}
 ,__ee:function(e){var z=qx.ui.core.Widget.getWidgetByElement(e.getTarget());this.__ed(e);this.showToolTip(z);}
@@ -10834,11 +10835,13 @@ else {w.placeToPoint(this.__dX);}
 ;var G=qx.ui.core.Widget.getWidgetByElement(e.getRelatedTarget());if(!G&&e.getPointerType()==d){return;}
 ;var H=this.getCurrent();if(H&&(G==H||qx.ui.core.Widget.contains(H,G))){return;}
 ;if(G&&F&&qx.ui.core.Widget.contains(F,G)){return;}
+;if(!H.getAutoHide()){return;}
 ;if(H&&!G){this.setCurrent(null);}
 else {this.resetCurrent();}
 ;}
 ,__eg:function(e){var I=qx.ui.core.Widget.getWidgetByElement(e.getTarget());if(!I){return;}
-;var J=this.getCurrent();if(J&&J==I.getToolTip()){this.setCurrent(null);}
+;var J=this.getCurrent();if(!J.getAutoHide()){return;}
+;if(J&&J==I.getToolTip()){this.setCurrent(null);}
 ;}
 },destruct:function(){qx.event.Registration.removeListener(document.body,f,this.__ee,this,true);this._disposeObjects(l,j,o);this.__dX=null;}
 });}
