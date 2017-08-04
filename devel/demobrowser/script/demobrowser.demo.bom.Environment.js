@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.9a37e041db46.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Environment.d08cb75c8bb9.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4862,12 +4862,12 @@ catch(F){}
 else {return k;}
 ;}
 ,getExpressInstall:function(){var H=qx.bom.client.Flash.getVersion();if(H==k){return false;}
-;var G=qx.bom.client.OperatingSystem.getName();return (G==l||G==h)&&qx.bom.client.Flash.__tW(q,H);}
+;var G=qx.bom.client.OperatingSystem.getName();return (G==l||G==h)&&qx.bom.client.Flash.__By(q,H);}
 ,getStrictSecurityModel:function(){var I=qx.bom.client.Flash.getVersion();if(I==k){return false;}
-;var J=I.split(v);if(J[0]<10){return qx.bom.client.Flash.__tW(s,I);}
-else {return qx.bom.client.Flash.__tW(j,I);}
+;var J=I.split(v);if(J[0]<10){return qx.bom.client.Flash.__By(s,I);}
+else {return qx.bom.client.Flash.__By(j,I);}
 ;}
-,_cachedSupportsVersion:{},__tW:function(O,L){var K=O.split(v);var M=L||qx.bom.client.Flash.getVersion();M=M.split(v);for(var i=0;i<K.length;i++ ){var N=parseInt(M[i],10)-parseInt(K[i],10);if(N>0){return true;}
+,_cachedSupportsVersion:{},__By:function(O,L){var K=O.split(v);var M=L||qx.bom.client.Flash.getVersion();M=M.split(v);for(var i=0;i<K.length;i++ ){var N=parseInt(M[i],10)-parseInt(K[i],10);if(N>0){return true;}
 else if(N<0){return false;}
 ;}
 ;return true;}
@@ -5158,9 +5158,9 @@ else if(qx.bom.client.Device.detectMobileDevice(D)){return n;}
 });}
 )();
 (function(){var q="$$",v="px;line-height:",w="backgroundColor",y="height",z="constructor",A="0.8.7",B="div",C="Shell.UIHelper",D="application/pdf",E="fontSize",F="4,",G="baseline",H="display:inline;font-size:",I="<",J="Pocket\\s*PC",K="load",L="application/dummymimepdf",M="data",N="transparent",O="Linux",P="i",Q="qx.bom.client.Pdfjs",R="FreeBSD",S="px;",T="PluginDetect",U="1,",V="position",W="Mac",X="unload",Y="ShockwaveFlash.ShockwaveFlash",ba="span",bb='">.',bc="lineHeight",bd="pd33993399",be='PDFjs',bf="iPhone",bg="/*@cc_on!@*/!1",bh="inline",bi="plugindetect",bj="type",bk="visible",bl="verticalAlign",bm="isPrototypeOf",bn="width",bo="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",bp="2,",bq=".",br="AgControl.AgControl",bs="Win.*Mobile",bt="Win",bu="none",bv=" ",bw="readyState",bx="body",by="display",bz="function",bA="background-color:transparent;background-image:none;vertical-align:baseline;outline-style:none;border-style:none;padding:0px;margin:0px;visibility:",bB="px",bC='" ',bD="WMPlayer.OCX",bE='" />',bF="qx/static/empty.pdf",bG="iPod",bH="0",bI="head",bJ='width="',bK="Msxml2.XMLHTTP",bL="Win.*CE",bM="backgroundImage",bN=".pdf",bO="TDCCtl.TDCCtl",bP="visible;",bQ='="',bR="0.9",bS="outlineStyle",bT="19",bU="top",bV="right",bW="fileStorageValid999",bX="block",bY="Microsoft.XMLDOM",ca="9999px",cb="\\s*)$",cc='" value="',cd="on",ce="object",cf="Scripting.Dictionary",cg="^(.*[^\\/])(",ch='style="',ci="init",cj="Msxml2.DOMDocument",ck="borderStyle",cl=",",cm=">",cn="src",co="0px",cp="-9999px",cq='<div id="',cr="10",cs="/",ct="hidden;",cu="/div>",cv="",cw="visibility",cx="padding",cy="iPad",cz="\\.",cA='height="',cB="$",cC="margin",cD="fileStorageAny999",cE="HtmlDlgSafeHelper.HtmlDlgSafeHelper",cF='param name="',cG="undefined",cH="plugin.pdfjs",cI="absolute";qx.Bootstrap.define(Q,{statics:{getPdfjs:function(cJ,cK){qx.bom.client.Pdfjs.__mw(cJ,cK);}
-,__mw:function(cN,cQ){var cM=qx.util.ResourceManager.getInstance();var cL=cM.toUri(bF);var cO=qx.bom.client.Pdfjs.__tX();var cP=function(cR){var cS=(cO.isMinVersion(be,0)===0);cN.call(cQ,cS);}
+,__mw:function(cN,cQ){var cM=qx.util.ResourceManager.getInstance();var cL=cM.toUri(bF);var cO=qx.bom.client.Pdfjs.__Bz();var cP=function(cR){var cS=(cO.isMinVersion(be,0)===0);cN.call(cQ,cS);}
 ;cO.onDetectionDone(be,cP,cL);}
-,__tX:null},defer:function(cT){qx.core.Environment.addAsync(cH,cT.getPdfjs);}
+,__Bz:null},defer:function(cT){qx.core.Environment.addAsync(cH,cT.getPdfjs);}
 });(function(){var PluginDetect={version:A,name:T,openTag:I,hasOwnProperty:({}).constructor.prototype.hasOwnProperty,hasOwn:function(c,d){var a;try{a=this.hasOwnProperty.call(c,d);}
 catch(cU){}
 ;return !!a;}
@@ -5464,7 +5464,7 @@ catch(dp){}
 ,queryCompleted:function(){var d=this,b=d.$,a=d.$$,c=a.doc;if(a.OTF==4){return;}
 ;a.OTF=4;a.setPluginStatus();if(b.onDetectionDone&&a.DoneHndlrs){b.ev.callArray(a.DoneHndlrs);}
 ;}
-},zz:0},zz:0}};PluginDetect.INIT();var origPluginDetect=PluginDetect;qx.bom.client.Pdfjs.__tX=function(){return origPluginDetect;}
+},zz:0},zz:0}};PluginDetect.INIT();var origPluginDetect=PluginDetect;qx.bom.client.Pdfjs.__Bz=function(){return origPluginDetect;}
 ;}
 ).call(this);}
 )();
