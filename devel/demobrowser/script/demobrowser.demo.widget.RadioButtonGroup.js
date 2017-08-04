@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.RadioButtonGroup.3d1106f8f3a3.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.RadioButtonGroup.8c2a29b91fff.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10368,27 +10368,27 @@ catch(e){throw new Error(a+e);}
 ,getSelectables:function(e){return arguments.length==1;}
 }});}
 )();
-(function(){var a="Boolean",b="_applyValid",c="",d="changeRequired",f="changeValid",g="changeInvalidMessage",h="__ue",j="changeSelection",k="_applyInvalidMessage",l="String",m="qx.ui.form.RadioButtonGroup",n="qx.event.type.Data";qx.Class.define(m,{extend:qx.ui.core.Widget,include:[qx.ui.core.MLayoutHandling,qx.ui.form.MModelSelection],implement:[qx.ui.form.IForm,qx.ui.core.ISingleSelection,qx.ui.form.IModelSelection],construct:function(o){qx.ui.core.Widget.call(this);if(o==null){this.setLayout(new qx.ui.layout.VBox(4));}
+(function(){var a="Boolean",b="_applyValid",c="",d="changeRequired",f="changeValid",g="changeInvalidMessage",h="changeSelection",j="__wk",k="_applyInvalidMessage",l="String",m="qx.ui.form.RadioButtonGroup",n="qx.event.type.Data";qx.Class.define(m,{extend:qx.ui.core.Widget,include:[qx.ui.core.MLayoutHandling,qx.ui.form.MModelSelection],implement:[qx.ui.form.IForm,qx.ui.core.ISingleSelection,qx.ui.form.IModelSelection],construct:function(o){qx.ui.core.Widget.call(this);if(o==null){this.setLayout(new qx.ui.layout.VBox(4));}
 else {this.setLayout(o);}
-;this.__ue=new qx.ui.form.RadioGroup();this.__ue.addListener(j,function(e){this.fireDataEvent(j,e.getData(),e.getOldData());}
+;this.__wk=new qx.ui.form.RadioGroup();this.__wk.addListener(h,function(e){this.fireDataEvent(h,e.getData(),e.getOldData());}
 ,this);}
-,properties:{valid:{check:a,init:true,apply:b,event:f},required:{check:a,init:false,event:d},invalidMessage:{check:l,init:c,event:g,apply:k},requiredInvalidMessage:{check:l,nullable:true,event:g}},events:{"changeSelection":n},members:{__ue:null,_applyInvalidMessage:function(r,p){var q=this._getChildren();for(var i=0;i<q.length;i++ ){q[i].setInvalidMessage(r);}
+,properties:{valid:{check:a,init:true,apply:b,event:f},required:{check:a,init:false,event:d},invalidMessage:{check:l,init:c,event:g,apply:k},requiredInvalidMessage:{check:l,nullable:true,event:g}},events:{"changeSelection":n},members:{__wk:null,_applyInvalidMessage:function(r,p){var q=this._getChildren();for(var i=0;i<q.length;i++ ){q[i].setInvalidMessage(r);}
 ;}
 ,_applyValid:function(u,s){var t=this._getChildren();for(var i=0;i<t.length;i++ ){t[i].setValid(u);}
 ;}
-,getRadioGroup:function(){return this.__ue;}
+,getRadioGroup:function(){return this.__wk;}
 ,getChildren:function(){return this._getChildren();}
-,add:function(w,v){this.__ue.add(w);this._add(w,v);}
-,remove:function(x){this.__ue.remove(x);this._remove(x);}
-,removeAll:function(){var y=this.__ue.getItems();for(var i=y.length-1;i>=0;i-- ){this.__ue.remove(y[i]);}
+,add:function(w,v){this.__wk.add(w);this._add(w,v);}
+,remove:function(x){this.__wk.remove(x);this._remove(x);}
+,removeAll:function(){var y=this.__wk.getItems();for(var i=y.length-1;i>=0;i-- ){this.__wk.remove(y[i]);}
 ;return this._removeAll();}
-,getSelection:function(){return this.__ue.getSelection();}
-,setSelection:function(z){this.__ue.setSelection(z);}
-,resetSelection:function(){this.__ue.resetSelection();}
-,isSelected:function(A){return this.__ue.isSelected(A);}
-,isSelectionEmpty:function(){return this.__ue.isSelectionEmpty();}
-,getSelectables:function(B){return this.__ue.getSelectables(B);}
-},destruct:function(){this._disposeObjects(h);}
+,getSelection:function(){return this.__wk.getSelection();}
+,setSelection:function(z){this.__wk.setSelection(z);}
+,resetSelection:function(){this.__wk.resetSelection();}
+,isSelected:function(A){return this.__wk.isSelected(A);}
+,isSelectionEmpty:function(){return this.__wk.isSelectionEmpty();}
+,getSelectables:function(B){return this.__wk.getSelectables(B);}
+},destruct:function(){this._disposeObjects(j);}
 });}
 )();
 (function(){var a="Decorator",b="_applyLayoutChange",c="center",d="_applyReversed",e="qx.debug",f="bottom",g="' is not supported by the VBox layout!",h="qx.ui.layout.VBox",j="flex",k="top",m="left",n="height",o="middle",p="Integer",q="The property '",r="right",s="Boolean";qx.Class.define(h,{extend:qx.ui.layout.Abstract,construct:function(t,u,v){qx.ui.layout.Abstract.call(this);if(t){this.setSpacing(t);}
