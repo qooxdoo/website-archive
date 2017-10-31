@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.3</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T10:01:45+0200"/>
+<meta name="keywords" content="project,release_notes,0.6.3"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.3?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.3"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.3"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.3"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.3","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="qooxdoo_063_2006-11-30" id="qooxdoo_063_2006-11-30">qooxdoo 0.6.3 (2006-11-30)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.3 (2006-11-30)" [1-42] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+<p>
+This new release, even being a minor version, introduces some major changes to the existing <acronym title="Application Programming Interface">API</acronym>. You will have to use the integrated migration support to use this release in your existing applications. The migration is supposed to automatically do all the modifications required by the new release. You are not expected to do manual corrections in significant amount. Since there is no guarantee, of course, please make sure you have a valid backup of your existing code and you double-check for production use.
+</p>
+
+<p>
+Using this migration support should dramatically reduce your efforts to upgrade to the new version. The exact ammount of time needed to fix the remaining stuff depends on the size and style of your application, of course. The whole qooxdoo framework, demo and api code base was migrated using these scripts very efficiently. Existing applications were even upgraded without any manual corrections..
+</p>
+
+</div>
+
+<h4><a name="changes_to_the_key_events" id="changes_to_the_key_events">Changes to the key events</a></h4>
+<div class="level4">
+
+<p>
+These changes are the most significant ones for qooxdoo 0.6.3 that may require adjustments of your existing code. The key event handling was completely revised. Key event handling is an area, where the browsers extremely differ. To be able to do predictable key event handling in different browsers we defined our own model for key event handling and map the original browser models to it. The previous support was rather rudimentary and incomplete compared to the new interface.
+</p>
+
+<p>
+This new handler is <acronym title="Application Programming Interface">API</acronym> compatible to the old one, but repeats of key events are no longer fired on keydown events under Windows. You have to convert your custom widgets to use keypress for repeated key events instead of keydown. All qooxdoo widgets are already updated and are expected to  work better than before.
+</p>
+
+<p>
+Unfortunately, for this change there is no migration support available, because we think it is impossible to do such a thing automatically. Please check all your existing key event listeners and make sure they work with the new release.
+</p>
+
+<p>
+For details please make sure you understand the new <a href="http://attic.qooxdoo.org/documentation/0.6/user_manual/keyboard_events" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.6/user_manual/keyboard_events">Key Event Handling Documentation</a>.
+</p>
+
+</div>
+
+<h4><a name="changes_to_class_names_and_hierarchy" id="changes_to_class_names_and_hierarchy">Changes to class names and hierarchy</a></h4>
+<div class="level4">
+
+<p>
+Several classes have been renamed to make them more user-friendly and easier for new users of qooxdoo. We take the namespace part into account to make sure that the full qualified class name is an unique identifier across the entire framework. The basic class name (the part starting with an uppercase letter, corresponding to the class&#039; file name) needs not to be unique anymore.
+</p>
+
+<p>
+To give you a short overview, here are some examples of name changes:
+</p>
+<ul>
+<li class="level1"><div class="li"> qx.dom.Dom* ⇒ qx.dom.*</div>
+</li>
+<li class="level1"><div class="li"> qx.io.remote.Remote* ⇒ qx.io.remote.*</div>
+</li>
+<li class="level1"><div class="li"> qx.ui.toolbar.ToolBar* ⇒ qx.ui.toolbar.*</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="removal_of_constants" id="removal_of_constants">Removal of constants</a></h4>
+<div class="level4">
+
+<p>
+Most constants were removed and replaced by their original string representation. In many cases the constants were introduced in earlier qooxdoo releases because of performance considerations. It is quite well-known that especially Internet Explorer has dramatic problems regarding the performance of typical string instantiations. Through the built-in string optimizer it is no longer necessary to do this by hand and make the code harder to read. All qooxdoo applications can benefit from this new feature. (String optimization is already enabled in the skeletons.)
+</p>
+
+<p>
+The complete namespace &quot;qx.constant&quot; was removed. Some constants belong to particular classes and need not to be extracted into such a global place. A few of the existing constants were moved to new namespaces, for example:
+</p>
+<ul>
+<li class="level1"><div class="li"> qx.constant.Net.NAMESPACE_* ⇒ qx.xml.Namespace.*</div>
+</li>
+<li class="level1"><div class="li"> qx.constant.Net.PROTOCOL_* ⇒ qx.net.Protocol.*</div>
+</li>
+<li class="level1"><div class="li"> qx.constant.Net.<acronym title="Uniform Resource Identifier">URI</acronym>_* ⇒ qx.net.Protocol.<acronym title="Uniform Resource Identifier">URI</acronym>_*</div>
+</li>
+<li class="level1"><div class="li"> qx.constant.Net.METHOD_ ⇒ qx.net.Http.METHOD_*</div>
+</li>
+</ul>
+
+<p>
+Migration support is available like mentioned above. Please take a look at the migration files in directory framework\tool\migration\0.6.3 for more details and a complete list of replacements.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [43-4054] -->
+<h3 class="sectionedit3"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+
+<p>
+* Removed usage of Unix tools from Makefiles that were problematic on some systems like Mac <acronym title="Operating System">OS</acronym> X, e.g. sed, dos2unix, unix2dos
+* Made generation of <acronym title="Application Programming Interface">API</acronym> reference more stable
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Tools" [4055-] --></div>
+</body>
+</html>

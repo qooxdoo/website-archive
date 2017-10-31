@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:1.3.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T14:41:54+0200"/>
+<meta name="keywords" content="project,release_notes,1.3.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/1.3.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/1.3.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/1.3.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/1.3.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:1.3.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes" class="toc">Bugfixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_131_2011-04-07" id="qooxdoo_131_2011-04-07">qooxdoo 1.3.1 (2011-04-07)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 1.3.1 (2011-04-07)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a <a href="http://attic.qooxdoo.org/about/releases" class="urlextern" title="http://attic.qooxdoo.org/about/releases">regular patch release</a>, which includes bugfixes but no feature enhancements. It is meant to be backwards compatible to qooxdoo 1.3. Nothing needs to be changed in the JavaScript code of your existing apps, if they are based on the previous 1.3 release.
+</p>
+
+<p>
+You might want to checkout the corresponding minor release <a href="/project/release_notes/1.4" class="wikilink1" title="project:release_notes:1.4">qooxdoo 1.4</a>, which  not only includes bugfixes but also many new features and improvements.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-533] -->
+<h2 class="sectionedit3"><a name="bugfixes" id="bugfixes">Bugfixes</a></h2>
+<div class="level2">
+
+<p>
+See this detailed list of about 170+ <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=1.3.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=1.3.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 1.3.1</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes" [534-877] -->
+<h2 class="sectionedit4"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="core" id="core">Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed execution order of all internal queues. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4691" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4691">4691</a>)</div>
+</li>
+<li class="level1"><div class="li"> The <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.event.GlobalError" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.event.GlobalError">GlobalError</a></code> handler called the existing handler with wrong parameters. This is now fixed. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4604" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4604">4604</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="browser_support" id="browser_support">Browser Support</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Completed full IE9 support. See a <a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;rep_platform=IE%209&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;target_milestone=1.3.1" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;rep_platform=IE%209&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;target_milestone=1.3.1">list of fixed issues</a> with this release.</div>
+</li>
+<li class="level1"><div class="li"> Completed full Firefox 4 support.</div>
+</li>
+<li class="level1"><div class="li"> Handle <code>&quot;scroll&quot;</code> event fired asynchronously by some browsers. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4570" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4570">4570</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="transport" id="transport">Transport</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Processing time of request handlers is no longer counted when determining whether the request has timed out (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4422" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4422">4422</a>).</div>
+</li>
+<li class="level1"><div class="li"> Fixed erroneous <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> status reported by <acronym title="Internet Explorer">IE</acronym> (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4476" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4476">4476</a>).</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes in the part loading. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4482" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4482">4482</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data Binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Minor fixes in the data binding core layer. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4487" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4487">4487</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4748" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4748">4748</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4823" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4823">4823</a>)</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes in the data binding controller. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4531" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4531">4531</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4756" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4756">4756</a>)</div>
+</li>
+<li class="level1"><div class="li"> Harmonized the <code>changeBubble</code> events for data arrays. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4659" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4659">4659</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="low-level" id="low-level">Low-level</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.dom.Node" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.dom.Node">qx.dom.Node</a></code> class gained support to handle <code>CDATA</code> text nodes (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4767" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4767">4767</a>)</div>
+</li>
+<li class="level1"><div class="li"> More reliably apply <code>overflowX</code>/<code>overflowY</code> styles. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4493" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4493">4493</a>).</div>
+</li>
+<li class="level1"><div class="li"> Fixed mouse click event handler for iOS devices. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4483" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4483">4483</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="util" id="util">Util</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added a check for data arrays in <code>append</code> method of <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.type.Array~append" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.type.Array~append">qx.type.Array</a></code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4488" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4488">4488</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed serialization of translated strings and data arrays. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4552" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4552">4552</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4753" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4753">4753</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed JSON parsing of dates. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4502" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4502">4502</a>)</div>
+</li>
+<li class="level1"><div class="li"> Removed an accidentally used default value in the Timer class to align with existing docs. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4835" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4835">4835</a>)</div>
+</li>
+<li class="level1"><div class="li"> Handled an exception that occurred when aborting the image loading. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4899" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4899">4899</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed lazy scrolling to given position (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4516" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4516">4516</a>).</div>
+</li>
+<li class="level1"><div class="li"> Reflow text when enabling text wrapping after initial browser paint (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4517" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4517">4517</a>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Framework" [878-3130] -->
+<h2 class="sectionedit5"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Normalize <code>input</code> event when adding line break to <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.TextArea" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.TextArea">qx.ui.form.TextArea</a></code> across browsers, including Opera (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4511" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4511">4511</a>).</div>
+</li>
+<li class="level1"><div class="li"> Prevent page from scrolling down when hitting the space key while a widget is focused (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4465" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4465">4465</a>).</div>
+</li>
+<li class="level1"><div class="li"> Solved a dispose problem with commands. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4532" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4532">4532</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="layouts" id="layouts">Layouts</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The <a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.layout.Flow" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.layout.Flow">Flow layout</a> is now usable within a scroll container. If there are more items to show than space is available a scrollbar is automatically displayed.</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.layout.Grid" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.layout.Grid">Grid layout</a> got fix for an edge case. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4703" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4703">4703</a>)</div>
+</li>
+<li class="level1"><div class="li"> Proper handling of assigning negative values to <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.decoration.BoxDiv" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.decoration.BoxDiv">BoxDiv</a></code> decoration. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4548" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4548">4548</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="form" id="form">Form</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Minor fix for Buttons. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4673" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4673">4673</a>)</div>
+</li>
+<li class="level1"><div class="li"> Disabled native resize of textareas in Gecko browsers. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4760" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4760">4760</a>)</div>
+</li>
+<li class="level1"><div class="li"> The text inside <code>qx.ui.form.TextField</code> is now vertically aligned  (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1585" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1585">1585</a>)</div>
+</li>
+<li class="level1"><div class="li"> The model selection of the radio group now also works if the targeted radio button is not visible</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="toolbar" id="toolbar">Toolbar</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Toolbar overflow handling can now takes into account button adds and removes. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4687" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4687">4687</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed flickering of the toolbar overflow handling. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4542" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4542">4542</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="combobox" id="combobox">ComboBox</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Fixed keyboard navigation in <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.ComboBox" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.ComboBox">qx.ui.form.ComboBox</a></code> with rich text items (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4389" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4389">4389</a>).</div>
+</li>
+<li class="level1"><div class="li"> Fixed broken focus handling in combobox when popup is visible (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4453" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4453">4453</a>).</div>
+</li>
+<li class="level1"><div class="li"> Fixed key press issues of combobox(#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4550" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4550">4550</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4538" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4538">4538</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="tree" id="tree">Tree</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Fixed scroll-item-into-view for <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.List" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.form.List">qx.ui.form.List</a></code> and <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.tree.Tree" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.tree.Tree">qx.ui.tree.Tree</a></code> (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4344" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4344">4344</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="image" id="image">Image</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Fixed resetting source of <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.basic.Image" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.basic.Image">qx.ui.basic.Image</a></code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4524" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4524">4524</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="embeds" id="embeds">Embeds</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Detect and properly handle user navigation in <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.Iframe" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.Iframe">qx.ui.embed.Iframe</a></code> (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4481" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4481">4481</a>).</div>
+</li>
+<li class="level1"><div class="li"> Sometimes it could happen that the <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.ThemedIframe" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.ThemedIframe">qx.ui.embed.ThemedIframe</a></code> ignored the horizontal scrollbar. This is now fixed. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4662" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4662">4662</a>).</div>
+</li>
+<li class="level1"><div class="li"> Added support for the <a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.HtmlArea" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.embed.HtmlArea">HtmlArea</a> widget to be able to set the initial content before the widget is rendered. This value can be easily changed without running out-of-sync with the rendered content. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4197" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4197">4197</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="misc" id="misc">Misc</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Fixed splitpane blocker resize if position is 0 (top or left). (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4522" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4522">4522</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed an issue with <acronym title="Internet Explorer">IE</acronym> and the splitpanes, as sometimes it could happen that a wrong widget got a click event (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4471" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4471">4471</a>).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Setting an <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.basic.Atom" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.basic.Atom">qx.ui.basic.Atom</a></code> selectable also makes its child controls selectable. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4452" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4452">4452</a>).</div>
+</li>
+<li class="level1"><div class="li"> It was not possible to use a context menu on a menu item. This is now fixed. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4736" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4736">4736</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed a tooltip problem causing the icon to be displayed as tooltip. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4534" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4534">4534</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed the autohide for <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.popup.Popup" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.popup.Popup">qx.ui.popup.Popup</a></code> widget. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4421" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4421">4421</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="virtual_widgets" id="virtual_widgets">Virtual Widgets</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="table" id="table">Table</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Minor fixes in the table widget. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3337" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3337">3337</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4451" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4451">4451</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4676" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4676">4676</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4521" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4521">4521</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="treevirtual" id="treevirtual">TreeVirtual</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Fixed infinite loop in the older <a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.treevirtual.TreeVirtual" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.treevirtual.TreeVirtual">TreeVirtual</a> widget when &quot;columnVisibilityButtonVisible&quot; is set to false. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4549" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4549">4549</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed infinite loop in the TreeVirtual widget when the &quot;topRightWidget&quot; or the scrollbar has margins. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4477" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4477">4477</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added a filter functionality to the <code><a href="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.treevirtual.SimpleTreeDataModel" class="urlextern" title="http://demo.qooxdoo.org/1.3.1/apiviewer/index.html#qx.ui.treevirtual.SimpleTreeDataModel">SimpleTreeDataModel</a></code> of the TreeVirtual widget. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4515" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4515">4515</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="theming" id="theming">Theming</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed resizing behavior in the case a widget to be resized had inset and borders. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4519" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4519">4519</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed the caching of appearances. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3851" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3851">3851</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "GUI Toolkit" [3131-7663] -->
+<h2 class="sectionedit6"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="showcase" id="showcase">Showcase</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed showcase when viewed offline. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4547" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4547">4547</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="playground" id="playground">Playground</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Syntax highlighting code editor based on <a href="http://ace.ajax.org/" class="urlextern" title="http://ace.ajax.org/">ACE</a> updated to improve features and stability. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4364" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4364">4364</a>)</div>
+</li>
+<li class="level1"><div class="li"> Code editor is now available for all browsers, including <acronym title="Internet Explorer">IE</acronym>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4648" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4648">4648</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="api_viewer" id="api_viewer">API Viewer</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Both interface inheritance and code indentation are now displayed correctly (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2169" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2169">2169</a>, #<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4436" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4436">4436</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Applications" [7664-8135] -->
+<h2 class="sectionedit7"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Updated <a href="http://manual.qooxdoo.org/1.3.1/pages/core/variants.html" class="urlextern" title="http://manual.qooxdoo.org/1.3.1/pages/core/variants.html">variants documentation</a> to reflect the actual behavior. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4863" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4863">4863</a>)</div>
+</li>
+<li class="level1"><div class="li"> Updated <a href="http://manual.qooxdoo.org/1.3.1/pages/gui_toolkit/ui_form_handling.html" class="urlextern" title="http://manual.qooxdoo.org/1.3.1/pages/gui_toolkit/ui_form_handling.html">form handling</a> manual page. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4701" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4701">4701</a>)</div>
+</li>
+<li class="level1"><div class="li"> Updated documentation of <a href="http://manual.qooxdoo.org/1.3.1/pages/gui_toolkit/ui_inline.html#page-flow" class="urlextern" title="http://manual.qooxdoo.org/1.3.1/pages/gui_toolkit/ui_inline.html#page-flow">how to use inline widgets</a> which are within the page flow</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Documentation" [8136-] --></div>
+</body>
+</html>

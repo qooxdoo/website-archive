@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.2</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.6.2"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.2?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.2"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.2"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.2"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.2","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#demos" class="toc">Demos</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api" class="toc">API</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_062_2006-11-22" id="qooxdoo_062_2006-11-22">qooxdoo 0.6.2 (2006-11-22)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.2 (2006-11-22)" [1-42] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="additions" id="additions">Additions</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added full support for recent WebKit versions, i.e. the most recent nightly builds. qooxdoo is also going to support the next official Safari release (version 3.0 which is expected for early 2007).</div>
+</li>
+<li class="level1"><div class="li"> Added support for knobs on the SplitPane divider.</div>
+</li>
+<li class="level1"><div class="li"> Added enhanced ComboBoxEx with additional features compared to the original ComboBox, e.g. multicolumn popup list (experimental).</div>
+</li>
+<li class="level1"><div class="li"> Added Resizer widget to allow of customization regarding the dimensions of any widget by the user.</div>
+</li>
+<li class="level1"><div class="li"> Added IframeManager to manage visible iframes in order to protect the application events of the &quot;surrounding&quot; document from getting interrupted while switching document context (particularly drag &amp; drop over embedded iframes)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="changes" id="changes">Changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Made qooxdoo completely <acronym title="Extensible HyperText Markup Language">XHTML</acronym> compatible. Replaced all uppercase tag names with their lowercase variant. Modified source script loader accordingly.</div>
+</li>
+<li class="level1"><div class="li"> Improved NativeWindow to support the querying of the load state. Added events for &quot;load&quot; and &quot;close&quot;.</div>
+</li>
+<li class="level1"><div class="li"> Modified XmlHttpRequest and related APIs to respect the <a href="http://blogs.msdn.com/xmlteam/archive/2006/10/23/using-the-right-version-of-msxml-in-internet-explorer.aspx" class="urlextern" title="http://blogs.msdn.com/xmlteam/archive/2006/10/23/using-the-right-version-of-msxml-in-internet-explorer.aspx">latest suggestions from Microsoft</a>.</div>
+</li>
+<li class="level1"><div class="li"> Renamed &quot;focusManager&quot; property of Parent to &quot;focusHandler&quot;.</div>
+</li>
+<li class="level1"><div class="li"> Removed Function.prototype.closure, which has never been used in the framework.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="fixes" id="fixes">Fixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> ComboBox supports disabling correctly now.</div>
+</li>
+<li class="level1"><div class="li"> Enhanced support for dynamic trees (runtime addition and deletion of items)</div>
+</li>
+<li class="level1"><div class="li"> Major cleanup and improvement of Dom stylesheet <acronym title="Application Programming Interface">API</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to StringBuilder class.</div>
+</li>
+<li class="level1"><div class="li"> Minor enhancement to the pressed button detection (mouse events).</div>
+</li>
+<li class="level1"><div class="li"> Slightly improved performance of MenuManager.</div>
+</li>
+<li class="level1"><div class="li"> Greatly improved focus handling in application which use the ComboBox widget.</div>
+</li>
+<li class="level1"><div class="li"> Improved calculation of the location of the ComboBox popup.</div>
+</li>
+<li class="level1"><div class="li"> Window class was improved to better manage the internal state.</div>
+</li>
+<li class="level1"><div class="li"> Fixed some issues regarding innerText vs. textContent (incl. Webkit support)</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes in preventation of default &lt;TAB&gt; handling.</div>
+</li>
+<li class="level1"><div class="li"> Major fix for bugs regarding missing focus roots.</div>
+</li>
+<li class="level1"><div class="li"> Major enhancement in find a focusable parent when the current child is disabled.</div>
+</li>
+<li class="level1"><div class="li"> No abort() call on failed remote requests anymore.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to text handling of Label widget.</div>
+</li>
+<li class="level1"><div class="li"> Minor improvement to omit broken images to show up when using Image.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to display queue to omit JavaScript errors in some rare cases.</div>
+</li>
+<li class="level1"><div class="li"> Fixed TextField dependency to Font classes.</div>
+</li>
+<li class="level1"><div class="li"> Fixed event propagation issues in Window class.</div>
+</li>
+<li class="level1"><div class="li"> Fixed ClientDocument if release/block is executed without a created blocker widget.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [43-2738] -->
+<h3 class="sectionedit3"><a name="demos" id="demos">Demos</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Minor additions and adjustments were made.</div>
+</li>
+<li class="level1"><div class="li"> Added an example to demonstrate the features of the Command class.</div>
+</li>
+<li class="level1"><div class="li"> Added an example to show how to use a built-in feature to (temporarily) disable commands in complex applications.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Demos" [2739-2992] -->
+<h3 class="sectionedit4"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added new compiler which supports both, pretty printing and compressing.</div>
+</li>
+<li class="level1"><div class="li"> Removed old tree and token compiler (cleaned up skeletons for new arguments)</div>
+</li>
+<li class="level1"><div class="li"> Moved migration support to the generator script.</div>
+</li>
+<li class="level1"><div class="li"> Added support for tree based migration. This allows complex operations on the syntax tree before recompiling it to source code.</div>
+</li>
+<li class="level1"><div class="li"> Reorganized directory structure of the tools directory.</div>
+</li>
+<li class="level1"><div class="li"> Added &quot;fix&quot; and &quot;pretty&quot; targets to the Makefiles of the framework and the skeletons. Caution, these targets directly modify the class files!</div>
+</li>
+<li class="level1"><div class="li"> Minor enhancement to some Makefiles regarding cross platform support (replaced some expressions with find commands)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tools" [2993-3679] -->
+<h3 class="sectionedit5"><a name="api" id="api">API</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added <a href="http://www.textism.com/tools/textile/" class="urlextern" title="http://www.textism.com/tools/textile/">textile</a> support to the <acronym title="Application Programming Interface">API</acronym> javadoc documentation.</div>
+</li>
+<li class="level1"><div class="li"> Automatically fix external links of the <acronym title="Application Programming Interface">API</acronym> documentation to open inside a new window.</div>
+</li>
+<li class="level1"><div class="li"> Added events fired by the qooxdoo classes to the <acronym title="Application Programming Interface">API</acronym> documentation.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks regarding the left pane formatting of the <acronym title="Application Programming Interface">API</acronym> viewer.</div>
+</li>
+<li class="level1"><div class="li"> Improved first sentence extraction for intial view of the method description.</div>
+</li>
+<li class="level1"><div class="li"> Support of multiple types for params and returns. Declarated in JavaDoc in the following form &quot;{Type1 | Type2 ? DefaultValue}&quot;.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to the primitive type detection.</div>
+</li>
+<li class="level1"><div class="li"> Enhanced documentation of many core classes and methods.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "API" [3680-] --></div>
+</body>
+</html>

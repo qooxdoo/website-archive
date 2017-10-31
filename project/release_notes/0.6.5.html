@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.5</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T10:04:07+0200"/>
+<meta name="keywords" content="project,release_notes,0.6.5"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.5?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.5"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.5"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.5"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.5","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#license_change" class="toc">License change</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_viewer" class="toc">API Viewer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#backend" class="toc">Backend</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_065_2007-01-26" id="qooxdoo_065_2007-01-26">qooxdoo 0.6.5 (2007-01-26)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.5 (2007-01-26)" [1-42] -->
+<h3 class="sectionedit2"><a name="license_change" id="license_change">License change</a></h3>
+<div class="level3">
+
+<p>
+In order to allow qooxdoo to be used by projects that are part of the
+Eclipse environment/community under the appropriate Eclipse Public
+License (EPL), we chose to extend qooxdoo&#039;s previous licensing scheme
+which was covered by the GNU Lesser General Public License (<acronym title="GNU Lesser General Public License">LGPL</acronym>).
+</p>
+
+<p>
+qooxdoo may now be used under the terms of <em>either</em> the <acronym title="GNU Lesser General Public License">LGPL</acronym>
+(<a href="http://www.gnu.org/licenses/lgpl.html" class="urlextern" title="http://www.gnu.org/licenses/lgpl.html">http://www.gnu.org/licenses/lgpl.html</a>) <em>or</em> the Eclipse Public
+License (EPL) (<a href="http://www.eclipse.org/org/documents/epl-v10.php" class="urlextern" title="http://www.eclipse.org/org/documents/epl-v10.php">http://www.eclipse.org/org/documents/epl-v10.php</a>). As a
+recipient of qooxdoo, you may choose which license to receive the code
+under. Certain files or entire directories may not be covered by this
+dual license, but are subject to licenses compatible to both <acronym title="GNU Lesser General Public License">LGPL</acronym> and
+EPL. License exceptions are explicitly declared in all relevant files
+or in a LICENSE file in the relevant directories.
+</p>
+
+<p>
+In short: all existing users of qooxdoo (that should already comply
+with the terms of the <acronym title="GNU Lesser General Public License">LGPL</acronym>) should not be affected by this license
+change. All new qooxdoo users from the Eclipse community have now the
+chance to use qooxdoo in their projects. We expect to see some great
+solutions that will propel the use of qooxdoo-based web applications.
+</p>
+
+<p>
+For more detailed licensing information, please see the LICENSE file
+in the project&#039;s top-level directory.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "License change" [43-1331] -->
+<h3 class="sectionedit3"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="additions" id="additions">Additions</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A new virtual tree (<code>qx.ui.treevirtual.TreeVirtual</code>) was added. Kudos to Derrell Lipman.  This performant widget allows for really large trees. The implementation is based on the existing Table widget. The virtual tree is still under heavy development and considered experimental. Your feedback is welcome (feature requests or bug reports).</div>
+</li>
+<li class="level1"><div class="li"> A powerful and generic implementation of a finite state machine (<code>qx.util.fsm.FiniteStateMachine</code>) was added. Thanks Derrell!</div>
+</li>
+<li class="level1"><div class="li"> Drag &amp; Drop now supports an optional widget for visual user feedback during a drag.</div>
+</li>
+<li class="level1"><div class="li"> Two new icon themes are now included.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation was added for many classes that were not documented previously and the existing documentation was improved to great extent.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="changes" id="changes">Changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Reorganized the entire icon theme structure. The previously available icon themes were replaced with new standardized icon themes following the <a href="http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html" class="urlextern" title="http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html">Freedesktop Icon Naming Specification</a>. There are currently four available themes. All are available under the <acronym title="GNU Lesser General Public License">LGPL</acronym>, but two, Vista-Inspirate and NuoveXT, are also available under the Eclipse Public License EPL. Kudos to the author of the two latter ones, Alexandre Moore, for his permission to relicense his excellent work under <acronym title="GNU Lesser General Public License">LGPL</acronym>/EPL!</div>
+</li>
+<li class="level1"><div class="li"> Nuvola is the new default icon theme. The previous CrystalSvg icon theme was replaced with the quite similar CrystalClear icon theme. Some users of the icon themes in previous releases (Nuvola or CrystalSvg) may encounter missing images. The four new icon themes share a common set of icons, but this set, albeit more consistent, is smaller than the previous set of icons. You may have to replace missing icons or add new ones. For more information on icon themes, please the corresponding <a href="http://attic.qooxdoo.org/documentation/0.6/user_manual/icons" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.6/user_manual/icons">article</a> in the User Manual.</div>
+</li>
+<li class="level1"><div class="li"> Reorganized and improved <acronym title="Extensible Markup Language">XML</acronym> support. Under the qx.xml namespace <acronym title="Extensible Markup Language">XML</acronym> functionality is provided which is well tested and documented. All functions have been verified to work in all supported browsers. A special feature is the cross browser <code>getElementsByTagNameNS</code> which even works in Internet Explorer. Automatic migration support is available.</div>
+</li>
+<li class="level1"><div class="li"> Most classes of <code>qx.dom</code> where moved to <code>qx.html</code>, since their methods only work on <acronym title="HyperText Markup Language">HTML</acronym> documents. Some general classes were left in <code>qx.dom</code> that are neither <acronym title="HyperText Markup Language">HTML</acronym> nor <acronym title="Extensible Markup Language">XML</acronym> specific. Automatic migration support is available.</div>
+</li>
+<li class="level1"><div class="li"> Mime type constants in class <code>qx.util.Mime</code> were re-introduced as they are superior to explicit strings.</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.sys.Client</code> was renamed to <code>qx.core.Client</code>. The client detection is an integral part of the whole system and by removing the now empty <code>qx.sys</code> namespace the hierarchy has been cleaned up a bit. Automatic migration support is available.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="bugfixes" id="bugfixes">Bugfixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A major bugfix for the disposer was applied to SVN, which should fix some potential memory leaks. Long-living single-page applications should benefit from this correction as well.</div>
+</li>
+<li class="level1"><div class="li"> The tree widget got its (previously unnoticed?) handling of clicking the plus/minus symbols fixed. The new behavior should now be identical to trees found in typical applications e.g. Windows Explorer, in which toggling a folder does not automatically select the node.</div>
+</li>
+<li class="level1"><div class="li"> The handling of aliases was fixed to correctly update not yet created icons and other resources when the icon theme gets modified at runtime.</div>
+</li>
+<li class="level1"><div class="li"> Minor fix to handle disabled TabViewButtons correctly (keyboard support).</div>
+</li>
+<li class="level1"><div class="li"> The locale support for the internationalization introduced in qooxdoo 0.6.4 was improved. It should be more stable and reliable now.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Framework" [1332-5090] -->
+<h3 class="sectionedit4"><a name="applications" id="applications">Applications</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The build version of the included applications (apiviewer, feedreader, showcase, webmail) are now configured to use &quot;error&quot; as the minimal log level. The minimal log level of the source versions are untouched and still output all debug messages.</div>
+</li>
+<li class="level1"><div class="li"> Minor improvements and bugfixes to the feedreader application. This application is a good reference implementation for a small to mid-size qooxdoo application.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Applications" [5091-5530] -->
+<h3 class="sectionedit5"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Extensible HyperText Markup Language">XHTML</acronym> support for the source version of qooxdoo applications was added to the generator options. This was done using a template system where the template contains a block that gets replaced with script tags. These script tags make sure that the source versions of the class files is included correctly. In your skeleton Makefile simply use  <code>APPLICATION_TEMPLATE_INPUT</code> to define the template file and <code>APPLICATION_TEMPLATE_OUTPUT</code> for the resulting file. This generic solution allows all filetypes to be patched, not only <acronym title="HyperText Markup Language">HTML</acronym> files, but alos <acronym title="Hypertext Preprocessor">PHP</acronym>, <acronym title="Extensible Markup Language">XML</acronym> or others.</div>
+</li>
+<li class="level1"><div class="li"> The skeleton support was enhanced. There was a small renaming of one include file. The old &quot;project.mk&quot; in the Makefile of a user application needs to be replaced with &quot;application.mk&quot;. This has to be done manually, but migration support provides appropriate warnings.</div>
+</li>
+<li class="level1"><div class="li"> There is a new tool which extracts the current revision and branch and makes this information available to qooxdoo applications.</div>
+</li>
+<li class="level1"><div class="li"> The core Makefiles in backend and frontend were improved by great extend. They use many powerful features of the skeleton system now.</div>
+</li>
+<li class="level1"><div class="li"> The sync command was improved to optimize the speed of online and offline synchronisation using rsync. This leads to a better performance of <code>make build</code>, <code>make api</code> and <code>make publish</code>.</div>
+</li>
+<li class="level1"><div class="li"> The icon theme identifier was renamed from <code>icon</code> to <code>icontheme</code>. The widget theme identifier was renamed from <code>widget</code> to <code>widgettheme</code>. These changes make the usage a bit clearer. Users of the previous <code>#embed</code> statements must update them to match the new format.</div>
+</li>
+<li class="level1"><div class="li"> Namespaces for resources where introduced to protect applications from identifier conflicts when using multiple qooxdoo-based libraries each with its own resources.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Tools" [5531-7309] -->
+<h3 class="sectionedit6"><a name="api_viewer" id="api_viewer">API Viewer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> A convenient splitpane was added to the <acronym title="Application Programming Interface">API</acronym> viewer.</div>
+</li>
+<li class="level1"><div class="li"> The layout and design of the <acronym title="Application Programming Interface">API</acronym> viewer was improved.</div>
+</li>
+<li class="level1"><div class="li"> The <acronym title="Application Programming Interface">API</acronym> viewer has got many major improvements. The class details view is more clearly arranged. It is possible to hide protected methods (enabled by default) to reduce initial complexity for the regular application developer. The inheritance options are globally controllable now as well, not only for single topics. Empty areas of the class view are now hidden completely which further increase the usability of the class viewer. Values of constants are now included as well.</div>
+</li>
+<li class="level1"><div class="li"> The build module of the <acronym title="Application Programming Interface">API</acronym> viewer was renamed from &quot;api&quot; to &quot;apiviewer&quot; for consistency reasons, <code>#module(apiviewer)</code>.</div>
+</li>
+<li class="level1"><div class="li"> The types in JavaScript documentation are always written capitalized from now on. This means for example the old &quot;{string}&quot; is no written &quot;{String}&quot;. &quot;{int}&quot; was renamed to &quot;{Integer}&quot;. The only lowercase things are <code>var</code>, <code>void</code>, <code>undefined</code> and <code>arguments</code>. Following a list of all built-in types: <code>var</code>, <code>void</code>, <code>undefined</code>, <code>arguments</code>, <code>Boolean</code>, <code>String</code>, <code>Float</code>, <code>Double</code>, <code>Number</code>, <code>Integer</code>, <code>Error</code>, <code>RegExp</code>, <code>Array</code>, <code>Map</code>, <code>Date</code>, <code>Element</code>, <code>Document</code>, <code>Window</code>, <code>Node</code>, <code>Function</code>, <code>Object</code>, <code>Event</code>.</div>
+</li>
+<li class="level1"><div class="li"> The <code>@see</code> and <code>@link</code> attributes were fixed.</div>
+</li>
+<li class="level1"><div class="li"> Textile support was enhanced. Many encoding related bugs were fixed.</div>
+</li>
+<li class="level1"><div class="li"> The <acronym title="Application Programming Interface">API</acronym> viewer shows up the version of qooxdoo used now.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "API Viewer" [7310-8817] -->
+<h3 class="sectionedit7"><a name="backend" id="backend">Backend</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The optional <acronym title="Remote Procedure Call">RPC</acronym> backends in Java and <acronym title="Hypertext Preprocessor">PHP</acronym> now have a new companion: Nick Glencross contributed a <acronym title="Practical Extraction and Report Language">Perl</acronym> backend, which is almost as complete as the existing backends. Thanks Nick, and great to have you onboard.</div>
+</li>
+<li class="level1"><div class="li"> The Java based <acronym title="Remote Procedure Call">RPC</acronym> reference implementation was updated.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Backend" [8818-] --></div>
+</body>
+</html>

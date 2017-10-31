@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.7.3</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-18T14:16:35+0200"/>
+<meta name="keywords" content="project,release_notes,0.7.3"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.7.3?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.7.3"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.7.3"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.7.3"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.7.3","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#object-orientation" class="toc">Object-Orientation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#core_classes" class="toc">Core Classes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#io_classes" class="toc">IO Classes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#widget_system" class="toc">Widget System</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#table_widget" class="toc">Table Widget</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tree_virtual" class="toc">Tree Virtual</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#other_widgets" class="toc">Other Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#other_classes" class="toc">Other Classes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tool_chain" class="toc">Tool chain</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#quickstart" class="toc">Quickstart</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#feed_reader" class="toc">Feed reader</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#demo_browser" class="toc">Demo browser</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#build_tool" class="toc">Build tool</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_073_2008-01-15" id="qooxdoo_073_2008-01-15">qooxdoo 0.7.3 (2008-01-15)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.7.3 (2008-01-15)" [1-42] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+qooxdoo 0.7.3 is a maintenance release which includes many bug fixes and improvements. 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [43-152] -->
+<h2 class="sectionedit3"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT3 SECTION "Framework" [153-176] -->
+<h3 class="sectionedit4"><a name="object-orientation" id="object-orientation">Object-Orientation</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes" id="major_changes">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed multiple issues with non-inheritable properties which use the same name as an inheritable property in another class.</div>
+</li>
+<li class="level1"><div class="li"> Fixed major issue in mixin declaration code. Each entry in the members section of a mixin gets added a reference to the mixin itself. This does not work well for primitive types like strings, numbers or booleans. As this reference is only needed for methods the new code only applies the mixin reference to functions of the members section.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes" id="minor_changes">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <code>qx.Class</code> got a new detection for overwritten &quot;private&quot; members, which may have caused unnoticed issues in earlier versions of qooxdoo.</div>
+</li>
+<li class="level1"><div class="li"> <code>__addMembers</code> was improved which slightly improves the performance of class declaration as well. Redundant member names are now detected.</div>
+</li>
+<li class="level1"><div class="li"> Added check to property system to prevent declaration of themed property groups which contain non-themable properties.</div>
+</li>
+<li class="level1"><div class="li"> Properties are now automatically disposed, too, when the <code>check</code> refers to a qooxdoo interface.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to improve error handling of properties in gecko-based clients.</div>
+</li>
+<li class="level1"><div class="li"> Locale classes are now stored into the regular namespace hierarchy again.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Object-Orientation" [177-1400] -->
+<h3 class="sectionedit5"><a name="core_classes" id="core_classes">Core Classes</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes1" id="major_changes1">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed keyboard event support in recent versions of Opera.</div>
+</li>
+<li class="level1"><div class="li"> Added support for variants and settings with deeper namespaces e.g. <code>qx.cool.debuggingEnabled</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.core.Log</code> is now based on Firebug Lite. It was modified to print the output to a separate window instead of an inline positioned DIV element, as this was a lot more stable in the qooxdoo applications tested. Some other code improvements and changes to match qooxdoo coding style.</div>
+</li>
+<li class="level1"><div class="li"> Removed warning for old-style application (before 0.7) which did not call the superclass method <code>main()</code> from the custom application class. This reduces code size and the general overhead needed for those checks.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes1" id="minor_changes1">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added new class <code>qx.core.Package</code> to manage the loading of packages created by the experimental generator2. All features of the next-generation build tool generator2 are still alpha.</div>
+</li>
+<li class="level1"><div class="li"> Changed defaults of <code>qx.allowUrlSettings</code> and <code>qx.allowUrlVariants</code> to <code>false</code>. This could have been a security issue in previous versions.</div>
+</li>
+<li class="level1"><div class="li"> Changed behavior of variant and settings system regarding default values. A default value is not required anymore as long as a value is defined. This allows variants/settings which are dynamically added using the generator without being defined in the JavaScript code.</div>
+</li>
+<li class="level1"><div class="li"> New static method <code>equals()</code> in <code>qx.lang.Array</code> compares the contents of two arrays.</div>
+</li>
+<li class="level1"><div class="li"> The window appender was improved regarding some issues detected on slower systems. The window opening should be more reliable now.</div>
+</li>
+<li class="level1"><div class="li"> Added missing disposer entries in some log appenders.</div>
+</li>
+<li class="level1"><div class="li"> Improved logging code of dispose implementation in <code>qx.core.Object</code>.</div>
+</li>
+<li class="level1"><div class="li"> Added two functions in <code>qx.lang.String</code>: <code>getAlternateQuotationStart()</code> and <code>getAlternateQuotationEnd()</code>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Core Classes" [1401-3236] -->
+<h3 class="sectionedit6"><a name="io_classes" id="io_classes">IO Classes</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes2" id="major_changes2">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed memory leak detected in XmlHttp support. This was already presented as a hotfix to users of 0.7.2.</div>
+</li>
+<li class="level1"><div class="li"> Fixed typo in <code>IframeTransport</code> which made the <acronym title="HyperText Markup Language">HTML</acronym> transport using this layer not working correctly.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes2" id="minor_changes2">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added more documentation to <code>Rpc</code> class (transport <acronym title="Application Programming Interface">API</acronym>).  </div>
+</li>
+<li class="level1"><div class="li"> Minor fix to <code>RequestQueue</code> to be sure that the timer is really stopped when the queue is empty.</div>
+</li>
+<li class="level1"><div class="li"> Major improvement of documentation of the whole IO system (especially the overview pages were improved).</div>
+</li>
+<li class="level1"><div class="li"> Fixed global pollution in <code>ScriptTransport</code> class.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "IO Classes" [3237-3862] -->
+<h3 class="sectionedit7"><a name="widget_system" id="widget_system">Widget System</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes3" id="major_changes3">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Removed a legacy-gecko (gecko 1.6, …) workaround in qooxdoo drag&amp;drop support (<code>DragAndDropHandler</code>). This brings an extreme performance push for newer geckos.</div>
+</li>
+<li class="level1"><div class="li"> Added support for controlling the <acronym title="Cascading Style Sheets">CSS</acronym> value of <code>backgroundRepeat</code>. There is a new themeable property with the same name available for all widgets now.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>zIndex</code> issue with drap&amp;drop feedback widget. Sometimes the widget was hidden by other content.</div>
+</li>
+<li class="level1"><div class="li"> Workaround added for some low-level <code>NS_<acronym title="Document Object Model">DOM</acronym></code> errors in gecko-based clients when modifying a running application, so that a widget was removed and added in one single flush.</div>
+</li>
+<li class="level1"><div class="li"> Greatly improved Ext appearance.</div>
+</li>
+<li class="level1"><div class="li"> Improved default look of table (for example the cell paddings were increased).</div>
+</li>
+<li class="level1"><div class="li"> Removed <code>table-row</code> appearance as this was not a consistent solution. Simple color names are really enough in this case. Please have a look at your color theme and adjust the colors starting with <code>table-row-</code>.</div>
+</li>
+<li class="level1"><div class="li"> Major refactoring of <code>base</code> support in appearance themes. The system now works a lot more reliable when using mixins at theme level.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes3" id="minor_changes3">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed background image cache control for <acronym title="Internet Explorer 6">IE6</acronym> and disabled it for IE7, because it is not needed there.</div>
+</li>
+<li class="level1"><div class="li"> Minor improvements for client document blocker (previous implementation had issues with non-application layouts).</div>
+</li>
+<li class="level1"><div class="li"> Added support to apply dynamically generated IDs to every widget. Useful for functional testing with Selenium (see qooxdoo-contrib/Simulator). Disabled by default.</div>
+</li>
+<li class="level1"><div class="li"> Added missing dispose flag for property <code>dropDataTypes</code> in <code>Widget</code>.</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks in font selection of <code>Ext</code> and <code>Default</code> theme.</div>
+</li>
+<li class="level1"><div class="li"> Removed support of pane focus states in <code>Table</code> code. The following color names were removed from qooxdoo themes: <code>table-focus-indicator-active</code>, <code>focused-selected-blur</code>, <code>table-row-background-focused-blur</code>, <code>table-row-background-selected-blur</code>. Unfortunately, the previous usage and implementation was regarded as too problematic and inconsistent. It needs to be re-implemented in a more generic way. An improved table focus handling is expected for the 0.8 release cycle.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Widget System" [3863-6053] -->
+<h3 class="sectionedit8"><a name="table_widget" id="table_widget">Table Widget</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes4" id="major_changes4">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added string, number and date cell renderers. Thanks to Gaetan de Menten for his contribution.</div>
+</li>
+<li class="level1"><div class="li"> Added filtered table model by Dan Hummon. Thanks alot for your contribution.</div>
+</li>
+<li class="level1"><div class="li"> Added support for case sensitive sorting to the simple table model (which is used by default).</div>
+</li>
+<li class="level1"><div class="li"> Greatly improved caching of remote table model.</div>
+</li>
+<li class="level1"><div class="li"> The statusbar text is now created by the localization manager, and therefore can easily  be translated.</div>
+</li>
+<li class="level1"><div class="li"> Fix for table selection incorporated, kudos to Tino Butz.</div>
+</li>
+<li class="level1"><div class="li"> Major refactoring of color handling in default row renderer.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes4" id="minor_changes4">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Improved performance of <code>_updateRowStyles</code> to apply row styles to the table pane content.</div>
+</li>
+<li class="level1"><div class="li"> Increased default row height from 18 to 20.</div>
+</li>
+<li class="level1"><div class="li"> Improved overall appearance.</div>
+</li>
+<li class="level1"><div class="li"> Improved event dispatching for cases where the selection has not been changed (e.g. double clicking on a row)</div>
+</li>
+<li class="level1"><div class="li"> Fixed global pollution in default and replace cell renderers.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation of a few cell renderers and other classes were improved.</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes and additions to the resize behavior to allow the user a better control.</div>
+</li>
+<li class="level1"><div class="li"> Fixed superclass definition of default row renderer.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Table Widget" [6054-7273] -->
+<h3 class="sectionedit9"><a name="tree_virtual" id="tree_virtual">Tree Virtual</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Property <code>alwaysShowOpenCloseSymbol</code> was ignored in <acronym title="Internet Explorer">IE</acronym>. This fixes bug #684.</div>
+</li>
+<li class="level1"><div class="li"> Tree lines were not handled properly for empty top-level branches. Fixed. </div>
+</li>
+<li class="level1"><div class="li"> Gaetan de Menten provided a patch which added a <code>getRowFromNodeId()</code> method in <code>SimpleTreeDataModel</code> to remove dependence on specifics of the underlying implementation</div>
+</li>
+<li class="level1"><div class="li"> Gaetan de Menten provided a patch which fixed a bug in <code>SelectionManager</code> when <code>setFocusCellOnMouseMove()</code> was false. The bug caused an exception to be thrown when pressing the space bar to select a row.</div>
+</li>
+<li class="level1"><div class="li"> Fixed variable pollution in <code>treevirtual.CheckBoxTree</code>.</div>
+</li>
+<li class="level1"><div class="li"> Removed obsolete and broken calls to <code>setRowColors()</code>. Formerly, row colors were defined internally, but other recent changes have moved that into the theme.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Tree Virtual" [7274-8076] -->
+<h3 class="sectionedit10"><a name="other_widgets" id="other_widgets">Other Widgets</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes5" id="major_changes5">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <code>MenuButton</code> now uses new location code instead of the old buggy one. This fixes issues of menus in applications with scrollbars.</div>
+</li>
+<li class="level1"><div class="li"> The popup system does not support the settings <code>qx.restrictToPageLeft</code>, <code>qx.restrictToPageRight</code>, <code>qx.restrictToPageTop</code> and <code>qx.restrictToPageBottom</code> anymore. Please use the appropriate properties instead, which allow individual restrictions on a per-widget base.</div>
+</li>
+<li class="level1"><div class="li"> The <code>Iframe</code> class got a new property <code>scrolling</code> which is identical to the property in <acronym title="HyperText Markup Language">HTML</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> The <code>reload</code>/<code>setSource</code> methods of <code>Iframe</code> have got some reworks. They should work more stable now. There were some issues in combination with the Firefox extension AdBlock Plus which are fixed now as well.</div>
+</li>
+<li class="level1"><div class="li"> The &quot;Spinner&quot; widget has got a lot of new <acronym title="Application Programming Interface">API</acronym> documentation. It also gained support for floating numbers.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes5" id="minor_changes5">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed support for <code>maxWidth</code> and <code>maxHeight</code> in <code>Window</code>. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=709" class="urlextern" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=709">Bug #709</a></div>
+</li>
+<li class="level1"><div class="li"> Fixed issue of <code>IframeManager</code> when blocked iframes got hidden. This is fixed now and should be much more reliable.</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes in <code>ComboBoxEx</code>, <code>TextField</code>, <code>Button</code> and <code>List</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>zIndex</code> issue of <code>SplitPaneSplitter</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed selection issue of tree when the selected item is removed or new items are added.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>wrap</code> property of <code>TextArea</code>. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=300" class="urlextern" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=300">Bug #300</a></div>
+</li>
+<li class="level1"><div class="li"> Minor fixes for <code>getHierarchy()</code> in <code>Tree</code> class.</div>
+</li>
+<li class="level1"><div class="li"> Applied fix to <code>InputCheckSymbol</code>. This fixes the possibility to disable checkboxes and radiobuttons.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>getSelectionStart()</code> in <code>form.TextField</code>. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=521" class="urlextern" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=521">Bug #521</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Other Widgets" [8077-9854] -->
+<h3 class="sectionedit11"><a name="other_classes" id="other_classes">Other Classes</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="major_changes6" id="major_changes6">Major changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <code>Range</code> now supports floating-point numbers.</div>
+</li>
+<li class="level1"><div class="li"> Fixed XPath issues in <acronym title="Internet Explorer">IE</acronym> in implementation of class <code>qx.xml.Element</code>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="minor_changes6" id="minor_changes6">Minor changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed global variable pollution in <code>FlowLayoutImpl</code>, <code>FiniteStateMachine</code>, <code>Debug</code>, <code>Tokenizer</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed wrong <acronym title="Application Programming Interface">API</acronym> docs in <code>DateFormat</code></div>
+</li>
+<li class="level1"><div class="li"> Added initial support for timezones (by the variables <code>z</code> and <code>Z</code>) in <code>DateFormat</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed minor issues in <code>Stacktrace</code>.</div>
+</li>
+<li class="level1"><div class="li"> Added missing copyright information in <code>qx.xml.Namespace</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed global pollution issue in <code>qx.xml.Document</code>.</div>
+</li>
+<li class="level1"><div class="li"> Improved documentation of classes in <code>qx.xml</code> namespace.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Other Classes" [9855-10530] -->
+<h3 class="sectionedit12"><a name="tool_chain" id="tool_chain">Tool chain</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added new module <code>ecmalint</code> which adds support for JavaScript code validation, similar to JSLint.</div>
+</li>
+<li class="level1"><div class="li"> <code>make lint</code> Makefile target for code validation of any skeleton-based application. </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Tool chain" [10531-10747] -->
+<h2 class="sectionedit13"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> More adjustments for changes in event <acronym title="Application Programming Interface">API</acronym> (ChangeEvent: <code>getData()</code> ⇒ <code>getValue()</code>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Applications" [10748-10868] -->
+<h3 class="sectionedit14"><a name="quickstart" id="quickstart">Quickstart</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added missing locale information to Makefile. This fixes issues when trying to use the localization support in the pre-built quickstart download.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Quickstart" [10869-11041] -->
+<h3 class="sectionedit15"><a name="feed_reader" id="feed_reader">Feed reader</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The feed reader demo application was improved. Code was structured into more classes. Now the feed reader is a fine showcase for a typical qooxdoo application.</div>
+</li>
+<li class="level1"><div class="li"> The feed reader now works better with feeds and is prepared for further development of features like adding/removing feeds etc.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Feed reader" [11042-11362] -->
+<h3 class="sectionedit16"><a name="demo_browser" id="demo_browser">Demo browser</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Usage of global variables in the Makefiles of included applications was improved.</div>
+</li>
+<li class="level1"><div class="li"> Corrected some examples for improvements in the transport <acronym title="Application Programming Interface">API</acronym>. (Response object became an event instance in recent versions.)</div>
+</li>
+<li class="level1"><div class="li"> Fixed some minor issues in demobrowser examples. Some examples were updated to use the new form of application declaration (no more legacy usage of <code>defineMain()</code>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT16 SECTION "Demo browser" [11363-11775] -->
+<h3 class="sectionedit17"><a name="build_tool" id="build_tool">Build tool</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Re-worked directory structure, both in the <code>buildtool</code> application hierarchy as well as for the <code>make buildtool</code> app target, to better match general &#039;tool&#039; app environment and development of buildtool.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT17 SECTION "Build tool" [11776-] --></div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:4.0.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2014-07-09T11:23:53+0200"/>
+<meta name="keywords" content="project,release_notes,4.0.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/4.0.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/4.0.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/4.0.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/4.0.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:4.0.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes" class="toc">Bugfixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#details" class="toc">Details</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#coredev" class="toc">core.dev</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#coreevent" class="toc">core.event</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktop" class="toc">desktop</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktopembeds" class="toc">desktop.embeds</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktopform" class="toc">desktop.form</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoplist" class="toc">desktop.list</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoptable" class="toc">desktop.table</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoptheming" class="toc">desktop.theming</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobile" class="toc">mobile</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobilewidget" class="toc">mobile.widget</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#websitewidgets" class="toc">website.widgets</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_401_2014-07-09" id="qooxdoo_401_2014-07-09">qooxdoo 4.0.1 (2014-07-09)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 4.0.1 (2014-07-09)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a <a href="http://qooxdoo.org/project/releases" class="urlextern" title="http://qooxdoo.org/project/releases">regular patch release</a>, which
+includes some important bug fixes over the previous
+release. It is fully backwards-compatible to
+<a href="http://qooxdoo.org/project/release_notes/4.0" class="urlextern" title="http://qooxdoo.org/project/release_notes/4.0">qooxdoo 4.0</a>. Nothing needs to
+be changed in the JavaScript code of your existing apps if they are based on the qooxdoo 4.0 release.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-422] -->
+<h2 class="sectionedit3"><a name="bugfixes" id="bugfixes">Bugfixes</a></h2>
+<div class="level2">
+
+<p>
+See the corresponding bugzilla query for the <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=4.0.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=4.0.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 4.0.1</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes" [423-772] -->
+<h2 class="sectionedit4"><a name="details" id="details">Details</a></h2>
+<div class="level2">
+
+<p>
+The following sections are in alphabetic order and provide a detailed listing of issues resolved:
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Details" [773-893] -->
+<h3 class="sectionedit5"><a name="coredev" id="coredev">core.dev</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Console log breaks if className of <acronym title="Scalable Vector Graphics">SVG</acronym> element is type of SVGAnimatedString (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8432" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8432">8432</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "core.dev" [894-1008] -->
+<h3 class="sectionedit6"><a name="coreevent" id="coreevent">core.event</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> addListenerOnce doesn&#039;t remove listener (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8100" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8100">8100</a>) </div>
+</li>
+<li class="level1"><div class="li"> Focus won&#039;t be set on touch devices (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8450" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8450">8450</a>) </div>
+</li>
+<li class="level1"><div class="li"> Swipe does not fire when target changes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8421" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8421">8421</a>) </div>
+</li>
+<li class="level1"><div class="li"> wrong wheelDelta values in Firefox (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8433" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8433">8433</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "core.event" [1009-1260] -->
+<h3 class="sectionedit7"><a name="desktop" id="desktop">desktop</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Tap event is not handled properly in <acronym title="Internet Explorer">IE</acronym> 10/11 on Windows 7 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8436" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8436">8436</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "desktop" [1261-1357] -->
+<h3 class="sectionedit8"><a name="desktopembeds" id="desktopembeds">desktop.embeds</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Iframe test fails in <acronym title="Internet Explorer">IE</acronym> (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7729" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7729">7729</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.test.ui.embed.Flash.testEvents fails in <acronym title="Internet Explorer">IE</acronym> 11 on Win 8.1 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7960" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7960">7960</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "desktop.embeds" [1358-1506] -->
+<h3 class="sectionedit9"><a name="desktopform" id="desktopform">desktop.form</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Spinner SingleStep issue when clicking up/down button (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8461" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8461">8461</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "desktop.form" [1507-1603] -->
+<h3 class="sectionedit10"><a name="desktoplist" id="desktoplist">desktop.list</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Additive selection mode not working correctly (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8434" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8434">8434</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "desktop.list" [1604-1692] -->
+<h3 class="sectionedit11"><a name="desktoptable" id="desktoptable">desktop.table</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Drag &amp; Drop on table doesn&#039;t work (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8404" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8404">8404</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "desktop.table" [1693-1770] -->
+<h3 class="sectionedit12"><a name="desktoptheming" id="desktoptheming">desktop.theming</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Wrong behavior while switching themes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8341" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8341">8341</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "desktop.theming" [1771-1854] -->
+<h3 class="sectionedit13"><a name="mobile" id="mobile">mobile</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> NavigationPage &quot;stop&quot; event fires too late (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8425" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8425">8425</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "mobile" [1855-1934] -->
+<h3 class="sectionedit14"><a name="mobilewidget" id="mobilewidget">mobile.widget</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <acronym title="JavaScript">JS</acronym> error occurs when a mobile widget gets disposed before the initialization of iScroll is finished (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8441" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8441">8441</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.container.Collapsible has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8455" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8455">8455</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.container.Carousel has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8459" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8459">8459</a>) </div>
+</li>
+<li class="level1"><div class="li"> TextArea in Internet Explorer ignores new line characters (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8402" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8402">8402</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.layout.Card has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8458" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8458">8458</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "mobile.widget" [1935-2359] -->
+<h3 class="sectionedit15"><a name="websitewidgets" id="websitewidgets">website.widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The state set with &quot;widget.setEnabled&quot; is not persisted (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8427" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8427">8427</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "website.widgets" [2360-] --></div>
+</body>
+</html>

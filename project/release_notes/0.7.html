@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.7</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T11:26:46+0200"/>
+<meta name="keywords" content="project,release_notes,0.7"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.7?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.7"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.7"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.7"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.7","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="qooxdoo_07_2007-06-05" id="qooxdoo_07_2007-06-05">qooxdoo 0.7 (2007-06-05)</a></h1>
+<div class="level1">
+
+<p>
+Up to now it was planned to have the rework of dynamic properties more or less separated from the implementation of the advanced OO features. They were expected to be released in a later release 0.7.1  Given that a release 0.7 will be a rather big step for migrating existing applications and eventually learning new OO syntax and features, and given that the property implementation has shown to be an integral part of the new scheme, it has been decided to include them in this major revision as well. This will of course delay the official release of 0.7, but it will not extend the time span for including the features expected for a later release 0.7.1.
+</p>
+<ul>
+<li class="level1"><div class="li"> Also take a look at the <a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;target_milestone=0.7&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;target_milestone=0.7&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">bugzilla  entries relevant for this release</a></div>
+</li>
+</ul>
+
+<p>
+This release is supposed to introduce a new style for class declaration. The current declaration style has been shown to be <a href="http://attic.qooxdoo.org/documentation%3A0.6%3Auser_manual%3Aclass_declaration_in_qooxdoo" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.6%3Auser_manual%3Aclass_declaration_in_qooxdoo">inconsistent and limited in features</a>, and it is also hard to process and migrate automatically by the generator. This will allow for a much cleaner way of leveraging JavaScript&#039;s built-in OO capabilities. Both Java-like interfaces as well as Ruby-esque Mixins will be supported. The <a href="http://attic.qooxdoo.org/documentation%3A0.7%3Aclass_declaration" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.7%3Aclass_declaration">improvements in OO capabilities</a> are a prerequisite for the challenging task of rewriting the layout engine (planned for 0.8). 
+</p>
+
+<p>
+More information about the proposed new class definition scheme is available to allow for discussion and input across the community:
+</p>
+<ul>
+<li class="level1"><div class="li"> As a starting point, it may help to read a <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.6%3Auser_manual%3Aclass_declaration_in_qooxdoo" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.6%3Auser_manual%3Aclass_declaration_in_qooxdoo">summary of the current class declaration</a> that also shows some of its shortcomings.</div>
+</li>
+<li class="level2"><div class="li"> Details about the <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.7%3Aclass_declaration" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.7%3Aclass_declaration">proposed class declaration for qooxdoo 0.7</a> are available in a separate article.</div>
+</li>
+<li class="level2"><div class="li"> If you are not into details right now, just see a <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.7%3Acomparison_of_class_declarations_between_0.6.x_and_0.7" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.7%3Acomparison_of_class_declarations_between_0.6.x_and_0.7">comparison of changes between 0.6.x and 0.7</a> that wraps up the proposed features.</div>
+</li>
+</ul>
+
+<p>
+Of course, for such a major change (almost automatic) migration support will be available for your custom code. However, the automatic reorganization of the code will lead to a reformat of your  code. The system will by default unify existing code to match the style used inside the qooxdoo framework. While it is a very consistent and quite favorable coding style (also by objective means), it may not fit your personal coding style. Since coding style is a matter of personal taste and programming history, we won&#039;t try (hard, promised) to argue you into switching to qooxdoo&#039;s JavaScript style guides. Therefore, some parameters determining major aspects of code style have been identified and included in the pretty-printer. They will allow for some custom tuning of the code output. It is hoped, that most users should be fine with the feature set of tuning the pretty-printer.
+</p>
+
+<p>
+Also, not regarding code style unification during migration, if different programmers (with different coding styles) are involved in your projects, you may find it quite useful to use the code unifier (some call it a &quot;code beautifier&quot;) for assuring a truly consistent coding style.
+</p>
+
+<p>
+If you prefer to simply keep your existing coding style <em>exactly</em> as it is, just don&#039;t use the automatic migration support. You will then have to do all the adjustments to your custom classes by hand, though. This manual migration is not recommended. We are sorry for any inconveniences. As you will notice or may have already noticed, we try hard to make such migrations as less cumbersome for you as it is technically possible. 
+</p>
+
+<p>
+Even if you use migration support, it actually won&#039;t be <em>completely</em> automatic. There is a good chance that some of your individual code simply cannot be migrated automatically. For example, top-level cross-browser switches have to be moved into the new class definition by hand. Migrating to 0.7 could mean some hours or even days of work - depending on the size of your project. <acronym title="Your mileage may vary">YMMV</acronym>.
+</p>
+
+<p>
+During development towards the 0.7 release, an 0.6.x line has been made available (branches/legacy_0_6_x) to account for bugfixes and extensions for the latest stable code base. This branch will be the base for the planned release 0.6.6 described above.
+</p>
+
+<p>
+The following has been moved from a separate release 0.7.1 into the implementation phase of 0.7:
+</p>
+
+<p>
+A new implementation of dynamic properties (a successor of the existing properties defined by qx.OO.addProperty()) will be integrated. These properties allow for a more performant and less memory intensive lazy-generation of setters and getters. Those dynamic properties are also at the heart of the upcoming new theming capabilities supporting individual user-defined styles.
+</p>
+
+<p>
+The following features planned for qooxdoo 0.8 have been moved into the implementation phase of 0.7:
+</p>
+<ul>
+<li class="level1"><div class="li"> Improved color, border and font support without some of the burden currently inherent to the corresponding objects</div>
+</li>
+<li class="level1"><div class="li"> New default appearance theme. Hopefully at least one other appearance theme to demonstrate both the power of theming and theme switching capabilities at runtime.</div>
+</li>
+</ul>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.6"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_viewer" class="toc">API viewer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#backends" class="toc">Backends</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_06_2006-09-07" id="qooxdoo_06_2006-09-07">qooxdoo 0.6 (2006-09-07)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6 (2006-09-07)" [1-40] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added brand new splitpane widget.</div>
+</li>
+<li class="level1"><div class="li"> Added a firebug log appender.</div>
+</li>
+<li class="level1"><div class="li"> A RemoteTableModel for the table widget was added.</div>
+</li>
+<li class="level1"><div class="li"> MenuButtons will be executed on mouseup and not on mousedown anymore. This is also the known behavior from other environments.</div>
+</li>
+<li class="level1"><div class="li"> Improved appearance theme. Removed all references to the widget to which the style is applied to. Converted widget-aware stuff to states, affecting TabView, ButtonView and Tree.</div>
+</li>
+<li class="level1"><div class="li"> Improved captionBar buttons for Window class.</div>
+</li>
+<li class="level1"><div class="li"> MenuButton syncs the enabled/disabled state to the shortcut text.</div>
+</li>
+<li class="level1"><div class="li"> Minor fix for MenuRadioManager (had wrong preloaded image).</div>
+</li>
+<li class="level1"><div class="li"> Fixed support for preloading animated GIFs (erroneous <acronym title="Internet Explorer">IE</acronym> support)</div>
+</li>
+<li class="level1"><div class="li"> Improved resource handling (path usage)</div>
+</li>
+<li class="level1"><div class="li"> The click event was fixed in situations where the <acronym title="Document Object Model">DOM</acronym> targets changed while pressing a qooxdoo button for example (The bug was gecko only).</div>
+</li>
+<li class="level1"><div class="li"> Fixed TimerTracker class (used for performance tests)</div>
+</li>
+<li class="level1"><div class="li"> Fixed an issue with popup blocker in default appender (WindowAppender)</div>
+</li>
+<li class="level1"><div class="li"> Fixed an issue where the previous focusRoot was not resetted.</div>
+</li>
+<li class="level1"><div class="li"> Because of layout issues in the menu system some values were converted to be static. This fixed several bugs were the icons or arrows were rendered in a wrong way.</div>
+</li>
+<li class="level1"><div class="li"> Support for &quot;action&quot; events on List widgets was fixed.</div>
+</li>
+<li class="level1"><div class="li"> Extracted strings from color selector to make it possible to support internationalization.</div>
+</li>
+<li class="level1"><div class="li"> Many bugfixes and enhancements to the table and scrollbar widgets were made.</div>
+</li>
+<li class="level1"><div class="li"> Minor bugfixes to Tree regarding key events.</div>
+</li>
+<li class="level1"><div class="li"> The skeletons were greatly improved (especially the corresponding build process).</div>
+</li>
+<li class="level1"><div class="li"> Renamed &quot;source&quot; release to &quot;<acronym title="Software Development Kit">SDK</acronym>&quot; release.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [41-1728] -->
+<h3 class="sectionedit3"><a name="api_viewer" id="api_viewer">API viewer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Include fast properties in <acronym title="Application Programming Interface">API</acronym> viewer</div>
+</li>
+<li class="level1"><div class="li"> The <acronym title="Application Programming Interface">API</acronym> viewer was fixed to also work on slow connection speeds (timeout issue).</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> viewer doesn’t crash on empty source files anymore.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "API viewer" [1729-1940] -->
+<h3 class="sectionedit4"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added tree compiler and made it the default compiler.</div>
+</li>
+<li class="level1"><div class="li"> Minor improvements to tree generator</div>
+</li>
+<li class="level1"><div class="li"> Renamed compile.py to tokencompiler.py</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with computed pathId (generator.py) in some cases</div>
+</li>
+<li class="level1"><div class="li"> Improved handling of file rights while building qooxdoo, applications and releases with the included Makefiles and scripts.</div>
+</li>
+<li class="level1"><div class="li"> Included command-line utils were improved</div>
+</li>
+<li class="level1"><div class="li"> Improved migration support</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tools" [1941-2371] -->
+<h3 class="sectionedit5"><a name="backends" id="backends">Backends</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Improved <acronym title="Hypertext Preprocessor">PHP</acronym> and Java backends (e.g. partial support for ScriptTransport)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Backends" [2372-] --></div>
+</body>
+</html>

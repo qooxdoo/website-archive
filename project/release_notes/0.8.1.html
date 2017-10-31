@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T14:25:30+0200"/>
+<meta name="keywords" content="project,release_notes,0.8.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_081_2008-12-18" id="qooxdoo_081_2008-12-18">qooxdoo 0.8.1 (2008-12-18)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8.1 (2008-12-18)" [1-42] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+qooxdoo 0.8.1 is quite a comprehensive release, with a lot of bugs fixed, but also some useful new features added. It is recommended as an upgrade for existing 0.8-based applications, and also for new users getting started with qooxdoo. 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [43-304] -->
+<h2 class="sectionedit3"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="core" id="core">Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Most protected members where changed to private ones, so that nobody can overwrite protected members in subclasses by mistake.</div>
+</li>
+<li class="level1"><div class="li"> Non-static classes have to define the &quot;extend&quot; key</div>
+</li>
+<li class="level1"><div class="li"> qx.List now works correctly in <acronym title="Internet Explorer">IE</acronym> if running an application from the local file system</div>
+</li>
+<li class="level1"><div class="li"> The addListener() method now returns an id </div>
+</li>
+<li class="level1"><div class="li"> Introduced new qx.util.TimerManager, thanks Derrell</div>
+</li>
+<li class="level1"><div class="li"> Added a method to qx.core.Assert, which can check if an event would be fired.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="application" id="application">Application</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Life-cycle methods terminate() and close() methods are available for qx.application. The re-introduced close() method allows a user to prevent accidentially unloading the document, i.e. exiting the application. </div>
+</li>
+<li class="level1"><div class="li"> Fixed issue in startup of an &quot;Inline Application&quot; in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="browser_support" id="browser_support">Browser Support</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> IE8 is currently supported in IE7 compatibility mode. Full support for IE8 standard mode is expected in time with the final IE8 release.</div>
+</li>
+<li class="level1"><div class="li"> Chrome 1.0 is fully supported.</div>
+</li>
+<li class="level1"><div class="li"> Of course, the latest versions of Safari 3.2.x and Firefox 3.1 beta are also fine. </div>
+</li>
+<li class="level1"><div class="li"> Improved handling in client detection, particularly if an illegal user agent string is sent.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="transport" id="transport">Transport</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Additional <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> headers inserted by qooxdoo up to version 0.7.x were removed to reduce unnecessary overhead</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="low-level" id="low-level">Low-level</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed issue in <acronym title="Internet Explorer">IE</acronym> with creating an element and applying its styles at the same time</div>
+</li>
+<li class="level1"><div class="li"> Removed &quot;ontimeout&quot; property for <acronym title="Internet Explorer">IE</acronym> in &quot;qx.bom.Request&quot; class</div>
+</li>
+<li class="level1"><div class="li"> Fixed ellipsis problems at low-level layer</div>
+</li>
+<li class="level1"><div class="li"> Fixed clipping issue in <acronym title="Internet Explorer">IE</acronym></div>
+</li>
+<li class="level1"><div class="li"> &quot;OpenBSD&quot; is now recognized correctly</div>
+</li>
+<li class="level1"><div class="li"> Added &quot;has&quot; method in &quot;qx.bom.Multimedia&quot; class</div>
+</li>
+<li class="level1"><div class="li"> qx.ui.root.Inline can be configured to no longer disregard the size of its root DIV node. This is perfect for often encountered setups when integrating qooxdoo widgets into traditional <acronym title="HyperText Markup Language">HTML</acronym> pages. </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Framework" [305-2171] -->
+<h2 class="sectionedit4"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Parts of the child control <acronym title="Application Programming Interface">API</acronym> are now no longer protected but public. Particularly getChildControl() is meant for widget authors, who want to access child controls, which are created by the widget itself. This method exposes widget internals and modifying the returned sub widget may bring the widget into an inconsistent state. Accessing child controls defined in a super class or in an foreign class is not supported. Do not use it if the result can be achieved using public <acronym title="Application Programming Interface">API</acronym> or qooxdoo&#039;s theming capabilities.</div>
+</li>
+<li class="level1"><div class="li"> &quot;_hasChildren&quot; method now returns &quot;false&quot; instead of null if no children widgets are available</div>
+</li>
+<li class="level1"><div class="li"> Implemented &quot;height for width&quot; for layouts (it was previously only available for widgets). This feature request was brought up by contributors that required this behaviour for custom layouts.</div>
+</li>
+<li class="level1"><div class="li"> Add missing methods &quot;getActiveWidget()&quot; and &quot;getFocusedWidget()&quot;</div>
+</li>
+<li class="level1"><div class="li"> As intended it is again impossible to select text on labels in Opera and Internet Explorer.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Changed the implementation of the action queues at startup. Now every action (like &quot;focus&quot;, &quot;activate&quot;, etc.) is queued and flushed to ensure the actions are processed in the right order</div>
+</li>
+<li class="level1"><div class="li"> Fixed problems with scrolling and focus if the queue hasn&#039;t already rendered all widgets.</div>
+</li>
+<li class="level1"><div class="li"> Fixed FocusRoot issue with wrong tabOrder</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed rendering problems in <acronym title="Internet Explorer 6">IE6</acronym>: A widget couldn&#039;t become smaller than the currently applied font size. </div>
+</li>
+<li class="level1"><div class="li"> In <acronym title="Internet Explorer 6">IE6</acronym> some icons showed a black background (image transparency broken).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Drag selection within the tree widget is now working again</div>
+</li>
+<li class="level1"><div class="li"> General fix for drag selections - drag selection didn&#039;t work if an already selected item was used</div>
+</li>
+<li class="level1"><div class="li"> Added support for drag and drop inside window widgets</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed issue with combination keys for command shortcuts (every combination key was shown)</div>
+</li>
+<li class="level1"><div class="li"> Command shortcuts which use the keys &quot;-&quot; and &quot;+&quot; are now working properly</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Horizontal lists can now be scrolled using the mouse wheel</div>
+</li>
+<li class="level1"><div class="li"> Fixed mousewheel support at SelectBox widgets inside Scroll container widgets</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added a single-value binding as a solid basis for the upcoming data binding components. This features is still experimental. A detailed description is in the preliminary <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Adata_binding" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Adata_binding">data binding</a> documentation. </div>
+</li>
+<li class="level1"><div class="li"> The possibility of validating the properties of a qooxdoo class has been added. This is also experimental and may change.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed Spinner issues with deactivating/activating buttons, if the value were greater or less than the min/max value.</div>
+</li>
+<li class="level1"><div class="li"> The Spinner value is now correctly set in <acronym title="Internet Explorer">IE</acronym> when pressing the enter key</div>
+</li>
+<li class="level1"><div class="li"> Fixed Desktop widget</div>
+</li>
+<li class="level1"><div class="li"> Hidden textfields are removed from the tab sequence</div>
+</li>
+<li class="level1"><div class="li"> A readonly textfield is not focusable any longer</div>
+</li>
+<li class="level1"><div class="li"> No &quot;keypress&quot; event in textfields for some keys in FF3</div>
+</li>
+<li class="level1"><div class="li"> TextArea will automatically get a scrollbar if its content implies that</div>
+</li>
+<li class="level1"><div class="li"> The location of an iframe can now be set in it&#039;s construtor</div>
+</li>
+<li class="level1"><div class="li"> Set property <code>allowShrinkY</code> by default to <code>false</code> in Label.</div>
+</li>
+<li class="level1"><div class="li"> Add <code>rich</code> property in <code>ToolTip</code> for rich text tooltips.</div>
+</li>
+<li class="level1"><div class="li"> Add formatter property in <code>ComboBox</code> to allow for <acronym title="HyperText Markup Language">HTML</acronym> entities in the List items.</div>
+</li>
+<li class="level1"><div class="li"> ColorPopup: init values changed from &quot;black&quot; (RGB 0, 0, 0) to &quot;null&quot; (no color).</div>
+</li>
+<li class="level1"><div class="li"> ColorSelector: Buttons now correctly show associated icons.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="table" id="table">Table</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Status bar can now be hidden permanently</div>
+</li>
+<li class="level1"><div class="li"> Removed spurious horizontal scroll bars in table</div>
+</li>
+<li class="level1"><div class="li"> Filtered Table Model does restore values more than once.</div>
+</li>
+<li class="level1"><div class="li"> Table pane no longer caches rows if maxCacheLines property is zero</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="flash" id="flash">Flash</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Support for Flash has significantly been updated and extended.</div>
+</li>
+<li class="level1"><div class="li"> Fixed the issue that it is not possible to call the External <acronym title="Application Programming Interface">API</acronym> form Flash in IE7 and higher.</div>
+</li>
+<li class="level1"><div class="li"> Fixed memory leaks in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="window" id="window">Window</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added method to get the current mode (&quot;minimized&quot;, &quot;maximized&quot;, &quot;normal&quot; and &quot;close&quot;).</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with using the <code>center()</code> method: If the window was larger than the view, the title is moved out the view, so it wasn&#039;t possible to close the window.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with maximizing/minimizing a window if it is managed by the window manager.</div>
+</li>
+<li class="level1"><div class="li"> Added support for deactivating window widgets</div>
+</li>
+<li class="level1"><div class="li"> Windows won&#039;t interrupt dragging when being moved too quickly</div>
+</li>
+<li class="level1"><div class="li"> Modal windows now work as expected in <acronym title="Internet Explorer">IE</acronym></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="theming" id="theming">Theming</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The <acronym title="Application Programming Interface">API</acronym> of the manager classes were made consistent: a property &quot;theme&quot; was added to the appearance manager class. The existing &quot;appearanceTheme&quot; property is deprecated and will be removed in a future release</div>
+</li>
+<li class="level1"><div class="li"> Re-introduced the possibility of including/patching themes at runtime</div>
+</li>
+<li class="level1"><div class="li"> &quot;grey&quot; is now a named color - as an alias to the already defined color &quot;gray&quot;</div>
+</li>
+<li class="level1"><div class="li"> Implemented missing hover effects on SelectBox widgets</div>
+</li>
+<li class="level1"><div class="li"> Improved style of disabled buttons in Modern theme</div>
+</li>
+<li class="level1"><div class="li"> Fixed ugly problem with wrongly referenced image in <acronym title="Internet Explorer 6">IE6</acronym></div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with hover effects for toggle buttons in checked state</div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance issue with disabled and checked checkbox widget</div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance for right aligned tab buttons</div>
+</li>
+<li class="level1"><div class="li"> Fixed several appearance issues of the toolbar widget</div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance of SelectBox widget in Classic theme</div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance of slider-knob in Classic theme</div>
+</li>
+<li class="level1"><div class="li"> Harmonized tree open/close symbols</div>
+</li>
+<li class="level1"><div class="li"> Image names in compat theme have been modified to better work with the legacy theme</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "GUI Toolkit" [2172-7613] -->
+<h2 class="sectionedit5"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="playground" id="playground">Playground</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A new interactive application was introduced. It allows for experimenting with qooxdoo application code. Basically, the code in a  (syntax-highlighting) JavaScript editor on the left can be executed as an application on the right. This works purely in the browser, also offline, without the usual, locally installed tools or any server-side components. Playground does not pretend to be an online IDE, but it certainly is a handy solution. Particularly new users can now actually &quot;play&quot; with qooxdoo code without being required to setup qooxdoo&#039;s tool chain on their local computers. The Playground app is fairly new, so be aware of any existing issues. Feedback welcome.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="skeleton" id="skeleton">Skeleton</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added empty theme to the default <acronym title="Graphical User Interface">GUI</acronym> skeleton, which is the starting point for creating a typical qooxdoo application. The custom theme extends the built-in Modern theme. This enables a user to easily add theme entries for his/her custom widgets into the theme files provided.</div>
+</li>
+<li class="level1"><div class="li"> Updated include list for low-level &quot;BOM&quot;-style applications</div>
+</li>
+<li class="level1"><div class="li"> Skeleton templates have been reduced to <em>gui</em> (default), <em>migration</em> and <em>bom</em>. The <em>with-contrib</em> skeleton is gone, its features are re-created in the <em>gui</em> skeleton as comments.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="demobrowser" id="demobrowser">Demobrowser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> All demos have been tested and corrected if necessary.</div>
+</li>
+<li class="level1"><div class="li"> Removed the remote table model demo (may be re-introduced in the future once improved hosting is available). You may also be interested in checking out the RpcExample in qooxdoo-contrib.</div>
+</li>
+<li class="level1"><div class="li"> Minor fix for the BOM selection and application demo</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="testrunner" id="testrunner">Testrunner</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Removed testrunner output from browser&#039;s native console</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="api_viewer" id="api_viewer">API viewer</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Replaced the combined <acronym title="Portable Network Graphics">PNG</acronym> image with a <acronym title="Graphics Interchange Format">GIF</acronym> image to resolve issues.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="portal" id="portal">Portal</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The application now fits nicely onto screen for a 1024x768 resolution</div>
+</li>
+<li class="level1"><div class="li"> Suppress the console for <acronym title="Internet Explorer">IE</acronym> in build version.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Applications" [7614-9538] -->
+<h2 class="sectionedit6"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="python_under_windows" id="python_under_windows">Python under Windows</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> For <acronym title="Microsoft">MS</acronym> Windows users it is now recommended to install the free ActivePython distribution. It comes with a nice wizard that allows for a really simple installation. The default settings of the wizard are fine, and it also takes care of adding the python interpreter to the list of known executables (via PATH environment variable). This further simplifies the installation of python compared to the previously featured  &quot;orginal&quot; python distribution from Python.org. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="internationalization" id="internationalization">Internationalization</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Support adding comments to PO files. On the JavaScript side the &quot;trc()&quot; method of the locale manager now also supports translations with contextual comments.</div>
+</li>
+<li class="level1"><div class="li"> proper support for <em>trn()</em> framework method; plural keys now working</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="source_code_validation" id="source_code_validation">Source code validation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added encoding support for Unicode in ecmalint source code validator</div>
+</li>
+</ul>
+
+<p>
+<br/>
+
+The rest of the Tooling section is about the Generator:
+</p>
+
+</div>
+
+<h4><a name="jobs" id="jobs">Jobs</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> new standard job <em>source-all</em> includes all classes in a source build</div>
+</li>
+<li class="level1"><div class="li"> new includer job <em>libraries</em>, to take a single library key for additional libraries of the application</div>
+</li>
+<li class="level1"><div class="li"> job name resolution order acknowledged and job &quot;shadowing&quot; available as <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_articles#job_shadowing_and_partial_overriding" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_articles#job_shadowing_and_partial_overriding">documented</a></div>
+</li>
+<li class="level1"><div class="li"> jobs of external config files can now be imported under a different name, to prevent name clashes (s. the <em>import</em> sub-key of <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#include_top-level" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#include_top-level">include</a>)</div>
+</li>
+<li class="level1"><div class="li"> overriding jobs and job features now possible with <code>=</code> prefix</div>
+</li>
+<li class="level1"><div class="li"> when merging jobs, all map keys are now deep merging, and all list keys are appending, minus duplicates</div>
+</li>
+<li class="level1"><div class="li"> the base configuration files (base.json, application.json, …) now export all of their jobs; jobs are only filtered at the application-level config.json, as can be seen in the skeletons&#039; config.json files</div>
+</li>
+<li class="level1"><div class="li"> Known Issues and workarounds:</div>
+<ul>
+<li class="level2"><div class="li"> <em>lint</em> job: you should remove the cache files after running the <em>lint</em> job that had errors</div>
+</li>
+<li class="level2"><div class="li"> <em>api</em> job: you should remove the cache files before running <em>api</em> job when using additional libraries/contribs</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="uri_handling" id="uri_handling">URI handling</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Uniform Resource Identifier">URI</acronym> handling has been <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_articles#uri_handling" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_articles#uri_handling">revamped</a>; the most significant change is that the <em>uri</em> key of <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#library" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#library">library</a> entries is optional, but if present will take precendence when calculating URIs to resources of that library. If the <em>uri</em> parameter is absent, settings of the individual job (compile-source, compile-dist, …) will be used to calculate URIs. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="macros" id="macros">Macros</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> macros from a config&#039;s global <em>let</em> section are now usable throught the config file, e.g. in the <em>include</em> section</div>
+</li>
+<li class="level1"><div class="li"> macros QOOXDOO_<acronym title="Uniform Resource Identifier">URI</acronym> and APPLICATION_<acronym title="Uniform Resource Identifier">URI</acronym> have been removed, the QOOXDOO_PATH macro is now expected to point to the root qooxdoo installation folder</div>
+</li>
+<li class="level1"><div class="li"> in Skelton-based apps, it now suffices to change QOOXDOO_PATH in config.json to switch to another qooxdoo installation; the generate.py script will also read it from there</div>
+</li>
+<li class="level1"><div class="li"> QXTHEME defaults to qx.theme.Modern</div>
+</li>
+<li class="level1"><div class="li"> new macro OPTIMIZE, to tweak compile-dist&#039;s <em>optimize</em> parameter</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="config_keys" id="config_keys">Config Keys</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <em><a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#compile-dist_0.8.1" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#compile-dist_0.8.1">compile-dist</a></em> has been revamped and restructured, to provide a clearer interface [this change is incompatible with the old version of the key]</div>
+</li>
+<li class="level1"><div class="li"> <em><a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#packages_0.8.1" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#packages_0.8.1">packages</a></em> has been restructured and extended, to allow more fine-grain control over package sizes</div>
+</li>
+<li class="level1"><div class="li"> the <em>themes</em> key has been renamed to <em><a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#asset-let" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#asset-let">asset-let</a></em>, to better match its purpose</div>
+</li>
+<li class="level1"><div class="li"> new key <em><a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#log" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#log">log</a></em> with <em>log/classes-unused</em>, to report unused classes of a library</div>
+</li>
+<li class="level1"><div class="li"> new key <em><a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#desc" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#desc">desc</a></em>, to add a descriptive string to a job; these descriptions are printed on the command line when invoking &#039;generate.py x&#039;</div>
+</li>
+<li class="level1"><div class="li"> keys with minor changes: <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#cache" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#cache">cache</a>, <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#library" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#library">library</a></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="packages" id="packages">Packages</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> merging packages is now only done for parts that should be collapsed</div>
+</li>
+<li class="level1"><div class="li"> size for unshared packages can now be limited</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="misc" id="misc">Misc</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> resource compilation has been optimized</div>
+</li>
+<li class="level1"><div class="li"> console logging has been split to the standard streams, STDOUT (levels &quot;debug&quot; and &quot;info&quot;) and STDERR (levels &quot;warning&quot;, &quot;error&quot; and &quot;fatal&quot;)</div>
+</li>
+<li class="level1"><div class="li"> unknown classes are now reported</div>
+</li>
+<li class="level1"><div class="li"> the contrib:// download cache now defaults to <em>&lt;compile_cache&gt;/downloads</em></div>
+</li>
+<li class="level1"><div class="li"> removal of the framework/tool folder and other 0.7 legacy stuff</div>
+</li>
+<li class="level1"><div class="li"> new experimental tool/data/test folder, for generator tests</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Tooling" [9539-14638] -->
+<h2 class="sectionedit7"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Many improvements and corrections of the 0.8 manual</div>
+</li>
+<li class="level1"><div class="li"> A number of additional articles, e.g. for &quot;qx.ui.core&quot;, &quot;qx.ui.container&quot; and &quot;Layouting&quot;</div>
+</li>
+<li class="level1"><div class="li"> The Tooling documentation was kept in sync with the often rapid development progress. Lots of fixes of missing or incorrect documentation were applied.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Documentation" [14639-14973] -->
+<h2 class="sectionedit8"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> If you are migrating from 0.8 to 0.8.1, have a look at this <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_08" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_08">migration guide</a>.</div>
+</li>
+<li class="level1"><div class="li"> If you are migrating from 0.7.x, this requires a more detailed process. Make sure you follow the <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_07" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_07">migration guide for 0.7.x</a>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Migration" [14974-] --></div>
+</body>
+</html>

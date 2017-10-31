@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:1.6.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-06-21T11:31:27+0200"/>
+<meta name="keywords" content="project,release_notes,1.6.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/1.6.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/1.6.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/1.6.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/1.6.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:1.6.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes" class="toc">Bugfixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#data_binding" class="toc">Data Binding</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#browser_support" class="toc">Browser Support</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#low-level" class="toc">Low-level</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#ui_core" class="toc">UI Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#form" class="toc">Form</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#widgets" class="toc">Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#virtual_widgets" class="toc">Virtual Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#theming" class="toc">Theming</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#mobile" class="toc">Mobile</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#internationalization" class="toc">Internationalization</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_161_2012-06-21" id="qooxdoo_161_2012-06-21">qooxdoo 1.6.1 (2012-06-21)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 1.6.1 (2012-06-21)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a <a href="http://qooxdoo.org/project/releases" class="urlextern" title="http://qooxdoo.org/project/releases">regular patch release</a>, which includes many bugfixes but no feature enhancements over the previous release. It is fully backwards compatible to qooxdoo 1.6. Nothing needs to be changed in the JavaScript code of your existing apps if they are based on the previous 1.6 release.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-391] -->
+<h2 class="sectionedit3"><a name="bugfixes" id="bugfixes">Bugfixes</a></h2>
+<div class="level2">
+
+<p>
+See the corresponding bugzilla query for more than 110 <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=1.6.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=1.6.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 1.6.1</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes" [392-752] -->
+<h2 class="sectionedit4"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT4 SECTION "Framework" [753-775] -->
+<h3 class="sectionedit5"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed Array handling in qx.lang.Object.toUriParameter.</div>
+</li>
+<li class="level1"><div class="li"> Replace <acronym title="Internet Explorer">IE</acronym>&#039;s incomplete Error.toString with qx.lang.Core.errorToString.</div>
+</li>
+<li class="level1"><div class="li"> Fixed event data on qx.data.Array (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6154" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6154">6154</a>)</div>
+</li>
+<li class="level1"><div class="li"> Removed warning for images loaded via data url.</div>
+</li>
+<li class="level1"><div class="li"> Commands don&#039;t override themed icons anymore. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5906" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5906">5906</a>)</div>
+</li>
+<li class="level1"><div class="li"> Serializer processes inherited properties now. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5559" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5559">5559</a>)</div>
+</li>
+<li class="level1"><div class="li"> If an assertion check throws an error, the message will include responsible arguments with value of undefined as &#039;undefined&#039; (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6282" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6282">6282</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Core" [776-1311] -->
+<h3 class="sectionedit6"><a name="data_binding" id="data_binding">Data Binding</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed support for multiple mixins for the JSON marshaler. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6445" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6445">6445</a>)</div>
+</li>
+<li class="level1"><div class="li"> sort() method of qx.data.Array was firing events (change, changeBubble) although nothing has been changed on the array. In this case we are now preventing these events.(#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6213" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6213">6213</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Data Binding" [1312-1601] -->
+<h3 class="sectionedit7"><a name="browser_support" id="browser_support">Browser Support</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Feature detection for <acronym title="Cascading Style Sheets">CSS</acronym> border-image syntax to cope with differences between prefixed and unprefixed/<acronym title="specification">spec</acronym>-compliant implementations.</div>
+</li>
+<li class="level1"><div class="li"> Fixed animation for IE10.</div>
+</li>
+<li class="level1"><div class="li"> Fixed gradient calculation for IE10. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513">6513</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Browser Support" [1602-1854] -->
+<h2 class="sectionedit8"><a name="low-level" id="low-level">Low-level</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Added support for IE8 to qx.bom.IframeHistory. Even though IE8 can natively use &quot;hashchange&quot; events, it fails if qooxdoo runs in an iframe. Therefore we need to poll a helper iframe like in in <acronym title="Internet Explorer 6">IE6</acronym>/7 (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194">6194</a>)(#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6521" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6521">6521</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Low-level" [1855-2111] -->
+<h3 class="sectionedit9"><a name="ui_core" id="ui_core">UI Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Improved overall scroll handling.</div>
+</li>
+<li class="level1"><div class="li"> Adding of any object which is not a qx.ui.core.LayoutItem throws now an error which points you to that issue (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6281" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6281">6281</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "UI Core" [2112-2297] -->
+<h3 class="sectionedit10"><a name="form" id="form">Form</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Form now supports the virtual select box. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5711" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5711">5711</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Form" [2298-2375] -->
+<h3 class="sectionedit11"><a name="widgets" id="widgets">Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Disabled resizing for disabled widgets e.g. windows. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6516" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6516">6516</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Widgets" [2376-2467] -->
+<h3 class="sectionedit12"><a name="virtual_widgets" id="virtual_widgets">Virtual Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed infinity loop for one selection when the last item from the VirtualList is removed. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6340" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6340">6340</a>)</div>
+</li>
+<li class="level1"><div class="li"> Nested RadioGroupBox are now correctly disabled when parent is disabled. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5445" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5445">5445</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Virtual Widgets" [2468-2698] -->
+<h3 class="sectionedit13"><a name="theming" id="theming">Theming</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Make themed fonts aware of colors from the color theme. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6496" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6496">6496</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Theming" [2699-2794] -->
+<h2 class="sectionedit14"><a name="mobile" id="mobile">Mobile</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed Android <acronym title="Operating System">OS</acronym> detection (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5971" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5971">5971</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Mobile" [2795-2861] -->
+<h2 class="sectionedit15"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT15 SECTION "Tooling" [2862-2882] -->
+<h3 class="sectionedit16"><a name="internationalization" id="internationalization">Internationalization</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The Norwegian language code <code>no</code> has been removed from the CLDR data. Please use <code>nb</code> (&quot;Norwegian Bokmål&quot;, which &quot;no&quot; used to redirect to) or <code>nn</code> (&quot;Norwegian Nynorsk&quot;) instead. &quot;NO&quot; as territory code is ok (as in &quot;nb_NO&quot;).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT16 SECTION "Internationalization" [2883-] --></div>
+</body>
+</html>

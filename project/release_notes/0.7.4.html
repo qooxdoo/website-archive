@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.7.4</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.7.4"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.7.4?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.7.4"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.7.4"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.7.4"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.7.4","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#memory_leaks" class="toc">Memory Leaks</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#safariwebkit" class="toc">Safari/Webkit</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#google_chrome" class="toc">Google Chrome</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#table" class="toc">Table</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#flash" class="toc">Flash</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#other_widgets" class="toc">Other Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#low-level" class="toc">Low-level</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#theming" class="toc">Theming</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#ajax" class="toc">Ajax</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_074_2008-12-05" id="qooxdoo_074_2008-12-05">qooxdoo 0.7.4 (2008-12-05)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.7.4 (2008-12-05)" [1-50] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+qooxdoo 0.7.4 is a genuine maintenance/bugfixing release. Many issues have been resolved, also due to some great feedback from and collaboration with the community. There are no known <acronym title="Application Programming Interface">API</acronym> changes, so it should be a fine replacement for a 0.7.3 version. Of course, some of the behavior may have changed a bit compared to the previous version, but only to make things more consistent and to behave as expected.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [51-481] -->
+<h2 class="sectionedit3"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT3 SECTION "Framework" [482-506] -->
+<h3 class="sectionedit4"><a name="memory_leaks" id="memory_leaks">Memory Leaks</a></h3>
+<div class="level3">
+
+<p>
+One of the &quot;highlights&quot; of the 0.7.4 release.
+</p>
+
+<p>
+A more rigorous memory management for qooxdoo 0.7.4 has been implemented, thanks to an excellent collaboration with Stefan Hansel. There is now an additional &quot;destroy()&quot; method available on widgets. Unlike the usual &quot;dispose()&quot; method this also removes <acronym title="Document Object Model">DOM</acronym> elements that belong to the widget. In the course of introducing this additional feature, some incomplete destruct sections have also been corrected.
+</p>
+
+<p>
+Existing qooxdoo 0.7.3 apps typically do not need to incorporate this additional feature, as during the runtime of an average application memory should already be managed sufficiently. But in highly dynamic scenarios that involve the mass creation and destruction of widgets, this new feature is a dramatic improvement, particularly in <acronym title="Internet Explorer">IE</acronym>. Anyway, if you are able to reuse widgets by implementing some sort of &quot;pooling&quot;, that would still be advantageous as it reduces the cost to (re-)create widgets. 
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Memory Leaks" [507-1489] -->
+<h3 class="sectionedit5"><a name="safariwebkit" id="safariwebkit">Safari/Webkit</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Safari 3.1 switched the key event handling to emulate <acronym title="Internet Explorer">IE</acronym> behaviour. For this reason key event handling does no longer work in Safari with older qooxdoo 0.7.x version.</div>
+</li>
+<li class="level1"><div class="li"> Fixed serious overflow bug in Safari. Container widgets with advanced borders like &quot;inset&quot; or &quot;shadow&quot; ignored the overflow style.    </div>
+</li>
+<li class="level1"><div class="li"> Webkit nightly always showed the native focus indicator around focused widget.</div>
+</li>
+<li class="level1"><div class="li"> In tables with meta columns, parts of the scrollbars of the first meta column remained visible.</div>
+</li>
+<li class="level1"><div class="li"> The <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> &quot;Referrer&quot; header is no longer set in Safari since it results in a security warning.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Safari/Webkit" [1490-2108] -->
+<h3 class="sectionedit6"><a name="google_chrome" id="google_chrome">Google Chrome</a></h3>
+<div class="level3">
+
+<p>
+There wasn&#039;t much to adjust in the framework&#039;s code base. The browser detection now also accounts for Google Chrome. Applications based on qooxdoo 0.7.4 should mostly run fine, despite some minor rendering glitches that might still be related to the beta status of Chrome.
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Google Chrome" [2109-2407] -->
+<h3 class="sectionedit7"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed many issues for Internet Explorer when loading qooxdoo applications via HTTPS. There were many (questionable) scenarios that triggered an annoying security alert due to &quot;mixed content&quot;.</div>
+</li>
+<li class="level1"><div class="li"> Property implementation now works with the &quot;deferredInit&quot; key to initialize complex types.</div>
+</li>
+<li class="level1"><div class="li"> Timer instances now reuse a single event object, instead of recreating a new one for each timer interval.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with rejecting legal and accepting illegal JSON.</div>
+</li>
+<li class="level1"><div class="li"> Double click events in <acronym title="Internet Explorer">IE</acronym> now fire the same event sequence as the other browsers.</div>
+</li>
+<li class="level1"><div class="li"> Profiler had a defect that allowed only for reporting profile data of static methods.</div>
+</li>
+<li class="level1"><div class="li"> Improved log handling. Log window initialization more robust when disposing an application.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Core" [2408-3162] -->
+<h3 class="sectionedit8"><a name="table" id="table">Table</a></h3>
+<div class="level3">
+
+<p>
+Many issues of the virtual Table widget have been fixed. A lot of people contributed to this in an ongoing effort, e.g. Tino Butz, Michael Haitz, Derrell Lipman, Hugh Gibson and many others. Thanks!
+</p>
+<ul>
+<li class="level1"><div class="li"> While porting the table to 0.8 many table bugs have been fixed and backported to 0.7.4</div>
+</li>
+<li class="level1"><div class="li"> Add utility method to set the header cell height.</div>
+</li>
+<li class="level1"><div class="li"> Selection handling; table pane dispose.</div>
+</li>
+<li class="level1"><div class="li"> Table scroller fix.</div>
+</li>
+<li class="level1"><div class="li"> Allow easy display of multiple lines of data in a single cell through a &quot;forceLineHeight&quot; property. This allows a cell renderer to display multiple lines of data in the cell.</div>
+</li>
+<li class="level1"><div class="li"> Eliminate table flicker with remote table model.</div>
+</li>
+<li class="level1"><div class="li"> Problems with theme switches resolved.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Table" [3163-3868] -->
+<h3 class="sectionedit9"><a name="flash" id="flash">Flash</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Improved Flash support to allow for two-way communication between qooxdoo (JavaScript) and Flash (ActionScript). A new Demo (Flash 2) demonstrates this.</div>
+</li>
+<li class="level1"><div class="li"> Fixed Flash-related bug in <acronym title="Internet Explorer">IE</acronym> to stop the flash movie when the object is disposed.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Flash" [3869-4129] -->
+<h3 class="sectionedit10"><a name="other_widgets" id="other_widgets">Other Widgets</a></h3>
+<div class="level3">
+
+<p>
+Several widgets were improved, here are just some of the most significant:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>qx.ui.form.ComboBox</code> can now display and handle <acronym title="HyperText Markup Language">HTML</acronym> entities correctly, and also consistent between textfield and list.</div>
+</li>
+<li class="level1"><div class="li"> Fixed problem with Escape key in ComboBox.</div>
+</li>
+<li class="level1"><div class="li"> Several fixes for the Gallery widget. Thanks Dalmazio!</div>
+</li>
+<li class="level1"><div class="li"> Fixed bug with inactive scrollbar of the splitpane in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.form.TextField</code>: applied community patch concerning selectionStart.</div>
+</li>
+<li class="level1"><div class="li"> Fixed rendering problem with <acronym title="Internet Explorer 6">IE6</acronym> and IE7 when using the ToolBar widget only with labels (no icons). Previously the toolbar separators were taller than the toolbar.</div>
+</li>
+<li class="level1"><div class="li"> Double click on a tree no longer hides the root node.</div>
+</li>
+<li class="level1"><div class="li"> Date chooser buttons now use a shared date chooser instance including window.</div>
+</li>
+<li class="level1"><div class="li"> Width and height of NativeWindow sets inner w/h instead of outer.</div>
+</li>
+<li class="level1"><div class="li"> Iframe : blocker node sometimes not rendered correctly.</div>
+</li>
+<li class="level1"><div class="li"> Quite an entertaining demonstration of Derrell&#039;s finite state machine (FSM) was added to demobrowser. Wanna see a mice moving through a maze?</div>
+</li>
+<li class="level1"><div class="li"> An implementation of a Progressive renderer was also added by Derrell.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Other Widgets" [4130-5266] -->
+<h3 class="sectionedit11"><a name="low-level" id="low-level">Low-level</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code>qx.dom.Hierarchy</code> was backported from 0.8.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Low-level" [5267-5339] -->
+<h3 class="sectionedit12"><a name="theming" id="theming">Theming</a></h3>
+<div class="level3">
+
+<p>
+There were only minor adjustments, so the look of existing application should not be much affected. Some corrections involved cleaning-up of themes, or fixing the table-cell background color in editing mode.
+</p>
+
+</div>
+<!-- EDIT12 SECTION "Theming" [5340-5567] -->
+<h3 class="sectionedit13"><a name="ajax" id="ajax">Ajax</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Several fixes, e.g. exceptions while sending requests are now correctly displayed as log statements. Thanks to Carsten Lergenmueller.</div>
+</li>
+<li class="level1"><div class="li"> XmlHttpTransport: A wrongly parsed JSON will now return null, which allows for a consistent error handling.</div>
+</li>
+<li class="level1"><div class="li"> Several fixes for the request queue and the related event handler methods.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Ajax" [5568-5914] -->
+<h2 class="sectionedit14"><a name="tools" id="tools">Tools</a></h2>
+<div class="level2">
+
+<p>
+The build process has been made more robust and powerful:
+</p>
+<ul>
+<li class="level1"><div class="li"> JavaScript parsing improved for regexps and arithmetic expressions.</div>
+</li>
+<li class="level1"><div class="li"> String handling has been optimized.</div>
+</li>
+<li class="level1"><div class="li"> Pretty-printing was polished.</div>
+</li>
+<li class="level1"><div class="li"> Help output is more structured.</div>
+</li>
+<li class="level1"><div class="li"> New Makefile parameters APPLICATION_ADDITIONAL_XGETTEXT_PARAMS and APPLICATION_ADDITIONAL_MSGMERGE_PARAM allow to pass additional info to the gettext tools used for internationalization.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Tools" [5915-6365] -->
+<h2 class="sectionedit15"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+<p>
+Some issues with the built-in applications have been resolved:
+</p>
+<ul>
+<li class="level1"><div class="li"> Demobrowser loads the individual demos flawlessly.</div>
+</li>
+<li class="level1"><div class="li"> In the &quot;build&quot; version the apps usually do not try to open a log window.</div>
+</li>
+<li class="level1"><div class="li"> Skeletons come with an improved error logging.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> Viewer displays the correct icons in the search view (e.g. interface, mixin).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Applications" [6366-] --></div>
+</body>
+</html>

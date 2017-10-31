@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.7.2</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.7.2"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.7.2?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.7.2"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.7.2"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.7.2"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.7.2","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#build_tool" class="toc">Build Tool</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_search" class="toc">API Search</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#table_rendering" class="toc">Table Rendering</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#web_page_support" class="toc">Web Page Support</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#more_table_cell_editors_and_renderers" class="toc">More Table Cell Editors and Renderers</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#testrunner_for_applications" class="toc">Testrunner for Applications</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework_fixes" class="toc">Framework Fixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#toolchain_fixes" class="toc">Toolchain Fixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#backend_fixes" class="toc">Backend Fixes</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_072_2007-09-19" id="qooxdoo_072_2007-09-19">qooxdoo 0.7.2 (2007-09-19)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.7.2 (2007-09-19)" [1-42] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT2 SECTION "Summary" [43-64] -->
+<h3 class="sectionedit3"><a name="build_tool" id="build_tool">Build Tool</a></h3>
+<div class="level3">
+
+<p>
+A new application called &quot;buildtool&quot; was added. This is the first public version of this application. The software has alpha state currently. The application can be used to configure an application&#039;s Makefile and to run the typical make commands from within the browser. To create buildtool for your current application, use the new <code>buildtool</code> Makefile target. The make process requires an <acronym title="Extensible Stylesheet Language Transformations">XSLT</acronym> processor (xsltproc) to be available in your environment.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Build Tool" [65-544] -->
+<h3 class="sectionedit4"><a name="api_search" id="api_search">API Search</a></h3>
+<div class="level3">
+
+<p>
+Added search capability to <acronym title="Application Programming Interface">API</acronym> viewer. The data for this search is dynamically created using the existing build system and will be supported for any existing application which was built using the skeleton system.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "API Search" [545-781] -->
+<h3 class="sectionedit5"><a name="table_rendering" id="table_rendering">Table Rendering</a></h3>
+<div class="level3">
+
+<p>
+Table rendering has been rewritten to improve the overall table speed. As a consequence the <acronym title="Application Programming Interface">API</acronym> for custom cell and row renderer had to be modified.
+</p>
+
+<p>
+Changes to the cell renderer <acronym title="Application Programming Interface">API</acronym>:
+</p>
+<ul>
+<li class="level1"><div class="li"> The method <code>updateDataCellElement</code> is obsolete now and can be removed.</div>
+</li>
+<li class="level1"><div class="li"> The signature of the method <code>createDataCellHtml</code> has changed. It now has a second parameter <code>htmlArr</code>, which is a string array of the table being currently built. Instead of returning the <acronym title="HyperText Markup Language">HTML</acronym> fragment of the cell, the cell <acronym title="HyperText Markup Language">HTML</acronym> must now be appended to <code>htmlArr</code>.</div>
+</li>
+<li class="level1"><div class="li"> All methods ending with <code>array_join</code> are obsolete and can be removed.</div>
+</li>
+</ul>
+
+<p>
+Changes to the row renderer <acronym title="Application Programming Interface">API</acronym>:
+</p>
+<ul>
+<li class="level1"><div class="li"> The method <code>createRowStyle</code> must be implemented.</div>
+</li>
+</ul>
+
+<p>
+General notes:
+</p>
+<ul>
+<li class="level1"><div class="li"> The classes <code>*.Basic</code> have been converted to interfaces.</div>
+</li>
+<li class="level1"><div class="li"> Inline styles on table cells slow down the table performance.  They should be avoided in favor of static or dynamic style sheets.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Table Rendering" [782-1723] -->
+<h3 class="sectionedit6"><a name="web_page_support" id="web_page_support">Web Page Support</a></h3>
+<div class="level3">
+
+<p>
+Several changes were made to enhance the support of typical webpages when the application layout is disabled. Especially all applications and components which uses coordinates should work much better and stable across all browsers.
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Web Page Support" [1724-1984] -->
+<h3 class="sectionedit7"><a name="more_table_cell_editors_and_renderers" id="more_table_cell_editors_and_renderers">More Table Cell Editors and Renderers</a></h3>
+<div class="level3">
+
+<p>
+The following classes were added to support additional cell renderers and editors.
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>qx.ui.table.celleditor.ComboBox</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.table.celleditor.Dynamic</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.table.celleditor.PasswordField</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.table.cellrenderer.Dynamic</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.table.cellrenderer.Password</code></div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.table.cellrenderer.Replace</code> </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "More Table Cell Editors and Renderers" [1985-2367] -->
+<h3 class="sectionedit8"><a name="testrunner_for_applications" id="testrunner_for_applications">Testrunner for Applications</a></h3>
+<div class="level3">
+
+<p>
+A <code>test</code> Makefile target was added to the build system. All skeleton based applications  can now automatically integrate the testrunner into existing applications.
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Testrunner for Applications" [2368-2574] -->
+<h2 class="sectionedit9"><a name="framework_fixes" id="framework_fixes">Framework Fixes</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Further improvements for virtual tree</div>
+</li>
+<li class="level1"><div class="li"> Major disposer fixes for <acronym title="Application Programming Interface">API</acronym> viewer (fixing some memory leaks)</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.lang.String.pad</code> support new parameter to add the padding at the right</div>
+</li>
+<li class="level1"><div class="li"> Drag&amp;Drop support for virtual widgets enhanced</div>
+</li>
+<li class="level1"><div class="li"> Improved logic for the name of the window opened by the window appender. This improves the behavior when one starts several qooxdoo applications together.</div>
+</li>
+<li class="level1"><div class="li"> Introduced new <code>deferredInit</code> flag for properties to mark properties which assign an init value later. This corrects some issues with the getters of such properties.</div>
+</li>
+<li class="level1"><div class="li"> Minor correction to property system to fix issues when null/undefined values are stored</div>
+</li>
+<li class="level1"><div class="li"> Corrected base class calls of Mixin <code>LegacyInit</code>. These led to some issues with the new debugging console in trunk and were backported to this release.</div>
+</li>
+<li class="level1"><div class="li"> Added new method <code>getDbKey</code> to qx.core.Object instances.</div>
+</li>
+<li class="level1"><div class="li"> Improved default fonts of bundled appearance themes to improve styling under Linux.</div>
+</li>
+<li class="level1"><div class="li"> Backported parts of new bom layer (qx.bom.*) from trunk to 0.7.x to fix remaining issues. Please do not use this <acronym title="Application Programming Interface">API</acronym> yourself yet.</div>
+</li>
+<li class="level1"><div class="li"> Minor fixes to compatibility tests in <code>qx.Theme</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed <acronym title="HyperText Markup Language">HTML</acronym> escaping in <code>qx.ui.basic.Label</code> (especially caused issues in <acronym title="Internet Explorer">IE</acronym>)</div>
+</li>
+<li class="level1"><div class="li"> Corrected <code>qx.ui.basic.Atom</code> to use new property system the right way when toggling the <code>show</code> property. This escpecially caused problems when dynamically changing Atoms after they were rendered initially.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation of <code>qx.ui.core.Font</code> was corrected / enhanced.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>changeTextColor</code> event to <code>qx.ui.core.Widget</code></div>
+</li>
+<li class="level1"><div class="li"> Made <code>hideFocus</code> property of <code>qx.ui.core.Widget</code> themeable.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues with unselectable areas in <acronym title="Internet Explorer">IE</acronym> (Finally do not use <code>unselectable</code> anymore)</div>
+</li>
+<li class="level1"><div class="li"> Improved cross-browser <code>cursor</code> property support for widgets</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>getScrollHeight</code> and <code>getScrollWidth</code> when using so-named enhanced borders</div>
+</li>
+<li class="level1"><div class="li"> Fixed several issues regarding selections in the tree widget (especially when elements get removed dynamically)</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues when the root node of the tree widget was marked as hidden.</div>
+</li>
+<li class="level1"><div class="li"> Improved support for <code>restrictToPage</code> properties of <code>Popup</code>. The default values are now controlable via settings again.</div>
+</li>
+<li class="level1"><div class="li"> Minor changes to <code>ComboBoxEx</code></div>
+</li>
+<li class="level1"><div class="li"> Added <code>wrap</code> property to <code>Spinner</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed support for open/close intervals on menus.</div>
+</li>
+<li class="level1"><div class="li"> Fixed resize issues in <code>Window</code> class when the instance is maximized.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>IconHtmlEmbed</code> for issues with <acronym title="Graphics Interchange Format">GIF</acronym> images in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>LinkEmbed</code>, <code>HtmlEmbed</code> and <code>TextEmbed</code> to correctly work when an enhanced border is applied.</div>
+</li>
+<li class="level1"><div class="li"> Added missing <code>#embed</code> hint for build system to <code>Iframe</code> class</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues of <code>History</code> class in <acronym title="Internet Explorer">IE</acronym> when changing the value of the location bar.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Framework Fixes" [2575-5376] -->
+<h2 class="sectionedit10"><a name="toolchain_fixes" id="toolchain_fixes">Toolchain Fixes</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed issues of <code>msgfmt.py</code> of build toolchain</div>
+</li>
+<li class="level1"><div class="li"> Corrected abstract class detection in <acronym title="Application Programming Interface">API</acronym> viewer </div>
+</li>
+<li class="level1"><div class="li"> Fixed issues of resource copy modules with complex paths.</div>
+</li>
+<li class="level1"><div class="li"> Added normalize feature to <code>textutil.py</code></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Toolchain Fixes" [5377-5623] -->
+<h2 class="sectionedit11"><a name="backend_fixes" id="backend_fixes">Backend Fixes</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> The error handling of jsonrpc was improved.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Backend Fixes" [5624-] --></div>
+</body>
+</html>

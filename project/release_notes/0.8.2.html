@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8.2</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T12:20:00+0200"/>
+<meta name="keywords" content="project,release_notes,0.8.2"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8.2?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8.2"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8.2"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8.2"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8.2","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#highlights" class="toc">Highlights</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_082_2009-03-05" id="qooxdoo_082_2009-03-05">qooxdoo 0.8.2 (2009-03-05)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8.2 (2009-03-05)" [1-47] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+qooxdoo 0.8.2 is a solid maintenance/bugfix release. It also includes additional functionality, often as an experimental preview. It is recommended that users upgrade their existing applications to this latest stable version. 
+</p>
+
+<p>
+<em>Please read the <a href="#migration" title="project:release_notes:0.8.2 &crarr;" class="wikilink1">migration notes</a> at the end of this document carefully. A few manual steps may be required for properly upgrading to this release and the latest web browsers.</em>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [48-493] -->
+<h2 class="sectionedit3"><a name="highlights" id="highlights">Highlights</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Inspector, a cross-browser debugging tool a la Firebug</div>
+</li>
+<li class="level1"><div class="li"> Tons of improvements and bugfixes over the previous version</div>
+</li>
+<li class="level1"><div class="li"> Tested for all common browsers, including upcoming versions like IE8</div>
+</li>
+<li class="level1"><div class="li"> Optimized packaging and loading of qooxdoo applications</div>
+</li>
+<li class="level1"><div class="li"> CSS3 selector engine and a jQuery-like low-level <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+<li class="level1"><div class="li"> Preview of the upcoming data binding layer</div>
+</li>
+<li class="level1"><div class="li"> Preview of the new infrastructure for virtual widgets</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Highlights" [494-936] -->
+<h2 class="sectionedit4"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="core" id="core">Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Key event handling again showed its ugly face. An <a href="http://news.qooxdoo.org/key-events-a-never-ending-story" class="urlextern" title="http://news.qooxdoo.org/key-events-a-never-ending-story">old Firefox bug</a> reappeared in a different place and had to be fixed.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> A namespace <code>qx.type</code> has been created to contain qooxdoo classes, which can be used to sub class native JavaScript types like <code>String</code>, <code>Error</code> or <code>Array</code>. The classes prefixed with <code>Base</code> are designed to be used as base classes for custom classes. In addition there is a <code>qx.type.Array</code> class, which is a sub class of the native JavaScript array, but adds convenience functionality found in <code>qx.lang.Array</code>. It is expected to complement this with a additional classes like <code>qx.type.String</code> and <code>qx.type.Number</code> in future releases.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Some classes, particular in the <code>qx.lang</code> namespace, got a review and additional methods were added to make them even more convenient. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The advanced <code>qx.io2.ScriptLoader</code> now works fine in Internet Explorer as well.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Performance was improved for the event handling and managing code, mostly by reducing the number of function calls.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Improved memory management (e.g. correctly detaching events in <acronym title="Internet Explorer">IE</acronym>) and object handling, working around some <acronym title="Internet Explorer">IE</acronym> peculiarities.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="application" id="application">Application</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Significant changes have been made to the way qooxdoo applications start up. The JavaScript code of the loader script has been simplified and the code chunks responsible for the part loading logic have been move into regular framework classes. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Furthermore the <code>build</code> version of a qooxdoo application now (again) only consists of a single JavaScript file (not two as in 0.8 and 0.8.1). The separate loader script for the <code>build</code> version is no longer needed. This especially helps to use qooxdoo in low-level applications. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Another change was that qooxdoo now uses the <code>DOMContentLoaded</code> event to start up the application, which results in faster startup times especially in inline style applications.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The changes to the startup process of qooxdoo applications revealed a problem in the WebKit rendering engine used for instance in Safari or Chrome. These browsers now require a <code>body</code> tag in the loader <acronym title="HyperText Markup Language">HTML</acronym> file. Even if the body tag is empty, which is often seen for regular qooxdoo apps. Remember that this body tag has to be added manually to your existing applications in order to support those latest browsers.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="browser_support" id="browser_support">Browser Support</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Confirmed support for Internet Explorer 8 RC1. qooxdoo runs in all modes (Quirk, IE7 Standard Mode and IE8 Standard Mode). The latest IE8 RC1, which was used at the release time, was lagging performance, particularly while handling mouse events. It appears to be an issue of IE8 RC1 and not qooxdoo. The issue appears to be known and fixed, so it is expected to ship with the final IE8 release.  </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> 0.8.2 saw one of the most comprehensive testing phases of any qooxdoo release. Including the following standard browsers: <acronym title="Internet Explorer 6">IE6</acronym>, IE7, FF2, FF3, Safari 3.2, Opera 9.6, Chrome, as well as the &quot;beta&quot; versions IE8 RC1, FF3.1b, Safari 4 beta, Webkit nightly.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="low-level" id="low-level">Low-level</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> qooxdoo now comes with a powerful built-in CSS3 selector engine. It integrates the independent <a href="http://sizzlejs.com" class="urlextern" title="http://sizzlejs.com">Sizzle</a> project, which is at the heart of many <acronym title="JavaScript">JS</acronym> low-level libraries, most prominently jQuery.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> For typical low-level applications it is often advantageous to work with an entire set of <acronym title="Document Object Model">DOM</acronym> nodes at once. A new class called <code>qx.bom.Collection</code> allows to modify such a set (often the result of a <acronym title="Cascading Style Sheets">CSS</acronym> selection), apply new <acronym title="Cascading Style Sheets">CSS</acronym> styles, add events or insert content. It also extensively supports a jQuery-like coding style including the chaining concept. It largely builds upon the existing comprehensive low-level layer of qooxdoo (als called &quot;BOM layer&quot;), but offers an alternative or complementary <acronym title="Application Programming Interface">API</acronym> that is appealing for many web developers. This new collection based <acronym title="Application Programming Interface">API</acronym> is still experimental and not yet stable. See the preliminary feature <a href="http://attic.qooxdoo.org/%3Adocumentation%3Ageneral%3Afrom_jquery_to_qooxdoo" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3Ageneral%3Afrom_jquery_to_qooxdoo">comparison to jQuery</a>, feedback is appreciated.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Introduced new qx.bom.Html class for advanced preparation of <acronym title="HyperText Markup Language">HTML</acronym> markup, currently only used by the new Collection class.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Dimension <acronym title="Application Programming Interface">API</acronym> now includes two new methods <code>getContentWidth()</code> and <code>getContentHeight()</code>, which should be preferred in most cases over the previous simple browser-specific wrappers (like <code>clientWidth()</code> or <code>scrollWidth()</code>), which were deprecated.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Re-introduced support for cookie handling by the class <code>qx.bom.Cookie</code>. This simple but convenient wrapper was missing in 0.8 and 0.8.1.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The user agent string of Opera 10 is now parsed correctly. Testing for this early alpha version of Opera was not undertaken for this qooxdoo release, though.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The FocusHandler instance is now available at page startup for low-level applications.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Framework" [937-5832] -->
+<h2 class="sectionedit5"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The Inline root widget now connects to the global focus handler. Also a bug was fixed which let <acronym title="Internet Explorer">IE</acronym> hang in an infinite loop while automatic resizing the root element was enabled.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>qx.application.Simple</code> is now deprecated, use <code>qx.application.Native</code> instead.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Native contextmenus are (again) hidden for all RIA-style applications.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> While implementing the selection managers for the virtual widgets, a couple of bugs have been fixed in the existing selection manager code.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Tooltips and Menus now fully work in combination with an <code>inline</code> application. Also a menu is not closed anymore when the user clicks at a disabled menu item.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> If a <code>SelectBox</code> or <code>ComboBox</code> was added to a <code>Scroll</code> container and the view port was moved, the pop-up window was visible at all times, also when the corresponding <code>SelectBox</code> or <code>ComboBox</code> became invisible. To fix this issue, the pop-up window is now closed when the user scrolls the view port. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The <code>CheckBox</code> had a different background color, if checked with the keyboard. Resolved now.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed problem with textfield widgets in <acronym title="Internet Explorer">IE</acronym> at <code>mouseover</code> and <code>mouseout</code> events</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed an issue, that prohibited the Spinner to accept the enter key as input. </div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="table" id="table">Table</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Before actually starting to work on the new infrastructure for virtual widgets most of the remaining open bugs for the current Table were fixed. These fixes not only account for better auto-sizing behavior of the table, they also helped to squish a number of smaller but nonetheless <a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=framework&amp;component=ui-table&amp;target_milestone=0.8.2&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=framework&amp;component=ui-table&amp;target_milestone=0.8.2&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">annoying bugs</a>.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> An extension was also made to the Table widget. It now has a cleaner interface to the column visibility menu, including interface definitions (IColumnMenuButton and IColumnMenuItem) for authors wishing to create their own column visibility menus. One example of such an alternative menu is now available in <a href="http://contrib.qooxdoo.org" class="urlextern" title="http://contrib.qooxdoo.org">qooxdoo-contrib</a> as the TableColumnMenuGrid project.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="theming" id="theming">Theming</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Moderately updated appearance of several form widgets (textfield, selectbox, splitbutton, slider, etc.) to better visualize the <code>disabled</code> state</div>
+</li>
+<li class="level1"><div class="li"> Updated some icons from the latest Oxygen checkout</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="virtual_widgets" id="virtual_widgets">Virtual Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> This release contains a preview of the new infrastructure for <a href="http://news.qooxdoo.org/going-virtual" class="urlextern" title="http://news.qooxdoo.org/going-virtual">virtual widgets</a>. This is still work in progress,  but the first results are already very promising.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data Binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> In addition 0.8.2 features a preview of the upcoming data binding feature of qooxdoo. It has improved significantly since the early introduction in the 0.8.1 release. Nevertheless it is still in an experimental state and feedback is appreciated.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> One big topic during the development process were controllers. They are responsible for setting up and managing the connection from the data model to the view. Three controllers have been added so far:</div>
+<ul>
+<li class="level2"><div class="li"> Object Controllers for binding single values to views like textfields.</div>
+</li>
+<li class="level2"><div class="li"> List Controllers for list-like widgets e.g. List and SelectBox.</div>
+</li>
+<li class="level2"><div class="li"> Tree controllers for the Tree widget.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Another topic is data stores. A store is responsible for fetching data (typically from an <acronym title="Uniform Resource Locator">URL</acronym>) and to transform it into a model of the application. The currently included store converts JSON data into a model, which can be used as model for the controller.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> More insight into qooxdoo&#039;s data binding feature, with some more practical information can be found at the preliminary <a href="http://attic.qooxdoo.org/documentation/0.8/data_binding" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/data_binding">documentation</a>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "GUI Toolkit" [5833-10044] -->
+<h2 class="sectionedit6"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="inspector" id="inspector">Inspector</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> As a featured application of 0.8.2 the Inspector is back! Previously it was part of the contributions to qooxdoo 0.7.x, and now it has been ported to 0.8.2 and integrated with the framework. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> To get the basic idea, think of it as a cross-browser debugging tool a la Firebug for inspecting and tweaking a qooxdoo application. For instance it enables you to easily locate widgets visually and then modify them using a corresponding property window or a handy JavaScript console. Additionally you can examine the hierarchy of widgets of your user interface, or have an eye on qooxdoo&#039;s central object registry. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Even while lacking some of the cool features of its 0.7 predecessor, it is already such a useful tool for app development, that we wanted it to get baked into a release rather sooner than later. Certainly there is much room for improvement over the current version, nonetheless take advantage of it now, and stay tuned for all the enhancements to come. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="demobrowser" id="demobrowser">Demobrowser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Improved performance of the syntax highlighting (for both <acronym title="HyperText Markup Language">HTML</acronym> and JavaScript files) in Internet Explorer.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Many new demos were added, e.g. for the <a href="http://demo.qooxdoo.org/0.8.2/demobrowser/#test~Template.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.2/demobrowser/#test~Template.html">Template</a> util class or to showcase <a href="http://demo.qooxdoo.org/0.8.2/demobrowser/#showcase~Localization" class="urlextern" title="http://demo.qooxdoo.org/0.8.2/demobrowser/#showcase~Localization">Localization</a>.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Less end-user relevant demos were moved to the test folder, obsolete demos were removed entirely.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> An autorun feature was added, which is most useful when being integrated with a build-and-test environment like the one used during 0.8.2 development.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="feedreader" id="feedreader">Feedreader</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The feed reader has been updated to use qooxdoo&#039;s part loading mechanism. The code for the <code>Add Feed</code> and <code>Settings</code> window will now be loaded on demand, which reduces the amount of code to be loaded at start up.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The application was rewritten internally to demonstrate the practical use of the upcoming data binding features. Given the impressive intermediate results, this clearly shows how the future qooxdoo app development will benefit from this powerful and concise data binding layer.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="portal" id="portal">Portal</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The portal application now uses <code>qx.application.Native</code> instead of <code>qx.application.Simple</code></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="api_viewer" id="api_viewer">API Viewer</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added a little helper popup to the search pane to give users hints about the search field. There might be more info on wildcards, etc. in the future, so this tiny helper may just be a start.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed <acronym title="HyperText Markup Language">HTML</acronym> output to account for <code>@see</code> tags correctly.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Autoscrolling to an entry like a property or a method given by <acronym title="Uniform Resource Locator">URL</acronym> now works again </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="test_runner" id="test_runner">Test Runner</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li">   * Added new file <code>index-source.html</code>, to directly open Testrunner with the source version of the tests (use generation target <code>test-source</code>). This nicely supports test-driven development (TDD).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added support for <a href="http://attic.qooxdoo.org/documentation/0.8/frame_apps_testrunner?s=asynchronous%20tests#writing_test_classes" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/frame_apps_testrunner?s=asynchronous%20tests#writing_test_classes">asynchronous tests</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <acronym title="Graphical User Interface">GUI</acronym> enhancements: Stop button, log filtering, selective loading of test classes.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Some memory leaks were also fixed.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="skeletons" id="skeletons">Skeletons</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Simplified BOM skeleton on tooling side.</div>
+</li>
+<li class="level1"><div class="li"> Consolidated migration skeleton, which might be resolved into the regular <acronym title="Graphical User Interface">GUI</acronym> skeleton in a future release.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Applications" [10045-13385] -->
+<h2 class="sectionedit7"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="generation" id="generation">Generation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> It is now possible to generate a <code>Inline</code> skeleton application with the <code>create-application.py</code> python script</div>
+</li>
+<li class="level1"><div class="li"> New standard job <code>inspector</code> for custom applications (see <a href="#inspector" title="project:release_notes:0.8.2 &crarr;" class="wikilink1">Inspector</a> further up).</div>
+</li>
+<li class="level1"><div class="li"> Standard jobs <code>fix</code>, <code>pretty</code> and <code>lint</code> now honor class filtering (i.e. <code>&quot;include&quot;</code>/<code>&quot;exclude&quot;</code> settings).</div>
+</li>
+<li class="level1"><div class="li"> The <code>-v</code> command line option to generate.py now also reports byte sizes of resulting class code on build jobs.</div>
+</li>
+<li class="level1"><div class="li"> File name handling is now case-preserving on Windows platforms; this is interesting if working with other case-sensitive apps on Windows, like standard Tomcat.</div>
+</li>
+<li class="level1"><div class="li"> Add support for complex library name spaces (e.g. <code>org.qooxdoo.slc</code>).</div>
+</li>
+<li class="level1"><div class="li"> Support for the new application loader mechanics.</div>
+</li>
+<li class="level1"><div class="li"> Re-structured compiler backend.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="optimization" id="optimization">Optimization</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Performance improvements for compile jobs through code optimization and cache utilization.</div>
+</li>
+<li class="level1"><div class="li"> Overhauled variable optimizer, fixing various bugs.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="code_validation" id="code_validation">Code Validation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Enhanced detection and reporting of unknown classes during class scanning.</div>
+</li>
+<li class="level1"><div class="li"> Improved the built-in JavaScript validation tool ecmalint.py.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="internationalization" id="internationalization">Internationalization</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Improved parsing of Utf-8 source code (BOM, unicode white spaces).</div>
+</li>
+<li class="level1"><div class="li"> Various fixes to .po file handling (plural keys,  utf-8 files, long comments, etc.).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Tooling" [13386-14742] -->
+<h2 class="sectionedit8"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Added an <a href="http://attic.qooxdoo.org/documentation/0.8/introduction_sdk" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/introduction_sdk">Introduction to the SDK</a> page.</div>
+</li>
+<li class="level1"><div class="li"> The <a href="http://demo.qooxdoo.org/0.8.2/apiviewer/#qx.fx" class="urlextern" title="http://demo.qooxdoo.org/0.8.2/apiviewer/#qx.fx">API documentation</a> of the existing animation feature in qooxdoo was improved and <a href="http://attic.qooxdoo.org/documentation/0.8/qooxdoo_animation" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/qooxdoo_animation">a chapter about this topic</a> was added to the manual. The documentation describes the usage of animations on <acronym title="Document Object Model">DOM</acronym> elements, explains the effect queue and demonstrates how to implement own effects.</div>
+</li>
+<li class="level1"><div class="li"> New page about generator <a href="http://attic.qooxdoo.org/documentation/0.8/generator_default_jobs" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_default_jobs">default jobs</a>.</div>
+</li>
+<li class="level1"><div class="li"> New Snippets added, e.g. Activate the focus handler at low-level, keypress and keyup listener at input elements</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Documentation" [14743-15515] -->
+<h2 class="sectionedit9"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <acronym title="HyperText Markup Language">HTML</acronym> files (typically index.html) that start-up a qooxdoo application need to contain a <code>&lt;body&gt;</code> element. Otherwise Webkit-based browsers like Safari and Chrome may fail. Unfortunately there&#039;s no workaround available to fix this &quot;on-the-fly&quot;, so please make sure to add such a body tag in your application&#039;s <acronym title="HyperText Markup Language">HTML</acronym> file.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The <code>generate.py</code> has been changed to automatically search for the <acronym title="Software Development Kit">SDK</acronym> based on the <code>QOOXDOO_PATH</code> defined in the <code>config.json</code>. Since we are not able to migrate the <code>generate.py</code> with the migration script this file must be updated manually. To do this, the file must be overridden with the new version located at <code>qooxdoo-0.8.2-pre-sdk/component/skeleton/gui/generate.tmpl.py</code> before starting the migration task itself.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> A number of deprecations were made for methods in the framework code. A corresponding deprecation warning is displayed in an application&#039;s source version when such a deprecated method is called. It contains some more info, typically pointing to the alternative method to use instead. The earlier you replace deprecated methods in your code the better, despite the fact that your app is expected to continue to run fine (even without deprecation warnings in the build version).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The IDecorator interface has been changed to support use cases other than in qx.ui.core.Widget. Custom decorator classes have to be updated to the new interface.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> For more information about the usual migration steps please see the <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.8#migration" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.8#migration">migration guides</a> in the manual.</div>
+</li>
+</ul>
+
+<p>
+<br/>
+
+<br/>
+
+<p><div class="noteclassic"><strong>Also <a href="http://news.qooxdoo.org/qooxdoo-082-released" class="urlextern" title="http://news.qooxdoo.org/qooxdoo-082-released">see the release announcement</a> for a quick overview of new features.</strong>
+</div></p>
+</p>
+
+</div>
+<!-- EDIT9 SECTION "Migration" [15516-] --></div>
+</body>
+</html>

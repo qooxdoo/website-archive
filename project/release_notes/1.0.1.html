@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:1.0.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T13:10:34+0200"/>
+<meta name="keywords" content="project,release_notes,1.0.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/1.0.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/1.0.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/1.0.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/1.0.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:1.0.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#highlights" class="toc">Highlights</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_101_2010-01-27" id="qooxdoo_101_2010-01-27">qooxdoo 1.0.1 (2010-01-27)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 1.0.1 (2010-01-27)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a regular patch release, meant to be backwards compatible to qooxdoo 1.0. No changes to the JavaScript code should be necessary to continue to use existing apps, which are based on the previous release. Many bugs have been fixed, a number of enhancements and improvements also made it into this release. 
+</p>
+
+<p>
+Please upgrade to this latest stable release!
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-427] -->
+<h2 class="sectionedit3"><a name="highlights" id="highlights">Highlights</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed an issue in <a href="http://www.mozilla.com/en-US/firefox/3.6/releasenotes/" class="urlextern" title="http://www.mozilla.com/en-US/firefox/3.6/releasenotes/">Firefox 3.6</a>, which was released last week (01/21/2010). The native scrollbar widgets did no longer react on clicks on the scrollbar buttons. This is a <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=511075" class="urlextern" title="https://bugzilla.mozilla.org/show_bug.cgi?id=511075">known regression</a> in Firefox 3.6, but fortunately we could find a workaround for this issue.</div>
+</li>
+<li class="level1"><div class="li"> Fixed a critical issue that prevented <acronym title="Internet Explorer">IE</acronym> to run properly under <acronym title="Secure Sockets Layer">SSL</acronym>. See <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3305" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3305">Bug #3305</a> for details. It is strongly recommended to update to this release, if your application is deployed via https.</div>
+</li>
+<li class="level1"><div class="li"> Hiding elements, which use the AlphaImageLoader, can occasionally cause <acronym title="Internet Explorer">IE</acronym> to completely black out the screen. We now use a technique described <a href="http://blog.hackedbrain.com/2007/05/22/mimeo-goes-24-bit-png-ie6-put-up-a-hell-of-a-fight/" class="urlextern" title="http://blog.hackedbrain.com/2007/05/22/mimeo-goes-24-bit-png-ie6-put-up-a-hell-of-a-fight/">here</a> to fix it.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Highlights" [428-1301] -->
+<h2 class="sectionedit4"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="low-level" id="low-level">Low-level</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <code>qx.bom.Window</code> now parses the Boolean values correctly. See <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3285" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3285">Bug #3285</a> for details. Thanks to Evgeny for the detailed bug report and the provided fix!</div>
+</li>
+<li class="level1"><div class="li"> Explicitly added the class <code>qx.event.handler.Application</code> to config of the BOM skeleton. This could have been a random problem of the previous release, so to be sure, please adjust the config file of your BOM application accordingly. For details have a look at <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3366" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3366">bug report</a>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Framework" [1302-1808] -->
+<h2 class="sectionedit5"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Scaled image sometimes were not visible. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3273" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3273">Bug #3273</a></div>
+</li>
+<li class="level1"><div class="li"> Added a deprecation warning in case the selection of a disabled widget is manipulated.</div>
+</li>
+<li class="level1"><div class="li"> Fixed the corrupt &quot;no drag&quot; cursor <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3367" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3367">bug #3367</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data Binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Minor improvements of the form controller.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed sorting issues in the Table widget.</div>
+</li>
+<li class="level1"><div class="li"> General fixes of the evens of input fields: the former value is available now in each event; the same set of normalized events is now fired in all browsers.</div>
+</li>
+<li class="level1"><div class="li"> The selection of the SelectBox widget can now also be reset for empty selections.<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3272" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3272">bug #3272</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="htmlarea" id="htmlarea">HtmlArea</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed bug in the advanced paragraph-handling for all Gecko browsers. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3346" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3346">Bug #3346</a></div>
+</li>
+<li class="level1"><div class="li"> Inserting a link on a collapsed selection now also works in Opera. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3347" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3347">Bug #3347</a></div>
+</li>
+<li class="level1"><div class="li"> Inserting a background image now additionally supports integer values for <code>top</code> and <code>left</code> positions. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3307" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=3307">Bug #3307</a></div>
+</li>
+<li class="level1"><div class="li"> A number of minor fixes and refactorings (e.g. removal of useless function bindings)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "GUI Toolkit" [1809-2908] -->
+<h2 class="sectionedit6"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="demobrowser" id="demobrowser">Demobrowser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Improved the search for demos: You can now also search for name of classes used in a demo.</div>
+</li>
+<li class="level1"><div class="li"> Demobrowser&#039;s internal data has been bumped to be valid JSON and the file be renamed to <code>demodata.json</code>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="playground" id="playground">Playground</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Major code refactorings led to a maintainable and extensible code base.</div>
+</li>
+<li class="level1"><div class="li"> Improved the memory management of the application.</div>
+</li>
+<li class="level1"><div class="li"> Completed the application&#039;s <acronym title="Application Programming Interface">API</acronym> doc coverage.</div>
+</li>
+<li class="level1"><div class="li"> Added <acronym title="Uniform Resource Locator">URL</acronym> shortening support via <a href="http://bit.ly" class="urlextern" title="http://bit.ly">bit.ly</a>.</div>
+</li>
+<li class="level1"><div class="li"> Introduced <a href="http://news.qooxdoo.org/playground-enhancements" class="urlextern" title="http://news.qooxdoo.org/playground-enhancements">Gist support</a>, which allows for integrating externally hosted code samples</div>
+</li>
+<li class="level1"><div class="li"> Some settings are now stored locally in a cookie, thus are kept at reload</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="portal" id="portal">Portal</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Major refactoring completed. See <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1485" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1485">Bug #1485</a> for details.</div>
+</li>
+<li class="level1"><div class="li"> Horizontal resizing of the boxes now also works in Webkit browsers. <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2520" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2520">Bug #2520</a></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="test_runner" id="test_runner">Test Runner</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added automatic sorting of the tests, which reduces the number of unexpected test failures and allows them to be reproduced.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Applications" [2909-3984] -->
+<h2 class="sectionedit7"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="generation" id="generation">Generation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Generation of build variants has been <a href="http://news.qooxdoo.org/the-week-in-qooxdoo-2010-01-15" class="urlextern" title="http://news.qooxdoo.org/the-week-in-qooxdoo-2010-01-15">heavily optimized</a>, resulting in significant time and space savings for initial build runs (ie. with empty cache).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="configuration" id="configuration">Configuration</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2619" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2619">#2619</a>, <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2448" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2448">#2448</a> New experimental <a href="http://news.qooxdoo.org/the-week-in-qooxdoo-2010-01-15" class="urlextern" title="http://news.qooxdoo.org/the-week-in-qooxdoo-2010-01-15">user preferences</a> support individual configs in <code>&lt;HOME&gt;/.qooxdoo/generator.json</code>, which will be automatically included into each generator run started by this user.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="code_validation" id="code_validation">Code Validation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Various built-in Ecma262 error classes (like EvalError, RangeError,…) are now recognized as such by the parser.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Tooling" [3985-] --></div>
+</body>
+</html>

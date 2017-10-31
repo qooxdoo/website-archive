@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8.3</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T12:51:53+0200"/>
+<meta name="keywords" content="project,release_notes,0.8.3"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8.3?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8.3"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8.3"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8.3"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8.3","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#highlights" class="toc">Highlights</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_083_2009-09-10" id="qooxdoo_083_2009-09-10">qooxdoo 0.8.3 (2009-09-10)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8.3 (2009-09-10)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+qooxdoo 0.8.3 is a solid maintenance/bugfix release. A main focus was on consolidating and stabilizing some of the framework’s <acronym title="Application Programming Interface">API</acronym>, so you should expect quite a number of deprecations. Those typically won&#039;t affect yourbuild&quot; version. Instead, the deprecation warnings of your &quot;source&quot; version will be a rather straightforward guide you&#039;d follow to replace legacy <acronym title="Application Programming Interface">API</acronym> manually. The 0.8.3 release also continues to ship with some larger features that are either new () or have matured (data binding). 
+</p>
+
+<p>
+<em>It is recommended that users upgrade their existing  to this latest stable version.</em>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-658] -->
+<h2 class="sectionedit3"><a name="highlights" id="highlights">Highlights</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> New Form Handling</div>
+</li>
+<li class="level1"><div class="li"> Unified Selection <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+<li class="level1"><div class="li"> New FlowLayout</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Highlights" [659-750] -->
+<h2 class="sectionedit4"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="core" id="core">Core</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="global_error_handling" id="global_error_handling">Global Error Handling</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li">Added support for a global exception handler. The technique is covered in detail in a separate <a href="http://news.qooxdoo.org/global-error-handling" class="urlextern" title="http://news.qooxdoo.org/global-error-handling">blog post</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="type_checks" id="type_checks">Type checks</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Type checks in JavaScript are surprisingly hard to get right. To solve this issue on a framework level we have introduced the <code>qx.lang.Type</code> utility class, which contains type checks for all native JavaScript types.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="client_detection" id="client_detection">Client Detection</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> We changed the client detection for Internet Explorer 8. The <code>qx.bom.client.Engine.VERSION</code> is always set to <code>8.0</code> when an IE8 is detected. To determine the mode in which IE8 runs, the new attribute <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.client.Engine~DOCUMENT_MODE" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.client.Engine~DOCUMENT_MODE">DOCUMENT_MODE</a> can be used.</div>
+</li>
+<li class="level1"><div class="li"> qooxdoo now also detects Adobe AIR and Gears.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="internet_explorer" id="internet_explorer">Internet Explorer</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Improved console support for IE8. The console can now be used to log messages similar to the FireBug console.</div>
+</li>
+<li class="level1"><div class="li"> ResourceManager class now offers a better support for <acronym title="Internet Explorer">IE</acronym> in HTTPS mode.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="debugging" id="debugging">Debugging</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> To gain a better debugger and profiler support we introduced the support for the <a href="http://www.alertdebugging.com/2009/04/29/building-a-better-javascript-profiler-with-webkit/" class="urlextern" title="http://www.alertdebugging.com/2009/04/29/building-a-better-javascript-profiler-with-webkit/">displayName</a> property on function objects. This greatly enhances WebKit debugging/profiling of qooxdoo applications.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="translation" id="translation">Translation</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The framework now comes with an additional Dutch translation (thanks to Isaak Malik).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="application" id="application">Application</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Inline applications will warn users when the container element has no dimensions and dynamics are on.</div>
+</li>
+<li class="level1"><div class="li"> Several fixes for inline application / inline root widget</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="transport" id="transport">Transport</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A fix to prevent a request timeout after the user handler was called, has been committed by Derrell Lipman.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="low-level" id="low-level">Low-level</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Introduced <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.Blocker" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.Blocker">low-level blocker</a> class to either block the entire document or a specific element</div>
+</li>
+<li class="level1"><div class="li"> Introduced <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.Window" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.bom.Window">low-level window</a> class to work with native windows</div>
+</li>
+<li class="level1"><div class="li"> Added caching of the text selection. As a consequence of this enhancement you can select text even if the <acronym title="Document Object Model">DOM</acronym> element itself is not yet available.</div>
+</li>
+<li class="level1"><div class="li"> Improved <code>qx.bom.element.Location</code>, which now supports margins on the body.</div>
+</li>
+<li class="level1"><div class="li"> Class <code>qx.xml.Element</code> now supports <acronym title="Extensible Markup Language">XML</acronym> namespaces in its methods <code>selectNodes()</code> and <code>selectSingleNode()</code>.</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.util.ColorUtil</code> now accepts rgba values for <code>cssStringToRgb()</code>.</div>
+</li>
+<li class="level1"><div class="li"> qx.util.NumberFormat: A new changeNumberFormat event is fired if the prefix or postfix changes.</div>
+</li>
+<li class="level1"><div class="li"> qooxdoo&#039;s <acronym title="Cascading Style Sheets">CSS</acronym> selector engine has been updated to the latest version of Sizzle, which is also the engine used in jQuery.</div>
+</li>
+<li class="level1"><div class="li"> Fixed a rare race condition in animations, which could prevent effects from being started.</div>
+</li>
+<li class="level1"><div class="li"> Improved keyboard handling performance in Firefox.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Framework" [751-3678] -->
+<h2 class="sectionedit5"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="selection_api" id="selection_api">Selection API</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The selection handling of the widget system was reworked and consolidated. The old selection <acronym title="Application Programming Interface">API</acronym> had a different <acronym title="Application Programming Interface">API</acronym> for multi and single selection. Therefore a new Selection <acronym title="Application Programming Interface">API</acronym> was implemented, to get a consistent <acronym title="Application Programming Interface">API</acronym> for both cases. For more details have a look at  <a href="http://attic.qooxdoo.org/documentation/0.8/ui_selection2" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/ui_selection2">New Selection API</a>. A handy feature was also added: a new method <code>invert()</code> is available to, you guessed it, invert a multi selection.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="tooltips" id="tooltips">Tooltips</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> In addition to a widget&#039;s <code>toolTip</code> property two additional properties <code>toolTipText</code> and <code>toolTipIcon</code> have been added. These properties use a shared tooltip widget instance, which helps to reduce the memory footprint of an application.</div>
+</li>
+<li class="level1"><div class="li"> The tooltip manager has been improved and now supports tooltips for invalidation messages.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="blocker" id="blocker">Blocker</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Added new class <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.core.Blocker" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.core.Blocker">Blocker</a>, which allows to use more than one blocker instance.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="appearance" id="appearance">Appearance</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> A <code>syncAppearance</code> event has been added to qooxdoo widgets. This event is fired after the appearance has been applied. This way it is possible to react on state changes and to read property values originating from the appearance theme.</div>
+</li>
+<li class="level1"><div class="li"> Monospace fonts are now really monospaced under Mac <acronym title="Operating System">OS</acronym> X.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="misc" id="misc">Misc</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Widgets can fire a <code>beforeContextmenuOpen</code> event before a context menu is opened.</div>
+</li>
+<li class="level1"><div class="li"> Every widget now fires the <code>createChildControl</code> event after a child control was created</div>
+</li>
+<li class="level1"><div class="li"> All widgets now have a getChildren() method which returns only those child widgets that were added by the application developer using the add() method.</div>
+</li>
+<li class="level1"><div class="li"> Reintroduced <code>isSeeable()</code> on every widget which returns whether the widget is visible on screen.</div>
+</li>
+<li class="level1"><div class="li"> turned ResourceManger into a singleton, changing static methods to member methods, adding deprecation to the static methods. Use <code>qx.util.ResourceManager.getInstance()</code> now to access the previously static members.</div>
+</li>
+<li class="level1"><div class="li"> Renamed methods of text selection <acronym title="Application Programming Interface">API</acronym> and deprecated the existing ones</div>
+</li>
+<li class="level1"><div class="li"> Removed flickering of drag&amp;drop cursor for <acronym title="Internet Explorer">IE</acronym> browsers</div>
+</li>
+<li class="level1"><div class="li"> Deprecated <code>getToolbar()</code> method in favor for <code>getMenubar()</code></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data Binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> General improvements in most of the classes.</div>
+</li>
+<li class="level1"><div class="li"> The JSON marshaler has changed its <acronym title="Application Programming Interface">API</acronym> to a more general way.  </div>
+<ul>
+<li class="level2"><div class="li"> An <code>IMarshaler</code> interface has been introduced.</div>
+</li>
+<li class="level2"><div class="li"> A static <code>createModel()</code> function can now be used to create models.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> A set of default converters has been added to the framework by <code>qx.data.Conversion</code></div>
+</li>
+<li class="level1"><div class="li"> Two serializers for qooxdoo model classes have been added to <code>qx.util.Serializer</code> named  <code>toJson()</code> and <code>toUriParameter()</code></div>
+</li>
+<li class="level1"><div class="li"> A new controller has been added, which is responsible for binding a form to a model. For more information take a look at the <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Adata_binding" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Adata_binding">wiki documentation of the data binding</a> or at the <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#data~FormController.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#data~FormController.html">form controller demo</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="layouts" id="layouts">Layouts</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="flow_layout" id="flow_layout">Flow Layout</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The <a href="http://attic.qooxdoo.org/documentation/0.8/layout/flow" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/layout/flow">flow layout</a> manager has been re-added to qooxdoo. It hasn&#039;t been part of the framework since the 0.8 release. A flow layout renders widgets just as a word processor renders text. Widgets are placed one after the other until there is no space left on the current line. If a widget doesn&#039;t fit into the remaining space of the line, a new line is created and the widget is placed at the beginning of the new line. The flow layout is based on the excellent community contribution by Chris Banford. See <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#layout~Flow.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#layout~Flow.html">demo</a> or <a href="http://attic.qooxdoo.org/documentation/0.8/layout/flow" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/layout/flow">docs</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="flash" id="flash">Flash</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Migrated the missing embed widget for <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.embed.Flash" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.embed.Flash">Flash</a> movies from the old qooxdoo 0.7.4 release. Along the way we improved support for the External Interface of Flash to allow for a two-way communication between ActionScript and JavaScript. See the Flash <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~Flash.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~Flash.html">demo</a>. Known issue: hiding and showing the widget reload the Flash movie <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2367" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2367">Bug 2367</a></div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="themediframe" id="themediframe">ThemedIframe</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> If possible qooxdoo renders its own scroll bars instead of the browser&#039;s native scroll bars. This allows us to style the scroll bars the way we want. One place where native scroll bars were still used was the Iframe widget. We now have an additional ThemedIframe class, which uses qooxdoo&#039;s themed scroll bars if possible. Due to security restrictions of the browser this is only possible if the iframe&#039;s source is served from the same domain as the main application.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="radiogroup" id="radiogroup">RadioGroup</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Added property <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.form.RadioGroup~allowEmptySelection[" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.form.RadioGroup~allowEmptySelection[">allowEmptySelection</a> to configure empty selections to be allowed or not.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="menu" id="menu">Menu</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Added feature to block the background if the menu is shown. This is interesting for context menus and can be activated with the <code><a href="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.menu.Menu~blockBackground" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/#qx.ui.menu.Menu~blockBackground">blockBackground</a></code> property.</div>
+</li>
+<li class="level1"><div class="li"> Menu widget now only opens if valid opener widget is configured</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="combobox_and_selectbox" id="combobox_and_selectbox">ComboBox and SelectBox</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Improved the pop-up list of both widgets. In some use cases it could happen that the pop-up list wasn&#039;t in sync with the selected value.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with &#039;@&#039; and &#039;€&#039; characters in ComboBox widget</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="spinner" id="spinner">Spinner</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> qx.ui.form.Spinner: Now updates its textfield if the application locale changes. This affects the display (e.g. the decimal separator which might change across languages) as well as the input filter.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="datefield" id="datefield">DateField</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Changed default date format from &#039;short&#039; to &#039;medium&#039; for the DateField widget </div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="resizable_widgets" id="resizable_widgets">Resizable Widgets</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/">MResizable</a> mixin has been enhanced to allow for setting the resizability of each edge separately. This affects for example the window widget.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="table" id="table">Table</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Table pane now supports the <code>paneReloadsData</code> event</div>
+</li>
+<li class="level1"><div class="li"> The table model now offers a new event <code>sorted</code> to signal sorting changed</div>
+</li>
+<li class="level1"><div class="li"> Improved performance of remote table model by allowing only a single pending request for row count at the same time</div>
+</li>
+<li class="level1"><div class="li"> Automatic selection of table rows by the keyboard can now be turned off - see new property <code>rowFocusChangeModifiesSelection</code></div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="tabview" id="tabview">TabView</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> TabView buttons can now have a close button (<a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~TabView.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~TabView.html">Demo</a>). Also improved the look of the tab view when using small icons, and also enabled centered text.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="splitpane" id="splitpane">SplitPane</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> It reacts quicker in Opera and shows the correct cursor in some edge cases. It also has a new property indicating at which distance the resize cursor should be shown.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="list" id="list">List</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The List widget no longer blocks default keys. This was really annoying, since one could not use browser shortcuts (e.g. open a new tab) when a List widget was focused.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a name="misc1" id="misc1">Misc</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> TextArea now supports maxLength.</div>
+</li>
+<li class="level1"><div class="li"> Fixed property &quot;selectable&quot; on Label.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="virtual_widgets" id="virtual_widgets">Virtual Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> TreeVirtual: When a node is added to a tree, two icons <em>can</em> be provided: one for when the node is not selected, and one for when it is selected. In this case the icon must be refreshed when the row is selected. For that to happen you now have to set the <code>alwaysUpdateCells</code> property to true. Unlike the previous releases the default value of <code>alwaysUpdateCells</code> was left at Table&#039;s default of false. Please note: When setting this property to true you incur a failure of double click events in <acronym title="Internet Explorer">IE</acronym> and also of immediate selection of a row upon right-click (and sometimes left-click too). <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=605" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=605">Bug 605</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="theming" id="theming">Theming</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="hboxvbox_decorators" id="hboxvbox_decorators">HBox/VBox Decorators</a></h5>
+<div class="level5">
+<pre class="code"> 
+* Since version 0.8 of qooxdoo we have the Grid decorator. The Grid decorator can be used to set an image background in a way that scales the inner parts but leaves the border images intact. The grid is very powerful but in some cases it might not be necessary to resize the widget in both dimension. For the special case that a widget is only stretched in one dimension we have added the HBox and VBox decorators. They use three images and only scale the middle image. In comparison to the Grid decorator, the HBox/VBox decorators require 6 DOM elements less.</pre>
+
+</div>
+
+<h5><a name="misc2" id="misc2">Misc</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> The decorators &quot;Uniform&quot;, &quot;Single&quot;, &quot;Double&quot; and &quot;Beveled&quot; now also support to set the background image position.</div>
+</li>
+<li class="level1"><div class="li"> <code>include</code> now no longer fails on key collisions by quietly ignoring them (the original theme wins)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="form_handling" id="form_handling">Form handling</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Many bugfixes and improvements.</div>
+</li>
+<li class="level1"><div class="li"> A buddy property has been introduced for the label. With such a buddy, you can connect a label to a form item, e.g. to properly set the focus when clicking on the associated label. Give it a try in the <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#showcase~Form.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#showcase~Form.html">form showcase</a>.</div>
+</li>
+<li class="level1"><div class="li"> All text input fields do now have a <code>liveUpdate property</code>, which configures if the <code>changeValue</code> event should be fired on every keystroke or only when focus is lost and returns.</div>
+</li>
+<li class="level1"><div class="li"> A <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#showcase~Form.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#showcase~Form.html">placeholder</a>, also known as &quot;ghost&quot;, has been introduced for text inputs.</div>
+</li>
+<li class="level1"><div class="li"> Additionally, a filter for input fields has been introduced.</div>
+</li>
+<li class="level1"><div class="li"> We have normalized the <acronym title="Application Programming Interface">API</acronym> for all <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#widgets" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#widgets">form widgets</a>. That included adding <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#widgets" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#widgets">interfaces</a> for all necessary purposes. </div>
+</li>
+<li class="level1"><div class="li"> With that refactoring of the widgets <acronym title="Application Programming Interface">API</acronym>, we introduced invalid states for all widgets. These states will be <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormInvalids.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormInvalids.html">displayed as a red broder</a> in most cases.</div>
+</li>
+<li class="level1"><div class="li"> Additionally, the <code>qx.ui.basic.Label</code> has been included in the <acronym title="Application Programming Interface">API</acronym> change so that is has the same <acronym title="Application Programming Interface">API</acronym> as a TextField for example.</div>
+</li>
+<li class="level1"><div class="li"> During those changes, we fixed a misbehavior in the <code>ComboBox</code> which always added the first item of the list in the textfield.</div>
+</li>
+<li class="level1"><div class="li"> The old name / value pairs on all form widgets has been deprecated.</div>
+</li>
+<li class="level1"><div class="li"> On top of that new states and refactored <acronym title="Application Programming Interface">API</acronym>, we built a <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#validation" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#validation">validation manager</a> named <code>qx.ui.form.validation.Manager</code> which can validate widgets <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormValidator.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormValidator.html">synchronously and asynchronously</a>. </div>
+</li>
+<li class="level1"><div class="li"> Another task of a form is <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#resetting" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2#resetting">resetting</a> the whole form which also has been added in a separate class called <code>qx.ui.form.Resetter</code>.</div>
+</li>
+<li class="level1"><div class="li"> On top of those two features, another layer has been added. This layer is responsible for the whole <a href="http://www.google.com/search?q=documentation%3A0.8%3Aui_form_handling2&amp;btnI=lucky#form_object" class="interwiki iw_go" title="http://www.google.com/search?q=documentation%3A0.8%3Aui_form_handling2&amp;btnI=lucky#form_object">form handling</a> and rendering. For that, we introduced a special renderer interface for forms and a set of default renderers. Take a look at the demos to see what renderers are included: <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRenderer.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRenderer.html">Single Column</a> <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererDouble.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererDouble.html">Double Column</a> <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererPlaceholder.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererPlaceholder.html">Single Column using placeholders</a> <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererCustom.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#ui~FormRendererCustom.html">Custom Renderer</a>.</div>
+</li>
+<li class="level1"><div class="li"> Another <a href="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~RadioButtonGroup.html" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/demobrowser/#widget~RadioButtonGroup.html">new widget</a> is <code>qx.ui.form.RadioButtonGroup</code> which can be added to the layout and takes the <code>RadioGroup</code> for the logical connection of the added <code>RadioButtons</code>.</div>
+</li>
+<li class="level1"><div class="li"> Take a look at the <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aui_form_handling2">new form handling wiki documentation</a> to get more details on the whole form handling.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "GUI Toolkit" [3679-15515] -->
+<h2 class="sectionedit6"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="inspector" id="inspector">Inspector</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Done some bug fixes, specially issues with the property window. Also took care of lint issues and potential memory leaks.</div>
+</li>
+<li class="level1"><div class="li"> The Inspector&#039;s widget window can display either the <em>public</em> children hierarchy or the full <em>internal</em> hierarchy, which includes sub controls implicitly created by those widgets.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="demobrowser" id="demobrowser">Demobrowser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The Demo Browser shows the correct demo titles again.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="playground" id="playground">Playground</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The code behind the editor, i.e. the excellent CodeMirror project, was updated to the latest snapshot, which should include many bugfixes for various browsers. </div>
+</li>
+<li class="level1"><div class="li"> The playground saves the user entered code as a hash in the <acronym title="Uniform Resource Identifier">URI</acronym>, which has some nice benefits: You can link to examples in the playground, and you won&#039;t loose your code on application reload.</div>
+</li>
+<li class="level1"><div class="li"> The entire playground app can now be debugged with the Inspector, i.e. you can now also examine the results of your code snippets entered into the playground editor, e.g. inspecting a widget by mouse or displaying its widget hierarchy.</div>
+</li>
+<li class="level1"><div class="li"> To prevent unintended code loss the switch between samples must now be confirmed.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="feedreader" id="feedreader">Feedreader</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The feedreader is now also available in Dutch (thanks to Isaak Malik for providing the translation).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="test_runner" id="test_runner">Test Runner</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The selected tree node is now saved in a cookie and reselected when the testrunner is being reloaded. The width of the testrunner&#039;s panes is saved as well and restored on reload.</div>
+</li>
+<li class="level1"><div class="li"> Stack trace information in the test results can now be toggled on/off.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Applications" [15516-17073] -->
+<h2 class="sectionedit7"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+<p>
+The qooxdoo tool chain saw a lot of bugfixes, refactoring and refinement.
+</p>
+
+</div>
+
+<h4><a name="generation" id="generation">Generation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Allow configuration of system wide cache dir; implemented single-file cache locking so no two concurrent generator runs can access the same cache item simultaneously. </div>
+</li>
+<li class="level1"><div class="li"> Allowed lib scan results to be cached to disk (previously: only memory), allowing to take advantage of unchanged libs across generator invocations. while this won&#039;t make a difference when building Demobrowser, it should make one during development life-cycle and re-compilation of a certain application, especially on platforms where disk scans are expensive.</div>
+</li>
+<li class="level1"><div class="li"> Variant calculation now takes advantage of the file caching strategy.</div>
+</li>
+<li class="level1"><div class="li"> Cross-Drive Setups on Windows has been addressed. Now it is possible to distribute your qooxdoo setup across local Windows drives. For example, you can unpack a qooxdoo <acronym title="Software Development Kit">SDK</acronym> on one drive and create and work with an application on another.</div>
+</li>
+<li class="level1"><div class="li"> Unicode support was improved, particularly for application namespaces.</div>
+</li>
+<li class="level1"><div class="li"> Analysis work and code improvements were done for resolving dependencies within qooxdoo classes. This area needs further work to address some problematic cases, e.g. static, stateful classes.</div>
+</li>
+<li class="level1"><div class="li"> Fixed a few issues of correctly url-encoding certain parts of an uri.</div>
+</li>
+<li class="level1"><div class="li"> Add support for dumping dependency information as native Json, or as Dot or Flare dependency graph format. See &quot;log/dependencies&quot; config syntax.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="configuration" id="configuration">Configuration</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Unified &quot;debug&quot; subkeys under the &quot;log&quot; key, so we have a single point of config for all reporting features; the &quot;log&quot; key is now interpreted both declaratively (adding aspects to other actions like compilation) and imperatively (triggering the execution of dedicated actions). The &quot;log&quot; key might evolve into the single interface for a rich set of logging, tracing and reporting features.</div>
+</li>
+<li class="level1"><div class="li"> changed format of the &quot;combine-images&quot; config key, to take more information than before; this way, the generated .meta files now only contain &quot;image Id&#039;s&quot;, through providing &quot;prefix&quot; attributes with the involved paths which are then stripped for the .meta file; as a consequence, the format of the .meta files changed too.</div>
+</li>
+<li class="level1"><div class="li"> The &#039;resource&#039; key in decoration and icon themes was too limited. It was only possible to set exactly one resource directory. It has been replaced by the new &#039;alias&#039; key, which expects a map as value. The map keys are the alias names and the values the corresponding resource directories.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="optimization" id="optimization">Optimization</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Private optimization is now reliable accross multiple runs (i.e. classes).</div>
+</li>
+<li class="level1"><div class="li">  fixed bug in variable optimizer where names that were declared (&#039;var&#039; or param) but never used could be captured.</div>
+</li>
+<li class="level1"><div class="li"> major re-write of the way the leading variable is detected in a dotted chain of identifiers (like foo in &quot;foo.bar.baz&quot;); this also affects the compiler (variableoptimizer).</div>
+</li>
+<li class="level1"><div class="li"> Handling of parts has been reworked, particularly the collapsing of packages in a part. Modularizing a large app into so-called parts is an experimental feature targeted for a future release. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="code_validation" id="code_validation">Code Validation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> major revamp of the ecmalint checks for privates, protected and implicit members, to allow fine-tuning of respective check scope; e.g. privates are now checked in all occurrences, both rvals and lvals, not only lvals as before.</div>
+</li>
+<li class="level1"><div class="li"> made checking for multiply defined vars optional (action &quot;multidefined_variables&quot;), i.e. you have to explicitly specify it if you want it.</div>
+</li>
+<li class="level1"><div class="li"> Now most of the framework code (i.e. excluding legacy, tests, application) is validated and basically ecmalint-compliant.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="contributions" id="contributions">Contributions</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> It is now quite easy to setup a typical project for qooxdoo-contrib. The create-application.py script can now also generate a so-called &quot;contribution&quot; skeleton. This skeleton is pre-configured and adopted to the qooxdoo-contrib infrastructure.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Tooling" [17074-20970] -->
+<h2 class="sectionedit8"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> There should be full <acronym title="Application Programming Interface">API</acronym> coverage (except for the experimental qx.ui.virtual). Thanks to an excellent contribution by Nick Glencross, many misspelled <acronym title="Application Programming Interface">API</acronym> docs, some inline comments and a few error messages were corrected.</div>
+</li>
+<li class="level1"><div class="li"> As a reminder see the searchable <a href="http://demo.qooxdoo.org/0.8.3/apiviewer/" class="urlextern" title="http://demo.qooxdoo.org/0.8.3/apiviewer/">API viewer</a>, which is also prebuilt into the <acronym title="Software Development Kit">SDK</acronym>, so it runs out-of-the-box without installation.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Documentation" [20971-21407] -->
+<h2 class="sectionedit9"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Since the 0.8.3 had the focus on consolidating and stabilizing much of the framework&#039;s <acronym title="Application Programming Interface">API</acronym>, you should expect quite a number of deprecation warnings in the console when running your &quot;source&quot; version of your app in 0.8.3. The &quot;build&quot; version however should to a large extend work as before, since the deprecated <acronym title="Application Programming Interface">API</acronym> is still supported. There are a few cases that could not properly be deprecated (e.g. some form or value handling). Just follow the deprecation warnings an replace the mentioned code constructs step-by-step.</div>
+</li>
+<li class="level1"><div class="li"> As mentioned we changed some implementations of value properties (return type for example) on form items. This as well as the consolidated selection <acronym title="Application Programming Interface">API</acronym> might be the areas that most of your manual migration work goes into.</div>
+</li>
+<li class="level1"><div class="li"> Configuration of parts (an advanced, experimental feature) has changed from 0.8.2 to 0.8.3. You&#039;d have to <a href="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#packages" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.8/generator_config_ref#packages">adjust</a> your config.json.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Migration" [21408-] --></div>
+</body>
+</html>

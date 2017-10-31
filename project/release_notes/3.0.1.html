@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:3.0.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2013-09-11T16:54:56+0200"/>
+<meta name="keywords" content="project,release_notes,3.0.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/3.0.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/3.0.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/3.0.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/3.0.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:3.0.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes_enhancements" class="toc">Bugfixes &amp; Enhancements</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#browser_support" class="toc">Browser Support</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#transport" class="toc">Transport</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxwebsite" class="toc">qx.Website</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxdesktop" class="toc">qx.Desktop</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#ui_core" class="toc">UI Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#form" class="toc">Form</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#widgets" class="toc">Widgets</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxmobile" class="toc">qx.Mobile</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#demobrowser" class="toc">Demobrowser</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#playground" class="toc">Playground</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_viewer" class="toc">API Viewer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#simulator" class="toc">Simulator</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#generation" class="toc">Generation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#optimization" class="toc">Optimization</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#known_issues" class="toc">Known Issues</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_301_2013-09-11" id="qooxdoo_301_2013-09-11">qooxdoo 3.0.1 (2013-09-11)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 3.0.1 (2013-09-11)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a <a href="http://qooxdoo.org/project/releases" class="urlextern" title="http://qooxdoo.org/project/releases">regular patch release</a>, which
+includes some important bug fixes over the previous
+release. It is fully backwards-compatible to
+<a href="http://qooxdoo.org/project/release_notes/3.0" class="urlextern" title="http://qooxdoo.org/project/release_notes/3.0">qooxdoo 3.0</a>. Nothing needs to
+be changed in the JavaScript code of your existing apps if they are based on the
+previous 3.0 release.
+</p>
+
+<p>
+Main reasons for this release were:
+</p>
+<ul>
+<li class="level1"><div class="li"> A regression in the knob positioning of the Slider widget.</div>
+</li>
+<li class="level1"><div class="li"> A regression in the dependency analysis of the Generator.</div>
+</li>
+<li class="level1"><div class="li"> Support for iOS 7.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-608] -->
+<h2 class="sectionedit3"><a name="bugfixes_enhancements" id="bugfixes_enhancements">Bugfixes &amp; Enhancements</a></h2>
+<div class="level2">
+
+<p>
+See the corresponding bugzilla query for the <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=3.0.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=3.0.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 3.0.1</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes & Enhancements" [609-974] -->
+<h2 class="sectionedit4"><a name="core" id="core">Core</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT4 SECTION "Core" [975-992] -->
+<h3 class="sectionedit5"><a name="browser_support" id="browser_support">Browser Support</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed request animation frame handling for newer Webkits including iOS7. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7691" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7691">7691</a>)</div>
+</li>
+<li class="level1"><div class="li"> Better history handling in IE8/9 when using iframes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194">6194</a>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Browser Support" [993-1185] -->
+<h3 class="sectionedit6"><a name="transport" id="transport">Transport</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Serialize request data as JSON if <code>setRequestHeader(&quot;Content-Type&quot;, &quot;application/json&quot;)</code> was called earlier (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7665" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7665">7665</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Transport" [1186-1338] -->
+<h2 class="sectionedit7"><a name="qxwebsite" id="qxwebsite">qx.Website</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <code>getNext()</code> and <code>getPrev()</code> return a collection now. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7609" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7609">7609</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "qx.Website" [1339-1441] -->
+<h2 class="sectionedit8"><a name="qxdesktop" id="qxdesktop">qx.Desktop</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT8 SECTION "qx.Desktop" [1442-1465] -->
+<h3 class="sectionedit9"><a name="ui_core" id="ui_core">UI Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed clipping of combined images. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7601" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7601">7601</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "UI Core" [1466-1541] -->
+<h3 class="sectionedit10"><a name="form" id="form">Form</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Group header of form double renderer is aligned left now.</div>
+</li>
+<li class="level1"><div class="li"> Prevent closing of popups when clicking on the scrollbar buttons of selectbox and combobox. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7655" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7655">7655</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed slider rendering in the Indigo (default) theme and the Simple theme. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7587" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7587">7587</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Form" [1542-1829] -->
+<h3 class="sectionedit11"><a name="widgets" id="widgets">Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed JavaScript/Flash communication (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7681" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7681">7681</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed dispose of the color popup when the color selector window has been opened.</div>
+</li>
+<li class="level1"><div class="li"> Fixed rendering of <acronym title="HyperText Markup Language">HTML</acronym> embed for IE9. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7679" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7679">7679</a>)</div>
+</li>
+<li class="level1"><div class="li"> Prevent the Desktop widget from growing if a window is moved beyond its edges. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4718" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4718">4718</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed relayouting of <code>qx.ui.tabview.TabButton</code> after icon reset (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5622" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5622">5622</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Widgets" [1830-2237] -->
+<h2 class="sectionedit12"><a name="qxmobile" id="qxmobile">qx.Mobile</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> On iOS 7 the page headers were partially covered by the browser&#039;s tab bar (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7717" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7717">7717</a>)</div>
+</li>
+<li class="level1"><div class="li"> Popup could not switch between anchor and non-anchor mode (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7621" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7621">7621</a>)</div>
+</li>
+<li class="level1"><div class="li"> Page transition &quot;Dissolve&quot; is now deprecated (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7540" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7540">7540</a>)</div>
+</li>
+<li class="level1"><div class="li"> Textarea did not allow for &quot;Return&quot; key (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7334" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7334">7334</a>)</div>
+</li>
+<li class="level1"><div class="li"> Textarea was not editable when placed into a popup (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7622" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7622">7622</a>)</div>
+</li>
+<li class="level1"><div class="li"> Buttons did not show ellipsis when dimension was very small (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7610" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7610">7610</a>)</div>
+</li>
+<li class="level1"><div class="li"> Improved rendering performance of Picker slots  (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7605" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7605">7605</a>)</div>
+</li>
+<li class="level1"><div class="li"> qx.Mobile form label was invisible sometimes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7590" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7590">7590</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "qx.Mobile" [2238-2834] -->
+<h2 class="sectionedit13"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT13 SECTION "Applications" [2835-2861] -->
+<h3 class="sectionedit14"><a name="demobrowser" id="demobrowser">Demobrowser</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed theme switch for Decorator demo.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Demobrowser" [2862-2928] -->
+<h3 class="sectionedit15"><a name="playground" id="playground">Playground</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed initial size of the desktop play area.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Playground" [2929-3001] -->
+<h3 class="sectionedit16"><a name="api_viewer" id="api_viewer">API Viewer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code>@see</code> links work in class comments now. </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT16 SECTION "API Viewer" [3002-3073] -->
+<h3 class="sectionedit17"><a name="simulator" id="simulator">Simulator</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Ensured compatibility with Selenium 2.34.0 (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7663" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7663">7663</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT17 SECTION "Simulator" [3074-3160] -->
+<h2 class="sectionedit18"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Path calculation mishandled capitalization under Windows (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7602" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7602">7602</a>).</div>
+</li>
+<li class="level1"><div class="li"> List available skeleton types when a wrong type has been given. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7628" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7628">7628</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "Tooling" [3161-3343] -->
+<h3 class="sectionedit19"><a name="generation" id="generation">Generation</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed regression in dependency analysis where references to local classes were not handled correctly (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7708" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7708">7708</a>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT19 SECTION "Generation" [3344-3488] -->
+<h3 class="sectionedit20"><a name="optimization" id="optimization">Optimization</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Some bug fixes in the variant optimizer, particularly in the code elimination: There was a method call on a wrong object (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7623" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7623">7623</a>), the computation of a constant division was rounding results to integers (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7604" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7604">7604</a>), and guard against using incompletely evaluated subexpressions (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7672" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7672">7672</a>).</div>
+</li>
+<li class="level1"><div class="li"> Protect from optimizing non-literal maps (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7486" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7486">7486</a>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT20 SECTION "Optimization" [3489-3883] -->
+<h2 class="sectionedit21"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Better support for one-liner JSDoc comments (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7648" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7648">7648</a>).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT21 SECTION "Documentation" [3884-3977] -->
+<h2 class="sectionedit22"><a name="known_issues" id="known_issues">Known Issues</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> The automatic resizing feature of <code>qx.ui.form.TextArea</code> doesn&#039;t work in <acronym title="Internet Explorer">IE</acronym> 8-10 (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7599" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7599">7599</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT22 SECTION "Known Issues" [3978-] --></div>
+</body>
+</html>

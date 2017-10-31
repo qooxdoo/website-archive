@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.4</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.6.4"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.4?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.4"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.4"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.4"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.4","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#demo" class="toc">Demo</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api" class="toc">API</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_064_2006-12-22" id="qooxdoo_064_2006-12-22">qooxdoo 0.6.4 (2006-12-22)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.4 (2006-12-22)" [1-42] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="additions" id="additions">Additions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="internationalization" id="internationalization">Internationalization</a></h5>
+<div class="level5">
+<ul>
+<li class="level1"><div class="li"> Internationalization (i18n) and Localization (l10n) are fully supported.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The entire framework is localized</div>
+</li>
+<li class="level1"><div class="li"> Applications support runtime switching of languages</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Internal use of the well-known and mature gettext tools</div>
+</li>
+<li class="level1"><div class="li"> Introduction of new top-level namespace qx.locale, which contains all data files required for internationalization of the framework</div>
+</li>
+<li class="level1"><div class="li"> Convenient translation methods in <code>qx.core.Object</code> (<code>tr()</code>, <code>trn()</code>, <code>marktr()</code>)</div>
+</li>
+<li class="level1"><div class="li"> Localization of</div>
+<ol>
+<li class="level2"><div class="li"> Command</div>
+</li>
+<li class="level2"><div class="li"> DateFormat</div>
+</li>
+<li class="level2"><div class="li"> NumberFormat</div>
+</li>
+<li class="level2"><div class="li"> DateChooser</div>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>DateChooser</code>: The DateChooser no longer support the property <code>startOfWeek</code>. The information which day the week starts with is now determined by the used locale.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>NumberFormat</code>: The static field <code>GROUPING_SEPARATOR</code> has been removed. Use the localized <code>qx.locale.Number.getGroupSeperator</code> instead.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>DateFormat</code>: The static fields of <code>DateFormat</code> contained the values for US English locales (&quot;en_US&quot;) the have been removed in favor of the localized methods of <code>qx.locale.Date</code>. The following list shows which fields have been removed by which methods:</div>
+</li>
+<li class="level1"><div class="li"> SHORT_DATE_FORMAT = qx.locale.Date.getDateFormat(&quot;short&quot;)</div>
+</li>
+<li class="level1"><div class="li"> SHORT_DATE_FORMAT = qx.locale.Date.getDateFormat(&quot;short&quot;);</div>
+</li>
+<li class="level1"><div class="li"> MEDIUM_DATE_FORMAT = qx.locale.Date.getDateFormat(&quot;medium&quot;);</div>
+</li>
+<li class="level1"><div class="li"> LONG_DATE_FORMAT = qx.locale.Date.getDateFormat(&quot;long&quot;);</div>
+</li>
+<li class="level1"><div class="li"> FULL_DATE_FORMAT = qx.locale.Date.getDateFormat(&quot;full&quot;);</div>
+</li>
+<li class="level1"><div class="li"> SHORT_TIME_FORMAT = qx.locale.Date.getDateTimeFormat(&quot;HHmm&quot;, &quot;HH:mm&quot;);</div>
+</li>
+<li class="level1"><div class="li"> MEDIUM_TIME_FORMAT = qx.util.format.DateFormat.SHORT_TIME_FORMAT;</div>
+</li>
+<li class="level1"><div class="li"> LONG_TIME_FORMAT = qx.locale.Date.getDateTimeFormat(&quot;HHmmss&quot;, &quot;HH:mm:ss&quot;);</div>
+</li>
+<li class="level1"><div class="li"> FULL_TIME_FORMAT = qx.locale.Date.getDateTimeFormat(&quot;HHmmsszz&quot;, &quot;HH:mm:ss zz&quot;);</div>
+</li>
+<li class="level1"><div class="li"> SHORT_DATE_TIME_FORMAT = SHORT_DATE_FORMAT + &quot; &quot; + SHORT_TIME_FORMAT;</div>
+</li>
+<li class="level1"><div class="li"> MEDIUM_DATE_TIME_FORMAT = MEDIUM_DATE_FORMAT + &quot; &quot; + MEDIUM_TIME_FORMAT;</div>
+</li>
+<li class="level1"><div class="li"> LONG_DATE_TIME_FORMAT =LONG_DATE_FORMAT + &quot; &quot; + LONG_TIME_FORMAT;</div>
+</li>
+<li class="level1"><div class="li"> FULL_DATE_TIME_FORMAT = FULL_DATE_FORMAT + &quot; &quot; + FULL_TIME_FORMAT;</div>
+</li>
+<li class="level1"><div class="li"> FULL_MONTH_NAMES = qx.locale.Date.getMonthNames(&quot;wide&quot;);</div>
+</li>
+<li class="level1"><div class="li"> SHORT_MONTH_NAMES = qx.locale.Date.getMonthNames(&quot;abbreviated&quot;);</div>
+</li>
+<li class="level1"><div class="li"> SHORT_DAY_OF_WEEK_NAMES = qx.locale.Date.getDayNames(&quot;narrow&quot;);</div>
+</li>
+<li class="level1"><div class="li"> MEDIUM_DAY_OF_WEEK_NAMES = qx.locale.Date.getDayNames(&quot;abbreviated&quot;);</div>
+</li>
+<li class="level1"><div class="li"> FULL_DAY_OF_WEEK_NAMES = qx.locale.Date.getDayNames(&quot;wide&quot;);</div>
+</li>
+</ul>
+
+<p>
+ * New dependeny declaration for static resources like icons to allow for size-optimized builds with less redundancy (use meta information #embed in class files)
+</p>
+
+</div>
+
+<h4><a name="changes" id="changes">Changes</a></h4>
+<div class="level4">
+
+<p>
+ - Many isValidFoo() checks have been replaced with inequality comparisons against null
+</p>
+
+</div>
+
+<h4><a name="fixes" id="fixes">Fixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Several improvements for Table</div>
+</li>
+<li class="level1"><div class="li"> Spinner handles acceleration correctly now</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [43-2862] -->
+<h3 class="sectionedit3"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The build system, in particular the organization and features of all the Makefiles, has been significantly improved.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> The realclean target for make has been removed. The remaining clean-up targets are <code>clean</code> and <code>distclean</code>. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> </div>
+</li>
+</ul>
+
+<p>
+Old: <code><acronym title="Application Programming Interface">API</acronym> = $(FRONTEND)/api</code><br/>
+
+New: <code><acronym title="Application Programming Interface">API</acronym> = $(FRONTEND)/application/apiviewer</code>
+</p>
+
+<p>
+Old: <code>--compiled-script-file api/script/api.js</code><br/>
+
+New: <code>--compiled-script-file api/script/apiviewer.js</code>
+</p>
+
+<p>
+Old: <code>--api-documentation-json-file api/script/data.js</code><br/>
+
+New: <code>--api-documentation-json-file api/script/apidata.js</code>
+</p>
+
+<p>
+The following options to the build script generator.py have been renamed to be more consistent:
+</p>
+
+<p>
+Old: <code>--script-input</code><br/>
+
+New: <code>--class-path</code>
+</p>
+
+<p>
+Old: <code>--source-script-path</code><br/>
+
+New: <code>--class-uri</code>
+</p>
+
+<p>
+Old: <code>--script-encoding</code><br/>
+
+New: <code>--class-encoding</code>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Tools" [2863-3735] -->
+<h3 class="sectionedit4"><a name="demo" id="demo">Demo</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Feedreader: A new full-blown application has been added as a showcase for some of qooxdoo&#039;s most compelling features (i18n, layouting, etc.).</div>
+</li>
+<li class="level1"><div class="li"> The new Feedreader example as well as the two previous examples Showcase and Webmail are now based on skeletons</div>
+</li>
+<li class="level1"><div class="li"> The Showcase example now includes a tab Localization to demonstrate support for the following locales: de_DE, de_AT,  </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Demo" [3736-4137] -->
+<h3 class="sectionedit5"><a name="api" id="api">API</a></h3>
+<div class="level3">
+
+<p>
+ - A lot of <acronym title="Application Programming Interface">API</acronym> documentation has been added or reviewed.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "API" [4138-] --></div>
+</body>
+</html>

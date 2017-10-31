@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8-alpha2</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T11:49:02+0200"/>
+<meta name="keywords" content="project,release_notes,0.8-alpha2"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8-alpha2?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8-alpha2"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8-alpha2"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8-alpha2"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8-alpha2","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#events" class="toc">Events</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#communication" class="toc">Communication</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#bomdom" class="toc">BOM/DOM</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#new_features" class="toc">New Features</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#improved_features" class="toc">Improved Features</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_improvements" class="toc">API Improvements</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#fixes" class="toc">Fixes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#todo" class="toc">Todo</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_08-alpha2_2008-07-11" id="qooxdoo_08-alpha2_2008-07-11">qooxdoo 0.8-alpha2 (2008-07-11)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8-alpha2 (2008-07-11)" [1-47] -->
+<h2 class="sectionedit2"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT2 SECTION "Framework" [48-70] -->
+<h3 class="sectionedit3"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code>qx.Class.patch</code> preserves references to overwritten methods</div>
+</li>
+<li class="level1"><div class="li"> Abstract classes should not be required to implement all interface methods</div>
+</li>
+<li class="level1"><div class="li"> The mixin <code>MUserData</code> which adds <code>setUserData</code>/<code>getUserData</code> was merged into <code>qx.core.Object</code> for better performance of the core object class.</div>
+</li>
+<li class="level1"><div class="li"> Fix in Property class: allow &quot;deferredInit&quot; to init complex types</div>
+</li>
+<li class="level1"><div class="li"> For improved performance the property values are not validated in non-debug builds anymore. It is suggested to test applications intensively using debugging enabled, though  </div>
+</li>
+<li class="level1"><div class="li"> Use assertion for property checks. This gives us much better error messages and a stack trace.</div>
+</li>
+<li class="level1"><div class="li"> Adobe AIR is now correctly detected by the client detection.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Core" [71-802] -->
+<h3 class="sectionedit4"><a name="events" id="events">Events</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Optimized event dispatch significantly</div>
+</li>
+<li class="level1"><div class="li"> Let <code>fireEvent</code> return <code>false</code> if <code>preventDefault</code> was called on the event object</div>
+</li>
+<li class="level1"><div class="li"> <code>fireDataEvent</code> is now non-bubbling</div>
+</li>
+<li class="level1"><div class="li"> Improve error messages thrown by Object&#039;s <code>addListener</code>/<code>removeListener</code></div>
+</li>
+<li class="level1"><div class="li"> Added <code>getChar</code> to KeyInput events</div>
+</li>
+<li class="level1"><div class="li"> &quot;load&quot; and &quot;input&quot; events now not processed by the UI EventHandler anymore. These are custom implementations for every widget (mainly because  every widget can support these events)</div>
+</li>
+<li class="level1"><div class="li"> <code>Change</code> and <code>Data</code> events were merged to <a href="http://demo.qooxdoo.org/0.8/apiviewer/#qx.event.type.Data" class="urlextern" title="http://demo.qooxdoo.org/0.8/apiviewer/#qx.event.type.Data">Data event</a>. These were often used exchangeable but had complicated this because of different interfaces (<code>getValue</code> vs. <code>getData</code>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Events" [803-1556] -->
+<h3 class="sectionedit5"><a name="communication" id="communication">Communication</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Some fixes to the transport layer: <code>serverData</code> property declaration fixed. Windows error code 12007 handled appropriately</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.util.Json.parse</code> is now working.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Communication" [1557-1754] -->
+<h3 class="sectionedit6"><a name="bomdom" id="bomdom">BOM/DOM</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added <code>get</code> method in bom/element/Class class to retrieve classname property</div>
+</li>
+<li class="level1"><div class="li"> Added <code>getElementIndex</code> method to Hierarchy class</div>
+</li>
+<li class="level1"><div class="li"> Fix <acronym title="Uniform Resource Locator">URL</acronym> to the helper html file in the history manager.</div>
+</li>
+<li class="level1"><div class="li"> The focus APIs of qx.html.Element were improved to allow better access to some information only the element itself can give (<code>isNativelyFocusable</code>, <code>isFocusable</code>, <code>getNodeName</code>, …)</div>
+</li>
+<li class="level1"><div class="li"> Fixed event listeners in Iframe.js</div>
+</li>
+<li class="level1"><div class="li"> Make use of deprecation infrastructure from 0.7</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "BOM/DOM" [1755-2259] -->
+<h2 class="sectionedit7"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT7 SECTION "GUI Toolkit" [2260-2285] -->
+<h3 class="sectionedit8"><a name="new_features" id="new_features">New Features</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added support for embedding canvas tags into qooxdoo <acronym title="Graphical User Interface">GUI</acronym> applications.</div>
+</li>
+<li class="level1"><div class="li"> TabView scrolls TabButtons</div>
+</li>
+<li class="level1"><div class="li"> Introduced sub-control handling</div>
+</li>
+<li class="level1"><div class="li"> Introduced state inheritance support </div>
+</li>
+<li class="level1"><div class="li"> Implement <code>addChild</code> and <code>removeChild</code> events</div>
+</li>
+<li class="level1"><div class="li"> Added support for global cursors (used for resizing or drag arrows etc.) (no support for <acronym title="Internet Explorer">IE</acronym> available)</div>
+</li>
+<li class="level1"><div class="li"> Ported the completely rewritten and improved SplitPane widget to 0.8.</div>
+</li>
+<li class="level1"><div class="li"> The improved TabView widget is now ported to 0.8.</div>
+</li>
+<li class="level1"><div class="li"> Polished SelectBox and ComboBox widgets are now available in 0.8.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "New Features" [2286-2856] -->
+<h3 class="sectionedit9"><a name="improved_features" id="improved_features">Improved Features</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Major improvement for appearance caching. The new solution is heavily based on bit-masks and boosts performance for cache access tremendously.</div>
+</li>
+<li class="level1"><div class="li"> Implement remote padding and font style handling</div>
+</li>
+<li class="level1"><div class="li"> More polished themes <code>Classic</code> and <code>Modern</code></div>
+</li>
+<li class="level1"><div class="li"> Atoms now support shrinking and show an ellipsis sign in their Labels when not enough room is available.</div>
+</li>
+<li class="level1"><div class="li"> I18N: Reintroduced optional runtime switching of locales. <code>LocalizedString</code> is now sub class of <code>String</code></div>
+</li>
+<li class="level1"><div class="li"> Support for <code>tabFocus</code> was added. This means that on focusing a widget using the <code>Tab</code> key something else may happen than when using the mouse. This is mainly used by Spinners etc. to move the caret into the textfield when pressing <code>Tab</code>.</div>
+</li>
+<li class="level1"><div class="li"> Hopefully the &quot;final&quot; implementation for the scrolling system is now included. It correctly handles issues like scroll positions which got forgotten when toggling visibility of widgets. Also possible now is to scroll or to scrollIntoView at every moment of application runtime.</div>
+</li>
+<li class="level1"><div class="li"> The SlideBar widget was improved. First steps were made to support different orientations (as used by the TabView).</div>
+</li>
+<li class="level1"><div class="li"> SelectionHandling now supports a new method replaceSelection to easily switch to another selection (available in Lists, Trees, …)</div>
+</li>
+<li class="level1"><div class="li"> TabView now supports all directions for positioning the SlideBar.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Improved Features" [2857-4218] -->
+<h3 class="sectionedit10"><a name="api_improvements" id="api_improvements">API Improvements</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Removed runtime switching of themes after discussion, as this showed to have significant technical impact </div>
+</li>
+<li class="level1"><div class="li"> Made Tree <acronym title="Application Programming Interface">API</acronym> more consistent</div>
+</li>
+<li class="level1"><div class="li"> The Spinner widget now enforces the configured limits when checking the value property. New <code>gotoValue</code> method to automatically move value into allowed range.</div>
+</li>
+<li class="level1"><div class="li"> Window got more love: Moved <code>zIndex</code> code from window into the window manager. Lazily create statusBar. Support <code>maximize</code>, <code>minimize</code>, and <code>close</code> events. Grid layout used for captionbar. Support for modal windows is still missing.</div>
+</li>
+<li class="level1"><div class="li"> RadioManager was renamed to RadioGroup</div>
+</li>
+<li class="level1"><div class="li"> Interfaces were created for form elements and radio items. All form elements already implement these.</div>
+</li>
+<li class="level1"><div class="li"> SelectBox and ComboBox now fire correct <code>changeSelected</code> respectively <code>changeValue</code> events.</div>
+</li>
+<li class="level1"><div class="li"> <code>RadioGroupBox</code> now behaves like a regular <code>RadioButton</code> (same interface)</div>
+</li>
+<li class="level1"><div class="li"> The <code>align</code> property of the Atom has finally renamed back to <code>iconPosition</code> to not interfere with the already existing <code>alignX</code> and <code>alignY</code> properties used by the layout managers.</div>
+</li>
+<li class="level1"><div class="li"> Optional layout options for the Toolbar&#039;s <code>add</code> method.</div>
+</li>
+<li class="level1"><div class="li"> ComboBox: Removed &quot;editable&quot; property. Use SelectBox for a non-editable and ComboBox for an editable widget.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "API Improvements" [4219-5501] -->
+<h3 class="sectionedit11"><a name="fixes" id="fixes">Fixes</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Several fixes for <acronym title="Internet Explorer">IE</acronym> under HTTPS to get rid of &quot;insecure elements&quot; warnings</div>
+</li>
+<li class="level1"><div class="li"> Fixed <acronym title="Internet Explorer">IE</acronym> rendering issues and failing <acronym title="Internet Explorer">IE</acronym> unit tests.</div>
+</li>
+<li class="level1"><div class="li"> Added support for loading external images → now handled by the ImageLoader</div>
+</li>
+<li class="level1"><div class="li"> Bug fixes and improvements for almost all widgets. Particularly resolved issues for Spinner, Image, Button, …</div>
+</li>
+<li class="level1"><div class="li"> Fixed switching between text and icon multiple times in Atom</div>
+</li>
+<li class="level1"><div class="li"> Fixed Grid layout bug, as an incorrect <code>minSize</code> was calculated </div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance queue issues for dynamically created widgets through the appearance system itself which often received the wrong appearance.  </div>
+</li>
+<li class="level1"><div class="li"> Remove Decorator queue. There is no longer a connection between widget and decorator</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Fixes" [5502-6228] -->
+<h3 class="sectionedit12"><a name="todo" id="todo">Todo</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Porting the following widgets has not been started: Menu, Table</div>
+</li>
+<li class="level1"><div class="li"> Complex combined controls like ColorPickers, Datepickers etc. are still missing</div>
+</li>
+<li class="level1"><div class="li"> FocusRoot support still missing</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Todo" [6229-6434] -->
+<h2 class="sectionedit13"><a name="tools" id="tools">Tools</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fix problems reported by <code>make lint</code> added new check to ecmalint: check if all loops statements are followed by a block</div>
+</li>
+<li class="level1"><div class="li"> Fixed Profiler, which only reported static methods</div>
+</li>
+<li class="level1"><div class="li"> Like GWT qooxdoo&#039;s string optimizer now uses scope global variables instead of an array. This makes the lookup of strings a lot faster in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> The variable optimizer now takes care of reserved words and do not overwrite these in local variables anymore.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Reworked structure of &#039;tool&#039; folder</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Changed command line interface of new generator: <code>-c</code> is optional (defaults to <code>config.json</code>) and <code>-j</code> is removed, the jobs being specified as arguments.</div>
+</li>
+<li class="level1"><div class="li"> Implemented helper targets <code>pretty</code>, <code>clean</code>, <code>distclean</code>, <code>publish</code>, <code>lint</code>, <code>migration</code>, <code>fix</code> in new generator.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Standard applications Apiviewer, Demobrowser, Feedreader, Portal, Showcase, Skeleton, Testrunner and Website use the new generator for their main build targets (<code>source</code>, <code>build</code> and <code>api</code>).</div>
+</li>
+<li class="level1"><div class="li"> Minimized application-level config.json files for Feedreader, Skeleton, due to better support in generic application.json.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Config files: New top-level include syntax and semantics. <code>include</code> entries are maps now. Namespace-less includes of external config files. Config files can still be imported under a name space prefix with the optional <code>as</code> key. List of jobs to import can be specified with the optional <code>import</code> key.</div>
+</li>
+<li class="level1"><div class="li"> Config files: <code>export</code> list, to narrow the list of jobs to be exported on include.</div>
+</li>
+<li class="level1"><div class="li"> Config files: Top-level <code>let</code> section which will be automatically added to each job.</div>
+</li>
+<li class="level1"><div class="li"> Config files: Triggers <code>compile-dist</code> and <code>copy-resources</code> don&#039;t rely on each other anymore and can be invoked independently for <code>build</code> jobs.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixes in parsing of regexps and arithmetic expressions.</div>
+</li>
+<li class="level1"><div class="li"> Better support for native Win32 Python.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Tools" [6435-8315] -->
+<h2 class="sectionedit14"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Added portal application</div>
+</li>
+<li class="level1"><div class="li"> Many bugfixes for the demo section, e.g. Safari compatibility</div>
+</li>
+<li class="level1"><div class="li"> TestRunner runs again in IE7. Also missing icons were added.</div>
+</li>
+<li class="level1"><div class="li"> Added <a href="http://demo.qooxdoo.org/0.8/demobrowser/index.html#animation" class="urlextern" title="http://demo.qooxdoo.org/0.8/demobrowser/index.html#animation">three new animation demos</a> to demobrowser.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Applications" [8316-8619] -->
+<h2 class="sectionedit15"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> A lot of <acronym title="Application Programming Interface">API</acronym> documentation improvements</div>
+</li>
+<li class="level1"><div class="li"> Complete/Fix documentation of qx.core</div>
+</li>
+<li class="level1"><div class="li"> Major additions to the <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.8%3Aui_overview" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.8%3Aui_overview">GUI Development article</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Documentation" [8620-] --></div>
+</body>
+</html>

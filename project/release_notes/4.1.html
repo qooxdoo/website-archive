@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:4.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2014-12-16T11:20:09+0100"/>
+<meta name="keywords" content="project,release_notes,4.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/4.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/4.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/4.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/4.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:4.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes" class="toc">Bugfixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#sections" class="toc">Sections</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#appapiviewerwebsite" class="toc">app.apiviewer.website</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#appmobileshowcase" class="toc">app.mobileshowcase</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#appplayground" class="toc">app.playground</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#appshowcasedesktop" class="toc">app.showcase.desktop</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#apptodo" class="toc">app.todo</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#apptutorial" class="toc">app.tutorial</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#appwidgetbrowserwebsite" class="toc">app.widgetbrowser.website</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#coredatabinding" class="toc">core.databinding</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#coredev" class="toc">core.dev</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#coreevent" class="toc">core.event</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#coreio" class="toc">core.io</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#corelang" class="toc">core.lang</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktop" class="toc">desktop</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktopcore" class="toc">desktop.core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktopform" class="toc">desktop.form</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktophtml" class="toc">desktop.html</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoplayout" class="toc">desktop.layout</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoplist" class="toc">desktop.list</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoptable" class="toc">desktop.table</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktoptheming" class="toc">desktop.theming</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#desktopvirtual" class="toc">desktop.virtual</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#documentationmanual" class="toc">documentation.manual</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobile" class="toc">mobile</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobilecore" class="toc">mobile.core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobiletheming" class="toc">mobile.theming</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#mobilewidget" class="toc">mobile.widget</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#other" class="toc">other</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tool" class="toc">tool</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#toolgrunt" class="toc">tool.grunt</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tooltestautomation" class="toc">tool.test.automation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#website" class="toc">website</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#websitebom" class="toc">website.bom</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#websitemodules" class="toc">website.modules</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#websitewidgets" class="toc">website.widgets</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_41_2014-12-16" id="qooxdoo_41_2014-12-16">qooxdoo 4.1 (2014-12-16)</a></h1>
+<div class="level1">
+
+<p>
+This <a href="http://qooxdoo.org/project/releases" class="urlextern" title="http://qooxdoo.org/project/releases">regular release</a> comes with  new features as well as a large number of bugfixes.
+</p>
+
+<p>
+Also checkout the <strong><a href="http://news.qooxdoo.org/qooxdoo-4-1-released" class="urlextern" title="http://news.qooxdoo.org/qooxdoo-4-1-released">release announcement</a></strong> in the blog.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 4.1 (2014-12-16)" [1-274] -->
+<h2 class="sectionedit2"><a name="bugfixes" id="bugfixes">Bugfixes</a></h2>
+<div class="level2">
+
+<p>
+See the corresponding bugzilla query for the <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=4.0.2&amp;target_milestone=4.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=4.0.2&amp;target_milestone=4.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 4.1</a>.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Bugfixes" [275-644] -->
+<h2 class="sectionedit3"><a name="sections" id="sections">Sections</a></h2>
+<div class="level2">
+
+<p>
+To quickly jump to a certain section use the following links (or browse the alphabetical sections below): 
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="#website" title="project:release_notes:4.1 &crarr;" class="wikilink1">Website</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="#mobile" title="project:release_notes:4.1 &crarr;" class="wikilink1">Mobile</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="#desktop" title="project:release_notes:4.1 &crarr;" class="wikilink1">Desktop</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="#core" title="project:release_notes:4.1 &crarr;" class="wikilink1">Core</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="#tool" title="project:release_notes:4.1 &crarr;" class="wikilink1">Tooling</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="#app" title="project:release_notes:4.1 &crarr;" class="wikilink1">Applications</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="#documentation" title="project:release_notes:4.1 &crarr;" class="wikilink1">Documentation</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="#other" title="project:release_notes:4.1 &crarr;" class="wikilink1">Other</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Sections" [645-979] -->
+<h3 class="sectionedit4"><a name="appapiviewerwebsite" id="appapiviewerwebsite">app.apiviewer.website</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Support deprecations (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8467" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8467">8467</a>) </div>
+</li>
+<li class="level1"><div class="li"> Use CodePen instead of jsFiddle (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7984" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7984">7984</a>) </div>
+</li>
+<li class="level1"><div class="li"> Offer possibility to add samples for event types (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8488" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8488">8488</a>) </div>
+</li>
+<li class="level1"><div class="li"> Website <acronym title="Application Programming Interface">API</acronym> viewer should show info popup if filter is returning with no results (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8617" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8617">8617</a>) </div>
+</li>
+<li class="level1"><div class="li"> Improve startup performance (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8479" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8479">8479</a>) </div>
+</li>
+<li class="level1"><div class="li"> Hint the user about the fact search is done by using the browser search (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8485" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8485">8485</a>) </div>
+</li>
+<li class="level1"><div class="li"> Enhance the filtering to include the module names (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8552" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8552">8552</a>) </div>
+</li>
+<li class="level1"><div class="li"> Link to external online playground only &quot;works&quot; once on iPad (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7957" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7957">7957</a>) </div>
+</li>
+<li class="level1"><div class="li"> Don&#039;t show overridden methods (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8788" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8788">8788</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "app.apiviewer.website" [980-1616] -->
+<h3 class="sectionedit5"><a name="appmobileshowcase" id="appmobileshowcase">app.mobileshowcase</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Migrate config.json to Gruntfile.js (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8595" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8595">8595</a>) </div>
+</li>
+<li class="level1"><div class="li"> toggle buttons have confusing names (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8783" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8783">8783</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "app.mobileshowcase" [1617-1757] -->
+<h3 class="sectionedit6"><a name="appplayground" id="appplayground">app.playground</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Error in the playground when switching from the website tab (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8523" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8523">8523</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "app.playground" [1758-1862] -->
+<h3 class="sectionedit7"><a name="appshowcasedesktop" id="appshowcasedesktop">app.showcase.desktop</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> spelling mistake in &#039;Languages&#039; section (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8761" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8761">8761</a>) </div>
+</li>
+<li class="level1"><div class="li"> Dragging from &quot;Cart&quot; list on Drag &amp; Drop example throws an exception (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8659" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8659">8659</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "app.showcase.desktop" [1863-2042] -->
+<h3 class="sectionedit8"><a name="apptodo" id="apptodo">app.todo</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> checkbox appears after cancelling (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8762" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8762">8762</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "app.todo" [2043-2115] -->
+<h3 class="sectionedit9"><a name="apptutorial" id="apptutorial">app.tutorial</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Ellipses in Select Tutorial button (portrait mode) (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8817" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8817">8817</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "app.tutorial" [2116-2210] -->
+<h3 class="sectionedit10"><a name="appwidgetbrowserwebsite" id="appwidgetbrowserwebsite">app.widgetbrowser.website</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> RadioButtonGroup can&#039;t handle focus (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8808" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8808">8808</a>) </div>
+</li>
+<li class="level1"><div class="li"> Slider: Customized slider is at the wrong position after scaling (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8766" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8766">8766</a>) </div>
+</li>
+<li class="level1"><div class="li"> Rating: Modify scaling changes rating symbols (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8764" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8764">8764</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "app.widgetbrowser.website" [2211-2453] -->
+<h3 class="sectionedit11"><a name="core" id="core">core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Add &#039;range&#039; functionality for Arrays (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8448" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8448">8448</a>) </div>
+</li>
+<li class="level1"><div class="li"> Firefox 31 complains about &#039;window.controllers&#039; (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8503" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8503">8503</a>) </div>
+</li>
+<li class="level1"><div class="li"> Remove deprecations in 4.0 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7877" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7877">7877</a>) </div>
+</li>
+<li class="level1"><div class="li"> Reduce the code size of qx.core.Environment class (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8486" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8486">8486</a>) </div>
+</li>
+<li class="level1"><div class="li"> Remove automaticaly all bindings from an object when the destructor is called (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8428" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8428">8428</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.bom.client.CssTransform.get3D duplicated function (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7899" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7899">7899</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.bom.element.Opacity reduces opacity=1 to an empty string (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8679" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8679">8679</a>) </div>
+</li>
+<li class="level1"><div class="li"> Pdf plugin detection on IE11 fails (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8513" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8513">8513</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.Validate.email must validate extensions with more than 4 characters (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8555" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8555">8555</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.Bootstrap.getClass is returning &quot;Object&quot; for null and undefined under IE8 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8530" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8530">8530</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.bom.element.Style.compile returns wrong <acronym title="Cascading Style Sheets">CSS</acronym> string (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8501" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8501">8501</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.bom.element.Style.compile returns wrong style property name for &quot;float&quot; (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8464" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8464">8464</a>) </div>
+</li>
+<li class="level1"><div class="li"> CommandManager + CommandHandler to organize and suspend commands (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6639" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6639">6639</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "core" [2454-3457] -->
+<h3 class="sectionedit12"><a name="coredatabinding" id="coredatabinding">core.databinding</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Improve marshaling to chose Array class (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8381" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8381">8381</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add function to SingleValueBinding to remove all bindings related between two objects (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8521" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8521">8521</a>) </div>
+</li>
+<li class="level1"><div class="li"> Point the developer to fact what no event will be fired if a splice did not change the array. (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8419" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8419">8419</a>) </div>
+</li>
+<li class="level1"><div class="li"> Debounce write of the offline data store (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8596" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8596">8596</a>) </div>
+</li>
+<li class="level1"><div class="li"> Return bindings by getAllBindingsFromObject even if the object is the target (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8517" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8517">8517</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.data.SingleValueBinding#resolvePropertyChain throws Exception when propertyChain is just an Array Accessor (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8637" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8637">8637</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.data.Array#splice fires a changeBubble event when noting changed (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8377" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8377">8377</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "core.databinding" [3458-4140] -->
+<h3 class="sectionedit13"><a name="coredev" id="coredev">core.dev</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Console log breaks if className of <acronym title="Scalable Vector Graphics">SVG</acronym> element is type of SVGAnimatedString (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8432" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8432">8432</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "core.dev" [4141-4256] -->
+<h3 class="sectionedit14"><a name="coreevent" id="coreevent">core.event</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Prevent clearing of drag sessions on trackeend event, if no drag session started (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8658" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8658">8658</a>) </div>
+</li>
+<li class="level1"><div class="li"> Find alternative to &#039;stopPropagation&#039; in PointerCore handler (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8435" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8435">8435</a>) </div>
+</li>
+<li class="level1"><div class="li"> addListenerOnce doesn&#039;t remove listener (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8100" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8100">8100</a>) </div>
+</li>
+<li class="level1"><div class="li"> dbltap triggered on mouse action using two different mouse buttons in rapid sequence (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8755" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8755">8755</a>) </div>
+</li>
+<li class="level1"><div class="li"> Click on qx.ui.window caption bar buttons show no reaction on IE9/Vista (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8587" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8587">8587</a>) </div>
+</li>
+<li class="level1"><div class="li"> Infinite loop in IE11 with document mode 10 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8533" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8533">8533</a>) </div>
+</li>
+<li class="level1"><div class="li"> cellDbltap can be triggered when clicking 2 different cells closely after each other. (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8735" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8735">8735</a>) </div>
+</li>
+<li class="level1"><div class="li"> Swipe does not fire when target changes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8421" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8421">8421</a>) </div>
+</li>
+<li class="level1"><div class="li"> Regression: preventDefault on dragstart handler does not clear the session anymore (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8619" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8619">8619</a>) </div>
+</li>
+<li class="level1"><div class="li"> wrong wheelDelta values in Firefox (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8433" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8433">8433</a>) </div>
+</li>
+<li class="level1"><div class="li"> TouchEvent is fired on wrong position (element) when displaying a pdf in an iframe in chrome (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8493" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8493">8493</a>) </div>
+</li>
+<li class="level1"><div class="li"> Horizontal scrolling broken (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8791" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8791">8791</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.event.handler.Pointer will be disposed on hybrid applications. (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8551" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8551">8551</a>) </div>
+</li>
+<li class="level1"><div class="li"> triple tap results in two dbltap events (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8780" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8780">8780</a>) </div>
+</li>
+<li class="level1"><div class="li"> Emitting an event on an item from a collection is returning a wrong target (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8498" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8498">8498</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "core.event" [4257-5506] -->
+<h3 class="sectionedit15"><a name="coreio" id="coreio">core.io</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fakeserver implementation needs to resolve status text for <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> code 207 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8769" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8769">8769</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "core.io" [5507-5617] -->
+<h3 class="sectionedit16"><a name="corelang" id="corelang">core.lang</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Object clone doesn&#039;t work correctly (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8597" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8597">8597</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT16 SECTION "core.lang" [5618-5693] -->
+<h3 class="sectionedit17"><a name="desktop" id="desktop">desktop</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Tap event is not handled properly in <acronym title="Internet Explorer">IE</acronym> 10/11 on Windows 7 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8436" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8436">8436</a>) </div>
+</li>
+<li class="level1"><div class="li"> Improve localStorage feature detection. (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8592" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8592">8592</a>) </div>
+</li>
+<li class="level1"><div class="li"> context menu not displayed if the height of the display area is smaller than the menu (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8757" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8757">8757</a>) </div>
+</li>
+<li class="level1"><div class="li"> Scrolling on drag session does not work if drag able widget is a parent of the scroll container (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8287" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8287">8287</a>) </div>
+</li>
+<li class="level1"><div class="li"> Multiple scrolling on nested scrollareas (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8327" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8327">8327</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.util.DisposeUtil.destroyContainer needs qx.ui.mobile.core.Widget (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8403" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8403">8403</a>) </div>
+</li>
+<li class="level1"><div class="li"> Dragging of elements of virtual widget stops on resize (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8660" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8660">8660</a>) </div>
+</li>
+<li class="level1"><div class="li"> Text of rich Label outside client area (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7506" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7506">7506</a>) </div>
+</li>
+<li class="level1"><div class="li"> Dragging of elements inside the table stops on rerendering (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8321" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8321">8321</a>) </div>
+</li>
+<li class="level1"><div class="li"> Menu popup wrong placement (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8544" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8544">8544</a>) </div>
+</li>
+<li class="level1"><div class="li"> Ellipsis in Safari 8 for webfonts (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8786" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8786">8786</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.core.Command doesn&#039;t accept &quot;,&quot; as shortcut for the numpad DEL key (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8564" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8564">8564</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT17 SECTION "desktop" [5694-6628] -->
+<h3 class="sectionedit18"><a name="desktopcore" id="desktopcore">desktop.core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Prevent re opening of context menu on right click at the menu itself (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8572" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8572">8572</a>) </div>
+</li>
+<li class="level1"><div class="li"> &#039;execute&#039; not always fired for buttons (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8577" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8577">8577</a>) </div>
+</li>
+<li class="level1"><div class="li"> IOS8: .getWidgetByElement() returns wrong object (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8657" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8657">8657</a>) </div>
+</li>
+<li class="level1"><div class="li"> Error on closing qx.ui.core.Blocker when previous active widget is not focusable (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8668" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8668">8668</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "desktop.core" [6629-6970] -->
+<h3 class="sectionedit19"><a name="desktopform" id="desktopform">desktop.form</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> SplitButton does not lose hover state on Modern theme when inside a toolbar w/ padding (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7947" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7947">7947</a>) </div>
+</li>
+<li class="level1"><div class="li"> RadioButtonGroup.removeAll removes only half of the elements in RadioGroup (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8021" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8021">8021</a>) </div>
+</li>
+<li class="level1"><div class="li"> VirtualSelectBox : preselect fails on Groups (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8554" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8554">8554</a>) </div>
+</li>
+<li class="level1"><div class="li"> Spinner SingleStep issue when clicking up/down button (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8461" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8461">8461</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT19 SECTION "desktop.form" [6971-7334] -->
+<h3 class="sectionedit20"><a name="desktophtml" id="desktophtml">desktop.html</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> qx.html.Element AddListenerOnce does not remove listener (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8528" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8528">8528</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT20 SECTION "desktop.html" [7335-7434] -->
+<h3 class="sectionedit21"><a name="desktoplayout" id="desktoplayout">desktop.layout</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Changing the decorator doesn&#039;t add the widget to the widget queue if insets change (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8422" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8422">8422</a>) </div>
+</li>
+<li class="level1"><div class="li"> Flow layout computes wrong height when container has padding (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8683" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8683">8683</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT21 SECTION "desktop.layout" [7435-7643] -->
+<h3 class="sectionedit22"><a name="desktoplist" id="desktoplist">desktop.list</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Additive selection mode not working correctly (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8434" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8434">8434</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT22 SECTION "desktop.list" [7644-7732] -->
+<h3 class="sectionedit23"><a name="desktoptable" id="desktoptable">desktop.table</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> qx.ui.table.pane.Scroller#__cellEditor should be protected (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8398" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8398">8398</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.table.model.Simple: when setRows is called with a smaller array than table currently has not all rows are removed (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8561" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8561">8561</a>) </div>
+</li>
+<li class="level1"><div class="li"> Error on test in Filtered table model (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8500" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8500">8500</a>) </div>
+</li>
+<li class="level1"><div class="li"> Filters excluding many rows takes too much CPU (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7709" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7709">7709</a>) </div>
+</li>
+<li class="level1"><div class="li"> Doubling of key events on table check box cell editor (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8578" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8578">8578</a>) </div>
+</li>
+<li class="level1"><div class="li"> Drag &amp; Drop on table doesn&#039;t work (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8404" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8404">8404</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT23 SECTION "desktop.table" [7733-8232] -->
+<h3 class="sectionedit24"><a name="desktoptheming" id="desktoptheming">desktop.theming</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> _getContent of MLinearBackgroundGradient not in use? (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8478" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8478">8478</a>) </div>
+</li>
+<li class="level1"><div class="li"> Improve theme switch on runtime (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6979" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6979">6979</a>) </div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Cascading Style Sheets">CSS</acronym> class name collision between website widget button and UI decorator button (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8502" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8502">8502</a>) </div>
+</li>
+<li class="level1"><div class="li"> Wrong behavior while switching themes (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8341" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8341">8341</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT24 SECTION "desktop.theming" [8233-8540] -->
+<h3 class="sectionedit25"><a name="desktopvirtual" id="desktopvirtual">desktop.virtual</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Prevent automatically scrolling to selected item into view at toggling the open button of virtual tree items (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8173" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8173">8173</a>) </div>
+</li>
+<li class="level1"><div class="li"> Virtual WidgetCellSpan does not mark span spacer as empty cell (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8540" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8540">8540</a>) </div>
+</li>
+<li class="level1"><div class="li"> Improve scrolling speed of virtual widgets (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8368" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8368">8368</a>) </div>
+</li>
+<li class="level1"><div class="li"> Allow item size to be 0 on qx.ui.virtual.core.Axis (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8539" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8539">8539</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT25 SECTION "desktop.virtual" [8541-8912] -->
+<h3 class="sectionedit26"><a name="documentationmanual" id="documentationmanual">documentation.manual</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Manual for switching mobile themes is not up-to-date (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8444" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8444">8444</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT26 SECTION "documentation.manual" [8913-9016] -->
+<h3 class="sectionedit27"><a name="mobile" id="mobile">mobile</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> qx.Mobile Scroll container should fire momentumStart/momentumEnd event (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8505" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8505">8505</a>) </div>
+</li>
+<li class="level1"><div class="li"> Optimize qx.Mobile dependencies (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7620" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=7620">7620</a>) </div>
+</li>
+<li class="level1"><div class="li"> Waypoints should enable a &quot;pull-to-refresh&quot; feature (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8535" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8535">8535</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.Mobile List Group Header should be sticky (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8504" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8504">8504</a>) </div>
+</li>
+<li class="level1"><div class="li"> Carousel gets broken if swipe ends on target outside of scroll container (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8462" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8462">8462</a>) </div>
+</li>
+<li class="level1"><div class="li"> NavigationPage &quot;stop&quot; event fires too late (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8425" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8425">8425</a>) </div>
+</li>
+<li class="level1"><div class="li"> Popups don&#039;t refresh position when image is loaded (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8473" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8473">8473</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT27 SECTION "mobile" [9017-9541] -->
+<h3 class="sectionedit28"><a name="mobilecore" id="mobilecore">mobile.core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Allow to explicitly turn off animation when switching mobile pages (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8397" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8397">8397</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add possibility to prevent a back action (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8627" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8627">8627</a>) </div>
+</li>
+<li class="level1"><div class="li"> Rethink file structure for SCSS source files (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8043" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8043">8043</a>) </div>
+</li>
+<li class="level1"><div class="li"> On iPhone 6 Plus, the navigation bar is not visible in landscape mode when multiple taps are open (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8599" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8599">8599</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT28 SECTION "mobile.core" [9542-9894] -->
+<h3 class="sectionedit29"><a name="mobiletheming" id="mobiletheming">mobile.theming</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Search for an alternative for cssmin.py job (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6973" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6973">6973</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT29 SECTION "mobile.theming" [9895-9983] -->
+<h3 class="sectionedit30"><a name="mobilewidget" id="mobilewidget">mobile.widget</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> qx.ui.mobile.container.MIScroll has a memory leak (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8460" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8460">8460</a>) </div>
+</li>
+<li class="level1"><div class="li"> Prevent back action and close Drawer if visible (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8629" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8629">8629</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add waypoints for scrolling (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8409" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8409">8409</a>) </div>
+</li>
+<li class="level1"><div class="li"> Prevent back action when dialog is shown (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8631" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8631">8631</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.Mobile Carousel should hide pagination when unnecessary (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8423" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8423">8423</a>) </div>
+</li>
+<li class="level1"><div class="li"> Icons stretched when positioned top / bottom (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8752" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8752">8752</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.basic.Atom is leaking memory when containing both icon and label (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8601" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8601">8601</a>) </div>
+</li>
+<li class="level1"><div class="li"> TextArea in Internet Explorer ignores new line characters (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8402" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8402">8402</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.container.Collapsible has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8455" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8455">8455</a>) </div>
+</li>
+<li class="level1"><div class="li"> Pagination labels of the carousel are not round (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8779" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8779">8779</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.container.Carousel has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8459" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8459">8459</a>) </div>
+</li>
+<li class="level1"><div class="li"> Auto-snapping of mobile scrolling sometimes slow (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8499" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8499">8499</a>) </div>
+</li>
+<li class="level1"><div class="li"> <acronym title="JavaScript">JS</acronym> error occurs when a mobile widget gets disposed before the initialization of iScroll is finished (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8441" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8441">8441</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.ui.mobile.layout.Card has memory leaks (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8458" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8458">8458</a>) </div>
+</li>
+<li class="level1"><div class="li"> Refactor qx.Mobile Picker (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8487" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8487">8487</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT30 SECTION "mobile.widget" [9984-11080] -->
+<h3 class="sectionedit31"><a name="other" id="other">other</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Move contents of folder tool/admin/www into a separate repository (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8515" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8515">8515</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT31 SECTION "other" [11081-11183] -->
+<h3 class="sectionedit32"><a name="tool" id="tool">tool</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Clean up clean and distclean (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8005" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8005">8005</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT32 SECTION "tool" [11184-11247] -->
+<h3 class="sectionedit33"><a name="toolgrunt" id="toolgrunt">tool.grunt</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Define a set of necessary, qooxdoo specific optimizations (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8407" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8407">8407</a>) </div>
+</li>
+<li class="level1"><div class="li"> Implement &quot;variants&quot; optimization (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8468" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8468">8468</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add caching to the grunt toolchain (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8522" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8522">8522</a>) </div>
+</li>
+<li class="level1"><div class="li"> Prototype build (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8405" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8405">8405</a>) </div>
+</li>
+<li class="level1"><div class="li"> Extend the build prototype to the playground (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8406" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8406">8406</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT33 SECTION "tool.grunt" [11248-11557] -->
+<h3 class="sectionedit34"><a name="tooltestautomation" id="tooltestautomation">tool.test.automation</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Add tests for all skeletons (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8384" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8384">8384</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT34 SECTION "tool.test.automation" [11558-11636] -->
+<h3 class="sectionedit35"><a name="website" id="website">website</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Drop support for <acronym title="Internet Explorer 6">IE6</acronym> and IE7 (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8396" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8396">8396</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add support for box layouts (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8414" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8414">8414</a>) </div>
+</li>
+<li class="level1"><div class="li"> qx.lang.String.format does not escape native replace short hands (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8633" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8633">8633</a>) </div>
+</li>
+<li class="level1"><div class="li"> Store the &#039;useCapture&#039; parameter (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8584" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8584">8584</a>) </div>
+</li>
+<li class="level1"><div class="li"> Enable qx.debug for the non minimzed version of qxWeb (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8051" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8051">8051</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT35 SECTION "website" [11637-11964] -->
+<h3 class="sectionedit36"><a name="websitebom" id="websitebom">website.bom</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Enhance qx.bom.Label to be able to sanitize values (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8626" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8626">8626</a>) </div>
+</li>
+<li class="level1"><div class="li"> Make qx.bom.element.Transform#__mapToCss reachable (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8526" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8526">8526</a>) </div>
+</li>
+<li class="level1"><div class="li"> XHR implementation lacks of check for valid payload data (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8559" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8559">8559</a>) </div>
+</li>
+<li class="level1"><div class="li"> Initialize matchMedia polyfill on loadtime (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8691" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8691">8691</a>) </div>
+</li>
+<li class="level1"><div class="li"> Use 3d properties for <acronym title="Cascading Style Sheets">CSS</acronym> transform if available (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8527" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8527">8527</a>) </div>
+</li>
+<li class="level1"><div class="li"> IE11 returns bogus values for .getBoundingClientRect() inside an iframe where an element is displayed full screen (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8545" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8545">8545</a>) </div>
+</li>
+<li class="level1"><div class="li"> Safari throws an exception when deleting an undefined data-attribute (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8640" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8640">8640</a>) </div>
+</li>
+<li class="level1"><div class="li"> Geolocation doesn&#039;t work in Chrome on Android (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8787" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8787">8787</a>) </div>
+</li>
+<li class="level1"><div class="li"> text ellipses in almost all labels (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8567" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8567">8567</a>) </div>
+</li>
+<li class="level1"><div class="li"> values returned from qx.bom.Viewport.isLandscape() and qx.bom.Viewport.isPortrait() are wrong on Android (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8647" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8647">8647</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT36 SECTION "website.bom" [11965-12806] -->
+<h3 class="sectionedit37"><a name="websitemodules" id="websitemodules">website.modules</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> qxWeb(…).removeProperty() missing (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8590" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8590">8590</a>) </div>
+</li>
+<li class="level1"><div class="li"> Support developers to check easily empty / wrong collections (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8603" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8603">8603</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add &#039;merge&#039; functionality for objects (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8454" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8454">8454</a>) </div>
+</li>
+<li class="level1"><div class="li"> Allow collection method overriding (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8709" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8709">8709</a>) </div>
+</li>
+<li class="level1"><div class="li"> &#039;once&#039; on a collection is only triggered every 2nd time (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8772" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8772">8772</a>) </div>
+</li>
+<li class="level1"><div class="li"> .getData() is returning a wrong value on android 4 when the corresponding attribute is missing (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8543" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8543">8543</a>) </div>
+</li>
+<li class="level1"><div class="li"> Pointer handler is not being called although the listener is still present (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8481" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8481">8481</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT37 SECTION "website.modules" [12807-13368] -->
+<h3 class="sectionedit38"><a name="websitewidgets" id="websitewidgets">website.widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Extend the calendar widget to support range selection (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8400" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8400">8400</a>) </div>
+</li>
+<li class="level1"><div class="li"> Tabs should have an responsive behavior (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8417" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8417">8417</a>) </div>
+</li>
+<li class="level1"><div class="li"> Add cellHover and cellOut events to the table widget (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8634" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8634">8634</a>) </div>
+</li>
+<li class="level1"><div class="li"> The state set with &quot;widget.setEnabled&quot; is not persisted (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8427" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8427">8427</a>) </div>
+</li>
+<li class="level1"><div class="li"> Event handler of native event &quot;play&quot; added by .on() will not called on Safari (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8244" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8244">8244</a>) </div>
+</li>
+<li class="level1"><div class="li"> Calendar widget: deactivating disable function does not work correctly (<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8763" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=8763">8763</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT38 SECTION "website.widgets" [13369-] --></div>
+</body>
+</html>

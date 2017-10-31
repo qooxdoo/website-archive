@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.6.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#demos" class="toc">Demos</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tools" class="toc">Tools</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_061_2006-09-20" id="qooxdoo_061_2006-09-20">qooxdoo 0.6.1 (2006-09-20)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.1 (2006-09-20)" [1-42] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="additions" id="additions">Additions</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added support for close buttons inside the class TabButton.</div>
+</li>
+<li class="level1"><div class="li"> Many major enhancements to support Safari (there are many problems fixed, but it&#039;s still quite problematic). Especially image support (displaying &amp; preloading works much better now). The client detection engine was improved to support Safari better, too.</div>
+</li>
+<li class="level1"><div class="li"> Greatly enhanced rendering of TreeFullControl. Especially regarding hidden root nodes.</div>
+</li>
+<li class="level1"><div class="li"> Added IframeManager and added blocker div in Iframe to support blocking of external content while dragging stuff around (make drag&amp;drop resistant for iframes, …)</div>
+</li>
+<li class="level1"><div class="li"> Added support for Basic <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> Authentication.</div>
+</li>
+<li class="level1"><div class="li"> Added RingBufferAppender (writes all messages to a memory container and could be accessed later)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="changes" id="changes">Changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Many improvements to the table widget and all the depending classes.</div>
+</li>
+<li class="level1"><div class="li"> Optimized event handler to register to the <acronym title="Document Object Model">DOM</acronym> nodes after load and not while loading data. Because of some removed checks this should improve the runtime performance a bit.</div>
+</li>
+<li class="level1"><div class="li"> Renamed window events, which was fired on the client document. Added the prefix &quot;window&quot; to all of them. The new event names are: &quot;windowblur&quot;, &quot;windowfocus&quot; and &quot;windowresize&quot;. They are all fired on the ClientDocument.</div>
+</li>
+<li class="level1"><div class="li"> Added debug output for the current browser engine and version. Also added a warning when a wrong doctype is used (<acronym title="Internet Explorer">IE</acronym> only)</div>
+</li>
+<li class="level1"><div class="li"> Minor improvements to DatePicker.</div>
+</li>
+<li class="level1"><div class="li"> User does not need to initialize the custom application anymore. The framework handle this automatically.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="fixes" id="fixes">Fixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed many minor mouse event handling issues (e. g. Menus, Windows, Combobox, etc. mainly if the cursor was previously outside the current window or inside an iframe).</div>
+</li>
+<li class="level1"><div class="li"> Fixed minor issue with text areas which are configured with a marginTop/marginBottom 1px per default (Gecko only).</div>
+</li>
+<li class="level1"><div class="li"> Minor fix to support ellipses in Label instances which uses a flexible width.</div>
+</li>
+<li class="level1"><div class="li"> Fixed HSB label in ColorSelector.</div>
+</li>
+<li class="level1"><div class="li"> Added missing disposer stuff to ComboBox.</div>
+</li>
+<li class="level1"><div class="li"> Many fixes for the English labels used by DatePicker.</div>
+</li>
+<li class="level1"><div class="li"> Fixed platform detection code.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [43-2149] -->
+<h3 class="sectionedit3"><a name="demos" id="demos">Demos</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Minor fixes for small issues with the included demos.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Demos" [2150-2225] -->
+<h3 class="sectionedit4"><a name="tools" id="tools">Tools</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="changes1" id="changes1">Changes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Greatly improved build process. Should be much faster now. Includes a much better caching logic.</div>
+</li>
+<li class="level1"><div class="li"> Added support for extracting (compressing) strings and defining them outside of highly frequented functions. This improves performance of <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Enabled string compression in all included Makefiles.</div>
+</li>
+<li class="level1"><div class="li"> Added support for storing the generated tree and tokens to files (debug support). This also includes new targets in the main and framework Makefiles.</div>
+</li>
+<li class="level1"><div class="li"> Added support to invoke treecompiler.py and tokencompiler.py from the command line  (e.g. to compress a single source file).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="fixes1" id="fixes1">Fixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added fixes for <acronym title="Application Programming Interface">API</acronym> generation which crashed on empty doc trees.</div>
+</li>
+<li class="level1"><div class="li"> Fixed support for braceless if and if-else statements.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <acronym title="Extensible Markup Language">XML</acronym> generation from <acronym title="Application Programming Interface">API</acronym> and code trees.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tools" [2226-] --></div>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8-rc1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-01-24T16:37:12+0100"/>
+<meta name="keywords" content="project,release_notes,0.8-rc1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8-rc1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8-rc1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8-rc1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8-rc1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8-rc1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#project" class="toc">Project</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#widgets" class="toc">Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#table" class="toc">Table</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#treevirtual" class="toc">TreeVirtual</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#progressive" class="toc">Progressive</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#toolkit" class="toc">Toolkit</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#theming" class="toc">Theming</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#low-level" class="toc">Low-Level</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#components" class="toc">Components</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#api_viewer" class="toc">API Viewer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#test_runner" class="toc">Test Runner</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#demo_browser" class="toc">Demo Browser</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#feed_reader" class="toc">Feed Reader</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#quick_start" class="toc">Quick Start</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#tool_chain" class="toc">Tool Chain</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#create_applications" class="toc">Create Applications</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#news" class="toc">News</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#fixes_improvements" class="toc">Fixes &amp; Improvements</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#distribution" class="toc">Distribution</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#changes" class="toc">Changes</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_08-rc1_2008-08-21" id="qooxdoo_08-rc1_2008-08-21">qooxdoo 0.8-rc1 (2008-08-21)</a></h1>
+<div class="level1">
+
+<p>
+<a href="http://bugzilla.qooxdoo.org/buglist.cgi?bug_file_loc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_id=&amp;bugidtype=include&amp;chfield=resolution&amp;chfieldfrom=2008-08-01&amp;chfieldto=Now&amp;chfieldvalue=FIXED&amp;email1=&amp;email2=&amp;emailtype1=substring&amp;emailtype2=substring&amp;field-1-0-0=product&amp;field-1-1-0=target_milestone&amp;field-1-2-0=resolution&amp;field0-0-0=noop&amp;long_desc=&amp;long_desc_type=substring&amp;product=framework&amp;query_format=advanced&amp;remaction=&amp;resolution=FIXED&amp;short_desc=&amp;short_desc_type=allwordssubstr&amp;target_milestone=0.8&amp;target_milestone=0.8-alpha1&amp;target_milestone=0.8-alpha2&amp;target_milestone=0.8-beta1&amp;target_milestone=0.8-rc1&amp;target_milestone=0.8.1&amp;target_milestone=unspecified&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-2-0=anyexact&amp;type0-0-0=noop&amp;value-1-0-0=framework&amp;value-1-1-0=0.8%2C0.8-alpha1%2C0.8-alpha2%2C0.8-beta1%2C0.8-rc1%2C0.8.1%2Cunspecified&amp;value-1-2-0=FIXED&amp;value0-0-0=&amp;votes=&amp;order=bugs.priority,bugs.bug_id&amp;query_based_on=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?bug_file_loc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_id=&amp;bugidtype=include&amp;chfield=resolution&amp;chfieldfrom=2008-08-01&amp;chfieldto=Now&amp;chfieldvalue=FIXED&amp;email1=&amp;email2=&amp;emailtype1=substring&amp;emailtype2=substring&amp;field-1-0-0=product&amp;field-1-1-0=target_milestone&amp;field-1-2-0=resolution&amp;field0-0-0=noop&amp;long_desc=&amp;long_desc_type=substring&amp;product=framework&amp;query_format=advanced&amp;remaction=&amp;resolution=FIXED&amp;short_desc=&amp;short_desc_type=allwordssubstr&amp;target_milestone=0.8&amp;target_milestone=0.8-alpha1&amp;target_milestone=0.8-alpha2&amp;target_milestone=0.8-beta1&amp;target_milestone=0.8-rc1&amp;target_milestone=0.8.1&amp;target_milestone=unspecified&amp;type-1-0-0=anyexact&amp;type-1-1-0=anyexact&amp;type-1-2-0=anyexact&amp;type0-0-0=noop&amp;value-1-0-0=framework&amp;value-1-1-0=0.8%2C0.8-alpha1%2C0.8-alpha2%2C0.8-beta1%2C0.8-rc1%2C0.8.1%2Cunspecified&amp;value-1-2-0=FIXED&amp;value0-0-0=&amp;votes=&amp;order=bugs.priority,bugs.bug_id&amp;query_based_on=">List of fixed bugs in 0.8-rc1</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8-rc1 (2008-08-21)" [1-1012] -->
+<h2 class="sectionedit2"><a name="project" id="project">Project</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> Viewer, Test Runner and Skeletons were moved to &quot;components&quot; as these are no applications in the classical sense.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Remote Procedure Call">RPC</acronym> backend code has been moved to qooxdoo-contrib.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Project" [1013-1213] -->
+<h2 class="sectionedit3"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT3 SECTION "Framework" [1214-1237] -->
+<h3 class="sectionedit4"><a name="widgets" id="widgets">Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Ported <code>ColorSelector</code> and <code>ColorPopup</code> from 0.7.x</div>
+</li>
+<li class="level1"><div class="li"> Improved styling of <code>DataChooser</code> in Modern theme.</div>
+</li>
+<li class="level1"><div class="li"> Added full keyboard support to <code>DateField</code> and <code>DateChooser</code>.</div>
+</li>
+<li class="level1"><div class="li"> Improved drag&amp;drop support with better <acronym title="Application Programming Interface">API</acronym> documentation and slight <acronym title="Application Programming Interface">API</acronym> adjustments.</div>
+</li>
+<li class="level1"><div class="li"> Corrected auto-sizing of popups opened by SelectBox and ComboBox.</div>
+</li>
+<li class="level1"><div class="li"> Major improvements to GroupBox styling. Improved example.</div>
+</li>
+<li class="level1"><div class="li"> Fixed Spinner support for mousewheel event.</div>
+</li>
+<li class="level1"><div class="li"> Improved behavior of <code>SelectBox</code> and <code>ComboBox</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed positioning of Menu in toolbar&#039;s <code>SplitButton</code> (Modern theme only).</div>
+</li>
+<li class="level1"><div class="li"> Fixed tab focus support for <code>ComboBox</code> and <code>Spinners</code>.</div>
+</li>
+<li class="level1"><div class="li"> Stopped <code>doubleclick</code> events in <code>AbstractSlider</code> and <code>Button</code> widget to prevent these widgets to let this event bubble.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>Resizer</code> widget.</div>
+</li>
+<li class="level1"><div class="li"> Fixed disabled icon display in Trees (was not grayed out previously).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Widgets" [1238-2146] -->
+<h3 class="sectionedit5"><a name="table" id="table">Table</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Many <code>Table</code> issues were fixed. Some of them were backported to legacy (0.7.x) as well. Still one open <acronym title="Internet Explorer">IE</acronym> rendering bug. </div>
+</li>
+<li class="level1"><div class="li"> Fixed a few <acronym title="Cascading Style Sheets">CSS</acronym> quirks of the <code>Table</code> widget.</div>
+</li>
+<li class="level1"><div class="li"> Fixed missing base call in constructor of table&#039;s Abstract cell renderer</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Table" [2147-2421] -->
+<h3 class="sectionedit6"><a name="treevirtual" id="treevirtual">TreeVirtual</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The <code>TreeVirtual</code> widget has been ported from 0.7.</div>
+</li>
+<li class="level1"><div class="li"> The appearance of a tree is much more tightly aligned with the theme than previously, including which icons are used for the open/close buttons.</div>
+</li>
+<li class="level1"><div class="li"> Use of &quot;tree lines&quot; can now be controlled by the theme as well as programatically, i.e. themes can choose whether tree lines are appropriate in that theme.  Currently, the <code>Classic</code> theme provides tree lines.  The <code>Modern</code> theme, which uses right-facing and downward-facing arrows for the open/close buttons instead of the traditional plus/minus icons, does not.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "TreeVirtual" [2422-3022] -->
+<h3 class="sectionedit7"><a name="progressive" id="progressive">Progressive</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The <code>Progressive</code> widget has been ported from 0.7.  This widget is appropriate for any task in which small portions of the task should be executed at a time, progressively, until the complete set of task portions has been executed.  Integrated renderers include the Progressive Table (which supports variable row height), and Progressive Loader (to not only indicate percentage of loading complete, but allow the user to watch the loading progress).  Other renderers can be easily added by the user. </div>
+</li>
+<li class="level1"><div class="li"> The Progressive Table renderer now uses appearance themes, and defaults to an appearance nearly identical to the Table widget.</div>
+</li>
+<li class="level1"><div class="li"> The variable row height capability of the Progressive Table is demonstrated in conjunction with ascertaining the dimensions of images placed into the table.  The height of a row is established by the height of the image placed in a cell in that row.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Progressive" [3023-3939] -->
+<h3 class="sectionedit8"><a name="toolkit" id="toolkit">Toolkit</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Support for styleable widget shadows for top level widgets like windows or tool tips. </div>
+</li>
+<li class="level1"><div class="li"> Full support for alpha transparent PNGs in <acronym title="Internet Explorer 6">IE6</acronym> in decorators and icons</div>
+</li>
+<li class="level1"><div class="li"> Images in qooxdoo can now be scaled to the size given explicitly. This auto-scaling is disabled by default, but can easily be enabled with the boolean property &quot;scale&quot;.</div>
+</li>
+<li class="level1"><div class="li"> Added support for centering <code>Atoms</code>. For instance this is used by buttons that center the label when more space is available (e.g. typical &quot;OK&quot; buttons)</div>
+</li>
+<li class="level1"><div class="li"> Moved widget specific layout managers from qx.ui.layout to more specific namespaces (e.g. menu, splitpane, …)</div>
+</li>
+<li class="level1"><div class="li"> Fixed typo in <code>isActive()</code> and <code>isFocused()</code> of <code>FocusHandler</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed Safari/Webkit issue with shadows being dragged around when trying to resize qooxdoo Windows.</div>
+</li>
+<li class="level1"><div class="li"> Added support for spacing in <code>Toolbars</code> and toolbar <code>Parts</code>.</div>
+</li>
+<li class="level1"><div class="li"> The <code>contentPadding</code> property is now supported by the mixin <code>MContentPadding</code> which also allows <acronym title="Cascading Style Sheets">CSS</acronym> shorthand values for padding e.g. <code>[3, 5]</code></div>
+</li>
+<li class="level1"><div class="li"> Added support for <code>auto</code> value for scrollbars in <code>MNativeOverflow</code>.</div>
+</li>
+<li class="level1"><div class="li"> Improved handling of enable/disable connected <code>Commands</code> and <code>Widgets</code></div>
+</li>
+<li class="level1"><div class="li"> Improved <code>Atom</code> to better support empty regions (e.g. images which could not be loaded)</div>
+</li>
+<li class="level1"><div class="li"> Fixed major memory leak issue in <code>Label</code> which kept a connection to the locale manager. </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Toolkit" [3940-5315] -->
+<h3 class="sectionedit9"><a name="theming" id="theming">Theming</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="modern" id="modern">Modern</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Major improvements for TabView, the Toolbar and all panes</div>
+</li>
+<li class="level1"><div class="li"> Unified outer border of <code>Tree</code>, <code>Table</code>, <code>List</code>, <code>Popup</code>, <code>Menu</code> etc. to match the theme mockup.</div>
+</li>
+<li class="level1"><div class="li"> Major cleanup of colors and decorators included in this theme. Improved naming conventions.</div>
+</li>
+<li class="level1"><div class="li"> A lot of decoration images of the &quot;Modern&quot; theme are now combined for better application performance and reduced latency at load time.</div>
+</li>
+<li class="level1"><div class="li"> Improved font theme in <code>Modern</code> to make use of fonts available natively</div>
+</li>
+<li class="level1"><div class="li"> Added <code>monospace</code> font for convenience (not used by the appearance)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="classic" id="classic">Classic</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Some tweaks are planned for after the release candidate to follow up with the improvements of the <code>Modern</code> theme.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>monospace</code> font for convenience (not used by the appearance)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="decorators" id="decorators">Decorators</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Decorators are now fully compatible to both box models and therefore are independent of the doctype.</div>
+</li>
+<li class="level1"><div class="li"> New <code>Background</code> decorator for decorations without borders which is even simpler than Uniform.</div>
+</li>
+<li class="level1"><div class="li"> Cleaned up theme managers from old ballast (theme switch, theme titles, …).</div>
+</li>
+<li class="level1"><div class="li"> Slightly improved decorator <acronym title="Application Programming Interface">API</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Added constructors to all decorators. </div>
+</li>
+<li class="level1"><div class="li"> Improved decorator checks and hints for wrong use cases e.g. Double decorator without inner border, Single decorator without any border at all, etc.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Theming" [5316-6666] -->
+<h3 class="sectionedit10"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Protected and private member fields in qooxdoo classes are a problem since authors of derived classes may use fields with the same names, which can easily break things. To solve this problem we now have the policy to use private fields where possible, and to list all member fileds explicitly in the data section. This way it is easier to understand which field names are used and we can report warning and errors if a protected field is redeclared in a sub class. The “ecmalint” tool has been modified to report code where these rules are violated. This policy is now in place in most parts of the framework.</div>
+</li>
+<li class="level1"><div class="li"> Added a lot of missing destructors, still in progress until final release.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation is more complete, particularly by adding a lot of new class descriptions which were  missing previously.</div>
+</li>
+<li class="level1"><div class="li"> Performance and memory usage tweaks for <code>Widget</code> and <code>qx.html.Element</code>, being core components of any qooxdoo <acronym title="Graphical User Interface">GUI</acronym> application.</div>
+</li>
+<li class="level1"><div class="li"> Refactored and cleaned up static resources of qooxdoo, now only including <code>blank.gif</code> and <code>blank.html</code>, which are theme-independent and used by more than one class.</div>
+</li>
+<li class="level1"><div class="li"> Property inheritance has been modified a bit to convert the &quot;inherit&quot; value automatically to &quot;null&quot;. Previously applied routines and getters may have received a string value &quot;inherit&quot;, which caused some problems and made code more complex than needed in some cases.</div>
+</li>
+<li class="level1"><div class="li"> Improved disposers and checks to correctly support <code>Decorators</code>, <code>Fonts</code> and <code>BaseString</code></div>
+</li>
+<li class="level1"><div class="li"> Changed support for properties checking for <code>Color</code>. Native color names like <code>window</code> or <code>menu</code> are not respected anymore as they may conflict with themes or even worse may be used without the knowledge that these are not themed but <acronym title="Operating System">OS</acronym> dependent.</div>
+</li>
+<li class="level1"><div class="li"> Added option to <code>scrollIntoView</code> to omit direct execution which is needed by the <code>TabView</code> for example.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Core" [6667-8554] -->
+<h3 class="sectionedit11"><a name="low-level" id="low-level">Low-Level</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> New low-level class to create images for decoration purposes with support for combined images (a.k.a image slices), alpha transparent PNGs, various new repeat modes like <code>scale-x</code> or <code>scale-y</code> etc.</div>
+</li>
+<li class="level1"><div class="li"> Fixed drag and drop bug in portal application</div>
+</li>
+<li class="level1"><div class="li"> Added hints when using images which qualify as good candidates for being combined. Another smart helper to support the developer to create low-latency applications.</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>Style.compile</code> to ignore properties with &quot;null&quot; values.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue with <code>enctype</code> attribute which was camel-cased, but does seem to work only in lower-case in <acronym title="Internet Explorer">IE</acronym>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Low-Level" [8555-9184] -->
+<h2 class="sectionedit12"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed migration to 0.8-rc1</div>
+<ul>
+<li class="level2"><div class="li"> Added/Moved legacy resources</div>
+</li>
+<li class="level2"><div class="li"> Changed legacy theme to match resources</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Migration" [9185-9322] -->
+<h2 class="sectionedit13"><a name="components" id="components">Components</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT13 SECTION "Components" [9323-9347] -->
+<h3 class="sectionedit14"><a name="api_viewer" id="api_viewer">API Viewer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Now opens first namespace of all root folder trees</div>
+</li>
+<li class="level1"><div class="li"> Major improvement of appearance (more modeled after originals screens by the designer of the Modern theme)</div>
+</li>
+<li class="level1"><div class="li"> The documentation warnings are now stricter. It now warns for missing constructor parameters and missing class documentation as well. </div>
+</li>
+<li class="level1"><div class="li"> Reduced local data; full framework <acronym title="Application Programming Interface">API</acronym> documentation now under <code>framework/api</code></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "API Viewer" [9348-9761] -->
+<h3 class="sectionedit15"><a name="test_runner" id="test_runner">Test Runner</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Minor adjustments of appearance to match Feed Reader and <acronym title="Application Programming Interface">API</acronym> Viewer</div>
+</li>
+<li class="level1"><div class="li"> Now shows the application under test in a separate pane. Before it was loaded into an hidden Iframe.</div>
+</li>
+<li class="level1"><div class="li"> Changed all <acronym title="HyperText Markup Language">HTML</acronym> files to be <acronym title="Extensible HyperText Markup Language">XHTML</acronym> instead.</div>
+</li>
+<li class="level1"><div class="li"> Reduced local data; full framework tests now under <code>framework/test</code></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Test Runner" [9762-10084] -->
+<h2 class="sectionedit16"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT16 SECTION "Applications" [10085-10110] -->
+<h3 class="sectionedit17"><a name="demo_browser" id="demo_browser">Demo Browser</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Ported demo browser animation demos</div>
+</li>
+<li class="level1"><div class="li"> Many widget demos have got a lot of love. Code should be more concise, functionality be fixed where needed.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT17 SECTION "Demo Browser" [10111-10287] -->
+<h3 class="sectionedit18"><a name="feed_reader" id="feed_reader">Feed Reader</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Make use of toolbar parts to unify with <acronym title="Application Programming Interface">API</acronym> Viewer styling.</div>
+</li>
+<li class="level1"><div class="li"> Improved styling of article content. Better font.</div>
+</li>
+<li class="level1"><div class="li"> Improved handling of bad feeds (invalid format). These are now disabled in the tree instead of being removed from the tree.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "Feed Reader" [10288-10558] -->
+<h3 class="sectionedit19"><a name="quick_start" id="quick_start">Quick Start</a></h3>
+<div class="level3">
+
+<p>
+The &quot;quickstart&quot; application was removed. The new build process (especially for Windows users not requiring Cygwin any longer) should be so convenient that starting to develop a application the wrong (but easy) way first is not regarded a good option for <acronym title="Graphical User Interface">GUI</acronym> development. A pre-built package is planned for a future release, though, that will be an alternative to other low-level libraries like Prototype or jQuery.
+</p>
+
+</div>
+<!-- EDIT19 SECTION "Quick Start" [10559-10999] -->
+<h2 class="sectionedit20"><a name="tool_chain" id="tool_chain">Tool Chain</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT20 SECTION "Tool Chain" [11000-11024] -->
+<h3 class="sectionedit21"><a name="create_applications" id="create_applications">Create Applications</a></h3>
+<div class="level3">
+
+<p>
+The framework now features a script called &quot;create-application.py&quot;, which makes it easy to create new qooxdoo applications. The script needs only an application name and optionally the name of the top level namespace to create a fully configured qooxdoo skeleton application. The script is able to create different kind of applications. The default is a qooxdoo <acronym title="Graphical User Interface">GUI</acronym> application. Other supported skeleton types are low level BOM, a <acronym title="Graphical User Interface">GUI</acronym> application which includes a contrib project and finally a skeleton, which can be used as basis for a migration from 0.7.
+</p>
+
+</div>
+<!-- EDIT21 SECTION "Create Applications" [11025-11614] -->
+<h3 class="sectionedit22"><a name="news" id="news">News</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added <code>test</code>/<code>test-source</code> jobs, to create application-specific Testrunner environments</div>
+</li>
+<li class="level1"><div class="li"> Added <code>migration</code> job for applications</div>
+</li>
+<li class="level1"><div class="li"> Removed dependency from external <code>rm</code> command (for <code>clean</code> jobs)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT22 SECTION "News" [11615-11846] -->
+<h3 class="sectionedit23"><a name="fixes_improvements" id="fixes_improvements">Fixes &amp; Improvements</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Improved locales handling, with independent <code>translate</code> job to re-create .po files, and a <code>locales</code> array honored in <code>source</code>/<code>build</code> jobs; &#039;localize&#039; config key (superseded by <code>locale</code> subkey in compile actions) has been removed</div>
+</li>
+<li class="level1"><div class="li"> More robust handling of combined images</div>
+</li>
+<li class="level1"><div class="li"> Significant speed-up for <code>clean</code> jobs</div>
+</li>
+<li class="level1"><div class="li"> Version check for downloaded contrib libraries is active again (so unchanged contribs will not be downloaded repeatedly)</div>
+</li>
+<li class="level1"><div class="li"> Various bug fixes, especially around path/uri handling</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT23 SECTION "Fixes & Improvements" [11847-12397] -->
+<h2 class="sectionedit24"><a name="distribution" id="distribution">Distribution</a></h2>
+<div class="level2">
+
+<p>
+Number of release kits cut down to one! Starting with this release, the only released kit will be the <acronym title="Software Development Kit">SDK</acronym>. &quot;build&quot; and &quot;quickstart&quot; kits are gone. The <acronym title="Software Development Kit">SDK</acronym> kit also contains no further zip archives, the skeleton is provided as a normal component in source tree form.
+</p>
+
+</div>
+<!-- EDIT24 SECTION "Distribution" [12398-12692] -->
+<h3 class="sectionedit25"><a name="changes" id="changes">Changes</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> New folder structure (<code>backend</code> gone, <code>frontend/*</code> lifted, application split into <code>application</code> and <code>component</code>, new <code>index.html</code>)</div>
+</li>
+<li class="level1"><div class="li"> Contains pre-build Apiviewer</div>
+</li>
+<li class="level1"><div class="li"> New wizard <code>tool/bin/create-application.py</code></div>
+</li>
+<li class="level1"><div class="li"> <code>component/skeleton</code> reduced to hold template subdirectories for various application scenarios, used by &#039;create-application.py&#039;</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT25 SECTION "Changes" [12693-] --></div>
+</body>
+</html>

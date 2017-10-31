@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.7.1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T10:40:57+0200"/>
+<meta name="keywords" content="project,release_notes,0.7.1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.7.1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.7.1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.7.1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.7.1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.7.1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#quick_summary" class="toc">Quick Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#new_features" class="toc">New Features</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#changes" class="toc">Changes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#improvements_fixes" class="toc">Improvements &amp; Fixes</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#demo_browser" class="toc">Demo Browser</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_071_2007-07-09" id="qooxdoo_071_2007-07-09">qooxdoo 0.7.1 (2007-07-09)</a></h1>
+<div class="level1">
+
+<p>
+This is an important maintainance release that includes many bugfixes. Every user of the previous 0.7 release is advised to migrate to this release, which is regarded as the most stable release of the 0.7.x line of qooxdoo.
+</p>
+
+<p>
+<a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">More than 60 bugs and performance issues resolved since 0.7</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.7.1 (2007-07-09)" [1-1007] -->
+<h2 class="sectionedit2"><a name="quick_summary" id="quick_summary">Quick Summary</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Tons of <a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">bugfixes</a>.</div>
+</li>
+<li class="level1"><div class="li"> Tons of <a href="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailqa_contact2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=2007-06-06&amp;chfieldto=2007-07-09&amp;chfield=resolution&amp;chfieldvalue=FIXED&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">performance improvements</a>.</div>
+</li>
+<li class="level1"><div class="li"> Cross-browser <a href="http://attic.qooxdoo.org/documentation/0.7/profiling" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.7/profiling">JavaScript profiling</a>, powered by built-in support for <a href="http://demo.qooxdoo.org/0.7.1/apiviewer/#qx.core.Aspect" class="urlextern" title="http://demo.qooxdoo.org/0.7.1/apiviewer/#qx.core.Aspect">aspect-oriented programming (AOP)</a>.</div>
+</li>
+<li class="level1"><div class="li"> Made development and integration of user contributions much easier by introducing the associated repository <a href="/contrib" class="wikilink1" title="contrib">qoooxdoo-contrib</a> and a transparent build process.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Quick Summary" [1008-2853] -->
+<h2 class="sectionedit3"><a name="new_features" id="new_features">New Features</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> qooxdoo-contrib support has been added. New widgets available through qooxdoo-contrib:</div>
+<ul>
+<li class="level2"><div class="li"> HtmlArea</div>
+</li>
+<li class="level2"><div class="li"> UploadWidget</div>
+</li>
+<li class="level2"><div class="li"> ProgressBar</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Safari 3 support (The maximum recursion depth, which is very limited compared to other browsers, remains a problem for deeply nested layouts)</div>
+</li>
+<li class="level1"><div class="li"> Tree and TreeFullControl have finally been merged into a single widget <code>qx.ui.tree.Tree</code>. </div>
+</li>
+<li class="level1"><div class="li"> New cross-browser JavaScript profiling has been introduced to benchmark qooxdoo  function calls and runtimes.</div>
+</li>
+<li class="level1"><div class="li"> Demo browser:</div>
+<ul>
+<li class="level2"><div class="li"> new mode to successively execute all available demos</div>
+</li>
+<li class="level2"><div class="li"> Much requested &quot;view source&quot; feature including syntax highlighting</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> viewer: Syntax highlighting for embedded JavaScript examples</div>
+</li>
+<li class="level1"><div class="li"> Themes now support Mixin-like <code>include</code> and <code>patch</code>.</div>
+</li>
+<li class="level1"><div class="li"> Appearance themes now support <code>base:true</code>. This means, if enabled, that the appearance entry includes the defintion of the derived theme in the same way like <code>include</code> works locally for that theme.</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.lang.Function</code> got a new method <code>globalEval()</code> to evaluate script in a global context</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.lang.String</code> has got a new method <code>toArray()</code> which converts a string to an Array (splitting at each character/whitespace).</div>
+</li>
+<li class="level1"><div class="li"> New class <code>qx.util.Type</code> was added (easy object type detection)</div>
+</li>
+<li class="level1"><div class="li"> New class <code>qx.util.EditDistance</code> was added (Class to implement different edit distance ideas.)</div>
+</li>
+<li class="level1"><div class="li"> New class <code>qx.dev.Tokenizer</code> was added (Simple JavaScript tokenizer used to print syntax-highlighted JavaScript code.)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "New Features" [2854-4398] -->
+<h2 class="sectionedit4"><a name="changes" id="changes">Changes</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Resource declarations inside classes were modified. This must be changed by all classes declaring resources. Each entry must be prefixed with the toplevel namespace of the application now. For instance. a previous &quot;custom.deep.namespace.Application&quot; class needs to change the old resource declaration <code>#resource(image:image)</code> to <code>#resource(custom.image:image)</code>. This change makes it possible to add paths to already existing resource identifiers e.g. <code>qx.icontheme</code>.</div>
+</li>
+<li class="level1"><div class="li"> Modified build system to only accept (the <code>#</code> prefixed) meta information that is declared at the beginning of a line.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Changes" [4399-5023] -->
+<h2 class="sectionedit5"><a name="improvements_fixes" id="improvements_fixes">Improvements &amp; Fixes</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT5 SECTION "Improvements & Fixes" [5024-5057] -->
+<h3 class="sectionedit6"><a name="demo_browser" id="demo_browser">Demo Browser</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Cascading Style Sheets">CSS</acronym> no longer needed</div>
+</li>
+<li class="level1"><div class="li"> Profiling support was added to the demo browser (including additional controls in the menu bar)</div>
+</li>
+<li class="level1"><div class="li"> Runtime switching of themes can now easily be demonstrated for any demo (by additional controls in the menu bar)</div>
+</li>
+<li class="level1"><div class="li"> Code of demo browser was cleaned up and restructured to a great extend</div>
+</li>
+<li class="level1"><div class="li"> Log-level of demo browser was reduced in built version</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Demo Browser" [5058-5458] -->
+<h3 class="sectionedit7"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="core" id="core">Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Performance tweaking of  <code>qx.dom.String.escapeEntities()</code></div>
+</li>
+<li class="level1"><div class="li"> <code>toCamelCase()</code>, <code>startsWith()</code> and <code>endsWith()</code> of class <code>qx.lang.String</code> were improved regarding their performance</div>
+</li>
+<li class="level1"><div class="li"> NumberFormat fixed for processing of non-trivial floating-point numbers</div>
+</li>
+<li class="level1"><div class="li"> General <code>set()</code> now also supports to set one property at time using <code>set(propertyName, propertyValue)</code>.</div>
+</li>
+<li class="level1"><div class="li"> General <code>get</code> was re-added to get the value of a property by name e.g. <code>instance.get(propertyName);</code></div>
+</li>
+<li class="level1"><div class="li"> General <code>reset</code> was added to reset the value of a property by name e.g. <code>instance.reset(propertyName);</code></div>
+</li>
+<li class="level1"><div class="li"> Performance of runtime namespace generation was improved</div>
+</li>
+<li class="level1"><div class="li"> Performance of Settings and Variants improved</div>
+</li>
+<li class="level1"><div class="li"> Settings and Variants can now be selected by the query string of the initial application Url (feature disabled by default)</div>
+</li>
+<li class="level1"><div class="li"> Selection of <code>box-sizing</code> attribute was improved. This fixed layout issues in Safari 3 Beta.</div>
+</li>
+<li class="level1"><div class="li"> Aspect-oriented programming now built into qooxdoo (<code>qx.core.Aspect</code>)</div>
+</li>
+<li class="level1"><div class="li"> Minor tweaks to <code>qx.core.Log</code> (improved Webkit compatibility)</div>
+</li>
+<li class="level1"><div class="li"> <code>WindowAppender</code> was improved (popup handling, filtering support, layout, …)</div>
+</li>
+<li class="level1"><div class="li"> Fixed disposer issues in <code>qx.core.Object</code></div>
+</li>
+<li class="level1"><div class="li"> <code>IframeTransport</code> now correctly switches to <code>sending</code> state when starting backend communication</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="user_interface" id="user_interface">User Interface</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Support for <code>keyCode</code> property was removed. Please use <code>keyIdentifier</code> instead.</div>
+</li>
+<li class="level1"><div class="li"> The interactive performance of the tree was dramatically improved - especially in Internet Explorer</div>
+</li>
+<li class="level1"><div class="li"> Better routine to disable text selection in Internet Explorer. This also improves interactive performance of widgets like <code>Window</code>, etc.</div>
+</li>
+<li class="level1"><div class="li"> Focus/Blur improvements (in particular for text fields)</div>
+</li>
+<li class="level1"><div class="li"> Fixes some issues with caret positioning inside TextFields in Internet Explorer</div>
+</li>
+<li class="level1"><div class="li"> Minor bugfixes to <code>Spinner</code> and <code>ComboBox</code> to allow for a more flexible layout. </div>
+</li>
+<li class="level1"><div class="li"> <code>BackgroundColor</code> support for both <code>Spinner</code> and <code>ComboBox</code> was fixed.</div>
+</li>
+<li class="level1"><div class="li"> Table row colors are now defined by the regular color themes</div>
+</li>
+<li class="level1"><div class="li"> Improved caching algorithm behind the theming system</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues with image preloader when non-visible images (or unused images) were preloaded (produced 404 errors in some applications)</div>
+</li>
+<li class="level1"><div class="li"> Many small improvements to key event handling were made, especially with respect to cross-browser differences</div>
+</li>
+<li class="level1"><div class="li"> Mouse wheel support in gecko-based browsers was fixed</div>
+</li>
+<li class="level1"><div class="li"> <code>Ext</code> theme can now be used standalone. The <code>extend</code> attribute to <code>Classic</code> was removed. This change should reduce the size of final applications that only depend on the <code>Ext</code> theme.</div>
+</li>
+<li class="level1"><div class="li"> Fixed small Atom issue with combination of icon, text and show property, which might have led to errors when the parent was defined before (related to inheritance of show property)</div>
+</li>
+<li class="level1"><div class="li"> Design of scrollbar blocker is now defineable through the appearance system</div>
+</li>
+<li class="level1"><div class="li"> <code>ResizeablePopup</code> was renamed to <code>ResizablePopup</code> (without <code>e</code>)</div>
+</li>
+<li class="level1"><div class="li"> <code>Table</code> now correctly supports font handling introduced with 0.7 (by inheritance)</div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>underline</code> support in <code>Font</code> class</div>
+</li>
+<li class="level1"><div class="li"> Global cursor handling was dramatically improved regarding performance (especially for Internet Explorer)</div>
+</li>
+<li class="level1"><div class="li"> Events were added for <code>Widget</code> properties: <code>backgroundColor</code>, <code>zIndex</code>, <code>textColor</code>, <code>border</code>, <code>font</code>, <code>overflow</code> and <code>tabIndex</code></div>
+</li>
+<li class="level1"><div class="li"> All outstanding Webkit and Safari 3 layout and reflow issues were fixed</div>
+</li>
+<li class="level1"><div class="li"> Overflow handling was improved (fixing issues with <code>scrollX</code> and <code>scrollY</code> in Internet Explorer)</div>
+</li>
+<li class="level1"><div class="li"> <code>readOnly</code> state for <code>TextField</code> was added (useful for appearance themes)</div>
+</li>
+<li class="level1"><div class="li"> <code>textColor</code> property of <code>TextField</code> was fixed</div>
+</li>
+<li class="level1"><div class="li"> In order to control the built-in spellcheck feature in Firefox 2.0 a <code>spellCheck</code> property was added to <code>TextField</code>, <code>TextArea</code></div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation of <code>qx.ui.window.Window</code> was extended</div>
+</li>
+<li class="level1"><div class="li"> Iframe <code>load</code> event has got a major improvement and fires correctly now in all supported browsers (even <acronym title="Internet Explorer">IE</acronym>)</div>
+</li>
+<li class="level1"><div class="li"> <code>reload()</code> was fixed and improved in <code>Iframe</code> class.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Framework" [5459-] --></div>
+</body>
+</html>

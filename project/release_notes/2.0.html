@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:2.0</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-06-21T19:29:25+0200"/>
+<meta name="keywords" content="project,release_notes,2.0"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/2.0?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/2.0"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/2.0"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/2.0"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:2.0","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes_enhancements" class="toc">Bugfixes &amp; Enhancements</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#event" class="toc">Event</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#data_binding" class="toc">Data Binding</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#browser_support" class="toc">Browser Support</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxwebsite" class="toc">qx.Website</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxdesktop" class="toc">qx.Desktop</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#ui_core" class="toc">UI Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#form" class="toc">Form</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#layouts" class="toc">Layouts</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#widgets" class="toc">Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#virtual_widgets" class="toc">Virtual Widgets</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#theming" class="toc">Theming</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxmobile" class="toc">qx.Mobile</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxserver" class="toc">qx.Server</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#library" class="toc">Library</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#portal" class="toc">Portal</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#api_viewer" class="toc">API Viewer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#test_runner" class="toc">Test Runner</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#skeletons" class="toc">Skeletons</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#generation" class="toc">Generation</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#configuration" class="toc">Configuration</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#optimization" class="toc">Optimization</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#internationalization" class="toc">Internationalization</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#api_changes" class="toc">API Changes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#missing_features_known_issues" class="toc">Missing Features / Known Issues</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_20_2012-06-21" id="qooxdoo_20_2012-06-21">qooxdoo 2.0 (2012-06-21)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 2.0 (2012-06-21)" [1-42] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a new <a href="/project/releases" class="wikilink1" title="project:releases">major release</a>, which comes with many new features and improvements besides a large number of bugfixes. 
+</p>
+
+<p>
+Despite being a major release, only a limited number of manual migration steps may be necessary for upgrading from the previous 1.6.x releases. See the <a href="#migration" title="project:release_notes:2.0 &crarr;" class="wikilink1">Migration section</a> to determine if your apps are affected. As with most releases there might also be deprecation warnings in the development version, but those shouldn&#039;t negatively affect the production version of your app. It is nevertheless suggested to get rid of those warnings early. If you need a bugfix-only drop-in replacement, you might want to check-out <a href="/project/release_notes/1.6.1" class="wikilink1" title="project:release_notes:1.6.1">qooxdoo 1.6.1</a>, the corresponding patch release.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [43-798] -->
+<h2 class="sectionedit3"><a name="bugfixes_enhancements" id="bugfixes_enhancements">Bugfixes &amp; Enhancements</a></h2>
+<div class="level2">
+
+<p>
+See this detailed list of more than 350 <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0&amp;target_milestone=1.6.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0&amp;target_milestone=1.6.1&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 2.0</a>, which includes the fixes of the accompanying <a href="/project/release_notes/1.6.1" class="wikilink1" title="project:release_notes:1.6.1">qooxdoo 1.6.1</a> patch release. 
+</p>
+
+<p>
+Besides fixes for defects, many enhancements made it into qooxdoo 2.0. <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">See here</a> for a detailed list of issues that were resolved for 2.0 exclusively.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes & Enhancements" [799-1659] -->
+<h2 class="sectionedit4"><a name="core" id="core">Core</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Changed Environment keys (covered by migration job):</div>
+<ul>
+<li class="level2"><div class="li"> <code>qx.disposerDebugLevel</code> → <code>qx.debug.dispose.level</code></div>
+</li>
+<li class="level2"><div class="li"> <code>qx.propertyDebugLevel</code> → <code>qx.debug.property.level</code></div>
+</li>
+<li class="level2"><div class="li"> <code>qx.ioRemoteDebug</code> → <code>qx.debug.io.remote</code></div>
+</li>
+<li class="level2"><div class="li"> <code>qx.ioRemoteDebugData</code> → <code>qx.debug.io.remote.data</code></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Add support for namespace-less classes, i.e. classes with a bare name, without a &quot;.&quot; in it, like &quot;Foo&quot;. Mind that this increases the risk of name clashes across libraries. <em>(experimental)</em></div>
+</li>
+<li class="level1"><div class="li"> New LibraryManager provides read/write access to library-specific information, e.g. resource URIs</div>
+</li>
+<li class="level1"><div class="li"> Added stacktrace properties to BaseError, GlobalError and WindowError for compatibility with qx.dev.StackTrace.getStackTrace.</div>
+</li>
+<li class="level1"><div class="li"> Scripts will be loaded in parallel but executed in order in browsers that support the script element&#039;s &quot;async&quot; attribute.</div>
+</li>
+<li class="level1"><div class="li"> Fixed Array handling in qx.lang.Object.toUriParameter.</div>
+</li>
+<li class="level1"><div class="li"> Replace <acronym title="Internet Explorer">IE</acronym>&#039;s incomplete Error.toString with qx.lang.Core.errorToString.</div>
+</li>
+<li class="level1"><div class="li"> Fixed event data on qx.data.Array. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6154" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6154">6154</a>)</div>
+</li>
+<li class="level1"><div class="li"> Removed warning for images loaded via data <acronym title="Uniform Resource Locator">URL</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Commands don&#039;t override themed icons anymore. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5906" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5906">5906</a>)</div>
+</li>
+<li class="level1"><div class="li"> Serializer processes inherited properties now. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5559" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5559">5559</a>)</div>
+</li>
+<li class="level1"><div class="li"> If an assertion check throws an error, the message will include responsible arguments with values of undefined as &#039;undefined&#039;. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6282" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6282">6282</a>)</div>
+</li>
+<li class="level1"><div class="li"> New environment key &quot;qx.blankpage&quot; for blank.html resource implemented. All statements in framework using blank page are now bound to this key. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6332" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6332">6332</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Core" [1660-3214] -->
+<h3 class="sectionedit5"><a name="event" id="event">Event</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added minimalistic event emitter class. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4983" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4983">4983</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added a routing class. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4795" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4795">4795</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Event" [3215-3334] -->
+<h3 class="sectionedit6"><a name="data_binding" id="data_binding">Data Binding</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed support for multiple mixins for the JSON marsahler. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6445" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6445">6445</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added the possibility to change the property names in your created models. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5907" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5907">5907</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added property and item to the changeBubble event. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5942" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5942">5942</a>)</div>
+</li>
+<li class="level1"><div class="li"> sort() method of qx.data.Array was firing events (change, changeBubble) although nothing has changed on the array. In this case we are now preventing these events.(#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6213" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6213">6213</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Data Binding" [3335-3785] -->
+<h3 class="sectionedit7"><a name="browser_support" id="browser_support">Browser Support</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Feature detection for <acronym title="Cascading Style Sheets">CSS</acronym> border-image syntax to cope with differences between prefixed and non-prefixed/<acronym title="specification">spec</acronym>-compliant implementations.</div>
+</li>
+<li class="level1"><div class="li"> Fixed animation for IE10.</div>
+</li>
+<li class="level1"><div class="li"> Fixed gradient calculation for IE10. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513">6513</a>)</div>
+</li>
+<li class="level1"><div class="li"> Cleand up storage implementation and added <acronym title="Internet Explorer">IE</acronym> fallback. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=49" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=49">49</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Browser Support" [3786-4114] -->
+<h2 class="sectionedit8"><a name="qxwebsite" id="qxwebsite">qx.Website</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Added support to build RequireJS packages. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6041" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6041">6041</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added a reverse method for animations. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2371" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=2371">2371</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added JavaScript Fallback for CSS3 animations. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6068" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6068">6068</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added a tutorial. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6418" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6418">6418</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added a dedicated <acronym title="Application Programming Interface">API</acronym> viewer for qx.Website. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6314" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6314">6314</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added support for IE8 to qx.bom.IframeHistory. Even though IE8 can natively use &quot;hashchange&quot; events, it fails if qooxdoo runs in an iframe. Therefore we need to poll a helper iframe like in in <acronym title="Internet Explorer 6">IE6</acronym>/7 (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6194">6194</a>)(#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6521" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6521">6521</a>)</div>
+</li>
+<li class="level1"><div class="li"> Support for textShadow in qx.bom.Font implemented. This property can be used in themes. The value can be any valid string like specified in <a href="https://developer.mozilla.org/en/CSS/text-shadow" class="urlextern" title="https://developer.mozilla.org/en/CSS/text-shadow">MDN</a>. Currently there is no fall back for <acronym title="Internet Explorer">IE</acronym> browsers. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5554" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5554">5554</a>)</div>
+</li>
+<li class="level1"><div class="li"> If running qooxdoo in iframe, iOS Safari just provides &quot;orientationChange&quot; event and window.orientation property only on top frames. Therefore the default window object is now window.top in qx.event.handler.Orientation and qx.bom.Viewport. But this can cause a same-origin policy exception if the top frame is not in same domain as the qooxdoo app. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5554" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5554">5554</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "qx.Website" [4115-5301] -->
+<h2 class="sectionedit9"><a name="qxdesktop" id="qxdesktop">qx.Desktop</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> qx.ui.core.queue.Widget.add() can be called with a job identifier. You can check for this identifier in the <em>.syncWidget(jobs)</em> method of qx.ui.core.Widget (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6336" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6336">6336</a>)</div>
+</li>
+<li class="level1"><div class="li"> In some cases it is useful to destroy a container widget and its children recursively. qx.util.DisposeUtil.destroyContainer(container) can handle that. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6306" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6306">6306</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "qx.Desktop" [5302-5675] -->
+<h3 class="sectionedit10"><a name="ui_core" id="ui_core">UI Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added events for width and height changes. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6385" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6385">6385</a>)</div>
+</li>
+<li class="level1"><div class="li"> The <em>rgbToHexString</em> method now returns the hex6 string including the leading &quot;#&quot; character. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6316" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6316">6316</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added spread radius (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6216" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6216">6216</a>) and inset (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6192" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6192">6192</a>) property for box shadow decorator.</div>
+</li>
+<li class="level1"><div class="li"> Improved overall scroll handling.</div>
+</li>
+<li class="level1"><div class="li"> qx.ui.core.Blocker fires now two new events: &quot;blocked&quot; and &quot;unblocked&quot; (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6351" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6351">6351</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "UI Core" [5676-6102] -->
+<h3 class="sectionedit11"><a name="form" id="form">Form</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Form now supports the virtual select box. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5711" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5711">5711</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Form" [6103-6180] -->
+<h3 class="sectionedit12"><a name="layouts" id="layouts">Layouts</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Adding any object which is not a qx.ui.core.LayoutItem now throws an error which points you to that issue (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6281" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6281">6281</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Layouts" [6181-6325] -->
+<h3 class="sectionedit13"><a name="widgets" id="widgets">Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> It&#039;s now possible to access the instance from an error tooltip. This opens some new ways to coustomize for example the validation. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6309" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6309">6309</a>)</div>
+</li>
+<li class="level1"><div class="li"> Properly disable resizing for disabled widgets e.g. windows. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6516" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6516">6516</a>)</div>
+</li>
+<li class="level1"><div class="li"> qx.ui.table.Table is now scrollable by touch events. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6367" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6367">6367</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Widgets" [6326-6650] -->
+<h3 class="sectionedit14"><a name="virtual_widgets" id="virtual_widgets">Virtual Widgets</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed infinity loop for one selection when the last item from the VirtualList is removed. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6340" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6340">6340</a>)</div>
+</li>
+<li class="level1"><div class="li"> Nested RadioGroupBox are now correct disabled when parent is disabled. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5445" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5445">5445</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Virtual Widgets" [6651-6879] -->
+<h3 class="sectionedit15"><a name="theming" id="theming">Theming</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added support for styling modal windows differently than non-modal ones (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6363" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6363">6363</a>)</div>
+</li>
+<li class="level1"><div class="li"> Make themed fonts aware of colors from the color theme. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6496" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6496">6496</a>)</div>
+</li>
+<li class="level1"><div class="li"> Table shows its disabled state. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5880" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5880">5880</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added gradient fallback for <acronym title="Internet Explorer">IE</acronym>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6193" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6193">6193</a>)</div>
+</li>
+<li class="level1"><div class="li"> Changed the look of the tabview in the simple theme.</div>
+</li>
+<li class="level1"><div class="li"> Added new Theme named <em>Indigo</em>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6233" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6233">6233</a>)</div>
+</li>
+<li class="level1"><div class="li"> The error popup now can have the arrow on the right side if the popup is shown right to the widget. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6308" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6308">6308</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT15 SECTION "Theming" [6880-7402] -->
+<h2 class="sectionedit16"><a name="qxmobile" id="qxmobile">qx.Mobile</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Removed experimental status.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Tablet device support, out of the box.</div>
+<ul>
+<li class="level2"><div class="li"> <acronym title="Application Programming Interface">API</acronym> change for <code>qx.ui.mobile.page.NavigationPage</code>. NavigationPages have to be added to <code>qx.ui.mobile.page.Manager</code> before <code>show()</code> is called.</div>
+</li>
+<li class="level2"><div class="li"> Added <code>qx.ui.mobile.container.MasterDetail</code> for tablet layout view. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6381" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6381">6381</a>)</div>
+</li>
+<li class="level2"><div class="li"> Added <code>qx.ui.mobile.page.Manager</code> as a convenience layer for tablet/mobile layout distinction. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6381" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6381">6381</a>)</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added qooxdoo mobile theme (Indigo). (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4800" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=4800">4800</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added theme switcher to qx.Mobile showcase. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5955" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5955">5955</a>)</div>
+</li>
+<li class="level1"><div class="li"> Many styling improvements in mobile themes (iOS, Android and Indigo)</div>
+</li>
+<li class="level1"><div class="li"> Split up theme.less to widgetXY.less → refactored mobile theming. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6383" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6383">6383</a>)</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.ui.mobile.form.ToggleButton</code> is now able to display custom state text. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6453" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6453">6453</a>)</div>
+</li>
+<li class="level1"><div class="li"> New <code>qx.ui.mobile.form.CheckBox</code> and <code>qx.ui.mobile.form.RadioButton</code> style for Android and Indigo theme, optimized for mobile usage (same appearance on desktop/mobile, bigger touch area).</div>
+</li>
+<li class="level1"><div class="li"> Added device-specific <code>qx.ui.mobile.form.ToggleButton</code> styling (Android/iOS). (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5393" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5393">5393</a>)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> New widget <code>qx.ui.mobile.form.NumberField</code> (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5603" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5603">5603</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qx.ui.mobile.dialog.Menu</code> widget. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6237" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6237">6237</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qx.ui.mobile.form.RadioGroup</code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6294" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6294">6294</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added own <code>qx.ui.mobile.form.SelectBox</code> implementation (same appearance on all browser/devices). (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6054" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6054">6054</a>)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added <code>device.type</code> environment variable for device class detection (Desktop,Tablet or Mobile) (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6392" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6392">6392</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added Basic and Data Binding Page to qx.Mobile showcase. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6304" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6304">6304</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed unwanted page scrolling during text input focus, when iScroll is used. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6300" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6300">6300</a>)</div>
+</li>
+<li class="level1"><div class="li"> Toolbar buttons shows text ellipsis.  (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5873" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=5873">5873</a>)</div>
+</li>
+<li class="level1"><div class="li"> Mobile tests can be executed in Mozilla Firefox. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6122" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6122">6122</a>)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>hasCssClass()</code> and <code>toggleCssClass()</code> to <code>qx.ui.mobile.core.Widget</code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6219" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6219">6219</a>) (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6379" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6379">6379</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT16 SECTION "qx.Mobile" [7403-9388] -->
+<h2 class="sectionedit17"><a name="qxserver" id="qxserver">qx.Server</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT17 SECTION "qx.Server" [9389-9411] -->
+<h3 class="sectionedit18"><a name="library" id="library">Library</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Renamed library files (to comply with qx.Website):</div>
+<ul>
+<li class="level2"><div class="li"> <code>qx-oo.js</code> → <code>qx-oo.min.js</code></div>
+</li>
+<li class="level2"><div class="li"> <code>qx-oo-noopt.js</code> → <code>qx-oo.js</code></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT18 SECTION "Library" [9412-9566] -->
+<h2 class="sectionedit19"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT19 SECTION "Applications" [9567-9592] -->
+<h3 class="sectionedit20"><a name="portal" id="portal">Portal</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The Portal app has been turned into a Demobrowser demo, and removed from the standard apps.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT20 SECTION "Portal" [9593-9706] -->
+<h3 class="sectionedit21"><a name="api_viewer" id="api_viewer">API Viewer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Class and method documentation can now be enhanced with automatically generated links to an SCM&#039;s web view, e.g. GitHub.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT21 SECTION "API Viewer" [9707-9853] -->
+<h3 class="sectionedit22"><a name="test_runner" id="test_runner">Test Runner</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The Widget and <acronym title="HyperText Markup Language">HTML</acronym> views will now display results of performance tests (using qx.dev.unit.MMeasure). The specialized Performance view is deprecated.</div>
+</li>
+<li class="level1"><div class="li"> Test definitions for the Portable Testrunner support custom namespaces to improve the  readability of the results list.</div>
+</li>
+<li class="level1"><div class="li"> Configuration options (such as macro definitions or environment settings) defined in the &quot;common&quot; job are now applied to the application under test (AUT).</div>
+</li>
+<li class="level1"><div class="li"> Unit tests can now be skipped by calling <em>this.skip()</em>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT22 SECTION "Test Runner" [9854-10375] -->
+<h3 class="sectionedit23"><a name="skeletons" id="skeletons">Skeletons</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Renamed skeletons to comply with component names (this affects creating new apps):</div>
+<ul>
+<li class="level2"><div class="li"> <code>bom</code> → <code>website</code></div>
+</li>
+<li class="level2"><div class="li"> <code>basic</code> → <code>server</code></div>
+</li>
+<li class="level2"><div class="li"> <code>gui</code> → <code>desktop</code></div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT23 SECTION "Skeletons" [10376-10572] -->
+<h2 class="sectionedit24"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT24 SECTION "Tooling" [10573-10593] -->
+<h3 class="sectionedit25"><a name="generation" id="generation">Generation</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> New parser for compiles, build output formatting and api data extraction.</div>
+</li>
+<li class="level1"><div class="li"> The compile cache will use less disk space, as cache objects are now compressed.</div>
+</li>
+<li class="level1"><div class="li"> New <code>generate.py</code> command line option <em>–no-progress-indicator</em> to suppress rotating dash progress indication; this is interesting for batch runs which are logged.</div>
+</li>
+<li class="level1"><div class="li"> The <code>api</code> job now warns about missing package docs (which go into <em>__init__.js</em> files).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT25 SECTION "Generation" [10594-11054] -->
+<h3 class="sectionedit26"><a name="configuration" id="configuration">Configuration</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <em>compile-options/code/optimize</em>: New optimization keys [ <code>&quot;whitespace&quot;</code>, <code>&quot;comments&quot;</code> ] to activate whitespace (compression) and comment removal individually (both are on by default).</div>
+</li>
+<li class="level1"><div class="li"> <del><em>compile-options/paths/scripts-add-hash</em></del>: This key is deprecated, as script names (except for the loader script) contain a hash part anyway.</div>
+</li>
+<li class="level1"><div class="li"> <em>translate/poentry-with-occurrences</em>: Allows you to disable occurrences comments in <code>.po</code> files (comments of the kind &quot;<em>#: qx/locale/Key.js:80</em>&quot; that list the occurrences of a key in the code); we felt they don&#039;t provide much help but create a lot of noise when you revision-control .po files, and after a <em>generate.py translation</em> only changed locations with otherwise unchanged keys would result in a diff. Still on by default.</div>
+</li>
+<li class="level1"><div class="li"> <em>log/dependencies/phase</em>: Allow <code>null</code> value to include both run-time and load-time dependencies.</div>
+</li>
+<li class="level1"><div class="li"> <em>combine-images/montage-cmd</em>: New key exposes the ImageMagick <em>montage</em> command line.</div>
+</li>
+<li class="level1"><div class="li"> <em>slice-images/convert-cmd</em>: New key exposes the ImageMagick <em>convert</em> command line.</div>
+</li>
+<li class="level1"><div class="li"> New <code><a href="http://manual.qooxdoo.org/2.0/pages/tool/generator_config_macros.html" class="urlextern" title="http://manual.qooxdoo.org/2.0/pages/tool/generator_config_macros.html">ADD_NOCACHE_PARAM</a></code> config macro, to tailor <em><a href="http://manual.qooxdoo.org/2.0/pages/tool/generator_config_ref.html#compile-options" class="urlextern" title="http://manual.qooxdoo.org/2.0/pages/tool/generator_config_ref.html#compile-options">compile-options/uris/add-nocache-param</a></em>.</div>
+</li>
+<li class="level1"><div class="li"> <em>compile-options/paths/file-prefix</em>: New key to add the contents of a file at the top of generated script files (e.g. a copyright header).</div>
+</li>
+<li class="level1"><div class="li"> <em>generate.py</em> now ignores commented-out QOOXDOO_PATH entries in config.json.</div>
+</li>
+<li class="level1"><div class="li"> <em>generate.py</em> now honors <code>-c/–config</code> command-line options (so particularly will use QOOXDOO_PATH from the given configuration file).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT26 SECTION "Configuration" [11055-12796] -->
+<h3 class="sectionedit27"><a name="optimization" id="optimization">Optimization</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Support for optimizing logical expression during variant optimization, like in <code>if (qx.core.Environment.get(&quot;foo&quot;) &amp;&amp; qx.core.Environment(&quot;bar&quot;))</code>.</div>
+</li>
+<li class="level1"><div class="li"> The generator now warns if both <em>variants</em> optimization and the <em>qx.allowUrlSettings</em> environment setting are enabled in the same build, as you then can only influence settings through <acronym title="Uniform Resource Locator">URL</acronym> parameters that are <em>not</em> set as variants in the config.</div>
+</li>
+<li class="level1"><div class="li"> In <em>build</em> versions of an app, <em>format</em> is now false by default (i.e. no extra line breaks will be inserted in the optimized code); re-enable with <em>compile-options/code/format:true</em>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT27 SECTION "Optimization" [12797-13425] -->
+<h3 class="sectionedit28"><a name="internationalization" id="internationalization">Internationalization</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The Norwegian language code <code>no</code> has been removed from the CLDR data. Please use <code>nb</code> (&quot;Norwegian Bokmål&quot;, which &quot;no&quot; used to redirect to) or <code>nn</code> (&quot;Norwegian Nynorsk&quot;) instead. &quot;NO&quot; as territory code is ok (as in &quot;nb_NO&quot;).</div>
+</li>
+<li class="level1"><div class="li"> Updated CLDR data to 21.0.1.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT28 SECTION "Internationalization" [13426-13727] -->
+<h2 class="sectionedit29"><a name="documentation" id="documentation">Documentation</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Major overhaul of the manual to reflect the new components (qx.Website, qx.Desktop, qx.Mobile, qx.Server).</div>
+</li>
+<li class="level1"><div class="li"> New manual page about <a href="http://manual.qooxdoo.org/2.0/pages/development/library_custom.html" class="urlextern" title="http://manual.qooxdoo.org/2.0/pages/development/library_custom.html">custom libraries</a>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT29 SECTION "Documentation" [13728-13983] -->
+<h2 class="sectionedit30"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Configuration: If you have overridden settings of the <em>OPTIMIZE</em> macro or <em>compile-options/code/optimize</em> config key you need to add [ <code>&quot;whitespace&quot;</code>, <code>&quot;comments&quot;</code> ] if you want to retain those optimizations. </div>
+</li>
+<li class="level1"><div class="li"> Deprecated the <code>qx.fx.*</code> animation layer in favor of <code>qx.bom.element.Animation</code> (CSS3 animations + JavaScript fallback). (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6075" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6075">6075</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT30 SECTION "Migration" [13984-14374] -->
+<h3 class="sectionedit31"><a name="api_changes" id="api_changes">API Changes</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code>qx.util.ColorUtil.rgbToHexString()</code> returns the hex string with a leading &quot;#&quot;.</div>
+</li>
+<li class="level1"><div class="li"> <code>qx.bom.Storage</code> takes the role of removed (experimental) classes <code>qx.bom.storage.(Abstract|Local|Session)</code>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT31 SECTION "API Changes" [14375-14602] -->
+<h3 class="sectionedit32"><a name="missing_features_known_issues" id="missing_features_known_issues">Missing Features / Known Issues</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The support to inspect mobile applications with the Inspector is broken. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6480" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6480">6480</a>) </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT32 SECTION "Missing Features / Known Issues" [14603-] --></div>
+</body>
+</html>

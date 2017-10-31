@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.6.6</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T10:32:15+0200"/>
+<meta name="keywords" content="project,release_notes,0.6.6"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.6.6?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.6.6"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.6.6"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.6.6"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.6.6","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="qooxdoo_066_2007-03-06" id="qooxdoo_066_2007-03-06">qooxdoo 0.6.6 (2007-03-06)</a></h1>
+<div class="level1">
+
+<p>
+This is expected to be a &quot;true&quot; minor release, which mostly includes bugfixes and internal modifications, but no new functionality or <acronym title="Application Programming Interface">API</acronym> changes. 
+</p>
+
+<p>
+Well, it does in fact include one <acronym title="Application Programming Interface">API</acronym> change: the previous <code>qx.Class</code>, which is used to attach static members, is going to be replaced by <code>qx.Clazz</code>. This change will remove a potential naming conflict with a future release 0.7 that will include <a href="http://attic.qooxdoo.org/documentation/0.7/class_declaration" class="urlextern" title="http://attic.qooxdoo.org/documentation/0.7/class_declaration">qooxdoo&#039;s improved OO features</a>.
+</p>
+
+<p>
+It is recommended that every qooxdoo application is to be migrated to this version, as it is expected to be the most stable and as a milestone for a migration to qooxdoo 0.7. 
+</p>
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.6.6 (2007-03-06)" [1-716] -->
+<h3 class="sectionedit2"><a name="framework" id="framework">Framework</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="additions" id="additions">Additions</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Introduced a &quot;Quickstart&quot; application that allows users that are new to qooxdoo and want to evaluate the framework to do so without the need to install any software. They get a simple pre-build application that runs out-of-the-box. Its single Javascript application file can be modified and any changes are immediately visible just by reloading the application in the browser. Of course, to take advantage of all the powerful development tools that come with qooxdoo, any serious application development would use the pre-configured skeletons for all the next steps.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added new auto-flush system for widget queues, which should make manual flush calls (<code>qx.ui.core.Widget.flushGlobalQueues()</code>) obsolete.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Greatly improved virtual tree <code>qx.ui.treevirtual.TreeVirtual</code>. Please note that this widget is still in active development.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added <code>qx.ui.table.AbstractResizeBehavior</code> (An abstract resize behavior. All resize behaviors should extend this class.)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qx.ui.table.ResizeTableColumnModel</code> (A table column model that automagically resizes columns based on a selected behavior.)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qx.ui.table.DefaultResizeBehavior</code>.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>iterateCachedRows</code> to the <code>RemoteTableModel</code>.</div>
+</li>
+<li class="level1"><div class="li"> Added support for form fields to <code>qx.io.remote</code> classes to improve the usability of POST http requests. Regarded as a temporary improvement before a future transport <acronym title="Application Programming Interface">API</acronym> consolidation.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qx.dev.Debug</code> class with some useful debug functions.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added &quot;check&quot; target to top-level Makefile in frontend folder to make sure all required tools are installed (<code>make check</code>).</div>
+</li>
+<li class="level1"><div class="li"> Added support for user flags in Makefile-based build system.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="changes_bugfixes" id="changes_bugfixes">Changes &amp; Bugfixes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The only major <acronym title="Application Programming Interface">API</acronym> change in this release: <code>qx.Class</code> has been renamed to <code>qx.Clazz</code> to avoid a future name clash with 0.7.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed issue of IE7&#039;s native XmlHttpRequest, that would not allow for local file access.</div>
+</li>
+<li class="level1"><div class="li"> Improved memory management by correcting various disposer issues in <code>qx.log.Logger</code>, <code>qx.event.handler.KeyEventHandler</code>, <code>qx.locale.LocaleManager</code>, <code>qx.ui.table.TablePane</code>, <code>qx.ui.table.DefaultDataRowRenderer</code>, <code>qx.ui.core.ClientDocument</code>, <code>qx.ui.core.ScrollBar</code>, <code>qx.util.format.DateFormat</code></div>
+</li>
+<li class="level1"><div class="li"> Improved cache control handling in <code>qx.io.remote</code> classes (added cache control headers etc.)</div>
+</li>
+<li class="level1"><div class="li"> Fixed minor issue in sample application using Internet Explorer (local path issue)</div>
+</li>
+<li class="level1"><div class="li"> Fixed selection of tree items. If a tree item is set to selected, the tree hierarchy is opened accordingly, making the selected item visible. </div>
+</li>
+<li class="level1"><div class="li"> Fixed version parser qx.core.Version to correctly handle versioned maintenance numbers (e.g. beta1, rc2, …)</div>
+</li>
+<li class="level1"><div class="li"> Improved common disposer code </div>
+</li>
+<li class="level1"><div class="li"> Improved disposer debugging options</div>
+</li>
+<li class="level1"><div class="li"> Fixed Mac detection in <code>qx.core.Client</code> regarding PPC machines</div>
+</li>
+<li class="level1"><div class="li"> Fixed minor issues regarding disabled tables when key events occour.</div>
+</li>
+<li class="level1"><div class="li"> Fixed an IE7 selection bug during mousemove for <code>qx.ui.window.Window</code>.</div>
+</li>
+<li class="level1"><div class="li"> Fixed tooltip support <code>qx.ui.embed.GalleryList</code> and <code>qx.ui.embed.Gallery</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed <acronym title="Secure Sockets Layer">SSL</acronym> issue in <code>qx.ui.embed.Iframe</code> (background image)</div>
+</li>
+<li class="level1"><div class="li"> Fixed issue in <code>GuiBuilder</code> to support menu buttons</div>
+</li>
+<li class="level1"><div class="li"> Fixed minor issues in <code>NumberFormat</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed <code>qx.dev.Pollution</code> to better ignore native code.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Improved readability of <code>applyStyle</code> functions in <code>qx.ui.core.Widget</code>.</div>
+</li>
+<li class="level1"><div class="li"> Improved documentation of classes in <code>qx.io.remote</code>. Converted old qtdoc comments to javadoc.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Framework" [717-4227] -->
+<h3 class="sectionedit3"><a name="backend" id="backend">Backend</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Fixed float types in Java based <acronym title="Remote Procedure Call">RPC</acronym> implementation</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Backend" [4228-] --></div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:2.0.2</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-09-12T11:31:51+0200"/>
+<meta name="keywords" content="project,release_notes,2.0.2"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/2.0.2?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/2.0.2"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/2.0.2"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/2.0.2"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:2.0.2","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#summary" class="toc">Summary</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#bugfixes" class="toc">Bugfixes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxwebsite" class="toc">qx.Website</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxmobile" class="toc">qx.Mobile</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#qxdesktop" class="toc">qx.Desktop</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tooling" class="toc">Tooling</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#known_issues" class="toc">Known Issues</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_202_2012-09-12" id="qooxdoo_202_2012-09-12">qooxdoo 2.0.2 (2012-09-12)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 2.0.2 (2012-09-12)" [1-43] -->
+<h2 class="sectionedit2"><a name="summary" id="summary">Summary</a></h2>
+<div class="level2">
+
+<p>
+This is a <a href="http://qooxdoo.org/project/releases" class="urlextern" title="http://qooxdoo.org/project/releases">regular patch release</a>, which includes some important bug fixes but no feature enhancements over the previous release. It is fully backwards-compatible to qooxdoo 2.0.x. Nothing needs to be changed in the JavaScript code of your existing apps if they are based on the previous 2.0.1 or 2.0 releases.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Summary" [44-414] -->
+<h2 class="sectionedit3"><a name="bugfixes" id="bugfixes">Bugfixes</a></h2>
+<div class="level2">
+
+<p>
+See the corresponding bugzilla query for the <a href="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0.2&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id" class="urlextern" title="http://bugzilla.qooxdoo.org/buglist.cgi?&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;product=framework&amp;query_format=advanced&amp;target_milestone=2.0.2&amp;order=bugs.bug_severity,bugs.delta_ts%2Cmap_assigned_to.login_name%2Cbugs.bug_id">issues resolved for qooxdoo 2.0.2</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Bugfixes" [415-766] -->
+<h2 class="sectionedit4"><a name="core" id="core">Core</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed keep handling for animations. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6611" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6611">6611</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed wrong validation error messages. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6299" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6299">6299</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed an issue with parallel script loading in IE10 which broke source applications.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="data_binding" id="data_binding">Data Binding</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed wrong array index in the name data field of changeBubble events. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6406" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6406">6406</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Core" [767-1101] -->
+<h2 class="sectionedit5"><a name="qxwebsite" id="qxwebsite">qx.Website</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Fixed wrong return type when calling <code>q()</code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6592" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6592">6592</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed initial setting of headers using <code>q.io.xhr()</code>. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6736" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6736">6736</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed q&#039;s jsonp call when no callback name is given. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6742" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6742">6742</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "qx.Website" [1102-1340] -->
+<h2 class="sectionedit6"><a name="qxmobile" id="qxmobile">qx.Mobile</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Added support for Android 4.1 (Jelly Bean)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "qx.Mobile" [1341-1410] -->
+<h2 class="sectionedit7"><a name="qxdesktop" id="qxdesktop">qx.Desktop</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="ui_core" id="ui_core">UI Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed CSS3 linear gradients (prefixed vs. unprefixed implementations) (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6513">6513</a>))</div>
+</li>
+<li class="level1"><div class="li"> Fixed CSS3 border-images for Firefox 15 (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6683" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6683">6683</a>)</div>
+</li>
+<li class="level1"><div class="li"> qx.bom.element.Style.compile now uses vendor-prefixed property names if necessary.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed hiding of the table&#039;s header. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6274" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6274">6274</a>)</div>
+</li>
+<li class="level1"><div class="li"> Sync the show property of the toolbar with its children all the time. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6743" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6743">6743</a>)</div>
+</li>
+<li class="level1"><div class="li"> Fixed the selectbox cell renderer in case <code>false</code> is used as custom value. (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6780" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6780">6780</a>)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="theming" id="theming">Theming</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed appearance of the error popup in IE8.</div>
+</li>
+<li class="level1"><div class="li"> Fixed the shadow of windows in browsers not supporting <acronym title="Cascading Style Sheets">CSS</acronym> shadows.</div>
+</li>
+<li class="level1"><div class="li"> Using multiple Web Fonts in <acronym title="Internet Explorer">IE</acronym> 6/7 now works</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "qx.Desktop" [1411-2136] -->
+<h2 class="sectionedit8"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="demobrowser" id="demobrowser">Demobrowser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Minor fixes in the demos.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Applications" [2137-2213] -->
+<h2 class="sectionedit9"><a name="tooling" id="tooling">Tooling</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="generation" id="generation">Generation</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Minor fix in the dependency analysis.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Tooling" [2214-2296] -->
+<h2 class="sectionedit10"><a name="known_issues" id="known_issues">Known Issues</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Copy &amp; Paste does not work in the Playground App in Firefox (#<a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6576" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=6576">6576</a>)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Known Issues" [2297-] --></div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T14:25:01+0200"/>
+<meta name="keywords" content="project,release_notes,0.8"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#latest_changes" class="toc">Latest Changes</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#tool_chain" class="toc">Tool Chain</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#documentation" class="toc">Documentation</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#previous_changes" class="toc">Previous Changes</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#missing_features" class="toc">Missing features</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#migration" class="toc">Migration</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_08_2008-08-28" id="qooxdoo_08_2008-08-28">qooxdoo 0.8 (2008-08-28)</a></h1>
+<div class="level1">
+
+<p>
+qooxdoo 0.8 is a milestone. Unlike the minor jump in version number may suggest, this release includes tons of changes and improvements. In particular the
+UI capabilities as well as the developer tool chain were improved
+substantially.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8 (2008-08-28)" [1-278] -->
+<h2 class="sectionedit2"><a name="latest_changes" id="latest_changes">Latest Changes</a></h2>
+<div class="level2">
+
+<p>
+After qooxdoo 0.8-rc1 the following changes were made:
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Latest Changes" [279-364] -->
+<h3 class="sectionedit3"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Thanks to the input of various volunteers, the following translations were completed for both farmework and feedreader: en, de, es (Camilo), fr (Dan), it (Alessandro), sv (Henric).</div>
+</li>
+<li class="level1"><div class="li"> Added all missing destructors (and destructor entries) which resulted in zero additional hints reported by our internal memory leak testing set.</div>
+</li>
+<li class="level1"><div class="li"> Introduced many enhancements to reduce the size of maps which are dynamically reused a lot. e.g. queues, registries, etc. Previously used hash codes are now being reused. This really solves to keep memory consumption constant in <acronym title="Internet Explorer">IE</acronym> when dealing with interim disposes, for instance when parts of the <acronym title="Graphical User Interface">GUI</acronym> are replaced with other parts (and the old parts are disposed). Thanks to Stefan for stamina, patience and ideas.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues in <code>Array.min</code>/<code>Array.max</code> methods.</div>
+</li>
+<li class="level1"><div class="li"> Updated CLDR data from <code>unicode.org</code> to version 1.6.1</div>
+</li>
+<li class="level1"><div class="li"> Improved performance of application shutdown. Switching to a new web page is faster up to a factor of three.</div>
+</li>
+<li class="level1"><div class="li"> Improved checks of event handling to prevent the possibility to fire events with no target information given.</div>
+</li>
+<li class="level1"><div class="li"> Minor fix of event <code>useraction</code> to not being fired when the application is already disposed.</div>
+</li>
+<li class="level1"><div class="li"> The <acronym title="HyperText Markup Language">HTML</acronym> element (integral part of the whole <acronym title="Graphical User Interface">GUI</acronym> system) now allows to use existing elements instead of always having to create new ones. This is used by the decorator system for improved performance.</div>
+</li>
+<li class="level1"><div class="li"> Fixed support for <code>Escape</code> key in Safari.</div>
+</li>
+<li class="level1"><div class="li"> Added example for <code>MessageBus</code> and fixed implementation to be compatible to 0.8</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Core" [365-1919] -->
+<h3 class="sectionedit4"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="core1" id="core1">Core</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Many theme fixes for a better compatibility to different systems and machine setups.</div>
+</li>
+<li class="level1"><div class="li"> Fixed a major issue, that only showed up at a few IE7. There seems to be a conflict between the opacity filter and the display of stretched <acronym title="Portable Network Graphics">PNG</acronym> images when using an IMG tag. Now the AlphaImageLoader for all possible PNGs is used in IE7 as well to fix these issues. Thanks to the mailing list for the tremendous support and Maria for the great collaboration.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>qxType</code> for improved <acronym title="Document Object Model">DOM</acronym> debugging possibilities during development (only active in debug:on variant)</div>
+</li>
+<li class="level1"><div class="li"> Fixed a minor typo in Canvas layout that caused issues with maximum sizes</div>
+</li>
+<li class="level1"><div class="li"> Major fix to scrollbar handling. Previously it could happen that the scrollbar was rendered into an invisible area. Especially when toggling the content size.</div>
+</li>
+<li class="level1"><div class="li"> Improved queues for appearance, widget logic and dispose to be more friendly to <acronym title="Internet Explorer">IE</acronym>&#039;s memory issues (as described above).</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues with additive selection mode in <code>List</code>, <code>Tree</code>, etc.</div>
+</li>
+<li class="level1"><div class="li"> The unit test interface classes have made it into the framework. They are available under <code>qx.dev.unit</code>. Formerly, they were available only under the <code>testrunner</code> namespace in the application section. There is <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Aunit_testing" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Aunit_testing">revised documentation</a> on using this package.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="widgets" id="widgets">Widgets</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Added missing <code>MenuBar</code> class with custom appearance in Modern and Classic theme. Basically a toolbar with menu buttons, but with a look more typical for menu bars.</div>
+</li>
+<li class="level1"><div class="li"> Significantly improved keyboard support and cross-browser stability for interactive usage of <code>ComboBox</code> and <code>DateField</code>. The <code>Alt+Down</code> key combination should work much more reliably in this version.</div>
+</li>
+<li class="level1"><div class="li"> The <code>DateField</code> now works properly as a regular form element in qooxdoo. It supports all typical keyboard events now and correctly fires events for any changes made.</div>
+</li>
+<li class="level1"><div class="li"> Fixed issues with keyboard navigation in <code>Table</code> widget.</div>
+</li>
+<li class="level1"><div class="li"> Major improvements to <code>ColorSelector</code> and <code>ColorPopup</code> for better interaction.</div>
+</li>
+<li class="level1"><div class="li"> Converted <code>ColorPopup</code> to make use of sub controls. This was the last widget which still used manually created and managed widgets.</div>
+</li>
+<li class="level1"><div class="li"> Fixed interaction in <code>SplitPane</code> widget. There were a few oddities with wrong positioning of the splitter after releasing the mouse button.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="themes" id="themes">Themes</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> More polishing of qooxdoo themes, further consolidation to use more semantic identifiers. Replaced &quot;black&quot; decorator with &quot;main&quot; decorator.</div>
+</li>
+<li class="level1"><div class="li"> Fixed rendering of decorators in <acronym title="Internet Explorer 6">IE6</acronym>, especially the small cells of the Grid decorator made issues.</div>
+</li>
+<li class="level1"><div class="li"> Improved default styling of tree widget in <code>Modern</code> theme</div>
+</li>
+<li class="level1"><div class="li"> Fixed tiny scrollbar issues, in that the knob of the scrollbar could get too small. The new version comes with some minimum sizes to improve usability.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "GUI Toolkit" [1920-4758] -->
+<h3 class="sectionedit5"><a name="applications" id="applications">Applications</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added common header for all included qooxdoo applications</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="api_viewer" id="api_viewer">API Viewer</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Fixed a lot of <acronym title="Application Programming Interface">API</acronym> Viewer issues related to cross-linking of classes, methods and properties.</div>
+</li>
+<li class="level1"><div class="li"> Improved search table, for instance to fix all the odd scrolling issues</div>
+</li>
+<li class="level1"><div class="li"> Fixed some race-conditions in <acronym title="Application Programming Interface">API</acronym> Viewer during load of individual data files.</div>
+</li>
+<li class="level1"><div class="li"> Excluded <code>qx.test</code> and <code>qx.legacy</code> from framework <acronym title="Application Programming Interface">API</acronym> Viewer</div>
+</li>
+<li class="level1"><div class="li"> Made more use of combined images for an improved start-up time</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="feed_reader" id="feed_reader">Feed Reader</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Automatic detection of system locale was re-enabled.</div>
+</li>
+<li class="level1"><div class="li"> Fixed long-term issue with wrong feed URLs</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="demo_browser" id="demo_browser">Demo Browser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Reworked design to have a consistent look among applications. Introduced flexible pane handling. Smarter<code>SplitPane</code> usage. Improved logging console stability</div>
+</li>
+<li class="level1"><div class="li"> Added examples for Separator support. Now available for Box layouts and Dock layout.</div>
+</li>
+<li class="level1"><div class="li"> A <code>SplitPane</code> demo is now part of the widget section.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="test_runner" id="test_runner">Test Runner</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Open up first levels of navigation tree at start-up for better usability.</div>
+</li>
+<li class="level1"><div class="li"> Added tests for detecting correct destruction of widgets by means of mass creation/disposal of widgets, followed-up by checks of the internal data structures.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Applications" [4759-5985] -->
+<h3 class="sectionedit6"><a name="tool_chain" id="tool_chain">Tool Chain</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Command-line parameter usability and stability improved for <code>create-application.py</code> script.</div>
+</li>
+<li class="level1"><div class="li"> Improved handling for applications when paths contain spaces. Previously, there has been issues for users of the native Python package under Windows, and for developers whose project had a path with spaces. Both issues are fixed in the final release.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Tool Chain" [5986-6362] -->
+<h3 class="sectionedit7"><a name="documentation" id="documentation">Documentation</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Many overview pages for the framework documentation were added. This should offer a good initial overview for new users.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> documentation was added and completed. qooxdoo 0.8 is the first release that has almost full <acronym title="Application Programming Interface">API</acronym> coverage.</div>
+</li>
+<li class="level1"><div class="li"> Improved content and design of the top-level index.html of the <acronym title="Software Development Kit">SDK</acronym>.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Documentation" [6363-6703] -->
+<h2 class="sectionedit8"><a name="previous_changes" id="previous_changes">Previous Changes</a></h2>
+<div class="level2">
+
+<p>
+For a complete overview of changes during 0.8 development please also consult the previous release notes: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="/project/release_notes/0.8-rc1" class="wikilink1" title="project:release_notes:0.8-rc1">qooxdoo 0.8-rc1 (2008-08-21)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/project/release_notes/0.8-beta1" class="wikilink1" title="project:release_notes:0.8-beta1">qooxdoo 0.8-beta1 (2008-08-01)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/project/release_notes/0.8-alpha2" class="wikilink1" title="project:release_notes:0.8-alpha2">qooxdoo 0.8-alpha2 (2008-07-11)</a> </div>
+</li>
+<li class="level1"><div class="li"> <a href="/project/release_notes/0.8-alpha1" class="wikilink1" title="project:release_notes:0.8-alpha1">qooxdoo 0.8-alpha1 (2008-05-20)</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Previous Changes" [6704-6919] -->
+<h2 class="sectionedit9"><a name="missing_features" id="missing_features">Missing features</a></h2>
+<div class="level2">
+
+<p>
+Some previously existing features are not available in 0.8, for instance:
+</p>
+<ul>
+<li class="level1"><div class="li"> ListView widget: superseded by Table widget</div>
+</li>
+<li class="level1"><div class="li"> Flash widget: to be introduced again in a later release</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=955" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=955">#955</a>: Tree lines not supported</div>
+</li>
+<li class="level1"><div class="li"> Some of the classes in <code>qx.legacy</code> are not available (and useful) as regular 0.8 classes, so they most likely won&#039;t be migrated.</div>
+</li>
+</ul>
+
+<p>
+For more information on deprecated features please consult the <a href="http://attic.qooxdoo.org/%3Adocumentation%3A0.8%3Amigration_notes_from_07" class="interwiki iw_attic" title="http://attic.qooxdoo.org/%3Adocumentation%3A0.8%3Amigration_notes_from_07">migration notes from 0.7</a>.
+</p>
+
+</div>
+<!-- EDIT9 SECTION "Missing features" [6920-7458] -->
+<h2 class="sectionedit10"><a name="migration" id="migration">Migration</a></h2>
+<div class="level2">
+
+<p>
+A <a href="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_07" class="interwiki iw_attic" title="http://attic.qooxdoo.org/documentation%3A0.8%3Amigration_guide_from_07">migration guide</a> is available to port existing apps from 0.7.x to 0.8. 
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Migration" [7459-] --></div>
+</body>
+</html>

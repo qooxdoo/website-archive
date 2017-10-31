@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>project:release_notes:0.8-beta1</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2012-04-20T12:01:08+0200"/>
+<meta name="keywords" content="project,release_notes,0.8-beta1"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="qooxdoo"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/project/release_notes/0.8-beta1?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=project:release_notes"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/_export/xhtml/project/release_notes/0.8-beta1"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/_export/raw/project/release_notes/0.8-beta1"/>
+<link rel="canonical" href="http://qooxdoo.org/project/release_notes/0.8-beta1"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/lib/exe/css.php?t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="all" type="text/css" href="/lib/exe/css.php?s=all&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<link rel="stylesheet" media="print" type="text/css" href="/lib/exe/css.php?s=print&amp;t=qooxdoo&amp;tseed=1444140941"/>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='project:release_notes';var JSINFO = {"id":"project:release_notes:0.8-beta1","namespace":"project:release_notes","plugin_aceeditor":{"highlight":true,"wraplimit":10000,"colortheme":"textmate","latex":0}};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1444140941"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#gui_toolkit" class="toc">GUI Toolkit</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#table" class="toc">Table</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#menu_tooltips_popups" class="toc">Menu / Tooltips / Popups</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#forms" class="toc">Forms</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#window_resizer" class="toc">Window / Resizer</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#controls" class="toc">Controls</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#text_selection" class="toc">Text Selection</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#themes" class="toc">Themes</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#miscellaneous" class="toc">Miscellaneous</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="#framework" class="toc">Framework</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#tool_chain" class="toc">Tool Chain</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="#applications" class="toc">Applications</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="qooxdoo_08-beta1_2008-08-01" id="qooxdoo_08-beta1_2008-08-01">qooxdoo 0.8-beta1 (2008-08-01)</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "qooxdoo 0.8-beta1 (2008-08-01)" [1-46] -->
+<h2 class="sectionedit2"><a name="gui_toolkit" id="gui_toolkit">GUI Toolkit</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT2 SECTION "GUI Toolkit" [47-71] -->
+<h3 class="sectionedit3"><a name="core" id="core">Core</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Completely refactored and reworked implementation for supporting drag&amp;drop, including elegant data exchange. It is the first time during 0.8 development that it nicely supports drag&amp;drop. The new <acronym title="Application Programming Interface">API</acronym> was closely modeled according to the WHATWG specification of HTML5.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Support for focus roots is now complete. Focus roots keep the focus within the currently active pane or window while pressing the TAB key. Keyboard users will like this feature (that was also available in 0.7)</div>
+</li>
+<li class="level1"><div class="li"> Added <code>tabFocus</code> support to form fields to make them select all text when reaching the field using the TAB key.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added support for global cursors. These are now used during drag sessions, window resize or window move as well as by the new drag&amp;drop layer.</div>
+</li>
+<li class="level1"><div class="li"> New placement utility to position widgets relative to each other, to <acronym title="Document Object Model">DOM</acronym> event coordinates or to classical <acronym title="Document Object Model">DOM</acronym> nodes. This new feature is used by many widgets, e.g. SelectBox, Menu, ToolTip, Popup, etc., and reduces complexity and code size significantly.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Added methods <code>setDomLeft()</code>, <code>setDomTop()</code> and <code>setDomPosition()</code> to all widgets as an easily usable public <acronym title="Application Programming Interface">API</acronym> to control widget position explicitly. This is particularly handy when dragging widgets around (e.g. Slider, Window, …).</div>
+</li>
+<li class="level1"><div class="li"> Added methods <code>getContainerLocation()</code> and <code>getContentLocation()</code> to all widgets as a convenient way to detect the location of a widget as seen by the document (computed coordinates). This is particularly useful to align widgets (e.g. Popup, Menu, …) to each other.</div>
+</li>
+<li class="level1"><div class="li"> Added <code>keepActive</code> feature to <code>qx.ui.core.Widget</code> to allow widgets to be non-activateable, what means that they don&#039;t take away activation from the current widget. For instance this is used by the menu popups (keeping the opening menu button active).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Experimental support for separators was introduced. Separators are currently supported by VBox and HBox layouts and render a configureable element between every child (but not at the ends). This is an alternative to assigning each child a decoration <code>border-left</code> or similar. This new feature is in no way final regarding <acronym title="Application Programming Interface">API</acronym> or feature set, but it is expected to become one of those handy features that make constructing an UI very easy. It has grown from some testing code and is already quite usable, despite any potential modifications in future releases.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed an ugly <acronym title="Internet Explorer">IE</acronym> specific issue, where elements, that are excluded at the same moment (using display=none) while being cascaded into each other, are not correctly updated when shown again afterwards. This was solved by a work-around for <acronym title="Internet Explorer">IE</acronym> in <code>qx.html.Element</code>, so now this fixes all such issues at a central location.</div>
+</li>
+<li class="level1"><div class="li"> Major improvements were made to the fallback handling when trying to find a valid target for keyboard events. With the new version lost keyboard events are history (hopefully).</div>
+</li>
+<li class="level1"><div class="li"> Various disposer fixes were made. There are still some issues, but a lot of them are fixed in this version.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed missing resolve call when resetting decorators.</div>
+</li>
+<li class="level1"><div class="li"> Fixed appearance of outline border on initial click/focus of a widget, quite an ugly effect.</div>
+</li>
+<li class="level1"><div class="li"> Added method <code>getApplicationRoot()</code> to all widgets to have a direct access to the application&#039;s root widget.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed issues with Firefox text selection, noticed while implementing drag&amp;drop. The new version successfully resolves all known issues where text was selected unintentionally. The major issue with this was that when such a unintended selection existed, Firefox went into some native drag mode in which it set the target of all mouse events to the element originally clicked onto.</div>
+</li>
+<li class="level1"><div class="li"> Selection handling (e.g. in List, Tree, …) was improved to keep the current selection when dragging the selection to another widget. Clicking on an already selected range keeps the selection during <code>mousedown</code>, but clears it when <code>mouseup</code> is fired.</div>
+</li>
+<li class="level1"><div class="li"> Added a lot of missing <code>stopPropagation()</code> calls to prevent an event to bubble up the parent chain when it is already being processed by the current one. Previously this negatively affected all types of buttons.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Some widget core features were improved to reduce memory consumption</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Core" [72-4280] -->
+<h3 class="sectionedit4"><a name="table" id="table">Table</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The table has been ported from 0.7</div>
+</li>
+<li class="level1"><div class="li"> The table <acronym title="Application Programming Interface">API</acronym>, that means all methods not inherited from qx.core.Widget, has been kept untouched</div>
+</li>
+<li class="level1"><div class="li"> All features of the old table are still supported</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Table" [4281-4494] -->
+<h3 class="sectionedit5"><a name="menu_tooltips_popups" id="menu_tooltips_popups">Menu / Tooltips / Popups</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> New menu system in place (complete rewrite with some borrowed ideas from the 0.7 implementation) with support for all kind of openers like normal menu buttons, menu bar buttons and split buttons. Major improvements to timer interval handling. Compared to 0.7.x with reduced memory consumption and improved stability and flexibility.</div>
+</li>
+<li class="level1"><div class="li"> Major improvements to ToolTip and Popup. Both are now <acronym title="Application Programming Interface">API</acronym> documentation-complete as well. Usage of timers and intervals was reduced. This leads to reduced memory consumption and improved responsiveness.</div>
+</li>
+<li class="level1"><div class="li"> Fixed ugly offset (of two pixels) in location detection (<code>qx.bom.element.Location</code>) when using <acronym title="Internet Explorer">IE</acronym> in some specific doctype combinations. Menus and popups of SelectBoxes are now aligned pixel-perfect  in <acronym title="Internet Explorer">IE</acronym> as well.</div>
+</li>
+<li class="level1"><div class="li"> All <code>Popup</code> instances are now automatically added to the application root and are excluded by default. They behave identically to ToolTips, Menus and Windows now.</div>
+</li>
+<li class="level1"><div class="li"> The tooltip classes were moved into the namespace <code>qx.ui.tooltip</code>. Both, popup and tooltip classes got shorter names.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Menu / Tooltips / Popups" [4495-5590] -->
+<h3 class="sectionedit6"><a name="forms" id="forms">Forms</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Slider has got some great improvements in reacting on mouse clicks. It should now behave identical to <acronym title="Microsoft">MS</acronym> Windows.</div>
+</li>
+<li class="level1"><div class="li"> Added a menu button widget to <code>qx.ui.form</code>. This allows menus to be used much easier outside a classical toolbar.</div>
+</li>
+<li class="level1"><div class="li"> Added new SplitButton widget as a combination of a classical Button with a MenuButton. This widget is often used as a history navigation button, commonly seen in web browsers.</div>
+</li>
+<li class="level1"><div class="li"> The default size of the <code>TextArea</code> widget was increased to a more common size.</div>
+</li>
+<li class="level1"><div class="li"> More finishing touches to Spinner and SelectBox</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Forms" [5591-6164] -->
+<h3 class="sectionedit7"><a name="window_resizer" id="window_resizer">Window / Resizer</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The <code>MResizable</code> mixin now only supports a boolean <code>resizable</code> property. The properties <code>resizableNorth</code>, <code>resizableWest</code>, <code>resizableSouth</code> and <code>resizableEast</code> were removed in accordance with the original implementor. There was not seen a good reason for keeping them. Please get back to us if you have a strong use case for this feature.</div>
+</li>
+<li class="level1"><div class="li"> The <code>translucent</code> move and resize features (via <acronym title="Application Programming Interface">API</acronym>) were removed. These features should better be realized by appearance properties. The properties <code>resizeMethod</code> and <code>moveMethod</code> where replaced with boolean properties <code>useResizeFrame</code> or <code>useMoveFrame</code> as these are functional, whereas the <code>translucent</code> values are rather visual.</div>
+</li>
+<li class="level1"><div class="li"> The move feature originally implemented in the <code>Window</code> class is now located in the to the <code>MMovable</code> mixin and can be added to any widget now.</div>
+</li>
+<li class="level1"><div class="li"> The <code>Resizer</code> widget is now a container and can be found under <code>qx.ui.container</code>.</div>
+</li>
+<li class="level1"><div class="li"> Splitted out implementation for moveable widgets into the <code>MMoveable</code> mixin in <code>qx.ui.core</code>. This reduces complexity and code size of the <code>qx.ui.window.Window</code> class.</div>
+</li>
+<li class="level1"><div class="li"> Minor improvements to the window implementation to correctly support maximize/restore.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Window / Resizer" [6165-7407] -->
+<h3 class="sectionedit8"><a name="controls" id="controls">Controls</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The <code>DateChooser</code> widget has been ported and moved from the <code>qx.ui.component</code> package to a new <code>qx.ui.contol</code> package.</div>
+</li>
+<li class="level1"><div class="li"> The <code>DateChooserButton</code> widget has been replaced with a new widget called <code>DateField</code> which can be found in the form package at <code>qx.ui.form.dateField</code>. The new widget is more like a <code>ComboBox</code> widget with a calender as popup.</div>
+</li>
+<li class="level1"><div class="li"> Port of the <code>ColorSelector</code> widget is almost done. It is not finished yet, and needs some more work and polishing.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Controls" [7408-7917] -->
+<h3 class="sectionedit9"><a name="text_selection" id="text_selection">Text Selection</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Implemented the first basic part of the low-level text selection <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+<li class="level1"><div class="li"> Added text selection methods to high level widgets like <code>TextField</code>, <code>TextArea</code> and <code>ComboBox</code></div>
+</li>
+<li class="level1"><div class="li"> Fix the <code>getValue()</code> method of the ComboBox  </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT9 SECTION "Text Selection" [7918-8175] -->
+<h3 class="sectionedit10"><a name="themes" id="themes">Themes</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Continued work on the Modern Theme</div>
+</li>
+<li class="level1"><div class="li"> Added inverted arrows to qooxdoo&#039;s decoration themes. This improves appearance of menus when buttons are hovered using a dark background color.</div>
+</li>
+<li class="level1"><div class="li"> Added Modern appearance for TabView</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Themes" [8176-8422] -->
+<h3 class="sectionedit11"><a name="miscellaneous" id="miscellaneous">Miscellaneous</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Added support for first/last tab states to the TabView. This allows us to style overlapping TabButtons which is needed by most modern screen designs.</div>
+</li>
+<li class="level1"><div class="li"> Decouple layout system from the queue manager. This allows us to reuse layout managers in non widget code. It is used e.g. in the table&#039;s resize column manager.</div>
+</li>
+<li class="level1"><div class="li"> Text inside HTMLEmbed can be selected now</div>
+</li>
+<li class="level1"><div class="li"> Iframe&#039;s property &quot;source&quot; is now nullable</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1023" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1023">Fixed #1023</a>: TabView should use Stack container</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1053" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1053">Fixed #1053</a>: Toolbar page in showcase has errors</div>
+</li>
+<li class="level1"><div class="li"> Added support for the methods <code>scrollTo</code> and <code>scrollBy</code> to the <code>SlideBar</code> widget (used by the TabView for example)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT11 SECTION "Miscellaneous" [8423-9119] -->
+<h2 class="sectionedit12"><a name="framework" id="framework">Framework</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Make multiple inclusion of a mixin a warning and not an error</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=786" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=786">Fixed #786</a>: qx.client.Timer.once should have a return value</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=871" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=871">Fixed #871</a>: complete i18n support</div>
+</li>
+<li class="level1"><div class="li"> always include the default locale &quot;C&quot; into any application</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1109" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=1109">Fixed #1109</a>: Remove @type declarations from <acronym title="Application Programming Interface">API</acronym> doc comments</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Fixed <code>qx.dev.ObjectSummary.getInfo</code></div>
+</li>
+<li class="level1"><div class="li"> Fixed Logger&#039;s <code>clear</code> method</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Add supported for cloning and serialization to qooxdoo objects, layout items and widgets. These features are still in testing phase.</div>
+</li>
+<li class="level1"><div class="li"> Improved usage of document fragments in <code>qx.html.Element</code> (qooxdoo&#039;s low-level <acronym title="Document Object Model">DOM</acronym> element layer), not using them when inserting less than three elements.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>qx.Class</code> got a new method <code>getProperties()</code> to get a list of all supported properties</div>
+</li>
+<li class="level1"><div class="li"> Fixed detection of iPhone&#039;s Mobile Safari browser</div>
+</li>
+<li class="level1"><div class="li"> Fixed deregistration of events. Previously the deregistration at the handler happend even if the removed listener was not the last one. This was the source of some crazy effects during development of drag&amp;drop and may have affected other parts as well.</div>
+</li>
+<li class="level1"><div class="li"> Fixed an event system issue where <code>preventDefault()</code> was not correctly propagated from the widget event to the low-level event.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT12 SECTION "Framework" [9120-10401] -->
+<h2 class="sectionedit13"><a name="tool_chain" id="tool_chain">Tool Chain</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Removal of Makefiles in standard applications, skeleton, quickstart<br/>
+Build commands (&#039;source&#039;, &#039;build&#039;) now only depend on Python</div>
+</li>
+<li class="level1"><div class="li"> Configuration files: Support for new keys &quot;include&quot; and &quot;block&quot; in top-level &quot;include&quot; maps, to select/reject certain jobs during imports</div>
+</li>
+<li class="level1"><div class="li"> Each application now contains a drop-in replacement for the old &#039;make&#039; command named &#039;generate.py&#039;</div>
+</li>
+<li class="level1"><div class="li"> Removal of dependency to &#039;wget&#039; command; &#039;contrib://&#039; manifest files are downloaded with standard Python modules, but version check is still disabled (due to frequent Sourceforge ViewVC availability during the last two weeks)</div>
+</li>
+<li class="level1"><div class="li"> Handling of default locale has been fixed</div>
+</li>
+<li class="level1"><div class="li"> Handling of relative paths in configuration files has been overhauled</div>
+</li>
+<li class="level1"><div class="li"> <a href="http://bugzilla.qooxdoo.org/show_bug.cgi?id=755" class="interwiki iw_bug" title="http://bugzilla.qooxdoo.org/show_bug.cgi?id=755">Fixed #755</a>: added parsing of accessors into Map and Array literals</div>
+</li>
+<li class="level1"><div class="li"> Updated &#039;frontend/tool/data/config/example.json&#039; config file</div>
+</li>
+<li class="level1"><div class="li"> Various adaptions to &#039;frontend/Makefile&#039; (shouldn&#039;t affect end users, but is still used for maintaining and release management)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Tool Chain" [10402-11444] -->
+<h2 class="sectionedit14"><a name="applications" id="applications">Applications</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="api_viewer" id="api_viewer">API Viewer</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> <acronym title="Application Programming Interface">API</acronym> Viewer was ported to 0.8.</div>
+</li>
+<li class="level1"><div class="li"> Search feature now uses Table instead of the deprecated ListView</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="demo_browser" id="demo_browser">Demo Browser</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Demo Browser was ported to 0.8.</div>
+</li>
+<li class="level1"><div class="li"> Demos can be switched between Modern and Classic styling</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="feed_reader" id="feed_reader">Feed Reader</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Feedreader works with 0.8.again</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="showcase" id="showcase">Showcase</a></h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> The showcase application was removed, deemed not appropriate for all the new glory of the 0.8 <acronym title="Graphical User Interface">GUI</acronym> toolkit. The <code>widget</code> section of the demo browser sports better examples and better documented and more modern code. Some time after 0.8 there should be something like a showcase application again, but currently work concentrates on finishing 0.8, including all the nice samples for testing and demonstration in demobrowser.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "Applications" [11445-] --></div>
+</body>
+</html>
