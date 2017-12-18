@@ -3657,7 +3657,7 @@ winCollection.on('resize', q.func.throttle(resizeHandler, 500), winCollection);
     };
 
     var source2 = {
-      licence: 'LGPL',
+      licence: 'MIT',
       list: [ 0, 1, 2 ]
     };
 
@@ -3669,7 +3669,7 @@ winCollection.on('resize', q.func.throttle(resizeHandler, 500), winCollection);
     //  nested: {
     //    id: 1234
     //  }
-    //  licence: 'LGPL',
+    //  licence: 'MIT',
     //  list: [ 0, 1, 2 ]
     //}
     console.log(result);
