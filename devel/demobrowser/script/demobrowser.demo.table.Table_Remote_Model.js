@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Remote_Model.1e10a107d2f0.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Remote_Model.38439bae0350.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -13430,8 +13430,8 @@ else {this.__BH(r,q);}
 )();
 (function(){var a="loadEnd",b="qx.io.request.AbstractRequest",c="changePhase",d="GET",f="qx.debug.io",g="sent",h="Abort request",i="qx.event.type.Data",j="'",k="qx.io.request.authentication.IAuthentication",l="error",m="Blob",n="qx.debug",o="fail",p="Send low-level request",q="loading",r="load",s="qx.event.type.Event",t="abort",u=", url: ",v="String",w="",x="opened",y="Response is of type: '",z="POST",A="success",B="Request completed with HTTP status: ",C="Fire readyState: ",D="statusError",E="readyStateChange",F="Abstract method call",G="abstract",H="unsent",I="changeResponse",J="Number",K="FormData",L="timeout",M="Content-Type",N="ArrayBuffer",O="undefined",P=", async: ",Q="Open low-level request with method: ";qx.Class.define(b,{type:G,extend:qx.core.Object,implement:[qx.core.IDisposable],construct:function(R){qx.core.Object.call(this);if(R!==undefined){this.setUrl(R);}
 ;this.__sH={};var S=this._transport=this._createTransport();this._setPhase(H);this.__sI=qx.lang.Function.bind(this._onReadyStateChange,this);this.__sJ=qx.lang.Function.bind(this._onLoad,this);this.__sK=qx.lang.Function.bind(this._onLoadEnd,this);this.__sL=qx.lang.Function.bind(this._onAbort,this);this.__sM=qx.lang.Function.bind(this._onTimeout,this);this.__sN=qx.lang.Function.bind(this._onError,this);S.onreadystatechange=this.__sI;S.onload=this.__sJ;S.onloadend=this.__sK;S.onabort=this.__sL;S.ontimeout=this.__sM;S.onerror=this.__sN;}
-,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
-,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_createTransport:function(){throw new Error(F);}
+,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"parseError":i,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
+,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_parserFailed:false,_createTransport:function(){throw new Error(F);}
 ,_getConfiguredUrl:function(){}
 ,_getConfiguredRequestHeaders:function(){}
 ,_getParsedResponse:function(){throw new Error(F);}
@@ -13475,7 +13475,9 @@ else {this.__BH(r,q);}
 ;}
 ,__sT:function(){if(qx.core.Environment.get(f)){this.debug(B+this.getStatus());}
 ;this._setPhase(r);if(qx.util.Request.isSuccessful(this.getStatus())){if(qx.core.Environment.get(f)){this.debug(y+this.getResponseContentType()+j);}
-;this._setResponse(this._getParsedResponse());this._fireStatefulEvent(A);}
+;this._setResponse(this._getParsedResponse());if(this._parserFailed){this.fireEvent(o);}
+else {this._fireStatefulEvent(A);}
+;}
 else {try{this._setResponse(this._getParsedResponse());}
 catch(e){}
 ;if(this.getStatus()!==0){this._fireStatefulEvent(D);this.fireEvent(o);}
@@ -13566,24 +13568,26 @@ else {var H=encodeURIComponent(I);}
 ,methodAllowsRequestBody:function(q){return !((/^(GET|HEAD)$/).test(q));}
 }});}
 )();
-(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",e="X-Requested-With",f="",g="Accepting: '",h="application/x-www-form-urlencoded",i="Cache-Control",j="Content-Type",k="qx.event.type.Event",l="GET",m="qx.debug.io",n="qx.io.request.Xhr",o="Accept",p="String";qx.Class.define(n,{extend:qx.io.request.AbstractRequest,construct:function(q,r){if(r!==undefined){this.setMethod(r);}
-;qx.io.request.AbstractRequest.call(this,q);this._parser=this._createResponseParser();}
-,events:{"readyStateChange":k,"success":k,"load":k,"statusError":k},properties:{method:{init:l},async:{check:d,init:true},accept:{check:p,nullable:true},cache:{check:function(s){return qx.lang.Type.isBoolean(s)||qx.lang.Type.isString(s);}
+(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",f="X-Requested-With",g="",h="Accepting: '",i="application/x-www-form-urlencoded",j="Cache-Control",k="Content-Type",l="parseError",m="qx.event.type.Event",n="GET",o="qx.debug.io",p="qx.io.request.Xhr",q="Accept",r="String";qx.Class.define(p,{extend:qx.io.request.AbstractRequest,construct:function(s,t){if(t!==undefined){this.setMethod(t);}
+;qx.io.request.AbstractRequest.call(this,s);this._parser=this._createResponseParser();}
+,events:{"readyStateChange":m,"success":m,"load":m,"statusError":m},properties:{method:{init:n},async:{check:d,init:true},accept:{check:r,nullable:true},cache:{check:function(u){return qx.lang.Type.isBoolean(u)||qx.lang.Type.isString(u);}
 ,init:true}},members:{_parser:null,_createTransport:function(){return new qx.bom.request.Xhr();}
-,_getConfiguredUrl:function(){var t=this.getUrl(),u;if(this.getMethod()===l&&this.getRequestData()){u=this._serializeData(this.getRequestData());t=qx.util.Uri.appendParamsToUrl(t,u);}
-;if(this.getCache()===false){t=qx.util.Uri.appendParamsToUrl(t,{nocache:new Date().valueOf()});}
-;return t;}
-,_getConfiguredRequestHeaders:function(){var v={},w=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){v[e]=c;}
-;if(qx.lang.Type.isString(this.getCache())){v[i]=this.getCache();}
-;if(this.getRequestData()!==b&&w){v[j]=h;}
-;if(this.getAccept()){if(qx.core.Environment.get(m)){this.debug(g+this.getAccept()+a);}
-;v[o]=this.getAccept();}
+,_getConfiguredUrl:function(){var v=this.getUrl(),w;if(this.getMethod()===n&&this.getRequestData()){w=this._serializeData(this.getRequestData());v=qx.util.Uri.appendParamsToUrl(v,w);}
+;if(this.getCache()===false){v=qx.util.Uri.appendParamsToUrl(v,{nocache:new Date().valueOf()});}
 ;return v;}
+,_getConfiguredRequestHeaders:function(){var x={},y=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){x[f]=c;}
+;if(qx.lang.Type.isString(this.getCache())){x[j]=this.getCache();}
+;if(this.getRequestData()!==b&&y){x[k]=i;}
+;if(this.getAccept()){if(qx.core.Environment.get(o)){this.debug(h+this.getAccept()+a);}
+;x[q]=this.getAccept();}
+;return x;}
 ,_getMethod:function(){return this.getMethod();}
 ,_isAsync:function(){return this.isAsync();}
 ,_createResponseParser:function(){return new qx.util.ResponseParser();}
-,_getParsedResponse:function(){var y=this._transport.responseText,x=this.getResponseContentType()||f;return this._parser.parse(y,x);}
-,setParser:function(z){return this._parser.setParser(z);}
+,_getParsedResponse:function(){var B=this._transport.responseText,A=this.getResponseContentType()||g,z=g;try{z=this._parser.parse(B,A);this._parserFailed=false;}
+catch(e){this._parserFailed=true;this.fireDataEvent(l,{error:e,response:B});}
+;return z;}
+,setParser:function(C){return this._parser.setParser(C);}
 }});}
 )();
 (function(){var a="function",b="qx.util.ResponseParser",c="",d="qx.debug";qx.Bootstrap.define(b,{construct:function(e){if(e!==undefined){this.setParser(e);}

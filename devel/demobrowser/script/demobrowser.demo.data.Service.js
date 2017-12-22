@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Service.59f4e294184a.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Service.a66740f1cd72.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11623,33 +11623,34 @@ else if(bQ.length<this.__uL.length){for(var j=bQ.length;j<this.__uL.length;j++ )
 },destruct:function(){this.removeListener(c,this._onPointerOver,this);this.removeListener(f,this._onPointerOut,this);}
 });}
 )();
-(function(){var a="changeModel",b="application/json",c="json",d="aborted",e="loaded",f="qx.event.type.Data",g="error",h="fail",i="receiving",j="queued",k="changeState",l="success",m="String",n="changePhase",o="sending",p="_marshaler",q="completed",r="__vn",s="failed",t="qx.data.store.Json",u="configured",v="changeUrl",w="timeout",x="_applyUrl";qx.Class.define(t,{extend:qx.core.Object,construct:function(y,z){qx.core.Object.call(this);this._marshaler=new qx.data.marshal.Json(z);this._delegate=z;if(y!=null){this.setUrl(y);}
+(function(){var a="changeModel",b="application/json",c="json",d="aborted",e="loaded",f="qx.event.type.Data",g="error",h="fail",i="receiving",j="queued",k="changeState",l="success",m="String",n="parseError",o="changePhase",p="sending",q="_marshaler",r="completed",s="__vn",t="failed",u="qx.data.store.Json",v="configured",w="changeUrl",x="timeout",y="_applyUrl";qx.Class.define(u,{extend:qx.core.Object,construct:function(z,A){qx.core.Object.call(this);this._marshaler=new qx.data.marshal.Json(A);this._delegate=A;if(z!=null){this.setUrl(z);}
 ;}
-,events:{"loaded":f,"error":f},properties:{model:{nullable:true,event:a},state:{check:[u,j,o,i,q,d,w,s],init:u,event:k},url:{check:m,apply:x,event:v,nullable:true}},members:{_marshaler:null,_delegate:null,__vn:null,_applyUrl:function(B,A){if(B!=null){B=qx.util.AliasManager.getInstance().resolve(B);B=qx.util.ResourceManager.getInstance().toUri(B);this._createRequest(B);}
+,events:{"loaded":f,"parseError":f,"error":f},properties:{model:{nullable:true,event:a},state:{check:[v,j,p,i,r,d,x,t],init:v,event:k},url:{check:m,apply:y,event:w,nullable:true}},members:{_marshaler:null,_delegate:null,__vn:null,_applyUrl:function(C,B){if(C!=null){C=qx.util.AliasManager.getInstance().resolve(C);C=qx.util.ResourceManager.getInstance().toUri(C);this._createRequest(C);}
 ;}
 ,_getRequest:function(){return this.__vn;}
-,_setRequest:function(C){this.__vn=C;}
-,_createRequest:function(D){if(this.__vn){this.__vn.dispose();this.__vn=null;}
-;var E=new qx.io.request.Xhr(D);this._setRequest(E);E.setAccept(b);E.setParser(c);E.addListener(l,this._onSuccess,this);var F=this._delegate;if(F&&qx.lang.Type.isFunction(F.configureRequest)){this._delegate.configureRequest(E);}
-;E.addListener(n,this._onChangePhase,this);E.addListener(h,this._onFail,this);E.send();}
-,_onChangePhase:function(I){var G=I.getData(),J={},H;J={"opened":u,"sent":o,"loading":i,"success":q,"abort":d,"timeout":w,"statusError":s};H=J[G];if(H){this.setState(H);}
+,_setRequest:function(D){this.__vn=D;}
+,_createRequest:function(E){if(this.__vn){this.__vn.dispose();this.__vn=null;}
+;var F=new qx.io.request.Xhr(E);this._setRequest(F);F.setAccept(b);F.setParser(c);F.addListener(l,this._onSuccess,this);F.addListener(n,this._onParseError,this);var G=this._delegate;if(G&&qx.lang.Type.isFunction(G.configureRequest)){this._delegate.configureRequest(F);}
+;F.addListener(o,this._onChangePhase,this);F.addListener(h,this._onFail,this);F.send();}
+,_onChangePhase:function(J){var H=J.getData(),K={},I;K={"opened":v,"sent":p,"loading":i,"success":r,"abort":d,"timeout":x,"statusError":t};I=K[H];if(I){this.setState(I);}
 ;}
-,_onFail:function(K){var L=K.getTarget();this.fireDataEvent(g,L);}
-,_onSuccess:function(Q){if(this.isDisposed()){return;}
-;var N=Q.getTarget(),M=N.getResponse();var O=this._delegate;if(O&&qx.lang.Type.isFunction(O.manipulateData)){M=this._delegate.manipulateData(M);}
-;this._marshaler.toClass(M,true);var P=this.getModel();this.setModel(this._marshaler.toModel(M));if(P&&P.dispose){P.dispose();}
+,_onFail:function(L){var M=L.getTarget();this.fireDataEvent(g,M);}
+,_onParseError:function(N){this.fireDataEvent(n,N.getData());}
+,_onSuccess:function(S){if(this.isDisposed()){return;}
+;var P=S.getTarget(),O=P.getResponse();var Q=this._delegate;if(Q&&qx.lang.Type.isFunction(Q.manipulateData)){O=this._delegate.manipulateData(O);}
+;this._marshaler.toClass(O,true);var R=this.getModel();this.setModel(this._marshaler.toModel(O));if(R&&R.dispose){R.dispose();}
 ;this.fireDataEvent(e,this.getModel());if(this.__vn){this.__vn.dispose();this.__vn=null;}
 ;}
-,reload:function(){var R=this.getUrl();if(R!=null){this._createRequest(R);}
+,reload:function(){var T=this.getUrl();if(T!=null){this._createRequest(T);}
 ;}
-},destruct:function(){if(this.__vn!=null){this._disposeObjects(r);}
-;this._disposeSingletonObjects(p);this._delegate=null;}
+},destruct:function(){if(this.__vn!=null){this._disposeObjects(s);}
+;this._disposeSingletonObjects(q);this._delegate=null;}
 });}
 )();
 (function(){var a="loadEnd",b="qx.io.request.AbstractRequest",c="changePhase",d="GET",f="qx.debug.io",g="sent",h="Abort request",i="qx.event.type.Data",j="'",k="qx.io.request.authentication.IAuthentication",l="error",m="Blob",n="qx.debug",o="fail",p="Send low-level request",q="loading",r="load",s="qx.event.type.Event",t="abort",u=", url: ",v="String",w="",x="opened",y="Response is of type: '",z="POST",A="success",B="Request completed with HTTP status: ",C="Fire readyState: ",D="statusError",E="readyStateChange",F="Abstract method call",G="abstract",H="unsent",I="changeResponse",J="Number",K="FormData",L="timeout",M="Content-Type",N="ArrayBuffer",O="undefined",P=", async: ",Q="Open low-level request with method: ";qx.Class.define(b,{type:G,extend:qx.core.Object,implement:[qx.core.IDisposable],construct:function(R){qx.core.Object.call(this);if(R!==undefined){this.setUrl(R);}
 ;this.__sH={};var S=this._transport=this._createTransport();this._setPhase(H);this.__sI=qx.lang.Function.bind(this._onReadyStateChange,this);this.__sJ=qx.lang.Function.bind(this._onLoad,this);this.__sK=qx.lang.Function.bind(this._onLoadEnd,this);this.__sL=qx.lang.Function.bind(this._onAbort,this);this.__sM=qx.lang.Function.bind(this._onTimeout,this);this.__sN=qx.lang.Function.bind(this._onError,this);S.onreadystatechange=this.__sI;S.onload=this.__sJ;S.onloadend=this.__sK;S.onabort=this.__sL;S.ontimeout=this.__sM;S.onerror=this.__sN;}
-,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
-,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_createTransport:function(){throw new Error(F);}
+,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"parseError":i,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
+,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_parserFailed:false,_createTransport:function(){throw new Error(F);}
 ,_getConfiguredUrl:function(){}
 ,_getConfiguredRequestHeaders:function(){}
 ,_getParsedResponse:function(){throw new Error(F);}
@@ -11693,7 +11694,9 @@ else if(bQ.length<this.__uL.length){for(var j=bQ.length;j<this.__uL.length;j++ )
 ;}
 ,__sT:function(){if(qx.core.Environment.get(f)){this.debug(B+this.getStatus());}
 ;this._setPhase(r);if(qx.util.Request.isSuccessful(this.getStatus())){if(qx.core.Environment.get(f)){this.debug(y+this.getResponseContentType()+j);}
-;this._setResponse(this._getParsedResponse());this._fireStatefulEvent(A);}
+;this._setResponse(this._getParsedResponse());if(this._parserFailed){this.fireEvent(o);}
+else {this._fireStatefulEvent(A);}
+;}
 else {try{this._setResponse(this._getParsedResponse());}
 catch(e){}
 ;if(this.getStatus()!==0){this._fireStatefulEvent(D);this.fireEvent(o);}
@@ -11784,24 +11787,26 @@ else {var H=encodeURIComponent(I);}
 ,methodAllowsRequestBody:function(q){return !((/^(GET|HEAD)$/).test(q));}
 }});}
 )();
-(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",e="X-Requested-With",f="",g="Accepting: '",h="application/x-www-form-urlencoded",i="Cache-Control",j="Content-Type",k="qx.event.type.Event",l="GET",m="qx.debug.io",n="qx.io.request.Xhr",o="Accept",p="String";qx.Class.define(n,{extend:qx.io.request.AbstractRequest,construct:function(q,r){if(r!==undefined){this.setMethod(r);}
-;qx.io.request.AbstractRequest.call(this,q);this._parser=this._createResponseParser();}
-,events:{"readyStateChange":k,"success":k,"load":k,"statusError":k},properties:{method:{init:l},async:{check:d,init:true},accept:{check:p,nullable:true},cache:{check:function(s){return qx.lang.Type.isBoolean(s)||qx.lang.Type.isString(s);}
+(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",f="X-Requested-With",g="",h="Accepting: '",i="application/x-www-form-urlencoded",j="Cache-Control",k="Content-Type",l="parseError",m="qx.event.type.Event",n="GET",o="qx.debug.io",p="qx.io.request.Xhr",q="Accept",r="String";qx.Class.define(p,{extend:qx.io.request.AbstractRequest,construct:function(s,t){if(t!==undefined){this.setMethod(t);}
+;qx.io.request.AbstractRequest.call(this,s);this._parser=this._createResponseParser();}
+,events:{"readyStateChange":m,"success":m,"load":m,"statusError":m},properties:{method:{init:n},async:{check:d,init:true},accept:{check:r,nullable:true},cache:{check:function(u){return qx.lang.Type.isBoolean(u)||qx.lang.Type.isString(u);}
 ,init:true}},members:{_parser:null,_createTransport:function(){return new qx.bom.request.Xhr();}
-,_getConfiguredUrl:function(){var t=this.getUrl(),u;if(this.getMethod()===l&&this.getRequestData()){u=this._serializeData(this.getRequestData());t=qx.util.Uri.appendParamsToUrl(t,u);}
-;if(this.getCache()===false){t=qx.util.Uri.appendParamsToUrl(t,{nocache:new Date().valueOf()});}
-;return t;}
-,_getConfiguredRequestHeaders:function(){var v={},w=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){v[e]=c;}
-;if(qx.lang.Type.isString(this.getCache())){v[i]=this.getCache();}
-;if(this.getRequestData()!==b&&w){v[j]=h;}
-;if(this.getAccept()){if(qx.core.Environment.get(m)){this.debug(g+this.getAccept()+a);}
-;v[o]=this.getAccept();}
+,_getConfiguredUrl:function(){var v=this.getUrl(),w;if(this.getMethod()===n&&this.getRequestData()){w=this._serializeData(this.getRequestData());v=qx.util.Uri.appendParamsToUrl(v,w);}
+;if(this.getCache()===false){v=qx.util.Uri.appendParamsToUrl(v,{nocache:new Date().valueOf()});}
 ;return v;}
+,_getConfiguredRequestHeaders:function(){var x={},y=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){x[f]=c;}
+;if(qx.lang.Type.isString(this.getCache())){x[j]=this.getCache();}
+;if(this.getRequestData()!==b&&y){x[k]=i;}
+;if(this.getAccept()){if(qx.core.Environment.get(o)){this.debug(h+this.getAccept()+a);}
+;x[q]=this.getAccept();}
+;return x;}
 ,_getMethod:function(){return this.getMethod();}
 ,_isAsync:function(){return this.isAsync();}
 ,_createResponseParser:function(){return new qx.util.ResponseParser();}
-,_getParsedResponse:function(){var y=this._transport.responseText,x=this.getResponseContentType()||f;return this._parser.parse(y,x);}
-,setParser:function(z){return this._parser.setParser(z);}
+,_getParsedResponse:function(){var B=this._transport.responseText,A=this.getResponseContentType()||g,z=g;try{z=this._parser.parse(B,A);this._parserFailed=false;}
+catch(e){this._parserFailed=true;this.fireDataEvent(l,{error:e,response:B});}
+;return z;}
+,setParser:function(C){return this._parser.setParser(C);}
 }});}
 )();
 (function(){var a="function",b="qx.util.ResponseParser",c="",d="qx.debug";qx.Bootstrap.define(b,{construct:function(e){if(e!==undefined){this.setParser(e);}

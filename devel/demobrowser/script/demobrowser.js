@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:5126261","qx.theme":"demobrowser.Theme","qx.version":"6.0.0-alpha"};
+var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:55baa5a","qx.theme":"demobrowser.Theme","qx.version":"6.0.0-alpha"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.9fd27b9e9d34.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.90c296f0f3a6.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -13574,8 +13574,8 @@ else if(bi.getParent()){this.setSelection([bi.getParent()]);}
 )();
 (function(){var a="loadEnd",b="qx.io.request.AbstractRequest",c="changePhase",d="GET",f="qx.debug.io",g="sent",h="Abort request",i="qx.event.type.Data",j="'",k="qx.io.request.authentication.IAuthentication",l="error",m="Blob",n="qx.debug",o="fail",p="Send low-level request",q="loading",r="load",s="qx.event.type.Event",t="abort",u=", url: ",v="String",w="",x="opened",y="Response is of type: '",z="POST",A="success",B="Request completed with HTTP status: ",C="Fire readyState: ",D="statusError",E="readyStateChange",F="Abstract method call",G="abstract",H="unsent",I="changeResponse",J="Number",K="FormData",L="timeout",M="Content-Type",N="ArrayBuffer",O="undefined",P=", async: ",Q="Open low-level request with method: ";qx.Class.define(b,{type:G,extend:qx.core.Object,implement:[qx.core.IDisposable],construct:function(R){qx.core.Object.call(this);if(R!==undefined){this.setUrl(R);}
 ;this.__sH={};var S=this._transport=this._createTransport();this._setPhase(H);this.__sI=qx.lang.Function.bind(this._onReadyStateChange,this);this.__sJ=qx.lang.Function.bind(this._onLoad,this);this.__sK=qx.lang.Function.bind(this._onLoadEnd,this);this.__sL=qx.lang.Function.bind(this._onAbort,this);this.__sM=qx.lang.Function.bind(this._onTimeout,this);this.__sN=qx.lang.Function.bind(this._onError,this);S.onreadystatechange=this.__sI;S.onload=this.__sJ;S.onloadend=this.__sK;S.onabort=this.__sL;S.ontimeout=this.__sM;S.onerror=this.__sN;}
-,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
-,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_createTransport:function(){throw new Error(F);}
+,events:{"readyStateChange":s,"success":s,"load":s,"loadEnd":s,"abort":s,"timeout":s,"error":s,"statusError":s,"parseError":i,"fail":s,"changeResponse":i,"changePhase":i},properties:{url:{check:v},timeout:{check:J,nullable:true,init:0},requestData:{check:function(T){return qx.lang.Type.isString(T)||qx.Class.isSubClassOf(T.constructor,qx.core.Object)||qx.lang.Type.isObject(T)||qx.lang.Type.isArray(T)||qx.Bootstrap.getClass(T)==m||qx.Bootstrap.getClass(T)==N||qx.Bootstrap.getClass(T)==K;}
+,nullable:true},authentication:{check:k,nullable:true}},members:{__sI:null,__sJ:null,__sK:null,__sL:null,__sM:null,__sN:null,__sO:null,__sP:null,__sQ:null,__sH:null,__sR:null,_transport:null,_parserFailed:false,_createTransport:function(){throw new Error(F);}
 ,_getConfiguredUrl:function(){}
 ,_getConfiguredRequestHeaders:function(){}
 ,_getParsedResponse:function(){throw new Error(F);}
@@ -13619,7 +13619,9 @@ else if(bi.getParent()){this.setSelection([bi.getParent()]);}
 ;}
 ,__sT:function(){if(qx.core.Environment.get(f)){this.debug(B+this.getStatus());}
 ;this._setPhase(r);if(qx.util.Request.isSuccessful(this.getStatus())){if(qx.core.Environment.get(f)){this.debug(y+this.getResponseContentType()+j);}
-;this._setResponse(this._getParsedResponse());this._fireStatefulEvent(A);}
+;this._setResponse(this._getParsedResponse());if(this._parserFailed){this.fireEvent(o);}
+else {this._fireStatefulEvent(A);}
+;}
 else {try{this._setResponse(this._getParsedResponse());}
 catch(e){}
 ;if(this.getStatus()!==0){this._fireStatefulEvent(D);this.fireEvent(o);}
@@ -13710,24 +13712,26 @@ else {var H=encodeURIComponent(I);}
 ,methodAllowsRequestBody:function(q){return !((/^(GET|HEAD)$/).test(q));}
 }});}
 )();
-(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",e="X-Requested-With",f="",g="Accepting: '",h="application/x-www-form-urlencoded",i="Cache-Control",j="Content-Type",k="qx.event.type.Event",l="GET",m="qx.debug.io",n="qx.io.request.Xhr",o="Accept",p="String";qx.Class.define(n,{extend:qx.io.request.AbstractRequest,construct:function(q,r){if(r!==undefined){this.setMethod(r);}
-;qx.io.request.AbstractRequest.call(this,q);this._parser=this._createResponseParser();}
-,events:{"readyStateChange":k,"success":k,"load":k,"statusError":k},properties:{method:{init:l},async:{check:d,init:true},accept:{check:p,nullable:true},cache:{check:function(s){return qx.lang.Type.isBoolean(s)||qx.lang.Type.isString(s);}
+(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",f="X-Requested-With",g="",h="Accepting: '",i="application/x-www-form-urlencoded",j="Cache-Control",k="Content-Type",l="parseError",m="qx.event.type.Event",n="GET",o="qx.debug.io",p="qx.io.request.Xhr",q="Accept",r="String";qx.Class.define(p,{extend:qx.io.request.AbstractRequest,construct:function(s,t){if(t!==undefined){this.setMethod(t);}
+;qx.io.request.AbstractRequest.call(this,s);this._parser=this._createResponseParser();}
+,events:{"readyStateChange":m,"success":m,"load":m,"statusError":m},properties:{method:{init:n},async:{check:d,init:true},accept:{check:r,nullable:true},cache:{check:function(u){return qx.lang.Type.isBoolean(u)||qx.lang.Type.isString(u);}
 ,init:true}},members:{_parser:null,_createTransport:function(){return new qx.bom.request.Xhr();}
-,_getConfiguredUrl:function(){var t=this.getUrl(),u;if(this.getMethod()===l&&this.getRequestData()){u=this._serializeData(this.getRequestData());t=qx.util.Uri.appendParamsToUrl(t,u);}
-;if(this.getCache()===false){t=qx.util.Uri.appendParamsToUrl(t,{nocache:new Date().valueOf()});}
-;return t;}
-,_getConfiguredRequestHeaders:function(){var v={},w=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){v[e]=c;}
-;if(qx.lang.Type.isString(this.getCache())){v[i]=this.getCache();}
-;if(this.getRequestData()!==b&&w){v[j]=h;}
-;if(this.getAccept()){if(qx.core.Environment.get(m)){this.debug(g+this.getAccept()+a);}
-;v[o]=this.getAccept();}
+,_getConfiguredUrl:function(){var v=this.getUrl(),w;if(this.getMethod()===n&&this.getRequestData()){w=this._serializeData(this.getRequestData());v=qx.util.Uri.appendParamsToUrl(v,w);}
+;if(this.getCache()===false){v=qx.util.Uri.appendParamsToUrl(v,{nocache:new Date().valueOf()});}
 ;return v;}
+,_getConfiguredRequestHeaders:function(){var x={},y=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){x[f]=c;}
+;if(qx.lang.Type.isString(this.getCache())){x[j]=this.getCache();}
+;if(this.getRequestData()!==b&&y){x[k]=i;}
+;if(this.getAccept()){if(qx.core.Environment.get(o)){this.debug(h+this.getAccept()+a);}
+;x[q]=this.getAccept();}
+;return x;}
 ,_getMethod:function(){return this.getMethod();}
 ,_isAsync:function(){return this.isAsync();}
 ,_createResponseParser:function(){return new qx.util.ResponseParser();}
-,_getParsedResponse:function(){var y=this._transport.responseText,x=this.getResponseContentType()||f;return this._parser.parse(y,x);}
-,setParser:function(z){return this._parser.setParser(z);}
+,_getParsedResponse:function(){var B=this._transport.responseText,A=this.getResponseContentType()||g,z=g;try{z=this._parser.parse(B,A);this._parserFailed=false;}
+catch(e){this._parserFailed=true;this.fireDataEvent(l,{error:e,response:B});}
+;return z;}
+,setParser:function(C){return this._parser.setParser(C);}
 }});}
 )();
 (function(){var a="function",b="qx.util.ResponseParser",c="",d="qx.debug";qx.Bootstrap.define(b,{construct:function(e){if(e!==undefined){this.setParser(e);}
@@ -14027,12 +14031,12 @@ else {s=t.substring(1);if(s.match(/^\d+$/gi)){r=String.fromCharCode(parseInt(s,1
 );}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c="qooxdoo",d="",e='6.0.0-alpha',f="versionLabel.version",g=" ",h='HEAD:5126261';qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
-;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=h;if(i==d){i=e;}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='HEAD:55baa5a',d="qooxdoo",e="",f='6.0.0-alpha',g="versionLabel.version",h=" ";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+;if(i==undefined){i=qx.core.Environment.get(g);if(i==null){i=c;if(i==e){i=f;}
 ;}
 ;}
-;qx.ui.basic.Label.call(this,j+g+i);}
-,defer:function(){qx.core.Environment.add(b,c);qx.core.Environment.add(f,null);}
+;qx.ui.basic.Label.call(this,j+h+i);}
+,defer:function(){qx.core.Environment.add(b,d);qx.core.Environment.add(g,null);}
 });}
 )();
 (function(){var a="JosefinSlab",b="Verdana",c="qx/decoration/Indigo/font/JosefinSlab-SemiBold.ttf",d="qx/decoration/Indigo/font/JosefinSlab-SemiBold.woff",e="Lucida Grande",f="sans-serif",g="qx.theme.indigo.Font",h="monospace",i="font",j="serif",k="DejaVu Sans",l="Courier New",m="DejaVu Sans Mono";qx.Theme.define(g,{fonts:{"default":{size:12,family:[e,k,b,f],color:i,lineHeight:1.8},"bold":{size:12,family:[e,k,b,f],bold:true,color:i,lineHeight:1.8},"headline":{size:22,family:[j],sources:[{family:a,source:[d,c]}]},"small":{size:11,family:[e,k,b,f],color:i,lineHeight:1.8},"monospace":{size:11,family:[m,l,h],color:i,lineHeight:1.8}}});}
