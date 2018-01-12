@@ -142,7 +142,9 @@
         
   <div class="section" id="manifest-json">
 <span id="pages-application-structure-manifest-manifest-json"></span><h1>Manifest.json<a class="headerlink" href="#manifest-json" title="Permalink to this headline">¶</a></h1>
-<p>qooxdoo's <a class="reference external" href="http://en.wikipedia.org/wiki/Manifest_file">Manifest files</a> serve to provide meta information for a library in a structured way. Their syntax is in JSON. They have a more informational part (keyed <tt class="docutils literal"><span class="pre">info</span></tt>), which is more interesting for human readers, and a technical part (named <tt class="docutils literal"><span class="pre">provides</span></tt>) that is used in the processing of generator configurations. Here is a brief sample with all the possible keys:</p>
+<p>qooxdoo's <a class="reference external" href="http://en.wikipedia.org/wiki/Manifest_file">Manifest files</a> serve to provide meta information for a library in a structured way. Their syntax is in JSON. They have a more informational part (keyed <tt class="docutils literal"><span class="pre">info</span></tt>), which is more interesting for human readers and a technical part (named <tt class="docutils literal"><span class="pre">provides</span></tt>) that is used in the processing of generator configurations.</p>
+<p>Beginning with the new Node.js compiler tool chain, there is also a part named <tt class="docutils literal"><span class="pre">externalResources</span></tt> to include CSS and Javascript files. This is not available when using the python generator!</p>
+<p>Here is a brief sample with all the possible keys:</p>
 <p>Manifest files are referenced in application's <cite>config.json</cite> files (in the <a class="reference internal" href="../generator/generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><em>library</em></a> key), to identify the library they stand for.</p>
 <div class="section" id="reference">
 <h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
@@ -180,6 +182,16 @@
     <span class="s2">&quot;resource&quot;</span>    <span class="o">:</span> <span class="s2">&quot;source/resource&quot;</span><span class="p">,</span>
     <span class="s2">&quot;translation&quot;</span> <span class="o">:</span> <span class="s2">&quot;source/translation&quot;</span><span class="p">,</span>
     <span class="s2">&quot;type&quot;</span>        <span class="o">:</span> <span class="s2">&quot;application&quot;</span>
+  <span class="p">},</span>
+
+  <span class="s2">&quot;externalResources&quot;</span> <span class="o">:</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;script&quot;</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s2">&quot;js/customscript.js&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;css&quot;</span><span class="o">:</span> <span class="p">[</span>
+      <span class="s2">&quot;styles/style.css&quot;</span>
+    <span class="p">]</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -211,6 +223,11 @@
 <li><strong>resource</strong>: Path to the library's resources relative to the Manifest.json file, up to but not including the root namespace folder (e.g. <tt class="docutils literal"><span class="pre">source/resource</span></tt>).</li>
 <li><strong>translation</strong>: Path to the library's translation files relative to the Manifest.json file (e.g. <tt class="docutils literal"><span class="pre">source/translation</span></tt>).</li>
 <li><strong>type</strong>: One of [<tt class="docutils literal"><span class="pre">library</span></tt>, <tt class="docutils literal"><span class="pre">application</span></tt>].</li>
+</ul>
+</li>
+<li><strong>externalResources</strong>: Static Javascript and CSS files that shall be always included without further processing by qooxdoo. All paths are relative to the resource folder stated in the &quot;provides&quot; section. Only available in the Node.js-based qooxdoo compiler.<ul>
+<li><strong>script</strong>: Array of javascript files.</li>
+<li><strong>css</strong>: Array of css files.</li>
 </ul>
 </li>
 </ul>
