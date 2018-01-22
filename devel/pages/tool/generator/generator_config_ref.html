@@ -1311,10 +1311,12 @@ it is possible to lookup image sources like &#64;FontAwesome/house.</p>
 <p>(Re-)generate the .po files (usually located in <tt class="docutils literal"><span class="pre">source/translation</span></tt>) from source classes. Takes a map. The source classes of the  specified name space are scanned for translatable strings. Those strings are extracted and put into map files (.po files), one for each language. Those .po files can then be edited to contain the proper translations of the source strings. For a new locale, a new file will be generated. For existing .po files, re-running the job will add and remove entries as appropriate, but otherwise keep existing translations.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;translate&quot;</span> <span class="o">:</span>
 <span class="p">{</span>
-  <span class="s2">&quot;namespaces&quot;</span>               <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.util&quot;</span> <span class="p">],</span>
-  <span class="s2">&quot;locales&quot;</span>                  <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span> <span class="p">],</span>
-  <span class="s2">&quot;pofile-with-metadata&quot;</span>     <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
-  <span class="s2">&quot;poentry-with-occurrences&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="s2">&quot;namespaces&quot;</span>                  <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.util&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;locales&quot;</span>                     <span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span> <span class="p">],</span>
+  <span class="s2">&quot;pofile-with-metadata&quot;</span>        <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="s2">&quot;poentry-with-occurrences&quot;</span>    <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">)</span>
+  <span class="s2">&quot;occurrences-with-linenumber&quot;</span> <span class="o">:</span> <span class="p">(</span><span class="kc">true</span><span class="o">|</span><span class="kc">false</span><span class="p">),</span>
+  <span class="s2">&quot;eol-style&quot;</span>                   <span class="o">:</span> <span class="s2">&quot;(LF|CR|CRLF)&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1327,6 +1329,8 @@ it is possible to lookup image sources like &#64;FontAwesome/house.</p>
 <li><strong>locales</strong> :  List of locale identifiers to update.</li>
 <li><strong>pofile-with-metadata</strong> : Whether meta data is automatically added to a <em>new</em> .po file; on existing .po files the meta data is retained (default: <em>true</em>)</li>
 <li><strong>poentry-with-occurrences</strong> : Whether each PO entry is preceded by <tt class="docutils literal"><span class="pre">#:</span></tt> comments in the <em>.po</em> files, which indicate in which source file(s) and line number(s) this key is used (default: <em>true</em>)</li>
+<li><strong>occurrences-with-linenumber</strong> : Enables (or suppress) appending of line-numbers to every PO entry comment (default: <em>true</em>). Only effective when <em>poentry-with-occurrences</em> is enabled.</li>
+<li><strong>eol-style</strong> : Determines which line end character sequence to use (default: <em>LF</em>)</li>
 </ul>
 </div>
 <div class="section" id="use">
