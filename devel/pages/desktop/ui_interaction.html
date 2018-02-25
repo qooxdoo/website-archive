@@ -181,6 +181,11 @@
 <p>If a widget is a capturing widget, all pointer events will be dispatched on this widget, regardless of the pointer's position. Capturing is active until either a different widget is set to capture events, the browser loses focus or the user taps the primary button. If a widget loses its capture state a <tt class="docutils literal"><span class="pre">losecapture</span></tt> event is dispatched on the widget.</p>
 <p>Internally, qooxdoo uses capturing in menus, split panes or sliders for example.</p>
 </div>
+<div class="section" id="promise-support">
+<span id="pages-desktop-ui-interaction-promises"></span><h2>Promise Support<a class="headerlink" href="#promise-support" title="Permalink to this headline">¶</a></h2>
+<p>Event handlers are called in sequence, but if an event handler returns a <tt class="docutils literal"><span class="pre">qx.Promise</span></tt> then the event handling chain will be suspended until the promise is resolved; if the promise is rejected, then the event's <tt class="docutils literal"><span class="pre">stopPropagation()</span></tt> method will be called and the usual behaviour for handling aborted events will apply.</p>
+<p>Note that this is not able to stop different physical events - for example, &quot;mousedown&quot; and &quot;mouseup&quot; are two completely separate events sent by the browser in response to physical user events, and if you return a promise from a &quot;mousedown&quot; handler this will not prevent &quot;mouseup&quot; being sent a few milliseconds later; of course, because these events are technically unrelated there is no guarantee that just because a widget sees a &quot;mousedown&quot; event it would see a &quot;mouseup&quot; in the first place, or vice versa.</p>
+</div>
 <div class="section" id="keyboard-support">
 <span id="pages-desktop-ui-interaction-keyboard-support"></span><h2>Keyboard Support<a class="headerlink" href="#keyboard-support" title="Permalink to this headline">¶</a></h2>
 <p>DOM3-like event handling was the prototype for qooxdoo's key event support. This means that key identifiers can be used (instead of non-unified key codes) which is much more comfortable than what is known from most web application frameworks. Basically each key on the keyboard has a name like <tt class="docutils literal"><span class="pre">Ctrl</span></tt>, <tt class="docutils literal"><span class="pre">Shift</span></tt>, <tt class="docutils literal"><span class="pre">F3</span></tt> or <tt class="docutils literal"><span class="pre">Enter</span></tt>. A complete list of all supported keys is available in <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.event.type.KeySequence~getKeyIdentifier">the API documentation</a>.</p>
@@ -266,6 +271,7 @@ It is also possible to define a <tt class="docutils literal"><span class="pre">t
 <li><a class="reference internal" href="#mouse-events">Mouse Events</a></li>
 <li><a class="reference internal" href="#touch-events">Touch Events</a></li>
 <li><a class="reference internal" href="#event-capturing">Event Capturing</a></li>
+<li><a class="reference internal" href="#promise-support">Promise Support</a></li>
 <li><a class="reference internal" href="#keyboard-support">Keyboard Support</a></li>
 <li><a class="reference internal" href="#working-with-commands">Working with Commands</a></li>
 <li><a class="reference internal" href="#focus-handling">Focus Handling</a></li>
