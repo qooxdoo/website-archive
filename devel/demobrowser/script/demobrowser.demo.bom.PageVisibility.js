@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.2ecb8c27e711.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.774ff4a82b82.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4570,17 +4570,17 @@ else {qx.log.Logger.warn(i+q);}
 )();
 (function(){var a="change",b="visibilityState",c="visibilitychange",d="visible",f="Hidden",g="qx.bom.PageVisibility",h="Event",j="VisibilityState",k="hidden";qx.Bootstrap.define(g,{extend:qx.event.Emitter,statics:{getInstance:function(){if(!this.$$instance){this.$$instance=new qx.bom.PageVisibility();}
 ;return this.$$instance;}
-},construct:function(document){this.__nH=document||window.document;this.__up();var self=this;qx.bom.Event.addNativeListener(this.__nH,this.__la,function(e){self.emit(a,e);}
+},construct:function(document){this.__nH=document||window.document;this.__BH();var self=this;qx.bom.Event.addNativeListener(this.__nH,this.__la,function(e){self.emit(a,e);}
 );}
-,events:{"change":h},members:{__nH:null,__un:null,__uo:null,__la:null,__up:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__nH[m]!=undefined){this.__un=m;this.__la=l[i].toLowerCase()+c;break;}
+,events:{"change":h},members:{__nH:null,__BF:null,__BG:null,__la:null,__BH:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__nH[m]!=undefined){this.__BF=m;this.__la=l[i].toLowerCase()+c;break;}
 ;}
-;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__nH[m]!=undefined){this.__uo=m;break;}
+;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__nH[m]!=undefined){this.__BG=m;break;}
 ;}
-;if(this.__un==null){this.__un=k;this.__la=c;}
-;if(this.__uo==null){this.__uo=b;}
+;if(this.__BF==null){this.__BF=k;this.__la=c;}
+;if(this.__BG==null){this.__BG=b;}
 ;}
-,isHidden:function(){return !!this.__nH[this.__un];}
-,getVisibilityState:function(){return this.__nH[this.__uo]||d;}
+,isHidden:function(){return !!this.__nH[this.__BF];}
+,getVisibilityState:function(){return this.__nH[this.__BG]||d;}
 }});}
 )();
 (function(){var b="'!",c='Invalid include in theme "',d="fonts",e="appearances",f='The configuration key "',g="Mixin theme is not a valid theme!",h='" is not allowed!',j="icons",k="You can only define one theme category per file! Invalid theme: ",m="string",n="decorations",o="other",p="Found base flag in entry '",q="qx.debug",r='Invalid patch in theme "',s="widgets",t="[Theme ",u="borders",v="' are not compatible '",w="The mixins '",x='": ',y="' of theme '",z='" is invalid: ',A='Invalid extend in theme "',B='Invalid type of key "',C='The key "',D='"!',E="]",F='"! The value needs to be a map!',G='"! The type of the key must be "',H="undefined",I='The type of the key "',J="qx.Theme",K='The content of a meta theme must reference to other themes. The value for "',L='" inside the meta block is wrong.',M='" in theme "',N="colors",O='Invalid key "',P='"! The value is undefined/null!',Q="Theme",R="meta",S='" is not allowed inside a meta theme block.',T="'. Base flags are not allowed for themes without a valid super theme!",U="object";qx.Bootstrap.define(J,{statics:{define:function(name,W){if(!W){var W={};}
