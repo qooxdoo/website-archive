@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellSpan.124d2117bba4.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellSpan.109dd97cee6e.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -7653,11 +7653,7 @@ else if(this.getScale()){this.__iv=u;}
 else {this.__iv=bE;}
 ;}
 ;return this.__iv;}
-,__iB:function(cA){var cx;var cB;var cz=qx.html.Image;if(cA==I){cz=qx.html.Label;cx=true;cB=o;}
-else if(cA==bU){cx=true;cB=o;}
-else if(cA==bE){cx=false;cB=o;}
-else {cx=true;cB=Y;}
-;var cC=new (cz)(cB);cC.connectWidget(this);cC.setStyles({"overflowX":bQ,"overflowY":bQ,"boxSizing":S});if(cA==I){cC.setRich(true);}
+,__iB:function(cA){var cx;var cB;var cz=qx.html.Image;switch(cA){case I:cz=qx.html.Label;cx=true;cB=o;break;case bU:cx=true;cB=o;break;case bE:cx=false;cB=o;break;default:cx=true;cB=Y;break;};var cC=new (cz)(cB);cC.connectWidget(this);cC.setStyles({"overflowX":bQ,"overflowY":bQ,"boxSizing":S});if(cA==I){cC.setRich(true);}
 else {cC.setScale(cx);if(qx.core.Environment.get(M)){var cy=this.__ix=new qx.html.Element(o);cC.connectWidget(this);cy.setStyle(bS,bW);cy.add(cC);return cy;}
 ;}
 ;return cC;}

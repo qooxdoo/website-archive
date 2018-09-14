@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Tree_Columns.5bb9ffbfcb71.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.Tree_Columns.8d4181174c78.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -7653,11 +7653,7 @@ else if(this.getScale()){this.__iv=u;}
 else {this.__iv=bE;}
 ;}
 ;return this.__iv;}
-,__iB:function(cA){var cx;var cB;var cz=qx.html.Image;if(cA==I){cz=qx.html.Label;cx=true;cB=o;}
-else if(cA==bU){cx=true;cB=o;}
-else if(cA==bE){cx=false;cB=o;}
-else {cx=true;cB=Y;}
-;var cC=new (cz)(cB);cC.connectWidget(this);cC.setStyles({"overflowX":bQ,"overflowY":bQ,"boxSizing":S});if(cA==I){cC.setRich(true);}
+,__iB:function(cA){var cx;var cB;var cz=qx.html.Image;switch(cA){case I:cz=qx.html.Label;cx=true;cB=o;break;case bU:cx=true;cB=o;break;case bE:cx=false;cB=o;break;default:cx=true;cB=Y;break;};var cC=new (cz)(cB);cC.connectWidget(this);cC.setStyles({"overflowX":bQ,"overflowY":bQ,"boxSizing":S});if(cA==I){cC.setRich(true);}
 else {cC.setScale(cx);if(qx.core.Environment.get(M)){var cy=this.__ix=new qx.html.Element(o);cC.connectWidget(this);cy.setStyle(bS,bW);cy.add(cC);return cy;}
 ;}
 ;return cC;}
@@ -12219,7 +12215,7 @@ else if(bx){var bt=this.__vy(bD,bu);var bC=this.__vB(bt,bD,bs,bz);for(var bA in 
 ;throw new Error(g);}
 }});}
 )();
-(function(){var a="source",b="changeLeadIcon",c="changeSize",d="changeMode",e="changeDate",f="checked",g="changeChecked",h="icon/16/places/user-desktop.png",i="value",j="size",k="leadIcon",l="date",m="mode",n="demobrowser.demo.virtual.tree.TreeItem",o="String",p="Boolean";qx.Class.define(n,{extend:qx.ui.tree.VirtualTreeItem,properties:{leadIcon:{check:o,event:b,nullable:true},checked:{check:p,event:g,nullable:true},size:{check:o,event:c,nullable:true},date:{check:o,event:e,nullable:true},mode:{check:o,event:d,nullable:true}},members:{__Ch:null,__Ci:null,__Cj:null,__Ck:null,__kK:null,_addWidgets:function(){var q=this.__Ch=new qx.ui.basic.Image();this.bind(k,q,a);q.setWidth(16);this.addWidget(q);this.addSpacer();this.addOpenButton();this.addIcon();this.setIcon(h);var r=this.__Ci=new qx.ui.form.CheckBox();this.bind(f,r,i);r.bind(i,this,f);r.setFocusable(false);r.setTriState(true);r.setMarginRight(4);this.addWidget(r);this.addLabel();this.addWidget(new qx.ui.core.Spacer(),{flex:1});var s=this.__Cj=new qx.ui.basic.Label();this.bind(j,s,i);s.setWidth(50);this.addWidget(s);s=this.__Ck=new qx.ui.basic.Label();this.bind(l,s,i);s.setWidth(150);this.addWidget(s);s=this.__kK=new qx.ui.basic.Label();this.bind(m,s,i);s.setWidth(80);this.addWidget(s);}
+(function(){var a="source",b="changeLeadIcon",c="changeSize",d="changeMode",e="changeDate",f="checked",g="changeChecked",h="icon/16/places/user-desktop.png",i="value",j="size",k="leadIcon",l="date",m="mode",n="demobrowser.demo.virtual.tree.TreeItem",o="String",p="Boolean";qx.Class.define(n,{extend:qx.ui.tree.VirtualTreeItem,properties:{leadIcon:{check:o,event:b,nullable:true},checked:{check:p,event:g,nullable:true},size:{check:o,event:c,nullable:true},date:{check:o,event:e,nullable:true},mode:{check:o,event:d,nullable:true}},members:{__Ch:null,__Ci:null,__Cj:null,__Ck:null,__kI:null,_addWidgets:function(){var q=this.__Ch=new qx.ui.basic.Image();this.bind(k,q,a);q.setWidth(16);this.addWidget(q);this.addSpacer();this.addOpenButton();this.addIcon();this.setIcon(h);var r=this.__Ci=new qx.ui.form.CheckBox();this.bind(f,r,i);r.bind(i,this,f);r.setFocusable(false);r.setTriState(true);r.setMarginRight(4);this.addWidget(r);this.addLabel();this.addWidget(new qx.ui.core.Spacer(),{flex:1});var s=this.__Cj=new qx.ui.basic.Label();this.bind(j,s,i);s.setWidth(50);this.addWidget(s);s=this.__Ck=new qx.ui.basic.Label();this.bind(l,s,i);s.setWidth(150);this.addWidget(s);s=this.__kI=new qx.ui.basic.Label();this.bind(m,s,i);s.setWidth(80);this.addWidget(s);}
 }});}
 )();
 (function(){var a="qx.ui.form.IRadioItem",b="qx.event.type.Data";qx.Interface.define(a,{events:{"changeValue":b},members:{setValue:function(c){}
