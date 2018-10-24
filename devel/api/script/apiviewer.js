@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:4bf06a89","qx.theme":"apiviewer.Theme","qx.version":"6.0.0-alpha"};
+var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:6b827fcf","qx.theme":"apiviewer.Theme","qx.version":"6.0.0-alpha"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:apiviewer.2b0a998c50f9.js"]}},
+  packages : {"0":{"uris":["__out__:apiviewer.2c8ec16192a7.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10364,24 +10364,24 @@ else {var y=x?this.__ni(x):this.__ng();}
 ;delete (this.__fh[p]);}
 }});}
 )();
-(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='" src="',u=' title="',v="Internal:",w="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",x="apiviewer/image/nextlevel.gif",y="https://developer.mozilla.org/en/DOM/event",z=".js",A="events",B="Included mixins:",C="margin-right:-18px;",D="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",E="opera",F=' | ',G='</p>',H="mixin",I="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",J=' </span>',K=" is deprecated!",L='/>',M="https://developer.mozilla.org/en/CSS/font",N="position:absolute;top:0px;left:0px;padding-right:18px;",O='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',P='px',Q='" target="_blank" title="View Source">',R=' class',S="methods-static",T="string",U="<h2>",V="apiviewer/image/event18.gif",W='tap',X='"',Y="apiviewer/image/property18.gif",cX="https://developer.mozilla.org/en/DOM/window",cY="Deprecated:",da='Static Methods',cT="sub mixins",cU="apiviewer/image/method_public18.gif",cV=":",cW='<img src="',df='25px',dg='</small>',dh="sourceViewUri",di="position:absolute;top:0px;left:0px",db="https://developer.mozilla.org/en/CSS/color",dc="Singleton ",dd="<div>",de='">',dm='<img',dP='" class="img"',eN='"/>',dn="number",dj="Direct ",dk="apiviewer/image/constant18.gif",eK="function",dl="apiviewer/image/class18.gif",dp='<span style="display:inline;position:relative;top:-2px;width:',dq=" is internal!",dr="px",dw='<span class="type">',dx="https://developer.mozilla.org/en/DOM/element",dy="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",dt="Classes including this mixin:",du="constants",dv="This ",dD='px;height:',dE="0",dF="</h2>",dG="class",dz="interface",dA="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dB="Implemented interfaces:",dC='</a>',dK='<h2 class="warning">',dL="properties",eM='HEAD:4bf06a89',dM="https://developer.mozilla.org/en/DOM/node",dH="https://developer.mozilla.org/en/DOM/document",dI="Class",eL="top",dJ="apiviewer/image/constructor18.gif",dN='webkit',dO="margin-left:",eb="engine.name",ea='margin-left',dY='</a></span>',ef="construct",ee="left",ed=".",ec="apiviewer/image/childcontrol18.gif",dT='<div>',dS="child controls",dR="Abstract ",dQ="sub classes",dX='',dW=' style="',dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dU="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",em='!',el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(A,A,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(S,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(du,du,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(dL,dL,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dS));this.getContentElement().setAttribute(dG,eo);this._init(new apiviewer.dao.Class({}));}
-,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":y,"Window":cX,"Document":dH,"Element":dx,"Node":dM,"Date":w,"Function":eH,"Array":ds,"Object":dV,"Map":dV,"RegExp":dA,"Error":dy,"Number":D,"Boolean":I,"String":dU,"undefined":eB,"arguments":ex,"Font":M,"Color":db},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+z;}
+(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='" src="',u=' title="',v="Internal:",w="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",x="apiviewer/image/nextlevel.gif",y='HEAD:6b827fcf',z=".js",A="events",B="Included mixins:",C="margin-right:-18px;",D="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",E="opera",F=' | ',G='</p>',H="mixin",I="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",J=' </span>',K=" is deprecated!",L='/>',M="https://developer.mozilla.org/en/CSS/font",N="position:absolute;top:0px;left:0px;padding-right:18px;",O='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',P='px',Q='" target="_blank" title="View Source">',R=' class',S="methods-static",T="string",U="<h2>",V="apiviewer/image/event18.gif",W='tap',X='"',Y="apiviewer/image/property18.gif",cX="https://developer.mozilla.org/en/DOM/window",cY="Deprecated:",da='Static Methods',cT="sub mixins",cU="apiviewer/image/method_public18.gif",cV=":",cW='<img src="',df='25px',dg='</small>',dh="sourceViewUri",di="position:absolute;top:0px;left:0px",db="https://developer.mozilla.org/en/CSS/color",dc="Singleton ",dd="<div>",de='">',dm='<img',dP='" class="img"',eN='"/>',dn="number",dj="Direct ",dk="apiviewer/image/constant18.gif",eK="function",dl="apiviewer/image/class18.gif",dp='<span style="display:inline;position:relative;top:-2px;width:',dq=" is internal!",dr="px",dw='<span class="type">',dx="https://developer.mozilla.org/en/DOM/element",dy="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",dt="Classes including this mixin:",du="constants",dv="This ",dD='px;height:',dE="0",dF="</h2>",dG="class",dz="interface",dA="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dB="Implemented interfaces:",dC='</a>',dK='<h2 class="warning">',dL="properties",eM="apiviewer/image/childcontrol18.gif",dM="https://developer.mozilla.org/en/DOM/node",dH="https://developer.mozilla.org/en/DOM/document",dI="Class",eL="top",dJ="apiviewer/image/constructor18.gif",dN='webkit',dO="margin-left:",eb="engine.name",ea='margin-left',dY='</a></span>',ef="construct",ee="left",ed=".",ec='<div>',dT="child controls",dS="Abstract ",dR="sub classes",dQ='',dX=' style="',dW="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",dU='!',em="https://developer.mozilla.org/en/DOM/event",el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(A,A,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(S,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(du,du,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(dL,dL,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dT));this.getContentElement().setAttribute(dG,eo);this._init(new apiviewer.dao.Class({}));}
+,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":em,"Window":cX,"Document":dH,"Element":dx,"Node":dM,"Date":w,"Function":eH,"Array":ds,"Object":dW,"Map":dW,"RegExp":dA,"Error":dy,"Number":D,"Boolean":I,"String":dV,"undefined":eB,"arguments":ex,"Font":M,"Color":db},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+z;}
 ,lineNumber:function(eQ){if(eQ.getLineNumber&&typeof eQ.getLineNumber()==dn){return eQ.getLineNumber()+ez;}
 else {return dE;}
 ;}
-,qxGitBranch:function(eR){return eM.split(cV)[1];}
-},createImageHtml:function(eT,eU,eS){if(typeof eT==T){return cW+qx.util.ResourceManager.getInstance().toUri(eT)+dP+(eS?dW+eS+X:ez)+L;}
+,qxGitBranch:function(eR){return y.split(cV)[1];}
+},createImageHtml:function(eT,eU,eS){if(typeof eT==T){return cW+qx.util.ResourceManager.getInstance().toUri(eT)+dP+(eS?dX+eS+X:ez)+L;}
 else {if(eS){eS+=s;}
 else {eS=ek;}
 ;return apiviewer.ui.ClassViewer.createOverlayImageHtml(18,18,eT,eU,eS);}
 ;}
-,createOverlayImageHtml:function(fa,eY,eV,eX,fc){var fb=dX;var eW;if(qx.core.Environment.get(eb)==eJ){fb=dp+fa+dD+eY+P+((fc==null)?dX:(g+fc))+de;}
-else {fb=O+fa+dD+eY+P+((fc==null)?dX:(g+fc))+de;}
+,createOverlayImageHtml:function(fa,eY,eV,eX,fc){var fb=dQ;var eW;if(qx.core.Environment.get(eb)==eJ){fb=dp+fa+dD+eY+P+((fc==null)?dQ:(g+fc))+de;}
+else {fb=O+fa+dD+eY+P+((fc==null)?dQ:(g+fc))+de;}
 ;if(qx.core.Environment.get(eb)==eJ){eW=N;}
 else if(qx.core.Environment.get(eb)==E){eW=C;}
 else {eW=di;}
 ;for(var i=0;i<eV.length;i++ ){fb+=dm;if(eX!=null){fb+=u+eX+X;}
-;fb+=dW+eW+t+qx.util.ResourceManager.getInstance().toUri(eV[i])+eN;}
+;fb+=dX+eW+t+qx.util.ResourceManager.getInstance().toUri(eV[i])+eN;}
 ;fb+=a;return fb;}
 ,getSourceUri:function(fd){var ff;if(fd instanceof apiviewer.dao.Class){ff=fd;}
 else {ff=fd.getClass();}
@@ -10393,12 +10393,12 @@ else {ff=fd.getClass();}
 ;if(fj.indexOf(eI)>=0){{}
 ;return null;}
 ;return fj;}
-},members:{_getTitleHtml:function(fp){var fo=dI;switch(fp.getType()){case H:fo=et;break;case dz:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dg);fl.add(dw);if(fp.isAbstract()){fl.add(dR);}
+},members:{_getTitleHtml:function(fp){var fo=dI;switch(fp.getType()){case H:fo=et;break;case dz:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dg);fl.add(dw);if(fp.isAbstract()){fl.add(dS);}
 else if(fp.isStatic()){fl.add(ei);}
 else if(fp.isSingleton()){fl.add(dc);}
 ;fl.add(fo,J);var fm=fp.getName();var fn=this.self(arguments).getSourceUri(fp);if(fn){fm=ev+fn+Q+fm+dC;}
 ;fl.add(apiviewer.ui.panels.InfoPanel.setTitleClass(fp,fm));return fl.get();}
-,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,A,S,du,dL,eh,m];var fw={"events":V,"constructor":dJ,"properties":Y,"methods":cU,"methods-static":[cU,eE],"constants":dk,"childControls":ec};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
+,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,A,S,du,dL,eh,m];var fw={"events":V,"constructor":dJ,"properties":Y,"methods":cU,"methods-static":[cU,eE],"constants":dk,"childControls":eM};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
 ;var fx=null;for(var i=0,l=fr.length;i<l;i++ ){var fv=fy.getItemList(fr[i]);this.sortItems(fv);var ft=false;if(fv.length>0){ft=true;}
 else {if(this.getShowInherited()&&(fr[i]==A||fr[i]==dL||fr[i]==eh)){var fu=null;if(fy.getType()==dz){fu=fy.getInterfaceHierarchy();}
 else {fu=fy.getClassHierarchy();}
@@ -10415,7 +10415,7 @@ else {fu=fy.getClassHierarchy();}
 ;fs.appendChild(document.createTextNode(es));fs.appendChild(document.createTextNode(fr[i]===eu?da:qx.lang.String.capitalize(fr[i])));fB.appendChild(fs);fz.appendChild(fB);fx=fB;}
 ;}
 ;return fz;}
-,_getDescriptionHtml:function(fG){var fF=dQ;var fK=fG.getDescription();switch(fG.getType()){case H:fF=cT;break;case dz:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
+,_getDescriptionHtml:function(fG){var fF=dR;var fK=fG.getDescription();switch(fG.getType()){case H:fF=cT;break;case dz:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
 ;var fI=apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(fG);if(fI){if(fH.length>0){fH.splice(-1,0,fI);}
 else {fH.add(fI);}
 ;}
@@ -10433,7 +10433,7 @@ else {fH.add(dv,fG.getType(),K);}
 ;fM=fM.get();}
 ;return fM;}
 ,__np:function(fQ){var fS=apiviewer.ui.ClassViewer;var fR=new qx.util.StringBuilder(U,eF,dF);var fP=fQ.getClassHierarchy(true);fR.add(fS.createImageHtml(dl),eq);var fO=0;for(var i=fP.length-1;i>=0;i-- ){if(apiviewer.dao.Class.isNativeObject(fP[i])&&fP[i]===Object){continue;}
-;fR.add(dT);fR.add(fS.createImageHtml(x,null,dO+fO+dr),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dl));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
+;fR.add(ec);fR.add(fS.createImageHtml(x,null,dO+fO+dr),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dl));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
 else {var name=Object.prototype.toString.call(new fP[i]).match(/^\[object (.*)\]$/)[1];fR.add(ey+apiviewer.ui.ClassViewer.MDC_LINKS[name]+ew+name+de+name+dY);}
 ;}
 else {fR.add(fP[i].getFullName());}
@@ -10445,7 +10445,7 @@ else {fW.add(ga.createImageHtml(gb));fW.add(fU.createItemLinkHtml(name,null,fals
 ;fW.add(b);}
 ;return fW.get();}
 ,showItem:function(gg){var gh;var gf={"event":A,"method_public":eh,"method_protected":eh,"method_private":eh,"property":dL,"property_private":dL,"property_protected":dL,"constant":du,"childcontrol":m};if(gg==ef){gh=this.getDocNode().getConstructor();}
-else {if(gg.indexOf(em)!=-1){var ge=gg.split(em);gh=this.getDocNode().getItemByListAndName(gf[ge[1]],ge[0]);if(!gh){gh=this.getDocNode().getItem(ge[0]);}
+else {if(gg.indexOf(dU)!=-1){var ge=gg.split(dU);gh=this.getDocNode().getItemByListAndName(gf[ge[1]],ge[0]);if(!gh){gh=this.getDocNode().getItem(ge[0]);}
 ;}
 else {gh=this.getDocNode().getItem(gg);}
 ;}
@@ -12362,7 +12362,7 @@ else {this.getContentElement().removeAttribute(t);}
 ,tabFocus:function(){qx.ui.core.Widget.prototype.tabFocus.call(this);this.selectAllText();}
 ,_getTextSize:function(){return this.__pP;}
 ,_onHtmlInput:function(e){var dc=e.getData();var db=true;this.__pO=false;if(this.__mv&&this.__mv===dc){db=false;}
-;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=false;dc=dd;this.getContentElement().setValue(dc);}
+;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=this.__mv!==dd;dc=dd;this.getContentElement().setValue(dc);}
 ;}
 ;if(db){this.fireDataEvent(r,dc,this.__mv);this.__mv=dc;if(this.getLiveUpdate()){this.__pQ(dc);}
 ;}
@@ -15485,12 +15485,12 @@ else {this.setStyle(j,o);this.setStyle(q,null);this.setStyle(t,m);}
 ,setTop:function(J,I){var top=I-J;this.setStyle(e,top+n);}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c="qooxdoo",d="",e='6.0.0-alpha',f="versionLabel.version",g=" ",h='HEAD:4bf06a89';qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
-;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=h;if(i==d){i=e;}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='HEAD:6b827fcf',d="",e='6.0.0-alpha',f="versionLabel.version",g=" ",h="qooxdoo";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=c;if(i==d){i=e;}
 ;}
 ;}
 ;qx.ui.basic.Label.call(this,j+g+i);}
-,defer:function(){qx.core.Environment.add(b,c);qx.core.Environment.add(f,null);}
+,defer:function(){qx.core.Environment.add(b,h);qx.core.Environment.add(f,null);}
 });}
 )();
 (function(){var a="tabView",b="classLinkTapped",c="apiviewer.TabViewController",d="changeSelection",e="itemName",f="qx.event.type.Data";qx.Class.define(c,{extend:qx.core.Object,construct:function(g){qx.core.Object.call(this);apiviewer.TabViewController.instance=this;this._tabView=g.getWidgetById(a);this._tabView.addListener(d,this.__qc,this);}

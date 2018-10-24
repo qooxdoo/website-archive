@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tree.f139137eda58.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tree.66cbf2ef9bfc.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11914,7 +11914,7 @@ else {this.getContentElement().removeAttribute(t);}
 ,tabFocus:function(){qx.ui.core.Widget.prototype.tabFocus.call(this);this.selectAllText();}
 ,_getTextSize:function(){return this.__qK;}
 ,_onHtmlInput:function(e){var dc=e.getData();var db=true;this.__qJ=false;if(this.__mz&&this.__mz===dc){db=false;}
-;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=false;dc=dd;this.getContentElement().setValue(dc);}
+;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=this.__mz!==dd;dc=dd;this.getContentElement().setValue(dc);}
 ;}
 ;if(db){this.fireDataEvent(r,dc,this.__mz);this.__mz=dc;if(this.getLiveUpdate()){this.__qL(dc);}
 ;}

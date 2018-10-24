@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ComboBox.775ddafd6e65.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ComboBox.da6dbd6d262e.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11601,8 +11601,8 @@ finally{this.__sN=false;}
 )();
 (function(){var a="qx.ui.form.List",b="text",c="Boolean",d="one",f="addChildWidget",g="_applySpacing",h="Enter",j="Integer",k="action",m="keyinput",n="qx.event.type.Data",o="addItem",p="vertical",q="removeChildWidget",r="",s="_applyOrientation",t="single",u="keypress",v="list",w="__sO",x="horizontal",y="label",z="pane",A="removeItem";qx.Class.define(a,{extend:qx.ui.core.scroll.AbstractScrollArea,implement:[qx.ui.core.IMultiSelection,qx.ui.form.IForm,qx.ui.form.IField,qx.ui.form.IModelSelection],include:[qx.ui.core.MRemoteChildrenHandling,qx.ui.core.MMultiSelectionHandling,qx.ui.form.MForm,qx.ui.form.MModelSelection],construct:function(B){qx.ui.core.scroll.AbstractScrollArea.call(this);this.__sO=this._createListItemContainer();this.__sO.addListener(f,this._onAddChild,this);this.__sO.addListener(q,this._onRemoveChild,this);this.getChildControl(z).add(this.__sO);if(B){this.setOrientation(x);}
 else {this.initOrientation();}
-;this.addListener(u,this._onKeyPress);this.addListener(m,this._onKeyInput);this.__uD=r;}
-,events:{addItem:n,removeItem:n},properties:{appearance:{refine:true,init:v},focusable:{refine:true,init:true},width:{refine:true,init:100},height:{refine:true,init:200},orientation:{check:[x,p],init:p,apply:s},spacing:{check:j,init:0,apply:g,themeable:true},enableInlineFind:{check:c,init:true}},members:{__uD:null,__uE:null,__sO:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__sO;}
+;this.addListener(u,this._onKeyPress);this.addListener(m,this._onKeyInput);this.__uH=r;}
+,events:{addItem:n,removeItem:n},properties:{appearance:{refine:true,init:v},focusable:{refine:true,init:true},width:{refine:true,init:100},height:{refine:true,init:200},orientation:{check:[x,p],init:p,apply:s},spacing:{check:j,init:0,apply:g,themeable:true},enableInlineFind:{check:c,init:true}},members:{__uH:null,__uI:null,__sO:null,SELECTION_MANAGER:qx.ui.core.selection.ScrollArea,getChildrenContainer:function(){return this.__sO;}
 ,_onAddChild:function(e){this.fireDataEvent(o,e.getData());}
 ,_onRemoveChild:function(e){this.fireDataEvent(A,e.getData());}
 ,handleKeyPress:function(e){if(!this._onKeyPress(e)){this._getManager().handleKeyPress(e);}
@@ -11616,9 +11616,9 @@ else {this.initOrientation();}
 ;return false;}
 ,_onKeyInput:function(e){if(!this.getEnableInlineFind()){return;}
 ;var K=this.getSelectionMode();if(!(K===t||K===d)){return;}
-;if(((new Date).valueOf()-this.__uE)>1000){this.__uD=r;}
-;this.__uD+=e.getChar();var L=this.findItemByLabelFuzzy(this.__uD);if(L){this.setSelection([L]);}
-;this.__uE=(new Date).valueOf();}
+;if(((new Date).valueOf()-this.__uI)>1000){this.__uH=r;}
+;this.__uH+=e.getChar();var L=this.findItemByLabelFuzzy(this.__uH);if(L){this.setSelection([L]);}
+;this.__uI=(new Date).valueOf();}
 ,findItemByLabelFuzzy:function(N){N=N.toLowerCase();var M=this.getChildren();for(var i=0,l=M.length;i<l;i++ ){var O=M[i].getLabel();if(O&&O.toLowerCase().indexOf(N)==0){return M[i];}
 ;}
 ;return null;}
@@ -11668,7 +11668,7 @@ else {s=t.substring(1);if(s.match(/^\d+$/gi)){r=String.fromCharCode(parseInt(s,1
 (function(){var a="blur",b="Enter",c="changeValue",d="selected",f="key",g="button",h="Down",i="execute",j="qx.event.type.Data",k="inner",l="visible",m="quick",n="String",o="list",p="textfield",q="qx.ui.form.ComboBox",r="single",s="focusin",t="combobox",u="popup",v="focusout",w="_applyPlaceholder",x="tap";qx.Class.define(q,{extend:qx.ui.form.AbstractSelectBox,implement:[qx.ui.form.IStringForm],construct:function(){qx.ui.form.AbstractSelectBox.call(this);var y=this._createChildControl(p);this._createChildControl(g);this.addListener(x,this._onTap);this.addListener(s,function(e){y.fireNonBubblingEvent(s,qx.event.type.Focus);}
 ,this);this.addListener(v,function(e){y.fireNonBubblingEvent(v,qx.event.type.Focus);}
 ,this);}
-,properties:{appearance:{refine:true,init:t},placeholder:{check:n,nullable:true,apply:w}},events:{"changeValue":j},members:{__vY:null,__yB:null,_applyPlaceholder:function(A,z){this.getChildControl(p).setPlaceholder(A);}
+,properties:{appearance:{refine:true,init:t},placeholder:{check:n,nullable:true,apply:w}},events:{"changeValue":j},members:{__uJ:null,__uK:null,_applyPlaceholder:function(A,z){this.getChildControl(p).setPlaceholder(A);}
 ,_createChildControlImpl:function(D,C){var B;switch(D){case p:B=new qx.ui.form.TextField();B.setFocusable(false);B.addState(k);B.addListener(c,this._onTextFieldChangeValue,this);B.addListener(a,this.close,this);this._add(B,{flex:1});break;case g:B=new qx.ui.form.Button();B.setFocusable(false);B.setKeepActive(true);B.addState(k);B.addListener(i,this.toggle,this);this._add(B);break;case o:B=qx.ui.form.AbstractSelectBox.prototype._createChildControlImpl.call(this,D);B.setSelectionMode(r);break;};return B||qx.ui.form.AbstractSelectBox.prototype._createChildControlImpl.call(this,D);}
 ,_forwardStates:{focused:true,invalid:true},tabFocus:function(){var E=this.getChildControl(p);E.getFocusElement().focus();E.selectAllText();}
 ,focus:function(){qx.ui.form.AbstractSelectBox.prototype.focus.call(this);this.getChildControl(p).getFocusElement().focus();}
@@ -11683,14 +11683,14 @@ else if(I.isVisible()){qx.ui.form.AbstractSelectBox.prototype._onKeyPress.call(t
 ;}
 ,_onTap:function(e){this.close();}
 ,_onListPointerDown:function(e){this._setPreselectedItem();}
-,_setPreselectedItem:function(){if(this.__vY){var J=this.__vY.getLabel();if(this.getFormat()!=null){J=this.getFormat().call(this,this.__vY);}
+,_setPreselectedItem:function(){if(this.__uJ){var J=this.__uJ.getLabel();if(this.getFormat()!=null){J=this.getFormat().call(this,this.__uJ);}
 ;if(J&&J.translate){J=J.translate();}
-;this.setValue(J);this.__vY=null;}
+;this.setValue(J);this.__uJ=null;}
 ;}
-,_onListChangeSelection:function(e){var K=e.getData();if(K.length>0){var M=this.getChildControl(o);var L=M.getSelectionContext();if(L==m||L==f){this.__vY=K[0];}
+,_onListChangeSelection:function(e){var K=e.getData();if(K.length>0){var M=this.getChildControl(o);var L=M.getSelectionContext();if(L==m||L==f){this.__uJ=K[0];}
 else {var N=K[0].getLabel();if(this.getFormat()!=null){N=this.getFormat().call(this,K[0]);}
 ;if(N&&N.translate){N=N.translate();}
-;this.setValue(N);this.__vY=null;}
+;this.setValue(N);this.__uJ=null;}
 ;}
 ;}
 ,_onPopupChangeVisibility:function(e){qx.ui.form.AbstractSelectBox.prototype._onPopupChangeVisibility.call(this,e);var P=this.getChildControl(u);if(P.isVisible()){var O=this.getChildControl(o);var Q=this.getValue();var R=null;if(Q){R=O.findItem(Q);}
@@ -11765,7 +11765,7 @@ else {this.getContentElement().removeAttribute(t);}
 ,tabFocus:function(){qx.ui.core.Widget.prototype.tabFocus.call(this);this.selectAllText();}
 ,_getTextSize:function(){return this.__qK;}
 ,_onHtmlInput:function(e){var dc=e.getData();var db=true;this.__qJ=false;if(this.__mz&&this.__mz===dc){db=false;}
-;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=false;dc=dd;this.getContentElement().setValue(dc);}
+;if(this.getFilter()!=null){var dd=this._validateInput(dc);if(dd!=dc){db=this.__mz!==dd;dc=dd;this.getContentElement().setValue(dc);}
 ;}
 ;if(db){this.fireDataEvent(r,dc,this.__mz);this.__mz=dc;if(this.getLiveUpdate()){this.__qL(dc);}
 ;}
