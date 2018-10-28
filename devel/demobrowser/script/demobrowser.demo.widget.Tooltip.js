@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tooltip.0c0b50bc6135.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Tooltip.debe6c31bea5.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10537,7 +10537,7 @@ else {top+=B;}
 }});}
 )();
 (function(){var a="Button #2 (Shared ToolTip)",b="Short timeout ToolTip",c="demobrowser.demo.widget.Tooltip",d="Hello World #3",f="Button with ToolTipText and ToolTipIcon",g="ToolTip with icon and label",h="Shared tool tip of button #",i="ToolTip with icon and rich text",j="Such a great tooltip with a (show) timeout of 50ms.",k="Icon only ToolTip",l="Button #1 (Shared ToolTip)",m="container",n="This also may contain <b style='color:red'>rich HTML</b> markup ",o="appear",p="2",q="Shared ToolTip",r="1",s="Button with ToolTipText",t="A long label text with auto-wrapping. ",u="Button with ToolTipIcon",v="icon/16/actions/help-about.png",w="and with a (show) timeout of 50ms.",x="Tooltip text",y="icon/32/actions/help-about.png";qx.Class.define(c,{extend:qx.application.Standalone,members:{main:function(){qx.application.Standalone.prototype.main.call(this);var A=new qx.ui.container.Scroll();this.getRoot().add(A,{edge:0});var z=new qx.ui.layout.Grid(10,10);this.container=new qx.ui.container.Composite(z).set({padding:20});A.add(this.container);this.createSharedToolTip();this.createIconToolTip();this.createToolTip();this.createShortTimeoutToolTip();this.createRichToolTip();this.createToolTipText();this.createToolTipIcon();this.createToolTipTextIcon();}
-,__Cl:4,__Cm:0,add:function(B){this.container.add(B,{row:Math.floor(this.__Cm/this.__Cl),column:this.__Cm%this.__Cl});this.__Cm+=1;}
+,__CA:4,__CB:0,add:function(B){this.container.add(B,{row:Math.floor(this.__CB/this.__CA),column:this.__CB%this.__CA});this.__CB+=1;}
 ,createSharedToolTip:function(){var E=new qx.ui.tooltip.ToolTip(q);E.addListener(o,function(e){var F=h;if(this.getOpener()==D){F+=r;}
 else {F+=p;}
 ;E.setLabel(F);}

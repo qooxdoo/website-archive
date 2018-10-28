@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Video.d201b6cd1bda.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Video.6ca83590976c.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10587,19 +10587,21 @@ else {B.setLoop(true);}
 ,getCurrentTime:function(){return this._media.currentTime;}
 ,setSource:function(v){this._media.src=v;}
 ,getSource:function(){return this._media.src;}
+,setSourceObject:function(w){this._media.srcObject=w;}
+,getSourceObject:function(){return this._media.srcObject;}
 ,hasControls:function(){return this._media.controls;}
 ,showControls:function(){this._media.controls=true;}
 ,hideControls:function(){this._media.controls=false;}
-,setAutoplay:function(w){this._media.autoplay=w;}
+,setAutoplay:function(x){this._media.autoplay=x;}
 ,getAutoplay:function(){return this._media.autoplay;}
-,setPreload:function(x){if(x==e||x==f||x==o){this._media.preload=x;}
+,setPreload:function(y){if(y==e||y==f||y==o){this._media.preload=y;}
 else {this._media.preload=o;}
 ;}
 ,getPreload:function(){return this._media.preload;}
-,setLoop:function(y){if(!this._hasLoop){if(y===true){this._loopId=this.addListener(b,this.play,this);}
-else if(y===false&&this._loopId){this.removeListenerById(this._loopId);this._loopId=null;}
+,setLoop:function(z){if(!this._hasLoop){if(z===true){this._loopId=this.addListener(b,this.play,this);}
+else if(z===false&&this._loopId){this.removeListenerById(this._loopId);this._loopId=null;}
 ;}
-;this._media.loop=y;}
+;this._media.loop=z;}
 ,isLoop:function(){return !!this._media.loop;}
 ,_handlePlayEvent:function(){this.fireEvent(g);}
 ,_handlePauseEvent:function(){this.fireEvent(j);}
@@ -10609,7 +10611,7 @@ else if(y===false&&this._loopId){this.removeListenerById(this._loopId);this._loo
 ,_handleLoadedDataEvent:function(){this.fireEvent(h);}
 ,_handleLoadedMetaDataEvent:function(){this.fireEvent(m);}
 },destruct:function(){var Event=qx.bom.Event;Event.removeNativeListener(this._media,g,this._handlePlayEventBound);Event.removeNativeListener(this._media,j,this._handlePauseEventBound);Event.removeNativeListener(this._media,a,this._handleTimeUpdateEventBound);Event.removeNativeListener(this._media,l,this._handleEndedEventBound);Event.removeNativeListener(this._media,n,this._handleVolumeChangeEventBound);Event.removeNativeListener(this._media,h,this._handleLoadedDataEventBound);Event.removeNativeListener(this._media,m,this._handleLoadedMetaDataEventBound);try{this.pause();}
-catch(z){}
+catch(A){}
 ;this.setSource(d);this._media=null;}
 });}
 )();

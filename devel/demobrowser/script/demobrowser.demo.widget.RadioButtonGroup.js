@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.RadioButtonGroup.7887583e02b5.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.RadioButtonGroup.7a298ed82473.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10572,32 +10572,32 @@ catch(e){throw new Error(a+e);}
 ,getSelectables:function(e){return arguments.length==1;}
 }});}
 )();
-(function(){var a="__ul",b="Boolean",c="_applyValid",d="",e="changeRequired",f="changeValid",g="changeInvalidMessage",h='object',j="changeSelection",k="changeValue",l="_applyInvalidMessage",m="can not select radio item from value",n="String",o="qx.ui.form.RadioButtonGroup",p="qx.event.type.Data";qx.Class.define(o,{extend:qx.ui.core.Widget,include:[qx.ui.core.MLayoutHandling,qx.ui.form.MModelSelection],implement:[qx.ui.form.IForm,qx.ui.form.IField,qx.ui.core.ISingleSelection,qx.ui.form.IModelSelection],construct:function(q){qx.ui.core.Widget.call(this);if(q==null){this.setLayout(new qx.ui.layout.VBox(4));}
+(function(){var a="Boolean",b="_applyValid",c="",d="changeRequired",e="changeValid",f="changeInvalidMessage",g='object',h="changeSelection",j="__wu",k="changeValue",l="_applyInvalidMessage",m="can not select radio item from value",n="String",o="qx.ui.form.RadioButtonGroup",p="qx.event.type.Data";qx.Class.define(o,{extend:qx.ui.core.Widget,include:[qx.ui.core.MLayoutHandling,qx.ui.form.MModelSelection],implement:[qx.ui.form.IForm,qx.ui.form.IField,qx.ui.core.ISingleSelection,qx.ui.form.IModelSelection],construct:function(q){qx.ui.core.Widget.call(this);if(q==null){this.setLayout(new qx.ui.layout.VBox(4));}
 else {this.setLayout(q);}
-;this.__ul=new qx.ui.form.RadioGroup();this.__ul.addListener(j,this._onChangeSelection,this);}
-,properties:{valid:{check:b,init:true,apply:c,event:f},required:{check:b,init:false,event:e},invalidMessage:{check:n,init:d,event:g,apply:l},requiredInvalidMessage:{check:n,nullable:true,event:g}},events:{"changeValue":p,"changeSelection":p},members:{__ul:null,_applyInvalidMessage:function(t,r){var s=this._getChildren();for(var i=0;i<s.length;i++ ){s[i].setInvalidMessage(t);}
+;this.__wu=new qx.ui.form.RadioGroup();this.__wu.addListener(h,this._onChangeSelection,this);}
+,properties:{valid:{check:a,init:true,apply:b,event:e},required:{check:a,init:false,event:d},invalidMessage:{check:n,init:c,event:f,apply:l},requiredInvalidMessage:{check:n,nullable:true,event:f}},events:{"changeValue":p,"changeSelection":p},members:{__wu:null,_applyInvalidMessage:function(t,r){var s=this._getChildren();for(var i=0;i<s.length;i++ ){s[i].setInvalidMessage(t);}
 ;}
 ,_applyValid:function(w,u){var v=this._getChildren();for(var i=0;i<v.length;i++ ){v[i].setValid(w);}
 ;}
-,getRadioGroup:function(){return this.__ul;}
+,getRadioGroup:function(){return this.__wu;}
 ,getChildren:function(){return this._getChildren();}
-,add:function(y,x){this.__ul.add(y);this._add(y,x);}
-,remove:function(z){this.__ul.remove(z);this._remove(z);}
-,removeAll:function(){var A=this.__ul.getItems();for(var i=A.length-1;i>=0;i-- ){this.__ul.remove(A[i]);}
+,add:function(y,x){this.__wu.add(y);this._add(y,x);}
+,remove:function(z){this.__wu.remove(z);this._remove(z);}
+,removeAll:function(){var A=this.__wu.getItems();for(var i=A.length-1;i>=0;i-- ){this.__wu.remove(A[i]);}
 ;return this._removeAll();}
-,getSelection:function(){return this.__ul.getSelection();}
-,setSelection:function(B){this.__ul.setSelection(B);}
-,resetSelection:function(){this.__ul.resetSelection();}
-,isSelected:function(C){return this.__ul.isSelected(C);}
-,isSelectionEmpty:function(){return this.__ul.isSelectionEmpty();}
-,getSelectables:function(D){return this.__ul.getSelectables(D);}
-,setValue:function(E){if(E&&h===typeof E&&E instanceof qx.ui.form.IRadioItem){return this.__ul.setValue(E);}
+,getSelection:function(){return this.__wu.getSelection();}
+,setSelection:function(B){this.__wu.setSelection(B);}
+,resetSelection:function(){this.__wu.resetSelection();}
+,isSelected:function(C){return this.__wu.isSelected(C);}
+,isSelectionEmpty:function(){return this.__wu.isSelectionEmpty();}
+,getSelectables:function(D){return this.__wu.getSelectables(D);}
+,setValue:function(E){if(E&&g===typeof E&&E instanceof qx.ui.form.IRadioItem){return this.__wu.setValue(E);}
 else {return new Error(m);}
 ;}
-,getValue:function(){return this.__ul.getValue();}
-,resetValue:function(){this.__ul.resetValue();}
-,_onChangeSelection:function(event){this.fireDataEvent(k,event.getData(),event.getOldData());this.fireDataEvent(j,event.getData(),event.getOldData());}
-},destruct:function(){this.__ul.removeListener(j,this._onChangeSelection,this);this._disposeObjects(a);}
+,getValue:function(){return this.__wu.getValue();}
+,resetValue:function(){this.__wu.resetValue();}
+,_onChangeSelection:function(event){this.fireDataEvent(k,event.getData(),event.getOldData());this.fireDataEvent(h,event.getData(),event.getOldData());}
+},destruct:function(){this.__wu.removeListener(h,this._onChangeSelection,this);this._disposeObjects(j);}
 });}
 )();
 (function(){var a="Decorator",b="_applyLayoutChange",c="center",d="_applyReversed",e="qx.debug",f="bottom",g="' is not supported by the VBox layout!",h="qx.ui.layout.VBox",j="flex",k="top",m="left",n="height",o="middle",p="Integer",q="The property '",r="right",s="Boolean";qx.Class.define(h,{extend:qx.ui.layout.Abstract,construct:function(t,u,v){qx.ui.layout.Abstract.call(this);if(t){this.setSpacing(t);}
