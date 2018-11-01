@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.Command.28f9f9b4894f.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.Command.f2fe80740b29.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4711,7 +4711,7 @@ else {i=h;}
 ;var self=this;this.__eG=function(){self._oninterval.call(self);}
 ;}
 ,events:{"interval":j},statics:{once:function(m,n,o){if(qx.core.Environment.get(g)){qx.core.Assert.assertFunction(m,d);qx.core.Assert.assertNotUndefined(o,h);}
-;var p=new qx.event.Timer(o);p.__eH=m;p.addListener(c,function(e){p.stop();m.call(n,e);p.dispose();n=null;}
+;var p=new qx.event.Timer(o);p.__eH=m;p.addListener(c,function(e){p.stop();m.call(n,e);delete p.__eH;p.dispose();n=null;}
 ,n);p.start();return p;}
 },properties:{enabled:{init:false,check:f,apply:k},interval:{check:i,init:1000,apply:b}},members:{__eI:null,__eG:null,_applyInterval:function(r,q){if(this.getEnabled()){this.restart();}
 ;}

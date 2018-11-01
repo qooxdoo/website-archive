@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Flash.486cd6fd6e0b.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Flash.5cd6e4eb779c.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8884,7 +8884,7 @@ else {var cL=this.__kU[cG.pointerId];cG.delta={x:-cL.velocityX,y:-cL.velocityY,a
 ;var self=this;this.__eG=function(){self._oninterval.call(self);}
 ;}
 ,events:{"interval":j},statics:{once:function(m,n,o){if(qx.core.Environment.get(g)){qx.core.Assert.assertFunction(m,d);qx.core.Assert.assertNotUndefined(o,h);}
-;var p=new qx.event.Timer(o);p.__eH=m;p.addListener(c,function(e){p.stop();m.call(n,e);p.dispose();n=null;}
+;var p=new qx.event.Timer(o);p.__eH=m;p.addListener(c,function(e){p.stop();m.call(n,e);delete p.__eH;p.dispose();n=null;}
 ,n);p.start();return p;}
 },properties:{enabled:{init:false,check:f,apply:k},interval:{check:i,init:1000,apply:b}},members:{__eI:null,__eG:null,_applyInterval:function(r,q){if(this.getEnabled()){this.restart();}
 ;}
