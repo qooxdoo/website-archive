@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Form.eccd2561db57.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Form.00dc7e5e5661.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -13357,10 +13357,10 @@ else if(bg<bb){bc.setMaxHeight(bg);}
 });}
 )();
 (function(){var a="hovered",b="Enter",c="pressed",e="qx.data.Array",f="pointerover",g="changeValue",h="Space",j="abandoned",k="qx.event.type.Data",l="open",m="list",n="change",o="interval",p="qx.ui.form.VirtualSelectBox",q="arrow",r="changeSelection",t="selection",u="search",v="_applySelection",w="",x="icon",y="spacer",z="dropdown",A="tap",B="converter",C="model",D="label",E=" ",F="virtual-selectbox",G="pointerout",H="atom";qx.Class.define(p,{extend:qx.ui.form.core.AbstractVirtualBox,implement:[qx.data.controller.ISelection,qx.ui.form.IField],construct:function(I){qx.ui.form.core.AbstractVirtualBox.call(this,I);this._createChildControl(H);this._createChildControl(y);this._createChildControl(q);this.addListener(f,this._onPointerOver,this);this.addListener(G,this._onPointerOut,this);this.__dz=[];this.initSelection(this.getChildControl(z).getSelection());this.__zq=new qx.event.Timer(500);this.__zq.addListener(o,this.__zs,this);this.getSelection().addListener(n,this._updateSelectionValue,this);}
-,properties:{appearance:{refine:true,init:F},width:{refine:true,init:120},selection:{check:e,event:r,apply:v,nullable:false,deferredInit:true}},events:{"changeSelection":k,"changeValue":k},members:{__zr:w,__zq:null,__dz:null,setValue:function(J){if(null===J){this.resetSelection();return null;}
+,properties:{appearance:{refine:true,init:F},width:{refine:true,init:120},selection:{check:e,event:r,apply:v,nullable:false,deferredInit:true}},events:{"changeSelection":k,"changeValue":k},members:{__zr:w,__zq:null,__dz:null,setValue:function(J){if(null===J){this.getSelection().removeAll();return null;}
 ;this.getSelection().setItem(0,J);return null;}
 ,getValue:function(){var s=this.getSelection();return (s.length===0?null:s.getItem(0));}
-,resetValue:function(){this.getSelection().removeAll();}
+,resetValue:function(){this.setValue(null);}
 ,syncWidget:function(K){this._removeBindings();this._addBindings();}
 ,_createChildControlImpl:function(N,M){var L;switch(N){case y:L=new qx.ui.core.Spacer();this._add(L,{flex:1});break;case H:L=new qx.ui.form.ListItem(w);L.setCenter(false);L.setAnonymous(true);this._add(L,{flex:1});break;case q:L=new qx.ui.basic.Image();L.setAnonymous(true);this._add(L);break;};return L||qx.ui.form.core.AbstractVirtualBox.prototype._createChildControlImpl.call(this,N,M);}
 ,_getAction:function(event){var O=event.getKeyIdentifier();var Q=this.getChildControl(z).isVisible();var P=this._isModifierPressed(event);if(!Q&&!P&&(O===b||O===h)){return l;}
