@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:18af73dc","qx.theme":"demobrowser.Theme","qx.version":"6.0.0-alpha"};
+var envinfo = {"qx.allowUrlSettings":true,"qx.application":"demobrowser.Application","qx.contrib":false,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:0b828da0","qx.theme":"demobrowser.Theme","qx.version":"6.0.0-alpha"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.9796528ea57e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.dcf6edae970b.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -14190,7 +14190,7 @@ else {s=t.substring(1);if(s.match(/^\d+$/gi)){r=String.fromCharCode(parseInt(s,1
 );}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='HEAD:18af73dc',d="",e='6.0.0-alpha',f="versionLabel.version",g=" ",h="qooxdoo";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='HEAD:0b828da0',d="",e='6.0.0-alpha',f="versionLabel.version",g=" ",h="qooxdoo";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
 ;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=c;if(i==d){i=e;}
 ;}
 ;}
