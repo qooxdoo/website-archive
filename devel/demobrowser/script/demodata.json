@@ -3,6 +3,20 @@
         "classname": "animation",
         "tests": [
             {
+                "name": "Animation.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.bom.element.Animation.animate",
+                    "qx.core.Environment.get"
+                ],
+                "title": "Animation",
+                "nr": 0
+            },
+            {
                 "name": "Animation_3d.html",
                 "tags": [
                     "noPlayground",
@@ -45,20 +59,6 @@
                 ],
                 "title": "Animation Compare",
                 "nr": "Compare"
-            },
-            {
-                "name": "Animation.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.bom.element.Animation.animate",
-                    "qx.core.Environment.get"
-                ],
-                "title": "Animation",
-                "nr": 0
             },
             {
                 "name": "Scroll.html",
@@ -125,6 +125,32 @@
                     "qx.ui.indicator.ProgressBar"
                 ],
                 "title": "Audio",
+                "nr": 0
+            },
+            {
+                "name": "Background.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.util.ResourceManager.getInstance",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles"
+                ],
+                "title": "Background",
                 "nr": 0
             },
             {
@@ -201,32 +227,6 @@
                     "qx.log.Logger.debug"
                 ],
                 "title": "Clip",
-                "nr": 0
-            },
-            {
-                "name": "Background.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.util.ResourceManager.getInstance",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles"
-                ],
-                "title": "Background",
                 "nr": 0
             },
             {
@@ -1080,17 +1080,6 @@
                 "nr": "Columns"
             },
             {
-                "name": "Service.html",
-                "tags": [
-                    "showcase",
-                    "databinding",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Service",
-                "nr": 0
-            },
-            {
                 "name": "SelectBox.html",
                 "tags": [
                     "databinding",
@@ -1108,6 +1097,17 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SelectBox",
+                "nr": 0
+            },
+            {
+                "name": "Service.html",
+                "tags": [
+                    "showcase",
+                    "databinding",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Service",
                 "nr": 0
             },
             {
@@ -1893,6 +1893,41 @@
                 "nr": "NegativeMargin"
             },
             {
+                "name": "HBox_Percent.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox Percent",
+                "nr": "Percent"
+            },
+            {
                 "name": "HBox_Reversed.html",
                 "tags": [
                     "noPlayground",
@@ -1928,41 +1963,6 @@
                 ],
                 "title": "HBox Separator",
                 "nr": "Separator"
-            },
-            {
-                "name": "HBox_Percent.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox Percent",
-                "nr": "Percent"
             },
             {
                 "name": "HBox_ShrinkY.html",
@@ -2028,32 +2028,6 @@
                 "nr": 0
             },
             {
-                "name": "Spacer_HBox.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Spacer",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Spacer",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Spacer",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Spacer HBox",
-                "nr": "HBox"
-            },
-            {
                 "name": "Spacer_Grid.html",
                 "tags": [
                     "qx.Class.define",
@@ -2081,6 +2055,32 @@
                 ],
                 "title": "Spacer Grid",
                 "nr": "Grid"
+            },
+            {
+                "name": "Spacer_HBox.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Spacer",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Spacer",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Spacer",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Spacer HBox",
+                "nr": "HBox"
             },
             {
                 "name": "VBox.html",
@@ -2851,6 +2851,17 @@
                 "nr": 0
             },
             {
+                "name": "Table_Huge.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table"
+                ],
+                "title": "Table Huge",
+                "nr": "Huge"
+            },
+            {
                 "name": "Table_Meta_Columns.html",
                 "tags": [
                     "noPlayground",
@@ -2861,17 +2872,6 @@
                 ],
                 "title": "Table Meta_Columns",
                 "nr": 0
-            },
-            {
-                "name": "Table_Huge.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table"
-                ],
-                "title": "Table Huge",
-                "nr": "Huge"
             },
             {
                 "name": "Table_Remote_Model.html",
@@ -3170,6 +3170,20 @@
                 "nr": 0
             },
             {
+                "name": "FiniteStateMachine.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "FiniteStateMachine",
+                "nr": 0
+            },
+            {
                 "name": "Font.html",
                 "tags": [
                     "qx.Class.define",
@@ -3188,20 +3202,6 @@
                     "qx.bom.Font.fromString"
                 ],
                 "title": "Font",
-                "nr": 0
-            },
-            {
-                "name": "FiniteStateMachine.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -3520,35 +3520,6 @@
                 "nr": 0
             },
             {
-                "name": "Complex.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Row",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.behavior.Prefetch"
-                ],
-                "title": "Complex",
-                "nr": 0
-            },
-            {
-                "name": "ExtendedList.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.list.List",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.log.appender.Console.show",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ExtendedList",
-                "nr": 0
-            },
-            {
                 "name": "Cells.html",
                 "tags": [
                     "test",
@@ -3597,6 +3568,35 @@
                 "nr": 0
             },
             {
+                "name": "Complex.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Row",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.behavior.Prefetch"
+                ],
+                "title": "Complex",
+                "nr": 0
+            },
+            {
+                "name": "ExtendedList.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.list.List",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.log.appender.Console.show",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ExtendedList",
+                "nr": 0
+            },
+            {
                 "name": "Gallery.html",
                 "tags": [
                     "qx.Class.define",
@@ -3623,28 +3623,6 @@
                 "nr": 0
             },
             {
-                "name": "Pane_Column.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.util.ColorUtil.randomColor",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.util.ColorUtil.randomColor"
-                ],
-                "title": "Pane Column",
-                "nr": "Column"
-            },
-            {
                 "name": "GroupedList.html",
                 "tags": [
                     "noPlayground",
@@ -3666,24 +3644,6 @@
                 ],
                 "title": "GroupedList",
                 "nr": 0
-            },
-            {
-                "name": "Pane_GridLines.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.GridLines"
-                ],
-                "title": "Pane GridLines",
-                "nr": "GridLines"
             },
             {
                 "name": "List.html",
@@ -3736,6 +3696,46 @@
                 ],
                 "title": "ListWithFilter",
                 "nr": 0
+            },
+            {
+                "name": "Pane_Column.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.util.ColorUtil.randomColor",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.util.ColorUtil.randomColor"
+                ],
+                "title": "Pane Column",
+                "nr": "Column"
+            },
+            {
+                "name": "Pane_GridLines.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.GridLines"
+                ],
+                "title": "Pane GridLines",
+                "nr": "GridLines"
             },
             {
                 "name": "Pane_Row.html",
@@ -3868,6 +3868,21 @@
                 "nr": 0
             },
             {
+                "name": "Table.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Row",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.HtmlCell",
+                    "qx.ui.virtual.cell.Cell"
+                ],
+                "title": "Table",
+                "nr": 0
+            },
+            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -3902,21 +3917,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "Tree",
-                "nr": 0
-            },
-            {
-                "name": "Table.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Row",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.HtmlCell",
-                    "qx.ui.virtual.cell.Cell"
-                ],
-                "title": "Table",
                 "nr": 0
             },
             {
@@ -4314,116 +4314,6 @@
                 "nr": 0
             },
             {
-                "name": "MenuBar.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.ToggleButton",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.container.Composite",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button"
-                ],
-                "title": "MenuBar",
-                "nr": 0
-            },
-            {
-                "name": "Popup.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.popup.Popup",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.Button",
-                    "qx.ui.popup.Popup",
-                    "qx.ui.basic.Atom"
-                ],
-                "title": "Popup",
-                "nr": 0
-            },
-            {
-                "name": "ProgressBar.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.indicator.ProgressBar",
-                    "qx.ui.form.Slider",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ProgressBar",
-                "nr": 0
-            },
-            {
                 "name": "Menu.html",
                 "tags": [
                     "qx.Class.define",
@@ -4542,6 +4432,116 @@
                     "qx.ui.menu.Button"
                 ],
                 "title": "Menu",
+                "nr": 0
+            },
+            {
+                "name": "MenuBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.ToggleButton",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.container.Composite",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button"
+                ],
+                "title": "MenuBar",
+                "nr": 0
+            },
+            {
+                "name": "Popup.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.popup.Popup",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.Button",
+                    "qx.ui.popup.Popup",
+                    "qx.ui.basic.Atom"
+                ],
+                "title": "Popup",
+                "nr": 0
+            },
+            {
+                "name": "ProgressBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.indicator.ProgressBar",
+                    "qx.ui.form.Slider",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ProgressBar",
                 "nr": 0
             },
             {
@@ -4905,55 +4905,6 @@
                 "nr": 0
             },
             {
-                "name": "Window.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.lang.String.firstUp",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.window.Window",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Window",
-                "nr": 0
-            },
-            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -5053,6 +5004,55 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
+            },
+            {
+                "name": "Window.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.lang.String.firstUp",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.window.Window",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Window",
+                "nr": 0
             }
         ]
     }

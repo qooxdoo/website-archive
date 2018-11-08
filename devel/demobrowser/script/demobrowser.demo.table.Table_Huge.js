@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Huge.aa5a51558a44.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Huge.b87131951416.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -4591,23 +4591,30 @@ catch(e){throw e;}
 finally{this.setBatchMode(false);}
 ;this._fireChangeSelection();return;};this._resetSelection();this._addSelectionInterval(z,y);this._fireChangeSelection();}
 ,addSelectionInterval:function(B,A){var C=qx.ui.table.selection.Model;switch(this.getSelectionMode()){case C.NO_SELECTION:return;case C.MULTIPLE_INTERVAL_SELECTION:case C.MULTIPLE_INTERVAL_SELECTION_TOGGLE:this._addSelectionInterval(B,A);this._fireChangeSelection();break;default:this.setSelectionInterval(B,A);break;};}
-,removeSelectionInterval:function(G,E){this.__zQ=G;this.__zR=E;var D=Math.min(G,E);var H=Math.max(G,E);for(var i=0;i<this.__zP.length;i++ ){var J=this.__zP[i];if(J.minIndex>H){break;}
-else if(J.maxIndex>=D){var K=(J.minIndex>=D)&&(J.minIndex<=H);var F=(J.maxIndex>=D)&&(J.maxIndex<=H);if(K&&F){this.__zP.splice(i,1);i-- ;}
-else if(K){J.minIndex=H+1;}
-else if(F){J.maxIndex=D-1;}
-else {var I={minIndex:H+1,maxIndex:J.maxIndex};this.__zP.splice(i+1,0,I);J.maxIndex=D-1;break;}
+,removeSelectionInterval:function(H,E,K){this.__zQ=H;this.__zR=E;var D=Math.min(H,E);var I=Math.max(H,E);var L=I+1-D;var F=[];var G=null;for(var i=0;i<this.__zP.length;i++ ){var M=this.__zP[i];if(M.minIndex>I){if(K){M.minIndex-=L;M.maxIndex-=L;}
+;}
+else if(M.maxIndex>=D){var N=(M.minIndex>=D);var J=(M.maxIndex>=D)&&(M.maxIndex<=I);if(N&&J){M=null;}
+else if(N){if(K){M.minIndex=D;M.maxIndex-=L;}
+else {M.minIndex=I+1;}
+;}
+else if(J){M.maxIndex=D-1;}
+else {if(K){M.maxIndex-=L;}
+else {G={minIndex:I+1,maxIndex:M.maxIndex};M.maxIndex=D-1;}
 ;}
 ;}
-;this._fireChangeSelection();}
+;if(M){F.push(M);M=null;}
+;if(G){F.push(G);G=null;}
+;}
+;this.__zP=F;this._fireChangeSelection();}
 ,_resetSelection:function(){this.__zP=[];this.__zQ=-1;this.__zR=-1;}
-,_addSelectionInterval:function(O,M){this.__zQ=O;this.__zR=M;var L=Math.min(O,M);var P=Math.max(O,M);var N=0;for(;N<this.__zP.length;N++ ){var Q=this.__zP[N];if(Q.minIndex>L){break;}
+,_addSelectionInterval:function(R,P){this.__zQ=R;this.__zR=P;var O=Math.min(R,P);var S=Math.max(R,P);var Q=0;for(;Q<this.__zP.length;Q++ ){var T=this.__zP[Q];if(T.minIndex>O){break;}
 ;}
-;this.__zP.splice(N,0,{minIndex:L,maxIndex:P});var R=this.__zP[0];for(var i=1;i<this.__zP.length;i++ ){var Q=this.__zP[i];if(R.maxIndex+1>=Q.minIndex){R.maxIndex=Math.max(R.maxIndex,Q.maxIndex);this.__zP.splice(i,1);i-- ;}
-else {R=Q;}
+;this.__zP.splice(Q,0,{minIndex:O,maxIndex:S});var U=this.__zP[0];for(var i=1;i<this.__zP.length;i++ ){var T=this.__zP[i];if(U.maxIndex+1>=T.minIndex){U.maxIndex=Math.max(U.maxIndex,T.maxIndex);this.__zP.splice(i,1);i-- ;}
+else {U=T;}
 ;}
 ;}
-,_dumpRanges:function(){var S=h;for(var i=0;i<this.__zP.length;i++ ){var T=this.__zP[i];S+=l+T.minIndex+a+T.maxIndex+f;}
-;this.debug(S);}
+,_dumpRanges:function(){var V=h;for(var i=0;i<this.__zP.length;i++ ){var W=this.__zP[i];V+=l+W.minIndex+a+W.maxIndex+f;}
+;this.debug(V);}
 ,_fireChangeSelection:function(){if(this.hasBatchMode()){this.__zS=true;}
 else {this.fireEvent(b);}
 ;}
@@ -12157,7 +12164,7 @@ else if(dp==dk[0]){dp=dx;}
 ;this._updateStatusBar();}
 ,_onTableModelDataChanged:function(dY){var ea=dY.getData();this._updateTableData(ea.firstRow,ea.lastRow,ea.firstColumn,ea.lastColumn,ea.removeStart,ea.removeCount);}
 ,_onContextMenuOpen:function(e){}
-,_updateTableData:function(ef,ei,ed,ec,ee,eh){var eb=this._getPaneScrollerArr();if(eh){this.getSelectionModel().removeSelectionInterval(ee,ee+eh);if(this.__zH>=ee&&this.__zH<(ee+eh)){this.setFocusedCell();}
+,_updateTableData:function(ef,ei,ed,ec,ee,eh){var eb=this._getPaneScrollerArr();if(eh){this.getSelectionModel().removeSelectionInterval(ee,ee+eh-1,true);if(this.__zH>=ee&&this.__zH<(ee+eh)){this.setFocusedCell();}
 ;}
 ;for(var i=0;i<eb.length;i++ ){eb[i].onTableModelDataChanged(ef,ei,ed,ec);}
 ;var eg=this.getTableModel().getRowCount();if(eg!=this.__zK){this.__zK=eg;this._updateScrollBarVisibility();this._updateStatusBar();}
