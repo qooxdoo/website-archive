@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormValidator.3e5425432a23.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormValidator.4e5e0d2e5a77.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11038,7 +11038,7 @@ else {bg.exclude();}
 ,__wn:function(){var bs=this.__wh;for(var bt in this.__wf){var br=this.__wf[bt];bs=br&&bs;if(br==null){return;}
 ;}
 ;this._setValid(bs);this.__wf={};this.fireEvent(j);}
-},destruct:function(){this.__we=null;}
+},destruct:function(){this._showToolTip(true);this.__we=null;}
 });}
 )();
 (function(){var a="qx.ui.form.validation.AsyncValidator";qx.Class.define(a,{extend:qx.core.Object,construct:function(b){qx.core.Object.call(this);this.__wo=b;}

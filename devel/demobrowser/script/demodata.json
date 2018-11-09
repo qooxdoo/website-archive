@@ -3951,30 +3951,6 @@
         "classname": "widget",
         "tests": [
             {
-                "name": "Atom.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.core.Spacer",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom"
-                ],
-                "title": "Atom",
-                "nr": 0
-            },
-            {
                 "name": "Button.html",
                 "tags": [
                     "qx.Class.define",
@@ -4013,6 +3989,30 @@
                     "qx.ui.embed.Canvas"
                 ],
                 "title": "Canvas",
+                "nr": 0
+            },
+            {
+                "name": "Atom.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.core.Spacer",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom"
+                ],
+                "title": "Atom",
                 "nr": 0
             },
             {
