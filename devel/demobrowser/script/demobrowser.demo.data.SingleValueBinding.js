@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SingleValueBinding.9341e1b4ede1.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.SingleValueBinding.16b528ab4577.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10917,10 +10917,10 @@ else {u=null;}
 ;};}
 }});}
 )();
-(function(){var a="changeNames",b="changeName",c="__Cp",d="",e="Validation Error: ",f="changeChild",g="- ",h="qx.data.Array",j="changeColor",k="Marge",l="AFFE",m="is no number (parseFloat says so!).",n="Homer",o="\n",p="demobrowser.demo.data.model.Node",q="String",r="changeName2",s="changeChildren";qx.Class.define(p,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.setChildren(new qx.data.Array());}
-,properties:{children:{check:h,event:s},child:{check:p,event:f,nullable:true},names:{check:h,event:a,init:new qx.data.Array(n,k)},name:{check:q,init:l,event:b},name2:{check:q,event:r},number:{init:10,validate:c},color:{event:j,nullable:true}},members:{__Cp:function(t){if(!isNaN(parseFloat(t))){if(/^\d+$/.test(t)){return;}
+(function(){var a="changeNames",b="changeName",c="Validation Error: ",d="",e="is no number (parseFloat says so!).",f="changeChild",g="- ",h="qx.data.Array",j="changeColor",k="Marge",l="AFFE",m="__AT",n="Homer",o="\n",p="demobrowser.demo.data.model.Node",q="String",r="changeName2",s="changeChildren";qx.Class.define(p,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.setChildren(new qx.data.Array());}
+,properties:{children:{check:h,event:s},child:{check:p,event:f,nullable:true},names:{check:h,event:a,init:new qx.data.Array(n,k)},name:{check:q,init:l,event:b},name2:{check:q,event:r},number:{init:10,validate:m},color:{event:j,nullable:true}},members:{__AT:function(t){if(!isNaN(parseFloat(t))){if(/^\d+$/.test(t)){return;}
 ;}
-;throw new qx.core.ValidationError(e+t+m);}
+;throw new qx.core.ValidationError(c+t+e);}
 ,toString:function(v){if(v==undefined){v=0;}
 ;var u=d;for(var i=0;i<v;i++ ){u+=g;}
 ;u+=this.getName();for(var i=0;i<this.getChildren().length;i++ ){u+=o+this.getChildren().getItem(i).toString(v+1);}
