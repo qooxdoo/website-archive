@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.mobile.Fingers.3d3fed2714c9.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.mobile.Fingers.2c1616fbd0bc.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9917,13 +9917,13 @@ else {var h=qx.dom.Node.getWindow(this._native.srcElement);return Math.round(thi
 (function(){var a="qx.event.type.Focus";qx.Class.define(a,{extend:qx.event.type.Event,members:{init:function(d,b,c){qx.event.type.Event.prototype.init.call(this,c,false);this._target=d;this._relatedTarget=b;return this;}
 }});}
 )();
-(function(){var a="black",b="px",c="green",d="div",f="100%",g="yellow",h="30px",j="qx.debug",k="0px",l="12px",m="<b>This demo is intended for WebKit-based browsers and IE11+.</b>",n="browser.documentmode",o="100px",p="demobrowser.demo.mobile.Fingers",q='Lucida Grande',r="50px",s="innerHTML",t="pointerdown",u="mshtml",v="engine.name",w="20px",x="red",y="webkit",z="none",A="white",B="<b>Use your fingers to move the dots</b>",C="pointermove",D="blue",E="absolute";qx.Class.define(p,{extend:qx.application.Native,members:{__Bk:null,__Bl:null,main:function(){qx.application.Native.prototype.main.call(this);if(qx.core.Environment.get(j)){qx.log.appender.Native;qx.log.appender.Console;}
+(function(){var a="black",b="px",c="green",d="div",f="100%",g="yellow",h="30px",j="qx.debug",k="0px",l="12px",m="<b>This demo is intended for WebKit-based browsers and IE11+.</b>",n="browser.documentmode",o="100px",p="demobrowser.demo.mobile.Fingers",q='Lucida Grande',r="50px",s="innerHTML",t="pointerdown",u="mshtml",v="engine.name",w="20px",x="red",y="webkit",z="none",A="white",B="<b>Use your fingers to move the dots</b>",C="pointermove",D="blue",E="absolute";qx.Class.define(p,{extend:qx.application.Native,members:{__Ba:null,__Bb:null,main:function(){qx.application.Native.prototype.main.call(this);if(qx.core.Environment.get(j)){qx.log.appender.Native;qx.log.appender.Console;}
 ;var I={"width":f,"height":f,"backgroundColor":a,"margin":k,"touchAction":z,"msTouchAction":z};var O=new qx.html.Element(d,I);O.useElement(document.body);O.setRoot(true);var F=qx.core.Environment.get(v);var H=F==u&&qx.core.Environment.get(n)>10;if(F!=y&&!H){var L={"color":c,"position":E,"font-family":q,"font-size":l,"left":h,"top":w};var J=new qx.html.Element(d,L);O.add(J);J.setAttribute(s,m);return;}
 ;var N={"color":A,"position":E,"left":h,"top":w};var J=new qx.html.Element(d,N);O.add(J);J.setAttribute(s,B);var K=[D,x,c,A,g];for(var i=0;i<K.length;i++ ){var G={"backgroundColor":K[i],"width":o,"height":o,"position":E,"-moz-border-radius":r,"-webkit-border-radius":r,"border-radius":r,"top":((i+5)*30)+b,"left":((i+1)*150)+b};var M=new qx.html.Element(d,G);O.add(M);}
-;this.__Bk=[];this.__Bl=[];O.addListener(t,this._onPointerDown,this);O.addListener(C,this._onPointerMove,this);}
-,_onPointerDown:function(e){this.__Bk[e.getPointerId()]=parseInt(e.getTarget().style.left)-e.getDocumentLeft();this.__Bl[e.getPointerId()]=parseInt(e.getTarget().style.top)-e.getDocumentTop();}
+;this.__Ba=[];this.__Bb=[];O.addListener(t,this._onPointerDown,this);O.addListener(C,this._onPointerMove,this);}
+,_onPointerDown:function(e){this.__Ba[e.getPointerId()]=parseInt(e.getTarget().style.left)-e.getDocumentLeft();this.__Bb[e.getPointerId()]=parseInt(e.getTarget().style.top)-e.getDocumentTop();}
 ,_onPointerMove:function(e){if(e.getTarget()==document.body){return;}
-;qx.bom.element.Style.setStyles(e.getTarget(),{"left":(e.getDocumentLeft()+this.__Bk[e.getPointerId()])+b,"top":(e.getDocumentTop()+this.__Bl[e.getPointerId()])+b});e.preventDefault();}
+;qx.bom.element.Style.setStyles(e.getTarget(),{"left":(e.getDocumentLeft()+this.__Ba[e.getPointerId()])+b,"top":(e.getDocumentTop()+this.__Bb[e.getPointerId()])+b});e.preventDefault();}
 }});}
 )();
 (function(){var a="Use qx.dev.StackTrace.FORMAT_STACKTRACE instead",b="function",c="<span class='object'>",d="]:",e="&gt;",f="<span class='object' title='Object instance with hash code: ",g="FORMAT_STACK",h="string",k="level-",l="0",m="&lt;",n="<span class='offset'>",o="</span> ",p="}",q=":",r="qx.log.appender.Util",s="&amp;",t="&#39;",u="DIV",v="",w="]",x="'>",y="<span>",z="[",A=", ",B="</span>",C="\n",D="&quot;",E="<span class='type-key'>",F="{",G="</span>:<span class='type-",H="</span>: ",I=" ",J="]</span>: ",K="map",L="?",M="<span class='type-";qx.Bootstrap.define(r,{statics:{toHtml:function(V){var X=[];var T,W,O,Q;X.push(n,this.formatOffset(V.offset,6),o);if(V.object){if(V.clazz){X.push(f+V.object+x,V.clazz.classname,z,V.object,J);}
