@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormInvalids.1caf11e4e5f6.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.FormInvalids.1c7acfd897ac.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -12314,13 +12314,14 @@ else if(this.getLegendPosition()==i){u.setLayoutProperties({"top":w});}
 }});}
 )();
 (function(){var a="resize",b="check-groupbox",c="changeValue",d="legend",f="qx.event.type.Event",g="qx.ui.groupbox.CheckGroupBox",h="execute",i="qx.event.type.Data";qx.Class.define(g,{extend:qx.ui.groupbox.GroupBox,implement:[qx.ui.form.IExecutable,qx.ui.form.IBooleanForm,qx.ui.form.IModel],include:[qx.ui.form.MModelProperty],properties:{appearance:{refine:true,init:b}},events:{"changeValue":i,"execute":f},members:{_createChildControlImpl:function(l,k){var j;switch(l){case d:j=new qx.ui.form.CheckBox();j.setValue(true);j.setAllowGrowX(true);j.addListener(c,this._onRadioChangeValue,this);j.addListener(a,this._repositionFrame,this);j.addListener(h,this._onExecute,this);this._add(j,{left:0,right:0});};return j||qx.ui.groupbox.GroupBox.prototype._createChildControlImpl.call(this,l);}
+,_applyEnabled:function(n,m){qx.ui.groupbox.GroupBox.prototype._applyEnabled.call(this,n,m);this.getChildrenContainer().setEnabled(n&&this.getValue());}
 ,_onExecute:function(e){this.fireEvent(h);}
-,_onRadioChangeValue:function(e){var m=e.getData()?true:false;this.getChildrenContainer().setEnabled(m);this.fireDataEvent(c,m,e.getOldData());}
+,_onRadioChangeValue:function(e){var o=e.getData()?true:false;this.getChildrenContainer().setEnabled(o);this.fireDataEvent(c,o,e.getOldData());}
 ,execute:function(){this.getChildControl(d).execute();}
-,setCommand:function(n){this.getChildControl(d).setCommand(n);}
+,setCommand:function(p){this.getChildControl(d).setCommand(p);}
 ,getCommand:function(){return this.getChildControl(d).getCommand();}
 ,getValue:function(){return this.getChildControl(d).getValue();}
-,setValue:function(o){this.getChildControl(d).setValue(o);}
+,setValue:function(q){this.getChildControl(d).setValue(q);}
 ,resetValue:function(){this.getChildControl(d).resetValue();}
 }});}
 )();
