@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.WebFonts.2f85b8333666.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.WebFonts.d77a3baf563c.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -1501,10 +1501,11 @@ else {for(var l in j){if(!this[i[l]]){if(this[c+qx.Bootstrap.firstUp(l)]!=undefi
 ;return this[f+q]!==undefined||this[a+q]!==undefined;}
 }});}
 )();
-(function(){var a="string",b=", object=",c="function",d="qx.core.Object",e='/',f="qx.core.MObjectId",g="Please use API methods to change owner ID, not the property",h="String",i="Cannot register an object that has no ID, obj=",j="' because it is already owned by another object this=",k="_applyOwner",l=", obj=",m="' because that ID is already in use, this=",n="Cannot register an object with ID '",o="Cannot discard owned objects based on a path",p="_applyObjectId",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(f,{properties:{owner:{init:null,check:d,nullable:true,apply:k},objectId:{init:null,check:h,nullable:true,apply:p}},members:{__bP:null,__bQ:false,_applyOwner:function(s,t){if(!this.__bQ){throw new Error(q);}
+(function(){var a=", object=",b="function",c="qx.core.Object",d="qx.core.MObjectId",e='/',f="string",g="Cannot register an object that has no ID, obj=",h="' because it is already owned by another object this=",i="_applyOwner",j=", obj=",k="' because that ID is already in use, this=",l="Please use API methods to change owner ID, not the property",m="Cannot register an object with ID '",n="Cannot discard owned objects based on a path",o="_applyObjectId",p="Please use API methods to change owner, not the property",q="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(d,{properties:{owner:{init:null,check:c,nullable:true,apply:i},objectId:{init:null,check:function(r){return r===null||(typeof r==f&&r.indexOf(e)<0);}
+,nullable:true,apply:o}},members:{__bP:null,__bQ:false,_applyOwner:function(s,t){if(!this.__bQ){throw new Error(p);}
 ;}
-,_applyObjectId:function(v,w){if(this.getOwner()&&!this.__bQ){throw new Error(g);}
-;if(typeof this.getContentElement==c){var u=this.getContentElement();if(u){u.updateObjectId();}
+,_applyObjectId:function(v,w){if(this.getOwner()&&!this.__bQ){throw new Error(l);}
+;if(typeof this.getContentElement==b){var u=this.getContentElement();if(u){u.updateObjectId();}
 ;}
 ;}
 ,getObject:function(B){if(this.__bP){var y=this.__bP[B];if(y!==undefined){return y;}
@@ -1521,17 +1522,17 @@ else {for(var l in j){if(!this[i[l]]){if(this[c+qx.Bootstrap.firstUp(l)]!=undefi
 ;var F=G.getOwner();if(F===this){return;}
 ;if(F){F.removeOwnedObject(G);}
 ;if(H===undefined){H=G.getObjectId();}
-;if(!H){throw new Error(i+G);}
-;if(this.__bP[H]){throw new Error(n+H+m+this+l+G);}
-;if(G.getOwner()!=null){throw new Error(n+H+j+this+l+G);}
+;if(!H){throw new Error(g+G);}
+;if(this.__bP[H]){throw new Error(m+H+k+this+j+G);}
+;if(G.getOwner()!=null){throw new Error(m+H+h+this+j+G);}
 ;G.__bQ=true;try{G.setOwner(this);G.setObjectId(H);}
 finally{G.__bQ=false;}
 ;this.__bP[H]=G;}
-,removeOwnedObject:function(I){if(!this.__bP){throw new Error(r+this+b+J);}
-;var K;var J;if(typeof I===a){if(I.indexOf(e)>-1){throw new Error(o);}
+,removeOwnedObject:function(I){if(!this.__bP){throw new Error(q+this+a+J);}
+;var K;var J;if(typeof I===f){if(I.indexOf(e)>-1){throw new Error(n);}
 ;K=I;J=this.__bP[K];if(J===undefined){return;}
 ;}
-else {J=I;K=J.getObjectId();if(this.__bP[K]!==J){throw new Error(r+this+b+J);}
+else {J=I;K=J.getObjectId();if(this.__bP[K]!==J){throw new Error(q+this+a+J);}
 ;}
 ;if(J!==null){J.__bQ=true;try{J.setOwner(null);}
 finally{J.__bQ=false;}
@@ -9508,7 +9509,8 @@ else {return o.createRange();}
 (function(){var a="Cannot determine a global absolute Object ID because the topmost object is not registered",b="qx.core.Id",c='/',d=")",e="Cannot determine an absolute Object ID because one of the ancestor ObjectID's is null (got as far as ",f="application",g="/",h="singleton";qx.Class.define(b,{extend:qx.core.Object,include:[qx.core.MObjectId],type:h,members:{__lX:null,__lY:null,_createObjectImpl:function(j){if(this.__lX){var i=this.__lX[j];if(i!==undefined){return i;}
 ;}
 ;switch(j){case f:return qx.core.Init.getApplication()||undefined;};return undefined;}
-,getAbsoluteIdOf:function(k,q){var l=[];var m=qx.core.Init.getApplication();while(k){var r=k.getObjectId();if(!r){this.error(e+l.join(c)+d);return null;}
+,getAbsoluteIdOf:function(k,q){if(this.__lY&&this.__lY[k.toHashCode()]){return k.getObjectId();}
+;var l=[];var m=qx.core.Init.getApplication();while(k){var r=k.getObjectId();if(!r){this.error(e+l.join(c)+d);return null;}
 ;l.unshift(r);var o=k.getOwner();if(o){var p=null;if(o===m){p=f;}
 else {p=this.__lY&&this.__lY[o.toHashCode()]||null;}
 ;if(p){l.unshift(p);break;}
