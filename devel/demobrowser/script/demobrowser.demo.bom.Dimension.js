@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Dimension.5b8398f8afbc.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Dimension.f6a25a645165.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10401,9 +10401,11 @@ else if(dS.getNodeName()==o){var ej=qx.theme.manager.Decoration.getInstance().re
 ;if(ee){ef[R]+=p;ef[d]+=bR;}
 ;ef[F]+=X+(ei[h]||ei[bN]);dS.setStyles(ef);return;}
 ;}
-else {dS.setSource(null);}
+else {if(dS.setSource){dS.setSource(null);}
 ;}
-;dS.setSource(ed);}
+;}
+;if(dS.setSource){dS.setSource(ed);}
+;}
 ,_findHighResolutionSource:function(em){var ep=[v,bT,O];var eo=parseFloat(qx.bom.client.Device.getDevicePixelRatio().toFixed(2));if(eo<=1){return false;}
 ;var i=ep.length;while(i>0&&eo>ep[ --i]){}
 ;var en;var k;for(k=i;k>=0;k-- ){en=this._getHighResolutionSource(em,ep[k]);if(en){return en;}
