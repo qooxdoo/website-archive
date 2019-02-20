@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.WebWorker.eed813bb0ed5.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.WebWorker.f526b7d36852.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8733,35 +8733,35 @@ else {this.__eh=this.__cx.document.documentElement;}
 ,_initKeyObserver:function(){this.__kL=qx.lang.Function.listener(this.__kQ,this);this.__kO=qx.lang.Function.listener(this.__kS,this);var Event=qx.bom.Event;Event.addNativeListener(this.__eh,n,this.__kL);Event.addNativeListener(this.__eh,l,this.__kL);Event.addNativeListener(this.__eh,c,this.__kO);}
 ,_stopKeyObserver:function(){var Event=qx.bom.Event;Event.removeNativeListener(this.__eh,n,this.__kL);Event.removeNativeListener(this.__eh,l,this.__kL);Event.removeNativeListener(this.__eh,c,this.__kO);for(var L in (this.__kN||{})){var K=this.__kN[L];Event.removeNativeListener(K.target,c,K.callback);}
 ;delete (this.__kN);}
-,__kQ:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"gecko|webkit|mshtml":function(M){var Q=0;var O=0;var P=M.type;Q=M.keyCode;var N={};var self=this;qx.event.Utils.track(N,this._idealKeyHandler(Q,O,P,M));if(P==l){if(qx.event.util.Keyboard.isNonPrintableKeyCode(Q)||this._emulateKeyPress[Q]){qx.event.Utils.then(N,function(){return self._idealKeyHandler(Q,O,c,M);}
+,__kQ:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"gecko|webkit|mshtml":function(M){var R=0;var P=0;var Q=M.type;R=M.keyCode;var N={};var self=this;qx.event.Utils.track(N,this._idealKeyHandler(R,P,Q,M));if(Q==l){var O=M.ctrlKey||M.altKey||M.metaKey;if(qx.event.util.Keyboard.isNonPrintableKeyCode(R)||this._emulateKeyPress[R]||O){qx.event.Utils.then(N,function(){return self._idealKeyHandler(R,P,c,M);}
 );}
 ;}
-;this.__kK[Q]=P;return N.promise;}
-,"opera":function(R){this.__kM=R.keyCode;return this._idealKeyHandler(R.keyCode,0,R.type,R);}
-})),__kR:qx.core.Environment.select(b,{"gecko":function(T,V,W){if(V===l&&(W==33||W==34||W==38||W==40)&&T.type==e&&T.tagName.toLowerCase()===h&&T.getAttribute(m)!==k){if(!this.__kN){this.__kN={};}
-;var S=qx.core.ObjectRegistry.toHashCode(T);if(this.__kN[S]){return;}
-;var self=this;this.__kN[S]={target:T,callback:function(X){qx.bom.Event.stopPropagation(X);self.__kS(X);}
-};var U=qx.event.GlobalError.observeMethod(this.__kN[S].callback);qx.bom.Event.addNativeListener(T,c,U);}
+;this.__kK[R]=Q;return N.promise;}
+,"opera":function(S){this.__kM=S.keyCode;return this._idealKeyHandler(S.keyCode,0,S.type,S);}
+})),__kR:qx.core.Environment.select(b,{"gecko":function(U,W,X){if(W===l&&(X==33||X==34||X==38||X==40)&&U.type==e&&U.tagName.toLowerCase()===h&&U.getAttribute(m)!==k){if(!this.__kN){this.__kN={};}
+;var T=qx.core.ObjectRegistry.toHashCode(U);if(this.__kN[T]){return;}
+;var self=this;this.__kN[T]={target:U,callback:function(Y){qx.bom.Event.stopPropagation(Y);self.__kS(Y);}
+};var V=qx.event.GlobalError.observeMethod(this.__kN[T].callback);qx.bom.Event.addNativeListener(U,c,V);}
 ;}
-,"default":null}),__kS:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"mshtml":function(Y){Y=window.event||Y;if(this._charCode2KeyCode[Y.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[Y.keyCode],0,Y.type,Y);}
-else {return this._idealKeyHandler(0,Y.keyCode,Y.type,Y);}
+,"default":null}),__kS:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"mshtml":function(ba){ba=window.event||ba;if(this._charCode2KeyCode[ba.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[ba.keyCode],0,ba.type,ba);}
+else {return this._idealKeyHandler(0,ba.keyCode,ba.type,ba);}
 ;}
-,"gecko":function(ba){var bb=ba.charCode;var bc=ba.type;return this._idealKeyHandler(ba.keyCode,bb,bc,ba);}
-,"webkit":function(bd){if(this._charCode2KeyCode[bd.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[bd.keyCode],0,bd.type,bd);}
-else {return this._idealKeyHandler(0,bd.keyCode,bd.type,bd);}
-;}
-,"opera":function(be){var bg=be.keyCode;var bf=be.type;if(bg!=this.__kM){return this._idealKeyHandler(0,this.__kM,bf,be);}
-else {if(qx.event.util.Keyboard.keyCodeToIdentifierMap[be.keyCode]){return this._idealKeyHandler(be.keyCode,0,be.type,be);}
+,"gecko":function(bb){var bc=bb.charCode;var bd=bb.type;return this._idealKeyHandler(bb.keyCode,bc,bd,bb);}
+,"webkit":function(be){if(this._charCode2KeyCode[be.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[be.keyCode],0,be.type,be);}
 else {return this._idealKeyHandler(0,be.keyCode,be.type,be);}
 ;}
+,"opera":function(bf){var bh=bf.keyCode;var bg=bf.type;if(bh!=this.__kM){return this._idealKeyHandler(0,this.__kM,bg,bf);}
+else {if(qx.event.util.Keyboard.keyCodeToIdentifierMap[bf.keyCode]){return this._idealKeyHandler(bf.keyCode,0,bf.type,bf);}
+else {return this._idealKeyHandler(0,bf.keyCode,bf.type,bf);}
 ;}
-})),_idealKeyHandler:function(bm,bl,bj,bi){var bh;if(bm||(!bm&&!bl)){bh=qx.event.util.Keyboard.keyCodeToIdentifier(bm);return this._fireSequenceEvent(bi,bj,bh);}
-else {bh=qx.event.util.Keyboard.charCodeToIdentifier(bl);var bk={};var self=this;qx.event.Utils.track(bk,this._fireSequenceEvent(bi,c,bh));return qx.event.Utils.then(bk,function(){return self._fireInputEvent(bi,bl);}
+;}
+})),_idealKeyHandler:function(bn,bm,bk,bj){var bi;if(bn||(!bn&&!bm)){bi=qx.event.util.Keyboard.keyCodeToIdentifier(bn);return this._fireSequenceEvent(bj,bk,bi);}
+else {bi=qx.event.util.Keyboard.charCodeToIdentifier(bm);var bl={};var self=this;qx.event.Utils.track(bl,this._fireSequenceEvent(bj,c,bi));return qx.event.Utils.then(bl,function(){return self._fireInputEvent(bj,bm);}
 );}
 ;}
-,_emulateKeyPress:qx.core.Environment.select(b,{"mshtml":{'8':true,'9':true},"webkit":{'8':true,'9':true,'27':true},"default":{}}),_identifierToKeyCode:function(bn){return qx.event.util.Keyboard.identifierToKeyCodeMap[bn]||bn.charCodeAt(0);}
+,_emulateKeyPress:qx.core.Environment.select(b,{"mshtml":{'8':true,'9':true},"webkit":{'8':true,'9':true,'27':true},"gecko":(qx.core.Environment.get(j)>=65)?{'8':true,'9':true,'27':true}:{},"default":{}}),_identifierToKeyCode:function(bo){return qx.event.util.Keyboard.identifierToKeyCodeMap[bo]||bo.charCodeAt(0);}
 },destruct:function(){this._stopKeyObserver();this.__kM=this.__dD=this.__cx=this.__eh=this.__kK=null;}
-,defer:function(bo,bp){qx.event.Registration.addHandler(bo);if((qx.core.Environment.get(b)==a)||qx.core.Environment.get(b)==g){bp._charCode2KeyCode={'13':13,'27':27};}
+,defer:function(bp,bq){qx.event.Registration.addHandler(bp);if((qx.core.Environment.get(b)==a)||qx.core.Environment.get(b)==g){bq._charCode2KeyCode={'13':13,'27':27};}
 ;}
 });}
 )();
