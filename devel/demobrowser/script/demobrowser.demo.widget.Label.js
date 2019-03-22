@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Label.e0ae01168424.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Label.11fce5bb769d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8170,12 +8170,14 @@ else if(typeof P===o){var Q=P.constructor;return qx.Class.hasInterface(Q,qx.ui.d
 ,getInsets:function(){}
 }});}
 )();
-(function(){var a="transitionDelay",b="transitionProperty",c="This decorator is already in-use. Modification is not possible anymore!",d="qx.debug",e='0s',f='ease',g="transitionDuration",h="css.transition",j='all',k="transitionTimingFunction",l="qx.ui.decoration.MTransition",m="_applyTransition",n=' ',o=",";qx.Mixin.define(l,{properties:{transitionProperty:{nullable:true,apply:m},transitionDuration:{nullable:true,apply:m},transitionTimingFunction:{nullable:true,apply:m},transitionDelay:{nullable:true,apply:m}},members:{_styleTransition:function(p){var r=qx.core.Environment.get(h);if(!r||this.getTransitionDuration()==null){return;}
-;r=qx.bom.Style.getCssName(r.name);var q=[b,g,k,a];(function(x,z,u,y){for(var i=0;i<x.length;i++ ){var t=x[i]||j;var s=z[i]||e;var A=u[i]||f;var w=y[i]||e;var v=t+n+s+n+A+n+w;if(!p[r]){p[r]=v;}
-else {p[r]+=o+v;}
+(function(){var a="transitionDelay",b="transitionProperty",c="This decorator is already in-use. Modification is not possible anymore!",d="qx.debug",e='0s',f="chrome",g="transitionDuration",h="css.transition",j='ease',k='all',l="transitionTimingFunction",m="qx.ui.decoration.MTransition",n="_applyTransition",o=' ',p="translateZ(0)",q=",";qx.Mixin.define(m,{properties:{transitionProperty:{nullable:true,apply:n},transitionDuration:{nullable:true,apply:n},transitionTimingFunction:{nullable:true,apply:n},transitionDelay:{nullable:true,apply:n}},members:{_styleTransition:function(r){var t=qx.core.Environment.get(h);if(!t||this.getTransitionDuration()==null){return;}
+;if(qx.bom.client.Browser.getName()===f&&qx.bom.client.Browser.getVersion()>=71){if(!r.transform){r.transform=p;}
+;}
+;t=qx.bom.Style.getCssName(t.name);var s=[b,g,l,a];(function(z,B,w,A){for(var i=0;i<z.length;i++ ){var v=z[i]||k;var u=B[i]||e;var C=w[i]||j;var y=A[i]||e;var x=v+o+u+o+C+o+y;if(!r[t]){r[t]=x;}
+else {r[t]+=q+x;}
 ;}
 ;}
-).apply(this,this._getExtendedPropertyValueArrays(q));}
+).apply(this,this._getExtendedPropertyValueArrays(s));}
 ,_applyTransition:function(){if(qx.core.Environment.get(d)){if(this._isInitialized()){throw new Error(c);}
 ;}
 ;}
@@ -9551,6 +9553,7 @@ else {var y=A.toHashCode();z=this.__mc[y];if(!z){return false;}
 ;}
 ;var x=this.__mb[z];if(x){delete this.__mb[z];delete this.__mc[x.toHashCode()];x._cascadeQxObjectIdChanges();return true;}
 ;return false;}
+,getRegisteredObjects:function(){return this.__mb;}
 },statics:{getQxObject:function(B){return this.getInstance().getQxObject(B);}
 ,getAbsoluteIdOf:function(C,D){return this.getInstance().getAbsoluteIdOf(C,D);}
 }});}
@@ -11102,8 +11105,8 @@ else {ey+=eF.height;}
 )();
 (function(){var a="changeModel",b="qx.core.Object",c="qx.data.controller.Object",d="get",e="[",f="reset",g="_applyModel",h="last";qx.Class.define(c,{extend:qx.core.Object,construct:function(j){qx.core.Object.call(this);this.__dE={};this.__lY=[];if(j!=null){this.setModel(j);}
 ;}
-,properties:{model:{check:b,event:a,apply:g,nullable:true,dereference:true}},members:{__lY:null,__dE:null,_applyModel:function(o,l){for(var i=0;i<this.__lY.length;i++ ){var t=this.__lY[i][0];var q=this.__lY[i][1];var n=this.__lY[i][2];var r=this.__lY[i][3];var p=this.__lY[i][4];var m=this.__lY[i][5];if(l!=undefined&&!l.isDisposed()){this.__wk(t,q,n,l);}
-;if(o!=undefined){this.__wj(t,q,n,r,p,m);}
+,properties:{model:{check:b,event:a,apply:g,nullable:true,dereference:true}},members:{__lY:null,__dE:null,_applyModel:function(o,l){for(var i=0;i<this.__lY.length;i++ ){var t=this.__lY[i][0];var q=this.__lY[i][1];var n=this.__lY[i][2];var r=this.__lY[i][3];var p=this.__lY[i][4];var m=this.__lY[i][5];if(l!=undefined&&!l.isDisposed()){this.__wn(t,q,n,l);}
+;if(o!=undefined){this.__wm(t,q,n,r,p,m);}
 else {if(t.isDisposed()||qx.core.ObjectRegistry.inShutDown){continue;}
 ;if(q.indexOf(e)==-1){t[f+qx.lang.String.firstUp(q)]();}
 else {var open=q.indexOf(e);var k=parseInt(q.substring(open+1,q.length-1),10);q=q.substring(0,open);var s=t[d+qx.lang.String.firstUp(q)]();if(k==h){k=s.length;}
@@ -11112,15 +11115,15 @@ else {var open=q.indexOf(e);var k=parseInt(q.substring(open+1,q.length-1),10);q=
 ;}
 ;}
 ;}
-,addTarget:function(z,w,u,x,y,v){this.__lY.push([z,w,u,x,y,v]);this.__wj(z,w,u,x,y,v);}
-,__wj:function(F,D,B,G,E,A){if(this.getModel()==null){return;}
+,addTarget:function(z,w,u,x,y,v){this.__lY.push([z,w,u,x,y,v]);this.__wm(z,w,u,x,y,v);}
+,__wm:function(F,D,B,G,E,A){if(this.getModel()==null){return;}
 ;var C=this.getModel().bind(B,F,D,E);var I=null;if(G){I=F.bind(D,this.getModel(),B,A);}
 ;var H=F.toHashCode();if(this.__dE[H]==undefined){this.__dE[H]=[];}
 ;this.__dE[H].push([C,I,D,B,E,A]);}
-,removeTarget:function(K,J,L){this.__wk(K,J,L,this.getModel());for(var i=0;i<this.__lY.length;i++ ){if(this.__lY[i][0]==K&&this.__lY[i][1]==J&&this.__lY[i][2]==L){this.__lY.splice(i,1);}
+,removeTarget:function(K,J,L){this.__wn(K,J,L,this.getModel());for(var i=0;i<this.__lY.length;i++ ){if(this.__lY[i][0]==K&&this.__lY[i][1]==J&&this.__lY[i][2]==L){this.__lY.splice(i,1);}
 ;}
 ;}
-,__wk:function(R,O,N,M){if(!(R instanceof qx.core.Object)){return;}
+,__wn:function(R,O,N,M){if(!(R instanceof qx.core.Object)){return;}
 ;var P=this.__dE[R.toHashCode()];if(P==undefined||P.length==0){return;}
 ;for(var i=0;i<P.length;i++ ){if(P[i][2]==O&&P[i][3]==N){var Q=P[i][0];M.removeBinding(Q);if(P[i][1]!=null){R.removeBinding(P[i][1]);}
 ;P.splice(i,1);return;}
