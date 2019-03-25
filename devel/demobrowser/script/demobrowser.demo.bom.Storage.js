@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.519a320dd35e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Storage.a75b8a4b7caa.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -6963,60 +6963,64 @@ else {bp.push(bo);}
 ,defer:function(k){qx.event.Registration.addHandler(k);}
 });}
 )();
-(function(){var a="mshtml",b="engine.name",c="keypress",d="useraction",e="text",f="keyinput",g="webkit",h="input",i="gecko",j="browser.version",k="off",l="keydown",m="autoComplete",n="keyup",o="qx.event.handler.Keyboard";qx.Class.define(o,{extend:qx.core.Object,implement:[qx.event.IEventHandler,qx.core.IDisposable],construct:function(p){qx.core.Object.call(this);this.__dD=p;this.__cx=p.getWindow();if((qx.core.Environment.get(b)==i)){this.__eh=this.__cx;}
+(function(){var a="opera",b="mshtml",c="engine.name",d="keypress",e="useraction",f="text",g="keyinput",h="webkit",i="input",j="gecko",k="browser.version",l="off",m="keydown",n="engine.version",o="autoComplete",p="keyup",q="qx.event.handler.Keyboard";qx.Class.define(q,{extend:qx.core.Object,implement:[qx.event.IEventHandler,qx.core.IDisposable],construct:function(r){qx.core.Object.call(this);this.__dD=r;this.__cx=r.getWindow();if((qx.core.Environment.get(c)==j)){this.__eh=this.__cx;}
 else {this.__eh=this.__cx.document.documentElement;}
 ;this.__kK={};this._initKeyObserver();}
-,statics:{PRIORITY:qx.event.Registration.PRIORITY_NORMAL,SUPPORTED_TYPES:{keyup:1,keydown:1,keypress:1,keyinput:1},TARGET_CHECK:qx.event.IEventHandler.TARGET_DOMNODE,IGNORE_CAN_HANDLE:true},members:{__kL:null,__dD:null,__cx:null,__eh:null,__kK:null,__kM:null,__kN:null,__kO:null,canHandleEvent:function(r,q){}
-,registerEvent:function(u,t,s){}
-,unregisterEvent:function(x,w,v){}
-,_fireInputEvent:function(y,B){var z=this.__kP();var A={};var self=this;if(z&&z.offsetWidth!=0){var event=qx.event.Registration.createEvent(f,qx.event.type.KeyInput,[y,z,B]);qx.event.Utils.then(A,function(){self.__dD.dispatchEvent(z,event);}
+,statics:{PRIORITY:qx.event.Registration.PRIORITY_NORMAL,SUPPORTED_TYPES:{keyup:1,keydown:1,keypress:1,keyinput:1},TARGET_CHECK:qx.event.IEventHandler.TARGET_DOMNODE,IGNORE_CAN_HANDLE:true},members:{__kL:null,__dD:null,__cx:null,__eh:null,__kK:null,__kM:null,__kN:null,__kO:null,canHandleEvent:function(t,s){}
+,registerEvent:function(w,v,u){}
+,unregisterEvent:function(z,y,x){}
+,_fireInputEvent:function(A,D){var B=this.__kP();var C={};var self=this;if(B&&B.offsetWidth!=0){var event=qx.event.Registration.createEvent(g,qx.event.type.KeyInput,[A,B,D]);qx.event.Utils.then(C,function(){self.__dD.dispatchEvent(B,event);}
 );}
-;if(this.__cx){var self=this;qx.event.Utils.then(A,function(){return qx.event.Registration.fireEvent(self.__cx,d,qx.event.type.Data,[f]);}
+;if(this.__cx){var self=this;qx.event.Utils.then(C,function(){return qx.event.Registration.fireEvent(self.__cx,e,qx.event.type.Data,[g]);}
 );}
-;return A.promise;}
-,_fireSequenceEvent:function(D,H,C){var E=this.__kP();var F=D.keyCode;var G={};var self=this;var event=qx.event.Registration.createEvent(H,qx.event.type.KeySequence,[D,E,C]);qx.event.Utils.then(G,function(){return self.__dD.dispatchEvent(E,event);}
-);if(event.getDefaultPrevented()&&H==l){if(qx.core.Environment.get(b)==a||qx.core.Environment.get(b)==g||(qx.core.Environment.get(b)==i&&qx.core.Environment.get(j)>=29)){if(!qx.event.util.Keyboard.isNonPrintableKeyCode(F)&&!this._emulateKeyPress[F]){qx.event.Utils.then(G,function(){return self._fireSequenceEvent(D,c,C);}
+;return C.promise;}
+,_fireSequenceEvent:function(F,J,E){var G=this.__kP();var H=F.keyCode;var I={};var self=this;var event=qx.event.Registration.createEvent(J,qx.event.type.KeySequence,[F,G,E]);qx.event.Utils.then(I,function(){return self.__dD.dispatchEvent(G,event);}
+);if(event.getDefaultPrevented()&&J==m){if(qx.core.Environment.get(c)==b||qx.core.Environment.get(c)==h||(qx.core.Environment.get(c)==j&&qx.core.Environment.get(k)>=29)){if(!qx.event.util.Keyboard.isNonPrintableKeyCode(H)&&!this._emulateKeyPress[H]){qx.event.Utils.then(I,function(){return self._fireSequenceEvent(F,d,E);}
 );}
 ;}
 ;}
-;if(this.__cx){qx.event.Utils.then(G,function(){return qx.event.Registration.fireEvent(self.__cx,d,qx.event.type.Data,[H]);}
+;if(this.__cx){qx.event.Utils.then(I,function(){return qx.event.Registration.fireEvent(self.__cx,e,qx.event.type.Data,[J]);}
 );}
-;return G.promise;}
-,__kP:function(){var I=this.__dD.getHandler(qx.event.handler.Focus);var J=I.getActive();if(!J||J.offsetWidth==0){J=I.getFocus();}
-;if(!J||J.offsetWidth==0){J=this.__dD.getWindow().document.body;}
-;return J;}
-,_initKeyObserver:function(){this.__kL=qx.lang.Function.listener(this.__kQ,this);this.__kO=qx.lang.Function.listener(this.__kS,this);var Event=qx.bom.Event;Event.addNativeListener(this.__eh,n,this.__kL);Event.addNativeListener(this.__eh,l,this.__kL);Event.addNativeListener(this.__eh,c,this.__kO);}
-,_stopKeyObserver:function(){var Event=qx.bom.Event;Event.removeNativeListener(this.__eh,n,this.__kL);Event.removeNativeListener(this.__eh,l,this.__kL);Event.removeNativeListener(this.__eh,c,this.__kO);for(var L in (this.__kN||{})){var K=this.__kN[L];Event.removeNativeListener(K.target,c,K.callback);}
+;return I.promise;}
+,__kP:function(){var K=this.__dD.getHandler(qx.event.handler.Focus);var L=K.getActive();if(!L||L.offsetWidth==0){L=K.getFocus();}
+;if(!L||L.offsetWidth==0){L=this.__dD.getWindow().document.body;}
+;return L;}
+,_initKeyObserver:function(){this.__kL=qx.lang.Function.listener(this.__kQ,this);this.__kO=qx.lang.Function.listener(this.__kS,this);var Event=qx.bom.Event;Event.addNativeListener(this.__eh,p,this.__kL);Event.addNativeListener(this.__eh,m,this.__kL);Event.addNativeListener(this.__eh,d,this.__kO);}
+,_stopKeyObserver:function(){var Event=qx.bom.Event;Event.removeNativeListener(this.__eh,p,this.__kL);Event.removeNativeListener(this.__eh,m,this.__kL);Event.removeNativeListener(this.__eh,d,this.__kO);for(var N in (this.__kN||{})){var M=this.__kN[N];Event.removeNativeListener(M.target,d,M.callback);}
 ;delete (this.__kN);}
-,__kQ:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"gecko|webkit|mshtml":function(M){var R=0;var P=0;var Q=M.type;R=M.keyCode;var N={};var self=this;qx.event.Utils.track(N,this._idealKeyHandler(R,P,Q,M));if(Q==l){var O=M.ctrlKey||M.altKey||M.metaKey;if(qx.event.util.Keyboard.isNonPrintableKeyCode(R)||this._emulateKeyPress[R]||O){qx.event.Utils.then(N,function(){return self._idealKeyHandler(R,P,c,M);}
+,__kQ:qx.event.GlobalError.observeMethod(qx.core.Environment.select(c,{"gecko|webkit|mshtml":function(O){var T=0;var R=0;var S=O.type;T=O.keyCode;var P={};var self=this;qx.event.Utils.track(P,this._idealKeyHandler(T,R,S,O));if(S==m){var Q=O.ctrlKey||O.altKey||O.metaKey;if(qx.event.util.Keyboard.isNonPrintableKeyCode(T)||this._emulateKeyPress[T]||Q){qx.event.Utils.then(P,function(){return self._idealKeyHandler(T,R,d,O);}
 );}
 ;}
-;this.__kK[R]=Q;return N.promise;}
-,"opera":function(S){this.__kM=S.keyCode;return this._idealKeyHandler(S.keyCode,0,S.type,S);}
-})),__kR:qx.core.Environment.select(b,{"gecko":function(U,W,X){if(W===l&&(X==33||X==34||X==38||X==40)&&U.type==e&&U.tagName.toLowerCase()===h&&U.getAttribute(m)!==k){if(!this.__kN){this.__kN={};}
-;var T=qx.core.ObjectRegistry.toHashCode(U);if(this.__kN[T]){return;}
-;var self=this;this.__kN[T]={target:U,callback:function(Y){qx.bom.Event.stopPropagation(Y);self.__kS(Y);}
-};var V=qx.event.GlobalError.observeMethod(this.__kN[T].callback);qx.bom.Event.addNativeListener(U,c,V);}
+;this.__kK[T]=S;return P.promise;}
+,"opera":function(U){this.__kM=U.keyCode;return this._idealKeyHandler(U.keyCode,0,U.type,U);}
+})),__kR:qx.core.Environment.select(c,{"gecko":function(W,Y,ba){if(Y===m&&(ba==33||ba==34||ba==38||ba==40)&&W.type==f&&W.tagName.toLowerCase()===i&&W.getAttribute(o)!==l){if(!this.__kN){this.__kN={};}
+;var V=qx.core.ObjectRegistry.toHashCode(W);if(this.__kN[V]){return;}
+;var self=this;this.__kN[V]={target:W,callback:function(bb){qx.bom.Event.stopPropagation(bb);self.__kS(bb);}
+};var X=qx.event.GlobalError.observeMethod(this.__kN[V].callback);qx.bom.Event.addNativeListener(W,d,X);}
 ;}
-,"default":null}),__kS:qx.event.GlobalError.observeMethod(qx.core.Environment.select(b,{"mshtml":function(ba){ba=window.event||ba;if(this._charCode2KeyCode[ba.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[ba.keyCode],0,ba.type,ba);}
-else {return this._idealKeyHandler(0,ba.keyCode,ba.type,ba);}
+,"default":null}),__kS:qx.event.GlobalError.observeMethod(qx.core.Environment.select(c,{"mshtml":function(bc){bc=window.event||bc;if(this._charCode2KeyCode[bc.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[bc.keyCode],0,bc.type,bc);}
+else {return this._idealKeyHandler(0,bc.keyCode,bc.type,bc);}
 ;}
-,"gecko":function(bb){var bc=bb.charCode;var bd=bb.type;return this._idealKeyHandler(bb.keyCode,bc,bd,bb);}
-,"webkit":function(be){if(this._charCode2KeyCode[be.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[be.keyCode],0,be.type,be);}
-else {return this._idealKeyHandler(0,be.keyCode,be.type,be);}
-;}
-,"opera":function(bf){var bh=bf.keyCode;var bg=bf.type;if(bh!=this.__kM){return this._idealKeyHandler(0,this.__kM,bg,bf);}
-else {if(qx.event.util.Keyboard.keyCodeToIdentifierMap[bf.keyCode]){return this._idealKeyHandler(bf.keyCode,0,bf.type,bf);}
+,"gecko":function(bf){if(qx.core.Environment.get(n)<66){var be=bf.charCode;var bd=bf.type;return this._idealKeyHandler(bf.keyCode,be,bd,bf);}
+else {if(this._charCode2KeyCode[bf.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[bf.keyCode],0,bf.type,bf);}
 else {return this._idealKeyHandler(0,bf.keyCode,bf.type,bf);}
 ;}
 ;}
-})),_idealKeyHandler:function(bn,bm,bk,bj){var bi;if(bn||(!bn&&!bm)){bi=qx.event.util.Keyboard.keyCodeToIdentifier(bn);return this._fireSequenceEvent(bj,bk,bi);}
-else {bi=qx.event.util.Keyboard.charCodeToIdentifier(bm);var bl={};var self=this;qx.event.Utils.track(bl,this._fireSequenceEvent(bj,c,bi));return qx.event.Utils.then(bl,function(){return self._fireInputEvent(bj,bm);}
+,"webkit":function(bg){if(this._charCode2KeyCode[bg.keyCode]){return this._idealKeyHandler(this._charCode2KeyCode[bg.keyCode],0,bg.type,bg);}
+else {return this._idealKeyHandler(0,bg.keyCode,bg.type,bg);}
+;}
+,"opera":function(bh){var bj=bh.keyCode;var bi=bh.type;if(bj!=this.__kM){return this._idealKeyHandler(0,this.__kM,bi,bh);}
+else {if(qx.event.util.Keyboard.keyCodeToIdentifierMap[bh.keyCode]){return this._idealKeyHandler(bh.keyCode,0,bh.type,bh);}
+else {return this._idealKeyHandler(0,bh.keyCode,bh.type,bh);}
+;}
+;}
+})),_idealKeyHandler:function(bp,bo,bm,bl){var bk;if(bp||(!bp&&!bo)){bk=qx.event.util.Keyboard.keyCodeToIdentifier(bp);return this._fireSequenceEvent(bl,bm,bk);}
+else {bk=qx.event.util.Keyboard.charCodeToIdentifier(bo);var bn={};var self=this;qx.event.Utils.track(bn,this._fireSequenceEvent(bl,d,bk));return qx.event.Utils.then(bn,function(){return self._fireInputEvent(bl,bo);}
 );}
 ;}
-,_emulateKeyPress:qx.core.Environment.select(b,{"mshtml":{'8':true,'9':true},"webkit":{'8':true,'9':true,'27':true},"gecko":(qx.core.Environment.get(j)>=65)?{'8':true,'9':true,'27':true}:{},"default":{}}),_identifierToKeyCode:function(bo){return qx.event.util.Keyboard.identifierToKeyCodeMap[bo]||bo.charCodeAt(0);}
+,_emulateKeyPress:qx.core.Environment.select(c,{"mshtml":{'8':true,'9':true},"webkit":{'8':true,'9':true,'27':true},"gecko":(qx.core.Environment.get(k)>=65)?{'8':true,'9':true,'27':true}:{},"default":{}}),_identifierToKeyCode:function(bq){return qx.event.util.Keyboard.identifierToKeyCodeMap[bq]||bq.charCodeAt(0);}
 },destruct:function(){this._stopKeyObserver();this.__kM=this.__dD=this.__cx=this.__eh=this.__kK=null;}
-,defer:function(bp,bq){qx.event.Registration.addHandler(bp);if((qx.core.Environment.get(b)==a)||qx.core.Environment.get(b)==g){bq._charCode2KeyCode={'13':13,'27':27};}
+,defer:function(br,bs){qx.event.Registration.addHandler(br);if((qx.core.Environment.get(c)!==a)){bs._charCode2KeyCode={'13':13,'27':27};}
 ;}
 });}
 )();
