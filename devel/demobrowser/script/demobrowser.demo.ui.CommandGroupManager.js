@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.CommandGroupManager.a9044a6ad70c.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.CommandGroupManager.25f517fb23b5.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10766,7 +10766,7 @@ else {var B=this.__qi[name];A[B](z);}
 ,getSelectables:function(e){return arguments.length==1;}
 }});}
 )();
-(function(){var a="bottom",b="button",c="qx.event.type.Data",d="lastTab",f="barRight",g="beforeChangeSelection",h="qx.debug",j="__wB",k="horizontal",m="changeSelection",n="bar",o="close-button",p="Index should be less than : ",q="tabview",r="vertical",s="page",t="Incompatible child for TabView: ",u="left",v="_applyBarPosition",w="barLeft",x="top",y="right",z="qx.ui.tabview.TabView",A="barTop",B="barBottom",C="pane",D="close",E="Given argument is not null or a {qx.ui.tabview.Page}.",F="firstTab";qx.Class.define(z,{extend:qx.ui.core.Widget,implement:qx.ui.core.ISingleSelection,include:[qx.ui.core.MContentPadding],construct:function(H){qx.ui.core.Widget.call(this);this.__zh={top:A,right:f,bottom:B,left:w};this._createChildControl(n);this._createChildControl(C);var G=this.__wB=this._createRadioGroupInstance();G.setWrap(false);G.addListener(m,this._onChangeSelection,this);if(H!=null){this.setBarPosition(H);}
+(function(){var a="bottom",b="button",c="qx.event.type.Data",d="lastTab",f="barRight",g="beforeChangeSelection",h="qx.debug",j="__wB",k="horizontal",m="changeSelection",n="bar",o="close-button",p="Index should be less than : ",q="tabview",r="vertical",s="page",t="Incompatible child for TabView: ",u="left",v="_applyBarPosition",w="barLeft",x="top",y="right",z="qx.ui.tabview.TabView",A="barTop",B="barBottom",C="pane",D="close",E="Given argument is not null or a {qx.ui.tabview.Page}.",F="firstTab";qx.Class.define(z,{extend:qx.ui.core.Widget,implement:qx.ui.core.ISingleSelection,include:[qx.ui.core.MContentPadding],construct:function(H){qx.ui.core.Widget.call(this);this.__Bi={top:A,right:f,bottom:B,left:w};this._createChildControl(n);this._createChildControl(C);var G=this.__wB=this._createRadioGroupInstance();G.setWrap(false);G.addListener(m,this._onChangeSelection,this);if(H!=null){this.setBarPosition(H);}
 else {this.initBarPosition();}
 ;}
 ,events:{"changeSelection":c,"changeValue":c},properties:{appearance:{refine:true,init:q},barPosition:{check:[u,y,x,a],init:x,apply:v}},members:{__wB:null,setValue:function(I){if(null===I){this.resetSelection();return null;}
@@ -10782,14 +10782,14 @@ else {return null;}
 ,_getContentPaddingTarget:function(){return this.getChildControl(C);}
 ,add:function(R){if(qx.core.Environment.get(h)){if(!(R instanceof qx.ui.tabview.Page)){throw new Error(t+R);}
 ;}
-;var N=R.getButton();var O=this.getChildControl(n);var Q=this.getChildControl(C);R.exclude();O.add(N);Q.add(R);this.__wB.add(N);R.addState(this.__zh[this.getBarPosition()]);R.addState(d);var P=this.getChildren();if(P[0]==R){R.addState(F);}
+;var N=R.getButton();var O=this.getChildControl(n);var Q=this.getChildControl(C);R.exclude();O.add(N);Q.add(R);this.__wB.add(N);R.addState(this.__Bi[this.getBarPosition()]);R.addState(d);var P=this.getChildren();if(P[0]==R){R.addState(F);}
 else {P[P.length-2].removeState(d);}
 ;R.addListener(D,this._onPageClose,this);}
 ,addAt:function(X,S){if(qx.core.Environment.get(h)){if(!(X instanceof qx.ui.tabview.Page)){throw new Error(t+X);}
 ;}
 ;var V=this.getChildren();if(!(S==null)&&S>V.length){throw new Error(p+V.length);}
 ;if(S==null){S=V.length;}
-;var U=X.getButton();var T=this.getChildControl(n);var W=this.getChildControl(C);X.exclude();T.addAt(U,S);W.addAt(X,S);this.__wB.add(U);X.addState(this.__zh[this.getBarPosition()]);V=this.getChildren();if(S==V.length-1){X.addState(d);}
+;var U=X.getButton();var T=this.getChildControl(n);var W=this.getChildControl(C);X.exclude();T.addAt(U,S);W.addAt(X,S);this.__wB.add(U);X.addState(this.__Bi[this.getBarPosition()]);V=this.getChildren();if(S==V.length-1){X.addState(d);}
 ;if(V[0]==X){X.addState(F);}
 else {V[V.length-2].removeState(d);}
 ;X.addListener(D,this._onPageClose,this);}
@@ -10798,7 +10798,7 @@ else {this.resetSelection();}
 ;}
 else {this.setSelection([be[Y-1]]);}
 ;}
-;ba.remove(bb);bd.remove(bc);this.__wB.remove(bb);bc.removeState(this.__zh[this.getBarPosition()]);if(bc.hasState(F)){bc.removeState(F);if(be[0]){be[0].addState(F);}
+;ba.remove(bb);bd.remove(bc);this.__wB.remove(bb);bc.removeState(this.__Bi[this.getBarPosition()]);if(bc.hasState(F)){bc.removeState(F);if(be[0]){be[0].addState(F);}
 ;}
 ;if(bc.hasState(d)){bc.removeState(d);if(be.length>0){be[be.length-1].addState(d);}
 ;}
@@ -10806,11 +10806,11 @@ else {this.setSelection([be[Y-1]]);}
 ,getChildren:function(){return this.getChildControl(C).getChildren();}
 ,indexOf:function(bf){return this.getChildControl(C).indexOf(bf);}
 ,getRadioGroup:function(){return this.__wB;}
-,__zh:null,_applyBarPosition:function(bj,bl){var bg=this.getChildControl(n);var bm=this.getChildControl(C);var bo=bj==u||bj==y;var bp=bj==y||bj==a;var bn=bo?qx.ui.layout.HBox:qx.ui.layout.VBox;var bq=this._getLayout();if(bq&&bq instanceof bn){}
+,__Bi:null,_applyBarPosition:function(bj,bl){var bg=this.getChildControl(n);var bm=this.getChildControl(C);var bo=bj==u||bj==y;var bp=bj==y||bj==a;var bn=bo?qx.ui.layout.HBox:qx.ui.layout.VBox;var bq=this._getLayout();if(bq&&bq instanceof bn){}
 else {this._setLayout(bq=new bn);}
-;bq.setReversed(bp);bg.setOrientation(bo?r:k);var bk=this.getChildren();var i,l;if(bl){var bi=this.__zh[bl];bg.removeState(bi);bm.removeState(bi);for(i=0,l=bk.length;i<l;i++ ){bk[i].removeState(bi);}
+;bq.setReversed(bp);bg.setOrientation(bo?r:k);var bk=this.getChildren();var i,l;if(bl){var bi=this.__Bi[bl];bg.removeState(bi);bm.removeState(bi);for(i=0,l=bk.length;i<l;i++ ){bk[i].removeState(bi);}
 ;}
-;if(bj){var bh=this.__zh[bj];bg.addState(bh);bm.addState(bh);for(i=0,l=bk.length;i<l;i++ ){bk[i].addState(bh);}
+;if(bj){var bh=this.__Bi[bj];bg.addState(bh);bm.addState(bh);for(i=0,l=bk.length;i<l;i++ ){bk[i].addState(bh);}
 ;}
 ;}
 ,getSelection:function(){var br=this.__wB.getSelection();var bs=[];for(var i=0;i<br.length;i++ ){bs.push(br[i].getUserData(s));}
@@ -10832,7 +10832,7 @@ else {bE.resetSelection();}
 else {this.resetSelection();}
 ;}
 ,_onPageClose:function(e){var bH=e.getTarget();var bG=bH.getButton().getChildControl(o);bG.reset();this.remove(bH);}
-},destruct:function(){this._disposeObjects(j);this.__zh=null;}
+},destruct:function(){this._disposeObjects(j);this.__Bi=null;}
 });}
 )();
 (function(){var a="_applyIcon",b="",c="icon",d="page",e="close",f="qx.event.type.Event",g="_applyShowCloseButton",h="tabview-page",i="qx.ui.tabview.Page",j="_applyLabel",k="button",l="String",m="Boolean";qx.Class.define(i,{extend:qx.ui.container.Composite,construct:function(n,o){qx.ui.container.Composite.call(this);this._createChildControl(k);if(n!=null){this.setLabel(n);}

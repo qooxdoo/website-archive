@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.GroupedList.a07064856c91.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.GroupedList.494734081ba7.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10862,26 +10862,26 @@ else {var H=encodeURIComponent(I);}
 ,methodAllowsRequestBody:function(q){return !((/^(GET|HEAD)$/).test(q));}
 }});}
 )();
-(function(){var a="'",b="null",c="XMLHttpRequest",d="Boolean",f="X-Requested-With",g="",h="Accepting: '",i="application/x-www-form-urlencoded",j="Cache-Control",k="Content-Type",l="parseError",m="qx.event.type.Event",n="GET",o="qx.debug.io",p="qx.io.request.Xhr",q='blob',r="Accept",s="String";qx.Class.define(p,{extend:qx.io.request.AbstractRequest,construct:function(t,u){if(u!==undefined){this.setMethod(u);}
-;qx.io.request.AbstractRequest.call(this,t);this._parser=this._createResponseParser();}
-,events:{"readyStateChange":m,"success":m,"load":m,"statusError":m},properties:{method:{init:n},async:{check:d,init:true},accept:{check:s,nullable:true},cache:{check:function(v){return qx.lang.Type.isBoolean(v)||qx.lang.Type.isString(v);}
+(function(){var a="'",b="parseError",c="XMLHttpRequest",d="Boolean",f="X-Requested-With",g="",h="Accepting: '",i="application/x-www-form-urlencoded",j="Cache-Control",k="Content-Type",l="qx.event.type.Event",m="GET",n="qx.debug.io",o="qx.io.request.Xhr",p='blob',q="Accept",r="String";qx.Class.define(o,{extend:qx.io.request.AbstractRequest,construct:function(s,t){if(t!==undefined){this.setMethod(t);}
+;qx.io.request.AbstractRequest.call(this,s);this._parser=this._createResponseParser();}
+,events:{"readyStateChange":l,"success":l,"load":l,"statusError":l},properties:{method:{init:m},async:{check:d,init:true},accept:{check:r,nullable:true},cache:{check:function(u){return qx.lang.Type.isBoolean(u)||qx.lang.Type.isString(u);}
 ,init:true}},members:{_parser:null,_createTransport:function(){return new qx.bom.request.Xhr();}
-,_getConfiguredUrl:function(){var w=this.getUrl(),x;if(this.getMethod()===n&&this.getRequestData()){x=this._serializeData(this.getRequestData());w=qx.util.Uri.appendParamsToUrl(w,x);}
-;if(this.getCache()===false){w=qx.util.Uri.appendParamsToUrl(w,{nocache:new Date().valueOf()});}
-;return w;}
-,_getConfiguredRequestHeaders:function(){var y={},z=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){y[f]=c;}
-;if(qx.lang.Type.isString(this.getCache())){y[j]=this.getCache();}
-;if(this.getRequestData()!==b&&z){y[k]=i;}
-;if(this.getAccept()){if(qx.core.Environment.get(o)){this.debug(h+this.getAccept()+a);}
-;y[r]=this.getAccept();}
-;return y;}
+,_getConfiguredUrl:function(){var v=this.getUrl(),w;if(this.getMethod()===m&&this.getRequestData()){w=this._serializeData(this.getRequestData());v=qx.util.Uri.appendParamsToUrl(v,w);}
+;if(this.getCache()===false){v=qx.util.Uri.appendParamsToUrl(v,{nocache:new Date().valueOf()});}
+;return v;}
+,_getConfiguredRequestHeaders:function(){var x={},y=qx.util.Request.methodAllowsRequestBody(this.getMethod());if(!qx.util.Request.isCrossDomain(this.getUrl())){x[f]=c;}
+;if(qx.lang.Type.isString(this.getCache())){x[j]=this.getCache();}
+;if(this.getRequestData()&&y){x[k]=i;}
+;if(this.getAccept()){if(qx.core.Environment.get(n)){this.debug(h+this.getAccept()+a);}
+;x[q]=this.getAccept();}
+;return x;}
 ,_getMethod:function(){return this.getMethod();}
 ,_isAsync:function(){return this.isAsync();}
 ,_createResponseParser:function(){return new qx.util.ResponseParser();}
-,_getParsedResponse:function(){var C=this._transport.responseType===q?this._transport.response:this._transport.responseText,B=this.getResponseContentType()||g,A=g;try{A=this._parser.parse(C,B);this._parserFailed=false;}
-catch(e){this._parserFailed=true;this.fireDataEvent(l,{error:e,response:C});}
-;return A;}
-,setParser:function(D){return this._parser.setParser(D);}
+,_getParsedResponse:function(){var B=this._transport.responseType===p?this._transport.response:this._transport.responseText,A=this.getResponseContentType()||g,z=g;try{z=this._parser.parse(B,A);this._parserFailed=false;}
+catch(e){this._parserFailed=true;this.fireDataEvent(b,{error:e,response:B});}
+;return z;}
+,setParser:function(C){return this._parser.setParser(C);}
 }});}
 )();
 (function(){var a="function",b="qx.util.ResponseParser",c="",d="qx.debug";qx.Bootstrap.define(b,{construct:function(e){if(e!==undefined){this.setParser(e);}
