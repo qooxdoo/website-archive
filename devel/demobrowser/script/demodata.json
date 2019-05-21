@@ -3284,27 +3284,6 @@
                 "nr": 0
             },
             {
-                "name": "FormRendererDouble.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.form.Form",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.PasswordField",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.Spinner",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.RadioButtonGroup",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.renderer.Double"
-                ],
-                "title": "FormRendererDouble",
-                "nr": 0
-            },
-            {
                 "name": "FormRendererPlaceholder.html",
                 "tags": [
                     "qx.Class.define",
@@ -3318,25 +3297,6 @@
                     "qx.ui.form.renderer.SinglePlaceholder"
                 ],
                 "title": "FormRendererPlaceholder",
-                "nr": 0
-            },
-            {
-                "name": "FormValidator.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.validation.Manager",
-                    "qx.ui.form.validation.AsyncValidator",
-                    "qx.util.Validate.email",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "FormValidator",
                 "nr": 0
             },
             {
@@ -3481,6 +3441,46 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "WebFonts",
+                "nr": 0
+            },
+            {
+                "name": "FormValidator.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.validation.Manager",
+                    "qx.ui.form.validation.AsyncValidator",
+                    "qx.util.Validate.email",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "FormValidator",
+                "nr": 0
+            },
+            {
+                "name": "FormRendererDouble.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.form.Form",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.PasswordField",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.Spinner",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.RadioButtonGroup",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.renderer.Double"
+                ],
+                "title": "FormRendererDouble",
                 "nr": 0
             }
         ]
@@ -4610,6 +4610,33 @@
                 "nr": 0
             },
             {
+                "name": "SelectBox.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "SelectBox",
+                "nr": 0
+            },
+            {
                 "name": "SlideBar.html",
                 "tags": [
                     "qx.Class.define",
@@ -5025,33 +5052,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "SelectBox.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "SelectBox",
                 "nr": 0
             }
         ]
