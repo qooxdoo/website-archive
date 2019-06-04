@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Menu.52034f6cbd2d.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.Menu.e8f9e137b2a8.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -12081,7 +12081,7 @@ else {this.setValue(true);}
 ;if(B!=null){this.setMenu(B);}
 ;if(D!=null){this.setCommand(D);}
 ;}
-,properties:{appearance:{refine:true,init:a},focusable:{refine:true,init:true},label:{apply:y,nullable:true,check:p},icon:{check:p,apply:u,nullable:true,themeable:true},show:{init:k,check:[k,v,q],themeable:true,inheritable:true,apply:w,event:f},menu:{check:t,nullable:true,apply:n,event:x}},members:{__BB:null,_createChildControlImpl:function(H,G){var F;switch(H){case l:F=new qx.ui.form.Button;F.addListener(m,this._onButtonExecute,this);F.setFocusable(false);this._addAt(F,0,{flex:1});break;case o:F=new qx.ui.form.MenuButton();F.setFocusable(false);F.setShow(k);this._addAt(F,1);break;};return F||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,H);}
+,properties:{appearance:{refine:true,init:a},focusable:{refine:true,init:true},label:{apply:y,nullable:true,check:p},icon:{check:p,apply:u,nullable:true,themeable:true},show:{init:k,check:[k,v,q],themeable:true,inheritable:true,apply:w,event:f},menu:{check:t,nullable:true,apply:n,event:x}},members:{__zA:null,_createChildControlImpl:function(H,G){var F;switch(H){case l:F=new qx.ui.form.Button;F.addListener(m,this._onButtonExecute,this);F.setFocusable(false);this._addAt(F,0,{flex:1});break;case o:F=new qx.ui.form.MenuButton();F.setFocusable(false);F.setShow(k);this._addAt(F,1);break;};return F||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,H);}
 ,_forwardStates:{hovered:1,focused:1},_applyLabel:function(K,J){var I=this.getChildControl(l);K==null?I.resetLabel():I.setLabel(K);}
 ,_applyIcon:function(N,M){var L=this.getChildControl(l);N==null?L.resetIcon():L.setIcon(N);}
 ,_applyMenu:function(P,O){var Q=this.getChildControl(o);if(P){Q.resetEnabled();Q.setMenu(P);P.setOpener(this);P.addListener(r,this._onChangeMenuVisibility,this);}
@@ -12089,16 +12089,16 @@ else {Q.setEnabled(false);Q.resetMenu();}
 ;if(O){O.removeListener(r,this._onChangeMenuVisibility,this);O.resetOpener();}
 ;}
 ,_applyShow:function(S,R){}
-,_onPointerOver:function(e){e.stopPropagation();this.addState(b);delete this.__BB;}
+,_onPointerOver:function(e){e.stopPropagation();this.addState(b);delete this.__zA;}
 ,_onPointerOut:function(e){e.stopPropagation();if(!this.hasState(b)){return;}
 ;var U=e.getRelatedTarget();if(qx.ui.core.Widget.contains(this,U)){return;}
-;var T=this.getMenu();if(T&&T.isVisible()){this.__BB=true;return;}
+;var T=this.getMenu();if(T&&T.isVisible()){this.__zA=true;return;}
 ;this.removeState(b);}
 ,_onKeyDown:function(e){var V=this.getChildControl(l);switch(e.getKeyIdentifier()){case c:case h:V.removeState(j);V.addState(d);};}
 ,_onKeyUp:function(e){var W=this.getChildControl(l);switch(e.getKeyIdentifier()){case c:case h:if(W.hasState(d)){W.removeState(j);W.removeState(d);W.execute();}
 ;};}
 ,_onButtonExecute:function(e){this.execute();}
-,_onChangeMenuVisibility:function(e){if(!this.getMenu().isVisible()&&this.__BB){this.removeState(b);}
+,_onChangeMenuVisibility:function(e){if(!this.getMenu().isVisible()&&this.__zA){this.removeState(b);}
 ;}
 }});}
 )();
