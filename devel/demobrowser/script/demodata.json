@@ -3264,6 +3264,26 @@
                 "nr": 0
             },
             {
+                "name": "FormRendererCustom.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.form.Form",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.HBox"
+                ],
+                "title": "FormRendererCustom",
+                "nr": 0
+            },
+            {
                 "name": "FormRendererDouble.html",
                 "tags": [
                     "qx.Class.define",
@@ -3461,26 +3481,6 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "WebFonts",
-                "nr": 0
-            },
-            {
-                "name": "FormRendererCustom.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.form.Form",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.HBox"
-                ],
-                "title": "FormRendererCustom",
                 "nr": 0
             }
         ]
