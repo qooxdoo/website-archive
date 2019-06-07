@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Tutorial Part 2: Finishing the UI &mdash; qooxdoo 6.0.0-alpha documentation</title>
+    <title>Tutorial Part 2: Finishing the UI &mdash; qooxdoo 6.0.0-beta documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -18,7 +18,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '6.0.0-alpha',
+        VERSION:     '6.0.0-beta',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 6.0.0-alpha documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 6.0.0-beta documentation" href="../../../index.html" />
     <link rel="up" title="qx.Desktop" href="../../desktop.html" />
     <link rel="next" title="Tutorial Part 3: Time for Communication" href="tutorial-part-3.html" />
     <link rel="prev" title="Tutorial Part 1: The Beginning of a Tweets App" href="tutorial-part-1.html" />
@@ -131,7 +131,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v6.0.0-alpha)</a>
+    <a href="../../../index.html">Manual (v6.0.0-beta)</a>
        &raquo;
       <a href="../../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -160,7 +160,7 @@
 <span class="k">this</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">toolbar</span><span class="p">,</span> <span class="p">{</span><span class="nx">row</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">column</span><span class="o">:</span> <span class="mi">0</span><span class="p">});</span>
 </pre></div>
 </div>
-<p>This will add the toolbar to the grid layout of our main window. The only thing you should take care of is the second parameter of .add(). It contains a map with layout properties. You can see the available layout properties in the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.ui.layout.Grid">API of the layout</a>, in this case of the grid layout. Here, we use only the row and column property to tell the layout that this is the element in the first row and column (rows and columns start at index 0, you guessed it).</p>
+<p>This will add the toolbar to the grid layout of our main window. The only thing you should take care of is the second parameter of .add(). It contains a map with layout properties. You can see the available layout properties in the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer/#qx.ui.layout.Grid">API of the layout</a>, in this case of the grid layout. Here, we use only the row and column property to tell the layout that this is the element in the first row and column (rows and columns start at index 0, you guessed it).</p>
 </div>
 <div class="section" id="list-and-layout-again">
 <span id="pages-tutorial-part-2-list-and-layout-again"></span><h2>List and Layout, again<a class="headerlink" href="#list-and-layout-again" title="Permalink to this headline">¶</a></h2>
@@ -258,7 +258,7 @@
 <span class="nx">postButton</span><span class="p">.</span><span class="nx">setToolTipText</span><span class="p">(</span><span class="s2">&quot;Post this message on identi.ca&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Another nice tweak could be a identica logo in the windows caption bar. Just download this <a class="reference external" href="https://raw.github.com/qooxdoo/qooxdoo/release_6_0_0-alpha/component/tutorials/tweets/step2/source/resource/tweets/logo.png">logo from identica</a> and save it in the <tt class="docutils literal"><span class="pre">source/resource/tweets</span></tt> folder of your application. Adding the logo is easy because the window has also a property for an icon, which can be set in the constructor. Adding the reference to the icon in the base call should do the job.</p>
+<p>Another nice tweak could be a identica logo in the windows caption bar. Just download this <a class="reference external" href="https://raw.github.com/qooxdoo/qooxdoo/release_6_0_0-beta/component/tutorials/tweets/step2/source/resource/tweets/logo.png">logo from identica</a> and save it in the <tt class="docutils literal"><span class="pre">source/resource/tweets</span></tt> folder of your application. Adding the logo is easy because the window has also a property for an icon, which can be set in the constructor. Adding the reference to the icon in the base call should do the job.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="k">this</span><span class="p">.</span><span class="nx">base</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="s2">&quot;tweets&quot;</span><span class="p">,</span> <span class="s2">&quot;tweets/logo.png&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -281,7 +281,7 @@
 </div>
 <p>Now go back to the browser and test your new tweaks. It should look like this.</p>
 <p><img alt="step 2" src="../../../_images/step21.png" /></p>
-<p>That's it for building the UI. Again, if you want to take a <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_6_0_0-alpha/component/tutorials/tweets/step2">look at the code</a>, fork the project on github.
+<p>That's it for building the UI. Again, if you want to take a <a class="reference external" href="https://github.com/qooxdoo/qooxdoo/tree/release_6_0_0-beta/component/tutorials/tweets/step2">look at the code</a>, fork the project on github.
 Next time we take care of getting the data. If you have feedback on this post, just let us know!</p>
 </div>
 </div>
@@ -364,22 +364,22 @@ Next time we take care of getting the data. If you have feedback on this post, j
         <ul>
           <li>
             
-            <a href="/current/6.0.0-alpha/pages/introduction/about.html">About</a>
+            <a href="/current/6.0.0-beta/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/getting_started.html">Getting Started</a>
+            <a href="/current/6.0.0-beta/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/website.html">Website</a>
+            <a href="/current/6.0.0-beta/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/mobile.html">Mobile</a>
+            <a href="/current/6.0.0-beta/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/desktop.html">Desktop</a>
+            <a href="/current/6.0.0-beta/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/server.html">Server</a>
+            <a href="/current/6.0.0-beta/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

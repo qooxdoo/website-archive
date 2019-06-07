@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Generator Configuration Details &mdash; qooxdoo 6.0.0-alpha documentation</title>
+    <title>Generator Configuration Details &mdash; qooxdoo 6.0.0-beta documentation</title>
     
     <link rel="stylesheet" href="../../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -18,7 +18,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
-        VERSION:     '6.0.0-alpha',
+        VERSION:     '6.0.0-beta',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 6.0.0-alpha documentation" href="../../../index.html" />
+    <link rel="top" title="qooxdoo 6.0.0-beta documentation" href="../../../index.html" />
     <link rel="up" title="Tooling" href="../../tool.html" />
     <link rel="next" title="Branching in Configuration Files" href="config_branching.html" />
     <link rel="prev" title="Tweaking Configurations" href="config_tweaking.html" />
@@ -131,7 +131,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../../index.html">Manual (v6.0.0-alpha)</a>
+    <a href="../../../index.html">Manual (v6.0.0-beta)</a>
        &raquo;
       <a href="../../tool.html" accesskey="U">Tooling</a>
      &raquo;
@@ -263,7 +263,7 @@ dedicated parts (and consequently, packages), one for each locale (see
 you only load exactly those resources which you need for a specific locale,
 leaving all others on the server. On the downside, like with other parts
 those parts have to be actively loaded by the application (using
-<a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.io.PartLoader">qx.io.PartLoader.require</a>), and
+<a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer/#qx.io.PartLoader">qx.io.PartLoader.require</a>), and
 switching the locale at runtime requires another server roundtrip for the new
 locale.</p>
 <p>So the build system allows you to tailor where resource information is stored
@@ -535,12 +535,12 @@ and translation files (.po).</p>
 </div>
 <p>So for example a graphics file in the qooxdoo framework might get referenced using the following components</p>
 <ul class="simple">
-<li>[1] <em>&quot;../../qooxdoo-6.0.0-alpha-sdk/framework/&quot;</em></li>
+<li>[1] <em>&quot;../../qooxdoo-6.0.0-beta-sdk/framework/&quot;</em></li>
 <li>[2] <em>&quot;source/resource/&quot;</em></li>
 <li>[3] <em>&quot;qx/static/blank.gif&quot;</em></li>
 </ul>
 <p>to produce the final URI
-<em>&quot;../../qooxdoo-6.0.0-alpha-sdk/framework/source/resource/qx/static/ blank.gif&quot;</em>.</p>
+<em>&quot;../../qooxdoo-6.0.0-beta-sdk/framework/source/resource/qx/static/ blank.gif&quot;</em>.</p>
 <p>These general parts have the following meaning:</p>
 <ul class="simple">
 <li><strong>[1]</strong> : URI path to the library root (as will be valid when running the app in the browser). If you specify the <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-library"><em>uri</em></a> parameter of the library's entry in your config, this is what gets used here.</li>
@@ -563,7 +563,7 @@ and translation files (.po).</p>
 <p>For the <strong>build</strong> version, dedicated keys <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-compile-options"><em>uris/script</em></a> and  <a class="reference internal" href="generator_config_ref.html#pages-tool-generator-generator-config-ref-compile-options"><em>uris/resource</em></a> are available (as there is virtually only one &quot;library&quot;). The values of both keys cover the scope of components [1] + [2] in the first figure.</p>
 <p>Since [1.2] is always known (otherwise the whole library would not be found), only [1.1] has to be given in the config. The properties of this approach, compared to specifying just [1], are:</p>
 <ul class="simple">
-<li><em>The application root can be specified individually for each compile job.</em> This means you could have more than one application root in your project, e.g. when your main application offers an iframe, into which another application from the same project is loaded; qooxdoo's <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/demobrowser">Demobrowser</a> application takes advantage of exactly this.</li>
+<li><em>The application root can be specified individually for each compile job.</em> This means you could have more than one application root in your project, e.g. when your main application offers an iframe, into which another application from the same project is loaded; qooxdoo's <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/demobrowser">Demobrowser</a> application takes advantage of exactly this.</li>
 <li><em>Relative file system paths have to match with relative URIs in the running application.</em> So this approach won't work if e.g the relative path from your config directory to the library makes no sense when the app is run from a web server.</li>
 </ul>
 <p>From the above discussion, there is one important point to take away, in order to create working URIs in your application:</p>
@@ -620,7 +620,7 @@ and translation files (.po).</p>
 <li>By default, I18N data, i.e. translations from the .po files and CLDR data, is integrated as Javascript data with the application packages (either as part of the first .js file of a package, or in its own .js file). This package-specific data will encompass the data for all configured locales needed in this package (Think: Data cumulated by package).</li>
 <li>Setting <em>packages/i18n-as-parts: true</em> removes this data from the packages. Rather, data for <em>each individual locale</em> (en, en_US, de, de_DE, ...) will be collated in a dedicated <em>part</em>, the part name being that of the respective language code (Think: Data cumulated by locale). As usual, each part is made up of packages. In the case of an I18N part, these are the corresponding data package plus fall-back packages for key lookup (e.g. [&quot;C&quot;, &quot;en&quot;, &quot;en_US&quot;] for the part <em>en_US</em>). Each package is a normal qooxdoo package with only the data section, and without the code section.</li>
 </ul>
-<p>So far, so good. With the config key set to <em>true</em>, this is the point where the application developer has to take over. The application will not load the I18N parts by itself. You have to do it using the usual part loading API (e.g. <tt class="docutils literal"><span class="pre">qx.io.PartLoader.require([&quot;en_US&quot;])</span></tt>). You might want to do that early in the application run cycle, e.g. during application start-up and before the first translatable string or localizable data is to be displayed. After loading the part, the corresponding locale is ready to be used in the normal way in your application. The <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/feedreader">Feedreader</a> application uses this technique to load a different I18N part when the language is changed in its <em>Preferences</em> dialog.</p>
+<p>So far, so good. With the config key set to <em>true</em>, this is the point where the application developer has to take over. The application will not load the I18N parts by itself. You have to do it using the usual part loading API (e.g. <tt class="docutils literal"><span class="pre">qx.io.PartLoader.require([&quot;en_US&quot;])</span></tt>). You might want to do that early in the application run cycle, e.g. during application start-up and before the first translatable string or localizable data is to be displayed. After loading the part, the corresponding locale is ready to be used in the normal way in your application. The <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/feedreader">Feedreader</a> application uses this technique to load a different I18N part when the language is changed in its <em>Preferences</em> dialog.</p>
 </div>
 </div>
 <div class="section" id="include-key-top-level-adding-features">
@@ -714,7 +714,7 @@ to remove debugging code from the build version. It is comparable to
 conditional compilation in C/C++.</p>
 <p>For any generation process of a build version of an app, there is a certain set
 of environment settings in effect. If variant optimization is turned on, code
-is variant-optimized by looking at certain calls to <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer#qx.core.Environment">qx.core.Environment</a> that
+is variant-optimized by looking at certain calls to <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer#qx.core.Environment">qx.core.Environment</a> that
 reference an environment key that has an existing setting. See the
 <a class="reference internal" href="generator_optimizations.html#pages-tool-generator-generator-optimizations-variants"><em>optimization section</em></a> for details about
 that.</p>
@@ -931,22 +931,22 @@ time. This can be a workaround for the time being.</p>
         <ul>
           <li>
             
-            <a href="/current/6.0.0-alpha/pages/introduction/about.html">About</a>
+            <a href="/current/6.0.0-beta/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/getting_started.html">Getting Started</a>
+            <a href="/current/6.0.0-beta/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/website.html">Website</a>
+            <a href="/current/6.0.0-beta/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/mobile.html">Mobile</a>
+            <a href="/current/6.0.0-beta/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/desktop.html">Desktop</a>
+            <a href="/current/6.0.0-beta/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/server.html">Server</a>
+            <a href="/current/6.0.0-beta/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>

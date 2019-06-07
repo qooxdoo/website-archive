@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Decorators &mdash; qooxdoo 6.0.0-alpha documentation</title>
+    <title>Decorators &mdash; qooxdoo 6.0.0-beta documentation</title>
     
     <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -18,7 +18,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '6.0.0-alpha',
+        VERSION:     '6.0.0-beta',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="qooxdoo 6.0.0-alpha documentation" href="../../index.html" />
+    <link rel="top" title="qooxdoo 6.0.0-beta documentation" href="../../index.html" />
     <link rel="up" title="qx.Desktop" href="../desktop.html" />
     <link rel="next" title="Web Fonts" href="ui_webfonts.html" />
     <link rel="prev" title="Custom Themes" href="ui_custom_themes.html" />
@@ -131,7 +131,7 @@
   <section id="breadcrumb">
       
   <a href="http://qooxdoo.org">Home</a> &raquo;
-    <a href="../../index.html">Manual (v6.0.0-alpha)</a>
+    <a href="../../index.html">Manual (v6.0.0-beta)</a>
        &raquo;
       <a href="../desktop.html" accesskey="U">qx.Desktop</a>
      &raquo;
@@ -162,7 +162,7 @@
 <span class="p">},</span>
 </pre></div>
 </div>
-<p>The first thing you see is the name of the decorator, in this case, <tt class="docutils literal"><span class="pre">main</span></tt>. The specified decorator is available using that name in the entire application code, especially in the appearance theme. Then there's the styles map which contains values for decorator properties. You can see all possible style value as properties of the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.ui.decoration.Decorator">Decorator class</a>.</p>
+<p>The first thing you see is the name of the decorator, in this case, <tt class="docutils literal"><span class="pre">main</span></tt>. The specified decorator is available using that name in the entire application code, especially in the appearance theme. Then there's the styles map which contains values for decorator properties. You can see all possible style value as properties of the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer/#qx.ui.decoration.Decorator">Decorator class</a>.</p>
 <p>Sometimes it is very handy to change only little details about the decorator. Imagine a special decorator for hovered buttons. Inheritance comes in very handy in such a case.</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;scroll-knob-pressed&quot;</span> <span class="o">:</span> <span class="p">{</span>
   <span class="nx">include</span> <span class="o">:</span> <span class="s2">&quot;scroll-knob&quot;</span><span class="p">,</span>
@@ -177,7 +177,7 @@
 </div>
 <div class="section" id="custom-decorators">
 <span id="pages-desktop-ui-decorators-custom-decorators"></span><h2>Custom Decorators<a class="headerlink" href="#custom-decorators" title="Permalink to this headline">¶</a></h2>
-<p>Custom decorators are created by extending the decorator theme and adding new ones or overwriting existing ones. Each decorator class comes with a set of properties for configuration of the instance. These properties are defined by mixins in the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.ui.decoration">qx.ui.decoration namespace</a>. Following is a short description of the available mixins:</p>
+<p>Custom decorators are created by extending the decorator theme and adding new ones or overwriting existing ones. Each decorator class comes with a set of properties for configuration of the instance. These properties are defined by mixins in the <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer/#qx.ui.decoration">qx.ui.decoration namespace</a>. Following is a short description of the available mixins:</p>
 <ul class="simple">
 <li><strong>MBackgroundColor</strong>: Renders a background color.</li>
 <li><strong>MBackgroundImage</strong>: Renders a background image.</li>
@@ -226,7 +226,7 @@
 </div>
 <div class="section" id="writing-decorators">
 <span id="pages-desktop-ui-decorators-writing-decorators"></span><h2>Writing Decorators<a class="headerlink" href="#writing-decorators" title="Permalink to this headline">¶</a></h2>
-<p>It is possible to write custom decorators, although they are not usable in the decoration theme. You can only create instances in the application code and assign the instances. For that reason, the recommendation is to write a decorator mixin instead. <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-alpha/apiviewer/#qx.ui.decoration.IDecorator">The interface</a> is quite trivial to implement. There are only three methods which needs to be implemented:</p>
+<p>It is possible to write custom decorators, although they are not usable in the decoration theme. You can only create instances in the application code and assign the instances. For that reason, the recommendation is to write a decorator mixin instead. <a class="reference external" href="http://demo.qooxdoo.org/6.0.0-beta/apiviewer/#qx.ui.decoration.IDecorator">The interface</a> is quite trivial to implement. There are only three methods which needs to be implemented:</p>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">getInsets</span></tt>: Returns a map of insets (space the decorator needs) e.g. the border width plus padding</li>
 <li><tt class="docutils literal"><span class="pre">getPadding</span></tt>: Returns the configured padding minus the border width.</li>
@@ -316,22 +316,22 @@
         <ul>
           <li>
             
-            <a href="/current/6.0.0-alpha/pages/introduction/about.html">About</a>
+            <a href="/current/6.0.0-beta/pages/introduction/about.html">About</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/getting_started.html">Getting Started</a>
+            <a href="/current/6.0.0-beta/pages/getting_started.html">Getting Started</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/website.html">Website</a>
+            <a href="/current/6.0.0-beta/pages/website.html">Website</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/mobile.html">Mobile</a>
+            <a href="/current/6.0.0-beta/pages/mobile.html">Mobile</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/desktop.html">Desktop</a>
+            <a href="/current/6.0.0-beta/pages/desktop.html">Desktop</a>
           </li>
           <li>
-            <a href="/current/6.0.0-alpha/pages/server.html">Server</a>
+            <a href="/current/6.0.0-beta/pages/server.html">Server</a>
           </li>
           <li>
             <a class="" href="/current/apiviewer">Api</a>
