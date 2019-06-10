@@ -1048,30 +1048,6 @@
                 "nr": 0
             },
             {
-                "name": "Service.html",
-                "tags": [
-                    "showcase",
-                    "databinding",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Service",
-                "nr": 0
-            },
-            {
-                "name": "Tree_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.tree.Tree",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.data.controller.Tree"
-                ],
-                "title": "Tree Columns",
-                "nr": "Columns"
-            },
-            {
                 "name": "TreeController.html",
                 "tags": [
                     "noPlayground",
@@ -1091,6 +1067,19 @@
                 "nr": 0
             },
             {
+                "name": "Tree_Columns.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.tree.Tree",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.data.controller.Tree"
+                ],
+                "title": "Tree Columns",
+                "nr": "Columns"
+            },
+            {
                 "name": "SelectBox.html",
                 "tags": [
                     "databinding",
@@ -1108,6 +1097,17 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SelectBox",
+                "nr": 0
+            },
+            {
+                "name": "Service.html",
+                "tags": [
+                    "showcase",
+                    "databinding",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Service",
                 "nr": 0
             },
             {
@@ -1375,6 +1375,23 @@
                 "nr": "LeftRight"
             },
             {
+                "name": "Canvas_MinMaxSizes.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.basic.Label",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Canvas MinMaxSizes",
+                "nr": "MinMaxSizes"
+            },
+            {
                 "name": "Canvas_Percent.html",
                 "tags": [
                     "noPlayground",
@@ -1639,6 +1656,26 @@
                 "nr": 0
             },
             {
+                "name": "Grid_Alignment.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid"
+                ],
+                "title": "Grid Alignment",
+                "nr": "Alignment"
+            },
+            {
                 "name": "Grid_Complex.html",
                 "tags": [
                     "noPlayground",
@@ -1667,26 +1704,6 @@
                 ],
                 "title": "Grid Complex",
                 "nr": "Complex"
-            },
-            {
-                "name": "Grid_Alignment.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid"
-                ],
-                "title": "Grid Alignment",
-                "nr": "Alignment"
             },
             {
                 "name": "Grid_Simple.html",
@@ -2277,20 +2294,6 @@
                 "nr": "Reversed"
             },
             {
-                "name": "VBox_ShrinkX.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "VBox ShrinkX",
-                "nr": "ShrinkX"
-            },
-            {
                 "name": "VBox_Separator.html",
                 "tags": [
                     "noPlayground",
@@ -2314,21 +2317,18 @@
                 "nr": "Separator"
             },
             {
-                "name": "Canvas_MinMaxSizes.html",
+                "name": "VBox_ShrinkX.html",
                 "tags": [
                     "noPlayground",
                     "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
                     "qx.ui.core.Widget",
                     "qx.ui.core.Widget",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.basic.Label",
-                    "qx.ui.container.Composite"
+                    "qx.ui.core.Widget"
                 ],
-                "title": "Canvas MinMaxSizes",
-                "nr": "MinMaxSizes"
+                "title": "VBox ShrinkX",
+                "nr": "ShrinkX"
             },
             {
                 "name": "VSplit.html",
@@ -2499,6 +2499,23 @@
         "classname": "showcase",
         "tests": [
             {
+                "name": "Browser.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.form.TextField",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.embed.Iframe"
+                ],
+                "title": "Browser",
+                "nr": 0
+            },
+            {
                 "name": "Dialog.html",
                 "tags": [
                     "showcase",
@@ -2524,23 +2541,6 @@
                 "nr": 0
             },
             {
-                "name": "Browser.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.form.TextField",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.embed.Iframe"
-                ],
-                "title": "Browser",
-                "nr": 0
-            },
-            {
                 "name": "Form.html",
                 "tags": [
                     "showcase",
@@ -2548,6 +2548,24 @@
                     "qx.Class.define"
                 ],
                 "title": "Form",
+                "nr": 0
+            },
+            {
+                "name": "IconFont.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.locale.Manager.getInstance",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Image",
+                    "qx.theme.manager.Font.getInstance",
+                    "qx.Theme.define",
+                    "qx.Theme.include"
+                ],
+                "title": "IconFont",
                 "nr": 0
             },
             {
@@ -2623,6 +2641,20 @@
                 "nr": 0
             },
             {
+                "name": "Maps.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Maps",
+                "nr": 0
+            },
+            {
                 "name": "Translation.html",
                 "tags": [
                     "showcase",
@@ -2674,38 +2706,6 @@
                     "qx.ui.form.ListItem"
                 ],
                 "title": "Translation",
-                "nr": 0
-            },
-            {
-                "name": "Maps.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Maps",
-                "nr": 0
-            },
-            {
-                "name": "IconFont.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.locale.Manager.getInstance",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Image",
-                    "qx.theme.manager.Font.getInstance",
-                    "qx.Theme.define",
-                    "qx.Theme.include"
-                ],
-                "title": "IconFont",
                 "nr": 0
             }
         ]
