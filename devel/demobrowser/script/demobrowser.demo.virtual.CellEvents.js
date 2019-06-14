@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.9c4ef64972fb.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.CellEvents.e4ebe18ae8c3.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -7473,6 +7473,7 @@ catch(jq){jq.message=dY+jp+R+this.toString()+fa+jq.message;throw jq;}
 ;jl.$$subcontrol=jp;jl.$$subparent=this;var jn=this.__ii;var forward=this._forwardStates;if(jn&&forward&&jl instanceof qx.ui.core.Widget){for(var jo in jn){if(forward[jo]){jl.addState(jo);}
 ;}
 ;}
+;if(jl.$$resyncNeeded){delete jl.$$resyncNeeded;jl.updateAppearance();}
 ;this.fireDataEvent(s,jl);return this.__il[jp]=jl;}
 ,_createChildControlImpl:function(js,jr){return null;}
 ,_disposeChildControls:function(){var jw=this.__il;if(!jw){return;}
@@ -10746,21 +10747,22 @@ else {var bl=be.computeVerticalGaps(bs,bm,true);}
 ,execute:function(){}
 }});}
 )();
-(function(){var a="toolTipText",b="icon",c="label",d="qx.ui.core.MExecutable",f="enabled",g="value",h="qx.event.type.Event",j="execute",k="_applyCommand",l="qx.ui.command.Command",m="menu",n="changeCommand";qx.Mixin.define(d,{events:{"execute":h},properties:{command:{check:l,apply:k,event:n,nullable:true}},members:{__pe:null,__pf:false,__pg:null,_bindableProperties:[f,c,b,a,g,m],execute:function(){var o=this.getCommand();if(o){if(this.__pf){this.__pf=false;}
-else {this.__pf=true;o.execute(this);}
+(function(){var a="toolTipText",b="icon",c="label",d="qx.ui.core.MExecutable",f="value",g="qx.event.type.Event",h="execute",j="_applyCommand",k="qx.ui.command.Command",l="menu",m="changeCommand";qx.Mixin.define(d,{events:{"execute":g},properties:{command:{check:k,apply:j,event:m,nullable:true}},members:{__pe:null,__pf:false,__pg:null,_bindableProperties:[c,b,a,f,l],execute:function(){var n=this.getCommand();if(n){if(this.__pf){this.__pf=false;}
+else {this.__pf=true;n.execute(this);}
 ;}
-;this.fireEvent(j);}
-,__ph:function(e){if(this.__pf){this.__pf=false;return;}
+;this.fireEvent(h);}
+,__ph:function(e){if(this.isEnabled()){if(this.__pf){this.__pf=false;return;}
 ;if(this.isEnabled()){this.__pf=true;this.execute();}
 ;}
-,_applyCommand:function(r,p){if(p!=null){p.removeListenerById(this.__pg);}
-;if(r!=null){this.__pg=r.addListener(j,this.__ph,this);}
-;var q=this.__pe;if(q==null){this.__pe=q={};}
-;var u;for(var i=0;i<this._bindableProperties.length;i++ ){var t=this._bindableProperties[i];if(p!=null&&!p.isDisposed()&&q[t]!=null){p.removeBinding(q[t]);q[t]=null;}
-;if(r!=null&&qx.Class.hasProperty(this.constructor,t)){var s=r.get(t);if(s==null){u=this.get(t);if(u==null){this.syncAppearance();u=qx.util.PropertyUtil.getThemeValue(this,t);}
 ;}
-else {u=null;}
-;q[t]=r.bind(t,this,t);if(u){this.set(t,u);}
+,_applyCommand:function(q,o){if(o!=null){o.removeListenerById(this.__pg);}
+;if(q!=null){this.__pg=q.addListener(h,this.__ph,this);}
+;var p=this.__pe;if(p==null){this.__pe=p={};}
+;var t;for(var i=0;i<this._bindableProperties.length;i++ ){var s=this._bindableProperties[i];if(o!=null&&!o.isDisposed()&&p[s]!=null){o.removeBinding(p[s]);p[s]=null;}
+;if(q!=null&&qx.Class.hasProperty(this.constructor,s)){var r=q.get(s);if(r==null){t=this.get(s);if(t==null){this.$$resyncNeeded=true;this.syncAppearance();t=qx.util.PropertyUtil.getThemeValue(this,s);}
+;}
+else {t=null;}
+;p[s]=q.bind(s,this,s);if(t){this.set(s,t);}
 ;}
 ;}
 ;}

@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Iframe.5b140d0112c9.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Iframe.41883eee5157.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9274,6 +9274,7 @@ catch(jq){jq.message=dY+jp+R+this.toString()+fa+jq.message;throw jq;}
 ;jl.$$subcontrol=jp;jl.$$subparent=this;var jn=this.__ii;var forward=this._forwardStates;if(jn&&forward&&jl instanceof qx.ui.core.Widget){for(var jo in jn){if(forward[jo]){jl.addState(jo);}
 ;}
 ;}
+;if(jl.$$resyncNeeded){delete jl.$$resyncNeeded;jl.updateAppearance();}
 ;this.fireDataEvent(s,jl);return this.__il[jp]=jl;}
 ,_createChildControlImpl:function(js,jr){return null;}
 ,_disposeChildControls:function(){var jw=this.__il;if(!jw){return;}

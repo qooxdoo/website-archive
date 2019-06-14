@@ -3501,25 +3501,6 @@
                 "nr": 0
             },
             {
-                "name": "CellSpan.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.cell.Cell",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.HtmlCellSpan",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.WidgetCellSpan",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "CellSpan",
-                "nr": 0
-            },
-            {
                 "name": "Cells.html",
                 "tags": [
                     "test",
@@ -3944,6 +3925,25 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
+            },
+            {
+                "name": "CellSpan.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.cell.Cell",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.HtmlCellSpan",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.WidgetCellSpan",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "CellSpan",
+                "nr": 0
             }
         ]
     },
