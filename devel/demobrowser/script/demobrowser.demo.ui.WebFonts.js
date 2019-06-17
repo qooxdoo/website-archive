@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.WebFonts.402c03abd8ad.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.WebFonts.394c3723390a.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -8801,17 +8801,19 @@ else {return this.identifierToKeyCodeMap[by]?false:true;}
 ;}
 });}
 )();
-(function(){var a="os.name",b="opera",c="engine.name",d="qx.event.type.Dom",e="osx";qx.Class.define(d,{extend:qx.event.type.Native,statics:{SHIFT_MASK:1,CTRL_MASK:2,ALT_MASK:4,META_MASK:8},members:{_cloneNativeEvent:function(f,g){var g=qx.event.type.Native.prototype._cloneNativeEvent.call(this,f,g);g.shiftKey=f.shiftKey;g.ctrlKey=f.ctrlKey;g.altKey=f.altKey;g.metaKey=f.metaKey;return g;}
-,getModifiers:function(){var h=0;var i=this._native;if(i.shiftKey){h|=qx.event.type.Dom.SHIFT_MASK;}
-;if(i.ctrlKey){h|=qx.event.type.Dom.CTRL_MASK;}
-;if(i.altKey){h|=qx.event.type.Dom.ALT_MASK;}
-;if(i.metaKey){h|=qx.event.type.Dom.META_MASK;}
-;return h;}
+(function(){var a="engine.name",b='function',c="osx",d="os.name",e='CapsLock',f="opera",g="qx.event.type.Dom";qx.Class.define(g,{extend:qx.event.type.Native,statics:{SHIFT_MASK:1,CTRL_MASK:2,ALT_MASK:4,META_MASK:8,CAPSLOCK_MASK:16},members:{_cloneNativeEvent:function(h,i){var i=qx.event.type.Native.prototype._cloneNativeEvent.call(this,h,i);i.shiftKey=h.shiftKey;i.ctrlKey=h.ctrlKey;i.altKey=h.altKey;i.metaKey=h.metaKey;i.capsLock=typeof h.getModifierState===b?h.getModifierState(e):false;return i;}
+,getModifiers:function(){var j=0;var k=this._native;if(k.shiftKey){j|=qx.event.type.Dom.SHIFT_MASK;}
+;if(k.ctrlKey){j|=qx.event.type.Dom.CTRL_MASK;}
+;if(k.altKey){j|=qx.event.type.Dom.ALT_MASK;}
+;if(k.metaKey){j|=qx.event.type.Dom.META_MASK;}
+;if(k.capsLock){j|=qx.event.type.Dom.CAPSLOCK_MASK;}
+;return j;}
 ,isCtrlPressed:function(){return this._native.ctrlKey;}
 ,isShiftPressed:function(){return this._native.shiftKey;}
 ,isAltPressed:function(){return this._native.altKey;}
 ,isMetaPressed:function(){return this._native.metaKey;}
-,isCtrlOrCommandPressed:function(){if(qx.core.Environment.get(a)==e&&qx.core.Environment.get(c)!=b){return this._native.metaKey;}
+,isCapsLocked:function(){return this._native.capsLock;}
+,isCtrlOrCommandPressed:function(){if(qx.core.Environment.get(d)==c&&qx.core.Environment.get(a)!=f){return this._native.metaKey;}
 else {return this._native.ctrlKey;}
 ;}
 }});}
