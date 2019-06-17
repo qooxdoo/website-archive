@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.AutoSizeTextArea.532d2e79f503.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.AutoSizeTextArea.4b770b177de9.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11251,9 +11251,9 @@ else {this.splice(i+1,0,j);}
 ;return this;}
 ,removeAt:function(i){return this.splice(i,1)[0];}
 ,removeAll:function(){this.length=0;return this;}
-,append:function(k){var l=this.__Bt(k);Array.prototype.push.apply(this,l);return this;}
-,prepend:function(m){var n=this.__Bt(m);Array.prototype.splice.apply(this,[0,0].concat(n));return this;}
-,__Bt:function(o){if(qx.core.Environment.get(b)){qx.core.Assert.assertArray(o,c);}
+,append:function(k){var l=this.__Cd(k);Array.prototype.push.apply(this,l);return this;}
+,prepend:function(m){var n=this.__Cd(m);Array.prototype.splice.apply(this,[0,0].concat(n));return this;}
+,__Cd:function(o){if(qx.core.Environment.get(b)){qx.core.Assert.assertArray(o,c);}
 ;var p=o;if(o instanceof qx.type.BaseArray){p=[];for(var i=0;i<o.length;i++ ){p[i]=o[i];}
 ;}
 ;return p;}

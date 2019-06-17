@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.CommandGroupManager.c81c44ca1df7.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.ui.CommandGroupManager.49a94c30b11d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10655,7 +10655,7 @@ else {top+=B;}
 }});}
 )();
 (function(){var a="qx.ui.command.GroupManager",b="Group must be an instance of qx.ui.command.Group",c="qx.debug",d="Group was not added before. Please use ",e="'add()' method to add the group.",f="Given group is not an instance of qx.ui.command.Group",g="Group was not added before! You have to use 'addCommand()' method before activating!",h="Group is already added!";qx.Class.define(a,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this.__wx=[];}
-,members:{__wx:null,__Bu:null,add:function(j){if(qx.core.Environment.get(c)){this.assertInstance(j,qx.ui.command.Group,f);}
+,members:{__wx:null,__Ce:null,add:function(j){if(qx.core.Environment.get(c)){this.assertInstance(j,qx.ui.command.Group,f);}
 ;if(this.__wx.includes(j)){if(qx.core.Environment.get(c)){this.debug(h);}
 ;return false;}
 ;this.__wx.push(j);j.setActive(false);return true;}
@@ -10664,22 +10664,22 @@ else {top+=B;}
 ,remove:function(m){if(qx.core.Environment.get(c)){this.assertInstance(m,qx.ui.command.Group,b);}
 ;var l=this.__wx.indexOf(m);if(l===-1){if(qx.core.Environment.get(c)){this.debug(d+e);}
 ;}
-;if(this.getActive()===m){this.__Bu=null;}
+;if(this.getActive()===m){this.__Ce=null;}
 ;this.__wx.splice(l,1);return m;}
 ,setActive:function(o){if(qx.core.Environment.get(c)){this.assertInstance(o,qx.ui.command.Group,f);}
 ;if(!this.has(o)){if(qx.core.Environment.get(c)){this.debug(g);}
 ;return false;}
-;for(var i=0;i<this.__wx.length;i++ ){var n=this.__wx[i];if(n==o){n.setActive(true);this.__Bu=n;continue;}
+;for(var i=0;i<this.__wx.length;i++ ){var n=this.__wx[i];if(n==o){n.setActive(true);this.__Ce=n;continue;}
 ;n.setActive(false);}
 ;return true;}
-,getActive:function(){return this.__Bu;}
-,block:function(){if(this.__Bu){this.__Bu.setActive(false);}
+,getActive:function(){return this.__Ce;}
+,block:function(){if(this.__Ce){this.__Ce.setActive(false);}
 ;}
-,unblock:function(){if(this.__Bu){this.__Bu.setActive(true);}
+,unblock:function(){if(this.__Ce){this.__Ce.setActive(true);}
 ;}
 ,_getGroup:function(q){var p=this.__wx.indexOf(q);if(p===-1){return null;}
 ;return this.__wx[p];}
-},destruct:function(){this.__wx=this.__Bu=null;}
+},destruct:function(){this.__wx=this.__Ce=null;}
 });}
 )();
 (function(){var a="Given parameter count mismatch! Please provide a key as string ",b="Boolean",c="' was not added before. Please use ",d="The key: '",e="' already exists!",f="qx.debug",g="_applyActive",h="'add()' method to add the command.",i="qx.ui.command.Group",j="Key parameter must be a string.",k="Given command is not an instance of qx.ui.command.Command",l="Command with key: '",m="and a command intsance.";qx.Class.define(i,{extend:qx.core.Object,construct:function(){qx.core.Object.call(this);this._cmds={};}
@@ -10774,7 +10774,7 @@ else {var B=this.__qh[name];A[B](z);}
 ,getSelectables:function(e){return arguments.length==1;}
 }});}
 )();
-(function(){var a="__wA",b="bottom",c="button",d="qx.event.type.Data",f="lastTab",g="barRight",h="beforeChangeSelection",j="qx.debug",k="horizontal",m="changeSelection",n="bar",o="close-button",p="Index should be less than : ",q="tabview",r="vertical",s="page",t="Incompatible child for TabView: ",u="left",v="_applyBarPosition",w="barLeft",x="top",y="right",z="qx.ui.tabview.TabView",A="barTop",B="barBottom",C="pane",D="close",E="Given argument is not null or a {qx.ui.tabview.Page}.",F="firstTab";qx.Class.define(z,{extend:qx.ui.core.Widget,implement:qx.ui.core.ISingleSelection,include:[qx.ui.core.MContentPadding],construct:function(H){qx.ui.core.Widget.call(this);this.__Bv={top:A,right:g,bottom:B,left:w};this._createChildControl(n);this._createChildControl(C);var G=this.__wA=this._createRadioGroupInstance();G.setWrap(false);G.addListener(m,this._onChangeSelection,this);if(H!=null){this.setBarPosition(H);}
+(function(){var a="__wA",b="bottom",c="button",d="qx.event.type.Data",f="lastTab",g="barRight",h="beforeChangeSelection",j="qx.debug",k="horizontal",m="changeSelection",n="bar",o="close-button",p="Index should be less than : ",q="tabview",r="vertical",s="page",t="Incompatible child for TabView: ",u="left",v="_applyBarPosition",w="barLeft",x="top",y="right",z="qx.ui.tabview.TabView",A="barTop",B="barBottom",C="pane",D="close",E="Given argument is not null or a {qx.ui.tabview.Page}.",F="firstTab";qx.Class.define(z,{extend:qx.ui.core.Widget,implement:qx.ui.core.ISingleSelection,include:[qx.ui.core.MContentPadding],construct:function(H){qx.ui.core.Widget.call(this);this.__zg={top:A,right:g,bottom:B,left:w};this._createChildControl(n);this._createChildControl(C);var G=this.__wA=this._createRadioGroupInstance();G.setWrap(false);G.addListener(m,this._onChangeSelection,this);if(H!=null){this.setBarPosition(H);}
 else {this.initBarPosition();}
 ;}
 ,events:{"changeSelection":d,"changeValue":d},properties:{appearance:{refine:true,init:q},barPosition:{check:[u,y,x,b],init:x,apply:v}},members:{__wA:null,setValue:function(I){if(null===I){this.resetSelection();return null;}
@@ -10790,14 +10790,14 @@ else {return null;}
 ,_getContentPaddingTarget:function(){return this.getChildControl(C);}
 ,add:function(R){if(qx.core.Environment.get(j)){if(!(R instanceof qx.ui.tabview.Page)){throw new Error(t+R);}
 ;}
-;var N=R.getButton();var O=this.getChildControl(n);var Q=this.getChildControl(C);R.exclude();O.add(N);Q.add(R);this.__wA.add(N);R.addState(this.__Bv[this.getBarPosition()]);R.addState(f);var P=this.getChildren();if(P[0]==R){R.addState(F);}
+;var N=R.getButton();var O=this.getChildControl(n);var Q=this.getChildControl(C);R.exclude();O.add(N);Q.add(R);this.__wA.add(N);R.addState(this.__zg[this.getBarPosition()]);R.addState(f);var P=this.getChildren();if(P[0]==R){R.addState(F);}
 else {P[P.length-2].removeState(f);}
 ;R.addListener(D,this._onPageClose,this);}
 ,addAt:function(X,S){if(qx.core.Environment.get(j)){if(!(X instanceof qx.ui.tabview.Page)){throw new Error(t+X);}
 ;}
 ;var V=this.getChildren();if(!(S==null)&&S>V.length){throw new Error(p+V.length);}
 ;if(S==null){S=V.length;}
-;var U=X.getButton();var T=this.getChildControl(n);var W=this.getChildControl(C);X.exclude();T.addAt(U,S);W.addAt(X,S);this.__wA.add(U);X.addState(this.__Bv[this.getBarPosition()]);V=this.getChildren();if(S==V.length-1){X.addState(f);}
+;var U=X.getButton();var T=this.getChildControl(n);var W=this.getChildControl(C);X.exclude();T.addAt(U,S);W.addAt(X,S);this.__wA.add(U);X.addState(this.__zg[this.getBarPosition()]);V=this.getChildren();if(S==V.length-1){X.addState(f);}
 ;if(V[0]==X){X.addState(F);}
 else {V[V.length-2].removeState(f);}
 ;X.addListener(D,this._onPageClose,this);}
@@ -10806,7 +10806,7 @@ else {this.resetSelection();}
 ;}
 else {this.setSelection([be[Y-1]]);}
 ;}
-;ba.remove(bb);bd.remove(bc);this.__wA.remove(bb);bc.removeState(this.__Bv[this.getBarPosition()]);if(bc.hasState(F)){bc.removeState(F);if(be[0]){be[0].addState(F);}
+;ba.remove(bb);bd.remove(bc);this.__wA.remove(bb);bc.removeState(this.__zg[this.getBarPosition()]);if(bc.hasState(F)){bc.removeState(F);if(be[0]){be[0].addState(F);}
 ;}
 ;if(bc.hasState(f)){bc.removeState(f);if(be.length>0){be[be.length-1].addState(f);}
 ;}
@@ -10814,11 +10814,11 @@ else {this.setSelection([be[Y-1]]);}
 ,getChildren:function(){return this.getChildControl(C).getChildren();}
 ,indexOf:function(bf){return this.getChildControl(C).indexOf(bf);}
 ,getRadioGroup:function(){return this.__wA;}
-,__Bv:null,_applyBarPosition:function(bj,bl){var bg=this.getChildControl(n);var bm=this.getChildControl(C);var bo=bj==u||bj==y;var bp=bj==y||bj==b;var bn=bo?qx.ui.layout.HBox:qx.ui.layout.VBox;var bq=this._getLayout();if(bq&&bq instanceof bn){}
+,__zg:null,_applyBarPosition:function(bj,bl){var bg=this.getChildControl(n);var bm=this.getChildControl(C);var bo=bj==u||bj==y;var bp=bj==y||bj==b;var bn=bo?qx.ui.layout.HBox:qx.ui.layout.VBox;var bq=this._getLayout();if(bq&&bq instanceof bn){}
 else {this._setLayout(bq=new bn);}
-;bq.setReversed(bp);bg.setOrientation(bo?r:k);var bk=this.getChildren();var i,l;if(bl){var bi=this.__Bv[bl];bg.removeState(bi);bm.removeState(bi);for(i=0,l=bk.length;i<l;i++ ){bk[i].removeState(bi);}
+;bq.setReversed(bp);bg.setOrientation(bo?r:k);var bk=this.getChildren();var i,l;if(bl){var bi=this.__zg[bl];bg.removeState(bi);bm.removeState(bi);for(i=0,l=bk.length;i<l;i++ ){bk[i].removeState(bi);}
 ;}
-;if(bj){var bh=this.__Bv[bj];bg.addState(bh);bm.addState(bh);for(i=0,l=bk.length;i<l;i++ ){bk[i].addState(bh);}
+;if(bj){var bh=this.__zg[bj];bg.addState(bh);bm.addState(bh);for(i=0,l=bk.length;i<l;i++ ){bk[i].addState(bh);}
 ;}
 ;}
 ,getSelection:function(){var br=this.__wA.getSelection();var bs=[];for(var i=0;i<br.length;i++ ){bs.push(br[i].getUserData(s));}
@@ -10840,7 +10840,7 @@ else {bE.resetSelection();}
 else {this.resetSelection();}
 ;}
 ,_onPageClose:function(e){var bH=e.getTarget();var bG=bH.getButton().getChildControl(o);bG.reset();this.remove(bH);}
-},destruct:function(){this._disposeObjects(a);this.__Bv=null;}
+},destruct:function(){this._disposeObjects(a);this.__zg=null;}
 });}
 )();
 (function(){var a="_applyIcon",b="",c="icon",d="page",e="close",f="qx.event.type.Event",g="_applyShowCloseButton",h="tabview-page",i="qx.ui.tabview.Page",j="_applyLabel",k="button",l="String",m="Boolean";qx.Class.define(i,{extend:qx.ui.container.Composite,construct:function(n,o){qx.ui.container.Composite.call(this);this._createChildControl(k);if(n!=null){this.setLabel(n);}
