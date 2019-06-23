@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:1df6210ed1","qx.theme":"apiviewer.Theme","qx.version":"6.0.0-beta"};
+var envinfo = {"qx.application":"apiviewer.Application","qx.aspects":false,"qx.debug":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:b2ecd1bbb1","qx.theme":"apiviewer.Theme","qx.version":"6.0.0-beta"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:apiviewer.30827d771e4c.js"]}},
+  packages : {"0":{"uris":["__out__:apiviewer.dba4f86f1404.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10782,12 +10782,12 @@ else {var y=x?this.__no(x):this.__nm();}
 ;delete (this.__fv[p]);}
 }});}
 )();
-(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='" src="',u=' title="',v="Internal:",w="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",x="apiviewer/image/nextlevel.gif",y="https://developer.mozilla.org/en/DOM/event",z=".js",A="events",B="Included mixins:",C="margin-right:-18px;",D="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",E="opera",F=' | ',G='</p>',H="mixin",I="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",J=' </span>',K='HEAD:1df6210ed1',L=" is deprecated!",M='/>',N="https://developer.mozilla.org/en/CSS/font",O="position:absolute;top:0px;left:0px;padding-right:18px;",P='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',Q='px',R='" target="_blank" title="View Source">',S=' class',T="methods-static",U="string",V="<h2>",W="apiviewer/image/event18.gif",X='tap',Y='"',cX="apiviewer/image/property18.gif",cY="https://developer.mozilla.org/en/DOM/window",da="Deprecated:",cT='Static Methods',cU="sub mixins",cV="apiviewer/image/method_public18.gif",cW=":",df='<img src="',dg='25px',dh='</small>',di="sourceViewUri",db="position:absolute;top:0px;left:0px",dc="https://developer.mozilla.org/en/CSS/color",dd="Singleton ",de="<div>",dm='">',dP='<img',eN='" class="img"',dn='"/>',dj="number",dk="Direct ",eK="apiviewer/image/constant18.gif",dl="function",dp="apiviewer/image/class18.gif",dq='<span style="display:inline;position:relative;top:-2px;width:',dr=" is internal!",dw="px",dx='<span class="type">',dy="https://developer.mozilla.org/en/DOM/element",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",dt="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",du="Classes including this mixin:",dv="constants",dD="This ",dE='px;height:',dF="0",dG="</h2>",dz="class",dA="interface",dB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dC="Implemented interfaces:",dK='</a>',dL='<h2 class="warning">',eM="properties",dM="apiviewer/image/childcontrol18.gif",dH="https://developer.mozilla.org/en/DOM/node",dI="https://developer.mozilla.org/en/DOM/document",eL="Class",dJ="top",dN="apiviewer/image/constructor18.gif",dO='webkit',eb="margin-left:",ea="engine.name",dY='margin-left',ef='</a></span>',ee="construct",ed="left",ec=".",dT='<div>',dS="child controls",dR="Abstract ",dQ="sub classes",dX='',dW=' style="',dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dU="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",em='!',el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(A,A,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(T,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(dv,dv,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(eM,eM,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dS));this.getContentElement().setAttribute(dz,eo);this._init(new apiviewer.dao.Class({}));}
-,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":y,"Window":cY,"Document":dI,"Element":dy,"Node":dH,"Date":w,"Function":eH,"Array":dt,"Object":dV,"Map":dV,"RegExp":dB,"Error":ds,"Number":D,"Boolean":I,"String":dU,"undefined":eB,"arguments":ex,"Font":N,"Color":dc},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+z;}
+(function(){var a='</span>',b="</div>",c='tocitem',d="constructor",f='</div>',g=';',h="Implementations of this interface:",k="}",m="childControls",n="sub interfaces",o=", ",p='</h2>',r='bootstrap',s=";vertical-align:top",t='HEAD:b2ecd1bbb1',u='" src="',v="apiviewer/image/constructor18.gif",w="Internal:",x="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date",y="apiviewer/image/nextlevel.gif",z="https://developer.mozilla.org/en/DOM/event",A=".js",B="events",C="Included mixins:",D="margin-right:-18px;",E="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number",F="opera",G=' | ',H='</p>',I="mixin",J="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean",K=' </span>',L=" is deprecated!",M='/>',N="https://developer.mozilla.org/en/CSS/font",O="position:absolute;top:0px;left:0px;padding-right:18px;",P='<span style="display:inline-block;display:inline;padding-right:18px;position:relative;top:-2px;left:0;width:',Q='px',R='" target="_blank" title="View Source">',S=' class',T="methods-static",U="string",V="<h2>",W="apiviewer/image/event18.gif",X='tap',Y='"',cX="apiviewer/image/property18.gif",cY="https://developer.mozilla.org/en/DOM/window",da="Deprecated:",cT='Static Methods',cU="sub mixins",cV="apiviewer/image/method_public18.gif",cW=":",df='<img src="',dg='25px',dh='</small>',di="sourceViewUri",db="position:absolute;top:0px;left:0px",dc="https://developer.mozilla.org/en/CSS/color",dd="Singleton ",de="<div>",dm='">',dP='<img',eN='" class="img"',dn='"/>',dj="number",dk="Direct ",eK="apiviewer/image/constant18.gif",dl="function",dp="apiviewer/image/class18.gif",dq='<span style="display:inline;position:relative;top:-2px;width:',dr=" is internal!",dw="px",dx='<span class="type">',dy="https://developer.mozilla.org/en/DOM/element",ds="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error",dt="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array",du="Classes including this mixin:",dv="constants",dD="This ",dE='px;height:',dF="0",dG="</h2>",dz="class",dA="interface",dB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp",dC="Implemented interfaces:",dK='</a>',dL='<h2 class="warning">',eM="properties",dM="apiviewer/image/childcontrol18.gif",dH="https://developer.mozilla.org/en/DOM/node",dI="https://developer.mozilla.org/en/DOM/document",eL="Class",dJ="top",dN=' title="',dO='webkit',eb="margin-left:",ea="engine.name",dY='margin-left',ef='</a></span>',ee="construct",ed="left",ec=".",dT='<div>',dS="child controls",dR="Abstract ",dQ="sub classes",dX='',dW=' style="',dV="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object",dU="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String",em='!',el='<div class="class-description">',ek="vertical-align:top",ej='<p>',eq='<span style="white-space: nowrap;"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" target="_blank" title="Object">Object</a></span>',ep="static methods",eo="ClassViewer",en='Object',ei="Static ",eh="methods",eg="/",eB="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/undefined",eA="apiviewer.ui.ClassViewer",ez="",eF="Inheritance hierarchy:",eE="apiviewer/image/overlay_static18.gif",eD='span',eC='<small>',eu='methods-static',et="Mixin",es=' ',er="marked",ey='<span style="white-space: nowrap;"><a href="',ex="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/arguments",ew='" target="_blank" title="',ev='<a href="',eJ="webkit",eI="%{",eH="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function",eG="Interface";qx.Class.define(eA,{extend:apiviewer.ui.AbstractViewer,construct:function(){apiviewer.ui.AbstractViewer.call(this);this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(d,d));this.addInfoPanel(new apiviewer.ui.panels.EventPanel(B,B,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(T,ep));this.addInfoPanel(new apiviewer.ui.panels.ConstantPanel(dv,dv,false,true));this.addInfoPanel(new apiviewer.ui.panels.PropertyPanel(eM,eM,true,true));this.addInfoPanel(new apiviewer.ui.panels.MethodPanel(eh,eh));this.addInfoPanel(new apiviewer.ui.panels.ChildControlsPanel(m,dS));this.getContentElement().setAttribute(dz,eo);this._init(new apiviewer.dao.Class({}));}
+,statics:{PRIMITIVES:{"var":true,"void":true,"undefined":true,"arguments":true,"null":true,"varargs":true,"Boolean":true,"String":true,"Number":true,"Integer":true,"PositiveNumber":true,"PositiveInteger":true,"Float":true,"Double":true,"Color":true,"Error":true,"RegExp":true,"Object":true,"Array":true,"Map":true,"Function":true,"Date":true,"Node":true,"Element":true,"Document":true,"Window":true,"Event":true},MDC_LINKS:{"Event":z,"Window":cY,"Document":dI,"Element":dy,"Node":dH,"Date":x,"Function":eH,"Array":dt,"Object":dV,"Map":dV,"RegExp":dB,"Error":ds,"Number":E,"Boolean":J,"String":dU,"undefined":eB,"arguments":ex,"Font":N,"Color":dc},SOURCE_VIEW_MACROS:{classFilePath:function(eO){var eP=eO.getClass?eO.getClass():eO;return eP.getFullName().replace(/\./gi,eg)+A;}
 ,lineNumber:function(eQ){if(eQ.getLineNumber&&typeof eQ.getLineNumber()==dj){return eQ.getLineNumber()+ez;}
 else {return dF;}
 ;}
-,qxGitBranch:function(eR){return K.split(cW)[1];}
+,qxGitBranch:function(eR){return t.split(cW)[1];}
 },createImageHtml:function(eT,eU,eS){if(typeof eT==U){return df+qx.util.ResourceManager.getInstance().toUri(eT)+eN+(eS?dW+eS+Y:ez)+M;}
 else {if(eS){eS+=s;}
 else {eS=ek;}
@@ -10796,10 +10796,10 @@ else {eS=ek;}
 ,createOverlayImageHtml:function(fa,eY,eV,eX,fc){var fb=dX;var eW;if(qx.core.Environment.get(ea)==eJ){fb=dq+fa+dE+eY+Q+((fc==null)?dX:(g+fc))+dm;}
 else {fb=P+fa+dE+eY+Q+((fc==null)?dX:(g+fc))+dm;}
 ;if(qx.core.Environment.get(ea)==eJ){eW=O;}
-else if(qx.core.Environment.get(ea)==E){eW=C;}
+else if(qx.core.Environment.get(ea)==F){eW=D;}
 else {eW=db;}
-;for(var i=0;i<eV.length;i++ ){fb+=dP;if(eX!=null){fb+=u+eX+Y;}
-;fb+=dW+eW+t+qx.util.ResourceManager.getInstance().toUri(eV[i])+dn;}
+;for(var i=0;i<eV.length;i++ ){fb+=dP;if(eX!=null){fb+=dN+eX+Y;}
+;fb+=dW+eW+u+qx.util.ResourceManager.getInstance().toUri(eV[i])+dn;}
 ;fb+=a;return fb;}
 ,getSourceUri:function(fd){var ff;if(fd instanceof apiviewer.dao.Class){ff=fd;}
 else {ff=fd.getClass();}
@@ -10811,21 +10811,21 @@ else {ff=fd.getClass();}
 ;if(fj.indexOf(eI)>=0){{}
 ;return null;}
 ;return fj;}
-},members:{_getTitleHtml:function(fp){var fo=eL;switch(fp.getType()){case H:fo=et;break;case dA:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dh);fl.add(dx);if(fp.isAbstract()){fl.add(dR);}
+},members:{_getTitleHtml:function(fp){var fo=eL;switch(fp.getType()){case I:fo=et;break;case dA:fo=eG;break;};var fl=new qx.util.StringBuilder();fl.add(eC,fp.getPackageName(),dh);fl.add(dx);if(fp.isAbstract()){fl.add(dR);}
 else if(fp.isStatic()){fl.add(ei);}
 else if(fp.isSingleton()){fl.add(dd);}
-;fl.add(fo,J);var fm=fp.getName();var fn=this.self(arguments).getSourceUri(fp);if(fn){fm=ev+fn+R+fm+dK;}
+;fl.add(fo,K);var fm=fp.getName();var fn=this.self(arguments).getSourceUri(fp);if(fn){fm=ev+fn+R+fm+dK;}
 ;fl.add(apiviewer.ui.panels.InfoPanel.setTitleClass(fp,fm));return fl.get();}
-,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,A,T,dv,eM,eh,m];var fw={"events":W,"constructor":dN,"properties":cX,"methods":cV,"methods-static":[cV,eE],"constants":eK,"childControls":dM};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
+,_getTocHtml:function(fy){var fz=document.createDocumentFragment();var fr=[d,B,T,dv,eM,eh,m];var fw={"events":W,"constructor":v,"properties":cX,"methods":cV,"methods-static":[cV,eE],"constants":eK,"childControls":dM};var fC=this.getPanels();var fA={};for(var i=0,l=fC.length;i<l;i++ ){var fq=fC[i].getListName();fA[fq]=fC[i];}
 ;var fx=null;for(var i=0,l=fr.length;i<l;i++ ){var fv=fy.getItemList(fr[i]);this.sortItems(fv);var ft=false;if(fv.length>0){ft=true;}
-else {if(this.getShowInherited()&&(fr[i]==A||fr[i]==eM||fr[i]==eh)){var fu=null;if(fy.getType()==dA){fu=fy.getInterfaceHierarchy();}
+else {if(this.getShowInherited()&&(fr[i]==B||fr[i]==eM||fr[i]==eh)){var fu=null;if(fy.getType()==dA){fu=fy.getInterfaceHierarchy();}
 else {fu=fy.getClassHierarchy();}
 ;for(var j=0;j<fu.length;j++ ){if(apiviewer.dao.Class.isNativeObject(fu[j])&&fu[j].name===en){continue;}
 ;fv=fu[j].getItemList(fr[i]);if(fv.length>0){ft=true;break;}
 ;}
 ;}
 ;}
-;if(ft){if(fx){fz.appendChild(document.createTextNode(F));}
+;if(ft){if(fx){fz.appendChild(document.createTextNode(G));}
 ;var fB=qx.dom.Element.create(eD);qx.bom.element.Class.add(fB,c);fB.innerHTML=apiviewer.ui.ClassViewer.createImageHtml(fw[fr[i]],fr[i])+es;q(fB).on(X,(function(fE,fD){return (function(){this.__nx(fD,fD.getName());qx.bom.element.Scroll.intoView(fE.getTitleElement(),null,ed,dJ);if(!fE.getIsOpen()){this.togglePanelVisibility(fE);}
 ;}
 ).bind(this);}
@@ -10833,36 +10833,36 @@ else {fu=fy.getClassHierarchy();}
 ;fs.appendChild(document.createTextNode(es));fs.appendChild(document.createTextNode(fr[i]===eu?cT:qx.lang.String.capitalize(fr[i])));fB.appendChild(fs);fz.appendChild(fB);fx=fB;}
 ;}
 ;return fz;}
-,_getDescriptionHtml:function(fG){var fF=dQ;var fK=fG.getDescription();switch(fG.getType()){case H:fF=cU;break;case dA:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
+,_getDescriptionHtml:function(fG){var fF=dQ;var fK=fG.getDescription();switch(fG.getType()){case I:fF=cU;break;case dA:fF=n;break;};var fH=new qx.util.StringBuilder();if(fK!==ez){fH.add(el,apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG),f);}
 ;var fI=apiviewer.ui.panels.InfoPanel.createSeeAlsoHtml(fG);if(fI){if(fH.length>0){fH.splice(-1,0,fI);}
 else {fH.add(fI);}
 ;}
 ;if(fG.getErrors().length>0){fH.add(el,apiviewer.ui.panels.InfoPanel.createErrorHtml(fG,fG),f);}
 ;if(fG.getType()===dA){fH.add(this.__nw(fG));}
 else {fH.add(this.__nv(fG));}
-;fH.add(this.__nu(fG.getChildClasses(),dk+fF+cW));fH.add(this.__nu(fG.getInterfaces(),dC));fH.add(this.__nu(fG.getMixins(),B));fH.add(this.__nu(fG.getImplementations(),h));fH.add(this.__nu(fG.getIncluder(),du));if(fG.isDeprecated()){fH.add(dL,da,p);fH.add(ej);fK=fG.getDeprecationText();if(fK){fH.add(apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG));}
+;fH.add(this.__nu(fG.getChildClasses(),dk+fF+cW));fH.add(this.__nu(fG.getInterfaces(),dC));fH.add(this.__nu(fG.getMixins(),C));fH.add(this.__nu(fG.getImplementations(),h));fH.add(this.__nu(fG.getIncluder(),du));if(fG.isDeprecated()){fH.add(dL,da,p);fH.add(ej);fK=fG.getDeprecationText();if(fK){fH.add(apiviewer.ui.panels.InfoPanel.resolveLinkAttributes(fK,fG));}
 else {fH.add(dD,fG.getType(),L);}
-;fH.add(G);}
-;if(fG.isInternal()){fH.add(dL,v,p);fH.add(ej);var fJ=fG.getType();if(fJ==r){fJ+=S;}
-;fH.add(dD,fJ,dr);fH.add(G);}
+;fH.add(H);}
+;if(fG.isInternal()){fH.add(dL,w,p);fH.add(ej);var fJ=fG.getType();if(fJ==r){fJ+=S;}
+;fH.add(dD,fJ,dr);fH.add(H);}
 ;return fH.get();}
 ,__nu:function(fL,fN){var fM=ez;if(fL.length>0){fM=new qx.util.StringBuilder(V,fN,dG);for(var i=0;i<fL.length;i++ ){if(i!==0){fM.add(o);}
 ;fM.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fL[i],null,true,false));}
 ;fM=fM.get();}
 ;return fM;}
 ,__nv:function(fQ){var fS=apiviewer.ui.ClassViewer;var fR=new qx.util.StringBuilder(V,eF,dG);var fP=fQ.getClassHierarchy(true);fR.add(fS.createImageHtml(dp),eq);var fO=0;for(var i=fP.length-1;i>=0;i-- ){if(apiviewer.dao.Class.isNativeObject(fP[i])&&fP[i]===Object){continue;}
-;fR.add(dT);fR.add(fS.createImageHtml(x,null,eb+fO+dw),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dp));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
+;fR.add(dT);fR.add(fS.createImageHtml(y,null,eb+fO+dw),!apiviewer.dao.Class.isNativeObject(fP[i])?fS.createImageHtml(apiviewer.TreeUtil.getIconUrl(fP[i])):fS.createImageHtml(dp));if(i!==0){if(!apiviewer.dao.Class.isNativeObject(fP[i])){fR.add(apiviewer.ui.panels.InfoPanel.createItemLinkHtml(fP[i].getFullName(),null,false));}
 else {var name=Object.prototype.toString.call(new fP[i]).match(/^\[object (.*)\]$/)[1];fR.add(ey+apiviewer.ui.ClassViewer.MDC_LINKS[name]+ew+name+dm+name+ef);}
 ;}
 else {fR.add(fP[i].getFullName());}
 ;fO+=18;fR.add(f);}
 ;return fR.get();}
 ,__nw:function(fY){var ga=apiviewer.ui.ClassViewer;var fX=apiviewer.TreeUtil;var fU=apiviewer.ui.panels.InfoPanel;var fV=fY.getInterfaceHierarchy();var fW=new qx.util.StringBuilder();if(fV.length<=1){return;}
-;fW.add(V,eF,dG);var fT=0;for(var i=fV.length-1;i>=0;i-- ){var name=fV[i].getFullName();var gb=fX.getIconUrl(fV[i]);fW.add(de);if(fV[i].getSuperInterfaces().length>0){fW.add(ga.createImageHtml(x,null,eb+fT+dw));fW.add(ga.createImageHtml(gb));fW.add(i!==0?fU.createItemLinkHtml(name,null,false):name);fT+=18;}
+;fW.add(V,eF,dG);var fT=0;for(var i=fV.length-1;i>=0;i-- ){var name=fV[i].getFullName();var gb=fX.getIconUrl(fV[i]);fW.add(de);if(fV[i].getSuperInterfaces().length>0){fW.add(ga.createImageHtml(y,null,eb+fT+dw));fW.add(ga.createImageHtml(gb));fW.add(i!==0?fU.createItemLinkHtml(name,null,false):name);fT+=18;}
 else {fW.add(ga.createImageHtml(gb));fW.add(fU.createItemLinkHtml(name,null,false));}
 ;fW.add(b);}
 ;return fW.get();}
-,showItem:function(gg){var gh;var gf={"event":A,"method_public":eh,"method_protected":eh,"method_private":eh,"property":eM,"property_private":eM,"property_protected":eM,"constant":dv,"childcontrol":m};if(gg==ee){gh=this.getDocNode().getConstructor();}
+,showItem:function(gg){var gh;var gf={"event":B,"method_public":eh,"method_protected":eh,"method_private":eh,"property":eM,"property_private":eM,"property_protected":eM,"constant":dv,"childcontrol":m};if(gg==ee){gh=this.getDocNode().getConstructor();}
 else {if(gg.indexOf(em)!=-1){var ge=gg.split(em);gh=this.getDocNode().getItemByListAndName(gf[ge[1]],ge[0]);if(!gh){gh=this.getDocNode().getItem(ge[0]);}
 ;}
 else {gh=this.getDocNode().getItem(gg);}
@@ -15982,12 +15982,12 @@ else {this.setStyle(j,o);this.setStyle(q,null);this.setStyle(t,m);}
 ,setTop:function(J,I){var top=I-J;this.setStyle(e,top+n);}
 }});}
 )();
-(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='6.0.0-beta',d="",e='HEAD:1df6210ed1',f="versionLabel.version",g=" ",h="qooxdoo";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
-;if(i==undefined){i=qx.core.Environment.get(f);if(i==null){i=e;if(i==d){i=c;}
+(function(){var a="qxc.ui.versionlabel.VersionLabel",b="versionLabel.name",c='6.0.0-beta',d="",e="versionLabel.version",f='HEAD:b2ecd1bbb1',g=" ",h="qooxdoo";qx.Class.define(a,{extend:qx.ui.basic.Label,construct:function(j,i){if(j==undefined){j=qx.core.Environment.get(b);}
+;if(i==undefined){i=qx.core.Environment.get(e);if(i==null){i=f;if(i==d){i=c;}
 ;}
 ;}
 ;qx.ui.basic.Label.call(this,j+g+i);}
-,defer:function(){qx.core.Environment.add(b,h);qx.core.Environment.add(f,null);}
+,defer:function(){qx.core.Environment.add(b,h);qx.core.Environment.add(e,null);}
 });}
 )();
 (function(){var a="apiviewer.test.Widget";qx.Class.define(a,{extend:apiviewer.test.LayoutItem,members:{renderSeparator:function(b,c){}
