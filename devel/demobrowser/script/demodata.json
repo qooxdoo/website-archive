@@ -1080,6 +1080,37 @@
                 "nr": "Columns"
             },
             {
+                "name": "SelectBox.html",
+                "tags": [
+                    "databinding",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.form.SelectBox",
+                    "qx.data.controller.List",
+                    "qx.ui.form.SelectBox",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "SelectBox",
+                "nr": 0
+            },
+            {
+                "name": "Service.html",
+                "tags": [
+                    "showcase",
+                    "databinding",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Service",
+                "nr": 0
+            },
+            {
                 "name": "SingleValueBinding.html",
                 "tags": [
                     "noPlayground",
@@ -1113,37 +1144,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SingleValueBinding",
-                "nr": 0
-            },
-            {
-                "name": "SelectBox.html",
-                "tags": [
-                    "databinding",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.form.SelectBox",
-                    "qx.data.controller.List",
-                    "qx.ui.form.SelectBox",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "SelectBox",
-                "nr": 0
-            },
-            {
-                "name": "Service.html",
-                "tags": [
-                    "showcase",
-                    "databinding",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Service",
                 "nr": 0
             }
         ]
@@ -1469,6 +1469,37 @@
                 ],
                 "title": "Dock AutoSize",
                 "nr": "AutoSize"
+            },
+            {
+                "name": "Dock_FlexGrowing.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.Dock",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.Dock",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Dock FlexGrowing",
+                "nr": "FlexGrowing"
             },
             {
                 "name": "Dock_FlexShrinking.html",
@@ -2335,37 +2366,6 @@
                 ],
                 "title": "VSplit",
                 "nr": 0
-            },
-            {
-                "name": "Dock_FlexGrowing.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.Dock",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.Dock",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Dock FlexGrowing",
-                "nr": "FlexGrowing"
             }
         ]
     },
@@ -3042,30 +3042,6 @@
         "classname": "ui",
         "tests": [
             {
-                "name": "AutoSizeTextArea.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.container.Composite",
-                    "qx.type.Array"
-                ],
-                "title": "AutoSizeTextArea",
-                "nr": 0
-            },
-            {
                 "name": "Command.html",
                 "tags": [
                     "showcase",
@@ -3481,6 +3457,30 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "WebFonts",
+                "nr": 0
+            },
+            {
+                "name": "AutoSizeTextArea.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.container.Composite",
+                    "qx.type.Array"
+                ],
+                "title": "AutoSizeTextArea",
                 "nr": 0
             }
         ]
@@ -3920,19 +3920,6 @@
                 "nr": 0
             },
             {
-                "name": "Tree_Dynamic.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.tree.VirtualTree",
-                    "qx.event.Timer.once",
-                    "qx.data.marshal.Json.createModel"
-                ],
-                "title": "Tree Dynamic",
-                "nr": "Dynamic"
-            },
-            {
                 "name": "Tree_Columns.html",
                 "tags": [
                     "noPlayground",
@@ -3944,6 +3931,19 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
+            },
+            {
+                "name": "Tree_Dynamic.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.tree.VirtualTree",
+                    "qx.event.Timer.once",
+                    "qx.data.marshal.Json.createModel"
+                ],
+                "title": "Tree Dynamic",
+                "nr": "Dynamic"
             }
         ]
     },
