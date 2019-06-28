@@ -3042,6 +3042,30 @@
         "classname": "ui",
         "tests": [
             {
+                "name": "AutoSizeTextArea.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.container.Composite",
+                    "qx.type.Array"
+                ],
+                "title": "AutoSizeTextArea",
+                "nr": 0
+            },
+            {
                 "name": "Command.html",
                 "tags": [
                     "showcase",
@@ -3457,30 +3481,6 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "WebFonts",
-                "nr": 0
-            },
-            {
-                "name": "AutoSizeTextArea.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.container.Composite",
-                    "qx.type.Array"
-                ],
-                "title": "AutoSizeTextArea",
                 "nr": 0
             }
         ]
