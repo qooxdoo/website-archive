@@ -456,4 +456,4 @@
   qx.ui.form.core.AbstractVirtualBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractVirtualBox.js.map?dt=1562147522626
+//# sourceMappingURL=AbstractVirtualBox.js.map?dt=1562153800794

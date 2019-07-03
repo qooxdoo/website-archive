@@ -238,4 +238,4 @@
   qxl.demobrowser.demo.layout.VBox_Flex.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=VBox_Flex.js.map?dt=1562147535052
+//# sourceMappingURL=VBox_Flex.js.map?dt=1562153813112

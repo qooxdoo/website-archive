@@ -268,4 +268,4 @@
   qxl.demobrowser.demo.table.Table_Context_Menu.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Table_Context_Menu.js.map?dt=1562147535791
+//# sourceMappingURL=Table_Context_Menu.js.map?dt=1562153813830

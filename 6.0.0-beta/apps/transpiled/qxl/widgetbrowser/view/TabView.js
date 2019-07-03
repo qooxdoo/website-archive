@@ -151,4 +151,4 @@
   qxl.widgetbrowser.view.TabView.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TabView.js.map?dt=1562147539789
+//# sourceMappingURL=TabView.js.map?dt=1562153817735

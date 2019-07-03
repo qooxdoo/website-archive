@@ -100,4 +100,4 @@
   qxl.demobrowser.demo.data.JsonToList.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=JsonToList.js.map?dt=1562147533618
+//# sourceMappingURL=JsonToList.js.map?dt=1562153811667

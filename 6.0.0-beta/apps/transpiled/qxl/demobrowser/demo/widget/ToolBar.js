@@ -294,4 +294,4 @@
   qxl.demobrowser.demo.widget.ToolBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ToolBar.js.map?dt=1562147538580
+//# sourceMappingURL=ToolBar.js.map?dt=1562153816567

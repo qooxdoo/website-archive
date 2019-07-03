@@ -193,4 +193,4 @@
   qxl.demobrowser.demo.widget.Spinner.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Spinner.js.map?dt=1562147538425
+//# sourceMappingURL=Spinner.js.map?dt=1562153816420

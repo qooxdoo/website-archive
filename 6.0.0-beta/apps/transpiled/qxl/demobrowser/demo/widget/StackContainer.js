@@ -135,4 +135,4 @@
   qxl.demobrowser.demo.widget.StackContainer.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=StackContainer.js.map?dt=1562147538480
+//# sourceMappingURL=StackContainer.js.map?dt=1562153816473

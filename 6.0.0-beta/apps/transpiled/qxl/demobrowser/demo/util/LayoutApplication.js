@@ -76,4 +76,4 @@
   qxl.demobrowser.demo.util.LayoutApplication.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=LayoutApplication.js.map?dt=1562147536876
+//# sourceMappingURL=LayoutApplication.js.map?dt=1562153814930

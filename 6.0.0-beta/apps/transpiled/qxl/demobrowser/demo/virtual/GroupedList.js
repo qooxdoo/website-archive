@@ -233,4 +233,4 @@
   qxl.demobrowser.demo.virtual.GroupedList.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=GroupedList.js.map?dt=1562147537222
+//# sourceMappingURL=GroupedList.js.map?dt=1562153815260

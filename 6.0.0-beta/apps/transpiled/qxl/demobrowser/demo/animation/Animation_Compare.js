@@ -604,4 +604,4 @@
   qxl.demobrowser.demo.animation.Animation_Compare.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Animation_Compare.js.map?dt=1562147532840
+//# sourceMappingURL=Animation_Compare.js.map?dt=1562153810899

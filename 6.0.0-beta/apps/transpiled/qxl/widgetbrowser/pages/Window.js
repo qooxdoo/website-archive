@@ -324,4 +324,4 @@
   qxl.widgetbrowser.pages.Window.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Window.js.map?dt=1562147539247
+//# sourceMappingURL=Window.js.map?dt=1562153817198

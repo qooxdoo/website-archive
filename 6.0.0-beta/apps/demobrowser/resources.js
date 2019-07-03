@@ -8493,6 +8493,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/48/actions/dialog-cancel.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/48/actions/dialog-close.png": [
       48,
       48,
@@ -8938,12 +8944,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/process-stop.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/48/actions/dialog-cancel.png": [
       48,
       48,
       "png",

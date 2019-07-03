@@ -380,4 +380,4 @@
   qx.ui.mobile.container.MIScroll.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MIScroll.js.map?dt=1562147524297
+//# sourceMappingURL=MIScroll.js.map?dt=1562153802441

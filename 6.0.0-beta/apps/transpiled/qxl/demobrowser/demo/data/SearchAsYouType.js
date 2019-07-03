@@ -95,4 +95,4 @@
   qxl.demobrowser.demo.data.SearchAsYouType.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=SearchAsYouType.js.map?dt=1562147533809
+//# sourceMappingURL=SearchAsYouType.js.map?dt=1562153811855

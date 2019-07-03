@@ -361,4 +361,4 @@
   qxl.widgetbrowser.pages.ToolBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ToolBar.js.map?dt=1562147539171
+//# sourceMappingURL=ToolBar.js.map?dt=1562153817123

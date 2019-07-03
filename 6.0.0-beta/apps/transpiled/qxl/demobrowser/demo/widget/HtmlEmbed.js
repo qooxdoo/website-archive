@@ -76,4 +76,4 @@
   qxl.demobrowser.demo.widget.HtmlEmbed.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=HtmlEmbed.js.map?dt=1562147537962
+//# sourceMappingURL=HtmlEmbed.js.map?dt=1562153815962

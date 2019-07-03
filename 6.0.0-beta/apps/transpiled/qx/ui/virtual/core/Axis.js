@@ -396,4 +396,4 @@
   qx.ui.virtual.core.Axis.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Axis.js.map?dt=1562147529550
+//# sourceMappingURL=Axis.js.map?dt=1562153807612
