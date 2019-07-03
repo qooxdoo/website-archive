@@ -94,4 +94,4 @@
   qx.module.event.Track.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Track.js.map?dt=1562184190168
+//# sourceMappingURL=Track.js.map?dt=1562187659603

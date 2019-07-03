@@ -101,4 +101,4 @@
   qxl.demobrowser.demo.event.PointerEvent.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=PointerEvent.js.map?dt=1562184210882
+//# sourceMappingURL=PointerEvent.js.map?dt=1562187676182

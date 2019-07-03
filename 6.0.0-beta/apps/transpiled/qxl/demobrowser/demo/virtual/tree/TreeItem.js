@@ -114,4 +114,4 @@
   qxl.demobrowser.demo.virtual.tree.TreeItem.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TreeItem.js.map?dt=1562184215279
+//# sourceMappingURL=TreeItem.js.map?dt=1562187679646

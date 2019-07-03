@@ -530,4 +530,4 @@
   qx.ui.basic.Label.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Label.js.map?dt=1562184191771
+//# sourceMappingURL=Label.js.map?dt=1562187661038

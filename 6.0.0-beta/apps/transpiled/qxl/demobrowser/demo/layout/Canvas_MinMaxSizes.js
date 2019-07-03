@@ -131,4 +131,4 @@
   qxl.demobrowser.demo.layout.Canvas_MinMaxSizes.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Canvas_MinMaxSizes.js.map?dt=1562184210976
+//# sourceMappingURL=Canvas_MinMaxSizes.js.map?dt=1562187676245

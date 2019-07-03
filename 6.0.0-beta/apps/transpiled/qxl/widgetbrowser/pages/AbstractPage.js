@@ -54,4 +54,4 @@
   qxl.widgetbrowser.pages.AbstractPage.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractPage.js.map?dt=1562184217793
+//# sourceMappingURL=AbstractPage.js.map?dt=1562187681667

@@ -81,4 +81,4 @@
   qxl.demobrowser.demo.widget.SlideBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=SlideBar.js.map?dt=1562184216150
+//# sourceMappingURL=SlideBar.js.map?dt=1562187680276

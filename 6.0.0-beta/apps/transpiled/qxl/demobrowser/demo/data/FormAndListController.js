@@ -121,4 +121,4 @@
   qxl.demobrowser.demo.data.FormAndListController.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=FormAndListController.js.map?dt=1562184209910
+//# sourceMappingURL=FormAndListController.js.map?dt=1562187675410

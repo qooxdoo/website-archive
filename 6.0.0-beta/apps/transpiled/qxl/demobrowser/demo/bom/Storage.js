@@ -115,4 +115,4 @@
   qxl.demobrowser.demo.bom.Storage.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Storage.js.map?dt=1562184209551
+//# sourceMappingURL=Storage.js.map?dt=1562187675157

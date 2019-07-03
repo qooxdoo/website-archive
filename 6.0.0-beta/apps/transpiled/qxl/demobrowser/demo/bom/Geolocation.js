@@ -87,4 +87,4 @@
   qxl.demobrowser.demo.bom.Geolocation.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Geolocation.js.map?dt=1562184209210
+//# sourceMappingURL=Geolocation.js.map?dt=1562187674953

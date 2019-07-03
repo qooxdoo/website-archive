@@ -167,4 +167,4 @@
   qxl.demobrowser.demo.mobile.Fingers.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Fingers.js.map?dt=1562184212320
+//# sourceMappingURL=Fingers.js.map?dt=1562187677218

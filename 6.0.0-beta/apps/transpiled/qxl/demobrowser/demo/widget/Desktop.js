@@ -85,4 +85,4 @@
   qxl.demobrowser.demo.widget.Desktop.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Desktop.js.map?dt=1562184215554
+//# sourceMappingURL=Desktop.js.map?dt=1562187679827

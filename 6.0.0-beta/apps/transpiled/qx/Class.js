@@ -1644,4 +1644,4 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
   qx.Class.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Class.js.map?dt=1562184172400
+//# sourceMappingURL=Class.js.map?dt=1562187645788

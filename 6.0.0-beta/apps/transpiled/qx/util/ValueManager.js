@@ -113,4 +113,4 @@
   qx.util.ValueManager.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ValueManager.js.map?dt=1562184207413
+//# sourceMappingURL=ValueManager.js.map?dt=1562187673345

@@ -126,4 +126,4 @@
   qxl.demobrowser.demo.widget.Image.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Image.js.map?dt=1562184215692
+//# sourceMappingURL=Image.js.map?dt=1562187679915

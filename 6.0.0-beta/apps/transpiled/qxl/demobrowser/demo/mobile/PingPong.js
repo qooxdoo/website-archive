@@ -320,4 +320,4 @@
   qxl.demobrowser.demo.mobile.PingPong.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=PingPong.js.map?dt=1562184212364
+//# sourceMappingURL=PingPong.js.map?dt=1562187677256

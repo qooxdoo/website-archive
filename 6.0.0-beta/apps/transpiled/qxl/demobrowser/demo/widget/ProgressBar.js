@@ -77,4 +77,4 @@
   qxl.demobrowser.demo.widget.ProgressBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ProgressBar.js.map?dt=1562184216005
+//# sourceMappingURL=ProgressBar.js.map?dt=1562187680188

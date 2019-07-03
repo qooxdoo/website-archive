@@ -78,4 +78,4 @@
   qxl.demobrowser.demo.layout.VBox_ShrinkX.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=VBox_ShrinkX.js.map?dt=1562184212250
+//# sourceMappingURL=VBox_ShrinkX.js.map?dt=1562187677157

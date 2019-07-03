@@ -64,4 +64,4 @@
   qxl.demobrowser.demo.event.KeyEvent.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=KeyEvent.js.map?dt=1562184210782
+//# sourceMappingURL=KeyEvent.js.map?dt=1562187676127

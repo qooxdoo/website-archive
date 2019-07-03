@@ -179,4 +179,4 @@
   qx.ui.groupbox.CheckGroupBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CheckGroupBox.js.map?dt=1562184196474
+//# sourceMappingURL=CheckGroupBox.js.map?dt=1562187664842

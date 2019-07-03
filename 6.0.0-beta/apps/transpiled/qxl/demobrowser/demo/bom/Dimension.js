@@ -67,4 +67,4 @@
   qxl.demobrowser.demo.bom.Dimension.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Dimension.js.map?dt=1562184209137
+//# sourceMappingURL=Dimension.js.map?dt=1562187674906

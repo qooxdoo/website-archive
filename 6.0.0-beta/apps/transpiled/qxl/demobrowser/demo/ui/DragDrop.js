@@ -351,4 +351,4 @@
   qxl.demobrowser.demo.ui.DragDrop.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=DragDrop.js.map?dt=1562184213569
+//# sourceMappingURL=DragDrop.js.map?dt=1562187678189

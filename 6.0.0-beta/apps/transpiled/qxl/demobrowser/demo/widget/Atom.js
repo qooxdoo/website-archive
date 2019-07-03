@@ -175,4 +175,4 @@
   qxl.demobrowser.demo.widget.Atom.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Atom.js.map?dt=1562184215307
+//# sourceMappingURL=Atom.js.map?dt=1562187679671

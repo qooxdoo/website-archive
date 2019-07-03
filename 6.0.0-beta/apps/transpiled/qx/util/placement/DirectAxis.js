@@ -79,4 +79,4 @@
   qx.util.placement.DirectAxis.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=DirectAxis.js.map?dt=1562184207910
+//# sourceMappingURL=DirectAxis.js.map?dt=1562187673945

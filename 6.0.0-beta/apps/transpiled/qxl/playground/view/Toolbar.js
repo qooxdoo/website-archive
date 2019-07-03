@@ -314,4 +314,4 @@
   qxl.playground.view.Toolbar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Toolbar.js.map?dt=1562184217402
+//# sourceMappingURL=Toolbar.js.map?dt=1562187681396
