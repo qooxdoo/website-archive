@@ -82,4 +82,4 @@
   qx.ui.virtual.selection.CellLines.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CellLines.js.map?dt=1562153808036
+//# sourceMappingURL=CellLines.js.map?dt=1562184205535

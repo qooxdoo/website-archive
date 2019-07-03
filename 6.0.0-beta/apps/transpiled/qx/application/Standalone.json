@@ -1,0 +1,326 @@
+{
+  "className": "qx.application.Standalone",
+  "packageName": "qx.application",
+  "name": "Standalone",
+  "superClass": "qx.application.AbstractGui",
+  "interfaces": [],
+  "mixins": [],
+  "functionName": null,
+  "clazz": {
+    "location": {
+      "start": {
+        "line": 30,
+        "column": 0
+      },
+      "end": {
+        "line": 49,
+        "column": 3
+      }
+    },
+    "jsdoc": {
+      "@description": [
+        {
+          "name": "@description",
+          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+        },
+        {
+          "name": "@description",
+          "body": "For a GUI application that looks & feels like native desktop application\n(often called \"RIA\" - Rich Internet Application).\n\nSuch a stand-alone application typically creates and updates all content\ndynamically. Often it is called a \"single-page application\", since the\ndocument itself is never reloaded or changed. Communication with the server\nis done with AJAX."
+        }
+      ],
+      "@require": [
+        {
+          "name": "@require",
+          "body": "qx.core.Init"
+        }
+      ]
+    }
+  },
+  "type": "class",
+  "members": {
+    "_createRootWidget": {
+      "location": {
+        "start": {
+          "line": 45,
+          "column": 4
+        },
+        "end": {
+          "line": 47,
+          "column": 5
+        }
+      },
+      "type": "function",
+      "access": "protected",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "appearsIn": [
+        "qx.application.AbstractGui"
+      ],
+      "jsdoc": {
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{qx.ui.core.Widget} The root widget. This widget must be configured\nwith a {@link qx.ui.layout.Basic} or {@link qx.ui.layout.Canvas} layout.",
+            "type": "qx.ui.core.Widget",
+            "description": " The root widget. This widget must be configured\nwith a {@link qx.ui.layout.Basic} or {@link qx.ui.layout.Canvas} layout."
+          }
+        ]
+      }
+    },
+    "getQxOwner": {
+      "type": "function",
+      "name": "getQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "qx.core.Object",
+            "desc": "Returns the value for qxOwner"
+          }
+        ]
+      }
+    },
+    "setQxOwner": {
+      "type": "function",
+      "name": "setQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxOwner</code>.\n\nFor further details take a look at the property definition: {@link #qxOwner}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "qx.core.Object",
+            "paramName": "value",
+            "desc": "Value for qxOwner"
+          }
+        ]
+      }
+    },
+    "resetQxOwner": {
+      "type": "function",
+      "name": "resetQxOwner",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "reset"
+    },
+    "getQxObjectId": {
+      "type": "function",
+      "name": "getQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "desc": "Returns the value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "setQxObjectId": {
+      "type": "function",
+      "name": "setQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>qxObjectId</code>.\n\nFor further details take a look at the property definition: {@link #qxObjectId}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "paramName": "value",
+            "desc": "Value for qxObjectId"
+          }
+        ]
+      }
+    },
+    "resetQxObjectId": {
+      "type": "function",
+      "name": "resetQxObjectId",
+      "abstract": false,
+      "mixin": false,
+      "inherited": true,
+      "access": "public",
+      "overriddenFrom": "qx.application.AbstractGui",
+      "property": "reset"
+    }
+  },
+  "descendants": [
+    "qx.dev.unit.TestLoader",
+    "qxl.apiviewer.Application",
+    "qxl.playground.Application",
+    "qxl.demobrowser.Application",
+    "qxl.demobrowser.demo.bom.Audio",
+    "qxl.demobrowser.demo.bom.Cookie",
+    "qxl.demobrowser.demo.bom.Video",
+    "qxl.demobrowser.demo.bom.WebWorker",
+    "qxl.demobrowser.demo.data.ExtendedList",
+    "qxl.demobrowser.demo.data.ExtendedTree",
+    "qxl.demobrowser.demo.data.Finder",
+    "qxl.demobrowser.demo.data.Flickr",
+    "qxl.demobrowser.demo.data.Form",
+    "qxl.demobrowser.demo.data.FormAndListController",
+    "qxl.demobrowser.demo.data.FormController",
+    "qxl.demobrowser.demo.data.Github",
+    "qxl.demobrowser.demo.data.JsonToList",
+    "qxl.demobrowser.demo.data.JsonToTree",
+    "qxl.demobrowser.demo.data.ListController",
+    "qxl.demobrowser.demo.data.ListControllerWith3Widgets",
+    "qxl.demobrowser.demo.data.ListControllerWithFilter",
+    "qxl.demobrowser.demo.data.ListControllerWithObjects",
+    "qxl.demobrowser.demo.data.ModelDebugging",
+    "qxl.demobrowser.demo.data.NamesList",
+    "qxl.demobrowser.demo.data.Offline",
+    "qxl.demobrowser.demo.data.OwnCodeInModel",
+    "qxl.demobrowser.demo.data.SearchAsYouType",
+    "qxl.demobrowser.demo.data.SelectBox",
+    "qxl.demobrowser.demo.data.Service",
+    "qxl.demobrowser.demo.data.SingleValueBinding",
+    "qxl.demobrowser.demo.data.TreeController",
+    "qxl.demobrowser.demo.data.Tree_Columns",
+    "qxl.demobrowser.demo.layout.Flow",
+    "qxl.demobrowser.demo.layout.HSplit",
+    "qxl.demobrowser.demo.layout.ManualLayout",
+    "qxl.demobrowser.demo.layout.Spacer_Grid",
+    "qxl.demobrowser.demo.layout.Spacer_HBox",
+    "qxl.demobrowser.demo.layout.VSplit",
+    "qxl.demobrowser.demo.root.Application",
+    "qxl.demobrowser.demo.showcase.Browser",
+    "qxl.demobrowser.demo.showcase.Dialog",
+    "qxl.demobrowser.demo.showcase.Form",
+    "qxl.demobrowser.demo.showcase.IconFont",
+    "qxl.demobrowser.demo.showcase.Localization",
+    "qxl.demobrowser.demo.showcase.Maps",
+    "qxl.demobrowser.demo.showcase.Translation",
+    "qxl.demobrowser.demo.table.TableDemo",
+    "qxl.demobrowser.demo.treevirtual.TreeVirtual",
+    "qxl.demobrowser.demo.treevirtual.TreeVirtual_Events",
+    "qxl.demobrowser.demo.treevirtual.TreeVirtual_Filter",
+    "qxl.demobrowser.demo.treevirtual.TreeVirtual_Multiple_Columns",
+    "qxl.demobrowser.demo.treevirtual.TreeVirtual_Selections",
+    "qxl.demobrowser.demo.ui.AutoSizeTextArea",
+    "qxl.demobrowser.demo.ui.Command",
+    "qxl.demobrowser.demo.ui.CommandGroupManager",
+    "qxl.demobrowser.demo.ui.Cursor",
+    "qxl.demobrowser.demo.ui.Decoration",
+    "qxl.demobrowser.demo.ui.DragDrop",
+    "qxl.demobrowser.demo.ui.FiniteStateMachine",
+    "qxl.demobrowser.demo.ui.Font",
+    "qxl.demobrowser.demo.ui.FormInvalids",
+    "qxl.demobrowser.demo.ui.FormRenderer",
+    "qxl.demobrowser.demo.ui.FormRendererCustom",
+    "qxl.demobrowser.demo.ui.FormRendererDouble",
+    "qxl.demobrowser.demo.ui.FormRendererPlaceholder",
+    "qxl.demobrowser.demo.ui.FormValidator",
+    "qxl.demobrowser.demo.ui.HeightForWidth",
+    "qxl.demobrowser.demo.ui.Label_Reflow",
+    "qxl.demobrowser.demo.ui.MultiPageForm",
+    "qxl.demobrowser.demo.ui.NativeContextMenu",
+    "qxl.demobrowser.demo.ui.Opacity",
+    "qxl.demobrowser.demo.ui.Placement",
+    "qxl.demobrowser.demo.ui.ScrollContainer",
+    "qxl.demobrowser.demo.ui.WebFonts",
+    "qxl.demobrowser.demo.util.LayoutApplication",
+    "qxl.demobrowser.demo.virtual.CellEvents",
+    "qxl.demobrowser.demo.virtual.CellSpan",
+    "qxl.demobrowser.demo.virtual.Cells",
+    "qxl.demobrowser.demo.virtual.ComboBox",
+    "qxl.demobrowser.demo.virtual.Complex",
+    "qxl.demobrowser.demo.virtual.ExtendedList",
+    "qxl.demobrowser.demo.virtual.Gallery",
+    "qxl.demobrowser.demo.virtual.GroupedList",
+    "qxl.demobrowser.demo.virtual.List",
+    "qxl.demobrowser.demo.virtual.ListWithFilter",
+    "qxl.demobrowser.demo.virtual.Pane_Column",
+    "qxl.demobrowser.demo.virtual.Pane_GridLines",
+    "qxl.demobrowser.demo.virtual.Pane_Row",
+    "qxl.demobrowser.demo.virtual.SelectBox",
+    "qxl.demobrowser.demo.virtual.Selection",
+    "qxl.demobrowser.demo.virtual.SettingsList",
+    "qxl.demobrowser.demo.virtual.Table",
+    "qxl.demobrowser.demo.virtual.Tree",
+    "qxl.demobrowser.demo.virtual.Tree_Columns",
+    "qxl.demobrowser.demo.virtual.Tree_Dynamic",
+    "qxl.demobrowser.demo.widget.Atom",
+    "qxl.demobrowser.demo.widget.Button",
+    "qxl.demobrowser.demo.widget.Canvas",
+    "qxl.demobrowser.demo.widget.CheckBox",
+    "qxl.demobrowser.demo.widget.ColorPopup",
+    "qxl.demobrowser.demo.widget.ColorSelector",
+    "qxl.demobrowser.demo.widget.ComboBox",
+    "qxl.demobrowser.demo.widget.DateChooser",
+    "qxl.demobrowser.demo.widget.DateField",
+    "qxl.demobrowser.demo.widget.Desktop",
+    "qxl.demobrowser.demo.widget.Flash",
+    "qxl.demobrowser.demo.widget.GroupBox",
+    "qxl.demobrowser.demo.widget.HtmlEmbed",
+    "qxl.demobrowser.demo.widget.Iframe",
+    "qxl.demobrowser.demo.widget.Image",
+    "qxl.demobrowser.demo.widget.Label",
+    "qxl.demobrowser.demo.widget.List",
+    "qxl.demobrowser.demo.widget.Menu",
+    "qxl.demobrowser.demo.widget.MenuBar",
+    "qxl.demobrowser.demo.widget.Popup",
+    "qxl.demobrowser.demo.widget.ProgressBar",
+    "qxl.demobrowser.demo.widget.RadioButton",
+    "qxl.demobrowser.demo.widget.RadioButtonGroup",
+    "qxl.demobrowser.demo.widget.Resizer",
+    "qxl.demobrowser.demo.widget.ScrollBar",
+    "qxl.demobrowser.demo.widget.SelectBox",
+    "qxl.demobrowser.demo.widget.SlideBar",
+    "qxl.demobrowser.demo.widget.Slider",
+    "qxl.demobrowser.demo.widget.Spinner",
+    "qxl.demobrowser.demo.widget.SplitPane",
+    "qxl.demobrowser.demo.widget.StackContainer",
+    "qxl.demobrowser.demo.widget.TabView",
+    "qxl.demobrowser.demo.widget.TextField",
+    "qxl.demobrowser.demo.widget.ToolBar",
+    "qxl.demobrowser.demo.widget.Tooltip",
+    "qxl.demobrowser.demo.widget.Tree",
+    "qxl.demobrowser.demo.widget.Tree_Columns",
+    "qxl.demobrowser.demo.widget.Window",
+    "qxl.widgetbrowser.Application"
+  ]
+}

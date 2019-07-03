@@ -166,4 +166,4 @@
   qxl.demobrowser.demo.showcase.Dialog.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Dialog.js.map?dt=1562153813448
+//# sourceMappingURL=Dialog.js.map?dt=1562184212526

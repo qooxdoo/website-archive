@@ -468,4 +468,4 @@
   qx.ui.table.model.Filtered.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Filtered.js.map?dt=1562153805551
+//# sourceMappingURL=Filtered.js.map?dt=1562184202479

@@ -82,4 +82,4 @@
   qxl.demobrowser.demo.ui.Cursor.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Cursor.js.map?dt=1562153814187
+//# sourceMappingURL=Cursor.js.map?dt=1562184213496

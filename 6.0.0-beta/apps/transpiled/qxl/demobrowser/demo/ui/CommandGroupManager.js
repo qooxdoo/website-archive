@@ -153,4 +153,4 @@
   qxl.demobrowser.demo.ui.CommandGroupManager.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CommandGroupManager.js.map?dt=1562153814176
+//# sourceMappingURL=CommandGroupManager.js.map?dt=1562184213473

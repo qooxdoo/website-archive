@@ -180,4 +180,4 @@
   qxl.demobrowser.demo.bom.Transform.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Transform.js.map?dt=1562153811360
+//# sourceMappingURL=Transform.js.map?dt=1562184209596

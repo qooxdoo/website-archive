@@ -999,4 +999,4 @@
   qxl.playground.Application.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Application.js.map?dt=1562153810400
+//# sourceMappingURL=Application.js.map?dt=1562184208198

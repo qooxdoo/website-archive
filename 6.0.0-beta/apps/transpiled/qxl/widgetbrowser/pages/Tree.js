@@ -196,4 +196,4 @@
   qxl.widgetbrowser.pages.Tree.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Tree.js.map?dt=1562153817145
+//# sourceMappingURL=Tree.js.map?dt=1562184216942

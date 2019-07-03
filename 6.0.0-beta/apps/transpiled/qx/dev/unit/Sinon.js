@@ -4921,4 +4921,4 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
   qx.dev.unit.Sinon.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Sinon.js.map?dt=1562153790646
+//# sourceMappingURL=Sinon.js.map?dt=1562184184148

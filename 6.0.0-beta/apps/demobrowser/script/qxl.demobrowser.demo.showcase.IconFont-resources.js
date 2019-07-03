@@ -270,16 +270,16 @@ qx.$$packageData['0'] = {
       "meta",
       "qx"
     ],
-    "qx/decoration/Classic/checkbox-radiobutton-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
     "qx/decoration/Classic/colorselector-combined.gif": [
       46,
       11,
       "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/checkbox-radiobutton-combined.meta": [
+      null,
+      null,
+      "meta",
       "qx"
     ],
     "qx/decoration/Classic/checkbox-radiobutton-combined.png": [
@@ -324,15 +324,27 @@ qx.$$packageData['0'] = {
       "meta",
       "qx"
     ],
+    "qx/decoration/Classic/shadow-lr-combined.png": [
+      30,
+      382,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow-small-lr-combined.png": [
+      10,
+      136,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/shadow-small-lr-combined.meta": [
       null,
       null,
       "meta",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-lr-combined.png": [
+    "qx/decoration/Classic/shadow-small-tb-combined.png": [
+      5,
       30,
-      382,
       "png",
       "qx"
     ],
@@ -342,16 +354,10 @@ qx.$$packageData['0'] = {
       "meta",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-small-lr-combined.png": [
-      10,
-      136,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/shadow-small-tb-combined.png": [
-      5,
-      30,
-      "png",
+    "qx/decoration/Classic/shadow-tb-combined.meta": [
+      null,
+      null,
+      "meta",
       "qx"
     ],
     "qx/decoration/Classic/shadow-tb-combined.png": [
@@ -366,7 +372,13 @@ qx.$$packageData['0'] = {
       "meta",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-tb-combined.meta": [
+    "qx/decoration/Classic/table-combined.png": [
+      72,
+      11,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/window-captionbar-buttons-combined.meta": [
       null,
       null,
       "meta",
@@ -378,17 +390,14 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Classic/window-captionbar-buttons-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Classic/table-combined.png": [
-      72,
-      11,
-      "png",
-      "qx"
+    "qx/decoration/Classic/arrows/down-small-invert.gif": [
+      5,
+      3,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -87,
+      0
     ],
     "qx/decoration/Classic/arrows/down-invert.gif": [
       7,
@@ -397,15 +406,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
       -38,
-      0
-    ],
-    "qx/decoration/Classic/arrows/down-small-invert.gif": [
-      5,
-      3,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -87,
       0
     ],
     "qx/decoration/Classic/arrows/down-small.gif": [
@@ -417,15 +417,6 @@ qx.$$packageData['0'] = {
       -53,
       0
     ],
-    "qx/decoration/Classic/arrows/down.gif": [
-      7,
-      4,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -113,
-      0
-    ],
     "qx/decoration/Classic/arrows/forward-invert.gif": [
       8,
       7,
@@ -433,24 +424,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
       -30,
-      0
-    ],
-    "qx/decoration/Classic/arrows/forward.gif": [
-      8,
-      7,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -18,
-      0
-    ],
-    "qx/decoration/Classic/arrows/left-small-invert.gif": [
-      3,
-      5,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -58,
       0
     ],
     "qx/decoration/Classic/arrows/left-invert.gif": [
@@ -462,13 +435,40 @@ qx.$$packageData['0'] = {
       -92,
       0
     ],
-    "qx/decoration/Classic/arrows/next-invert.gif": [
+    "qx/decoration/Classic/arrows/left-small-invert.gif": [
+      3,
+      5,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -58,
+      0
+    ],
+    "qx/decoration/Classic/arrows/left-small.gif": [
+      3,
+      5,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -15,
+      0
+    ],
+    "qx/decoration/Classic/arrows/down.gif": [
+      7,
       4,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -113,
+      0
+    ],
+    "qx/decoration/Classic/arrows/forward.gif": [
+      8,
       7,
       "gif",
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
-      -80,
+      -18,
       0
     ],
     "qx/decoration/Classic/arrows/left.gif": [
@@ -478,6 +478,15 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
       -120,
+      0
+    ],
+    "qx/decoration/Classic/arrows/next-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -80,
       0
     ],
     "qx/decoration/Classic/arrows/previous-invert.gif": [
@@ -498,33 +507,6 @@ qx.$$packageData['0'] = {
       -109,
       0
     ],
-    "qx/decoration/Classic/arrows/rewind-invert.gif": [
-      8,
-      7,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -45,
-      0
-    ],
-    "qx/decoration/Classic/arrows/left-small.gif": [
-      3,
-      5,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -15,
-      0
-    ],
-    "qx/decoration/Classic/arrows/right-invert.gif": [
-      4,
-      7,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -61,
-      0
-    ],
     "qx/decoration/Classic/arrows/previous.gif": [
       4,
       7,
@@ -534,22 +516,13 @@ qx.$$packageData['0'] = {
       -65,
       0
     ],
-    "qx/decoration/Classic/arrows/rewind.gif": [
+    "qx/decoration/Classic/arrows/rewind-invert.gif": [
       8,
       7,
       "gif",
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
-      -101,
-      0
-    ],
-    "qx/decoration/Classic/arrows/right-small.gif": [
-      3,
-      5,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -84,
+      -45,
       0
     ],
     "qx/decoration/Classic/arrows/right-small-invert.gif": [
@@ -561,13 +534,22 @@ qx.$$packageData['0'] = {
       0,
       0
     ],
-    "qx/decoration/Classic/arrows/up-small-invert.gif": [
-      5,
+    "qx/decoration/Classic/arrows/right-small.gif": [
       3,
+      5,
       "gif",
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
-      -96,
+      -84,
+      0
+    ],
+    "qx/decoration/Classic/arrows/rewind.gif": [
+      8,
+      7,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -101,
       0
     ],
     "qx/decoration/Classic/arrows/right.gif": [
@@ -579,6 +561,15 @@ qx.$$packageData['0'] = {
       -26,
       0
     ],
+    "qx/decoration/Classic/arrows/up-small-invert.gif": [
+      5,
+      3,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -96,
+      0
+    ],
     "qx/decoration/Classic/arrows/up-invert.gif": [
       7,
       4,
@@ -586,15 +577,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/arrows-combined.gif",
       -73,
-      0
-    ],
-    "qx/decoration/Classic/arrows/up.gif": [
-      7,
-      4,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -8,
       0
     ],
     "qx/decoration/Classic/arrows/up-small.gif": [
@@ -606,53 +588,89 @@ qx.$$packageData['0'] = {
       -3,
       0
     ],
-    "qx/decoration/Classic/cursors/copy.gif": [
+    "qx/decoration/Classic/arrows/up.gif": [
+      7,
+      4,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -8,
+      0
+    ],
+    "qx/decoration/Classic/arrows/right-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/arrows-combined.gif",
+      -61,
+      0
+    ],
+    "qx/decoration/Classic/colorselector/brightness-field.png": [
       19,
-      15,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -20,
-      0
-    ],
-    "qx/decoration/Classic/cursors/alias.gif": [
-      19,
-      15,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -52,
-      0
-    ],
-    "qx/decoration/Classic/cursors/move.gif": [
-      13,
-      9,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -39,
-      0
-    ],
-    "qx/decoration/Classic/datechooser/last-month-invert.png": [
-      16,
-      16,
+      256,
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/cursors/nodrop.gif": [
-      20,
-      20,
+    "qx/decoration/Classic/colorselector/brightness-handle.gif": [
+      35,
+      11,
       "gif",
       "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
+      "qx/decoration/Classic/colorselector-combined.gif",
+      -11,
+      0
+    ],
+    "qx/decoration/Classic/colorselector/huesaturation-field.jpg": [
+      256,
+      256,
+      "jpg",
+      "qx"
+    ],
+    "qx/decoration/Classic/menu/checkbox.gif": [
+      16,
+      7,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/menu-combined.gif",
+      -32,
+      0
+    ],
+    "qx/decoration/Classic/menu/checkbox-invert.gif": [
+      16,
+      7,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/menu-combined.gif",
+      -16,
+      0
+    ],
+    "qx/decoration/Classic/menu/radiobutton-invert.gif": [
+      16,
+      5,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/menu-combined.gif",
       0,
       0
     ],
-    "qx/decoration/Classic/datechooser/last-year.png": [
+    "qx/decoration/Classic/menu/radiobutton.gif": [
       16,
-      16,
-      "png",
-      "qx"
+      5,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/menu-combined.gif",
+      -48,
+      0
+    ],
+    "qx/decoration/Classic/colorselector/huesaturation-handle.gif": [
+      11,
+      11,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/colorselector-combined.gif",
+      0,
+      0
     ],
     "qx/decoration/Classic/datechooser/last-month.png": [
       16,
@@ -666,7 +684,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/datechooser/next-month.png": [
+    "qx/decoration/Classic/datechooser/last-month-invert.png": [
       16,
       16,
       "png",
@@ -678,13 +696,25 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Classic/datechooser/next-year-invert.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/datechooser/next-month.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/datechooser/next-year.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/datechooser/next-year-invert.png": [
+    "qx/decoration/Classic/datechooser/last-year.png": [
       16,
       16,
       "png",
@@ -699,13 +729,13 @@ qx.$$packageData['0'] = {
       -336,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-checked-hovered-invalid.png": [
+    "qx/decoration/Classic/form/checkbox-checked-focused-invalid.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -112,
+      -28,
       0
     ],
     "qx/decoration/Classic/form/checkbox-checked-focused.png": [
@@ -717,13 +747,13 @@ qx.$$packageData['0'] = {
       -462,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-checked-focused-invalid.png": [
+    "qx/decoration/Classic/form/checkbox-checked-pressed-invalid.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -28,
+      -308,
       0
     ],
     "qx/decoration/Classic/form/checkbox-checked-invalid.png": [
@@ -735,15 +765,6 @@ qx.$$packageData['0'] = {
       -98,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-checked-pressed.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      0,
-      0
-    ],
     "qx/decoration/Classic/form/checkbox-checked-hovered.png": [
       14,
       14,
@@ -753,13 +774,13 @@ qx.$$packageData['0'] = {
       -140,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-checked-pressed-invalid.png": [
+    "qx/decoration/Classic/form/checkbox-checked-hovered-invalid.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -308,
+      -112,
       0
     ],
     "qx/decoration/Classic/form/checkbox-checked.png": [
@@ -771,22 +792,13 @@ qx.$$packageData['0'] = {
       -266,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-disabled.png": [
+    "qx/decoration/Classic/form/checkbox-checked-pressed.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -84,
-      0
-    ],
-    "qx/decoration/Classic/form/checkbox-focused.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -392,
+      0,
       0
     ],
     "qx/decoration/Classic/form/checkbox-focused-invalid.png": [
@@ -798,6 +810,15 @@ qx.$$packageData['0'] = {
       -476,
       0
     ],
+    "qx/decoration/Classic/form/checkbox-focused.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -392,
+      0
+    ],
     "qx/decoration/Classic/form/checkbox-hovered-invalid.png": [
       14,
       14,
@@ -805,6 +826,15 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
       -196,
+      0
+    ],
+    "qx/decoration/Classic/form/checkbox-disabled.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -84,
       0
     ],
     "qx/decoration/Classic/form/checkbox-hovered.png": [
@@ -816,15 +846,6 @@ qx.$$packageData['0'] = {
       -154,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-pressed-invalid.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -448,
-      0
-    ],
     "qx/decoration/Classic/form/checkbox-invalid.png": [
       14,
       14,
@@ -834,20 +855,20 @@ qx.$$packageData['0'] = {
       -350,
       0
     ],
-    "qx/decoration/Classic/form/checkbox-undetermined-disabled.png": [
-      14,
-      14,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/form/checkbox-pressed.png": [
+    "qx/decoration/Classic/form/checkbox-pressed-invalid.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -70,
+      -448,
       0
+    ],
+    "qx/decoration/Classic/form/checkbox-undetermined-disabled.png": [
+      14,
+      14,
+      "png",
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-undetermined-focused-invalid.png": [
       14,
@@ -861,12 +882,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/form/checkbox-undetermined-hovered.png": [
-      14,
-      14,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Classic/form/checkbox-undetermined-hovered-invalid.png": [
       14,
       14,
@@ -874,6 +889,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/decoration/Classic/form/checkbox-undetermined.png": [
+      14,
+      14,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/form/checkbox-undetermined-hovered.png": [
       14,
       14,
       "png",
@@ -901,6 +922,24 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
       -210,
+      0
+    ],
+    "qx/decoration/Classic/form/checkbox-pressed.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -70,
+      0
+    ],
+    "qx/decoration/Classic/form/radiobutton-checked-focused.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -378,
       0
     ],
     "qx/decoration/Classic/form/radiobutton-checked-focused-invalid.png": [
@@ -939,15 +978,6 @@ qx.$$packageData['0'] = {
       -294,
       0
     ],
-    "qx/decoration/Classic/form/radiobutton-checked-focused.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -378,
-      0
-    ],
     "qx/decoration/Classic/form/radiobutton-checked.png": [
       14,
       14,
@@ -955,15 +985,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
       -322,
-      0
-    ],
-    "qx/decoration/Classic/form/radiobutton-checked-pressed-invalid.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -420,
       0
     ],
     "qx/decoration/Classic/form/radiobutton-checked-pressed.png": [
@@ -975,13 +996,13 @@ qx.$$packageData['0'] = {
       -56,
       0
     ],
-    "qx/decoration/Classic/form/radiobutton-focused-invalid.png": [
+    "qx/decoration/Classic/form/radiobutton-checked-pressed-invalid.png": [
       14,
       14,
       "png",
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -434,
+      -420,
       0
     ],
     "qx/decoration/Classic/form/radiobutton-disabled.png": [
@@ -1020,6 +1041,15 @@ qx.$$packageData['0'] = {
       -126,
       0
     ],
+    "qx/decoration/Classic/form/radiobutton-focused-invalid.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -434,
+      0
+    ],
     "qx/decoration/Classic/form/radiobutton-invalid.png": [
       14,
       14,
@@ -1027,15 +1057,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
       -280,
-      0
-    ],
-    "qx/decoration/Classic/form/radiobutton-pressed-invalid.png": [
-      14,
-      14,
-      "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -238,
       0
     ],
     "qx/decoration/Classic/form/radiobutton-pressed.png": [
@@ -1047,6 +1068,15 @@ qx.$$packageData['0'] = {
       -14,
       0
     ],
+    "qx/decoration/Classic/form/radiobutton-pressed-invalid.png": [
+      14,
+      14,
+      "png",
+      "qx",
+      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
+      -238,
+      0
+    ],
     "qx/decoration/Classic/form/radiobutton.png": [
       14,
       14,
@@ -1054,72 +1084,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/checkbox-radiobutton-combined.png",
       -224,
-      0
-    ],
-    "qx/decoration/Classic/colorselector/brightness-field.png": [
-      19,
-      256,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/colorselector/huesaturation-field.jpg": [
-      256,
-      256,
-      "jpg",
-      "qx"
-    ],
-    "qx/decoration/Classic/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/colorselector-combined.gif",
-      -11,
-      0
-    ],
-    "qx/decoration/Classic/colorselector/huesaturation-handle.gif": [
-      11,
-      11,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/colorselector-combined.gif",
-      0,
-      0
-    ],
-    "qx/decoration/Classic/menu/checkbox-invert.gif": [
-      16,
-      7,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -16,
-      0
-    ],
-    "qx/decoration/Classic/menu/checkbox.gif": [
-      16,
-      7,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -32,
-      0
-    ],
-    "qx/decoration/Classic/menu/radiobutton-invert.gif": [
-      16,
-      5,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      0,
-      0
-    ],
-    "qx/decoration/Classic/menu/radiobutton.gif": [
-      16,
-      5,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -48,
       0
     ],
     "qx/decoration/Classic/shadow/shadow-b.png": [
@@ -1130,12 +1094,6 @@ qx.$$packageData['0'] = {
       "qx/decoration/Classic/shadow-tb-combined.png",
       0,
       -30
-    ],
-    "qx/decoration/Classic/shadow/shadow-c.png": [
-      40,
-      382,
-      "png",
-      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-br.png": [
       15,
@@ -1155,6 +1113,12 @@ qx.$$packageData['0'] = {
       0,
       0
     ],
+    "qx/decoration/Classic/shadow/shadow-c.png": [
+      40,
+      382,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/shadow/shadow-l.png": [
       15,
       382,
@@ -1164,6 +1128,15 @@ qx.$$packageData['0'] = {
       -15,
       0
     ],
+    "qx/decoration/Classic/shadow/shadow-small-b.png": [
+      5,
+      5,
+      "png",
+      "qx",
+      "qx/decoration/Classic/shadow-small-tb-combined.png",
+      0,
+      -25
+    ],
     "qx/decoration/Classic/shadow/shadow-r.png": [
       15,
       382,
@@ -1172,6 +1145,12 @@ qx.$$packageData['0'] = {
       "qx/decoration/Classic/shadow-lr-combined.png",
       0,
       0
+    ],
+    "qx/decoration/Classic/shadow/shadow-small-c.png": [
+      40,
+      136,
+      "png",
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-br.png": [
       5,
@@ -1191,21 +1170,6 @@ qx.$$packageData['0'] = {
       0,
       -20
     ],
-    "qx/decoration/Classic/shadow/shadow-small-c.png": [
-      40,
-      136,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/shadow/shadow-small-b.png": [
-      5,
-      5,
-      "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -25
-    ],
     "qx/decoration/Classic/shadow/shadow-small-r.png": [
       5,
       136,
@@ -1213,15 +1177,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/shadow-small-lr-combined.png",
       -5,
-      0
-    ],
-    "qx/decoration/Classic/shadow/shadow-small-l.png": [
-      5,
-      136,
-      "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-lr-combined.png",
-      0,
       0
     ],
     "qx/decoration/Classic/shadow/shadow-small-t.png": [
@@ -1281,14 +1236,41 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-tr.png": [
+    "qx/decoration/Classic/cursors/alias.gif": [
+      19,
       15,
-      15,
-      "png",
+      "gif",
       "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
+      "qx/decoration/Classic/cursors-combined.gif",
+      -52,
+      0
+    ],
+    "qx/decoration/Classic/cursors/copy.gif": [
+      19,
+      15,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/cursors-combined.gif",
+      -20,
+      0
+    ],
+    "qx/decoration/Classic/cursors/move.gif": [
+      13,
+      9,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/cursors-combined.gif",
+      -39,
+      0
+    ],
+    "qx/decoration/Classic/cursors/nodrop.gif": [
+      20,
+      20,
+      "gif",
+      "qx",
+      "qx/decoration/Classic/cursors-combined.gif",
       0,
-      -15
+      0
     ],
     "qx/decoration/Classic/table/ascending.png": [
       10,
@@ -1353,6 +1335,90 @@ qx.$$packageData['0'] = {
       -21,
       0
     ],
+    "qx/decoration/Classic/shadow/shadow-small-l.png": [
+      5,
+      136,
+      "png",
+      "qx",
+      "qx/decoration/Classic/shadow-small-lr-combined.png",
+      0,
+      0
+    ],
+    "qx/decoration/Classic/shadow/shadow-tr.png": [
+      15,
+      15,
+      "png",
+      "qx",
+      "qx/decoration/Classic/shadow-tb-combined.png",
+      0,
+      -15
+    ],
+    "qx/decoration/Classic/treevirtual/cross_minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/cross.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/cross_plus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/end_minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/line.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/end.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/only_minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/start.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/only_plus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/start_minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/treevirtual/start_plus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Classic/tree/minus.gif": [
       19,
       16,
@@ -1365,16 +1431,22 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Classic/splitpane/knob-horizontal.png": [
+      4,
+      15,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/splitpane/knob-vertical.png": [
       15,
       4,
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/splitpane/knob-horizontal.png": [
-      4,
-      15,
-      "png",
+    "qx/decoration/Classic/treevirtual/end_plus.gif": [
+      19,
+      16,
+      "gif",
       "qx"
     ],
     "qx/decoration/Classic/window/maximize.gif": [
@@ -1384,15 +1456,6 @@ qx.$$packageData['0'] = {
       "qx",
       "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
       -10,
-      0
-    ],
-    "qx/decoration/Classic/window/minimize.gif": [
-      9,
-      9,
-      "gif",
-      "qx",
-      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
-      -19,
       0
     ],
     "qx/decoration/Classic/window/close.gif": [
@@ -1413,77 +1476,14 @@ qx.$$packageData['0'] = {
       -28,
       0
     ],
-    "qx/decoration/Classic/treevirtual/cross.gif": [
-      19,
-      16,
+    "qx/decoration/Classic/window/minimize.gif": [
+      9,
+      9,
       "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/cross_plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/cross_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/end_plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/line.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/end.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/end_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/only_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/only_plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/start_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/start.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/treevirtual/start_plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
+      "qx",
+      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
+      -19,
+      0
     ],
     "qx/decoration/Indigo/font/JosefinSlab-SemiBold.ttf": [
       null,
@@ -1596,10 +1596,25 @@ qx.$$packageData['0'] = {
       -36,
       0
     ],
+    "qx/decoration/Modern/colorselector/brightness-handle.gif": [
+      35,
+      11,
+      "gif",
+      "qx",
+      "qx/decoration/Modern/colorselector-combined.gif",
+      0,
+      0
+    ],
     "qx/decoration/Modern/colorselector/brightness-field.png": [
       19,
       256,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Modern/colorselector/huesaturation-field.jpg": [
+      256,
+      256,
+      "jpg",
       "qx"
     ],
     "qx/decoration/Modern/colorselector/huesaturation-handle.gif": [
@@ -1610,21 +1625,6 @@ qx.$$packageData['0'] = {
       "qx/decoration/Modern/colorselector-combined.gif",
       -35,
       0
-    ],
-    "qx/decoration/Modern/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx",
-      "qx/decoration/Modern/colorselector-combined.gif",
-      0,
-      0
-    ],
-    "qx/decoration/Modern/colorselector/huesaturation-field.jpg": [
-      256,
-      256,
-      "jpg",
-      "qx"
     ],
     "qx/decoration/Modern/cursors/alias.gif": [
       19,
@@ -1977,15 +1977,9 @@ qx.$$packageData['0'] = {
       -45,
       0
     ],
-    "qx/decoration/Simple/arrows/down-small.gif": [
-      5,
-      3,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/arrows/forward.gif": [
-      8,
+    "qx/decoration/Simple/arrows/down.gif": [
       7,
+      4,
       "gif",
       "qx"
     ],
@@ -1995,9 +1989,9 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/arrows/down.gif": [
-      7,
-      4,
+    "qx/decoration/Simple/arrows/down-small.gif": [
+      5,
+      3,
       "gif",
       "qx"
     ],
@@ -2007,8 +2001,8 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/arrows/right.gif": [
-      4,
+    "qx/decoration/Simple/arrows/forward.gif": [
+      8,
       7,
       "gif",
       "qx"
@@ -2025,6 +2019,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/right.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/right-invert.gif": [
       4,
       7,
@@ -2037,19 +2037,25 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/checkbox/checked.png": [
-      6,
-      6,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Simple/arrows/up-small.gif": [
       5,
       3,
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/up.gif": [
+      7,
+      4,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/checkbox/checked-disabled.png": [
+      6,
+      6,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/checked.png": [
       6,
       6,
       "png",
@@ -2061,21 +2067,21 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/arrows/up.gif": [
-      7,
-      4,
+    "qx/decoration/Simple/checkbox/undetermined.png": [
+      6,
+      2,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
+      35,
+      11,
       "gif",
       "qx"
     ],
     "qx/decoration/Simple/colorselector/brightness-field.png": [
       19,
       256,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/undetermined.png": [
-      6,
-      2,
       "png",
       "qx"
     ],
@@ -2091,45 +2097,21 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/copy.gif": [
-      19,
-      15,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/move.gif": [
-      13,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/alias.gif": [
-      19,
-      15,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/menu/checkbox-invert.gif": [
       16,
       7,
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/cursors/nodrop.gif": [
-      20,
-      20,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/menu/radiobutton-invert.gif": [
       16,
       5,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/menu/checkbox.gif": [
+      16,
+      7,
       "gif",
       "qx"
     ],
@@ -2145,15 +2127,15 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/boolean-false.png": [
-      11,
-      11,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Simple/table/ascending.png": [
       10,
       10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/boolean-false.png": [
+      11,
+      11,
       "png",
       "qx"
     ],
@@ -2181,88 +2163,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/menu/checkbox.gif": [
-      16,
-      7,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
-      1,
-      8,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/tabview/close.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/splitpane/knob-vertical.png": [
       8,
       1,
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/tree/minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/tree/plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/maximize-white.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/close-white.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/close.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/minimize-white.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/maximize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/restore-white.gif": [
+    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
+      1,
       8,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/minimize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/window/restore.gif": [
-      8,
-      9,
-      "gif",
+      "png",
       "qx"
     ],
     "qx/decoration/Simple/treevirtual/cross.gif": [
@@ -2277,19 +2187,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/treevirtual/end.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/treevirtual/cross_plus.gif": [
       19,
       16,
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/treevirtual/end_plus.gif": [
+    "qx/decoration/Simple/treevirtual/end.gif": [
       19,
       16,
       "gif",
@@ -2301,19 +2205,19 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/treevirtual/only_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/treevirtual/start.gif": [
+    "qx/decoration/Simple/treevirtual/end_plus.gif": [
       19,
       16,
       "gif",
       "qx"
     ],
     "qx/decoration/Simple/treevirtual/line.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/treevirtual/only_minus.gif": [
       19,
       16,
       "gif",
@@ -2337,7 +2241,169 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/internet-blog.png": [
+    "qx/decoration/Simple/tabview/close.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/treevirtual/start.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/close-white.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/maximize-white.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/close.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/maximize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/minimize-white.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/minimize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/restore-white.gif": [
+      8,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/window/restore.gif": [
+      8,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/copy.gif": [
+      19,
+      15,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/move.gif": [
+      13,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/alias.gif": [
+      19,
+      15,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/nodrop.gif": [
+      20,
+      20,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/tree/minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/tree/plus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/accessories.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/development.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/engineering.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/graphics.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/games.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/internet.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/multimedia.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/science.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/office.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/utilities.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/categories/system.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-download-manager.png": [
       16,
       16,
       "png",
@@ -2355,7 +2421,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/internet-download-manager.png": [
+    "qx/icon/Oxygen/16/apps/internet-telephony.png": [
       16,
       16,
       "png",
@@ -2367,7 +2433,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/internet-telephony.png": [
+    "qx/icon/Oxygen/16/apps/internet-blog.png": [
       16,
       16,
       "png",
@@ -2385,7 +2451,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/media-audio-player.png": [
+    "qx/icon/Oxygen/16/apps/media-photo-album.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/media-video-player.png": [
       16,
       16,
       "png",
@@ -2397,13 +2469,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/media-photo-album.png": [
+    "qx/icon/Oxygen/16/apps/media-audio-player.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/media-video-player.png": [
+    "qx/icon/Oxygen/16/apps/office-chart.png": [
       16,
       16,
       "png",
@@ -2421,19 +2493,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/office-chart.png": [
+    "qx/icon/Oxygen/16/apps/office-graphics.png": [
       16,
       16,
       "png",
       "qx"
     ],
     "qx/icon/Oxygen/16/apps/office-draw.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-graphics.png": [
       16,
       16,
       "png",
@@ -2469,13 +2535,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/preferences-accessibility.png": [
+    "qx/icon/Oxygen/16/apps/office-writer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/office-writer.png": [
+    "qx/icon/Oxygen/16/apps/preferences-font.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-accessibility.png": [
       16,
       16,
       "png",
@@ -2493,7 +2565,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/preferences-font.png": [
+    "qx/icon/Oxygen/16/apps/preferences-locale.png": [
       16,
       16,
       "png",
@@ -2511,7 +2583,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/preferences-locale.png": [
+    "qx/icon/Oxygen/16/apps/preferences-sound.png": [
       16,
       16,
       "png",
@@ -2523,7 +2595,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/preferences-sound.png": [
+    "qx/icon/Oxygen/16/apps/preferences-users.png": [
       16,
       16,
       "png",
@@ -2535,19 +2607,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/utilities-archiver.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/apps/preferences-wallpaper.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-users.png": [
       16,
       16,
       "png",
@@ -2571,13 +2631,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/apps/utilities-dictionary.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/apps/utilities-graphics-viewer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/utilities-dictionary.png": [
+    "qx/icon/Oxygen/16/apps/utilities-archiver.png": [
       16,
       16,
       "png",
@@ -2595,6 +2661,18 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/apps/utilities-network-manager.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-notes.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/apps/utilities-keyring.png": [
       16,
       16,
@@ -2607,19 +2685,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/utilities-notes.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-network-manager.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-terminal.png": [
+    "qx/icon/Oxygen/16/apps/utilities-system-monitor.png": [
       16,
       16,
       "png",
@@ -2631,7 +2697,403 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/utilities-system-monitor.png": [
+    "qx/icon/Oxygen/16/apps/utilities-terminal.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/audio-card.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/camera-photo.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/battery.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/audio-input-microphone.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/camera-web.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/computer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/display.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/drive-harddisk.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/drive-optical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/input-keyboard.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/input-mouse.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/media-flash.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/multimedia-player.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/network-wired.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/media-optical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/pda.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/network-wireless.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/phone.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/printer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/scanner.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-embarrassed.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-angel.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-laugh.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-kiss.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-raspberry.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-sad.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-smile-big.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-smile.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emotes/face-surprise.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emblems/emblem-favorite.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/emblems/emblem-important.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/archive.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/executable.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/media-image.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-calendar.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/media-video.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-contact.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-document.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-illustration.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-presentation.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-spreadsheet.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/text-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/text-html.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/media-audio.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/folder-open.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/folder-remote.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/folder.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/user-home.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/user-desktop.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/network-workgroup.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/user-trash-full.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/user-trash.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/places/network-server.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/dialog-error.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/dialog-information.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/dialog-password.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/image-loading.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/dialog-warning.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/image-missing.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/mail-read.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/mail-replied.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/mail-unread.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/security-low.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/security-high.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/status/security-medium.png": [
       16,
       16,
       "png",
@@ -2643,19 +3105,25 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/bookmark-new.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/appointment-new.png": [
+    "qx/icon/Oxygen/16/actions/check-spelling.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/bookmark-new.png": [
+    "qx/icon/Oxygen/16/actions/appointment-new.png": [
       16,
       16,
       "png",
@@ -2673,13 +3141,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/check-spelling.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/dialog-ok.png": [
+    "qx/icon/Oxygen/16/actions/dialog-cancel.png": [
       16,
       16,
       "png",
@@ -2691,7 +3153,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/dialog-cancel.png": [
+    "qx/icon/Oxygen/16/actions/dialog-ok.png": [
       16,
       16,
       "png",
@@ -2703,13 +3165,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-open.png": [
+    "qx/icon/Oxygen/16/actions/document-open-recent.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-open-recent.png": [
+    "qx/icon/Oxygen/16/actions/document-open.png": [
       16,
       16,
       "png",
@@ -2721,13 +3183,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-properties.png": [
+    "qx/icon/Oxygen/16/actions/document-print.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-print.png": [
+    "qx/icon/Oxygen/16/actions/document-properties.png": [
       16,
       16,
       "png",
@@ -2751,13 +3213,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-clear.png": [
+    "qx/icon/Oxygen/16/actions/document-send.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-send.png": [
+    "qx/icon/Oxygen/16/actions/edit-clear.png": [
       16,
       16,
       "png",
@@ -2775,7 +3237,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-paste.png": [
+    "qx/icon/Oxygen/16/actions/edit-find.png": [
       16,
       16,
       "png",
@@ -2787,13 +3249,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-find.png": [
+    "qx/icon/Oxygen/16/actions/edit-select-all.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-undo.png": [
+    "qx/icon/Oxygen/16/actions/edit-paste.png": [
       16,
       16,
       "png",
@@ -2805,19 +3267,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-select-all.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/folder-new.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-indent-more.png": [
+    "qx/icon/Oxygen/16/actions/edit-undo.png": [
       16,
       16,
       "png",
@@ -2829,7 +3285,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-justify-center.png": [
+    "qx/icon/Oxygen/16/actions/format-indent-more.png": [
       16,
       16,
       "png",
@@ -2841,13 +3297,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-bold.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/format-justify-right.png": [
+    "qx/icon/Oxygen/16/actions/format-justify-center.png": [
       16,
       16,
       "png",
@@ -2859,7 +3309,25 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/format-justify-right.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/format-text-bold.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/format-text-direction-rtl.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/format-text-italic.png": [
       16,
       16,
       "png",
@@ -2877,13 +3345,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-italic.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/go-bottom.png": [
+    "qx/icon/Oxygen/16/actions/format-text-underline.png": [
       16,
       16,
       "png",
@@ -2895,7 +3357,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-underline.png": [
+    "qx/icon/Oxygen/16/actions/go-bottom.png": [
       16,
       16,
       "png",
@@ -2955,13 +3417,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/insert-image.png": [
+    "qx/icon/Oxygen/16/actions/help-contents.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/help-contents.png": [
+    "qx/icon/Oxygen/16/actions/insert-image.png": [
       16,
       16,
       "png",
@@ -2985,13 +3447,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/mail-forward.png": [
+    "qx/icon/Oxygen/16/actions/mail-mark-important.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/list-remove.png": [
+    "qx/icon/Oxygen/16/actions/mail-forward.png": [
       16,
       16,
       "png",
@@ -3003,7 +3465,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/mail-mark-important.png": [
+    "qx/icon/Oxygen/16/actions/list-remove.png": [
       16,
       16,
       "png",
@@ -3033,13 +3495,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/mail-reply-sender.png": [
+    "qx/icon/Oxygen/16/actions/mail-reply-all.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/mail-reply-all.png": [
+    "qx/icon/Oxygen/16/actions/mail-reply-sender.png": [
       16,
       16,
       "png",
@@ -3063,19 +3525,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/media-playback-start.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/media-playback-stop.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/media-seek-backward.png": [
+    "qx/icon/Oxygen/16/actions/media-playback-start.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/media-record.png": [
       16,
       16,
       "png",
@@ -3087,13 +3549,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/media-skip-backward.png": [
+    "qx/icon/Oxygen/16/actions/media-seek-backward.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/media-record.png": [
+    "qx/icon/Oxygen/16/actions/media-skip-backward.png": [
       16,
       16,
       "png",
@@ -3111,6 +3573,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/object-rotate-right.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/object-flip-vertical.png": [
       16,
       16,
@@ -3123,7 +3591,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/object-rotate-right.png": [
+    "qx/icon/Oxygen/16/actions/process-stop.png": [
       16,
       16,
       "png",
@@ -3135,25 +3603,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/process-stop.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/system-run.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/system-shutdown.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/view-fullscreen.png": [
       16,
       16,
       "png",
@@ -3165,13 +3615,25 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/view-refresh.png": [
+    "qx/icon/Oxygen/16/actions/system-shutdown.png": [
       16,
       16,
       "png",
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/view-restore.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/view-fullscreen.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/view-refresh.png": [
       16,
       16,
       "png",
@@ -3189,6 +3651,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/window-close.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/window-new.png": [
       16,
       16,
@@ -3196,12 +3664,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/zoom-fit-best.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/window-close.png": [
       16,
       16,
       "png",
@@ -3220,468 +3682,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/zoom-out.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/accessories.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/development.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/engineering.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/games.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/graphics.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/internet.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/multimedia.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/office.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/utilities.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/audio-card.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/science.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/categories/system.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/audio-input-microphone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/battery.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/camera-photo.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/camera-web.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/computer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/display.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/drive-harddisk.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/input-keyboard.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/drive-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/input-mouse.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/media-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/network-wired.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/media-flash.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/multimedia-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/network-wireless.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/pda.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/phone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/printer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/scanner.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-angel.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-laugh.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-kiss.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-embarrassed.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-plain.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-raspberry.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-sad.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-smile-big.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-smile.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emotes/face-surprise.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/archive.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/media-audio.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/media-image.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/media-video.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/executable.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-calendar.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-document.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-presentation.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-illustration.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-spreadsheet.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/text-html.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/text-plain.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/folder-open.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/office-contact.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/folder-remote.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/network-server.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/network-workgroup.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/user-desktop.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/folder.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/user-home.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/user-trash-full.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/places/user-trash.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emblems/emblem-favorite.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/dialog-information.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/dialog-error.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/dialog-password.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/emblems/emblem-important.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/dialog-warning.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/image-loading.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/image-missing.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/mail-read.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/mail-replied.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/mail-unread.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/security-high.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/security-low.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/status/security-medium.png": [
       16,
       16,
       "png",
@@ -3729,13 +3729,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/appointment-new.png": [
+    "qx/icon/Tango/16/actions/application-exit.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/application-exit.png": [
+    "qx/icon/Tango/16/actions/appointment-new.png": [
       16,
       16,
       "png",
@@ -3753,7 +3753,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/dialog-cancel.png": [
+    "qx/icon/Tango/16/actions/contact-new.png": [
       16,
       16,
       "png",
@@ -3765,13 +3765,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/contact-new.png": [
+    "qx/icon/Tango/16/actions/dialog-close.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/dialog-close.png": [
+    "qx/icon/Tango/16/actions/dialog-cancel.png": [
       16,
       16,
       "png",
@@ -3819,31 +3819,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/document-save-as.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/actions/document-revert.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/document-save.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/document-send.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/edit-clear.png": [
+    "qx/icon/Tango/16/actions/document-save-as.png": [
       16,
       16,
       "png",
@@ -3855,13 +3837,31 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/edit-find.png": [
+    "qx/icon/Tango/16/actions/edit-clear.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/document-send.png": [
       16,
       16,
       "png",
       "qx"
     ],
     "qx/icon/Tango/16/actions/edit-delete.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/document-save.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/edit-find.png": [
       16,
       16,
       "png",
@@ -3879,31 +3879,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/edit-select-all.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/edit-redo.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/actions/edit-undo.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/folder-new.png": [
+    "qx/icon/Tango/16/actions/edit-select-all.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/format-justify-center.png": [
+    "qx/icon/Tango/16/actions/folder-new.png": [
       16,
       16,
       "png",
@@ -3921,7 +3909,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/actions/format-justify-center.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/actions/format-justify-fill.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/edit-redo.png": [
       16,
       16,
       "png",
@@ -3957,19 +3957,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/format-text-strikethrough.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/format-text-underline.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/actions/format-text-italic.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/format-text-strikethrough.png": [
       16,
       16,
       "png",
@@ -3981,19 +3975,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/go-down.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/go-last.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/go-home.png": [
+    "qx/icon/Tango/16/actions/format-text-underline.png": [
       16,
       16,
       "png",
@@ -4005,7 +3987,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/go-next.png": [
+    "qx/icon/Tango/16/actions/go-down.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/go-home.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/go-last.png": [
       16,
       16,
       "png",
@@ -4017,7 +4011,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/help-about.png": [
+    "qx/icon/Tango/16/actions/go-next.png": [
       16,
       16,
       "png",
@@ -4041,7 +4035,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/help-faq.png": [
+    "qx/icon/Tango/16/actions/help-about.png": [
       16,
       16,
       "png",
@@ -4053,13 +4047,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/insert-image.png": [
+    "qx/icon/Tango/16/actions/insert-text.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/insert-text.png": [
+    "qx/icon/Tango/16/actions/insert-image.png": [
       16,
       16,
       "png",
@@ -4071,13 +4065,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/mail-forward.png": [
+    "qx/icon/Tango/16/actions/list-remove.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/list-remove.png": [
+    "qx/icon/Tango/16/actions/mail-forward.png": [
       16,
       16,
       "png",
@@ -4095,13 +4089,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/mail-mark-unread.png": [
+    "qx/icon/Tango/16/actions/mail-mark-read.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/mail-mark-read.png": [
+    "qx/icon/Tango/16/actions/mail-mark-unread.png": [
       16,
       16,
       "png",
@@ -4114,6 +4108,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/actions/mail-receive.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/help-faq.png": [
       16,
       16,
       "png",
@@ -4143,19 +4143,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/media-playback-start.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/actions/media-playback-pause.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/media-record.png": [
+    "qx/icon/Tango/16/actions/media-playback-start.png": [
       16,
       16,
       "png",
@@ -4167,103 +4161,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/media-seek-forward.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/actions/media-seek-backward.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/media-skip-forward.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/object-flip-horizontal.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/object-flip-vertical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/object-rotate-left.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/object-rotate-right.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/process-stop.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/system-log-out.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/system-run.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/system-search.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/view-fullscreen.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/system-shutdown.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/view-refresh.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/view-restore.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/view-sort-descending.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/actions/view-sort-ascending.png": [
+    "qx/icon/Tango/16/actions/media-seek-forward.png": [
       16,
       16,
       "png",
@@ -4275,7 +4179,103 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/actions/media-skip-forward.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/media-record.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/object-flip-vertical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/object-flip-horizontal.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/object-rotate-left.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/process-stop.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/system-run.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/system-log-out.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/object-rotate-right.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/system-search.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/system-shutdown.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/view-fullscreen.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/view-restore.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/view-sort-ascending.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/view-sort-descending.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/actions/window-close.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/actions/view-refresh.png": [
       16,
       16,
       "png",
@@ -4305,193 +4305,73 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/categories/accessories.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/categories/engineering.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/actions/zoom-original.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-angel.png": [
+    "qx/icon/Tango/16/categories/graphics.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-kiss.png": [
+    "qx/icon/Tango/16/categories/development.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-laugh.png": [
+    "qx/icon/Tango/16/categories/games.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
+    "qx/icon/Tango/16/categories/internet.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-plain.png": [
+    "qx/icon/Tango/16/categories/science.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-raspberry.png": [
+    "qx/icon/Tango/16/categories/system.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-sad.png": [
+    "qx/icon/Tango/16/categories/utilities.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-smile-big.png": [
+    "qx/icon/Tango/16/categories/multimedia.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-smile.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-surprise.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emblems/emblem-important.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emblems/emblem-favorite.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/audio-input-microphone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/battery.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/audio-card.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/camera-web.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/computer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/display.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/drive-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/drive-harddisk.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/input-keyboard.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/input-mouse.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/media-flash.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/media-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/network-wired.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/multimedia-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/network-wireless.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/phone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/printer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/scanner.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/pda.png": [
+    "qx/icon/Tango/16/apps/internet-blog.png": [
       16,
       16,
       "png",
@@ -4503,19 +4383,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/internet-feed-reader.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/apps/internet-mail.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/internet-blog.png": [
       16,
       16,
       "png",
@@ -4533,13 +4401,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/internet-web-browser.png": [
+    "qx/icon/Tango/16/apps/internet-transfer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/internet-transfer.png": [
+    "qx/icon/Tango/16/apps/internet-feed-reader.png": [
       16,
       16,
       "png",
@@ -4551,7 +4419,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/media-photo-album.png": [
+    "qx/icon/Tango/16/apps/internet-web-browser.png": [
       16,
       16,
       "png",
@@ -4576,6 +4444,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/apps/office-chart.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/apps/media-photo-album.png": [
       16,
       16,
       "png",
@@ -4611,13 +4485,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/office-spreadsheet.png": [
+    "qx/icon/Tango/16/apps/office-project.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/office-project.png": [
+    "qx/icon/Tango/16/apps/office-spreadsheet.png": [
       16,
       16,
       "png",
@@ -4653,19 +4527,25 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/preferences-keyboard.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/apps/preferences-font.png": [
       16,
       16,
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/preferences-keyboard.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/preferences-locale.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/apps/preferences-network.png": [
       16,
       16,
       "png",
@@ -4683,13 +4563,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/preferences-network.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/preferences-theme.png": [
+    "qx/icon/Tango/16/apps/preferences-users.png": [
       16,
       16,
       "png",
@@ -4701,13 +4575,7 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/preferences-users.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/utilities-calculator.png": [
+    "qx/icon/Tango/16/apps/preferences-theme.png": [
       16,
       16,
       "png",
@@ -4725,7 +4593,19 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/utilities-calculator.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/utilities-color-chooser.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/apps/utilities-dictionary.png": [
       16,
       16,
       "png",
@@ -4743,13 +4623,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/utilities-keyring.png": [
+    "qx/icon/Tango/16/apps/utilities-log-viewer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/utilities-log-viewer.png": [
+    "qx/icon/Tango/16/apps/utilities-keyring.png": [
       16,
       16,
       "png",
@@ -4761,19 +4641,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/utilities-notes.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/apps/utilities-statistics.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/utilities-system-monitor.png": [
+    "qx/icon/Tango/16/apps/utilities-notes.png": [
       16,
       16,
       "png",
@@ -4785,55 +4659,49 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/utilities-system-monitor.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/utilities-text-editor.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/engineering.png": [
+    "qx/icon/Tango/16/devices/battery.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/development.png": [
+    "qx/icon/Tango/16/devices/audio-card.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/accessories.png": [
+    "qx/icon/Tango/16/devices/audio-input-microphone.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/games.png": [
+    "qx/icon/Tango/16/devices/camera-web.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/apps/utilities-dictionary.png": [
+    "qx/icon/Tango/16/devices/computer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/graphics.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/categories/internet.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/categories/multimedia.png": [
+    "qx/icon/Tango/16/devices/display.png": [
       16,
       16,
       "png",
@@ -4845,145 +4713,133 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/system.png": [
+    "qx/icon/Tango/16/devices/drive-harddisk.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/utilities.png": [
+    "qx/icon/Tango/16/devices/input-keyboard.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/categories/science.png": [
+    "qx/icon/Tango/16/devices/drive-optical.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/dialog-password.png": [
+    "qx/icon/Tango/16/devices/media-flash.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/dialog-error.png": [
+    "qx/icon/Tango/16/devices/media-optical.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/dialog-warning.png": [
+    "qx/icon/Tango/16/devices/multimedia-player.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/dialog-information.png": [
+    "qx/icon/Tango/16/devices/network-wired.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/image-loading.png": [
+    "qx/icon/Tango/16/devices/network-wireless.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/mail-read.png": [
+    "qx/icon/Tango/16/devices/pda.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/mail-replied.png": [
+    "qx/icon/Tango/16/devices/phone.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/image-missing.png": [
+    "qx/icon/Tango/16/devices/printer.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/mail-unread.png": [
+    "qx/icon/Tango/16/devices/scanner.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/security-high.png": [
+    "qx/icon/Tango/16/devices/input-mouse.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/security-low.png": [
+    "qx/icon/Tango/16/emotes/face-angel.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/status/security-medium.png": [
+    "qx/icon/Tango/16/emotes/face-kiss.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/folder-open.png": [
+    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/network-server.png": [
+    "qx/icon/Tango/16/emotes/face-plain.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/folder.png": [
+    "qx/icon/Tango/16/emotes/face-sad.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/folder-remote.png": [
+    "qx/icon/Tango/16/emotes/face-smile-big.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/network-workgroup.png": [
+    "qx/icon/Tango/16/emotes/face-smile.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/user-desktop.png": [
+    "qx/icon/Tango/16/emotes/face-surprise.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/places/user-home.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/places/user-trash-full.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/places/user-trash.png": [
+    "qx/icon/Tango/16/emotes/face-raspberry.png": [
       16,
       16,
       "png",
@@ -5067,6 +4923,150 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/places/folder-open.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/folder.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/folder-remote.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/network-server.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/network-workgroup.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/user-desktop.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-laugh.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/user-trash.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/user-trash-full.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/places/user-home.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/dialog-error.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/dialog-password.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/dialog-information.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/dialog-warning.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/mail-read.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/image-missing.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/image-loading.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/mail-replied.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/mail-unread.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/security-high.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/security-low.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/status/security-medium.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emblems/emblem-important.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emblems/emblem-favorite.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/mimetypes/office-document.png": [
       22,
       22,
@@ -5127,16 +5127,16 @@ qx.$$packageData['0'] = {
       "meta",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.woff": [
-      null,
-      null,
-      "woff",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/fonts/fontawesome-webfont.ttf": [
       null,
       null,
       "ttf",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/fonts/fontawesome-webfont.woff": [
+      null,
+      null,
+      "woff",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/fonts/fontawesome-webfont.woff2": [

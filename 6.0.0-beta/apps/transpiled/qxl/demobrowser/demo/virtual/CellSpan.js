@@ -155,4 +155,4 @@
   qxl.demobrowser.demo.virtual.CellSpan.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CellSpan.js.map?dt=1562153815064
+//# sourceMappingURL=CellSpan.js.map?dt=1562184214367

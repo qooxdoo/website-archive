@@ -189,4 +189,4 @@
   qxl.demobrowser.demo.layout.Dock_AutoSize.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Dock_AutoSize.js.map?dt=1562153812465
+//# sourceMappingURL=Dock_AutoSize.js.map?dt=1562184211065

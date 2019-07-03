@@ -70,4 +70,4 @@
   qx.dev.unit.TestLoaderInline.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TestLoaderInline.js.map?dt=1562153790721
+//# sourceMappingURL=TestLoaderInline.js.map?dt=1562184184294

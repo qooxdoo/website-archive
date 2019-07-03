@@ -1,0 +1,13 @@
+{
+  "compiler": "1.0.0-beta.20190701-0901",
+  "libraries": {
+    "qx": "6.0.0-beta",
+    "qxl.formdemo": "1.0.0-beta.0",
+    "qxl.apiviewer": "1.0.0-beta.3",
+    "qxl.logpane": "1.0.0-beta.0",
+    "qxl.widgetbrowser": "1.0.0-beta.0",
+    "qxl.demobrowser": "1.0.0-beta.7",
+    "qxl.playground": "1.0.0-beta.5",
+    "qxl.versionlabel": "1.0.0-beta.0"
+  }
+}

@@ -183,4 +183,4 @@
   qxl.demobrowser.demo.data.Flickr.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Flickr.js.map?dt=1562153811553
+//# sourceMappingURL=Flickr.js.map?dt=1562184209848

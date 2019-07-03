@@ -108,4 +108,4 @@
   qxl.demobrowser.demo.table.Table_Remote_Model.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Table_Remote_Model.js.map?dt=1562153813933
+//# sourceMappingURL=Table_Remote_Model.js.map?dt=1562184213142

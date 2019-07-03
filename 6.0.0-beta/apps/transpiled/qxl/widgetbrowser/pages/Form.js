@@ -59,4 +59,4 @@
   qxl.widgetbrowser.pages.Form.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Form.js.map?dt=1562153816988
+//# sourceMappingURL=Form.js.map?dt=1562184216745
