@@ -4206,6 +4206,19 @@
                 "nr": 0
             },
             {
+                "name": "HtmlEmbed.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.embed.Html",
+                    "qx.ui.embed.Html",
+                    "qx.ui.embed.Html"
+                ],
+                "title": "HtmlEmbed",
+                "nr": 0
+            },
+            {
                 "name": "Iframe.html",
                 "tags": [
                     "qx.Class.define",
@@ -5039,19 +5052,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "HtmlEmbed.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.embed.Html",
-                    "qx.ui.embed.Html",
-                    "qx.ui.embed.Html"
-                ],
-                "title": "HtmlEmbed",
                 "nr": 0
             }
         ]

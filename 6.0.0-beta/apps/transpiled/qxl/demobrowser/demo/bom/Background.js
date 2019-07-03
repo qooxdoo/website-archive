@@ -71,4 +71,4 @@
   qxl.demobrowser.demo.bom.Background.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Background.js.map?dt=1562140820659
+//# sourceMappingURL=Background.js.map?dt=1562147532938

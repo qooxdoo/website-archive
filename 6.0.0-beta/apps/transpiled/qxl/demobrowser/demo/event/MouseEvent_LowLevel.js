@@ -83,4 +83,4 @@
   qxl.demobrowser.demo.event.MouseEvent_LowLevel.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MouseEvent_LowLevel.js.map?dt=1562140822383
+//# sourceMappingURL=MouseEvent_LowLevel.js.map?dt=1562147534261

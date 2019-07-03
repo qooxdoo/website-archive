@@ -253,4 +253,4 @@
   qx.ui.virtual.layer.GridLines.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=GridLines.js.map?dt=1562140816692
+//# sourceMappingURL=GridLines.js.map?dt=1562147529803

@@ -157,4 +157,4 @@
   qxl.demobrowser.demo.virtual.list.ListItem.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ListItem.js.map?dt=1562140827809
+//# sourceMappingURL=ListItem.js.map?dt=1562147537683

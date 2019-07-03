@@ -101,4 +101,4 @@
   qxl.demobrowser.demo.bom.AttributeStyle_1.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AttributeStyle_1.js.map?dt=1562140820592
+//# sourceMappingURL=AttributeStyle_1.js.map?dt=1562147532887

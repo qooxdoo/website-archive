@@ -606,4 +606,4 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
   qx.ui.form.core.VirtualDropDownList.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=VirtualDropDownList.js.map?dt=1562140807310
+//# sourceMappingURL=VirtualDropDownList.js.map?dt=1562147522679

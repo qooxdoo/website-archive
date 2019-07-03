@@ -219,4 +219,4 @@
   qx.module.event.Mouse.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Mouse.js.map?dt=1562140800488
+//# sourceMappingURL=Mouse.js.map?dt=1562147517367

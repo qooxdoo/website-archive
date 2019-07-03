@@ -151,4 +151,4 @@
   qxl.demobrowser.demo.table.Table_Resize_Columns.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Table_Resize_Columns.js.map?dt=1562140825223
+//# sourceMappingURL=Table_Resize_Columns.js.map?dt=1562147535916

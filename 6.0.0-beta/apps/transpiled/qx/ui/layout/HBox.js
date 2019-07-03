@@ -469,4 +469,4 @@
   qx.ui.layout.HBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=HBox.js.map?dt=1562140808016
+//# sourceMappingURL=HBox.js.map?dt=1562147523476

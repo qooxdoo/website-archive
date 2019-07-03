@@ -116,4 +116,4 @@
   qxl.demobrowser.demo.bom.Environment.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Environment.js.map?dt=1562140820803
+//# sourceMappingURL=Environment.js.map?dt=1562147533044

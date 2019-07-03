@@ -121,4 +121,4 @@
   qxl.demobrowser.demo.data.ExtendedTree.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ExtendedTree.js.map?dt=1562140821424
+//# sourceMappingURL=ExtendedTree.js.map?dt=1562147533452

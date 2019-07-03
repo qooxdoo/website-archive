@@ -113,4 +113,4 @@
   qxl.widgetbrowser.pages.EmbedFrame.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=EmbedFrame.js.map?dt=1562140829606
+//# sourceMappingURL=EmbedFrame.js.map?dt=1562147539011

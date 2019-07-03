@@ -1583,4 +1583,4 @@
   qx.util.format.DateFormat.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=DateFormat.js.map?dt=1562140819389
+//# sourceMappingURL=DateFormat.js.map?dt=1562147531846

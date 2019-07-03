@@ -110,4 +110,4 @@
   qxl.demobrowser.demo.data.model.Node.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Node.js.map?dt=1562140822047
+//# sourceMappingURL=Node.js.map?dt=1562147533953

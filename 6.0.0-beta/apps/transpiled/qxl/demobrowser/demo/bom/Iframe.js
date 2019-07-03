@@ -63,4 +63,4 @@
   qxl.demobrowser.demo.bom.Iframe.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Iframe.js.map?dt=1562140820873
+//# sourceMappingURL=Iframe.js.map?dt=1562147533078
