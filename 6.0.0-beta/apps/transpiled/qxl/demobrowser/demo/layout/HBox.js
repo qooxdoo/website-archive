@@ -256,4 +256,4 @@
   qxl.demobrowser.demo.layout.HBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=HBox.js.map?dt=1562187676644
+//# sourceMappingURL=HBox.js.map?dt=1562235030224

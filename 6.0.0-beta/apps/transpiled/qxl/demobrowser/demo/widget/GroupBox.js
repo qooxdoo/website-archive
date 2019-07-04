@@ -108,4 +108,4 @@
   qxl.demobrowser.demo.widget.GroupBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=GroupBox.js.map?dt=1562187679874
+//# sourceMappingURL=GroupBox.js.map?dt=1562235033479

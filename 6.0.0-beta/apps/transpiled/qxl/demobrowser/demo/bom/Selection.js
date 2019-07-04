@@ -217,4 +217,4 @@
   qxl.demobrowser.demo.bom.Selection.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Selection.js.map?dt=1562187675110
+//# sourceMappingURL=Selection.js.map?dt=1562235028680

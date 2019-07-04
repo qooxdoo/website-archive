@@ -351,4 +351,4 @@
   qx.event.message.Bus.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Bus.js.map?dt=1562187656108
+//# sourceMappingURL=Bus.js.map?dt=1562235009214

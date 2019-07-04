@@ -158,4 +158,4 @@
   qxl.demobrowser.demo.data.ListControllerWith3Widgets.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ListControllerWith3Widgets.js.map?dt=1562187675551
+//# sourceMappingURL=ListControllerWith3Widgets.js.map?dt=1562235029127

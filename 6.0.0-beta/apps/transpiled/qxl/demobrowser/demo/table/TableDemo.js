@@ -165,4 +165,4 @@
   qxl.demobrowser.demo.table.TableDemo.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TableDemo.js.map?dt=1562187677661
+//# sourceMappingURL=TableDemo.js.map?dt=1562235031227

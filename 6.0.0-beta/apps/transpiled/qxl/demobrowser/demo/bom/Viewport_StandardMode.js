@@ -52,4 +52,4 @@
   qxl.demobrowser.demo.bom.Viewport_StandardMode.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Viewport_StandardMode.js.map?dt=1562187675246
+//# sourceMappingURL=Viewport_StandardMode.js.map?dt=1562235028818

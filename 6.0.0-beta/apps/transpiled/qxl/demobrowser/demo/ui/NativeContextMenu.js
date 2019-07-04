@@ -105,4 +105,4 @@
   qxl.demobrowser.demo.ui.NativeContextMenu.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=NativeContextMenu.js.map?dt=1562187678604
+//# sourceMappingURL=NativeContextMenu.js.map?dt=1562235032185

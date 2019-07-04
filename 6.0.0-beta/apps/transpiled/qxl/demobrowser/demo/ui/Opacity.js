@@ -98,4 +98,4 @@
   qxl.demobrowser.demo.ui.Opacity.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Opacity.js.map?dt=1562187678625
+//# sourceMappingURL=Opacity.js.map?dt=1562235032198

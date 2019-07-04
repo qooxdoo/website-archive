@@ -115,4 +115,4 @@
   qxl.demobrowser.demo.event.Event_Bus.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Event_Bus.js.map?dt=1562187676072
+//# sourceMappingURL=Event_Bus.js.map?dt=1562235029496

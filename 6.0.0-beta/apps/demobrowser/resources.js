@@ -3759,13 +3759,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/document-print-preview.png": [
+    "qx/icon/Oxygen/22/actions/document-open.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/document-open.png": [
+    "qx/icon/Oxygen/22/actions/document-print-preview.png": [
       22,
       22,
       "png",
@@ -4731,6 +4731,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/32/actions/mail-reply-all.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/32/actions/mail-reply-sender.png": [
       32,
       32,
@@ -4738,12 +4744,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/32/actions/mail-send.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/32/actions/mail-reply-all.png": [
       32,
       32,
       "png",

@@ -150,4 +150,4 @@
   qxl.demobrowser.InfoWindow.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=InfoWindow.js.map?dt=1562187674481
+//# sourceMappingURL=InfoWindow.js.map?dt=1562235028062

@@ -124,4 +124,4 @@
   qxl.demobrowser.demo.data.SelectBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=SelectBox.js.map?dt=1562187675706
+//# sourceMappingURL=SelectBox.js.map?dt=1562235029282

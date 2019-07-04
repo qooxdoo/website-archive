@@ -1556,4 +1556,4 @@
   qx.ui.mobile.core.Widget.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Widget.js.map?dt=1562187666524
+//# sourceMappingURL=Widget.js.map?dt=1562235019960

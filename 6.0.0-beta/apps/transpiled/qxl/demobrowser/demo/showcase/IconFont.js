@@ -146,4 +146,4 @@
   qxl.demobrowser.demo.showcase.IconFont.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=IconFont.js.map?dt=1562187677393
+//# sourceMappingURL=IconFont.js.map?dt=1562235030952

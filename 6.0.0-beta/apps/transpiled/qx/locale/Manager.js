@@ -472,4 +472,4 @@
   qx.locale.Manager.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Manager.js.map?dt=1562187658670
+//# sourceMappingURL=Manager.js.map?dt=1562235011627

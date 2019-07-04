@@ -108,4 +108,4 @@
   qxl.demobrowser.demo.ui.ScrollContainer.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ScrollContainer.js.map?dt=1562187678665
+//# sourceMappingURL=ScrollContainer.js.map?dt=1562235032239

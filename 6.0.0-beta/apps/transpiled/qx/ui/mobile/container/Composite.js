@@ -101,4 +101,4 @@
   qx.ui.mobile.container.Composite.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Composite.js.map?dt=1562187666026
+//# sourceMappingURL=Composite.js.map?dt=1562235019447

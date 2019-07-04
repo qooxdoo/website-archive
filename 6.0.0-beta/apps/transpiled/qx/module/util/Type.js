@@ -65,4 +65,4 @@
   qx.module.util.Type.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Type.js.map?dt=1562187659640
+//# sourceMappingURL=Type.js.map?dt=1562235012696

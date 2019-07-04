@@ -236,4 +236,4 @@
   qx.bom.client.CssAnimation.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CssAnimation.js.map?dt=1562187649532
+//# sourceMappingURL=CssAnimation.js.map?dt=1562235002422

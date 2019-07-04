@@ -98,4 +98,4 @@
   qxl.demobrowser.demo.data.NamesList.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=NamesList.js.map?dt=1562187675627
+//# sourceMappingURL=NamesList.js.map?dt=1562235029202
