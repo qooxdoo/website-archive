@@ -113,4 +113,4 @@
   qx.util.placement.KeepAlignAxis.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=KeepAlignAxis.js.map?dt=1562235027525
+//# sourceMappingURL=KeepAlignAxis.js.map?dt=1562266609743

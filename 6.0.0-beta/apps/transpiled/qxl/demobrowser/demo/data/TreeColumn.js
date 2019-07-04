@@ -117,4 +117,4 @@
   qxl.demobrowser.demo.data.TreeColumn.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TreeColumn.js.map?dt=1562235029342
+//# sourceMappingURL=TreeColumn.js.map?dt=1562266611664

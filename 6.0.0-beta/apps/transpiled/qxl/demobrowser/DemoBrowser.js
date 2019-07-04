@@ -114,6 +114,7 @@
      Authors:
        * Thomas Herchenroeder (thron7)
        * Fabian Jakobs (fjakobs)
+       * Fabian Jakobs (fjakobs)
        * Martin Wittemann (martinwittemann)
        * Jonathan Weiß (jonathan_rass)
   
@@ -322,7 +323,7 @@
       __logView: null,
       __viewGroup: null,
       defaultUrl: "demo/welcome.html",
-      playgroundUrl: "/apps/" + "qxl.demobrowser/",
+      playgroundUrl: "/apps/" + "apps/playground/",
       __makeCommands: function __makeCommands() {
         this._cmdObjectSummary = new qx.ui.command.Command("Ctrl+O");
 
@@ -461,14 +462,14 @@
        * Handler for opening the api viewer.
        */
       __onApiOpen: function __onApiOpen() {
-        window.open("/apps/" + "qxl.apiviewer/");
+        window.open("/apps/" + "apps/apiviewer/");
       },
 
       /**
        * Handler for opening the manual.
        */
       __onManualOpen: function __onManualOpen() {
-        window.open("/apps/" + "devel/");
+        window.open("/apps/" + "docs/");
       },
       __makeToolBar: function __makeToolBar() {
         var bar = new qx.ui.toolbar.ToolBar(); // NAVIGATION BUTTONS
@@ -1255,20 +1256,14 @@
 
           if (content) {
             if (qx.core.Environment.get("qx.contrib") == false) {
-              // extract the name of the js file
-              var secondSrcTagPosition = content.indexOf("<script", content.indexOf("<script") + 7);
-              var srcAttributeStart = content.indexOf("src", secondSrcTagPosition);
-              var srcAttributeEnd = content.indexOf("\"", srcAttributeStart + 5);
-              var jsFileName = content.substring(srcAttributeStart + 5, srcAttributeEnd);
-              var jsSourceFileName = jsFileName.substring(4, jsFileName.length - 3) + ".src.js"; // construct url to demo script source
-
+              // construct url to demo script source
               var u = "script/qxl.demobrowser.demo";
               var parts = url.split('/');
-              var cat = parts[1];
-              var base = parts[2];
+              var cat = parts[parts.length - 2];
+              var base = parts[parts.length - 1];
               base = base.substr(0, base.indexOf('.html'));
               u += "." + cat + "." + base + ".src.js";
-              jsSourceFileName = u; // get the javascript code
+              jsSourceFileName = qx.$$appRoot + u; // get the javascript code
 
               var reqJSFile = new qx.io.request.Xhr(jsSourceFileName);
               reqJSFile.setTimeout(18000);
@@ -1613,4 +1608,4 @@
   qxl.demobrowser.DemoBrowser.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=DemoBrowser.js.map?dt=1562235028041
+//# sourceMappingURL=DemoBrowser.js.map?dt=1562266610288

@@ -83,4 +83,4 @@
   qxl.demobrowser.demo.widget.ScrollBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ScrollBar.js.map?dt=1562235033864
+//# sourceMappingURL=ScrollBar.js.map?dt=1562266616432

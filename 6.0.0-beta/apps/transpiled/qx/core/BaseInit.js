@@ -147,4 +147,4 @@
   qx.core.BaseInit.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=BaseInit.js.map?dt=1562235004664
+//# sourceMappingURL=BaseInit.js.map?dt=1562266585546

@@ -206,4 +206,4 @@
   qxl.demobrowser.demo.layout.Dock_FlexShrinking.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Dock_FlexShrinking.js.map?dt=1562235029965
+//# sourceMappingURL=Dock_FlexShrinking.js.map?dt=1562266612287

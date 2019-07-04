@@ -110,4 +110,4 @@
   qxl.demobrowser.demo.animation.Animation_3d.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Animation_3d.js.map?dt=1562235028222
+//# sourceMappingURL=Animation_3d.js.map?dt=1562266610501

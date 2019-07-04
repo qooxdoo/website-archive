@@ -188,4 +188,4 @@
   qxl.demobrowser.demo.layout.Dock.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Dock.js.map?dt=1562235029869
+//# sourceMappingURL=Dock.js.map?dt=1562266612196

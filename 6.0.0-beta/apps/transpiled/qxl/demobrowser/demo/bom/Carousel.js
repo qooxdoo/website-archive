@@ -133,4 +133,4 @@
   qxl.demobrowser.demo.bom.Carousel.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Carousel.js.map?dt=1562235028432
+//# sourceMappingURL=Carousel.js.map?dt=1562266610710

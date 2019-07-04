@@ -241,4 +241,4 @@
   qxl.demobrowser.demo.layout.VSplit.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=VSplit.js.map?dt=1562235030768
+//# sourceMappingURL=VSplit.js.map?dt=1562266613145

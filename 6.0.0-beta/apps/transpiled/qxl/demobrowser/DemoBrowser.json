@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 50,
+        "line": 51,
         "column": 0
       },
       "end": {
-        "line": 1662,
+        "line": 1656,
         "column": 3
       }
     },
@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nThomas Herchenroeder (thron7)\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nThomas Herchenroeder (thron7)\nFabian Jakobs (fjakobs)\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
         },
         {
           "name": "@description",
@@ -114,11 +114,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 63,
+        "line": 64,
         "column": 2
       },
       "end": {
-        "line": 192,
+        "line": 193,
         "column": 3
       }
     },
@@ -135,11 +135,11 @@
     "_iframe": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 208,
           "column": 18
         }
       },
@@ -165,11 +165,11 @@
     "__currentTheme": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 209,
           "column": 25
         }
       },
@@ -179,11 +179,11 @@
     "__logSync": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 210,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 210,
           "column": 20
         }
       },
@@ -193,11 +193,11 @@
     "__logDone": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 211,
           "column": 20
         }
       },
@@ -207,11 +207,11 @@
     "_tree": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 212,
           "column": 16
         }
       },
@@ -221,11 +221,11 @@
     "_status": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 213,
           "column": 18
         }
       },
@@ -235,11 +235,11 @@
     "_searchTextField": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 214,
           "column": 27
         }
       },
@@ -249,11 +249,11 @@
     "__playgroundButton": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 215,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 215,
           "column": 29
         }
       },
@@ -263,11 +263,11 @@
     "__currentJSCode": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 216,
           "column": 26
         }
       },
@@ -277,11 +277,11 @@
     "__menuElements": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 217,
           "column": 25
         }
       },
@@ -291,11 +291,11 @@
     "_versionFilter": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 218,
           "column": 25
         }
       },
@@ -305,11 +305,11 @@
     "_navPart": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 219,
           "column": 19
         }
       },
@@ -319,11 +319,11 @@
     "__sobutt": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 220,
           "column": 19
         }
       },
@@ -333,11 +333,11 @@
     "__viewPart": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 221,
           "column": 21
         }
       },
@@ -347,11 +347,11 @@
     "__themePart": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 222,
           "column": 22
         }
       },
@@ -361,11 +361,11 @@
     "__themeMenu": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 223,
           "column": 22
         }
       },
@@ -375,11 +375,11 @@
     "__menuBar": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 224,
           "column": 20
         }
       },
@@ -389,11 +389,11 @@
     "_leftComposite": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 225,
           "column": 25
         }
       },
@@ -403,11 +403,11 @@
     "_infosplit": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 226,
           "column": 21
         }
       },
@@ -417,11 +417,11 @@
     "_demoView": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 227,
           "column": 20
         }
       },
@@ -431,11 +431,11 @@
     "__overflowMenu": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 228,
           "column": 25
         }
       },
@@ -445,11 +445,11 @@
     "__menuItemStore": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 229,
           "column": 26
         }
       },
@@ -459,11 +459,11 @@
     "__menuViewRadioGroup": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 230,
           "column": 30
         }
       },
@@ -473,11 +473,11 @@
     "_urlWindow": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 231,
           "column": 21
         }
       },
@@ -487,11 +487,11 @@
     "__infoWindow": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 232,
           "column": 23
         }
       },
@@ -501,11 +501,11 @@
     "__stack": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 233,
           "column": 18
         }
       },
@@ -515,11 +515,11 @@
     "__htmlView": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 234,
           "column": 20
         }
       },
@@ -529,11 +529,11 @@
     "__jsView": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 235,
           "column": 18
         }
       },
@@ -543,11 +543,11 @@
     "__logView": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 236,
           "column": 19
         }
       },
@@ -557,11 +557,11 @@
     "__viewGroup": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 237,
           "column": 21
         }
       },
@@ -571,11 +571,11 @@
     "defaultUrl": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 239,
+          "line": 240,
           "column": 36
         }
       },
@@ -585,11 +585,11 @@
     "playgroundUrl": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 241,
           "column": 118
         }
       },
@@ -599,11 +599,11 @@
     "__makeCommands": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 260,
           "column": 5
         }
       },
@@ -613,11 +613,11 @@
     "__syncRightView": {
       "location": {
         "start": {
-          "line": 267,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 296,
+          "line": 297,
           "column": 5
         }
       },
@@ -635,11 +635,11 @@
     "__getObjectSummary": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 303,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 320,
           "column": 5
         }
       },
@@ -657,11 +657,11 @@
     "__openWindow": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 332,
           "column": 5
         }
       },
@@ -671,11 +671,11 @@
     "__setCurrentJSCode": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 335,
           "column": 4
         },
         "end": {
-          "line": 345,
+          "line": 346,
           "column": 5
         }
       },
@@ -685,11 +685,11 @@
     "__toPlayground": {
       "location": {
         "start": {
-          "line": 348,
+          "line": 349,
           "column": 4
         },
         "end": {
-          "line": 362,
+          "line": 363,
           "column": 5
         }
       },
@@ -699,11 +699,11 @@
     "__onApiOpen": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 368,
           "column": 4
         },
         "end": {
-          "line": 369,
+          "line": 370,
           "column": 5
         }
       },
@@ -721,11 +721,11 @@
     "__onManualOpen": {
       "location": {
         "start": {
-          "line": 375,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 377,
+          "line": 378,
           "column": 5
         }
       },
@@ -743,11 +743,11 @@
     "__makeToolBar": {
       "location": {
         "start": {
-          "line": 380,
+          "line": 381,
           "column": 4
         },
         "end": {
-          "line": 576,
+          "line": 577,
           "column": 5
         }
       },
@@ -757,11 +757,11 @@
     "_onHideItem": {
       "location": {
         "start": {
-          "line": 582,
+          "line": 583,
           "column": 4
         },
         "end": {
-          "line": 591,
+          "line": 592,
           "column": 5
         }
       },
@@ -788,11 +788,11 @@
     "_onShowItem": {
       "location": {
         "start": {
-          "line": 598,
+          "line": 599,
           "column": 4
         },
         "end": {
-          "line": 612,
+          "line": 613,
           "column": 5
         }
       },
@@ -819,11 +819,11 @@
     "_getMenuItems": {
       "location": {
         "start": {
-          "line": 622,
+          "line": 623,
           "column": 4
         },
         "end": {
-          "line": 734,
+          "line": 735,
           "column": 5
         }
       },
@@ -858,11 +858,11 @@
     "__makeDemoView": {
       "location": {
         "start": {
-          "line": 736,
+          "line": 737,
           "column": 4
         },
         "end": {
-          "line": 745,
+          "line": 746,
           "column": 5
         }
       },
@@ -872,11 +872,11 @@
     "__makeHtmlCodeView": {
       "location": {
         "start": {
-          "line": 747,
+          "line": 748,
           "column": 4
         },
         "end": {
-          "line": 762,
+          "line": 763,
           "column": 5
         }
       },
@@ -886,11 +886,11 @@
     "__makeJsCodeView": {
       "location": {
         "start": {
-          "line": 764,
+          "line": 765,
           "column": 4
         },
         "end": {
-          "line": 779,
+          "line": 780,
           "column": 5
         }
       },
@@ -900,11 +900,11 @@
     "__makeTree": {
       "location": {
         "start": {
-          "line": 789,
+          "line": 790,
           "column": 4
         },
         "end": {
-          "line": 805,
+          "line": 806,
           "column": 5
         }
       },
@@ -930,11 +930,11 @@
     "__makeUrlMenu": {
       "location": {
         "start": {
-          "line": 808,
+          "line": 809,
           "column": 4
         },
         "end": {
-          "line": 847,
+          "line": 848,
           "column": 5
         }
       },
@@ -944,11 +944,11 @@
     "treeGetSelection": {
       "location": {
         "start": {
-          "line": 856,
+          "line": 857,
           "column": 4
         },
         "end": {
-          "line": 862,
+          "line": 863,
           "column": 5
         }
       },
@@ -974,11 +974,11 @@
     "leftReloadTree": {
       "location": {
         "start": {
-          "line": 871,
+          "line": 872,
           "column": 4
         },
         "end": {
-          "line": 975,
+          "line": 976,
           "column": 5
         }
       },
@@ -1013,11 +1013,11 @@
     "runSample": {
       "location": {
         "start": {
-          "line": 984,
+          "line": 985,
           "column": 4
         },
         "end": {
-          "line": 992,
+          "line": 993,
           "column": 5
         }
       },
@@ -1052,11 +1052,11 @@
     "setCurrentSample": {
       "location": {
         "start": {
-          "line": 1001,
+          "line": 1002,
           "column": 4
         },
         "end": {
-          "line": 1060,
+          "line": 1061,
           "column": 5
         }
       },
@@ -1091,11 +1091,11 @@
     "__ehIframeLoaded": {
       "location": {
         "start": {
-          "line": 1063,
+          "line": 1064,
           "column": 4
         },
         "end": {
-          "line": 1105,
+          "line": 1106,
           "column": 5
         }
       },
@@ -1105,11 +1105,11 @@
     "__onLogInterval": {
       "location": {
         "start": {
-          "line": 1108,
+          "line": 1109,
           "column": 4
         },
         "end": {
-          "line": 1152,
+          "line": 1153,
           "column": 5
         }
       },
@@ -1119,11 +1119,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 1165,
+          "line": 1166,
           "column": 4
         },
         "end": {
-          "line": 1225,
+          "line": 1226,
           "column": 5
         }
       },
@@ -1162,11 +1162,11 @@
     "__getPageSource": {
       "location": {
         "start": {
-          "line": 1238,
+          "line": 1239,
           "column": 4
         },
         "end": {
-          "line": 1307,
+          "line": 1301,
           "column": 5
         }
       },
@@ -1201,11 +1201,11 @@
     "dataLoader": {
       "location": {
         "start": {
-          "line": 1316,
+          "line": 1310,
           "column": 4
         },
         "end": {
-          "line": 1370,
+          "line": 1364,
           "column": 5
         }
       },
@@ -1240,11 +1240,11 @@
     "playPrev": {
       "location": {
         "start": {
-          "line": 1379,
+          "line": 1373,
           "column": 4
         },
         "end": {
-          "line": 1421,
+          "line": 1415,
           "column": 5
         }
       },
@@ -1279,11 +1279,11 @@
     "playNext": {
       "location": {
         "start": {
-          "line": 1432,
+          "line": 1426,
           "column": 4
         },
         "end": {
-          "line": 1473,
+          "line": 1467,
           "column": 5
         }
       },
@@ -1324,11 +1324,11 @@
     "__beautySource": {
       "location": {
         "start": {
-          "line": 1476,
+          "line": 1470,
           "column": 4
         },
         "end": {
-          "line": 1522,
+          "line": 1516,
           "column": 5
         }
       },
@@ -1338,11 +1338,11 @@
     "disableMenuButtons": {
       "location": {
         "start": {
-          "line": 1528,
+          "line": 1522,
           "column": 4
         },
         "end": {
-          "line": 1534,
+          "line": 1528,
           "column": 5
         }
       },
@@ -1360,11 +1360,11 @@
     "enableMenuButtons": {
       "location": {
         "start": {
-          "line": 1540,
+          "line": 1534,
           "column": 4
         },
         "end": {
-          "line": 1545,
+          "line": 1539,
           "column": 5
         }
       },
@@ -1382,11 +1382,11 @@
     "__beautyHtml": {
       "location": {
         "start": {
-          "line": 1547,
+          "line": 1541,
           "column": 4
         },
         "end": {
-          "line": 1593,
+          "line": 1587,
           "column": 5
         }
       },
@@ -1396,11 +1396,11 @@
     "polish": {
       "location": {
         "start": {
-          "line": 1602,
+          "line": 1596,
           "column": 4
         },
         "end": {
-          "line": 1604,
+          "line": 1598,
           "column": 5
         }
       },
@@ -1435,11 +1435,11 @@
     "__onChangeTheme": {
       "location": {
         "start": {
-          "line": 1607,
+          "line": 1601,
           "column": 4
         },
         "end": {
-          "line": 1615,
+          "line": 1609,
           "column": 5
         }
       },
@@ -1449,11 +1449,11 @@
     "_createHeader": {
       "location": {
         "start": {
-          "line": 1621,
+          "line": 1615,
           "column": 4
         },
         "end": {
-          "line": 1636,
+          "line": 1630,
           "column": 5
         }
       },
@@ -4956,11 +4956,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1648,
+        "line": 1642,
         "column": 2
       },
       "end": {
-        "line": 1661,
+        "line": 1655,
         "column": 3
       }
     },

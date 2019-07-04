@@ -151,4 +151,4 @@
   qxl.demobrowser.demo.ui.WebFonts.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=WebFonts.js.map?dt=1562235032257
+//# sourceMappingURL=WebFonts.js.map?dt=1562266614715

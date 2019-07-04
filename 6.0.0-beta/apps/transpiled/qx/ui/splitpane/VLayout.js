@@ -205,4 +205,4 @@
   qx.ui.splitpane.VLayout.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=VLayout.js.map?dt=1562235021735
+//# sourceMappingURL=VLayout.js.map?dt=1562266603646

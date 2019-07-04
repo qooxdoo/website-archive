@@ -159,4 +159,4 @@
   qxl.demobrowser.demo.widget.Tooltip.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Tooltip.js.map?dt=1562235034168
+//# sourceMappingURL=Tooltip.js.map?dt=1562266616778

@@ -101,4 +101,4 @@
   qxl.demobrowser.demo.data.ModelDebugging.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ModelDebugging.js.map?dt=1562235029187
+//# sourceMappingURL=ModelDebugging.js.map?dt=1562266611501

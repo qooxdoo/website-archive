@@ -268,4 +268,4 @@
   qxl.demobrowser.demo.data.SingleValueBinding.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=SingleValueBinding.js.map?dt=1562235029330
+//# sourceMappingURL=SingleValueBinding.js.map?dt=1562266611650

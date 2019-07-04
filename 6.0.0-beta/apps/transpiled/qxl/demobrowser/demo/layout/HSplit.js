@@ -246,4 +246,4 @@
   qxl.demobrowser.demo.layout.HSplit.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=HSplit.js.map?dt=1562235030449
+//# sourceMappingURL=HSplit.js.map?dt=1562266612804

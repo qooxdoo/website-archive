@@ -196,4 +196,4 @@
   qx.ui.virtual.core.Scroller.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Scroller.js.map?dt=1562235025010
+//# sourceMappingURL=Scroller.js.map?dt=1562266607082

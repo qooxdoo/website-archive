@@ -120,4 +120,4 @@
   qxl.demobrowser.demo.bom.Location.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Location.js.map?dt=1562235028593
+//# sourceMappingURL=Location.js.map?dt=1562266610887
