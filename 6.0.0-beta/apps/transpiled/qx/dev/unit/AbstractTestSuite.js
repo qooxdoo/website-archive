@@ -115,4 +115,4 @@
   qx.dev.unit.AbstractTestSuite.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractTestSuite.js.map?dt=1562266587285
+//# sourceMappingURL=AbstractTestSuite.js.map?dt=1562276948295

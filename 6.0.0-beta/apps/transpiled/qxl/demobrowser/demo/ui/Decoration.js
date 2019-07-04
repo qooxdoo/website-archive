@@ -90,4 +90,4 @@
   qxl.demobrowser.demo.ui.Decoration.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Decoration.js.map?dt=1562266614137
+//# sourceMappingURL=Decoration.js.map?dt=1562276973304

@@ -857,4 +857,4 @@
   qx.ui.list.List.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=List.js.map?dt=1562266600540
+//# sourceMappingURL=List.js.map?dt=1562276960716

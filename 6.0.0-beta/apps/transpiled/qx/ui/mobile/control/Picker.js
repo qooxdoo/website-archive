@@ -327,4 +327,4 @@
   qx.ui.mobile.control.Picker.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Picker.js.map?dt=1562266601427
+//# sourceMappingURL=Picker.js.map?dt=1562276961504

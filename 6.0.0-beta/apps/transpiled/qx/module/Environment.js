@@ -157,4 +157,4 @@
   qx.module.Environment.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Environment.js.map?dt=1562266593369
+//# sourceMappingURL=Environment.js.map?dt=1562276954013

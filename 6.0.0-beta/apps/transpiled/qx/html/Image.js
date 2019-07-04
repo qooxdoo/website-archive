@@ -225,4 +225,4 @@
   qx.html.Image.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Image.js.map?dt=1562266591336
+//# sourceMappingURL=Image.js.map?dt=1562276951927

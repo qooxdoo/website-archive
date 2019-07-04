@@ -82,4 +82,4 @@
   qxl.demobrowser.demo.bom.Label.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Label.js.map?dt=1562266610867
+//# sourceMappingURL=Label.js.map?dt=1562276970220

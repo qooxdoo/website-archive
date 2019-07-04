@@ -220,4 +220,4 @@
   qx.io.request.Jsonp.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Jsonp.js.map?dt=1562266592094
+//# sourceMappingURL=Jsonp.js.map?dt=1562276952739

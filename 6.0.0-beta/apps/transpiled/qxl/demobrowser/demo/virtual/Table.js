@@ -84,4 +84,4 @@
   qxl.demobrowser.demo.virtual.Table.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Table.js.map?dt=1562266615542
+//# sourceMappingURL=Table.js.map?dt=1562276974621

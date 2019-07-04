@@ -143,4 +143,4 @@
   qxl.widgetbrowser.MControls.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MControls.js.map?dt=1562266618758
+//# sourceMappingURL=MControls.js.map?dt=1562276977566

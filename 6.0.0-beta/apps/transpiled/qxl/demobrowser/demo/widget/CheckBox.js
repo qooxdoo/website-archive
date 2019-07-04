@@ -107,4 +107,4 @@
   qxl.demobrowser.demo.widget.CheckBox.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=CheckBox.js.map?dt=1562266615837
+//# sourceMappingURL=CheckBox.js.map?dt=1562276974887

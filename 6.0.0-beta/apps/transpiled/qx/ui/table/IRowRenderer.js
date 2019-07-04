@@ -80,4 +80,4 @@
   qx.ui.table.IRowRenderer.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=IRowRenderer.js.map?dt=1562266603698
+//# sourceMappingURL=IRowRenderer.js.map?dt=1562276963605

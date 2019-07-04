@@ -135,4 +135,4 @@
   qx.ui.core.scroll.MRoll.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MRoll.js.map?dt=1562266597239
+//# sourceMappingURL=MRoll.js.map?dt=1562276957607

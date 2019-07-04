@@ -348,4 +348,4 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
   qx.ui.form.RadioButtonGroup.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=RadioButtonGroup.js.map?dt=1562266598858
+//# sourceMappingURL=RadioButtonGroup.js.map?dt=1562276959107

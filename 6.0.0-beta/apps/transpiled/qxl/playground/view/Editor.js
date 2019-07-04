@@ -316,4 +316,4 @@
   qxl.playground.view.Editor.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Editor.js.map?dt=1562266617832
+//# sourceMappingURL=Editor.js.map?dt=1562276976709

@@ -115,4 +115,4 @@
   qxl.apiviewer.TabViewController.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=TabViewController.js.map?dt=1562266618326
+//# sourceMappingURL=TabViewController.js.map?dt=1562276977141

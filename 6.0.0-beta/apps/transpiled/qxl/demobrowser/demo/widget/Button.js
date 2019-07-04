@@ -131,4 +131,4 @@
   qxl.demobrowser.demo.widget.Button.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Button.js.map?dt=1562266615796
+//# sourceMappingURL=Button.js.map?dt=1562276974851

@@ -40,4 +40,4 @@
   qx.event.type.Tap.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Tap.js.map?dt=1562266590864
+//# sourceMappingURL=Tap.js.map?dt=1562276951473

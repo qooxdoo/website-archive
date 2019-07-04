@@ -100,4 +100,4 @@
   qx.data.Conversion.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Conversion.js.map?dt=1562266586300
+//# sourceMappingURL=Conversion.js.map?dt=1562276947386

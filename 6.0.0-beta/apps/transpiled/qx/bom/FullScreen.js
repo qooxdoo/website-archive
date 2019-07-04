@@ -187,4 +187,4 @@
   qx.bom.FullScreen.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=FullScreen.js.map?dt=1562266581416
+//# sourceMappingURL=FullScreen.js.map?dt=1562276942917

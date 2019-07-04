@@ -466,4 +466,4 @@
   qx.data.marshal.Json.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Json.js.map?dt=1562266586918
+//# sourceMappingURL=Json.js.map?dt=1562276947961

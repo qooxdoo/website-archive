@@ -159,4 +159,4 @@
   qxl.demobrowser.demo.data.OwnCodeInModel.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=OwnCodeInModel.js.map?dt=1562266611562
+//# sourceMappingURL=OwnCodeInModel.js.map?dt=1562276970878

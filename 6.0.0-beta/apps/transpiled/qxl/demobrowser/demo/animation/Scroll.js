@@ -93,4 +93,4 @@
   qxl.demobrowser.demo.animation.Scroll.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Scroll.js.map?dt=1562266610575
+//# sourceMappingURL=Scroll.js.map?dt=1562276969954

@@ -122,4 +122,4 @@
   qx.data.store.Jsonp.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Jsonp.js.map?dt=1562266586989
+//# sourceMappingURL=Jsonp.js.map?dt=1562276948027

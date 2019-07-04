@@ -282,4 +282,4 @@
   qxl.playground.view.Samples.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Samples.js.map?dt=1562266617767
+//# sourceMappingURL=Samples.js.map?dt=1562276976645

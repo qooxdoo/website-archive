@@ -310,4 +310,4 @@
   qxl.demobrowser.demo.showcase.Localization.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Localization.js.map?dt=1562266613424
+//# sourceMappingURL=Localization.js.map?dt=1562276972649

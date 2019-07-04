@@ -132,4 +132,4 @@
   qxl.demobrowser.demo.widget.Canvas.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Canvas.js.map?dt=1562266615823
+//# sourceMappingURL=Canvas.js.map?dt=1562276974866

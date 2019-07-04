@@ -179,4 +179,4 @@
   qxl.demobrowser.demo.util.LayoutPropertyGroup.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=LayoutPropertyGroup.js.map?dt=1562266614902
+//# sourceMappingURL=LayoutPropertyGroup.js.map?dt=1562276974030

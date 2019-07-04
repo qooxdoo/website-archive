@@ -231,4 +231,4 @@
   qxl.widgetbrowser.pages.Misc.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Misc.js.map?dt=1562266617253
+//# sourceMappingURL=Misc.js.map?dt=1562276976179

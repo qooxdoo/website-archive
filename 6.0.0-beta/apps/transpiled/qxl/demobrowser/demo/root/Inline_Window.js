@@ -81,4 +81,4 @@
   qxl.demobrowser.demo.root.Inline_Window.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Inline_Window.js.map?dt=1562266613263
+//# sourceMappingURL=Inline_Window.js.map?dt=1562276972505
