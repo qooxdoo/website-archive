@@ -89,4 +89,4 @@
   qxl.demobrowser.demo.data.Finder.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Finder.js.map?dt=1562276970555
+//# sourceMappingURL=Finder.js.map?dt=1562512200073

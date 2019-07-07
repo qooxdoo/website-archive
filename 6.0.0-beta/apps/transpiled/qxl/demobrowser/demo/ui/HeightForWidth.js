@@ -72,4 +72,4 @@
   qxl.demobrowser.demo.ui.HeightForWidth.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=HeightForWidth.js.map?dt=1562276973716
+//# sourceMappingURL=HeightForWidth.js.map?dt=1562512203305

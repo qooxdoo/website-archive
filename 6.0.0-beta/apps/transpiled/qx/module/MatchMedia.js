@@ -118,4 +118,4 @@
   qx.module.MatchMedia.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MatchMedia.js.map?dt=1562276954200
+//# sourceMappingURL=MatchMedia.js.map?dt=1562512183318

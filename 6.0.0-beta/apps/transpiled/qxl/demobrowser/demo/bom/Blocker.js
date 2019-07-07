@@ -99,4 +99,4 @@
   qxl.demobrowser.demo.bom.Blocker.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Blocker.js.map?dt=1562276970049
+//# sourceMappingURL=Blocker.js.map?dt=1562512199544

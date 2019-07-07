@@ -99,4 +99,4 @@
   qx.core.GlobalError.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=GlobalError.js.map?dt=1562276946669
+//# sourceMappingURL=GlobalError.js.map?dt=1562512175824

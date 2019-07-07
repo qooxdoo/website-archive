@@ -633,4 +633,4 @@
   qx.ui.core.scroll.AbstractScrollArea.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractScrollArea.js.map?dt=1562276957579
+//# sourceMappingURL=AbstractScrollArea.js.map?dt=1562512186781

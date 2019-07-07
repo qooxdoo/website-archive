@@ -74,4 +74,4 @@
   qxl.demobrowser.demo.table.Table_Meta_Columns.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Table_Meta_Columns.js.map?dt=1562276973015
+//# sourceMappingURL=Table_Meta_Columns.js.map?dt=1562512202571

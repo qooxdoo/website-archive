@@ -264,4 +264,4 @@
   qxl.demobrowser.demo.virtual.Cells.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Cells.js.map?dt=1562276974179
+//# sourceMappingURL=Cells.js.map?dt=1562512203785

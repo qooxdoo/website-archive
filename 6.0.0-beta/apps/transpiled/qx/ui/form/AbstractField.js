@@ -1020,4 +1020,4 @@
   qx.ui.form.AbstractField.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=AbstractField.js.map?dt=1562276958620
+//# sourceMappingURL=AbstractField.js.map?dt=1562512187831

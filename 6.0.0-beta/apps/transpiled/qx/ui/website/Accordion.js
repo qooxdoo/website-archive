@@ -139,4 +139,4 @@
   qx.ui.website.Accordion.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Accordion.js.map?dt=1562276967181
+//# sourceMappingURL=Accordion.js.map?dt=1562512196594

@@ -370,4 +370,4 @@
   qxl.demobrowser.demo.widget.MenuBar.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MenuBar.js.map?dt=1562276975342
+//# sourceMappingURL=MenuBar.js.map?dt=1562512204964

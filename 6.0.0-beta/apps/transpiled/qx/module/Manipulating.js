@@ -595,4 +595,4 @@
   qx.module.Manipulating.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Manipulating.js.map?dt=1562276954184
+//# sourceMappingURL=Manipulating.js.map?dt=1562512183308

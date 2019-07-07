@@ -87,4 +87,4 @@
   qxl.demobrowser.demo.widget.ColorPopup.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ColorPopup.js.map?dt=1562276974899
+//# sourceMappingURL=ColorPopup.js.map?dt=1562512204516

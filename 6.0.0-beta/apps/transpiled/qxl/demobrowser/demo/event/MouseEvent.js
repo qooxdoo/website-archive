@@ -101,4 +101,4 @@
   qxl.demobrowser.demo.event.MouseEvent.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MouseEvent.js.map?dt=1562276971384
+//# sourceMappingURL=MouseEvent.js.map?dt=1562512200890

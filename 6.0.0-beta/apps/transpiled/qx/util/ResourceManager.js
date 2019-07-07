@@ -450,4 +450,4 @@
   qx.util.ResourceManager.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ResourceManager.js.map?dt=1562276968389
+//# sourceMappingURL=ResourceManager.js.map?dt=1562512197831

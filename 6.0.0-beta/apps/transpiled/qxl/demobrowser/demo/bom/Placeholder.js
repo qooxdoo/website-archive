@@ -70,4 +70,4 @@
   qxl.demobrowser.demo.bom.Placeholder.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Placeholder.js.map?dt=1562276970281
+//# sourceMappingURL=Placeholder.js.map?dt=1562512199783

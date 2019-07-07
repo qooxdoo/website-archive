@@ -69,4 +69,4 @@
   qxl.demobrowser.demo.widget.ColorSelector.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=ColorSelector.js.map?dt=1562276974907
+//# sourceMappingURL=ColorSelector.js.map?dt=1562512204524

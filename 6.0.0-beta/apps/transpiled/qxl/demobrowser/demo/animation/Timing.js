@@ -89,4 +89,4 @@
   qxl.demobrowser.demo.animation.Timing.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Timing.js.map?dt=1562276969971
+//# sourceMappingURL=Timing.js.map?dt=1562512199462

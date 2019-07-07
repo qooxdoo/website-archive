@@ -173,4 +173,4 @@
   qx.bom.GeoLocation.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=GeoLocation.js.map?dt=1562276942937
+//# sourceMappingURL=GeoLocation.js.map?dt=1562512172074

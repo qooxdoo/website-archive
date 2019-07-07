@@ -126,4 +126,4 @@
   qx.core.WindowError.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=WindowError.js.map?dt=1562276947257
+//# sourceMappingURL=WindowError.js.map?dt=1562512176415

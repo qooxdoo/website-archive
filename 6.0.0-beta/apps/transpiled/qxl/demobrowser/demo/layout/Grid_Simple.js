@@ -212,4 +212,4 @@
   qxl.demobrowser.demo.layout.Grid_Simple.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Grid_Simple.js.map?dt=1562276971824
+//# sourceMappingURL=Grid_Simple.js.map?dt=1562512201338

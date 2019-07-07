@@ -3,11 +3,11 @@
   "libraries": {
     "qx": "6.0.0-beta",
     "qxl.playground": "1.0.0-beta.5",
+    "qxl.logpane": "1.0.0-beta.0",
+    "qxl.demobrowser": "1.0.0-beta.11",
     "qxl.apiviewer": "1.0.0-beta.3",
     "qxl.widgetbrowser": "1.0.0-beta.0",
     "qxl.formdemo": "1.0.0-beta.0",
-    "qxl.versionlabel": "1.0.0-beta.0",
-    "qxl.demobrowser": "1.0.0-beta.11",
-    "qxl.logpane": "1.0.0-beta.0"
+    "qxl.versionlabel": "1.0.0-beta.0"
   }
 }

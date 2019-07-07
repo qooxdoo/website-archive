@@ -84,4 +84,4 @@
   qx.ui.core.MNativeOverflow.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=MNativeOverflow.js.map?dt=1562276956945
+//# sourceMappingURL=MNativeOverflow.js.map?dt=1562512186163

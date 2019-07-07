@@ -1691,4 +1691,4 @@
   qx.ui.core.selection.Abstract.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=Abstract.js.map?dt=1562276958038
+//# sourceMappingURL=Abstract.js.map?dt=1562512187247

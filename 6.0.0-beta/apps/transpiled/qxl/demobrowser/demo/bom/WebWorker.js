@@ -127,4 +127,4 @@
   qxl.demobrowser.demo.bom.WebWorker.$$dbClassInfo = $$dbClassInfo;
 })();
 
-//# sourceMappingURL=WebWorker.js.map?dt=1562276970486
+//# sourceMappingURL=WebWorker.js.map?dt=1562512199996
