@@ -3255,13 +3255,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/go-bottom.png": [
+    "qx/icon/Tango/16/actions/format-text-underline.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/actions/format-text-underline.png": [
+    "qx/icon/Tango/16/actions/go-bottom.png": [
       16,
       16,
       "png",
