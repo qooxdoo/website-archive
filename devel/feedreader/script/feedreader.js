@@ -5,7 +5,7 @@ if (!window.qx) window.qx = {};
 qx.$$start = new Date();
 
 if (!qx.$$environment) qx.$$environment = {};
-var envinfo = {"qx.application":"feedreader.Application","qx.debug":false,"qx.debug.databinding":false,"qx.debug.dispose":false,"qx.debug.io":false,"qx.debug.ui.queue":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.comments":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:f8cb8e7","qx.theme":"qx.theme.Indigo","qx.version":"6.0.0-beta"};
+var envinfo = {"qx.application":"feedreader.Application","qx.debug":false,"qx.debug.databinding":false,"qx.debug.dispose":false,"qx.debug.io":false,"qx.debug.ui.queue":false,"qx.nativeScrollBars":true,"qx.optimization.basecalls":true,"qx.optimization.comments":true,"qx.optimization.privates":true,"qx.optimization.strings":true,"qx.optimization.variables":true,"qx.optimization.variants":true,"qx.optimization.whitespace":true,"qx.revision":"HEAD:2052e60","qx.theme":"qx.theme.Indigo","qx.version":"6.0.0-beta"};
 for (var k in envinfo) qx.$$environment[k] = envinfo[k];
 
 if (!qx.$$libraries) qx.$$libraries = {};
@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"C":[8],"addfeed":[7,5,1],"boot":[7],"cs":[8,1024],"de":[8,128],"en":[8,16],"es":[8,4096],"fr":[8,256],"it":[8,64],"nl":[8,32],"ro":[8,2048],"settings":[7,5,4],"sv":[8,512]},
-  packages : {"1":{"uris":["__out__:feedreader.5f7aa54acd77.js"]},"4":{"uris":["__out__:feedreader.b25676755978.js"]},"5":{"uris":["__out__:feedreader.08e91eee0dda.js"]},"7":{"uris":["__out__:feedreader.ac0e01861cdf.js"]},"8":{"uris":["__out__:feedreader-C.1f212aacf10c.js"]},"16":{"uris":["__out__:feedreader-en.d760cbb9563a.js"]},"32":{"uris":["__out__:feedreader-nl.47f3481af6f1.js"]},"64":{"uris":["__out__:feedreader-it.873d1cc752c0.js"]},"128":{"uris":["__out__:feedreader-de.747b1150d6a4.js"]},"256":{"uris":["__out__:feedreader-fr.d426cb75a3d5.js"]},"512":{"uris":["__out__:feedreader-sv.4265a968058b.js"]},"1024":{"uris":["__out__:feedreader-cs.fe19df37c108.js"]},"2048":{"uris":["__out__:feedreader-ro.962663cf03cf.js"]},"4096":{"uris":["__out__:feedreader-es.9d96baf327a9.js"]}},
+  packages : {"1":{"uris":["__out__:feedreader.5f7aa54acd77.js"]},"4":{"uris":["__out__:feedreader.b25676755978.js"]},"5":{"uris":["__out__:feedreader.08e91eee0dda.js"]},"7":{"uris":["__out__:feedreader.9dea038fa1d7.js"]},"8":{"uris":["__out__:feedreader-C.1f212aacf10c.js"]},"16":{"uris":["__out__:feedreader-en.d760cbb9563a.js"]},"32":{"uris":["__out__:feedreader-nl.47f3481af6f1.js"]},"64":{"uris":["__out__:feedreader-it.873d1cc752c0.js"]},"128":{"uris":["__out__:feedreader-de.747b1150d6a4.js"]},"256":{"uris":["__out__:feedreader-fr.d426cb75a3d5.js"]},"512":{"uris":["__out__:feedreader-sv.4265a968058b.js"]},"1024":{"uris":["__out__:feedreader-cs.fe19df37c108.js"]},"2048":{"uris":["__out__:feedreader-ro.962663cf03cf.js"]},"4096":{"uris":["__out__:feedreader-es.9d96baf327a9.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
