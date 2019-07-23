@@ -218,7 +218,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190723-1026",
+  "qx.compilerVersion": "1.0.0-beta.20190723-1829",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/",
   "qx.allowUrlVariants": true,
@@ -246,15 +246,7 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.logpane": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
   "qxl.versionlabel": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.demobrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
@@ -271,6 +263,14 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../resource"
   },
   "qxl.mobileshowcase": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.logpane": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.demobrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }
@@ -367,6 +367,14 @@ qx.$$loader = {
    * Adds event handlers
    */
   on: function(eventType, handler) {
+    if (qx.$$loader.applicationHandlerReady) {
+      if (eventType === "ready") {
+        handler(null);
+      } else {
+        qx.event.Registration.addListener(window, eventType, handler.handler);
+      }
+      return;
+    }
     if (this.deferredEvents === null)
       this.deferredEvents = {};
     var handlers = this.deferredEvents[eventType];
@@ -374,7 +382,7 @@ qx.$$loader = {
       handlers = this.deferredEvents[eventType] = [];
     handlers.push({ eventType: eventType, handler: handler });
   },
-
+  
   /*
    * Startup handler, hooks into Qooxdoo proper
    */
@@ -398,7 +406,7 @@ qx.$$loader = {
         qx.event.handler.Application.onScriptLoaded();
         qx.$$loader.applicationHandlerReady = true;
       } else {
-        qx.$$loader.applicationHandlerReady = false;
+        qx.$$loader.applicationHandlerReady = true;
         readyHandlers.forEach(function(handler) {
           handler(null);
         });

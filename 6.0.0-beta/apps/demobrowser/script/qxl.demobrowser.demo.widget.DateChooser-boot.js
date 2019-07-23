@@ -302,6 +302,9 @@ qx.$$loader = {
       "qx:qx/event/handler/Keyboard.js",
       "qx:qx/event/dispatch/AbstractBubbling.js",
       "qx:qx/event/dispatch/DomBubbling.js",
+      "qx:qx/event/type/Dom.js",
+      "qx:qx/event/type/Mouse.js",
+      "qx:qx/event/type/Pointer.js",
       "qx:qx/event/type/dom/Custom.js",
       "qx:qx/event/type/dom/Pointer.js",
       "qx:qx/bom/client/Event.js",
@@ -309,9 +312,6 @@ qx.$$loader = {
       "qx:qx/event/handler/PointerCore.js",
       "qx:qx/event/handler/Pointer.js",
       "qx:qx/event/handler/GestureCore.js",
-      "qx:qx/event/type/Dom.js",
-      "qx:qx/event/type/Mouse.js",
-      "qx:qx/event/type/Pointer.js",
       "qx:qx/event/type/Tap.js",
       "qx:qx/event/type/Swipe.js",
       "qx:qx/event/type/Rotate.js",
@@ -570,6 +570,14 @@ qx.$$loader = {
    * Adds event handlers
    */
   on: function(eventType, handler) {
+    if (qx.$$loader.applicationHandlerReady) {
+      if (eventType === "ready") {
+        handler(null);
+      } else {
+        qx.event.Registration.addListener(window, eventType, handler.handler);
+      }
+      return;
+    }
     if (this.deferredEvents === null)
       this.deferredEvents = {};
     var handlers = this.deferredEvents[eventType];
@@ -577,7 +585,7 @@ qx.$$loader = {
       handlers = this.deferredEvents[eventType] = [];
     handlers.push({ eventType: eventType, handler: handler });
   },
-
+  
   /*
    * Startup handler, hooks into Qooxdoo proper
    */
@@ -601,7 +609,7 @@ qx.$$loader = {
         qx.event.handler.Application.onScriptLoaded();
         qx.$$loader.applicationHandlerReady = true;
       } else {
-        qx.$$loader.applicationHandlerReady = false;
+        qx.$$loader.applicationHandlerReady = true;
         readyHandlers.forEach(function(handler) {
           handler(null);
         });

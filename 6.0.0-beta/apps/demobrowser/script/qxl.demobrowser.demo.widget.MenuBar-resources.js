@@ -2559,13 +2559,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-direction-ltr.png": [
+    "qx/icon/Oxygen/16/actions/format-text-direction-rtl.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-direction-rtl.png": [
+    "qx/icon/Oxygen/16/actions/format-text-direction-ltr.png": [
       16,
       16,
       "png",
