@@ -514,27 +514,11 @@ qx.$$loader = {
       "qx:qx/ui/core/MRemoteChildrenHandling.js",
       "qx:qx/ui/core/MRemoteLayoutHandling.js",
       "qx:qx/ui/container/SlideBar.js",
-      "qx:qx/ui/menu/Manager.js",
       "qx:qx/ui/form/RepeatButton.js",
       "qx:qx/ui/core/scroll/ScrollPane.js",
       "qx:qx/ui/layout/VBox.js",
-      "qx:qx/ui/menu/Menu.js",
-      "qx:qx/ui/menu/AbstractButton.js",
-      "qx:qx/ui/form/MenuButton.js",
-      "qx:qx/ui/menubar/Button.js",
-      "qx:qx/ui/menu/ButtonLayout.js",
-      "qx:qx/ui/menu/Button.js",
       "qx:qx/event/AcceleratingTimer.js",
-      "qx:qx/ui/layout/Grow.js",
-      "qx:qx/ui/menu/Layout.js",
-      "qx:qx/ui/menu/Separator.js",
-      "qx:qx/ui/menu/MenuSlideBar.js",
-      "qx:qx/ui/toolbar/ToolBar.js",
-      "qx:qx/ui/form/HoverButton.js",
-      "qx:qx/ui/core/Spacer.js",
-      "qx:qx/ui/toolbar/Separator.js",
-      "qx:qx/ui/toolbar/Part.js",
-      "qx:qx/ui/toolbar/PartContainer.js"
+      "qx:qx/ui/layout/Grow.js"
     ]
   }
 },

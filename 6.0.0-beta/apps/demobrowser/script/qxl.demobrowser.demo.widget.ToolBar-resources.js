@@ -2559,13 +2559,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-direction-rtl.png": [
+    "qx/icon/Oxygen/16/actions/format-text-direction-ltr.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-text-direction-ltr.png": [
+    "qx/icon/Oxygen/16/actions/format-text-direction-rtl.png": [
       16,
       16,
       "png",
@@ -6465,13 +6465,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/object-flip-vertical.png": [
+    "qx/icon/Tango/32/actions/object-rotate-left.png": [
       32,
       32,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/object-rotate-left.png": [
+    "qx/icon/Tango/32/actions/object-flip-vertical.png": [
       32,
       32,
       "png",
