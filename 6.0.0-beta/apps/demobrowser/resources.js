@@ -6519,6 +6519,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/preferences-theme.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/preferences-users.png": [
       16,
       16,
@@ -6568,12 +6574,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/apps/utilities-help.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/preferences-theme.png": [
       16,
       16,
       "png",
@@ -8235,13 +8235,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/object-rotate-left.png": [
+    "qx/icon/Tango/32/actions/object-flip-vertical.png": [
       32,
       32,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/object-flip-vertical.png": [
+    "qx/icon/Tango/32/actions/object-rotate-left.png": [
       32,
       32,
       "png",
@@ -9624,7 +9624,7 @@ qx.$$packageData['0'] = {
     "qxl/demobrowser/demo/icons/imicons/.gitignore": [
       null,
       null,
-      "gitignore",
+      "",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/test/combined/icons22.meta": [
@@ -9650,60 +9650,6 @@ qx.$$packageData['0'] = {
       65,
       "png",
       "qxl.demobrowser"
-    ],
-    "qx/decoration/Modern/arrows-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/colorselector-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/cursors-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/menu-checkradio-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/scrollbar-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/splitpane-knobs-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/table-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/tree-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/window-captionbar-buttons-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
     ]
   },
   "translations": {

@@ -4503,6 +4503,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/preferences-theme.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/preferences-users.png": [
       16,
       16,
@@ -4552,12 +4558,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/apps/utilities-help.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/preferences-theme.png": [
       16,
       16,
       "png",
@@ -5113,60 +5113,6 @@ qx.$$packageData['0'] = {
       1,
       1,
       "png",
-      "qx"
-    ],
-    "qx/decoration/Modern/arrows-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/colorselector-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/cursors-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/menu-checkradio-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/scrollbar-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/splitpane-knobs-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/table-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/tree-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/window-captionbar-buttons-combined.meta": [
-      null,
-      null,
-      "meta",
       "qx"
     ]
   },

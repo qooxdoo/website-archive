@@ -2514,7 +2514,7 @@ qx.$$packageData['0'] = {
     "qx/mobile/css/.gitignore": [
       null,
       null,
-      "gitignore",
+      "",
       "qx"
     ],
     "qx/mobile/css/LICENSE": [
@@ -2876,60 +2876,6 @@ qx.$$packageData['0'] = {
       null,
       "meta",
       "qxl.apiviewer"
-    ],
-    "qx/decoration/Modern/arrows-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/colorselector-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/cursors-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/menu-checkradio-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/scrollbar-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/splitpane-knobs-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/table-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/tree-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
-    "qx/decoration/Modern/window-captionbar-buttons-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
     ]
   },
   "translations": {

@@ -261,7 +261,7 @@ qx.$$packageData['0'] = {
     "qx/mobile/css/.gitignore": [
       null,
       null,
-      "gitignore",
+      "",
       "qx"
     ],
     "qx/mobile/css/LICENSE": [
@@ -402,40 +402,16 @@ qx.$$packageData['0'] = {
       "scss",
       "qxl.mobileshowcase"
     ],
-    "qxl/mobileshowcase/css/custom.css": [
+    "qxl/mobileshowcase/scss/_styles.scss": [
       null,
       null,
-      "css",
+      "scss",
       "qxl.mobileshowcase"
     ],
-    "qxl/mobileshowcase/css/custom.css.map": [
+    "qxl/mobileshowcase/scss/custom.scss": [
       null,
       null,
-      "map",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/css/flat.css": [
-      null,
-      null,
-      "css",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/css/flat.css.map": [
-      null,
-      null,
-      "map",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/css/indigo.css": [
-      null,
-      null,
-      "css",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/css/indigo.css.map": [
-      null,
-      null,
-      "map",
+      "scss",
       "qxl.mobileshowcase"
     ]
   },
