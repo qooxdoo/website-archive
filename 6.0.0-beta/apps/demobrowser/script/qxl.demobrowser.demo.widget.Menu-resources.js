@@ -2199,6 +2199,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Simple/tabview/close.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/tree/minus.gif": [
       19,
       16,
@@ -2331,12 +2337,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/tabview/close.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
@@ -2397,13 +2397,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-open-recent.png": [
+    "qx/icon/Oxygen/16/actions/document-new.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-new.png": [
+    "qx/icon/Oxygen/16/actions/document-open-recent.png": [
       16,
       16,
       "png",
@@ -2457,13 +2457,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-copy.png": [
+    "qx/icon/Oxygen/16/actions/edit-clear.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-clear.png": [
+    "qx/icon/Oxygen/16/actions/edit-copy.png": [
       16,
       16,
       "png",
@@ -2517,13 +2517,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-indent-more.png": [
+    "qx/icon/Oxygen/16/actions/format-indent-less.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/format-indent-less.png": [
+    "qx/icon/Oxygen/16/actions/format-indent-more.png": [
       16,
       16,
       "png",
@@ -2859,6 +2859,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/view-fullscreen.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/view-refresh.png": [
       16,
       16,
@@ -2872,12 +2878,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/view-sort-ascending.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/view-fullscreen.png": [
       16,
       16,
       "png",
@@ -2913,13 +2913,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/zoom-out.png": [
+    "qx/icon/Oxygen/16/actions/zoom-original.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/zoom-original.png": [
+    "qx/icon/Oxygen/16/actions/zoom-out.png": [
       16,
       16,
       "png",
