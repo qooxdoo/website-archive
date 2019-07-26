@@ -2199,9 +2199,15 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/tabview/close.gif": [
-      10,
-      9,
+    "qx/decoration/Simple/tree/minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/tree/plus.gif": [
+      19,
+      16,
       "gif",
       "qx"
     ],
@@ -2325,15 +2331,9 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/tree/minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/tree/plus.gif": [
-      19,
-      16,
+    "qx/decoration/Simple/tabview/close.gif": [
+      10,
+      9,
       "gif",
       "qx"
     ],
