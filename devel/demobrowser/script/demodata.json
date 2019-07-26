@@ -1325,132 +1325,6 @@
         ]
     },
     {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
-            },
-            {
-                "name": "PingPong.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
-                ],
-                "title": "PingPong",
-                "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "root",
-        "tests": [
-            {
-                "name": "Application.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Application",
-                "nr": 0
-            },
-            {
-                "name": "Inline.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.HBox"
-                ],
-                "title": "Inline",
-                "nr": 0
-            },
-            {
-                "name": "Inline_Dynamic_Resize.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.form.Button",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.container.SlideBar",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "Inline Dynamic_Resize",
-                "nr": 0
-            },
-            {
-                "name": "Inline_Window.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Inline Window",
-                "nr": "Window"
-            },
-            {
-                "name": "Page.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Page",
-                "nr": 0
-            }
-        ]
-    },
-    {
         "classname": "layout",
         "tests": [
             {
@@ -2496,6 +2370,132 @@
         ]
     },
     {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
+                "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "root",
+        "tests": [
+            {
+                "name": "Application.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Application",
+                "nr": 0
+            },
+            {
+                "name": "Inline.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.HBox"
+                ],
+                "title": "Inline",
+                "nr": 0
+            },
+            {
+                "name": "Inline_Dynamic_Resize.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.form.Button",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.container.SlideBar",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "Inline Dynamic_Resize",
+                "nr": 0
+            },
+            {
+                "name": "Inline_Window.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Inline Window",
+                "nr": "Window"
+            },
+            {
+                "name": "Page.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Page",
+                "nr": 0
+            }
+        ]
+    },
+    {
         "classname": "showcase",
         "tests": [
             {
@@ -3416,6 +3416,22 @@
                 "nr": 0
             },
             {
+                "name": "Opacity.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.bom.Font",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Opacity",
+                "nr": 0
+            },
+            {
                 "name": "Placement.html",
                 "tags": [
                     "qx.Class.define",
@@ -3466,40 +3482,12 @@
                 ],
                 "title": "WebFonts",
                 "nr": 0
-            },
-            {
-                "name": "Opacity.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.bom.Font",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Opacity",
-                "nr": 0
             }
         ]
     },
     {
         "classname": "virtual",
         "tests": [
-            {
-                "name": "CellEvents.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.test.ui.virtual.layer.LayerSimple",
-                    "qx.ui.embed.Html"
-                ],
-                "title": "CellEvents",
-                "nr": 0
-            },
             {
                 "name": "CellSpan.html",
                 "tags": [
@@ -3944,6 +3932,18 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
+            },
+            {
+                "name": "CellEvents.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.test.ui.virtual.layer.LayerSimple",
+                    "qx.ui.embed.Html"
+                ],
+                "title": "CellEvents",
+                "nr": 0
             }
         ]
     },

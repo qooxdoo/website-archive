@@ -2205,18 +2205,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/tree/minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/tree/plus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/treevirtual/cross.gif": [
       19,
       16,
@@ -2334,6 +2322,18 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/window/restore.gif": [
       8,
       9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/tree/minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/tree/plus.gif": [
+      19,
+      16,
       "gif",
       "qx"
     ],

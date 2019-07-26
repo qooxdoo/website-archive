@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.root.Inline_Dynamic_Resize.17d28b594700.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.root.Inline_Dynamic_Resize.bc2a5c225620.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -5603,33 +5603,6 @@ else {return B.scrollHeight-z;}
 ,getContentSize:function(C){return {width:this.getContentWidth(C),height:this.getContentHeight(C)};}
 }});}
 )();
-(function(){var a="This client does not support the boxSizing value",b="border-box",c="qx.bom.element.BoxSizing",d="css.boxsizing",e="",f="This client does not support dynamic modification of the boxSizing property.",g="qx.debug",h="boxSizing",i="content-box",j=":",k=";";qx.Bootstrap.define(c,{statics:{__fv:{tags:{button:true,select:true},types:{search:true,button:true,submit:true,reset:true,checkbox:true,radio:true}},__fw:function(m){var l=this.__fv;return l.tags[m.tagName.toLowerCase()]||l.types[m.type];}
-,compile:function(n){if(qx.core.Environment.get(d)){var o=qx.bom.Style.getCssName(qx.core.Environment.get(d));return o+j+n+k;}
-else {if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,f);qx.log.Logger.trace();}
-;}
-;}
-,get:function(p){if(qx.core.Environment.get(d)){return qx.bom.element.Style.get(p,h,null,false)||e;}
-;if(qx.bom.Document.isStandardMode(qx.dom.Node.getWindow(p))){if(!this.__fw(p)){return i;}
-;}
-;return b;}
-,set:function(r,q){if(qx.core.Environment.get(d)){try{r.style[qx.core.Environment.get(d)]=q;}
-catch(s){if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,a,q);}
-;}
-;}
-else {if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,f);}
-;}
-;}
-,reset:function(t){this.set(t,e);}
-}});}
-)();
-(function(){var a="cursor:",b="engine.name",c="",d="mshtml",e="nw-resize",f="engine.version",g="nesw-resize",h="browser.documentmode",i=";",j="nwse-resize",k="qx.bom.element.Cursor",l="ne-resize",m="browser.quirksmode",n="cursor";qx.Bootstrap.define(k,{statics:{__fx:{},compile:function(o){return a+(this.__fx[o]||o)+i;}
-,get:function(q,p){return qx.bom.element.Style.get(q,n,p,false);}
-,set:function(s,r){s.style.cursor=this.__fx[r]||r;}
-,reset:function(t){t.style.cursor=c;}
-},defer:function(u){if(qx.core.Environment.get(b)==d&&((parseFloat(qx.core.Environment.get(f))<9||qx.core.Environment.get(h)<9)&&!qx.core.Environment.get(m))){u.__fx[g]=l;u.__fx[j]=e;}
-;}
-});}
-)();
 (function(){var a="engine.name",b=");",c="",d=")",e="zoom:1;filter:alpha(opacity=",f="qx.bom.element.Opacity",g="css.opacity",h=";",i="opacity:",j="alpha(opacity=",k="opacity",l="filter";qx.Bootstrap.define(f,{statics:{compile:qx.core.Environment.select(a,{"mshtml":function(m){if(m>=1){m=1;}
 ;if(m<0.00001){m=0;}
 ;if(qx.core.Environment.get(g)){return i+m+h;}
@@ -5656,6 +5629,33 @@ else {var x=qx.bom.element.Style.get(z,l,y,false);if(x){var w=x.match(/alpha\(op
 ,"default":function(C,B){var A=qx.bom.element.Style.get(C,k,B,false);if(A!=null){return parseFloat(A);}
 ;return 1.0;}
 })}});}
+)();
+(function(){var a="cursor:",b="engine.name",c="",d="mshtml",e="nw-resize",f="engine.version",g="nesw-resize",h="browser.documentmode",i=";",j="nwse-resize",k="qx.bom.element.Cursor",l="ne-resize",m="browser.quirksmode",n="cursor";qx.Bootstrap.define(k,{statics:{__fv:{},compile:function(o){return a+(this.__fv[o]||o)+i;}
+,get:function(q,p){return qx.bom.element.Style.get(q,n,p,false);}
+,set:function(s,r){s.style.cursor=this.__fv[r]||r;}
+,reset:function(t){t.style.cursor=c;}
+},defer:function(u){if(qx.core.Environment.get(b)==d&&((parseFloat(qx.core.Environment.get(f))<9||qx.core.Environment.get(h)<9)&&!qx.core.Environment.get(m))){u.__fv[g]=l;u.__fv[j]=e;}
+;}
+});}
+)();
+(function(){var a="This client does not support the boxSizing value",b="border-box",c="qx.bom.element.BoxSizing",d="css.boxsizing",e="",f="This client does not support dynamic modification of the boxSizing property.",g="qx.debug",h="boxSizing",i="content-box",j=":",k=";";qx.Bootstrap.define(c,{statics:{__fw:{tags:{button:true,select:true},types:{search:true,button:true,submit:true,reset:true,checkbox:true,radio:true}},__fx:function(m){var l=this.__fw;return l.tags[m.tagName.toLowerCase()]||l.types[m.type];}
+,compile:function(n){if(qx.core.Environment.get(d)){var o=qx.bom.Style.getCssName(qx.core.Environment.get(d));return o+j+n+k;}
+else {if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,f);qx.log.Logger.trace();}
+;}
+;}
+,get:function(p){if(qx.core.Environment.get(d)){return qx.bom.element.Style.get(p,h,null,false)||e;}
+;if(qx.bom.Document.isStandardMode(qx.dom.Node.getWindow(p))){if(!this.__fx(p)){return i;}
+;}
+;return b;}
+,set:function(r,q){if(qx.core.Environment.get(d)){try{r.style[qx.core.Environment.get(d)]=q;}
+catch(s){if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,a,q);}
+;}
+;}
+else {if(qx.core.Environment.get(g)){qx.log.Logger.warn(this,f);}
+;}
+;}
+,reset:function(t){this.set(t,e);}
+}});}
 )();
 (function(){var a="clip:auto;",b="rect(",c=")",d=");",e="",f="px",g="Could not parse clip string: ",h="qx.bom.element.Clip",i="string",j="clip:rect(",k=" ",l="clip",m="rect(auto,auto,auto,auto)",n="rect(auto, auto, auto, auto)",o="auto",p=",";qx.Bootstrap.define(h,{statics:{compile:function(q){if(!q){return a;}
 ;var v=q.left;var top=q.top;var u=q.width;var t=q.height;var r,s;if(v==null){r=(u==null?o:u+f);v=o;}
@@ -7100,7 +7100,7 @@ else {Y[name]=h;}
 ;}
 ;}
 ;}
-;for(var U in V){var T=V[U];for(var name in Y){if(T[name]==undefined){if(name in R.style){if(window.getComputedStyle){T[name]=getComputedStyle(R,null)[name];}
+;for(var U in V){var T=V[U];for(var name in Y){if(T[name]==undefined){if(name in R.style){if(window.getComputedStyle){T[name]=window.getComputedStyle(R,null)[name];}
 else {T[name]=R.style[name];}
 ;}
 else {T[name]=R[name];}
@@ -10616,30 +10616,30 @@ else {this.addListener(u,this._onNativeContextMenu,this,true);}
 }});}
 )();
 (function(){var a="resize",b="mshtml",c="engine.name",d="relative",f="",g=" needs a height when its height size should be used!",h="px",i="qx.debug",j="height",k=" needs a width when its width size should be used!",l="-webkit-backface-visibility",m="qx.ui.root.Inline",n="appear",o="hidden",p="div",q="left",r="The root element ",s=" of ",t="Please use a DOM element to create an inline root.";qx.Class.define(m,{extend:qx.ui.root.Abstract,include:[qx.ui.core.MLayoutHandling],construct:function(v,w,u){if(qx.core.Environment.get(i)){this.assertElement(v,t);}
-;this.__yS=v;v.style.overflow=o;v.style.textAlign=q;this.__yT=w||false;this.__yU=u||false;this.__yV();qx.ui.root.Abstract.call(this);this._setLayout(new qx.ui.layout.Basic());qx.ui.core.queue.Layout.add(this);qx.ui.core.FocusHandler.getInstance().connectTo(this);if((qx.core.Environment.get(c)==b)){this.setKeepFocus(true);}
+;this.__zc=v;v.style.overflow=o;v.style.textAlign=q;this.__zd=w||false;this.__ze=u||false;this.__zf();qx.ui.root.Abstract.call(this);this._setLayout(new qx.ui.layout.Basic());qx.ui.core.queue.Layout.add(this);qx.ui.core.FocusHandler.getInstance().connectTo(this);if((qx.core.Environment.get(c)==b)){this.setKeepFocus(true);}
 ;var window=qx.dom.Node.getWindow(v);qx.event.Registration.addListener(window,a,this._onWindowResize,this);this.getContentElement().setStyle(l,o);}
-,members:{__yT:false,__yU:false,__yS:null,__yV:function(){if(this.__yT||this.__yU){var x=qx.bom.element.Dimension.getSize(this.__yS);if(this.__yT&&x.width<1){throw new Error(r+this.__yS+s+this+k);}
-;if(this.__yU){if(x.height<1){throw new Error(r+this.__yS+s+this+g);}
-;if(x.height>=1&&qx.bom.element.Style.get(this.__yS,j,3)==f){qx.bom.element.Style.set(this.__yS,j,x.height+h);}
+,members:{__zd:false,__ze:false,__zc:null,__zf:function(){if(this.__zd||this.__ze){var x=qx.bom.element.Dimension.getSize(this.__zc);if(this.__zd&&x.width<1){throw new Error(r+this.__zc+s+this+k);}
+;if(this.__ze){if(x.height<1){throw new Error(r+this.__zc+s+this+g);}
+;if(x.height>=1&&qx.bom.element.Style.get(this.__zc,j,3)==f){qx.bom.element.Style.set(this.__zc,j,x.height+h);}
 ;}
-;qx.event.Registration.addListener(this.__yS,a,this._onResize,this);}
+;qx.event.Registration.addListener(this.__zc,a,this._onResize,this);}
 ;}
-,_createContentElement:function(){var y=this.__yS;if(this.__yT||this.__yU){var A=document.createElement(p);y.appendChild(A);}
+,_createContentElement:function(){var y=this.__zc;if(this.__zd||this.__ze){var A=document.createElement(p);y.appendChild(A);}
 else {A=y;}
 ;var z=new qx.html.Root(A);A.style.position=d;z.connectWidget(this);qx.event.Timer.once(function(e){this.fireEvent(n);}
 ,this,0);return z;}
-,_onResize:function(e){var B=e.getData();if((B.oldWidth!==B.width)&&this.__yT||(B.oldHeight!==B.height)&&this.__yU){qx.ui.core.queue.Layout.add(this);}
+,_onResize:function(e){var B=e.getData();if((B.oldWidth!==B.width)&&this.__zd||(B.oldHeight!==B.height)&&this.__ze){qx.ui.core.queue.Layout.add(this);}
 ;}
 ,_onWindowResize:function(){if(qx.ui.popup&&qx.ui.popup.Manager){qx.ui.popup.Manager.getInstance().hideAll();}
 ;if(qx.ui.menu&&qx.ui.menu.Manager){qx.ui.menu.Manager.getInstance().hideAll();}
 ;}
-,_computeSizeHint:function(){var G=this.__yT;var D=this.__yU;if(!G||!D){var C=qx.ui.root.Abstract.prototype._computeSizeHint.call(this);}
+,_computeSizeHint:function(){var G=this.__zd;var D=this.__ze;if(!G||!D){var C=qx.ui.root.Abstract.prototype._computeSizeHint.call(this);}
 else {C={};}
-;var H=qx.bom.element.Dimension;if(G){var F=H.getContentWidth(this.__yS);C.width=F;C.minWidth=F;C.maxWidth=F;}
-;if(D){var E=H.getContentHeight(this.__yS);C.height=E;C.minHeight=E;C.maxHeight=E;}
+;var H=qx.bom.element.Dimension;if(G){var F=H.getContentWidth(this.__zc);C.width=F;C.minWidth=F;C.maxWidth=F;}
+;if(D){var E=H.getContentHeight(this.__zc);C.height=E;C.minHeight=E;C.maxHeight=E;}
 ;return C;}
 },defer:function(I,J){qx.ui.core.MLayoutHandling.remap(J);}
-,destruct:function(){qx.event.Registration.removeListener(this.__yS,a,this._onResize,this);this.__yS=null;}
+,destruct:function(){qx.event.Registration.removeListener(this.__zc,a,this._onResize,this);this.__zc=null;}
 });}
 )();
 (function(){var a="resize",b="__ei",c="interval",d="body",f="qx.event.handler.ElementResize";qx.Class.define(f,{extend:qx.core.Object,implement:[qx.event.IEventHandler,qx.core.IDisposable],construct:function(g){qx.core.Object.call(this);this.__dU=g;this.__yP={};this.__ei=new qx.event.Timer(200);this.__ei.addListener(c,this._onInterval,this);}
