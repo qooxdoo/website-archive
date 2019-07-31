@@ -366,6 +366,12 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.mobileshowcase"
     ],
+    "qxl/mobileshowcase/icon/mobile.png": [
+      45,
+      33,
+      "png",
+      "qxl.mobileshowcase"
+    ],
     "qxl/mobileshowcase/icon/mobile@2x.png": [
       90,
       66,
@@ -375,12 +381,6 @@ qx.$$packageData['0'] = {
     "qxl/mobileshowcase/icon/qooxdoo.png": [
       133,
       38,
-      "png",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/icon/mobile.png": [
-      45,
-      33,
       "png",
       "qxl.mobileshowcase"
     ],
