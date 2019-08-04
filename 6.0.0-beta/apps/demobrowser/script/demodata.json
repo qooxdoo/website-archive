@@ -17,6 +17,15 @@
                 "nr": 0
             },
             {
+                "name": "Timing.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Timing",
+                "nr": 0
+            },
+            {
                 "name": "Animation_3d.html",
                 "tags": [
                     "noPlayground",
@@ -68,15 +77,6 @@
                 ],
                 "title": "Scroll",
                 "nr": 0
-            },
-            {
-                "name": "Timing.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Timing",
-                "nr": 0
             }
         ]
     },
@@ -93,18 +93,6 @@
                 ],
                 "title": "AttributeStyle 1",
                 "nr": "1"
-            },
-            {
-                "name": "AttributeStyle_2.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.dom.Element.create",
-                    "qx.dom.Element.create",
-                    "qx.bom.element.Attribute.set"
-                ],
-                "title": "AttributeStyle 2",
-                "nr": "2"
             },
             {
                 "name": "Audio.html",
@@ -375,6 +363,18 @@
                 "nr": 0
             },
             {
+                "name": "AttributeStyle_2.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.dom.Element.create",
+                    "qx.dom.Element.create",
+                    "qx.bom.element.Attribute.set"
+                ],
+                "title": "AttributeStyle 2",
+                "nr": "2"
+            },
+            {
                 "name": "Location_StandardMode.html",
                 "tags": [
                     "noPlayground",
@@ -388,6 +388,14 @@
                 "nr": "StandardMode"
             },
             {
+                "name": "Placeholder.html",
+                "tags": [
+                    "qx.Class.define"
+                ],
+                "title": "Placeholder",
+                "nr": 0
+            },
+            {
                 "name": "PageVisibility.html",
                 "tags": [
                     "noPlayground",
@@ -395,14 +403,6 @@
                     "qx.bom.PageVisibility"
                 ],
                 "title": "PageVisibility",
-                "nr": 0
-            },
-            {
-                "name": "Placeholder.html",
-                "tags": [
-                    "qx.Class.define"
-                ],
-                "title": "Placeholder",
                 "nr": 0
             },
             {
@@ -489,15 +489,6 @@
                 "nr": 0
             },
             {
-                "name": "Selector.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Selector",
-                "nr": 0
-            },
-            {
                 "name": "Storage.html",
                 "tags": [
                     "noPlayground",
@@ -560,6 +551,15 @@
                     "qx.bom.element.Transform.transform"
                 ],
                 "title": "Transform",
+                "nr": 0
+            },
+            {
+                "name": "Selector.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Selector",
                 "nr": 0
             },
             {
@@ -1328,21 +1328,6 @@
         "classname": "layout",
         "tests": [
             {
-                "name": "Basic.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Basic",
-                "nr": 0
-            },
-            {
                 "name": "Canvas_Fixed.html",
                 "tags": [
                     "noPlayground",
@@ -1852,6 +1837,21 @@
                 ],
                 "title": "HBox Margin",
                 "nr": "Margin"
+            },
+            {
+                "name": "Basic.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Basic",
+                "nr": 0
             },
             {
                 "name": "HBox_NegativeMargin.html",
