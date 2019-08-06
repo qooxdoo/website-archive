@@ -146,7 +146,7 @@ var envinfo = {
           "email": "first.author@some.domain"
         }
       ],
-      "version": "1.0.0-beta.1"
+      "version": "1.0.0-beta.3"
     },
     "qxl.formdemo": {
       "name": "formdemo",
@@ -164,7 +164,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.0"
+      "version": "1.0.0-beta.1"
     }
   },
   "true": true,
@@ -193,7 +193,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190801-1345",
+  "qx.compilerVersion": "1.0.0-beta.20190805-1047",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/"
 };
@@ -226,10 +226,6 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.apiviewer": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
   "qxl.widgetbrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -238,7 +234,15 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
+  "qxl.apiviewer": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.mobileshowcase": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.datademo": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }

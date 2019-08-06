@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -522,7 +522,6 @@ qx.$$loader = {
       "qx:qx/ui/virtual/selection/MModel.js",
       "qx:qx/data/controller/ISelection.js",
       "qx:qx/ui/virtual/core/Pane.js",
-      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/list/List.js",
       "qx:qx/bom/String.js",
       "qx:qx/bom/rest/Resource.js",
@@ -551,6 +550,7 @@ qx.$$loader = {
       "qx:qx/ui/list/core/MWidgetController.js",
       "qx:qx/ui/list/provider/WidgetProvider.js",
       "qx:qx/util/Delegate.js",
+      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/core/CellEvent.js",
       "qx:qx/util/StringEscape.js",
       "qx:qx/bom/request/Xhr.js",

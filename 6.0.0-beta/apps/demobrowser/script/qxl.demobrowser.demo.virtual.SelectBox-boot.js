@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -548,7 +548,6 @@ qx.$$loader = {
       "qx:qx/ui/virtual/core/Scroller.js",
       "qx:qx/ui/virtual/selection/MModel.js",
       "qx:qx/ui/virtual/core/Pane.js",
-      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/list/List.js",
       "qx:qx/util/Request.js",
       "qx:qx/util/Serializer.js",
@@ -566,6 +565,7 @@ qx.$$loader = {
       "qx:qx/ui/list/provider/IListProvider.js",
       "qx:qx/ui/list/core/MWidgetController.js",
       "qx:qx/ui/list/provider/WidgetProvider.js",
+      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/core/CellEvent.js",
       "qx:qx/ui/virtual/layer/WidgetCell.js",
       "qx:qx/ui/virtual/cell/IWidgetCell.js",

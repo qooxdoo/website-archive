@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -527,7 +527,6 @@ qx.$$loader = {
       "qx:qx/ui/core/selection/Abstract.js",
       "qx:qx/ui/virtual/selection/Abstract.js",
       "qx:qx/ui/virtual/core/Pane.js",
-      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/selection/CellRectangle.js",
       "qx:qx/ui/core/scroll/MScrollBarFactory.js",
       "qx:qx/ui/core/scroll/MRoll.js",
@@ -543,6 +542,7 @@ qx.$$loader = {
       "qx:qx/ui/virtual/behavior/Prefetch.js",
       "qx:qx/ui/virtual/layer/HtmlCell.js",
       "qx:qx/ui/virtual/layer/GridLines.js",
+      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/core/CellEvent.js",
       "qx:qx/ui/core/scroll/IScrollBar.js",
       "qx:qx/ui/core/scroll/ScrollBar.js",

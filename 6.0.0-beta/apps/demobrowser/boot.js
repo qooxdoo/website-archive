@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -176,7 +176,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.1"
+      "version": "1.0.0-beta.3"
     },
     "qxl.versionlabel": {
       "name": "versionlabel",
@@ -187,6 +187,42 @@ var envinfo = {
         {
           "name": "First Author (uid)",
           "email": "first.author@some.domain"
+        }
+      ],
+      "version": "1.0.0-beta.3"
+    },
+    "qxl.datademo": {
+      "name": "datademo",
+      "summary": "Common used data binding demo",
+      "description": "This is a demo containing a container showing a data bound list.",
+      "homepage": "http://qooxdoo.org/",
+      "license": "MIT",
+      "authors": [
+        {
+          "name": "Martin Wittemann (martinwittemann)",
+          "email": "martin DOT wittemann AT 1und1 DOT de"
+        },
+        {
+          "name": "Henner Kollmann (hkollmann)",
+          "email": "Henner DOT Kollmann AT gmx DOT de"
+        }
+      ],
+      "version": "1.0.0-beta.2"
+    },
+    "qxl.formdemo": {
+      "name": "formdemo",
+      "summary": "Common used from demo",
+      "description": "This is a demo containing a container showing all form items.",
+      "homepage": "http://qooxdoo.org/",
+      "license": "MIT",
+      "authors": [
+        {
+          "name": "Martin Wittemann (martinwittemann)",
+          "email": "martin DOT wittemann AT 1und1 DOT de"
+        },
+        {
+          "name": "Henner Kollmann (hkollmann)",
+          "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
       "version": "1.0.0-beta.1"
@@ -218,7 +254,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190801-1345",
+  "qx.compilerVersion": "1.0.0-beta.20190805-1047",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/",
   "qx.allowUrlVariants": true,
@@ -258,10 +294,6 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.apiviewer": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
   "qxl.widgetbrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -270,7 +302,15 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
+  "qxl.apiviewer": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.mobileshowcase": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.datademo": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }

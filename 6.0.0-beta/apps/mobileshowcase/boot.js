@@ -77,7 +77,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.0"
+      "version": "1.0.0-beta.1"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -171,7 +171,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190801-1345",
+  "qx.compilerVersion": "1.0.0-beta.20190805-1047",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/"
 };
@@ -204,10 +204,6 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.apiviewer": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
   "qxl.widgetbrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -216,7 +212,15 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
+  "qxl.apiviewer": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.mobileshowcase": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.datademo": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }
@@ -268,7 +272,9 @@ qx.$$loader = {
   }
 },
   urisBefore : [],
-  cssBefore : [],
+  cssBefore : [
+  "qxl.mobileshowcase:qxl/mobileshowcase/css/custom.css"
+],
   boot : "boot",
   closureParts : {},
   bootIsInline : false,

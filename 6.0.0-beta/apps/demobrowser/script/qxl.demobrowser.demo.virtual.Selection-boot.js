@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -545,7 +545,6 @@ qx.$$loader = {
       "qx:qx/ui/core/selection/Abstract.js",
       "qx:qx/ui/virtual/selection/Abstract.js",
       "qx:qx/ui/virtual/core/Pane.js",
-      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/selection/Row.js",
       "qx:qx/ui/virtual/layer/Column.js",
       "qx:qx/ui/virtual/selection/Column.js",
@@ -556,6 +555,7 @@ qx.$$loader = {
       "qx:qx/ui/core/scroll/ScrollBar.js",
       "qx:qx/ui/core/scroll/ScrollPane.js",
       "qx:qx/ui/virtual/core/IHtmlCellProvider.js",
+      "qx:qx/ui/virtual/core/Axis.js",
       "qx:qx/ui/virtual/core/CellEvent.js",
       "qx:qx/ui/core/ISingleSelectionProvider.js",
       "qx:qx/ui/form/INumberForm.js",

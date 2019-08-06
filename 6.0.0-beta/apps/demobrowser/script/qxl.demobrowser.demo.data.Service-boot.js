@@ -89,7 +89,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.12"
+      "version": "1.0.0-beta.13"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -155,6 +155,24 @@ var envinfo = {
         "6.0.0-beta"
       ],
       "sourceViewUri": "https://github.com/qooxdoo/qooxdoo/blob//framework/source/class/#L"
+    },
+    "qxl.datademo": {
+      "name": "datademo",
+      "summary": "Common used data binding demo",
+      "description": "This is a demo containing a container showing a data bound list.",
+      "homepage": "http://qooxdoo.org/",
+      "license": "MIT",
+      "authors": [
+        {
+          "name": "Martin Wittemann (martinwittemann)",
+          "email": "martin DOT wittemann AT 1und1 DOT de"
+        },
+        {
+          "name": "Henner Kollmann (hkollmann)",
+          "email": "Henner DOT Kollmann AT gmx DOT de"
+        }
+      ],
+      "version": "1.0.0-beta.2"
     }
   },
   "qx.allowUrlVariants": true,
@@ -179,6 +197,10 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../../resource"
   },
   "qxl.demobrowser": {
+    "sourceUri": qx.$$appRoot + "../../transpiled/",
+    "resourceUri": qx.$$appRoot + "../../resource"
+  },
+  "qxl.datademo": {
     "sourceUri": qx.$$appRoot + "../../transpiled/",
     "resourceUri": qx.$$appRoot + "../../resource"
   }
@@ -507,7 +529,63 @@ qx.$$loader = {
       "qx:qx/application/Standalone.js",
       "qxl.demobrowser:qxl/demobrowser/demo/data/Service.js",
       "qx:qx/ui/root/Application.js",
-      "qx:qx/ui/layout/Canvas.js"
+      "qxl.datademo:qxl/datademo/Demo.js",
+      "qx:qx/ui/layout/Canvas.js",
+      "qx:qx/ui/core/scroll/MScrollBarFactory.js",
+      "qx:qx/ui/core/scroll/MRoll.js",
+      "qx:qx/ui/core/MDragDropScrolling.js",
+      "qx:qx/ui/core/DragDropScrolling.js",
+      "qx:qx/ui/core/scroll/AbstractScrollArea.js",
+      "qx:qx/ui/core/ISingleSelection.js",
+      "qx:qx/ui/core/IMultiSelection.js",
+      "qx:qx/ui/form/IModelSelection.js",
+      "qx:qx/ui/core/MRemoteChildrenHandling.js",
+      "qx:qx/ui/core/MMultiSelectionHandling.js",
+      "qx:qx/ui/form/MForm.js",
+      "qx:qx/ui/form/MModelSelection.js",
+      "qx:qx/ui/core/selection/Abstract.js",
+      "qx:qx/ui/core/selection/Widget.js",
+      "qx:qx/ui/core/selection/ScrollArea.js",
+      "qx:qx/bom/client/Scroll.js",
+      "qx:qx/ui/layout/Grid.js",
+      "qx:qx/ui/form/List.js",
+      "qx:qx/data/controller/MSelection.js",
+      "qx:qx/data/controller/ISelection.js",
+      "qx:qx/data/controller/List.js",
+      "qx:qx/data/store/Json.js",
+      "qx:qx/data/marshal/IMarshaler.js",
+      "qx:qx/data/marshal/Json.js",
+      "qx:qx/data/store/Jsonp.js",
+      "qx:qx/ui/core/MRemoteLayoutHandling.js",
+      "qx:qx/ui/core/MContentPadding.js",
+      "qx:qx/ui/groupbox/GroupBox.js",
+      "qx:qx/data/controller/Object.js",
+      "qx:qx/ui/core/scroll/IScrollBar.js",
+      "qx:qx/ui/core/scroll/ScrollBar.js",
+      "qx:qx/ui/core/scroll/ScrollPane.js",
+      "qx:qx/ui/layout/VBox.js",
+      "qx:qx/ui/form/IModel.js",
+      "qx:qx/ui/form/MModelProperty.js",
+      "qx:qx/ui/form/ListItem.js",
+      "qx:qx/io/request/AbstractRequest.js",
+      "qx:qx/io/request/Xhr.js",
+      "qx:qx/io/request/Jsonp.js",
+      "qx:qx/ui/form/INumberForm.js",
+      "qx:qx/ui/form/IRange.js",
+      "qx:qx/ui/form/Slider.js",
+      "qx:qx/ui/core/scroll/ScrollSlider.js",
+      "qx:qx/ui/core/MExecutable.js",
+      "qx:qx/ui/form/IExecutable.js",
+      "qx:qx/ui/form/Button.js",
+      "qx:qx/ui/form/RepeatButton.js",
+      "qx:qx/ui/layout/Grow.js",
+      "qx:qx/util/Request.js",
+      "qx:qx/util/Serializer.js",
+      "qx:qx/bom/request/Xhr.js",
+      "qx:qx/util/ResponseParser.js",
+      "qx:qx/bom/request/Script.js",
+      "qx:qx/bom/request/Jsonp.js",
+      "qx:qx/event/AcceleratingTimer.js"
     ]
   }
 },

@@ -394,217 +394,145 @@ qx.$$packageData['0'] = {
       7,
       4,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -38,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/down-small-invert.gif": [
       5,
       3,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -87,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/down-small.gif": [
       5,
       3,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -53,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/down.gif": [
       7,
       4,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -113,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/forward-invert.gif": [
       8,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -30,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/forward.gif": [
       8,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -18,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/left-invert.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -92,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/left-small-invert.gif": [
       3,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -58,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/left-small.gif": [
       3,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -15,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/left.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -120,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/next-invert.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -80,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/next.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -109,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/previous-invert.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -69,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/previous.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -65,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/rewind-invert.gif": [
       8,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -45,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/rewind.gif": [
       8,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -101,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/right-invert.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -61,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/right-small-invert.gif": [
       3,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/right-small.gif": [
       3,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -84,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/right.gif": [
       4,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -26,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/up-invert.gif": [
       7,
       4,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -73,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/up-small-invert.gif": [
       5,
       3,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -96,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/up-small.gif": [
       5,
       3,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -3,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/arrows/up.gif": [
       7,
       4,
       "gif",
-      "qx",
-      "qx/decoration/Classic/arrows-combined.gif",
-      -8,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/colorselector/brightness-field.png": [
       19,
@@ -616,10 +544,7 @@ qx.$$packageData['0'] = {
       35,
       11,
       "gif",
-      "qx",
-      "qx/decoration/Classic/colorselector-combined.gif",
-      -11,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/colorselector/huesaturation-field.jpg": [
       256,
@@ -631,46 +556,31 @@ qx.$$packageData['0'] = {
       11,
       11,
       "gif",
-      "qx",
-      "qx/decoration/Classic/colorselector-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/cursors/alias.gif": [
       19,
       15,
       "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -52,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/cursors/copy.gif": [
       19,
       15,
       "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -20,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/cursors/move.gif": [
       13,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      -39,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/cursors/nodrop.gif": [
       20,
       20,
       "gif",
-      "qx",
-      "qx/decoration/Classic/cursors-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/datechooser/last-month-invert.png": [
       16,
@@ -724,154 +634,103 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -336,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-focused-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -28,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-focused.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -462,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-hovered-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -112,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-hovered.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -140,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -98,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-pressed-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -308,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked-pressed.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-checked.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -266,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-disabled.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -84,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-focused-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -476,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-focused.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -392,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-hovered-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -196,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-hovered.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -154,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -350,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-pressed-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -448,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-pressed.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -70,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/checkbox-undetermined-disabled.png": [
       14,
@@ -919,235 +778,157 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -490,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-disabled.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -210,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-focused-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -406,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-focused.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -378,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-hovered-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -252,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-hovered.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -182,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -294,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-pressed-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -420,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked-pressed.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -56,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-checked.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -322,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-disabled.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -364,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-focused-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -434,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-focused.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -168,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-hovered-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -126,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-hovered.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -42,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -280,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-pressed-invalid.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -238,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-pressed.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -14,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/form/radiobutton.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Classic/checkbox-radiobutton-combined.png",
-      -224,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/menu/checkbox-invert.gif": [
       16,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -16,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/menu/checkbox.gif": [
       16,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -32,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/menu/radiobutton-invert.gif": [
       16,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/menu/radiobutton.gif": [
       16,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Classic/menu-combined.gif",
-      -48,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-b.png": [
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      -30
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-bl.png": [
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-br.png": [
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      -60
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-c.png": [
       40,
@@ -1159,46 +940,31 @@ qx.$$packageData['0'] = {
       15,
       382,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-lr-combined.png",
-      -15,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-r.png": [
       15,
       382,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-lr-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-b.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -25
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-bl.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -20
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-br.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-c.png": [
       40,
@@ -1210,46 +976,31 @@ qx.$$packageData['0'] = {
       5,
       136,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-lr-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-r.png": [
       5,
       136,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-lr-combined.png",
-      -5,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-t.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -5
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-tl.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -15
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small-tr.png": [
       5,
       5,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-small-tb-combined.png",
-      0,
-      -10
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-small.png": [
       114,
@@ -1261,28 +1012,19 @@ qx.$$packageData['0'] = {
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      -75
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-tl.png": [
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      -45
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow-tr.png": [
       15,
       15,
       "png",
-      "qx",
-      "qx/decoration/Classic/shadow-tb-combined.png",
-      0,
-      -15
+      "qx"
     ],
     "qx/decoration/Classic/shadow/shadow.png": [
       381,
@@ -1306,64 +1048,43 @@ qx.$$packageData['0'] = {
       10,
       10,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -62,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/ascending.png": [
       10,
       10,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -52,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/boolean-false.png": [
       11,
       11,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -31,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/boolean-true.png": [
       11,
       11,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -10,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/descending-invert.png": [
       10,
       10,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -42,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/descending.png": [
       10,
       10,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/table/select-column-order.png": [
       10,
       9,
       "png",
-      "qx",
-      "qx/decoration/Classic/table-combined.png",
-      -21,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/tree/minus.gif": [
       19,
@@ -1453,37 +1174,25 @@ qx.$$packageData['0'] = {
       10,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/window/maximize.gif": [
       9,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
-      -10,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/window/minimize.gif": [
       9,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
-      -19,
-      0
+      "qx"
     ],
     "qx/decoration/Classic/window/restore.gif": [
       8,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Classic/window-captionbar-buttons-combined.gif",
-      -28,
-      0
+      "qx"
     ],
     "qx/decoration/Indigo/font/JosefinSlab-SemiBold.ttf": [
       null,
@@ -1501,100 +1210,67 @@ qx.$$packageData['0'] = {
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -74,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/down-small.png": [
       5,
       3,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -49,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/down.png": [
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -20,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/forward.png": [
       10,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -59,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/left.png": [
       5,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -44,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/rewind.png": [
       10,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -10,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/right-invert.png": [
       5,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -5,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/right.png": [
       5,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -54,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/up-invert.png": [
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -28,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/up-small.png": [
       5,
       3,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -82,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/arrows/up.png": [
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/arrows-combined.png",
-      -36,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/colorselector/brightness-field.png": [
       19,
@@ -1606,10 +1282,7 @@ qx.$$packageData['0'] = {
       35,
       11,
       "gif",
-      "qx",
-      "qx/decoration/Modern/colorselector-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/colorselector/huesaturation-field.jpg": [
       256,
@@ -1621,46 +1294,31 @@ qx.$$packageData['0'] = {
       11,
       11,
       "gif",
-      "qx",
-      "qx/decoration/Modern/colorselector-combined.gif",
-      -35,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/cursors/alias.gif": [
       19,
       15,
       "gif",
-      "qx",
-      "qx/decoration/Modern/cursors-combined.gif",
-      -52,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/cursors/copy.gif": [
       19,
       15,
       "gif",
-      "qx",
-      "qx/decoration/Modern/cursors-combined.gif",
-      -33,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/cursors/move.gif": [
       13,
       9,
       "gif",
-      "qx",
-      "qx/decoration/Modern/cursors-combined.gif",
-      -20,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/cursors/nodrop.gif": [
       20,
       20,
       "gif",
-      "qx",
-      "qx/decoration/Modern/cursors-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/form/checked.png": [
       6,
@@ -1690,136 +1348,91 @@ qx.$$packageData['0'] = {
       16,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Modern/menu-checkradio-combined.gif",
-      -16,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/menu/checkbox.gif": [
       16,
       7,
       "gif",
-      "qx",
-      "qx/decoration/Modern/menu-checkradio-combined.gif",
-      -48,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/menu/radiobutton-invert.gif": [
       16,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Modern/menu-checkradio-combined.gif",
-      -32,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/menu/radiobutton.gif": [
       16,
       5,
       "gif",
-      "qx",
-      "qx/decoration/Modern/menu-checkradio-combined.gif",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/scrollbar/scrollbar-down.png": [
       6,
       4,
       "png",
-      "qx",
-      "qx/decoration/Modern/scrollbar-combined.png",
-      -28,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/scrollbar/scrollbar-left.png": [
       4,
       6,
       "png",
-      "qx",
-      "qx/decoration/Modern/scrollbar-combined.png",
-      -50,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/scrollbar/scrollbar-right.png": [
       4,
       6,
       "png",
-      "qx",
-      "qx/decoration/Modern/scrollbar-combined.png",
-      -46,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/scrollbar/scrollbar-up.png": [
       6,
       4,
       "png",
-      "qx",
-      "qx/decoration/Modern/scrollbar-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/splitpane/knob-horizontal.png": [
       1,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/splitpane-knobs-combined.png",
-      0,
-      -1
+      "qx"
     ],
     "qx/decoration/Modern/splitpane/knob-vertical.png": [
       8,
       1,
       "png",
-      "qx",
-      "qx/decoration/Modern/splitpane-knobs-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/table/ascending.png": [
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/table-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/table/boolean-false.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Modern/table-combined.png",
-      -80,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/table/boolean-true.png": [
       14,
       14,
       "png",
-      "qx",
-      "qx/decoration/Modern/table-combined.png",
-      -26,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/table/descending.png": [
       8,
       5,
       "png",
-      "qx",
-      "qx/decoration/Modern/table-combined.png",
-      -18,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/table/select-column-order.png": [
       10,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/table-combined.png",
-      -8,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/toolbar/toolbar-handle-knob.gif": [
       1,
@@ -1837,145 +1450,97 @@ qx.$$packageData['0'] = {
       8,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/tree-combined.png",
-      -24,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/tree/closed.png": [
       8,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/tree-combined.png",
-      -16,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/tree/open-selected.png": [
       8,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/tree-combined.png",
-      -8,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/tree/open.png": [
       8,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/tree-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/close-active-hovered.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -27,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/close-active.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -9,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/close-inactive.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -90,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/maximize-active-hovered.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -18,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/maximize-active.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -81,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/maximize-inactive.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -54,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/minimize-active-hovered.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -63,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/minimize-active.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -72,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/minimize-inactive.png": [
       9,
       9,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -36,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/restore-active-hovered.png": [
       9,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      0,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/restore-active.png": [
       9,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -99,
-      0
+      "qx"
     ],
     "qx/decoration/Modern/window/restore-inactive.png": [
       9,
       8,
       "png",
-      "qx",
-      "qx/decoration/Modern/window-captionbar-buttons-combined.png",
-      -45,
-      0
+      "qx"
     ],
     "qx/decoration/Simple/arrows/down-invert.gif": [
       7,
@@ -9182,6 +8747,18 @@ qx.$$packageData['0'] = {
       1,
       "png",
       "qx"
+    ],
+    "qxl/datademo/identica.png": [
+      200,
+      150,
+      "png",
+      "qxl.datademo"
+    ],
+    "qxl/datademo/service.js": [
+      null,
+      null,
+      "js",
+      "qxl.datademo"
     ],
     "qxl/demobrowser/backend/remote_table.php": [
       null,
