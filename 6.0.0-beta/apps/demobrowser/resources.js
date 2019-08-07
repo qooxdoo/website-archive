@@ -8802,24 +8802,6 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/background/gradient-pressed.png": [
-      250,
-      18,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/background/gradient.png": [
-      250,
-      34,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/background/gradients.svg": [
-      null,
-      null,
-      "svg",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/data/finder.json": [
       null,
       null,
@@ -9196,6 +9178,24 @@ qx.$$packageData['0'] = {
       null,
       null,
       "js",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/background/gradient-pressed.png": [
+      250,
+      18,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/background/gradient.png": [
+      250,
+      34,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/background/gradients.svg": [
+      null,
+      null,
+      "svg",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/icons/imicons/.gitignore": [
