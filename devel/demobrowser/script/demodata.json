@@ -721,6 +721,24 @@
                 "nr": 0
             },
             {
+                "name": "Flickr.html",
+                "tags": [
+                    "databinding",
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.Class.define"
+                ],
+                "title": "Flickr",
+                "nr": 0
+            },
+            {
                 "name": "Form.html",
                 "tags": [
                     "databinding",
@@ -745,24 +763,6 @@
                     "qx.util.Serializer.toUriParameter"
                 ],
                 "title": "Form",
-                "nr": 0
-            },
-            {
-                "name": "Flickr.html",
-                "tags": [
-                    "databinding",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.Class.define"
-                ],
-                "title": "Flickr",
                 "nr": 0
             },
             {
@@ -2956,6 +2956,89 @@
         ]
     },
     {
+        "classname": "treevirtual",
+        "tests": [
+            {
+                "name": "TreeVirtual.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Events.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual Events",
+                "nr": "Events"
+            },
+            {
+                "name": "TreeVirtual_Filter.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.lang.Function.bind"
+                ],
+                "title": "TreeVirtual Filter",
+                "nr": "Filter"
+            },
+            {
+                "name": "TreeVirtual_Multiple_Columns.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "TreeVirtual Multiple_Columns",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Selections.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "TreeVirtual Selections",
+                "nr": "Selections"
+            }
+        ]
+    },
+    {
         "classname": "ui",
         "tests": [
             {
@@ -3785,6 +3868,21 @@
                 "nr": 0
             },
             {
+                "name": "Table.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Row",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.HtmlCell",
+                    "qx.ui.virtual.cell.Cell"
+                ],
+                "title": "Table",
+                "nr": 0
+            },
+            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -3822,21 +3920,6 @@
                 "nr": 0
             },
             {
-                "name": "Table.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Row",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.HtmlCell",
-                    "qx.ui.virtual.cell.Cell"
-                ],
-                "title": "Table",
-                "nr": 0
-            },
-            {
                 "name": "Tree_Columns.html",
                 "tags": [
                     "noPlayground",
@@ -3861,89 +3944,6 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
-            }
-        ]
-    },
-    {
-        "classname": "treevirtual",
-        "tests": [
-            {
-                "name": "TreeVirtual.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Events.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual Events",
-                "nr": "Events"
-            },
-            {
-                "name": "TreeVirtual_Filter.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.lang.Function.bind"
-                ],
-                "title": "TreeVirtual Filter",
-                "nr": "Filter"
-            },
-            {
-                "name": "TreeVirtual_Multiple_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "TreeVirtual Multiple_Columns",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Selections.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "TreeVirtual Selections",
-                "nr": "Selections"
             }
         ]
     },

@@ -254,7 +254,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190807-0955",
+  "qx.compilerVersion": "1.0.0-beta.20190813-1315",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/",
   "qx.allowUrlVariants": true,
@@ -290,7 +290,7 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.demobrowser": {
+  "qxl.apiviewer": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
@@ -310,7 +310,7 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.apiviewer": {
+  "qxl.demobrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }
