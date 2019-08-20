@@ -95,18 +95,6 @@
                 "nr": "1"
             },
             {
-                "name": "AttributeStyle_2.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.dom.Element.create",
-                    "qx.dom.Element.create",
-                    "qx.bom.element.Attribute.set"
-                ],
-                "title": "AttributeStyle 2",
-                "nr": "2"
-            },
-            {
                 "name": "Audio.html",
                 "tags": [
                     "noPlayground",
@@ -126,6 +114,18 @@
                 ],
                 "title": "Audio",
                 "nr": 0
+            },
+            {
+                "name": "AttributeStyle_2.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.dom.Element.create",
+                    "qx.dom.Element.create",
+                    "qx.bom.element.Attribute.set"
+                ],
+                "title": "AttributeStyle 2",
+                "nr": "2"
             },
             {
                 "name": "Background.html",
@@ -154,6 +154,25 @@
                 "nr": 0
             },
             {
+                "name": "Carousel.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Template.get",
+                    "qx.bom.element.Class.add",
+                    "qx.dom.Element.insertEnd",
+                    "qx.bom.element.Style.set",
+                    "qx.bom.element.Style.setStyles",
+                    "qx.bom.element.Style.get",
+                    "qx.bom.element.Style.get",
+                    "qx.bom.element.Style.set",
+                    "qx.bom.element.Style.set",
+                    "qx.bom.element.Animation.animate"
+                ],
+                "title": "Carousel",
+                "nr": 0
+            },
+            {
                 "name": "Blocker.html",
                 "tags": [
                     "noPlayground",
@@ -173,25 +192,6 @@
                     "qx.dom.Element.insertEnd"
                 ],
                 "title": "Blocker",
-                "nr": 0
-            },
-            {
-                "name": "Carousel.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Template.get",
-                    "qx.bom.element.Class.add",
-                    "qx.dom.Element.insertEnd",
-                    "qx.bom.element.Style.set",
-                    "qx.bom.element.Style.setStyles",
-                    "qx.bom.element.Style.get",
-                    "qx.bom.element.Style.get",
-                    "qx.bom.element.Style.set",
-                    "qx.bom.element.Style.set",
-                    "qx.bom.element.Animation.animate"
-                ],
-                "title": "Carousel",
                 "nr": 0
             },
             {
@@ -1013,6 +1013,23 @@
                 "nr": 0
             },
             {
+                "name": "SearchAsYouType.html",
+                "tags": [
+                    "noPlayground",
+                    "databinding",
+                    "filter",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "SearchAsYouType",
+                "nr": 0
+            },
+            {
                 "name": "OwnCodeInModel.html",
                 "tags": [
                     "databinding",
@@ -1028,23 +1045,6 @@
                     "qx.Mixin.define"
                 ],
                 "title": "OwnCodeInModel",
-                "nr": 0
-            },
-            {
-                "name": "SearchAsYouType.html",
-                "tags": [
-                    "noPlayground",
-                    "databinding",
-                    "filter",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "SearchAsYouType",
                 "nr": 0
             },
             {
@@ -2370,51 +2370,6 @@
         ]
     },
     {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
-            },
-            {
-                "name": "PingPong.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
-                ],
-                "title": "PingPong",
-                "nr": 0
-            }
-        ]
-    },
-    {
         "classname": "root",
         "tests": [
             {
@@ -2491,6 +2446,51 @@
                     "qx.ui.core.Widget"
                 ],
                 "title": "Page",
+                "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
                 "nr": 0
             }
         ]
@@ -2873,22 +2873,6 @@
                 "nr": 0
             },
             {
-                "name": "Table_Remote_Model.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Timer",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.CheckBox"
-                ],
-                "title": "Table Remote_Model",
-                "nr": 0
-            },
-            {
                 "name": "Table_Resize_Columns.html",
                 "tags": [
                     "noPlayground",
@@ -2906,6 +2890,22 @@
                     "qx.ui.tooltip.ToolTip"
                 ],
                 "title": "Table Resize_Columns",
+                "nr": 0
+            },
+            {
+                "name": "Table_Remote_Model.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Timer",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.CheckBox"
+                ],
+                "title": "Table Remote_Model",
                 "nr": 0
             },
             {
@@ -3065,28 +3065,6 @@
                 "nr": 0
             },
             {
-                "name": "Command.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.command.Command",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.menubar.MenuBar",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Button",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Command",
-                "nr": 0
-            },
-            {
                 "name": "CommandGroupManager.html",
                 "tags": [
                     "qx.Class.define",
@@ -3106,6 +3084,28 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "CommandGroupManager",
+                "nr": 0
+            },
+            {
+                "name": "Command.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.command.Command",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.menubar.MenuBar",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Button",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Command",
                 "nr": 0
             },
             {

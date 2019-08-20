@@ -8478,6 +8478,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/48/actions/media-skip-forward.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/48/actions/object-flip-horizontal.png": [
       48,
       48,
@@ -8509,12 +8515,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/system-log-out.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/48/actions/media-skip-forward.png": [
       48,
       48,
       "png",
