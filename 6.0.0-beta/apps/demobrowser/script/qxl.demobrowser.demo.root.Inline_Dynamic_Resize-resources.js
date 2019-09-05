@@ -1710,12 +1710,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
-      1,
-      8,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Simple/splitpane/knob-vertical.png": [
       8,
       1,
@@ -1725,6 +1719,12 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/table/ascending-invert.png": [
       10,
       10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
+      1,
+      8,
       "png",
       "qx"
     ],
@@ -1777,6 +1777,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/decoration/Simple/tree/plus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/treevirtual/cross.gif": [
       19,
       16,
       "gif",
@@ -1893,12 +1899,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/window/restore.gif": [
       8,
       9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/treevirtual/cross.gif": [
-      19,
-      16,
       "gif",
       "qx"
     ],
