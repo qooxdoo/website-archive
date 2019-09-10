@@ -401,6 +401,18 @@ qx.$$packageData['0'] = {
       null,
       "scss",
       "qxl.mobileshowcase"
+    ],
+    "qxl/mobileshowcase/scss/_styles.scss": [
+      null,
+      null,
+      "scss",
+      "qxl.mobileshowcase"
+    ],
+    "qxl/mobileshowcase/scss/custom.scss": [
+      null,
+      null,
+      "scss",
+      "qxl.mobileshowcase"
     ]
   },
   "translations": {

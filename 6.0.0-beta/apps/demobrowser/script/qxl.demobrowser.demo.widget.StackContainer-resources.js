@@ -1710,6 +1710,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
+      1,
+      8,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Simple/splitpane/knob-vertical.png": [
       8,
       1,
@@ -1719,12 +1725,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/table/ascending-invert.png": [
       10,
       10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/splitpane/knob-horizontal.png": [
-      1,
-      8,
       "png",
       "qx"
     ],

@@ -256,6 +256,23 @@
                 "nr": 0
             },
             {
+                "name": "Environment.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.util.StringBuilder",
+                    "qx.core.Environment.getChecks",
+                    "qx.core.Environment.get",
+                    "qx.lang.Json.stringify",
+                    "qx.core.Environment.getAsyncChecks",
+                    "qx.lang.Object.getLength",
+                    "qx.core.Environment.getAsync",
+                    "qx.lang.Json.stringify"
+                ],
+                "title": "Environment",
+                "nr": 0
+            },
+            {
                 "name": "Flash.html",
                 "tags": [
                     "noPlayground",
@@ -642,23 +659,6 @@
                     "qx.bom.Window.open"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "Environment.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.util.StringBuilder",
-                    "qx.core.Environment.getChecks",
-                    "qx.core.Environment.get",
-                    "qx.lang.Json.stringify",
-                    "qx.core.Environment.getAsyncChecks",
-                    "qx.lang.Object.getLength",
-                    "qx.core.Environment.getAsync",
-                    "qx.lang.Json.stringify"
-                ],
-                "title": "Environment",
                 "nr": 0
             }
         ]
