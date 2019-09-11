@@ -930,14 +930,14 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-l.png": [
-      15,
+    "qx/decoration/Classic/shadow/shadow-c.png": [
+      40,
       382,
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-c.png": [
-      40,
+    "qx/decoration/Classic/shadow/shadow-l.png": [
+      15,
       382,
       "png",
       "qx"

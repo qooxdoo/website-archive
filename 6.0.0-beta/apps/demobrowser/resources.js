@@ -930,14 +930,14 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-l.png": [
-      15,
+    "qx/decoration/Classic/shadow/shadow-c.png": [
+      40,
       382,
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-c.png": [
-      40,
+    "qx/decoration/Classic/shadow/shadow-l.png": [
+      15,
       382,
       "png",
       "qx"
@@ -4302,12 +4302,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/mail-reply-sender.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/32/actions/mail-send.png": [
       32,
       32,
@@ -4315,6 +4309,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/32/actions/media-eject.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/32/actions/mail-reply-sender.png": [
       32,
       32,
       "png",
