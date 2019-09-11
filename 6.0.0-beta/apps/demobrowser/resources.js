@@ -4302,6 +4302,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/32/actions/mail-reply-sender.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/32/actions/mail-send.png": [
       32,
       32,
@@ -4309,12 +4315,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/32/actions/media-eject.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/32/actions/mail-reply-sender.png": [
       32,
       32,
       "png",

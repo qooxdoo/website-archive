@@ -2982,12 +2982,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/devices/drive-optical.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/22/devices/input-keyboard.png": [
       22,
       22,
@@ -3025,6 +3019,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/devices/network-wireless.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/drive-optical.png": [
       22,
       22,
       "png",
