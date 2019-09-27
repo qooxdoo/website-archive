@@ -172,7 +172,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20190909-1804",
+  "qx.compilerVersion": "1.0.0-beta.20190924-0742",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/"
 };

@@ -992,27 +992,6 @@
                 "nr": 0
             },
             {
-                "name": "Offline.html",
-                "tags": [
-                    "databinding",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.ui.basic.Label",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.data.store.Offline",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.TextField",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "Offline",
-                "nr": 0
-            },
-            {
                 "name": "OwnCodeInModel.html",
                 "tags": [
                     "databinding",
@@ -1045,6 +1024,27 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SearchAsYouType",
+                "nr": 0
+            },
+            {
+                "name": "Offline.html",
+                "tags": [
+                    "databinding",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.ui.basic.Label",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.data.store.Offline",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.TextField",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "Offline",
                 "nr": 0
             },
             {
@@ -1320,6 +1320,132 @@
                     "qx.bom.Element.removeListener"
                 ],
                 "title": "PointerEvent",
+                "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
+                "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "root",
+        "tests": [
+            {
+                "name": "Application.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Application",
+                "nr": 0
+            },
+            {
+                "name": "Inline.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.HBox"
+                ],
+                "title": "Inline",
+                "nr": 0
+            },
+            {
+                "name": "Inline_Dynamic_Resize.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.form.Button",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.container.SlideBar",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "Inline Dynamic_Resize",
+                "nr": 0
+            },
+            {
+                "name": "Inline_Window.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.root.Inline",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Inline Window",
+                "nr": "Window"
+            },
+            {
+                "name": "Page.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Page",
                 "nr": 0
             }
         ]
@@ -2370,132 +2496,6 @@
         ]
     },
     {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
-            },
-            {
-                "name": "PingPong.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
-                ],
-                "title": "PingPong",
-                "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "root",
-        "tests": [
-            {
-                "name": "Application.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Application",
-                "nr": 0
-            },
-            {
-                "name": "Inline.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.HBox"
-                ],
-                "title": "Inline",
-                "nr": 0
-            },
-            {
-                "name": "Inline_Dynamic_Resize.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.form.Button",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.container.SlideBar",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "Inline Dynamic_Resize",
-                "nr": 0
-            },
-            {
-                "name": "Inline_Window.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.root.Inline",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Inline Window",
-                "nr": "Window"
-            },
-            {
-                "name": "Page.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Page",
-                "nr": 0
-            }
-        ]
-    },
-    {
         "classname": "showcase",
         "tests": [
             {
@@ -2513,6 +2513,16 @@
                     "qx.ui.embed.Iframe"
                 ],
                 "title": "Browser",
+                "nr": 0
+            },
+            {
+                "name": "Form.html",
+                "tags": [
+                    "showcase",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Form",
                 "nr": 0
             },
             {
@@ -2541,16 +2551,6 @@
                 "nr": 0
             },
             {
-                "name": "Form.html",
-                "tags": [
-                    "showcase",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Form",
-                "nr": 0
-            },
-            {
                 "name": "IconFont.html",
                 "tags": [
                     "showcase",
@@ -2565,6 +2565,20 @@
                     "qx.Theme.define"
                 ],
                 "title": "IconFont",
+                "nr": 0
+            },
+            {
+                "name": "Maps.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Maps",
                 "nr": 0
             },
             {
@@ -2637,20 +2651,6 @@
                     "qx.locale.Manager.getInstance"
                 ],
                 "title": "Localization",
-                "nr": 0
-            },
-            {
-                "name": "Maps.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Maps",
                 "nr": 0
             },
             {
@@ -3854,19 +3854,6 @@
                 "nr": 0
             },
             {
-                "name": "SettingsList.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.list.List",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "SettingsList",
-                "nr": 0
-            },
-            {
                 "name": "Table.html",
                 "tags": [
                     "test",
@@ -3943,6 +3930,19 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
+            },
+            {
+                "name": "SettingsList.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.list.List",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "SettingsList",
+                "nr": 0
             }
         ]
     },
@@ -4101,33 +4101,6 @@
                 "nr": 0
             },
             {
-                "name": "DateField.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.locale.Manager.getInstance",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.DateField",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.DateField",
-                    "qx.util.format.DateFormat",
-                    "qx.util.format.DateFormat",
-                    "qx.util.format.DateFormat",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.DateField",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.DateField",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Button"
-                ],
-                "title": "DateField",
-                "nr": 0
-            },
-            {
                 "name": "Desktop.html",
                 "tags": [
                     "qx.Class.define",
@@ -4202,6 +4175,33 @@
                     "qx.ui.form.TextField"
                 ],
                 "title": "GroupBox",
+                "nr": 0
+            },
+            {
+                "name": "DateField.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.locale.Manager.getInstance",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.DateField",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.DateField",
+                    "qx.util.format.DateFormat",
+                    "qx.util.format.DateFormat",
+                    "qx.util.format.DateFormat",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.DateField",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.DateField",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Button"
+                ],
+                "title": "DateField",
                 "nr": 0
             },
             {
@@ -4430,87 +4430,6 @@
                     "qx.ui.menu.Button"
                 ],
                 "title": "Menu",
-                "nr": 0
-            },
-            {
-                "name": "MenuBar.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.ToggleButton",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.container.Composite",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menubar.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button"
-                ],
-                "title": "MenuBar",
                 "nr": 0
             },
             {
@@ -5050,6 +4969,87 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
+                "nr": 0
+            },
+            {
+                "name": "MenuBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.ToggleButton",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.container.Composite",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menubar.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button"
+                ],
+                "title": "MenuBar",
                 "nr": 0
             }
         ]
