@@ -314,6 +314,7 @@ qx.$$loader = {
       "qx:qx/core/AssertionError.js",
       "qx:qx/lang/Json.js",
       "qx:qx/lang/Number.js",
+      "qx:qx/util/Uuid.js",
       "qx:qx/core/ValidationError.js",
       "qx:qx/bom/client/OperatingSystem.js",
       "qx:qx/core/WindowError.js",
