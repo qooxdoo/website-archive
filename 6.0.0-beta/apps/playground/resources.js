@@ -2430,12 +2430,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/media-seek-forward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/22/actions/media-skip-backward.png": [
       22,
       22,
@@ -2479,6 +2473,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/system-log-out.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-seek-forward.png": [
       22,
       22,
       "png",

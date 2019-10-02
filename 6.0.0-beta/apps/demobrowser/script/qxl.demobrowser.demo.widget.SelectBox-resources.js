@@ -2202,6 +2202,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/devices/input-keyboard.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/devices/input-mouse.png": [
       16,
       16,
@@ -2251,12 +2257,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/devices/printer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/devices/input-keyboard.png": [
       16,
       16,
       "png",
