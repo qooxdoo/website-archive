@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.KeyEvent_LowLevel.b4cd356814b9.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.KeyEvent_LowLevel.00e8fd319e76.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -9900,7 +9900,7 @@ else {s=c;}
 ,resetValue:function(){return this._removeProperty(a);}
 }});}
 )();
-(function(){var a="text",b="function",c="px",d="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul",e="crop",f="nowrap",g="end",h="div",i="100%",j="auto",k="0",l="css.textoverflow",m="qx.debug",n="html.xul",o="value",p="visible",q="qx.bom.Label",r="",s="ellipsis",t="normal",u="inherit",v="block",w="label",x="-1000px",y="hidden",z="absolute";qx.Bootstrap.define(q,{statics:{__lI:{fontFamily:1,fontSize:1,fontWeight:1,fontStyle:1,lineHeight:1},__lJ:function(){var A=this.__lL(false);document.body.insertBefore(A,document.body.firstChild);return this._textElement=A;}
+(function(){var a="text",b="function",c="px",d="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul",e="crop",f="nowrap",g="end",h="div",i="100%",j="auto",k="0",l="css.textoverflow",m="qx.debug",n="html.xul",o="value",p="visible",q="qx.bom.Label",r="",s="ellipsis",t="normal",u="inherit",v="block",w="label",x="-1000px",y="hidden",z="absolute";qx.Bootstrap.define(q,{statics:{__lI:{fontFamily:1,fontSize:1,fontWeight:1,fontStyle:1,lineHeight:1,wordBreak:1},__lJ:function(){var A=this.__lL(false);document.body.insertBefore(A,document.body.firstChild);return this._textElement=A;}
 ,__lK:function(){var B=this.__lL(true);document.body.insertBefore(B,document.body.firstChild);return this._htmlElement=B;}
 ,__lL:function(E){var C=qx.dom.Element.create(h);var D=C.style;D.width=D.height=j;D.left=D.top=x;D.visibility=y;D.position=z;D.overflow=p;D.display=v;if(E){D.whiteSpace=t;}
 else {D.whiteSpace=f;if(!qx.core.Environment.get(l)&&qx.core.Environment.get(n)){var F=document.createElementNS(d,w);var D=F.style;D.padding=k;D.margin=k;D.width=j;for(var G in this.__lI){D[G]=u;}
