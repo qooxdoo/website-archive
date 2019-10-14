@@ -1998,6 +1998,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/48/devices/computer.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/actions/dialog-cancel.png": [
       16,
       16,
@@ -2091,6 +2097,12 @@ qx.$$packageData['0'] = {
     "qx/icon/Tango/32/places/folder.png": [
       32,
       32,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/48/devices/computer.png": [
+      48,
+      48,
       "png",
       "qx"
     ],

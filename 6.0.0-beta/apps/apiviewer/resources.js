@@ -2094,18 +2094,6 @@ qx.$$packageData['0'] = {
       "css",
       "qx"
     ],
-    "qx/mobile/js/iscroll.js": [
-      null,
-      null,
-      "js",
-      "qx"
-    ],
-    "qx/mobile/js/iscroll.min.js": [
-      null,
-      null,
-      "js",
-      "qx"
-    ],
     "qx/static/blank.gif": [
       1,
       1,

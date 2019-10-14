@@ -2262,36 +2262,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.eot": [
-      null,
-      null,
-      "eot",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.meta": [
-      null,
-      null,
-      "meta",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.ttf": [
-      null,
-      null,
-      "ttf",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.woff": [
-      null,
-      null,
-      "woff",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/fonts/fontawesome-webfont.woff2": [
-      null,
-      null,
-      "woff2",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/icons/multimedia-player.png": [
       128,
       128,
