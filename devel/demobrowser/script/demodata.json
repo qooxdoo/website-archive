@@ -1185,6 +1185,17 @@
                 "nr": 0
             },
             {
+                "name": "Event_Bubbling.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener"
+                ],
+                "title": "Event Bubbling",
+                "nr": "Bubbling"
+            },
+            {
                 "name": "Event_Bus.html",
                 "tags": [
                     "noPlayground",
@@ -1310,17 +1321,6 @@
                 ],
                 "title": "PointerEvent",
                 "nr": 0
-            },
-            {
-                "name": "Event_Bubbling.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener"
-                ],
-                "title": "Event Bubbling",
-                "nr": "Bubbling"
             }
         ]
     },
@@ -3855,6 +3855,19 @@
                 "nr": 0
             },
             {
+                "name": "SettingsList.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.list.List",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "SettingsList",
+                "nr": 0
+            },
+            {
                 "name": "Table.html",
                 "tags": [
                     "test",
@@ -3931,19 +3944,6 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
-            },
-            {
-                "name": "SettingsList.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.list.List",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "SettingsList",
-                "nr": 0
             }
         ]
     },
@@ -4952,55 +4952,6 @@
                 "nr": 0
             },
             {
-                "name": "Window.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.tabview.Page",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.lang.String.firstUp",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.window.Window",
-                    "qx.ui.form.Button",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Window",
-                "nr": 0
-            },
-            {
                 "name": "Tree_Columns.html",
                 "tags": [
                     "qx.Class.define",
@@ -5053,6 +5004,55 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
+            },
+            {
+                "name": "Window.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.tabview.Page",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.lang.String.firstUp",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.window.Window",
+                    "qx.ui.form.Button",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Window",
+                "nr": 0
             }
         ]
     }

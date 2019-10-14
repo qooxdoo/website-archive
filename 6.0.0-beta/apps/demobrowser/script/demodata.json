@@ -1,86 +1,5 @@
 [
     {
-        "classname": "animation",
-        "tests": [
-            {
-                "name": "Animation_3d.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.bom.element.Animation.animate",
-                    "qx.bom.element.Transform.setStyle",
-                    "qx.bom.element.Transform.transform",
-                    "qx.bom.element.Transform.transform",
-                    "qx.bom.element.Transform.setOrigin",
-                    "qx.bom.element.Transform.setPerspective",
-                    "qx.bom.element.Transform.setStyle",
-                    "qx.bom.element.Transform.setStyle"
-                ],
-                "title": "Animation 3d",
-                "nr": "3d"
-            },
-            {
-                "name": "Animation_Compare.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.element.AnimationCss.animateReverse",
-                    "qx.bom.element.AnimationJs.animateReverse",
-                    "qx.bom.element.AnimationCss.animate",
-                    "qx.bom.element.AnimationJs.animate",
-                    "qx.lang.Object.clone",
-                    "qx.lang.Object.clone",
-                    "qx.lang.Object.clone",
-                    "qx.lang.Object.clone",
-                    "qx.bom.element.AnimationCss.animate",
-                    "qx.bom.element.AnimationJs.animate",
-                    "qx.bom.element.AnimationCss.animate",
-                    "qx.bom.element.AnimationJs.animate",
-                    "qx.bom.element.AnimationCss.animate",
-                    "qx.bom.element.AnimationJs.animate",
-                    "qx.bom.element.AnimationCss.animate",
-                    "qx.bom.element.AnimationJs.animate"
-                ],
-                "title": "Animation Compare",
-                "nr": "Compare"
-            },
-            {
-                "name": "Scroll.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Scroll",
-                "nr": 0
-            },
-            {
-                "name": "Timing.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Timing",
-                "nr": 0
-            },
-            {
-                "name": "Animation.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.bom.element.Animation.animate",
-                    "qx.core.Environment.get"
-                ],
-                "title": "Animation",
-                "nr": 0
-            }
-        ]
-    },
-    {
         "classname": "bom",
         "tests": [
             {
@@ -128,6 +47,32 @@
                 "nr": 0
             },
             {
+                "name": "Background.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.util.ResourceManager.getInstance",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.compile",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles",
+                    "qx.bom.element.Background.getStyles"
+                ],
+                "title": "Background",
+                "nr": 0
+            },
+            {
                 "name": "Blocker.html",
                 "tags": [
                     "noPlayground",
@@ -169,6 +114,23 @@
                 "nr": 0
             },
             {
+                "name": "Cookie.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.set",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.get",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.del"
+                ],
+                "title": "Cookie",
+                "nr": 0
+            },
+            {
                 "name": "Clip.html",
                 "tags": [
                     "noPlayground",
@@ -201,23 +163,6 @@
                     "qx.log.Logger.debug"
                 ],
                 "title": "Clip",
-                "nr": 0
-            },
-            {
-                "name": "Cookie.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.set",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.get",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.del"
-                ],
-                "title": "Cookie",
                 "nr": 0
             },
             {
@@ -634,31 +579,86 @@
                 ],
                 "title": "Window",
                 "nr": 0
-            },
+            }
+        ]
+    },
+    {
+        "classname": "animation",
+        "tests": [
             {
-                "name": "Background.html",
+                "name": "Animation.html",
                 "tags": [
                     "noPlayground",
                     "qx.Class.define",
-                    "qx.util.ResourceManager.getInstance",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.compile",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles",
-                    "qx.bom.element.Background.getStyles"
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.bom.element.Animation.animate",
+                    "qx.core.Environment.get"
                 ],
-                "title": "Background",
+                "title": "Animation",
+                "nr": 0
+            },
+            {
+                "name": "Animation_3d.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.bom.element.Animation.animate",
+                    "qx.bom.element.Transform.setStyle",
+                    "qx.bom.element.Transform.transform",
+                    "qx.bom.element.Transform.transform",
+                    "qx.bom.element.Transform.setOrigin",
+                    "qx.bom.element.Transform.setPerspective",
+                    "qx.bom.element.Transform.setStyle",
+                    "qx.bom.element.Transform.setStyle"
+                ],
+                "title": "Animation 3d",
+                "nr": "3d"
+            },
+            {
+                "name": "Animation_Compare.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.element.AnimationCss.animateReverse",
+                    "qx.bom.element.AnimationJs.animateReverse",
+                    "qx.bom.element.AnimationCss.animate",
+                    "qx.bom.element.AnimationJs.animate",
+                    "qx.lang.Object.clone",
+                    "qx.lang.Object.clone",
+                    "qx.lang.Object.clone",
+                    "qx.lang.Object.clone",
+                    "qx.bom.element.AnimationCss.animate",
+                    "qx.bom.element.AnimationJs.animate",
+                    "qx.bom.element.AnimationCss.animate",
+                    "qx.bom.element.AnimationJs.animate",
+                    "qx.bom.element.AnimationCss.animate",
+                    "qx.bom.element.AnimationJs.animate",
+                    "qx.bom.element.AnimationCss.animate",
+                    "qx.bom.element.AnimationJs.animate"
+                ],
+                "title": "Animation Compare",
+                "nr": "Compare"
+            },
+            {
+                "name": "Scroll.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Scroll",
+                "nr": 0
+            },
+            {
+                "name": "Timing.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Timing",
                 "nr": 0
             }
         ]
@@ -2808,25 +2808,6 @@
                 "nr": 0
             },
             {
-                "name": "Table_Filtered_Model.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Filtered",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.cellrenderer.Html",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button"
-                ],
-                "title": "Table Filtered_Model",
-                "nr": 0
-            },
-            {
                 "name": "Table_Events.html",
                 "tags": [
                     "noPlayground",
@@ -2848,6 +2829,25 @@
                 ],
                 "title": "Table Events",
                 "nr": "Events"
+            },
+            {
+                "name": "Table_Filtered_Model.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Filtered",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.cellrenderer.Html",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button"
+                ],
+                "title": "Table Filtered_Model",
+                "nr": 0
             },
             {
                 "name": "Table_Huge.html",
@@ -4670,6 +4670,79 @@
                 "nr": 0
             },
             {
+                "name": "Spinner.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.form.Spinner",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Spinner",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Spinner",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Spinner",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Spinner",
+                    "qx.util.format.NumberFormat",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Spinner",
+                "nr": 0
+            },
+            {
+                "name": "SplitPane.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.splitpane.Pane",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Slider",
+                    "qx.ui.tree.Tree",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder"
+                ],
+                "title": "SplitPane",
+                "nr": 0
+            },
+            {
                 "name": "StackContainer.html",
                 "tags": [
                     "qx.Class.define",
@@ -4977,79 +5050,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "SplitPane.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.splitpane.Pane",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Slider",
-                    "qx.ui.tree.Tree",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder"
-                ],
-                "title": "SplitPane",
-                "nr": 0
-            },
-            {
-                "name": "Spinner.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.form.Spinner",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Spinner",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Spinner",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Spinner",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Spinner",
-                    "qx.util.format.NumberFormat",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Spinner",
                 "nr": 0
             }
         ]

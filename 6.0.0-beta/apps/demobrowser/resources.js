@@ -3546,13 +3546,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/go-up.png": [
+    "qx/icon/Oxygen/22/actions/go-top.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/go-top.png": [
+    "qx/icon/Oxygen/22/actions/go-up.png": [
       22,
       22,
       "png",
