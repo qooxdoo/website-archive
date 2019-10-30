@@ -2526,6 +2526,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/22/actions/address-book-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/22/actions/application-exit.png": [
       22,
       22,
@@ -2533,12 +2539,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/22/actions/appointment-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/22/actions/address-book-new.png": [
       22,
       22,
       "png",

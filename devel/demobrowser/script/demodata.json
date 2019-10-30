@@ -4637,18 +4637,6 @@
                 "nr": 0
             },
             {
-                "name": "SlideBar.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.SlideBar",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Image",
-                    "qx.ui.form.ToggleButton"
-                ],
-                "title": "SlideBar",
-                "nr": 0
-            },
-            {
                 "name": "Slider.html",
                 "tags": [
                     "qx.Class.define",
@@ -5052,6 +5040,18 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
+                "nr": 0
+            },
+            {
+                "name": "SlideBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.SlideBar",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Image",
+                    "qx.ui.form.ToggleButton"
+                ],
+                "title": "SlideBar",
                 "nr": 0
             }
         ]
