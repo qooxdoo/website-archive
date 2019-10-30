@@ -4637,6 +4637,18 @@
                 "nr": 0
             },
             {
+                "name": "SlideBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.SlideBar",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Image",
+                    "qx.ui.form.ToggleButton"
+                ],
+                "title": "SlideBar",
+                "nr": 0
+            },
+            {
                 "name": "Slider.html",
                 "tags": [
                     "qx.Class.define",
@@ -4730,22 +4742,6 @@
                     "qx.ui.tree.TreeFolder"
                 ],
                 "title": "SplitPane",
-                "nr": 0
-            },
-            {
-                "name": "StackContainer.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Stack",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.container.Stack",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "StackContainer",
                 "nr": 0
             },
             {
@@ -5043,15 +5039,19 @@
                 "nr": 0
             },
             {
-                "name": "SlideBar.html",
+                "name": "StackContainer.html",
                 "tags": [
                     "qx.Class.define",
-                    "qx.ui.container.SlideBar",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Image",
-                    "qx.ui.form.ToggleButton"
+                    "qx.ui.container.Stack",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.container.Stack",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
                 ],
-                "title": "SlideBar",
+                "title": "StackContainer",
                 "nr": 0
             }
         ]
