@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.PointerEvent.32ef3a4b4298.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.PointerEvent.cae75f4a9822.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2521,9 +2521,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2764,16 +2763,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4463,6 +4452,17 @@ else {H.catch=I;}
 ;}
 })}});}
 )();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
+)();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
 ,getData:function(){return this.__dH;}
@@ -4662,11 +4662,11 @@ catch(w){return;}
 )();
 (function(){var a="</th></tr>",b="demobrowser.demo.event.EventDemo",c="</th><th>",d="",e="</td><td>",f="<table><tr><th>",g="<tr><td>",h="btnClear",j="tap",k="</table>",l="</td></tr>";qx.Class.define(b,{extend:qx.application.Native,members:{main:function(){qx.application.Native.prototype.main.call(this);var m=document.getElementById(h);if(m){qx.bom.Element.addListener(m,j,this._clearLog,this);}
 ;}
-,_initLogger:function(p,n,o){this.__q=f+p.join(c)+a;this.__r=o||50;this.__s=n;this._clearLog();}
-,_clearLog:function(){this.__s.innerHTML=this.__q+k;this.__t=[];}
-,_log:function(q){this.__t.unshift(q);this.__t=this.__t.slice(0,this.__r);var r=[this.__q];for(var i=0;i<this.__t.length;i++ ){r.push(g,this.__t[i].join(e),l);}
-;r.push(k);this.__s.innerHTML=r.join(d);this.__s.scrollTop=0;}
-,__q:null,__r:null,__s:null,__t:null},destruct:function(){this.__s=this.__t=null;}
+,_initLogger:function(p,n,o){this.__c=f+p.join(c)+a;this.__d=o||50;this.__e=n;this._clearLog();}
+,_clearLog:function(){this.__e.innerHTML=this.__c+k;this.__f=[];}
+,_log:function(q){this.__f.unshift(q);this.__f=this.__f.slice(0,this.__d);var r=[this.__c];for(var i=0;i<this.__f.length;i++ ){r.push(g,this.__f[i].join(e),l);}
+;r.push(k);this.__e.innerHTML=r.join(d);this.__e.scrollTop=0;}
+,__c:null,__d:null,__e:null,__f:null},destruct:function(){this.__e=this.__f=null;}
 });}
 )();
 (function(){var a="text",b="engine.version",c="keydown",d="radio",f="textarea",g="password",h="propertychange",j="select-multiple",k="change",m="input",n="value",p="select",q="browser.documentmode",r="browser.version",s="opera",t="keyup",u="mshtml",v="engine.name",w="keypress",x="checkbox",y="qx.event.handler.Input",z="checked";qx.Class.define(y,{extend:qx.core.Object,implement:qx.event.IEventHandler,construct:function(){qx.core.Object.call(this);this._onChangeCheckedWrapper=qx.lang.Function.listener(this._onChangeChecked,this);this._onChangeValueWrapper=qx.lang.Function.listener(this._onChangeValue,this);this._onInputWrapper=qx.lang.Function.listener(this._onInput,this);this._onPropertyWrapper=qx.lang.Function.listener(this._onProperty,this);if((qx.core.Environment.get(v)==s)){this._onKeyDownWrapper=qx.lang.Function.listener(this._onKeyDown,this);this._onKeyUpWrapper=qx.lang.Function.listener(this._onKeyUp,this);}
@@ -10065,13 +10065,13 @@ else {bp[i]=bq;}
 }});}
 )();
 (function(){var a="swipe",b="pinch",c="pointerover",d="longtap",f="demobrowser.demo.event.PointerEvent",g="capture",h="clientX",j="relatedTarget",k="change",l="button",m="rotate",n="pointer",o="pageY",p="screenX",q="dbltap",r="logger",s="pointerup",t="",u="_",v="check_",w="pointerdown",x="Event",y="Target",z="clientY",A="losecapture",B="track",C="screenY",D="tap",E="pointermove",F="pageX",G="pointerout";qx.Class.define(f,{extend:demobrowser.demo.event.EventDemo,members:{main:function(){demobrowser.demo.event.EventDemo.prototype.main.call(this);this._initLogger([y,x,l,F,o,h,z,p,C,j],document.getElementById(r),50);var J=document.getElementById(n);var H=[w,s,D,q,d,E,c,G,a,B,m,b];for(var i=0;i<H.length;i++ ){var I=document.getElementById(v+H[i]);if(I.checked){qx.bom.Element.addListener(J,H[i],this.logPointerEvent,this);}
-;qx.bom.Element.addListener(I,k,this.__u,this);}
+;qx.bom.Element.addListener(I,k,this.__g,this);}
 ;var K=document.getElementById(g);K.checked=false;qx.bom.Element.addListener(K,k,function(e){var L=e.getTarget().checked;if(L){qx.bom.Element.capture(J);}
 else {qx.bom.Element.releaseCapture(J);}
 ;}
 ,this);qx.bom.Element.addListener(J,A,function(e){K.checked=false;}
 ,this);}
-,__u:function(e){var O=e.getTarget().id.split(u)[1];var M=e.getTarget().checked;var N=document.getElementById(n);if(M){qx.bom.Element.addListener(N,O,this.logPointerEvent,this);}
+,__g:function(e){var O=e.getTarget().id.split(u)[1];var M=e.getTarget().checked;var N=document.getElementById(n);if(M){qx.bom.Element.addListener(N,O,this.logPointerEvent,this);}
 else {qx.bom.Element.removeListener(N,O,this.logPointerEvent,this);}
 ;}
 ,logPointerEvent:function(P){P.preventDefault();this._log([P.getTarget().id,P.getType(),P.getButton(),P.getDocumentLeft(),P.getDocumentTop(),P.getScreenLeft(),P.getScreenTop(),P.getViewportLeft(),P.getViewportTop(),P.getRelatedTarget()?P.getRelatedTarget().id:t]);}
