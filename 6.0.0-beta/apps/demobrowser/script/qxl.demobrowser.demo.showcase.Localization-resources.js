@@ -2904,12 +2904,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/devices/drive-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/devices/input-keyboard.png": [
       16,
       16,
@@ -3247,6 +3241,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/drive-optical.png": [
       16,
       16,
       "png",
@@ -4116,6 +4116,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/utilities-graphics-viewer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/utilities-help.png": [
       16,
       16,
@@ -4165,12 +4171,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/apps/utilities-text-editor.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/utilities-graphics-viewer.png": [
       16,
       16,
       "png",
