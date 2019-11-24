@@ -2904,6 +2904,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/devices/drive-optical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/devices/input-keyboard.png": [
       16,
       16,
@@ -3241,12 +3247,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/drive-optical.png": [
       16,
       16,
       "png",
@@ -9084,12 +9084,6 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/test/alphaPNG.png": [
-      20,
-      20,
-      "png",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
       113,
       65,
@@ -9106,6 +9100,12 @@ qx.$$packageData['0'] = {
       136,
       41,
       "gif",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/alphaPNG.png": [
+      20,
+      20,
+      "png",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/theme/tag-hor-c.png": [
