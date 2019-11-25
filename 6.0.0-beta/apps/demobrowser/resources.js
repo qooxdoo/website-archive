@@ -9084,6 +9084,12 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
+    "qxl/demobrowser/demo/test/alphaPNG.png": [
+      20,
+      20,
+      "png",
+      "qxl.demobrowser"
+    ],
     "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
       113,
       65,
@@ -9100,12 +9106,6 @@ qx.$$packageData['0'] = {
       136,
       41,
       "gif",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/alphaPNG.png": [
-      20,
-      20,
-      "png",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/theme/tag-hor-c.png": [
