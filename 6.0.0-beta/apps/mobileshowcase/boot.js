@@ -172,9 +172,16 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20191105-1146",
+  "qx.compilerVersion": "1.0.0-beta.20191204-1920",
   "qx.serve.appspath": "/apps/",
-  "qx.serve.docspath": "/"
+  "qx.serve.docspath": "/",
+  "qx.headless": false,
+  "excludeFromAPIViewer": [
+    "qxl.*"
+  ],
+  "qx.contrib": false,
+  "qx.allowUrlSettings": false,
+  "qx.allowUrlVariants": false
 };
 for (var k in envinfo)
   qx.$$environment[k] = envinfo[k];
@@ -194,6 +201,10 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../resource"
   },
   "qxl.logpane": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.versionlabel": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
@@ -218,10 +229,6 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../resource"
   },
   "qxl.datademo": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.versionlabel": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }

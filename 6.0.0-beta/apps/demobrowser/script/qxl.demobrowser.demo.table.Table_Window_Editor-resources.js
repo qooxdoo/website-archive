@@ -780,12 +780,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/form/radiobutton-checked-disabled.png": [
-      14,
-      14,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Classic/form/radiobutton-checked-focused-invalid.png": [
       14,
       14,
@@ -987,6 +981,12 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/shadow/shadow-small-t.png": [
       5,
       5,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/form/radiobutton-checked-disabled.png": [
+      14,
+      14,
       "png",
       "qx"
     ],
