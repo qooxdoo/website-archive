@@ -780,6 +780,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Classic/form/radiobutton-checked-disabled.png": [
+      14,
+      14,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/form/radiobutton-checked-focused-invalid.png": [
       14,
       14,
@@ -918,12 +924,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow/shadow-br.png": [
-      15,
-      15,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow/shadow-c.png": [
       40,
       382,
@@ -984,12 +984,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/form/radiobutton-checked-disabled.png": [
-      14,
-      14,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow/shadow-small-tl.png": [
       5,
       5,
@@ -1029,6 +1023,12 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/shadow/shadow.png": [
       381,
       412,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow/shadow-br.png": [
+      15,
+      15,
       "png",
       "qx"
     ],
@@ -2412,12 +2412,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/system-search.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/system-shutdown.png": [
       16,
       16,
@@ -2485,6 +2479,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/zoom-out.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/system-search.png": [
       16,
       16,
       "png",
