@@ -924,6 +924,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Classic/shadow/shadow-br.png": [
+      15,
+      15,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/shadow/shadow-c.png": [
       40,
       382,
@@ -1023,12 +1029,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/shadow/shadow.png": [
       381,
       412,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/shadow/shadow-br.png": [
-      15,
-      15,
       "png",
       "qx"
     ],
@@ -2412,6 +2412,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/system-search.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/system-shutdown.png": [
       16,
       16,
@@ -2965,12 +2971,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/devices/scanner.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/system-search.png": [
       16,
       16,
       "png",

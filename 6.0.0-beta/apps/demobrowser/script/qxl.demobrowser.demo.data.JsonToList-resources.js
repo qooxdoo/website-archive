@@ -924,6 +924,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Classic/shadow/shadow-br.png": [
+      15,
+      15,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/shadow/shadow-c.png": [
       40,
       382,
@@ -1023,12 +1029,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/shadow/shadow.png": [
       381,
       412,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/shadow/shadow-br.png": [
-      15,
-      15,
       "png",
       "qx"
     ],
