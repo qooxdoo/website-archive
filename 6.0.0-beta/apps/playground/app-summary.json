@@ -2,15 +2,15 @@
   "appClass": "qxl.playground.Application",
   "libraries": [
     "qx",
-    "qxl.playground",
-    "qxl.logpane",
-    "qxl.versionlabel",
     "qxl.demobrowser",
-    "qxl.mobileshowcase",
-    "qxl.formdemo",
-    "qxl.datademo",
+    "qxl.apiviewer",
     "qxl.widgetbrowser",
-    "qxl.apiviewer"
+    "qxl.formdemo",
+    "qxl.mobileshowcase",
+    "qxl.datademo",
+    "qxl.versionlabel",
+    "qxl.playground",
+    "qxl.logpane"
   ],
   "parts": [
     {
@@ -1046,7 +1046,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20191204-1920",
+    "qx.compilerVersion": "1.0.0-beta.20191219-1955",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,

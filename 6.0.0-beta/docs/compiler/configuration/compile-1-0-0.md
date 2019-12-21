@@ -17,6 +17,7 @@ most applications will require one.
 | --------------------------------------------- | ---------- | ------------ | -------- | --------------------------------- |
 | [\$schema](#schema)                           | `enum`     | **Required** | No       | compile.json Schema (this schema) |
 | [applications](#applications)                 | `object[]` | **Required** | No       | compile.json Schema (this schema) |
+| [babel](#babel)                               | `object`   | Optional     | No       | compile.json Schema (this schema) |
 | [babelOptions](#babeloptions)                 | `object`   | Optional     | No       | compile.json Schema (this schema) |
 | [bundle](#bundle)                             | `object`   | Optional     | No       | compile.json Schema (this schema) |
 | [defaultTarget](#defaulttarget)               | `string`   | Optional     | No       | compile.json Schema (this schema) |
@@ -335,10 +336,64 @@ Unknown type ``.
 }
 ```
 
-## babelOptions
+## babel
+
+`babel`
+
+- is optional
+- type: `object`
+- defined in this schema
+
+### babel Type
+
+`object` with following properties:
+
+| Property  | Type   | Required |
+| --------- | ------ | -------- |
+| `options` | object | Optional |
+| `plugins` | object | Optional |
+
+#### options
 
 Options given to @babel/preset-env. With this options the output type of babel can be defined. For details see here:
 <https://babeljs.io/docs/en/babel-preset-env#options>. They can be overridden per target.
+
+`options`
+
+- is optional
+- type: `object`
+
+##### options Type
+
+`object` with following properties:
+
+| Property | Type | Required |
+| -------- | ---- | -------- |
+
+
+#### plugins
+
+List of additional babel plugins to enable, eg TC39 proposals; note that some proposals will work out of the box and
+some will require upgrades to QxCompiler before they work properly - your mileage may vary. Each key in this object is
+the NPM name of the plugin, and the value is either true (enabled), false (ignore), or an object which is options to
+pass to the preset
+
+`plugins`
+
+- is optional
+- type: `object`
+
+##### plugins Type
+
+`object` with following properties:
+
+| Property | Type | Required |
+| -------- | ---- | -------- |
+
+
+## babelOptions
+
+\*\* DEPRECATED - See babel.options instead
 
 `babelOptions`
 
@@ -767,7 +822,7 @@ All items must be of the type: `object` with following properties:
 | `addCreatedAt`      | boolean        | Optional     |
 | `application-names` | array          | Optional     |
 | `application-types` | array          | Optional     |
-| `babelOptions`      |                | Optional     |
+| `babelOptions`      | object         | Optional     |
 | `bundle`            |                | Optional     |
 | `description`       | string         | Optional     |
 | `environment`       |                | Optional     |
@@ -833,14 +888,21 @@ All instances must conform to this regular expression (test examples
 
 #### babelOptions
 
+Options given to @babel/preset-env. With this options the output type of babel can be defined. For details see here:
+<https://babeljs.io/docs/en/babel-preset-env#options>. They can be overridden per target.
+
 `babelOptions`
 
 - is optional
-- type: reference
+- type: `object`
 
 ##### babelOptions Type
 
-- []() – `#/properties/babelOptions`
+`object` with following properties:
+
+| Property | Type | Required |
+| -------- | ---- | -------- |
+
 
 #### bundle
 
