@@ -2370,51 +2370,6 @@
         ]
     },
     {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
-            },
-            {
-                "name": "PingPong.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
-                ],
-                "title": "PingPong",
-                "nr": 0
-            }
-        ]
-    },
-    {
         "classname": "root",
         "tests": [
             {
@@ -2710,6 +2665,89 @@
         ]
     },
     {
+        "classname": "treevirtual",
+        "tests": [
+            {
+                "name": "TreeVirtual.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Events.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual Events",
+                "nr": "Events"
+            },
+            {
+                "name": "TreeVirtual_Filter.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.lang.Function.bind"
+                ],
+                "title": "TreeVirtual Filter",
+                "nr": "Filter"
+            },
+            {
+                "name": "TreeVirtual_Multiple_Columns.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "TreeVirtual Multiple_Columns",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Selections.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "TreeVirtual Selections",
+                "nr": "Selections"
+            }
+        ]
+    },
+    {
         "classname": "table",
         "tests": [
             {
@@ -2951,89 +2989,6 @@
                 ],
                 "title": "Table Window_Editor",
                 "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "treevirtual",
-        "tests": [
-            {
-                "name": "TreeVirtual.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Events.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual Events",
-                "nr": "Events"
-            },
-            {
-                "name": "TreeVirtual_Filter.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.lang.Function.bind"
-                ],
-                "title": "TreeVirtual Filter",
-                "nr": "Filter"
-            },
-            {
-                "name": "TreeVirtual_Multiple_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "TreeVirtual Multiple_Columns",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Selections.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "TreeVirtual Selections",
-                "nr": "Selections"
             }
         ]
     },
@@ -3304,6 +3259,22 @@
                 "nr": 0
             },
             {
+                "name": "FormRendererPlaceholder.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.form.Form",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.PasswordField",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.TextArea",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.renderer.SinglePlaceholder"
+                ],
+                "title": "FormRendererPlaceholder",
+                "nr": 0
+            },
+            {
                 "name": "FormValidator.html",
                 "tags": [
                     "showcase",
@@ -3320,22 +3291,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "FormValidator",
-                "nr": 0
-            },
-            {
-                "name": "FormRendererPlaceholder.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.form.Form",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.PasswordField",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.TextArea",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.renderer.SinglePlaceholder"
-                ],
-                "title": "FormRendererPlaceholder",
                 "nr": 0
             },
             {
@@ -3947,6 +3902,51 @@
         ]
     },
     {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
+                "nr": 0
+            }
+        ]
+    },
+    {
         "classname": "widget",
         "tests": [
             {
@@ -4281,6 +4281,37 @@
                 "nr": 0
             },
             {
+                "name": "List.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.List",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.List",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "List",
+                "nr": 0
+            },
+            {
                 "name": "Menu.html",
                 "tags": [
                     "qx.Class.define",
@@ -4399,37 +4430,6 @@
                     "qx.ui.menu.Button"
                 ],
                 "title": "Menu",
-                "nr": 0
-            },
-            {
-                "name": "List.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.List",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.List",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "List",
                 "nr": 0
             },
             {

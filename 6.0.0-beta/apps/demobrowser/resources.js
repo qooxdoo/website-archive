@@ -8820,13 +8820,13 @@ qx.$$packageData['0'] = {
       "svg",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/data/finder.json": [
+    "qxl/demobrowser/demo/data/list.json": [
       null,
       null,
       "json",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/data/list.json": [
+    "qxl/demobrowser/demo/data/finder.json": [
       null,
       null,
       "json",
