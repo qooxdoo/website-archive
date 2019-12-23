@@ -8820,13 +8820,13 @@ qx.$$packageData['0'] = {
       "svg",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/data/list.json": [
+    "qxl/demobrowser/demo/data/finder.json": [
       null,
       null,
       "json",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/data/finder.json": [
+    "qxl/demobrowser/demo/data/list.json": [
       null,
       null,
       "json",
@@ -9198,12 +9198,6 @@ qx.$$packageData['0'] = {
       "js",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/icons/imicons/.gitignore": [
-      null,
-      null,
-      "",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/test/combined/icons22.meta": [
       null,
       null,
@@ -9226,6 +9220,12 @@ qx.$$packageData['0'] = {
       218,
       65,
       "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/icons/imicons/.gitignore": [
+      null,
+      null,
+      "",
       "qxl.demobrowser"
     ]
   },
