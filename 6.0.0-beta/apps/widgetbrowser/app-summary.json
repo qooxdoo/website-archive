@@ -6,11 +6,11 @@
     "qxl.logpane",
     "qxl.versionlabel",
     "qxl.demobrowser",
-    "qxl.apiviewer",
-    "qxl.formdemo",
+    "qxl.widgetbrowser",
     "qxl.mobileshowcase",
+    "qxl.apiviewer",
     "qxl.datademo",
-    "qxl.widgetbrowser"
+    "qxl.formdemo"
   ],
   "parts": [
     {

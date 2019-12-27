@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Window_Editor.0f514b2f892e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.table.Table_Window_Editor.bf6f12ee8ca4.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -13218,57 +13218,60 @@ else {this.setFocusable(true);this.blur();this.setFocusable(false);}
 ;return this.__Af[S].width;}
 ,setHeaderCellRenderer:function(U,V){if(qx.core.Environment.get(j)){this.assertInteger(U,b);this.assertInterface(V,qx.ui.table.IHeaderRenderer,d);this.assertNotUndefined(this.__Af[U],B);}
 ;var T=this.__Af[U].headerRenderer;if(T!==this.__Ag){T.dispose();}
-;this.__Af[U].headerRenderer=V;this.fireDataEvent(s,{col:U});}
-,getHeaderCellRenderer:function(W){if(qx.core.Environment.get(j)){this.assertInteger(W,b);this.assertNotUndefined(this.__Af[W],B);}
-;return this.__Af[W].headerRenderer;}
-,setDataCellRenderer:function(Y,ba){if(qx.core.Environment.get(j)){this.assertInteger(Y,b);this.assertInterface(ba,qx.ui.table.ICellRenderer,d);this.assertNotUndefined(this.__Af[Y],B);}
-;var X=this.__Af[Y].dataRenderer;this.__Af[Y].dataRenderer=ba;if(X!==this.__Ah){return X;}
+;this.__Af[U].headerRenderer=V;if(!this.__zE){this.fireDataEvent(s,{col:U});}
+;}
+,setHeaderCellRenderers:function(W){var X;this.__zE=true;for(X in W){this.setHeaderCellRenderer(+X,W[X]);}
+;this.__zE=false;this.fireDataEvent(s,{cols:Object.keys(W)});}
+,getHeaderCellRenderer:function(Y){if(qx.core.Environment.get(j)){this.assertInteger(Y,b);this.assertNotUndefined(this.__Af[Y],B);}
+;return this.__Af[Y].headerRenderer;}
+,setDataCellRenderer:function(bb,bc){if(qx.core.Environment.get(j)){this.assertInteger(bb,b);this.assertInterface(bc,qx.ui.table.ICellRenderer,d);this.assertNotUndefined(this.__Af[bb],B);}
+;var ba=this.__Af[bb].dataRenderer;this.__Af[bb].dataRenderer=bc;if(ba!==this.__Ah){return ba;}
 ;return null;}
-,getDataCellRenderer:function(bb){if(qx.core.Environment.get(j)){this.assertInteger(bb,b);this.assertNotUndefined(this.__Af[bb],B);}
-;return this.__Af[bb].dataRenderer;}
-,setCellEditorFactory:function(bd,bc){if(qx.core.Environment.get(j)){this.assertInteger(bd,b);this.assertInterface(bc,qx.ui.table.ICellEditorFactory,k);this.assertNotUndefined(this.__Af[bd],B);}
-;var be=this.__Af[bd].editorFactory;if(be===bc){return;}
-;if(be!==this.__Ai){be.dispose();}
-;this.__Af[bd].editorFactory=bc;}
-,getCellEditorFactory:function(bf){if(qx.core.Environment.get(j)){this.assertInteger(bf,b);this.assertNotUndefined(this.__Af[bf],B);}
-;return this.__Af[bf].editorFactory;}
-,_getColToXPosMap:function(){if(this.__Ae==null){this.__Ae={};for(var bi=0;bi<this.__Ac.length;bi++ ){var bh=this.__Ac[bi];this.__Ae[bh]={overX:bi};}
-;for(var bg=0;bg<this.__Ad.length;bg++ ){var bh=this.__Ad[bg];this.__Ae[bh].visX=bg;}
+,getDataCellRenderer:function(bd){if(qx.core.Environment.get(j)){this.assertInteger(bd,b);this.assertNotUndefined(this.__Af[bd],B);}
+;return this.__Af[bd].dataRenderer;}
+,setCellEditorFactory:function(bf,be){if(qx.core.Environment.get(j)){this.assertInteger(bf,b);this.assertInterface(be,qx.ui.table.ICellEditorFactory,k);this.assertNotUndefined(this.__Af[bf],B);}
+;var bg=this.__Af[bf].editorFactory;if(bg===be){return;}
+;if(bg!==this.__Ai){bg.dispose();}
+;this.__Af[bf].editorFactory=be;}
+,getCellEditorFactory:function(bh){if(qx.core.Environment.get(j)){this.assertInteger(bh,b);this.assertNotUndefined(this.__Af[bh],B);}
+;return this.__Af[bh].editorFactory;}
+,_getColToXPosMap:function(){if(this.__Ae==null){this.__Ae={};for(var bk=0;bk<this.__Ac.length;bk++ ){var bj=this.__Ac[bk];this.__Ae[bj]={overX:bk};}
+;for(var bi=0;bi<this.__Ad.length;bi++ ){var bj=this.__Ad[bi];this.__Ae[bj].visX=bi;}
 ;}
 ;return this.__Ae;}
 ,getVisibleColumnCount:function(){return this.__Ad!=null?this.__Ad.length:0;}
-,getVisibleColumnAtX:function(bj){if(qx.core.Environment.get(j)){this.assertInteger(bj,p);}
-;return this.__Ad[bj];}
-,getVisibleX:function(bk){if(qx.core.Environment.get(j)){this.assertInteger(bk,b);}
-;return this._getColToXPosMap()[bk].visX;}
+,getVisibleColumnAtX:function(bl){if(qx.core.Environment.get(j)){this.assertInteger(bl,p);}
+;return this.__Ad[bl];}
+,getVisibleX:function(bm){if(qx.core.Environment.get(j)){this.assertInteger(bm,b);}
+;return this._getColToXPosMap()[bm].visX;}
 ,getOverallColumnCount:function(){return this.__Ac.length;}
-,getOverallColumnAtX:function(bl){if(qx.core.Environment.get(j)){this.assertInteger(bl,y);}
-;return this.__Ac[bl];}
-,getOverallX:function(bm){if(qx.core.Environment.get(j)){this.assertInteger(bm,b);}
-;return this._getColToXPosMap()[bm].overX;}
-,isColumnVisible:function(bn){if(qx.core.Environment.get(j)){this.assertInteger(bn,b);}
-;return (this._getColToXPosMap()[bn].visX!=null);}
-,setColumnVisible:function(bw,bq){if(qx.core.Environment.get(j)){this.assertInteger(bw,b);this.assertBoolean(bq,e);}
-;if(bq!=this.isColumnVisible(bw)){if(bq){var bu=this._getColToXPosMap();var bs=bu[bw].overX;if(bs==null){throw new Error(C+bw+t);}
-;var br;for(var x=bs+1;x<this.__Ac.length;x++ ){var bt=this.__Ac[x];var bo=bu[bt].visX;if(bo!=null){br=bo;break;}
+,getOverallColumnAtX:function(bn){if(qx.core.Environment.get(j)){this.assertInteger(bn,y);}
+;return this.__Ac[bn];}
+,getOverallX:function(bo){if(qx.core.Environment.get(j)){this.assertInteger(bo,b);}
+;return this._getColToXPosMap()[bo].overX;}
+,isColumnVisible:function(bp){if(qx.core.Environment.get(j)){this.assertInteger(bp,b);}
+;return (this._getColToXPosMap()[bp].visX!=null);}
+,setColumnVisible:function(by,bs){if(qx.core.Environment.get(j)){this.assertInteger(by,b);this.assertBoolean(bs,e);}
+;if(bs!=this.isColumnVisible(by)){if(bs){var bw=this._getColToXPosMap();var bu=bw[by].overX;if(bu==null){throw new Error(C+by+t);}
+;var bt;for(var x=bu+1;x<this.__Ac.length;x++ ){var bv=this.__Ac[x];var bq=bw[bv].visX;if(bq!=null){bt=bq;break;}
 ;}
-;if(br==null){br=this.__Ad.length;}
-;this.__Ad.splice(br,0,bw);}
-else {var bp=this.getVisibleX(bw);this.__Ad.splice(bp,1);}
-;this.__Ae=null;if(!this.__zE){var bv={col:bw,visible:bq};this.fireDataEvent(o,bv);this.fireDataEvent(h,bv);}
+;if(bt==null){bt=this.__Ad.length;}
+;this.__Ad.splice(bt,0,by);}
+else {var br=this.getVisibleX(by);this.__Ad.splice(br,1);}
+;this.__Ae=null;if(!this.__zE){var bx={col:by,visible:bs};this.fireDataEvent(o,bx);this.fireDataEvent(h,bx);}
 ;}
 ;}
-,moveColumn:function(bx,bA){if(qx.core.Environment.get(j)){this.assertInteger(bx,A);this.assertInteger(bA,q);}
-;this.__zE=true;var bB=this.__Ac[bx];var by=this.isColumnVisible(bB);if(by){this.setColumnVisible(bB,false);}
-;this.__Ac.splice(bx,1);this.__Ac.splice(bA,0,bB);this.__Ae=null;if(by){this.setColumnVisible(bB,true);}
-;this.__zE=false;var bz={col:bB,fromOverXPos:bx,toOverXPos:bA};this.fireDataEvent(c,bz);}
-,setColumnsOrder:function(bE){if(qx.core.Environment.get(j)){this.assertArray(bE,l);}
-;if(bE.length==this.__Ac.length){this.__zE=true;var bF=new Array(bE.length);for(var bC=0;bC<this.__Ac.length;bC++ ){var bD=this.isColumnVisible(bC);bF[bC]=bD;if(bD){this.setColumnVisible(bC,false);}
+,moveColumn:function(bz,bC){if(qx.core.Environment.get(j)){this.assertInteger(bz,A);this.assertInteger(bC,q);}
+;this.__zE=true;var bD=this.__Ac[bz];var bA=this.isColumnVisible(bD);if(bA){this.setColumnVisible(bD,false);}
+;this.__Ac.splice(bz,1);this.__Ac.splice(bC,0,bD);this.__Ae=null;if(bA){this.setColumnVisible(bD,true);}
+;this.__zE=false;var bB={col:bD,fromOverXPos:bz,toOverXPos:bC};this.fireDataEvent(c,bB);}
+,setColumnsOrder:function(bG){if(qx.core.Environment.get(j)){this.assertArray(bG,l);}
+;if(bG.length==this.__Ac.length){this.__zE=true;var bH=new Array(bG.length);for(var bE=0;bE<this.__Ac.length;bE++ ){var bF=this.isColumnVisible(bE);bH[bE]=bF;if(bF){this.setColumnVisible(bE,false);}
 ;}
-;this.__Ac=qx.lang.Array.clone(bE);this.__Ae=null;for(var bC=0;bC<this.__Ac.length;bC++ ){if(bF[bC]){this.setColumnVisible(bC,true);}
+;this.__Ac=qx.lang.Array.clone(bG);this.__Ae=null;for(var bE=0;bE<this.__Ac.length;bE++ ){if(bH[bE]){this.setColumnVisible(bE,true);}
 ;}
 ;this.__zE=false;this.fireDataEvent(c);}
-else {throw new Error(v+this.__Ac.length+z+bE.length);}
+else {throw new Error(v+this.__Ac.length+z+bG.length);}
 ;}
 },destruct:function(){for(var i=0;i<this.__Af.length;i++ ){this.__Af[i].headerRenderer.dispose();this.__Af[i].dataRenderer.dispose();this.__Af[i].editorFactory.dispose();}
 ;this.__Ac=this.__Ad=this.__Af=this.__Ae=null;this._disposeObjects(n,u,f);}
