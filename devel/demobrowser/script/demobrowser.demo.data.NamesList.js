@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.NamesList.21d4a3e40162.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.NamesList.0ce491c98f5f.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10935,13 +10935,13 @@ else {return this._getLastSelectable();}
 ,_getScroll:function(){var d=this._getWidget();return {left:d.getScrollX(),top:d.getScrollY()};}
 ,_scrollBy:function(f,g){var e=this._getWidget();e.scrollByX(f);e.scrollByY(g);}
 ,_getPage:function(k,o){var q=this.getSelectables();var length=q.length;var p=q.indexOf(k);if(p===-1){throw new Error(a+k);}
-;var h=this._getWidget();var r=h.getScrollY();var innerHeight=h.getInnerSize().height;var top,l,s;if(o){var n=r;var i=p;while(1){for(;i>=0;i-- ){top=h.getItemTop(q[i]);if(top<n){s=i+1;break;}
+;var h=this._getWidget();var r=h.getScrollY();var innerHeight=h.getInnerSize().height;var top,l,s;if(o){var n=r;var i=p;while(1){for(;i>=0;i-- ){top=h.getItemTop(q[i]);if(top<n){s=i;break;}
 ;}
 ;if(s==null){var t=this._getFirstSelectable();return t==k?null:t;}
 ;if(s>=p){n-=innerHeight+r-h.getItemBottom(k);s=null;continue;}
 ;return q[s];}
 ;}
-else {var m=innerHeight+r;var i=p;while(1){for(;i<length;i++ ){l=h.getItemBottom(q[i]);if(l>m){s=i-1;break;}
+else {var m=innerHeight+r;var i=p;while(1){for(;i<length;i++ ){l=h.getItemBottom(q[i]);if(l>m){s=i;break;}
 ;}
 ;if(s==null){var j=this._getLastSelectable();return j==k?null:j;}
 ;if(s<=p){m+=h.getItemTop(k)-r;s=null;continue;}

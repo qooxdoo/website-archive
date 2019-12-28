@@ -3424,7 +3424,7 @@ qx.$$packageData['0'] = {
   "translations": {
     "C": {},
     "en": {
-      "": "Project-Id-Version: 1.0\nReport-Msgid-Bugs-To: you@your.org\nPOT-Creation-Date: 2011-05-31 14:30+0100\nPO-Revision-Date: 2011-05-31 14:30+0100\nLast-Translator: you <you@your.org>\nLanguage-Team: Team <yourteam@your.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\n"
+      "": "Project-Id-Version: 1.0\nReport-Msgid-Bugs-To: you@qooxdoo.org\nPOT-Creation-Date: 2007-10-18 14:00+0100\nPO-Revision-Date: 2007-10-18 14:00+0100\nLast-Translator: you <you@qooxdoo.org>\nLanguage-Team: Team <yourteam@qooxdoo.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=utf-8\nContent-Transfer-Encoding: 8bit\n"
     }
   }
 };
