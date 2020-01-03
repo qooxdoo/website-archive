@@ -5,12 +5,12 @@
     "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
-    "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
     "qxl.formdemo",
-    "qxl.mobileshowcase",
-    "qxl.datademo"
+    "qxl.demobrowser",
+    "qxl.datademo",
+    "qxl.mobileshowcase"
   ],
   "parts": [
     {
