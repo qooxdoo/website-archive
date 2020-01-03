@@ -1,16 +1,16 @@
 {
   "appClass": "qxl.demobrowser.Application",
   "libraries": [
-    "qx",
     "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
+    "qxl.mobileshowcase",
+    "qxl.datademo",
     "qxl.formdemo",
     "qxl.demobrowser",
-    "qxl.datademo",
-    "qxl.mobileshowcase"
+    "qx"
   ],
   "parts": [
     {

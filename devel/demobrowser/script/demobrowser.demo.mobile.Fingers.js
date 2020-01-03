@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.mobile.Fingers.a2b351535468.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.mobile.Fingers.46d5e41e1027.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -10054,13 +10054,13 @@ else {bp[i]=bq;}
 ;return bj;}
 }});}
 )();
-(function(){var a="black",b="px",c="green",d="div",f="100%",g="yellow",h="30px",j="qx.debug",k="0px",l="12px",m="<b>This demo is intended for WebKit-based browsers and IE11+.</b>",n="browser.documentmode",o="100px",p="demobrowser.demo.mobile.Fingers",q='Lucida Grande',r="50px",s="innerHTML",t="pointerdown",u="mshtml",v="engine.name",w="20px",x="red",y="webkit",z="none",A="white",B="<b>Use your fingers to move the dots</b>",C="pointermove",D="blue",E="absolute";qx.Class.define(p,{extend:qx.application.Native,members:{__i:null,__j:null,main:function(){qx.application.Native.prototype.main.call(this);if(qx.core.Environment.get(j)){qx.log.appender.Native;qx.log.appender.Console;}
+(function(){var a="black",b="px",c="green",d="div",f="100%",g="yellow",h="30px",j="qx.debug",k="0px",l="12px",m="<b>This demo is intended for WebKit-based browsers and IE11+.</b>",n="browser.documentmode",o="100px",p="demobrowser.demo.mobile.Fingers",q='Lucida Grande',r="50px",s="innerHTML",t="pointerdown",u="mshtml",v="engine.name",w="20px",x="red",y="webkit",z="none",A="white",B="<b>Use your fingers to move the dots</b>",C="pointermove",D="blue",E="absolute";qx.Class.define(p,{extend:qx.application.Native,members:{__w:null,__x:null,main:function(){qx.application.Native.prototype.main.call(this);if(qx.core.Environment.get(j)){qx.log.appender.Native;qx.log.appender.Console;}
 ;var I={"width":f,"height":f,"backgroundColor":a,"margin":k,"touchAction":z,"msTouchAction":z};var O=new qx.html.Element(d,I);O.useElement(document.body);O.setRoot(true);var F=qx.core.Environment.get(v);var H=F==u&&qx.core.Environment.get(n)>10;if(F!=y&&!H){var L={"color":c,"position":E,"font-family":q,"font-size":l,"left":h,"top":w};var J=new qx.html.Element(d,L);O.add(J);J.setAttribute(s,m);return;}
 ;var N={"color":A,"position":E,"left":h,"top":w};var J=new qx.html.Element(d,N);O.add(J);J.setAttribute(s,B);var K=[D,x,c,A,g];for(var i=0;i<K.length;i++ ){var G={"backgroundColor":K[i],"width":o,"height":o,"position":E,"-moz-border-radius":r,"-webkit-border-radius":r,"border-radius":r,"top":((i+5)*30)+b,"left":((i+1)*150)+b};var M=new qx.html.Element(d,G);O.add(M);}
-;this.__i=[];this.__j=[];O.addListener(t,this._onPointerDown,this);O.addListener(C,this._onPointerMove,this);}
-,_onPointerDown:function(e){this.__i[e.getPointerId()]=parseInt(e.getTarget().style.left)-e.getDocumentLeft();this.__j[e.getPointerId()]=parseInt(e.getTarget().style.top)-e.getDocumentTop();}
+;this.__w=[];this.__x=[];O.addListener(t,this._onPointerDown,this);O.addListener(C,this._onPointerMove,this);}
+,_onPointerDown:function(e){this.__w[e.getPointerId()]=parseInt(e.getTarget().style.left)-e.getDocumentLeft();this.__x[e.getPointerId()]=parseInt(e.getTarget().style.top)-e.getDocumentTop();}
 ,_onPointerMove:function(e){if(e.getTarget()==document.body){return;}
-;qx.bom.element.Style.setStyles(e.getTarget(),{"left":(e.getDocumentLeft()+this.__i[e.getPointerId()])+b,"top":(e.getDocumentTop()+this.__j[e.getPointerId()])+b});e.preventDefault();}
+;qx.bom.element.Style.setStyles(e.getTarget(),{"left":(e.getDocumentLeft()+this.__w[e.getPointerId()])+b,"top":(e.getDocumentTop()+this.__x[e.getPointerId()])+b});e.preventDefault();}
 }});}
 )();
 (function(){var a="<span class='object'>",b="&gt;",c="<span class='object' title='Object instance with hash code: ",d="string",e="level-",f="0",g="&lt;",h="</span> ",k="}",l=":",m="{",n="&amp;",o="offset",p="&#39;",q="DIV",r="",s="qx.log.appender.Formatter",t="map",u="YYYY-MM-dd HH:mm:ss",v="]",w="'>",x="<span>",y="[",z=", ",A="</span>",B="datetime",C="\n",D="&quot;",E="<span class='type-key'>",F="</span>:<span class='type-",G="</span>: ",H=" ",I="]</span>: ",J="<span class='offset'>",K="?",L="<span class='type-";qx.Class.define(s,{extend:qx.core.Object,properties:{formatTimeAs:{init:o,check:[o,B]}},members:{formatOffset:function(O,length){var N=O.toString();var P=(length||6)-N.length;var M=r;for(var i=0;i<P;i++ ){M+=f;}

@@ -1950,13 +1950,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/places/folder-open.png": [
+    "qx/icon/Oxygen/16/places/folder-remote.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/places/folder-remote.png": [
+    "qx/icon/Oxygen/16/places/folder-open.png": [
       16,
       16,
       "png",

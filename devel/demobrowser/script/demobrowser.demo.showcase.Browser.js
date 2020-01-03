@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Browser.2fe3917b5fd8.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.showcase.Browser.68fb68bc844d.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11954,7 +11954,7 @@ else {this.setFocusable(true);this.blur();this.setFocusable(false);}
 ;return false;}
 ;var I=new MutationObserver(function(L){if(L.some(H)){this._syncSourceAfterDOMMove();}
 ;}
-.bind(this));var parent=this.getLayoutParent().getContentElement().getDomElement();I.observe(parent,{childList:true});}
+.bind(this));var parent=this.getLayoutParent().getContentElement().getDomElement();I.observe(parent,{childList:true,subtree:true});}
 ,this);}
 else {this.addListenerOnce(w,function(){var M=this.getContentElement().getDomElement();qx.bom.Event.addNativeListener(M,m,this._onDOMNodeInserted);}
 ,this);this._onDOMNodeInserted=qx.lang.Function.listener(this._syncSourceAfterDOMMove,this);}

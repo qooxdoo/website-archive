@@ -3132,13 +3132,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/address-book-new.png": [
+    "qx/icon/Oxygen/32/actions/application-exit.png": [
       32,
       32,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/application-exit.png": [
+    "qx/icon/Oxygen/32/actions/address-book-new.png": [
       32,
       32,
       "png",
