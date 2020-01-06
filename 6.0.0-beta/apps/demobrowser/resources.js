@@ -1548,6 +1548,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/down-small.gif": [
+      5,
+      3,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/down.gif": [
       7,
       4,
@@ -1605,12 +1611,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/arrows/down-small.gif": [
-      5,
-      3,
       "gif",
       "qx"
     ],
@@ -9198,12 +9198,6 @@ qx.$$packageData['0'] = {
       "js",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/icons/imicons/.gitignore": [
-      null,
-      null,
-      "",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/test/combined/icons22.meta": [
       null,
       null,
@@ -9226,6 +9220,12 @@ qx.$$packageData['0'] = {
       218,
       65,
       "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/icons/imicons/.gitignore": [
+      null,
+      null,
+      "",
       "qxl.demobrowser"
     ]
   },

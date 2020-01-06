@@ -7,10 +7,10 @@
     "qxl.versionlabel",
     "qxl.demobrowser",
     "qxl.apiviewer",
-    "qxl.widgetbrowser",
     "qxl.formdemo",
+    "qxl.datademo",
     "qxl.mobileshowcase",
-    "qxl.datademo"
+    "qxl.widgetbrowser"
   ],
   "parts": [
     {
@@ -1046,7 +1046,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20191224-0859",
+    "qx.compilerVersion": "1.0.0-beta.20200106-0819",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,
