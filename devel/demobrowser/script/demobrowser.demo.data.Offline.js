@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Offline.9fd2a905f442.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.data.Offline.17dfdcd3824a.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -508,6 +508,7 @@ else if(P<0){P=Math.max(0,this.length+P);}
 ,isBoolean:function(i){return (i!==null&&(this.getClass(i)===f||i instanceof Boolean));}
 ,isDate:function(j){return (j!==null&&(this.getClass(j)===d||j instanceof Date));}
 ,isError:function(k){return (k!==null&&(this.getClass(k)===b||k instanceof Error));}
+,isPromise:function(l){return (l!=null)&&this.isFunction(l.then);}
 }});}
 )();
 (function(){var a=" != ",b="qx.core.Object",c="Expected value to be an array but found ",d="' (rgb(",f=") was fired.",g="Expected value to be an integer >= 0 but found ",h="' to be not equal with '",j="' to '",k="Expected object '",m="Called assertTrue with '",n="Expected value to be a map but found ",o="The function did not raise an exception!",p="Expected value to be undefined but found ",q="Expected value to be a DOM element but found  '",r="Expected value to be a regular expression but found ",s="' to implement the interface '",t="Expected value to be null but found ",u="Invalid argument 'type'",v="' to be equal with '",w="Assertion error! ",x="'",y="null",z="' but found '",A="'undefined'",B=",",C="' must must be a key of the map '",D="Expected '",E="The String '",F="Expected value to be a string but found ",G="Event (",H="Expected value to be the CSS color '",I="!",J="Called assert with 'false'",K="qx.util.ColorUtil",L="The value '%1' must not have any of the values defined in the array '%2'",M=": ",N="The raised exception does not have the expected type! ",O=") not fired.",P="Expected value not to be undefined but found undefined!",Q="'!",R="qx.core.Assert",S="",T="Expected value to be typeof object but found ",U="' but found ",V="' (identical) but found '",W="' must have any of the values defined in the array '",X="Expected value to be a number but found ",Y="Expected value to be typeof function or typeof async function but found ",bO="Called assertFalse with '",bP="qx.ui.core.Widget",bQ="]",bK="Expected value to be a qooxdoo object but found ",bL="' arguments.",bM="Expected value '%1' to be in the range '%2'..'%3'!",bN="Array[",bU="' does not match the regular expression '",bV="' to be not identical with '",bW="Expected [",cm="' arguments but found '",bR="', which cannot be converted to a CSS color!",bS=", ",bT="qx.core.AssertionError",bG="Expected value to be a boolean but found ",ca="Expected value not to be null but found null!",bJ="))!",cb="Expected value to be a qooxdoo widget but found ",cc="The value '",bI="Expected value to be typeof '",bX="\n Stack trace: \n",cl="Expected value to be typeof function but found ",bY="Expected value to be an integer but found ",cd="Called fail().",ce="The parameter 're' must be a string or a regular expression.",cf=")), but found value '",ci="qx.util.ColorUtil not available! Your code must have a dependency on 'qx.util.ColorUtil'",cj="Expected value to be a number >= 0 but found ",ck="Expected value to be instanceof '",bH="], but found [",cg="Wrong number of arguments given. Expected '",ch="object";qx.Bootstrap.define(R,{statics:{__i:true,__j:function(cn,co){var cs=S;for(var i=1,l=arguments.length;i<l;i++ ){cs=cs+this.__k(arguments[i]===undefined?A:arguments[i]);}
@@ -2517,7 +2518,7 @@ else {throw new Error(this.classname+i);}
 ,fireNonBubblingEvent:function(x,y,w){if(!this.$$disposed){return this.__dc.fireNonBubblingEvent(this,x,y,w);}
 ;return true;}
 ,fireDataEvent:function(B,C,z,A){if(!this.$$disposed){if(z===undefined){z=null;}
-;return this.__dc.fireNonBubblingEvent(this,B,qx.event.type.Data,[C,z,!!A]);}
+;return this.__dc.fireEvent(this,B,qx.event.type.Data,[C,z,!!A]);}
 ;return true;}
 }});}
 )();
@@ -4402,7 +4403,7 @@ else if(!(event instanceof q)){this.error(g+t+c+event.classname+b);}
 },defer:function(x){qx.event.Registration.addDispatcher(x);}
 });}
 )();
-(function(){var a="function",b="",c="Rejecting Event",d="qx.event.Utils",f="qx.debug",g="[[ qx.event.Utils.ABORT ]]",h="Rejecting in series()",i="qx.promise",j="qx.event.Utils.hasCatcher";qx.Class.define(d,{extend:qx.core.Object,statics:{ABORT:g,track:qx.core.Environment.select(i,{"true":function(k,l){if(typeof l!==a&&!(l instanceof qx.Promise)){l=(function(m){return function(){return m;}
+(function(){var a="function",b="",c="Rejecting Event",d="qx.event.Utils",f="qx.debug",g="[[ qx.event.Utils.ABORT ]]",h="Rejecting in series()",i="qx.promise",j="qx.event.Utils.hasCatcher";qx.Class.define(d,{extend:qx.core.Object,statics:{ABORT:g,track:qx.core.Environment.select(i,{"true":function(k,l){if(typeof l!==a&&!qx.lang.Type.isPromise(l)){l=(function(m){return function(){return m;}
 ;}
 )(l);}
 ;return this.then(k,l);}
@@ -4414,14 +4415,14 @@ catch(e){q=e;}
 ;p.promises.push({promise:r,ex:q});}
 ;p.promise=r;return p.promise;}
 ,then:qx.core.Environment.select(i,{"true":function(s,u){if(s.rejected){return null;}
-;if(s.promise){if(u instanceof qx.Promise){this.__dD(s,s.promise.then(u));}
+;if(s.promise){if(qx.lang.Type.isPromise(u)){this.__dD(s,s.promise.then(u));}
 else {var self=this;this.__dD(s,s.promise.then(function(v){if(s.rejected){return null;}
 ;v=u(v);if(v===qx.event.Utils.ABORT){return self.reject(s);}
 ;return v;}
 ));}
 ;this.__dF(s);return s.promise;}
-;if(u instanceof qx.Promise){return this.__dE(s,u);}
-;var t=u(s.result);if(t instanceof qx.Promise){return this.__dE(s,t);}
+;if(qx.lang.Type.isPromise(u)){return this.__dE(s,u);}
+;var t=u(s.result);if(qx.lang.Type.isPromise(t)){return this.__dE(s,t);}
 ;s.result=t;if(t===qx.event.Utils.ABORT){return this.reject(s);}
 ;return t;}
 ,"false":function(w,y){if(w.rejected){return null;}
