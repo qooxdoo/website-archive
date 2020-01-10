@@ -7236,6 +7236,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/22/apps/internet-feed-reader.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/apps/internet-mail.png": [
       22,
       22,
