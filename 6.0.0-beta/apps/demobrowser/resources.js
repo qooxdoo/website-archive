@@ -5178,13 +5178,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/48/devices/audio-card.png": [
+    "qx/icon/Oxygen/48/devices/audio-input-microphone.png": [
       48,
       48,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/48/devices/audio-input-microphone.png": [
+    "qx/icon/Oxygen/48/devices/audio-card.png": [
       48,
       48,
       "png",

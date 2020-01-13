@@ -230,6 +230,23 @@
                 "nr": 0
             },
             {
+                "name": "Cookie.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.set",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.get",
+                    "qx.ui.form.Button",
+                    "qx.bom.Cookie.del"
+                ],
+                "title": "Cookie",
+                "nr": 0
+            },
+            {
                 "name": "Dimension.html",
                 "tags": [
                     "noPlayground",
@@ -341,6 +358,20 @@
                     "qx.bom.Label.getHtmlSize"
                 ],
                 "title": "Label",
+                "nr": 0
+            },
+            {
+                "name": "Location.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Registration.addListener",
+                    "qx.bom.element.Style.get",
+                    "qx.bom.element.Style.get",
+                    "qx.bom.element.Location.get",
+                    "qx.core.Environment.get"
+                ],
+                "title": "Location",
                 "nr": 0
             },
             {
@@ -629,37 +660,6 @@
                 ],
                 "title": "Window",
                 "nr": 0
-            },
-            {
-                "name": "Location.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.bom.element.Style.get",
-                    "qx.bom.element.Style.get",
-                    "qx.bom.element.Location.get",
-                    "qx.core.Environment.get"
-                ],
-                "title": "Location",
-                "nr": 0
-            },
-            {
-                "name": "Cookie.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.set",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.get",
-                    "qx.ui.form.Button",
-                    "qx.bom.Cookie.del"
-                ],
-                "title": "Cookie",
-                "nr": 0
             }
         ]
     },
@@ -896,30 +896,6 @@
                 "nr": 0
             },
             {
-                "name": "ListControllerWith3Widgets.html",
-                "tags": [
-                    "databinding",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.form.List",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ComboBox",
-                    "qx.data.controller.List",
-                    "qx.data.controller.List",
-                    "qx.data.controller.List",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.log.appender.Console.show",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ListControllerWith3Widgets",
-                "nr": 0
-            },
-            {
                 "name": "ListControllerWithFilter.html",
                 "tags": [
                     "databinding",
@@ -1145,6 +1121,30 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
+            },
+            {
+                "name": "ListControllerWith3Widgets.html",
+                "tags": [
+                    "databinding",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.form.List",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ComboBox",
+                    "qx.data.controller.List",
+                    "qx.data.controller.List",
+                    "qx.data.controller.List",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.log.appender.Console.show",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ListControllerWith3Widgets",
+                "nr": 0
             }
         ]
     },
@@ -1893,6 +1893,55 @@
                 "nr": "NegativeMargin"
             },
             {
+                "name": "HBox_Percent.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox Percent",
+                "nr": "Percent"
+            },
+            {
+                "name": "HBox_Reversed.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox Reversed",
+                "nr": "Reversed"
+            },
+            {
                 "name": "HBox_Separator.html",
                 "tags": [
                     "noPlayground",
@@ -1977,20 +2026,6 @@
                 ],
                 "title": "ManualLayout",
                 "nr": 0
-            },
-            {
-                "name": "HBox_Reversed.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox Reversed",
-                "nr": "Reversed"
             },
             {
                 "name": "Spacer_Grid.html",
@@ -2331,41 +2366,6 @@
                 ],
                 "title": "VSplit",
                 "nr": 0
-            },
-            {
-                "name": "HBox_Percent.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox Percent",
-                "nr": "Percent"
             }
         ]
     },
@@ -2705,251 +2705,6 @@
                     "qx.ui.form.ListItem"
                 ],
                 "title": "Translation",
-                "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "table",
-        "tests": [
-            {
-                "name": "Table.html",
-                "tags": [
-                    "noPlayground",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.headerrenderer.Icon",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.tooltip.ToolTip"
-                ],
-                "title": "Table",
-                "nr": 0
-            },
-            {
-                "name": "Table_Cell_Editor.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.cellrenderer.Default",
-                    "qx.ui.table.cellrenderer.Dynamic",
-                    "qx.ui.table.celleditor.ComboBox",
-                    "qx.ui.table.celleditor.SelectBox",
-                    "qx.ui.table.celleditor.Dynamic",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table"
-                ],
-                "title": "Table Cell_Editor",
-                "nr": 0
-            },
-            {
-                "name": "Table_Conditional.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Conditional",
-                    "qx.ui.table.cellrenderer.Image"
-                ],
-                "title": "Table Conditional",
-                "nr": "Conditional"
-            },
-            {
-                "name": "Table_Context_Menu.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.menu.Button",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.tooltip.ToolTip"
-                ],
-                "title": "Table Context_Menu",
-                "nr": 0
-            },
-            {
-                "name": "Table_Events.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button"
-                ],
-                "title": "Table Events",
-                "nr": "Events"
-            },
-            {
-                "name": "Table_Filtered_Model.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Filtered",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.cellrenderer.Html",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button"
-                ],
-                "title": "Table Filtered_Model",
-                "nr": 0
-            },
-            {
-                "name": "Table_Huge.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table"
-                ],
-                "title": "Table Huge",
-                "nr": "Huge"
-            },
-            {
-                "name": "Table_Meta_Columns.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean"
-                ],
-                "title": "Table Meta_Columns",
-                "nr": 0
-            },
-            {
-                "name": "Table_Remote_Model.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Timer",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.CheckBox"
-                ],
-                "title": "Table Remote_Model",
-                "nr": 0
-            },
-            {
-                "name": "Table_Resize_Columns.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.tooltip.ToolTip"
-                ],
-                "title": "Table Resize_Columns",
-                "nr": 0
-            },
-            {
-                "name": "Table_Selection.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.headerrenderer.Icon",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.toolbar.Button"
-                ],
-                "title": "Table Selection",
-                "nr": "Selection"
-            },
-            {
-                "name": "Table_Window_Editor.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.command.Command"
-                ],
-                "title": "Table Window_Editor",
-                "nr": 0
-            },
-            {
-                "name": "Table_Drag_And_Drop.html",
-                "tags": [
-                    "noPlayground",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.headerrenderer.Icon"
-                ],
-                "title": "Table Drag_And_Drop",
                 "nr": 0
             }
         ]
@@ -3697,6 +3452,28 @@
                 "nr": 0
             },
             {
+                "name": "Pane_Column.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.util.ColorUtil.randomColor",
+                    "qx.ui.basic.Label",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Column",
+                    "qx.util.ColorUtil.randomColor"
+                ],
+                "title": "Pane Column",
+                "nr": "Column"
+            },
+            {
                 "name": "Pane_GridLines.html",
                 "tags": [
                     "test",
@@ -3735,6 +3512,46 @@
                 ],
                 "title": "Pane Row",
                 "nr": "Row"
+            },
+            {
+                "name": "SelectBox.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.VirtualSelectBox",
+                    "qx.data.store.Json"
+                ],
+                "title": "SelectBox",
+                "nr": 0
             },
             {
                 "name": "Selection.html",
@@ -3805,6 +3622,21 @@
                 "nr": 0
             },
             {
+                "name": "Table.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Row",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.HtmlCell",
+                    "qx.ui.virtual.cell.Cell"
+                ],
+                "title": "Table",
+                "nr": 0
+            },
+            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -3866,83 +3698,251 @@
                 ],
                 "title": "Tree Dynamic",
                 "nr": "Dynamic"
-            },
-            {
-                "name": "SelectBox.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.VirtualSelectBox",
-                    "qx.data.store.Json"
-                ],
-                "title": "SelectBox",
-                "nr": 0
-            },
+            }
+        ]
+    },
+    {
+        "classname": "table",
+        "tests": [
             {
                 "name": "Table.html",
                 "tags": [
-                    "test",
+                    "noPlayground",
+                    "showcase",
                     "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Row",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.HtmlCell",
-                    "qx.ui.virtual.cell.Cell"
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.headerrenderer.Icon",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.tooltip.ToolTip"
                 ],
                 "title": "Table",
                 "nr": 0
             },
             {
-                "name": "Pane_Column.html",
+                "name": "Table_Cell_Editor.html",
                 "tags": [
-                    "test",
+                    "noPlayground",
                     "qx.Class.define",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.util.ColorUtil.randomColor",
-                    "qx.ui.basic.Label",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Column",
-                    "qx.util.ColorUtil.randomColor"
+                    "qx.ui.table.cellrenderer.Default",
+                    "qx.ui.table.cellrenderer.Dynamic",
+                    "qx.ui.table.celleditor.ComboBox",
+                    "qx.ui.table.celleditor.SelectBox",
+                    "qx.ui.table.celleditor.Dynamic",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table"
                 ],
-                "title": "Pane Column",
-                "nr": "Column"
+                "title": "Table Cell_Editor",
+                "nr": 0
+            },
+            {
+                "name": "Table_Conditional.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Conditional",
+                    "qx.ui.table.cellrenderer.Image"
+                ],
+                "title": "Table Conditional",
+                "nr": "Conditional"
+            },
+            {
+                "name": "Table_Context_Menu.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.menu.Button",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.tooltip.ToolTip"
+                ],
+                "title": "Table Context_Menu",
+                "nr": 0
+            },
+            {
+                "name": "Table_Drag_And_Drop.html",
+                "tags": [
+                    "noPlayground",
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.headerrenderer.Icon"
+                ],
+                "title": "Table Drag_And_Drop",
+                "nr": 0
+            },
+            {
+                "name": "Table_Events.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button"
+                ],
+                "title": "Table Events",
+                "nr": "Events"
+            },
+            {
+                "name": "Table_Filtered_Model.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Filtered",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.cellrenderer.Html",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button"
+                ],
+                "title": "Table Filtered_Model",
+                "nr": 0
+            },
+            {
+                "name": "Table_Huge.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table"
+                ],
+                "title": "Table Huge",
+                "nr": "Huge"
+            },
+            {
+                "name": "Table_Meta_Columns.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean"
+                ],
+                "title": "Table Meta_Columns",
+                "nr": 0
+            },
+            {
+                "name": "Table_Remote_Model.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Timer",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.CheckBox"
+                ],
+                "title": "Table Remote_Model",
+                "nr": 0
+            },
+            {
+                "name": "Table_Resize_Columns.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.tooltip.ToolTip"
+                ],
+                "title": "Table Resize_Columns",
+                "nr": 0
+            },
+            {
+                "name": "Table_Selection.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.headerrenderer.Icon",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.toolbar.Button"
+                ],
+                "title": "Table Selection",
+                "nr": "Selection"
+            },
+            {
+                "name": "Table_Window_Editor.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.command.Command"
+                ],
+                "title": "Table Window_Editor",
+                "nr": 0
             }
         ]
     },
@@ -4635,6 +4635,18 @@
                 "nr": 0
             },
             {
+                "name": "SlideBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.SlideBar",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Image",
+                    "qx.ui.form.ToggleButton"
+                ],
+                "title": "SlideBar",
+                "nr": 0
+            },
+            {
                 "name": "Slider.html",
                 "tags": [
                     "qx.Class.define",
@@ -4692,15 +4704,42 @@
                 "nr": 0
             },
             {
-                "name": "SlideBar.html",
+                "name": "SplitPane.html",
                 "tags": [
                     "qx.Class.define",
-                    "qx.ui.container.SlideBar",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Image",
-                    "qx.ui.form.ToggleButton"
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.splitpane.Pane",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Slider",
+                    "qx.ui.tree.Tree",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder"
                 ],
-                "title": "SlideBar",
+                "title": "SplitPane",
                 "nr": 0
             },
             {
@@ -5011,45 +5050,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "SplitPane.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.splitpane.Pane",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Slider",
-                    "qx.ui.tree.Tree",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder"
-                ],
-                "title": "SplitPane",
                 "nr": 0
             }
         ]
