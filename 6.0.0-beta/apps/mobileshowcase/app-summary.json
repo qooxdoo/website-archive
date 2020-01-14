@@ -4,13 +4,14 @@
     "qx",
     "qxl.playground",
     "qxl.logpane",
-    "qxl.demobrowser",
-    "qxl.apiviewer",
-    "qxl.formdemo",
-    "qxl.widgetbrowser",
-    "qxl.mobileshowcase",
     "qxl.versionlabel",
-    "qxl.datademo"
+    "qxl.demobrowser",
+    "qxl.widgetbrowser",
+    "qxl.formdemo",
+    "qxl.datademo",
+    "qxl.mobileshowcase",
+    "qxl.apiviewer",
+    "qxl.testtapper"
   ],
   "parts": [
     {
@@ -516,6 +517,7 @@
       "qxl.*"
     ],
     "qx.contrib": false,
+    "testtapper.testNameSpace": "qx.test",
     "qx.allowUrlSettings": false,
     "qx.allowUrlVariants": false
   }
