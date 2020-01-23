@@ -280,6 +280,10 @@ var libinfo = {
   "__out__": {
     "sourceUri": qx.$$appRoot + ""
   },
+  "qx": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.playground": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -288,15 +292,7 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.versionlabel": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
   "qxl.demobrowser": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qx": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
@@ -304,11 +300,11 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.widgetbrowser": {
+  "qxl.formdemo": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.formdemo": {
+  "qxl.mobileshowcase": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
@@ -320,7 +316,11 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.mobileshowcase": {
+  "qxl.widgetbrowser": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.versionlabel": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }
