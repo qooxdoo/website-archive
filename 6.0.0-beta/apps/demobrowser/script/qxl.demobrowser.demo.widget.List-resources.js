@@ -2220,13 +2220,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/audio-input-microphone.png": [
+    "qx/icon/Tango/48/devices/audio-card.png": [
       48,
       48,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/audio-card.png": [
+    "qx/icon/Tango/48/devices/audio-input-microphone.png": [
       48,
       48,
       "png",
@@ -2238,13 +2238,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/camera-web.png": [
+    "qx/icon/Tango/48/devices/camera-photo.png": [
       48,
       48,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/camera-photo.png": [
+    "qx/icon/Tango/48/devices/camera-web.png": [
       48,
       48,
       "png",
@@ -2286,13 +2286,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/media-optical.png": [
+    "qx/icon/Tango/48/devices/media-flash.png": [
       48,
       48,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/devices/media-flash.png": [
+    "qx/icon/Tango/48/devices/media-optical.png": [
       48,
       48,
       "png",

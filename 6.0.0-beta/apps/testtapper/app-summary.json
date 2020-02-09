@@ -2,6 +2,7 @@
   "appClass": "qxl.testtapper.Application",
   "libraries": [
     "qx",
+    "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
     "qxl.demobrowser",
@@ -9,9 +10,8 @@
     "qxl.widgetbrowser",
     "qxl.formdemo",
     "qxl.mobileshowcase",
-    "qxl.testtapper",
-    "qxl.playground",
-    "qxl.datademo"
+    "qxl.datademo",
+    "qxl.testtapper"
   ],
   "parts": [
     {
