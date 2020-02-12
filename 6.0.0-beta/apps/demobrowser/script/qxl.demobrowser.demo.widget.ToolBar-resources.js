@@ -1902,13 +1902,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/address-book-new.png": [
+    "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/application-exit.png": [
+    "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
       "png",
@@ -6678,6 +6678,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/48/actions/system-shutdown.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/48/actions/view-fullscreen.png": [
       48,
       48,
@@ -6739,12 +6745,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/zoom-out.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/48/actions/system-shutdown.png": [
       48,
       48,
       "png",

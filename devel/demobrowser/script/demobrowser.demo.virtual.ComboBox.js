@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.ComboBox.9504728f4227.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.virtual.ComboBox.8aeb336edf82.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -11982,7 +11982,8 @@ else {this.getPane().getRowConfig().resetItemSizes();this.getPane().fullUpdate()
 ,this);}
 ;this.__ym.schedule();}
 ,__yn:function(){this.getPane().getRowConfig().setItemCount(this.__vv.length);this.getPane().fullUpdate();}
-,__yo:function(){var bw=this.getPane().getRowConfig();var bx=this.getGroupItemHeight();bw.resetItemSizes();if(bx){for(var i=0,l=this.__vv.length;i<l; ++i){if(this.__vv[i]==-1){bw.setItemSize(i,bx);}
+,__yo:function(){if(this.isVariableItemHeight()){return;}
+;var bw=this.getPane().getRowConfig();var bx=this.getGroupItemHeight();bw.resetItemSizes();if(bx){for(var i=0,l=this.__vv.length;i<l; ++i){if(this.__vv[i]==-1){bw.setItemSize(i,bx);}
 ;}
 ;}
 ;}
