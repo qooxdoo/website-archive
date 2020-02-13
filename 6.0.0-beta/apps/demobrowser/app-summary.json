@@ -5,12 +5,12 @@
     "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
+    "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
     "qxl.testtapper",
-    "qxl.demobrowser",
     "qxl.widgetbrowser"
   ],
   "parts": [
@@ -1601,7 +1601,7 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.14"
+        "version": "1.0.0-beta.15"
       },
       "qx": {
         "name": "qooxdoo framework",
