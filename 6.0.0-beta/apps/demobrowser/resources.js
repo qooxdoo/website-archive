@@ -9582,6 +9582,30 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
+    "qxl/demobrowser/demo/test/alphaPNG.png": [
+      20,
+      20,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
+      113,
+      65,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/feedreader_thumb.png": [
+      105,
+      65,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/logo.gif": [
+      136,
+      41,
+      "gif",
+      "qxl.demobrowser"
+    ],
     "qxl/demobrowser/demo/theme/tag-hor-c.png": [
       6,
       12,
@@ -9670,30 +9694,6 @@ qx.$$packageData['0'] = {
       null,
       null,
       "js",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/alphaPNG.png": [
-      20,
-      20,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
-      113,
-      65,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/feedreader_thumb.png": [
-      105,
-      65,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/logo.gif": [
-      136,
-      41,
-      "gif",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/icons/imicons/.gitignore": [
