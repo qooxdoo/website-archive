@@ -1098,30 +1098,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Classic/window/close.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/maximize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/minimize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/restore.gif": [
-      8,
-      9,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Classic/treevirtual/cross.gif": [
       19,
       16,
@@ -1191,6 +1167,30 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/treevirtual/start_plus.gif": [
       19,
       16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/close.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/maximize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/minimize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/restore.gif": [
+      8,
+      9,
       "gif",
       "qx"
     ],
@@ -2550,6 +2550,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/apps/media-video-player.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/apps/office-address-book.png": [
       16,
       16,
@@ -2784,12 +2790,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/apps/media-video-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/categories/accessories.png": [
       16,
       16,
@@ -2851,6 +2851,126 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/categories/utilities.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/audio-card.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/audio-input-microphone.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/battery.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/camera-photo.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/camera-web.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/computer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/display.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/drive-harddisk.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/drive-optical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/input-keyboard.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/input-mouse.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/media-flash.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/media-optical.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/multimedia-player.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/network-wired.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/network-wireless.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/pda.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/phone.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/printer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/devices/scanner.png": [
       16,
       16,
       "png",
@@ -3127,126 +3247,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/audio-card.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/audio-input-microphone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/battery.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/camera-photo.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/camera-web.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/computer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/display.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/drive-harddisk.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/drive-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/input-keyboard.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/input-mouse.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/media-flash.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/media-optical.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/multimedia-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/network-wired.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/network-wireless.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/pda.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/phone.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/printer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/devices/scanner.png": [
       16,
       16,
       "png",
@@ -9582,30 +9582,6 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/test/alphaPNG.png": [
-      20,
-      20,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
-      113,
-      65,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/feedreader_thumb.png": [
-      105,
-      65,
-      "png",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/test/logo.gif": [
-      136,
-      41,
-      "gif",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/theme/tag-hor-c.png": [
       6,
       12,
@@ -9694,6 +9670,30 @@ qx.$$packageData['0'] = {
       null,
       null,
       "js",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/alphaPNG.png": [
+      20,
+      20,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/demobrowser_thumb.png": [
+      113,
+      65,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/feedreader_thumb.png": [
+      105,
+      65,
+      "png",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/test/logo.gif": [
+      136,
+      41,
+      "gif",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/icons/imicons/.gitignore": [

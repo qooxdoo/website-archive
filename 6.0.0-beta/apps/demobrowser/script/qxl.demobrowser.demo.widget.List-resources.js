@@ -1098,30 +1098,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Classic/window/close.gif": [
-      10,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/maximize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/minimize.gif": [
-      9,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/window/restore.gif": [
-      8,
-      9,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Classic/treevirtual/cross.gif": [
       19,
       16,
@@ -1191,6 +1167,30 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/treevirtual/start_plus.gif": [
       19,
       16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/close.gif": [
+      10,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/maximize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/minimize.gif": [
+      9,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Classic/window/restore.gif": [
+      8,
+      9,
       "gif",
       "qx"
     ],
