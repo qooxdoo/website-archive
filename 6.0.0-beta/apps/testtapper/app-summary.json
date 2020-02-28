@@ -2,8 +2,8 @@
   "appClass": "qxl.testtapper.Application",
   "libraries": [
     "qx",
-    "qxl.playground",
     "qxl.logpane",
+    "qxl.versionlabel",
     "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
@@ -11,7 +11,7 @@
     "qxl.mobileshowcase",
     "qxl.datademo",
     "qxl.testtapper",
-    "qxl.versionlabel"
+    "qxl.playground"
   ],
   "parts": [
     {
@@ -1289,7 +1289,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20200227-1623",
+    "qx.compilerVersion": "1.0.0-beta.20200228-1557",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,

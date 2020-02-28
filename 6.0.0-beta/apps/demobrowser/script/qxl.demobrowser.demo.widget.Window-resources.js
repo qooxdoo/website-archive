@@ -1800,6 +1800,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/treevirtual/end.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/treevirtual/end_minus.gif": [
       19,
       16,
@@ -1819,12 +1825,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/decoration/Simple/treevirtual/only_minus.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/treevirtual/end.gif": [
       19,
       16,
       "gif",
