@@ -1,0 +1,517 @@
+﻿
+<!doctype html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Annotations &mdash; qooxdoo 6.0.0-beta documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/copies/layout.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '6.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/copies/html5shiv.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.placeholder.js"></script>
+    <script type="text/javascript" src="../../_static/copies/q.sticky.js"></script>
+    <script type="text/javascript" src="../../_static/copies/application.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="qooxdoo 6.0.0-beta documentation" href="../../index.html" />
+    <link rel="up" title="Core" href="../core.html" />
+    <link rel="next" title="Introduction to Properties" href="understanding_properties.html" />
+    <link rel="prev" title="Mixins" href="mixins.html" />
+    <link rel="shortcut icon" href="http://resources.qooxdoo.org/images/qx-favicon.png" />
+    <script type="text/javascript">
+      // decorate jQuery.getQueryParameters to always process search words
+      // as *lower case* due to a bug in sphinx (see qooxdoo BUG #7292) -
+      // this ensures that for example "FILENAME" and "filename" produces
+      // the same amount of results.
+      var originalGetQueryParameters = jQuery.getQueryParameters;
+      jQuery.getQueryParameters = function(s) {
+        var result = originalGetQueryParameters(s);
+        if (result.q) { result.q = [result.q[0].toLowerCase()]; }
+        return result;
+      };
+    </script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-415440-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body>
+<div id="main-wrapper" class="sphinx">
+<div id="header-wrapper">
+  <section id="header">
+    <h1><a href="http://qooxdoo.org/">qooxdoo</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a class="" href="http://news.qooxdoo.org">blog</a>
+        </li>
+        <li>
+          <a class="" href="/demos.html">demos</a>
+        </li>
+        <li>
+          <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">downloads</a>
+        </li>
+        <li>
+          <a class="active" href="/current">docs</a>
+        </li>
+        <li>
+         <a class="" href="/current/apiviewer">api</a>
+        </li>
+        <li>
+          <a class="" href="http://stackoverflow.com/questions/tagged/qooxdoo">support</a>
+        </li>
+        <li>
+          <a class="" href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+        </li>
+      </ul>
+    </nav>
+<!---    
+    <script type="template" id="search-options-template">
+      <select>
+        <option value="site">Site</option>
+        <option value="manual">Manual</option>
+        <option value="blog">Blog</option>
+        <option value="bugs">Bugs</option>
+      </select>
+    </script>
+    <script type="template" id="search-site-template">
+      <form action="http://qooxdoo.org/" id="search-form">
+        <input type="hidden" name="do" value="search">
+        <input type="search" name="id" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-blog-template">
+      <form method="get" id="searchform" action="http://news.qooxdoo.org/" id="search-form">
+        <input type="search" class="field" name="s" id="s" placeholder="Search">
+      </form>
+    </script>
+    <script type="template" id="search-manual-template">
+      <form action="../../search.html" id="search-form">
+        <input type="search" name="q" placeholder="Search"></input>
+      </form>
+    </script>
+    <script type="template" id="search-bugs-template">
+      <form action="http://bugs.qooxdoo.org/buglist.cgi" id="search-form">
+        <input type="search" name="quicksearch" placeholder="Search"></input>
+      </form>
+    </script>
+    <div id="search">
+    </div>
+-->    
+  </section>
+<div class="decoration"></div>
+</div>
+ 
+<section id="main">
+  <section id="breadcrumb">
+      
+  <a href="http://qooxdoo.org">Home</a> &raquo;
+    <a href="../../index.html">Manual (v6.0.0-beta)</a>
+       &raquo;
+      <a href="../core.html" accesskey="U">Core</a>
+     &raquo;
+    <a href="">Annotations</a>
+    </section>
+    <section id="content">
+      <div class="body">
+        
+  <div class="section" id="annotations">
+<span id="pages-annotations-annotations"></span><h1>Annotations<a class="headerlink" href="#annotations" title="Permalink to this headline">¶</a></h1>
+<p>Annotations are the ability to add meta data to classes so that the meta data can be accessed at runtime; the meta data can be added to individual members, properties, statics, constructor, destructor, or the whole class.</p>
+<p>Properties already include some meta data - the <cite>check</cite> attribute allows to specify data type or range of values, and Qooxdoo uses this meta data to enforce validation; you can access this meta data too, but it's pretty limited in its usefulness.  Annotations allow you to add your own, application specific meta data to describe anything you want (and not just to properties).</p>
+<p>Annotations can be anything you want - in Java, they have to be a specific type, but in this implementation they can be any object and (I find at the moment) a string is very handy.  Obviously it’s important to be clear about your naming convention (!), and it would be wise to prefix strings with your package name.</p>
+<p>One question about Annotations is, why can’t you use interfaces to do the same thing?  Interfaces have their (very important) place, but they require that you implement code in every class in order for that class to provide that interface’s given functionality; annotations allow you to separate the code which does the work from the class, but this can only work because the class is able to “annotate” itself with guidelines on how to that separate code should behave.</p>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>Suppose you create a form that allows the user to edit some object, and that object has lots of properties that can be edited; some of those properties are read only, some can only be edited by people with the correct permission, some are integers, some can only have a specific range of values, etc.</p>
+<p>When you hand code your form you embed a lot of that business knowledge (about who can edit what, and what values are allowed) into your form editor, plus there is some basic validation by the property <cite>check</cite> attribute.</p>
+<p>But lets say you edit that object in more than one place - eg a second form editor UI, and maybe there are places where the object is edited by code as a result of server interaction or other event.  This means duplicating that validation logic in all form editors and in the code that manipulates and validates those properties.</p>
+<p>One possible solution using annotations would be to annotate each property with special information about what is allowed, and then let your form editors use that information to customise the controls; a separate validator could use the same annotations to check the values being set against the properties explicitly.</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first docutils">
+<dt>qx.Class.define(&quot;myapp.model.Customer&quot;, {</dt>
+<dd><p class="first">extend: qx.core.Object,</p>
+<dl class="docutils">
+<dt>properties: {</dt>
+<dd><dl class="first docutils">
+<dt>address: {</dt>
+<dd>check: &quot;String&quot;</dd>
+</dl>
+<p>},
+zipCode: {</p>
+<blockquote>
+<div>check: &quot;String&quot;,
+&quot;&#64;&quot;: [ new myapp.forms.annotations.ZipCode().set({ allowNonUsa: true }) ]</div></blockquote>
+<p class="last">}</p>
+</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>});</p>
+<dl class="docutils">
+<dt>qx.Class.define(&quot;myapp.forms.annotations.ValidationAnnotation&quot;, {</dt>
+<dd><p class="first">extend: qx.core.Object,
+type: &quot;abstract&quot;,</p>
+<dl class="docutils">
+<dt>members: {</dt>
+<dd><dl class="first docutils">
+<dt>/**</dt>
+<dd><ul class="first simple">
+<li>Called to check whether a value is valid</li>
+<li>&#64;abstract</li>
+<li>&#64;param value {String} value to be interpretted</li>
+<li>&#64;return {Boolean}</li>
+</ul>
+<p class="last"><a href="#id1"><span class="problematic" id="id2">*</span></a>/</p>
+</dd>
+</dl>
+<p class="last">isValid: function(value) {
+}</p>
+</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>});
+qx.Class.define(&quot;myapp.forms.annotations.ZipCode&quot;, {</p>
+<blockquote>
+<div><p>extend: myapp.forms.annotations.ValidationAnnotation,</p>
+<dl class="docutils">
+<dt>properties: {</dt>
+<dd><dl class="first docutils">
+<dt>allowNonUsa: {</dt>
+<dd>init: false,
+check: &quot;Boolean&quot;</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>},</p>
+<dl class="docutils">
+<dt>members: {</dt>
+<dd><dl class="first docutils">
+<dt>/*</dt>
+<dd><ul class="first simple">
+<li>&#64;Override</li>
+</ul>
+<p class="last"><a href="#id3"><span class="problematic" id="id4">*</span></a>/</p>
+</dd>
+<dt>isValid: function(value) {</dt>
+<dd>var ok = true;
+/* ... zip code validation ... <a href="#id5"><span class="problematic" id="id6">*</span></a>/
+return ok;</dd>
+</dl>
+<p class="last">}</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p class="last">});</p>
+</dd>
+</dl>
+<p>Your form validation logic, when asked to bind to a given property could get a list of annotations which derive from myapp.forms.annotations.ValidationAnnotation, and use that to implement it's validation logic, for example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">propAnnos</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">Annotation</span><span class="p">.</span><span class="nx">getProperty</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">constructor</span><span class="p">,</span> <span class="nx">propName</span><span class="p">);</span>
+<span class="nx">propAnnos</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">propAnno</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">propAnno</span> <span class="k">instanceof</span> <span class="nx">myapp</span><span class="p">.</span><span class="nx">forms</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">ValidationAnnotation</span><span class="p">)</span> <span class="p">{</span>
+                <span class="cm">/* ... Setup the validation rules (eg for a ZipCode) ... */</span>
+        <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Lets refine our example above and say that the Customer objects are part of an object model which needs to be replicated on to the server; most of the properties are business data and need to be kept synchronised with the server when the user hits save.  This data is usually changed by the <cite>CustomerEditor</cite> widget, but admin users can edit the <cite>Customer`s in a table, and there are a couple of UI wizards for manipulating the data in each `Customer</cite> object too.</p>
+<p>You do not want the UI code to handle copying the data to the server and back because it happens in so many places, it would be much better is Customer just &quot;knew&quot; about the properties.</p>
+<p>To automate this, you could start by just synchronising <em>all</em> properties in Customer to the server, but the likelyhood is that there are properties which only exist in the UI, and anyway the naming conventions might mean that property names on the server are always 100% the same as that on the server.</p>
+<p>By adding annotations to each property that needs to be synchronised, you can describe which need to be transferred, what their name is at the server, whether they are one way, etc.  Once piece of generic code can then handle synchronising for Customer or any server object that works in this way.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;myapp.model.Customer&quot;</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nb">Object</span><span class="p">,</span>
+
+        <span class="c1">// Annotate the class with the REST endpoint required by serverio library, used to save the</span>
+        <span class="c1">//      modified Customer objects</span>
+        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">RestClass</span><span class="p">().</span><span class="nx">set</span><span class="p">({</span> <span class="nx">restEndPoint</span><span class="o">:</span> <span class="s2">&quot;/api/customer&quot;</span> <span class="p">})</span> <span class="p">],</span>
+
+        <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">serverId</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">Property</span><span class="p">.</span><span class="nx">getIdentifierInstance</span><span class="p">()</span> <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="nx">name</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">Property</span><span class="p">.</span><span class="nx">getDefaultInstance</span><span class="p">()</span> <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="nx">address</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">Property</span><span class="p">.</span><span class="nx">getDefaultInstance</span><span class="p">()</span> <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="nx">zipCode</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;String&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span>  <span class="k">new</span> <span class="nx">myapp</span><span class="p">.</span><span class="nx">forms</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">ZipCode</span><span class="p">().</span><span class="nx">set</span><span class="p">({</span> <span class="nx">allowNonUsa</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}),</span>
+                                        <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">Property</span><span class="p">.</span><span class="nx">getDefaultInstance</span><span class="p">()</span> <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="nx">creditLimit</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">check</span> <span class="o">:</span><span class="s2">&quot;Number&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">myapp</span><span class="p">.</span><span class="nx">forms</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">PositiveCurrency</span><span class="p">(),</span>
+                                        <span class="k">new</span> <span class="nx">serverio</span><span class="p">.</span><span class="nx">annotations</span><span class="p">.</span><span class="nx">Property</span><span class="p">().</span><span class="nx">set</span><span class="p">({</span> <span class="nx">serverName</span><span class="o">:</span> <span class="s2">&quot;maxCreditLimit&quot;</span> <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="nx">dirty</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">init</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+                        <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;Boolean&quot;</span>
+                <span class="p">}</span>
+        <span class="p">},</span>
+
+        <span class="nx">members</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">save</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">isDirty</span><span class="p">())</span> <span class="p">{</span>
+                                <span class="nx">serverio</span><span class="p">.</span><span class="nx">Database</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+                                <span class="k">this</span><span class="p">.</span><span class="nx">setDirty</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+                        <span class="p">}</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>In the above example, the class is given an annotation which says what the REST endpoint is - there is presumably a server component which provides CRUD database access for the CUSTOMER database table.</p>
+<p>Each property which is to be sent to the client is marked with an instance of the serverio.annotations.Property annotation; note that in this design, it can be a static instance (eg from getDefaultInstance()) or a whole new instance where a special customisation is required.</p>
+<p>These annotations provide all the information that is required for a static method such as serverio.Database.save() to be able to store the object's properties - it can iterate all the properties, discover which is the unique server ID for updates, apply customised name mapping on a particular property (eg &quot;creditLimit&quot;), and know the endpoint to send the data to.</p>
+<p>Note also how there are two different sets of annotations mixed in together, one for form validation in the UI and another for serialising to the server; the class is not required to inherit from a given base class, or even implement interfaces.</p>
+</div>
+<div class="section" id="declaration">
+<span id="pages-annotations-declaration"></span><h2>Declaration<a class="headerlink" href="#declaration" title="Permalink to this headline">¶</a></h2>
+<p>Annotations are declared next to the method being annotated but with a leading &quot;&#64;&quot; symbol, or in the case of properties and classes just an &quot;&#64;&quot; within the definition.  For example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Cat&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;class-annotation&quot;</span> <span class="p">],</span>
+  <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nb">Object</span><span class="p">,</span>
+
+  <span class="s2">&quot;@construct&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;constructor-annotation&quot;</span> <span class="p">],</span>
+  <span class="nx">construct</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>In the above examples the two annotations are just strings, which is functional but you have to be careful to avoid name conflicts - if you use strings, make sure that it is prefixed with your library namespace.</p>
+<p>Perhaps a better way to annotate would be with an instance of a class that has well defined properties; for example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Pet&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nb">Object</span><span class="p">,</span>
+
+  <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">hasFur</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">serverio</span><span class="p">.</span><span class="nx">SerialiseColumn</span><span class="p">(</span><span class="s2">&quot;HAS_FUR&quot;</span><span class="p">)</span> <span class="p">],</span>
+            <span class="nx">init</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">check</span><span class="o">:</span> <span class="s2">&quot;Boolean&quot;</span>
+    <span class="p">},</span>
+
+    <span class="nx">color</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">serverio</span><span class="p">.</span><span class="nx">SerialiseColumn</span><span class="p">(</span><span class="s2">&quot;COLOR&quot;</span><span class="p">)</span> <span class="p">],</span>
+            <span class="nx">nullable</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nx">check</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;brown&quot;</span> <span class="p">]</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">qx</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;qx.test.Cat&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">serverio</span><span class="p">.</span><span class="nx">SerialiseTable</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s2">&quot;CAT&quot;</span><span class="p">)</span> <span class="p">],</span>
+  <span class="nx">extend</span><span class="o">:</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">Pet</span><span class="p">,</span>
+
+  <span class="nx">properties</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">hasFur</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&quot;@&quot;</span><span class="o">:</span> <span class="p">[</span> <span class="s2">&quot;qx.test.otherAnnotation&quot;</span> <span class="p">],</span>
+            <span class="nx">refine</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reflection">
+<span id="pages-annotations-reflection"></span><h2>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">¶</a></h2>
+<p>Annotations are only useful if you can inspect them, and the <tt class="docutils literal"><span class="pre">qx.Annotation</span></tt> class provides methods for accessing them; for example:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">pet</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPet</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">annos</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">Annotation</span><span class="p">.</span><span class="nx">getProperty</span><span class="p">(</span><span class="nx">pet</span><span class="p">.</span><span class="nx">constructor</span><span class="p">,</span> <span class="s2">&quot;color&quot;</span><span class="p">);</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertEquals</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">annos</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertEquals</span><span class="p">(</span><span class="s2">&quot;qx.serverio.SerialiseColumn&quot;</span><span class="p">,</span> <span class="nx">annos</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">classname</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note that you can use annotations in super classes and add further annotations in derived classes; in the example above, the &quot;hasFur&quot; property has two annotations in the qx.test.Cat class, but only one for qx.test.Pet.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">pet</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPet</span><span class="p">();</span>
+
+<span class="c1">// Only Cat&#39;s have the second annotation</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertTrue</span><span class="p">(</span><span class="nx">pet</span> <span class="k">instanceof</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">Cat</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">annos</span> <span class="o">=</span> <span class="nx">qx</span><span class="p">.</span><span class="nx">Annotation</span><span class="p">.</span><span class="nx">getProperty</span><span class="p">(</span><span class="nx">pet</span><span class="p">.</span><span class="nx">constructor</span><span class="p">,</span> <span class="s2">&quot;hasFur&quot;</span><span class="p">);</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertEquals</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nx">annos</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertEquals</span><span class="p">(</span><span class="s2">&quot;qx.test.otherAnnotation&quot;</span><span class="p">,</span> <span class="nx">annos</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="nx">qx</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">Assert</span><span class="p">.</span><span class="nx">assertEquals</span><span class="p">(</span><span class="s2">&quot;qx.serverio.SerialiseColumn&quot;</span><span class="p">,</span> <span class="nx">annos</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="nx">classname</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottom-nav">
+          <a class="prev" href="mixins.html"
+             title="previous chapter">« Mixins</a>
+          <span class="separator">|</span>
+          <a class="next" href="understanding_properties.html"
+             title="next chapter">Introduction to Properties »</a>
+      </div>
+    </section>
+    <section id="sidebar">
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <ul>
+<li><a class="reference internal" href="#">Annotations</a><ul>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#declaration">Declaration</a></li>
+<li><a class="reference internal" href="#reflection">Reflection</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>» Next topic</h4>
+  <p class="topless"><a href="understanding_properties.html"
+                        title="next chapter">Introduction to Properties</a></p>
+  <h4>« Previous topic</h4>
+  <p class="topless"><a href="mixins.html"
+                        title="previous chapter">Mixins</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">
+  // $('#searchbox').show(0);
+</script>
+        </div>
+      </div>
+  </section>
+</section>
+</div> 
+<div id="footer-wrapper">
+  <footer id="footer">
+    <div id="sitemap">
+      <div>
+        <h3><a href="http://qooxdoo.org/">Home</a></h3>
+        <ul>
+          <li>
+            <a class="" href="http://news.qooxdoo.org">Blog</a>
+          </li>
+          <li>
+            <a class="" href="http://qooxdoo.org/demos.html">Demos</a>
+          </li>
+          <li>
+            <a class="" href="https://github.com/qooxdoo/qooxdoo/releases">Downloads</a>
+          </li>
+         <li> 
+           <a href="https://github.com/qooxdoo/qooxdoo/issues">Bugs</a> 
+         </li> 
+        <li> 
+          <a href="/license.html">License</a> 
+         </li> 
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/current">Docs</a></h3>
+        <ul>
+          <li>
+            
+            <a href="/current/6.0.0-beta/pages/introduction/about.html">About</a>
+          </li>
+          <li>
+            <a href="/current/6.0.0-beta/pages/getting_started.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/current/6.0.0-beta/pages/website.html">Website</a>
+          </li>
+          <li>
+            <a href="/current/6.0.0-beta/pages/mobile.html">Mobile</a>
+          </li>
+          <li>
+            <a href="/current/6.0.0-beta/pages/desktop.html">Desktop</a>
+          </li>
+          <li>
+            <a href="/current/6.0.0-beta/pages/server.html">Server</a>
+          </li>
+          <li>
+            <a class="" href="/current/apiviewer">Api</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3><a href="/community">Community</a></h3>
+        <ul>
+          <li>
+            <a href="https://gitter.im/qooxdoo/qooxdoo">chat room</a>
+          </li>
+          <li>
+            <a href="http://stackoverflow.com/questions/tagged/qooxdoo">Stackoverflow</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="meta">
+      <div class="social">
+        <a href="http://twitter.com/qooxdoo">
+          <img src="http://resources.qooxdoo.org/images/twitter.png">
+        </a>
+        <a href="https://www.facebook.com/pages/qooxdoo/187101324711780">
+          <img src="http://resources.qooxdoo.org/images/facebook.png">
+        </a>
+        <a href="http://feeds.feedburner.com/qooxdoo/news/content">
+          <img src="http://resources.qooxdoo.org/images/feed.png">
+        </a>
+      </div>
+<!--
+      <div class="notice">
+        <p class="source">
+          <strong>
+            <a href="../../_sources/pages/core/annotations.txt" rel="nofollow">Show Source</a>
+          </strong>
+        </p>
+        <p class="page">
+              &copy; Copyright 2011-2015, 1&amp;1 Internet AG.
+            Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
+        </p>
+      </div>
+-->	  
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

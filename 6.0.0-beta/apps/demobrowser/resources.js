@@ -1800,12 +1800,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/treevirtual/end.gif": [
-      19,
-      16,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/treevirtual/end_minus.gif": [
       19,
       16,
@@ -1825,6 +1819,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/decoration/Simple/treevirtual/only_minus.gif": [
+      19,
+      16,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/treevirtual/end.gif": [
       19,
       16,
       "gif",
@@ -2730,6 +2730,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/apps/utilities-graphics-viewer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/apps/utilities-help.png": [
       16,
       16,
@@ -2779,12 +2785,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/apps/utilities-text-editor.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-graphics-viewer.png": [
       16,
       16,
       "png",
@@ -3072,6 +3072,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/mimetypes/media-video.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/mimetypes/office-calendar.png": [
       16,
       16,
@@ -3241,12 +3247,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/media-video.png": [
       16,
       16,
       "png",
@@ -9048,13 +9048,13 @@ qx.$$packageData['0'] = {
       "js",
       "qx"
     ],
-    "qx/test/part/file3-closure.js": [
+    "qx/test/part/file3.js": [
       null,
       null,
       "js",
       "qx"
     ],
-    "qx/test/part/file3.js": [
+    "qx/test/part/file3-closure.js": [
       null,
       null,
       "js",
