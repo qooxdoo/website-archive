@@ -354,16 +354,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-tb-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow-tb-combined.png": [
       15,
       90,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow-tb-combined.meta": [
+      null,
+      null,
+      "meta",
       "qx"
     ],
     "qx/decoration/Classic/table-combined.meta": [
@@ -7944,6 +7944,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/32/actions/view-sort-descending.png": [
       32,
       32,
@@ -7981,12 +7987,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/32/actions/zoom-out.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
       32,
       32,
       "png",
@@ -9576,12 +9576,6 @@ qx.$$packageData['0'] = {
       "webm",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
-      200,
-      59,
-      "png",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/test/alphaPNG.png": [
       20,
       20,
@@ -9694,6 +9688,12 @@ qx.$$packageData['0'] = {
       null,
       null,
       "js",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
+      200,
+      59,
+      "png",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/icons/imicons/.gitignore": [

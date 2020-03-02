@@ -354,16 +354,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-tb-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow-tb-combined.png": [
       15,
       90,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow-tb-combined.meta": [
+      null,
+      null,
+      "meta",
       "qx"
     ],
     "qx/decoration/Classic/table-combined.meta": [

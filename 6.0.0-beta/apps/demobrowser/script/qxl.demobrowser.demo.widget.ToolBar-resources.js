@@ -354,16 +354,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-tb-combined.meta": [
-      null,
-      null,
-      "meta",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow-tb-combined.png": [
       15,
       90,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow-tb-combined.meta": [
+      null,
+      null,
+      "meta",
       "qx"
     ],
     "qx/decoration/Classic/table-combined.meta": [
@@ -6096,6 +6096,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/32/actions/view-sort-descending.png": [
       32,
       32,
@@ -6133,12 +6139,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/32/actions/zoom-out.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
       32,
       32,
       "png",
