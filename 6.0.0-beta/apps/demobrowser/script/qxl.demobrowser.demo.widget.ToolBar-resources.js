@@ -6096,12 +6096,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/32/actions/view-sort-descending.png": [
       32,
       32,
@@ -6139,6 +6133,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/32/actions/zoom-out.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/32/actions/view-sort-ascending.png": [
       32,
       32,
       "png",
