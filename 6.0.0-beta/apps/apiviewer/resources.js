@@ -354,16 +354,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Classic/shadow-tb-combined.png": [
-      15,
-      90,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Classic/shadow-tb-combined.meta": [
       null,
       null,
       "meta",
+      "qx"
+    ],
+    "qx/decoration/Classic/shadow-tb-combined.png": [
+      15,
+      90,
+      "png",
       "qx"
     ],
     "qx/decoration/Classic/table-combined.meta": [
@@ -2232,6 +2232,12 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.apiviewer"
     ],
+    "qxl/apiviewer/image/inherited_and_mixins_included.gif": [
+      18,
+      22,
+      "gif",
+      "qxl.apiviewer"
+    ],
     "qxl/apiviewer/image/interface18.gif": [
       18,
       18,
@@ -2241,12 +2247,6 @@ qx.$$packageData['0'] = {
     "qxl/apiviewer/image/interface_warning18.gif": [
       18,
       18,
-      "gif",
-      "qxl.apiviewer"
-    ],
-    "qxl/apiviewer/image/inherited_and_mixins_included.gif": [
-      18,
-      22,
       "gif",
       "qxl.apiviewer"
     ],
