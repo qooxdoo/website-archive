@@ -3,15 +3,15 @@
   "libraries": [
     "qx",
     "qxl.playground",
+    "qxl.logpane",
     "qxl.versionlabel",
-    "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
-    "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
     "qxl.testtapper",
-    "qxl.logpane"
+    "qxl.demobrowser",
+    "qxl.formdemo"
   ],
   "parts": [
     {
@@ -509,7 +509,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20200228-1557",
+    "qx.compilerVersion": "1.0.0-beta.20200307-0842",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,
