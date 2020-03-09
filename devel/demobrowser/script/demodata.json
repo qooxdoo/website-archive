@@ -2809,29 +2809,6 @@
                 "nr": 0
             },
             {
-                "name": "Table_Events.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.Canvas",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Part",
-                    "qx.ui.toolbar.CheckBox",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button"
-                ],
-                "title": "Table Events",
-                "nr": "Events"
-            },
-            {
                 "name": "Table_Filtered_Model.html",
                 "tags": [
                     "noPlayground",
@@ -2952,6 +2929,29 @@
                 ],
                 "title": "Table Window_Editor",
                 "nr": 0
+            },
+            {
+                "name": "Table_Events.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.Canvas",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Part",
+                    "qx.ui.toolbar.CheckBox",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button"
+                ],
+                "title": "Table Events",
+                "nr": "Events"
             }
         ]
     },

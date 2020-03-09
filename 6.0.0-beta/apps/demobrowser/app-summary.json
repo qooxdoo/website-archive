@@ -7,11 +7,11 @@
     "qxl.versionlabel",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
+    "qxl.formdemo",
     "qxl.mobileshowcase",
-    "qxl.datademo",
     "qxl.testtapper",
     "qxl.demobrowser",
-    "qxl.formdemo"
+    "qxl.datademo"
   ],
   "parts": [
     {

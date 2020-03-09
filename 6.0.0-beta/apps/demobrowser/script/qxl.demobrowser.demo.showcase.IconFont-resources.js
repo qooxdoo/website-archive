@@ -630,6 +630,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Classic/form/checkbox-checked-disabled.png": [
+      14,
+      14,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Classic/form/checkbox-checked-focused-invalid.png": [
       14,
       14,
@@ -877,12 +883,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/decoration/Classic/form/radiobutton.png": [
-      14,
-      14,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/form/checkbox-checked-disabled.png": [
       14,
       14,
       "png",
@@ -2490,6 +2490,306 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/apps/internet-blog.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-download-manager.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-feed-reader.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-mail.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-messenger.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-telephony.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-transfer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/internet-web-browser.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/media-audio-player.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/media-photo-album.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/media-video-player.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-address-book.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-calendar.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-chart.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-database.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-draw.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-graphics.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-layout.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-presentation.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-project.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-spreadsheet.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-web.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/office-writer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-accessibility.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-clock.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-display.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-font.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-keyboard.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-locale.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-network.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-security.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-sound.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-theme.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-users.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/preferences-wallpaper.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-archiver.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-calculator.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-character-map.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-color-chooser.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-dictionary.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-graphics-viewer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-help.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-keyring.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-log-viewer.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-network-manager.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-notes.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-statistics.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-system-monitor.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-terminal.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/apps/utilities-text-editor.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/categories/accessories.png": [
       16,
       16,
@@ -2947,306 +3247,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-blog.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-download-manager.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-feed-reader.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-mail.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-messenger.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-telephony.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-transfer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/internet-web-browser.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/media-audio-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/media-photo-album.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/media-video-player.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-address-book.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-calendar.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-chart.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-database.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-draw.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-graphics.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-layout.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-presentation.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-project.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-spreadsheet.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-web.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/office-writer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-accessibility.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-clock.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-display.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-font.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-keyboard.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-locale.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-network.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-security.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-sound.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-theme.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-users.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/preferences-wallpaper.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-archiver.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-calculator.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-character-map.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-color-chooser.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-dictionary.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-graphics-viewer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-help.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-keyring.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-log-viewer.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-network-manager.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-notes.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-statistics.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-system-monitor.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-terminal.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/apps/utilities-text-editor.png": [
       16,
       16,
       "png",
@@ -4368,66 +4368,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-angel.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-kiss.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-laugh.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-plain.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-raspberry.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-sad.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-smile-big.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-smile.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-surprise.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/mimetypes/archive.png": [
       16,
       16,
@@ -4627,6 +4567,66 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/status/security-medium.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-angel.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-kiss.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-laugh.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-raspberry.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-sad.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-smile-big.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-smile.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-surprise.png": [
       16,
       16,
       "png",
