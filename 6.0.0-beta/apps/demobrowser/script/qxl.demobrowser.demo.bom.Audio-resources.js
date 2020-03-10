@@ -480,12 +480,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Classic/arrows/rewind.gif": [
-      8,
-      7,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Classic/arrows/right-invert.gif": [
       4,
       7,
@@ -886,6 +880,12 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/arrows/rewind.gif": [
+      8,
+      7,
+      "gif",
       "qx"
     ],
     "qx/decoration/Classic/menu/checkbox-invert.gif": [
@@ -1662,13 +1662,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/cursors/alias.gif": [
+    "qx/decoration/Simple/cursors/copy.gif": [
       19,
       15,
       "gif",
       "qx"
     ],
-    "qx/decoration/Simple/cursors/copy.gif": [
+    "qx/decoration/Simple/cursors/alias.gif": [
       19,
       15,
       "gif",
