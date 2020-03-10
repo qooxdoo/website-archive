@@ -2,7 +2,6 @@
   "appClass": "qxl.playground.Application",
   "libraries": [
     "qx",
-    "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
     "qxl.demobrowser",
@@ -11,7 +10,8 @@
     "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
-    "qxl.testtapper"
+    "qxl.testtapper",
+    "qxl.playground"
   ],
   "parts": [
     {

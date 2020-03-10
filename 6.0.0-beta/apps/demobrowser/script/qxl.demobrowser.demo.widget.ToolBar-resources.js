@@ -2058,13 +2058,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-select-all.png": [
+    "qx/icon/Oxygen/16/actions/edit-redo.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/edit-redo.png": [
+    "qx/icon/Oxygen/16/actions/edit-select-all.png": [
       16,
       16,
       "png",
@@ -3696,6 +3696,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/32/actions/zoom-fit-best.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/32/actions/zoom-in.png": [
       32,
       32,
@@ -3709,12 +3715,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/32/actions/zoom-out.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/32/actions/zoom-fit-best.png": [
       32,
       32,
       "png",
@@ -3798,12 +3798,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/48/actions/document-new.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/48/actions/document-open-recent.png": [
       48,
       48,
@@ -3817,6 +3811,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/48/actions/document-print-preview.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/48/actions/document-new.png": [
       48,
       48,
       "png",

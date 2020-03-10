@@ -1980,6 +1980,768 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/22/apps/internet-blog.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-download-manager.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-feed-reader.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-mail.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-messenger.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-telephony.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-transfer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/internet-web-browser.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/media-audio-player.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/media-photo-album.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/media-video-player.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-address-book.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-calendar.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-chart.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-database.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-draw.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-graphics.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-layout.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-presentation.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-project.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-spreadsheet.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-web.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/office-writer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-accessibility.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-clock.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-display.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-font.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-keyboard.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-locale.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-network.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-security.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-sound.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-theme.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-users.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/preferences-wallpaper.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-archiver.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-calculator.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-character-map.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-color-chooser.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-dictionary.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-graphics-viewer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-help.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-keyring.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-log-viewer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-network-manager.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-notes.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-statistics.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-system-monitor.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-terminal.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/apps/utilities-text-editor.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/accessories.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/development.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/engineering.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/games.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/graphics.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/internet.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/multimedia.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/office.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/science.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/system.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/categories/utilities.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emblems/emblem-favorite.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emblems/emblem-important.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-angel.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-embarrassed.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-kiss.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-laugh.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-plain.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-raspberry.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-sad.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-smile-big.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-smile.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-surprise.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/archive.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/executable.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/media-audio.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/media-image.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/media-video.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-calendar.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-contact.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-document.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-illustration.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-presentation.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/office-spreadsheet.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/text-html.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/mimetypes/text-plain.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/dialog-error.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/dialog-information.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/dialog-password.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/dialog-warning.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/image-loading.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/image-missing.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/mail-read.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/mail-replied.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/mail-unread.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/security-high.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/security-low.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/status/security-medium.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/audio-card.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/audio-input-microphone.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/battery.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/camera-photo.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/camera-web.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/computer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/display.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/drive-harddisk.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/drive-optical.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/input-keyboard.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/input-mouse.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/media-flash.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/media-optical.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/multimedia-player.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/network-wired.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/network-wireless.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/pda.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/phone.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/printer.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/devices/scanner.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/folder-open.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/folder-remote.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/folder.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/network-server.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/network-workgroup.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/user-desktop.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/user-home.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/user-trash-full.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/places/user-trash.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/actions/address-book-new.png": [
       22,
       22,
@@ -2563,768 +3325,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/zoom-out.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-blog.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-download-manager.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-feed-reader.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-mail.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-messenger.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-telephony.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-transfer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/internet-web-browser.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/media-audio-player.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/media-photo-album.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/media-video-player.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-address-book.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-calendar.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-chart.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-database.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-draw.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-graphics.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-layout.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-presentation.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-project.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-spreadsheet.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-web.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/office-writer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-accessibility.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-clock.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-display.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-font.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-keyboard.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-locale.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-network.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-security.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-sound.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-theme.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-users.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-wallpaper.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-archiver.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-calculator.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-character-map.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-color-chooser.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-dictionary.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-graphics-viewer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-help.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-keyring.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-log-viewer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-network-manager.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-notes.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-statistics.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-system-monitor.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-terminal.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/utilities-text-editor.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/accessories.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/development.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/engineering.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/games.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/graphics.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/internet.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/multimedia.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/office.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/science.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/system.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/categories/utilities.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/audio-card.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/audio-input-microphone.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/battery.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/camera-photo.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/camera-web.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/computer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/display.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/drive-harddisk.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/drive-optical.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/input-keyboard.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/input-mouse.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/media-flash.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/media-optical.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/multimedia-player.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/network-wired.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/network-wireless.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/pda.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/phone.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/printer.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/devices/scanner.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emblems/emblem-favorite.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emblems/emblem-important.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-angel.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-embarrassed.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-kiss.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-laugh.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-plain.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-raspberry.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-sad.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-smile-big.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-smile.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-surprise.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/archive.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/executable.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/media-audio.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/media-image.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/media-video.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-calendar.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-contact.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-document.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-illustration.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-presentation.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/office-spreadsheet.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/text-html.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/mimetypes/text-plain.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/folder-open.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/folder-remote.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/folder.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/network-server.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/network-workgroup.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/user-desktop.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/user-home.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/user-trash-full.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/places/user-trash.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/dialog-error.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/dialog-information.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/dialog-password.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/dialog-warning.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/image-loading.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/image-missing.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/mail-read.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/mail-replied.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/mail-unread.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/security-high.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/security-low.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/status/security-medium.png": [
       22,
       22,
       "png",
