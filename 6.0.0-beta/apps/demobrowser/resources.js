@@ -4260,12 +4260,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/go-up.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/32/actions/help-about.png": [
       32,
       32,
@@ -4285,6 +4279,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/32/actions/insert-image.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/32/actions/go-up.png": [
       32,
       32,
       "png",
