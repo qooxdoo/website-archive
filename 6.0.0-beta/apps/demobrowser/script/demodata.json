@@ -2317,20 +2317,6 @@
                 "nr": "Separator"
             },
             {
-                "name": "VBox_ShrinkX.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "VBox ShrinkX",
-                "nr": "ShrinkX"
-            },
-            {
                 "name": "VSplit.html",
                 "tags": [
                     "qx.Class.define",
@@ -2366,6 +2352,20 @@
                 ],
                 "title": "VSplit",
                 "nr": 0
+            },
+            {
+                "name": "VBox_ShrinkX.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "VBox ShrinkX",
+                "nr": "ShrinkX"
             }
         ]
     },
@@ -4559,29 +4559,6 @@
                 "nr": 0
             },
             {
-                "name": "RadioButtonGroup.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.RadioButtonGroup",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.RadioButtonGroup",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.RadioButtonGroup",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton"
-                ],
-                "title": "RadioButtonGroup",
-                "nr": 0
-            },
-            {
                 "name": "Resizer.html",
                 "tags": [
                     "qx.Class.define",
@@ -4632,6 +4609,29 @@
                     "qx.ui.form.ListItem"
                 ],
                 "title": "SelectBox",
+                "nr": 0
+            },
+            {
+                "name": "RadioButtonGroup.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.RadioButtonGroup",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.RadioButtonGroup",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.RadioButtonGroup",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton"
+                ],
+                "title": "RadioButtonGroup",
                 "nr": 0
             },
             {
