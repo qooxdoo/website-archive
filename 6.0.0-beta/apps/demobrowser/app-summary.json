@@ -8,10 +8,10 @@
     "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
-    "qxl.formdemo",
-    "qxl.mobileshowcase",
+    "qxl.datademo",
     "qxl.testtapper",
-    "qxl.datademo"
+    "qxl.formdemo",
+    "qxl.mobileshowcase"
   ],
   "parts": [
     {
