@@ -1584,6 +1584,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/right-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/right.gif": [
       4,
       7,
@@ -1593,12 +1599,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up-invert.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/arrows/right-invert.gif": [
-      4,
-      7,
       "gif",
       "qx"
     ],
@@ -1992,12 +1992,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/mimetypes/office-presentation.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/mimetypes/office-spreadsheet.png": [
       16,
       16,
@@ -2011,6 +2005,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/mimetypes/text-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/mimetypes/office-presentation.png": [
       16,
       16,
       "png",

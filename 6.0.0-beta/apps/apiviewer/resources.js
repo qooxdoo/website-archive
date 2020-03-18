@@ -1584,6 +1584,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/right-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/right.gif": [
       4,
       7,
@@ -1593,12 +1599,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up-invert.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/arrows/right-invert.gif": [
-      4,
-      7,
       "gif",
       "qx"
     ],
@@ -2130,18 +2130,6 @@ qx.$$packageData['0'] = {
       "css",
       "qxl.apiviewer"
     ],
-    "qxl/apiviewer/imagesCombined/symbols.gif": [
-      18,
-      630,
-      "gif",
-      "qxl.apiviewer"
-    ],
-    "qxl/apiviewer/imagesCombined/symbols.meta": [
-      null,
-      null,
-      "meta",
-      "qxl.apiviewer"
-    ],
     "qxl/apiviewer/image/blank.gif": [
       1,
       1,
@@ -2428,6 +2416,18 @@ qx.$$packageData['0'] = {
       18,
       18,
       "gif",
+      "qxl.apiviewer"
+    ],
+    "qxl/apiviewer/imagesCombined/symbols.gif": [
+      18,
+      630,
+      "gif",
+      "qxl.apiviewer"
+    ],
+    "qxl/apiviewer/imagesCombined/symbols.meta": [
+      null,
+      null,
+      "meta",
       "qxl.apiviewer"
     ]
   },

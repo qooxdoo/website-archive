@@ -1572,6 +1572,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Simple/arrows/right-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/right.gif": [
       4,
       7,
@@ -1581,12 +1587,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up-invert.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/arrows/right-invert.gif": [
-      4,
-      7,
       "gif",
       "qx"
     ],

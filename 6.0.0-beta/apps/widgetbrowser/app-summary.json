@@ -4,13 +4,13 @@
     "qx",
     "qxl.playground",
     "qxl.logpane",
+    "qxl.versionlabel",
     "qxl.demobrowser",
-    "qxl.formdemo",
     "qxl.apiviewer",
+    "qxl.widgetbrowser",
+    "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
-    "qxl.widgetbrowser",
-    "qxl.versionlabel",
     "qxl.testtapper"
   ],
   "parts": [
