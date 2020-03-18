@@ -4,14 +4,14 @@
     "qx",
     "qxl.playground",
     "qxl.logpane",
-    "qxl.versionlabel",
     "qxl.demobrowser",
-    "qxl.apiviewer",
-    "qxl.widgetbrowser",
-    "qxl.datademo",
-    "qxl.testtapper",
     "qxl.formdemo",
-    "qxl.mobileshowcase"
+    "qxl.apiviewer",
+    "qxl.mobileshowcase",
+    "qxl.datademo",
+    "qxl.widgetbrowser",
+    "qxl.versionlabel",
+    "qxl.testtapper"
   ],
   "parts": [
     {
@@ -1126,6 +1126,7 @@
         "qx.application.Standalone",
         "qxl.testtapper.Application",
         "qx.ui.tooltip.Manager",
+        "qxl.testtapper.TreeItem",
         "qxl.logpane.LogPane",
         "qx.dev.unit.MTestLoader",
         "qx.dev.unit.TestLoaderBasic",
@@ -1172,7 +1173,7 @@
             "email": "tobi@oetiker.ch"
           }
         ],
-        "version": "0.4.9",
+        "version": "0.5.0",
         "sourceViewUri": "https://github.com/qooxdoo/qxl.testtapper/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
       },
       "qx": {
