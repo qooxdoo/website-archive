@@ -1013,6 +1013,24 @@
                 "nr": 0
             },
             {
+                "name": "OwnCodeInModel.html",
+                "tags": [
+                    "databinding",
+                    "delegate",
+                    "qx.Class.define",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.util.ResourceManager.getInstance",
+                    "qx.data.store.Json",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.Mixin.define"
+                ],
+                "title": "OwnCodeInModel",
+                "nr": 0
+            },
+            {
                 "name": "SearchAsYouType.html",
                 "tags": [
                     "noPlayground",
@@ -1060,24 +1078,6 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
-            },
-            {
-                "name": "OwnCodeInModel.html",
-                "tags": [
-                    "databinding",
-                    "delegate",
-                    "qx.Class.define",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.util.ResourceManager.getInstance",
-                    "qx.data.store.Json",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.Mixin.define"
-                ],
-                "title": "OwnCodeInModel",
-                "nr": 0
             },
             {
                 "name": "SelectBox.html",

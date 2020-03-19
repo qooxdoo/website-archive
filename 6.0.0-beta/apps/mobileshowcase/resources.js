@@ -288,6 +288,24 @@ qx.$$packageData['0'] = {
       "html",
       "qx"
     ],
+    "qxl/mobileshowcase/scss/_app.scss": [
+      null,
+      null,
+      "scss",
+      "qxl.mobileshowcase"
+    ],
+    "qxl/mobileshowcase/scss/flat.scss": [
+      null,
+      null,
+      "scss",
+      "qxl.mobileshowcase"
+    ],
+    "qxl/mobileshowcase/scss/indigo.scss": [
+      null,
+      null,
+      "scss",
+      "qxl.mobileshowcase"
+    ],
     "qxl/mobileshowcase/icon/HTML5_Badge_512.png": [
       512,
       512,
@@ -370,24 +388,6 @@ qx.$$packageData['0'] = {
       133,
       38,
       "png",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/scss/_app.scss": [
-      null,
-      null,
-      "scss",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/scss/flat.scss": [
-      null,
-      null,
-      "scss",
-      "qxl.mobileshowcase"
-    ],
-    "qxl/mobileshowcase/scss/indigo.scss": [
-      null,
-      null,
-      "scss",
       "qxl.mobileshowcase"
     ],
     "qxl/mobileshowcase/scss/_styles.scss": [
