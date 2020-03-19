@@ -2706,6 +2706,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/22/apps/preferences-accessibility.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/apps/preferences-clock.png": [
       22,
       22,
@@ -2857,12 +2863,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/apps/utilities-text-editor.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/apps/preferences-accessibility.png": [
       22,
       22,
       "png",
