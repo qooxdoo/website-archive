@@ -2160,18 +2160,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/static/drawer.png": [
-      23,
-      23,
-      "png",
-      "qx"
-    ],
-    "qx/static/drawer@2x.png": [
-      45,
-      45,
-      "png",
-      "qx"
-    ],
     "qx/test/UnitTestFlash.mxml": [
       null,
       null,

@@ -1902,13 +1902,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/application-exit.png": [
+    "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/address-book-new.png": [
+    "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
@@ -2256,6 +2256,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/mail-forward.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/mail-mark-important.png": [
       16,
       16,
@@ -2275,12 +2281,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/mail-mark-unread.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/mail-forward.png": [
       16,
       16,
       "png",
@@ -4962,12 +4962,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/appointment-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/22/actions/bookmark-new.png": [
       22,
       22,
@@ -5005,6 +4999,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/dialog-ok.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/appointment-new.png": [
       22,
       22,
       "png",

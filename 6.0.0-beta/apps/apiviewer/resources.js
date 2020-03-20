@@ -2196,6 +2196,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qxl.apiviewer"
     ],
+    "qxl/apiviewer/image/constant18.gif": [
+      18,
+      18,
+      "gif",
+      "qxl.apiviewer"
+    ],
     "qxl/apiviewer/image/constructor18.gif": [
       18,
       18,
@@ -2407,12 +2413,6 @@ qx.$$packageData['0'] = {
       "qxl.apiviewer"
     ],
     "qxl/apiviewer/image/vline.gif": [
-      18,
-      18,
-      "gif",
-      "qxl.apiviewer"
-    ],
-    "qxl/apiviewer/image/constant18.gif": [
       18,
       18,
       "gif",

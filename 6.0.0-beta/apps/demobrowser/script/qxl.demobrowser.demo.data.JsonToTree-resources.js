@@ -1956,6 +1956,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/mimetypes/media-image.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/mimetypes/media-video.png": [
       16,
       16,
@@ -1963,12 +1969,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/mimetypes/office-calendar.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/mimetypes/media-image.png": [
       16,
       16,
       "png",
