@@ -1998,12 +1998,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/document-revert.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/document-save-as.png": [
       16,
       16,
@@ -2011,6 +2005,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/document-save.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/document-revert.png": [
       16,
       16,
       "png",

@@ -1992,6 +1992,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/22/actions/appointment-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/actions/bookmark-new.png": [
       22,
       22,
@@ -2029,12 +2035,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/dialog-ok.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/appointment-new.png": [
       22,
       22,
       "png",
