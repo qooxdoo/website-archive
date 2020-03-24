@@ -1746,13 +1746,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending-invert.png": [
+    "qx/decoration/Simple/table/descending.png": [
       10,
       10,
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending.png": [
+    "qx/decoration/Simple/table/descending-invert.png": [
       10,
       10,
       "png",
@@ -3066,66 +3066,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/emotes/face-angel.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-embarrassed.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-kiss.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-laugh.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-plain.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-raspberry.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-sad.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-smile-big.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-smile.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/emotes/face-surprise.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/22/mimetypes/archive.png": [
       22,
       22,
@@ -3325,6 +3265,66 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/status/security-medium.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-angel.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-embarrassed.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-kiss.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-laugh.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-plain.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-raspberry.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-sad.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-smile-big.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-smile.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/emotes/face-surprise.png": [
       22,
       22,
       "png",
