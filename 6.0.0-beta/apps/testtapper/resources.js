@@ -1734,13 +1734,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending.png": [
+    "qx/decoration/Simple/table/descending-invert.png": [
       10,
       10,
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending-invert.png": [
+    "qx/decoration/Simple/table/descending.png": [
       10,
       10,
       "png",

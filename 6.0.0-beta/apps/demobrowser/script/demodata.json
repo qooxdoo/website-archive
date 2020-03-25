@@ -61,21 +61,21 @@
                 "nr": "Compare"
             },
             {
-                "name": "Timing.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Timing",
-                "nr": 0
-            },
-            {
                 "name": "Scroll.html",
                 "tags": [
                     "noPlayground",
                     "qx.Class.define"
                 ],
                 "title": "Scroll",
+                "nr": 0
+            },
+            {
+                "name": "Timing.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Timing",
                 "nr": 0
             }
         ]
@@ -128,28 +128,6 @@
                 "nr": 0
             },
             {
-                "name": "Blocker.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Input.create",
-                    "qx.bom.element.Style.setStyles",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Timer.once",
-                    "qx.dom.Element.insertEnd",
-                    "qx.bom.Input.create",
-                    "qx.bom.element.Style.setStyles",
-                    "qx.dom.Element.create",
-                    "qx.bom.element.Style.setStyles",
-                    "qx.dom.Element.insertBegin",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Timer.once",
-                    "qx.dom.Element.insertEnd"
-                ],
-                "title": "Blocker",
-                "nr": 0
-            },
-            {
                 "name": "Background.html",
                 "tags": [
                     "noPlayground",
@@ -173,6 +151,28 @@
                     "qx.bom.element.Background.getStyles"
                 ],
                 "title": "Background",
+                "nr": 0
+            },
+            {
+                "name": "Blocker.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Input.create",
+                    "qx.bom.element.Style.setStyles",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Timer.once",
+                    "qx.dom.Element.insertEnd",
+                    "qx.bom.Input.create",
+                    "qx.bom.element.Style.setStyles",
+                    "qx.dom.Element.create",
+                    "qx.bom.element.Style.setStyles",
+                    "qx.dom.Element.insertBegin",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Timer.once",
+                    "qx.dom.Element.insertEnd"
+                ],
+                "title": "Blocker",
                 "nr": 0
             },
             {
@@ -375,16 +375,6 @@
                 "nr": 0
             },
             {
-                "name": "PageVisibility.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.PageVisibility"
-                ],
-                "title": "PageVisibility",
-                "nr": 0
-            },
-            {
                 "name": "Location_StandardMode.html",
                 "tags": [
                     "noPlayground",
@@ -396,6 +386,16 @@
                 ],
                 "title": "Location StandardMode",
                 "nr": "StandardMode"
+            },
+            {
+                "name": "PageVisibility.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.PageVisibility"
+                ],
+                "title": "PageVisibility",
+                "nr": 0
             },
             {
                 "name": "Placeholder.html",
@@ -721,6 +721,24 @@
                 "nr": 0
             },
             {
+                "name": "Flickr.html",
+                "tags": [
+                    "databinding",
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.Class.define"
+                ],
+                "title": "Flickr",
+                "nr": 0
+            },
+            {
                 "name": "Form.html",
                 "tags": [
                     "databinding",
@@ -745,24 +763,6 @@
                     "qx.util.Serializer.toUriParameter"
                 ],
                 "title": "Form",
-                "nr": 0
-            },
-            {
-                "name": "Flickr.html",
-                "tags": [
-                    "databinding",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.Class.define"
-                ],
-                "title": "Flickr",
                 "nr": 0
             },
             {
@@ -841,21 +841,6 @@
                 "nr": 0
             },
             {
-                "name": "JsonToTree.html",
-                "tags": [
-                    "databinding",
-                    "qx.Class.define",
-                    "qx.ui.tree.Tree",
-                    "qx.data.controller.Tree",
-                    "qx.util.ResourceManager.getInstance",
-                    "qx.data.store.Json",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "JsonToTree",
-                "nr": 0
-            },
-            {
                 "name": "JsonToList.html",
                 "tags": [
                     "databinding",
@@ -868,6 +853,21 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "JsonToList",
+                "nr": 0
+            },
+            {
+                "name": "JsonToTree.html",
+                "tags": [
+                    "databinding",
+                    "qx.Class.define",
+                    "qx.ui.tree.Tree",
+                    "qx.data.controller.Tree",
+                    "qx.util.ResourceManager.getInstance",
+                    "qx.data.store.Json",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "JsonToTree",
                 "nr": 0
             },
             {
@@ -961,6 +961,21 @@
                 "nr": 0
             },
             {
+                "name": "ModelDebugging.html",
+                "tags": [
+                    "databinding",
+                    "debugging",
+                    "qx.Class.define",
+                    "qx.ui.embed.Html",
+                    "qx.dev.Debug.debugProperties",
+                    "qx.dev.Debug.debugProperties",
+                    "qx.ui.basic.Label",
+                    "qx.Class.define"
+                ],
+                "title": "ModelDebugging",
+                "nr": 0
+            },
+            {
                 "name": "NamesList.html",
                 "tags": [
                     "databinding",
@@ -974,21 +989,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "NamesList",
-                "nr": 0
-            },
-            {
-                "name": "ModelDebugging.html",
-                "tags": [
-                    "databinding",
-                    "debugging",
-                    "qx.Class.define",
-                    "qx.ui.embed.Html",
-                    "qx.dev.Debug.debugProperties",
-                    "qx.dev.Debug.debugProperties",
-                    "qx.ui.basic.Label",
-                    "qx.Class.define"
-                ],
-                "title": "ModelDebugging",
                 "nr": 0
             },
             {
@@ -1013,23 +1013,6 @@
                 "nr": 0
             },
             {
-                "name": "SearchAsYouType.html",
-                "tags": [
-                    "noPlayground",
-                    "databinding",
-                    "filter",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "SearchAsYouType",
-                "nr": 0
-            },
-            {
                 "name": "OwnCodeInModel.html",
                 "tags": [
                     "databinding",
@@ -1045,6 +1028,23 @@
                     "qx.Mixin.define"
                 ],
                 "title": "OwnCodeInModel",
+                "nr": 0
+            },
+            {
+                "name": "SearchAsYouType.html",
+                "tags": [
+                    "noPlayground",
+                    "databinding",
+                    "filter",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "SearchAsYouType",
                 "nr": 0
             },
             {
@@ -1196,6 +1196,19 @@
                 "nr": "Bubbling"
             },
             {
+                "name": "Event_Bus.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once"
+                ],
+                "title": "Event Bus",
+                "nr": "Bus"
+            },
+            {
                 "name": "Event_Iframe.html",
                 "tags": [
                     "noPlayground",
@@ -1232,19 +1245,6 @@
                 ],
                 "title": "Focus",
                 "nr": 0
-            },
-            {
-                "name": "Event_Bus.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once"
-                ],
-                "title": "Event Bus",
-                "nr": "Bus"
             },
             {
                 "name": "KeyEvent.html",
@@ -1288,23 +1288,6 @@
                 "nr": 0
             },
             {
-                "name": "PointerEvent.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.capture",
-                    "qx.bom.Element.releaseCapture",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.removeListener"
-                ],
-                "title": "PointerEvent",
-                "nr": 0
-            },
-            {
                 "name": "MouseEvent_LowLevel.html",
                 "tags": [
                     "noPlayground",
@@ -1321,50 +1304,22 @@
                 ],
                 "title": "MouseEvent LowLevel",
                 "nr": "LowLevel"
-            }
-        ]
-    },
-    {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
             },
             {
-                "name": "PingPong.html",
+                "name": "PointerEvent.html",
                 "tags": [
                     "noPlayground",
                     "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.capture",
+                    "qx.bom.Element.releaseCapture",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.removeListener"
                 ],
-                "title": "PingPong",
+                "title": "PointerEvent",
                 "nr": 0
             }
         ]
@@ -1372,6 +1327,21 @@
     {
         "classname": "layout",
         "tests": [
+            {
+                "name": "Basic.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Basic",
+                "nr": 0
+            },
             {
                 "name": "Canvas_Fixed.html",
                 "tags": [
@@ -1403,21 +1373,6 @@
                 ],
                 "title": "Canvas LeftRight",
                 "nr": "LeftRight"
-            },
-            {
-                "name": "Basic.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Basic",
-                "nr": 0
             },
             {
                 "name": "Canvas_MinMaxSizes.html",
@@ -2024,20 +1979,6 @@
                 "nr": "ShrinkY"
             },
             {
-                "name": "ManualLayout.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "ManualLayout",
-                "nr": 0
-            },
-            {
                 "name": "HSplit.html",
                 "tags": [
                     "qx.Class.define",
@@ -2070,6 +2011,20 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "HSplit",
+                "nr": 0
+            },
+            {
+                "name": "ManualLayout.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "ManualLayout",
                 "nr": 0
             },
             {
@@ -2415,6 +2370,51 @@
         ]
     },
     {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
+                "nr": 0
+            }
+        ]
+    },
+    {
         "classname": "root",
         "tests": [
             {
@@ -2739,19 +2739,6 @@
                 "nr": 0
             },
             {
-                "name": "Table_Conditional.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Conditional",
-                    "qx.ui.table.cellrenderer.Image"
-                ],
-                "title": "Table Conditional",
-                "nr": "Conditional"
-            },
-            {
                 "name": "Table_Cell_Editor.html",
                 "tags": [
                     "noPlayground",
@@ -2767,6 +2754,19 @@
                 ],
                 "title": "Table Cell_Editor",
                 "nr": 0
+            },
+            {
+                "name": "Table_Conditional.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Conditional",
+                    "qx.ui.table.cellrenderer.Image"
+                ],
+                "title": "Table Conditional",
+                "nr": "Conditional"
             },
             {
                 "name": "Table_Context_Menu.html",
@@ -3140,20 +3140,6 @@
                 "nr": 0
             },
             {
-                "name": "FiniteStateMachine.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "FiniteStateMachine",
-                "nr": 0
-            },
-            {
                 "name": "DragDrop.html",
                 "tags": [
                     "showcase",
@@ -3180,6 +3166,20 @@
                     "qx.ui.core.Widget.contains"
                 ],
                 "title": "DragDrop",
+                "nr": 0
+            },
+            {
+                "name": "FiniteStateMachine.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -3867,6 +3867,21 @@
                 "nr": 0
             },
             {
+                "name": "Table.html",
+                "tags": [
+                    "test",
+                    "qx.Class.define",
+                    "qx.ui.virtual.core.Scroller",
+                    "qx.ui.virtual.layer.Row",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.GridLines",
+                    "qx.ui.virtual.layer.HtmlCell",
+                    "qx.ui.virtual.cell.Cell"
+                ],
+                "title": "Table",
+                "nr": 0
+            },
+            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -3904,21 +3919,6 @@
                 "nr": 0
             },
             {
-                "name": "Table.html",
-                "tags": [
-                    "test",
-                    "qx.Class.define",
-                    "qx.ui.virtual.core.Scroller",
-                    "qx.ui.virtual.layer.Row",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.GridLines",
-                    "qx.ui.virtual.layer.HtmlCell",
-                    "qx.ui.virtual.cell.Cell"
-                ],
-                "title": "Table",
-                "nr": 0
-            },
-            {
                 "name": "Tree_Columns.html",
                 "tags": [
                     "noPlayground",
@@ -3949,6 +3949,30 @@
     {
         "classname": "widget",
         "tests": [
+            {
+                "name": "Atom.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.core.Spacer",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.basic.Atom"
+                ],
+                "title": "Atom",
+                "nr": 0
+            },
             {
                 "name": "Button.html",
                 "tags": [
@@ -3988,30 +4012,6 @@
                     "qx.ui.embed.Canvas"
                 ],
                 "title": "Canvas",
-                "nr": 0
-            },
-            {
-                "name": "Atom.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.core.Spacer",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.basic.Atom"
-                ],
-                "title": "Atom",
                 "nr": 0
             },
             {
@@ -4704,6 +4704,45 @@
                 "nr": 0
             },
             {
+                "name": "SplitPane.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.splitpane.Pane",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Slider",
+                    "qx.ui.tree.Tree",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFile",
+                    "qx.ui.tree.TreeFolder",
+                    "qx.ui.tree.TreeFolder"
+                ],
+                "title": "SplitPane",
+                "nr": 0
+            },
+            {
                 "name": "StackContainer.html",
                 "tags": [
                     "qx.Class.define",
@@ -4760,45 +4799,6 @@
                     "qx.ui.tabview.Page"
                 ],
                 "title": "TabView",
-                "nr": 0
-            },
-            {
-                "name": "SplitPane.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.splitpane.Pane",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Slider",
-                    "qx.ui.tree.Tree",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFile",
-                    "qx.ui.tree.TreeFolder",
-                    "qx.ui.tree.TreeFolder"
-                ],
-                "title": "SplitPane",
                 "nr": 0
             },
             {

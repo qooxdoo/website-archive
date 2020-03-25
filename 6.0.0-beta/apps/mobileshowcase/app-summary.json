@@ -4,14 +4,14 @@
     "qx",
     "qxl.playground",
     "qxl.logpane",
-    "qxl.versionlabel",
-    "qxl.apiviewer",
     "qxl.widgetbrowser",
     "qxl.formdemo",
+    "qxl.mobileshowcase",
     "qxl.datademo",
     "qxl.testtapper",
-    "qxl.mobileshowcase",
-    "qxl.demobrowser"
+    "qxl.versionlabel",
+    "qxl.demobrowser",
+    "qxl.apiviewer"
   ],
   "parts": [
     {

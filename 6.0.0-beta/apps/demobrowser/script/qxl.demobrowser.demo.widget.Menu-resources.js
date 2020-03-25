@@ -1746,13 +1746,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending.png": [
+    "qx/decoration/Simple/table/descending-invert.png": [
       10,
       10,
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/descending-invert.png": [
+    "qx/decoration/Simple/table/descending.png": [
       10,
       10,
       "png",
@@ -2370,12 +2370,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/object-flip-horizontal.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Oxygen/16/actions/object-flip-vertical.png": [
       16,
       16,
@@ -2485,6 +2479,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/zoom-out.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/object-flip-horizontal.png": [
       16,
       16,
       "png",
