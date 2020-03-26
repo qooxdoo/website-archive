@@ -3966,6 +3966,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/apps/office-draw.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/apps/office-graphics.png": [
       16,
       16,
@@ -4417,12 +4423,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/emotes/face-surprise.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/apps/office-draw.png": [
       16,
       16,
       "png",

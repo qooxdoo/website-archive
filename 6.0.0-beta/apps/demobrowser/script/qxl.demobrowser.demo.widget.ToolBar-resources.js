@@ -5886,12 +5886,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/32/actions/insert-link.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/32/actions/insert-text.png": [
       32,
       32,
@@ -5935,6 +5929,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/32/actions/mail-mark-unread.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/32/actions/insert-link.png": [
       32,
       32,
       "png",
