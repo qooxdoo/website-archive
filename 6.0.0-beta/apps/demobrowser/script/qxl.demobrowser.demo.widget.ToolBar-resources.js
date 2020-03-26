@@ -1542,6 +1542,54 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Simple/checkbox/checked-disabled.png": [
+      6,
+      6,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/checked.png": [
+      6,
+      6,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/undetermined-disabled.png": [
+      6,
+      2,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/undetermined.png": [
+      6,
+      2,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-field.png": [
+      19,
+      256,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
+      35,
+      11,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
+      256,
+      256,
+      "jpg",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
+      11,
+      11,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/down-invert.gif": [
       7,
       4,
@@ -1611,54 +1659,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/checked-disabled.png": [
-      6,
-      6,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/checked.png": [
-      6,
-      6,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/undetermined-disabled.png": [
-      6,
-      2,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/undetermined.png": [
-      6,
-      2,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/brightness-field.png": [
-      19,
-      256,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
-      256,
-      256,
-      "jpg",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
-      11,
-      11,
       "gif",
       "qx"
     ],
@@ -5886,6 +5886,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/32/actions/insert-link.png": [
+      32,
+      32,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/32/actions/insert-text.png": [
       32,
       32,
@@ -5929,12 +5935,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/32/actions/mail-mark-unread.png": [
-      32,
-      32,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/32/actions/insert-link.png": [
       32,
       32,
       "png",

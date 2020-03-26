@@ -1542,6 +1542,54 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Simple/checkbox/checked-disabled.png": [
+      6,
+      6,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/checked.png": [
+      6,
+      6,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/undetermined-disabled.png": [
+      6,
+      2,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/checkbox/undetermined.png": [
+      6,
+      2,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-field.png": [
+      19,
+      256,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
+      35,
+      11,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
+      256,
+      256,
+      "jpg",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
+      11,
+      11,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Simple/arrows/down-invert.gif": [
       7,
       4,
@@ -1611,54 +1659,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/arrows/up.gif": [
       7,
       4,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/checked-disabled.png": [
-      6,
-      6,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/checked.png": [
-      6,
-      6,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/undetermined-disabled.png": [
-      6,
-      2,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/checkbox/undetermined.png": [
-      6,
-      2,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/brightness-field.png": [
-      19,
-      256,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
-      256,
-      256,
-      "jpg",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
-      11,
-      11,
       "gif",
       "qx"
     ],
@@ -1977,6 +1977,594 @@ qx.$$packageData['0'] = {
     "qx/icon/Tango/16/status/dialog-warning.png": [
       16,
       16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/address-book-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/application-exit.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/appointment-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/bookmark-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/check-spelling.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/contact-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/dialog-apply.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/dialog-cancel.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/dialog-close.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/dialog-ok.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-open-recent.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-open.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-print-preview.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-print.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-properties.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-revert.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-save-as.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-save.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/document-send.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-clear.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-copy.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-cut.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-delete.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-find.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-paste.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-redo.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-select-all.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/edit-undo.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/folder-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-indent-less.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-indent-more.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-justify-center.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-justify-fill.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-justify-left.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-justify-right.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-bold.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-direction-ltr.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-direction-rtl.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-italic.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-strikethrough.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/format-text-underline.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-bottom.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-down.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-first.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-home.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-last.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-next.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-previous.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-top.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/go-up.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/help-about.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/help-contents.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/help-faq.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/insert-image.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/insert-link.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/insert-text.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/list-add.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/list-remove.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-forward.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-mark-important.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-mark-junk.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-mark-read.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-mark-unread.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-message-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-receive.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-reply-all.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-reply-sender.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/mail-send.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-eject.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-playback-pause.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-playback-start.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-playback-stop.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-record.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-seek-backward.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-seek-forward.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-skip-backward.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/media-skip-forward.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/object-flip-horizontal.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/object-flip-vertical.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/object-rotate-left.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/object-rotate-right.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/process-stop.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/system-log-out.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/system-run.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/system-search.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/system-shutdown.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-fullscreen.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-refresh.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-restore.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-sort-ascending.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-sort-descending.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/window-close.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/window-new.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/zoom-fit-best.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/zoom-in.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/zoom-original.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/zoom-out.png": [
+      22,
+      22,
       "png",
       "qx"
     ],
@@ -2737,594 +3325,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/status/security-medium.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/address-book-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/application-exit.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/appointment-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/bookmark-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/check-spelling.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/contact-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/dialog-apply.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/dialog-cancel.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/dialog-close.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/dialog-ok.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-open-recent.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-open.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-print-preview.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-print.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-properties.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-revert.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-save-as.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-save.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/document-send.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-clear.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-copy.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-cut.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-delete.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-find.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-paste.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-redo.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-select-all.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/edit-undo.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/folder-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-indent-less.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-indent-more.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-justify-center.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-justify-fill.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-justify-left.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-justify-right.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-bold.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-direction-ltr.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-direction-rtl.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-italic.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-strikethrough.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/format-text-underline.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-bottom.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-down.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-first.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-home.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-last.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-next.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-previous.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-top.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/go-up.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/help-about.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/help-contents.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/help-faq.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/insert-image.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/insert-link.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/insert-text.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/list-add.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/list-remove.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-forward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-mark-important.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-mark-junk.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-mark-read.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-mark-unread.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-message-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-receive.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-reply-all.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-reply-sender.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/mail-send.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-eject.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-playback-pause.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-playback-start.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-playback-stop.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-record.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-seek-backward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-seek-forward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-skip-backward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/media-skip-forward.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/object-flip-horizontal.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/object-flip-vertical.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/object-rotate-left.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/object-rotate-right.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/process-stop.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/system-log-out.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/system-run.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/system-search.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/system-shutdown.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-fullscreen.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-refresh.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-restore.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-sort-ascending.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-sort-descending.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/window-close.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/window-new.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/zoom-fit-best.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/zoom-in.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/zoom-original.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/zoom-out.png": [
       22,
       22,
       "png",
