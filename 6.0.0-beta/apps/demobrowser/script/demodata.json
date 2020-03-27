@@ -1343,23 +1343,6 @@
                 "nr": 0
             },
             {
-                "name": "Canvas_Fixed.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Canvas Fixed",
-                "nr": "Fixed"
-            },
-            {
                 "name": "Canvas_LeftRight.html",
                 "tags": [
                     "noPlayground",
@@ -1390,6 +1373,23 @@
                 ],
                 "title": "Canvas MinMaxSizes",
                 "nr": "MinMaxSizes"
+            },
+            {
+                "name": "Canvas_Fixed.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Canvas Fixed",
+                "nr": "Fixed"
             },
             {
                 "name": "Canvas_Percent.html",
@@ -2713,6 +2713,23 @@
         "classname": "table",
         "tests": [
             {
+                "name": "Table_Cell_Editor.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.cellrenderer.Default",
+                    "qx.ui.table.cellrenderer.Dynamic",
+                    "qx.ui.table.celleditor.ComboBox",
+                    "qx.ui.table.celleditor.SelectBox",
+                    "qx.ui.table.celleditor.Dynamic",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table"
+                ],
+                "title": "Table Cell_Editor",
+                "nr": 0
+            },
+            {
                 "name": "Table.html",
                 "tags": [
                     "noPlayground",
@@ -2736,23 +2753,6 @@
                     "qx.ui.tooltip.ToolTip"
                 ],
                 "title": "Table",
-                "nr": 0
-            },
-            {
-                "name": "Table_Cell_Editor.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.cellrenderer.Default",
-                    "qx.ui.table.cellrenderer.Dynamic",
-                    "qx.ui.table.celleditor.ComboBox",
-                    "qx.ui.table.celleditor.SelectBox",
-                    "qx.ui.table.celleditor.Dynamic",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table"
-                ],
-                "title": "Table Cell_Editor",
                 "nr": 0
             },
             {
@@ -3596,6 +3596,29 @@
                 "nr": 0
             },
             {
+                "name": "GroupedList.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.container.Composite",
+                    "qx.data.store.Json",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "GroupedList",
+                "nr": 0
+            },
+            {
                 "name": "Gallery.html",
                 "tags": [
                     "qx.Class.define",
@@ -3619,29 +3642,6 @@
                     "qx.ui.virtual.layer.GridLines"
                 ],
                 "title": "Gallery",
-                "nr": 0
-            },
-            {
-                "name": "GroupedList.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.container.Composite",
-                    "qx.data.store.Json",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "GroupedList",
                 "nr": 0
             },
             {
