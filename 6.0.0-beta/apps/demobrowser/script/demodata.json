@@ -613,6 +613,24 @@
                 "nr": "StandardMode"
             },
             {
+                "name": "WebWorker.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.util.ResourceManager.getInstance",
+                    "qx.bom.WebWorker",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.List",
+                    "qx.core.Environment.get",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "WebWorker",
+                "nr": 0
+            },
+            {
                 "name": "Window.html",
                 "tags": [
                     "noPlayground",
@@ -641,24 +659,6 @@
                     "qx.bom.Window.open"
                 ],
                 "title": "Window",
-                "nr": 0
-            },
-            {
-                "name": "WebWorker.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.util.ResourceManager.getInstance",
-                    "qx.bom.WebWorker",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.List",
-                    "qx.core.Environment.get",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "WebWorker",
                 "nr": 0
             }
         ]
@@ -2365,6 +2365,51 @@
                     "qx.ui.form.TextArea"
                 ],
                 "title": "VSplit",
+                "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "mobile",
+        "tests": [
+            {
+                "name": "Fingers.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.bom.element.Style.setStyles"
+                ],
+                "title": "Fingers",
+                "nr": 0
+            },
+            {
+                "name": "PingPong.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.html.Element",
+                    "qx.lang.Function.bind",
+                    "qx.lang.Function.bind",
+                    "qx.event.Timer",
+                    "qx.dom.Hierarchy.contains",
+                    "qx.bom.element.Location.get",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element",
+                    "qx.html.Element"
+                ],
+                "title": "PingPong",
                 "nr": 0
             }
         ]
@@ -4185,6 +4230,28 @@
                 "nr": 0
             },
             {
+                "name": "Image.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Image",
+                    "qx.ui.form.ToggleButton",
+                    "qx.theme.manager.Font.getInstance",
+                    "qx.Theme.define"
+                ],
+                "title": "Image",
+                "nr": 0
+            },
+            {
                 "name": "Label.html",
                 "tags": [
                     "qx.Class.define",
@@ -4211,28 +4278,6 @@
                     "qx.ui.form.CheckBox"
                 ],
                 "title": "Label",
-                "nr": 0
-            },
-            {
-                "name": "Image.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Image",
-                    "qx.ui.form.ToggleButton",
-                    "qx.theme.manager.Font.getInstance",
-                    "qx.Theme.define"
-                ],
-                "title": "Image",
                 "nr": 0
             },
             {
@@ -4514,20 +4559,6 @@
                 "nr": 0
             },
             {
-                "name": "Resizer.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.form.List",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.container.Resizer",
-                    "qx.ui.layout.Grow",
-                    "qx.ui.container.Resizer",
-                    "qx.ui.layout.Canvas"
-                ],
-                "title": "Resizer",
-                "nr": 0
-            },
-            {
                 "name": "RadioButtonGroup.html",
                 "tags": [
                     "qx.Class.define",
@@ -4548,6 +4579,20 @@
                     "qx.ui.form.RadioButton"
                 ],
                 "title": "RadioButtonGroup",
+                "nr": 0
+            },
+            {
+                "name": "Resizer.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.form.List",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.container.Resizer",
+                    "qx.ui.layout.Grow",
+                    "qx.ui.container.Resizer",
+                    "qx.ui.layout.Canvas"
+                ],
+                "title": "Resizer",
                 "nr": 0
             },
             {
@@ -5005,51 +5050,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
-                "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "mobile",
-        "tests": [
-            {
-                "name": "Fingers.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.bom.element.Style.setStyles"
-                ],
-                "title": "Fingers",
-                "nr": 0
-            },
-            {
-                "name": "PingPong.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.html.Element",
-                    "qx.lang.Function.bind",
-                    "qx.lang.Function.bind",
-                    "qx.event.Timer",
-                    "qx.dom.Hierarchy.contains",
-                    "qx.bom.element.Location.get",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element",
-                    "qx.html.Element"
-                ],
-                "title": "PingPong",
                 "nr": 0
             }
         ]
