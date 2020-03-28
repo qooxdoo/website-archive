@@ -2499,23 +2499,6 @@
         "classname": "showcase",
         "tests": [
             {
-                "name": "Browser.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.toolbar.ToolBar",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.form.TextField",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.embed.Iframe"
-                ],
-                "title": "Browser",
-                "nr": 0
-            },
-            {
                 "name": "Dialog.html",
                 "tags": [
                     "showcase",
@@ -2706,6 +2689,23 @@
                     "qx.ui.form.ListItem"
                 ],
                 "title": "Translation",
+                "nr": 0
+            },
+            {
+                "name": "Browser.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.toolbar.ToolBar",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.form.TextField",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.embed.Iframe"
+                ],
+                "title": "Browser",
                 "nr": 0
             }
         ]
@@ -3995,27 +3995,6 @@
                 "nr": 0
             },
             {
-                "name": "Canvas.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.basic.Label",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.Canvas",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.embed.Canvas",
-                    "qx.ui.window.Window",
-                    "qx.ui.layout.Canvas",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.embed.Canvas"
-                ],
-                "title": "Canvas",
-                "nr": 0
-            },
-            {
                 "name": "CheckBox.html",
                 "tags": [
                     "qx.Class.define",
@@ -4880,31 +4859,6 @@
                 "nr": 0
             },
             {
-                "name": "Tooltip.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Tooltip",
-                "nr": 0
-            },
-            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -5052,6 +5006,52 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Window",
+                "nr": 0
+            },
+            {
+                "name": "Canvas.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.basic.Label",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.Canvas",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.embed.Canvas",
+                    "qx.ui.window.Window",
+                    "qx.ui.layout.Canvas",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.embed.Canvas"
+                ],
+                "title": "Canvas",
+                "nr": 0
+            },
+            {
+                "name": "Tooltip.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Tooltip",
                 "nr": 0
             }
         ]

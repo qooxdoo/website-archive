@@ -1902,13 +1902,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/application-exit.png": [
+    "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/address-book-new.png": [
+    "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
@@ -9522,6 +9522,12 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
+    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
+      200,
+      59,
+      "png",
+      "qxl.demobrowser"
+    ],
     "qxl/demobrowser/demo/media/knock.mp3": [
       null,
       null,
@@ -9556,12 +9562,6 @@ qx.$$packageData['0'] = {
       null,
       null,
       "webm",
-      "qxl.demobrowser"
-    ],
-    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
-      200,
-      59,
-      "png",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/test/alphaPNG.png": [
