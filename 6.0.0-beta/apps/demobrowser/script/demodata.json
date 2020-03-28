@@ -1343,6 +1343,23 @@
                 "nr": 0
             },
             {
+                "name": "Canvas_Fixed.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Canvas Fixed",
+                "nr": "Fixed"
+            },
+            {
                 "name": "Canvas_LeftRight.html",
                 "tags": [
                     "noPlayground",
@@ -1373,23 +1390,6 @@
                 ],
                 "title": "Canvas MinMaxSizes",
                 "nr": "MinMaxSizes"
-            },
-            {
-                "name": "Canvas_Fixed.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Canvas Fixed",
-                "nr": "Fixed"
             },
             {
                 "name": "Canvas_Percent.html",
@@ -1854,45 +1854,6 @@
                 "nr": "Margin"
             },
             {
-                "name": "HBox_NegativeMargin.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox NegativeMargin",
-                "nr": "NegativeMargin"
-            },
-            {
                 "name": "HBox_Percent.html",
                 "tags": [
                     "noPlayground",
@@ -1942,6 +1903,45 @@
                 "nr": "Reversed"
             },
             {
+                "name": "HBox_NegativeMargin.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox NegativeMargin",
+                "nr": "NegativeMargin"
+            },
+            {
                 "name": "HBox_Separator.html",
                 "tags": [
                     "noPlayground",
@@ -1963,20 +1963,6 @@
                 ],
                 "title": "HBox Separator",
                 "nr": "Separator"
-            },
-            {
-                "name": "HBox_ShrinkY.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox ShrinkY",
-                "nr": "ShrinkY"
             },
             {
                 "name": "HSplit.html",
@@ -2012,6 +1998,20 @@
                 ],
                 "title": "HSplit",
                 "nr": 0
+            },
+            {
+                "name": "HBox_ShrinkY.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox ShrinkY",
+                "nr": "ShrinkY"
             },
             {
                 "name": "ManualLayout.html",
@@ -2516,6 +2516,16 @@
                 "nr": 0
             },
             {
+                "name": "Form.html",
+                "tags": [
+                    "showcase",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Form",
+                "nr": 0
+            },
+            {
                 "name": "Dialog.html",
                 "tags": [
                     "showcase",
@@ -2538,16 +2548,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "Dialog",
-                "nr": 0
-            },
-            {
-                "name": "Form.html",
-                "tags": [
-                    "showcase",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Form",
                 "nr": 0
             },
             {
@@ -2710,25 +2710,91 @@
         ]
     },
     {
-        "classname": "table",
+        "classname": "treevirtual",
         "tests": [
             {
-                "name": "Table_Cell_Editor.html",
+                "name": "TreeVirtual.html",
                 "tags": [
-                    "noPlayground",
                     "qx.Class.define",
-                    "qx.ui.table.cellrenderer.Default",
-                    "qx.ui.table.cellrenderer.Dynamic",
-                    "qx.ui.table.celleditor.ComboBox",
-                    "qx.ui.table.celleditor.SelectBox",
-                    "qx.ui.table.celleditor.Dynamic",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.columnmodel.Resize",
-                    "qx.ui.table.Table"
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
                 ],
-                "title": "Table Cell_Editor",
+                "title": "TreeVirtual",
                 "nr": 0
             },
+            {
+                "name": "TreeVirtual_Events.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual Events",
+                "nr": "Events"
+            },
+            {
+                "name": "TreeVirtual_Filter.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.lang.Function.bind"
+                ],
+                "title": "TreeVirtual Filter",
+                "nr": "Filter"
+            },
+            {
+                "name": "TreeVirtual_Multiple_Columns.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "TreeVirtual Multiple_Columns",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Selections.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "TreeVirtual Selections",
+                "nr": "Selections"
+            }
+        ]
+    },
+    {
+        "classname": "table",
+        "tests": [
             {
                 "name": "Table.html",
                 "tags": [
@@ -2791,6 +2857,23 @@
                     "qx.ui.tooltip.ToolTip"
                 ],
                 "title": "Table Context_Menu",
+                "nr": 0
+            },
+            {
+                "name": "Table_Cell_Editor.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.cellrenderer.Default",
+                    "qx.ui.table.cellrenderer.Dynamic",
+                    "qx.ui.table.celleditor.ComboBox",
+                    "qx.ui.table.celleditor.SelectBox",
+                    "qx.ui.table.celleditor.Dynamic",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.columnmodel.Resize",
+                    "qx.ui.table.Table"
+                ],
+                "title": "Table Cell_Editor",
                 "nr": 0
             },
             {
@@ -2951,89 +3034,6 @@
                 ],
                 "title": "Table Window_Editor",
                 "nr": 0
-            }
-        ]
-    },
-    {
-        "classname": "treevirtual",
-        "tests": [
-            {
-                "name": "TreeVirtual.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Events.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
-                ],
-                "title": "TreeVirtual Events",
-                "nr": "Events"
-            },
-            {
-                "name": "TreeVirtual_Filter.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.lang.Function.bind"
-                ],
-                "title": "TreeVirtual Filter",
-                "nr": "Filter"
-            },
-            {
-                "name": "TreeVirtual_Multiple_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "TreeVirtual Multiple_Columns",
-                "nr": 0
-            },
-            {
-                "name": "TreeVirtual_Selections.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "TreeVirtual Selections",
-                "nr": "Selections"
             }
         ]
     },
@@ -3596,29 +3596,6 @@
                 "nr": 0
             },
             {
-                "name": "GroupedList.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.container.Composite",
-                    "qx.data.store.Json",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Label",
-                    "qx.ui.list.List",
-                    "qx.ui.form.ListItem"
-                ],
-                "title": "GroupedList",
-                "nr": 0
-            },
-            {
                 "name": "Gallery.html",
                 "tags": [
                     "qx.Class.define",
@@ -3642,6 +3619,29 @@
                     "qx.ui.virtual.layer.GridLines"
                 ],
                 "title": "Gallery",
+                "nr": 0
+            },
+            {
+                "name": "GroupedList.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.container.Composite",
+                    "qx.data.store.Json",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
+                    "qx.ui.list.List",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "GroupedList",
                 "nr": 0
             },
             {
@@ -3799,6 +3799,19 @@
                 "nr": 0
             },
             {
+                "name": "SettingsList.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.list.List",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "SettingsList",
+                "nr": 0
+            },
+            {
                 "name": "Selection.html",
                 "tags": [
                     "test",
@@ -3851,19 +3864,6 @@
                     "qx.ui.virtual.selection.CellLines"
                 ],
                 "title": "Selection",
-                "nr": 0
-            },
-            {
-                "name": "SettingsList.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.list.List",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "SettingsList",
                 "nr": 0
             },
             {

@@ -249,11 +249,11 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.testtapper": {
+  "qxl.datademo": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
-  "qxl.datademo": {
+  "qxl.testtapper": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },

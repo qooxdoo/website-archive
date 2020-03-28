@@ -9,8 +9,8 @@
     "qxl.widgetbrowser",
     "qxl.formdemo",
     "qxl.mobileshowcase",
-    "qxl.testtapper",
     "qxl.datademo",
+    "qxl.testtapper",
     "qxl.apiviewer"
   ],
   "parts": [

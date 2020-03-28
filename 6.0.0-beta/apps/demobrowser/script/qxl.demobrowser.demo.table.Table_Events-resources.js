@@ -468,6 +468,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Classic/arrows/previous.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Classic/arrows/rewind-invert.gif": [
       8,
       7,
@@ -549,12 +555,6 @@ qx.$$packageData['0'] = {
     "qx/decoration/Classic/colorselector/huesaturation-handle.gif": [
       11,
       11,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Classic/arrows/previous.gif": [
-      4,
-      7,
       "gif",
       "qx"
     ],
