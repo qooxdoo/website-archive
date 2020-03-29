@@ -7122,13 +7122,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/media-eject.png": [
+    "qx/icon/Tango/22/actions/media-playback-pause.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/media-playback-pause.png": [
+    "qx/icon/Tango/22/actions/media-eject.png": [
       22,
       22,
       "png",
@@ -7200,13 +7200,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/process-stop.png": [
+    "qx/icon/Tango/22/actions/system-log-out.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/system-log-out.png": [
+    "qx/icon/Tango/22/actions/process-stop.png": [
       22,
       22,
       "png",
@@ -8556,12 +8556,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/actions/object-flip-horizontal.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/48/actions/object-flip-vertical.png": [
       48,
       48,
@@ -8569,6 +8563,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/object-rotate-left.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/48/actions/object-flip-horizontal.png": [
       48,
       48,
       "png",
@@ -9522,12 +9522,6 @@ qx.$$packageData['0'] = {
       "png",
       "qxl.demobrowser"
     ],
-    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
-      200,
-      59,
-      "png",
-      "qxl.demobrowser"
-    ],
     "qxl/demobrowser/demo/media/knock.mp3": [
       null,
       null,
@@ -9562,6 +9556,12 @@ qx.$$packageData['0'] = {
       null,
       null,
       "webm",
+      "qxl.demobrowser"
+    ],
+    "qxl/demobrowser/demo/mobile/qooxdoo-logo.png": [
+      200,
+      59,
+      "png",
       "qxl.demobrowser"
     ],
     "qxl/demobrowser/demo/test/alphaPNG.png": [

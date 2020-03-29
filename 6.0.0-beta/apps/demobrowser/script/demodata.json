@@ -247,15 +247,6 @@
                 "nr": 0
             },
             {
-                "name": "Dimension.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Dimension",
-                "nr": 0
-            },
-            {
                 "name": "Environment.html",
                 "tags": [
                     "noPlayground",
@@ -270,6 +261,15 @@
                     "qx.lang.Json.stringify"
                 ],
                 "title": "Environment",
+                "nr": 0
+            },
+            {
+                "name": "Dimension.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Dimension",
                 "nr": 0
             },
             {
@@ -1079,25 +1079,6 @@
                 "nr": 0
             },
             {
-                "name": "TreeController.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.tree.Tree",
-                    "qx.data.controller.Tree",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "TreeController",
-                "nr": 0
-            },
-            {
                 "name": "SingleValueBinding.html",
                 "tags": [
                     "noPlayground",
@@ -1131,6 +1112,25 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SingleValueBinding",
+                "nr": 0
+            },
+            {
+                "name": "TreeController.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.tree.Tree",
+                    "qx.data.controller.Tree",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "TreeController",
                 "nr": 0
             },
             {
@@ -2568,6 +2568,20 @@
                 "nr": 0
             },
             {
+                "name": "Maps.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Maps",
+                "nr": 0
+            },
+            {
                 "name": "Localization.html",
                 "tags": [
                     "showcase",
@@ -2637,20 +2651,6 @@
                     "qx.locale.Manager.getInstance"
                 ],
                 "title": "Localization",
-                "nr": 0
-            },
-            {
-                "name": "Maps.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Maps",
                 "nr": 0
             },
             {
@@ -3087,6 +3087,20 @@
                 "nr": 0
             },
             {
+                "name": "Cursor.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "Cursor",
+                "nr": 0
+            },
+            {
                 "name": "CommandGroupManager.html",
                 "tags": [
                     "qx.Class.define",
@@ -3106,20 +3120,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "CommandGroupManager",
-                "nr": 0
-            },
-            {
-                "name": "Cursor.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "Cursor",
                 "nr": 0
             },
             {
@@ -3166,20 +3166,6 @@
                     "qx.ui.core.Widget.contains"
                 ],
                 "title": "DragDrop",
-                "nr": 0
-            },
-            {
-                "name": "FiniteStateMachine.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -3239,6 +3225,20 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "FormInvalids",
+                "nr": 0
+            },
+            {
+                "name": "FiniteStateMachine.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -4218,6 +4218,18 @@
                 "nr": 0
             },
             {
+                "name": "Iframe.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.embed.ThemedIframe",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioButton",
+                    "qx.ui.form.RadioGroup"
+                ],
+                "title": "Iframe",
+                "nr": 0
+            },
+            {
                 "name": "Image.html",
                 "tags": [
                     "qx.Class.define",
@@ -4266,18 +4278,6 @@
                     "qx.ui.form.CheckBox"
                 ],
                 "title": "Label",
-                "nr": 0
-            },
-            {
-                "name": "Iframe.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.embed.ThemedIframe",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioButton",
-                    "qx.ui.form.RadioGroup"
-                ],
-                "title": "Iframe",
                 "nr": 0
             },
             {
@@ -4743,6 +4743,22 @@
                 "nr": 0
             },
             {
+                "name": "StackContainer.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Stack",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.container.Stack",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
+                ],
+                "title": "StackContainer",
+                "nr": 0
+            },
+            {
                 "name": "TabView.html",
                 "tags": [
                     "qx.Class.define",
@@ -4786,22 +4802,6 @@
                 "nr": 0
             },
             {
-                "name": "StackContainer.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Stack",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.container.Stack",
-                    "qx.ui.container.Composite",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "StackContainer",
-                "nr": 0
-            },
-            {
                 "name": "TextField.html",
                 "tags": [
                     "qx.Class.define",
@@ -4826,31 +4826,6 @@
                     "qx.ui.form.Button"
                 ],
                 "title": "TextField",
-                "nr": 0
-            },
-            {
-                "name": "Tooltip.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.container.Composite",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.tooltip.ToolTip",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button"
-                ],
-                "title": "Tooltip",
                 "nr": 0
             },
             {
@@ -4900,6 +4875,31 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "ToolBar",
+                "nr": 0
+            },
+            {
+                "name": "Tooltip.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.container.Composite",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.tooltip.ToolTip",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button"
+                ],
+                "title": "Tooltip",
                 "nr": 0
             },
             {

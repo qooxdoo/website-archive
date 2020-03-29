@@ -2394,13 +2394,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/media-eject.png": [
+    "qx/icon/Tango/22/actions/media-playback-pause.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/media-playback-pause.png": [
+    "qx/icon/Tango/22/actions/media-eject.png": [
       22,
       22,
       "png",
@@ -2472,13 +2472,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/process-stop.png": [
+    "qx/icon/Tango/22/actions/system-log-out.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Tango/22/actions/system-log-out.png": [
+    "qx/icon/Tango/22/actions/process-stop.png": [
       22,
       22,
       "png",
