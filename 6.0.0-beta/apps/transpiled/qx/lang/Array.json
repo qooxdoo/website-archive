@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n======================================================================\n\nThis class contains code based on the following work:\n\njQuery\nhttp://jquery.com\nVersion 1.3.1\n\nCopyright:\n2009 John Resig\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\nUnderscore.js\nhttp://underscorejs.org\n\nCopyright:\n2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n   ======================================================================\n   This class contains code based on the following work:\n jQuery\n     http://jquery.com\n     Version 1.3.1\n     Copyright:\n       2009 John Resig\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n Underscore.js\n     http://underscorejs.org\n     Copyright:\n       2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Static helper functions for arrays with a lot of often used convenience\nmethods like <code>remove</code> or <code>contains</code>.\n\nThe native JavaScript Array is not modified by this class. However,\nthere are modifications to the native Array in {@link qx.lang.normalize.Array} for\nbrowsers that do not support certain JavaScript features natively ."
+          "body": "<p>Static helper functions for arrays with a lot of often used convenience\n methods like <code>remove</code> or <code>contains</code>.\n The native JavaScript Array is not modified by this class. However,\n there are modifications to the native Array in {@link qx.lang.normalize.Array} for\n browsers that do not support certain JavaScript features natively .</p>"
         }
       ],
       "@ignore": [
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts an array like object to any other array like\nobject.\n\nAttention: The returned array may be same\ninstance as the incoming one if the constructor is identical!"
+            "body": "<p>Converts an array like object to any other array like\n object.\n Attention: The returned array may be same\n instance as the incoming one if the constructor is identical!</p>"
           }
         ],
         "@param": [
@@ -122,7 +122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert an arguments object into an array."
+            "body": "<p>Convert an arguments object into an array.</p>"
           }
         ],
         "@param": [
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert a (node) collection into an array"
+            "body": "<p>Convert a (node) collection into an array</p>"
           }
         ],
         "@param": [
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Expand shorthand definition to a four element list.\nThis is an utility function for padding/margin and all other shorthand handling."
+            "body": "<p>Expand shorthand definition to a four element list.\n This is an utility function for padding/margin and all other shorthand handling.</p>"
           }
         ],
         "@param": [
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return a copy of the given array"
+            "body": "<p>Return a copy of the given array</p>"
           }
         ],
         "@param": [
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element at a given position into the array"
+            "body": "<p>Insert an element at a given position into the array</p>"
           }
         ],
         "@param": [
@@ -340,7 +340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element into the array before a given second element."
+            "body": "<p>Insert an element into the array before a given second element.</p>"
           }
         ],
         "@param": [
@@ -393,7 +393,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element into the array after a given second element."
+            "body": "<p>Insert an element into the array after a given second element.</p>"
           }
         ],
         "@param": [
@@ -446,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an element from the array at the given index"
+            "body": "<p>Remove an element from the array at the given index</p>"
           }
         ],
         "@param": [
@@ -492,7 +492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all elements from the array"
+            "body": "<p>Remove all elements from the array</p>"
           }
         ],
         "@param": [
@@ -531,7 +531,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Append the elements of an array to the array"
+            "body": "<p>Append the elements of an array to the array</p>"
           }
         ],
         "@param": [
@@ -585,7 +585,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Modifies the first array as it removes all elements\nwhich are listed in the second array as well."
+            "body": "<p>Modifies the first array as it removes all elements\n which are listed in the second array as well.</p>"
           }
         ],
         "@param": [
@@ -639,7 +639,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an element from the array."
+            "body": "<p>Remove an element from the array.</p>"
           }
         ],
         "@param": [
@@ -685,7 +685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the array contains the given element"
+            "body": "<p>Whether the array contains the given element</p>"
           }
         ],
         "@deprecated": [
@@ -737,7 +737,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the two arrays have the same content. Checks only the\nequality of the arrays' content."
+            "body": "<p>Check whether the two arrays have the same content. Checks only the\n equality of the arrays' content.</p>"
           }
         ],
         "@param": [
@@ -783,7 +783,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the sum of all values in the given array. Supports\nnumeric values only."
+            "body": "<p>Returns the sum of all values in the given array. Supports\n numeric values only.</p>"
           }
         ],
         "@param": [
@@ -822,7 +822,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the highest value in the given array. Supports\nnumeric values only."
+            "body": "<p>Returns the highest value in the given array. Supports\n numeric values only.</p>"
           }
         ],
         "@param": [
@@ -861,7 +861,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the lowest value in the given array. Supports\nnumeric values only."
+            "body": "<p>Returns the lowest value in the given array. Supports\n numeric values only.</p>"
           }
         ],
         "@param": [
@@ -900,7 +900,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recreates an array which is free of all duplicate elements from the original.\n\nThis method does not modify the original array!\n\nKeep in mind that this methods deletes undefined indexes."
+            "body": "<p>Recreates an array which is free of all duplicate elements from the original.\n This method does not modify the original array!\n Keep in mind that this methods deletes undefined indexes.</p>"
           }
         ],
         "@param": [
@@ -939,7 +939,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new array with integers from start to stop incremented or decremented by step."
+            "body": "<p>Returns a new array with integers from start to stop incremented or decremented by step.</p>"
           }
         ],
         "@param": [
@@ -992,7 +992,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces the contents of the array `dest`"
+            "body": "<p>Replaces the contents of the array <code>dest</code></p>"
           }
         ],
         "@param": [
@@ -1044,7 +1044,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a native array from src where possible; qx.data.Array is converted to its native array,\nin which case unless `clone` parameter is set to true the rules of qx.data.Array.toArray should\nbe followed, ie that the array should not be manipulated directly."
+            "body": "<p>Returns a native array from src where possible; qx.data.Array is converted to its native array,\n in which case unless <code>clone</code> parameter is set to true the rules of qx.data.Array.toArray should\n be followed, ie that the array should not be manipulated directly.</p>"
           }
         ],
         "@param": [

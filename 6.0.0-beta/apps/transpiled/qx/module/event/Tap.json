@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Normalization for tap gesture events. These gestures are based on <a href=\"#Pointer\">Pointer events</a>,\nmeaning that they are available on all devices, no matter which input device type is used (e.g. mouse or\ntouchscreen)."
+          "body": "<p>Normalization for tap gesture events. These gestures are based on <a href=\"#Pointer\">Pointer events</a>,\n meaning that they are available on all devices, no matter which input device type is used (e.g. mouse or\n touchscreen).</p>"
         }
       ],
       "@require": [
@@ -35,27 +35,27 @@
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getViewportLeft) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getViewportLeft"
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getViewportTop) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getViewportTop"
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getDocumentLeft) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getDocumentLeft"
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getDocumentTop) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getDocumentTop"
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getScreenLeft) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getScreenLeft"
         },
         {
           "name": "@require",
-          "body": "(qx.module.event.Tap#getScreenTop) // static code analysis - this method has to referenced"
+          "body": "qx.module.event.Tap#getScreenTop"
         }
       ],
       "@group": [
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of event types to be normalized"
+            "body": "<p>List of event types to be normalized</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List methods to be attached to gesture event\nobjects"
+            "body": "<p>List methods to be attached to gesture event\n objects</p>"
           }
         ],
         "@internal": [
@@ -133,7 +133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal coordinate at which the event occurred relative\nto the viewport."
+            "body": "<p>Get the horizontal coordinate at which the event occurred relative\n to the viewport.</p>"
           }
         ],
         "@return": [
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical coordinate at which the event occurred relative\nto the viewport."
+            "body": "<p>Get the vertical coordinate at which the event occurred relative\n to the viewport.</p>"
           }
         ],
         "@return": [
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal position at which the event occurred relative to the\nleft of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the horizontal position at which the event occurred relative to the\n left of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@return": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical position at which the event occurred relative to the\ntop of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the vertical position at which the event occurred relative to the\n top of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@return": [
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal coordinate at which the event occurred relative to\nthe origin of the screen coordinate system.\n\nNote: This value is usually not very useful unless you want to\nposition a native popup window at this coordinate."
+            "body": "<p>Get the horizontal coordinate at which the event occurred relative to\n the origin of the screen coordinate system.\n Note: This value is usually not very useful unless you want to\n position a native popup window at this coordinate.</p>"
           }
         ],
         "@return": [
@@ -289,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical coordinate at which the event occurred relative to\nthe origin of the screen coordinate system.\n\nNote: This value is usually not very useful unless you want to\nposition a native popup window at this coordinate."
+            "body": "<p>Get the vertical coordinate at which the event occurred relative to\n the origin of the screen coordinate system.\n Note: This value is usually not very useful unless you want to\n position a native popup window at this coordinate.</p>"
           }
         ],
         "@return": [
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the native event object, adding methods if they're not\nalready present"
+            "body": "<p>Manipulates the native event object, adding methods if they're not\n already present</p>"
           }
         ],
         "@param": [
@@ -361,13 +361,14 @@
     "location": {
       "start": {
         "line": 153,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 155,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 239,
+        "line": 246,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nAbstract base class for selection manager, which manage selectable items\nrendered in a virtual {@link qx.ui.virtual.core.Pane}."
+          "body": "<p>Abstract base class for selection manager, which manage selectable items\n rendered in a virtual {@link qx.ui.virtual.core.Pane}.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 45,
-        "column": 2
+        "line": 43,
+        "column": 14
       },
       "end": {
-        "line": 55,
+        "line": 53,
         "column": 3
       }
     },
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,16 +56,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "pane {qx.ui.virtual.core.Pane} The virtual pane on which the\nselectable item are rendered",
+          "body": "pane {qx.ui.virtual.core.Pane} The virtual pane on which the\n    selectable item are rendered",
           "paramName": "pane",
-          "description": " The virtual pane on which the\nselectable item are rendered",
+          "description": " The virtual pane on which the\n    selectable item are rendered",
           "type": "qx.ui.virtual.core.Pane"
         },
         {
           "name": "@param",
-          "body": "selectionDelegate {qx.ui.virtual.selection.ISelectionDelegate?null} An optional delegate,\nwhich can be used to customize the behavior of the selection manager\nwithout sub classing it.",
+          "body": "selectionDelegate {qx.ui.virtual.selection.ISelectionDelegate?null} An optional delegate,\n    which can be used to customize the behavior of the selection manager\n    without sub classing it.",
           "paramName": "selectionDelegate",
-          "description": " An optional delegate,\nwhich can be used to customize the behavior of the selection manager\nwithout sub classing it.",
+          "description": " An optional delegate,\n    which can be used to customize the behavior of the selection manager\n    without sub classing it.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.virtual.selection.ISelectionDelegate"
@@ -77,11 +77,11 @@
     "_autoScrollIntoView": {
       "location": {
         "start": {
-          "line": 67,
+          "line": 65,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 65,
           "column": 30
         }
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines if automatically scrolling of selected item into view is active."
+            "body": "<p>Determines if automatically scrolling of selected item into view is active.</p>"
           }
         ]
       },
@@ -99,11 +99,11 @@
     "_isSelectable": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -111,11 +111,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDELEGATE METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DELEGATE METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -146,11 +146,11 @@
     "_styleSelectable": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 88,
           "column": 5
         }
       },
@@ -158,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -195,11 +195,11 @@
     "attachPointerEvents": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 108,
           "column": 5
         }
       },
@@ -207,11 +207,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Attach pointer events to the managed pane."
+            "body": "<p>Attach pointer events to the managed pane.</p>"
           }
         ]
       },
@@ -225,7 +225,7 @@
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 119,
           "column": 5
         }
       },
@@ -233,7 +233,35 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detach pointer events from the managed pane."
+            "body": "<p>Detach pointer events from the managed pane.</p>"
+          }
+        ],
+        "@deprecated": [
+          {
+            "name": "@deprecated",
+            "body": "{6.0} misspelled, please use detachPointerEvents instead!"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "detachPointerEvents": {
+      "location": {
+        "start": {
+          "line": 124,
+          "column": 4
+        },
+        "end": {
+          "line": 132,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Detach pointer events from the managed pane.</p>"
           }
         ]
       },
@@ -243,11 +271,11 @@
     "attachKeyEvents": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 145,
           "column": 5
         }
       },
@@ -255,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach key events to manipulate the selection using the keyboard. The\nevent target doesn't need to be the pane itself. It can be an widget,\nwhich received key events. Usually the key event target is the\n{@link qx.ui.virtual.core.Scroller}."
+            "body": "<p>Attach key events to manipulate the selection using the keyboard. The\n event target doesn't need to be the pane itself. It can be an widget,\n which received key events. Usually the key event target is the\n {@link qx.ui.virtual.core.Scroller}.</p>"
           }
         ],
         "@param": [
@@ -274,11 +302,11 @@
     "detachKeyEvents": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 155,
           "column": 5
         }
       },
@@ -286,7 +314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detach key events."
+            "body": "<p>Detach key events.</p>"
           }
         ],
         "@param": [
@@ -305,11 +333,11 @@
     "attachListEvents": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 171,
           "column": 5
         }
       },
@@ -317,15 +345,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach list events. The selection mode <code>one</code> need to know,\nwhen selectable items are added or removed. If this mode is used the\n<code>list</code> parameter must fire <code>addItem</code> and\n<code>removeItem</code> events."
+            "body": "<p>Attach list events. The selection mode <code>one</code> need to know,\n when selectable items are added or removed. If this mode is used the\n <code>list</code> parameter must fire <code>addItem</code> and\n <code>removeItem</code> events.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "list {qx.core.Object} the event target for <code>addItem</code> and\n<code>removeItem</code> events",
+            "body": "list {qx.core.Object} the event target for <code>addItem</code> and\n    <code>removeItem</code> events",
             "paramName": "list",
-            "description": " the event target for <code>addItem</code> and\n<code>removeItem</code> events",
+            "description": " the event target for <code>addItem</code> and\n    <code>removeItem</code> events",
             "type": "qx.core.Object"
           }
         ]
@@ -336,11 +364,11 @@
     "detachListEvents": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 184,
           "column": 5
         }
       },
@@ -348,15 +376,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detach list events."
+            "body": "<p>Detach list events.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "list {qx.core.Object} the event target for <code>addItem</code> and\n<code>removeItem</code> events",
+            "body": "list {qx.core.Object} the event target for <code>addItem</code> and\n    <code>removeItem</code> events",
             "paramName": "list",
-            "description": " the event target for <code>addItem</code> and\n<code>removeItem</code> events",
+            "description": " the event target for <code>addItem</code> and\n    <code>removeItem</code> events",
             "type": "qx.core.Object"
           }
         ]
@@ -367,11 +395,11 @@
     "_capture": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 196,
           "column": 5
         }
       },
@@ -379,11 +407,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMPLEMENT ABSTRACT METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IMPLEMENT ABSTRACT METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -397,11 +425,11 @@
     "_releaseCapture": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 200,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 202,
           "column": 5
         }
       },
@@ -409,7 +437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -423,11 +451,11 @@
     "_getScroll": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 206,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 212,
           "column": 5
         }
       },
@@ -435,7 +463,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -457,11 +485,11 @@
     "_scrollBy": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 216,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 220,
           "column": 5
         }
       },
@@ -469,7 +497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -499,11 +527,11 @@
     "_getLocation": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 228,
           "column": 5
         }
       },
@@ -511,15 +539,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>.",
+            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>.",
             "type": "Map",
-            "description": " Map with the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>."
+            "description": " Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>."
           }
         ]
       },
@@ -533,11 +561,11 @@
     "_getDimension": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 234,
           "column": 5
         }
       },
@@ -545,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -921,11 +949,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 236,
-        "column": 2
+        "line": 243,
+        "column": 13
       },
       "end": {
-        "line": 238,
+        "line": 245,
         "column": 3
       }
     },
@@ -933,7 +961,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

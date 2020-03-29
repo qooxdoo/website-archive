@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 221,
+        "line": 229,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -61,23 +61,24 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 102,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
-    "showLogLevel": {
+    "showToolBar": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 5
         }
       },
@@ -85,25 +86,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the log level button"
+            "body": "<p>Shows the toolbar</p>"
+          },
+          {
+            "name": "@description",
+            "body": "<p>Shows the log level button</p>"
           }
         ]
       },
-      "name": "showLogLevel",
+      "name": "showToolBar",
       "propertyType": "new",
-      "apply": "_applyShowLogLevel",
-      "init": false,
+      "apply": "_applyShowToolBar",
+      "init": true,
       "check": "Boolean",
-      "defaultValue": false
+      "defaultValue": true
     },
     "logLevel": {
       "location": {
         "start": {
-          "line": 114,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 120,
           "column": 5
         }
       },
@@ -111,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Current set log level."
+            "body": "<p>Current set log level.</p>"
           }
         ]
       },
@@ -132,11 +137,11 @@
     "__logElem": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 125,
           "column": 20
         }
       },
@@ -146,11 +151,11 @@
     "__logAppender": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 126,
           "column": 24
         }
       },
@@ -160,11 +165,11 @@
     "__logLevelData": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 127,
           "column": 25
         }
       },
@@ -174,11 +179,11 @@
     "__logLevelButton": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 128,
           "column": 27
         }
       },
@@ -188,11 +193,11 @@
     "__toolbar": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 129,
           "column": 20
         }
       },
@@ -202,11 +207,11 @@
     "clear": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 136,
+          "line": 137,
           "column": 5
         }
       },
@@ -214,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the log."
+            "body": "<p>Clears the log.</p>"
           }
         ]
       },
@@ -224,11 +229,11 @@
     "fetch": {
       "location": {
         "start": {
-          "line": 145,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 155,
+          "line": 156,
           "column": 5
         }
       },
@@ -236,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fetches all logged data from the qx logging system and puts in into the\nlog widget."
+            "body": "<p>Fetches all logged data from the qx logging system and puts in into the\n log widget.</p>"
           }
         ],
         "@param": [
@@ -257,11 +262,11 @@
     "getAppenderElement": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 165,
           "column": 5
         }
       },
@@ -269,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the div use as log appender element."
+            "body": "<p>Returns the div use as log appender element.</p>"
           }
         ],
         "@return": [
@@ -284,39 +289,31 @@
       "type": "function",
       "access": "public"
     },
-    "_applyShowLogLevel": {
+    "_applyShowToolBar": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 173,
           "column": 5
         }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "property apply"
-          }
-        ]
       },
       "type": "function",
       "access": "protected",
       "applyFor": [
-        "showLogLevel"
+        "showToolBar"
       ]
     },
-    "__createLogLevelMenu": {
+    "_applyShowLogLevel": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 186,
           "column": 5
         }
       },
@@ -324,7 +321,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the menu button used to select the AUT's log level"
+            "body": "<p>property apply</p>"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "__createLogLevelMenu": {
+      "location": {
+        "start": {
+          "line": 194,
+          "column": 4
+        },
+        "end": {
+          "line": 213,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the menu button used to select the AUT's log level</p>"
           }
         ],
         "@return": [
@@ -3823,9 +3842,9 @@
       "overriddenFrom": "qx.ui.container.Composite",
       "property": "reset"
     },
-    "getShowLogLevel": {
+    "getShowToolBar": {
       "type": "function",
-      "name": "getShowLogLevel",
+      "name": "getShowToolBar",
       "abstract": false,
       "mixin": false,
       "inherited": false,
@@ -3835,21 +3854,21 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the (computed) value of the property <code>showLogLevel</code>.\n\nFor further details take a look at the property definition: {@link #showLogLevel}."
+            "body": "Gets the (computed) value of the property <code>showToolBar</code>.\n\nFor further details take a look at the property definition: {@link #showToolBar}."
           }
         ],
         "@return": [
           {
             "name": "@return",
             "type": "Boolean",
-            "desc": "Returns the value for showLogLevel"
+            "desc": "Returns the value for showToolBar"
           }
         ]
       }
     },
-    "isShowLogLevel": {
+    "isShowToolBar": {
       "type": "function",
-      "name": "isShowLogLevel",
+      "name": "isShowToolBar",
       "abstract": false,
       "mixin": false,
       "inherited": false,
@@ -3859,21 +3878,21 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the (computed) value of the property <code>showLogLevel</code>.\n\nFor further details take a look at the property definition: {@link #showLogLevel}."
+            "body": "Gets the (computed) value of the property <code>showToolBar</code>.\n\nFor further details take a look at the property definition: {@link #showToolBar}."
           }
         ],
         "@return": [
           {
             "name": "@return",
             "type": "Boolean",
-            "desc": "Returns the value for showLogLevel"
+            "desc": "Returns the value for showToolBar"
           }
         ]
       }
     },
-    "setShowLogLevel": {
+    "setShowToolBar": {
       "type": "function",
-      "name": "setShowLogLevel",
+      "name": "setShowToolBar",
       "abstract": false,
       "mixin": false,
       "inherited": false,
@@ -3883,7 +3902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the user value of the property <code>showLogLevel</code>.\n\nFor further details take a look at the property definition: {@link #showLogLevel}."
+            "body": "Sets the user value of the property <code>showToolBar</code>.\n\nFor further details take a look at the property definition: {@link #showToolBar}."
           }
         ],
         "@param": [
@@ -3891,14 +3910,14 @@
             "name": "@param",
             "type": "Boolean",
             "paramName": "value",
-            "desc": "Value for showLogLevel"
+            "desc": "Value for showToolBar"
           }
         ]
       }
     },
-    "resetShowLogLevel": {
+    "resetShowToolBar": {
       "type": "function",
-      "name": "resetShowLogLevel",
+      "name": "resetShowToolBar",
       "abstract": false,
       "mixin": false,
       "inherited": false,
@@ -3908,7 +3927,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the user value of the property <code>showLogLevel</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #showLogLevel}."
+            "body": "Resets the user value of the property <code>showToolBar</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #showToolBar}."
           }
         ]
       }
@@ -3983,11 +4002,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 216,
-        "column": 2
+        "line": 224,
+        "column": 13
       },
       "end": {
-        "line": 220,
+        "line": 228,
         "column": 3
       }
     },
@@ -3995,7 +4014,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class offers a constant API over the Page Visibility Spec:\nhttp://www.w3.org/TR/page-visibility/\n\nIt forwards all the browsers support and provides always a fallback which is\nof course visible all the time."
+          "body": "<p>This class offers a constant API over the Page Visibility Spec:\n http://www.w3.org/TR/page-visibility/\n It forwards all the browsers support and provides always a fallback which is\n of course visible all the time.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an instance of the PageVisibility object using the default document."
+            "body": "<p>Get an instance of the PageVisibility object using the default document.</p>"
           }
         ],
         "@return": [
@@ -67,7 +67,7 @@
     "location": {
       "start": {
         "line": 46,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 56,
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The change event for the page visibility."
+            "body": "<p>The change event for the page visibility.</p>"
           }
         ]
       },
@@ -189,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to feature check the attribute names and the event name.\nAs the event can not be detected using the on<name> attribute, we need\nto guess the event name by checking for the hidden attribute."
+            "body": "<p>Internal helper to feature check the attribute names and the event name.\n As the event can not be detected using the on<name> attribute, we need\n to guess the event name by checking for the hidden attribute.</p>"
           }
         ]
       },
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns weather the page is hidden or not. If we can not detect it,\n<code>false</code> will always be returned."
+            "body": "<p>Returns weather the page is hidden or not. If we can not detect it,\n <code>false</code> will always be returned.</p>"
           }
         ],
         "@return": [
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the visibility state of the page. If we can not detect it,\n<code>\"visible\"</code> will always be returned."
+            "body": "<p>Returns the visibility state of the page. If we can not detect it,\n <code>\"visible\"</code> will always be returned.</p>"
           }
         ],
         "@return": [

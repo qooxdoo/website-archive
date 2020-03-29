@@ -31,11 +31,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDerrell Lipman (derrell)\nChristian Hagendorn (chris_schmidt)\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Derrell Lipman (derrell)\n Christian Hagendorn (chris<em>schmidt)\n Daniel Wagner (d</em>wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Tree class implements a tree widget, with collapsible and expandable\ncontainer nodes and terminal leaf nodes. You instantiate a Tree object and\nthen assign the tree a root folder using the {@link #root} property.\n\nIf you don't want to show the root item, you can hide it with the\n{@link #hideRoot} property.\n\nThe handling of <b>selections</b> within a tree is somewhat distributed\nbetween the root tree object and the attached {@link qx.ui.tree.selection.SelectionManager}.\nTo get the currently selected element of a tree use the tree {@link #getSelection}\nmethod and tree {@link #setSelection} to set it. The TreeSelectionManager\nhandles more coarse-grained issues like providing {@link #selectAll} and\n{@link #resetSelection} methods."
+          "body": "<p>The Tree class implements a tree widget, with collapsible and expandable\n container nodes and terminal leaf nodes. You instantiate a Tree object and\n then assign the tree a root folder using the {@link #root} property.\n If you don't want to show the root item, you can hide it with the\n {@link #hideRoot} property.\n The handling of <b>selections</b> within a tree is somewhat distributed\n between the root tree object and the attached {@link qx.ui.tree.selection.SelectionManager}.\n To get the currently selected element of a tree use the tree {@link #getSelection}\n method and tree {@link #setSelection} to set it. The TreeSelectionManager\n handles more coarse-grained issues like providing {@link #selectAll} and\n {@link #resetSelection} methods.</p>"
         }
       ]
     }
@@ -45,7 +45,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 79,
@@ -56,7 +56,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired after a tree item was added to the tree. The\n{@link qx.event.type.Data#getData} method of the event returns the\nadded item."
+            "body": "<p>This event is fired after a tree item was added to the tree. The\n {@link qx.event.type.Data#getData} method of the event returns the\n added item.</p>"
           }
         ]
       },
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired after a tree item has been removed from the tree.\nThe {@link qx.event.type.Data#getData} method of the event returns the\nremoved item."
+            "body": "<p>This event is fired after a tree item has been removed from the tree.\n The {@link qx.event.type.Data#getData} method of the event returns the\n removed item.</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Control whether tap or double tap should open or close the tapped\nfolder."
+            "body": "<p>Control whether tap or double tap should open or close the tapped\n folder.</p>"
           }
         ]
       },
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The root tree item of the tree to display"
+            "body": "<p>The root tree item of the tree to display</p>"
           }
         ]
       },
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide the root (Tree) node.  This differs from the visibility property in\nthat this property hides *only* the root node, not the node's children."
+            "body": "<p>Hide the root (Tree) node.  This differs from the visibility property in\n that this property hides <em>only</em> the root node, not the node's children.</p>"
           }
         ]
       },
@@ -208,7 +208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the Root should have an open/close button.  This may also be\nused in conjunction with the hideNode property to provide for virtual root\nnodes.  In the latter case, be very sure that the virtual root nodes are\nexpanded programmatically, since there will be no open/close button for the\nuser to open them."
+            "body": "<p>Whether the Root should have an open/close button.  This may also be\n used in conjunction with the hideNode property to provide for virtual root\n nodes.  In the latter case, be very sure that the virtual root nodes are\n expanded programmatically, since there will be no open/close button for the\n user to open them.</p>"
           }
         ]
       },
@@ -234,7 +234,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -264,7 +264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -433,11 +433,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the widget, which contains the root tree item. This widget must\nhave a vertical box layout."
+            "body": "<p>Get the widget, which contains the root tree item. This widget must\n have a vertical box layout.</p>"
           }
         ],
         "@return": [
@@ -471,7 +471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -496,7 +496,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -521,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -546,7 +546,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element, to which the content padding should be applied."
+            "body": "<p>Returns the element, to which the content padding should be applied.</p>"
           }
         ],
         "@return": [
@@ -576,11 +576,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSELECTION MANAGER API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SELECTION MANAGER API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the tree item following the given item in the tree hierarchy."
+            "body": "<p>Get the tree item following the given item in the tree hierarchy.</p>"
           }
         ],
         "@param": [
@@ -593,9 +593,9 @@
           },
           {
             "name": "@param",
-            "body": "invisible {Boolean?true} Whether invisible/closed tree items\nshould be returned as well.",
+            "body": "invisible {Boolean?true} Whether invisible/closed tree items\n     should be returned as well.",
             "paramName": "invisible",
-            "description": " Whether invisible/closed tree items\nshould be returned as well.",
+            "description": " Whether invisible/closed tree items\n     should be returned as well.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -604,9 +604,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item after the given item. May be\n<code>null</code> if the item is the last item.",
+            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item after the given item. May be\n     <code>null</code> if the item is the last item.",
             "type": "qx.ui.tree.core.AbstractTreeItem?null",
-            "description": " The item after the given item. May be\n<code>null</code> if the item is the last item."
+            "description": " The item after the given item. May be\n     <code>null</code> if the item is the last item."
           }
         ]
       },
@@ -628,7 +628,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the tree item preceding the given item in the tree hierarchy."
+            "body": "<p>Get the tree item preceding the given item in the tree hierarchy.</p>"
           }
         ],
         "@param": [
@@ -641,9 +641,9 @@
           },
           {
             "name": "@param",
-            "body": "invisible {Boolean?true} Whether invisible/closed tree items\nshould be returned as well.",
+            "body": "invisible {Boolean?true} Whether invisible/closed tree items\n     should be returned as well.",
             "paramName": "invisible",
-            "description": " Whether invisible/closed tree items\nshould be returned as well.",
+            "description": " Whether invisible/closed tree items\n     should be returned as well.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -652,9 +652,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item before the given item. May be\n<code>null</code> if the given item is the tree's root.",
+            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item before the given item. May be\n     <code>null</code> if the given item is the tree's root.",
             "type": "qx.ui.tree.core.AbstractTreeItem?null",
-            "description": " The item before the given item. May be\n<code>null</code> if the given item is the tree's root."
+            "description": " The item before the given item. May be\n     <code>null</code> if the given item is the tree's root."
           }
         ]
       },
@@ -676,24 +676,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the tree item's next sibling."
+            "body": "<p>Get the tree item's next sibling.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "treeItem {qx.ui.tree.core.AbstractTreeItem} The tree item to get the following\nsibling of.",
+            "body": "treeItem {qx.ui.tree.core.AbstractTreeItem} The tree item to get the following\n sibling of.",
             "paramName": "treeItem",
-            "description": " The tree item to get the following\nsibling of.",
+            "description": " The tree item to get the following\n sibling of.",
             "type": "qx.ui.tree.core.AbstractTreeItem"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item following the given item. May be\n<code>null</code> if the given item is the last in it's nesting\nlevel.",
+            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item following the given item. May be\n     <code>null</code> if the given item is the last in it's nesting\n     level.",
             "type": "qx.ui.tree.core.AbstractTreeItem?null",
-            "description": " The item following the given item. May be\n<code>null</code> if the given item is the last in it's nesting\nlevel."
+            "description": " The item following the given item. May be\n     <code>null</code> if the given item is the last in it's nesting\n     level."
           }
         ]
       },
@@ -715,24 +715,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the tree item's previous sibling."
+            "body": "<p>Get the tree item's previous sibling.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "treeItem {qx.ui.tree.core.AbstractTreeItem} The tree item to get the previous\nsibling of.",
+            "body": "treeItem {qx.ui.tree.core.AbstractTreeItem} The tree item to get the previous\n sibling of.",
             "paramName": "treeItem",
-            "description": " The tree item to get the previous\nsibling of.",
+            "description": " The tree item to get the previous\n sibling of.",
             "type": "qx.ui.tree.core.AbstractTreeItem"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item preceding the given item. May be\n<code>null</code> if the given item is the first in it's nesting\nlevel.",
+            "body": "{qx.ui.tree.core.AbstractTreeItem?null} The item preceding the given item. May be\n     <code>null</code> if the given item is the first in it's nesting\n     level.",
             "type": "qx.ui.tree.core.AbstractTreeItem?null",
-            "description": " The item preceding the given item. May be\n<code>null</code> if the given item is the first in it's nesting\nlevel."
+            "description": " The item preceding the given item. May be\n     <code>null</code> if the given item is the first in it's nesting\n     level."
           }
         ]
       },
@@ -754,24 +754,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all children of the tree."
+            "body": "<p>Returns all children of the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "recursive {Boolean ? false} whether children of subfolder should be\nincluded",
+            "body": "recursive {Boolean ? false} whether children of subfolder should be\n     included",
             "paramName": "recursive",
-            "description": " whether children of subfolder should be\nincluded",
+            "description": " whether children of subfolder should be\n     included",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "invisible {Boolean ? true} whether invisible children should be\nincluded",
+            "body": "invisible {Boolean ? true} whether invisible children should be\n     included",
             "paramName": "invisible",
-            "description": " whether invisible children should be\nincluded",
+            "description": " whether invisible children should be\n     included",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -804,7 +804,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the tree's only \"external\" child, namely the root node."
+            "body": "<p>Returns the tree's only \"external\" child, namely the root node.</p>"
           }
         ],
         "@return": [
@@ -834,28 +834,28 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPOINTER EVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  POINTER EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the tree item, which contains the given widget."
+            "body": "<p>Returns the tree item, which contains the given widget.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "widget {qx.ui.core.Widget} The widget to get the containing tree\nitem for.",
+            "body": "widget {qx.ui.core.Widget} The widget to get the containing tree\n   item for.",
             "paramName": "widget",
-            "description": " The widget to get the containing tree\nitem for.",
+            "description": " The widget to get the containing tree\n   item for.",
             "type": "qx.ui.core.Widget"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.tree.core.AbstractTreeItem|null} The tree item containing the widget. If the\nwidget is not inside of any tree item <code>null</code> is returned.",
+            "body": "{qx.ui.tree.core.AbstractTreeItem|null} The tree item containing the widget. If the\n     widget is not inside of any tree item <code>null</code> is returned.",
             "type": "qx.ui.tree.core.AbstractTreeItem|null",
-            "description": " The tree item containing the widget. If the\nwidget is not inside of any tree item <code>null</code> is returned."
+            "description": " The tree item containing the widget. If the\n     widget is not inside of any tree item <code>null</code> is returned."
           }
         ]
       },
@@ -877,7 +877,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -902,7 +902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for tap events, which could change a tree item's open\nstate."
+            "body": "<p>Event handler for tap events, which could change a tree item's open\n state.</p>"
           }
         ],
         "@param": [
@@ -933,7 +933,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for changeSelection events, which opens all parent folders\nof the selected folders."
+            "body": "<p>Event handler for changeSelection events, which opens all parent folders\n of the selected folders.</p>"
           }
         ],
         "@param": [
@@ -964,7 +964,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for key press events. Open and close the current selected\nitem on key left and right press. Jump to parent on key left if already\nclosed."
+            "body": "<p>Event handler for key press events. Open and close the current selected\n item on key left and right press. Jump to parent on key left if already\n closed.</p>"
           }
         ],
         "@param": [
@@ -1001,7 +1001,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the given item to the existing selection."
+            "body": "<p>Adds the given item to the existing selection.</p>"
           }
         ],
         "@param": [
@@ -1035,7 +1035,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given item from the selection.\n\nUse {@link qx.ui.core.ISingleSelection#resetSelection} when you\nwant to clear the whole selection at once."
+            "body": "<p>Removes the given item from the selection.\n Use {@link qx.ui.core.ISingleSelection#resetSelection} when you\n want to clear the whole selection at once.</p>"
           }
         ],
         "@param": [
@@ -1069,7 +1069,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items.\n\nNote: The result is only a set of selected items, so the order can\ndiffer from the sequence in which the items were added."
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
@@ -1094,7 +1094,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces current selection with the given items."
+            "body": "<p>Replaces current selection with the given items.</p>"
           }
         ],
         "@param": [
@@ -1137,7 +1137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether the given item is currently selected."
+            "body": "<p>Detects whether the given item is currently selected.</p>"
           }
         ],
         "@param": [
@@ -1179,7 +1179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the selection is empty."
+            "body": "<p>Whether the selection is empty.</p>"
           }
         ],
         "@return": [
@@ -1204,15 +1204,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -1238,7 +1238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tries to set the selection using the given array containing the\nrepresentative models for the selectables."
+            "body": "<p>Tries to set the selection using the given array containing the\n representative models for the selectables.</p>"
           }
         ],
         "@param": [
@@ -1264,15 +1264,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of the selected models."
+            "body": "<p>Returns an array of the selected models.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} An array containing the models of the currently selected\nitems.",
+            "body": "{Array} An array containing the models of the currently selected\n   items.",
             "type": "Array",
-            "description": " An array containing the models of the currently selected\nitems."
+            "description": " An array containing the models of the currently selected\n   items."
           }
         ]
       }
@@ -1289,11 +1289,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the field model value. Should also update the UI."
+            "body": "<p>Sets the field model value. Should also update the UI.</p>"
           }
         ],
         "@param": [
@@ -1311,9 +1311,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Error} Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field).",
+            "body": "{null|Error} Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field).",
             "type": "null|Error",
-            "description": " Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field)."
+            "description": " Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field)."
           }
         ]
       }
@@ -1339,7 +1339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a consistent and up-to-date model value.\n\nNote: returned value can also be a promise of type <code>Promise&lt;*|null&gt;</code>."
+            "body": "<p>Returns a consistent and up-to-date model value.\n Note: returned value can also be a promise of type <code>Promise&amp;lt;*|null&amp;gt;</code>.</p>"
           }
         ],
         "@return": [
@@ -1365,11 +1365,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1396,7 +1396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -1422,11 +1422,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -1453,7 +1453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1479,11 +1479,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1510,7 +1510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1536,11 +1536,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -1567,7 +1567,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -1593,11 +1593,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -1624,7 +1624,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -1649,7 +1649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects an item range between two given items."
+            "body": "<p>Selects an item range between two given items.</p>"
           }
         ],
         "@param": [
@@ -1682,7 +1682,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items sorted\nby their index in the container."
+            "body": "<p>Returns an array of currently selected items sorted\n by their index in the container.</p>"
           }
         ],
         "@return": [
@@ -1707,15 +1707,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the last selection context."
+            "body": "<p>Returns the last selection context.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String | null} One of <code>tap</code>, <code>quick</code>,\n<code>drag</code> or <code>key</code> or <code>null</code>.",
+            "body": "{String | null} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>.",
             "type": "String | null",
-            "description": " One of <code>tap</code>, <code>quick</code>,\n<code>drag</code> or <code>key</code> or <code>null</code>."
+            "description": " One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>."
           }
         ]
       }
@@ -1732,7 +1732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal selection manager. Use this with\ncaution!"
+            "body": "<p>Returns the internal selection manager. Use this with\n caution!</p>"
           }
         ],
         "@return": [
@@ -1766,7 +1766,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current lead item. Generally the item which was last modified\nby the user (tapped on etc.)"
+            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
           }
         ],
         "@return": [
@@ -1818,11 +1818,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for <code>changeSelection</code> event on selection manager."
+            "body": "<p>Event listener for <code>changeSelection</code> event on selection manager.</p>"
           }
         ],
         "@param": [
@@ -2422,7 +2422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -6648,7 +6648,7 @@
     "location": {
       "start": {
         "line": 595,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 597,
@@ -6659,7 +6659,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

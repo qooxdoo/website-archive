@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 535,
+        "line": 537,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Internal class which contains the checks used by {@link qx.core.Environment}.\nAll checks in here are marked as internal which means you should never use\nthem directly.\n\nThis class should contain all checks about HTML."
+          "body": "<p>Internal class which contains the checks used by {@link qx.core.Environment}.\n All checks in here are marked as internal which means you should never use\n them directly.\n This class should contain all checks about HTML.</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports Web Workers."
+            "body": "<p>Whether the client supports Web Workers.</p>"
           }
         ],
         "@internal": [
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports File Readers"
+            "body": "<p>Whether the client supports File Readers</p>"
           }
         ],
         "@internal": [
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports Geo Location."
+            "body": "<p>Whether the client supports Geo Location.</p>"
           }
         ],
         "@internal": [
@@ -161,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports audio."
+            "body": "<p>Whether the client supports audio.</p>"
           }
         ],
         "@internal": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client can play ogg audio format."
+            "body": "<p>Whether the client can play ogg audio format.</p>"
           }
         ],
         "@internal": [
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client can play mp3 audio format."
+            "body": "<p>Whether the client can play mp3 audio format.</p>"
           }
         ],
         "@internal": [
@@ -269,7 +269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client can play wave audio wave format."
+            "body": "<p>Whether the client can play wave audio wave format.</p>"
           }
         ],
         "@internal": [
@@ -305,7 +305,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client can play au audio format."
+            "body": "<p>Whether the client can play au audio format.</p>"
           }
         ],
         "@internal": [
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client can play aif audio format."
+            "body": "<p>Whether the client can play aif audio format.</p>"
           }
         ],
         "@internal": [
@@ -377,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports video."
+            "body": "<p>Whether the client supports video.</p>"
           }
         ],
         "@internal": [
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports ogg video."
+            "body": "<p>Whether the client supports ogg video.</p>"
           }
         ],
         "@internal": [
@@ -449,7 +449,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports mp4 video."
+            "body": "<p>Whether the client supports mp4 video.</p>"
           }
         ],
         "@internal": [
@@ -485,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports webm video."
+            "body": "<p>Whether the client supports webm video.</p>"
           }
         ],
         "@internal": [
@@ -521,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports local storage."
+            "body": "<p>Whether the client supports local storage.</p>"
           }
         ],
         "@internal": [
@@ -557,7 +557,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports session storage."
+            "body": "<p>Whether the client supports session storage.</p>"
           }
         ],
         "@internal": [
@@ -593,7 +593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports user data to persist data. This is only\nrelevant for IE < 8."
+            "body": "<p>Whether the client supports user data to persist data. This is only\n relevant for IE &lt; 8.</p>"
           }
         ],
         "@internal": [
@@ -629,7 +629,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the browser supports CSS class lists.\nhttps://developer.mozilla.org/en-US/docs/DOM/element.classList"
+            "body": "<p>Whether the browser supports CSS class lists.\n https://developer.mozilla.org/en-US/docs/DOM/element.classList</p>"
           }
         ],
         "@internal": [
@@ -665,7 +665,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if XPath could be used."
+            "body": "<p>Checks if XPath could be used.</p>"
           }
         ],
         "@internal": [
@@ -701,7 +701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if XUL could be used."
+            "body": "<p>Checks if XUL could be used.</p>"
           }
         ],
         "@internal": [
@@ -737,7 +737,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if SVG could be used"
+            "body": "<p>Checks if SVG could be used</p>"
           }
         ],
         "@internal": [
@@ -773,7 +773,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if VML is supported"
+            "body": "<p>Checks if VML is supported</p>"
           }
         ],
         "@internal": [
@@ -809,7 +809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if canvas could be used"
+            "body": "<p>Checks if canvas could be used</p>"
           }
         ],
         "@internal": [
@@ -833,11 +833,11 @@
     "getDataUrl": {
       "location": {
         "start": {
-          "line": 353,
+          "line": 355,
           "column": 4
         },
         "end": {
-          "line": 362,
+          "line": 364,
           "column": 5
         }
       },
@@ -845,7 +845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asynchronous check for using data urls."
+            "body": "<p>Asynchronous check for using data urls.</p>"
           }
         ],
         "@internal": [
@@ -857,10 +857,16 @@
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The function which should be executed as\nsoon as the check is done.",
+            "body": "callback {Function} The function which should be executed as\n   soon as the check is done.",
             "paramName": "callback",
-            "description": " The function which should be executed as\nsoon as the check is done.",
+            "description": " The function which should be executed as\n   soon as the check is done.",
             "type": "Function"
+          }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "Image"
           }
         ]
       },
@@ -870,11 +876,11 @@
     "getDataset": {
       "location": {
         "start": {
-          "line": 370,
+          "line": 372,
           "column": 4
         },
         "end": {
-          "line": 372,
+          "line": 374,
           "column": 5
         }
       },
@@ -882,7 +888,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if dataset could be used"
+            "body": "<p>Checks if dataset could be used</p>"
           }
         ],
         "@internal": [
@@ -906,11 +912,11 @@
     "getContains": {
       "location": {
         "start": {
-          "line": 381,
+          "line": 383,
           "column": 4
         },
         "end": {
-          "line": 385,
+          "line": 387,
           "column": 5
         }
       },
@@ -918,7 +924,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for element.contains"
+            "body": "<p>Check for element.contains</p>"
           }
         ],
         "@internal": [
@@ -942,11 +948,11 @@
     "getCompareDocumentPosition": {
       "location": {
         "start": {
-          "line": 394,
+          "line": 396,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 399,
           "column": 5
         }
       },
@@ -954,7 +960,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for element.compareDocumentPosition"
+            "body": "<p>Check for element.compareDocumentPosition</p>"
           }
         ],
         "@internal": [
@@ -978,11 +984,11 @@
     "getTextContent": {
       "location": {
         "start": {
-          "line": 407,
+          "line": 409,
           "column": 4
         },
         "end": {
-          "line": 411,
+          "line": 413,
           "column": 5
         }
       },
@@ -990,7 +996,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for element.textContent. Legacy IEs do not support this, use\ninnerText instead."
+            "body": "<p>Check for element.textContent. Legacy IEs do not support this, use\n innerText instead.</p>"
           }
         ],
         "@internal": [
@@ -1014,11 +1020,11 @@
     "getFullScreen": {
       "location": {
         "start": {
-          "line": 420,
+          "line": 422,
           "column": 4
         },
         "end": {
-          "line": 425,
+          "line": 427,
           "column": 5
         }
       },
@@ -1026,7 +1032,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the client supports the fullscreen API."
+            "body": "<p>Whether the client supports the fullscreen API.</p>"
           }
         ],
         "@internal": [
@@ -1050,11 +1056,11 @@
     "getConsole": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 436,
           "column": 4
         },
         "end": {
-          "line": 437,
+          "line": 439,
           "column": 5
         }
       },
@@ -1062,7 +1068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for a console object."
+            "body": "<p>Check for a console object.</p>"
           }
         ],
         "@internal": [
@@ -1086,11 +1092,11 @@
     "getNaturalDimensions": {
       "location": {
         "start": {
-          "line": 447,
+          "line": 449,
           "column": 4
         },
         "end": {
-          "line": 452,
+          "line": 454,
           "column": 5
         }
       },
@@ -1098,7 +1104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for the <code>naturalHeight</code> and <code>naturalWidth</code>\nimage element attributes."
+            "body": "<p>Check for the <code>naturalHeight</code> and <code>naturalWidth</code>\n image element attributes.</p>"
           }
         ],
         "@internal": [
@@ -1122,11 +1128,11 @@
     "getHistoryState": {
       "location": {
         "start": {
-          "line": 461,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 466,
+          "line": 468,
           "column": 5
         }
       },
@@ -1134,7 +1140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for HTML5 history manipulation support."
+            "body": "<p>Check for HTML5 history manipulation support.</p>"
           }
         ],
         "@internal": [
@@ -1158,11 +1164,11 @@
     "getSelection": {
       "location": {
         "start": {
-          "line": 478,
+          "line": 480,
           "column": 4
         },
         "end": {
-          "line": 487,
+          "line": 489,
           "column": 5
         }
       },
@@ -1170,15 +1176,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the name of the native object/function used to access the\ndocument's text selection."
+            "body": "<p>Returns the name of the native object/function used to access the\n document's text selection.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} <code>getSelection</code> if the standard window.getSelection\nfunction is available; <code>selection</code> if the MS-proprietary\ndocument.selection object is available; <code>null</code> if no known\ntext selection API is available.",
+            "body": "{String|null} <code>getSelection</code> if the standard window.getSelection\n function is available; <code>selection</code> if the MS-proprietary\n document.selection object is available; <code>null</code> if no known\n text selection API is available.",
             "type": "String|null",
-            "description": " <code>getSelection</code> if the standard window.getSelection\nfunction is available; <code>selection</code> if the MS-proprietary\ndocument.selection object is available; <code>null</code> if no known\ntext selection API is available."
+            "description": " <code>getSelection</code> if the standard window.getSelection\n function is available; <code>selection</code> if the MS-proprietary\n document.selection object is available; <code>null</code> if no known\n text selection API is available."
           }
         ]
       },
@@ -1188,11 +1194,11 @@
     "getIsEqualNode": {
       "location": {
         "start": {
-          "line": 495,
+          "line": 497,
           "column": 4
         },
         "end": {
-          "line": 497,
+          "line": 499,
           "column": 5
         }
       },
@@ -1200,7 +1206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for the isEqualNode DOM method."
+            "body": "<p>Check for the isEqualNode DOM method.</p>"
           }
         ],
         "@return": [
@@ -1219,14 +1225,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 500,
-        "column": 2
+        "line": 502,
+        "column": 10
       },
       "end": {
-        "line": 534,
+        "line": 536,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

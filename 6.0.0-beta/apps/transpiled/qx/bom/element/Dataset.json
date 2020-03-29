@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthor:\nGabriel Munteanu (gabios)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Author:\n Gabriel Munteanu (gabios)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Data-* attribute handling for DOM HTML elements.\n\nThis feature set is supported cross-browser\nthrough one common interface and is independent of the differences between\nthe multiple implementations."
+          "body": "<p>Data-* attribute handling for DOM HTML elements.\n This feature set is supported cross-browser\n through one common interface and is independent of the differences between\n the multiple implementations.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a data attribute on the given DOM element."
+            "body": "<p>Sets a data attribute on the given DOM element.</p>"
           }
         ],
         "@param": [
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given HTML \"data-*\" attribute"
+            "body": "<p>Returns the value of the given HTML \"data-*\" attribute</p>"
           }
         ],
         "@param": [
@@ -138,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map containing all the HTML \"data-*\" attributes of the specified element"
+            "body": "<p>Returns a map containing all the HTML \"data-*\" attributes of the specified element</p>"
           }
         ],
         "@param": [
@@ -177,7 +177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if any element in the collection has a \"data-*\" attribute"
+            "body": "<p>Checks if any element in the collection has a \"data-*\" attribute</p>"
           }
         ],
         "@param": [
@@ -216,7 +216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an HTML \"data-*\" attribute from the given DOM element"
+            "body": "<p>Remove an HTML \"data-*\" attribute from the given DOM element</p>"
           }
         ],
         "@param": [

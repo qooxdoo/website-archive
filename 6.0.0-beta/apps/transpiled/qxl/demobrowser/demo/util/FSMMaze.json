@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         }
       ]
     }
@@ -47,13 +47,14 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 302,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "getCellSize": {
@@ -71,7 +72,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the size of each cell."
+            "body": "<p>Get the size of each cell.</p>"
           }
         ]
       },
@@ -93,15 +94,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the starting cell."
+            "body": "<p>Get the starting cell.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe returned object contains two members: row and col.",
+            "body": "{Object}\n   The returned object contains two members: row and col.",
             "type": "Object",
-            "description": "\nThe returned object contains two members: row and col."
+            "description": "\n   The returned object contains two members: row and col."
           }
         ]
       },
@@ -123,15 +124,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the ending cell."
+            "body": "<p>Get the ending cell.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe returned object contains two members: row and col.",
+            "body": "{Object}\n   The returned object contains two members: row and col.",
             "type": "Object",
-            "description": "\nThe returned object contains two members: row and col."
+            "description": "\n   The returned object contains two members: row and col."
           }
         ]
       },
@@ -153,24 +154,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the position of the specified cell."
+            "body": "<p>Get the position of the specified cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell for which the position is desired.  This object contains two\nmembers: row and col.",
+            "body": "cell {Object}\n   The cell for which the position is desired.  This object contains two\n   members: row and col.",
             "paramName": "cell",
-            "description": "\nThe cell for which the position is desired.  This object contains two\nmembers: row and col.",
+            "description": "\n   The cell for which the position is desired.  This object contains two\n   members: row and col.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe returned object contains two members: top and left.",
+            "body": "{Object}\n   The returned object contains two members: top and left.",
             "type": "Object",
-            "description": "\nThe returned object contains two members: top and left."
+            "description": "\n   The returned object contains two members: top and left."
           }
         ]
       },
@@ -192,24 +193,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the neighbor cell to the specified cell's west."
+            "body": "<p>Get the neighbor cell to the specified cell's west.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "body": "cell {Object}\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "paramName": "cell",
-            "description": "\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "description": "\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object|null}\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned.",
+            "body": "{Object|null}\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned.",
             "type": "Object|null",
-            "description": "\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned."
+            "description": "\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned."
           }
         ]
       },
@@ -231,24 +232,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the neighbor cell to the specified cell's south."
+            "body": "<p>Get the neighbor cell to the specified cell's south.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "body": "cell {Object}\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "paramName": "cell",
-            "description": "\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "description": "\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object|null}\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned.",
+            "body": "{Object|null}\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned.",
             "type": "Object|null",
-            "description": "\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned."
+            "description": "\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned."
           }
         ]
       },
@@ -270,24 +271,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the neighbor cell to the specified cell's east."
+            "body": "<p>Get the neighbor cell to the specified cell's east.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "body": "cell {Object}\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "paramName": "cell",
-            "description": "\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "description": "\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object|null}\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned.",
+            "body": "{Object|null}\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned.",
             "type": "Object|null",
-            "description": "\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned."
+            "description": "\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned."
           }
         ]
       },
@@ -309,24 +310,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the neighbor cell to the specified cell's north."
+            "body": "<p>Get the neighbor cell to the specified cell's north.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "body": "cell {Object}\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "paramName": "cell",
-            "description": "\nThe cell for which the neighbor is desired.  This object contains two\nmembers: row and col.",
+            "description": "\n   The cell for which the neighbor is desired.  This object contains two\n   members: row and col.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object|null}\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned.",
+            "body": "{Object|null}\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned.",
             "type": "Object|null",
-            "description": "\nThe returned object contains two members: row and col.\nIf there is no such neighbor, null is returned."
+            "description": "\n   The returned object contains two members: row and col.\n   If there is no such neighbor, null is returned."
           }
         ]
       },
@@ -348,15 +349,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the specified cell as part of the final backtrace."
+            "body": "<p>Mark the specified cell as part of the final backtrace.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Object}\nThe cell to be marked.  This object contains two members: row and\ncol.",
+            "body": "cell {Object}\n   The cell to be marked.  This object contains two members: row and\n   col.",
             "paramName": "cell",
-            "description": "\nThe cell to be marked.  This object contains two members: row and\ncol.",
+            "description": "\n   The cell to be marked.  This object contains two members: row and\n   col.",
             "type": "Object"
           }
         ],

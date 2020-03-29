@@ -23,15 +23,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2006 Derrell Lipman\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDerrell Lipman (derrell)\nAndreas Junghans (lucidcake)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2006 Derrell Lipman\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Derrell Lipman (derrell)\n Andreas Junghans (lucidcake)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Transports requests to a server using an IFRAME.\n\nThis class should not be used directly by client programmers.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Transports requests to a server using an IFRAME.\n This class should not be used directly by client programmers.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@asset": [
@@ -47,7 +47,7 @@
     "location": {
       "start": {
         "line": 52,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 90,
@@ -58,7 +58,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Capabilities of this transport type."
+            "body": "<p>Capabilities of this transport type.</p>"
           }
         ],
         "@internal": [
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns always true, because iframe transport is supported by all browsers."
+            "body": "<p>Returns always true, because iframe transport is supported by all browsers.</p>"
           }
         ],
         "@return": [
@@ -137,11 +137,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "For reference:\nhttp://msdn.microsoft.com/en-us/library/ie/ms534359%28v=vs.85%29.aspx"
+            "body": "<p>For reference:\n http://msdn.microsoft.com/en-us/library/ie/ms534359%28v=vs.85%29.aspx</p>"
           }
         ],
         "@internal": [
@@ -241,11 +241,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sends a request with the use of a form."
+            "body": "<p>Sends a request with the use of a form.</p>"
           }
         ]
       },
@@ -271,7 +271,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converting complete state to numeric value and update state property"
+            "body": "<p>Converting complete state to numeric value and update state property</p>"
           }
         ],
         "@signature": [
@@ -308,7 +308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converting named readyState to numeric value and update state property"
+            "body": "<p>Converting named readyState to numeric value and update state property</p>"
           }
         ],
         "@signature": [
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Switches the readystate by setting the internal state."
+            "body": "<p>Switches the readystate by setting the internal state.</p>"
           }
         ],
         "@param": [
@@ -376,11 +376,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUEST HEADER SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUEST HEADER SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets a request header with the given value.\n\nThis method is not implemented at the moment."
+            "body": "<p>Sets a request header with the given value.\n This method is not implemented at the moment.</p>"
           }
         ],
         "@param": [
@@ -422,11 +422,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESPONSE HEADER SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESPONSE HEADER SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the value of the given response header.\n\nThis method is not implemented at the moment and returns always \"null\"."
+            "body": "<p>Returns the value of the given response header.\n This method is not implemented at the moment and returns always \"null\".</p>"
           }
         ],
         "@param": [
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Provides an hash of all response headers.\n\nThis method is not implemented at the moment and returns an empty map."
+            "body": "<p>Provides an hash of all response headers.\n This method is not implemented at the moment and returns an empty map.</p>"
           }
         ],
         "@return": [
@@ -503,11 +503,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTATUS SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STATUS SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the current status code of the request if available or -1 if not.\nThis method needs implementation (returns always 200)."
+            "body": "<p>Returns the current status code of the request if available or -1 if not.\n This method needs implementation (returns always 200).</p>"
           }
         ],
         "@return": [
@@ -541,7 +541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Provides the status text for the current request if available and null otherwise.\nThis method needs implementation (returns always an empty string)"
+            "body": "<p>Provides the status text for the current request if available and null otherwise.\n This method needs implementation (returns always an empty string)</p>"
           }
         ],
         "@return": [
@@ -575,11 +575,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFRAME UTILITIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FRAME UTILITIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the DOM window object of the used iframe."
+            "body": "<p>Returns the DOM window object of the used iframe.</p>"
           }
         ],
         "@return": [
@@ -609,7 +609,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the document node of the used iframe."
+            "body": "<p>Returns the document node of the used iframe.</p>"
           }
         ],
         "@return": [
@@ -639,7 +639,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the body node of the used iframe."
+            "body": "<p>Returns the body node of the used iframe.</p>"
           }
         ],
         "@return": [
@@ -669,11 +669,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESPONSE DATA SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESPONSE DATA SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the iframe content (innerHTML) as text."
+            "body": "<p>Returns the iframe content (innerHTML) as text.</p>"
           }
         ],
         "@return": [
@@ -703,7 +703,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the iframe content as HTML."
+            "body": "<p>Returns the iframe content as HTML.</p>"
           }
         ],
         "@return": [
@@ -733,7 +733,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the length of the content as fetched thus far.\nThis method needs implementation (returns always 0)."
+            "body": "<p>Returns the length of the content as fetched thus far.\n This method needs implementation (returns always 0).</p>"
           }
         ],
         "@return": [
@@ -767,7 +767,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content of the response"
+            "body": "<p>Returns the content of the response</p>"
           }
         ],
         "@return": [
@@ -1689,7 +1689,7 @@
     "location": {
       "start": {
         "line": 612,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 617,
@@ -1700,7 +1700,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -1709,7 +1709,7 @@
     "location": {
       "start": {
         "line": 628,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 650,
@@ -1720,7 +1720,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

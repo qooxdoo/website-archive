@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Responsible for checking all relevant animation properties.\n\nSpec: http://www.w3.org/TR/css3-animations/"
+          "body": "<p>Responsible for checking all relevant animation properties.\n Spec: http://www.w3.org/TR/css3-animations/</p>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Main check method which returns an object if CSS animations are\nsupported. This object contains all necessary keys to work with CSS\nanimations.\n<ul>\n<li><code>name</code> The name of the css animation style</li>\n<li><code>play-state</code> The name of the play-state style</li>\n<li><code>start-event</code> The name of the start event</li>\n<li><code>iteration-event</code> The name of the iteration event</li>\n<li><code>end-event</code> The name of the end event</li>\n<li><code>fill-mode</code> The fill-mode style</li>\n<li><code>keyframes</code> The name of the keyframes selector.</li>\n</ul>"
+            "body": "<p>Main check method which returns an object if CSS animations are\n supported. This object contains all necessary keys to work with CSS\n animations.\n </p>\n<ul>\n  <li><code>name</code> The name of the css animation style</li>\n  <li><code>play-state</code> The name of the play-state style</li>\n  <li><code>start-event</code> The name of the start event</li>\n  <li><code>iteration-event</code> The name of the iteration event</li>\n  <li><code>end-event</code> The name of the end event</li>\n  <li><code>fill-mode</code> The fill-mode style</li>\n  <li><code>keyframes</code> The name of the keyframes selector.</li>\n </ul>"
           }
         ],
         "@internal": [
@@ -71,9 +71,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object|null} The described object or null, if animations are\nnot supported.",
+            "body": "{Object|null} The described object or null, if animations are\n   not supported.",
             "type": "Object|null",
-            "description": " The described object or null, if animations are\nnot supported."
+            "description": " The described object or null, if animations are\n   not supported."
           }
         ]
       },
@@ -95,7 +95,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the 'animation-fill-mode' CSS style."
+            "body": "<p>Checks for the 'animation-fill-mode' CSS style.</p>"
           }
         ],
         "@internal": [
@@ -107,9 +107,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The name of the style or null, if the style is\nnot supported.",
+            "body": "{String|null} The name of the style or null, if the style is\n   not supported.",
             "type": "String|null",
-            "description": " The name of the style or null, if the style is\nnot supported."
+            "description": " The name of the style or null, if the style is\n   not supported."
           }
         ]
       },
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the 'animation-play-state' CSS style."
+            "body": "<p>Checks for the 'animation-play-state' CSS style.</p>"
           }
         ],
         "@internal": [
@@ -143,9 +143,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The name of the style or null, if the style is\nnot supported.",
+            "body": "{String|null} The name of the style or null, if the style is\n   not supported.",
             "type": "String|null",
-            "description": " The name of the style or null, if the style is\nnot supported."
+            "description": " The name of the style or null, if the style is\n   not supported."
           }
         ]
       },
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the style name used for animations."
+            "body": "<p>Checks for the style name used for animations.</p>"
           }
         ],
         "@internal": [
@@ -179,9 +179,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The name of the style or null, if the style is\nnot supported.",
+            "body": "{String|null} The name of the style or null, if the style is\n   not supported.",
             "type": "String|null",
-            "description": " The name of the style or null, if the style is\nnot supported."
+            "description": " The name of the style or null, if the style is\n   not supported."
           }
         ]
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the event name of animation start."
+            "body": "<p>Checks for the event name of animation start.</p>"
           }
         ],
         "@internal": [
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the event name of animation end."
+            "body": "<p>Checks for the event name of animation end.</p>"
           }
         ],
         "@internal": [
@@ -275,7 +275,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the event name of animation end."
+            "body": "<p>Checks for the event name of animation end.</p>"
           }
         ],
         "@internal": [
@@ -311,7 +311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks what selector should be used to add keyframes to stylesheets."
+            "body": "<p>Checks what selector should be used to add keyframes to stylesheets.</p>"
           }
         ],
         "@internal": [
@@ -323,9 +323,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The name of the selector or null, if the selector\nis not supported.",
+            "body": "{String|null} The name of the selector or null, if the selector\n   is not supported.",
             "type": "String|null",
-            "description": " The name of the selector or null, if the selector\nis not supported."
+            "description": " The name of the selector or null, if the selector\n   is not supported."
           }
         ]
       },
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks for the requestAnimationFrame method and return the prefixed name."
+            "body": "<p>Checks for the requestAnimationFrame method and return the prefixed name.</p>"
           }
         ],
         "@internal": [
@@ -359,9 +359,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} A string the method name or null, if the method\nis not supported.",
+            "body": "{String|null} A string the method name or null, if the method\n   is not supported.",
             "type": "String|null",
-            "description": " A string the method name or null, if the method\nis not supported."
+            "description": " A string the method name or null, if the method\n   is not supported."
           }
         ]
       },
@@ -373,13 +373,14 @@
     "location": {
       "start": {
         "line": 217,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 220,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

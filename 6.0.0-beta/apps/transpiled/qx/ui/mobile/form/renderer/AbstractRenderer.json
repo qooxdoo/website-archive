@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nGabriel Munteanu (gabios)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Gabriel Munteanu (gabios)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "AbstractRenderer is an abstract class used to encapsulate\nbehaviours of how a form can be rendered into a mobile page.\nIts subclasses can extend it and override {@link #addItems} and {@link #addButton}\nmethods in order to customize the way the form gets into the DOM."
+          "body": "<p>AbstractRenderer is an abstract class used to encapsulate\n behaviours of how a form can be rendered into a mobile page.\n Its subclasses can extend it and override {@link #addItems} and {@link #addButton}\n methods in order to customize the way the form gets into the DOM.</p>"
         }
       ]
     }
@@ -40,7 +40,7 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -51,7 +51,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -130,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler responsible for updating the rendered widget as soon as the\nform changes."
+            "body": "<p>Handler responsible for updating the rendered widget as soon as the\n form changes.</p>"
           }
         ]
       },
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders the for: adds the items and buttons."
+            "body": "<p>Renders the for: adds the items and buttons.</p>"
           }
         ]
       },
@@ -174,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -211,9 +211,9 @@
           },
           {
             "name": "@param",
-            "body": "headerOptions {Map?null} The options map as defined by the form\nfor the current group header.",
+            "body": "headerOptions {Map?null} The options map as defined by the form\n   for the current group header.",
             "paramName": "headerOptions",
-            "description": " The options map as defined by the form\nfor the current group header.",
+            "description": " The options map as defined by the form\n   for the current group header.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -242,15 +242,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "button {qx.ui.form.Button} A button which should be added to\nthe form.",
+            "body": "button {qx.ui.form.Button} A button which should be added to\n   the form.",
             "paramName": "button",
-            "description": " A button which should be added to\nthe form.",
+            "description": " A button which should be added to\n   the form.",
             "type": "qx.ui.form.Button"
           },
           {
@@ -286,7 +286,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows an error to the user when a form element is in invalid state\nusually it prints an error message, so that user can rectify the filling of the form element."
+            "body": "<p>Shows an error to the user when a form element is in invalid state\n usually it prints an error message, so that user can rectify the filling of the form element.</p>"
           }
         ],
         "@param": [
@@ -317,7 +317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the errors for the form by removing any error messages\ninserted into DOM in the case of invalid form elements"
+            "body": "<p>Resets the errors for the form by removing any error messages\n inserted into DOM in the case of invalid form elements</p>"
           }
         ]
       },

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The JSON data store is responsible for fetching data from an url. The type\nof the data has to be json.\n\nThe loaded data will be parsed and saved in qooxdoo objects. Every value\nof the loaded data will be stored in a qooxdoo property. The model classes\nfor the data will be created automatically.\n\nFor the fetching itself it uses the {@link qx.io.request.Xhr} class and\nfor parsing the loaded javascript objects into qooxdoo objects, the\n{@link qx.data.marshal.Json} class will be used.\n\nPlease note that if you\n\n* upgrade from qooxdoo 1.4 or lower\n* choose not to force the old transport\n* use a delegate with qx.data.store.IStoreDelegate#configureRequest\n\nyou probably need to change the implementation of your delegate to configure\nthe {@link qx.io.request.Xhr} request.\n\nThis class only needs to be disposed if you want to abort any current I/O\nrequest"
+          "body": "<p>The JSON data store is responsible for fetching data from an url. The type\n of the data has to be json.\n The loaded data will be parsed and saved in qooxdoo objects. Every value\n of the loaded data will be stored in a qooxdoo property. The model classes\n for the data will be created automatically.\n For the fetching itself it uses the {@link qx.io.request.Xhr} class and\n for parsing the loaded javascript objects into qooxdoo objects, the\n {@link qx.data.marshal.Json} class will be used.\n Please note that if you</p>\n<ul>\n<li>upgrade from qooxdoo 1.4 or lower</li>\n<li>choose not to force the old transport</li>\n<li>use a delegate with qx.data.store.IStoreDelegate#configureRequest\nyou probably need to change the implementation of your delegate to configure\nthe {@link qx.io.request.Xhr} request.\nThis class only needs to be disposed if you want to abort any current I/O\nrequest</li>\n</ul>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 58,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 70,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "url {String|null} The url where to find the data. The store starts\nloading as soon as the URL is give. If you want to change some details\nconcerning the request, add null here and set the URL as soon as\neverything is set up.",
+          "body": "url {String|null} The url where to find the data. The store starts\n   loading as soon as the URL is give. If you want to change some details\n   concerning the request, add null here and set the URL as soon as\n   everything is set up.",
           "paramName": "url",
-          "description": " The url where to find the data. The store starts\nloading as soon as the URL is give. If you want to change some details\nconcerning the request, add null here and set the URL as soon as\neverything is set up.",
+          "description": " The url where to find the data. The store starts\n   loading as soon as the URL is give. If you want to change some details\n   concerning the request, add null here and set the URL as soon as\n   everything is set up.",
           "type": [
             "String",
             "null"
@@ -62,9 +62,9 @@
         },
         {
           "name": "@param",
-          "body": "delegate {Object?null} The delegate containing one of the methods\nspecified in {@link qx.data.store.IStoreDelegate}.",
+          "body": "delegate {Object?null} The delegate containing one of the methods\n   specified in {@link qx.data.store.IStoreDelegate}.",
           "paramName": "delegate",
-          "description": " The delegate containing one of the methods\nspecified in {@link qx.data.store.IStoreDelegate}.",
+          "description": " The delegate containing one of the methods\n   specified in {@link qx.data.store.IStoreDelegate}.",
           "optional": true,
           "defaultValue": "null",
           "type": "Object"
@@ -88,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data event fired after the model has been created. The data will be the\ncreated model."
+            "body": "<p>Data event fired after the model has been created. The data will be the\n created model.</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a parse error (i.e. broken JSON) occurred\nduring the load. The data contains a hash of the original\nresponse and the parser error (exception object)."
+            "body": "<p>Fired when a parse error (i.e. broken JSON) occurred\n during the load. The data contains a hash of the original\n response and the parser error (exception object).</p>"
           }
         ]
       },
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an error (aborted, timeout or failed) occurred\nduring the load. The data contains the response of the request.\nIf you want more details, use the {@link #changeState} event."
+            "body": "<p>Fired when an error (aborted, timeout or failed) occurred\n during the load. The data contains the response of the request.\n If you want more details, use the {@link #changeState} event.</p>"
           }
         ]
       },
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Property for holding the loaded model instance."
+            "body": "<p>Property for holding the loaded model instance.</p>"
           }
         ]
       },
@@ -181,7 +181,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The state of the request as an url. If you want to check if the request\ndid it’s job, use, the {@link #changeState} event and check for one of the\nlisted values."
+            "body": "<p>The state of the request as an url. If you want to check if the request\n did it’s job, use, the {@link #changeState} event and check for one of the\n listed values.</p>"
           }
         ]
       },
@@ -216,7 +216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The url where the request should go to."
+            "body": "<p>The url where the request should go to.</p>"
           }
         ]
       },
@@ -303,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "apply function"
+            "body": "<p>apply function</p>"
           }
         ]
       },
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get request"
+            "body": "<p>Get request</p>"
           }
         ],
         "@return": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set request."
+            "body": "<p>Set request.</p>"
           }
         ],
         "@param": [
@@ -389,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and sends a GET request with the given url.\n\nListeners will be added to respond to the request’s \"success\",\n\"changePhase\" and \"fail\" event."
+            "body": "<p>Creates and sends a GET request with the given url.\n Listeners will be added to respond to the request’s \"success\",\n \"changePhase\" and \"fail\" event.</p>"
           }
         ],
         "@param": [
@@ -420,7 +420,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler called when request phase changes.\n\nSets the store’s state."
+            "body": "<p>Handler called when request phase changes.\n Sets the store’s state.</p>"
           }
         ],
         "@param": [
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler called when not completing the request successfully."
+            "body": "<p>Handler called when not completing the request successfully.</p>"
           }
         ],
         "@param": [
@@ -482,15 +482,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler called when not completing the request successfully because\nof parse errors."
+            "body": "<p>Handler called when not completing the request successfully because\n of parse errors.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "ev {qx.event.type.Data} Hash map containing the original 'request'\nand the original parser 'error' exception object.",
+            "body": "ev {qx.event.type.Data} Hash map containing the original 'request'\n                                and the original parser 'error' exception object.",
             "paramName": "ev",
-            "description": " Hash map containing the original 'request'\nand the original parser 'error' exception object.",
+            "description": " Hash map containing the original 'request'\n                                and the original parser 'error' exception object.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -513,7 +513,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the completion of the requests. It invokes the creation of\nthe needed classes and instances for the fetched data using\n{@link qx.data.marshal.Json}."
+            "body": "<p>Handler for the completion of the requests. It invokes the creation of\n the needed classes and instances for the fetched data using\n {@link qx.data.marshal.Json}.</p>"
           }
         ],
         "@param": [
@@ -544,7 +544,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reloads the data with the url set in the {@link #url} property."
+            "body": "<p>Reloads the data with the url set in the {@link #url} property.</p>"
           }
         ]
       },
@@ -874,7 +874,7 @@
     "location": {
       "start": {
         "line": 333,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 343,
@@ -885,7 +885,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

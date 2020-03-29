@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The class is responsible for device detection. This is specially useful\nif you are on a mobile device.\n\nThis class is used by {@link qx.core.Environment} and should not be used\ndirectly. Please check its class comment for details how to use it."
+          "body": "<p>The class is responsible for device detection. This is specially useful\n if you are on a mobile device.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maps user agent names to device IDs"
+            "body": "<p>Maps user agent names to device IDs</p>"
           }
         ]
       },
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the name of the current device if detectable. It falls back to\n<code>pc</code> if the detection for other devices fails."
+            "body": "<p>Returns the name of the current device if detectable. It falls back to\n <code>pc</code> if the detection for other devices fails.</p>"
           }
         ],
         "@internal": [
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines on what type of device the application is running.\nValid values are: \"mobile\", \"tablet\" or \"desktop\"."
+            "body": "<p>Determines on what type of device the application is running.\n Valid values are: \"mobile\", \"tablet\" or \"desktop\".</p>"
           }
         ],
         "@return": [
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects the device type, based on given userAgentString."
+            "body": "<p>Detects the device type, based on given userAgentString.</p>"
           }
         ],
         "@param": [
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a device is a mobile phone. (Tablets excluded.)"
+            "body": "<p>Detects if a device is a mobile phone. (Tablets excluded.)</p>"
           }
         ],
         "@param": [
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a device is a tablet device."
+            "body": "<p>Detects if a device is a tablet device.</p>"
           }
         ],
         "@param": [
@@ -258,7 +258,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects the device's pixel ratio. Returns 1 if detection is not possible."
+            "body": "<p>Detects the device's pixel ratio. Returns 1 if detection is not possible.</p>"
           }
         ],
         "@return": [
@@ -288,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if either touch events or pointer events are supported.\nAdditionally it checks if touch is enabled for pointer events."
+            "body": "<p>Detects if either touch events or pointer events are supported.\n Additionally it checks if touch is enabled for pointer events.</p>"
           }
         ],
         "@return": [
@@ -308,13 +308,14 @@
     "location": {
       "start": {
         "line": 148,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 153,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

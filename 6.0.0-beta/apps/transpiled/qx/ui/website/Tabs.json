@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013-2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A row of buttons used to switch between connected pages. The buttons can be\nright- or left-aligned, or they can be justified, i.e. they will be stretched\nto fill the available width.\n\n<h2>Markup</h2>\nEach Tabs widget contains an unordered list element (<code>ul</code>), which\nwill be created if not already present.\nThe tabs are list items (<code>li</code>). Each tab can contain\na button with a <code>tabsPage</code> data attribute where the value is a\nCSS selector string identifying the corresponding page. Headers and pages\nwill not be created automatically. They can be predefined in the DOM before\nthe <code>q().tabs()</code> factory method is called, or added programmatically.\n\n<h2>CSS Classes</h2>\n<table>\n<thead>\n<tr>\n<td>Class Name</td>\n<td>Applied to</td>\n<td>Description</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>qx-tabs</code></td>\n<td>Container element</td>\n<td>Identifies the Tabs widget</td>\n</tr>\n<tr>\n<td><code>qx-tabs-horizontal</code></td>\n<td>Container element</td>\n<td>Styles the widget in horizontal orientation</td>\n</tr>\n<tr>\n<td><code>qx-tabs-vertical</code></td>\n<td>Container element</td>\n<td>Styles the widget in vertical orientation</td>\n</tr>\n<tr>\n<td><code>qx-tabs-container</code></td>\n<td>Tab page container (<code>div</code>)</td>\n<td>Styles the tab pages' container (horizontal orientation only)</td>\n</tr>\n<tr>\n<td><code>qx-flex-justify-end</code></td>\n<td>Tab container (<code>ul</code>)</td>\n<td>Browsers with flexbox support only: Styles the tab buttons when they are right-aligned</td>\n</tr>\n<tr>\n<td><code>qx-tabs-left</code></td>\n<td>Container element</td>\n<td>Internet Explorer < 10 only: Styles the tab buttons when they are left-aligned</td>\n</tr>\n<tr>\n<td><code>qx-tabs-justify</code></td>\n<td>Container element</td>\n<td>Internet Explorer < 10 only: Styles the tab buttons when they are stretched to fill out the available width</td>\n</tr>\n<tr>\n<td><code>qx-tabs-right</code></td>\n<td>Container element</td>\n<td>Internet Explorer < 10 only: Styles the tab buttons when they are right-aligned</td>\n</tr>\n<tr>\n<td><code>qx-tabs-button</code></td>\n<td>Tab button (<code>li</code>)</td>\n<td>Identifies and styles the tabs</td>\n</tr>\n<tr>\n<td><code>qx-tabs-button-active</code></td>\n<td>Tab button (<code>li</code>)</td>\n<td>Identifies and styles the currently selected tab. Applied in addition to <code>qx-tabs-button</code></td>\n</tr>\n<tr>\n<td><code>qx-flex-1</code></td>\n<td>Tab button (<code>li</code>)</td>\n<td>Browsers with flexbox support only: Styles the tab buttons when they are stretched to fill out the available width</td>\n</tr>\n<tr>\n<td><code>qx-tabs-page</code></td>\n<td>Tab page (<code>div</code> in horizontal mode, <code>li</code>)</td>\n<td>Styles the tab pages.</td>\n</tr>\n</tbody>\n</table>\n\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
+          "body": "<p>A row of buttons used to switch between connected pages. The buttons can be\n right- or left-aligned, or they can be justified, i.e. they will be stretched\n to fill the available width.\n </p>\n<h2>Markup</h2>\n<p>Each Tabs widget contains an unordered list element (<code>ul</code>), which\n will be created if not already present.\n The tabs are list items (<code>li</code>). Each tab can contain\n a button with a <code>tabsPage</code> data attribute where the value is a\n CSS selector string identifying the corresponding page. Headers and pages\n will not be created automatically. They can be predefined in the DOM before\n the <code>q().tabs()</code> factory method is called, or added programmatically.\n </p>\n<h2>CSS Classes</h2>\n<table>\n   <thead>\n     <tr>\n       <td>Class Name</td>\n       <td>Applied to</td>\n       <td>Description</td>\n     </tr>\n   </thead>\n   <tbody>\n     <tr>\n       <td><code>qx-tabs</code></td>\n       <td>Container element</td>\n       <td>Identifies the Tabs widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-horizontal</code></td>\n       <td>Container element</td>\n       <td>Styles the widget in horizontal orientation</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-vertical</code></td>\n       <td>Container element</td>\n       <td>Styles the widget in vertical orientation</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-container</code></td>\n       <td>Tab page container (<code>div</code>)</td>\n       <td>Styles the tab pages' container (horizontal orientation only)</td>\n     </tr>\n     <tr>\n       <td><code>qx-flex-justify-end</code></td>\n       <td>Tab container (<code>ul</code>)</td>\n       <td>Browsers with flexbox support only: Styles the tab buttons when they are right-aligned</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-left</code></td>\n       <td>Container element</td>\n       <td>Internet Explorer < 10 only: Styles the tab buttons when they are left-aligned</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-justify</code></td>\n       <td>Container element</td>\n       <td>Internet Explorer < 10 only: Styles the tab buttons when they are stretched to fill out the available width</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-right</code></td>\n       <td>Container element</td>\n       <td>Internet Explorer < 10 only: Styles the tab buttons when they are right-aligned</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-button</code></td>\n       <td>Tab button (<code>li</code>)</td>\n       <td>Identifies and styles the tabs</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-button-active</code></td>\n       <td>Tab button (<code>li</code>)</td>\n       <td>Identifies and styles the currently selected tab. Applied in addition to <code>qx-tabs-button</code></td>\n     </tr>\n     <tr>\n       <td><code>qx-flex-1</code></td>\n       <td>Tab button (<code>li</code>)</td>\n       <td>Browsers with flexbox support only: Styles the tab buttons when they are stretched to fill out the available width</td>\n     </tr>\n     <tr>\n       <td><code>qx-tabs-page</code></td>\n       <td>Tab page (<code>div</code> in horizontal mode, <code>li</code>)</td>\n       <td>Styles the tab pages.</td>\n     </tr>\n   </tbody>\n </table>\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\ntabs widgets."
+            "body": "<p>Factory method which converts the current collection into a collection of\n tabs widgets.</p>"
           }
         ],
         "@attach": [
@@ -79,9 +79,9 @@
           },
           {
             "name": "@param",
-            "body": "preselected {Integer?} The (zero-based) index of the tab that\nshould initially be selected. Default: <code>0</code>",
+            "body": "preselected {Integer?} The (zero-based) index of the tab that\n should initially be selected. Default: <code>0</code>",
             "paramName": "preselected",
-            "description": " The (zero-based) index of the tab that\nshould initially be selected. Default: <code>0</code>",
+            "description": " The (zero-based) index of the tab that\n should initially be selected. Default: <code>0</code>",
             "optional": true,
             "type": "Integer"
           },
@@ -121,7 +121,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*button*\n\nTemplate used by {@link #addButton} to create a new button.\n\nDefault value: <pre><li><button>{{{content}}}</button></li></pre>"
+            "body": "<p><em>button</em>\n Template used by {@link #addButton} to create a new button.\n Default value: <pre><li><button>{{{content}}}</button></li></pre></p>"
           }
         ]
       },
@@ -143,7 +143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*preselected*\nThe index of the page that should be opened after initial\nrendering, or <code>null</code> if no page should be opened.\n\nDefault value: <pre>0</pre>\n\n*align*\nConfiguration for the alignment of the tab buttons in horizontal\nmode. This possible values are <code>left</code>,\n<code>justify</code> and\n<code>right</code>\n\nDefault value: <pre>left</pre>\n\n*orientation*\nControls the layout of the widget. \"horizontal\" renders it as a\ntab bar appropriate for wide screens. \"vertical\" renders it as a\nstack of collapsible panes (sometimes called an accordion) that\nis better suited for narrow screens.\n\n*mediaQuery*\nA CSS media query string that will be used with a\nmedia query listener to dynamically set the widget's\norientation. The widget will be rendered in vertical mode unless\nthe query matches."
+            "body": "<p><em>preselected</em>\n The index of the page that should be opened after initial\n rendering, or <code>null</code> if no page should be opened.\n Default value: <pre>0</pre>\n<em>align</em>\n Configuration for the alignment of the tab buttons in horizontal\n mode. This possible values are <code>left</code>,\n <code>justify</code> and\n <code>right</code>\n Default value: <pre>left</pre>\n<em>orientation</em>\n Controls the layout of the widget. \"horizontal\" renders it as a\n tab bar appropriate for wide screens. \"vertical\" renders it as a\n stack of collapsible panes (sometimes called an accordion) that\n is better suited for narrow screens.\n<em>mediaQuery</em>\n A CSS media query string that will be used with a\n media query listener to dynamically set the widget's\n orientation. The widget will be rendered in vertical mode unless\n the query matches.</p>"
           }
         ]
       },
@@ -155,13 +155,14 @@
     "location": {
       "start": {
         "line": 199,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 201,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "changeSelected": {
@@ -179,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the selected page has changed. The value is\nthe newly selected page's index"
+            "body": "<p>Fired when the selected page has changed. The value is\n the newly selected page's index</p>"
           }
         ]
       },
@@ -273,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initiates a media query listener for dynamic orientation switching"
+            "body": "<p>Initiates a media query listener for dynamic orientation switching</p>"
           }
         ],
         "@param": [
@@ -288,9 +289,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The appropriate orientation: \"horizontal\" if the\nmedia query matches, \"vertical\" if it doesn't",
+            "body": "{String} The appropriate orientation: \"horizontal\" if the\n media query matches, \"vertical\" if it doesn't",
             "type": "String",
-            "description": " The appropriate orientation: \"horizontal\" if the\nmedia query matches, \"vertical\" if it doesn't"
+            "description": " The appropriate orientation: \"horizontal\" if the\n media query matches, \"vertical\" if it doesn't"
           }
         ]
       },
@@ -312,7 +313,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Render the widget in horizontal mode"
+            "body": "<p>Render the widget in horizontal mode</p>"
           }
         ],
         "@return": [
@@ -342,7 +343,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Render the widget in vertical mode"
+            "body": "<p>Render the widget in vertical mode</p>"
           }
         ],
         "@return": [
@@ -372,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Re-render on browser window resize (page heights must be re-\ncalculated)"
+            "body": "<p>Re-render on browser window resize (page heights must be re-\n calculated)</p>"
           }
         ]
       },
@@ -394,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new tab button"
+            "body": "<p>Adds a new tab button</p>"
           }
         ],
         "@param": [
@@ -440,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects a tab button"
+            "body": "<p>Selects a tab button</p>"
           }
         ],
         "@param": [
@@ -479,7 +480,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initiates the page switch when a button was clicked/tapped"
+            "body": "<p>Initiates the page switch when a button was clicked/tapped</p>"
           }
         ],
         "@param": [
@@ -510,7 +511,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Allows tab selection using the left and right arrow keys"
+            "body": "<p>Allows tab selection using the left and right arrow keys</p>"
           }
         ],
         "@param": [
@@ -541,7 +542,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initiates the page switch if a tab button is selected"
+            "body": "<p>Initiates the page switch if a tab button is selected</p>"
           }
         ],
         "@param": [
@@ -579,7 +580,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes a page switch"
+            "body": "<p>Executes a page switch</p>"
           }
         ],
         "@param": [
@@ -617,7 +618,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the tab page associated with the given button"
+            "body": "<p>Returns the tab page associated with the given button</p>"
           }
         ],
         "@param": [
@@ -656,7 +657,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply the CSS classes for the alignment"
+            "body": "<p>Apply the CSS classes for the alignment</p>"
           }
         ],
         "@param": [
@@ -687,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores the page's natural height for the page opening transition"
+            "body": "<p>Stores the page's natural height for the page opening transition</p>"
           }
         ],
         "@param": [
@@ -718,7 +719,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores an element's CSS transition styles in a property\nand removes them from the style declaration"
+            "body": "<p>Stores an element's CSS transition styles in a property\n and removes them from the style declaration</p>"
           }
         ],
         "@param": [
@@ -749,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restores an element's transition styles"
+            "body": "<p>Restores an element's transition styles</p>"
           }
         ],
         "@param": [
@@ -799,13 +800,14 @@
     "location": {
       "start": {
         "line": 820,
-        "column": 2
+        "column": 9
       },
       "end": {
         "line": 824,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.website.Accordion"

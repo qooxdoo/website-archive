@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is a base class for the OO system defined by Class, Mixin\nand Interface. It contains helper which are basically needed to create the\nClasses which define the OO system."
+          "body": "<p>This class is a base class for the OO system defined by Class, Mixin\n and Interface. It contains helper which are basically needed to create the\n Classes which define the OO system.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given class exists"
+            "body": "<p>Whether the given class exists</p>"
           }
         ],
         "@param": [
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the definition of the given property, if not redefined.\nReturns null if the property does not exist."
+            "body": "<p>Returns the definition of the given property, if not redefined.\n Returns null if the property does not exist.</p>"
           }
         ],
         "@param": [
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a class has the given property"
+            "body": "<p>Whether a class has the given property</p>"
           }
         ],
         "@param": [
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the event type of the given event. Returns null if\nthe event does not exist."
+            "body": "<p>Returns the event type of the given event. Returns null if\n the event does not exist.</p>"
           }
         ],
         "@param": [
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a class supports the given event type"
+            "body": "<p>Whether a class supports the given event type</p>"
           }
         ],
         "@param": [
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class or one of its super classes which contains the\ndeclaration of the given interface. Returns null if the interface is not\nspecified anywhere."
+            "body": "<p>Returns the class or one of its super classes which contains the\n declaration of the given interface. Returns null if the interface is not\n specified anywhere.</p>"
           }
         ],
         "@param": [
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a given class or any of its super classes includes a given interface.\n\nThis function will return \"true\" if the interface was defined\nin the class declaration ({@link qx.Class#define}) of the class\nor any of its super classes using the \"implement\"\nkey."
+            "body": "<p>Whether a given class or any of its super classes includes a given interface.\n This function will return \"true\" if the interface was defined\n in the class declaration ({@link qx.Class#define}) of the class\n or any of its super classes using the \"implement\"\n key.</p>"
           }
         ],
         "@param": [
@@ -362,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of all mixins available in a given class."
+            "body": "<p>Returns a list of all mixins available in a given class.</p>"
           }
         ],
         "@param": [

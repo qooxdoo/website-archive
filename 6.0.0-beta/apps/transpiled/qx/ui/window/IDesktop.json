@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "All parent widgets of windows must implement this interface."
+          "body": "<p>All parent widgets of windows must implement this interface.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the desktop's window manager"
+            "body": "<p>Sets the desktop's window manager</p>"
           }
         ],
         "@param": [
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all windows added to the desktop (including hidden windows)"
+            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
           }
         ],
         "@return": [
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the configured layout supports a maximized window\ne.g. is a Canvas."
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
@@ -138,15 +138,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block direct child widgets with a zIndex below <code>zIndex</code>"
+            "body": "<p>Block direct child widgets with a zIndex below <code>zIndex</code></p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "zIndex {Integer} All child widgets with a zIndex below this value\nwill be blocked",
+            "body": "zIndex {Integer} All child widgets with a zIndex below this value\n     will be blocked",
             "paramName": "zIndex",
-            "description": " All child widgets with a zIndex below this value\nwill be blocked",
+            "description": " All child widgets with a zIndex below this value\n     will be blocked",
             "type": "Integer"
           }
         ]
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the blocker."
+            "body": "<p>Remove the blocker.</p>"
           }
         ]
       },
@@ -191,7 +191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is currently blocked"
+            "body": "<p>Whether the widget is currently blocked</p>"
           }
         ],
         "@return": [

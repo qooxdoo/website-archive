@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAlexander Steitz (aback)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Alexander Steitz (aback)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Powerful creation and update features for images used for decoration\npurposes like for rounded borders, icons, etc.\n\nIncludes support for image clipping, PNG alpha channel support, additional\nrepeat options like <code>scale-x</code> or <code>scale-y</code>."
+          "body": "<p>Powerful creation and update features for images used for decoration\n purposes like for rounded borders, icons, etc.\n Includes support for image clipping, PNG alpha channel support, additional\n repeat options like <code>scale-x</code> or <code>scale-y</code>.</p>"
         }
       ]
     }
@@ -159,7 +159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the element to display the given source\nwith the repeat option."
+            "body": "<p>Updates the element to display the given source\n with the repeat option.</p>"
           }
         ],
         "@param": [
@@ -179,9 +179,9 @@
           },
           {
             "name": "@param",
-            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "paramName": "repeat",
-            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "type": "String"
           },
           {
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML for a decorator image element with the given options."
+            "body": "<p>Creates the HTML for a decorator image element with the given options.</p>"
           }
         ],
         "@param": [
@@ -224,9 +224,9 @@
           },
           {
             "name": "@param",
-            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "paramName": "repeat",
-            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "type": "String"
           },
           {
@@ -264,15 +264,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translates the given repeat option to a tag name. Useful\nfor systems which depends on early information of the tag\nname to prepare element like {@link qx.html.Image}."
+            "body": "<p>Translates the given repeat option to a tag name. Useful\n for systems which depends on early information of the tag\n name to prepare element like {@link qx.html.Image}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "body": "repeat {String} One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "paramName": "repeat",
-            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n<code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>repeat</code>",
+            "description": " One of <code>scale-x</code>, <code>scale-y</code>,\n   <code>scale</code>, <code>repeat</code>, <code>repeat-x</code>,\n   <code>repeat-y</code>, <code>repeat</code>",
             "type": "String"
           },
           {
@@ -312,7 +312,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is used to collect all needed attributes for\nthe tag name detected by {@link #getTagName}."
+            "body": "<p>This method is used to collect all needed attributes for\n the tag name detected by {@link #getTagName}.</p>"
           }
         ],
         "@param": [
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Normalize the given width and height values"
+            "body": "<p>Normalize the given width and height values</p>"
           }
         ],
         "@param": [
@@ -414,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the dimension of the image by calling\n{@link qx.util.ResourceManager} or {@link qx.io.ImageLoader}\ndepending on if the image is a managed one."
+            "body": "<p>Returns the dimension of the image by calling\n {@link qx.util.ResourceManager} or {@link qx.io.ImageLoader}\n depending on if the image is a managed one.</p>"
           }
         ],
         "@param": [
@@ -453,7 +453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all styles for IE browser which need to load the image\nwith the help of the AlphaImageLoader"
+            "body": "<p>Get all styles for IE browser which need to load the image\n with the help of the AlphaImageLoader</p>"
           }
         ],
         "@param": [
@@ -506,7 +506,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Process scaled images."
+            "body": "<p>Process scaled images.</p>"
           }
         ],
         "@param": [
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Process images which are either scaled horizontally or\nvertically."
+            "body": "<p>Process images which are either scaled horizontally or\n vertically.</p>"
           }
         ],
         "@param": [
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates the style infos for horizontally scaled clipped images."
+            "body": "<p>Generates the style infos for horizontally scaled clipped images.</p>"
           }
         ],
         "@param": [
@@ -665,7 +665,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates the style infos for vertically scaled clipped images."
+            "body": "<p>Generates the style infos for vertically scaled clipped images.</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Process repeated images."
+            "body": "<p>Process repeated images.</p>"
           }
         ],
         "@param": [
@@ -771,7 +771,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generate all style infos for single repeated images"
+            "body": "<p>Generate all style infos for single repeated images</p>"
           }
         ],
         "@param": [
@@ -816,7 +816,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Output a warning if the image can be clipped."
+            "body": "<p>Output a warning if the image can be clipped.</p>"
           }
         ],
         "@param": [

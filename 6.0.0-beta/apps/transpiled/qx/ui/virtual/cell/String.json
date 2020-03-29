@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 23,
+        "line": 19,
         "column": 0
       },
       "end": {
-        "line": 69,
+        "line": 65,
         "column": 3
       }
     },
@@ -21,11 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
-        },
-        {
-          "name": "@description",
-          "body": "EXPERIMENTAL!"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         }
       ]
     }
@@ -34,24 +30,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 27,
-        "column": 2
+        "line": 23,
+        "column": 14
       },
       "end": {
-        "line": 30,
+        "line": 26,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "appearance": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 41,
           "column": 5
         }
       },
@@ -70,11 +67,11 @@
     "getContent": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 62,
           "column": 5
         }
       },
@@ -82,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMPLEMENT CELL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IMPLEMENT CELL API\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ],
         "@param": [

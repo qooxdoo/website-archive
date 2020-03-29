@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a calendar widget used to select a date. It contain a set of\nbuttons to switch to the next or previous month as well as a button for\neach day in the month.\n\n<h2>CSS Classes</h2>\n<table>\n<thead>\n<tr>\n<td>Class Name</td>\n<td>Applied to</td>\n<td>Description</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>qx-calendar</code></td>\n<td>Container element</td>\n<td>Identifies the Calendar widget</td>\n</tr>\n<tr>\n<td><code>qx-calendar-container</code></td>\n<td>Container element (<code>table</code>)</td>\n<td>Identifies the table container of the Calendar widget</td>\n</tr>\n<tr>\n<td><code>qx-calendar-prev</code></td>\n<td><code>button</code></td>\n<td>Identifies and styles the \"previous month\" button</td>\n</tr>\n<tr>\n<td><code>qx-calendar-prev-container</code></td>\n<td>Container element (<code>td</code>)</td>\n<td>Identifies and styles the \"previous month\" container</td>\n</tr>\n<tr>\n<td><code>qx-calendar-next</code></td>\n<td><code>button</code></td>\n<td>Identifies and styles the \"next month\" button</td>\n</tr>\n<tr>\n<td><code>qx-calendar-next-container</code></td>\n<td>Container element (<code>td</code>)</td>\n<td>Identifies and styles the \"next month\" container</td>\n</tr>\n<tr>\n<td><code>qx-calendar-previous-month</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles calendar cells for days from the previous month</td>\n</tr>\n<tr>\n<td><code>qx-calendar-next-month</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles calendar cells for days from the next month</td>\n</tr>\n<tr>\n<td><code>qx-calendar-dayname</code></td>\n<td>Day name (<code>td</code>)</td>\n<td>Identifies and styles the day name cell</td>\n</tr>\n<tr>\n<td><code>qx-calendar-day</code></td>\n<td>Day (<code>button</code>)</td>\n<td>Identifies and styles the day buttons</td>\n</tr>\n<tr>\n<td><code>qx-calendar-weekday</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles the weekday cells</td>\n</tr>\n<tr>\n<td><code>qx-calendar-weekend</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles the weekend cells</td>\n</tr>\n<tr>\n<td><code>qx-calendar-selected</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles the cell containing the selected day's button</td>\n</tr>\n<tr>\n<td><code>qx-calendar-today</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles the cell containing the current day button</td>\n</tr>\n<tr>\n<td><code>qx-calendar-past</code></td>\n<td>Day cell (<code>td</code>)</td>\n<td>Identifies and styles all cells containing day buttons in the past</td>\n</tr>\n<tr>\n<td><code>qx-hidden</code></td>\n<td>Day (<code>button</code>)</td>\n<td>Added to days of previous / next month if the configuration <code>hideDaysOtherMonth</code>\nis set to <code>true</code> <br /> The default style property used is <code>visibility: hidden</code>\n</td>\n</tr>\n</tbody>\n</table>\n\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
+          "body": "<p>This is a calendar widget used to select a date. It contain a set of\n buttons to switch to the next or previous month as well as a button for\n each day in the month.\n </p>\n<h2>CSS Classes</h2>\n<table>\n   <thead>\n     <tr>\n       <td>Class Name</td>\n       <td>Applied to</td>\n       <td>Description</td>\n     </tr>\n   </thead>\n   <tbody>\n     <tr>\n       <td><code>qx-calendar</code></td>\n       <td>Container element</td>\n       <td>Identifies the Calendar widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-container</code></td>\n       <td>Container element (<code>table</code>)</td>\n       <td>Identifies the table container of the Calendar widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-prev</code></td>\n       <td><code>button</code></td>\n       <td>Identifies and styles the \"previous month\" button</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-prev-container</code></td>\n       <td>Container element (<code>td</code>)</td>\n       <td>Identifies and styles the \"previous month\" container</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-next</code></td>\n       <td><code>button</code></td>\n       <td>Identifies and styles the \"next month\" button</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-next-container</code></td>\n       <td>Container element (<code>td</code>)</td>\n       <td>Identifies and styles the \"next month\" container</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-previous-month</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles calendar cells for days from the previous month</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-next-month</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles calendar cells for days from the next month</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-dayname</code></td>\n       <td>Day name (<code>td</code>)</td>\n       <td>Identifies and styles the day name cell</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-day</code></td>\n       <td>Day (<code>button</code>)</td>\n       <td>Identifies and styles the day buttons</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-weekday</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles the weekday cells</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-weekend</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles the weekend cells</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-selected</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles the cell containing the selected day's button</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-today</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles the cell containing the current day button</td>\n     </tr>\n     <tr>\n       <td><code>qx-calendar-past</code></td>\n       <td>Day cell (<code>td</code>)</td>\n       <td>Identifies and styles all cells containing day buttons in the past</td>\n     </tr>\n     <tr>\n       <td><code>qx-hidden</code></td>\n       <td>Day (<code>button</code>)</td>\n       <td>Added to days of previous / next month if the configuration <code>hideDaysOtherMonth</code>\n             is set to <code>true</code> <br /> The default style property used is <code>visibility: hidden</code>\n         </td>\n     </tr>\n   </tbody>\n </table>\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*controls*\n\nTemplate for the controls. This should be a <code>tr</code> tag containing\nthe first row of the calendar.\n\nDefault value:\n<pre><tr>\n<td colspan='1' class='{{cssPrefix}}-prev-container'><button class='{{cssPrefix}}-prev' title='Previous Month'>&lt;</button></td>\n<td colspan='5'>{{month}} {{year}}</td>\n<td colspan='1' class='{{cssPrefix}}-next-container'><button class='{{cssPrefix}}-next' title='Next Month'>&gt;</button></td>\n</tr></pre>\n\n\n*dayRow*\n\nTemplate for the row of each day. This should be a tr tag containing the day names.\n\nDefault value:\n<pre><tr>\n{{#row}}<td class='{{cssPrefix}}-dayname'>{{.}}</td>{{/row}}\n</tr></pre>\n\n\n*row*\n\nTemplate for the row of days. This should be a <code>tr</code> tag containing\na <code>button</code> for each day.\n\nDefault value:\n<pre><tr>\n{{#row}}<td class='{{cssClass}}'>\n<button class='{{cssPrefix}}-day {{hidden}}' value='{{date}}'>{{day}}</button>\n</td>{{/row}}\n</tr></pre>\n\n\n*table*\n\nWrapper template for all other templates. This should be a table.\n\nDefault value:\n<pre><table class='{{cssPrefix}}-container'><thead>{{{thead}}}</thead><tbody>{{{tbody}}}</tbody></table></pre>"
+            "body": "<p><em>controls</em>\n Template for the controls. This should be a <code>tr</code> tag containing\n the first row of the calendar.\n Default value:\n </p>\n<pre><tr>\n  <td colspan='1' class='{{cssPrefix}}-prev-container'><button class='{{cssPrefix}}-prev' title='Previous Month'>&lt;</button></td>\n  <td colspan='5'>{{month}} {{year}}</td>\n  <td colspan='1' class='{{cssPrefix}}-next-container'><button class='{{cssPrefix}}-next' title='Next Month'>&gt;</button></td>\n </tr></pre>\n<p><em>dayRow</em>\n Template for the row of each day. This should be a tr tag containing the day names.\n Default value:\n </p>\n<pre><tr>\n  {{#row}}<td class='{{cssPrefix}}-dayname'>{{.}}</td>{{/row}}\n </tr></pre>\n<p><em>row</em>\n Template for the row of days. This should be a <code>tr</code> tag containing\n a <code>button</code> for each day.\n Default value:\n </p>\n<pre><tr>\n   {{#row}}<td class='{{cssClass}}'>\n     <button class='{{cssPrefix}}-day {{hidden}}' value='{{date}}'>{{day}}</button>\n   </td>{{/row}}\n </tr></pre>\n<p><em>table</em>\n Wrapper template for all other templates. This should be a table.\n Default value:\n </p>\n<pre><table class='{{cssPrefix}}-container'><thead>{{{thead}}}</thead><tbody>{{{tbody}}}</tbody></table></pre>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*monthNames*\n\nArray of strings containing the names of the month.\n\nDefault value:\n<pre>[\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n\"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]</pre>\n\n\n*dayNames*\n\nArray of strings containing the day names.\n\nDefault values:\n<pre>[\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"]</pre>\n\n*minDate*\n\nEarliest user-selectable date (<code>Date</code> object). Default: <code>null</code> (no restriction).\n\n*maxDate*\n\nLatest user-selectable date (<code>Date</code> object). Default: <code>null</code> (no restriction).\n\n*selectableWeekDays*\n\nArray of user-selectable week days (Sunday is 0). Default: <code>[0, 1, 2, 3, 4, 5, 6]</code> (no restrictions).\n\n*selectionMode*\n\nThe Selection mode the calendar will use. Possible values are 'single' and 'range' . Default: <code>single</code>\n\n*hideDaysOtherMonth*\n\nHide all days of the previous/next month. If the entire last row of the calendar are days of\nthe next month the whole row is not rendered. Default: <code>false</code> <br /> <br />\n<strong>Important: </strong>If you like to have a <em>mixed</em> mode like displaying the days\nof the previous month and hiding the days of the next month you should work with the\n<code>rendered</code> event to manipulate the DOM nodes after the rendering. Take a look at\nthe samples to get a idea of it.\n\n*disableDaysOtherMonth*\n\nDisable all days of the previous/next month. The days are visible, but are not responding to\nuser input. Default: <code>false</code>"
+            "body": "<p><em>monthNames</em>\n Array of strings containing the names of the month.\n Default value:\n </p>\n<pre>[\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n  \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]</pre>\n<p><em>dayNames</em>\n Array of strings containing the day names.\n Default values:\n </p>\n<pre>[\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"]</pre>\n<p><em>minDate</em>\n Earliest user-selectable date (<code>Date</code> object). Default: <code>null</code> (no restriction).\n<em>maxDate</em>\n Latest user-selectable date (<code>Date</code> object). Default: <code>null</code> (no restriction).\n<em>selectableWeekDays</em>\n Array of user-selectable week days (Sunday is 0). Default: <code>[0, 1, 2, 3, 4, 5, 6]</code> (no restrictions).\n<em>selectionMode</em>\n The Selection mode the calendar will use. Possible values are 'single' and 'range' . Default: <code>single</code>\n<em>hideDaysOtherMonth</em>\n Hide all days of the previous/next month. If the entire last row of the calendar are days of\n the next month the whole row is not rendered. Default: <code>false</code> <br /> <br />\n <strong>Important: </strong>If you like to have a <em>mixed</em> mode like displaying the days\n of the previous month and hiding the days of the next month you should work with the\n <code>rendered</code> event to manipulate the DOM nodes after the rendering. Take a look at\n the samples to get a idea of it.\n<em>disableDaysOtherMonth</em>\n Disable all days of the previous/next month. The days are visible, but are not responding to\n user input. Default: <code>false</code></p>"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\nCalendar widgets. Therefore, an initialization process needs to be done which\ncan be configured with some parameter."
+            "body": "<p>Factory method which converts the current collection into a collection of\n Calendar widgets. Therefore, an initialization process needs to be done which\n can be configured with some parameter.</p>"
           }
         ],
         "@param": [
@@ -140,13 +140,14 @@
     "location": {
       "start": {
         "line": 271,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 273,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "changeValue": {
@@ -164,7 +165,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired at each value change"
+            "body": "<p>Fired at each value change</p>"
           }
         ]
       },
@@ -186,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired whenvever a render process finished. This event can be used as hook to add\ncustom markup and/or manipulate existing."
+            "body": "<p>Fired whenvever a render process finished. This event can be used as hook to add\n        custom markup and/or manipulate existing.</p>"
           }
         ]
       },
@@ -252,7 +253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -286,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -320,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -363,7 +364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the given date as the current value displays it"
+            "body": "<p>Sets the given date as the current value displays it</p>"
           }
         ],
         "@param": [
@@ -405,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected date of the first\ncalendar widget in the collection."
+            "body": "<p>Returns the currently selected date of the first\n calendar widget in the collection.</p>"
           }
         ],
         "@return": [
@@ -435,7 +436,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Displays the given date"
+            "body": "<p>Displays the given date</p>"
           }
         ],
         "@param": [
@@ -474,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Displays the previous month"
+            "body": "<p>Displays the previous month</p>"
           }
         ]
       },
@@ -496,7 +497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Displays the next month"
+            "body": "<p>Displays the next month</p>"
           }
         ]
       },
@@ -518,7 +519,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the current value to the day selected by the user"
+            "body": "<p>Sets the current value to the day selected by the user</p>"
           }
         ],
         "@param": [
@@ -549,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders the calendar for the given date."
+            "body": "<p>Renders the calendar for the given date.</p>"
           }
         ],
         "@param": [
@@ -588,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the month and year to be displayed in the calendar controls."
+            "body": "<p>Returns the month and year to be displayed in the calendar controls.</p>"
           }
         ],
         "@param": [
@@ -627,7 +628,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the week day names to be displayed in the calendar."
+            "body": "<p>Returns the week day names to be displayed in the calendar.</p>"
           }
         ],
         "@return": [
@@ -657,7 +658,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the table rows displaying the days of the month."
+            "body": "<p>Returns the table rows displaying the days of the month.</p>"
           }
         ],
         "@param": [
@@ -696,7 +697,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a date instance for the first visible day to be displayed"
+            "body": "<p>Returns a date instance for the first visible day to be displayed</p>"
           }
         ],
         "@param": [
@@ -735,7 +736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a Date object with hours, minutes and seconds set to 0\nto facilitate date comparisons."
+            "body": "<p>Returns a Date object with hours, minutes and seconds set to 0\n to facilitate date comparisons.</p>"
           }
         ],
         "@param": [
@@ -774,7 +775,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attaches the keydown listener."
+            "body": "<p>Attaches the keydown listener.</p>"
           }
         ],
         "@param": [
@@ -805,7 +806,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the keydown listener if the focus moves outside of the calendar."
+            "body": "<p>Removes the keydown listener if the focus moves outside of the calendar.</p>"
           }
         ],
         "@param": [
@@ -836,7 +837,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Keyboard handling."
+            "body": "<p>Keyboard handling.</p>"
           }
         ],
         "@param": [
@@ -867,7 +868,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focuses the day button following the given one."
+            "body": "<p>Focuses the day button following the given one.</p>"
           }
         ],
         "@param": [
@@ -898,7 +899,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focuses the day button preceding the given one."
+            "body": "<p>Focuses the day button preceding the given one.</p>"
           }
         ],
         "@param": [
@@ -929,7 +930,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates a date list depending on the given range"
+            "body": "<p>Generates a date list depending on the given range</p>"
           }
         ],
         "@param": [
@@ -987,13 +988,14 @@
     "location": {
       "start": {
         "line": 903,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 905,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

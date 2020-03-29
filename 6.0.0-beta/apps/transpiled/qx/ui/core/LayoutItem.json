@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1048,
+        "line": 1051,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The base class of all items, which should be laid out using a layout manager\n{@link qx.ui.layout.Abstract}."
+          "body": "<p>The base class of all items, which should be laid out using a layout manager\n {@link qx.ui.layout.Abstract}.</p>"
         }
       ]
     }
@@ -38,13 +38,14 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 36,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "minWidth": {
@@ -62,11 +63,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDIMENSION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DIMENSION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The user provided minimal width.\n\nAlso take a look at the related properties {@link #width} and {@link #maxWidth}."
+            "body": "<p>The user provided minimal width.\n Also take a look at the related properties {@link #width} and {@link #maxWidth}.</p>"
           }
         ]
       },
@@ -93,7 +94,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The <code>LayoutItem</code>'s preferred width.\n\nThe computed width may differ from the given width due to\nstretching. Also take a look at the related properties\n{@link #minWidth} and {@link #maxWidth}."
+            "body": "<p>The <code>LayoutItem</code>'s preferred width.\n The computed width may differ from the given width due to\n stretching. Also take a look at the related properties\n {@link #minWidth} and {@link #maxWidth}.</p>"
           }
         ]
       },
@@ -121,7 +122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The user provided maximal width.\n\nAlso take a look at the related properties {@link #width} and {@link #minWidth}."
+            "body": "<p>The user provided maximal width.\n Also take a look at the related properties {@link #width} and {@link #minWidth}.</p>"
           }
         ]
       },
@@ -148,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The user provided minimal height.\n\nAlso take a look at the related properties {@link #height} and {@link #maxHeight}."
+            "body": "<p>The user provided minimal height.\n Also take a look at the related properties {@link #height} and {@link #maxHeight}.</p>"
           }
         ]
       },
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The item's preferred height.\n\nThe computed height may differ from the given height due to\nstretching. Also take a look at the related properties\n{@link #minHeight} and {@link #maxHeight}."
+            "body": "<p>The item's preferred height.\n The computed height may differ from the given height due to\n stretching. Also take a look at the related properties\n {@link #minHeight} and {@link #maxHeight}.</p>"
           }
         ]
       },
@@ -203,7 +204,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The user provided maximum height.\n\nAlso take a look at the related properties {@link #height} and {@link #minHeight}."
+            "body": "<p>The user provided maximum height.\n Also take a look at the related properties {@link #height} and {@link #minHeight}.</p>"
           }
         ]
       },
@@ -230,11 +231,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTRETCHING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STRETCHING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether the item can grow horizontally."
+            "body": "<p>Whether the item can grow horizontally.</p>"
           }
         ]
       },
@@ -261,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item can shrink horizontally."
+            "body": "<p>Whether the item can shrink horizontally.</p>"
           }
         ]
       },
@@ -288,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item can grow vertically."
+            "body": "<p>Whether the item can grow vertically.</p>"
           }
         ]
       },
@@ -315,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item can shrink vertically."
+            "body": "<p>Whether the item can shrink vertically.</p>"
           }
         ]
       },
@@ -342,7 +343,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Growing and shrinking in the horizontal direction"
+            "body": "<p>Growing and shrinking in the horizontal direction</p>"
           }
         ]
       },
@@ -369,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Growing and shrinking in the vertical direction"
+            "body": "<p>Growing and shrinking in the vertical direction</p>"
           }
         ]
       },
@@ -396,11 +397,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMARGIN\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MARGIN\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Margin of the widget (top)"
+            "body": "<p>Margin of the widget (top)</p>"
           }
         ]
       },
@@ -427,7 +428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Margin of the widget (right)"
+            "body": "<p>Margin of the widget (right)</p>"
           }
         ]
       },
@@ -454,7 +455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Margin of the widget (bottom)"
+            "body": "<p>Margin of the widget (bottom)</p>"
           }
         ]
       },
@@ -481,7 +482,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Margin of the widget (left)"
+            "body": "<p>Margin of the widget (left)</p>"
           }
         ]
       },
@@ -508,7 +509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The 'margin' property is a shorthand property for setting 'marginTop',\n'marginRight', 'marginBottom' and 'marginLeft' at the same time.\n\nIf four values are specified they apply to top, right, bottom and left respectively.\nIf there is only one value, it applies to all sides, if there are two or three,\nthe missing values are taken from the opposite side."
+            "body": "<p>The 'margin' property is a shorthand property for setting 'marginTop',\n 'marginRight', 'marginBottom' and 'marginLeft' at the same time.\n If four values are specified they apply to top, right, bottom and left respectively.\n If there is only one value, it applies to all sides, if there are two or three,\n the missing values are taken from the opposite side.</p>"
           }
         ]
       },
@@ -537,11 +538,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nALIGN\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ALIGN\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Horizontal alignment of the item in the parent layout.\n\nNote: Item alignment is only supported by {@link LayoutItem} layouts where\nit would have a visual effect. Except for {@link Spacer}, which provides\nblank space for layouts, all classes that inherit {@link LayoutItem} support alignment."
+            "body": "<p>Horizontal alignment of the item in the parent layout.\n Note: Item alignment is only supported by {@link LayoutItem} layouts where\n it would have a visual effect. Except for {@link Spacer}, which provides\n blank space for layouts, all classes that inherit {@link LayoutItem} support alignment.</p>"
           }
         ]
       },
@@ -572,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Vertical alignment of the item in the parent layout.\n\nNote: Item alignment is only supported by {@link LayoutItem} layouts where\nit would have a visual effect. Except for {@link Spacer}, which provides\nblank space for layouts, all classes that inherit {@link LayoutItem} support alignment."
+            "body": "<p>Vertical alignment of the item in the parent layout.\n Note: Item alignment is only supported by {@link LayoutItem} layouts where\n it would have a visual effect. Except for {@link Spacer}, which provides\n blank space for layouts, all classes that inherit {@link LayoutItem} support alignment.</p>"
           }
         ]
       },
@@ -622,11 +623,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDYNAMIC THEME SWITCH SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DYNAMIC THEME SWITCH SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for the dynamic theme change."
+            "body": "<p>Handler for the dynamic theme change.</p>"
           }
         ],
         "@signature": [
@@ -654,7 +655,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT PROCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT PROCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -854,15 +855,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the computed location and dimension as computed by\nthe layout manager."
+            "body": "<p>Get the computed location and dimension as computed by\n the layout manager.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map|null} The location and dimensions in pixel\n(if the layout is valid). Contains the keys\n<code>width</code>, <code>height</code>, <code>left</code> and\n<code>top</code>.",
+            "body": "{Map|null} The location and dimensions in pixel\n    (if the layout is valid). Contains the keys\n    <code>width</code>, <code>height</code>, <code>left</code> and\n    <code>top</code>.",
             "type": "Map|null",
-            "description": " The location and dimensions in pixel\n(if the layout is valid). Contains the keys\n<code>width</code>, <code>height</code>, <code>left</code> and\n<code>top</code>."
+            "description": " The location and dimensions in pixel\n    (if the layout is valid). Contains the keys\n    <code>width</code>, <code>height</code>, <code>left</code> and\n    <code>top</code>."
           }
         ]
       },
@@ -884,7 +885,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reconfigure number of separators"
+            "body": "<p>Reconfigure number of separators</p>"
           }
         ]
       },
@@ -906,7 +907,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders a separator between two children"
+            "body": "<p>Renders a separator between two children</p>"
           }
         ],
         "@param": [
@@ -922,9 +923,9 @@
           },
           {
             "name": "@param",
-            "body": "bounds {Map} Contains the left and top coordinate and the width and height\nof the separator to render.",
+            "body": "bounds {Map} Contains the left and top coordinate and the width and height\n    of the separator to render.",
             "paramName": "bounds",
-            "description": " Contains the left and top coordinate and the width and height\nof the separator to render.",
+            "description": " Contains the left and top coordinate and the width and height\n    of the separator to render.",
             "type": "Map"
           }
         ]
@@ -939,7 +940,7 @@
           "column": 4
         },
         "end": {
-          "line": 521,
+          "line": 524,
           "column": 5
         }
       },
@@ -947,36 +948,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Used by the layout engine to apply coordinates and dimensions."
+            "body": "<p>Used by the layout engine to apply coordinates and dimensions.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -995,11 +996,11 @@
     "isExcluded": {
       "location": {
         "start": {
-          "line": 529,
+          "line": 532,
           "column": 4
         },
         "end": {
-          "line": 531,
+          "line": 534,
           "column": 5
         }
       },
@@ -1007,7 +1008,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item should be excluded from the layout"
+            "body": "<p>Whether the item should be excluded from the layout</p>"
           }
         ],
         "@return": [
@@ -1025,11 +1026,11 @@
     "hasValidLayout": {
       "location": {
         "start": {
-          "line": 540,
+          "line": 543,
           "column": 4
         },
         "end": {
-          "line": 542,
+          "line": 545,
           "column": 5
         }
       },
@@ -1037,7 +1038,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the layout of this item (to layout the children)\nis valid."
+            "body": "<p>Whether the layout of this item (to layout the children)\n is valid.</p>"
           }
         ],
         "@return": [
@@ -1055,11 +1056,11 @@
     "scheduleLayoutUpdate": {
       "location": {
         "start": {
-          "line": 550,
+          "line": 553,
           "column": 4
         },
         "end": {
-          "line": 552,
+          "line": 555,
           "column": 5
         }
       },
@@ -1067,7 +1068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicate that the item has layout changes and propagate this information\nup the item hierarchy."
+            "body": "<p>Indicate that the item has layout changes and propagate this information\n up the item hierarchy.</p>"
           }
         ]
       },
@@ -1077,11 +1078,11 @@
     "invalidateLayoutCache": {
       "location": {
         "start": {
-          "line": 559,
+          "line": 562,
           "column": 4
         },
         "end": {
-          "line": 565,
+          "line": 568,
           "column": 5
         }
       },
@@ -1089,7 +1090,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called by the layout manager to mark this item's layout as invalid.\nThis function should clear all layout relevant caches."
+            "body": "<p>Called by the layout manager to mark this item's layout as invalid.\n This function should clear all layout relevant caches.</p>"
           }
         ]
       },
@@ -1099,11 +1100,11 @@
     "getSizeHint": {
       "location": {
         "start": {
-          "line": 597,
+          "line": 600,
           "column": 4
         },
         "end": {
-          "line": 651,
+          "line": 654,
           "column": 5
         }
       },
@@ -1111,15 +1112,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A size hint computes the dimensions of a widget. It returns\nthe recommended dimensions as well as the min and max dimensions.\nThe min and max values already respect the stretching properties.\n\n<h3>Wording</h3>\n<ul>\n<li>User value: Value defined by the widget user, using the size properties</li>\n\n<li>Layout value: The value computed by {@link qx.ui.core.Widget#_getContentHint}</li>\n</ul>\n\n<h3>Algorithm</h3>\n<ul>\n<li>minSize: If the user min size is not null, the user value is taken,\notherwise the layout value is used.</li>\n\n<li>(preferred) size: If the user value is not null the user value is used,\notherwise the layout value is used.</li>\n\n<li>max size: Same as the preferred size.</li>\n</ul>"
+            "body": "<p>A size hint computes the dimensions of a widget. It returns\n the recommended dimensions as well as the min and max dimensions.\n The min and max values already respect the stretching properties.\n </p>\n<h3>Wording</h3>\n<ul>\n <li>User value: Value defined by the widget user, using the size properties</li>\n <li>Layout value: The value computed by {@link qx.ui.core.Widget#_getContentHint}</li>\n </ul>\n<h3>Algorithm</h3>\n<ul>\n <li>minSize: If the user min size is not null, the user value is taken,\n     otherwise the layout value is used.</li>\n <li>(preferred) size: If the user value is not null the user value is used,\n     otherwise the layout value is used.</li>\n <li>max size: Same as the preferred size.</li>\n </ul>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "compute {Boolean?true} Automatically compute size hint if currently not\ncached?",
+            "body": "compute {Boolean?true} Automatically compute size hint if currently not\n   cached?",
             "paramName": "compute",
-            "description": " Automatically compute size hint if currently not\ncached?",
+            "description": " Automatically compute size hint if currently not\n   cached?",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -1128,9 +1129,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values in cases where shrinking or growing\nis required.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values in cases where shrinking or growing\n   is required.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values in cases where shrinking or growing\nis required."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values in cases where shrinking or growing\n   is required."
           }
         ]
       },
@@ -1140,11 +1141,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 660,
+          "line": 663,
           "column": 4
         },
         "end": {
-          "line": 679,
+          "line": 682,
           "column": 5
         }
       },
@@ -1152,15 +1153,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the size hint of the layout item."
+            "body": "<p>Computes the size hint of the layout item.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -1170,11 +1171,11 @@
     "_hasHeightForWidth": {
       "location": {
         "start": {
-          "line": 687,
+          "line": 690,
           "column": 4
         },
         "end": {
-          "line": 694,
+          "line": 697,
           "column": 5
         }
       },
@@ -1182,7 +1183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item supports height for width."
+            "body": "<p>Whether the item supports height for width.</p>"
           }
         ],
         "@return": [
@@ -1200,11 +1201,11 @@
     "_getHeightForWidth": {
       "location": {
         "start": {
-          "line": 706,
+          "line": 709,
           "column": 4
         },
         "end": {
-          "line": 714,
+          "line": 717,
           "column": 5
         }
       },
@@ -1212,7 +1213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If an item wants to trade height for width it has to implement this\nmethod and return the preferred height of the item if it is resized to\nthe given width. This function returns <code>null</code> if the item\ndo not support height for width."
+            "body": "<p>If an item wants to trade height for width it has to implement this\n method and return the preferred height of the item if it is resized to\n the given width. This function returns <code>null</code> if the item\n do not support height for width.</p>"
           }
         ],
         "@param": [
@@ -1239,11 +1240,11 @@
     "_getLayout": {
       "location": {
         "start": {
-          "line": 722,
+          "line": 725,
           "column": 4
         },
         "end": {
-          "line": 724,
+          "line": 727,
           "column": 5
         }
       },
@@ -1251,7 +1252,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -1269,11 +1270,11 @@
     "_applyMargin": {
       "location": {
         "start": {
-          "line": 728,
+          "line": 731,
           "column": 4
         },
         "end": {
-          "line": 736,
+          "line": 739,
           "column": 5
         }
       },
@@ -1281,7 +1282,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1297,11 +1298,11 @@
     "_applyAlign": {
       "location": {
         "start": {
-          "line": 740,
+          "line": 743,
           "column": 4
         },
         "end": {
-          "line": 746,
+          "line": 749,
           "column": 5
         }
       },
@@ -1309,7 +1310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1323,11 +1324,11 @@
     "_applyDimension": {
       "location": {
         "start": {
-          "line": 750,
+          "line": 753,
           "column": 4
         },
         "end": {
-          "line": 752,
+          "line": 755,
           "column": 5
         }
       },
@@ -1335,7 +1336,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1353,11 +1354,11 @@
     "_applyStretching": {
       "location": {
         "start": {
-          "line": 756,
+          "line": 759,
           "column": 4
         },
         "end": {
-          "line": 758,
+          "line": 761,
           "column": 5
         }
       },
@@ -1365,7 +1366,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1381,11 +1382,11 @@
     "hasUserBounds": {
       "location": {
         "start": {
-          "line": 776,
+          "line": 779,
           "column": 4
         },
         "end": {
-          "line": 778,
+          "line": 781,
           "column": 5
         }
       },
@@ -1393,11 +1394,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSUPPORT FOR USER BOUNDARIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SUPPORT FOR USER BOUNDARIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether user bounds are set on this layout item"
+            "body": "<p>Whether user bounds are set on this layout item</p>"
           }
         ],
         "@return": [
@@ -1415,11 +1416,11 @@
     "setUserBounds": {
       "location": {
         "start": {
-          "line": 790,
+          "line": 793,
           "column": 4
         },
         "end": {
-          "line": 800,
+          "line": 803,
           "column": 5
         }
       },
@@ -1427,7 +1428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set user bounds of the widget. Widgets with user bounds are sized and\npositioned manually and are ignored by any layout manager."
+            "body": "<p>Set user bounds of the widget. Widgets with user bounds are sized and\n positioned manually and are ignored by any layout manager.</p>"
           }
         ],
         "@param": [
@@ -1467,11 +1468,11 @@
     "resetUserBounds": {
       "location": {
         "start": {
-          "line": 808,
+          "line": 811,
           "column": 4
         },
         "end": {
-          "line": 812,
+          "line": 815,
           "column": 5
         }
       },
@@ -1479,7 +1480,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear the user bounds. After this call the layout item is laid out by\nthe layout manager again."
+            "body": "<p>Clear the user bounds. After this call the layout item is laid out by\n the layout manager again.</p>"
           }
         ]
       },
@@ -1489,11 +1490,11 @@
     "__emptyProperties": {
       "location": {
         "start": {
-          "line": 829,
+          "line": 832,
           "column": 4
         },
         "end": {
-          "line": 829,
+          "line": 832,
           "column": 26
         }
       },
@@ -1501,7 +1502,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -1527,11 +1528,11 @@
     "setLayoutProperties": {
       "location": {
         "start": {
-          "line": 837,
+          "line": 840,
           "column": 4
         },
         "end": {
-          "line": 863,
+          "line": 866,
           "column": 5
         }
       },
@@ -1539,7 +1540,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores the given layout properties"
+            "body": "<p>Stores the given layout properties</p>"
           }
         ],
         "@param": [
@@ -1558,11 +1559,11 @@
     "getLayoutProperties": {
       "location": {
         "start": {
-          "line": 871,
+          "line": 874,
           "column": 4
         },
         "end": {
-          "line": 873,
+          "line": 876,
           "column": 5
         }
       },
@@ -1570,7 +1571,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns currently stored layout properties"
+            "body": "<p>Returns currently stored layout properties</p>"
           }
         ],
         "@return": [
@@ -1588,11 +1589,11 @@
     "clearLayoutProperties": {
       "location": {
         "start": {
-          "line": 880,
+          "line": 883,
           "column": 4
         },
         "end": {
-          "line": 882,
+          "line": 885,
           "column": 5
         }
       },
@@ -1600,7 +1601,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all stored layout properties."
+            "body": "<p>Removes all stored layout properties.</p>"
           }
         ]
       },
@@ -1610,11 +1611,11 @@
     "updateLayoutProperties": {
       "location": {
         "start": {
-          "line": 896,
+          "line": 899,
           "column": 4
         },
         "end": {
-          "line": 920,
+          "line": 923,
           "column": 5
         }
       },
@@ -1622,7 +1623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should be executed on every change of layout properties.\n\nThis also includes \"virtual\" layout properties like margin or align\nwhen they have an effect on the parent and not on the widget itself.\n\nThis method is always executed on the parent not on the\nmodified widget itself."
+            "body": "<p>Should be executed on every change of layout properties.\n This also includes \"virtual\" layout properties like margin or align\n when they have an effect on the parent and not on the widget itself.\n This method is always executed on the parent not on the\n modified widget itself.</p>"
           }
         ],
         "@param": [
@@ -1643,11 +1644,11 @@
     "getApplicationRoot": {
       "location": {
         "start": {
-          "line": 937,
+          "line": 940,
           "column": 4
         },
         "end": {
-          "line": 939,
+          "line": 942,
           "column": 5
         }
       },
@@ -1655,11 +1656,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHIERARCHY SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HIERARCHY SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the application root"
+            "body": "<p>Returns the application root</p>"
           }
         ],
         "@return": [
@@ -1677,11 +1678,11 @@
     "getLayoutParent": {
       "location": {
         "start": {
-          "line": 949,
+          "line": 952,
           "column": 4
         },
         "end": {
-          "line": 951,
+          "line": 954,
           "column": 5
         }
       },
@@ -1689,7 +1690,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the items parent. Even if the item has been added to a\nlayout, the parent is always a child of the containing item. The parent\nitem may be <code>null</code>."
+            "body": "<p>Get the items parent. Even if the item has been added to a\n layout, the parent is always a child of the containing item. The parent\n item may be <code>null</code>.</p>"
           }
         ],
         "@return": [
@@ -1707,11 +1708,11 @@
     "setLayoutParent": {
       "location": {
         "start": {
-          "line": 959,
+          "line": 962,
           "column": 4
         },
         "end": {
-          "line": 967,
+          "line": 970,
           "column": 5
         }
       },
@@ -1719,7 +1720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the parent"
+            "body": "<p>Set the parent</p>"
           }
         ],
         "@param": [
@@ -1741,11 +1742,11 @@
     "isRootWidget": {
       "location": {
         "start": {
-          "line": 976,
+          "line": 979,
           "column": 4
         },
         "end": {
-          "line": 978,
+          "line": 981,
           "column": 5
         }
       },
@@ -1753,7 +1754,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item is a root item and directly connected to\nthe DOM."
+            "body": "<p>Whether the item is a root item and directly connected to\n the DOM.</p>"
           }
         ],
         "@return": [
@@ -1771,11 +1772,11 @@
     "_getRoot": {
       "location": {
         "start": {
-          "line": 988,
+          "line": 991,
           "column": 4
         },
         "end": {
-          "line": 1002,
+          "line": 1005,
           "column": 5
         }
       },
@@ -1783,7 +1784,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the root item. The root item is the item which\nis directly inserted into an existing DOM node at HTML level.\nThis is often the BODY element of a typical web page."
+            "body": "<p>Returns the root item. The root item is the item which\n is directly inserted into an existing DOM node at HTML level.\n This is often the BODY element of a typical web page.</p>"
           }
         ],
         "@return": [
@@ -1801,11 +1802,11 @@
     "clone": {
       "location": {
         "start": {
-          "line": 1015,
+          "line": 1018,
           "column": 4
         },
         "end": {
-          "line": 1025,
+          "line": 1028,
           "column": 5
         }
       },
@@ -1813,11 +1814,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCLONE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CLONE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -3310,11 +3311,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1037,
-        "column": 2
+        "line": 1040,
+        "column": 13
       },
       "end": {
-        "line": 1047,
+        "line": 1050,
         "column": 3
       }
     },
@@ -3322,7 +3323,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -3330,6 +3331,7 @@
   "descendants": [
     "qx.ui.core.ColumnData",
     "qx.ui.core.Spacer",
-    "qx.ui.core.Widget"
+    "qx.ui.core.Widget",
+    "qx.test.ui.layout.LayoutItem"
   ]
 }

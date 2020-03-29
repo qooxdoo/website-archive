@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The part loader knows about all generated packages and parts.\n\nIt contains functionality to load parts and to retrieve part instances."
+          "body": "<p>The part loader knows about all generated packages and parts.\n It contains functionality to load parts and to retrieve part instances.</p>"
         }
       ]
     }
@@ -38,13 +38,14 @@
     "location": {
       "start": {
         "line": 30,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 45,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "partLoaded": {
@@ -62,7 +63,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a parts was loaded. The data of the event instance point to the\nloaded part instance."
+            "body": "<p>Fired if a parts was loaded. The data of the event instance point to the\n loaded part instance.</p>"
           }
         ]
       },
@@ -84,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a part could not be loaded. The event's\n{@link qx.event.type.Data#getData} method returns the name of the failed\npart."
+            "body": "<p>Fired if a part could not be loaded. The event's\n {@link qx.event.type.Data#getData} method returns the name of the failed\n part.</p>"
           }
         ]
       },
@@ -108,22 +109,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads one or more parts asynchronously. The callback is called after all\nparts and their dependencies are fully loaded. If the parts are already\nloaded the callback is called immediately."
+            "body": "<p>Loads one or more parts asynchronously. The callback is called after all\n parts and their dependencies are fully loaded. If the parts are already\n loaded the callback is called immediately.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "partNames {String[]} List of parts names to load as defined in the\nconfig file at compile time.",
+            "body": "partNames {String[]} List of parts names to load as defined in the\n    config file at compile time.",
             "paramName": "partNames",
-            "description": " List of parts names to load as defined in the\nconfig file at compile time.",
+            "description": " List of parts names to load as defined in the\n    config file at compile time.",
             "type": "String[]"
           },
           {
             "name": "@param",
-            "body": "callback {Function} Function to execute on completion.\nThe function has one parameter which is an array of ready states of\nthe parts specified in the partNames argument.",
+            "body": "callback {Function} Function to execute on completion.\n   The function has one parameter which is an array of ready states of\n   the parts specified in the partNames argument.",
             "paramName": "callback",
-            "description": " Function to execute on completion.\nThe function has one parameter which is an array of ready states of\nthe parts specified in the partNames argument.",
+            "description": " Function to execute on completion.\n   The function has one parameter which is an array of ready states of\n   the parts specified in the partNames argument.",
             "type": "Function"
           },
           {
@@ -157,15 +158,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads one or more parts asynchronously. The callback is called after all\nparts and their dependencies are fully loaded. If the parts are already\nloaded the callback is called immediately."
+            "body": "<p>Loads one or more parts asynchronously. The callback is called after all\n parts and their dependencies are fully loaded. If the parts are already\n loaded the callback is called immediately.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "partNames {String|String[]} List of parts names to load as defined\nin the config file at compile time. The method also accepts a single\nstring as parameter to only load one part.",
+            "body": "partNames {String|String[]} List of parts names to load as defined\n    in the config file at compile time. The method also accepts a single\n    string as parameter to only load one part.",
             "paramName": "partNames",
-            "description": " List of parts names to load as defined\nin the config file at compile time. The method also accepts a single\nstring as parameter to only load one part.",
+            "description": " List of parts names to load as defined\n    in the config file at compile time. The method also accepts a single\n    string as parameter to only load one part.",
             "type": [
               "String",
               {
@@ -210,15 +211,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the part instance of the part with the given name."
+            "body": "<p>Get the part instance of the part with the given name.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String} Name of the part as defined in the config file at\ncompile time.",
+            "body": "name {String} Name of the part as defined in the config file at\n    compile time.",
             "paramName": "name",
-            "description": " Name of the part as defined in the config file at\ncompile time.",
+            "description": " Name of the part as defined in the config file at\n    compile time.",
             "type": "String"
           }
         ],
@@ -249,15 +250,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a part with the given name is available."
+            "body": "<p>Checks if a part with the given name is available.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String} Name of the part as defined in the config file at\ncompile time.",
+            "body": "name {String} Name of the part as defined in the config file at\n    compile time.",
             "paramName": "name",
-            "description": " Name of the part as defined in the config file at\ncompile time.",
+            "description": " Name of the part as defined in the config file at\n    compile time.",
             "type": "String"
           }
         ],
@@ -288,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map of all known parts."
+            "body": "<p>Returns a map of all known parts.</p>"
           }
         ],
         "@return": [

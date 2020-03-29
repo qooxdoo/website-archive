@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 136,
+        "line": 134,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThe HtmlCell layer renders each cell with custom HTML markup. The concrete\nmarkup for each cell is provided by a cell provider."
+          "body": "<p>The HtmlCell layer renders each cell with custom HTML markup. The concrete\n markup for each cell is provided by a cell provider.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 2
+        "line": 34,
+        "column": 14
       },
       "end": {
-        "line": 45,
+        "line": 43,
         "column": 3
       }
     },
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "htmlCellProvider {qx.ui.virtual.core.IHtmlCellProvider} This class\nprovides the HTML markup for each cell.",
+          "body": "htmlCellProvider {qx.ui.virtual.core.IHtmlCellProvider} This class\n    provides the HTML markup for each cell.",
           "paramName": "htmlCellProvider",
-          "description": " This class\nprovides the HTML markup for each cell.",
+          "description": " This class\n    provides the HTML markup for each cell.",
           "type": "qx.ui.virtual.core.IHtmlCellProvider"
         }
       ]
@@ -64,11 +64,11 @@
     "_getCellSizeStyle": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the cell size taking the box model into account"
+            "body": "<p>Get the cell size taking the box model into account</p>"
           }
         ],
         "@param": [
@@ -96,16 +96,16 @@
           },
           {
             "name": "@param",
-            "body": "insetX {Integer} The cell's horizontal insets, i.e. the sum of\nhorizontal paddings and borders",
+            "body": "insetX {Integer} The cell's horizontal insets, i.e. the sum of\n    horizontal paddings and borders",
             "paramName": "insetX",
-            "description": " The cell's horizontal insets, i.e. the sum of\nhorizontal paddings and borders",
+            "description": " The cell's horizontal insets, i.e. the sum of\n    horizontal paddings and borders",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "insetY {Integer} The cell's vertical insets, i.e. the sum of\nvertical paddings and borders",
+            "body": "insetY {Integer} The cell's vertical insets, i.e. the sum of\n    vertical paddings and borders",
             "paramName": "insetY",
-            "description": " The cell's vertical insets, i.e. the sum of\nvertical paddings and borders",
+            "description": " The cell's vertical insets, i.e. the sum of\n    vertical paddings and borders",
             "type": "Integer"
           }
         ],
@@ -124,11 +124,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 122,
           "column": 5
         }
       },
@@ -136,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -3665,11 +3665,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 133,
-        "column": 2
+        "line": 131,
+        "column": 13
       },
       "end": {
-        "line": 135,
+        "line": 133,
         "column": 3
       }
     },
@@ -3677,7 +3677,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

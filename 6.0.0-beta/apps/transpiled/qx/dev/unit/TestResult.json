@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The test result class runs the test functions and fires events depending on\nthe result of the test run."
+          "body": "<p>The test result class runs the test functions and fires events depending on\n the result of the test run.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the test is started\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired before the test is started\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the test has finished\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired after the test has finished\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the test raised an {@link qx.core.AssertionError}\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired if the test raised an {@link qx.core.AssertionError}\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the test failed with a different exception\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired if the test failed with a different exception\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if an asynchronous test sets a timeout\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired if an asynchronous test sets a timeout\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the test was skipped, e.g. because a requirement was not met.\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired if the test was skipped, e.g. because a requirement was not met.\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -179,7 +179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a performance test returned results.\n\nEvent data: The test {@link qx.dev.unit.TestFunction}"
+            "body": "<p>Fired if a performance test returned results.\n Event data: The test {@link qx.dev.unit.TestFunction}</p>"
           }
         ]
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Run a test function using a given test result"
+            "body": "<p>Run a test function using a given test result</p>"
           }
         ],
         "@param": [
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Run the test"
+            "body": "<p>Run the test</p>"
           }
         ],
         "@param": [
@@ -332,7 +332,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire an error event"
+            "body": "<p>Fire an error event</p>"
           }
         ],
         "@param": [
@@ -380,7 +380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wraps the AUT's qx.event.Registration.addListener function so that it\nstores references to all added listeners in an array attached to the\ncurrent test function. This is done so that any listeners left over after\ntest execution can be removed to make sure they don't influence other\ntests."
+            "body": "<p>Wraps the AUT's qx.event.Registration.addListener function so that it\n stores references to all added listeners in an array attached to the\n current test function. This is done so that any listeners left over after\n test execution can be removed to make sure they don't influence other\n tests.</p>"
           }
         ],
         "@param": [
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes any listeners left over after a test's run."
+            "body": "<p>Removes any listeners left over after a test's run.</p>"
           }
         ],
         "@param": [
@@ -442,7 +442,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls the generic tearDown method on the test class, then the specific\ntearDown for the test, if one is defined."
+            "body": "<p>Calls the generic tearDown method on the test class, then the specific\n tearDown for the test, if one is defined.</p>"
           }
         ],
         "@param": [
@@ -583,13 +583,14 @@
     "location": {
       "start": {
         "line": 423,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 425,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.dev.unit.JsUnitTestResult"

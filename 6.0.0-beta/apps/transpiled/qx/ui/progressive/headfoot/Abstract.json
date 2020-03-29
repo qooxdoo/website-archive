@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The abstract class for a header or footer for use with Progressive's Table\nrenderer."
+          "body": "<p>The abstract class for a header or footer for use with Progressive's Table\n renderer.</p>"
         }
       ]
     }
@@ -38,13 +38,14 @@
     "location": {
       "start": {
         "line": 28,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 31,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__progressive": {
@@ -76,15 +77,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Join this header/footer to a Progressive.  This makes the Progressive\nobject available to the header/footer through the _progressive member."
+            "body": "<p>Join this header/footer to a Progressive.  This makes the Progressive\n object available to the header/footer through the _progressive member.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "progressive {qx.ui.progressive.Progressive}\nProgressive object to which we're being joined.",
+            "body": "progressive {qx.ui.progressive.Progressive}\n   Progressive object to which we're being joined.",
             "paramName": "progressive",
-            "description": "\nProgressive object to which we're being joined.",
+            "description": "\n   Progressive object to which we're being joined.",
             "type": "qx.ui.progressive.Progressive"
           }
         ]
@@ -3581,13 +3582,14 @@
     "location": {
       "start": {
         "line": 52,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 54,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.progressive.headfoot.Null",

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 OpenHex SPRL, http://www.openhex.org\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDirk Wellmann (dw(at)piponline.net)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 OpenHex SPRL, http://www.openhex.org\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Dirk Wellmann (dw(at)piponline.net)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This Cellrender is for transparent use, without escaping! Use this Cellrender\nto output plain HTML content."
+          "body": "<p>This Cellrender is for transparent use, without escaping! Use this Cellrender\n to output plain HTML content.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Support for extended CSS color names"
+          "body": "<p>Support for extended CSS color names</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "CSS 3 colors (http://www.w3.org/TR/css3-color/#svg-color)\nThis includes all classic HTML Color names (http://www.w3.org/TR/css3-color/#html4) and the <code>transparent</code> keyword."
+            "body": "<p>CSS 3 colors (http://www.w3.org/TR/css3-color/#svg-color)\n This includes all classic HTML Color names (http://www.w3.org/TR/css3-color/#html4) and the <code>transparent</code> keyword.</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the incoming value is an extended named color."
+            "body": "<p>Whether the incoming value is an extended named color.</p>"
           }
         ],
         "@param": [
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts an extended color to the RGB value"
+            "body": "<p>Converts an extended color to the RGB value</p>"
           }
         ],
         "@param": [
@@ -147,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts an extended color to a CSS RGB string"
+            "body": "<p>Converts an extended color to a CSS RGB string</p>"
           }
         ],
         "@param": [

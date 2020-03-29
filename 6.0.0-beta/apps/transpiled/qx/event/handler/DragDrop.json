@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 987,
+        "line": 993,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Event handler, which supports drag events on DOM elements.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Event handler, which supports drag events on DOM elements.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@require": [
@@ -52,7 +52,7 @@
     "location": {
       "start": {
         "line": 45,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 61,
@@ -63,7 +63,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -181,7 +181,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Array of strings holding the names of the allowed mouse buttons\nfor Drag & Drop. The default is \"left\" but could be extended with\n\"middle\" or \"right\""
+            "body": "<p>Array of strings holding the names of the allowed mouse buttons\n for Drag &amp; Drop. The default is \"left\" but could be extended with\n \"middle\" or \"right\"</p>"
           }
         ]
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The distance needed to change the mouse position before a drag session start."
+            "body": "<p>The distance needed to change the mouse position before a drag session start.</p>"
           }
         ]
       },
@@ -227,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget instance of the drag & drop cursor. If non is given, the default\n{@link qx.ui.core.DragDropCursor} will be used."
+            "body": "<p>Widget instance of the drag &amp; drop cursor. If non is given, the default\n {@link qx.ui.core.DragDropCursor} will be used.</p>"
           }
         ]
       },
@@ -480,19 +480,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -506,9 +506,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -534,15 +534,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -554,9 +554,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -583,15 +583,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -603,9 +603,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -632,11 +632,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Registers a supported type"
+            "body": "<p>Registers a supported type</p>"
           }
         ],
         "@param": [
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers a supported action. One of <code>move</code>,\n<code>copy</code> or <code>alias</code>."
+            "body": "<p>Registers a supported action. One of <code>move</code>,\n <code>copy</code> or <code>alias</code>.</p>"
           }
         ],
         "@param": [
@@ -698,7 +698,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the current drag target supports the given type"
+            "body": "<p>Whether the current drag target supports the given type</p>"
           }
         ],
         "@param": [
@@ -737,7 +737,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the current drag target supports the given action"
+            "body": "<p>Whether the current drag target supports the given action</p>"
           }
         ],
         "@param": [
@@ -776,7 +776,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the current drop target allows the current drag target."
+            "body": "<p>Whether the current drop target allows the current drag target.</p>"
           }
         ],
         "@param": [
@@ -807,7 +807,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of the given type during the <code>drop</code> event\non the drop target. This method fires a <code>droprequest</code> at\nthe drag target which should be answered by calls to {@link #addData}.\n\nNote that this is a synchronous method and if any of the drag and drop\nevents handlers are implemented using Promises, this may fail; @see\n`getDataAsync`."
+            "body": "<p>Returns the data of the given type during the <code>drop</code> event\n on the drop target. This method fires a <code>droprequest</code> at\n the drag target which should be answered by calls to {@link #addData}.\n Note that this is a synchronous method and if any of the drag and drop\n events handlers are implemented using Promises, this may fail; @see\n <code>getDataAsync</code>.</p>"
           }
         ],
         "@param": [
@@ -846,7 +846,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of the given type during the <code>drop</code> event\non the drop target. This method fires a <code>droprequest</code> at\nthe drag target which should be answered by calls to {@link #addData}."
+            "body": "<p>Returns the data of the given type during the <code>drop</code> event\n on the drop target. This method fires a <code>droprequest</code> at\n the drag target which should be answered by calls to {@link #addData}.</p>"
           }
         ],
         "@param": [
@@ -885,15 +885,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected action (by user keyboard modifiers)"
+            "body": "<p>Returns the currently selected action (by user keyboard modifiers)</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} One of <code>move</code>, <code>copy</code> or\n<code>alias</code>",
+            "body": "{String} One of <code>move</code>, <code>copy</code> or\n    <code>alias</code>",
             "type": "String",
-            "description": " One of <code>move</code>, <code>copy</code> or\n<code>alias</code>"
+            "description": " One of <code>move</code>, <code>copy</code> or\n    <code>alias</code>"
           }
         ]
       },
@@ -907,23 +907,23 @@
           "column": 4
         },
         "end": {
-          "line": 325,
-          "column": 5
+          "line": 331,
+          "column": 6
         }
       },
       "jsdoc": {
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected action (by user keyboard modifiers)"
+            "body": "<p>Returns the currently selected action (by user keyboard modifiers)</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise|String} One of <code>move</code>, <code>copy</code> or\n<code>alias</code>",
+            "body": "{qx.Promise|String} One of <code>move</code>, <code>copy</code> or\n    <code>alias</code>",
             "type": "qx.Promise|String",
-            "description": " One of <code>move</code>, <code>copy</code> or\n<code>alias</code>"
+            "description": " One of <code>move</code>, <code>copy</code> or\n    <code>alias</code>"
           }
         ]
       },
@@ -933,11 +933,11 @@
     "getDragTarget": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 338,
           "column": 4
         },
         "end": {
-          "line": 334,
+          "line": 340,
           "column": 5
         }
       },
@@ -945,7 +945,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget which has been the target of the drag start."
+            "body": "<p>Returns the widget which has been the target of the drag start.</p>"
           }
         ],
         "@return": [
@@ -963,11 +963,11 @@
     "addData": {
       "location": {
         "start": {
-          "line": 344,
+          "line": 350,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 352,
           "column": 5
         }
       },
@@ -975,7 +975,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds data of the given type to the internal storage. The data\nis available until the <code>dragend</code> event is fired."
+            "body": "<p>Adds data of the given type to the internal storage. The data\n is available until the <code>dragend</code> event is fired.</p>"
           }
         ],
         "@param": [
@@ -1001,11 +1001,11 @@
     "getCurrentType": {
       "location": {
         "start": {
-          "line": 354,
+          "line": 360,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 362,
           "column": 5
         }
       },
@@ -1013,7 +1013,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the type which was requested last."
+            "body": "<p>Returns the type which was requested last.</p>"
           }
         ],
         "@return": [
@@ -1031,11 +1031,11 @@
     "isSessionActive": {
       "location": {
         "start": {
-          "line": 364,
+          "line": 370,
           "column": 4
         },
         "end": {
-          "line": 366,
+          "line": 372,
           "column": 5
         }
       },
@@ -1043,7 +1043,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns if a drag session is currently active"
+            "body": "<p>Returns if a drag session is currently active</p>"
           }
         ],
         "@return": [
@@ -1061,11 +1061,11 @@
     "__rebuildStructures": {
       "location": {
         "start": {
-          "line": 378,
+          "line": 384,
           "column": 4
         },
         "end": {
-          "line": 384,
+          "line": 390,
           "column": 5
         }
       },
@@ -1073,11 +1073,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL UTILS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL UTILS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Rebuilds the internal data storage used during a drag&drop session"
+            "body": "<p>Rebuilds the internal data storage used during a drag&amp;drop session</p>"
           }
         ]
       },
@@ -1087,11 +1087,11 @@
     "__detectAction": {
       "location": {
         "start": {
-          "line": 394,
+          "line": 400,
           "column": 4
         },
         "end": {
-          "line": 457,
+          "line": 463,
           "column": 5
         }
       },
@@ -1099,7 +1099,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects the current action and stores it under the private\nfield <code>__currentAction</code>. Also fires the event\n<code>dragchange</code> on every modification."
+            "body": "<p>Detects the current action and stores it under the private\n field <code>__currentAction</code>. Also fires the event\n <code>dragchange</code> on every modification.</p>"
           }
         ],
         "@return": [
@@ -1117,11 +1117,11 @@
     "__fireEvent": {
       "location": {
         "start": {
-          "line": 473,
+          "line": 479,
           "column": 4
         },
         "end": {
-          "line": 500,
+          "line": 506,
           "column": 5
         }
       },
@@ -1129,7 +1129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wrapper for {@link qx.event.Registration#fireEvent} for drag&drop events\nneeded in this class."
+            "body": "<p>Wrapper for {@link qx.event.Registration#fireEvent} for drag&amp;drop events\n needed in this class.</p>"
           }
         ],
         "@param": [
@@ -1149,9 +1149,9 @@
           },
           {
             "name": "@param",
-            "body": "relatedTarget {Object} Related target, i.e. drag or drop target\ndepending on the drag event",
+            "body": "relatedTarget {Object} Related target, i.e. drag or drop target\n    depending on the drag event",
             "paramName": "relatedTarget",
-            "description": " Related target, i.e. drag or drop target\ndepending on the drag event",
+            "description": " Related target, i.e. drag or drop target\n    depending on the drag event",
             "type": "qx.event.handler.Object"
           },
           {
@@ -1172,9 +1172,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise|Boolean} <code>true</code> if the event's default behavior was\nnot prevented",
+            "body": "{qx.Promise|Boolean} <code>true</code> if the event's default behavior was\n not prevented",
             "type": "qx.Promise|Boolean",
-            "description": " <code>true</code> if the event's default behavior was\nnot prevented"
+            "description": " <code>true</code> if the event's default behavior was\n not prevented"
           }
         ]
       },
@@ -1184,11 +1184,11 @@
     "__findDraggable": {
       "location": {
         "start": {
-          "line": 511,
+          "line": 517,
           "column": 4
         },
         "end": {
-          "line": 523,
+          "line": 529,
           "column": 5
         }
       },
@@ -1196,7 +1196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds next draggable parent of the given element. Maybe the element itself as well.\n\nLooks for the attribute <code>qxDraggable</code> with the value <code>on</code>."
+            "body": "<p>Finds next draggable parent of the given element. Maybe the element itself as well.\n Looks for the attribute <code>qxDraggable</code> with the value <code>on</code>.</p>"
           }
         ],
         "@param": [
@@ -1223,11 +1223,11 @@
     "__findDroppable": {
       "location": {
         "start": {
-          "line": 534,
+          "line": 540,
           "column": 4
         },
         "end": {
-          "line": 546,
+          "line": 552,
           "column": 5
         }
       },
@@ -1235,7 +1235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds next droppable parent of the given element. Maybe the element itself as well.\n\nLooks for the attribute <code>qxDroppable</code> with the value <code>on</code>."
+            "body": "<p>Finds next droppable parent of the given element. Maybe the element itself as well.\n Looks for the attribute <code>qxDroppable</code> with the value <code>on</code>.</p>"
           }
         ],
         "@param": [
@@ -1262,11 +1262,11 @@
     "clearSession": {
       "location": {
         "start": {
-          "line": 554,
+          "line": 560,
           "column": 4
         },
         "end": {
-          "line": 593,
+          "line": 599,
           "column": 5
         }
       },
@@ -1274,7 +1274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cleans up a drag&drop session when <code>dragstart</code> was fired before."
+            "body": "<p>Cleans up a drag&amp;drop session when <code>dragstart</code> was fired before.</p>"
           }
         ],
         "@return": [
@@ -1292,11 +1292,11 @@
     "_onLongtap": {
       "location": {
         "start": {
-          "line": 609,
+          "line": 615,
           "column": 4
         },
         "end": {
-          "line": 617,
+          "line": 623,
           "column": 5
         }
       },
@@ -1304,11 +1304,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for long tap which takes care of starting the drag & drop session for\ntouch interactions."
+            "body": "<p>Handler for long tap which takes care of starting the drag &amp; drop session for\n touch interactions.</p>"
           }
         ],
         "@param": [
@@ -1327,11 +1327,11 @@
     "_start": {
       "location": {
         "start": {
-          "line": 628,
+          "line": 634,
           "column": 4
         },
         "end": {
-          "line": 674,
+          "line": 680,
           "column": 5
         }
       },
@@ -1339,7 +1339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to start the drag & drop session. It is responsible for firing the\ndragstart event and attaching the key listener."
+            "body": "<p>Helper to start the drag &amp; drop session. It is responsible for firing the\n dragstart event and attaching the key listener.</p>"
           }
         ],
         "@param": [
@@ -1354,9 +1354,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Returns <code>false</code> if drag session should be\ncanceled.",
+            "body": "{Boolean} Returns <code>false</code> if drag session should be\n canceled.",
             "type": "Boolean",
-            "description": " Returns <code>false</code> if drag session should be\ncanceled."
+            "description": " Returns <code>false</code> if drag session should be\n canceled."
           }
         ]
       },
@@ -1366,11 +1366,11 @@
     "_onPointerdown": {
       "location": {
         "start": {
-          "line": 681,
+          "line": 687,
           "column": 4
         },
         "end": {
-          "line": 693,
+          "line": 699,
           "column": 5
         }
       },
@@ -1378,7 +1378,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointerdown event which stores the initial targets and the coordinates."
+            "body": "<p>Event handler for the pointerdown event which stores the initial targets and the coordinates.</p>"
           }
         ],
         "@param": [
@@ -1397,11 +1397,11 @@
     "_onPointermove": {
       "location": {
         "start": {
-          "line": 701,
+          "line": 707,
           "column": 4
         },
         "end": {
-          "line": 823,
+          "line": 829,
           "column": 5
         }
       },
@@ -1409,7 +1409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointermove event which starts the drag session and\nis responsible for firing the drag, dragover and dragleave event."
+            "body": "<p>Event handler for the pointermove event which starts the drag session and\n is responsible for firing the drag, dragover and dragleave event.</p>"
           }
         ],
         "@param": [
@@ -1428,11 +1428,11 @@
     "_getDelta": {
       "location": {
         "start": {
-          "line": 834,
+          "line": 840,
           "column": 4
         },
         "end": {
-          "line": 847,
+          "line": 853,
           "column": 5
         }
       },
@@ -1440,7 +1440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function to compute the delta between current cursor position from given event\nand the stored coordinates at {@link #_onPointerdown}."
+            "body": "<p>Helper function to compute the delta between current cursor position from given event\n and the stored coordinates at {@link #_onPointerdown}.</p>"
           }
         ],
         "@param": [
@@ -1467,11 +1467,11 @@
     "_onPointerup": {
       "location": {
         "start": {
-          "line": 854,
+          "line": 860,
           "column": 4
         },
         "end": {
-          "line": 878,
+          "line": 884,
           "column": 5
         }
       },
@@ -1479,7 +1479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the pointerup event which is responsible fore firing the drop event."
+            "body": "<p>Handler for the pointerup event which is responsible fore firing the drop event.</p>"
           }
         ],
         "@param": [
@@ -1498,11 +1498,11 @@
     "_onRoll": {
       "location": {
         "start": {
-          "line": 885,
+          "line": 891,
           "column": 4
         },
         "end": {
-          "line": 887,
+          "line": 893,
           "column": 5
         }
       },
@@ -1510,7 +1510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Roll listener to stop scrolling on touch devices."
+            "body": "<p>Roll listener to stop scrolling on touch devices.</p>"
           }
         ],
         "@param": [
@@ -1529,11 +1529,11 @@
     "_onWindowBlur": {
       "location": {
         "start": {
-          "line": 895,
+          "line": 901,
           "column": 4
         },
         "end": {
-          "line": 897,
+          "line": 903,
           "column": 5
         }
       },
@@ -1541,7 +1541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for window's <code>blur</code> event"
+            "body": "<p>Event listener for window's <code>blur</code> event</p>"
           }
         ],
         "@param": [
@@ -1560,11 +1560,11 @@
     "_onKeyDown": {
       "location": {
         "start": {
-          "line": 905,
+          "line": 911,
           "column": 4
         },
         "end": {
-          "line": 918,
+          "line": 924,
           "column": 5
         }
       },
@@ -1572,7 +1572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for root's <code>keydown</code> event"
+            "body": "<p>Event listener for root's <code>keydown</code> event</p>"
           }
         ],
         "@param": [
@@ -1591,11 +1591,11 @@
     "_onKeyUp": {
       "location": {
         "start": {
-          "line": 926,
+          "line": 932,
           "column": 4
         },
         "end": {
-          "line": 939,
+          "line": 945,
           "column": 5
         }
       },
@@ -1603,7 +1603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for root's <code>keyup</code> event"
+            "body": "<p>Event listener for root's <code>keyup</code> event</p>"
           }
         ],
         "@param": [
@@ -1622,11 +1622,11 @@
     "_onKeyPress": {
       "location": {
         "start": {
-          "line": 947,
+          "line": 953,
           "column": 4
         },
         "end": {
-          "line": 954,
+          "line": 960,
           "column": 5
         }
       },
@@ -1634,7 +1634,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for root's <code>keypress</code> event"
+            "body": "<p>Event listener for root's <code>keypress</code> event</p>"
           }
         ],
         "@param": [
@@ -1840,11 +1840,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 966,
-        "column": 2
+        "line": 972,
+        "column": 13
       },
       "end": {
-        "line": 973,
+        "line": 979,
         "column": 3
       }
     },
@@ -1852,7 +1852,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -1860,11 +1860,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 984,
-        "column": 2
+        "line": 990,
+        "column": 10
       },
       "end": {
-        "line": 986,
+        "line": 992,
         "column": 3
       }
     },
@@ -1872,7 +1872,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

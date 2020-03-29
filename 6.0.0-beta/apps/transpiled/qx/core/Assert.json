@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A collection of assertions.\n\nThese methods can be used to assert incoming parameters, return values, ...\nIf an assertion fails an {@link AssertionError} is thrown.\n\nAssertions are used in unit tests as well."
+          "body": "<p>A collection of assertions.\n These methods can be used to assert incoming parameters, return values, …\n If an assertion fails an {@link AssertionError} is thrown.\n Assertions are used in unit tests as well.</p>"
         }
       ],
       "@require": [
@@ -73,23 +73,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the condition evaluates to <code>true</code>. An\n{@link AssertionError} is thrown if otherwise."
+            "body": "<p>Assert that the condition evaluates to <code>true</code>. An\n {@link AssertionError} is thrown if otherwise.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "comment {String} Message to be shown if the assertion fails. This\nmessage is provided by the user.",
+            "body": "comment {String} Message to be shown if the assertion fails. This\n    message is provided by the user.",
             "paramName": "comment",
-            "description": " Message to be shown if the assertion fails. This\nmessage is provided by the user.",
+            "description": " Message to be shown if the assertion fails. This\n    message is provided by the user.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "msgvarargs {var} any number of parts of a message to show if assertion\ntriggers. Each will be converted to a string and all\nparts will be concatenated. E. g. instead of\n\"Got invalid value \" + this.__toString(val) + \"!!!!!\"\nuse\n\"Got invalid value \", val, \"!!!!!\"\n(much better performance)",
-            "paramName": "msgvarargs",
-            "description": " any number of parts of a message to show if assertion\ntriggers. Each will be converted to a string and all\nparts will be concatenated. E. g. instead of\n\"Got invalid value \" + this.__toString(val) + \"!!!!!\"\nuse\n\"Got invalid value \", val, \"!!!!!\"\n(much better performance)",
-            "type": "var"
+            "body": "much better performance"
           }
         ]
       },
@@ -111,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert an unknown value to a string to display in error messages"
+            "body": "<p>Convert an unknown value to a string to display in error messages</p>"
           }
         ],
         "@param": [
@@ -150,15 +147,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the condition evaluates to <code>true</code>."
+            "body": "<p>Assert that the condition evaluates to <code>true</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {var} Condition to check for. Must evaluate to\n<code>true</code>.",
+            "body": "condition {var} Condition to check for. Must evaluate to\n    <code>true</code>.",
             "paramName": "condition",
-            "description": " Condition to check for. Must evaluate to\n<code>true</code>.",
+            "description": " Condition to check for. Must evaluate to\n    <code>true</code>.",
             "type": "var"
           },
           {
@@ -189,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Raise an {@link AssertionError}."
+            "body": "<p>Raise an {@link AssertionError}.</p>"
           }
         ],
         "@param": [
@@ -229,15 +226,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>true</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>true</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>true</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>true</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>true</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>true</code>.",
             "type": "Boolean"
           },
           {
@@ -268,15 +265,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>false</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>false</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>false</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>false</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>false</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>false</code>.",
             "type": "Boolean"
           },
           {
@@ -307,7 +304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are equal. (Uses the equality operator\n<code>==</code>.)"
+            "body": "<p>Assert that both values are equal. (Uses the equality operator\n <code>==</code>.)</p>"
           }
         ],
         "@param": [
@@ -353,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not equal. (Uses the not equality operator\n<code>!=</code>.)"
+            "body": "<p>Assert that both values are not equal. (Uses the not equality operator\n <code>!=</code>.)</p>"
           }
         ],
         "@param": [
@@ -399,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are equal. This might be needed because\nof the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are equal. This might be needed because\n of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -445,7 +442,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are not equal. This might be needed\nbecause of the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are not equal. This might be needed\n because of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -491,7 +488,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are identical. (Uses the identity operator\n<code>===</code>.)"
+            "body": "<p>Assert that both values are identical. (Uses the identity operator\n <code>===</code>.)</p>"
           }
         ],
         "@param": [
@@ -537,7 +534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not identical. (Uses the not identity operator\n<code>!==</code>.)"
+            "body": "<p>Assert that both values are not identical. (Uses the not identity operator\n <code>!==</code>.)</p>"
           }
         ],
         "@param": [
@@ -583,7 +580,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>undefined</code>."
+            "body": "<p>Assert that the value is not <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -622,7 +619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>undefined</code>."
+            "body": "<p>Assert that the value is <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -661,7 +658,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>null</code>."
+            "body": "<p>Assert that the value is not <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -700,7 +697,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>null</code>."
+            "body": "<p>Assert that the value is <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -739,7 +736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the first two arguments are equal, when serialized into\nJSON."
+            "body": "<p>Assert that the first two arguments are equal, when serialized into\n JSON.</p>"
           }
         ],
         "@param": [
@@ -785,7 +782,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the given string matches the regular expression"
+            "body": "<p>Assert that the given string matches the regular expression</p>"
           }
         ],
         "@param": [
@@ -834,7 +831,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the number of arguments is within the given range"
+            "body": "<p>Assert that the number of arguments is within the given range</p>"
           }
         ],
         "@param": [
@@ -887,7 +884,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is fired."
+            "body": "<p>Assert that an event is fired.</p>"
           }
         ],
         "@param": [
@@ -907,16 +904,16 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nfires the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   fires the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nfires the event.",
+            "description": " The function which will be invoked and which\n   fires the event.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "listenerFunc {Function?null} The function which will be invoked in the\nlistener. The function receives one parameter which is the event.",
+            "body": "listenerFunc {Function?null} The function which will be invoked in the\n   listener. The function receives one parameter which is the event.",
             "paramName": "listenerFunc",
-            "description": " The function which will be invoked in the\nlistener. The function receives one parameter which is the event.",
+            "description": " The function which will be invoked in the\n   listener. The function receives one parameter which is the event.",
             "optional": true,
             "defaultValue": "null",
             "type": "Function"
@@ -950,7 +947,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is not fired."
+            "body": "<p>Assert that an event is not fired.</p>"
           }
         ],
         "@param": [
@@ -970,9 +967,9 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nshould not fire the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   should not fire the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nshould not fire the event.",
+            "description": " The function which will be invoked and which\n   should not fire the event.",
             "type": "Function"
           },
           {
@@ -1003,7 +1000,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asserts that the callback raises a matching exception."
+            "body": "<p>Asserts that the callback raises a matching exception.</p>"
           }
         ],
         "@param": [
@@ -1016,18 +1013,18 @@
           },
           {
             "name": "@param",
-            "body": "exception {Error?Error} Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "body": "exception {Error?Error} Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "paramName": "exception",
-            "description": " Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "description": " Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "optional": true,
             "defaultValue": "Error",
             "type": "Error"
           },
           {
             "name": "@param",
-            "body": "re {String|RegExp} The assertion fails if the error message does\nnot match this parameter",
+            "body": "re {String|RegExp} The assertion fails if the error message does\n   not match this parameter",
             "paramName": "re",
-            "description": " The assertion fails if the error message does\nnot match this parameter",
+            "description": " The assertion fails if the error message does\n   not match this parameter",
             "type": [
               "String",
               "RegExp"
@@ -1061,7 +1058,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an item in the given array."
+            "body": "<p>Assert that the value is an item in the given array.</p>"
           }
         ],
         "@param": [
@@ -1107,7 +1104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is NOT an item in the given array"
+            "body": "<p>Assert that the value is NOT an item in the given array</p>"
           }
         ],
         "@param": [
@@ -1153,7 +1150,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both array have identical array items."
+            "body": "<p>Assert that both array have identical array items.</p>"
           }
         ],
         "@param": [
@@ -1199,7 +1196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a key in the given map."
+            "body": "<p>Assert that the value is a key in the given map.</p>"
           }
         ],
         "@param": [
@@ -1245,7 +1242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a function."
+            "body": "<p>Assert that the value is a function.</p>"
           }
         ],
         "@param": [
@@ -1284,7 +1281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a function or an async function."
+            "body": "<p>Assert that the value is a function or an async function.</p>"
           }
         ],
         "@param": [
@@ -1323,7 +1320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a string."
+            "body": "<p>Assert that the value is a string.</p>"
           }
         ],
         "@param": [
@@ -1362,7 +1359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a boolean."
+            "body": "<p>Assert that the value is a boolean.</p>"
           }
         ],
         "@param": [
@@ -1401,7 +1398,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number."
+            "body": "<p>Assert that the value is a number.</p>"
           }
         ],
         "@param": [
@@ -1440,7 +1437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number >= 0."
+            "body": "<p>Assert that the value is a number &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -1479,7 +1476,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer."
+            "body": "<p>Assert that the value is an integer.</p>"
           }
         ],
         "@param": [
@@ -1518,7 +1515,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer >= 0."
+            "body": "<p>Assert that the value is an integer &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -1557,7 +1554,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is inside the given range."
+            "body": "<p>Assert that the value is inside the given range.</p>"
           }
         ],
         "@param": [
@@ -1610,7 +1607,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an object."
+            "body": "<p>Assert that the value is an object.</p>"
           }
         ],
         "@param": [
@@ -1649,7 +1646,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an array."
+            "body": "<p>Assert that the value is an array.</p>"
           }
         ],
         "@param": [
@@ -1688,7 +1685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a map either created using <code>new Object</code>\nor by using the object literal notation <code>{ ... }</code>."
+            "body": "<p>Assert that the value is a map either created using <code>new Object</code>\n or by using the object literal notation <code>{ ... }</code>.</p>"
           }
         ],
         "@param": [
@@ -1727,7 +1724,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a regular expression."
+            "body": "<p>Assert that the value is a regular expression.</p>"
           }
         ],
         "@param": [
@@ -1766,7 +1763,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value has the given type using the <code>typeof</code>\noperator. Because the type is not always what it is supposed to be it is\nbetter to use more explicit checks like {@link #assertString} or\n{@link #assertArray}."
+            "body": "<p>Assert that the value has the given type using the <code>typeof</code>\n operator. Because the type is not always what it is supposed to be it is\n better to use more explicit checks like {@link #assertString} or\n {@link #assertArray}.</p>"
           }
         ],
         "@param": [
@@ -1812,7 +1809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of the given class."
+            "body": "<p>Assert that the value is an instance of the given class.</p>"
           }
         ],
         "@param": [
@@ -1858,7 +1855,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value implements the given interface."
+            "body": "<p>Assert that the value implements the given interface.</p>"
           }
         ],
         "@param": [
@@ -1904,7 +1901,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value represents the given CSS color value. This method\nparses the color strings and compares the RGB values. It is able to\nparse values supported by {@link qx.util.ColorUtil#stringToRgb}."
+            "body": "<p>Assert that the value represents the given CSS color value. This method\n parses the color strings and compares the RGB values. It is able to\n parse values supported by {@link qx.util.ColorUtil#stringToRgb}.</p>"
           }
         ],
         "@param": [
@@ -1950,7 +1947,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a DOM element."
+            "body": "<p>Assert that the value is a DOM element.</p>"
           }
         ],
         "@param": [
@@ -1989,7 +1986,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.core.Object}."
+            "body": "<p>Assert that the value is an instance of {@link qx.core.Object}.</p>"
           }
         ],
         "@param": [
@@ -2028,7 +2025,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.ui.core.Widget}."
+            "body": "<p>Assert that the value is an instance of {@link qx.ui.core.Widget}.</p>"
           }
         ],
         "@param": [
@@ -2067,7 +2064,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for checking the instance of a qooxdoo object using the\nclassname."
+            "body": "<p>Internal helper for checking the instance of a qooxdoo object using the\n classname.</p>"
           }
         ],
         "@param": [
@@ -2089,9 +2086,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the object is an instance of the\nclass",
+            "body": "{Boolean} <code>true</code> if the object is an instance of the\n class",
             "type": "Boolean",
-            "description": " <code>true</code> if the object is an instance of the\nclass"
+            "description": " <code>true</code> if the object is an instance of the\n class"
           }
         ]
       },

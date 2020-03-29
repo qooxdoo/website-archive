@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDan Hummon\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Dan Hummon\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table Cell Boolean Renderer."
+          "body": "<p>Table Cell Boolean Renderer.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 57,
@@ -52,18 +52,18 @@
       "@param": [
         {
           "name": "@param",
-          "body": "height {Integer ? 16}\nThe height of the image. The default is 16.",
+          "body": "height {Integer ? 16}\n   The height of the image. The default is 16.",
           "paramName": "height",
-          "description": "\nThe height of the image. The default is 16.",
+          "description": "\n   The height of the image. The default is 16.",
           "optional": true,
           "defaultValue": "16",
           "type": "Integer"
         },
         {
           "name": "@param",
-          "body": "width {Integer ? 16}\nThe width of the image. The default is 16.",
+          "body": "width {Integer ? 16}\n   The width of the image. The default is 16.",
           "paramName": "width",
-          "description": "\nThe width of the image. The default is 16.",
+          "description": "\n   The width of the image. The default is 16.",
           "optional": true,
           "defaultValue": "16",
           "type": "Integer"
@@ -115,24 +115,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "body": "cellInfo {Map}\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "paramName": "cellInfo",
-            "description": "\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "description": "\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>",
+            "body": "{Map}\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>",
             "type": "Map",
-            "description": "\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>"
+            "description": "\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>"
           }
         ]
       },

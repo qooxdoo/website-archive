@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nTino Butz (tbtz)\nChristian Hagendorn (chris_schmidt)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Tino Butz (tbtz)\n Christian Hagendorn (chris_schmidt)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Listens for native touch events and fires composite events like \"tap\" and\n\"swipe\""
+          "body": "<p>Listens for native touch events and fires composite events like \"tap\" and\n \"swipe\"</p>"
         }
       ],
       "@ignore": [
@@ -61,7 +61,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} The maximum distance of a tap. Only if the x or y distance of\nthe performed tap is less or equal the value of this constant, a tap\nevent is fired."
+            "body": "{Integer} The maximum distance of a tap. Only if the x or y distance of\n      the performed tap is less or equal the value of this constant, a tap\n      event is fired."
           }
         ]
       },
@@ -117,7 +117,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} The minimum distance of a swipe. Only if the x or y distance\nof the performed swipe is greater as or equal the value of this\nconstant, a swipe event is fired."
+            "body": "{Integer} The minimum distance of a swipe. Only if the x or y distance\n      of the performed swipe is greater as or equal the value of this\n      constant, a swipe event is fired."
           }
         ]
       },
@@ -145,7 +145,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} The minimum velocity of a swipe. Only if the velocity of the\nperformed swipe is greater as or equal the value of this constant, a\nswipe event is fired."
+            "body": "{Integer} The minimum velocity of a swipe. Only if the velocity of the\n      performed swipe is greater as or equal the value of this constant, a\n      swipe event is fired."
           }
         ]
       },
@@ -160,7 +160,7 @@
         },
         "end": {
           "line": 66,
-          "column": 22
+          "column": 70
         }
       },
       "jsdoc": {
@@ -185,7 +185,7 @@
     "location": {
       "start": {
         "line": 76,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 84,
@@ -196,7 +196,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Create a new instance"
+          "body": "<p>Create a new instance</p>"
         }
       ],
       "@param": [
@@ -373,11 +373,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBSERVER INIT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBSERVER INIT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Initializes the native touch event listeners."
+            "body": "<p>Initializes the native touch event listeners.</p>"
           }
         ]
       },
@@ -399,11 +399,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBSERVER STOP\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBSERVER STOP\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Disconnects the native touch event listeners."
+            "body": "<p>Disconnects the native touch event listeners.</p>"
           }
         ]
       },
@@ -425,11 +425,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nNATIVE EVENT OBSERVERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  NATIVE EVENT OBSERVERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for native touch events."
+            "body": "<p>Handler for native touch events.</p>"
           }
         ],
         "@param": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scaling distance between two touches."
+            "body": "<p>Calculates the scaling distance between two touches.</p>"
           }
         ],
         "@param": [
@@ -506,7 +506,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the rotation between two touches."
+            "body": "<p>Calculates the rotation between two touches.</p>"
           }
         ],
         "@param": [
@@ -552,7 +552,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the delta of the touch position relative to its position when <code>touchstart/code> event occurred."
+            "body": "<p>Calculates the delta of the touch position relative to its position when <code>touchstart/code&gt; event occurred.</p>"
           }
         ],
         "@param": [
@@ -567,9 +567,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} an array containing objects with the calculated delta as <code>x</code>,\n<code>y</code> and the identifier of the corresponding touch.",
+            "body": "{Array} an array containing objects with the calculated delta as <code>x</code>,\n <code>y</code> and the identifier of the corresponding touch.",
             "type": "Array",
-            "description": " an array containing objects with the calculated delta as <code>x</code>,\n<code>y</code> and the identifier of the corresponding touch."
+            "description": " an array containing objects with the calculated delta as <code>x</code>,\n <code>y</code> and the identifier of the corresponding touch."
           }
         ]
       },
@@ -591,7 +591,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the delta of one single touch position relative to its position when <code>touchstart/code> event occurred."
+            "body": "<p>Calculates the delta of one single touch position relative to its position when <code>touchstart/code&gt; event occurred.</p>"
           }
         ],
         "@param": [
@@ -630,7 +630,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called by an event handler."
+            "body": "<p>Called by an event handler.</p>"
           }
         ],
         "@param": [
@@ -670,7 +670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an array with all current used touches out of multiple serial pointer events.\nNeeded because pointerEvents do not provide a touch list."
+            "body": "<p>Creates an array with all current used touches out of multiple serial pointer events.\n Needed because pointerEvents do not provide a touch list.</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maps a pointer event type to the corresponding touch event type."
+            "body": "<p>Maps a pointer event type to the corresponding touch event type.</p>"
           }
         ],
         "@param": [
@@ -757,7 +757,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the target of the event."
+            "body": "<p>Return the target of the event.</p>"
           }
         ],
         "@param": [
@@ -796,7 +796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method fixes \"pointer-events:none\" for Internet Explorer 10.\nChecks which elements are placed to position x/y and traverses the array\ntill one element has no \"pointer-events:none\" inside its style attribute."
+            "body": "<p>This method fixes \"pointer-events:none\" for Internet Explorer 10.\n Checks which elements are placed to position x/y and traverses the array\n till one element has no \"pointer-events:none\" inside its style attribute.</p>"
           }
         ],
         "@param": [
@@ -835,7 +835,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire a touch event with the given parameters"
+            "body": "<p>Fire a touch event with the given parameters</p>"
           }
         ],
         "@param": [
@@ -872,11 +872,11 @@
     "dispose": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 445,
           "column": 4
         },
         "end": {
-          "line": 450,
+          "line": 449,
           "column": 5
         }
       },
@@ -884,7 +884,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose this object"
+            "body": "<p>Dispose this object</p>"
           }
         ]
       },

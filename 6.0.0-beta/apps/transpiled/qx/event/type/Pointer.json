@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Pointer event object.\n\nthe interface of this class is based on the pointer event interface:\nhttp://www.w3.org/TR/pointerevents/"
+          "body": "<p>Pointer event object.\n the interface of this class is based on the pointer event interface:\n http://www.w3.org/TR/pointerevents/</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -133,7 +133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a unique identified for the pointer. This id is\nunique for all active pointers."
+            "body": "<p>Returns a unique identified for the pointer. This id is\n unique for all active pointers.</p>"
           }
         ],
         "@return": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the contact geometry in it's width."
+            "body": "<p>Returns the contact geometry in it's width.</p>"
           }
         ],
         "@return": [
@@ -227,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the contact geometry in it's height."
+            "body": "<p>Returns the contact geometry in it's height.</p>"
           }
         ],
         "@return": [
@@ -257,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the pressure of the pointer in a rage from 0 to 1."
+            "body": "<p>Returns the pressure of the pointer in a rage from 0 to 1.</p>"
           }
         ],
         "@return": [
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the plane angle in degrees between the Y-Z plane and the\nplane containing e.g. the stylus and the Y axis."
+            "body": "<p>Returns the plane angle in degrees between the Y-Z plane and the\n plane containing e.g. the stylus and the Y axis.</p>"
           }
         ],
         "@return": [
@@ -317,7 +317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the plane angle in degrees between the X-Z plane and the\nplane containing e.g. the stylus and the X axis."
+            "body": "<p>Returns the plane angle in degrees between the X-Z plane and the\n plane containing e.g. the stylus and the X axis.</p>"
           }
         ],
         "@return": [
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -381,7 +381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the device type which the event triggered. This can be one\nof the following strings: <code>mouse</code>, <code>wheel</code>,\n<code>pen</code> or <code>touch</code>."
+            "body": "<p>Returns the device type which the event triggered. This can be one\n of the following strings: <code>mouse</code>, <code>wheel</code>,\n <code>pen</code> or <code>touch</code>.</p>"
           }
         ],
         "@return": [
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the pointer is the primary pointer."
+            "body": "<p>Returns whether the pointer is the primary pointer.</p>"
           }
         ],
         "@return": [
@@ -555,6 +555,7 @@
     "qx.event.type.Tap",
     "qx.event.type.Track",
     "qx.ui.table.pane.CellEvent",
-    "qx.ui.virtual.core.CellEvent"
+    "qx.ui.virtual.core.CellEvent",
+    "qx.test.ui.virtual.PointerEventMock"
   ]
 }

@@ -27,11 +27,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A window widget\n\nMore information can be found in the package description {@link qx.ui.window}."
+          "body": "<p>A window widget\n More information can be found in the package description {@link qx.ui.window}.</p>"
         }
       ],
       "@childControl": [
@@ -113,7 +113,7 @@
     "location": {
       "start": {
         "line": 65,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 105,
@@ -124,7 +124,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the window is closed.\n\nThe close action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired before the window is closed.\n The close action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the window is closed"
+            "body": "<p>Fired if the window is closed</p>"
           }
         ]
       },
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the window is minimize.\n\nThe minimize action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired before the window is minimize.\n The minimize action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the window is minimized"
+            "body": "<p>Fired if the window is minimized</p>"
           }
         ]
       },
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the window is maximize.\n\nThe maximize action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired before the window is maximize.\n The maximize action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -307,7 +307,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the window is maximized"
+            "body": "<p>Fired if the window is maximized</p>"
           }
         ]
       },
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the window is restored from a minimized or maximized state.\n\nThe restored action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired before the window is restored from a minimized or maximized state.\n The restored action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -351,7 +351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the window is restored from a minimized or maximized state"
+            "body": "<p>Fired if the window is restored from a minimized or maximized state</p>"
           }
         ]
       },
@@ -375,11 +375,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL OPTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL OPTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -408,7 +408,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -437,7 +437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -466,7 +466,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If the window is active, only one window in a single qx.ui.window.Manager could\nhave set this to true at the same time."
+            "body": "<p>If the window is active, only one window in a single qx.ui.window.Manager could\n  have set this to true at the same time.</p>"
           }
         ]
       },
@@ -493,11 +493,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBASIC OPTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BASIC OPTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Should the window be always on top"
+            "body": "<p>Should the window be always on top</p>"
           }
         ]
       },
@@ -523,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should the window be modal (this disables minimize and maximize buttons)"
+            "body": "<p>Should the window be modal (this disables minimize and maximize buttons)</p>"
           }
         ]
       },
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The text of the caption"
+            "body": "<p>The text of the caption</p>"
           }
         ]
       },
@@ -576,7 +576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The icon of the caption"
+            "body": "<p>The icon of the caption</p>"
           }
         ]
       },
@@ -604,7 +604,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The text of the statusbar"
+            "body": "<p>The text of the statusbar</p>"
           }
         ]
       },
@@ -631,11 +631,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHIDE CAPTIONBAR FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HIDE CAPTIONBAR FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Should the close button be shown"
+            "body": "<p>Should the close button be shown</p>"
           }
         ]
       },
@@ -662,7 +662,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should the maximize button be shown"
+            "body": "<p>Should the maximize button be shown</p>"
           }
         ]
       },
@@ -689,7 +689,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should the minimize button be shown"
+            "body": "<p>Should the minimize button be shown</p>"
           }
         ]
       },
@@ -716,11 +716,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDISABLE CAPTIONBAR FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DISABLE CAPTIONBAR FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Should the user have the ability to close the window"
+            "body": "<p>Should the user have the ability to close the window</p>"
           }
         ]
       },
@@ -746,7 +746,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should the user have the ability to maximize the window"
+            "body": "<p>Should the user have the ability to maximize the window</p>"
           }
         ]
       },
@@ -772,7 +772,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Should the user have the ability to minimize the window"
+            "body": "<p>Should the user have the ability to minimize the window</p>"
           }
         ]
       },
@@ -798,11 +798,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTATUSBAR CONFIG\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STATUSBAR CONFIG\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Should the statusbar be shown"
+            "body": "<p>Should the statusbar be shown</p>"
           }
         ]
       },
@@ -828,11 +828,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWHEN TO AUTOMATICALY CENTER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WHEN TO AUTOMATICALY CENTER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether this window should be automatically centered when it appears"
+            "body": "<p>Whether this window should be automatically centered when it appears</p>"
           }
         ]
       },
@@ -858,7 +858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether this window should be automatically centered when its container\nis resized."
+            "body": "<p>Whether this window should be automatically centered when its container\n is resized.</p>"
           }
         ]
       },
@@ -884,11 +884,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCLOSE BEHAVIOR\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CLOSE BEHAVIOR\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Should the window be automatically destroyed when it is closed.\n\nWhen false, closing the window behaves like hiding the window.\n\nWhen true, the window is removed from its container (the root), all\nlisteners are removed, the window's widgets are removed, and the window\nis destroyed.\n\nNOTE: If any widgets that were added to this window require special\nclean-up, you should listen on the 'close' event and remove and clean\nup those widgets there."
+            "body": "<p>Should the window be automatically destroyed when it is closed.\n When false, closing the window behaves like hiding the window.\n When true, the window is removed from its container (the root), all\n listeners are removed, the window's widgets are removed, and the window\n is destroyed.\n NOTE: If any widgets that were added to this window require special\n clean-up, you should listen on the 'close' event and remove and clean\n up those widgets there.</p>"
           }
         ]
       },
@@ -1139,11 +1139,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The children container needed by the {@link qx.ui.core.MRemoteChildrenHandling}\nmixin"
+            "body": "<p>The children container needed by the {@link qx.ui.core.MRemoteChildrenHandling}\n mixin</p>"
           }
         ],
         "@return": [
@@ -1177,7 +1177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -1209,7 +1209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1248,22 +1248,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -1300,11 +1300,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCAPTIONBAR INTERNALS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CAPTIONBAR INTERNALS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Updates the status and the visibility of each element of the captionbar."
+            "body": "<p>Updates the status and the visibility of each element of the captionbar.</p>"
           }
         ]
       },
@@ -1326,11 +1326,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Close the current window instance.\n\nSimply calls the {@link qx.ui.core.Widget#hide} method if the\n{@link qx.ui.win.Window#autoDestroy} property is false; otherwise\nremoves and destroys the window."
+            "body": "<p>Close the current window instance.\n Simply calls the {@link qx.ui.core.Widget#hide} method if the\n {@link qx.ui.win.Window#autoDestroy} property is false; otherwise\n removes and destroys the window.</p>"
           }
         ]
       },
@@ -1352,7 +1352,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Open the window."
+            "body": "<p>Open the window.</p>"
           }
         ]
       },
@@ -1374,7 +1374,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Centers the window to the parent.\n\nThis call works with the size of the parent widget and the size of\nthe window as calculated in the last layout flush. It is best to call\nthis method just after rendering the window in the \"resize\" event:\n<pre class='javascript'>\nwin.addListenerOnce(\"resize\", this.center, this);\n</pre>"
+            "body": "<p>Centers the window to the parent.\n This call works with the size of the parent widget and the size of\n the window as calculated in the last layout flush. It is best to call\n this method just after rendering the window in the \"resize\" event:\n </p>\n<pre class='javascript'>\n   win.addListenerOnce(\"resize\", this.center, this);\n </pre>"
           }
         ]
       },
@@ -1396,7 +1396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximize the window."
+            "body": "<p>Maximize the window.</p>"
           }
         ]
       },
@@ -1418,7 +1418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Minimized the window."
+            "body": "<p>Minimized the window.</p>"
           }
         ]
       },
@@ -1440,7 +1440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restore the window to <code>\"normal\"</code>, if it is\n<code>\"maximized\"</code> or <code>\"minimized\"</code>."
+            "body": "<p>Restore the window to <code>\"normal\"</code>, if it is\n <code>\"maximized\"</code> or <code>\"minimized\"</code>.</p>"
           }
         ]
       },
@@ -1462,7 +1462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the window's position relative to its parent"
+            "body": "<p>Set the window's position relative to its parent</p>"
           }
         ],
         "@param": [
@@ -1500,15 +1500,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return <code>true</code> if the window is in maximized state,\nbut note that the window in maximized state could also be invisible, this\nis equivalent to minimized. So use the {@link qx.ui.window.Window#getMode}\nto get the window mode."
+            "body": "<p>Return <code>true</code> if the window is in maximized state,\n but note that the window in maximized state could also be invisible, this\n is equivalent to minimized. So use the {@link qx.ui.window.Window#getMode}\n to get the window mode.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the window is maximized,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the window is maximized,\n   <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the window is maximized,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the window is maximized,\n   <code>false</code> otherwise."
           }
         ]
       },
@@ -1530,7 +1530,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the window mode as <code>String</code>:\n<code>\"maximized\"</code>, <code>\"normal\"</code> or <code>\"minimized\"</code>."
+            "body": "<p>Return the window mode as <code>String</code>:\n <code>\"maximized\"</code>, <code>\"normal\"</code> or <code>\"minimized\"</code>.</p>"
           }
         ],
         "@return": [
@@ -1560,11 +1560,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1589,7 +1589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1614,7 +1614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element, to which the content padding should be applied."
+            "body": "<p>Returns the element, to which the content padding should be applied.</p>"
           }
         ],
         "@return": [
@@ -1644,7 +1644,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1669,7 +1669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1701,7 +1701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1726,7 +1726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1786,11 +1786,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBASIC EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BASIC EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Stops every event"
+            "body": "<p>Stops every event</p>"
           }
         ],
         "@param": [
@@ -1821,7 +1821,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focuses the window instance."
+            "body": "<p>Focuses the window instance.</p>"
           }
         ],
         "@param": [
@@ -1852,7 +1852,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listens to the \"focusout\" event to deactivate the window (if the\ncurrently focused widget is not a child of the window)"
+            "body": "<p>Listens to the \"focusout\" event to deactivate the window (if the\n currently focused widget is not a child of the window)</p>"
           }
         ],
         "@param": [
@@ -1883,7 +1883,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximizes the window or restores it if it is already\nmaximized."
+            "body": "<p>Maximizes the window or restores it if it is already\n maximized.</p>"
           }
         ],
         "@param": [
@@ -1914,11 +1914,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENTS FOR CAPTIONBAR BUTTONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS FOR CAPTIONBAR BUTTONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Minimizes the window, removes all states from the minimize button and\nstops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation})."
+            "body": "<p>Minimizes the window, removes all states from the minimize button and\n stops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation}).</p>"
           }
         ],
         "@param": [
@@ -1949,7 +1949,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restores the window, removes all states from the restore button and\nstops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation})."
+            "body": "<p>Restores the window, removes all states from the restore button and\n stops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation}).</p>"
           }
         ],
         "@param": [
@@ -1980,7 +1980,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximizes the window, removes all states from the maximize button and\nstops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation})."
+            "body": "<p>Maximizes the window, removes all states from the maximize button and\n stops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation}).</p>"
           }
         ],
         "@param": [
@@ -2011,7 +2011,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Closes the window, removes all states from the close button and\nstops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation})."
+            "body": "<p>Closes the window, removes all states from the close button and\n stops the further propagation of the event (calling {@link qx.event.type.Event#stopPropagation}).</p>"
           }
         ],
         "@param": [
@@ -2039,7 +2039,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Forward the call with the given function name to the children container"
+            "body": "<p>Forward the call with the given function name to the children container</p>"
           }
         ],
         "@param": [
@@ -2097,15 +2097,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -2122,7 +2122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -2147,7 +2147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -2190,7 +2190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child item."
+            "body": "<p>Remove the given child item.</p>"
           }
         ],
         "@param": [
@@ -2224,7 +2224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -2249,7 +2249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given item if it is\na child item. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given item if it is\n a child item. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2264,9 +2264,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given item is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given item is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given item is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given item is no child of this layout."
           }
         ]
       }
@@ -2283,7 +2283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2325,7 +2325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item before another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item before another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2367,7 +2367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item after another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item after another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2409,7 +2409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the item at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the item at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2443,15 +2443,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.layout.Abstract"
           }
         ]
@@ -2469,7 +2469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -2494,11 +2494,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCORE FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CORE FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the widget, which draws the resize/move frame. The resize frame is\nshared by all widgets and is added to the root widget."
+            "body": "<p>Get the widget, which draws the resize/move frame. The resize frame is\n shared by all widgets and is added to the root widget.</p>"
           }
         ],
         "@return": [
@@ -2532,11 +2532,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESIZE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESIZE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the new boundaries at each interval\nof the resize sequence."
+            "body": "<p>Computes the new boundaries at each interval\n of the resize sequence.</p>"
           }
         ],
         "@param": [
@@ -2570,7 +2570,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the internally stored resize mode"
+            "body": "<p>Updates the internally stored resize mode</p>"
           }
         ],
         "@param": [
@@ -2596,7 +2596,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for computing the proper resize action based on the\ngiven parameters."
+            "body": "<p>Internal helper for computing the proper resize action based on the\n given parameters.</p>"
           }
         ],
         "@param": [
@@ -2651,11 +2651,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESIZE EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESIZE EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the pointer down event"
+            "body": "<p>Event handler for the pointer down event</p>"
           }
         ],
         "@param": [
@@ -2681,7 +2681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer up event"
+            "body": "<p>Event handler for the pointer up event</p>"
           }
         ],
         "@param": [
@@ -2707,7 +2707,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>losecapture</code> event."
+            "body": "<p>Event listener for <code>losecapture</code> event.</p>"
           }
         ],
         "@param": [
@@ -2733,7 +2733,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer move event"
+            "body": "<p>Event handler for the pointer move event</p>"
           }
         ],
         "@param": [
@@ -2759,7 +2759,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer out event"
+            "body": "<p>Event handler for the pointer out event</p>"
           }
         ],
         "@param": [
@@ -3337,11 +3337,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCORE FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CORE FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Configures the given widget as a move handle"
+            "body": "<p>Configures the given widget as a move handle</p>"
           }
         ],
         "@param": [
@@ -3367,7 +3367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget, which draws the resize/move frame."
+            "body": "<p>Get the widget, which draws the resize/move frame.</p>"
           }
         ],
         "@return": [
@@ -3401,11 +3401,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMOVE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MOVE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the new drag coordinates"
+            "body": "<p>Computes the new drag coordinates</p>"
           }
         ],
         "@param": [
@@ -3439,11 +3439,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMOVE EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MOVE EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Roll handler which prevents the scrolling via tap & move on parent widgets\nduring the move of the widget."
+            "body": "<p>Roll handler which prevents the scrolling via tap &amp; move on parent widgets\n during the move of the widget.</p>"
           }
         ],
         "@param": [
@@ -3469,7 +3469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enables the capturing of the caption bar and prepares the drag session and the\nappearance (translucent, frame or opaque) for the moving of the window."
+            "body": "<p>Enables the capturing of the caption bar and prepares the drag session and the\n appearance (translucent, frame or opaque) for the moving of the window.</p>"
           }
         ],
         "@param": [
@@ -3495,7 +3495,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Does the moving of the window by rendering the position\nof the window (or frame) at runtime using direct dom methods."
+            "body": "<p>Does the moving of the window by rendering the position\n of the window (or frame) at runtime using direct dom methods.</p>"
           }
         ],
         "@param": [
@@ -3521,7 +3521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disables the capturing of the caption bar and moves the window\nto the last position of the drag session. Also restores the appearance\nof the window."
+            "body": "<p>Disables the capturing of the caption bar and moves the window\n to the last position of the drag session. Also restores the appearance\n of the window.</p>"
           }
         ],
         "@param": [
@@ -3547,7 +3547,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>losecapture</code> event."
+            "body": "<p>Event listener for <code>losecapture</code> event.</p>"
           }
         ],
         "@param": [
@@ -8904,13 +8904,14 @@
     "location": {
       "start": {
         "line": 1181,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 1199,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qxl.demobrowser.InfoWindow"

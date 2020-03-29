@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 76,
+        "line": 77,
         "column": 3
       }
     },
@@ -21,17 +21,17 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Processes the incoming log entry and displays it by means of the native\nlogging capabilities of the client.\n\nSupported browsers:\n* Firefox <4 using FireBug (if available).\n* Firefox >=4 using the Web Console.\n* WebKit browsers using the Web Inspector/Developer Tools.\n* Internet Explorer 8+ using the F12 Developer Tools.\n* Opera >=10.60 using either the Error Console or Dragonfly\n\nCurrently unsupported browsers:\n* Opera <10.60"
+          "body": "<p>Processes the incoming log entry and displays it by means of the native\n logging capabilities of the client.\n Supported browsers:</p>\n<ul>\n<li>Firefox &lt;4 using FireBug (if available).</li>\n<li>Firefox &gt;=4 using the Web Console.</li>\n<li>WebKit browsers using the Web Inspector/Developer Tools.</li>\n<li>Internet Explorer 8+ using the F12 Developer Tools.</li>\n<li>Opera &gt;=10.60 using either the Error Console or Dragonfly\nCurrently unsupported browsers:</li>\n<li>Opera &lt;10.60</li>\n</ul>"
         }
       ],
       "@require": [
         {
           "name": "@require",
-          "body": "qx.log.appender.Util"
+          "body": "qx.log.appender.Formatter"
         },
         {
           "name": "@require",
@@ -49,7 +49,7 @@
           "column": 4
         },
         "end": {
-          "line": 61,
+          "line": 62,
           "column": 5
         }
       },
@@ -57,7 +57,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Processes a single log entry"
+            "body": "<p>Processes a single log entry</p>"
           }
         ],
         "@param": [
@@ -77,11 +77,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 73,
-        "column": 2
+        "line": 74,
+        "column": 10
       },
       "end": {
-        "line": 75,
+        "line": 76,
         "column": 3
       }
     },
@@ -89,7 +89,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

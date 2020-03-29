@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The ScrollArea provides a container widget with on demand scroll bars\nif the content size exceeds the size of the container."
+          "body": "<p>The ScrollArea provides a container widget with on demand scroll bars\n if the content size exceeds the size of the container.</p>"
         }
       ],
       "@childControl": [
@@ -84,7 +84,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default width which is used for the width of the scroll bar if\noverlaid."
+            "body": "<p>The default width which is used for the width of the scroll bar if\n overlaid.</p>"
           }
         ]
       },
@@ -96,7 +96,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 86,
@@ -107,7 +107,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as the scroll animation in X direction ends."
+            "body": "<p>Fired as soon as the scroll animation in X direction ends.</p>"
           }
         ]
       },
@@ -150,7 +150,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as the scroll animation in Y direction ends."
+            "body": "<p>Fired as soon as the scroll animation in Y direction ends.</p>"
           }
         ]
       },
@@ -174,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The policy, when the horizontal scrollbar should be shown.\n<ul>\n<li><b>auto</b>: Show scrollbar on demand</li>\n<li><b>on</b>: Always show the scrollbar</li>\n<li><b>off</b>: Never show the scrollbar</li>\n</ul>"
+            "body": "<p>The policy, when the horizontal scrollbar should be shown.\n </p>\n<ul>\n   <li><b>auto</b>: Show scrollbar on demand</li>\n   <li><b>on</b>: Always show the scrollbar</li>\n   <li><b>off</b>: Never show the scrollbar</li>\n </ul>"
           }
         ]
       },
@@ -234,7 +234,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The policy, when the horizontal scrollbar should be shown.\n<ul>\n<li><b>auto</b>: Show scrollbar on demand</li>\n<li><b>on</b>: Always show the scrollbar</li>\n<li><b>off</b>: Never show the scrollbar</li>\n</ul>"
+            "body": "<p>The policy, when the horizontal scrollbar should be shown.\n </p>\n<ul>\n   <li><b>auto</b>: Show scrollbar on demand</li>\n   <li><b>on</b>: Always show the scrollbar</li>\n   <li><b>off</b>: Never show the scrollbar</li>\n </ul>"
           }
         ]
       },
@@ -265,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Group property, to set the overflow of both scroll bars."
+            "body": "<p>Group property, to set the overflow of both scroll bars.</p>"
           }
         ]
       },
@@ -317,26 +317,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILD CONTROL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILD CONTROL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -373,19 +373,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPANE SIZE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PANE SIZE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the dimensions of the pane."
+            "body": "<p>Returns the dimensions of the pane.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map|null} The pane dimension in pixel. Contains\nthe keys <code>width</code> and <code>height</code>.",
+            "body": "{Map|null} The pane dimension in pixel. Contains\n    the keys <code>width</code> and <code>height</code>.",
             "type": "Map|null",
-            "description": " The pane dimension in pixel. Contains\nthe keys <code>width</code> and <code>height</code>."
+            "description": " The pane dimension in pixel. Contains\n    the keys <code>width</code> and <code>height</code>."
           }
         ]
       },
@@ -407,11 +407,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nITEM LOCATION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ITEM LOCATION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the top offset of the given item in relation to the\ninner height of this widget."
+            "body": "<p>Returns the top offset of the given item in relation to the\n inner height of this widget.</p>"
           }
         ],
         "@param": [
@@ -450,7 +450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the top offset of the end of the given item in relation to the\ninner height of this widget."
+            "body": "<p>Returns the top offset of the end of the given item in relation to the\n inner height of this widget.</p>"
           }
         ],
         "@param": [
@@ -489,7 +489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the left offset of the given item in relation to the\ninner width of this widget."
+            "body": "<p>Returns the left offset of the given item in relation to the\n inner width of this widget.</p>"
           }
         ],
         "@param": [
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the left offset of the end of the given item in relation to the\ninner width of this widget."
+            "body": "<p>Returns the left offset of the end of the given item in relation to the\n inner width of this widget.</p>"
           }
         ],
         "@param": [
@@ -567,11 +567,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Scrolls the element's content to the given left coordinate"
+            "body": "<p>Scrolls the element's content to the given left coordinate</p>"
           }
         ],
         "@param": [
@@ -610,7 +610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content by the given left offset"
+            "body": "<p>Scrolls the element's content by the given left offset</p>"
           }
         ],
         "@param": [
@@ -649,7 +649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scroll left position of the content"
+            "body": "<p>Returns the scroll left position of the content</p>"
           }
         ],
         "@return": [
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content to the given top coordinate"
+            "body": "<p>Scrolls the element's content to the given top coordinate</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content by the given top offset"
+            "body": "<p>Scrolls the element's content by the given top offset</p>"
           }
         ],
         "@param": [
@@ -757,7 +757,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scroll top position of the content"
+            "body": "<p>Returns the scroll top position of the content</p>"
           }
         ],
         "@return": [
@@ -787,7 +787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "In case a scroll animation is currently running in X direction,\nit will be stopped. If not, the method does nothing."
+            "body": "<p>In case a scroll animation is currently running in X direction,\n it will be stopped. If not, the method does nothing.</p>"
           }
         ]
       },
@@ -809,7 +809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "In case a scroll animation is currently running in X direction,\nit will be stopped. If not, the method does nothing."
+            "body": "<p>In case a scroll animation is currently running in X direction,\n it will be stopped. If not, the method does nothing.</p>"
           }
         ]
       },
@@ -831,11 +831,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the scroll animation end event for both scroll bars."
+            "body": "<p>Event handler for the scroll animation end event for both scroll bars.</p>"
           }
         ],
         "@param": [
@@ -866,7 +866,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the scroll event of the horizontal scrollbar"
+            "body": "<p>Event handler for the scroll event of the horizontal scrollbar</p>"
           }
         ],
         "@param": [
@@ -897,7 +897,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the scroll event of the vertical scrollbar"
+            "body": "<p>Event handler for the scroll event of the vertical scrollbar</p>"
           }
         ],
         "@param": [
@@ -928,7 +928,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the horizontal scroll event of the pane"
+            "body": "<p>Event handler for the horizontal scroll event of the pane</p>"
           }
         ],
         "@param": [
@@ -959,7 +959,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the vertical scroll event of the pane"
+            "body": "<p>Event handler for the vertical scroll event of the pane</p>"
           }
         ],
         "@param": [
@@ -990,7 +990,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for visibility changes of horizontal scrollbar."
+            "body": "<p>Event handler for visibility changes of horizontal scrollbar.</p>"
           }
         ],
         "@param": [
@@ -1021,7 +1021,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for visibility changes of horizontal scrollbar."
+            "body": "<p>Event handler for visibility changes of horizontal scrollbar.</p>"
           }
         ],
         "@param": [
@@ -1052,11 +1052,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the visibility state for scrollbars."
+            "body": "<p>Computes the visibility state for scrollbars.</p>"
           }
         ]
       },
@@ -1079,7 +1079,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\nor a native browser scrollbar."
+            "body": "<p>Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\n or a native browser scrollbar.</p>"
           }
         ],
         "@param": [
@@ -1133,7 +1133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the pointerdown event which simply stops the momentum scrolling."
+            "body": "<p>Handler for the pointerdown event which simply stops the momentum scrolling.</p>"
           }
         ],
         "@param": [
@@ -1159,7 +1159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Roll event handler"
+            "body": "<p>Roll event handler</p>"
           }
         ],
         "@param": [
@@ -1185,7 +1185,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the first scrollable parent (in the parent chain)."
+            "body": "<p>Finds the first scrollable parent (in the parent chain).</p>"
           }
         ],
         "@param": [
@@ -1219,7 +1219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is scrollable."
+            "body": "<p>Whether the widget is scrollable.</p>"
           }
         ],
         "@param": [
@@ -1253,7 +1253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the bounds of the given scrollable."
+            "body": "<p>Gets the bounds of the given scrollable.</p>"
           }
         ],
         "@param": [
@@ -1287,7 +1287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the edge type or null if the pointer isn't within one of the thresholds."
+            "body": "<p>Gets the edge type or null if the pointer isn't within one of the thresholds.</p>"
           }
         ],
         "@param": [
@@ -1335,7 +1335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the axis ('x' or 'y') by the edge type."
+            "body": "<p>Gets the axis ('x' or 'y') by the edge type.</p>"
           }
         ],
         "@param": [
@@ -1377,7 +1377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the threshold amount by edge type."
+            "body": "<p>Gets the threshold amount by edge type.</p>"
           }
         ],
         "@param": [
@@ -1411,7 +1411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is visible."
+            "body": "<p>Whether the scrollbar is visible.</p>"
           }
         ],
         "@param": [
@@ -1452,7 +1452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is exceeding it's maximum position."
+            "body": "<p>Whether the scrollbar is exceeding it's maximum position.</p>"
           }
         ],
         "@param": [
@@ -1500,7 +1500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the threshold exceedance (which may be negative)."
+            "body": "<p>Calculates the threshold exceedance (which may be negative).</p>"
           }
         ],
         "@param": [
@@ -1541,7 +1541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scroll amount (which may be negative).\nThe amount is influenced by the scrollbar size (bigger = faster)\nthe exceedanceAmount (bigger = faster) and the slowDownFactor."
+            "body": "<p>Calculates the scroll amount (which may be negative).\n The amount is influenced by the scrollbar size (bigger = faster)\n the exceedanceAmount (bigger = faster) and the slowDownFactor.</p>"
           }
         ],
         "@param": [
@@ -1582,7 +1582,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the given scrollable on the given axis for the given amount."
+            "body": "<p>Scrolls the given scrollable on the given axis for the given amount.</p>"
           }
         ],
         "@param": [
@@ -1622,11 +1622,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the drag event."
+            "body": "<p>Event handler for the drag event.</p>"
           }
         ],
         "@param": [
@@ -1652,7 +1652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the dragend event."
+            "body": "<p>Event handler for the dragend event.</p>"
           }
         ],
         "@param": [

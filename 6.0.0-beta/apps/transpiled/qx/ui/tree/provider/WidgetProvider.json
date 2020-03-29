@@ -26,11 +26,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The provider implements the {@link qx.ui.virtual.core.IWidgetCellProvider}\nAPI, which can be used as delegate for the widget cell rendering and it\nprovides a API to bind the model with the rendered item."
+          "body": "<p>The provider implements the {@link qx.ui.virtual.core.IWidgetCellProvider}\n API, which can be used as delegate for the widget cell rendering and it\n provides a API to bind the model with the rendered item.</p>"
         }
       ],
       "@internal": [
@@ -46,7 +46,7 @@
     "location": {
       "start": {
         "line": 41,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 49,
@@ -143,11 +143,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interface implementation"
+            "body": "<p>Interface implementation</p>"
           }
         ],
         "@return": [
@@ -266,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interface implementation"
+            "body": "<p>Interface implementation</p>"
           }
         ],
         "@return": [
@@ -300,7 +300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -335,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -370,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -385,9 +385,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the row can be selected,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> when the row can be selected,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> when the row can be selected,\n<code>false</code> otherwise."
+            "description": " <code>true</code> when the row can be selected,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -413,11 +413,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Styles a selected item."
+            "body": "<p>Styles a selected item.</p>"
           }
         ],
         "@param": [
@@ -448,7 +448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Styles a not selected item."
+            "body": "<p>Styles a not selected item.</p>"
           }
         ],
         "@param": [
@@ -479,7 +479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls the delegate <code>onPool</code> method when it is used in the\n{@link #delegate} property."
+            "body": "<p>Calls the delegate <code>onPool</code> method when it is used in the\n {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -510,11 +510,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the created item's."
+            "body": "<p>Event handler for the created item's.</p>"
           }
         ],
         "@param": [
@@ -545,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the change delegate event."
+            "body": "<p>Event handler for the change delegate event.</p>"
           }
         ],
         "@param": [
@@ -576,7 +576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler when a node changes opened or closed state."
+            "body": "<p>Handler when a node changes opened or closed state.</p>"
           }
         ],
         "@param": [
@@ -605,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the name of the property, where the children are stored in the model."
+            "body": "<p>Sets the name of the property, where the children are stored in the model.</p>"
           }
         ],
         "@param": [
@@ -632,7 +632,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the name of the property, where the value for the tree folders label\nis stored in the model classes."
+            "body": "<p>Sets the name of the property, where the value for the tree folders label\n is stored in the model classes.</p>"
           }
         ],
         "@param": [
@@ -658,15 +658,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding the default properties from the model to the\ntarget widget. The used default properties  depends on the passed item.\n\nThis method should only be called in the {@link IVirtualTreeDelegate#bindItem}\nfunction implemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding the default properties from the model to the\n target widget. The used default properties  depends on the passed item.\n This method should only be called in the {@link IVirtualTreeDelegate#bindItem}\n function implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.core.Widget} The internally created and used node or\nleaf.",
+            "body": "item {qx.ui.core.Widget} The internally created and used node or\n   leaf.",
             "paramName": "item",
-            "description": " The internally created and used node or\nleaf.",
+            "description": " The internally created and used node or\n   leaf.",
             "type": "qx.ui.core.Widget"
           },
           {
@@ -691,15 +691,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the model to the target\nwidget.\n\nThis method should only be called in the {@link IVirtualTreeDelegate#bindItem}\nfunction implemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the model to the target\n widget.\n This method should only be called in the {@link IVirtualTreeDelegate#bindItem}\n function implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePath {String | null} The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "body": "sourcePath {String | null} The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "paramName": "sourcePath",
-            "description": " The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "description": " The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "type": [
               "String",
               "null"
@@ -751,7 +751,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the target widget to\nthe model.\nThis method should only be called in the\n{@link qx.ui.tree.core.IVirtualTreeDelegate#bindItem} function implemented by the\n{@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the target widget to\n the model.\n This method should only be called in the\n {@link qx.ui.tree.core.IVirtualTreeDelegate#bindItem} function implemented by the\n {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -820,7 +820,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets up the binding for the given item and index."
+            "body": "<p>Sets up the binding for the given item and index.</p>"
           }
         ],
         "@param": [
@@ -853,15 +853,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the binding of the given item."
+            "body": "<p>Removes the binding of the given item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.core.Widget} The item which the binding should be\nremoved.",
+            "body": "item {qx.ui.core.Widget} The item which the binding should be\n   removed.",
             "paramName": "item",
-            "description": " The item which the binding should be\nremoved.",
+            "description": " The item which the binding should be\n   removed.",
             "type": "qx.ui.core.Widget"
           }
         ]
@@ -879,7 +879,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to create the path for binding."
+            "body": "<p>Helper method to create the path for binding.</p>"
           }
         ],
         "@param": [
@@ -923,7 +923,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to save the binding for the widget."
+            "body": "<p>Helper method to save the binding for the widget.</p>"
           }
         ],
         "@param": [
@@ -956,7 +956,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method which returns all bound id from the widget."
+            "body": "<p>Helper method which returns all bound id from the widget.</p>"
           }
         ],
         "@param": [
@@ -1417,13 +1417,14 @@
     "location": {
       "start": {
         "line": 290,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 295,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

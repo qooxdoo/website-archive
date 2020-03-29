@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Central instance pool for event objects. All event objects dispatched by the\nevent loader are pooled using this class."
+          "body": "<p>Central instance pool for event objects. All event objects dispatched by the\n event loader are pooled using this class.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 40,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
@@ -49,15 +49,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Even though this class contains almost no code it is required because the"
+          "body": "<p>Even though this class contains almost no code it is required because the</p>"
         },
         {
           "name": "@description",
-          "body": "legacy code needs a place to patch the event pooling behavior."
+          "body": "<p>legacy code needs a place to patch the event pooling behavior.</p>"
         },
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

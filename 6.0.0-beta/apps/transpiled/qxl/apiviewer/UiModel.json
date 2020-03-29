@@ -38,7 +38,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display inherited items"
+            "body": "<p>whether to display inherited items</p>"
           }
         ]
       },
@@ -64,7 +64,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display included items"
+            "body": "<p>whether to display included items</p>"
           }
         ]
       },
@@ -90,7 +90,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display protected items"
+            "body": "<p>whether to display protected items</p>"
           }
         ]
       },
@@ -116,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display protected items"
+            "body": "<p>whether to display protected items</p>"
           }
         ]
       },
@@ -142,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display private items"
+            "body": "<p>whether to display private items</p>"
           }
         ]
       },
@@ -168,7 +168,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display internal items"
+            "body": "<p>whether to display internal items</p>"
           }
         ]
       },

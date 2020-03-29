@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This singleton manages visible menu instances and supports some\ncore features to schedule menu open/close with timeout support.\n\nIt also manages the whole keyboard support for the currently\nregistered widgets.\n\nThe zIndex order is also managed by this class."
+          "body": "<p>This singleton manages visible menu instances and supports some\n core features to schedule menu open/close with timeout support.\n It also manages the whole keyboard support for the currently\n registered widgets.\n The zIndex order is also managed by this class.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 75,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -140,11 +140,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Query engine for menu children."
+            "body": "<p>Query engine for menu children.</p>"
           }
         ],
         "@param": [
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widget is inside any Menu instance."
+            "body": "<p>Whether the given widget is inside any Menu instance.</p>"
           }
         ],
         "@param": [
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widget is one of the menu openers."
+            "body": "<p>Whether the given widget is one of the menu openers.</p>"
           }
         ],
         "@param": [
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an instance of a menu button if the given widget is a child"
+            "body": "<p>Returns an instance of a menu button if the given widget is a child</p>"
           }
         ],
         "@param": [
@@ -323,11 +323,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a menu to the list of visible menus."
+            "body": "<p>Adds a menu to the list of visible menus.</p>"
           }
         ],
         "@param": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a menu from the list of visible menus."
+            "body": "<p>Remove a menu from the list of visible menus.</p>"
           }
         ],
         "@param": [
@@ -389,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides all currently opened menus."
+            "body": "<p>Hides all currently opened menus.</p>"
           }
         ]
       },
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the menu which was opened at last (which\nis the active one this way)"
+            "body": "<p>Returns the menu which was opened at last (which\n is the active one this way)</p>"
           }
         ],
         "@return": [
@@ -441,11 +441,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCHEDULED OPEN/CLOSE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCHEDULED OPEN/CLOSE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Schedules the given menu to be opened after the\n{@link qx.ui.menu.Menu#openInterval} configured by the\nmenu instance itself."
+            "body": "<p>Schedules the given menu to be opened after the\n {@link qx.ui.menu.Menu#openInterval} configured by the\n menu instance itself.</p>"
           }
         ],
         "@param": [
@@ -476,7 +476,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedules the given menu to be closed after the\n{@link qx.ui.menu.Menu#closeInterval} configured by the\nmenu instance itself."
+            "body": "<p>Schedules the given menu to be closed after the\n {@link qx.ui.menu.Menu#closeInterval} configured by the\n menu instance itself.</p>"
           }
         ],
         "@param": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the given menu is scheduled for open this pending\nrequest is canceled."
+            "body": "<p>When the given menu is scheduled for open this pending\n request is canceled.</p>"
           }
         ],
         "@param": [
@@ -538,7 +538,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the given menu is scheduled for close this pending\nrequest is canceled."
+            "body": "<p>When the given menu is scheduled for close this pending\n request is canceled.</p>"
           }
         ],
         "@param": [
@@ -569,11 +569,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTIMER EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TIMER EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for a pending open request. Configured to the interval\nof the current menu to open."
+            "body": "<p>Event listener for a pending open request. Configured to the interval\n of the current menu to open.</p>"
           }
         ],
         "@param": [
@@ -604,7 +604,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for a pending close request. Configured to the interval\nof the current menu to close."
+            "body": "<p>Event listener for a pending close request. Configured to the interval\n of the current menu to close.</p>"
           }
         ],
         "@param": [
@@ -635,11 +635,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONTEXTMENU EVENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONTEXTMENU EVENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Internal function registers a handler to stop next\n<code>contextmenu</code> event.\nThis function will be called by {@link qx.ui.menu.Button#_onTap}, if\nright click was pressed."
+            "body": "<p>Internal function registers a handler to stop next\n <code>contextmenu</code> event.\n This function will be called by {@link qx.ui.menu.Button#_onTap}, if\n right click was pressed.</p>"
           }
         ],
         "@internal": [
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event handler to stop <code>contextmenu</code> event bubbling,\nif target is inside the opened menu."
+            "body": "<p>Internal event handler to stop <code>contextmenu</code> event bubbling,\n if target is inside the opened menu.</p>"
           }
         ],
         "@param": [
@@ -704,11 +704,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPOINTER EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  POINTER EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for pointerdown events"
+            "body": "<p>Event handler for pointerdown events</p>"
           }
         ],
         "@param": [
@@ -739,7 +739,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nKEY EVENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  KEY EVENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -811,7 +811,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for all keyup/keydown events. Stops all events\nwhen any menu is opened."
+            "body": "<p>Event handler for all keyup/keydown events. Stops all events\n when any menu is opened.</p>"
           }
         ],
         "@param": [
@@ -842,7 +842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for all keypress events. Delegates the event to the more\nspecific methods defined in this class.\n\nCurrently processes the keys: <code>Up</code>, <code>Down</code>,\n<code>Left</code>, <code>Right</code> and <code>Enter</code>."
+            "body": "<p>Event handler for all keypress events. Delegates the event to the more\n specific methods defined in this class.\n Currently processes the keys: <code>Up</code>, <code>Down</code>,\n <code>Left</code>, <code>Right</code> and <code>Enter</code>.</p>"
           }
         ],
         "@param": [
@@ -873,7 +873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Up</code> key"
+            "body": "<p>Event handler for <code>Up</code> key</p>"
           }
         ],
         "@param": [
@@ -904,7 +904,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Down</code> key"
+            "body": "<p>Event handler for <code>Down</code> key</p>"
           }
         ],
         "@param": [
@@ -935,7 +935,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Left</code> key"
+            "body": "<p>Event handler for <code>Left</code> key</p>"
           }
         ],
         "@param": [
@@ -966,7 +966,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Right</code> key"
+            "body": "<p>Event handler for <code>Right</code> key</p>"
           }
         ],
         "@param": [
@@ -997,7 +997,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Enter</code> key"
+            "body": "<p>Event handler for <code>Enter</code> key</p>"
           }
         ],
         "@param": [
@@ -1042,7 +1042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>Space</code> key"
+            "body": "<p>Event handler for <code>Space</code> key</p>"
           }
         ],
         "@param": [
@@ -1087,7 +1087,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for roll which hides all windows on scroll."
+            "body": "<p>Event handler for roll which hides all windows on scroll.</p>"
           }
         ],
         "@param": [
@@ -1228,7 +1228,7 @@
     "location": {
       "start": {
         "line": 909,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 924,
@@ -1239,7 +1239,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

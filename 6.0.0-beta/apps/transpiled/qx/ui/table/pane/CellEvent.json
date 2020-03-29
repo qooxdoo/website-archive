@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDavid Perez Carmona (david-perez)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n David Perez Carmona (david-perez)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A cell event instance contains all data for pointer events related to cells in\na table."
+          "body": "<p>A cell event instance contains all data for pointer events related to cells in\n a table.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table row of the event target"
+            "body": "<p>The table row of the event target</p>"
           }
         ]
       },
@@ -72,7 +72,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table column of the event target"
+            "body": "<p>The table column of the event target</p>"
           }
         ]
       },
@@ -115,11 +115,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+            "body": "<pre><code>**********************************************************************\n    CONSTRUCTOR\n**********************************************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Initialize the event"
+            "body": "<p>Initialize the event</p>"
           }
         ],
         "@param": [
@@ -180,15 +180,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "paramName": "embryo",
-            "description": " Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "description": " Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "optional": true,
             "defaultValue": "null",
             "type": "qx.event.type.Event"

@@ -23,15 +23,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "********************************************************************\n***********************************************************************"
+          "body": "<pre><code>**************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Common requirement checks for unit tests. Example:\n\n<pre class=\"javascript\">\ntestBackend : function()\n{\nthis.require([\"http\", \"php\"]); // test will be skipped unless all conditions are met\n// test code goes here\n}\n</pre>"
+          "body": "<p>Common requirement checks for unit tests. Example:\n </p>\n<pre class=\"javascript\">\n testBackend : function()\n {\n   this.require([\"http\", \"php\"]);\n\n }\n </pre>"
         }
       ],
       "@use": [
@@ -85,7 +85,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Boolean} Result of {@link #hasPhp}. Stored as class member to avoid\nrepeating the check."
+            "body": "{Boolean} Result of {@link #hasPhp}. Stored as class member to avoid\n repeating the check."
           }
         ]
       },
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application has been loaded over HTTP."
+            "body": "<p>Checks if the application has been loaded over HTTP.</p>"
           }
         ],
         "@return": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the server supports PHP."
+            "body": "<p>Checks if the server supports PHP.</p>"
           }
         ],
         "@return": [
@@ -169,15 +169,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application extends qx.application.Standalone"
+            "body": "<p>Checks if the application extends qx.application.Standalone</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the application is a standalone (GUI)\napplication",
+            "body": "{Boolean} <code>true</code> if the application is a standalone (GUI)\n application",
             "type": "Boolean",
-            "description": " <code>true</code> if the application is a standalone (GUI)\napplication"
+            "description": " <code>true</code> if the application is a standalone (GUI)\n application"
           }
         ]
       },
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application extends qx.application.Inline"
+            "body": "<p>Checks if the application extends qx.application.Inline</p>"
           }
         ],
         "@return": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application extends qx.application.Native"
+            "body": "<p>Checks if the application extends qx.application.Native</p>"
           }
         ],
         "@return": [
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in Google Chrome"
+            "body": "<p>Checks if the application is running in Google Chrome</p>"
           }
         ],
         "@return": [
@@ -289,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in Firefox"
+            "body": "<p>Checks if the application is running in Firefox</p>"
           }
         ],
         "@return": [
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in a browser using the Gecko engine"
+            "body": "<p>Checks if the application is running in a browser using the Gecko engine</p>"
           }
         ],
         "@return": [
@@ -349,7 +349,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in Internet Explorer"
+            "body": "<p>Checks if the application is running in Internet Explorer</p>"
           }
         ],
         "@return": [
@@ -379,7 +379,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in a browser using the MSHTML engine"
+            "body": "<p>Checks if the application is running in a browser using the MSHTML engine</p>"
           }
         ],
         "@return": [
@@ -409,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in a browser using the Opera engine"
+            "body": "<p>Checks if the application is running in a browser using the Opera engine</p>"
           }
         ],
         "@return": [
@@ -439,7 +439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running in a browser using the Webkit engine"
+            "body": "<p>Checks if the application is running in a browser using the Webkit engine</p>"
           }
         ],
         "@return": [
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is NOT running on OS X"
+            "body": "<p>Checks if the application is NOT running on OS X</p>"
           }
         ],
         "@return": [
@@ -499,7 +499,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running on Windows 7"
+            "body": "<p>Checks if the application is running on Windows 7</p>"
           }
         ],
         "@return": [
@@ -529,7 +529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running on Windows 10"
+            "body": "<p>Checks if the application is running on Windows 10</p>"
           }
         ],
         "@return": [
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is not running in a Google Chrome browser on Linux"
+            "body": "<p>Checks if the application is not running in a Google Chrome browser on Linux</p>"
           }
         ],
         "@return": [
@@ -589,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the application is running on a client supporting async functions"
+            "body": "<p>Checks if the application is running on a client supporting async functions</p>"
           }
         ],
         "@return": [
@@ -616,15 +616,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Verifies a list of infrastructure requirements by checking for\ncorresponding \"has\" methods. If no such method was found,\n{@link qx.core.Environment} will be checked for a key matching the given\nfeature name. Note that asynchronous environment checks are not supported!\n\nSee the manual for further details:\n<a href=\"http://manual.qooxdoo.org/current/pages/development/frame_apps_testrunner.html#defining-test-requirements\">Defining Test Requirements</a>"
+            "body": "<p>Verifies a list of infrastructure requirements by checking for\n corresponding \"has\" methods. If no such method was found,\n {@link qx.core.Environment} will be checked for a key matching the given\n feature name. Note that asynchronous environment checks are not supported!\n See the manual for further details:\n <a href=\"http://manual.qooxdoo.org/current/pages/development/frame_apps_testrunner.html#defining-test-requirements\">Defining Test Requirements</a></p>"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.dev.unit.RequirementError} if any requirement check returned\n<code>false</code>",
+            "body": "{qx.dev.unit.RequirementError} if any requirement check returned\n   <code>false</code>",
             "type": "qx.dev.unit.RequirementError",
-            "description": " if any requirement check returned\n<code>false</code>"
+            "description": " if any requirement check returned\n   <code>false</code>"
           },
           {
             "name": "@throws",

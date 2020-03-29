@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The list widget displays the data of a model in a list.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n\n// Data for the list\nvar data = [\n{title : \"Row1\", subtitle : \"Sub1\"},\n{title : \"Row2\", subtitle : \"Sub2\"},\n{title : \"Row3\", subtitle : \"Sub3\"}\n];\n\n// Create the list with a delegate that\nvar list = new qx.ui.mobile.list.List({\nconfigureItem: function(item, data, row)\n{\nitem.setImage(\"path/to/image.png\");\nitem.setTitle(data.title);\nitem.setSubtitle(data.subtitle);\n},\n\nconfigureGroupItem: function(item, data) {\nitem.setTitle(data.title);\n},\n\ngroup: function(data, row) {\nreturn {\ntitle: row < 2 ? \"Selectable\" : \"Unselectable\"\n};\n}\n});\n\n// Set the model of the list\nlist.setModel(new qx.data.Array(data));\n\n// Add an changeSelection event\nlist.addListener(\"changeSelection\", function(evt) {\nalert(\"Index: \" + evt.getData())\n}, this);\n\nthis.getRoot().add(list);\n</pre>\n\nThis example creates a list with a delegate that configures the list item with\nthe given data. A listener for the event {@link #changeSelection} is added."
+          "body": "<p>The list widget displays the data of a model in a list.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n\n    var data = [\n       {title : \"Row1\", subtitle : \"Sub1\"},\n       {title : \"Row2\", subtitle : \"Sub2\"},\n       {title : \"Row3\", subtitle : \"Sub3\"}\n   ];\n\n   var list = new qx.ui.mobile.list.List({\n     configureItem: function(item, data, row)\n     {\n       item.setImage(\"path/to/image.png\");\n       item.setTitle(data.title);\n       item.setSubtitle(data.subtitle);\n     },\n     configureGroupItem: function(item, data) {\n       item.setTitle(data.title);\n     },\n     group: function(data, row) {\n      return {\n       title: row < 2 ? \"Selectable\" : \"Unselectable\"\n     };\n    }\n   });\n\n   list.setModel(new qx.data.Array(data));\n\n   list.addListener(\"changeSelection\", function(evt) {\n     alert(\"Index: \" + evt.getData())\n   }, this);\n   this.getRoot().add(list);\n </pre>\n<p>This example creates a list with a delegate that configures the list item with\n the given data. A listener for the event {@link #changeSelection} is added.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 78,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 97,
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the selection is changed."
+            "body": "<p>Fired when the selection is changed.</p>"
           }
         ]
       },
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the group selection is changed."
+            "body": "<p>Fired when the group selection is changed.</p>"
           }
         ]
       },
@@ -122,7 +122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an item should be removed from list."
+            "body": "<p>Fired when an item should be removed from list.</p>"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation object which can have one or more functions defined by the\n{@link qx.ui.mobile.list.IListDelegate} interface."
+            "body": "<p>Delegation object which can have one or more functions defined by the\n {@link qx.ui.mobile.list.IListDelegate} interface.</p>"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The model to use to render the list."
+            "body": "<p>The model to use to render the list.</p>"
           }
         ]
       },
@@ -228,7 +228,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Number of items to display. Auto set by model.\nReset to limit the amount of data that should be displayed."
+            "body": "<p>Number of items to display. Auto set by model.\n Reset to limit the amount of data that should be displayed.</p>"
           }
         ]
       },
@@ -253,7 +253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The height of a list item."
+            "body": "<p>The height of a list item.</p>"
           }
         ]
       },
@@ -336,7 +336,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -370,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default list delegate. Expects a map which contains an image, a subtitle, and a title:\n<code>{title : \"Row1\", subtitle : \"Sub1\", image : \"path/to/image.png\"}</code>"
+            "body": "<p>Default list delegate. Expects a map which contains an image, a subtitle, and a title:\n <code>{title : \"Row1\", subtitle : \"Sub1\", image : \"path/to/image.png\"}</code></p>"
           }
         ],
         "@param": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"tap\" event."
+            "body": "<p>Event handler for the \"tap\" event.</p>"
           }
         ],
         "@param": [
@@ -446,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>trackstart</code> event."
+            "body": "<p>Event handler for <code>trackstart</code> event.</p>"
           }
         ],
         "@param": [
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>track</code> event."
+            "body": "<p>Event handler for <code>track</code> event.</p>"
           }
         ],
         "@param": [
@@ -508,7 +508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>trackend</code> event."
+            "body": "<p>Event handler for <code>trackend</code> event.</p>"
           }
         ],
         "@param": [
@@ -539,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the target list item."
+            "body": "<p>Returns the target list item.</p>"
           }
         ],
         "@param": [
@@ -578,7 +578,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -628,7 +628,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listen on model 'changeLength' event."
+            "body": "<p>Listen on model 'changeLength' event.</p>"
           }
         ],
         "@param": [
@@ -659,7 +659,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -696,7 +696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reacts on model 'change' event."
+            "body": "<p>Reacts on model 'change' event.</p>"
           }
         ],
         "@param": [
@@ -727,7 +727,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reacts on model 'changeBubble' event."
+            "body": "<p>Reacts on model 'changeBubble' event.</p>"
           }
         ],
         "@param": [
@@ -758,24 +758,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extracts all rows, which should be rendered from \"changeBubble\" event's\ndata.name."
+            "body": "<p>Extracts all rows, which should be rendered from \"changeBubble\" event's\n data.name.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String} The 'data.name' String of the \"changeBubble\" event,\nwhich contains the rows that should be rendered.",
+            "body": "name {String} The 'data.name' String of the \"changeBubble\" event,\n    which contains the rows that should be rendered.",
             "paramName": "name",
-            "description": " The 'data.name' String of the \"changeBubble\" event,\nwhich contains the rows that should be rendered.",
+            "description": " The 'data.name' String of the \"changeBubble\" event,\n    which contains the rows that should be rendered.",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer[]} An array with integer values, representing the rows which should\nbe rendered.",
+            "body": "{Integer[]} An array with integer values, representing the rows which should\n  be rendered.",
             "type": "Integer[]",
-            "description": " An array with integer values, representing the rows which should\nbe rendered."
+            "description": " An array with integer values, representing the rows which should\n  be rendered."
           }
         ]
       },
@@ -797,7 +797,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders a specific row identified by its index."
+            "body": "<p>Renders a specific row identified by its index.</p>"
           }
         ],
         "@param": [
@@ -864,7 +864,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders the list."
+            "body": "<p>Renders the list.</p>"
           }
         ]
       },
@@ -886,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Triggers a re-rendering of this list."
+            "body": "<p>Triggers a re-rendering of this list.</p>"
           }
         ]
       },
@@ -908,7 +908,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders a group header."
+            "body": "<p>Renders a group header.</p>"
           }
         ],
         "@param": [
@@ -954,7 +954,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the delegate support group rendering."
+            "body": "<p>Checks whether the delegate support group rendering.</p>"
           }
         ],
         "@return": [
@@ -984,7 +984,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the group for this item, identified by its index"
+            "body": "<p>Returns the group for this item, identified by its index</p>"
           }
         ],
         "@param": [
@@ -2326,13 +2326,14 @@
     "location": {
       "start": {
         "line": 629,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 636,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

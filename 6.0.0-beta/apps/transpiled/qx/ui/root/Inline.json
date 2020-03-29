@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\nAlexander Steitz (aback)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n Alexander Steitz (aback)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This classes could be used to insert qooxdoo islands into existing\nweb pages. You can use the isles to place any qooxdoo powered widgets\ninside a layout made using traditional HTML markup and CSS.\n\nThe size of the widget in each dimension can either be determined by the\nsize hint of the inline's children or by the size of the root DOM element. If\n<code>dynamicX</code>/<code>dynamicY</code> is true the width/height of the DOM\nelement is used.\n\nThis class uses {@link qx.ui.layout.Basic} as default layout. The layout\ncan be changed using the {@link #setLayout} method.\n\nTo position popups and tooltips please have a look at {@link qx.ui.root.Page}."
+          "body": "<p>This classes could be used to insert qooxdoo islands into existing\n web pages. You can use the isles to place any qooxdoo powered widgets\n inside a layout made using traditional HTML markup and CSS.\n The size of the widget in each dimension can either be determined by the\n size hint of the inline's children or by the size of the root DOM element. If\n <code>dynamicX</code>/<code>dynamicY</code> is true the width/height of the DOM\n element is used.\n This class uses {@link qx.ui.layout.Basic} as default layout. The layout\n can be changed using the {@link #setLayout} method.\n To position popups and tooltips please have a look at {@link qx.ui.root.Page}.</p>"
         }
       ],
       "@use": [
@@ -53,7 +53,7 @@
     "location": {
       "start": {
         "line": 62,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 105,
@@ -64,7 +64,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -74,23 +74,23 @@
       "@param": [
         {
           "name": "@param",
-          "body": "el {Element} DOM element to use as isle for qooxdoo content. Please\nnote that existing content gets removed on the first layout flush.",
+          "body": "el {Element} DOM element to use as isle for qooxdoo content. Please\n    note that existing content gets removed on the first layout flush.",
           "paramName": "el",
-          "description": " DOM element to use as isle for qooxdoo content. Please\nnote that existing content gets removed on the first layout flush.",
+          "description": " DOM element to use as isle for qooxdoo content. Please\n    note that existing content gets removed on the first layout flush.",
           "type": "Element"
         },
         {
           "name": "@param",
-          "body": "dynamicX {Boolean} If <code>true</code> the widget's width is\ndetermined by the DOM element's width. Otherwise the children's size hint\nis used.",
+          "body": "dynamicX {Boolean} If <code>true</code> the widget's width is\n    determined by the DOM element's width. Otherwise the children's size hint\n    is used.",
           "paramName": "dynamicX",
-          "description": " If <code>true</code> the widget's width is\ndetermined by the DOM element's width. Otherwise the children's size hint\nis used.",
+          "description": " If <code>true</code> the widget's width is\n    determined by the DOM element's width. Otherwise the children's size hint\n    is used.",
           "type": "Boolean"
         },
         {
           "name": "@param",
-          "body": "dynamicY {Boolean} If <code>true</code> the widget's height is\ndetermined by the DOM element's height. Otherwise the children's size hint\nis used.",
+          "body": "dynamicY {Boolean} If <code>true</code> the widget's height is\n    determined by the DOM element's height. Otherwise the children's size hint\n    is used.",
           "paramName": "dynamicY",
-          "description": " If <code>true</code> the widget's height is\ndetermined by the DOM element's height. Otherwise the children's size hint\nis used.",
+          "description": " If <code>true</code> the widget's height is\n    determined by the DOM element's height. Otherwise the children's size hint\n    is used.",
           "type": "Boolean"
         }
       ]
@@ -154,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Performs several checks for dynamic mode and adds the \"resize\" listener"
+            "body": "<p>Performs several checks for dynamic mode and adds the \"resize\" listener</p>"
           }
         ]
       },
@@ -176,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for the element's resize event"
+            "body": "<p>Listener for the element's resize event</p>"
           }
         ],
         "@param": [
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for the window's resize event."
+            "body": "<p>Listener for the window's resize event.</p>"
           }
         ]
       },
@@ -263,15 +263,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -295,15 +295,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.layout.Abstract"
           }
         ]
@@ -321,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -4153,7 +4153,7 @@
     "location": {
       "start": {
         "line": 265,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 267,
@@ -4164,7 +4164,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -4173,7 +4173,7 @@
     "location": {
       "start": {
         "line": 276,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 280,
@@ -4184,7 +4184,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The image class displays an image file\n\nThis class supports image clipping, which means that multiple images can be combined\ninto one large image and only the relevant part is shown.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar image = new qx.ui.basic.Image(\"icon/32/actions/format-justify-left.png\");\n\nthis.getRoot().add(image);\n</pre>\n\nThis example create a widget to display the image\n<code>icon/32/actions/format-justify-left.png</code>.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/image.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>The image class displays an image file\n This class supports image clipping, which means that multiple images can be combined\n into one large image and only the relevant part is shown.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var image = new qx.ui.basic.Image(\"icon/32/actions/format-justify-left.png\");\n   this.getRoot().add(image);\n </pre>\n<p>This example create a widget to display the image\n <code>icon/32/actions/format-justify-left.png</code>.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/image.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a>\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 62,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 71,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -82,7 +82,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The URL of the image. Setting it will possibly abort loading of current image."
+            "body": "<p>The URL of the image. Setting it will possibly abort loading of current image.</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the image should be scaled to the given dimensions\n\nThis is disabled by default because it prevents the usage\nof image clipping when enabled."
+            "body": "<p>Whether the image should be scaled to the given dimensions\n This is disabled by default because it prevents the usage\n of image clipping when enabled.</p>"
           }
         ]
       },
@@ -138,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -225,7 +225,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -254,7 +254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -301,7 +301,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the image source can not be loaded. This event can only be\nfired for the first loading of an unmanaged resource (external image)."
+            "body": "<p>Fired if the image source can not be loaded. This event can only be\n fired for the first loading of an unmanaged resource (external image).</p>"
           }
         ]
       },
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the image has been loaded. This is even true for managed\nresources (images known by generator)."
+            "body": "<p>Fired if the image has been loaded. This is even true for managed\n resources (images known by generator).</p>"
           }
         ]
       },
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the pending request has been aborted."
+            "body": "<p>Fired when the pending request has been aborted.</p>"
           }
         ]
       },
@@ -483,7 +483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -510,11 +510,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -548,7 +548,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -582,7 +582,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -616,7 +616,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -668,7 +668,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -701,30 +701,30 @@
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -753,11 +753,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMAGE API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IMAGE API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply, overridden"
+            "body": "<p>property apply, overridden</p>"
           }
         ]
       },
@@ -783,7 +783,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -808,7 +808,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -833,7 +833,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remembers the mode to keep track which contentElement is currently in use."
+            "body": "<p>Remembers the mode to keep track which contentElement is currently in use.</p>"
           }
         ],
         "@param": [
@@ -864,7 +864,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current mode if set. Otherwise checks the current source and\nthe current scaling to determine the current mode."
+            "body": "<p>Returns the current mode if set. Otherwise checks the current source and\n the current scaling to determine the current mode.</p>"
           }
         ],
         "@return": [
@@ -894,7 +894,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a contentElement suitable for the current mode"
+            "body": "<p>Creates a contentElement suitable for the current mode</p>"
           }
         ],
         "@param": [
@@ -933,7 +933,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a contentElement suitable for the current mode"
+            "body": "<p>Returns a contentElement suitable for the current mode</p>"
           }
         ],
         "@return": [
@@ -963,7 +963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the source to the clipped image instance or preload\nan image to detect sizes and apply it afterwards."
+            "body": "<p>Applies the source to the clipped image instance or preload\n an image to detect sizes and apply it afterwards.</p>"
           }
         ]
       },
@@ -985,7 +985,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function, which fires <code>loaded</code> event asynchronously.\nIt emulates native <code>loaded</code> event of an image object. This\nhelper will be called, if you try to load a managed image or an\npreviously loaded unmanaged image."
+            "body": "<p>Helper function, which fires <code>loaded</code> event asynchronously.\n It emulates native <code>loaded</code> event of an image object. This\n helper will be called, if you try to load a managed image or an\n previously loaded unmanaged image.</p>"
           }
         ]
       },
@@ -1007,7 +1007,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content element."
+            "body": "<p>Returns the content element.</p>"
           }
         ],
         "@return": [
@@ -1037,7 +1037,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the current content element is capable to display the image\nwith the current settings (scaling, alpha PNG)"
+            "body": "<p>Checks if the current content element is capable to display the image\n with the current settings (scaling, alpha PNG)</p>"
           }
         ],
         "@param": [
@@ -1068,7 +1068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks the current child and replaces it if necessary"
+            "body": "<p>Checks the current child and replaces it if necessary</p>"
           }
         ],
         "@param": [
@@ -1099,7 +1099,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Use the ResourceManager to set a managed image"
+            "body": "<p>Use the ResourceManager to set a managed image</p>"
           }
         ],
         "@param": [
@@ -1155,7 +1155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Use the infos of the ImageLoader to set an unmanaged image"
+            "body": "<p>Use the infos of the ImageLoader to set an unmanaged image</p>"
           }
         ],
         "@param": [
@@ -1193,7 +1193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Use the ImageLoader to load an unmanaged image"
+            "body": "<p>Use the ImageLoader to load an unmanaged image</p>"
           }
         ],
         "@param": [
@@ -1231,7 +1231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset source displayed by the DOM element."
+            "body": "<p>Reset source displayed by the DOM element.</p>"
           }
         ],
         "@param": [
@@ -1262,7 +1262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Combines the decorator's image styles with our own image to make sure\ngradient and backgroundImage decorators work on Images."
+            "body": "<p>Combines the decorator's image styles with our own image to make sure\n gradient and backgroundImage decorators work on Images.</p>"
           }
         ],
         "@param": [
@@ -1300,7 +1300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler fired after the preloader has finished loading the icon"
+            "body": "<p>Event handler fired after the preloader has finished loading the icon</p>"
           }
         ],
         "@param": [
@@ -1338,7 +1338,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the content hint when the image size has been changed"
+            "body": "<p>Updates the content hint when the image size has been changed</p>"
           }
         ],
         "@param": [
@@ -1373,7 +1373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1415,7 +1415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1471,7 +1471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1520,7 +1520,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1583,7 +1583,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -5480,7 +5480,7 @@
     "location": {
       "start": {
         "line": 1069,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 1082,
@@ -5491,7 +5491,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

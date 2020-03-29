@@ -21,15 +21,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Mixin for the {@link Scroll} container. Used when the variant\n<code>qx.mobile.nativescroll</code> is set to \"off\". Uses the iScroll script to simulate\nthe CSS position:fixed style. Position fixed is not available in iOS and\nAndroid < 2.2."
+          "body": "<p>Mixin for the {@link Scroll} container. Used when the variant\n <code>qx.mobile.nativescroll</code> is set to \"off\". Uses the iScroll script to simulate\n the CSS position:fixed style. Position fixed is not available in iOS and\n Android &lt; 2.2.</p>"
         }
       ],
       "@ignore": [
@@ -51,7 +51,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 47,
@@ -62,7 +62,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mixin method. Creates the scroll element."
+            "body": "<p>Mixin method. Creates the scroll element.</p>"
           }
         ],
         "@return": [
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mixin method. Returns the scroll content element.."
+            "body": "<p>Mixin method. Returns the scroll content element..</p>"
           }
         ],
         "@return": [
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current scroll position"
+            "body": "<p>Returns the current scroll position</p>"
           }
         ],
         "@return": [
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scrolling height of the inner container."
+            "body": "<p>Returns the scrolling height of the inner container.</p>"
           }
         ],
         "@return": [
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scrolling width of the inner container."
+            "body": "<p>Returns the scrolling width of the inner container.</p>"
           }
         ],
         "@return": [
@@ -247,7 +247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the wrapper contents to the x/y coordinates in a given period."
+            "body": "<p>Scrolls the wrapper contents to the x/y coordinates in a given period.</p>"
           }
         ],
         "@param": [
@@ -267,9 +267,9 @@
           },
           {
             "name": "@param",
-            "body": "time {Integer} Time slice in which scrolling should\nbe done.",
+            "body": "time {Integer} Time slice in which scrolling should\n              be done.",
             "paramName": "time",
-            "description": " Time slice in which scrolling should\nbe done.",
+            "description": " Time slice in which scrolling should\n              be done.",
             "type": "Integer"
           }
         ]
@@ -292,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads and inits the iScroll instance."
+            "body": "<p>Loads and inits the iScroll instance.</p>"
           }
         ],
         "@ignore": [
@@ -320,7 +320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the iScroll instance."
+            "body": "<p>Creates the iScroll instance.</p>"
           }
         ],
         "@return": [
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map with default iScroll properties for the iScroll instance."
+            "body": "<p>Returns a map with default iScroll properties for the iScroll instance.</p>"
           }
         ],
         "@return": [
@@ -386,7 +386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers all needed event listener."
+            "body": "<p>Registers all needed event listener.</p>"
           }
         ]
       },
@@ -408,7 +408,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters all needed event listener."
+            "body": "<p>Unregisters all needed event listener.</p>"
           }
         ]
       },
@@ -430,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Load callback. Called when the iScroll script is loaded."
+            "body": "<p>Load callback. Called when the iScroll script is loaded.</p>"
           }
         ],
         "@param": [
@@ -461,7 +461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the scroll instance."
+            "body": "<p>Setter for the scroll instance.</p>"
           }
         ],
         "@param": [
@@ -492,7 +492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation method for iScroll. Disabled the iScroll objects.\nPrevents any further scrolling of this container."
+            "body": "<p>Delegation method for iScroll. Disabled the iScroll objects.\n Prevents any further scrolling of this container.</p>"
           }
         ]
       },
@@ -514,7 +514,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation method for iScroll. Enables the iScroll object."
+            "body": "<p>Delegation method for iScroll. Enables the iScroll object.</p>"
           }
         ]
       },
@@ -536,7 +536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls the refresh function of iScroll. Needed to recalculate the\nscrolling container."
+            "body": "<p>Calls the refresh function of iScroll. Needed to recalculate the\n scrolling container.</p>"
           }
         ]
       },
@@ -548,7 +548,7 @@
     "location": {
       "start": {
         "line": 370,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 379,
@@ -559,7 +559,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

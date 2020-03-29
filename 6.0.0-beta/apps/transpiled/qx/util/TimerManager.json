@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Timer manipulation for handling multiple timed callbacks with the use of\nonly a single native timer object.\n\nUse of these timers is via the methods start() and stop().  Examples:\n<pre class='javascript'>\nvar timer = qx.util.TimerManager.getInstance();\n\n// Start a 5-second recurrent timer.\n// Note that the first expiration is after 3 seconds\n// (last parameter is 3000) but each subsequent expiration is\n// at 5 second intervals.\ntimer.start(function(userData, timerId)\n{\nthis.debug(\"Recurrent 5-second timer: \" + timerId);\n},\n5000,\nthis,\nnull,\n3000);\n\n// Start a 1-second one-shot timer\ntimer.start(function(userData, timerId)\n{\nthis.debug(\"One-shot 1-second timer: \" + timerId);\n},\n0,\nthis,\nnull,\n1000);\n\n// Start a 2-second recurrent timer that stops itself after\n// three iterations\ntimer.start(function(userData, timerId)\n{\nthis.debug(\"Recurrent 2-second timer with limit 3:\" +\ntimerId);\nif (++userData.count == 3)\n{\nthis.debug(\"Stopping recurrent 2-second timer\");\ntimer.stop(timerId);\n}\n},\n2000,\nthis,\n{ count : 0 });\n\n// Start an immediate one-shot timer\ntimer.start(function(userData, timerId)\n{\nthis.debug(\"Immediate one-shot timer: \" + timerId);\n});\n</pre>"
+          "body": "<p>Timer manipulation for handling multiple timed callbacks with the use of\n only a single native timer object.\n Use of these timers is via the methods start() and stop().  Examples:\n </p>\n<pre class='javascript'>\n var timer = qx.util.TimerManager.getInstance();\n\n\n\n\n timer.start(function(userData, timerId)\n             {\n               this.debug(\"Recurrent 5-second timer: \" + timerId);\n             },\n             5000,\n             this,\n             null,\n             3000);\n\n timer.start(function(userData, timerId)\n             {\n               this.debug(\"One-shot 1-second timer: \" + timerId);\n             },\n             0,\n             this,\n             null,\n             1000);\n\n\n timer.start(function(userData, timerId)\n             {\n               this.debug(\"Recurrent 2-second timer with limit 3:\" +\n                          timerId);\n               if (++userData.count == 3)\n               {\n                 this.debug(\"Stopping recurrent 2-second timer\");\n                 timer.stop(timerId);\n               }\n             },\n             2000,\n             this,\n             { count : 0 });\n\n timer.start(function(userData, timerId)\n             {\n               this.debug(\"Immediate one-shot timer: \" + timerId);\n             });\n </pre>"
         }
       ]
     }
@@ -50,7 +50,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Time-ordered queue of timers"
+            "body": "<p>Time-ordered queue of timers</p>"
           }
         ]
       },
@@ -72,7 +72,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Saved data for each timer"
+            "body": "<p>Saved data for each timer</p>"
           }
         ]
       },
@@ -94,7 +94,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Next timer id value is determined by incrementing this"
+            "body": "<p>Next timer id value is determined by incrementing this</p>"
           }
         ]
       },
@@ -118,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether we're currently listening on the interval timer event"
+            "body": "<p>Whether we're currently listening on the interval timer event</p>"
           }
         ]
       },
@@ -140,22 +140,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Start a new timer"
+            "body": "<p>Start a new timer</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function}\nFunction to be called upon expiration of the timer.  The function is\npassed these parameters:\n<dl>\n<dt>userData</dt>\n<dd>The user data provided to the start() method</dd>\n<dt>timerId</dt>\n<dd>The timer id, as was returned by the start() method</dd>\n</dl>",
+            "body": "callback {Function}\n   Function to be called upon expiration of the timer.  The function is\n   passed these parameters:\n   <dl>\n     <dt>userData</dt>\n       <dd>The user data provided to the start() method</dd>\n     <dt>timerId</dt>\n       <dd>The timer id, as was returned by the start() method</dd>\n   </dl>",
             "paramName": "callback",
-            "description": "\nFunction to be called upon expiration of the timer.  The function is\npassed these parameters:\n<dl>\n<dt>userData</dt>\n<dd>The user data provided to the start() method</dd>\n<dt>timerId</dt>\n<dd>The timer id, as was returned by the start() method</dd>\n</dl>",
+            "description": "\n   Function to be called upon expiration of the timer.  The function is\n   passed these parameters:\n   <dl>\n     <dt>userData</dt>\n       <dd>The user data provided to the start() method</dd>\n     <dt>timerId</dt>\n       <dd>The timer id, as was returned by the start() method</dd>\n   </dl>",
             "type": "qx.util.Function"
           },
           {
             "name": "@param",
-            "body": "recurTime {Integer|null}\nIf null, the timer will not recur.  Once the callback function\nreturns the first time, the timer will be removed from the timer\nqueue.  If non-null, upon return from the callback function, the\ntimer will be reset to this number of milliseconds.",
+            "body": "recurTime {Integer|null}\n   If null, the timer will not recur.  Once the callback function\n   returns the first time, the timer will be removed from the timer\n   queue.  If non-null, upon return from the callback function, the\n   timer will be reset to this number of milliseconds.",
             "paramName": "recurTime",
-            "description": "\nIf null, the timer will not recur.  Once the callback function\nreturns the first time, the timer will be removed from the timer\nqueue.  If non-null, upon return from the callback function, the\ntimer will be reset to this number of milliseconds.",
+            "description": "\n   If null, the timer will not recur.  Once the callback function\n   returns the first time, the timer will be removed from the timer\n   queue.  If non-null, upon return from the callback function, the\n   timer will be reset to this number of milliseconds.",
             "type": [
               "Integer",
               "null"
@@ -163,9 +163,9 @@
           },
           {
             "name": "@param",
-            "body": "context {qx.core.Object|null}\nContext (this) the callback function is called with.  If not\nprovided, this Timer singleton object is used.",
+            "body": "context {qx.core.Object|null}\n   Context (this) the callback function is called with.  If not\n   provided, this Timer singleton object is used.",
             "paramName": "context",
-            "description": "\nContext (this) the callback function is called with.  If not\nprovided, this Timer singleton object is used.",
+            "description": "\n   Context (this) the callback function is called with.  If not\n   provided, this Timer singleton object is used.",
             "type": [
               "qx.core.Object",
               "null"
@@ -173,16 +173,16 @@
           },
           {
             "name": "@param",
-            "body": "userData {var}\nData which is passed to the callback function upon timer expiry",
+            "body": "userData {var}\n   Data which is passed to the callback function upon timer expiry",
             "paramName": "userData",
-            "description": "\nData which is passed to the callback function upon timer expiry",
+            "description": "\n   Data which is passed to the callback function upon timer expiry",
             "type": "var"
           },
           {
             "name": "@param",
-            "body": "initialTime {Integer|null}\nMilliseconds before the callback function is called the very first\ntime.  If not specified and recurTime is specified, then recurTime\nwill be used as initialTime; otherwise initialTime will default\nto zero.",
+            "body": "initialTime {Integer|null}\n   Milliseconds before the callback function is called the very first\n   time.  If not specified and recurTime is specified, then recurTime\n   will be used as initialTime; otherwise initialTime will default\n   to zero.",
             "paramName": "initialTime",
-            "description": "\nMilliseconds before the callback function is called the very first\ntime.  If not specified and recurTime is specified, then recurTime\nwill be used as initialTime; otherwise initialTime will default\nto zero.",
+            "description": "\n   Milliseconds before the callback function is called the very first\n   time.  If not specified and recurTime is specified, then recurTime\n   will be used as initialTime; otherwise initialTime will default\n   to zero.",
             "type": [
               "Integer",
               "null"
@@ -192,9 +192,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe timer id of this unique timer.  It may be provided to the stop()\nmethod to cancel a timer before expiration.",
+            "body": "{Integer}\n   The timer id of this unique timer.  It may be provided to the stop()\n   method to cancel a timer before expiration.",
             "type": "Integer",
-            "description": "\nThe timer id of this unique timer.  It may be provided to the stop()\nmethod to cancel a timer before expiration."
+            "description": "\n   The timer id of this unique timer.  It may be provided to the stop()\n   method to cancel a timer before expiration."
           }
         ]
       },
@@ -216,15 +216,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stop a running timer"
+            "body": "<p>Stop a running timer</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "timerId {Integer}\nA timer id previously returned by start()",
+            "body": "timerId {Integer}\n   A timer id previously returned by start()",
             "paramName": "timerId",
-            "description": "\nA timer id previously returned by start()",
+            "description": "\n   A timer id previously returned by start()",
             "type": "Integer"
           }
         ]
@@ -247,22 +247,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert a timer on the time-ordered list of active timers."
+            "body": "<p>Insert a timer on the time-ordered list of active timers.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "expireAt {Integer}\nMilliseconds from now when this timer should expire",
+            "body": "expireAt {Integer}\n   Milliseconds from now when this timer should expire",
             "paramName": "expireAt",
-            "description": "\nMilliseconds from now when this timer should expire",
+            "description": "\n   Milliseconds from now when this timer should expire",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "timerId {Integer}\nId of the timer to be time-ordered",
+            "body": "timerId {Integer}\n   Id of the timer to be time-ordered",
             "paramName": "timerId",
-            "description": "\nId of the timer to be time-ordered",
+            "description": "\n   Id of the timer to be time-ordered",
             "type": "Integer"
           }
         ]
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Process the queue of timers.  Call the registered callback function for\nany timer which has expired.  If the timer is marked as recurrent, the\ntimer is restarted with the recurrent timeout following completion of\nthe callback function."
+            "body": "<p>Process the queue of timers.  Call the registered callback function for\n any timer which has expired.  If the timer is marked as recurrent, the\n timer is restarted with the recurrent timeout following completion of\n the callback function.</p>"
           }
         ]
       },

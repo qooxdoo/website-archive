@@ -25,15 +25,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "This is the base class for all widgets.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>This is the base class for all widgets.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a>\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@use": [
@@ -65,7 +65,7 @@
     "location": {
       "start": {
         "line": 55,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 66,
@@ -76,7 +76,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the widget appears on the screen."
+            "body": "<p>Fired after the widget appears on the screen.</p>"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the widget disappears from the screen."
+            "body": "<p>Fired after the widget disappears from the screen.</p>"
           }
         ]
       },
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the creation of a child control. The passed data is the\nnewly created child widget."
+            "body": "<p>Fired after the creation of a child control. The passed data is the\n newly created child widget.</p>"
           }
         ]
       },
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on resize (after layout) of the widget.\nThe data property of the event contains the widget's computed location\nand dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}"
+            "body": "<p>Fired on resize (after layout) of the widget.\n The data property of the event contains the widget's computed location\n and dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}</p>"
           }
         ]
       },
@@ -185,7 +185,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on move (after layout) of the widget.\nThe data property of the event contains the widget's computed location\nand dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}"
+            "body": "<p>Fired on move (after layout) of the widget.\n The data property of the event contains the widget's computed location\n and dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}</p>"
           }
         ]
       },
@@ -207,7 +207,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the appearance has been applied. This happens before the\nwidget becomes visible, on state and appearance changes. The data field\ncontains the state map. This can be used to react on state changes or to\nread properties set by the appearance."
+            "body": "<p>Fired after the appearance has been applied. This happens before the\n widget becomes visible, on state and appearance changes. The data field\n contains the state map. This can be used to react on state changes or to\n read properties set by the appearance.</p>"
           }
         ]
       },
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor moves over the widget.\nThe data property of the event contains the widget's computed location\nand dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}"
+            "body": "<p>Fired if the mouse cursor moves over the widget.\n  The data property of the event contains the widget's computed location\n  and dimension as returned by {@link qx.ui.core.LayoutItem#getBounds}</p>"
           }
         ]
       },
@@ -251,7 +251,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor enters the widget.\n\nNote: This event is also dispatched if the widget is disabled!"
+            "body": "<p>Fired if the mouse cursor enters the widget.\n Note: This event is also dispatched if the widget is disabled!</p>"
           }
         ]
       },
@@ -273,7 +273,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor leaves widget.\n\nNote: This event is also dispatched if the widget is disabled!"
+            "body": "<p>Fired if the mouse cursor leaves widget.\n Note: This event is also dispatched if the widget is disabled!</p>"
           }
         ]
       },
@@ -295,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mouse button is pressed on the widget."
+            "body": "<p>Mouse button is pressed on the widget.</p>"
           }
         ]
       },
@@ -317,7 +317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mouse button is released on the widget."
+            "body": "<p>Mouse button is released on the widget.</p>"
           }
         ]
       },
@@ -339,7 +339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is clicked using left or middle button.\n{@link qx.event.type.Mouse#getButton} for more details."
+            "body": "<p>Widget is clicked using left or middle button.\n        {@link qx.event.type.Mouse#getButton} for more details.</p>"
           }
         ]
       },
@@ -361,7 +361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is clicked using a non primary button.\n{@link qx.event.type.Mouse#getButton} for more details."
+            "body": "<p>Widget is clicked using a non primary button.\n        {@link qx.event.type.Mouse#getButton} for more details.</p>"
           }
         ]
       },
@@ -383,7 +383,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is double clicked using left or middle button.\n{@link qx.event.type.Mouse#getButton} for more details."
+            "body": "<p>Widget is double clicked using left or middle button.\n        {@link qx.event.type.Mouse#getButton} for more details.</p>"
           }
         ]
       },
@@ -405,7 +405,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is clicked using the right mouse button."
+            "body": "<p>Widget is clicked using the right mouse button.</p>"
           }
         ]
       },
@@ -427,7 +427,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the context menu is opened."
+            "body": "<p>Fired before the context menu is opened.</p>"
           }
         ]
       },
@@ -449,7 +449,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse wheel is used over the widget."
+            "body": "<p>Fired if the mouse wheel is used over the widget.</p>"
           }
         ]
       },
@@ -471,7 +471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen is started."
+            "body": "<p>Fired if a touch at the screen is started.</p>"
           }
         ]
       },
@@ -493,7 +493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen has ended."
+            "body": "<p>Fired if a touch at the screen has ended.</p>"
           }
         ]
       },
@@ -515,7 +515,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired during a touch at the screen."
+            "body": "<p>Fired during a touch at the screen.</p>"
           }
         ]
       },
@@ -537,7 +537,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen is canceled."
+            "body": "<p>Fired if a touch at the screen is canceled.</p>"
           }
         ]
       },
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a pointer taps on the screen."
+            "body": "<p>Fired when a pointer taps on the screen.</p>"
           }
         ]
       },
@@ -581,7 +581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a pointer holds on the screen."
+            "body": "<p>Fired when a pointer holds on the screen.</p>"
           }
         ]
       },
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a pointer taps twice on the screen."
+            "body": "<p>Fired when a pointer taps twice on the screen.</p>"
           }
         ]
       },
@@ -625,7 +625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a pointer swipes over the screen."
+            "body": "<p>Fired when a pointer swipes over the screen.</p>"
           }
         ]
       },
@@ -647,7 +647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when two pointers performing a rotate gesture on the screen."
+            "body": "<p>Fired when two pointers performing a rotate gesture on the screen.</p>"
           }
         ]
       },
@@ -669,7 +669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when two pointers performing a pinch in/out gesture on the screen."
+            "body": "<p>Fired when two pointers performing a pinch in/out gesture on the screen.</p>"
           }
         ]
       },
@@ -691,7 +691,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an active pointer moves on the screen (after pointerdown till pointerup)."
+            "body": "<p>Fired when an active pointer moves on the screen (after pointerdown till pointerup).</p>"
           }
         ]
       },
@@ -713,7 +713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an active pointer moves on the screen or the mouse wheel is used."
+            "body": "<p>Fired when an active pointer moves on the screen or the mouse wheel is used.</p>"
           }
         ]
       },
@@ -735,7 +735,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a pointer (mouse/touch/pen) moves or changes any of it's values."
+            "body": "<p>Fired if a pointer (mouse/touch/pen) moves or changes any of it's values.</p>"
           }
         ]
       },
@@ -757,7 +757,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a pointer (mouse/touch/pen) hovers the widget."
+            "body": "<p>Fired if a pointer (mouse/touch/pen) hovers the widget.</p>"
           }
         ]
       },
@@ -779,7 +779,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a pointer (mouse/touch/pen) leaves this widget."
+            "body": "<p>Fired if a pointer (mouse/touch/pen) leaves this widget.</p>"
           }
         ]
       },
@@ -801,7 +801,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a pointer (mouse/touch/pen) button is pressed or\na finger touches the widget."
+            "body": "<p>Fired if a pointer (mouse/touch/pen) button is pressed or\n a finger touches the widget.</p>"
           }
         ]
       },
@@ -823,7 +823,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if all pointer (mouse/touch/pen) buttons are released or\nthe finger is lifted from the widget."
+            "body": "<p>Fired if all pointer (mouse/touch/pen) buttons are released or\n the finger is lifted from the widget.</p>"
           }
         ]
       },
@@ -845,7 +845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a pointer (mouse/touch/pen) action is canceled."
+            "body": "<p>Fired if a pointer (mouse/touch/pen) action is canceled.</p>"
           }
         ]
       },
@@ -867,7 +867,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event if fired if a keyboard key is released."
+            "body": "<p>This event if fired if a keyboard key is released.</p>"
           }
         ]
       },
@@ -889,7 +889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event if fired if a keyboard key is pressed down. This event is\nonly fired once if the user keeps the key pressed for a while."
+            "body": "<p>This event if fired if a keyboard key is pressed down. This event is\n only fired once if the user keeps the key pressed for a while.</p>"
           }
         ]
       },
@@ -911,7 +911,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired any time a key is pressed. It will be repeated if\nthe user keeps the key pressed. The pressed key can be determined using\n{@link qx.event.type.KeySequence#getKeyIdentifier}."
+            "body": "<p>This event is fired any time a key is pressed. It will be repeated if\n the user keeps the key pressed. The pressed key can be determined using\n {@link qx.event.type.KeySequence#getKeyIdentifier}.</p>"
           }
         ]
       },
@@ -933,7 +933,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired if the pressed key or keys result in a printable\ncharacter. Since the character is not necessarily associated with a\nsingle physical key press, the event does not have a key identifier\ngetter. This event gets repeated if the user keeps pressing the key(s).\n\nThe unicode code of the pressed key can be read using\n{@link qx.event.type.KeyInput#getCharCode}."
+            "body": "<p>This event is fired if the pressed key or keys result in a printable\n character. Since the character is not necessarily associated with a\n single physical key press, the event does not have a key identifier\n getter. This event gets repeated if the user keeps pressing the key(s).\n The unicode code of the pressed key can be read using\n {@link qx.event.type.KeyInput#getCharCode}.</p>"
           }
         ]
       },
@@ -955,7 +955,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired when the widget gets focused. Only widgets which are\n{@link #focusable} receive this event."
+            "body": "<p>The event is fired when the widget gets focused. Only widgets which are\n {@link #focusable} receive this event.</p>"
           }
         ]
       },
@@ -977,7 +977,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired when the widget gets blurred. Only widgets which are\n{@link #focusable} receive this event."
+            "body": "<p>The event is fired when the widget gets blurred. Only widgets which are\n {@link #focusable} receive this event.</p>"
           }
         ]
       },
@@ -999,7 +999,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget itself or any child of the widget receive the focus."
+            "body": "<p>When the widget itself or any child of the widget receive the focus.</p>"
           }
         ]
       },
@@ -1021,7 +1021,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget itself or any child of the widget lost the focus."
+            "body": "<p>When the widget itself or any child of the widget lost the focus.</p>"
           }
         ]
       },
@@ -1043,7 +1043,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget gets active (receives keyboard events etc.)"
+            "body": "<p>When the widget gets active (receives keyboard events etc.)</p>"
           }
         ]
       },
@@ -1065,7 +1065,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget gets inactive"
+            "body": "<p>When the widget gets inactive</p>"
           }
         ]
       },
@@ -1087,7 +1087,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the widget becomes the capturing widget by a call to {@link #capture}."
+            "body": "<p>Fired if the widget becomes the capturing widget by a call to {@link #capture}.</p>"
           }
         ]
       },
@@ -1109,7 +1109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the widget looses the capturing mode by a call to\n{@link #releaseCapture} or a mouse click."
+            "body": "<p>Fired if the widget looses the capturing mode by a call to\n {@link #releaseCapture} or a mouse click.</p>"
           }
         ]
       },
@@ -1131,7 +1131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on the drop target when the drag&drop action is finished\nsuccessfully. This event is normally used to transfer the data\nfrom the drag to the drop target.\n\nModeled after the WHATWG specification of Drag&Drop:\nhttp://www.whatwg.org/specs/web-apps/current-work/#dnd"
+            "body": "<p>Fired on the drop target when the drag&amp;drop action is finished\n successfully. This event is normally used to transfer the data\n from the drag to the drop target.\n Modeled after the WHATWG specification of Drag&amp;Drop:\n http://www.whatwg.org/specs/web-apps/current-work/#dnd</p>"
           }
         ]
       },
@@ -1153,7 +1153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on a potential drop target when leaving it.\n\nModeled after the WHATWG specification of Drag&Drop:\nhttp://www.whatwg.org/specs/web-apps/current-work/#dnd"
+            "body": "<p>Fired on a potential drop target when leaving it.\n Modeled after the WHATWG specification of Drag&amp;Drop:\n http://www.whatwg.org/specs/web-apps/current-work/#dnd</p>"
           }
         ]
       },
@@ -1175,7 +1175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on a potential drop target when reaching it via the pointer.\nThis event can be canceled if none of the incoming data types\nare supported.\n\nModeled after the WHATWG specification of Drag&Drop:\nhttp://www.whatwg.org/specs/web-apps/current-work/#dnd"
+            "body": "<p>Fired on a potential drop target when reaching it via the pointer.\n This event can be canceled if none of the incoming data types\n are supported.\n Modeled after the WHATWG specification of Drag&amp;Drop:\n http://www.whatwg.org/specs/web-apps/current-work/#dnd</p>"
           }
         ]
       },
@@ -1197,7 +1197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired during the drag. Contains the current pointer coordinates\nusing {@link qx.event.type.Drag#getDocumentLeft} and\n{@link qx.event.type.Drag#getDocumentTop}\n\nModeled after the WHATWG specification of Drag&Drop:\nhttp://www.whatwg.org/specs/web-apps/current-work/#dnd"
+            "body": "<p>Fired during the drag. Contains the current pointer coordinates\n using {@link qx.event.type.Drag#getDocumentLeft} and\n {@link qx.event.type.Drag#getDocumentTop}\n Modeled after the WHATWG specification of Drag&amp;Drop:\n http://www.whatwg.org/specs/web-apps/current-work/#dnd</p>"
           }
         ]
       },
@@ -1219,7 +1219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initiate the drag-and-drop operation. This event is cancelable\nwhen the drag operation is currently not allowed/possible.\n\nModeled after the WHATWG specification of Drag&Drop:\nhttp://www.whatwg.org/specs/web-apps/current-work/#dnd"
+            "body": "<p>Initiate the drag-and-drop operation. This event is cancelable\n when the drag operation is currently not allowed/possible.\n Modeled after the WHATWG specification of Drag&amp;Drop:\n http://www.whatwg.org/specs/web-apps/current-work/#dnd</p>"
           }
         ]
       },
@@ -1241,7 +1241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on the source (drag) target every time a drag session was ended."
+            "body": "<p>Fired on the source (drag) target every time a drag session was ended.</p>"
           }
         ]
       },
@@ -1263,7 +1263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the drag configuration has been modified e.g. the user\npressed a key which changed the selected action. This event will be\nfired on the draggable and the droppable element. In case of the\ndroppable element, you can cancel the event and prevent a drop based on\ne.g. the current action."
+            "body": "<p>Fired when the drag configuration has been modified e.g. the user\n pressed a key which changed the selected action. This event will be\n fired on the draggable and the droppable element. In case of the\n droppable element, you can cancel the event and prevent a drop based on\n e.g. the current action.</p>"
           }
         ]
       },
@@ -1285,7 +1285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the drop was successfully done and the target widget\nis now asking for data. The listener should transfer the data,\nrespecting the selected action, to the event. This can be done using\nthe event's {@link qx.event.type.Drag#addData} method."
+            "body": "<p>Fired when the drop was successfully done and the target widget\n is now asking for data. The listener should transfer the data,\n respecting the selected action, to the event. This can be done using\n the event's {@link qx.event.type.Drag#addData} method.</p>"
           }
         ]
       },
@@ -1309,11 +1309,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPADDING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PADDING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Padding of the widget (top)"
+            "body": "<p>Padding of the widget (top)</p>"
           }
         ]
       },
@@ -1340,7 +1340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (right)"
+            "body": "<p>Padding of the widget (right)</p>"
           }
         ]
       },
@@ -1367,7 +1367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (bottom)"
+            "body": "<p>Padding of the widget (bottom)</p>"
           }
         ]
       },
@@ -1394,7 +1394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (left)"
+            "body": "<p>Padding of the widget (left)</p>"
           }
         ]
       },
@@ -1421,7 +1421,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The 'padding' property is a shorthand property for setting 'paddingTop',\n'paddingRight', 'paddingBottom' and 'paddingLeft' at the same time.\n\nIf four values are specified they apply to top, right, bottom and left respectively.\nIf there is only one value, it applies to all sides, if there are two or three,\nthe missing values are taken from the opposite side."
+            "body": "<p>The 'padding' property is a shorthand property for setting 'paddingTop',\n 'paddingRight', 'paddingBottom' and 'paddingLeft' at the same time.\n If four values are specified they apply to top, right, bottom and left respectively.\n If there is only one value, it applies to all sides, if there are two or three,\n the missing values are taken from the opposite side.</p>"
           }
         ]
       },
@@ -1450,11 +1450,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTYLING PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STYLING PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The z-index property sets the stack order of an element. An element with\ngreater stack order is always in front of another element with lower stack order."
+            "body": "<p>The z-index property sets the stack order of an element. An element with\n greater stack order is always in front of another element with lower stack order.</p>"
           }
         ]
       },
@@ -1484,7 +1484,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The decorator property points to an object, which is responsible\nfor drawing the widget's decoration, e.g. border, background or shadow.\n\nThis can be a decorator object or a string pointing to a decorator\ndefined in the decoration theme."
+            "body": "<p>The decorator property points to an object, which is responsible\n for drawing the widget's decoration, e.g. border, background or shadow.\n This can be a decorator object or a string pointing to a decorator\n defined in the decoration theme.</p>"
           }
         ]
       },
@@ -1512,7 +1512,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The background color the rendered widget."
+            "body": "<p>The background color the rendered widget.</p>"
           }
         ]
       },
@@ -1540,7 +1540,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The text color the rendered widget."
+            "body": "<p>The text color the rendered widget.</p>"
           }
         ]
       },
@@ -1569,7 +1569,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The widget's font. The value is either a font name defined in the font\ntheme or an instance of {@link qx.bom.Font}."
+            "body": "<p>The widget's font. The value is either a font name defined in the font\n theme or an instance of {@link qx.bom.Font}.</p>"
           }
         ]
       },
@@ -1598,7 +1598,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping to native style property opacity.\n\nThe uniform opacity setting to be applied across an entire object.\nBehaves like the new CSS-3 Property.\nAny values outside the range 0.0 (fully transparent) to 1.0\n(fully opaque) will be clamped to this range."
+            "body": "<p>Mapping to native style property opacity.\n The uniform opacity setting to be applied across an entire object.\n Behaves like the new CSS-3 Property.\n Any values outside the range 0.0 (fully transparent) to 1.0\n (fully opaque) will be clamped to this range.</p>"
           }
         ]
       },
@@ -1625,7 +1625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping to native style property cursor.\n\nThe name of the cursor to show when the pointer is over the widget.\nThis is any valid CSS2 cursor name defined by W3C.\n\nThe following values are possible crossbrowser:\n<ul><li>default</li>\n<li>crosshair</li>\n<li>pointer</li>\n<li>move</li>\n<li>n-resize</li>\n<li>ne-resize</li>\n<li>e-resize</li>\n<li>se-resize</li>\n<li>s-resize</li>\n<li>sw-resize</li>\n<li>w-resize</li>\n<li>nw-resize</li>\n<li>nesw-resize</li>\n<li>nwse-resize</li>\n<li>text</li>\n<li>wait</li>\n<li>help </li>\n</ul>"
+            "body": "<p>Mapping to native style property cursor.\n The name of the cursor to show when the pointer is over the widget.\n This is any valid CSS2 cursor name defined by W3C.\n The following values are possible crossbrowser:\n </p>\n<ul><li>default</li>\n <li>crosshair</li>\n <li>pointer</li>\n <li>move</li>\n <li>n-resize</li>\n <li>ne-resize</li>\n <li>e-resize</li>\n <li>se-resize</li>\n <li>s-resize</li>\n <li>sw-resize</li>\n <li>w-resize</li>\n <li>nw-resize</li>\n <li>nesw-resize</li>\n <li>nwse-resize</li>\n <li>text</li>\n <li>wait</li>\n <li>help </li>\n </ul>"
           }
         ]
       },
@@ -1653,7 +1653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the tooltip instance to use for this widget. If only the tooltip\ntext and icon have to be set its better to use the {@link #toolTipText}\nand {@link #toolTipIcon} properties since they use a shared tooltip\ninstance.\n\nIf this property is set the {@link #toolTipText} and {@link #toolTipIcon}\nproperties are ignored."
+            "body": "<p>Sets the tooltip instance to use for this widget. If only the tooltip\n text and icon have to be set its better to use the {@link #toolTipText}\n and {@link #toolTipIcon} properties since they use a shared tooltip\n instance.\n If this property is set the {@link #toolTipText} and {@link #toolTipIcon}\n properties are ignored.</p>"
           }
         ]
       },
@@ -1678,7 +1678,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The text of the widget's tooltip. This text can contain HTML markup.\nThe text is displayed using a shared tooltip instance. If the tooltip\nmust be customized beyond the text and an icon {@link #toolTipIcon}, the\n{@link #toolTip} property has to be used"
+            "body": "<p>The text of the widget's tooltip. This text can contain HTML markup.\n The text is displayed using a shared tooltip instance. If the tooltip\n must be customized beyond the text and an icon {@link #toolTipIcon}, the\n {@link #toolTip} property has to be used</p>"
           }
         ]
       },
@@ -1705,7 +1705,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The icon URI of the widget's tooltip. This icon is displayed using a shared\ntooltip instance. If the tooltip must be customized beyond the tooltip text\n{@link #toolTipText} and the icon, the {@link #toolTip} property has to be\nused."
+            "body": "<p>The icon URI of the widget's tooltip. This icon is displayed using a shared\n tooltip instance. If the tooltip must be customized beyond the tooltip text\n {@link #toolTipText} and the icon, the {@link #toolTip} property has to be\n used.</p>"
           }
         ]
       },
@@ -1731,7 +1731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls if a tooltip should shown or not."
+            "body": "<p>Controls if a tooltip should shown or not.</p>"
           }
         ]
       },
@@ -1756,7 +1756,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Forces to show tooltip when widget is disabled."
+            "body": "<p>Forces to show tooltip when widget is disabled.</p>"
           }
         ]
       },
@@ -1781,11 +1781,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMANAGEMENT PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MANAGEMENT PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Controls the visibility. Valid values are:\n\n<ul>\n<li><b>visible</b>: Render the widget</li>\n<li><b>hidden</b>: Hide the widget but don't relayout the widget's parent.</li>\n<li><b>excluded</b>: Hide the widget and relayout the parent as if the\nwidget was not a child of its parent.</li>\n</ul>"
+            "body": "<p>Controls the visibility. Valid values are:\n </p>\n<ul>\n   <li><b>visible</b>: Render the widget</li>\n   <li><b>hidden</b>: Hide the widget but don't relayout the widget's parent.</li>\n   <li><b>excluded</b>: Hide the widget and relayout the parent as if the\n     widget was not a child of its parent.</li>\n </ul>"
           }
         ]
       },
@@ -1816,7 +1816,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is enabled. Disabled widgets are usually grayed out\nand do not process user created events. While in the disabled state most\nuser input events are blocked. Only the {@link #pointerover} and\n{@link #pointerout} events will be dispatched."
+            "body": "<p>Whether the widget is enabled. Disabled widgets are usually grayed out\n and do not process user created events. While in the disabled state most\n user input events are blocked. Only the {@link #pointerover} and\n {@link #pointerout} events will be dispatched.</p>"
           }
         ]
       },
@@ -1844,7 +1844,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is anonymous.\n\nAnonymous widgets are ignored in the event hierarchy. This is useful\nfor combined widgets where the internal structure do not have a custom\nappearance with a different styling from the element around. This is\nespecially true for widgets like checkboxes or buttons where the text\nor icon are handled synchronously for state changes to the outer widget."
+            "body": "<p>Whether the widget is anonymous.\n Anonymous widgets are ignored in the event hierarchy. This is useful\n for combined widgets where the internal structure do not have a custom\n appearance with a different styling from the element around. This is\n especially true for widgets like checkboxes or buttons where the text\n or icon are handled synchronously for state changes to the outer widget.</p>"
           }
         ]
       },
@@ -1870,7 +1870,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines the tab index of an widget. If widgets with tab indexes are part\nof the current focus root these elements are sorted in first priority. Afterwards\nthe sorting continues by rendered position, zIndex and other criteria.\n\nPlease note: The value must be between 1 and 32000."
+            "body": "<p>Defines the tab index of an widget. If widgets with tab indexes are part\n of the current focus root these elements are sorted in first priority. Afterwards\n the sorting continues by rendered position, zIndex and other criteria.\n Please note: The value must be between 1 and 32000.</p>"
           }
         ]
       },
@@ -1896,7 +1896,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is focusable e.g. rendering a focus border and visualize\nas active element.\n\nSee also {@link #isTabable} which allows runtime checks for\n<code>isChecked</code> or other stuff to test whether the widget is\nreachable via the TAB key."
+            "body": "<p>Whether the widget is focusable e.g. rendering a focus border and visualize\n as active element.\n See also {@link #isTabable} which allows runtime checks for\n <code>isChecked</code> or other stuff to test whether the widget is\n reachable via the TAB key.</p>"
           }
         ]
       },
@@ -1922,7 +1922,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If this property is enabled, the widget and all of its child widgets\nwill never get focused. The focus keeps at the currently\nfocused widget.\n\nThis only works for widgets which are not {@link #focusable}.\n\nThis is mainly useful for widget authors. Please use with caution!"
+            "body": "<p>If this property is enabled, the widget and all of its child widgets\n will never get focused. The focus keeps at the currently\n focused widget.\n This only works for widgets which are not {@link #focusable}.\n This is mainly useful for widget authors. Please use with caution!</p>"
           }
         ]
       },
@@ -1948,7 +1948,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If this property if enabled, the widget and all of its child widgets\nwill never get activated. The activation keeps at the currently\nactivated widget.\n\nThis is mainly useful for widget authors. Please use with caution!"
+            "body": "<p>If this property if enabled, the widget and all of its child widgets\n will never get activated. The activation keeps at the currently\n activated widget.\n This is mainly useful for widget authors. Please use with caution!</p>"
           }
         ]
       },
@@ -1974,7 +1974,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget acts as a source for drag&drop operations"
+            "body": "<p>Whether the widget acts as a source for drag&amp;drop operations</p>"
           }
         ]
       },
@@ -2000,7 +2000,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget acts as a target for drag&drop operations"
+            "body": "<p>Whether the widget acts as a target for drag&amp;drop operations</p>"
           }
         ]
       },
@@ -2026,7 +2026,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains content which may be selected by the user.\n\nIf the value set to <code>true</code> the native browser selection can\nbe used for text selection. But it is normally useful for\nforms fields, longer texts/documents, editors, etc."
+            "body": "<p>Whether the widget contains content which may be selected by the user.\n If the value set to <code>true</code> the native browser selection can\n be used for text selection. But it is normally useful for\n forms fields, longer texts/documents, editors, etc.</p>"
           }
         ]
       },
@@ -2053,7 +2053,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show a context menu and which one"
+            "body": "<p>Whether to show a context menu and which one</p>"
           }
         ]
       },
@@ -2080,7 +2080,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the native context menu should be enabled for this widget. To\nglobally enable the native context menu set the {@link #nativeContextMenu}\nproperty of the root widget ({@link qx.ui.root.Abstract}) to\n<code>true</code>."
+            "body": "<p>Whether the native context menu should be enabled for this widget. To\n globally enable the native context menu set the {@link #nativeContextMenu}\n property of the root widget ({@link qx.ui.root.Abstract}) to\n <code>true</code>.</p>"
           }
         ]
       },
@@ -2108,7 +2108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The appearance ID. This ID is used to identify the appearance theme\nentry to use for this widget. This controls the styling of the element."
+            "body": "<p>The appearance ID. This ID is used to identify the appearance theme\n entry to use for this widget. This controls the styling of the element.</p>"
           }
         ]
       },
@@ -2137,7 +2137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget should print out hints and debug messages"
+            "body": "<p>Whether the widget should print out hints and debug messages</p>"
           }
         ]
       },
@@ -2159,7 +2159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to throw an error on focus/blur if the widget is unfocusable"
+            "body": "<p>Whether to throw an error on focus/blur if the widget is unfocusable</p>"
           }
         ]
       },
@@ -2181,7 +2181,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget, which contains the given DOM element."
+            "body": "<p>Returns the widget, which contains the given DOM element.</p>"
           }
         ],
         "@param": [
@@ -2194,9 +2194,9 @@
           },
           {
             "name": "@param",
-            "body": "considerAnonymousState {Boolean?false} If true, anonymous widget\nwill not be returned.",
+            "body": "considerAnonymousState {Boolean?false} If true, anonymous widget\n   will not be returned.",
             "paramName": "considerAnonymousState",
-            "description": " If true, anonymous widget\nwill not be returned.",
+            "description": " If true, anonymous widget\n   will not be returned.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -2229,7 +2229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the \"parent\" widget contains the \"child\" widget."
+            "body": "<p>Whether the \"parent\" widget contains the \"child\" widget.</p>"
           }
         ],
         "@param": [
@@ -2347,7 +2347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -2379,7 +2379,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -2413,15 +2413,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.layout.Abstract"
           }
         ]
@@ -2444,7 +2444,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -2510,36 +2510,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -2574,7 +2574,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSEPARATOR SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SEPARATOR SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -2596,7 +2596,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -2622,7 +2622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -2638,9 +2638,9 @@
           },
           {
             "name": "@param",
-            "body": "bounds {Map} Contains the left and top coordinate and the width and height\nof the separator to render.",
+            "body": "bounds {Map} Contains the left and top coordinate and the width and height\n    of the separator to render.",
             "paramName": "bounds",
-            "description": " Contains the left and top coordinate and the width and height\nof the separator to render.",
+            "description": " Contains the left and top coordinate and the width and height\n    of the separator to render.",
             "type": "Map"
           }
         ]
@@ -2667,19 +2667,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSIZE HINTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SIZE HINTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -2705,7 +2705,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -2731,7 +2731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the recommended/natural dimensions of the widget's content.\n\nFor labels and images this may be their natural size when defined without\nany dimensions. For containers this may be the recommended size of the\nunderlying layout manager.\n\nDeveloper note: This can be overwritten by the derived classes to allow\na custom handling here."
+            "body": "<p>Returns the recommended/natural dimensions of the widget's content.\n For labels and images this may be their natural size when defined without\n any dimensions. For containers this may be the recommended size of the\n underlying layout manager.\n Developer note: This can be overwritten by the derived classes to allow\n a custom handling here.</p>"
           }
         ],
         "@return": [
@@ -2761,7 +2761,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -2804,7 +2804,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the computed height for the given width."
+            "body": "<p>Returns the computed height for the given width.</p>"
           }
         ],
         "@abstract": [
@@ -2849,19 +2849,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINSET CALCULATION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INSET CALCULATION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the sum of the widget's padding and border width."
+            "body": "<p>Returns the sum of the widget's padding and border width.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Contains the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>. All values are integers.",
+            "body": "{Map} Contains the keys <code>top</code>, <code>right</code>,\n   <code>bottom</code> and <code>left</code>. All values are integers.",
             "type": "Map",
-            "description": " Contains the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>. All values are integers."
+            "description": " Contains the keys <code>top</code>, <code>right</code>,\n   <code>bottom</code> and <code>left</code>. All values are integers."
           }
         ]
       },
@@ -2883,19 +2883,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMPUTED LAYOUT SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMPUTED LAYOUT SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the widget's computed inner size as available\nthrough the layout process.\n\nThis function is guaranteed to return a correct value\nduring a {@link #resize} or {@link #move} event dispatch."
+            "body": "<p>Returns the widget's computed inner size as available\n through the layout process.\n This function is guaranteed to return a correct value\n during a {@link #resize} or {@link #move} event dispatch.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The widget inner dimension in pixel (if the layout is\nvalid). Contains the keys <code>width</code> and <code>height</code>.",
+            "body": "{Map} The widget inner dimension in pixel (if the layout is\n    valid). Contains the keys <code>width</code> and <code>height</code>.",
             "type": "Map",
-            "description": " The widget inner dimension in pixel (if the layout is\nvalid). Contains the keys <code>width</code> and <code>height</code>."
+            "description": " The widget inner dimension in pixel (if the layout is\n    valid). Contains the keys <code>width</code> and <code>height</code>."
           }
         ]
       },
@@ -2917,11 +2917,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nANIMATION SUPPORT: USER API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ANIMATION SUPPORT: USER API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Fade out this widget."
+            "body": "<p>Fade out this widget.</p>"
           }
         ],
         "@param": [
@@ -2936,9 +2936,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\nthe fade animation.",
+            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\n   the fade animation.",
             "type": "qx.bom.element.AnimationHandle",
-            "description": " The animation handle to react for\nthe fade animation."
+            "description": " The animation handle to react for\n   the fade animation."
           }
         ]
       },
@@ -2960,7 +2960,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fade in the widget."
+            "body": "<p>Fade in the widget.</p>"
           }
         ],
         "@param": [
@@ -2975,9 +2975,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\nthe fade animation.",
+            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\n   the fade animation.",
             "type": "qx.bom.element.AnimationHandle",
-            "description": " The animation handle to react for\nthe fade animation."
+            "description": " The animation handle to react for\n   the fade animation."
           }
         ]
       },
@@ -2999,11 +2999,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVISIBILITY SUPPORT: USER API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VISIBILITY SUPPORT: USER API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -3028,7 +3028,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Make this widget visible."
+            "body": "<p>Make this widget visible.</p>"
           }
         ]
       },
@@ -3050,7 +3050,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide this widget."
+            "body": "<p>Hide this widget.</p>"
           }
         ]
       },
@@ -3072,7 +3072,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide this widget and exclude it from the underlying layout."
+            "body": "<p>Hide this widget and exclude it from the underlying layout.</p>"
           }
         ]
       },
@@ -3094,7 +3094,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally visible.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally visible.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3124,7 +3124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally hidden.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally hidden.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3154,7 +3154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally excluded.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally excluded.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3188,7 +3188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if the widget and all its parents are visible.\n\nWARNING: Please use this method with caution because it flushes the\ninternal queues which might be an expensive operation."
+            "body": "<p>Detects if the widget and all its parents are visible.\n WARNING: Please use this method with caution because it flushes the\n internal queues which might be an expensive operation.</p>"
           }
         ],
         "@return": [
@@ -3218,11 +3218,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCREATION OF HTML ELEMENTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CREATION OF HTML ELEMENTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Create the widget's content HTML element."
+            "body": "<p>Create the widget's content HTML element.</p>"
           }
         ],
         "@return": [
@@ -3252,7 +3252,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the content element. The style properties\nposition and zIndex are modified from the Widget\ncore.\n\nThis function may be overridden to customize a class\ncontent."
+            "body": "<p>Creates the content element. The style properties\n position and zIndex are modified from the Widget\n core.\n This function may be overridden to customize a class\n content.</p>"
           }
         ],
         "@return": [
@@ -3282,7 +3282,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element wrapper of the widget's content element.\nThis method exposes widget internal and must be used with caution!"
+            "body": "<p>Returns the element wrapper of the widget's content element.\n This method exposes widget internal and must be used with caution!</p>"
           }
         ],
         "@return": [
@@ -3312,7 +3312,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -3344,7 +3344,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all children, which are layout relevant. This excludes all widgets,\nwhich have a {@link qx.ui.core.Widget#visibility} value of <code>exclude</code>."
+            "body": "<p>Returns all children, which are layout relevant. This excludes all widgets,\n which have a {@link qx.ui.core.Widget#visibility} value of <code>exclude</code>.</p>"
           }
         ],
         "@internal": [
@@ -3380,7 +3380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Marks the layout of this widget as invalid and triggers a layout update.\nThis is a shortcut for <code>qx.ui.core.queue.Layout.add(this);</code>."
+            "body": "<p>Marks the layout of this widget as invalid and triggers a layout update.\n This is a shortcut for <code>qx.ui.core.queue.Layout.add(this);</code>.</p>"
           }
         ]
       },
@@ -3406,7 +3406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the cache for children which should be laid out."
+            "body": "<p>Resets the cache for children which should be laid out.</p>"
           }
         ]
       },
@@ -3428,7 +3428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the layout has children, which are layout relevant. This\nexcludes all widgets, which have a {@link qx.ui.core.Widget#visibility}\nvalue of <code>exclude</code>."
+            "body": "<p>Returns whether the layout has children, which are layout relevant. This\n excludes all widgets, which have a {@link qx.ui.core.Widget#visibility}\n value of <code>exclude</code>.</p>"
           }
         ],
         "@return": [
@@ -3458,7 +3458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget which contains the children and\nis relevant for laying them out. This is from the user point of\nview and may not be identical to the technical structure."
+            "body": "<p>Returns the widget which contains the children and\n is relevant for laying them out. This is from the user point of\n view and may not be identical to the technical structure.</p>"
           }
         ],
         "@return": [
@@ -3494,7 +3494,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Array} Placeholder for children list in empty widgets.\nMainly to keep instance number low."
+            "body": "{Array} Placeholder for children list in empty widgets.\n     Mainly to keep instance number low."
           }
         ],
         "@lint": [
@@ -3522,15 +3522,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, so please do not modify it in-place).",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, so please do not modify it in-place).",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, so please do not modify it in-place)."
+            "description": " The children array (Arrays are\n   reference types, so please do not modify it in-place)."
           }
         ]
       },
@@ -3552,7 +3552,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.</p>"
           }
         ],
         "@param": [
@@ -3567,9 +3567,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       },
@@ -3591,7 +3591,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -3621,7 +3621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recursively adds all children to the given queue"
+            "body": "<p>Recursively adds all children to the given queue</p>"
           }
         ],
         "@param": [
@@ -3652,7 +3652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -3692,7 +3692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index"
+            "body": "<p>Add a child widget at the specified index</p>"
           }
         ],
         "@param": [
@@ -3705,9 +3705,9 @@
           },
           {
             "name": "@param",
-            "body": "index {Integer} Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "body": "index {Integer} Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "paramName": "index",
-            "description": " Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "description": " Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "type": "Integer"
           },
           {
@@ -3739,7 +3739,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget"
+            "body": "<p>Add a widget before another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -3786,7 +3786,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget"
+            "body": "<p>Add a widget after another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -3799,9 +3799,9 @@
           },
           {
             "name": "@param",
-            "body": "after {qx.ui.core.LayoutItem} widget, after which the new widget will\nbe inserted",
+            "body": "after {qx.ui.core.LayoutItem} widget, after which the new widget will\n   be inserted",
             "paramName": "after",
-            "description": " widget, after which the new widget will\nbe inserted",
+            "description": " widget, after which the new widget will\n   be inserted",
             "type": "qx.ui.core.LayoutItem"
           },
           {
@@ -3833,7 +3833,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -3864,7 +3864,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index."
+            "body": "<p>Remove the widget at the specified index.</p>"
           }
         ],
         "@param": [
@@ -3903,7 +3903,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -3933,11 +3933,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN HANDLING - TEMPLATE METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN HANDLING - TEMPLATE METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method gets called each time after a child widget was added and can\nbe overridden to get notified about child adds."
+            "body": "<p>This method gets called each time after a child widget was added and can\n be overridden to get notified about child adds.</p>"
           }
         ],
         "@signature": [
@@ -3974,7 +3974,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method gets called each time after a child widget was removed and\ncan be overridden to get notified about child removes."
+            "body": "<p>This method gets called each time after a child widget was removed and\n can be overridden to get notified about child removes.</p>"
           }
         ],
         "@signature": [
@@ -4011,11 +4011,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN HANDLING - IMPLEMENTATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN HANDLING - IMPLEMENTATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Convenience function to add a child widget. It will insert the child to\nthe parent widget and schedule a layout update."
+            "body": "<p>Convenience function to add a child widget. It will insert the child to\n the parent widget and schedule a layout update.</p>"
           }
         ],
         "@param": [
@@ -4056,7 +4056,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convenience function to remove a child widget. It will remove it\nfrom the parent widget and schedule a layout update."
+            "body": "<p>Convenience function to remove a child widget. It will remove it\n from the parent widget and schedule a layout update.</p>"
           }
         ],
         "@param": [
@@ -4087,19 +4087,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Enables pointer event capturing. All pointer events will dispatched on this\nwidget until capturing is disabled using {@link #releaseCapture} or a\npointer button is clicked. If the widgets becomes the capturing widget the\n{@link #capture} event is fired. Once it loses capture mode the\n{@link #losecapture} event is fired."
+            "body": "<p>Enables pointer event capturing. All pointer events will dispatched on this\n widget until capturing is disabled using {@link #releaseCapture} or a\n pointer button is clicked. If the widgets becomes the capturing widget the\n {@link #capture} event is fired. Once it loses capture mode the\n {@link #losecapture} event is fired.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "capture {Boolean?true} If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "body": "capture {Boolean?true} If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "paramName": "capture",
-            "description": " If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "description": " If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -4124,7 +4124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disables pointer capture mode enabled by {@link #capture}."
+            "body": "<p>Disables pointer capture mode enabled by {@link #capture}.</p>"
           }
         ]
       },
@@ -4146,7 +4146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if pointer event capturing is enabled for this widget."
+            "body": "<p>Checks if pointer event capturing is enabled for this widget.</p>"
           }
         ],
         "@return": [
@@ -4176,11 +4176,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPADDING SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PADDING SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4208,7 +4208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to updated the css padding of the content element considering the\npadding of the decorator."
+            "body": "<p>Helper to updated the css padding of the content element considering the\n padding of the decorator.</p>"
           }
         ],
         "@param": [
@@ -4246,11 +4246,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDECORATION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DECORATION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4275,11 +4275,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOTHER PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OTHER PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4304,7 +4304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4329,7 +4329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4354,7 +4354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4379,7 +4379,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4404,7 +4404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4429,7 +4429,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4454,7 +4454,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4479,11 +4479,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDYNAMIC THEME SWITCH SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DYNAMIC THEME SWITCH SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -4509,7 +4509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTATE HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STATE HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -4597,7 +4597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether a state is set."
+            "body": "<p>Returns whether a state is set.</p>"
           }
         ],
         "@param": [
@@ -4636,7 +4636,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a state."
+            "body": "<p>Sets a state.</p>"
           }
         ],
         "@param": [
@@ -4667,7 +4667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears a state."
+            "body": "<p>Clears a state.</p>"
           }
         ],
         "@param": [
@@ -4698,7 +4698,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces the first state with the second one.\n\nThis method is ideal for state transitions e.g. normal => selected."
+            "body": "<p>Replaces the first state with the second one.\n This method is ideal for state transitions e.g. normal =&gt; selected.</p>"
           }
         ],
         "@param": [
@@ -4736,7 +4736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPEARANCE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  APPEARANCE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -4796,7 +4796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders the appearance using the current widget states.\n\nUsed exclusively by {qx.ui.core.queue.Appearance}."
+            "body": "<p>Renders the appearance using the current widget states.\n Used exclusively by {qx.ui.core.queue.Appearance}.</p>"
           }
         ]
       },
@@ -4818,7 +4818,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -4843,7 +4843,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method called from the visibility queue to detect outstanding changes\nto the appearance."
+            "body": "<p>Helper method called from the visibility queue to detect outstanding changes\n to the appearance.</p>"
           }
         ],
         "@internal": [
@@ -4871,7 +4871,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Refreshes the appearance of this widget and all\nregistered child controls."
+            "body": "<p>Refreshes the appearance of this widget and all\n registered child controls.</p>"
           }
         ]
       },
@@ -4893,11 +4893,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET QUEUE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET QUEUE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method is called during the flush of the\n{@link qx.ui.core.queue.Widget widget queue}."
+            "body": "<p>This method is called during the flush of the\n {@link qx.ui.core.queue.Widget widget queue}.</p>"
           }
         ],
         "@param": [
@@ -4928,19 +4928,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the next event target in the parent chain. May\nalso return the widget itself if it is not anonymous."
+            "body": "<p>Returns the next event target in the parent chain. May\n also return the widget itself if it is not anonymous.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget} A working event target of this widget.\nMay be <code>null</code> as well.",
+            "body": "{qx.ui.core.Widget} A working event target of this widget.\n    May be <code>null</code> as well.",
             "type": "qx.ui.core.Widget",
-            "description": " A working event target of this widget.\nMay be <code>null</code> as well."
+            "description": " A working event target of this widget.\n    May be <code>null</code> as well."
           }
         ]
       },
@@ -4962,15 +4962,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the next focus target in the parent chain. May\nalso return the widget itself if it is not anonymous and focusable."
+            "body": "<p>Returns the next focus target in the parent chain. May\n also return the widget itself if it is not anonymous and focusable.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget} A working focus target of this widget.\nMay be <code>null</code> as well.",
+            "body": "{qx.ui.core.Widget} A working focus target of this widget.\n    May be <code>null</code> as well.",
             "type": "qx.ui.core.Widget",
-            "description": " A working focus target of this widget.\nMay be <code>null</code> as well."
+            "description": " A working focus target of this widget.\n    May be <code>null</code> as well."
           }
         ]
       },
@@ -4992,7 +4992,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element which should be focused."
+            "body": "<p>Returns the element which should be focused.</p>"
           }
         ],
         "@return": [
@@ -5022,7 +5022,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is reachable by pressing the TAB key.\n\nNormally tests for both, the focusable property and a positive or\nundefined tabIndex property. The widget must have a DOM element\nsince only visible widgets are tabable."
+            "body": "<p>Whether the widget is reachable by pressing the TAB key.\n Normally tests for both, the focusable property and a positive or\n undefined tabIndex property. The widget must have a DOM element\n since only visible widgets are tabable.</p>"
           }
         ],
         "@return": [
@@ -5052,7 +5052,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5077,7 +5077,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5102,7 +5102,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5127,7 +5127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5152,7 +5152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5177,7 +5177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5202,11 +5202,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONTEXT MENU\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONTEXT MENU\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5231,7 +5231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5256,7 +5256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>contextmenu</code> event"
+            "body": "<p>Event listener for <code>contextmenu</code> event</p>"
           }
         ],
         "@param": [
@@ -5287,7 +5287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>beforeContextmenuOpen</code> event"
+            "body": "<p>Event listener for <code>beforeContextmenuOpen</code> event</p>"
           }
         ],
         "@param": [
@@ -5318,11 +5318,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSEFUL COMMON EVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USEFUL COMMON EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener which stops a bubbling event from\npropagates further."
+            "body": "<p>Event listener which stops a bubbling event from\n propagates further.</p>"
           }
         ],
         "@param": [
@@ -5353,11 +5353,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDRAG & DROP SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DRAG &amp; DROP SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper to return a instance of a {@link qx.ui.core.DragDropCursor}.\nIf you want to use your own DragDropCursor, override this method\nand return your custom instance."
+            "body": "<p>Helper to return a instance of a {@link qx.ui.core.DragDropCursor}.\n If you want to use your own DragDropCursor, override this method\n and return your custom instance.</p>"
           }
         ],
         "@return": [
@@ -5387,7 +5387,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5412,7 +5412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -5437,7 +5437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for own <code>dragstart</code> event."
+            "body": "<p>Event listener for own <code>dragstart</code> event.</p>"
           }
         ],
         "@param": [
@@ -5468,7 +5468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for own <code>drag</code> event."
+            "body": "<p>Event listener for own <code>drag</code> event.</p>"
           }
         ],
         "@param": [
@@ -5499,7 +5499,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for own <code>dragend</code> event."
+            "body": "<p>Event listener for own <code>dragend</code> event.</p>"
           }
         ],
         "@param": [
@@ -5530,7 +5530,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for own <code>dragchange</code> event."
+            "body": "<p>Event listener for own <code>dragchange</code> event.</p>"
           }
         ],
         "@param": [
@@ -5561,11 +5561,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVISUALIZE FOCUS STATES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VISUALIZE FOCUS STATES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler which is executed when the widget receives the focus.\n\nThis method is used by the {@link qx.ui.core.FocusHandler} to\napply states etc. to a focused widget."
+            "body": "<p>Event handler which is executed when the widget receives the focus.\n This method is used by the {@link qx.ui.core.FocusHandler} to\n apply states etc. to a focused widget.</p>"
           }
         ],
         "@internal": [
@@ -5593,7 +5593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler which is executed when the widget lost the focus.\n\nThis method is used by the {@link qx.ui.core.FocusHandler} to\nremove states etc. from a previously focused widget."
+            "body": "<p>Event handler which is executed when the widget lost the focus.\n This method is used by the {@link qx.ui.core.FocusHandler} to\n remove states etc. from a previously focused widget.</p>"
           }
         ],
         "@internal": [
@@ -5621,11 +5621,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL CHILD INTO VIEW\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL CHILD INTO VIEW\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The method scrolls the given item into view."
+            "body": "<p>The method scrolls the given item into view.</p>"
           }
         ],
         "@param": [
@@ -5638,27 +5638,27 @@
           },
           {
             "name": "@param",
-            "body": "alignX {String?null} Alignment of the item. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "alignX {String?null} Alignment of the item. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "alignX",
-            "description": " Alignment of the item. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the item. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "alignY {String?null} Alignment of the item. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "alignY {String?null} Alignment of the item. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "alignY",
-            "description": " Alignment of the item. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the item. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?true} Whether the execution should be made\ndirectly when possible",
+            "body": "direct {Boolean?true} Whether the execution should be made\n   directly when possible",
             "paramName": "direct",
-            "description": " Whether the execution should be made\ndirectly when possible",
+            "description": " Whether the execution should be made\n   directly when possible",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -5683,7 +5683,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The method scrolls the given item into view (x-axis only)."
+            "body": "<p>The method scrolls the given item into view (x-axis only).</p>"
           }
         ],
         "@param": [
@@ -5696,18 +5696,18 @@
           },
           {
             "name": "@param",
-            "body": "align {String?null} Alignment of the item. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "align {String?null} Alignment of the item. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "align",
-            "description": " Alignment of the item. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the item. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?true} Whether the execution should be made\ndirectly when possible",
+            "body": "direct {Boolean?true} Whether the execution should be made\n   directly when possible",
             "paramName": "direct",
-            "description": " Whether the execution should be made\ndirectly when possible",
+            "description": " Whether the execution should be made\n   directly when possible",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -5732,7 +5732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The method scrolls the given item into view (y-axis only)."
+            "body": "<p>The method scrolls the given item into view (y-axis only).</p>"
           }
         ],
         "@param": [
@@ -5745,18 +5745,18 @@
           },
           {
             "name": "@param",
-            "body": "align {String?null} Alignment of the element. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "align {String?null} Alignment of the element. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "align",
-            "description": " Alignment of the element. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the element. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?true} Whether the execution should be made\ndirectly when possible",
+            "body": "direct {Boolean?true} Whether the execution should be made\n   directly when possible",
             "paramName": "direct",
-            "description": " Whether the execution should be made\ndirectly when possible",
+            "description": " Whether the execution should be made\n   directly when possible",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -5781,11 +5781,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFOCUS SYSTEM USER ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FOCUS SYSTEM USER ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Focus this widget."
+            "body": "<p>Focus this widget.</p>"
           }
         ]
       },
@@ -5807,7 +5807,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove focus from this widget."
+            "body": "<p>Remove focus from this widget.</p>"
           }
         ]
       },
@@ -5829,7 +5829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activate this widget e.g. for keyboard events."
+            "body": "<p>Activate this widget e.g. for keyboard events.</p>"
           }
         ]
       },
@@ -5851,7 +5851,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deactivate this widget e.g. for keyboard events."
+            "body": "<p>Deactivate this widget e.g. for keyboard events.</p>"
           }
         ]
       },
@@ -5873,7 +5873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focus this widget when using the keyboard. This is\nmainly thought for the advanced qooxdoo keyboard handling\nand should not be used by the application developer."
+            "body": "<p>Focus this widget when using the keyboard. This is\n mainly thought for the advanced qooxdoo keyboard handling\n and should not be used by the application developer.</p>"
           }
         ],
         "@internal": [
@@ -5901,11 +5901,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILD CONTROL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILD CONTROL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether the given ID is assigned to a child control."
+            "body": "<p>Whether the given ID is assigned to a child control.</p>"
           }
         ],
         "@param": [
@@ -5972,7 +5972,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map of all already created child controls"
+            "body": "<p>Returns a map of all already created child controls</p>"
           }
         ],
         "@return": [
@@ -6002,7 +6002,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the child control from the given ID. Returns\n<code>null</code> when the child control is unknown.\n\nIt is designed for widget authors, who want to access child controls,\nwhich are created by the widget itself.\n\n<b>Warning</b>: This method exposes widget internals and modifying the\nreturned sub widget may bring the widget into an inconsistent state.\nAccessing child controls defined in a super class or in an foreign class\nis not supported. Do not use it if the result can be achieved using public\nAPI or theming."
+            "body": "<p>Returns the child control from the given ID. Returns\n <code>null</code> when the child control is unknown.\n It is designed for widget authors, who want to access child controls,\n which are created by the widget itself.\n <b>Warning</b>: This method exposes widget internals and modifying the\n returned sub widget may bring the widget into an inconsistent state.\n Accessing child controls defined in a super class or in an foreign class\n is not supported. Do not use it if the result can be achieved using public\n API or theming.</p>"
           }
         ],
         "@param": [
@@ -6015,9 +6015,9 @@
           },
           {
             "name": "@param",
-            "body": "notcreate {Boolean?false} Whether the child control\nshould not be created dynamically if not yet available.",
+            "body": "notcreate {Boolean?false} Whether the child control\n    should not be created dynamically if not yet available.",
             "paramName": "notcreate",
-            "description": " Whether the child control\nshould not be created dynamically if not yet available.",
+            "description": " Whether the child control\n    should not be created dynamically if not yet available.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -6050,7 +6050,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the given child control by ID"
+            "body": "<p>Shows the given child control by ID</p>"
           }
         ],
         "@param": [
@@ -6089,7 +6089,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Excludes the given child control by ID"
+            "body": "<p>Excludes the given child control by ID</p>"
           }
         ],
         "@param": [
@@ -6120,7 +6120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given child control is visible."
+            "body": "<p>Whether the given child control is visible.</p>"
           }
         ],
         "@param": [
@@ -6159,7 +6159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Release the child control by ID and decouple the\nchild from the parent. This method does not dispose the child control."
+            "body": "<p>Release the child control by ID and decouple the\n child from the parent. This method does not dispose the child control.</p>"
           }
         ],
         "@param": [
@@ -6198,7 +6198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Force the creation of the given child control by ID.\n\nDo not override this method! Override {@link #_createChildControlImpl}\ninstead if you need to support new controls."
+            "body": "<p>Force the creation of the given child control by ID.\n Do not override this method! Override {@link #_createChildControlImpl}\n instead if you need to support new controls.</p>"
           }
         ],
         "@param": [
@@ -6245,22 +6245,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method to create child controls. This method\nshould be overwritten by classes which extends this one\nto support new child control types."
+            "body": "<p>Internal method to create child controls. This method\n should be overwritten by classes which extends this one\n to support new child control types.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -6293,7 +6293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose all registered controls. This is automatically\nexecuted by the widget."
+            "body": "<p>Dispose all registered controls. This is automatically\n executed by the widget.</p>"
           }
         ]
       },
@@ -6315,7 +6315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds and returns the top level control. This is the first\nwidget which is not a child control of any other widget."
+            "body": "<p>Finds and returns the top level control. This is the first\n widget which is not a child control of any other widget.</p>"
           }
         ],
         "@return": [
@@ -6345,7 +6345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the ID (name) if this instance was a created as a child control of another widget.\n\nSee the first parameter id in {@link qx.ui.core.Widget#_createChildControlImpl}"
+            "body": "<p>Return the ID (name) if this instance was a created as a child control of another widget.\n See the first parameter id in {@link qx.ui.core.Widget#_createChildControlImpl}</p>"
           }
         ],
         "@return": [
@@ -6375,11 +6375,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLOWER LEVEL ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LOWER LEVEL ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the location of the content element in context of the document\ndimensions.\n\nSupported modes:\n\n* <code>margin</code>: Calculate from the margin box of the element\n(bigger than the visual appearance: including margins of given element)\n* <code>box</code>: Calculates the offset box of the element (default,\nuses the same size as visible)\n* <code>border</code>: Calculate the border box (useful to align to\nborder edges of two elements).\n* <code>scroll</code>: Calculate the scroll box (relevant for absolute\npositioned content).\n* <code>padding</code>: Calculate the padding box (relevant for\nstatic/relative positioned content)."
+            "body": "<p>Computes the location of the content element in context of the document\n dimensions.\n Supported modes:</p>\n<ul>\n<li><code>margin</code>: Calculate from the margin box of the element\n(bigger than the visual appearance: including margins of given element)</li>\n<li><code>box</code>: Calculates the offset box of the element (default,\nuses the same size as visible)</li>\n<li><code>border</code>: Calculate the border box (useful to align to\nborder edges of two elements).</li>\n<li><code>scroll</code>: Calculate the scroll box (relevant for absolute\npositioned content).</li>\n<li><code>padding</code>: Calculate the padding box (relevant for\nstatic/relative positioned content).</li>\n</ul>"
           }
         ],
         "@param": [
@@ -6396,9 +6396,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the element relative to the document.",
+            "body": "{Map} Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the element relative to the document.",
             "type": "Map",
-            "description": " Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the element relative to the document."
+            "description": " Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the element relative to the document."
           }
         ]
       },
@@ -6420,7 +6420,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Directly modifies the relative left position in relation\nto the parent element.\n\nUse with caution! This may be used for animations, drag&drop\nor other cases where high performance location manipulation\nis important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead."
+            "body": "<p>Directly modifies the relative left position in relation\n to the parent element.\n Use with caution! This may be used for animations, drag&amp;drop\n or other cases where high performance location manipulation\n is important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead.</p>"
           }
         ],
         "@param": [
@@ -6451,7 +6451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Directly modifies the relative top position in relation\nto the parent element.\n\nUse with caution! This may be used for animations, drag&drop\nor other cases where high performance location manipulation\nis important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead."
+            "body": "<p>Directly modifies the relative top position in relation\n to the parent element.\n Use with caution! This may be used for animations, drag&amp;drop\n or other cases where high performance location manipulation\n is important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead.</p>"
           }
         ],
         "@param": [
@@ -6482,7 +6482,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Directly modifies the relative left and top position in relation\nto the parent element.\n\nUse with caution! This may be used for animations, drag&drop\nor other cases where high performance location manipulation\nis important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead."
+            "body": "<p>Directly modifies the relative left and top position in relation\n to the parent element.\n Use with caution! This may be used for animations, drag&amp;drop\n or other cases where high performance location manipulation\n is important. Otherwise please use {@link qx.ui.core.LayoutItem#setUserBounds} instead.</p>"
           }
         ],
         "@param": [
@@ -6520,11 +6520,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENHANCED DISPOSE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENHANCED DISPOSE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Removes this widget from its parent and disposes it.\n\nPlease note that the widget is not disposed synchronously. The\nreal dispose happens after the next queue flush."
+            "body": "<p>Removes this widget from its parent and disposes it.\n Please note that the widget is not disposed synchronously. The\n real dispose happens after the next queue flush.</p>"
           }
         ]
       },
@@ -6546,11 +6546,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCLONE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CLONE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -6582,7 +6582,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -6624,7 +6624,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -6680,7 +6680,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -6729,7 +6729,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -6792,7 +6792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -10442,7 +10442,7 @@
     "location": {
       "start": {
         "line": 3895,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 3955,
@@ -10453,7 +10453,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

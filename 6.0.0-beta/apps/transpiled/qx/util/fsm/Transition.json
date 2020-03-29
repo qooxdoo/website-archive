@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006, 2007, 2011 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006, 2007, 2011 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Create a new possible transition from one state to another."
+          "body": "<p>Create a new possible transition from one state to another.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 130,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 191,
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "transitionName {String}\nThe name of this transition, used in debug messages.",
+          "body": "transitionName {String}\n   The name of this transition, used in debug messages.",
           "paramName": "transitionName",
-          "description": "\nThe name of this transition, used in debug messages.",
+          "description": "\n   The name of this transition, used in debug messages.",
           "type": "String"
         },
         {
           "name": "@param",
-          "body": "transitionInfo {Object}\n<pre>\nAn object optionally containing any of the following properties:\n\ncontext -\nA context in which all of the following functions should be run.\n\npredicate -\nA function which is called to determine whether this transition is\nacceptable.  An acceptable transition will cause the transition's\n\"ontransition\" function to be run, the current state's \"onexit\"\nfunction to be run, and the new state's \"onentry\" function to be\nrun.\n\nThe predicate function's signature is function(fsm, event) and it\nis saved in the predicate property of the transition object.  In\nthe predicate function:\n\nfsm -\nThe finite state machine object to which this state is\nattached.\n\nevent -\nThe event that caused a run of the finite state machine\n\nThe predicate function should return one of the following three\nvalues:\n\n- true means the transition is acceptable\n\n- false means the transition is not acceptable, and the next\ntransition (if one exists) should be tried to determine if it\nis acceptable\n\n- null means that the transition determined that no further\ntransitions should be tried.  This might be used when the\ntransition ascertained that the event is for a target that is\nnot available in the current state, and the event has called\nfsm.queueEvent() to have the event delivered upon state\ntransition.\n\nIt is possible to create a default predicate -- one that will cause\na transition to be acceptable always -- by either not providing a\npredicate property, or by explicitly either setting the predicate\nproperty to 'true' or setting it to a function that unconditionally\nreturns 'true'.  This default transition should, of course, always\nbe the last transition added to a state, since no transition added\nafter it will ever be tried.\n\nnextState -\nThe state to which we transition, if the predicate returns true\n(meaning the transition is acceptable).  The value of nextState may\nbe:\n\n- a string, the state name of the state to transition to\n\n- One of the constants:\n- qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:\nRemain in whatever is the current state\n- qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:\nTransition to the state at the top of the saved-state\nstack, and remove the top element from the saved-state\nstack.  Elements are added to the saved-state stack using\nfsm.pushState().  It is an error if no state exists on the\nsaved-state stack.\n- qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:\nTBD\n\nautoActionsBeforeOntransition -\nautoActionsAfterOntransition -\nAutomatic actions which take place at the time specified by the\nproperty name.  In all cases, the action takes place immediately\nbefore or after the specified function.\n\nThe property value for each of these properties is an object which\ndescribes some number of functions to invoke on a set of specified\nobjects (typically widgets).\n\nSee {@link qx.util.fsm.State} for an example of autoActions.\n\nontransition -\nA function which is called if the predicate function for this\ntransition returns true.  Its signature is function(fsm, event) and\nit is saved in the ontransition property of the transition object.\nIn the ontransition function:\n\nfsm -\nThe finite state machine object to which this state is\nattached.\n\nevent -\nThe event that caused a run of the finite state machine\n\nAdditional properties may be provided in transInfo.  They will not be\nused by the finite state machine, but will be available via\nthis.getUserData(\"<propertyName>\") during the transition's predicate\nand ontransition functions.\n</pre>",
+          "body": "transitionInfo {Object}\n   <pre>\n   An object optionally containing any of the following properties:\n     context -\n       A context in which all of the following functions should be run.\n     predicate -\n       A function which is called to determine whether this transition is\n       acceptable.  An acceptable transition will cause the transition's\n       \"ontransition\" function to be run, the current state's \"onexit\"\n       function to be run, and the new state's \"onentry\" function to be\n       run.\n       The predicate function's signature is function(fsm, event) and it\n       is saved in the predicate property of the transition object.  In\n       the predicate function:\n         fsm -\n           The finite state machine object to which this state is\n           attached.\n         event -\n           The event that caused a run of the finite state machine\n       The predicate function should return one of the following three\n       values:\n         - true means the transition is acceptable\n         - false means the transition is not acceptable, and the next\n           transition (if one exists) should be tried to determine if it\n           is acceptable\n         - null means that the transition determined that no further\n           transitions should be tried.  This might be used when the\n           transition ascertained that the event is for a target that is\n           not available in the current state, and the event has called\n           fsm.queueEvent() to have the event delivered upon state\n           transition.\n       It is possible to create a default predicate -- one that will cause\n       a transition to be acceptable always -- by either not providing a\n       predicate property, or by explicitly either setting the predicate\n       property to 'true' or setting it to a function that unconditionally\n       returns 'true'.  This default transition should, of course, always\n       be the last transition added to a state, since no transition added\n       after it will ever be tried.\n     nextState -\n       The state to which we transition, if the predicate returns true\n       (meaning the transition is acceptable).  The value of nextState may\n       be:\n         - a string, the state name of the state to transition to\n         - One of the constants:\n           - qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:\n               Remain in whatever is the current state\n           - qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:\n               Transition to the state at the top of the saved-state\n               stack, and remove the top element from the saved-state\n               stack.  Elements are added to the saved-state stack using\n               fsm.pushState().  It is an error if no state exists on the\n               saved-state stack.\n           - qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:\n               TBD\n     autoActionsBeforeOntransition -\n     autoActionsAfterOntransition -\n       Automatic actions which take place at the time specified by the\n       property name.  In all cases, the action takes place immediately\n       before or after the specified function.\n       The property value for each of these properties is an object which\n       describes some number of functions to invoke on a set of specified\n       objects (typically widgets).\n       See {@link qx.util.fsm.State} for an example of autoActions.\n     ontransition -\n       A function which is called if the predicate function for this\n       transition returns true.  Its signature is function(fsm, event) and\n       it is saved in the ontransition property of the transition object.\n       In the ontransition function:\n         fsm -\n           The finite state machine object to which this state is\n           attached.\n         event -\n           The event that caused a run of the finite state machine\n     Additional properties may be provided in transInfo.  They will not be\n     used by the finite state machine, but will be available via\n     this.getUserData(\"<propertyName>\") during the transition's predicate\n     and ontransition functions.\n   </pre>",
           "paramName": "transitionInfo",
-          "description": "\n<pre>\nAn object optionally containing any of the following properties:\n\ncontext -\nA context in which all of the following functions should be run.\n\npredicate -\nA function which is called to determine whether this transition is\nacceptable.  An acceptable transition will cause the transition's\n\"ontransition\" function to be run, the current state's \"onexit\"\nfunction to be run, and the new state's \"onentry\" function to be\nrun.\n\nThe predicate function's signature is function(fsm, event) and it\nis saved in the predicate property of the transition object.  In\nthe predicate function:\n\nfsm -\nThe finite state machine object to which this state is\nattached.\n\nevent -\nThe event that caused a run of the finite state machine\n\nThe predicate function should return one of the following three\nvalues:\n\n- true means the transition is acceptable\n\n- false means the transition is not acceptable, and the next\ntransition (if one exists) should be tried to determine if it\nis acceptable\n\n- null means that the transition determined that no further\ntransitions should be tried.  This might be used when the\ntransition ascertained that the event is for a target that is\nnot available in the current state, and the event has called\nfsm.queueEvent() to have the event delivered upon state\ntransition.\n\nIt is possible to create a default predicate -- one that will cause\na transition to be acceptable always -- by either not providing a\npredicate property, or by explicitly either setting the predicate\nproperty to 'true' or setting it to a function that unconditionally\nreturns 'true'.  This default transition should, of course, always\nbe the last transition added to a state, since no transition added\nafter it will ever be tried.\n\nnextState -\nThe state to which we transition, if the predicate returns true\n(meaning the transition is acceptable).  The value of nextState may\nbe:\n\n- a string, the state name of the state to transition to\n\n- One of the constants:\n- qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:\nRemain in whatever is the current state\n- qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:\nTransition to the state at the top of the saved-state\nstack, and remove the top element from the saved-state\nstack.  Elements are added to the saved-state stack using\nfsm.pushState().  It is an error if no state exists on the\nsaved-state stack.\n- qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:\nTBD\n\nautoActionsBeforeOntransition -\nautoActionsAfterOntransition -\nAutomatic actions which take place at the time specified by the\nproperty name.  In all cases, the action takes place immediately\nbefore or after the specified function.\n\nThe property value for each of these properties is an object which\ndescribes some number of functions to invoke on a set of specified\nobjects (typically widgets).\n\nSee {@link qx.util.fsm.State} for an example of autoActions.\n\nontransition -\nA function which is called if the predicate function for this\ntransition returns true.  Its signature is function(fsm, event) and\nit is saved in the ontransition property of the transition object.\nIn the ontransition function:\n\nfsm -\nThe finite state machine object to which this state is\nattached.\n\nevent -\nThe event that caused a run of the finite state machine\n\nAdditional properties may be provided in transInfo.  They will not be\nused by the finite state machine, but will be available via\nthis.getUserData(\"<propertyName>\") during the transition's predicate\nand ontransition functions.\n</pre>",
+          "description": "\n   <pre>\n   An object optionally containing any of the following properties:\n     context -\n       A context in which all of the following functions should be run.\n     predicate -\n       A function which is called to determine whether this transition is\n       acceptable.  An acceptable transition will cause the transition's\n       \"ontransition\" function to be run, the current state's \"onexit\"\n       function to be run, and the new state's \"onentry\" function to be\n       run.\n       The predicate function's signature is function(fsm, event) and it\n       is saved in the predicate property of the transition object.  In\n       the predicate function:\n         fsm -\n           The finite state machine object to which this state is\n           attached.\n         event -\n           The event that caused a run of the finite state machine\n       The predicate function should return one of the following three\n       values:\n         - true means the transition is acceptable\n         - false means the transition is not acceptable, and the next\n           transition (if one exists) should be tried to determine if it\n           is acceptable\n         - null means that the transition determined that no further\n           transitions should be tried.  This might be used when the\n           transition ascertained that the event is for a target that is\n           not available in the current state, and the event has called\n           fsm.queueEvent() to have the event delivered upon state\n           transition.\n       It is possible to create a default predicate -- one that will cause\n       a transition to be acceptable always -- by either not providing a\n       predicate property, or by explicitly either setting the predicate\n       property to 'true' or setting it to a function that unconditionally\n       returns 'true'.  This default transition should, of course, always\n       be the last transition added to a state, since no transition added\n       after it will ever be tried.\n     nextState -\n       The state to which we transition, if the predicate returns true\n       (meaning the transition is acceptable).  The value of nextState may\n       be:\n         - a string, the state name of the state to transition to\n         - One of the constants:\n           - qx.util.fsm.FiniteStateMachine.StateChange.CURRENT_STATE:\n               Remain in whatever is the current state\n           - qx.util.fsm.FiniteStateMachine.StateChange.POP_STATE_STACK:\n               Transition to the state at the top of the saved-state\n               stack, and remove the top element from the saved-state\n               stack.  Elements are added to the saved-state stack using\n               fsm.pushState().  It is an error if no state exists on the\n               saved-state stack.\n           - qx.util.fsm.FiniteStateMachine.StateChange.TERMINATE:\n               TBD\n     autoActionsBeforeOntransition -\n     autoActionsAfterOntransition -\n       Automatic actions which take place at the time specified by the\n       property name.  In all cases, the action takes place immediately\n       before or after the specified function.\n       The property value for each of these properties is an object which\n       describes some number of functions to invoke on a set of specified\n       objects (typically widgets).\n       See {@link qx.util.fsm.State} for an example of autoActions.\n     ontransition -\n       A function which is called if the predicate function for this\n       transition returns true.  Its signature is function(fsm, event) and\n       it is saved in the ontransition property of the transition object.\n       In the ontransition function:\n         fsm -\n           The finite state machine object to which this state is\n           attached.\n         event -\n           The event that caused a run of the finite state machine\n     Additional properties may be provided in transInfo.  They will not be\n     used by the finite state machine, but will be available via\n     this.getUserData(\"<propertyName>\") during the transition's predicate\n     and ontransition functions.\n   </pre>",
           "type": "Object"
         }
       ]
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of this transition"
+            "body": "<p>The name of this transition</p>"
           }
         ]
       },
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The predicate function for this transition.  This is documented in the\nconstructor, and is typically provided through the constructor's\ntransitionInfo object, but it is also possible (but highly NOT\nrecommended) to change this dynamically."
+            "body": "<p>The predicate function for this transition.  This is documented in the\n constructor, and is typically provided through the constructor's\n transitionInfo object, but it is also possible (but highly NOT\n recommended) to change this dynamically.</p>"
           }
         ]
       },
@@ -130,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The state to transition to, if the predicate determines that this\ntransition is acceptable.  This is documented in the constructor, and\nis typically provided through the constructor's transitionInfo object,\nbut it is also possible (but highly NOT recommended) to change this\ndynamically."
+            "body": "<p>The state to transition to, if the predicate determines that this\n transition is acceptable.  This is documented in the constructor, and\n is typically provided through the constructor's transitionInfo object,\n but it is also possible (but highly NOT recommended) to change this\n dynamically.</p>"
           }
         ]
       },
@@ -154,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take prior to calling the transition's\nontransition function.  This is documented in the constructor, and is\ntypically provided through the constructor's transitionInfo object, but\nit is also possible (but highly NOT recommended) to change this\ndynamically."
+            "body": "<p>Automatic actions to take prior to calling the transition's\n ontransition function.  This is documented in the constructor, and is\n typically provided through the constructor's transitionInfo object, but\n it is also possible (but highly NOT recommended) to change this\n dynamically.</p>"
           }
         ]
       },
@@ -176,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take immediately after calling the transition's\nontransition function.  This is documented in the constructor, and is\ntypically provided through the constructor's transitionInfo object, but\nit is also possible (but highly NOT recommended) to change this\ndynamically."
+            "body": "<p>Automatic actions to take immediately after calling the transition's\n ontransition function.  This is documented in the constructor, and is\n typically provided through the constructor's transitionInfo object, but\n it is also possible (but highly NOT recommended) to change this\n dynamically.</p>"
           }
         ]
       },
@@ -198,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The function run when the transition is accepted.  This is documented\nin the constructor, and is typically provided through the constructor's\ntransitionInfo object, but it is also possible (but highly NOT\nrecommended) to change this dynamically."
+            "body": "<p>The function run when the transition is accepted.  This is documented\n in the constructor, and is typically provided through the constructor's\n transitionInfo object, but it is also possible (but highly NOT\n recommended) to change this dynamically.</p>"
           }
         ]
       },
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validate the predicate. Converts all incoming values to functions."
+            "body": "<p>Validate the predicate. Converts all incoming values to functions.</p>"
           }
         ],
         "@param": [
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -355,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -394,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -433,15 +433,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If given a function, bind it to a specified context."
+            "body": "<p>If given a function, bind it to a specified context.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "f {Function|var}\nThe (possibly) function to be bound to the specified context.",
+            "body": "f {Function|var}\n   The (possibly) function to be bound to the specified context.",
             "paramName": "f",
-            "description": "\nThe (possibly) function to be bound to the specified context.",
+            "description": "\n   The (possibly) function to be bound to the specified context.",
             "type": [
               "Function",
               "var"
@@ -449,18 +449,18 @@
           },
           {
             "name": "@param",
-            "body": "context {Object}\nThe context to bind the function to.",
+            "body": "context {Object}\n   The context to bind the function to.",
             "paramName": "context",
-            "description": "\nThe context to bind the function to.",
+            "description": "\n   The context to bind the function to.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Function}\nIf f was a function, the return value is f wrapped such that it will\nbe called in the specified context. Otherwise, f is returned\nunaltered.",
+            "body": "{Function}\n   If f was a function, the return value is f wrapped such that it will\n   be called in the specified context. Otherwise, f is returned\n   unaltered.",
             "type": "Function",
-            "description": "\nIf f was a function, the return value is f wrapped such that it will\nbe called in the specified context. Otherwise, f is returned\nunaltered."
+            "description": "\n   If f was a function, the return value is f wrapped such that it will\n   be called in the specified context. Otherwise, f is returned\n   unaltered."
           }
         ]
       },

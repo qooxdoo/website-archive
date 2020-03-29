@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The page manager decides automatically whether the added pages should be\ndisplayed in a master/detail view (for tablet) or as a plain card layout (for\nsmartphones).\n\n*Example*\n\nHere is a little example of how to use the manager.\n\n<pre class='javascript'>\nvar manager = new qx.ui.mobile.page.Manager();\nvar page1 = new qx.ui.mobile.page.NavigationPage();\nvar page2 = new qx.ui.mobile.page.NavigationPage();\nvar page3 = new qx.ui.mobile.page.NavigationPage();\nmanager.addMaster(page1);\nmanager.addDetail([page2,page3]);\n\npage1.show();\n</pre>"
+          "body": "<p>The page manager decides automatically whether the added pages should be\n displayed in a master/detail view (for tablet) or as a plain card layout (for\n smartphones).\n<em>Example</em>\n Here is a little example of how to use the manager.\n </p>\n<pre class='javascript'>\n  var manager = new qx.ui.mobile.page.Manager();\n  var page1 = new qx.ui.mobile.page.NavigationPage();\n  var page2 = new qx.ui.mobile.page.NavigationPage();\n  var page3 = new qx.ui.mobile.page.NavigationPage();\n  manager.addMaster(page1);\n  manager.addDetail([page2,page3]);\n  page1.show();\n </pre>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 58,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 114,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,9 +56,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "isTablet {Boolean?} flag which triggers the manager to layout for tablet (or big screens/displays) or mobile devices. If parameter is null,\nqx.core.Environment.get(\"device.type\") is called for decision.",
+          "body": "isTablet {Boolean?} flag which triggers the manager to layout for tablet (or big screens/displays) or mobile devices. If parameter is null,\n qx.core.Environment.get(\"device.type\") is called for decision.",
           "paramName": "isTablet",
-          "description": " flag which triggers the manager to layout for tablet (or big screens/displays) or mobile devices. If parameter is null,\nqx.core.Environment.get(\"device.type\") is called for decision.",
+          "description": " flag which triggers the manager to layout for tablet (or big screens/displays) or mobile devices. If parameter is null,\n qx.core.Environment.get(\"device.type\") is called for decision.",
           "optional": true,
           "type": "Boolean"
         },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The caption/label of the Master Button and Popup Title."
+            "body": "<p>The caption/label of the Master Button and Popup Title.</p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The caption/label of the Hide Master Button."
+            "body": "<p>The caption/label of the Hide Master Button.</p>"
           }
         ]
       },
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This flag controls whether the MasterContainer can be hidden on Landscape."
+            "body": "<p>This flag controls whether the MasterContainer can be hidden on Landscape.</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This flag controls whether the MasterContainer hides on portrait view,\nwhen a Detail Page fires the lifecycle event \"start\"."
+            "body": "<p>This flag controls whether the MasterContainer hides on portrait view,\n  when a Detail Page fires the lifecycle event \"start\".</p>"
           }
         ]
       },
@@ -335,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the master container."
+            "body": "<p>Creates the master container.</p>"
           }
         ],
         "@return": [
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the detail container."
+            "body": "<p>Creates the detail container.</p>"
           }
         ],
         "@return": [
@@ -395,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the Master Container"
+            "body": "<p>Getter for the Master Container</p>"
           }
         ],
         "@return": [
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the Detail Container"
+            "body": "<p>Getter for the Detail Container</p>"
           }
         ],
         "@return": [
@@ -455,7 +455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the button for showing/hiding the masterContainer."
+            "body": "<p>Returns the button for showing/hiding the masterContainer.</p>"
           }
         ],
         "@return": [
@@ -485,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the masterNavigation."
+            "body": "<p>Returns the masterNavigation.</p>"
           }
         ],
         "@return": [
@@ -515,7 +515,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the detailNavigation."
+            "body": "<p>Returns the detailNavigation.</p>"
           }
         ],
         "@return": [
@@ -545,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for the master button, which is responsible for showing/hiding masterContainer."
+            "body": "<p>Factory method for the master button, which is responsible for showing/hiding masterContainer.</p>"
           }
         ],
         "@return": [
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for the hide master button, which is responsible for hiding masterContainer on Landscape view."
+            "body": "<p>Factory method for the hide master button, which is responsible for hiding masterContainer on Landscape view.</p>"
           }
         ],
         "@return": [
@@ -605,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for masterNavigation."
+            "body": "<p>Factory method for masterNavigation.</p>"
           }
         ],
         "@return": [
@@ -635,7 +635,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for detailNavigation."
+            "body": "<p>Factory method for detailNavigation.</p>"
           }
         ],
         "@return": [
@@ -665,7 +665,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an array of NavigationPages to masterContainer, if __isTablet is true. Otherwise it will be added to detailContainer."
+            "body": "<p>Adds an array of NavigationPages to masterContainer, if __isTablet is true. Otherwise it will be added to detailContainer.</p>"
           }
         ],
         "@param": [
@@ -702,7 +702,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an array of NavigationPage to the detailContainer."
+            "body": "<p>Adds an array of NavigationPage to the detailContainer.</p>"
           }
         ],
         "@param": [
@@ -739,7 +739,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when a detailPage reaches lifecycle state \"start\"."
+            "body": "<p>Called when a detailPage reaches lifecycle state \"start\".</p>"
           }
         ],
         "@param": [
@@ -770,7 +770,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when a masterPage reaches lifecycle state \"start\". Then property masterTitle will be update with masterPage's title."
+            "body": "<p>Called when a masterPage reaches lifecycle state \"start\". Then property masterTitle will be update with masterPage's title.</p>"
           }
         ],
         "@param": [
@@ -801,7 +801,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an array of NavigationPage to the target container."
+            "body": "<p>Adds an array of NavigationPage to the target container.</p>"
           }
         ],
         "@param": [
@@ -845,7 +845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when masterContainer is updated."
+            "body": "<p>Called when masterContainer is updated.</p>"
           }
         ],
         "@param": [
@@ -876,7 +876,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when detailContainer is updated."
+            "body": "<p>Called when detailContainer is updated.</p>"
           }
         ],
         "@param": [
@@ -907,7 +907,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when user taps on masterButton."
+            "body": "<p>Called when user taps on masterButton.</p>"
           }
         ]
       },
@@ -929,7 +929,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when user taps on hideMasterButton."
+            "body": "<p>Called when user taps on hideMasterButton.</p>"
           }
         ]
       },
@@ -951,7 +951,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>changeVisibility</code> event on master container."
+            "body": "<p>Event handler for <code>changeVisibility</code> event on master container.</p>"
           }
         ],
         "@param": [
@@ -982,7 +982,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when layout of masterDetailContainer changes."
+            "body": "<p>Called when layout of masterDetailContainer changes.</p>"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the corresponding CSS property key which fits to the drawer's orientation."
+            "body": "<p>Returns the corresponding CSS property key which fits to the drawer's orientation.</p>"
           }
         ],
         "@return": [
@@ -1034,7 +1034,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves detailContainer to the right edge of MasterContainer.\nCreates spaces for aligning master and detail container aside each other."
+            "body": "<p>Moves detailContainer to the right edge of MasterContainer.\n Creates spaces for aligning master and detail container aside each other.</p>"
           }
         ]
       },
@@ -1056,7 +1056,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves detailContainer to the left edge of viewport."
+            "body": "<p>Moves detailContainer to the left edge of viewport.</p>"
           }
         ]
       },
@@ -1078,7 +1078,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called on property changes of hideMasterButtonCaption."
+            "body": "<p>Called on property changes of hideMasterButtonCaption.</p>"
           }
         ],
         "@param": [
@@ -1119,7 +1119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called on property changes of masterTitle."
+            "body": "<p>Called on property changes of masterTitle.</p>"
           }
         ],
         "@param": [
@@ -1582,7 +1582,7 @@
     "location": {
       "start": {
         "line": 542,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 568,
@@ -1593,7 +1593,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

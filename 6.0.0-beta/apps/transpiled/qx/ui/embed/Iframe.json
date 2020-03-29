@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nTil Schneider (til132)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Til Schneider (til132)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Container widget for internal frames (iframes).\nAn iframe can display any HTML page inside the widget.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar document = this.getRoot();\nvar iframe = new qx.ui.embed.Iframe(\"http://www.qooxdoo.org\");\ndocument.add(iframe);\n</pre>\n\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/iframe.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>\n\n\n*Notes*\nWhen modifying this file, note that the test qx.test.ui.embed.Iframe.testSyncSourceAfterDOMMove\nhas been disabled under Chrome because of problems with Travis and Github.  Changes to this file\nshould be tested manually against that test."
+          "body": "<p>Container widget for internal frames (iframes).\n An iframe can display any HTML page inside the widget.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n var document = this.getRoot();\n var iframe = new qx.ui.embed.Iframe(\"http://www.qooxdoo.org\");\n document.add(iframe);\n </pre>\n<p><em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/iframe.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a>\n<em>Notes</em>\n When modifying this file, note that the test qx.test.ui.embed.Iframe.testSyncSourceAfterDOMMove\n has been disabled under Chrome because of problems with Travis and Github.  Changes to this file\n should be tested manually against that test.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 130,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the frame's native context menu.\n\nNote: This only works if the iframe source is served from the same domain\nas the main application."
+            "body": "<p>Whether to show the frame's native context menu.\n Note: This only works if the iframe source is served from the same domain\n as the main application.</p>"
           }
         ]
       },
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If the user presses F1 in IE by default the onhelp event is fired and\nIE’s help window is opened. Setting this property to <code>false</code>\nprevents this behavior.\n\nNote: This only works if the iframe source is served from the same domain\nas the main application."
+            "body": "<p>If the user presses F1 in IE by default the onhelp event is fired and\n IE’s help window is opened. Setting this property to <code>false</code>\n prevents this behavior.\n Note: This only works if the iframe source is served from the same domain\n as the main application.</p>"
           }
         ]
       },
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget should have scrollbars."
+            "body": "<p>Whether the widget should have scrollbars.</p>"
           }
         ]
       },
@@ -231,36 +231,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -296,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -330,7 +330,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -364,7 +364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates <div> element which is aligned over iframe node to avoid losing pointer events."
+            "body": "<p>Creates <div> element which is aligned over iframe node to avoid losing pointer events.</p>"
           }
         ],
         "@return": [
@@ -394,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reacts on native load event and redirects it to the widget."
+            "body": "<p>Reacts on native load event and redirects it to the widget.</p>"
           }
         ],
         "@param": [
@@ -425,11 +425,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMETHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Cover the iframe with a transparent blocker div element. This prevents\npointer or key events to be handled by the iframe. To release the blocker\nuse {@link #release}."
+            "body": "<p>Cover the iframe with a transparent blocker div element. This prevents\n pointer or key events to be handled by the iframe. To release the blocker\n use {@link #release}.</p>"
           }
         ]
       },
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Release the blocker set by {@link #block}."
+            "body": "<p>Release the blocker set by {@link #block}.</p>"
           }
         ]
       },
@@ -473,11 +473,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -503,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the <code>contextmenu</code> event from showing the native context menu"
+            "body": "<p>Stops the <code>contextmenu</code> event from showing the native context menu</p>"
           }
         ],
         "@param": [
@@ -534,7 +534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the iframe element is out of sync. This can happen in Firefox\nif the iframe is moved around and the source is changed right after.\nThe root cause is that Firefox is reloading the iframe when its position\nin DOM has changed."
+            "body": "<p>Checks if the iframe element is out of sync. This can happen in Firefox\n if the iframe is moved around and the source is changed right after.\n The root cause is that Firefox is reloading the iframe when its position\n in DOM has changed.</p>"
           }
         ]
       },
@@ -581,7 +581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -606,7 +606,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -4397,7 +4397,7 @@
     "location": {
       "start": {
         "line": 425,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 435,
@@ -4408,7 +4408,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

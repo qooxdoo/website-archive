@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nCarsten Lergenmueller (carstenl)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Carsten Lergenmueller (carstenl)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A data cell renderer for boolean values."
+          "body": "<p>A data cell renderer for boolean values.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The icon used to indicate the true state"
+            "body": "<p>The icon used to indicate the true state</p>"
           }
         ]
       },
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The icon used to indicate the false state"
+            "body": "<p>The icon used to indicate the false state</p>"
           }
         ]
       },
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for theme changes."
+            "body": "<p>Handler for theme changes.</p>"
           }
         ],
         "@signature": [
@@ -195,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -267,15 +267,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -310,24 +310,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map having the following attributes:\n<ul>\n<li>\n\"url\": (type string) must be the URL of the image to show.\nThe url given must either be managed by the {@link qx.util.ResourceManager}\nor pre-loaded with {@link qx.io.ImageLoader}. This is to make sure that\nthe renderer knows the dimensions and the format of the image.\n</li>\n<li>\"imageWidth\": (type int) the width of the image in pixels.</li>\n<li>\"imageHeight\": (type int) the height of the image in pixels.</li>\n<li>\"tooltip\": (type string) must be the image tooltip text.</li>\n</ul>",
+            "body": "{Map} A map having the following attributes:\n           <ul>\n           <li>\n             \"url\": (type string) must be the URL of the image to show.\n             The url given must either be managed by the {@link qx.util.ResourceManager}\n             or pre-loaded with {@link qx.io.ImageLoader}. This is to make sure that\n             the renderer knows the dimensions and the format of the image.\n           </li>\n           <li>\"imageWidth\": (type int) the width of the image in pixels.</li>\n           <li>\"imageHeight\": (type int) the height of the image in pixels.</li>\n           <li>\"tooltip\": (type string) must be the image tooltip text.</li>\n           </ul>",
             "type": "Map",
-            "description": " A map having the following attributes:\n<ul>\n<li>\n\"url\": (type string) must be the URL of the image to show.\nThe url given must either be managed by the {@link qx.util.ResourceManager}\nor pre-loaded with {@link qx.io.ImageLoader}. This is to make sure that\nthe renderer knows the dimensions and the format of the image.\n</li>\n<li>\"imageWidth\": (type int) the width of the image in pixels.</li>\n<li>\"imageHeight\": (type int) the height of the image in pixels.</li>\n<li>\"tooltip\": (type string) must be the image tooltip text.</li>\n</ul>"
+            "description": " A map having the following attributes:\n           <ul>\n           <li>\n             \"url\": (type string) must be the URL of the image to show.\n             The url given must either be managed by the {@link qx.util.ResourceManager}\n             or pre-loaded with {@link qx.io.ImageLoader}. This is to make sure that\n             the renderer knows the dimensions and the format of the image.\n           </li>\n           <li>\"imageWidth\": (type int) the width of the image in pixels.</li>\n           <li>\"imageHeight\": (type int) the height of the image in pixels.</li>\n           <li>\"tooltip\": (type string) must be the image tooltip text.</li>\n           </ul>"
           }
         ]
       },
@@ -715,7 +715,7 @@
     "location": {
       "start": {
         "line": 192,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 200,
@@ -726,7 +726,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

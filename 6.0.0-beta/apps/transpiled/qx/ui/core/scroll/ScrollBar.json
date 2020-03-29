@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The scroll bar widget, is a special slider, which is used in qooxdoo instead\nof the native browser scroll bars.\n\nScroll bars are used by the {@link qx.ui.container.Scroll} container. Usually\na scroll bar is not used directly."
+          "body": "<p>The scroll bar widget, is a special slider, which is used in qooxdoo instead\n of the native browser scroll bars.\n Scroll bars are used by the {@link qx.ui.container.Scroll} container. Usually\n a scroll bar is not used directly.</p>"
         }
       ],
       "@childControl": [
@@ -47,9 +47,9 @@
         },
         {
           "name": "@childControl",
-          "body": "button-end {qx.ui.form.RepeatButton} button to scroll to bottom\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar scrollBar = new qx.ui.core.scroll.ScrollBar(\"horizontal\");\nscrollBar.set({\nmaximum: 500\n})\nthis.getRoot().add(scrollBar);\n</pre>\n\nThis example creates a horizontal scroll bar with a maximum value of 500.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>",
+          "body": "button-end {qx.ui.form.RepeatButton} button to scroll to bottom\n*Example*\n Here is a little example of how to use the widget.\n <pre class='javascript'>\n   var scrollBar = new qx.ui.core.scroll.ScrollBar(\"horizontal\");\n   scrollBar.set({\n     maximum: 500\n   })\n   this.getRoot().add(scrollBar);\n </pre>\n This example creates a horizontal scroll bar with a maximum value of 500.\n*External Documentation*\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a>",
           "controlName": "button-end",
-          "description": "button to scroll to bottom\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar scrollBar = new qx.ui.core.scroll.ScrollBar(\"horizontal\");\nscrollBar.set({\nmaximum: 500\n})\nthis.getRoot().add(scrollBar);\n</pre>\n\nThis example creates a horizontal scroll bar with a maximum value of 500.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>",
+          "description": "button to scroll to bottom\n*Example*\n Here is a little example of how to use the widget.\n <pre class='javascript'>\n   var scrollBar = new qx.ui.core.scroll.ScrollBar(\"horizontal\");\n   scrollBar.set({\n     maximum: 500\n   })\n   this.getRoot().add(scrollBar);\n </pre>\n This example creates a horizontal scroll bar with a maximum value of 500.\n*External Documentation*\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a>",
           "type": "qx.ui.form.RepeatButton"
         }
       ]
@@ -60,7 +60,7 @@
     "location": {
       "start": {
         "line": 66,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 86,
@@ -71,7 +71,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change event for the value."
+            "body": "<p>Change event for the value.</p>"
           }
         ]
       },
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -160,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The scroll bar orientation"
+            "body": "<p>The scroll bar orientation</p>"
           }
         ]
       },
@@ -189,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum value (difference between available size and\ncontent size)."
+            "body": "<p>The maximum value (difference between available size and\n content size).</p>"
           }
         ]
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Position of the scrollbar (which means the scroll left/top of the\nattached area's pane)\n\nStrictly validates according to {@link #maximum}.\nDoes not apply any correction to the incoming value. If you depend\non this, please use {@link #scrollTo} instead."
+            "body": "<p>Position of the scrollbar (which means the scroll left/top of the\n attached area's pane)\n Strictly validates according to {@link #maximum}.\n Does not apply any correction to the incoming value. If you depend\n on this, please use {@link #scrollTo} instead.</p>"
           }
         ]
       },
@@ -242,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Step size for each tap on the up/down or left/right buttons."
+            "body": "<p>Step size for each tap on the up/down or left/right buttons.</p>"
           }
         ]
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each event. Typically corresponds\nto the user pressing <code>PageUp</code> or <code>PageDown</code>."
+            "body": "<p>The amount to increment on each event. Typically corresponds\n to the user pressing <code>PageUp</code> or <code>PageDown</code>.</p>"
           }
         ]
       },
@@ -293,7 +293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factor to apply to the width/height of the knob in relation\nto the dimension of the underlying area."
+            "body": "<p>Factor to apply to the width/height of the knob in relation\n to the dimension of the underlying area.</p>"
           }
         ]
       },
@@ -349,15 +349,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -384,36 +384,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -449,22 +449,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -501,11 +501,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -530,7 +530,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -555,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -580,7 +580,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -605,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -630,11 +630,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMETHOD REDIRECTION TO SLIDER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  METHOD REDIRECTION TO SLIDER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Scrolls to the given position.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls to the given position.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [
@@ -676,7 +676,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls by the given offset.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls by the given offset.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls by the given number of steps.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls by the given number of steps.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [
@@ -760,7 +760,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the position property considering the minimum and maximum values."
+            "body": "<p>Updates the position property considering the minimum and maximum values.</p>"
           }
         ],
         "@param": [
@@ -791,7 +791,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If a scroll animation is running, it will be stopped."
+            "body": "<p>If a scroll animation is running, it will be stopped.</p>"
           }
         ]
       },
@@ -813,11 +813,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Executed when the up/left button is executed (pressed)"
+            "body": "<p>Executed when the up/left button is executed (pressed)</p>"
           }
         ],
         "@param": [
@@ -848,7 +848,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executed when the down/right button is executed (pressed)"
+            "body": "<p>Executed when the down/right button is executed (pressed)</p>"
           }
         ],
         "@param": [
@@ -879,7 +879,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change listener for slider animation end."
+            "body": "<p>Change listener for slider animation end.</p>"
           }
         ]
       },
@@ -901,7 +901,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change listener for slider value changes."
+            "body": "<p>Change listener for slider value changes.</p>"
           }
         ],
         "@param": [
@@ -932,7 +932,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide the knob of the slider if the slidebar is too small or show it\notherwise."
+            "body": "<p>Hide the knob of the slider if the slidebar is too small or show it\n otherwise.</p>"
           }
         ],
         "@param": [

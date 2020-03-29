@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The standard footer used with Progressive's Table renderer, to show\nprogress of loading data into the table."
+          "body": "<p>The standard footer used with Progressive's Table renderer, to show\n progress of loading data into the table.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 82,
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\nThe set of widths, minimum widths, and maximum widths to be used for\neach of the columns in the table.",
+          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\n   The set of widths, minimum widths, and maximum widths to be used for\n   each of the columns in the table.",
           "paramName": "columnWidths",
-          "description": "\nThe set of widths, minimum widths, and maximum widths to be used for\neach of the columns in the table.",
+          "description": "\n   The set of widths, minimum widths, and maximum widths to be used for\n   each of the columns in the table.",
           "type": "qx.ui.progressive.renderer.table.Widths"
         },
         {
           "name": "@param",
-          "body": "labelArr {Array}\nArray of labels, one for each of the columns.",
+          "body": "labelArr {Array}\n   Array of labels, one for each of the columns.",
           "paramName": "labelArr",
-          "description": "\nArray of labels, one for each of the columns.",
+          "description": "\n   Array of labels, one for each of the columns.",
           "type": "Array"
         }
       ]
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to link the theme colors to the current class."
+            "body": "<p>Helper to link the theme colors to the current class.</p>"
           }
         ]
       },
@@ -188,15 +188,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "progressive {qx.ui.progressive.Progressive}\nProgressive object to which we're being joined.",
+            "body": "progressive {qx.ui.progressive.Progressive}\n   Progressive object to which we're being joined.",
             "paramName": "progressive",
-            "description": "\nProgressive object to which we're being joined.",
+            "description": "\n   Progressive object to which we're being joined.",
             "type": "qx.ui.progressive.Progressive"
           }
         ]
@@ -3697,13 +3697,14 @@
     "location": {
       "start": {
         "line": 168,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 175,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

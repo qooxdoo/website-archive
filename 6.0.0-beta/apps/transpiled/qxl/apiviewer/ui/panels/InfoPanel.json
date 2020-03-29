@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2018 Zenesis Limited, http://www.zenesis.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nJohn Spackman (johnspackman) of Zenesis Ltd (http://www.zenesis.com)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2018 Zenesis Limited, http://www.zenesis.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n John Spackman (johnspackman) of Zenesis Ltd (http://www.zenesis.com)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
@@ -58,7 +58,7 @@
     "location": {
       "start": {
         "line": 44,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 49,
@@ -69,13 +69,13 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Creates an info panel. An info panel shows the information about one item\ntype (e.g. for public methods)."
+          "body": "<p>Creates an info panel. An info panel shows the information about one item\n type (e.g. for public methods).</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "labelText\n{String} the label text describing the node type.",
+          "body": "labelText\n          {String} the label text describing the node type.",
           "paramName": "labelText",
           "description": " the label text describing the node type.",
           "type": "String"
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "top level DOM node of the panel"
+            "body": "<p>top level DOM node of the panel</p>"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether the info panel is open"
+            "body": "<p>whether the info panel is open</p>"
           }
         ]
       },
@@ -213,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the title of the panel"
+            "body": "<p>Returns the title of the panel</p>"
           }
         ],
         "@return": [
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the icon for the panel"
+            "body": "<p>Returns the icon for the panel</p>"
           }
         ],
         "@return": [
@@ -273,7 +273,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the panel can display the given item node"
+            "body": "<p>Whether the panel can display the given item node</p>"
           }
         ],
         "@return": [
@@ -303,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the type HTML string of an item."
+            "body": "<p>Get the type HTML string of an item.</p>"
           }
         ],
         "@abstract": [
@@ -315,16 +315,16 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the doc node of the currently displayed\nclass",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the doc node of the currently displayed\n          class",
             "paramName": "currentClassDocNode",
-            "description": " the doc node of the currently displayed\nclass",
+            "description": " the doc node of the currently displayed\n          class",
             "type": "qxl.apiviewer.dao.Class"
           }
         ],
@@ -355,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the title HTML string of an item."
+            "body": "<p>Get the title HTML string of an item.</p>"
           }
         ],
         "@abstract": [
@@ -367,16 +367,16 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the doc node of the currently displayed\nclass",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the doc node of the currently displayed\n          class",
             "paramName": "currentClassDocNode",
-            "description": " the doc node of the currently displayed\nclass",
+            "description": " the doc node of the currently displayed\n          class",
             "type": "qxl.apiviewer.dao.Class"
           }
         ],
@@ -407,7 +407,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the description text HTML string of an item."
+            "body": "<p>Get the description text HTML string of an item.</p>"
           }
         ],
         "@abstract": [
@@ -419,21 +419,21 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the doc node of the currently displayed\nclass",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the doc node of the currently displayed\n          class",
             "paramName": "currentClassDocNode",
-            "description": " the doc node of the currently displayed\nclass",
+            "description": " the doc node of the currently displayed\n          class",
             "type": "qxl.apiviewer.dao.Class"
           },
           {
             "name": "@param",
-            "body": "showDetails\n{Boolean} whether to show the details.",
+            "body": "showDetails\n          {Boolean} whether to show the details.",
             "paramName": "showDetails",
             "description": " whether to show the details.",
             "type": "Boolean"
@@ -480,7 +480,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the information about a class item. The root\nHTML element must be a table row (&lt;tr&gt;)."
+            "body": "<p>Creates the HTML showing the information about a class item. The root\n HTML element must be a table row (&lt;tr&gt;).</p>"
           }
         ],
         "@abstract": [
@@ -492,14 +492,14 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "showDetails\n{Boolean} whether to show the details.",
+            "body": "showDetails\n          {Boolean} whether to show the details.",
             "paramName": "showDetails",
             "description": " whether to show the details.",
             "type": "Boolean"
@@ -532,7 +532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether a class item has details. This method is abstract. Sub\nclasses must override it."
+            "body": "<p>Checks whether a class item has details. This method is abstract. Sub\n classes must override it.</p>"
           }
         ],
         "@abstract": [
@@ -544,16 +544,16 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the doc node of the currently displayed\nclass",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the doc node of the currently displayed\n          class",
             "paramName": "currentClassDocNode",
-            "description": " the doc node of the currently displayed\nclass",
+            "description": " the doc node of the currently displayed\n          class",
             "type": "qxl.apiviewer.dao.Class"
           }
         ],
@@ -598,7 +598,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the HTML fragment of the info panel"
+            "body": "<p>Get the HTML fragment of the info panel</p>"
           }
         ],
         "@return": [
@@ -628,20 +628,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of all items to display in the panel"
+            "body": "<p>Returns a list of all items to display in the panel</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "showInherited\n{Boolean} whether to show inherited items",
+            "body": "showInherited\n          {Boolean} whether to show inherited items",
             "paramName": "showInherited",
             "description": " whether to show inherited items",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the currently displayed class",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the currently displayed class",
             "paramName": "currentClassDocNode",
             "description": " the currently displayed class",
             "type": "qxl.apiviewer.dao.Class"
@@ -650,9 +650,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qxl.apiviewer.dao.ClassItem[]} list of all items to display in the\npanel",
+            "body": "{qxl.apiviewer.dao.ClassItem[]} list of all items to display in the\n         panel",
             "type": "qxl.apiviewer.dao.ClassItem[]",
-            "description": " list of all items to display in the\npanel"
+            "description": " list of all items to display in the\n         panel"
           }
         ]
       },
@@ -702,34 +702,34 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Filter the item list to display only the desired items."
+            "body": "<p>Filter the item list to display only the desired items.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeArr\n{qxl.apiviewer.dao.ClassItem[]} array of class items",
+            "body": "nodeArr\n          {qxl.apiviewer.dao.ClassItem[]} array of class items",
             "paramName": "nodeArr",
             "description": " array of class items",
             "type": "qxl.apiviewer.dao.ClassItem[]"
           },
           {
             "name": "@param",
-            "body": "showProtected\n{Boolean} whether to show protected items",
+            "body": "showProtected\n          {Boolean} whether to show protected items",
             "paramName": "showProtected",
             "description": " whether to show protected items",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "showPrivate\n{Boolean} whether to show private items",
+            "body": "showPrivate\n          {Boolean} whether to show private items",
             "paramName": "showPrivate",
             "description": " whether to show private items",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "showInternal\n{Boolean} whether to show internal items",
+            "body": "showInternal\n          {Boolean} whether to show internal items",
             "paramName": "showInternal",
             "description": " whether to show internal items",
             "type": "Boolean"
@@ -776,20 +776,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates an info panel."
+            "body": "<p>Updates an info panel.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "classViewer\n{qxl.apiviewer.ui.ClassViewer} parent class viewer widget.",
+            "body": "classViewer\n          {qxl.apiviewer.ui.ClassViewer} parent class viewer widget.",
             "paramName": "classViewer",
             "description": " parent class viewer widget.",
             "type": "qxl.apiviewer.ui.ClassViewer"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the currently displayed class",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the currently displayed class",
             "paramName": "currentClassDocNode",
             "description": " the currently displayed class",
             "type": "qxl.apiviewer.dao.Class"
@@ -839,7 +839,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "DOM node of the title of the panel"
+            "body": "<p>DOM node of the title of the panel</p>"
           }
         ]
       },
@@ -861,7 +861,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "DOM node of the body of the panel"
+            "body": "<p>DOM node of the body of the panel</p>"
           }
         ]
       },
@@ -883,20 +883,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the HTML element showing the details of an item."
+            "body": "<p>Gets the HTML element showing the details of an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "panel\n{InfoPanel} the info panel of the item.",
+            "body": "panel\n          {InfoPanel} the info panel of the item.",
             "paramName": "panel",
             "description": " the info panel of the item.",
             "type": "qxl.apiviewer.ui.panels.InfoPanel"
           },
           {
             "name": "@param",
-            "body": "name\n{String} the item's name.",
+            "body": "name\n          {String} the item's name.",
             "paramName": "name",
             "description": " the item's name.",
             "type": "String"
@@ -935,27 +935,27 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user clicked a button for showing/hiding\nthe details of an item."
+            "body": "<p>Event handler. Called when the user clicked a button for showing/hiding\n the details of an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "panelHashCode\n{Integer} hash code of the panel object.",
+            "body": "panelHashCode\n          {Integer} hash code of the panel object.",
             "paramName": "panelHashCode",
             "description": " hash code of the panel object.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "name\n{String} the name of the item.",
+            "body": "name\n          {String} the name of the item.",
             "paramName": "name",
             "description": " the name of the item.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "fromClassName\n{String} the name of the class the item the item was defined in.",
+            "body": "fromClassName\n          {String} the name of the class the item the item was defined in.",
             "paramName": "fromClassName",
             "description": " the name of the class the item the item was defined in.",
             "type": "String"
@@ -980,13 +980,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert mouseup and click listener attached to tap / pointerup listener."
+            "body": "<p>Convert mouseup and click listener attached to tap / pointerup listener.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "el\n{Element} The element containing the links.",
+            "body": "el\n          {Element} The element containing the links.",
             "paramName": "el",
             "description": " The element containing the links.",
             "type": "Element"
@@ -1399,7 +1399,7 @@
     "location": {
       "start": {
         "line": 544,
-        "column": 2
+        "column": 12
       },
       "end": {
         "line": 546,
@@ -1410,7 +1410,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n</code></pre>\n<p>DESTRUCTOR\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong></p>"
         }
       ]
     }
@@ -1431,7 +1431,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{regexp} The regexp for parsing a item name (e.g.\n\"mypackage.MyClass#MY_CONSTANT alternative text\")."
+            "body": "<p>{regexp} The regexp for parsing a item name (e.g.\n \"mypackage.MyClass#MY_CONSTANT alternative text\").</p>"
           }
         ]
       },
@@ -1453,7 +1453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{regexp} The regexp that finds the end of a sentence."
+            "body": "<p>{regexp} The regexp that finds the end of a sentence.</p>"
           }
         ]
       },
@@ -1475,22 +1475,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates HTML that replaces all &#64;link-attributes with links."
+            "body": "<p>Creates HTML that replaces all &#64;link-attributes with links.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "description\n{String} the description.",
+            "body": "description\n          {String} the description.",
             "paramName": "description",
             "description": " the description.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "packageBaseClass\n{qxl.apiviewer.dao.Class?null} the doc node of the class to use for\nauto-adding packages.",
+            "body": "packageBaseClass\n          {qxl.apiviewer.dao.Class?null} the doc node of the class to use for\n          auto-adding packages.",
             "paramName": "packageBaseClass",
-            "description": " the doc node of the class to use for\nauto-adding packages.",
+            "description": " the doc node of the class to use for\n          auto-adding packages.",
             "optional": true,
             "defaultValue": "null",
             "type": "qxl.apiviewer.dao.Class"
@@ -1523,29 +1523,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML for a link to an item."
+            "body": "<p>Creates the HTML for a link to an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "linkText\n{String} the link text (e.g. \"mypackage.MyClass#myMethod alt\ntext\")",
+            "body": "linkText\n          {String} the link text (e.g. \"mypackage.MyClass#myMethod alt\n          text\")",
             "paramName": "linkText",
-            "description": " the link text (e.g. \"mypackage.MyClass#myMethod alt\ntext\")",
+            "description": " the link text (e.g. \"mypackage.MyClass#myMethod alt\n          text\")",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "packageBaseClass\n{qxl.apiviewer.dao.Class?null} the doc node of the class to use when\nauto-adding the package to a class name having no package\nspecified. If null, no automatic package addition is done.",
+            "body": "packageBaseClass\n          {qxl.apiviewer.dao.Class?null} the doc node of the class to use when\n          auto-adding the package to a class name having no package\n          specified. If null, no automatic package addition is done.",
             "paramName": "packageBaseClass",
-            "description": " the doc node of the class to use when\nauto-adding the package to a class name having no package\nspecified. If null, no automatic package addition is done.",
+            "description": " the doc node of the class to use when\n          auto-adding the package to a class name having no package\n          specified. If null, no automatic package addition is done.",
             "optional": true,
             "defaultValue": "null",
             "type": "qxl.apiviewer.dao.Class"
           },
           {
             "name": "@param",
-            "body": "useIcon\n{Boolean?true} whether to add an icon to the link.",
+            "body": "useIcon\n          {Boolean?true} whether to add an icon to the link.",
             "paramName": "useIcon",
             "description": " whether to add an icon to the link.",
             "optional": true,
@@ -1554,7 +1554,7 @@
           },
           {
             "name": "@param",
-            "body": "useShortName\n{Boolean?false} whether to use the short name.",
+            "body": "useShortName\n          {Boolean?false} whether to use the short name.",
             "paramName": "useShortName",
             "description": " whether to use the short name.",
             "optional": true,
@@ -1589,13 +1589,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the &#64;see attributes of an item."
+            "body": "<p>Creates the HTML showing the &#64;see attributes of an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
@@ -1628,22 +1628,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing information about inheritance"
+            "body": "<p>Creates the HTML showing information about inheritance</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} item to get the information from",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} item to get the information from",
             "paramName": "node",
             "description": " item to get the information from",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the current class shown in the class\nviewer",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the current class shown in the class\n          viewer",
             "paramName": "currentClassDocNode",
-            "description": " the current class shown in the class\nviewer",
+            "description": " the current class shown in the class\n          viewer",
             "type": "qxl.apiviewer.dao.Class"
           }
         ],
@@ -1674,13 +1674,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing whether the item is overridden"
+            "body": "<p>Creates the HTML showing whether the item is overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} item to get the the information from",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} item to get the the information from",
             "paramName": "node",
             "description": " item to get the the information from",
             "type": "qxl.apiviewer.dao.ClassItem"
@@ -1713,22 +1713,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing whether the item is included from a mixin"
+            "body": "<p>Creates the HTML showing whether the item is included from a mixin</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} item to get the the information from",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} item to get the the information from",
             "paramName": "node",
             "description": " item to get the the information from",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{qxl.apiviewer.dao.Class} the current class shown in the class\nviewer",
+            "body": "currentClassDocNode\n          {qxl.apiviewer.dao.Class} the current class shown in the class\n          viewer",
             "paramName": "currentClassDocNode",
-            "description": " the current class shown in the class\nviewer",
+            "description": " the current class shown in the class\n          viewer",
             "type": "qxl.apiviewer.dao.Class"
           }
         ],
@@ -1759,20 +1759,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a class item from baseClassNode. if it is not found there, the\nclass' hierarchy is searched until the item is found."
+            "body": "<p>Gets a class item from baseClassNode. if it is not found there, the\n class' hierarchy is searched until the item is found.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "itemName\n{String} the name of the item.",
+            "body": "itemName\n          {String} the name of the item.",
             "paramName": "itemName",
             "description": " the name of the item.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "baseClassNode\n{qxl.apiviewer.dao.Class} class doc node",
+            "body": "baseClassNode\n          {qxl.apiviewer.dao.Class} class doc node",
             "paramName": "baseClassNode",
             "description": " class doc node",
             "type": "qxl.apiviewer.dao.Class"
@@ -1805,22 +1805,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the description of an item."
+            "body": "<p>Creates the HTML showing the description of an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.Node} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.Node} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.Node"
           },
           {
             "name": "@param",
-            "body": "packageBaseClass\n{qxl.apiviewer.dao.Class|qxl.apiviewer.dao.Package?null} the doc node of\nthe class to use for auto-adding packages.",
+            "body": "packageBaseClass\n          {qxl.apiviewer.dao.Class|qxl.apiviewer.dao.Package?null} the doc node of\n          the class to use for auto-adding packages.",
             "paramName": "packageBaseClass",
-            "description": " the doc node of\nthe class to use for auto-adding packages.",
+            "description": " the doc node of\n          the class to use for auto-adding packages.",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -1830,9 +1830,9 @@
           },
           {
             "name": "@param",
-            "body": "showDetails\n{Boolean} whether to show details. If <code>false</code> only\nthe first sentence of the description will be shown.",
+            "body": "showDetails\n          {Boolean} whether to show details. If <code>false</code> only\n          the first sentence of the description will be shown.",
             "paramName": "showDetails",
-            "description": " whether to show details. If <code>false</code> only\nthe first sentence of the description will be shown.",
+            "description": " whether to show details. If <code>false</code> only\n          the first sentence of the description will be shown.",
             "type": "Boolean"
           }
         ],
@@ -1863,13 +1863,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extracts the first sentence from a text."
+            "body": "<p>Extracts the first sentence from a text.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "text\n{String} the text.",
+            "body": "text\n          {String} the text.",
             "paramName": "text",
             "description": " the text.",
             "type": "String"
@@ -1902,13 +1902,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the description of an item has details (has more than one\nsentence)."
+            "body": "<p>Returns whether the description of an item has details (has more than one\n sentence).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.Node} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.Node} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.Node"
@@ -1941,29 +1941,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the type of a doc node."
+            "body": "<p>Creates the HTML showing the type of a doc node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "typeNode\n{qxl.apiviewer.dao.ClassItem} the doc node to show the type for.",
+            "body": "typeNode\n          {qxl.apiviewer.dao.ClassItem} the doc node to show the type for.",
             "paramName": "typeNode",
             "description": " the doc node to show the type for.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "defaultType\n{String} the type name to use if <code>typeNode</code> is\n<code>null</code> or defines no type.",
+            "body": "defaultType\n          {String} the type name to use if <code>typeNode</code> is\n          <code>null</code> or defines no type.",
             "paramName": "defaultType",
-            "description": " the type name to use if <code>typeNode</code> is\n<code>null</code> or defines no type.",
+            "description": " the type name to use if <code>typeNode</code> is\n          <code>null</code> or defines no type.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "useShortName\n{Boolean?true} whether to use short class names (without\npackage).",
+            "body": "useShortName\n          {Boolean?true} whether to use short class names (without\n          package).",
             "paramName": "useShortName",
-            "description": " whether to use short class names (without\npackage).",
+            "description": " whether to use short class names (without\n          package).",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -1996,20 +1996,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the documentation errors of an item."
+            "body": "<p>Creates the HTML showing the documentation errors of an item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.Node} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.Node} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.Node"
           },
           {
             "name": "@param",
-            "body": "currentClassDocNode\n{Map} the doc node of the currently displayed class",
+            "body": "currentClassDocNode\n          {Map} the doc node of the currently displayed class",
             "paramName": "currentClassDocNode",
             "description": " the doc node of the currently displayed class",
             "type": "Map"
@@ -2042,22 +2042,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing whether the item is deprecated"
+            "body": "<p>Creates the HTML showing whether the item is deprecated</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
           },
           {
             "name": "@param",
-            "body": "itemName\n{String} type of the item, e.g. \"method\", \"property\",\n\"constant\", ...",
+            "body": "itemName\n          {String} type of the item, e.g. \"method\", \"property\",\n          \"constant\", ...",
             "paramName": "itemName",
-            "description": " type of the item, e.g. \"method\", \"property\",\n\"constant\", ...",
+            "description": " type of the item, e.g. \"method\", \"property\",\n          \"constant\", ...",
             "type": "String"
           }
         ],
@@ -2088,13 +2088,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing the access protection for a class item."
+            "body": "<p>Creates the HTML showing the access protection for a class item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
@@ -2127,13 +2127,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the HTML showing interfaces requiring this node"
+            "body": "<p>Creates the HTML showing interfaces requiring this node</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
@@ -2166,13 +2166,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the link to the source file that definen an item"
+            "body": "<p>Creates the link to the source file that definen an item</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.ClassItem} the doc node of the item.",
+            "body": "node\n          {qxl.apiviewer.dao.ClassItem} the doc node of the item.",
             "paramName": "node",
             "description": " the doc node of the item.",
             "type": "qxl.apiviewer.dao.ClassItem"
@@ -2205,20 +2205,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wraps a HTML fragment with a \"span\" element with CSS classes for the\nitem."
+            "body": "<p>Wraps a HTML fragment with a \"span\" element with CSS classes for the\n item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.Class} class doc node",
+            "body": "node\n          {qxl.apiviewer.dao.Class} class doc node",
             "paramName": "node",
             "description": " class doc node",
             "type": "qxl.apiviewer.dao.Class"
           },
           {
             "name": "@param",
-            "body": "title\n{String} original title",
+            "body": "title\n          {String} original title",
             "paramName": "title",
             "description": " original title",
             "type": "String"
@@ -2251,13 +2251,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets CSS classes for a class item"
+            "body": "<p>Gets CSS classes for a class item</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node\n{qxl.apiviewer.dao.Class} class doc node",
+            "body": "node\n          {qxl.apiviewer.dao.Class} class doc node",
             "paramName": "node",
             "description": " class doc node",
             "type": "qxl.apiviewer.dao.Class"

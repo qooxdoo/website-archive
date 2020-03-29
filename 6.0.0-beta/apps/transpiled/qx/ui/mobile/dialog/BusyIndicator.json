@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The widget displays a busy indicator.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar busyIndicator = new qx.ui.mobile.dialog.BusyIndicator(\"Please wait\");\nthis.getRoot().add(busyIndicator);\n</pre>\n\nThis example create a widget to display the busy indicator."
+          "body": "<p>The widget displays a busy indicator.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var busyIndicator = new qx.ui.mobile.dialog.BusyIndicator(\"Please wait\");\n   this.getRoot().add(busyIndicator);\n </pre>\n<p>This example create a widget to display the busy indicator.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 41,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 48,
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The spinner css class to use."
+            "body": "<p>The spinner css class to use.</p>"
           }
         ]
       },
@@ -136,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for appear event."
+            "body": "<p>Listener for appear event.</p>"
           }
         ]
       },
@@ -158,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for disappear event."
+            "body": "<p>Handler for disappear event.</p>"
           }
         ]
       },
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -223,7 +223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1597,25 +1597,27 @@
     "location": {
       "start": {
         "line": 115,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 125,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "defer": {
     "location": {
       "start": {
         "line": 128,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 143,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

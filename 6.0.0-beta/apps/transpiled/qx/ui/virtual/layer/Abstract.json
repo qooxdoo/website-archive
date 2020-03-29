@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 32,
+        "line": 30,
         "column": 0
       },
       "end": {
-        "line": 268,
+        "line": 266,
         "column": 3
       }
     },
@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nAbstract base class for layers of a virtual pane.\n\nThis class queues calls to {@link #fullUpdate}, {@link #updateLayerWindow}\nand {@link #updateLayerData} and only performs the absolute necessary\nactions. Concrete implementation of this class must at least implement\nthe {@link #_fullUpdate} method. Additionally the two methods\n{@link #_updateLayerWindow} and {@link #_updateLayerData} may be implemented\nto increase the performance."
+          "body": "<p>Abstract base class for layers of a virtual pane.\n This class queues calls to {@link #fullUpdate}, {@link #updateLayerWindow}\n and {@link #updateLayerData} and only performs the absolute necessary\n actions. Concrete implementation of this class must at least implement\n the {@link #<em>fullUpdate} method. Additionally the two methods\n {@link #</em>updateLayerWindow} and {@link #_updateLayerData} may be implemented\n to increase the performance.</p>"
         }
       ]
     }
@@ -39,11 +39,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 45,
-        "column": 3
+        "line": 43,
+        "column": 15
       },
       "end": {
-        "line": 50,
+        "line": 48,
         "column": 4
       }
     },
@@ -51,7 +51,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -60,11 +60,11 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 60,
           "column": 4
         },
         "end": {
-          "line": 66,
+          "line": 64,
           "column": 5
         }
       },
@@ -72,7 +72,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -91,11 +91,11 @@
     "__jobs": {
       "location": {
         "start": {
-          "line": 78,
+          "line": 76,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 76,
           "column": 17
         }
       },
@@ -105,11 +105,11 @@
     "__arguments": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 77,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 77,
           "column": 22
         }
       },
@@ -119,11 +119,11 @@
     "__firstRow": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 21
         }
       },
@@ -133,11 +133,11 @@
     "__firstColumn": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 80,
           "column": 24
         }
       },
@@ -147,11 +147,11 @@
     "__rowSizes": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 83,
+          "line": 81,
           "column": 21
         }
       },
@@ -161,11 +161,11 @@
     "__columnSizes": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 82,
           "column": 24
         }
       },
@@ -175,11 +175,11 @@
     "getFirstRow": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 92,
           "column": 5
         }
       },
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the first rendered row"
+            "body": "<p>Get the first rendered row</p>"
           }
         ],
         "@return": [
@@ -205,11 +205,11 @@
     "getFirstColumn": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 104,
+          "line": 102,
           "column": 5
         }
       },
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the first rendered column"
+            "body": "<p>Get the first rendered column</p>"
           }
         ],
         "@return": [
@@ -235,11 +235,11 @@
     "getRowSizes": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 114,
+          "line": 112,
           "column": 5
         }
       },
@@ -247,7 +247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the sizes of the rendered rows"
+            "body": "<p>Get the sizes of the rendered rows</p>"
           }
         ],
         "@return": [
@@ -265,11 +265,11 @@
     "getColumnSizes": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 122,
           "column": 5
         }
       },
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the sizes of the rendered column"
+            "body": "<p>Get the sizes of the rendered column</p>"
           }
         ],
         "@return": [
@@ -295,11 +295,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 160,
           "column": 5
         }
       },
@@ -307,7 +307,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -330,11 +330,11 @@
     "_updateLayerData": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 169,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 175,
           "column": 5
         }
       },
@@ -342,7 +342,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the layer to reflect changes in the data the layer displays.\n\nNote: It is guaranteed that this method is only called after the layer\nhas been rendered."
+            "body": "<p>Update the layer to reflect changes in the data the layer displays.\n Note: It is guaranteed that this method is only called after the layer\n has been rendered.</p>"
           }
         ]
       },
@@ -352,11 +352,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 193,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 196,
           "column": 5
         }
       },
@@ -364,7 +364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Do a complete update of the layer. All cached data should be discarded.\nThis method is called e.g. after changes to the grid geometry\n(row/column sizes, row/column count, ...).\n\nNote: It is guaranteed that this method is only called after the layer\nhas been rendered."
+            "body": "<p>Do a complete update of the layer. All cached data should be discarded.\n This method is called e.g. after changes to the grid geometry\n (row/column sizes, row/column count, …).\n Note: It is guaranteed that this method is only called after the layer\n has been rendered.</p>"
           }
         ],
         "@param": [
@@ -404,11 +404,11 @@
     "_updateLayerWindow": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 223,
           "column": 5
         }
       },
@@ -416,7 +416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the layer to display a different window of the virtual grid.\nThis method is called if the pane is scrolled, resized or cells\nare prefetched. The implementation can assume that no other grid\ndata has been changed since the last \"fullUpdate\" of \"updateLayerWindow\"\ncall.\n\nNote: It is guaranteed that this method is only called after the layer\nhas been rendered."
+            "body": "<p>Update the layer to display a different window of the virtual grid.\n This method is called if the pane is scrolled, resized or cells\n are prefetched. The implementation can assume that no other grid\n data has been changed since the last \"fullUpdate\" of \"updateLayerWindow\"\n call.\n Note: It is guaranteed that this method is only called after the layer\n has been rendered.</p>"
           }
         ],
         "@param": [
@@ -456,11 +456,11 @@
     "updateLayerData": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 231,
           "column": 5
         }
       },
@@ -468,7 +468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -482,11 +482,11 @@
     "fullUpdate": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 245,
+          "line": 243,
           "column": 5
         }
       },
@@ -494,7 +494,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -538,11 +538,11 @@
     "updateLayerWindow": {
       "location": {
         "start": {
-          "line": 249,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 254,
           "column": 5
         }
       },
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -4079,11 +4079,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 265,
-        "column": 2
+        "line": 263,
+        "column": 13
       },
       "end": {
-        "line": 267,
+        "line": 265,
         "column": 3
       }
     },
@@ -4091,7 +4091,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -4102,6 +4102,13 @@
     "qx.ui.virtual.layer.HtmlCell",
     "qx.ui.virtual.layer.WidgetCell",
     "qx.ui.virtual.layer.WidgetCellSpan",
-    "qx.test.ui.virtual.layer.LayerSimple"
+    "qx.test.ui.virtual.layer.LayerMock",
+    "qx.test.ui.virtual.layer.LayerSimple",
+    "qx.test.ui.virtual.performance.layer.DomCell",
+    "qx.test.ui.virtual.performance.layer.DomPoolCell",
+    "qx.test.ui.virtual.performance.layer.HtmlDivRelative",
+    "qx.test.ui.virtual.performance.layer.HtmlTableCell",
+    "qx.test.ui.virtual.performance.layer.HtmlTableCellNaive",
+    "qx.test.ui.virtual.performance.layer.HtmlTableCssCell"
   ]
 }

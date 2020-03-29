@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Include this widget if you want to create scrollbars depending on the global\n\"qx.nativeScrollBars\" setting."
+          "body": "<p>Include this widget if you want to create scrollbars depending on the global\n \"qx.nativeScrollBars\" setting.</p>"
         }
       ]
     }
@@ -43,7 +43,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\nor a native browser scrollbar."
+            "body": "<p>Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\n or a native browser scrollbar.</p>"
           }
         ],
         "@param": [

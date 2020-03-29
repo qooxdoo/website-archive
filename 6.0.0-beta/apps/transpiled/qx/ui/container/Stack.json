@@ -27,11 +27,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\nAdrian Olaru (adrianolaru)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n Adrian Olaru (adrianolaru)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The stack container puts its child widgets on top of each other and only the\ntopmost widget is visible.\n\nThis is used e.g. in the tab view widget. Which widget is visible can be\ncontrolled by using the {@link #getSelection} method.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n// create stack container\nvar stack = new qx.ui.container.Stack();\n\n// add some children\nstack.add(new qx.ui.core.Widget().set({\nbackgroundColor: \"red\"\n}));\nstack.add(new qx.ui.core.Widget().set({\nbackgroundColor: \"green\"\n}));\nstack.add(new qx.ui.core.Widget().set({\nbackgroundColor: \"blue\"\n}));\n\n// select green widget\nstack.setSelection([stack.getChildren()[1]]);\n\nthis.getRoot().add(stack);\n</pre>\n\nThis example creates an stack with three children. Only the selected \"green\"\nwidget is visible.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/stack.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The stack container puts its child widgets on top of each other and only the\n topmost widget is visible.\n This is used e.g. in the tab view widget. Which widget is visible can be\n controlled by using the {@link #getSelection} method.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n\n   var stack = new qx.ui.container.Stack();\n\n   stack.add(new qx.ui.core.Widget().set({\n    backgroundColor: \"red\"\n   }));\n   stack.add(new qx.ui.core.Widget().set({\n    backgroundColor: \"green\"\n   }));\n   stack.add(new qx.ui.core.Widget().set({\n    backgroundColor: \"blue\"\n   }));\n\n   stack.setSelection([stack.getChildren()[1]]);\n   this.getRoot().add(stack);\n </pre>\n<p>This example creates an stack with three children. Only the selected \"green\"\n widget is visible.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/stack.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 82,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 89,
@@ -52,7 +52,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -73,7 +73,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the size of the widget depends on the selected child. When\ndisabled (default) the size is configured to the largest child."
+            "body": "<p>Whether the size of the widget depends on the selected child. When\n disabled (default) the size is configured to the largest child.</p>"
           }
         ]
       },
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -142,11 +142,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS FOR SELECTION API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER METHODS FOR SELECTION API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the widget for the selection."
+            "body": "<p>Returns the widget for the selection.</p>"
           }
         ],
         "@return": [
@@ -176,15 +176,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns if the selection could be empty or not."
+            "body": "<p>Returns if the selection could be empty or not.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> If selection could be empty,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> If selection could be empty,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> If selection could be empty,\n<code>false</code> otherwise."
+            "description": " <code>true</code> If selection could be empty,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the given item is selectable."
+            "body": "<p>Returns whether the given item is selectable.</p>"
           }
         ],
         "@param": [
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>changeSelection</code>.\n\nShows the new selected widget and hide the old one."
+            "body": "<p>Event handler for <code>changeSelection</code>.\n Shows the new selected widget and hide the old one.</p>"
           }
         ],
         "@param": [
@@ -276,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -320,11 +320,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Go to the previous child in the children list."
+            "body": "<p>Go to the previous child in the children list.</p>"
           }
         ]
       },
@@ -346,7 +346,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Go to the next child in the children list."
+            "body": "<p>Go to the next child in the children list.</p>"
           }
         ]
       },
@@ -365,11 +365,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the field model value. Should also update the UI."
+            "body": "<p>Sets the field model value. Should also update the UI.</p>"
           }
         ],
         "@param": [
@@ -387,9 +387,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Error} Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field).",
+            "body": "{null|Error} Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field).",
             "type": "null|Error",
-            "description": " Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field)."
+            "description": " Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field)."
           }
         ]
       }
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a consistent and up-to-date model value.\n\nNote: returned value can also be a promise of type <code>Promise&lt;*|null&gt;</code>."
+            "body": "<p>Returns a consistent and up-to-date model value.\n Note: returned value can also be a promise of type <code>Promise&amp;lt;*|null&amp;gt;</code>.</p>"
           }
         ],
         "@return": [
@@ -440,7 +440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items.\n\nNote: The result is only a set of selected items, so the order can\ndiffer from the sequence in which the items were added."
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
@@ -465,7 +465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces current selection with the given items."
+            "body": "<p>Replaces current selection with the given items.</p>"
           }
         ],
         "@param": [
@@ -508,7 +508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether the given item is currently selected."
+            "body": "<p>Detects whether the given item is currently selected.</p>"
           }
         ],
         "@param": [
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the selection is empty."
+            "body": "<p>Whether the selection is empty.</p>"
           }
         ],
         "@return": [
@@ -575,15 +575,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -609,11 +609,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for <code>changeSelected</code> event on single\nselection manager."
+            "body": "<p>Event listener for <code>changeSelected</code> event on single\n selection manager.</p>"
           }
         ],
         "@param": [
@@ -639,7 +639,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the selection manager if it is already exists, otherwise creates\nthe manager."
+            "body": "<p>Return the selection manager if it is already exists, otherwise creates\n the manager.</p>"
           }
         ],
         "@return": [
@@ -664,15 +664,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -689,7 +689,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -714,7 +714,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -729,9 +729,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       }
@@ -748,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -783,7 +783,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child widget at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -825,7 +825,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget before another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -867,7 +867,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget after another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -909,7 +909,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -935,7 +935,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the widget at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -969,7 +969,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -994,7 +994,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1036,7 +1036,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1092,7 +1092,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1141,7 +1141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1204,7 +1204,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRichard Sternagel (rsternagel)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nPluginDetect Library 0.8.7\n\nHomepage:\nhttp://www.pinlady.net/PluginDetect\nhttp://www.pinlady.net/PluginDetect/PDFjs/\n\nCopyright:\n(c) 2014, Eric Gerds\n\nLicense:\nMIT: http://www.pinlady.net/PluginDetect/license/\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Richard Sternagel (rsternagel)\n   ======================================================================\n   This class contains code based on the following work:\n PluginDetect Library 0.8.7\n     Homepage:\n       http://www.pinlady.net/PluginDetect\n       http://www.pinlady.net/PluginDetect/PDFjs/\n     Copyright:\n       (c) 2014, Eric Gerds\n     License:\n       MIT: http://www.pinlady.net/PluginDetect/license/\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Exposes PluginDetect_PDFjs to qooxdoo.\n\nContains detection for PDF.js which is a Portable Document Format (PDF)\nviewer that is built with HTML5. PDF.js is built into Firefox 19+ and\nused as default viewer there. You can enable/disable it via \"about:config\"\nand \"pdfjs.disabled\" (true/false).\n\nAs soon as there is an official way to detect this, which seems to be\nworked on [1][2], we should switch.\n\n[1] https://bugzilla.mozilla.org/show_bug.cgi?id=840439\n[2] https://bugzilla.mozilla.org/show_bug.cgi?id=558184\n\nThis class is used by {@link qx.core.Environment} and should not be used\ndirectly. Please check its class comment for details how to use it."
+          "body": "<p>Exposes PluginDetect<em>PDFjs to qooxdoo.\n Contains detection for PDF.js which is a Portable Document Format (PDF)\n viewer that is built with HTML5. PDF.js is built into Firefox 19+ and\n used as default viewer there. You can enable/disable it via \"about:config\"\n and \"pdfjs.disabled\" (true/false).\n As soon as there is an official way to detect this, which seems to be\n worked on [1][2], we should switch.\n [1] https://bugzilla.mozilla.org/show</em>bug.cgi?id=840439\n [2] https://bugzilla.mozilla.org/show_bug.cgi?id=558184\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
         }
       ],
       "@internal": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if PDF.js is available."
+            "body": "<p>Checks if PDF.js is available.</p>"
           }
         ],
         "@param": [
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for checking the availability of PDF.js."
+            "body": "<p>Internal helper for checking the availability of PDF.js.</p>"
           }
         ],
         "@param": [
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the original (third-party) PluginDetect object."
+            "body": "<p>Returns the original (third-party) PluginDetect object.</p>"
           }
         ],
         "@return": [
@@ -161,7 +161,7 @@
     "location": {
       "start": {
         "line": 98,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 100,
@@ -172,7 +172,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Register PDF.js detection asynchronously."
+          "body": "<p>Register PDF.js detection asynchronously.</p>"
         }
       ]
     }

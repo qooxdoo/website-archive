@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Theme classes contain styling information for certain aspects of the\ngraphical user interface.\n\nSupported themes are: colors, decorations, fonts, icons, appearances.\nThe additional meta theme allows for grouping of the individual\nthemes.\n\nFor more details, take a look at the\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/desktop/ui_theming.html' target='_blank'>\ndocumentation of the theme system in the qooxdoo manual.</a>"
+          "body": "<p>Theme classes contain styling information for certain aspects of the\n graphical user interface.\n Supported themes are: colors, decorations, fonts, icons, appearances.\n The additional meta theme allows for grouping of the individual\n themes.\n For more details, take a look at the\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/desktop/ui_theming.html' target='_blank'>\n documentation of the theme system in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -47,11 +47,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Theme config\n\nExample:\n<pre class='javascript'>\nqx.Theme.define(\"name\",\n{\naliases : {\n\"aliasKey\" : \"resourceFolderOrUri\"\n},\nextend : otherTheme,\ninclude : [MMixinTheme],\npatch : [MMixinTheme],\ncolors : {},\ndecorations : {},\nfonts : {},\nwidgets : {},\nappearances : {},\nmeta : {},\nboot : function(){}\n});\n</pre>\n\nFor more details, take a look at the\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/desktop/ui_theming.html' target='_blank'>\ndocumentation of the theme system in the qooxdoo manual.</a>"
+            "body": "<p>Theme config\n Example:\n </p>\n<pre class='javascript'>\n qx.Theme.define(\"name\",\n {\n   aliases : {\n     \"aliasKey\" : \"resourceFolderOrUri\"\n   },\n   extend : otherTheme,\n   include : [MMixinTheme],\n   patch : [MMixinTheme],\n   colors : {},\n   decorations : {},\n   fonts : {},\n   widgets : {},\n   appearances : {},\n   meta : {},\n   boot : function(){}\n });\n </pre>\n<p>For more details, take a look at the\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/desktop/ui_theming.html' target='_blank'>\n documentation of the theme system in the qooxdoo manual.</a></p>"
           }
         ],
         "@param": [
@@ -89,15 +89,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Normalize an object to an array"
+            "body": "<p>Normalize an object to an array</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "objectOrArray {Object|Array} Either an object that is to be\nnormalized to an array, or an array, which is just passed through",
+            "body": "objectOrArray {Object|Array} Either an object that is to be\n   normalized to an array, or an array, which is just passed through",
             "paramName": "objectOrArray",
-            "description": " Either an object that is to be\nnormalized to an array, or an array, which is just passed through",
+            "description": " Either an object that is to be\n   normalized to an array, or an array, which is just passed through",
             "type": [
               "Object",
               "Array"
@@ -107,9 +107,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} Either an array that has the original object as its\nsingle item, or the original array itself",
+            "body": "{Array} Either an array that has the original object as its\n   single item, or the original array itself",
             "type": "Array",
-            "description": " Either an array that has the original object as its\nsingle item, or the original array itself"
+            "description": " Either an array that has the original object as its\n   single item, or the original array itself"
           }
         ]
       },
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize alias inheritance"
+            "body": "<p>Initialize alias inheritance</p>"
           }
         ],
         "@param": [
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return a map of all known themes"
+            "body": "<p>Return a map of all known themes</p>"
           }
         ],
         "@return": [
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a theme by name"
+            "body": "<p>Returns a theme by name</p>"
           }
         ],
         "@param": [
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine if theme exists"
+            "body": "<p>Determine if theme exists</p>"
           }
         ],
         "@param": [
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine the number of themes which are defined"
+            "body": "<p>Determine the number of themes which are defined</p>"
           }
         ],
         "@return": [
@@ -307,11 +307,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPRIVATE/INTERNAL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PRIVATE/INTERNAL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method will be attached to all themes to return\na nice identifier for them."
+            "body": "<p>This method will be attached to all themes to return\n a nice identifier for them.</p>"
           }
         ],
         "@internal": [
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extract the inheritable key (could be only one)"
+            "body": "<p>Extract the inheritable key (could be only one)</p>"
           }
         ],
         "@param": [
@@ -386,7 +386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert existing entry to a prototype based inheritance function"
+            "body": "<p>Convert existing entry to a prototype based inheritance function</p>"
           }
         ],
         "@param": [
@@ -536,7 +536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates incoming configuration and checks keys and values"
+            "body": "<p>Validates incoming configuration and checks keys and values</p>"
           }
         ],
         "@signature": [
@@ -588,7 +588,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Include all keys of the given mixin theme into the theme. The mixin may\ninclude keys which are already defined in the target theme. Existing\nfeatures of equal name will be overwritten."
+            "body": "<p>Include all keys of the given mixin theme into the theme. The mixin may\n include keys which are already defined in the target theme. Existing\n features of equal name will be overwritten.</p>"
           }
         ],
         "@param": [
@@ -626,7 +626,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Include all keys of the given mixin theme into the theme. If the\nmixin includes any keys that are already available in the\nclass, they will be silently ignored. Use the {@link #patch} method\nif you need to overwrite keys in the current class."
+            "body": "<p>Include all keys of the given mixin theme into the theme. If the\n mixin includes any keys that are already available in the\n class, they will be silently ignored. Use the {@link #patch} method\n if you need to overwrite keys in the current class.</p>"
           }
         ],
         "@param": [
@@ -664,7 +664,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to check for an invalid theme"
+            "body": "<p>Helper method to check for an invalid theme</p>"
           }
         ],
         "@param": [

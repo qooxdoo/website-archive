@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Container, which allows vertical and horizontal scrolling if the contents is\nlarger than the container.\n\nNote that this class can only have one child widget. This container has a\nfixed layout, which cannot be changed.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n// create scroll container\nvar scroll = new qx.ui.container.Scroll().set({\nwidth: 300,\nheight: 200\n});\n\n// add a widget which is larger than the container\nscroll.add(new qx.ui.core.Widget().set({\nwidth: 600,\nminWidth: 600,\nheight: 400,\nminHeight: 400\n}));\n\nthis.getRoot().add(scroll);\n</pre>\n\nThis example creates a scroll container and adds a widget, which is larger\nthan the container. This will cause the container to display vertical\nand horizontal toolbars.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scroll.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>Container, which allows vertical and horizontal scrolling if the contents is\n larger than the container.\n Note that this class can only have one child widget. This container has a\n fixed layout, which cannot be changed.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n\n   var scroll = new qx.ui.container.Scroll().set({\n     width: 300,\n     height: 200\n   });\n\n   scroll.add(new qx.ui.core.Widget().set({\n     width: 600,\n     minWidth: 600,\n     height: 400,\n     minHeight: 400\n   }));\n   this.getRoot().add(scroll);\n </pre>\n<p>This example creates a scroll container and adds a widget, which is larger\n than the container. This will cause the container to display vertical\n and horizontal toolbars.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scroll.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 75,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 82,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -58,9 +58,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "content {qx.ui.core.LayoutItem?null} The content widget of the scroll\ncontainer.",
+          "body": "content {qx.ui.core.LayoutItem?null} The content widget of the scroll\n    container.",
           "paramName": "content",
-          "description": " The content widget of the scroll\ncontainer.",
+          "description": " The content widget of the scroll\n    container.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.core.LayoutItem"
@@ -84,7 +84,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the content of the scroll container. Scroll containers\nmay only have one child, so it always replaces the current\nchild with the given one."
+            "body": "<p>Sets the content of the scroll container. Scroll containers\n may only have one child, so it always replaces the current\n child with the given one.</p>"
           }
         ],
         "@param": [
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content of the scroll area."
+            "body": "<p>Returns the content of the scroll area.</p>"
           }
         ],
         "@param": [
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content of the scroll container.\n\nScroll containers may only have one child. This\nmethod returns an array containing the child or an empty array."
+            "body": "<p>Returns the content of the scroll container.\n Scroll containers may only have one child. This\n method returns an array containing the child or an empty array.</p>"
           }
         ],
         "@return": [
@@ -176,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element, to which the content padding should be applied."
+            "body": "<p>Returns the element, to which the content padding should be applied.</p>"
           }
         ],
         "@return": [
@@ -542,7 +542,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\nor a native browser scrollbar."
+            "body": "<p>Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\n or a native browser scrollbar.</p>"
           }
         ],
         "@param": [
@@ -596,7 +596,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the pointerdown event which simply stops the momentum scrolling."
+            "body": "<p>Handler for the pointerdown event which simply stops the momentum scrolling.</p>"
           }
         ],
         "@param": [
@@ -622,7 +622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Roll event handler"
+            "body": "<p>Roll event handler</p>"
           }
         ],
         "@param": [
@@ -648,7 +648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the first scrollable parent (in the parent chain)."
+            "body": "<p>Finds the first scrollable parent (in the parent chain).</p>"
           }
         ],
         "@param": [
@@ -682,7 +682,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is scrollable."
+            "body": "<p>Whether the widget is scrollable.</p>"
           }
         ],
         "@param": [
@@ -716,7 +716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the bounds of the given scrollable."
+            "body": "<p>Gets the bounds of the given scrollable.</p>"
           }
         ],
         "@param": [
@@ -750,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the edge type or null if the pointer isn't within one of the thresholds."
+            "body": "<p>Gets the edge type or null if the pointer isn't within one of the thresholds.</p>"
           }
         ],
         "@param": [
@@ -798,7 +798,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the axis ('x' or 'y') by the edge type."
+            "body": "<p>Gets the axis ('x' or 'y') by the edge type.</p>"
           }
         ],
         "@param": [
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the threshold amount by edge type."
+            "body": "<p>Gets the threshold amount by edge type.</p>"
           }
         ],
         "@param": [
@@ -874,7 +874,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is visible."
+            "body": "<p>Whether the scrollbar is visible.</p>"
           }
         ],
         "@param": [
@@ -915,7 +915,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is exceeding it's maximum position."
+            "body": "<p>Whether the scrollbar is exceeding it's maximum position.</p>"
           }
         ],
         "@param": [
@@ -963,7 +963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the threshold exceedance (which may be negative)."
+            "body": "<p>Calculates the threshold exceedance (which may be negative).</p>"
           }
         ],
         "@param": [
@@ -1004,7 +1004,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scroll amount (which may be negative).\nThe amount is influenced by the scrollbar size (bigger = faster)\nthe exceedanceAmount (bigger = faster) and the slowDownFactor."
+            "body": "<p>Calculates the scroll amount (which may be negative).\n The amount is influenced by the scrollbar size (bigger = faster)\n the exceedanceAmount (bigger = faster) and the slowDownFactor.</p>"
           }
         ],
         "@param": [
@@ -1045,7 +1045,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the given scrollable on the given axis for the given amount."
+            "body": "<p>Scrolls the given scrollable on the given axis for the given amount.</p>"
           }
         ],
         "@param": [
@@ -1085,11 +1085,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the drag event."
+            "body": "<p>Event handler for the drag event.</p>"
           }
         ],
         "@param": [
@@ -1115,7 +1115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the dragend event."
+            "body": "<p>Event handler for the dragend event.</p>"
           }
         ],
         "@param": [
@@ -1339,7 +1339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1381,7 +1381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1437,7 +1437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1486,7 +1486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1549,7 +1549,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "All widget used as scrollbars must implement this interface."
+          "body": "<p>All widget used as scrollbars must implement this interface.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the user scroll"
+            "body": "<p>Fired if the user scroll</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as the scroll animation ended."
+            "body": "<p>Fired as soon as the scroll animation ended.</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls to the given position.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls to the given position.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [
@@ -161,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls by the given offset.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls by the given offset.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls by the given number of steps.\n\nThis method automatically corrects the given position to respect\nthe {@link #maximum}."
+            "body": "<p>Scrolls by the given number of steps.\n This method automatically corrects the given position to respect\n the {@link #maximum}.</p>"
           }
         ],
         "@param": [

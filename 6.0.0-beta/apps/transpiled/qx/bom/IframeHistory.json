@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nMustafa Sak (msak)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Mustafa Sak (msak)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Implements an iFrame based history manager for IE 6/7/8.\n\nCreates a hidden iFrame and uses document.write to store entries in the\nhistory browser's stack.\n\nThis class must be disposed of after use"
+          "body": "<p>Implements an iFrame based history manager for IE 6/7/8.\n Creates a hidden iFrame and uses document.write to store entries in the\n history browser's stack.\n This class must be disposed of after use</p>"
         }
       ],
       "@internal": [
@@ -43,13 +43,14 @@
     "location": {
       "start": {
         "line": 38,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__iframe": {
@@ -137,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -163,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -198,22 +199,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "state {String} a string representing the state of the\napplication. This command will be delivered in the data property of\nthe \"request\" event.",
+            "body": "state {String} a string representing the state of the\n          application. This command will be delivered in the data property of\n          the \"request\" event.",
             "paramName": "state",
-            "description": " a string representing the state of the\napplication. This command will be delivered in the data property of\nthe \"request\" event.",
+            "description": " a string representing the state of the\n          application. This command will be delivered in the data property of\n          the \"request\" event.",
             "type": "qx.bom.String"
           },
           {
             "name": "@param",
-            "body": "newTitle {String ? null} the page title to set after the history entry\nis done. This title should represent the new state of the application.",
+            "body": "newTitle {String ? null} the page title to set after the history entry\n          is done. This title should represent the new state of the application.",
             "paramName": "newTitle",
-            "description": " the page title to set after the history entry\nis done. This title should represent the new state of the application.",
+            "description": " the page title to set after the history entry\n          is done. This title should represent the new state of the application.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
@@ -242,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -277,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function to set state property. This will only be called\nby _onHistoryLoad. It determines, that no apply of state will be called."
+            "body": "<p>Helper function to set state property. This will only be called\n by _onHistoryLoad. It determines, that no apply of state will be called.</p>"
           }
         ],
         "@param": [
@@ -308,7 +309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -334,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get state from the iframe"
+            "body": "<p>Get state from the iframe</p>"
           }
         ],
         "@return": [
@@ -368,7 +369,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Store state to the iframe"
+            "body": "<p>Store state to the iframe</p>"
           }
         ],
         "@param": [
@@ -403,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function to clear the write state timer."
+            "body": "<p>Helper function to clear the write state timer.</p>"
           }
         ]
       },
@@ -425,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the polling timer"
+            "body": "<p>Initialize the polling timer</p>"
           }
         ]
       },
@@ -447,7 +448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hash change listener."
+            "body": "<p>Hash change listener.</p>"
           }
         ],
         "@param": [
@@ -478,7 +479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores the given location state."
+            "body": "<p>Stores the given location state.</p>"
           }
         ],
         "@param": [
@@ -517,7 +518,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the given location state is the current one."
+            "body": "<p>Checks whether the given location state is the current one.</p>"
           }
         ],
         "@param": [
@@ -556,7 +557,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the iframe"
+            "body": "<p>Initializes the iframe</p>"
           }
         ],
         "@param": [
@@ -589,7 +590,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "IMPORTANT NOTE FOR IE:\nSetting the source before adding the iframe to the document.\nOtherwise IE will bring up a \"Unsecure items ...\" warning in SSL mode"
+            "body": "<p>IMPORTANT NOTE FOR IE:\n Setting the source before adding the iframe to the document.\n Otherwise IE will bring up a \"Unsecure items …\" warning in SSL mode</p>"
           }
         ],
         "@return": [
@@ -619,7 +620,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Waits for the IFrame being loaded. Once the IFrame is loaded\nthe callback is called with the provided context."
+            "body": "<p>Waits for the IFrame being loaded. Once the IFrame is loaded\n the callback is called with the provided context.</p>"
           }
         ],
         "@param": [
@@ -898,13 +899,14 @@
     "location": {
       "start": {
         "line": 317,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 325,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Creates a drawer widget inside the given parent widget. The parent widget can\nbe assigned as a constructor argument. If no parent is set, the application's\nroot will be assumed as parent. A drawer widget can be assigned to left, right,\ntop or bottom edge of its parent by property <code>orientation</code>. The drawer floats\nin on <code>show()</code> and floats out on <code>hide()</code>. Additionally the drawer is shown by\nswiping in reverse direction on the parent edge to where the drawer is placed\nto: Orientation: <code>left</code>, Swipe: <code>right</code> on parents edge: Drawer is shown etc.\nThe drawer is hidden when user taps the parent area outside of the drawer.\nThis behaviour can be deactivated by the property <code>hideOnParentTap</code>.\n\n<pre class='javascript'>\n\nvar drawer = new qx.ui.mobile.container.Drawer();\ndrawer.setOrientation(\"right\");\ndrawer.setTapOffset(100);\n\nvar button = new qx.ui.mobile.form.Button(\"A Button\");\ndrawer.add(button);\n</pre>"
+          "body": "<p>Creates a drawer widget inside the given parent widget. The parent widget can\n be assigned as a constructor argument. If no parent is set, the application's\n root will be assumed as parent. A drawer widget can be assigned to left, right,\n top or bottom edge of its parent by property <code>orientation</code>. The drawer floats\n in on <code>show()</code> and floats out on <code>hide()</code>. Additionally the drawer is shown by\n swiping in reverse direction on the parent edge to where the drawer is placed\n to: Orientation: <code>left</code>, Swipe: <code>right</code> on parents edge: Drawer is shown etc.\n The drawer is hidden when user taps the parent area outside of the drawer.\n This behaviour can be deactivated by the property <code>hideOnParentTap</code>.\n </p>\n<pre class='javascript'>\n  var drawer = new qx.ui.mobile.container.Drawer();\n  drawer.setOrientation(\"right\");\n  drawer.setTapOffset(100);\n  var button = new qx.ui.mobile.form.Button(\"A Button\");\n  drawer.add(button);\n </pre>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 59,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 91,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,18 +56,18 @@
       "@param": [
         {
           "name": "@param",
-          "body": "parent {qx.ui.mobile.container.Composite?null} The widget to which\nthe drawer should be added, if null it is added to app root.",
+          "body": "parent {qx.ui.mobile.container.Composite?null} The widget to which\n the drawer should be added, if null it is added to app root.",
           "paramName": "parent",
-          "description": " The widget to which\nthe drawer should be added, if null it is added to app root.",
+          "description": " The widget to which\n the drawer should be added, if null it is added to app root.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.mobile.container.Composite"
         },
         {
           "name": "@param",
-          "body": "layout {qx.ui.mobile.layout.Abstract?null} The layout that should be\nused for this container.",
+          "body": "layout {qx.ui.mobile.layout.Abstract?null} The layout that should be\n used for this container.",
           "paramName": "layout",
-          "description": " The layout that should be\nused for this container.",
+          "description": " The layout that should be\n used for this container.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.mobile.layout.Abstract"
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the drawer changes its size."
+            "body": "<p>Fired when the drawer changes its size.</p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Property for setting the orientation of the drawer.\nAllowed values are: <code>left</code>,<code>right</code>,<code>top</code>,<code>bottom</code>"
+            "body": "<p>Property for setting the orientation of the drawer.\n Allowed values are: <code>left</code>,<code>right</code>,<code>top</code>,<code>bottom</code></p>"
           }
         ]
       },
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The size of the drawer in <code>px</code>. This value is interpreted as width if\norientation is <code>left | right</code>, as height if orientation is\n<code>top | bottom</code>."
+            "body": "<p>The size of the drawer in <code>px</code>. This value is interpreted as width if\n orientation is <code>left | right</code>, as height if orientation is\n <code>top | bottom</code>.</p>"
           }
         ]
       },
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether the drawer should hide when the parent area of it is tapped."
+            "body": "<p>Indicates whether the drawer should hide when the parent area of it is tapped.</p>"
           }
         ]
       },
@@ -222,7 +222,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether the drawer should hide when a back action appear form a key event."
+            "body": "<p>Indicates whether the drawer should hide when a back action appear form a key event.</p>"
           }
         ]
       },
@@ -247,7 +247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the size of the tapping area, where the drawer reacts on swipes for opening itself."
+            "body": "<p>Sets the size of the tapping area, where the drawer reacts on swipes for opening itself.</p>"
           }
         ]
       },
@@ -272,7 +272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The duration time of the transition between shown/hidden state in ms."
+            "body": "<p>The duration time of the transition between shown/hidden state in ms.</p>"
           }
         ]
       },
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the drawer zIndex position relative to its parent."
+            "body": "<p>Sets the drawer zIndex position relative to its parent.</p>"
           }
         ]
       },
@@ -401,7 +401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -426,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -476,7 +476,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -501,7 +501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the drawer."
+            "body": "<p>Shows the drawer.</p>"
           }
         ],
         "@param": [
@@ -536,7 +536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the drawer."
+            "body": "<p>Hides the drawer.</p>"
           }
         ],
         "@param": [
@@ -571,7 +571,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Strict way to hide this drawer. Removes the blocker from the parent,\nand hides the drawer without any animation. Should be called when drawer's\nparent is animated and drawer should hide immediately."
+            "body": "<p>Strict way to hide this drawer. Removes the blocker from the parent,\n and hides the drawer without any animation. Should be called when drawer's\n parent is animated and drawer should hide immediately.</p>"
           }
         ]
       },
@@ -593,7 +593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -627,7 +627,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enables the transition on this drawer."
+            "body": "<p>Enables the transition on this drawer.</p>"
           }
         ]
       },
@@ -649,7 +649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disables the transition on this drawer."
+            "body": "<p>Disables the transition on this drawer.</p>"
           }
         ]
       },
@@ -671,7 +671,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the target widget which is responsible for the transition handling."
+            "body": "<p>Returns the target widget which is responsible for the transition handling.</p>"
           }
         ],
         "@return": [
@@ -701,7 +701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggle the visibility of the drawer."
+            "body": "<p>Toggle the visibility of the drawer.</p>"
           }
         ],
         "@return": [
@@ -731,7 +731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles a back event which appears on the application."
+            "body": "<p>Handles a back event which appears on the application.</p>"
           }
         ],
         "@param": [
@@ -762,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles a tap on drawers' root."
+            "body": "<p>Handles a tap on drawers' root.</p>"
           }
         ],
         "@param": [
@@ -793,7 +793,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles a swipe on layout parent."
+            "body": "<p>Handles a swipe on layout parent.</p>"
           }
         ],
         "@param": [
@@ -2373,13 +2373,14 @@
     "location": {
       "start": {
         "line": 482,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 492,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

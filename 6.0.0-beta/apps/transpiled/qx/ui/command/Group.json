@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nAuthors:\nMustafa Sak (msak)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   Authors:\n Mustafa Sak (msak)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Registrar for commands to be able to group them."
+          "body": "<p>Registrar for commands to be able to group them.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 19,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 23,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "active": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates or deactivates all commands in group."
+            "body": "<p>Activates or deactivates all commands in group.</p>"
           }
         ]
       },
@@ -117,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -142,11 +143,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a command with a key to the group."
+            "body": "<p>Adds a command with a key to the group.</p>"
           }
         ],
         "@param": [
@@ -192,7 +193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a command by key."
+            "body": "<p>Returns a command by key.</p>"
           }
         ],
         "@param": [
@@ -236,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns true if a command is registered by key."
+            "body": "<p>Returns true if a command is registered by key.</p>"
           }
         ],
         "@param": [
@@ -275,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a command by key from group. Returns the command."
+            "body": "<p>Removes a command by key from group. Returns the command.</p>"
           }
         ],
         "@param": [
@@ -514,13 +515,14 @@
     "location": {
       "start": {
         "line": 169,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 172,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

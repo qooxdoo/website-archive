@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Send HTTP requests and handle responses using the HTTP client API.\n\nConfiguration of the request is done with properties. Events are fired for\nvarious states in the life cycle of a request, such as \"success\". Request\ndata is transparently processed.\n\nHere is how to request a JSON file and listen to the \"success\" event:\n\n<pre class=\"javascript\">\nvar req = new qx.io.request.Xhr(\"/some/path/file.json\");\n\nreq.addListener(\"success\", function(e) {\nvar req = e.getTarget();\n\n// Response parsed according to the server's\n// response content type, e.g. JSON\nreq.getResponse();\n}, this);\n\n// Send request\nreq.send();\n</pre>\n\nSome noteable features:\n\n* Abstraction of low-level request\n* Convenient setup using properties\n* Fine-grained events\n* Symbolic phases\n* Transparent processing of request data\n* Stream-lined authentication\n* Automagic parsing of response based on content type\n\nCross-origin requests are supported, but require browser support\n(see <a href=\"http://caniuse.com/#search=CORS\">caniuse.com</a>) and backend configuration\n(see <a href=\"https://developer.mozilla.org/en-US/docs/docs/HTTP/Access_control_CORS>MDN</a>).\nNote that IE's <code>XDomainRequest</code> is not currently supported.\nFor a cross-browser alternative, consider {@link qx.io.request.Jsonp}.\n\nIn order to debug requests, set the environment flag\n<code>qx.debug.io</code>.\n\nInternally uses {@link qx.bom.request.Xhr}."
+          "body": "<p>Send HTTP requests and handle responses using the HTTP client API.\n Configuration of the request is done with properties. Events are fired for\n various states in the life cycle of a request, such as \"success\". Request\n data is transparently processed.\n Here is how to request a JSON file and listen to the \"success\" event:\n </p>\n<pre class=\"javascript\">\n var req = new qx.io.request.Xhr(\"/some/path/file.json\");\n req.addListener(\"success\", function(e) {\n   var req = e.getTarget();\n\n\n   req.getResponse();\n }, this);\n\n req.send();\n </pre>\n<p>Some noteable features:</p>\n<ul>\n<li>Abstraction of low-level request</li>\n<li>Convenient setup using properties</li>\n<li>Fine-grained events</li>\n<li>Symbolic phases</li>\n<li>Transparent processing of request data</li>\n<li>Stream-lined authentication</li>\n<li>Automagic parsing of response based on content type\nCross-origin requests are supported, but require browser support\n(see <a href=\"http://caniuse.com/#search=CORS\">caniuse.com</a>) and backend configuration\n(see <a href=\"https://developer.mozilla.org/en-US/docs/docs/HTTP/Access_control_CORS>MDN</a>).\nNote that IE's <code>XDomainRequest</code> is not currently supported.\nFor a cross-browser alternative, consider {@link qx.io.request.Jsonp}.\nIn order to debug requests, set the environment flag\n<code>qx.debug.io</code>.\nInternally uses {@link qx.bom.request.Xhr}.</li>\n</ul>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 72,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 79,
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on every change of the transport’s readyState.\n\nSee {@link qx.bom.request.Xhr} for available readyStates."
+            "body": "<p>Fired on every change of the transport’s readyState.\n See {@link qx.bom.request.Xhr} for available readyStates.</p>"
           }
         ]
       },
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error and transport status\nindicates success.\n\nRefer to {@link qx.util.Request#isSuccessful} for a list of HTTP\nstatus considered successful."
+            "body": "<p>Fired when request completes without error and transport status\n indicates success.\n Refer to {@link qx.util.Request#isSuccessful} for a list of HTTP\n status considered successful.</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error.\n\nEvery request not canceled or aborted completes. This means that\neven requests receiving a response with erroneous HTTP status\nfire a \"load\" event. If you are only interested in successful\nresponses, listen to the {@link #success} event instead."
+            "body": "<p>Fired when request completes without error.\n Every request not canceled or aborted completes. This means that\n even requests receiving a response with erroneous HTTP status\n fire a \"load\" event. If you are only interested in successful\n responses, listen to the {@link #success} event instead.</p>"
           }
         ]
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error but erroneous HTTP status.\n\nRefer to {@link qx.util.Request#isSuccessful} for a list of HTTP\nstatus considered successful."
+            "body": "<p>Fired when request completes without error but erroneous HTTP status.\n Refer to {@link qx.util.Request#isSuccessful} for a list of HTTP\n status considered successful.</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The HTTP method."
+            "body": "<p>The HTTP method.</p>"
           }
         ]
       },
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the request should be executed asynchronously."
+            "body": "<p>Whether the request should be executed asynchronously.</p>"
           }
         ]
       },
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The content type to accept. By default, every content type\nis accepted.\n\nNote: Some backends send distinct representations of the same\nresource depending on the content type accepted. For instance,\na backend may respond with either a JSON (the accept header\nindicates so) or a HTML representation (the default, no accept\nheader given)."
+            "body": "<p>The content type to accept. By default, every content type\n is accepted.\n Note: Some backends send distinct representations of the same\n resource depending on the content type accepted. For instance,\n a backend may respond with either a JSON (the accept header\n indicates so) or a HTML representation (the default, no accept\n header given).</p>"
           }
         ]
       },
@@ -249,7 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to allow request to be answered from cache.\n\nAllowed values:\n\n* <code>true</code>: Allow caching (Default)\n* <code>false</code>: Prohibit caching. Appends nocache parameter to URL.\n* <code>String</code>: Any Cache-Control request directive\n\nIf a string is given, it is inserted in the request's Cache-Control\nheader. A request’s Cache-Control header may contain a number of directives\ncontrolling the behavior of any caches in between client and origin\nserver.\n\n* <code>\"no-cache\"</code>: Force caches to submit request in order to\nvalidate the freshness of the representation. Note that the requested\nresource may still be served from cache if the representation is\nconsidered fresh. Use this directive to ensure freshness but save\nbandwidth when possible.\n* <code>\"no-store\"</code>: Do not keep a copy of the representation under\nany conditions.\n\nSee <a href=\"http://www.mnot.net/cache_docs/#CACHE-CONTROL\">\nCaching tutorial</a> for an excellent introduction to Caching in general.\nRefer to the corresponding section in the\n<a href=\"http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9\">\nHTTP 1.1 specification</a> for more details and advanced directives.\n\nIt is recommended to choose an appropriate Cache-Control directive rather\nthan prohibit caching using the nocache parameter."
+            "body": "<p>Whether to allow request to be answered from cache.\n Allowed values:</p>\n<ul>\n<li><code>true</code>: Allow caching (Default)</li>\n<li><code>false</code>: Prohibit caching. Appends nocache parameter to URL.</li>\n<li><code>String</code>: Any Cache-Control request directive\nIf a string is given, it is inserted in the request's Cache-Control\nheader. A request’s Cache-Control header may contain a number of directives\ncontrolling the behavior of any caches in between client and origin\nserver.</li>\n<li><code>\"no-cache\"</code>: Force caches to submit request in order to\nvalidate the freshness of the representation. Note that the requested\nresource may still be served from cache if the representation is\nconsidered fresh. Use this directive to ensure freshness but save\nbandwidth when possible.</li>\n<li><code>\"no-store\"</code>: Do not keep a copy of the representation under\nany conditions.\nSee <a href=\"http://www.mnot.net/cache_docs/#CACHE-CONTROL\">\nCaching tutorial</a> for an excellent introduction to Caching in general.\nRefer to the corresponding section in the\n<a href=\"http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9\">\nHTTP 1.1 specification</a> for more details and advanced directives.\nIt is recommended to choose an appropriate Cache-Control directive rather\nthan prohibit caching using the nocache parameter.</li>\n</ul>"
           }
         ]
       },
@@ -303,11 +303,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONFIGURE TRANSPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONFIGURE TRANSPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Create XHR transport."
+            "body": "<p>Create XHR transport.</p>"
           }
         ],
         "@return": [
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get configured URL.\n\nAppend request data to URL if HTTP method is GET. Append random\nstring to URL if required by value of {@link #cache}."
+            "body": "<p>Get configured URL.\n Append request data to URL if HTTP method is GET. Append random\n string to URL if required by value of {@link #cache}.</p>"
           }
         ],
         "@return": [
@@ -375,7 +375,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -409,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -477,11 +477,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPARSING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PARSING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Create response parser."
+            "body": "<p>Create response parser.</p>"
           }
         ],
         "@return": [
@@ -511,7 +511,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns response parsed with parser determined by content type."
+            "body": "<p>Returns response parsed with parser determined by content type.</p>"
           }
         ],
         "@return": [
@@ -545,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set parser used to parse response once request has\ncompleted successfully."
+            "body": "<p>Set parser used to parse response once request has\n completed successfully.</p>"
           }
         ],
         "@see": [

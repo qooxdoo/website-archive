@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A special script loader handling JSONP responses. Automatically\nprovides callbacks and populates responseJson property.\n\nExample:\n\n<pre class=\"javascript\">\nvar req = new qx.bom.request.Jsonp();\n\n// Some services have a fixed callback name\n// req.setCallbackName(\"callback\");\n\nreq.onload = function() {\n// Handle data received\nreq.responseJson;\n}\n\nreq.open(\"GET\", url);\nreq.send();\n</pre>"
+          "body": "<p>A special script loader handling JSONP responses. Automatically\n provides callbacks and populates responseJson property.\n Example:\n </p>\n<pre class=\"javascript\">\n  var req = new qx.bom.request.Jsonp();\n\n\n  req.onload = function() {\n\n    req.responseJson;\n  }\n  req.open(\"GET\", url);\n  req.send();\n </pre>"
         }
       ],
       "@require": [
@@ -79,13 +79,14 @@
     "location": {
       "start": {
         "line": 56,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 62,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "responseJson": {
@@ -327,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prefix used for the internal callback name."
+            "body": "<p>Prefix used for the internal callback name.</p>"
           }
         ]
       },
@@ -349,22 +350,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes (prepares) request."
+            "body": "<p>Initializes (prepares) request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "method {String}\nThe HTTP method to use.\nThis parameter exists for compatibility reasons. The script transport\ndoes not support methods other than GET.",
+            "body": "method {String}\n   The HTTP method to use.\n   This parameter exists for compatibility reasons. The script transport\n   does not support methods other than GET.",
             "paramName": "method",
-            "description": "\nThe HTTP method to use.\nThis parameter exists for compatibility reasons. The script transport\ndoes not support methods other than GET.",
+            "description": "\n   The HTTP method to use.\n   This parameter exists for compatibility reasons. The script transport\n   does not support methods other than GET.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "url {String}\nThe URL to which to send the request.",
+            "body": "url {String}\n   The URL to which to send the request.",
             "paramName": "url",
-            "description": "\nThe URL to which to send the request.",
+            "description": "\n   The URL to which to send the request.",
             "type": "String"
           }
         ]
@@ -391,7 +392,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback provided for JSONP response to pass data.\n\nCalled internally to populate responseJson property\nand indicate successful status.\n\nNote: If you write a custom callback you’ll need to call\nthis method in order to notify the request about the data\nloaded. Writing a custom callback should not be necessary\nin most cases."
+            "body": "<p>Callback provided for JSONP response to pass data.\n Called internally to populate responseJson property\n and indicate successful status.\n Note: If you write a custom callback you’ll need to call\n this method in order to notify the request about the data\n loaded. Writing a custom callback should not be necessary\n in most cases.</p>"
           }
         ],
         "@param": [
@@ -422,7 +423,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set callback parameter.\n\nSome JSONP services expect the callback name to be passed labeled with a\nspecial URL parameter key, e.g. \"jsonp\" in \"?jsonp=myCallback\". The\ndefault is \"callback\"."
+            "body": "<p>Set callback parameter.\n Some JSONP services expect the callback name to be passed labeled with a\n special URL parameter key, e.g. \"jsonp\" in \"?jsonp=myCallback\". The\n default is \"callback\".</p>"
           }
         ],
         "@param": [
@@ -461,7 +462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set callback name.\n\nMust be set to the name of the callback function that is called by the\nscript returned from the JSONP service. By default, the callback name\nreferences this instance’s {@link #callback} method, allowing to connect\nmultiple JSONP responses to different requests.\n\nIf the JSONP service allows to set custom callback names, it should not\nbe necessary to change the default. However, some services use a fixed\ncallback name. This is when setting the callbackName is useful. A\nfunction is created and made available globally under the given name.\nThe function receives the JSON data and dispatches it to this instance’s\n{@link #callback} method. Please note that this function is only created\nif it does not exist before."
+            "body": "<p>Set callback name.\n Must be set to the name of the callback function that is called by the\n script returned from the JSONP service. By default, the callback name\n references this instance’s {@link #callback} method, allowing to connect\n multiple JSONP responses to different requests.\n If the JSONP service allows to set custom callback names, it should not\n be necessary to change the default. However, some services use a fixed\n callback name. This is when setting the callbackName is useful. A\n function is created and made available globally under the given name.\n The function receives the JSON data and dispatches it to this instance’s\n {@link #callback} method. Please note that this function is only created\n if it does not exist before.</p>"
           }
         ],
         "@param": [
@@ -500,7 +501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the prefix used in front of 'qx.' in case 'qx' is not available\n(for qx.Website e.g.)"
+            "body": "<p>Set the prefix used in front of 'qx.' in case 'qx' is not available\n (for qx.Website e.g.)</p>"
           }
         ],
         "@internal": [
@@ -537,7 +538,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the generated URL for the current / last request"
+            "body": "<p>Returns the generated URL for the current / last request</p>"
           }
         ],
         "@internal": [
@@ -592,7 +593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle native load."
+            "body": "<p>Handle native load.</p>"
           }
         ]
       },
@@ -618,7 +619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delete custom callback if dynamically created before."
+            "body": "<p>Delete custom callback if dynamically created before.</p>"
           }
         ]
       },
@@ -640,7 +641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Call overridden method."
+            "body": "<p>Call overridden method.</p>"
           }
         ],
         "@param": [
@@ -678,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generate ID."
+            "body": "<p>Generate ID.</p>"
           }
         ]
       },

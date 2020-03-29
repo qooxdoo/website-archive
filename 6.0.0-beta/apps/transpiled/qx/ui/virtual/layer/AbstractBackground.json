@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 211,
+        "line": 209,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nAbstract base class for the {@link Row} and {@link Column} layers."
+          "body": "<p>Abstract base class for the {@link Row} and {@link Column} layers.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 40,
-        "column": 3
+        "line": 38,
+        "column": 15
       },
       "end": {
-        "line": 54,
+        "line": 52,
         "column": 4
       }
     },
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -79,11 +79,11 @@
     "colorEven": {
       "location": {
         "start": {
-          "line": 66,
+          "line": 64,
           "column": 4
         },
         "end": {
-          "line": 72,
+          "line": 70,
           "column": 5
         }
       },
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "color for event indexes"
+            "body": "<p>color for event indexes</p>"
           }
         ]
       },
@@ -106,11 +106,11 @@
     "colorOdd": {
       "location": {
         "start": {
-          "line": 75,
+          "line": 73,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -118,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "color for odd indexes"
+            "body": "<p>color for odd indexes</p>"
           }
         ]
       },
@@ -135,11 +135,11 @@
     "__colorEven": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 91,
           "column": 22
         }
       },
@@ -149,11 +149,11 @@
     "__colorOdd": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 92,
           "column": 21
         }
       },
@@ -163,11 +163,11 @@
     "__customColors": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 93,
           "column": 25
         }
       },
@@ -177,11 +177,11 @@
     "__decorators": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 94,
           "column": 23
         }
       },
@@ -191,11 +191,11 @@
     "setColor": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 117,
           "column": 5
         }
       },
@@ -203,11 +203,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOLOR HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COLOR HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the color for the given index"
+            "body": "<p>Sets the color for the given index</p>"
           }
         ],
         "@param": [
@@ -220,9 +220,9 @@
           },
           {
             "name": "@param",
-            "body": "color {Color|null} the color to set. A value of <code>null</code>\nwill reset the color.",
+            "body": "color {Color|null} the color to set. A value of <code>null</code>\n    will reset the color.",
             "paramName": "color",
-            "description": " the color to set. A value of <code>null</code>\nwill reset the color.",
+            "description": " the color to set. A value of <code>null</code>\n    will reset the color.",
             "type": [
               "Color",
               "null"
@@ -236,11 +236,11 @@
     "clearCustomColors": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 127,
           "column": 5
         }
       },
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear all colors set using {@link #setColor}."
+            "body": "<p>Clear all colors set using {@link #setColor}.</p>"
           }
         ]
       },
@@ -258,11 +258,11 @@
     "getColor": {
       "location": {
         "start": {
-          "line": 138,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 144,
           "column": 5
         }
       },
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the color at the given index"
+            "body": "<p>Get the color at the given index</p>"
           }
         ],
         "@param": [
@@ -297,11 +297,11 @@
     "_applyColorEven": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 156,
           "column": 5
         }
       },
@@ -309,7 +309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -322,11 +322,11 @@
     "_applyColorOdd": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 160,
           "column": 4
         },
         "end": {
-          "line": 170,
+          "line": 168,
           "column": 5
         }
       },
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -347,11 +347,11 @@
     "setBackground": {
       "location": {
         "start": {
-          "line": 180,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 188,
+          "line": 186,
           "column": 5
         }
       },
@@ -359,7 +359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the decorator for the given index"
+            "body": "<p>Sets the decorator for the given index</p>"
           }
         ],
         "@param": [
@@ -372,9 +372,9 @@
           },
           {
             "name": "@param",
-            "body": "decorator {qx.ui.decoration.IDecorator|null} the decorator to set. A value of\n<code>null</code> will reset the decorator.",
+            "body": "decorator {qx.ui.decoration.IDecorator|null} the decorator to set. A value of\n    <code>null</code> will reset the decorator.",
             "paramName": "decorator",
-            "description": " the decorator to set. A value of\n<code>null</code> will reset the decorator.",
+            "description": " the decorator to set. A value of\n    <code>null</code> will reset the decorator.",
             "type": [
               "qx.ui.decoration.IDecorator",
               "null"
@@ -388,11 +388,11 @@
     "getBackground": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 199,
+          "line": 197,
           "column": 5
         }
       },
@@ -400,7 +400,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the decorator at the given index"
+            "body": "<p>Get the decorator at the given index</p>"
           }
         ],
         "@param": [
@@ -4044,11 +4044,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 208,
-        "column": 2
+        "line": 206,
+        "column": 13
       },
       "end": {
-        "line": 210,
+        "line": 208,
         "column": 3
       }
     },
@@ -4056,7 +4056,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

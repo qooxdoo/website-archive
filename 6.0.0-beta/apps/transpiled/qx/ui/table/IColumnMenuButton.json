@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2009 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2009 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Interface for creating the column visibility menu"
+          "body": "<p>Interface for creating the column visibility menu</p>"
         }
       ]
     }
@@ -56,31 +56,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Instantiate a sub-widget."
+            "body": "<p>Instantiate a sub-widget.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {String}\nOne of the following strings, indicating what type of\ncolumn-menu-specific object to instantiate:\n<dl>\n<dt>menu</dt>\n<dd>\nInstantiate a menu which will appear when the column visibility\nbutton is pressed. No options are provided in this case.\n</dd>\n<dt>menu-button</dt>\n<dd>\nInstantiate a button to correspond to a column within the\ntable. The options are a map containing <i>text</i>, the name of\nthe column; <i>column</i>, the column number; and\n<i>bVisible</i>, a boolean indicating whether this column is\ncurrently visible. The instantiated return object must implement\ninterface {@link qx.ui.table.IColumnMenuItem}\n</dd>\n<dt>user-button</dt>\n<dd>\nInstantiate a button for other than a column name. This is used,\nfor example, to add the \"Reset column widths\" button when the\nResize column model is requested. The options is a map containing\n<i>text</i>, the text to present in the button.\n</dd>\n<dt>separator</dt>\n<dd>\nInstantiate a separator object to added to the menu. This is\nused, for example, to separate the table column name list from\nthe \"Reset column widths\" button when the Resize column model is\nrequested. No options are provided in this case.\n</dd>\n</dl>",
+            "body": "item {String}\n   One of the following strings, indicating what type of\n   column-menu-specific object to instantiate:\n   <dl>\n     <dt>menu</dt>\n     <dd>\n       Instantiate a menu which will appear when the column visibility\n       button is pressed. No options are provided in this case.\n     </dd>\n     <dt>menu-button</dt>\n     <dd>\n       Instantiate a button to correspond to a column within the\n       table. The options are a map containing <i>text</i>, the name of\n       the column; <i>column</i>, the column number; and\n       <i>bVisible</i>, a boolean indicating whether this column is\n       currently visible. The instantiated return object must implement\n       interface {@link qx.ui.table.IColumnMenuItem}\n     </dd>\n     <dt>user-button</dt>\n     <dd>\n       Instantiate a button for other than a column name. This is used,\n       for example, to add the \"Reset column widths\" button when the\n       Resize column model is requested. The options is a map containing\n       <i>text</i>, the text to present in the button.\n     </dd>\n     <dt>separator</dt>\n     <dd>\n       Instantiate a separator object to added to the menu. This is\n       used, for example, to separate the table column name list from\n       the \"Reset column widths\" button when the Resize column model is\n       requested. No options are provided in this case.\n     </dd>\n   </dl>",
             "paramName": "item",
-            "description": "\nOne of the following strings, indicating what type of\ncolumn-menu-specific object to instantiate:\n<dl>\n<dt>menu</dt>\n<dd>\nInstantiate a menu which will appear when the column visibility\nbutton is pressed. No options are provided in this case.\n</dd>\n<dt>menu-button</dt>\n<dd>\nInstantiate a button to correspond to a column within the\ntable. The options are a map containing <i>text</i>, the name of\nthe column; <i>column</i>, the column number; and\n<i>bVisible</i>, a boolean indicating whether this column is\ncurrently visible. The instantiated return object must implement\ninterface {@link qx.ui.table.IColumnMenuItem}\n</dd>\n<dt>user-button</dt>\n<dd>\nInstantiate a button for other than a column name. This is used,\nfor example, to add the \"Reset column widths\" button when the\nResize column model is requested. The options is a map containing\n<i>text</i>, the text to present in the button.\n</dd>\n<dt>separator</dt>\n<dd>\nInstantiate a separator object to added to the menu. This is\nused, for example, to separate the table column name list from\nthe \"Reset column widths\" button when the Resize column model is\nrequested. No options are provided in this case.\n</dd>\n</dl>",
+            "description": "\n   One of the following strings, indicating what type of\n   column-menu-specific object to instantiate:\n   <dl>\n     <dt>menu</dt>\n     <dd>\n       Instantiate a menu which will appear when the column visibility\n       button is pressed. No options are provided in this case.\n     </dd>\n     <dt>menu-button</dt>\n     <dd>\n       Instantiate a button to correspond to a column within the\n       table. The options are a map containing <i>text</i>, the name of\n       the column; <i>column</i>, the column number; and\n       <i>bVisible</i>, a boolean indicating whether this column is\n       currently visible. The instantiated return object must implement\n       interface {@link qx.ui.table.IColumnMenuItem}\n     </dd>\n     <dt>user-button</dt>\n     <dd>\n       Instantiate a button for other than a column name. This is used,\n       for example, to add the \"Reset column widths\" button when the\n       Resize column model is requested. The options is a map containing\n       <i>text</i>, the text to present in the button.\n     </dd>\n     <dt>separator</dt>\n     <dd>\n       Instantiate a separator object to added to the menu. This is\n       used, for example, to separate the table column name list from\n       the \"Reset column widths\" button when the Resize column model is\n       requested. No options are provided in this case.\n     </dd>\n   </dl>",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "options {Map}\nOptions specific to the <i>item</i> being requested.",
+            "body": "options {Map}\n   Options specific to the <i>item</i> being requested.",
             "paramName": "options",
-            "description": "\nOptions specific to the <i>item</i> being requested.",
+            "description": "\n   Options specific to the <i>item</i> being requested.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget}\nThe instantiated object as specified by <i>item</i>.",
+            "body": "{qx.ui.core.Widget}\n   The instantiated object as specified by <i>item</i>.",
             "type": "qx.ui.core.Widget",
-            "description": "\nThe instantiated object as specified by <i>item</i>."
+            "description": "\n   The instantiated object as specified by <i>item</i>."
           }
         ]
       },
@@ -102,7 +102,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Empty the menu of all items, in preparation for building a new column\nvisibility menu."
+            "body": "<p>Empty the menu of all items, in preparation for building a new column\n visibility menu.</p>"
           }
         ]
       },

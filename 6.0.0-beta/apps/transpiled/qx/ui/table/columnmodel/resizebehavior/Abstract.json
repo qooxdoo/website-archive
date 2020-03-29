@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "An abstract resize behavior.  All resize behaviors should extend this\nclass."
+          "body": "<p>An abstract resize behavior.  All resize behaviors should extend this\n class.</p>"
         }
       ]
     }
@@ -50,7 +50,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when the ResizeTableColumnModel is initialized, and upon loading of\na new TableModel, to allow the Resize Behaviors to know how many columns\nare in use."
+            "body": "<p>Called when the ResizeTableColumnModel is initialized, and upon loading of\n a new TableModel, to allow the Resize Behaviors to know how many columns\n are in use.</p>"
           }
         ],
         "@abstract": [
@@ -95,7 +95,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when the table has first been rendered."
+            "body": "<p>Called when the table has first been rendered.</p>"
           }
         ],
         "@abstract": [
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when the table width changes due to either a window size change\nor a parent object changing size causing the table to change size."
+            "body": "<p>Called when the table width changes due to either a window size change\n or a parent object changing size causing the table to change size.</p>"
           }
         ],
         "@abstract": [
@@ -194,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when the use of vertical scroll bar in the table changes, either\nfrom present to not present, or vice versa."
+            "body": "<p>Called when the use of vertical scroll bar in the table changes, either\n from present to not present, or vice versa.</p>"
           }
         ],
         "@abstract": [
@@ -206,9 +206,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>verticalScrollBarChanged</i> event object.  This event has data,\nobtained via event.getValue(), which is a boolean indicating whether a\nvertical scroll bar is now present.",
+            "body": "event {var} The <i>verticalScrollBarChanged</i> event object.  This event has data,\n     obtained via event.getValue(), which is a boolean indicating whether a\n     vertical scroll bar is now present.",
             "paramName": "event",
-            "description": " The <i>verticalScrollBarChanged</i> event object.  This event has data,\nobtained via event.getValue(), which is a boolean indicating whether a\nvertical scroll bar is now present.",
+            "description": " The <i>verticalScrollBarChanged</i> event object.  This event has data,\n     obtained via event.getValue(), which is a boolean indicating whether a\n     vertical scroll bar is now present.",
             "type": "var"
           }
         ],
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when a column width is changed."
+            "body": "<p>Called when a column width is changed.</p>"
           }
         ],
         "@abstract": [
@@ -251,9 +251,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>widthChanged</i> event object.  This event has data, obtained via\nevent.getValue(), which is an object with three properties: the column\nwhich changed width (data.col), the old width (data.oldWidth) and the new\nwidth (data.newWidth).",
+            "body": "event {var} The <i>widthChanged</i> event object.  This event has data, obtained via\n     event.getValue(), which is an object with three properties: the column\n     which changed width (data.col), the old width (data.oldWidth) and the new\n     width (data.newWidth).",
             "paramName": "event",
-            "description": " The <i>widthChanged</i> event object.  This event has data, obtained via\nevent.getValue(), which is an object with three properties: the column\nwhich changed width (data.col), the old width (data.oldWidth) and the new\nwidth (data.newWidth).",
+            "description": " The <i>widthChanged</i> event object.  This event has data, obtained via\n     event.getValue(), which is an object with three properties: the column\n     which changed width (data.col), the old width (data.oldWidth) and the new\n     width (data.newWidth).",
             "type": "var"
           }
         ],
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when a column visibility is changed."
+            "body": "<p>Called when a column visibility is changed.</p>"
           }
         ],
         "@abstract": [
@@ -296,9 +296,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>visibilityChanged</i> event object.  This event has data, obtained\nvia event.getValue(), which is an object with two properties: the column\nwhich changed width (data.col) and the new visibility of the column\n(data.visible).",
+            "body": "event {var} The <i>visibilityChanged</i> event object.  This event has data, obtained\n     via event.getValue(), which is an object with two properties: the column\n     which changed width (data.col) and the new visibility of the column\n     (data.visible).",
             "paramName": "event",
-            "description": " The <i>visibilityChanged</i> event object.  This event has data, obtained\nvia event.getValue(), which is an object with two properties: the column\nwhich changed width (data.col) and the new visibility of the column\n(data.visible).",
+            "description": " The <i>visibilityChanged</i> event object.  This event has data, obtained\n     via event.getValue(), which is an object with two properties: the column\n     which changed width (data.col) and the new visibility of the column\n     (data.visible).",
             "type": "var"
           }
         ],
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine the inner width available to columns in the table."
+            "body": "<p>Determine the inner width available to columns in the table.</p>"
           }
         ],
         "@return": [

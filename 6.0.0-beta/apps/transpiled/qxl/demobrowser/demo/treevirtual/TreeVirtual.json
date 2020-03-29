@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Test large trees.  This one adds a Spam branch with 3000 leaf nodes."
+          "body": "<p>Test large trees.  This one adds a Spam branch with 3000 leaf nodes.</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         }
       ],
       "@asset": [

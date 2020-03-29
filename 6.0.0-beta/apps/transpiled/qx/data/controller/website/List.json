@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<h2>website List Controller</h2>\n\n*General idea*\nThe list controller is responsible for synchronizing data given as model\nto a DOM element. As definition for a single item, templates are used. More\ndetails on templates can be found in {@link qx.bom.Template}.\n\n*Features*\n\n* Synchronize the model and the target\n* Filtering\n\n*Usage*\n\nAs model, {@link qx.data.Array}s and plain JavaScript Arrays work. As a\nTarget, you have to use a DOM element e.g. a plain DIV element. Make sure\nyou have the template you are referencing in the DOM."
+          "body": "<h2>website List Controller</h2>\n<p><em>General idea</em>\n The list controller is responsible for synchronizing data given as model\n to a DOM element. As definition for a single item, templates are used. More\n details on templates can be found in {@link qx.bom.Template}.\n<em>Features</em></p>\n<ul>\n<li>Synchronize the model and the target</li>\n<li>Filtering\n<em>Usage</em>\nAs model, {@link qx.data.Array}s and plain JavaScript Arrays work. As a\nTarget, you have to use a DOM element e.g. a plain DIV element. Make sure\nyou have the template you are referencing in the DOM.</li>\n</ul>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 48,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 61,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "model {qx.data.IListData|Array?} The mode which can either be a\nnative array or a qooxdoo data list. Maps to the model property.",
+          "body": "model {qx.data.IListData|Array?} The mode which can either be a\n   native array or a qooxdoo data list. Maps to the model property.",
           "paramName": "model",
-          "description": " The mode which can either be a\nnative array or a qooxdoo data list. Maps to the model property.",
+          "description": " The mode which can either be a\n   native array or a qooxdoo data list. Maps to the model property.",
           "optional": true,
           "type": [
             "qx.data.IListData",
@@ -63,9 +63,9 @@
         },
         {
           "name": "@param",
-          "body": "target {Element?} A DOM element which should is the target for\nthe generation.",
+          "body": "target {Element?} A DOM element which should is the target for\n   the generation.",
           "paramName": "target",
-          "description": " A DOM element which should is the target for\nthe generation.",
+          "description": " A DOM element which should is the target for\n   the generation.",
           "optional": true,
           "type": "Element"
         },
@@ -96,7 +96,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Array containing the data which should be shown in the list."
+            "body": "<p>Array containing the data which should be shown in the list.</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The target DOM node which should show the data."
+            "body": "<p>The target DOM node which should show the data.</p>"
           }
         ]
       },
@@ -150,7 +150,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The id of the template which should be use. Check out\n{@link qx.bom.Template} for details on templating."
+            "body": "<p>The id of the template which should be use. Check out\n {@link qx.bom.Template} for details on templating.</p>"
           }
         ]
       },
@@ -176,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The delegate for the list controller which supports almost all methods\ndocumented in {@link qx.data.controller.IControllerDelegate} except\n<code>bindItem</code>."
+            "body": "<p>The delegate for the list controller which supports almost all methods\n documented in {@link qx.data.controller.IControllerDelegate} except\n <code>bindItem</code>.</p>"
           }
         ]
       },
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -273,7 +273,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -348,7 +348,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for removing all items from the target element."
+            "body": "<p>Responsible for removing all items from the target element.</p>"
           }
         ]
       },
@@ -370,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is the main method which will take the data from the model and\npush it to the target view. If you are using a plain Array as model,\nyou need to call that method every time you want to see the changed model\nin the view while using {@link qx.data.Array}s will do that\nautomatically for you.\nThis method also attaches to every created DOM element the model object\nwhich was used to create it at <code>.$$model</code>."
+            "body": "<p>This is the main method which will take the data from the model and\n push it to the target view. If you are using a plain Array as model,\n you need to call that method every time you want to see the changed model\n in the view while using {@link qx.data.Array}s will do that\n automatically for you.\n This method also attaches to every created DOM element the model object\n which was used to create it at <code>.$$model</code>.</p>"
           }
         ]
       },

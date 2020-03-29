@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Cross browser animation layer. It uses feature detection to check if CSS\nanimations are available and ready to use. If not, a JavaScript-based\nfallback will be used."
+          "body": "<p>Cross browser animation layer. It uses feature detection to check if CSS\n animations are available and ready to use. If not, a JavaScript-based\n fallback will be used.</p>"
         }
       ],
       "@require": [
@@ -61,7 +61,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an animation starts."
+            "body": "<p>Fired when an animation starts.</p>"
           }
         ]
       },
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an animation has ended one iteration."
+            "body": "<p>Fired when an animation has ended one iteration.</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an animation has ended."
+            "body": "<p>Fired when an animation has ended.</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Animation description used in {@link #fadeOut}."
+            "body": "<p>Animation description used in {@link #fadeOut}.</p>"
           }
         ]
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Animation description used in {@link #fadeIn}."
+            "body": "<p>Animation description used in {@link #fadeIn}.</p>"
           }
         ]
       },
@@ -173,7 +173,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Animation execute either regular or reversed direction."
+            "body": "<p>Animation execute either regular or reversed direction.</p>"
           }
         ],
         "@param": [
@@ -186,9 +186,9 @@
           },
           {
             "name": "@param",
-            "body": "duration {Number?} The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "body": "duration {Number?} The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "paramName": "duration",
-            "description": " The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "description": " The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "optional": true,
             "type": "Number"
           },
@@ -221,7 +221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the stored animation handles. The handles are only\navailable while an animation is running."
+            "body": "<p>Returns the stored animation handles. The handles are only\n available while an animation is running.</p>"
           }
         ],
         "@internal": [
@@ -257,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts the animation with the given description.\n\n*duration* is the time in milliseconds one animation cycle should take.\n\n*keep* is the key frame to apply at the end of the animation. (optional)\n\n*keyFrames* is a map of separate frames. Each frame is defined by a\nnumber which is the percentage value of time in the animation. The value\nis a map itself which holds css properties or transforms\n(Transforms only for CSS Animations).\n\n*origin* maps to the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin\">transform origin</a>\n(Only for CSS animations).\n\n*repeat* is the amount of time the animation should be run in\nsequence. You can also use \"infinite\".\n\n*timing* takes one of these predefined values:\n<code>ease</code> | <code>linear</code> | <code>ease-in</code>\n| <code>ease-out</code> | <code>ease-in-out</code> |\n<code>cubic-bezier(&lt;number&gt;, &lt;number&gt;, &lt;number&gt;, &lt;number&gt;)</code>\n(cubic-bezier only available for CSS animations)\n\n*alternate* defines if every other animation should be run in reverse order.\n\n*delay* is the time in milliseconds the animation should wait before start."
+            "body": "<p>Starts the animation with the given description.\n<em>duration</em> is the time in milliseconds one animation cycle should take.\n<em>keep</em> is the key frame to apply at the end of the animation. (optional)\n<em>keyFrames</em> is a map of separate frames. Each frame is defined by a\n   number which is the percentage value of time in the animation. The value\n   is a map itself which holds css properties or transforms\n   (Transforms only for CSS Animations).\n<em>origin</em> maps to the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin\">transform origin</a>\n (Only for CSS animations).\n<em>repeat</em> is the amount of time the animation should be run in\n   sequence. You can also use \"infinite\".\n<em>timing</em> takes one of these predefined values:\n   <code>ease</code> | <code>linear</code> | <code>ease-in</code>\n   | <code>ease-out</code> | <code>ease-in-out</code> |\n   <code>cubic-bezier(&amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;, &amp;lt;number&amp;gt;)</code>\n   (cubic-bezier only available for CSS animations)\n<em>alternate</em> defines if every other animation should be run in reverse order.\n<em>delay</em> is the time in milliseconds the animation should wait before start.</p>"
           }
         ],
         "@attach": [
@@ -276,9 +276,9 @@
           },
           {
             "name": "@param",
-            "body": "duration {Number?} The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "body": "duration {Number?} The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "paramName": "duration",
-            "description": " The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "description": " The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "optional": true,
             "type": "Number"
           }
@@ -310,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts an animation in reversed order. For further details, take a look at\nthe {@link #animate} method."
+            "body": "<p>Starts an animation in reversed order. For further details, take a look at\n the {@link #animate} method.</p>"
           }
         ],
         "@attach": [
@@ -329,9 +329,9 @@
           },
           {
             "name": "@param",
-            "body": "duration {Number?} The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "body": "duration {Number?} The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "paramName": "duration",
-            "description": " The duration in milliseconds of the animation,\nwhich will override the duration given in the description.",
+            "description": " The duration in milliseconds of the animation,\n   which will override the duration given in the description.",
             "optional": true,
             "type": "Number"
           }
@@ -363,7 +363,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the play state of the animation.\nThis can be used to continue an animation when paused."
+            "body": "<p>Manipulates the play state of the animation.\n This can be used to continue an animation when paused.</p>"
           }
         ],
         "@attach": [
@@ -399,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the play state of the animation.\nThis can be used to pause an animation when running."
+            "body": "<p>Manipulates the play state of the animation.\n This can be used to pause an animation when running.</p>"
           }
         ],
         "@attach": [
@@ -435,7 +435,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops a running animation."
+            "body": "<p>Stops a running animation.</p>"
           }
         ],
         "@attach": [
@@ -471,7 +471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether an animation is running or not."
+            "body": "<p>Returns whether an animation is running or not.</p>"
           }
         ],
         "@attach": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether an animation has ended or not."
+            "body": "<p>Returns whether an animation has ended or not.</p>"
           }
         ],
         "@attach": [
@@ -543,7 +543,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fades in all elements in the collection."
+            "body": "<p>Fades in all elements in the collection.</p>"
           }
         ],
         "@attach": [
@@ -589,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fades out all elements in the collection."
+            "body": "<p>Fades out all elements in the collection.</p>"
           }
         ],
         "@attach": [
@@ -625,13 +625,14 @@
     "location": {
       "start": {
         "line": 289,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 303,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

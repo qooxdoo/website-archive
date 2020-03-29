@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Base class for all group item renderer."
+          "body": "<p>Base class for all group item renderer.</p>"
         }
       ]
     }
@@ -38,13 +38,14 @@
     "location": {
       "start": {
         "line": 28,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 32,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "defaultCssClass": {
@@ -62,7 +63,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -91,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the row is selectable."
+            "body": "<p>Whether the row is selectable.</p>"
           }
         ]
       },
@@ -117,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -148,11 +149,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "abstract method"
+            "body": "<p>abstract method</p>"
           },
           {
             "name": "@description",
-            "body": "Resets all defined child widgets. Override this method in your custom\nlist item renderer and reset all widgets displaying data. Needed as the\nrenderer is used for every row and otherwise data of a different row\nmight be displayed, when not all data displaying widgets are used for the row.\nGets called automatically by the {@link qx.ui.mobile.list.provider.Provider}."
+            "body": "<p>Resets all defined child widgets. Override this method in your custom\n list item renderer and reset all widgets displaying data. Needed as the\n renderer is used for every row and otherwise data of a different row\n might be displayed, when not all data displaying widgets are used for the row.\n Gets called automatically by the {@link qx.ui.mobile.list.provider.Provider}.</p>"
           }
         ],
         "@param": [
@@ -188,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [

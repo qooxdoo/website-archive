@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The default resize behavior.  Until a resize model is loaded, the default\nbehavior is to:\n<ol>\n<li>\nUpon the table initially appearing, and upon any window resize, divide\nthe table space equally between the visible columns.\n</li>\n<li>\nWhen a column is increased in width, all columns to its right are\npushed to the right with no change to their widths.  This may push some\ncolumns off the right edge of the table, causing a horizontal scroll\nbar to appear.\n</li>\n<li>\nWhen a column is decreased in width, if the total width of all columns\nis <i>greater than</i> the table width, no additional column width\nchange is made.\n</li>\n<li>\nWhen a column is decreased in width, if the total width of all columns\nis <i>less than</i> the table width, the visible column\nimmediately to the right of the column which decreased in width has its\nwidth increased to fill the remaining space.\n</li>\n</ol>\n\nA resize model may be loaded to provide more guidance on how to adjust\ncolumn width upon each of the events: initial appear, window resize, and\ncolumn resize. *** TO BE FILLED IN ***"
+          "body": "<p>The default resize behavior.  Until a resize model is loaded, the default\n behavior is to:\n </p>\n<ol>\n   <li>\n     Upon the table initially appearing, and upon any window resize, divide\n     the table space equally between the visible columns.\n   </li>\n   <li>\n     When a column is increased in width, all columns to its right are\n     pushed to the right with no change to their widths.  This may push some\n     columns off the right edge of the table, causing a horizontal scroll\n     bar to appear.\n   </li>\n   <li>\n     When a column is decreased in width, if the total width of all columns\n     is <i>greater than</i> the table width, no additional column width\n     change is made.\n   </li>\n   <li>\n     When a column is decreased in width, if the total width of all columns\n     is <i>less than</i> the table width, the visible column\n     immediately to the right of the column which decreased in width has its\n     width increased to fill the remaining space.\n   </li>\n </ol>\n<p>A resize model may be loaded to provide more guidance on how to adjust\n column width upon each of the events: initial appear, window resize, and\n column resize. *** TO BE FILLED IN ***</p>"
         }
       ],
       "@require": [
@@ -41,13 +41,14 @@
     "location": {
       "start": {
         "line": 57,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 76,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "newResizeBehaviorColumnData": {
@@ -65,7 +66,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a resize behavior column data object."
+            "body": "<p>A function to instantiate a resize behavior column data object.</p>"
           }
         ]
       },
@@ -88,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to reinitialize default widths on each appear event.\nTypically, one would want to initialize the default widths only upon\nthe first appearance of the table, but the original behavior was to\nreinitialize it even if the table is hidden and then reshown\n(e.g. it's in a pageview and the page is switched and then switched\nback)."
+            "body": "<p>Whether to reinitialize default widths on each appear event.\n Typically, one would want to initialize the default widths only upon\n the first appearance of the table, but the original behavior was to\n reinitialize it even if the table is hidden and then reshown\n (e.g. it's in a pageview and the page is switched and then switched\n back).</p>"
           }
         ]
       },
@@ -113,7 +114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table column model in use.  Of particular interest is the method\n<i>getTable</i> which is a reference to the table widget.  This allows\naccess to any other features of the table, for use in calculating widths\nof columns."
+            "body": "<p>The table column model in use.  Of particular interest is the method\n <i>getTable</i> which is a reference to the table widget.  This allows\n access to any other features of the table, for use in calculating widths\n of columns.</p>"
           }
         ]
       },
@@ -210,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether we have initialized widths on the first appear yet"
+            "body": "<p>Whether we have initialized widths on the first appear yet</p>"
           }
         ]
       },
@@ -232,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the width of a column."
+            "body": "<p>Set the width of a column.</p>"
           }
         ],
         "@param": [
@@ -245,9 +246,9 @@
           },
           {
             "name": "@param",
-            "body": "width {Integer|String}\nThe width of the specified column.  The width may be specified as\ninteger number of pixels (e.g. 100), a string representing percentage\nof the inner width of the Table (e.g. \"25%\"), or a string\nrepresenting a flex width (e.g. \"1*\").",
+            "body": "width {Integer|String}\n   The width of the specified column.  The width may be specified as\n   integer number of pixels (e.g. 100), a string representing percentage\n   of the inner width of the Table (e.g. \"25%\"), or a string\n   representing a flex width (e.g. \"1*\").",
             "paramName": "width",
-            "description": "\nThe width of the specified column.  The width may be specified as\ninteger number of pixels (e.g. 100), a string representing percentage\nof the inner width of the Table (e.g. \"25%\"), or a string\nrepresenting a flex width (e.g. \"1*\").",
+            "description": "\n   The width of the specified column.  The width may be specified as\n   integer number of pixels (e.g. 100), a string representing percentage\n   of the inner width of the Table (e.g. \"25%\"), or a string\n   representing a flex width (e.g. \"1*\").",
             "type": [
               "Integer",
               "String"
@@ -266,9 +267,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -290,31 +291,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the minimum width of a column."
+            "body": "<p>Set the minimum width of a column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer}\nThe column whose minimum width is to be set",
+            "body": "col {Integer}\n   The column whose minimum width is to be set",
             "paramName": "col",
-            "description": "\nThe column whose minimum width is to be set",
+            "description": "\n   The column whose minimum width is to be set",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe minimum width of the specified column.",
+            "body": "width {Integer}\n   The minimum width of the specified column.",
             "paramName": "width",
-            "description": "\nThe minimum width of the specified column.",
+            "description": "\n   The minimum width of the specified column.",
             "type": "Integer"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -336,31 +337,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the maximum width of a column."
+            "body": "<p>Set the maximum width of a column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer}\nThe column whose maximum width is to be set",
+            "body": "col {Integer}\n   The column whose maximum width is to be set",
             "paramName": "col",
-            "description": "\nThe column whose maximum width is to be set",
+            "description": "\n   The column whose maximum width is to be set",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe maximum width of the specified column.",
+            "body": "width {Integer}\n   The maximum width of the specified column.",
             "paramName": "width",
-            "description": "\nThe maximum width of the specified column.",
+            "description": "\n   The maximum width of the specified column.",
             "type": "Integer"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -382,31 +383,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set any or all of the width, minimum width, and maximum width of a\ncolumn in a single call."
+            "body": "<p>Set any or all of the width, minimum width, and maximum width of a\n column in a single call.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer}\nThe column whose attributes are to be changed",
+            "body": "col {Integer}\n   The column whose attributes are to be changed",
             "paramName": "col",
-            "description": "\nThe column whose attributes are to be changed",
+            "description": "\n   The column whose attributes are to be changed",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "map {Map}\nA map containing any or all of the property names \"width\", \"minWidth\",\nand \"maxWidth\".  The property values are as described for\n{@link #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\nrespectively.",
+            "body": "map {Map}\n   A map containing any or all of the property names \"width\", \"minWidth\",\n   and \"maxWidth\".  The property values are as described for\n   {@link #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\n   respectively.",
             "paramName": "map",
-            "description": "\nA map containing any or all of the property names \"width\", \"minWidth\",\nand \"maxWidth\".  The property values are as described for\n{@link #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\nrespectively.",
+            "description": "\n   A map containing any or all of the property names \"width\", \"minWidth\",\n   and \"maxWidth\".  The property values are as described for\n   {@link #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\n   respectively.",
             "type": "Map"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -433,7 +434,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
@@ -477,7 +478,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
@@ -512,15 +513,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>verticalScrollBarChanged</i> event object.  This event has data,\nobtained via event.getValue(), which is a boolean indicating whether a\nvertical scroll bar is now present.",
+            "body": "event {var} The <i>verticalScrollBarChanged</i> event object.  This event has data,\n     obtained via event.getValue(), which is a boolean indicating whether a\n     vertical scroll bar is now present.",
             "paramName": "event",
-            "description": " The <i>verticalScrollBarChanged</i> event object.  This event has data,\nobtained via event.getValue(), which is a boolean indicating whether a\nvertical scroll bar is now present.",
+            "description": " The <i>verticalScrollBarChanged</i> event object.  This event has data,\n     obtained via event.getValue(), which is a boolean indicating whether a\n     vertical scroll bar is now present.",
             "type": "var"
           }
         ]
@@ -547,15 +548,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>widthChanged</i> event object.  This event has data, obtained via\nevent.getValue(), which is an object with three properties: the column\nwhich changed width (data.col), the old width (data.oldWidth) and the new\nwidth (data.newWidth).",
+            "body": "event {var} The <i>widthChanged</i> event object.  This event has data, obtained via\n     event.getValue(), which is an object with three properties: the column\n     which changed width (data.col), the old width (data.oldWidth) and the new\n     width (data.newWidth).",
             "paramName": "event",
-            "description": " The <i>widthChanged</i> event object.  This event has data, obtained via\nevent.getValue(), which is an object with three properties: the column\nwhich changed width (data.col), the old width (data.oldWidth) and the new\nwidth (data.newWidth).",
+            "description": " The <i>widthChanged</i> event object.  This event has data, obtained via\n     event.getValue(), which is an object with three properties: the column\n     which changed width (data.col), the old width (data.oldWidth) and the new\n     width (data.newWidth).",
             "type": "var"
           }
         ]
@@ -582,15 +583,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {var} The <i>visibilityChanged</i> event object.  This event has data, obtained\nvia event.getValue(), which is an object with two properties: the column\nwhich changed width (data.col) and the new visibility of the column\n(data.visible).",
+            "body": "event {var} The <i>visibilityChanged</i> event object.  This event has data, obtained\n     via event.getValue(), which is an object with two properties: the column\n     which changed width (data.col) and the new visibility of the column\n     (data.visible).",
             "paramName": "event",
-            "description": " The <i>visibilityChanged</i> event object.  This event has data, obtained\nvia event.getValue(), which is an object with two properties: the column\nwhich changed width (data.col) and the new visibility of the column\n(data.visible).",
+            "description": " The <i>visibilityChanged</i> event object.  This event has data, obtained\n     via event.getValue(), which is an object with two properties: the column\n     which changed width (data.col) and the new visibility of the column\n     (data.visible).",
             "type": "var"
           }
         ]
@@ -617,7 +618,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overloaded"
+            "body": "<p>overloaded</p>"
           }
         ],
         "@param": [
@@ -652,7 +653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is required by the box layout. If returns an array of items\nto relayout."
+            "body": "<p>This method is required by the box layout. If returns an array of items\n to relayout.</p>"
           }
         ],
         "@return": [
@@ -682,7 +683,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the width of all flexible children."
+            "body": "<p>Computes the width of all flexible children.</p>"
           }
         ]
       },
@@ -704,7 +705,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear all layout caches of the column datas."
+            "body": "<p>Clear all layout caches of the column datas.</p>"
           }
         ]
       },
@@ -726,15 +727,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extend the visible column to right of the column which just changed\nwidth, to fill any available space within the inner width of the table.\nThis means that if the sum of the widths of all columns exceeds the\ninner width of the table, no change is made.  If, on the other hand,\nthe sum of the widths of all columns is less than the inner width of\nthe table, the visible column to the right of the column which just\nchanged width is extended to take up the width available within the\ninner width of the table."
+            "body": "<p>Extend the visible column to right of the column which just changed\n width, to fill any available space within the inner width of the table.\n This means that if the sum of the widths of all columns exceeds the\n inner width of the table, no change is made.  If, on the other hand,\n the sum of the widths of all columns is less than the inner width of\n the table, the visible column to the right of the column which just\n changed width is extended to take up the width available within the\n inner width of the table.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe event object.",
+            "body": "event {qx.event.type.Data}\n   The event object.",
             "paramName": "event",
-            "description": "\nThe event object.",
+            "description": "\n   The event object.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -757,15 +758,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If a column was just made invisible, extend the last column to fill any\navailable space within the inner width of the table.  This means that\nif the sum of the widths of all columns exceeds the inner width of the\ntable, no change is made.  If, on the other hand, the sum of the widths\nof all columns is less than the inner width of the table, the last\ncolumn is extended to take up the width available within the inner\nwidth of the table."
+            "body": "<p>If a column was just made invisible, extend the last column to fill any\n available space within the inner width of the table.  This means that\n if the sum of the widths of all columns exceeds the inner width of the\n table, no change is made.  If, on the other hand, the sum of the widths\n of all columns is less than the inner width of the table, the last\n column is extended to take up the width available within the inner\n width of the table.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe event object.",
+            "body": "event {qx.event.type.Data}\n   The event object.",
             "paramName": "event",
-            "description": "\nThe event object.",
+            "description": "\n   The event object.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -788,7 +789,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of the resizing information of a column."
+            "body": "<p>Returns an array of the resizing information of a column.</p>"
           }
         ],
         "@return": [
@@ -1150,7 +1151,7 @@
     "location": {
       "start": {
         "line": 570,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 574,
@@ -1161,7 +1162,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

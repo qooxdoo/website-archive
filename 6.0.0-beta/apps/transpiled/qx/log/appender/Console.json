@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 372,
+        "line": 374,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Feature-rich console appender for the qooxdoo logging system.\n\nCreates a small inline element which is placed in the top-right corner\nof the window. Prints all messages with a nice color highlighting.\n\n* Allows user command inputs.\n* Command history enabled by default (Keyboard up/down arrows).\n* Lazy creation on first open.\n* Clearing the console using a button.\n* Display of offset (time after loading) of each message\n* Supports keyboard shortcuts F7 or Ctrl+D to toggle the visibility\n\nNote this class must be disposed of after use"
+          "body": "<p>Feature-rich console appender for the qooxdoo logging system.\n Creates a small inline element which is placed in the top-right corner\n of the window. Prints all messages with a nice color highlighting.</p>\n<ul>\n<li>Allows user command inputs.</li>\n<li>Command history enabled by default (Keyboard up/down arrows).</li>\n<li>Lazy creation on first open.</li>\n<li>Clearing the console using a button.</li>\n<li>Display of offset (time after loading) of each message</li>\n<li>Supports keyboard shortcuts F7 or Ctrl+D to toggle the visibility\nNote this class must be disposed of after use</li>\n</ul>"
         }
       ],
       "@require": [
@@ -61,7 +61,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINITIALIZATION AND SHUTDOWN\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INITIALIZATION AND SHUTDOWN\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the console, building HTML and pushing last\nlog messages to the output window."
+            "body": "<p>Initializes the console, building HTML and pushing last\n log messages to the output window.</p>"
           }
         ]
       },
@@ -147,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Used by the object registry to dispose this instance e.g. remove listeners etc."
+            "body": "<p>Used by the object registry to dispose this instance e.g. remove listeners etc.</p>"
           }
         ]
       },
@@ -169,11 +169,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINSERT & CLEAR\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INSERT &amp; CLEAR\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Clears the current console output."
+            "body": "<p>Clears the current console output.</p>"
           }
         ]
       },
@@ -187,7 +187,7 @@
           "column": 4
         },
         "end": {
-          "line": 179,
+          "line": 180,
           "column": 5
         }
       },
@@ -195,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Processes a single log entry"
+            "body": "<p>Processes a single log entry</p>"
           }
         ],
         "@signature": [
@@ -220,11 +220,11 @@
     "__scrollDown": {
       "location": {
         "start": {
-          "line": 185,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 188,
           "column": 5
         }
       },
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatically scroll down to the last line"
+            "body": "<p>Automatically scroll down to the last line</p>"
           }
         ]
       },
@@ -242,11 +242,11 @@
     "__visible": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 201,
           "column": 20
         }
       },
@@ -254,7 +254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVISIBILITY TOGGLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VISIBILITY TOGGLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -274,11 +274,11 @@
     "toggle": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 222,
           "column": 5
         }
       },
@@ -286,7 +286,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the visibility of the console between visible and hidden."
+            "body": "<p>Toggles the visibility of the console between visible and hidden.</p>"
           }
         ]
       },
@@ -296,11 +296,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 237,
           "column": 5
         }
       },
@@ -308,7 +308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the console."
+            "body": "<p>Shows the console.</p>"
           }
         ]
       },
@@ -318,11 +318,11 @@
     "__history": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 247,
           "column": 18
         }
       },
@@ -330,7 +330,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMMAND LINE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMMAND LINE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -350,11 +350,11 @@
     "execute": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 286,
           "column": 5
         }
       },
@@ -362,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the currently given command"
+            "body": "<p>Executes the currently given command</p>"
           }
         ]
       },
@@ -372,11 +372,11 @@
     "__onResize": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 302,
           "column": 4
         },
         "end": {
-          "line": 302,
+          "line": 304,
           "column": 5
         }
       },
@@ -384,11 +384,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for resize listener"
+            "body": "<p>Event handler for resize listener</p>"
           }
         ],
         "@param": [
@@ -407,11 +407,11 @@
     "__onKeyPress": {
       "location": {
         "start": {
-          "line": 310,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 358,
           "column": 5
         }
       },
@@ -419,7 +419,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for keydown listener"
+            "body": "<p>Event handler for keydown listener</p>"
           }
         ],
         "@param": [
@@ -439,11 +439,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 368,
-        "column": 2
+        "line": 370,
+        "column": 10
       },
       "end": {
-        "line": 371,
+        "line": 373,
         "column": 3
       }
     },
@@ -451,7 +451,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

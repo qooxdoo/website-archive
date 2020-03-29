@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Keyboard event object.\n\nthe interface of this class is based on the DOM Level 3 keyboard event\ninterface: http://www.w3.org/TR/DOM-Level-3-Events/#events-keyboardevents"
+          "body": "<p>Keyboard event object.\n the interface of this class is based on the DOM Level 3 keyboard event\n interface: http://www.w3.org/TR/DOM-Level-3-Events/#events-keyboardevents</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the fields of the event."
+            "body": "<p>Initialize the fields of the event.</p>"
           }
         ],
         "@param": [
@@ -105,15 +105,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "paramName": "embryo",
-            "description": " Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "description": " Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "optional": true,
             "defaultValue": "null",
             "type": "qx.event.type.Event"
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Identifier of the pressed key. This property is modeled after the <em>KeyboardEvent.keyIdentifier</em> property\nof the W3C DOM 3 event specification\n(http://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-KeyboardEvent-keyIdentifier).\n\nPrintable keys are represented by an unicode string, non-printable keys\nhave one of the following values:\n\n<table>\n<tr><th>Backspace</th><td>The Backspace (Back) key.</td></tr>\n<tr><th>Tab</th><td>The Horizontal Tabulation (Tab) key.</td></tr>\n<tr><th>Space</th><td>The Space (Spacebar) key.</td></tr>\n<tr><th>Enter</th><td>The Enter key. Note: This key identifier is also used for the Return (Macintosh numpad) key.</td></tr>\n<tr><th>Shift</th><td>The Shift key.</td></tr>\n<tr><th>Control</th><td>The Control (Ctrl) key.</td></tr>\n<tr><th>Alt</th><td>The Alt (Menu) key.</td></tr>\n<tr><th>CapsLock</th><td>The CapsLock key</td></tr>\n<tr><th>Meta</th><td>The Meta key. (Apple Meta and Windows key)</td></tr>\n<tr><th>Escape</th><td>The Escape (Esc) key.</td></tr>\n<tr><th>Left</th><td>The Left Arrow key.</td></tr>\n<tr><th>Up</th><td>The Up Arrow key.</td></tr>\n<tr><th>Right</th><td>The Right Arrow key.</td></tr>\n<tr><th>Down</th><td>The Down Arrow key.</td></tr>\n<tr><th>PageUp</th><td>The Page Up key.</td></tr>\n<tr><th>PageDown</th><td>The Page Down (Next) key.</td></tr>\n<tr><th>End</th><td>The End key.</td></tr>\n<tr><th>Home</th><td>The Home key.</td></tr>\n<tr><th>Insert</th><td>The Insert (Ins) key. (Does not fire in Opera/Win)</td></tr>\n<tr><th>Delete</th><td>The Delete (Del) Key.</td></tr>\n<tr><th>F1</th><td>The F1 key.</td></tr>\n<tr><th>F2</th><td>The F2 key.</td></tr>\n<tr><th>F3</th><td>The F3 key.</td></tr>\n<tr><th>F4</th><td>The F4 key.</td></tr>\n<tr><th>F5</th><td>The F5 key.</td></tr>\n<tr><th>F6</th><td>The F6 key.</td></tr>\n<tr><th>F7</th><td>The F7 key.</td></tr>\n<tr><th>F8</th><td>The F8 key.</td></tr>\n<tr><th>F9</th><td>The F9 key.</td></tr>\n<tr><th>F10</th><td>The F10 key.</td></tr>\n<tr><th>F11</th><td>The F11 key.</td></tr>\n<tr><th>F12</th><td>The F12 key.</td></tr>\n<tr><th>NumLock</th><td>The Num Lock key.</td></tr>\n<tr><th>PrintScreen</th><td>The Print Screen (PrintScrn, SnapShot) key.</td></tr>\n<tr><th>Scroll</th><td>The scroll lock key</td></tr>\n<tr><th>Pause</th><td>The pause/break key</td></tr>\n<tr><th>Win</th><td>The Windows Logo key</td></tr>\n<tr><th>Apps</th><td>The Application key (Windows Context Menu)</td></tr>\n</table>"
+            "body": "<p>Identifier of the pressed key. This property is modeled after the <em>KeyboardEvent.keyIdentifier</em> property\n of the W3C DOM 3 event specification\n (http://www.w3.org/TR/2003/NOTE-DOM-Level-3-Events-20031107/events.html#Events-KeyboardEvent-keyIdentifier).\n Printable keys are represented by an unicode string, non-printable keys\n have one of the following values:\n </p>\n<table>\n <tr><th>Backspace</th><td>The Backspace (Back) key.</td></tr>\n <tr><th>Tab</th><td>The Horizontal Tabulation (Tab) key.</td></tr>\n <tr><th>Space</th><td>The Space (Spacebar) key.</td></tr>\n <tr><th>Enter</th><td>The Enter key. Note: This key identifier is also used for the Return (Macintosh numpad) key.</td></tr>\n <tr><th>Shift</th><td>The Shift key.</td></tr>\n <tr><th>Control</th><td>The Control (Ctrl) key.</td></tr>\n <tr><th>Alt</th><td>The Alt (Menu) key.</td></tr>\n <tr><th>CapsLock</th><td>The CapsLock key</td></tr>\n <tr><th>Meta</th><td>The Meta key. (Apple Meta and Windows key)</td></tr>\n <tr><th>Escape</th><td>The Escape (Esc) key.</td></tr>\n <tr><th>Left</th><td>The Left Arrow key.</td></tr>\n <tr><th>Up</th><td>The Up Arrow key.</td></tr>\n <tr><th>Right</th><td>The Right Arrow key.</td></tr>\n <tr><th>Down</th><td>The Down Arrow key.</td></tr>\n <tr><th>PageUp</th><td>The Page Up key.</td></tr>\n <tr><th>PageDown</th><td>The Page Down (Next) key.</td></tr>\n <tr><th>End</th><td>The End key.</td></tr>\n <tr><th>Home</th><td>The Home key.</td></tr>\n <tr><th>Insert</th><td>The Insert (Ins) key. (Does not fire in Opera/Win)</td></tr>\n <tr><th>Delete</th><td>The Delete (Del) Key.</td></tr>\n <tr><th>F1</th><td>The F1 key.</td></tr>\n <tr><th>F2</th><td>The F2 key.</td></tr>\n <tr><th>F3</th><td>The F3 key.</td></tr>\n <tr><th>F4</th><td>The F4 key.</td></tr>\n <tr><th>F5</th><td>The F5 key.</td></tr>\n <tr><th>F6</th><td>The F6 key.</td></tr>\n <tr><th>F7</th><td>The F7 key.</td></tr>\n <tr><th>F8</th><td>The F8 key.</td></tr>\n <tr><th>F9</th><td>The F9 key.</td></tr>\n <tr><th>F10</th><td>The F10 key.</td></tr>\n <tr><th>F11</th><td>The F11 key.</td></tr>\n <tr><th>F12</th><td>The F12 key.</td></tr>\n <tr><th>NumLock</th><td>The Num Lock key.</td></tr>\n <tr><th>PrintScreen</th><td>The Print Screen (PrintScrn, SnapShot) key.</td></tr>\n <tr><th>Scroll</th><td>The scroll lock key</td></tr>\n <tr><th>Pause</th><td>The pause/break key</td></tr>\n <tr><th>Win</th><td>The Windows Logo key</td></tr>\n <tr><th>Apps</th><td>The Application key (Windows Context Menu)</td></tr>\n </table>"
           }
         ],
         "@return": [
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the native keyCode and is best used on keydown/keyup events to\ncheck which physical key was pressed.\nDon't use this on keypress events because it's erroneous and\ninconsistent across browsers. But it can be used to detect which key is\nexactly pressed (e.g. for num pad keys).\nIn any regular case, you should use {@link #getKeyIdentifier} which\ntakes care of all cross browser stuff.\n\nThe key codes are not character codes, they are just ASCII codes to\nidentify the keyboard (or other input devices) keys."
+            "body": "<p>Returns the native keyCode and is best used on keydown/keyup events to\n check which physical key was pressed.\n Don't use this on keypress events because it's erroneous and\n inconsistent across browsers. But it can be used to detect which key is\n exactly pressed (e.g. for num pad keys).\n In any regular case, you should use {@link #getKeyIdentifier} which\n takes care of all cross browser stuff.\n The key codes are not character codes, they are just ASCII codes to\n identify the keyboard (or other input devices) keys.</p>"
           }
         ],
         "@return": [
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the pressed key is printable."
+            "body": "<p>Checks whether the pressed key is printable.</p>"
           }
         ],
         "@return": [

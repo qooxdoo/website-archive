@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The module supplies a fallback implementation for placeholders, which is\nused on input and textarea elements. If the browser supports native placeholders\nthe API silently ignores all calls. If not, an element will be created for every\ngiven input element and acts as placeholder. Most modern browsers support\nplaceholders which makes the fallback only relevant for IE < 10 and FF < 4.\n\n* <a href=\"http://dev.w3.org/html5/spec/single-page.html#the-placeholder-attribute\">HTML Spec</a>\n\n* <a href=\"http://caniuse.com/#feat=input-placeholder\">Browser Support</a>"
+          "body": "<p>The module supplies a fallback implementation for placeholders, which is\n used on input and textarea elements. If the browser supports native placeholders\n the API silently ignores all calls. If not, an element will be created for every\n given input element and acts as placeholder. Most modern browsers support\n placeholders which makes the fallback only relevant for IE &lt; 10 and FF &lt; 4.</p>\n<ul>\n<li><a href=\"http://dev.w3.org/html5/spec/single-page.html#the-placeholder-attribute\">HTML Spec</a></li>\n<li><a href=\"http://caniuse.com/#feat=input-placeholder\">Browser Support</a></li>\n</ul>"
         }
       ],
       "@require": [
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "String holding the property name which holds the placeholder\nelement for each input."
+            "body": "<p>String holding the property name which holds the placeholder\n element for each input.</p>"
           }
         ]
       },
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Queries for all input and textarea elements on the page and updates\ntheir placeholder."
+            "body": "<p>Queries for all input and textarea elements on the page and updates\n their placeholder.</p>"
           }
         ],
         "@attachStatic": [
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method to update the styles for a given input element."
+            "body": "<p>Internal helper method to update the styles for a given input element.</p>"
           }
         ],
         "@param": [
@@ -158,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a placeholder element based on the given input element."
+            "body": "<p>Creates a placeholder element based on the given input element.</p>"
           }
         ],
         "@param": [
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the placeholders for input's and textarea's in the collection.\nThis includes positioning, styles and DOM positioning.\nIn case the browser supports native placeholders, this methods simply\ndoes nothing."
+            "body": "<p>Updates the placeholders for input's and textarea's in the collection.\n This includes positioning, styles and DOM positioning.\n In case the browser supports native placeholders, this methods simply\n does nothing.</p>"
           }
         ],
         "@attach": [
@@ -225,13 +225,14 @@
     "location": {
       "start": {
         "line": 176,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 178,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

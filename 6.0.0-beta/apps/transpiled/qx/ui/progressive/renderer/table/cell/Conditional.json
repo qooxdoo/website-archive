@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDan Hummon\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Dan Hummon\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table Cell Renderer for Progressive."
+          "body": "<p>Table Cell Renderer for Progressive.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 68,
@@ -52,30 +52,30 @@
       "@param": [
         {
           "name": "@param",
-          "body": "align {String}\nThe default alignment to format the cell with if the condition matches.",
+          "body": "align {String}\n   The default alignment to format the cell with if the condition matches.",
           "paramName": "align",
-          "description": "\nThe default alignment to format the cell with if the condition matches.",
+          "description": "\n   The default alignment to format the cell with if the condition matches.",
           "type": "qx.ui.progressive.renderer.table.cell.String"
         },
         {
           "name": "@param",
-          "body": "color {String}\nThe default color to format the cell with if the condition matches.",
+          "body": "color {String}\n   The default color to format the cell with if the condition matches.",
           "paramName": "color",
-          "description": "\nThe default color to format the cell with if the condition matches.",
+          "description": "\n   The default color to format the cell with if the condition matches.",
           "type": "qx.ui.progressive.renderer.table.cell.String"
         },
         {
           "name": "@param",
-          "body": "style {String}\nThe default style to format the cell with if the condition matches.",
+          "body": "style {String}\n   The default style to format the cell with if the condition matches.",
           "paramName": "style",
-          "description": "\nThe default style to format the cell with if the condition matches.",
+          "description": "\n   The default style to format the cell with if the condition matches.",
           "type": "qx.ui.progressive.renderer.table.cell.String"
         },
         {
           "name": "@param",
-          "body": "weight {String}\nThe default weight to format the cell with if the condition matches.",
+          "body": "weight {String}\n   The default weight to format the cell with if the condition matches.",
           "paramName": "weight",
-          "description": "\nThe default weight to format the cell with if the condition matches.",
+          "description": "\n   The default weight to format the cell with if the condition matches.",
           "type": "qx.ui.progressive.renderer.table.cell.String"
         }
       ]
@@ -195,22 +195,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the cell styles to the style map."
+            "body": "<p>Applies the cell styles to the style map.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {Array}\nThe matched condition",
+            "body": "condition {Array}\n   The matched condition",
             "paramName": "condition",
-            "description": "\nThe matched condition",
+            "description": "\n   The matched condition",
             "type": "Array"
           },
           {
             "name": "@param",
-            "body": "style {Map}\nmap of already applied styles.",
+            "body": "style {Map}\n   map of already applied styles.",
             "paramName": "style",
-            "description": "\nmap of already applied styles.",
+            "description": "\n   map of already applied styles.",
             "type": "Map"
           }
         ]
@@ -233,66 +233,66 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addNumericCondition method is used to add a basic numeric condition\nto the cell renderer.\n\nNote: Passing null is different from passing an empty string in the\nalign, color, style and weight arguments. Null will allow pre-existing\nformatting to pass through, where an empty string will clear it back to\nthe default formatting set in the constructor."
+            "body": "<p>The addNumericCondition method is used to add a basic numeric condition\n to the cell renderer.\n Note: Passing null is different from passing an empty string in the\n align, color, style and weight arguments. Null will allow pre-existing\n formatting to pass through, where an empty string will clear it back to\n the default formatting set in the constructor.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {String}\nThe type of condition. Accepted strings are \"==\", \"!=\", \">\", \"<\",\n\">=\", and \"<=\".",
+            "body": "condition {String}\n   The type of condition. Accepted strings are \"==\", \"!=\", \">\", \"<\",\n   \">=\", and \"<=\".",
             "paramName": "condition",
-            "description": "\nThe type of condition. Accepted strings are \"==\", \"!=\", \">\", \"<\",\n\">=\", and \"<=\".",
+            "description": "\n   The type of condition. Accepted strings are \"==\", \"!=\", \">\", \"<\",\n   \">=\", and \"<=\".",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "value1 {Integer}\nThe value to compare against.",
+            "body": "value1 {Integer}\n   The value to compare against.",
             "paramName": "value1",
-            "description": "\nThe value to compare against.",
+            "description": "\n   The value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "align {String}\nThe alignment to format the cell with if the condition matches.",
+            "body": "align {String}\n   The alignment to format the cell with if the condition matches.",
             "paramName": "align",
-            "description": "\nThe alignment to format the cell with if the condition matches.",
+            "description": "\n   The alignment to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "color {String}\nThe color to format the cell with if the condition matches.",
+            "body": "color {String}\n   The color to format the cell with if the condition matches.",
             "paramName": "color",
-            "description": "\nThe color to format the cell with if the condition matches.",
+            "description": "\n   The color to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "style {String}\nThe style to format the cell with if the condition matches.",
+            "body": "style {String}\n   The style to format the cell with if the condition matches.",
             "paramName": "style",
-            "description": "\nThe style to format the cell with if the condition matches.",
+            "description": "\n   The style to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "weight {String}\nThe weight to format the cell with if the condition matches.",
+            "body": "weight {String}\n   The weight to format the cell with if the condition matches.",
             "paramName": "weight",
-            "description": "\nThe weight to format the cell with if the condition matches.",
+            "description": "\n   The weight to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "body": "target {String}\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "description": "\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If the condition can not be recognized or the value\nis null.",
+            "body": "{Error} If the condition can not be recognized or the value\n is null.",
             "type": "Error",
-            "description": " If the condition can not be recognized or the value\nis null."
+            "description": " If the condition can not be recognized or the value\n is null."
           }
         ]
       },
@@ -314,73 +314,73 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addBetweenCondition method is used to add a between condition to\nthe cell renderer.\n\nNote: Passing null is different from passing an empty string in the\nalign, color, style and weight arguments. Null will allow pre-existing\nformatting to pass through, where an empty string will clear it back to\nthe default formatting set in the constructor."
+            "body": "<p>The addBetweenCondition method is used to add a between condition to\n the cell renderer.\n Note: Passing null is different from passing an empty string in the\n align, color, style and weight arguments. Null will allow pre-existing\n formatting to pass through, where an empty string will clear it back to\n the default formatting set in the constructor.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {String}\nThe type of condition. Accepted strings are \"between\" and \"!between\".",
+            "body": "condition {String}\n   The type of condition. Accepted strings are \"between\" and \"!between\".",
             "paramName": "condition",
-            "description": "\nThe type of condition. Accepted strings are \"between\" and \"!between\".",
+            "description": "\n   The type of condition. Accepted strings are \"between\" and \"!between\".",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "value1 {Integer}\nThe first value to compare against.",
+            "body": "value1 {Integer}\n   The first value to compare against.",
             "paramName": "value1",
-            "description": "\nThe first value to compare against.",
+            "description": "\n   The first value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "value2 {Integer}\nThe second value to compare against.",
+            "body": "value2 {Integer}\n   The second value to compare against.",
             "paramName": "value2",
-            "description": "\nThe second value to compare against.",
+            "description": "\n   The second value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "align {String}\nThe alignment to format the cell with if the condition matches.",
+            "body": "align {String}\n   The alignment to format the cell with if the condition matches.",
             "paramName": "align",
-            "description": "\nThe alignment to format the cell with if the condition matches.",
+            "description": "\n   The alignment to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "color {String}\nThe color to format the cell with if the condition matches.",
+            "body": "color {String}\n   The color to format the cell with if the condition matches.",
             "paramName": "color",
-            "description": "\nThe color to format the cell with if the condition matches.",
+            "description": "\n   The color to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "style {String}\nThe style to format the cell with if the condition matches.",
+            "body": "style {String}\n   The style to format the cell with if the condition matches.",
             "paramName": "style",
-            "description": "\nThe style to format the cell with if the condition matches.",
+            "description": "\n   The style to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "weight {String}\nThe weight to format the cell with if the condition matches.",
+            "body": "weight {String}\n   The weight to format the cell with if the condition matches.",
             "paramName": "weight",
-            "description": "\nThe weight to format the cell with if the condition matches.",
+            "description": "\n   The weight to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "body": "target {String}\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "description": "\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If the condition can not recognized or one of the\nvalues is null.",
+            "body": "{Error} If the condition can not recognized or one of the\n values is null.",
             "type": "Error",
-            "description": " If the condition can not recognized or one of the\nvalues is null."
+            "description": " If the condition can not recognized or one of the\n values is null."
           }
         ]
       },
@@ -402,50 +402,50 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addRegex method is used to add a regular expression condition to\nthe cell renderer.\n\nNote: Passing null is different from passing an empty string in the\nalign, color, style and weight arguments. Null will allow pre-existing\nformatting to pass through, where an empty string will clear it back to\nthe default formatting set in the constructor."
+            "body": "<p>The addRegex method is used to add a regular expression condition to\n the cell renderer.\n Note: Passing null is different from passing an empty string in the\n align, color, style and weight arguments. Null will allow pre-existing\n formatting to pass through, where an empty string will clear it back to\n the default formatting set in the constructor.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "regex {String}\nThe regular expression to match against.",
+            "body": "regex {String}\n   The regular expression to match against.",
             "paramName": "regex",
-            "description": "\nThe regular expression to match against.",
+            "description": "\n   The regular expression to match against.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "align {String}\nThe alignment to format the cell with if the condition matches.",
+            "body": "align {String}\n   The alignment to format the cell with if the condition matches.",
             "paramName": "align",
-            "description": "\nThe alignment to format the cell with if the condition matches.",
+            "description": "\n   The alignment to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "color {String}\nThe color to format the cell with if the condition matches.",
+            "body": "color {String}\n   The color to format the cell with if the condition matches.",
             "paramName": "color",
-            "description": "\nThe color to format the cell with if the condition matches.",
+            "description": "\n   The color to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "style {String}\nThe style to format the cell with if the condition matches.",
+            "body": "style {String}\n   The style to format the cell with if the condition matches.",
             "paramName": "style",
-            "description": "\nThe style to format the cell with if the condition matches.",
+            "description": "\n   The style to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "weight {String}\nThe weight to format the cell with if the condition matches.",
+            "body": "weight {String}\n   The weight to format the cell with if the condition matches.",
             "paramName": "weight",
-            "description": "\nThe weight to format the cell with if the condition matches.",
+            "description": "\n   The weight to format the cell with if the condition matches.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "body": "target {String}\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against. If this is null,\ncomparisons will be against the contents of this cell.",
+            "description": "\n   The text value of the column to compare against. If this is null,\n   comparisons will be against the contents of this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String"
           }
         ],
@@ -476,15 +476,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overridden; called whenever the cell updates. The cell will iterate\nthrough each available condition and apply formatting for those that\nmatch. Multiple conditions can match, but later conditions will\noverride earlier ones. Conditions with null values will stack with\nother conditions that apply to that value."
+            "body": "<p>Overridden; called whenever the cell updates. The cell will iterate\n through each available condition and apply formatting for those that\n match. Multiple conditions can match, but later conditions will\n override earlier ones. Conditions with null values will stack with\n other conditions that apply to that value.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nThe information about the cell.  See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map}\n   The information about the cell.  See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": "\nThe information about the cell.  See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": "\n   The information about the cell.  See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -629,13 +629,14 @@
     "location": {
       "start": {
         "line": 457,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 459,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

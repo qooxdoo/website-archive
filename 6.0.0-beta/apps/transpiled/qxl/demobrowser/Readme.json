@@ -21,15 +21,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Displays a title (label) and text (in a groupbox)."
+          "body": "<p>Displays a title (label) and text (in a groupbox).</p>"
         }
       ]
     }
@@ -39,13 +39,14 @@
     "location": {
       "start": {
         "line": 31,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 46,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "title": {
@@ -4488,7 +4489,7 @@
     "location": {
       "start": {
         "line": 111,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 114,
@@ -4499,7 +4500,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

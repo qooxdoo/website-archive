@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2015 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nAdrian Olaru (adrianolaru)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2015 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Adrian Olaru (adrianolaru)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Progress bar is designed to simply display the current % complete\nfor a process.\n\nThe Value is limited between 0 and Maximum value.\nIt's not allowed to set a Maximum value of 0.  If you set a Maximum value\nbigger than 0, but smaller than Value, it will be limited to Value.\n\nThe following example creates and adds a progress bar to the root element.\nA listener is used to show the user if the value is changed,\nand another one when the progress is complete.\n\n<pre class='javascript'>\nvar pb = new qx.ui.indicator.ProgressBar();\nthis.getRoot().add(pb, { left : 20, top: 20});\n\npb.addListener(\"change\", function(e) {\nthis.debug(e.getData()); // % complete\nthis.debug(pb.getValue()); // absolute value\n});\n\npb.addListener(\"complete\", function(e) {\nthis.debug(\"complete\");\n});\n\n//set a value\npb.setValue(20);\n</pre>"
+          "body": "<p>The Progress bar is designed to simply display the current % complete\n for a process.\n The Value is limited between 0 and Maximum value.\n It's not allowed to set a Maximum value of 0.  If you set a Maximum value\n bigger than 0, but smaller than Value, it will be limited to Value.\n The following example creates and adds a progress bar to the root element.\n A listener is used to show the user if the value is changed,\n and another one when the progress is complete.\n </p>\n<pre class='javascript'>\n var pb = new qx.ui.indicator.ProgressBar();\n this.getRoot().add(pb, { left : 20, top: 20});\n pb.addListener(\"change\", function(e) {\n   this.debug(e.getData());\n   this.debug(pb.getValue());\n });\n pb.addListener(\"complete\", function(e) {\n   this.debug(\"complete\");\n });\n\n pb.setValue(20);\n </pre>"
         }
       ],
       "@childControl": [
@@ -44,7 +44,7 @@
     "location": {
       "start": {
         "line": 60,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 75,
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximum value of the progress bar"
+            "body": "<p>Maximum value of the progress bar</p>"
           }
         ]
       },
@@ -143,7 +143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Current value of the progress bar"
+            "body": "<p>Current value of the progress bar</p>"
           }
         ]
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the process is complete (value === maximum value)"
+            "body": "<p>Fired when the process is complete (value === maximum value)</p>"
           }
         ]
       },
@@ -193,7 +193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the % complete value is changed."
+            "body": "<p>Fired when the % complete value is changed.</p>"
           }
         ]
       },
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -242,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -267,22 +267,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the progress bar."
+            "body": "<p>Update the progress bar.</p>"
           }
         ],
         "@param": [

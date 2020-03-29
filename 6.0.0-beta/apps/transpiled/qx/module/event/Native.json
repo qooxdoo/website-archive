@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Common normalizations for native events"
+          "body": "<p>Common normalizations for native events</p>"
         }
       ],
       "@require": [
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of event types to be normalized"
+            "body": "<p>List of event types to be normalized</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of qx.bom.Event methods to be attached to native event objects"
+            "body": "<p>List of qx.bom.Event methods to be attached to native event objects</p>"
           }
         ],
         "@internal": [
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of qx.module.event.Native methods to be attached to native event objects"
+            "body": "<p>List of qx.module.event.Native methods to be attached to native event objects</p>"
           }
         ],
         "@internal": [
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prevent the native default behavior of the event."
+            "body": "<p>Prevent the native default behavior of the event.</p>"
           }
         ]
       },
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the event's propagation to the element's parent"
+            "body": "<p>Stops the event's propagation to the element's parent</p>"
           }
         ]
       },
@@ -189,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the event's type"
+            "body": "<p>Returns the event's type</p>"
           }
         ],
         "@return": [
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the target of the event."
+            "body": "<p>Returns the target of the event.</p>"
           }
         ],
         "@signature": [
@@ -255,7 +255,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the related target from the native DOM event"
+            "body": "<p>Computes the related target from the native DOM event</p>"
           }
         ],
         "@signature": [
@@ -291,7 +291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the current target from the native DOM event. Emulates the current target\nfor all browsers without native support (like older IEs)."
+            "body": "<p>Computes the current target from the native DOM event. Emulates the current target\n for all browsers without native support (like older IEs).</p>"
           }
         ],
         "@signature": [
@@ -327,7 +327,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the native event object, adding methods if they're not\nalready present"
+            "body": "<p>Manipulates the native event object, adding methods if they're not\n already present</p>"
           }
         ],
         "@param": [
@@ -369,13 +369,14 @@
     "location": {
       "start": {
         "line": 147,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 149,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

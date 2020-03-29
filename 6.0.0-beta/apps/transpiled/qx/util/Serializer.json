@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "**********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is an util class responsible for serializing qooxdoo objects."
+          "body": "<p>This is an util class responsible for serializing qooxdoo objects.</p>"
         }
       ],
       "@ignore": [
@@ -57,7 +57,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serializes the properties of the given qooxdoo object. To get the\nserialization working, every property needs to have a string\nrepresentation because the value of the property will be concatenated to the\nserialized string."
+            "body": "<p>Serializes the properties of the given qooxdoo object. To get the\n serialization working, every property needs to have a string\n representation because the value of the property will be concatenated to the\n serialized string.</p>"
           }
         ],
         "@param": [
@@ -70,17 +70,17 @@
           },
           {
             "name": "@param",
-            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\nobjects stored in the properties of the object. Check for the type of\nclasses <ou want to serialize and return the serialized value. In all\nother cases, just return nothing.",
+            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "paramName": "qxSerializer",
-            "description": " Function used for serializing qooxdoo\nobjects stored in the properties of the object. Check for the type of\nclasses <ou want to serialize and return the serialized value. In all\nother cases, just return nothing.",
+            "description": " Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "optional": true,
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "paramName": "dateFormat",
-            "description": " If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "description": " If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "optional": true,
             "type": "qx.util.format.DateFormat"
           }
@@ -112,7 +112,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for {@link #toUriParameter}. Check for qooxdoo objects\nand returns the serialized name value pair for the given parameter."
+            "body": "<p>Helper method for {@link #toUriParameter}. Check for qooxdoo objects\n and returns the serialized name value pair for the given parameter.</p>"
           }
         ],
         "@param": [
@@ -166,30 +166,30 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serializes the properties of the given qooxdoo object into a native\nobject."
+            "body": "<p>Serializes the properties of the given qooxdoo object into a native\n object.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "object {qx.core.Object}\nAny qooxdoo object",
+            "body": "object {qx.core.Object}\n   Any qooxdoo object",
             "paramName": "object",
-            "description": "\nAny qooxdoo object",
+            "description": "\n   Any qooxdoo object",
             "type": "qx.core.Object"
           },
           {
             "name": "@param",
-            "body": "qxSerializer {Function?}\nFunction used for serializing qooxdoo objects stored in the properties\nof the object. Check for the type of classes you want to serialize\nand return the serialized value. In all other cases, just return\nnothing.",
+            "body": "qxSerializer {Function?}\n   Function used for serializing qooxdoo objects stored in the properties\n   of the object. Check for the type of classes you want to serialize\n   and return the serialized value. In all other cases, just return\n   nothing.",
             "paramName": "qxSerializer",
-            "description": "\nFunction used for serializing qooxdoo objects stored in the properties\nof the object. Check for the type of classes you want to serialize\nand return the serialized value. In all other cases, just return\nnothing.",
+            "description": "\n   Function used for serializing qooxdoo objects stored in the properties\n   of the object. Check for the type of classes you want to serialize\n   and return the serialized value. In all other cases, just return\n   nothing.",
             "optional": true,
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "paramName": "dateFormat",
-            "description": " If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "description": " If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "optional": true,
             "type": "qx.util.format.DateFormat"
           }
@@ -197,9 +197,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Array|String|Object}\nThe serialized object. Depending on the input qooxdoo object, the returning\ntype will vary.",
+            "body": "{null|Array|String|Object}\n   The serialized object. Depending on the input qooxdoo object, the returning\n   type will vary.",
             "type": "null|Array|String|Object",
-            "description": "\nThe serialized object. Depending on the input qooxdoo object, the returning\ntype will vary."
+            "description": "\n   The serialized object. Depending on the input qooxdoo object, the returning\n   type will vary."
           }
         ]
       },
@@ -221,7 +221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serializes the properties of the given qooxdoo object into a json object."
+            "body": "<p>Serializes the properties of the given qooxdoo object into a json object.</p>"
           }
         ],
         "@param": [
@@ -234,17 +234,17 @@
           },
           {
             "name": "@param",
-            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\nobjects stored in the properties of the object. Check for the type of\nclasses <ou want to serialize and return the serialized value. In all\nother cases, just return nothing.",
+            "body": "qxSerializer {Function?} Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "paramName": "qxSerializer",
-            "description": " Function used for serializing qooxdoo\nobjects stored in the properties of the object. Check for the type of\nclasses <ou want to serialize and return the serialized value. In all\nother cases, just return nothing.",
+            "description": " Function used for serializing qooxdoo\n   objects stored in the properties of the object. Check for the type of\n   classes <ou want to serialize and return the serialized value. In all\n   other cases, just return nothing.",
             "optional": true,
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "body": "dateFormat {qx.util.format.DateFormat?} If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "paramName": "dateFormat",
-            "description": " If a date formater is given,\nthe format method of this given formater is used to convert date\nobjects into strings.",
+            "description": " If a date formater is given,\n   the format method of this given formater is used to convert date\n   objects into strings.",
             "optional": true,
             "type": "qx.util.format.DateFormat"
           }

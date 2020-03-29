@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "All of the resizing information about a column.\n\nThis is used internally by qx.ui.table and qx.ui.progressive's table and\nmay be used for other widgets as well."
+          "body": "<p>All of the resizing information about a column.\n  This is used internally by qx.ui.table and qx.ui.progressive's table and\n  may be used for other widgets as well.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 31,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 35,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__computedWidth": {
@@ -73,36 +74,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -137,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the computed width of the column."
+            "body": "<p>Get the computed width of the column.</p>"
           }
         ],
         "@return": [
@@ -167,7 +168,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the column's flex value"
+            "body": "<p>Get the column's flex value</p>"
           }
         ],
         "@return": [
@@ -197,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the column width. The column width can be one of the following\nvalues:\n\n* Pixels: e.g. <code>23</code>\n* Autosized: <code>\"auto\"</code>\n* Flex: e.g. <code>\"1*\"</code>\n* Percent: e.g. <code>\"33%\"</code>"
+            "body": "<p>Set the column width. The column width can be one of the following\n values:</p>\n<ul>\n<li>Pixels: e.g. <code>23</code></li>\n<li>Autosized: <code>\"auto\"</code></li>\n<li>Flex: e.g. <code>\"1*\"</code></li>\n<li>Percent: e.g. <code>\"33%\"</code></li>\n</ul>"
           }
         ],
         "@param": [

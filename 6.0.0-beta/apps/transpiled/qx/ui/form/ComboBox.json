@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nSebastian Werner (wpbasti)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Sebastian Werner (wpbasti)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Basically a text fields which allows a selection from a list of\npreconfigured options. Allows custom user input. Public API is value\noriented.\n\nTo work with selections without custom input the ideal candidates are\nthe {@link SelectBox} or the {@link RadioGroup}."
+          "body": "<p>Basically a text fields which allows a selection from a list of\n preconfigured options. Allows custom user input. Public API is value\n oriented.\n To work with selections without custom input the ideal candidates are\n the {@link SelectBox} or the {@link RadioGroup}.</p>"
         }
       ],
       "@childControl": [
@@ -60,7 +60,7 @@
     "location": {
       "start": {
         "line": 46,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 64,
@@ -71,7 +71,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -121,7 +121,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "String value which will be shown as a hint if the field is all of:\nunset, unfocused and enabled. Set to null to not show a placeholder\ntext."
+            "body": "<p>String value which will be shown as a hint if the field is all of:\n unset, unfocused and enabled. Set to null to not show a placeholder\n text.</p>"
           }
         ]
       },
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whenever the value is changed this event is fired\n\nEvent data: The new text value of the field."
+            "body": "<p>Whenever the value is changed this event is fired\n  Event data: The new text value of the field.</p>"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -226,26 +226,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -367,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -406,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -441,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -468,11 +468,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the popup's visibility."
+            "body": "<p>Toggles the popup's visibility.</p>"
           }
         ],
         "@param": [
@@ -538,7 +538,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -573,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply pre-selected item"
+            "body": "<p>Apply pre-selected item</p>"
           }
         ]
       },
@@ -595,7 +595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -630,7 +630,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -665,7 +665,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reacts on value changes of the text field and syncs the\nvalue to the combobox."
+            "body": "<p>Reacts on value changes of the text field and syncs the\n value to the combobox.</p>"
           }
         ],
         "@param": [
@@ -696,11 +696,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTEXTFIELD SELECTION API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXTFIELD SELECTION API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the current selection.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Returns the current selection.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@return": [
@@ -730,7 +730,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current selection length.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Returns the current selection length.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@return": [
@@ -760,7 +760,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the selection to the given start and end (zero-based).\nIf no end value is given the selection will extend to the\nend of the textfield's content.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Set the selection to the given start and end (zero-based).\n If no end value is given the selection will extend to the\n end of the textfield's content.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@param": [
@@ -798,7 +798,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the current selection.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Clears the current selection.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ]
       },
@@ -820,7 +820,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the whole content"
+            "body": "<p>Selects the whole content</p>"
           }
         ]
       },
@@ -842,7 +842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear any text selection, then select all text"
+            "body": "<p>Clear any text selection, then select all text</p>"
           }
         ]
       },
@@ -862,11 +862,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -893,7 +893,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [

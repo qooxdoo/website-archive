@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Composite is a generic container widget.\n\nIt exposes all methods to set layouts and to manage child widgets\nas public methods. You must configure this widget with a layout manager to\ndefine the way the widget's children are positioned.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n// create the composite\nvar composite = new qx.ui.mobile.container.Composite();\n\ncomposite.setLayout(new qx.ui.mobile.layout.HBox());\n\n// add some children\ncomposite.add(new qx.ui.mobile.basic.Label(\"Name: \"), {flex:1});\ncomposite.add(new qx.ui.mobile.form.TextField());\n\nthis.getRoot().add(composite);\n</pre>\n\nThis example horizontally groups a label and text field by using a\nComposite configured with a horizontal box layout as a container."
+          "body": "<p>The Composite is a generic container widget.\n It exposes all methods to set layouts and to manage child widgets\n as public methods. You must configure this widget with a layout manager to\n define the way the widget's children are positioned.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n\n   var composite = new qx.ui.mobile.container.Composite();\n   composite.setLayout(new qx.ui.mobile.layout.HBox());\n\n   composite.add(new qx.ui.mobile.basic.Label(\"Name: \"), {flex:1});\n   composite.add(new qx.ui.mobile.form.TextField());\n   this.getRoot().add(composite);\n </pre>\n<p>This example horizontally groups a label and text field by using a\n Composite configured with a horizontal box layout as a container.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 62,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 68,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -59,9 +59,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "layout {qx.ui.mobile.layout.Abstract?null} The layout that should be used for this\ncontainer",
+          "body": "layout {qx.ui.mobile.layout.Abstract?null} The layout that should be used for this\n     container",
           "paramName": "layout",
-          "description": " The layout that should be used for this\ncontainer",
+          "description": " The layout that should be used for this\n     container",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.mobile.layout.Abstract"
@@ -73,7 +73,7 @@
     "location": {
       "start": {
         "line": 79,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 83,
@@ -84,7 +84,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -102,15 +102,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.Widget[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.</p>"
           }
         ],
         "@param": [
@@ -167,9 +167,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       }
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget."
+            "body": "<p>Adds a new child widget.</p>"
           }
         ],
         "@param": [
@@ -221,7 +221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index"
+            "body": "<p>Add a child widget at the specified index</p>"
           }
         ],
         "@param": [
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget"
+            "body": "<p>Add a widget before another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -305,7 +305,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget"
+            "body": "<p>Add a widget after another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -373,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index."
+            "body": "<p>Remove the widget at the specified index.</p>"
           }
         ],
         "@param": [
@@ -408,15 +408,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.mobile.layout.Abstract"
           }
         ]
@@ -434,7 +434,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -459,7 +459,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -501,7 +501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -557,7 +557,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -606,7 +606,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -669,7 +669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [

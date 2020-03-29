@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2006 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2006 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Handles scheduling of requests to be sent to a server.\n\nThis class is a singleton and is used by qx.io.remote.Request to schedule its\nrequests. It should not be used directly.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Handles scheduling of requests to be sent to a server.\n This class is a singleton and is used by qx.io.remote.Request to schedule its\n requests. It should not be used directly.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@internal": [
@@ -46,7 +46,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 59,
@@ -57,7 +57,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether queue is enabled or not."
+            "body": "<p>Indicates whether queue is enabled or not.</p>"
           }
         ]
       },
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum number of total requests."
+            "body": "<p>The maximum number of total requests.</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximum number of parallel requests."
+            "body": "<p>Maximum number of parallel requests.</p>"
           }
         ]
       },
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default timeout for remote requests in milliseconds."
+            "body": "<p>Default timeout for remote requests in milliseconds.</p>"
           }
         ]
       },
@@ -251,11 +251,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nQUEUE HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  QUEUE HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get a list of queued requests"
+            "body": "<p>Get a list of queued requests</p>"
           }
         ],
         "@return": [
@@ -285,15 +285,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of active queued requests, each one wrapped in an instance of\n{@link qx.io.remote.Exchange}"
+            "body": "<p>Get a list of active queued requests, each one wrapped in an instance of\n {@link qx.io.remote.Exchange}</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.io.remote.Exchange[]} The list of active queued requests, each one\nwrapped in an instance of {@link qx.io.remote.Exchange}",
+            "body": "{qx.io.remote.Exchange[]} The list of active queued requests, each one\n   wrapped in an instance of {@link qx.io.remote.Exchange}",
             "type": "qx.io.remote.Exchange[]",
-            "description": " The list of active queued requests, each one\nwrapped in an instance of {@link qx.io.remote.Exchange}"
+            "description": " The list of active queued requests, each one\n   wrapped in an instance of {@link qx.io.remote.Exchange}"
           }
         ]
       },
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates debug output"
+            "body": "<p>Generates debug output</p>"
           }
         ]
       },
@@ -337,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks the queue if any request is left to send and uses the transport\nlayer to send the open requests.\nThis method calls itself until every request in the queue is send."
+            "body": "<p>Checks the queue if any request is left to send and uses the transport\n layer to send the open requests.\n This method calls itself until every request in the queue is send.</p>"
           }
         ]
       },
@@ -359,7 +359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a transport object from the active queue and disposes the\ntransport object in order stop the request."
+            "body": "<p>Removes a transport object from the active queue and disposes the\n transport object in order stop the request.</p>"
           }
         ],
         "@param": [
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listens for the \"sending\" event of the transport object and increases\nthe counter for active requests."
+            "body": "<p>Listens for the \"sending\" event of the transport object and increases\n the counter for active requests.</p>"
           }
         ],
         "@param": [
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listens for the \"receiving\" event of the transport object and delegate\nthe event to the current request object."
+            "body": "<p>Listens for the \"receiving\" event of the transport object and delegate\n the event to the current request object.</p>"
           }
         ],
         "@param": [
@@ -474,7 +474,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listens for the \"completed\" event of the transport object and decreases\nthe counter for active requests."
+            "body": "<p>Listens for the \"completed\" event of the transport object and decreases\n the counter for active requests.</p>"
           }
         ],
         "@param": [
@@ -505,11 +505,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTIMEOUT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TIMEOUT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Listens for the \"interval\" event of the transport object and checks\nif the active requests are timed out."
+            "body": "<p>Listens for the \"interval\" event of the transport object and checks\n if the active requests are timed out.</p>"
           }
         ],
         "@param": [
@@ -540,11 +540,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMODIFIERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MODIFIERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -569,11 +569,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCORE METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CORE METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Add the request to the pending requests queue."
+            "body": "<p>Add the request to the pending requests queue.</p>"
           }
         ],
         "@param": [
@@ -604,7 +604,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the request from the pending requests queue.\n\nThe underlying transport of the request is forced into the aborted\nstate (\"aborted\") and listeners of the \"aborted\"\nsignal are notified about the event. If the request isn't in the\npending requests queue, this method is a noop."
+            "body": "<p>Remove the request from the pending requests queue.\n  The underlying transport of the request is forced into the aborted\n  state (\"aborted\") and listeners of the \"aborted\"\n  signal are notified about the event. If the request isn't in the\n  pending requests queue, this method is a noop.</p>"
           }
         ],
         "@param": [
@@ -1033,7 +1033,7 @@
     "location": {
       "start": {
         "line": 514,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 519,
@@ -1044,7 +1044,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nCarsten Lergenmueller (carstenl)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Carsten Lergenmueller (carstenl)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A header cell renderer which renders an icon (only). The icon cannot be combined\nwith text."
+          "body": "<p>A header cell renderer which renders an icon (only). The icon cannot be combined\n with text.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 55,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -63,9 +63,9 @@
         },
         {
           "name": "@param",
-          "body": "tooltip {String ? \"\"} Text of the tooltip to show if the pointer hovers over the\nicon",
+          "body": "tooltip {String ? \"\"} Text of the tooltip to show if the pointer hovers over the\n                             icon",
           "paramName": "tooltip",
-          "description": " Text of the tooltip to show if the pointer hovers over the\nicon",
+          "description": " Text of the tooltip to show if the pointer hovers over the\n                             icon",
           "optional": true,
           "defaultValue": "\"\"",
           "type": "String"
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "URL of the icon to show"
+            "body": "<p>URL of the icon to show</p>"
           }
         ]
       },
@@ -116,22 +116,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate. This map has the same structure as in {@link #createHeaderCell}.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n      create. This map has the same structure as in {@link #createHeaderCell}.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate. This map has the same structure as in {@link #createHeaderCell}.",
+            "description": " A map containing the information about the cell to\n      create. This map has the same structure as in {@link #createHeaderCell}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "cellWidget {qx.ui.core.Widget} the widget that renders the header cell. This is\nthe same widget formally created by {@link #createHeaderCell}.",
+            "body": "cellWidget {qx.ui.core.Widget} the widget that renders the header cell. This is\n      the same widget formally created by {@link #createHeaderCell}.",
             "paramName": "cellWidget",
-            "description": " the widget that renders the header cell. This is\nthe same widget formally created by {@link #createHeaderCell}.",
+            "description": " the widget that renders the header cell. This is\n      the same widget formally created by {@link #createHeaderCell}.",
             "type": "qx.ui.core.Widget"
           }
         ]

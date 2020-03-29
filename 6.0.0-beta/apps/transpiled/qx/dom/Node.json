@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Basic node creation and type detection"
+          "body": "<p>Basic node creation and type detection</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nNODE TYPES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  NODE TYPES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -57,7 +57,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Map} Node type:\n\n* ELEMENT\n* ATTRIBUTE\n* TEXT\n* CDATA_SECTION\n* ENTITY_REFERENCE\n* ENTITY\n* PROCESSING_INSTRUCTION\n* COMMENT\n* DOCUMENT\n* DOCUMENT_TYPE\n* DOCUMENT_FRAGMENT\n* NOTATION"
+            "body": "{Map} Node type:\n* ELEMENT\n* ATTRIBUTE\n* TEXT\n* CDATA_SECTION\n* ENTITY_REFERENCE\n* ENTITY\n* PROCESSING_INSTRUCTION\n* COMMENT\n* DOCUMENT\n* DOCUMENT_TYPE\n* DOCUMENT_FRAGMENT\n* NOTATION"
           }
         ]
       },
@@ -233,11 +233,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDOCUMENT ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DOCUMENT ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the owner document of the given node"
+            "body": "<p>Returns the owner document of the given node</p>"
           }
         ],
         "@param": [
@@ -280,7 +280,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the DOM2 <code>defaultView</code> (window)."
+            "body": "<p>Returns the DOM2 <code>defaultView</code> (window).</p>"
           }
         ],
         "@param": [
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the document element. (Logical root node)\n\nThis is a convenience attribute that allows direct access to the child\nnode that is the root element of the document. For HTML documents,\nthis is the element with the tagName \"HTML\"."
+            "body": "<p>Returns the document element. (Logical root node)\n This is a convenience attribute that allows direct access to the child\n node that is the root element of the document. For HTML documents,\n this is the element with the tagName \"HTML\".</p>"
           }
         ],
         "@param": [
@@ -366,7 +366,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the body element. (Visual root node)\n\nThis normally only makes sense for HTML documents. It returns\nthe content area of the HTML document."
+            "body": "<p>Returns the body element. (Visual root node)\n This normally only makes sense for HTML documents. It returns\n the content area of the HTML document.</p>"
           }
         ],
         "@param": [
@@ -409,11 +409,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTYPE TESTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TYPE TESTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether the given object is a DOM node"
+            "body": "<p>Whether the given object is a DOM node</p>"
           }
         ],
         "@param": [
@@ -452,7 +452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given object is a DOM element node"
+            "body": "<p>Whether the given object is a DOM element node</p>"
           }
         ],
         "@param": [
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given object is a DOM document node"
+            "body": "<p>Whether the given object is a DOM document node</p>"
           }
         ],
         "@param": [
@@ -530,7 +530,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given object is a DOM document fragment node"
+            "body": "<p>Whether the given object is a DOM document fragment node</p>"
           }
         ],
         "@param": [
@@ -569,7 +569,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given object is a DOM text node"
+            "body": "<p>Whether the given object is a DOM text node</p>"
           }
         ],
         "@param": [
@@ -608,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the given object is a browser window object."
+            "body": "<p>Check whether the given object is a browser window object.</p>"
           }
         ],
         "@param": [
@@ -647,7 +647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the node has the given node name"
+            "body": "<p>Whether the node has the given node name</p>"
           }
         ],
         "@param": [
@@ -693,11 +693,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILITIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILITIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the node name as lower case string"
+            "body": "<p>Get the node name as lower case string</p>"
           }
         ],
         "@param": [
@@ -736,15 +736,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the text content of an node where the node may be of node type\nNODE_ELEMENT, NODE_ATTRIBUTE, NODE_TEXT or NODE_CDATA"
+            "body": "<p>Returns the text content of an node where the node may be of node type\n NODE<em>ELEMENT, NODE</em>ATTRIBUTE, NODE<em>TEXT or NODE</em>CDATA</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "node {Node} the node from where the search should start.\nIf the node has subnodes the text contents are recursively retreived and joined.",
+            "body": "node {Node} the node from where the search should start.\n     If the node has subnodes the text contents are recursively retreived and joined.",
             "paramName": "node",
-            "description": " the node from where the search should start.\nIf the node has subnodes the text contents are recursively retreived and joined.",
+            "description": " the node from where the search should start.\n     If the node has subnodes the text contents are recursively retreived and joined.",
             "type": "qx.dom.Node"
           }
         ],
@@ -781,7 +781,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given node is a block node"
+            "body": "<p>Checks if the given node is a block node</p>"
           }
         ],
         "@param": [

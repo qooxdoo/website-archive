@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A cell editor factory creating text fields."
+          "body": "<p>A cell editor factory creating text fields.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n{@link #createCellEditor}.",
+            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n      {@link #createCellEditor}.",
             "paramName": "cellEditor",
-            "description": " The cell editor formally created by\n{@link #createCellEditor}.",
+            "description": " The cell editor formally created by\n      {@link #createCellEditor}.",
             "type": "qx.ui.core.Widget"
           }
         ],

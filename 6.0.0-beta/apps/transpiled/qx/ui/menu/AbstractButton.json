@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The abstract menu button class is used for all type of menu content\nfor example normal buttons, checkboxes or radiobuttons."
+          "body": "<p>The abstract menu button class is used for all type of menu content\n for example normal buttons, checkboxes or radiobuttons.</p>"
         }
       ],
       "@childControl": [
@@ -72,7 +72,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 56,
@@ -83,7 +83,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -133,7 +133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label text of the button"
+            "body": "<p>The label text of the button</p>"
           }
         ]
       },
@@ -160,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a sub menu should be shown and which one"
+            "body": "<p>Whether a sub menu should be shown and which one</p>"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The icon to use"
+            "body": "<p>The icon to use</p>"
           }
         ]
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether the label for the command (shortcut) should be visible or not."
+            "body": "<p>Indicates whether the label for the command (shortcut) should be visible or not.</p>"
           }
         ]
       },
@@ -253,26 +253,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -309,7 +309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -341,11 +341,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT UTILS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT UTILS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the dimensions of all children"
+            "body": "<p>Returns the dimensions of all children</p>"
           }
         ],
         "@return": [
@@ -375,11 +375,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for tap"
+            "body": "<p>Event listener for tap</p>"
           }
         ],
         "@param": [
@@ -410,7 +410,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for keypress event"
+            "body": "<p>Event listener for keypress event</p>"
           }
         ],
         "@param": [
@@ -441,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for command changes. Updates the text of the shortcut."
+            "body": "<p>Event listener for command changes. Updates the text of the shortcut.</p>"
           }
         ],
         "@param": [
@@ -472,7 +472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update command string on locale changes"
+            "body": "<p>Update command string on locale changes</p>"
           }
         ]
       },
@@ -494,11 +494,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -523,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -548,7 +548,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -573,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -596,11 +596,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMMAND PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMMAND PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the command of this executable."
+            "body": "<p>Set the command of this executable.</p>"
           }
         ],
         "@param": [
@@ -627,7 +627,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set command of this executable."
+            "body": "<p>Return the current set command of this executable.</p>"
           }
         ],
         "@return": [
@@ -661,7 +661,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the execute event of the command."
+            "body": "<p>Handler for the execute event of the command.</p>"
           }
         ],
         "@param": [
@@ -4471,7 +4471,7 @@
     "location": {
       "start": {
         "line": 373,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 387,
@@ -4482,7 +4482,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

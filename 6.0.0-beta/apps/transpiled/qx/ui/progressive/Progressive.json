@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<i>Progressive</i>.\n\nFollow progressive instructions provided by a data model.  A variable\nnumber of instructions are executed at one time, after which control is\nreturned briefly to the browser.  This allows browser rendering between\nbatches of instructions, improving the visual experience.\n\n<i>Progressive</i> may be used for various purposes.  Two predefined\npurposes for which \"renderers\" are provided, are a progressively-rendered\ntable which allows variable row height, and a program load/initialization\nrenderer with progress bar.  (Note that the term \"renderer\" is interpreted\nquite broadly.  A renderer needn't actually render; rather it is just some\nset of activities that takes place at one time, e.g a row of table data or\na single widget added to the document or a sending a request to a server,\netc.)"
+          "body": "<p><i>Progressive</i>.\n Follow progressive instructions provided by a data model.  A variable\n number of instructions are executed at one time, after which control is\n returned briefly to the browser.  This allows browser rendering between\n batches of instructions, improving the visual experience.\n <i>Progressive</i> may be used for various purposes.  Two predefined\n purposes for which \"renderers\" are provided, are a progressively-rendered\n table which allows variable row height, and a program load/initialization\n renderer with progress bar.  (Note that the term \"renderer\" is interpreted\n quite broadly.  A renderer needn't actually render; rather it is just some\n set of activities that takes place at one time, e.g a row of table data or\n a single widget added to the document or a sending a request to a server,\n etc.)</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 45,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 78,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "structure {qx.ui.progressive.structure.Abstract}\nThe structure of the Progressive pane.",
+          "body": "structure {qx.ui.progressive.structure.Abstract}\n   The structure of the Progressive pane.",
           "paramName": "structure",
-          "description": "\nThe structure of the Progressive pane.",
+          "description": "\n   The structure of the Progressive pane.",
           "type": "qx.ui.progressive.structure.Abstract"
         }
       ]
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event fired when rendering begins.\n\nThe event data is an object with the following members:\n<dl>\n<dt>state</dt>\n<dd>\nThe state object.\n</dd>\n\n<dt>initial</dt>\nThe number of elements that are available to be rendered\n<dd>\n</dd>\n</dl>"
+            "body": "<p>Event fired when rendering begins.\n The event data is an object with the following members:\n </p>\n<dl>\n   <dt>state</dt>\n   <dd>\n     The state object.\n   </dd>\n   <dt>initial</dt>\n     The number of elements that are available to be rendered\n   <dd>\n   </dd>\n </dl>"
           }
         ]
       },
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event fired when rendering ends.  The data is the state object."
+            "body": "<p>Event fired when rendering ends.  The data is the state object.</p>"
           }
         ]
       },
@@ -120,7 +120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired after each batch of elements is rendered, and\ncontrol is about to be yielded to the browser.  This is an appropriate\nevent to listen for, to implement a progress bar.\n\nThe event data is an object with the following members:\n<dl>\n<dt>initial</dt>\n<dd>\nThe number of elements that were available at the start of this\nrendering request.\n</dd>\n\n<dt>remaining</dt>\n<dd>\nThe number of elements still remaining to be rendered.\n</dd>\n</dl>"
+            "body": "<p>This event is fired after each batch of elements is rendered, and\n control is about to be yielded to the browser.  This is an appropriate\n event to listen for, to implement a progress bar.\n The event data is an object with the following members:\n </p>\n<dl>\n   <dt>initial</dt>\n   <dd>\n     The number of elements that were available at the start of this\n     rendering request.\n   </dd>\n   <dt>remaining</dt>\n   <dd>\n     The number of elements still remaining to be rendered.\n   </dd>\n </dl>"
           }
         ]
       },
@@ -142,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired after each element is rendered.\n\nThe event data is an object with the following members:\n<dl>\n<dt>initial</dt>\n<dd>\nThe number of elements that were available at the start of this\nrendering request.\n</dd>\n\n<dt>remaining</dt>\n<dd>\nThe number of elements still remaining to be rendered.\n</dd>\n\n<dt>element</dt>\n<dd>\nThe object, returned by the data model's getNextElement() method,\nthat was just rendered.\n</dd>\n</dl>\n\nNote: Unless batchSize is set to 1 or we happen to be at the end of a\nbatch, widgets will not be rendered at this time.  Use this event\nfor programmatically processing rendered elements, but not for\nsuch things as progress bars.  Instead, where only user-visible\nchanges such as progress bars are being updated, use the\n\"progress\" event."
+            "body": "<p>This event is fired after each element is rendered.\n The event data is an object with the following members:\n </p>\n<dl>\n   <dt>initial</dt>\n   <dd>\n     The number of elements that were available at the start of this\n     rendering request.\n   </dd>\n   <dt>remaining</dt>\n   <dd>\n     The number of elements still remaining to be rendered.\n   </dd>\n   <dt>element</dt>\n   <dd>\n     The object, returned by the data model's getNextElement() method,\n     that was just rendered.\n   </dd>\n </dl>\n<p>Note: Unless batchSize is set to 1 or we happen to be at the end of a\n       batch, widgets will not be rendered at this time.  Use this event\n       for programmatically processing rendered elements, but not for\n       such things as progress bars.  Instead, where only user-visible\n       changes such as progress bars are being updated, use the\n       \"progress\" event.</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The data model."
+            "body": "<p>The data model.</p>"
           }
         ]
       },
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Number of elements to render at one time.  After this number of\nelements has been rendered, control will be yielded to the browser\nallowing the elements to actually be displayed.  A short-interval timer\nwill be set, to regain control to render the next batch of elements."
+            "body": "<p>Number of elements to render at one time.  After this number of\n elements has been rendered, control will be yielded to the browser\n allowing the elements to actually be displayed.  A short-interval timer\n will be set, to regain control to render the next batch of elements.</p>"
           }
         ]
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flush the widget queue after each batch is rendered.  This is\nparticularly relevant for such things as progressive loading, where\nthe whole purpose is to be able to see the loading progressing."
+            "body": "<p>Flush the widget queue after each batch is rendered.  This is\n particularly relevant for such things as progressive loading, where\n the whole purpose is to be able to see the loading progressing.</p>"
           }
         ]
       },
@@ -240,7 +240,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delay between rendering elements. Zero is normally adequate, but\nthere are times that the user wants more time between rendering\nsome elements."
+            "body": "<p>Delay between rendering elements. Zero is normally adequate, but\n there are times that the user wants more time between rendering\n some elements.</p>"
           }
         ]
       },
@@ -351,7 +351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the structure object"
+            "body": "<p>Return the structure object</p>"
           }
         ],
         "@return": [
@@ -381,22 +381,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a renderer that can be referenced by the data model."
+            "body": "<p>Add a renderer that can be referenced by the data model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String}\nName referenced in the data model when this renderer is to be used.",
+            "body": "name {String}\n   Name referenced in the data model when this renderer is to be used.",
             "paramName": "name",
-            "description": "\nName referenced in the data model when this renderer is to be used.",
+            "description": "\n   Name referenced in the data model when this renderer is to be used.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "renderer {qx.ui.progressive.renderer.Abstract}\nRenderer object used if the data model references the specified name.",
+            "body": "renderer {qx.ui.progressive.renderer.Abstract}\n   Renderer object used if the data model references the specified name.",
             "paramName": "renderer",
-            "description": "\nRenderer object used if the data model references the specified name.",
+            "description": "\n   Renderer object used if the data model references the specified name.",
             "type": "qx.ui.progressive.renderer.Abstract"
           }
         ]
@@ -419,15 +419,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a previously added renderer."
+            "body": "<p>Remove a previously added renderer.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String}\nRemove the renderer which was assigned this name.",
+            "body": "name {String}\n   Remove the renderer which was assigned this name.",
             "paramName": "name",
-            "description": "\nRemove the renderer which was assigned this name.",
+            "description": "\n   Remove the renderer which was assigned this name.",
             "type": "String"
           }
         ]
@@ -450,7 +450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Render the elements available from the data model.  Elements are\nrendered in batches of size {@link #batchSize}.  After each batch of\nelements are rendered, control is returned temporarily to the\nbrowser, so that actual screen updates can take place.  A timer is\nused to regain control a short while later, in order to render the\nnext batch of element."
+            "body": "<p>Render the elements available from the data model.  Elements are\n rendered in batches of size {@link #batchSize}.  After each batch of\n elements are rendered, control is returned temporarily to the\n browser, so that actual screen updates can take place.  A timer is\n used to regain control a short while later, in order to render the\n next batch of element.</p>"
           }
         ]
       },
@@ -472,22 +472,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when the dataModel property is changed."
+            "body": "<p>Called when the dataModel property is changed.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {qx.ui.progressive.model.Abstract}\nThe new data model.",
+            "body": "value {qx.ui.progressive.model.Abstract}\n   The new data model.",
             "paramName": "value",
-            "description": "\nThe new data model.",
+            "description": "\n   The new data model.",
             "type": "qx.ui.progressive.model.Abstract"
           },
           {
             "name": "@param",
-            "body": "old {qx.ui.progressive.model.Abstract}\nThe old data model.",
+            "body": "old {qx.ui.progressive.model.Abstract}\n   The old data model.",
             "paramName": "old",
-            "description": "\nThe old data model.",
+            "description": "\n   The old data model.",
             "type": "qx.ui.progressive.model.Abstract"
           }
         ]
@@ -513,15 +513,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Render a batch of elements.  The batch size is determined by the\nProgressive's batch size at the time that rendering began.  That batch\nsize was copied into the {@link qx.ui.progressive.State} object and is\nused herein."
+            "body": "<p>Render a batch of elements.  The batch size is determined by the\n Progressive's batch size at the time that rendering began.  That batch\n size was copied into the {@link qx.ui.progressive.State} object and is\n used herein.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "state {qx.ui.progressive.State}\nThe current state of rendering.",
+            "body": "state {qx.ui.progressive.State}\n   The current state of rendering.",
             "paramName": "state",
-            "description": "\nThe current state of rendering.",
+            "description": "\n   The current state of rendering.",
             "type": "qx.ui.progressive.State"
           }
         ]
@@ -544,7 +544,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create the map of empty objects for use by the renderers."
+            "body": "<p>Create the map of empty objects for use by the renderers.</p>"
           }
         ],
         "@return": [
@@ -574,15 +574,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event callback for the \"dataAvailable\" event."
+            "body": "<p>Event callback for the \"dataAvailable\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Data}\nA \"dataAvailable\" event's data contains the initial number of elements",
+            "body": "e {qx.event.type.Data}\n   A \"dataAvailable\" event's data contains the initial number of elements",
             "paramName": "e",
-            "description": "\nA \"dataAvailable\" event's data contains the initial number of elements",
+            "description": "\n   A \"dataAvailable\" event's data contains the initial number of elements",
             "type": "qx.event.type.Data"
           }
         ]
@@ -4367,7 +4367,7 @@
     "location": {
       "start": {
         "line": 468,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 479,

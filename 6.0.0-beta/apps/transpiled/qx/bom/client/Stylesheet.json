@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Internal class which contains the checks used by {@link qx.core.Environment}.\nAll checks in here are marked as internal which means you should never use\nthem directly.\n\nThis class contains checks related to Stylesheet objects."
+          "body": "<p>Internal class which contains the checks used by {@link qx.core.Environment}.\n All checks in here are marked as internal which means you should never use\n them directly.\n This class contains checks related to Stylesheet objects.</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a stylesheet to be used for feature checks"
+            "body": "<p>Returns a stylesheet to be used for feature checks</p>"
           }
         ],
         "@return": [
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for IE's non-standard document.createStyleSheet function.\nIn IE9 (standards mode), the typeof check returns \"function\" so false is\nreturned. This is intended since IE9 supports the DOM-standard\ncreateElement(\"style\") which should be used instead."
+            "body": "<p>Check for IE's non-standard document.createStyleSheet function.\n In IE9 (standards mode), the typeof check returns \"function\" so false is\n returned. This is intended since IE9 supports the DOM-standard\n createElement(\"style\") which should be used instead.</p>"
           }
         ],
         "@internal": [
@@ -95,9 +95,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the browser supports\ndocument.createStyleSheet",
+            "body": "{Boolean} <code>true</code> if the browser supports\n document.createStyleSheet",
             "type": "Boolean",
-            "description": " <code>true</code> if the browser supports\ndocument.createStyleSheet"
+            "description": " <code>true</code> if the browser supports\n document.createStyleSheet"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for stylesheet.insertRule. Legacy IEs do not support this."
+            "body": "<p>Check for stylesheet.insertRule. Legacy IEs do not support this.</p>"
           }
         ],
         "@internal": [
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check for stylesheet.deleteRule. Legacy IEs do not support this."
+            "body": "<p>Check for stylesheet.deleteRule. Legacy IEs do not support this.</p>"
           }
         ],
         "@internal": [
@@ -191,7 +191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decides whether to use the legacy IE-only stylesheet.addImport or the\nDOM-standard stylesheet.insertRule('@import [...]')"
+            "body": "<p>Decides whether to use the legacy IE-only stylesheet.addImport or the\n DOM-standard stylesheet.insertRule('@import […]')</p>"
           }
         ],
         "@internal": [
@@ -227,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decides whether to use the legacy IE-only stylesheet.removeImport or the\nDOM-standard stylesheet.deleteRule('@import [...]')"
+            "body": "<p>Decides whether to use the legacy IE-only stylesheet.removeImport or the\n DOM-standard stylesheet.deleteRule('@import […]')</p>"
           }
         ],
         "@internal": [
@@ -253,13 +253,14 @@
     "location": {
       "start": {
         "line": 113,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 119,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Generate permutations of a map."
+          "body": "<p>Generate permutations of a map.</p>"
         }
       ]
     }
@@ -43,7 +43,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The first parameter is a map with array values. This function computes\nall combinations of the array values and call the callback for each\ncombination.\n\ne.g. a value of\n<pre class=\"javascript\">\n{\na: [1, 2],\nb: [\"a\", \"b\"]\n}\n</pre>\nwould call the callback for each of these maps:\n<pre class=\"javascript\">\n{ a: 1, b: \"a\" },\n{ a: 1, b: \"b\" },\n{ a: 2, b: \"a\" },\n{ a: 2, b: \"b\" }\n</pre>"
+            "body": "<p>The first parameter is a map with array values. This function computes\n all combinations of the array values and call the callback for each\n combination.\n e.g. a value of\n </p>\n<pre class=\"javascript\">\n   {\n     a: [1, 2],\n     b: [\"a\", \"b\"]\n   }\n </pre>\n<p>would call the callback for each of these maps:\n </p>\n<pre class=\"javascript\">\n  { a: 1, b: \"a\" },\n  { a: 1, b: \"b\" },\n  { a: 2, b: \"a\" },\n  { a: 2, b: \"b\" }\n </pre>"
           }
         ],
         "@param": [

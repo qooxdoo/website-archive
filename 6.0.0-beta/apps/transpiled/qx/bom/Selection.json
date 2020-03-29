@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nAlexander Steitz (aback)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Alexander Steitz (aback)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Low-level selection API to select elements like input and textarea elements\nas well as text nodes or elements which their child nodes."
+          "body": "<p>Low-level selection API to select elements like input and textarea elements\n as well as text nodes or elements which their child nodes.</p>"
         }
       ],
       "@ignore": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the native selection object."
+            "body": "<p>Returns the native selection object.</p>"
           }
         ],
         "@signature": [
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current selected text."
+            "body": "<p>Returns the current selected text.</p>"
           }
         ],
         "@signature": [
@@ -143,7 +143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the length of the selection"
+            "body": "<p>Returns the length of the selection</p>"
           }
         ],
         "@signature": [
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the start of the selection"
+            "body": "<p>Returns the start of the selection</p>"
           }
         ],
         "@signature": [
@@ -209,9 +209,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} start of current selection or \"-1\" if the current\nselection is not within the given node",
+            "body": "{Integer} start of current selection or \"-1\" if the current\n                   selection is not within the given node",
             "type": "Integer",
-            "description": " start of current selection or \"-1\" if the current\nselection is not within the given node"
+            "description": " start of current selection or \"-1\" if the current\n                   selection is not within the given node"
           }
         ]
       },
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the end of the selection"
+            "body": "<p>Returns the end of the selection</p>"
           }
         ],
         "@signature": [
@@ -278,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Utility method to check for an input or textarea element"
+            "body": "<p>Utility method to check for an input or textarea element</p>"
           }
         ],
         "@param": [
@@ -317,7 +317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a selection at the given node with the given start and end.\nFor text nodes, input and textarea elements the start and end parameters\nset the boundaries at the text.\nFor element nodes the start and end parameters are used to select the\nchildNodes of the given element."
+            "body": "<p>Sets a selection at the given node with the given start and end.\n For text nodes, input and textarea elements the start and end parameters\n set the boundaries at the text.\n For element nodes the start and end parameters are used to select the\n childNodes of the given element.</p>"
           }
         ],
         "@signature": [
@@ -376,7 +376,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects all content/childNodes of the given node"
+            "body": "<p>Selects all content/childNodes of the given node</p>"
           }
         ],
         "@param": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the selection on the given node."
+            "body": "<p>Clears the selection on the given node.</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The default list item renderer. Used as the default renderer by the\n{@link qx.ui.mobile.list.provider.Provider}. Configure the renderer\nby setting the {@link qx.ui.mobile.list.List#delegate} property.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n\n// Create the list with a delegate that\n// configures the list item.\nvar list = new qx.ui.mobile.list.List({\nconfigureItem : function(item, data, row)\n{\nitem.setImage(\"path/to/image.png\");\nitem.setTitle(data.title);\nitem.setSubtitle(data.subtitle);\n}\n});\n</pre>\n\nThis example creates a list with a delegate that configures the list item with\nthe given data."
+          "body": "<p>The default list item renderer. Used as the default renderer by the\n {@link qx.ui.mobile.list.provider.Provider}. Configure the renderer\n by setting the {@link qx.ui.mobile.list.List#delegate} property.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n\n\n   var list = new qx.ui.mobile.list.List({\n     configureItem : function(item, data, row)\n     {\n       item.setImage(\"path/to/image.png\");\n       item.setTitle(data.title);\n       item.setSubtitle(data.subtitle);\n     }\n   });\n </pre>\n<p>This example creates a list with a delegate that configures the list item with\n the given data.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 50,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 56,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__image": {
@@ -115,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the image widget which is used for this renderer."
+            "body": "<p>Returns the image widget which is used for this renderer.</p>"
           }
         ],
         "@return": [
@@ -145,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the title widget which is used for this renderer."
+            "body": "<p>Returns the title widget which is used for this renderer.</p>"
           }
         ],
         "@return": [
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the subtitle widget which is used for this renderer."
+            "body": "<p>Returns the subtitle widget which is used for this renderer.</p>"
           }
         ],
         "@return": [
@@ -205,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the source of the image widget."
+            "body": "<p>Sets the source of the image widget.</p>"
           }
         ],
         "@param": [
@@ -236,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value of the title widget."
+            "body": "<p>Sets the value of the title widget.</p>"
           }
         ],
         "@param": [
@@ -267,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value of the subtitle widget."
+            "body": "<p>Sets the value of the subtitle widget.</p>"
           }
         ],
         "@param": [
@@ -298,7 +299,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inits the widgets for the renderer."
+            "body": "<p>Inits the widgets for the renderer.</p>"
           }
         ]
       },
@@ -320,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns the right container composite. Override this to adapt the widget code."
+            "body": "<p>Creates and returns the right container composite. Override this to adapt the widget code.</p>"
           }
         ],
         "@return": [
@@ -350,7 +351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns the image widget. Override this to adapt the widget code."
+            "body": "<p>Creates and returns the image widget. Override this to adapt the widget code.</p>"
           }
         ],
         "@return": [
@@ -380,7 +381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns the title widget. Override this to adapt the widget code."
+            "body": "<p>Creates and returns the title widget. Override this to adapt the widget code.</p>"
           }
         ],
         "@return": [
@@ -410,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns the subtitle widget. Override this to adapt the widget code."
+            "body": "<p>Creates and returns the subtitle widget. Override this to adapt the widget code.</p>"
           }
         ],
         "@return": [
@@ -440,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1860,13 +1861,14 @@
     "location": {
       "start": {
         "line": 220,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 223,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

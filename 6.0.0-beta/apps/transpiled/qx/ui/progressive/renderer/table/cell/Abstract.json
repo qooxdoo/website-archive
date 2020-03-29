@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Cell Renderer for Progressive's Table.\n\nMany of the methods in this class accept a parameter called cellInfo.  This\nparameter is an object with the following members:\n\n<dl>\n<dt>\nstate\n</dt>\n<dd>\nThe {@link qx.ui.progressive.State} object pertaining to this rendering\nsession.\n</dd>\n\n<dt>\nrowDiv\n</dt>\n<dd>\nThe \"div\" DOM element of the row in which this cell is to be added.\n</dd>\n\n<dt>\nelement\n</dt>\n<dd>\nThe entire element object returned by the data model.\n</dd>\n\n<dt>\ndataIndex\n</dt>\n<dd>\nThe index into the data element provided by the data model.\nEffectively, this is the column number.\n</dd>\n\n<dt>\ncellData\n</dt>\n<dd>\nThe data from the data model, to be rendered.  This the specific column\ndata for the column being rendered, and is a shorthand for\nelement.data[element.dataIndex].\n</dd>\n\n<dt>\nheight <span style=\"color:red;\">Input/Output parameter!</span>\n</dt>\n<dd>\nOn input to a cell renderer, this contains the height, as determined to\ndate, for the current row.  The first column being rendered will\nreceive a height of zero.  Upon return, it may leave the height at\nzero, meaning that it will accept any minimum height, or may specify a\nminimum height by setting this member.  Subsequent column cell renderers\nwill receive the maximum height specified by any previous cell\nrenderer.  Upon completion of calling each of the cell renderers for a\nrow, the row height will be set to the value found in this member.\n</dd>\n</dl>"
+          "body": "<p>Cell Renderer for Progressive's Table.\n Many of the methods in this class accept a parameter called cellInfo.  This\n parameter is an object with the following members:\n </p>\n<dl>\n   <dt>\n     state\n   </dt>\n   <dd>\n     The {@link qx.ui.progressive.State} object pertaining to this rendering\n     session.\n   </dd>\n   <dt>\n     rowDiv\n   </dt>\n   <dd>\n     The \"div\" DOM element of the row in which this cell is to be added.\n   </dd>\n   <dt>\n     element\n   </dt>\n   <dd>\n     The entire element object returned by the data model.\n   </dd>\n   <dt>\n     dataIndex\n   </dt>\n   <dd>\n     The index into the data element provided by the data model.\n     Effectively, this is the column number.\n   </dd>\n   <dt>\n     cellData\n   </dt>\n   <dd>\n     The data from the data model, to be rendered.  This the specific column\n     data for the column being rendered, and is a shorthand for\n     element.data[element.dataIndex].\n   </dd>\n   <dt>\n     height <span style=\"color:red;\">Input/Output parameter!</span>\n   </dt>\n   <dd>\n     On input to a cell renderer, this contains the height, as determined to\n     date, for the current row.  The first column being rendered will\n     receive a height of zero.  Upon return, it may leave the height at\n     zero, meaning that it will accept any minimum height, or may specify a\n     minimum height by setting this member.  Subsequent column cell renderers\n     will receive the maximum height specified by any previous cell\n     renderer.  Upon completion of calling each of the cell renderers for a\n     row, the row height will be set to the value found in this member.\n   </dd>\n </dl>"
         }
       ]
     }
@@ -50,24 +50,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve any style characteristics the cell renderer wants applied to\nthis cell."
+            "body": "<p>Retrieve any style characteristics the cell renderer wants applied to\n this cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe style characteristics to be applied to this cell.",
+            "body": "{String}\n   The style characteristics to be applied to this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe style characteristics to be applied to this cell."
+            "description": "\n   The style characteristics to be applied to this cell."
           }
         ]
       },
@@ -89,24 +89,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve any extra attributes the cell renderer wants applied to this\ncell.  Extra attributes could be such things as\n\"onclick='handleClick()';\""
+            "body": "<p>Retrieve any extra attributes the cell renderer wants applied to this\n cell.  Extra attributes could be such things as\n \"onclick='handleClick()';\"</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe extra attributes to be applied to this cell.",
+            "body": "{String}\n   The extra attributes to be applied to this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe extra attributes to be applied to this cell."
+            "description": "\n   The extra attributes to be applied to this cell."
           }
         ]
       },
@@ -128,24 +128,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve the HTML content to be added to the cell div."
+            "body": "<p>Retrieve the HTML content to be added to the cell div.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe HTML content to be added to the cell div.",
+            "body": "{String}\n   The HTML content to be added to the cell div.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe HTML content to be added to the cell div."
+            "description": "\n   The HTML content to be added to the cell div."
           }
         ]
       },
@@ -167,24 +167,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given the provided cell information, generate the HTML for this\ncell."
+            "body": "<p>Given the provided cell information, generate the HTML for this\n cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe HTML required to create this cell.",
+            "body": "{String}\n   The HTML required to create this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe HTML required to create this cell."
+            "description": "\n   The HTML required to create this cell."
           }
         ]
       },

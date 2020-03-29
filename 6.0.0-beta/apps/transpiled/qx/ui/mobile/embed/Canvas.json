@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Creates a HTML canvas widget in your mobile application.\n\n*Example*\n\nHere is an example of how to use the canvas widget.\n\n<pre class='javascript'>\nvar canvas = new qx.ui.mobile.embed.Canvas();\n\ncanvas.setWidth(150);\ncanvas.setHeight(150);\nthis.getContent().add(canvas);\n\nvar ctx = canvas.getContext2d();\nctx.strokeStyle = '#3D72C9';\nctx.beginPath();\nctx.arc(75,85,50,0,Math.PI*2,true);\nctx.moveTo(110,85);\nctx.arc(75,85,35,0,Math.PI,false);\nctx.moveTo(65,75);\nctx.arc(60,75,5,0,Math.PI*2,true);\nctx.moveTo(95,75);\nctx.arc(90,75,5,0,Math.PI*2,true);\nctx.stroke();\n</pre>"
+          "body": "<p>Creates a HTML canvas widget in your mobile application.\n<em>Example</em>\n Here is an example of how to use the canvas widget.\n </p>\n<pre class='javascript'>\n var canvas = new qx.ui.mobile.embed.Canvas();\n canvas.setWidth(150);\n canvas.setHeight(150);\n this.getContent().add(canvas);\n var ctx = canvas.getContext2d();\n ctx.strokeStyle = '#3D72C9';\n ctx.beginPath();\n ctx.arc(75,85,50,0,Math.PI*2,true);\n ctx.moveTo(110,85);\n ctx.arc(75,85,35,0,Math.PI,false);\n ctx.moveTo(65,75);\n ctx.arc(60,75,5,0,Math.PI*2,true);\n ctx.moveTo(95,75);\n ctx.arc(90,75,5,0,Math.PI*2,true);\n ctx.stroke();\n </pre>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 61,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 64,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -71,7 +71,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the canvas element [<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvas\">W3C-HMTL5</a>]"
+            "body": "<p>Get the canvas element [<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvas\">W3C-HMTL5</a>]</p>"
           }
         ],
         "@return": [
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the width attribute of the canvas element. This property controls the\nsize of the canvas coordinate space."
+            "body": "<p>Set the width attribute of the canvas element. This property controls the\n size of the canvas coordinate space.</p>"
           }
         ],
         "@param": [
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the width attribute of the canvas element"
+            "body": "<p>Get the width attribute of the canvas element</p>"
           }
         ],
         "@return": [
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the height attribute of the canvas element. This property controls the\nsize of the canvas coordinate space."
+            "body": "<p>Set the height attribute of the canvas element. This property controls the\n size of the canvas coordinate space.</p>"
           }
         ],
         "@param": [
@@ -227,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the height attribute of the canvas element"
+            "body": "<p>Get the height attribute of the canvas element</p>"
           }
         ],
         "@return": [
@@ -257,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the canvas' 2D rendering context\n[<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvasrenderingcontext2d\">W3C-HTML5</a>].\nAll drawing operations are performed on this context."
+            "body": "<p>Get the canvas' 2D rendering context\n [<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvasrenderingcontext2d\">W3C-HTML5</a>].\n All drawing operations are performed on this context.</p>"
           }
         ],
         "@return": [

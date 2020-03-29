@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Storage implementation using HTML web storage:\nhttp://www.w3.org/TR/webstorage/"
+          "body": "<p>Storage implementation using HTML web storage:\n http://www.w3.org/TR/webstorage/</p>"
         }
       ],
       "@require": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Static accessor for the local storage."
+            "body": "<p>Static accessor for the local storage.</p>"
           }
         ],
         "@return": [
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Static accessor for the session storage."
+            "body": "<p>Static accessor for the session storage.</p>"
           }
         ],
         "@return": [
@@ -155,7 +155,7 @@
     "location": {
       "start": {
         "line": 68,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 70,
@@ -166,15 +166,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Create a new instance. Usually, you should take the static\naccessors to get your instance."
+          "body": "<p>Create a new instance. Usually, you should take the static\n accessors to get your instance.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "type {String} type of storage, either\n<code>local</code> or <code>session</code>.",
+          "body": "type {String} type of storage, either\n   <code>local</code> or <code>session</code>.",
           "paramName": "type",
-          "description": " type of storage, either\n<code>local</code> or <code>session</code>.",
+          "description": " type of storage, either\n   <code>local</code> or <code>session</code>.",
           "type": "String"
         }
       ]
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal used storage (the native object)."
+            "body": "<p>Returns the internal used storage (the native object).</p>"
           }
         ],
         "@internal": [
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the amount of key-value pairs stored."
+            "body": "<p>Returns the amount of key-value pairs stored.</p>"
           }
         ],
         "@return": [
@@ -276,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Store an item in the storage."
+            "body": "<p>Store an item in the storage.</p>"
           }
         ],
         "@param": [
@@ -314,7 +314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the stored item."
+            "body": "<p>Returns the stored item.</p>"
           }
         ],
         "@param": [
@@ -353,7 +353,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an item form the storage."
+            "body": "<p>Removes an item form the storage.</p>"
           }
         ],
         "@param": [
@@ -384,7 +384,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deletes every stored item in the storage."
+            "body": "<p>Deletes every stored item in the storage.</p>"
           }
         ]
       },
@@ -406,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the named key at the given index."
+            "body": "<p>Returns the named key at the given index.</p>"
           }
         ],
         "@param": [
@@ -445,15 +445,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to access every stored item."
+            "body": "<p>Helper to access every stored item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "body": "callback {Function} A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "paramName": "callback",
-            "description": " A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "description": " A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "type": "Function"
           },
           {

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The playground toolbar containing all buttons and menus."
+          "body": "<p>The playground toolbar containing all buttons and menus.</p>"
         }
       ],
       "@asset": [
@@ -77,13 +77,14 @@
     "location": {
       "start": {
         "line": 38,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 177,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "run": {
@@ -101,7 +102,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the run button is pressed."
+            "body": "<p>Fired if the run button is pressed.</p>"
           }
         ]
       },
@@ -123,7 +124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a new sample should be selected. The data contains the name of\nthe new sample."
+            "body": "<p>Fired if a new sample should be selected. The data contains the name of\n the new sample.</p>"
           }
         ]
       },
@@ -145,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data event if the code highlighting should be used."
+            "body": "<p>Data event if the code highlighting should be used.</p>"
           }
         ]
       },
@@ -167,7 +168,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data event if the log should be shown."
+            "body": "<p>Data event if the log should be shown.</p>"
           }
         ]
       },
@@ -189,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event which will indicate a url shortening action."
+            "body": "<p>Event which will indicate a url shortening action.</p>"
           }
         ]
       },
@@ -211,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event which will be fired to open the api."
+            "body": "<p>Event which will be fired to open the api.</p>"
           }
         ]
       },
@@ -233,7 +234,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event which will be fired to open the manual."
+            "body": "<p>Event which will be fired to open the manual.</p>"
           }
         ]
       },
@@ -255,7 +256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event which will be fired to open the demo browser."
+            "body": "<p>Event which will be fired to open the demo browser.</p>"
           }
         ]
       },
@@ -349,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controlls the presed state of the log button."
+            "body": "<p>Controlls the presed state of the log button.</p>"
           }
         ],
         "@param": [
@@ -380,7 +381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controlls the presed state of the samples button."
+            "body": "<p>Controlls the presed state of the samples button.</p>"
           }
         ],
         "@param": [
@@ -411,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controlls the enabled property of the highlight button."
+            "body": "<p>Controlls the enabled property of the highlight button.</p>"
           }
         ],
         "@param": [
@@ -442,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for the overflow handling. It is responsible for returning a\ncorresponding menu item for the given toolbar item."
+            "body": "<p>Helper for the overflow handling. It is responsible for returning a\n corresponding menu item for the given toolbar item.</p>"
           }
         ],
         "@param": [
@@ -4285,7 +4286,7 @@
     "location": {
       "start": {
         "line": 301,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 304,
@@ -4296,7 +4297,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

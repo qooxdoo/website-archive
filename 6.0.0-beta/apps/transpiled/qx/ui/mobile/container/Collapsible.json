@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Creates a Collapsible widget.\nIt contains a {@link qx.ui.mobile.basic.Label Label} for the header and a {@link qx.ui.mobile.container.Composite Composite}\nfor the content.\n\nThe visibility of the content composite toggles when user taps on header.\n\n*Example*\n\nHere is an example of how to use the widget.\n\n<pre class='javascript'>\nvar collapsible = new qx.ui.mobile.container.Collapsible(\"Collapsible Header\");\ncollapsible.setCombined(false);\ncollapsible.setCollapsed(false);\n\nvar label = new qx.ui.mobile.basic.Label(\"This is the content of the Collapsible.\");\ncollapsible.add(label);\n\n</pre>"
+          "body": "<p>Creates a Collapsible widget.\n It contains a {@link qx.ui.mobile.basic.Label Label} for the header and a {@link qx.ui.mobile.container.Composite Composite}\n for the content.\n The visibility of the content composite toggles when user taps on header.\n<em>Example</em>\n Here is an example of how to use the widget.\n </p>\n<pre class='javascript'>\n  var collapsible = new qx.ui.mobile.container.Collapsible(\"Collapsible Header\");\n  collapsible.setCombined(false);\n  collapsible.setCollapsed(false);\n  var label = new qx.ui.mobile.basic.Label(\"This is the content of the Collapsible.\");\n  collapsible.add(label);\n </pre>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 55,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 74,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The collapsed state of this widget."
+            "body": "<p>The collapsed state of this widget.</p>"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls whether the Collapsible's content\nshould be visually associated with its headers."
+            "body": "<p>Controls whether the Collapsible's content\n        should be visually associated with its headers.</p>"
           }
         ]
       },
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget to the Collapsible's content composite."
+            "body": "<p>Adds a new child widget to the Collapsible's content composite.</p>"
           }
         ],
         "@param": [
@@ -250,7 +250,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the Collapsible's header title."
+            "body": "<p>Setter for the Collapsible's header title.</p>"
           }
         ],
         "@param": [
@@ -281,7 +281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the Collapsible's header label."
+            "body": "<p>Getter for the Collapsible's header label.</p>"
           }
         ],
         "@return": [
@@ -311,7 +311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the Collapsible's content composite."
+            "body": "<p>Getter for the Collapsible's content composite.</p>"
           }
         ],
         "@return": [
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for the Collapsible's header."
+            "body": "<p>Factory method for the Collapsible's header.</p>"
           }
         ],
         "@return": [
@@ -371,7 +371,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for the Collapsible's content."
+            "body": "<p>Factory method for the Collapsible's content.</p>"
           }
         ],
         "@return": [
@@ -401,7 +401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -426,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -448,7 +448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -490,7 +490,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -546,7 +546,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -595,7 +595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -658,7 +658,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -1981,13 +1981,14 @@
     "location": {
       "start": {
         "line": 208,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 212,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

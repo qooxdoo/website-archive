@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Specialized page. This page includes already a {@link qx.ui.mobile.navigationbar.NavigationBar}\nand and a {@link qx.ui.mobile.container.Scroll} container.\nThe NavigationPage can only be used with a page manager {@link qx.ui.mobile.page.Manager}.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n\nvar manager = new qx.ui.mobile.page.Manager();\nvar page = new qx.ui.mobile.page.NavigationPage();\npage.setTitle(\"Page Title\");\npage.setShowBackButton(true);\npage.setBackButtonText(\"Back\")\npage.addListener(\"initialize\", function()\n{\nvar button = new qx.ui.mobile.form.Button(\"Next Page\");\npage.getContent().add(button);\n},this);\n\npage.addListener(\"back\", function()\n{\notherPage.show({animation:\"cube\", reverse:true});\n},this);\n\nmanager.addDetail(page);\npage.show();\n</pre>\n\nThis example creates a NavigationPage with a title and a back button. In the\n<code>initialize</code> lifecycle method a button is added."
+          "body": "<p>Specialized page. This page includes already a {@link qx.ui.mobile.navigationbar.NavigationBar}\n and and a {@link qx.ui.mobile.container.Scroll} container.\n The NavigationPage can only be used with a page manager {@link qx.ui.mobile.page.Manager}.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n  var manager = new qx.ui.mobile.page.Manager();\n  var page = new qx.ui.mobile.page.NavigationPage();\n  page.setTitle(\"Page Title\");\n  page.setShowBackButton(true);\n  page.setBackButtonText(\"Back\")\n  page.addListener(\"initialize\", function()\n  {\n    var button = new qx.ui.mobile.form.Button(\"Next Page\");\n    page.getContent().add(button);\n  },this);\n  page.addListener(\"back\", function()\n  {\n    otherPage.show({animation:\"cube\", reverse:true});\n  },this);\n  manager.addDetail(page);\n  page.show();\n </pre>\n<p>This example creates a NavigationPage with a title and a back button. In the\n <code>initialize</code> lifecycle method a button is added.</p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 69,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 76,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the user tapped on the navigation button"
+            "body": "<p>Fired when the user tapped on the navigation button</p>"
           }
         ]
       },
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The title of the page"
+            "body": "<p>The title of the page</p>"
           }
         ]
       },
@@ -140,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The back button text"
+            "body": "<p>The back button text</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The action button text"
+            "body": "<p>The action button text</p>"
           }
         ]
       },
@@ -192,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The action button icon"
+            "body": "<p>The action button icon</p>"
           }
         ]
       },
@@ -218,7 +218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the back button."
+            "body": "<p>Whether to show the back button.</p>"
           }
         ]
       },
@@ -244,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether the back button should be shown on tablet."
+            "body": "<p>Indicates whether the back button should be shown on tablet.</p>"
           }
         ]
       },
@@ -269,7 +269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the action button."
+            "body": "<p>Whether to show the action button.</p>"
           }
         ]
       },
@@ -295,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles visibility of NavigationBar in\nwrapping container {@link qx.ui.mobile.container.Navigation}"
+            "body": "<p>Toggles visibility of NavigationBar in\n wrapping container {@link qx.ui.mobile.container.Navigation}</p>"
           }
         ]
       },
@@ -320,7 +320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the transition duration (in seconds) for the effect when hiding/showing\nthe NavigationBar through boolean property navigationBarHidden."
+            "body": "<p>Sets the transition duration (in seconds) for the effect when hiding/showing\n the NavigationBar through boolean property navigationBarHidden.</p>"
           }
         ]
       },
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The CSS class to add to the content per default."
+            "body": "<p>The CSS class to add to the content per default.</p>"
           }
         ]
       },
@@ -509,7 +509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -543,7 +543,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the navigation bar title."
+            "body": "<p>Creates the navigation bar title.</p>"
           }
         ],
         "@return": [
@@ -573,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -598,7 +598,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -632,7 +632,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -666,7 +666,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the left container for the navigation bar."
+            "body": "<p>Creates the left container for the navigation bar.</p>"
           }
         ],
         "@return": [
@@ -696,7 +696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the right container for the navigation bar."
+            "body": "<p>Creates the right container for the navigation bar.</p>"
           }
         ],
         "@return": [
@@ -726,7 +726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the navigation bar back button.\nCreates the scroll container."
+            "body": "<p>Creates the navigation bar back button.\n Creates the scroll container.</p>"
           }
         ],
         "@return": [
@@ -756,7 +756,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the navigation bar button.\nCreates the content container."
+            "body": "<p>Creates the navigation bar button.\n Creates the content container.</p>"
           }
         ],
         "@return": [
@@ -786,7 +786,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content container. Add all your widgets to this container."
+            "body": "<p>Returns the content container. Add all your widgets to this container.</p>"
           }
         ],
         "@return": [
@@ -816,7 +816,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the back button widget."
+            "body": "<p>Returns the back button widget.</p>"
           }
         ],
         "@return": [
@@ -846,7 +846,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the action button widget."
+            "body": "<p>Returns the action button widget.</p>"
           }
         ],
         "@return": [
@@ -876,7 +876,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the isTablet flag."
+            "body": "<p>Sets the isTablet flag.</p>"
           }
         ],
         "@param": [
@@ -907,7 +907,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the isTablet flag."
+            "body": "<p>Returns the isTablet flag.</p>"
           }
         ],
         "@return": [
@@ -937,7 +937,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scroll container."
+            "body": "<p>Returns the scroll container.</p>"
           }
         ],
         "@return": [
@@ -967,7 +967,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a widget, below the NavigationBar."
+            "body": "<p>Adds a widget, below the NavigationBar.</p>"
           }
         ],
         "@param": [
@@ -998,7 +998,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1023,7 +1023,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1048,7 +1048,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1073,7 +1073,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1098,7 +1098,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1123,7 +1123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1148,7 +1148,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to show the back button."
+            "body": "<p>Helper method to show the back button.</p>"
           }
         ]
       },
@@ -1170,7 +1170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to show the button."
+            "body": "<p>Helper method to show the button.</p>"
           }
         ]
       },
@@ -1192,7 +1192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1218,7 +1218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the scroll container."
+            "body": "<p>Creates the scroll container.</p>"
           }
         ],
         "@return": [
@@ -1248,7 +1248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the content container."
+            "body": "<p>Creates the content container.</p>"
           }
         ],
         "@return": [
@@ -1278,7 +1278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the tap event occurs on the back button."
+            "body": "<p>Event handler. Called when the tap event occurs on the back button.</p>"
           }
         ],
         "@param": [
@@ -1309,7 +1309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the tap event occurs on the button."
+            "body": "<p>Event handler. Called when the tap event occurs on the button.</p>"
           }
         ],
         "@param": [
@@ -1355,7 +1355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the height of the container element."
+            "body": "<p>Sets the height of the container element.</p>"
           }
         ],
         "@param": [
@@ -1381,7 +1381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the width of the container element."
+            "body": "<p>Sets the width of the container element.</p>"
           }
         ],
         "@param": [
@@ -3357,13 +3357,17 @@
     "location": {
       "start": {
         "line": 551,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 558,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
-  "descendants": []
+  "descendants": [
+    "qxl.mobileshowcase.page.Overview",
+    "qxl.mobileshowcase.page.Abstract"
+  ]
 }

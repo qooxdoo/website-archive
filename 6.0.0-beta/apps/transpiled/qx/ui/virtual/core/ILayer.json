@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 86,
+        "line": 84,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nA layer is responsible to render one aspect of a virtual pane. The pane tells\neach layer to render/update a specific window of the virtual grid."
+          "body": "<p>A layer is responsible to render one aspect of a virtual pane. The pane tells\n each layer to render/update a specific window of the virtual grid.</p>"
         }
       ]
     }
@@ -35,11 +35,11 @@
     "fullUpdate": {
       "location": {
         "start": {
-          "line": 42,
+          "line": 40,
           "column": 4
         },
         "end": {
-          "line": 51,
+          "line": 49,
           "column": 5
         }
       },
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Do a complete update of the layer. All cached data should be discarded.\nThis method is called e.g. after changes to the grid geometry\n(row/column sizes, row/column count, ...).\n\nNote: This method can only be called after the widgets initial appear\nevent has been fired because it may work with the widget's DOM elements."
+            "body": "<p>Do a complete update of the layer. All cached data should be discarded.\n This method is called e.g. after changes to the grid geometry\n (row/column sizes, row/column count, …).\n Note: This method can only be called after the widgets initial appear\n event has been fired because it may work with the widget's DOM elements.</p>"
           }
         ],
         "@param": [
@@ -87,11 +87,11 @@
     "updateLayerWindow": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 67,
           "column": 4
         },
         "end": {
-          "line": 78,
+          "line": 76,
           "column": 5
         }
       },
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the layer to display a different window of the virtual grid.\nThis method is called if the pane is scrolled, resized or cells\nare prefetched. The implementation can assume that no other grid\ndata has been changed since the last \"fullUpdate\" of \"updateLayerWindow\"\ncall.\n\nNote: This method can only be called after the widgets initial appear\nevent has been fired because it may work with the widget's DOM elements."
+            "body": "<p>Update the layer to display a different window of the virtual grid.\n This method is called if the pane is scrolled, resized or cells\n are prefetched. The implementation can assume that no other grid\n data has been changed since the last \"fullUpdate\" of \"updateLayerWindow\"\n call.\n Note: This method can only be called after the widgets initial appear\n event has been fired because it may work with the widget's DOM elements.</p>"
           }
         ],
         "@param": [
@@ -139,11 +139,11 @@
     "updateLayerData": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 82,
           "column": 35
         }
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the layer to reflect changes in the data the layer displays."
+            "body": "<p>Update the layer to reflect changes in the data the layer displays.</p>"
           }
         ]
       },

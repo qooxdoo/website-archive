@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 by Christian Boulanger\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Boulanger (cboulanger)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 by Christian Boulanger\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Boulanger (cboulanger)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A cell renderer factory which can dynamically exchange the cell renderer\nbased on information retrieved at runtime. This is useful when different\nrows in a column should have different cell renderer based on cell content\nor row metadata. A typical example would be a spreadsheet that has different\nkind of data in one column."
+          "body": "<p>A cell renderer factory which can dynamically exchange the cell renderer\n based on information retrieved at runtime. This is useful when different\n rows in a column should have different cell renderer based on cell content\n or row metadata. A typical example would be a spreadsheet that has different\n kind of data in one column.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 49,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,9 +56,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "cellRendererFactoryFunction {Function?null} The initial value for\nthe property {@link #cellRendererFactoryFunction}.",
+          "body": "cellRendererFactoryFunction {Function?null} The initial value for\n    the property {@link #cellRendererFactoryFunction}.",
           "paramName": "cellRendererFactoryFunction",
-          "description": " The initial value for\nthe property {@link #cellRendererFactoryFunction}.",
+          "description": " The initial value for\n    the property {@link #cellRendererFactoryFunction}.",
           "optional": true,
           "defaultValue": "null",
           "type": "Function"
@@ -82,7 +82,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Function that returns a cellRenderer instance which will be\nused for the row that is currently being edited. The function is\ndefined like this:\n\n<pre class=\"javascript\">\nmyTable.getTableColumnModel().setCellRenderer(function(cellInfo){\n// based on the cellInfo map or other information, return the\n// appropriate cell renderer\nif (cellInfo.row == 5)\nreturn new qx.ui.table.cellrenderer.Boolean;\nelse\nreturn new qx.ui.table.cellrenderer.Default;\n});\n</pre>\n\nthe function MUST return at least a qx.ui.table.cellrenderer.Default"
+            "body": "<p>Function that returns a cellRenderer instance which will be\n used for the row that is currently being edited. The function is\n defined like this:\n </p>\n<pre class=\"javascript\">\n myTable.getTableColumnModel().setCellRenderer(function(cellInfo){\n\n\n   if (cellInfo.row == 5)\n     return new qx.ui.table.cellrenderer.Boolean;\n   else\n     return new qx.ui.table.cellrenderer.Default;\n });\n </pre>\n<p>the function MUST return at least a qx.ui.table.cellrenderer.Default</p>"
           }
         ]
       },
@@ -109,22 +109,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overridden; called whenever the cell updates. The cell will call the\nfunction stored in the cellRendererFactoryFunction to retrieve the\ncell renderer which should be used for this particular cell"
+            "body": "<p>Overridden; called whenever the cell updates. The cell will call the\n function stored in the cellRendererFactoryFunction to retrieve the\n cell renderer which should be used for this particular cell</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n     create.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate.",
+            "description": " A map containing the information about the cell to\n     create.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "htmlArr {String[]} Target string container. The HTML of the data\ncell should be appended to this array.",
+            "body": "htmlArr {String[]} Target string container. The HTML of the data\n     cell should be appended to this array.",
             "paramName": "htmlArr",
-            "description": " Target string container. The HTML of the data\ncell should be appended to this array.",
+            "description": " Target string container. The HTML of the data\n     cell should be appended to this array.",
             "type": "String[]"
           }
         ],

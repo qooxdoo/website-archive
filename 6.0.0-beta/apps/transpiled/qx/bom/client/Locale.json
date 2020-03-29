@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class comes with all relevant information regarding\nthe client's selected locale.\n\nThis class is used by {@link qx.core.Environment} and should not be used\ndirectly. Please check its class comment for details how to use it."
+          "body": "<p>This class comes with all relevant information regarding\n the client's selected locale.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the system locale e.g. \"de\" when the full locale is \"de_AT\""
+            "body": "<p>The name of the system locale e.g. \"de\" when the full locale is \"de_AT\"</p>"
           }
         ],
         "@return": [
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the variant for the system locale e.g. \"at\" when the\nfull locale is \"de_AT\""
+            "body": "<p>The name of the variant for the system locale e.g. \"at\" when the\n full locale is \"de_AT\"</p>"
           }
         ],
         "@return": [
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for accessing the navigators language."
+            "body": "<p>Internal helper for accessing the navigators language.</p>"
           }
         ],
         "@return": [
@@ -145,13 +145,14 @@
     "location": {
       "start": {
         "line": 107,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 111,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

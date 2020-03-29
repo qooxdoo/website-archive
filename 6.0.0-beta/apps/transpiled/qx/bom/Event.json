@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\nAlexander Steitz (aback)\nChristian Hagendorn (chris_schmidt)\nTobias Oberrauch (toberrauch) <tobias.oberrauch@1und1.de>\n\n======================================================================\n\nThis class contains code based on the following work:\n\nJuriy Zaytsev\nhttp://thinkweb2.com/projects/prototype/detecting-event-support-without-browser-sniffing/\n\nCopyright (c) 2009 Juriy Zaytsev\n\nLicense:\nBSD: http://github.com/kangax/iseventsupported/blob/master/LICENSE\n\n----------------------------------------------------------------------\n\nhttp://github.com/kangax/iseventsupported/blob/master/LICENSE\n\nCopyright (c) 2009 Juriy Zaytsev\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n Alexander Steitz (aback)\n Christian Hagendorn (chris_schmidt)\n Tobias Oberrauch (toberrauch) <a href=\"&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x74;&#x6f;b&#x69;&#x61;&#x73;.&#x6f;&#x62;&#101;&#x72;&#x72;&#x61;&#117;&#99;&#104;&#64;&#49;&#117;&#x6e;&#x64;&#49;&#46;d&#101;\">&#x74;&#111;&#98;&#105;&#x61;&#115;&#x2e;o&#x62;&#x65;&#114;&#x72;au&#99;&#104;&#x40;&#49;&#x75;&#110;d&#x31;&#x2e;&#100;&#x65;</a>\n   ======================================================================\n   This class contains code based on the following work:\n Juriy Zaytsev\n     http://thinkweb2.com/projects/prototype/detecting-event-support-without-browser-sniffing/\n     Copyright (c) 2009 Juriy Zaytsev\n     License:\n       BSD: http://github.com/kangax/iseventsupported/blob/master/LICENSE\n     ----------------------------------------------------------------------\n     http://github.com/kangax/iseventsupported/blob/master/LICENSE\n     Copyright (c) 2009 Juriy Zaytsev\n     Permission is hereby granted, free of charge, to any person\n     obtaining a copy of this software and associated documentation\n     files (the \"Software\"), to deal in the Software without\n     restriction, including without limitation the rights to use,\n     copy, modify, merge, publish, distribute, sublicense, and/or sell\n     copies of the Software, and to permit persons to whom the\n     Software is furnished to do so, subject to the following\n     conditions:\n     The above copyright notice and this permission notice shall be\n     included in all copies or substantial portions of the Software.\n     THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n     EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\n     OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n     NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\n     HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\n     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\n     OTHER DEALINGS IN THE SOFTWARE.\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Wrapper around native event management capabilities of the browser.\nThis class should not be used directly normally. It's better\nto use {@link qx.event.Registration} instead."
+          "body": "<p>Wrapper around native event management capabilities of the browser.\n This class should not be used directly normally. It's better\n to use {@link qx.event.Registration} instead.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Use the low level browser functionality to attach event listeners\nto DOM nodes.\n\nUse this with caution. This is only thought for event handlers and\nqualified developers. These are not mem-leak protected!"
+            "body": "<p>Use the low level browser functionality to attach event listeners\n to DOM nodes.\n Use this with caution. This is only thought for event handlers and\n qualified developers. These are not mem-leak protected!</p>"
           }
         ],
         "@param": [
@@ -74,9 +74,9 @@
           },
           {
             "name": "@param",
-            "body": "useCapture {Boolean ? false} A Boolean value that specifies the event phase to add\nthe event handler for the capturing phase or the bubbling phase.",
+            "body": "useCapture {Boolean ? false} A Boolean value that specifies the event phase to add\n    the event handler for the capturing phase or the bubbling phase.",
             "paramName": "useCapture",
-            "description": " A Boolean value that specifies the event phase to add\nthe event handler for the capturing phase or the bubbling phase.",
+            "description": " A Boolean value that specifies the event phase to add\n    the event handler for the capturing phase or the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Use the low level browser functionality to remove event listeners\nfrom DOM nodes."
+            "body": "<p>Use the low level browser functionality to remove event listeners\n from DOM nodes.</p>"
           }
         ],
         "@param": [
@@ -137,9 +137,9 @@
           },
           {
             "name": "@param",
-            "body": "useCapture {Boolean ? false} A Boolean value that specifies the event phase to remove\nthe event handler for the capturing phase or the bubbling phase.",
+            "body": "useCapture {Boolean ? false} A Boolean value that specifies the event phase to remove\n    the event handler for the capturing phase or the bubbling phase.",
             "paramName": "useCapture",
-            "description": " A Boolean value that specifies the event phase to remove\nthe event handler for the capturing phase or the bubbling phase.",
+            "description": " A Boolean value that specifies the event phase to remove\n    the event handler for the capturing phase or the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -164,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the target of the event."
+            "body": "<p>Returns the target of the event.</p>"
           }
         ],
         "@param": [
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the related target from the native DOM event"
+            "body": "<p>Computes the related target from the native DOM event</p>"
           }
         ],
         "@param": [
@@ -242,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prevent the native default of the event to be processed.\n\nThis is useful to stop native keybindings, native selection\nand other native functionality behind events."
+            "body": "<p>Prevent the native default of the event to be processed.\n This is useful to stop native keybindings, native selection\n and other native functionality behind events.</p>"
           }
         ],
         "@param": [
@@ -273,7 +273,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the propagation of the given event to the parent element.\n\nOnly useful for events which bubble e.g. mousedown."
+            "body": "<p>Stops the propagation of the given event to the parent element.\n Only useful for events which bubble e.g. mousedown.</p>"
           }
         ],
         "@param": [
@@ -304,7 +304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a synthetic native event on the given element."
+            "body": "<p>Fires a synthetic native event on the given element.</p>"
           }
         ],
         "@param": [
@@ -326,9 +326,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} A value that indicates whether any of the event handlers called {@link #preventDefault}.\n<code>true</code> The default action is permitted, <code>false</code> the caller should prevent the default action.",
+            "body": "{Boolean} A value that indicates whether any of the event handlers called {@link #preventDefault}.\n  <code>true</code> The default action is permitted, <code>false</code> the caller should prevent the default action.",
             "type": "Boolean",
-            "description": " A value that indicates whether any of the event handlers called {@link #preventDefault}.\n<code>true</code> The default action is permitted, <code>false</code> the caller should prevent the default action."
+            "description": " A value that indicates whether any of the event handlers called {@link #preventDefault}.\n  <code>true</code> The default action is permitted, <code>false</code> the caller should prevent the default action."
           }
         ]
       },
@@ -350,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given target supports the given event type.\n\nUseful for testing for support of new features like\ntouch events, gesture events, orientation change, on/offline, etc.\n\n*NOTE:* This check is *case-insensitive*.\n<code>supportsEvent(window, \"cLicK\")</code> will return <code>true</code>\nbut <code>window.addEventListener(\"cLicK\", callback)</code> will fail\nsilently!"
+            "body": "<p>Whether the given target supports the given event type.\n Useful for testing for support of new features like\n touch events, gesture events, orientation change, on/offline, etc.\n<em>NOTE:</em> This check is <em>case-insensitive</em>.\n <code>supportsEvent(window, \"cLicK\")</code> will return <code>true</code>\n but <code>window.addEventListener(\"cLicK\", callback)</code> will fail\n silently!</p>"
           }
         ],
         "@param": [
@@ -396,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name of the given event type.\n*NOTE:* Incorrect capitalization of type names will *not* be corrected. See\n{@link #supportsEvent} for details."
+            "body": "<p>Returns the (possibly vendor-prefixed) name of the given event type.\n<em>NOTE:</em> Incorrect capitalization of type names will <em>not</em> be corrected. See\n {@link #supportsEvent} for details.</p>"
           }
         ],
         "@param": [
@@ -418,9 +418,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} Event name or <code>null</code> if the event is not\nsupported.",
+            "body": "{String|null} Event name or <code>null</code> if the event is not\n supported.",
             "type": "String|null",
-            "description": " Event name or <code>null</code> if the event is not\nsupported."
+            "description": " Event name or <code>null</code> if the event is not\n supported."
           }
         ]
       },

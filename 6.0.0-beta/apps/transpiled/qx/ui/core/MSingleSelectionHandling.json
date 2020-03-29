@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin links all methods to manage the single selection.\n\nThe class which includes the mixin has to implements two methods:\n\n<ul>\n<li><code>_getItems</code>, this method has to return a <code>Array</code>\nof <code>qx.ui.core.Widget</code> that should be managed from the manager.\n</li>\n<li><code>_isAllowEmptySelection</code>, this method has to return a\n<code>Boolean</code> value for allowing empty selection or not.\n</li>\n</ul>"
+          "body": "<p>This mixin links all methods to manage the single selection.\n The class which includes the mixin has to implements two methods:\n </p>\n<ul>\n <li><code>_getItems</code>, this method has to return a <code>Array</code>\n    of <code>qx.ui.core.Widget</code> that should be managed from the manager.\n </li>\n <li><code>_isAllowEmptySelection</code>, this method has to return a\n    <code>Boolean</code> value for allowing empty selection or not.\n </li>\n </ul>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the value was modified"
+            "body": "<p>Fires after the value was modified</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the selection was modified"
+            "body": "<p>Fires after the selection was modified</p>"
           }
         ]
       },
@@ -121,11 +121,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "setValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>setValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@param": [
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "getValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@return": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "resetValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>resetValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items.\n\nNote: The result is only a set of selected items, so the order can\ndiffer from the sequence in which the items were added."
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
@@ -249,7 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces current selection with the given items."
+            "body": "<p>Replaces current selection with the given items.</p>"
           }
         ],
         "@param": [
@@ -264,9 +264,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if one of the items is not a child element and if\nitems contains more than one elements.",
+            "body": "{Error} if one of the items is not a child element and if\n    items contains more than one elements.",
             "type": "Error",
-            "description": " if one of the items is not a child element and if\nitems contains more than one elements."
+            "description": " if one of the items is not a child element and if\n    items contains more than one elements."
           }
         ]
       },
@@ -288,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the whole selection at once."
+            "body": "<p>Clears the whole selection at once.</p>"
           }
         ]
       },
@@ -310,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether the given item is currently selected."
+            "body": "<p>Detects whether the given item is currently selected.</p>"
           }
         ],
         "@param": [
@@ -357,7 +357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the selection is empty."
+            "body": "<p>Whether the selection is empty.</p>"
           }
         ],
         "@return": [
@@ -387,15 +387,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -426,11 +426,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for <code>changeSelected</code> event on single\nselection manager."
+            "body": "<p>Event listener for <code>changeSelected</code> event on single\n selection manager.</p>"
           }
         ],
         "@param": [
@@ -461,7 +461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the selection manager if it is already exists, otherwise creates\nthe manager."
+            "body": "<p>Return the selection manager if it is already exists, otherwise creates\n the manager.</p>"
           }
         ],
         "@return": [
@@ -481,7 +481,7 @@
     "location": {
       "start": {
         "line": 251,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 253,
@@ -492,7 +492,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

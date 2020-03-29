@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Slider control is used to select a numerical value from a given range.\nIt supports custom minimum/maximum values, step sizes and offsets (which limit\nthe knob's range).\n\n<h2>Markup</h2>\nThe Slider contains a single button element (the knob), which will be\ncreated if it's not already present.\n\n<h2>CSS Classes</h2>\n<table>\n<thead>\n<tr>\n<td>Class Name</td>\n<td>Applied to</td>\n<td>Description</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>qx-slider</code></td>\n<td>Container element</td>\n<td>Identifies the Slider widget</td>\n</tr>\n<tr>\n<td><code>qx-slider-knob</code></td>\n<td>Slider knob (button)</td>\n<td>Identifies and styles the Slider's draggable knob</td>\n</tr>\n</tbody>\n</table>\n\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
+          "body": "<p>The Slider control is used to select a numerical value from a given range.\n It supports custom minimum/maximum values, step sizes and offsets (which limit\n the knob's range).\n </p>\n<h2>Markup</h2>\n<p>The Slider contains a single button element (the knob), which will be\n created if it's not already present.\n </p>\n<h2>CSS Classes</h2>\n<table>\n   <thead>\n     <tr>\n       <td>Class Name</td>\n       <td>Applied to</td>\n       <td>Description</td>\n     </tr>\n   </thead>\n   <tbody>\n     <tr>\n       <td><code>qx-slider</code></td>\n       <td>Container element</td>\n       <td>Identifies the Slider widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-slider-knob</code></td>\n       <td>Slider knob (button)</td>\n       <td>Identifies and styles the Slider's draggable knob</td>\n     </tr>\n   </tbody>\n </table>\n<h2 class=\"widget-markup\">Generated DOM Structure</h2>"
         }
       ],
       "@require": [
@@ -71,7 +71,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*step*\n\nThe steps can be either a number or an array of predefined steps. In the\ncase of a number, it defines the amount of each step. In the case of an\narray, the values of the array will be used as step values.\n\nDefault value: <pre>1</pre>\n\n\n*minimum*\n\nThe minimum value of the slider. This will only be used if no explicit\nsteps are given.\n\nDefault value: <pre>0 </pre>\n\n\n*maximum*\n\nThe maximum value of the slider. This will only be used if no explicit\nsteps are given.\n\nDefault value: <pre>100</pre>\n\n\n*offset*\n\nThe amount of pixel the slider should be position away from its left and\nright border.\n\nDefault value: <pre>0 </pre>"
+            "body": "<p><em>step</em>\n The steps can be either a number or an array of predefined steps. In the\n case of a number, it defines the amount of each step. In the case of an\n array, the values of the array will be used as step values.\n Default value: <pre>1</pre>\n<em>minimum</em>\n The minimum value of the slider. This will only be used if no explicit\n steps are given.\n Default value: <pre>0 </pre>\n<em>maximum</em>\n The maximum value of the slider. This will only be used if no explicit\n steps are given.\n Default value: <pre>100</pre>\n<em>offset</em>\n The amount of pixel the slider should be position away from its left and\n right border.\n Default value: <pre>0 </pre></p>"
           }
         ]
       },
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*knobContent*\n\nThe content of the knob element.\n\nDefault value: <pre>{{value}}</pre>"
+            "body": "<p><em>knobContent</em>\n The content of the knob element.\n Default value: <pre>{{value}}</pre></p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\nslider widgets."
+            "body": "<p>Factory method which converts the current collection into a collection of\n slider widgets.</p>"
           }
         ],
         "@param": [
@@ -129,9 +129,9 @@
           },
           {
             "name": "@param",
-            "body": "step {Number|Array?} The step config value to configure the step\nwidth or the steps as array of numbers.",
+            "body": "step {Number|Array?} The step config value to configure the step\n width or the steps as array of numbers.",
             "paramName": "step",
-            "description": " The step config value to configure the step\nwidth or the steps as array of numbers.",
+            "description": " The step config value to configure the step\n width or the steps as array of numbers.",
             "optional": true,
             "type": [
               "Number",
@@ -162,13 +162,14 @@
     "location": {
       "start": {
         "line": 146,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 148,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "changeValue": {
@@ -186,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired at each value change"
+            "body": "<p>Fired at each value change</p>"
           }
         ]
       },
@@ -208,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired with each pointer move event"
+            "body": "<p>Fired with each pointer move event</p>"
           }
         ]
       },
@@ -288,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current value of the slider"
+            "body": "<p>Returns the current value of the slider</p>"
           }
         ],
         "@return": [
@@ -318,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the current value of the slider."
+            "body": "<p>Sets the current value of the slider.</p>"
           }
         ],
         "@param": [
@@ -385,7 +386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content that should be displayed in the knob"
+            "body": "<p>Returns the content that should be displayed in the knob</p>"
           }
         ],
         "@return": [
@@ -415,7 +416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns half of the slider knob's width, used for positioning"
+            "body": "<p>Returns half of the slider knob's width, used for positioning</p>"
           }
         ],
         "@return": [
@@ -445,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the boundaries (in pixels) of the slider's range of motion"
+            "body": "<p>Returns the boundaries (in pixels) of the slider's range of motion</p>"
           }
         ],
         "@return": [
@@ -475,7 +476,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a lookup table to get the pixel values for each slider step\nand computes the \"breakpoint\" between two steps in pixel."
+            "body": "<p>Creates a lookup table to get the pixel values for each slider step\n and computes the \"breakpoint\" between two steps in pixel.</p>"
           }
         ],
         "@return": [
@@ -505,7 +506,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the nearest existing slider value according to he position of the knob element."
+            "body": "<p>Returns the nearest existing slider value according to he position of the knob element.</p>"
           }
         ],
         "@param": [
@@ -544,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reads the pointer's position and sets slider value to the nearest step."
+            "body": "<p>Reads the pointer's position and sets slider value to the nearest step.</p>"
           }
         ],
         "@param": [
@@ -575,7 +576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for the pointerdown event. Initializes drag or tracking mode."
+            "body": "<p>Listener for the pointerdown event. Initializes drag or tracking mode.</p>"
           }
         ],
         "@param": [
@@ -606,7 +607,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for the pointerup event. Used for cleanup of previously\ninitialized modes."
+            "body": "<p>Listener for the pointerup event. Used for cleanup of previously\n initialized modes.</p>"
           }
         ],
         "@param": [
@@ -637,7 +638,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for the pointermove event for the knob. Only used in drag mode."
+            "body": "<p>Listener for the pointermove event for the knob. Only used in drag mode.</p>"
           }
         ],
         "@param": [
@@ -668,7 +669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prevents drag event propagation"
+            "body": "<p>Prevents drag event propagation</p>"
           }
         ],
         "@param": [
@@ -699,7 +700,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegates the Slider's focus to the knob"
+            "body": "<p>Delegates the Slider's focus to the knob</p>"
           }
         ],
         "@param": [
@@ -730,7 +731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attaches the event listener for keyboard support to the knob on focus"
+            "body": "<p>Attaches the event listener for keyboard support to the knob on focus</p>"
           }
         ],
         "@param": [
@@ -761,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the event listener for keyboard support from the knob on blur"
+            "body": "<p>Removes the event listener for keyboard support from the knob on blur</p>"
           }
         ],
         "@param": [
@@ -792,7 +793,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the knob if the left or right arrow key is pressed"
+            "body": "<p>Moves the knob if the left or right arrow key is pressed</p>"
           }
         ],
         "@param": [
@@ -823,7 +824,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the horizontal position"
+            "body": "<p>Applies the horizontal position</p>"
           }
         ],
         "@param": [
@@ -854,7 +855,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for window resize events. This listener method resets the\ncalculated values which are used to position the slider knob."
+            "body": "<p>Listener for window resize events. This listener method resets the\n calculated values which are used to position the slider knob.</p>"
           }
         ]
       },
@@ -876,7 +877,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Positions the slider knob to the given value and fires the \"changePosition\"\nevent with the current position as integer."
+            "body": "<p>Positions the slider knob to the given value and fires the \"changePosition\"\n event with the current position as integer.</p>"
           }
         ],
         "@param": [
@@ -926,7 +927,7 @@
     "location": {
       "start": {
         "line": 644,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 646,
@@ -937,7 +938,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Make the slider widget available as a qxWeb module"
+          "body": "<p>Make the slider widget available as a qxWeb module</p>"
         }
       ]
     }

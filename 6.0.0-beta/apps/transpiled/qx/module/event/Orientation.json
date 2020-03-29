@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Normalization for orientationchange events"
+          "body": "<p>Normalization for orientationchange events</p>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of event types to be normalized"
+            "body": "<p>List of event types to be normalized</p>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of qx.module.event.Orientation methods to be attached to native\nevent objects"
+            "body": "<p>List of qx.module.event.Orientation methods to be attached to native\n event objects</p>"
           }
         ],
         "@internal": [
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current orientation of the viewport in degrees.\n\nAll possible values and their meaning:\n\n* <code>0</code>: \"Portrait\"\n* <code>-90</code>: \"Landscape (right, screen turned clockwise)\"\n* <code>90</code>: \"Landscape (left, screen turned counterclockwise)\"\n* <code>180</code>: \"Portrait (upside-down portrait)\""
+            "body": "<p>Returns the current orientation of the viewport in degrees.\n All possible values and their meaning:</p>\n<ul>\n<li><code>0</code>: \"Portrait\"</li>\n<li><code>-90</code>: \"Landscape (right, screen turned clockwise)\"</li>\n<li><code>90</code>: \"Landscape (left, screen turned counterclockwise)\"</li>\n<li><code>180</code>: \"Portrait (upside-down portrait)\"</li>\n</ul>"
           }
         ],
         "@return": [
@@ -139,15 +139,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the viewport orientation is currently in landscape mode."
+            "body": "<p>Whether the viewport orientation is currently in landscape mode.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the viewport orientation\nis currently in landscape mode.",
+            "body": "{Boolean} <code>true</code> when the viewport orientation\n     is currently in landscape mode.",
             "type": "Boolean",
-            "description": " <code>true</code> when the viewport orientation\nis currently in landscape mode."
+            "description": " <code>true</code> when the viewport orientation\n     is currently in landscape mode."
           }
         ]
       },
@@ -169,15 +169,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the viewport orientation is currently in portrait mode."
+            "body": "<p>Whether the viewport orientation is currently in portrait mode.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the viewport orientation\nis currently in portrait mode.",
+            "body": "{Boolean} <code>true</code> when the viewport orientation\n     is currently in portrait mode.",
             "type": "Boolean",
-            "description": " <code>true</code> when the viewport orientation\nis currently in portrait mode."
+            "description": " <code>true</code> when the viewport orientation\n     is currently in portrait mode."
           }
         ]
       },
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the native event object, adding methods if they're not\nalready present"
+            "body": "<p>Manipulates the native event object, adding methods if they're not\n already present</p>"
           }
         ],
         "@param": [
@@ -248,13 +248,14 @@
     "location": {
       "start": {
         "line": 111,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 113,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

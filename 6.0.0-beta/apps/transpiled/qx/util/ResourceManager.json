@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Contains information about images (size, format, clipping, ...) and\nother resources like CSS files, local data, ..."
+          "body": "<p>Contains information about images (size, format, clipping, …) and\n other resources like CSS files, local data, …</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 35,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether there is a high-resolution image available.\nA high-resolution image is assumed to have the same file name as\nthe parameter source, but with a pixelRatio identifier before the file\nextension, like \"@2x\".\nMedium Resolution: \"example.png\", high-resolution: \"example@2x.png\""
+            "body": "<p>Detects whether there is a high-resolution image available.\n A high-resolution image is assumed to have the same file name as\n the parameter source, but with a pixelRatio identifier before the file\n extension, like \"@2x\".\n Medium Resolution: \"example.png\", high-resolution: \"example@2x.png\"</p>"
           }
         ],
         "@param": [
@@ -174,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the source name for the high-resolution image based on the passed\nparameters."
+            "body": "<p>Returns the source name for the high-resolution image based on the passed\n parameters.</p>"
           }
         ],
         "@param": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all known resource IDs."
+            "body": "<p>Get all known resource IDs.</p>"
           }
         ],
         "@param": [
@@ -256,7 +256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the registry has information about the given resource."
+            "body": "<p>Whether the registry has information about the given resource.</p>"
           }
         ],
         "@param": [
@@ -295,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get information about an resource."
+            "body": "<p>Get information about an resource.</p>"
           }
         ],
         "@param": [
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the width of the given resource ID,\nwhen it is not a known image <code>0</code> is\nreturned."
+            "body": "<p>Returns the width of the given resource ID,\n when it is not a known image <code>0</code> is\n returned.</p>"
           }
         ],
         "@param": [
@@ -373,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the height of the given resource ID,\nwhen it is not a known image <code>0</code> is\nreturned."
+            "body": "<p>Returns the height of the given resource ID,\n when it is not a known image <code>0</code> is\n returned.</p>"
           }
         ],
         "@param": [
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the format of the given resource ID,\nwhen it is not a known image <code>null</code>\nis returned."
+            "body": "<p>Returns the format of the given resource ID,\n when it is not a known image <code>null</code>\n is returned.</p>"
           }
         ],
         "@param": [
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the format of the combined image (png, gif, ...), if the given\nresource identifier is an image contained in one, or the empty string\notherwise."
+            "body": "<p>Returns the format of the combined image (png, gif, …), if the given\n resource identifier is an image contained in one, or the empty string\n otherwise.</p>"
           }
         ],
         "@param": [
@@ -490,7 +490,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given resource ID to a full qualified URI"
+            "body": "<p>Converts the given resource ID to a full qualified URI</p>"
           }
         ],
         "@param": [
@@ -529,7 +529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Construct a data: URI for an image resource.\n\nConstructs a data: URI for a given resource id, if this resource is\ncontained in a base64 combined image. If this is not the case (e.g.\nbecause the combined image has not been loaded yet), returns the direct\nURI to the image file itself."
+            "body": "<p>Construct a data: URI for an image resource.\n Constructs a data: URI for a given resource id, if this resource is\n contained in a base64 combined image. If this is not the case (e.g.\n because the combined image has not been loaded yet), returns the direct\n URI to the image file itself.</p>"
           }
         ],
         "@param": [
@@ -568,7 +568,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether a given resource id for an image is a font handle."
+            "body": "<p>Checks whether a given resource id for an image is a font handle.</p>"
           }
         ],
         "@param": [
@@ -717,13 +717,14 @@
     "location": {
       "start": {
         "line": 347,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 431,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

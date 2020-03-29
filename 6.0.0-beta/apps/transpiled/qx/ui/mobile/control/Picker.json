@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The picker widget gives the user the possibility to select a value out of an array\nof values. The picker widget can be added to a {@link qx.ui.mobile.dialog.Popup} or to any other container.\n\nThe picker widget is able to display multiple picker slots, for letting the user choose\nseveral values at one time, in one single control.\n\nYou can add an array with objects which contain the keys <code>title</code>, a <code>subtitle</code> or an <code>image</code> (all optional).\n\n<pre>\nvar picker = new qx.ui.mobile.control.Picker();\npicker.setHeight(200);\npicker.addListener(\"changeSelection\", function(evt) {\nvar data = evt.getData();\n},this);\n\nvar slotData1 = [{title:\"Windows Phone\"}, {title:\"iOS\",subtitle:\"Version 7.1\"}, {title:\"Android\"}];\nvar slotData2 = [{title:\"Tablet\"}, {title:\"Smartphone\"}, {title:\"Phablet\"}];\n\npicker.addSlot(new qx.data.Array(slotData1));\npicker.addSlot(new qx.data.Array(slotData2));\n</pre>"
+          "body": "<p>The picker widget gives the user the possibility to select a value out of an array\n of values. The picker widget can be added to a {@link qx.ui.mobile.dialog.Popup} or to any other container.\n The picker widget is able to display multiple picker slots, for letting the user choose\n several values at one time, in one single control.\n You can add an array with objects which contain the keys <code>title</code>, a <code>subtitle</code> or an <code>image</code> (all optional).\n </p>\n<pre>\n var picker = new qx.ui.mobile.control.Picker();\n picker.setHeight(200);\n picker.addListener(\"changeSelection\", function(evt) {\n   var data = evt.getData();\n },this);\n var slotData1 = [{title:\"Windows Phone\"}, {title:\"iOS\",subtitle:\"Version 7.1\"}, {title:\"Android\"}];\n var slotData2 = [{title:\"Tablet\"}, {title:\"Smartphone\"}, {title:\"Phablet\"}];\n picker.addSlot(new qx.data.Array(slotData1));\n picker.addSlot(new qx.data.Array(slotData2));\n </pre>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 49,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 58,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "changeSelection": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the selection of a slot has changed.\nExample:\n<code> {\nindex: 0,\nitem: [Object],\nslot: 0\n}</code>"
+            "body": "<p>Fired when the selection of a slot has changed.\n Example:\n <code> {\n   index: 0,\n   item: [Object],\n   slot: 0\n }</code></p>"
           }
         ]
       },
@@ -83,7 +84,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -112,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls how much visible items are shown inside the picker."
+            "body": "<p>Controls how much visible items are shown inside the picker.</p>"
           }
         ]
       },
@@ -143,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls the picker height."
+            "body": "<p>Controls the picker height.</p>"
           }
         ]
       },
@@ -214,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>appear</code> event of this widget."
+            "body": "<p>Handler for <code>appear</code> event of this widget.</p>"
           }
         ]
       },
@@ -236,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -261,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal used picker model which contains one or more picker slot models."
+            "body": "<p>Returns the internal used picker model which contains one or more picker slot models.</p>"
           }
         ],
         "@return": [
@@ -291,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a picker slot."
+            "body": "<p>Creates a picker slot.</p>"
           }
         ],
         "@param": [
@@ -346,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a placeholder list item, for making sure the selected item is vertically centered."
+            "body": "<p>Creates a placeholder list item, for making sure the selected item is vertically centered.</p>"
           }
         ],
         "@return": [
@@ -376,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the item height of a picker item."
+            "body": "<p>Calculates the item height of a picker item.</p>"
           }
         ],
         "@return": [
@@ -406,7 +407,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>changeSelection</code> event on picker list."
+            "body": "<p>Handler for <code>changeSelection</code> event on picker list.</p>"
           }
         ],
         "@param": [
@@ -437,7 +438,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>waypoint</code> event on scroll container."
+            "body": "<p>Handler for <code>waypoint</code> event on scroll container.</p>"
           }
         ],
         "@param": [
@@ -468,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the selectedIndex of a picker slot, identified by its index."
+            "body": "<p>Getter for the selectedIndex of a picker slot, identified by its index.</p>"
           }
         ],
         "@param": [
@@ -507,7 +508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the selectedIndex of a picker slot, identified by its index."
+            "body": "<p>Setter for the selectedIndex of a picker slot, identified by its index.</p>"
           }
         ],
         "@param": [
@@ -545,7 +546,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the picker slot count, added to this picker."
+            "body": "<p>Returns the picker slot count, added to this picker.</p>"
           }
         ],
         "@return": [
@@ -575,7 +576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an picker slot to the end of the array."
+            "body": "<p>Adds an picker slot to the end of the array.</p>"
           }
         ],
         "@param": [
@@ -615,7 +616,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the picker slot at the given slotIndex."
+            "body": "<p>Removes the picker slot at the given slotIndex.</p>"
           }
         ],
         "@param": [
@@ -646,7 +647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the <code>changeBubble</code> and <codechange></code> event on a picker slot model."
+            "body": "<p>Handles the <code>changeBubble</code> and <codechange></code> event on a picker slot model.</p>"
           }
         ]
       },
@@ -1839,13 +1840,14 @@
     "location": {
       "start": {
         "line": 329,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 334,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

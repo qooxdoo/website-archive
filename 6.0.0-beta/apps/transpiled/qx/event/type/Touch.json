@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Touch event object.\n\nFor more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html"
+          "body": "<p>Touch event object.\n For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchEventClassReference/TouchEvent/TouchEvent.html</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -124,15 +124,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of native Touch objects representing all current\ntouches on the document.\nReturns an empty array for the \"touchend\" event."
+            "body": "<p>Returns an array of native Touch objects representing all current\n touches on the document.\n Returns an empty array for the \"touchend\" event.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object[]} Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
+            "body": "{Object[]} Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
             "type": "Object[]",
-            "description": " Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
+            "description": " Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
           }
         ]
       },
@@ -154,15 +154,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of native Touch objects representing all touches\nassociated with the event target element.\nReturns an empty array for the \"touchend\" event."
+            "body": "<p>Returns an array of native Touch objects representing all touches\n associated with the event target element.\n Returns an empty array for the \"touchend\" event.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object[]} Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
+            "body": "{Object[]} Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
             "type": "Object[]",
-            "description": " Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
+            "description": " Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
           }
         ]
       },
@@ -184,15 +184,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of native Touch objects representing all touches of\nthe target element that changed in this event.\n\nOn the \"touchstart\" event the array contains all touches that were\nadded to the target element.\nOn the \"touchmove\" event the array contains all touches that were\nmoved on the target element.\nOn the \"touchend\" event the array contains all touches that used\nto be on the target element."
+            "body": "<p>Returns an array of native Touch objects representing all touches of\n the target element that changed in this event.\n On the \"touchstart\" event the array contains all touches that were\n added to the target element.\n On the \"touchmove\" event the array contains all touches that were\n moved on the target element.\n On the \"touchend\" event the array contains all touches that used\n to be on the target element.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object[]} Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
+            "body": "{Object[]} Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html",
             "type": "Object[]",
-            "description": " Array of touch objects. For more information see:\nhttps://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
+            "description": " Array of touch objects. For more information see:\n     https://developer.apple.com/library/safari/#documentation/UserExperience/Reference/TouchClassReference/Touch/Touch.html"
           }
         ]
       },
@@ -214,7 +214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether more than one touch is associated with the event target\nelement."
+            "body": "<p>Checks whether more than one touch is associated with the event target\n element.</p>"
           }
         ],
         "@return": [
@@ -244,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the distance between two fingers since the start of the event.\nThe distance is a multiplier of the initial distance.\nInitial value: 1.0.\nGestures:\n< 1.0, pinch close / zoom out.\n> 1.0, pinch open / to zoom in."
+            "body": "<p>Returns the distance between two fingers since the start of the event.\n The distance is a multiplier of the initial distance.\n Initial value: 1.0.\n Gestures:\n &lt; 1.0, pinch close / zoom out.</p>\n<blockquote>\n  <p>1.0, pinch open / to zoom in.</p>\n</blockquote>"
           }
         ],
         "@return": [
@@ -274,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the delta of the rotation since the start of the event, in degrees.\nInitial value is 0.0\nClockwise > 0\nCounter-clockwise < 0."
+            "body": "<p>Returns the delta of the rotation since the start of the event, in degrees.\n Initial value is 0.0\n Clockwise &gt; 0\n Counter-clockwise &lt; 0.</p>"
           }
         ],
         "@return": [
@@ -304,15 +304,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array with the calculated delta coordinates of all active touches,\nrelative to the position on <code>touchstart</code> event."
+            "body": "<p>Returns an array with the calculated delta coordinates of all active touches,\n relative to the position on <code>touchstart</code> event.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} an array with objects for each active touch which contains the delta as <code>x</code> and\n<code>y</code>, the touch identifier as <code>identifier</code> and the movement axis as <code>axis</code>.",
+            "body": "{Array} an array with objects for each active touch which contains the delta as <code>x</code> and\n <code>y</code>, the touch identifier as <code>identifier</code> and the movement axis as <code>axis</code>.",
             "type": "Array",
-            "description": " an array with objects for each active touch which contains the delta as <code>x</code> and\n<code>y</code>, the touch identifier as <code>identifier</code> and the movement axis as <code>axis</code>."
+            "description": " an array with objects for each active touch which contains the delta as <code>x</code> and\n <code>y</code>, the touch identifier as <code>identifier</code> and the movement axis as <code>axis</code>."
           }
         ]
       },
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal position at which the event occurred relative to the\nleft of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the horizontal position at which the event occurred relative to the\n left of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@param": [
@@ -375,7 +375,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical position at which the event occurred relative to the\ntop of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the vertical position at which the event occurred relative to the\n top of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@param": [
@@ -416,7 +416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal coordinate at which the event occurred relative to\nthe origin of the screen coordinate system."
+            "body": "<p>Get the horizontal coordinate at which the event occurred relative to\n the origin of the screen coordinate system.</p>"
           }
         ],
         "@param": [
@@ -457,7 +457,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical coordinate at which the event occurred relative to\nthe origin of the screen coordinate system."
+            "body": "<p>Get the vertical coordinate at which the event occurred relative to\n the origin of the screen coordinate system.</p>"
           }
         ],
         "@param": [
@@ -498,7 +498,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the the horizontal coordinate at which the event occurred relative\nto the viewport."
+            "body": "<p>Get the the horizontal coordinate at which the event occurred relative\n to the viewport.</p>"
           }
         ],
         "@param": [
@@ -539,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical coordinate at which the event occurred relative\nto the viewport."
+            "body": "<p>Get the vertical coordinate at which the event occurred relative\n to the viewport.</p>"
           }
         ],
         "@param": [
@@ -580,7 +580,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the unique identifier for a certain touch object."
+            "body": "<p>Returns the unique identifier for a certain touch object.</p>"
           }
         ],
         "@param": [
@@ -621,15 +621,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an event specific touch on the target element. This function is\nused as the \"touchend\" event only offers Touch objects in the\nchangedTouches array."
+            "body": "<p>Returns an event specific touch on the target element. This function is\n used as the \"touchend\" event only offers Touch objects in the\n changedTouches array.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "touchIndex {Integer ? 0} The index of the Touch object to\nretrieve",
+            "body": "touchIndex {Integer ? 0} The index of the Touch object to\n     retrieve",
             "paramName": "touchIndex",
-            "description": " The index of the Touch object to\nretrieve",
+            "description": " The index of the Touch object to\n     retrieve",
             "optional": true,
             "defaultValue": "0",
             "type": "Integer"
@@ -662,7 +662,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the event specific touches on the target element. This function\nis used as the \"touchend\" event only offers Touch objects in the\nchangedTouches array."
+            "body": "<p>Returns the event specific touches on the target element. This function\n is used as the \"touchend\" event only offers Touch objects in the\n changedTouches array.</p>"
           }
         ],
         "@return": [
@@ -692,7 +692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates if the event occurs during the \"touchend\" phase. Needed to\ndetermine the event specific touches. Override this method if you derive\nfrom this class and want to indicate that the specific event occurred\nduring the \"touchend\" phase."
+            "body": "<p>Indicates if the event occurs during the \"touchend\" phase. Needed to\n determine the event specific touches. Override this method if you derive\n from this class and want to indicate that the specific event occurred\n during the \"touchend\" phase.</p>"
           }
         ],
         "@return": [

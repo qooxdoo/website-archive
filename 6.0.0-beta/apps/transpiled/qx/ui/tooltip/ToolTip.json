@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A Tooltip provides additional information for widgets when the user hovers\nover a widget."
+          "body": "<p>A Tooltip provides additional information for widgets when the user hovers\n over a widget.</p>"
         }
       ],
       "@childControl": [
@@ -44,7 +44,7 @@
     "location": {
       "start": {
         "line": 44,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 65,
@@ -55,7 +55,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval after the tooltip is shown (in milliseconds)"
+            "body": "<p>Interval after the tooltip is shown (in milliseconds)</p>"
           }
         ]
       },
@@ -154,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval after the tooltip is hidden (in milliseconds)"
+            "body": "<p>Interval after the tooltip is hidden (in milliseconds)</p>"
           }
         ]
       },
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label/caption/text of the ToolTip's atom."
+            "body": "<p>The label/caption/text of the ToolTip's atom.</p>"
           }
         ]
       },
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Any URI String supported by qx.ui.basic.Image to display an icon in\nToolTips's atom."
+            "body": "<p>Any URI String supported by qx.ui.basic.Image to display an icon in\n ToolTips's atom.</p>"
           }
         ]
       },
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Switches between rich HTML and text content. The text mode\n(<code>false</code>) supports advanced features like ellipsis when the\navailable space is not enough. HTML mode (<code>true</code>) supports\nmulti-line content and all the markup features of HTML content."
+            "body": "<p>Switches between rich HTML and text content. The text mode\n (<code>false</code>) supports advanced features like ellipsis when the\n available space is not enough. HTML mode (<code>true</code>) supports\n multi-line content and all the markup features of HTML content.</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget that opened the tooltip"
+            "body": "<p>Widget that opened the tooltip</p>"
           }
         ]
       },
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Position of the arrow pointing towards the opening widget *"
+            "body": "<p>Position of the arrow pointing towards the opening widget *</p>"
           }
         ]
       },
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -348,22 +348,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -400,7 +400,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener method for \"pointerover\" event"
+            "body": "<p>Listener method for \"pointerover\" event</p>"
           }
         ],
         "@param": [
@@ -431,11 +431,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -485,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -510,7 +510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },

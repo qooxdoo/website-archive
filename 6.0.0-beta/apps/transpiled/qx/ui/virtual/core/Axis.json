@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 26,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 429,
+        "line": 427,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThe axis maps virtual screen coordinates to item indexes. By default all\nitems have the same size but it is also possible to give specific items\na different size."
+          "body": "<p>The axis maps virtual screen coordinates to item indexes. By default all\n items have the same size but it is also possible to give specific items\n a different size.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 34,
-        "column": 2
+        "line": 32,
+        "column": 14
       },
       "end": {
-        "line": 43,
+        "line": 41,
         "column": 3
       }
     },
@@ -71,11 +71,11 @@
     "change": {
       "location": {
         "start": {
-          "line": 49,
+          "line": 47,
           "column": 4
         },
         "end": {
-          "line": 49,
+          "line": 47,
           "column": 36
         }
       },
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Every change to the axis configuration triggers this event."
+            "body": "<p>Every change to the axis configuration triggers this event.</p>"
           }
         ]
       },
@@ -95,11 +95,11 @@
     "__ranges": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 53,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 53,
           "column": 19
         }
       },
@@ -109,11 +109,11 @@
     "getDefaultItemSize": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 63,
           "column": 5
         }
       },
@@ -121,7 +121,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the default size of the items."
+            "body": "<p>Get the default size of the items.</p>"
           }
         ],
         "@return": [
@@ -139,11 +139,11 @@
     "setDefaultItemSize": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 5
         }
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the default size the items."
+            "body": "<p>Set the default size the items.</p>"
           }
         ],
         "@param": [
@@ -170,11 +170,11 @@
     "getItemCount": {
       "location": {
         "start": {
-          "line": 89,
+          "line": 87,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 89,
           "column": 5
         }
       },
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the number of items in the axis."
+            "body": "<p>Get the number of items in the axis.</p>"
           }
         ],
         "@return": [
@@ -200,11 +200,11 @@
     "setItemCount": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 105,
           "column": 5
         }
       },
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the number of items in the axis."
+            "body": "<p>Set the number of items in the axis.</p>"
           }
         ],
         "@param": [
@@ -231,11 +231,11 @@
     "setItemSize": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 136,
           "column": 5
         }
       },
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the size of a specific item. This allow item, which have a size\ndifferent from the default size."
+            "body": "<p>Sets the size of a specific item. This allow item, which have a size\n different from the default size.</p>"
           }
         ],
         "@param": [
@@ -269,11 +269,11 @@
     "getItemSize": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 149,
           "column": 5
         }
       },
@@ -281,7 +281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the size of the item at the given index."
+            "body": "<p>Get the size of the item at the given index.</p>"
           }
         ],
         "@param": [
@@ -308,11 +308,11 @@
     "resetItemSizes": {
       "location": {
         "start": {
-          "line": 157,
+          "line": 155,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 160,
           "column": 5
         }
       },
@@ -320,7 +320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset all custom sizes set with {@link #setItemSize}."
+            "body": "<p>Reset all custom sizes set with {@link #setItemSize}.</p>"
           }
         ]
       },
@@ -330,11 +330,11 @@
     "__getRanges": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 252,
+          "line": 250,
           "column": 5
         }
       },
@@ -342,7 +342,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Split the position range into disjunct intervals. Each interval starts\nwith a custom sized cell. Each position is contained in exactly one range.\nThe ranges are sorted according to their start position.\n\nComplexity: O(n log n) (n = number of custom sized cells)"
+            "body": "<p>Split the position range into disjunct intervals. Each interval starts\n with a custom sized cell. Each position is contained in exactly one range.\n The ranges are sorted according to their start position.\n Complexity: O(n log n) (n = number of custom sized cells)</p>"
           }
         ],
         "@return": [
@@ -360,11 +360,11 @@
     "__findRangeByPosition": {
       "location": {
         "start": {
-          "line": 263,
+          "line": 261,
           "column": 4
         },
         "end": {
-          "line": 284,
+          "line": 282,
           "column": 5
         }
       },
@@ -372,7 +372,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the range, which contains the position\n\nComplexity: O(log n) (n = number of custom sized cells)"
+            "body": "<p>Returns the range, which contains the position\n Complexity: O(log n) (n = number of custom sized cells)</p>"
           }
         ],
         "@param": [
@@ -399,11 +399,11 @@
     "getItemAtPosition": {
       "location": {
         "start": {
-          "line": 296,
+          "line": 294,
           "column": 4
         },
         "end": {
-          "line": 323,
+          "line": 321,
           "column": 5
         }
       },
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the item and the offset into the item at the given position."
+            "body": "<p>Get the item and the offset into the item at the given position.</p>"
           }
         ],
         "@param": [
@@ -429,9 +429,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the keys <code>index</code> and\n<code>offset</code>. The index is the index of the item containing the\nposition and offsets specifies offset into this item. If the position\nis outside of the range, <code>null</code> is returned.",
+            "body": "{Map} A map with the keys <code>index</code> and\n    <code>offset</code>. The index is the index of the item containing the\n    position and offsets specifies offset into this item. If the position\n    is outside of the range, <code>null</code> is returned.",
             "type": "Map",
-            "description": " A map with the keys <code>index</code> and\n<code>offset</code>. The index is the index of the item containing the\nposition and offsets specifies offset into this item. If the position\nis outside of the range, <code>null</code> is returned."
+            "description": " A map with the keys <code>index</code> and\n    <code>offset</code>. The index is the index of the item containing the\n    position and offsets specifies offset into this item. If the position\n    is outside of the range, <code>null</code> is returned."
           }
         ]
       },
@@ -441,11 +441,11 @@
     "__findRangeByIndex": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 355,
+          "line": 353,
           "column": 5
         }
       },
@@ -453,7 +453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the range, which contains the position.\n\nComplexity: O(log n) (n = number of custom sized cells)"
+            "body": "<p>Returns the range, which contains the position.\n Complexity: O(log n) (n = number of custom sized cells)</p>"
           }
         ],
         "@param": [
@@ -480,11 +480,11 @@
     "getItemPosition": {
       "location": {
         "start": {
-          "line": 365,
+          "line": 363,
           "column": 4
         },
         "end": {
-          "line": 377,
+          "line": 375,
           "column": 5
         }
       },
@@ -492,7 +492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the start position of the item with the given index."
+            "body": "<p>Get the start position of the item with the given index.</p>"
           }
         ],
         "@param": [
@@ -507,9 +507,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer|null} The start position of the item. If the index is outside\nof the axis range <code>null</code> is returned.",
+            "body": "{Integer|null} The start position of the item. If the index is outside\n    of the axis range <code>null</code> is returned.",
             "type": "Integer|null",
-            "description": " The start position of the item. If the index is outside\nof the axis range <code>null</code> is returned."
+            "description": " The start position of the item. If the index is outside\n    of the axis range <code>null</code> is returned."
           }
         ]
       },
@@ -519,11 +519,11 @@
     "getTotalSize": {
       "location": {
         "start": {
-          "line": 385,
+          "line": 383,
           "column": 4
         },
         "end": {
-          "line": 389,
+          "line": 387,
           "column": 5
         }
       },
@@ -531,7 +531,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the sum of all cell sizes."
+            "body": "<p>Returns the sum of all cell sizes.</p>"
           }
         ],
         "@return": [
@@ -549,11 +549,11 @@
     "getItemSizes": {
       "location": {
         "start": {
-          "line": 402,
+          "line": 400,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 420,
           "column": 5
         }
       },
@@ -561,7 +561,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an array of item sizes starting with the item at \"startIndex\". The\nsum of all sizes in the returned array is at least \"minSizeSum\"."
+            "body": "<p>Get an array of item sizes starting with the item at \"startIndex\". The\n sum of all sizes in the returned array is at least \"minSizeSum\".</p>"
           }
         ],
         "@param": [
@@ -583,9 +583,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer[]} List of item sizes starting with the size of the item\nat index <code>startIndex</code>. The sum of the item sizes is at least\n<code>minSizeSum</code>.",
+            "body": "{Integer[]} List of item sizes starting with the size of the item\n    at index <code>startIndex</code>. The sum of the item sizes is at least\n    <code>minSizeSum</code>.",
             "type": "Integer[]",
-            "description": " List of item sizes starting with the size of the item\nat index <code>startIndex</code>. The sum of the item sizes is at least\n<code>minSizeSum</code>."
+            "description": " List of item sizes starting with the size of the item\n    at index <code>startIndex</code>. The sum of the item sizes is at least\n    <code>minSizeSum</code>."
           }
         ]
       },
@@ -716,14 +716,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 426,
-        "column": 2
+        "line": 424,
+        "column": 13
       },
       "end": {
-        "line": 428,
+        "line": 426,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

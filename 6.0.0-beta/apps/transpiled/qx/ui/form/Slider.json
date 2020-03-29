@@ -27,11 +27,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Slider widget provides a vertical or horizontal slider.\n\nThe Slider is the classic widget for controlling a bounded value.\nIt lets the user move a slider handle along a horizontal or vertical\ngroove and translates the handle's position into an integer value\nwithin the defined range.\n\nThe Slider has very few of its own functions.\nThe most useful functions are slideTo() to set the slider directly to some\nvalue; setSingleStep(), setPageStep() to set the steps; and setMinimum()\nand setMaximum() to define the range of the slider.\n\nA slider accepts focus on Tab and provides both a mouse wheel and\na keyboard interface. The keyboard interface is the following:\n\n* Left/Right move a horizontal slider by one single step.\n* Up/Down move a vertical slider by one single step.\n* PageUp moves up one page.\n* PageDown moves down one page.\n* Home moves to the start (minimum).\n* End moves to the end (maximum).\n\nHere are the main properties of the class:\n\n# <code>value</code>: The bounded integer that {@link qx.ui.form.INumberForm}\nmaintains.\n# <code>minimum</code>: The lowest possible value.\n# <code>maximum</code>: The highest possible value.\n# <code>singleStep</code>: The smaller of two natural steps that an abstract\nsliders provides and typically corresponds to the user pressing an arrow key.\n# <code>pageStep</code>: The larger of two natural steps that an abstract\nslider provides and typically corresponds to the user pressing PageUp or\nPageDown."
+          "body": "<p>The Slider widget provides a vertical or horizontal slider.\n The Slider is the classic widget for controlling a bounded value.\n It lets the user move a slider handle along a horizontal or vertical\n groove and translates the handle's position into an integer value\n within the defined range.\n The Slider has very few of its own functions.\n The most useful functions are slideTo() to set the slider directly to some\n value; setSingleStep(), setPageStep() to set the steps; and setMinimum()\n and setMaximum() to define the range of the slider.\n A slider accepts focus on Tab and provides both a mouse wheel and\n a keyboard interface. The keyboard interface is the following:</p>\n<ul>\n<li>Left/Right move a horizontal slider by one single step.</li>\n<li>Up/Down move a vertical slider by one single step.</li>\n<li>PageUp moves up one page.</li>\n<li>PageDown moves down one page.</li>\n<li>Home moves to the start (minimum).</li>\n<li>End moves to the end (maximum).\nHere are the main properties of the class:\n# <code>value</code>: The bounded integer that {@link qx.ui.form.INumberForm}\nmaintains.\n# <code>minimum</code>: The lowest possible value.\n# <code>maximum</code>: The highest possible value.\n# <code>singleStep</code>: The smaller of two natural steps that an abstract\nsliders provides and typically corresponds to the user pressing an arrow key.\n# <code>pageStep</code>: The larger of two natural steps that an abstract\nslider provides and typically corresponds to the user pressing PageUp or\nPageDown.</li>\n</ul>"
         }
       ],
       "@childControl": [
@@ -50,7 +50,7 @@
     "location": {
       "start": {
         "line": 78,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 104,
@@ -61,7 +61,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -71,9 +71,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "orientation {String?\"horizontal\"} Configure the\n{@link #orientation} property",
+          "body": "orientation {String?\"horizontal\"} Configure the\n {@link #orientation} property",
           "paramName": "orientation",
-          "description": " Configure the\n{@link #orientation} property",
+          "description": " Configure the\n {@link #orientation} property",
           "optional": true,
           "defaultValue": "\"horizontal\"",
           "type": "String"
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change event for the value."
+            "body": "<p>Change event for the value.</p>"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as the slide animation ended."
+            "body": "<p>Fired as soon as the slide animation ended.</p>"
           }
         ]
       },
@@ -143,7 +143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -172,7 +172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the slider is horizontal or vertical."
+            "body": "<p>Whether the slider is horizontal or vertical.</p>"
           }
         ]
       },
@@ -230,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The current slider value.\n\nStrictly validates according to {@link #minimum} and {@link #maximum}.\nDo not apply any value correction to the incoming value. If you depend\non this, please use {@link #slideTo} instead."
+            "body": "<p>The current slider value.\n Strictly validates according to {@link #minimum} and {@link #maximum}.\n Do not apply any value correction to the incoming value. If you depend\n on this, please use {@link #slideTo} instead.</p>"
           }
         ]
       },
@@ -258,7 +258,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The minimum slider value (may be negative). This value must be smaller\nthan {@link #maximum}."
+            "body": "<p>The minimum slider value (may be negative). This value must be smaller\n than {@link #maximum}.</p>"
           }
         ]
       },
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum slider value (may be negative). This value must be larger\nthan {@link #minimum}."
+            "body": "<p>The maximum slider value (may be negative). This value must be larger\n than {@link #minimum}.</p>"
           }
         ]
       },
@@ -312,7 +312,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each event. Typically corresponds\nto the user pressing an arrow key."
+            "body": "<p>The amount to increment on each event. Typically corresponds\n to the user pressing an arrow key.</p>"
           }
         ]
       },
@@ -337,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each event. Typically corresponds\nto the user pressing <code>PageUp</code> or <code>PageDown</code>."
+            "body": "<p>The amount to increment on each event. Typically corresponds\n to the user pressing <code>PageUp</code> or <code>PageDown</code>.</p>"
           }
         ]
       },
@@ -362,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factor to apply to the width/height of the knob in relation\nto the dimension of the underlying area."
+            "body": "<p>Factor to apply to the width/height of the knob in relation\n to the dimension of the underlying area.</p>"
           }
         ]
       },
@@ -548,7 +548,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "event delay stuff during drag"
+            "body": "<p>event delay stuff during drag</p>"
           }
         ]
       },
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -644,36 +644,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -709,22 +709,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -761,11 +761,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for pointerover events at the knob child control.\n\nAdds the 'hovered' state"
+            "body": "<p>Event handler for pointerover events at the knob child control.\n Adds the 'hovered' state</p>"
           }
         ],
         "@param": [
@@ -796,7 +796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for pointerout events at the knob child control.\n\nRemoves the 'hovered' state"
+            "body": "<p>Event handler for pointerout events at the knob child control.\n Removes the 'hovered' state</p>"
           }
         ],
         "@param": [
@@ -827,7 +827,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of roll event"
+            "body": "<p>Listener of roll event</p>"
           }
         ],
         "@param": [
@@ -858,7 +858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for keypress events.\n\nAdds support for arrow keys, page up, page down, home and end keys."
+            "body": "<p>Event handler for keypress events.\n Adds support for arrow keys, page up, page down, home and end keys.</p>"
           }
         ],
         "@param": [
@@ -889,7 +889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointerdown event. Initializes drag or tracking mode."
+            "body": "<p>Listener of pointerdown event. Initializes drag or tracking mode.</p>"
           }
         ],
         "@param": [
@@ -920,7 +920,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointerup event. Used for cleanup of previously\ninitialized modes."
+            "body": "<p>Listener of pointerup event. Used for cleanup of previously\n initialized modes.</p>"
           }
         ],
         "@param": [
@@ -951,7 +951,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointermove event for the knob. Only used in drag mode."
+            "body": "<p>Listener of pointermove event for the knob. Only used in drag mode.</p>"
           }
         ],
         "@param": [
@@ -982,7 +982,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of interval event by the internal timer. Only used\nin tracking sequences."
+            "body": "<p>Listener of interval event by the internal timer. Only used\n in tracking sequences.</p>"
           }
         ],
         "@param": [
@@ -1013,7 +1013,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of resize event for both the slider itself and the knob."
+            "body": "<p>Listener of resize event for both the slider itself and the knob.</p>"
           }
         ],
         "@param": [
@@ -1044,7 +1044,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -1082,7 +1082,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Available space for knob to slide on, computed on resize of\nthe widget"
+            "body": "{Integer} Available space for knob to slide on, computed on resize of\n the widget"
           }
         ]
       },
@@ -1104,7 +1104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the value where the tracking should end depending on\nthe current pointer position."
+            "body": "<p>Computes the value where the tracking should end depending on\n the current pointer position.</p>"
           }
         ],
         "@param": [
@@ -1135,7 +1135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given position to a value.\n\nDoes not respect single or page step."
+            "body": "<p>Converts the given position to a value.\n Does not respect single or page step.</p>"
           }
         ],
         "@param": [
@@ -1174,7 +1174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given value to a position to place\nthe knob to."
+            "body": "<p>Converts the given value to a position to place\n the knob to.</p>"
           }
         ],
         "@param": [
@@ -1213,7 +1213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the knob position following the currently configured\nvalue. Useful on reflows where the dimensions of the slider\nitself have been modified."
+            "body": "<p>Updates the knob position following the currently configured\n value. Useful on reflows where the dimensions of the slider\n itself have been modified.</p>"
           }
         ]
       },
@@ -1235,15 +1235,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the knob to the given position."
+            "body": "<p>Moves the knob to the given position.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "position {Integer} Any valid position (needs to be\ngreater or equal than zero)",
+            "body": "position {Integer} Any valid position (needs to be\n   greater or equal than zero)",
             "paramName": "position",
-            "description": " Any valid position (needs to be\ngreater or equal than zero)",
+            "description": " Any valid position (needs to be\n   greater or equal than zero)",
             "type": "Integer"
           }
         ]
@@ -1266,7 +1266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reconfigures the size of the knob depending on\nthe optionally defined {@link #knobFactor}."
+            "body": "<p>Reconfigures the size of the knob depending on\n the optionally defined {@link #knobFactor}.</p>"
           }
         ]
       },
@@ -1288,11 +1288,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSLIDE METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SLIDE METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Slides backward to the minimum value"
+            "body": "<p>Slides backward to the minimum value</p>"
           }
         ],
         "@param": [
@@ -1323,7 +1323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides forward to the maximum value"
+            "body": "<p>Slides forward to the maximum value</p>"
           }
         ],
         "@param": [
@@ -1354,7 +1354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides forward (right or bottom depending on orientation)"
+            "body": "<p>Slides forward (right or bottom depending on orientation)</p>"
           }
         ]
       },
@@ -1376,7 +1376,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides backward (to left or top depending on orientation)"
+            "body": "<p>Slides backward (to left or top depending on orientation)</p>"
           }
         ]
       },
@@ -1398,7 +1398,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides a page forward (to right or bottom depending on orientation)"
+            "body": "<p>Slides a page forward (to right or bottom depending on orientation)</p>"
           }
         ],
         "@param": [
@@ -1429,7 +1429,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides a page backward (to left or top depending on orientation)"
+            "body": "<p>Slides a page backward (to left or top depending on orientation)</p>"
           }
         ],
         "@param": [
@@ -1460,7 +1460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides by the given offset.\n\nThis method works with the value, not with the coordinate."
+            "body": "<p>Slides by the given offset.\n This method works with the value, not with the coordinate.</p>"
           }
         ],
         "@param": [
@@ -1498,15 +1498,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Slides to the given value\n\nThis method works with the value, not with the coordinate."
+            "body": "<p>Slides to the given value\n This method works with the value, not with the coordinate.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Integer} Scroll to a value between the defined\nminimum and maximum.",
+            "body": "value {Integer} Scroll to a value between the defined\n   minimum and maximum.",
             "paramName": "value",
-            "description": " Scroll to a value between the defined\nminimum and maximum.",
+            "description": " Scroll to a value between the defined\n   minimum and maximum.",
             "type": "Integer"
           },
           {
@@ -1536,7 +1536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the position property considering the minimum and maximum values."
+            "body": "<p>Updates the position property considering the minimum and maximum values.</p>"
           }
         ],
         "@param": [
@@ -1567,7 +1567,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "In case a slide animation is currently running, it will be stopped.\nIf not, the method does nothing."
+            "body": "<p>In case a slide animation is currently running, it will be stopped.\n If not, the method does nothing.</p>"
           }
         ]
       },
@@ -1589,7 +1589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to normalize the given value concerning the minimum\nand maximum value."
+            "body": "<p>Internal helper to normalize the given value concerning the minimum\n and maximum value.</p>"
           }
         ],
         "@param": [
@@ -1628,7 +1628,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Animation helper which takes care of the animated slide."
+            "body": "<p>Animation helper which takes care of the animated slide.</p>"
           }
         ],
         "@param": [
@@ -1666,11 +1666,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1695,7 +1695,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1720,7 +1720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1745,7 +1745,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for applyValue which fires the changeValue event."
+            "body": "<p>Helper for applyValue which fires the changeValue event.</p>"
           }
         ]
       },
@@ -1767,7 +1767,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1792,7 +1792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1815,11 +1815,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1846,7 +1846,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -1872,11 +1872,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -1903,7 +1903,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1929,11 +1929,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1960,7 +1960,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1986,11 +1986,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -2017,7 +2017,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -2043,11 +2043,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -2074,7 +2074,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -2370,7 +2370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [

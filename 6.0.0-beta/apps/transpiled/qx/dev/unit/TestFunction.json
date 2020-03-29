@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Wrapper object for a method containing unit test code."
+          "body": "<p>Wrapper object for a method containing unit test code.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 45,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 57,
@@ -46,11 +46,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "There are two ways to define a test function. First by passing a class\nand a method name to the constructor or second by giving a the method\ndirectly."
+          "body": "<p>There are two ways to define a test function. First by passing a class\n and a method name to the constructor or second by giving a the method\n directly.</p>"
         }
       ],
       "@param": [
@@ -74,9 +74,9 @@
         },
         {
           "name": "@param",
-          "body": "testFunction {Function?null} A reference to a test function. If this\nparameter is set the other parameters are ignored.",
+          "body": "testFunction {Function?null} A reference to a test function. If this\n    parameter is set the other parameters are ignored.",
           "paramName": "testFunction",
-          "description": " A reference to a test function. If this\nparameter is set the other parameters are ignored.",
+          "description": " A reference to a test function. If this\n    parameter is set the other parameters are ignored.",
           "optional": true,
           "defaultValue": "null",
           "type": "Function"
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The test function"
+            "body": "<p>The test function</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Name of the test"
+            "body": "<p>Name of the test</p>"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Name of the class containing the test"
+            "body": "<p>Name of the class containing the test</p>"
           }
         ]
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The test class"
+            "body": "<p>The test class</p>"
           }
         ]
       },
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Runs the test and logs the test result to a {@link TestResult} instance,"
+            "body": "<p>Runs the test and logs the test result to a {@link TestResult} instance,</p>"
           }
         ],
         "@param": [
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Call the test class' <code>setUp</code> method."
+            "body": "<p>Call the test class' <code>setUp</code> method.</p>"
           }
         ]
       },
@@ -265,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Call the test class' <code>tearDown</code> method."
+            "body": "<p>Call the test class' <code>tearDown</code> method.</p>"
           }
         ]
       },
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the full name of the test."
+            "body": "<p>Get the full name of the test.</p>"
           }
         ],
         "@return": [

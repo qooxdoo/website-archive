@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A table column model that automatically resizes columns based on a\nselected behavior."
+          "body": "<p>A table column model that automatically resizes columns based on a\n selected behavior.</p>"
         }
       ],
       "@see": [
@@ -43,7 +43,7 @@
     "location": {
       "start": {
         "line": 38,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -54,7 +54,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The behavior to use.\n\nThe provided behavior must extend {@link qx.ui.table.columnmodel.resizebehavior.Abstract} and\nimplement the <i>onAppear</i>, <i>onTableWidthChanged</i>,\n<i>onColumnWidthChanged</i> and <i>onVisibilityChanged</i>methods."
+            "body": "<p>The behavior to use.\n The provided behavior must extend {@link qx.ui.table.columnmodel.resizebehavior.Abstract} and\n implement the <i>onAppear</i>, <i>onTableWidthChanged</i>,\n <i>onColumnWidthChanged</i> and <i>onVisibilityChanged</i>methods.</p>"
           }
         ]
       },
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Behavior modifier"
+            "body": "<p>Behavior modifier</p>"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the column model."
+            "body": "<p>Initializes the column model.</p>"
           }
         ],
         "@param": [
@@ -200,9 +200,9 @@
           },
           {
             "name": "@param",
-            "body": "table {qx.ui.table.Table}\nThe table which this model is used for. This allows us access to\nother aspects of the table, as the <i>behavior</i> sees fit.",
+            "body": "table {qx.ui.table.Table}\n   The table which this model is used for. This allows us access to\n   other aspects of the table, as the <i>behavior</i> sees fit.",
             "paramName": "table",
-            "description": "\nThe table which this model is used for. This allows us access to\nother aspects of the table, as the <i>behavior</i> sees fit.",
+            "description": "\n   The table which this model is used for. This allows us access to\n   other aspects of the table, as the <i>behavior</i> sees fit.",
             "type": "qx.ui.table.Table"
           }
         ]
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the table widget"
+            "body": "<p>Get the table widget</p>"
           }
         ],
         "@return": [
@@ -259,15 +259,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset the column widths to their \"onappear\" defaults."
+            "body": "<p>Reset the column widths to their \"onappear\" defaults.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe \"columnVisibilityMenuCreateEnd\" event indicating that the menu is\nbeing generated.  The data is a map containing properties <i>table</i>\nand <i>menu</i>.",
+            "body": "event {qx.event.type.Data}\n   The \"columnVisibilityMenuCreateEnd\" event indicating that the menu is\n   being generated.  The data is a map containing properties <i>table</i>\n   and <i>menu</i>.",
             "paramName": "event",
-            "description": "\nThe \"columnVisibilityMenuCreateEnd\" event indicating that the menu is\nbeing generated.  The data is a map containing properties <i>table</i>\nand <i>menu</i>.",
+            "description": "\n   The \"columnVisibilityMenuCreateEnd\" event indicating that the menu is\n   being generated.  The data is a map containing properties <i>table</i>\n   and <i>menu</i>.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -290,15 +290,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"appear\" event."
+            "body": "<p>Event handler for the \"appear\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Event}\nThe \"onappear\" event object.",
+            "body": "event {qx.event.type.Event}\n   The \"onappear\" event object.",
             "paramName": "event",
-            "description": "\nThe \"onappear\" event object.",
+            "description": "\n   The \"onappear\" event object.",
             "type": "qx.event.type.Event"
           }
         ]
@@ -321,15 +321,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"tableWidthChanged\" event."
+            "body": "<p>Event handler for the \"tableWidthChanged\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Event}\nThe \"onwindowresize\" event object.",
+            "body": "event {qx.event.type.Event}\n   The \"onwindowresize\" event object.",
             "paramName": "event",
-            "description": "\nThe \"onwindowresize\" event object.",
+            "description": "\n   The \"onwindowresize\" event object.",
             "type": "qx.event.type.Event"
           }
         ]
@@ -352,15 +352,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"verticalScrollBarChanged\" event."
+            "body": "<p>Event handler for the \"verticalScrollBarChanged\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe \"verticalScrollBarChanged\" event object.  The data is a boolean\nindicating whether a vertical scroll bar is now present.",
+            "body": "event {qx.event.type.Data}\n   The \"verticalScrollBarChanged\" event object.  The data is a boolean\n   indicating whether a vertical scroll bar is now present.",
             "paramName": "event",
-            "description": "\nThe \"verticalScrollBarChanged\" event object.  The data is a boolean\nindicating whether a vertical scroll bar is now present.",
+            "description": "\n   The \"verticalScrollBarChanged\" event object.  The data is a boolean\n   indicating whether a vertical scroll bar is now present.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -383,15 +383,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"widthChanged\" event."
+            "body": "<p>Event handler for the \"widthChanged\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe \"widthChanged\" event object.",
+            "body": "event {qx.event.type.Data}\n   The \"widthChanged\" event object.",
             "paramName": "event",
-            "description": "\nThe \"widthChanged\" event object.",
+            "description": "\n   The \"widthChanged\" event object.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -414,15 +414,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"visibilityChanged\" event."
+            "body": "<p>Event handler for the \"visibilityChanged\" event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "event {qx.event.type.Data}\nThe \"visibilityChanged\" event object.",
+            "body": "event {qx.event.type.Data}\n   The \"visibilityChanged\" event object.",
             "paramName": "event",
-            "description": "\nThe \"visibilityChanged\" event object.",
+            "description": "\n   The \"visibilityChanged\" event object.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -442,7 +442,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -484,7 +484,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -540,7 +540,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -589,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -652,7 +652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -865,7 +865,7 @@
     "location": {
       "start": {
         "line": 384,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 390,
@@ -876,7 +876,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

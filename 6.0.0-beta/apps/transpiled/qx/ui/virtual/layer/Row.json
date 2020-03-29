@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 151,
+        "line": 149,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThe Row layer renders row background colors."
+          "body": "<p>The Row layer renders row background colors.</p>"
         }
       ]
     }
@@ -35,11 +35,11 @@
     "appearance": {
       "location": {
         "start": {
-          "line": 39,
+          "line": 37,
           "column": 4
         },
         "end": {
-          "line": 43,
+          "line": 41,
           "column": 5
         }
       },
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -66,11 +66,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 56,
+          "line": 54,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 98,
           "column": 5
         }
       },
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -122,11 +122,11 @@
     "_updateLayerWindow": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 111,
           "column": 5
         }
       },
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -178,11 +178,11 @@
     "setColor": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 122,
           "column": 5
         }
       },
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -203,9 +203,9 @@
           },
           {
             "name": "@param",
-            "body": "color {Color|null} the color to set. A value of <code>null</code>\nwill reset the color.",
+            "body": "color {Color|null} the color to set. A value of <code>null</code>\n    will reset the color.",
             "paramName": "color",
-            "description": " the color to set. A value of <code>null</code>\nwill reset the color.",
+            "description": " the color to set. A value of <code>null</code>\n    will reset the color.",
             "type": [
               "Color",
               "null"
@@ -223,11 +223,11 @@
     "setBackground": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 132,
           "column": 5
         }
       },
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -248,9 +248,9 @@
           },
           {
             "name": "@param",
-            "body": "decorator {qx.ui.decoration.IDecorator|null} the decorator to set. A value of\n<code>null</code> will reset the decorator.",
+            "body": "decorator {qx.ui.decoration.IDecorator|null} the decorator to set. A value of\n    <code>null</code> will reset the decorator.",
             "paramName": "decorator",
-            "description": " the decorator to set. A value of\n<code>null</code> will reset the decorator.",
+            "description": " the decorator to set. A value of\n    <code>null</code> will reset the decorator.",
             "type": [
               "qx.ui.decoration.IDecorator",
               "null"
@@ -268,11 +268,11 @@
     "__isRowRendered": {
       "location": {
         "start": {
-          "line": 144,
+          "line": 142,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 147,
           "column": 5
         }
       },
@@ -280,7 +280,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the row with the given index is currently rendered (i.e. in the\nlayer's view port)."
+            "body": "<p>Whether the row with the given index is currently rendered (i.e. in the\n layer's view port).</p>"
           }
         ],
         "@param": [

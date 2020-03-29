@@ -28,11 +28,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A *spinner* is a control that allows you to adjust a numerical value,\ntypically within an allowed range. An obvious example would be to specify the\nmonth of a year as a number in the range 1 - 12.\n\nTo do so, a spinner encompasses a field to display the current value (a\ntextfield) and controls such as up and down buttons to change that value. The\ncurrent value can also be changed by editing the display field directly, or\nusing mouse wheel and cursor keys.\n\nAn optional {@link #numberFormat} property allows you to control the format of\nhow a value can be entered and will be displayed.\n\nA brief, but non-trivial example:\n\n<pre class='javascript'>\nvar s = new qx.ui.form.Spinner();\ns.set({\nmaximum: 3000,\nminimum: -3000\n});\nvar nf = new qx.util.format.NumberFormat();\nnf.setMaximumFractionDigits(2);\ns.setNumberFormat(nf);\n</pre>\n\nA spinner instance without any further properties specified in the\nconstructor or a subsequent *set* command will appear with default\nvalues and behaviour."
+          "body": "<p>A <em>spinner</em> is a control that allows you to adjust a numerical value,\n typically within an allowed range. An obvious example would be to specify the\n month of a year as a number in the range 1 - 12.\n To do so, a spinner encompasses a field to display the current value (a\n textfield) and controls such as up and down buttons to change that value. The\n current value can also be changed by editing the display field directly, or\n using mouse wheel and cursor keys.\n An optional {@link #numberFormat} property allows you to control the format of\n how a value can be entered and will be displayed.\n A brief, but non-trivial example:\n </p>\n<pre class='javascript'>\n var s = new qx.ui.form.Spinner();\n s.set({\n   maximum: 3000,\n   minimum: -3000\n });\n var nf = new qx.util.format.NumberFormat();\n nf.setMaximumFractionDigits(2);\n s.setNumberFormat(nf);\n </pre>\n<p>A spinner instance without any further properties specified in the\n constructor or a subsequent <em>set</em> command will appear with default\n values and behaviour.</p>"
         }
       ],
       "@childControl": [
@@ -65,7 +65,7 @@
     "location": {
       "start": {
         "line": 82,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 131,
@@ -76,7 +76,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -124,7 +124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each event (keypress or pointerdown)"
+            "body": "<p>The amount to increment on each event (keypress or pointerdown)</p>"
           }
         ]
       },
@@ -207,7 +207,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each pageup/pagedown keypress"
+            "body": "<p>The amount to increment on each pageup/pagedown keypress</p>"
           }
         ]
       },
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "minimal value of the Range object"
+            "body": "<p>minimal value of the Range object</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The value of the spinner."
+            "body": "<p>The value of the spinner.</p>"
           }
         ]
       },
@@ -288,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "maximal value of the Range object"
+            "body": "<p>maximal value of the Range object</p>"
           }
         ]
       },
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether the value should wrap around"
+            "body": "<p>whether the value should wrap around</p>"
           }
         ]
       },
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls whether the textfield of the spinner is editable or not"
+            "body": "<p>Controls whether the textfield of the spinner is editable or not</p>"
           }
         ]
       },
@@ -367,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls the display of the number in the textfield"
+            "body": "<p>Controls the display of the number in the textfield</p>"
           }
         ]
       },
@@ -393,7 +393,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -496,7 +496,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Saved last value in case invalid text is entered"
+            "body": "<p>Saved last value in case invalid text is entered</p>"
           }
         ]
       },
@@ -518,7 +518,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the page-up button has been pressed"
+            "body": "<p>Whether the page-up button has been pressed</p>"
           }
         ]
       },
@@ -540,7 +540,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the page-down button has been pressed"
+            "body": "<p>Whether the page-down button has been pressed</p>"
           }
         ]
       },
@@ -562,26 +562,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET INTERNALS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET INTERNALS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -618,7 +618,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the regular expression used as the text field's filter"
+            "body": "<p>Returns the regular expression used as the text field's filter</p>"
           }
         ],
         "@return": [
@@ -648,7 +648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -680,7 +680,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -706,11 +706,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Apply routine for the minimum property.\n\nIt sets the value of the spinner to the maximum of the current spinner\nvalue and the given min property value."
+            "body": "<p>Apply routine for the minimum property.\n It sets the value of the spinner to the maximum of the current spinner\n value and the given min property value.</p>"
           }
         ],
         "@param": [
@@ -751,7 +751,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply routine for the maximum property.\n\nIt sets the value of the spinner to the minimum of the current spinner\nvalue and the given max property value."
+            "body": "<p>Apply routine for the maximum property.\n It sets the value of the spinner to the minimum of the current spinner\n value and the given max property value.</p>"
           }
         ],
         "@param": [
@@ -792,7 +792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -818,24 +818,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the value being applied is allowed.\n\nIf you override this to change the allowed type, you will also\nwant to override {@link #_applyValue}, {@link #_applyMinimum},\n{@link #_applyMaximum}, {@link #_countUp}, {@link #_countDown}, and\n{@link #_onTextChange} methods as those cater specifically to numeric\nvalues."
+            "body": "<p>Check whether the value being applied is allowed.\n If you override this to change the allowed type, you will also\n want to override {@link #<em>applyValue}, {@link #</em>applyMinimum},\n {@link #<em>applyMaximum}, {@link #</em>countUp}, {@link #<em>countDown}, and\n {@link #</em>onTextChange} methods as those cater specifically to numeric\n values.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {var}\nThe value being set",
+            "body": "value {var}\n   The value being set",
             "paramName": "value",
-            "description": "\nThe value being set",
+            "description": "\n   The value being set",
             "type": "var"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean}\n<i>true</i> if the value is allowed;\n<i>false> otherwise.",
+            "body": "{Boolean}\n   <i>true</i> if the value is allowed;\n   <i>false> otherwise.",
             "type": "Boolean",
-            "description": "\n<i>true</i> if the value is allowed;\n<i>false> otherwise."
+            "description": "\n   <i>true</i> if the value is allowed;\n   <i>false> otherwise."
           }
         ]
       },
@@ -857,7 +857,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply routine for the value property.\n\nIt disables / enables the buttons and handles the wrap around."
+            "body": "<p>Apply routine for the value property.\n It disables / enables the buttons and handles the wrap around.</p>"
           }
         ],
         "@param": [
@@ -898,7 +898,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply routine for the editable property.<br/>\nIt sets the textfield of the spinner to not read only."
+            "body": "<p>Apply routine for the editable property.<br/>\n It sets the textfield of the spinner to not read only.</p>"
           }
         ],
         "@param": [
@@ -939,7 +939,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply routine for the wrap property.<br/>\nEnables all buttons if the wrapping is enabled."
+            "body": "<p>Apply routine for the wrap property.<br/>\n Enables all buttons if the wrapping is enabled.</p>"
           }
         ],
         "@param": [
@@ -980,7 +980,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply routine for the numberFormat property.<br/>\nWhen setting a number format, the display of the\nvalue in the text-field will be changed immediately."
+            "body": "<p>Apply routine for the numberFormat property.<br/>\n When setting a number format, the display of the\n value in the text-field will be changed immediately.</p>"
           }
         ],
         "@param": [
@@ -1021,7 +1021,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element, to which the content padding should be applied."
+            "body": "<p>Returns the element, to which the content padding should be applied.</p>"
           }
         ],
         "@return": [
@@ -1051,7 +1051,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks the min and max values, disables / enables the\nbuttons and handles the wrap around."
+            "body": "<p>Checks the min and max values, disables / enables the\n buttons and handles the wrap around.</p>"
           }
         ]
       },
@@ -1073,11 +1073,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nKEY EVENT-HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  KEY EVENT-HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Callback for \"keyDown\" event.<br/>\nControls the interval mode (\"single\" or \"page\")\nand the interval increase by detecting \"Up\"/\"Down\"\nand \"PageUp\"/\"PageDown\" keys.<br/>\nThe corresponding button will be pressed."
+            "body": "<p>Callback for \"keyDown\" event.<br/>\n Controls the interval mode (\"single\" or \"page\")\n and the interval increase by detecting \"Up\"/\"Down\"\n and \"PageUp\"/\"PageDown\" keys.<br/>\n The corresponding button will be pressed.</p>"
           }
         ],
         "@param": [
@@ -1108,7 +1108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback for \"keyUp\" event.<br/>\nDetecting \"Up\"/\"Down\" and \"PageUp\"/\"PageDown\" keys.<br/>\nReleases the button and disabled the page mode, if necessary."
+            "body": "<p>Callback for \"keyUp\" event.<br/>\n Detecting \"Up\"/\"Down\" and \"PageUp\"/\"PageDown\" keys.<br/>\n Releases the button and disabled the page mode, if necessary.</p>"
           }
         ],
         "@param": [
@@ -1139,11 +1139,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOTHER EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OTHER EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Callback method for the \"roll\" event.<br/>\nIncrements or decrements the value of the spinner."
+            "body": "<p>Callback method for the \"roll\" event.<br/>\n Increments or decrements the value of the spinner.</p>"
           }
         ],
         "@param": [
@@ -1174,7 +1174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback method for the \"change\" event of the textfield."
+            "body": "<p>Callback method for the \"change\" event of the textfield.</p>"
           }
         ],
         "@param": [
@@ -1205,7 +1205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback method for the locale Manager's \"changeLocale\" event."
+            "body": "<p>Callback method for the locale Manager's \"changeLocale\" event.</p>"
           }
         ],
         "@param": [
@@ -1236,7 +1236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback method for the number format's \"changeNumberFormat\" event."
+            "body": "<p>Callback method for the number format's \"changeNumberFormat\" event.</p>"
           }
         ],
         "@param": [
@@ -1267,11 +1267,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERVAL HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERVAL HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Checks if the spinner is in page mode and counts either the single\nor page Step up."
+            "body": "<p>Checks if the spinner is in page mode and counts either the single\n or page Step up.</p>"
           }
         ]
       },
@@ -1293,7 +1293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the spinner is in page mode and counts either the single\nor page Step down."
+            "body": "<p>Checks if the spinner is in page mode and counts either the single\n or page Step down.</p>"
           }
         ]
       },
@@ -1315,7 +1315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Normalizes the incoming value to be in the valid range and\napplies it to the {@link #value} afterwards."
+            "body": "<p>Normalizes the incoming value to be in the valid range and\n applies it to the {@link #value} afterwards.</p>"
           }
         ],
         "@param": [
@@ -1354,7 +1354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1640,11 +1640,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1671,7 +1671,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -1697,11 +1697,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -1728,7 +1728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1754,11 +1754,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1785,7 +1785,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1811,11 +1811,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -1842,7 +1842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -1868,11 +1868,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -1899,7 +1899,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -2247,7 +2247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -6109,13 +6109,14 @@
     "location": {
       "start": {
         "line": 844,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 854,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

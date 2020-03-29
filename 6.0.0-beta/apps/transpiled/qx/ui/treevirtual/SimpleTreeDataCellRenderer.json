@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\nDavid Perez Carmona (david-perez)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n David Perez Carmona (david-perez)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A data cell renderer for the tree column of a simple tree\n\nThis cell renderer has provisions for subclasses to easily extend the\nappearance of the tree. If the tree should contain images, labels,\netc. before the indentation, the subclass should override the method\n_addExtraContentBeforeIndentation(). Similarly, content can be added before\nthe icon by overriding _addExtraContentBeforeIcon(), and before the label\nby overriding _addExtraContentBeforeLabel().\n\nEach of these overridden methods that calls _addImage() can provide, as\npart of the map passed to _addImage(), a member called \"tooltip\" which\ncontains the tool tip to present when the mouse is hovered over the image.\n\nIf this class is subclassed to form a new cell renderer, an instance of it\nmust be provided, via the 'custom' parameter, to the TreeVirtual\nconstructor."
+          "body": "<p>A data cell renderer for the tree column of a simple tree\n This cell renderer has provisions for subclasses to easily extend the\n appearance of the tree. If the tree should contain images, labels,\n etc. before the indentation, the subclass should override the method\n _addExtraContentBeforeIndentation(). Similarly, content can be added before\n the icon by overriding _addExtraContentBeforeIcon(), and before the label\n by overriding _addExtraContentBeforeLabel().\n Each of these overridden methods that calls _addImage() can provide, as\n part of the map passed to _addImage(), a member called \"tooltip\" which\n contains the tool tip to present when the mouse is hovered over the image.\n If this class is subclassed to form a new cell renderer, an instance of it\n must be provided, via the 'custom' parameter, to the TreeVirtual\n constructor.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 62,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "statics": {
     "__icon": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "File names of each of the tree icons"
+            "body": "<p>File names of each of the tree icons</p>"
           }
         ]
       },
@@ -81,7 +82,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether we have not yet requested pre-loading of images"
+            "body": "<p>Whether we have not yet requested pre-loading of images</p>"
           }
         ]
       },
@@ -103,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request preloading of images so they appear immediately upon rendering"
+            "body": "<p>Request preloading of images so they appear immediately upon rendering</p>"
           }
         ]
       },
@@ -127,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set whether lines linking tree children shall be drawn on the tree\nif the theme supports tree lines."
+            "body": "<p>Set whether lines linking tree children shall be drawn on the tree\n if the theme supports tree lines.</p>"
           }
         ]
       },
@@ -152,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When true, exclude only the first-level tree lines, creating,\neffectively, multiple unrelated root nodes."
+            "body": "<p>When true, exclude only the first-level tree lines, creating,\n effectively, multiple unrelated root nodes.</p>"
           }
         ]
       },
@@ -177,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set whether the open/close button should be displayed on a branch, even\nif the branch has no children."
+            "body": "<p>Set whether the open/close button should be displayed on a branch, even\n if the branch has no children.</p>"
           }
         ]
       },
@@ -246,7 +247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -272,15 +273,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -315,15 +316,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -358,24 +359,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an image to the tree.  This might be a visible icon or it may be\npart of the indentation."
+            "body": "<p>Add an image to the tree.  This might be a visible icon or it may be\n part of the indentation.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "imageInfo {Map}\nHow to display the image.  It optionally includes any of the\nfollowing:\n<dl>\n<dt>position {Map}</dt>\n<dd>\nIf provided, a div is created to hold the image.  The div's top,\nright, bottom, left, width, and/or height may be specified with\nmembers of this map.  Each is expected to be an integer value.\n</dd>\n<dt>imageWidth, imageHeight</dt>\n<dd>\nThe image's width and height.  These are used only if both are\nspecified.\n</dd>\n</dl>",
+            "body": "imageInfo {Map}\n   How to display the image.  It optionally includes any of the\n   following:\n   <dl>\n     <dt>position {Map}</dt>\n     <dd>\n       If provided, a div is created to hold the image.  The div's top,\n       right, bottom, left, width, and/or height may be specified with\n       members of this map.  Each is expected to be an integer value.\n     </dd>\n     <dt>imageWidth, imageHeight</dt>\n     <dd>\n       The image's width and height.  These are used only if both are\n       specified.\n     </dd>\n   </dl>",
             "paramName": "imageInfo",
-            "description": "\nHow to display the image.  It optionally includes any of the\nfollowing:\n<dl>\n<dt>position {Map}</dt>\n<dd>\nIf provided, a div is created to hold the image.  The div's top,\nright, bottom, left, width, and/or height may be specified with\nmembers of this map.  Each is expected to be an integer value.\n</dd>\n<dt>imageWidth, imageHeight</dt>\n<dd>\nThe image's width and height.  These are used only if both are\nspecified.\n</dd>\n</dl>",
+            "description": "\n   How to display the image.  It optionally includes any of the\n   following:\n   <dl>\n     <dt>position {Map}</dt>\n     <dd>\n       If provided, a div is created to hold the image.  The div's top,\n       right, bottom, left, width, and/or height may be specified with\n       members of this map.  Each is expected to be an integer value.\n     </dd>\n     <dt>imageWidth, imageHeight</dt>\n     <dd>\n       The image's width and height.  These are used only if both are\n       specified.\n     </dd>\n   </dl>",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe html for this image, possibly with a surrounding div (see\n'position', above).",
+            "body": "{String}\n   The html for this image, possibly with a surrounding div (see\n   'position', above).",
             "type": "String",
-            "description": "\nThe html for this image, possibly with a surrounding div (see\n'position', above)."
+            "description": "\n   The html for this image, possibly with a surrounding div (see\n   'position', above)."
           }
         ]
       },
@@ -397,31 +398,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add the indentation for this node of the tree.\n\nThe indentation optionally includes tree lines.  Whether tree lines are\nused depends on (a) the properties 'useTreeLines' and\n'excludeFirstLevelTreelines' within this class; and (b) the widget\ntheme in use (some themes don't support tree lines)."
+            "body": "<p>Add the indentation for this node of the tree.\n The indentation optionally includes tree lines.  Whether tree lines are\n used depends on (a) the properties 'useTreeLines' and\n 'excludeFirstLevelTreelines' within this class; and (b) the widget\n theme in use (some themes don't support tree lines).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation.",
+            "body": "{Map}\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation.",
             "type": "Map",
-            "description": "\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation."
+            "description": "\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation."
           }
         ]
       },
@@ -443,31 +444,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add the icon for this node of the tree."
+            "body": "<p>Add the icon for this node of the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map contains an 'html' member which contains the html for\nthe icon, and a 'pos' member which is the starting position plus the\nwidth of the icon.",
+            "body": "{Map}\n   The returned map contains an 'html' member which contains the html for\n   the icon, and a 'pos' member which is the starting position plus the\n   width of the icon.",
             "type": "Map",
-            "description": "\nThe returned map contains an 'html' member which contains the html for\nthe icon, and a 'pos' member which is the starting position plus the\nwidth of the icon."
+            "description": "\n   The returned map contains an 'html' member which contains the html for\n   the icon, and a 'pos' member which is the starting position plus the\n   width of the icon."
           }
         ]
       },
@@ -489,31 +490,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add the label for this node of the tree."
+            "body": "<p>Add the label for this node of the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.\nAdditionally, if defined, the labelSpanStyle member is used to apply\nstyle to the span containing the label.  (This member is for use by\nsubclasses; it's not otherwise used by this class.)",
+            "body": "cellInfo {Map} The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.\n   Additionally, if defined, the labelSpanStyle member is used to apply\n   style to the span containing the label.  (This member is for use by\n   subclasses; it's not otherwise used by this class.)",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.\nAdditionally, if defined, the labelSpanStyle member is used to apply\nstyle to the span containing the label.  (This member is for use by\nsubclasses; it's not otherwise used by this class.)",
+            "description": " The information about the cell.\n   See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.\n   Additionally, if defined, the labelSpanStyle member is used to apply\n   style to the span containing the label.  (This member is for use by\n   subclasses; it's not otherwise used by this class.)",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe html for the label.",
+            "body": "{String}\n   The html for the label.",
             "type": "String",
-            "description": "\nThe html for the label."
+            "description": "\n   The html for the label."
           }
         ]
       },
@@ -535,31 +536,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds extra content just before the indentation."
+            "body": "<p>Adds extra content just before the indentation.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation.",
+            "body": "{Map}\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation.",
             "type": "Map",
-            "description": "\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation."
+            "description": "\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation."
           }
         ]
       },
@@ -581,31 +582,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds extra content just before the icon."
+            "body": "<p>Adds extra content just before the icon.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation.",
+            "body": "{Map}\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation.",
             "type": "Map",
-            "description": "\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation."
+            "description": "\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation."
           }
         ]
       },
@@ -627,31 +628,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds extra content just before the label."
+            "body": "<p>Adds extra content just before the label.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n      See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "pos {Integer}\nThe position from the left edge of the column at which to render this\nitem.",
+            "body": "pos {Integer}\n   The position from the left edge of the column at which to render this\n   item.",
             "paramName": "pos",
-            "description": "\nThe position from the left edge of the column at which to render this\nitem.",
+            "description": "\n   The position from the left edge of the column at which to render this\n   item.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation.",
+            "body": "{Map}\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation.",
             "type": "Map",
-            "description": "\nThe returned map contains an 'html' member which contains the html for\nthe indentation, and a 'pos' member which is the starting position\nplus the width of the indentation."
+            "description": "\n   The returned map contains an 'html' member which contains the html for\n   the indentation, and a 'pos' member which is the starting position\n   plus the width of the indentation."
           }
         ]
       },
@@ -673,43 +674,43 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine the symbol to use for indentation of a tree row, at a\nparticular column.  The indentation to use may be just white space or\nmay be a tree line.  Tree lines come in numerous varieties, so the\nappropriate one is selected."
+            "body": "<p>Determine the symbol to use for indentation of a tree row, at a\n particular column.  The indentation to use may be just white space or\n may be a tree line.  Tree lines come in numerous varieties, so the\n appropriate one is selected.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column of indentation being requested, zero-relative",
+            "body": "column {Integer}\n   The column of indentation being requested, zero-relative",
             "paramName": "column",
-            "description": "\nThe column of indentation being requested, zero-relative",
+            "description": "\n   The column of indentation being requested, zero-relative",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "node {Node}\nThe node being displayed in the row.  The properties of a node are\ndescribed in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
+            "body": "node {Node}\n   The node being displayed in the row.  The properties of a node are\n   described in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
             "paramName": "node",
-            "description": "\nThe node being displayed in the row.  The properties of a node are\ndescribed in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
+            "description": "\n   The node being displayed in the row.  The properties of a node are\n   described in {@link qx.ui.treevirtual.SimpleTreeDataModel}",
             "type": "Node"
           },
           {
             "name": "@param",
-            "body": "bUseTreeLines {Boolean}\nWhether to find an appropriate tree line icon, or simply provide\nwhite space.",
+            "body": "bUseTreeLines {Boolean}\n   Whether to find an appropriate tree line icon, or simply provide\n   white space.",
             "paramName": "bUseTreeLines",
-            "description": "\nWhether to find an appropriate tree line icon, or simply provide\nwhite space.",
+            "description": "\n   Whether to find an appropriate tree line icon, or simply provide\n   white space.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "bAlwaysShowOpenCloseSymbol {Boolean}\nWhether to display the open/close icon for a node even if it has no\nchildren.",
+            "body": "bAlwaysShowOpenCloseSymbol {Boolean}\n   Whether to display the open/close icon for a node even if it has no\n   children.",
             "paramName": "bAlwaysShowOpenCloseSymbol",
-            "description": "\nWhether to display the open/close icon for a node even if it has no\nchildren.",
+            "description": "\n   Whether to display the open/close icon for a node even if it has no\n   children.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "bExcludeFirstLevelTreeLines {Boolean}\nIf bUseTreeLines is enabled, then further filtering of the left-most\ntree line may be specified here.  If <i>true</i> then the left-most\ntree line, between top-level siblings, will not be displayed.\nIf <i>false</i>, then the left-most tree line will be displayed\njust like all of the other tree lines.",
+            "body": "bExcludeFirstLevelTreeLines {Boolean}\n   If bUseTreeLines is enabled, then further filtering of the left-most\n   tree line may be specified here.  If <i>true</i> then the left-most\n   tree line, between top-level siblings, will not be displayed.\n   If <i>false</i>, then the left-most tree line will be displayed\n   just like all of the other tree lines.",
             "paramName": "bExcludeFirstLevelTreeLines",
-            "description": "\nIf bUseTreeLines is enabled, then further filtering of the left-most\ntree line may be specified here.  If <i>true</i> then the left-most\ntree line, between top-level siblings, will not be displayed.\nIf <i>false</i>, then the left-most tree line will be displayed\njust like all of the other tree lines.",
+            "description": "\n   If bUseTreeLines is enabled, then further filtering of the left-most\n   tree line may be specified here.  If <i>true</i> then the left-most\n   tree line, between top-level siblings, will not be displayed.\n   If <i>false</i>, then the left-most tree line will be displayed\n   just like all of the other tree lines.",
             "type": "Boolean"
           }
         ],
@@ -1181,13 +1182,14 @@
     "location": {
       "start": {
         "line": 738,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 740,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -1638,30 +1638,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/colorselector/brightness-field.png": [
-      19,
-      256,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
-      256,
-      256,
-      "jpg",
-      "qx"
-    ],
-    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
-      11,
-      11,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/cursors/alias.gif": [
       19,
       15,
@@ -1683,6 +1659,30 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/cursors/nodrop.gif": [
       20,
       20,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-field.png": [
+      19,
+      256,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
+      35,
+      11,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
+      256,
+      256,
+      "jpg",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
+      11,
+      11,
       "gif",
       "qx"
     ],

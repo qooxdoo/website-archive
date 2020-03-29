@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A Button widget.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar button = new qx.ui.mobile.form.Button(\"Hello World\");\n\nbutton.addListener(\"tap\", function(e) {\nalert(\"Button was clicked\");\n}, this);\n\nthis.getRoot.add(button);\n</pre>\n\nThis example creates a button with the label \"Hello World\" and attaches an\nevent listener to the {@link qx.ui.mobile.core.Widget#tap} event."
+          "body": "<p>A Button widget.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var button = new qx.ui.mobile.form.Button(\"Hello World\");\n   button.addListener(\"tap\", function(e) {\n     alert(\"Button was clicked\");\n   }, this);\n   this.getRoot.add(button);\n </pre>\n<p>This example creates a button with the label \"Hello World\" and attaches an\n event listener to the {@link qx.ui.mobile.core.Widget#tap} event.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value."
+            "body": "<p>Sets the value.</p>"
           }
         ],
         "@param": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set value."
+            "body": "<p>Returns the set value.</p>"
           }
         ],
         "@return": [

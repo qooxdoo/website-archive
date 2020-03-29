@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The scroll bar widget wraps the native browser scroll bars as a qooxdoo widget.\nIt can be uses instead of the styled qooxdoo scroll bars.\n\nScroll bars are used by the {@link qx.ui.container.Scroll} container. Usually\na scroll bar is not used directly.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar scrollBar = new qx.ui.core.scroll.NativeScrollBar(\"horizontal\");\nscrollBar.set({\nmaximum: 500\n})\nthis.getRoot().add(scrollBar);\n</pre>\n\nThis example creates a horizontal scroll bar with a maximum value of 500.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The scroll bar widget wraps the native browser scroll bars as a qooxdoo widget.\n It can be uses instead of the styled qooxdoo scroll bars.\n Scroll bars are used by the {@link qx.ui.container.Scroll} container. Usually\n a scroll bar is not used directly.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var scrollBar = new qx.ui.core.scroll.NativeScrollBar(\"horizontal\");\n   scrollBar.set({\n     maximum: 500\n   })\n   this.getRoot().add(scrollBar);\n </pre>\n<p>This example creates a horizontal scroll bar with a maximum value of 500.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/scrollbar.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 54,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 80,
@@ -80,7 +80,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as the scroll animation ended."
+            "body": "<p>Fired as soon as the scroll animation ended.</p>"
           }
         ]
       },
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -133,7 +133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Step size for each tap on the up/down or left/right buttons."
+            "body": "<p>Step size for each tap on the up/down or left/right buttons.</p>"
           }
         ]
       },
@@ -240,7 +240,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the scroll pane html element."
+            "body": "<p>Get the scroll pane html element.</p>"
           }
         ],
         "@return": [
@@ -353,40 +353,40 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -422,7 +422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -456,7 +456,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -482,11 +482,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -511,7 +511,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -536,7 +536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -561,7 +561,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the scroll bar according to its current size, max value and\nenabled state."
+            "body": "<p>Update the scroll bar according to its current size, max value and\n enabled state.</p>"
           }
         ]
       },
@@ -583,7 +583,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -625,7 +625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to set the new position taking care of min and max values."
+            "body": "<p>Helper to set the new position taking care of min and max values.</p>"
           }
         ],
         "@param": [
@@ -656,7 +656,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -698,7 +698,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -740,7 +740,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If a scroll animation is running, it will be stopped."
+            "body": "<p>If a scroll animation is running, it will be stopped.</p>"
           }
         ]
       },
@@ -762,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scroll event handler"
+            "body": "<p>Scroll event handler</p>"
           }
         ],
         "@param": [
@@ -793,7 +793,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for appear which ensured the scroll bar is positioned right\non appear."
+            "body": "<p>Listener for appear which ensured the scroll bar is positioned right\n on appear.</p>"
           }
         ],
         "@param": [
@@ -824,7 +824,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops propagation on the given even"
+            "body": "<p>Stops propagation on the given even</p>"
           }
         ],
         "@param": [
@@ -4659,13 +4659,14 @@
     "location": {
       "start": {
         "line": 406,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 408,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

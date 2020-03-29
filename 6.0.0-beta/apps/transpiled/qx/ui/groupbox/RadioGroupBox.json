@@ -28,11 +28,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A group box, which has a radio button near the legend."
+          "body": "<p>A group box, which has a radio button near the legend.</p>"
         }
       ],
       "@childControl": [
@@ -63,7 +63,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the included radiobutton changed its value"
+            "body": "<p>Fired when the included radiobutton changed its value</p>"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the {@link #execute} method is invoked."
+            "body": "<p>Fired if the {@link #execute} method is invoked.</p>"
           }
         ]
       },
@@ -149,26 +149,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -232,11 +232,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for execute event of checkbox."
+            "body": "<p>Event listener for execute event of checkbox.</p>"
           }
         ],
         "@param": [
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for changeValue event of radio button"
+            "body": "<p>Event listener for changeValue event of radio button</p>"
           }
         ],
         "@param": [
@@ -298,11 +298,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREDIRECTIONS TO LEGEND (FOR RADIO GROUP SUPPORT)\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REDIRECTIONS TO LEGEND (FOR RADIO GROUP SUPPORT)\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -363,7 +363,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -397,7 +397,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the radio group"
+            "body": "<p>Returns the radio group</p>"
           }
         ],
         "@return": [
@@ -431,7 +431,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the radio group to use"
+            "body": "<p>Sets the radio group to use</p>"
           }
         ],
         "@param": [
@@ -466,7 +466,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The value of the groupbox"
+            "body": "<p>The value of the groupbox</p>"
           }
         ],
         "@return": [
@@ -502,7 +502,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures the value of the groupbox."
+            "body": "<p>Configures the value of the groupbox.</p>"
           }
         ],
         "@param": [
@@ -539,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value."
+            "body": "<p>Resets the value.</p>"
           }
         ]
       },
@@ -566,7 +566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the configured legend. Only used for RadioManager compatibility."
+            "body": "<p>Returns the configured legend. Only used for RadioManager compatibility.</p>"
           }
         ],
         "@return": [
@@ -594,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -621,7 +621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -666,11 +666,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -697,7 +697,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -723,11 +723,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -754,7 +754,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -780,11 +780,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -811,7 +811,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -837,11 +837,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -868,7 +868,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -894,11 +894,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -925,7 +925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [

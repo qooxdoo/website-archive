@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Script loader with interface similar to\n<a href=\"http://www.w3.org/TR/XMLHttpRequest/\">XmlHttpRequest</a>.\n\nThe script loader can be used to load scripts from arbitrary sources.\n<span class=\"desktop\">\nFor JSONP requests, consider the {@link qx.bom.request.Jsonp} transport\nthat derives from the script loader.\n</span>\n\n<div class=\"desktop\">\nExample:\n\n<pre class=\"javascript\">\nvar req = new qx.bom.request.Script();\nreq.onload = function() {\n// Script is loaded and parsed and\n// globals set are available\n}\n\nreq.open(\"GET\", url);\nreq.send();\n</pre>\n</div>"
+          "body": "<p>Script loader with interface similar to\n <a href=\"http://www.w3.org/TR/XMLHttpRequest/\">XmlHttpRequest</a>.\n The script loader can be used to load scripts from arbitrary sources.\n <span class=\"desktop\">\n For JSONP requests, consider the {@link qx.bom.request.Jsonp} transport\n that derives from the script loader.\n </span>\n </p>\n<div class=\"desktop\">\n Example:\n <pre class=\"javascript\">\n  var req = new qx.bom.request.Script();\n  req.onload = function() {\n\n\n  }\n  req.open(\"GET\", url);\n  req.send();\n </pre>\n </div>"
         }
       ],
       "@ignore": [
@@ -83,13 +83,14 @@
     "location": {
       "start": {
         "line": 61,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 79,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "readystatechange": {
@@ -107,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired at ready state changes."
+            "body": "<p>Fired at ready state changes.</p>"
           }
         ]
       },
@@ -129,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on error."
+            "body": "<p>Fired on error.</p>"
           }
         ]
       },
@@ -151,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired at loadend."
+            "body": "<p>Fired at loadend.</p>"
           }
         ]
       },
@@ -173,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on timeouts."
+            "body": "<p>Fired on timeouts.</p>"
           }
         ]
       },
@@ -195,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the request is aborted."
+            "body": "<p>Fired when the request is aborted.</p>"
           }
         ]
       },
@@ -217,7 +218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on successful retrieval."
+            "body": "<p>Fired on successful retrieval.</p>"
           }
         ]
       },
@@ -247,7 +248,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Number} Ready state.\n\nStates can be:\nUNSENT:           0,\nOPENED:           1,\nLOADING:          2,\nLOADING:          3,\nDONE:             4\n\nContrary to {@link qx.bom.request.Xhr#readyState}, the script transport\ndoes not receive response headers. For compatibility, another LOADING\nstate is implemented that replaces the HEADERS_RECEIVED state."
+            "body": "{Number} Ready state.\n States can be:\n UNSENT:           0,\n OPENED:           1,\n LOADING:          2,\n LOADING:          3,\n DONE:             4\n Contrary to {@link qx.bom.request.Xhr#readyState}, the script transport\n does not receive response headers. For compatibility, another LOADING\n state is implemented that replaces the HEADERS_RECEIVED state."
           }
         ]
       },
@@ -275,7 +276,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Number} The status code.\n\nNote: The script transport cannot determine the HTTP status code."
+            "body": "{Number} The status code.\n Note: The script transport cannot determine the HTTP status code."
           }
         ]
       },
@@ -303,7 +304,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{String} The status text.\n\nThe script transport does not receive response headers. For compatibility,\nthe statusText property is set to the status casted to string."
+            "body": "{String} The status text.\n The script transport does not receive response headers. For compatibility,\n the statusText property is set to the status casted to string."
           }
         ]
       },
@@ -331,7 +332,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Number} Timeout limit in milliseconds.\n\n0 (default) means no timeout."
+            "body": "{Number} Timeout limit in milliseconds.\n 0 (default) means no timeout."
           }
         ]
       },
@@ -381,7 +382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an event listener for the given event name."
+            "body": "<p>Add an event listener for the given event name.</p>"
           }
         ],
         "@param": [
@@ -435,22 +436,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes (prepares) request."
+            "body": "<p>Initializes (prepares) request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "method {String}\nThe HTTP method to use.\nThis parameter exists for compatibility reasons. The script transport\ndoes not support methods other than GET.",
+            "body": "method {String}\n   The HTTP method to use.\n   This parameter exists for compatibility reasons. The script transport\n   does not support methods other than GET.",
             "paramName": "method",
-            "description": "\nThe HTTP method to use.\nThis parameter exists for compatibility reasons. The script transport\ndoes not support methods other than GET.",
+            "description": "\n   The HTTP method to use.\n   This parameter exists for compatibility reasons. The script transport\n   does not support methods other than GET.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "url {String}\nThe URL to which to send the request.",
+            "body": "url {String}\n   The URL to which to send the request.",
             "paramName": "url",
-            "description": "\nThe URL to which to send the request.",
+            "description": "\n   The URL to which to send the request.",
             "type": "String"
           }
         ]
@@ -473,22 +474,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends a query parameter to URL.\n\nThis method exists for compatibility reasons. The script transport\ndoes not support request headers. However, many services parse query\nparameters like request headers.\n\nNote: The request must be initialized before using this method."
+            "body": "<p>Appends a query parameter to URL.\n This method exists for compatibility reasons. The script transport\n does not support request headers. However, many services parse query\n parameters like request headers.\n Note: The request must be initialized before using this method.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "key {String}\nThe name of the header whose value is to be set.",
+            "body": "key {String}\n  The name of the header whose value is to be set.",
             "paramName": "key",
-            "description": "\nThe name of the header whose value is to be set.",
+            "description": "\n  The name of the header whose value is to be set.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "value {String}\nThe value to set as the body of the header.",
+            "body": "value {String}\n  The value to set as the body of the header.",
             "paramName": "value",
-            "description": "\nThe value to set as the body of the header.",
+            "description": "\n  The value to set as the body of the header.",
             "type": "String"
           }
         ],
@@ -519,7 +520,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sends request."
+            "body": "<p>Sends request.</p>"
           }
         ],
         "@return": [
@@ -549,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Aborts request."
+            "body": "<p>Aborts request.</p>"
           }
         ],
         "@return": [
@@ -579,7 +580,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to emit events and call the callback methods."
+            "body": "<p>Helper to emit events and call the callback methods.</p>"
           }
         ],
         "@param": [
@@ -610,7 +611,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for an event that fires at every state change.\n\nReplace with custom method to get informed about the communication progress."
+            "body": "<p>Event handler for an event that fires at every state change.\n Replace with custom method to get informed about the communication progress.</p>"
           }
         ]
       },
@@ -632,7 +633,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for XHR event \"load\" that is fired on successful retrieval.\n\nNote: This handler is called even when an invalid script is returned.\n\nWarning: Internet Explorer < 9 receives a false \"load\" for invalid URLs.\nThis \"load\" is fired about 2 seconds after sending the request. To\ndistinguish from a real \"load\", consider defining a custom check\nfunction using {@link #setDetermineSuccess} and query the status\nproperty. However, the script loaded needs to have a known impact on\nthe global namespace. If this does not work for you, you may be able\nto set a timeout lower than 2 seconds, depending on script size,\ncomplexity and execution time.\n\nReplace with custom method to listen to the \"load\" event."
+            "body": "<p>Event handler for XHR event \"load\" that is fired on successful retrieval.\n Note: This handler is called even when an invalid script is returned.\n Warning: Internet Explorer &lt; 9 receives a false \"load\" for invalid URLs.\n This \"load\" is fired about 2 seconds after sending the request. To\n distinguish from a real \"load\", consider defining a custom check\n function using {@link #setDetermineSuccess} and query the status\n property. However, the script loaded needs to have a known impact on\n the global namespace. If this does not work for you, you may be able\n to set a timeout lower than 2 seconds, depending on script size,\n complexity and execution time.\n Replace with custom method to listen to the \"load\" event.</p>"
           }
         ]
       },
@@ -654,7 +655,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for XHR event \"loadend\" that is fired on retrieval.\n\nNote: This handler is called even when a network error (or similar)\noccurred.\n\nReplace with custom method to listen to the \"loadend\" event."
+            "body": "<p>Event handler for XHR event \"loadend\" that is fired on retrieval.\n Note: This handler is called even when a network error (or similar)\n occurred.\n Replace with custom method to listen to the \"loadend\" event.</p>"
           }
         ]
       },
@@ -676,7 +677,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for XHR event \"error\" that is fired on a network error.\n\nNote: Some browsers do not support the \"error\" event.\n\nReplace with custom method to listen to the \"error\" event."
+            "body": "<p>Event handler for XHR event \"error\" that is fired on a network error.\n Note: Some browsers do not support the \"error\" event.\n Replace with custom method to listen to the \"error\" event.</p>"
           }
         ]
       },
@@ -698,7 +699,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for XHR event \"abort\" that is fired when request\nis aborted.\n\nReplace with custom method to listen to the \"abort\" event."
+            "body": "<p>Event handler for XHR event \"abort\" that is fired when request\n is aborted.\n Replace with custom method to listen to the \"abort\" event.</p>"
           }
         ]
       },
@@ -720,7 +721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for XHR event \"timeout\" that is fired when timeout\ninterval has passed.\n\nReplace with custom method to listen to the \"timeout\" event."
+            "body": "<p>Event handler for XHR event \"timeout\" that is fired when timeout\n interval has passed.\n Replace with custom method to listen to the \"timeout\" event.</p>"
           }
         ]
       },
@@ -742,24 +743,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a single response header from response.\n\nNote: This method exists for compatibility reasons. The script\ntransport does not receive response headers."
+            "body": "<p>Get a single response header from response.\n Note: This method exists for compatibility reasons. The script\n transport does not receive response headers.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "key {String}\nKey of the header to get the value from.",
+            "body": "key {String}\n  Key of the header to get the value from.",
             "paramName": "key",
-            "description": "\nKey of the header to get the value from.",
+            "description": "\n  Key of the header to get the value from.",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} Warning message or <code>null</code> if the request\nis disposed",
+            "body": "{String|null} Warning message or <code>null</code> if the request\n is disposed",
             "type": "String|null",
-            "description": " Warning message or <code>null</code> if the request\nis disposed"
+            "description": " Warning message or <code>null</code> if the request\n is disposed"
           }
         ]
       },
@@ -781,15 +782,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all response headers from response.\n\nNote: This method exists for compatibility reasons. The script\ntransport does not receive response headers."
+            "body": "<p>Get all response headers from response.\n Note: This method exists for compatibility reasons. The script\n transport does not receive response headers.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} Warning message or <code>null</code> if the request\nis disposed",
+            "body": "{String|null} Warning message or <code>null</code> if the request\n is disposed",
             "type": "String|null",
-            "description": " Warning message or <code>null</code> if the request\nis disposed"
+            "description": " Warning message or <code>null</code> if the request\n is disposed"
           }
         ]
       },
@@ -811,7 +812,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine if loaded script has expected impact on global namespace.\n\nThe function is called once the script was loaded and must return a\nboolean indicating if the response is to be considered successful."
+            "body": "<p>Determine if loaded script has expected impact on global namespace.\n The function is called once the script was loaded and must return a\n boolean indicating if the response is to be considered successful.</p>"
           }
         ],
         "@param": [
@@ -842,7 +843,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose object."
+            "body": "<p>Dispose object.</p>"
           }
         ]
       },
@@ -868,7 +869,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if the request has already beed disposed."
+            "body": "<p>Check if the request has already beed disposed.</p>"
           }
         ],
         "@return": [
@@ -898,11 +899,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROTECTED\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROTECTED\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get URL of request."
+            "body": "<p>Get URL of request.</p>"
           }
         ],
         "@return": [
@@ -932,7 +933,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get script element used for request."
+            "body": "<p>Get script element used for request.</p>"
           }
         ],
         "@return": [
@@ -962,7 +963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle timeout."
+            "body": "<p>Handle timeout.</p>"
           }
         ]
       },
@@ -984,7 +985,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle native load."
+            "body": "<p>Handle native load.</p>"
           }
         ]
       },
@@ -1006,7 +1007,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle native error."
+            "body": "<p>Handle native error.</p>"
           }
         ]
       },
@@ -1028,7 +1029,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPRIVATE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PRIVATE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -1284,11 +1285,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Initialize properties."
+            "body": "<p>Initialize properties.</p>"
           }
         ]
       },
@@ -1310,7 +1311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change readyState."
+            "body": "<p>Change readyState.</p>"
           }
         ],
         "@param": [
@@ -1341,7 +1342,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle success."
+            "body": "<p>Handle success.</p>"
           }
         ]
       },
@@ -1363,7 +1364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle failure."
+            "body": "<p>Handle failure.</p>"
           }
         ]
       },
@@ -1385,7 +1386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Looks up whether browser supports error handler."
+            "body": "<p>Looks up whether browser supports error handler.</p>"
           }
         ],
         "@return": [
@@ -1415,7 +1416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create and configure script element."
+            "body": "<p>Create and configure script element.</p>"
           }
         ],
         "@return": [
@@ -1445,7 +1446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove script element from DOM."
+            "body": "<p>Remove script element from DOM.</p>"
           }
         ]
       },
@@ -1467,7 +1468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Proxy Environment.get to guard against env not being present yet."
+            "body": "<p>Proxy Environment.get to guard against env not being present yet.</p>"
           }
         ],
         "@param": [
@@ -1502,13 +1503,14 @@
     "location": {
       "start": {
         "line": 718,
-        "column": 2
+        "column": 9
       },
       "end": {
         "line": 722,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.bom.request.Jsonp"

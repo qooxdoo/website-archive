@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Objects, which are used as delegates for a data binding store may\nimplement any of the methods described in this interface. The delegate does\nnot need implement all of the methods of this interface. If a method is not\nimplemented the store provides a default implementation.\n\nNote: This interface is meant to document the delegate but should not be\nlisted in the <code>implement</code> key of a class unless all methods are\nreally implemented."
+          "body": "<p>Objects, which are used as delegates for a data binding store may\n implement any of the methods described in this interface. The delegate does\n not need implement all of the methods of this interface. If a method is not\n implemented the store provides a default implementation.\n Note: This interface is meant to document the delegate but should not be\n listed in the <code>implement</code> key of a class unless all methods are\n really implemented.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method manipulates the data from the request and returns the\nmanipulated data."
+            "body": "<p>This method manipulates the data from the request and returns the\n manipulated data.</p>"
           }
         ],
         "@param": [
@@ -86,15 +86,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method can change the settings on the used request by the store."
+            "body": "<p>This method can change the settings on the used request by the store.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "request {var} The created request, depending on the implementation\nof the data store.",
+            "body": "request {var} The created request, depending on the implementation\n   of the data store.",
             "paramName": "request",
-            "description": " The created request, depending on the implementation\nof the data store.",
+            "description": " The created request, depending on the implementation\n   of the data store.",
             "type": "var"
           }
         ]
@@ -114,22 +114,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the possibility to ignore parts of the marshaled data and store the\noriginal data."
+            "body": "<p>Gives the possibility to ignore parts of the marshaled data and store the\n original data.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "body": "parentProperty {String|null} If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "paramName": "parentProperty",
-            "description": " If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "description": " If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "type": [
               "String",
               "null"
@@ -165,7 +165,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the possibility to change the names given in the data to convert\nto something different."
+            "body": "<p>Gives the possibility to change the names given in the data to convert\n to something different.</p>"
           }
         ],
         "@param": [
@@ -178,18 +178,18 @@
           },
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The new property name which should be used for that property in\nthe model.",
+            "body": "{String} The new property name which should be used for that property in\n   the model.",
             "type": "String",
-            "description": " The new property name which should be used for that property in\nthe model."
+            "description": " The new property name which should be used for that property in\n   the model."
           }
         ]
       }
@@ -206,15 +206,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines the user defined class for the given properties string.\nThis class could contain additional methods but needs to have the\nproperties with the given names. Also every property needs to have a\nchange event.\n\nIf this method is implemented, you have to add the superclass and mixins\nyourself to the returned class. This means that the methods\n{@link #getModelSuperClass} and {@link #getModelMixins} will not be\ncalled for the corresponding class."
+            "body": "<p>Determines the user defined class for the given properties string.\n This class could contain additional methods but needs to have the\n properties with the given names. Also every property needs to have a\n change event.\n If this method is implemented, you have to add the superclass and mixins\n yourself to the returned class. This means that the methods\n {@link #getModelSuperClass} and {@link #getModelMixins} will not be\n called for the corresponding class.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           },
           {
@@ -226,9 +226,9 @@
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "body": "parentProperty {String|null} If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "paramName": "parentProperty",
-            "description": " If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "description": " If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "type": [
               "String",
               "null"
@@ -245,9 +245,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Class|null} Returns the class containing the properties\ncorresponding to the given hash of the properties. If <code>null</code>\nwill be returned, the marshaler will create a class.",
+            "body": "{Class|null} Returns the class containing the properties\n   corresponding to the given hash of the properties. If <code>null</code>\n   will be returned, the marshaler will create a class.",
             "type": "Class|null",
-            "description": " Returns the class containing the properties\ncorresponding to the given hash of the properties. If <code>null</code>\nwill be returned, the marshaler will create a class."
+            "description": " Returns the class containing the properties\n   corresponding to the given hash of the properties. If <code>null</code>\n   will be returned, the marshaler will create a class."
           }
         ]
       }
@@ -264,22 +264,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class which the created model class uses as superclass."
+            "body": "<p>Returns the class which the created model class uses as superclass.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "body": "parentProperty {String|null} If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "paramName": "parentProperty",
-            "description": " If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "description": " If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "type": [
               "String",
               "null"
@@ -296,9 +296,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Class|null} Returns the class which should be used as superclass\ncorresponding to the given hash of the properties. If <code>null</code>\nwill be returned, {@link qx.core.Object} will be used as superclass.",
+            "body": "{Class|null} Returns the class which should be used as superclass\n   corresponding to the given hash of the properties. If <code>null</code>\n   will be returned, {@link qx.core.Object} will be used as superclass.",
             "type": "Class|null",
-            "description": " Returns the class which should be used as superclass\ncorresponding to the given hash of the properties. If <code>null</code>\nwill be returned, {@link qx.core.Object} will be used as superclass."
+            "description": " Returns the class which should be used as superclass\n   corresponding to the given hash of the properties. If <code>null</code>\n   will be returned, {@link qx.core.Object} will be used as superclass."
           }
         ]
       }
@@ -315,22 +315,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the mixins which should be included to the class, created by the\nmarshaler and identified by the given properties string."
+            "body": "<p>Returns the mixins which should be included to the class, created by the\n marshaler and identified by the given properties string.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "body": "parentProperty {String|null} If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "paramName": "parentProperty",
-            "description": " If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "description": " If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "type": [
               "String",
               "null"
@@ -347,9 +347,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Array|Mixin|null} Returns an array of mixins or a single mixin which\nwill be included into the given class identified by the properties\ngiven in the parameter. If <code>null</code> will be returned, no mixin\nwill be included.",
+            "body": "{Array|Mixin|null} Returns an array of mixins or a single mixin which\n   will be included into the given class identified by the properties\n   given in the parameter. If <code>null</code> will be returned, no mixin\n   will be included.",
             "type": "Array|Mixin|null",
-            "description": " Returns an array of mixins or a single mixin which\nwill be included into the given class identified by the properties\ngiven in the parameter. If <code>null</code> will be returned, no mixin\nwill be included."
+            "description": " Returns an array of mixins or a single mixin which\n   will be included into the given class identified by the properties\n   given in the parameter. If <code>null</code> will be returned, no mixin\n   will be included."
           }
         ]
       }
@@ -366,15 +366,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the validation rules which should be added to the created class\nfor the given property. This method will be called for every property."
+            "body": "<p>Returns the validation rules which should be added to the created class\n for the given property. This method will be called for every property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "properties {String} A sorted order of propertynames\nseparated by \".",
+            "body": "properties {String} A sorted order of propertynames\n   separated by \".",
             "paramName": "properties",
-            "description": " A sorted order of propertynames\nseparated by \".",
+            "description": " A sorted order of propertynames\n   separated by \".",
             "type": "String"
           },
           {
@@ -388,9 +388,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Function|null} If you want to have a validation rule for the\ncurrent property, you should return a validation function which will\nbe included into the property definition as validator.\n{@link qx.core.Property} for more details.",
+            "body": "{Function|null} If you want to have a validation rule for the\n   current property, you should return a validation function which will\n   be included into the property definition as validator.\n   {@link qx.core.Property} for more details.",
             "type": "Function|null",
-            "description": " If you want to have a validation rule for the\ncurrent property, you should return a validation function which will\nbe included into the property definition as validator.\n{@link qx.core.Property} for more details."
+            "description": " If you want to have a validation rule for the\n   current property, you should return a validation function which will\n   be included into the property definition as validator.\n   {@link qx.core.Property} for more details."
           }
         ]
       }
@@ -407,15 +407,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the array class which should be used by the marshaler. The passed\nparameters can be used to determine the array class. The return array class\nmust implement the {@link qx.data.IListData} interface."
+            "body": "<p>Returns the array class which should be used by the marshaler. The passed\n parameters can be used to determine the array class. The return array class\n must implement the {@link qx.data.IListData} interface.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "parentProperty {String|null} If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "body": "parentProperty {String|null} If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "paramName": "parentProperty",
-            "description": " If there is a named parent property, the\nname is given here. This might be null in case of the root data.",
+            "description": " If there is a named parent property, the\n   name is given here. This might be null in case of the root data.",
             "type": [
               "String",
               "null"
@@ -432,9 +432,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Class|null} Returns the class which should be used as array class.\nIf <code>null</code> will be returned, {@link qx.data.Array} will be used as array class.",
+            "body": "{Class|null} Returns the class which should be used as array class.\n   If <code>null</code> will be returned, {@link qx.data.Array} will be used as array class.",
             "type": "Class|null",
-            "description": " Returns the class which should be used as array class.\nIf <code>null</code> will be returned, {@link qx.data.Array} will be used as array class."
+            "description": " Returns the class which should be used as array class.\n   If <code>null</code> will be returned, {@link qx.data.Array} will be used as array class."
           }
         ]
       }
@@ -451,22 +451,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a given object into a hash which will be used to identify the\nclasses under the namespace <code>qx.data.model</code>."
+            "body": "<p>Converts a given object into a hash which will be used to identify the\n classes under the namespace <code>qx.data.model</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "data {Object} The JavaScript object from which the hash is\nrequired.",
+            "body": "data {Object} The JavaScript object from which the hash is\n   required.",
             "paramName": "data",
-            "description": " The JavaScript object from which the hash is\nrequired.",
+            "description": " The JavaScript object from which the hash is\n   required.",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean?false} Whether the model should\nsupport the bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean?false} Whether the model should\n   support the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should\nsupport the bubbling of change events or not.",
+            "description": " Whether the model should\n   support the bubbling of change events or not.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"

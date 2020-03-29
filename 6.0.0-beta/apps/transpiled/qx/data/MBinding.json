@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 167,
+        "line": 159,
         "column": 3
       }
     },
@@ -21,51 +21,25 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin is forwarding the static methods of\n{@link qx.data.SingleValueBinding} to the instance including the mixin.\nThe source object will be <code>this</code>."
+          "body": "<p>This mixin is forwarding the static methods of\n {@link qx.data.SingleValueBinding} to the instance including the mixin.\n The source object will be <code>this</code>.</p>"
         }
       ]
     }
   },
   "type": "mixin",
-  "construct": {
-    "location": {
-      "start": {
-        "line": 26,
-        "column": 2
-      },
-      "end": {
-        "line": 29,
-        "column": 3
-      }
-    }
-  },
   "members": {
-    "__objectHash": {
-      "location": {
-        "start": {
-          "line": 34,
-          "column": 4
-        },
-        "end": {
-          "line": 34,
-          "column": 23
-        }
-      },
-      "type": "variable",
-      "access": "private"
-    },
     "bind": {
       "location": {
         "start": {
-          "line": 58,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 63,
+          "line": 55,
           "column": 5
         }
       },
@@ -73,22 +47,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The bind method delegates the call to the\n{@link qx.data.SingleValueBinding#bind} function. As source, the current\nobject (this) will be used."
+            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\nthe source property.",
+            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
             "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\nthe source property.",
+            "description": " The property chain which represents\n   the source property.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\nbe bind to.",
+            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
             "paramName": "targetObject",
-            "description": " The object which the source should\nbe bind to.",
+            "description": " The object which the source should\n   be bind to.",
             "type": "qx.core.Object"
           },
           {
@@ -100,9 +74,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?null} A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "body": "options {Map?null} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "paramName": "options",
-            "description": " A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -111,17 +85,17 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var} Returns the internal id for that binding. This can be used\nfor referencing the binding e.g. for removing. This is not an atomic\nid so you can't you use it as a hash-map index.",
+            "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
-            "description": " Returns the internal id for that binding. This can be used\nfor referencing the binding e.g. for removing. This is not an atomic\nid so you can't you use it as a hash-map index."
+            "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\nthere is no property definition for object and property (source and\ntarget).",
+            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
             "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\nthere is no property definition for object and property (source and\ntarget)."
+            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
           }
         ]
       },
@@ -131,11 +105,11 @@
     "bindAsync": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 99,
           "column": 6
         }
       },
@@ -143,22 +117,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The bind method delegates the call to the\n{@link qx.data.SingleValueBinding#bind} function. As source, the current\nobject (this) will be used."
+            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\nthe source property.",
+            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
             "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\nthe source property.",
+            "description": " The property chain which represents\n   the source property.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\nbe bind to.",
+            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
             "paramName": "targetObject",
-            "description": " The object which the source should\nbe bind to.",
+            "description": " The object which the source should\n   be bind to.",
             "type": "qx.core.Object"
           },
           {
@@ -170,26 +144,26 @@
           },
           {
             "name": "@param",
-            "body": "options {Map} A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "paramName": "options",
-            "description": " A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index.",
+            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
             "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index."
+            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\nthere is no property definition for object and property (source and\ntarget).",
+            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
             "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\nthere is no property definition for object and property (source and\ntarget)."
+            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
           }
         ]
       },
@@ -199,11 +173,11 @@
     "removeBinding": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 111,
           "column": 5
         }
       },
@@ -211,7 +185,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the binding with the given id from the current object. The\nid has to be the id returned by any of the bind functions."
+            "body": "<p>Removes the binding with the given id from the current object. The\n id has to be the id returned by any of the bind functions.</p>"
           }
         ],
         "@param": [
@@ -238,11 +212,11 @@
     "removeRelatedBindings": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 124,
           "column": 5
         }
       },
@@ -250,24 +224,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all bindings between the object and the related one."
+            "body": "<p>Removes all bindings between the object and the related one.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "relatedObject {qx.core.Object} The object of which related\nbindings should be removed.",
+            "body": "relatedObject {qx.core.Object} The object of which related\n   bindings should be removed.",
             "paramName": "relatedObject",
-            "description": " The object of which related\nbindings should be removed.",
+            "description": " The object of which related\n   bindings should be removed.",
             "type": "qx.core.Object"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If one of the bindings listed internally can not be\nremoved.",
+            "body": "{Error} If one of the bindings listed internally can not be\n   removed.",
             "type": "Error",
-            "description": " If one of the bindings listed internally can not be\nremoved."
+            "description": " If one of the bindings listed internally can not be\n   removed."
           }
         ]
       },
@@ -277,11 +251,11 @@
     "removeAllBindings": {
       "location": {
         "start": {
-          "line": 143,
+          "line": 135,
           "column": 4
         },
         "end": {
-          "line": 145,
+          "line": 137,
           "column": 5
         }
       },
@@ -289,21 +263,21 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all bindings from the object."
+            "body": "<p>Removes all bindings from the object.</p>"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the object is not in the internal\nregistry of the bindings.",
+            "body": "{qx.core.AssertionError} If the object is not in the internal\n   registry of the bindings.",
             "type": "qx.core.AssertionError",
-            "description": " If the object is not in the internal\nregistry of the bindings."
+            "description": " If the object is not in the internal\n   registry of the bindings."
           },
           {
             "name": "@throws",
-            "body": "{Error} If one of the bindings listed internally can not be\nremoved.",
+            "body": "{Error} If one of the bindings listed internally can not be\n   removed.",
             "type": "Error",
-            "description": " If one of the bindings listed internally can not be\nremoved."
+            "description": " If one of the bindings listed internally can not be\n   removed."
           }
         ]
       },
@@ -313,11 +287,11 @@
     "getBindings": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 149,
           "column": 5
         }
       },
@@ -325,15 +299,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array which lists all bindings for the object."
+            "body": "<p>Returns an array which lists all bindings for the object.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order.",
+            "body": "{Array} An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order.",
             "type": "qx.data.Array",
-            "description": " An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order."
+            "description": " An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order."
           }
         ]
       },
@@ -344,14 +318,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 161,
-        "column": 2
+        "line": 153,
+        "column": 13
       },
       "end": {
-        "line": 166,
+        "line": 158,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

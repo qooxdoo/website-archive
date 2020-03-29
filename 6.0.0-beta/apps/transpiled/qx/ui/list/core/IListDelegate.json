@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Objects which are used as delegates for the <code>qx.ui.list.List</code> may\nimplement any of the methods described in this interface. The delegate does\nnot need to implement all the methods of this interface. If a method is not\nimplemented the <code>qx.ui.list.List</code> provides a default\nimplementation.\n\nNote: This interface is meant to document the delegate but should not be\nlisted in the <code>implement</code> key of a class unless all methods are\nactually implemented."
+          "body": "<p>Objects which are used as delegates for the <code>qx.ui.list.List</code> may\n implement any of the methods described in this interface. The delegate does\n not need to implement all the methods of this interface. If a method is not\n implemented the <code>qx.ui.list.List</code> provides a default\n implementation.\n Note: This interface is meant to document the delegate but should not be\n listed in the <code>implement</code> key of a class unless all methods are\n actually implemented.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to set individual styles and properties\non the item widget cells created by the controller."
+            "body": "<p>Gives the user the opportunity to set individual styles and properties\n on the item widget cells created by the controller.</p>"
           }
         ],
         "@param": [
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to set individual styles and properties\non the group widget cells created by the controller."
+            "body": "<p>Gives the user the opportunity to set individual styles and properties\n on the group widget cells created by the controller.</p>"
           }
         ],
         "@param": [
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an item cell which will be used for rendering. Be sure to\nimplement the {@link #bindItem} function as well to get the needed\nproperties bound."
+            "body": "<p>Creates an item cell which will be used for rendering. Be sure to\n implement the {@link #bindItem} function as well to get the needed\n properties bound.</p>"
           }
         ],
         "@return": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a group cell which will be used for rendering. Be sure to\nimplement the {@link #bindGroupItem} function as well to get the needed\nproperties bound."
+            "body": "<p>Creates a group cell which will be used for rendering. Be sure to\n implement the {@link #bindGroupItem} function as well to get the needed\n properties bound.</p>"
           }
         ],
         "@return": [
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets up the binding for the given item and index.\n\nFor every property you want to bind, use\n{@link MWidgetController#bindProperty} like this:\n<code>\ncontroller.bindProperty(\"path.in.the.model\", \"label\", options, item, id);\n</code>"
+            "body": "<p>Sets up the binding for the given item and index.\n For every property you want to bind, use\n {@link MWidgetController#bindProperty} like this:\n <code>\n controller.bindProperty(\"path.in.the.model\", \"label\", options, item, id);\n </code></p>"
           }
         ],
         "@param": [
@@ -214,7 +214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets up the binding for the given group item and index.\n\nFor every property you want to bind, use\n{@link MWidgetController#bindProperty} like this:\n<code>\ncontroller.bindProperty(null, \"value\", options, item, id);\n</code>"
+            "body": "<p>Sets up the binding for the given group item and index.\n For every property you want to bind, use\n {@link MWidgetController#bindProperty} like this:\n <code>\n controller.bindProperty(null, \"value\", options, item, id);\n </code></p>"
           }
         ],
         "@param": [
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to filter the model. The filter\nmethod has to return <code>true</code> if the given data should be\nshown and <code>false</code> if the given data should be ignored."
+            "body": "<p>Gives the user the opportunity to filter the model. The filter\n method has to return <code>true</code> if the given data should be\n shown and <code>false</code> if the given data should be ignored.</p>"
           }
         ],
         "@param": [
@@ -274,9 +274,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the data passes the filter,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the data passes the filter,\n   <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the data passes the filter,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the data passes the filter,\n   <code>false</code> otherwise."
           }
         ]
       },
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to sort the model. The sorting method\nshould return a negative value if a < b, zero if a = b, or a positive\nvalue if a > b."
+            "body": "<p>Gives the user the opportunity to sort the model. The sorting method\n should return a negative value if a < b, zero if a = b, or a positive\n value if a > b.</p>"
           }
         ],
         "@param": [
@@ -320,9 +320,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} should return a negative value if a < b, zero\nif a = b, or a positive value if a > b.",
+            "body": "{Integer} should return a negative value if a < b, zero\n   if a = b, or a positive value if a > b.",
             "type": "Integer",
-            "description": " should return a negative value if a < b, zero\nif a = b, or a positive value if a > b."
+            "description": " should return a negative value if a < b, zero\n   if a = b, or a positive value if a > b."
           }
         ]
       },
@@ -344,7 +344,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to group the model. The group method\nshould return unique identifier for the passed data.\n\nNote: When you returning <code>null</code> the passed data will added\nto the default group, which is <code>???</code> from the type\n<code>String</code>. But keep in mind that you can only use the default\ngroup feature when each other group identifier is also a <code>String</code>.\nOtherwise an exception occurs, because you can't mix <code>Object</code>\nand <code>String</code> group identifiers."
+            "body": "<p>Gives the user the opportunity to group the model. The group method\n should return unique identifier for the passed data.\n Note: When you returning <code>null</code> the passed data will added\n to the default group, which is <code>???</code> from the type\n <code>String</code>. But keep in mind that you can only use the default\n group feature when each other group identifier is also a <code>String</code>.\n Otherwise an exception occurs, because you can't mix <code>Object</code>\n and <code>String</code> group identifiers.</p>"
           }
         ],
         "@param": [
@@ -383,7 +383,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to reset properties or states."
+            "body": "<p>Gives the user the opportunity to reset properties or states.</p>"
           }
         ],
         "@param": [

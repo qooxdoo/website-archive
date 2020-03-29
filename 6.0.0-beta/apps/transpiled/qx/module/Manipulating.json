@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "DOM manipulation module"
+          "body": "<p>DOM manipulation module</p>"
         }
       ],
       "@ignore": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default animation descriptions for animated scrolling *"
+            "body": "<p>Default animation descriptions for animated scrolling *</p>"
           }
         ]
       },
@@ -81,15 +81,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Performs animated scrolling"
+            "body": "<p>Performs animated scrolling</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "property {String} Element property to animate: <code>scrollLeft</code>\nor <code>scrollTop</code>",
+            "body": "property {String} Element property to animate: <code>scrollLeft</code>\n or <code>scrollTop</code>",
             "paramName": "property",
-            "description": " Element property to animate: <code>scrollLeft</code>\nor <code>scrollTop</code>",
+            "description": " Element property to animate: <code>scrollLeft</code>\n or <code>scrollTop</code>",
             "type": "String"
           },
           {
@@ -134,15 +134,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new collection from the given argument"
+            "body": "<p>Creates a new collection from the given argument</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "arg {var} Selector expression, HTML string, DOM element or list of\nDOM elements",
+            "body": "arg {var} Selector expression, HTML string, DOM element or list of\n DOM elements",
             "paramName": "arg",
-            "description": " Selector expression, HTML string, DOM element or list of\nDOM elements",
+            "description": " Selector expression, HTML string, DOM element or list of\n DOM elements",
             "type": "var"
           }
         ],
@@ -179,7 +179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the innermost element of a DOM tree as determined by a simple\ndepth-first search."
+            "body": "<p>Returns the innermost element of a DOM tree as determined by a simple\n depth-first search.</p>"
           }
         ],
         "@param": [
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array from a selector expression or a single element"
+            "body": "<p>Returns an array from a selector expression or a single element</p>"
           }
         ],
         "@attach": [
@@ -278,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new collection from the given argument. This can either be an\nHTML string, a single DOM element or an array of elements\n\nWhen no <code>context</code> is given the global document is used to\ncreate new DOM elements.\n\n<strong>Note:</strong> When a complex HTML string is provided the <code>innerHTML</code>\nmechanism of the browser is used. Some browsers do filter out elements like <code>&lt;html&gt;</code>,\n<code>&lt;head&gt;</code> or <code>&lt;body&gt;</code>. The better approach is to create\na single element and the appending the child nodes."
+            "body": "<p>Creates a new collection from the given argument. This can either be an\n HTML string, a single DOM element or an array of elements\n When no <code>context</code> is given the global document is used to\n create new DOM elements.\n <strong>Note:</strong> When a complex HTML string is provided the <code>innerHTML</code>\n mechanism of the browser is used. Some browsers do filter out elements like <code>&amp;lt;html&amp;gt;</code>,\n <code>&amp;lt;head&amp;gt;</code> or <code>&amp;lt;body&amp;gt;</code>. The better approach is to create\n a single element and the appending the child nodes.</p>"
           }
         ],
         "@attachStatic": [
@@ -340,7 +340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clones the items in the current collection and returns them in a new set.\nEvent listeners can also be cloned."
+            "body": "<p>Clones the items in the current collection and returns them in a new set.\n Event listeners can also be cloned.</p>"
           }
         ],
         "@attach": [
@@ -385,7 +385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends content to each element in the current set. Accepts an HTML string,\na single DOM element or an array of elements"
+            "body": "<p>Appends content to each element in the current set. Accepts an HTML string,\n a single DOM element or an array of elements</p>"
           }
         ],
         "@attach": [
@@ -437,7 +437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends all items in the collection to the specified parents. If multiple\nparents are given, the items will be moved to the first parent, while\nclones of the items will be appended to subsequent parents."
+            "body": "<p>Appends all items in the collection to the specified parents. If multiple\n parents are given, the items will be moved to the first parent, while\n clones of the items will be appended to subsequent parents.</p>"
           }
         ],
         "@attach": [
@@ -449,9 +449,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "parent {String|Element[]|qxWeb} Parent selector expression or list of\nparent elements",
+            "body": "parent {String|Element[]|qxWeb} Parent selector expression or list of\n parent elements",
             "paramName": "parent",
-            "description": " Parent selector expression or list of\nparent elements",
+            "description": " Parent selector expression or list of\n parent elements",
             "type": [
               "String",
               {
@@ -489,7 +489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts the current collection before each target item. The collection\nitems are moved before the first target. For subsequent targets,\nclones of the collection items are created and inserted."
+            "body": "<p>Inserts the current collection before each target item. The collection\n items are moved before the first target. For subsequent targets,\n clones of the collection items are created and inserted.</p>"
           }
         ],
         "@attach": [
@@ -501,9 +501,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\nArray of DOM elements or collection",
+            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\n Array of DOM elements or collection",
             "paramName": "target",
-            "description": " Selector expression, DOM element,\nArray of DOM elements or collection",
+            "description": " Selector expression, DOM element,\n Array of DOM elements or collection",
             "type": [
               "String",
               "Element",
@@ -542,7 +542,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts the current collection after each target item. The collection\nitems are moved after the first target. For subsequent targets,\nclones of the collection items are created and inserted."
+            "body": "<p>Inserts the current collection after each target item. The collection\n items are moved after the first target. For subsequent targets,\n clones of the collection items are created and inserted.</p>"
           }
         ],
         "@attach": [
@@ -554,9 +554,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\nArray of DOM elements or collection",
+            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\n Array of DOM elements or collection",
             "paramName": "target",
-            "description": " Selector expression, DOM element,\nArray of DOM elements or collection",
+            "description": " Selector expression, DOM element,\n Array of DOM elements or collection",
             "type": [
               "String",
               "Element",
@@ -595,7 +595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wraps each element in the collection in a copy of an HTML structure.\nElements will be appended to the deepest nested element in the structure\nas determined by a depth-first search."
+            "body": "<p>Wraps each element in the collection in a copy of an HTML structure.\n Elements will be appended to the deepest nested element in the structure\n as determined by a depth-first search.</p>"
           }
         ],
         "@attach": [
@@ -607,9 +607,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "wrapper {String|Element|Element[]|qxWeb} Selector expression, HTML string, DOM element or\nlist of DOM elements",
+            "body": "wrapper {String|Element|Element[]|qxWeb} Selector expression, HTML string, DOM element or\n list of DOM elements",
             "paramName": "wrapper",
-            "description": " Selector expression, HTML string, DOM element or\nlist of DOM elements",
+            "description": " Selector expression, HTML string, DOM element or\n list of DOM elements",
             "type": [
               "String",
               "Element",
@@ -648,7 +648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes each element in the current collection from the DOM"
+            "body": "<p>Removes each element in the current collection from the DOM</p>"
           }
         ],
         "@attach": [
@@ -684,7 +684,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all content from the elements in the collection"
+            "body": "<p>Removes all content from the elements in the collection</p>"
           }
         ],
         "@attach": [
@@ -720,7 +720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts content before each element in the collection. This can either\nbe an HTML string, an array of HTML strings, a single DOM element or an\narray of elements."
+            "body": "<p>Inserts content before each element in the collection. This can either\n be an HTML string, an array of HTML strings, a single DOM element or an\n array of elements.</p>"
           }
         ],
         "@attach": [
@@ -732,9 +732,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "content {String|String[]|Element|Element[]|qxWeb} HTML string(s),\nDOM element(s) or collection to insert",
+            "body": "content {String|String[]|Element|Element[]|qxWeb} HTML string(s),\n DOM element(s) or collection to insert",
             "paramName": "content",
-            "description": " HTML string(s),\nDOM element(s) or collection to insert",
+            "description": " HTML string(s),\n DOM element(s) or collection to insert",
             "type": [
               "String",
               {
@@ -777,7 +777,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts content after each element in the collection. This can either\nbe an HTML string, an array of HTML strings, a single DOM element or an\narray of elements."
+            "body": "<p>Inserts content after each element in the collection. This can either\n be an HTML string, an array of HTML strings, a single DOM element or an\n array of elements.</p>"
           }
         ],
         "@attach": [
@@ -789,9 +789,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "content {String|String[]|Element|Element[]|qxWeb} HTML string(s),\nDOM element(s) or collection to insert",
+            "body": "content {String|String[]|Element|Element[]|qxWeb} HTML string(s),\n DOM element(s) or collection to insert",
             "paramName": "content",
-            "description": " HTML string(s),\nDOM element(s) or collection to insert",
+            "description": " HTML string(s),\n DOM element(s) or collection to insert",
             "type": [
               "String",
               {
@@ -834,7 +834,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the left scroll position of the first element in the collection."
+            "body": "<p>Returns the left scroll position of the first element in the collection.</p>"
           }
         ],
         "@attach": [
@@ -870,7 +870,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the top scroll position of the first element in the collection."
+            "body": "<p>Returns the top scroll position of the first element in the collection.</p>"
           }
         ],
         "@attach": [
@@ -906,7 +906,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the elements of the collection to the given coordinate."
+            "body": "<p>Scrolls the elements of the collection to the given coordinate.</p>"
           }
         ],
         "@attach": [
@@ -959,7 +959,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the elements of the collection to the given coordinate."
+            "body": "<p>Scrolls the elements of the collection to the given coordinate.</p>"
           }
         ],
         "@attach": [
@@ -1012,7 +1012,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focuses the first element in the collection"
+            "body": "<p>Focuses the first element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1048,7 +1048,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Blurs each element in the collection"
+            "body": "<p>Blurs each element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1074,13 +1074,14 @@
     "location": {
       "start": {
         "line": 584,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 586,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

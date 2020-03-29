@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A widget cell renderer manages a pool of widgets to render cells in a\n{@link qx.ui.virtual.layer.WidgetCell} layer."
+          "body": "<p>A widget cell renderer manages a pool of widgets to render cells in a\n {@link qx.ui.virtual.layer.WidgetCell} layer.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a widget instance to render the cell"
+            "body": "<p>Get a widget instance to render the cell</p>"
           }
         ],
         "@param": [
@@ -60,9 +60,9 @@
           },
           {
             "name": "@param",
-            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "paramName": "states",
-            "description": " The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "description": " The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "type": "Map"
           }
         ],
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Release the given widget instance.\n\nEither pool or dispose the widget."
+            "body": "<p>Release the given widget instance.\n Either pool or dispose the widget.</p>"
           }
         ],
         "@param": [
@@ -124,7 +124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the states of the given widget."
+            "body": "<p>Update the states of the given widget.</p>"
           }
         ],
         "@param": [
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the data the cell widget should display"
+            "body": "<p>Update the data the cell widget should display</p>"
           }
         ],
         "@param": [

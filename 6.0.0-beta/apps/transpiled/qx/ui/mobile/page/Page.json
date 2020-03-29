@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A page is a widget which provides a screen with which users\ncan interact in order to do something. Most times a page provides a single task\nor a group of related tasks.\n\nA qooxdoo mobile application is usually composed of one or more loosely bound\npages. Typically there is one page that presents the \"main\" view.\n\nPages can have one or more child widgets from the {@link qx.ui.mobile}\nnamespace. Normally a page provides a {@link qx.ui.mobile.navigationbar.NavigationBar}\nfor the navigation between pages.\n\nTo navigate between two pages, just call the {@link #show} method of the page\nthat should be shown. Depending on the used page manager a page transition will be animated.\nThere are several animations available. Have\na look at the {@link qx.ui.mobile.page.Manager} manager or {@link qx.ui.mobile.layout.Card} card layout for more information.\n\nA page has predefined lifecycle methods that get called by the used page manager\nwhen a page gets shown. Each time another page is requested to be shown the currently shown page\nis stopped. The other page, will be, if shown for the first time, initialized and started\nafterwards. For all called lifecycle methods an event is fired.\n\nCall of the {@link #show} method triggers the following lifecycle methods:\n\n* <strong>initialize</strong>: Initializes the page to show\n* <strong>start</strong>: Gets called when the page to show is started\n* <strong>stop</strong>:  Stops the current page\n\nIMPORTANT: Define all child widgets of a page when the {@link #initialize} lifecycle\nmethod is called, either by listening to the {@link #initialize} event or overriding\nthe {@link #_initialize} method. This is because a page can be instanced during\napplication startup and would then decrease performance when the widgets would be\nadded during constructor call. The <code>initialize</code> event and the\n{@link #_initialize} lifecycle method are only called when the page is shown\nfor the first time."
+          "body": "<p>A page is a widget which provides a screen with which users\n can interact in order to do something. Most times a page provides a single task\n or a group of related tasks.\n A qooxdoo mobile application is usually composed of one or more loosely bound\n pages. Typically there is one page that presents the \"main\" view.\n Pages can have one or more child widgets from the {@link qx.ui.mobile}\n namespace. Normally a page provides a {@link qx.ui.mobile.navigationbar.NavigationBar}\n for the navigation between pages.\n To navigate between two pages, just call the {@link #show} method of the page\n that should be shown. Depending on the used page manager a page transition will be animated.\n There are several animations available. Have\n a look at the {@link qx.ui.mobile.page.Manager} manager or {@link qx.ui.mobile.layout.Card} card layout for more information.\n A page has predefined lifecycle methods that get called by the used page manager\n when a page gets shown. Each time another page is requested to be shown the currently shown page\n is stopped. The other page, will be, if shown for the first time, initialized and started\n afterwards. For all called lifecycle methods an event is fired.\n Call of the {@link #show} method triggers the following lifecycle methods:</p>\n<ul>\n<li><strong>initialize</strong>: Initializes the page to show</li>\n<li><strong>start</strong>: Gets called when the page to show is started</li>\n<li><strong>stop</strong>:  Stops the current page\nIMPORTANT: Define all child widgets of a page when the {@link #initialize} lifecycle\nmethod is called, either by listening to the {@link #initialize} event or overriding\nthe {@link #<em>initialize} method. This is because a page can be instanced during\napplication startup and would then decrease performance when the widgets would be\nadded during constructor call. The <code>initialize</code> event and the\n{@link #</em>initialize} lifecycle method are only called when the page is shown\nfor the first time.</li>\n</ul>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 67,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 70,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the device is ready."
+            "body": "<p>Event handler. Called when the device is ready.</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the back button of the device was pressed."
+            "body": "<p>Event handler. Called when the back button of the device was pressed.</p>"
           }
         ]
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the menu button of the device was pressed."
+            "body": "<p>Event handler. Called when the menu button of the device was pressed.</p>"
           }
         ]
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the lifecycle method {@link #initialize} is called"
+            "body": "<p>Fired when the lifecycle method {@link #initialize} is called</p>"
           }
         ]
       },
@@ -173,7 +173,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the lifecycle method {@link #start} is called"
+            "body": "<p>Fired when the lifecycle method {@link #start} is called</p>"
           }
         ]
       },
@@ -195,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the lifecycle method {@link #stop} is called"
+            "body": "<p>Fired when the lifecycle method {@link #stop} is called</p>"
           }
         ]
       },
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the lifecycle method {@link #pause} is called"
+            "body": "<p>Fired when the lifecycle method {@link #pause} is called</p>"
           }
         ]
       },
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the lifecycle method {@link #resume} is called"
+            "body": "<p>Fired when the lifecycle method {@link #resume} is called</p>"
           }
         ]
       },
@@ -261,7 +261,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the method {@link #back} is called and not prevented by\n{@link qx.application.Mobile#back}. Data indicating whether\nthe action was triggered by a key event or not."
+            "body": "<p>Fired when the method {@link #back} is called and not prevented by\n {@link qx.application.Mobile#back}. Data indicating whether\n the action was triggered by a key event or not.</p>"
           }
         ]
       },
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the method {@link #menu} is called"
+            "body": "<p>Fired when the method {@link #menu} is called</p>"
           }
         ]
       },
@@ -305,7 +305,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the method {@link #wait} is called"
+            "body": "<p>Fired when the method {@link #wait} is called</p>"
           }
         ]
       },
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The current active life cycle state of this page."
+            "body": "<p>The current active life cycle state of this page.</p>"
           }
         ]
       },
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -448,7 +448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -483,7 +483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the <code>back</code> event. Call this method if you want to request\na back action. For Android PhoneGap applications this method gets called\nby the used page manager when the back button was pressed. Return <code>true</code>\nto exit the application.\n\nThe back request can prevented by calling the {@link qx.event.type.Event#preventDefault} on\nthe {@link qx.application.Mobile#back} event."
+            "body": "<p>Fires the <code>back</code> event. Call this method if you want to request\n a back action. For Android PhoneGap applications this method gets called\n by the used page manager when the back button was pressed. Return <code>true</code>\n to exit the application.\n The back request can prevented by calling the {@link qx.event.type.Event#preventDefault} on\n the {@link qx.application.Mobile#back} event.</p>"
           }
         ],
         "@param": [
@@ -498,9 +498,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the exit should be exit or not. Return <code>true</code\nto exit the application. Only needed for Android PhoneGap applications.",
+            "body": "{Boolean} Whether the exit should be exit or not. Return <code>true</code\n     to exit the application. Only needed for Android PhoneGap applications.",
             "type": "Boolean",
-            "description": " Whether the exit should be exit or not. Return <code>true</code\nto exit the application. Only needed for Android PhoneGap applications."
+            "description": " Whether the exit should be exit or not. Return <code>true</code\n     to exit the application. Only needed for Android PhoneGap applications."
           }
         ]
       },
@@ -522,7 +522,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you want to perform a certain action when back\nis called."
+            "body": "<p>Override this method if you want to perform a certain action when back\n is called.</p>"
           }
         ],
         "@param": [
@@ -537,9 +537,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the exit should be exit or not. Return <code>true</code\nto exit the application. Only needed for Android PhoneGap applications.",
+            "body": "{Boolean} Whether the exit should be exit or not. Return <code>true</code\n     to exit the application. Only needed for Android PhoneGap applications.",
             "type": "Boolean",
-            "description": " Whether the exit should be exit or not. Return <code>true</code\nto exit the application. Only needed for Android PhoneGap applications."
+            "description": " Whether the exit should be exit or not. Return <code>true</code\n     to exit the application. Only needed for Android PhoneGap applications."
           }
         ],
         "@see": [
@@ -573,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Only used by Android PhoneGap applications. Called by the used page manager\nwhen the menu button was pressed. Fires the <code>menu</code> event."
+            "body": "<p>Only used by Android PhoneGap applications. Called by the used page manager\n when the menu button was pressed. Fires the <code>menu</code> event.</p>"
           }
         ]
       },
@@ -595,11 +595,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLifecycle Methods\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Lifecycle Methods\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Lifecycle method. Called by the page manager when the page is shown.\nFires the <code>initialize</code> event. You should create and add all your\nchild widgets of the view,  either by listening to the {@link #initialize} event or overriding\nthe {@link #_initialize} method. This is because a page can be instanced during\napplication startup and would then decrease performance when the widgets would be\nadded during constructor call. The {@link #_initialize} lifecycle method and the\n<code>initialize</code> are only called once when the page is shown for the first time."
+            "body": "<p>Lifecycle method. Called by the page manager when the page is shown.\n Fires the <code>initialize</code> event. You should create and add all your\n child widgets of the view,  either by listening to the {@link #initialize} event or overriding\n the {@link #<em>initialize} method. This is because a page can be instanced during\n application startup and would then decrease performance when the widgets would be\n added during constructor call. The {@link #</em>initialize} lifecycle method and the\n <code>initialize</code> are only called once when the page is shown for the first time.</p>"
           }
         ]
       },
@@ -621,7 +621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when initialize\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when initialize\n is called.</p>"
           }
         ],
         "@see": [
@@ -649,7 +649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the status of the initialization of the page."
+            "body": "<p>Returns the status of the initialization of the page.</p>"
           }
         ],
         "@return": [
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Lifecycle method. Called by the page manager after the {@link #initialize}\nmethod when the page is shown. Fires the <code>start</code> event. You should\nregister all your event listener when this event occurs, so that no page\nupdates are done when page is not shown."
+            "body": "<p>Lifecycle method. Called by the page manager after the {@link #initialize}\n method when the page is shown. Fires the <code>start</code> event. You should\n register all your event listener when this event occurs, so that no page\n updates are done when page is not shown.</p>"
           }
         ]
       },
@@ -701,7 +701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when start\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when start\n is called.</p>"
           }
         ],
         "@see": [
@@ -729,7 +729,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Lifecycle method. Called by the page manager when another page is shown.\nFires the <code>stop</code> event. You should unregister all your event\nlistener when this event occurs, so that no page updates are down when page is not shown."
+            "body": "<p>Lifecycle method. Called by the page manager when another page is shown.\n Fires the <code>stop</code> event. You should unregister all your event\n listener when this event occurs, so that no page updates are down when page is not shown.</p>"
           }
         ]
       },
@@ -751,7 +751,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when stop\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when stop\n is called.</p>"
           }
         ],
         "@see": [
@@ -779,7 +779,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Lifecycle method. Not used right now. Should be called when the current page\nis interrupted, e.g. by a dialog, so that page view updates can be interrupted.\nFires the <code>pause</code> event."
+            "body": "<p>Lifecycle method. Not used right now. Should be called when the current page\n is interrupted, e.g. by a dialog, so that page view updates can be interrupted.\n Fires the <code>pause</code> event.</p>"
           }
         ]
       },
@@ -801,7 +801,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when pause\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when pause\n is called.</p>"
           }
         ],
         "@see": [
@@ -829,7 +829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Lifecycle method. Not used right now. Should be called when the current page\nis resuming from a interruption, e.g. when a dialog is closed, so that page\ncan resume updating the view.\nFires the <code>resume</code> event."
+            "body": "<p>Lifecycle method. Not used right now. Should be called when the current page\n is resuming from a interruption, e.g. when a dialog is closed, so that page\n can resume updating the view.\n Fires the <code>resume</code> event.</p>"
           }
         ]
       },
@@ -851,7 +851,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when resume\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when resume\n is called.</p>"
           }
         ],
         "@see": [
@@ -879,7 +879,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Lifecycle method. Not used right now. Should be called when the current page\nwaits for data request etc.\nFires the <code>wait</code> event."
+            "body": "<p>Lifecycle method. Not used right now. Should be called when the current page\n waits for data request etc.\n Fires the <code>wait</code> event.</p>"
           }
         ]
       },
@@ -901,7 +901,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override this method if you would like to perform a certain action when wait\nis called."
+            "body": "<p>Override this method if you would like to perform a certain action when wait\n is called.</p>"
           }
         ],
         "@see": [
@@ -929,7 +929,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -969,7 +969,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the height of the container element."
+            "body": "<p>Sets the height of the container element.</p>"
           }
         ],
         "@param": [
@@ -995,7 +995,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the width of the container element."
+            "body": "<p>Sets the width of the container element.</p>"
           }
         ],
         "@param": [
@@ -2215,7 +2215,7 @@
     "location": {
       "start": {
         "line": 448,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 453,
@@ -2226,7 +2226,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

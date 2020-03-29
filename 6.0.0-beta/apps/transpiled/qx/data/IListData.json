@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This interface defines a data structure compatible with the data binding\ncontrollers.\nIt defines a minimum of functionality which the controller need to work."
+          "body": "<p>This interface defines a data structure compatible with the data binding\n controllers.\n It defines a minimum of functionality which the controller need to work.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The change event which will be fired if there is a change in the data structure.\nThe data contains a map with three key value pairs:\n<li>start: The start index of the change.</li>\n<li>end: The end index of the change.</li>\n<li>type: The type of the change as a String. This can be 'add',\n'remove', 'order' or 'add/remove'</li>\n<li>added: The items which has been added (as a JavaScript array)</li>\n<li>removed: The items which has been removed (as a JavaScript array)</li>"
+            "body": "<p>The change event which will be fired if there is a change in the data structure.\n The data contains a map with three key value pairs:\n <li>start: The start index of the change.</li>\n <li>end: The end index of the change.</li>\n <li>type: The type of the change as a String. This can be 'add',\n 'remove', 'order' or 'add/remove'</li>\n <li>added: The items which has been added (as a JavaScript array)</li>\n <li>removed: The items which has been removed (as a JavaScript array)</li></p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The changeLength event will be fired every time the length of the\ndata structure changes."
+            "body": "<p>The changeLength event will be fired every time the length of the\n data structure changes.</p>"
           }
         ]
       },
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the item at the given index"
+            "body": "<p>Returns the item at the given index</p>"
           }
         ],
         "@param": [
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the given item at the given position in the data structure. A\nchange event has to be fired."
+            "body": "<p>Sets the given item at the given position in the data structure. A\n change event has to be fired.</p>"
           }
         ],
         "@param": [
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method to remove and add new element to the data. For every remove or\nadd a change event should be fired."
+            "body": "<p>Method to remove and add new element to the data. For every remove or\n add a change event should be fired.</p>"
           }
         ],
         "@param": [
@@ -183,16 +183,16 @@
           },
           {
             "name": "@param",
-            "body": "amount {Integer} Defines number of element which will be removed\nat the given position.",
+            "body": "amount {Integer} Defines number of element which will be removed\n   at the given position.",
             "paramName": "amount",
-            "description": " Defines number of element which will be removed\nat the given position.",
+            "description": " Defines number of element which will be removed\n   at the given position.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "varargs {var} All following parameters will be added at the given\nposition to the array.",
+            "body": "varargs {var} All following parameters will be added at the given\n   position to the array.",
             "paramName": "varargs",
-            "description": " All following parameters will be added at the given\nposition to the array.",
+            "description": " All following parameters will be added at the given\n   position to the array.",
             "type": "var"
           }
         ],
@@ -223,7 +223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if the given item is in the current data structure."
+            "body": "<p>Check if the given item is in the current data structure.</p>"
           }
         ],
         "@param": [
@@ -262,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current length of the data structure."
+            "body": "<p>Returns the current length of the data structure.</p>"
           }
         ],
         "@return": [
@@ -292,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list data as native array."
+            "body": "<p>Returns the list data as native array.</p>"
           }
         ],
         "@return": [

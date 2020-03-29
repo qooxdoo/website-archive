@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A cross browser iframe instance."
+          "body": "<p>A cross browser iframe instance.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 53,
@@ -46,11 +46,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Wrapper for the HTML Iframe element."
+          "body": "<p>Wrapper for the HTML Iframe element.</p>"
         }
       ],
       "@param": [
@@ -63,18 +63,18 @@
         },
         {
           "name": "@param",
-          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "paramName": "styles",
-          "description": " optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "description": " optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
         },
         {
           "name": "@param",
-          "body": "attributes {Map?null} optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "body": "attributes {Map?null} optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "paramName": "attributes",
-          "description": " optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "description": " optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The \"load\" event is fired after the iframe content has successfully been loaded."
+            "body": "<p>The \"load\" event is fired after the iframe content has successfully been loaded.</p>"
           }
         ]
       },
@@ -120,7 +120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The \"navigate\" event is fired whenever the location of the iframe\nchanges.\n\nUseful to track user navigation and internally used to keep the source\nproperty in sync. Only works when the destination source is of same\norigin than the page embedding the iframe."
+            "body": "<p>The \"navigate\" event is fired whenever the location of the iframe\n changes.\n Useful to track user navigation and internally used to keep the source\n property in sync. Only works when the destination source is of same\n origin than the page embedding the iframe.</p>"
           }
         ]
       },
@@ -144,11 +144,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nELEMENT API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ELEMENT API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -198,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -232,11 +232,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIFRAME API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IFRAME API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the DOM window object of an iframe."
+            "body": "<p>Get the DOM window object of an iframe.</p>"
           }
         ],
         "@return": [
@@ -266,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the DOM document object of an iframe."
+            "body": "<p>Get the DOM document object of an iframe.</p>"
           }
         ],
         "@return": [
@@ -296,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the HTML body element of the iframe."
+            "body": "<p>Get the HTML body element of the iframe.</p>"
           }
         ],
         "@return": [
@@ -326,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets iframe's source attribute to given value"
+            "body": "<p>Sets iframe's source attribute to given value</p>"
           }
         ],
         "@param": [
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current source."
+            "body": "<p>Get the current source.</p>"
           }
         ],
         "@return": [
@@ -395,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets iframe's name attribute to given value"
+            "body": "<p>Sets iframe's name attribute to given value</p>"
           }
         ],
         "@param": [
@@ -434,7 +434,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current name."
+            "body": "<p>Get the current name.</p>"
           }
         ],
         "@return": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reloads iframe"
+            "body": "<p>Reloads iframe</p>"
           }
         ]
       },
@@ -486,11 +486,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handle user navigation. Sync actual URL of iframe with source property."
+            "body": "<p>Handle user navigation. Sync actual URL of iframe with source property.</p>"
           }
         ],
         "@param": [

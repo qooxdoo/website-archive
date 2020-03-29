@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2016 GONICUS GmbH, Germany, http://www.gonicus.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nCajus Pollmeier (cajus)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2016 GONICUS GmbH, Germany, http://www.gonicus.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Cajus Pollmeier (cajus)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a cross browser wrapper for requestIdleCallback. For further\ninformation about the feature, take a look at spec:\nhttps://www.w3.org/TR/requestidlecallback/\n\nHere is a sample usage:\n<pre class='javascript'>var cb = function(deadline) {\nwhile (deadline.timeRemaining() > 0) {\n// ... do some last tasks\n}\n};\n\nqx.bom.IdleCallback.request(cb, this);\n</pre>"
+          "body": "<p>This is a cross browser wrapper for requestIdleCallback. For further\n information about the feature, take a look at spec:\n https://www.w3.org/TR/requestidlecallback/\n Here is a sample usage:\n </p>\n<pre class='javascript'>var cb = function(deadline) {\n   while (deadline.timeRemaining() > 0) {\n\n   }\n };\n qx.bom.IdleCallback.request(cb, this);\n </pre>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default time in ms the setTimeout() fallback implementation uses. There is no\nway to detect if the browser has some spare IDLE time, it defaults to zero - meaning\nthat the callback will be called as soon as possible."
+            "body": "<p>The default time in ms the setTimeout() fallback implementation uses. There is no\n way to detect if the browser has some spare IDLE time, it defaults to zero - meaning\n that the callback will be called as soon as possible.</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default remaining time in ms the timeout fallback implementation uses. Since we\ncannot know how much time is available, this is a hard coded time bucket available\nfor actions done in the callback."
+            "body": "<p>The default remaining time in ms the timeout fallback implementation uses. Since we\n cannot know how much time is available, this is a hard coded time bucket available\n for actions done in the callback.</p>"
           }
         ]
       },
@@ -91,15 +91,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request for an IDLE callback. If the native <code>requestIdleCallback</code>\nmethod is supported, it will be used. Otherwise, we use timeouts with a\n30ms delay. The HighResolutionTime will be used if supported but the time given\nto the callback will still be a timestamp starting at 1 January 1970 00:00:00 UTC."
+            "body": "<p>Request for an IDLE callback. If the native <code>requestIdleCallback</code>\n method is supported, it will be used. Otherwise, we use timeouts with a\n 30ms delay. The HighResolutionTime will be used if supported but the time given\n to the callback will still be a timestamp starting at 1 January 1970 00:00:00 UTC.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The callback function which will get a deadline\nobject. It contains a <code>timeRemaining()</code> call which returns the\nremaining milliseconds and the <code>didTimeout</code> flag which indicates\nwhether the callback was fired due to a timeout. The latter is always false\nin case of the emulation.",
+            "body": "callback {Function} The callback function which will get a deadline\n   object. It contains a <code>timeRemaining()</code> call which returns the\n   remaining milliseconds and the <code>didTimeout</code> flag which indicates\n   whether the callback was fired due to a timeout. The latter is always false\n   in case of the emulation.",
             "paramName": "callback",
-            "description": " The callback function which will get a deadline\nobject. It contains a <code>timeRemaining()</code> call which returns the\nremaining milliseconds and the <code>didTimeout</code> flag which indicates\nwhether the callback was fired due to a timeout. The latter is always false\nin case of the emulation.",
+            "description": " The callback function which will get a deadline\n   object. It contains a <code>timeRemaining()</code> call which returns the\n   remaining milliseconds and the <code>didTimeout</code> flag which indicates\n   whether the callback was fired due to a timeout. The latter is always false\n   in case of the emulation.",
             "type": "Function"
           },
           {
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cancel a requested IDLE callback."
+            "body": "<p>Cancel a requested IDLE callback.</p>"
           }
         ],
         "@param": [
@@ -174,22 +174,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The bind method delegates the call to the\n{@link qx.data.SingleValueBinding#bind} function. As source, the current\nobject (this) will be used."
+            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\nthe source property.",
+            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
             "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\nthe source property.",
+            "description": " The property chain which represents\n   the source property.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\nbe bind to.",
+            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
             "paramName": "targetObject",
-            "description": " The object which the source should\nbe bind to.",
+            "description": " The object which the source should\n   be bind to.",
             "type": "qx.core.Object"
           },
           {
@@ -201,9 +201,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?null} A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "body": "options {Map?null} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "paramName": "options",
-            "description": " A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -212,17 +212,17 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var} Returns the internal id for that binding. This can be used\nfor referencing the binding e.g. for removing. This is not an atomic\nid so you can't you use it as a hash-map index.",
+            "body": "{var} Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index.",
             "type": "var",
-            "description": " Returns the internal id for that binding. This can be used\nfor referencing the binding e.g. for removing. This is not an atomic\nid so you can't you use it as a hash-map index."
+            "description": " Returns the internal id for that binding. This can be used\n   for referencing the binding e.g. for removing. This is not an atomic\n   id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\nthere is no property definition for object and property (source and\ntarget).",
+            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
             "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\nthere is no property definition for object and property (source and\ntarget)."
+            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
           }
         ]
       }
@@ -239,22 +239,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The bind method delegates the call to the\n{@link qx.data.SingleValueBinding#bind} function. As source, the current\nobject (this) will be used."
+            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\nthe source property.",
+            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
             "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\nthe source property.",
+            "description": " The property chain which represents\n   the source property.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\nbe bind to.",
+            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
             "paramName": "targetObject",
-            "description": " The object which the source should\nbe bind to.",
+            "description": " The object which the source should\n   be bind to.",
             "type": "qx.core.Object"
           },
           {
@@ -266,26 +266,26 @@
           },
           {
             "name": "@param",
-            "body": "options {Map} A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "paramName": "options",
-            "description": " A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index.",
+            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
             "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index."
+            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\nthere is no property definition for object and property (source and\ntarget).",
+            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
             "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\nthere is no property definition for object and property (source and\ntarget)."
+            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
           }
         ]
       }
@@ -302,7 +302,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the binding with the given id from the current object. The\nid has to be the id returned by any of the bind functions."
+            "body": "<p>Removes the binding with the given id from the current object. The\n id has to be the id returned by any of the bind functions.</p>"
           }
         ],
         "@param": [
@@ -336,24 +336,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all bindings between the object and the related one."
+            "body": "<p>Removes all bindings between the object and the related one.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "relatedObject {qx.core.Object} The object of which related\nbindings should be removed.",
+            "body": "relatedObject {qx.core.Object} The object of which related\n   bindings should be removed.",
             "paramName": "relatedObject",
-            "description": " The object of which related\nbindings should be removed.",
+            "description": " The object of which related\n   bindings should be removed.",
             "type": "qx.core.Object"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If one of the bindings listed internally can not be\nremoved.",
+            "body": "{Error} If one of the bindings listed internally can not be\n   removed.",
             "type": "Error",
-            "description": " If one of the bindings listed internally can not be\nremoved."
+            "description": " If one of the bindings listed internally can not be\n   removed."
           }
         ]
       }
@@ -379,15 +379,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array which lists all bindings for the object."
+            "body": "<p>Returns an array which lists all bindings for the object.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order.",
+            "body": "{Array} An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order.",
             "type": "qx.data.Array",
-            "description": " An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order."
+            "description": " An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order."
           }
         ]
       }
@@ -404,15 +404,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a debug message."
+            "body": "<p>Logs a debug message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -430,15 +430,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an info message."
+            "body": "<p>Logs an info message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -456,15 +456,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a warning message."
+            "body": "<p>Logs a warning message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -482,15 +482,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message."
+            "body": "<p>Logs an error message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -508,15 +508,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message with the current stack trace"
+            "body": "<p>Logs an error message with the current stack trace</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -534,7 +534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper that calls the appropriate logger function with the current object\nand any number of items."
+            "body": "<p>Helper that calls the appropriate logger function with the current object\n and any number of items.</p>"
           }
         ],
         "@param": [
@@ -567,7 +567,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add event listener to this object."
+            "body": "<p>Add event listener to this object.</p>"
           }
         ],
         "@param": [
@@ -587,18 +587,18 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -607,9 +607,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       }
@@ -626,7 +626,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add event listener to this object, which is only called once. After the\nlistener is called the event listener gets removed."
+            "body": "<p>Add event listener to this object, which is only called once. After the\n listener is called the event listener gets removed.</p>"
           }
         ],
         "@param": [
@@ -655,9 +655,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -666,9 +666,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       }
@@ -685,7 +685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove event listener from this object"
+            "body": "<p>Remove event listener from this object</p>"
           }
         ],
         "@param": [
@@ -714,9 +714,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean} Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "type": "Boolean"
           }
         ],
@@ -742,7 +742,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an event listener from an event target by an id returned by\n{@link #addListener}"
+            "body": "<p>Removes an event listener from an event target by an id returned by\n {@link #addListener}</p>"
           }
         ],
         "@param": [
@@ -776,7 +776,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if there are one or more listeners for an event type."
+            "body": "<p>Check if there are one or more listeners for an event type.</p>"
           }
         ],
         "@param": [
@@ -789,9 +789,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean ? false} Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -819,7 +819,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatch an event on this object"
+            "body": "<p>Dispatch an event on this object</p>"
           }
         ],
         "@param": [
@@ -834,9 +834,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
+            "body": "{Boolean} Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
             "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "description": " Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -853,7 +853,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and dispatches an event on this object."
+            "body": "<p>Creates and dispatches an event on this object.</p>"
           }
         ],
         "@param": [
@@ -875,9 +875,9 @@
           },
           {
             "name": "@param",
-            "body": "args {Array?null} Arguments, which will be passed to\nthe event's init method.",
+            "body": "args {Array?null} Arguments, which will be passed to\n       the event's init method.",
             "paramName": "args",
-            "description": " Arguments, which will be passed to\nthe event's init method.",
+            "description": " Arguments, which will be passed to\n       the event's init method.",
             "optional": true,
             "defaultValue": "null",
             "type": "Array"
@@ -886,9 +886,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
-            "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "body": "{Boolean|qx.Promise} whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
+            "type": "Boolean|qx.Promise",
+            "description": " whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -905,7 +905,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create an event object and dispatch it on this object.\nThe event dispatched with this method does never bubble! Use only if you\nare sure that bubbling is not required."
+            "body": "<p>Create an event object and dispatch it on this object.\n The event dispatched with this method does never bubble! Use only if you\n are sure that bubbling is not required.</p>"
           }
         ],
         "@param": [
@@ -927,9 +927,9 @@
           },
           {
             "name": "@param",
-            "body": "args {Array?null} Arguments, which will be passed to\nthe event's init method.",
+            "body": "args {Array?null} Arguments, which will be passed to\n       the event's init method.",
             "paramName": "args",
-            "description": " Arguments, which will be passed to\nthe event's init method.",
+            "description": " Arguments, which will be passed to\n       the event's init method.",
             "optional": true,
             "defaultValue": "null",
             "type": "Array"
@@ -938,9 +938,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
+            "body": "{Boolean} Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
             "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "description": " Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -957,7 +957,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and dispatches an non-bubbling data event on this object."
+            "body": "<p>Creates and dispatches an non-bubbling data event on this object.</p>"
           }
         ],
         "@param": [
@@ -986,9 +986,9 @@
           },
           {
             "name": "@param",
-            "body": "cancelable {Boolean?false} Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "body": "cancelable {Boolean?false} Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "paramName": "cancelable",
-            "description": " Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "description": " Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -997,9 +997,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
-            "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "body": "{Boolean|qx.Promise} whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
+            "type": "Boolean|qx.Promise",
+            "description": " whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -1016,7 +1016,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets multiple properties at once by using a property list or\nsets one property and its value by the first and second argument.\nAs a fallback, if no generated property setter could be found, a\nhandwritten setter will be searched and invoked if available."
+            "body": "<p>Sets multiple properties at once by using a property list or\n sets one property and its value by the first and second argument.\n As a fallback, if no generated property setter could be found, a\n handwritten setter will be searched and invoked if available.</p>"
           }
         ],
         "@param": [
@@ -1042,9 +1042,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} Returns this instance if <code>data</code> is a map\nor a non-generated setter is called; otherwise returns <code>value</code>.",
+            "body": "{Object} Returns this instance if <code>data</code> is a map\n   or a non-generated setter is called; otherwise returns <code>value</code>.",
             "type": "qx.core.Object",
-            "description": " Returns this instance if <code>data</code> is a map\nor a non-generated setter is called; otherwise returns <code>value</code>."
+            "description": " Returns this instance if <code>data</code> is a map\n   or a non-generated setter is called; otherwise returns <code>value</code>."
           }
         ],
         "@throws": [
@@ -1069,7 +1069,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given property. If no generated getter could be\nfound, a fallback tries to access a handwritten getter."
+            "body": "<p>Returns the value of the given property. If no generated getter could be\n found, a fallback tries to access a handwritten getter.</p>"
           }
         ],
         "@param": [
@@ -1111,7 +1111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value of the given property. If no generated resetter could be\nfound, a handwritten resetter will be invoked, if available."
+            "body": "<p>Resets the value of the given property. If no generated resetter could be\n found, a handwritten resetter will be invoked, if available.</p>"
           }
         ],
         "@param": [
@@ -1145,7 +1145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the property is initialized, i.e. has a defined init value or\nhas got a value by a setter method."
+            "body": "<p>Checks if the property is initialized, i.e. has a defined init value or\n has got a value by a setter method.</p>"
           }
         ],
         "@param": [
@@ -1223,13 +1223,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the object with the specified ID"
+            "body": "<p>Returns the object with the specified ID</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id\n{String} ID of the object",
+            "body": "id\n          {String} ID of the object",
             "paramName": "id",
             "description": " ID of the object",
             "type": "String"
@@ -1257,7 +1257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object and adds it to a list; most classes are expected to\noverride `_createQxObjectImpl` NOT this method."
+            "body": "<p>Creates the object and adds it to a list; most classes are expected to\n override <code>_createQxObjectImpl</code> NOT this method.</p>"
           }
         ],
         "@param": [
@@ -1291,7 +1291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object, intended to be overridden. Null is a valid return\nvalue and will be cached by `getQxObject`, however `undefined` is NOT a\nvalid value and so will not be cached meaning that `_createQxObjectImpl`\nwill be called multiple times until a valid value is returned."
+            "body": "<p>Creates the object, intended to be overridden. Null is a valid return\n value and will be cached by <code>getQxObject</code>, however <code>undefined</code> is NOT a\n valid value and so will not be cached meaning that <code>_createQxObjectImpl</code>\n will be called multiple times until a valid value is returned.</p>"
           }
         ],
         "@param": [
@@ -1325,7 +1325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an object as owned by this object"
+            "body": "<p>Adds an object as owned by this object</p>"
           }
         ],
         "@param": [
@@ -1359,7 +1359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Discards an object from the list of owned objects; note that this does\nnot dispose of the object, simply forgets it if it exists."
+            "body": "<p>Discards an object from the list of owned objects; note that this does\n not dispose of the object, simply forgets it if it exists.</p>"
           }
         ],
         "@param": [
@@ -1388,7 +1388,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an owned object"
+            "body": "<p>Removes an owned object</p>"
           }
         ],
         "@param": [
@@ -1414,7 +1414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of objects that are owned by this object, or an empty\narray if none exists."
+            "body": "<p>Returns an array of objects that are owned by this object, or an empty\n array if none exists.</p>"
           }
         ],
         "@return": [
@@ -1569,15 +1569,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the condition evaluates to <code>true</code>."
+            "body": "<p>Assert that the condition evaluates to <code>true</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {var} Condition to check for. Must evaluate to\n<code>true</code>.",
+            "body": "condition {var} Condition to check for. Must evaluate to\n    <code>true</code>.",
             "paramName": "condition",
-            "description": " Condition to check for. Must evaluate to\n<code>true</code>.",
+            "description": " Condition to check for. Must evaluate to\n    <code>true</code>.",
             "type": "var"
           },
           {
@@ -1603,7 +1603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Raise an {@link AssertionError}"
+            "body": "<p>Raise an {@link AssertionError}</p>"
           }
         ],
         "@param": [
@@ -1638,15 +1638,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>true</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>true</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>true</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>true</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>true</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>true</code>.",
             "type": "Boolean"
           },
           {
@@ -1672,15 +1672,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>false</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>false</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>false</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>false</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>false</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>false</code>.",
             "type": "Boolean"
           },
           {
@@ -1706,7 +1706,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are equal. (Uses the equality operator\n<code>==</code>.)"
+            "body": "<p>Assert that both values are equal. (Uses the equality operator\n <code>==</code>.)</p>"
           }
         ],
         "@param": [
@@ -1747,7 +1747,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not equal. (Uses the not equality operator\n<code>!=</code>.)"
+            "body": "<p>Assert that both values are not equal. (Uses the not equality operator\n <code>!=</code>.)</p>"
           }
         ],
         "@param": [
@@ -1788,7 +1788,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are equal. This might be needed because\nof the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are equal. This might be needed because\n of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -1829,7 +1829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are not equal. This might be needed\nbecause of the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are not equal. This might be needed\n because of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -1870,7 +1870,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are identical. (Uses the identity operator\n<code>===</code>.)"
+            "body": "<p>Assert that both values are identical. (Uses the identity operator\n <code>===</code>.)</p>"
           }
         ],
         "@param": [
@@ -1911,7 +1911,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not identical. (Uses the not identity operator\n<code>!==</code>.)"
+            "body": "<p>Assert that both values are not identical. (Uses the not identity operator\n <code>!==</code>.)</p>"
           }
         ],
         "@param": [
@@ -1952,7 +1952,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>undefined</code>."
+            "body": "<p>Assert that the value is not <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -1986,7 +1986,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>undefined</code>."
+            "body": "<p>Assert that the value is <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -2020,7 +2020,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>null</code>."
+            "body": "<p>Assert that the value is not <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -2054,7 +2054,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>null</code>."
+            "body": "<p>Assert that the value is <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -2088,7 +2088,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the first two arguments are equal, when serialized into\nJSON."
+            "body": "<p>Assert that the first two arguments are equal, when serialized into\n JSON.</p>"
           }
         ],
         "@param": [
@@ -2129,7 +2129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the given string matches the regular expression"
+            "body": "<p>Assert that the given string matches the regular expression</p>"
           }
         ],
         "@param": [
@@ -2170,7 +2170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the number of arguments is within the given range"
+            "body": "<p>Assert that the number of arguments is within the given range</p>"
           }
         ],
         "@param": [
@@ -2218,7 +2218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is fired."
+            "body": "<p>Assert that an event is fired.</p>"
           }
         ],
         "@param": [
@@ -2238,16 +2238,16 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nfires the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   fires the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nfires the event.",
+            "description": " The function which will be invoked and which\n   fires the event.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "listener {Function?null} The function which will be invoked in the\nlistener. The function has one parameter called e which is the event.",
+            "body": "listener {Function?null} The function which will be invoked in the\n   listener. The function has one parameter called e which is the event.",
             "paramName": "listener",
-            "description": " The function which will be invoked in the\nlistener. The function has one parameter called e which is the event.",
+            "description": " The function which will be invoked in the\n   listener. The function has one parameter called e which is the event.",
             "optional": true,
             "defaultValue": "null",
             "type": "Function"
@@ -2276,7 +2276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is not fired."
+            "body": "<p>Assert that an event is not fired.</p>"
           }
         ],
         "@param": [
@@ -2296,9 +2296,9 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nshould not fire the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   should not fire the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nshould not fire the event.",
+            "description": " The function which will be invoked and which\n   should not fire the event.",
             "type": "Function"
           },
           {
@@ -2324,7 +2324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asserts that the callback raises a matching exception."
+            "body": "<p>Asserts that the callback raises a matching exception.</p>"
           }
         ],
         "@param": [
@@ -2337,18 +2337,18 @@
           },
           {
             "name": "@param",
-            "body": "exception {Error?Error} Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "body": "exception {Error?Error} Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "paramName": "exception",
-            "description": " Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "description": " Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "optional": true,
             "defaultValue": "Error",
             "type": "Error"
           },
           {
             "name": "@param",
-            "body": "re {String|RegExp} The assertion fails if the error message does\nnot match this parameter",
+            "body": "re {String|RegExp} The assertion fails if the error message does\n   not match this parameter",
             "paramName": "re",
-            "description": " The assertion fails if the error message does\nnot match this parameter",
+            "description": " The assertion fails if the error message does\n   not match this parameter",
             "type": [
               "String",
               "RegExp"
@@ -2377,7 +2377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an item in the given array."
+            "body": "<p>Assert that the value is an item in the given array.</p>"
           }
         ],
         "@param": [
@@ -2418,7 +2418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is NOT an item in the given array"
+            "body": "<p>Assert that the value is NOT an item in the given array</p>"
           }
         ],
         "@param": [
@@ -2459,7 +2459,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both array have identical array items."
+            "body": "<p>Assert that both array have identical array items.</p>"
           }
         ],
         "@param": [
@@ -2500,7 +2500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a key in the given map."
+            "body": "<p>Assert that the value is a key in the given map.</p>"
           }
         ],
         "@param": [
@@ -2541,7 +2541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a function."
+            "body": "<p>Assert that the value is a function.</p>"
           }
         ],
         "@param": [
@@ -2575,7 +2575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a string."
+            "body": "<p>Assert that the value is a string.</p>"
           }
         ],
         "@param": [
@@ -2609,7 +2609,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a boolean."
+            "body": "<p>Assert that the value is a boolean.</p>"
           }
         ],
         "@param": [
@@ -2643,7 +2643,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number."
+            "body": "<p>Assert that the value is a number.</p>"
           }
         ],
         "@param": [
@@ -2677,7 +2677,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number >= 0."
+            "body": "<p>Assert that the value is a number &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -2711,7 +2711,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer."
+            "body": "<p>Assert that the value is an integer.</p>"
           }
         ],
         "@param": [
@@ -2745,7 +2745,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer >= 0."
+            "body": "<p>Assert that the value is an integer &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -2779,7 +2779,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is inside the given range."
+            "body": "<p>Assert that the value is inside the given range.</p>"
           }
         ],
         "@param": [
@@ -2827,7 +2827,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an object."
+            "body": "<p>Assert that the value is an object.</p>"
           }
         ],
         "@param": [
@@ -2861,7 +2861,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an array."
+            "body": "<p>Assert that the value is an array.</p>"
           }
         ],
         "@param": [
@@ -2895,7 +2895,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a map either created using <code>new Object</code>\nor by using the object literal notation <code>{ ... }</code>."
+            "body": "<p>Assert that the value is a map either created using <code>new Object</code>\n or by using the object literal notation <code>{ ... }</code>.</p>"
           }
         ],
         "@param": [
@@ -2929,7 +2929,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a regular expression."
+            "body": "<p>Assert that the value is a regular expression.</p>"
           }
         ],
         "@param": [
@@ -2963,7 +2963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value has the given type using the <code>typeof</code>\noperator. Because the type is not always what it is supposed to be it is\nbetter to use more explicit checks like {@link #assertString} or\n{@link #assertArray}."
+            "body": "<p>Assert that the value has the given type using the <code>typeof</code>\n operator. Because the type is not always what it is supposed to be it is\n better to use more explicit checks like {@link #assertString} or\n {@link #assertArray}.</p>"
           }
         ],
         "@param": [
@@ -3004,7 +3004,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of the given class."
+            "body": "<p>Assert that the value is an instance of the given class.</p>"
           }
         ],
         "@param": [
@@ -3045,7 +3045,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value implements the given interface."
+            "body": "<p>Assert that the value implements the given interface.</p>"
           }
         ],
         "@param": [
@@ -3086,7 +3086,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value represents the given CSS color value. This method\nparses the color strings and compares the RGB values. It is able to\nparse values supported by {@link qx.util.ColorUtil#stringToRgb}."
+            "body": "<p>Assert that the value represents the given CSS color value. This method\n parses the color strings and compares the RGB values. It is able to\n parse values supported by {@link qx.util.ColorUtil#stringToRgb}.</p>"
           }
         ],
         "@param": [
@@ -3127,7 +3127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a DOM element."
+            "body": "<p>Assert that the value is a DOM element.</p>"
           }
         ],
         "@param": [
@@ -3161,7 +3161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.core.Object}."
+            "body": "<p>Assert that the value is an instance of {@link qx.core.Object}.</p>"
           }
         ],
         "@param": [
@@ -3195,7 +3195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.ui.core.Widget}."
+            "body": "<p>Assert that the value is an instance of {@link qx.ui.core.Widget}.</p>"
           }
         ],
         "@param": [

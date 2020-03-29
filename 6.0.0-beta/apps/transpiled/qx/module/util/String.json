@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Utility module to give some support to work with strings.\n\n*Info:* The <pre class='javascript'>trim</pre> method is available as <a href=\"#String\">Polyfill</a>."
+          "body": "<p>Utility module to give some support to work with strings.\n<em>Info:</em> The <pre class='javascript'>trim</pre> method is available as <a href=\"#String\">Polyfill</a>.</p>"
         }
       ],
       "@group": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a hyphenated string (separated by '-') to camel case."
+            "body": "<p>Converts a hyphenated string (separated by '-') to camel case.</p>"
           }
         ],
         "@attachStatic": [
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a camelcased string to a hyphenated (separated by '-') string."
+            "body": "<p>Converts a camelcased string to a hyphenated (separated by '-') string.</p>"
           }
         ],
         "@attachStatic": [
@@ -143,7 +143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert the first character of the string to upper case."
+            "body": "<p>Convert the first character of the string to upper case.</p>"
           }
         ],
         "@attachStatic": [
@@ -194,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert the first character of the string to lower case."
+            "body": "<p>Convert the first character of the string to lower case.</p>"
           }
         ],
         "@attachStatic": [
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the string starts with the given substring."
+            "body": "<p>Check whether the string starts with the given substring.</p>"
           }
         ],
         "@attachStatic": [
@@ -303,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the string ends with the given substring."
+            "body": "<p>Check whether the string ends with the given substring.</p>"
           }
         ],
         "@attachStatic": [
@@ -361,7 +361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Escapes all chars that have a special meaning in regular expressions."
+            "body": "<p>Escapes all chars that have a special meaning in regular expressions.</p>"
           }
         ],
         "@attachStatic": [
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Escapes the characters in a <code>String</code> using HTML entities.\nSupports all known HTML 4.0 entities, including funky accents."
+            "body": "<p>Escapes the characters in a <code>String</code> using HTML entities.\n Supports all known HTML 4.0 entities, including funky accents.</p>"
           }
         ],
         "@attachStatic": [
@@ -453,13 +453,14 @@
     "location": {
       "start": {
         "line": 125,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 127,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

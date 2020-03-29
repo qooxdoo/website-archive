@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2017 Martijn Evers, The Netherlands\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartijn Evers (mever)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2017 Martijn Evers, The Netherlands\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martijn Evers (mever)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Field interface.\n\nThis interface allows any value to be set as long as the following constraint\nis met: any value returned by {@link getValue} can be set by {@link setValue}.\n\nThis specifies the interface for handling the model value of a field.\nThe model value is always in a consistent state (see duration example), and\nshould only handle model values of a type that correctly represents the\ndata available through its UI. E.g.: duration can ideally be modeled by a number\nof time units, like seconds. When using a date the duration may be\nunclear (since Unix time?). Type conversions should be handled by data binding.\n\nThe model value is not necessary what is shown to the end-user\nby implementing class. A good example is the {@link qx.ui.form.TextField}\nwhich is able to operate with or without live updating the model value.\n\nDuration example: a field for duration may use two date pickers for begin\nand end dates. When the end date is before the start date the model is in\ninconsistent state. getValue should never return such state. And calling\nit must result in either null or the last consistent value (depending\non implementation or setting)."
+          "body": "<p>Field interface.\n This interface allows any value to be set as long as the following constraint\n is met: any value returned by {@link getValue} can be set by {@link setValue}.\n This specifies the interface for handling the model value of a field.\n The model value is always in a consistent state (see duration example), and\n should only handle model values of a type that correctly represents the\n data available through its UI. E.g.: duration can ideally be modeled by a number\n of time units, like seconds. When using a date the duration may be\n unclear (since Unix time?). Type conversions should be handled by data binding.\n The model value is not necessary what is shown to the end-user\n by implementing class. A good example is the {@link qx.ui.form.TextField}\n which is able to operate with or without live updating the model value.\n Duration example: a field for duration may use two date pickers for begin\n and end dates. When the end date is before the start date the model is in\n inconsistent state. getValue should never return such state. And calling\n it must result in either null or the last consistent value (depending\n on implementation or setting).</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the model value was modified"
+            "body": "<p>Fired when the model value was modified</p>"
           }
         ]
       },
@@ -71,11 +71,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the field model value. Should also update the UI."
+            "body": "<p>Sets the field model value. Should also update the UI.</p>"
           }
         ],
         "@param": [
@@ -93,9 +93,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Error} Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field).",
+            "body": "{null|Error} Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field).",
             "type": "null|Error",
-            "description": " Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field)."
+            "description": " Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field)."
           }
         ]
       },
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the model value to its initial value. Should also update the UI."
+            "body": "<p>Resets the model value to its initial value. Should also update the UI.</p>"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a consistent and up-to-date model value.\n\nNote: returned value can also be a promise of type <code>Promise&lt;*|null&gt;</code>."
+            "body": "<p>Returns a consistent and up-to-date model value.\n Note: returned value can also be a promise of type <code>Promise&amp;lt;*|null&amp;gt;</code>.</p>"
           }
         ],
         "@return": [

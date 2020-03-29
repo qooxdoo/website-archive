@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A util class for handling the documentation tree."
+          "body": "<p>A util class for handling the documentation tree.</p>"
         }
       ],
       "@ignore": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 40,
-        "column": 4
+        "column": 16
       },
       "end": {
         "line": 42,
@@ -52,7 +52,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -73,7 +73,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the child of a doc node having a certain type."
+            "body": "<p>Gets the child of a doc node having a certain type.</p>"
           }
         ],
         "@param": [
@@ -95,9 +95,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} the wanted child or <code>null</code> if <code>docNode</code>\nis <code>null</code> or has no such child.",
+            "body": "{Map} the wanted child or <code>null</code> if <code>docNode</code>\n           is <code>null</code> or has no such child.",
             "type": "Map",
-            "description": " the wanted child or <code>null</code> if <code>docNode</code>\nis <code>null</code> or has no such child."
+            "description": " the wanted child or <code>null</code> if <code>docNode</code>\n           is <code>null</code> or has no such child."
           }
         ]
       },
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the child of a doc node having a certain attribute value."
+            "body": "<p>Gets the child of a doc node having a certain attribute value.</p>"
           }
         ],
         "@param": [
@@ -172,7 +172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the icon URL of a doc node."
+            "body": "<p>Gets the icon URL of a doc node.</p>"
           }
         ],
         "@param": [
@@ -196,9 +196,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var} the URL of the icon. May be a string or an array of string\n(in case of an overlay icon).",
+            "body": "{var} the URL of the icon. May be a string or an array of string\n           (in case of an overlay icon).",
             "type": "var",
-            "description": " the URL of the icon. May be a string or an array of string\n(in case of an overlay icon)."
+            "description": " the URL of the icon. May be a string or an array of string\n           (in case of an overlay icon)."
           }
         ],
         "@throws": [
@@ -242,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the blank icon."
+            "body": "<p>{string} The URL of the blank icon.</p>"
           }
         ]
       },
@@ -264,7 +264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"abstract\"."
+            "body": "<p>{string} The URL of the overlay \"abstract\".</p>"
           }
         ]
       },
@@ -286,7 +286,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"error\"."
+            "body": "<p>{string} The URL of the overlay \"error\".</p>"
           }
         ]
       },
@@ -308,7 +308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"inherited\"."
+            "body": "<p>{string} The URL of the overlay \"inherited\".</p>"
           }
         ]
       },
@@ -330,7 +330,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"overridden\"."
+            "body": "<p>{string} The URL of the overlay \"overridden\".</p>"
           }
         ]
       },
@@ -352,7 +352,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"themeable\"."
+            "body": "<p>{string} The URL of the overlay \"themeable\".</p>"
           }
         ]
       },
@@ -374,7 +374,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"static\"."
+            "body": "<p>{string} The URL of the overlay \"static\".</p>"
           }
         ]
       },
@@ -396,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"warning\"."
+            "body": "<p>{string} The URL of the overlay \"warning\".</p>"
           }
         ]
       },
@@ -418,7 +418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The URL of the overlay \"mixin\"."
+            "body": "<p>{string} The URL of the overlay \"mixin\".</p>"
           }
         ]
       },
@@ -440,7 +440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a package."
+            "body": "<p>{string} The icon URL of a package.</p>"
           }
         ]
       },
@@ -462,7 +462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a package with warning."
+            "body": "<p>{string} The icon URL of a package with warning.</p>"
           }
         ]
       },
@@ -484,7 +484,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a class."
+            "body": "<p>{string} The icon URL of a class.</p>"
           }
         ]
       },
@@ -506,7 +506,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a class with warning."
+            "body": "<p>{string} The icon URL of a class with warning.</p>"
           }
         ]
       },
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a class with error."
+            "body": "<p>{string} The icon URL of a class with error.</p>"
           }
         ]
       },
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a static class."
+            "body": "<p>{string} The icon URL of a static class.</p>"
           }
         ]
       },
@@ -572,7 +572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a static class with warning."
+            "body": "<p>{string} The icon URL of a static class with warning.</p>"
           }
         ]
       },
@@ -594,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a static class with error."
+            "body": "<p>{string} The icon URL of a static class with error.</p>"
           }
         ]
       },
@@ -616,7 +616,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an abstract class."
+            "body": "<p>{string} The icon URL of an abstract class.</p>"
           }
         ]
       },
@@ -638,7 +638,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an abstract class with warning."
+            "body": "<p>{string} The icon URL of an abstract class with warning.</p>"
           }
         ]
       },
@@ -660,7 +660,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an abstract class with error."
+            "body": "<p>{string} The icon URL of an abstract class with error.</p>"
           }
         ]
       },
@@ -682,7 +682,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an singleton class."
+            "body": "<p>{string} The icon URL of an singleton class.</p>"
           }
         ]
       },
@@ -704,7 +704,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an singleton class with warning."
+            "body": "<p>{string} The icon URL of an singleton class with warning.</p>"
           }
         ]
       },
@@ -726,7 +726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an singleton class with error."
+            "body": "<p>{string} The icon URL of an singleton class with error.</p>"
           }
         ]
       },
@@ -748,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a property."
+            "body": "<p>{string} The icon URL of a property.</p>"
           }
         ]
       },
@@ -770,7 +770,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a protected property."
+            "body": "<p>{string} The icon URL of a protected property.</p>"
           }
         ]
       },
@@ -792,7 +792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a private property."
+            "body": "<p>{string} The icon URL of a private property.</p>"
           }
         ]
       },
@@ -814,7 +814,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a internal property."
+            "body": "<p>{string} The icon URL of a internal property.</p>"
           }
         ]
       },
@@ -836,7 +836,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a themeable property."
+            "body": "<p>{string} The icon URL of a themeable property.</p>"
           }
         ]
       },
@@ -858,7 +858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an event."
+            "body": "<p>{string} The icon URL of an event.</p>"
           }
         ]
       },
@@ -880,7 +880,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an entry. Entry is a group property"
+            "body": "<p>{string} The icon URL of an entry. Entry is a group property</p>"
           }
         ]
       },
@@ -902,7 +902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an interface."
+            "body": "<p>{string} The icon URL of an interface.</p>"
           }
         ]
       },
@@ -924,7 +924,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an interface."
+            "body": "<p>{string} The icon URL of an interface.</p>"
           }
         ]
       },
@@ -946,7 +946,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an mixin."
+            "body": "<p>{string} The icon URL of an mixin.</p>"
           }
         ]
       },
@@ -968,7 +968,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an mixin."
+            "body": "<p>{string} The icon URL of an mixin.</p>"
           }
         ]
       },
@@ -990,7 +990,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a public method."
+            "body": "<p>{string} The icon URL of a public method.</p>"
           }
         ]
       },
@@ -1012,7 +1012,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a public inherited method."
+            "body": "<p>{string} The icon URL of a public inherited method.</p>"
           }
         ]
       },
@@ -1034,7 +1034,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a constructor."
+            "body": "<p>{string} The icon URL of a constructor.</p>"
           }
         ]
       },
@@ -1056,7 +1056,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a protected method."
+            "body": "<p>{string} The icon URL of a protected method.</p>"
           }
         ]
       },
@@ -1078,7 +1078,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a private method."
+            "body": "<p>{string} The icon URL of a private method.</p>"
           }
         ]
       },
@@ -1100,7 +1100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a internal method."
+            "body": "<p>{string} The icon URL of a internal method.</p>"
           }
         ]
       },
@@ -1122,7 +1122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a constant."
+            "body": "<p>{string} The icon URL of a constant.</p>"
           }
         ]
       },
@@ -1144,7 +1144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of an appearance."
+            "body": "<p>{string} The icon URL of an appearance.</p>"
           }
         ]
       },
@@ -1166,7 +1166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "{string} The icon URL of a child control."
+            "body": "<p>{string} The icon URL of a child control.</p>"
           }
         ]
       },
@@ -1178,7 +1178,7 @@
     "location": {
       "start": {
         "line": 382,
-        "column": 4
+        "column": 12
       },
       "end": {
         "line": 428,
@@ -1189,7 +1189,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nAuthors:\nMustafa Sak (msak)\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   Authors:\n Mustafa Sak (msak)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Registrar for command groups to be able to active or deactive them."
+          "body": "<p>Registrar for command groups to be able to active or deactive them.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 20,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 24,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__groups": {
@@ -87,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add command group."
+            "body": "<p>Add command group.</p>"
           }
         ],
         "@param": [
@@ -126,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a command manager was added."
+            "body": "<p>Whether a command manager was added.</p>"
           }
         ],
         "@param": [
@@ -165,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a command group from group manager. If removed group was the\nactive group, active group will be set to <code>null</code> Returns the\ngroup."
+            "body": "<p>Removes a command group from group manager. If removed group was the\n active group, active group will be set to <code>null</code> Returns the\n group.</p>"
           }
         ],
         "@param": [
@@ -204,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates a command group and deactivates all other added groups."
+            "body": "<p>Activates a command group and deactivates all other added groups.</p>"
           }
         ],
         "@param": [
@@ -243,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns active command group."
+            "body": "<p>Returns active command group.</p>"
           }
         ],
         "@return": [
@@ -273,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Blocks the active command group."
+            "body": "<p>Blocks the active command group.</p>"
           }
         ]
       },
@@ -295,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblocks the active command group."
+            "body": "<p>Unblocks the active command group.</p>"
           }
         ]
       },
@@ -317,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function returns added command group."
+            "body": "<p>Helper function returns added command group.</p>"
           }
         ],
         "@param": [
@@ -466,13 +467,14 @@
     "location": {
       "start": {
         "line": 201,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 204,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Attribute/Property handling for DOM elements."
+          "body": "<p>Attribute/Property handling for DOM elements.</p>"
         }
       ],
       "@group": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the HTML content of the first item in the collection"
+            "body": "<p>Returns the HTML content of the first item in the collection</p>"
           }
         ],
         "@attach": [
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the HTML content of each item in the collection"
+            "body": "<p>Sets the HTML content of each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets an HTML attribute on each item in the collection"
+            "body": "<p>Sets an HTML attribute on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given attribute for the first item in the\ncollection."
+            "body": "<p>Returns the value of the given attribute for the first item in the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -231,7 +231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given attribute from all elements in the collection"
+            "body": "<p>Removes the given attribute from all elements in the collection</p>"
           }
         ],
         "@attach": [
@@ -276,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets multiple attributes for each item in the collection."
+            "body": "<p>Sets multiple attributes for each item in the collection.</p>"
           }
         ],
         "@attach": [
@@ -321,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the values of multiple attributes for the first item in the collection"
+            "body": "<p>Returns the values of multiple attributes for the first item in the collection</p>"
           }
         ],
         "@attach": [
@@ -366,7 +366,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes multiple attributes from each item in the collection."
+            "body": "<p>Removes multiple attributes from each item in the collection.</p>"
           }
         ],
         "@attach": [
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a property on each item in the collection"
+            "body": "<p>Sets a property on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -463,7 +463,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given property for the first item in the\ncollection"
+            "body": "<p>Returns the value of the given property for the first item in the\n collection</p>"
           }
         ],
         "@attach": [
@@ -508,7 +508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets multiple properties for each item in the collection."
+            "body": "<p>Sets multiple properties for each item in the collection.</p>"
           }
         ],
         "@attach": [
@@ -553,7 +553,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes multiple properties for each item in the collection."
+            "body": "<p>Removes multiple properties for each item in the collection.</p>"
           }
         ],
         "@attach": [
@@ -598,7 +598,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the values of multiple properties for the first item in the collection"
+            "body": "<p>Returns the values of multiple properties for the first item in the collection</p>"
           }
         ],
         "@attach": [
@@ -643,7 +643,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deletes a property from each item in the collection"
+            "body": "<p>Deletes a property from each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -688,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently configured value for the first item in the collection.\nWorks with simple input fields as well as with select boxes or option\nelements. Returns an array for select boxes with multi selection. In all\nother cases, a string is returned."
+            "body": "<p>Returns the currently configured value for the first item in the collection.\n Works with simple input fields as well as with select boxes or option\n elements. Returns an array for select boxes with multi selection. In all\n other cases, a string is returned.</p>"
           }
         ],
         "@attach": [
@@ -724,7 +724,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the given value to each element in the collection.\nNormally the value is given as a string/number value and applied to the\nfield content (textfield, textarea) or used to detect whether the field\nis checked (checkbox, radiobutton).\nSupports array values for selectboxes (multiple selection) and checkboxes\nor radiobuttons (for convenience).\n\nPlease note: To modify the value attribute of a checkbox or radiobutton\nuse {@link #setAttribute} instead and manipulate the <code>checked</code> attribute."
+            "body": "<p>Applies the given value to each element in the collection.\n Normally the value is given as a string/number value and applied to the\n field content (textfield, textarea) or used to detect whether the field\n is checked (checkbox, radiobutton).\n Supports array values for selectboxes (multiple selection) and checkboxes\n or radiobuttons (for convenience).\n Please note: To modify the value attribute of a checkbox or radiobutton\n use {@link #setAttribute} instead and manipulate the <code>checked</code> attribute.</p>"
           }
         ],
         "@attach": [
@@ -763,13 +763,14 @@
     "location": {
       "start": {
         "line": 286,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 288,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

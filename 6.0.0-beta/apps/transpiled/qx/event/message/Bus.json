@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Christian Boulanger\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Boulanger\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Christian Boulanger\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Boulanger\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A simple message bus singleton.\nThe message bus registers subscriptions and notifies subscribers when\na matching message is dispatched"
+          "body": "<p>A simple message bus singleton.\n The message bus registers subscriptions and notifies subscribers when\n a matching message is dispatched</p>"
         }
       ]
     }
@@ -50,15 +50,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "gets the hash map of message subscriptions"
+            "body": "<p>gets the hash map of message subscriptions</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} with registered subscriptions. The key is the\n<code>message</code> and the value is a map with <code>{subscriber: {Function},\ncontext: {Object|null}}</code>.",
+            "body": "{Map} with registered subscriptions. The key is the\n    <code>message</code> and the value is a map with <code>{subscriber: {Function},\n    context: {Object|null}}</code>.",
             "type": "Map",
-            "description": " with registered subscriptions. The key is the\n<code>message</code> and the value is a map with <code>{subscriber: {Function},\ncontext: {Object|null}}</code>."
+            "description": " with registered subscriptions. The key is the\n    <code>message</code> and the value is a map with <code>{subscriber: {Function},\n    context: {Object|null}}</code>."
           }
         ]
       },
@@ -80,7 +80,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "subscribes to a message"
+            "body": "<p>subscribes to a message</p>"
           }
         ],
         "@param": [
@@ -133,7 +133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "checks if subscription is already present\nif you supply the callback function, match only the exact message monitor\notherwise match all monitors that have the given message"
+            "body": "<p>checks if subscription is already present\n if you supply the callback function, match only the exact message monitor\n otherwise match all monitors that have the given message</p>"
           }
         ],
         "@param": [
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "unsubscribe a listening method\nif you supply the callback function and execution context,\nremove only this exact subscription\notherwise remove all subscriptions"
+            "body": "<p>unsubscribe a listening method\n if you supply the callback function and execution context,\n remove only this exact subscription\n otherwise remove all subscriptions</p>"
           }
         ],
         "@param": [
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "dispatch message and call subscribed functions"
+            "body": "<p>dispatch message and call subscribed functions</p>"
           }
         ],
         "@param": [
@@ -254,9 +254,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the message was dispatched,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the message was dispatched,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -278,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatches a new message by supplying the name of the\nmessage and its data."
+            "body": "<p>Dispatches a new message by supplying the name of the\n message and its data.</p>"
           }
         ],
         "@param": [
@@ -300,9 +300,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the message was dispatched,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the message was dispatched,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -314,7 +314,7 @@
     "location": {
       "start": {
         "line": 121,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 127,
@@ -325,7 +325,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "constructor"
+          "body": "<p>constructor</p>"
         }
       ]
     }
@@ -360,15 +360,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "gets the hash map of message subscriptions"
+            "body": "<p>gets the hash map of message subscriptions</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} with registered subscriptions. The key is the\n<code>message</code> and the value is a map with <code>{subscriber: {Function},\ncontext: {Object|null}}</code>.",
+            "body": "{Map} with registered subscriptions. The key is the\n    <code>message</code> and the value is a map with <code>{subscriber: {Function},\n    context: {Object|null}}</code>.",
             "type": "Map",
-            "description": " with registered subscriptions. The key is the\n<code>message</code> and the value is a map with <code>{subscriber: {Function},\ncontext: {Object|null}}</code>."
+            "description": " with registered subscriptions. The key is the\n    <code>message</code> and the value is a map with <code>{subscriber: {Function},\n    context: {Object|null}}</code>."
           }
         ]
       },
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "subscribes to a message"
+            "body": "<p>subscribes to a message</p>"
           }
         ],
         "@param": [
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "checks if subscription is already present\nif you supply the callback function, match only the exact message monitor\notherwise match all monitors that have the given message"
+            "body": "<p>checks if subscription is already present\n if you supply the callback function, match only the exact message monitor\n otherwise match all monitors that have the given message</p>"
           }
         ],
         "@param": [
@@ -496,7 +496,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "unsubscribe a listening method\nif you supply the callback function and execution context,\nremove only this exact subscription\notherwise remove all subscriptions"
+            "body": "<p>unsubscribe a listening method\n if you supply the callback function and execution context,\n remove only this exact subscription\n otherwise remove all subscriptions</p>"
           }
         ],
         "@param": [
@@ -549,7 +549,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "dispatch message and call subscribed functions"
+            "body": "<p>dispatch message and call subscribed functions</p>"
           }
         ],
         "@param": [
@@ -564,9 +564,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the message was dispatched,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the message was dispatched,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -588,7 +588,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatches a new message by supplying the name of the\nmessage and its data."
+            "body": "<p>Dispatches a new message by supplying the name of the\n message and its data.</p>"
           }
         ],
         "@param": [
@@ -610,9 +610,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the message was dispatched,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if the message was dispatched,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if the message was dispatched,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -634,7 +634,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Call subscribers with passed message.\n\nEach currently-subscribed subscriber function will be called in\nturn. Any requests to unsubscribe a subscriber from the list, while\nprocessing the currently-subscribed subscriber functions, will take\neffect after all currently-subscribed subscriber functions have been\nprocessed."
+            "body": "<p>Call subscribers with passed message.\n Each currently-subscribed subscriber function will be called in\n turn. Any requests to unsubscribe a subscriber from the list, while\n processing the currently-subscribed subscriber functions, will take\n effect after all currently-subscribed subscriber functions have been\n processed.</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n======================================================================\n\nThis class contains code based on the following work:\n\njQuery\nhttp://jquery.com\nVersion 1.3.1\n\nCopyright:\n2009 John Resig\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n   ======================================================================\n   This class contains code based on the following work:\n jQuery\n     http://jquery.com\n     Version 1.3.1\n     Copyright:\n       2009 John Resig\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Cross browser abstractions to work with input elements."
+          "body": "<p>Cross browser abstractions to work with input elements.</p>"
         }
       ]
     }
@@ -75,15 +75,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an DOM input/textarea/select element.\n\nAttributes may be given directly with this call. This is critical\nfor some attributes e.g. name, type, ... in many clients.\n\nNote: <code>select</code> and <code>textarea</code> elements are created\nusing the identically named <code>type</code>."
+            "body": "<p>Creates an DOM input/textarea/select element.\n Attributes may be given directly with this call. This is critical\n for some attributes e.g. name, type, … in many clients.\n Note: <code>select</code> and <code>textarea</code> elements are created\n using the identically named <code>type</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "type {String} Any valid type for HTML, <code>select</code>\nand <code>textarea</code>",
+            "body": "type {String} Any valid type for HTML, <code>select</code>\n   and <code>textarea</code>",
             "paramName": "type",
-            "description": " Any valid type for HTML, <code>select</code>\nand <code>textarea</code>",
+            "description": " Any valid type for HTML, <code>select</code>\n   and <code>textarea</code>",
             "type": "qx.bom.String"
           },
           {
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the given value to the element.\n\nNormally the value is given as a string/number value and applied\nto the field content (textfield, textarea) or used to\ndetect whether the field is checked (checkbox, radiobutton).\n\nSupports array values for selectboxes (multiple-selection)\nand checkboxes or radiobuttons (for convenience).\n\nPlease note: To modify the value attribute of a checkbox or\nradiobutton use {@link qx.bom.element.Attribute#set} instead."
+            "body": "<p>Applies the given value to the element.\n Normally the value is given as a string/number value and applied\n to the field content (textfield, textarea) or used to\n detect whether the field is checked (checkbox, radiobutton).\n Supports array values for selectboxes (multiple-selection)\n and checkboxes or radiobuttons (for convenience).\n Please note: To modify the value attribute of a checkbox or\n radiobutton use {@link qx.bom.element.Attribute#set} instead.</p>"
           }
         ],
         "@param": [
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently configured value.\n\nWorks with simple input fields as well as with\nselect boxes or option elements.\n\nReturns an array in cases of multi-selection in\nselect boxes but in all other cases a string."
+            "body": "<p>Returns the currently configured value.\n Works with simple input fields as well as with\n select boxes or option elements.\n Returns an array in cases of multi-selection in\n select boxes but in all other cases a string.</p>"
           }
         ],
         "@param": [
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the text wrap behaviour of a text area element.\nThis property uses the attribute \"wrap\" respectively\nthe style property \"whiteSpace\""
+            "body": "<p>Sets the text wrap behaviour of a text area element.\n This property uses the attribute \"wrap\" respectively\n the style property \"whiteSpace\"</p>"
           }
         ],
         "@signature": [

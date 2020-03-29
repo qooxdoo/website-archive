@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "HTML templating module. This is a wrapper for mustache.js which is a\n\"framework-agnostic way to render logic-free views\".\n\nFor further details, please visit the mustache.js documentation here:\nhttps://github.com/janl/mustache.js/blob/master/README.md"
+          "body": "<p>HTML templating module. This is a wrapper for mustache.js which is a\n \"framework-agnostic way to render logic-free views\".\n For further details, please visit the mustache.js documentation here:\n   https://github.com/janl/mustache.js/blob/master/README.md</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method which provides direct access to templates stored as HTML in\nthe DOM. The DOM node with the given ID will be treated as a template,\nparsed and a new DOM element will be returned containing the parsed data.\nKeep in mind that templates can only have one root element.\nAdditionally, you should not put the template into a regular, hidden\nDOM element because the template may not be valid HTML due to the containing\nmustache tags. We suggest to put it into a script tag with the type\n<code>text/template</code>."
+            "body": "<p>Helper method which provides direct access to templates stored as HTML in\n the DOM. The DOM node with the given ID will be treated as a template,\n parsed and a new DOM element will be returned containing the parsed data.\n Keep in mind that templates can only have one root element.\n Additionally, you should not put the template into a regular, hidden\n DOM element because the template may not be valid HTML due to the containing\n mustache tags. We suggest to put it into a script tag with the type\n <code>text/template</code>.</p>"
           }
         ],
         "@attachStatic": [
@@ -82,9 +82,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qxWeb} Collection containing a single DOM element with the parsed\ntemplate data.",
+            "body": "{qxWeb} Collection containing a single DOM element with the parsed\n template data.",
             "type": "qxWeb",
-            "description": " Collection containing a single DOM element with the parsed\ntemplate data."
+            "description": " Collection containing a single DOM element with the parsed\n template data."
           }
         ]
       },
@@ -106,7 +106,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Original and only template method of mustache.js. For further\ndocumentation, please visit <a href=\"https://github.com/janl/mustache.js\">mustache.js</a>."
+            "body": "<p>Original and only template method of mustache.js. For further\n documentation, please visit <a href=\"https://github.com/janl/mustache.js\">mustache.js</a>.</p>"
           }
         ],
         "@attachStatic": [
@@ -165,7 +165,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Combines {@link #render} and {@link #get}. Input is equal to {@link #render}\nand output is equal to {@link #get}. The advantage over {@link #get}\nis that you don't need a HTML template but can use a template\nstring and still get a collection. Keep in mind that templates\ncan only have one root element."
+            "body": "<p>Combines {@link #render} and {@link #get}. Input is equal to {@link #render}\n and output is equal to {@link #get}. The advantage over {@link #get}\n is that you don't need a HTML template but can use a template\n string and still get a collection. Keep in mind that templates\n can only have one root element.</p>"
           }
         ],
         "@attachStatic": [
@@ -200,9 +200,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qxWeb} Collection containing a single DOM element with the parsed\ntemplate data.",
+            "body": "{qxWeb} Collection containing a single DOM element with the parsed\n template data.",
             "type": "qxWeb",
-            "description": " Collection containing a single DOM element with the parsed\ntemplate data."
+            "description": " Collection containing a single DOM element with the parsed\n template data."
           }
         ]
       },
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If the given node is a DOM text node, wrap it in a span element and return\nthe wrapper."
+            "body": "<p>If the given node is a DOM text node, wrap it in a span element and return\n the wrapper.</p>"
           }
         ],
         "@param": [
@@ -253,13 +253,14 @@
     "location": {
       "start": {
         "line": 104,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 106,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

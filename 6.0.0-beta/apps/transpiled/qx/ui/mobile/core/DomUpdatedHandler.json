@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class provides the <code>domupdated</code> event. The event is\ndelegated to all widget instances that have a\nlistener for the <code>domupdated</code> event registered."
+          "body": "<p>This class provides the <code>domupdated</code> event. The event is\n delegated to all widget instances that have a\n listener for the <code>domupdated</code> event registered.</p>"
         }
       ],
       "@internal": [
@@ -43,7 +43,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 52,
@@ -54,11 +54,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Create a new instance"
+          "body": "<p>Create a new instance</p>"
         }
       ],
       "@param": [
@@ -200,7 +200,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Informs all handlers. Useful after massive DOM manipulations e.g.\nthrough {@link qx.ui.mobile.core.Widget}."
+            "body": "<p>Informs all handlers. Useful after massive DOM manipulations e.g.\n through {@link qx.ui.mobile.core.Widget}.</p>"
           }
         ]
       },
@@ -252,19 +252,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -278,9 +278,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -306,15 +306,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -326,9 +326,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -355,15 +355,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -375,9 +375,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -404,11 +404,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method is called by all DOM tree modifying routines\nto inform the widgets."
+            "body": "<p>This method is called by all DOM tree modifying routines\n to inform the widgets.</p>"
           }
         ]
       },
@@ -540,7 +540,7 @@
     "location": {
       "start": {
         "line": 190,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 196,
@@ -551,7 +551,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -560,7 +560,7 @@
     "location": {
       "start": {
         "line": 208,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 210,
@@ -571,7 +571,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

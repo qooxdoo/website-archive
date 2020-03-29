@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nMootools\nhttp://mootools.net\nVersion 1.1.1\n\nCopyright:\n2007 Valerio Proietti\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n   ======================================================================\n   This class contains code based on the following work:\n Mootools\n     http://mootools.net\n     Version 1.1.1\n     Copyright:\n       2007 Valerio Proietti\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Collection of helper methods operating on functions."
+          "body": "<p>Collection of helper methods operating on functions.</p>"
         }
       ],
       "@ignore": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extract the caller of a function from the arguments variable.\nThis will not work in Opera < 9.6."
+            "body": "<p>Extract the caller of a function from the arguments variable.\n This will not work in Opera &lt; 9.6.</p>"
           }
         ],
         "@param": [
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Try to get a sensible textual description of a function object.\nThis may be the class/mixin and method name of a function\nor at least the signature of the function."
+            "body": "<p>Try to get a sensible textual description of a function object.\n This may be the class/mixin and method name of a function\n or at least the signature of the function.</p>"
           }
         ],
         "@param": [
@@ -137,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Evaluates JavaScript code globally"
+            "body": "<p>Evaluates JavaScript code globally</p>"
           }
         ],
         "@lint": [
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Base function for creating functional closures which is used by most other methods here.\n\n*Syntax*\n\n<pre class='javascript'>var createdFunction = qx.lang.Function.create(myFunction, [options]);</pre>"
+            "body": "<p>Base function for creating functional closures which is used by most other methods here.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>var createdFunction = qx.lang.Function.create(myFunction, [options]);</pre>"
           }
         ],
         "@param": [
@@ -195,9 +195,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?} Map of options\n<ul>\n<li><strong>self</strong>: The object that the \"this\" of the function will refer to. Default is the same as the wrapper function is called.</li>\n<li><strong>args</strong>: An array of arguments that will be passed as arguments to the function when called.\nDefault is no custom arguments; the function will receive the standard arguments when called.</li>\n<li><strong>delay</strong>: If set, the returned function will delay the actual execution by this amount of milliseconds and return a timer handle when called.\nDefault is no delay.</li>\n<li><strong>periodical</strong>: If set the returned function will periodically perform the actual execution with this specified interval\nand return a timer handle when called. Default is no periodical execution.</li>\n<li><strong>attempt</strong>: If set to true, the returned function will try to execute and return either the results or false on error. Default is false.</li>\n</ul>",
+            "body": "options {Map?} Map of options\n <ul>\n <li><strong>self</strong>: The object that the \"this\" of the function will refer to. Default is the same as the wrapper function is called.</li>\n <li><strong>args</strong>: An array of arguments that will be passed as arguments to the function when called.\n     Default is no custom arguments; the function will receive the standard arguments when called.</li>\n <li><strong>delay</strong>: If set, the returned function will delay the actual execution by this amount of milliseconds and return a timer handle when called.\n     Default is no delay.</li>\n <li><strong>periodical</strong>: If set the returned function will periodically perform the actual execution with this specified interval\n      and return a timer handle when called. Default is no periodical execution.</li>\n <li><strong>attempt</strong>: If set to true, the returned function will try to execute and return either the results or false on error. Default is false.</li>\n </ul>",
             "paramName": "options",
-            "description": " Map of options\n<ul>\n<li><strong>self</strong>: The object that the \"this\" of the function will refer to. Default is the same as the wrapper function is called.</li>\n<li><strong>args</strong>: An array of arguments that will be passed as arguments to the function when called.\nDefault is no custom arguments; the function will receive the standard arguments when called.</li>\n<li><strong>delay</strong>: If set, the returned function will delay the actual execution by this amount of milliseconds and return a timer handle when called.\nDefault is no delay.</li>\n<li><strong>periodical</strong>: If set the returned function will periodically perform the actual execution with this specified interval\nand return a timer handle when called. Default is no periodical execution.</li>\n<li><strong>attempt</strong>: If set to true, the returned function will try to execute and return either the results or false on error. Default is false.</li>\n</ul>",
+            "description": " Map of options\n <ul>\n <li><strong>self</strong>: The object that the \"this\" of the function will refer to. Default is the same as the wrapper function is called.</li>\n <li><strong>args</strong>: An array of arguments that will be passed as arguments to the function when called.\n     Default is no custom arguments; the function will receive the standard arguments when called.</li>\n <li><strong>delay</strong>: If set, the returned function will delay the actual execution by this amount of milliseconds and return a timer handle when called.\n     Default is no delay.</li>\n <li><strong>periodical</strong>: If set the returned function will periodically perform the actual execution with this specified interval\n      and return a timer handle when called. Default is no periodical execution.</li>\n <li><strong>attempt</strong>: If set to true, the returned function will try to execute and return either the results or false on error. Default is false.</li>\n </ul>",
             "optional": true,
             "type": "Map"
           }
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a function whose \"this\" is altered.\n\n\n*Native way*\n\nThis is also a feature of JavaScript 1.8.5 and will be supplied\nby modern browsers. Including {@link qx.lang.normalize.Function}\nwill supply a cross browser normalization of the native\nimplementation. We like to encourage you to use the native function!\n\n\n*Syntax*\n\n<pre class='javascript'>qx.lang.Function.bind(myFunction, [self, [varargs...]]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nfunction myFunction()\n{\nthis.setStyle('color', 'red');\n// note that 'this' here refers to myFunction, not an element\n// we'll need to bind this function to the element we want to alter\n};\n\nvar myBoundFunction = qx.lang.Function.bind(myFunction, myElement);\nmyBoundFunction(); // this will make the element myElement red.\n</pre>\n\nIf you find yourself using this static method a lot, you may be\ninterested in the bindTo() method in the mixin qx.core.MBindTo."
+            "body": "<p>Returns a function whose \"this\" is altered.\n<em>Native way</em>\n This is also a feature of JavaScript 1.8.5 and will be supplied\n by modern browsers. Including {@link qx.lang.normalize.Function}\n will supply a cross browser normalization of the native\n implementation. We like to encourage you to use the native function!\n<em>Syntax</em>\n </p>\n<pre class='javascript'>qx.lang.Function.bind(myFunction, [self, [varargs...]]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n function myFunction()\n {\n   this.setStyle('color', 'red');\n\n\n };\n var myBoundFunction = qx.lang.Function.bind(myFunction, myElement);\n myBoundFunction();\n </pre>\n<p>If you find yourself using this static method a lot, you may be\n interested in the bindTo() method in the mixin qx.core.MBindTo.</p>"
           }
         ],
         "@see": [
@@ -292,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a function whose arguments are pre-configured.\n\n*Syntax*\n\n<pre class='javascript'>qx.lang.Function.curry(myFunction, [varargs...]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nfunction myFunction(elem) {\nelem.setStyle('color', 'red');\n};\n\nvar myBoundFunction = qx.lang.Function.curry(myFunction, myElement);\nmyBoundFunction(); // this will make the element myElement red.\n</pre>"
+            "body": "<p>Returns a function whose arguments are pre-configured.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>qx.lang.Function.curry(myFunction, [varargs...]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n function myFunction(elem) {\n   elem.setStyle('color', 'red');\n };\n var myBoundFunction = qx.lang.Function.curry(myFunction, myElement);\n myBoundFunction();\n </pre>"
           }
         ],
         "@param": [
@@ -338,7 +338,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a function which could be used as a listener for a native event callback.\n\n*Syntax*\n\n<pre class='javascript'>qx.lang.Function.listener(myFunction, [self, [varargs...]]);</pre>"
+            "body": "<p>Returns a function which could be used as a listener for a native event callback.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>qx.lang.Function.listener(myFunction, [self, [varargs...]]);</pre>"
           }
         ],
         "@param": [
@@ -395,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tries to execute the function.\n\n*Syntax*\n\n<pre class='javascript'>var result = qx.lang.Function.attempt(myFunction, [self, [varargs...]]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nvar myObject = {\n'cow': 'moo!'\n};\n\nvar myFunction = function()\n{\nfor(var i = 0; i < arguments.length; i++) {\nif(!this[arguments[i]]) throw('doh!');\n}\n};\n\nvar result = qx.lang.Function.attempt(myFunction, myObject, 'pig', 'cow'); // false\n</pre>"
+            "body": "<p>Tries to execute the function.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>var result = qx.lang.Function.attempt(myFunction, [self, [varargs...]]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n var myObject = {\n   'cow': 'moo!'\n };\n var myFunction = function()\n {\n   for(var i = 0; i < arguments.length; i++) {\n     if(!this[arguments[i]]) throw('doh!');\n   }\n };\n var result = qx.lang.Function.attempt(myFunction, myObject, 'pig', 'cow');\n </pre>"
           }
         ],
         "@param": [
@@ -452,7 +452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delays the execution of a function by a specified duration.\n\n*Syntax*\n\n<pre class='javascript'>var timeoutID = qx.lang.Function.delay(myFunction, [delay, [self, [varargs...]]]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nvar myFunction = function(){ alert('moo! Element id is: ' + this.id); };\n//wait 50 milliseconds, then call myFunction and bind myElement to it\nqx.lang.Function.delay(myFunction, 50, myElement); // alerts: 'moo! Element id is: ... '\n\n// An anonymous function, example\nqx.lang.Function.delay(function(){ alert('one second later...'); }, 1000); //wait a second and alert\n</pre>"
+            "body": "<p>Delays the execution of a function by a specified duration.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>var timeoutID = qx.lang.Function.delay(myFunction, [delay, [self, [varargs...]]]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n var myFunction = function(){ alert('moo! Element id is: ' + this.id); };\n\n qx.lang.Function.delay(myFunction, 50, myElement);\n\n qx.lang.Function.delay(function(){ alert('one second later...'); }, 1000);\n </pre>"
           }
         ],
         "@param": [
@@ -516,7 +516,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes a function in the specified intervals of time\n\n*Syntax*\n\n<pre class='javascript'>var intervalID = qx.lang.Function.periodical(myFunction, [period, [self, [varargs...]]]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nvar Site = { counter: 0 };\nvar addCount = function(){ this.counter++; };\nqx.lang.Function.periodical(addCount, 1000, Site); // will add the number of seconds at the Site\n</pre>"
+            "body": "<p>Executes a function in the specified intervals of time\n<em>Syntax</em>\n </p>\n<pre class='javascript'>var intervalID = qx.lang.Function.periodical(myFunction, [period, [self, [varargs...]]]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n var Site = { counter: 0 };\n var addCount = function(){ this.counter++; };\n qx.lang.Function.periodical(addCount, 1000, Site);\n </pre>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Support for native and custom events."
+          "body": "<p>Support for native and custom events.</p>"
         }
       ],
       "@require": [
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event normalization registry"
+            "body": "<p>Event normalization registry</p>"
           }
         ],
         "@internal": [
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registry of event hooks"
+            "body": "<p>Registry of event hooks</p>"
           }
         ],
         "@internal": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the given function once the document is ready."
+            "body": "<p>Executes the given function once the document is ready.</p>"
           }
         ],
         "@attachStatic": [
@@ -176,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers a normalization function for the given event types. Listener\ncallbacks for these types will be called with the return value of the\nnormalization function instead of the regular event object.\n\nThe normalizer will be called with two arguments: The original event\nobject and the element on which the event was triggered"
+            "body": "<p>Registers a normalization function for the given event types. Listener\n callbacks for these types will be called with the return value of the\n normalization function instead of the regular event object.\n The normalizer will be called with two arguments: The original event\n object and the element on which the event was triggered</p>"
           }
         ],
         "@attachStatic": [
@@ -188,9 +188,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "types {String[]} List of event types to be normalized. Use an\nasterisk (<code>*</code>) to normalize all event types",
+            "body": "types {String[]} List of event types to be normalized. Use an\n asterisk (<code>*</code>) to normalize all event types",
             "paramName": "types",
-            "description": " List of event types to be normalized. Use an\nasterisk (<code>*</code>) to normalize all event types",
+            "description": " List of event types to be normalized. Use an\n asterisk (<code>*</code>) to normalize all event types",
             "type": "String[]"
           },
           {
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters a normalization function from the given event types."
+            "body": "<p>Unregisters a normalization function from the given event types.</p>"
           }
         ],
         "@attachStatic": [
@@ -264,7 +264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all registered event normalizers"
+            "body": "<p>Returns all registered event normalizers</p>"
           }
         ],
         "@attachStatic": [
@@ -300,7 +300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers an event hook for the given event types."
+            "body": "<p>Registers an event hook for the given event types.</p>"
           }
         ],
         "@attachStatic": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters a hook from the given event types."
+            "body": "<p>Unregisters a hook from the given event types.</p>"
           }
         ],
         "@attachStatic": [
@@ -416,7 +416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all registered event hooks"
+            "body": "<p>Returns all registered event hooks</p>"
           }
         ],
         "@attachStatic": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers a listener for the given event type on each item in the\ncollection. This can be either native or custom events."
+            "body": "<p>Registers a listener for the given event type on each item in the\n collection. This can be either native or custom events.</p>"
           }
         ],
         "@attach": [
@@ -486,17 +486,17 @@
           },
           {
             "name": "@param",
-            "body": "context {Object?} Context the callback function will be executed in.\nDefault: The element on which the listener was registered",
+            "body": "context {Object?} Context the callback function will be executed in.\n Default: The element on which the listener was registered",
             "paramName": "context",
-            "description": " Context the callback function will be executed in.\nDefault: The element on which the listener was registered",
+            "description": " Context the callback function will be executed in.\n Default: The element on which the listener was registered",
             "optional": true,
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "useCapture {Boolean?} Attach the listener to the capturing\nphase if true",
+            "body": "useCapture {Boolean?} Attach the listener to the capturing\n phase if true",
             "paramName": "useCapture",
-            "description": " Attach the listener to the capturing\nphase if true",
+            "description": " Attach the listener to the capturing\n phase if true",
             "optional": true,
             "type": "Boolean"
           }
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters event listeners for the given type from each element in the\ncollection."
+            "body": "<p>Unregisters event listeners for the given type from each element in the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -562,9 +562,9 @@
           },
           {
             "name": "@param",
-            "body": "useCapture {Boolean?} Attach the listener to the capturing\nphase if true",
+            "body": "useCapture {Boolean?} Attach the listener to the capturing\n phase if true",
             "paramName": "useCapture",
-            "description": " Attach the listener to the capturing\nphase if true",
+            "description": " Attach the listener to the capturing\n phase if true",
             "optional": true,
             "type": "Boolean"
           }
@@ -596,7 +596,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all event listeners (or all listeners for a given type) from the\ncollection."
+            "body": "<p>Removes all event listeners (or all listeners for a given type) from the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the listener with the given id."
+            "body": "<p>Removes the listener with the given id.</p>"
           }
         ],
         "@param": [
@@ -681,7 +681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire an event of the given type."
+            "body": "<p>Fire an event of the given type.</p>"
           }
         ],
         "@attach": [
@@ -700,9 +700,9 @@
           },
           {
             "name": "@param",
-            "body": "data {var?} Optional data that will be passed to the listener\ncallback function.",
+            "body": "data {var?} Optional data that will be passed to the listener\n callback function.",
             "paramName": "data",
-            "description": " Optional data that will be passed to the listener\ncallback function.",
+            "description": " Optional data that will be passed to the listener\n callback function.",
             "optional": true,
             "type": "var"
           }
@@ -734,7 +734,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attaches a listener for the given event that will be executed only once."
+            "body": "<p>Attaches a listener for the given event that will be executed only once.</p>"
           }
         ],
         "@attach": [
@@ -760,9 +760,9 @@
           },
           {
             "name": "@param",
-            "body": "context {Object?} Context the callback function will be executed in.\nDefault: The element on which the listener was registered",
+            "body": "context {Object?} Context the callback function will be executed in.\n Default: The element on which the listener was registered",
             "paramName": "context",
-            "description": " Context the callback function will be executed in.\nDefault: The element on which the listener was registered",
+            "description": " Context the callback function will be executed in.\n Default: The element on which the listener was registered",
             "optional": true,
             "type": "Object"
           }
@@ -794,7 +794,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if one or more listeners for the given event type are attached to\nthe first element in the collection.\n\n*Important:* Make sure you are handing in the *identical* context object to get\nthe correct result. Especially when using a collection instance this is a common pitfall."
+            "body": "<p>Checks if one or more listeners for the given event type are attached to\n the first element in the collection.\n<em>Important:</em> Make sure you are handing in the <em>identical</em> context object to get\n the correct result. Especially when using a collection instance this is a common pitfall.</p>"
           }
         ],
         "@attach": [
@@ -855,7 +855,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Copies any event listeners that are attached to the elements in the\ncollection to the provided target element"
+            "body": "<p>Copies any event listeners that are attached to the elements in the\n collection to the provided target element</p>"
           }
         ],
         "@internal": [
@@ -892,7 +892,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Bind one or two callbacks to the collection.\nIf only the first callback is defined the collection\ndoes react on 'pointerover' only."
+            "body": "<p>Bind one or two callbacks to the collection.\n If only the first callback is defined the collection\n does react on 'pointerover' only.</p>"
           }
         ],
         "@attach": [
@@ -945,7 +945,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a listener for the given type and checks if the target fulfills the selector check.\nIf the check is successful the callback is executed with the target and event as arguments."
+            "body": "<p>Adds a listener for the given type and checks if the target fulfills the selector check.\n If the check is successful the callback is executed with the target and event as arguments.</p>"
           }
         ],
         "@attach": [
@@ -964,9 +964,9 @@
           },
           {
             "name": "@param",
-            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\nArray of DOM elements or collection",
+            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\n Array of DOM elements or collection",
             "paramName": "target",
-            "description": " Selector expression, DOM element,\nArray of DOM elements or collection",
+            "description": " Selector expression, DOM element,\n Array of DOM elements or collection",
             "type": [
               "String",
               "Element",
@@ -979,9 +979,9 @@
           },
           {
             "name": "@param",
-            "body": "callback {Function} function to call if the selector matches.\nThe callback will get the target as qxWeb collection and the event as arguments",
+            "body": "callback {Function} function to call if the selector matches.\n The callback will get the target as qxWeb collection and the event as arguments",
             "paramName": "callback",
-            "description": " function to call if the selector matches.\nThe callback will get the target as qxWeb collection and the event as arguments",
+            "description": " function to call if the selector matches.\n The callback will get the target as qxWeb collection and the event as arguments",
             "type": "Function"
           },
           {
@@ -1020,7 +1020,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a listener for the given type and selector check."
+            "body": "<p>Removes a listener for the given type and selector check.</p>"
           }
         ],
         "@attach": [
@@ -1039,9 +1039,9 @@
           },
           {
             "name": "@param",
-            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\nArray of DOM elements or collection",
+            "body": "target {String|Element|Element[]|qxWeb} Selector expression, DOM element,\n Array of DOM elements or collection",
             "paramName": "target",
-            "description": " Selector expression, DOM element,\nArray of DOM elements or collection",
+            "description": " Selector expression, DOM element,\n Array of DOM elements or collection",
             "type": [
               "String",
               "Element",
@@ -1085,13 +1085,14 @@
     "location": {
       "start": {
         "line": 716,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 727,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

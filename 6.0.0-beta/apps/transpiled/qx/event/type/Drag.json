@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Event object class for drag events"
+          "body": "<p>Event object class for drag events</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the fields of the event. The event must be initialized before\nit can be dispatched."
+            "body": "<p>Initialize the fields of the event. The event must be initialized before\n it can be dispatched.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cancelable {Boolean?false} Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "body": "cancelable {Boolean?false} Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "paramName": "cancelable",
-            "description": " Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "description": " Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -99,15 +99,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "paramName": "embryo",
-            "description": " Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "description": " Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "optional": true,
             "defaultValue": "null",
             "type": "qx.event.type.Event"
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal position at which the event occurred relative to the\nleft of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the horizontal position at which the event occurred relative to the\n left of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@return": [
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical position at which the event occurred relative to the\ntop of the document. This property takes into account any scrolling of\nthe page."
+            "body": "<p>Get the vertical position at which the event occurred relative to the\n top of the document. This property takes into account any scrolling of\n the page.</p>"
           }
         ],
         "@return": [
@@ -205,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the drag&drop event handler responsible for the target"
+            "body": "<p>Returns the drag&amp;drop event handler responsible for the target</p>"
           }
         ],
         "@return": [
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Used during <code>dragstart</code> listener to\ninform the manager about supported data types."
+            "body": "<p>Used during <code>dragstart</code> listener to\n inform the manager about supported data types.</p>"
           }
         ],
         "@param": [
@@ -266,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Used during <code>dragstart</code> listener to\ninform the manager about supported drop actions."
+            "body": "<p>Used during <code>dragstart</code> listener to\n inform the manager about supported drop actions.</p>"
           }
         ],
         "@param": [
@@ -297,7 +297,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given type is supported by the drag\ntarget (source target).\n\nThis is used in the event listeners for <code>dragover</code>\nor <code>dragdrop</code>."
+            "body": "<p>Whether the given type is supported by the drag\n target (source target).\n This is used in the event listeners for <code>dragover</code>\n or <code>dragdrop</code>.</p>"
           }
         ],
         "@param": [
@@ -336,7 +336,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given action is supported by the drag\ntarget (source target).\n\nThis is used in the event listeners for <code>dragover</code>\nor <code>dragdrop</code>."
+            "body": "<p>Whether the given action is supported by the drag\n target (source target).\n This is used in the event listeners for <code>dragover</code>\n or <code>dragdrop</code>.</p>"
           }
         ],
         "@param": [
@@ -375,7 +375,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds data of the given type to the internal storage. The data\nis available until the <code>dragend</code> event is fired."
+            "body": "<p>Adds data of the given type to the internal storage. The data\n is available until the <code>dragend</code> event is fired.</p>"
           }
         ],
         "@param": [
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of the given type. Used in the <code>drop</code> listener.\n\nNote that this is a synchronous method and if any of the drag and drop\nevents handlers are implemented using Promises, this may fail; @see\n`getDataAsync`."
+            "body": "<p>Returns the data of the given type. Used in the <code>drop</code> listener.\n Note that this is a synchronous method and if any of the drag and drop\n events handlers are implemented using Promises, this may fail; @see\n <code>getDataAsync</code>.</p>"
           }
         ],
         "@param": [
@@ -452,7 +452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of the given type. Used in the <code>drop</code> listener."
+            "body": "<p>Returns the data of the given type. Used in the <code>drop</code> listener.</p>"
           }
         ],
         "@param": [
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the type which was requested last, to be used\nin the <code>droprequest</code> listener."
+            "body": "<p>Returns the type which was requested last, to be used\n in the <code>droprequest</code> listener.</p>"
           }
         ],
         "@return": [
@@ -521,15 +521,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected action. Depends on the\nsupported actions of the source target and the modification\nkeys pressed by the user.\n\nUsed in the <code>droprequest</code> listener."
+            "body": "<p>Returns the currently selected action. Depends on the\n supported actions of the source target and the modification\n keys pressed by the user.\n Used in the <code>droprequest</code> listener.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The action. May be one of <code>move</code>,\n<code>copy</code> or <code>alias</code>.",
+            "body": "{String} The action. May be one of <code>move</code>,\n    <code>copy</code> or <code>alias</code>.",
             "type": "String",
-            "description": " The action. May be one of <code>move</code>,\n<code>copy</code> or <code>alias</code>."
+            "description": " The action. May be one of <code>move</code>,\n    <code>copy</code> or <code>alias</code>."
           }
         ]
       },
@@ -551,15 +551,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected action. Depends on the\nsupported actions of the source target and the modification\nkeys pressed by the user.\n\nUsed in the <code>droprequest</code> listener."
+            "body": "<p>Returns the currently selected action. Depends on the\n supported actions of the source target and the modification\n keys pressed by the user.\n Used in the <code>droprequest</code> listener.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise|String} The action. May be one of <code>move</code>,\n<code>copy</code> or <code>alias</code>.",
+            "body": "{qx.Promise|String} The action. May be one of <code>move</code>,\n    <code>copy</code> or <code>alias</code>.",
             "type": "qx.Promise|String",
-            "description": " The action. May be one of <code>move</code>,\n<code>copy</code> or <code>alias</code>."
+            "description": " The action. May be one of <code>move</code>,\n    <code>copy</code> or <code>alias</code>."
           }
         ]
       },
@@ -581,7 +581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the current drop target allows the current drag target.\n\nThis can be called from within the \"drag\" event to enable/disable\na drop target selectively, for example based on the child item,\nabove and beyond the one-time choice made by the the \"dragover\"\nevent for the droppable widget itself."
+            "body": "<p>Whether the current drop target allows the current drag target.\n This can be called from within the \"drag\" event to enable/disable\n a drop target selectively, for example based on the child item,\n above and beyond the one-time choice made by the the \"dragover\"\n event for the droppable widget itself.</p>"
           }
         ],
         "@param": [
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the target which has been initially tapped on."
+            "body": "<p>Returns the target which has been initially tapped on.</p>"
           }
         ],
         "@return": [
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the drag&drop session and fires a <code>dragend</code> event."
+            "body": "<p>Stops the drag&amp;drop session and fires a <code>dragend</code> event.</p>"
           }
         ]
       },

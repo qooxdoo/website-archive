@@ -21,17 +21,17 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDan Hummon\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 by Tartan Solutions, Inc, http://www.tartansolutions.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Dan Hummon\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A filtered table model to provide support for hiding and filtering table\nrows. Any rows that match any applied filters will be hidden.\n\n<pre class='javascript'>\nvar model = new qx.ui.table.model.Filtered();\nmodel.setColumns([\"Login\", \"Name\", \"Email\"], [\"login\", \"name\", \"email\"]);\n\nvar table = new qx.ui.table.Table(model);\n\nvar data = [{\nlogin : \"darthvader\",\nname : \"Darth Vader\",\nemail : \"darthvader@tatooine.org\"\n}, {\nlogin : \"anakin\",\nname : \"Anakin Skywalker\",\nemail : \"anakin@skywalker.org\"\n}, {\nlogin : \"luke\",\nname : \"Luke Skywalker\",\nemail : \"luke@tatooine.org\"\n}, {\nlogin : \"obi-wan\",\nname : \"Obi-Wan Kenobi\",\nemail : \"obiwan@jedi.org\"\n}, {\nlogin : \"rey\",\nname : \"Rey\",\nemail : \"rey@jakku.sw\"\n}];\n\nmodel.setDataAsMapArray(data);\n\nthis.getRoot().add(table);\n\nvar search = new qx.ui.form.TextField();\nsearch.set({\nliveUpdate : true,\nplaceholder : \"Search login\"\n});\n\nsearch.addListener(\"changeValue\", function(e) {\nvar value = e.getData();\n\nmodel.resetHiddenRows();\nmodel.addNotRegex(value, \"login\", true);\nmodel.applyFilters();\n});\n\nthis.getRoot().add(search, {top : 500, left : 10});\n</pre>"
+          "body": "<p>A filtered table model to provide support for hiding and filtering table\n rows. Any rows that match any applied filters will be hidden.</p>\n<pre class='javascript'>\nvar model = new qx.ui.table.model.Filtered();\nmodel.setColumns([\"Login\", \"Name\", \"Email\"], [\"login\", \"name\", \"email\"]);\nvar table = new qx.ui.table.Table(model);\nvar data = [{\n  login : \"darthvader\",\n  name : \"Darth Vader\",\n  email : \"darthvader@tatooine.org\"\n}, {\n  login : \"anakin\",\n  name : \"Anakin Skywalker\",\n  email : \"anakin@skywalker.org\"\n}, {\n  login : \"luke\",\n  name : \"Luke Skywalker\",\n  email : \"luke@tatooine.org\"\n}, {\n  login : \"obi-wan\",\n  name : \"Obi-Wan Kenobi\",\n  email : \"obiwan@jedi.org\"\n}, {\n  login : \"rey\",\n  name : \"Rey\",\n  email : \"rey@jakku.sw\"\n}];\nmodel.setDataAsMapArray(data);\nthis.getRoot().add(table);\nvar search = new qx.ui.form.TextField();\nsearch.set({\n  liveUpdate : true,\n  placeholder : \"Search login\"\n});\nsearch.addListener(\"changeValue\", function(e) {\n  var value = e.getData();\n  model.resetHiddenRows();\n  model.addNotRegex(value, \"login\", true);\n  model.applyFilters();\n});\nthis.getRoot().add(search, {top : 500, left : 10});\n</pre>"
         }
       ],
       "@deprecated": [
         {
           "name": "@deprecated",
-          "body": "{6.0} You should use\n<a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter' target='_blank'>Array.filter</a>\nmethod to filter the table model"
+          "body": "{6.0} You should use\n <a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter' target='_blank'>Array.filter</a>\n method to filter the table model"
         }
       ]
     }
@@ -41,13 +41,14 @@
     "location": {
       "start": {
         "line": 81,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 99,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__fullArr": {
@@ -107,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Function to get the full array of the filtered model"
+            "body": "<p>Function to get the full array of the filtered model</p>"
           }
         ],
         "@return": [
@@ -137,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given string (needle) is in the array (haystack)"
+            "body": "<p>Whether the given string (needle) is in the array (haystack)</p>"
           }
         ],
         "@param": [
@@ -189,45 +190,45 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addBetweenFilter method is used to add a between filter to the\ntable model."
+            "body": "<p>The addBetweenFilter method is used to add a between filter to the\n table model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "filter {String}\nThe type of filter. Accepted strings are \"between\" and \"!between\".",
+            "body": "filter {String}\n    The type of filter. Accepted strings are \"between\" and \"!between\".",
             "paramName": "filter",
-            "description": "\nThe type of filter. Accepted strings are \"between\" and \"!between\".",
+            "description": "\n    The type of filter. Accepted strings are \"between\" and \"!between\".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "value1 {Integer}\nThe first value to compare against.",
+            "body": "value1 {Integer}\n    The first value to compare against.",
             "paramName": "value1",
-            "description": "\nThe first value to compare against.",
+            "description": "\n    The first value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "value2 {Integer}\nThe second value to compare against.",
+            "body": "value2 {Integer}\n    The second value to compare against.",
             "paramName": "value2",
-            "description": "\nThe second value to compare against.",
+            "description": "\n    The second value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against.",
+            "body": "target {String}\n    The text value of the column to compare against.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against.",
+            "description": "\n    The text value of the column to compare against.",
             "type": "String"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If the filter can not recognized or one of the values\nis null.",
+            "body": "{Error} If the filter can not recognized or one of the values\n is null.",
             "type": "Error",
-            "description": " If the filter can not recognized or one of the values\nis null."
+            "description": " If the filter can not recognized or one of the values\n is null."
           }
         ]
       },
@@ -249,29 +250,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addNumericFilter method is used to add a basic numeric filter to\nthe table model."
+            "body": "<p>The addNumericFilter method is used to add a basic numeric filter to\n the table model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "filter {String}\nThe type of filter. Accepted strings are:\n\"==\", \"!=\", \">\", \"<\", \">=\", and \"<=\".",
+            "body": "filter {String}\n    The type of filter. Accepted strings are:\n    \"==\", \"!=\", \">\", \"<\", \">=\", and \"<=\".",
             "paramName": "filter",
-            "description": "\nThe type of filter. Accepted strings are:\n\"==\", \"!=\", \">\", \"<\", \">=\", and \"<=\".",
+            "description": "\n    The type of filter. Accepted strings are:\n    \"==\", \"!=\", \">\", \"<\", \">=\", and \"<=\".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "value1 {Integer}\nThe value to compare against.",
+            "body": "value1 {Integer}\n    The value to compare against.",
             "paramName": "value1",
-            "description": "\nThe value to compare against.",
+            "description": "\n    The value to compare against.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against.",
+            "body": "target {String}\n    The text value of the column to compare against.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against.",
+            "description": "\n    The text value of the column to compare against.",
             "type": "String"
           }
         ],
@@ -302,29 +303,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addRegex method is used to add a regular expression filter to the\ntable model."
+            "body": "<p>The addRegex method is used to add a regular expression filter to the\n table model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "regex {String}\nThe regular expression to match against.",
+            "body": "regex {String}\n    The regular expression to match against.",
             "paramName": "regex",
-            "description": "\nThe regular expression to match against.",
+            "description": "\n    The regular expression to match against.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against.",
+            "body": "target {String}\n    The text value of the column to compare against.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against.",
+            "description": "\n    The text value of the column to compare against.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "ignorecase {Boolean}\nIf true, the regular expression will ignore case.",
+            "body": "ignorecase {Boolean}\n    If true, the regular expression will ignore case.",
             "paramName": "ignorecase",
-            "description": "\nIf true, the regular expression will ignore case.",
+            "description": "\n    If true, the regular expression will ignore case.",
             "type": "Boolean"
           }
         ],
@@ -355,29 +356,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The addNotRegex method is used to add a regular expression filter to the\ntable model and filter cells that do not match."
+            "body": "<p>The addNotRegex method is used to add a regular expression filter to the\n table model and filter cells that do not match.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "regex {String}\nThe regular expression to match against.",
+            "body": "regex {String}\n    The regular expression to match against.",
             "paramName": "regex",
-            "description": "\nThe regular expression to match against.",
+            "description": "\n    The regular expression to match against.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "target {String}\nThe text value of the column to compare against.",
+            "body": "target {String}\n    The text value of the column to compare against.",
             "paramName": "target",
-            "description": "\nThe text value of the column to compare against.",
+            "description": "\n    The text value of the column to compare against.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "ignorecase {Boolean}\nIf true, the regular expression will ignore case.",
+            "body": "ignorecase {Boolean}\n    If true, the regular expression will ignore case.",
             "paramName": "ignorecase",
-            "description": "\nIf true, the regular expression will ignore case.",
+            "description": "\n    If true, the regular expression will ignore case.",
             "type": "Boolean"
           }
         ],
@@ -408,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The applyFilters method is called to apply filters to the table model."
+            "body": "<p>The applyFilters method is called to apply filters to the table model.</p>"
           }
         ]
       },
@@ -430,29 +431,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides a specified number of rows."
+            "body": "<p>Hides a specified number of rows.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowNum {Integer}\nIndex of the first row to be hidden in the table.",
+            "body": "rowNum {Integer}\n    Index of the first row to be hidden in the table.",
             "paramName": "rowNum",
-            "description": "\nIndex of the first row to be hidden in the table.",
+            "description": "\n    Index of the first row to be hidden in the table.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "numOfRows {Integer}\nThe number of rows to be hidden sequentially after rowNum.",
+            "body": "numOfRows {Integer}\n    The number of rows to be hidden sequentially after rowNum.",
             "paramName": "numOfRows",
-            "description": "\nThe number of rows to be hidden sequentially after rowNum.",
+            "description": "\n    The number of rows to be hidden sequentially after rowNum.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "dispatchEvent {Boolean?true} Whether a model change event should\nbe fired.",
+            "body": "dispatchEvent {Boolean?true} Whether a model change event should\n    be fired.",
             "paramName": "dispatchEvent",
-            "description": " Whether a model change event should\nbe fired.",
+            "description": " Whether a model change event should\n    be fired.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -477,7 +478,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the table to the original state with all rows shown and clears\nall filters."
+            "body": "<p>Return the table to the original state with all rows shown and clears\n all filters.</p>"
           }
         ]
       },
@@ -499,15 +500,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowArr {var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "rowArr {var[][]} An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "paramName": "rowArr",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "description": " An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "type": "var[][]"
           },
           {
@@ -743,13 +744,14 @@
     "location": {
       "start": {
         "line": 501,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 504,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

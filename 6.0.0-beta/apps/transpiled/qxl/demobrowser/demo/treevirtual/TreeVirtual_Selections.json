@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Demonstrate providing initially-selected tree nodes."
+          "body": "<p>Demonstrate providing initially-selected tree nodes.</p>"
         }
       ]
     }

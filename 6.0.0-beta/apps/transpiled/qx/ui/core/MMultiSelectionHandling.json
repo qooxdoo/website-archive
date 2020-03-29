@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin links all methods to manage the multi selection from the\ninternal selection manager to the widget."
+          "body": "<p>This mixin links all methods to manage the multi selection from the\n internal selection manager to the widget.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the value was modified"
+            "body": "<p>Fires after the value was modified</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the selection was modified"
+            "body": "<p>Fires after the selection was modified</p>"
           }
         ]
       },
@@ -192,11 +192,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "setValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>setValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@param": [
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "getValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@return": [
@@ -271,7 +271,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "resetValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>resetValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ]
       },
@@ -293,7 +293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects all items of the managed object."
+            "body": "<p>Selects all items of the managed object.</p>"
           }
         ]
       },
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether the given item is currently selected."
+            "body": "<p>Detects whether the given item is currently selected.</p>"
           }
         ],
         "@param": [
@@ -362,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the given item to the existing selection.\n\nUse {@link #setSelection} instead if you want to replace\nthe current selection."
+            "body": "<p>Adds the given item to the existing selection.\n Use {@link #setSelection} instead if you want to replace\n the current selection.</p>"
           }
         ],
         "@param": [
@@ -401,7 +401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given item from the selection.\n\nUse {@link #resetSelection} when you want to clear\nthe whole selection at once."
+            "body": "<p>Removes the given item from the selection.\n Use {@link #resetSelection} when you want to clear\n the whole selection at once.</p>"
           }
         ],
         "@param": [
@@ -440,7 +440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects an item range between two given items."
+            "body": "<p>Selects an item range between two given items.</p>"
           }
         ],
         "@param": [
@@ -478,7 +478,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the whole selection at once. Also\nresets the lead and anchor items and their\nstyles."
+            "body": "<p>Clears the whole selection at once. Also\n resets the lead and anchor items and their\n styles.</p>"
           }
         ]
       },
@@ -500,7 +500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces current selection with the given items."
+            "body": "<p>Replaces current selection with the given items.</p>"
           }
         ],
         "@param": [
@@ -515,9 +515,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if one of the items is not a child element and if\nthe mode is set to <code>single</code> or <code>one</code> and\nthe items contains more than one item.",
+            "body": "{Error} if one of the items is not a child element and if\n    the mode is set to <code>single</code> or <code>one</code> and\n    the items contains more than one item.",
             "type": "Error",
-            "description": " if one of the items is not a child element and if\nthe mode is set to <code>single</code> or <code>one</code> and\nthe items contains more than one item."
+            "description": " if one of the items is not a child element and if\n    the mode is set to <code>single</code> or <code>one</code> and\n    the items contains more than one item."
           }
         ]
       },
@@ -539,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items.\n\nNote: The result is only a set of selected items, so the order can\ndiffer from the sequence in which the items were added."
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
@@ -569,7 +569,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items sorted\nby their index in the container."
+            "body": "<p>Returns an array of currently selected items sorted\n by their index in the container.</p>"
           }
         ],
         "@return": [
@@ -599,7 +599,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the selection is empty"
+            "body": "<p>Whether the selection is empty</p>"
           }
         ],
         "@return": [
@@ -629,15 +629,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the last selection context."
+            "body": "<p>Returns the last selection context.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String | null} One of <code>tap</code>, <code>quick</code>,\n<code>drag</code> or <code>key</code> or <code>null</code>.",
+            "body": "{String | null} One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>.",
             "type": "String | null",
-            "description": " One of <code>tap</code>, <code>quick</code>,\n<code>drag</code> or <code>key</code> or <code>null</code>."
+            "description": " One of <code>tap</code>, <code>quick</code>,\n    <code>drag</code> or <code>key</code> or <code>null</code>."
           }
         ]
       },
@@ -659,7 +659,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal selection manager. Use this with\ncaution!"
+            "body": "<p>Returns the internal selection manager. Use this with\n caution!</p>"
           }
         ],
         "@return": [
@@ -689,15 +689,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -728,7 +728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invert the selection. Select the non selected and deselect the selected."
+            "body": "<p>Invert the selection. Select the non selected and deselect the selected.</p>"
           }
         ]
       },
@@ -750,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current lead item. Generally the item which was last modified\nby the user (tapped on etc.)"
+            "body": "<p>Returns the current lead item. Generally the item which was last modified\n by the user (tapped on etc.)</p>"
           }
         ],
         "@return": [
@@ -780,11 +780,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -809,7 +809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -834,7 +834,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -859,11 +859,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for <code>changeSelection</code> event on selection manager."
+            "body": "<p>Event listener for <code>changeSelection</code> event on selection manager.</p>"
           }
         ],
         "@param": [
@@ -1130,7 +1130,7 @@
     "location": {
       "start": {
         "line": 452,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 454,
@@ -1141,7 +1141,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

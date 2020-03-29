@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A generic singleton that fires an \"interval\" event all 100 milliseconds. It\ncan be used whenever one needs to run code periodically. The main purpose of\nthis class is reduce the number of timers.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>A generic singleton that fires an \"interval\" event all 100 milliseconds. It\n can be used whenever one needs to run code periodically. The main purpose of\n this class is reduce the number of timers.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -40,13 +40,14 @@
     "location": {
       "start": {
         "line": 35,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "interval": {
@@ -64,7 +65,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event if fired each time the interval time has elapsed"
+            "body": "<p>This event if fired each time the interval time has elapsed</p>"
           }
         ]
       },
@@ -88,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval for the timer, which periodically fires the \"interval\" event,\nin milliseconds."
+            "body": "<p>Interval for the timer, which periodically fires the \"interval\" event,\n in milliseconds.</p>"
           }
         ]
       },
@@ -146,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -171,7 +172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires an \"interval\" event"
+            "body": "<p>Fires an \"interval\" event</p>"
           }
         ]
       },
@@ -193,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts the timer but only if there are listeners for the \"interval\" event"
+            "body": "<p>Starts the timer but only if there are listeners for the \"interval\" event</p>"
           }
         ]
       },
@@ -215,7 +216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the timer but only if there are no listeners for the interval event"
+            "body": "<p>Stops the timer but only if there are no listeners for the interval event</p>"
           }
         ]
       },
@@ -263,18 +264,18 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -283,9 +284,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       },
@@ -347,9 +348,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -358,9 +359,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       },
@@ -422,9 +423,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean} Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "type": "Boolean"
           }
         ],
@@ -686,7 +687,7 @@
     "location": {
       "start": {
         "line": 163,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 170,
@@ -697,7 +698,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

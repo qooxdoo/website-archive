@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 964,
+        "line": 965,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nAndreas Ecker (ecker)\nYuecel Beser (ybeser)\nJonathan Weiß (jonathan_rass)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Andreas Ecker (ecker)\n Yuecel Beser (ybeser)\n Jonathan Weiß (jonathan_rass)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Playground application, which allows for source code editing and live\npreviews of a simple custom application."
+          "body": "<p>Playground application, which allows for source code editing and live\n previews of a simple custom application.</p>"
         }
       ],
       "@ignore": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the current application."
+            "body": "<p>The name of the current application.</p>"
           }
         ]
       },
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Code to check agains as unchanged source of the loaded code."
+            "body": "<p>Code to check agains as unchanged source of the loaded code.</p>"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The current selected sample model."
+            "body": "<p>The current selected sample model.</p>"
           }
         ]
       },
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "UI Components"
+            "body": "<p>UI Components</p>"
           }
         ]
       },
@@ -289,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "storages"
+            "body": "<p>storages</p>"
           }
         ]
       },
@@ -367,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "flag used for the warning for IE"
+            "body": "<p>flag used for the warning for IE</p>"
           }
         ]
       },
@@ -403,7 +403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "used for removing the created objects in the run code"
+            "body": "<p>used for removing the created objects in the run code</p>"
           }
         ]
       },
@@ -495,7 +495,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method contains the initial application code and gets called\nduring startup of the application."
+            "body": "<p>This method contains the initial application code and gets called\n during startup of the application.</p>"
           }
         ]
       },
@@ -522,7 +522,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialization after the external editor has been loaded."
+            "body": "<p>Initialization after the external editor has been loaded.</p>"
           }
         ]
       },
@@ -544,19 +544,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "PROPERTY APPLY"
+            "body": "<p>PROPERTY APPLY</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -581,7 +581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -606,7 +606,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -631,15 +631,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "MODE HANDLING"
+            "body": "<p>MODE HANDLING</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           }
         ]
       },
@@ -661,7 +661,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for changing the mode of the palyground."
+            "body": "<p>Event handler for changing the mode of the palyground.</p>"
           }
         ],
         "@param": [
@@ -692,7 +692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to determinate if the mode is currently supported e.g. mobile\nin the current runtime."
+            "body": "<p>Helper to determinate if the mode is currently supported e.g. mobile\n in the current runtime.</p>"
           }
         ],
         "@param": [
@@ -731,7 +731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter and dispatcher for the current mode the playground is in."
+            "body": "<p>Setter and dispatcher for the current mode the playground is in.</p>"
           }
         ],
         "@param": [
@@ -762,19 +762,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "SAMPEL SAVE / DELETE"
+            "body": "<p>SAMPEL SAVE / DELETE</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper to write the current code to the model and with that to the\noffline store."
+            "body": "<p>Helper to write the current code to the model and with that to the\n offline store.</p>"
           }
         ]
       },
@@ -796,7 +796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to write the current code to the model and with that to the\noffline store."
+            "body": "<p>Helper to write the current code to the model and with that to the\n offline store.</p>"
           }
         ],
         "@lint": [
@@ -824,7 +824,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to delete the selected sample."
+            "body": "<p>Helper to delete the selected sample.</p>"
           }
         ]
       },
@@ -846,7 +846,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to rename a sample."
+            "body": "<p>Helper to rename a sample.</p>"
           }
         ]
       },
@@ -868,7 +868,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to toggle the editors split pane which means togglinge the\nvisibility of the editor and the samples pane."
+            "body": "<p>Helper to toggle the editors split pane which means togglinge the\n visibility of the editor and the samples pane.</p>"
           }
         ]
       },
@@ -890,27 +890,27 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "TOOLBAR HANDLER"
+            "body": "<p>TOOLBAR HANDLER</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for sample changes of the toolbar."
+            "body": "<p>Handler for sample changes of the toolbar.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Data} Data event containing the boolean\nweather the examples should be shown.",
+            "body": "e {qx.event.type.Data} Data event containing the boolean\n weather the examples should be shown.",
             "paramName": "e",
-            "description": " Data event containing the boolean\nweather the examples should be shown.",
+            "description": " Data event containing the boolean\n weather the examples should be shown.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -933,15 +933,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the changeHighlight event of the toolbar."
+            "body": "<p>Handler for the changeHighlight event of the toolbar.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Data} Data event containing the boolean to change\nthe highlighted code view.",
+            "body": "e {qx.event.type.Data} Data event containing the boolean to change\n   the highlighted code view.",
             "paramName": "e",
-            "description": " Data event containing the boolean to change\nthe highlighted code view.",
+            "description": " Data event containing the boolean to change\n   the highlighted code view.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -964,15 +964,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for showing the log of the toolbar."
+            "body": "<p>Handler for showing the log of the toolbar.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Data} Data event containing if the log should\nbe shown.",
+            "body": "e {qx.event.type.Data} Data event containing if the log should\n   be shown.",
             "paramName": "e",
-            "description": " Data event containing if the log should\nbe shown.",
+            "description": " Data event containing if the log should\n   be shown.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -995,7 +995,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the url shortening service."
+            "body": "<p>Handler for the url shortening service.</p>"
           }
         ]
       },
@@ -1017,7 +1017,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for opening the api viewer."
+            "body": "<p>Handler for opening the api viewer.</p>"
           }
         ]
       },
@@ -1039,7 +1039,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for opening the manual."
+            "body": "<p>Handler for opening the manual.</p>"
           }
         ]
       },
@@ -1061,7 +1061,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for opening the demo browser."
+            "body": "<p>Handler for opening the demo browser.</p>"
           }
         ]
       },
@@ -1083,19 +1083,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "HISTORY SUPPORT"
+            "body": "<p>HISTORY SUPPORT</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Back button and bookmark support"
+            "body": "<p>Back button and bookmark support</p>"
           }
         ]
       },
@@ -1117,7 +1117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for changes of the history."
+            "body": "<p>Handler for changes of the history.</p>"
           }
         ],
         "@param": [
@@ -1148,7 +1148,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for parsing the given url parameter to a valid code\nfragment."
+            "body": "<p>Helper method for parsing the given url parameter to a valid code\n fragment.</p>"
           }
         ],
         "@param": [
@@ -1187,7 +1187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the given code to the history."
+            "body": "<p>Adds the given code to the history.</p>"
           }
         ],
         "@param": [
@@ -1224,19 +1224,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "UPDATE & RUN & COMPARE"
+            "body": "<p>UPDATE &amp; RUN &amp; COMPARE</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Checcks if the code is changed. If that is the case, the user will be\nprompted to discard the changes."
+            "body": "<p>Checcks if the code is changed. If that is the case, the user will be\n prompted to discard the changes.</p>"
           }
         ],
         "@lint": [
@@ -1272,7 +1272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Special compare method for IE."
+            "body": "<p>Special compare method for IE.</p>"
           }
         ],
         "@param": [
@@ -1318,7 +1318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the window title with given sample label"
+            "body": "<p>Update the window title with given sample label</p>"
           }
         ],
         "@param": [
@@ -1349,7 +1349,7 @@
           "column": 4
         },
         "end": {
-          "line": 858,
+          "line": 859,
           "column": 5
         }
       },
@@ -1357,7 +1357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the qxl.playground."
+            "body": "<p>Updates the qxl.playground.</p>"
           }
         ]
       },
@@ -1367,11 +1367,11 @@
     "run": {
       "location": {
         "start": {
-          "line": 866,
+          "line": 867,
           "column": 4
         },
         "end": {
-          "line": 878,
+          "line": 879,
           "column": 5
         }
       },
@@ -1379,7 +1379,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Runs the current set sample and checks if it need to be saved to the url."
+            "body": "<p>Runs the current set sample and checks if it need to be saved to the url.</p>"
           }
         ],
         "@param": [
@@ -1398,11 +1398,11 @@
     "__onGlobalError": {
       "location": {
         "start": {
-          "line": 886,
+          "line": 887,
           "column": 4
         },
         "end": {
-          "line": 888,
+          "line": 889,
           "column": 5
         }
       },
@@ -1410,7 +1410,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for global errors."
+            "body": "<p>Handler for global errors.</p>"
           }
         ],
         "@param": [
@@ -1429,11 +1429,11 @@
     "__isAppClass": {
       "location": {
         "start": {
-          "line": 902,
+          "line": 903,
           "column": 4
         },
         "end": {
-          "line": 922,
+          "line": 923,
           "column": 5
         }
       },
@@ -1441,19 +1441,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "STANDALONE SUPPORT"
+            "body": "<p>STANDALONE SUPPORT</p>"
           },
           {
             "name": "@description",
-            "body": "**************************************************"
+            "body": "<pre><code>********************************************\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Determines whether the class (given by name) exists in the object\nregistry and is a qooxdoo application class."
+            "body": "<p>Determines whether the class (given by name) exists in the object\n registry and is a qooxdoo application class.</p>"
           }
         ],
         "@param": [
@@ -1480,11 +1480,11 @@
     "__executeStandaloneApp": {
       "location": {
         "start": {
-          "line": 930,
+          "line": 931,
           "column": 4
         },
         "end": {
-          "line": 946,
+          "line": 947,
           "column": 5
         }
       },
@@ -1492,7 +1492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Execute the class (given by name) as a standalone app"
+            "body": "<p>Execute the class (given by name) as a standalone app</p>"
           }
         ],
         "@param": [
@@ -1830,11 +1830,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 956,
-        "column": 2
+        "line": 957,
+        "column": 13
       },
       "end": {
-        "line": 963,
+        "line": 964,
         "column": 3
       }
     },
@@ -1842,7 +1842,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

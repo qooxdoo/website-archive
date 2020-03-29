@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 372,
+        "line": 404,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The main purpose of this class to hold all checks about ECMAScript.\n\nThis class is used by {@link qx.core.Environment} and should not be used\ndirectly. Please check its class comment for details how to use it."
+          "body": "<p>The main purpose of this class to hold all checks about ECMAScript.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the name of the Error object property that holds stack trace\ninformation or null if the client does not provide any."
+            "body": "<p>Returns the name of the Error object property that holds stack trace\n information or null if the client does not provide any.</p>"
           }
         ],
         "@internal": [
@@ -65,9 +65,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} <code>stack</code>, <code>stacktrace</code> or\n<code>null</code>",
+            "body": "{String|null} <code>stack</code>, <code>stacktrace</code> or\n <code>null</code>",
             "type": "String|null",
-            "description": " <code>stack</code>, <code>stacktrace</code> or\n<code>null</code>"
+            "description": " <code>stack</code>, <code>stacktrace</code> or\n <code>null</code>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'MutationObserver' is supported."
+            "body": "<p>Checks if 'MutationObserver' is supported.</p>"
           }
         ],
         "@internal": [
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'indexOf' is supported on the Array object."
+            "body": "<p>Checks if 'indexOf' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'lastIndexOf' is supported on the Array object."
+            "body": "<p>Checks if 'lastIndexOf' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'forEach' is supported on the Array object."
+            "body": "<p>Checks if 'forEach' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'filter' is supported on the Array object."
+            "body": "<p>Checks if 'filter' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -275,7 +275,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'map' is supported on the Array object."
+            "body": "<p>Checks if 'map' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -311,7 +311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'some' is supported on the Array object."
+            "body": "<p>Checks if 'some' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'find' is supported on the Array object."
+            "body": "<p>Checks if 'find' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -383,7 +383,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'findIndex' is supported on the Array object."
+            "body": "<p>Checks if 'findIndex' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -419,7 +419,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'every' is supported on the Array object."
+            "body": "<p>Checks if 'every' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -455,7 +455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'reduce' is supported on the Array object."
+            "body": "<p>Checks if 'reduce' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'reduceRight' is supported on the Array object."
+            "body": "<p>Checks if 'reduceRight' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -527,7 +527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'includes' is supported on the Array object."
+            "body": "<p>Checks if 'includes' is supported on the Array object.</p>"
           }
         ],
         "@internal": [
@@ -563,7 +563,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'toString' is supported on the Error object and\nits working as expected."
+            "body": "<p>Checks if 'toString' is supported on the Error object and\n its working as expected.</p>"
           }
         ],
         "@internal": [
@@ -599,7 +599,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'bind' is supported on the Function object."
+            "body": "<p>Checks if 'bind' is supported on the Function object.</p>"
           }
         ],
         "@internal": [
@@ -635,7 +635,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if creating async functions are supported"
+            "body": "<p>Checks if creating async functions are supported</p>"
           }
         ],
         "@lint": [
@@ -677,7 +677,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'keys' is supported on the Object object."
+            "body": "<p>Checks if 'keys' is supported on the Object object.</p>"
           }
         ],
         "@internal": [
@@ -713,7 +713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'values' is supported on the Object object."
+            "body": "<p>Checks if 'values' is supported on the Object object.</p>"
           }
         ],
         "@internal": [
@@ -749,7 +749,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'is' is supported on the Object object."
+            "body": "<p>Checks if 'is' is supported on the Object object.</p>"
           }
         ],
         "@internal": [
@@ -785,7 +785,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'now' is supported on the Date object."
+            "body": "<p>Checks if 'now' is supported on the Date object.</p>"
           }
         ],
         "@internal": [
@@ -821,7 +821,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'parse' is supported on the Date object and whether it\nsupports ISO-8601 parsing. Additionally it checks if 'parse' takes\nISO-8601 date strings without timezone specifier and treats them as\nlocal (as per specification)"
+            "body": "<p>Checks if 'parse' is supported on the Date object and whether it\n supports ISO-8601 parsing. Additionally it checks if 'parse' takes\n ISO-8601 date strings without timezone specifier and treats them as\n local (as per specification)</p>"
           }
         ],
         "@internal": [
@@ -833,9 +833,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code>, if the method supports ISO-8601\ndates.",
+            "body": "{Boolean} <code>true</code>, if the method supports ISO-8601\n   dates.",
             "type": "Boolean",
-            "description": " <code>true</code>, if the method supports ISO-8601\ndates."
+            "description": " <code>true</code>, if the method supports ISO-8601\n   dates."
           }
         ]
       },
@@ -857,7 +857,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'startsWith' is supported on the String object."
+            "body": "<p>Checks if 'startsWith' is supported on the String object.</p>"
           }
         ],
         "@internal": [
@@ -893,7 +893,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'endsWith' is supported on the String object."
+            "body": "<p>Checks if 'endsWith' is supported on the String object.</p>"
           }
         ],
         "@internal": [
@@ -929,7 +929,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if 'trim' is supported on the String object."
+            "body": "<p>Checks if 'trim' is supported on the String object.</p>"
           }
         ],
         "@internal": [
@@ -950,14 +950,14 @@
       "type": "function",
       "access": "public"
     },
-    "getPromiseNative": {
+    "getBigInt": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 314,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 316,
           "column": 5
         }
       },
@@ -965,7 +965,95 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether Native promises are available"
+            "body": "<p>Checks if 'BigInt' type is supported.</p>"
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "BigInt"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code>, if BigInt is available.",
+            "type": "Boolean",
+            "description": " <code>true</code>, if BigInt is available."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getBigIntToLocaleString": {
+      "location": {
+        "start": {
+          "line": 328,
+          "column": 4
+        },
+        "end": {
+          "line": 333,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks if 'toLocaleString' is supported on the BigInt object and whether\n it actually works</p>"
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ],
+        "@ignore": [
+          {
+            "name": "@ignore",
+            "body": "BigInt"
+          },
+          {
+            "name": "@ignore",
+            "body": "BigInt.prototype.toLocaleString"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} <code>true</code>, if the method is supported and\n   works at least rudimentary.",
+            "type": "Boolean",
+            "description": " <code>true</code>, if the method is supported and\n   works at least rudimentary."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "getPromiseNative": {
+      "location": {
+        "start": {
+          "line": 339,
+          "column": 4
+        },
+        "end": {
+          "line": 341,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Checks whether Native promises are available</p>"
           }
         ]
       },
@@ -975,11 +1063,11 @@
     "getEpsilon": {
       "location": {
         "start": {
-          "line": 318,
+          "line": 346,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 348,
           "column": 5
         }
       },
@@ -987,7 +1075,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether Native promises are available"
+            "body": "<p>Checks whether Native promises are available</p>"
           }
         ]
       },
@@ -998,14 +1086,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 324,
-        "column": 2
+        "line": 352,
+        "column": 10
       },
       "end": {
-        "line": 371,
+        "line": 403,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

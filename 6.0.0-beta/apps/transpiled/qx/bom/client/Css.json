@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 550,
+        "line": 553,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The purpose of this class is to contain all checks about css.\n\nThis class is used by {@link qx.core.Environment} and should not be used\ndirectly. Please check its class comment for details how to use it."
+          "body": "<p>The purpose of this class is to contain all checks about css.\n This class is used by {@link qx.core.Environment} and should not be used\n directly. Please check its class comment for details how to use it.</p>"
         }
       ],
       "@internal": [
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks what box model is used in the current environment."
+            "body": "<p>Checks what box model is used in the current environment.</p>"
           }
         ],
         "@return": [
@@ -115,15 +115,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>textOverflow</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>textOverflow</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} textOverflow property name or <code>null</code> if\ntextOverflow is not supported.",
+            "body": "{String|null} textOverflow property name or <code>null</code> if\n textOverflow is not supported.",
             "type": "String|null",
-            "description": " textOverflow property name or <code>null</code> if\ntextOverflow is not supported."
+            "description": " textOverflow property name or <code>null</code> if\n textOverflow is not supported."
           }
         ],
         "@internal": [
@@ -143,7 +143,7 @@
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 72,
           "column": 5
         }
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a placeholder could be used."
+            "body": "<p>Checks if a placeholder could be used.</p>"
           }
         ],
         "@return": [
@@ -175,11 +175,11 @@
     "getAppearance": {
       "location": {
         "start": {
-          "line": 80,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 85,
           "column": 5
         }
       },
@@ -187,15 +187,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>appearance</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>appearance</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} appearance property name or <code>null</code> if\nappearance is not supported.",
+            "body": "{String|null} appearance property name or <code>null</code> if\n appearance is not supported.",
             "type": "String|null",
-            "description": " appearance property name or <code>null</code> if\nappearance is not supported."
+            "description": " appearance property name or <code>null</code> if\n appearance is not supported."
           }
         ],
         "@internal": [
@@ -211,11 +211,11 @@
     "getBorderRadius": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 98,
           "column": 5
         }
       },
@@ -223,15 +223,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>borderRadius</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>borderRadius</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} borderRadius property name or <code>null</code> if\nborderRadius is not supported.",
+            "body": "{String|null} borderRadius property name or <code>null</code> if\n borderRadius is not supported.",
             "type": "String|null",
-            "description": " borderRadius property name or <code>null</code> if\nborderRadius is not supported."
+            "description": " borderRadius property name or <code>null</code> if\n borderRadius is not supported."
           }
         ],
         "@internal": [
@@ -247,11 +247,11 @@
     "getBoxShadow": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 108,
+          "line": 111,
           "column": 5
         }
       },
@@ -259,15 +259,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>boxShadow</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>boxShadow</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} boxShadow property name or <code>null</code> if\nboxShadow is not supported.",
+            "body": "{String|null} boxShadow property name or <code>null</code> if\n boxShadow is not supported.",
             "type": "String|null",
-            "description": " boxShadow property name or <code>null</code> if\nboxShadow is not supported."
+            "description": " boxShadow property name or <code>null</code> if\n boxShadow is not supported."
           }
         ],
         "@internal": [
@@ -283,11 +283,11 @@
     "getBorderImage": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 124,
           "column": 5
         }
       },
@@ -295,15 +295,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>borderImage</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>borderImage</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} borderImage property name or <code>null</code> if\nborderImage is not supported.",
+            "body": "{String|null} borderImage property name or <code>null</code> if\n borderImage is not supported.",
             "type": "String|null",
-            "description": " borderImage property name or <code>null</code> if\nborderImage is not supported."
+            "description": " borderImage property name or <code>null</code> if\n borderImage is not supported."
           }
         ],
         "@internal": [
@@ -319,11 +319,11 @@
     "getBorderImageSyntax": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 137,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 166,
           "column": 5
         }
       },
@@ -331,15 +331,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the type of syntax this client supports for its CSS border-image\nimplementation. Some browsers do not support the \"fill\" keyword defined\nin the W3C draft (http://www.w3.org/TR/css3-background/) and will not\nshow the border image if it's set. Others follow the standard closely and\nwill omit the center image if \"fill\" is not set."
+            "body": "<p>Returns the type of syntax this client supports for its CSS border-image\n implementation. Some browsers do not support the \"fill\" keyword defined\n in the W3C draft (http://www.w3.org/TR/css3-background/) and will not\n show the border image if it's set. Others follow the standard closely and\n will omit the center image if \"fill\" is not set.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean|null} <code>true</code> if the standard syntax is supported.\n<code>null</code> if the supported syntax could not be detected.",
+            "body": "{Boolean|null} <code>true</code> if the standard syntax is supported.\n <code>null</code> if the supported syntax could not be detected.",
             "type": "Boolean|null",
-            "description": " <code>true</code> if the standard syntax is supported.\n<code>null</code> if the supported syntax could not be detected."
+            "description": " <code>true</code> if the standard syntax is supported.\n <code>null</code> if the supported syntax could not be detected."
           }
         ],
         "@internal": [
@@ -355,11 +355,11 @@
     "getUserSelect": {
       "location": {
         "start": {
-          "line": 174,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 176,
+          "line": 179,
           "column": 5
         }
       },
@@ -367,15 +367,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>userSelect</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>userSelect</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} userSelect property name or <code>null</code> if\nuserSelect is not supported.",
+            "body": "{String|null} userSelect property name or <code>null</code> if\n userSelect is not supported.",
             "type": "String|null",
-            "description": " userSelect property name or <code>null</code> if\nuserSelect is not supported."
+            "description": " userSelect property name or <code>null</code> if\n userSelect is not supported."
           }
         ],
         "@internal": [
@@ -391,11 +391,11 @@
     "getUserSelectNone": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 200,
           "column": 5
         }
       },
@@ -403,7 +403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) value for the\n<code>userSelect</code> style property that disables selection. For Gecko,\n\"-moz-none\" is returned since \"none\" only makes the target element appear\nas if its text could not be selected"
+            "body": "<p>Returns the (possibly vendor-prefixed) value for the\n <code>userSelect</code> style property that disables selection. For Gecko,\n \"-moz-none\" is returned since \"none\" only makes the target element appear\n as if its text could not be selected</p>"
           }
         ],
         "@internal": [
@@ -415,9 +415,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} the userSelect property value that disables\nselection or <code>null</code> if userSelect is not supported",
+            "body": "{String|null} the userSelect property value that disables\n selection or <code>null</code> if userSelect is not supported",
             "type": "String|null",
-            "description": " the userSelect property value that disables\nselection or <code>null</code> if userSelect is not supported"
+            "description": " the userSelect property value that disables\n selection or <code>null</code> if userSelect is not supported"
           }
         ]
       },
@@ -427,11 +427,11 @@
     "getUserModify": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 213,
           "column": 5
         }
       },
@@ -439,15 +439,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>userModify</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>userModify</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} userModify property name or <code>null</code> if\nuserModify is not supported.",
+            "body": "{String|null} userModify property name or <code>null</code> if\n userModify is not supported.",
             "type": "String|null",
-            "description": " userModify property name or <code>null</code> if\nuserModify is not supported."
+            "description": " userModify property name or <code>null</code> if\n userModify is not supported."
           }
         ],
         "@internal": [
@@ -463,11 +463,11 @@
     "getFloat": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 228,
           "column": 5
         }
       },
@@ -475,15 +475,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the vendor-specific name of the <code>float</code> style property"
+            "body": "<p>Returns the vendor-specific name of the <code>float</code> style property</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} <code>cssFloat</code> for standards-compliant\nbrowsers, <code>styleFloat</code> for legacy IEs, <code>null</code> if\nthe client supports neither property.",
+            "body": "{String|null} <code>cssFloat</code> for standards-compliant\n browsers, <code>styleFloat</code> for legacy IEs, <code>null</code> if\n the client supports neither property.",
             "type": "String|null",
-            "description": " <code>cssFloat</code> for standards-compliant\nbrowsers, <code>styleFloat</code> for legacy IEs, <code>null</code> if\nthe client supports neither property."
+            "description": " <code>cssFloat</code> for standards-compliant\n browsers, <code>styleFloat</code> for legacy IEs, <code>null</code> if\n the client supports neither property."
           }
         ],
         "@internal": [
@@ -499,11 +499,11 @@
     "getLinearGradient": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 263,
           "column": 5
         }
       },
@@ -511,15 +511,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name this client uses for\n<code>linear-gradient</code>.\nhttp://dev.w3.org/csswg/css3-images/#linear-gradients"
+            "body": "<p>Returns the (possibly vendor-prefixed) name this client uses for\n <code>linear-gradient</code>.\n http://dev.w3.org/csswg/css3-images/#linear-gradients</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} Prefixed linear-gradient name or <code>null</code>\nif linear gradients are not supported",
+            "body": "{String|null} Prefixed linear-gradient name or <code>null</code>\n if linear gradients are not supported",
             "type": "String|null",
-            "description": " Prefixed linear-gradient name or <code>null</code>\nif linear gradients are not supported"
+            "description": " Prefixed linear-gradient name or <code>null</code>\n if linear gradients are not supported"
           }
         ],
         "@internal": [
@@ -535,11 +535,11 @@
     "getFilterGradient": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 275,
           "column": 4
         },
         "end": {
-          "line": 276,
+          "line": 279,
           "column": 5
         }
       },
@@ -547,7 +547,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns <code>true</code> if the browser supports setting gradients\nusing the filter style. This usually only applies for IE browsers\nstarting from IE5.5.\nhttp://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx"
+            "body": "<p>Returns <code>true</code> if the browser supports setting gradients\n using the filter style. This usually only applies for IE browsers\n starting from IE5.5.\n http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx</p>"
           }
         ],
         "@return": [
@@ -571,11 +571,11 @@
     "getRadialGradient": {
       "location": {
         "start": {
-          "line": 287,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 300,
           "column": 5
         }
       },
@@ -583,15 +583,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name this client uses for\n<code>radial-gradient</code>."
+            "body": "<p>Returns the (possibly vendor-prefixed) name this client uses for\n <code>radial-gradient</code>.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} Prefixed radial-gradient name or <code>null</code>\nif radial gradients are not supported",
+            "body": "{String|null} Prefixed radial-gradient name or <code>null</code>\n if radial gradients are not supported",
             "type": "String|null",
-            "description": " Prefixed radial-gradient name or <code>null</code>\nif radial gradients are not supported"
+            "description": " Prefixed radial-gradient name or <code>null</code>\n if radial gradients are not supported"
           }
         ],
         "@internal": [
@@ -607,11 +607,11 @@
     "getLegacyWebkitGradient": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 311,
           "column": 4
         },
         "end": {
-          "line": 314,
+          "line": 317,
           "column": 5
         }
       },
@@ -619,7 +619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if **only** the old WebKit (version < 534.16) syntax for\nlinear gradients is supported, e.g.\n<code>linear-gradient(0deg, #fff, #000)</code>"
+            "body": "<p>Checks if <strong>only</strong> the old WebKit (version &lt; 534.16) syntax for\n linear gradients is supported, e.g.\n <code>linear-gradient(0deg, #fff, #000)</code></p>"
           }
         ],
         "@return": [
@@ -643,11 +643,11 @@
     "getRgba": {
       "location": {
         "start": {
-          "line": 323,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 343,
           "column": 5
         }
       },
@@ -655,7 +655,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if rgba colors can be used:\nhttp://www.w3.org/TR/2010/PR-css3-color-20101028/#rgba-color"
+            "body": "<p>Checks if rgba colors can be used:\n http://www.w3.org/TR/2010/PR-css3-color-20101028/#rgba-color</p>"
           }
         ],
         "@return": [
@@ -679,11 +679,11 @@
     "getBoxSizing": {
       "location": {
         "start": {
-          "line": 351,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 353,
+          "line": 356,
           "column": 5
         }
       },
@@ -691,15 +691,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the (possibly vendor-prefixed) name the browser uses for the\n<code>boxSizing</code> style property."
+            "body": "<p>Returns the (possibly vendor-prefixed) name the browser uses for the\n <code>boxSizing</code> style property.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} boxSizing property name or <code>null</code> if\nboxSizing is not supported.",
+            "body": "{String|null} boxSizing property name or <code>null</code> if\n boxSizing is not supported.",
             "type": "String|null",
-            "description": " boxSizing property name or <code>null</code> if\nboxSizing is not supported."
+            "description": " boxSizing property name or <code>null</code> if\n boxSizing is not supported."
           }
         ],
         "@internal": [
@@ -715,11 +715,11 @@
     "getInlineBlock": {
       "location": {
         "start": {
-          "line": 363,
+          "line": 366,
           "column": 4
         },
         "end": {
-          "line": 374,
+          "line": 377,
           "column": 5
         }
       },
@@ -727,7 +727,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the browser-specific name used for the <code>display</code> style\nproperty's <code>inline-block</code> value."
+            "body": "<p>Returns the browser-specific name used for the <code>display</code> style\n property's <code>inline-block</code> value.</p>"
           }
         ],
         "@internal": [
@@ -751,11 +751,11 @@
     "getOpacity": {
       "location": {
         "start": {
-          "line": 383,
+          "line": 386,
           "column": 4
         },
         "end": {
-          "line": 385,
+          "line": 388,
           "column": 5
         }
       },
@@ -763,7 +763,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if CSS opacity is supported"
+            "body": "<p>Checks if CSS opacity is supported</p>"
           }
         ],
         "@internal": [
@@ -787,11 +787,11 @@
     "getTextShadow": {
       "location": {
         "start": {
-          "line": 394,
+          "line": 397,
           "column": 4
         },
         "end": {
-          "line": 397,
+          "line": 400,
           "column": 5
         }
       },
@@ -799,7 +799,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if CSS texShadow is supported"
+            "body": "<p>Checks if CSS texShadow is supported</p>"
           }
         ],
         "@internal": [
@@ -823,11 +823,11 @@
     "getFilterTextShadow": {
       "location": {
         "start": {
-          "line": 408,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 413,
+          "line": 416,
           "column": 5
         }
       },
@@ -835,7 +835,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns <code>true</code> if the browser supports setting text shadow\nusing the filter style. This usually only applies for IE browsers\nstarting from IE5.5."
+            "body": "<p>Returns <code>true</code> if the browser supports setting text shadow\n using the filter style. This usually only applies for IE browsers\n starting from IE5.5.</p>"
           }
         ],
         "@internal": [
@@ -859,11 +859,11 @@
     "__isFilterSupported": {
       "location": {
         "start": {
-          "line": 423,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 442,
           "column": 5
         }
       },
@@ -871,7 +871,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given filter is supported."
+            "body": "<p>Checks if the given filter is supported.</p>"
           }
         ],
         "@param": [
@@ -905,11 +905,11 @@
     "getAlphaImageLoaderNeeded": {
       "location": {
         "start": {
-          "line": 447,
+          "line": 450,
           "column": 4
         },
         "end": {
-          "line": 451,
+          "line": 454,
           "column": 5
         }
       },
@@ -917,7 +917,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the Alpha Image Loader must be used to display transparent PNGs."
+            "body": "<p>Checks if the Alpha Image Loader must be used to display transparent PNGs.</p>"
           }
         ],
         "@return": [
@@ -935,11 +935,11 @@
     "getPointerEvents": {
       "location": {
         "start": {
-          "line": 460,
+          "line": 463,
           "column": 4
         },
         "end": {
-          "line": 476,
+          "line": 479,
           "column": 5
         }
       },
@@ -947,7 +947,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if pointer events are available."
+            "body": "<p>Checks if pointer events are available.</p>"
           }
         ],
         "@internal": [
@@ -971,11 +971,11 @@
     "getFlexboxSyntax": {
       "location": {
         "start": {
-          "line": 487,
+          "line": 490,
           "column": 4
         },
         "end": {
-          "line": 518,
+          "line": 521,
           "column": 5
         }
       },
@@ -983,7 +983,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns which Flexbox syntax is supported by the browser.\n<code>display: box;</code> old 2009 version of Flexbox.\n<code>display: flexbox;</code> tweener phase in 2011.\n<code>display: flex;</code> current specification."
+            "body": "<p>Returns which Flexbox syntax is supported by the browser.\n <code>display: box;</code> old 2009 version of Flexbox.\n <code>display: flexbox;</code> tweener phase in 2011.\n <code>display: flex;</code> current specification.</p>"
           }
         ],
         "@internal": [
@@ -1008,14 +1008,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 523,
-        "column": 2
+        "line": 526,
+        "column": 10
       },
       "end": {
-        "line": 549,
+        "line": 552,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

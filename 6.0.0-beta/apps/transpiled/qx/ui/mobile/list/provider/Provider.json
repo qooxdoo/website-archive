@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Provides a list item element for a certain row and its data.\nUses the {@link qx.ui.mobile.list.renderer.Default} list item renderer as a\ndefault renderer when no other renderer is given by the {@link qx.ui.mobile.list.List#delegate}."
+          "body": "<p>Provides a list item element for a certain row and its data.\n Uses the {@link qx.ui.mobile.list.renderer.Default} list item renderer as a\n default renderer when no other renderer is given by the {@link qx.ui.mobile.list.List#delegate}.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation object which can have one or more functions defined by the\n{@link qx.ui.mobile.list.IListDelegate} interface. Set by the list."
+            "body": "<p>Delegation object which can have one or more functions defined by the\n {@link qx.ui.mobile.list.IListDelegate} interface. Set by the list.</p>"
           }
         ],
         "@internal": [
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the item renderer."
+            "body": "<p>Sets the item renderer.</p>"
           }
         ],
         "@param": [
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set item renderer."
+            "body": "<p>Returns the set item renderer.</p>"
           }
         ],
         "@return": [
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the group renderer."
+            "body": "<p>Sets the group renderer.</p>"
           }
         ],
         "@param": [
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the group renderer."
+            "body": "<p>Gets the group renderer.</p>"
           }
         ],
         "@return": [
@@ -247,7 +247,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list item element for a given row."
+            "body": "<p>Returns the list item element for a given row.</p>"
           }
         ],
         "@param": [
@@ -293,7 +293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the group item element for a given row."
+            "body": "<p>Returns the group item element for a given row.</p>"
           }
         ],
         "@param": [
@@ -339,7 +339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure the list item renderer with the passed data."
+            "body": "<p>Configure the list item renderer with the passed data.</p>"
           }
         ],
         "@param": [
@@ -377,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures the group renderer with the passed group data."
+            "body": "<p>Configures the group renderer with the passed group data.</p>"
           }
         ],
         "@param": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an instance of the group renderer to use. When no delegate method\nis given the function will return an instance of {@link qx.ui.mobile.list.renderer.group.Default}."
+            "body": "<p>Creates an instance of the group renderer to use. When no delegate method\n is given the function will return an instance of {@link qx.ui.mobile.list.renderer.group.Default}.</p>"
           }
         ],
         "@return": [
@@ -445,7 +445,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an instance of the item renderer to use. When no delegate method\nis given the function will return an instance of {@link qx.ui.mobile.list.renderer.Default}."
+            "body": "<p>Creates an instance of the item renderer to use. When no delegate method\n is given the function will return an instance of {@link qx.ui.mobile.list.renderer.Default}.</p>"
           }
         ],
         "@return": [
@@ -475,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -676,13 +676,14 @@
     "location": {
       "start": {
         "line": 213,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 216,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

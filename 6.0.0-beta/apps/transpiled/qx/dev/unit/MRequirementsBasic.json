@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Adds support for verification of infrastructure requirements to unit test\nclasses."
+          "body": "<p>Adds support for verification of infrastructure requirements to unit test\n classes.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Verifies a list of infrastructure requirements by checking for\ncorresponding \"has\" methods. If no such method was found,\n{@link qx.core.Environment} will be checked for a key matching the given\nfeature name. Note that asynchronous environment checks are not supported!\n\nSee the manual for further details:\n<a href=\"http://manual.qooxdoo.org/current/pages/development/frame_apps_testrunner.html#defining-test-requirements\">Defining Test Requirements</a>"
+            "body": "<p>Verifies a list of infrastructure requirements by checking for\n corresponding \"has\" methods. If no such method was found,\n {@link qx.core.Environment} will be checked for a key matching the given\n feature name. Note that asynchronous environment checks are not supported!\n See the manual for further details:\n <a href=\"http://manual.qooxdoo.org/current/pages/development/frame_apps_testrunner.html#defining-test-requirements\">Defining Test Requirements</a></p>"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.dev.unit.RequirementError} if any requirement check returned\n<code>false</code>",
+            "body": "{qx.dev.unit.RequirementError} if any requirement check returned\n   <code>false</code>",
             "type": "qx.dev.unit.RequirementError",
-            "description": " if any requirement check returned\n<code>false</code>"
+            "description": " if any requirement check returned\n   <code>false</code>"
           },
           {
             "name": "@throws",

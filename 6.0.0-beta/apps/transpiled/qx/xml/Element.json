@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Cross browser XML Element API\n\nAPI to select, query and serialize XML elements.\n\nFurther information:\n\n* <a href=\"https://developer.mozilla.org/en-US/docs/Parsing_and_serializing_XML\">MDN Parsing and Serializing XML</a>\n\nPlease note that nodes selected using the <code>selectSingleNode()</code> and\n<code>selectNodes()</code> methods remain in their document context so\n<code>qx.xml.Element.selectNodes(foo, \"//bar\");</code>\nwill search the entire document for any nodes named \"bar\", not just the\n<code>foo</code> node."
+          "body": "<p>Cross browser XML Element API\n API to select, query and serialize XML elements.\n Further information:</p>\n<ul>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Parsing_and_serializing_XML\">MDN Parsing and Serializing XML</a>\nPlease note that nodes selected using the <code>selectSingleNode()</code> and\n<code>selectNodes()</code> methods remain in their document context so\n<code>qx.xml.Element.selectNodes(foo,\nwill search the entire document for any nodes named \"bar\", not just the\n<code>foo</code> node.</li>\n</ul>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Boolean} <code>true</code> if the native XMLSerializer should be used,\n<code>false</code> otherwise."
+            "body": "{Boolean} <code>true</code> if the native XMLSerializer should be used,\n <code>false</code> otherwise."
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The subtree rooted by the specified element or document is serialized to a string."
+            "body": "<p>The subtree rooted by the specified element or document is serialized to a string.</p>"
           }
         ],
         "@param": [
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the first XmlNode that matches the XPath expression."
+            "body": "<p>Selects the first XmlNode that matches the XPath expression.</p>"
           }
         ],
         "@param": [
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects a list of nodes matching the XPath expression."
+            "body": "<p>Selects a list of nodes matching the XPath expression.</p>"
           }
         ],
         "@param": [
@@ -243,15 +243,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of elements with the given tag name belonging to the given namespace\n\n(See\n<a href=\"https://developer.mozilla.org/en-US/docs/DOM/element.getElementsByTagNameNS\">MDN\nReference</a>)."
+            "body": "<p>Returns a list of elements with the given tag name belonging to the given namespace\n (See\n <a href=\"https://developer.mozilla.org/en-US/docs/DOM/element.getElementsByTagNameNS\">MDN\n Reference</a>).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "element {Element | Document} the element from where the search should start.\nNote that only the descendants of this element are included in the search, not the node itself.",
+            "body": "element {Element | Document} the element from where the search should start.\n       Note that only the descendants of this element are included in the search, not the node itself.",
             "paramName": "element",
-            "description": " the element from where the search should start.\nNote that only the descendants of this element are included in the search, not the node itself.",
+            "description": " the element from where the search should start.\n       Note that only the descendants of this element are included in the search, not the node itself.",
             "type": [
               "Element",
               "Document"
@@ -259,9 +259,9 @@
           },
           {
             "name": "@param",
-            "body": "namespaceURI {var} is the namespace URI of elements to look for . For example, if you need to look\nfor XHTML elements, use the XHTML namespace URI, <tt>http://www.w3.org/1999/xhtml/</tt>.",
+            "body": "namespaceURI {var} is the namespace URI of elements to look for . For example, if you need to look\n       for XHTML elements, use the XHTML namespace URI, <tt>http://www.w3.org/1999/xhtml/</tt>.",
             "paramName": "namespaceURI",
-            "description": " is the namespace URI of elements to look for . For example, if you need to look\nfor XHTML elements, use the XHTML namespace URI, <tt>http://www.w3.org/1999/xhtml/</tt>.",
+            "description": " is the namespace URI of elements to look for . For example, if you need to look\n       for XHTML elements, use the XHTML namespace URI, <tt>http://www.w3.org/1999/xhtml/</tt>.",
             "type": "var"
           },
           {
@@ -299,7 +299,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the first XmlNode that matches the XPath expression and returns the text content of the element"
+            "body": "<p>Selects the first XmlNode that matches the XPath expression and returns the text content of the element</p>"
           }
         ],
         "@param": [
@@ -348,15 +348,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds or sets an attribute with the given namespace on a node"
+            "body": "<p>Adds or sets an attribute with the given namespace on a node</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "document {Document} The node's parent document, created e.g. by\n{@link qx.xml.Document#create}",
+            "body": "document {Document} The node's parent document, created e.g. by\n {@link qx.xml.Document#create}",
             "paramName": "document",
-            "description": " The node's parent document, created e.g. by\n{@link qx.xml.Document#create}",
+            "description": " The node's parent document, created e.g. by\n {@link qx.xml.Document#create}",
             "type": "qx.xml.Document"
           },
           {
@@ -407,7 +407,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the value of the attribute with the given namespace and name"
+            "body": "<p>Get the value of the attribute with the given namespace and name</p>"
           }
         ],
         "@param": [
@@ -460,15 +460,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an element with the given namespace and appends it to an existing\nelement"
+            "body": "<p>Creates an element with the given namespace and appends it to an existing\n element</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "document {Document} The node's parent document, created e.g. by\n{@link qx.xml.Document#create}",
+            "body": "document {Document} The node's parent document, created e.g. by\n {@link qx.xml.Document#create}",
             "paramName": "document",
-            "description": " The node's parent document, created e.g. by\n{@link qx.xml.Document#create}",
+            "description": " The node's parent document, created e.g. by\n {@link qx.xml.Document#create}",
             "type": "qx.xml.Document"
           },
           {
@@ -510,7 +510,7 @@
     "location": {
       "start": {
         "line": 341,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 347,
@@ -521,7 +521,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

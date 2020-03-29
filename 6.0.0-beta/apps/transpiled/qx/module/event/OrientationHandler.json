@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Orientation handler which is responsible for registering and unregistering a\n{@link qx.event.handler.OrientationCore} handler for each given element."
+          "body": "<p>Orientation handler which is responsible for registering and unregistering a\n {@link qx.event.handler.OrientationCore} handler for each given element.</p>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of events that require an orientation handler"
+            "body": "<p>List of events that require an orientation handler</p>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an orientation handler for the given window when an\norientationchange event listener is attached to it"
+            "body": "<p>Creates an orientation handler for the given window when an\n orientationchange event listener is attached to it</p>"
           }
         ],
         "@param": [
@@ -112,7 +112,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the orientation event handler from the element if there are no more\norientationchange event listeners attached to it"
+            "body": "<p>Removes the orientation event handler from the element if there are no more\n orientationchange event listeners attached to it</p>"
           }
         ],
         "@param": [
@@ -133,13 +133,14 @@
     "location": {
       "start": {
         "line": 85,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 88,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

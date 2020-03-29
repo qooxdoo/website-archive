@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Double column renderer for {@link qx.ui.form.Form}."
+          "body": "<p>Double column renderer for {@link qx.ui.form.Form}.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 27,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "_row": {
@@ -87,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -113,7 +114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a group of form items with the corresponding names. The names are\ndisplayed as label.\nThe title is optional and is used as grouping for the given form\nitems."
+            "body": "<p>Add a group of form items with the corresponding names. The names are\n displayed as label.\n The title is optional and is used as grouping for the given form\n items.</p>"
           }
         ],
         "@param": [
@@ -164,7 +165,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a button the form renderer. All buttons will be added in a\nsingle row at the bottom of the form."
+            "body": "<p>Adds a button the form renderer. All buttons will be added in a\n single row at the bottom of the form.</p>"
           }
         ],
         "@param": [
@@ -200,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set layout for configuration."
+            "body": "<p>Returns the set layout for configuration.</p>"
           }
         ],
         "@return": [
@@ -230,15 +231,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a label for the given form item."
+            "body": "<p>Creates a label for the given form item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String} The content of the label without the\ntrailing * and :",
+            "body": "name {String} The content of the label without the\n   trailing * and :",
             "paramName": "name",
-            "description": " The content of the label without the\ntrailing * and :",
+            "description": " The content of the label without the\n   trailing * and :",
             "type": "String"
           },
           {
@@ -276,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a header label for the form groups."
+            "body": "<p>Creates a header label for the form groups.</p>"
           }
         ],
         "@param": [
@@ -3911,7 +3912,7 @@
     "location": {
       "start": {
         "line": 181,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 188,
@@ -3922,7 +3923,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

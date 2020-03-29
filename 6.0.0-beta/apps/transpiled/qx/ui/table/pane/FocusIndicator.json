@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The focus indicator widget"
+          "body": "<p>The focus indicator widget</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Table row, where the indicator is placed."
+            "body": "<p>Table row, where the indicator is placed.</p>"
           }
         ]
       },
@@ -130,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Table column, where the indicator is placed."
+            "body": "<p>Table column, where the indicator is placed.</p>"
           }
         ]
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Keypress handler. Suppress all key events but \"Enter\" and \"Escape\""
+            "body": "<p>Keypress handler. Suppress all key events but \"Enter\" and \"Escape\"</p>"
           }
         ],
         "@param": [
@@ -202,7 +202,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move the focus indicator to the given table cell."
+            "body": "<p>Move the focus indicator to the given table cell.</p>"
           }
         ],
         "@param": [
@@ -3850,13 +3850,14 @@
     "location": {
       "start": {
         "line": 142,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 144,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

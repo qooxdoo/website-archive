@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2009 Sebastian Werner, http://sebastian-werner.net\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n======================================================================\n\nThis class contains code based on the following work:\n\njQuery\nhttp://jquery.com\nVersion 1.3.1\n\nCopyright:\n2009 John Resig\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2009 Sebastian Werner, http://sebastian-werner.net\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n   ======================================================================\n   This class contains code based on the following work:\n jQuery\n     http://jquery.com\n     Version 1.3.1\n     Copyright:\n       2009 John Resig\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is mainly a convenience wrapper for DOM elements to\nqooxdoo's event system."
+          "body": "<p>This class is mainly a convenience wrapper for DOM elements to\n qooxdoo's event system.</p>"
         }
       ],
       "@ignore": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for XHTML replacement."
+            "body": "<p>Helper method for XHTML replacement.</p>"
           }
         ],
         "@param": [
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fixes \"XHTML\"-style tags in all browsers.\nReplaces tags which are not allowed to be closed directly such as\n<code>div</code> or <code>p</code>. They are patched to use opening and\nclosing tags instead, e.g. <code>&lt;p&gt;</code> => <code>&lt;p&gt;&lt;/p&gt;</code>"
+            "body": "<p>Fixes \"XHTML\"-style tags in all browsers.\n Replaces tags which are not allowed to be closed directly such as\n <code>div</code> or <code>p</code>. They are patched to use opening and\n closing tags instead, e.g. <code>&amp;lt;p&amp;gt;</code> =&gt; <code>&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;</code></p>"
           }
         ],
         "@param": [
@@ -173,7 +173,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translates a HTML string into an array of elements."
+            "body": "<p>Translates a HTML string into an array of elements.</p>"
           }
         ],
         "@param": [
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cleans-up the given HTML and append it to a fragment\n\nWhen no <code>context</code> is given the global document is used to\ncreate new DOM elements.\n\nWhen a <code>fragment</code> is given the nodes are appended to this\nfragment except the script tags. These are returned in a separate Array.\n\nPlease note: HTML coming from user input must be validated prior\nto passing it to this method. HTML is temporarily inserted to the DOM\nusing <code>innerHTML</code>. As a consequence, scripts included in\nattribute event handlers may be executed."
+            "body": "<p>Cleans-up the given HTML and append it to a fragment\n When no <code>context</code> is given the global document is used to\n create new DOM elements.\n When a <code>fragment</code> is given the nodes are appended to this\n fragment except the script tags. These are returned in a separate Array.\n Please note: HTML coming from user input must be validated prior\n to passing it to this method. HTML is temporarily inserted to the DOM\n using <code>innerHTML</code>. As a consequence, scripts included in\n attribute event handlers may be executed.</p>"
           }
         ],
         "@param": [
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extracts script elements from an element list. Optionally\nattaches them to a given document fragment"
+            "body": "<p>Extracts script elements from an element list. Optionally\n attaches them to a given document fragment</p>"
           }
         ],
         "@param": [

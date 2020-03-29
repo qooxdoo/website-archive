@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDavid Perez (david-perez)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n David Perez (david-perez)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Resizer is a resizable container widget.\n\nIt allows to be resized (not moved), normally in\nthe right and/or bottom directions. It is an alternative to splitters.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar resizer = new qx.ui.container.Resizer().set({\nwidth: 200,\nheight: 100\n});\n\nresizer.setLayout(new qx.ui.layout.Canvas());\nvar text = new qx.ui.form.TextArea(\"Resize me\\nI'm resizable\");\nresizer.add(text, {edge: 0});\n\nthis.getRoot().add(resizer);\n</pre>\n\nThis example creates a resizer, configures it with a canvas layout and\nadds a text area to it.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/resizer.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The Resizer is a resizable container widget.\n It allows to be resized (not moved), normally in\n the right and/or bottom directions. It is an alternative to splitters.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var resizer = new qx.ui.container.Resizer().set({\n     width: 200,\n     height: 100\n   });\n   resizer.setLayout(new qx.ui.layout.Canvas());\n   var text = new qx.ui.form.TextArea(\"Resize me\\nI'm resizable\");\n   resizer.add(text, {edge: 0});\n   this.getRoot().add(resizer);\n </pre>\n<p>This example creates a resizer, configures it with a canvas layout and\n adds a text area to it.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/resizer.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -141,11 +141,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCORE FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CORE FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the widget, which draws the resize/move frame. The resize frame is\nshared by all widgets and is added to the root widget."
+            "body": "<p>Get the widget, which draws the resize/move frame. The resize frame is\n shared by all widgets and is added to the root widget.</p>"
           }
         ],
         "@return": [
@@ -179,11 +179,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESIZE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESIZE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the new boundaries at each interval\nof the resize sequence."
+            "body": "<p>Computes the new boundaries at each interval\n of the resize sequence.</p>"
           }
         ],
         "@param": [
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the internally stored resize mode"
+            "body": "<p>Updates the internally stored resize mode</p>"
           }
         ],
         "@param": [
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for computing the proper resize action based on the\ngiven parameters."
+            "body": "<p>Internal helper for computing the proper resize action based on the\n given parameters.</p>"
           }
         ],
         "@param": [
@@ -298,11 +298,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESIZE EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESIZE EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the pointer down event"
+            "body": "<p>Event handler for the pointer down event</p>"
           }
         ],
         "@param": [
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer up event"
+            "body": "<p>Event handler for the pointer up event</p>"
           }
         ],
         "@param": [
@@ -354,7 +354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>losecapture</code> event."
+            "body": "<p>Event listener for <code>losecapture</code> event.</p>"
           }
         ],
         "@param": [
@@ -380,7 +380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer move event"
+            "body": "<p>Event handler for the pointer move event</p>"
           }
         ],
         "@param": [
@@ -406,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the pointer out event"
+            "body": "<p>Event handler for the pointer out event</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This validation manager is responsible for validation of forms."
+          "body": "<p>This validation manager is responsible for validation of forms.</p>"
         }
       ],
       "@ignore": [
@@ -45,13 +45,14 @@
     "location": {
       "start": {
         "line": 28,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "changeValid": {
@@ -69,7 +70,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change event for the valid state."
+            "body": "<p>Change event for the valid state.</p>"
           }
         ]
       },
@@ -91,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Signals that the validation is done. This is not needed on synchronous\nvalidation (validation is done right after the call) but very important\nin the case an asynchronous validator will be used."
+            "body": "<p>Signals that the validation is done. This is not needed on synchronous\n validation (validation is done right after the call) but very important\n in the case an asynchronous validator will be used.</p>"
           }
         ]
       },
@@ -115,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The validator of the form itself. You can set a function (for\nsynchronous validation) or a {@link qx.ui.form.validation.AsyncValidator}.\nIn both cases, the function can have all added form items as first\nargument and the manager as a second argument. The manager should be used\nto set the {@link #invalidMessage}.\n\nKeep in mind that the validator is optional if you don't need the\nvalidation in the context of the whole form."
+            "body": "<p>The validator of the form itself. You can set a function (for\n synchronous validation) or a {@link qx.ui.form.validation.AsyncValidator}.\n In both cases, the function can have all added form items as first\n argument and the manager as a second argument. The manager should be used\n to set the {@link #invalidMessage}.\n Keep in mind that the validator is optional if you don't need the\n validation in the context of the whole form.</p>"
           }
         ],
         "@type": [
@@ -146,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The invalid message should store the message why the form validation\nfailed. It will be added to the array returned by\n{@link #getInvalidMessages}."
+            "body": "<p>The invalid message should store the message why the form validation\n failed. It will be added to the array returned by\n {@link #getInvalidMessages}.</p>"
           }
         ]
       },
@@ -171,7 +172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This message will be shown if a required field is empty and no individual\n{@link qx.ui.form.MForm#requiredInvalidMessage} is given."
+            "body": "<p>This message will be shown if a required field is empty and no individual\n {@link qx.ui.form.MForm#requiredInvalidMessage} is given.</p>"
           }
         ]
       },
@@ -196,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The context for the form validation."
+            "body": "<p>The context for the form validation.</p>"
           }
         ]
       },
@@ -294,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a form item to the validation manager.\n\nThe form item has to implement at least two interfaces:\n<ol>\n<li>The {@link qx.ui.form.IForm} Interface</li>\n<li>One of the following interfaces:\n<ul>\n<li>{@link qx.ui.form.IBooleanForm}</li>\n<li>{@link qx.ui.form.IColorForm}</li>\n<li>{@link qx.ui.form.IDateForm}</li>\n<li>{@link qx.ui.form.INumberForm}</li>\n<li>{@link qx.ui.form.IStringForm}</li>\n</ul>\n</li>\n</ol>\nThe validator can be a synchronous or asynchronous validator. In\nboth cases the validator can either returns a boolean or fire an\n{@link qx.core.ValidationError}. For synchronous validation, a plain\nJavaScript function should be used. For all asynchronous validations,\na {@link qx.ui.form.validation.AsyncValidator} is needed to wrap the\nplain function."
+            "body": "<p>Add a form item to the validation manager.\n The form item has to implement at least two interfaces:\n </p>\n<ol>\n   <li>The {@link qx.ui.form.IForm} Interface</li>\n   <li>One of the following interfaces:\n     <ul>\n       <li>{@link qx.ui.form.IBooleanForm}</li>\n       <li>{@link qx.ui.form.IColorForm}</li>\n       <li>{@link qx.ui.form.IDateForm}</li>\n       <li>{@link qx.ui.form.INumberForm}</li>\n       <li>{@link qx.ui.form.IStringForm}</li>\n     </ul>\n   </li>\n </ol>\n<p>The validator can be a synchronous or asynchronous validator. In\n both cases the validator can either returns a boolean or fire an\n {@link qx.core.ValidationError}. For synchronous validation, a plain\n JavaScript function should be used. For all asynchronous validations,\n a {@link qx.ui.form.validation.AsyncValidator} is needed to wrap the\n plain function.</p>"
           }
         ],
         "@param": [
@@ -307,9 +308,9 @@
           },
           {
             "name": "@param",
-            "body": "validator {Function | qx.ui.form.validation.AsyncValidator}\nThe validator.",
+            "body": "validator {Function | qx.ui.form.validation.AsyncValidator}\n   The validator.",
             "paramName": "validator",
-            "description": "\nThe validator.",
+            "description": "\n   The validator.",
             "type": [
               "Function",
               "qx.ui.form.validation.AsyncValidator"
@@ -344,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a form item from the validation manager."
+            "body": "<p>Remove a form item from the validation manager.</p>"
           }
         ],
         "@param": [
@@ -359,9 +360,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget?null} The removed form item or\n<code>null</code> if the item could not be found.",
+            "body": "{qx.ui.core.Widget?null} The removed form item or\n  <code>null</code> if the item could not be found.",
             "type": "qx.ui.core.Widget?null",
-            "description": " The removed form item or\n<code>null</code> if the item could not be found."
+            "description": " The removed form item or\n  <code>null</code> if the item could not be found."
           }
         ]
       },
@@ -383,7 +384,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns registered form items from the validation manager."
+            "body": "<p>Returns registered form items from the validation manager.</p>"
           }
         ],
         "@return": [
@@ -413,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invokes the validation. If only synchronous validators are set, the\nresult of the whole validation is available at the end of the method\nand can be returned. If an asynchronous validator is set, the result\nis still unknown at the end of this method so nothing will be returned.\nIn both cases, a {@link #complete} event will be fired if the validation\nhas ended. The result of the validation can then be accessed with the\n{@link #getValid} method."
+            "body": "<p>Invokes the validation. If only synchronous validators are set, the\n result of the whole validation is available at the end of the method\n and can be returned. If an asynchronous validator is set, the result\n is still unknown at the end of this method so nothing will be returned.\n In both cases, a {@link #complete} event will be fired if the validation\n has ended. The result of the validation can then be accessed with the\n {@link #getValid} method.</p>"
           }
         ],
         "@return": [
@@ -443,7 +444,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the form item is required. If so, the value is checked\nand the result will be returned. If the form item is not required, true\nwill be returned."
+            "body": "<p>Checks if the form item is required. If so, the value is checked\n and the result will be returned. If the form item is not required, true\n will be returned.</p>"
           }
         ],
         "@param": [
@@ -482,7 +483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates a form item. This method handles the differences of\nsynchronous and asynchronous validation and returns the result of the\nvalidation if possible (synchronous cases). If the validation is\nasynchronous, null will be returned."
+            "body": "<p>Validates a form item. This method handles the differences of\n synchronous and asynchronous validation and returns the result of the\n validation if possible (synchronous cases). If the validation is\n asynchronous, null will be returned.</p>"
           }
         ],
         "@param": [
@@ -504,9 +505,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean|null} Validation result or <code>null</code> for async\nvalidation",
+            "body": "{Boolean|null} Validation result or <code>null</code> for async\n validation",
             "type": "Boolean|null",
-            "description": " Validation result or <code>null</code> for async\nvalidation"
+            "description": " Validation result or <code>null</code> for async\n validation"
           }
         ]
       },
@@ -528,7 +529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates the form. It checks for asynchronous validation and handles\nthe differences to synchronous validation. If no form validator is given,\ntrue will be returned. If a synchronous validator is given, the\nvalidation result will be returned. In asynchronous cases, null will be\nreturned cause the result is not available."
+            "body": "<p>Validates the form. It checks for asynchronous validation and handles\n the differences to synchronous validation. If no form validator is given,\n true will be returned. If a synchronous validator is given, the\n validation result will be returned. In asynchronous cases, null will be\n returned cause the result is not available.</p>"
           }
         ],
         "@param": [
@@ -567,15 +568,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function which checks, if the given validator is synchronous\nor asynchronous."
+            "body": "<p>Helper function which checks, if the given validator is synchronous\n or asynchronous.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "validator {Function|qx.ui.form.validation.AsyncValidator}\nThe validator to check.",
+            "body": "validator {Function|qx.ui.form.validation.AsyncValidator}\n   The validator to check.",
             "paramName": "validator",
-            "description": "\nThe validator to check.",
+            "description": "\n   The validator to check.",
             "type": [
               "Function",
               "qx.ui.form.validation.AsyncValidator"
@@ -609,7 +610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns true, if the given item implements the {@link qx.ui.form.IForm}\ninterface."
+            "body": "<p>Returns true, if the given item implements the {@link qx.ui.form.IForm}\n interface.</p>"
           }
         ],
         "@param": [
@@ -624,9 +625,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if the given item implements the\nnecessary interface.",
+            "body": "{Boolean} true, if the given item implements the\n   necessary interface.",
             "type": "Boolean",
-            "description": " true, if the given item implements the\nnecessary interface."
+            "description": " true, if the given item implements the\n   necessary interface."
           }
         ]
       },
@@ -648,7 +649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns true, if the given item implements the\n{@link qx.ui.core.ISingleSelection} interface."
+            "body": "<p>Returns true, if the given item implements the\n {@link qx.ui.core.ISingleSelection} interface.</p>"
           }
         ],
         "@param": [
@@ -663,9 +664,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if the given item implements the\nnecessary interface.",
+            "body": "{Boolean} true, if the given item implements the\n   necessary interface.",
             "type": "Boolean",
-            "description": " true, if the given item implements the\nnecessary interface."
+            "description": " true, if the given item implements the\n   necessary interface."
           }
         ]
       },
@@ -687,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns true, if the given item implements the\n{@link qx.data.controller.ISelection} interface."
+            "body": "<p>Returns true, if the given item implements the\n {@link qx.data.controller.ISelection} interface.</p>"
           }
         ],
         "@param": [
@@ -702,9 +703,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if the given item implements the\nnecessary interface.",
+            "body": "{Boolean} true, if the given item implements the\n   necessary interface.",
             "type": "Boolean",
-            "description": " true, if the given item implements the\nnecessary interface."
+            "description": " true, if the given item implements the\n   necessary interface."
           }
         ]
       },
@@ -726,7 +727,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the valid state of the manager. It generates the event if\nnecessary and stores the new value."
+            "body": "<p>Sets the valid state of the manager. It generates the event if\n necessary and stores the new value.</p>"
           }
         ],
         "@param": [
@@ -760,7 +761,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for showing a tooltip in case the validation is done for\nwidgets based on qx.ui.core.Widget."
+            "body": "<p>Responsible for showing a tooltip in case the validation is done for\n widgets based on qx.ui.core.Widget.</p>"
           }
         ],
         "@param": [
@@ -791,7 +792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the manager."
+            "body": "<p>Returns the valid state of the manager.</p>"
           }
         ],
         "@return": [
@@ -821,7 +822,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the manager."
+            "body": "<p>Returns the valid state of the manager.</p>"
           }
         ],
         "@return": [
@@ -851,7 +852,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of all invalid messages of the invalid form items and\nthe form manager itself."
+            "body": "<p>Returns an array of all invalid messages of the invalid form items and\n the form manager itself.</p>"
           }
         ],
         "@return": [
@@ -881,7 +882,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects invalid form items"
+            "body": "<p>Selects invalid form items</p>"
           }
         ],
         "@return": [
@@ -911,7 +912,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the validator."
+            "body": "<p>Resets the validator.</p>"
           }
         ],
         "@param": [
@@ -947,7 +948,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method to set the given item to valid for asynchronous\nvalidation calls. This indirection is used to determinate if the\nvalidation process is completed or if other asynchronous validators\nare still validating. {@link #__checkValidationComplete} checks if the\nvalidation is complete and will be called at the end of this method."
+            "body": "<p>Internal helper method to set the given item to valid for asynchronous\n validation calls. This indirection is used to determinate if the\n validation process is completed or if other asynchronous validators\n are still validating. {@link #__checkValidationComplete} checks if the\n validation is complete and will be called at the end of this method.</p>"
           }
         ],
         "@param": [
@@ -991,7 +992,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method to set the form manager to valid for asynchronous\nvalidation calls. This indirection is used to determinate if the\nvalidation process is completed or if other asynchronous validators\nare still validating. {@link #__checkValidationComplete} checks if the\nvalidation is complete and will be called at the end of this method."
+            "body": "<p>Internal helper method to set the form manager to valid for asynchronous\n validation calls. This indirection is used to determinate if the\n validation process is completed or if other asynchronous validators\n are still validating. {@link #__checkValidationComplete} checks if the\n validation is complete and will be called at the end of this method.</p>"
           }
         ],
         "@param": [
@@ -1028,7 +1029,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if all asynchronous validators have validated so the result\nis final and the {@link #complete} event can be fired. If that's not\nthe case, nothing will happen in the method."
+            "body": "<p>Checks if all asynchronous validators have validated so the result\n is final and the {@link #complete} event can be fired. If that's not\n the case, nothing will happen in the method.</p>"
           }
         ]
       },
@@ -1424,7 +1425,7 @@
     "location": {
       "start": {
         "line": 676,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 680,
@@ -1435,7 +1436,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

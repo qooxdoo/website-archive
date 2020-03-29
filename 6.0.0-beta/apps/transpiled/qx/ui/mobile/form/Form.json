@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Representation of a form. A form widget can contain one or more {@link Row} widgets.\n\n*Example*\n\nHere is an example of how to use the widget.\n\n<pre class='javascript'>\nvar title = new qx.ui.mobile.form.Title(\"Group\");\nvar form = new qx.ui.mobile.form.Form();\nform.add(new qx.ui.mobile.form.TextField(), \"Username: \");\n\nthis.getRoot().add(title);\nthis.getRoot().add(new qx.ui.mobile.form.renderer.Single(form));\n</pre>\n\nThis example creates a form and adds a row with a text field in it."
+          "body": "<p>Representation of a form. A form widget can contain one or more {@link Row} widgets.\n<em>Example</em>\n Here is an example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var title = new qx.ui.mobile.form.Title(\"Group\");\n   var form = new qx.ui.mobile.form.Form();\n   form.add(new qx.ui.mobile.form.TextField(), \"Username: \");\n   this.getRoot().add(title);\n   this.getRoot().add(new qx.ui.mobile.form.renderer.Single(form));\n </pre>\n<p>This example creates a form and adds a row with a text field in it.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "the renderer this form uses to be displayed"
+            "body": "<p>the renderer this form uses to be displayed</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Contains all invalid items."
+            "body": "<p>Contains all invalid items.</p>"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the renderer private variable"
+            "body": "<p>Setter for the renderer private variable</p>"
           }
         ],
         "@param": [
@@ -142,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates the form using the\n{@link qx.ui.form.validation.Manager#validate} method."
+            "body": "<p>Validates the form using the\n {@link qx.ui.form.validation.Manager#validate} method.</p>"
           }
         ],
         "@lint": [
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Makes a row visible, identified by its group and row index."
+            "body": "<p>Makes a row visible, identified by its group and row index.</p>"
           }
         ],
         "@param": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Makes a row invisible, identified by its group and row index."
+            "body": "<p>Makes a row invisible, identified by its group and row index.</p>"
           }
         ],
         "@param": [
@@ -258,7 +258,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the item with the given group and rowIndex."
+            "body": "<p>Gets the item with the given group and rowIndex.</p>"
           }
         ],
         "@param": [
@@ -304,7 +304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid items of the form, which were determined by {@link qx.ui.mobile.form.Form#validate} before.\nIt returns an empty array if no items are invalid."
+            "body": "<p>Returns the invalid items of the form, which were determined by {@link qx.ui.mobile.form.Form#validate} before.\n It returns an empty array if no items are invalid.</p>"
           }
         ],
         "@return": [

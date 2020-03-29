@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Creates a gesture handler that fires high-level events such as \"swipe\"\nbased on low-level event sequences on the given element"
+          "body": "<p>Creates a gesture handler that fires high-level events such as \"swipe\"\n based on low-level event sequences on the given element</p>"
         }
       ],
       "@require": [
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a gesture handler for the given element when a gesture event listener\nis attached to it"
+            "body": "<p>Creates a gesture handler for the given element when a gesture event listener\n is attached to it</p>"
           }
         ],
         "@param": [
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the gesture event handler from the element if there are no more\ngesture event listeners attached to it"
+            "body": "<p>Removes the gesture event handler from the element if there are no more\n gesture event listeners attached to it</p>"
           }
         ],
         "@param": [
@@ -138,13 +138,14 @@
     "location": {
       "start": {
         "line": 80,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 83,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

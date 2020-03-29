@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Basis for Aspect Oriented features in qooxdoo.\n\nThis class makes it possible to attach functions (aspects) before or\nafter each function call of any function defined in {@link qx.Class#define}.\n\nClasses, which define own aspects must add an explicit require to this class\nin the header comment using the following code:\n\n<pre>\n&#35;require(qx.core.Aspect)\n&#35;ignore(auto-require)\n</pre>\n\nOne example for a qooxdoo aspect is profiling ({@link qx.dev.Profile})."
+          "body": "<p>Basis for Aspect Oriented features in qooxdoo.\n This class makes it possible to attach functions (aspects) before or\n after each function call of any function defined in {@link qx.Class#define}.\n Classes, which define own aspects must add an explicit require to this class\n in the header comment using the following code:\n </p>\n<pre>\n &#35;require(qx.core.Aspect)\n &#35;ignore(auto-require)\n </pre>\n<p>One example for a qooxdoo aspect is profiling ({@link qx.dev.Profile}).</p>"
         }
       ]
     }
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This function is used by {@link qx.Class#define} to wrap all statics, members and\nconstructors."
+            "body": "<p>This function is used by {@link qx.Class#define} to wrap all statics, members and\n constructors.</p>"
           }
         ],
         "@param": [
@@ -95,9 +95,9 @@
           },
           {
             "name": "@param",
-            "body": "type {String} Type of the wrapped function. One of \"member\", \"static\",\n\"constructor\", \"destructor\" or \"property\".",
+            "body": "type {String} Type of the wrapped function. One of \"member\", \"static\",\n          \"constructor\", \"destructor\" or \"property\".",
             "paramName": "type",
-            "description": " Type of the wrapped function. One of \"member\", \"static\",\n\"constructor\", \"destructor\" or \"property\".",
+            "description": " Type of the wrapped function. One of \"member\", \"static\",\n          \"constructor\", \"destructor\" or \"property\".",
             "type": "String"
           }
         ],
@@ -128,40 +128,40 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Register a function to be called just before or after each time\none of the selected functions is called."
+            "body": "<p>Register a function to be called just before or after each time\n one of the selected functions is called.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "fcn {Function} Function to be called just before or after any of the\nselected functions is called. If position is \"before\" the functions\nsupports the same signature as {@link qx.dev.Profile#profileBefore}. If\nposition is \"after\" it supports the same signature as\n{@link qx.dev.Profile#profileAfter}.",
+            "body": "fcn {Function} Function to be called just before or after any of the\n     selected functions is called. If position is \"before\" the functions\n     supports the same signature as {@link qx.dev.Profile#profileBefore}. If\n     position is \"after\" it supports the same signature as\n     {@link qx.dev.Profile#profileAfter}.",
             "paramName": "fcn",
-            "description": " Function to be called just before or after any of the\nselected functions is called. If position is \"before\" the functions\nsupports the same signature as {@link qx.dev.Profile#profileBefore}. If\nposition is \"after\" it supports the same signature as\n{@link qx.dev.Profile#profileAfter}.",
+            "description": " Function to be called just before or after any of the\n     selected functions is called. If position is \"before\" the functions\n     supports the same signature as {@link qx.dev.Profile#profileBefore}. If\n     position is \"after\" it supports the same signature as\n     {@link qx.dev.Profile#profileAfter}.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "position {String?\"after\"} One of \"before\" or \"after\". Whether the function\nshould be called before or after the wrapped function.",
+            "body": "position {String?\"after\"} One of \"before\" or \"after\". Whether the function\n     should be called before or after the wrapped function.",
             "paramName": "position",
-            "description": " One of \"before\" or \"after\". Whether the function\nshould be called before or after the wrapped function.",
+            "description": " One of \"before\" or \"after\". Whether the function\n     should be called before or after the wrapped function.",
             "optional": true,
             "defaultValue": "\"after\"",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "type {String?null} Type of the wrapped function. One of \"member\",\n\"static\", \"constructor\", \"destructor\", \"property\" or \"*\". <code>null</code>\nis handled identical to \"*\".",
+            "body": "type {String?null} Type of the wrapped function. One of \"member\",\n     \"static\", \"constructor\", \"destructor\", \"property\" or \"*\". <code>null</code>\n     is handled identical to \"*\".",
             "paramName": "type",
-            "description": " Type of the wrapped function. One of \"member\",\n\"static\", \"constructor\", \"destructor\", \"property\" or \"*\". <code>null</code>\nis handled identical to \"*\".",
+            "description": " Type of the wrapped function. One of \"member\",\n     \"static\", \"constructor\", \"destructor\", \"property\" or \"*\". <code>null</code>\n     is handled identical to \"*\".",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "name {String|RegExp?null} Each function, with a full name matching\nthis pattern (using <code>fullName.match(name)</code>) will be\nwrapped.",
+            "body": "name {String|RegExp?null} Each function, with a full name matching\n     this pattern (using <code>fullName.match(name)</code>) will be\n     wrapped.",
             "paramName": "name",
-            "description": " Each function, with a full name matching\nthis pattern (using <code>fullName.match(name)</code>) will be\nwrapped.",
+            "description": " Each function, with a full name matching\n     this pattern (using <code>fullName.match(name)</code>) will be\n     wrapped.",
             "optional": true,
             "defaultValue": "null",
             "type": [

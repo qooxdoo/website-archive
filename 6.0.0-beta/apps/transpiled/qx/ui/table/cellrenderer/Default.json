@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The default data cell renderer."
+          "body": "<p>The default data cell renderer.</p>"
         }
       ]
     }
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the alignment should automatically be set according to the cell value.\nIf true numbers will be right-aligned."
+            "body": "<p>Whether the alignment should automatically be set according to the cell value.\n If true numbers will be right-aligned.</p>"
           }
         ]
       },
@@ -132,15 +132,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines the styles to apply to the cell"
+            "body": "<p>Determines the styles to apply to the cell</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} cellInfo of the cell\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} cellInfo of the cell\n     See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " cellInfo of the cell\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " cellInfo of the cell\n     See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -214,15 +214,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -257,15 +257,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Formats a value."
+            "body": "<p>Formats a value.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate. This map has the same structure as in\n{@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n          create. This map has the same structure as in\n          {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate. This map has the same structure as in\n{@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " A map containing the information about the cell to\n          create. This map has the same structure as in\n          {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],

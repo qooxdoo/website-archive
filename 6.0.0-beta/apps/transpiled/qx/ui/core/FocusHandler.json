@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Each focus root delegates the focus handling to instances of the FocusHandler."
+          "body": "<p>Each focus root delegates the focus handling to instances of the FocusHandler.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 37,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 43,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -126,7 +126,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Connects to a top-level root element (which initially receives\nall events of the root). This are normally all page and application\nroots, but no inline roots (they are typically sitting inside\nanother root)."
+            "body": "<p>Connects to a top-level root element (which initially receives\n all events of the root). This are normally all page and application\n roots, but no inline roots (they are typically sitting inside\n another root).</p>"
           }
         ],
         "@param": [
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers a widget as a focus root. A focus root comes\nwith an separate tab sequence handling."
+            "body": "<p>Registers a widget as a focus root. A focus root comes\n with an separate tab sequence handling.</p>"
           }
         ],
         "@param": [
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deregisters a previous added widget."
+            "body": "<p>Deregisters a previous added widget.</p>"
           }
         ],
         "@param": [
@@ -219,15 +219,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the active widget"
+            "body": "<p>Get the active widget</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget|null} The active widget or <code>null</code>\nif no widget is active",
+            "body": "{qx.ui.core.Widget|null} The active widget or <code>null</code>\n    if no widget is active",
             "type": "qx.ui.core.Widget|null",
-            "description": " The active widget or <code>null</code>\nif no widget is active"
+            "description": " The active widget or <code>null</code>\n    if no widget is active"
           }
         ]
       },
@@ -249,7 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widget is the active one"
+            "body": "<p>Whether the given widget is the active one</p>"
           }
         ],
         "@param": [
@@ -288,15 +288,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the focused widget"
+            "body": "<p>Get the focused widget</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget|null} The focused widget or <code>null</code>\nif no widget has the focus",
+            "body": "{qx.ui.core.Widget|null} The focused widget or <code>null</code>\n    if no widget has the focus",
             "type": "qx.ui.core.Widget|null",
-            "description": " The focused widget or <code>null</code>\nif no widget has the focus"
+            "description": " The focused widget or <code>null</code>\n    if no widget has the focus"
           }
         ]
       },
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widget is the focused one."
+            "body": "<p>Whether the given widget is the focused one.</p>"
           }
         ],
         "@param": [
@@ -357,7 +357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widgets acts as a focus root."
+            "body": "<p>Whether the given widgets acts as a focus root.</p>"
           }
         ],
         "@param": [
@@ -396,11 +396,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Internal event handler for activate event."
+            "body": "<p>Internal event handler for activate event.</p>"
           }
         ],
         "@param": [
@@ -431,7 +431,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event handler for deactivate event."
+            "body": "<p>Internal event handler for deactivate event.</p>"
           }
         ],
         "@param": [
@@ -462,7 +462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event handler for focusin event."
+            "body": "<p>Internal event handler for focusin event.</p>"
           }
         ],
         "@param": [
@@ -493,7 +493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event handler for focusout event."
+            "body": "<p>Internal event handler for focusout event.</p>"
           }
         ],
         "@param": [
@@ -524,7 +524,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event handler for TAB key."
+            "body": "<p>Internal event handler for TAB key.</p>"
           }
         ],
         "@param": [
@@ -555,11 +555,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Finds the next focus root, starting with the given widget."
+            "body": "<p>Finds the next focus root, starting with the given widget.</p>"
           }
         ],
         "@param": [
@@ -574,9 +574,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget|null} The focus root for the given widget or\n<code>true</code> if no focus root could be found",
+            "body": "{qx.ui.core.Widget|null} The focus root for the given widget or\n <code>true</code> if no focus root could be found",
             "type": "qx.ui.core.Widget|null",
-            "description": " The focus root for the given widget or\n<code>true</code> if no focus root could be found"
+            "description": " The focus root for the given widget or\n <code>true</code> if no focus root could be found"
           }
         ]
       },
@@ -598,11 +598,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTAB SUPPORT IMPLEMENTATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TAB SUPPORT IMPLEMENTATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Compares the order of two widgets"
+            "body": "<p>Compares the order of two widgets</p>"
           }
         ],
         "@param": [
@@ -624,9 +624,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} A sort() compatible integer with values\nsmall than 0, exactly 0 or bigger than 0.",
+            "body": "{Integer} A sort() compatible integer with values\n   small than 0, exactly 0 or bigger than 0.",
             "type": "Integer",
-            "description": " A sort() compatible integer with values\nsmall than 0, exactly 0 or bigger than 0."
+            "description": " A sort() compatible integer with values\n   small than 0, exactly 0 or bigger than 0."
           }
         ]
       },
@@ -648,15 +648,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the first widget."
+            "body": "<p>Returns the first widget.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget} Returns the first (positioned) widget from\nthe current root.",
+            "body": "{qx.ui.core.Widget} Returns the first (positioned) widget from\n    the current root.",
             "type": "qx.ui.core.Widget",
-            "description": " Returns the first (positioned) widget from\nthe current root."
+            "description": " Returns the first (positioned) widget from\n    the current root."
           }
         ]
       },
@@ -678,15 +678,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the last widget."
+            "body": "<p>Returns the last widget.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget} Returns the last (positioned) widget from\nthe current root.",
+            "body": "{qx.ui.core.Widget} Returns the last (positioned) widget from\n    the current root.",
             "type": "qx.ui.core.Widget",
-            "description": " Returns the last (positioned) widget from\nthe current root."
+            "description": " Returns the last (positioned) widget from\n    the current root."
           }
         ]
       },
@@ -708,7 +708,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget after the given one."
+            "body": "<p>Returns the widget after the given one.</p>"
           }
         ],
         "@param": [
@@ -747,7 +747,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget before the given one."
+            "body": "<p>Returns the widget before the given one.</p>"
           }
         ],
         "@param": [
@@ -786,11 +786,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL API USED BY METHODS ABOVE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL API USED BY METHODS ABOVE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Collects all widgets which are after the given widget in\nthe given parent widget. Append all found children to the\n<code>list</code>."
+            "body": "<p>Collects all widgets which are after the given widget in\n the given parent widget. Append all found children to the\n <code>list</code>.</p>"
           }
         ],
         "@param": [
@@ -835,7 +835,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all widgets which are before the given widget in\nthe given parent widget. Append all found children to the\n<code>list</code>."
+            "body": "<p>Collects all widgets which are before the given widget in\n the given parent widget. Append all found children to the\n <code>list</code>.</p>"
           }
         ],
         "@param": [
@@ -880,7 +880,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Find first (positioned) widget. (Sorted by coordinates, zIndex, etc.)"
+            "body": "<p>Find first (positioned) widget. (Sorted by coordinates, zIndex, etc.)</p>"
           }
         ],
         "@param": [
@@ -928,7 +928,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Find last (positioned) widget. (Sorted by coordinates, zIndex, etc.)"
+            "body": "<p>Find last (positioned) widget. (Sorted by coordinates, zIndex, etc.)</p>"
           }
         ],
         "@param": [
@@ -1086,7 +1086,7 @@
     "location": {
       "start": {
         "line": 611,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 615,
@@ -1097,7 +1097,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

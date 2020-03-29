@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A selection manager, which handles the selection in widgets."
+          "body": "<p>A selection manager, which handles the selection in widgets.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 37,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -94,11 +94,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBASIC SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BASIC SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -184,7 +184,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to return the selectability of the item concerning the\nuser interaction."
+            "body": "<p>Helper to return the selectability of the item concerning the\n user interaction.</p>"
           }
         ],
         "@param": [
@@ -324,7 +324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the connected widget."
+            "body": "<p>Returns the connected widget.</p>"
           }
         ],
         "@return": [
@@ -354,19 +354,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDIMENSION AND LOCATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DIMENSION AND LOCATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>.",
+            "body": "{Map} Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>.",
             "type": "Map",
-            "description": " Map with the keys <code>top</code>, <code>right</code>,\n<code>bottom</code> and <code>left</code>."
+            "description": " Map with the keys <code>top</code>, <code>right</code>,\n    <code>bottom</code> and <code>left</code>."
           }
         ]
       },
@@ -392,7 +392,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -426,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -512,11 +512,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -592,7 +592,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -627,19 +627,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nQUERY SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  QUERY SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -674,7 +674,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -724,7 +724,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -758,7 +758,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -792,7 +792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -805,9 +805,9 @@
           },
           {
             "name": "@param",
-            "body": "relation {String} A valid relation: <code>above</code>,\n<code>right</code>, <code>under</code> or <code>left</code>",
+            "body": "relation {String} A valid relation: <code>above</code>,\n    <code>right</code>, <code>under</code> or <code>left</code>",
             "paramName": "relation",
-            "description": " A valid relation: <code>above</code>,\n<code>right</code>, <code>under</code> or <code>left</code>",
+            "description": " A valid relation: <code>above</code>,\n    <code>right</code>, <code>under</code> or <code>left</code>",
             "type": "String"
           }
         ],
@@ -842,7 +842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -855,9 +855,9 @@
           },
           {
             "name": "@param",
-            "body": "up {Boolean?false} Which page key was pressed:\n<code>up</code> or <code>down</code>.",
+            "body": "up {Boolean?false} Which page key was pressed:\n   <code>up</code> or <code>down</code>.",
             "paramName": "up",
-            "description": " Which page key was pressed:\n<code>up</code> or <code>down</code>.",
+            "description": " Which page key was pressed:\n   <code>up</code> or <code>down</code>.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1229,7 +1229,7 @@
     "location": {
       "start": {
         "line": 364,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 366,
@@ -1240,7 +1240,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

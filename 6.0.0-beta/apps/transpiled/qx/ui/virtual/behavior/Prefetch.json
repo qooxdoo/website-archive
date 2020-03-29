@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 26,
         "column": 0
       },
       "end": {
-        "line": 240,
+        "line": 239,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Behavior to support pre-rendering of invisible areas of a virtual scroller.\nIf applied to a scroller it will start a timer and increase the rendered area\nof the scroller after a certain period of time. Subsequent scrolling will not\nhave to render this pre-computed area again.\n\nEXPERIMENTAL!"
+          "body": "<p>Behavior to support pre-rendering of invisible areas of a virtual scroller.\n If applied to a scroller it will start a timer and increase the rendered area\n of the scroller after a certain period of time. Subsequent scrolling will not\n have to render this pre-computed area again.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 54,
-        "column": 2
+        "line": 53,
+        "column": 14
       },
       "end": {
-        "line": 81,
+        "line": 80,
         "column": 3
       }
     },
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -63,9 +63,9 @@
         },
         {
           "name": "@param",
-          "body": "settings {Map} This map contains minimum and maximum pixels to\nprefetch near the view port.\n<ul>\n<li>minLeft: minimum pixels to prefetch left to the view port</li>\n<li>maxLeft: maximum pixels to prefetch left to the view port</li>\n<li>minRight: minimum pixels to prefetch right to the view port</li>\n<li>maxRight: maximum pixels to prefetch right to the view port</li>\n<li>minAbove: minimum pixels to prefetch above the view port</li>\n<li>maxAbove: maximum pixels to prefetch above the view port</li>\n<li>minBelow: minimum pixels to prefetch below the view port</li>\n<li>maxBelow: maximum pixels to prefetch below the view port</li>\n</ul>",
+          "body": "settings {Map} This map contains minimum and maximum pixels to\n prefetch near the view port.\n <ul>\n   <li>minLeft: minimum pixels to prefetch left to the view port</li>\n   <li>maxLeft: maximum pixels to prefetch left to the view port</li>\n   <li>minRight: minimum pixels to prefetch right to the view port</li>\n   <li>maxRight: maximum pixels to prefetch right to the view port</li>\n   <li>minAbove: minimum pixels to prefetch above the view port</li>\n   <li>maxAbove: maximum pixels to prefetch above the view port</li>\n   <li>minBelow: minimum pixels to prefetch below the view port</li>\n   <li>maxBelow: maximum pixels to prefetch below the view port</li>\n </ul>",
           "paramName": "settings",
-          "description": " This map contains minimum and maximum pixels to\nprefetch near the view port.\n<ul>\n<li>minLeft: minimum pixels to prefetch left to the view port</li>\n<li>maxLeft: maximum pixels to prefetch left to the view port</li>\n<li>minRight: minimum pixels to prefetch right to the view port</li>\n<li>maxRight: maximum pixels to prefetch right to the view port</li>\n<li>minAbove: minimum pixels to prefetch above the view port</li>\n<li>maxAbove: maximum pixels to prefetch above the view port</li>\n<li>minBelow: minimum pixels to prefetch below the view port</li>\n<li>maxBelow: maximum pixels to prefetch below the view port</li>\n</ul>",
+          "description": " This map contains minimum and maximum pixels to\n prefetch near the view port.\n <ul>\n   <li>minLeft: minimum pixels to prefetch left to the view port</li>\n   <li>maxLeft: maximum pixels to prefetch left to the view port</li>\n   <li>minRight: minimum pixels to prefetch right to the view port</li>\n   <li>maxRight: maximum pixels to prefetch right to the view port</li>\n   <li>minAbove: minimum pixels to prefetch above the view port</li>\n   <li>maxAbove: maximum pixels to prefetch above the view port</li>\n   <li>minBelow: minimum pixels to prefetch below the view port</li>\n   <li>maxBelow: maximum pixels to prefetch below the view port</li>\n </ul>",
           "type": "Map"
         }
       ]
@@ -75,11 +75,11 @@
     "scroller": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 92,
           "column": 5
         },
         "end": {
-          "line": 99,
+          "line": 98,
           "column": 6
         }
       },
@@ -107,11 +107,11 @@
     "interval": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 101,
           "column": 5
         },
         "end": {
-          "line": 107,
+          "line": 106,
           "column": 6
         }
       },
@@ -157,11 +157,11 @@
     "__prefetchX": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 118,
           "column": 22
         }
       },
@@ -171,11 +171,11 @@
     "__prefetchY": {
       "location": {
         "start": {
-          "line": 120,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 120,
+          "line": 119,
           "column": 22
         }
       },
@@ -185,11 +185,11 @@
     "__timer": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 120,
           "column": 18
         }
       },
@@ -199,11 +199,11 @@
     "__onScrollXId": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 121,
           "column": 24
         }
       },
@@ -213,11 +213,11 @@
     "__onScrollYId": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 122,
           "column": 24
         }
       },
@@ -227,11 +227,11 @@
     "setPrefetchX": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 134,
           "column": 5
         }
       },
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure horizontal prefetching"
+            "body": "<p>Configure horizontal prefetching</p>"
           }
         ],
         "@param": [
@@ -279,11 +279,11 @@
     "setPrefetchY": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 147,
           "column": 5
         }
       },
@@ -291,7 +291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure vertical prefetching"
+            "body": "<p>Configure vertical prefetching</p>"
           }
         ],
         "@param": [
@@ -331,11 +331,11 @@
     "_onInterval": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 153,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 168,
           "column": 5
         }
       },
@@ -343,7 +343,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update prefetching"
+            "body": "<p>Update prefetching</p>"
           }
         ]
       },
@@ -353,11 +353,11 @@
     "_applyScroller": {
       "location": {
         "start": {
-          "line": 173,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 218,
           "column": 5
         }
       },
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -378,11 +378,11 @@
     "_applyInterval": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 224,
           "column": 5
         }
       },
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -656,11 +656,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 234,
-        "column": 2
+        "line": 233,
+        "column": 13
       },
       "end": {
-        "line": 239,
+        "line": 238,
         "column": 3
       }
     },
@@ -668,7 +668,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

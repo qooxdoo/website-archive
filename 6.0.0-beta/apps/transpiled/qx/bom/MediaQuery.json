@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRomeo Kenfack Tsakem (rkenfack)\n\n======================================================================\n\nThis class contains code from:\n\nCopyright:\n2012 WebLinc LLC, David Knight\n\nLicense:\nBSD: https://raw.github.com/weblinc/media-match/master/LICENSE.txt\n\n----------------------------------------------------------------------\n\nCopyright (c) 2012 WebLinc LLC\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n http://qooxdoo.org\n Copyright:\n 2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n License:\n     MIT: https://opensource.org/licenses/MIT\n See the LICENSE file in the project's top-level directory for details.\n Authors:\n Romeo Kenfack Tsakem (rkenfack)\n ======================================================================\n This class contains code from:\n Copyright:\n 2012 WebLinc LLC, David Knight\n License:\n BSD: https://raw.github.com/weblinc/media-match/master/LICENSE.txt</p>\n<hr />\n<p>Copyright (c) 2012 WebLinc LLC\n Permission is hereby granted, free of charge, to any person obtaining a copy\n of this software and associated documentation files (the \"Software\"), to deal\n in the Software without restriction, including without limitation the rights\n to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n copies of the Software, and to permit persons to whom the Software is\n furnished to do so, subject to the following conditions:\n The above copyright notice and this permission notice shall be included in\n all copies or substantial portions of the Software.\n THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n THE SOFTWARE.\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is to test css media queries. It implements a polyfill for\nwindow.matchMedia if not supported natively."
+          "body": "<p>This class is to test css media queries. It implements a polyfill for\n window.matchMedia if not supported natively.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 62,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 67,
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires each time the media query state changes. The event data is a map\nwith two keys:\n\n**query** The media query string\n\n**matches** A boolean that indicates whether the document\nmatches the query"
+            "body": "<p>Fires each time the media query state changes. The event data is a map\n with two keys:\n    <em>query</em>* The media query string\n    <em>matches</em>* A boolean that indicates whether the document\n matches the query</p>"
           }
         ]
       },
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The media.match.js version"
+            "body": "<p>The media.match.js version</p>"
           }
         ]
       },
@@ -124,7 +124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The mediaquery Listener"
+            "body": "<p>The mediaquery Listener</p>"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates if the document currently matches the media query list"
+            "body": "<p>Indicates if the document currently matches the media query list</p>"
           }
         ]
       },
@@ -168,7 +168,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The mediaquery list to be evaluated"
+            "body": "<p>The mediaquery list to be evaluated</p>"
           }
         ]
       },
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the query string used to initialize the listener."
+            "body": "<p>Returns the query string used to initialize the listener.</p>"
           }
         ],
         "@return": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Access the matching state of the media query."
+            "body": "<p>Access the matching state of the media query.</p>"
           }
         ],
         "@return": [
@@ -250,7 +250,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the mediaquery listener"
+            "body": "<p>Initialize the mediaquery listener</p>"
           }
         ]
       },
@@ -272,7 +272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback for mediaqueries changes"
+            "body": "<p>Callback for mediaqueries changes</p>"
           }
         ]
       },
@@ -284,13 +284,14 @@
     "location": {
       "start": {
         "line": 144,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 479,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

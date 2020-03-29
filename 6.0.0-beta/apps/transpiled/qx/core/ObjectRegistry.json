@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 362,
+        "line": 338,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Registration for all instances of qooxdoo classes. Mainly\nused to manage them for the final shutdown sequence and to\nuse weak references when connecting widgets to DOM nodes etc."
+          "body": "<p>Registration for all instances of qooxdoo classes. Mainly\n used to manage them for the final shutdown sequence and to\n use weak references when connecting widgets to DOM nodes etc.</p>"
         }
       ],
       "@ignore": [
@@ -128,42 +128,14 @@
       "type": "variable",
       "access": "private"
     },
-    "__freeHashes": {
-      "location": {
-        "start": {
-          "line": 49,
-          "column": 4
-        },
-        "end": {
-          "line": 49,
-          "column": 21
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": ""
-          }
-        ],
-        "@type": [
-          {
-            "name": "@type",
-            "body": "{Array} List of all free hash codes"
-          }
-        ]
-      },
-      "type": "variable",
-      "access": "private"
-    },
     "__postId": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 49,
           "column": 17
         }
       },
@@ -187,11 +159,11 @@
     "__stackTraces": {
       "location": {
         "start": {
-          "line": 55,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 55,
+          "line": 52,
           "column": 22
         }
       },
@@ -215,11 +187,11 @@
     "register": {
       "location": {
         "start": {
-          "line": 69,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 82,
           "column": 5
         }
       },
@@ -227,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers an object into the database. This adds a hashcode\nto the object (if not already done before) and stores it under\nthis hashcode. You can access this object later using the hashcode\nby calling {@link #fromHashCode}.\n\nAll registered objects are automatically disposed on application\nshutdown. Each registered object must at least have a method\ncalled <code>dispose</code>."
+            "body": "<p>Registers an object into the database. This adds a hashcode\n to the object (if not already done before) and stores it under\n this hashcode. You can access this object later using the hashcode\n by calling {@link #fromHashCode}.\n All registered objects are automatically disposed on application\n shutdown. Each registered object must at least have a method\n called <code>dispose</code>.</p>"
           }
         ],
         "@param": [
@@ -246,11 +218,11 @@
     "unregister": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 90,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 104,
           "column": 5
         }
       },
@@ -258,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given object from the database."
+            "body": "<p>Removes the given object from the database.</p>"
           }
         ],
         "@param": [
@@ -277,11 +249,11 @@
     "toHashCode": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 174,
+          "line": 140,
           "column": 5
         }
       },
@@ -289,7 +261,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an unique identifier for the given object. If such an identifier\ndoes not yet exist, create it."
+            "body": "<p>Returns an unique identifier for the given object. If such an identifier\n does not yet exist, create it.</p>"
           }
         ],
         "@param": [
@@ -313,14 +285,14 @@
       "type": "function",
       "access": "public"
     },
-    "clearHashCode": {
+    "createHashCode": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 151,
           "column": 5
         }
       },
@@ -328,7 +300,37 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the unique identifier on the given object."
+            "body": "<p>Creates a hash code</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String}",
+            "type": "String",
+            "description": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "clearHashCode": {
+      "location": {
+        "start": {
+          "line": 159,
+          "column": 4
+        },
+        "end": {
+          "line": 186,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Clears the unique identifier on the given object.</p>"
           }
         ],
         "@param": [
@@ -347,11 +349,11 @@
     "fromHashCode": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 204,
           "column": 5
         }
       },
@@ -359,7 +361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an object instance by its hash code as returned by {@link #toHashCode}.\nIf the object is already disposed or the hashCode is invalid,\n<code>null</code> is returned."
+            "body": "<p>Get an object instance by its hash code as returned by {@link #toHashCode}.\n If the object is already disposed or the hashCode is invalid,\n <code>null</code> is returned.</p>"
           }
         ],
         "@param": [
@@ -394,11 +396,11 @@
     "hasHashCode": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 214,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 216,
           "column": 5
         }
       },
@@ -406,7 +408,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether an object instance is indexed by its hash code as returned by {@link #toHashCode}.\nUnlike {@link #fromHashCode} this does not output warnings if the object does not exist"
+            "body": "<p>Detects whether an object instance is indexed by its hash code as returned by {@link #toHashCode}.\n Unlike {@link #fromHashCode} this does not output warnings if the object does not exist</p>"
           }
         ],
         "@param": [
@@ -433,11 +435,11 @@
     "shutdown": {
       "location": {
         "start": {
-          "line": 251,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 300,
+          "line": 276,
           "column": 5
         }
       },
@@ -445,13 +447,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disposing all registered object and cleaning up registry. This is\nautomatically executed at application shutdown."
+            "body": "<p>Disposing all registered object and cleaning up registry. This is\n automatically executed at application shutdown.</p>"
           }
         ],
         "@deprecated": [
           {
             "name": "@deprecated",
-            "body": "{6.0} shutdown is not a valid means to clean up because destruction order\nis not defined and dispose()/destructors are deprecated in favour of automatic\ngarbage collection"
+            "body": "{6.0} shutdown is not a valid means to clean up because destruction order\n is not defined and dispose()/destructors are deprecated in favour of automatic\n garbage collection"
           }
         ]
       },
@@ -461,11 +463,11 @@
     "getRegistry": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 284,
           "column": 4
         },
         "end": {
-          "line": 310,
+          "line": 286,
           "column": 5
         }
       },
@@ -473,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the object registry."
+            "body": "<p>Returns the object registry.</p>"
           }
         ],
         "@return": [
@@ -491,11 +493,11 @@
     "getNextHash": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 321,
+          "line": 297,
           "column": 5
         }
       },
@@ -503,7 +505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the next hash code that will be used"
+            "body": "<p>Returns the next hash code that will be used.</p>"
           }
         ],
         "@return": [
@@ -527,11 +529,11 @@
     "getPostId": {
       "location": {
         "start": {
-          "line": 330,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 332,
+          "line": 308,
           "column": 5
         }
       },
@@ -539,7 +541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the postfix that identifies the current iframe"
+            "body": "<p>Returns the postfix that identifies the current iframe</p>"
           }
         ],
         "@return": [
@@ -563,11 +565,11 @@
     "getStackTraces": {
       "location": {
         "start": {
-          "line": 341,
+          "line": 317,
           "column": 4
         },
         "end": {
-          "line": 343,
+          "line": 319,
           "column": 5
         }
       },
@@ -575,7 +577,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the map of stack traces recorded when objects are registered\n(for dispose profiling)"
+            "body": "<p>Returns the map of stack traces recorded when objects are registered\n (for dispose profiling)</p>"
           }
         ],
         "@return": [
@@ -600,14 +602,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 346,
-        "column": 2
+        "line": 322,
+        "column": 10
       },
       "end": {
-        "line": 361,
+        "line": 337,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

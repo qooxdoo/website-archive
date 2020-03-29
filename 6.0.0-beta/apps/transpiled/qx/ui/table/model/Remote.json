@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A table model that loads its data from a backend.\n<p>\nOnly a subset of the available rows, those which are within or near the\ncurrently visible area, are loaded. If a quick scroll operation occurs,\nrows will soon be displayed using asynchronous loading in the background.\nAll loaded data is managed through a cache which automatically removes\nthe oldest used rows when it gets full.\n<p>\nThis class is abstract: The actual loading of row data must be done by\nsubclasses."
+          "body": "<p>A table model that loads its data from a backend.\n <p>\n Only a subset of the available rows, those which are within or near the\n currently visible area, are loaded. If a quick scroll operation occurs,\n rows will soon be displayed using asynchronous loading in the background.\n All loaded data is managed through a cache which automatically removes\n the oldest used rows when it gets full.\n <p>\n This class is abstract: The actual loading of row data must be done by\n subclasses.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 73,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -70,7 +70,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The number of rows that are stored in one cache block."
+            "body": "<p>The number of rows that are stored in one cache block.</p>"
           }
         ]
       },
@@ -95,7 +95,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum number of row blocks kept in the cache."
+            "body": "<p>The maximum number of row blocks kept in the cache.</p>"
           }
         ]
       },
@@ -120,7 +120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to clear the cache when some rows are removed.\nIf true the rows are removed locally in the cache."
+            "body": "<p>Whether to clear the cache when some rows are removed.\n If true the rows are removed locally in the cache.</p>"
           }
         ]
       },
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to block remote requests for the row count while a request for\nthe row count is pending. Row counts are requested at various times and\nfrom various parts of the code, resulting in numerous requests to the\nuser-provided _loadRowCount() method, often while other requests are\nalready pending. The default behavior now ignores requests to load a\nnew row count if such a request is already pending. It is therefore now\nconceivable that the row count changes between an initial request for\nthe row count and a later (ignored) request. Since the chance of this\nis low, the desirability of reducing the server requests outweighs the\nslight possibility of an altered count (which will, by the way, be\ndetected soon thereafter upon the next request for the row count). If\nthe old behavior is desired, set this property to false."
+            "body": "<p>Whether to block remote requests for the row count while a request for\n the row count is pending. Row counts are requested at various times and\n from various parts of the code, resulting in numerous requests to the\n user-provided _loadRowCount() method, often while other requests are\n already pending. The default behavior now ignores requests to load a\n new row count if such a request is already pending. It is therefore now\n conceivable that the row count changes between an initial request for\n the row count and a later (ignored) request. Since the chance of this\n is low, the desirability of reducing the server requests outweighs the\n slight possibility of an altered count (which will, by the way, be\n detected soon thereafter upon the next request for the row count). If\n the old behavior is desired, set this property to false.</p>"
           }
         ]
       },
@@ -384,7 +384,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the current request is ignored by the model."
+            "body": "<p>Returns whether the current request is ignored by the model.</p>"
           }
         ],
         "@return": [
@@ -414,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -449,7 +449,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Implementing classes have to call {@link #_onRowCountLoaded} when the\nserver response arrived. That method has to be called! Even when there\nwas an error."
+            "body": "<p>Implementing classes have to call {@link #_onRowCountLoaded} when the\n server response arrived. That method has to be called! Even when there\n was an error.</p>"
           }
         ],
         "@abstract": [
@@ -485,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the row count.\n\nHas to be called by {@link #_loadRowCount}."
+            "body": "<p>Sets the row count.\n Has to be called by {@link #_loadRowCount}.</p>"
           }
         ],
         "@param": [
@@ -516,7 +516,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reloads the model and clears the local cache."
+            "body": "<p>Reloads the model and clears the local cache.</p>"
           }
         ]
       },
@@ -538,7 +538,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the cache."
+            "body": "<p>Clears the cache.</p>"
           }
         ]
       },
@@ -560,7 +560,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current state of the cache.\n<p>\nDo not change anything in the returned data. This breaks the model state.\nUse this method only together with {@link #restoreCacheContent} for backing\nup state for a later restore."
+            "body": "<p>Returns the current state of the cache.\n <p>\n Do not change anything in the returned data. This breaks the model state.\n Use this method only together with {@link #restoreCacheContent} for backing\n up state for a later restore.</p>"
           }
         ],
         "@return": [
@@ -590,7 +590,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restores a cache state created by {@link #getCacheContent}."
+            "body": "<p>Restores a cache state created by {@link #getCacheContent}.</p>"
           }
         ],
         "@param": [
@@ -621,7 +621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cancels the current request if possible.\n\nShould be overridden by subclasses if they are able to cancel requests. This\nallows sending a new request directly after a call of {@link #reloadData}."
+            "body": "<p>Cancels the current request if possible.\n Should be overridden by subclasses if they are able to cancel requests. This\n allows sending a new request directly after a call of {@link #reloadData}.</p>"
           }
         ],
         "@return": [
@@ -651,7 +651,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Iterates through all cached rows.\n\nThe iterator will be called for each cached row with two parameters: The row\nindex of the current row (Integer) and the row data of that row (var[]). If\nthe iterator returns something this will be used as new row data.\n\nThe iterator is called in the same order as the rows are in the model\n(the row index is always ascending)."
+            "body": "<p>Iterates through all cached rows.\n The iterator will be called for each cached row with two parameters: The row\n index of the current row (Integer) and the row data of that row (var[]). If\n the iterator returns something this will be used as new row data.\n The iterator is called in the same order as the rows are in the model\n (the row index is always ascending).</p>"
           }
         ],
         "@param": [
@@ -689,7 +689,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -732,7 +732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads some row data from the server.\n\nImplementing classes have to call {@link #_onRowDataLoaded} when the server\nresponse arrived. That method has to be called! Even when there was an error."
+            "body": "<p>Loads some row data from the server.\n Implementing classes have to call {@link #_onRowDataLoaded} when the server\n response arrived. That method has to be called! Even when there was an error.</p>"
           }
         ],
         "@abstract": [
@@ -784,7 +784,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets row data.\n\nHas to be called by {@link #_loadRowData}."
+            "body": "<p>Sets row data.\n Has to be called by {@link #_loadRowData}.</p>"
           }
         ],
         "@param": [
@@ -815,7 +815,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the data of one block."
+            "body": "<p>Sets the data of one block.</p>"
           }
         ],
         "@param": [
@@ -853,7 +853,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a row from the model."
+            "body": "<p>Removes a row from the model.</p>"
           }
         ],
         "@param": [
@@ -884,7 +884,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "See overridden method for details."
+            "body": "<p>See overridden method for details.</p>"
           }
         ],
         "@param": [
@@ -928,7 +928,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -971,7 +971,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1021,7 +1021,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets all columns editable or not editable."
+            "body": "<p>Sets all columns editable or not editable.</p>"
           }
         ],
         "@param": [
@@ -1052,7 +1052,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a column is editable."
+            "body": "<p>Sets whether a column is editable.</p>"
           }
         ],
         "@param": [
@@ -1090,7 +1090,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1134,7 +1134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a column is sortable."
+            "body": "<p>Sets whether a column is sortable.</p>"
           }
         ],
         "@param": [
@@ -1172,7 +1172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1216,7 +1216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1259,7 +1259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1294,7 +1294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1329,7 +1329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the sorted column without sorting the data.\nUse this method, if you want to mark the column as the sorted column,\n(e.g. for appearance reason), but the sorting of the data will be done\nin another step."
+            "body": "<p>Sets the sorted column without sorting the data.\n Use this method, if you want to mark the column as the sorted column,\n (e.g. for appearance reason), but the sorting of the data will be done\n in another step.</p>"
           }
         ],
         "@param": [
@@ -1360,15 +1360,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the direction of the sorting without sorting the data.\nUse this method, if you want to set the direction of sorting, (e.g\nfor appearance reason), but the sorting of the data will be done in\nanother step."
+            "body": "<p>Sets the direction of the sorting without sorting the data.\n Use this method, if you want to set the direction of sorting, (e.g\n for appearance reason), but the sorting of the data will be done in\n another step.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sortAscending {Boolean} whether the sorting direction is ascending\n(true) or not (false).",
+            "body": "sortAscending {Boolean} whether the sorting direction is ascending\n        (true) or not (false).",
             "paramName": "sortAscending",
-            "description": " whether the sorting direction is ascending\n(true) or not (false).",
+            "description": " whether the sorting direction is ascending\n        (true) or not (false).",
             "type": "Boolean"
           }
         ]
@@ -1813,13 +1813,14 @@
     "location": {
       "start": {
         "line": 909,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 911,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qxl.demobrowser.demo.table.RemoteTableModel"

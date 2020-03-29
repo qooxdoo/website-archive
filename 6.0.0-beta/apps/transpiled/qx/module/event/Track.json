@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Normalization for the track gesture. This gesture is based on <a href=\"#Pointer\">Pointer events</a>,\nmeaning that it's available on all devices, no matter which input device type is used (e.g. mouse or\ntouchscreen)."
+          "body": "<p>Normalization for the track gesture. This gesture is based on <a href=\"#Pointer\">Pointer events</a>,\n meaning that it's available on all devices, no matter which input device type is used (e.g. mouse or\n touchscreen).</p>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of event types to be normalized"
+            "body": "<p>List of event types to be normalized</p>"
           }
         ]
       },
@@ -95,15 +95,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map with the calculated delta coordinates and axis,\nrelative to the position on <code>trackstart</code> event."
+            "body": "<p>Returns a map with the calculated delta coordinates and axis,\n relative to the position on <code>trackstart</code> event.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} a map with contains the delta as <code>x</code> and\n<code>y</code> and the movement axis as <code>axis</code>.",
+            "body": "{Map} a map with contains the delta as <code>x</code> and\n <code>y</code> and the movement axis as <code>axis</code>.",
             "type": "Map",
-            "description": " a map with contains the delta as <code>x</code> and\n<code>y</code> and the movement axis as <code>axis</code>."
+            "description": " a map with contains the delta as <code>x</code> and\n <code>y</code> and the movement axis as <code>axis</code>."
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manipulates the native event object, adding methods if they're not\nalready present"
+            "body": "<p>Manipulates the native event object, adding methods if they're not\n already present</p>"
           }
         ],
         "@param": [
@@ -167,13 +167,14 @@
     "location": {
       "start": {
         "line": 78,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 80,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is responsible for converting json data to class instances\nincluding the creation of the classes.\nTo retrieve the native data of created models use the methods\ndescribed in {@link qx.util.Serializer}."
+          "body": "<p>This class is responsible for converting json data to class instances\n including the creation of the classes.\n To retrieve the native data of created models use the methods\n   described in {@link qx.util.Serializer}.</p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 34,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 39,
@@ -54,9 +54,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "delegate {Object} An object containing one of the methods described\nin {@link qx.data.marshal.IMarshalerDelegate}.",
+          "body": "delegate {Object} An object containing one of the methods described\n   in {@link qx.data.marshal.IMarshalerDelegate}.",
           "paramName": "delegate",
-          "description": " An object containing one of the methods described\nin {@link qx.data.marshal.IMarshalerDelegate}.",
+          "description": " An object containing one of the methods described\n   in {@link qx.data.marshal.IMarshalerDelegate}.",
           "type": "Object"
         }
       ]
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a qooxdoo object based on the given json data. This function\nis just a static wrapper. If you want to configure the creation\nprocess of the class, use {@link qx.data.marshal.Json} directly."
+            "body": "<p>Creates a qooxdoo object based on the given json data. This function\n is just a static wrapper. If you want to configure the creation\n process of the class, use {@link qx.data.marshal.Json} directly.</p>"
           }
         ],
         "@param": [
@@ -105,9 +105,9 @@
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean} Whether the model should support\nthe bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should support\nthe bubbling of change events or not.",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
             "type": "Boolean"
           }
         ],
@@ -138,7 +138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Legacy json hash method used as default in Qooxdoo < v6.0.\nYou can go back to the old behaviour like this:\n\n<code>\nvar marshaller = new qx.data.marshal.Json({\ngetJsonHash: qx.data.marshal.Json.legacyJsonHash\n});\n</code>"
+            "body": "<p>Legacy json hash method used as default in Qooxdoo &lt; v6.0.\n You can go back to the old behaviour like this:\n <code>\n  var marshaller = new qx.data.marshal.Json({\n   getJsonHash: qx.data.marshal.Json.legacyJsonHash\n  });\n </code></p>"
           }
         ]
       },
@@ -176,22 +176,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a given object into a hash which will be used to identify the\nclasses under the namespace <code>qx.data.model</code>."
+            "body": "<p>Converts a given object into a hash which will be used to identify the\n classes under the namespace <code>qx.data.model</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "data {Object} The JavaScript object from which the hash is\nrequired.",
+            "body": "data {Object} The JavaScript object from which the hash is\n   required.",
             "paramName": "data",
-            "description": " The JavaScript object from which the hash is\nrequired.",
+            "description": " The JavaScript object from which the hash is\n   required.",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean?false} Whether the model should\nsupport the bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean?false} Whether the model should\n   support the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should\nsupport the bubbling of change events or not.",
+            "description": " Whether the model should\n   support the bubbling of change events or not.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -224,22 +224,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the \"most enhanced\" hash for a given object.  That is the hash for\nthe class that is most feature rich in respect of the bubble event\nfeature. If there are two equal classes available (defined), one with\nand one without the bubble event feature, this method will return the\nhash of the class that includes the bubble event."
+            "body": "<p>Get the \"most enhanced\" hash for a given object.  That is the hash for\n the class that is most feature rich in respect of the bubble event\n feature. If there are two equal classes available (defined), one with\n and one without the bubble event feature, this method will return the\n hash of the class that includes the bubble event.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "data {Object} The JavaScript object from which the hash is\nrequired.",
+            "body": "data {Object} The JavaScript object from which the hash is\n   required.",
             "paramName": "data",
-            "description": " The JavaScript object from which the hash is\nrequired.",
+            "description": " The JavaScript object from which the hash is\n   required.",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean} Whether the preferred model should\nsupport the bubbling of change events or not.\nIf <code>null</code>, an automatic selection will take place which\nselects the \"best\" model currently available.",
+            "body": "includeBubbleEvents {Boolean} Whether the preferred model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the preferred model should\nsupport the bubbling of change events or not.\nIf <code>null</code>, an automatic selection will take place which\nselects the \"best\" model currently available.",
+            "description": " Whether the preferred model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
             "type": "Boolean"
           }
         ],
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates for the given data the needed classes. The classes contain for\nevery key in the data a property. The classname is always the prefix\n<code>qx.data.model</code> and the hash of the data created by\n{@link #__jsonToHash}. Two objects containing the same keys will not\ncreate two different classes. The class creation process also supports\nthe functions provided by its delegate.\n\nImportant, please keep in mind that only valid JavaScript identifiers\ncan be used as keys in the data map. For convenience '-' in keys will\nbe removed (a-b will be ab in the end)."
+            "body": "<p>Creates for the given data the needed classes. The classes contain for\n every key in the data a property. The classname is always the prefix\n <code>qx.data.model</code> and the hash of the data created by\n {@link #__jsonToHash}. Two objects containing the same keys will not\n create two different classes. The class creation process also supports\n the functions provided by its delegate.\n Important, please keep in mind that only valid JavaScript identifiers\n can be used as keys in the data map. For convenience '-' in keys will\n be removed (a-b will be ab in the end).</p>"
           }
         ],
         "@see": [
@@ -289,9 +289,9 @@
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean} Whether the model should support\nthe bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should support\nthe bubbling of change events or not.",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
             "type": "Boolean"
           }
         ]
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Implementation of {@link #toClass} used for recursion."
+            "body": "<p>Implementation of {@link #toClass} used for recursion.</p>"
           }
         ],
         "@param": [
@@ -331,16 +331,16 @@
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean} Whether the model should support\nthe bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should support\nthe bubbling of change events or not.",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} The name of the property the\ndata will be stored in.",
+            "body": "parentProperty {String|null} The name of the property the\n   data will be stored in.",
             "paramName": "parentProperty",
-            "description": " The name of the property the\ndata will be stored in.",
+            "description": " The name of the property the\n   data will be stored in.",
             "type": [
               "String",
               "null"
@@ -373,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for disposing items of the created class."
+            "body": "<p>Helper for disposing items of the created class.</p>"
           }
         ],
         "@param": [
@@ -404,22 +404,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an instance for the given data hash."
+            "body": "<p>Creates an instance for the given data hash.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "hash {String} The hash of the data for which an instance should\nbe created.",
+            "body": "hash {String} The hash of the data for which an instance should\n   be created.",
             "paramName": "hash",
-            "description": " The hash of the data for which an instance should\nbe created.",
+            "description": " The hash of the data for which an instance should\n   be created.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} The name of the property the data\nwill be stored in.",
+            "body": "parentProperty {String|null} The name of the property the data\n   will be stored in.",
             "paramName": "parentProperty",
-            "description": " The name of the property the data\nwill be stored in.",
+            "description": " The name of the property the data\n   will be stored in.",
             "type": [
               "String",
               "null"
@@ -467,7 +467,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to decide if the delegate decides to ignore a data set."
+            "body": "<p>Helper to decide if the delegate decides to ignore a data set.</p>"
           }
         ],
         "@param": [
@@ -480,9 +480,9 @@
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} The name of the property the data\nwill be stored in.",
+            "body": "parentProperty {String|null} The name of the property the data\n   will be stored in.",
             "paramName": "parentProperty",
-            "description": " The name of the property the data\nwill be stored in.",
+            "description": " The name of the property the data\n   will be stored in.",
             "type": [
               "String",
               "null"
@@ -523,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates for the given data the needed models. Be sure to have the classes\ncreated with {@link #toClass} before calling this method. The creation\nof the class itself is delegated to the {@link #__createInstance} method,\nwhich could use the {@link qx.data.store.IStoreDelegate} methods, if\ngiven."
+            "body": "<p>Creates for the given data the needed models. Be sure to have the classes\n created with {@link #toClass} before calling this method. The creation\n of the class itself is delegated to the {@link #__createInstance} method,\n which could use the {@link qx.data.store.IStoreDelegate} methods, if\n given.</p>"
           }
         ],
         "@param": [
@@ -536,9 +536,9 @@
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean?null} Whether the model should\nsupport the bubbling of change events or not.\nIf omitted or <code>null</code>, an automatic selection will take place\nwhich selects the \"best\" model currently available.",
+            "body": "includeBubbleEvents {Boolean?null} Whether the model should\n   support the bubbling of change events or not.\n   If omitted or <code>null</code>, an automatic selection will take place\n   which selects the \"best\" model currently available.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should\nsupport the bubbling of change events or not.\nIf omitted or <code>null</code>, an automatic selection will take place\nwhich selects the \"best\" model currently available.",
+            "description": " Whether the model should\n   support the bubbling of change events or not.\n   If omitted or <code>null</code>, an automatic selection will take place\n   which selects the \"best\" model currently available.",
             "optional": true,
             "defaultValue": "null",
             "type": "Boolean"
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Implementation of {@link #toModel} used for recursion."
+            "body": "<p>Implementation of {@link #toModel} used for recursion.</p>"
           }
         ],
         "@param": [
@@ -588,9 +588,9 @@
           },
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean|null} Whether the model should\nsupport the bubbling of change events or not.\nIf <code>null</code>, an automatic selection will take place which\nselects the \"best\" model currently available.",
+            "body": "includeBubbleEvents {Boolean|null} Whether the model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should\nsupport the bubbling of change events or not.\nIf <code>null</code>, an automatic selection will take place which\nselects the \"best\" model currently available.",
+            "description": " Whether the model should\n   support the bubbling of change events or not.\n   If <code>null</code>, an automatic selection will take place which\n   selects the \"best\" model currently available.",
             "type": [
               "Boolean",
               "null"
@@ -598,9 +598,9 @@
           },
           {
             "name": "@param",
-            "body": "parentProperty {String|null} The name of the property the\ndata will be stored in.",
+            "body": "parentProperty {String|null} The name of the property the\n   data will be stored in.",
             "paramName": "parentProperty",
-            "description": " The name of the property the\ndata will be stored in.",
+            "description": " The name of the property the\n   data will be stored in.",
             "type": [
               "String",
               "null"

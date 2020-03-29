@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Keeps data about the visibility of all widgets. Updates the internal\ntree when widgets are added, removed or modify their visibility."
+          "body": "<p>Keeps data about the visibility of all widgets. Updates the internal\n tree when widgets are added, removed or modify their visibility.</p>"
         }
       ]
     }
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the cached data of the given widget. Normally only used\nduring interims disposes of one or a few widgets."
+            "body": "<p>Clears the cached data of the given widget. Normally only used\n during interims disposes of one or a few widgets.</p>"
           }
         ],
         "@param": [
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given widget is visible.\n\nPlease note that the information given by this method is queued and may not be accurate\nuntil the next queue flush happens."
+            "body": "<p>Whether the given widget is visible.\n Please note that the information given by this method is queued and may not be accurate\n until the next queue flush happens.</p>"
           }
         ],
         "@param": [
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the visibility for the given widget"
+            "body": "<p>Computes the visibility for the given widget</p>"
           }
         ],
         "@param": [
@@ -240,7 +240,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a widget to the queue.\n\nShould only be used by {@link qx.ui.core.Widget}."
+            "body": "<p>Adds a widget to the queue.\n Should only be used by {@link qx.ui.core.Widget}.</p>"
           }
         ],
         "@param": [
@@ -271,7 +271,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flushes the visibility queue.\n\nThis is used exclusively by the {@link qx.ui.core.queue.Manager}."
+            "body": "<p>Flushes the visibility queue.\n This is used exclusively by the {@link qx.ui.core.queue.Manager}.</p>"
           }
         ]
       },

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006, 2007 Derrell Lipman\n2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006, 2007 Derrell Lipman\n     2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Useful debug capabilities"
+          "body": "<p>Useful debug capabilities</p>"
         }
       ],
       "@ignore": [
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flag that shows whether dispose profiling is currently active"
+            "body": "<p>Flag that shows whether dispose profiling is currently active</p>"
           }
         ],
         "@internal": [
@@ -97,22 +97,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recursively display an object (as a debug message)"
+            "body": "<p>Recursively display an object (as a debug message)</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "obj {Object}\nThe object to be recursively displayed",
+            "body": "obj {Object}\n   The object to be recursively displayed",
             "paramName": "obj",
-            "description": "\nThe object to be recursively displayed",
+            "description": "\n   The object to be recursively displayed",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "initialMessage {String|null}\nThe initial message to be displayed.",
+            "body": "initialMessage {String|null}\n   The initial message to be displayed.",
             "paramName": "initialMessage",
-            "description": "\nThe initial message to be displayed.",
+            "description": "\n   The initial message to be displayed.",
             "type": [
               "String",
               "null"
@@ -120,9 +120,9 @@
           },
           {
             "name": "@param",
-            "body": "maxLevel {Integer ? 10}\nThe maximum level of recursion.  Objects beyond this level will not\nbe displayed.",
+            "body": "maxLevel {Integer ? 10}\n   The maximum level of recursion.  Objects beyond this level will not\n   be displayed.",
             "paramName": "maxLevel",
-            "description": "\nThe maximum level of recursion.  Objects beyond this level will not\nbe displayed.",
+            "description": "\n   The maximum level of recursion.  Objects beyond this level will not\n   be displayed.",
             "optional": true,
             "defaultValue": "10",
             "type": "Integer"
@@ -147,22 +147,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recursively display an object (into a string)"
+            "body": "<p>Recursively display an object (into a string)</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "obj {Object}\nThe object to be recursively displayed",
+            "body": "obj {Object}\n   The object to be recursively displayed",
             "paramName": "obj",
-            "description": "\nThe object to be recursively displayed",
+            "description": "\n   The object to be recursively displayed",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "initialMessage {String|null}\nThe initial message to be displayed.",
+            "body": "initialMessage {String|null}\n   The initial message to be displayed.",
             "paramName": "initialMessage",
-            "description": "\nThe initial message to be displayed.",
+            "description": "\n   The initial message to be displayed.",
             "type": [
               "String",
               "null"
@@ -170,18 +170,18 @@
           },
           {
             "name": "@param",
-            "body": "maxLevel {Integer ? 10}\nThe maximum level of recursion.  Objects beyond this level will not\nbe displayed.",
+            "body": "maxLevel {Integer ? 10}\n   The maximum level of recursion.  Objects beyond this level will not\n   be displayed.",
             "paramName": "maxLevel",
-            "description": "\nThe maximum level of recursion.  Objects beyond this level will not\nbe displayed.",
+            "description": "\n   The maximum level of recursion.  Objects beyond this level will not\n   be displayed.",
             "optional": true,
             "defaultValue": "10",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "bHtml {Boolean ? false}\nIf true, then render the debug message in HTML;\nOtherwise, use spaces for indentation and \"\\n\" for end of line.",
+            "body": "bHtml {Boolean ? false}\n   If true, then render the debug message in HTML;\n   Otherwise, use spaces for indentation and \"\\n\" for end of line.",
             "paramName": "bHtml",
-            "description": "\nIf true, then render the debug message in HTML;\nOtherwise, use spaces for indentation and \"\\n\" for end of line.",
+            "description": "\n   If true, then render the debug message in HTML;\n   Otherwise, use spaces for indentation and \"\\n\" for end of line.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -190,9 +190,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe string containing the recursive display of the object",
+            "body": "{String}\n   The string containing the recursive display of the object",
             "type": "String",
-            "description": "\nThe string containing the recursive display of the object"
+            "description": "\n   The string containing the recursive display of the object"
           }
         ],
         "@lint": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the name of a member/static function or constructor defined using the new style class definition.\nIf the function could not be found <code>null</code> is returned.\n\nThis function uses a linear search, so don't use it in performance critical\ncode."
+            "body": "<p>Get the name of a member/static function or constructor defined using the new style class definition.\n If the function could not be found <code>null</code> is returned.\n This function uses a linear search, so don't use it in performance critical\n code.</p>"
           }
         ],
         "@param": [
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a string representing the given model. The string will include\nall model objects to a given recursive depth."
+            "body": "<p>Returns a string representing the given model. The string will include\n all model objects to a given recursive depth.</p>"
           }
         ],
         "@param": [
@@ -290,21 +290,16 @@
           },
           {
             "name": "@param",
-            "body": "html {Boolean ? false} If the returned string should have \\n\\r as\nnewline of <br>.",
+            "body": "html {Boolean ? false} If the returned string should have \\n\\r as\n   newline of <br>.",
             "paramName": "html",
-            "description": " If the returned string should have \\n\\r as\nnewline of <br>.",
+            "description": " If the returned string should have \\n\\r as\n   newline of <br>.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "indent {Number ? 1} The indentation level.\n(Needed for the recursion)",
-            "paramName": "indent",
-            "description": " The indentation level.\n(Needed for the recursion)",
-            "optional": true,
-            "defaultValue": "1",
-            "type": "Number"
+            "body": "Needed for the recursion"
           }
         ],
         "@return": [
@@ -334,15 +329,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts a dispose profiling session. Use {@link #stopDisposeProfiling} to\nget the results"
+            "body": "<p>Starts a dispose profiling session. Use {@link #stopDisposeProfiling} to\n get the results</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Number|undefined}\nReturns a handle which may be passed to {@link #stopDisposeProfiling}\nindicating the start point for searching for undisposed objects.",
+            "body": "{Number|undefined}\n   Returns a handle which may be passed to {@link #stopDisposeProfiling}\n   indicating the start point for searching for undisposed objects.",
             "type": "Number|undefined",
-            "description": "\nReturns a handle which may be passed to {@link #stopDisposeProfiling}\nindicating the start point for searching for undisposed objects."
+            "description": "\n   Returns a handle which may be passed to {@link #stopDisposeProfiling}\n   indicating the start point for searching for undisposed objects."
           }
         ]
       },
@@ -364,7 +359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of any (qx) objects that were created but not disposed\nsince {@link #startDisposeProfiling} was called. Also returns a stack\ntrace recorded at the time the object was created. The starting point\nof dispose tracking is reset, so to do further dispose profiling, a new\ncall to {@link #startDisposeProfile} must be issued."
+            "body": "<p>Returns a list of any (qx) objects that were created but not disposed\n since {@link #startDisposeProfiling} was called. Also returns a stack\n trace recorded at the time the object was created. The starting point\n of dispose tracking is reset, so to do further dispose profiling, a new\n call to {@link #startDisposeProfile} must be issued.</p>"
           }
         ],
         "@signature": [
@@ -376,18 +371,18 @@
         "@param": [
           {
             "name": "@param",
-            "body": "checkFunction {Function} Custom check function. It is called once\nfor each object that was created after dispose profiling was started,\nwith the object as the only parameter. If it returns false, the object\nwill not be included in the returned list",
+            "body": "checkFunction {Function} Custom check function. It is called once\n for each object that was created after dispose profiling was started,\n with the object as the only parameter. If it returns false, the object\n will not be included in the returned list",
             "paramName": "checkFunction",
-            "description": " Custom check function. It is called once\nfor each object that was created after dispose profiling was started,\nwith the object as the only parameter. If it returns false, the object\nwill not be included in the returned list",
+            "description": " Custom check function. It is called once\n for each object that was created after dispose profiling was started,\n with the object as the only parameter. If it returns false, the object\n will not be included in the returned list",
             "type": "Function"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} List of maps. Each map contains two keys:\n<code>object</code> and <code>stackTrace</code>",
+            "body": "{Map[]} List of maps. Each map contains two keys:\n <code>object</code> and <code>stackTrace</code>",
             "type": "Map[]",
-            "description": " List of maps. Each map contains two keys:\n<code>object</code> and <code>stackTrace</code>"
+            "description": " List of maps. Each map contains two keys:\n <code>object</code> and <code>stackTrace</code>"
           }
         ]
       },
@@ -409,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of any (qx) objects that were created but not disposed\nsince {@link #startDisposeProfiling} was called. Also returns a stack\ntrace recorded at the time the object was created. Does not restart the\ntracking point, so subsequent calls to this method will continue to\nshow undisposed objects since {@link #startDisposeProfiling} was\ncalled."
+            "body": "<p>Returns a list of any (qx) objects that were created but not disposed\n since {@link #startDisposeProfiling} was called. Also returns a stack\n trace recorded at the time the object was created. Does not restart the\n tracking point, so subsequent calls to this method will continue to\n show undisposed objects since {@link #startDisposeProfiling} was\n called.</p>"
           }
         ],
         "@signature": [
@@ -421,18 +416,18 @@
         "@param": [
           {
             "name": "@param",
-            "body": "checkFunction {Function} Custom check function. It is called once\nfor each object that was created after dispose profiling was started,\nwith the object as the only parameter. If it returns false, the object\nwill not be included in the returned list",
+            "body": "checkFunction {Function} Custom check function. It is called once\n for each object that was created after dispose profiling was started,\n with the object as the only parameter. If it returns false, the object\n will not be included in the returned list",
             "paramName": "checkFunction",
-            "description": " Custom check function. It is called once\nfor each object that was created after dispose profiling was started,\nwith the object as the only parameter. If it returns false, the object\nwill not be included in the returned list",
+            "description": " Custom check function. It is called once\n for each object that was created after dispose profiling was started,\n with the object as the only parameter. If it returns false, the object\n will not be included in the returned list",
             "type": "Function"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} List of maps. Each map contains two keys:\n<code>object</code> and <code>stackTrace</code>",
+            "body": "{Map[]} List of maps. Each map contains two keys:\n <code>object</code> and <code>stackTrace</code>",
             "type": "Map[]",
-            "description": " List of maps. Each map contains two keys:\n<code>object</code> and <code>stackTrace</code>"
+            "description": " List of maps. Each map contains two keys:\n <code>object</code> and <code>stackTrace</code>"
           }
         ]
       },

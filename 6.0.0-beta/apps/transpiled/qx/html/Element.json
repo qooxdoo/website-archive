@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "High-performance, high-level DOM element creation and management.\n\nIncludes support for HTML and style attributes. Elements also have\ngot a powerful children and visibility management.\n\nProcesses DOM insertion and modification with advanced logic\nto reduce the real transactions.\n\nFrom the view of the parent you can use the following children management\nmethods:\n{@link #getChildren}, {@link #indexOf}, {@link #hasChild}, {@link #add},\n{@link #addAt}, {@link #remove}, {@link #removeAt}, {@link #removeAll}\n\nEach child itself also has got some powerful methods to control its\nposition:\n{@link #getParent}, {@link #free},\n{@link #insertInto}, {@link #insertBefore}, {@link #insertAfter},\n{@link #moveTo}, {@link #moveBefore}, {@link #moveAfter},\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>High-performance, high-level DOM element creation and management.\n Includes support for HTML and style attributes. Elements also have\n got a powerful children and visibility management.\n Processes DOM insertion and modification with advanced logic\n to reduce the real transactions.\n From the view of the parent you can use the following children management\n methods:\n {@link #getChildren}, {@link #indexOf}, {@link #hasChild}, {@link #add},\n {@link #addAt}, {@link #remove}, {@link #removeAt}, {@link #removeAll}\n Each child itself also has got some powerful methods to control its\n position:\n {@link #getParent}, {@link #free},\n {@link #insertInto}, {@link #insertBefore}, {@link #insertAfter},\n {@link #moveTo}, {@link #moveBefore}, {@link #moveAfter},\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@require": [
@@ -43,7 +43,7 @@
     "location": {
       "start": {
         "line": 66,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 75,
@@ -54,11 +54,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Creates a new Element"
+          "body": "<p>Creates a new Element</p>"
         }
       ],
       "@param": [
@@ -73,18 +73,18 @@
         },
         {
           "name": "@param",
-          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "paramName": "styles",
-          "description": " optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "description": " optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
         },
         {
           "name": "@param",
-          "body": "attributes {Map?null} optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "body": "attributes {Map?null} optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "paramName": "attributes",
-          "description": " optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "description": " optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTATIC DATA\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STATIC DATA\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -308,11 +308,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC ELEMENT FLUSH\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC ELEMENT FLUSH\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Schedule a deferred element queue flush. If the widget subsystem is used\nthis method gets overwritten by {@link qx.ui.core.queue.Manager}."
+            "body": "<p>Schedule a deferred element queue flush. If the widget subsystem is used\n this method gets overwritten by {@link qx.ui.core.queue.Manager}.</p>"
           }
         ],
         "@param": [
@@ -343,7 +343,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flush the global modified list"
+            "body": "<p>Flush the global modified list</p>"
           }
         ]
       },
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the focus handler"
+            "body": "<p>Get the focus handler</p>"
           }
         ],
         "@return": [
@@ -395,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the mouse capture element"
+            "body": "<p>Get the mouse capture element</p>"
           }
         ],
         "@return": [
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given DOM element will become invisible after the flush"
+            "body": "<p>Whether the given DOM element will become invisible after the flush</p>"
           }
         ],
         "@param": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the Widget for a given DOM element"
+            "body": "<p>Finds the Widget for a given DOM element</p>"
           }
         ],
         "@param": [
@@ -505,7 +505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROTECTED HELPERS/DATA\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROTECTED HELPERS/DATA\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -863,7 +863,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add the element to the global modification list."
+            "body": "<p>Add the element to the global modification list.</p>"
           }
         ]
       },
@@ -885,7 +885,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to generate the DOM element"
+            "body": "<p>Internal helper to generate the DOM element</p>"
           }
         ],
         "@return": [
@@ -915,7 +915,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Connects a widget to this element, and to the DOM element in this Element.  They\nremain associated until disposed or disconnectWidget is called"
+            "body": "<p>Connects a widget to this element, and to the DOM element in this Element.  They\n remain associated until disposed or disconnectWidget is called</p>"
           }
         ],
         "@param": [
@@ -946,7 +946,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disconnects a widget from this element and the DOM element.  The DOM element remains\nuntouched, except that it can no longer be used to find the Widget."
+            "body": "<p>Disconnects a widget from this element and the DOM element.  The DOM element remains\n untouched, except that it can no longer be used to find the Widget.</p>"
           }
         ],
         "@param": [
@@ -977,7 +977,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Connects a DOM element to this Element; if this Element is already connected to a Widget\nthen the Widget is also connected."
+            "body": "<p>Connects a DOM element to this Element; if this Element is already connected to a Widget\n then the Widget is also connected.</p>"
           }
         ],
         "@param": [
@@ -1008,11 +1008,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFLUSH OBJECT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FLUSH OBJECT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Syncs data of an HtmlElement object to the DOM."
+            "body": "<p>Syncs data of an HtmlElement object to the DOM.</p>"
           }
         ]
       },
@@ -1034,11 +1034,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSUPPORT FOR CHILDREN FLUSH\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SUPPORT FOR CHILDREN FLUSH\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Append all child nodes to the DOM\nelement. This function is used when the element is initially\ncreated. After this initial apply {@link #_syncChildren} is used\ninstead."
+            "body": "<p>Append all child nodes to the DOM\n element. This function is used when the element is initially\n created. After this initial apply {@link #_syncChildren} is used\n instead.</p>"
           }
         ]
       },
@@ -1060,7 +1060,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Synchronize internal children hierarchy to the DOM. This is used\nfor further runtime updates after the element has been created\ninitially."
+            "body": "<p>Synchronize internal children hierarchy to the DOM. This is used\n for further runtime updates after the element has been created\n initially.</p>"
           }
         ]
       },
@@ -1082,7 +1082,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSUPPORT FOR ATTRIBUTE/STYLE/EVENT FLUSH\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SUPPORT FOR ATTRIBUTE/STYLE/EVENT FLUSH\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -1104,15 +1104,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Copies data between the internal representation and the DOM. This\nsimply copies all the data and only works well directly after\nelement creation. After this the data must be synced using {@link #_syncData}"
+            "body": "<p>Copies data between the internal representation and the DOM. This\n simply copies all the data and only works well directly after\n element creation. After this the data must be synced using {@link #_syncData}</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "fromMarkup {Boolean} Whether the copy should respect styles\ngiven from markup",
+            "body": "fromMarkup {Boolean} Whether the copy should respect styles\n   given from markup",
             "paramName": "fromMarkup",
-            "description": " Whether the copy should respect styles\ngiven from markup",
+            "description": " Whether the copy should respect styles\n   given from markup",
             "type": "Boolean"
           }
         ]
@@ -1135,7 +1135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Synchronizes data between the internal representation and the DOM. This\nis the counterpart of {@link #_copyData} and is used for further updates\nafter the element has been created."
+            "body": "<p>Synchronizes data between the internal representation and the DOM. This\n is the counterpart of {@link #_copyData} and is used for further updates\n after the element has been created.</p>"
           }
         ]
       },
@@ -1157,11 +1157,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPRIVATE HELPERS/DATA\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PRIVATE HELPERS/DATA\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Walk up the internal children hierarchy and\nlook if one of the children is marked as root.\n\nThis method is quite performance hungry as it\nreally walks up recursively."
+            "body": "<p>Walk up the internal children hierarchy and\n look if one of the children is marked as root.\n This method is quite performance hungry as it\n really walks up recursively.</p>"
           }
         ],
         "@return": [
@@ -1191,7 +1191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for all children addition needs"
+            "body": "<p>Internal helper for all children addition needs</p>"
           }
         ],
         "@param": [
@@ -1206,9 +1206,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if the given element is already a child\nof this element",
+            "body": "{Error} if the given element is already a child\n     of this element",
             "type": "Error",
-            "description": " if the given element is already a child\nof this element"
+            "description": " if the given element is already a child\n     of this element"
           }
         ]
       },
@@ -1230,7 +1230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for all children removal needs"
+            "body": "<p>Internal helper for all children removal needs</p>"
           }
         ],
         "@param": [
@@ -1245,9 +1245,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if the given element is not a child\nof this element",
+            "body": "{Error} if the given element is not a child\n     of this element",
             "type": "Error",
-            "description": " if the given element is not a child\nof this element"
+            "description": " if the given element is not a child\n     of this element"
           }
         ]
       },
@@ -1269,7 +1269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for all children move needs"
+            "body": "<p>Internal helper for all children move needs</p>"
           }
         ],
         "@param": [
@@ -1284,9 +1284,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if the given element is not a child\nof this element",
+            "body": "{Error} if the given element is not a child\n     of this element",
             "type": "Error",
-            "description": " if the given element is not a child\nof this element"
+            "description": " if the given element is not a child\n     of this element"
           }
         ]
       },
@@ -1308,11 +1308,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN MANAGEMENT (EXECUTED ON THE PARENT)\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN MANAGEMENT (EXECUTED ON THE PARENT)\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns a copy of the internal children structure.\n\nPlease do not modify the array in place. If you need\nto work with the data in such a way make yourself\na copy of the data first."
+            "body": "<p>Returns a copy of the internal children structure.\n Please do not modify the array in place. If you need\n to work with the data in such a way make yourself\n a copy of the data first.</p>"
           }
         ],
         "@return": [
@@ -1342,7 +1342,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a child element at the given index"
+            "body": "<p>Get a child element at the given index</p>"
           }
         ],
         "@param": [
@@ -1357,9 +1357,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.html.Element|null} The child element or <code>null</code> if\nno child is found at that index.",
+            "body": "{qx.html.Element|null} The child element or <code>null</code> if\n     no child is found at that index.",
             "type": "qx.html.Element|null",
-            "description": " The child element or <code>null</code> if\nno child is found at that index."
+            "description": " The child element or <code>null</code> if\n     no child is found at that index."
           }
         ]
       },
@@ -1381,7 +1381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the element has any child nodes"
+            "body": "<p>Returns whether the element has any child nodes</p>"
           }
         ],
         "@return": [
@@ -1411,7 +1411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Find the position of the given child"
+            "body": "<p>Find the position of the given child</p>"
           }
         ],
         "@param": [
@@ -1426,9 +1426,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} returns the position. If the element\nis not a child <code>-1</code> will be returned.",
+            "body": "{Integer} returns the position. If the element\n     is not a child <code>-1</code> will be returned.",
             "type": "Integer",
-            "description": " returns the position. If the element\nis not a child <code>-1</code> will be returned."
+            "description": " returns the position. If the element\n     is not a child <code>-1</code> will be returned."
           }
         ]
       },
@@ -1450,7 +1450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given element is a child of this element."
+            "body": "<p>Whether the given element is a child of this element.</p>"
           }
         ],
         "@param": [
@@ -1465,9 +1465,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Returns <code>true</code> when the given\nelement is a child of this element.",
+            "body": "{Boolean} Returns <code>true</code> when the given\n    element is a child of this element.",
             "type": "Boolean",
-            "description": " Returns <code>true</code> when the given\nelement is a child of this element."
+            "description": " Returns <code>true</code> when the given\n    element is a child of this element."
           }
         ]
       },
@@ -1489,7 +1489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Append all given children at the end of this element."
+            "body": "<p>Append all given children at the end of this element.</p>"
           }
         ],
         "@param": [
@@ -1528,7 +1528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts a new element into this element at the given position."
+            "body": "<p>Inserts a new element into this element at the given position.</p>"
           }
         ],
         "@param": [
@@ -1541,9 +1541,9 @@
           },
           {
             "name": "@param",
-            "body": "index {Integer} the index (starts at 0 for the\nfirst child) to insert (the index of the following\nchildren will be increased by one)",
+            "body": "index {Integer} the index (starts at 0 for the\n     first child) to insert (the index of the following\n     children will be increased by one)",
             "paramName": "index",
-            "description": " the index (starts at 0 for the\nfirst child) to insert (the index of the following\nchildren will be increased by one)",
+            "description": " the index (starts at 0 for the\n     first child) to insert (the index of the following\n     children will be increased by one)",
             "type": "Integer"
           }
         ],
@@ -1574,7 +1574,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all given children"
+            "body": "<p>Removes all given children</p>"
           }
         ],
         "@param": [
@@ -1613,15 +1613,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the child at the given index"
+            "body": "<p>Removes the child at the given index</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "index {Integer} the position of the\nchild (starts at 0 for the first child)",
+            "body": "index {Integer} the position of the\n     child (starts at 0 for the first child)",
             "paramName": "index",
-            "description": " the position of the\nchild (starts at 0 for the first child)",
+            "description": " the position of the\n     child (starts at 0 for the first child)",
             "type": "Integer"
           }
         ],
@@ -1652,7 +1652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children from this element."
+            "body": "<p>Remove all children from this element.</p>"
           }
         ],
         "@return": [
@@ -1682,11 +1682,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN MANAGEMENT (EXECUTED ON THE CHILD)\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN MANAGEMENT (EXECUTED ON THE CHILD)\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the parent of this element."
+            "body": "<p>Returns the parent of this element.</p>"
           }
         ],
         "@return": [
@@ -1716,7 +1716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert self into the given parent. Normally appends self to the end,\nbut optionally a position can be defined. With index <code>0</code> it\nwill be inserted at the begin."
+            "body": "<p>Insert self into the given parent. Normally appends self to the end,\n but optionally a position can be defined. With index <code>0</code> it\n will be inserted at the begin.</p>"
           }
         ],
         "@param": [
@@ -1764,7 +1764,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert self before the given (related) element"
+            "body": "<p>Insert self before the given (related) element</p>"
           }
         ],
         "@param": [
@@ -1803,7 +1803,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert self after the given (related) element"
+            "body": "<p>Insert self after the given (related) element</p>"
           }
         ],
         "@param": [
@@ -1842,7 +1842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move self to the given index in the current parent."
+            "body": "<p>Move self to the given index in the current parent.</p>"
           }
         ],
         "@param": [
@@ -1865,9 +1865,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} when the given element is not child\nof this element.",
+            "body": "{Error} when the given element is not child\n      of this element.",
             "type": "Error",
-            "description": " when the given element is not child\nof this element."
+            "description": " when the given element is not child\n      of this element."
           }
         ]
       },
@@ -1889,7 +1889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move self before the given (related) child."
+            "body": "<p>Move self before the given (related) child.</p>"
           }
         ],
         "@param": [
@@ -1928,7 +1928,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move self after the given (related) child."
+            "body": "<p>Move self after the given (related) child.</p>"
           }
         ],
         "@param": [
@@ -1967,7 +1967,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove self from the current parent."
+            "body": "<p>Remove self from the current parent.</p>"
           }
         ],
         "@return": [
@@ -1997,11 +1997,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDOM ELEMENT ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DOM ELEMENT ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the DOM element (if created). Please use this with caution.\nIt is better to make all changes to the object itself using the public\nAPI rather than to the underlying DOM element."
+            "body": "<p>Returns the DOM element (if created). Please use this with caution.\n It is better to make all changes to the object itself using the public\n API rather than to the underlying DOM element.</p>"
           }
         ],
         "@return": [
@@ -2031,7 +2031,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the nodeName of the DOM element."
+            "body": "<p>Returns the nodeName of the DOM element.</p>"
           }
         ],
         "@return": [
@@ -2061,7 +2061,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the nodeName of the DOM element."
+            "body": "<p>Sets the nodeName of the DOM element.</p>"
           }
         ],
         "@param": [
@@ -2092,7 +2092,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the element's root flag, which indicates\nwhether the element should be a root element or not."
+            "body": "<p>Sets the element's root flag, which indicates\n whether the element should be a root element or not.</p>"
           }
         ],
         "@param": [
@@ -2123,15 +2123,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Uses existing markup for this element. This is mainly used\nto insert pre-built markup blocks into the element hierarchy."
+            "body": "<p>Uses existing markup for this element. This is mainly used\n to insert pre-built markup blocks into the element hierarchy.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "html {String} HTML markup with one root element\nwhich is used as the main element for this instance.",
+            "body": "html {String} HTML markup with one root element\n   which is used as the main element for this instance.",
             "paramName": "html",
-            "description": " HTML markup with one root element\nwhich is used as the main element for this instance.",
+            "description": " HTML markup with one root element\n   which is used as the main element for this instance.",
             "type": "String"
           }
         ],
@@ -2162,7 +2162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Uses an existing element instead of creating one. This may be interesting\nwhen the DOM element is directly needed to add content etc."
+            "body": "<p>Uses an existing element instead of creating one. This may be interesting\n when the DOM element is directly needed to add content etc.</p>"
           }
         ],
         "@param": [
@@ -2193,7 +2193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the element is focusable (or will be when created)"
+            "body": "<p>Whether the element is focusable (or will be when created)</p>"
           }
         ],
         "@return": [
@@ -2223,7 +2223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set whether the element is selectable. It uses the qooxdoo attribute\nqxSelectable with the values 'on' or 'off'.\nIn webkit, a special css property will be used (-webkit-user-select)."
+            "body": "<p>Set whether the element is selectable. It uses the qooxdoo attribute\n qxSelectable with the values 'on' or 'off'.\n In webkit, a special css property will be used (-webkit-user-select).</p>"
           }
         ],
         "@param": [
@@ -2254,7 +2254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the element is natively focusable (or will be when created)\n\nThis ignores the configured tabIndex."
+            "body": "<p>Whether the element is natively focusable (or will be when created)\n This ignores the configured tabIndex.</p>"
           }
         ],
         "@return": [
@@ -2284,11 +2284,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEXCLUDE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EXCLUDE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Marks the element as included which means it will be moved into\nthe DOM again and synced with the internal data representation."
+            "body": "<p>Marks the element as included which means it will be moved into\n the DOM again and synced with the internal data representation.</p>"
           }
         ],
         "@return": [
@@ -2318,7 +2318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Marks the element as excluded which means it will be removed\nfrom the DOM and ignored for updates until it gets included again."
+            "body": "<p>Marks the element as excluded which means it will be removed\n from the DOM and ignored for updates until it gets included again.</p>"
           }
         ],
         "@return": [
@@ -2348,7 +2348,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the element is part of the DOM"
+            "body": "<p>Whether the element is part of the DOM</p>"
           }
         ],
         "@return": [
@@ -2378,11 +2378,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nANIMATION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ANIMATION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Fades in the element."
+            "body": "<p>Fades in the element.</p>"
           }
         ],
         "@param": [
@@ -2397,9 +2397,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\nthe fade animation.",
+            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\n   the fade animation.",
             "type": "qx.bom.element.AnimationHandle",
-            "description": " The animation handle to react for\nthe fade animation."
+            "description": " The animation handle to react for\n   the fade animation."
           }
         ]
       },
@@ -2421,7 +2421,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fades out the element."
+            "body": "<p>Fades out the element.</p>"
           }
         ],
         "@param": [
@@ -2436,9 +2436,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\nthe fade animation.",
+            "body": "{qx.bom.element.AnimationHandle} The animation handle to react for\n   the fade animation.",
             "type": "qx.bom.element.AnimationHandle",
-            "description": " The animation handle to react for\nthe fade animation."
+            "description": " The animation handle to react for\n   the fade animation."
           }
         ]
       },
@@ -2460,11 +2460,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVISIBILITY SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VISIBILITY SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Marks the element as visible which means that a previously applied\nCSS style of display=none gets removed and the element will inserted\ninto the DOM, when this had not already happened before."
+            "body": "<p>Marks the element as visible which means that a previously applied\n CSS style of display=none gets removed and the element will inserted\n into the DOM, when this had not already happened before.</p>"
           }
         ],
         "@return": [
@@ -2494,7 +2494,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Marks the element as hidden which means it will kept in DOM (if it\nis already there, but configured hidden using a CSS style of display=none)."
+            "body": "<p>Marks the element as hidden which means it will kept in DOM (if it\n is already there, but configured hidden using a CSS style of display=none).</p>"
           }
         ],
         "@return": [
@@ -2524,15 +2524,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the element is visible.\n\nPlease note: This does not control the visibility or parent inclusion recursively."
+            "body": "<p>Whether the element is visible.\n Please note: This does not control the visibility or parent inclusion recursively.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Returns <code>true</code> when the element is configured\nto be visible.",
+            "body": "{Boolean} Returns <code>true</code> when the element is configured\n   to be visible.",
             "type": "Boolean",
-            "description": " Returns <code>true</code> when the element is configured\nto be visible."
+            "description": " Returns <code>true</code> when the element is configured\n   to be visible."
           }
         ]
       },
@@ -2554,11 +2554,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Scrolls the given child element into view. Only scrolls children.\nDo not influence elements on top of this element.\n\nIf the element is currently invisible it gets scrolled automatically\nat the next time it is visible again (queued)."
+            "body": "<p>Scrolls the given child element into view. Only scrolls children.\n Do not influence elements on top of this element.\n If the element is currently invisible it gets scrolled automatically\n at the next time it is visible again (queued).</p>"
           }
         ],
         "@param": [
@@ -2571,18 +2571,18 @@
           },
           {
             "name": "@param",
-            "body": "align {String?null} Alignment of the element. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "align {String?null} Alignment of the element. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "align",
-            "description": " Alignment of the element. Allowed values:\n<code>left</code> or <code>right</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the element. Allowed values:\n   <code>left</code> or <code>right</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?true} Whether the execution should be made\ndirectly when possible",
+            "body": "direct {Boolean?true} Whether the execution should be made\n   directly when possible",
             "paramName": "direct",
-            "description": " Whether the execution should be made\ndirectly when possible",
+            "description": " Whether the execution should be made\n   directly when possible",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -2607,7 +2607,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the given child element into view. Only scrolls children.\nDo not influence elements on top of this element.\n\nIf the element is currently invisible it gets scrolled automatically\nat the next time it is visible again (queued)."
+            "body": "<p>Scrolls the given child element into view. Only scrolls children.\n Do not influence elements on top of this element.\n If the element is currently invisible it gets scrolled automatically\n at the next time it is visible again (queued).</p>"
           }
         ],
         "@param": [
@@ -2620,18 +2620,18 @@
           },
           {
             "name": "@param",
-            "body": "align {String?null} Alignment of the element. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "body": "align {String?null} Alignment of the element. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "paramName": "align",
-            "description": " Alignment of the element. Allowed values:\n<code>top</code> or <code>bottom</code>. Could also be null.\nWithout a given alignment the method tries to scroll the widget\nwith the minimum effort needed.",
+            "description": " Alignment of the element. Allowed values:\n   <code>top</code> or <code>bottom</code>. Could also be null.\n   Without a given alignment the method tries to scroll the widget\n   with the minimum effort needed.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?true} Whether the execution should be made\ndirectly when possible",
+            "body": "direct {Boolean?true} Whether the execution should be made\n   directly when possible",
             "paramName": "direct",
-            "description": " Whether the execution should be made\ndirectly when possible",
+            "description": " Whether the execution should be made\n   directly when possible",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -2656,7 +2656,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element to the given left position."
+            "body": "<p>Scrolls the element to the given left position.</p>"
           }
         ],
         "@param": [
@@ -2669,9 +2669,9 @@
           },
           {
             "name": "@param",
-            "body": "lazy {Boolean?false} Whether the scrolling should be performed\nduring element flush.",
+            "body": "lazy {Boolean?false} Whether the scrolling should be performed\n    during element flush.",
             "paramName": "lazy",
-            "description": " Whether the scrolling should be performed\nduring element flush.",
+            "description": " Whether the scrolling should be performed\n    during element flush.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -2696,7 +2696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the horizontal scroll position."
+            "body": "<p>Get the horizontal scroll position.</p>"
           }
         ],
         "@return": [
@@ -2726,7 +2726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element to the given top position."
+            "body": "<p>Scrolls the element to the given top position.</p>"
           }
         ],
         "@param": [
@@ -2739,9 +2739,9 @@
           },
           {
             "name": "@param",
-            "body": "lazy {Boolean?false} Whether the scrolling should be performed\nduring element flush.",
+            "body": "lazy {Boolean?false} Whether the scrolling should be performed\n    during element flush.",
             "paramName": "lazy",
-            "description": " Whether the scrolling should be performed\nduring element flush.",
+            "description": " Whether the scrolling should be performed\n    during element flush.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -2766,7 +2766,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the vertical scroll position."
+            "body": "<p>Get the vertical scroll position.</p>"
           }
         ],
         "@return": [
@@ -2796,7 +2796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disables browser-native scrolling"
+            "body": "<p>Disables browser-native scrolling</p>"
           }
         ]
       },
@@ -2818,7 +2818,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Re-enables browser-native scrolling"
+            "body": "<p>Re-enables browser-native scrolling</p>"
           }
         ]
       },
@@ -2854,7 +2854,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the scroll-event"
+            "body": "<p>Handler for the scroll-event</p>"
           }
         ],
         "@param": [
@@ -2885,11 +2885,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTEXT SELECTION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXT SELECTION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the selection of the element.\n\nIf the underlaying DOM element is not yet created, this methods returns\na null value."
+            "body": "<p>Get the selection of the element.\n If the underlaying DOM element is not yet created, this methods returns\n a null value.</p>"
           }
         ],
         "@return": [
@@ -2919,7 +2919,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the length of selection of the element.\n\nIf the underlaying DOM element is not yet created, this methods returns\na null value."
+            "body": "<p>Get the length of selection of the element.\n If the underlaying DOM element is not yet created, this methods returns\n a null value.</p>"
           }
         ],
         "@return": [
@@ -2949,7 +2949,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the start of the selection of the element.\n\nIf the underlaying DOM element is not yet created, this methods returns\na null value."
+            "body": "<p>Get the start of the selection of the element.\n If the underlaying DOM element is not yet created, this methods returns\n a null value.</p>"
           }
         ],
         "@return": [
@@ -2979,7 +2979,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the end of the selection of the element.\n\nIf the underlaying DOM element is not yet created, this methods returns\na null value."
+            "body": "<p>Get the end of the selection of the element.\n If the underlaying DOM element is not yet created, this methods returns\n a null value.</p>"
           }
         ],
         "@return": [
@@ -3009,7 +3009,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the selection of the element with the given start and end value.\nIf no end value is passed the selection will extend to the end.\n\nThis method only works if the underlying DOM element is already created."
+            "body": "<p>Set the selection of the element with the given start and end value.\n If no end value is passed the selection will extend to the end.\n This method only works if the underlying DOM element is already created.</p>"
           }
         ],
         "@param": [
@@ -3047,7 +3047,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the selection of the element.\n\nThis method only works if the underlying DOM element is already created."
+            "body": "<p>Clears the selection of the element.\n This method only works if the underlying DOM element is already created.</p>"
           }
         ]
       },
@@ -3069,11 +3069,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFOCUS/ACTIVATE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FOCUS/ACTIVATE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Takes the action to process as argument and queues this action if the\nunderlying DOM element is not yet created."
+            "body": "<p>Takes the action to process as argument and queues this action if the\n underlying DOM element is not yet created.</p>"
           }
         ],
         "@param": [
@@ -3111,7 +3111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focus this element.\n\nIf the underlaying DOM element is not yet created, the\nfocus is queued for processing after the element creation."
+            "body": "<p>Focus this element.\n If the underlaying DOM element is not yet created, the\n focus is queued for processing after the element creation.</p>"
           }
         ]
       },
@@ -3133,7 +3133,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark this element to get blurred on the next flush of the queue"
+            "body": "<p>Mark this element to get blurred on the next flush of the queue</p>"
           }
         ]
       },
@@ -3155,7 +3155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark this element to get activated on the next flush of the queue"
+            "body": "<p>Mark this element to get activated on the next flush of the queue</p>"
           }
         ]
       },
@@ -3177,7 +3177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark this element to get deactivated on the next flush of the queue"
+            "body": "<p>Mark this element to get deactivated on the next flush of the queue</p>"
           }
         ]
       },
@@ -3199,15 +3199,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Captures all mouse events to this element"
+            "body": "<p>Captures all mouse events to this element</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "containerCapture {Boolean?true} If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "body": "containerCapture {Boolean?true} If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "paramName": "containerCapture",
-            "description": " If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "description": " If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -3232,7 +3232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Releases this element from a previous {@link #capture} call"
+            "body": "<p>Releases this element from a previous {@link #capture} call</p>"
           }
         ]
       },
@@ -3254,11 +3254,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTYLE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STYLE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set up the given style attribute"
+            "body": "<p>Set up the given style attribute</p>"
           }
         ],
         "@param": [
@@ -3278,9 +3278,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be applied\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be applied\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be applied\ndirectly (without queuing)",
+            "description": " Whether the value should be applied\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3313,22 +3313,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convenience method to modify a set of styles at once."
+            "body": "<p>Convenience method to modify a set of styles at once.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "map {Map} a map where the key is the name of the property\nand the value is the value to use.",
+            "body": "map {Map} a map where the key is the name of the property\n    and the value is the value to use.",
             "paramName": "map",
-            "description": " a map where the key is the name of the property\nand the value is the value to use.",
+            "description": " a map where the key is the name of the property\n    and the value is the value to use.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the values should be applied\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the values should be applied\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the values should be applied\ndirectly (without queuing)",
+            "description": " Whether the values should be applied\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3361,7 +3361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given style attribute"
+            "body": "<p>Removes the given style attribute</p>"
           }
         ],
         "@param": [
@@ -3374,9 +3374,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be removed\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be removed\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be removed\ndirectly (without queuing)",
+            "description": " Whether the value should be removed\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3409,7 +3409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the value of the given style attribute."
+            "body": "<p>Get the value of the given style attribute.</p>"
           }
         ],
         "@param": [
@@ -3448,7 +3448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map of all styles. Do not modify the result map!"
+            "body": "<p>Returns a map of all styles. Do not modify the result map!</p>"
           }
         ],
         "@return": [
@@ -3478,11 +3478,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nATTRIBUTE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ATTRIBUTE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set up the given attribute"
+            "body": "<p>Set up the given attribute</p>"
           }
         ],
         "@param": [
@@ -3502,9 +3502,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be applied\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be applied\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be applied\ndirectly (without queuing)",
+            "description": " Whether the value should be applied\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3537,22 +3537,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convenience method to modify a set of attributes at once."
+            "body": "<p>Convenience method to modify a set of attributes at once.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "map {Map} a map where the key is the name of the property\nand the value is the value to use.",
+            "body": "map {Map} a map where the key is the name of the property\n    and the value is the value to use.",
             "paramName": "map",
-            "description": " a map where the key is the name of the property\nand the value is the value to use.",
+            "description": " a map where the key is the name of the property\n    and the value is the value to use.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the values should be applied\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the values should be applied\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the values should be applied\ndirectly (without queuing)",
+            "description": " Whether the values should be applied\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3585,7 +3585,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given attribute"
+            "body": "<p>Removes the given attribute</p>"
           }
         ],
         "@param": [
@@ -3598,9 +3598,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be removed\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be removed\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be removed\ndirectly (without queuing)",
+            "description": " Whether the value should be removed\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3633,7 +3633,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the value of the given attribute."
+            "body": "<p>Get the value of the given attribute.</p>"
           }
         ],
         "@param": [
@@ -3672,11 +3672,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCSS CLASS SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CSS CLASS SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a css class to the element."
+            "body": "<p>Adds a css class to the element.</p>"
           }
         ],
         "@param": [
@@ -3707,7 +3707,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a CSS class from the current element."
+            "body": "<p>Removes a CSS class from the current element.</p>"
           }
         ],
         "@param": [
@@ -3738,11 +3738,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Applies a special property with the given value.\n\nThis property apply routine can be easily overwritten and\nextended by sub classes to add new low level features which\nare not easily possible using styles and attributes."
+            "body": "<p>Applies a special property with the given value.\n This property apply routine can be easily overwritten and\n extended by sub classes to add new low level features which\n are not easily possible using styles and attributes.</p>"
           }
         ],
         "@param": [
@@ -3794,7 +3794,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set up the given property."
+            "body": "<p>Set up the given property.</p>"
           }
         ],
         "@param": [
@@ -3814,9 +3814,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be applied\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be applied\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be applied\ndirectly (without queuing)",
+            "description": " Whether the value should be applied\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3849,7 +3849,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given misc"
+            "body": "<p>Removes the given misc</p>"
           }
         ],
         "@param": [
@@ -3862,9 +3862,9 @@
           },
           {
             "name": "@param",
-            "body": "direct {Boolean?false} Whether the value should be removed\ndirectly (without queuing)",
+            "body": "direct {Boolean?false} Whether the value should be removed\n    directly (without queuing)",
             "paramName": "direct",
-            "description": " Whether the value should be removed\ndirectly (without queuing)",
+            "description": " Whether the value should be removed\n    directly (without queuing)",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3897,7 +3897,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the value of the given misc."
+            "body": "<p>Get the value of the given misc.</p>"
           }
         ],
         "@param": [
@@ -3936,11 +3936,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds an event listener to the element."
+            "body": "<p>Adds an event listener to the element.</p>"
           }
         ],
         "@param": [
@@ -3960,9 +3960,9 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
@@ -3980,9 +3980,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{var} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "var",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       },
@@ -4009,7 +4009,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an event listener from the element."
+            "body": "<p>Removes an event listener from the element.</p>"
           }
         ],
         "@param": [
@@ -4076,7 +4076,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an event listener from an event target by an id returned by\n{@link #addListener}"
+            "body": "<p>Removes an event listener from an event target by an id returned by\n {@link #addListener}</p>"
           }
         ],
         "@param": [
@@ -4120,7 +4120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if there are one or more listeners for an event type."
+            "body": "<p>Check if there are one or more listeners for an event type.</p>"
           }
         ],
         "@param": [
@@ -4133,9 +4133,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean ? false} Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -4173,15 +4173,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serializes and returns all event listeners attached to this element"
+            "body": "<p>Serializes and returns all event listeners attached to this element</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} an Array containing a map for each listener. The maps\nhave the following keys:\n<ul>\n<li><code>type</code> (String): Event name</li>\n<li><code>handler</code> (Function): Callback function</li>\n<li><code>self</code> (Object): The callback's context</li>\n<li><code>capture</code> (Boolean): If <code>true</code>, the listener is\nattached to the capturing phase</li>\n</ul>",
+            "body": "{Map[]} an Array containing a map for each listener. The maps\n have the following keys:\n <ul>\n   <li><code>type</code> (String): Event name</li>\n   <li><code>handler</code> (Function): Callback function</li>\n   <li><code>self</code> (Object): The callback's context</li>\n   <li><code>capture</code> (Boolean): If <code>true</code>, the listener is\n attached to the capturing phase</li>\n </ul>",
             "type": "Map[]",
-            "description": " an Array containing a map for each listener. The maps\nhave the following keys:\n<ul>\n<li><code>type</code> (String): Event name</li>\n<li><code>handler</code> (Function): Callback function</li>\n<li><code>self</code> (Object): The callback's context</li>\n<li><code>capture</code> (Boolean): If <code>true</code>, the listener is\nattached to the capturing phase</li>\n</ul>"
+            "description": " an Array containing a map for each listener. The maps\n have the following keys:\n <ul>\n   <li><code>type</code> (String): Event name</li>\n   <li><code>handler</code> (Function): Callback function</li>\n   <li><code>self</code> (Object): The callback's context</li>\n   <li><code>capture</code> (Boolean): If <code>true</code>, the listener is\n attached to the capturing phase</li>\n </ul>"
           }
         ]
       },
@@ -4313,7 +4313,7 @@
     "location": {
       "start": {
         "line": 2870,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 2872,
@@ -4324,7 +4324,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -4333,7 +4333,7 @@
     "location": {
       "start": {
         "line": 2884,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 2915,
@@ -4344,7 +4344,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

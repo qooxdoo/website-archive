@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Methods to cleanup fields from maps/objects."
+          "body": "<p>Methods to cleanup fields from maps/objects.</p>"
         }
       ],
       "@ignore": [
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disconnects and disposes given objects from instance.\nOnly works with qx.core.Object based objects e.g. Widgets."
+            "body": "<p>Disconnects and disposes given objects from instance.\n Only works with qx.core.Object based objects e.g. Widgets.</p>"
           }
         ],
         "@param": [
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disposes all members of the given array and deletes\nthe field which refers to the array afterwards."
+            "body": "<p>Disposes all members of the given array and deletes\n the field which refers to the array afterwards.</p>"
           }
         ],
         "@param": [
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disposes all members of the given map and deletes\nthe field which refers to the map afterwards."
+            "body": "<p>Disposes all members of the given map and deletes\n the field which refers to the map afterwards.</p>"
           }
         ],
         "@param": [
@@ -207,7 +207,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disposes a given object when another object is disposed"
+            "body": "<p>Disposes a given object when another object is disposed</p>"
           }
         ],
         "@param": [
@@ -245,13 +245,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Destroys a container and all of its children recursively."
+            "body": "<p>Destroys a container and all of its children recursively.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "container {qx.ui.container.Composite | qx.ui.container.Scroll |\nqx.ui.container.SlideBar | qx.ui.container.Stack} Container to be destroyed",
+            "body": "container {qx.ui.container.Composite | qx.ui.container.Scroll |\n   qx.ui.container.SlideBar | qx.ui.container.Stack} Container to be destroyed",
             "paramName": "container",
             "description": " Container to be destroyed",
             "type": [
@@ -281,7 +281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function to collect all children widgets of an container recursively."
+            "body": "<p>Helper function to collect all children widgets of an container recursively.</p>"
           }
         ],
         "@param": [
@@ -324,7 +324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given object is a qx container widget"
+            "body": "<p>Checks if the given object is a qx container widget</p>"
           }
         ],
         "@param": [
@@ -339,9 +339,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the object is a container for\nchild widgets",
+            "body": "{Boolean} <code>true</code> if the object is a container for\n child widgets",
             "type": "Boolean",
-            "description": " <code>true</code> if the object is a container for\nchild widgets"
+            "description": " <code>true</code> if the object is a container for\n child widgets"
           }
         ]
       },

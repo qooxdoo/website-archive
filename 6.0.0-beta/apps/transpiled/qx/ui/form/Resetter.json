@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n2017 Martijn Evers, The Netherlands\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\nMartijn Evers (mever)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2017 Martijn Evers, The Netherlands\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n Martijn Evers (mever)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The resetter is responsible for managing a set of fields and resetting these\nfields on a {@link #reset} call. It can handle all form field implementing IField."
+          "body": "<p>The resetter is responsible for managing a set of fields and resetting these\n fields on a {@link #reset} call. It can handle all form field implementing IField.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 34,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__items": {
@@ -73,7 +74,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adding a field to the resetter will get its current value and store\nit for resetting."
+            "body": "<p>Adding a field to the resetter will get its current value and store\n it for resetting.</p>"
           }
         ],
         "@param": [
@@ -112,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a field from the resetter."
+            "body": "<p>Removes a field from the resetter.</p>"
           }
         ],
         "@param": [
@@ -159,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets all added fields to their initial value. The initial value\nis the value in the widget during the {@link #add}."
+            "body": "<p>Resets all added fields to their initial value. The initial value\n is the value in the widget during the {@link #add}.</p>"
           }
         ],
         "@return": [
@@ -194,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets a single given field. The field has to be added to the resetter\ninstance before. Otherwise, an error is thrown."
+            "body": "<p>Resets a single given field. The field has to be added to the resetter\n instance before. Otherwise, an error is thrown.</p>"
           }
         ],
         "@param": [
@@ -241,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Takes the current values of all added fields and uses these values as\ninit values for resetting."
+            "body": "<p>Takes the current values of all added fields and uses these values as\n init values for resetting.</p>"
           }
         ]
       },
@@ -263,7 +264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Takes the current value of the given field and stores this value as init\nvalue for resetting."
+            "body": "<p>Takes the current value of the given field and stores this value as init\n value for resetting.</p>"
           }
         ],
         "@param": [
@@ -302,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert when given argument is not a field."
+            "body": "<p>Assert when given argument is not a field.</p>"
           }
         ],
         "@param": [
@@ -460,7 +461,7 @@
     "location": {
       "start": {
         "line": 176,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 180,
@@ -471,7 +472,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

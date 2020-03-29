@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Static class that provides localized date information (like names of week\ndays, AM/PM markers, start of week, etc.)."
+          "body": "<p>Static class that provides localized date information (like names of week\n days, AM/PM markers, start of week, etc.).</p>"
         }
       ],
       "@cldr": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reference to the locale manager."
+            "body": "<p>Reference to the locale manager.</p>"
           }
         ],
         "@internal": [
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get AM marker for time definitions"
+            "body": "<p>Get AM marker for time definitions</p>"
           }
         ],
         "@param": [
@@ -120,7 +120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get PM marker for time definitions"
+            "body": "<p>Get PM marker for time definitions</p>"
           }
         ],
         "@param": [
@@ -159,15 +159,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized names of day names"
+            "body": "<p>Return localized names of day names</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "length {String} format of the day names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "body": "length {String} format of the day names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "paramName": "length",
-            "description": " format of the day names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "description": " format of the day names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "type": "qx.locale.String"
           },
           {
@@ -179,16 +179,16 @@
           },
           {
             "name": "@param",
-            "body": "context {String} (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "body": "context {String} (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "paramName": "context",
-            "description": " (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "description": " (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "type": "qx.locale.String"
           },
           {
             "name": "@param",
-            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\nin order to find a localized name for the day",
+            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\n in order to find a localized name for the day",
             "paramName": "withFallback",
-            "description": " if true, the previous parameter's other value is tried\nin order to find a localized name for the day",
+            "description": " if true, the previous parameter's other value is tried\n in order to find a localized name for the day",
             "optional": true,
             "type": "Boolean"
           }
@@ -220,15 +220,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized name of a week day name"
+            "body": "<p>Return localized name of a week day name</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "length {String} format of the day name.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "body": "length {String} format of the day name.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "paramName": "length",
-            "description": " format of the day name.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "description": " format of the day name.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "type": "qx.locale.String"
           },
           {
@@ -247,16 +247,16 @@
           },
           {
             "name": "@param",
-            "body": "context {String} (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "body": "context {String} (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "paramName": "context",
-            "description": " (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "description": " (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "type": "qx.locale.String"
           },
           {
             "name": "@param",
-            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\nin order to find a localized name for the day",
+            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\n in order to find a localized name for the day",
             "paramName": "withFallback",
-            "description": " if true, the previous parameter's other value is tried\nin order to find a localized name for the day",
+            "description": " if true, the previous parameter's other value is tried\n in order to find a localized name for the day",
             "optional": true,
             "type": "Boolean"
           }
@@ -288,15 +288,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized names of month names"
+            "body": "<p>Return localized names of month names</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "length {String} format of the month names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "body": "length {String} format of the month names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "paramName": "length",
-            "description": " format of the month names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "description": " format of the month names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "type": "qx.locale.String"
           },
           {
@@ -308,16 +308,16 @@
           },
           {
             "name": "@param",
-            "body": "context {String} (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "body": "context {String} (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "paramName": "context",
-            "description": " (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "description": " (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "type": "qx.locale.String"
           },
           {
             "name": "@param",
-            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\nin order to find a localized name for the month",
+            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\n in order to find a localized name for the month",
             "paramName": "withFallback",
-            "description": " if true, the previous parameter's other value is tried\nin order to find a localized name for the month",
+            "description": " if true, the previous parameter's other value is tried\n in order to find a localized name for the month",
             "optional": true,
             "type": "Boolean"
           }
@@ -349,15 +349,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized name of a month"
+            "body": "<p>Return localized name of a month</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "length {String} format of the month names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "body": "length {String} format of the month names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "paramName": "length",
-            "description": " format of the month names.\nPossible values: \"abbreviated\", \"narrow\", \"wide\"",
+            "description": " format of the month names.\n       Possible values: \"abbreviated\", \"narrow\", \"wide\"",
             "type": "qx.locale.String"
           },
           {
@@ -376,16 +376,16 @@
           },
           {
             "name": "@param",
-            "body": "context {String} (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "body": "context {String} (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "paramName": "context",
-            "description": " (default: \"format\") intended context.\nPossible values: \"format\", \"stand-alone\"",
+            "description": " (default: \"format\") intended context.\n       Possible values: \"format\", \"stand-alone\"",
             "type": "qx.locale.String"
           },
           {
             "name": "@param",
-            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\nin order to find a localized name for the month",
+            "body": "withFallback {Boolean?} if true, the previous parameter's other value is tried\n in order to find a localized name for the month",
             "paramName": "withFallback",
-            "description": " if true, the previous parameter's other value is tried\nin order to find a localized name for the month",
+            "description": " if true, the previous parameter's other value is tried\n in order to find a localized name for the month",
             "optional": true,
             "type": "Boolean"
           }
@@ -417,15 +417,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized date format string to be used with {@link qx.util.format.DateFormat}."
+            "body": "<p>Return localized date format string to be used with {@link qx.util.format.DateFormat}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "size {String} format of the date format.\nPossible values: \"short\", \"medium\", \"long\", \"full\"",
+            "body": "size {String} format of the date format.\n      Possible values: \"short\", \"medium\", \"long\", \"full\"",
             "paramName": "size",
-            "description": " format of the date format.\nPossible values: \"short\", \"medium\", \"long\", \"full\"",
+            "description": " format of the date format.\n      Possible values: \"short\", \"medium\", \"long\", \"full\"",
             "type": "qx.locale.String"
           },
           {
@@ -464,15 +464,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Try to localize a date/time format string. For format string possibilities see\n<a href=\"http://cldr.unicode.org/translation/date-time\">Date/Time Symbol reference</a>\nat CLDR - Unicode Common Locale Data Repository.\n\nIf no localization is available take the fallback format string."
+            "body": "<p>Try to localize a date/time format string. For format string possibilities see\n <a href=\"http://cldr.unicode.org/translation/date-time\">Date/Time Symbol reference</a>\n at CLDR - Unicode Common Locale Data Repository.\n If no localization is available take the fallback format string.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "canonical {String} format string containing only field information, and in a canonical order.\nExamples are \"yyyyMMMM\" for year + full month, or \"MMMd\" for abbreviated month + day.",
+            "body": "canonical {String} format string containing only field information, and in a canonical order.\n       Examples are \"yyyyMMMM\" for year + full month, or \"MMMd\" for abbreviated month + day.",
             "paramName": "canonical",
-            "description": " format string containing only field information, and in a canonical order.\nExamples are \"yyyyMMMM\" for year + full month, or \"MMMd\" for abbreviated month + day.",
+            "description": " format string containing only field information, and in a canonical order.\n       Examples are \"yyyyMMMM\" for year + full month, or \"MMMd\" for abbreviated month + day.",
             "type": "qx.locale.String"
           },
           {
@@ -517,15 +517,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return localized time format string to be used with {@link qx.util.format.DateFormat}."
+            "body": "<p>Return localized time format string to be used with {@link qx.util.format.DateFormat}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "size {String} format of the time pattern.\nPossible values: \"short\", \"medium\", \"long\", \"full\"",
+            "body": "size {String} format of the time pattern.\n      Possible values: \"short\", \"medium\", \"long\", \"full\"",
             "paramName": "size",
-            "description": " format of the time pattern.\nPossible values: \"short\", \"medium\", \"long\", \"full\"",
+            "description": " format of the time pattern.\n      Possible values: \"short\", \"medium\", \"long\", \"full\"",
             "type": "qx.locale.String"
           },
           {
@@ -563,7 +563,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the day the week starts with\n\nReference: Common Locale Data Repository (cldr) supplementalData.xml"
+            "body": "<p>Return the day the week starts with\n Reference: Common Locale Data Repository (cldr) supplementalData.xml</p>"
           }
         ],
         "@param": [
@@ -602,7 +602,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the day the weekend starts with\n\nReference: Common Locale Data Repository (cldr) supplementalData.xml"
+            "body": "<p>Return the day the weekend starts with\n Reference: Common Locale Data Repository (cldr) supplementalData.xml</p>"
           }
         ],
         "@param": [
@@ -641,7 +641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the day the weekend ends with\n\nReference: Common Locale Data Repository (cldr) supplementalData.xml"
+            "body": "<p>Return the day the weekend ends with\n Reference: Common Locale Data Repository (cldr) supplementalData.xml</p>"
           }
         ],
         "@param": [
@@ -680,7 +680,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether a certain day of week belongs to the week end."
+            "body": "<p>Returns whether a certain day of week belongs to the week end.</p>"
           }
         ],
         "@param": [
@@ -726,7 +726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extract the territory part from a locale"
+            "body": "<p>Extract the territory part from a locale</p>"
           }
         ],
         "@param": [
@@ -765,15 +765,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Provide localization (CLDR) data with fallback between \"format\" and \"stand-alone\" contexts.\nIt is used in {@link #getDayName} and {@link #getMonthName} methods."
+            "body": "<p>Provide localization (CLDR) data with fallback between \"format\" and \"stand-alone\" contexts.\n It is used in {@link #getDayName} and {@link #getMonthName} methods.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "context {String} intended context.\nPossible values: \"format\", \"stand-alone\".",
+            "body": "context {String} intended context.\n       Possible values: \"format\", \"stand-alone\".",
             "paramName": "context",
-            "description": " intended context.\nPossible values: \"format\", \"stand-alone\".",
+            "description": " intended context.\n       Possible values: \"format\", \"stand-alone\".",
             "type": "qx.locale.String"
           },
           {

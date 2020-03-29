@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class represents a scroll able pane. This means that this widget\nmay contain content which is bigger than the available (inner)\ndimensions of this widget. The widget also offer methods to control\nthe scrolling position. It can only have exactly one child."
+          "body": "<p>This class represents a scroll able pane. This means that this widget\n may contain content which is bigger than the available (inner)\n dimensions of this widget. The widget also offer methods to control\n the scrolling position. It can only have exactly one child.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 37,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 60,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on resize of both the container or the content."
+            "body": "<p>Fired on resize of both the container or the content.</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on scroll animation end invoked by 'scroll*' methods."
+            "body": "<p>Fired on scroll animation end invoked by 'scroll*' methods.</p>"
           }
         ]
       },
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The horizontal scroll position"
+            "body": "<p>The horizontal scroll position</p>"
           }
         ]
       },
@@ -140,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The vertical scroll position"
+            "body": "<p>The vertical scroll position</p>"
           }
         ]
       },
@@ -183,11 +183,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONTENT MANAGEMENT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONTENT MANAGEMENT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Configures the content of the scroll pane. Replaces any existing child\nwith the newly given one."
+            "body": "<p>Configures the content of the scroll pane. Replaces any existing child\n with the newly given one.</p>"
           }
         ],
         "@param": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given widget from the content. The pane is empty\nafterwards as only one child is supported by the pane."
+            "body": "<p>Removes the given widget from the content. The pane is empty\n afterwards as only one child is supported by the pane.</p>"
           }
         ],
         "@param": [
@@ -253,7 +253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array containing the current content."
+            "body": "<p>Returns an array containing the current content.</p>"
           }
         ],
         "@return": [
@@ -283,11 +283,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for resize event of content and container"
+            "body": "<p>Event listener for resize event of content and container</p>"
           }
         ],
         "@param": [
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for scroll event of content"
+            "body": "<p>Event listener for scroll event of content</p>"
           }
         ],
         "@param": [
@@ -349,7 +349,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for appear event of content"
+            "body": "<p>Event listener for appear event of content</p>"
           }
         ],
         "@param": [
@@ -380,11 +380,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nITEM LOCATION SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ITEM LOCATION SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the top offset of the given item in relation to the\ninner height of this widget."
+            "body": "<p>Returns the top offset of the given item in relation to the\n inner height of this widget.</p>"
           }
         ],
         "@param": [
@@ -423,7 +423,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the top offset of the end of the given item in relation to the\ninner height of this widget."
+            "body": "<p>Returns the top offset of the end of the given item in relation to the\n inner height of this widget.</p>"
           }
         ],
         "@param": [
@@ -462,7 +462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the left offset of the given item in relation to the\ninner width of this widget."
+            "body": "<p>Returns the left offset of the given item in relation to the\n inner width of this widget.</p>"
           }
         ],
         "@param": [
@@ -501,7 +501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the left offset of the end of the given item in relation to the\ninner width of this widget."
+            "body": "<p>Returns the left offset of the end of the given item in relation to the\n inner width of this widget.</p>"
           }
         ],
         "@param": [
@@ -540,11 +540,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDIMENSIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DIMENSIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The size (identical with the preferred size) of the content."
+            "body": "<p>The size (identical with the preferred size) of the content.</p>"
           }
         ],
         "@return": [
@@ -574,11 +574,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The maximum horizontal scroll position."
+            "body": "<p>The maximum horizontal scroll position.</p>"
           }
         ],
         "@return": [
@@ -608,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum vertical scroll position."
+            "body": "<p>The maximum vertical scroll position.</p>"
           }
         ],
         "@return": [
@@ -638,7 +638,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content to the given left coordinate"
+            "body": "<p>Scrolls the element's content to the given left coordinate</p>"
           }
         ],
         "@param": [
@@ -677,7 +677,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content to the given top coordinate"
+            "body": "<p>Scrolls the element's content to the given top coordinate</p>"
           }
         ],
         "@param": [
@@ -716,7 +716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content horizontally by the given amount."
+            "body": "<p>Scrolls the element's content horizontally by the given amount.</p>"
           }
         ],
         "@param": [
@@ -757,7 +757,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the element's content vertically by the given amount."
+            "body": "<p>Scrolls the element's content vertically by the given amount.</p>"
           }
         ],
         "@param": [
@@ -798,7 +798,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If an scroll animation is running, it will be stopped with that method."
+            "body": "<p>If an scroll animation is running, it will be stopped with that method.</p>"
           }
         ]
       },
@@ -820,11 +820,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -849,7 +849,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Transform property"
+            "body": "<p>Transform property</p>"
           }
         ],
         "@param": [
@@ -888,7 +888,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -913,7 +913,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Transform property"
+            "body": "<p>Transform property</p>"
           }
         ],
         "@param": [

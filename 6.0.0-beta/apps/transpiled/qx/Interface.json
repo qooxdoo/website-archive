@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is used to define interfaces (similar to Java interfaces).\n\nSee the description of the {@link #define} method how an interface is\ndefined."
+          "body": "<p>This class is used to define interfaces (similar to Java interfaces).\n See the description of the {@link #define} method how an interface is\n defined.</p>"
         }
       ],
       "@require": [
@@ -53,11 +53,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Define a new interface. Interface definitions look much like class definitions.\n\nThe main difference is that the bodies of functions defined in <code>members</code>\nand <code>statics</code> are called before the original function with the\nsame arguments. This can be used to check the passed arguments. If the\nchecks fail, an exception should be thrown. It is convenient to use the\nmethod defined in {@link qx.core.MAssert} to check the arguments.\n\nIn the <code>build</code> version the checks are omitted.\n\nFor properties only the names are required so the value of the properties\ncan be empty maps.\n\nExample:\n<pre class='javascript'>\nqx.Interface.define(\"name\",\n{\nextend: [SuperInterfaces],\n\nstatics:\n{\nPI : 3.14\n},\n\nproperties: {\"color\": {}, \"name\": {} },\n\nmembers:\n{\nmeth1: function() {},\nmeth2: function(a, b) { this.assertArgumentsCount(arguments, 2, 2); },\nmeth3: function(c) { this.assertInterface(c.constructor, qx.some.Interface); }\n},\n\nevents :\n{\nkeydown : \"qx.event.type.KeySequence\"\n}\n});\n</pre>"
+            "body": "<p>Define a new interface. Interface definitions look much like class definitions.\n The main difference is that the bodies of functions defined in <code>members</code>\n and <code>statics</code> are called before the original function with the\n same arguments. This can be used to check the passed arguments. If the\n checks fail, an exception should be thrown. It is convenient to use the\n method defined in {@link qx.core.MAssert} to check the arguments.\n In the <code>build</code> version the checks are omitted.\n For properties only the names are required so the value of the properties\n can be empty maps.\n Example:\n </p>\n<pre class='javascript'>\n qx.Interface.define(\"name\",\n {\n   extend: [SuperInterfaces],\n   statics:\n   {\n     PI : 3.14\n   },\n   properties: {\"color\": {}, \"name\": {} },\n   members:\n   {\n     meth1: function() {},\n     meth2: function(a, b) { this.assertArgumentsCount(arguments, 2, 2); },\n     meth3: function(c) { this.assertInterface(c.constructor, qx.some.Interface); }\n   },\n   events :\n   {\n     keydown : \"qx.event.type.KeySequence\"\n   }\n });\n </pre>"
           }
         ],
         "@param": [
@@ -70,9 +70,9 @@
           },
           {
             "name": "@param",
-            "body": "config {Map ? null} Interface definition structure. The configuration map has the following keys:\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>extend</th><td>Interface |<br>Interface[]</td><td>Single interface or array of interfaces this interface inherits from.</td></tr>\n<tr><th>members</th><td>Map</td><td>Map of members of the interface.</td></tr>\n<tr><th>statics</th><td>Map</td><td>\nMap of statics of the interface. The statics will not get copied into the target class.\nThis is the same behaviour as statics in mixins ({@link qx.Mixin#define}).\n</td></tr>\n<tr><th>properties</th><td>Map</td><td>Map of properties and their definitions.</td></tr>\n<tr><th>events</th><td>Map</td><td>Map of event names and the corresponding event class name.</td></tr>\n</table>",
+            "body": "config {Map ? null} Interface definition structure. The configuration map has the following keys:\n   <table>\n     <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n     <tr><th>extend</th><td>Interface |<br>Interface[]</td><td>Single interface or array of interfaces this interface inherits from.</td></tr>\n     <tr><th>members</th><td>Map</td><td>Map of members of the interface.</td></tr>\n     <tr><th>statics</th><td>Map</td><td>\n         Map of statics of the interface. The statics will not get copied into the target class.\n         This is the same behaviour as statics in mixins ({@link qx.Mixin#define}).\n     </td></tr>\n     <tr><th>properties</th><td>Map</td><td>Map of properties and their definitions.</td></tr>\n     <tr><th>events</th><td>Map</td><td>Map of event names and the corresponding event class name.</td></tr>\n   </table>",
             "paramName": "config",
-            "description": " Interface definition structure. The configuration map has the following keys:\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>extend</th><td>Interface |<br>Interface[]</td><td>Single interface or array of interfaces this interface inherits from.</td></tr>\n<tr><th>members</th><td>Map</td><td>Map of members of the interface.</td></tr>\n<tr><th>statics</th><td>Map</td><td>\nMap of statics of the interface. The statics will not get copied into the target class.\nThis is the same behaviour as statics in mixins ({@link qx.Mixin#define}).\n</td></tr>\n<tr><th>properties</th><td>Map</td><td>Map of properties and their definitions.</td></tr>\n<tr><th>events</th><td>Map</td><td>Map of event names and the corresponding event class name.</td></tr>\n</table>",
+            "description": " Interface definition structure. The configuration map has the following keys:\n   <table>\n     <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n     <tr><th>extend</th><td>Interface |<br>Interface[]</td><td>Single interface or array of interfaces this interface inherits from.</td></tr>\n     <tr><th>members</th><td>Map</td><td>Map of members of the interface.</td></tr>\n     <tr><th>statics</th><td>Map</td><td>\n         Map of statics of the interface. The statics will not get copied into the target class.\n         This is the same behaviour as statics in mixins ({@link qx.Mixin#define}).\n     </td></tr>\n     <tr><th>properties</th><td>Map</td><td>Map of properties and their definitions.</td></tr>\n     <tr><th>events</th><td>Map</td><td>Map of event names and the corresponding event class name.</td></tr>\n   </table>",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an interface by name"
+            "body": "<p>Returns an interface by name</p>"
           }
         ],
         "@param": [
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine if interface exists"
+            "body": "<p>Determine if interface exists</p>"
           }
         ],
         "@param": [
@@ -183,7 +183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine the number of interfaces which are defined"
+            "body": "<p>Determine the number of interfaces which are defined</p>"
           }
         ],
         "@return": [
@@ -213,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates a list of all interfaces including their super interfaces\n(resolved recursively)"
+            "body": "<p>Generates a list of all interfaces including their super interfaces\n (resolved recursively)</p>"
           }
         ],
         "@param": [
@@ -254,7 +254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert members"
+            "body": "<p>Assert members</p>"
           }
         ],
         "@param": [
@@ -281,18 +281,18 @@
           },
           {
             "name": "@param",
-            "body": "wrap {Boolean ? false} wrap functions required by interface to\ncheck parameters etc.",
+            "body": "wrap {Boolean ? false} wrap functions required by interface to\n     check parameters etc.",
             "paramName": "wrap",
-            "description": " wrap functions required by interface to\ncheck parameters etc.",
+            "description": " wrap functions required by interface to\n     check parameters etc.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "shouldThrow {Boolean} if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "body": "shouldThrow {Boolean} if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "paramName": "shouldThrow",
-            "description": " if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "description": " if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "type": "Boolean"
           }
         ],
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to detect if the method will be generated by the\nproperty system."
+            "body": "<p>Internal helper to detect if the method will be generated by the\n property system.</p>"
           }
         ],
         "@param": [
@@ -345,9 +345,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} true, if the method will be generated by the property\nsystem.",
+            "body": "{Boolean} true, if the method will be generated by the property\n   system.",
             "type": "Boolean",
-            "description": " true, if the method will be generated by the property\nsystem."
+            "description": " true, if the method will be generated by the property\n   system."
           }
         ]
       },
@@ -369,7 +369,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert properties"
+            "body": "<p>Assert properties</p>"
           }
         ],
         "@param": [
@@ -389,9 +389,9 @@
           },
           {
             "name": "@param",
-            "body": "shouldThrow {Boolean} if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "body": "shouldThrow {Boolean} if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "paramName": "shouldThrow",
-            "description": " if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "description": " if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "type": "Boolean"
           }
         ],
@@ -422,7 +422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert events"
+            "body": "<p>Assert events</p>"
           }
         ],
         "@param": [
@@ -442,9 +442,9 @@
           },
           {
             "name": "@param",
-            "body": "shouldThrow {Boolean} if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "body": "shouldThrow {Boolean} if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "paramName": "shouldThrow",
-            "description": " if <code>false</code>, the method\nwill return a boolean instead of throwing an exception",
+            "description": " if <code>false</code>, the method\n   will return a boolean instead of throwing an exception",
             "type": "Boolean"
           }
         ],
@@ -475,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asserts that the given object implements all the methods defined in the\ninterface. This method throws an exception if the object does not\nimplement the interface."
+            "body": "<p>Asserts that the given object implements all the methods defined in the\n interface. This method throws an exception if the object does not\n implement the interface.</p>"
           }
         ],
         "@param": [
@@ -513,7 +513,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if an interface is implemented by a class"
+            "body": "<p>Checks if an interface is implemented by a class</p>"
           }
         ],
         "@param": [
@@ -533,9 +533,9 @@
           },
           {
             "name": "@param",
-            "body": "wrap {Boolean ? false} wrap functions required by interface to\ncheck parameters etc.",
+            "body": "wrap {Boolean ? false} wrap functions required by interface to\n     check parameters etc.",
             "paramName": "wrap",
-            "description": " wrap functions required by interface to\ncheck parameters etc.",
+            "description": " wrap functions required by interface to\n     check parameters etc.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -560,7 +560,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asserts that the given object implements all the methods defined in the\ninterface."
+            "body": "<p>Asserts that the given object implements all the methods defined in the\n interface.</p>"
           }
         ],
         "@param": [
@@ -606,7 +606,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tests whether an interface is implemented by a class, without throwing an\nexception when it doesn't."
+            "body": "<p>Tests whether an interface is implemented by a class, without throwing an\n exception when it doesn't.</p>"
           }
         ],
         "@param": [
@@ -652,11 +652,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPRIVATE/INTERNAL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PRIVATE/INTERNAL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method will be attached to all interface to return\na nice identifier for them."
+            "body": "<p>This method will be attached to all interface to return\n a nice identifier for them.</p>"
           }
         ],
         "@internal": [
@@ -692,7 +692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registry of all defined interfaces"
+            "body": "<p>Registry of all defined interfaces</p>"
           }
         ]
       },
@@ -714,7 +714,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wrap a method with a precondition check."
+            "body": "<p>Wrap a method with a precondition check.</p>"
           }
         ],
         "@signature": [
@@ -726,9 +726,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "iface {String} Name of the interface, where the pre condition\nwas defined. (Used in error messages).",
+            "body": "iface {String} Name of the interface, where the pre condition\n   was defined. (Used in error messages).",
             "paramName": "iface",
-            "description": " Name of the interface, where the pre condition\nwas defined. (Used in error messages).",
+            "description": " Name of the interface, where the pre condition\n   was defined. (Used in error messages).",
             "type": "String"
           },
           {
@@ -747,9 +747,9 @@
           },
           {
             "name": "@param",
-            "body": "preCondition {Function}. This function gets called with the arguments of the\noriginal function. If this function return true the original function is called.\nOtherwise an exception is thrown.",
+            "body": "preCondition {Function}. This function gets called with the arguments of the\n   original function. If this function return true the original function is called.\n   Otherwise an exception is thrown.",
             "paramName": "preCondition",
-            "description": ". This function gets called with the arguments of the\noriginal function. If this function return true the original function is called.\nOtherwise an exception is thrown.",
+            "description": ". This function gets called with the arguments of the\n   original function. If this function return true the original function is called.\n   Otherwise an exception is thrown.",
             "type": "Function"
           }
         ],
@@ -808,7 +808,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates incoming configuration and checks keys and values"
+            "body": "<p>Validates incoming configuration and checks keys and values</p>"
           }
         ],
         "@signature": [

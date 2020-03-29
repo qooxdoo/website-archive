@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Utility module to give some support to work with arrays."
+          "body": "<p>Utility module to give some support to work with arrays.</p>"
         }
       ],
       "@group": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts an array like object to any other array like\nobject.\n\nAttention: The returned array may be same\ninstance as the incoming one if the constructor is identical!"
+            "body": "<p>Converts an array like object to any other array like\n object.\n Attention: The returned array may be same\n instance as the incoming one if the constructor is identical!</p>"
           }
         ],
         "@signature": [
@@ -120,7 +120,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the two arrays have the same content. Checks only the\nequality of the arrays' content."
+            "body": "<p>Check whether the two arrays have the same content. Checks only the\n equality of the arrays' content.</p>"
           }
         ],
         "@signature": [
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Modifies the first array as it removes all elements\nwhich are listed in the second array as well."
+            "body": "<p>Modifies the first array as it removes all elements\n which are listed in the second array as well.</p>"
           }
         ],
         "@signature": [
@@ -236,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert an arguments object into an array."
+            "body": "<p>Convert an arguments object into an array.</p>"
           }
         ],
         "@signature": [
@@ -296,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element into the array after a given second element."
+            "body": "<p>Insert an element into the array after a given second element.</p>"
           }
         ],
         "@signature": [
@@ -361,7 +361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element into the array before a given second element."
+            "body": "<p>Insert an element into the array before a given second element.</p>"
           }
         ],
         "@signature": [
@@ -426,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the highest value in the given array. Supports\nnumeric values only."
+            "body": "<p>Returns the highest value in the given array. Supports\n numeric values only.</p>"
           }
         ],
         "@signature": [
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the lowest value in the given array. Supports\nnumeric values only."
+            "body": "<p>Returns the lowest value in the given array. Supports\n numeric values only.</p>"
           }
         ],
         "@signature": [
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an element from the array."
+            "body": "<p>Remove an element from the array.</p>"
           }
         ],
         "@signature": [
@@ -586,7 +586,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all elements from the array"
+            "body": "<p>Remove all elements from the array</p>"
           }
         ],
         "@signature": [
@@ -637,7 +637,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recreates an array which is free of all duplicate elements from the original.\nThis method do not modifies the original array!\nKeep in mind that this methods deletes undefined indexes."
+            "body": "<p>Recreates an array which is free of all duplicate elements from the original.\n This method do not modifies the original array!\n Keep in mind that this methods deletes undefined indexes.</p>"
           }
         ],
         "@signature": [
@@ -664,9 +664,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} Returns a copy with no duplicates\nor the original array if no duplicates were found.",
+            "body": "{Array} Returns a copy with no duplicates\n   or the original array if no duplicates were found.",
             "type": "qx.module.util.Array",
-            "description": " Returns a copy with no duplicates\nor the original array if no duplicates were found."
+            "description": " Returns a copy with no duplicates\n   or the original array if no duplicates were found."
           }
         ]
       },
@@ -688,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new array with integers from start to stop incremented or decremented by step."
+            "body": "<p>Returns a new array with integers from start to stop incremented or decremented by step.</p>"
           }
         ],
         "@signature": [
@@ -743,13 +743,14 @@
     "location": {
       "start": {
         "line": 192,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 194,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

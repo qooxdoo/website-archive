@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Util for mouse wheel normalization."
+          "body": "<p>Util for mouse wheel normalization.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximal measured scroll wheel delta."
+            "body": "<p>The maximal measured scroll wheel delta.</p>"
           }
         ],
         "@internal": [
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The minimal measured scroll wheel delta."
+            "body": "<p>The minimal measured scroll wheel delta.</p>"
           }
         ],
         "@internal": [
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The normalization factor for the speed calculation."
+            "body": "<p>The normalization factor for the speed calculation.</p>"
           }
         ],
         "@internal": [
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Is the Wheel actually a touchpad ?"
+            "body": "<p>Is the Wheel actually a touchpad ?</p>"
           }
         ],
         "@internal": [
@@ -159,7 +159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the amount the wheel has been scrolled"
+            "body": "<p>Get the amount the wheel has been scrolled</p>"
           }
         ],
         "@param": [
@@ -172,9 +172,9 @@
           },
           {
             "name": "@param",
-            "body": "axis {String?} Optional parameter which defines the scroll axis.\nThe value can either be <code>\"x\"</code> or <code>\"y\"</code>.",
+            "body": "axis {String?} Optional parameter which defines the scroll axis.\n   The value can either be <code>\"x\"</code> or <code>\"y\"</code>.",
             "paramName": "axis",
-            "description": " Optional parameter which defines the scroll axis.\nThe value can either be <code>\"x\"</code> or <code>\"y\"</code>.",
+            "description": " Optional parameter which defines the scroll axis.\n   The value can either be <code>\"x\"</code> or <code>\"y\"</code>.",
             "optional": true,
             "type": "String"
           }
@@ -182,9 +182,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} Scroll wheel movement for the given axis. If no axis\nis given, the y axis is used.",
+            "body": "{Integer} Scroll wheel movement for the given axis. If no axis\n   is given, the y axis is used.",
             "type": "Integer",
-            "description": " Scroll wheel movement for the given axis. If no axis\nis given, the y axis is used."
+            "description": " Scroll wheel movement for the given axis. If no axis\n   is given, the y axis is used."
           }
         ]
       },
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Normalizer for the mouse wheel data."
+            "body": "<p>Normalizer for the mouse wheel data.</p>"
           }
         ],
         "@param": [
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recalculates the factor with which the calculated delta is normalized."
+            "body": "<p>Recalculates the factor with which the calculated delta is normalized.</p>"
           }
         ]
       },

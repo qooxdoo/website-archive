@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A multi-purpose widget, which combines a label with an icon.\n\nThe intended purpose of qx.ui.basic.Atom is to easily align the common icon-text\ncombination in different ways.\n\nThis is useful for all types of buttons, tooltips, ...\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar atom = new qx.ui.basic.Atom(\"Icon Right\", \"icon/32/actions/go-next.png\");\nthis.getRoot().add(atom);\n</pre>\n\nThis example creates an atom with the label \"Icon Right\" and an icon.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/atom.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>A multi-purpose widget, which combines a label with an icon.\n The intended purpose of qx.ui.basic.Atom is to easily align the common icon-text\n combination in different ways.\n This is useful for all types of buttons, tooltips, …\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var atom = new qx.ui.basic.Atom(\"Icon Right\", \"icon/32/actions/go-next.png\");\n   this.getRoot().add(atom);\n </pre>\n<p>This example creates an atom with the label \"Icon Right\" and an icon.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/atom.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ],
       "@childControl": [
@@ -51,7 +51,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 80,
@@ -62,7 +62,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label/caption/text of the qx.ui.basic.Atom instance"
+            "body": "<p>The label/caption/text of the qx.ui.basic.Atom instance</p>"
           }
         ]
       },
@@ -161,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Switches between rich HTML and text content. The text mode (<code>false</code>) supports\nadvanced features like ellipsis when the available space is not\nenough. HTML mode (<code>true</code>) supports multi-line content and all the\nmarkup features of HTML content."
+            "body": "<p>Switches between rich HTML and text content. The text mode (<code>false</code>) supports\n advanced features like ellipsis when the available space is not\n enough. HTML mode (<code>true</code>) supports multi-line content and all the\n markup features of HTML content.</p>"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Any URI String supported by qx.ui.basic.Image to display an icon"
+            "body": "<p>Any URI String supported by qx.ui.basic.Image to display an icon</p>"
           }
         ]
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The space between the icon and the label"
+            "body": "<p>The space between the icon and the label</p>"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure the visibility of the sub elements/widgets.\nPossible values: both, label, icon"
+            "body": "<p>Configure the visibility of the sub elements/widgets.\n Possible values: both, label, icon</p>"
           }
         ]
       },
@@ -278,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The position of the icon in relation to the text.\nOnly useful/needed if text and icon is configured and 'show' is configured as 'both' (default)"
+            "body": "<p>The position of the icon in relation to the text.\n Only useful/needed if text and icon is configured and 'show' is configured as 'both' (default)</p>"
           }
         ]
       },
@@ -314,7 +314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the content should be rendered centrally when to much space\nis available. Enabling this property centers in both axis. The behavior\nwhen disabled of the centering depends on the {@link #iconPosition} property.\nIf the icon position is <code>left</code> or <code>right</code>, the X axis\nis not centered, only the Y axis. If the icon position is <code>top</code>\nor <code>bottom</code>, the Y axis is not centered. In case of e.g. an\nicon position of <code>top-left</code> no axis is centered."
+            "body": "<p>Whether the content should be rendered centrally when to much space\n is available. Enabling this property centers in both axis. The behavior\n when disabled of the centering depends on the {@link #iconPosition} property.\n If the icon position is <code>left</code> or <code>right</code>, the X axis\n is not centered, only the Y axis. If the icon position is <code>top</code>\n or <code>bottom</code>, the Y axis is not centered. In case of e.g. an\n icon position of <code>top-left</code> no axis is centered.</p>"
           }
         ]
       },
@@ -359,22 +359,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the visibility of the label"
+            "body": "<p>Updates the visibility of the label</p>"
           }
         ]
       },
@@ -465,7 +465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the visibility of the icon"
+            "body": "<p>Updates the visibility of the icon</p>"
           }
         ]
       },
@@ -487,7 +487,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -512,7 +512,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -537,7 +537,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -562,7 +562,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -587,7 +587,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -637,7 +637,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -662,7 +662,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -685,7 +685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -727,7 +727,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -783,7 +783,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -832,7 +832,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -895,7 +895,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [

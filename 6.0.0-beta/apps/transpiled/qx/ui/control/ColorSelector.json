@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nJonathan Weiß (jonathan_rass)\nMatthew Gregory\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Jonathan Weiß (jonathan_rass)\n Matthew Gregory\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A typical color selector as known from native applications.\n\nIncludes support for RGB and HSB color areas."
+          "body": "<p>A typical color selector as known from native applications.\n Includes support for RGB and HSB color areas.</p>"
         }
       ],
       "@childControl": [
@@ -214,7 +214,7 @@
     "location": {
       "start": {
         "line": 70,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 80,
@@ -225,11 +225,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Creates a ColorSelector."
+          "body": "<p>Creates a ColorSelector.</p>"
         }
       ]
     }
@@ -250,7 +250,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the \"OK\" button is tapped."
+            "body": "<p>Fired when the \"OK\" button is tapped.</p>"
           }
         ]
       },
@@ -272,7 +272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the \"Cancel\" button is tapped."
+            "body": "<p>Fired when the \"Cancel\" button is tapped.</p>"
           }
         ]
       },
@@ -294,7 +294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the value changes"
+            "body": "<p>Fired when the value changes</p>"
           }
         ]
       },
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric red value of the selected color."
+            "body": "<p>The numeric red value of the selected color.</p>"
           }
         ]
       },
@@ -373,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric green value of the selected color."
+            "body": "<p>The numeric green value of the selected color.</p>"
           }
         ]
       },
@@ -399,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric blue value of the selected color."
+            "body": "<p>The numeric blue value of the selected color.</p>"
           }
         ]
       },
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric hue value."
+            "body": "<p>The numeric hue value.</p>"
           }
         ]
       },
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric saturation value."
+            "body": "<p>The numeric saturation value.</p>"
           }
         ]
       },
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The numeric brightness value."
+            "body": "<p>The numeric brightness value.</p>"
           }
         ]
       },
@@ -521,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONTEXT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONTEXT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -699,7 +699,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "internal boolean flag to signal, that the value is set to null"
+            "body": "<p>internal boolean flag to signal, that the value is set to null</p>"
           }
         ]
       },
@@ -721,7 +721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "internal mutex to prevent the changeValue event to be fired too often"
+            "body": "<p>internal mutex to prevent the changeValue event to be fired too often</p>"
           }
         ]
       },
@@ -743,22 +743,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -795,7 +795,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The value of the ColorSelector is a string containing the HEX value of\nthe currently selected color. Take a look at\n{@link qx.util.ColorUtil#stringToRgb} to see what kind of input the\nmethod can handle."
+            "body": "<p>The value of the ColorSelector is a string containing the HEX value of\n the currently selected color. Take a look at\n {@link qx.util.ColorUtil#stringToRgb} to see what kind of input the\n method can handle.</p>"
           }
         ],
         "@param": [
@@ -831,15 +831,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently selected color."
+            "body": "<p>Returns the currently selected color.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String | null} The HEX value of the color of if not color\nis set, null.",
+            "body": "{String | null} The HEX value of the color of if not color\n   is set, null.",
             "type": "String | null",
-            "description": " The HEX value of the color of if not color\nis set, null."
+            "description": " The HEX value of the color of if not color\n   is set, null."
           }
         ]
       },
@@ -866,7 +866,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the color to null."
+            "body": "<p>Resets the color to null.</p>"
           }
         ]
       },
@@ -893,7 +893,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for firing the changeValue event and checking for the mutex."
+            "body": "<p>Helper for firing the changeValue event and checking for the mutex.</p>"
           }
         ]
       },
@@ -915,11 +915,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRGB MODIFIER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RGB MODIFIER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -944,7 +944,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -969,7 +969,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -994,11 +994,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHSB MODIFIER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HSB MODIFIER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1023,7 +1023,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1048,7 +1048,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1073,11 +1073,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBRIGHTNESS IMPLEMENTATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BRIGHTNESS IMPLEMENTATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Listener of pointerdown event on the brightness handle.\nAdjusts the color by changing the brightness."
+            "body": "<p>Listener of pointerdown event on the brightness handle.\n Adjusts the color by changing the brightness.</p>"
           }
         ],
         "@param": [
@@ -1108,7 +1108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointerup event on the brightness handle.\nReleases the capture."
+            "body": "<p>Listener of pointerup event on the brightness handle.\n Releases the capture.</p>"
           }
         ],
         "@param": [
@@ -1139,7 +1139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointermove event on the brightness handle.\nForwards the event to _setBrightnessOnFieldEvent()."
+            "body": "<p>Listener of pointermove event on the brightness handle.\n Forwards the event to _setBrightnessOnFieldEvent().</p>"
           }
         ],
         "@param": [
@@ -1170,7 +1170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointerdown event on the brightness field.\nAdjusts the color by changing the brightness."
+            "body": "<p>Listener of pointerdown event on the brightness field.\n Adjusts the color by changing the brightness.</p>"
           }
         ],
         "@param": [
@@ -1201,7 +1201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of roll event on the brightness pane.\nAdjusts the color by changing the brightness."
+            "body": "<p>Listener of roll event on the brightness pane.\n Adjusts the color by changing the brightness.</p>"
           }
         ],
         "@param": [
@@ -1232,7 +1232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the brightness and moves the brightness handle."
+            "body": "<p>Sets the brightness and moves the brightness handle.</p>"
           }
         ],
         "@param": [
@@ -1263,11 +1263,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHUE/SATURATION IMPLEMENTATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HUE/SATURATION IMPLEMENTATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Listener of pointerup event on the saturation handle.\nReleases pointer capture."
+            "body": "<p>Listener of pointerup event on the saturation handle.\n Releases pointer capture.</p>"
           }
         ],
         "@param": [
@@ -1298,7 +1298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointermove event on the saturation handle.\nForwards the event to _onHueSaturationHandlePointerMove()."
+            "body": "<p>Listener of pointermove event on the saturation handle.\n Forwards the event to _onHueSaturationHandlePointerMove().</p>"
           }
         ],
         "@param": [
@@ -1329,7 +1329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of pointerdown event on the saturation field.\nAdjusts the color by changing the saturation.\nSets pointer capture."
+            "body": "<p>Listener of pointerdown event on the saturation field.\n Adjusts the color by changing the saturation.\n Sets pointer capture.</p>"
           }
         ],
         "@param": [
@@ -1360,7 +1360,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener of roll event on the saturation pane.\nAdjusts the color by changing the saturation."
+            "body": "<p>Listener of roll event on the saturation pane.\n Adjusts the color by changing the saturation.</p>"
           }
         ],
         "@param": [
@@ -1391,7 +1391,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the saturation and moves the saturation handle."
+            "body": "<p>Sets the saturation and moves the saturation handle.</p>"
           }
         ],
         "@param": [
@@ -1422,11 +1422,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRGB SPINNER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RGB SPINNER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets widget's red value to spinner's value."
+            "body": "<p>Sets widget's red value to spinner's value.</p>"
           }
         ]
       },
@@ -1448,7 +1448,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets widget's green value to spinner's value."
+            "body": "<p>Sets widget's green value to spinner's value.</p>"
           }
         ]
       },
@@ -1470,7 +1470,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets widget's blue value to spinner's value."
+            "body": "<p>Sets widget's blue value to spinner's value.</p>"
           }
         ]
       },
@@ -1492,11 +1492,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHSB SPINNER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HSB SPINNER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets widget's hue value to spinner's value."
+            "body": "<p>Sets widget's hue value to spinner's value.</p>"
           }
         ]
       },
@@ -1518,7 +1518,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets widget's saturation value to spinner's value."
+            "body": "<p>Sets widget's saturation value to spinner's value.</p>"
           }
         ]
       },
@@ -1540,7 +1540,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets widget's brightness value to spinner's value."
+            "body": "<p>Sets widget's brightness value to spinner's value.</p>"
           }
         ]
       },
@@ -1562,11 +1562,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHEX FIELD\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HEX FIELD\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Changes red, green and blue value to the corresponding hexfield value."
+            "body": "<p>Changes red, green and blue value to the corresponding hexfield value.</p>"
           }
         ],
         "@param": [
@@ -1597,7 +1597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets hexfield value to it's corresponding red, green and blue value."
+            "body": "<p>Sets hexfield value to it's corresponding red, green and blue value.</p>"
           }
         ]
       },
@@ -1619,11 +1619,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOLOR FIELD\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COLOR FIELD\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Listener of tap event on the color field.\nSets red, green and blue values to tapped color field's background color."
+            "body": "<p>Listener of tap event on the color field.\n Sets red, green and blue values to tapped color field's background color.</p>"
           }
         ],
         "@param": [
@@ -1654,11 +1654,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRGB/HSB SYNC\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RGB/HSB SYNC\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets hue value to it's corresponding red, green and blue value."
+            "body": "<p>Sets hue value to it's corresponding red, green and blue value.</p>"
           }
         ]
       },
@@ -1680,7 +1680,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets red, green and blue value to corresponding hue value."
+            "body": "<p>Sets red, green and blue value to corresponding hue value.</p>"
           }
         ]
       },
@@ -1702,11 +1702,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPREVIEW SYNC\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PREVIEW SYNC\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets preview pane's background color to corresponding red, green and blue color values."
+            "body": "<p>Sets preview pane's background color to corresponding red, green and blue color values.</p>"
           }
         ]
       },
@@ -1728,7 +1728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets previous color's to given values."
+            "body": "<p>Sets previous color's to given values.</p>"
           }
         ],
         "@param": [
@@ -1773,7 +1773,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the background of the brightness field to give a nicer gradient"
+            "body": "<p>Updates the background of the brightness field to give a nicer gradient</p>"
           }
         ]
       },
@@ -1795,7 +1795,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener for appear.\nSets preview pane's background color to the current color."
+            "body": "<p>Listener for appear.\n Sets preview pane's background color to the current color.</p>"
           }
         ],
         "@param": [
@@ -1823,7 +1823,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1865,7 +1865,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1921,7 +1921,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1970,7 +1970,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -2033,7 +2033,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [

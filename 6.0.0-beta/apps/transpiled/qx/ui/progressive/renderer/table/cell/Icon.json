@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nCarsten Lergenmueller (carstenl)\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Carsten Lergenmueller (carstenl)\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Abstract Icon cell renderer."
+          "body": "<p>Abstract Icon cell renderer.</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 41,
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Create a new instance of an Icon cell renderer"
+          "body": "<p>Create a new instance of an Icon cell renderer</p>"
         }
       ]
     }
@@ -70,7 +70,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A blank image for use as a spacer in place of another image"
+            "body": "<p>A blank image for use as a spacer in place of another image</p>"
           }
         ]
       },
@@ -92,15 +92,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve the URI for a blank image"
+            "body": "<p>Retrieve the URI for a blank image</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe URI of the blank image.",
+            "body": "{String}\n   The URI of the blank image.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe URI of the blank image."
+            "description": "\n   The URI of the blank image."
           }
         ]
       },
@@ -122,24 +122,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Identify the image to be displayed in the cell."
+            "body": "<p>Identify the image to be displayed in the cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "body": "cellInfo {Map}\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "paramName": "cellInfo",
-            "description": "\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "description": "\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>",
+            "body": "{Map}\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>",
             "type": "Map",
-            "description": "\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>"
+            "description": "\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>"
           }
         ]
       },
@@ -161,24 +161,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe style characteristics to be applied to this cell.",
+            "body": "{String}\n   The style characteristics to be applied to this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe style characteristics to be applied to this cell."
+            "description": "\n   The style characteristics to be applied to this cell."
           }
         ]
       },
@@ -204,24 +204,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe HTML content to be added to the cell div.",
+            "body": "{String}\n   The HTML content to be added to the cell div.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe HTML content to be added to the cell div."
+            "description": "\n   The HTML content to be added to the cell div."
           }
         ]
       },
@@ -247,24 +247,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Obtain the image data (url, tooltip) that's appropriate for this cell"
+            "body": "<p>Obtain the image data (url, tooltip) that's appropriate for this cell</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "body": "cellInfo {Map}\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "paramName": "cellInfo",
-            "description": "\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "description": "\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nSee {@link #_identifyImage}",
+            "body": "{Map}\n   See {@link #_identifyImage}",
             "type": "Map",
-            "description": "\nSee {@link #_identifyImage}"
+            "description": "\n   See {@link #_identifyImage}"
           }
         ]
       },

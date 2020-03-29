@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\nhttp://qooxdoo.org\n\nCopyright:\n2008 Dihedrals.com, http://www.dihedrals.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChris Banford (zermattchris)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Dihedrals.com, http://www.dihedrals.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Chris Banford (zermattchris)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class iterates over the lines in a flow layout."
+          "body": "<p>This class iterates over the lines in a flow layout.</p>"
         }
       ],
       "@internal": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 33,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 40,
@@ -58,9 +58,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "children {qx.ui.core.Widget[]} The children of the flow layout to\ncompute the lines from",
+          "body": "children {qx.ui.core.Widget[]} The children of the flow layout to\n    compute the lines from",
           "paramName": "children",
-          "description": " The children of the flow layout to\ncompute the lines from",
+          "description": " The children of the flow layout to\n    compute the lines from",
           "type": "qx.ui.core.Widget[]"
         },
         {
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the properties of the next line taking the available width into\naccount"
+            "body": "<p>Computes the properties of the next line taking the available width into\n account</p>"
           }
         ],
         "@param": [
@@ -184,7 +184,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the gap before the child at the given index"
+            "body": "<p>Computes the gap before the child at the given index</p>"
           }
         ],
         "@param": [
@@ -223,7 +223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether there are more lines"
+            "body": "<p>Whether there are more lines</p>"
           }
         ],
         "@return": [

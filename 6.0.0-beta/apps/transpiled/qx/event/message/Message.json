@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Christian Boulanger\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Boulanger\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Christian Boulanger\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Boulanger\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A message to be dispatched on the message bus."
+          "body": "<p>A message to be dispatched on the message bus.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 39,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -87,7 +87,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event name of the message. Based on this name the message is dispatched\nto the event listeners."
+            "body": "<p>Event name of the message. Based on this name the message is dispatched\n to the event listeners.</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Any data the sender wants to pass with the event."
+            "body": "<p>Any data the sender wants to pass with the event.</p>"
           }
         ]
       },
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A reference to the sending object."
+            "body": "<p>A reference to the sending object.</p>"
           }
         ]
       },
@@ -165,13 +165,14 @@
     "location": {
       "start": {
         "line": 91,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 95,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "getQxOwner": {

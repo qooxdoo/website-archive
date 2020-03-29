@@ -21,15 +21,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTobias Oetiker\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tobias Oetiker\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Table using the Remote table model. For this demo, a modified Remote model is\nused that generates row data itself instead of making calls to a backend."
+          "body": "<p>Table using the Remote table model. For this demo, a modified Remote model is\n used that generates row data itself instead of making calls to a backend.</p>"
         }
       ],
       "@tag": [
@@ -51,13 +51,14 @@
     "location": {
       "start": {
         "line": 35,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 39,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__timer": {

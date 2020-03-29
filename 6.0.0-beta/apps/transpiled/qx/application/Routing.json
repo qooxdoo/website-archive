@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Basic application routing manager.\n\nDefine routes to react on certain GET / POST / DELETE / PUT operations.\n\n* GET is triggered when the hash value of the url is changed. Can be called\nmanually by calling the {@link #executeGet} method.\n* POST / DELETE / PUT has to be triggered manually right now (will be changed later)\nby calling the {@link #executePost}, {@link #executeDelete}, {@link #executePut} method.\n\nThis manager can also be used to provide browser history.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar r = new qx.application.Routing();\n\n// show the start page, when no hash is given or the hash is \"#/\"\nr.onGet(\"/\", function(data) {\nstartPage.show();\n}, this);\n\n// whenever the url /address is called show the address book page.\nr.onGet(\"/address\", function(data) {\naddressBookPage.show();\n}, this);\n\n// address with the parameter \"id\"\nr.onGet(\"/address/{id}\", function(data) {\naddressPage.show();\nmodel.loadAddress(data.params.id);\n}, this);\n\n// Alternative you can use regExp for a route\nr.onGet(/address\\/(.*)/, function(data) {\naddressPage.show();\nmodel.loadAddress(data.params.0);\n}, this);\n\n// make sure that the data is always loaded\nr.onGet(\"/address.*\", function(data) {\nif (!model.isLoaded()) {\nmodel.loadAddresses();\n}\n}, this);\n\n// update the address\nr.onPost(\"/address/{id}\", function(data) {\nmodel.updateAddress(data.params.id);\n}, this);\n\n// delete the address and navigate back\nr.onDelete(\"/address/{id}\", function(data) {\nmodel.deleteAddress(data.params.id);\nr.executeGet(\"/address\", {reverse:true});\n}, this);\n</pre>\n\nThis example defines different routes to handle navigation events.\n\nNote this class must be disposed after use"
+          "body": "<p>Basic application routing manager.\n Define routes to react on certain GET / POST / DELETE / PUT operations.</p>\n<ul>\n<li>GET is triggered when the hash value of the url is changed. Can be called\nmanually by calling the {@link #executeGet} method.</li>\n<li><p>POST / DELETE / PUT has to be triggered manually right now (will be changed later)\nby calling the {@link #executePost}, {@link #executeDelete}, {@link #executePut} method.\nThis manager can also be used to provide browser history.\n<em>Example</em>\nHere is a little example of how to use the widget.</p></li>\n</ul>\n<pre class='javascript'>\n   var r = new qx.application.Routing();\n\n   r.onGet(\"/\", function(data) {\n     startPage.show();\n   }, this);\n\n   r.onGet(\"/address\", function(data) {\n     addressBookPage.show();\n   }, this);\n\n   r.onGet(\"/address/{id}\", function(data) {\n     addressPage.show();\n     model.loadAddress(data.params.id);\n   }, this);\n\n   r.onGet(/address\\/(.*)/, function(data) {\n     addressPage.show();\n     model.loadAddress(data.params.0);\n   }, this);\n\n   r.onGet(\"/address.*\", function(data) {\n     if (!model.isLoaded()) {\n       model.loadAddresses();\n     }\n   }, this);\n\n   r.onPost(\"/address/{id}\", function(data) {\n     model.updateAddress(data.params.id);\n   }, this);\n\n   r.onDelete(\"/address/{id}\", function(data) {\n     model.deleteAddress(data.params.id);\n     r.executeGet(\"/address\", {reverse:true});\n   }, this);\n </pre>\n<p>This example defines different routes to handle navigation events.\n Note this class must be disposed after use</p>"
         }
       ]
     }
@@ -37,13 +37,14 @@
     "location": {
       "start": {
         "line": 88,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 94,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "statics": {
     "DEFAULT_PATH": {
@@ -147,7 +148,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialization method used to execute the get route for the currently set history path.\nIf no path is set, either the given argument named <code>defaultPath</code>\nor the {@link #DEFAULT_PATH} will be used for initialization."
+            "body": "<p>Initialization method used to execute the get route for the currently set history path.\n If no path is set, either the given argument named <code>defaultPath</code>\n or the {@link #DEFAULT_PATH} will be used for initialization.</p>"
           }
         ],
         "@param": [
@@ -179,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if path is valid and registered in channel \"get\" and then just returns it.\nIf the path is not valid either the <code>defaultPath</code> (if given) or the\n{@link #DEFAULT_PATH} will be returned."
+            "body": "<p>Checks if path is valid and registered in channel \"get\" and then just returns it.\n If the path is not valid either the <code>defaultPath</code> (if given) or the\n {@link #DEFAULT_PATH} will be returned.</p>"
           }
         ],
         "@param": [
@@ -226,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a route handler for the \"get\" operation. The route gets called\nwhen the {@link #executeGet} method found a match."
+            "body": "<p>Adds a route handler for the \"get\" operation. The route gets called\n when the {@link #executeGet} method found a match.</p>"
           }
         ],
         "@param": [
@@ -282,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is a shorthand for {@link #onGet}."
+            "body": "<p>This is a shorthand for {@link #onGet}.</p>"
           }
         ],
         "@param": [
@@ -338,7 +339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a route handler for the \"post\" operation. The route gets called\nwhen the {@link #executePost} method found a match."
+            "body": "<p>Adds a route handler for the \"post\" operation. The route gets called\n when the {@link #executePost} method found a match.</p>"
           }
         ],
         "@param": [
@@ -394,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a route handler for the \"put\" operation. The route gets called\nwhen the {@link #executePut} method found a match."
+            "body": "<p>Adds a route handler for the \"put\" operation. The route gets called\n when the {@link #executePut} method found a match.</p>"
           }
         ],
         "@param": [
@@ -450,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a route handler for the \"delete\" operation. The route gets called\nwhen the {@link #executeDelete} method found a match."
+            "body": "<p>Adds a route handler for the \"delete\" operation. The route gets called\n when the {@link #executeDelete} method found a match.</p>"
           }
         ],
         "@param": [
@@ -506,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a route handler for the \"any\" operation. The \"any\" operation is called\nbefore all other operations."
+            "body": "<p>Adds a route handler for the \"any\" operation. The \"any\" operation is called\n before all other operations.</p>"
           }
         ],
         "@param": [
@@ -562,7 +563,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a registered route by the given id."
+            "body": "<p>Removes a registered route by the given id.</p>"
           }
         ],
         "@param": [
@@ -593,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hash change event handler."
+            "body": "<p>Hash change event handler.</p>"
           }
         ],
         "@param": [
@@ -624,7 +625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the get operation and informs all matching route handler."
+            "body": "<p>Executes the get operation and informs all matching route handler.</p>"
           }
         ],
         "@param": [
@@ -669,7 +670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the get operation and informs all matching route handler."
+            "body": "<p>Executes the get operation and informs all matching route handler.</p>"
           }
         ],
         "@param": [
@@ -707,7 +708,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is a shorthand for {@link #executeGet}."
+            "body": "<p>This is a shorthand for {@link #executeGet}.</p>"
           }
         ],
         "@param": [
@@ -745,7 +746,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the post operation and informs all matching route handler."
+            "body": "<p>Executes the post operation and informs all matching route handler.</p>"
           }
         ],
         "@param": [
@@ -790,7 +791,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the put operation and informs all matching route handler."
+            "body": "<p>Executes the put operation and informs all matching route handler.</p>"
           }
         ],
         "@param": [
@@ -835,7 +836,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the delete operation and informs all matching route handler."
+            "body": "<p>Executes the delete operation and informs all matching route handler.</p>"
           }
         ],
         "@param": [
@@ -880,7 +881,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns state value (history hash) of the navigation handler."
+            "body": "<p>Returns state value (history hash) of the navigation handler.</p>"
           }
         ],
         "@return": [
@@ -910,7 +911,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the custom data of a given path to the history."
+            "body": "<p>Adds the custom data of a given path to the history.</p>"
           }
         ],
         "@param": [
@@ -948,7 +949,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces the customData in the history objects with the recent custom data."
+            "body": "<p>Replaces the customData in the history objects with the recent custom data.</p>"
           }
         ],
         "@param": [
@@ -986,7 +987,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a history entry for a certain path."
+            "body": "<p>Returns a history entry for a certain path.</p>"
           }
         ],
         "@param": [
@@ -1025,15 +1026,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Navigates back to the previously executed path."
+            "body": "<p>Navigates back to the previously executed path.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "customData {Map?} The given custom data that should be propagated.\nIf it contains a key <code>defaultPath</code> and no history data is\navailable, its value is used as a target path. If it does not include\nsuch a key, the routing's default path is used instead (again only for\nempty history).\nThis behavior is useful for instance when reloading a page during\ndevelopment but expecting the page's back button always to work.",
+            "body": "customData {Map?} The given custom data that should be propagated.\n   If it contains a key <code>defaultPath</code> and no history data is\n   available, its value is used as a target path. If it does not include\n   such a key, the routing's default path is used instead (again only for\n   empty history).\n   This behavior is useful for instance when reloading a page during\n   development but expecting the page's back button always to work.",
             "paramName": "customData",
-            "description": " The given custom data that should be propagated.\nIf it contains a key <code>defaultPath</code> and no history data is\navailable, its value is used as a target path. If it does not include\nsuch a key, the routing's default path is used instead (again only for\nempty history).\nThis behavior is useful for instance when reloading a page during\ndevelopment but expecting the page's back button always to work.",
+            "description": " The given custom data that should be propagated.\n   If it contains a key <code>defaultPath</code> and no history data is\n   available, its value is used as a target path. If it does not include\n   such a key, the routing's default path is used instead (again only for\n   empty history).\n   This behavior is useful for instance when reloading a page during\n   development but expecting the page's back button always to work.",
             "optional": true,
             "type": "Map"
           }
@@ -1057,7 +1058,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decouples the Routing from the navigation handler."
+            "body": "<p>Decouples the Routing from the navigation handler.</p>"
           }
         ]
       },

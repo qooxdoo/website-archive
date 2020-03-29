@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Docks children to one of the edges.\n\n*Features*\n\n* Percent width for left/right/center attached children\n* Percent height for top/bottom/center attached children\n* Minimum and maximum dimensions\n* Prioritized growing/shrinking (flex)\n* Auto sizing\n* Margins and Spacings\n* Alignment in orthogonal axis (e.g. alignX of north attached)\n* Different sort options for children\n\n*Item Properties*\n\n<ul>\n<li><strong>edge</strong> <em>(String)</em>: The edge where the layout item\nshould be docked. This may be one of <code>north</code>, <code>east</code>,\n<code>south</code>, <code>west</code> or <code>center</code>. (Required)</li>\n<li><strong>width</strong> <em>(String)</em>: Defines a percent\nwidth for the item. The percent width,\nwhen specified, is used instead of the width defined by the size hint.\nThis is only supported for children added to the north or south edge or\nare centered in the middle of the layout.\nThe minimum and maximum width still takes care of the elements limitations.\nIt has no influence on the layout's size hint. Percents are mainly useful for\nwidgets which are sized by the outer hierarchy.\n</li>\n<li><strong>height</strong> <em>(String)</em>: Defines a percent\nheight for the item. The percent height,\nwhen specified, is used instead of the height defined by the size hint.\nThis is only supported for children added to the west or east edge or\nare centered in the middle of the layout.\nThe minimum and maximum height still takes care of the elements limitations.\nIt has no influence on the layout's size hint. Percents are mainly useful for\nwidgets which are sized by the outer hierarchy.\n</li>\n</ul>\n\n*Example*\n\n<pre class=\"javascript\">\nvar layout = new qx.ui.layout.Dock();\n\nvar w1 = new qx.ui.core.Widget();\nvar w2 = new qx.ui.core.Widget();\nvar w3 = new qx.ui.core.Widget();\n\nw1.setHeight(200);\nw2.setWidth(150);\n\nvar container = new qx.ui.container.Composite(layout);\ncontainer.add(w1, {edge:\"north\"});\ncontainer.add(w2, {edge:\"west\"});\ncontainer.add(w3, {edge:\"center\"});\n</pre>\n\n*Detailed Description*\n\nUsing this layout, items may be \"docked\" to a specific side\nof the available space. Each displayed item reduces the available space\nfor the following children. Priorities depend on the position of\nthe child in the internal children list.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/dock.html'>\nExtended documentation</a> and links to demos of this layout in the qooxdoo manual."
+          "body": "<p>Docks children to one of the edges.\n<em>Features</em></p>\n<ul>\n<li>Percent width for left/right/center attached children</li>\n<li>Percent height for top/bottom/center attached children</li>\n<li>Minimum and maximum dimensions</li>\n<li>Prioritized growing/shrinking (flex)</li>\n<li>Auto sizing</li>\n<li>Margins and Spacings</li>\n<li>Alignment in orthogonal axis (e.g. alignX of north attached)</li>\n<li><p>Different sort options for children\n<em>Item Properties</em></p></li>\n</ul>\n<ul>\n <li><strong>edge</strong> <em>(String)</em>: The edge where the layout item\n   should be docked. This may be one of <code>north</code>, <code>east</code>,\n   <code>south</code>, <code>west</code> or <code>center</code>. (Required)</li>\n <li><strong>width</strong> <em>(String)</em>: Defines a percent\n   width for the item. The percent width,\n   when specified, is used instead of the width defined by the size hint.\n   This is only supported for children added to the north or south edge or\n   are centered in the middle of the layout.\n   The minimum and maximum width still takes care of the elements limitations.\n   It has no influence on the layout's size hint. Percents are mainly useful for\n   widgets which are sized by the outer hierarchy.\n </li>\n <li><strong>height</strong> <em>(String)</em>: Defines a percent\n   height for the item. The percent height,\n   when specified, is used instead of the height defined by the size hint.\n   This is only supported for children added to the west or east edge or\n   are centered in the middle of the layout.\n   The minimum and maximum height still takes care of the elements limitations.\n   It has no influence on the layout's size hint. Percents are mainly useful for\n   widgets which are sized by the outer hierarchy.\n </li>\n </ul>\n<p><em>Example</em>\n </p>\n<pre class=\"javascript\">\n var layout = new qx.ui.layout.Dock();\n var w1 = new qx.ui.core.Widget();\n var w2 = new qx.ui.core.Widget();\n var w3 = new qx.ui.core.Widget();\n w1.setHeight(200);\n w2.setWidth(150);\n var container = new qx.ui.container.Composite(layout);\n container.add(w1, {edge:\"north\"});\n container.add(w2, {edge:\"west\"});\n container.add(w3, {edge:\"center\"});\n </pre>\n<p><em>Detailed Description</em>\n Using this layout, items may be \"docked\" to a specific side\n of the available space. Each displayed item reduces the available space\n for the following children. Priorities depend on the position of\n the child in the internal children list.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/dock.html'>\n Extended documentation</a> and links to demos of this layout in the qooxdoo manual.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 108,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 127,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The way the widgets should be displayed (in conjunction with their\nposition in the childrens array)."
+            "body": "<p>The way the widgets should be displayed (in conjunction with their\n position in the childrens array).</p>"
           }
         ]
       },
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Separator lines to use between the horizontal objects"
+            "body": "<p>Separator lines to use between the horizontal objects</p>"
           }
         ]
       },
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Separator lines to use between the vertical objects"
+            "body": "<p>Separator lines to use between the vertical objects</p>"
           }
         ]
       },
@@ -193,7 +193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether separators should be collapsed so when a spacing is\nconfigured the line go over into each other"
+            "body": "<p>Whether separators should be collapsed so when a spacing is\n configured the line go over into each other</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Horizontal spacing between two children"
+            "body": "<p>Horizontal spacing between two children</p>"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Vertical spacing between two children"
+            "body": "<p>Vertical spacing between two children</p>"
           }
         ]
       },
@@ -317,7 +317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -366,7 +366,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -459,7 +459,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rebuilds cache for sorted children list."
+            "body": "<p>Rebuilds cache for sorted children list.</p>"
           }
         ]
       },
@@ -481,11 +481,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -505,9 +505,9 @@
           },
           {
             "name": "@param",
-            "body": "padding {Map} Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "body": "padding {Map} Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "paramName": "padding",
-            "description": " Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "description": " Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "type": "Map"
           }
         ]
@@ -534,15 +534,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the dimensions each separator on both the <code>x</code> and\n<code>y</code> axis needs."
+            "body": "<p>Computes the dimensions each separator on both the <code>x</code> and\n <code>y</code> axis needs.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map with the keys <code>x</code> and\n<code>y</code>",
+            "body": "{Map} Map with the keys <code>x</code> and\n   <code>y</code>",
             "type": "Map",
-            "description": " Map with the keys <code>x</code> and\n<code>y</code>"
+            "description": " Map with the keys <code>x</code> and\n   <code>y</code>"
           }
         ]
       },
@@ -564,7 +564,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1128,7 +1128,7 @@
     "location": {
       "start": {
         "line": 935,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 937,
@@ -1139,7 +1139,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

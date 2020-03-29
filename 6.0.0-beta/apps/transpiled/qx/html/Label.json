@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A cross browser label instance with support for rich HTML and text labels.\n\nText labels supports ellipsis to reduce the text width.\n\nThe mode can be changed through the method {@link #setRich}\nwhich accepts a boolean value. The default mode is \"text\" which is\na good choice because it has a better performance."
+          "body": "<p>A cross browser label instance with support for rich HTML and text labels.\n Text labels supports ellipsis to reduce the text width.\n The mode can be changed through the method {@link #setRich}\n which accepts a boolean value. The default mode is \"text\" which is\n a good choice because it has a better performance.</p>"
         }
       ]
     }
@@ -61,11 +61,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nELEMENT API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ELEMENT API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -149,19 +149,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
-            "body": "be sure that style attributes are merged and not overwritten"
+            "body": "<p>be sure that style attributes are merged and not overwritten</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "fromMarkup {Boolean} Whether the copy should respect styles\ngiven from markup",
+            "body": "fromMarkup {Boolean} Whether the copy should respect styles\n   given from markup",
             "paramName": "fromMarkup",
-            "description": " Whether the copy should respect styles\ngiven from markup",
+            "description": " Whether the copy should respect styles\n   given from markup",
             "type": "Boolean"
           }
         ]
@@ -188,11 +188,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLABEL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LABEL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Toggles between rich HTML mode and pure text mode."
+            "body": "<p>Toggles between rich HTML mode and pure text mode.</p>"
           }
         ],
         "@param": [
@@ -231,7 +231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the HTML/text content depending on the content mode."
+            "body": "<p>Sets the HTML/text content depending on the content mode.</p>"
           }
         ],
         "@param": [
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current content."
+            "body": "<p>Get the current content.</p>"
           }
         ],
         "@return": [
@@ -300,7 +300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset the current content"
+            "body": "<p>Reset the current content</p>"
           }
         ],
         "@return": [

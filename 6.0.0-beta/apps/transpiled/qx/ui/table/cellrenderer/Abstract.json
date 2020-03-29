@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "An abstract data cell renderer that does the basic coloring\n(borders, selected look, ...)."
+          "body": "<p>An abstract data cell renderer that does the basic coloring\n (borders, selected look, …).</p>"
         }
       ],
       "@require": [
@@ -46,13 +46,14 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 49,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "defaultCellStyle": {
@@ -70,7 +71,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default cell style. The value of this property will be provided\nto the cell renderer as cellInfo.style."
+            "body": "<p>The default cell style. The value of this property will be provided\n to the cell renderer as cellInfo.style.</p>"
           }
         ]
       },
@@ -113,7 +114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the theme change."
+            "body": "<p>Handler for the theme change.</p>"
           }
         ],
         "@signature": [
@@ -141,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "the sum of the horizontal insets. This is needed to compute the box model\nindependent size"
+            "body": "<p>the sum of the horizontal insets. This is needed to compute the box model\n independent size</p>"
           }
         ]
       },
@@ -163,11 +164,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "paddingLeft + paddingRight + borderRight"
+            "body": "<p>paddingLeft + paddingRight + borderRight</p>"
           },
           {
             "name": "@description",
-            "body": "the sum of the vertical insets. This is needed to compute the box model\nindependent size"
+            "body": "<p>the sum of the vertical insets. This is needed to compute the box model\n independent size</p>"
           }
         ]
       },
@@ -189,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the style sheet used for the table cells."
+            "body": "<p>Creates the style sheet used for the table cells.</p>"
           }
         ]
       },
@@ -211,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a string of the cell element's HTML classes.\n\nThis method may be overridden by sub classes."
+            "body": "<p>Get a string of the cell element's HTML classes.\n This method may be overridden by sub classes.</p>"
           }
         ],
         "@param": [
@@ -250,15 +251,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the CSS styles that should be applied to the main div of this\ncell.\n\nThis method may be overridden by sub classes."
+            "body": "<p>Returns the CSS styles that should be applied to the main div of this\n cell.\n This method may be overridden by sub classes.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -289,24 +290,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve any extra attributes the cell renderer wants applied to this\ncell."
+            "body": "<p>Retrieve any extra attributes the cell renderer wants applied to this\n cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe extra attributes to be applied to this cell.",
+            "body": "{String}\n   The extra attributes to be applied to this cell.",
             "type": "qx.ui.table.cellrenderer.String",
-            "description": "\nThe extra attributes to be applied to this cell."
+            "description": "\n   The extra attributes to be applied to this cell."
           }
         ]
       },
@@ -328,15 +329,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the HTML that should be used inside the main div of this cell.\n\nThis method may be overridden by sub classes."
+            "body": "<p>Returns the HTML that should be used inside the main div of this cell.\n This method may be overridden by sub classes.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -367,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the cell size taking the box model into account"
+            "body": "<p>Get the cell size taking the box model into account</p>"
           }
         ],
         "@param": [
@@ -387,16 +388,16 @@
           },
           {
             "name": "@param",
-            "body": "insetX {Integer} The cell's horizontal insets, i.e. the sum of\nhorizontal paddings and borders",
+            "body": "insetX {Integer} The cell's horizontal insets, i.e. the sum of\n    horizontal paddings and borders",
             "paramName": "insetX",
-            "description": " The cell's horizontal insets, i.e. the sum of\nhorizontal paddings and borders",
+            "description": " The cell's horizontal insets, i.e. the sum of\n    horizontal paddings and borders",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "insetY {Integer} The cell's vertical insets, i.e. the sum of\nvertical paddings and borders",
+            "body": "insetY {Integer} The cell's vertical insets, i.e. the sum of\n    vertical paddings and borders",
             "paramName": "insetY",
-            "description": " The cell's vertical insets, i.e. the sum of\nvertical paddings and borders",
+            "description": " The cell's vertical insets, i.e. the sum of\n    vertical paddings and borders",
             "type": "Integer"
           }
         ],
@@ -427,31 +428,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n     create.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate.",
+            "description": " A map containing the information about the cell to\n     create.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "htmlArr {String[]} Target string container. The HTML of the data\ncell should be appended to this array.",
+            "body": "htmlArr {String[]} Target string container. The HTML of the data\n     cell should be appended to this array.",
             "paramName": "htmlArr",
-            "description": " Target string container. The HTML of the data\ncell should be appended to this array.",
+            "description": " Target string container. The HTML of the data\n     cell should be appended to this array.",
             "type": "String[]"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean|undefined}\nA return value of <i>true</i> specifies that no additional cells in\nthe row shall be rendered. This may be used, for example, for\nseparator rows or for other special rendering purposes. Traditional\ncell renderers had no defined return value, so returned nothing\n(undefined). If this method returns either false or nothing, then\nrendering continues with the next cell in the row, which the normal\nmode of operation.",
+            "body": "{Boolean|undefined}\n   A return value of <i>true</i> specifies that no additional cells in\n   the row shall be rendered. This may be used, for example, for\n   separator rows or for other special rendering purposes. Traditional\n   cell renderers had no defined return value, so returned nothing\n   (undefined). If this method returns either false or nothing, then\n   rendering continues with the next cell in the row, which the normal\n   mode of operation.",
             "type": "Boolean|undefined",
-            "description": "\nA return value of <i>true</i> specifies that no additional cells in\nthe row shall be rendered. This may be used, for example, for\nseparator rows or for other special rendering purposes. Traditional\ncell renderers had no defined return value, so returned nothing\n(undefined). If this method returns either false or nothing, then\nrendering continues with the next cell in the row, which the normal\nmode of operation."
+            "description": "\n   A return value of <i>true</i> specifies that no additional cells in\n   the row shall be rendered. This may be used, for example, for\n   separator rows or for other special rendering purposes. Traditional\n   cell renderers had no defined return value, so returned nothing\n   (undefined). If this method returns either false or nothing, then\n   rendering continues with the next cell in the row, which the normal\n   mode of operation."
           }
         ]
       },
@@ -653,13 +654,14 @@
     "location": {
       "start": {
         "line": 236,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 243,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.table.cellrenderer.AbstractImage",

@@ -27,19 +27,19 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A group box, which has a check box near the legend."
+          "body": "<p>A group box, which has a check box near the legend.</p>"
         }
       ],
       "@childControl": [
         {
           "name": "@childControl",
-          "body": "legend {qx.ui.form.CheckBox} checkbox to en-/disable the\ngroupbox content",
+          "body": "legend {qx.ui.form.CheckBox} checkbox to en-/disable the\n   groupbox content",
           "controlName": "legend",
-          "description": "checkbox to en-/disable the\ngroupbox content",
+          "description": "checkbox to en-/disable the\n   groupbox content",
           "type": "qx.ui.form.CheckBox"
         }
       ]
@@ -62,7 +62,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -174,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the included checkbox changed its value"
+            "body": "<p>Fired when the included checkbox changed its value</p>"
           }
         ]
       },
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the {@link #execute} method is invoked."
+            "body": "<p>Fired if the {@link #execute} method is invoked.</p>"
           }
         ]
       },
@@ -220,26 +220,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -303,11 +303,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for execute event of checkbox."
+            "body": "<p>Event listener for execute event of checkbox.</p>"
           }
         ],
         "@param": [
@@ -338,7 +338,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for change event of checkbox"
+            "body": "<p>Event listener for change event of checkbox</p>"
           }
         ],
         "@param": [
@@ -369,11 +369,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREDIRECTIONS TO LEGEND (CHECKBOX COMPATIBILITY MODE)\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REDIRECTIONS TO LEGEND (CHECKBOX COMPATIBILITY MODE)\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ]
       },
@@ -399,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -434,7 +434,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -468,7 +468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The value of the groupbox."
+            "body": "<p>The value of the groupbox.</p>"
           }
         ],
         "@return": [
@@ -503,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures the value of the groupbox."
+            "body": "<p>Configures the value of the groupbox.</p>"
           }
         ],
         "@param": [
@@ -539,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value."
+            "body": "<p>Resets the value.</p>"
           }
         ]
       },
@@ -564,7 +564,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -591,7 +591,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -636,11 +636,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -693,11 +693,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -724,7 +724,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -750,11 +750,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -781,7 +781,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -807,11 +807,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -838,7 +838,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -864,11 +864,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -895,7 +895,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -920,7 +920,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Forward the call with the given function name to the children container"
+            "body": "<p>Forward the call with the given function name to the children container</p>"
           }
         ],
         "@param": [
@@ -978,15 +978,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -1003,7 +1003,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -1028,7 +1028,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -1071,7 +1071,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child item."
+            "body": "<p>Remove the given child item.</p>"
           }
         ],
         "@param": [
@@ -1105,7 +1105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -1130,7 +1130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given item if it is\na child item. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given item if it is\n a child item. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1145,9 +1145,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given item is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given item is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given item is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given item is no child of this layout."
           }
         ]
       }
@@ -1164,7 +1164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1206,7 +1206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item before another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item before another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1248,7 +1248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item after another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item after another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1290,7 +1290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the item at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the item at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1324,15 +1324,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.layout.Abstract"
           }
         ]
@@ -1350,7 +1350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -1698,7 +1698,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [

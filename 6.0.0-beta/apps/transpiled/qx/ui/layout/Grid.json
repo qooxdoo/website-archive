@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 1447,
+        "line": 1512,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The grid layout manager arranges the items in a two dimensional\ngrid. Widgets can be placed into the grid's cells and may span multiple rows\nand columns.\n\n*Features*\n\n* Flex values for rows and columns\n* Minimal and maximal column and row sizes\n* Manually setting of column and row sizes\n* Horizontal and vertical alignment\n* Horizontal and vertical spacing\n* Column and row spans\n* Auto-sizing\n\n*Item Properties*\n\n<ul>\n<li><strong>row</strong> <em>(Integer)</em>: The row of the cell the\nwidget should occupy. Each cell can only containing one widget. This layout\nproperty is mandatory.\n</li>\n<li><strong>column</strong> <em>(Integer)</em>: The column of the cell the\nwidget should occupy. Each cell can only containing one widget. This layout\nproperty is mandatory.\n</li>\n<li><strong>rowSpan</strong> <em>(Integer)</em>: The number of rows, the\nwidget should span, starting from the row specified in the <code>row</code>\nproperty. The cells in the spanned rows must be empty as well.\n</li>\n<li><strong>colSpan</strong> <em>(Integer)</em>: The number of columns, the\nwidget should span, starting from the column specified in the <code>column</code>\nproperty. The cells in the spanned columns must be empty as well.\n</li>\n</ul>\n\n*Example*\n\nHere is a little example of how to use the grid layout.\n\n<pre class=\"javascript\">\nvar layout = new qx.ui.layout.Grid();\nlayout.setRowFlex(0, 1); // make row 0 flexible\nlayout.setColumnWidth(1, 200); // set with of column 1 to 200 pixel\n\nvar container = new qx.ui.container.Composite(layout);\ncontainer.add(new qx.ui.core.Widget(), {row: 0, column: 0});\ncontainer.add(new qx.ui.core.Widget(), {row: 0, column: 1});\ncontainer.add(new qx.ui.core.Widget(), {row: 1, column: 0, rowSpan: 2});\n</pre>\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/grid.html'>\nExtended documentation</a> and links to demos of this layout in the qooxdoo manual."
+          "body": "<p>The grid layout manager arranges the items in a two dimensional\n grid. Widgets can be placed into the grid's cells and may span multiple rows\n and columns.\n<em>Features</em></p>\n<ul>\n<li>Flex values for rows and columns</li>\n<li>Minimal and maximal column and row sizes</li>\n<li>Manually setting of column and row sizes</li>\n<li>Horizontal and vertical alignment</li>\n<li>Horizontal and vertical spacing</li>\n<li>Column and row spans</li>\n<li><p>Auto-sizing\n<em>Item Properties</em></p></li>\n</ul>\n<ul>\n <li><strong>row</strong> <em>(Integer)</em>: The row of the cell the\n   widget should occupy. Each cell can only containing one widget. This layout\n   property is mandatory.\n </li>\n <li><strong>column</strong> <em>(Integer)</em>: The column of the cell the\n   widget should occupy. Each cell can only containing one widget. This layout\n   property is mandatory.\n </li>\n <li><strong>rowSpan</strong> <em>(Integer)</em>: The number of rows, the\n   widget should span, starting from the row specified in the <code>row</code>\n   property. The cells in the spanned rows must be empty as well.\n </li>\n <li><strong>colSpan</strong> <em>(Integer)</em>: The number of columns, the\n   widget should span, starting from the column specified in the <code>column</code>\n   property. The cells in the spanned columns must be empty as well.\n </li>\n </ul>\n<p><em>Example</em>\n Here is a little example of how to use the grid layout.\n </p>\n<pre class=\"javascript\">\n var layout = new qx.ui.layout.Grid();\n layout.setRowFlex(0, 1);\n layout.setColumnWidth(1, 200);\n var container = new qx.ui.container.Composite(layout);\n container.add(new qx.ui.core.Widget(), {row: 0, column: 0});\n container.add(new qx.ui.core.Widget(), {row: 0, column: 1});\n container.add(new qx.ui.core.Widget(), {row: 1, column: 0, rowSpan: 2});\n </pre>\n<p><em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/grid.html'>\n Extended documentation</a> and links to demos of this layout in the qooxdoo manual.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 97,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 111,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,18 +56,18 @@
       "@param": [
         {
           "name": "@param",
-          "body": "spacingX {Integer?0} The horizontal spacing between grid cells.\nSets {@link #spacingX}.",
+          "body": "spacingX {Integer?0} The horizontal spacing between grid cells.\n     Sets {@link #spacingX}.",
           "paramName": "spacingX",
-          "description": " The horizontal spacing between grid cells.\nSets {@link #spacingX}.",
+          "description": " The horizontal spacing between grid cells.\n     Sets {@link #spacingX}.",
           "optional": true,
           "defaultValue": "0",
           "type": "Integer"
         },
         {
           "name": "@param",
-          "body": "spacingY {Integer?0} The vertical spacing between grid cells.\nSets {@link #spacingY}.",
+          "body": "spacingY {Integer?0} The vertical spacing between grid cells.\n     Sets {@link #spacingY}.",
           "paramName": "spacingY",
-          "description": " The vertical spacing between grid cells.\nSets {@link #spacingY}.",
+          "description": " The vertical spacing between grid cells.\n     Sets {@link #spacingY}.",
           "optional": true,
           "defaultValue": "0",
           "type": "Integer"
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The horizontal spacing between grid cells."
+            "body": "<p>The horizontal spacing between grid cells.</p>"
           }
         ]
       },
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The vertical spacing between grid cells."
+            "body": "<p>The vertical spacing between grid cells.</p>"
           }
         ]
       },
@@ -127,6 +127,32 @@
       "init": 0,
       "check": "Integer",
       "defaultValue": 0
+    },
+    "allowGrowSpannedCellWidth": {
+      "location": {
+        "start": {
+          "line": 153,
+          "column": 4
+        },
+        "end": {
+          "line": 158,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Allow growing of spanning cells' widths beyond the accumulated widths of the columns.\n The default behavior (init value false) is that the width of the spanning cell is\n determined by the accumulated width of the columns (plus spacing).\n Setting this property to true lets the cell width grow as needed to show\n the widget in the spanning cell, which also enlarges the width of the spanned columns.</p>"
+          }
+        ]
+      },
+      "name": "allowGrowSpannedCellWidth",
+      "propertyType": "new",
+      "apply": "_applyLayoutChange",
+      "init": false,
+      "check": "Boolean",
+      "defaultValue": false
     },
     "qxOwner": {
       "type": "property",
@@ -149,11 +175,11 @@
     "__grid": {
       "location": {
         "start": {
-          "line": 158,
+          "line": 173,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 173,
           "column": 17
         }
       },
@@ -177,11 +203,11 @@
     "__rowData": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 159,
+          "line": 174,
           "column": 20
         }
       },
@@ -191,11 +217,11 @@
     "__colData": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 175,
           "column": 4
         },
         "end": {
-          "line": 160,
+          "line": 175,
           "column": 20
         }
       },
@@ -205,11 +231,11 @@
     "__colSpans": {
       "location": {
         "start": {
-          "line": 162,
+          "line": 177,
           "column": 4
         },
         "end": {
-          "line": 162,
+          "line": 177,
           "column": 21
         }
       },
@@ -219,11 +245,11 @@
     "__rowSpans": {
       "location": {
         "start": {
-          "line": 163,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 163,
+          "line": 178,
           "column": 21
         }
       },
@@ -233,11 +259,11 @@
     "__maxRowIndex": {
       "location": {
         "start": {
-          "line": 164,
+          "line": 179,
           "column": 4
         },
         "end": {
-          "line": 164,
+          "line": 179,
           "column": 24
         }
       },
@@ -247,11 +273,11 @@
     "__maxColIndex": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 165,
+          "line": 180,
           "column": 24
         }
       },
@@ -261,11 +287,11 @@
     "__rowHeights": {
       "location": {
         "start": {
-          "line": 168,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 183,
           "column": 23
         }
       },
@@ -289,11 +315,11 @@
     "__colWidths": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 186,
           "column": 22
         }
       },
@@ -317,11 +343,11 @@
     "verifyLayoutProperty": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 191,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 207,
           "column": 6
         }
       },
@@ -329,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -366,11 +392,11 @@
     "__buildGrid": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 213,
           "column": 4
         },
         "end": {
-          "line": 281,
+          "line": 296,
           "column": 5
         }
       },
@@ -378,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rebuild the internal representation of the grid"
+            "body": "<p>Rebuild the internal representation of the grid</p>"
           }
         ]
       },
@@ -388,11 +414,11 @@
     "_setRowData": {
       "location": {
         "start": {
-          "line": 291,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 319,
           "column": 5
         }
       },
@@ -400,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores data for a grid row"
+            "body": "<p>Stores data for a grid row</p>"
           }
         ],
         "@param": [
@@ -433,11 +459,11 @@
     "_setColumnData": {
       "location": {
         "start": {
-          "line": 314,
+          "line": 329,
           "column": 4
         },
         "end": {
-          "line": 327,
+          "line": 342,
           "column": 5
         }
       },
@@ -445,7 +471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores data for a grid column"
+            "body": "<p>Stores data for a grid column</p>"
           }
         ],
         "@param": [
@@ -478,11 +504,11 @@
     "setSpacing": {
       "location": {
         "start": {
-          "line": 337,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 357,
           "column": 5
         }
       },
@@ -490,7 +516,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shortcut to set both horizontal and vertical spacing between grid cells\nto the same value."
+            "body": "<p>Shortcut to set both horizontal and vertical spacing between grid cells\n to the same value.</p>"
           }
         ],
         "@param": [
@@ -517,11 +543,11 @@
     "setColumnAlign": {
       "location": {
         "start": {
-          "line": 361,
+          "line": 376,
           "column": 4
         },
         "end": {
-          "line": 376,
+          "line": 391,
           "column": 5
         }
       },
@@ -529,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the default cell alignment for a column. This alignment can be\noverridden on a per cell basis by setting the cell's content widget's\n<code>alignX</code> and <code>alignY</code> properties.\n\nIf on a grid cell both row and a column alignment is set, the horizontal\nalignment is taken from the column and the vertical alignment is taken\nfrom the row."
+            "body": "<p>Set the default cell alignment for a column. This alignment can be\n overridden on a per cell basis by setting the cell's content widget's\n <code>alignX</code> and <code>alignY</code> properties.\n If on a grid cell both row and a column alignment is set, the horizontal\n alignment is taken from the column and the vertical alignment is taken\n from the row.</p>"
           }
         ],
         "@param": [
@@ -542,16 +568,16 @@
           },
           {
             "name": "@param",
-            "body": "hAlign {String} The horizontal alignment. Valid values are\n\"left\", \"center\" and \"right\".",
+            "body": "hAlign {String} The horizontal alignment. Valid values are\n    \"left\", \"center\" and \"right\".",
             "paramName": "hAlign",
-            "description": " The horizontal alignment. Valid values are\n\"left\", \"center\" and \"right\".",
+            "description": " The horizontal alignment. Valid values are\n    \"left\", \"center\" and \"right\".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "vAlign {String} The vertical alignment. Valid values are\n\"top\", \"middle\", \"bottom\"",
+            "body": "vAlign {String} The vertical alignment. Valid values are\n    \"top\", \"middle\", \"bottom\"",
             "paramName": "vAlign",
-            "description": " The vertical alignment. Valid values are\n\"top\", \"middle\", \"bottom\"",
+            "description": " The vertical alignment. Valid values are\n    \"top\", \"middle\", \"bottom\"",
             "type": "String"
           }
         ],
@@ -570,11 +596,11 @@
     "getColumnAlign": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 401,
           "column": 4
         },
         "end": {
-          "line": 394,
+          "line": 409,
           "column": 5
         }
       },
@@ -582,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a map of the column's alignment."
+            "body": "<p>Get a map of the column's alignment.</p>"
           }
         ],
         "@param": [
@@ -597,9 +623,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal column alignment.",
+            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal column alignment.",
             "type": "Map",
-            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal column alignment."
+            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal column alignment."
           }
         ]
       },
@@ -609,11 +635,11 @@
     "setRowAlign": {
       "location": {
         "start": {
-          "line": 413,
+          "line": 428,
           "column": 4
         },
         "end": {
-          "line": 428,
+          "line": 443,
           "column": 5
         }
       },
@@ -621,7 +647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the default cell alignment for a row. This alignment can be\noverridden on a per cell basis by setting the cell's content widget's\n<code>alignX</code> and <code>alignY</code> properties.\n\nIf on a grid cell both row and a column alignment is set, the horizontal\nalignment is taken from the column and the vertical alignment is taken\nfrom the row."
+            "body": "<p>Set the default cell alignment for a row. This alignment can be\n overridden on a per cell basis by setting the cell's content widget's\n <code>alignX</code> and <code>alignY</code> properties.\n If on a grid cell both row and a column alignment is set, the horizontal\n alignment is taken from the column and the vertical alignment is taken\n from the row.</p>"
           }
         ],
         "@param": [
@@ -634,16 +660,16 @@
           },
           {
             "name": "@param",
-            "body": "hAlign {String} The horizontal alignment. Valid values are\n\"left\", \"center\" and \"right\".",
+            "body": "hAlign {String} The horizontal alignment. Valid values are\n    \"left\", \"center\" and \"right\".",
             "paramName": "hAlign",
-            "description": " The horizontal alignment. Valid values are\n\"left\", \"center\" and \"right\".",
+            "description": " The horizontal alignment. Valid values are\n    \"left\", \"center\" and \"right\".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "vAlign {String} The vertical alignment. Valid values are\n\"top\", \"middle\", \"bottom\"",
+            "body": "vAlign {String} The vertical alignment. Valid values are\n    \"top\", \"middle\", \"bottom\"",
             "paramName": "vAlign",
-            "description": " The vertical alignment. Valid values are\n\"top\", \"middle\", \"bottom\"",
+            "description": " The vertical alignment. Valid values are\n    \"top\", \"middle\", \"bottom\"",
             "type": "String"
           }
         ],
@@ -662,11 +688,11 @@
     "getRowAlign": {
       "location": {
         "start": {
-          "line": 438,
+          "line": 453,
           "column": 4
         },
         "end": {
-          "line": 446,
+          "line": 461,
           "column": 5
         }
       },
@@ -674,7 +700,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a map of the row's alignment."
+            "body": "<p>Get a map of the row's alignment.</p>"
           }
         ],
         "@param": [
@@ -689,9 +715,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal row alignment.",
+            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal row alignment.",
             "type": "Map",
-            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal row alignment."
+            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal row alignment."
           }
         ]
       },
@@ -701,11 +727,11 @@
     "getCellWidget": {
       "location": {
         "start": {
-          "line": 458,
+          "line": 473,
           "column": 4
         },
         "end": {
-          "line": 466,
+          "line": 481,
           "column": 5
         }
       },
@@ -713,7 +739,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget located in the cell. If a the cell is empty or the widget\nhas a {@link qx.ui.core.Widget#visibility} value of <code>exclude</code>,\n<code>null</code> is returned."
+            "body": "<p>Get the widget located in the cell. If a the cell is empty or the widget\n has a {@link qx.ui.core.Widget#visibility} value of <code>exclude</code>,\n <code>null</code> is returned.</p>"
           }
         ],
         "@param": [
@@ -747,11 +773,11 @@
     "getRowCount": {
       "location": {
         "start": {
-          "line": 474,
+          "line": 489,
           "column": 4
         },
         "end": {
-          "line": 481,
+          "line": 496,
           "column": 5
         }
       },
@@ -759,7 +785,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the number of rows in the grid layout."
+            "body": "<p>Get the number of rows in the grid layout.</p>"
           }
         ],
         "@return": [
@@ -777,11 +803,11 @@
     "getColumnCount": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 504,
           "column": 4
         },
         "end": {
-          "line": 496,
+          "line": 511,
           "column": 5
         }
       },
@@ -789,7 +815,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the number of columns in the grid layout."
+            "body": "<p>Get the number of columns in the grid layout.</p>"
           }
         ],
         "@return": [
@@ -807,11 +833,11 @@
     "getCellAlign": {
       "location": {
         "start": {
-          "line": 511,
+          "line": 526,
           "column": 4
         },
         "end": {
-          "line": 556,
+          "line": 571,
           "column": 5
         }
       },
@@ -819,7 +845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a map of the cell's alignment. For vertical alignment the row alignment\ntakes precedence over the column alignment. For horizontal alignment it is\nthe over way round. If an alignment is set on the cell widget using\n{@link qx.ui.core.LayoutItem#setLayoutProperties}, this alignment takes\nalways precedence over row or column alignment."
+            "body": "<p>Get a map of the cell's alignment. For vertical alignment the row alignment\n takes precedence over the column alignment. For horizontal alignment it is\n the over way round. If an alignment is set on the cell widget using\n {@link qx.ui.core.LayoutItem#setLayoutProperties}, this alignment takes\n always precedence over row or column alignment.</p>"
           }
         ],
         "@param": [
@@ -841,9 +867,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal cell alignment.",
+            "body": "{Map} A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal cell alignment.",
             "type": "Map",
-            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\ncontaining the vertical and horizontal cell alignment."
+            "description": " A map with the keys <code>vAlign</code> and <code>hAlign</code>\n     containing the vertical and horizontal cell alignment."
           }
         ]
       },
@@ -853,11 +879,11 @@
     "setColumnFlex": {
       "location": {
         "start": {
-          "line": 567,
+          "line": 582,
           "column": 4
         },
         "end": {
-          "line": 572,
+          "line": 587,
           "column": 5
         }
       },
@@ -865,7 +891,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the flex value for a grid column.\nBy default the column flex value is <code>0</code>."
+            "body": "<p>Set the flex value for a grid column.\n By default the column flex value is <code>0</code>.</p>"
           }
         ],
         "@param": [
@@ -899,11 +925,11 @@
     "getColumnFlex": {
       "location": {
         "start": {
-          "line": 581,
+          "line": 596,
           "column": 4
         },
         "end": {
-          "line": 585,
+          "line": 600,
           "column": 5
         }
       },
@@ -911,7 +937,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the flex value of a grid column."
+            "body": "<p>Get the flex value of a grid column.</p>"
           }
         ],
         "@param": [
@@ -938,11 +964,11 @@
     "setRowFlex": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 611,
           "column": 4
         },
         "end": {
-          "line": 601,
+          "line": 616,
           "column": 5
         }
       },
@@ -950,7 +976,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the flex value for a grid row.\nBy default the row flex value is <code>0</code>."
+            "body": "<p>Set the flex value for a grid row.\n By default the row flex value is <code>0</code>.</p>"
           }
         ],
         "@param": [
@@ -984,11 +1010,11 @@
     "getRowFlex": {
       "location": {
         "start": {
-          "line": 610,
+          "line": 625,
           "column": 4
         },
         "end": {
-          "line": 615,
+          "line": 630,
           "column": 5
         }
       },
@@ -996,7 +1022,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the flex value of a grid row."
+            "body": "<p>Get the flex value of a grid row.</p>"
           }
         ],
         "@param": [
@@ -1023,11 +1049,11 @@
     "setColumnMaxWidth": {
       "location": {
         "start": {
-          "line": 626,
+          "line": 641,
           "column": 4
         },
         "end": {
-          "line": 631,
+          "line": 646,
           "column": 5
         }
       },
@@ -1035,7 +1061,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the maximum width of a grid column.\nThe default value is <code>Infinity</code>."
+            "body": "<p>Set the maximum width of a grid column.\n The default value is <code>Infinity</code>.</p>"
           }
         ],
         "@param": [
@@ -1069,11 +1095,11 @@
     "getColumnMaxWidth": {
       "location": {
         "start": {
-          "line": 640,
+          "line": 655,
           "column": 4
         },
         "end": {
-          "line": 644,
+          "line": 659,
           "column": 5
         }
       },
@@ -1081,7 +1107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the maximum width of a grid column."
+            "body": "<p>Get the maximum width of a grid column.</p>"
           }
         ],
         "@param": [
@@ -1108,11 +1134,11 @@
     "setColumnWidth": {
       "location": {
         "start": {
-          "line": 655,
+          "line": 670,
           "column": 4
         },
         "end": {
-          "line": 660,
+          "line": 675,
           "column": 5
         }
       },
@@ -1120,7 +1146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the preferred width of a grid column.\nThe default value is <code>Infinity</code>."
+            "body": "<p>Set the preferred width of a grid column.\n The default value is <code>Infinity</code>.</p>"
           }
         ],
         "@param": [
@@ -1154,11 +1180,11 @@
     "getColumnWidth": {
       "location": {
         "start": {
-          "line": 669,
+          "line": 684,
           "column": 4
         },
         "end": {
-          "line": 673,
+          "line": 688,
           "column": 5
         }
       },
@@ -1166,7 +1192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the preferred width of a grid column."
+            "body": "<p>Get the preferred width of a grid column.</p>"
           }
         ],
         "@param": [
@@ -1193,11 +1219,11 @@
     "setColumnMinWidth": {
       "location": {
         "start": {
-          "line": 684,
+          "line": 699,
           "column": 4
         },
         "end": {
-          "line": 689,
+          "line": 704,
           "column": 5
         }
       },
@@ -1205,7 +1231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the minimum width of a grid column.\nThe default value is <code>0</code>."
+            "body": "<p>Set the minimum width of a grid column.\n The default value is <code>0</code>.</p>"
           }
         ],
         "@param": [
@@ -1239,11 +1265,11 @@
     "getColumnMinWidth": {
       "location": {
         "start": {
-          "line": 698,
+          "line": 713,
           "column": 4
         },
         "end": {
-          "line": 702,
+          "line": 717,
           "column": 5
         }
       },
@@ -1251,7 +1277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the minimum width of a grid column."
+            "body": "<p>Get the minimum width of a grid column.</p>"
           }
         ],
         "@param": [
@@ -1278,11 +1304,11 @@
     "setRowMaxHeight": {
       "location": {
         "start": {
-          "line": 713,
+          "line": 728,
           "column": 4
         },
         "end": {
-          "line": 718,
+          "line": 733,
           "column": 5
         }
       },
@@ -1290,7 +1316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the maximum height of a grid row.\nThe default value is <code>Infinity</code>."
+            "body": "<p>Set the maximum height of a grid row.\n The default value is <code>Infinity</code>.</p>"
           }
         ],
         "@param": [
@@ -1324,11 +1350,11 @@
     "getRowMaxHeight": {
       "location": {
         "start": {
-          "line": 727,
+          "line": 742,
           "column": 4
         },
         "end": {
-          "line": 731,
+          "line": 746,
           "column": 5
         }
       },
@@ -1336,7 +1362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the maximum height of a grid row."
+            "body": "<p>Get the maximum height of a grid row.</p>"
           }
         ],
         "@param": [
@@ -1363,11 +1389,11 @@
     "setRowHeight": {
       "location": {
         "start": {
-          "line": 742,
+          "line": 757,
           "column": 4
         },
         "end": {
-          "line": 747,
+          "line": 762,
           "column": 5
         }
       },
@@ -1375,7 +1401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the preferred height of a grid row.\nThe default value is <code>Infinity</code>."
+            "body": "<p>Set the preferred height of a grid row.\n The default value is <code>Infinity</code>.</p>"
           }
         ],
         "@param": [
@@ -1409,11 +1435,11 @@
     "getRowHeight": {
       "location": {
         "start": {
-          "line": 756,
+          "line": 771,
           "column": 4
         },
         "end": {
-          "line": 760,
+          "line": 775,
           "column": 5
         }
       },
@@ -1421,7 +1447,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the preferred height of a grid row."
+            "body": "<p>Get the preferred height of a grid row.</p>"
           }
         ],
         "@param": [
@@ -1448,11 +1474,11 @@
     "setRowMinHeight": {
       "location": {
         "start": {
-          "line": 771,
+          "line": 786,
           "column": 4
         },
         "end": {
-          "line": 776,
+          "line": 791,
           "column": 5
         }
       },
@@ -1460,7 +1486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the minimum height of a grid row.\nThe default value is <code>0</code>."
+            "body": "<p>Set the minimum height of a grid row.\n The default value is <code>0</code>.</p>"
           }
         ],
         "@param": [
@@ -1494,11 +1520,11 @@
     "getRowMinHeight": {
       "location": {
         "start": {
-          "line": 785,
+          "line": 800,
           "column": 4
         },
         "end": {
-          "line": 789,
+          "line": 804,
           "column": 5
         }
       },
@@ -1506,7 +1532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the minimum height of a grid row."
+            "body": "<p>Get the minimum height of a grid row.</p>"
           }
         ],
         "@param": [
@@ -1530,14 +1556,14 @@
       "type": "function",
       "access": "public"
     },
-    "__getOuterSize": {
+    "_getOuterSize": {
       "location": {
         "start": {
-          "line": 798,
+          "line": 813,
           "column": 4
         },
         "end": {
-          "line": 814,
+          "line": 829,
           "column": 5
         }
       },
@@ -1545,7 +1571,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the widget's size hint including the widget's margins"
+            "body": "<p>Computes the widget's size hint including the widget's margins</p>"
           }
         ],
         "@param": [
@@ -1567,16 +1593,16 @@
         ]
       },
       "type": "function",
-      "access": "private"
+      "access": "protected"
     },
     "_fixHeightsRowSpan": {
       "location": {
         "start": {
-          "line": 830,
+          "line": 845,
           "column": 4
         },
         "end": {
-          "line": 935,
+          "line": 950,
           "column": 5
         }
       },
@@ -1584,15 +1610,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether all row spans fit with their preferred height into the\npreferred row heights. If there is not enough space, the preferred\nrow sizes are increased. The distribution respects the flex and max\nvalues of the rows.\n\nThe same is true for the min sizes.\n\nThe height array is modified in place."
+            "body": "<p>Check whether all row spans fit with their preferred height into the\n preferred row heights. If there is not enough space, the preferred\n row sizes are increased. The distribution respects the flex and max\n values of the rows.\n  The same is true for the min sizes.\n  The height array is modified in place.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowHeights {Map[]} The current row height array as computed by\n{@link #_getRowHeights}.",
+            "body": "rowHeights {Map[]} The current row height array as computed by\n     {@link #_getRowHeights}.",
             "paramName": "rowHeights",
-            "description": " The current row height array as computed by\n{@link #_getRowHeights}.",
+            "description": " The current row height array as computed by\n     {@link #_getRowHeights}.",
             "type": "Map[]"
           }
         ]
@@ -1603,11 +1629,11 @@
     "_fixWidthsColSpan": {
       "location": {
         "start": {
-          "line": 951,
+          "line": 966,
           "column": 4
         },
         "end": {
-          "line": 1023,
+          "line": 1076,
           "column": 5
         }
       },
@@ -1615,15 +1641,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether all col spans fit with their preferred width into the\npreferred column widths. If there is not enough space the preferred\ncolumn sizes are increased. The distribution respects the flex and max\nvalues of the columns.\n\nThe same is true for the min sizes.\n\nThe width array is modified in place."
+            "body": "<p>Check whether all col spans fit with their preferred width into the\n preferred column widths. If there is not enough space the preferred\n column sizes are increased. The distribution respects the flex and max\n values of the columns.\n  The same is true for the min sizes.\n  The width array is modified in place.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "colWidths {Map[]} The current column width array as computed by\n{@link #_getColWidths}.",
+            "body": "colWidths {Map[]} The current column width array as computed by\n     {@link #_getColWidths}.",
             "paramName": "colWidths",
-            "description": " The current column width array as computed by\n{@link #_getColWidths}.",
+            "description": " The current column width array as computed by\n     {@link #_getColWidths}.",
             "type": "Map[]"
           }
         ]
@@ -1634,11 +1660,11 @@
     "_getRowHeights": {
       "location": {
         "start": {
-          "line": 1033,
+          "line": 1086,
           "column": 4
         },
         "end": {
-          "line": 1097,
+          "line": 1150,
           "column": 5
         }
       },
@@ -1646,15 +1672,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute the min/pref/max row heights."
+            "body": "<p>Compute the min/pref/max row heights.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} An array containing height information for each row. The\nentries have the keys <code>minHeight</code>, <code>maxHeight</code> and\n<code>height</code>.",
+            "body": "{Map[]} An array containing height information for each row. The\n     entries have the keys <code>minHeight</code>, <code>maxHeight</code> and\n     <code>height</code>.",
             "type": "Map[]",
-            "description": " An array containing height information for each row. The\nentries have the keys <code>minHeight</code>, <code>maxHeight</code> and\n<code>height</code>."
+            "description": " An array containing height information for each row. The\n     entries have the keys <code>minHeight</code>, <code>maxHeight</code> and\n     <code>height</code>."
           }
         ]
       },
@@ -1664,11 +1690,11 @@
     "_getColWidths": {
       "location": {
         "start": {
-          "line": 1107,
+          "line": 1160,
           "column": 4
         },
         "end": {
-          "line": 1167,
+          "line": 1220,
           "column": 5
         }
       },
@@ -1676,15 +1702,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute the min/pref/max column widths."
+            "body": "<p>Compute the min/pref/max column widths.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} An array containing width information for each column. The\nentries have the keys <code>minWidth</code>, <code>maxWidth</code> and\n<code>width</code>.",
+            "body": "{Map[]} An array containing width information for each column. The\n     entries have the keys <code>minWidth</code>, <code>maxWidth</code> and\n     <code>width</code>.",
             "type": "Map[]",
-            "description": " An array containing width information for each column. The\nentries have the keys <code>minWidth</code>, <code>maxWidth</code> and\n<code>width</code>."
+            "description": " An array containing width information for each column. The\n     entries have the keys <code>minWidth</code>, <code>maxWidth</code> and\n     <code>width</code>."
           }
         ]
       },
@@ -1694,11 +1720,11 @@
     "_getColumnFlexOffsets": {
       "location": {
         "start": {
-          "line": 1178,
+          "line": 1231,
           "column": 4
         },
         "end": {
-          "line": 1213,
+          "line": 1266,
           "column": 5
         }
       },
@@ -1706,7 +1732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes for each column by how many pixels it must grow or shrink, taking\nthe column flex values and min/max widths into account."
+            "body": "<p>Computes for each column by how many pixels it must grow or shrink, taking\n the column flex values and min/max widths into account.</p>"
           }
         ],
         "@param": [
@@ -1721,9 +1747,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer[]} Sparse array of offsets to add to each column width. If\nan array entry is empty nothing should be added to the column.",
+            "body": "{Integer[]} Sparse array of offsets to add to each column width. If\n     an array entry is empty nothing should be added to the column.",
             "type": "Integer[]",
-            "description": " Sparse array of offsets to add to each column width. If\nan array entry is empty nothing should be added to the column."
+            "description": " Sparse array of offsets to add to each column width. If\n     an array entry is empty nothing should be added to the column."
           }
         ]
       },
@@ -1733,11 +1759,11 @@
     "_getRowFlexOffsets": {
       "location": {
         "start": {
-          "line": 1224,
+          "line": 1277,
           "column": 4
         },
         "end": {
-          "line": 1259,
+          "line": 1312,
           "column": 5
         }
       },
@@ -1745,7 +1771,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes for each row by how many pixels it must grow or shrink, taking\nthe row flex values and min/max heights into account."
+            "body": "<p>Computes for each row by how many pixels it must grow or shrink, taking\n the row flex values and min/max heights into account.</p>"
           }
         ],
         "@param": [
@@ -1760,9 +1786,39 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer[]} Sparse array of offsets to add to each row height. If\nan array entry is empty nothing should be added to the row.",
+            "body": "{Integer[]} Sparse array of offsets to add to each row height. If\n     an array entry is empty nothing should be added to the row.",
             "type": "Integer[]",
-            "description": " Sparse array of offsets to add to each row height. If\nan array entry is empty nothing should be added to the row."
+            "description": " Sparse array of offsets to add to each row height. If\n     an array entry is empty nothing should be added to the row."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "protected"
+    },
+    "_getColSpans": {
+      "location": {
+        "start": {
+          "line": 1322,
+          "column": 4
+        },
+        "end": {
+          "line": 1324,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Returns the internal private __colSpans array in order\n have a protected getter which can be used other methods\n to make them overridable</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Array} the __colSpans array",
+            "type": "Array",
+            "description": " the __colSpans array"
           }
         ]
       },
@@ -1772,11 +1828,11 @@
     "renderLayout": {
       "location": {
         "start": {
-          "line": 1263,
+          "line": 1328,
           "column": 4
         },
         "end": {
-          "line": 1365,
+          "line": 1430,
           "column": 5
         }
       },
@@ -1784,7 +1840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1804,9 +1860,9 @@
           },
           {
             "name": "@param",
-            "body": "padding {Map} Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "body": "padding {Map} Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "paramName": "padding",
-            "description": " Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "description": " Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "type": "Map"
           }
         ]
@@ -1821,11 +1877,11 @@
     "invalidateLayoutCache": {
       "location": {
         "start": {
-          "line": 1369,
+          "line": 1434,
           "column": 4
         },
         "end": {
-          "line": 1375,
+          "line": 1440,
           "column": 5
         }
       },
@@ -1833,7 +1889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1847,11 +1903,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 1379,
+          "line": 1444,
           "column": 4
         },
         "end": {
-          "line": 1430,
+          "line": 1495,
           "column": 5
         }
       },
@@ -1859,7 +1915,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -2129,16 +2185,106 @@
           }
         ]
       }
+    },
+    "getAllowGrowSpannedCellWidth": {
+      "type": "function",
+      "name": "getAllowGrowSpannedCellWidth",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "get",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>allowGrowSpannedCellWidth</code>.\n\nFor further details take a look at the property definition: {@link #allowGrowSpannedCellWidth}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for allowGrowSpannedCellWidth"
+          }
+        ]
+      }
+    },
+    "isAllowGrowSpannedCellWidth": {
+      "type": "function",
+      "name": "isAllowGrowSpannedCellWidth",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "is",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Gets the (computed) value of the property <code>allowGrowSpannedCellWidth</code>.\n\nFor further details take a look at the property definition: {@link #allowGrowSpannedCellWidth}."
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "type": "Boolean",
+            "desc": "Returns the value for allowGrowSpannedCellWidth"
+          }
+        ]
+      }
+    },
+    "setAllowGrowSpannedCellWidth": {
+      "type": "function",
+      "name": "setAllowGrowSpannedCellWidth",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "set",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Sets the user value of the property <code>allowGrowSpannedCellWidth</code>.\n\nFor further details take a look at the property definition: {@link #allowGrowSpannedCellWidth}."
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "type": "Boolean",
+            "paramName": "value",
+            "desc": "Value for allowGrowSpannedCellWidth"
+          }
+        ]
+      }
+    },
+    "resetAllowGrowSpannedCellWidth": {
+      "type": "function",
+      "name": "resetAllowGrowSpannedCellWidth",
+      "abstract": false,
+      "mixin": false,
+      "inherited": false,
+      "access": "public",
+      "property": "reset",
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "Resets the user value of the property <code>allowGrowSpannedCellWidth</code>.\n\nThe computed value falls back to the next available value e.g. appearance, init or inheritance value depending on the property configuration and value availability.\n\nFor further details take a look at the property definition: {@link #allowGrowSpannedCellWidth}."
+          }
+        ]
+      }
     }
   },
   "destruct": {
     "location": {
       "start": {
-        "line": 1442,
-        "column": 2
+        "line": 1507,
+        "column": 13
       },
       "end": {
-        "line": 1446,
+        "line": 1511,
         "column": 3
       }
     },
@@ -2146,7 +2292,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

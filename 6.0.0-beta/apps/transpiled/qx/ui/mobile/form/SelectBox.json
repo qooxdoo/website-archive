@@ -30,11 +30,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nGabriel Munteanu (gabios)\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Gabriel Munteanu (gabios)\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The SelectBox\n\nan example, how to use the SelectBox:\n*Example*\n\n<pre class='javascript'>\nvar page1 = new qx.ui.mobile.page.Page();\npage1.addListener(\"initialize\", function()\n{\nvar sel = new qx.ui.mobile.form.SelectBox();\npage1.add(sel);\nvar model = new qx.data.Array([\"item1\",\"item2\"]);\nsel.setModel(model);\nmodel.push(\"item3\");\n\nvar but = new qx.ui.mobile.form.Button(\"setSelection\");\npage1.add(but);\nbut.addListener(\"tap\", function(){\nsel.setSelection(\"item3\");\n}, this);\n\nsel.addListener(\"changeSelection\", function(evt) {\nconsole.log(evt.getData());\n}, this);\n\nvar title = new qx.ui.mobile.form.Title(\"item2\");\ntitle.bind(\"value\",sel,\"value\");\nsel.bind(\"value\",title,\"value\");\npage1.add(title);\n},this);\n\npage1.show();\n</pre>"
+          "body": "<p>The SelectBox\n an example, how to use the SelectBox:\n<em>Example</em>\n </p>\n<pre class='javascript'>\n    var page1 = new qx.ui.mobile.page.Page();\n    page1.addListener(\"initialize\", function()\n    {\n      var sel = new qx.ui.mobile.form.SelectBox();\n      page1.add(sel);\n      var model = new qx.data.Array([\"item1\",\"item2\"]);\n      sel.setModel(model);\n      model.push(\"item3\");\n      var but = new qx.ui.mobile.form.Button(\"setSelection\");\n      page1.add(but);\n      but.addListener(\"tap\", function(){\n        sel.setSelection(\"item3\");\n      }, this);\n      sel.addListener(\"changeSelection\", function(evt) {\n        console.log(evt.getData());\n      }, this);\n      var title = new qx.ui.mobile.form.Title(\"item2\");\n      title.bind(\"value\",sel,\"value\");\n      sel.bind(\"value\",title,\"value\");\n      page1.add(title);\n   },this);\n   page1.show();\n  </pre>"
         }
       ]
     }
@@ -44,7 +44,7 @@
     "location": {
       "start": {
         "line": 76,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 95,
@@ -55,7 +55,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when user selects an item."
+            "body": "<p>Fired when user selects an item.</p>"
           }
         ]
       },
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -158,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines if the SelectBox has a clearButton, which resets the selection."
+            "body": "<p>Defines if the SelectBox has a clearButton, which resets the selection.</p>"
           }
         ]
       },
@@ -184,7 +184,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The model to use to render the list."
+            "body": "<p>The model to use to render the list.</p>"
           }
         ]
       },
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The selected index of this SelectBox."
+            "body": "<p>The selected index of this SelectBox.</p>"
           }
         ]
       },
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -350,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the menu dialog. Override this to customize the widget."
+            "body": "<p>Creates the menu dialog. Override this to customize the widget.</p>"
           }
         ],
         "@return": [
@@ -380,7 +380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the SelectionDialog."
+            "body": "<p>Returns the SelectionDialog.</p>"
           }
         ],
         "@return": [
@@ -410,7 +410,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the dialog title on the selection dialog."
+            "body": "<p>Sets the dialog title on the selection dialog.</p>"
           }
         ],
         "@param": [
@@ -441,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the ClearButton label of the selection dialog."
+            "body": "<p>Set the ClearButton label of the selection dialog.</p>"
           }
         ],
         "@param": [
@@ -472,7 +472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the selected text value of this SelectBox."
+            "body": "<p>Sets the selected text value of this SelectBox.</p>"
           }
         ],
         "@param": [
@@ -503,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the text value of this\nIt is called by setValue method of qx.ui.mobile.form.MValue mixin."
+            "body": "<p>Get the text value of this\n It is called by setValue method of qx.ui.mobile.form.MValue mixin.</p>"
           }
         ],
         "@return": [
@@ -533,7 +533,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders this SelectBox. Override this if you would like to display the\nvalues of the SelectBox in a different way than the default."
+            "body": "<p>Renders this SelectBox. Override this if you would like to display the\n values of the SelectBox in a different way than the default.</p>"
           }
         ]
       },
@@ -555,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the model property to the new value"
+            "body": "<p>Sets the model property to the new value</p>"
           }
         ],
         "@param": [
@@ -597,7 +597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Refreshs selection dialogs model, and shows it."
+            "body": "<p>Refreshs selection dialogs model, and shows it.</p>"
           }
         ]
       },
@@ -619,7 +619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the selectedIndex out of change selection event and renders view."
+            "body": "<p>Gets the selectedIndex out of change selection event and renders view.</p>"
           }
         ],
         "@param": [
@@ -650,7 +650,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>tap</code> event on this widget."
+            "body": "<p>Handler for <code>tap</code> event on this widget.</p>"
           }
         ],
         "@param": [
@@ -681,7 +681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates the selection value."
+            "body": "<p>Validates the selection value.</p>"
           }
         ],
         "@param": [
@@ -712,7 +712,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -737,7 +737,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -760,11 +760,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -791,7 +791,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -817,11 +817,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -848,7 +848,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -874,11 +874,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -905,7 +905,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -931,11 +931,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -962,7 +962,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -988,11 +988,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -1019,7 +1019,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -1044,11 +1044,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the field model value. Should also update the UI."
+            "body": "<p>Sets the field model value. Should also update the UI.</p>"
           }
         ],
         "@param": [
@@ -1066,9 +1066,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Error} Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field).",
+            "body": "{null|Error} Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field).",
             "type": "null|Error",
-            "description": " Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field)."
+            "description": " Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field)."
           }
         ]
       }
@@ -1094,7 +1094,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a consistent and up-to-date model value.\n\nNote: returned value can also be a promise of type <code>Promise&lt;*|null&gt;</code>."
+            "body": "<p>Returns a consistent and up-to-date model value.\n Note: returned value can also be a promise of type <code>Promise&amp;lt;*|null&amp;gt;</code>.</p>"
           }
         ],
         "@return": [
@@ -1185,7 +1185,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the incoming value."
+            "body": "<p>Converts the incoming value.</p>"
           }
         ],
         "@param": [
@@ -1237,7 +1237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether this widget has focus or not."
+            "body": "<p>Returns whether this widget has focus or not.</p>"
           }
         ],
         "@return": [
@@ -1262,7 +1262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #changeValue} event occurs."
+            "body": "<p>Event handler. Called when the {@link #changeValue} event occurs.</p>"
           }
         ],
         "@param": [
@@ -1288,7 +1288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #input} event occurs."
+            "body": "<p>Event handler. Called when the {@link #input} event occurs.</p>"
           }
         ],
         "@param": [
@@ -1314,7 +1314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the caret position of this widget."
+            "body": "<p>Returns the caret position of this widget.</p>"
           }
         ],
         "@return": [
@@ -1339,7 +1339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the caret position on this widget."
+            "body": "<p>Sets the caret position on this widget.</p>"
           }
         ],
         "@param": [
@@ -1365,7 +1365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the {@link #changeValue} event."
+            "body": "<p>Fires the {@link #changeValue} event.</p>"
           }
         ],
         "@param": [
@@ -1486,7 +1486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1852,7 +1852,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a state to the element"
+            "body": "<p>Adds a state to the element</p>"
           }
         ],
         "@param": [
@@ -1878,7 +1878,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the element has the state passed as argument"
+            "body": "<p>Checks whether the element has the state passed as argument</p>"
           }
         ],
         "@param": [
@@ -1912,7 +1912,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a state from the element"
+            "body": "<p>Removes a state from the element</p>"
           }
         ],
         "@param": [
@@ -1938,7 +1938,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces a state of the element with a new state.\nIf the element doesn't have the state to be removed, then th new state will\njust be added."
+            "body": "<p>Replaces a state of the element with a new state.\n If the element doesn't have the state to be removed, then th new state will\n just be added.</p>"
           }
         ],
         "@param": [
@@ -3118,13 +3118,14 @@
     "location": {
       "start": {
         "line": 380,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 388,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAdrian Olaru (adrianolaru)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nCross-Browser Split\nhttp://blog.stevenlevithan.com/archives/cross-browser-split\nVersion 1.0.1\n\nCopyright:\n(c) 2006-2007, Steven Levithan <http://stevenlevithan.com>\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\nAuthors:\nSteven Levithan\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Adrian Olaru (adrianolaru)\n   ======================================================================\n   This class contains code based on the following work:\n Cross-Browser Split\n     http://blog.stevenlevithan.com/archives/cross-browser-split\n     Version 1.0.1\n     Copyright:\n       (c) 2006-2007, Steven Levithan <a href=\"http://stevenlevithan.com\">http://stevenlevithan.com</a>\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n     Authors:\n Steven Levithan\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Implements an ECMA-compliant, uniform cross-browser split method"
+          "body": "<p>Implements an ECMA-compliant, uniform cross-browser split method</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "ECMA-compliant, uniform cross-browser split method"
+            "body": "<p>ECMA-compliant, uniform cross-browser split method</p>"
           }
         ],
         "@param": [
@@ -60,9 +60,9 @@
           },
           {
             "name": "@param",
-            "body": "separator {RegExp} Specifies the character to use for separating the string.\nThe separator is treated as a string or a  regular expression. If separator is\nomitted, the array returned contains one element consisting of the entire string.",
+            "body": "separator {RegExp} Specifies the character to use for separating the string.\n   The separator is treated as a string or a  regular expression. If separator is\n   omitted, the array returned contains one element consisting of the entire string.",
             "paramName": "separator",
-            "description": " Specifies the character to use for separating the string.\nThe separator is treated as a string or a  regular expression. If separator is\nomitted, the array returned contains one element consisting of the entire string.",
+            "description": " Specifies the character to use for separating the string.\n   The separator is treated as a string or a  regular expression. If separator is\n   omitted, the array returned contains one element consisting of the entire string.",
             "type": "RegExp"
           },
           {

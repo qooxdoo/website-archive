@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\nSimon Bull\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSimon Bull (sbull)\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     Simon Bull\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Simon Bull (sbull)\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class manages pooled Object instances.\n\nIt exists mainly to minimize the amount of browser memory usage by reusing\nwindow instances after they have been closed.  However, it could equally be\nused to pool instances of any type of Object (expect singletons).\n\nIt is the client's responsibility to ensure that pooled objects are not\nreferenced or used from anywhere else in the application."
+          "body": "<p>This class manages pooled Object instances.\n It exists mainly to minimize the amount of browser memory usage by reusing\n window instances after they have been closed.  However, it could equally be\n used to pool instances of any type of Object (expect singletons).\n It is the client's responsibility to ensure that pooled objects are not\n referenced or used from anywhere else in the application.</p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 56,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -82,11 +82,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Number of objects of each class, which are pooled.\n\nA size of \"null\" represents an unlimited pool."
+            "body": "<p>Number of objects of each class, which are pooled.\n A size of \"null\" represents an unlimited pool.</p>"
           }
         ]
       },
@@ -157,11 +157,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMPL\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IMPL\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "This method finds and returns an instance of a requested type in the pool,\nif there is one.  Note that the pool determines which instance (if any) to\nreturn to the client.  The client cannot get a specific instance from the\npool."
+            "body": "<p>This method finds and returns an instance of a requested type in the pool,\n if there is one.  Note that the pool determines which instance (if any) to\n return to the client.  The client cannot get a specific instance from the\n pool.</p>"
           }
         ],
         "@param": [
@@ -176,9 +176,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} An instance of the requested type. If non existed in the pool a new\none is transparently created and returned.",
+            "body": "{Object} An instance of the requested type. If non existed in the pool a new\n   one is transparently created and returned.",
             "type": "Object",
-            "description": " An instance of the requested type. If non existed in the pool a new\none is transparently created and returned."
+            "description": " An instance of the requested type. If non existed in the pool a new\n   one is transparently created and returned."
           }
         ]
       },
@@ -200,7 +200,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method places an Object in a pool of Objects of its type. Note that\nonce an instance has been pooled, there is no means to get that exact\ninstance back. The instance may be discarded for garbage collection if\nthe pool of its type is already full.\n\nIt is assumed that no other references exist to this Object, and that it will\nnot be used at all while it is pooled."
+            "body": "<p>This method places an Object in a pool of Objects of its type. Note that\n once an instance has been pooled, there is no means to get that exact\n instance back. The instance may be discarded for garbage collection if\n the pool of its type is already full.\n It is assumed that no other references exist to this Object, and that it will\n not be used at all while it is pooled.</p>"
           }
         ],
         "@param": [
@@ -407,7 +407,7 @@
     "location": {
       "start": {
         "line": 204,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 218,
@@ -418,7 +418,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

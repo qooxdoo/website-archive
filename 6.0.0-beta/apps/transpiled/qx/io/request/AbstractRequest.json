@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 992,
+        "line": 1003,
         "column": 3
       }
     },
@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "AbstractRequest serves as a base class for {@link qx.io.request.Xhr}\nand {@link qx.io.request.Jsonp}. It contains methods to conveniently\ncommunicate with transports found in {@link qx.bom.request}.\n\nThe general procedure to derive a new request is to choose a\ntransport (override {@link #_createTransport}) and link\nthe transport’s response (override {@link #_getParsedResponse}).\nThe transport must implement {@link qx.bom.request.IRequest}.\n\nTo adjust the behavior of {@link #send} override\n{@link #_getConfiguredUrl} and {@link #_getConfiguredRequestHeaders}.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>AbstractRequest serves as a base class for {@link qx.io.request.Xhr}\n and {@link qx.io.request.Jsonp}. It contains methods to conveniently\n communicate with transports found in {@link qx.bom.request}.\n The general procedure to derive a new request is to choose a\n transport (override {@link #<em>createTransport}) and link\n the transport’s response (override {@link #</em>getParsedResponse}).\n The transport must implement {@link qx.bom.request.IRequest}.\n To adjust the behavior of {@link #send} override\n {@link #<em>getConfiguredUrl} and {@link #</em>getConfiguredRequestHeaders}.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -40,7 +40,7 @@
     "location": {
       "start": {
         "line": 45,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 71,
@@ -82,7 +82,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on every change of the transport’s readyState."
+            "body": "<p>Fired on every change of the transport’s readyState.</p>"
           }
         ]
       },
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error and transport’s status\nindicates success."
+            "body": "<p>Fired when request completes without error and transport’s status\n indicates success.</p>"
           }
         ]
       },
@@ -126,7 +126,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error."
+            "body": "<p>Fired when request completes without error.</p>"
           }
         ]
       },
@@ -148,7 +148,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes with or without error."
+            "body": "<p>Fired when request completes with or without error.</p>"
           }
         ]
       },
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request is aborted."
+            "body": "<p>Fired when request is aborted.</p>"
           }
         ]
       },
@@ -192,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request reaches timeout limit."
+            "body": "<p>Fired when request reaches timeout limit.</p>"
           }
         ]
       },
@@ -214,7 +214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes with error."
+            "body": "<p>Fired when request completes with error.</p>"
           }
         ]
       },
@@ -236,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error but erroneous HTTP status."
+            "body": "<p>Fired when request completes without error but erroneous HTTP status.</p>"
           }
         ]
       },
@@ -258,7 +258,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the configured parser runs into an unrecoverable error."
+            "body": "<p>Fired when the configured parser runs into an unrecoverable error.</p>"
           }
         ]
       },
@@ -280,7 +280,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on timeout, error or remote error.\n\nThis event is fired for convenience. Usually, it is recommended\nto handle error related events in a more fine-grained approach."
+            "body": "<p>Fired on timeout, error or remote error.\n This event is fired for convenience. Usually, it is recommended\n to handle error related events in a more fine-grained approach.</p>"
           }
         ]
       },
@@ -302,7 +302,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on change of the parsed response.\n\nThis event allows to use data binding with the\nparsed response as source.\n\nFor example, to bind the response to the value of a label:\n\n<pre class=\"javascript\">\n// req is an instance of qx.io.request.*,\n// label an instance of qx.ui.basic.Label\nreq.bind(\"response\", label, \"value\");\n</pre>\n\nThe response is parsed (and therefore changed) only\nafter the request completes successfully. This means\nthat when a new request is made the initial empty value\nis ignored, instead only the final value is bound."
+            "body": "<p>Fired on change of the parsed response.\n This event allows to use data binding with the\n parsed response as source.\n For example, to bind the response to the value of a label:\n </p>\n<pre class=\"javascript\">\n\n\n req.bind(\"response\", label, \"value\");\n </pre>\n<p>The response is parsed (and therefore changed) only\n after the request completes successfully. This means\n that when a new request is made the initial empty value\n is ignored, instead only the final value is bound.</p>"
           }
         ]
       },
@@ -324,7 +324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on change of the phase."
+            "body": "<p>Fired on change of the phase.</p>"
           }
         ]
       },
@@ -348,7 +348,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The URL of the resource to request.\n\nNote: Depending on the configuration of the request\nand/or the transport chosen, query params may be appended\nautomatically."
+            "body": "<p>The URL of the resource to request.\n Note: Depending on the configuration of the request\n and/or the transport chosen, query params may be appended\n automatically.</p>"
           }
         ]
       },
@@ -371,7 +371,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Timeout limit in milliseconds. Default (0) means no limit."
+            "body": "<p>Timeout limit in milliseconds. Default (0) means no limit.</p>"
           }
         ]
       },
@@ -398,7 +398,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data to be sent as part of the request.\n\nSupported types:\n\n* String\n* Map\n* qooxdoo Object\n* Blob\n* ArrayBuffer\n* FormData\n\nFor maps, Arrays and qooxdoo objects, a URL encoded string\nwith unsafe characters escaped is internally generated and sent\nas part of the request.\n\nDepending on the underlying transport and its configuration, the request\ndata is transparently included as URL query parameters or embedded in the\nrequest body as form data.\n\nIf a string is given the user must make sure it is properly formatted and\nescaped. See {@link qx.util.Serializer#toUriParameter}."
+            "body": "<p>Data to be sent as part of the request.\n Supported types:</p>\n<ul>\n<li>String</li>\n<li>Map</li>\n<li>qooxdoo Object</li>\n<li>Blob</li>\n<li>ArrayBuffer</li>\n<li>FormData\nFor maps, Arrays and qooxdoo objects, a URL encoded string\nwith unsafe characters escaped is internally generated and sent\nas part of the request.\nDepending on the underlying transport and its configuration, the request\ndata is transparently included as URL query parameters or embedded in the\nrequest body as form data.\nIf a string is given the user must make sure it is properly formatted and\nescaped. See {@link qx.util.Serializer#toUriParameter}.</li>\n</ul>"
           }
         ]
       },
@@ -422,7 +422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Authentication delegate.\n\nThe delegate must implement {@link qx.io.request.authentication.IAuthentication}."
+            "body": "<p>Authentication delegate.\n The delegate must implement {@link qx.io.request.authentication.IAuthentication}.</p>"
           }
         ]
       },
@@ -465,7 +465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Bound handlers."
+            "body": "<p>Bound handlers.</p>"
           }
         ]
       },
@@ -557,7 +557,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Parsed response."
+            "body": "<p>Parsed response.</p>"
           }
         ]
       },
@@ -579,7 +579,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Abort flag."
+            "body": "<p>Abort flag.</p>"
           }
         ]
       },
@@ -601,7 +601,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Current phase."
+            "body": "<p>Current phase.</p>"
           }
         ]
       },
@@ -623,7 +623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request headers."
+            "body": "<p>Request headers.</p>"
           }
         ]
       },
@@ -645,7 +645,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request headers (deprecated)."
+            "body": "<p>Request headers (deprecated).</p>"
           }
         ]
       },
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Holds transport."
+            "body": "<p>Holds transport.</p>"
           }
         ]
       },
@@ -689,7 +689,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Holds information about the parser status for the last request."
+            "body": "<p>Holds information about the parser status for the last request.</p>"
           }
         ]
       },
@@ -711,11 +711,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONFIGURE TRANSPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONFIGURE TRANSPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Create and return transport.\n\nThis method MUST be overridden, unless the constructor is overridden as\nwell. It is called by the constructor and should return the transport that\nis to be interfaced."
+            "body": "<p>Create and return transport.\n This method MUST be overridden, unless the constructor is overridden as\n well. It is called by the constructor and should return the transport that\n is to be interfaced.</p>"
           }
         ],
         "@return": [
@@ -745,7 +745,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get configured URL.\n\nA configured URL typically includes a query string that\nencapsulates transport specific settings such as request\ndata or no-cache settings.\n\nThis method MAY be overridden. It is called in {@link #send}\nbefore the request is initialized."
+            "body": "<p>Get configured URL.\n A configured URL typically includes a query string that\n encapsulates transport specific settings such as request\n data or no-cache settings.\n This method MAY be overridden. It is called in {@link #send}\n before the request is initialized.</p>"
           }
         ],
         "@return": [
@@ -775,7 +775,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get configuration related request headers.\n\nThis method MAY be overridden to add request headers for features limited\nto a certain transport."
+            "body": "<p>Get configuration related request headers.\n This method MAY be overridden to add request headers for features limited\n to a certain transport.</p>"
           }
         ],
         "@return": [
@@ -805,7 +805,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get parsed response.\n\nIs called in the {@link #_onReadyStateChange} event handler\nto parse and store the transport’s response.\n\nThis method MUST be overridden."
+            "body": "<p>Get parsed response.\n Is called in the {@link #_onReadyStateChange} event handler\n to parse and store the transport’s response.\n This method MUST be overridden.</p>"
           }
         ],
         "@return": [
@@ -835,7 +835,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get method.\n\nThis method MAY be overridden. It is called in {@link #send}\nbefore the request is initialized."
+            "body": "<p>Get method.\n This method MAY be overridden. It is called in {@link #send}\n before the request is initialized.</p>"
           }
         ],
         "@return": [
@@ -865,7 +865,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether async.\n\nThis method MAY be overridden. It is called in {@link #send}\nbefore the request is initialized."
+            "body": "<p>Whether async.\n This method MAY be overridden. It is called in {@link #send}\n before the request is initialized.</p>"
           }
         ],
         "@return": [
@@ -895,11 +895,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERACT WITH TRANSPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERACT WITH TRANSPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Send request."
+            "body": "<p>Send request.</p>"
           }
         ]
       },
@@ -909,11 +909,11 @@
     "sendWithPromise": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 432,
           "column": 4
         },
         "end": {
-          "line": 492,
+          "line": 503,
           "column": 5
         }
       },
@@ -921,7 +921,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The same as send() but also return a `qx.Promise` object. The promise\nis fulfilled if the request reaches phase `success`. The promise is\nrejected if the request reaches one of the phases `statusError`, `error`,\n`timeout` and `abort` or when a `parseError` happens.\n\nCalling `abort()` on the request object, rejects the promise. Calling\n`cancel()` on the promise aborts the request if the request is not in a\nfinal state.\nIf the promise has other listener paths, then cancelation of one path will\nnot have any effect on the request and consequently that call will not\naffect the other paths."
+            "body": "<p>The same as send() but also return a <code>qx.Promise</code> object. The promise\n is resolved to this object if the request is successful.\n Calling <code>abort()</code> on the request object, rejects the promise. Calling\n <code>cancel()</code> on the promise aborts the request if the request is not in a\n final state.\n If the promise has other listener paths, then cancelation of one path will\n not have any effect on the request and consequently that call will not\n affect the other paths.</p>"
           }
         ],
         "@param": [
@@ -957,11 +957,11 @@
     "abort": {
       "location": {
         "start": {
-          "line": 497,
+          "line": 508,
           "column": 4
         },
         "end": {
-          "line": 507,
+          "line": 518,
           "column": 5
         }
       },
@@ -969,7 +969,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Abort request."
+            "body": "<p>Abort request.</p>"
           }
         ]
       },
@@ -979,11 +979,11 @@
     "_setRequestHeaders": {
       "location": {
         "start": {
-          "line": 521,
+          "line": 532,
           "column": 4
         },
         "end": {
-          "line": 529,
+          "line": 540,
           "column": 5
         }
       },
@@ -991,11 +991,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUEST HEADERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n REQUEST HEADERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Apply configured request headers to transport.\n\nThis method MAY be overridden to customize application of request headers\nto transport."
+            "body": "<p>Apply configured request headers to transport.\n This method MAY be overridden to customize application of request headers\n to transport.</p>"
           }
         ]
       },
@@ -1005,11 +1005,11 @@
     "_getAllRequestHeaders": {
       "location": {
         "start": {
-          "line": 536,
+          "line": 547,
           "column": 4
         },
         "end": {
-          "line": 548,
+          "line": 559,
           "column": 5
         }
       },
@@ -1017,7 +1017,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all request headers."
+            "body": "<p>Get all request headers.</p>"
           }
         ],
         "@return": [
@@ -1035,11 +1035,11 @@
     "__getAuthRequestHeaders": {
       "location": {
         "start": {
-          "line": 555,
+          "line": 566,
           "column": 4
         },
         "end": {
-          "line": 565,
+          "line": 576,
           "column": 5
         }
       },
@@ -1047,7 +1047,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve authentication headers from auth delegate."
+            "body": "<p>Retrieve authentication headers from auth delegate.</p>"
           }
         ],
         "@return": [
@@ -1065,11 +1065,11 @@
     "setRequestHeader": {
       "location": {
         "start": {
-          "line": 575,
+          "line": 586,
           "column": 4
         },
         "end": {
-          "line": 577,
+          "line": 588,
           "column": 5
         }
       },
@@ -1077,7 +1077,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a request header.\n\nNote: Setting request headers has no effect after the request was send."
+            "body": "<p>Set a request header.\n Note: Setting request headers has no effect after the request was send.</p>"
           }
         ],
         "@param": [
@@ -1103,11 +1103,11 @@
     "getRequestHeader": {
       "location": {
         "start": {
-          "line": 585,
+          "line": 596,
           "column": 4
         },
         "end": {
-          "line": 587,
+          "line": 598,
           "column": 5
         }
       },
@@ -1115,7 +1115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a request header."
+            "body": "<p>Get a request header.</p>"
           }
         ],
         "@param": [
@@ -1142,11 +1142,11 @@
     "removeRequestHeader": {
       "location": {
         "start": {
-          "line": 596,
+          "line": 607,
           "column": 4
         },
         "end": {
-          "line": 600,
+          "line": 611,
           "column": 5
         }
       },
@@ -1154,7 +1154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a request header.\n\nNote: Removing request headers has no effect after the request was send."
+            "body": "<p>Remove a request header.\n Note: Removing request headers has no effect after the request was send.</p>"
           }
         ],
         "@param": [
@@ -1173,11 +1173,11 @@
     "getTransport": {
       "location": {
         "start": {
-          "line": 631,
+          "line": 642,
           "column": 4
         },
         "end": {
-          "line": 633,
+          "line": 644,
           "column": 5
         }
       },
@@ -1185,23 +1185,23 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nQUERY TRANSPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n QUERY TRANSPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get low-level transport.\n\nNote: To be used with caution!\n\nThis method can be used to query the transport directly,\nbut should be used with caution. Especially, it\nis not advisable to call any destructive methods\nsuch as <code>open</code> or <code>send</code>."
+            "body": "<p>Get low-level transport.\n Note: To be used with caution!\n This method can be used to query the transport directly,\n but should be used with caution. Especially, it\n is not advisable to call any destructive methods\n such as <code>open</code> or <code>send</code>.</p>"
           },
           {
             "name": "@description",
-            "body": "This method mainly exists so that some methods found in the"
+            "body": "<p>This method mainly exists so that some methods found in the</p>"
           },
           {
             "name": "@description",
-            "body": "low-level transport can be deliberately omitted here,"
+            "body": "<p>low-level transport can be deliberately omitted here,</p>"
           },
           {
             "name": "@description",
-            "body": "but still be accessed should it be absolutely necessary."
+            "body": "<p>but still be accessed should it be absolutely necessary.</p>"
           },
           {
             "name": "@description",
@@ -1209,15 +1209,15 @@
           },
           {
             "name": "@description",
-            "body": "Valid use cases include to query the transport’s responseXML"
+            "body": "<p>Valid use cases include to query the transport’s responseXML</p>"
           },
           {
             "name": "@description",
-            "body": "property if performance is critical and any extra parsing"
+            "body": "<p>property if performance is critical and any extra parsing</p>"
           },
           {
             "name": "@description",
-            "body": "should be avoided at all costs."
+            "body": "<p>should be avoided at all costs.</p>"
           },
           {
             "name": "@description",
@@ -1227,9 +1227,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} An instance of a class found in\n<code>qx.bom.request.*</code>",
+            "body": "{Object} An instance of a class found in\n  <code>qx.bom.request.*</code>",
             "type": "Object",
-            "description": " An instance of a class found in\n<code>qx.bom.request.*</code>"
+            "description": " An instance of a class found in\n  <code>qx.bom.request.*</code>"
           }
         ]
       },
@@ -1239,11 +1239,11 @@
     "getReadyState": {
       "location": {
         "start": {
-          "line": 647,
+          "line": 658,
           "column": 4
         },
         "end": {
-          "line": 649,
+          "line": 660,
           "column": 5
         }
       },
@@ -1251,7 +1251,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get current ready state.\n\nStates can be:\nUNSENT:           0,\nOPENED:           1,\nHEADERS_RECEIVED: 2,\nLOADING:          3,\nDONE:             4"
+            "body": "<p>Get current ready state.\n States can be:\n UNSENT:           0,\n OPENED:           1,\n HEADERS_RECEIVED: 2,\n LOADING:          3,\n DONE:             4</p>"
           }
         ],
         "@return": [
@@ -1269,11 +1269,11 @@
     "getPhase": {
       "location": {
         "start": {
-          "line": 670,
+          "line": 681,
           "column": 4
         },
         "end": {
-          "line": 672,
+          "line": 683,
           "column": 5
         }
       },
@@ -1281,7 +1281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get current phase.\n\nA more elaborate version of {@link #getReadyState}, this method indicates\nthe current phase of the request. Maps to stateful (i.e. deterministic)\nevents (success, abort, timeout, statusError) and intermediate\nreadyStates (unsent, configured, loading, load).\n\nWhen the requests is successful, it progresses the states:<br>\n'unsent', 'opened', 'sent', 'loading', 'load', 'success'\n\nIn case of failure, the final state is one of:<br>\n'abort', 'timeout', 'statusError'\n\nFor each change of the phase, a {@link #changePhase} data event is fired."
+            "body": "<p>Get current phase.\n A more elaborate version of {@link #getReadyState}, this method indicates\n the current phase of the request. Maps to stateful (i.e. deterministic)\n events (success, abort, timeout, statusError) and intermediate\n readyStates (unsent, configured, loading, load).\n When the requests is successful, it progresses the states:<br>\n 'unsent', 'opened', 'sent', 'loading', 'load', 'success'\n In case of failure, the final state is one of:<br>\n 'abort', 'timeout', 'statusError'\n For each change of the phase, a {@link #changePhase} data event is fired.</p>"
           }
         ],
         "@return": [
@@ -1299,11 +1299,11 @@
     "getStatus": {
       "location": {
         "start": {
-          "line": 679,
+          "line": 690,
           "column": 4
         },
         "end": {
-          "line": 681,
+          "line": 692,
           "column": 5
         }
       },
@@ -1311,7 +1311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get status code."
+            "body": "<p>Get status code.</p>"
           }
         ],
         "@return": [
@@ -1329,11 +1329,11 @@
     "getStatusText": {
       "location": {
         "start": {
-          "line": 688,
+          "line": 699,
           "column": 4
         },
         "end": {
-          "line": 690,
+          "line": 701,
           "column": 5
         }
       },
@@ -1341,7 +1341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get status text."
+            "body": "<p>Get status text.</p>"
           }
         ],
         "@return": [
@@ -1359,11 +1359,11 @@
     "getResponseText": {
       "location": {
         "start": {
-          "line": 697,
+          "line": 708,
           "column": 4
         },
         "end": {
-          "line": 699,
+          "line": 710,
           "column": 5
         }
       },
@@ -1371,7 +1371,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get raw (unprocessed) response."
+            "body": "<p>Get raw (unprocessed) response.</p>"
           }
         ],
         "@return": [
@@ -1389,11 +1389,11 @@
     "getAllResponseHeaders": {
       "location": {
         "start": {
-          "line": 706,
+          "line": 717,
           "column": 4
         },
         "end": {
-          "line": 708,
+          "line": 719,
           "column": 5
         }
       },
@@ -1401,7 +1401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all response headers from response."
+            "body": "<p>Get all response headers from response.</p>"
           }
         ],
         "@return": [
@@ -1419,45 +1419,6 @@
     "getResponseHeader": {
       "location": {
         "start": {
-          "line": 718,
-          "column": 4
-        },
-        "end": {
-          "line": 720,
-          "column": 5
-        }
-      },
-      "jsdoc": {
-        "@description": [
-          {
-            "name": "@description",
-            "body": "Get a single response header from response."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "key {String}\nKey of the header to get the value from.",
-            "paramName": "key",
-            "description": "\nKey of the header to get the value from.",
-            "type": "String"
-          }
-        ],
-        "@return": [
-          {
-            "name": "@return",
-            "body": "{String}\nResponse header.",
-            "type": "String",
-            "description": "\nResponse header."
-          }
-        ]
-      },
-      "type": "function",
-      "access": "public"
-    },
-    "overrideResponseContentType": {
-      "location": {
-        "start": {
           "line": 729,
           "column": 4
         },
@@ -1470,15 +1431,54 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override the content type response header from response."
+            "body": "<p>Get a single response header from response.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "contentType {String}\nContent type for overriding.",
+            "body": "key {String}\n   Key of the header to get the value from.",
+            "paramName": "key",
+            "description": "\n   Key of the header to get the value from.",
+            "type": "String"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{String}\n   Response header.",
+            "type": "String",
+            "description": "\n   Response header."
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "overrideResponseContentType": {
+      "location": {
+        "start": {
+          "line": 740,
+          "column": 4
+        },
+        "end": {
+          "line": 742,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Override the content type response header from response.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "contentType {String}\n   Content type for overriding.",
             "paramName": "contentType",
-            "description": "\nContent type for overriding.",
+            "description": "\n   Content type for overriding.",
             "type": "String"
           }
         ],
@@ -1495,11 +1495,11 @@
     "getResponseContentType": {
       "location": {
         "start": {
-          "line": 739,
+          "line": 750,
           "column": 4
         },
         "end": {
-          "line": 741,
+          "line": 752,
           "column": 5
         }
       },
@@ -1507,15 +1507,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the content type response header from response."
+            "body": "<p>Get the content type response header from response.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nContent type response header.",
+            "body": "{String}\n   Content type response header.",
             "type": "String",
-            "description": "\nContent type response header."
+            "description": "\n   Content type response header."
           }
         ]
       },
@@ -1525,11 +1525,11 @@
     "isDone": {
       "location": {
         "start": {
-          "line": 746,
+          "line": 757,
           "column": 4
         },
         "end": {
-          "line": 748,
+          "line": 759,
           "column": 5
         }
       },
@@ -1537,7 +1537,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether request completed (is done)."
+            "body": "<p>Whether request completed (is done).</p>"
           }
         ]
       },
@@ -1547,11 +1547,11 @@
     "getResponse": {
       "location": {
         "start": {
-          "line": 761,
+          "line": 772,
           "column": 4
         },
         "end": {
-          "line": 763,
+          "line": 774,
           "column": 5
         }
       },
@@ -1559,11 +1559,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESPONSE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  RESPONSE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get parsed response."
+            "body": "<p>Get parsed response.</p>"
           }
         ],
         "@return": [
@@ -1581,11 +1581,11 @@
     "_setResponse": {
       "location": {
         "start": {
-          "line": 770,
+          "line": 781,
           "column": 4
         },
         "end": {
-          "line": 777,
+          "line": 788,
           "column": 5
         }
       },
@@ -1593,7 +1593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set response."
+            "body": "<p>Set response.</p>"
           }
         ],
         "@param": [
@@ -1612,11 +1612,11 @@
     "_onReadyStateChange": {
       "location": {
         "start": {
-          "line": 788,
+          "line": 799,
           "column": 4
         },
         "end": {
-          "line": 812,
+          "line": 823,
           "column": 5
         }
       },
@@ -1624,11 +1624,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handle \"readyStateChange\" event."
+            "body": "<p>Handle \"readyStateChange\" event.</p>"
           }
         ]
       },
@@ -1638,11 +1638,11 @@
     "__onReadyStateDone": {
       "location": {
         "start": {
-          "line": 817,
+          "line": 828,
           "column": 4
         },
         "end": {
-          "line": 856,
+          "line": 867,
           "column": 5
         }
       },
@@ -1650,7 +1650,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called internally when readyState is DONE."
+            "body": "<p>Called internally when readyState is DONE.</p>"
           }
         ]
       },
@@ -1660,11 +1660,11 @@
     "_onLoad": {
       "location": {
         "start": {
-          "line": 861,
+          "line": 872,
           "column": 4
         },
         "end": {
-          "line": 863,
+          "line": 874,
           "column": 5
         }
       },
@@ -1672,7 +1672,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle \"load\" event."
+            "body": "<p>Handle \"load\" event.</p>"
           }
         ]
       },
@@ -1682,11 +1682,11 @@
     "_onLoadEnd": {
       "location": {
         "start": {
-          "line": 868,
+          "line": 879,
           "column": 4
         },
         "end": {
-          "line": 870,
+          "line": 881,
           "column": 5
         }
       },
@@ -1694,7 +1694,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle \"loadEnd\" event."
+            "body": "<p>Handle \"loadEnd\" event.</p>"
           }
         ]
       },
@@ -1704,11 +1704,11 @@
     "_onAbort": {
       "location": {
         "start": {
-          "line": 875,
+          "line": 886,
           "column": 4
         },
         "end": {
-          "line": 877,
+          "line": 888,
           "column": 5
         }
       },
@@ -1716,7 +1716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle \"abort\" event."
+            "body": "<p>Handle \"abort\" event.</p>"
           }
         ]
       },
@@ -1726,11 +1726,11 @@
     "_onTimeout": {
       "location": {
         "start": {
-          "line": 882,
+          "line": 893,
           "column": 4
         },
         "end": {
-          "line": 887,
+          "line": 898,
           "column": 5
         }
       },
@@ -1738,7 +1738,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle \"timeout\" event."
+            "body": "<p>Handle \"timeout\" event.</p>"
           }
         ]
       },
@@ -1748,11 +1748,11 @@
     "_onError": {
       "location": {
         "start": {
-          "line": 892,
+          "line": 903,
           "column": 4
         },
         "end": {
-          "line": 897,
+          "line": 908,
           "column": 5
         }
       },
@@ -1760,7 +1760,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handle \"error\" event."
+            "body": "<p>Handle \"error\" event.</p>"
           }
         ]
       },
@@ -1770,11 +1770,11 @@
     "_fireStatefulEvent": {
       "location": {
         "start": {
-          "line": 912,
+          "line": 923,
           "column": 4
         },
         "end": {
-          "line": 918,
+          "line": 929,
           "column": 5
         }
       },
@@ -1782,11 +1782,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL / HELPERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL / HELPERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Fire stateful event.\n\nFires event and sets phase to name of event."
+            "body": "<p>Fire stateful event.\n Fires event and sets phase to name of event.</p>"
           }
         ],
         "@param": [
@@ -1805,11 +1805,11 @@
     "_setPhase": {
       "location": {
         "start": {
-          "line": 925,
+          "line": 936,
           "column": 4
         },
         "end": {
-          "line": 936,
+          "line": 947,
           "column": 5
         }
       },
@@ -1817,7 +1817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set phase."
+            "body": "<p>Set phase.</p>"
           }
         ],
         "@param": [
@@ -1836,11 +1836,11 @@
     "_serializeData": {
       "location": {
         "start": {
-          "line": 944,
+          "line": 955,
           "column": 4
         },
         "end": {
-          "line": 969,
+          "line": 980,
           "column": 5
         }
       },
@@ -1848,7 +1848,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serialize data."
+            "body": "<p>Serialize data.</p>"
           }
         ],
         "@param": [
@@ -2262,14 +2262,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 977,
-        "column": 2
+        "line": 988,
+        "column": 12
       },
       "end": {
-        "line": 991,
+        "line": 1002,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.io.request.Jsonp",

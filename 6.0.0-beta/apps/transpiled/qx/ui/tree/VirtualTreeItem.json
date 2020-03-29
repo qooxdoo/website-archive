@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The tree item is a tree element for the {@link VirtualTree}, which can have\nnested tree elements."
+          "body": "<p>The tree item is a tree element for the {@link VirtualTree}, which can have\n nested tree elements.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -118,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "apply method"
+            "body": "<p>apply method</p>"
           }
         ]
       },
@@ -272,7 +272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler to update open/close icon when model length changed."
+            "body": "<p>Handler to update open/close icon when model length changed.</p>"
           }
         ]
       },
@@ -294,7 +294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler to add listener to array of children property."
+            "body": "<p>Handler to add listener to array of children property.</p>"
           }
         ],
         "@param": [
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -350,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -4279,6 +4279,7 @@
     }
   },
   "descendants": [
-    "qxl.demobrowser.demo.virtual.tree.TreeItem"
+    "qxl.demobrowser.demo.virtual.tree.TreeItem",
+    "qxl.testtapper.TreeItem"
   ]
 }

@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class provides a handler for the online event.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>This class provides a handler for the online event.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -38,7 +38,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -49,11 +49,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Create a new instance"
+          "body": "<p>Create a new instance</p>"
         }
       ],
       "@param": [
@@ -239,19 +239,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -265,9 +265,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -293,15 +293,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -313,9 +313,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -342,15 +342,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -362,9 +362,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -391,7 +391,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Connects the native online and offline event listeners."
+            "body": "<p>Connects the native online and offline event listeners.</p>"
           }
         ]
       },
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disconnects the native online and offline event listeners."
+            "body": "<p>Disconnects the native online and offline event listeners.</p>"
           }
         ]
       },
@@ -435,7 +435,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Native handler function which fires a qooxdoo event."
+            "body": "<p>Native handler function which fires a qooxdoo event.</p>"
           }
         ],
         "@signature": [
@@ -472,11 +472,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns whether the current window thinks its online or not."
+            "body": "<p>Returns whether the current window thinks its online or not.</p>"
           }
         ],
         "@return": [
@@ -616,7 +616,7 @@
     "location": {
       "start": {
         "line": 184,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 191,
@@ -627,7 +627,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -636,7 +636,7 @@
     "location": {
       "start": {
         "line": 202,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 204,
@@ -647,7 +647,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

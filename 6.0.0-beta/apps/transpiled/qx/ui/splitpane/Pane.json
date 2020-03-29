@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A split panes divides an area into two panes. The ratio between the two\npanes is configurable by the user using the splitter."
+          "body": "<p>A split panes divides an area into two panes. The ratio between the two\n panes is configurable by the user using the splitter.</p>"
         }
       ],
       "@childControl": [
@@ -51,7 +51,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 66,
@@ -62,19 +62,19 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Creates a new instance of a SplitPane. It allows the user to dynamically\nresize the areas dropping the border between."
+          "body": "<p>Creates a new instance of a SplitPane. It allows the user to dynamically\n resize the areas dropping the border between.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "orientation {String} The orientation of the split pane control.\nAllowed values are \"horizontal\" (default) and \"vertical\".",
+          "body": "orientation {String} The orientation of the split pane control.\n Allowed values are \"horizontal\" (default) and \"vertical\".",
           "paramName": "orientation",
-          "description": " The orientation of the split pane control.\nAllowed values are \"horizontal\" (default) and \"vertical\".",
+          "description": " The orientation of the split pane control.\n Allowed values are \"horizontal\" (default) and \"vertical\".",
           "type": "String"
         }
       ]
@@ -96,7 +96,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Distance between pointer and splitter when the cursor should change\nand enable resizing."
+            "body": "<p>Distance between pointer and splitter when the cursor should change\n and enable resizing.</p>"
           }
         ]
       },
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The orientation of the splitpane control."
+            "body": "<p>The orientation of the splitpane control.</p>"
           }
         ]
       },
@@ -308,22 +308,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -360,7 +360,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move handler for the splitter which takes care of the external\ntriggered resize of children."
+            "body": "<p>Move handler for the splitter which takes care of the external\n triggered resize of children.</p>"
           }
         ],
         "@param": [
@@ -391,7 +391,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a blocker for the splitter which takes all bouse events and\nalso handles the offset and cursor."
+            "body": "<p>Creates a blocker for the splitter which takes all bouse events and\n also handles the offset and cursor.</p>"
           }
         ],
         "@param": [
@@ -422,7 +422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the blocker used over the splitter. this could be used for\nadding event listeners like tap or dbltap."
+            "body": "<p>Returns the blocker used over the splitter. this could be used for\n adding event listeners like tap or dbltap.</p>"
           }
         ],
         "@return": [
@@ -458,11 +458,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Apply routine for the orientation property.\n\nSets the pane's layout to vertical or horizontal split layout."
+            "body": "<p>Apply routine for the orientation property.\n Sets the pane's layout to vertical or horizontal split layout.</p>"
           }
         ],
         "@param": [
@@ -503,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -528,15 +528,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for setting the blocker to the right position, which depends on\nthe offset, orientation and the current position of the splitter."
+            "body": "<p>Helper for setting the blocker to the right position, which depends on\n the offset, orientation and the current position of the splitter.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "bounds {Map?null} If the bounds of the splitter are known,\nthey can be added.",
+            "body": "bounds {Map?null} If the bounds of the splitter are known,\n   they can be added.",
             "paramName": "bounds",
-            "description": " If the bounds of the splitter are known,\nthey can be added.",
+            "description": " If the bounds of the splitter are known,\n   they can be added.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -561,11 +561,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a widget to the pane.\n\nSets the pane's layout to vertical or horizontal split layout. Depending on the\npane's layout the first widget will be the left or top widget, the second one\nthe bottom or right widget. Adding more than two widgets will overwrite the\nexisting ones."
+            "body": "<p>Adds a widget to the pane.\n Sets the pane's layout to vertical or horizontal split layout. Depending on the\n pane's layout the first widget will be the left or top widget, the second one\n the bottom or right widget. Adding more than two widgets will overwrite the\n existing ones.</p>"
           }
         ],
         "@param": [
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given widget from the pane."
+            "body": "<p>Removes the given widget from the pane.</p>"
           }
         ],
         "@param": [
@@ -634,7 +634,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array containing the pane's content."
+            "body": "<p>Returns an array containing the pane's content.</p>"
           }
         ],
         "@return": [
@@ -664,11 +664,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPOINTER LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  POINTER LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for pointerdown event.\n\nShows slider widget and starts drag session if pointer is near/on splitter widget."
+            "body": "<p>Handler for pointerdown event.\n Shows slider widget and starts drag session if pointer is near/on splitter widget.</p>"
           }
         ],
         "@param": [
@@ -699,7 +699,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for pointermove event."
+            "body": "<p>Handler for pointermove event.</p>"
           }
         ],
         "@param": [
@@ -730,7 +730,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for pointerout event"
+            "body": "<p>Handler for pointerout event</p>"
           }
         ],
         "@param": [
@@ -761,7 +761,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for pointerup event\n\nSets widget sizes if dragging session has been active."
+            "body": "<p>Handler for pointerup event\n Sets widget sizes if dragging session has been active.</p>"
           }
         ],
         "@param": [
@@ -792,11 +792,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERVAL HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERVAL HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Updates widgets' sizes based on the slider position."
+            "body": "<p>Updates widgets' sizes based on the slider position.</p>"
           }
         ]
       },
@@ -818,7 +818,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes widgets' sizes based on the pointer coordinate."
+            "body": "<p>Computes widgets' sizes based on the pointer coordinate.</p>"
           }
         ]
       },
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines whether this is an active drag session"
+            "body": "<p>Determines whether this is an active drag session</p>"
           }
         ],
         "@return": [
@@ -870,7 +870,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the last pointer position."
+            "body": "<p>Sets the last pointer position.</p>"
           }
         ],
         "@param": [
@@ -4514,13 +4514,14 @@
     "location": {
       "start": {
         "line": 627,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 629,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

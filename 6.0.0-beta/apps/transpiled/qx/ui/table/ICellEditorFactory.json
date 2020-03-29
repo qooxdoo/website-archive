@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A factory creating widgets to use for editing table cells."
+          "body": "<p>A factory creating widgets to use for editing table cells.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a cell editor.\n\nThe cellInfo map contains the following properties:\n<ul>\n<li>value (var): the cell's value.</li>\n<li>row (int): the model index of the row the cell belongs to.</li>\n<li>col (int): the model index of the column the cell belongs to.</li>\n<li>xPos (int): the x position of the cell in the table pane.</li>\n<li>table (qx.ui.table.Table) reference to the table, the cell belongs to. </li>\n</ul>"
+            "body": "<p>Creates a cell editor.\n The cellInfo map contains the following properties:\n </p>\n<ul>\n <li>value (var): the cell's value.</li>\n <li>row (int): the model index of the row the cell belongs to.</li>\n <li>col (int): the model index of the column the cell belongs to.</li>\n <li>xPos (int): the x position of the cell in the table pane.</li>\n <li>table (qx.ui.table.Table) reference to the table, the cell belongs to. </li>\n </ul>"
           }
         ],
         "@abstract": [
@@ -59,9 +59,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n      create.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate.",
+            "description": " A map containing the information about the cell to\n      create.",
             "type": "Map"
           }
         ],
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current value of a cell editor."
+            "body": "<p>Returns the current value of a cell editor.</p>"
           }
         ],
         "@abstract": [
@@ -104,9 +104,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n{@link #createCellEditor}.",
+            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n      {@link #createCellEditor}.",
             "paramName": "cellEditor",
-            "description": " The cell editor formally created by\n{@link #createCellEditor}.",
+            "description": " The cell editor formally created by\n      {@link #createCellEditor}.",
             "type": "qx.ui.core.Widget"
           }
         ],

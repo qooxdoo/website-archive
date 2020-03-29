@@ -15,7 +15,7 @@
         "column": 0
       },
       "end": {
-        "line": 2418,
+        "line": 2469,
         "column": 3
       }
     },
@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Shows a whole meta column. This includes a {@link Header},\na {@link Pane} and the needed scroll bars. This class handles the\nvirtual scrolling and does all the pointer event handling."
+          "body": "<p>Shows a whole meta column. This includes a {@link Header},\n a {@link Pane} and the needed scroll bars. This class handles the\n virtual scrolling and does all the pointer event handling.</p>"
         }
       ],
       "@childControl": [
@@ -61,14 +61,14 @@
         },
         {
           "name": "@childControl",
-          "body": "scrollbar-x {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\nhorizontal scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
+          "body": "scrollbar-x {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\n               horizontal scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
           "controlName": "scrollbar-x",
           "description": "horizontal scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
           "type": "qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar"
         },
         {
           "name": "@childControl",
-          "body": "scrollbar-y {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\nvertical scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
+          "body": "scrollbar-y {qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar}\n               vertical scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
           "controlName": "scrollbar-y",
           "description": "vertical scrollbar widget (depends on the \"qx.nativeScrollBars\" setting which implementation is used)",
           "type": "qx.ui.core.scroll.ScrollBar?qx.ui.core.scroll.NativeScrollBar"
@@ -81,7 +81,7 @@
     "location": {
       "start": {
         "line": 50,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 128,
@@ -92,7 +92,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "(int) The number of pixels the pointer may move between pointer down and pointer up\nin order to count as a tap."
+            "body": "<p>(int) The number of pixels the pointer may move between pointer down and pointer up\n in order to count as a tap.</p>"
           }
         ]
       },
@@ -204,7 +204,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "(int) The mask for the horizontal scroll bar.\nMay be combined with {@link #VERTICAL_SCROLLBAR}."
+            "body": "<p>(int) The mask for the horizontal scroll bar.\n May be combined with {@link #VERTICAL_SCROLLBAR}.</p>"
           }
         ],
         "@see": [
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "(int) The mask for the vertical scroll bar.\nMay be combined with {@link #HORIZONTAL_SCROLLBAR}."
+            "body": "<p>(int) The mask for the vertical scroll bar.\n May be combined with {@link #HORIZONTAL_SCROLLBAR}.</p>"
           }
         ],
         "@see": [
@@ -262,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched if the pane is scrolled horizontally"
+            "body": "<p>Dispatched if the pane is scrolled horizontally</p>"
           }
         ]
       },
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched if the pane is scrolled vertically"
+            "body": "<p>Dispatched if the pane is scrolled vertically</p>"
           }
         ]
       },
@@ -306,7 +306,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "See {@link qx.ui.table.Table#cellTap}."
+            "body": "<p>See {@link qx.ui.table.Table#cellTap}.</p>"
           }
         ]
       },
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "* See {@link qx.ui.table.Table#cellDbltap}."
+            "body": "<ul>\n<li>See {@link qx.ui.table.Table#cellDbltap}.</li>\n</ul>"
           }
         ]
       },
@@ -350,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "See {@link qx.ui.table.Table#cellContextmenu}."
+            "body": "<p>See {@link qx.ui.table.Table#cellContextmenu}.</p>"
           }
         ]
       },
@@ -372,7 +372,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when a sortable header was tapped"
+            "body": "<p>Dispatched when a sortable header was tapped</p>"
           }
         ]
       },
@@ -396,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the horizontal scroll bar. This is a tri-state\nvalue. `true` means show the scroll bar; `false` means exclude it; null\nmeans hide it so it retains its space but doesn't show a scroll bar."
+            "body": "<p>Whether to show the horizontal scroll bar. This is a tri-state\n value. <code>true</code> means show the scroll bar; <code>false</code> means exclude it; null\n means hide it so it retains its space but doesn't show a scroll bar.</p>"
           }
         ]
       },
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the vertical scroll bar"
+            "body": "<p>Whether to show the vertical scroll bar</p>"
           }
         ]
       },
@@ -452,7 +452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table pane model."
+            "body": "<p>The table pane model.</p>"
           }
         ]
       },
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether column resize should be live. If false, during resize only a line is\nshown and the real resize happens when the user releases the pointer button."
+            "body": "<p>Whether column resize should be live. If false, during resize only a line is\n shown and the real resize happens when the user releases the pointer button.</p>"
           }
         ]
       },
@@ -502,7 +502,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the focus should moved when the pointer is moved over a cell. If false\nthe focus is only moved on pointer taps."
+            "body": "<p>Whether the focus should moved when the pointer is moved over a cell. If false\n the focus is only moved on pointer taps.</p>"
           }
         ]
       },
@@ -527,7 +527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to handle selections via the selection manager before setting the\nfocus.  The traditional behavior is to handle selections after setting the\nfocus, but setting the focus means redrawing portions of the table, and\nsome subclasses may want to modify the data to be displayed based on the\nselection."
+            "body": "<p>Whether to handle selections via the selection manager before setting the\n focus.  The traditional behavior is to handle selections after setting the\n focus, but setting the focus means redrawing portions of the table, and\n some subclasses may want to modify the data to be displayed based on the\n selection.</p>"
           }
         ]
       },
@@ -552,7 +552,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the cell focus indicator should be shown"
+            "body": "<p>Whether the cell focus indicator should be shown</p>"
           }
         ]
       },
@@ -578,7 +578,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "By default, the \"cellContextmenu\" event is fired only when a data cell\nis right-clicked. It is not fired when a right-click occurs in the\nempty area of the table below the last data row. By turning on this\nproperty, \"cellContextMenu\" events will also be generated when a\nright-click occurs in that empty area. In such a case, row identifier\nin the event data will be null, so event handlers can check (row ===\nnull) to handle this case."
+            "body": "<p>By default, the \"cellContextmenu\" event is fired only when a data cell\n is right-clicked. It is not fired when a right-click occurs in the\n empty area of the table below the last data row. By turning on this\n property, \"cellContextMenu\" events will also be generated when a\n right-click occurs in that empty area. In such a case, row identifier\n in the event data will be null, so event handlers can check (row ===\n null) to handle this case.</p>"
           }
         ]
       },
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to reset the selection when a header cell is tapped. Since\nmost data models do not have provisions to retain a selection after\nsorting, the default is to reset the selection in this case. Some data\nmodels, however, do have the capability to retain the selection, so\nwhen using those, this property should be set to false."
+            "body": "<p>Whether to reset the selection when a header cell is tapped. Since\n most data models do not have provisions to retain a selection after\n sorting, the default is to reset the selection in this case. Some data\n models, however, do have the capability to retain the selection, so\n when using those, this property should be set to false.</p>"
           }
         ]
       },
@@ -628,7 +628,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval time (in milliseconds) for the table update timer.\nSetting this to 0 clears the timer."
+            "body": "<p>Interval time (in milliseconds) for the table update timer.\n Setting this to 0 clears the timer.</p>"
           }
         ]
       },
@@ -1153,7 +1153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The right inset of the pane. The right inset is the maximum of the\ntop right widget width and the scrollbar width (if visible)."
+            "body": "<p>The right inset of the pane. The right inset is the maximum of the\n top right widget width and the scrollbar width (if visible).</p>"
           }
         ],
         "@return": [
@@ -1183,7 +1183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the pane's width"
+            "body": "<p>Set the pane's width</p>"
           }
         ],
         "@param": [
@@ -1214,22 +1214,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -1266,7 +1266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1291,7 +1291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1316,7 +1316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1341,7 +1341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1366,7 +1366,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current position of the vertical scroll bar."
+            "body": "<p>Get the current position of the vertical scroll bar.</p>"
           }
         ],
         "@return": [
@@ -1396,7 +1396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the current position of the vertical scroll bar."
+            "body": "<p>Set the current position of the vertical scroll bar.</p>"
           }
         ],
         "@param": [
@@ -1409,9 +1409,9 @@
           },
           {
             "name": "@param",
-            "body": "renderSync {Boolean?false} Whether the table update should be\nperformed synchronously.",
+            "body": "renderSync {Boolean?false} Whether the table update should be\n     performed synchronously.",
             "paramName": "renderSync",
-            "description": " Whether the table update should be\nperformed synchronously.",
+            "description": " Whether the table update should be\n     performed synchronously.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1436,7 +1436,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current position of the vertical scroll bar."
+            "body": "<p>Get the current position of the vertical scroll bar.</p>"
           }
         ],
         "@return": [
@@ -1466,7 +1466,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the current position of the vertical scroll bar."
+            "body": "<p>Set the current position of the vertical scroll bar.</p>"
           }
         ],
         "@param": [
@@ -1497,7 +1497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the table this scroller belongs to."
+            "body": "<p>Returns the table this scroller belongs to.</p>"
           }
         ],
         "@return": [
@@ -1527,7 +1527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns an instance of pane clipper."
+            "body": "<p>Creates and returns an instance of pane clipper.</p>"
           }
         ],
         "@return": [
@@ -1557,7 +1557,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns an instance of header clipper."
+            "body": "<p>Creates and returns an instance of header clipper.</p>"
           }
         ],
         "@return": [
@@ -1587,7 +1587,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the visibility of a column has changed."
+            "body": "<p>Event handler. Called when the visibility of a column has changed.</p>"
           }
         ]
       },
@@ -1609,7 +1609,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the column width."
+            "body": "<p>Sets the column width.</p>"
           }
         ],
         "@param": [
@@ -1647,7 +1647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the column order has changed."
+            "body": "<p>Event handler. Called when the column order has changed.</p>"
           }
         ]
       },
@@ -1661,7 +1661,7 @@
           "column": 4
         },
         "end": {
-          "line": 696,
+          "line": 701,
           "column": 5
         }
       },
@@ -1669,7 +1669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model has changed."
+            "body": "<p>Event handler. Called when the table model has changed.</p>"
           }
         ],
         "@param": [
@@ -1709,11 +1709,11 @@
     "onSelectionChanged": {
       "location": {
         "start": {
-          "line": 702,
+          "line": 707,
           "column": 4
         },
         "end": {
-          "line": 704,
+          "line": 709,
           "column": 5
         }
       },
@@ -1721,7 +1721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the selection has changed."
+            "body": "<p>Event handler. Called when the selection has changed.</p>"
           }
         ]
       },
@@ -1731,11 +1731,11 @@
     "onFocusChanged": {
       "location": {
         "start": {
-          "line": 710,
+          "line": 715,
           "column": 4
         },
         "end": {
-          "line": 712,
+          "line": 717,
           "column": 5
         }
       },
@@ -1743,7 +1743,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table gets or looses the focus."
+            "body": "<p>Event handler. Called when the table gets or looses the focus.</p>"
           }
         ]
       },
@@ -1753,11 +1753,11 @@
     "onTableModelMetaDataChanged": {
       "location": {
         "start": {
-          "line": 719,
+          "line": 724,
           "column": 4
         },
         "end": {
-          "line": 723,
+          "line": 728,
           "column": 5
         }
       },
@@ -1765,7 +1765,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model meta data has changed."
+            "body": "<p>Event handler. Called when the table model meta data has changed.</p>"
           }
         ]
       },
@@ -1775,11 +1775,11 @@
     "_onPaneModelChanged": {
       "location": {
         "start": {
-          "line": 729,
+          "line": 734,
           "column": 4
         },
         "end": {
-          "line": 733,
+          "line": 738,
           "column": 5
         }
       },
@@ -1787,7 +1787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the pane model has changed."
+            "body": "<p>Event handler. Called when the pane model has changed.</p>"
           }
         ]
       },
@@ -1797,11 +1797,11 @@
     "_onResizePane": {
       "location": {
         "start": {
-          "line": 739,
+          "line": 744,
           "column": 4
         },
         "end": {
-          "line": 748,
+          "line": 753,
           "column": 5
         }
       },
@@ -1809,7 +1809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for the pane clipper's resize event"
+            "body": "<p>Event listener for the pane clipper's resize event</p>"
           }
         ]
       },
@@ -1819,11 +1819,11 @@
     "updateHorScrollBarMaximum": {
       "location": {
         "start": {
-          "line": 755,
+          "line": 760,
           "column": 4
         },
         "end": {
-          "line": 782,
+          "line": 787,
           "column": 5
         }
       },
@@ -1831,7 +1831,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the maximum of the horizontal scroll bar, so it corresponds to the\ntotal width of the columns in the table pane."
+            "body": "<p>Updates the maximum of the horizontal scroll bar, so it corresponds to the\n total width of the columns in the table pane.</p>"
           }
         ]
       },
@@ -1841,11 +1841,11 @@
     "updateVerScrollBarMaximum": {
       "location": {
         "start": {
-          "line": 789,
+          "line": 794,
           "column": 4
         },
         "end": {
-          "line": 824,
+          "line": 829,
           "column": 5
         }
       },
@@ -1853,7 +1853,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the maximum of the vertical scroll bar, so it corresponds to the\nnumber of rows in the table."
+            "body": "<p>Updates the maximum of the vertical scroll bar, so it corresponds to the\n number of rows in the table.</p>"
           }
         ]
       },
@@ -1863,11 +1863,11 @@
     "onKeepFirstVisibleRowCompleteChanged": {
       "location": {
         "start": {
-          "line": 831,
+          "line": 836,
           "column": 4
         },
         "end": {
-          "line": 835,
+          "line": 840,
           "column": 5
         }
       },
@@ -1875,7 +1875,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table property \"keepFirstVisibleRowComplete\"\nchanged."
+            "body": "<p>Event handler. Called when the table property \"keepFirstVisibleRowComplete\"\n changed.</p>"
           }
         ]
       },
@@ -1885,11 +1885,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 841,
+          "line": 846,
           "column": 4
         },
         "end": {
-          "line": 844,
+          "line": 849,
           "column": 5
         }
       },
@@ -1897,7 +1897,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the scroller's appear event"
+            "body": "<p>Event handler for the scroller's appear event</p>"
           }
         ]
       },
@@ -1907,11 +1907,11 @@
     "_onDisappear": {
       "location": {
         "start": {
-          "line": 850,
+          "line": 855,
           "column": 4
         },
         "end": {
-          "line": 854,
+          "line": 859,
           "column": 5
         }
       },
@@ -1919,7 +1919,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the disappear event"
+            "body": "<p>Event handler for the disappear event</p>"
           }
         ]
       },
@@ -1929,11 +1929,11 @@
     "_onScrollX": {
       "location": {
         "start": {
-          "line": 862,
+          "line": 867,
           "column": 4
         },
         "end": {
-          "line": 869,
+          "line": 874,
           "column": 5
         }
       },
@@ -1941,7 +1941,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the horizontal scroll bar moved."
+            "body": "<p>Event handler. Called when the horizontal scroll bar moved.</p>"
           }
         ],
         "@param": [
@@ -1957,22 +1957,22 @@
       "type": "function",
       "access": "protected"
     },
-    "_onScrollY": {
+    "__inOnScrollY": {
       "location": {
         "start": {
-          "line": 877,
+          "line": 882,
           "column": 4
         },
         "end": {
-          "line": 881,
-          "column": 5
+          "line": 882,
+          "column": 25
         }
       },
       "jsdoc": {
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the vertical scroll bar moved."
+            "body": "<p>Event handler. Called when the vertical scroll bar moved.</p>"
           }
         ],
         "@param": [
@@ -1984,6 +1984,20 @@
             "type": "Map"
           }
         ]
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "_onScrollY": {
+      "location": {
+        "start": {
+          "line": 883,
+          "column": 4
+        },
+        "end": {
+          "line": 903,
+          "column": 5
+        }
       },
       "type": "function",
       "access": "protected"
@@ -1991,11 +2005,11 @@
     "_onRoll": {
       "location": {
         "start": {
-          "line": 889,
+          "line": 911,
           "column": 4
         },
         "end": {
-          "line": 931,
+          "line": 953,
           "column": 5
         }
       },
@@ -2003,7 +2017,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user moved the mouse wheel."
+            "body": "<p>Event handler. Called when the user moved the mouse wheel.</p>"
           }
         ],
         "@param": [
@@ -2022,11 +2036,11 @@
     "__isAtEdge": {
       "location": {
         "start": {
-          "line": 940,
+          "line": 962,
           "column": 4
         },
         "end": {
-          "line": 943,
+          "line": 965,
           "column": 5
         }
       },
@@ -2034,7 +2048,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the table has been scrolled."
+            "body": "<p>Checks if the table has been scrolled.</p>"
           }
         ],
         "@param": [
@@ -2068,11 +2082,11 @@
     "__handleResizeColumn": {
       "location": {
         "start": {
-          "line": 951,
+          "line": 973,
           "column": 4
         },
         "end": {
-          "line": 972,
+          "line": 992,
           "column": 5
         }
       },
@@ -2080,7 +2094,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Common column resize logic."
+            "body": "<p>Common column resize logic.</p>"
           }
         ],
         "@param": [
@@ -2099,11 +2113,11 @@
     "__handleMoveColumn": {
       "location": {
         "start": {
-          "line": 981,
+          "line": 1001,
           "column": 4
         },
         "end": {
-          "line": 1011,
+          "line": 1031,
           "column": 5
         }
       },
@@ -2111,7 +2125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Common column move logic."
+            "body": "<p>Common column move logic.</p>"
           }
         ],
         "@param": [
@@ -2130,11 +2144,11 @@
     "_onPointermoveHeader": {
       "location": {
         "start": {
-          "line": 1019,
+          "line": 1039,
           "column": 4
         },
         "end": {
-          "line": 1073,
+          "line": 1093,
           "column": 5
         }
       },
@@ -2142,7 +2156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user moved the pointer over the header."
+            "body": "<p>Event handler. Called when the user moved the pointer over the header.</p>"
           }
         ],
         "@param": [
@@ -2161,11 +2175,11 @@
     "_onPointermovePane": {
       "location": {
         "start": {
-          "line": 1081,
+          "line": 1101,
           "column": 4
         },
         "end": {
-          "line": 1107,
+          "line": 1140,
           "column": 5
         }
       },
@@ -2173,7 +2187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user moved the pointer over the pane."
+            "body": "<p>Event handler. Called when the user moved the pointer over the pane.</p>"
           }
         ],
         "@param": [
@@ -2192,11 +2206,11 @@
     "_onPointerdownHeader": {
       "location": {
         "start": {
-          "line": 1115,
+          "line": 1148,
           "column": 4
         },
         "end": {
-          "line": 1141,
+          "line": 1174,
           "column": 5
         }
       },
@@ -2204,7 +2218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user pressed a pointer button over the header."
+            "body": "<p>Event handler. Called when the user pressed a pointer button over the header.</p>"
           }
         ],
         "@param": [
@@ -2223,11 +2237,11 @@
     "_startResizeHeader": {
       "location": {
         "start": {
-          "line": 1150,
+          "line": 1183,
           "column": 4
         },
         "end": {
-          "line": 1159,
+          "line": 1192,
           "column": 5
         }
       },
@@ -2235,7 +2249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Start a resize session of the header."
+            "body": "<p>Start a resize session of the header.</p>"
           }
         ],
         "@param": [
@@ -2261,11 +2275,11 @@
     "_startMoveHeader": {
       "location": {
         "start": {
-          "line": 1168,
+          "line": 1201,
           "column": 4
         },
         "end": {
-          "line": 1175,
+          "line": 1208,
           "column": 5
         }
       },
@@ -2273,7 +2287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Start a move session of the header."
+            "body": "<p>Start a move session of the header.</p>"
           }
         ],
         "@param": [
@@ -2299,11 +2313,11 @@
     "_onPointerdownPane": {
       "location": {
         "start": {
-          "line": 1184,
+          "line": 1217,
           "column": 4
         },
         "end": {
-          "line": 1227,
+          "line": 1271,
           "column": 5
         }
       },
@@ -2311,7 +2325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user pressed a pointer button over the pane."
+            "body": "<p>Event handler. Called when the user pressed a pointer button over the pane.</p>"
           }
         ],
         "@param": [
@@ -2330,11 +2344,11 @@
     "_onPointerupFocusIndicator": {
       "location": {
         "start": {
-          "line": 1235,
+          "line": 1279,
           "column": 4
         },
         "end": {
-          "line": 1258,
+          "line": 1302,
           "column": 5
         }
       },
@@ -2342,7 +2356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the focus indicator's pointerup event"
+            "body": "<p>Event handler for the focus indicator's pointerup event</p>"
           }
         ],
         "@param": [
@@ -2361,11 +2375,11 @@
     "_onChangeCaptureHeader": {
       "location": {
         "start": {
-          "line": 1268,
+          "line": 1312,
           "column": 4
         },
         "end": {
-          "line": 1277,
+          "line": 1321,
           "column": 5
         }
       },
@@ -2373,7 +2387,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the event capturing of the header changed.\nStops/finishes an active header resize/move session if it lost capturing\nduring the session to stay in a stable state."
+            "body": "<p>Event handler. Called when the event capturing of the header changed.\n Stops/finishes an active header resize/move session if it lost capturing\n during the session to stay in a stable state.</p>"
           }
         ],
         "@param": [
@@ -2392,11 +2406,11 @@
     "_stopResizeHeader": {
       "location": {
         "start": {
-          "line": 1284,
+          "line": 1328,
           "column": 4
         },
         "end": {
-          "line": 1301,
+          "line": 1345,
           "column": 5
         }
       },
@@ -2404,7 +2418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stop a resize session of the header."
+            "body": "<p>Stop a resize session of the header.</p>"
           }
         ]
       },
@@ -2414,11 +2428,11 @@
     "_stopMoveHeader": {
       "location": {
         "start": {
-          "line": 1308,
+          "line": 1352,
           "column": 4
         },
         "end": {
-          "line": 1350,
+          "line": 1394,
           "column": 5
         }
       },
@@ -2426,7 +2440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stop a move session of the header."
+            "body": "<p>Stop a move session of the header.</p>"
           }
         ]
       },
@@ -2436,11 +2450,11 @@
     "_onPointerupHeader": {
       "location": {
         "start": {
-          "line": 1358,
+          "line": 1402,
           "column": 4
         },
         "end": {
-          "line": 1377,
+          "line": 1421,
           "column": 5
         }
       },
@@ -2448,7 +2462,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user released a pointer button over the header."
+            "body": "<p>Event handler. Called when the user released a pointer button over the header.</p>"
           }
         ],
         "@param": [
@@ -2467,11 +2481,11 @@
     "_onTapHeader": {
       "location": {
         "start": {
-          "line": 1385,
+          "line": 1429,
           "column": 4
         },
         "end": {
-          "line": 1440,
+          "line": 1484,
           "column": 5
         }
       },
@@ -2479,7 +2493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user tapped a pointer button over the header."
+            "body": "<p>Event handler. Called when the user tapped a pointer button over the header.</p>"
           }
         ],
         "@param": [
@@ -2498,11 +2512,11 @@
     "_onTapPane": {
       "location": {
         "start": {
-          "line": 1448,
+          "line": 1492,
           "column": 4
         },
         "end": {
-          "line": 1491,
+          "line": 1535,
           "column": 5
         }
       },
@@ -2510,7 +2524,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user tapped a pointer button over the pane."
+            "body": "<p>Event handler. Called when the user tapped a pointer button over the pane.</p>"
           }
         ],
         "@param": [
@@ -2529,11 +2543,11 @@
     "_onContextMenu": {
       "location": {
         "start": {
-          "line": 1499,
+          "line": 1543,
           "column": 4
         },
         "end": {
-          "line": 1549,
+          "line": 1593,
           "column": 5
         }
       },
@@ -2541,7 +2555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a context menu is invoked in a cell."
+            "body": "<p>Event handler. Called when a context menu is invoked in a cell.</p>"
           }
         ],
         "@param": [
@@ -2560,11 +2574,11 @@
     "_onContextMenuOpen": {
       "location": {
         "start": {
-          "line": 1553,
+          "line": 1597,
           "column": 4
         },
         "end": {
-          "line": 1560,
+          "line": 1604,
           "column": 5
         }
       },
@@ -2572,7 +2586,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -2595,11 +2609,11 @@
     "_onDbltapPane": {
       "location": {
         "start": {
-          "line": 1568,
+          "line": 1612,
           "column": 4
         },
         "end": {
-          "line": 1583,
+          "line": 1627,
           "column": 5
         }
       },
@@ -2607,7 +2621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user double tapped a pointer button over the pane."
+            "body": "<p>Event handler. Called when the user double tapped a pointer button over the pane.</p>"
           }
         ],
         "@param": [
@@ -2626,11 +2640,11 @@
     "_onPointerout": {
       "location": {
         "start": {
-          "line": 1591,
+          "line": 1635,
           "column": 4
         },
         "end": {
-          "line": 1614,
+          "line": 1658,
           "column": 5
         }
       },
@@ -2638,7 +2652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the pointer moved out."
+            "body": "<p>Event handler. Called when the pointer moved out.</p>"
           }
         ],
         "@param": [
@@ -2657,11 +2671,11 @@
     "_showResizeLine": {
       "location": {
         "start": {
-          "line": 1623,
+          "line": 1667,
           "column": 4
         },
         "end": {
-          "line": 1632,
+          "line": 1676,
           "column": 5
         }
       },
@@ -2669,15 +2683,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the resize line."
+            "body": "<p>Shows the resize line.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "x {Integer} the position where to show the line (in pixels, relative to\nthe left side of the pane).",
+            "body": "x {Integer} the position where to show the line (in pixels, relative to\n      the left side of the pane).",
             "paramName": "x",
-            "description": " the position where to show the line (in pixels, relative to\nthe left side of the pane).",
+            "description": " the position where to show the line (in pixels, relative to\n      the left side of the pane).",
             "type": "Integer"
           }
         ]
@@ -2688,11 +2702,11 @@
     "_hideResizeLine": {
       "location": {
         "start": {
-          "line": 1638,
+          "line": 1682,
           "column": 4
         },
         "end": {
-          "line": 1640,
+          "line": 1684,
           "column": 5
         }
       },
@@ -2700,7 +2714,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the resize line."
+            "body": "<p>Hides the resize line.</p>"
           }
         ]
       },
@@ -2710,11 +2724,11 @@
     "showColumnMoveFeedback": {
       "location": {
         "start": {
-          "line": 1649,
+          "line": 1693,
           "column": 4
         },
         "end": {
-          "line": 1686,
+          "line": 1730,
           "column": 5
         }
       },
@@ -2722,7 +2736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the feedback shown while a column is moved by the user."
+            "body": "<p>Shows the feedback shown while a column is moved by the user.</p>"
           }
         ],
         "@param": [
@@ -2749,11 +2763,11 @@
     "hideColumnMoveFeedback": {
       "location": {
         "start": {
-          "line": 1692,
+          "line": 1736,
           "column": 4
         },
         "end": {
-          "line": 1694,
+          "line": 1738,
           "column": 5
         }
       },
@@ -2761,7 +2775,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the feedback shown while a column is moved by the user."
+            "body": "<p>Hides the feedback shown while a column is moved by the user.</p>"
           }
         ]
       },
@@ -2771,11 +2785,11 @@
     "_focusCellAtPagePos": {
       "location": {
         "start": {
-          "line": 1705,
+          "line": 1749,
           "column": 4
         },
         "end": {
-          "line": 1715,
+          "line": 1759,
           "column": 5
         }
       },
@@ -2783,7 +2797,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the focus to the cell that's located at the page position\n<code>pageX</code>/<code>pageY</code>. If there is no cell at that position,\nnothing happens."
+            "body": "<p>Sets the focus to the cell that's located at the page position\n <code>pageX</code>/<code>pageY</code>. If there is no cell at that position,\n nothing happens.</p>"
           }
         ],
         "@param": [
@@ -2809,11 +2823,11 @@
     "setFocusedCell": {
       "location": {
         "start": {
-          "line": 1724,
+          "line": 1768,
           "column": 4
         },
         "end": {
-          "line": 1735,
+          "line": 1779,
           "column": 5
         }
       },
@@ -2821,7 +2835,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the currently focused cell."
+            "body": "<p>Sets the currently focused cell.</p>"
           }
         ],
         "@param": [
@@ -2847,11 +2861,11 @@
     "getFocusedColumn": {
       "location": {
         "start": {
-          "line": 1743,
+          "line": 1787,
           "column": 4
         },
         "end": {
-          "line": 1745,
+          "line": 1789,
           "column": 5
         }
       },
@@ -2859,7 +2873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the column of currently focused cell."
+            "body": "<p>Returns the column of currently focused cell.</p>"
           }
         ],
         "@return": [
@@ -2877,11 +2891,11 @@
     "getFocusedRow": {
       "location": {
         "start": {
-          "line": 1753,
+          "line": 1797,
           "column": 4
         },
         "end": {
-          "line": 1755,
+          "line": 1799,
           "column": 5
         }
       },
@@ -2889,7 +2903,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the row of currently focused cell."
+            "body": "<p>Returns the row of currently focused cell.</p>"
           }
         ],
         "@return": [
@@ -2907,11 +2921,11 @@
     "scrollCellVisible": {
       "location": {
         "start": {
-          "line": 1764,
+          "line": 1808,
           "column": 4
         },
         "end": {
-          "line": 1800,
+          "line": 1844,
           "column": 5
         }
       },
@@ -2919,7 +2933,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls a cell visible."
+            "body": "<p>Scrolls a cell visible.</p>"
           }
         ],
         "@param": [
@@ -2945,11 +2959,11 @@
     "isEditing": {
       "location": {
         "start": {
-          "line": 1808,
+          "line": 1852,
           "column": 4
         },
         "end": {
-          "line": 1810,
+          "line": 1854,
           "column": 5
         }
       },
@@ -2957,7 +2971,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether currently a cell is editing."
+            "body": "<p>Returns whether currently a cell is editing.</p>"
           }
         ],
         "@return": [
@@ -2975,11 +2989,11 @@
     "startEditing": {
       "location": {
         "start": {
-          "line": 1820,
+          "line": 1864,
           "column": 4
         },
         "end": {
-          "line": 1917,
+          "line": 1961,
           "column": 5
         }
       },
@@ -2987,7 +3001,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts editing the currently focused cell. Does nothing if already\nediting, if the column is not editable, or if the cell editor for the\ncolumn ascertains that the particular cell is not editable."
+            "body": "<p>Starts editing the currently focused cell. Does nothing if already\n editing, if the column is not editable, or if the cell editor for the\n column ascertains that the particular cell is not editable.</p>"
           }
         ],
         "@return": [
@@ -3005,11 +3019,11 @@
     "stopEditing": {
       "location": {
         "start": {
-          "line": 1923,
+          "line": 1967,
           "column": 4
         },
         "end": {
-          "line": 1934,
+          "line": 1977,
           "column": 5
         }
       },
@@ -3017,7 +3031,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops editing and writes the editor's value to the model."
+            "body": "<p>Stops editing and writes the editor's value to the model.</p>"
           }
         ]
       },
@@ -3027,11 +3041,11 @@
     "flushEditor": {
       "location": {
         "start": {
-          "line": 1940,
+          "line": 1986,
           "column": 4
         },
         "end": {
-          "line": 1959,
+          "line": 2009,
           "column": 5
         }
       },
@@ -3039,7 +3053,18 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Writes the editor's value to the model."
+            "body": "<p>Writes the editor's value to the model</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "cancel {Boolean ? false} Whether to also cancel\n      editing before firing the 'dateEdited' event.",
+            "paramName": "cancel",
+            "description": " Whether to also cancel\n      editing before firing the 'dateEdited' event.",
+            "optional": true,
+            "defaultValue": "false",
+            "type": "Boolean"
           }
         ]
       },
@@ -3049,11 +3074,11 @@
     "cancelEditing": {
       "location": {
         "start": {
-          "line": 1965,
+          "line": 2015,
           "column": 4
         },
         "end": {
-          "line": 1983,
+          "line": 2033,
           "column": 5
         }
       },
@@ -3061,7 +3086,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops editing without writing the editor's value to the model."
+            "body": "<p>Stops editing without writing the editor's value to the model.</p>"
           }
         ]
       },
@@ -3071,11 +3096,11 @@
     "_onCellEditorModalWindowClose": {
       "location": {
         "start": {
-          "line": 1991,
+          "line": 2041,
           "column": 4
         },
         "end": {
-          "line": 1993,
+          "line": 2043,
           "column": 5
         }
       },
@@ -3083,7 +3108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the modal window of the cell editor closes."
+            "body": "<p>Event handler. Called when the modal window of the cell editor closes.</p>"
           }
         ],
         "@param": [
@@ -3102,11 +3127,11 @@
     "_getColumnForPageX": {
       "location": {
         "start": {
-          "line": 2003,
+          "line": 2053,
           "column": 4
         },
         "end": {
-          "line": 2022,
+          "line": 2072,
           "column": 5
         }
       },
@@ -3114,7 +3139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the model index of the column the pointer is over or null if the pointer\nis not over a column."
+            "body": "<p>Returns the model index of the column the pointer is over or null if the pointer\n is not over a column.</p>"
           }
         ],
         "@param": [
@@ -3141,11 +3166,11 @@
     "_getResizeColumnForPageX": {
       "location": {
         "start": {
-          "line": 2032,
+          "line": 2082,
           "column": 4
         },
         "end": {
-          "line": 2052,
+          "line": 2104,
           "column": 5
         }
       },
@@ -3153,7 +3178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the model index of the column that should be resized when dragging\nstarts here. Returns -1 if the pointer is in no resize region of any column."
+            "body": "<p>Returns the model index of the column that should be resized when dragging\n starts here. Returns -1 if the pointer is in no resize region of any column.</p>"
           }
         ],
         "@param": [
@@ -3180,11 +3205,11 @@
     "_getRowForPagePos": {
       "location": {
         "start": {
-          "line": 2064,
+          "line": 2115,
           "column": 4
         },
         "end": {
-          "line": 2106,
+          "line": 2157,
           "column": 5
         }
       },
@@ -3192,7 +3217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the model index of the row the pointer is currently over. Returns -1 if\nthe pointer is over the header. Returns null if the pointer is not over any\ncolumn."
+            "body": "<p>Returns the model index of the row the pointer is currently over. Returns -1 if\n the pointer is over the header. Returns null if the pointer is not over any\n column.</p>"
           }
         ],
         "@param": [
@@ -3226,11 +3251,11 @@
     "setTopRightWidget": {
       "location": {
         "start": {
-          "line": 2117,
+          "line": 2168,
           "column": 4
         },
         "end": {
-          "line": 2130,
+          "line": 2181,
           "column": 5
         }
       },
@@ -3238,7 +3263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the widget that should be shown in the top right corner.\n\nThe widget will not be disposed, when this table scroller is disposed. So the\ncaller has to dispose it."
+            "body": "<p>Sets the widget that should be shown in the top right corner.\n The widget will not be disposed, when this table scroller is disposed. So the\n caller has to dispose it.</p>"
           }
         ],
         "@param": [
@@ -3257,11 +3282,11 @@
     "getTopRightWidget": {
       "location": {
         "start": {
-          "line": 2138,
+          "line": 2189,
           "column": 4
         },
         "end": {
-          "line": 2140,
+          "line": 2191,
           "column": 5
         }
       },
@@ -3269,7 +3294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the top right widget"
+            "body": "<p>Get the top right widget</p>"
           }
         ],
         "@return": [
@@ -3287,11 +3312,11 @@
     "getHeader": {
       "location": {
         "start": {
-          "line": 2148,
+          "line": 2199,
           "column": 4
         },
         "end": {
-          "line": 2150,
+          "line": 2201,
           "column": 5
         }
       },
@@ -3299,7 +3324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the header."
+            "body": "<p>Returns the header.</p>"
           }
         ],
         "@return": [
@@ -3317,11 +3342,11 @@
     "getTablePane": {
       "location": {
         "start": {
-          "line": 2158,
+          "line": 2209,
           "column": 4
         },
         "end": {
-          "line": 2160,
+          "line": 2211,
           "column": 5
         }
       },
@@ -3329,7 +3354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the table pane."
+            "body": "<p>Returns the table pane.</p>"
           }
         ],
         "@return": [
@@ -3347,11 +3372,11 @@
     "getVerticalScrollBarWidth": {
       "location": {
         "start": {
-          "line": 2170,
+          "line": 2221,
           "column": 4
         },
         "end": {
-          "line": 2174,
+          "line": 2225,
           "column": 5
         }
       },
@@ -3359,7 +3384,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the rendered width of the vertical scroll bar. The return value is\n<code>0</code> if the scroll bar is invisible or not yet rendered."
+            "body": "<p>Get the rendered width of the vertical scroll bar. The return value is\n <code>0</code> if the scroll bar is invisible or not yet rendered.</p>"
           }
         ],
         "@internal": [
@@ -3383,11 +3408,11 @@
     "getNeededScrollBars": {
       "location": {
         "start": {
-          "line": 2188,
+          "line": 2239,
           "column": 4
         },
         "end": {
-          "line": 2241,
+          "line": 2292,
           "column": 5
         }
       },
@@ -3395,24 +3420,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns which scrollbars are needed."
+            "body": "<p>Returns which scrollbars are needed.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "forceHorizontal {Boolean ? false} Whether to show the horizontal\nscrollbar always.",
+            "body": "forceHorizontal {Boolean ? false} Whether to show the horizontal\n      scrollbar always.",
             "paramName": "forceHorizontal",
-            "description": " Whether to show the horizontal\nscrollbar always.",
+            "description": " Whether to show the horizontal\n      scrollbar always.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "preventVertical {Boolean ? false} Whether to show the vertical scrollbar\nnever.",
+            "body": "preventVertical {Boolean ? false} Whether to show the vertical scrollbar\n      never.",
             "paramName": "preventVertical",
-            "description": " Whether to show the vertical scrollbar\nnever.",
+            "description": " Whether to show the vertical scrollbar\n      never.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3421,9 +3446,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} which scrollbars are needed. This may be any combination of\n{@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n(combined by OR).",
+            "body": "{Integer} which scrollbars are needed. This may be any combination of\n      {@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n      (combined by OR).",
             "type": "Integer",
-            "description": " which scrollbars are needed. This may be any combination of\n{@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n(combined by OR)."
+            "description": " which scrollbars are needed. This may be any combination of\n      {@link #HORIZONTAL_SCROLLBAR} or {@link #VERTICAL_SCROLLBAR}\n      (combined by OR)."
           }
         ]
       },
@@ -3433,11 +3458,11 @@
     "getPaneClipper": {
       "location": {
         "start": {
-          "line": 2251,
+          "line": 2302,
           "column": 4
         },
         "end": {
-          "line": 2254,
+          "line": 2305,
           "column": 5
         }
       },
@@ -3445,15 +3470,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the pane clipper. It is sometimes required for special activities\nsuch as tracking events for drag&drop."
+            "body": "<p>Return the pane clipper. It is sometimes required for special activities\n such as tracking events for drag&amp;drop.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper}\nThe pane clipper for this scroller.",
+            "body": "{qx.ui.table.pane.Clipper}\n   The pane clipper for this scroller.",
             "type": "qx.ui.table.pane.Clipper",
-            "description": "\nThe pane clipper for this scroller."
+            "description": "\n   The pane clipper for this scroller."
           }
         ]
       },
@@ -3463,11 +3488,11 @@
     "getScrollAreaContainer": {
       "location": {
         "start": {
-          "line": 2265,
+          "line": 2316,
           "column": 4
         },
         "end": {
-          "line": 2267,
+          "line": 2318,
           "column": 5
         }
       },
@@ -3475,7 +3500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the scroll area container widget (which enables more precise\noperations e.g. bounds retrieval for drag session scrolling)."
+            "body": "<p>Returns the scroll area container widget (which enables more precise\n operations e.g. bounds retrieval for drag session scrolling).</p>"
           }
         ],
         "@see": [
@@ -3487,9 +3512,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.table.pane.Clipper}\nThe pane clipper for this scroller.",
+            "body": "{qx.ui.table.pane.Clipper}\n   The pane clipper for this scroller.",
             "type": "qx.ui.table.pane.Clipper",
-            "description": "\nThe pane clipper for this scroller."
+            "description": "\n   The pane clipper for this scroller."
           }
         ]
       },
@@ -3499,11 +3524,11 @@
     "_applyScrollTimeout": {
       "location": {
         "start": {
-          "line": 2271,
+          "line": 2322,
           "column": 4
         },
         "end": {
-          "line": 2273,
+          "line": 2324,
           "column": 5
         }
       },
@@ -3511,7 +3536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply method"
+            "body": "<p>property apply method</p>"
           }
         ]
       },
@@ -3524,11 +3549,11 @@
     "_startInterval": {
       "location": {
         "start": {
-          "line": 2281,
+          "line": 2332,
           "column": 4
         },
         "end": {
-          "line": 2285,
+          "line": 2336,
           "column": 5
         }
       },
@@ -3536,7 +3561,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts the current running interval"
+            "body": "<p>Starts the current running interval</p>"
           }
         ],
         "@param": [
@@ -3555,11 +3580,11 @@
     "_stopInterval": {
       "location": {
         "start": {
-          "line": 2291,
+          "line": 2342,
           "column": 4
         },
         "end": {
-          "line": 2294,
+          "line": 2345,
           "column": 5
         }
       },
@@ -3567,7 +3592,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "stops the current running interval"
+            "body": "<p>stops the current running interval</p>"
           }
         ]
       },
@@ -3577,11 +3602,11 @@
     "_postponedUpdateContent": {
       "location": {
         "start": {
-          "line": 2302,
+          "line": 2353,
           "column": 4
         },
         "end": {
-          "line": 2306,
+          "line": 2357,
           "column": 5
         }
       },
@@ -3589,7 +3614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Does a postponed update of the content."
+            "body": "<p>Does a postponed update of the content.</p>"
           }
         ],
         "@see": [
@@ -3605,11 +3630,11 @@
     "_oninterval": {
       "location": {
         "start": {
-          "line": 2316,
+          "line": 2367,
           "column": 4
         },
         "end": {
-          "line": 2323,
+          "line": 2374,
           "column": 6
         }
       },
@@ -3617,7 +3642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Timer event handler. Periodically checks whether a table update is\nrequired. The update interval is controlled by the {@link #scrollTimeout}\nproperty."
+            "body": "<p>Timer event handler. Periodically checks whether a table update is\n required. The update interval is controlled by the {@link #scrollTimeout}\n property.</p>"
           }
         ],
         "@signature": [
@@ -3633,11 +3658,11 @@
     "_updateContent": {
       "location": {
         "start": {
-          "line": 2330,
+          "line": 2381,
           "column": 4
         },
         "end": {
-          "line": 2374,
+          "line": 2425,
           "column": 5
         }
       },
@@ -3645,7 +3670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the content. Sets the right section the table pane should show and\ndoes the scrolling."
+            "body": "<p>Updates the content. Sets the right section the table pane should show and\n does the scrolling.</p>"
           }
         ]
       },
@@ -3655,11 +3680,11 @@
     "_updateFocusIndicator": {
       "location": {
         "start": {
-          "line": 2380,
+          "line": 2431,
           "column": 4
         },
         "end": {
-          "line": 2389,
+          "line": 2440,
           "column": 5
         }
       },
@@ -3667,7 +3692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the location and the visibility of the focus indicator."
+            "body": "<p>Updates the location and the visibility of the focus indicator.</p>"
           }
         ]
       },
@@ -3686,7 +3711,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\nor a native browser scrollbar."
+            "body": "<p>Creates a new scrollbar. This can either be a styled qooxdoo scrollbar\n or a native browser scrollbar.</p>"
           }
         ],
         "@param": [
@@ -8050,11 +8075,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 2401,
-        "column": 2
+        "line": 2452,
+        "column": 13
       },
       "end": {
-        "line": 2417,
+        "line": 2468,
         "column": 3
       }
     },
@@ -8062,7 +8087,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

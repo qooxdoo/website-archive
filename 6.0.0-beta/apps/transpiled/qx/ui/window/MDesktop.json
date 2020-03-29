@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin implements the key methods of the {@link qx.ui.window.IDesktop}."
+          "body": "<p>This mixin implements the key methods of the {@link qx.ui.window.IDesktop}.</p>"
         }
       ],
       "@ignore": [
@@ -66,7 +66,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a window was added."
+            "body": "<p>Fired when a window was added.</p>"
           }
         ]
       },
@@ -88,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a window was removed."
+            "body": "<p>Fired when a window was removed.</p>"
           }
         ]
       },
@@ -140,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the desktop's window manager. Each desktop must have a window manager.\nIf none is configured the default window manager {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS}\nis used."
+            "body": "<p>Get the desktop's window manager. Each desktop must have a window manager.\n If none is configured the default window manager {@link qx.ui.window.Window#DEFAULT<em>MANAGER</em>CLASS}\n is used.</p>"
           }
         ],
         "@return": [
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the configured layout supports a maximized window\ne.g. is a Canvas."
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
@@ -200,7 +200,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the desktop's window manager"
+            "body": "<p>Sets the desktop's window manager</p>"
           }
         ],
         "@param": [
@@ -231,7 +231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called if one of the managed windows changes its active\nstate."
+            "body": "<p>Event handler. Called if one of the managed windows changes its active\n state.</p>"
           }
         ],
         "@param": [
@@ -262,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called if one of the managed windows changes its modality"
+            "body": "<p>Event handler. Called if one of the managed windows changes its modality</p>"
           }
         ],
         "@param": [
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called if one of the managed windows changes its visibility\nstate."
+            "body": "<p>Event handler. Called if one of the managed windows changes its visibility\n state.</p>"
           }
         ]
       },
@@ -340,7 +340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overrides the method {@link qx.ui.core.Widget#_afterAddChild}"
+            "body": "<p>Overrides the method {@link qx.ui.core.Widget#_afterAddChild}</p>"
           }
         ],
         "@param": [
@@ -371,7 +371,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the case, when a window is added to the desktop."
+            "body": "<p>Handles the case, when a window is added to the desktop.</p>"
           }
         ],
         "@param": [
@@ -402,7 +402,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overrides the method {@link qx.ui.core.Widget#_afterRemoveChild}"
+            "body": "<p>Overrides the method {@link qx.ui.core.Widget#_afterRemoveChild}</p>"
           }
         ],
         "@param": [
@@ -433,7 +433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the case, when a window is removed from the desktop."
+            "body": "<p>Handles the case, when a window is removed from the desktop.</p>"
           }
         ],
         "@param": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all windows added to the desktop (including hidden windows)"
+            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
           }
         ],
         "@return": [
@@ -550,7 +550,7 @@
     "location": {
       "start": {
         "line": 258,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 262,
@@ -561,7 +561,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nBased on Public Domain code by Christopher Diggins\nhttp://www.cdiggins.com/tokenizer.html\n\nAuthors:\nFabian Jakobs (fjakobs)\nChristopher Diggins (original tokenizer code)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n     Based on Public Domain code by Christopher Diggins\n     http://www.cdiggins.com/tokenizer.html\n   Authors:\n Fabian Jakobs (fjakobs)\n Christopher Diggins (original tokenizer code)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Simple JavaScript tokenizer used to print syntax highlighted\nJavaScript code.\n\nBased on Public Domain code by Christopher Diggins\nhttp://www.cdiggins.com/tokenizer.html"
+          "body": "<p>Simple JavaScript tokenizer used to print syntax highlighted\n JavaScript code.\n Based on Public Domain code by Christopher Diggins\n http://www.cdiggins.com/tokenizer.html</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tokenizes a string of JavaScript code."
+            "body": "<p>Tokenizes a string of JavaScript code.</p>"
           }
         ],
         "@param": [
@@ -62,9 +62,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} Array of tokens. A token is a map with the fields\n<code>type</code> containing the token type and <code>value</code>,\nwhich contains the string value of the token from the input string.",
+            "body": "{Map[]} Array of tokens. A token is a map with the fields\n   <code>type</code> containing the token type and <code>value</code>,\n   which contains the string value of the token from the input string.",
             "type": "Map[]",
-            "description": " Array of tokens. A token is a map with the fields\n<code>type</code> containing the token type and <code>value</code>,\nwhich contains the string value of the token from the input string."
+            "description": " Array of tokens. A token is a map with the fields\n   <code>type</code> containing the token type and <code>value</code>,\n   which contains the string value of the token from the input string."
           }
         ]
       },
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create a colored HTML string for a string of JavaScript code.\nThe colored elements are placed in <code>span</code> elements\nwith class names corresponding to the token types. The returned code\nshould be placed into <code>pre</code> tags to preserve the\nindentation."
+            "body": "<p>Create a colored HTML string for a string of JavaScript code.\n The colored elements are placed in <code>span</code> elements\n with class names corresponding to the token types. The returned code\n should be placed into <code>pre</code> tags to preserve the\n indentation.</p>"
           }
         ],
         "@param": [
@@ -99,9 +99,9 @@
           },
           {
             "name": "@param",
-            "body": "forPreTag {Boolean ? false} Whatever the HTML should be generated\nfor a pre tag or not",
+            "body": "forPreTag {Boolean ? false} Whatever the HTML should be generated\n   for a pre tag or not",
             "paramName": "forPreTag",
-            "description": " Whatever the HTML should be generated\nfor a pre tag or not",
+            "description": " Whatever the HTML should be generated\n   for a pre tag or not",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a simple handle, which will be returned when an animation is\nstarted using the {@link qx.bom.element.Animation#animate} method. It\nbasically controls the animation."
+          "body": "<p>This is a simple handle, which will be returned when an animation is\n started using the {@link qx.bom.element.Animation#animate} method. It\n basically controls the animation.</p>"
         }
       ],
       "@ignore": [
@@ -41,13 +41,14 @@
     "location": {
       "start": {
         "line": 31,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 36,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "start": {
@@ -65,7 +66,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the animation started via {@link qx.bom.element.Animation}."
+            "body": "<p>Fired when the animation started via {@link qx.bom.element.Animation}.</p>"
           }
         ]
       },
@@ -87,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the animation started via {@link qx.bom.element.Animation} has\nended."
+            "body": "<p>Fired when the animation started via {@link qx.bom.element.Animation} has\n ended.</p>"
           }
         ]
       },
@@ -109,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on every iteration of the animation."
+            "body": "<p>Fired on every iteration of the animation.</p>"
           }
         ]
       },
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Accessor of the playing state."
+            "body": "<p>Accessor of the playing state.</p>"
           }
         ],
         "@return": [
@@ -205,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Accessor of the ended state."
+            "body": "<p>Accessor of the ended state.</p>"
           }
         ],
         "@return": [
@@ -235,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Accessor of the paused state."
+            "body": "<p>Accessor of the paused state.</p>"
           }
         ],
         "@return": [
@@ -265,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Pauses the animation, if running. If not running, it will be ignored."
+            "body": "<p>Pauses the animation, if running. If not running, it will be ignored.</p>"
           }
         ]
       },
@@ -287,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resumes an animation. This does not start the animation once it has ended.\nIn this case you need to start a new Animation."
+            "body": "<p>Resumes an animation. This does not start the animation once it has ended.\n In this case you need to start a new Animation.</p>"
           }
         ]
       },
@@ -309,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the animation if running."
+            "body": "<p>Stops the animation if running.</p>"
           }
         ]
       },
@@ -331,7 +332,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the animation state to ended"
+            "body": "<p>Set the animation state to ended</p>"
           }
         ]
       },

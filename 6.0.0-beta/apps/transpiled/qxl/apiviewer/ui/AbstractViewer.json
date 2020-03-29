@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2018 Zenesis Limited, http://www.zenesis.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\nJohn Spackman (johnspackman)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2018 Zenesis Limited, http://www.zenesis.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n John Spackman (johnspackman)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         }
       ]
     }
@@ -34,13 +34,14 @@
     "location": {
       "start": {
         "line": 30,
-        "column": 4
+        "column": 16
       },
       "end": {
         "line": 49,
         "column": 5
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "docNode": {
@@ -58,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The class to display"
+            "body": "<p>The class to display</p>"
           }
         ]
       },
@@ -84,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display inherited items"
+            "body": "<p>whether to display inherited items</p>"
           }
         ]
       },
@@ -110,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display included items"
+            "body": "<p>whether to display included items</p>"
           }
         ]
       },
@@ -136,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display protected items"
+            "body": "<p>whether to display protected items</p>"
           }
         ]
       },
@@ -162,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display protected items"
+            "body": "<p>whether to display protected items</p>"
           }
         ]
       },
@@ -188,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display private items"
+            "body": "<p>whether to display private items</p>"
           }
         ]
       },
@@ -214,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "whether to display internal items"
+            "body": "<p>whether to display internal items</p>"
           }
         ]
       },
@@ -242,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change the target of all external links inside the given element to open in a new browser window."
+            "body": "<p>Change the target of all external links inside the given element to open in a new browser window.</p>"
           }
         ],
         "@param": [
@@ -345,7 +346,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the HTML fragment for the title"
+            "body": "<p>Returns the HTML fragment for the title</p>"
           }
         ],
         "@abstract": [
@@ -418,7 +419,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the content of the embedding DIV. Will be called by the\nHtmlEmbed element initialization routine."
+            "body": "<p>Initializes the content of the embedding DIV. Will be called by the\n HtmlEmbed element initialization routine.</p>"
           }
         ]
       },
@@ -482,7 +483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates all info panels"
+            "body": "<p>Updates all info panels</p>"
           }
         ],
         "@return": [
@@ -518,7 +519,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates all info panels and TOC with items reflecting appearance/disappearance of panels\ndue to inherited members"
+            "body": "<p>Updates all info panels and TOC with items reflecting appearance/disappearance of panels\n due to inherited members</p>"
           }
         ],
         "@return": [
@@ -552,7 +553,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the information about a class."
+            "body": "<p>Shows the information about a class.</p>"
           }
         ],
         "@param": [
@@ -586,7 +587,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the user tapped a button for showing/hiding the\nbody of an info panel."
+            "body": "<p>Event handler. Called when the user tapped a button for showing/hiding the\n body of an info panel.</p>"
           }
         ],
         "@param": [
@@ -625,7 +626,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the nodes in place."
+            "body": "<p>Sorts the nodes in place.</p>"
           }
         ],
         "@param": [

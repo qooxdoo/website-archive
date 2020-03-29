@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A part is a container for multiple toolbar buttons. Each part comes\nwith a handle which may be used in later versions to drag the part\naround and move it to another position. Currently mainly used\nfor structuring large toolbars beyond the capabilities of the\n{@link Separator}."
+          "body": "<p>A part is a container for multiple toolbar buttons. Each part comes\n with a handle which may be used in later versions to drag the part\n around and move it to another position. Currently mainly used\n for structuring large toolbars beyond the capabilities of the\n {@link Separator}.</p>"
         }
       ],
       "@childControl": [
@@ -53,7 +53,7 @@
     "location": {
       "start": {
         "line": 44,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 53,
@@ -64,7 +64,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -106,7 +106,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether icons, labels, both or none should be shown."
+            "body": "<p>Whether icons, labels, both or none should be shown.</p>"
           }
         ]
       },
@@ -137,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The spacing between every child of the toolbar"
+            "body": "<p>The spacing between every child of the toolbar</p>"
           }
         ]
       },
@@ -166,26 +166,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -222,7 +222,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -256,7 +256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -281,11 +281,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILITIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILITIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper which applies the left, right and middle states."
+            "body": "<p>Helper which applies the left, right and middle states.</p>"
           }
         ]
       },
@@ -307,7 +307,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a separator to the toolbar part."
+            "body": "<p>Adds a separator to the toolbar part.</p>"
           }
         ]
       },
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all nested buttons which contains a menu to show. This is mainly\nused for keyboard support."
+            "body": "<p>Returns all nested buttons which contains a menu to show. This is mainly\n used for keyboard support.</p>"
           }
         ],
         "@return": [
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Forward the call with the given function name to the children container"
+            "body": "<p>Forward the call with the given function name to the children container</p>"
           }
         ],
         "@param": [
@@ -414,15 +414,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -439,7 +439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child item."
+            "body": "<p>Remove the given child item.</p>"
           }
         ],
         "@param": [
@@ -541,7 +541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -566,7 +566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given item if it is\na child item. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given item if it is\n a child item. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -581,9 +581,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given item is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given item is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given item is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given item is no child of this layout."
           }
         ]
       }
@@ -600,7 +600,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item before another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item before another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -684,7 +684,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item after another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item after another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -726,7 +726,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the item at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the item at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [

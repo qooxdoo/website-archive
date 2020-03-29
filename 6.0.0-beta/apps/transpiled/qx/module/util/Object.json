@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nAlexander Steitz (aback)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Alexander Steitz (aback)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Helper functions to handle an Object as a Hash map."
+          "body": "<p>Helper functions to handle an Object as a Hash map.</p>"
         }
       ],
       "@group": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return a copy of an Object"
+            "body": "<p>Return a copy of an Object</p>"
           }
         ],
         "@signature": [
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the values of a map as array"
+            "body": "<p>Get the values of a map as array</p>"
           }
         ],
         "@signature": [
@@ -168,7 +168,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inverts a map by exchanging the keys with the values."
+            "body": "<p>Inverts a map by exchanging the keys with the values.</p>"
           }
         ],
         "@signature": [
@@ -180,7 +180,7 @@
         "@attachStatic": [
           {
             "name": "@attachStatic",
-            "body": "{qxWeb, object.invert}\n\nIf the map has the same values for different keys, information will get lost.\nThe values will be converted to strings using the toString methods."
+            "body": "{qxWeb, object.invert}\n If the map has the same values for different keys, information will get lost.\n The values will be converted to strings using the toString methods."
           }
         ],
         "@param": [
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the map contains the given value."
+            "body": "<p>Whether the map contains the given value.</p>"
           }
         ],
         "@signature": [
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Merges one or more objects into the 'target' object.\n*The objects are merged by overwriting existing keys.*"
+            "body": "<p>Merges one or more objects into the 'target' object.\n<em>The objects are merged by overwriting existing keys.</em></p>"
           }
         ],
         "@attachStatic": [
@@ -319,13 +319,14 @@
     "location": {
       "start": {
         "line": 101,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 103,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

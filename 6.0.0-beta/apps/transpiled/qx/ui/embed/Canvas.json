@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Canvas widget embeds the HMTL canvas element\n[<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas\">W3C-HTML5</a>]\n\nNote: This widget does not work in Internet Explorer < 9!\nCheck for browser support with qx.core.Environment.get(\"html.canvas\").\n\nTo paint something on the canvas and keep the content updated on resizes you\neither have to override the {@link #_draw} method or redraw the content on\nthe {@link #redraw} event. The drawing context can be obtained by {@link #getContext2d}.\n\nNote that this widget operates on two different coordinate systems. The canvas\nhas its own coordinate system for drawing operations. This canvas coordinate\nsystem is scaled to fit actual size of the DOM element. Each time the size of\nthe canvas dimensions is changed a redraw is required. In this case the\nprotected method {@link #_draw} is called and the event {@link #redraw}\nis fired. You can synchronize the internal canvas dimension with the\nCSS dimension of the canvas element by setting {@link #syncDimension} to\n<code>true</code>.\n\n*Example*\n\nHere is a little example of how to use the canvas widget.\n\n<pre class='javascript'>\nvar canvas = new qx.ui.embed.Canvas().set({\ncanvasWidth: 200,\ncanvasHeight: 200,\nsyncDimension: true\n});\ncanvas.addListener(\"redraw\", function(e)\n{\nvar data = e.getData();\nvar width = data.width;\nvar height = data.height;\nvar ctx = data.context;\n\nctx.fillStyle = \"rgb(200,0,0)\";\nctx.fillRect (20, 20, width-5, height-5);\n\nctx.fillStyle = \"rgba(0, 0, 200, 0.5)\";\nctx.fillRect (70, 70, 105, 100);\n}, this);\n</pre>\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/canvas.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The Canvas widget embeds the HMTL canvas element\n [<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas\">W3C-HTML5</a>]\n Note: This widget does not work in Internet Explorer &lt; 9!\n Check for browser support with qx.core.Environment.get(\"html.canvas\").\n To paint something on the canvas and keep the content updated on resizes you\n either have to override the {@link #<em>draw} method or redraw the content on\n the {@link #redraw} event. The drawing context can be obtained by {@link #getContext2d}.\n Note that this widget operates on two different coordinate systems. The canvas\n has its own coordinate system for drawing operations. This canvas coordinate\n system is scaled to fit actual size of the DOM element. Each time the size of\n the canvas dimensions is changed a redraw is required. In this case the\n protected method {@link #</em>draw} is called and the event {@link #redraw}\n is fired. You can synchronize the internal canvas dimension with the\n CSS dimension of the canvas element by setting {@link #syncDimension} to\n <code>true</code>.\n<em>Example</em>\n Here is a little example of how to use the canvas widget.\n </p>\n<pre class='javascript'>\n var canvas = new qx.ui.embed.Canvas().set({\n   canvasWidth: 200,\n   canvasHeight: 200,\n   syncDimension: true\n });\n canvas.addListener(\"redraw\", function(e)\n {\n   var data = e.getData();\n   var width = data.width;\n   var height = data.height;\n   var ctx = data.context;\n   ctx.fillStyle = \"rgb(200,0,0)\";\n   ctx.fillRect (20, 20, width-5, height-5);\n   ctx.fillStyle = \"rgba(0, 0, 200, 0.5)\";\n   ctx.fillRect (70, 70, 105, 100);\n }, this);\n </pre>\n<p><em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/canvas.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 85,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 99,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -87,7 +87,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The redraw event is fired each time the canvas dimension change and the\ncanvas needs to be updated. The data field contains a map containing the\n<code>width</code> and <code>height</code> of the canvas and the\nrendering <code>context</code>."
+            "body": "<p>The redraw event is fired each time the canvas dimension change and the\n canvas needs to be updated. The data field contains a map containing the\n <code>width</code> and <code>height</code> of the canvas and the\n rendering <code>context</code>.</p>"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether canvas and widget coordinates should be synchronized"
+            "body": "<p>Whether canvas and widget coordinates should be synchronized</p>"
           }
         ]
       },
@@ -136,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The internal with of the canvas coordinates"
+            "body": "<p>The internal with of the canvas coordinates</p>"
           }
         ]
       },
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The internal height of the canvas coordinates"
+            "body": "<p>The internal height of the canvas coordinates</p>"
           }
         ]
       },
@@ -218,11 +218,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -256,7 +256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This methods triggers the redraw of the canvas' content"
+            "body": "<p>This methods triggers the redraw of the canvas' content</p>"
           }
         ]
       },
@@ -278,7 +278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -303,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Redraw the canvas"
+            "body": "<p>Redraw the canvas</p>"
           }
         ]
       },
@@ -350,7 +350,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget resize event handler. Updates the canvas dimension if needed."
+            "body": "<p>Widget resize event handler. Updates the canvas dimension if needed.</p>"
           }
         ],
         "@param": [
@@ -381,7 +381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the native canvas 2D rendering context\n[<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvasrenderingcontext2d\">W3C-HTML5</a>].\nAll drawing operations are performed on this context."
+            "body": "<p>Get the native canvas 2D rendering context\n [<a href=\"http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#canvasrenderingcontext2d\">W3C-HTML5</a>].\n All drawing operations are performed on this context.</p>"
           }
         ],
         "@return": [
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Template method, which can be used by derived classes to redraw the\ncontent. It is called each time the canvas dimension change and the\ncanvas needs to be updated."
+            "body": "<p>Template method, which can be used by derived classes to redraw the\n content. It is called each time the canvas dimension change and the\n canvas needs to be updated.</p>"
           }
         ],
         "@param": [
@@ -4152,7 +4152,7 @@
     "location": {
       "start": {
         "line": 274,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 276,
@@ -4163,7 +4163,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

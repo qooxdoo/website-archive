@@ -16,7 +16,7 @@
         "column": 0
       },
       "end": {
-        "line": 375,
+        "line": 410,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This handler provides events for qooxdoo application startup/shutdown logic.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>This handler provides events for qooxdoo application startup/shutdown logic.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ],
       "@require": [
@@ -44,10 +44,10 @@
     "location": {
       "start": {
         "line": 46,
-        "column": 2
+        "column": 14
       },
       "end": {
-        "line": 64,
+        "line": 65,
         "column": 3
       }
     },
@@ -55,11 +55,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Create a new instance"
+          "body": "<p>Create a new instance</p>"
         }
       ],
       "@param": [
@@ -77,11 +77,11 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 79,
+          "line": 80,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 80,
           "column": 52
         }
       },
@@ -105,11 +105,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 88,
           "column": 5
         }
       },
@@ -133,11 +133,11 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 92,
           "column": 55
         }
       },
@@ -161,11 +161,11 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 95,
+          "line": 96,
           "column": 28
         }
       },
@@ -189,11 +189,11 @@
     "onScriptLoaded": {
       "location": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 111,
           "column": 5
         }
       },
@@ -201,7 +201,35 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sends the currently running application the ready signal. Used\nexclusively by package loader system."
+            "body": "<p>Sends the currently running application the ready signal. Used\n exclusively by package loader system.</p>"
+          }
+        ],
+        "@internal": [
+          {
+            "name": "@internal",
+            "body": ""
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "onAppInstanceInitialized": {
+      "location": {
+        "start": {
+          "line": 119,
+          "column": 4
+        },
+        "end": {
+          "line": 125,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Notifies that the application has finished initialization</p>"
           }
         ],
         "@internal": [
@@ -219,11 +247,11 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 147,
           "column": 46
         }
       },
@@ -231,19 +259,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -257,9 +285,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -273,11 +301,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 136,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 153,
           "column": 5
         }
       },
@@ -285,15 +313,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -305,9 +333,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -322,11 +350,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 144,
+          "line": 159,
           "column": 5
         }
       },
@@ -334,15 +362,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -354,9 +382,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -371,12 +399,26 @@
     "__isReady": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 161,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 161,
           "column": 20
+        }
+      },
+      "type": "variable",
+      "access": "private"
+    },
+    "__isInitialized": {
+      "location": {
+        "start": {
+          "line": 162,
+          "column": 4
+        },
+        "end": {
+          "line": 162,
+          "column": 26
         }
       },
       "type": "variable",
@@ -385,11 +427,11 @@
     "__domReady": {
       "location": {
         "start": {
-          "line": 147,
+          "line": 163,
           "column": 4
         },
         "end": {
-          "line": 147,
+          "line": 163,
           "column": 21
         }
       },
@@ -399,11 +441,11 @@
     "__loaded": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 164,
           "column": 19
         }
       },
@@ -413,11 +455,11 @@
     "__isUnloaded": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 165,
           "column": 4
         },
         "end": {
-          "line": 149,
+          "line": 165,
           "column": 23
         }
       },
@@ -427,11 +469,11 @@
     "__fireReady": {
       "location": {
         "start": {
-          "line": 165,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 208,
           "column": 5
         }
       },
@@ -439,11 +481,33 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER ACCESS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER ACCESS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Fires a global ready event."
+            "body": "<p>Fires a global ready event.</p>"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "private"
+    },
+    "__fireAppInstanceInitialized": {
+      "location": {
+        "start": {
+          "line": 214,
+          "column": 4
+        },
+        "end": {
+          "line": 219,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Fires a global \"appinitialized\" event.</p>"
           }
         ]
       },
@@ -453,11 +517,11 @@
     "isApplicationReady": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 228,
           "column": 5
         }
       },
@@ -465,7 +529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the application is ready."
+            "body": "<p>Whether the application is ready.</p>"
           }
         ],
         "@return": [
@@ -480,14 +544,14 @@
       "type": "function",
       "access": "public"
     },
-    "_initObserver": {
+    "isApplicationInitialized": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 237,
           "column": 5
         }
       },
@@ -495,11 +559,41 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBSERVER INIT/STOP\n---------------------------------------------------------------------------"
+            "body": "<p>Whether the application is initialized</p>"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} initialization status",
+            "type": "Boolean",
+            "description": " initialization status"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "_initObserver": {
+      "location": {
+        "start": {
+          "line": 252,
+          "column": 4
+        },
+        "end": {
+          "line": 302,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBSERVER INIT/STOP\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Initializes the native application event listeners."
+            "body": "<p>Initializes the native application event listeners.</p>"
           }
         ]
       },
@@ -509,11 +603,11 @@
     "_stopObserver": {
       "location": {
         "start": {
-          "line": 274,
+          "line": 309,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 318,
           "column": 5
         }
       },
@@ -521,7 +615,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disconnect the native application event listeners."
+            "body": "<p>Disconnect the native application event listeners.</p>"
           }
         ]
       },
@@ -531,11 +625,11 @@
     "_onNativeLoad": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 333,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 339,
           "column": 5
         }
       },
@@ -543,11 +637,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nNATIVE LISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  NATIVE LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "When qx.globalErrorHandling is enabled the callback will observed"
+            "body": "<p>When qx.globalErrorHandling is enabled the callback will observed</p>"
           }
         ]
       },
@@ -557,11 +651,11 @@
     "__onNativeLoadHandler": {
       "location": {
         "start": {
-          "line": 310,
+          "line": 345,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 348,
           "column": 5
         }
       },
@@ -569,7 +663,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for native load event"
+            "body": "<p>Event listener for native load event</p>"
           }
         ]
       },
@@ -579,11 +673,11 @@
     "_onNativeUnload": {
       "location": {
         "start": {
-          "line": 319,
+          "line": 354,
           "column": 4
         },
         "end": {
-          "line": 325,
+          "line": 360,
           "column": 5
         }
       },
@@ -591,7 +685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When qx.globalErrorHandling is enabled the callback will observed"
+            "body": "<p>When qx.globalErrorHandling is enabled the callback will observed</p>"
           }
         ]
       },
@@ -601,11 +695,11 @@
     "__onNativeUnloadHandler": {
       "location": {
         "start": {
-          "line": 331,
+          "line": 366,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 379,
           "column": 5
         }
       },
@@ -613,7 +707,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for native unload event"
+            "body": "<p>Event listener for native unload event</p>"
           }
         ]
       },
@@ -744,11 +838,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 357,
-        "column": 2
+        "line": 392,
+        "column": 13
       },
       "end": {
-        "line": 361,
+        "line": 396,
         "column": 3
       }
     },
@@ -756,7 +850,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -764,11 +858,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 372,
-        "column": 2
+        "line": 407,
+        "column": 10
       },
       "end": {
-        "line": 374,
+        "line": 409,
         "column": 3
       }
     },
@@ -776,7 +870,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

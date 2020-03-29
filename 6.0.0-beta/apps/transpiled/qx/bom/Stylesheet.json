@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nAndreas Junghans (lucidcake)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Andreas Junghans (lucidcake)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Cross-browser wrapper to work with CSS stylesheets."
+          "body": "<p>Cross-browser wrapper to work with CSS stylesheets.</p>"
         }
       ],
       "@require": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Include a CSS file\n\n<em>Note:</em> Using a resource ID as the <code>href</code> parameter\nwill no longer be supported. Call\n<code>qx.util.ResourceManager.getInstance().toUri(href)</code> to get\nvalid URI to be used with this method."
+            "body": "<p>Include a CSS file\n <em>Note:</em> Using a resource ID as the <code>href</code> parameter\n will no longer be supported. Call\n <code>qx.util.ResourceManager.getInstance().toUri(href)</code> to get\n valid URI to be used with this method.</p>"
           }
         ],
         "@param": [
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create a new Stylesheet node and append it to the document"
+            "body": "<p>Create a new Stylesheet node and append it to the document</p>"
           }
         ],
         "@param": [
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert a new CSS rule into a given Stylesheet"
+            "body": "<p>Insert a new CSS rule into a given Stylesheet</p>"
           }
         ],
         "@param": [
@@ -177,7 +177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a CSS rule from a stylesheet"
+            "body": "<p>Remove a CSS rule from a stylesheet</p>"
           }
         ],
         "@param": [
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given sheet from its owner."
+            "body": "<p>Remove the given sheet from its owner.</p>"
           }
         ],
         "@param": [
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all CSS rules from a stylesheet"
+            "body": "<p>Remove all CSS rules from a stylesheet</p>"
           }
         ],
         "@param": [
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an import of an external CSS file to a stylesheet"
+            "body": "<p>Add an import of an external CSS file to a stylesheet</p>"
           }
         ],
         "@param": [
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an import from a stylesheet"
+            "body": "<p>Removes an import from a stylesheet</p>"
           }
         ],
         "@param": [
@@ -353,7 +353,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all imports from a stylesheet"
+            "body": "<p>Remove all imports from a stylesheet</p>"
           }
         ],
         "@param": [

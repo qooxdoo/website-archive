@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The AbstractTreeItem serves as a common superclass for the {@link\nqx.ui.tree.TreeFile} and {@link qx.ui.tree.TreeFolder} classes."
+          "body": "<p>The AbstractTreeItem serves as a common superclass for the {@link\n qx.ui.tree.TreeFile} and {@link qx.ui.tree.TreeFolder} classes.</p>"
         }
       ],
       "@childControl": [
@@ -61,13 +61,14 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 41,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "parent": {
@@ -85,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The parent tree folder."
+            "body": "<p>The parent tree folder.</p>"
           }
         ]
       },
@@ -140,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the tree the tree item is connected to. If the item is not part of\na tree <code>null</code> will be returned."
+            "body": "<p>Returns the tree the tree item is connected to. If the item is not part of\n a tree <code>null</code> will be returned.</p>"
           }
         ],
         "@return": [
@@ -170,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -196,11 +197,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINDENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INDENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -234,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -260,7 +261,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -294,11 +295,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTATE HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STATE HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -333,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -368,11 +369,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN CONTAINER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN CONTAINER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the widget, which acts as container for the child items.\nThis widget must have a vertical box layout."
+            "body": "<p>Returns the widget, which acts as container for the child items.\n This widget must have a vertical box layout.</p>"
           }
         ],
         "@return": [
@@ -406,7 +407,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the tree item has a children container"
+            "body": "<p>Whether the tree item has a children container</p>"
           }
         ],
         "@return": [
@@ -436,7 +437,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the children container of the item's parent. This function will return\n<code>null</code>, if the item does not have a parent or is not the root\nitem."
+            "body": "<p>Get the children container of the item's parent. This function will return\n <code>null</code>, if the item does not have a parent or is not the root\n item.</p>"
           }
         ],
         "@return": [
@@ -466,11 +467,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get all child items.\n\nNote: Don not modify the returned array, since this function does not\nreturn a copy!"
+            "body": "<p>Get all child items.\n Note: Don not modify the returned array, since this function does not\n return a copy!</p>"
           }
         ],
         "@return": [
@@ -500,7 +501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -534,33 +535,33 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all children of the folder."
+            "body": "<p>Returns all children of the folder.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "recursive {Boolean ? true} whether children of subfolder should be\nincluded",
+            "body": "recursive {Boolean ? true} whether children of subfolder should be\n     included",
             "paramName": "recursive",
-            "description": " whether children of subfolder should be\nincluded",
+            "description": " whether children of subfolder should be\n     included",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "invisible {Boolean ? true} whether invisible children should be\nincluded",
+            "body": "invisible {Boolean ? true} whether invisible children should be\n     included",
             "paramName": "invisible",
-            "description": " whether invisible children should be\nincluded",
+            "description": " whether invisible children should be\n     included",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "ignoreFirst {Boolean ? true} Whether the current treeItem should\nbe excluded from the list.",
+            "body": "ignoreFirst {Boolean ? true} Whether the current treeItem should\n     be excluded from the list.",
             "paramName": "ignoreFirst",
-            "description": " Whether the current treeItem should\nbe excluded from the list.",
+            "description": " Whether the current treeItem should\n     be excluded from the list.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -593,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds this item and recursively all sub items to the widget queue to\nupdate the indentation."
+            "body": "<p>Adds this item and recursively all sub items to the widget queue to\n update the indentation.</p>"
           }
         ],
         "@internal": [
@@ -621,7 +622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the item's children container to the parent's children container."
+            "body": "<p>Adds the item's children container to the parent's children container.</p>"
           }
         ]
       },
@@ -643,7 +644,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the passed tree items to the end of this item's children list."
+            "body": "<p>Adds the passed tree items to the end of this item's children list.</p>"
           }
         ],
         "@param": [
@@ -674,7 +675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the tree item to the current item, at the given index."
+            "body": "<p>Adds the tree item to the current item, at the given index.</p>"
           }
         ],
         "@param": [
@@ -712,7 +713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a tree item to this item before the existing child <code>before</code>."
+            "body": "<p>Add a tree item to this item before the existing child <code>before</code>.</p>"
           }
         ],
         "@param": [
@@ -750,7 +751,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a tree item to this item after the existing child <code>before</code>."
+            "body": "<p>Add a tree item to this item after the existing child <code>before</code>.</p>"
           }
         ],
         "@param": [
@@ -788,7 +789,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a tree item as the first child of this item."
+            "body": "<p>Add a tree item as the first child of this item.</p>"
           }
         ],
         "@param": [
@@ -819,7 +820,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the passed tree items from this item."
+            "body": "<p>Removes the passed tree items from this item.</p>"
           }
         ],
         "@param": [
@@ -850,7 +851,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the child with the given child index."
+            "body": "<p>Remove the child with the given child index.</p>"
           }
         ],
         "@param": [
@@ -881,7 +882,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all child items from this item."
+            "body": "<p>Remove all child items from this item.</p>"
           }
         ]
       },
@@ -901,7 +902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -928,7 +929,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -4897,13 +4898,14 @@
     "location": {
       "start": {
         "line": 575,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 579,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.tree.TreeFile",

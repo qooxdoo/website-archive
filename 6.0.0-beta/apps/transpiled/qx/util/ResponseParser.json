@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRichard Sternagel (rsternagel)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Richard Sternagel (rsternagel)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Parsers for parsing response strings (especially for XHR).\n\nKnown parsers are: <code>\"json\"</code> and <code>\"xml\"</code>."
+          "body": "<p>Parsers for parsing response strings (especially for XHR).\n Known parsers are: <code>\"json\"</code> and <code>\"xml\"</code>.</p>"
         }
       ],
       "@require": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 36,
@@ -91,7 +91,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Map} Map of parser functions. Parsers defined here can be\nreferenced symbolically, e.g. with {@link #setParser}.\n\nKnown parsers are: <code>\"json\"</code> and <code>\"xml\"</code>."
+            "body": "{Map} Map of parser functions. Parsers defined here can be\n referenced symbolically, e.g. with {@link #setParser}.\n Known parsers are: <code>\"json\"</code> and <code>\"xml\"</code>."
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns given response parsed with parser\ndetermined by {@link #_getParser}."
+            "body": "<p>Returns given response parsed with parser\n determined by {@link #_getParser}.</p>"
           }
         ],
         "@param": [
@@ -175,15 +175,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set parser used to parse response once request has\ncompleted successfully.\n\nUsually, the parser is correctly inferred from the\ncontent type of the response. This method allows to force the\nparser being used, e.g. if the content type returned from\nthe backend is wrong or the response needs special parsing.\n\nParser most typically used can be referenced symbolically.\nTo cover edge cases, a function can be given. When parsing\nthe response, this function is called with the raw response as\nfirst argument."
+            "body": "<p>Set parser used to parse response once request has\n completed successfully.\n Usually, the parser is correctly inferred from the\n content type of the response. This method allows to force the\n parser being used, e.g. if the content type returned from\n the backend is wrong or the response needs special parsing.\n Parser most typically used can be referenced symbolically.\n To cover edge cases, a function can be given. When parsing\n the response, this function is called with the raw response as\n first argument.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "parser {String|Function}\n\nCan be:\n\n<ul>\n<li>A parser defined in {@link qx.util.ResponseParser#PARSER},\nreferenced by string.</li>\n<li>The function to invoke.\nReceives the raw response as argument.</li>\n</ul>",
+            "body": "parser {String|Function}\n Can be:\n <ul>\n   <li>A parser defined in {@link qx.util.ResponseParser#PARSER},\n       referenced by string.</li>\n   <li>The function to invoke.\n       Receives the raw response as argument.</li>\n </ul>",
             "paramName": "parser",
-            "description": "\n\nCan be:\n\n<ul>\n<li>A parser defined in {@link qx.util.ResponseParser#PARSER},\nreferenced by string.</li>\n<li>The function to invoke.\nReceives the raw response as argument.</li>\n</ul>",
+            "description": "\n Can be:\n <ul>\n   <li>A parser defined in {@link qx.util.ResponseParser#PARSER},\n       referenced by string.</li>\n   <li>The function to invoke.\n       Receives the raw response as argument.</li>\n </ul>",
             "type": [
               "String",
               "Function"
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the parser.\n\nIf not defined explicitly using {@link #setParser},\nthe parser is inferred from the content type.\n\nOverride this method to extend the list of content types\nbeing handled."
+            "body": "<p>Gets the parser.\n If not defined explicitly using {@link #setParser},\n the parser is inferred from the content type.\n Override this method to extend the list of content types\n being handled.</p>"
           }
         ],
         "@param": [
@@ -229,9 +229,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Function|null} The parser function or <code>null</code> if the\ncontent type is undetermined.",
+            "body": "{Function|null} The parser function or <code>null</code> if the\n content type is undetermined.",
             "type": "Function|null",
-            "description": " The parser function or <code>null</code> if the\ncontent type is undetermined."
+            "description": " The parser function or <code>null</code> if the\n content type is undetermined."
           }
         ]
       },

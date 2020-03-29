@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A header for a standard table."
+          "body": "<p>A header for a standard table.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 35,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 86,
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\nThe set of widths, minimum widths, and maximum widths to be used for\neach of the columns in the table.",
+          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\n   The set of widths, minimum widths, and maximum widths to be used for\n   each of the columns in the table.",
           "paramName": "columnWidths",
-          "description": "\nThe set of widths, minimum widths, and maximum widths to be used for\neach of the columns in the table.",
+          "description": "\n   The set of widths, minimum widths, and maximum widths to be used for\n   each of the columns in the table.",
           "type": "qx.ui.progressive.renderer.table.Widths"
         },
         {
           "name": "@param",
-          "body": "labelArr {Array}\nArray of labels, one for each of the columns.",
+          "body": "labelArr {Array}\n   Array of labels, one for each of the columns.",
           "paramName": "labelArr",
-          "description": "\nArray of labels, one for each of the columns.",
+          "description": "\n   Array of labels, one for each of the columns.",
           "type": "Array"
         }
       ]
@@ -162,15 +162,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "progressive {qx.ui.progressive.Progressive}\nProgressive object to which we're being joined.",
+            "body": "progressive {qx.ui.progressive.Progressive}\n   Progressive object to which we're being joined.",
             "paramName": "progressive",
-            "description": "\nProgressive object to which we're being joined.",
+            "description": "\n   Progressive object to which we're being joined.",
             "type": "qx.ui.progressive.Progressive"
           }
         ]
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is required by the box layout. If returns an array of items\nto relayout."
+            "body": "<p>This method is required by the box layout. If returns an array of items\n to relayout.</p>"
           }
         ],
         "@return": [
@@ -231,15 +231,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"resize\" event.  We recalculate and set the\nnew widths of each of our columns."
+            "body": "<p>Event handler for the \"resize\" event.  We recalculate and set the\n new widths of each of our columns.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Event}\nIgnored.",
+            "body": "e {qx.event.type.Event}\n   Ignored.",
             "paramName": "e",
-            "description": "\nIgnored.",
+            "description": "\n   Ignored.",
             "type": "qx.event.type.Event"
           }
         ]
@@ -3736,13 +3736,14 @@
     "location": {
       "start": {
         "line": 166,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 172,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Utilities for working with character codes and key identifiers"
+          "body": "<p>Utilities for working with character codes and key identifiers</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nKEY MAPS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  KEY MAPS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "char code for capital A"
+            "body": "<p>char code for capital A</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "char code for capital Z"
+            "body": "<p>char code for capital Z</p>"
           }
         ]
       },
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "char code for 0"
+            "body": "<p>char code for 0</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "char code for 9"
+            "body": "<p>char code for 9</p>"
           }
         ]
       },
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "converts a keyboard code to the corresponding identifier"
+            "body": "<p>converts a keyboard code to the corresponding identifier</p>"
           }
         ],
         "@param": [
@@ -280,7 +280,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "converts a character code to the corresponding identifier"
+            "body": "<p>converts a character code to the corresponding identifier</p>"
           }
         ],
         "@param": [
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the keycode can be reliably detected in keyup/keydown events"
+            "body": "<p>Check whether the keycode can be reliably detected in keyup/keydown events</p>"
           }
         ],
         "@param": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the keyCode represents a non printable key"
+            "body": "<p>Checks whether the keyCode represents a non printable key</p>"
           }
         ],
         "@param": [
@@ -397,7 +397,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether a given string is a valid keyIdentifier"
+            "body": "<p>Checks whether a given string is a valid keyIdentifier</p>"
           }
         ],
         "@param": [
@@ -436,7 +436,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether a given string is a printable keyIdentifier."
+            "body": "<p>Checks whether a given string is a printable keyIdentifier.</p>"
           }
         ],
         "@param": [
@@ -465,13 +465,14 @@
     "location": {
       "start": {
         "line": 274,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 289,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

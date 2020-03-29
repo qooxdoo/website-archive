@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n Jonathan Weiß (jonathan<em>rass)\n Christian Hagendorn (chris</em>schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A tab view is a multi page view where only one page is visible\nat each moment. It is possible to switch the pages using the\nbuttons rendered by each page.\n\nNote that prior to v6.0, when changing the currently selected tab via code\n(ie changing the selection property) TabView would automatically set the\nfocus to that tab; this is undesirable (and inconsistent with other parts\nof the framework) and is no longer done automatically."
+          "body": "<p>A tab view is a multi page view where only one page is visible\n at each moment. It is possible to switch the pages using the\n buttons rendered by each page.\n Note that prior to v6.0, when changing the currently selected tab via code\n (ie changing the selection property) TabView would automatically set the\n focus to that tab; this is undesirable (and inconsistent with other parts\n of the framework) and is no longer done automatically.</p>"
         }
       ],
       "@childControl": [
@@ -55,7 +55,7 @@
     "location": {
       "start": {
         "line": 53,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 78,
@@ -66,7 +66,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the selection was modified"
+            "body": "<p>Fires after the selection was modified</p>"
           }
         ]
       },
@@ -122,7 +122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the value was modified"
+            "body": "<p>Fires after the value was modified</p>"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This property defines on which side of the TabView the bar should be positioned."
+            "body": "<p>This property defines on which side of the TabView the bar should be positioned.</p>"
           }
         ]
       },
@@ -276,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "setValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>setValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@param": [
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "getValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@return": [
@@ -348,7 +348,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "resetValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>resetValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ]
       },
@@ -370,26 +370,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -426,7 +426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the radio group manager instance.\n\nAllows override customizations of the instance"
+            "body": "<p>Creates the radio group manager instance.\n Allows override customizations of the instance</p>"
           }
         ],
         "@return": [
@@ -456,7 +456,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the element, to which the content padding should be applied."
+            "body": "<p>Returns the element, to which the content padding should be applied.</p>"
           }
         ],
         "@return": [
@@ -486,11 +486,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILDREN HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILDREN HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a page to the tabview including its needed button\n(contained in the page)."
+            "body": "<p>Adds a page to the tabview including its needed button\n (contained in the page).</p>"
           }
         ],
         "@param": [
@@ -521,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a page to the tabview including its needed button\n(contained in the page)."
+            "body": "<p>Adds a page to the tabview including its needed button\n (contained in the page).</p>"
           }
         ],
         "@param": [
@@ -561,7 +561,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a page (and its corresponding button) from the TabView."
+            "body": "<p>Removes a page (and its corresponding button) from the TabView.</p>"
           }
         ],
         "@param": [
@@ -592,7 +592,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns TabView's children widgets."
+            "body": "<p>Returns TabView's children widgets.</p>"
           }
         ],
         "@return": [
@@ -622,7 +622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the position of the given page in the TabView."
+            "body": "<p>Returns the position of the given page in the TabView.</p>"
           }
         ],
         "@param": [
@@ -661,7 +661,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the radio group manager."
+            "body": "<p>Returns the radio group manager.</p>"
           }
         ],
         "@return": [
@@ -691,7 +691,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -723,7 +723,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply method for the placeBarOnTop-Property.\n\nPasses the desired value to the layout of the tabview so\nthat the layout can handle it.\nIt also sets the states to all buttons so they know the\nposition of the bar."
+            "body": "<p>Apply method for the placeBarOnTop-Property.\n Passes the desired value to the layout of the tabview so\n that the layout can handle it.\n It also sets the states to all buttons so they know the\n position of the bar.</p>"
           }
         ],
         "@param": [
@@ -764,11 +764,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSELECTION API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SELECTION API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns an array of currently selected items.\n\nNote: The result is only a set of selected items, so the order can\ndiffer from the sequence in which the items were added."
+            "body": "<p>Returns an array of currently selected items.\n Note: The result is only a set of selected items, so the order can\n differ from the sequence in which the items were added.</p>"
           }
         ],
         "@return": [
@@ -802,7 +802,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces current selection with the given items."
+            "body": "<p>Replaces current selection with the given items.</p>"
           }
         ],
         "@param": [
@@ -817,9 +817,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} if one of the items is not a child element and if\nitems contains more than one elements.",
+            "body": "{Error} if one of the items is not a child element and if\n    items contains more than one elements.",
             "type": "Error",
-            "description": " if one of the items is not a child element and if\nitems contains more than one elements."
+            "description": " if one of the items is not a child element and if\n    items contains more than one elements."
           }
         ]
       },
@@ -845,7 +845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the whole selection at once."
+            "body": "<p>Clears the whole selection at once.</p>"
           }
         ]
       },
@@ -871,7 +871,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether the given item is currently selected."
+            "body": "<p>Detects whether the given item is currently selected.</p>"
           }
         ],
         "@param": [
@@ -922,7 +922,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the selection is empty."
+            "body": "<p>Whether the selection is empty.</p>"
           }
         ],
         "@return": [
@@ -956,7 +956,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@return": [
@@ -970,9 +970,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ]
@@ -999,7 +999,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>changeSelection</code>."
+            "body": "<p>Event handler for <code>changeSelection</code>.</p>"
           }
         ],
         "@param": [
@@ -1030,7 +1030,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>beforeChangeSelection</code>."
+            "body": "<p>Event handler for <code>beforeChangeSelection</code>.</p>"
           }
         ],
         "@param": [
@@ -1061,11 +1061,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the change of the selected item of the radio group."
+            "body": "<p>Event handler for the change of the selected item of the radio group.</p>"
           }
         ],
         "@param": [
@@ -1096,7 +1096,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the Page widget on which the close button was tapped."
+            "body": "<p>Removes the Page widget on which the close button was tapped.</p>"
           }
         ],
         "@param": [
@@ -4981,7 +4981,7 @@
     "location": {
       "start": {
         "line": 693,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 696,
@@ -4992,7 +4992,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nDerrell Lipman (derrell)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Derrell Lipman (derrell)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The AbstractItem serves as a common superclass for the {@link\nqx.ui.tree.core.AbstractTreeItem} and {@link qx.ui.tree.VirtualTreeItem} classes."
+          "body": "<p>The AbstractItem serves as a common superclass for the {@link\n qx.ui.tree.core.AbstractTreeItem} and {@link qx.ui.tree.VirtualTreeItem} classes.</p>"
         }
       ],
       "@childControl": [
@@ -65,7 +65,7 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 54,
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the tree item is opened."
+            "body": "<p>Whether the tree item is opened.</p>"
           }
         ]
       },
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls, when to show the open symbol. If the mode is \"auto\" , the open\nsymbol is shown only if the item has child items."
+            "body": "<p>Controls, when to show the open symbol. If the mode is \"auto\" , the open\n symbol is shown only if the item has child items.</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The number of pixel to indent the tree item for each level."
+            "body": "<p>The number of pixel to indent the tree item for each level.</p>"
           }
         ]
       },
@@ -194,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "URI of \"closed\" icon. Can be any URI String supported by qx.ui.basic.Image."
+            "body": "<p>URI of \"closed\" icon. Can be any URI String supported by qx.ui.basic.Image.</p>"
           }
         ]
       },
@@ -222,7 +222,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "URI of \"opened\" icon. Can be any URI String supported by qx.ui.basic.Image."
+            "body": "<p>URI of \"opened\" icon. Can be any URI String supported by qx.ui.basic.Image.</p>"
           }
         ]
       },
@@ -250,7 +250,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label/caption/text"
+            "body": "<p>The label/caption/text</p>"
           }
         ]
       },
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method configures the tree item by adding its sub widgets like\nlabel, icon, open symbol, ...\n\nThis method must be overridden by sub classes."
+            "body": "<p>This method configures the tree item by adding its sub widgets like\n label, icon, open symbol, …\n This method must be overridden by sub classes.</p>"
           }
         ]
       },
@@ -351,22 +351,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -403,11 +403,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTREE ITEM CONFIGURATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TREE ITEM CONFIGURATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a sub widget to the tree item's horizontal box layout."
+            "body": "<p>Adds a sub widget to the tree item's horizontal box layout.</p>"
           }
         ],
         "@param": [
@@ -447,7 +447,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the spacer used to render the indentation to the item's horizontal\nbox layout. If the spacer has been added before, it is removed from its\nold position and added to the end of the layout."
+            "body": "<p>Adds the spacer used to render the indentation to the item's horizontal\n box layout. If the spacer has been added before, it is removed from its\n old position and added to the end of the layout.</p>"
           }
         ]
       },
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the open button to the item's horizontal box layout. If the open\nbutton has been added before, it is removed from its old position and\nadded to the end of the layout."
+            "body": "<p>Adds the open button to the item's horizontal box layout. If the open\n button has been added before, it is removed from its old position and\n added to the end of the layout.</p>"
           }
         ]
       },
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler, which listens to open state changes of the open button"
+            "body": "<p>Event handler, which listens to open state changes of the open button</p>"
           }
         ],
         "@param": [
@@ -522,7 +522,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the icon widget to the item's horizontal box layout. If the icon\nwidget has been added before, it is removed from its old position and\nadded to the end of the layout."
+            "body": "<p>Adds the icon widget to the item's horizontal box layout. If the icon\n widget has been added before, it is removed from its old position and\n added to the end of the layout.</p>"
           }
         ]
       },
@@ -544,7 +544,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the label to the item's horizontal box layout. If the label\nhas been added before, it is removed from its old position and\nadded to the end of the layout."
+            "body": "<p>Adds the label to the item's horizontal box layout. If the label\n has been added before, it is removed from its old position and\n added to the end of the layout.</p>"
           }
         ],
         "@param": [
@@ -577,11 +577,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -606,7 +606,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -631,7 +631,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -656,7 +656,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -681,7 +681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get user-defined value of \"icon\" property"
+            "body": "<p>Get user-defined value of \"icon\" property</p>"
           }
         ],
         "@return": [
@@ -711,7 +711,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get user-defined value of \"iconOpened\" property"
+            "body": "<p>Get user-defined value of \"iconOpened\" property</p>"
           }
         ],
         "@return": [
@@ -741,7 +741,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set source of icon child control"
+            "body": "<p>Set source of icon child control</p>"
           }
         ],
         "@param": [
@@ -772,11 +772,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINDENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INDENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Whether the tree item can be opened."
+            "body": "<p>Whether the tree item can be opened.</p>"
           }
         ],
         "@return": [
@@ -806,7 +806,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the open symbol should be shown"
+            "body": "<p>Whether the open symbol should be shown</p>"
           }
         ],
         "@return": [
@@ -836,7 +836,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -861,7 +861,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the indentation of the tree item."
+            "body": "<p>Update the indentation of the tree item.</p>"
           }
         ]
       },
@@ -883,7 +883,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -908,7 +908,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the item's nesting level. If the item is not part of a tree\nthis function will return <code>null</code>."
+            "body": "<p>Computes the item's nesting level. If the item is not part of a tree\n this function will return <code>null</code>.</p>"
           }
         ],
         "@return": [
@@ -938,7 +938,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -973,7 +973,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the item has any children"
+            "body": "<p>Whether the item has any children</p>"
           }
         ],
         "@return": [
@@ -1001,7 +1001,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -1028,7 +1028,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -4969,13 +4969,14 @@
     "location": {
       "start": {
         "line": 509,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 511,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.tree.VirtualTreeItem",

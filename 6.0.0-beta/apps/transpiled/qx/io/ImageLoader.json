@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The ImageLoader can preload and manage loaded image resources. It easily\nhandles multiple requests and supports callbacks for successful and failed\nrequests.\n\nAfter loading of an image the dimension of the image is stored as long\nas the application is running. This is quite useful for in-memory layouting.\n\nUse {@link #load} to preload your own images."
+          "body": "<p>The ImageLoader can preload and manage loaded image resources. It easily\n handles multiple requests and supports callbacks for successful and failed\n requests.\n After loading of an image the dimension of the image is stored as long\n as the application is running. This is quite useful for in-memory layouting.\n Use {@link #load} to preload your own images.</p>"
         }
       ]
     }
@@ -159,7 +159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given image has previously been loaded using the\n{@link #load} method."
+            "body": "<p>Whether the given image has previously been loaded using the\n {@link #load} method.</p>"
           }
         ],
         "@param": [
@@ -198,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given image has previously been requested using the\n{@link #load} method but failed."
+            "body": "<p>Whether the given image has previously been requested using the\n {@link #load} method but failed.</p>"
           }
         ],
         "@param": [
@@ -237,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given image is currently loading."
+            "body": "<p>Whether the given image is currently loading.</p>"
           }
         ],
         "@param": [
@@ -276,7 +276,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the format of a previously loaded image"
+            "body": "<p>Returns the format of a previously loaded image</p>"
           }
         ],
         "@param": [
@@ -315,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the size of a previously loaded image"
+            "body": "<p>Returns the size of a previously loaded image</p>"
           }
         ],
         "@param": [
@@ -330,9 +330,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The dimension of the image (<code>width</code> and\n<code>height</code> as key). If the image is not yet loaded, the\ndimensions are given as <code>null</code> for width and height.",
+            "body": "{Map} The dimension of the image (<code>width</code> and\n    <code>height</code> as key). If the image is not yet loaded, the\n    dimensions are given as <code>null</code> for width and height.",
             "type": "Map",
-            "description": " The dimension of the image (<code>width</code> and\n<code>height</code> as key). If the image is not yet loaded, the\ndimensions are given as <code>null</code> for width and height."
+            "description": " The dimension of the image (<code>width</code> and\n    <code>height</code> as key). If the image is not yet loaded, the\n    dimensions are given as <code>null</code> for width and height."
           }
         ]
       },
@@ -354,7 +354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the image width"
+            "body": "<p>Returns the image width</p>"
           }
         ],
         "@param": [
@@ -393,7 +393,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the image height"
+            "body": "<p>Returns the image height</p>"
           }
         ],
         "@param": [
@@ -432,7 +432,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads the given image. Supports a callback which is\nexecuted when the image is loaded.\n\nThis method works asynchronous."
+            "body": "<p>Loads the given image. Supports a callback which is\n executed when the image is loaded.\n This method works asynchronous.</p>"
           }
         ],
         "@param": [
@@ -445,9 +445,9 @@
           },
           {
             "name": "@param",
-            "body": "callback {Function?} Callback function to execute\nThe first parameter of the callback is the given source url, the\nsecond parameter is the data entry which contains additional\ninformation about the image.",
+            "body": "callback {Function?} Callback function to execute\n   The first parameter of the callback is the given source url, the\n   second parameter is the data entry which contains additional\n   information about the image.",
             "paramName": "callback",
-            "description": " Callback function to execute\nThe first parameter of the callback is the given source url, the\nsecond parameter is the data entry which contains additional\ninformation about the image.",
+            "description": " Callback function to execute\n   The first parameter of the callback is the given source url, the\n   second parameter is the data entry which contains additional\n   information about the image.",
             "optional": true,
             "type": "Function"
           },
@@ -479,7 +479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Abort the loading for the given url."
+            "body": "<p>Abort the loading for the given url.</p>"
           }
         ],
         "@param": [
@@ -510,7 +510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls a method based on qx.globalErrorHandling"
+            "body": "<p>Calls a method based on qx.globalErrorHandling</p>"
           }
         ]
       },
@@ -532,7 +532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal event listener for all load/error events."
+            "body": "<p>Internal event listener for all load/error events.</p>"
           }
         ],
         "@signature": [
@@ -583,7 +583,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose stored images."
+            "body": "<p>Dispose stored images.</p>"
           }
         ]
       },

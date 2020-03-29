@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This widget is used as feedback widget in drag and drop actions."
+          "body": "<p>This widget is used as feedback widget in drag and drop actions.</p>"
         }
       ]
     }
@@ -40,7 +40,7 @@
     "location": {
       "start": {
         "line": 37,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -51,7 +51,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -94,7 +94,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The current drag&drop action"
+            "body": "<p>The current drag&amp;drop action</p>"
           }
         ]
       },
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -228,7 +228,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the location data like {qx.bom.element.Location#get} does,\nbut does not rely on DOM elements coordinates to be rendered. Instead,\nthis method works with the available layout data available in the moment\nwhen it is executed.\nThis works best when called in some type of <code>resize</code> or\n<code>move</code> event which are supported by all widgets out of the\nbox."
+            "body": "<p>Returns the location data like {qx.bom.element.Location#get} does,\n but does not rely on DOM elements coordinates to be rendered. Instead,\n this method works with the available layout data available in the moment\n when it is executed.\n This works best when called in some type of <code>resize</code> or\n <code>move</code> event which are supported by all widgets out of the\n box.</p>"
           }
         ],
         "@param": [
@@ -243,9 +243,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map|null} Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the widget relative coords the document.",
+            "body": "{Map|null} Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the widget relative coords the document.",
             "type": "Map|null",
-            "description": " Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the widget relative coords the document."
+            "description": " Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the widget relative coords the document."
           }
         ]
       }
@@ -262,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the position. Uses low-level, high-performance DOM\nmethods when the property {@link #domMove} is enabled.\nChecks if an always visible element is set and moves the widget to not\noverlay the always visible widget if possible. The algorithm tries to\nmove the widget as far left as necessary but not of the screen.\n({@link #setVisibleElement})"
+            "body": "<p>Sets the position. Uses low-level, high-performance DOM\n methods when the property {@link #domMove} is enabled.\n Checks if an always visible element is set and moves the widget to not\n overlay the always visible widget if possible. The algorithm tries to\n move the widget as far left as necessary but not of the screen.\n ({@link #setVisibleElement})</p>"
           }
         ],
         "@param": [
@@ -295,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to another (at least laid out) widget. The DOM\nelement is not needed, but the bounds are needed to compute the\nlocation of the widget to align to."
+            "body": "<p>Places the widget to another (at least laid out) widget. The DOM\n element is not needed, but the bounds are needed to compute the\n location of the widget to align to.</p>"
           }
         ],
         "@param": [
@@ -308,9 +308,9 @@
           },
           {
             "name": "@param",
-            "body": "liveupdate {Boolean} Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "body": "liveupdate {Boolean} Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "paramName": "liveupdate",
-            "description": " Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "description": " Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "type": "Boolean"
           }
         ],
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to the pointer position."
+            "body": "<p>Places the widget to the pointer position.</p>"
           }
         ],
         "@param": [
@@ -371,7 +371,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to any (rendered) DOM element."
+            "body": "<p>Places the widget to any (rendered) DOM element.</p>"
           }
         ],
         "@param": [
@@ -384,9 +384,9 @@
           },
           {
             "name": "@param",
-            "body": "liveupdate {Boolean} Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "body": "liveupdate {Boolean} Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "paramName": "liveupdate",
-            "description": " Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "description": " Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "type": "Boolean"
           }
         ]
@@ -404,15 +404,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget in relation to the given point"
+            "body": "<p>Places the widget in relation to the given point</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "paramName": "point",
-            "description": " Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "description": " Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "type": "Map"
           }
         ]
@@ -430,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the placement offsets as a map"
+            "body": "<p>Returns the placement offsets as a map</p>"
           }
         ],
         "@return": [
@@ -455,15 +455,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the size of the object to place. The callback will be called with\nthe size as first argument. This methods works asynchronously.\n\nThe size of the object to place is the size of the widget. If a widget\nincluding this mixin needs a different size it can implement the method\n<code>_computePlacementSize</code>, which returns the size."
+            "body": "<p>Get the size of the object to place. The callback will be called with\n the size as first argument. This methods works asynchronously.\n The size of the object to place is the size of the widget. If a widget\n including this mixin needs a different size it can implement the method\n <code>_computePlacementSize</code>, which returns the size.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} This function will be called with the size as\nfirst argument",
+            "body": "callback {Function} This function will be called with the size as\n    first argument",
             "paramName": "callback",
-            "description": " This function will be called with the size as\nfirst argument",
+            "description": " This function will be called with the size as\n    first argument",
             "type": "Function"
           }
         ]
@@ -481,15 +481,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method to read specific this properties and\napply the results to the this afterwards."
+            "body": "<p>Internal method to read specific this properties and\n apply the results to the this afterwards.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "coords {Map} Location of the object to align the this to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "body": "coords {Map} Location of the object to align the this to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "paramName": "coords",
-            "description": " Location of the object to align the this to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "description": " Location of the object to align the this to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "type": "Map"
           }
         ]

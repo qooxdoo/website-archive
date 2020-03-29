@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nGabriel Munteanu (gabios)\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Gabriel Munteanu (gabios)\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The popup represents a widget that gets shown above other widgets,\nusually to present more info/details regarding an item in the application.\n\nThere are 3 usages for now:\n\n<pre class='javascript'>\nvar widget = new qx.ui.mobile.form.Button(\"Error!\");\nvar popup = new qx.ui.mobile.dialog.Popup(widget);\npopup.show();\n</pre>\nHere we show a popup consisting of a single buttons alerting the user\nthat an error has occurred.\nIt will be centered to the screen.\n<pre class='javascript'>\nvar label = new qx.ui.mobile.basic.Label(\"Item1\");\nvar widget = new qx.ui.mobile.form.Button(\"Error!\");\nvar popup = new qx.ui.mobile.dialog.Popup(widget, label);\npopup.show();\nwidget.addListener(\"tap\", function(){\npopup.hide();\n});\n\n</pre>\n\nIn this case everything is as above, except that the popup will get shown next to \"label\"\nso that the user can understand that the info presented is about the \"Item1\"\nwe also add a tap listener to the button that will hide out popup.\n\nOnce created, the instance is reused between show/hide calls.\n\n<pre class='javascript'>\nvar widget = new qx.ui.mobile.form.Button(\"Error!\");\nvar popup = new qx.ui.mobile.dialog.Popup(widget);\npopup.placeTo(25,100);\npopup.show();\n</pre>\n\nSame as the first example, but this time the popup will be shown at the 25,100 coordinates."
+          "body": "<p>The popup represents a widget that gets shown above other widgets,\n usually to present more info/details regarding an item in the application.\n There are 3 usages for now:\n </p>\n<pre class='javascript'>\n var widget = new qx.ui.mobile.form.Button(\"Error!\");\n var popup = new qx.ui.mobile.dialog.Popup(widget);\n popup.show();\n </pre>\n<p>Here we show a popup consisting of a single buttons alerting the user\n that an error has occurred.\n It will be centered to the screen.\n </p>\n<pre class='javascript'>\n var label = new qx.ui.mobile.basic.Label(\"Item1\");\n var widget = new qx.ui.mobile.form.Button(\"Error!\");\n var popup = new qx.ui.mobile.dialog.Popup(widget, label);\n popup.show();\n widget.addListener(\"tap\", function(){\n   popup.hide();\n });\n </pre>\n<p>In this case everything is as above, except that the popup will get shown next to \"label\"\n so that the user can understand that the info presented is about the \"Item1\"\n we also add a tap listener to the button that will hide out popup.\n Once created, the instance is reused between show/hide calls.\n </p>\n<pre class='javascript'>\n var widget = new qx.ui.mobile.form.Button(\"Error!\");\n var popup = new qx.ui.mobile.dialog.Popup(widget);\n popup.placeTo(25,100);\n popup.show();\n </pre>\n<p>Same as the first example, but this time the popup will be shown at the 25,100 coordinates.</p>"
         }
       ]
     }
@@ -51,7 +51,7 @@
     "location": {
       "start": {
         "line": 77,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 92,
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label/caption/text of the qx.ui.mobile.basic.Atom instance"
+            "body": "<p>The label/caption/text of the qx.ui.mobile.basic.Atom instance</p>"
           }
         ]
       },
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Any URI String supported by qx.ui.mobile.basic.Image to display an icon"
+            "body": "<p>Any URI String supported by qx.ui.mobile.basic.Image to display an icon</p>"
           }
         ]
       },
@@ -183,7 +183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the popup should be displayed modal."
+            "body": "<p>Whether the popup should be displayed modal.</p>"
           }
         ]
       },
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicates whether the a modal popup should disappear when user taps/clicks on Blocker."
+            "body": "<p>Indicates whether the a modal popup should disappear when user taps/clicks on Blocker.</p>"
           }
         ]
       },
@@ -335,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called whenever the position of the popup should be updated."
+            "body": "<p>Event handler. Called whenever the position of the popup should be updated.</p>"
           }
         ]
       },
@@ -357,7 +357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method shows the popup.\nFirst it updates the position, then registers the event handlers, and shows it."
+            "body": "<p>This method shows the popup.\n First it updates the position, then registers the event handlers, and shows it.</p>"
           }
         ],
         "@param": [
@@ -392,7 +392,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the popup."
+            "body": "<p>Hides the popup.</p>"
           }
         ],
         "@param": [
@@ -427,7 +427,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the popup after a given time delay."
+            "body": "<p>Hides the popup after a given time delay.</p>"
           }
         ],
         "@param": [
@@ -458,7 +458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the shown state of this popup."
+            "body": "<p>Returns the shown state of this popup.</p>"
           }
         ],
         "@return": [
@@ -488,7 +488,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the visibility of this popup."
+            "body": "<p>Toggles the visibility of this popup.</p>"
           }
         ]
       },
@@ -510,7 +510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method positions the popup widget at the coordinates specified."
+            "body": "<p>This method positions the popup widget at the coordinates specified.</p>"
           }
         ],
         "@param": [
@@ -548,7 +548,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tracks the user tap on root and hides the widget if <code>pointerdown</code> event\noccurs outside of the widgets bounds."
+            "body": "<p>Tracks the user tap on root and hides the widget if <code>pointerdown</code> event\n occurs outside of the widgets bounds.</p>"
           }
         ],
         "@param": [
@@ -579,7 +579,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Centers this widget to window's center position."
+            "body": "<p>Centers this widget to window's center position.</p>"
           }
         ]
       },
@@ -601,7 +601,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the position of this element (left, top, margins...)"
+            "body": "<p>Resets the position of this element (left, top, margins…)</p>"
           }
         ]
       },
@@ -623,7 +623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers all needed event listeners"
+            "body": "<p>Registers all needed event listeners</p>"
           }
         ]
       },
@@ -645,7 +645,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters all needed event listeners"
+            "body": "<p>Unregisters all needed event listeners</p>"
           }
         ]
       },
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method creates the container where the popup's widget will be placed\nand adds it to the popup."
+            "body": "<p>This method creates the container where the popup's widget will be placed\n and adds it to the popup.</p>"
           }
         ],
         "@param": [
@@ -698,7 +698,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the title atom widget."
+            "body": "<p>Creates the title atom widget.</p>"
           }
         ],
         "@return": [
@@ -728,7 +728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -753,7 +753,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -778,7 +778,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the widget that will be shown in this popup. This method can be used in the case when you have removed the widget from the popup\nor you haven't passed it in the constructor."
+            "body": "<p>Adds the widget that will be shown in this popup. This method can be used in the case when you have removed the widget from the popup\n or you haven't passed it in the constructor.</p>"
           }
         ],
         "@param": [
@@ -809,7 +809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A widget to attach this popup to."
+            "body": "<p>A widget to attach this popup to.</p>"
           }
         ],
         "@param": [
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the title widget."
+            "body": "<p>Returns the title widget.</p>"
           }
         ],
         "@return": [
@@ -870,15 +870,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method removes the widget shown in the popup."
+            "body": "<p>This method removes the widget shown in the popup.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.mobile.core.Widget|null} The removed widget or <code>null</code>\nif the popup doesn't have an attached widget",
+            "body": "{qx.ui.mobile.core.Widget|null} The removed widget or <code>null</code>\n if the popup doesn't have an attached widget",
             "type": "qx.ui.mobile.core.Widget|null",
-            "description": " The removed widget or <code>null</code>\nif the popup doesn't have an attached widget"
+            "description": " The removed widget or <code>null</code>\n if the popup doesn't have an attached widget"
           }
         ]
       },
@@ -2251,13 +2251,14 @@
     "location": {
       "start": {
         "line": 575,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 581,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.mobile.dialog.Menu"

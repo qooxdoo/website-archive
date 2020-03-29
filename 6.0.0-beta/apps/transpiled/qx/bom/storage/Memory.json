@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Fallback storage implementation which offers the same API as every other storage\nbut is not persistent. Basically, its just a storage API on a JavaScript map."
+          "body": "<p>Fallback storage implementation which offers the same API as every other storage\n but is not persistent. Basically, its just a storage API on a JavaScript map.</p>"
         }
       ],
       "@require": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an instance of {@link qx.bom.storage.Memory} which is of course\nnot persisted on reload."
+            "body": "<p>Returns an instance of {@link qx.bom.storage.Memory} which is of course\n not persisted on reload.</p>"
           }
         ],
         "@return": [
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an instance of {@link qx.bom.storage.Memory} which is of course\nnot persisted on reload."
+            "body": "<p>Returns an instance of {@link qx.bom.storage.Memory} which is of course\n not persisted on reload.</p>"
           }
         ],
         "@return": [
@@ -155,13 +155,14 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 65,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__storage": {
@@ -193,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal used map."
+            "body": "<p>Returns the internal used map.</p>"
           }
         ],
         "@return": [
@@ -229,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the amount of key-value pairs stored."
+            "body": "<p>Returns the amount of key-value pairs stored.</p>"
           }
         ],
         "@return": [
@@ -259,7 +260,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Store an item in the storage."
+            "body": "<p>Store an item in the storage.</p>"
           }
         ],
         "@param": [
@@ -297,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the stored item."
+            "body": "<p>Returns the stored item.</p>"
           }
         ],
         "@param": [
@@ -336,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an item form the storage."
+            "body": "<p>Removes an item form the storage.</p>"
           }
         ],
         "@param": [
@@ -367,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deletes every stored item in the storage."
+            "body": "<p>Deletes every stored item in the storage.</p>"
           }
         ]
       },
@@ -389,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the named key at the given index."
+            "body": "<p>Returns the named key at the given index.</p>"
           }
         ],
         "@param": [
@@ -428,15 +429,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to access every stored item."
+            "body": "<p>Helper to access every stored item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "body": "callback {Function} A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "paramName": "callback",
-            "description": " A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "description": " A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "type": "Function"
           },
           {

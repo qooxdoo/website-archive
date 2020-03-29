@@ -26,11 +26,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a basic form field with common functionality for\n{@link TextArea} and {@link TextField}.\n\nOn every keystroke the value is synchronized with the\nvalue of the textfield. Value changes can be monitored by listening to the\n{@link #input} or {@link #changeValue} events, respectively."
+          "body": "<p>This is a basic form field with common functionality for\n {@link TextArea} and {@link TextField}.\n On every keystroke the value is synchronized with the\n value of the textfield. Value changes can be monitored by listening to the\n {@link #input} or {@link #changeValue} events, respectively.</p>"
         }
       ]
     }
@@ -55,7 +55,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stylesheet needed to style the native placeholder element."
+            "body": "<p>Stylesheet needed to style the native placeholder element.</p>"
           }
         ]
       },
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the CSS rules needed to style the native placeholder element."
+            "body": "<p>Adds the CSS rules needed to style the native placeholder element.</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
     "location": {
       "start": {
         "line": 84,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 116,
@@ -100,7 +100,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired on every keystroke modifying the value of the field.\n\nThe method {@link qx.event.type.Data#getData} returns the\ncurrent value of the text field."
+            "body": "<p>The event is fired on every keystroke modifying the value of the field.\n The method {@link qx.event.type.Data#getData} returns the\n current value of the text field.</p>"
           }
         ]
       },
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired each time the text field looses focus and the\ntext field values has changed.\n\nIf you change {@link #liveUpdate} to true, the changeValue event will\nbe fired after every keystroke and not only after every focus loss. In\nthat mode, the changeValue event is equal to the {@link #input} event.\n\nThe method {@link qx.event.type.Data#getData} returns the\ncurrent text value of the field."
+            "body": "<p>The event is fired each time the text field looses focus and the\n text field values has changed.\n If you change {@link #liveUpdate} to true, the changeValue event will\n be fired after every keystroke and not only after every focus loss. In\n that mode, the changeValue event is equal to the {@link #input} event.\n The method {@link qx.event.type.Data#getData} returns the\n current text value of the field.</p>"
           }
         ]
       },
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Alignment of the text"
+            "body": "<p>Alignment of the text</p>"
           }
         ]
       },
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the field is read only"
+            "body": "<p>Whether the field is read only</p>"
           }
         ]
       },
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -296,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximal number of characters that can be entered in the TextArea."
+            "body": "<p>Maximal number of characters that can be entered in the TextArea.</p>"
           }
         ]
       },
@@ -322,7 +322,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the {@link #changeValue} event should be fired on every key\ninput. If set to true, the changeValue event is equal to the\n{@link #input} event."
+            "body": "<p>Whether the {@link #changeValue} event should be fired on every key\n input. If set to true, the changeValue event is equal to the\n {@link #input} event.</p>"
           }
         ]
       },
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "String value which will be shown as a hint if the field is all of:\nunset, unfocused and enabled. Set to null to not show a placeholder\ntext."
+            "body": "<p>String value which will be shown as a hint if the field is all of:\n unset, unfocused and enabled. Set to null to not show a placeholder\n text.</p>"
           }
         ]
       },
@@ -373,7 +373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "RegExp responsible for filtering the value of the textfield. the RegExp\ngives the range of valid values.\nNote: The regexp specified is applied to each character in turn,\nNOT to the entire string. So only regular expressions matching a\nsingle character make sense in the context.\nThe following example only allows digits in the textfield.\n<pre class='javascript'>field.setFilter(/[0-9]/);</pre>"
+            "body": "<p>RegExp responsible for filtering the value of the textfield. the RegExp\n gives the range of valid values.\n Note: The regexp specified is applied to each character in turn,\n NOT to the entire string. So only regular expressions matching a\n single character make sense in the context.\n The following example only allows digits in the textfield.\n </p>\n<pre class='javascript'>field.setFilter(/[0-9]/);</pre>"
           }
         ]
       },
@@ -530,11 +530,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -568,7 +568,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the input element. Derived classes may override this\nmethod, to create different input elements."
+            "body": "<p>Creates the input element. Derived classes may override this\n method, to create different input elements.</p>"
           }
         ],
         "@return": [
@@ -598,36 +598,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer} Any integer value for the left position,\nalways in pixels",
+            "body": "left {Integer} Any integer value for the left position,\n   always in pixels",
             "paramName": "left",
-            "description": " Any integer value for the left position,\nalways in pixels",
+            "description": " Any integer value for the left position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer} Any integer value for the top position,\nalways in pixels",
+            "body": "top {Integer} Any integer value for the top position,\n   always in pixels",
             "paramName": "top",
-            "description": " Any integer value for the top position,\nalways in pixels",
+            "description": " Any integer value for the top position,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer} Any positive integer value for the width,\nalways in pixels",
+            "body": "width {Integer} Any positive integer value for the width,\n   always in pixels",
             "paramName": "width",
-            "description": " Any positive integer value for the width,\nalways in pixels",
+            "description": " Any positive integer value for the width,\n   always in pixels",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "height {Integer} Any positive integer value for the height,\nalways in pixels",
+            "body": "height {Integer} Any positive integer value for the height,\n   always in pixels",
             "paramName": "height",
-            "description": " Any positive integer value for the height,\nalways in pixels",
+            "description": " Any positive integer value for the height,\n   always in pixels",
             "type": "Integer"
           }
         ],
@@ -663,7 +663,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hook into {@link qx.ui.form.AbstractField#renderLayout} method.\nCalled after the contentElement has a width and an innerWidth.\n\nNote: This was introduced to fix BUG#1585"
+            "body": "<p>Hook into {@link qx.ui.form.AbstractField#renderLayout} method.\n Called after the contentElement has a width and an innerWidth.\n Note: This was introduced to fix BUG#1585</p>"
           }
         ],
         "@param": [
@@ -701,7 +701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -735,7 +735,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -761,7 +761,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "default text sizes"
+            "body": "<p>default text sizes</p>"
           },
           {
             "name": "@description",
@@ -793,7 +793,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -827,7 +827,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -853,7 +853,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -879,7 +879,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -904,7 +904,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -930,7 +930,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the text size."
+            "body": "<p>Returns the text size.</p>"
           }
         ],
         "@return": [
@@ -960,11 +960,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event listener for native input events. Redirects the event\nto the widget. Also checks for the filter and max length."
+            "body": "<p>Event listener for native input events. Redirects the event\n to the widget. Also checks for the filter and max length.</p>"
           }
         ],
         "@param": [
@@ -995,7 +995,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Triggers text size recalculation after a web font was loaded"
+            "body": "<p>Triggers text size recalculation after a web font was loaded</p>"
           }
         ],
         "@param": [
@@ -1026,7 +1026,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the firing of the changeValue event including the local cache\nfor sending the old value in the event."
+            "body": "<p>Handles the firing of the changeValue event including the local cache\n for sending the old value in the event.</p>"
           }
         ],
         "@param": [
@@ -1057,11 +1057,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTEXTFIELD VALUE API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXTFIELD VALUE API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the value of the textfield to the given value."
+            "body": "<p>Sets the value of the textfield to the given value.</p>"
           }
         ],
         "@param": [
@@ -1097,7 +1097,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current value of the textfield."
+            "body": "<p>Returns the current value of the textfield.</p>"
           }
         ],
         "@return": [
@@ -1132,7 +1132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value to the default"
+            "body": "<p>Resets the value to the default</p>"
           }
         ]
       },
@@ -1159,7 +1159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for change event of content element"
+            "body": "<p>Event listener for change event of content element</p>"
           }
         ],
         "@param": [
@@ -1190,11 +1190,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTEXTFIELD SELECTION API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TEXTFIELD SELECTION API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the current selection.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Returns the current selection.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@return": [
@@ -1224,7 +1224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current selection length.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Returns the current selection length.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@return": [
@@ -1254,7 +1254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the start of the text selection"
+            "body": "<p>Returns the start of the text selection</p>"
           }
         ],
         "@return": [
@@ -1284,7 +1284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the end of the text selection"
+            "body": "<p>Returns the end of the text selection</p>"
           }
         ],
         "@return": [
@@ -1314,7 +1314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the selection to the given start and end (zero-based).\nIf no end value is given the selection will extend to the\nend of the textfield's content.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Set the selection to the given start and end (zero-based).\n If no end value is given the selection will extend to the\n end of the textfield's content.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ],
         "@param": [
@@ -1352,7 +1352,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the current selection.\nThis method only works if the widget is already created and\nadded to the document."
+            "body": "<p>Clears the current selection.\n This method only works if the widget is already created and\n added to the document.</p>"
           }
         ]
       },
@@ -1374,7 +1374,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the whole content"
+            "body": "<p>Selects the whole content</p>"
           }
         ]
       },
@@ -1396,11 +1396,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPLACEHOLDER HELPERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PLACEHOLDER HELPERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1439,7 +1439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to show the placeholder text in the field. It checks for all\nstates and possible conditions and shows the placeholder only if allowed."
+            "body": "<p>Helper to show the placeholder text in the field. It checks for all\n states and possible conditions and shows the placeholder only if allowed.</p>"
           }
         ]
       },
@@ -1461,7 +1461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the fake placeholder"
+            "body": "<p>Remove the fake placeholder</p>"
           }
         ]
       },
@@ -1483,7 +1483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to remove the placeholder. Deletes the placeholder text from the\nfield and removes the state."
+            "body": "<p>Helper to remove the placeholder. Deletes the placeholder text from the\n field and removes the state.</p>"
           }
         ]
       },
@@ -1505,7 +1505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the placeholder text with the DOM"
+            "body": "<p>Updates the placeholder text with the DOM</p>"
           }
         ]
       },
@@ -1527,7 +1527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the placeholder label and creates it if necessary."
+            "body": "<p>Returns the placeholder label and creates it if necessary.</p>"
           }
         ]
       },
@@ -1549,7 +1549,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1586,7 +1586,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1613,7 +1613,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validates the the input value."
+            "body": "<p>Validates the the input value.</p>"
           }
         ],
         "@param": [
@@ -1650,11 +1650,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1679,7 +1679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1704,7 +1704,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1727,11 +1727,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1758,7 +1758,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -1988,7 +1988,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -6006,19 +6006,20 @@
     "location": {
       "start": {
         "line": 1036,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 1050,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "destruct": {
     "location": {
       "start": {
         "line": 1058,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 1080,
@@ -6029,7 +6030,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Toolbar class is the main part of the toolbar widget.\n\nIt can handle added {@link Button}s, {@link CheckBox}es, {@link RadioButton}s\nand {@link Separator}s in its {@link #add} method. The {@link #addSpacer} method\nadds a spacer at the current toolbar position. This means that the widgets\nadded after the method call of {@link #addSpacer} are aligned to the right of\nthe toolbar.\n\nFor more details on the documentation of the toolbar widget, take a look at the\ndocumentation of the {@link qx.ui.toolbar}-Package."
+          "body": "<p>The Toolbar class is the main part of the toolbar widget.\n It can handle added {@link Button}s, {@link CheckBox}es, {@link RadioButton}s\n and {@link Separator}s in its {@link #add} method. The {@link #addSpacer} method\n adds a spacer at the current toolbar position. This means that the widgets\n added after the method call of {@link #addSpacer} are aligned to the right of\n the toolbar.\n For more details on the documentation of the toolbar widget, take a look at the\n documentation of the {@link qx.ui.toolbar}-Package.</p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 57,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appearance of the widget"
+            "body": "<p>Appearance of the widget</p>"
           }
         ]
       },
@@ -98,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Holds the currently open menu (when the toolbar is used for menus)"
+            "body": "<p>Holds the currently open menu (when the toolbar is used for menus)</p>"
           }
         ]
       },
@@ -124,7 +124,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether icons, labels, both or none should be shown."
+            "body": "<p>Whether icons, labels, both or none should be shown.</p>"
           }
         ]
       },
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The spacing between every child of the toolbar"
+            "body": "<p>The spacing between every child of the toolbar</p>"
           }
         ]
       },
@@ -183,7 +183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget which will be shown if at least one toolbar item is hidden.\nKeep in mind to add this widget to the toolbar before you set it as\nindicator!"
+            "body": "<p>Widget which will be shown if at least one toolbar item is hidden.\n Keep in mind to add this widget to the toolbar before you set it as\n indicator!</p>"
           }
         ]
       },
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enables the overflow handling which automatically removes items."
+            "body": "<p>Enables the overflow handling which automatically removes items.</p>"
           }
         ]
       },
@@ -237,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if an item will be hidden by the {@link #overflowHandling}."
+            "body": "<p>Fired if an item will be hidden by the {@link #overflowHandling}.</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if an item will be shown by the {@link #overflowHandling}."
+            "body": "<p>Fired if an item will be shown by the {@link #overflowHandling}.</p>"
           }
         ]
       },
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOVERFLOW HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OVERFLOW HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -319,15 +319,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -354,7 +354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resize event handler."
+            "body": "<p>Resize event handler.</p>"
           }
         ],
         "@param": [
@@ -385,7 +385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for calculation the overflow based on the available width."
+            "body": "<p>Responsible for calculation the overflow based on the available width.</p>"
           }
         ],
         "@param": [
@@ -400,9 +400,9 @@
           },
           {
             "name": "@param",
-            "body": "requiredWidth {Integer?null} The required width for the widget\nif available.",
+            "body": "requiredWidth {Integer?null} The required width for the widget\n   if available.",
             "paramName": "requiredWidth",
-            "description": " The required width for the widget\nif available.",
+            "description": " The required width for the widget\n   if available.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
@@ -427,7 +427,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to show a toolbar item."
+            "body": "<p>Helper to show a toolbar item.</p>"
           }
         ],
         "@param": [
@@ -458,7 +458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to exclude a toolbar item."
+            "body": "<p>Helper to exclude a toolbar item.</p>"
           }
         ],
         "@param": [
@@ -489,15 +489,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for returning the next item to remove. In It checks the\npriorities added by {@link #setRemovePriority}. If all priorized widgets\nalready excluded, it takes the widget added at last."
+            "body": "<p>Responsible for returning the next item to remove. In It checks the\n priorities added by {@link #setRemovePriority}. If all priorized widgets\n already excluded, it takes the widget added at last.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget|null} The widget which should be removed next.\nIf null is returned, no widget is available to remove.",
+            "body": "{qx.ui.core.Widget|null} The widget which should be removed next.\n   If null is returned, no widget is available to remove.",
             "type": "qx.ui.core.Widget|null",
-            "description": " The widget which should be removed next.\nIf null is returned, no widget is available to remove."
+            "description": " The widget which should be removed next.\n   If null is returned, no widget is available to remove."
           }
         ]
       },
@@ -519,7 +519,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The removal of the toolbar items is priority based. You can change these\npriorities with this method. The higher a priority, the earlier it will\nbe excluded. Remember to use every priority only once! If you want\noverride an already set priority, use the override parameter.\nKeep in mind to only use already added items."
+            "body": "<p>The removal of the toolbar items is priority based. You can change these\n priorities with this method. The higher a priority, the earlier it will\n be excluded. Remember to use every priority only once! If you want\n override an already set priority, use the override parameter.\n Keep in mind to only use already added items.</p>"
           }
         ],
         "@param": [
@@ -564,7 +564,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -589,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -614,7 +614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMENU OPEN\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MENU OPEN\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -636,7 +636,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Indicate if a menu could be opened on hover or not."
+            "body": "<p>Indicate if a menu could be opened on hover or not.</p>"
           }
         ],
         "@internal": [
@@ -648,9 +648,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} <code>true</code> if a menu could be opened,\n<code>false</code> otherwise.",
+            "body": "value {Boolean} <code>true</code> if a menu could be opened,\n    <code>false</code> otherwise.",
             "paramName": "value",
-            "description": " <code>true</code> if a menu could be opened,\n<code>false</code> otherwise.",
+            "description": " <code>true</code> if a menu could be opened,\n    <code>false</code> otherwise.",
             "type": "Boolean"
           }
         ]
@@ -673,7 +673,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return if a menu could be opened on hover or not."
+            "body": "<p>Return if a menu could be opened on hover or not.</p>"
           }
         ],
         "@internal": [
@@ -685,9 +685,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if a menu could be opened,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if a menu could be opened,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if a menu could be opened,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if a menu could be opened,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -709,11 +709,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -738,7 +738,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -763,11 +763,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCHILD HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CHILD HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -811,7 +811,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -824,9 +824,9 @@
           },
           {
             "name": "@param",
-            "body": "index {Integer} Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "body": "index {Integer} Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "paramName": "index",
-            "description": " Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "description": " Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "type": "Integer"
           },
           {
@@ -862,7 +862,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -913,7 +913,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -926,9 +926,9 @@
           },
           {
             "name": "@param",
-            "body": "after {qx.ui.core.LayoutItem} widget, after which the new widget will\nbe inserted",
+            "body": "after {qx.ui.core.LayoutItem} widget, after which the new widget will\n   be inserted",
             "paramName": "after",
-            "description": " widget, after which the new widget will\nbe inserted",
+            "description": " widget, after which the new widget will\n   be inserted",
             "type": "qx.ui.core.LayoutItem"
           },
           {
@@ -964,7 +964,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -999,7 +999,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1042,7 +1042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1076,19 +1076,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILITIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILITIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Add a spacer to the toolbar. The spacer has a flex\nvalue of one and will stretch to the available space."
+            "body": "<p>Add a spacer to the toolbar. The spacer has a flex\n value of one and will stretch to the available space.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Spacer} The newly added spacer object. A reference\nto the spacer is needed to remove this spacer from the layout.",
+            "body": "{qx.ui.core.Spacer} The newly added spacer object. A reference\n   to the spacer is needed to remove this spacer from the layout.",
             "type": "qx.ui.core.Spacer",
-            "description": " The newly added spacer object. A reference\nto the spacer is needed to remove this spacer from the layout."
+            "description": " The newly added spacer object. A reference\n   to the spacer is needed to remove this spacer from the layout."
           }
         ]
       },
@@ -1110,7 +1110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a separator to the toolbar."
+            "body": "<p>Adds a separator to the toolbar.</p>"
           }
         ]
       },
@@ -1132,7 +1132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all nested buttons which contains a menu to show. This is mainly\nused for keyboard support."
+            "body": "<p>Returns all nested buttons which contains a menu to show. This is mainly\n used for keyboard support.</p>"
           }
         ],
         "@return": [
@@ -1159,15 +1159,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -1184,7 +1184,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -1209,7 +1209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1224,9 +1224,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       }
@@ -1243,7 +1243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -1278,7 +1278,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child widget at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1320,7 +1320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget before another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1362,7 +1362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget after another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1404,7 +1404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -1430,7 +1430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the widget at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -1464,7 +1464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -5320,13 +5320,14 @@
     "location": {
       "start": {
         "line": 660,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 665,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.menubar.MenuBar",

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 545,
+        "line": 553,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A vertical box layout.\n\nThe vertical box layout lays out widgets in a vertical column, from top\nto bottom.\n\n*Features*\n\n* Minimum and maximum dimensions\n* Prioritized growing/shrinking (flex)\n* Margins (with vertical collapsing)\n* Auto sizing (ignoring percent values)\n* Percent heights (not relevant for size hint)\n* Alignment (child property {@link qx.ui.core.LayoutItem#alignY} is ignored)\n* Vertical spacing (collapsed with margins)\n* Reversed children layout (from last to first)\n* Horizontal children stretching (respecting size hints)\n\n*Item Properties*\n\n<ul>\n<li><strong>flex</strong> <em>(Integer)</em>: The flexibility of a layout item determines how the container\ndistributes remaining empty space among its children. If items are made\nflexible, they can grow or shrink accordingly. Their relative flex values\ndetermine how the items are being resized, i.e. the larger the flex ratio\nof two items, the larger the resizing of the first item compared to the\nsecond.\n\nIf there is only one flex item in a layout container, its actual flex\nvalue is not relevant. To disallow items to become flexible, set the\nflex value to zero.\n</li>\n<li><strong>height</strong> <em>(String)</em>: Allows to define a percent\nheight for the item. The height in percent, if specified, is used instead\nof the height defined by the size hint. The minimum and maximum height still\ntakes care of the element's limits. It has no influence on the layout's\nsize hint. Percent values are mostly useful for widgets which are sized by\nthe outer hierarchy.\n</li>\n</ul>\n\n*Example*\n\nHere is a little example of how to use the vertical box layout.\n\n<pre class=\"javascript\">\nvar layout = new qx.ui.layout.VBox();\nlayout.setSpacing(4); // apply spacing\n\nvar container = new qx.ui.container.Composite(layout);\n\ncontainer.add(new qx.ui.core.Widget());\ncontainer.add(new qx.ui.core.Widget());\ncontainer.add(new qx.ui.core.Widget());\n</pre>\n\n*External Documentation*\n\nSee <a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/box.html'>extended documentation</a>\nand links to demos for this layout."
+          "body": "<p>A vertical box layout.\n The vertical box layout lays out widgets in a vertical column, from top\n to bottom.\n<em>Features</em></p>\n<ul>\n<li>Minimum and maximum dimensions</li>\n<li>Prioritized growing/shrinking (flex)</li>\n<li>Margins (with vertical collapsing)</li>\n<li>Auto sizing (ignoring percent values)</li>\n<li>Percent heights (not relevant for size hint)</li>\n<li>Alignment (child property {@link qx.ui.core.LayoutItem#alignY} is ignored)</li>\n<li>Vertical spacing (collapsed with margins)</li>\n<li>Reversed children layout (from last to first)</li>\n<li><p>Horizontal children stretching (respecting size hints)\n<em>Item Properties</em></p></li>\n</ul>\n<ul>\n <li><strong>flex</strong> <em>(Integer)</em>: The flexibility of a layout item determines how the container\n   distributes remaining empty space among its children. If items are made\n   flexible, they can grow or shrink accordingly. Their relative flex values\n   determine how the items are being resized, i.e. the larger the flex ratio\n   of two items, the larger the resizing of the first item compared to the\n   second.\n   If there is only one flex item in a layout container, its actual flex\n   value is not relevant. To disallow items to become flexible, set the\n   flex value to zero.\n </li>\n <li><strong>height</strong> <em>(String)</em>: Allows to define a percent\n   height for the item. The height in percent, if specified, is used instead\n   of the height defined by the size hint. The minimum and maximum height still\n   takes care of the element's limits. It has no influence on the layout's\n   size hint. Percent values are mostly useful for widgets which are sized by\n   the outer hierarchy.\n </li>\n </ul>\n<p><em>Example</em>\n Here is a little example of how to use the vertical box layout.\n </p>\n<pre class=\"javascript\">\n var layout = new qx.ui.layout.VBox();\n layout.setSpacing(4);\n var container = new qx.ui.container.Composite(layout);\n container.add(new qx.ui.core.Widget());\n container.add(new qx.ui.core.Widget());\n container.add(new qx.ui.core.Widget());\n </pre>\n<p><em>External Documentation</em>\n See <a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/box.html'>extended documentation</a>\n and links to demos for this layout.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 101,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 116,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -65,9 +65,9 @@
         },
         {
           "name": "@param",
-          "body": "alignY {String?\"top\"} Vertical alignment of the whole children\nblock {@link #alignY}.",
+          "body": "alignY {String?\"top\"} Vertical alignment of the whole children\n     block {@link #alignY}.",
           "paramName": "alignY",
-          "description": " Vertical alignment of the whole children\nblock {@link #alignY}.",
+          "description": " Vertical alignment of the whole children\n     block {@link #alignY}.",
           "optional": true,
           "defaultValue": "\"top\"",
           "type": "String"
@@ -102,7 +102,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Vertical alignment of the whole children block. The vertical\nalignment of the child is completely ignored in VBoxes (\n{@link qx.ui.core.LayoutItem#alignY})."
+            "body": "<p>Vertical alignment of the whole children block. The vertical\n alignment of the child is completely ignored in VBoxes (\n {@link qx.ui.core.LayoutItem#alignY}).</p>"
           }
         ]
       },
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Horizontal alignment of each child. Can be overridden through\n{@link qx.ui.core.LayoutItem#alignX}."
+            "body": "<p>Horizontal alignment of each child. Can be overridden through\n {@link qx.ui.core.LayoutItem#alignX}.</p>"
           }
         ]
       },
@@ -162,7 +162,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Vertical spacing between two children"
+            "body": "<p>Vertical spacing between two children</p>"
           }
         ]
       },
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Separator lines to use between the objects"
+            "body": "<p>Separator lines to use between the objects</p>"
           }
         ]
       },
@@ -214,7 +214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the actual children list should be laid out in reversed order."
+            "body": "<p>Whether the actual children list should be laid out in reversed order.</p>"
           }
         ]
       },
@@ -314,11 +314,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -343,7 +343,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rebuilds caches for flex and percent layout properties"
+            "body": "<p>Rebuilds caches for flex and percent layout properties</p>"
           }
         ]
       },
@@ -365,11 +365,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -410,7 +410,7 @@
           "column": 4
         },
         "end": {
-          "line": 460,
+          "line": 468,
           "column": 5
         }
       },
@@ -418,7 +418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -438,9 +438,9 @@
           },
           {
             "name": "@param",
-            "body": "padding {Map} Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "body": "padding {Map} Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "paramName": "padding",
-            "description": " Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "description": " Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "type": "Map"
           }
         ]
@@ -455,11 +455,11 @@
     "_computeSizeHint": {
       "location": {
         "start": {
-          "line": 464,
+          "line": 472,
           "column": 4
         },
         "end": {
-          "line": 531,
+          "line": 539,
           "column": 5
         }
       },
@@ -467,7 +467,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -964,11 +964,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 542,
-        "column": 2
+        "line": 550,
+        "column": 13
       },
       "end": {
-        "line": 544,
+        "line": 552,
         "column": 3
       }
     },
@@ -976,7 +976,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRichard Sternagel (rsternagel)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Richard Sternagel (rsternagel)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A wrapper around Sinon.JS's FakeXMLHttpRequest and FakeServer features that\nallows quick and simple configuration of mock HTTP backends for testing and\ndevelopment.\nAutomatically creates URL filtering rules to ensure that only configured\nrequests are faked while others will be processed normally by the browser's\nXHR implementation."
+          "body": "<p>A wrapper around Sinon.JS's FakeXMLHttpRequest and FakeServer features that\n allows quick and simple configuration of mock HTTP backends for testing and\n development.\n Automatically creates URL filtering rules to ensure that only configured\n requests are faked while others will be processed normally by the browser's\n XHR implementation.</p>"
         }
       ],
       "@group": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures a set of fake HTTP responses. Each response is defined as a map\nthat must provide the following keys:\n<ul>\n<li><code>method</code> HTTP method to respond to, e.g. <code>PUT</code></li>\n<li><code>url</code> URL used to match requests to fake responses. Can be\na RegExp or a String. REST-style parameter placeholders in curly braces\nwill be replaced with wildcards, e.g. the string \"/resource/{resourceId}\"\nis interpreted as the RegExp <code>/\\/resource\\/\\{.*?\\}/</code>\n<li><code>response</code> This can be either:\n<ul>\n<li>a string: This will be the response body, status code will be 200</li>\n<li>an array containing the status code, a map of response headers and\nthe response text, e.g. <code>[200, { \"Content-Type\": \"text/html\" }, \"OK\"]</code>\n</li>\n<li>a function: This will be called with a FakeXMLHttpRequest object as\nthe only argument. Its <code>respond</code> method must be called to send a response.\nSee <a href=\"http://sinonjs.org/docs/#respond\">Sinon.JS: Respond</a> for details.\n</li>\n</ul>\n</li>\n</ul>"
+            "body": "<p>Configures a set of fake HTTP responses. Each response is defined as a map\n that must provide the following keys:\n </p>\n<ul>\n   <li><code>method</code> HTTP method to respond to, e.g. <code>PUT</code></li>\n   <li><code>url</code> URL used to match requests to fake responses. Can be\n   a RegExp or a String. REST-style parameter placeholders in curly braces\n   will be replaced with wildcards, e.g. the string \"/resource/{resourceId}\"\n   is interpreted as the RegExp <code>/\\/resource\\/\\{.*?\\}/</code>\n   <li><code>response</code> This can be either:\n     <ul>\n       <li>a string: This will be the response body, status code will be 200</li>\n       <li>an array containing the status code, a map of response headers and\n         the response text, e.g. <code>[200, { \"Content-Type\": \"text/html\" }, \"OK\"]</code>\n       </li>\n       <li>a function: This will be called with a FakeXMLHttpRequest object as\n       the only argument. Its <code>respond</code> method must be called to send a response.\n       See <a href=\"http://sinonjs.org/docs/#respond\">Sinon.JS: Respond</a> for details.\n       </li>\n     </ul>\n   </li>\n </ul>"
           }
         ],
         "@attachStatic": [
@@ -90,7 +90,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a response that was configured with {@link #configure}"
+            "body": "<p>Removes a response that was configured with {@link #configure}</p>"
           }
         ],
         "@param": [
@@ -137,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a URL filtering function to decide whether a request should be handled\nby the FakeServer or passed to the regular XMLHttp implementation.\nSee <a href=\"http://sinonjs.org/docs/#filtered-requests\">Sinon.JS: Filtered Requests</a>\nfor details."
+            "body": "<p>Adds a URL filtering function to decide whether a request should be handled\n by the FakeServer or passed to the regular XMLHttp implementation.\n See <a href=\"http://sinonjs.org/docs/#filtered-requests\">Sinon.JS: Filtered Requests</a>\n for details.</p>"
           }
         ],
         "@attachStatic": [
@@ -149,9 +149,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "filter {Function} URL filter function. Will be called with the\nfollowing arguments: <code>method</code>, <code>url</code>, <code>async</code>,\n<code>username</code>, <code>password</code>. Must return <code>true</code>\nif the request should not be faked.",
+            "body": "filter {Function} URL filter function. Will be called with the\n following arguments: <code>method</code>, <code>url</code>, <code>async</code>,\n <code>username</code>, <code>password</code>. Must return <code>true</code>\n if the request should not be faked.",
             "paramName": "filter",
-            "description": " URL filter function. Will be called with the\nfollowing arguments: <code>method</code>, <code>url</code>, <code>async</code>,\n<code>username</code>, <code>password</code>. Must return <code>true</code>\nif the request should not be faked.",
+            "description": " URL filter function. Will be called with the\n following arguments: <code>method</code>, <code>url</code>, <code>async</code>,\n <code>username</code>, <code>password</code>. Must return <code>true</code>\n if the request should not be faked.",
             "type": "Function"
           }
         ]
@@ -174,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a filter that was added with {@link #addFilter}"
+            "body": "<p>Remove a filter that was added with {@link #addFilter}</p>"
           }
         ],
         "@param": [
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines a fake XHR response to a matching request."
+            "body": "<p>Defines a fake XHR response to a matching request.</p>"
           }
         ],
         "@attachStatic": [
@@ -237,9 +237,9 @@
           },
           {
             "name": "@param",
-            "body": "response {Function|Array|String} Response to send. See\n<a href=\"http://sinonjs.org/docs/#fakeServer\">Sinon.JS: Fake Server</a> for details.",
+            "body": "response {Function|Array|String} Response to send. See\n <a href=\"http://sinonjs.org/docs/#fakeServer\">Sinon.JS: Fake Server</a> for details.",
             "paramName": "response",
-            "description": " Response to send. See\n<a href=\"http://sinonjs.org/docs/#fakeServer\">Sinon.JS: Fake Server</a> for details.",
+            "description": " Response to send. See\n <a href=\"http://sinonjs.org/docs/#fakeServer\">Sinon.JS: Fake Server</a> for details.",
             "type": [
               "Function",
               "Array",
@@ -266,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and configures a FakeServer if necessary and returns it."
+            "body": "<p>Creates and configures a FakeServer if necessary and returns it.</p>"
           }
         ],
         "@attachStatic": [
@@ -302,7 +302,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the FakeServer and removes all configured responses and/or filters."
+            "body": "<p>Stops the FakeServer and removes all configured responses and/or filters.</p>"
           }
         ],
         "@attachStatic": [
@@ -320,13 +320,14 @@
     "location": {
       "start": {
         "line": 136,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 150,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

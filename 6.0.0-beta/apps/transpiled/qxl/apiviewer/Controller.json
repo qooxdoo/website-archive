@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 29,
+        "line": 30,
         "column": 0
       },
       "end": {
-        "line": 376,
+        "line": 374,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2018 Zenesis Limited, http://www.zenesis.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJohn Spackman (johnspackman)\nTil Schneider (til132)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2018 Zenesis Limited, http://www.zenesis.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n John Spackman (johnspackman)\n Til Schneider (til132)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Implements the dynamic behavior of the API viewer. The GUI is defined in\n{@link Viewer}."
+          "body": "<p>Implements the dynamic behavior of the API viewer. The GUI is defined in\n {@link Viewer}.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 47,
-        "column": 2
+        "line": 45,
+        "column": 14
       },
       "end": {
-        "line": 80,
+        "line": 78,
         "column": 3
       }
     },
@@ -46,11 +46,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n</code></pre>\n<p>CONSTRUCTOR\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong></p>"
         },
         {
           "name": "@description",
-          "body": ""
+          "body": "<p>@param widgetRegistry\n          {Viewer} the GUI</p>"
         },
         {
           "name": "@description",
@@ -62,15 +62,6 @@
           "name": "@ignore",
           "body": "qx.$$appRoot"
         }
-      ],
-      "@param": [
-        {
-          "name": "@param",
-          "body": "widgetRegistry\n{Viewer} the GUI",
-          "paramName": "widgetRegistry",
-          "description": " the GUI",
-          "type": "qxl.apiviewer.Viewer"
-        }
       ]
     }
   },
@@ -78,11 +69,11 @@
     "__openInNewTab": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 83,
           "column": 26
         }
       },
@@ -92,11 +83,11 @@
     "$$logCategory": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 86,
           "column": 33
         }
       },
@@ -104,7 +95,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -114,11 +105,11 @@
     "load": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 121,
           "column": 5
         }
       },
@@ -126,16 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads the API doc tree from the enviroment\ndoc tree."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "apidata {Object} all the apidata from the enviroment.",
-            "paramName": "apidata",
-            "description": " all the apidata from the enviroment.",
-            "type": "Object"
+            "body": "<p>Loads the API doc tree from the enviroment\n doc tree.</p>\n<p>@param apidata {Object} all the apidata from the enviroment.</p>"
           }
         ]
       },
@@ -145,11 +127,11 @@
     "__bindTabViewController": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 154,
+          "line": 152,
           "column": 5
         }
       },
@@ -157,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "binds the events of the TabView controller"
+            "body": "<p>binds the events of the TabView controller</p>"
           }
         ]
       },
@@ -167,11 +149,11 @@
     "__bindTree": {
       "location": {
         "start": {
-          "line": 160,
+          "line": 158,
           "column": 4
         },
         "end": {
-          "line": 172,
+          "line": 170,
           "column": 5
         }
       },
@@ -179,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "binds the selection event of the package tree."
+            "body": "<p>binds the selection event of the package tree.</p>"
           }
         ]
       },
@@ -189,11 +171,11 @@
     "__bindToolbar": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 203,
           "column": 5
         }
       },
@@ -201,7 +183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "binds the actions of the toolbar buttons."
+            "body": "<p>binds the actions of the toolbar buttons.</p>"
           }
         ]
       },
@@ -211,11 +193,11 @@
     "__syncMenuButton": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 235,
           "column": 5
         }
       },
@@ -223,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Keeps the icon of the menubutton in sync with the menu checkboxes of\ninherited and mixin includes."
+            "body": "<p>Keeps the icon of the menubutton in sync with the menu checkboxes of\n inherited and mixin includes.</p>"
           }
         ]
       },
@@ -233,11 +215,11 @@
     "__bindHistory": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 250,
+          "line": 248,
           "column": 5
         }
       },
@@ -245,7 +227,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "bind history events"
+            "body": "<p>bind history events</p>"
           }
         ]
       },
@@ -255,11 +237,11 @@
     "_updateHistory": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 262,
           "column": 5
         }
       },
@@ -267,16 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Push the class to the browser history"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "className\n{String} name of the class",
-            "paramName": "className",
-            "description": " name of the class",
-            "type": "String"
+            "body": "<p>Push the class to the browser history</p>\n<p>@param className\n          {String} name of the class</p>"
           }
         ]
       },
@@ -286,11 +259,11 @@
     "_selectClass": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 286,
+          "line": 284,
           "column": 5
         }
       },
@@ -298,16 +271,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Display information about a class"
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "classNode\n{qxl.apiviewer.dao.Class} class node to display",
-            "paramName": "classNode",
-            "description": " class node to display",
-            "type": "qxl.apiviewer.dao.Class"
+            "body": "<p>Display information about a class</p>\n<p>@param classNode\n          {qxl.apiviewer.dao.Class} class node to display</p>"
           }
         ]
       },
@@ -317,11 +281,11 @@
     "__selectItem": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 296,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 349,
           "column": 5
         }
       },
@@ -329,22 +293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects an item (class, property, method or constant)."
-          }
-        ],
-        "@param": [
-          {
-            "name": "@param",
-            "body": "fullItemName\n{String} the full name of the item to select. (e.g.\n\"qx.mypackage.MyClass\" or \"qx.mypackage.MyClass#myProperty\")",
-            "paramName": "fullItemName",
-            "description": " the full name of the item to select. (e.g.\n\"qx.mypackage.MyClass\" or \"qx.mypackage.MyClass#myProperty\")",
-            "type": "String"
-          }
-        ],
-        "@lint": [
-          {
-            "name": "@lint",
-            "body": "ignoreDeprecated(alert)"
+            "body": "<p>Selects an item (class, property, method or constant).</p>\n<p>@param fullItemName\n          {String} the full name of the item to select. (e.g.\n          \"qx.mypackage.MyClass\" or \"qx.mypackage.MyClass#myProperty\")</p>\n<p>@lint ignoreDeprecated(alert)</p>"
           }
         ]
       },
@@ -354,11 +303,11 @@
     "__encodeState": {
       "location": {
         "start": {
-          "line": 354,
+          "line": 352,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 354,
           "column": 5
         }
       },
@@ -368,11 +317,11 @@
     "__decodeState": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 356,
           "column": 4
         },
         "end": {
-          "line": 360,
+          "line": 358,
           "column": 5
         }
       },
@@ -503,11 +452,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 371,
-        "column": 2
+        "line": 369,
+        "column": 13
       },
       "end": {
-        "line": 375,
+        "line": 373,
         "column": 3
       }
     },
@@ -515,7 +464,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n</code></pre>\n<p>DESTRUCTOR\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong></p>"
         }
       ]
     }

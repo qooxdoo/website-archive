@@ -21,19 +21,19 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 by Christian Boulanger\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Boulanger (cboulanger)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 by Christian Boulanger\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Boulanger (cboulanger)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The cell will use, if given, the\nreplaceMap property and/or the replaceFunction to look up labels for a\nspecific cell value. if the replaceMap, which does not need to be used but\ntakes precedence if given, has no entry for a specific value, you can implement\na fallback lookup in the replacementFunction, or use the replacementFunction exclusively.\n\nIn editable cells, you need to make sure that the method returning the data\nto the data storage (for example, a database backend) translates the replaced\ncell value (the label) back into the corresponding value. Thus, both map and\nfunction MUST also take care of the reverse translation of labels into\nvalues. Example: if you have a field that should display \"Active\" on a \"1\"\nvalue and \"Inactive\" on a \"0\" value, you must use the following map:\n\n<pre class='javascript'>\n{\n0 : \"Inactive\",\n1 : \"Active\",\n\"Inactive\" : 0,\n\"Active\" : 1\n}\n</pre>\n\nYou can use the addReversedReplaceMap() method to do this for you:\n<pre class='javascript'>\nvar propertyCellRenderer = new qx.ui.table.cellrenderer.Replace;\npropertyCellRenderer.setReplaceMap({\n1 : \"Active\",\n0 : \"Inactive\",\n2  : \"Waiting\",\n'admin' : \"System Administrator\",\n'manager' : \"User Manager\",\n'user' : \"Website User\"\n});\npropertyCellRenderer.addReversedReplaceMap();\n</pre>"
+          "body": "<p>The cell will use, if given, the\n replaceMap property and/or the replaceFunction to look up labels for a\n specific cell value. if the replaceMap, which does not need to be used but\n takes precedence if given, has no entry for a specific value, you can implement\n a fallback lookup in the replacementFunction, or use the replacementFunction exclusively.\n In editable cells, you need to make sure that the method returning the data\n to the data storage (for example, a database backend) translates the replaced\n cell value (the label) back into the corresponding value. Thus, both map and\n function MUST also take care of the reverse translation of labels into\n values. Example: if you have a field that should display \"Active\" on a \"1\"\n value and \"Inactive\" on a \"0\" value, you must use the following map:\n </p>\n<pre class='javascript'>\n {\n   0 : \"Inactive\",\n   1 : \"Active\",\n   \"Inactive\" : 0,\n   \"Active\" : 1\n }\n </pre>\n<p>You can use the addReversedReplaceMap() method to do this for you:\n </p>\n<pre class='javascript'>\n var propertyCellRenderer = new qx.ui.table.cellrenderer.Replace;\n propertyCellRenderer.setReplaceMap({\n    1 : \"Active\",\n   0 : \"Inactive\",\n   2  : \"Waiting\",\n   'admin' : \"System Administrator\",\n   'manager' : \"User Manager\",\n   'user' : \"Website User\"\n });\n propertyCellRenderer.addReversedReplaceMap();\n </pre>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+          "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
           "paramName": "cellInfo",
-          "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+          "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
           "type": "Map"
         }
       ],
@@ -64,7 +64,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "a hashmap which is used to replace values by labels"
+            "body": "<p>a hashmap which is used to replace values by labels</p>"
           }
         ]
       },
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "function that provides the label for a specific value"
+            "body": "<p>function that provides the label for a specific value</p>"
           }
         ]
       },
@@ -116,15 +116,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "body": "cellInfo {Map} The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "paramName": "cellInfo",
-            "description": " The information about the cell.\nSee {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
+            "description": " The information about the cell.\n          See {@link qx.ui.table.cellrenderer.Abstract#createDataCellHtml}.",
             "type": "Map"
           }
         ],
@@ -160,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "adds a reversed replaceMap to itself to translate labels back to the original values"
+            "body": "<p>adds a reversed replaceMap to itself to translate labels back to the original values</p>"
           }
         ],
         "@return": [

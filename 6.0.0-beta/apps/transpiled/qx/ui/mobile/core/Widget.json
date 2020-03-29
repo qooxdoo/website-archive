@@ -11,11 +11,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 24,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 1676,
+        "line": 1677,
         "column": 3
       }
     },
@@ -23,17 +23,23 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is the base class for all mobile widgets."
+          "body": "<p>This is the base class for all mobile widgets.</p>"
         }
       ],
       "@use": [
         {
           "name": "@use",
           "body": "qx.ui.mobile.core.EventHandler"
+        }
+      ],
+      "@require": [
+        {
+          "name": "@require",
+          "body": "qx.bom.Lifecycle"
         }
       ]
     }
@@ -42,11 +48,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 36,
-        "column": 2
+        "line": 37,
+        "column": 14
       },
       "end": {
-        "line": 51,
+        "line": 52,
         "column": 3
       }
     },
@@ -54,7 +60,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -63,11 +69,11 @@
     "mousemove": {
       "location": {
         "start": {
-          "line": 65,
+          "line": 66,
           "column": 4
         },
         "end": {
-          "line": 65,
+          "line": 66,
           "column": 37
         }
       },
@@ -75,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor moves over the widget."
+            "body": "<p>Fired if the mouse cursor moves over the widget.</p>"
           }
         ]
       },
@@ -85,11 +91,11 @@
     "mouseover": {
       "location": {
         "start": {
-          "line": 68,
+          "line": 69,
           "column": 4
         },
         "end": {
-          "line": 68,
+          "line": 69,
           "column": 37
         }
       },
@@ -97,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor enters the widget."
+            "body": "<p>Fired if the mouse cursor enters the widget.</p>"
           }
         ]
       },
@@ -107,11 +113,11 @@
     "mouseout": {
       "location": {
         "start": {
-          "line": 71,
+          "line": 72,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 72,
           "column": 36
         }
       },
@@ -119,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse cursor leaves widget."
+            "body": "<p>Fired if the mouse cursor leaves widget.</p>"
           }
         ]
       },
@@ -129,11 +135,11 @@
     "mousedown": {
       "location": {
         "start": {
-          "line": 74,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 74,
+          "line": 75,
           "column": 37
         }
       },
@@ -141,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mouse button is pressed on the widget."
+            "body": "<p>Mouse button is pressed on the widget.</p>"
           }
         ]
       },
@@ -151,11 +157,11 @@
     "mouseup": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 78,
           "column": 4
         },
         "end": {
-          "line": 77,
+          "line": 78,
           "column": 35
         }
       },
@@ -163,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mouse button is released on the widget."
+            "body": "<p>Mouse button is released on the widget.</p>"
           }
         ]
       },
@@ -173,11 +179,11 @@
     "click": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 82,
           "column": 33
         }
       },
@@ -185,7 +191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is clicked using left or middle button.\n{@link qx.event.type.Mouse#getButton} for more details."
+            "body": "<p>Widget is clicked using left or middle button.\n        {@link qx.event.type.Mouse#getButton} for more details.</p>"
           }
         ]
       },
@@ -195,11 +201,11 @@
     "dblclick": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 4
         },
         "end": {
-          "line": 85,
+          "line": 86,
           "column": 36
         }
       },
@@ -207,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is double clicked using left or middle button.\n{@link qx.event.type.Mouse#getButton} for more details."
+            "body": "<p>Widget is double clicked using left or middle button.\n        {@link qx.event.type.Mouse#getButton} for more details.</p>"
           }
         ]
       },
@@ -217,11 +223,11 @@
     "contextmenu": {
       "location": {
         "start": {
-          "line": 88,
+          "line": 89,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 89,
           "column": 39
         }
       },
@@ -229,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget is clicked using the right mouse button."
+            "body": "<p>Widget is clicked using the right mouse button.</p>"
           }
         ]
       },
@@ -239,11 +245,11 @@
     "beforeContextmenuOpen": {
       "location": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 92,
           "column": 49
         }
       },
@@ -251,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired before the context menu is opened."
+            "body": "<p>Fired before the context menu is opened.</p>"
           }
         ]
       },
@@ -261,11 +267,11 @@
     "mousewheel": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 95,
           "column": 43
         }
       },
@@ -273,7 +279,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the mouse wheel is used over the widget."
+            "body": "<p>Fired if the mouse wheel is used over the widget.</p>"
           }
         ]
       },
@@ -283,11 +289,11 @@
     "touchstart": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 98,
           "column": 38
         }
       },
@@ -295,7 +301,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen is started."
+            "body": "<p>Fired if a touch at the screen is started.</p>"
           }
         ]
       },
@@ -305,11 +311,11 @@
     "touchend": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 101,
           "column": 36
         }
       },
@@ -317,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen has ended."
+            "body": "<p>Fired if a touch at the screen has ended.</p>"
           }
         ]
       },
@@ -327,11 +333,11 @@
     "touchmove": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 37
         }
       },
@@ -339,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired during a touch at the screen."
+            "body": "<p>Fired during a touch at the screen.</p>"
           }
         ]
       },
@@ -349,11 +355,11 @@
     "touchcancel": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 106,
+          "line": 107,
           "column": 39
         }
       },
@@ -361,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a touch at the screen is canceled."
+            "body": "<p>Fired if a touch at the screen is canceled.</p>"
           }
         ]
       },
@@ -371,11 +377,11 @@
     "tap": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 110,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 110,
           "column": 29
         }
       },
@@ -383,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a finger taps on the screen."
+            "body": "<p>Fired when a finger taps on the screen.</p>"
           }
         ]
       },
@@ -393,11 +399,11 @@
     "longtap": {
       "location": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 33
         }
       },
@@ -405,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a finger holds on the screen."
+            "body": "<p>Fired when a finger holds on the screen.</p>"
           }
         ]
       },
@@ -415,11 +421,11 @@
     "swipe": {
       "location": {
         "start": {
-          "line": 115,
+          "line": 116,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 116,
           "column": 33
         }
       },
@@ -427,7 +433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a finger swipes over the screen."
+            "body": "<p>Fired when a finger swipes over the screen.</p>"
           }
         ]
       },
@@ -437,11 +443,11 @@
     "rotate": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 118,
+          "line": 119,
           "column": 35
         }
       },
@@ -449,7 +455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when two pointers performing a rotate gesture on the screen."
+            "body": "<p>Fired when two pointers performing a rotate gesture on the screen.</p>"
           }
         ]
       },
@@ -459,11 +465,11 @@
     "pinch": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 122,
           "column": 33
         }
       },
@@ -471,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when two pointers performing a pinch in/out gesture on the screen."
+            "body": "<p>Fired when two pointers performing a pinch in/out gesture on the screen.</p>"
           }
         ]
       },
@@ -481,11 +487,11 @@
     "track": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 125,
           "column": 33
         }
       },
@@ -493,7 +499,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an active pointer moves on the screen (after pointerdown till pointerup)."
+            "body": "<p>Fired when an active pointer moves on the screen (after pointerdown till pointerup).</p>"
           }
         ]
       },
@@ -503,11 +509,11 @@
     "keyup": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 130,
           "column": 39
         }
       },
@@ -515,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event if fired if a keyboard key is released."
+            "body": "<p>This event if fired if a keyboard key is released.</p>"
           }
         ]
       },
@@ -525,11 +531,11 @@
     "keydown": {
       "location": {
         "start": {
-          "line": 135,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 135,
+          "line": 136,
           "column": 41
         }
       },
@@ -537,7 +543,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event if fired if a keyboard key is pressed down. This event is\nonly fired once if the user keeps the key pressed for a while."
+            "body": "<p>This event if fired if a keyboard key is pressed down. This event is\n only fired once if the user keeps the key pressed for a while.</p>"
           }
         ]
       },
@@ -547,11 +553,11 @@
     "keypress": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 142,
+          "line": 143,
           "column": 42
         }
       },
@@ -559,7 +565,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired any time a key is pressed. It will be repeated if\nthe user keeps the key pressed. The pressed key can be determined using\n{@link qx.event.type.KeySequence#getKeyIdentifier}."
+            "body": "<p>This event is fired any time a key is pressed. It will be repeated if\n the user keeps the key pressed. The pressed key can be determined using\n {@link qx.event.type.KeySequence#getKeyIdentifier}.</p>"
           }
         ]
       },
@@ -569,11 +575,11 @@
     "keyinput": {
       "location": {
         "start": {
-          "line": 153,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 153,
+          "line": 154,
           "column": 39
         }
       },
@@ -581,7 +587,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired if the pressed key or keys result in a printable\ncharacter. Since the character is not necessarily associated with a\nsingle physical key press, the event does not have a key identifier\ngetter. This event gets repeated if the user keeps pressing the key(s).\n\nThe unicode code of the pressed key can be read using\n{@link qx.event.type.KeyInput#getCharCode}."
+            "body": "<p>This event is fired if the pressed key or keys result in a printable\n character. Since the character is not necessarily associated with a\n single physical key press, the event does not have a key identifier\n getter. This event gets repeated if the user keeps pressing the key(s).\n The unicode code of the pressed key can be read using\n {@link qx.event.type.KeyInput#getCharCode}.</p>"
           }
         ]
       },
@@ -591,11 +597,11 @@
     "domupdated": {
       "location": {
         "start": {
-          "line": 161,
+          "line": 162,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 162,
           "column": 38
         }
       },
@@ -603,7 +609,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after a massive DOM manipulation, e.g. when DOM elements were\nadded or styles were changed. Listen to this event, if you need to\nrecalculate a layout or have to update your view."
+            "body": "<p>Fired after a massive DOM manipulation, e.g. when DOM elements were\n added or styles were changed. Listen to this event, if you need to\n recalculate a layout or have to update your view.</p>"
           }
         ]
       },
@@ -613,11 +619,11 @@
     "appear": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 167,
           "column": 4
         },
         "end": {
-          "line": 166,
+          "line": 167,
           "column": 34
         }
       },
@@ -625,7 +631,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the widget appears on the screen."
+            "body": "<p>Fired after the widget appears on the screen.</p>"
           }
         ]
       },
@@ -635,11 +641,11 @@
     "disappear": {
       "location": {
         "start": {
-          "line": 171,
+          "line": 172,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 172,
           "column": 37
         }
       },
@@ -647,7 +653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the widget disappears from the screen."
+            "body": "<p>Fired after the widget disappears from the screen.</p>"
           }
         ]
       },
@@ -657,11 +663,11 @@
     "focus": {
       "location": {
         "start": {
-          "line": 177,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 177,
+          "line": 178,
           "column": 33
         }
       },
@@ -669,7 +675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired when the widget gets focused."
+            "body": "<p>The event is fired when the widget gets focused.</p>"
           }
         ]
       },
@@ -679,11 +685,11 @@
     "blur": {
       "location": {
         "start": {
-          "line": 182,
+          "line": 183,
           "column": 4
         },
         "end": {
-          "line": 182,
+          "line": 183,
           "column": 32
         }
       },
@@ -691,7 +697,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired when the widget gets blurred."
+            "body": "<p>The event is fired when the widget gets blurred.</p>"
           }
         ]
       },
@@ -701,11 +707,11 @@
     "focusin": {
       "location": {
         "start": {
-          "line": 187,
+          "line": 188,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 188,
           "column": 35
         }
       },
@@ -713,7 +719,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget itself or any child of the widget receive the focus."
+            "body": "<p>When the widget itself or any child of the widget receive the focus.</p>"
           }
         ]
       },
@@ -723,11 +729,11 @@
     "focusout": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 193,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 193,
           "column": 36
         }
       },
@@ -735,7 +741,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget itself or any child of the widget lost the focus."
+            "body": "<p>When the widget itself or any child of the widget lost the focus.</p>"
           }
         ]
       },
@@ -745,11 +751,11 @@
     "activate": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 198,
           "column": 36
         }
       },
@@ -757,7 +763,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget gets active (receives keyboard events etc.)"
+            "body": "<p>When the widget gets active (receives keyboard events etc.)</p>"
           }
         ]
       },
@@ -767,11 +773,11 @@
     "deactivate": {
       "location": {
         "start": {
-          "line": 202,
+          "line": 203,
           "column": 4
         },
         "end": {
-          "line": 202,
+          "line": 203,
           "column": 38
         }
       },
@@ -779,7 +785,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "When the widget gets inactive"
+            "body": "<p>When the widget gets inactive</p>"
           }
         ]
       },
@@ -789,11 +795,11 @@
     "roll": {
       "location": {
         "start": {
-          "line": 207,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 207,
+          "line": 208,
           "column": 31
         }
       },
@@ -801,7 +807,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when an active pointer moves on the screen or the mouse wheel is used."
+            "body": "<p>Fired when an active pointer moves on the screen or the mouse wheel is used.</p>"
           }
         ]
       },
@@ -813,11 +819,11 @@
     "defaultCssClass": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 234,
           "column": 5
         }
       },
@@ -825,7 +831,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default CSS class used for this widget. The default CSS class\nshould contain the common appearance of the widget.\nIt is set to the container element of the widget. Use {@link #addCssClass}\nto enhance the default appearance of the widget."
+            "body": "<p>The default CSS class used for this widget. The default CSS class\n should contain the common appearance of the widget.\n It is set to the container element of the widget. Use {@link #addCssClass}\n to enhance the default appearance of the widget.</p>"
           }
         ]
       },
@@ -839,11 +845,11 @@
     "enabled": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 247,
           "column": 5
         }
       },
@@ -851,7 +857,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether this widget is enabled or not"
+            "body": "<p>Whether this widget is enabled or not</p>"
           }
         ]
       },
@@ -868,11 +874,11 @@
     "name": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 260,
           "column": 5
         }
       },
@@ -880,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name attribute of the container element. Useful when you want to find\nan element by its name attribute."
+            "body": "<p>The name attribute of the container element. Useful when you want to find\n an element by its name attribute.</p>"
           }
         ]
       },
@@ -894,11 +900,11 @@
     "anonymous": {
       "location": {
         "start": {
-          "line": 267,
+          "line": 268,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 274,
           "column": 5
         }
       },
@@ -906,7 +912,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget should be the target of an event. Set this property\nto <code>false</code> when the widget is a child of another widget and\nshouldn't react on events."
+            "body": "<p>Whether the widget should be the target of an event. Set this property\n to <code>false</code> when the widget is a child of another widget and\n shouldn't react on events.</p>"
           }
         ]
       },
@@ -920,11 +926,11 @@
     "id": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 281,
           "column": 4
         },
         "end": {
-          "line": 288,
+          "line": 289,
           "column": 5
         }
       },
@@ -932,7 +938,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The ID of the widget. When the ID is set to <code>null</code> an auto\nid will be generated."
+            "body": "<p>The ID of the widget. When the ID is set to <code>null</code> an auto\n id will be generated.</p>"
           }
         ]
       },
@@ -947,11 +953,11 @@
     "visibility": {
       "location": {
         "start": {
-          "line": 300,
+          "line": 301,
           "column": 4
         },
         "end": {
-          "line": 306,
+          "line": 307,
           "column": 5
         }
       },
@@ -959,7 +965,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls the visibility. Valid values are:\n\n<ul>\n<li><b>visible</b>: Render the widget</li>\n<li><b>hidden</b>: Hide the widget. The space will be still available.</li>\n<li><b>excluded</b>: Hide the widget. The space will be released.</li>\n</ul>"
+            "body": "<p>Controls the visibility. Valid values are:\n </p>\n<ul>\n   <li><b>visible</b>: Render the widget</li>\n   <li><b>hidden</b>: Hide the widget. The space will be still available.</li>\n   <li><b>excluded</b>: Hide the widget. The space will be released.</li>\n </ul>"
           }
         ]
       },
@@ -978,11 +984,11 @@
     "activatable": {
       "location": {
         "start": {
-          "line": 314,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 320,
           "column": 5
         }
       },
@@ -990,7 +996,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget can be activated or not. When the widget is activated\na css class <code>active</code> is automatically added to the widget, which\ncan indicate the activation status."
+            "body": "<p>Whether the widget can be activated or not. When the widget is activated\n a css class <code>active</code> is automatically added to the widget, which\n can indicate the activation status.</p>"
           }
         ]
       },
@@ -1004,11 +1010,11 @@
     "rotation": {
       "location": {
         "start": {
-          "line": 325,
+          "line": 326,
           "column": 4
         },
         "end": {
-          "line": 331,
+          "line": 332,
           "column": 5
         }
       },
@@ -1016,7 +1022,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rotates the widget. Negative and positive values are allowed."
+            "body": "<p>Rotates the widget. Negative and positive values are allowed.</p>"
           }
         ]
       },
@@ -1030,11 +1036,11 @@
     "transformUnit": {
       "location": {
         "start": {
-          "line": 338,
+          "line": 339,
           "column": 4
         },
         "end": {
-          "line": 344,
+          "line": 345,
           "column": 5
         }
       },
@@ -1042,7 +1048,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This property controls whether the transformation uses the length unit <code>px<code> or <code>rem</code>.\nThis feature is important for creating a resolution independent transformation."
+            "body": "<p>This property controls whether the transformation uses the length unit <code>px<code> or <code>rem</code>.\n This feature is important for creating a resolution independent transformation.</p>"
           }
         ]
       },
@@ -1061,11 +1067,11 @@
     "scaleX": {
       "location": {
         "start": {
-          "line": 350,
+          "line": 351,
           "column": 4
         },
         "end": {
-          "line": 356,
+          "line": 357,
           "column": 5
         }
       },
@@ -1073,7 +1079,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scales the widget in X direction (width)."
+            "body": "<p>Scales the widget in X direction (width).</p>"
           }
         ]
       },
@@ -1087,11 +1093,11 @@
     "scaleY": {
       "location": {
         "start": {
-          "line": 362,
+          "line": 363,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 369,
           "column": 5
         }
       },
@@ -1099,7 +1105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scales the widget in Y direction (height)."
+            "body": "<p>Scales the widget in Y direction (height).</p>"
           }
         ]
       },
@@ -1113,11 +1119,11 @@
     "translateX": {
       "location": {
         "start": {
-          "line": 374,
+          "line": 375,
           "column": 4
         },
         "end": {
-          "line": 380,
+          "line": 381,
           "column": 5
         }
       },
@@ -1125,7 +1131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the widget on X axis."
+            "body": "<p>Moves the widget on X axis.</p>"
           }
         ]
       },
@@ -1141,11 +1147,11 @@
     "translateY": {
       "location": {
         "start": {
-          "line": 386,
+          "line": 387,
           "column": 4
         },
         "end": {
-          "line": 392,
+          "line": 393,
           "column": 5
         }
       },
@@ -1153,7 +1159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the widget on Y axis."
+            "body": "<p>Moves the widget on Y axis.</p>"
           }
         ]
       },
@@ -1169,11 +1175,11 @@
     "translateZ": {
       "location": {
         "start": {
-          "line": 398,
+          "line": 399,
           "column": 4
         },
         "end": {
-          "line": 404,
+          "line": 405,
           "column": 5
         }
       },
@@ -1181,7 +1187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the widget on Z axis."
+            "body": "<p>Moves the widget on Z axis.</p>"
           }
         ]
       },
@@ -1215,11 +1221,11 @@
     "ID_PREFIX": {
       "location": {
         "start": {
-          "line": 419,
+          "line": 420,
           "column": 4
         },
         "end": {
-          "line": 419,
+          "line": 420,
           "column": 24
         }
       },
@@ -1243,11 +1249,11 @@
     "__registry": {
       "location": {
         "start": {
-          "line": 422,
+          "line": 423,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 423,
           "column": 19
         }
       },
@@ -1271,11 +1277,11 @@
     "__idCounter": {
       "location": {
         "start": {
-          "line": 425,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 425,
+          "line": 426,
           "column": 19
         }
       },
@@ -1299,11 +1305,11 @@
     "__domUpdatedScheduleId": {
       "location": {
         "start": {
-          "line": 428,
+          "line": 429,
           "column": 4
         },
         "end": {
-          "line": 428,
+          "line": 429,
           "column": 33
         }
       },
@@ -1327,11 +1333,11 @@
     "onShutdown": {
       "location": {
         "start": {
-          "line": 434,
+          "line": 435,
           "column": 4
         },
         "end": {
-          "line": 438,
+          "line": 439,
           "column": 5
         }
       },
@@ -1339,7 +1345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the application is in shutdown."
+            "body": "<p>Event handler. Called when the application is in shutdown.</p>"
           }
         ],
         "@internal": [
@@ -1355,11 +1361,11 @@
     "getCurrentId": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 447,
           "column": 4
         },
         "end": {
-          "line": 449,
+          "line": 450,
           "column": 5
         }
       },
@@ -1367,7 +1373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current widget id of the registry."
+            "body": "<p>Returns the current widget id of the registry.</p>"
           }
         ],
         "@return": [
@@ -1391,11 +1397,11 @@
     "registerWidget": {
       "location": {
         "start": {
-          "line": 459,
+          "line": 460,
           "column": 4
         },
         "end": {
-          "line": 467,
+          "line": 468,
           "column": 5
         }
       },
@@ -1403,7 +1409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers a widget with its id for internal widget handling."
+            "body": "<p>Registers a widget with its id for internal widget handling.</p>"
           }
         ],
         "@param": [
@@ -1428,11 +1434,11 @@
     "unregisterWidget": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 478,
           "column": 4
         },
         "end": {
-          "line": 480,
+          "line": 481,
           "column": 5
         }
       },
@@ -1440,7 +1446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters the widget with the given id."
+            "body": "<p>Unregisters the widget with the given id.</p>"
           }
         ],
         "@param": [
@@ -1465,11 +1471,11 @@
     "getWidgetById": {
       "location": {
         "start": {
-          "line": 489,
+          "line": 490,
           "column": 4
         },
         "end": {
-          "line": 491,
+          "line": 492,
           "column": 5
         }
       },
@@ -1477,7 +1483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the widget with the given id."
+            "body": "<p>Returns the widget with the given id.</p>"
           }
         ],
         "@param": [
@@ -1504,11 +1510,11 @@
     "scheduleDomUpdated": {
       "location": {
         "start": {
-          "line": 500,
+          "line": 501,
           "column": 4
         },
         "end": {
-          "line": 509,
+          "line": 510,
           "column": 5
         }
       },
@@ -1516,7 +1522,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedules the {@link #domUpdated} method. The method will be called after a timeout\nto prevent the triggered events to be fired too often, during massive DOM manipulations."
+            "body": "<p>Schedules the {@link #domUpdated} method. The method will be called after a timeout\n to prevent the triggered events to be fired too often, during massive DOM manipulations.</p>"
           }
         ],
         "@internal": [
@@ -1532,11 +1538,11 @@
     "domUpdated": {
       "location": {
         "start": {
-          "line": 519,
+          "line": 520,
           "column": 4
         },
         "end": {
-          "line": 526,
+          "line": 527,
           "column": 6
         }
       },
@@ -1544,7 +1550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the DOM updated event directly. Triggers the {@link qx.event.handler.Appear#refresh} and\n{@link qx.ui.mobile.core.DomUpdatedHandler#refresh} methods. Do not use this\nmethod during massive DOM manipulations. Use {@link #scheduleDomUpdated} instead."
+            "body": "<p>Fires the DOM updated event directly. Triggers the {@link qx.event.handler.Appear#refresh} and\n {@link qx.ui.mobile.core.DomUpdatedHandler#refresh} methods. Do not use this\n method during massive DOM manipulations. Use {@link #scheduleDomUpdated} instead.</p>"
           }
         ],
         "@internal": [
@@ -1560,11 +1566,11 @@
     "addAttributeMapping": {
       "location": {
         "start": {
-          "line": 551,
+          "line": 552,
           "column": 4
         },
         "end": {
-          "line": 563,
+          "line": 564,
           "column": 5
         }
       },
@@ -1572,7 +1578,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an attribute mapping entry. This entry is used by the {@link #_applyAttribute}\nmethod. Shortcut when the property name differs from the real\nattribute name. Use this method if you want to add an attribute entry to the mapping\nfrom the defer function of a different widget.\n\ne.g.:\n\"selectable\" :\n{\nattribute : \"data-selectable\",\nvalues :\n{\n\"true\" : null,\n\"false\" : \"false\"\n}\n}"
+            "body": "<p>Adds an attribute mapping entry. This entry is used by the {@link #_applyAttribute}\n method. Shortcut when the property name differs from the real\n attribute name. Use this method if you want to add an attribute entry to the mapping\n from the defer function of a different widget.\n e.g.:\n \"selectable\" :\n {\n   attribute : \"data-selectable\",\n   values :\n   {\n     \"true\" : null,\n     \"false\" : \"false\"\n   }\n }</p>"
           }
         ],
         "@param": [
@@ -1592,9 +1598,9 @@
           },
           {
             "name": "@param",
-            "body": "values {Map} Values of the property to the real attribute value.\nUse null, when you want not to set the attribute.",
+            "body": "values {Map} Values of the property to the real attribute value.\n      Use null, when you want not to set the attribute.",
             "paramName": "values",
-            "description": " Values of the property to the real attribute value.\nUse null, when you want not to set the attribute.",
+            "description": " Values of the property to the real attribute value.\n      Use null, when you want not to set the attribute.",
             "type": "Map"
           }
         ]
@@ -1605,11 +1611,11 @@
     "addStyleMapping": {
       "location": {
         "start": {
-          "line": 588,
+          "line": 589,
           "column": 4
         },
         "end": {
-          "line": 600,
+          "line": 601,
           "column": 5
         }
       },
@@ -1617,7 +1623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a style mapping entry. This entry is used by the {@link #_applyStyle}\nmethod. Shortcut when the property name differs from the real\nstyle name. Use this method if you want to add a style entry to the mapping\nfrom the defer function of a different widget.\n\ne.g.:\n\"anonymous\" :\n{\nstyle : \"pointer-events\",\nvalues :\n{\n\"true\" : \"none\",\n\"false\" : null\n}\n}"
+            "body": "<p>Adds a style mapping entry. This entry is used by the {@link #_applyStyle}\n method. Shortcut when the property name differs from the real\n style name. Use this method if you want to add a style entry to the mapping\n from the defer function of a different widget.\n e.g.:\n \"anonymous\" :\n {\n  style : \"pointer-events\",\n  values :\n  {\n    \"true\" : \"none\",\n    \"false\" : null\n  }\n }</p>"
           }
         ],
         "@param": [
@@ -1637,9 +1643,9 @@
           },
           {
             "name": "@param",
-            "body": "values {Map} Values of the property to the real style value.\nUse null, when you want not to set the style.",
+            "body": "values {Map} Values of the property to the real style value.\n      Use null, when you want not to set the style.",
             "paramName": "values",
-            "description": " Values of the property to the real style value.\nUse null, when you want not to set the style.",
+            "description": " Values of the property to the real style value.\n      Use null, when you want not to set the style.",
             "type": "Map"
           }
         ]
@@ -1650,11 +1656,11 @@
     "ATTRIBUTE_MAPPING": {
       "location": {
         "start": {
-          "line": 608,
+          "line": 609,
           "column": 4
         },
         "end": {
-          "line": 632,
+          "line": 633,
           "column": 5
         }
       },
@@ -1662,7 +1668,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping of attribute properties to their real attribute name."
+            "body": "<p>Mapping of attribute properties to their real attribute name.</p>"
           }
         ],
         "@internal": [
@@ -1678,11 +1684,11 @@
     "STYLE_MAPPING": {
       "location": {
         "start": {
-          "line": 640,
+          "line": 641,
           "column": 4
         },
         "end": {
-          "line": 651,
+          "line": 652,
           "column": 5
         }
       },
@@ -1690,7 +1696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping of style properties to their real style name."
+            "body": "<p>Mapping of style properties to their real style name.</p>"
           }
         ],
         "@internal": [
@@ -1708,11 +1714,11 @@
     "__containerElement": {
       "location": {
         "start": {
-          "line": 665,
+          "line": 666,
           "column": 4
         },
         "end": {
-          "line": 665,
+          "line": 666,
           "column": 29
         }
       },
@@ -1722,11 +1728,11 @@
     "__contentElement": {
       "location": {
         "start": {
-          "line": 666,
+          "line": 667,
           "column": 4
         },
         "end": {
-          "line": 666,
+          "line": 667,
           "column": 27
         }
       },
@@ -1736,11 +1742,11 @@
     "__layoutParent": {
       "location": {
         "start": {
-          "line": 668,
+          "line": 669,
           "column": 4
         },
         "end": {
-          "line": 668,
+          "line": 669,
           "column": 25
         }
       },
@@ -1750,11 +1756,11 @@
     "__children": {
       "location": {
         "start": {
-          "line": 669,
+          "line": 670,
           "column": 4
         },
         "end": {
-          "line": 669,
+          "line": 670,
           "column": 21
         }
       },
@@ -1764,11 +1770,11 @@
     "__layoutManager": {
       "location": {
         "start": {
-          "line": 670,
+          "line": 671,
           "column": 4
         },
         "end": {
-          "line": 670,
+          "line": 671,
           "column": 26
         }
       },
@@ -1778,11 +1784,11 @@
     "_getTagName": {
       "location": {
         "start": {
-          "line": 683,
+          "line": 684,
           "column": 4
         },
         "end": {
-          "line": 686,
+          "line": 687,
           "column": 5
         }
       },
@@ -1790,11 +1796,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBasic Template\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Basic Template\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the tag name of the container element of this widget.\nOverride this method if you want to create a custom widget."
+            "body": "<p>Returns the tag name of the container element of this widget.\n Override this method if you want to create a custom widget.</p>"
           }
         ],
         "@return": [
@@ -1812,11 +1818,11 @@
     "_createContainerElement": {
       "location": {
         "start": {
-          "line": 695,
+          "line": 696,
           "column": 4
         },
         "end": {
-          "line": 698,
+          "line": 699,
           "column": 5
         }
       },
@@ -1824,7 +1830,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the container DOM element of the widget.\nOverride this method if you want to create a custom widget."
+            "body": "<p>Creates the container DOM element of the widget.\n Override this method if you want to create a custom widget.</p>"
           }
         ],
         "@return": [
@@ -1842,11 +1848,11 @@
     "_domUpdated": {
       "location": {
         "start": {
-          "line": 705,
+          "line": 706,
           "column": 4
         },
         "end": {
-          "line": 708,
+          "line": 709,
           "column": 5
         }
       },
@@ -1854,7 +1860,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Triggers the {@link #scheduleDomUpdated} method. This method needs to be called\nwhen the DOM has changed, e.g. an element was added / removed / styled."
+            "body": "<p>Triggers the {@link #scheduleDomUpdated} method. This method needs to be called\n when the DOM has changed, e.g. an element was added / removed / styled.</p>"
           }
         ]
       },
@@ -1864,11 +1870,11 @@
     "_transformId": {
       "location": {
         "start": {
-          "line": 725,
+          "line": 726,
           "column": 4
         },
         "end": {
-          "line": 733,
+          "line": 734,
           "column": 5
         }
       },
@@ -1876,11 +1882,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nID Handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ID Handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Transforms the value of the ID property. When the value is null, an auto\ngenerated ID is set. This makes sure that an ID is always set."
+            "body": "<p>Transforms the value of the ID property. When the value is null, an auto\n generated ID is set. This makes sure that an ID is always set.</p>"
           }
         ],
         "@param": [
@@ -1907,11 +1913,11 @@
     "_applyId": {
       "location": {
         "start": {
-          "line": 737,
+          "line": 738,
           "column": 4
         },
         "end": {
-          "line": 750,
+          "line": 751,
           "column": 5
         }
       },
@@ -1919,7 +1925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1932,11 +1938,11 @@
     "_applyEnabled": {
       "location": {
         "start": {
-          "line": 758,
+          "line": 759,
           "column": 4
         },
         "end": {
-          "line": 770,
+          "line": 771,
           "column": 5
         }
       },
@@ -1944,7 +1950,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the enable property to the new value"
+            "body": "<p>Sets the enable property to the new value</p>"
           }
         ],
         "@param": [
@@ -1974,11 +1980,11 @@
     "_add": {
       "location": {
         "start": {
-          "line": 786,
+          "line": 787,
           "column": 4
         },
         "end": {
-          "line": 801,
+          "line": 802,
           "column": 5
         }
       },
@@ -1986,11 +1992,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nChild Handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Child Handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a new child widget."
+            "body": "<p>Adds a new child widget.</p>"
           }
         ],
         "@param": [
@@ -2018,11 +2024,11 @@
     "_addAt": {
       "location": {
         "start": {
-          "line": 813,
+          "line": 814,
           "column": 4
         },
         "end": {
-          "line": 827,
+          "line": 828,
           "column": 5
         }
       },
@@ -2030,7 +2036,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index"
+            "body": "<p>Add a child widget at the specified index</p>"
           }
         ],
         "@param": [
@@ -2043,9 +2049,9 @@
           },
           {
             "name": "@param",
-            "body": "index {Integer} Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "body": "index {Integer} Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "paramName": "index",
-            "description": " Index, at which the widget will be inserted. If no\nwidget exists at the given index, the new widget gets appended to the\ncurrent list of children.",
+            "description": " Index, at which the widget will be inserted. If no\n   widget exists at the given index, the new widget gets appended to the\n   current list of children.",
             "type": "Integer"
           },
           {
@@ -2065,11 +2071,11 @@
     "_addBefore": {
       "location": {
         "start": {
-          "line": 837,
+          "line": 838,
           "column": 4
         },
         "end": {
-          "line": 858,
+          "line": 859,
           "column": 5
         }
       },
@@ -2077,7 +2083,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget"
+            "body": "<p>Add a widget before another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -2112,11 +2118,11 @@
     "_addAfter": {
       "location": {
         "start": {
-          "line": 868,
+          "line": 869,
           "column": 4
         },
         "end": {
-          "line": 900,
+          "line": 901,
           "column": 5
         }
       },
@@ -2124,7 +2130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget."
+            "body": "<p>Add a widget after another already inserted widget.</p>"
           }
         ],
         "@param": [
@@ -2159,11 +2165,11 @@
     "_remove": {
       "location": {
         "start": {
-          "line": 909,
+          "line": 910,
           "column": 4
         },
         "end": {
-          "line": 913,
+          "line": 914,
           "column": 5
         }
       },
@@ -2171,7 +2177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a given child from the widget."
+            "body": "<p>Removes a given child from the widget.</p>"
           }
         ],
         "@param": [
@@ -2190,11 +2196,11 @@
     "_removeAt": {
       "location": {
         "start": {
-          "line": 921,
+          "line": 922,
           "column": 4
         },
         "end": {
-          "line": 929,
+          "line": 930,
           "column": 5
         }
       },
@@ -2202,7 +2208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index."
+            "body": "<p>Remove the widget at the specified index.</p>"
           }
         ],
         "@param": [
@@ -2221,11 +2227,11 @@
     "_removeAll": {
       "location": {
         "start": {
-          "line": 936,
+          "line": 937,
           "column": 4
         },
         "end": {
-          "line": 944,
+          "line": 945,
           "column": 5
         }
       },
@@ -2233,7 +2239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all children from the widget."
+            "body": "<p>Removes all children from the widget.</p>"
           }
         ],
         "@return": [
@@ -2251,11 +2257,11 @@
     "_indexOf": {
       "location": {
         "start": {
-          "line": 955,
+          "line": 956,
           "column": 4
         },
         "end": {
-          "line": 963,
+          "line": 964,
           "column": 5
         }
       },
@@ -2263,7 +2269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.</p>"
           }
         ],
         "@param": [
@@ -2278,9 +2284,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       },
@@ -2290,11 +2296,11 @@
     "setLayoutParent": {
       "location": {
         "start": {
-          "line": 973,
+          "line": 974,
           "column": 4
         },
         "end": {
-          "line": 985,
+          "line": 986,
           "column": 5
         }
       },
@@ -2302,7 +2308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method. Sets the layout parent."
+            "body": "<p>Internal method. Sets the layout parent.</p>"
           }
         ],
         "@param": [
@@ -2327,11 +2333,11 @@
     "removeChild": {
       "location": {
         "start": {
-          "line": 995,
+          "line": 996,
           "column": 4
         },
         "end": {
-          "line": 1003,
+          "line": 1004,
           "column": 5
         }
       },
@@ -2339,7 +2345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method. Removes a given child widget and the corresponding DOM element."
+            "body": "<p>Internal method. Removes a given child widget and the corresponding DOM element.</p>"
           }
         ],
         "@param": [
@@ -2364,11 +2370,11 @@
     "getLayoutParent": {
       "location": {
         "start": {
-          "line": 1011,
+          "line": 1012,
           "column": 4
         },
         "end": {
-          "line": 1014,
+          "line": 1015,
           "column": 5
         }
       },
@@ -2376,7 +2382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the parent widget of this widget."
+            "body": "<p>Returns the parent widget of this widget.</p>"
           }
         ],
         "@return": [
@@ -2394,11 +2400,11 @@
     "_getChildren": {
       "location": {
         "start": {
-          "line": 1022,
+          "line": 1023,
           "column": 4
         },
         "end": {
-          "line": 1024,
+          "line": 1025,
           "column": 5
         }
       },
@@ -2406,7 +2412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children of the widget."
+            "body": "<p>Returns the children of the widget.</p>"
           }
         ],
         "@return": [
@@ -2424,11 +2430,11 @@
     "_hasChildren": {
       "location": {
         "start": {
-          "line": 1032,
+          "line": 1033,
           "column": 4
         },
         "end": {
-          "line": 1034,
+          "line": 1035,
           "column": 5
         }
       },
@@ -2436,7 +2442,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget has child widgets."
+            "body": "<p>Whether the widget has child widgets.</p>"
           }
         ],
         "@return": [
@@ -2454,11 +2460,11 @@
     "_setLayout": {
       "location": {
         "start": {
-          "line": 1051,
+          "line": 1052,
           "column": 4
         },
         "end": {
-          "line": 1072,
+          "line": 1073,
           "column": 5
         }
       },
@@ -2466,19 +2472,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLayout handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Layout handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.mobile.layout.Abstract"
           }
         ]
@@ -2489,11 +2495,11 @@
     "_initializeChildLayout": {
       "location": {
         "start": {
-          "line": 1082,
+          "line": 1083,
           "column": 4
         },
         "end": {
-          "line": 1090,
+          "line": 1091,
           "column": 5
         }
       },
@@ -2501,7 +2507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the layout of the given child widget."
+            "body": "<p>Initializes the layout of the given child widget.</p>"
           }
         ],
         "@param": [
@@ -2529,11 +2535,11 @@
     "_getLayout": {
       "location": {
         "start": {
-          "line": 1098,
+          "line": 1099,
           "column": 4
         },
         "end": {
-          "line": 1100,
+          "line": 1101,
           "column": 5
         }
       },
@@ -2541,7 +2547,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set layout manager for the widget."
+            "body": "<p>Returns the set layout manager for the widget.</p>"
           }
         ],
         "@return": [
@@ -2559,11 +2565,11 @@
     "setLayoutProperties": {
       "location": {
         "start": {
-          "line": 1108,
+          "line": 1109,
           "column": 4
         },
         "end": {
-          "line": 1115,
+          "line": 1116,
           "column": 5
         }
       },
@@ -2571,7 +2577,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores the given layout properties."
+            "body": "<p>Stores the given layout properties.</p>"
           }
         ],
         "@param": [
@@ -2590,11 +2596,11 @@
     "updateLayoutProperties": {
       "location": {
         "start": {
-          "line": 1126,
+          "line": 1127,
           "column": 4
         },
         "end": {
-          "line": 1133,
+          "line": 1134,
           "column": 5
         }
       },
@@ -2602,7 +2608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the layout properties of a given widget."
+            "body": "<p>Updates the layout properties of a given widget.</p>"
           }
         ],
         "@param": [
@@ -2634,11 +2640,11 @@
     "updateLayout": {
       "location": {
         "start": {
-          "line": 1145,
+          "line": 1146,
           "column": 4
         },
         "end": {
-          "line": 1151,
+          "line": 1152,
           "column": 5
         }
       },
@@ -2646,7 +2652,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the layout with the given arguments."
+            "body": "<p>Updates the layout with the given arguments.</p>"
           }
         ],
         "@param": [
@@ -2685,11 +2691,11 @@
     "_setHtml": {
       "location": {
         "start": {
-          "line": 1167,
+          "line": 1168,
           "column": 4
         },
         "end": {
-          "line": 1171,
+          "line": 1172,
           "column": 5
         }
       },
@@ -2697,11 +2703,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nContent handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Content handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the innerHTML of the content element and calls the {@link #_domUpdated}\nmethod."
+            "body": "<p>Sets the innerHTML of the content element and calls the {@link #_domUpdated}\n method.</p>"
           }
         ],
         "@param": [
@@ -2722,11 +2728,11 @@
     "_transform": {
       "location": {
         "start": {
-          "line": 1177,
+          "line": 1178,
           "column": 4
         },
         "end": {
-          "line": 1202,
+          "line": 1203,
           "column": 5
         }
       },
@@ -2734,7 +2740,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Transforms this widget (rotate, scale, translate3d)"
+            "body": "<p>Transforms this widget (rotate, scale, translate3d)</p>"
           }
         ]
       },
@@ -2753,11 +2759,11 @@
     "_applyAttribute": {
       "location": {
         "start": {
-          "line": 1222,
+          "line": 1223,
           "column": 4
         },
         "end": {
-          "line": 1225,
+          "line": 1226,
           "column": 5
         }
       },
@@ -2765,11 +2771,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAttributes handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Attributes handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Shortcut for each property that should change a certain attribute of the\ncontainer element.\nUse the {@link #addAttributeMapping} method to add a property to attribute\nmapping when the attribute name or value differs from the property name or\nvalue."
+            "body": "<p>Shortcut for each property that should change a certain attribute of the\n container element.\n Use the {@link #addAttributeMapping} method to add a property to attribute\n mapping when the attribute name or value differs from the property name or\n value.</p>"
           }
         ],
         "@param": [
@@ -2806,11 +2812,11 @@
     "_setAttribute": {
       "location": {
         "start": {
-          "line": 1235,
+          "line": 1236,
           "column": 4
         },
         "end": {
-          "line": 1254,
+          "line": 1255,
           "column": 5
         }
       },
@@ -2818,7 +2824,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets an attribute with the given value of the container element. The\n<code>null</code> value resets the attribute."
+            "body": "<p>Sets an attribute with the given value of the container element. The\n <code>null</code> value resets the attribute.</p>"
           }
         ],
         "@param": [
@@ -2844,11 +2850,11 @@
     "_getAttribute": {
       "location": {
         "start": {
-          "line": 1263,
+          "line": 1264,
           "column": 4
         },
         "end": {
-          "line": 1267,
+          "line": 1268,
           "column": 5
         }
       },
@@ -2856,7 +2862,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set value of the given attribute."
+            "body": "<p>Returns the set value of the given attribute.</p>"
           }
         ],
         "@param": [
@@ -2883,11 +2889,11 @@
     "_applyStyle": {
       "location": {
         "start": {
-          "line": 1284,
+          "line": 1285,
           "column": 4
         },
         "end": {
-          "line": 1287,
+          "line": 1288,
           "column": 5
         }
       },
@@ -2895,11 +2901,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nStyles handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Styles handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Shortcut for each property that should change a certain style of the container\nelement.\nUse the {@link #addStyleMapping} method to add a property to style\nmapping when the style name or value differs from the property name or\nvalue."
+            "body": "<p>Shortcut for each property that should change a certain style of the container\n element.\n Use the {@link #addStyleMapping} method to add a property to style\n mapping when the style name or value differs from the property name or\n value.</p>"
           }
         ]
       },
@@ -2912,11 +2918,11 @@
     "_setStyle": {
       "location": {
         "start": {
-          "line": 1297,
+          "line": 1298,
           "column": 4
         },
         "end": {
-          "line": 1315,
+          "line": 1316,
           "column": 5
         }
       },
@@ -2924,7 +2930,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value of a certain style of the container element. The\n<code>null</code> value resets the attribute."
+            "body": "<p>Sets the value of a certain style of the container element. The\n <code>null</code> value resets the attribute.</p>"
           }
         ],
         "@param": [
@@ -2950,11 +2956,11 @@
     "_getStyle": {
       "location": {
         "start": {
-          "line": 1324,
+          "line": 1325,
           "column": 4
         },
         "end": {
-          "line": 1328,
+          "line": 1329,
           "column": 5
         }
       },
@@ -2962,7 +2968,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of a certain style of the container element."
+            "body": "<p>Returns the value of a certain style of the container element.</p>"
           }
         ],
         "@param": [
@@ -2989,11 +2995,11 @@
     "_applyDefaultCssClass": {
       "location": {
         "start": {
-          "line": 1337,
+          "line": 1338,
           "column": 4
         },
         "end": {
-          "line": 1345,
+          "line": 1346,
           "column": 5
         }
       },
@@ -3001,11 +3007,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCSS Handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CSS Handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -3018,11 +3024,11 @@
     "addCssClass": {
       "location": {
         "start": {
-          "line": 1354,
+          "line": 1355,
           "column": 4
         },
         "end": {
-          "line": 1357,
+          "line": 1358,
           "column": 5
         }
       },
@@ -3030,7 +3036,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a CSS class to the container element of the widget. Use this method\nto enhance the default appearance of the widget."
+            "body": "<p>Adds a CSS class to the container element of the widget. Use this method\n to enhance the default appearance of the widget.</p>"
           }
         ],
         "@param": [
@@ -3049,11 +3055,11 @@
     "addCssClasses": {
       "location": {
         "start": {
-          "line": 1366,
+          "line": 1367,
           "column": 4
         },
         "end": {
-          "line": 1371,
+          "line": 1372,
           "column": 5
         }
       },
@@ -3061,7 +3067,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an array of CSS classes to the container element of the widget. Use this method\nto enhance the default appearance of the widget."
+            "body": "<p>Adds an array of CSS classes to the container element of the widget. Use this method\n to enhance the default appearance of the widget.</p>"
           }
         ],
         "@param": [
@@ -3080,11 +3086,11 @@
     "removeCssClass": {
       "location": {
         "start": {
-          "line": 1379,
+          "line": 1380,
           "column": 4
         },
         "end": {
-          "line": 1384,
+          "line": 1385,
           "column": 5
         }
       },
@@ -3092,7 +3098,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a CSS class from the container element of the widget."
+            "body": "<p>Removes a CSS class from the container element of the widget.</p>"
           }
         ],
         "@param": [
@@ -3111,11 +3117,11 @@
     "removeCssClasses": {
       "location": {
         "start": {
-          "line": 1392,
+          "line": 1393,
           "column": 4
         },
         "end": {
-          "line": 1397,
+          "line": 1398,
           "column": 5
         }
       },
@@ -3123,7 +3129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an array of CSS classes from the container element of the widget."
+            "body": "<p>Removes an array of CSS classes from the container element of the widget.</p>"
           }
         ],
         "@param": [
@@ -3142,11 +3148,11 @@
     "toggleCssClass": {
       "location": {
         "start": {
-          "line": 1405,
+          "line": 1406,
           "column": 4
         },
         "end": {
-          "line": 1411,
+          "line": 1412,
           "column": 5
         }
       },
@@ -3154,7 +3160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the given CSS. Adds or removes the CSS class from the container element of the widget."
+            "body": "<p>Toggles the given CSS. Adds or removes the CSS class from the container element of the widget.</p>"
           }
         ],
         "@param": [
@@ -3173,11 +3179,11 @@
     "hasCssClass": {
       "location": {
         "start": {
-          "line": 1420,
+          "line": 1421,
           "column": 4
         },
         "end": {
-          "line": 1422,
+          "line": 1423,
           "column": 5
         }
       },
@@ -3185,7 +3191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the widget has a certain CSS class set."
+            "body": "<p>Checks if the widget has a certain CSS class set.</p>"
           }
         ],
         "@param": [
@@ -3212,11 +3218,11 @@
     "_applyVisibility": {
       "location": {
         "start": {
-          "line": 1433,
+          "line": 1434,
           "column": 4
         },
         "end": {
-          "line": 1447,
+          "line": 1448,
           "column": 5
         }
       },
@@ -3224,11 +3230,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVisibility handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Visibility handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -3241,11 +3247,11 @@
     "__setVisibility": {
       "location": {
         "start": {
-          "line": 1456,
+          "line": 1457,
           "column": 4
         },
         "end": {
-          "line": 1463,
+          "line": 1464,
           "column": 5
         }
       },
@@ -3253,7 +3259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the visibility of the widget."
+            "body": "<p>Sets the visibility of the widget.</p>"
           }
         ],
         "@param": [
@@ -3279,11 +3285,11 @@
     "show": {
       "location": {
         "start": {
-          "line": 1472,
+          "line": 1473,
           "column": 4
         },
         "end": {
-          "line": 1474,
+          "line": 1475,
           "column": 5
         }
       },
@@ -3291,7 +3297,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Make this widget visible."
+            "body": "<p>Make this widget visible.</p>"
           }
         ],
         "@param": [
@@ -3310,11 +3316,11 @@
     "hide": {
       "location": {
         "start": {
-          "line": 1483,
+          "line": 1484,
           "column": 4
         },
         "end": {
-          "line": 1485,
+          "line": 1486,
           "column": 5
         }
       },
@@ -3322,7 +3328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide this widget."
+            "body": "<p>Hide this widget.</p>"
           }
         ],
         "@param": [
@@ -3341,11 +3347,11 @@
     "exclude": {
       "location": {
         "start": {
-          "line": 1494,
+          "line": 1495,
           "column": 4
         },
         "end": {
-          "line": 1496,
+          "line": 1497,
           "column": 5
         }
       },
@@ -3353,7 +3359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hide this widget and exclude it from the underlying layout."
+            "body": "<p>Hide this widget and exclude it from the underlying layout.</p>"
           }
         ],
         "@param": [
@@ -3372,11 +3378,11 @@
     "isVisible": {
       "location": {
         "start": {
-          "line": 1506,
+          "line": 1507,
           "column": 4
         },
         "end": {
-          "line": 1508,
+          "line": 1509,
           "column": 5
         }
       },
@@ -3384,7 +3390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally visible.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally visible.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3402,11 +3408,11 @@
     "isHidden": {
       "location": {
         "start": {
-          "line": 1518,
+          "line": 1519,
           "column": 4
         },
         "end": {
-          "line": 1520,
+          "line": 1521,
           "column": 5
         }
       },
@@ -3414,7 +3420,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally hidden.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally hidden.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3432,11 +3438,11 @@
     "isExcluded": {
       "location": {
         "start": {
-          "line": 1530,
+          "line": 1531,
           "column": 4
         },
         "end": {
-          "line": 1532,
+          "line": 1533,
           "column": 5
         }
       },
@@ -3444,7 +3450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is locally excluded.\n\nNote: This method does not respect the hierarchy."
+            "body": "<p>Whether the widget is locally excluded.\n Note: This method does not respect the hierarchy.</p>"
           }
         ],
         "@return": [
@@ -3462,11 +3468,11 @@
     "isSeeable": {
       "location": {
         "start": {
-          "line": 1542,
+          "line": 1543,
           "column": 4
         },
         "end": {
-          "line": 1545,
+          "line": 1546,
           "column": 5
         }
       },
@@ -3474,7 +3480,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if the widget and all its parents are visible.\n\nWarning: forces rendering of the browser. Do not use this method during\nanimations or performance critical tasks."
+            "body": "<p>Detects if the widget and all its parents are visible.\n Warning: forces rendering of the browser. Do not use this method during\n animations or performance critical tasks.</p>"
           }
         ],
         "@return": [
@@ -3492,11 +3498,11 @@
     "_setContainerElement": {
       "location": {
         "start": {
-          "line": 1559,
+          "line": 1560,
           "column": 4
         },
         "end": {
-          "line": 1562,
+          "line": 1563,
           "column": 5
         }
       },
@@ -3504,11 +3510,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nElement handling\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n Element handling\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the container DOM element of the widget."
+            "body": "<p>Sets the container DOM element of the widget.</p>"
           }
         ],
         "@param": [
@@ -3527,11 +3533,11 @@
     "getContainerElement": {
       "location": {
         "start": {
-          "line": 1572,
+          "line": 1573,
           "column": 4
         },
         "end": {
-          "line": 1575,
+          "line": 1576,
           "column": 5
         }
       },
@@ -3539,7 +3545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the container DOM element of the widget."
+            "body": "<p>Returns the container DOM element of the widget.</p>"
           }
         ],
         "@return": [
@@ -3563,11 +3569,11 @@
     "getContentElement": {
       "location": {
         "start": {
-          "line": 1585,
+          "line": 1586,
           "column": 4
         },
         "end": {
-          "line": 1591,
+          "line": 1592,
           "column": 5
         }
       },
@@ -3575,7 +3581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content DOM element of the widget."
+            "body": "<p>Returns the content DOM element of the widget.</p>"
           }
         ],
         "@return": [
@@ -3599,11 +3605,11 @@
     "_getContentElement": {
       "location": {
         "start": {
-          "line": 1605,
+          "line": 1606,
           "column": 4
         },
         "end": {
-          "line": 1608,
+          "line": 1609,
           "column": 5
         }
       },
@@ -3611,7 +3617,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content DOM element of the widget.\nOverride this method, to define another element as the content element.\n\nNote: Most times this element points to to the container element.\nWhen the widget has a more complex element structure,\nthe function should return a reference of the element that should contain\nthe content."
+            "body": "<p>Returns the content DOM element of the widget.\n Override this method, to define another element as the content element.\n Note: Most times this element points to to the container element.\n When the widget has a more complex element structure,\n the function should return a reference of the element that should contain\n the content.</p>"
           }
         ],
         "@return": [
@@ -3629,11 +3635,11 @@
     "destroy": {
       "location": {
         "start": {
-          "line": 1620,
+          "line": 1621,
           "column": 4
         },
         "end": {
-          "line": 1631,
+          "line": 1632,
           "column": 5
         }
       },
@@ -3641,11 +3647,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENHANCED DISPOSE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENHANCED DISPOSE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Removes this widget from its parent and disposes it."
+            "body": "<p>Removes this widget from its parent and disposes it.</p>"
           }
         ]
       },
@@ -3664,7 +3670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -3706,7 +3712,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -3762,7 +3768,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -3811,7 +3817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -3874,7 +3880,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -5016,11 +5022,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1643,
-        "column": 2
+        "line": 1644,
+        "column": 13
       },
       "end": {
-        "line": 1662,
+        "line": 1663,
         "column": 3
       }
     },
@@ -5028,7 +5034,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -5036,11 +5042,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1673,
-        "column": 2
+        "line": 1674,
+        "column": 10
       },
       "end": {
-        "line": 1675,
+        "line": 1676,
         "column": 3
       }
     },
@@ -5048,7 +5054,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

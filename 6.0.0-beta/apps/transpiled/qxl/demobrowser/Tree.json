@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nThomas Herchenroeder (thron7)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Thomas Herchenroeder (thron7)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         }
       ]
     }
@@ -31,7 +31,7 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
@@ -42,7 +42,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -63,7 +63,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -199,7 +199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "returns an iterator function for the tree from this.\n(implemented with Agenda Search)"
+            "body": "<p>returns an iterator function for the tree from this.\n (implemented with Agenda Search)</p>"
           }
         ],
         "@param": [
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@return": [
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -367,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -528,11 +528,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "compute the index of an array element"
+            "body": "<p>compute the index of an array element</p>"
           },
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -568,7 +568,7 @@
     "location": {
       "start": {
         "line": 248,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 254,
@@ -579,7 +579,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

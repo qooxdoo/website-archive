@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 303,
+        "line": 326,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2017 Zenesis Limited, http://www.zenesis.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJohn Spackman (john.spackman@zenesis.com, @johnspackman)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2017 Zenesis Limited, http://www.zenesis.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n John Spackman (john.spackman<code>zenesis.com, </code>johnspackman)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A mixin providing objects by ID and owners.\n\nThe typical use of IDs is to override the `_createQxObjectImpl` method and create\nnew instances on demand; all code should access these instances by calling\n`getQxObject`."
+          "body": "<p>A mixin providing objects by ID and owners.\n The typical use of IDs is to override the <code>_createQxObjectImpl</code> method and create\n new instances on demand; all code should access these instances by calling\n <code>getQxObject</code>.</p>"
         }
       ]
     }
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply owner"
+            "body": "<p>Apply owner</p>"
           }
         ]
       },
@@ -116,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply objectId"
+            "body": "<p>Apply objectId</p>"
           }
         ]
       },
@@ -141,7 +141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when a child's objectId changes"
+            "body": "<p>Called when a child's objectId changes</p>"
           }
         ]
       },
@@ -155,7 +155,7 @@
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 113,
           "column": 5
         }
       },
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reflect changes to IDs or owners"
+            "body": "<p>Reflect changes to IDs or owners</p>"
           }
         ]
       },
@@ -173,11 +173,11 @@
     "getQxObject": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 169,
+          "line": 172,
           "column": 5
         }
       },
@@ -185,13 +185,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the object with the specified ID"
+            "body": "<p>Returns the object with the specified ID</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id\n{String} ID of the object",
+            "body": "id\n          {String} ID of the object",
             "paramName": "id",
             "description": " ID of the object",
             "type": "String"
@@ -212,11 +212,11 @@
     "_createQxObject": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 181,
           "column": 4
         },
         "end": {
-          "line": 184,
+          "line": 187,
           "column": 5
         }
       },
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object and adds it to a list; most classes are expected to\noverride `_createQxObjectImpl` NOT this method."
+            "body": "<p>Creates the object and adds it to a list; most classes are expected to\n override <code>_createQxObjectImpl</code> NOT this method.</p>"
           }
         ],
         "@param": [
@@ -251,11 +251,11 @@
     "_createQxObjectImpl": {
       "location": {
         "start": {
-          "line": 195,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 200,
           "column": 5
         }
       },
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object, intended to be overridden. Null is a valid return\nvalue and will be cached by `getQxObject`, however `undefined` is NOT a\nvalid value and so will not be cached meaning that `_createQxObjectImpl`\nwill be called multiple times until a valid value is returned."
+            "body": "<p>Creates the object, intended to be overridden. Null is a valid return\n value and will be cached by <code>getQxObject</code>, however <code>undefined</code> is NOT a\n valid value and so will not be cached meaning that <code>_createQxObjectImpl</code>\n will be called multiple times until a valid value is returned.</p>"
           }
         ],
         "@param": [
@@ -290,11 +290,11 @@
     "addOwnedQxObject": {
       "location": {
         "start": {
-          "line": 205,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 252,
           "column": 5
         }
       },
@@ -302,7 +302,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an object as owned by this object"
+            "body": "<p>Adds an object as owned by this object</p>"
           }
         ],
         "@param": [
@@ -329,11 +329,11 @@
     "removeOwnedQxObject": {
       "location": {
         "start": {
-          "line": 245,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 278,
+          "line": 301,
           "column": 5
         }
       },
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Discards an object from the list of owned objects; note that this does\nnot dispose of the object, simply forgets it if it exists."
+            "body": "<p>Discards an object from the list of owned objects; note that this does\n not dispose of the object, simply forgets it if it exists.</p>"
           }
         ],
         "@param": [
@@ -363,11 +363,11 @@
     "__removeOwnedQxObjectImpl": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 291,
+          "line": 314,
           "column": 5
         }
       },
@@ -375,7 +375,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an owned object"
+            "body": "<p>Removes an owned object</p>"
           }
         ],
         "@param": [
@@ -394,11 +394,11 @@
     "getOwnedQxObjects": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 322,
           "column": 4
         },
         "end": {
-          "line": 301,
+          "line": 324,
           "column": 5
         }
       },
@@ -406,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of objects that are owned by this object, or an empty\narray if none exists."
+            "body": "<p>Returns an array of objects that are owned by this object, or an empty\n array if none exists.</p>"
           }
         ],
         "@return": [

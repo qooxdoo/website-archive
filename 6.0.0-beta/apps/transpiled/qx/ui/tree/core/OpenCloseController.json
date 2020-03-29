@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2017 Cajus Pollmeier\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nCajus Pollmeier\nDerrell Lipman\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2017 Cajus Pollmeier\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Cajus Pollmeier\n Derrell Lipman\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Because of the virtual nature of the VirtualTree, and the fact that\nrendering occurs asynchronously, it is not a simple matter to bind a\nproperty in the model that will open or close branches in the\ntree. Instead, this controller listens to both the model and the tree, and\nsynchronizes the openness of branches in the tree.\n\nTo use this controller, simply instantiate it with the requisite\nconstructor arguments."
+          "body": "<p>Because of the virtual nature of the VirtualTree, and the fact that\n rendering occurs asynchronously, it is not a simple matter to bind a\n property in the model that will open or close branches in the\n tree. Instead, this controller listens to both the model and the tree, and\n synchronizes the openness of branches in the tree.\n To use this controller, simply instantiate it with the requisite\n constructor arguments.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 77,
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "tree {qx.ui.tree.VirtualTree}\nThe tree whose branch open or closed state is to be synchronized to a\nmodel property.",
+          "body": "tree {qx.ui.tree.VirtualTree}\n   The tree whose branch open or closed state is to be synchronized to a\n   model property.",
           "paramName": "tree",
-          "description": "\nThe tree whose branch open or closed state is to be synchronized to a\nmodel property.",
+          "description": "\n   The tree whose branch open or closed state is to be synchronized to a\n   model property.",
           "type": "qx.ui.tree.VirtualTree"
         },
         {
           "name": "@param",
-          "body": "rootModel {qx.data.Array}\nThe tree root model wherein a property is to be synchronized to the\ntree branches' open or closed states",
+          "body": "rootModel {qx.data.Array}\n   The tree root model wherein a property is to be synchronized to the\n   tree branches' open or closed states",
           "paramName": "rootModel",
-          "description": "\nThe tree root model wherein a property is to be synchronized to the\ntree branches' open or closed states",
+          "description": "\n   The tree root model wherein a property is to be synchronized to the\n   tree branches' open or closed states",
           "type": "qx.data.Array"
         }
       ]
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The tree which is synced to the model"
+            "body": "<p>The tree which is synced to the model</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener IDs that we manage"
+            "body": "<p>Listener IDs that we manage</p>"
           }
         ]
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "event listener for \"open\" on the tree"
+            "body": "<p>event listener for \"open\" on the tree</p>"
           }
         ]
       },
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "event listener for \"close\" on the tree"
+            "body": "<p>event listener for \"close\" on the tree</p>"
           }
         ]
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "event listener for model changes"
+            "body": "<p>event listener for model changes</p>"
           }
         ]
       },
@@ -303,13 +303,14 @@
     "location": {
       "start": {
         "line": 132,
-        "column": 2
+        "column": 12
       },
       "end": {
         "line": 138,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\nRichard Sternagel (rsternagel)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n Richard Sternagel (rsternagel)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Static helpers for handling HTTP requests."
+          "body": "<p>Static helpers for handling HTTP requests.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether URL given points to resource that is cross-domain,\ni.e. not of same origin."
+            "body": "<p>Whether URL given points to resource that is cross-domain,\n i.e. not of same origin.</p>"
           }
         ],
         "@param": [
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine if given HTTP status is considered successful."
+            "body": "<p>Determine if given HTTP status is considered successful.</p>"
           }
         ],
         "@param": [
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determine if given HTTP method is valid."
+            "body": "<p>Determine if given HTTP method is valid.</p>"
           }
         ],
         "@param": [
@@ -164,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request body is ignored for HTTP method GET and HEAD.\n\nSee http://www.w3.org/TR/XMLHttpRequest2/#the-send-method."
+            "body": "<p>Request body is ignored for HTTP method GET and HEAD.\n See http://www.w3.org/TR/XMLHttpRequest2/#the-send-method.</p>"
           }
         ],
         "@param": [

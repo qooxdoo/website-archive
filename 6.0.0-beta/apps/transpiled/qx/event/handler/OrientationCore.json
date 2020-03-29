@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\nDaniel Wagner (danielwagner)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nUnify Project\n\nHomepage:\nhttp://unify-project.org\n\nCopyright:\n2009-2010 Deutsche Telekom AG, Germany, http://telekom.com\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n Daniel Wagner (danielwagner)\n   ======================================================================\n   This class contains code based on the following work:\n Unify Project\n     Homepage:\n       http://unify-project.org\n     Copyright:\n       2009-2010 Deutsche Telekom AG, Germany, http://telekom.com\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Listens for native orientation change events\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Listens for native orientation change events\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 51,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 56,
@@ -155,11 +155,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBSERVER INIT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBSERVER INIT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Initializes the native orientation change event listeners."
+            "body": "<p>Initializes the native orientation change event listeners.</p>"
           }
         ]
       },
@@ -181,11 +181,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBSERVER STOP\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBSERVER STOP\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Disconnects the native orientation change event listeners."
+            "body": "<p>Disconnects the native orientation change event listeners.</p>"
           }
         ]
       },
@@ -207,11 +207,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nNATIVE EVENT OBSERVERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  NATIVE EVENT OBSERVERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler for the native orientation change event."
+            "body": "<p>Handler for the native orientation change event.</p>"
           }
         ],
         "@signature": [
@@ -247,7 +247,7 @@
     "location": {
       "start": {
         "line": 152,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 156,
@@ -258,7 +258,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

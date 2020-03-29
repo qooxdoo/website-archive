@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table Row renderer for Progressive."
+          "body": "<p>Table Row renderer for Progressive.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 31,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 67,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\nInformation that indicates how to resize each of the column widths",
+          "body": "columnWidths {qx.ui.progressive.renderer.table.Widths}\n   Information that indicates how to resize each of the column widths",
           "paramName": "columnWidths",
-          "description": "\nInformation that indicates how to resize each of the column widths",
+          "description": "\n   Information that indicates how to resize each of the column widths",
           "type": "qx.ui.progressive.renderer.table.Widths"
         }
       ]
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Storage for each progressive."
+            "body": "<p>Storage for each progressive.</p>"
           }
         ],
         "@internal": [
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default row padding."
+            "body": "<p>Default row padding.</p>"
           }
         ],
         "@internal": [
@@ -132,11 +132,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "modify padding parameter below too if this changes"
+            "body": "<p>modify padding parameter below too if this changes</p>"
           },
           {
             "name": "@description",
-            "body": "Default style sheet for table cells."
+            "body": "<p>Default style sheet for table cells.</p>"
           }
         ],
         "@internal": [
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The default height of a row, if not altered by a cell renderer."
+            "body": "<p>The default height of a row, if not altered by a cell renderer.</p>"
           }
         ]
       },
@@ -320,7 +320,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to link the theme colors to the current class"
+            "body": "<p>Helper to link the theme colors to the current class</p>"
           }
         ]
       },
@@ -342,22 +342,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "progressive {qx.ui.progressive.Progressive}\nThe Progressive object to which we are being joined.",
+            "body": "progressive {qx.ui.progressive.Progressive}\n   The Progressive object to which we are being joined.",
             "paramName": "progressive",
-            "description": "\nThe Progressive object to which we are being joined.",
+            "description": "\n   The Progressive object to which we are being joined.",
             "type": "qx.ui.progressive.Progressive"
           },
           {
             "name": "@param",
-            "body": "name {String}\nThe name by which the data model will reference this renderer.  This\nis important to know in order to access the appropriate member of the\n{@link qx.ui.progressive.State}'s renderer array.  That array is\naccessed from the renderer by\nstate.getRendererData()[element.renderer] where element.renderer will\nbe the name provided here.",
+            "body": "name {String}\n   The name by which the data model will reference this renderer.  This\n   is important to know in order to access the appropriate member of the\n   {@link qx.ui.progressive.State}'s renderer array.  That array is\n   accessed from the renderer by\n   state.getRendererData()[element.renderer] where element.renderer will\n   be the name provided here.",
             "paramName": "name",
-            "description": "\nThe name by which the data model will reference this renderer.  This\nis important to know in order to access the appropriate member of the\n{@link qx.ui.progressive.State}'s renderer array.  That array is\naccessed from the renderer by\nstate.getRendererData()[element.renderer] where element.renderer will\nbe the name provided here.",
+            "description": "\n   The name by which the data model will reference this renderer.  This\n   is important to know in order to access the appropriate member of the\n   {@link qx.ui.progressive.State}'s renderer array.  That array is\n   accessed from the renderer by\n   state.getRendererData()[element.renderer] where element.renderer will\n   be the name provided here.",
             "type": "String"
           }
         ]
@@ -384,22 +384,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a cell renderer for use within a row rendered by this row\nrenderer."
+            "body": "<p>Add a cell renderer for use within a row rendered by this row\n renderer.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column number for which the cell renderer applies",
+            "body": "column {Integer}\n   The column number for which the cell renderer applies",
             "paramName": "column",
-            "description": "\nThe column number for which the cell renderer applies",
+            "description": "\n   The column number for which the cell renderer applies",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "renderer {qx.ui.progressive.renderer.table.cell.Abstract}\nThe cell renderer for the specified column.",
+            "body": "renderer {qx.ui.progressive.renderer.table.cell.Abstract}\n   The cell renderer for the specified column.",
             "paramName": "renderer",
-            "description": "\nThe cell renderer for the specified column.",
+            "description": "\n   The cell renderer for the specified column.",
             "type": "qx.ui.progressive.renderer.table.cell.Abstract"
           }
         ]
@@ -422,15 +422,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a cell renderer previously added with {@link #addRenderer}."
+            "body": "<p>Remove a cell renderer previously added with {@link #addRenderer}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column for which the cell renderer is to be removed.",
+            "body": "column {Integer}\n   The column for which the cell renderer is to be removed.",
             "paramName": "column",
-            "description": "\nThe column for which the cell renderer is to be removed.",
+            "description": "\n   The column for which the cell renderer is to be removed.",
             "type": "Integer"
           }
         ]
@@ -453,22 +453,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "state {qx.ui.progressive.State}\nData relevant to the current rendering session.",
+            "body": "state {qx.ui.progressive.State}\n   Data relevant to the current rendering session.",
             "paramName": "state",
-            "description": "\nData relevant to the current rendering session.",
+            "description": "\n   Data relevant to the current rendering session.",
             "type": "qx.ui.progressive.State"
           },
           {
             "name": "@param",
-            "body": "element {Object}\nAn object containing at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "body": "element {Object}\n   An object containing at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "paramName": "element",
-            "description": "\nAn object containing at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "description": "\n   An object containing at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "type": "Object"
           }
         ]
@@ -495,7 +495,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is required by the box layout. If returns an array of items\nto relayout."
+            "body": "<p>This method is required by the box layout. If returns an array of items\n to relayout.</p>"
           }
         ],
         "@return": [
@@ -525,15 +525,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the \"resize\" event.  We recalculate the\nwidths of each of the columns, and modify the stylesheet rule\napplicable to each column, to apply the new widths."
+            "body": "<p>Event handler for the \"resize\" event.  We recalculate the\n widths of each of the columns, and modify the stylesheet rule\n applicable to each column, to apply the new widths.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "e {qx.event.type.Event}\nIgnored",
+            "body": "e {qx.event.type.Event}\n   Ignored",
             "paramName": "e",
-            "description": "\nIgnored",
+            "description": "\n   Ignored",
             "type": "qx.event.type.Event"
           }
         ]
@@ -732,13 +732,14 @@
     "location": {
       "start": {
         "line": 504,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 571,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

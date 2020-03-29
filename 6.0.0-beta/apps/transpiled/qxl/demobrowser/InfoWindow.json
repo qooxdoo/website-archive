@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A simple, reusable information display window."
+          "body": "<p>A simple, reusable information display window.</p>"
         }
       ],
       "@param": [
@@ -51,13 +51,14 @@
     "location": {
       "start": {
         "line": 26,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 39,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "content": {
@@ -75,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The window's content. Must be a widget."
+            "body": "<p>The window's content. Must be a widget.</p>"
           }
         ]
       },
@@ -98,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If true, the window will be centered relative to the viewport on resize."
+            "body": "<p>If true, the window will be centered relative to the viewport on resize.</p>"
           }
         ]
       },
@@ -139,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the container for the conten widget"
+            "body": "<p>Returns the container for the conten widget</p>"
           }
         ],
         "@return": [
@@ -169,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all child widgets from the content container"
+            "body": "<p>Removes all child widgets from the content container</p>"
           }
         ]
       },
@@ -191,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the \"OK\" button that closes the window."
+            "body": "<p>Returns the \"OK\" button that closes the window.</p>"
           }
         ],
         "@return": [
@@ -238,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Centers the window relative to the viewport."
+            "body": "<p>Centers the window relative to the viewport.</p>"
           }
         ]
       },
@@ -264,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback function for a resize listener that centers the window if the"
+            "body": "<p>Callback function for a resize listener that centers the window if the</p>"
           }
         ],
         "@link": [

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 51,
+        "line": 60,
         "column": 0
       },
       "end": {
-        "line": 1656,
+        "line": 1665,
         "column": 3
       }
     },
@@ -21,15 +21,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nThomas Herchenroeder (thron7)\nFabian Jakobs (fjakobs)\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Thomas Herchenroeder (thron7)\n Fabian Jakobs (fjakobs)\n Fabian Jakobs (fjakobs)\n Martin Wittemann (martinwittemann)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "The GUI definition of the qooxdoo unit test runner."
+          "body": "<p>The GUI definition of the qooxdoo unit test runner.</p>"
         }
       ],
       "@asset": [
@@ -96,6 +96,38 @@
         {
           "name": "@asset",
           "body": "qx/icon/Tango/22/mimetypes/text-html.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/actions/dialog-ok.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/places/folder-open.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/actions/help-about.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/actions/view-refresh.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/actions/process-stop.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/apps/internet-feed-reader.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/actions/dialog-cancel.png"
+        },
+        {
+          "name": "@asset",
+          "body": "qx/icon/Tango/22/places/folder.png"
         }
       ],
       "@ignore": [
@@ -114,11 +146,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 64,
-        "column": 2
+        "line": 73,
+        "column": 14
       },
       "end": {
-        "line": 193,
+        "line": 202,
         "column": 3
       }
     },
@@ -126,7 +158,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -135,11 +167,11 @@
     "_iframe": {
       "location": {
         "start": {
-          "line": 208,
+          "line": 217,
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 217,
           "column": 18
         }
       },
@@ -147,15 +179,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------1"
+            "body": "<p>------------------------------------------------------------------------1</p>"
           },
           {
             "name": "@description",
-            "body": "CONSTRUCTOR HELPERS"
+            "body": "<p>CONSTRUCTOR HELPERS</p>"
           },
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------"
+            "body": "<hr />"
           }
         ]
       },
@@ -165,11 +197,11 @@
     "__currentTheme": {
       "location": {
         "start": {
-          "line": 209,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 209,
+          "line": 218,
           "column": 25
         }
       },
@@ -179,11 +211,11 @@
     "__logSync": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 219,
           "column": 4
         },
         "end": {
-          "line": 210,
+          "line": 219,
           "column": 20
         }
       },
@@ -193,11 +225,11 @@
     "__logDone": {
       "location": {
         "start": {
-          "line": 211,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 211,
+          "line": 220,
           "column": 20
         }
       },
@@ -207,11 +239,11 @@
     "_tree": {
       "location": {
         "start": {
-          "line": 212,
+          "line": 221,
           "column": 4
         },
         "end": {
-          "line": 212,
+          "line": 221,
           "column": 16
         }
       },
@@ -221,11 +253,11 @@
     "_status": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 213,
+          "line": 222,
           "column": 18
         }
       },
@@ -235,11 +267,11 @@
     "_searchTextField": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 223,
           "column": 4
         },
         "end": {
-          "line": 214,
+          "line": 223,
           "column": 27
         }
       },
@@ -249,11 +281,11 @@
     "__playgroundButton": {
       "location": {
         "start": {
-          "line": 215,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 215,
+          "line": 224,
           "column": 29
         }
       },
@@ -263,11 +295,11 @@
     "__currentJSCode": {
       "location": {
         "start": {
-          "line": 216,
+          "line": 225,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 225,
           "column": 26
         }
       },
@@ -277,11 +309,11 @@
     "__menuElements": {
       "location": {
         "start": {
-          "line": 217,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 217,
+          "line": 226,
           "column": 25
         }
       },
@@ -291,11 +323,11 @@
     "_versionFilter": {
       "location": {
         "start": {
-          "line": 218,
+          "line": 227,
           "column": 4
         },
         "end": {
-          "line": 218,
+          "line": 227,
           "column": 25
         }
       },
@@ -305,11 +337,11 @@
     "_navPart": {
       "location": {
         "start": {
-          "line": 219,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 219,
+          "line": 228,
           "column": 19
         }
       },
@@ -319,11 +351,11 @@
     "__sobutt": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 229,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 229,
           "column": 19
         }
       },
@@ -333,11 +365,11 @@
     "__viewPart": {
       "location": {
         "start": {
-          "line": 221,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 221,
+          "line": 230,
           "column": 21
         }
       },
@@ -347,11 +379,11 @@
     "__themePart": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 231,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 231,
           "column": 22
         }
       },
@@ -361,11 +393,11 @@
     "__themeMenu": {
       "location": {
         "start": {
-          "line": 223,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 223,
+          "line": 232,
           "column": 22
         }
       },
@@ -375,11 +407,11 @@
     "__menuBar": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 233,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 233,
           "column": 20
         }
       },
@@ -389,11 +421,11 @@
     "_leftComposite": {
       "location": {
         "start": {
-          "line": 225,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 225,
+          "line": 234,
           "column": 25
         }
       },
@@ -403,11 +435,11 @@
     "_infosplit": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 235,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 235,
           "column": 21
         }
       },
@@ -417,11 +449,11 @@
     "_demoView": {
       "location": {
         "start": {
-          "line": 227,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 227,
+          "line": 236,
           "column": 20
         }
       },
@@ -431,11 +463,11 @@
     "__overflowMenu": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 237,
           "column": 25
         }
       },
@@ -445,11 +477,11 @@
     "__menuItemStore": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 229,
+          "line": 238,
           "column": 26
         }
       },
@@ -459,11 +491,11 @@
     "__menuViewRadioGroup": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 239,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 239,
           "column": 30
         }
       },
@@ -473,11 +505,11 @@
     "_urlWindow": {
       "location": {
         "start": {
-          "line": 231,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 231,
+          "line": 240,
           "column": 21
         }
       },
@@ -487,11 +519,11 @@
     "__infoWindow": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 241,
           "column": 23
         }
       },
@@ -501,11 +533,11 @@
     "__stack": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 233,
+          "line": 242,
           "column": 18
         }
       },
@@ -515,11 +547,11 @@
     "__htmlView": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 243,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 243,
           "column": 20
         }
       },
@@ -529,11 +561,11 @@
     "__jsView": {
       "location": {
         "start": {
-          "line": 235,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 235,
+          "line": 244,
           "column": 18
         }
       },
@@ -543,11 +575,11 @@
     "__logView": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 245,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 245,
           "column": 19
         }
       },
@@ -557,11 +589,11 @@
     "__viewGroup": {
       "location": {
         "start": {
-          "line": 237,
+          "line": 246,
           "column": 4
         },
         "end": {
-          "line": 237,
+          "line": 246,
           "column": 21
         }
       },
@@ -571,11 +603,11 @@
     "defaultUrl": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 249,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 249,
           "column": 36
         }
       },
@@ -585,12 +617,12 @@
     "playgroundUrl": {
       "location": {
         "start": {
-          "line": 241,
+          "line": 250,
           "column": 4
         },
         "end": {
-          "line": 241,
-          "column": 118
+          "line": 250,
+          "column": 116
         }
       },
       "type": "variable",
@@ -599,11 +631,11 @@
     "__makeCommands": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 269,
           "column": 5
         }
       },
@@ -613,11 +645,11 @@
     "__syncRightView": {
       "location": {
         "start": {
-          "line": 268,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 297,
+          "line": 306,
           "column": 5
         }
       },
@@ -625,7 +657,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ]
       },
@@ -635,11 +667,11 @@
     "__getObjectSummary": {
       "location": {
         "start": {
-          "line": 303,
+          "line": 312,
           "column": 4
         },
         "end": {
-          "line": 320,
+          "line": 329,
           "column": 5
         }
       },
@@ -647,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ]
       },
@@ -657,11 +689,11 @@
     "__openWindow": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 331,
           "column": 4
         },
         "end": {
-          "line": 332,
+          "line": 341,
           "column": 5
         }
       },
@@ -671,11 +703,11 @@
     "__setCurrentJSCode": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 355,
           "column": 5
         }
       },
@@ -685,11 +717,11 @@
     "__toPlayground": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 363,
+          "line": 372,
           "column": 5
         }
       },
@@ -699,11 +731,11 @@
     "__onApiOpen": {
       "location": {
         "start": {
-          "line": 368,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 370,
+          "line": 379,
           "column": 5
         }
       },
@@ -711,7 +743,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for opening the api viewer."
+            "body": "<p>Handler for opening the api viewer.</p>"
           }
         ]
       },
@@ -721,11 +753,11 @@
     "__onManualOpen": {
       "location": {
         "start": {
-          "line": 376,
+          "line": 385,
           "column": 4
         },
         "end": {
-          "line": 378,
+          "line": 387,
           "column": 5
         }
       },
@@ -733,7 +765,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for opening the manual."
+            "body": "<p>Handler for opening the manual.</p>"
           }
         ]
       },
@@ -743,11 +775,11 @@
     "__makeToolBar": {
       "location": {
         "start": {
-          "line": 381,
+          "line": 390,
           "column": 4
         },
         "end": {
-          "line": 577,
+          "line": 586,
           "column": 5
         }
       },
@@ -757,11 +789,11 @@
     "_onHideItem": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 592,
           "column": 4
         },
         "end": {
-          "line": 592,
+          "line": 601,
           "column": 5
         }
       },
@@ -769,7 +801,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the overflow handling which will be called on hide."
+            "body": "<p>Handler for the overflow handling which will be called on hide.</p>"
           }
         ],
         "@param": [
@@ -788,11 +820,11 @@
     "_onShowItem": {
       "location": {
         "start": {
-          "line": 599,
+          "line": 608,
           "column": 4
         },
         "end": {
-          "line": 613,
+          "line": 622,
           "column": 5
         }
       },
@@ -800,7 +832,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the overflow handling which will be called on show."
+            "body": "<p>Handler for the overflow handling which will be called on show.</p>"
           }
         ],
         "@param": [
@@ -819,11 +851,11 @@
     "_getMenuItems": {
       "location": {
         "start": {
-          "line": 623,
+          "line": 632,
           "column": 4
         },
         "end": {
-          "line": 735,
+          "line": 744,
           "column": 5
         }
       },
@@ -831,7 +863,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for the overflow handling. It is responsible for returning a\ncorresponding menu item for the given toolbar item."
+            "body": "<p>Helper for the overflow handling. It is responsible for returning a\n corresponding menu item for the given toolbar item.</p>"
           }
         ],
         "@param": [
@@ -858,11 +890,11 @@
     "__makeDemoView": {
       "location": {
         "start": {
-          "line": 737,
+          "line": 746,
           "column": 4
         },
         "end": {
-          "line": 746,
+          "line": 755,
           "column": 5
         }
       },
@@ -872,11 +904,11 @@
     "__makeHtmlCodeView": {
       "location": {
         "start": {
-          "line": 748,
+          "line": 757,
           "column": 4
         },
         "end": {
-          "line": 763,
+          "line": 772,
           "column": 5
         }
       },
@@ -886,11 +918,11 @@
     "__makeJsCodeView": {
       "location": {
         "start": {
-          "line": 765,
+          "line": 774,
           "column": 4
         },
         "end": {
-          "line": 780,
+          "line": 789,
           "column": 5
         }
       },
@@ -900,11 +932,11 @@
     "__makeTree": {
       "location": {
         "start": {
-          "line": 790,
+          "line": 799,
           "column": 4
         },
         "end": {
-          "line": 806,
+          "line": 815,
           "column": 5
         }
       },
@@ -912,7 +944,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tree View in Left Pane\n- only make root node; rest will befilled when iframe has loaded (with\nleftReloadTree)"
+            "body": "<p>Tree View in Left Pane</p>\n<ul>\n<li>only make root node; rest will befilled when iframe has loaded (with\nleftReloadTree)</li>\n</ul>"
           }
         ],
         "@return": [
@@ -930,11 +962,11 @@
     "__makeUrlMenu": {
       "location": {
         "start": {
-          "line": 809,
+          "line": 818,
           "column": 4
         },
         "end": {
-          "line": 848,
+          "line": 857,
           "column": 5
         }
       },
@@ -944,11 +976,11 @@
     "treeGetSelection": {
       "location": {
         "start": {
-          "line": 857,
+          "line": 866,
           "column": 4
         },
         "end": {
-          "line": 863,
+          "line": 872,
           "column": 5
         }
       },
@@ -956,15 +988,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------"
+            "body": "<hr />"
           },
           {
             "name": "@description",
-            "body": "EVENT HANDLER"
+            "body": "<p>EVENT HANDLER</p>"
           },
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------"
+            "body": "<hr />"
           }
         ]
       },
@@ -974,11 +1006,11 @@
     "leftReloadTree": {
       "location": {
         "start": {
-          "line": 872,
+          "line": 881,
           "column": 4
         },
         "end": {
-          "line": 976,
+          "line": 985,
           "column": 5
         }
       },
@@ -986,7 +1018,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -1013,11 +1045,11 @@
     "runSample": {
       "location": {
         "start": {
-          "line": 985,
+          "line": 994,
           "column": 4
         },
         "end": {
-          "line": 993,
+          "line": 1002,
           "column": 5
         }
       },
@@ -1025,7 +1057,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "event handler for the Run Test button - performs the tests"
+            "body": "<p>event handler for the Run Test button - performs the tests</p>"
           }
         ],
         "@param": [
@@ -1052,11 +1084,11 @@
     "setCurrentSample": {
       "location": {
         "start": {
-          "line": 1002,
+          "line": 1011,
           "column": 4
         },
         "end": {
-          "line": 1061,
+          "line": 1070,
           "column": 5
         }
       },
@@ -1064,7 +1096,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -1091,11 +1123,11 @@
     "__ehIframeLoaded": {
       "location": {
         "start": {
-          "line": 1064,
+          "line": 1073,
           "column": 4
         },
         "end": {
-          "line": 1106,
+          "line": 1115,
           "column": 5
         }
       },
@@ -1105,11 +1137,11 @@
     "__onLogInterval": {
       "location": {
         "start": {
-          "line": 1109,
+          "line": 1118,
           "column": 4
         },
         "end": {
-          "line": 1153,
+          "line": 1162,
           "column": 5
         }
       },
@@ -1119,11 +1151,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 1166,
+          "line": 1175,
           "column": 4
         },
         "end": {
-          "line": 1226,
+          "line": 1235,
           "column": 5
         }
       },
@@ -1131,19 +1163,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------"
+            "body": "<hr />"
           },
           {
             "name": "@description",
-            "body": "MISC HELPERS"
+            "body": "<p>MISC HELPERS</p>"
           },
           {
             "name": "@description",
-            "body": "------------------------------------------------------------------------"
+            "body": "<hr />"
           },
           {
             "name": "@description",
-            "body": "This method filters the folders in the tree."
+            "body": "<p>This method filters the folders in the tree.</p>"
           }
         ],
         "@param": [
@@ -1162,11 +1194,11 @@
     "__getPageSource": {
       "location": {
         "start": {
-          "line": 1239,
+          "line": 1248,
           "column": 4
         },
         "end": {
-          "line": 1301,
+          "line": 1310,
           "column": 5
         }
       },
@@ -1174,7 +1206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method re-gets (through XHR) the HTML page of the current demo.  The page is\nthen scanned (in the request callback) for the second \"<script>\" tag, which\nsupposedly loads the demo application .js.  The 'src' uri of this script tag is\nthen used to construct the uri of the corresponding Javascript source file, which\nis then loaded into the source tab (through another XHR)."
+            "body": "<p>This method re-gets (through XHR) the HTML page of the current demo.  The page is\n then scanned (in the request callback) for the second \"<script>\" tag, which\n supposedly loads the demo application .js.  The 'src' uri of this script tag is\n then used to construct the uri of the corresponding Javascript source file, which\n is then loaded into the source tab (through another XHR).</p>"
           }
         ],
         "@param": [
@@ -1201,11 +1233,11 @@
     "dataLoader": {
       "location": {
         "start": {
-          "line": 1310,
+          "line": 1319,
           "column": 4
         },
         "end": {
-          "line": 1364,
+          "line": 1373,
           "column": 5
         }
       },
@@ -1213,7 +1245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TODOC"
+            "body": "<p>TODOC</p>"
           }
         ],
         "@param": [
@@ -1240,11 +1272,11 @@
     "playPrev": {
       "location": {
         "start": {
-          "line": 1373,
+          "line": 1382,
           "column": 4
         },
         "end": {
-          "line": 1415,
+          "line": 1424,
           "column": 5
         }
       },
@@ -1252,7 +1284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Plays the sample preceding the currently selected tree node"
+            "body": "<p>Plays the sample preceding the currently selected tree node</p>"
           }
         ],
         "@param": [
@@ -1279,11 +1311,11 @@
     "playNext": {
       "location": {
         "start": {
-          "line": 1426,
+          "line": 1435,
           "column": 4
         },
         "end": {
-          "line": 1467,
+          "line": 1476,
           "column": 5
         }
       },
@@ -1291,7 +1323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Plays the sample following the currently selected tree node"
+            "body": "<p>Plays the sample following the currently selected tree node</p>"
           }
         ],
         "@param": [
@@ -1324,11 +1356,11 @@
     "__beautySource": {
       "location": {
         "start": {
-          "line": 1470,
+          "line": 1479,
           "column": 4
         },
         "end": {
-          "line": 1516,
+          "line": 1525,
           "column": 5
         }
       },
@@ -1338,11 +1370,11 @@
     "disableMenuButtons": {
       "location": {
         "start": {
-          "line": 1522,
+          "line": 1531,
           "column": 4
         },
         "end": {
-          "line": 1528,
+          "line": 1537,
           "column": 5
         }
       },
@@ -1350,7 +1382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Diables all menu buttons which functionality only works with a selected\ndemo."
+            "body": "<p>Diables all menu buttons which functionality only works with a selected\n demo.</p>"
           }
         ]
       },
@@ -1360,11 +1392,11 @@
     "enableMenuButtons": {
       "location": {
         "start": {
-          "line": 1534,
+          "line": 1543,
           "column": 4
         },
         "end": {
-          "line": 1539,
+          "line": 1548,
           "column": 5
         }
       },
@@ -1372,7 +1404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enables all menu buttons which functionality only works with a selected\ndemo."
+            "body": "<p>Enables all menu buttons which functionality only works with a selected\n demo.</p>"
           }
         ]
       },
@@ -1382,11 +1414,11 @@
     "__beautyHtml": {
       "location": {
         "start": {
-          "line": 1541,
+          "line": 1550,
           "column": 4
         },
         "end": {
-          "line": 1587,
+          "line": 1596,
           "column": 5
         }
       },
@@ -1396,11 +1428,11 @@
     "polish": {
       "location": {
         "start": {
-          "line": 1596,
+          "line": 1605,
           "column": 4
         },
         "end": {
-          "line": 1598,
+          "line": 1607,
           "column": 5
         }
       },
@@ -1408,7 +1440,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "'Atom_1.html' -> 'Atom 1'"
+            "body": "<p>'Atom_1.html' -&gt; 'Atom 1'</p>"
           }
         ],
         "@param": [
@@ -1435,11 +1467,11 @@
     "__onChangeTheme": {
       "location": {
         "start": {
-          "line": 1601,
+          "line": 1610,
           "column": 4
         },
         "end": {
-          "line": 1609,
+          "line": 1618,
           "column": 5
         }
       },
@@ -1449,11 +1481,11 @@
     "_createHeader": {
       "location": {
         "start": {
-          "line": 1615,
+          "line": 1624,
           "column": 4
         },
         "end": {
-          "line": 1630,
+          "line": 1639,
           "column": 5
         }
       },
@@ -1461,7 +1493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the application header."
+            "body": "<p>Creates the application header.</p>"
           }
         ]
       },
@@ -4956,11 +4988,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 1642,
-        "column": 2
+        "line": 1651,
+        "column": 13
       },
       "end": {
-        "line": 1655,
+        "line": 1664,
         "column": 3
       }
     },
@@ -4968,7 +5000,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Wrapper for a part as defined in the config file. This class knows about all\npackages the part depends on and provides functionality to load the part."
+          "body": "<p>Wrapper for a part as defined in the config file. This class knows about all\n packages the part depends on and provides functionality to load the part.</p>"
         }
       ],
       "@internal": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 39,
@@ -58,9 +58,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "name {String} Name of the part as defined in the config file at\ncompile time.",
+          "body": "name {String} Name of the part as defined in the config file at\n    compile time.",
           "paramName": "name",
-          "description": " Name of the part as defined in the config file at\ncompile time.",
+          "description": " Name of the part as defined in the config file at\n    compile time.",
           "type": "String"
         },
         {
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads the closure part including all its packages. The loading will\nbe done parallel. After all packages are available, the closures are\nexecuted in the correct order."
+            "body": "<p>Loads the closure part including all its packages. The loading will\n be done parallel. After all packages are available, the closures are\n executed in the correct order.</p>"
           }
         ],
         "@param": [
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the packages in their correct order and marks the part as\ncomplete after execution."
+            "body": "<p>Executes the packages in their correct order and marks the part as\n complete after execution.</p>"
           }
         ]
       },
@@ -218,7 +218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for every package load. It checks for errors and decreases the\npackages to load. If all packages has been loaded, it invokes the\nexecution."
+            "body": "<p>Handler for every package load. It checks for errors and decreases the\n packages to load. If all packages has been loaded, it invokes the\n execution.</p>"
           }
         ],
         "@param": [

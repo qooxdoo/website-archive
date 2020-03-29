@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2010 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2010 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A simple tree data model used as the table model\n\nThe object structure of a single node of the tree is:\n\n<pre class='javascript'>\n{\n// USER-PROVIDED ATTRIBUTES\n// ------------------------\ntype           : qx.ui.treevirtual.MTreePrimitive.Type.LEAF,\nparentNodeId   : 23,    // index of the parent node in _nodeArr\n\nlabel          : \"My Documents\",\nbSelected      : true,  // true if node is selected; false otherwise.\nbOpened        : true,  // true (-), false (+)\nbHideOpenClose : false, // whether to hide the open/close button\nicon           : \"images/folder.gif\",\niconSelected   : \"images/folder_selected.gif\",\n\ncellStyle      : \"background-color:cyan\"\nlabelStyle     : \"background-color:red;color:white\"\n\n// USER-PROVIDED COLUMN DATA\ncolumnData     : [\nnull, // null at index of tree column (typically 0)\n\"text of column 1\",\n\"text of column 2\"\n],\n\n// APPLICATION-, MIXIN-, and SUBCLASS-PROVIDED CUSTOM DATA\ndata           : {\napplication :\n{\n// application-specific user data goes in here\nfoo: \"bar\",\n...\n},\nMDragAndDropSupport :\n{\n// Data required for the Drag & Drop mixin.\n// When a mixin is included, its constructor\n// should create this object, named according\n// to the mixin or subclass name (empty or\n// otherwise)\n},\n... // Additional mixins or subclasses.\n},\n\n// INTERNALLY-CALCULATED ATTRIBUTES\n// --------------------------------\n// The following properties need not (and should not) be set by the\n// caller, but are automatically calculated.  Some are used internally,\n// while others may be of use to event listeners.\n\nnodeId         : 42,   // The index in _nodeArr, useful to event listeners.\nchildren       : [ ],  // each value is an index into _nodeArr\n\nlevel          : 2,    // The indentation level of this tree node\n\nbFirstChild    : true,\nlastChild      : [ false ],  // Array where the index is the column of\n// indentation, and the value is a boolean.\n// These are used to locate the\n// appropriate \"tree line\" icon.\n}\n</pre>"
+          "body": "<p>A simple tree data model used as the table model\n The object structure of a single node of the tree is:\n </p>\n<pre class='javascript'>\n {\n\n\n   type           : qx.ui.treevirtual.MTreePrimitive.Type.LEAF,\n   parentNodeId   : 23,\n   label          : \"My Documents\",\n   bSelected      : true,\n   bOpened        : true,\n   bHideOpenClose : false,\n   icon           : \"images/folder.gif\",\n   iconSelected   : \"images/folder_selected.gif\",\n   cellStyle      : \"background-color:cyan\"\n   labelStyle     : \"background-color:red;color:white\"\n\n   columnData     : [\n                      null,\n                      \"text of column 1\",\n                      \"text of column 2\"\n                    ],\n\n   data           : {\n                      application :\n                      {\n\n                          foo: \"bar\",\n                          ...\n                      },\n                      MDragAndDropSupport :\n                      {\n\n\n\n\n\n                      },\n                      ...\n                    },\n\n\n\n\n\n   nodeId         : 42,\n   children       : [ ],\n   level          : 2,\n   bFirstChild    : true,\n   lastChild      : [ false ],\n\n\n\n }\n </pre>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 99,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 120,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gives the user the opportunity to filter the model. The filter\nfunction is called for every node in the model. It gets as an argument the\n<code>node</code> object and has to return\n<code>true</code> if the given data should be shown and\n<code>false</code> if the given data should be ignored."
+            "body": "<p>Gives the user the opportunity to filter the model. The filter\n function is called for every node in the model. It gets as an argument the\n <code>node</code> object and has to return\n <code>true</code> if the given data should be shown and\n <code>false</code> if the given data should be ignored.</p>"
           }
         ]
       },
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rows, resorted into tree order as necessary"
+            "body": "<p>Rows, resorted into tree order as necessary</p>"
           }
         ]
       },
@@ -191,7 +191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tree nodes, organized with hierarchy"
+            "body": "<p>Tree nodes, organized with hierarchy</p>"
           }
         ]
       },
@@ -213,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Map nodeArr index to rowArr index.  The index of this array is the\nindex of _nodeArr, and the values in this array are the indexes into\n_rowArr."
+            "body": "<p>Map nodeArr index to rowArr index.  The index of this array is the\n index of _nodeArr, and the values in this array are the indexes into\n _rowArr.</p>"
           }
         ]
       },
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Column for tree nodes"
+            "body": "<p>Column for tree nodes</p>"
           }
         ]
       },
@@ -257,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "list of indexes of selected nodes"
+            "body": "<p>list of indexes of selected nodes</p>"
           }
         ]
       },
@@ -279,15 +279,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the tree object for which this data model is used."
+            "body": "<p>Set the tree object for which this data model is used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "tree {qx.ui.treevirtual.TreeVirtual}\nThe tree used to render the data in this model.",
+            "body": "tree {qx.ui.treevirtual.TreeVirtual}\n    The tree used to render the data in this model.",
             "paramName": "tree",
-            "description": "\nThe tree used to render the data in this model.",
+            "description": "\n    The tree used to render the data in this model.",
             "type": "qx.ui.treevirtual.TreeVirtual"
           }
         ]
@@ -310,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the tree object for which this data model is used."
+            "body": "<p>Get the tree object for which this data model is used.</p>"
           }
         ],
         "@return": [
@@ -340,15 +340,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets all columns editable or not editable."
+            "body": "<p>Sets all columns editable or not editable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "editable {Boolean}\nWhether all columns are editable.",
+            "body": "editable {Boolean}\n   Whether all columns are editable.",
             "paramName": "editable",
-            "description": "\nWhether all columns are editable.",
+            "description": "\n   Whether all columns are editable.",
             "type": "Boolean"
           }
         ]
@@ -371,22 +371,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a column is editable."
+            "body": "<p>Sets whether a column is editable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "columnIndex {Integer}\nThe column of which to set the editable state.",
+            "body": "columnIndex {Integer}\n   The column of which to set the editable state.",
             "paramName": "columnIndex",
-            "description": "\nThe column of which to set the editable state.",
+            "description": "\n   The column of which to set the editable state.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "editable {Boolean}\nWhether the column should be editable.",
+            "body": "editable {Boolean}\n   Whether the column should be editable.",
             "paramName": "editable",
-            "description": "\nWhether the column should be editable.",
+            "description": "\n   Whether the column should be editable.",
             "type": "Boolean"
           }
         ]
@@ -409,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -453,7 +453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -497,7 +497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the model by a column."
+            "body": "<p>Sorts the model by a column.</p>"
           }
         ],
         "@param": [
@@ -548,15 +548,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the column index the model is sorted by. This model is never\nsorted, so -1 is returned."
+            "body": "<p>Returns the column index the model is sorted by. This model is never\n sorted, so -1 is returned.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\n-1, to indicate that the model is not sorted.",
+            "body": "{Integer}\n   -1, to indicate that the model is not sorted.",
             "type": "Integer",
-            "description": "\n-1, to indicate that the model is not sorted."
+            "description": "\n   -1, to indicate that the model is not sorted."
           }
         ]
       },
@@ -583,15 +583,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Specifies which column the tree is to be displayed in.  The tree is\ndisplayed using the SimpleTreeDataCellRenderer.  Other columns may be\nprovided which use different cell renderers.\n\nSetting the tree column involves more than simply setting this column\nindex; it also requires setting an appropriate cell renderer for this\ncolumn, that knows how to render a tree. The expected and typical\nmethod of setting the tree column is to provide it in the 'custom'\nparameter to the TreeVirtual constructor, which also initializes the\nproper cell renderers. This method does not set any cell renderers. If\nyou wish to call this method on your own, you should also manually set\nthe cell renderer for the specified column, and likely also set the\ncell renderer for column 0 (the former tree column) to something\nappropriate to your data."
+            "body": "<p>Specifies which column the tree is to be displayed in.  The tree is\n displayed using the SimpleTreeDataCellRenderer.  Other columns may be\n provided which use different cell renderers.\n Setting the tree column involves more than simply setting this column\n index; it also requires setting an appropriate cell renderer for this\n column, that knows how to render a tree. The expected and typical\n method of setting the tree column is to provide it in the 'custom'\n parameter to the TreeVirtual constructor, which also initializes the\n proper cell renderers. This method does not set any cell renderers. If\n you wish to call this method on your own, you should also manually set\n the cell renderer for the specified column, and likely also set the\n cell renderer for column 0 (the former tree column) to something\n appropriate to your data.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "columnIndex {Integer}\nThe index of the column in which the tree should be displayed.",
+            "body": "columnIndex {Integer}\n   The index of the column in which the tree should be displayed.",
             "paramName": "columnIndex",
-            "description": "\nThe index of the column in which the tree should be displayed.",
+            "description": "\n   The index of the column in which the tree should be displayed.",
             "type": "Integer"
           }
         ]
@@ -614,15 +614,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the column in which the tree is to be displayed."
+            "body": "<p>Get the column in which the tree is to be displayed.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe column in which the tree is to be displayed",
+            "body": "{Integer}\n   The column in which the tree is to be displayed",
             "type": "Integer",
-            "description": "\nThe column in which the tree is to be displayed"
+            "description": "\n   The column in which the tree is to be displayed"
           }
         ]
       },
@@ -644,7 +644,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -694,9 +694,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only.",
+            "body": "{Object} the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only.",
             "type": "Object",
-            "description": " the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only."
+            "description": " the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only."
           }
         ]
       },
@@ -723,7 +723,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a cell value by column index."
+            "body": "<p>Returns a cell value by column index.</p>"
           }
         ],
         "@throws": [
@@ -788,7 +788,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -838,32 +838,32 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the node object specific to a currently visible row. In this\nsimple tree data model, that's the same as retrieving the value of the\ntree column of the specified row."
+            "body": "<p>Returns the node object specific to a currently visible row. In this\n simple tree data model, that's the same as retrieving the value of the\n tree column of the specified row.</p>"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nThrown if the row index is out of bounds.",
+            "body": "{Error}\n   Thrown if the row index is out of bounds.",
             "type": "Error",
-            "description": "\nThrown if the row index is out of bounds."
+            "description": "\n   Thrown if the row index is out of bounds."
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowIndex {Integer}\nThe index of the row.",
+            "body": "rowIndex {Integer}\n   The index of the row.",
             "paramName": "rowIndex",
-            "description": "\nThe index of the row.",
+            "description": "\n   The index of the row.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe node object associated with the specified row.",
+            "body": "{Object}\n   The node object associated with the specified row.",
             "type": "Object",
-            "description": "\nThe node object associated with the specified row."
+            "description": "\n   The node object associated with the specified row."
           }
         ]
       },
@@ -885,59 +885,59 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a branch to the tree."
+            "body": "<p>Add a branch to the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "parentNodeId {Integer}\nThe node id of the parent of the node being added",
+            "body": "parentNodeId {Integer}\n   The node id of the parent of the node being added",
             "paramName": "parentNodeId",
-            "description": "\nThe node id of the parent of the node being added",
+            "description": "\n   The node id of the parent of the node being added",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "label {String}\nThe string to display as the label for this node",
+            "body": "label {String}\n   The string to display as the label for this node",
             "paramName": "label",
-            "description": "\nThe string to display as the label for this node",
+            "description": "\n   The string to display as the label for this node",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "bOpened {Boolean}\n<i>True</i> if the branch should be rendered in its opened state;\n<i>false</i> otherwise.",
+            "body": "bOpened {Boolean}\n   <i>True</i> if the branch should be rendered in its opened state;\n   <i>false</i> otherwise.",
             "paramName": "bOpened",
-            "description": "\n<i>True</i> if the branch should be rendered in its opened state;\n<i>false</i> otherwise.",
+            "description": "\n   <i>True</i> if the branch should be rendered in its opened state;\n   <i>false</i> otherwise.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "bHideOpenCloseButton {Boolean}\n<i>True</i> if the open/close button should not be displayed;\n<i>false</i> if the open/close button should be displayed",
+            "body": "bHideOpenCloseButton {Boolean}\n   <i>True</i> if the open/close button should not be displayed;\n   <i>false</i> if the open/close button should be displayed",
             "paramName": "bHideOpenCloseButton",
-            "description": "\n<i>True</i> if the open/close button should not be displayed;\n<i>false</i> if the open/close button should be displayed",
+            "description": "\n   <i>True</i> if the open/close button should not be displayed;\n   <i>false</i> if the open/close button should be displayed",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "icon {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "body": "icon {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "paramName": "icon",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "iconSelected {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.",
+            "body": "iconSelected {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.",
             "paramName": "iconSelected",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe node id of the newly-added branch.",
+            "body": "{Integer}\n   The node id of the newly-added branch.",
             "type": "Integer",
-            "description": "\nThe node id of the newly-added branch."
+            "description": "\n   The node id of the newly-added branch."
           }
         ]
       },
@@ -959,36 +959,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a leaf to the tree."
+            "body": "<p>Add a leaf to the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "parentNodeId {Integer}\nThe node id of the parent of the node being added",
+            "body": "parentNodeId {Integer}\n   The node id of the parent of the node being added",
             "paramName": "parentNodeId",
-            "description": "\nThe node id of the parent of the node being added",
+            "description": "\n   The node id of the parent of the node being added",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "label {String}\nThe string to display as the label for this node",
+            "body": "label {String}\n   The string to display as the label for this node",
             "paramName": "label",
-            "description": "\nThe string to display as the label for this node",
+            "description": "\n   The string to display as the label for this node",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "icon {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "body": "icon {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "paramName": "icon",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "iconSelected {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.",
+            "body": "iconSelected {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.",
             "paramName": "iconSelected",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.",
             "type": "String"
           }
         ],
@@ -1019,15 +1019,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prune the tree by removing, recursively, all of a node's children.  If\nrequested, also remove the node itself."
+            "body": "<p>Prune the tree by removing, recursively, all of a node's children.  If\n requested, also remove the node itself.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node to be pruned from the tree.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node to be pruned from the tree.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node to be pruned from the tree.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node to be pruned from the tree.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -1035,9 +1035,9 @@
           },
           {
             "name": "@param",
-            "body": "bSelfAlso {Boolean}\nIf <i>true</i> then remove the node identified by <i>nodeId</i> as\nwell as all of the children.",
+            "body": "bSelfAlso {Boolean}\n   If <i>true</i> then remove the node identified by <i>nodeId</i> as\n   well as all of the children.",
             "paramName": "bSelfAlso",
-            "description": "\nIf <i>true</i> then remove the node identified by <i>nodeId</i> as\nwell as all of the children.",
+            "description": "\n   If <i>true</i> then remove the node identified by <i>nodeId</i> as\n   well as all of the children.",
             "type": "Boolean"
           }
         ],
@@ -1068,15 +1068,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Move a node in the tree."
+            "body": "<p>Move a node in the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "moveNodeReference {Object | Integer}\nThe node to be moved.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "body": "moveNodeReference {Object | Integer}\n   The node to be moved.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "paramName": "moveNodeReference",
-            "description": "\nThe node to be moved.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node to be moved.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -1084,9 +1084,9 @@
           },
           {
             "name": "@param",
-            "body": "parentNodeReference {Object | Integer}\nThe new parent node, which must not be a LEAF.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "body": "parentNodeReference {Object | Integer}\n   The new parent node, which must not be a LEAF.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "paramName": "parentNodeReference",
-            "description": "\nThe new parent node, which must not be a LEAF.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The new parent node, which must not be a LEAF.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -1132,15 +1132,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Orders the node and creates all data needed to render the tree."
+            "body": "<p>Orders the node and creates all data needed to render the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeId {Integer}\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "body": "nodeId {Integer}\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "paramName": "nodeId",
-            "description": "\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "description": "\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "type": "Integer"
           },
           {
@@ -1170,15 +1170,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the lastChild flags to the nodes, so that the tree can render the\ntree lines right."
+            "body": "<p>Calculates the lastChild flags to the nodes, so that the tree can render the\n tree lines right.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeId {Integer}\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "body": "nodeId {Integer}\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "paramName": "nodeId",
-            "description": "\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "description": "\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "type": "Integer"
           }
         ]
@@ -1201,7 +1201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the last child flag for a node and all it's parents."
+            "body": "<p>Sets the last child flag for a node and all it's parents.</p>"
           }
         ],
         "@param": [
@@ -1239,7 +1239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders the tree data."
+            "body": "<p>Renders the tree data.</p>"
           }
         ]
       },
@@ -1261,15 +1261,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the whole data en bulk, or notifies the data model that node\nmodifications are complete."
+            "body": "<p>Sets the whole data en bulk, or notifies the data model that node\n modifications are complete.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeArr {Array | null}\nPass either an Array of node objects, or null.\n\nIf non-null, nodeArr is an array of node objects containing the\nentire tree to be displayed.  If loading the whole data en bulk in\nthis way, it is assumed that the data is correct!  No error checking\nor validation is done.  You'd better know what you're doing!  Caveat\nemptor.\n\n\nIf nodeArr is null, then this call is a notification that the user\nhas completed building or modifying a tree by issuing a series of\ncalls to {@link #addBranch} and/or {@link #addLeaf}.",
+            "body": "nodeArr {Array | null}\n   Pass either an Array of node objects, or null.\n   If non-null, nodeArr is an array of node objects containing the\n   entire tree to be displayed.  If loading the whole data en bulk in\n   this way, it is assumed that the data is correct!  No error checking\n   or validation is done.  You'd better know what you're doing!  Caveat\n   emptor.\n   If nodeArr is null, then this call is a notification that the user\n   has completed building or modifying a tree by issuing a series of\n   calls to {@link #addBranch} and/or {@link #addLeaf}.",
             "paramName": "nodeArr",
-            "description": "\nPass either an Array of node objects, or null.\n\nIf non-null, nodeArr is an array of node objects containing the\nentire tree to be displayed.  If loading the whole data en bulk in\nthis way, it is assumed that the data is correct!  No error checking\nor validation is done.  You'd better know what you're doing!  Caveat\nemptor.\n\n\nIf nodeArr is null, then this call is a notification that the user\nhas completed building or modifying a tree by issuing a series of\ncalls to {@link #addBranch} and/or {@link #addLeaf}.",
+            "description": "\n   Pass either an Array of node objects, or null.\n   If non-null, nodeArr is an array of node objects containing the\n   entire tree to be displayed.  If loading the whole data en bulk in\n   this way, it is assumed that the data is correct!  No error checking\n   or validation is done.  You'd better know what you're doing!  Caveat\n   emptor.\n   If nodeArr is null, then this call is a notification that the user\n   has completed building or modifying a tree by issuing a series of\n   calls to {@link #addBranch} and/or {@link #addLeaf}.",
             "type": [
               "Array",
               "null"
@@ -1303,15 +1303,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the array of node data."
+            "body": "<p>Return the array of node data.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array}\nArray of node objects.\nSee {@link qx.ui.treevirtual.SimpleTreeDataModel} for a description\nnodes in this array.",
+            "body": "{Array}\n  Array of node objects.\n  See {@link qx.ui.treevirtual.SimpleTreeDataModel} for a description\n  nodes in this array.",
             "type": "Array",
-            "description": "\nArray of node objects.\nSee {@link qx.ui.treevirtual.SimpleTreeDataModel} for a description\nnodes in this array."
+            "description": "\n  Array of node objects.\n  See {@link qx.ui.treevirtual.SimpleTreeDataModel} for a description\n  nodes in this array."
           }
         ]
       },
@@ -1333,7 +1333,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the tree of all nodes"
+            "body": "<p>Clears the tree of all nodes</p>"
           }
         ]
       },
@@ -1355,29 +1355,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add data to an additional column (a column other than the tree column)\nof the tree."
+            "body": "<p>Add data to an additional column (a column other than the tree column)\n of the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeId {Integer}\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "body": "nodeId {Integer}\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "paramName": "nodeId",
-            "description": "\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "description": "\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "columnIndex {Integer}\nThe column number to which the provided data applies",
+            "body": "columnIndex {Integer}\n   The column number to which the provided data applies",
             "paramName": "columnIndex",
-            "description": "\nThe column number to which the provided data applies",
+            "description": "\n   The column number to which the provided data applies",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "data {var}\nThe cell data for the specified column",
+            "body": "data {var}\n   The cell data for the specified column",
             "paramName": "data",
-            "description": "\nThe cell data for the specified column",
+            "description": "\n   The cell data for the specified column",
             "type": "var"
           }
         ]
@@ -1400,22 +1400,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve the data from an additional column (a column other than the\ntree column) of the tree."
+            "body": "<p>Retrieve the data from an additional column (a column other than the\n tree column) of the tree.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeId {Integer}\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "body": "nodeId {Integer}\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "paramName": "nodeId",
-            "description": "\nA node identifier, as previously returned by {@link #addBranch} or\n{@link #addLeaf}.",
+            "description": "\n   A node identifier, as previously returned by {@link #addBranch} or\n   {@link #addLeaf}.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "columnIndex {Integer}\nThe column number to which the provided data applies",
+            "body": "columnIndex {Integer}\n   The column number to which the provided data applies",
             "paramName": "columnIndex",
-            "description": "\nThe column number to which the provided data applies",
+            "description": "\n   The column number to which the provided data applies",
             "type": "Integer"
           }
         ],
@@ -1446,15 +1446,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set state attributes of a node."
+            "body": "<p>Set state attributes of a node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node to have its attributes set.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node to have its attributes set.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node to have its attributes set.  The node can be represented\neither by the node object, or the node id (as would have been\nreturned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node to have its attributes set.  The node can be represented\n   either by the node object, or the node id (as would have been\n   returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -1462,9 +1462,9 @@
           },
           {
             "name": "@param",
-            "body": "attributes {Map}\nEach property name in the map may correspond to the property names of\na node which are specified as <i>USER-PROVIDED ATTRIBUTES</i> in\n{@link SimpleTreeDataModel}.  Each property value will be assigned\nto the corresponding property of the node specified by nodeId.",
+            "body": "attributes {Map}\n   Each property name in the map may correspond to the property names of\n   a node which are specified as <i>USER-PROVIDED ATTRIBUTES</i> in\n   {@link SimpleTreeDataModel}.  Each property value will be assigned\n   to the corresponding property of the node specified by nodeId.",
             "paramName": "attributes",
-            "description": "\nEach property name in the map may correspond to the property names of\na node which are specified as <i>USER-PROVIDED ATTRIBUTES</i> in\n{@link SimpleTreeDataModel}.  Each property value will be assigned\nto the corresponding property of the node specified by nodeId.",
+            "description": "\n   Each property name in the map may correspond to the property names of\n   a node which are specified as <i>USER-PROVIDED ATTRIBUTES</i> in\n   {@link SimpleTreeDataModel}.  Each property value will be assigned\n   to the corresponding property of the node specified by nodeId.",
             "type": "Map"
           }
         ],
@@ -1495,15 +1495,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the mapping of nodes to rendered rows.  This function is intended\nfor use by the cell renderer, not by users of this class.\nIt is also useful to select a node."
+            "body": "<p>Return the mapping of nodes to rendered rows.  This function is intended\n for use by the cell renderer, not by users of this class.\n It is also useful to select a node.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array}\nThe array containing mappings of nodes to rendered rows.",
+            "body": "{Array}\n   The array containing mappings of nodes to rendered rows.",
             "type": "Array",
-            "description": "\nThe array containing mappings of nodes to rendered rows."
+            "description": "\n   The array containing mappings of nodes to rendered rows."
           }
         ]
       },
@@ -1525,15 +1525,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This operation maps nodes to rowIndexes.  It does the opposite job to {@link #getNodeFromRow}."
+            "body": "<p>This operation maps nodes to rowIndexes.  It does the opposite job to {@link #getNodeFromRow}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeId {Integer}\nThe id of the node (as would have been returned by addBranch(),\naddLeaf(), etc.) to get the row index for.",
+            "body": "nodeId {Integer}\n   The id of the node (as would have been returned by addBranch(),\n   addLeaf(), etc.) to get the row index for.",
             "paramName": "nodeId",
-            "description": "\nThe id of the node (as would have been returned by addBranch(),\naddLeaf(), etc.) to get the row index for.",
+            "description": "\n   The id of the node (as would have been returned by addBranch(),\n   addLeaf(), etc.) to get the row index for.",
             "type": "Integer"
           }
         ],
@@ -1564,7 +1564,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This operation maps rowIndexes to nodes.  It does the opposite job to {@link #getRowFromNodeId}.\nThis function is useful to map selection (row based) to nodes."
+            "body": "<p>This operation maps rowIndexes to nodes.  It does the opposite job to {@link #getRowFromNodeId}.\n This function is useful to map selection (row based) to nodes.</p>"
           }
         ],
         "@param": [
@@ -1603,7 +1603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear all selections in the data model.  This method does not clear\nselections displayed in the widget, and is intended for internal use,\nnot by users of this class."
+            "body": "<p>Clear all selections in the data model.  This method does not clear\n selections displayed in the widget, and is intended for internal use,\n not by users of this class.</p>"
           }
         ]
       },
@@ -1625,15 +1625,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the nodes that are currently selected."
+            "body": "<p>Return the nodes that are currently selected.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array}\nAn array containing the nodes that are currently selected.",
+            "body": "{Array}\n   An array containing the nodes that are currently selected.",
             "type": "Array",
-            "description": "\nAn array containing the nodes that are currently selected."
+            "description": "\n   An array containing the nodes that are currently selected."
           }
         ]
       },
@@ -1655,7 +1655,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1856,25 +1856,27 @@
     "location": {
       "start": {
         "line": 1199,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 1203,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "defer": {
     "location": {
       "start": {
         "line": 1205,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 1210,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

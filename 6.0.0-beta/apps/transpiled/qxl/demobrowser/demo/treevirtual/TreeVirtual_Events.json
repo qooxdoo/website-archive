@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Show use of events upon tree opening and closing, including adding nodes\ndynamically upon tree open and removing the open/close button upon tree\nopen if the branch contains no children.\n\nAllows controlling selection mode.  Labels of selected items are displayed."
+          "body": "<p>Show use of events upon tree opening and closing, including adding nodes\n dynamically upon tree open and removing the open/close button upon tree\n open if the branch contains no children.\n Allows controlling selection mode.  Labels of selected items are displayed.</p>"
         }
       ]
     }

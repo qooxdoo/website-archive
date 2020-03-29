@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 197,
+        "line": 205,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin is included by all widgets, which support an 'execute' like\nbuttons or menu entries."
+          "body": "<p>This mixin is included by all widgets, which support an 'execute' like\n buttons or menu entries.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the {@link #execute} method is invoked."
+            "body": "<p>Fired if the {@link #execute} method is invoked.</p>"
           }
         ]
       },
@@ -114,8 +114,8 @@
           "column": 4
         },
         "end": {
-          "line": 90,
-          "column": 5
+          "line": 99,
+          "column": 6
         }
       },
       "jsdoc": {
@@ -128,7 +128,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Map} Set of properties, which will by synced from the command to the\nincluding widget"
+            "body": "{Map} Set of properties, which will by synced from the command to the\n    including widget"
           }
         ],
         "@lint": [
@@ -144,11 +144,11 @@
     "execute": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 110,
+          "line": 118,
           "column": 5
         }
       },
@@ -156,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initiate the execute action."
+            "body": "<p>Initiate the execute action.</p>"
           }
         ]
       },
@@ -166,11 +166,11 @@
     "__onCommandExecute": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 137,
           "column": 5
         }
       },
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the execute event of the command."
+            "body": "<p>Handler for the execute event of the command.</p>"
           }
         ],
         "@param": [
@@ -197,11 +197,11 @@
     "_applyCommand": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 141,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 197,
           "column": 5
         }
       },
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -289,14 +289,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 193,
-        "column": 2
+        "line": 201,
+        "column": 13
       },
       "end": {
-        "line": 196,
+        "line": 204,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 866,
+        "line": 869,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nJohn Spackman (john.spackman@zenesis.com)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n John Spackman (john.spackman@zenesis.com)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Main qooxdoo logging class.\n\nUsed as central logging feature by qx.core.Object.\n\nExtremely modular and lightweight to support logging at bootstrap and\nat shutdown as well.\n\n* Supports dynamic appenders to push the output to the user\n* Supports buffering of the last 50 messages (configurable)\n* Supports different debug levels (\"debug\", \"info\", \"warn\" or \"error\")\n* Simple data serialization for incoming messages\n\nTypical use of this class is via qx.core.MLogging which is included into most\nclasses, so you would use \"this.debug(...)\" etc, but qx.log.Logger.debug(),\n.warn(), .error(), .info(), and .trace() can be used directly for static code.\n\nThe first parameter is expected to be the context object, ie the object which\nis sending the log; this can be null but that will prevent the filtering from\nfiltering on class name so ideally it will be a real qx.core.Object derived\nobject.  Other parameters are any Javascript object which will be serialized\ninto the log message\n\n<pre class=\"javascript\">\nqx.log.Logger.warn(myObject, \"This is a message to log\", myParam, otherData);\n</pre>\n\n\nThe output of logging is controlled by \"appenders\", which are classes that\naccept a log message and output it somehow (see examples in qx.log.appender.*);\ntypical examples are qx.log.appender.Console which outputs to the browser\nconsole, or qx.log.appender.Native which outputs messages into a popup\nwindow as part of your Qooxdoo UI.\n\nWhile it's quick and easy to add logging calls to code as and when you need it,\nit is often convenient to control which logging calls output messages at runtime\nrather than having to edit code. @see qx.log.Logger#addFilter"
+          "body": "<p>Main qooxdoo logging class.\n Used as central logging feature by qx.core.Object.\n Extremely modular and lightweight to support logging at bootstrap and\n at shutdown as well.</p>\n<ul>\n<li>Supports dynamic appenders to push the output to the user</li>\n<li>Supports buffering of the last 50 messages (configurable)</li>\n<li>Supports different debug levels (\"debug\", \"info\", \"warn\" or \"error\")</li>\n<li><p>Simple data serialization for incoming messages\nTypical use of this class is via qx.core.MLogging which is included into most\nclasses, so you would use \"this.debug(…)\" etc, but qx.log.Logger.debug(),\n.warn(), .error(), .info(), and .trace() can be used directly for static code.\nThe first parameter is expected to be the context object, ie the object which\nis sending the log; this can be null but that will prevent the filtering from\nfiltering on class name so ideally it will be a real qx.core.Object derived\nobject.  Other parameters are any Javascript object which will be serialized\ninto the log message</p></li>\n</ul>\n<pre class=\"javascript\">\n  qx.log.Logger.warn(myObject, \"This is a message to log\", myParam, otherData);\n </pre>\n<p>The output of logging is controlled by \"appenders\", which are classes that\n accept a log message and output it somehow (see examples in qx.log.appender.*);\n typical examples are qx.log.appender.Console which outputs to the browser\n console, or qx.log.appender.Native which outputs messages into a popup\n window as part of your Qooxdoo UI.\n While it's quick and easy to add logging calls to code as and when you need it,\n it is often convenient to control which logging calls output messages at runtime\n rather than having to edit code. @see qx.log.Logger#addFilter</p>"
         }
       ],
       "@require": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONFIGURATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONFIGURATION\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures the minimum log level required for new messages."
+            "body": "<p>Configures the minimum log level required for new messages.</p>"
           }
         ],
         "@param": [
@@ -106,7 +106,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently configured minimum log level required for new\nmessages."
+            "body": "<p>Returns the currently configured minimum log level required for new\n messages.</p>"
           }
         ],
         "@return": [
@@ -136,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configures the number of messages to be kept in the buffer."
+            "body": "<p>Configures the number of messages to be kept in the buffer.</p>"
           }
         ],
         "@param": [
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently configured number of messages to be kept in the\nbuffer."
+            "body": "<p>Returns the currently configured number of messages to be kept in the\n buffer.</p>"
           }
         ],
         "@return": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPENDER MANAGEMENT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  APPENDER MANAGEMENT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -301,11 +301,11 @@
     "register": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 149,
           "column": 4
         },
         "end": {
-          "line": 168,
+          "line": 172,
           "column": 5
         }
       },
@@ -313,15 +313,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers the given appender and inserts the last cached messages."
+            "body": "<p>Registers the given appender and inserts the last cached messages.\n Note that an appender is named by it's class name, unless it has a property\n called <code>appenderName</code></p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "appender {Class} A static appender class supporting at\nleast a <code>process()</code> method to handle incoming messages.",
+            "body": "appender {Class} A static appender class supporting at\n   least a <code>process()</code> method to handle incoming messages.",
             "paramName": "appender",
-            "description": " A static appender class supporting at\nleast a <code>process()</code> method to handle incoming messages.",
+            "description": " A static appender class supporting at\n   least a <code>process()</code> method to handle incoming messages.",
             "type": "Class"
           }
         ]
@@ -332,11 +332,11 @@
     "unregister": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 180,
           "column": 4
         },
         "end": {
-          "line": 186,
+          "line": 191,
           "column": 5
         }
       },
@@ -344,7 +344,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters the given appender"
+            "body": "<p>Unregisters the given appender</p>"
           }
         ],
         "@param": [
@@ -363,11 +363,11 @@
     "addFilter": {
       "location": {
         "start": {
-          "line": 229,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 242,
           "column": 5
         }
       },
@@ -375,7 +375,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a filter that specifies the appenders to use for a given logger name (classname).\n\nBy default, every log entry is output to all appenders but you can change this\nbehaviour by calling qx.log.Logger.addFilter; every log message is associated\nwith a class and a logging level (ie debug, warn, info, error, etc) and you can\napply a filter on either one.\n\nFor example, to restrict the output to only allow qx.ui.* classes to output debug\nlogging information you would use this:\n\n<pre class=\"javascript\">\nqx.log.Logger.addFilter(/^qx\\.ui/, null, \"debug\");\n</pre>\n\nNote that while the default is to log everything, as soon as you apply one filter\nyou are specifying an exhaustive list of classes; so if you use the above example,\nthe ONLY classes that will be able to log is qx.ui.*.  If you want to use multiple\nclasses to the output, just add more addFilter calls.\n\nThe logging level (eg \"debug\", \"error\", etc) is greater than or equal to - so in\nthe above example, debug, error, warn, and info will be output but trace will not.\n\nThe second parameter to addFilter is the classname of the appender to use; this\nallows you to specify that log messages only go to one destination; for example:\n\n<pre class=\"javascript\">\nqx.log.Logger.addFilter(/^qx\\.ui/, \"qx.log.appender.Console\", \"warn\");\nqx.log.Logger.addFilter(/^qx\\.io/, \"qx.log.appender.Native\", \"debug\");\nqx.log.Logger.addFilter(/^qx\\.io/, \"qx.log.appender.Console\", \"error\");\n</pre>\n\nIn this example, qx.ui.* will only go to the Console appender and only if a warning\nis issued; qx.io.* will go to Native for debug, error, warn, and info and to\nConsole for error, warn, and info"
+            "body": "<p>Adds a filter that specifies the appenders to use for a given logger name (classname).\n By default, every log entry is output to all appenders but you can change this\n behaviour by calling qx.log.Logger.addFilter; every log message is associated\n with a class and a logging level (ie debug, warn, info, error, etc) and you can\n apply a filter on either one.\n For example, to restrict the output to only allow qx.ui.* classes to output debug\n logging information you would use this:\n  </p>\n<pre class=\"javascript\">\n    qx.log.Logger.addFilter(/^qx\\.ui/, null, \"debug\");\n  </pre>\n<p>Note that while the default is to log everything, as soon as you apply one filter\n you are specifying an exhaustive list of classes; so if you use the above example,\n the ONLY classes that will be able to log is qx.ui.*.  If you want to use multiple\n classes to the output, just add more addFilter calls.\n The logging level (eg \"debug\", \"error\", etc) is greater than or equal to - so in\n the above example, debug, error, warn, and info will be output but trace will not.\n The second parameter to addFilter is the classname of the appender to use; this\n allows you to specify that log messages only go to one destination; for example:\n  </p>\n<pre class=\"javascript\">\n    qx.log.Logger.addFilter(/^qx\\.ui/, \"qx.log.appender.Console\", \"warn\");\n    qx.log.Logger.addFilter(/^qx\\.io/, \"qx.log.appender.Native\", \"debug\");\n    qx.log.Logger.addFilter(/^qx\\.io/, \"qx.log.appender.Console\", \"error\");\n  </pre>\n<p>In this example, qx.ui.* will only go to the Console appender and only if a warning\n is issued; qx.io.* will go to Native for debug, error, warn, and info and to\n Console for error, warn, and info\n Note that an appender is named by it's class name, unless it has a property\n called <code>appenderName</code>.</p>"
           }
         ],
         "@param": [
@@ -413,11 +413,11 @@
     "resetFilters": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 247,
           "column": 4
         },
         "end": {
-          "line": 241,
+          "line": 249,
           "column": 5
         }
       },
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset all filters"
+            "body": "<p>Reset all filters</p>"
           }
         ]
       },
@@ -435,11 +435,11 @@
     "debug": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 267,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 269,
           "column": 5
         }
       },
@@ -447,11 +447,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUSER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  USER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sending a message at level \"debug\" to the logger."
+            "body": "<p>Sending a message at level \"debug\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -464,9 +464,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -477,11 +477,11 @@
     "info": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 280,
           "column": 4
         },
         "end": {
-          "line": 274,
+          "line": 282,
           "column": 5
         }
       },
@@ -489,7 +489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"info\" to the logger."
+            "body": "<p>Sending a message at level \"info\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -502,9 +502,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -515,11 +515,11 @@
     "warn": {
       "location": {
         "start": {
-          "line": 285,
+          "line": 293,
           "column": 4
         },
         "end": {
-          "line": 287,
+          "line": 295,
           "column": 5
         }
       },
@@ -527,7 +527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"warn\" to the logger."
+            "body": "<p>Sending a message at level \"warn\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -540,9 +540,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -553,11 +553,11 @@
     "error": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 300,
+          "line": 308,
           "column": 5
         }
       },
@@ -565,7 +565,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"error\" to the logger."
+            "body": "<p>Sending a message at level \"error\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -578,9 +578,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -591,11 +591,11 @@
     "trace": {
       "location": {
         "start": {
-          "line": 311,
+          "line": 319,
           "column": 4
         },
         "end": {
-          "line": 318,
+          "line": 326,
           "column": 5
         }
       },
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints the current stack trace at level \"info\""
+            "body": "<p>Prints the current stack trace at level \"info\"</p>"
           }
         ],
         "@param": [
@@ -617,9 +617,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -630,11 +630,11 @@
     "deprecatedMethodWarning": {
       "location": {
         "start": {
-          "line": 329,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 348,
           "column": 5
         }
       },
@@ -642,15 +642,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints a method deprecation warning and a stack trace if the setting\n<code>qx.debug</code> is set to <code>true</code>."
+            "body": "<p>Prints a method deprecation warning and a stack trace if the setting\n <code>qx.debug</code> is set to <code>true</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "fcn {Function} reference to the deprecated function. This is\narguments.callee if the calling method is to be deprecated.",
+            "body": "fcn {Function} reference to the deprecated function. This is\n     arguments.callee if the calling method is to be deprecated.",
             "paramName": "fcn",
-            "description": " reference to the deprecated function. This is\narguments.callee if the calling method is to be deprecated.",
+            "description": " reference to the deprecated function. This is\n     arguments.callee if the calling method is to be deprecated.",
             "type": "Function"
           },
           {
@@ -669,11 +669,11 @@
     "deprecatedClassWarning": {
       "location": {
         "start": {
-          "line": 350,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 361,
+          "line": 369,
           "column": 5
         }
       },
@@ -681,7 +681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints a class deprecation warning and a stack trace if the setting\n<code>qx.debug</code> is set to <code>true</code>."
+            "body": "<p>Prints a class deprecation warning and a stack trace if the setting\n <code>qx.debug</code> is set to <code>true</code>.</p>"
           }
         ],
         "@param": [
@@ -708,11 +708,11 @@
     "deprecatedEventWarning": {
       "location": {
         "start": {
-          "line": 372,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 383,
+          "line": 391,
           "column": 5
         }
       },
@@ -720,7 +720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints an event deprecation warning and a stack trace if the setting\n<code>qx.debug</code> is set to <code>true</code>."
+            "body": "<p>Prints an event deprecation warning and a stack trace if the setting\n <code>qx.debug</code> is set to <code>true</code>.</p>"
           }
         ],
         "@param": [
@@ -754,11 +754,11 @@
     "deprecatedMixinWarning": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 401,
           "column": 4
         },
         "end": {
-          "line": 404,
+          "line": 412,
           "column": 5
         }
       },
@@ -766,7 +766,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints a mixin deprecation warning and a stack trace if the setting\n<code>qx.debug</code> is set to <code>true</code>."
+            "body": "<p>Prints a mixin deprecation warning and a stack trace if the setting\n <code>qx.debug</code> is set to <code>true</code>.</p>"
           }
         ],
         "@param": [
@@ -793,11 +793,11 @@
     "deprecatedConstantWarning": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 424,
           "column": 4
         },
         "end": {
-          "line": 434,
+          "line": 442,
           "column": 5
         }
       },
@@ -805,7 +805,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints a constant deprecation warning and a stacktrace if the setting\n<code>qx.debug</code> is set to <code>true</code> AND the browser supports\n__defineGetter__!"
+            "body": "<p>Prints a constant deprecation warning and a stacktrace if the setting\n <code>qx.debug</code> is set to <code>true</code> AND the browser supports\n <strong>defineGetter</strong>!</p>"
           }
         ],
         "@param": [
@@ -838,11 +838,11 @@
     "deprecateMethodOverriding": {
       "location": {
         "start": {
-          "line": 448,
+          "line": 456,
           "column": 4
         },
         "end": {
-          "line": 469,
+          "line": 477,
           "column": 5
         }
       },
@@ -850,7 +850,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints a deprecation warning and a stacktrace when a subclass overrides\nthe passed method name. The deprecation is only printed if the setting\n<code>qx.debug</code> is set to <code>true</code>."
+            "body": "<p>Prints a deprecation warning and a stacktrace when a subclass overrides\n the passed method name. The deprecation is only printed if the setting\n <code>qx.debug</code> is set to <code>true</code>.</p>"
           }
         ],
         "@param": [
@@ -891,11 +891,11 @@
     "clear": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 485,
           "column": 4
         },
         "end": {
-          "line": 479,
+          "line": 487,
           "column": 5
         }
       },
@@ -903,7 +903,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deletes the current buffer. Does not influence message handling of the\nconnected appenders."
+            "body": "<p>Deletes the current buffer. Does not influence message handling of the\n connected appenders.</p>"
           }
         ]
       },
@@ -913,11 +913,11 @@
     "__buffer": {
       "location": {
         "start": {
-          "line": 491,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 491,
+          "line": 499,
           "column": 49
         }
       },
@@ -925,7 +925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL LOGGING IMPLEMENTATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL LOGGING IMPLEMENTATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
@@ -945,11 +945,11 @@
     "__levels": {
       "location": {
         "start": {
-          "line": 495,
+          "line": 503,
           "column": 4
         },
         "end": {
-          "line": 502,
+          "line": 510,
           "column": 5
         }
       },
@@ -973,11 +973,11 @@
     "__appendersCache": {
       "location": {
         "start": {
-          "line": 505,
+          "line": 513,
           "column": 4
         },
         "end": {
-          "line": 505,
+          "line": 513,
           "column": 24
         }
       },
@@ -1001,11 +1001,11 @@
     "__getLoggerName": {
       "location": {
         "start": {
-          "line": 514,
+          "line": 522,
           "column": 4
         },
         "end": {
-          "line": 524,
+          "line": 532,
           "column": 5
         }
       },
@@ -1013,7 +1013,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects the name of the logger to use for an object"
+            "body": "<p>Detects the name of the logger to use for an object</p>"
           }
         ],
         "@param": [
@@ -1040,11 +1040,11 @@
     "isLoggerEnabled": {
       "location": {
         "start": {
-          "line": 534,
+          "line": 542,
           "column": 4
         },
         "end": {
-          "line": 538,
+          "line": 546,
           "column": 5
         }
       },
@@ -1052,7 +1052,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects whether a logger level is enabled for an object"
+            "body": "<p>Detects whether a logger level is enabled for an object</p>"
           }
         ],
         "@param": [
@@ -1086,11 +1086,11 @@
     "__log": {
       "location": {
         "start": {
-          "line": 548,
+          "line": 556,
           "column": 4
         },
         "end": {
-          "line": 599,
+          "line": 605,
           "column": 5
         }
       },
@@ -1098,7 +1098,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal logging main routine."
+            "body": "<p>Internal logging main routine.</p>"
           }
         ],
         "@param": [
@@ -1111,9 +1111,9 @@
           },
           {
             "name": "@param",
-            "body": "args {Array} List of other arguments, where the first is\ntaken as the context object.",
+            "body": "args {Array} List of other arguments, where the first is\n   taken as the context object.",
             "paramName": "args",
-            "description": " List of other arguments, where the first is\ntaken as the context object.",
+            "description": " List of other arguments, where the first is\n   taken as the context object.",
             "type": "Array"
           }
         ]
@@ -1124,11 +1124,11 @@
     "__getAppenders": {
       "location": {
         "start": {
-          "line": 609,
+          "line": 615,
           "column": 4
         },
         "end": {
-          "line": 654,
+          "line": 660,
           "column": 5
         }
       },
@@ -1136,7 +1136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the appenders for a given classname"
+            "body": "<p>Finds the appenders for a given classname</p>"
           }
         ],
         "@param": [
@@ -1170,11 +1170,11 @@
     "__detect": {
       "location": {
         "start": {
-          "line": 667,
+          "line": 673,
           "column": 4
         },
         "end": {
-          "line": 708,
+          "line": 714,
           "column": 5
         }
       },
@@ -1182,7 +1182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects the type of the variable given."
+            "body": "<p>Detects the type of the variable given.</p>"
           }
         ],
         "@param": [
@@ -1197,9 +1197,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} Type of the incoming value. Possible values:\n\"undefined\", \"null\", \"boolean\", \"number\", \"string\",\n\"function\", \"array\", \"error\", \"map\",\n\"class\", \"instance\", \"node\", \"stringify\", \"unknown\"",
+            "body": "{String} Type of the incoming value. Possible values:\n   \"undefined\", \"null\", \"boolean\", \"number\", \"string\",\n   \"function\", \"array\", \"error\", \"map\",\n   \"class\", \"instance\", \"node\", \"stringify\", \"unknown\"",
             "type": "String",
-            "description": " Type of the incoming value. Possible values:\n\"undefined\", \"null\", \"boolean\", \"number\", \"string\",\n\"function\", \"array\", \"error\", \"map\",\n\"class\", \"instance\", \"node\", \"stringify\", \"unknown\""
+            "description": " Type of the incoming value. Possible values:\n   \"undefined\", \"null\", \"boolean\", \"number\", \"string\",\n   \"function\", \"array\", \"error\", \"map\",\n   \"class\", \"instance\", \"node\", \"stringify\", \"unknown\""
           }
         ]
       },
@@ -1209,11 +1209,11 @@
     "__serialize": {
       "location": {
         "start": {
-          "line": 722,
+          "line": 728,
           "column": 4
         },
         "end": {
-          "line": 849,
+          "line": 852,
           "column": 5
         }
       },
@@ -1221,7 +1221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serializes the incoming value. If it is a singular value, the result is\na simple string. For an array or a map the result can also be a\nserialized string of a limited number of individual items."
+            "body": "<p>Serializes the incoming value. If it is a singular value, the result is\n a simple string. For an array or a map the result can also be a\n serialized string of a limited number of individual items.</p>"
           }
         ],
         "@param": [
@@ -1234,9 +1234,9 @@
           },
           {
             "name": "@param",
-            "body": "deep {Boolean?false} Whether arrays and maps should be\nserialized for a limited number of items",
+            "body": "deep {Boolean?false} Whether arrays and maps should be\n    serialized for a limited number of items",
             "paramName": "deep",
-            "description": " Whether arrays and maps should be\nserialized for a limited number of items",
+            "description": " Whether arrays and maps should be\n    serialized for a limited number of items",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1245,9 +1245,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Contains the keys <code>type</code>, <code>text</code> and\n<code>trace</code>.",
+            "body": "{Map} Contains the keys <code>type</code>, <code>text</code> and\n <code>trace</code>.",
             "type": "Map",
-            "description": " Contains the keys <code>type</code>, <code>text</code> and\n<code>trace</code>."
+            "description": " Contains the keys <code>type</code>, <code>text</code> and\n <code>trace</code>."
           }
         ]
       },
@@ -1258,14 +1258,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 853,
-        "column": 2
+        "line": 856,
+        "column": 10
       },
       "end": {
-        "line": 865,
+        "line": 868,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 26,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 190,
+        "line": 188,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nCarsten Lergenmueller (carstenl)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Carsten Lergenmueller (carstenl)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Abstract base class for image cell renderer.\n\nEXPERIMENTAL!"
+          "body": "<p>Abstract base class for image cell renderer.</p>"
         }
       ]
     }
@@ -37,11 +37,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 37,
-        "column": 2
+        "line": 35,
+        "column": 14
       },
       "end": {
-        "line": 41,
+        "line": 39,
         "column": 3
       }
     },
@@ -49,7 +49,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -58,11 +58,11 @@
     "__defaultWidth": {
       "location": {
         "start": {
-          "line": 52,
+          "line": 50,
           "column": 4
         },
         "end": {
-          "line": 52,
+          "line": 50,
           "column": 23
         }
       },
@@ -72,11 +72,11 @@
     "__defaultHeight": {
       "location": {
         "start": {
-          "line": 53,
+          "line": 51,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 51,
           "column": 24
         }
       },
@@ -86,11 +86,11 @@
     "_aliasManager": {
       "location": {
         "start": {
-          "line": 54,
+          "line": 52,
           "column": 4
         },
         "end": {
-          "line": 54,
+          "line": 52,
           "column": 24
         }
       },
@@ -100,11 +100,11 @@
     "__getImageSize": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 88,
+          "line": 86,
           "column": 5
         }
       },
@@ -112,7 +112,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute the size of the given image"
+            "body": "<p>Compute the size of the given image</p>"
           }
         ],
         "@param": [
@@ -127,9 +127,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map containing the image's <code>width</code> and\n<code>height</code>",
+            "body": "{Map} A map containing the image's <code>width</code> and\n    <code>height</code>",
             "type": "Map",
-            "description": " A map containing the image's <code>width</code> and\n<code>height</code>"
+            "description": " A map containing the image's <code>width</code> and\n    <code>height</code>"
           }
         ]
       },
@@ -139,11 +139,11 @@
     "__createImage": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 108,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 129,
           "column": 5
         }
       },
@@ -151,15 +151,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute image meta data"
+            "body": "<p>Compute image meta data</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "imageData {Object|String} Either a string containing the image URL\nor a map, which describes the image. Map keys:\n<ul>\n<li>url (required)</li>\n<li>width</li>\n<li>height</li>\n<li>tooltip</li>\n</ul>",
+            "body": "imageData {Object|String} Either a string containing the image URL\n   or a map, which describes the image. Map keys:\n   <ul>\n     <li>url (required)</li>\n     <li>width</li>\n     <li>height</li>\n     <li>tooltip</li>\n   </ul>",
             "paramName": "imageData",
-            "description": " Either a string containing the image URL\nor a map, which describes the image. Map keys:\n<ul>\n<li>url (required)</li>\n<li>width</li>\n<li>height</li>\n<li>tooltip</li>\n</ul>",
+            "description": " Either a string containing the image URL\n   or a map, which describes the image. Map keys:\n   <ul>\n     <li>url (required)</li>\n     <li>width</li>\n     <li>height</li>\n     <li>tooltip</li>\n   </ul>",
             "type": [
               "Object",
               "String"
@@ -169,9 +169,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} A map describing the image. Map keys:\n<ul>\n<li>url</li>\n<li>width</li>\n<li>height</li>\n<li>tooltip (optional)</li>\n</ul>",
+            "body": "{Object} A map describing the image. Map keys:\n   <ul>\n     <li>url</li>\n     <li>width</li>\n     <li>height</li>\n     <li>tooltip (optional)</li>\n   </ul>",
             "type": "Object",
-            "description": " A map describing the image. Map keys:\n<ul>\n<li>url</li>\n<li>width</li>\n<li>height</li>\n<li>tooltip (optional)</li>\n</ul>"
+            "description": " A map describing the image. Map keys:\n   <ul>\n     <li>url</li>\n     <li>width</li>\n     <li>height</li>\n     <li>tooltip (optional)</li>\n   </ul>"
           }
         ]
       },
@@ -181,11 +181,11 @@
     "_identifyImage": {
       "location": {
         "start": {
-          "line": 148,
+          "line": 146,
           "column": 4
         },
         "end": {
-          "line": 150,
+          "line": 148,
           "column": 5
         }
       },
@@ -193,7 +193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Identifies the Image to show. This is a template method, which must be\nimplements by sub classes."
+            "body": "<p>Identifies the Image to show. This is a template method, which must be\n implements by sub classes.</p>"
           }
         ],
         "@abstract": [
@@ -214,9 +214,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map having the following attributes:\n<ul>\n<li>\"url\": (type string) must be the URL of the image to show.</li>\n<li>\"width\": (type int) the width of the image in pixels.</li>\n<li>\"height\": (type int) the height of the image in pixels.</li>\n<li>\"tooltip\": (type string) must be the image tooltip text.</li>\n</ul>",
+            "body": "{Map} A map having the following attributes:\n           <ul>\n           <li>\"url\": (type string) must be the URL of the image to show.</li>\n           <li>\"width\": (type int) the width of the image in pixels.</li>\n           <li>\"height\": (type int) the height of the image in pixels.</li>\n           <li>\"tooltip\": (type string) must be the image tooltip text.</li>\n           </ul>",
             "type": "Map",
-            "description": " A map having the following attributes:\n<ul>\n<li>\"url\": (type string) must be the URL of the image to show.</li>\n<li>\"width\": (type int) the width of the image in pixels.</li>\n<li>\"height\": (type int) the height of the image in pixels.</li>\n<li>\"tooltip\": (type string) must be the image tooltip text.</li>\n</ul>"
+            "description": " A map having the following attributes:\n           <ul>\n           <li>\"url\": (type string) must be the URL of the image to show.</li>\n           <li>\"width\": (type int) the width of the image in pixels.</li>\n           <li>\"height\": (type int) the height of the image in pixels.</li>\n           <li>\"tooltip\": (type string) must be the image tooltip text.</li>\n           </ul>"
           }
         ]
       },
@@ -226,11 +226,11 @@
     "getContent": {
       "location": {
         "start": {
-          "line": 154,
+          "line": 152,
           "column": 4
         },
         "end": {
-          "line": 187,
+          "line": 185,
           "column": 5
         }
       },
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [

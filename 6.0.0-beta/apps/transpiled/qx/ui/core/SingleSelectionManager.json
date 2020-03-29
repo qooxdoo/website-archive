@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Responsible for the single selection management.\n\nThe class manage a list of {@link qx.ui.core.Widget} which are returned from\n{@link qx.ui.core.ISingleSelectionProvider#getItems}."
+          "body": "<p>Responsible for the single selection management.\n The class manage a list of {@link qx.ui.core.Widget} which are returned from\n {@link qx.ui.core.ISingleSelectionProvider#getItems}.</p>"
         }
       ],
       "@internal": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 45,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 55,
@@ -52,19 +52,19 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Construct the single selection manager."
+          "body": "<p>Construct the single selection manager.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "selectionProvider {qx.ui.core.ISingleSelectionProvider} The provider\nfor selection.",
+          "body": "selectionProvider {qx.ui.core.ISingleSelectionProvider} The provider\n for selection.",
           "paramName": "selectionProvider",
-          "description": " The provider\nfor selection.",
+          "description": " The provider\n for selection.",
           "type": "qx.ui.core.ISingleSelectionProvider"
         }
       ]
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the selection was modified"
+            "body": "<p>Fires after the selection was modified</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If the value is <code>true</code> the manager allows an empty selection,\notherwise the first selectable element returned from the\n<code>qx.ui.core.ISingleSelectionProvider</code> will be selected."
+            "body": "<p>If the value is <code>true</code> the manager allows an empty selection,\n otherwise the first selectable element returned from the\n <code>qx.ui.core.ISingleSelectionProvider</code> will be selected.</p>"
           }
         ]
       },
@@ -210,19 +210,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the current selected element."
+            "body": "<p>Returns the current selected element.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget | null} The current selected widget or\n<code>null</code> if the selection is empty.",
+            "body": "{qx.ui.core.Widget | null} The current selected widget or\n    <code>null</code> if the selection is empty.",
             "type": "qx.ui.core.Widget | null",
-            "description": " The current selected widget or\n<code>null</code> if the selection is empty."
+            "description": " The current selected widget or\n    <code>null</code> if the selection is empty."
           }
         ]
       },
@@ -244,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the passed element."
+            "body": "<p>Selects the passed element.</p>"
           }
         ],
         "@param": [
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reset the current selection. If {@link #allowEmptySelection} is set to\n<code>true</code> the first element will be selected."
+            "body": "<p>Reset the current selection. If {@link #allowEmptySelection} is set to\n <code>true</code> the first element will be selected.</p>"
           }
         ]
       },
@@ -305,7 +305,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return <code>true</code> if the passed element is selected."
+            "body": "<p>Return <code>true</code> if the passed element is selected.</p>"
           }
         ],
         "@param": [
@@ -320,9 +320,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if passed element is selected,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if passed element is selected,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if passed element is selected,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if passed element is selected,\n    <code>false</code> otherwise."
           }
         ],
         "@throws": [
@@ -352,15 +352,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns <code>true</code> if selection is empty."
+            "body": "<p>Returns <code>true</code> if selection is empty.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if selection is empty,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if selection is empty,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if selection is empty,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if selection is empty,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -382,15 +382,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all elements which are selectable."
+            "body": "<p>Returns all elements which are selectable.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "all {Boolean} true for all selectables, false for the\nselectables the user can interactively select",
+            "body": "all {Boolean} true for all selectables, false for the\n   selectables the user can interactively select",
             "paramName": "all",
-            "description": " true for all selectables, false for the\nselectables the user can interactively select",
+            "description": " true for all selectables, false for the\n   selectables the user can interactively select",
             "type": "Boolean"
           }
         ],
@@ -421,11 +421,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "apply method"
+            "body": "<p>apply method</p>"
           }
         ]
       },
@@ -450,19 +450,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   HELPERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set selected element.\n\nIf passes value is <code>null</code>, the selection will be reseted."
+            "body": "<p>Set selected element.\n If passes value is <code>null</code>, the selection will be reseted.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.core.Widget | null} element to select, or\n<code>null</code> to reset selection.",
+            "body": "item {qx.ui.core.Widget | null} element to select, or\n    <code>null</code> to reset selection.",
             "paramName": "item",
-            "description": " element to select, or\n<code>null</code> to reset selection.",
+            "description": " element to select, or\n    <code>null</code> to reset selection.",
             "type": [
               "qx.ui.core.Widget",
               "null"
@@ -488,7 +488,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if passed element is a child element."
+            "body": "<p>Checks if passed element is a child element.</p>"
           }
         ],
         "@param": [
@@ -503,9 +503,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if element is child element,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> if element is child element,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> if element is child element,\n<code>false</code> otherwise."
+            "description": " <code>true</code> if element is child element,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -727,7 +727,7 @@
     "location": {
       "start": {
         "line": 288,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 296,
@@ -738,7 +738,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

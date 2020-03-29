@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Interface for a row renderer."
+          "body": "<p>Interface for a row renderer.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates a data row.\n\nThe rowInfo map contains the following properties:\n<ul>\n<li>rowData (var): contains the row data for the row.\nThe kind of this object depends on the table model, see\n{@link ITableModel#getRowData()}</li>\n<li>row (int): the model index of the row.</li>\n<li>selected (boolean): whether a cell in this row is selected.</li>\n<li>focusedRow (boolean): whether the focused cell is in this row.</li>\n<li>table (qx.ui.table.Table): the table the row belongs to.</li>\n</ul>"
+            "body": "<p>Updates a data row.\n The rowInfo map contains the following properties:\n </p>\n<ul>\n <li>rowData (var): contains the row data for the row.\n   The kind of this object depends on the table model, see\n   {@link ITableModel#getRowData()}</li>\n <li>row (int): the model index of the row.</li>\n <li>selected (boolean): whether a cell in this row is selected.</li>\n <li>focusedRow (boolean): whether the focused cell is in this row.</li>\n <li>table (qx.ui.table.Table): the table the row belongs to.</li>\n </ul>"
           }
         ],
         "@abstract": [
@@ -59,9 +59,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "rowInfo {Map} A map containing the information about the row to\nupdate.",
+            "body": "rowInfo {Map} A map containing the information about the row to\n      update.",
             "paramName": "rowInfo",
-            "description": " A map containing the information about the row to\nupdate.",
+            "description": " A map containing the information about the row to\n      update.",
             "type": "Map"
           },
           {
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the row's height CSS style taking the box model into account"
+            "body": "<p>Get the row's height CSS style taking the box model into account</p>"
           }
         ],
         "@param": [
@@ -122,15 +122,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create a style string, which will be set as the style property of the row."
+            "body": "<p>Create a style string, which will be set as the style property of the row.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowInfo {Map} A map containing the information about the row to\nupdate. See {@link #updateDataRowElement} for more information.",
+            "body": "rowInfo {Map} A map containing the information about the row to\n      update. See {@link #updateDataRowElement} for more information.",
             "paramName": "rowInfo",
-            "description": " A map containing the information about the row to\nupdate. See {@link #updateDataRowElement} for more information.",
+            "description": " A map containing the information about the row to\n      update. See {@link #updateDataRowElement} for more information.",
             "type": "Map"
           }
         ]
@@ -153,15 +153,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create a HTML class string, which will be set as the class property of the row."
+            "body": "<p>Create a HTML class string, which will be set as the class property of the row.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowInfo {Map} A map containing the information about the row to\nupdate. See {@link #updateDataRowElement} for more information.",
+            "body": "rowInfo {Map} A map containing the information about the row to\n      update. See {@link #updateDataRowElement} for more information.",
             "paramName": "rowInfo",
-            "description": " A map containing the information about the row to\nupdate. See {@link #updateDataRowElement} for more information.",
+            "description": " A map containing the information about the row to\n      update. See {@link #updateDataRowElement} for more information.",
             "type": "Map"
           }
         ]

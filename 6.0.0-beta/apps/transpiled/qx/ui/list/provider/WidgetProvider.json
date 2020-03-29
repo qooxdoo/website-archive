@@ -26,11 +26,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The provider implements the {@link qx.ui.virtual.core.IWidgetCellProvider} API,\nwhich can be used as delegate for the widget cell rendering and it\nprovides a API to bind the model with the rendered item."
+          "body": "<p>The provider implements the {@link qx.ui.virtual.core.IWidgetCellProvider} API,\n which can be used as delegate for the widget cell rendering and it\n provides a API to bind the model with the rendered item.</p>"
         }
       ],
       "@internal": [
@@ -46,7 +46,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 55,
@@ -57,7 +57,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Creates the <code>WidgetProvider</code>"
+          "body": "<p>Creates the <code>WidgetProvider</code></p>"
         }
       ],
       "@param": [
@@ -143,11 +143,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -266,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -300,7 +300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@return": [
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -369,7 +369,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -404,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -419,9 +419,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the row can be selected,\n<code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> when the row can be selected,\n    <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> when the row can be selected,\n<code>false</code> otherwise."
+            "description": " <code>true</code> when the row can be selected,\n    <code>false</code> otherwise."
           }
         ]
       },
@@ -447,11 +447,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Styles a selected item."
+            "body": "<p>Styles a selected item.</p>"
           }
         ],
         "@param": [
@@ -482,7 +482,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Styles a not selected item."
+            "body": "<p>Styles a not selected item.</p>"
           }
         ],
         "@param": [
@@ -513,7 +513,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls the delegate <code>onPool</code> method when it is used in the\n{@link #delegate} property."
+            "body": "<p>Calls the delegate <code>onPool</code> method when it is used in the\n {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -544,11 +544,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the created item widget event."
+            "body": "<p>Event handler for the created item widget event.</p>"
           }
         ],
         "@param": [
@@ -579,7 +579,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the created item widget event."
+            "body": "<p>Event handler for the created item widget event.</p>"
           }
         ],
         "@param": [
@@ -610,7 +610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the change delegate event."
+            "body": "<p>Event handler for the change delegate event.</p>"
           }
         ],
         "@param": [
@@ -641,11 +641,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method to get the widget from the passed row."
+            "body": "<p>Helper method to get the widget from the passed row.</p>"
           }
         ],
         "@param": [
@@ -684,7 +684,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to update the states from a widget."
+            "body": "<p>Helper method to update the states from a widget.</p>"
           }
         ],
         "@param": [
@@ -720,7 +720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The path to the property which holds the information that should be\nshown as a label. This is only needed if objects are stored in the model."
+            "body": "<p>The path to the property which holds the information that should be\n shown as a label. This is only needed if objects are stored in the model.</p>"
           }
         ],
         "@param": [
@@ -747,7 +747,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The path to the property which holds the information that should be\nshown as an icon. This is only needed if objects are stored in the model\nand if the icon should be shown."
+            "body": "<p>The path to the property which holds the information that should be\n shown as an icon. This is only needed if objects are stored in the model\n and if the icon should be shown.</p>"
           }
         ],
         "@param": [
@@ -774,7 +774,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the label binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the label binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ],
         "@param": [
@@ -801,7 +801,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the icon binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the icon binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ],
         "@param": [
@@ -828,7 +828,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation object, which can have one or more functions defined by the\n{@link qx.ui.list.core.IListDelegate} interface."
+            "body": "<p>Delegation object, which can have one or more functions defined by the\n {@link qx.ui.list.core.IListDelegate} interface.</p>"
           }
         ],
         "@param": [
@@ -863,15 +863,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding the default properties from\nthe model to the target widget. The used default properties\ndepends on the passed item. When the passed item is\na list item the \"label\" and \"icon\" property is used.\nWhen the passed item is a group item the \"value\" property is\nused.\n\nThis method should only be called in the\n{@link IListDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding the default properties from\n the model to the target widget. The used default properties\n depends on the passed item. When the passed item is\n a list item the \"label\" and \"icon\" property is used.\n When the passed item is a group item the \"value\" property is\n used.\n This method should only be called in the\n {@link IListDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.core.Widget} The internally created and used\nlist or group item.",
+            "body": "item {qx.ui.core.Widget} The internally created and used\n   list or group item.",
             "paramName": "item",
-            "description": " The internally created and used\nlist or group item.",
+            "description": " The internally created and used\n   list or group item.",
             "type": "qx.ui.core.Widget"
           },
           {
@@ -896,15 +896,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the model to the target\nwidget.\nThis method should only be called in the\n{@link IListDelegate#bindItem} function implemented by the\n{@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the model to the target\n widget.\n This method should only be called in the\n {@link IListDelegate#bindItem} function implemented by the\n {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePath {String | null} The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "body": "sourcePath {String | null} The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "paramName": "sourcePath",
-            "description": " The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "description": " The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "type": [
               "String",
               "null"
@@ -956,7 +956,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the target widget to\nthe model.\nThis method should only be called in the\n{@link IListDelegate#bindItem} function implemented by the\n{@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the target widget to\n the model.\n This method should only be called in the\n {@link IListDelegate#bindItem} function implemented by the\n {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -1016,7 +1016,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure the passed item if a delegate is set and the needed\nfunction {@link IListDelegate#configureItem} is available."
+            "body": "<p>Configure the passed item if a delegate is set and the needed\n function {@link IListDelegate#configureItem} is available.</p>"
           }
         ],
         "@param": [
@@ -1042,7 +1042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure the passed item if a delegate is set and the needed\nfunction {@link IListDelegate#configureGroupItem} is available."
+            "body": "<p>Configure the passed item if a delegate is set and the needed\n function {@link IListDelegate#configureGroupItem} is available.</p>"
           }
         ],
         "@param": [
@@ -1068,7 +1068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets up the binding for the given item and index."
+            "body": "<p>Sets up the binding for the given item and index.</p>"
           }
         ],
         "@param": [
@@ -1101,7 +1101,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets up the binding for the given group item and index."
+            "body": "<p>Sets up the binding for the given group item and index.</p>"
           }
         ],
         "@param": [
@@ -1134,15 +1134,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the binding of the given item."
+            "body": "<p>Removes the binding of the given item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.core.Widget} The item which the binding should\nbe removed.",
+            "body": "item {qx.ui.core.Widget} The item which the binding should\n   be removed.",
             "paramName": "item",
-            "description": " The item which the binding should\nbe removed.",
+            "description": " The item which the binding should\n   be removed.",
             "type": "qx.ui.core.Widget"
           }
         ]
@@ -1160,7 +1160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to create the path for binding."
+            "body": "<p>Helper method to create the path for binding.</p>"
           }
         ],
         "@param": [
@@ -1211,7 +1211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to save the binding for the widget."
+            "body": "<p>Helper method to save the binding for the widget.</p>"
           }
         ],
         "@param": [
@@ -1244,7 +1244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method which returns all bound id from the widget."
+            "body": "<p>Helper method which returns all bound id from the widget.</p>"
           }
         ],
         "@param": [
@@ -1688,13 +1688,14 @@
     "location": {
       "start": {
         "line": 326,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 331,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

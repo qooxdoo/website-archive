@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2016 Zenesis Limited (http://www.zenesis.com)\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJohn Spackman (john.spackman@zenesis.com)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2016 Zenesis Limited (http://www.zenesis.com)\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n John Spackman (john.spackman@zenesis.com)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class provides static API methods that allow the annotations of a class\nto be inspected at runtime.\n\nAnnotations are added to a class when the class is defined and is an array of\nzero or more objects; annotations are always seen to be an array, but the contents\nof that array is not type checked and is never changed (you should not change\nthe array at runtime).\n\nAnnotations in the class definition are easily recognisable by the \"@\" symbol,\neither as a prefix to a special keyword such as \"construct\", or as the prefix\nto the name of the member which is being annotated.  The only exception to this\nis that classes and properties don't need to be named, they just need a \"@\"\nproperty.\n\nFor example:\n\n<pre class='javascript'>\nqx.Class.define(\"foo.MyClass\", {\n\"@\": [ \"my-class-annotation\" ], // Class annotations,\n\"@construct\": [ \"my-constructor-annotation\" ], // Constructor annotations,\n\"@destruct\": [ \"my-destructor-annotation\" ], // Destructor annotations,\n\nproperties: {\nmyProperty: {\n\"@\": [ \"some-property-anno\" ],\ninit: null,\nnullable: true\n}\n},\n\nmembers: {\n\"@myMethod\": [ new foo.annotations.MyAnnotation(1, \"test\") ],\nmyMethod: function() {\n// ... snip ...\n}\n},\n\nstatics: {\n\"@myStatic\": [ \"a static anno\" ],\nmyStatic: function() {\n// ... snip ...\n}\n}\n});\n</pre>\n\nNote that the annotation can be anything - a string can be easy and quick, but an\ninstance of a class may be appropriate for sophisticated needs (see the myMethod\nexample above).\n\nThe static methods in this class allow you to programmatically get the annotations\nthat were defined; getClass() returns the class annotations, getMethod returns the\nannotions for the named method, etc.\n\nWhen classes derive from each other, the default methods get the annotations for\nthe class and for the super classes as well; the array will be populated so that\nthe class's annotations are at the start, followed by it's super class, and so\non.  If you only want the annotations of the class and not those from the superclass,\nuse one of the getOwnXxxx methods instead."
+          "body": "<p>This class provides static API methods that allow the annotations of a class\n to be inspected at runtime.\n Annotations are added to a class when the class is defined and is an array of\n zero or more objects; annotations are always seen to be an array, but the contents\n of that array is not type checked and is never changed (you should not change\n the array at runtime).\n Annotations in the class definition are easily recognisable by the \"@\" symbol,\n either as a prefix to a special keyword such as \"construct\", or as the prefix\n to the name of the member which is being annotated.  The only exception to this\n is that classes and properties don't need to be named, they just need a \"@\"\n property.\n For example:\n </p>\n<pre class='javascript'>\n qx.Class.define(\"foo.MyClass\", {\n  \"@\": [ \"my-class-annotation\" ],\n  \"@construct\": [ \"my-constructor-annotation\" ],\n  \"@destruct\": [ \"my-destructor-annotation\" ],\n  properties: {\n    myProperty: {\n      \"@\": [ \"some-property-anno\" ],\n      init: null,\n      nullable: true\n    }\n  },\n  members: {\n    \"@myMethod\": [ new foo.annotations.MyAnnotation(1, \"test\") ],\n    myMethod: function() {\n\n    }\n  },\n  statics: {\n    \"@myStatic\": [ \"a static anno\" ],\n    myStatic: function() {\n\n    }\n  }\n });\n </pre>\n<p>Note that the annotation can be anything - a string can be easy and quick, but an\n instance of a class may be appropriate for sophisticated needs (see the myMethod\n example above).\n The static methods in this class allow you to programmatically get the annotations\n that were defined; getClass() returns the class annotations, getMethod returns the\n annotions for the named method, etc.\n When classes derive from each other, the default methods get the annotations for\n the class and for the super classes as well; the array will be populated so that\n the class's annotations are at the start, followed by it's super class, and so\n on.  If you only want the annotations of the class and not those from the superclass,\n use one of the getOwnXxxx methods instead.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of annotations, exclusively from this class"
+            "body": "<p>Returns a list of annotations, exclusively from this class</p>"
           }
         ],
         "@param": [
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of annotations, from this class and superclasses"
+            "body": "<p>Returns a list of annotations, from this class and superclasses</p>"
           }
         ],
         "@param": [
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class annotations, exclusively from the class"
+            "body": "<p>Returns the class annotations, exclusively from the class</p>"
           }
         ],
         "@param": [
@@ -216,7 +216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class annotations, from this class and superclasses"
+            "body": "<p>Returns the class annotations, from this class and superclasses</p>"
           }
         ],
         "@param": [
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class constructor's annotations, exclusively from the class"
+            "body": "<p>Returns the class constructor's annotations, exclusively from the class</p>"
           }
         ],
         "@param": [
@@ -310,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class constructor's annotations, from the class and superclasses"
+            "body": "<p>Returns the class constructor's annotations, from the class and superclasses</p>"
           }
         ],
         "@param": [
@@ -357,7 +357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class destructor's annotations, exclusively from the class"
+            "body": "<p>Returns the class destructor's annotations, exclusively from the class</p>"
           }
         ],
         "@param": [
@@ -404,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class destructor's annotations, from the class and superclasses"
+            "body": "<p>Returns the class destructor's annotations, from the class and superclasses</p>"
           }
         ],
         "@param": [
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class member's annotations, exclusively from the class"
+            "body": "<p>Returns the class member's annotations, exclusively from the class</p>"
           }
         ],
         "@param": [
@@ -505,7 +505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class member's annotations, from the class and superclass"
+            "body": "<p>Returns the class member's annotations, from the class and superclass</p>"
           }
         ],
         "@param": [
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class property's annotations, exclusively from the class"
+            "body": "<p>Returns the class property's annotations, exclusively from the class</p>"
           }
         ],
         "@param": [
@@ -613,7 +613,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class property's annotations, from the class and superclasses"
+            "body": "<p>Returns the class property's annotations, from the class and superclasses</p>"
           }
         ],
         "@param": [
@@ -667,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a list of property names that implement a given annotation."
+            "body": "<p>Returns a list of property names that implement a given annotation.</p>"
           }
         ],
         "@param": [
@@ -716,7 +716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class static's annotations, exclusively from the class"
+            "body": "<p>Returns the class static's annotations, exclusively from the class</p>"
           }
         ],
         "@param": [

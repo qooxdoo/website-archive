@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "CSS/Style property manipulation module"
+          "body": "<p>CSS/Style property manipulation module</p>"
         }
       ],
       "@group": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "INTERNAL\n\nReturns the rendered height of the first element in the collection."
+            "body": "<p>INTERNAL\n Returns the rendered height of the first element in the collection.</p>"
           }
         ],
         "@attach": [
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "INTERNAL\n\nReturns the rendered width of the first element in the collection"
+            "body": "<p>INTERNAL\n Returns the rendered width of the first element in the collection</p>"
           }
         ],
         "@attach": [
@@ -147,7 +147,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "INTERNAL\n\nReturns the content height of the first element in the collection.\nThis is the maximum height the element can use, excluding borders,\nmargins, padding or scroll bars."
+            "body": "<p>INTERNAL\n Returns the content height of the first element in the collection.\n This is the maximum height the element can use, excluding borders,\n margins, padding or scroll bars.</p>"
           }
         ],
         "@attach": [
@@ -194,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "INTERNAL\n\nReturns the content width of the first element in the collection.\nThis is the maximum width the element can use, excluding borders,\nmargins, padding or scroll bars."
+            "body": "<p>INTERNAL\n Returns the content width of the first element in the collection.\n This is the maximum width the element can use, excluding borders,\n margins, padding or scroll bars.</p>"
           }
         ],
         "@attach": [
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maps HTML elements to their default \"display\" style values."
+            "body": "<p>Maps HTML elements to their default \"display\" style values.</p>"
           }
         ]
       },
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attempts tp determine the default \"display\" style value for\nelements with the given tag name."
+            "body": "<p>Attempts tp determine the default \"display\" style value for\n elements with the given tag name.</p>"
           }
         ],
         "@param": [
@@ -286,9 +286,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The default \"display\" value, e.g. <code>inline</code>\nor <code>block</code>",
+            "body": "{String} The default \"display\" value, e.g. <code>inline</code>\n or <code>block</code>",
             "type": "String",
-            "description": " The default \"display\" value, e.g. <code>inline</code>\nor <code>block</code>"
+            "description": " The default \"display\" value, e.g. <code>inline</code>\n or <code>block</code>"
           }
         ]
       },
@@ -310,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Swaps the given styles of the element and execute the callback\nbefore the original values are restored.\n\nFinally returns the return value of the callback."
+            "body": "<p>Swaps the given styles of the element and execute the callback\n before the original values are restored.\n Finally returns the return value of the callback.</p>"
           }
         ],
         "@param": [
@@ -370,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Includes a Stylesheet file"
+            "body": "<p>Includes a Stylesheet file</p>"
           }
         ],
         "@attachStatic": [
@@ -417,7 +417,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the rendered height of the first element in the collection."
+            "body": "<p>Returns the rendered height of the first element in the collection.</p>"
           }
         ],
         "@attach": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the rendered width of the first element in the collection"
+            "body": "<p>Returns the rendered width of the first element in the collection</p>"
           }
         ],
         "@attach": [
@@ -511,7 +511,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content height of the first element in the collection.\nThis is the maximum height the element can use, excluding borders,\nmargins, padding or scroll bars."
+            "body": "<p>Returns the content height of the first element in the collection.\n This is the maximum height the element can use, excluding borders,\n margins, padding or scroll bars.</p>"
           }
         ],
         "@attach": [
@@ -558,7 +558,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content width of the first element in the collection.\nThis is the maximum width the element can use, excluding borders,\nmargins, padding or scroll bars."
+            "body": "<p>Returns the content width of the first element in the collection.\n This is the maximum width the element can use, excluding borders,\n margins, padding or scroll bars.</p>"
           }
         ],
         "@attach": [
@@ -605,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows any elements with \"display: none\" in the collection. If an element\nwas hidden by using the {@link #hide} method, its previous\n\"display\" style value will be re-applied. Otherwise, the\ndefault \"display\" value for the element type will be applied."
+            "body": "<p>Shows any elements with \"display: none\" in the collection. If an element\n was hidden by using the {@link #hide} method, its previous\n \"display\" style value will be re-applied. Otherwise, the\n default \"display\" value for the element type will be applied.</p>"
           }
         ],
         "@attach": [
@@ -641,7 +641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides all elements in the collection by setting their \"display\"\nstyle to \"none\". The previous value is stored so it can be re-applied\nwhen {@link #show} is called."
+            "body": "<p>Hides all elements in the collection by setting their \"display\"\n style to \"none\". The previous value is stored so it can be re-applied\n when {@link #show} is called.</p>"
           }
         ],
         "@attach": [
@@ -677,7 +677,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the distance between the first element in the collection and its\noffset parent"
+            "body": "<p>Returns the distance between the first element in the collection and its\n offset parent</p>"
           }
         ],
         "@attach": [
@@ -689,9 +689,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} a map with the keys <code>left</code> and <code>top</code>\ncontaining the distance between the elements",
+            "body": "{Map} a map with the keys <code>left</code> and <code>top</code>\n containing the distance between the elements",
             "type": "Map",
-            "description": " a map with the keys <code>left</code> and <code>top</code>\ncontaining the distance between the elements"
+            "description": " a map with the keys <code>left</code> and <code>top</code>\n containing the distance between the elements"
           }
         ]
       },
@@ -713,7 +713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the computed location of the given element in the context of the\ndocument dimensions.\n\nSupported modes:\n\n* <code>margin</code>: Calculate from the margin box of the element (bigger than the visual appearance: including margins of given element)\n* <code>box</code>: Calculates the offset box of the element (default, uses the same size as visible)\n* <code>border</code>: Calculate the border box (useful to align to border edges of two elements).\n* <code>scroll</code>: Calculate the scroll box (relevant for absolute positioned content).\n* <code>padding</code>: Calculate the padding box (relevant for static/relative positioned content)."
+            "body": "<p>Returns the computed location of the given element in the context of the\n document dimensions.\n Supported modes:</p>\n<ul>\n<li><code>margin</code>: Calculate from the margin box of the element (bigger than the visual appearance: including margins of given element)</li>\n<li><code>box</code>: Calculates the offset box of the element (default, uses the same size as visible)</li>\n<li><code>border</code>: Calculate the border box (useful to align to border edges of two elements).</li>\n<li><code>scroll</code>: Calculate the scroll box (relevant for absolute positioned content).</li>\n<li><code>padding</code>: Calculate the padding box (relevant for static/relative positioned content).</li>\n</ul>"
           }
         ],
         "@attach": [
@@ -736,9 +736,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the element relative to the document.",
+            "body": "{Map} A map with the keys <code>left</code>, <code>top</code>,\n <code>right</code> and <code>bottom</code> which contains the distance\n of the element relative to the document.",
             "type": "Map",
-            "description": " A map with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the element relative to the document."
+            "description": " A map with the keys <code>left</code>, <code>top</code>,\n <code>right</code> and <code>bottom</code> which contains the distance\n of the element relative to the document."
           }
         ]
       },
@@ -760,7 +760,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Modifies the given style property on all elements in the collection."
+            "body": "<p>Modifies the given style property on all elements in the collection.</p>"
           }
         ],
         "@attach": [
@@ -812,7 +812,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given style property for the first item in the\ncollection."
+            "body": "<p>Returns the value of the given style property for the first item in the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -857,7 +857,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets multiple style properties for each item in the collection."
+            "body": "<p>Sets multiple style properties for each item in the collection.</p>"
           }
         ],
         "@attach": [
@@ -902,7 +902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the values of multiple style properties for each item in the\ncollection"
+            "body": "<p>Returns the values of multiple style properties for each item in the\n collection</p>"
           }
         ],
         "@attach": [
@@ -947,7 +947,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a class name to each element in the collection"
+            "body": "<p>Adds a class name to each element in the collection</p>"
           }
         ],
         "@attach": [
@@ -992,7 +992,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds multiple class names to each element in the collection"
+            "body": "<p>Adds multiple class names to each element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1037,7 +1037,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a class name from each element in the collection"
+            "body": "<p>Removes a class name from each element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1082,7 +1082,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes multiple class names from each element in the collection.\nUse {@link qx.module.Attribute#removeAttribute} to remove all classes."
+            "body": "<p>Removes multiple class names from each element in the collection.\n Use {@link qx.module.Attribute#removeAttribute} to remove all classes.</p>"
           }
         ],
         "@attach": [
@@ -1127,7 +1127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the first element in the collection has the given class name"
+            "body": "<p>Checks if the first element in the collection has the given class name</p>"
           }
         ],
         "@attach": [
@@ -1172,7 +1172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the class name of the first element in the collection"
+            "body": "<p>Returns the class name of the first element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1208,7 +1208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the given class name on each item in the collection"
+            "body": "<p>Toggles the given class name on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -1253,7 +1253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Toggles the given list of class names on each item in the collection"
+            "body": "<p>Toggles the given list of class names on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -1298,7 +1298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces a class name on each element in the collection"
+            "body": "<p>Replaces a class name on each element in the collection</p>"
           }
         ],
         "@attach": [
@@ -1340,13 +1340,14 @@
     "location": {
       "start": {
         "line": 599,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 608,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

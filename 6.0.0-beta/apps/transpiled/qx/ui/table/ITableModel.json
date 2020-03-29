@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The data model of a table."
+          "body": "<p>The data model of a table.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the table data changed (the stuff shown in the table body).\nThe data property of the event may be null or a map having the following attributes:\n<ul>\n<li>firstRow: The index of the first row that has changed.</li>\n<li>lastRow: The index of the last row that has changed.</li>\n<li>firstColumn: The model index of the first column that has changed.</li>\n<li>lastColumn: The model index of the last column that has changed.</li>\n</ul>"
+            "body": "<p>Fired when the table data changed (the stuff shown in the table body).\n The data property of the event may be null or a map having the following attributes:\n </p>\n<ul>\n   <li>firstRow: The index of the first row that has changed.</li>\n   <li>lastRow: The index of the last row that has changed.</li>\n   <li>firstColumn: The model index of the first column that has changed.</li>\n   <li>lastColumn: The model index of the last column that has changed.</li>\n </ul>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the meta data changed (the stuff shown in the table header)."
+            "body": "<p>Fired when the meta data changed (the stuff shown in the table header).</p>"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the table is sorted (but before the metaDataChanged event)"
+            "body": "<p>Fired after the table is sorted (but before the metaDataChanged event)</p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the number of rows in the model."
+            "body": "<p>Returns the number of rows in the model.</p>"
           }
         ],
         "@abstract": [
@@ -151,7 +151,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of one row. This function may be overridden by models which hold\nall data of a row in one object. By using this function, clients have a way of\nquickly retrieving the entire row data.\n\n<b>Important:</b>Models which do not have their row data accessible in one object\nmay return null."
+            "body": "<p>Returns the data of one row. This function may be overridden by models which hold\n all data of a row in one object. By using this function, clients have a way of\n quickly retrieving the entire row data.\n <b>Important:</b>Models which do not have their row data accessible in one object\n may return null.</p>"
           }
         ],
         "@param": [
@@ -166,9 +166,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only.",
+            "body": "{Object} the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only.",
             "type": "Object",
-            "description": " the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only."
+            "description": " the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only."
           }
         ]
       },
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the number of columns in the model."
+            "body": "<p>Returns the number of columns in the model.</p>"
           }
         ],
         "@abstract": [
@@ -226,7 +226,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the ID of column. The ID may be used to identify columns\nindependent from their index in the model. E.g. for being aware of added\ncolumns when saving the width of a column."
+            "body": "<p>Returns the ID of column. The ID may be used to identify columns\n independent from their index in the model. E.g. for being aware of added\n columns when saving the width of a column.</p>"
           }
         ],
         "@abstract": [
@@ -271,7 +271,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index of a column."
+            "body": "<p>Returns the index of a column.</p>"
           }
         ],
         "@abstract": [
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the name of a column. This name will be shown to the user in the\ntable header."
+            "body": "<p>Returns the name of a column. This name will be shown to the user in the\n table header.</p>"
           }
         ],
         "@abstract": [
@@ -361,7 +361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether a column is editable."
+            "body": "<p>Returns whether a column is editable.</p>"
           }
         ],
         "@param": [
@@ -400,7 +400,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether a column is sortable."
+            "body": "<p>Returns whether a column is sortable.</p>"
           }
         ],
         "@param": [
@@ -439,7 +439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the model by a column."
+            "body": "<p>Sorts the model by a column.</p>"
           }
         ],
         "@param": [
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the column index the model is sorted by. If the model is not sorted\n-1 is returned."
+            "body": "<p>Returns the column index the model is sorted by. If the model is not sorted\n -1 is returned.</p>"
           }
         ],
         "@return": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the model is sorted ascending."
+            "body": "<p>Returns whether the model is sorted ascending.</p>"
           }
         ],
         "@return": [
@@ -537,7 +537,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prefetches some rows. This is a hint to the model that the specified rows\nwill be read soon."
+            "body": "<p>Prefetches some rows. This is a hint to the model that the specified rows\n will be read soon.</p>"
           }
         ],
         "@param": [
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a cell value by column index."
+            "body": "<p>Returns a cell value by column index.</p>"
           }
         ],
         "@abstract": [
@@ -633,7 +633,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a cell value by column ID.\n\nWhenever you have the choice, use {@link #getValue()} instead,\nbecause this should be faster."
+            "body": "<p>Returns a cell value by column ID.\n Whenever you have the choice, use {@link #getValue()} instead,\n because this should be faster.</p>"
           }
         ],
         "@param": [
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a cell value by column index."
+            "body": "<p>Sets a cell value by column index.</p>"
           }
         ],
         "@abstract": [
@@ -736,7 +736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a cell value by column ID.\n\nWhenever you have the choice, use {@link #setValue()} instead,\nbecause this should be faster."
+            "body": "<p>Sets a cell value by column ID.\n Whenever you have the choice, use {@link #setValue()} instead,\n because this should be faster.</p>"
           }
         ],
         "@param": [

@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<h2>Form Controller</h2>\n\n*General idea*\n\nThe form controller is responsible for connecting a form with a model. If no\nmodel is given, a model can be created. This created model will fit exactly\nto the given form and can be used for serialization. All the connections\nbetween the form items and the model are handled by an internal\n{@link qx.data.controller.Object}.\n\n*Features*\n\n* Connect a form to a model (bidirectional)\n* Create a model for a given form\n\n*Usage*\n\nThe controller only works if both a controller and a model are set.\nCreating a model will automatically set the created model.\n\n*Cross reference*\n\n* If you want to bind single values, use {@link qx.data.controller.Object}\n* If you want to bind a list like widget, use {@link qx.data.controller.List}\n* If you want to bind a tree widget, use {@link qx.data.controller.Tree}"
+          "body": "<h2>Form Controller</h2>\n<p><em>General idea</em>\n The form controller is responsible for connecting a form with a model. If no\n model is given, a model can be created. This created model will fit exactly\n to the given form and can be used for serialization. All the connections\n between the form items and the model are handled by an internal\n {@link qx.data.controller.Object}.\n<em>Features</em></p>\n<ul>\n<li>Connect a form to a model (bidirectional)</li>\n<li>Create a model for a given form\n<em>Usage</em>\nThe controller only works if both a controller and a model are set.\nCreating a model will automatically set the created model.\n<em>Cross reference</em></li>\n<li>If you want to bind single values, use {@link qx.data.controller.Object}</li>\n<li>If you want to bind a list like widget, use {@link qx.data.controller.List}</li>\n<li>If you want to bind a tree widget, use {@link qx.data.controller.Tree}</li>\n</ul>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 60,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 74,
@@ -54,9 +54,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "model {qx.core.Object | null} The model to bind the target to. The\ngiven object will be set as {@link #model} property.",
+          "body": "model {qx.core.Object | null} The model to bind the target to. The\n   given object will be set as {@link #model} property.",
           "paramName": "model",
-          "description": " The model to bind the target to. The\ngiven object will be set as {@link #model} property.",
+          "description": " The model to bind the target to. The\n   given object will be set as {@link #model} property.",
           "type": [
             "qx.core.Object",
             "null"
@@ -64,9 +64,9 @@
         },
         {
           "name": "@param",
-          "body": "target {qx.ui.form.Form | null} The form which contains the form\nitems. The given form will be set as {@link #target} property.",
+          "body": "target {qx.ui.form.Form | null} The form which contains the form\n   items. The given form will be set as {@link #target} property.",
           "paramName": "target",
-          "description": " The form which contains the form\nitems. The given form will be set as {@link #target} property.",
+          "description": " The form which contains the form\n   items. The given form will be set as {@link #target} property.",
           "type": [
             "qx.ui.form.Form",
             "null"
@@ -74,9 +74,9 @@
         },
         {
           "name": "@param",
-          "body": "selfUpdate {Boolean?false} If set to true, you need to call the\n{@link #updateModel} method to get the data in the form to the model.\nOtherwise, the data will be synced automatically on every change of\nthe form.",
+          "body": "selfUpdate {Boolean?false} If set to true, you need to call the\n   {@link #updateModel} method to get the data in the form to the model.\n   Otherwise, the data will be synced automatically on every change of\n   the form.",
           "paramName": "selfUpdate",
-          "description": " If set to true, you need to call the\n{@link #updateModel} method to get the data in the form to the model.\nOtherwise, the data will be synced automatically on every change of\nthe form.",
+          "description": " If set to true, you need to call the\n   {@link #updateModel} method to get the data in the form to the model.\n   Otherwise, the data will be synced automatically on every change of\n   the form.",
           "optional": true,
           "defaultValue": "false",
           "type": "Boolean"
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data object containing the data which should be shown in the target."
+            "body": "<p>Data object containing the data which should be shown in the target.</p>"
           }
         ]
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The target widget which should show the data."
+            "body": "<p>The target widget which should show the data.</p>"
           }
         ]
       },
@@ -200,29 +200,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The form controller uses for setting up the bindings the fundamental\nbinding layer, the {@link qx.data.SingleValueBinding}. To achieve a\nbinding in both directions, two bindings are needed. With this method,\nyou have the opportunity to set the options used for the bindings."
+            "body": "<p>The form controller uses for setting up the bindings the fundamental\n binding layer, the {@link qx.data.SingleValueBinding}. To achieve a\n binding in both directions, two bindings are needed. With this method,\n you have the opportunity to set the options used for the bindings.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String} The name of the form item for which the options\nshould be used.",
+            "body": "name {String} The name of the form item for which the options\n   should be used.",
             "paramName": "name",
-            "description": " The name of the form item for which the options\nshould be used.",
+            "description": " The name of the form item for which the options\n   should be used.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "model2target {Map} Options map used for the binding from model\nto target. The possible options can be found in the\n{@link qx.data.SingleValueBinding} class.",
+            "body": "model2target {Map} Options map used for the binding from model\n   to target. The possible options can be found in the\n   {@link qx.data.SingleValueBinding} class.",
             "paramName": "model2target",
-            "description": " Options map used for the binding from model\nto target. The possible options can be found in the\n{@link qx.data.SingleValueBinding} class.",
+            "description": " Options map used for the binding from model\n   to target. The possible options can be found in the\n   {@link qx.data.SingleValueBinding} class.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "target2model {Map} Options map used for the binding from target\nto model. The possible options can be found in the\n{@link qx.data.SingleValueBinding} class.",
+            "body": "target2model {Map} Options map used for the binding from target\n   to model. The possible options can be found in the\n   {@link qx.data.SingleValueBinding} class.",
             "paramName": "target2model",
-            "description": " Options map used for the binding from target\nto model. The possible options can be found in the\n{@link qx.data.SingleValueBinding} class.",
+            "description": " Options map used for the binding from target\n   to model. The possible options can be found in the\n   {@link qx.data.SingleValueBinding} class.",
             "type": "Map"
           }
         ]
@@ -245,15 +245,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and sets a model using the {@link qx.data.marshal.Json} object.\nRemember that this method can only work if the form is set. The created\nmodel will fit exactly that form. Changing the form or adding an item to\nthe form will need a new model creation."
+            "body": "<p>Creates and sets a model using the {@link qx.data.marshal.Json} object.\n Remember that this method can only work if the form is set. The created\n model will fit exactly that form. Changing the form or adding an item to\n the form will need a new model creation.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "includeBubbleEvents {Boolean} Whether the model should support\nthe bubbling of change events or not.",
+            "body": "includeBubbleEvents {Boolean} Whether the model should support\n   the bubbling of change events or not.",
             "paramName": "includeBubbleEvents",
-            "description": " Whether the model should support\nthe bubbling of change events or not.",
+            "description": " Whether the model should support\n   the bubbling of change events or not.",
             "type": "Boolean"
           }
         ],
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for syncing the data from entered in the form to the model.\nPlease keep in mind that this method only works if you create the form\nwith <code>selfUpdate</code> set to true. Otherwise, this method will\ndo nothing because updates will be synced automatically on every\nchange."
+            "body": "<p>Responsible for syncing the data from entered in the form to the model.\n Please keep in mind that this method only works if you create the form\n with <code>selfUpdate</code> set to true. Otherwise, this method will\n do nothing because updates will be synced automatically on every\n change.</p>"
           }
         ]
       },
@@ -306,7 +306,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "apply method"
+            "body": "<p>apply method</p>"
           }
         ]
       },
@@ -331,7 +331,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "apply method"
+            "body": "<p>apply method</p>"
           }
         ]
       },
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for setting up the bindings using\n{@link qx.data.controller.Object#addTarget}. All bindings are set\nup bidirectional."
+            "body": "<p>Internal helper for setting up the bindings using\n {@link qx.data.controller.Object#addTarget}. All bindings are set\n up bidirectional.</p>"
           }
         ]
       },
@@ -378,7 +378,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for removing all set up bindings using\n{@link qx.data.controller.Object#removeTarget}."
+            "body": "<p>Internal helper for removing all set up bindings using\n {@link qx.data.controller.Object#removeTarget}.</p>"
           }
         ],
         "@param": [
@@ -409,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the given item implements\n{@link qx.ui.core.ISingleSelection} and\n{@link qx.ui.form.IModelSelection}."
+            "body": "<p>Returns whether the given item implements\n {@link qx.ui.core.ISingleSelection} and\n {@link qx.ui.form.IModelSelection}.</p>"
           }
         ],
         "@param": [
@@ -690,7 +690,7 @@
     "location": {
       "start": {
         "line": 385,
-        "column": 3
+        "column": 14
       },
       "end": {
         "line": 390,
@@ -701,7 +701,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

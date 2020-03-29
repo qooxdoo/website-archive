@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Demonstrate how to apply a filter to the SimpleTreeDataModel."
+          "body": "<p>Demonstrate how to apply a filter to the SimpleTreeDataModel.</p>"
         }
       ]
     }

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 87,
+        "line": 85,
         "column": 0
       },
       "end": {
-        "line": 1500,
+        "line": 1498,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRomeo Kenfack Tsakem (rkenfack)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Romeo Kenfack Tsakem (rkenfack)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a widget that enhances an HTML table with some basic features like\nSorting and Filtering.\n\nEXPERIMENTAL - NOT READY FOR PRODUCTION\n\n<h2>CSS Classes</h2>\n<table>\n<thead>\n<tr>\n<td>Class Name</td>\n<td>Applied to</td>\n<td>Description</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>qx-table</code></td>\n<td>Table element</td>\n<td>Identifies the Table widget</td>\n</tr>\n<tr>\n<td><code>qx-table-cell</code></td>\n<td>Table cell (<code>td</code>)</td>\n<td>Identifies and styles a cell of the widget</td>\n</tr>\n<tr>\n<td><code>qx-table-header</code></td>\n<td>Table header (<code>th</code>)</td>\n<td>Identifies and styles a header of the table widget</td>\n</tr>\n<tr>\n<td><code>qx-table-row-selection</code></td>\n<td>Table cell (<code>td</code>)</td>\n<td>Identifies and styles the cells containing the inputs for the row selection</td>\n</tr>\n<tr>\n<td><code>qx-table-selection-input</code></td>\n<td><code>input</code></td>\n<td>Identifies and styles input element to select a table row</td>\n</tr>\n<tr>\n<td><code>qx-table-input-label</code></td>\n<td>Label element (<code>label</code>)</td>\n<td>Identifies and styles label contained in the selection cell. This label can be used to create custom inputs</td>\n</tr>\n<tr>\n<td><code>qx-table-row-selected</code></td>\n<td>Selected row (<code>tr</code>)</td>\n<td>Identifies and styles the selected table rows</td>\n</tr>\n<tr>\n<td><code>qx-table-sort-asc</code></td>\n<td>Table header (<code>th</code>)</td>\n<td>Identifies and styles the header of the current ascendant sorted column</td>\n</tr>\n<tr>\n<td><code>qx-table-sort-desc</code></td>\n<td>Table header (<code>th</code>)</td>\n<td>Identifies and styles the header of the current descendant sorted column</td>\n</tr>\n</tbody>\n</table>"
+          "body": "<p>This is a widget that enhances an HTML table with some basic features like\n Sorting and Filtering.\n </p>\n<h2>CSS Classes</h2>\n<table>\n   <thead>\n     <tr>\n       <td>Class Name</td>\n       <td>Applied to</td>\n       <td>Description</td>\n     </tr>\n   </thead>\n   <tbody>\n     <tr>\n       <td><code>qx-table</code></td>\n       <td>Table element</td>\n       <td>Identifies the Table widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-cell</code></td>\n       <td>Table cell (<code>td</code>)</td>\n       <td>Identifies and styles a cell of the widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-header</code></td>\n       <td>Table header (<code>th</code>)</td>\n       <td>Identifies and styles a header of the table widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-row-selection</code></td>\n       <td>Table cell (<code>td</code>)</td>\n       <td>Identifies and styles the cells containing the inputs for the row selection</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-selection-input</code></td>\n       <td><code>input</code></td>\n       <td>Identifies and styles input element to select a table row</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-input-label</code></td>\n       <td>Label element (<code>label</code>)</td>\n       <td>Identifies and styles label contained in the selection cell. This label can be used to create custom inputs</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-row-selected</code></td>\n       <td>Selected row (<code>tr</code>)</td>\n       <td>Identifies and styles the selected table rows</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-sort-asc</code></td>\n       <td>Table header (<code>th</code>)</td>\n       <td>Identifies and styles the header of the current ascendant sorted column</td>\n     </tr>\n     <tr>\n       <td><code>qx-table-sort-desc</code></td>\n       <td>Table header (<code>th</code>)</td>\n       <td>Identifies and styles the header of the current descendant sorted column</td>\n     </tr>\n   </tbody>\n </table>"
         }
       ],
       "@group": [
@@ -40,24 +40,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 91,
-        "column": 2
+        "line": 89,
+        "column": 14
       },
       "end": {
-        "line": 93,
+        "line": 91,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "modelChange": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 95,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 95,
           "column": 27
         }
       },
@@ -65,7 +66,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires at each model change"
+            "body": "<p>Fires at each model change</p>"
           }
         ]
       },
@@ -75,11 +76,11 @@
     "selectionChange": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 97,
           "column": 31
         }
       },
@@ -87,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires at each selection change"
+            "body": "<p>Fires at each selection change</p>"
           }
         ]
       },
@@ -97,11 +98,11 @@
     "cellClick": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 99,
           "column": 26
         }
       },
@@ -109,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires each time a cell of the widget is clicked"
+            "body": "<p>Fires each time a cell of the widget is clicked</p>"
           }
         ]
       },
@@ -119,11 +120,11 @@
     "cellHover": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 101,
           "column": 26
         }
       },
@@ -131,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires each time a cell of the widget is hovered"
+            "body": "<p>Fires each time a cell of the widget is hovered</p>"
           }
         ]
       },
@@ -141,11 +142,11 @@
     "cellOut": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 105,
+          "line": 103,
           "column": 24
         }
       },
@@ -153,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires each time the mouse leave a cell of the table widget"
+            "body": "<p>Fires each time the mouse leave a cell of the table widget</p>"
           }
         ]
       },
@@ -163,11 +164,11 @@
     "modelApplied": {
       "location": {
         "start": {
-          "line": 107,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 105,
           "column": 28
         }
       },
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the model has been applied to the widget"
+            "body": "<p>Fires after the model has been applied to the widget</p>"
           }
         ]
       },
@@ -185,11 +186,11 @@
     "cellRender": {
       "location": {
         "start": {
-          "line": 109,
+          "line": 107,
           "column": 4
         },
         "end": {
-          "line": 109,
+          "line": 107,
           "column": 27
         }
       },
@@ -197,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires each time the value of a cell is rendered into the cell"
+            "body": "<p>Fires each time the value of a cell is rendered into the cell</p>"
           }
         ]
       },
@@ -207,11 +208,11 @@
     "sort": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 111,
+          "line": 109,
           "column": 21
         }
       },
@@ -219,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the table rows have been sorted"
+            "body": "<p>Fires after the table rows have been sorted</p>"
           }
         ]
       },
@@ -229,11 +230,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 113,
+          "line": 111,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 111,
           "column": 23
         }
       },
@@ -241,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after the table rows have been filtered"
+            "body": "<p>Fires after the table rows have been filtered</p>"
           }
         ]
       },
@@ -253,11 +254,11 @@
     "_config": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 129,
           "column": 5
         }
       },
@@ -265,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*caseSensitive*\nDetermines if the string sorting/filtering should be case sensitive or not. Default value : <code>false</code>.\n\n*rowSelection*\nDefines the row selection type. Possible values are : 'none', 'single', 'multiple'. Default value : <code>none</code>."
+            "body": "<p><em>caseSensitive</em>\n Determines if the string sorting/filtering should be case sensitive or not. Default value : <code>false</code>.\n<em>rowSelection</em>\n Defines the row selection type. Possible values are : 'none', 'single', 'multiple'. Default value : <code>none</code>.</p>"
           }
         ]
       },
@@ -275,11 +276,11 @@
     "_templates": {
       "location": {
         "start": {
-          "line": 150,
+          "line": 148,
           "column": 4
         },
         "end": {
-          "line": 157,
+          "line": 155,
           "column": 5
         }
       },
@@ -287,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*columnDefault*\nThe Default cell template for all the table columns. Default value :\n\n<pre>\n<td class='qx-table-cell' data-qx-table-cell-key='{{ cellKey }}'>\n<div class='qx-table-cell-wrapper'>\n<label>{{& value }}</label>\n</div>\n<td>\"\n</pre>\n\nTo define a custom template for a specific name use <code>setTemplate('colname', template)</code> or use <br>\n<code>setTemplate('columnDefault', template)</code> to set one template for all your table columns."
+            "body": "<p><em>columnDefault</em>\n The Default cell template for all the table columns. Default value :\n </p>\n<pre>\n   <td class='qx-table-cell' data-qx-table-cell-key='{{ cellKey }}'>\n     <div class='qx-table-cell-wrapper'>\n       <label>{{& value }}</label>\n     </div>\n   <td>\"\n </pre>\n<p>To define a custom template for a specific name use <code>setTemplate('colname', template)</code> or use <br>\n <code>setTemplate('columnDefault', template)</code> to set one template for all your table columns.</p>"
           }
         ]
       },
@@ -297,11 +298,11 @@
     "table": {
       "location": {
         "start": {
-          "line": 166,
+          "line": 164,
           "column": 4
         },
         "end": {
-          "line": 171,
+          "line": 169,
           "column": 5
         }
       },
@@ -309,7 +310,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\ntable widgets."
+            "body": "<p>Factory method which converts the current collection into a collection of\n table widgets.</p>"
           }
         ],
         "@param": [
@@ -342,11 +343,11 @@
     "__isNumber": {
       "location": {
         "start": {
-          "line": 178,
+          "line": 176,
           "column": 4
         },
         "end": {
-          "line": 181,
+          "line": 179,
           "column": 5
         }
       },
@@ -354,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a given string is a number"
+            "body": "<p>Checks if a given string is a number</p>"
           }
         ],
         "@param": [
@@ -381,11 +382,11 @@
     "__isDate": {
       "location": {
         "start": {
-          "line": 188,
+          "line": 186,
           "column": 4
         },
         "end": {
-          "line": 191,
+          "line": 189,
           "column": 5
         }
       },
@@ -393,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a given string is a Date"
+            "body": "<p>Checks if a given string is a Date</p>"
           }
         ],
         "@param": [
@@ -420,11 +421,11 @@
     "__getIndex": {
       "location": {
         "start": {
-          "line": 199,
+          "line": 197,
           "column": 4
         },
         "end": {
-          "line": 208,
+          "line": 206,
           "column": 5
         }
       },
@@ -432,7 +433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the index of an HTMLElement inside of an HTMLCollection"
+            "body": "<p>Gets the index of an HTMLElement inside of an HTMLCollection</p>"
           }
         ],
         "@param": [
@@ -466,11 +467,11 @@
     "__getUID": {
       "location": {
         "start": {
-          "line": 214,
+          "line": 212,
           "column": 4
         },
         "end": {
-          "line": 216,
+          "line": 214,
           "column": 5
         }
       },
@@ -478,7 +479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates an unique id"
+            "body": "<p>Generates an unique id</p>"
           }
         ],
         "@return": [
@@ -496,11 +497,11 @@
     "__selectionTypes": {
       "location": {
         "start": {
-          "line": 220,
+          "line": 218,
           "column": 4
         },
         "end": {
-          "line": 220,
+          "line": 218,
           "column": 53
         }
       },
@@ -518,11 +519,11 @@
     "__internalCellClass": {
       "location": {
         "start": {
-          "line": 222,
+          "line": 220,
           "column": 4
         },
         "end": {
-          "line": 222,
+          "line": 220,
           "column": 41
         }
       },
@@ -540,11 +541,11 @@
     "__internalHeaderClass": {
       "location": {
         "start": {
-          "line": 224,
+          "line": 222,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 222,
           "column": 45
         }
       },
@@ -562,11 +563,11 @@
     "__internalSelectionClass": {
       "location": {
         "start": {
-          "line": 226,
+          "line": 224,
           "column": 4
         },
         "end": {
-          "line": 226,
+          "line": 224,
           "column": 55
         }
       },
@@ -584,11 +585,11 @@
     "__internalInputClass": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 226,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 226,
           "column": 53
         }
       },
@@ -606,11 +607,11 @@
     "__allColumnSelector": {
       "location": {
         "start": {
-          "line": 230,
+          "line": 228,
           "column": 4
         },
         "end": {
-          "line": 230,
+          "line": 228,
           "column": 48
         }
       },
@@ -628,11 +629,11 @@
     "__dataColName": {
       "location": {
         "start": {
-          "line": 232,
+          "line": 230,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 230,
           "column": 44
         }
       },
@@ -650,11 +651,11 @@
     "__dataColType": {
       "location": {
         "start": {
-          "line": 234,
+          "line": 232,
           "column": 4
         },
         "end": {
-          "line": 234,
+          "line": 232,
           "column": 44
         }
       },
@@ -672,11 +673,11 @@
     "__dataSortingKey": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 236,
+          "line": 234,
           "column": 47
         }
       },
@@ -694,11 +695,11 @@
     "__modelSortingKey": {
       "location": {
         "start": {
-          "line": 238,
+          "line": 236,
           "column": 4
         },
         "end": {
-          "line": 238,
+          "line": 236,
           "column": 33
         }
       },
@@ -716,11 +717,11 @@
     "__inputLabelClass": {
       "location": {
         "start": {
-          "line": 240,
+          "line": 238,
           "column": 4
         },
         "end": {
-          "line": 240,
+          "line": 238,
           "column": 46
         }
       },
@@ -738,11 +739,11 @@
     "__selectedRowClass": {
       "location": {
         "start": {
-          "line": 242,
+          "line": 240,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 240,
           "column": 48
         }
       },
@@ -760,11 +761,11 @@
     "__ascSortingClass": {
       "location": {
         "start": {
-          "line": 244,
+          "line": 242,
           "column": 4
         },
         "end": {
-          "line": 244,
+          "line": 242,
           "column": 43
         }
       },
@@ -782,11 +783,11 @@
     "__descSortingClass": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 246,
+          "line": 244,
           "column": 47
         }
       },
@@ -806,11 +807,11 @@
     "__model": {
       "location": {
         "start": {
-          "line": 254,
+          "line": 252,
           "column": 4
         },
         "end": {
-          "line": 254,
+          "line": 252,
           "column": 17
         }
       },
@@ -820,11 +821,11 @@
     "__columnMeta": {
       "location": {
         "start": {
-          "line": 255,
+          "line": 253,
           "column": 4
         },
         "end": {
-          "line": 255,
+          "line": 253,
           "column": 22
         }
       },
@@ -834,11 +835,11 @@
     "__sortingFunction": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 256,
+          "line": 254,
           "column": 27
         }
       },
@@ -848,11 +849,11 @@
     "__filterFunction": {
       "location": {
         "start": {
-          "line": 257,
+          "line": 255,
           "column": 4
         },
         "end": {
-          "line": 257,
+          "line": 255,
           "column": 26
         }
       },
@@ -862,11 +863,11 @@
     "__filterFunc": {
       "location": {
         "start": {
-          "line": 258,
+          "line": 256,
           "column": 4
         },
         "end": {
-          "line": 258,
+          "line": 256,
           "column": 22
         }
       },
@@ -876,11 +877,11 @@
     "__filters": {
       "location": {
         "start": {
-          "line": 259,
+          "line": 257,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 257,
           "column": 19
         }
       },
@@ -890,11 +891,11 @@
     "__inputName": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 260,
+          "line": 258,
           "column": 21
         }
       },
@@ -904,11 +905,11 @@
     "__hovered": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 261,
+          "line": 259,
           "column": 19
         }
       },
@@ -918,11 +919,11 @@
     "__sortingData": {
       "location": {
         "start": {
-          "line": 262,
+          "line": 260,
           "column": 4
         },
         "end": {
-          "line": 262,
+          "line": 260,
           "column": 23
         }
       },
@@ -932,11 +933,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 265,
+          "line": 263,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 291,
           "column": 5
         }
       },
@@ -944,7 +945,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -966,11 +967,11 @@
     "setModel": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 300,
           "column": 4
         },
         "end": {
-          "line": 313,
+          "line": 311,
           "column": 5
         }
       },
@@ -978,7 +979,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the given model to the widgets in the collection"
+            "body": "<p>Sets the given model to the widgets in the collection</p>"
           }
         ],
         "@param": [
@@ -1005,11 +1006,11 @@
     "setColumnType": {
       "location": {
         "start": {
-          "line": 322,
+          "line": 320,
           "column": 4
         },
         "end": {
-          "line": 327,
+          "line": 325,
           "column": 5
         }
       },
@@ -1017,7 +1018,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the column types for the table widgets in the collection"
+            "body": "<p>Set the column types for the table widgets in the collection</p>"
           }
         ],
         "@param": [
@@ -1051,11 +1052,11 @@
     "getColumnType": {
       "location": {
         "start": {
-          "line": 337,
+          "line": 335,
           "column": 4
         },
         "end": {
-          "line": 340,
+          "line": 338,
           "column": 5
         }
       },
@@ -1063,7 +1064,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the type of the specified column"
+            "body": "<p>Returns the type of the specified column</p>"
           }
         ],
         "@param": [
@@ -1090,11 +1091,11 @@
     "getCell": {
       "location": {
         "start": {
-          "line": 349,
+          "line": 347,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 349,
           "column": 5
         }
       },
@@ -1102,7 +1103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the cell at the given position for the first widget in the collection"
+            "body": "<p>Returns the cell at the given position for the first widget in the collection</p>"
           }
         ],
         "@param": [
@@ -1136,11 +1137,11 @@
     "getRows": {
       "location": {
         "start": {
-          "line": 358,
+          "line": 356,
           "column": 4
         },
         "end": {
-          "line": 360,
+          "line": 358,
           "column": 5
         }
       },
@@ -1148,7 +1149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a collection containing the rows of the first table in the collection."
+            "body": "<p>Returns a collection containing the rows of the first table in the collection.</p>"
           }
         ],
         "@return": [
@@ -1166,11 +1167,11 @@
     "setCompareFunction": {
       "location": {
         "start": {
-          "line": 369,
+          "line": 367,
           "column": 4
         },
         "end": {
-          "line": 373,
+          "line": 371,
           "column": 5
         }
       },
@@ -1178,7 +1179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines the comparison function to use to sort columns of the given type"
+            "body": "<p>Defines the comparison function to use to sort columns of the given type</p>"
           }
         ],
         "@param": [
@@ -1212,11 +1213,11 @@
     "unsetCompareFunction": {
       "location": {
         "start": {
-          "line": 382,
+          "line": 380,
           "column": 4
         },
         "end": {
-          "line": 387,
+          "line": 385,
           "column": 5
         }
       },
@@ -1224,7 +1225,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unset the compare function for the given type"
+            "body": "<p>Unset the compare function for the given type</p>"
           }
         ],
         "@param": [
@@ -1251,11 +1252,11 @@
     "getCompareFunction": {
       "location": {
         "start": {
-          "line": 395,
+          "line": 393,
           "column": 4
         },
         "end": {
-          "line": 398,
+          "line": 396,
           "column": 5
         }
       },
@@ -1263,7 +1264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the comparison function for the given type"
+            "body": "<p>Returns the comparison function for the given type</p>"
           }
         ],
         "@param": [
@@ -1290,11 +1291,11 @@
     "setSortingFunction": {
       "location": {
         "start": {
-          "line": 406,
+          "line": 404,
           "column": 4
         },
         "end": {
-          "line": 411,
+          "line": 409,
           "column": 5
         }
       },
@@ -1302,7 +1303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the function that control the sorting process"
+            "body": "<p>Set the function that control the sorting process</p>"
           }
         ],
         "@param": [
@@ -1329,11 +1330,11 @@
     "unsetSortingFunction": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 420,
           "column": 5
         }
       },
@@ -1341,7 +1342,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unset the function that control the sorting process"
+            "body": "<p>Unset the function that control the sorting process</p>"
           }
         ],
         "@return": [
@@ -1359,11 +1360,11 @@
     "setFilterFunction": {
       "location": {
         "start": {
-          "line": 429,
+          "line": 427,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 431,
           "column": 5
         }
       },
@@ -1371,7 +1372,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the function that will be used to process the column filtering"
+            "body": "<p>Set the function that will be used to process the column filtering</p>"
           }
         ],
         "@param": [
@@ -1398,11 +1399,11 @@
     "unsetFilterFunction": {
       "location": {
         "start": {
-          "line": 440,
+          "line": 438,
           "column": 4
         },
         "end": {
-          "line": 444,
+          "line": 442,
           "column": 5
         }
       },
@@ -1410,7 +1411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unset the filter function"
+            "body": "<p>Unset the filter function</p>"
           }
         ],
         "@return": [
@@ -1428,11 +1429,11 @@
     "setColumnFilter": {
       "location": {
         "start": {
-          "line": 454,
+          "line": 452,
           "column": 4
         },
         "end": {
-          "line": 462,
+          "line": 460,
           "column": 5
         }
       },
@@ -1440,7 +1441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the filter function to use to filter a specific column"
+            "body": "<p>Set the filter function to use to filter a specific column</p>"
           }
         ],
         "@param": [
@@ -1474,11 +1475,11 @@
     "getColumnFilter": {
       "location": {
         "start": {
-          "line": 472,
+          "line": 470,
           "column": 4
         },
         "end": {
-          "line": 477,
+          "line": 475,
           "column": 5
         }
       },
@@ -1486,7 +1487,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the filter function set on a specific column"
+            "body": "<p>Returns the filter function set on a specific column</p>"
           }
         ],
         "@param": [
@@ -1513,11 +1514,11 @@
     "setRowFilter": {
       "location": {
         "start": {
-          "line": 485,
+          "line": 483,
           "column": 4
         },
         "end": {
-          "line": 492,
+          "line": 490,
           "column": 5
         }
       },
@@ -1525,7 +1526,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the filter function to use to filter the table rows"
+            "body": "<p>Set the filter function to use to filter the table rows</p>"
           }
         ],
         "@param": [
@@ -1552,11 +1553,11 @@
     "getRowFilter": {
       "location": {
         "start": {
-          "line": 500,
+          "line": 498,
           "column": 4
         },
         "end": {
-          "line": 505,
+          "line": 503,
           "column": 5
         }
       },
@@ -1564,7 +1565,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the filter function set on a specific column"
+            "body": "<p>Returns the filter function set on a specific column</p>"
           }
         ],
         "@return": [
@@ -1582,11 +1583,11 @@
     "sort": {
       "location": {
         "start": {
-          "line": 514,
+          "line": 512,
           "column": 4
         },
         "end": {
-          "line": 523,
+          "line": 521,
           "column": 5
         }
       },
@@ -1594,7 +1595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sort the column with the given name according to the specified direction"
+            "body": "<p>Sort the column with the given name according to the specified direction</p>"
           }
         ],
         "@param": [
@@ -1628,11 +1629,11 @@
     "filter": {
       "location": {
         "start": {
-          "line": 532,
+          "line": 530,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 556,
           "column": 5
         }
       },
@@ -1640,7 +1641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Filters rows or columns according to the given parameters"
+            "body": "<p>Filters rows or columns according to the given parameters</p>"
           }
         ],
         "@param": [
@@ -1679,11 +1680,11 @@
     "resetFilter": {
       "location": {
         "start": {
-          "line": 566,
+          "line": 564,
           "column": 4
         },
         "end": {
-          "line": 581,
+          "line": 579,
           "column": 5
         }
       },
@@ -1691,7 +1692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the filter applied on a specific column"
+            "body": "<p>Resets the filter applied on a specific column</p>"
           }
         ],
         "@param": [
@@ -1719,11 +1720,11 @@
     "setContent": {
       "location": {
         "start": {
-          "line": 589,
+          "line": 587,
           "column": 4
         },
         "end": {
-          "line": 596,
+          "line": 594,
           "column": 5
         }
       },
@@ -1731,7 +1732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the rows of in the table body"
+            "body": "<p>Removes the rows of in the table body</p>"
           }
         ],
         "@param": [
@@ -1761,11 +1762,11 @@
     "appendContent": {
       "location": {
         "start": {
-          "line": 604,
+          "line": 602,
           "column": 4
         },
         "end": {
-          "line": 610,
+          "line": 608,
           "column": 5
         }
       },
@@ -1773,7 +1774,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends new rows to the table"
+            "body": "<p>Appends new rows to the table</p>"
           }
         ],
         "@param": [
@@ -1803,11 +1804,11 @@
     "__extractTableRows": {
       "location": {
         "start": {
-          "line": 618,
+          "line": 616,
           "column": 4
         },
         "end": {
-          "line": 643,
+          "line": 641,
           "column": 5
         }
       },
@@ -1815,7 +1816,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Extracts table rows from a given HTML String or qxWeb collection"
+            "body": "<p>Extracts table rows from a given HTML String or qxWeb collection</p>"
           }
         ],
         "@param": [
@@ -1845,11 +1846,11 @@
     "__filterDom": {
       "location": {
         "start": {
-          "line": 652,
+          "line": 650,
           "column": 4
         },
         "end": {
-          "line": 677,
+          "line": 675,
           "column": 5
         }
       },
@@ -1857,7 +1858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Filters the rendered table cells"
+            "body": "<p>Filters the rendered table cells</p>"
           }
         ],
         "@param": [
@@ -1892,11 +1893,11 @@
     "getSortingData": {
       "location": {
         "start": {
-          "line": 684,
+          "line": 682,
           "column": 4
         },
         "end": {
-          "line": 686,
+          "line": 684,
           "column": 5
         }
       },
@@ -1904,7 +1905,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the current column sorting information for the first widget in the collection"
+            "body": "<p>Get the current column sorting information for the first widget in the collection</p>"
           }
         ],
         "@return": [
@@ -1922,11 +1923,11 @@
     "render": {
       "location": {
         "start": {
-          "line": 690,
+          "line": 688,
           "column": 4
         },
         "end": {
-          "line": 707,
+          "line": 705,
           "column": 5
         }
       },
@@ -1934,7 +1935,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1956,11 +1957,11 @@
     "__processSelectionInputs": {
       "location": {
         "start": {
-          "line": 717,
+          "line": 715,
           "column": 4
         },
         "end": {
-          "line": 733,
+          "line": 731,
           "column": 5
         }
       },
@@ -1968,11 +1969,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Private API"
+            "body": "<p>Private API</p>"
           },
           {
             "name": "@description",
-            "body": "Renders or removes the selection inputs according to the specified widget selection mode"
+            "body": "<p>Renders or removes the selection inputs according to the specified widget selection mode</p>"
           }
         ],
         "@param": [
@@ -1999,11 +2000,11 @@
     "__createInputs": {
       "location": {
         "start": {
-          "line": 741,
+          "line": 739,
           "column": 4
         },
         "end": {
-          "line": 748,
+          "line": 746,
           "column": 5
         }
       },
@@ -2011,7 +2012,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates input nodes for the row selection"
+            "body": "<p>Creates input nodes for the row selection</p>"
           }
         ],
         "@param": [
@@ -2038,11 +2039,11 @@
     "__createInput": {
       "location": {
         "start": {
-          "line": 757,
+          "line": 755,
           "column": 4
         },
         "end": {
-          "line": 794,
+          "line": 792,
           "column": 5
         }
       },
@@ -2050,7 +2051,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an input an input node for a specific row"
+            "body": "<p>Creates an input an input node for a specific row</p>"
           }
         ],
         "@param": [
@@ -2083,11 +2084,11 @@
     "__checkColumnExistance": {
       "location": {
         "start": {
-          "line": 801,
+          "line": 799,
           "column": 4
         },
         "end": {
-          "line": 806,
+          "line": 804,
           "column": 5
         }
       },
@@ -2095,7 +2096,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a column with the specified name exists"
+            "body": "<p>Checks if a column with the specified name exists</p>"
           }
         ],
         "@param": [
@@ -2114,11 +2115,11 @@
     "__getHeaderRow": {
       "location": {
         "start": {
-          "line": 813,
+          "line": 811,
           "column": 4
         },
         "end": {
-          "line": 829,
+          "line": 827,
           "column": 5
         }
       },
@@ -2126,7 +2127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the row containing the cells with the column names"
+            "body": "<p>Returns the row containing the cells with the column names</p>"
           }
         ],
         "@return": [
@@ -2144,11 +2145,11 @@
     "__getColumnMetaData": {
       "location": {
         "start": {
-          "line": 837,
+          "line": 835,
           "column": 4
         },
         "end": {
-          "line": 865,
+          "line": 863,
           "column": 5
         }
       },
@@ -2156,7 +2157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes columns metadata"
+            "body": "<p>Initializes columns metadata</p>"
           }
         ],
         "@param": [
@@ -2183,11 +2184,11 @@
     "__addClassToHeaderAndFooter": {
       "location": {
         "start": {
-          "line": 873,
+          "line": 871,
           "column": 4
         },
         "end": {
-          "line": 883,
+          "line": 881,
           "column": 5
         }
       },
@@ -2195,7 +2196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the internal css class to the header and footer cells"
+            "body": "<p>Adds the internal css class to the header and footer cells</p>"
           }
         ],
         "@param": [
@@ -2222,11 +2223,11 @@
     "__sortDOM": {
       "location": {
         "start": {
-          "line": 891,
+          "line": 889,
           "column": 4
         },
         "end": {
-          "line": 901,
+          "line": 899,
           "column": 5
         }
       },
@@ -2234,7 +2235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the rows of the table widget"
+            "body": "<p>Sorts the rows of the table widget</p>"
           }
         ],
         "@param": [
@@ -2261,11 +2262,11 @@
     "__registerEvents": {
       "location": {
         "start": {
-          "line": 908,
+          "line": 906,
           "column": 4
         },
         "end": {
-          "line": 922,
+          "line": 920,
           "column": 5
         }
       },
@@ -2273,7 +2274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "registers global events"
+            "body": "<p>registers global events</p>"
           }
         ],
         "@return": [
@@ -2291,11 +2292,11 @@
     "__selectionRendered": {
       "location": {
         "start": {
-          "line": 929,
+          "line": 927,
           "column": 4
         },
         "end": {
-          "line": 931,
+          "line": 929,
           "column": 5
         }
       },
@@ -2303,7 +2304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the selection inputs are already rendered"
+            "body": "<p>Checks if the selection inputs are already rendered</p>"
           }
         ],
         "@return": [
@@ -2321,11 +2322,11 @@
     "__processSelection": {
       "location": {
         "start": {
-          "line": 939,
+          "line": 937,
           "column": 4
         },
         "end": {
-          "line": 990,
+          "line": 988,
           "column": 5
         }
       },
@@ -2333,7 +2334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles clicks that happen on the selection inputs"
+            "body": "<p>Handles clicks that happen on the selection inputs</p>"
           }
         ],
         "@param": [
@@ -2360,11 +2361,11 @@
     "__fireEvent": {
       "location": {
         "start": {
-          "line": 1000,
+          "line": 998,
           "column": 4
         },
         "end": {
-          "line": 1020,
+          "line": 1018,
           "column": 5
         }
       },
@@ -2372,7 +2373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a custom table events"
+            "body": "<p>Fires a custom table events</p>"
           }
         ],
         "@param": [
@@ -2413,11 +2414,11 @@
     "__detectClickedCell": {
       "location": {
         "start": {
-          "line": 1029,
+          "line": 1027,
           "column": 4
         },
         "end": {
-          "line": 1058,
+          "line": 1056,
           "column": 5
         }
       },
@@ -2425,7 +2426,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Click callback"
+            "body": "<p>Click callback</p>"
           }
         ],
         "@param": [
@@ -2452,11 +2453,11 @@
     "__cellHover": {
       "location": {
         "start": {
-          "line": 1066,
+          "line": 1064,
           "column": 4
         },
         "end": {
-          "line": 1085,
+          "line": 1083,
           "column": 5
         }
       },
@@ -2464,7 +2465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Pointerover callback"
+            "body": "<p>Pointerover callback</p>"
           }
         ],
         "@param": [
@@ -2483,11 +2484,11 @@
     "__cellOut": {
       "location": {
         "start": {
-          "line": 1093,
+          "line": 1091,
           "column": 4
         },
         "end": {
-          "line": 1118,
+          "line": 1116,
           "column": 5
         }
       },
@@ -2495,7 +2496,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "pointerout callback"
+            "body": "<p>pointerout callback</p>"
           }
         ],
         "@param": [
@@ -2514,11 +2515,11 @@
     "__applyTemplate": {
       "location": {
         "start": {
-          "line": 1127,
+          "line": 1125,
           "column": 4
         },
         "end": {
-          "line": 1189,
+          "line": 1187,
           "column": 5
         }
       },
@@ -2526,7 +2527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the given model to the table cells depending on\nthe mustache template specified before"
+            "body": "<p>Applies the given model to the table cells depending on\n the mustache template specified before</p>"
           }
         ],
         "@param": [
@@ -2553,11 +2554,11 @@
     "__deleteRows": {
       "location": {
         "start": {
-          "line": 1197,
+          "line": 1195,
           "column": 4
         },
         "end": {
-          "line": 1203,
+          "line": 1201,
           "column": 5
         }
       },
@@ -2565,7 +2566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes row from the DOM starting from the specified index"
+            "body": "<p>Removes row from the DOM starting from the specified index</p>"
           }
         ],
         "@param": [
@@ -2592,11 +2593,11 @@
     "__getDataForColumn": {
       "location": {
         "start": {
-          "line": 1211,
+          "line": 1209,
           "column": 4
         },
         "end": {
-          "line": 1213,
+          "line": 1211,
           "column": 5
         }
       },
@@ -2604,7 +2605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the metadata of the column width the specified name"
+            "body": "<p>Gets the metadata of the column width the specified name</p>"
           }
         ],
         "@param": [
@@ -2631,11 +2632,11 @@
     "__getRoot": {
       "location": {
         "start": {
-          "line": 1220,
+          "line": 1218,
           "column": 4
         },
         "end": {
-          "line": 1222,
+          "line": 1220,
           "column": 5
         }
       },
@@ -2643,7 +2644,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the Root element containing the data rows"
+            "body": "<p>Gets the Root element containing the data rows</p>"
           }
         ],
         "@return": [
@@ -2661,11 +2662,11 @@
     "__isRowRendered": {
       "location": {
         "start": {
-          "line": 1230,
+          "line": 1228,
           "column": 4
         },
         "end": {
-          "line": 1235,
+          "line": 1233,
           "column": 5
         }
       },
@@ -2673,7 +2674,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the row with the given index is rendered"
+            "body": "<p>Checks if the row with the given index is rendered</p>"
           }
         ],
         "@param": [
@@ -2700,11 +2701,11 @@
     "__isCellRendered": {
       "location": {
         "start": {
-          "line": 1244,
+          "line": 1242,
           "column": 4
         },
         "end": {
-          "line": 1252,
+          "line": 1250,
           "column": 5
         }
       },
@@ -2712,7 +2713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the cell with the given row and column indexes is rendered"
+            "body": "<p>Checks if the cell with the given row and column indexes is rendered</p>"
           }
         ],
         "@param": [
@@ -2746,11 +2747,11 @@
     "setSortingClass": {
       "location": {
         "start": {
-          "line": 1260,
+          "line": 1258,
           "column": 4
         },
         "end": {
-          "line": 1269,
+          "line": 1267,
           "column": 5
         }
       },
@@ -2758,7 +2759,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a class to the head and footer of the current sorted column"
+            "body": "<p>Adds a class to the head and footer of the current sorted column</p>"
           }
         ],
         "@param": [
@@ -2784,11 +2785,11 @@
     "__addSortingClassToCol": {
       "location": {
         "start": {
-          "line": 1278,
+          "line": 1276,
           "column": 4
         },
         "end": {
-          "line": 1285,
+          "line": 1283,
           "column": 5
         }
       },
@@ -2796,7 +2797,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a class to the head or footer of the current sorted column"
+            "body": "<p>Adds a class to the head or footer of the current sorted column</p>"
           }
         ],
         "@param": [
@@ -2829,11 +2830,11 @@
     "__sort": {
       "location": {
         "start": {
-          "line": 1294,
+          "line": 1292,
           "column": 4
         },
         "end": {
-          "line": 1313,
+          "line": 1311,
           "column": 5
         }
       },
@@ -2841,7 +2842,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the table rows for the given row and direction"
+            "body": "<p>Sorts the table rows for the given row and direction</p>"
           }
         ],
         "@param": [
@@ -2875,11 +2876,11 @@
     "_compareNumber": {
       "location": {
         "start": {
-          "line": 1323,
+          "line": 1321,
           "column": 4
         },
         "end": {
-          "line": 1332,
+          "line": 1330,
           "column": 5
         }
       },
@@ -2887,7 +2888,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compares two number"
+            "body": "<p>Compares two number</p>"
           }
         ],
         "@param": [
@@ -2928,11 +2929,11 @@
     "__getColumName": {
       "location": {
         "start": {
-          "line": 1340,
+          "line": 1338,
           "column": 4
         },
         "end": {
-          "line": 1342,
+          "line": 1340,
           "column": 5
         }
       },
@@ -2940,7 +2941,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the name of the column containing the given cell"
+            "body": "<p>Gets the name of the column containing the given cell</p>"
           }
         ],
         "@param": [
@@ -2967,11 +2968,11 @@
     "_compareDate": {
       "location": {
         "start": {
-          "line": 1352,
+          "line": 1350,
           "column": 4
         },
         "end": {
-          "line": 1363,
+          "line": 1361,
           "column": 5
         }
       },
@@ -2979,7 +2980,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compares two Dates"
+            "body": "<p>Compares two Dates</p>"
           }
         ],
         "@param": [
@@ -3020,11 +3021,11 @@
     "_compareString": {
       "location": {
         "start": {
-          "line": 1373,
+          "line": 1371,
           "column": 4
         },
         "end": {
-          "line": 1384,
+          "line": 1382,
           "column": 5
         }
       },
@@ -3032,7 +3033,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compares two Strings"
+            "body": "<p>Compares two Strings</p>"
           }
         ],
         "@param": [
@@ -3073,11 +3074,11 @@
     "__getSortingKey": {
       "location": {
         "start": {
-          "line": 1392,
+          "line": 1390,
           "column": 4
         },
         "end": {
-          "line": 1394,
+          "line": 1392,
           "column": 5
         }
       },
@@ -3085,7 +3086,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the cell to use for sorting"
+            "body": "<p>Returns the value of the cell to use for sorting</p>"
           }
         ],
         "@param": [
@@ -3112,11 +3113,11 @@
     "__getCellValue": {
       "location": {
         "start": {
-          "line": 1402,
+          "line": 1400,
           "column": 4
         },
         "end": {
-          "line": 1404,
+          "line": 1402,
           "column": 5
         }
       },
@@ -3124,7 +3125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the cell that will be used for sorting"
+            "body": "<p>Returns the value of the cell that will be used for sorting</p>"
           }
         ],
         "@param": [
@@ -3151,11 +3152,11 @@
     "__getDataRows": {
       "location": {
         "start": {
-          "line": 1411,
+          "line": 1409,
           "column": 4
         },
         "end": {
-          "line": 1431,
+          "line": 1429,
           "column": 5
         }
       },
@@ -3163,7 +3164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the table's data rows from the DOM"
+            "body": "<p>Gets the table's data rows from the DOM</p>"
           }
         ],
         "@return": [
@@ -3181,11 +3182,11 @@
     "__defaultColumnSort": {
       "location": {
         "start": {
-          "line": 1438,
+          "line": 1436,
           "column": 4
         },
         "end": {
-          "line": 1452,
+          "line": 1450,
           "column": 5
         }
       },
@@ -3193,7 +3194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default sorting processing"
+            "body": "<p>Default sorting processing</p>"
           }
         ],
         "@param": [
@@ -3212,11 +3213,11 @@
     "__defaultColumnFilter": {
       "location": {
         "start": {
-          "line": 1460,
+          "line": 1458,
           "column": 4
         },
         "end": {
-          "line": 1472,
+          "line": 1470,
           "column": 5
         }
       },
@@ -3224,7 +3225,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default column filter function"
+            "body": "<p>Default column filter function</p>"
           }
         ],
         "@param": [
@@ -3251,11 +3252,11 @@
     "__getColumnIndex": {
       "location": {
         "start": {
-          "line": 1480,
+          "line": 1478,
           "column": 4
         },
         "end": {
-          "line": 1489,
+          "line": 1487,
           "column": 5
         }
       },
@@ -3263,7 +3264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the index of the column with the specified name"
+            "body": "<p>Gets the index of the column with the specified name</p>"
           }
         ],
         "@param": [
@@ -3291,14 +3292,15 @@
   "defer": {
     "location": {
       "start": {
-        "line": 1494,
-        "column": 2
+        "line": 1492,
+        "column": 10
       },
       "end": {
-        "line": 1498,
+        "line": 1496,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

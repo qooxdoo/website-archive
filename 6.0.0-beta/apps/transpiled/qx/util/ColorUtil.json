@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nChristian Hagendorn (cs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Christian Hagendorn (cs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Methods to convert colors between different color spaces."
+          "body": "<p>Methods to convert colors between different color spaces.</p>"
         }
       ],
       "@ignore": [
@@ -61,7 +61,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Regular expressions for color strings"
+            "body": "<p>Regular expressions for color strings</p>"
           }
         ]
       },
@@ -83,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "CSS3 system color names."
+            "body": "<p>CSS3 system color names.</p>"
           }
         ]
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Named colors, only the 16 basic colors plus the following ones:\ntransparent, grey, magenta, orange and brown"
+            "body": "<p>Named colors, only the 16 basic colors plus the following ones:\n transparent, grey, magenta, orange and brown</p>"
           }
         ]
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the incoming value is a named color."
+            "body": "<p>Whether the incoming value is a named color.</p>"
           }
         ],
         "@param": [
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the incoming value is a system color."
+            "body": "<p>Whether the incoming value is a system color.</p>"
           }
         ],
         "@param": [
@@ -205,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the color theme manager is loaded. Generally\npart of the GUI of qooxdoo."
+            "body": "<p>Whether the color theme manager is loaded. Generally\n part of the GUI of qooxdoo.</p>"
           }
         ],
         "@return": [
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the incoming value is a themed color."
+            "body": "<p>Whether the incoming value is a themed color.</p>"
           }
         ],
         "@param": [
@@ -274,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Try to convert an incoming string to an RGB array.\nSupports themed, named and system colors, but also RGB strings,\nhex3 and hex6 values."
+            "body": "<p>Try to convert an incoming string to an RGB array.\n Supports themed, named and system colors, but also RGB strings,\n hex3 and hex6 values.</p>"
           }
         ],
         "@param": [
@@ -321,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Try to convert an incoming string to an RGB array.\nSupport named colors, RGB strings, hex3 and hex6 values."
+            "body": "<p>Try to convert an incoming string to an RGB array.\n Support named colors, RGB strings, hex3 and hex6 values.</p>"
           }
         ],
         "@param": [
@@ -368,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Try to convert an incoming string to an RGB string, which can be used\nfor all color properties.\nSupports themed, named and system colors, but also RGB strings,\nhex3 and hex6 values."
+            "body": "<p>Try to convert an incoming string to an RGB string, which can be used\n for all color properties.\n Supports themed, named and system colors, but also RGB strings,\n hex3 and hex6 values.</p>"
           }
         ],
         "@param": [
@@ -415,15 +415,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a RGB array to an RGB string"
+            "body": "<p>Converts a RGB array to an RGB string</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rgb {Array} an array with red, green and blue values and optionally\nan alpha value",
+            "body": "rgb {Array} an array with red, green and blue values and optionally\n an alpha value",
             "paramName": "rgb",
-            "description": " an array with red, green and blue values and optionally\nan alpha value",
+            "description": " an array with red, green and blue values and optionally\n an alpha value",
             "type": "Array"
           }
         ],
@@ -454,7 +454,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a RGB array to an hex6 string"
+            "body": "<p>Converts a RGB array to an hex6 string</p>"
           }
         ],
         "@param": [
@@ -493,7 +493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid qooxdoo color"
+            "body": "<p>Detects if a string is a valid qooxdoo color</p>"
           }
         ],
         "@param": [
@@ -532,7 +532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid CSS color string"
+            "body": "<p>Detects if a string is a valid CSS color string</p>"
           }
         ],
         "@param": [
@@ -571,7 +571,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid hex3 string"
+            "body": "<p>Detects if a string is a valid hex3 string</p>"
           }
         ],
         "@param": [
@@ -610,7 +610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid hex6 string"
+            "body": "<p>Detects if a string is a valid hex6 string</p>"
           }
         ],
         "@param": [
@@ -649,7 +649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid RGB string"
+            "body": "<p>Detects if a string is a valid RGB string</p>"
           }
         ],
         "@param": [
@@ -688,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detects if a string is a valid RGBA string"
+            "body": "<p>Detects if a string is a valid RGBA string</p>"
           }
         ],
         "@param": [
@@ -727,7 +727,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a regexp object match of a rgb string to an RGB array."
+            "body": "<p>Converts a regexp object match of a rgb string to an RGB array.</p>"
           }
         ],
         "@return": [
@@ -757,7 +757,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a regexp object match of a rgba string to an RGB array."
+            "body": "<p>Converts a regexp object match of a rgba string to an RGB array.</p>"
           }
         ],
         "@return": [
@@ -787,7 +787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a regexp object match of a hex3 string to an RGB array."
+            "body": "<p>Converts a regexp object match of a hex3 string to an RGB array.</p>"
           }
         ],
         "@return": [
@@ -817,7 +817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a regexp object match of a hex6 string to an RGB array."
+            "body": "<p>Converts a regexp object match of a hex6 string to an RGB array.</p>"
           }
         ],
         "@return": [
@@ -847,7 +847,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a hex3 string to an RGB array"
+            "body": "<p>Converts a hex3 string to an RGB array</p>"
           }
         ],
         "@param": [
@@ -886,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a hex3 (#xxx) string to a hex6 (#xxxxxx) string."
+            "body": "<p>Converts a hex3 (#xxx) string to a hex6 (#xxxxxx) string.</p>"
           }
         ],
         "@param": [
@@ -901,9 +901,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The hex6 (#xxxxxx) string or the passed value when the\npassed value is not an hex3 (#xxx) value.",
+            "body": "{String} The hex6 (#xxxxxx) string or the passed value when the\n   passed value is not an hex3 (#xxx) value.",
             "type": "String",
-            "description": " The hex6 (#xxxxxx) string or the passed value when the\npassed value is not an hex3 (#xxx) value."
+            "description": " The hex6 (#xxxxxx) string or the passed value when the\n   passed value is not an hex3 (#xxx) value."
           }
         ]
       },
@@ -925,7 +925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a hex6 string to an RGB array"
+            "body": "<p>Converts a hex6 string to an RGB array</p>"
           }
         ],
         "@param": [
@@ -964,7 +964,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a hex string to an RGB array"
+            "body": "<p>Converts a hex string to an RGB array</p>"
           }
         ],
         "@param": [
@@ -1003,7 +1003,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert RGB colors to HSB"
+            "body": "<p>Convert RGB colors to HSB</p>"
           }
         ],
         "@param": [
@@ -1042,7 +1042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert HSB colors to RGB"
+            "body": "<p>Convert HSB colors to RGB</p>"
           }
         ],
         "@param": [
@@ -1081,7 +1081,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a random color."
+            "body": "<p>Creates a random color.</p>"
           }
         ],
         "@return": [

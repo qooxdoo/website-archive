@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 25,
+        "line": 23,
         "column": 0
       },
       "end": {
-        "line": 191,
+        "line": 189,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nAn extended HtmlCell layer, which adds the possibility to specify row and\ncolumn spans for specific cells."
+          "body": "<p>An extended HtmlCell layer, which adds the possibility to specify row and\n column spans for specific cells.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 38,
-        "column": 2
+        "line": 36,
+        "column": 14
       },
       "end": {
-        "line": 44,
+        "line": 42,
         "column": 3
       }
     },
@@ -52,23 +52,23 @@
       "@param": [
         {
           "name": "@param",
-          "body": "htmlCellProvider {qx.ui.virtual.core.IHtmlCellProvider} This class\nprovides the HTML markup for each cell.",
+          "body": "htmlCellProvider {qx.ui.virtual.core.IHtmlCellProvider} This class\n    provides the HTML markup for each cell.",
           "paramName": "htmlCellProvider",
-          "description": " This class\nprovides the HTML markup for each cell.",
+          "description": " This class\n    provides the HTML markup for each cell.",
           "type": "qx.ui.virtual.core.IHtmlCellProvider"
         },
         {
           "name": "@param",
-          "body": "rowConfig {qx.ui.virtual.core.Axis} The row configuration of the pane\nin which the cells will be rendered",
+          "body": "rowConfig {qx.ui.virtual.core.Axis} The row configuration of the pane\n    in which the cells will be rendered",
           "paramName": "rowConfig",
-          "description": " The row configuration of the pane\nin which the cells will be rendered",
+          "description": " The row configuration of the pane\n    in which the cells will be rendered",
           "type": "qx.ui.virtual.core.Axis"
         },
         {
           "name": "@param",
-          "body": "columnConfig {qx.ui.virtual.core.Axis} The column configuration of\nthe pane in which the cells will be rendered",
+          "body": "columnConfig {qx.ui.virtual.core.Axis} The column configuration of\n    the pane in which the cells will be rendered",
           "paramName": "columnConfig",
-          "description": " The column configuration of\nthe pane in which the cells will be rendered",
+          "description": " The column configuration of\n    the pane in which the cells will be rendered",
           "type": "qx.ui.virtual.core.Axis"
         }
       ]
@@ -78,11 +78,11 @@
     "setCellSpan": {
       "location": {
         "start": {
-          "line": 63,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 71,
+          "line": 69,
           "column": 5
         }
       },
@@ -90,7 +90,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the row and column span for a specific cell"
+            "body": "<p>Set the row and column span for a specific cell</p>"
           }
         ],
         "@param": [
@@ -130,11 +130,11 @@
     "__renderCell": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 83,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 100,
           "column": 5
         }
       },
@@ -142,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Renders a cell"
+            "body": "<p>Renders a cell</p>"
           }
         ],
         "@param": [
@@ -203,11 +203,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 176,
           "column": 5
         }
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -3745,11 +3745,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 187,
-        "column": 2
+        "line": 185,
+        "column": 13
       },
       "end": {
-        "line": 190,
+        "line": 188,
         "column": 3
       }
     },
@@ -3757,7 +3757,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

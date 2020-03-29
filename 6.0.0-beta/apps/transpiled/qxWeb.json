@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Core module's responsibility is to query the DOM for elements and offer\nthese elements as a collection. The Core module itself does not offer any methods to\nwork with the collection. These methods are added by the other included modules,\nsuch as Manipulating or Attributes.\n\nCore also provides the plugin API which allows modules to attach either\nstatic functions to the global <code>q</code> object or define methods on the\ncollection it returns.\n\nBy default, the core module is assigned to a global module named <code>q</code>.\nIn case <code>q</code> is already defined, the name <code>qxWeb</code>\nis used instead.\n\nFor further details, take a look at the documentation in the\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/website.html' target='_blank'>user manual</a>."
+          "body": "<p>The Core module's responsibility is to query the DOM for elements and offer\n these elements as a collection. The Core module itself does not offer any methods to\n work with the collection. These methods are added by the other included modules,\n such as Manipulating or Attributes.\n Core also provides the plugin API which allows modules to attach either\n static functions to the global <code>q</code> object or define methods on the\n collection it returns.\n By default, the core module is assigned to a global module named <code>q</code>.\n In case <code>q</code> is already defined, the name <code>qxWeb</code>\n is used instead.\n For further details, take a look at the documentation in the\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/website.html' target='_blank'>user manual</a>.</p>"
         }
       ],
       "@ignore": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "internal storage for all initializers"
+            "body": "<p>internal storage for all initializers</p>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "internal reference to the used qx namespace"
+            "body": "<p>internal reference to the used qx namespace</p>"
           }
         ]
       },
@@ -103,15 +103,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to initialize collections."
+            "body": "<p>Internal helper to initialize collections.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "arg {var} An array of Elements which will\nbe initialized as {@link q}. All items in the array which are not\neither a window object, a DOM element node or a DOM document node will\nbe ignored.",
+            "body": "arg {var} An array of Elements which will\n   be initialized as {@link q}. All items in the array which are not\n   either a window object, a DOM element node or a DOM document node will\n   be ignored.",
             "paramName": "arg",
-            "description": " An array of Elements which will\nbe initialized as {@link q}. All items in the array which are not\neither a window object, a DOM element node or a DOM document node will\nbe ignored.",
+            "description": " An array of Elements which will\n   be initialized as {@link q}. All items in the array which are not\n   either a window object, a DOM element node or a DOM document node will\n   be ignored.",
             "type": "var"
           },
           {
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is an API for module development and can be used to attach new methods\nto {@link q}."
+            "body": "<p>This is an API for module development and can be used to attach new methods\n to {@link q}.</p>"
           }
         ],
         "@param": [
@@ -189,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is an API for module development and can be used to attach new methods\nto {@link q}."
+            "body": "<p>This is an API for module development and can be used to attach new methods\n to {@link q}.</p>"
           }
         ],
         "@param": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is an API for module development and can be used to attach new methods\nto {@link q} during runtime according to the following conventions:\n\nPublic members of the module are attached to the collection similar to\n<code>qxWeb.$attach</code>. Members beginning with '$' or '_' are ignored.\n\nStatics of the module are attached to {@link q} similar to\n<code>qxWeb.$attachStatic</code>. Statics beginning with '$' or '_', as well as constants\n(all upper case) and some qooxdoo-internal statics of the module are ignored.\n\n\nIf more fine-grained control outside if these conventions is needed,\nsimply use <code>qxWeb.$attach</code> or <code>qxWeb$attachStatic</code>."
+            "body": "<p>This is an API for module development and can be used to attach new methods\n to {@link q} during runtime according to the following conventions:\n Public members of the module are attached to the collection similar to\n <code>qxWeb.$attach</code>. Members beginning with '$' or '<em>' are ignored.\n Statics of the module are attached to {@link q} similar to\n <code>qxWeb.$attachStatic</code>. Statics beginning with '$' or '</em>', as well as constants\n (all upper case) and some qooxdoo-internal statics of the module are ignored.\n If more fine-grained control outside if these conventions is needed,\n simply use <code>qxWeb.$attach</code> or <code>qxWeb$attachStatic</code>.</p>"
           }
         ],
         "@param": [
@@ -269,7 +269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is an API for module development and can be used to attach new initialization\nmethods to {@link q} which will be called when a new collection is\ncreated."
+            "body": "<p>This is an API for module development and can be used to attach new initialization\n methods to {@link q} which will be called when a new collection is\n created.</p>"
           }
         ],
         "@param": [
@@ -300,23 +300,23 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Define a new class using the qooxdoo class system."
+            "body": "<p>Define a new class using the qooxdoo class system.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "name {String?} Name of the class. If null, the class will not be\nattached to a namespace.",
+            "body": "name {String?} Name of the class. If null, the class will not be\n   attached to a namespace.",
             "paramName": "name",
-            "description": " Name of the class. If null, the class will not be\nattached to a namespace.",
+            "description": " Name of the class. If null, the class will not be\n   attached to a namespace.",
             "optional": true,
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "config {Map ? null} Class definition structure. The configuration map has the following keys:\n<table>\n<thead>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n</thead>\n<tr><td>extend</td><td>Class</td><td>The super class the current class inherits from.</td></tr>\n<tr><td>construct</td><td>Function</td><td>The constructor of the class.</td></tr>\n<tr><td>statics</td><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n<tr><td>members</td><td>Map</td><td>Map of instance members of the class.</td></tr>\n<tr><td>defer</td><td>Function</td><td>Function that is called at the end of\nprocessing the class declaration.</td></tr>\n</table>\n\n<strong>Important hint:</strong> Please do not initialize reference types\n(<code>Object</code> or <code>Array</code>) directly inside the <strong>members</strong> section.\nOnly list and initialize it with <code>null</code>. Initialize your reference type inside the\n<code>construct</code>. Check out one of the samples below to get the idea.",
+            "body": "config {Map ? null} Class definition structure. The configuration map has the following keys:\n     <table>\n       <thead>\n         <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n       </thead>\n       <tr><td>extend</td><td>Class</td><td>The super class the current class inherits from.</td></tr>\n       <tr><td>construct</td><td>Function</td><td>The constructor of the class.</td></tr>\n       <tr><td>statics</td><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n       <tr><td>members</td><td>Map</td><td>Map of instance members of the class.</td></tr>\n       <tr><td>defer</td><td>Function</td><td>Function that is called at the end of\n          processing the class declaration.</td></tr>\n     </table>\n <strong>Important hint:</strong> Please do not initialize reference types\n (<code>Object</code> or <code>Array</code>) directly inside the <strong>members</strong> section.\n Only list and initialize it with <code>null</code>. Initialize your reference type inside the\n <code>construct</code>. Check out one of the samples below to get the idea.",
             "paramName": "config",
-            "description": " Class definition structure. The configuration map has the following keys:\n<table>\n<thead>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n</thead>\n<tr><td>extend</td><td>Class</td><td>The super class the current class inherits from.</td></tr>\n<tr><td>construct</td><td>Function</td><td>The constructor of the class.</td></tr>\n<tr><td>statics</td><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n<tr><td>members</td><td>Map</td><td>Map of instance members of the class.</td></tr>\n<tr><td>defer</td><td>Function</td><td>Function that is called at the end of\nprocessing the class declaration.</td></tr>\n</table>\n\n<strong>Important hint:</strong> Please do not initialize reference types\n(<code>Object</code> or <code>Array</code>) directly inside the <strong>members</strong> section.\nOnly list and initialize it with <code>null</code>. Initialize your reference type inside the\n<code>construct</code>. Check out one of the samples below to get the idea.",
+            "description": " Class definition structure. The configuration map has the following keys:\n     <table>\n       <thead>\n         <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n       </thead>\n       <tr><td>extend</td><td>Class</td><td>The super class the current class inherits from.</td></tr>\n       <tr><td>construct</td><td>Function</td><td>The constructor of the class.</td></tr>\n       <tr><td>statics</td><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n       <tr><td>members</td><td>Map</td><td>Map of instance members of the class.</td></tr>\n       <tr><td>defer</td><td>Function</td><td>Function that is called at the end of\n          processing the class declaration.</td></tr>\n     </table>\n <strong>Important hint:</strong> Please do not initialize reference types\n (<code>Object</code> or <code>Array</code>) directly inside the <strong>members</strong> section.\n Only list and initialize it with <code>null</code>. Initialize your reference type inside the\n <code>construct</code>. Check out one of the samples below to get the idea.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -339,7 +339,7 @@
     "location": {
       "start": {
         "line": 238,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 263,
@@ -350,15 +350,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Primary usage:\nAccepts a selector string and returns a collection of found items. The optional context\nelement can be used to reduce the amount of found elements to children of the\ncontext element. If the context object is a collection, its first item is used.\n\nSecondary usage:\nCreates a collection from an existing DOM element, document node or window object\n(or an Array containing any such objects)\n\n<a href=\"http://sizzlejs.com/\" target=\"_blank\">Sizzle</a> is used as selector engine.\nCheck out the <a href=\"https://github.com/jquery/sizzle/wiki/Sizzle-Home\" target=\"_blank\">documentation</a>\nfor more details."
+          "body": "<p>Primary usage:\n Accepts a selector string and returns a collection of found items. The optional context\n element can be used to reduce the amount of found elements to children of the\n context element. If the context object is a collection, its first item is used.\n Secondary usage:\n Creates a collection from an existing DOM element, document node or window object\n (or an Array containing any such objects)\n <a href=\"http://sizzlejs.com/\" target=\"_blank\">Sizzle</a> is used as selector engine.\n Check out the <a href=\"https://github.com/jquery/sizzle/wiki/Sizzle-Home\" target=\"_blank\">documentation</a>\n for more details.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "selector {String|Element|Document|Window|Array} Valid selector (CSS3 + extensions),\nwindow object, DOM element/document or Array of DOM Elements.",
+          "body": "selector {String|Element|Document|Window|Array} Valid selector (CSS3 + extensions),\n   window object, DOM element/document or Array of DOM Elements.",
           "paramName": "selector",
-          "description": " Valid selector (CSS3 + extensions),\nwindow object, DOM element/document or Array of DOM Elements.",
+          "description": " Valid selector (CSS3 + extensions),\n   window object, DOM element/document or Array of DOM Elements.",
           "type": [
             "String",
             "Element",
@@ -404,7 +404,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a new collection containing only those elements that passed the\ngiven filter. This can be either a selector expression or a filter\nfunction."
+            "body": "<p>Gets a new collection containing only those elements that passed the\n given filter. This can be either a selector expression or a filter\n function.</p>"
           }
         ],
         "@param": [
@@ -446,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recreates a collection which is free of all duplicate elements from the original."
+            "body": "<p>Recreates a collection which is free of all duplicate elements from the original.</p>"
           }
         ],
         "@return": [
@@ -476,7 +476,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a copy of the collection within the given range."
+            "body": "<p>Returns a copy of the collection within the given range.</p>"
           }
         ],
         "@param": [
@@ -523,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given number of items and returns the removed items as a new collection.\nThis method can also add items. Take a look at the\n<a href='https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/splice' target='_blank'>documentation of MDN</a> for more details."
+            "body": "<p>Removes the given number of items and returns the removed items as a new collection.\n This method can also add items. Take a look at the\n <a href='https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/splice' target='_blank'>documentation of MDN</a> for more details.</p>"
           }
         ],
         "@param": [
@@ -576,7 +576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new collection containing the modified elements. For more details, check out the\n<a href='https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map' target='_blank'>MDN documentation</a>."
+            "body": "<p>Returns a new collection containing the modified elements. For more details, check out the\n <a href='https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/map' target='_blank'>MDN documentation</a>.</p>"
           }
         ],
         "@param": [
@@ -622,7 +622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a copy of the collection including the given elements."
+            "body": "<p>Returns a copy of the collection including the given elements.</p>"
           }
         ],
         "@param": [
@@ -661,7 +661,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index of the given element within the current\ncollection or -1 if the element is not in the collection"
+            "body": "<p>Returns the index of the given element within the current\n collection or -1 if the element is not in the collection</p>"
           }
         ],
         "@param": [
@@ -714,7 +714,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls the browser's native debugger to easily allow debugging within\nchained calls.\n\nUnlike the <a href=\"#.logThis\">logThis</a> method this implementation blocks the further processing."
+            "body": "<p>Calls the browser's native debugger to easily allow debugging within\n chained calls.\n Unlike the <a href=\"#.logThis\">logThis</a> method this implementation blocks the further processing.</p>"
           }
         ],
         "@return": [
@@ -750,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs information about the current collection, its DOM elements and the\nlength. Very useful during development to easily check the current state of\nyour collection and avoid common pitfalls like an empty collection.\n\nUnlike the <a href=\"#.debug\">debug</a> method this implementation works non-blocking."
+            "body": "<p>Logs information about the current collection, its DOM elements and the\n length. Very useful during development to easily check the current state of\n your collection and avoid common pitfalls like an empty collection.\n Unlike the <a href=\"#.debug\">debug</a> method this implementation works non-blocking.</p>"
           }
         ],
         "@return": [
@@ -780,15 +780,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls a function for each DOM element  or document fragment in the\ncollection. This is used for DOM manipulations which can't be\napplied to document nodes or window objects."
+            "body": "<p>Calls a function for each DOM element  or document fragment in the\n collection. This is used for DOM manipulations which can't be\n applied to document nodes or window objects.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "func {Function} Callback function. Will be called with three arguments:\nThe element, the element's index within the collection and the collection itself.",
+            "body": "func {Function} Callback function. Will be called with three arguments:\n The element, the element's index within the collection and the collection itself.",
             "paramName": "func",
-            "description": " Callback function. Will be called with three arguments:\nThe element, the element's index within the collection and the collection itself.",
+            "description": " Callback function. Will be called with three arguments:\n The element, the element's index within the collection and the collection itself.",
             "type": "Function"
           },
           {
@@ -826,15 +826,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls a function for each DOM element node in the collection. Each node is wrapped\nin a collection before the function is called."
+            "body": "<p>Calls a function for each DOM element node in the collection. Each node is wrapped\n in a collection before the function is called.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "func {Function} Callback function. Will be called with three arguments:\nThe element wrappend in a collection, the element's index within the collection and\nthe collection itself.",
+            "body": "func {Function} Callback function. Will be called with three arguments:\n The element wrappend in a collection, the element's index within the collection and\n the collection itself.",
             "paramName": "func",
-            "description": " Callback function. Will be called with three arguments:\nThe element wrappend in a collection, the element's index within the collection and\nthe collection itself.",
+            "description": " Callback function. Will be called with three arguments:\n The element wrappend in a collection, the element's index within the collection and\n the collection itself.",
             "type": "Function"
           },
           {
@@ -862,7 +862,7 @@
     "location": {
       "start": {
         "line": 491,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 495,

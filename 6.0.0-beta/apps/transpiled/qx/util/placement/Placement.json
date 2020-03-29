@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Contains methods to compute a position for any object which should\nbe positioned relative to another object."
+          "body": "<p>Contains methods to compute a position for any object which should\n be positioned relative to another object.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 33,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "axisX": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The axis object to use for the horizontal placement"
+            "body": "<p>The axis object to use for the horizontal placement</p>"
           }
         ]
       },
@@ -82,7 +83,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The axis object to use for the vertical placement"
+            "body": "<p>The axis object to use for the vertical placement</p>"
           }
         ]
       },
@@ -105,7 +106,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Specify to which edge of the target object, the object should be attached"
+            "body": "<p>Specify to which edge of the target object, the object should be attached</p>"
           }
         ]
       },
@@ -135,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Specify with which edge of the target object, the object should be aligned"
+            "body": "<p>Specify with which edge of the target object, the object should be aligned</p>"
           }
         ]
       },
@@ -199,66 +200,66 @@
         "@description": [
           {
             "name": "@description",
-            "body": "DOM and widget independent method to compute the location\nof an object to make it relative to any other object."
+            "body": "<p>DOM and widget independent method to compute the location\n of an object to make it relative to any other object.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "size {Map} With the keys <code>width</code> and <code>height</code>\nof the object to align",
+            "body": "size {Map} With the keys <code>width</code> and <code>height</code>\n   of the object to align",
             "paramName": "size",
-            "description": " With the keys <code>width</code> and <code>height</code>\nof the object to align",
+            "description": " With the keys <code>width</code> and <code>height</code>\n   of the object to align",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "area {Map} Available area to position the object. Has the keys\n<code>width</code> and <code>height</code>. Normally this is the parent\nobject of the one to align.",
+            "body": "area {Map} Available area to position the object. Has the keys\n   <code>width</code> and <code>height</code>. Normally this is the parent\n   object of the one to align.",
             "paramName": "area",
-            "description": " Available area to position the object. Has the keys\n<code>width</code> and <code>height</code>. Normally this is the parent\nobject of the one to align.",
+            "description": " Available area to position the object. Has the keys\n   <code>width</code> and <code>height</code>. Normally this is the parent\n   object of the one to align.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "target {Map} Location of the object to align the object to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "body": "target {Map} Location of the object to align the object to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "paramName": "target",
-            "description": " Location of the object to align the object to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "description": " Location of the object to align the object to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "offsets {Map} Map with all offsets for each direction.\nComes with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code>.",
+            "body": "offsets {Map} Map with all offsets for each direction.\n   Comes with the keys <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code>.",
             "paramName": "offsets",
-            "description": " Map with all offsets for each direction.\nComes with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code>.",
+            "description": " Map with all offsets for each direction.\n   Comes with the keys <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "position {String} Alignment of the object on the target, any of\n\"top-left\", \"top-center\", \"top-right\", \"bottom-left\", \"bottom-center\", \"bottom-right\",\n\"left-top\", \"left-middle\", \"left-bottom\", \"right-top\", \"right-middle\", \"right-bottom\".",
+            "body": "position {String} Alignment of the object on the target, any of\n   \"top-left\", \"top-center\", \"top-right\", \"bottom-left\", \"bottom-center\", \"bottom-right\",\n   \"left-top\", \"left-middle\", \"left-bottom\", \"right-top\", \"right-middle\", \"right-bottom\".",
             "paramName": "position",
-            "description": " Alignment of the object on the target, any of\n\"top-left\", \"top-center\", \"top-right\", \"bottom-left\", \"bottom-center\", \"bottom-right\",\n\"left-top\", \"left-middle\", \"left-bottom\", \"right-top\", \"right-middle\", \"right-bottom\".",
+            "description": " Alignment of the object on the target, any of\n   \"top-left\", \"top-center\", \"top-right\", \"bottom-left\", \"bottom-center\", \"bottom-right\",\n   \"left-top\", \"left-middle\", \"left-bottom\", \"right-top\", \"right-middle\", \"right-bottom\".",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "modeX {String} Horizontal placement mode. Valid values are:\n<ul>\n<li><code>direct</code>: place the object directly at the given\nlocation.</li>\n<li><code>keep-align</code>: if parts of the object is outside of the visible\narea it is moved to the best fitting 'edge' and 'alignment' of the target.\nIt is guaranteed the the new position attaches the object to one of the\ntarget edges and that that is aligned with a target edge.</li>\n<li>best-fit</li>: If parts of the object are outside of the visible\narea it is moved into the view port ignoring any offset, and position\nvalues.\n</ul>",
+            "body": "modeX {String} Horizontal placement mode. Valid values are:\n   <ul>\n   <li><code>direct</code>: place the object directly at the given\n   location.</li>\n   <li><code>keep-align</code>: if parts of the object is outside of the visible\n   area it is moved to the best fitting 'edge' and 'alignment' of the target.\n   It is guaranteed the the new position attaches the object to one of the\n   target edges and that that is aligned with a target edge.</li>\n   <li>best-fit</li>: If parts of the object are outside of the visible\n   area it is moved into the view port ignoring any offset, and position\n   values.\n   </ul>",
             "paramName": "modeX",
-            "description": " Horizontal placement mode. Valid values are:\n<ul>\n<li><code>direct</code>: place the object directly at the given\nlocation.</li>\n<li><code>keep-align</code>: if parts of the object is outside of the visible\narea it is moved to the best fitting 'edge' and 'alignment' of the target.\nIt is guaranteed the the new position attaches the object to one of the\ntarget edges and that that is aligned with a target edge.</li>\n<li>best-fit</li>: If parts of the object are outside of the visible\narea it is moved into the view port ignoring any offset, and position\nvalues.\n</ul>",
+            "description": " Horizontal placement mode. Valid values are:\n   <ul>\n   <li><code>direct</code>: place the object directly at the given\n   location.</li>\n   <li><code>keep-align</code>: if parts of the object is outside of the visible\n   area it is moved to the best fitting 'edge' and 'alignment' of the target.\n   It is guaranteed the the new position attaches the object to one of the\n   target edges and that that is aligned with a target edge.</li>\n   <li>best-fit</li>: If parts of the object are outside of the visible\n   area it is moved into the view port ignoring any offset, and position\n   values.\n   </ul>",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "modeY {String} Vertical placement mode. Accepts the same values as\nthe 'modeX' argument.",
+            "body": "modeY {String} Vertical placement mode. Accepts the same values as\n   the 'modeX' argument.",
             "paramName": "modeY",
-            "description": " Vertical placement mode. Accepts the same values as\nthe 'modeX' argument.",
+            "description": " Vertical placement mode. Accepts the same values as\n   the 'modeX' argument.",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the final location stored in the keys\n<code>left</code> and <code>top</code>.",
+            "body": "{Map} A map with the final location stored in the keys\n   <code>left</code> and <code>top</code>.",
             "type": "Map",
-            "description": " A map with the final location stored in the keys\n<code>left</code> and <code>top</code>."
+            "description": " A map with the final location stored in the keys\n   <code>left</code> and <code>top</code>."
           }
         ]
       },
@@ -322,15 +323,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the axis implementation for the given mode"
+            "body": "<p>Get the axis implementation for the given mode</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "mode {String} One of <code>direct</code>, <code>keep-align</code> or\n<code>best-fit</code>",
+            "body": "mode {String} One of <code>direct</code>, <code>keep-align</code> or\n   <code>best-fit</code>",
             "paramName": "mode",
-            "description": " One of <code>direct</code>, <code>keep-align</code> or\n<code>best-fit</code>",
+            "description": " One of <code>direct</code>, <code>keep-align</code> or\n   <code>best-fit</code>",
             "type": "String"
           }
         ],
@@ -377,45 +378,45 @@
         "@description": [
           {
             "name": "@description",
-            "body": "DOM and widget independent method to compute the location\nof an object to make it relative to any other object."
+            "body": "<p>DOM and widget independent method to compute the location\n of an object to make it relative to any other object.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "size {Map} With the keys <code>width</code> and <code>height</code>\nof the object to align",
+            "body": "size {Map} With the keys <code>width</code> and <code>height</code>\n   of the object to align",
             "paramName": "size",
-            "description": " With the keys <code>width</code> and <code>height</code>\nof the object to align",
+            "description": " With the keys <code>width</code> and <code>height</code>\n   of the object to align",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "area {Map} Available area to position the object. Has the keys\n<code>width</code> and <code>height</code>. Normally this is the parent\nobject of the one to align.",
+            "body": "area {Map} Available area to position the object. Has the keys\n   <code>width</code> and <code>height</code>. Normally this is the parent\n   object of the one to align.",
             "paramName": "area",
-            "description": " Available area to position the object. Has the keys\n<code>width</code> and <code>height</code>. Normally this is the parent\nobject of the one to align.",
+            "description": " Available area to position the object. Has the keys\n   <code>width</code> and <code>height</code>. Normally this is the parent\n   object of the one to align.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "target {Map} Location of the object to align the object to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "body": "target {Map} Location of the object to align the object to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "paramName": "target",
-            "description": " Location of the object to align the object to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "description": " Location of the object to align the object to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "offsets {Map} Map with all offsets for each direction.\nComes with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code>.",
+            "body": "offsets {Map} Map with all offsets for each direction.\n   Comes with the keys <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code>.",
             "paramName": "offsets",
-            "description": " Map with all offsets for each direction.\nComes with the keys <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code>.",
+            "description": " Map with all offsets for each direction.\n   Comes with the keys <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code>.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map with the final location stored in the keys\n<code>left</code> and <code>top</code>.",
+            "body": "{Map} A map with the final location stored in the keys\n   <code>left</code> and <code>top</code>.",
             "type": "Map",
-            "description": " A map with the final location stored in the keys\n<code>left</code> and <code>top</code>."
+            "description": " A map with the final location stored in the keys\n   <code>left</code> and <code>top</code>."
           }
         ]
       },
@@ -437,7 +438,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the position value for the horizontal axis"
+            "body": "<p>Get the position value for the horizontal axis</p>"
           }
         ],
         "@return": [
@@ -467,7 +468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the position value for the vertical axis"
+            "body": "<p>Get the position value for the vertical axis</p>"
           }
         ],
         "@return": [
@@ -871,13 +872,14 @@
     "location": {
       "start": {
         "line": 295,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 298,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

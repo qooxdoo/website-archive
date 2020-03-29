@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The mixin contains all functionality to provide a value property for input\nwidgets."
+          "body": "<p>The mixin contains all functionality to provide a value property for input\n widgets.</p>"
         }
       ],
       "@require": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 37,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -52,7 +52,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -88,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired on every keystroke modifying the value of the field.\n\nThe method {@link qx.event.type.Data#getData} returns the\ncurrent value of the text field."
+            "body": "<p>The event is fired on every keystroke modifying the value of the field.\n The method {@link qx.event.type.Data#getData} returns the\n current value of the text field.</p>"
           }
         ]
       },
@@ -110,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The event is fired each time the text field looses focus and the\ntext field values has changed.\n\nIf you change {@link #liveUpdate} to true, the changeValue event will\nbe fired after every keystroke and not only after every focus loss. In\nthat mode, the changeValue event is equal to the {@link #input} event.\n\nThe method {@link qx.event.type.Data#getData} returns the\ncurrent text value of the field."
+            "body": "<p>The event is fired each time the text field looses focus and the\n text field values has changed.\n If you change {@link #liveUpdate} to true, the changeValue event will\n be fired after every keystroke and not only after every focus loss. In\n that mode, the changeValue event is equal to the {@link #input} event.\n The method {@link qx.event.type.Data#getData} returns the\n current text value of the field.</p>"
           }
         ]
       },
@@ -185,7 +185,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the incoming value."
+            "body": "<p>Converts the incoming value.</p>"
           }
         ],
         "@param": [
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>focus</code> event."
+            "body": "<p>Handler for <code>focus</code> event.</p>"
           }
         ]
       },
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>blur</code> event."
+            "body": "<p>Handler for <code>blur</code> event.</p>"
           }
         ]
       },
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether this widget has focus or not."
+            "body": "<p>Returns whether this widget has focus or not.</p>"
           }
         ],
         "@return": [
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value."
+            "body": "<p>Sets the value.</p>"
           }
         ],
         "@param": [
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the set value."
+            "body": "<p>Returns the set value.</p>"
           }
         ],
         "@return": [
@@ -359,7 +359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value."
+            "body": "<p>Resets the value.</p>"
           }
         ]
       },
@@ -381,7 +381,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #changeValue} event occurs."
+            "body": "<p>Event handler. Called when the {@link #changeValue} event occurs.</p>"
           }
         ],
         "@param": [
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #input} event occurs."
+            "body": "<p>Event handler. Called when the {@link #input} event occurs.</p>"
           }
         ],
         "@param": [
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the caret position of this widget."
+            "body": "<p>Returns the caret position of this widget.</p>"
           }
         ],
         "@return": [
@@ -473,7 +473,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the caret position on this widget."
+            "body": "<p>Sets the caret position on this widget.</p>"
           }
         ],
         "@param": [
@@ -504,7 +504,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the {@link #changeValue} event."
+            "body": "<p>Fires the {@link #changeValue} event.</p>"
           }
         ],
         "@param": [
@@ -615,13 +615,14 @@
     "location": {
       "start": {
         "line": 286,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 289,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

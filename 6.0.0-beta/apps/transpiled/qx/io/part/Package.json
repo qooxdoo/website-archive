@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Package wraps a list of related script URLs, which are required by one\nor more parts."
+          "body": "<p>The Package wraps a list of related script URLs, which are required by one\n or more parts.</p>"
         }
       ],
       "@internal": [
@@ -47,7 +47,7 @@
     "location": {
       "start": {
         "line": 34,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 39,
@@ -202,7 +202,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the package ID."
+            "body": "<p>Get the package ID.</p>"
           }
         ],
         "@return": [
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the ready state of the package. The value is one of\n<ul>\n<li>\n<b>initialized</b>: The package is initialized. The {@link #load}\nmethod has not yet been called\n</li>\n<li><b>loading</b>: The package is still loading.</li>\n<li><b>complete</b>: The package has been loaded successfully</li>\n<li><b>cached</b>: The package is loaded but is not executed\n(for closure parts)</li>\n</li>"
+            "body": "<p>Get the ready state of the package. The value is one of\n <ul>\n <li>\n   <b>initialized</b>: The package is initialized. The {@link #load}\n   method has not yet been called\n </li>\n <li><b>loading</b>: The package is still loading.</li>\n <li><b>complete</b>: The package has been loaded successfully</li>\n <li><b>cached</b>: The package is loaded but is not executed\n   (for closure parts)</li>\n </li></p>"
           }
         ],
         "@return": [
@@ -262,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the urlsstored stored in the package."
+            "body": "<p>Returns the urlsstored stored in the package.</p>"
           }
         ],
         "@internal": [
@@ -298,7 +298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method for storing the closure for this package. This is only relevant\nif a {@link qx.io.part.ClosurePart} is used."
+            "body": "<p>Method for storing the closure for this package. This is only relevant\n if a {@link qx.io.part.ClosurePart} is used.</p>"
           }
         ],
         "@param": [
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the stored closure. This is only relevant if a\n{@link qx.io.part.ClosurePart} is used."
+            "body": "<p>Executes the stored closure. This is only relevant if a\n {@link qx.io.part.ClosurePart} is used.</p>"
           }
         ]
       },
@@ -351,15 +351,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Load method if the package loads a closure. This is only relevant if a\n{@link qx.io.part.ClosurePart} is used."
+            "body": "<p>Load method if the package loads a closure. This is only relevant if a\n {@link qx.io.part.ClosurePart} is used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "notifyPackageResult {Function} The callback if all scripts are\ndone loading in this package.",
+            "body": "notifyPackageResult {Function} The callback if all scripts are\n   done loading in this package.",
             "paramName": "notifyPackageResult",
-            "description": " The callback if all scripts are\ndone loading in this package.",
+            "description": " The callback if all scripts are\n   done loading in this package.",
             "type": "Function"
           },
           {
@@ -390,15 +390,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Load the part's script URLs in the correct order."
+            "body": "<p>Load the part's script URLs in the correct order.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "notifyPackageResult {Function} The callback if all scripts are\ndone loading in this package.",
+            "body": "notifyPackageResult {Function} The callback if all scripts are\n   done loading in this package.",
             "paramName": "notifyPackageResult",
-            "description": " The callback if all scripts are\ndone loading in this package.",
+            "description": " The callback if all scripts are\n   done loading in this package.",
             "type": "Function"
           },
           {
@@ -429,7 +429,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads a list of scripts in the correct order."
+            "body": "<p>Loads a list of scripts in the correct order.</p>"
           }
         ],
         "@param": [
@@ -483,7 +483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Import the data of a package. The function is defined in the loader\nscript."
+            "body": "<p>Import the data of a package. The function is defined in the loader\n script.</p>"
           }
         ],
         "@signature": [

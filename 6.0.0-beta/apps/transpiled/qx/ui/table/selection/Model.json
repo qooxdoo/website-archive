@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nDavid Perez Carmona (david-perez)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n David Perez Carmona (david-perez)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A selection model."
+          "body": "<p>A selection model.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 45,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the selection has changed."
+            "body": "<p>Fired when the selection has changed.</p>"
           }
         ]
       },
@@ -153,7 +153,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{int} The selection mode \"single interval\". This mode only allows one\ncontinuous interval of selected items."
+            "body": "{int} The selection mode \"single interval\". This mode only allows one\n continuous interval of selected items."
           }
         ]
       },
@@ -181,7 +181,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{int} The selection mode \"multiple interval\". This mode only allows any\nselection."
+            "body": "{int} The selection mode \"multiple interval\". This mode only allows any\n selection."
           }
         ]
       },
@@ -209,7 +209,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{int} The selection mode \"multiple interval\". This mode only allows any\nselection. The difference with the previous one, is that multiple\nselection is eased. A tap on an item, toggles its selection state.\nOn the other hand, MULTIPLE_INTERVAL_SELECTION does this behavior only\nwhen Ctrl-tapping an item."
+            "body": "{int} The selection mode \"multiple interval\". This mode only allows any\n selection. The difference with the previous one, is that multiple\n selection is eased. A tap on an item, toggles its selection state.\n On the other hand, MULTIPLE_INTERVAL_SELECTION does this behavior only\n when Ctrl-tapping an item."
           }
         ]
       },
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the selection mode. Valid values are {@link #NO_SELECTION},\n{@link #SINGLE_SELECTION}, {@link #SINGLE_INTERVAL_SELECTION},\n{@link #MULTIPLE_INTERVAL_SELECTION} and\n{@link #MULTIPLE_INTERVAL_SELECTION_TOGGLE}."
+            "body": "<p>Set the selection mode. Valid values are {@link #NO<em>SELECTION},\n {@link #SINGLE</em>SELECTION}, {@link #SINGLE<em>INTERVAL</em>SELECTION},\n {@link #MULTIPLE<em>INTERVAL</em>SELECTION} and\n {@link #MULTIPLE<em>INTERVAL</em>SELECTION_TOGGLE}.</p>"
           }
         ]
       },
@@ -339,7 +339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "selectionMode property modifier"
+            "body": "<p>selectionMode property modifier</p>"
           }
         ]
       },
@@ -364,7 +364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates / Deactivates batch mode. In batch mode, no change events will be thrown but\nwill be collected instead. When batch mode is turned off again and any events have\nbeen collected, one event is thrown to inform the listeners.\n\nThis method supports nested calling, i. e. batch mode can be turned more than once.\nIn this case, batch mode will not end until it has been turned off once for each\nturning on."
+            "body": "<p>Activates / Deactivates batch mode. In batch mode, no change events will be thrown but\n will be collected instead. When batch mode is turned off again and any events have\n been collected, one event is thrown to inform the listeners.\n This method supports nested calling, i. e. batch mode can be turned more than once.\n In this case, batch mode will not end until it has been turned off once for each\n turning on.</p>"
           }
         ],
         "@param": [
@@ -411,7 +411,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether batch mode is active. See setter for a description of batch mode."
+            "body": "<p>Returns whether batch mode is active. See setter for a description of batch mode.</p>"
           }
         ],
         "@return": [
@@ -441,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the first argument of the last call to {@link #setSelectionInterval()},\n{@link #addSelectionInterval()} or {@link #removeSelectionInterval()}."
+            "body": "<p>Returns the first argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
           }
         ],
         "@return": [
@@ -471,7 +471,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the anchor selection index. Only use this function, if you want manipulate\nthe selection manually."
+            "body": "<p>Sets the anchor selection index. Only use this function, if you want manipulate\n the selection manually.</p>"
           }
         ],
         "@param": [
@@ -502,7 +502,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the second argument of the last call to {@link #setSelectionInterval()},\n{@link #addSelectionInterval()} or {@link #removeSelectionInterval()}."
+            "body": "<p>Returns the second argument of the last call to {@link #setSelectionInterval()},\n {@link #addSelectionInterval()} or {@link #removeSelectionInterval()}.</p>"
           }
         ],
         "@return": [
@@ -532,7 +532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the lead selection index. Only use this function, if you want manipulate\nthe selection manually."
+            "body": "<p>Sets the lead selection index. Only use this function, if you want manipulate\n the selection manually.</p>"
           }
         ],
         "@param": [
@@ -563,7 +563,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array that holds all the selected ranges of the table. Each\nentry is a map holding information about the \"minIndex\" and \"maxIndex\" of the\nselection range."
+            "body": "<p>Returns an array that holds all the selected ranges of the table. Each\n entry is a map holding information about the \"minIndex\" and \"maxIndex\" of the\n selection range.</p>"
           }
         ],
         "@return": [
@@ -593,7 +593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets (clears) the selection."
+            "body": "<p>Resets (clears) the selection.</p>"
           }
         ]
       },
@@ -615,7 +615,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the selection is empty."
+            "body": "<p>Returns whether the selection is empty.</p>"
           }
         ],
         "@return": [
@@ -645,7 +645,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the number of selected items."
+            "body": "<p>Returns the number of selected items.</p>"
           }
         ],
         "@return": [
@@ -675,7 +675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether an index is selected."
+            "body": "<p>Returns whether an index is selected.</p>"
           }
         ],
         "@param": [
@@ -714,7 +714,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the selected ranges as an array. Each array element has a\n<code>minIndex</code> and a <code>maxIndex</code> property."
+            "body": "<p>Returns the selected ranges as an array. Each array element has a\n <code>minIndex</code> and a <code>maxIndex</code> property.</p>"
           }
         ],
         "@return": [
@@ -744,25 +744,20 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calls an iterator function for each selected index.\n\nUsage Example:\n<pre class='javascript'>\nvar selectedRowData = [];\nmySelectionModel.iterateSelection(function(index) {\nselectedRowData.push(myTableModel.getRowData(index));\n});\n</pre>"
+            "body": "<p>Calls an iterator function for each selected index.\n Usage Example:\n </p>\n<pre class='javascript'>\n var selectedRowData = [];\n mySelectionModel.iterateSelection(function(index) {\n   selectedRowData.push(myTableModel.getRowData(index));\n });\n </pre>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "iterator {Function} the function to call for each selected index.\nGets the current index as parameter.",
+            "body": "iterator {Function} the function to call for each selected index.\n          Gets the current index as parameter.",
             "paramName": "iterator",
-            "description": " the function to call for each selected index.\nGets the current index as parameter.",
+            "description": " the function to call for each selected index.\n          Gets the current index as parameter.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "object {var ? null} the object to use when calling the handler.\n(this object will be available via \"this\" in the iterator)",
-            "paramName": "object",
-            "description": " the object to use when calling the handler.\n(this object will be available via \"this\" in the iterator)",
-            "optional": true,
-            "defaultValue": "null",
-            "type": "var"
+            "body": "this object will be available via \"this\" in the iterator"
           }
         ]
       },
@@ -784,7 +779,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the selected interval. This will clear the former selection."
+            "body": "<p>Sets the selected interval. This will clear the former selection.</p>"
           }
         ],
         "@param": [
@@ -822,7 +817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a selection interval to the current selection."
+            "body": "<p>Adds a selection interval to the current selection.</p>"
           }
         ],
         "@param": [
@@ -860,7 +855,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an interval from the current selection."
+            "body": "<p>Removes an interval from the current selection.</p>"
           }
         ],
         "@param": [
@@ -880,9 +875,9 @@
           },
           {
             "name": "@param",
-            "body": "rowsRemoved {Boolean?} rows were removed that caused this selection to change.\nIf rows were removed, move the selections over so the same rows are selected as before.",
+            "body": "rowsRemoved {Boolean?} rows were removed that caused this selection to change.\n   If rows were removed, move the selections over so the same rows are selected as before.",
             "paramName": "rowsRemoved",
-            "description": " rows were removed that caused this selection to change.\nIf rows were removed, move the selections over so the same rows are selected as before.",
+            "description": " rows were removed that caused this selection to change.\n   If rows were removed, move the selections over so the same rows are selected as before.",
             "optional": true,
             "type": "Boolean"
           }
@@ -906,7 +901,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets (clears) the selection, but doesn't inform the listeners."
+            "body": "<p>Resets (clears) the selection, but doesn't inform the listeners.</p>"
           }
         ]
       },
@@ -928,7 +923,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a selection interval to the current selection, but doesn't inform\nthe listeners."
+            "body": "<p>Adds a selection interval to the current selection, but doesn't inform\n the listeners.</p>"
           }
         ],
         "@param": [
@@ -966,11 +961,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "this._dumpRanges();"
+            "body": "<p>this._dumpRanges();</p>"
           },
           {
             "name": "@description",
-            "body": "Logs the current ranges for debug purposes."
+            "body": "<p>Logs the current ranges for debug purposes.</p>"
           }
         ]
       },
@@ -992,7 +987,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the \"changeSelection\" event to all registered listeners. If the selection model\ncurrently is in batch mode, only one event will be thrown when batch mode is ended."
+            "body": "<p>Fires the \"changeSelection\" event to all registered listeners. If the selection model\n currently is in batch mode, only one event will be thrown when batch mode is ended.</p>"
           }
         ]
       },
@@ -1190,7 +1185,7 @@
     "location": {
       "start": {
         "line": 663,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 665,
@@ -1201,7 +1196,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

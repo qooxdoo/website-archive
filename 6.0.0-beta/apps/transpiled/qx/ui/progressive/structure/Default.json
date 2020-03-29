@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Structure definition for Progressive"
+          "body": "<p>Structure definition for Progressive</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 43,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 70,
@@ -46,15 +46,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "The default structure for use by Progressive.  It includes a header, a\nfooter, and a pane."
+          "body": "<p>The default structure for use by Progressive.  It includes a header, a\n footer, and a pane.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "header {qx.ui.progressive.headfoot.Abstract|null}\nThe heading to apply to the Progressive structure.  If null, then no\nheader will be visible.",
+          "body": "header {qx.ui.progressive.headfoot.Abstract|null}\n   The heading to apply to the Progressive structure.  If null, then no\n   header will be visible.",
           "paramName": "header",
-          "description": "\nThe heading to apply to the Progressive structure.  If null, then no\nheader will be visible.",
+          "description": "\n   The heading to apply to the Progressive structure.  If null, then no\n   header will be visible.",
           "type": [
             "qx.ui.progressive.headfoot.Abstract",
             "null"
@@ -62,9 +62,9 @@
         },
         {
           "name": "@param",
-          "body": "footer {qx.ui.progressive.headfoot.Abstract|null}\nThe footer to apply to the Progressive structure.  If null then no\nfooter will be visible.",
+          "body": "footer {qx.ui.progressive.headfoot.Abstract|null}\n   The footer to apply to the Progressive structure.  If null then no\n   footer will be visible.",
           "paramName": "footer",
-          "description": "\nThe footer to apply to the Progressive structure.  If null then no\nfooter will be visible.",
+          "description": "\n   The footer to apply to the Progressive structure.  If null then no\n   footer will be visible.",
           "type": [
             "qx.ui.progressive.headfoot.Abstract",
             "null"
@@ -72,9 +72,9 @@
         },
         {
           "name": "@param",
-          "body": "pane {qx.ui.core.Widget|null}\nThe container to use as the pane, applied to the Progressive\nstructure.  If null, a qx.ui.core.Widget will be instantiated for\nuse as the pane.",
+          "body": "pane {qx.ui.core.Widget|null}\n   The container to use as the pane, applied to the Progressive\n   structure.  If null, a qx.ui.core.Widget will be instantiated for\n   use as the pane.",
           "paramName": "pane",
-          "description": "\nThe container to use as the pane, applied to the Progressive\nstructure.  If null, a qx.ui.core.Widget will be instantiated for\nuse as the pane.",
+          "description": "\n   The container to use as the pane, applied to the Progressive\n   structure.  If null, a qx.ui.core.Widget will be instantiated for\n   use as the pane.",
           "type": [
             "qx.ui.core.Widget",
             "null"
@@ -155,15 +155,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "progressive {qx.ui.progressive.Progressive}\nThe Progressive to which the structure is to be applied.",
+            "body": "progressive {qx.ui.progressive.Progressive}\n   The Progressive to which the structure is to be applied.",
             "paramName": "progressive",
-            "description": "\nThe Progressive to which the structure is to be applied.",
+            "description": "\n   The Progressive to which the structure is to be applied.",
             "type": "qx.ui.progressive.Progressive"
           }
         ]
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the header"
+            "body": "<p>Return the header</p>"
           }
         ],
         "@return": [
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the footer"
+            "body": "<p>Return the footer</p>"
           }
         ],
         "@return": [
@@ -360,13 +360,14 @@
     "location": {
       "start": {
         "line": 117,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 132,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -30,11 +30,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Slider widget provides horizontal slider.\n\nThe Slider is the classic widget for controlling a bounded value.\nIt lets the user move a slider handle along a horizontal\ngroove and translates the handle's position into an integer value\nwithin the defined range.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar slider= new qx.ui.mobile.form.Slider().set({\nminimum : 0,\nmaximum : 10,\nstep : 2\n});\nslider.addListener(\"changeValue\", handler, this);\n\nthis.getRoot.add(slider);\n</pre>\n\nThis example creates a slider and attaches an\nevent listener to the {@link #changeValue} event."
+          "body": "<p>The Slider widget provides horizontal slider.\n The Slider is the classic widget for controlling a bounded value.\n It lets the user move a slider handle along a horizontal\n groove and translates the handle's position into an integer value\n within the defined range.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n    var slider= new qx.ui.mobile.form.Slider().set({\n       minimum : 0,\n       maximum : 10,\n       step : 2\n     });\n     slider.addListener(\"changeValue\", handler, this);\n   this.getRoot.add(slider);\n </pre>\n<p>This example creates a slider and attaches an\n event listener to the {@link #changeValue} event.</p>"
         }
       ]
     }
@@ -44,13 +44,14 @@
     "location": {
       "start": {
         "line": 61,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 68,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "defaultCssClass": {
@@ -68,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -97,7 +98,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The minimum slider value (may be negative). This value must be smaller\nthan {@link #maximum}."
+            "body": "<p>The minimum slider value (may be negative). This value must be smaller\n than {@link #maximum}.</p>"
           }
         ]
       },
@@ -124,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum slider value (may be negative). This value must be larger\nthan {@link #minimum}."
+            "body": "<p>The maximum slider value (may be negative). This value must be larger\n than {@link #minimum}.</p>"
           }
         ]
       },
@@ -151,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The amount to increment on each event. Typically corresponds\nto the user moving the knob."
+            "body": "<p>The amount to increment on each event. Typically corresponds\n to the user moving the knob.</p>"
           }
         ]
       },
@@ -177,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reverses the display direction of the slider knob. If true, the maxmium of\nthe slider is on the left side and minimum on the right side."
+            "body": "<p>Reverses the display direction of the slider knob. If true, the maxmium of\n the slider is on the left side and minimum on the right side.</p>"
           }
         ]
       },
@@ -203,7 +204,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adjusts which slider value should be displayed inside the knob.\nIf <code>null</code> no value will be displayed."
+            "body": "<p>Adjusts which slider value should be displayed inside the knob.\n If <code>null</code> no value will be displayed.</p>"
           }
         ]
       },
@@ -354,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Increments the current value."
+            "body": "<p>Increments the current value.</p>"
           }
         ]
       },
@@ -376,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decrements the current value."
+            "body": "<p>Decrements the current value.</p>"
           }
         ]
       },
@@ -398,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -432,7 +433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the knob element."
+            "body": "<p>Creates the knob element.</p>"
           }
         ],
         "@return": [
@@ -462,7 +463,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers all needed event listener."
+            "body": "<p>Registers all needed event listener.</p>"
           }
         ]
       },
@@ -484,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters all needed event listener."
+            "body": "<p>Unregisters all needed event listener.</p>"
           }
         ]
       },
@@ -506,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Refreshes the slider and the knob position."
+            "body": "<p>Refreshes the slider and the knob position.</p>"
           }
         ]
       },
@@ -533,7 +534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates all internal sizes of the slider."
+            "body": "<p>Updates all internal sizes of the slider.</p>"
           }
         ]
       },
@@ -555,7 +556,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the <code>pointerdown</code> event occurs."
+            "body": "<p>Event handler. Called when the <code>pointerdown</code> event occurs.</p>"
           }
         ],
         "@param": [
@@ -586,7 +587,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the <code>track</code> event occurs."
+            "body": "<p>Event handler. Called when the <code>track</code> event occurs.</p>"
           }
         ],
         "@param": [
@@ -617,7 +618,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current position of the knob."
+            "body": "<p>Returns the current position of the knob.</p>"
           }
         ],
         "@param": [
@@ -656,7 +657,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the knob DOM element."
+            "body": "<p>Returns the knob DOM element.</p>"
           }
         ],
         "@return": [
@@ -686,7 +687,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value of this slider.\nIt is called by setValue method of qx.ui.mobile.form.MValue mixin"
+            "body": "<p>Sets the value of this slider.\n It is called by setValue method of qx.ui.mobile.form.MValue mixin</p>"
           }
         ],
         "@param": [
@@ -717,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the value [true/false] of this slider.\nIt is called by getValue method of qx.ui.mobile.form.MValue mixin"
+            "body": "<p>Gets the value [true/false] of this slider.\n It is called by getValue method of qx.ui.mobile.form.MValue mixin</p>"
           }
         ],
         "@return": [
@@ -747,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the knob position based on the current value."
+            "body": "<p>Updates the knob position based on the current value.</p>"
           }
         ]
       },
@@ -769,7 +770,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Property apply"
+            "body": "<p>Property apply</p>"
           }
         ]
       },
@@ -794,7 +795,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given value to percent."
+            "body": "<p>Converts the given value to percent.</p>"
           }
         ],
         "@param": [
@@ -833,7 +834,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given position to the corresponding value."
+            "body": "<p>Converts the given position to the corresponding value.</p>"
           }
         ],
         "@param": [
@@ -872,7 +873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the given percent to the position of the knob."
+            "body": "<p>Converts the given percent to the position of the knob.</p>"
           }
         ],
         "@param": [
@@ -918,7 +919,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Limits a value to the set {@link #minimum} and {@link #maximum} properties."
+            "body": "<p>Limits a value to the set {@link #minimum} and {@link #maximum} properties.</p>"
           }
         ],
         "@param": [
@@ -957,7 +958,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the number of pixels per step."
+            "body": "<p>Return the number of pixels per step.</p>"
           }
         ],
         "@param": [
@@ -996,7 +997,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the overall number of steps."
+            "body": "<p>Return the overall number of steps.</p>"
           }
         ],
         "@return": [
@@ -1026,7 +1027,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the range between {@link #maximum} and {@link #minimum}."
+            "body": "<p>Return the range between {@link #maximum} and {@link #minimum}.</p>"
           }
         ],
         "@return": [
@@ -1054,11 +1055,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1085,7 +1086,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -1111,11 +1112,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -1142,7 +1143,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1168,11 +1169,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -1199,7 +1200,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -1225,11 +1226,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -1256,7 +1257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -1282,11 +1283,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -1313,7 +1314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -1339,7 +1340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -1366,7 +1367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -1401,11 +1402,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the element's value."
+            "body": "<p>Sets the element's value.</p>"
           }
         ],
         "@param": [
@@ -1443,7 +1444,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The element's user set value."
+            "body": "<p>The element's user set value.</p>"
           }
         ],
         "@return": [
@@ -1468,7 +1469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the incoming value."
+            "body": "<p>Converts the incoming value.</p>"
           }
         ],
         "@param": [
@@ -1520,7 +1521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether this widget has focus or not."
+            "body": "<p>Returns whether this widget has focus or not.</p>"
           }
         ],
         "@return": [
@@ -1545,7 +1546,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #changeValue} event occurs."
+            "body": "<p>Event handler. Called when the {@link #changeValue} event occurs.</p>"
           }
         ],
         "@param": [
@@ -1571,7 +1572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #input} event occurs."
+            "body": "<p>Event handler. Called when the {@link #input} event occurs.</p>"
           }
         ],
         "@param": [
@@ -1597,7 +1598,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the caret position of this widget."
+            "body": "<p>Returns the caret position of this widget.</p>"
           }
         ],
         "@return": [
@@ -1622,7 +1623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the caret position on this widget."
+            "body": "<p>Sets the caret position on this widget.</p>"
           }
         ],
         "@param": [
@@ -1648,7 +1649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the {@link #changeValue} event."
+            "body": "<p>Fires the {@link #changeValue} event.</p>"
           }
         ],
         "@param": [
@@ -1769,7 +1770,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1900,7 +1901,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a state to the element"
+            "body": "<p>Adds a state to the element</p>"
           }
         ],
         "@param": [
@@ -1926,7 +1927,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the element has the state passed as argument"
+            "body": "<p>Checks whether the element has the state passed as argument</p>"
           }
         ],
         "@param": [
@@ -1960,7 +1961,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a state from the element"
+            "body": "<p>Removes a state from the element</p>"
           }
         ],
         "@param": [
@@ -1986,7 +1987,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces a state of the element with a new state.\nIf the element doesn't have the state to be removed, then th new state will\njust be added."
+            "body": "<p>Replaces a state of the element with a new state.\n If the element doesn't have the state to be removed, then th new state will\n just be added.</p>"
           }
         ],
         "@param": [
@@ -3364,13 +3365,14 @@
     "location": {
       "start": {
         "line": 458,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 462,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

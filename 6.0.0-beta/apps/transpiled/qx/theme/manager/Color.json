@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Manager for color themes"
+          "body": "<p>Manager for color themes</p>"
         }
       ]
     }
@@ -50,7 +50,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "the currently selected color theme"
+            "body": "<p>the currently selected color theme</p>"
           }
         ]
       },
@@ -112,7 +112,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to take a color stored in the theme and returns the string color value.\nIn most of the times that means it just returns the string stored in the theme.\nIt additionally checks if its a valid color at all."
+            "body": "<p>Helper to take a color stored in the theme and returns the string color value.\n In most of the times that means it just returns the string stored in the theme.\n It additionally checks if its a valid color at all.</p>"
           }
         ],
         "@param": [
@@ -158,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the dynamically interpreted result for the incoming value,\n(if available), otherwise returns the original value"
+            "body": "<p>Returns the dynamically interpreted result for the incoming value,\n (if available), otherwise returns the original value</p>"
           }
         ],
         "@param": [
@@ -173,9 +173,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var} either returns the (translated) result of the incoming\nvalue or the value itself",
+            "body": "{var} either returns the (translated) result of the incoming\n value or the value itself",
             "type": "var",
-            "description": " either returns the (translated) result of the incoming\nvalue or the value itself"
+            "description": " either returns the (translated) result of the incoming\n value or the value itself"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a value is interpreted dynamically"
+            "body": "<p>Whether a value is interpreted dynamically</p>"
           }
         ],
         "@param": [

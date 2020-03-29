@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006, 2007, 2011 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006, 2007, 2011 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Create a new state which may be added to a finite state machine."
+          "body": "<p>Create a new state which may be added to a finite state machine.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 146,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 226,
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "stateName {String}\nThe name of this state.  This is the name which may be referenced in\nobjects of class qx.util.fsm.Transition, when passing of\nthe transition's predicate means transition to this state.",
+          "body": "stateName {String}\n   The name of this state.  This is the name which may be referenced in\n   objects of class qx.util.fsm.Transition, when passing of\n   the transition's predicate means transition to this state.",
           "paramName": "stateName",
-          "description": "\nThe name of this state.  This is the name which may be referenced in\nobjects of class qx.util.fsm.Transition, when passing of\nthe transition's predicate means transition to this state.",
+          "description": "\n   The name of this state.  This is the name which may be referenced in\n   objects of class qx.util.fsm.Transition, when passing of\n   the transition's predicate means transition to this state.",
           "type": "String"
         },
         {
           "name": "@param",
-          "body": "stateInfo {Map}\n<pre>\nAn object containing any of the following properties:\n\ncontext -\nA context in which all of the following functions should be run.\n\nonentry -\nA function which is called upon entry to the state.  Its signature\nis function(fsm, event) and it is saved in the onentry property of\nthe state object.  (This function is called after the Transition's\naction function and after the previous state's onexit function.)\n\nIn the onentry function:\n\nfsm -\nThe finite state machine object to which this state is attached.\n\nevent -\nThe event that caused the finite state machine to run\n\nonexit -\nA function which is called upon exit from the state.  Its signature\nis function(fsm, event) and it is saved in the onexit property of\nthe state object.  (This function is called after the Transition's\naction function and before the next state's onentry function.)\n\nIn the onexit function:\n\nfsm -\nThe finite state machine object to which this state is attached.\n\nevent -\nThe event that caused the finite state machine to run\n\nautoActionsBeforeOnentry -\nautoActionsAfterOnentry -\nautoActionsBeforeOnexit -\nautoActionsAfterOnexit -\nAutomatic actions which take place at the time specified by the\nproperty name.  In all cases, the action takes place immediately\nbefore or after the specified function.\n\nThe property value for each of these properties is an object which\ndescribes some number of functions to invoke on a set of specified\nobjects (typically widgets).\n\nAn example, using autoActionsBeforeOnentry, might look like this:\n\n\"autoActionsBeforeOnentry\" :\n{\n// The name of a function.\n\"setEnabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ],\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ]\n}\n],\n\n// The name of another function.\n\"setVisible\" :\n[\n{\n// The parameter value, thus \"setVisible(false);\"\n\"parameters\" : [ false ],\n\n// The function would be called on each object and group, as\n// described above.\n\"objects\" : [ \"obj3\", \"obj4\" ],\n\"groups\"  : [ \"group3\", \"group4\" ]\n}\n]\n};\n\nevents (required) -\nA description to the finite state machine of how to handle a\nparticular event, optionally associated with a specific target\nobject on which the event was dispatched.  This should be an object\ncontaining one property for each event which is either handled or\nblocked.  The property name should be the event name.  The property\nvalue should be one of:\n\n(a) qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE\n\n(b) qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED\n\n(c) a string containing the name of an explicit Transition to use\n\n(d) an object where each property name is the Friendly Name of an\nobject (meaning that this rule applies if both the event and\nthe event's target object's Friendly Name match), and its\nproperty value is one of (a), (b) or (c), above.\n\nThis object is saved in the events property of the state object.\n\nAdditional properties may be provided in stateInfo.  They will not be\nused by the finite state machine, but will be available via\nthis.getUserData(\"<propertyName>\") during the state's onentry and\nonexit functions.\n</pre>",
+          "body": "stateInfo {Map}\n   <pre>\n   An object containing any of the following properties:\n     context -\n       A context in which all of the following functions should be run.\n     onentry -\n       A function which is called upon entry to the state.  Its signature\n       is function(fsm, event) and it is saved in the onentry property of\n       the state object.  (This function is called after the Transition's\n       action function and after the previous state's onexit function.)\n       In the onentry function:\n         fsm -\n           The finite state machine object to which this state is attached.\n         event -\n           The event that caused the finite state machine to run\n     onexit -\n       A function which is called upon exit from the state.  Its signature\n       is function(fsm, event) and it is saved in the onexit property of\n       the state object.  (This function is called after the Transition's\n       action function and before the next state's onentry function.)\n       In the onexit function:\n         fsm -\n           The finite state machine object to which this state is attached.\n         event -\n           The event that caused the finite state machine to run\n     autoActionsBeforeOnentry -\n     autoActionsAfterOnentry -\n     autoActionsBeforeOnexit -\n     autoActionsAfterOnexit -\n       Automatic actions which take place at the time specified by the\n       property name.  In all cases, the action takes place immediately\n       before or after the specified function.\n       The property value for each of these properties is an object which\n       describes some number of functions to invoke on a set of specified\n       objects (typically widgets).\n       An example, using autoActionsBeforeOnentry, might look like this:\n       \"autoActionsBeforeOnentry\" :\n       {\n\n         \"setEnabled\" :\n         [\n           {\n\n             \"parameters\" : [ true ],\n\n\n\n             \"objects\" : [ \"obj1\", \"obj2\" ],\n\n             \"groups\"  : [ \"group1\", \"group2\" ]\n           }\n         ],\n\n         \"setVisible\" :\n         [\n           {\n\n             \"parameters\" : [ false ],\n\n\n             \"objects\" : [ \"obj3\", \"obj4\" ],\n             \"groups\"  : [ \"group3\", \"group4\" ]\n           }\n         ]\n       };\n     events (required) -\n       A description to the finite state machine of how to handle a\n       particular event, optionally associated with a specific target\n       object on which the event was dispatched.  This should be an object\n       containing one property for each event which is either handled or\n       blocked.  The property name should be the event name.  The property\n       value should be one of:\n         (a) qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE\n         (b) qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED\n         (c) a string containing the name of an explicit Transition to use\n         (d) an object where each property name is the Friendly Name of an\n             object (meaning that this rule applies if both the event and\n             the event's target object's Friendly Name match), and its\n             property value is one of (a), (b) or (c), above.\n       This object is saved in the events property of the state object.\n     Additional properties may be provided in stateInfo.  They will not be\n     used by the finite state machine, but will be available via\n     this.getUserData(\"<propertyName>\") during the state's onentry and\n     onexit functions.\n   </pre>",
           "paramName": "stateInfo",
-          "description": "\n<pre>\nAn object containing any of the following properties:\n\ncontext -\nA context in which all of the following functions should be run.\n\nonentry -\nA function which is called upon entry to the state.  Its signature\nis function(fsm, event) and it is saved in the onentry property of\nthe state object.  (This function is called after the Transition's\naction function and after the previous state's onexit function.)\n\nIn the onentry function:\n\nfsm -\nThe finite state machine object to which this state is attached.\n\nevent -\nThe event that caused the finite state machine to run\n\nonexit -\nA function which is called upon exit from the state.  Its signature\nis function(fsm, event) and it is saved in the onexit property of\nthe state object.  (This function is called after the Transition's\naction function and before the next state's onentry function.)\n\nIn the onexit function:\n\nfsm -\nThe finite state machine object to which this state is attached.\n\nevent -\nThe event that caused the finite state machine to run\n\nautoActionsBeforeOnentry -\nautoActionsAfterOnentry -\nautoActionsBeforeOnexit -\nautoActionsAfterOnexit -\nAutomatic actions which take place at the time specified by the\nproperty name.  In all cases, the action takes place immediately\nbefore or after the specified function.\n\nThe property value for each of these properties is an object which\ndescribes some number of functions to invoke on a set of specified\nobjects (typically widgets).\n\nAn example, using autoActionsBeforeOnentry, might look like this:\n\n\"autoActionsBeforeOnentry\" :\n{\n// The name of a function.\n\"setEnabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ],\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ]\n}\n],\n\n// The name of another function.\n\"setVisible\" :\n[\n{\n// The parameter value, thus \"setVisible(false);\"\n\"parameters\" : [ false ],\n\n// The function would be called on each object and group, as\n// described above.\n\"objects\" : [ \"obj3\", \"obj4\" ],\n\"groups\"  : [ \"group3\", \"group4\" ]\n}\n]\n};\n\nevents (required) -\nA description to the finite state machine of how to handle a\nparticular event, optionally associated with a specific target\nobject on which the event was dispatched.  This should be an object\ncontaining one property for each event which is either handled or\nblocked.  The property name should be the event name.  The property\nvalue should be one of:\n\n(a) qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE\n\n(b) qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED\n\n(c) a string containing the name of an explicit Transition to use\n\n(d) an object where each property name is the Friendly Name of an\nobject (meaning that this rule applies if both the event and\nthe event's target object's Friendly Name match), and its\nproperty value is one of (a), (b) or (c), above.\n\nThis object is saved in the events property of the state object.\n\nAdditional properties may be provided in stateInfo.  They will not be\nused by the finite state machine, but will be available via\nthis.getUserData(\"<propertyName>\") during the state's onentry and\nonexit functions.\n</pre>",
+          "description": "\n   <pre>\n   An object containing any of the following properties:\n     context -\n       A context in which all of the following functions should be run.\n     onentry -\n       A function which is called upon entry to the state.  Its signature\n       is function(fsm, event) and it is saved in the onentry property of\n       the state object.  (This function is called after the Transition's\n       action function and after the previous state's onexit function.)\n       In the onentry function:\n         fsm -\n           The finite state machine object to which this state is attached.\n         event -\n           The event that caused the finite state machine to run\n     onexit -\n       A function which is called upon exit from the state.  Its signature\n       is function(fsm, event) and it is saved in the onexit property of\n       the state object.  (This function is called after the Transition's\n       action function and before the next state's onentry function.)\n       In the onexit function:\n         fsm -\n           The finite state machine object to which this state is attached.\n         event -\n           The event that caused the finite state machine to run\n     autoActionsBeforeOnentry -\n     autoActionsAfterOnentry -\n     autoActionsBeforeOnexit -\n     autoActionsAfterOnexit -\n       Automatic actions which take place at the time specified by the\n       property name.  In all cases, the action takes place immediately\n       before or after the specified function.\n       The property value for each of these properties is an object which\n       describes some number of functions to invoke on a set of specified\n       objects (typically widgets).\n       An example, using autoActionsBeforeOnentry, might look like this:\n       \"autoActionsBeforeOnentry\" :\n       {\n\n         \"setEnabled\" :\n         [\n           {\n\n             \"parameters\" : [ true ],\n\n\n\n             \"objects\" : [ \"obj1\", \"obj2\" ],\n\n             \"groups\"  : [ \"group1\", \"group2\" ]\n           }\n         ],\n\n         \"setVisible\" :\n         [\n           {\n\n             \"parameters\" : [ false ],\n\n\n             \"objects\" : [ \"obj3\", \"obj4\" ],\n             \"groups\"  : [ \"group3\", \"group4\" ]\n           }\n         ]\n       };\n     events (required) -\n       A description to the finite state machine of how to handle a\n       particular event, optionally associated with a specific target\n       object on which the event was dispatched.  This should be an object\n       containing one property for each event which is either handled or\n       blocked.  The property name should be the event name.  The property\n       value should be one of:\n         (a) qx.util.fsm.FiniteStateMachine.EventHandling.PREDICATE\n         (b) qx.util.fsm.FiniteStateMachine.EventHandling.BLOCKED\n         (c) a string containing the name of an explicit Transition to use\n         (d) an object where each property name is the Friendly Name of an\n             object (meaning that this rule applies if both the event and\n             the event's target object's Friendly Name match), and its\n             property value is one of (a), (b) or (c), above.\n       This object is saved in the events property of the state object.\n     Additional properties may be provided in stateInfo.  They will not be\n     used by the finite state machine, but will be available via\n     this.getUserData(\"<propertyName>\") during the state's onentry and\n     onexit functions.\n   </pre>",
           "type": "Map"
         }
       ],
@@ -97,38 +97,38 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Common function for checking the value provided for\nauto actions.\n\nAuto-action property values passed to us look akin to:\n\n<pre class='javascript'>\n{\n// The name of a function.\n\"setEnabled\" :\n[\n{\n// The parameter value(s), thus \"setEnabled(true);\"\n\"parameters\"   : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ]\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ],\n}\n];\n\n\"setTextColor\" :\n[\n{\n\"parameters\" : [ \"blue\" ]\n\"groups\"     : [ \"group3\", \"group4\" ],\n\"objects\"    : [ \"obj3\", \"obj4\" ]\n}\n];\n};\n</pre>"
+            "body": "<p>Common function for checking the value provided for\n auto actions.\n Auto-action property values passed to us look akin to:\n     <pre class='javascript'>\n     {</p>\n<pre><code>   \"setEnabled\" :\n   [\n     {\n\n       \"parameters\"   : [ true ],\n\n\n\n       \"objects\" : [ \"obj1\", \"obj2\" ]\n\n       \"groups\"  : [ \"group1\", \"group2\" ],\n     }\n   ];\n   \"setTextColor\" :\n   [\n     {\n       \"parameters\" : [ \"blue\" ]\n       \"groups\"     : [ \"group3\", \"group4\" ],\n       \"objects\"    : [ \"obj3\", \"obj4\" ]\n     }\n   ];\n };\n &lt;/pre&gt;\n</code></pre>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "actionType {String}\nThe name of the action being validated (for debug messages)",
+            "body": "actionType {String}\n   The name of the action being validated (for debug messages)",
             "paramName": "actionType",
-            "description": "\nThe name of the action being validated (for debug messages)",
+            "description": "\n   The name of the action being validated (for debug messages)",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "value {Object}\nThe property value which is being validated",
+            "body": "value {Object}\n   The property value which is being validated",
             "paramName": "value",
-            "description": "\nThe property value which is being validated",
+            "description": "\n   The property value which is being validated",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "context {Object}\nThe object to which the created function should be bound.",
+            "body": "context {Object}\n   The object to which the created function should be bound.",
             "paramName": "context",
-            "description": "\nThe object to which the created function should be bound.",
+            "description": "\n   The object to which the created function should be bound.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Function}\nFunction that implements calls to each of the requested automatic\nactions",
+            "body": "{Function}\n   Function that implements calls to each of the requested automatic\n   actions",
             "type": "Function",
-            "description": "\nFunction that implements calls to each of the requested automatic\nactions"
+            "description": "\n   Function that implements calls to each of the requested automatic\n   actions"
           }
         ],
         "@throws": [
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of this state.  This name may be used as a Transition's\nnextState value, or an explicit next state in the 'events' handling\nlist in a State."
+            "body": "<p>The name of this state.  This name may be used as a Transition's\n nextState value, or an explicit next state in the 'events' handling\n list in a State.</p>"
           }
         ]
       },
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The onentry function for this state.  This is documented in the\nconstructor, and is typically provided through the constructor's\nstateInfo object, but it is also possible (but highly NOT recommended)\nto change this dynamically."
+            "body": "<p>The onentry function for this state.  This is documented in the\n constructor, and is typically provided through the constructor's\n stateInfo object, but it is also possible (but highly NOT recommended)\n to change this dynamically.</p>"
           }
         ]
       },
@@ -244,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The onexit function for this state.  This is documented in the\nconstructor, and is typically provided through the constructor's\nstateInfo object, but it is also possible (but highly NOT recommended)\nto change this dynamically."
+            "body": "<p>The onexit function for this state.  This is documented in the\n constructor, and is typically provided through the constructor's\n stateInfo object, but it is also possible (but highly NOT recommended)\n to change this dynamically.</p>"
           }
         ]
       },
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take prior to calling the state's onentry function.\n\nThe value passed to setAutoActionsBeforeOnentry() should like something\nakin to:\n\n<pre class='javascript'>\n\"autoActionsBeforeOnentry\" :\n{\n// The name of a function.  This would become \"setEnabled(\"\n\"enabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ]\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ],\n}\n];\n};\n</pre>"
+            "body": "<p>Automatic actions to take prior to calling the state's onentry function.\n The value passed to setAutoActionsBeforeOnentry() should like something\n akin to:\n     <pre class='javascript'>\n     \"autoActionsBeforeOnentry\" :\n     {</p>\n<pre><code>   \"enabled\" :\n   [\n     {\n\n       \"parameters\" : [ true ],\n\n\n\n       \"objects\" : [ \"obj1\", \"obj2\" ]\n\n       \"groups\"  : [ \"group1\", \"group2\" ],\n     }\n   ];\n };\n &lt;/pre&gt;\n</code></pre>"
           }
         ]
       },
@@ -292,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take after return from the state's onentry\nfunction.\n\nThe value passed to setAutoActionsAfterOnentry() should like something\nakin to:\n\n<pre class='javascript'>\n\"autoActionsAfterOnentry\" :\n{\n// The name of a function.  This would become \"setEnabled(\"\n\"enabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ]\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ],\n}\n];\n};\n</pre>"
+            "body": "<p>Automatic actions to take after return from the state's onentry\n function.\n The value passed to setAutoActionsAfterOnentry() should like something\n akin to:\n     <pre class='javascript'>\n     \"autoActionsAfterOnentry\" :\n     {</p>\n<pre><code>   \"enabled\" :\n   [\n     {\n\n       \"parameters\" : [ true ],\n\n\n\n       \"objects\" : [ \"obj1\", \"obj2\" ]\n\n       \"groups\"  : [ \"group1\", \"group2\" ],\n     }\n   ];\n };\n &lt;/pre&gt;\n</code></pre>"
           }
         ]
       },
@@ -316,7 +316,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take prior to calling the state's onexit function.\n\nThe value passed to setAutoActionsBeforeOnexit() should like something\nakin to:\n\n<pre class='javascript'>\n\"autoActionsBeforeOnexit\" :\n{\n// The name of a function.  This would become \"setEnabled(\"\n\"enabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ]\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ],\n}\n];\n};\n</pre>"
+            "body": "<p>Automatic actions to take prior to calling the state's onexit function.\n The value passed to setAutoActionsBeforeOnexit() should like something\n akin to:\n     <pre class='javascript'>\n     \"autoActionsBeforeOnexit\" :\n     {</p>\n<pre><code>   \"enabled\" :\n   [\n     {\n\n       \"parameters\" : [ true ],\n\n\n\n       \"objects\" : [ \"obj1\", \"obj2\" ]\n\n       \"groups\"  : [ \"group1\", \"group2\" ],\n     }\n   ];\n };\n &lt;/pre&gt;\n</code></pre>"
           }
         ]
       },
@@ -340,7 +340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Automatic actions to take after returning from the state's onexit\nfunction.\n\nThe value passed to setAutoActionsAfterOnexit() should like something\nakin to:\n\n<pre class='javascript'>\n\"autoActionsBeforeOnexit\" :\n{\n// The name of a function.  This would become \"setEnabled(\"\n\"enabled\" :\n[\n{\n// The parameter value, thus \"setEnabled(true);\"\n\"parameters\" : [ true ],\n\n// The function would be called on each object:\n//  this.getObject(\"obj1\").setEnabled(true);\n//  this.getObject(\"obj2\").setEnabled(true);\n\"objects\" : [ \"obj1\", \"obj2\" ]\n\n// And similarly for each object in each specified group.\n\"groups\"  : [ \"group1\", \"group2\" ],\n}\n];\n};\n</pre>"
+            "body": "<p>Automatic actions to take after returning from the state's onexit\n function.\n The value passed to setAutoActionsAfterOnexit() should like something\n akin to:\n     <pre class='javascript'>\n     \"autoActionsBeforeOnexit\" :\n     {</p>\n<pre><code>   \"enabled\" :\n   [\n     {\n\n       \"parameters\" : [ true ],\n\n\n\n       \"objects\" : [ \"obj1\", \"obj2\" ]\n\n       \"groups\"  : [ \"group1\", \"group2\" ],\n     }\n   ];\n };\n &lt;/pre&gt;\n</code></pre>"
           }
         ]
       },
@@ -364,7 +364,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The object representing handled and blocked events for this state.\nThis is documented in the constructor, and is typically provided\nthrough the constructor's stateInfo object, but it is also possible\n(but highly NOT recommended) to change this dynamically."
+            "body": "<p>The object representing handled and blocked events for this state.\n This is documented in the constructor, and is typically provided\n through the constructor's stateInfo object, but it is also possible\n (but highly NOT recommended) to change this dynamically.</p>"
           }
         ]
       },
@@ -406,7 +406,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -453,7 +453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -500,7 +500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -547,7 +547,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -594,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -633,7 +633,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -672,7 +672,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -711,7 +711,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal transform method"
+            "body": "<p>Internal transform method</p>"
           }
         ],
         "@param": [
@@ -750,15 +750,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If given a function, bind it to a specified context."
+            "body": "<p>If given a function, bind it to a specified context.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "f {Function|var}\nThe (possibly) function to be bound to the specified context.",
+            "body": "f {Function|var}\n   The (possibly) function to be bound to the specified context.",
             "paramName": "f",
-            "description": "\nThe (possibly) function to be bound to the specified context.",
+            "description": "\n   The (possibly) function to be bound to the specified context.",
             "type": [
               "Function",
               "var"
@@ -766,18 +766,18 @@
           },
           {
             "name": "@param",
-            "body": "context {Object}\nThe context to bind the function to.",
+            "body": "context {Object}\n   The context to bind the function to.",
             "paramName": "context",
-            "description": "\nThe context to bind the function to.",
+            "description": "\n   The context to bind the function to.",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Function}\nIf f was a function, the return value is f wrapped such that it will\nbe called in the specified context. Otherwise, f is returned\nunaltered.",
+            "body": "{Function}\n   If f was a function, the return value is f wrapped such that it will\n   be called in the specified context. Otherwise, f is returned\n   unaltered.",
             "type": "Function",
-            "description": "\nIf f was a function, the return value is f wrapped such that it will\nbe called in the specified context. Otherwise, f is returned\nunaltered."
+            "description": "\n   If f was a function, the return value is f wrapped such that it will\n   be called in the specified context. Otherwise, f is returned\n   unaltered."
           }
         ]
       },
@@ -799,15 +799,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a transition to a state"
+            "body": "<p>Add a transition to a state</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "trans {qx.util.fsm.Transition}\nAn object of class qx.util.fsm.Transition representing a transition\nwhich is to be a part of this state.",
+            "body": "trans {qx.util.fsm.Transition}\n   An object of class qx.util.fsm.Transition representing a transition\n   which is to be a part of this state.",
             "paramName": "trans",
-            "description": "\nAn object of class qx.util.fsm.Transition representing a transition\nwhich is to be a part of this state.",
+            "description": "\n   An object of class qx.util.fsm.Transition representing a transition\n   which is to be a part of this state.",
             "type": "qx.util.fsm.Transition"
           }
         ]

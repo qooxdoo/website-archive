@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Interface of an authentication delegate."
+          "body": "<p>Interface of an authentication delegate.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Headers to include in request for authentication purposes."
+            "body": "<p>Headers to include in request for authentication purposes.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} Array of maps. Each map represent a header and\nmust have the properties <code>key</code> and <code>value</code>\nwith a value of type string.",
+            "body": "{Map[]} Array of maps. Each map represent a header and\n          must have the properties <code>key</code> and <code>value</code>\n         with a value of type string.",
             "type": "Map[]",
-            "description": " Array of maps. Each map represent a header and\nmust have the properties <code>key</code> and <code>value</code>\nwith a value of type string."
+            "description": " Array of maps. Each map represent a header and\n          must have the properties <code>key</code> and <code>value</code>\n         with a value of type string."
           }
         ]
       },

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2016 Zenesis Limited, http://www.zenesis.com\nBluebirdJS Copyright (c) 2013-2016 Petka Antonov http://bluebirdjs.com/\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJohn Spackman (john.spackman@zenesis.com)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2016 Zenesis Limited, http://www.zenesis.com\n     BluebirdJS Copyright (c) 2013-2016 Petka Antonov http://bluebirdjs.com/\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n John Spackman (john.spackman@zenesis.com)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class adds Promise/A+ support to Qooxdoo, as specified at\nhttps://github.com/promises-aplus/promises-spec and using the Bluebird Promise\nlibrary (http://bluebirdjs.com/) to implement it.  The official Promise/A+ API)\nis mirrored exactly, and a number of extension methods are added with the BluebirdJS\nAPI for inspiration (many/most of the extension functions are taken verbatim).\n\nThere are two ways to bind a 'this' value to callbacks - the first is to\nappend a context method to methods like then(), and the second is to specify\nthe context as the second parameter to the constructor and all callbacks will\nbe bound to that value.\n\nFor example:\n\n<pre class=\"javascript\">\nvar promise = new qx.Promise(myAsyncFunction, this);\npromise.then(function() {\n// 'this' is preserved from the outer scope\n});\n\n// ... is the same as: ...\nvar promise = new qx.Promise(myAsyncFunction);\npromise.then(function() {\n// 'this' is preserved from the outer scope\n}, this);\n</pre>\n\nIf you have an existing qx.Promise and want to bind all callbacks, use the\nbind() method - but note that it returns a new promise:\n\n<pre class=\"javascript\">\nvar promise = someMethodThatReturnsAPromise();\nvar boundPromise = promise.bind(this);\nboundPromise.then(function() {\n// 'this' is preserved from the outer scope\n}, this);\n</pre>"
+          "body": "<p>This class adds Promise/A+ support to Qooxdoo, as specified at\n https://github.com/promises-aplus/promises-spec and using the Bluebird Promise\n library (http://bluebirdjs.com/) to implement it.  The official Promise/A+ API)\n is mirrored exactly, and a number of extension methods are added with the BluebirdJS\n API for inspiration (many/most of the extension functions are taken verbatim).\n There are two ways to bind a 'this' value to callbacks - the first is to\n append a context method to methods like then(), and the second is to specify\n the context as the second parameter to the constructor and all callbacks will\n be bound to that value.\n For example:\n </p>\n<pre class=\"javascript\">\n   var promise = new qx.Promise(myAsyncFunction, this);\n   promise.then(function() {\n\n   });\n\n   var promise = new qx.Promise(myAsyncFunction);\n   promise.then(function() {\n\n   }, this);\n </pre>\n<p>If you have an existing qx.Promise and want to bind all callbacks, use the\n bind() method - but note that it returns a new promise:\n  </p>\n<pre class=\"javascript\">\n    var promise = someMethodThatReturnsAPromise();\n    var boundPromise = promise.bind(this);\n    boundPromise.then(function() {\n\n    }, this);\n  </pre>"
         },
         {
           "name": "@description",
@@ -57,7 +57,7 @@
     "location": {
       "start": {
         "line": 82,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 116,
@@ -68,7 +68,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Constructor.\n\nThe promise function is called with two parameters, functions which are to be called\nwhen the promise is fulfilled or rejected respectively.  If you do not provide any\nparameters, the promise can be externally resolved or rejected by calling the\n<code>resolve()</code> or <code>reject()</code> methods."
+          "body": "<p>Constructor.\n The promise function is called with two parameters, functions which are to be called\n when the promise is fulfilled or rejected respectively.  If you do not provide any\n parameters, the promise can be externally resolved or rejected by calling the\n <code>resolve()</code> or <code>reject()</code> methods.</p>"
         }
       ],
       "@param": [
@@ -94,7 +94,7 @@
     "location": {
       "start": {
         "line": 121,
-        "column": 2
+        "column": 12
       },
       "end": {
         "line": 124,
@@ -105,7 +105,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Destructor"
+          "body": "<p>Destructor</p>"
         }
       ]
     }
@@ -126,7 +126,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The Promise"
+            "body": "<p>The Promise</p>"
           }
         ]
       },
@@ -148,7 +148,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stores data for completing the promise externally"
+            "body": "<p>Stores data for completing the promise externally</p>"
           }
         ]
       },
@@ -170,26 +170,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nPromise API methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Promise API methods</p>"
           },
           {
             "name": "@description",
-            "body": "Returns a promise which is determined by the functions <code>onFulfilled</code>\nand <code>onRejected</code>."
+            "body": "<p>Returns a promise which is determined by the functions <code>onFulfilled</code>\n and <code>onRejected</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "onFulfilled {Function} called when the Promise is fulfilled. This function\nhas one argument, the fulfillment value.",
+            "body": "onFulfilled {Function} called when the Promise is fulfilled. This function\n  has one argument, the fulfillment value.",
             "paramName": "onFulfilled",
-            "description": " called when the Promise is fulfilled. This function\nhas one argument, the fulfillment value.",
+            "description": " called when the Promise is fulfilled. This function\n  has one argument, the fulfillment value.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "onRejected {Function?} called when the Promise is rejected. This function\nhas one argument, the rejection reason.",
+            "body": "onRejected {Function?} called when the Promise is rejected. This function\n  has one argument, the rejection reason.",
             "paramName": "onRejected",
-            "description": " called when the Promise is rejected. This function\nhas one argument, the rejection reason.",
+            "description": " called when the Promise is rejected. This function\n  has one argument, the rejection reason.",
             "optional": true,
             "type": "Function"
           }
@@ -221,15 +221,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends a rejection handler callback to the promise, and returns a new promise\nresolving to the return value of the callback if it is called, or to its original\nfulfillment value if the promise is instead fulfilled."
+            "body": "<p>Appends a rejection handler callback to the promise, and returns a new promise\n resolving to the return value of the callback if it is called, or to its original\n fulfillment value if the promise is instead fulfilled.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "onRejected {Function?} called when the Promise is rejected. This function\nhas one argument, the rejection reason.",
+            "body": "onRejected {Function?} called when the Promise is rejected. This function\n  has one argument, the rejection reason.",
             "paramName": "onRejected",
-            "description": " called when the Promise is rejected. This function\nhas one argument, the rejection reason.",
+            "description": " called when the Promise is rejected. This function\n  has one argument, the rejection reason.",
             "optional": true,
             "type": "Function"
           }
@@ -237,9 +237,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} a qx.Promise is rejected if onRejected throws an error or\nreturns a Promise which is itself rejected; otherwise, it is resolved.",
+            "body": "{qx.Promise} a qx.Promise is rejected if onRejected throws an error or\n  returns a Promise which is itself rejected; otherwise, it is resolved.",
             "type": "qx.Promise",
-            "description": " a qx.Promise is rejected if onRejected throws an error or\nreturns a Promise which is itself rejected; otherwise, it is resolved."
+            "description": " a qx.Promise is rejected if onRejected throws an error or\n  returns a Promise which is itself rejected; otherwise, it is resolved."
           }
         ]
       },
@@ -261,11 +261,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nExtension Promise methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Extension Promise methods</p>"
           },
           {
             "name": "@description",
-            "body": "Creates a new qx.Promise with the 'this' set to a different context"
+            "body": "<p>Creates a new qx.Promise with the 'this' set to a different context</p>"
           }
         ],
         "@param": [
@@ -308,7 +308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Like calling <code>.then</code>, but the fulfillment value must be an array, which is flattened\nto the formal parameters of the fulfillment handler.\n\nFor example:\n<pre>\nqx.Promise.all([\nfs.readFileAsync(\"file1.txt\"),\nfs.readFileAsync(\"file2.txt\")\n]).spread(function(file1text, file2text) {\nif (file1text === file2text) {\nconsole.log(\"files are equal\");\n}\nelse {\nconsole.log(\"files are not equal\");\n}\n});\n</pre>"
+            "body": "<p>Like calling <code>.then</code>, but the fulfillment value must be an array, which is flattened\n to the formal parameters of the fulfillment handler.\n For example:\n </p>\n<pre>\n qx.Promise.all([\n   fs.readFileAsync(\"file1.txt\"),\n   fs.readFileAsync(\"file2.txt\")\n ]).spread(function(file1text, file2text) {\n   if (file1text === file2text) {\n     console.log(\"files are equal\");\n   }\n   else {\n     console.log(\"files are not equal\");\n   }\n });\n </pre>"
           }
         ],
         "@param": [
@@ -347,15 +347,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Appends a handler that will be called regardless of this promise's fate. The handler\nis not allowed to modify the value of the promise"
+            "body": "<p>Appends a handler that will be called regardless of this promise's fate. The handler\n is not allowed to modify the value of the promise</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "handler {Function?} called when the Promise is fulfilled or rejected. This function\nhas no arguments, but can return a promise",
+            "body": "handler {Function?} called when the Promise is fulfilled or rejected. This function\n  has no arguments, but can return a promise",
             "paramName": "handler",
-            "description": " called when the Promise is fulfilled or rejected. This function\nhas no arguments, but can return a promise",
+            "description": " called when the Promise is fulfilled or rejected. This function\n  has no arguments, but can return a promise",
             "optional": true,
             "type": "Function"
           }
@@ -387,7 +387,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cancel this promise. Will not do anything if this promise is already settled."
+            "body": "<p>Cancel this promise. Will not do anything if this promise is already settled.</p>"
           }
         ]
       },
@@ -409,7 +409,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.all} except that it iterates over the value of this promise, when\nit is fulfilled; for example, if this Promise resolves to an Iterable (eg an Array),\n<code>.all</code> will return a Promise that waits for all promises in that Iterable to be\nfullfilled.  The Iterable can be a mix of values and Promises"
+            "body": "<p>Same as {@link qx.Promise.all} except that it iterates over the value of this promise, when\n it is fulfilled; for example, if this Promise resolves to an Iterable (eg an Array),\n <code>.all</code> will return a Promise that waits for all promises in that Iterable to be\n fullfilled.  The Iterable can be a mix of values and Promises</p>"
           }
         ],
         "@return": [
@@ -439,7 +439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.race} except that it iterates over the value of this promise, when\nit is fulfilled; for example, if this Promise resolves to an Iterable (eg an Array),\n<code>.race</code> will return a Promise that waits until the first promise in that Iterable\nhas been fullfilled.  The Iterable can be a mix of values and Promises"
+            "body": "<p>Same as {@link qx.Promise.race} except that it iterates over the value of this promise, when\n it is fulfilled; for example, if this Promise resolves to an Iterable (eg an Array),\n <code>.race</code> will return a Promise that waits until the first promise in that Iterable\n has been fullfilled.  The Iterable can be a mix of values and Promises</p>"
           }
         ],
         "@return": [
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.some} except that it iterates over the value of this promise, when\nit is fulfilled.  Like <code>some</code>, with 1 as count. However, if the promise fulfills,\nthe fulfillment value is not an array of 1 but the value directly."
+            "body": "<p>Same as {@link qx.Promise.some} except that it iterates over the value of this promise, when\n it is fulfilled.  Like <code>some</code>, with 1 as count. However, if the promise fulfills,\n the fulfillment value is not an array of 1 but the value directly.</p>"
           }
         ],
         "@return": [
@@ -499,7 +499,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.some} except that it iterates over the value of this promise, when\nit is fulfilled; return a promise that is fulfilled as soon as count promises are fulfilled\nin the array. The fulfillment value is an array with count values in the order they were fulfilled."
+            "body": "<p>Same as {@link qx.Promise.some} except that it iterates over the value of this promise, when\n it is fulfilled; return a promise that is fulfilled as soon as count promises are fulfilled\n in the array. The fulfillment value is an array with count values in the order they were fulfilled.</p>"
           }
         ],
         "@param": [
@@ -542,7 +542,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.forEach} except that it iterates over the value of this promise, when\nit is fulfilled; iterates over the values with the given <code>iterator</code> function with the signature\n<code>(value, index, length)</code> where <code>value</code> is the resolved value. Iteration happens\nserially. If any promise is rejected the returned promise is rejected as well.\n\nResolves to the original array unmodified, this method is meant to be used for side effects. If the iterator\nfunction returns a promise or a thenable, then the result of the promise is awaited, before continuing with\nnext iteration."
+            "body": "<p>Same as {@link qx.Promise.forEach} except that it iterates over the value of this promise, when\n it is fulfilled; iterates over the values with the given <code>iterator</code> function with the signature\n <code>(value, index, length)</code> where <code>value</code> is the resolved value. Iteration happens\n serially. If any promise is rejected the returned promise is rejected as well.\n Resolves to the original array unmodified, this method is meant to be used for side effects. If the iterator\n function returns a promise or a thenable, then the result of the promise is awaited, before continuing with\n next iteration.</p>"
           }
         ],
         "@param": [
@@ -588,7 +588,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.filter} except that it iterates over the value of this promise, when it is fulfilled;\niterates over all the values into an array and filter the array to another using the given filterer function."
+            "body": "<p>Same as {@link qx.Promise.filter} except that it iterates over the value of this promise, when it is fulfilled;\n iterates over all the values into an array and filter the array to another using the given filterer function.</p>"
           }
         ],
         "@param": [
@@ -608,9 +608,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Object?} options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "body": "options {Object?} options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "paramName": "options",
-            "description": " options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "description": " options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "optional": true,
             "type": "Object"
           }
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.map} except that it iterates over the value of this promise, when it is fulfilled;\niterates over all the values into an array and map the array to another using the given mapper function.\n\nPromises returned by the mapper function are awaited for and the returned promise doesn't fulfill\nuntil all mapped promises have fulfilled as well. If any promise in the array is rejected, or\nany promise returned by the mapper function is rejected, the returned promise is rejected as well.\n\nThe mapper function for a given item is called as soon as possible, that is, when the promise\nfor that item's index in the input array is fulfilled. This doesn't mean that the result array\nhas items in random order, it means that .map can be used for concurrency coordination unlike\n.all."
+            "body": "<p>Same as {@link qx.Promise.map} except that it iterates over the value of this promise, when it is fulfilled;\n iterates over all the values into an array and map the array to another using the given mapper function.\n Promises returned by the mapper function are awaited for and the returned promise doesn't fulfill\n until all mapped promises have fulfilled as well. If any promise in the array is rejected, or\n any promise returned by the mapper function is rejected, the returned promise is rejected as well.\n The mapper function for a given item is called as soon as possible, that is, when the promise\n for that item's index in the input array is fulfilled. This doesn't mean that the result array\n has items in random order, it means that .map can be used for concurrency coordination unlike\n .all.</p>"
           }
         ],
         "@param": [
@@ -662,9 +662,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Object?} options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "body": "options {Object?} options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "paramName": "options",
-            "description": " options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "description": " options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "optional": true,
             "type": "Object"
           }
@@ -696,7 +696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.mapSeries} except that it iterates over the value of this promise, when\nit is fulfilled; iterates over all the values into an array and iterate over the array serially,\nin-order.\n\nReturns a promise for an array that contains the values returned by the iterator function in their\nrespective positions. The iterator won't be called for an item until its previous item, and the\npromise returned by the iterator for that item are fulfilled. This results in a mapSeries kind of\nutility but it can also be used simply as a side effect iterator similar to Array#forEach.\n\nIf any promise in the input array is rejected or any promise returned by the iterator function is\nrejected, the result will be rejected as well."
+            "body": "<p>Same as {@link qx.Promise.mapSeries} except that it iterates over the value of this promise, when\n it is fulfilled; iterates over all the values into an array and iterate over the array serially,\n in-order.\n Returns a promise for an array that contains the values returned by the iterator function in their\n respective positions. The iterator won't be called for an item until its previous item, and the\n promise returned by the iterator for that item are fulfilled. This results in a mapSeries kind of\n utility but it can also be used simply as a side effect iterator similar to Array#forEach.\n If any promise in the input array is rejected or any promise returned by the iterator function is\n rejected, the result will be rejected as well.</p>"
           }
         ],
         "@param": [
@@ -742,7 +742,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as {@link qx.Promise.reduce} except that it iterates over the value of this promise, when\nit is fulfilled; iterates over all the values in the <code>Iterable</code> into an array and\nreduce the array to a value using the given reducer function.\n\nIf the reducer function returns a promise, then the result of the promise is awaited, before\ncontinuing with next iteration. If any promise in the array is rejected or a promise returned\nby the reducer function is rejected, the result is rejected as well.\n\nIf initialValue is undefined (or a promise that resolves to undefined) and the iterable contains\nonly 1 item, the callback will not be called and the iterable's single item is returned. If the\niterable is empty, the callback will not be called and initialValue is returned (which may be\nundefined).\n\nqx.Promise.reduce will start calling the reducer as soon as possible, this is why you might want to\nuse it over qx.Promise.all (which awaits for the entire array before you can call Array#reduce on it)."
+            "body": "<p>Same as {@link qx.Promise.reduce} except that it iterates over the value of this promise, when\n it is fulfilled; iterates over all the values in the <code>Iterable</code> into an array and\n reduce the array to a value using the given reducer function.\n If the reducer function returns a promise, then the result of the promise is awaited, before\n continuing with next iteration. If any promise in the array is rejected or a promise returned\n by the reducer function is rejected, the result is rejected as well.\n If initialValue is undefined (or a promise that resolves to undefined) and the iterable contains\n only 1 item, the callback will not be called and the iterable's single item is returned. If the\n iterable is empty, the callback will not be called and initialValue is returned (which may be\n undefined).\n qx.Promise.reduce will start calling the reducer as soon as possible, this is why you might want to\n use it over qx.Promise.all (which awaits for the entire array before you can call Array#reduce on it).</p>"
           }
         ],
         "@param": [
@@ -796,7 +796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "External promise handler"
+            "body": "<p>External promise handler</p>"
           }
         ]
       },
@@ -818,7 +818,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data stored by __externalPromise, throws an exception once processed"
+            "body": "<p>Returns the data stored by __externalPromise, throws an exception once processed</p>"
           }
         ]
       },
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resolves an external promise"
+            "body": "<p>Resolves an external promise</p>"
           }
         ]
       },
@@ -862,7 +862,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rejects an external promise"
+            "body": "<p>Rejects an external promise</p>"
           }
         ]
       },
@@ -884,11 +884,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nUtility methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Utility methods</p>"
           },
           {
             "name": "@description",
-            "body": "Helper method used to call Promise methods which iterate over an array"
+            "body": "<p>Helper method used to call Promise methods which iterate over an array</p>"
           }
         ]
       },
@@ -910,7 +910,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method used to call a Promise method"
+            "body": "<p>Helper method used to call a Promise method</p>"
           }
         ]
       },
@@ -932,7 +932,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the actual Promise implementation.\n\nNote that Bluebird is the current implementation, and may change without\nnotice in the future; if you use this API you accept that this is a private\nimplementation detail exposed for debugging or diagnosis purposes only.  For\nthis reason, the toPromise() method is listed as deprecated starting from the\nfirst release"
+            "body": "<p>Returns the actual Promise implementation.\n Note that Bluebird is the current implementation, and may change without\n notice in the future; if you use this API you accept that this is a private\n implementation detail exposed for debugging or diagnosis purposes only.  For\n this reason, the toPromise() method is listed as deprecated starting from the\n first release</p>"
           }
         ],
         "@deprecated": [
@@ -957,22 +957,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The bind method delegates the call to the\n{@link qx.data.SingleValueBinding#bind} function. As source, the current\nobject (this) will be used."
+            "body": "<p>The bind method delegates the call to the\n {@link qx.data.SingleValueBinding#bind} function. As source, the current\n object (this) will be used.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePropertyChain {String} The property chain which represents\nthe source property.",
+            "body": "sourcePropertyChain {String} The property chain which represents\n   the source property.",
             "paramName": "sourcePropertyChain",
-            "description": " The property chain which represents\nthe source property.",
+            "description": " The property chain which represents\n   the source property.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "targetObject {qx.core.Object} The object which the source should\nbe bind to.",
+            "body": "targetObject {qx.core.Object} The object which the source should\n   be bind to.",
             "paramName": "targetObject",
-            "description": " The object which the source should\nbe bind to.",
+            "description": " The object which the source should\n   be bind to.",
             "type": "qx.core.Object"
           },
           {
@@ -984,26 +984,26 @@
           },
           {
             "name": "@param",
-            "body": "options {Map} A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "body": "options {Map} A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "paramName": "options",
-            "description": " A map containing the options. See\n{@link qx.data.SingleValueBinding#bind} for more\ninformation.",
+            "description": " A map containing the options. See\n   {@link qx.data.SingleValueBinding#bind} for more\n   information.",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.Promise} A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index.",
+            "body": "{qx.Promise} A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index.",
             "type": "qx.Promise",
-            "description": " A promise which is resolved when the initial value\nhas been set on the target.  Note that this does NOT resolve when subsequent\nvalues are returned.  The promise value is the internal id for that binding.\nThe id can be used for referencing the binding e.g. for removing. This is not\nan atomic id so you can't you use it as a hash-map index."
+            "description": " A promise which is resolved when the initial value\n \t has been set on the target.  Note that this does NOT resolve when subsequent\n   values are returned.  The promise value is the internal id for that binding.\n   The id can be used for referencing the binding e.g. for removing. This is not\n   an atomic id so you can't you use it as a hash-map index."
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{qx.core.AssertionError} If the event is no data event or\nthere is no property definition for object and property (source and\ntarget).",
+            "body": "{qx.core.AssertionError} If the event is no data event or\n   there is no property definition for object and property (source and\n   target).",
             "type": "qx.core.AssertionError",
-            "description": " If the event is no data event or\nthere is no property definition for object and property (source and\ntarget)."
+            "description": " If the event is no data event or\n   there is no property definition for object and property (source and\n   target)."
           }
         ]
       }
@@ -1020,7 +1020,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the binding with the given id from the current object. The\nid has to be the id returned by any of the bind functions."
+            "body": "<p>Removes the binding with the given id from the current object. The\n id has to be the id returned by any of the bind functions.</p>"
           }
         ],
         "@param": [
@@ -1054,24 +1054,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all bindings between the object and the related one."
+            "body": "<p>Removes all bindings between the object and the related one.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "relatedObject {qx.core.Object} The object of which related\nbindings should be removed.",
+            "body": "relatedObject {qx.core.Object} The object of which related\n   bindings should be removed.",
             "paramName": "relatedObject",
-            "description": " The object of which related\nbindings should be removed.",
+            "description": " The object of which related\n   bindings should be removed.",
             "type": "qx.core.Object"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error} If one of the bindings listed internally can not be\nremoved.",
+            "body": "{Error} If one of the bindings listed internally can not be\n   removed.",
             "type": "Error",
-            "description": " If one of the bindings listed internally can not be\nremoved."
+            "description": " If one of the bindings listed internally can not be\n   removed."
           }
         ]
       }
@@ -1097,15 +1097,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array which lists all bindings for the object."
+            "body": "<p>Returns an array which lists all bindings for the object.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order.",
+            "body": "{Array} An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order.",
             "type": "qx.data.Array",
-            "description": " An array of binding informations. Every binding\ninformation is an array itself containing id, sourceObject, sourceEvent,\ntargetObject and targetProperty in that order."
+            "description": " An array of binding informations. Every binding\n   information is an array itself containing id, sourceObject, sourceEvent,\n   targetObject and targetProperty in that order."
           }
         ]
       }
@@ -1122,15 +1122,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a debug message."
+            "body": "<p>Logs a debug message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -1148,15 +1148,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an info message."
+            "body": "<p>Logs an info message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -1174,15 +1174,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a warning message."
+            "body": "<p>Logs a warning message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -1200,15 +1200,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message."
+            "body": "<p>Logs an error message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -1226,15 +1226,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message with the current stack trace"
+            "body": "<p>Logs an error message with the current stack trace</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -1252,7 +1252,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper that calls the appropriate logger function with the current object\nand any number of items."
+            "body": "<p>Helper that calls the appropriate logger function with the current object\n and any number of items.</p>"
           }
         ],
         "@param": [
@@ -1285,7 +1285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add event listener to this object."
+            "body": "<p>Add event listener to this object.</p>"
           }
         ],
         "@param": [
@@ -1305,18 +1305,18 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1325,9 +1325,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       }
@@ -1344,7 +1344,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add event listener to this object, which is only called once. After the\nlistener is called the event listener gets removed."
+            "body": "<p>Add event listener to this object, which is only called once. After the\n listener is called the event listener gets removed.</p>"
           }
         ],
         "@param": [
@@ -1373,9 +1373,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1384,9 +1384,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       }
@@ -1403,7 +1403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove event listener from this object"
+            "body": "<p>Remove event listener from this object</p>"
           }
         ],
         "@param": [
@@ -1432,9 +1432,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean} Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "type": "Boolean"
           }
         ],
@@ -1460,7 +1460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an event listener from an event target by an id returned by\n{@link #addListener}"
+            "body": "<p>Removes an event listener from an event target by an id returned by\n {@link #addListener}</p>"
           }
         ],
         "@param": [
@@ -1494,7 +1494,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if there are one or more listeners for an event type."
+            "body": "<p>Check if there are one or more listeners for an event type.</p>"
           }
         ],
         "@param": [
@@ -1507,9 +1507,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean ? false} Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to check for listeners of\n         the bubbling or of the capturing phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1537,7 +1537,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatch an event on this object"
+            "body": "<p>Dispatch an event on this object</p>"
           }
         ],
         "@param": [
@@ -1552,9 +1552,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
+            "body": "{Boolean} Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
             "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "description": " Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -1571,7 +1571,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and dispatches an event on this object."
+            "body": "<p>Creates and dispatches an event on this object.</p>"
           }
         ],
         "@param": [
@@ -1593,9 +1593,9 @@
           },
           {
             "name": "@param",
-            "body": "args {Array?null} Arguments, which will be passed to\nthe event's init method.",
+            "body": "args {Array?null} Arguments, which will be passed to\n       the event's init method.",
             "paramName": "args",
-            "description": " Arguments, which will be passed to\nthe event's init method.",
+            "description": " Arguments, which will be passed to\n       the event's init method.",
             "optional": true,
             "defaultValue": "null",
             "type": "Array"
@@ -1604,9 +1604,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
-            "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "body": "{Boolean|qx.Promise} whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
+            "type": "Boolean|qx.Promise",
+            "description": " whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -1623,7 +1623,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create an event object and dispatch it on this object.\nThe event dispatched with this method does never bubble! Use only if you\nare sure that bubbling is not required."
+            "body": "<p>Create an event object and dispatch it on this object.\n The event dispatched with this method does never bubble! Use only if you\n are sure that bubbling is not required.</p>"
           }
         ],
         "@param": [
@@ -1645,9 +1645,9 @@
           },
           {
             "name": "@param",
-            "body": "args {Array?null} Arguments, which will be passed to\nthe event's init method.",
+            "body": "args {Array?null} Arguments, which will be passed to\n       the event's init method.",
             "paramName": "args",
-            "description": " Arguments, which will be passed to\nthe event's init method.",
+            "description": " Arguments, which will be passed to\n       the event's init method.",
             "optional": true,
             "defaultValue": "null",
             "type": "Array"
@@ -1656,9 +1656,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
+            "body": "{Boolean} Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
             "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "description": " Whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -1675,7 +1675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and dispatches an non-bubbling data event on this object."
+            "body": "<p>Creates and dispatches an non-bubbling data event on this object.</p>"
           }
         ],
         "@param": [
@@ -1704,9 +1704,9 @@
           },
           {
             "name": "@param",
-            "body": "cancelable {Boolean?false} Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "body": "cancelable {Boolean?false} Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "paramName": "cancelable",
-            "description": " Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link qx.event.type.Event#preventDefault}",
+            "description": " Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link qx.event.type.Event#preventDefault}",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1715,9 +1715,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented.",
-            "type": "Boolean",
-            "description": " Whether the event default was prevented or not.\nReturns true, when the event was NOT prevented."
+            "body": "{Boolean|qx.Promise} whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented.",
+            "type": "Boolean|qx.Promise",
+            "description": " whether the event default was prevented or not.\n     Returns true, when the event was NOT prevented."
           }
         ]
       }
@@ -1734,7 +1734,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets multiple properties at once by using a property list or\nsets one property and its value by the first and second argument.\nAs a fallback, if no generated property setter could be found, a\nhandwritten setter will be searched and invoked if available."
+            "body": "<p>Sets multiple properties at once by using a property list or\n sets one property and its value by the first and second argument.\n As a fallback, if no generated property setter could be found, a\n handwritten setter will be searched and invoked if available.</p>"
           }
         ],
         "@param": [
@@ -1760,9 +1760,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} Returns this instance if <code>data</code> is a map\nor a non-generated setter is called; otherwise returns <code>value</code>.",
+            "body": "{Object} Returns this instance if <code>data</code> is a map\n   or a non-generated setter is called; otherwise returns <code>value</code>.",
             "type": "qx.core.Object",
-            "description": " Returns this instance if <code>data</code> is a map\nor a non-generated setter is called; otherwise returns <code>value</code>."
+            "description": " Returns this instance if <code>data</code> is a map\n   or a non-generated setter is called; otherwise returns <code>value</code>."
           }
         ],
         "@throws": [
@@ -1787,7 +1787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given property. If no generated getter could be\nfound, a fallback tries to access a handwritten getter."
+            "body": "<p>Returns the value of the given property. If no generated getter could be\n found, a fallback tries to access a handwritten getter.</p>"
           }
         ],
         "@param": [
@@ -1829,7 +1829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value of the given property. If no generated resetter could be\nfound, a handwritten resetter will be invoked, if available."
+            "body": "<p>Resets the value of the given property. If no generated resetter could be\n found, a handwritten resetter will be invoked, if available.</p>"
           }
         ],
         "@param": [
@@ -1863,7 +1863,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the property is initialized, i.e. has a defined init value or\nhas got a value by a setter method."
+            "body": "<p>Checks if the property is initialized, i.e. has a defined init value or\n has got a value by a setter method.</p>"
           }
         ],
         "@param": [
@@ -1941,13 +1941,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the object with the specified ID"
+            "body": "<p>Returns the object with the specified ID</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id\n{String} ID of the object",
+            "body": "id\n          {String} ID of the object",
             "paramName": "id",
             "description": " ID of the object",
             "type": "String"
@@ -1975,7 +1975,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object and adds it to a list; most classes are expected to\noverride `_createQxObjectImpl` NOT this method."
+            "body": "<p>Creates the object and adds it to a list; most classes are expected to\n override <code>_createQxObjectImpl</code> NOT this method.</p>"
           }
         ],
         "@param": [
@@ -2009,7 +2009,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the object, intended to be overridden. Null is a valid return\nvalue and will be cached by `getQxObject`, however `undefined` is NOT a\nvalid value and so will not be cached meaning that `_createQxObjectImpl`\nwill be called multiple times until a valid value is returned."
+            "body": "<p>Creates the object, intended to be overridden. Null is a valid return\n value and will be cached by <code>getQxObject</code>, however <code>undefined</code> is NOT a\n valid value and so will not be cached meaning that <code>_createQxObjectImpl</code>\n will be called multiple times until a valid value is returned.</p>"
           }
         ],
         "@param": [
@@ -2043,7 +2043,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an object as owned by this object"
+            "body": "<p>Adds an object as owned by this object</p>"
           }
         ],
         "@param": [
@@ -2077,7 +2077,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Discards an object from the list of owned objects; note that this does\nnot dispose of the object, simply forgets it if it exists."
+            "body": "<p>Discards an object from the list of owned objects; note that this does\n not dispose of the object, simply forgets it if it exists.</p>"
           }
         ],
         "@param": [
@@ -2106,7 +2106,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an owned object"
+            "body": "<p>Removes an owned object</p>"
           }
         ],
         "@param": [
@@ -2132,7 +2132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array of objects that are owned by this object, or an empty\narray if none exists."
+            "body": "<p>Returns an array of objects that are owned by this object, or an empty\n array if none exists.</p>"
           }
         ],
         "@return": [
@@ -2287,15 +2287,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the condition evaluates to <code>true</code>."
+            "body": "<p>Assert that the condition evaluates to <code>true</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "condition {var} Condition to check for. Must evaluate to\n<code>true</code>.",
+            "body": "condition {var} Condition to check for. Must evaluate to\n    <code>true</code>.",
             "paramName": "condition",
-            "description": " Condition to check for. Must evaluate to\n<code>true</code>.",
+            "description": " Condition to check for. Must evaluate to\n    <code>true</code>.",
             "type": "var"
           },
           {
@@ -2321,7 +2321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Raise an {@link AssertionError}"
+            "body": "<p>Raise an {@link AssertionError}</p>"
           }
         ],
         "@param": [
@@ -2356,15 +2356,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>true</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>true</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>true</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>true</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>true</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>true</code>.",
             "type": "Boolean"
           },
           {
@@ -2390,15 +2390,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>false</code> (Identity check)."
+            "body": "<p>Assert that the value is <code>false</code> (Identity check).</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Boolean} Condition to check for. Must be identical to\n<code>false</code>.",
+            "body": "value {Boolean} Condition to check for. Must be identical to\n    <code>false</code>.",
             "paramName": "value",
-            "description": " Condition to check for. Must be identical to\n<code>false</code>.",
+            "description": " Condition to check for. Must be identical to\n    <code>false</code>.",
             "type": "Boolean"
           },
           {
@@ -2424,7 +2424,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are equal. (Uses the equality operator\n<code>==</code>.)"
+            "body": "<p>Assert that both values are equal. (Uses the equality operator\n <code>==</code>.)</p>"
           }
         ],
         "@param": [
@@ -2465,7 +2465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not equal. (Uses the not equality operator\n<code>!=</code>.)"
+            "body": "<p>Assert that both values are not equal. (Uses the not equality operator\n <code>!=</code>.)</p>"
           }
         ],
         "@param": [
@@ -2506,7 +2506,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are equal. This might be needed because\nof the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are equal. This might be needed because\n of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -2547,7 +2547,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both float values are not equal. This might be needed\nbecause of the natural floating point inaccuracy of computers."
+            "body": "<p>Assert that both float values are not equal. This might be needed\n because of the natural floating point inaccuracy of computers.</p>"
           }
         ],
         "@param": [
@@ -2588,7 +2588,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are identical. (Uses the identity operator\n<code>===</code>.)"
+            "body": "<p>Assert that both values are identical. (Uses the identity operator\n <code>===</code>.)</p>"
           }
         ],
         "@param": [
@@ -2629,7 +2629,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both values are not identical. (Uses the not identity operator\n<code>!==</code>.)"
+            "body": "<p>Assert that both values are not identical. (Uses the not identity operator\n <code>!==</code>.)</p>"
           }
         ],
         "@param": [
@@ -2670,7 +2670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>undefined</code>."
+            "body": "<p>Assert that the value is not <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -2704,7 +2704,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>undefined</code>."
+            "body": "<p>Assert that the value is <code>undefined</code>.</p>"
           }
         ],
         "@param": [
@@ -2738,7 +2738,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is not <code>null</code>."
+            "body": "<p>Assert that the value is not <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -2772,7 +2772,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is <code>null</code>."
+            "body": "<p>Assert that the value is <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -2806,7 +2806,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the first two arguments are equal, when serialized into\nJSON."
+            "body": "<p>Assert that the first two arguments are equal, when serialized into\n JSON.</p>"
           }
         ],
         "@param": [
@@ -2847,7 +2847,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the given string matches the regular expression"
+            "body": "<p>Assert that the given string matches the regular expression</p>"
           }
         ],
         "@param": [
@@ -2888,7 +2888,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the number of arguments is within the given range"
+            "body": "<p>Assert that the number of arguments is within the given range</p>"
           }
         ],
         "@param": [
@@ -2936,7 +2936,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is fired."
+            "body": "<p>Assert that an event is fired.</p>"
           }
         ],
         "@param": [
@@ -2956,16 +2956,16 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nfires the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   fires the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nfires the event.",
+            "description": " The function which will be invoked and which\n   fires the event.",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "listener {Function?null} The function which will be invoked in the\nlistener. The function has one parameter called e which is the event.",
+            "body": "listener {Function?null} The function which will be invoked in the\n   listener. The function has one parameter called e which is the event.",
             "paramName": "listener",
-            "description": " The function which will be invoked in the\nlistener. The function has one parameter called e which is the event.",
+            "description": " The function which will be invoked in the\n   listener. The function has one parameter called e which is the event.",
             "optional": true,
             "defaultValue": "null",
             "type": "Function"
@@ -2994,7 +2994,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that an event is not fired."
+            "body": "<p>Assert that an event is not fired.</p>"
           }
         ],
         "@param": [
@@ -3014,9 +3014,9 @@
           },
           {
             "name": "@param",
-            "body": "invokeFunc {Function} The function which will be invoked and which\nshould not fire the event.",
+            "body": "invokeFunc {Function} The function which will be invoked and which\n   should not fire the event.",
             "paramName": "invokeFunc",
-            "description": " The function which will be invoked and which\nshould not fire the event.",
+            "description": " The function which will be invoked and which\n   should not fire the event.",
             "type": "Function"
           },
           {
@@ -3042,7 +3042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Asserts that the callback raises a matching exception."
+            "body": "<p>Asserts that the callback raises a matching exception.</p>"
           }
         ],
         "@param": [
@@ -3055,18 +3055,18 @@
           },
           {
             "name": "@param",
-            "body": "exception {Error?Error} Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "body": "exception {Error?Error} Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "paramName": "exception",
-            "description": " Expected constructor of the exception.\nThe assertion fails if the raised exception is not an instance of the\nparameter.",
+            "description": " Expected constructor of the exception.\n   The assertion fails if the raised exception is not an instance of the\n   parameter.",
             "optional": true,
             "defaultValue": "Error",
             "type": "Error"
           },
           {
             "name": "@param",
-            "body": "re {String|RegExp} The assertion fails if the error message does\nnot match this parameter",
+            "body": "re {String|RegExp} The assertion fails if the error message does\n   not match this parameter",
             "paramName": "re",
-            "description": " The assertion fails if the error message does\nnot match this parameter",
+            "description": " The assertion fails if the error message does\n   not match this parameter",
             "type": [
               "String",
               "RegExp"
@@ -3095,7 +3095,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an item in the given array."
+            "body": "<p>Assert that the value is an item in the given array.</p>"
           }
         ],
         "@param": [
@@ -3136,7 +3136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is NOT an item in the given array"
+            "body": "<p>Assert that the value is NOT an item in the given array</p>"
           }
         ],
         "@param": [
@@ -3177,7 +3177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that both array have identical array items."
+            "body": "<p>Assert that both array have identical array items.</p>"
           }
         ],
         "@param": [
@@ -3218,7 +3218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a key in the given map."
+            "body": "<p>Assert that the value is a key in the given map.</p>"
           }
         ],
         "@param": [
@@ -3259,7 +3259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a function."
+            "body": "<p>Assert that the value is a function.</p>"
           }
         ],
         "@param": [
@@ -3293,7 +3293,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a string."
+            "body": "<p>Assert that the value is a string.</p>"
           }
         ],
         "@param": [
@@ -3327,7 +3327,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a boolean."
+            "body": "<p>Assert that the value is a boolean.</p>"
           }
         ],
         "@param": [
@@ -3361,7 +3361,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number."
+            "body": "<p>Assert that the value is a number.</p>"
           }
         ],
         "@param": [
@@ -3395,7 +3395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a number >= 0."
+            "body": "<p>Assert that the value is a number &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -3429,7 +3429,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer."
+            "body": "<p>Assert that the value is an integer.</p>"
           }
         ],
         "@param": [
@@ -3463,7 +3463,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an integer >= 0."
+            "body": "<p>Assert that the value is an integer &gt;= 0.</p>"
           }
         ],
         "@param": [
@@ -3497,7 +3497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is inside the given range."
+            "body": "<p>Assert that the value is inside the given range.</p>"
           }
         ],
         "@param": [
@@ -3545,7 +3545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an object."
+            "body": "<p>Assert that the value is an object.</p>"
           }
         ],
         "@param": [
@@ -3579,7 +3579,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an array."
+            "body": "<p>Assert that the value is an array.</p>"
           }
         ],
         "@param": [
@@ -3613,7 +3613,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a map either created using <code>new Object</code>\nor by using the object literal notation <code>{ ... }</code>."
+            "body": "<p>Assert that the value is a map either created using <code>new Object</code>\n or by using the object literal notation <code>{ ... }</code>.</p>"
           }
         ],
         "@param": [
@@ -3647,7 +3647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a regular expression."
+            "body": "<p>Assert that the value is a regular expression.</p>"
           }
         ],
         "@param": [
@@ -3681,7 +3681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value has the given type using the <code>typeof</code>\noperator. Because the type is not always what it is supposed to be it is\nbetter to use more explicit checks like {@link #assertString} or\n{@link #assertArray}."
+            "body": "<p>Assert that the value has the given type using the <code>typeof</code>\n operator. Because the type is not always what it is supposed to be it is\n better to use more explicit checks like {@link #assertString} or\n {@link #assertArray}.</p>"
           }
         ],
         "@param": [
@@ -3722,7 +3722,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of the given class."
+            "body": "<p>Assert that the value is an instance of the given class.</p>"
           }
         ],
         "@param": [
@@ -3763,7 +3763,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value implements the given interface."
+            "body": "<p>Assert that the value implements the given interface.</p>"
           }
         ],
         "@param": [
@@ -3804,7 +3804,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value represents the given CSS color value. This method\nparses the color strings and compares the RGB values. It is able to\nparse values supported by {@link qx.util.ColorUtil#stringToRgb}."
+            "body": "<p>Assert that the value represents the given CSS color value. This method\n parses the color strings and compares the RGB values. It is able to\n parse values supported by {@link qx.util.ColorUtil#stringToRgb}.</p>"
           }
         ],
         "@param": [
@@ -3845,7 +3845,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is a DOM element."
+            "body": "<p>Assert that the value is a DOM element.</p>"
           }
         ],
         "@param": [
@@ -3879,7 +3879,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.core.Object}."
+            "body": "<p>Assert that the value is an instance of {@link qx.core.Object}.</p>"
           }
         ],
         "@param": [
@@ -3913,7 +3913,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assert that the value is an instance of {@link qx.ui.core.Widget}."
+            "body": "<p>Assert that the value is an instance of {@link qx.ui.core.Widget}.</p>"
           }
         ],
         "@param": [
@@ -3952,7 +3952,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Bluebird Promise library; always available"
+            "body": "<p>Bluebird Promise library; always available</p>"
           }
         ]
       },
@@ -3974,7 +3974,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Native Promise library; only available if the browser supports it"
+            "body": "<p>Native Promise library; only available if the browser supports it</p>"
           }
         ]
       },
@@ -3996,7 +3996,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Promise library, either the Native one or a Polyfill; reliable choice for native Promises"
+            "body": "<p>Promise library, either the Native one or a Polyfill; reliable choice for native Promises</p>"
           }
         ]
       },
@@ -4018,7 +4018,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is used to suppress warnings about rejections without an Error object, only used if\nthe reason is undefined"
+            "body": "<p>This is used to suppress warnings about rejections without an Error object, only used if\n the reason is undefined</p>"
           }
         ]
       },
@@ -4040,11 +4040,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nPromise API methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Promise API methods</p>"
           },
           {
             "name": "@description",
-            "body": "Returns a Promise object that is resolved with the given value. If the value is a thenable (i.e.\nhas a then method), the returned promise will \"follow\" that thenable, adopting its eventual\nstate; otherwise the returned promise will be fulfilled with the value. Generally, if you\ndon't know if a value is a promise or not, Promise.resolve(value) it instead and work with\nthe return value as a promise."
+            "body": "<p>Returns a Promise object that is resolved with the given value. If the value is a thenable (i.e.\n has a then method), the returned promise will \"follow\" that thenable, adopting its eventual\n state; otherwise the returned promise will be fulfilled with the value. Generally, if you\n don't know if a value is a promise or not, Promise.resolve(value) it instead and work with\n the return value as a promise.</p>"
           }
         ],
         "@param": [
@@ -4088,7 +4088,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a Promise object that is rejected with the given reason."
+            "body": "<p>Returns a Promise object that is rejected with the given reason.</p>"
           }
         ],
         "@param": [
@@ -4136,7 +4136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a promise that resolves when all of the promises in the object properties have resolved,\nor rejects with the reason of the first passed promise that rejects.  The result of each property\nis placed back in the object, replacing the promise.  Note that non-promise values are untouched."
+            "body": "<p>Returns a promise that resolves when all of the promises in the object properties have resolved,\n or rejects with the reason of the first passed promise that rejects.  The result of each property\n is placed back in the object, replacing the promise.  Note that non-promise values are untouched.</p>"
           }
         ],
         "@param": [
@@ -4175,7 +4175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a promise that resolves when all of the promises in the iterable argument have resolved,\nor rejects with the reason of the first passed promise that rejects.  Note that non-promise values\nare untouched."
+            "body": "<p>Returns a promise that resolves when all of the promises in the iterable argument have resolved,\n or rejects with the reason of the first passed promise that rejects.  Note that non-promise values\n are untouched.</p>"
           }
         ],
         "@param": [
@@ -4214,7 +4214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves\nor rejects, with the value or reason from that promise."
+            "body": "<p>Returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves\n or rejects, with the value or reason from that promise.</p>"
           }
         ],
         "@param": [
@@ -4253,11 +4253,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nExtension API methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Extension API methods</p>"
           },
           {
             "name": "@description",
-            "body": "Like Promise.some, with 1 as count. However, if the promise fulfills, the fulfillment value is not an\narray of 1 but the value directly."
+            "body": "<p>Like Promise.some, with 1 as count. However, if the promise fulfills, the fulfillment value is not an\n array of 1 but the value directly.</p>"
           }
         ],
         "@param": [
@@ -4296,7 +4296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given an Iterable (arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix\nof promises and values), iterate over all the values in the Iterable into an array and return a promise\nthat is fulfilled as soon as count promises are fulfilled in the array. The fulfillment value is an\narray with count values in the order they were fulfilled."
+            "body": "<p>Given an Iterable (arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix\n of promises and values), iterate over all the values in the Iterable into an array and return a promise\n that is fulfilled as soon as count promises are fulfilled in the array. The fulfillment value is an\n array with count values in the order they were fulfilled.</p>"
           }
         ],
         "@param": [
@@ -4339,7 +4339,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Iterate over an array, or a promise of an array, which contains promises (or a mix of promises and values)\nwith the given <code>iterator</code> function with the signature <code>(value, index, length)</code> where\n<code>value</code> is the resolved value of a respective promise in the input array. Iteration happens\nserially. If any promise in the input array is rejected the returned promise is rejected as well.\n\nResolves to the original array unmodified, this method is meant to be used for side effects. If the iterator\nfunction returns a promise or a thenable, then the result of the promise is awaited, before continuing with\nnext iteration."
+            "body": "<p>Iterate over an array, or a promise of an array, which contains promises (or a mix of promises and values)\n with the given <code>iterator</code> function with the signature <code>(value, index, length)</code> where\n <code>value</code> is the resolved value of a respective promise in the input array. Iteration happens\n serially. If any promise in the input array is rejected the returned promise is rejected as well.\n Resolves to the original array unmodified, this method is meant to be used for side effects. If the iterator\n function returns a promise or a thenable, then the result of the promise is awaited, before continuing with\n next iteration.</p>"
           }
         ],
         "@param": [
@@ -4385,7 +4385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of\npromises and values), iterate over all the values in the Iterable into an array and filter the array to\nanother using the given filterer function.\n\nIt is essentially an efficient shortcut for doing a .map and then Array#filter:\n<pre>\nqx.Promise.map(valuesToBeFiltered, function(value, index, length) {\nreturn Promise.all([filterer(value, index, length), value]);\n}).then(function(values) {\nreturn values.filter(function(stuff) {\nreturn stuff[0] == true\n}).map(function(stuff) {\nreturn stuff[1];\n});\n});\n</pre>"
+            "body": "<p>Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of\n promises and values), iterate over all the values in the Iterable into an array and filter the array to\n another using the given filterer function.\n It is essentially an efficient shortcut for doing a .map and then Array#filter:\n </p>\n<pre>\n   qx.Promise.map(valuesToBeFiltered, function(value, index, length) {\n       return Promise.all([filterer(value, index, length), value]);\n   }).then(function(values) {\n       return values.filter(function(stuff) {\n           return stuff[0] == true\n       }).map(function(stuff) {\n           return stuff[1];\n       });\n   });\n </pre>"
           }
         ],
         "@param": [
@@ -4405,9 +4405,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Object?} options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "body": "options {Object?} options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "paramName": "options",
-            "description": " options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "description": " options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "optional": true,
             "type": "Object"
           }
@@ -4439,7 +4439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given an <code>Iterable</code> (arrays are <code>Iterable</code>), or a promise of an\n<code>Iterable</code>, which produces promises (or a mix of promises and values), iterate over\nall the values in the <code>Iterable</code> into an array and map the array to another using\nthe given mapper function.\n\nPromises returned by the mapper function are awaited for and the returned promise doesn't fulfill\nuntil all mapped promises have fulfilled as well. If any promise in the array is rejected, or\nany promise returned by the mapper function is rejected, the returned promise is rejected as well.\n\nThe mapper function for a given item is called as soon as possible, that is, when the promise\nfor that item's index in the input array is fulfilled. This doesn't mean that the result array\nhas items in random order, it means that .map can be used for concurrency coordination unlike\n.all.\n\nA common use of Promise.map is to replace the .push+Promise.all boilerplate:\n\n<pre>\nvar promises = [];\nfor (var i = 0; i < fileNames.length; ++i) {\npromises.push(fs.readFileAsync(fileNames[i]));\n}\nqx.Promise.all(promises).then(function() {\nconsole.log(\"done\");\n});\n\n// Using Promise.map:\nqx.Promise.map(fileNames, function(fileName) {\n// Promise.map awaits for returned promises as well.\nreturn fs.readFileAsync(fileName);\n}).then(function() {\nconsole.log(\"done\");\n});\n</pre>"
+            "body": "<p>Given an <code>Iterable</code> (arrays are <code>Iterable</code>), or a promise of an\n <code>Iterable</code>, which produces promises (or a mix of promises and values), iterate over\n all the values in the <code>Iterable</code> into an array and map the array to another using\n the given mapper function.\n Promises returned by the mapper function are awaited for and the returned promise doesn't fulfill\n until all mapped promises have fulfilled as well. If any promise in the array is rejected, or\n any promise returned by the mapper function is rejected, the returned promise is rejected as well.\n The mapper function for a given item is called as soon as possible, that is, when the promise\n for that item's index in the input array is fulfilled. This doesn't mean that the result array\n has items in random order, it means that .map can be used for concurrency coordination unlike\n .all.\n A common use of Promise.map is to replace the .push+Promise.all boilerplate:\n </p>\n<pre>\n   var promises = [];\n   for (var i = 0; i < fileNames.length; ++i) {\n       promises.push(fs.readFileAsync(fileNames[i]));\n   }\n   qx.Promise.all(promises).then(function() {\n       console.log(\"done\");\n   });\n\n   qx.Promise.map(fileNames, function(fileName) {\n\n       return fs.readFileAsync(fileName);\n   }).then(function() {\n       console.log(\"done\");\n   });\n </pre>"
           }
         ],
         "@param": [
@@ -4459,9 +4459,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Object?} options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "body": "options {Object?} options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "paramName": "options",
-            "description": " options; can be:\n<code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
+            "description": " options; can be:\n  <code>concurrency</code> max nuber of simultaneous filters, default is <code>Infinity</code>",
             "optional": true,
             "type": "Object"
           }
@@ -4493,7 +4493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given an <code>Iterable</code>(arrays are <code>Iterable</code>), or a promise of an\n<code>Iterable</code>, which produces promises (or a mix of promises and values), iterate over\nall the values in the <code>Iterable</code> into an array and iterate over the array serially,\nin-order.\n\nReturns a promise for an array that contains the values returned by the iterator function in their\nrespective positions. The iterator won't be called for an item until its previous item, and the\npromise returned by the iterator for that item are fulfilled. This results in a mapSeries kind of\nutility but it can also be used simply as a side effect iterator similar to Array#forEach.\n\nIf any promise in the input array is rejected or any promise returned by the iterator function is\nrejected, the result will be rejected as well.\n\nExample where .mapSeries(the instance method) is used for iterating with side effects:\n\n<pre>\n// Source: http://jakearchibald.com/2014/es7-async-functions/\nfunction loadStory() {\nreturn getJSON('story.json')\n.then(function(story) {\naddHtmlToPage(story.heading);\nreturn story.chapterURLs.map(getJSON);\n})\n.mapSeries(function(chapter) { addHtmlToPage(chapter.html); })\n.then(function() { addTextToPage(\"All done\"); })\n.catch(function(err) { addTextToPage(\"Argh, broken: \" + err.message); })\n.then(function() { document.querySelector('.spinner').style.display = 'none'; });\n}\n</pre>"
+            "body": "<p>Given an <code>Iterable</code>(arrays are <code>Iterable</code>), or a promise of an\n <code>Iterable</code>, which produces promises (or a mix of promises and values), iterate over\n all the values in the <code>Iterable</code> into an array and iterate over the array serially,\n in-order.\n Returns a promise for an array that contains the values returned by the iterator function in their\n respective positions. The iterator won't be called for an item until its previous item, and the\n promise returned by the iterator for that item are fulfilled. This results in a mapSeries kind of\n utility but it can also be used simply as a side effect iterator similar to Array#forEach.\n If any promise in the input array is rejected or any promise returned by the iterator function is\n rejected, the result will be rejected as well.\n Example where .mapSeries(the instance method) is used for iterating with side effects:\n </p>\n<pre>\n\n function loadStory() {\n   return getJSON('story.json')\n     .then(function(story) {\n       addHtmlToPage(story.heading);\n       return story.chapterURLs.map(getJSON);\n     })\n     .mapSeries(function(chapter) { addHtmlToPage(chapter.html); })\n     .then(function() { addTextToPage(\"All done\"); })\n     .catch(function(err) { addTextToPage(\"Argh, broken: \" + err.message); })\n     .then(function() { document.querySelector('.spinner').style.display = 'none'; });\n }\n </pre>"
           }
         ],
         "@param": [
@@ -4539,7 +4539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Given an <code>Iterable</code> (arrays are <code>Iterable</code>), or a promise of an\n<code>Iterable</code>, which produces promises (or a mix of promises and values), iterate\nover all the values in the <code>Iterable</code> into an array and reduce the array to a\nvalue using the given reducer function.\n\nIf the reducer function returns a promise, then the result of the promise is awaited, before\ncontinuing with next iteration. If any promise in the array is rejected or a promise returned\nby the reducer function is rejected, the result is rejected as well.\n\nRead given files sequentially while summing their contents as an integer. Each file contains\njust the text 10.\n\n<pre>\nqx.Promise.reduce([\"file1.txt\", \"file2.txt\", \"file3.txt\"], function(total, fileName) {\nreturn fs.readFileAsync(fileName, \"utf8\").then(function(contents) {\nreturn total + parseInt(contents, 10);\n});\n}, 0).then(function(total) {\n//Total is 30\n});\n</pre>\n\nIf initialValue is undefined (or a promise that resolves to undefined) and the iterable contains\nonly 1 item, the callback will not be called and the iterable's single item is returned. If the\niterable is empty, the callback will not be called and initialValue is returned (which may be\nundefined).\n\nPromise.reduce will start calling the reducer as soon as possible, this is why you might want to\nuse it over Promise.all (which awaits for the entire array before you can call Array#reduce on it)."
+            "body": "<p>Given an <code>Iterable</code> (arrays are <code>Iterable</code>), or a promise of an\n <code>Iterable</code>, which produces promises (or a mix of promises and values), iterate\n over all the values in the <code>Iterable</code> into an array and reduce the array to a\n value using the given reducer function.\n If the reducer function returns a promise, then the result of the promise is awaited, before\n continuing with next iteration. If any promise in the array is rejected or a promise returned\n by the reducer function is rejected, the result is rejected as well.\n Read given files sequentially while summing their contents as an integer. Each file contains\n just the text 10.\n </p>\n<pre>\n   qx.Promise.reduce([\"file1.txt\", \"file2.txt\", \"file3.txt\"], function(total, fileName) {\n       return fs.readFileAsync(fileName, \"utf8\").then(function(contents) {\n           return total + parseInt(contents, 10);\n       });\n   }, 0).then(function(total) {\n\n   });\n </pre>\n<p>If initialValue is undefined (or a promise that resolves to undefined) and the iterable contains\n only 1 item, the callback will not be called and the iterable's single item is returned. If the\n iterable is empty, the callback will not be called and initialValue is returned (which may be\n undefined).\n Promise.reduce will start calling the reducer as soon as possible, this is why you might want to\n use it over Promise.all (which awaits for the entire array before you can call Array#reduce on it).</p>"
           }
         ],
         "@param": [
@@ -4593,7 +4593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new function that wraps the given function fn. The new function will always return a promise that is\nfulfilled with the original functions return values or rejected with thrown exceptions from the original function."
+            "body": "<p>Returns a new function that wraps the given function fn. The new function will always return a promise that is\n fulfilled with the original functions return values or rejected with thrown exceptions from the original function.</p>"
           }
         ],
         "@param": [
@@ -4629,7 +4629,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Like .all but for object properties or Maps* entries instead of iterated values. Returns a promise that\nis fulfilled when all the properties of the object or the Map's' values** are fulfilled. The promise's\nfulfillment value is an object or a Map with fulfillment values at respective keys to the original object\nor a Map. If any promise in the object or Map rejects, the returned promise is rejected with the rejection\nreason.\n\nIf object is a trusted Promise, then it will be treated as a promise for object rather than for its\nproperties. All other objects (except Maps) are treated for their properties as is returned by\nObject.keys - the object's own enumerable properties."
+            "body": "<p>Like .all but for object properties or Maps* entries instead of iterated values. Returns a promise that\n is fulfilled when all the properties of the object or the Map's' values** are fulfilled. The promise's\n fulfillment value is an object or a Map with fulfillment values at respective keys to the original object\n or a Map. If any promise in the object or Map rejects, the returned promise is rejected with the rejection\n reason.\n If object is a trusted Promise, then it will be treated as a promise for object rather than for its\n properties. All other objects (except Maps) are treated for their properties as is returned by\n Object.keys - the object's own enumerable properties.</p>"
           }
         ],
         "@param": [
@@ -4668,7 +4668,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new function that wraps a function that is in node.js\nstyle. The resulting function returns a promise instead of taking a\ncallback function as an argument. The promise is resolved or rejected\nby the action of the callback function. The provided function must\naccept a callback as its last argument, and that callback function must\nexpect its first argument to be an error if non-null. If the first\nargument is null, the second argument (optional) will be the success\nvalue.\n\nExample:\n\nAssume there is a member method in myApp.Application such as the\nfollowing:\n<pre><code>\nissueRpc : function(method, params, callback)\n{\n...\n}\n</code></pre>\n\nwhere the signature of <code>callback</code> is:\n<pre><code>\nfunction callback(e, result)\n</code></pre>\n\nThe <code>issueRpc</code>method could be converted to be called using\npromises instead of callbacks, as shown here:\n<pre><code>\nvar app = qx.core.Init.getApplication();\nvar rpc = qx.Promise.promisify(app.issueRpc, { context : app });\nrpc(\"ping\", [ \"hello world\" ])\n.then(\nfunction(pongValue)\n{\n// handle result\n})\n.catch(\nfunction(e)\n{\nthrow e;\n});\n</code></pre>"
+            "body": "<p>Returns a new function that wraps a function that is in node.js\n style. The resulting function returns a promise instead of taking a\n callback function as an argument. The promise is resolved or rejected\n by the action of the callback function. The provided function must\n accept a callback as its last argument, and that callback function must\n expect its first argument to be an error if non-null. If the first\n argument is null, the second argument (optional) will be the success\n value.\n Example:\n Assume there is a member method in myApp.Application such as the\n following:</p>\n <pre><code>\n   issueRpc : function(method, params, callback)\n   {\n     ...\n   }\n </code></pre>\n<p>where the signature of <code>callback</code> is:</p>\n <pre><code>\n   function callback(e, result)\n </code></pre>\n<p>The <code>issueRpc</code>method could be converted to be called using\n promises instead of callbacks, as shown here:</p>\n <pre><code>\n   var app = qx.core.Init.getApplication();\n   var rpc = qx.Promise.promisify(app.issueRpc, { context : app });\n   rpc(\"ping\", [ \"hello world\" ])\n     .then(\n       function(pongValue)\n       {\n\n       })\n     .catch(\n       function(e)\n       {\n         throw e;\n       });\n </code></pre>"
           }
         ],
         "@param": [
@@ -4681,9 +4681,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?}\nThe sole user option in this map is <code>context</code>, which may\nbe specified to arrange for the provided callback function to be\ncalled in the specified context.",
+            "body": "options {Map?}\n   The sole user option in this map is <code>context</code>, which may\n   be specified to arrange for the provided callback function to be\n   called in the specified context.",
             "paramName": "options",
-            "description": "\nThe sole user option in this map is <code>context</code>, which may\nbe specified to arrange for the provided callback function to be\ncalled in the specified context.",
+            "description": "\n   The sole user option in this map is <code>context</code>, which may\n   be specified to arrange for the provided callback function to be\n   called in the specified context.",
             "optional": true,
             "type": "Map"
           }
@@ -4715,11 +4715,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "********************************************************************************\n\nInternal API methods"
+            "body": "<pre><code>**************************************************************************\n</code></pre>\n<p>Internal API methods</p>"
           },
           {
             "name": "@description",
-            "body": "Called when the Bluebird Promise class is loaded"
+            "body": "<p>Called when the Bluebird Promise class is loaded</p>"
           }
         ],
         "@param": [
@@ -4750,7 +4750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether one-time initialisaton has happened"
+            "body": "<p>Whether one-time initialisaton has happened</p>"
           }
         ]
       },
@@ -4772,7 +4772,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "One-time initializer"
+            "body": "<p>One-time initializer</p>"
           }
         ]
       },
@@ -4794,7 +4794,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles unhandled errors and passes them through to Qooxdoo's global error handler"
+            "body": "<p>Handles unhandled errors and passes them through to Qooxdoo's global error handler</p>"
           }
         ],
         "@param": [
@@ -4822,7 +4822,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Wraps values, converting Promise into qx.Promise"
+            "body": "<p>Wraps values, converting Promise into qx.Promise</p>"
           }
         ],
         "@param": [
@@ -4858,7 +4858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Binds all functions in the array to the context at the end of the array;\nthe last value must be a qx.core.Object to distinguish itself from configuration\nobjects passed to some methods."
+            "body": "<p>Binds all functions in the array to the context at the end of the array;\n the last value must be a qx.core.Object to distinguish itself from configuration\n objects passed to some methods.</p>"
           }
         ],
         "@param": [
@@ -4868,9 +4868,9 @@
           },
           {
             "name": "@param",
-            "body": "minArgs {Integer?} minimum number of arguments expected for the method call;\nthis is used to determine whether the last value is for binding (default is 1)",
+            "body": "minArgs {Integer?} minimum number of arguments expected for the method call;\n \tthis is used to determine whether the last value is for binding (default is 1)",
             "paramName": "minArgs",
-            "description": " minimum number of arguments expected for the method call;\nthis is used to determine whether the last value is for binding (default is 1)",
+            "description": " minimum number of arguments expected for the method call;\n \tthis is used to determine whether the last value is for binding (default is 1)",
             "optional": true,
             "type": "Integer"
           }
@@ -4902,7 +4902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method used to call a Bluebird Promise method"
+            "body": "<p>Helper method used to call a Bluebird Promise method</p>"
           }
         ],
         "@param": [
@@ -4956,7 +4956,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maps all arguments ready for passing to a Bluebird function; qx.data.Array are\ntranslated to native arrays and qx.Promise to Promise.  This is not recursive."
+            "body": "<p>Maps all arguments ready for passing to a Bluebird function; qx.data.Array are\n translated to native arrays and qx.Promise to Promise.  This is not recursive.</p>"
           }
         ]
       },
@@ -4968,13 +4968,14 @@
     "location": {
       "start": {
         "line": 1005,
-        "column": 2
+        "column": 9
       },
       "end": {
         "line": 1010,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

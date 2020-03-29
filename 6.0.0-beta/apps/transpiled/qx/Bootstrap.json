@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 223,
+        "line": 246,
         "column": 0
       },
       "end": {
-        "line": 936,
+        "line": 971,
         "column": 3
       }
     },
@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Internal class that is responsible for bootstrapping the qooxdoo\nframework at load time."
+          "body": "<p>Internal class that is responsible for bootstrapping the qooxdoo\n framework at load time.</p>"
         }
       ]
     }
@@ -31,11 +31,11 @@
     "LOADSTART": {
       "location": {
         "start": {
-          "line": 228,
+          "line": 251,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 251,
           "column": 40
         }
       },
@@ -43,7 +43,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Timestamp of qooxdoo based application startup"
+            "body": "<p>Timestamp of qooxdoo based application startup</p>"
           }
         ]
       },
@@ -53,11 +53,11 @@
     "DEBUG": {
       "location": {
         "start": {
-          "line": 233,
+          "line": 256,
           "column": 5
         },
         "end": {
-          "line": 240,
+          "line": 263,
           "column": 9
         }
       },
@@ -65,7 +65,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping for early use of the qx.debug environment setting."
+            "body": "<p>Mapping for early use of the qx.debug environment setting.</p>"
           }
         ]
       },
@@ -75,11 +75,11 @@
     "getEnvironmentSetting": {
       "location": {
         "start": {
-          "line": 253,
+          "line": 276,
           "column": 5
         },
         "end": {
-          "line": 257,
+          "line": 280,
           "column": 6
         }
       },
@@ -87,7 +87,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Minimal accessor API for the environment settings given from the\ngenerator.\n\nWARNING: This method only should be used if the\n{@link qx.core.Environment} class is not loaded!"
+            "body": "<p>Minimal accessor API for the environment settings given from the\n generator.\n WARNING: This method only should be used if the\n {@link qx.core.Environment} class is not loaded!</p>"
           }
         ],
         "@param": [
@@ -114,11 +114,11 @@
     "setEnvironmentSetting": {
       "location": {
         "start": {
-          "line": 272,
+          "line": 295,
           "column": 5
         },
         "end": {
-          "line": 279,
+          "line": 302,
           "column": 6
         }
       },
@@ -126,7 +126,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Minimal mutator for the environment settings given from the generator.\nIt checks for the existence of the environment settings and sets the\nkey if its not given from the generator. If a setting is available from\nthe generator, the setting will be ignored.\n\nWARNING: This method only should be used if the\n{@link qx.core.Environment} class is not loaded!"
+            "body": "<p>Minimal mutator for the environment settings given from the generator.\n It checks for the existence of the environment settings and sets the\n key if its not given from the generator. If a setting is available from\n the generator, the setting will be ignored.\n WARNING: This method only should be used if the\n {@link qx.core.Environment} class is not loaded!</p>"
           }
         ],
         "@param": [
@@ -152,11 +152,11 @@
     "createNamespace": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 315,
           "column": 4
         },
         "end": {
-          "line": 292,
+          "line": 315,
           "column": 50
         }
       },
@@ -164,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a namespace and assigns the given object to it."
+            "body": "<p>Creates a namespace and assigns the given object to it.</p>"
           }
         ],
         "@internal": [
@@ -218,11 +218,11 @@
     "setRoot": {
       "location": {
         "start": {
-          "line": 302,
+          "line": 325,
           "column": 4
         },
         "end": {
-          "line": 304,
+          "line": 327,
           "column": 5
         }
       },
@@ -230,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Offers the ability to change the root for creating namespaces from window to\nwhatever object is given."
+            "body": "<p>Offers the ability to change the root for creating namespaces from window to\n whatever object is given.</p>"
           }
         ],
         "@param": [
@@ -255,11 +255,11 @@
     "base": {
       "location": {
         "start": {
-          "line": 314,
+          "line": 337,
           "column": 4
         },
         "end": {
-          "line": 314,
+          "line": 337,
           "column": 28
         }
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Call the same method of the super class."
+            "body": "<p>Call the same method of the super class.</p>"
           }
         ],
         "@signature": [
@@ -307,11 +307,11 @@
     "define": {
       "location": {
         "start": {
-          "line": 335,
+          "line": 358,
           "column": 4
         },
         "end": {
-          "line": 335,
+          "line": 358,
           "column": 32
         }
       },
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Define a new class using the qooxdoo class system.\nLightweight version of {@link qx.Class#define} with less features."
+            "body": "<p>Define a new class using the qooxdoo class system.\n Lightweight version of {@link qx.Class#define} with less features.</p>"
           }
         ],
         "@signature": [
@@ -331,17 +331,17 @@
         "@param": [
           {
             "name": "@param",
-            "body": "name {String?} Name of the class. If null, the class will not be\nattached to a namespace.",
+            "body": "name {String?} Name of the class. If null, the class will not be\n   attached to a namespace.",
             "paramName": "name",
-            "description": " Name of the class. If null, the class will not be\nattached to a namespace.",
+            "description": " Name of the class. If null, the class will not be\n   attached to a namespace.",
             "optional": true,
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "config {Map ? null} Class definition structure. The configuration map has the following keys:\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>extend</th><td>Class</td><td>The super class the current class inherits from.</td></tr>\n<tr><th>construct</th><td>Function</td><td>The constructor of the class.</td></tr>\n<tr><th>statics</th><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n<tr><th>members</th><td>Map</td><td>Map of instance members of the class.</td></tr>\n<tr><th>defer</th><td>Function</td><td>Function that is called at the end of\nprocessing the class declaration.</td></tr>\n</table>",
+            "body": "config {Map ? null} Class definition structure. The configuration map has the following keys:\n     <table>\n       <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n       <tr><th>extend</th><td>Class</td><td>The super class the current class inherits from.</td></tr>\n       <tr><th>construct</th><td>Function</td><td>The constructor of the class.</td></tr>\n       <tr><th>statics</th><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n       <tr><th>members</th><td>Map</td><td>Map of instance members of the class.</td></tr>\n       <tr><th>defer</th><td>Function</td><td>Function that is called at the end of\n          processing the class declaration.</td></tr>\n     </table>",
             "paramName": "config",
-            "description": " Class definition structure. The configuration map has the following keys:\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>extend</th><td>Class</td><td>The super class the current class inherits from.</td></tr>\n<tr><th>construct</th><td>Function</td><td>The constructor of the class.</td></tr>\n<tr><th>statics</th><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n<tr><th>members</th><td>Map</td><td>Map of instance members of the class.</td></tr>\n<tr><th>defer</th><td>Function</td><td>Function that is called at the end of\nprocessing the class declaration.</td></tr>\n</table>",
+            "description": " Class definition structure. The configuration map has the following keys:\n     <table>\n       <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n       <tr><th>extend</th><td>Class</td><td>The super class the current class inherits from.</td></tr>\n       <tr><th>construct</th><td>Function</td><td>The constructor of the class.</td></tr>\n       <tr><th>statics</th><td>Map</td><td>Map of static values / functions of the class.</td></tr>\n       <tr><th>members</th><td>Map</td><td>Map of instance members of the class.</td></tr>\n       <tr><th>defer</th><td>Function</td><td>Function that is called at the end of\n          processing the class declaration.</td></tr>\n     </table>",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -359,14 +359,54 @@
       "type": "variable",
       "access": "public"
     },
-    "setDisplayName": {
+    "isQxCoreObject": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 369,
           "column": 4
         },
         "end": {
-          "line": 346,
+          "line": 369,
+          "column": 47
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Tests whether an object is an instance of qx.core.Object without using instanceof - this\n is only for certain low level instances which would otherwise cause a circular, load time\n dependency</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "object {Object?} the object to test",
+            "paramName": "object",
+            "description": " the object to test",
+            "optional": true,
+            "type": "Object"
+          }
+        ],
+        "@return": [
+          {
+            "name": "@return",
+            "body": "{Boolean} true if object is an instance of qx.core.Object",
+            "type": "Boolean",
+            "description": " true if object is an instance of qx.core.Object"
+          }
+        ]
+      },
+      "type": "variable",
+      "access": "public"
+    },
+    "setDisplayName": {
+      "location": {
+        "start": {
+          "line": 380,
+          "column": 4
+        },
+        "end": {
+          "line": 380,
           "column": 48
         }
       },
@@ -374,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the display name of the given function"
+            "body": "<p>Sets the display name of the given function</p>"
           }
         ],
         "@signature": [
@@ -413,11 +453,11 @@
     "setDisplayNames": {
       "location": {
         "start": {
-          "line": 357,
+          "line": 391,
           "column": 4
         },
         "end": {
-          "line": 357,
+          "line": 391,
           "column": 50
         }
       },
@@ -425,7 +465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the names of all functions defined in the given map"
+            "body": "<p>Set the names of all functions defined in the given map</p>"
           }
         ],
         "@signature": [
@@ -444,9 +484,9 @@
           },
           {
             "name": "@param",
-            "body": "classname {String} the name of the class, the functions are\ndefined in",
+            "body": "classname {String} the name of the class, the functions are\n   defined in",
             "paramName": "classname",
-            "description": " the name of the class, the functions are\ndefined in",
+            "description": " the name of the class, the functions are\n   defined in",
             "type": "String"
           }
         ]
@@ -457,11 +497,11 @@
     "genericToString": {
       "location": {
         "start": {
-          "line": 367,
+          "line": 401,
           "column": 4
         },
         "end": {
-          "line": 367,
+          "line": 401,
           "column": 50
         }
       },
@@ -469,7 +509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method will be attached to all classes to return\na nice identifier for them."
+            "body": "<p>This method will be attached to all classes to return\n a nice identifier for them.</p>"
           }
         ],
         "@internal": [
@@ -499,11 +539,11 @@
     "extendClass": {
       "location": {
         "start": {
-          "line": 384,
+          "line": 418,
           "column": 4
         },
         "end": {
-          "line": 414,
+          "line": 448,
           "column": 5
         }
       },
@@ -511,7 +551,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inherit a clazz from a super class.\n\nThis function differentiates between class and constructor because the\nconstructor written by the user might be wrapped and the <code>base</code>\nproperty has to be attached to the constructor, while the <code>superclass</code>\nproperty has to be attached to the wrapped constructor."
+            "body": "<p>Inherit a clazz from a super class.\n This function differentiates between class and constructor because the\n constructor written by the user might be wrapped and the <code>base</code>\n property has to be attached to the constructor, while the <code>superclass</code>\n property has to be attached to the wrapped constructor.</p>"
           }
         ],
         "@param": [
@@ -558,11 +598,11 @@
     "__pendingDefers": {
       "location": {
         "start": {
-          "line": 417,
+          "line": 451,
           "column": 4
         },
         "end": {
-          "line": 417,
+          "line": 451,
           "column": 23
         }
       },
@@ -570,7 +610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Private list of classes which have a defer method that needs to be executed"
+            "body": "<p>Private list of classes which have a defer method that needs to be executed</p>"
           }
         ]
       },
@@ -580,11 +620,11 @@
     "addPendingDefer": {
       "location": {
         "start": {
-          "line": 426,
+          "line": 460,
           "column": 4
         },
         "end": {
-          "line": 433,
+          "line": 467,
           "column": 5
         }
       },
@@ -592,7 +632,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a callback for a class so that it's defer method can be called, either after all classes\nare loaded or when absolutely necessary because of load-time requirements of other classes."
+            "body": "<p>Adds a callback for a class so that it's defer method can be called, either after all classes\n are loaded or when absolutely necessary because of load-time requirements of other classes.</p>"
           }
         ],
         "@param": [
@@ -618,11 +658,11 @@
     "executePendingDefers": {
       "location": {
         "start": {
-          "line": 443,
+          "line": 477,
           "column": 4
         },
         "end": {
-          "line": 514,
+          "line": 548,
           "column": 5
         }
       },
@@ -630,7 +670,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the defer methods for classes which are required by the dependency information in\ndbClassInfo (which is a map in the format generated by qxcompiler).  Defer methods are of course\nonly executed once but they are always put off until absolutely necessary to avoid potential\nside effects and recursive and/or difficult to resolve dependencies."
+            "body": "<p>Executes the defer methods for classes which are required by the dependency information in\n dbClassInfo (which is a map in the format generated by qxcompiler).  Defer methods are of course\n only executed once but they are always put off until absolutely necessary to avoid potential\n side effects and recursive and/or difficult to resolve dependencies.</p>"
           }
         ],
         "@param": [
@@ -649,11 +689,11 @@
     "getByName": {
       "location": {
         "start": {
-          "line": 523,
+          "line": 557,
           "column": 4
         },
         "end": {
-          "line": 525,
+          "line": 559,
           "column": 5
         }
       },
@@ -661,7 +701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Find a class by its name"
+            "body": "<p>Find a class by its name</p>"
           }
         ],
         "@param": [
@@ -688,11 +728,11 @@
     "$$registry": {
       "location": {
         "start": {
-          "line": 529,
+          "line": 563,
           "column": 4
         },
         "end": {
-          "line": 529,
+          "line": 563,
           "column": 19
         }
       },
@@ -716,11 +756,11 @@
     "objectGetLength": {
       "location": {
         "start": {
-          "line": 545,
+          "line": 579,
           "column": 4
         },
         "end": {
-          "line": 547,
+          "line": 581,
           "column": 5
         }
       },
@@ -728,11 +768,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nOBJECT UTILITY FUNCTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  OBJECT UTILITY FUNCTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the number of own properties in the object."
+            "body": "<p>Get the number of own properties in the object.</p>"
           }
         ],
         "@param": [
@@ -765,11 +805,11 @@
     "objectMergeWith": {
       "location": {
         "start": {
-          "line": 559,
+          "line": 593,
           "column": 4
         },
         "end": {
-          "line": 573,
+          "line": 607,
           "column": 5
         }
       },
@@ -777,7 +817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inserts all keys of the source object into the\ntarget objects. Attention: The target map gets modified."
+            "body": "<p>Inserts all keys of the source object into the\n target objects. Attention: The target map gets modified.</p>"
           }
         ],
         "@param": [
@@ -820,11 +860,11 @@
     "__shadowedKeys": {
       "location": {
         "start": {
-          "line": 583,
+          "line": 617,
           "column": 4
         },
         "end": {
-          "line": 592,
+          "line": 626,
           "column": 5
         }
       },
@@ -832,7 +872,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "IE does not return \"shadowed\" keys even if they are defined directly\nin the object."
+            "body": "<p>IE does not return \"shadowed\" keys even if they are defined directly\n in the object.</p>"
           }
         ],
         "@internal": [
@@ -854,11 +894,11 @@
     "keys": {
       "location": {
         "start": {
-          "line": 603,
+          "line": 637,
           "column": 4
         },
         "end": {
-          "line": 655,
+          "line": 689,
           "column": 5
         }
       },
@@ -866,7 +906,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the keys of a map as array as returned by a \"for ... in\" statement."
+            "body": "<p>Get the keys of a map as array as returned by a \"for … in\" statement.</p>"
           }
         ],
         "@signature": [
@@ -905,11 +945,11 @@
     "__classToTypeMap": {
       "location": {
         "start": {
-          "line": 663,
+          "line": 697,
           "column": 4
         },
         "end": {
-          "line": 677,
+          "line": 712,
           "column": 5
         }
       },
@@ -917,7 +957,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping from JavaScript string representation of objects to names"
+            "body": "<p>Mapping from JavaScript string representation of objects to names</p>"
           }
         ],
         "@internal": [
@@ -939,11 +979,11 @@
     "bind": {
       "location": {
         "start": {
-          "line": 713,
+          "line": 748,
           "column": 4
         },
         "end": {
-          "line": 720,
+          "line": 755,
           "column": 5
         }
       },
@@ -951,11 +991,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFUNCTION UTILITY FUNCTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FUNCTION UTILITY FUNCTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns a function whose \"this\" is altered.\n\n*Syntax*\n\n<pre class='javascript'>qx.Bootstrap.bind(myFunction, [self, [varargs...]]);</pre>\n\n*Example*\n\n<pre class='javascript'>\nfunction myFunction()\n{\nthis.setStyle('color', 'red');\n// note that 'this' here refers to myFunction, not an element\n// we'll need to bind this function to the element we want to alter\n};\n\nvar myBoundFunction = qx.Bootstrap.bind(myFunction, myElement);\nmyBoundFunction(); // this will make the element myElement red.\n</pre>"
+            "body": "<p>Returns a function whose \"this\" is altered.\n<em>Syntax</em>\n </p>\n<pre class='javascript'>qx.Bootstrap.bind(myFunction, [self, [varargs...]]);</pre>\n<p><em>Example</em>\n </p>\n<pre class='javascript'>\n function myFunction()\n {\n   this.setStyle('color', 'red');\n\n\n };\n var myBoundFunction = qx.Bootstrap.bind(myFunction, myElement);\n myBoundFunction();\n </pre>"
           }
         ],
         "@param": [
@@ -1000,11 +1040,11 @@
     "firstUp": {
       "location": {
         "start": {
-          "line": 736,
+          "line": 771,
           "column": 4
         },
         "end": {
-          "line": 738,
+          "line": 773,
           "column": 5
         }
       },
@@ -1012,11 +1052,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTRING UTILITY FUNCTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STRING UTILITY FUNCTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Convert the first character of the string to upper case."
+            "body": "<p>Convert the first character of the string to upper case.</p>"
           }
         ],
         "@param": [
@@ -1043,11 +1083,11 @@
     "firstLow": {
       "location": {
         "start": {
-          "line": 747,
+          "line": 782,
           "column": 4
         },
         "end": {
-          "line": 749,
+          "line": 784,
           "column": 5
         }
       },
@@ -1055,7 +1095,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convert the first character of the string to lower case."
+            "body": "<p>Convert the first character of the string to lower case.</p>"
           }
         ],
         "@param": [
@@ -1082,11 +1122,11 @@
     "getClass": {
       "location": {
         "start": {
-          "line": 766,
+          "line": 801,
           "column": 4
         },
         "end": {
-          "line": 779,
+          "line": 814,
           "column": 5
         }
       },
@@ -1094,11 +1134,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nTYPE UTILITY FUNCTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  TYPE UTILITY FUNCTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the internal class of the value. See\nhttp://perfectionkills.com/instanceof-considered-harmful-or-how-to-write-a-robust-isarray/\nfor details."
+            "body": "<p>Get the internal class of the value. See\n http://perfectionkills.com/instanceof-considered-harmful-or-how-to-write-a-robust-isarray/\n for details.</p>"
           }
         ],
         "@param": [
@@ -1125,11 +1165,11 @@
     "isString": {
       "location": {
         "start": {
-          "line": 788,
+          "line": 823,
           "column": 4
         },
         "end": {
-          "line": 802,
+          "line": 837,
           "column": 5
         }
       },
@@ -1137,7 +1177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the value is a string."
+            "body": "<p>Whether the value is a string.</p>"
           }
         ],
         "@param": [
@@ -1164,11 +1204,11 @@
     "isArray": {
       "location": {
         "start": {
-          "line": 811,
+          "line": 846,
           "column": 4
         },
         "end": {
-          "line": 825,
+          "line": 860,
           "column": 5
         }
       },
@@ -1176,7 +1216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the value is an array."
+            "body": "<p>Whether the value is an array.</p>"
           }
         ],
         "@param": [
@@ -1203,11 +1243,11 @@
     "isObject": {
       "location": {
         "start": {
-          "line": 835,
+          "line": 870,
           "column": 4
         },
         "end": {
-          "line": 841,
+          "line": 876,
           "column": 5
         }
       },
@@ -1215,7 +1255,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the value is an object. Note that built-in types like Window are\nnot reported to be objects."
+            "body": "<p>Whether the value is an object. Note that built-in types like Window are\n not reported to be objects.</p>"
           }
         ],
         "@param": [
@@ -1242,11 +1282,11 @@
     "isFunction": {
       "location": {
         "start": {
-          "line": 850,
+          "line": 885,
           "column": 4
         },
         "end": {
-          "line": 852,
+          "line": 887,
           "column": 5
         }
       },
@@ -1254,7 +1294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the value is a function."
+            "body": "<p>Whether the value is a function.</p>"
           }
         ],
         "@param": [
@@ -1281,11 +1321,11 @@
     "isFunctionOrAsyncFunction": {
       "location": {
         "start": {
-          "line": 861,
+          "line": 896,
           "column": 4
         },
         "end": {
-          "line": 864,
+          "line": 899,
           "column": 5
         }
       },
@@ -1293,7 +1333,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the value is a function or an async function."
+            "body": "<p>Whether the value is a function or an async function.</p>"
           }
         ],
         "@param": [
@@ -1320,11 +1360,11 @@
     "$$logs": {
       "location": {
         "start": {
-          "line": 874,
+          "line": 909,
           "column": 4
         },
         "end": {
-          "line": 874,
+          "line": 909,
           "column": 15
         }
       },
@@ -1332,7 +1372,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLOGGING UTILITY FUNCTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LOGGING UTILITY FUNCTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -1342,11 +1382,11 @@
     "debug": {
       "location": {
         "start": {
-          "line": 885,
+          "line": 920,
           "column": 4
         },
         "end": {
-          "line": 887,
+          "line": 922,
           "column": 5
         }
       },
@@ -1354,7 +1394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"debug\" to the logger."
+            "body": "<p>Sending a message at level \"debug\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -1367,9 +1407,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -1380,11 +1420,11 @@
     "info": {
       "location": {
         "start": {
-          "line": 898,
+          "line": 933,
           "column": 4
         },
         "end": {
-          "line": 900,
+          "line": 935,
           "column": 5
         }
       },
@@ -1392,7 +1432,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"info\" to the logger."
+            "body": "<p>Sending a message at level \"info\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -1405,9 +1445,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -1418,11 +1458,11 @@
     "warn": {
       "location": {
         "start": {
-          "line": 911,
+          "line": 946,
           "column": 4
         },
         "end": {
-          "line": 913,
+          "line": 948,
           "column": 5
         }
       },
@@ -1430,7 +1470,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"warn\" to the logger."
+            "body": "<p>Sending a message at level \"warn\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -1443,9 +1483,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -1456,11 +1496,11 @@
     "error": {
       "location": {
         "start": {
-          "line": 924,
+          "line": 959,
           "column": 4
         },
         "end": {
-          "line": 926,
+          "line": 961,
           "column": 5
         }
       },
@@ -1468,7 +1508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sending a message at level \"error\" to the logger."
+            "body": "<p>Sending a message at level \"error\" to the logger.</p>"
           }
         ],
         "@param": [
@@ -1481,9 +1521,9 @@
           },
           {
             "name": "@param",
-            "body": "message {var} Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "body": "message {var} Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "paramName": "message",
-            "description": " Any number of arguments supported. An argument may\nhave any JavaScript data type. All data is serialized immediately and\ndoes not keep references to other objects.",
+            "description": " Any number of arguments supported. An argument may\n   have any JavaScript data type. All data is serialized immediately and\n   does not keep references to other objects.",
             "type": "var"
           }
         ]
@@ -1494,11 +1534,11 @@
     "trace": {
       "location": {
         "start": {
-          "line": 934,
+          "line": 969,
           "column": 4
         },
         "end": {
-          "line": 934,
+          "line": 969,
           "column": 31
         }
       },
@@ -1506,7 +1546,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prints the current stack trace at level \"info\""
+            "body": "<p>Prints the current stack trace at level \"info\"</p>"
           }
         ],
         "@param": [

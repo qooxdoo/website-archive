@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class contains the translation of a message and all information\nto translate it again into a different language."
+          "body": "<p>This class contains the translation of a message and all information\n to translate it again into a different language.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 33,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 40,
@@ -139,15 +139,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a translation of the string using the current locale."
+            "body": "<p>Get a translation of the string using the current locale.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.locale.LocalizedString|String} This string translated using the current\nlocale.",
+            "body": "{qx.locale.LocalizedString|String} This string translated using the current\n    locale.",
             "type": "qx.locale.LocalizedString|String",
-            "description": " This string translated using the current\nlocale."
+            "description": " This string translated using the current\n    locale."
           }
         ]
       },
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the messageId."
+            "body": "<p>Returns the messageId.</p>"
           }
         ],
         "@return": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Data Model for Progressive renderer."
+          "body": "<p>Data Model for Progressive renderer.</p>"
         }
       ]
     }
@@ -50,7 +50,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event is fired when new data has been added to the data model.  It\ntypically informs Progressive to begin its rendering process.\n\nThe event data is an integer: the number of elements now available on\nthe element queue."
+            "body": "<p>This event is fired when new data has been added to the data model.  It\n typically informs Progressive to begin its rendering process.\n The event data is an integer: the number of elements now available on\n the element queue.</p>"
           }
         ]
       },
@@ -74,7 +74,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the number of data elements currently available."
+            "body": "<p>Get the number of data elements currently available.</p>"
           }
         ],
         "@throws": [
@@ -112,7 +112,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the next available element from the data model."
+            "body": "<p>Get the next available element from the data model.</p>"
           }
         ],
         "@throws": [
@@ -126,9 +126,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe returned object must provide at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "body": "{Object}\n   The returned object must provide at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "type": "Object",
-            "description": "\nThe returned object must provide at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>"
+            "description": "\n   The returned object must provide at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>"
           }
         ]
       },

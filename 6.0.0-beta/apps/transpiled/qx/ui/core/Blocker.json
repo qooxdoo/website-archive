@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 550,
+        "line": 558,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class blocks events and can be included into all widgets.\n\nThe {@link #block} and {@link #unblock} methods provided by this class can be used\nto block any event from the widget. When blocked,\nthe blocker widget overlays the widget to block, including the padding area."
+          "body": "<p>This class blocks events and can be included into all widgets.\n The {@link #block} and {@link #unblock} methods provided by this class can be used\n to block any event from the widget. When blocked,\n the blocker widget overlays the widget to block, including the padding area.</p>"
         }
       ],
       "@ignore": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after {@link #block} executed."
+            "body": "<p>Fires after {@link #block} executed.</p>"
           }
         ]
       },
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires after {@link #unblock} executed."
+            "body": "<p>Fires after {@link #unblock} executed.</p>"
           }
         ]
       },
@@ -87,7 +87,7 @@
     "location": {
       "start": {
         "line": 53,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 77,
@@ -98,7 +98,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Creates a blocker for the passed widget."
+          "body": "<p>Creates a blocker for the passed widget.</p>"
         }
       ],
       "@param": [
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Color of the blocker"
+            "body": "<p>Color of the blocker</p>"
           }
         ]
       },
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Opacity of the blocker"
+            "body": "<p>Opacity of the blocker</p>"
           }
         ]
       },
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If this property is enabled, the blocker created with {@link #block}\nwill always stay activated. This means that the blocker then gets all keyboard\nevents, this is useful to block keyboard input on other widgets.\nTake care that only one blocker instance will be kept active, otherwise your\nbrowser will freeze.\n\nSetting this property to true is ignored, if the blocker is attached to a\nwidget with a focus handler, as this would mean that the focus handler\ntries to activate the widget behind the blocker.\n\nfixes:\nhttps://github.com/qooxdoo/qooxdoo/issues/9449\nhttps://github.com/qooxdoo/qooxdoo/issues/8104"
+            "body": "<p>If this property is enabled, the blocker created with {@link #block}\n will always stay activated. This means that the blocker then gets all keyboard\n events, this is useful to block keyboard input on other widgets.\n Take care that only one blocker instance will be kept active, otherwise your\n browser will freeze.\n Setting this property to true is ignored, if the blocker is attached to a\n widget with a focus handler, as this would mean that the focus handler\n tries to activate the widget behind the blocker.\n fixes:\n     https://github.com/qooxdoo/qooxdoo/issues/9449\n     https://github.com/qooxdoo/qooxdoo/issues/8104</p>"
           }
         ]
       },
@@ -337,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adjust html element size on layout resizes."
+            "body": "<p>Adjust html element size on layout resizes.</p>"
           }
         ],
         "@param": [
@@ -368,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget re-appears: Update blocker size/position and attach to (new) parent"
+            "body": "<p>Widget re-appears: Update blocker size/position and attach to (new) parent</p>"
           }
         ]
       },
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the blocker if the widget disappears"
+            "body": "<p>Remove the blocker if the widget disappears</p>"
           }
         ]
       },
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "set the blocker's size and position"
+            "body": "<p>set the blocker's size and position</p>"
           }
         ],
         "@param": [
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -468,7 +468,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -493,7 +493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the theme change."
+            "body": "<p>Handler for the theme change.</p>"
           }
         ],
         "@signature": [
@@ -521,7 +521,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the style to all blockers (blocker and content blocker)."
+            "body": "<p>Set the style to all blockers (blocker and content blocker).</p>"
           }
         ],
         "@param": [
@@ -559,7 +559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Backup the current active and focused widget."
+            "body": "<p>Backup the current active and focused widget.</p>"
           }
         ]
       },
@@ -581,7 +581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restore the current active and focused widget."
+            "body": "<p>Restore the current active and focused widget.</p>"
           }
         ]
       },
@@ -603,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the blocker element."
+            "body": "<p>Creates the blocker element.</p>"
           }
         ],
         "@return": [
@@ -633,15 +633,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get/create the blocker element"
+            "body": "<p>Get/create the blocker element</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "widget {qx.ui.core.Widget} The blocker will be added to this\nwidget's content element",
+            "body": "widget {qx.ui.core.Widget} The blocker will be added to this\n widget's content element",
             "paramName": "widget",
-            "description": " The blocker will be added to this\nwidget's content element",
+            "description": " The blocker will be added to this\n widget's content element",
             "type": "qx.ui.core.Widget"
           }
         ],
@@ -672,7 +672,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block all events from this widget by placing a transparent overlay widget,\nwhich receives all events, exactly over the widget."
+            "body": "<p>Block all events from this widget by placing a transparent overlay widget,\n which receives all events, exactly over the widget.</p>"
           }
         ]
       },
@@ -686,7 +686,7 @@
           "column": 4
         },
         "end": {
-          "line": 406,
+          "line": 408,
           "column": 5
         }
       },
@@ -694,7 +694,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the blocker to the appropriate element and includes it."
+            "body": "<p>Adds the blocker to the appropriate element and includes it.</p>"
           }
         ],
         "@param": [
@@ -720,11 +720,11 @@
     "isBlocked": {
       "location": {
         "start": {
-          "line": 414,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 416,
+          "line": 418,
           "column": 5
         }
       },
@@ -732,7 +732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the widget is blocked."
+            "body": "<p>Returns whether the widget is blocked.</p>"
           }
         ],
         "@return": [
@@ -750,11 +750,11 @@
     "unblock": {
       "location": {
         "start": {
-          "line": 424,
+          "line": 426,
           "column": 4
         },
         "end": {
-          "line": 439,
+          "line": 442,
           "column": 5
         }
       },
@@ -762,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblock the widget blocked by {@link #block}, but it takes care of\nthe amount of {@link #block} calls. The blocker is only removed if\nthe number of {@link #unblock} calls is identical to {@link #block} calls."
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it takes care of\n the amount of {@link #block} calls. The blocker is only removed if\n the number of {@link #unblock} calls is identical to {@link #block} calls.</p>"
           }
         ]
       },
@@ -772,11 +772,11 @@
     "forceUnblock": {
       "location": {
         "start": {
-          "line": 446,
+          "line": 449,
           "column": 4
         },
         "end": {
-          "line": 454,
+          "line": 462,
           "column": 5
         }
       },
@@ -784,7 +784,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblock the widget blocked by {@link #block}, but it doesn't take care of\nthe amount of {@link #block} calls. The blocker is directly removed."
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it doesn't take care of\n the amount of {@link #block} calls. The blocker is directly removed.</p>"
           }
         ]
       },
@@ -794,11 +794,11 @@
     "__unblock": {
       "location": {
         "start": {
-          "line": 460,
+          "line": 468,
           "column": 4
         },
         "end": {
-          "line": 472,
+          "line": 480,
           "column": 5
         }
       },
@@ -806,7 +806,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblock the widget blocked by {@link #block}."
+            "body": "<p>Unblock the widget blocked by {@link #block}.</p>"
           }
         ]
       },
@@ -816,11 +816,11 @@
     "blockContent": {
       "location": {
         "start": {
-          "line": 481,
+          "line": 489,
           "column": 4
         },
         "end": {
-          "line": 483,
+          "line": 491,
           "column": 5
         }
       },
@@ -828,15 +828,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block direct child widgets with a zIndex below <code>zIndex</code>"
+            "body": "<p>Block direct child widgets with a zIndex below <code>zIndex</code></p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "zIndex {Integer} All child widgets with a zIndex below this value\nwill be blocked",
+            "body": "zIndex {Integer} All child widgets with a zIndex below this value\n     will be blocked",
             "paramName": "zIndex",
-            "description": " All child widgets with a zIndex below this value\nwill be blocked",
+            "description": " All child widgets with a zIndex below this value\n     will be blocked",
             "type": "Integer"
           }
         ]
@@ -847,11 +847,11 @@
     "__stopTabEvent": {
       "location": {
         "start": {
-          "line": 491,
+          "line": 499,
           "column": 4
         },
         "end": {
-          "line": 495,
+          "line": 503,
           "column": 5
         }
       },
@@ -859,7 +859,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the passed \"Tab\" event."
+            "body": "<p>Stops the passed \"Tab\" event.</p>"
           }
         ],
         "@param": [
@@ -878,11 +878,11 @@
     "__activateBlockerElement": {
       "location": {
         "start": {
-          "line": 501,
+          "line": 509,
           "column": 4
         },
         "end": {
-          "line": 518,
+          "line": 526,
           "column": 5
         }
       },
@@ -890,7 +890,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the blocker element to active."
+            "body": "<p>Sets the blocker element to active.</p>"
           }
         ]
       },
@@ -1243,11 +1243,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 528,
-        "column": 2
+        "line": 536,
+        "column": 13
       },
       "end": {
-        "line": 549,
+        "line": 557,
         "column": 3
       }
     },
@@ -1255,7 +1255,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

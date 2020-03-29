@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Places the object to the target. If parts of the object are outside of the\nrange this class places the object at the best \"edge\", \"alignment\"\ncombination so that the overlap between object and range is maximized."
+          "body": "<p>Places the object to the target. If parts of the object are outside of the\n range this class places the object at the best \"edge\", \"alignment\"\n combination so that the overlap between object and range is maximized.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the start of the object by taking only the attachment and\nalignment into account. The object by be not fully visible."
+            "body": "<p>Computes the start of the object by taking only the attachment and\n alignment into account. The object by be not fully visible.</p>"
           }
         ],
         "@param": [
@@ -60,23 +60,23 @@
           },
           {
             "name": "@param",
-            "body": "target {Map} Location of the object to align the object to. This map\nshould have the keys <code>start</code> and <code>end</code>.",
+            "body": "target {Map} Location of the object to align the object to. This map\n   should have the keys <code>start</code> and <code>end</code>.",
             "paramName": "target",
-            "description": " Location of the object to align the object to. This map\nshould have the keys <code>start</code> and <code>end</code>.",
+            "description": " Location of the object to align the object to. This map\n   should have the keys <code>start</code> and <code>end</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "offsets {Map} Map with all offsets on each side.\nComes with the keys <code>start</code> and <code>end</code>.",
+            "body": "offsets {Map} Map with all offsets on each side.\n   Comes with the keys <code>start</code> and <code>end</code>.",
             "paramName": "offsets",
-            "description": " Map with all offsets on each side.\nComes with the keys <code>start</code> and <code>end</code>.",
+            "description": " Map with all offsets on each side.\n   Comes with the keys <code>start</code> and <code>end</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "position {String} Accepts the same values as the <code> position</code>\nargument of {@link #computeStart}.",
+            "body": "position {String} Accepts the same values as the <code> position</code>\n   argument of {@link #computeStart}.",
             "paramName": "position",
-            "description": " Accepts the same values as the <code> position</code>\nargument of {@link #computeStart}.",
+            "description": " Accepts the same values as the <code> position</code>\n   argument of {@link #computeStart}.",
             "type": "String"
           }
         ],
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the object specified by <code>start</code> and <code>size</code>\nis completely inside of the axis' range.."
+            "body": "<p>Whether the object specified by <code>start</code> and <code>size</code>\n is completely inside of the axis' range..</p>"
           }
         ],
         "@param": [
@@ -160,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the start of the object on the axis"
+            "body": "<p>Computes the start of the object on the axis</p>"
           }
         ],
         "@param": [
@@ -173,16 +173,16 @@
           },
           {
             "name": "@param",
-            "body": "target {Map} Location of the object to align the object to. This map\nshould have the keys <code>start</code> and <code>end</code>.",
+            "body": "target {Map} Location of the object to align the object to. This map\n   should have the keys <code>start</code> and <code>end</code>.",
             "paramName": "target",
-            "description": " Location of the object to align the object to. This map\nshould have the keys <code>start</code> and <code>end</code>.",
+            "description": " Location of the object to align the object to. This map\n   should have the keys <code>start</code> and <code>end</code>.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "offsets {Map} Map with all offsets on each side.\nComes with the keys <code>start</code> and <code>end</code>.",
+            "body": "offsets {Map} Map with all offsets on each side.\n   Comes with the keys <code>start</code> and <code>end</code>.",
             "paramName": "offsets",
-            "description": " Map with all offsets on each side.\nComes with the keys <code>start</code> and <code>end</code>.",
+            "description": " Map with all offsets on each side.\n   Comes with the keys <code>start</code> and <code>end</code>.",
             "type": "Map"
           },
           {
@@ -194,9 +194,9 @@
           },
           {
             "name": "@param",
-            "body": "position {String} Alignment of the object on the target. Valid values are\n<ul>\n<li><code>edge-start</code> The object is placed before the target</li>\n<li><code>edge-end</code> The object is placed after the target</li>\n<li><code>align-start</code>The start of the object is aligned with the start of the target</li>\n<li><code>align-center</code>The center of the object is aligned with the center of the target</li>\n<li><code>align-end</code>The end of the object is aligned with the end of the object</li>\n</ul>",
+            "body": "position {String} Alignment of the object on the target. Valid values are\n   <ul>\n   <li><code>edge-start</code> The object is placed before the target</li>\n   <li><code>edge-end</code> The object is placed after the target</li>\n   <li><code>align-start</code>The start of the object is aligned with the start of the target</li>\n   <li><code>align-center</code>The center of the object is aligned with the center of the target</li>\n   <li><code>align-end</code>The end of the object is aligned with the end of the object</li>\n   </ul>",
             "paramName": "position",
-            "description": " Alignment of the object on the target. Valid values are\n<ul>\n<li><code>edge-start</code> The object is placed before the target</li>\n<li><code>edge-end</code> The object is placed after the target</li>\n<li><code>align-start</code>The start of the object is aligned with the start of the target</li>\n<li><code>align-center</code>The center of the object is aligned with the center of the target</li>\n<li><code>align-end</code>The end of the object is aligned with the end of the object</li>\n</ul>",
+            "description": " Alignment of the object on the target. Valid values are\n   <ul>\n   <li><code>edge-start</code> The object is placed before the target</li>\n   <li><code>edge-end</code> The object is placed after the target</li>\n   <li><code>align-start</code>The start of the object is aligned with the start of the target</li>\n   <li><code>align-center</code>The center of the object is aligned with the center of the target</li>\n   <li><code>align-end</code>The end of the object is aligned with the end of the object</li>\n   </ul>",
             "type": "String"
           }
         ],

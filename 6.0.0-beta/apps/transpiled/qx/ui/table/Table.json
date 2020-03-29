@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table\n\nA detailed description can be found in the package description\n{@link qx.ui.table}."
+          "body": "<p>Table\n A detailed description can be found in the package description\n {@link qx.ui.table}.</p>"
         }
       ],
       "@childControl": [
@@ -53,7 +53,7 @@
     "location": {
       "start": {
         "line": 126,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 221,
@@ -64,7 +64,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -74,18 +74,18 @@
       "@param": [
         {
           "name": "@param",
-          "body": "tableModel {qx.ui.table.ITableModel ? null}\nThe table model to read the data from.",
+          "body": "tableModel {qx.ui.table.ITableModel ? null}\n   The table model to read the data from.",
           "paramName": "tableModel",
-          "description": "\nThe table model to read the data from.",
+          "description": "\n   The table model to read the data from.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.table.ITableModel"
         },
         {
           "name": "@param",
-          "body": "custom {Map ? null}\nA map provided to override the various supplemental classes allocated\nwithin this constructor.  Each property must be a function which\nreturns an object instance, as indicated by shown the defaults listed\nhere:\n\n<dl>\n<dt>initiallyHiddenColumns</dt>\n<dd>\n{Array?}\nA list of column numbers that should be initially invisible. Any\ncolumn not mentioned will be initially visible, and if no array\nis provided, all columns will be initially visible.\n</dd>\n<dt>selectionManager</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.selection.Manager(obj);\n}\n</pre></dd>\n<dt>selectionModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.selection.Model(obj);\n}\n</pre></dd>\n<dt>tableColumnModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.columnmodel.Basic(obj);\n}\n</pre></dd>\n<dt>tablePaneModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Model(obj);\n}\n</pre></dd>\n<dt>tablePane</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Pane(obj);\n}\n</pre></dd>\n<dt>tablePaneHeader</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Header(obj);\n}\n</pre></dd>\n<dt>tablePaneScroller</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Scroller(obj);\n}\n</pre></dd>\n<dt>tablePaneModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Model(obj);\n}\n</pre></dd>\n<dt>columnMenu</dt>\n<dd><pre class='javascript'>\nfunction()\n{\nreturn new qx.ui.table.columnmenu.Button();\n}\n</pre></dd>\n</dl>",
+          "body": "custom {Map ? null}\n   A map provided to override the various supplemental classes allocated\n   within this constructor.  Each property must be a function which\n   returns an object instance, as indicated by shown the defaults listed\n   here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.selection.Manager(obj);\n         }\n       </pre></dd>\n     <dt>selectionModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.selection.Model(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Basic(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Model(obj);\n         }\n       </pre></dd>\n     <dt>tablePane</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Pane(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneHeader</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Header(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneScroller</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Scroller(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Model(obj);\n         }\n       </pre></dd>\n     <dt>columnMenu</dt>\n       <dd><pre class='javascript'>\n         function()\n         {\n           return new qx.ui.table.columnmenu.Button();\n         }\n       </pre></dd>\n   </dl>",
           "paramName": "custom",
-          "description": "\nA map provided to override the various supplemental classes allocated\nwithin this constructor.  Each property must be a function which\nreturns an object instance, as indicated by shown the defaults listed\nhere:\n\n<dl>\n<dt>initiallyHiddenColumns</dt>\n<dd>\n{Array?}\nA list of column numbers that should be initially invisible. Any\ncolumn not mentioned will be initially visible, and if no array\nis provided, all columns will be initially visible.\n</dd>\n<dt>selectionManager</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.selection.Manager(obj);\n}\n</pre></dd>\n<dt>selectionModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.selection.Model(obj);\n}\n</pre></dd>\n<dt>tableColumnModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.columnmodel.Basic(obj);\n}\n</pre></dd>\n<dt>tablePaneModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Model(obj);\n}\n</pre></dd>\n<dt>tablePane</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Pane(obj);\n}\n</pre></dd>\n<dt>tablePaneHeader</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Header(obj);\n}\n</pre></dd>\n<dt>tablePaneScroller</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Scroller(obj);\n}\n</pre></dd>\n<dt>tablePaneModel</dt>\n<dd><pre class='javascript'>\nfunction(obj)\n{\nreturn new qx.ui.table.pane.Model(obj);\n}\n</pre></dd>\n<dt>columnMenu</dt>\n<dd><pre class='javascript'>\nfunction()\n{\nreturn new qx.ui.table.columnmenu.Button();\n}\n</pre></dd>\n</dl>",
+          "description": "\n   A map provided to override the various supplemental classes allocated\n   within this constructor.  Each property must be a function which\n   returns an object instance, as indicated by shown the defaults listed\n   here:\n   <dl>\n     <dt>initiallyHiddenColumns</dt>\n       <dd>\n         {Array?}\n         A list of column numbers that should be initially invisible. Any\n         column not mentioned will be initially visible, and if no array\n         is provided, all columns will be initially visible.\n       </dd>\n     <dt>selectionManager</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.selection.Manager(obj);\n         }\n       </pre></dd>\n     <dt>selectionModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.selection.Model(obj);\n         }\n       </pre></dd>\n     <dt>tableColumnModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.columnmodel.Basic(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Model(obj);\n         }\n       </pre></dd>\n     <dt>tablePane</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Pane(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneHeader</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Header(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneScroller</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Scroller(obj);\n         }\n       </pre></dd>\n     <dt>tablePaneModel</dt>\n       <dd><pre class='javascript'>\n         function(obj)\n         {\n           return new qx.ui.table.pane.Model(obj);\n         }\n       </pre></dd>\n     <dt>columnMenu</dt>\n       <dd><pre class='javascript'>\n         function()\n         {\n           return new qx.ui.table.columnmenu.Button();\n         }\n       </pre></dd>\n   </dl>",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched before adding the column list to the column visibility menu.\nThe event data is a map with two properties: table and menu.  Listeners\nmay add additional items to the menu, which appear at the top of the\nmenu."
+            "body": "<p>Dispatched before adding the column list to the column visibility menu.\n The event data is a map with two properties: table and menu.  Listeners\n may add additional items to the menu, which appear at the top of the\n menu.</p>"
           }
         ]
       },
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched after adding the column list to the column visibility menu.\nThe event data is a map with two properties: table and menu.  Listeners\nmay add additional items to the menu, which appear at the bottom of the\nmenu."
+            "body": "<p>Dispatched after adding the column list to the column visibility menu.\n The event data is a map with two properties: table and menu.  Listeners\n may add additional items to the menu, which appear at the bottom of the\n menu.</p>"
           }
         ]
       },
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when the width of the table has changed."
+            "body": "<p>Dispatched when the width of the table has changed.</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when updating scrollbars discovers that a vertical scrollbar\nis needed when it previously was not, or vice versa.  The data is a\nboolean indicating whether a vertical scrollbar is now being used."
+            "body": "<p>Dispatched when updating scrollbars discovers that a vertical scrollbar\n is needed when it previously was not, or vice versa.  The data is a\n boolean indicating whether a vertical scrollbar is now being used.</p>"
           }
         ]
       },
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when a data cell has been tapped."
+            "body": "<p>Dispatched when a data cell has been tapped.</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when a data cell has been tapped."
+            "body": "<p>Dispatched when a data cell has been tapped.</p>"
           }
         ]
       },
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched when the context menu is needed in a data cell"
+            "body": "<p>Dispatched when the context menu is needed in a data cell</p>"
           }
         ]
       },
@@ -263,7 +263,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispatched after a cell editor is flushed.\n\nThe data is a map containing this properties:\n<ul>\n<li>row</li>\n<li>col</li>\n<li>value</li>\n<li>oldValue</li>\n</ul>"
+            "body": "<p>Dispatched after a cell editor is flushed.\n The data is a map containing this properties:\n </p>\n<ul>\n   <li>row</li>\n   <li>col</li>\n   <li>value</li>\n   <li>oldValue</li>\n </ul>"
           }
         ]
       },
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Events that must be redirected to the scrollers."
+            "body": "<p>Events that must be redirected to the scrollers.</p>"
           }
         ]
       },
@@ -374,7 +374,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The list of columns that are initially hidden. This property is set by\nthe constructor, from the value received in\ncustom.initiallyHiddenColumns, and is only used when a column model is\ninitialized. It can be of great benefit in tables with numerous columns\nwhere most are not initially visible. The process of creating the\nheaders for all of the columns, only to have those columns discarded\nshortly thereafter when setColumnVisibility(false) is called, is a\nwaste of (significant, in some browsers) time. Specifying the\nnon-visible columns at constructor time can therefore avoid the initial\ncreation of all of those superfluous widgets."
+            "body": "<p>The list of columns that are initially hidden. This property is set by\n the constructor, from the value received in\n custom.initiallyHiddenColumns, and is only used when a column model is\n initialized. It can be of great benefit in tables with numerous columns\n where most are not initially visible. The process of creating the\n headers for all of the columns, only to have those columns discarded\n shortly thereafter when setColumnVisibility(false) is called, is a\n waste of (significant, in some browsers) time. Specifying the\n non-visible columns at constructor time can therefore avoid the initial\n creation of all of those superfluous widgets.</p>"
           }
         ]
       },
@@ -396,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains content which may be selected by the user.\n\nIf the value set to <code>true</code> the native browser selection can\nbe used for text selection. But it is normally useful for\nforms fields, longer texts/documents, editors, etc.\n\nNote: This has no effect on Table!"
+            "body": "<p>Whether the widget contains content which may be selected by the user.\n If the value set to <code>true</code> the native browser selection can\n be used for text selection. But it is normally useful for\n forms fields, longer texts/documents, editors, etc.\n Note: This has no effect on Table!</p>"
           }
         ]
       },
@@ -425,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The selection model."
+            "body": "<p>The selection model.</p>"
           }
         ]
       },
@@ -450,7 +450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table model."
+            "body": "<p>The table model.</p>"
           }
         ]
       },
@@ -475,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The height of the table rows."
+            "body": "<p>The height of the table rows.</p>"
           }
         ]
       },
@@ -503,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Force line height to match row height.  May be disabled if cell\nrenderers being used wish to render multiple lines of data within a\ncell.  (With the default setting, all but the first of multiple lines\nof data will not be visible.)"
+            "body": "<p>Force line height to match row height.  May be disabled if cell\n renderers being used wish to render multiple lines of data within a\n cell.  (With the default setting, all but the first of multiple lines\n of data will not be visible.)</p>"
           }
         ]
       },
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the header cells are visible. When setting this to false,\nyou'll likely also want to set the {#columnVisibilityButtonVisible}\nproperty to false as well, to entirely remove the header row."
+            "body": "<p>Whether the header cells are visible. When setting this to false,\n  you'll likely also want to set the {#columnVisibilityButtonVisible}\n  property to false as well, to entirely remove the header row.</p>"
           }
         ]
       },
@@ -555,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The height of the header cells."
+            "body": "<p>The height of the header cells.</p>"
           }
         ]
       },
@@ -585,7 +585,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the status bar"
+            "body": "<p>Whether to show the status bar</p>"
           }
         ]
       },
@@ -611,7 +611,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The Statusbartext, set it, if you want some more Information"
+            "body": "<p>The Statusbartext, set it, if you want some more Information</p>"
           }
         ]
       },
@@ -636,7 +636,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to show the column visibility button"
+            "body": "<p>Whether to show the column visibility button</p>"
           }
         ]
       },
@@ -669,7 +669,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer[]} The number of columns per meta column. If the last array entry is -1,\nthis meta column will get the remaining columns."
+            "body": "{Integer[]} The number of columns per meta column. If the last array entry is -1,\n this meta column will get the remaining columns."
           }
         ]
       },
@@ -693,7 +693,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the focus should moved when the pointer is moved over a cell. If false\nthe focus is only moved on pointer taps."
+            "body": "<p>Whether the focus should moved when the pointer is moved over a cell. If false\n the focus is only moved on pointer taps.</p>"
           }
         ]
       },
@@ -719,7 +719,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether row focus change by keyboard also modifies selection"
+            "body": "<p>Whether row focus change by keyboard also modifies selection</p>"
           }
         ]
       },
@@ -744,7 +744,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the cell focus indicator should be shown"
+            "body": "<p>Whether the cell focus indicator should be shown</p>"
           }
         ]
       },
@@ -770,7 +770,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "By default, the \"cellContextmenu\" event is fired only when a data cell\nis right-clicked. It is not fired when a right-click occurs in the\nempty area of the table below the last data row. By turning on this\nproperty, \"cellContextMenu\" events will also be generated when a\nright-click occurs in that empty area. In such a case, row identifier\nin the event data will be null, so event handlers can check (row ===\nnull) to handle this case."
+            "body": "<p>By default, the \"cellContextmenu\" event is fired only when a data cell\n is right-clicked. It is not fired when a right-click occurs in the\n empty area of the table below the last data row. By turning on this\n property, \"cellContextMenu\" events will also be generated when a\n right-click occurs in that empty area. In such a case, row identifier\n in the event data will be null, so event handlers can check (row ===\n null) to handle this case.</p>"
           }
         ]
       },
@@ -796,7 +796,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the table should keep the first visible row complete. If set to false,\nthe first row may be rendered partial, depending on the vertical scroll value."
+            "body": "<p>Whether the table should keep the first visible row complete. If set to false,\n the first row may be rendered partial, depending on the vertical scroll value.</p>"
           }
         ]
       },
@@ -822,7 +822,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the table cells should be updated when only the selection or the\nfocus changed. This slows down the table update but allows to react on a\nchanged selection or a changed focus in a cell renderer."
+            "body": "<p>Whether the table cells should be updated when only the selection or the\n focus changed. This slows down the table update but allows to react on a\n changed selection or a changed focus in a cell renderer.</p>"
           }
         ]
       },
@@ -847,7 +847,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to reset the selection when a header cell is tapped. Since\nmost data models do not have provisions to retain a selection after\nsorting, the default is to reset the selection in this case. Some data\nmodels, however, do have the capability to retain the selection, so\nwhen using those, this property should be set to false."
+            "body": "<p>Whether to reset the selection when a header cell is tapped. Since\n most data models do not have provisions to retain a selection after\n sorting, the default is to reset the selection in this case. Some data\n models, however, do have the capability to retain the selection, so\n when using those, this property should be set to false.</p>"
           }
         ]
       },
@@ -873,7 +873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The renderer to use for styling the rows."
+            "body": "<p>The renderer to use for styling the rows.</p>"
           }
         ]
       },
@@ -899,7 +899,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to call when before modal cell editor is opened."
+            "body": "<p>A function to call when before modal cell editor is opened.</p>"
           }
         ],
         "@signature": [
@@ -911,16 +911,16 @@
         "@param": [
           {
             "name": "@param",
-            "body": "cellEditor {qx.ui.window.Window}\nThe modal window which has been created for this cell editor",
+            "body": "cellEditor {qx.ui.window.Window}\n   The modal window which has been created for this cell editor",
             "paramName": "cellEditor",
-            "description": "\nThe modal window which has been created for this cell editor",
+            "description": "\n   The modal window which has been created for this cell editor",
             "type": "qx.ui.window.Window"
           },
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nInformation about the cell for which this cell editor was created.\nIt contains the following properties:\ncol, row, xPos, value",
+            "body": "cellInfo {Map}\n   Information about the cell for which this cell editor was created.\n   It contains the following properties:\n       col, row, xPos, value",
             "paramName": "cellInfo",
-            "description": "\nInformation about the cell for which this cell editor was created.\nIt contains the following properties:\ncol, row, xPos, value",
+            "description": "\n   Information about the cell for which this cell editor was created.\n   It contains the following properties:\n       col, row, xPos, value",
             "type": "Map"
           }
         ]
@@ -946,7 +946,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "By default, all Scrollers' (meta-columns') horizontal scrollbars are\nshown if any one is required. Allow not showing any that are not\nrequired."
+            "body": "<p>By default, all Scrollers' (meta-columns') horizontal scrollbars are\n shown if any one is required. Allow not showing any that are not\n required.</p>"
           }
         ]
       },
@@ -973,7 +973,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a new column menu button."
+            "body": "<p>A function to instantiate a new column menu button.</p>"
           }
         ]
       },
@@ -996,7 +996,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a selection manager.  this allows subclasses of\nTable to subclass this internal class.  To take effect, this property must\nbe set before calling the Table constructor."
+            "body": "<p>A function to instantiate a selection manager.  this allows subclasses of\n Table to subclass this internal class.  To take effect, this property must\n be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1019,7 +1019,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a selection model.  this allows subclasses of\nTable to subclass this internal class.  To take effect, this property must\nbe set before calling the Table constructor."
+            "body": "<p>A function to instantiate a selection model.  this allows subclasses of\n Table to subclass this internal class.  To take effect, this property must\n be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1042,7 +1042,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a table column model.  This allows subclasses\nof Table to subclass this internal class.  To take effect, this\nproperty must be set before calling the Table constructor."
+            "body": "<p>A function to instantiate a table column model.  This allows subclasses\n of Table to subclass this internal class.  To take effect, this\n property must be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1065,7 +1065,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a table pane.  this allows subclasses of\nTable to subclass this internal class.  To take effect, this property\nmust be set before calling the Table constructor."
+            "body": "<p>A function to instantiate a table pane.  this allows subclasses of\n Table to subclass this internal class.  To take effect, this property\n must be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1088,7 +1088,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a table pane.  this allows subclasses of\nTable to subclass this internal class.  To take effect, this property\nmust be set before calling the Table constructor."
+            "body": "<p>A function to instantiate a table pane.  this allows subclasses of\n Table to subclass this internal class.  To take effect, this property\n must be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1111,7 +1111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a table pane scroller.  this allows\nsubclasses of Table to subclass this internal class.  To take effect,\nthis property must be set before calling the Table constructor."
+            "body": "<p>A function to instantiate a table pane scroller.  this allows\n subclasses of Table to subclass this internal class.  To take effect,\n this property must be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1134,7 +1134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A function to instantiate a table pane model.  this allows subclasses\nof Table to subclass this internal class.  To take effect, this\nproperty must be set before calling the Table constructor."
+            "body": "<p>A function to instantiate a table pane model.  this allows subclasses\n of Table to subclass this internal class.  To take effect, this\n property must be set before calling the Table constructor.</p>"
           }
         ]
       },
@@ -1351,22 +1351,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -1403,7 +1403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1428,7 +1428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1453,7 +1453,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1478,7 +1478,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1503,7 +1503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an empty table model instance to use for this table. Use this table\nto configure the table with no table model."
+            "body": "<p>Get an empty table model instance to use for this table. Use this table\n to configure the table with no table model.</p>"
           }
         ],
         "@return": [
@@ -1533,7 +1533,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1558,7 +1558,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the The table column model."
+            "body": "<p>Get the The table column model.</p>"
           }
         ],
         "@return": [
@@ -1588,7 +1588,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1613,7 +1613,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1638,7 +1638,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1663,7 +1663,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1688,7 +1688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1713,7 +1713,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1738,7 +1738,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1763,7 +1763,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1788,7 +1788,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -1813,7 +1813,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the selection manager."
+            "body": "<p>Returns the selection manager.</p>"
           }
         ],
         "@return": [
@@ -1843,7 +1843,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an array containing all TablePaneScrollers in this table."
+            "body": "<p>Returns an array containing all TablePaneScrollers in this table.</p>"
           }
         ],
         "@return": [
@@ -1873,7 +1873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a TablePaneScroller of this table."
+            "body": "<p>Returns a TablePaneScroller of this table.</p>"
           }
         ],
         "@param": [
@@ -1912,15 +1912,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cleans up the meta columns."
+            "body": "<p>Cleans up the meta columns.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "fromMetaColumn {Integer} the first meta column to clean up. All following\nmeta columns will be cleaned up, too. All previous meta columns will\nstay unchanged. If 0 all meta columns will be cleaned up.",
+            "body": "fromMetaColumn {Integer} the first meta column to clean up. All following\n      meta columns will be cleaned up, too. All previous meta columns will\n      stay unchanged. If 0 all meta columns will be cleaned up.",
             "paramName": "fromMetaColumn",
-            "description": " the first meta column to clean up. All following\nmeta columns will be cleaned up, too. All previous meta columns will\nstay unchanged. If 0 all meta columns will be cleaned up.",
+            "description": " the first meta column to clean up. All following\n      meta columns will be cleaned up, too. All previous meta columns will\n      stay unchanged. If 0 all meta columns will be cleaned up.",
             "type": "Integer"
           }
         ]
@@ -1943,7 +1943,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the locale has changed."
+            "body": "<p>Event handler. Called when the locale has changed.</p>"
           }
         ],
         "@param": [
@@ -1974,7 +1974,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -2001,7 +2001,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the selection has changed."
+            "body": "<p>Event handler. Called when the selection has changed.</p>"
           }
         ],
         "@param": [
@@ -2032,7 +2032,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model meta data has changed."
+            "body": "<p>Event handler. Called when the table model meta data has changed.</p>"
           }
         ],
         "@param": [
@@ -2063,7 +2063,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model data has changed."
+            "body": "<p>Event handler. Called when the table model data has changed.</p>"
           }
         ],
         "@param": [
@@ -2094,7 +2094,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -2129,7 +2129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "To update the table if the table model has changed and remove selection."
+            "body": "<p>To update the table if the table model has changed and remove selection.</p>"
           }
         ],
         "@param": [
@@ -2199,7 +2199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a TablePaneScroller has been scrolled vertically."
+            "body": "<p>Event handler. Called when a TablePaneScroller has been scrolled vertically.</p>"
           }
         ],
         "@param": [
@@ -2230,7 +2230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a key was pressed."
+            "body": "<p>Event handler. Called when a key was pressed.</p>"
           }
         ],
         "@param": [
@@ -2267,7 +2267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when on key down event"
+            "body": "<p>Event handler. Called when on key down event</p>"
           }
         ],
         "@param": [
@@ -2298,7 +2298,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table gets the focus."
+            "body": "<p>Event handler. Called when the table gets the focus.</p>"
           }
         ],
         "@param": [
@@ -2329,7 +2329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the visibility of a column has changed."
+            "body": "<p>Event handler. Called when the visibility of a column has changed.</p>"
           }
         ],
         "@param": [
@@ -2360,7 +2360,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the width of a column has changed."
+            "body": "<p>Event handler. Called when the width of a column has changed.</p>"
           }
         ],
         "@param": [
@@ -2391,7 +2391,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the column order has changed."
+            "body": "<p>Event handler. Called when the column order has changed.</p>"
           }
         ],
         "@param": [
@@ -2422,7 +2422,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the TablePaneScroller at a certain x position in the page. If there is\nno TablePaneScroller at this position, null is returned."
+            "body": "<p>Gets the TablePaneScroller at a certain x position in the page. If there is\n no TablePaneScroller at this position, null is returned.</p>"
           }
         ],
         "@param": [
@@ -2461,7 +2461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the currently focused cell. A value of <code>null</code> hides the\nfocus cell."
+            "body": "<p>Sets the currently focused cell. A value of <code>null</code> hides the\n focus cell.</p>"
           }
         ],
         "@param": [
@@ -2485,9 +2485,9 @@
           },
           {
             "name": "@param",
-            "body": "scrollVisible {Boolean ? false} whether to scroll the new focused cell\nvisible.",
+            "body": "scrollVisible {Boolean ? false} whether to scroll the new focused cell\n          visible.",
             "paramName": "scrollVisible",
-            "description": " whether to scroll the new focused cell\nvisible.",
+            "description": " whether to scroll the new focused cell\n          visible.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -2512,7 +2512,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets (clears) the current selection"
+            "body": "<p>Resets (clears) the current selection</p>"
           }
         ]
       },
@@ -2534,7 +2534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the focused cell."
+            "body": "<p>Resets the focused cell.</p>"
           }
         ]
       },
@@ -2556,7 +2556,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the column of the currently focused cell."
+            "body": "<p>Returns the column of the currently focused cell.</p>"
           }
         ],
         "@return": [
@@ -2586,7 +2586,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the row of the currently focused cell."
+            "body": "<p>Returns the row of the currently focused cell.</p>"
           }
         ],
         "@return": [
@@ -2616,15 +2616,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Select whether the focused row is highlighted"
+            "body": "<p>Select whether the focused row is highlighted</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "bHighlight {Boolean}\nFlag indicating whether the focused row should be highlighted.",
+            "body": "bHighlight {Boolean}\n   Flag indicating whether the focused row should be highlighted.",
             "paramName": "bHighlight",
-            "description": "\nFlag indicating whether the focused row should be highlighted.",
+            "description": "\n   Flag indicating whether the focused row should be highlighted.",
             "type": "Boolean"
           }
         ]
@@ -2647,7 +2647,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the highlighting of the current focus row.\n\nThis is used to temporarily remove the highlighting of the currently\nfocused row, and is expected to be used most typically by adding a\nlistener on the \"pointerout\" event, so that the focus highlighting is\nsuspended when the pointer leaves the table:\n\ntable.addListener(\"pointerout\", table.clearFocusedRowHighlight);"
+            "body": "<p>Remove the highlighting of the current focus row.\n This is used to temporarily remove the highlighting of the currently\n focused row, and is expected to be used most typically by adding a\n listener on the \"pointerout\" event, so that the focus highlighting is\n suspended when the pointer leaves the table:\n     table.addListener(\"pointerout\", table.clearFocusedRowHighlight);</p>"
           }
         ],
         "@param": [
@@ -2678,7 +2678,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves the focus."
+            "body": "<p>Moves the focus.</p>"
           }
         ],
         "@param": [
@@ -2716,7 +2716,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls a cell visible."
+            "body": "<p>Scrolls a cell visible.</p>"
           }
         ],
         "@param": [
@@ -2754,7 +2754,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether currently a cell is editing."
+            "body": "<p>Returns whether currently a cell is editing.</p>"
           }
         ],
         "@return": [
@@ -2784,7 +2784,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Starts editing the currently focused cell. Does nothing if already editing\nor if the column is not editable."
+            "body": "<p>Starts editing the currently focused cell. Does nothing if already editing\n or if the column is not editable.</p>"
           }
         ],
         "@return": [
@@ -2814,7 +2814,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops editing and writes the editor's value to the model."
+            "body": "<p>Stops editing and writes the editor's value to the model.</p>"
           }
         ]
       },
@@ -2836,7 +2836,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops editing without writing the editor's value to the model."
+            "body": "<p>Stops editing without writing the editor's value to the model.</p>"
           }
         ]
       },
@@ -2858,7 +2858,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the table content of every attached table pane."
+            "body": "<p>Update the table content of every attached table pane.</p>"
           }
         ]
       },
@@ -2880,7 +2880,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates the blocker widgets on all column headers and the\ncolumn button"
+            "body": "<p>Activates the blocker widgets on all column headers and the\n column button</p>"
           }
         ]
       },
@@ -2902,7 +2902,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deactivates the blocker widgets on all column headers and the\ncolumn button"
+            "body": "<p>Deactivates the blocker widgets on all column headers and the\n column button</p>"
           }
         ]
       },
@@ -2924,7 +2924,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the meta column at a certain x position in the page. If there is no\nmeta column at this position, -1 is returned."
+            "body": "<p>Gets the meta column at a certain x position in the page. If there is no\n meta column at this position, -1 is returned.</p>"
           }
         ],
         "@param": [
@@ -2963,7 +2963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the meta column a column is shown in. If the column is not shown at\nall, -1 is returned."
+            "body": "<p>Returns the meta column a column is shown in. If the column is not shown at\n all, -1 is returned.</p>"
           }
         ],
         "@param": [
@@ -3002,7 +3002,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the text shown in the status bar."
+            "body": "<p>Updates the text shown in the status bar.</p>"
           }
         ]
       },
@@ -3024,7 +3024,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the widths of all scrollers."
+            "body": "<p>Updates the widths of all scrollers.</p>"
           }
         ]
       },
@@ -3046,7 +3046,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the visibility of the scrollbars in the meta columns."
+            "body": "<p>Updates the visibility of the scrollbars in the meta columns.</p>"
           }
         ]
       },
@@ -3068,7 +3068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the column menu"
+            "body": "<p>Initialize the column menu</p>"
           }
         ]
       },
@@ -3090,7 +3090,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a handler for a check box of the column visibility menu."
+            "body": "<p>Creates a handler for a check box of the column visibility menu.</p>"
           }
         ],
         "@param": [
@@ -3129,7 +3129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the width of a column."
+            "body": "<p>Sets the width of a column.</p>"
           }
         ],
         "@param": [
@@ -3167,7 +3167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resize event handler"
+            "body": "<p>Resize event handler</p>"
           }
         ]
       },
@@ -3189,7 +3189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -3209,18 +3209,18 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean ? false} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event. The default is\n         to attach the event handler to the bubbling phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -3229,9 +3229,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method.",
             "type": "String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n         using the {@link #removeListenerById} method."
           }
         ]
       },
@@ -3258,7 +3258,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -3287,9 +3287,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean} Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to remove the event listener of\n   the bubbling or of the capturing phase.",
             "type": "Boolean"
           }
         ],
@@ -3325,7 +3325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -3384,7 +3384,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the first scrollable parent (in the parent chain)."
+            "body": "<p>Finds the first scrollable parent (in the parent chain).</p>"
           }
         ],
         "@param": [
@@ -3418,7 +3418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is scrollable."
+            "body": "<p>Whether the widget is scrollable.</p>"
           }
         ],
         "@param": [
@@ -3452,7 +3452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the bounds of the given scrollable."
+            "body": "<p>Gets the bounds of the given scrollable.</p>"
           }
         ],
         "@param": [
@@ -3486,7 +3486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the edge type or null if the pointer isn't within one of the thresholds."
+            "body": "<p>Gets the edge type or null if the pointer isn't within one of the thresholds.</p>"
           }
         ],
         "@param": [
@@ -3534,7 +3534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the axis ('x' or 'y') by the edge type."
+            "body": "<p>Gets the axis ('x' or 'y') by the edge type.</p>"
           }
         ],
         "@param": [
@@ -3576,7 +3576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the threshold amount by edge type."
+            "body": "<p>Gets the threshold amount by edge type.</p>"
           }
         ],
         "@param": [
@@ -3610,7 +3610,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is visible."
+            "body": "<p>Whether the scrollbar is visible.</p>"
           }
         ],
         "@param": [
@@ -3651,7 +3651,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is exceeding it's maximum position."
+            "body": "<p>Whether the scrollbar is exceeding it's maximum position.</p>"
           }
         ],
         "@param": [
@@ -3699,7 +3699,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the threshold exceedance (which may be negative)."
+            "body": "<p>Calculates the threshold exceedance (which may be negative).</p>"
           }
         ],
         "@param": [
@@ -3740,7 +3740,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scroll amount (which may be negative).\nThe amount is influenced by the scrollbar size (bigger = faster)\nthe exceedanceAmount (bigger = faster) and the slowDownFactor."
+            "body": "<p>Calculates the scroll amount (which may be negative).\n The amount is influenced by the scrollbar size (bigger = faster)\n the exceedanceAmount (bigger = faster) and the slowDownFactor.</p>"
           }
         ],
         "@param": [
@@ -3781,7 +3781,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the given scrollable on the given axis for the given amount."
+            "body": "<p>Scrolls the given scrollable on the given axis for the given amount.</p>"
           }
         ],
         "@param": [
@@ -3821,11 +3821,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the drag event."
+            "body": "<p>Event handler for the drag event.</p>"
           }
         ],
         "@param": [
@@ -3851,7 +3851,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the dragend event."
+            "body": "<p>Event handler for the dragend event.</p>"
           }
         ],
         "@param": [
@@ -9739,7 +9739,7 @@
     "location": {
       "start": {
         "line": 2296,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 2322,
@@ -9750,7 +9750,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

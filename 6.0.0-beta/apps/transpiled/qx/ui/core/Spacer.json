@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A Spacer is a \"virtual\" widget, which can be placed into any layout and takes\nthe space a normal widget of the same size would take.\n\nSpacers are invisible and very light weight because they don't require any\nDOM modifications.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar container = new qx.ui.container.Composite(new qx.ui.layout.HBox());\ncontainer.add(new qx.ui.core.Widget());\ncontainer.add(new qx.ui.core.Spacer(50));\ncontainer.add(new qx.ui.core.Widget());\n</pre>\n\nThis example places two widgets and a spacer into a container with a\nhorizontal box layout. In this scenario the spacer creates an empty area of\n50 pixel width between the two widgets.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/spacer.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>A Spacer is a \"virtual\" widget, which can be placed into any layout and takes\n the space a normal widget of the same size would take.\n Spacers are invisible and very light weight because they don't require any\n DOM modifications.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var container = new qx.ui.container.Composite(new qx.ui.layout.HBox());\n   container.add(new qx.ui.core.Widget());\n   container.add(new qx.ui.core.Spacer(50));\n   container.add(new qx.ui.core.Widget());\n </pre>\n<p>This example places two widgets and a spacer into a container with a\n horizontal box layout. In this scenario the spacer creates an empty area of\n 50 pixel width between the two widgets.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/spacer.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 70,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method called from the visibility queue to detect outstanding changes\nto the appearance."
+            "body": "<p>Helper method called from the visibility queue to detect outstanding changes\n to the appearance.</p>"
           }
         ],
         "@internal": [
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recursively adds all children to the given queue"
+            "body": "<p>Recursively adds all children to the given queue</p>"
           }
         ],
         "@param": [
@@ -150,7 +150,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes this widget from its parent and dispose it.\n\nPlease note that the widget is not disposed synchronously. The\nreal dispose happens after the next queue flush."
+            "body": "<p>Removes this widget from its parent and dispose it.\n Please note that the widget is not disposed synchronously. The\n real dispose happens after the next queue flush.</p>"
           }
         ]
       },

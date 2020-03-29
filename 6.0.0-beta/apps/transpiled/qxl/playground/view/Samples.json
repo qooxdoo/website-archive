@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Container for the examples."
+          "body": "<p>Container for the examples.</p>"
         }
       ],
       "@ignore": [
@@ -67,13 +67,14 @@
     "location": {
       "start": {
         "line": 35,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 61,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "selectSample": {
@@ -91,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Change event which signals the change of an example."
+            "body": "<p>Change event which signals the change of an example.</p>"
           }
         ]
       },
@@ -113,7 +114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event triggered by the save button."
+            "body": "<p>Event triggered by the save button.</p>"
           }
         ]
       },
@@ -135,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event triggered by the save as button."
+            "body": "<p>Event triggered by the save as button.</p>"
           }
         ]
       },
@@ -157,7 +158,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event triggered by the delete button."
+            "body": "<p>Event triggered by the delete button.</p>"
           }
         ]
       },
@@ -179,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event triggered by the rename button."
+            "body": "<p>Event triggered by the rename button.</p>"
           }
         ]
       },
@@ -201,7 +202,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cancelable event fired before the selection changes."
+            "body": "<p>Cancelable event fired before the selection changes.</p>"
           }
         ]
       },
@@ -225,7 +226,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Model property which contains the data for showing the examples."
+            "body": "<p>Model property which contains the data for showing the examples.</p>"
           }
         ]
       },
@@ -250,7 +251,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Storage for the application mode."
+            "body": "<p>Storage for the application mode.</p>"
           }
         ]
       },
@@ -276,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Storage for the current selected sample, if any."
+            "body": "<p>Storage for the current selected sample, if any.</p>"
           }
         ]
       },
@@ -345,7 +346,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects the given example. If non is given, the selection will be\nremoved."
+            "body": "<p>Selects the given example. If non is given, the selection will be\n removed.</p>"
           }
         ],
         "@param": [
@@ -376,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selects a sample by the given code."
+            "body": "<p>Selects a sample by the given code.</p>"
           }
         ],
         "@param": [
@@ -407,7 +408,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creating helper which is responsible for creating the list."
+            "body": "<p>Creating helper which is responsible for creating the list.</p>"
           }
         ]
       },
@@ -429,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for creating the toolbar."
+            "body": "<p>Helper for creating the toolbar.</p>"
           }
         ]
       },
@@ -451,7 +452,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -476,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -501,7 +502,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },

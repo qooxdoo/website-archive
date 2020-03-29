@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The menu is a popup like control which supports buttons. It comes\nwith full keyboard navigation and an improved timeout based pointer\ncontrol behavior.\n\nThis class is the container for all derived instances of\n{@link qx.ui.menu.AbstractButton}."
+          "body": "<p>The menu is a popup like control which supports buttons. It comes\n with full keyboard navigation and an improved timeout based pointer\n control behavior.\n This class is the container for all derived instances of\n {@link qx.ui.menu.AbstractButton}.</p>"
         }
       ],
       "@childControl": [
@@ -47,13 +47,14 @@
     "location": {
       "start": {
         "line": 40,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 65,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "appearance": {
@@ -71,11 +72,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -104,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -133,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -162,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -191,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -220,7 +221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -249,11 +250,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTYLE OPTIONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STYLE OPTIONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The spacing between each cell of the menu buttons"
+            "body": "<p>The spacing between each cell of the menu buttons</p>"
           }
         ]
       },
@@ -280,7 +281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The spacing between each menu button"
+            "body": "<p>The spacing between each menu button</p>"
           }
         ]
       },
@@ -307,7 +308,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default icon column width if no icons are rendered.\nThis property is ignored as soon as an icon is present."
+            "body": "<p>Default icon column width if no icons are rendered.\n This property is ignored as soon as an icon is present.</p>"
           }
         ]
       },
@@ -334,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default arrow column width if no sub menus are rendered"
+            "body": "<p>Default arrow column width if no sub menus are rendered</p>"
           }
         ]
       },
@@ -361,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Color of the blocker"
+            "body": "<p>Color of the blocker</p>"
           }
         ]
       },
@@ -388,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Opacity of the blocker"
+            "body": "<p>Opacity of the blocker</p>"
           }
         ]
       },
@@ -415,11 +416,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nFUNCTIONALITY PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  FUNCTIONALITY PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The currently selected button"
+            "body": "<p>The currently selected button</p>"
           }
         ]
       },
@@ -445,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The currently opened button (sub menu is visible)"
+            "body": "<p>The currently opened button (sub menu is visible)</p>"
           }
         ]
       },
@@ -471,7 +472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Widget that opened the menu"
+            "body": "<p>Widget that opened the menu</p>"
           }
         ]
       },
@@ -496,11 +497,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBEHAVIOR PROPERTIES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BEHAVIOR PROPERTIES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Interval in ms after which sub menus should be opened"
+            "body": "<p>Interval in ms after which sub menus should be opened</p>"
           }
         ]
       },
@@ -527,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval in ms after which sub menus should be closed"
+            "body": "<p>Interval in ms after which sub menus should be closed</p>"
           }
         ]
       },
@@ -554,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Blocks the background if value is <code>true<code>"
+            "body": "<p>Blocks the background if value is <code>true<code></p>"
           }
         ]
       },
@@ -718,11 +719,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Opens the menu and configures the opener"
+            "body": "<p>Opens the menu and configures the opener</p>"
           }
         ]
       },
@@ -744,7 +745,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Opens the menu at the pointer position"
+            "body": "<p>Opens the menu at the pointer position</p>"
           }
         ],
         "@param": [
@@ -775,15 +776,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Opens the menu in relation to the given point"
+            "body": "<p>Opens the menu in relation to the given point</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "paramName": "point",
-            "description": " Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "description": " Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "type": "Map"
           }
         ]
@@ -806,7 +807,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convenience method to add a separator to the menu"
+            "body": "<p>Convenience method to add a separator to the menu</p>"
           }
         ]
       },
@@ -828,7 +829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the column sizes detected during the pre-layout phase"
+            "body": "<p>Returns the column sizes detected during the pre-layout phase</p>"
           }
         ],
         "@return": [
@@ -858,7 +859,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return all selectable menu items."
+            "body": "<p>Return all selectable menu items.</p>"
           }
         ],
         "@return": [
@@ -888,11 +889,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -917,7 +918,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -942,7 +943,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -967,7 +968,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -992,7 +993,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -1018,7 +1019,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the blocker's visibility"
+            "body": "<p>Updates the blocker's visibility</p>"
           }
         ]
       },
@@ -1040,7 +1041,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the parent menu. Returns <code>null</code> if the menu doesn't have a\nparent menu."
+            "body": "<p>Get the parent menu. Returns <code>null</code> if the menu doesn't have a\n parent menu.</p>"
           }
         ],
         "@return": [
@@ -1070,7 +1071,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1095,7 +1096,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1120,7 +1121,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1145,7 +1146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -1170,11 +1171,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLLING SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\nSCROLLING SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1208,22 +1209,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -1260,7 +1261,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the menu layout manager"
+            "body": "<p>Get the menu layout manager</p>"
           }
         ],
         "@return": [
@@ -1290,7 +1291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the menu bounds"
+            "body": "<p>Get the menu bounds</p>"
           }
         ],
         "@return": [
@@ -1320,7 +1321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the size of the menu. This method is used by the\n{@link qx.ui.core.MPlacement} mixin."
+            "body": "<p>Computes the size of the menu. This method is used by the\n {@link qx.ui.core.MPlacement} mixin.</p>"
           }
         ],
         "@return": [
@@ -1350,7 +1351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the visibility of the slidebar based on the menu's current size\nand position."
+            "body": "<p>Updates the visibility of the slidebar based on the menu's current size\n and position.</p>"
           }
         ]
       },
@@ -1372,7 +1373,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedules the addition of the slidebar and calls the given callback\nafter the slidebar has been added."
+            "body": "<p>Schedules the addition of the slidebar and calls the given callback\n after the slidebar has been added.</p>"
           }
         ],
         "@param": [
@@ -1387,9 +1388,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var|undefined} The return value of the callback if the slidebar\nalready exists, or <code>undefined</code> if it doesn't",
+            "body": "{var|undefined} The return value of the callback if the slidebar\n already exists, or <code>undefined</code> if it doesn't",
             "type": "var|undefined",
-            "description": " The return value of the callback if the slidebar\nalready exists, or <code>undefined</code> if it doesn't"
+            "description": " The return value of the callback if the slidebar\n already exists, or <code>undefined</code> if it doesn't"
           }
         ]
       },
@@ -1411,7 +1412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1446,11 +1447,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Update position if the menu or the root is resized"
+            "body": "<p>Update position if the menu or the root is resized</p>"
           }
         ]
       },
@@ -1472,7 +1473,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for pointerover event."
+            "body": "<p>Event listener for pointerover event.</p>"
           }
         ],
         "@param": [
@@ -1503,7 +1504,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for pointerout event."
+            "body": "<p>Event listener for pointerout event.</p>"
           }
         ],
         "@param": [
@@ -1531,7 +1532,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the location data like {qx.bom.element.Location#get} does,\nbut does not rely on DOM elements coordinates to be rendered. Instead,\nthis method works with the available layout data available in the moment\nwhen it is executed.\nThis works best when called in some type of <code>resize</code> or\n<code>move</code> event which are supported by all widgets out of the\nbox."
+            "body": "<p>Returns the location data like {qx.bom.element.Location#get} does,\n but does not rely on DOM elements coordinates to be rendered. Instead,\n this method works with the available layout data available in the moment\n when it is executed.\n This works best when called in some type of <code>resize</code> or\n <code>move</code> event which are supported by all widgets out of the\n box.</p>"
           }
         ],
         "@param": [
@@ -1546,9 +1547,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map|null} Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the widget relative coords the document.",
+            "body": "{Map|null} Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the widget relative coords the document.",
             "type": "Map|null",
-            "description": " Returns a map with <code>left</code>, <code>top</code>,\n<code>right</code> and <code>bottom</code> which contains the distance\nof the widget relative coords the document."
+            "description": " Returns a map with <code>left</code>, <code>top</code>,\n   <code>right</code> and <code>bottom</code> which contains the distance\n   of the widget relative coords the document."
           }
         ]
       }
@@ -1565,7 +1566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the position. Uses low-level, high-performance DOM\nmethods when the property {@link #domMove} is enabled.\nChecks if an always visible element is set and moves the widget to not\noverlay the always visible widget if possible. The algorithm tries to\nmove the widget as far left as necessary but not of the screen.\n({@link #setVisibleElement})"
+            "body": "<p>Sets the position. Uses low-level, high-performance DOM\n methods when the property {@link #domMove} is enabled.\n Checks if an always visible element is set and moves the widget to not\n overlay the always visible widget if possible. The algorithm tries to\n move the widget as far left as necessary but not of the screen.\n ({@link #setVisibleElement})</p>"
           }
         ],
         "@param": [
@@ -1598,7 +1599,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to another (at least laid out) widget. The DOM\nelement is not needed, but the bounds are needed to compute the\nlocation of the widget to align to."
+            "body": "<p>Places the widget to another (at least laid out) widget. The DOM\n element is not needed, but the bounds are needed to compute the\n location of the widget to align to.</p>"
           }
         ],
         "@param": [
@@ -1611,9 +1612,9 @@
           },
           {
             "name": "@param",
-            "body": "liveupdate {Boolean} Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "body": "liveupdate {Boolean} Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "paramName": "liveupdate",
-            "description": " Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "description": " Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "type": "Boolean"
           }
         ],
@@ -1648,7 +1649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to the pointer position."
+            "body": "<p>Places the widget to the pointer position.</p>"
           }
         ],
         "@param": [
@@ -1674,7 +1675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget to any (rendered) DOM element."
+            "body": "<p>Places the widget to any (rendered) DOM element.</p>"
           }
         ],
         "@param": [
@@ -1687,9 +1688,9 @@
           },
           {
             "name": "@param",
-            "body": "liveupdate {Boolean} Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "body": "liveupdate {Boolean} Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "paramName": "liveupdate",
-            "description": " Flag indicating if the position of the\nwidget should be checked and corrected automatically.",
+            "description": " Flag indicating if the position of the\n widget should be checked and corrected automatically.",
             "type": "Boolean"
           }
         ]
@@ -1707,15 +1708,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Places the widget in relation to the given point"
+            "body": "<p>Places the widget in relation to the given point</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "body": "point {Map} Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "paramName": "point",
-            "description": " Coordinate of any point with the keys <code>left</code>\nand <code>top</code>.",
+            "description": " Coordinate of any point with the keys <code>left</code>\n   and <code>top</code>.",
             "type": "Map"
           }
         ]
@@ -1733,7 +1734,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the placement offsets as a map"
+            "body": "<p>Returns the placement offsets as a map</p>"
           }
         ],
         "@return": [
@@ -1758,15 +1759,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the size of the object to place. The callback will be called with\nthe size as first argument. This methods works asynchronously.\n\nThe size of the object to place is the size of the widget. If a widget\nincluding this mixin needs a different size it can implement the method\n<code>_computePlacementSize</code>, which returns the size."
+            "body": "<p>Get the size of the object to place. The callback will be called with\n the size as first argument. This methods works asynchronously.\n The size of the object to place is the size of the widget. If a widget\n including this mixin needs a different size it can implement the method\n <code>_computePlacementSize</code>, which returns the size.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} This function will be called with the size as\nfirst argument",
+            "body": "callback {Function} This function will be called with the size as\n    first argument",
             "paramName": "callback",
-            "description": " This function will be called with the size as\nfirst argument",
+            "description": " This function will be called with the size as\n    first argument",
             "type": "Function"
           }
         ]
@@ -1784,15 +1785,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method to read specific this properties and\napply the results to the this afterwards."
+            "body": "<p>Internal method to read specific this properties and\n apply the results to the this afterwards.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "coords {Map} Location of the object to align the this to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "body": "coords {Map} Location of the object to align the this to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "paramName": "coords",
-            "description": " Location of the object to align the this to. This map\nshould have the keys <code>left</code>, <code>top</code>, <code>right</code>\nand <code>bottom</code>.",
+            "description": " Location of the object to align the this to. This map\n   should have the keys <code>left</code>, <code>top</code>, <code>right</code>\n   and <code>bottom</code>.",
             "type": "Map"
           }
         ]
@@ -2445,7 +2446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Forward the call with the given function name to the children container"
+            "body": "<p>Forward the call with the given function name to the children container</p>"
           }
         ],
         "@param": [
@@ -2503,15 +2504,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -2528,7 +2529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -2553,7 +2554,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -2596,7 +2597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child item."
+            "body": "<p>Remove the given child item.</p>"
           }
         ],
         "@param": [
@@ -2630,7 +2631,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -2655,7 +2656,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given item if it is\na child item. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given item if it is\n a child item. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2670,9 +2671,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given item is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given item is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given item is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given item is no child of this layout."
           }
         ]
       }
@@ -2689,7 +2690,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2731,7 +2732,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item before another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item before another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2773,7 +2774,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add an item after another already inserted item\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add an item after another already inserted item\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -2815,7 +2816,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the item at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the item at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -7142,7 +7143,7 @@
     "location": {
       "start": {
         "line": 803,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 812,
@@ -7153,7 +7154,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Manager for meta themes"
+          "body": "<p>Manager for meta themes</p>"
         }
       ]
     }
@@ -50,7 +50,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires if any theme manager has been changed."
+            "body": "<p>Fires if any theme manager has been changed.</p>"
           }
         ]
       },
@@ -74,7 +74,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Meta theme. Applies the defined color, decoration, ... themes to\nthe corresponding managers."
+            "body": "<p>Meta theme. Applies the defined color, decoration, … themes to\n the corresponding managers.</p>"
           }
         ]
       },
@@ -118,7 +118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires <code>changeTheme</code> event."
+            "body": "<p>Fires <code>changeTheme</code> event.</p>"
           }
         ],
         "@param": [
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes listeners for <code>changeTheme</code> event of all\nrelated theme managers."
+            "body": "<p>Removes listeners for <code>changeTheme</code> event of all\n related theme managers.</p>"
           }
         ]
       },
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates listeners for <code>changeTheme</code> event of all related\ntheme managers, to forwards the event to this meta manager instance."
+            "body": "<p>Activates listeners for <code>changeTheme</code> event of all related\n theme managers, to forwards the event to this meta manager instance.</p>"
           }
         ]
       },
@@ -232,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the themes which were selected using the settings. Should only\nbe called from qooxdoo based application."
+            "body": "<p>Initialize the themes which were selected using the settings. Should only\n be called from qooxdoo based application.</p>"
           }
         ]
       },

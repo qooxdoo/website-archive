@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\nhttp://qooxdoo.org\n\nCopyright:\n2008 Dihedrals.com, http://www.dihedrals.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChris Banford (zermattchris)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Dihedrals.com, http://www.dihedrals.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Chris Banford (zermattchris)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A basic layout, which supports positioning of child widgets in a 'flowing'\nmanner, starting at the container's top/left position, placing children left to right\n(like a HBox) until the there's no remaining room for the next child. When\nout of room on the current line of elements, a new line is started, cleared\nbelow the tallest child of the preceding line -- a bit like using 'float'\nin CSS, except that a new line wraps all the way back to the left.\n\n*Features*\n\n<ul>\n<li> Reversing children order </li>\n<li> Manual line breaks </li>\n<li> Horizontal alignment of lines </li>\n<li> Vertical alignment of individual widgets within a line </li>\n<li> Margins with horizontal margin collapsing </li>\n<li> Horizontal and vertical spacing </li>\n<li> Height for width calculations </li>\n<li> Auto-sizing </li>\n</ul>\n\n*Item Properties*\n\n<ul>\n<li><strong>lineBreak</strong> <em>(Boolean)</em>: If set to <code>true</code>\na forced line break will happen after this child widget.\n</li>\n<li><strong>stretch</strong> <em>(Boolean)</em>: If set to <code>true</code>\nthe widget will be stretched to the remaining line width. This requires\nlineBreak to be true.\n</li>\n\n</ul>\n\n*Example*\n\nHere is a little example of how to use the Flow layout.\n\n<pre class=\"javascript\">\nvar flowlayout = new qx.ui.layout.Flow();\n\nflowlayout.setAlignX( \"center\" );  // Align children to the X axis of the container (left|center|right)\n\nvar container = new qx.ui.container.Composite(flowlayout);\nthis.getRoot().add(container, {edge: 0});\n\nvar button1 = new qx.ui.form.Button(\"1. First Button\", \"flowlayout/test.png\");\ncontainer.add(button1);\n\nvar button2 = new qx.ui.form.Button(\"2. Second longer Button...\", \"flowlayout/test.png\");\n// Have this child create a break in the current Line (next child will always start a new Line)\ncontainer.add(button2, {lineBreak: true});\n\nvar button3 = new qx.ui.form.Button(\"3rd really, really, really long Button\", \"flowlayout/test.png\");\nbutton3.setHeight(100);  // tall button\ncontainer.add(button3);\n\nvar button4 = new qx.ui.form.Button(\"Number 4\", \"flowlayout/test.png\");\nbutton4.setAlignY(\"bottom\");\ncontainer.add(button4);\n\nvar button5 = new qx.ui.form.Button(\"20px Margins around the great big 5th button!\");\nbutton5.setHeight(100);  // tall button\nbutton5.setMargin(20);\ncontainer.add(button5, {lineBreak: true});    // Line break after this button.\n\nvar button6 = new qx.ui.form.Button(\"Number 6\", \"flowlayout/test.png\");\nbutton6.setAlignY(\"middle\");  // Align this child to the vertical center of this line.\ncontainer.add(button6);\n\nvar button7 = new qx.ui.form.Button(\"7th a wide, short button\", \"flowlayout/test.png\");\nbutton7.setMaxHeight(20);  // short button\ncontainer.add(button7);\n</pre>\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/flow.html'>\nExtended documentation</a> and links to demos of this layout in the qooxdoo manual."
+          "body": "<p>A basic layout, which supports positioning of child widgets in a 'flowing'\n manner, starting at the container's top/left position, placing children left to right\n (like a HBox) until the there's no remaining room for the next child. When\n out of room on the current line of elements, a new line is started, cleared\n below the tallest child of the preceding line -- a bit like using 'float'\n in CSS, except that a new line wraps all the way back to the left.\n<em>Features</em>\n </p>\n<ul>\n <li> Reversing children order </li>\n <li> Manual line breaks </li>\n <li> Horizontal alignment of lines </li>\n <li> Vertical alignment of individual widgets within a line </li>\n <li> Margins with horizontal margin collapsing </li>\n <li> Horizontal and vertical spacing </li>\n <li> Height for width calculations </li>\n <li> Auto-sizing </li>\n </ul>\n<p><em>Item Properties</em>\n </p>\n<ul>\n <li><strong>lineBreak</strong> <em>(Boolean)</em>: If set to <code>true</code>\n   a forced line break will happen after this child widget.\n </li>\n <li><strong>stretch</strong> <em>(Boolean)</em>: If set to <code>true</code>\n   the widget will be stretched to the remaining line width. This requires\n   lineBreak to be true.\n </li>\n </ul>\n<p><em>Example</em>\n Here is a little example of how to use the Flow layout.\n </p>\n<pre class=\"javascript\">\n  var flowlayout = new qx.ui.layout.Flow();\n  flowlayout.setAlignX( \"center\" );\n  var container = new qx.ui.container.Composite(flowlayout);\n  this.getRoot().add(container, {edge: 0});\n  var button1 = new qx.ui.form.Button(\"1. First Button\", \"flowlayout/test.png\");\n  container.add(button1);\n  var button2 = new qx.ui.form.Button(\"2. Second longer Button...\", \"flowlayout/test.png\");\n\n  container.add(button2, {lineBreak: true});\n  var button3 = new qx.ui.form.Button(\"3rd really, really, really long Button\", \"flowlayout/test.png\");\n  button3.setHeight(100);\n  container.add(button3);\n  var button4 = new qx.ui.form.Button(\"Number 4\", \"flowlayout/test.png\");\n  button4.setAlignY(\"bottom\");\n  container.add(button4);\n  var button5 = new qx.ui.form.Button(\"20px Margins around the great big 5th button!\");\n  button5.setHeight(100);\n  button5.setMargin(20);\n  container.add(button5, {lineBreak: true});\n  var button6 = new qx.ui.form.Button(\"Number 6\", \"flowlayout/test.png\");\n  button6.setAlignY(\"middle\");\n  container.add(button6);\n  var button7 = new qx.ui.form.Button(\"7th a wide, short button\", \"flowlayout/test.png\");\n  button7.setMaxHeight(20);\n  container.add(button7);\n </pre>\n<p><em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/layout/flow.html'>\n Extended documentation</a> and links to demos of this layout in the qooxdoo manual.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 116,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 131,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -74,9 +74,9 @@
         },
         {
           "name": "@param",
-          "body": "alignX {String?\"left\"} Horizontal alignment of the whole children\nblock {@link #alignX}.",
+          "body": "alignX {String?\"left\"} Horizontal alignment of the whole children\n     block {@link #alignX}.",
           "paramName": "alignX",
-          "description": " Horizontal alignment of the whole children\nblock {@link #alignX}.",
+          "description": " Horizontal alignment of the whole children\n     block {@link #alignX}.",
           "optional": true,
           "defaultValue": "\"left\"",
           "type": "String"
@@ -100,7 +100,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Horizontal alignment of the whole children block. The horizontal\nalignment of the child is completely ignored in HBoxes (\n{@link qx.ui.core.LayoutItem#alignX})."
+            "body": "<p>Horizontal alignment of the whole children block. The horizontal\n alignment of the child is completely ignored in HBoxes (\n {@link qx.ui.core.LayoutItem#alignX}).</p>"
           }
         ]
       },
@@ -130,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Vertical alignment of each child. Can be overridden through\n{@link qx.ui.core.LayoutItem#alignY}."
+            "body": "<p>Vertical alignment of each child. Can be overridden through\n {@link qx.ui.core.LayoutItem#alignY}.</p>"
           }
         ]
       },
@@ -160,7 +160,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Horizontal spacing between two children"
+            "body": "<p>Horizontal spacing between two children</p>"
           }
         ]
       },
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The vertical spacing between the lines."
+            "body": "<p>The vertical spacing between the lines.</p>"
           }
         ]
       },
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the actual children list should be laid out in reversed order."
+            "body": "<p>Whether the actual children list should be laid out in reversed order.</p>"
           }
         ]
       },
@@ -256,11 +256,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -309,7 +309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -344,7 +344,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The FlowLayout tries to add as many Children as possible to the current 'Line'\nand when it sees that the next Child won't fit, it starts on a new Line, continuing\nuntil all the Children have been added.\nTo enable alignX \"left\", \"center\", \"right\" renderLayout has to calculate the positions\nof all a Line's children before it draws them."
+            "body": "<p>The FlowLayout tries to add as many Children as possible to the current 'Line'\n and when it sees that the next Child won't fit, it starts on a new Line, continuing\n until all the Children have been added.\n To enable alignX \"left\", \"center\", \"right\" renderLayout has to calculate the positions\n of all a Line's children before it draws them.</p>"
           }
         ],
         "@param": [
@@ -364,9 +364,9 @@
           },
           {
             "name": "@param",
-            "body": "padding {Map} Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "body": "padding {Map} Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "paramName": "padding",
-            "description": " Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "description": " Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "type": "Map"
           }
         ]
@@ -393,15 +393,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Render a line in the flow layout"
+            "body": "<p>Render a line in the flow layout</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "line {Map} A line configuration as returned by\n{@link LineSizeIterator#computeNextLine}.",
+            "body": "line {Map} A line configuration as returned by\n    {@link LineSizeIterator#computeNextLine}.",
             "paramName": "line",
-            "description": " A line configuration as returned by\n{@link LineSizeIterator#computeNextLine}.",
+            "description": " A line configuration as returned by\n    {@link LineSizeIterator#computeNextLine}.",
             "type": "Map"
           },
           {
@@ -420,9 +420,9 @@
           },
           {
             "name": "@param",
-            "body": "padding {Map} Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "body": "padding {Map} Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "paramName": "padding",
-            "description": " Map containing the padding values. Keys:\n<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
+            "description": " Map containing the padding values. Keys:\n <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>",
             "type": "Map"
           }
         ]
@@ -445,7 +445,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -479,7 +479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -513,7 +513,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -556,7 +556,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list of children fitting in the last row of the given width."
+            "body": "<p>Returns the list of children fitting in the last row of the given width.</p>"
           }
         ],
         "@param": [
@@ -595,7 +595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute the preferred size optionally constrained by the available width"
+            "body": "<p>Compute the preferred size optionally constrained by the available width</p>"
           }
         ],
         "@param": [

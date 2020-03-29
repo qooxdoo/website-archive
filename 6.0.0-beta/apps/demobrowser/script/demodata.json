@@ -388,6 +388,14 @@
                 "nr": "StandardMode"
             },
             {
+                "name": "Placeholder.html",
+                "tags": [
+                    "qx.Class.define"
+                ],
+                "title": "Placeholder",
+                "nr": 0
+            },
+            {
                 "name": "PageVisibility.html",
                 "tags": [
                     "noPlayground",
@@ -395,14 +403,6 @@
                     "qx.bom.PageVisibility"
                 ],
                 "title": "PageVisibility",
-                "nr": 0
-            },
-            {
-                "name": "Placeholder.html",
-                "tags": [
-                    "qx.Class.define"
-                ],
-                "title": "Placeholder",
                 "nr": 0
             },
             {
@@ -896,6 +896,28 @@
                 "nr": 0
             },
             {
+                "name": "ListControllerWithFilter.html",
+                "tags": [
+                    "databinding",
+                    "filter",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.log.appender.Console.show",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ListControllerWithFilter",
+                "nr": 0
+            },
+            {
                 "name": "ListControllerWith3Widgets.html",
                 "tags": [
                     "databinding",
@@ -917,28 +939,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "ListControllerWith3Widgets",
-                "nr": 0
-            },
-            {
-                "name": "ListControllerWithFilter.html",
-                "tags": [
-                    "databinding",
-                    "filter",
-                    "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.log.appender.Console.show",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ListControllerWithFilter",
                 "nr": 0
             },
             {
@@ -1152,6 +1152,16 @@
         "classname": "event",
         "tests": [
             {
+                "name": "ElementResize.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Element.addListener"
+                ],
+                "title": "ElementResize",
+                "nr": 0
+            },
+            {
                 "name": "Event.html",
                 "tags": [
                     "noPlayground",
@@ -1175,17 +1185,6 @@
                 "nr": 0
             },
             {
-                "name": "Event_Bubbling.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener"
-                ],
-                "title": "Event Bubbling",
-                "nr": "Bubbling"
-            },
-            {
                 "name": "Event_Bus.html",
                 "tags": [
                     "noPlayground",
@@ -1197,6 +1196,38 @@
                 ],
                 "title": "Event Bus",
                 "nr": "Bus"
+            },
+            {
+                "name": "Event_Bubbling.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener"
+                ],
+                "title": "Event Bubbling",
+                "nr": "Bubbling"
+            },
+            {
+                "name": "Event_Iframe.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Iframe.create",
+                    "qx.event.Registration.addListener",
+                    "qx.bom.Iframe.getDocument",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.removeListener"
+                ],
+                "title": "Event Iframe",
+                "nr": "Iframe"
             },
             {
                 "name": "Focus.html",
@@ -1213,16 +1244,6 @@
                     "qx.core.Environment.get"
                 ],
                 "title": "Focus",
-                "nr": 0
-            },
-            {
-                "name": "ElementResize.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener"
-                ],
-                "title": "ElementResize",
                 "nr": 0
             },
             {
@@ -1300,27 +1321,6 @@
                 ],
                 "title": "PointerEvent",
                 "nr": 0
-            },
-            {
-                "name": "Event_Iframe.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Iframe.create",
-                    "qx.event.Registration.addListener",
-                    "qx.bom.Iframe.getDocument",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.removeListener"
-                ],
-                "title": "Event Iframe",
-                "nr": "Iframe"
             }
         ]
     },
@@ -1341,6 +1341,23 @@
                 ],
                 "title": "Basic",
                 "nr": 0
+            },
+            {
+                "name": "Canvas_Fixed.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.decoration.Decorator",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite"
+                ],
+                "title": "Canvas Fixed",
+                "nr": "Fixed"
             },
             {
                 "name": "Canvas_LeftRight.html",
@@ -2349,23 +2366,6 @@
                 ],
                 "title": "VSplit",
                 "nr": 0
-            },
-            {
-                "name": "Canvas_Fixed.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.decoration.Decorator",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite"
-                ],
-                "title": "Canvas Fixed",
-                "nr": "Fixed"
             }
         ]
     },
@@ -2794,20 +2794,6 @@
                 "nr": 0
             },
             {
-                "name": "Table_Drag_And_Drop.html",
-                "tags": [
-                    "noPlayground",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table",
-                    "qx.ui.table.cellrenderer.Boolean",
-                    "qx.ui.table.headerrenderer.Icon"
-                ],
-                "title": "Table Drag_And_Drop",
-                "nr": 0
-            },
-            {
                 "name": "Table_Events.html",
                 "tags": [
                     "noPlayground",
@@ -2831,6 +2817,20 @@
                 "nr": "Events"
             },
             {
+                "name": "Table_Drag_And_Drop.html",
+                "tags": [
+                    "noPlayground",
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table",
+                    "qx.ui.table.cellrenderer.Boolean",
+                    "qx.ui.table.headerrenderer.Icon"
+                ],
+                "title": "Table Drag_And_Drop",
+                "nr": 0
+            },
+            {
                 "name": "Table_Filtered_Model.html",
                 "tags": [
                     "noPlayground",
@@ -2848,17 +2848,6 @@
                 ],
                 "title": "Table Filtered_Model",
                 "nr": 0
-            },
-            {
-                "name": "Table_Huge.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.table.model.Simple",
-                    "qx.ui.table.Table"
-                ],
-                "title": "Table Huge",
-                "nr": "Huge"
             },
             {
                 "name": "Table_Meta_Columns.html",
@@ -2887,6 +2876,17 @@
                 ],
                 "title": "Table Remote_Model",
                 "nr": 0
+            },
+            {
+                "name": "Table_Huge.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.table.model.Simple",
+                    "qx.ui.table.Table"
+                ],
+                "title": "Table Huge",
+                "nr": "Huge"
             },
             {
                 "name": "Table_Resize_Columns.html",
@@ -2978,6 +2978,22 @@
                 "nr": "Events"
             },
             {
+                "name": "TreeVirtual_Filter.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.lang.Function.bind"
+                ],
+                "title": "TreeVirtual Filter",
+                "nr": "Filter"
+            },
+            {
                 "name": "TreeVirtual_Multiple_Columns.html",
                 "tags": [
                     "qx.Class.define",
@@ -3018,22 +3034,6 @@
                 ],
                 "title": "TreeVirtual Selections",
                 "nr": "Selections"
-            },
-            {
-                "name": "TreeVirtual_Filter.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.lang.Function.bind"
-                ],
-                "title": "TreeVirtual Filter",
-                "nr": "Filter"
             }
         ]
     },
@@ -4031,6 +4031,18 @@
                 "nr": 0
             },
             {
+                "name": "ColorPopup.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.locale.Manager.getInstance",
+                    "qx.ui.control.ColorPopup",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ColorPopup",
+                "nr": 0
+            },
+            {
                 "name": "ColorSelector.html",
                 "tags": [
                     "qx.Class.define",
@@ -4127,18 +4139,6 @@
                     "qx.ui.window.Window"
                 ],
                 "title": "Desktop",
-                "nr": 0
-            },
-            {
-                "name": "ColorPopup.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.locale.Manager.getInstance",
-                    "qx.ui.control.ColorPopup",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ColorPopup",
                 "nr": 0
             },
             {
@@ -4393,6 +4393,127 @@
                 "nr": 0
             },
             {
+                "name": "Menu.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Separator",
+                    "qx.ui.menu.Button",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Menu",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.form.MenuButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.form.SplitButton",
+                    "qx.ui.container.Composite",
+                    "qx.ui.toolbar.SplitButton",
+                    "qx.ui.toolbar.SplitButton",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.Button",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.toolbar.MenuButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.CheckBox",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.RadioButton",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button",
+                    "qx.ui.menu.Button"
+                ],
+                "title": "Menu",
+                "nr": 0
+            },
+            {
                 "name": "Popup.html",
                 "tags": [
                     "qx.Class.define",
@@ -4406,19 +4527,6 @@
                     "qx.ui.basic.Atom"
                 ],
                 "title": "Popup",
-                "nr": 0
-            },
-            {
-                "name": "ProgressBar.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.indicator.ProgressBar",
-                    "qx.ui.form.Slider",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "ProgressBar",
                 "nr": 0
             },
             {
@@ -4458,6 +4566,19 @@
                     "qx.ui.form.RadioButton"
                 ],
                 "title": "RadioButtonGroup",
+                "nr": 0
+            },
+            {
+                "name": "ProgressBar.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.indicator.ProgressBar",
+                    "qx.ui.form.Slider",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "ProgressBar",
                 "nr": 0
             },
             {
@@ -4678,127 +4799,6 @@
                     "qx.ui.tabview.Page"
                 ],
                 "title": "TabView",
-                "nr": 0
-            },
-            {
-                "name": "Menu.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Separator",
-                    "qx.ui.menu.Button",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Menu",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.form.MenuButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.form.SplitButton",
-                    "qx.ui.container.Composite",
-                    "qx.ui.toolbar.SplitButton",
-                    "qx.ui.toolbar.SplitButton",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.Button",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.toolbar.MenuButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.CheckBox",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.RadioButton",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button",
-                    "qx.ui.menu.Button"
-                ],
-                "title": "Menu",
                 "nr": 0
             },
             {

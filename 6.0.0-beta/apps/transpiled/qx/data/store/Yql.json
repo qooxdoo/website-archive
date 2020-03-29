@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This store uses the {@link qx.data.store.Jsonp} store to query Yahoo's\nYQL service. (http://developer.yahoo.com/yql/)\n\nIf you want to test your queries, take a look at the YQL console:\nhttp://developer.yahoo.com/yql/console/"
+          "body": "<p>This store uses the {@link qx.data.store.Jsonp} store to query Yahoo's\n YQL service. (http://developer.yahoo.com/yql/)\n If you want to test your queries, take a look at the YQL console:\n http://developer.yahoo.com/yql/console/</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 44,
@@ -59,9 +59,9 @@
         },
         {
           "name": "@param",
-          "body": "delegate {Object?null} The delegate containing one of the methods\nspecified in {@link qx.data.store.IStoreDelegate}.",
+          "body": "delegate {Object?null} The delegate containing one of the methods\n   specified in {@link qx.data.store.IStoreDelegate}.",
           "paramName": "delegate",
-          "description": " The delegate containing one of the methods\nspecified in {@link qx.data.store.IStoreDelegate}.",
+          "description": " The delegate containing one of the methods\n   specified in {@link qx.data.store.IStoreDelegate}.",
           "optional": true,
           "defaultValue": "null",
           "type": "Object"

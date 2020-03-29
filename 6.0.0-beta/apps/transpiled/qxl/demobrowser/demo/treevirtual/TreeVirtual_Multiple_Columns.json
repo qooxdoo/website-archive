@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Demonstrate use of multiple columns in a tree, and the use of the\ngetHierarchy() method to retrieve the entire tree path of a node.\nAllows various options to be manipulated."
+          "body": "<p>Demonstrate use of multiple columns in a tree, and the use of the\n getHierarchy() method to retrieve the entire tree path of a node.\n Allows various options to be manipulated.</p>"
         }
       ]
     }

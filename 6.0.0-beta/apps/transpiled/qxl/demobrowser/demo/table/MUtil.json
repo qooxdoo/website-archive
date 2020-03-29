@@ -37,13 +37,14 @@
     "location": {
       "start": {
         "line": 7,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 9,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "getTableMock": {

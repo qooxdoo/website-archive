@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a cross browser storage implementation. The API is aligned with the\nAPI of the HTML web storage (http://www.w3.org/TR/webstorage/) which is also\nthe preferred implementation used. As fallback for IE < 8, we use user data.\nIf both techniques are unsupported, we supply a in memory storage, which is\nof course, not persistent."
+          "body": "<p>This is a cross browser storage implementation. The API is aligned with the\n API of the HTML web storage (http://www.w3.org/TR/webstorage/) which is also\n the preferred implementation used. As fallback for IE &lt; 8, we use user data.\n If both techniques are unsupported, we supply a in memory storage, which is\n of course, not persistent.</p>"
         }
       ]
     }
@@ -61,15 +61,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an instance of a local storage."
+            "body": "<p>Get an instance of a local storage.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory}\nAn instance of a storage implementation.",
+            "body": "{qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory}\n   An instance of a storage implementation.",
             "type": "qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory",
-            "description": "\nAn instance of a storage implementation."
+            "description": "\n   An instance of a storage implementation."
           }
         ]
       },
@@ -91,15 +91,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an instance of a session storage."
+            "body": "<p>Get an instance of a session storage.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory}\nAn instance of a storage implementation.",
+            "body": "{qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory}\n   An instance of a storage implementation.",
             "type": "qx.bom.storage.Web|qx.bom.storage.UserData|qx.bom.storage.Memory",
-            "description": "\nAn instance of a storage implementation."
+            "description": "\n   An instance of a storage implementation."
           }
         ]
       },

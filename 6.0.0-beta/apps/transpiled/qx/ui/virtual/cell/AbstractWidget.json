@@ -23,7 +23,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Abstract base class for widget based cell renderer."
+          "body": "<p>Abstract base class for widget based cell renderer.</p>"
         }
       ]
     }
@@ -33,13 +33,14 @@
     "location": {
       "start": {
         "line": 10,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 15,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "created": {
@@ -57,7 +58,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a new <code>LayoutItem</code> is created."
+            "body": "<p>Fired when a new <code>LayoutItem</code> is created.</p>"
           }
         ]
       },
@@ -95,7 +96,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the widget instance."
+            "body": "<p>Creates the widget instance.</p>"
           }
         ],
         "@abstract": [
@@ -131,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -173,7 +174,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -215,7 +216,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -228,9 +229,9 @@
           },
           {
             "name": "@param",
-            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "paramName": "states",
-            "description": " The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "description": " The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "type": "Map"
           }
         ],
@@ -265,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
@@ -300,7 +301,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cleanup all <code>LayoutItem</code> and destroy them."
+            "body": "<p>Cleanup all <code>LayoutItem</code> and destroy them.</p>"
           }
         ]
       },
@@ -322,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a <code>LayoutItem</code> from the pool, when the pool is empty\na new <code>LayoutItem</code> is created."
+            "body": "<p>Returns a <code>LayoutItem</code> from the pool, when the pool is empty\n a new <code>LayoutItem</code> is created.</p>"
           }
         ],
         "@return": [
@@ -462,7 +463,7 @@
     "location": {
       "start": {
         "line": 137,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 141,
@@ -473,7 +474,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The table pane that shows a certain section from a table. This class handles\nthe display of the data part of a table and is therefore the base for virtual\nscrolling."
+          "body": "<p>The table pane that shows a certain section from a table. This class handles\n the display of the data part of a table and is therefore the base for virtual\n scrolling.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 41,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -80,7 +80,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the current view port of the pane has not loaded data.\nThe data object of the event indicates if the table pane has to reload\ndata or not. Can be used to give the user feedback of the loading state\nof the rows."
+            "body": "<p>Whether the current view port of the pane has not loaded data.\n The data object of the event indicates if the table pane has to reload\n data or not. Can be used to give the user feedback of the loading state\n of the rows.</p>"
           }
         ]
       },
@@ -102,7 +102,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whenever the content of the table pane has been updated (rendered)\ntrigger a paneUpdated event. This allows the canvas cellrenderer to act\nonce the new cells have been integrated in the dom."
+            "body": "<p>Whenever the content of the table pane has been updated (rendered)\n trigger a paneUpdated event. This allows the canvas cellrenderer to act\n once the new cells have been integrated in the dom.</p>"
           }
         ]
       },
@@ -126,7 +126,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The index of the first row to show."
+            "body": "<p>The index of the first row to show.</p>"
           }
         ]
       },
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The number of rows to show."
+            "body": "<p>The number of rows to show.</p>"
           }
         ]
       },
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Maximum number of cached rows. If the value is <code>-1</code> the cache\nsize is unlimited"
+            "body": "<p>Maximum number of cached rows. If the value is <code>-1</code> the cache\n size is unlimited</p>"
           }
         ]
       },
@@ -204,7 +204,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -319,7 +319,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "sparse array to cache rendered rows"
+            "body": "<p>sparse array to cache rendered rows</p>"
           }
         ]
       },
@@ -355,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -380,7 +380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property modifier"
+            "body": "<p>property modifier</p>"
           }
         ]
       },
@@ -405,7 +405,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -439,7 +439,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the TablePaneScroller this pane belongs to."
+            "body": "<p>Returns the TablePaneScroller this pane belongs to.</p>"
           }
         ],
         "@return": [
@@ -469,7 +469,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the table this pane belongs to."
+            "body": "<p>Returns the table this pane belongs to.</p>"
           }
         ],
         "@return": [
@@ -499,7 +499,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the currently focused cell."
+            "body": "<p>Sets the currently focused cell.</p>"
           }
         ],
         "@param": [
@@ -523,9 +523,9 @@
           },
           {
             "name": "@param",
-            "body": "massUpdate {Boolean ? false} Whether other updates are planned as well.\nIf true, no repaint will be done.",
+            "body": "massUpdate {Boolean ? false} Whether other updates are planned as well.\n          If true, no repaint will be done.",
             "paramName": "massUpdate",
-            "description": " Whether other updates are planned as well.\nIf true, no repaint will be done.",
+            "description": " Whether other updates are planned as well.\n          If true, no repaint will be done.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -550,7 +550,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the selection has changed."
+            "body": "<p>Event handler. Called when the selection has changed.</p>"
           }
         ]
       },
@@ -572,7 +572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table gets or looses the focus."
+            "body": "<p>Event handler. Called when the table gets or looses the focus.</p>"
           }
         ]
       },
@@ -594,7 +594,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the column width."
+            "body": "<p>Sets the column width.</p>"
           }
         ],
         "@param": [
@@ -632,7 +632,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called the column order has changed."
+            "body": "<p>Event handler. Called the column order has changed.</p>"
           }
         ]
       },
@@ -654,7 +654,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the pane model has changed."
+            "body": "<p>Event handler. Called when the pane model has changed.</p>"
           }
         ]
       },
@@ -676,7 +676,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model data has changed."
+            "body": "<p>Event handler. Called when the table model data has changed.</p>"
           }
         ],
         "@param": [
@@ -728,7 +728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model meta data has changed."
+            "body": "<p>Event handler. Called when the table model meta data has changed.</p>"
           }
         ]
       },
@@ -750,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply method"
+            "body": "<p>property apply method</p>"
           }
         ]
       },
@@ -775,7 +775,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clear the row cache"
+            "body": "<p>Clear the row cache</p>"
           }
         ]
       },
@@ -797,7 +797,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a line from the row cache."
+            "body": "<p>Get a line from the row cache.</p>"
           }
         ],
         "@param": [
@@ -826,9 +826,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The cached row or null if a row with the given\nindex is not cached.",
+            "body": "{String|null} The cached row or null if a row with the given\n     index is not cached.",
             "type": "String|null",
-            "description": " The cached row or null if a row with the given\nindex is not cached."
+            "description": " The cached row or null if a row with the given\n     index is not cached."
           }
         ]
       },
@@ -850,7 +850,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a line to the row cache."
+            "body": "<p>Add a line to the row cache.</p>"
           }
         ],
         "@param": [
@@ -902,15 +902,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the content of the pane."
+            "body": "<p>Updates the content of the pane.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "completeUpdate {Boolean ? false} if true a complete update is performed.\nOn a complete update all cell widgets are recreated.",
+            "body": "completeUpdate {Boolean ? false} if true a complete update is performed.\n      On a complete update all cell widgets are recreated.",
             "paramName": "completeUpdate",
-            "description": " if true a complete update is performed.\nOn a complete update all cell widgets are recreated.",
+            "description": " if true a complete update is performed.\n      On a complete update all cell widgets are recreated.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -935,9 +935,9 @@
           },
           {
             "name": "@param",
-            "body": "onlySelectionOrFocusChanged {Boolean ? false} if true, cell values won't\nbe updated. Only the row background will.",
+            "body": "onlySelectionOrFocusChanged {Boolean ? false} if true, cell values won't\n          be updated. Only the row background will.",
             "paramName": "onlySelectionOrFocusChanged",
-            "description": " if true, cell values won't\nbe updated. Only the row background will.",
+            "description": " if true, cell values won't\n          be updated. Only the row background will.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -962,15 +962,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "If only focus or selection changes it is sufficient to only update the\nrow styles. This method updates the row styles of all visible rows or\nof just one row."
+            "body": "<p>If only focus or selection changes it is sufficient to only update the\n row styles. This method updates the row styles of all visible rows or\n of just one row.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "onlyRow {Integer|null ? null} If this parameter is set only the row\nwith this index is updated.",
+            "body": "onlyRow {Integer|null ? null} If this parameter is set only the row\n     with this index is updated.",
             "paramName": "onlyRow",
-            "description": " If this parameter is set only the row\nwith this index is updated.",
+            "description": " If this parameter is set only the row\n     with this index is updated.",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -998,7 +998,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the HTML table fragment for the given row range."
+            "body": "<p>Get the HTML table fragment for the given row range.</p>"
           }
         ],
         "@param": [
@@ -1044,15 +1044,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the pane's contents by the given offset."
+            "body": "<p>Scrolls the pane's contents by the given offset.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowOffset {Integer} Number of lines to scroll. Scrolling up is\nrepresented by a negative offset.",
+            "body": "rowOffset {Integer} Number of lines to scroll. Scrolling up is\n     represented by a negative offset.",
             "paramName": "rowOffset",
-            "description": " Number of lines to scroll. Scrolling up is\nrepresented by a negative offset.",
+            "description": " Number of lines to scroll. Scrolling up is\n     represented by a negative offset.",
             "type": "Integer"
           }
         ]
@@ -1075,7 +1075,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the content of the pane (implemented using array joins)."
+            "body": "<p>Updates the content of the pane (implemented using array joins).</p>"
           }
         ]
       },
@@ -4769,7 +4769,7 @@
     "location": {
       "start": {
         "line": 734,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 737,
@@ -4780,7 +4780,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

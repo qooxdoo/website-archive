@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Manager for decoration themes\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Manager for decoration themes\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -52,7 +52,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The prefix for all created CSS classes"
+            "body": "<p>The prefix for all created CSS classes</p>"
           }
         ]
       },
@@ -64,13 +64,14 @@
     "location": {
       "start": {
         "line": 42,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 47,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "theme": {
@@ -88,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Selected decoration theme"
+            "body": "<p>Selected decoration theme</p>"
           }
         ]
       },
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the name which will be / is used as css class name."
+            "body": "<p>Returns the name which will be / is used as css class name.</p>"
           }
         ],
         "@param": [
@@ -217,7 +218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a css class to the global stylesheet for the given decorator.\nThis includes resolving the decorator if it's a string."
+            "body": "<p>Adds a css class to the global stylesheet for the given decorator.\n This includes resolving the decorator if it's a string.</p>"
           }
         ],
         "@param": [
@@ -259,7 +260,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all previously by {@link #addCssClass} created CSS rule from\nthe global stylesheet."
+            "body": "<p>Removes all previously by {@link #addCssClass} created CSS rule from\n the global stylesheet.</p>"
           }
         ]
       },
@@ -281,7 +282,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the dynamically interpreted result for the incoming value"
+            "body": "<p>Returns the dynamically interpreted result for the incoming value</p>"
           }
         ],
         "@param": [
@@ -320,7 +321,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given value is valid for being used in a property\nwith the 'check' configured to 'Decorator'."
+            "body": "<p>Whether the given value is valid for being used in a property\n with the 'check' configured to 'Decorator'.</p>"
           }
         ],
         "@param": [
@@ -359,7 +360,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a value is interpreted dynamically"
+            "body": "<p>Whether a value is interpreted dynamically</p>"
           }
         ],
         "@param": [
@@ -398,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given decorator is cached"
+            "body": "<p>Whether the given decorator is cached</p>"
           }
         ],
         "@param": [
@@ -446,7 +447,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -471,7 +472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears internal caches and removes all previously created CSS classes."
+            "body": "<p>Clears internal caches and removes all previously created CSS classes.</p>"
           }
         ]
       },
@@ -493,7 +494,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Refreshes all decorator by clearing internal caches and re applying\naliases."
+            "body": "<p>Refreshes all decorator by clearing internal caches and re applying\n aliases.</p>"
           }
         ]
       },
@@ -691,7 +692,7 @@
     "location": {
       "start": {
         "line": 369,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 371,
@@ -702,7 +703,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

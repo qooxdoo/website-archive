@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Provides move behavior to any widget.\n\nThe widget using the mixin must register a widget as move handle so that\nthe pointer events needed for moving it are attached to this widget).\n<pre class='javascript'>this._activateMoveHandle(widget);</pre>"
+          "body": "<p>Provides move behavior to any widget.\n The widget using the mixin must register a widget as move handle so that\n the pointer events needed for moving it are attached to this widget).\n </p>\n<pre class='javascript'>this._activateMoveHandle(widget);</pre>"
         }
       ]
     }
@@ -203,11 +203,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCORE FEATURES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CORE FEATURES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Configures the given widget as a move handle"
+            "body": "<p>Configures the given widget as a move handle</p>"
           }
         ],
         "@param": [
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget, which draws the resize/move frame."
+            "body": "<p>Get the widget, which draws the resize/move frame.</p>"
           }
         ],
         "@return": [
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates, shows and syncs the frame with the widget."
+            "body": "<p>Creates, shows and syncs the frame with the widget.</p>"
           }
         ]
       },
@@ -290,11 +290,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMOVE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MOVE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Computes the new drag coordinates"
+            "body": "<p>Computes the new drag coordinates</p>"
           }
         ],
         "@param": [
@@ -333,11 +333,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nMOVE EVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  MOVE EVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Roll handler which prevents the scrolling via tap & move on parent widgets\nduring the move of the widget."
+            "body": "<p>Roll handler which prevents the scrolling via tap &amp; move on parent widgets\n during the move of the widget.</p>"
           }
         ],
         "@param": [
@@ -368,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enables the capturing of the caption bar and prepares the drag session and the\nappearance (translucent, frame or opaque) for the moving of the window."
+            "body": "<p>Enables the capturing of the caption bar and prepares the drag session and the\n appearance (translucent, frame or opaque) for the moving of the window.</p>"
           }
         ],
         "@param": [
@@ -399,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Does the moving of the window by rendering the position\nof the window (or frame) at runtime using direct dom methods."
+            "body": "<p>Does the moving of the window by rendering the position\n of the window (or frame) at runtime using direct dom methods.</p>"
           }
         ],
         "@param": [
@@ -430,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Disables the capturing of the caption bar and moves the window\nto the last position of the drag session. Also restores the appearance\nof the window."
+            "body": "<p>Disables the capturing of the caption bar and moves the window\n to the last position of the drag session. Also restores the appearance\n of the window.</p>"
           }
         ],
         "@param": [
@@ -461,7 +461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for <code>losecapture</code> event."
+            "body": "<p>Event listener for <code>losecapture</code> event.</p>"
           }
         ],
         "@param": [
@@ -662,7 +662,7 @@
     "location": {
       "start": {
         "line": 366,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 369,
@@ -673,7 +673,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

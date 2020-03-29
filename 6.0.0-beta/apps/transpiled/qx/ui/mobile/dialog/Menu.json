@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This widget displays a menu. A dialog menu extends a popup and contains a\nlist, which provides the user the possibility to select one value.\nThe selected value is identified through selected index.\n\n\n*Example*\n<pre class='javascript'>\n\nvar model = new qx.data.Array([\"item1\",\"item2\",\"item3\"]);\n\nvar menu = new qx.ui.mobile.dialog.Menu(model);\nmenu.show();\nmenu.addListener(\"changeSelection\", function(evt){\nvar selectedIndex = evt.getData().index;\nvar selectedItem = evt.getData().item;\n}, this);\n</pre>\n\nThis example creates a menu with several choosable items."
+          "body": "<p>This widget displays a menu. A dialog menu extends a popup and contains a\n list, which provides the user the possibility to select one value.\n The selected value is identified through selected index.\n<em>Example</em>\n </p>\n<pre class='javascript'>\n var model = new qx.data.Array([\"item1\",\"item2\",\"item3\"]);\n var menu = new qx.ui.mobile.dialog.Menu(model);\n menu.show();\n menu.addListener(\"changeSelection\", function(evt){\n    var selectedIndex = evt.getData().index;\n    var selectedItem = evt.getData().item;\n }, this);\n </pre>\n<p>This example creates a menu with several choosable items.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 49,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 73,
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the selection is changed."
+            "body": "<p>Fired when the selection is changed.</p>"
           }
         ]
       },
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Class which is assigned to selected items.\nUseful for re-styling your menu via LESS."
+            "body": "<p>Class which is assigned to selected items.\n  Useful for re-styling your menu via LESS.</p>"
           }
         ]
       },
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Class which is assigned to unselected items.\nUseful for re-styling your menu via LESS."
+            "body": "<p>Class which is assigned to unselected items.\n Useful for re-styling your menu via LESS.</p>"
           }
         ]
       },
@@ -187,7 +187,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines if the menu has a null value in the list, which can be chosen\nby the user. The label"
+            "body": "<p>Defines if the menu has a null value in the list, which can be chosen\n by the user. The label</p>"
           }
         ]
       },
@@ -213,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The label of the null value entry of the list. Only relevant\nwhen nullable property is set to <code>true</code>."
+            "body": "<p>The label of the null value entry of the list. Only relevant\n when nullable property is set to <code>true</code>.</p>"
           }
         ]
       },
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The selected index of this menu."
+            "body": "<p>The selected index of this menu.</p>"
           }
         ]
       },
@@ -265,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This value defines how much list items are visible inside the menu."
+            "body": "<p>This value defines how much list items are visible inside the menu.</p>"
           }
         ]
       },
@@ -349,7 +349,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -385,7 +385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the clearButton. Override this to customize the widget."
+            "body": "<p>Creates the clearButton. Override this to customize the widget.</p>"
           }
         ],
         "@return": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the scroll container for the selectionList. Override this to customize the widget."
+            "body": "<p>Creates the scroll container for the selectionList. Override this to customize the widget.</p>"
           }
         ],
         "@param": [
@@ -454,7 +454,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the scroll container which contains a @see {qx.ui.mobile.list.List} with the choosable items."
+            "body": "<p>Getter for the scroll container which contains a @see {qx.ui.mobile.list.List} with the choosable items.</p>"
           }
         ],
         "@return": [
@@ -484,7 +484,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -513,7 +513,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the selection list. Override this to customize the widget."
+            "body": "<p>Creates the selection list. Override this to customize the widget.</p>"
           }
         ],
         "@return": [
@@ -543,7 +543,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the selectionList of the menu."
+            "body": "<p>Getter for the selectionList of the menu.</p>"
           }
         ],
         "@return": [
@@ -573,7 +573,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for tap event on selection list."
+            "body": "<p>Handler for tap event on selection list.</p>"
           }
         ]
       },
@@ -595,7 +595,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the choosable items of the menu."
+            "body": "<p>Sets the choosable items of the menu.</p>"
           }
         ],
         "@param": [
@@ -626,7 +626,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires an event which contains index and data."
+            "body": "<p>Fires an event which contains index and data.</p>"
           }
         ],
         "@param": [
@@ -657,7 +657,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for tap on clear button."
+            "body": "<p>Event handler for tap on clear button.</p>"
           }
         ]
       },
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -704,7 +704,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -729,7 +729,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -754,7 +754,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Triggers (re-)rendering of menu items."
+            "body": "<p>Triggers (re-)rendering of menu items.</p>"
           }
         ]
       },
@@ -776,7 +776,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the scroll wrapper of the selectionList to the item with given index."
+            "body": "<p>Scrolls the scroll wrapper of the selectionList to the item with given index.</p>"
           }
         ],
         "@param": [
@@ -2578,13 +2578,14 @@
     "location": {
       "start": {
         "line": 380,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 384,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

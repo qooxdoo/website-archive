@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The background class contains methods to compute and set the background image\nof a DOM element.\n\nIt fixes a background position issue in Firefox 2."
+          "body": "<p>The background class contains methods to compute and set the background image\n of a DOM element.\n It fixes a background position issue in Firefox 2.</p>"
         }
       ]
     }
@@ -103,15 +103,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Computes the background position CSS value"
+            "body": "<p>Computes the background position CSS value</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "left {Integer|String} either an integer pixel value or a CSS\nstring value",
+            "body": "left {Integer|String} either an integer pixel value or a CSS\n    string value",
             "paramName": "left",
-            "description": " either an integer pixel value or a CSS\nstring value",
+            "description": " either an integer pixel value or a CSS\n    string value",
             "type": [
               "Integer",
               "String"
@@ -119,9 +119,9 @@
           },
           {
             "name": "@param",
-            "body": "top {Integer|String} either an integer pixel value or a CSS\nstring value",
+            "body": "top {Integer|String} either an integer pixel value or a CSS\n    string value",
             "paramName": "top",
-            "description": " either an integer pixel value or a CSS\nstring value",
+            "description": " either an integer pixel value or a CSS\n    string value",
             "type": [
               "Integer",
               "String"
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compiles the background into a CSS compatible string."
+            "body": "<p>Compiles the background into a CSS compatible string.</p>"
           }
         ],
         "@param": [
@@ -170,18 +170,18 @@
           },
           {
             "name": "@param",
-            "body": "repeat {String?null} The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "body": "repeat {String?null} The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "paramName": "repeat",
-            "description": " The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "description": " The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "left {Integer|String?null} The horizontal offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"center\", \"left\" and \"right\"",
+            "body": "left {Integer|String?null} The horizontal offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"center\", \"left\" and \"right\"",
             "paramName": "left",
-            "description": " The horizontal offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"center\", \"left\" and \"right\"",
+            "description": " The horizontal offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"center\", \"left\" and \"right\"",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -191,9 +191,9 @@
           },
           {
             "name": "@param",
-            "body": "top {Integer|String?null} The vertical offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"top\", \"bottom\" and \"center\"",
+            "body": "top {Integer|String?null} The vertical offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"top\", \"bottom\" and \"center\"",
             "paramName": "top",
-            "description": " The vertical offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"top\", \"bottom\" and \"center\"",
+            "description": " The vertical offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"top\", \"bottom\" and \"center\"",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get standard css background styles"
+            "body": "<p>Get standard css background styles</p>"
           }
         ],
         "@param": [
@@ -242,18 +242,18 @@
           },
           {
             "name": "@param",
-            "body": "repeat {String?null} The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "body": "repeat {String?null} The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "paramName": "repeat",
-            "description": " The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "description": " The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "left {Integer|String?null} The horizontal offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"center\", \"left\" and \"right\"",
+            "body": "left {Integer|String?null} The horizontal offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"center\", \"left\" and \"right\"",
             "paramName": "left",
-            "description": " The horizontal offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"center\", \"left\" and \"right\"",
+            "description": " The horizontal offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"center\", \"left\" and \"right\"",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -263,9 +263,9 @@
           },
           {
             "name": "@param",
-            "body": "top {Integer|String?null} The vertical offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"top\", \"bottom\" and \"center\"",
+            "body": "top {Integer|String?null} The vertical offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"top\", \"bottom\" and \"center\"",
             "paramName": "top",
-            "description": " The vertical offset of the image\ninside of the image element. If the value is an integer it is\ninterpreted as pixel value otherwise the value is taken as CSS value.\nCSS the values are \"top\", \"bottom\" and \"center\"",
+            "description": " The vertical offset of the image\n      inside of the image element. If the value is an integer it is\n      interpreted as pixel value otherwise the value is taken as CSS value.\n      CSS the values are \"top\", \"bottom\" and \"center\"",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -301,7 +301,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the background on the given DOM element"
+            "body": "<p>Set the background on the given DOM element</p>"
           }
         ],
         "@param": [
@@ -323,27 +323,27 @@
           },
           {
             "name": "@param",
-            "body": "repeat {String?null} The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "body": "repeat {String?null} The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "paramName": "repeat",
-            "description": " The background repeat property. valid values\nare <code>repeat</code>, <code>repeat-x</code>,\n<code>repeat-y</code>, <code>no-repeat</code>",
+            "description": " The background repeat property. valid values\n     are <code>repeat</code>, <code>repeat-x</code>,\n     <code>repeat-y</code>, <code>no-repeat</code>",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "left {Integer?null} The horizontal offset of the image inside of\nthe image element.",
+            "body": "left {Integer?null} The horizontal offset of the image inside of\n     the image element.",
             "paramName": "left",
-            "description": " The horizontal offset of the image inside of\nthe image element.",
+            "description": " The horizontal offset of the image inside of\n     the image element.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "top {Integer?null} The vertical offset of the image inside of\nthe image element.",
+            "body": "top {Integer?null} The vertical offset of the image inside of\n     the image element.",
             "paramName": "top",
-            "description": " The vertical offset of the image inside of\nthe image element.",
+            "description": " The vertical offset of the image inside of\n     the image element.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"

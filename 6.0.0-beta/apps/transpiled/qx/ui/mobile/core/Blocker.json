@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class blocks events and can be included into all widgets."
+          "body": "<p>This class blocks events and can be included into all widgets.</p>"
         }
       ]
     }
@@ -54,13 +54,14 @@
     "location": {
       "start": {
         "line": 36,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 45,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "defaultCssClass": {
@@ -78,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -139,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the blocker. When the show method is called a counter is incremented.\nThe {@link #hide} method needs to be called as many times as the {@link #show}\nmethod. This behavior is useful, when you want to show a loading indicator."
+            "body": "<p>Shows the blocker. When the show method is called a counter is incremented.\n The {@link #hide} method needs to be called as many times as the {@link #show}\n method. This behavior is useful, when you want to show a loading indicator.</p>"
           }
         ],
         "@param": [
@@ -174,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the blocker. The blocker is only hidden when the hide method\nis called as many times as the {@link #show} method."
+            "body": "<p>Hides the blocker. The blocker is only hidden when the hide method\n is called as many times as the {@link #show} method.</p>"
           }
         ],
         "@param": [
@@ -209,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Force the blocker to hide, even when the show counter is larger than\nzero."
+            "body": "<p>Force the blocker to hide, even when the show counter is larger than\n zero.</p>"
           }
         ]
       },
@@ -231,7 +232,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the blocker is shown or not."
+            "body": "<p>Whether the blocker is shown or not.</p>"
           }
         ],
         "@return": [
@@ -261,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called whenever the size of the blocker should be updated."
+            "body": "<p>Event handler. Called whenever the size of the blocker should be updated.</p>"
           }
         ]
       },
@@ -283,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the scroll event occurs."
+            "body": "<p>Event handler. Called when the scroll event occurs.</p>"
           }
         ],
         "@param": [
@@ -314,7 +315,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers all needed event listener."
+            "body": "<p>Registers all needed event listener.</p>"
           }
         ]
       },
@@ -336,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unregisters all needed event listener."
+            "body": "<p>Unregisters all needed event listener.</p>"
           }
         ]
       },
@@ -355,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -397,7 +398,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -453,7 +454,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -502,7 +503,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -565,7 +566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -1708,13 +1709,14 @@
     "location": {
       "start": {
         "line": 175,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 179,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

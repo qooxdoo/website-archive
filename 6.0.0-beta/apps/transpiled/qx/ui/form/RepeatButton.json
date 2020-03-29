@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The RepeatButton is a special button, which fires repeatedly {@link #execute}\nevents, while a button is pressed on the button. The initial delay\nand the interval time can be set using the properties {@link #firstInterval}\nand {@link #interval}. The {@link #execute} events will be fired in a shorter\namount of time if a button is hold, until the min {@link #minTimer}\nis reached. The {@link #timerDecrease} property sets the amount of milliseconds\nwhich will decreased after every firing.\n\n<pre class='javascript'>\nvar button = new qx.ui.form.RepeatButton(\"Hello World\");\n\nbutton.addListener(\"execute\", function(e) {\nalert(\"Button is executed\");\n}, this);\n\nthis.getRoot.add(button);\n</pre>\n\nThis example creates a button with the label \"Hello World\" and attaches an\nevent listener to the {@link #execute} event.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/repeatbutton.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The RepeatButton is a special button, which fires repeatedly {@link #execute}\n events, while a button is pressed on the button. The initial delay\n and the interval time can be set using the properties {@link #firstInterval}\n and {@link #interval}. The {@link #execute} events will be fired in a shorter\n amount of time if a button is hold, until the min {@link #minTimer}\n is reached. The {@link #timerDecrease} property sets the amount of milliseconds\n which will decreased after every firing.\n </p>\n<pre class='javascript'>\n   var button = new qx.ui.form.RepeatButton(\"Hello World\");\n   button.addListener(\"execute\", function(e) {\n     alert(\"Button is executed\");\n   }, this);\n   this.getRoot.add(button);\n </pre>\n<p>This example creates a button with the label \"Hello World\" and attaches an\n event listener to the {@link #execute} event.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/repeatbutton.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 58,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 65,
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event gets dispatched with every interval. The timer gets executed\nas long as the user holds down a button."
+            "body": "<p>This event gets dispatched with every interval. The timer gets executed\n as long as the user holds down a button.</p>"
           }
         ]
       },
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event gets dispatched when the button is pressed."
+            "body": "<p>This event gets dispatched when the button is pressed.</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This event gets dispatched when the button is released."
+            "body": "<p>This event gets dispatched when the button is released.</p>"
           }
         ]
       },
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval used after the first run of the timer. Usually a smaller value\nthan the \"firstInterval\" property value to get a faster reaction."
+            "body": "<p>Interval used after the first run of the timer. Usually a smaller value\n than the \"firstInterval\" property value to get a faster reaction.</p>"
           }
         ]
       },
@@ -178,7 +178,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval used for the first run of the timer. Usually a greater value\nthan the \"interval\" property value to a little delayed reaction at the first\ntime."
+            "body": "<p>Interval used for the first run of the timer. Usually a greater value\n than the \"interval\" property value to a little delayed reaction at the first\n time.</p>"
           }
         ]
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This configures the minimum value for the timer interval."
+            "body": "<p>This configures the minimum value for the timer interval.</p>"
           }
         ]
       },
@@ -228,7 +228,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decrease of the timer on each interval (for the next interval) until minTimer reached."
+            "body": "<p>Decrease of the timer on each interval (for the next interval) until minTimer reached.</p>"
           }
         ]
       },
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calling this function is like a tap from the user on the\nbutton with all consequences.\n<span style='color: red'>Be sure to call the {@link #release} function.</span>"
+            "body": "<p>Calling this function is like a tap from the user on the\n button with all consequences.\n <span style='color: red'>Be sure to call the {@link #release} function.</span></p>"
           }
         ]
       },
@@ -309,7 +309,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calling this function is like a release from the user on the\nbutton with all consequences.\nUsually the {@link #release} function will be called before the call of\nthis function."
+            "body": "<p>Calling this function is like a release from the user on the\n button with all consequences.\n Usually the {@link #release} function will be called before the call of\n this function.</p>"
           }
         ],
         "@param": [
@@ -346,11 +346,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PROPERTY APPLY ROUTINES\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -376,11 +376,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Listener method for \"pointerover\" event\n<ul>\n<li>Adds state \"hovered\"</li>\n<li>Removes \"abandoned\" and adds \"pressed\" state (if \"abandoned\" state is set)</li>\n</ul>"
+            "body": "<p>Listener method for \"pointerover\" event\n </p>\n<ul>\n <li>Adds state \"hovered\"</li>\n <li>Removes \"abandoned\" and adds \"pressed\" state (if \"abandoned\" state is set)</li>\n </ul>"
           }
         ],
         "@param": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener method for \"pointerout\" event\n<ul>\n<li>Removes \"hovered\" state</li>\n<li>Adds \"abandoned\" and removes \"pressed\" state (if \"pressed\" state is set)</li>\n</ul>"
+            "body": "<p>Listener method for \"pointerout\" event\n </p>\n<ul>\n <li>Removes \"hovered\" state</li>\n <li>Adds \"abandoned\" and removes \"pressed\" state (if \"pressed\" state is set)</li>\n </ul>"
           }
         ],
         "@param": [
@@ -450,7 +450,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback method for the \"pointerdown\" method.\n\nSets the interval of the timer (value of firstInterval property) and\nstarts the timer. Additionally removes the state \"abandoned\" and adds the\nstate \"pressed\"."
+            "body": "<p>Callback method for the \"pointerdown\" method.\n Sets the interval of the timer (value of firstInterval property) and\n starts the timer. Additionally removes the state \"abandoned\" and adds the\n state \"pressed\".</p>"
           }
         ],
         "@param": [
@@ -485,7 +485,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback method for the \"pointerup\" event.\n\nHandles the case that the user is releasing a button\nbefore the timer interval method got executed. This way the\n\"execute\" method get executed at least one time."
+            "body": "<p>Callback method for the \"pointerup\" event.\n Handles the case that the user is releasing a button\n before the timer interval method got executed. This way the\n \"execute\" method get executed at least one time.</p>"
           }
         ],
         "@param": [
@@ -520,7 +520,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Nothing to do, 'execute' is already fired by _onPointerUp."
+            "body": "<p>Nothing to do, 'execute' is already fired by _onPointerUp.</p>"
           }
         ],
         "@param": [
@@ -555,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener method for \"keyup\" event.\n\nRemoves \"abandoned\" and \"pressed\" state (if \"pressed\" state is set)\nfor the keys \"Enter\" or \"Space\" and stops the internal timer\n(same like pointer up)."
+            "body": "<p>Listener method for \"keyup\" event.\n Removes \"abandoned\" and \"pressed\" state (if \"pressed\" state is set)\n for the keys \"Enter\" or \"Space\" and stops the internal timer\n (same like pointer up).</p>"
           }
         ],
         "@param": [
@@ -590,7 +590,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener method for \"keydown\" event.\n\nRemoves \"abandoned\" and adds \"pressed\" state\nfor the keys \"Enter\" or \"Space\". It also starts\nthe internal timer (same like pointerdown)."
+            "body": "<p>Listener method for \"keydown\" event.\n Removes \"abandoned\" and adds \"pressed\" state\n for the keys \"Enter\" or \"Space\". It also starts\n the internal timer (same like pointerdown).</p>"
           }
         ],
         "@param": [
@@ -625,7 +625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Callback for the interval event.\n\nStops the timer and starts it with a new interval\n(value of the \"interval\" property - value of the \"timerDecrease\" property).\nDispatches the \"execute\" event."
+            "body": "<p>Callback for the interval event.\n Stops the timer and starts it with a new interval\n (value of the \"interval\" property - value of the \"timerDecrease\" property).\n Dispatches the \"execute\" event.</p>"
           }
         ],
         "@param": [
@@ -656,11 +656,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL TIMER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL TIMER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Starts the internal timer which causes firing of execution\nevents in an interval. It also presses the button."
+            "body": "<p>Starts the internal timer which causes firing of execution\n events in an interval. It also presses the button.</p>"
           }
         ]
       },
@@ -682,7 +682,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the internal timer and releases the button."
+            "body": "<p>Stops the internal timer and releases the button.</p>"
           }
         ]
       },
@@ -702,11 +702,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMMAND PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMMAND PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the command of this executable."
+            "body": "<p>Set the command of this executable.</p>"
           }
         ],
         "@param": [
@@ -733,7 +733,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set command of this executable."
+            "body": "<p>Return the current set command of this executable.</p>"
           }
         ],
         "@return": [
@@ -4986,7 +4986,7 @@
     "location": {
       "start": {
         "line": 454,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 456,
@@ -4997,7 +4997,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n   DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n2018 Zenesis Limited, http://www.zenesis.com\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nJohn Spackman (johnspackman)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n     2018 Zenesis Limited, http://www.zenesis.com\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n John Spackman (johnspackman)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class wraps the access to documentation nodes."
+          "body": "<p>This class wraps the access to documentation nodes.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 27,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 34,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "_meta": {
@@ -115,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get description"
+            "body": "<p>Get description</p>"
           }
         ],
         "@return": [
@@ -145,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of errors of this item."
+            "body": "<p>Get a list of errors of this item.</p>"
           }
         ],
         "@return": [
@@ -175,7 +176,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the line number of this item in the source file"
+            "body": "<p>Get the line number of this item in the source file</p>"
           }
         ],
         "@return": [
@@ -205,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is deprecated."
+            "body": "<p>Get whether the node is deprecated.</p>"
           }
         ],
         "@return": [
@@ -235,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the text of the deprecation message."
+            "body": "<p>Get the text of the deprecation message.</p>"
           }
         ],
         "@return": [
@@ -265,7 +266,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is internal."
+            "body": "<p>Get whether the node is internal.</p>"
           }
         ],
         "@return": [
@@ -295,7 +296,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is private."
+            "body": "<p>Get whether the node is private.</p>"
           }
         ],
         "@return": [
@@ -325,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is protected."
+            "body": "<p>Get whether the node is protected.</p>"
           }
         ],
         "@return": [
@@ -355,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is property generated."
+            "body": "<p>Get whether the node is property generated.</p>"
           }
         ],
         "@return": [
@@ -385,7 +386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node is public."
+            "body": "<p>Get whether the node is public.</p>"
           }
         ],
         "@return": [
@@ -415,7 +416,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get whether the node has a warning."
+            "body": "<p>Get whether the node has a warning.</p>"
           }
         ],
         "@return": [
@@ -445,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize all internal fields. This method will be called by the\nconstructor before the child nodes are parsed."
+            "body": "<p>Initialize all internal fields. This method will be called by the\n constructor before the child nodes are parsed.</p>"
           }
         ]
       },

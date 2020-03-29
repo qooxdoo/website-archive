@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Contains property maps for the usage with qx.bom.element.Animation {@link qx.bom.element.Animation}.\nThese animations can be used for page transitions for example."
+          "body": "<p>Contains property maps for the usage with qx.bom.element.Animation {@link qx.bom.element.Animation}.\n These animations can be used for page transitions for example.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides in from right."
+            "body": "<p>Target slides in from right.</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides out from right."
+            "body": "<p>Target slides out from right.</p>"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides in from left."
+            "body": "<p>Target slides in from left.</p>"
           }
         ]
       },
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides out from left."
+            "body": "<p>Target slides out from left.</p>"
           }
         ]
       },
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target fades in."
+            "body": "<p>Target fades in.</p>"
           }
         ]
       },
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target fades out."
+            "body": "<p>Target fades out.</p>"
           }
         ]
       },
@@ -179,7 +179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target pops in from center."
+            "body": "<p>Target pops in from center.</p>"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target pops out from center."
+            "body": "<p>Target pops out from center.</p>"
           }
         ]
       },
@@ -223,7 +223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target shrinks its height."
+            "body": "<p>Target shrinks its height.</p>"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target grows its height."
+            "body": "<p>Target grows its height.</p>"
           }
         ]
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target shrinks its width."
+            "body": "<p>Target shrinks its width.</p>"
           }
         ]
       },
@@ -289,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target grows its width."
+            "body": "<p>Target grows its width.</p>"
           }
         ]
       },
@@ -311,7 +311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target shrinks in both width and height."
+            "body": "<p>Target shrinks in both width and height.</p>"
           }
         ]
       },
@@ -333,7 +333,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target grows in both width and height."
+            "body": "<p>Target grows in both width and height.</p>"
           }
         ]
       },
@@ -355,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides in to top."
+            "body": "<p>Target slides in to top.</p>"
           }
         ]
       },
@@ -377,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides out to top."
+            "body": "<p>Target slides out to top.</p>"
           }
         ]
       },
@@ -399,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides out to bottom."
+            "body": "<p>Target slides out to bottom.</p>"
           }
         ]
       },
@@ -421,7 +421,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target slides down to bottom."
+            "body": "<p>Target slides down to bottom.</p>"
           }
         ]
       },
@@ -443,7 +443,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target flips (turns) left from back side to front side."
+            "body": "<p>Target flips (turns) left from back side to front side.</p>"
           }
         ]
       },
@@ -465,7 +465,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target flips (turns) left from front side to back side."
+            "body": "<p>Target flips (turns) left from front side to back side.</p>"
           }
         ]
       },
@@ -487,7 +487,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target flips (turns) right from back side to front side."
+            "body": "<p>Target flips (turns) right from back side to front side.</p>"
           }
         ]
       },
@@ -509,7 +509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target flips (turns) right from front side to back side."
+            "body": "<p>Target flips (turns) right from front side to back side.</p>"
           }
         ]
       },
@@ -531,7 +531,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves in to left."
+            "body": "<p>Target moves in to left.</p>"
           }
         ]
       },
@@ -553,7 +553,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves out to left."
+            "body": "<p>Target moves out to left.</p>"
           }
         ]
       },
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves in to right."
+            "body": "<p>Target moves in to right.</p>"
           }
         ]
       },
@@ -597,7 +597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves out to right."
+            "body": "<p>Target moves out to right.</p>"
           }
         ]
       },
@@ -619,7 +619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves in with cube animation from right to left."
+            "body": "<p>Target moves in with cube animation from right to left.</p>"
           }
         ]
       },
@@ -641,7 +641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves out with cube animation from right to left."
+            "body": "<p>Target moves out with cube animation from right to left.</p>"
           }
         ]
       },
@@ -663,7 +663,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves in with cube animation from left to right."
+            "body": "<p>Target moves in with cube animation from left to right.</p>"
           }
         ]
       },
@@ -685,7 +685,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Target moves out with cube animation from left to right."
+            "body": "<p>Target moves out with cube animation from left to right.</p>"
           }
         ]
       },

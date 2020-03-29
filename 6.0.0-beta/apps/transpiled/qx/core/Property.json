@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Internal class for handling of dynamic properties. Should only be used\nthrough the methods provided by {@link qx.Class}.\n\nFor a complete documentation of properties take a look at\nhttp://manual.qooxdoo.org/${qxversion}/pages/core.html#properties.\n\n\n*Normal properties*\n\nThe <code>properties</code> key in the class definition map of {@link qx.Class#define}\nis used to generate the properties.\n\nValid keys of a property definition are:\n\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>check</th><td>Array, String, Function</td><td>\nThe check is used to check the type the incoming value of a property. This will only\nbe executed in the source version. The build version will not contain the checks.\nThe check can be:\n<ul>\n<li>a custom check function. The function takes the incoming value as a parameter and must\nreturn a boolean value to indicate whether the values is valid.\n</li>\n<li>inline check code as a string e.g. <code>\"value &gt; 0 && value &lt; 100\"</code></li>\n<li>a class name e.g. <code>qx.ui.form.Button</code></li>\n<li>a name of an interface the value must implement</li>\n<li>an array of all valid values</li>\n<li>one of the predefined checks: Boolean, String, Number, Integer, Float, Double,\nObject, Array, Map, Class, Mixin, Interface, Theme, Error, RegExp, Function,\nDate, Node, Element, Document, Window, Event\n</li>\n<ul>\n</td></tr>\n<tr><th>init</th><td>var</td><td>\nSets the default/initial value of the property. If no property value is set or the property\ngets reset, the getter will return the <code>init</code> value.\n</td></tr>\n<tr><th>apply</th><td>String</td><td>\nOn change of the property value the method of the specified name will be called. The signature of\nthe method is <code>function(newValue, oldValue, propertyName)</code>. It is conventional to name\nthe callback <code>_apply</code> + <i>PropertyName</i>, with the property name camel-cased (e.g.\n\"<i>_applyFooBar</i>\" for a property <i>fooBar</i>).\n</td></tr>\n<tr><th>event</th><td>String</td><td>\nOn change of the property value an event with the given name will be dispatched. The event type is\n{@link qx.event.type.Data}.\n</td></tr>\n<tr><th>themeable</th><td>Boolean</td><td>\nWhether this property can be set using themes.\n</td></tr>\n<tr><th>inheritable</th><td>Boolean</td><td>\nWhether the property value should be inheritable. If the property does not have an user defined or an\ninit value, the property will try to get the value from the parent of the current object.\n</td></tr>\n<tr><th>nullable</th><td>Boolean</td><td>\nWhether <code>null</code> is an allowed value of the property. This is complementary to the check\ndefined using the <code>check</code> key.\n</td></tr>\n<tr><th>refine</th><td>Boolean</td><td>\nWhether the property definition is a refinement of a property in one of the super classes of the class.\nOnly the <code>init</code> value can be changed using refine.\n</td></tr>\n<tr><th>transform</th><td>String</td><td>\nOn setting of the property value the method of the specified name will\nbe called. The signature of the method is <code>function(value, oldValue)</code>.\nThe parameter <code>value</code> is the value passed to the setter, the\nparameter <code>oldValue</code> is the current value, or undefined if no value\nhas been set previously.\nThe function must return the modified or unmodified value.\nTransformation occurs before the check function, so both may be\nspecified if desired.  Alternatively, the transform function may throw\nan error if the value passed to it is invalid.\n</td></tr>\n<tr><th>validate</th><td>Function, String</td><td>\nOn setting of the property value the method of the specified name will\nbe called. The signature of the method is <code>function(value)</code>.\nThe parameter <code>value</code> is the value passed to the setter.\nIf the validation fails, an <code>qx.core.ValidationError</code> should\nbe thrown by the validation function. Otherwise, just do nothing in the\nfunction.<br>\nIf a string is given, the string should hold a reference to a member\nmethod.<br>\n<code>\"<i>methodname</i>\"</code> for example\n<code>\"__validateProperty\"</code><br>\nThere are some default validators in the {@link qx.util.Validate} class.\nSee this documentation for usage examples.\n</td></tr>\n<tr><th>dereference</th><td>Boolean</td><td>\nBy default, the references to the values (current, init, ...) of the\nproperty will be stored as references on the object. When disposing\nthis object, the references will not be deleted. Setting the\ndereference key to true tells the property system to delete all\nconnections made by this property on dispose. This can be necessary for\ndisconnecting DOM objects to allow the garbage collector to work\nproperly.\n</td></tr>\n<tr><th>deferredInit</th><td>Boolean</td><td>\nAllow for a deferred initialization for reference types. Defaults to false.\n</td></tr>\n<tr><th>isEqual</th><td>Function, String</td><td>\nOn setting of the property value the method of the specified name will\nbe called to test if two values are equal. These checks for equality are\nperformed by the Property-System to decide whether further actions (like\ne.g. calling applier methods or firing of events) are needed.\nThe signature of the method is <code>function(valueA, valueB)</code>.\n<br/>\nThe <i>isEqual</i>-value can be:\n<ul>\n<li>a custom check function.\nThe function takes two values as parameter and must return a\nboolean value to indicate whether the values are considered\nequal e.g. <code>function (a, b) { return Object.is(a, b); }</code>.</li>\n<li>inline check code as a string\nwhich will be invoked with two parameters <code>a</code> and\n<code>b</code> and results in a boolean value to indicate whether\nthe values are equal e.g. <code>\"a.length() == b.length()\"</code>.</li>\n<li>reference to a member method as string\n<code>\"<i>methodname</i>\"</code> which will be invoked with two\nparameters and returns a boolean value indicating whether the two\nvalues are considered equal for example <code>\"__areTheSame\"</code>.</li>\n</ul>\nThe default implementation (if this key is undefined) will check the\nequality by using the <i>identity</i> operator (===) as if defined like\n<code>\"a===b\"</code>.\n</td></tr>\n</table>\n\n*Property groups*\n\nProperty groups are defined in a similar way but support a different set of keys:\n\n<table>\n<tr><th>Name</th><th>Type</th><th>Description</th></tr>\n<tr><th>group</th><td>String[]</td><td>\nA list of property names which should be set using the property group.\n</td></tr>\n<tr><th>mode</th><td>String</td><td>\nIf mode is set to <code>\"shorthand\"</code>, the properties can be set using a CSS like shorthand mode.\n</td></tr>\n<tr><th>themeable</th><td>Boolean</td><td>\nWhether this property can be set using themes.\n</td></tr>\n</table>"
+          "body": "<p>Internal class for handling of dynamic properties. Should only be used\n through the methods provided by {@link qx.Class}.\n For a complete documentation of properties take a look at\n http://manual.qooxdoo.org/${qxversion}/pages/core.html#properties.\n<em>Normal properties</em>\n The <code>properties</code> key in the class definition map of {@link qx.Class#define}\n is used to generate the properties.\n Valid keys of a property definition are:\n </p>\n<table>\n   <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n   <tr><th>check</th><td>Array, String, Function</td><td>\n     The check is used to check the type the incoming value of a property. This will only\n     be executed in the source version. The build version will not contain the checks.\n     The check can be:\n     <ul>\n       <li>a custom check function. The function takes the incoming value as a parameter and must\n           return a boolean value to indicate whether the values is valid.\n       </li>\n       <li>inline check code as a string e.g. <code>\"value &gt; 0 && value &lt; 100\"</code></li>\n       <li>a class name e.g. <code>qx.ui.form.Button</code></li>\n       <li>a name of an interface the value must implement</li>\n       <li>an array of all valid values</li>\n       <li>one of the predefined checks: Boolean, String, Number, Integer, Float, Double,\n           Object, Array, Map, Class, Mixin, Interface, Theme, Error, RegExp, Function,\n           Date, Node, Element, Document, Window, Event\n       </li>\n     <ul>\n   </td></tr>\n   <tr><th>init</th><td>var</td><td>\n     Sets the default/initial value of the property. If no property value is set or the property\n     gets reset, the getter will return the <code>init</code> value.\n   </td></tr>\n   <tr><th>apply</th><td>String</td><td>\n     On change of the property value the method of the specified name will be called. The signature of\n     the method is <code>function(newValue, oldValue, propertyName)</code>. It is conventional to name\n     the callback <code>_apply</code> + <i>PropertyName</i>, with the property name camel-cased (e.g.\n     \"<i>_applyFooBar</i>\" for a property <i>fooBar</i>).\n   </td></tr>\n   <tr><th>event</th><td>String</td><td>\n     On change of the property value an event with the given name will be dispatched. The event type is\n     {@link qx.event.type.Data}.\n   </td></tr>\n   <tr><th>themeable</th><td>Boolean</td><td>\n     Whether this property can be set using themes.\n   </td></tr>\n   <tr><th>inheritable</th><td>Boolean</td><td>\n     Whether the property value should be inheritable. If the property does not have an user defined or an\n     init value, the property will try to get the value from the parent of the current object.\n   </td></tr>\n   <tr><th>nullable</th><td>Boolean</td><td>\n     Whether <code>null</code> is an allowed value of the property. This is complementary to the check\n     defined using the <code>check</code> key.\n   </td></tr>\n   <tr><th>refine</th><td>Boolean</td><td>\n     Whether the property definition is a refinement of a property in one of the super classes of the class.\n     Only the <code>init</code> value can be changed using refine.\n   </td></tr>\n   <tr><th>transform</th><td>String</td><td>\n     On setting of the property value the method of the specified name will\n     be called. The signature of the method is <code>function(value, oldValue)</code>.\n     The parameter <code>value</code> is the value passed to the setter, the\n     parameter <code>oldValue</code> is the current value, or undefined if no value\n     has been set previously.\n     The function must return the modified or unmodified value.\n     Transformation occurs before the check function, so both may be\n     specified if desired.  Alternatively, the transform function may throw\n     an error if the value passed to it is invalid.\n   </td></tr>\n   <tr><th>validate</th><td>Function, String</td><td>\n     On setting of the property value the method of the specified name will\n     be called. The signature of the method is <code>function(value)</code>.\n     The parameter <code>value</code> is the value passed to the setter.\n     If the validation fails, an <code>qx.core.ValidationError</code> should\n     be thrown by the validation function. Otherwise, just do nothing in the\n     function.<br>\n     If a string is given, the string should hold a reference to a member\n     method.<br>\n     <code>\"<i>methodname</i>\"</code> for example\n     <code>\"__validateProperty\"</code><br>\n     There are some default validators in the {@link qx.util.Validate} class.\n     See this documentation for usage examples.\n   </td></tr>\n   <tr><th>dereference</th><td>Boolean</td><td>\n     By default, the references to the values (current, init, ...) of the\n     property will be stored as references on the object. When disposing\n     this object, the references will not be deleted. Setting the\n     dereference key to true tells the property system to delete all\n     connections made by this property on dispose. This can be necessary for\n     disconnecting DOM objects to allow the garbage collector to work\n     properly.\n   </td></tr>\n   <tr><th>deferredInit</th><td>Boolean</td><td>\n     Allow for a deferred initialization for reference types. Defaults to false.\n   </td></tr>\n   <tr><th>isEqual</th><td>Function, String</td><td>\n     On setting of the property value the method of the specified name will\n     be called to test if two values are equal. These checks for equality are\n     performed by the Property-System to decide whether further actions (like\n     e.g. calling applier methods or firing of events) are needed.\n     The signature of the method is <code>function(valueA, valueB)</code>.\n     <br/>\n     The <i>isEqual</i>-value can be:\n     <ul>\n       <li>a custom check function.\n           The function takes two values as parameter and must return a\n           boolean value to indicate whether the values are considered\n           equal e.g. <code>function (a, b) { return Object.is(a, b); }</code>.</li>\n       <li>inline check code as a string\n           which will be invoked with two parameters <code>a</code> and\n           <code>b</code> and results in a boolean value to indicate whether\n           the values are equal e.g. <code>\"a.length() == b.length()\"</code>.</li>\n       <li>reference to a member method as string\n           <code>\"<i>methodname</i>\"</code> which will be invoked with two\n           parameters and returns a boolean value indicating whether the two\n           values are considered equal for example <code>\"__areTheSame\"</code>.</li>\n     </ul>\n     The default implementation (if this key is undefined) will check the\n     equality by using the <i>identity</i> operator (===) as if defined like\n     <code>\"a===b\"</code>.\n   </td></tr>\n </table>\n<p><em>Property groups</em>\n Property groups are defined in a similar way but support a different set of keys:\n </p>\n<table>\n   <tr><th>Name</th><th>Type</th><th>Description</th></tr>\n   <tr><th>group</th><td>String[]</td><td>\n     A list of property names which should be set using the property group.\n   </td></tr>\n   <tr><th>mode</th><td>String</td><td>\n     If mode is set to <code>\"shorthand\"</code>, the properties can be set using a CSS like shorthand mode.\n   </td></tr>\n   <tr><th>themeable</th><td>Boolean</td><td>\n     Whether this property can be set using themes.\n   </td></tr>\n </table>"
         }
       ],
       "@internal": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This is a method which does nothing than gathering dependencies for the\nmodule system. Calling this method is useless because it does nothing."
+            "body": "<p>This is a method which does nothing than gathering dependencies for the\n module system. Calling this method is useless because it does nothing.</p>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Built-in checks\nThe keys could be used in the check of the properties"
+            "body": "<p>Built-in checks\n The keys could be used in the check of the properties</p>"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Contains types from {@link #__checks} list which need to be dereferenced"
+            "body": "<p>Contains types from {@link #__checks} list which need to be dereferenced</p>"
           }
         ]
       },
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Inherit value, used to override defaults etc. to force inheritance\neven if property value is not undefined (through multi-values)"
+            "body": "<p>Inherit value, used to override defaults etc. to force inheritance\n even if property value is not undefined (through multi-values)</p>"
           }
         ],
         "@internal": [
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Caching field names for each property created"
+            "body": "<p>Caching field names for each property created</p>"
           }
         ],
         "@internal": [
@@ -181,7 +181,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Caching function names for each property created"
+            "body": "<p>Caching function names for each property created</p>"
           }
         ],
         "@internal": [
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Supported keys for property definitions"
+            "body": "<p>Supported keys for property definitions</p>"
           }
         ],
         "@internal": [
@@ -237,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Supported keys for property group definitions"
+            "body": "<p>Supported keys for property group definitions</p>"
           }
         ],
         "@internal": [
@@ -265,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Contains names of inheritable properties, filled by {@link qx.Class.define}"
+            "body": "<p>Contains names of inheritable properties, filled by {@link qx.Class.define}</p>"
           }
         ]
       },
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generate optimized refresh method and  attach it to the class' prototype"
+            "body": "<p>Generate optimized refresh method and  attach it to the class' prototype</p>"
           }
         ],
         "@param": [
@@ -318,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the names of all inheritable properties of the given class"
+            "body": "<p>Get the names of all inheritable properties of the given class</p>"
           }
         ],
         "@param": [
@@ -357,7 +357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assemble the refresher code and return the generated function"
+            "body": "<p>Assemble the refresher code and return the generated function</p>"
           }
         ],
         "@param": [
@@ -396,7 +396,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach $$refreshInheritables method stub to the given class"
+            "body": "<p>Attach $$refreshInheritables method stub to the given class</p>"
           }
         ],
         "@param": [
@@ -427,7 +427,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach one property to class"
+            "body": "<p>Attach one property to class</p>"
           }
         ],
         "@param": [
@@ -472,7 +472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach group methods"
+            "body": "<p>Attach group methods</p>"
           }
         ],
         "@param": [
@@ -517,7 +517,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach property methods"
+            "body": "<p>Attach property methods</p>"
           }
         ],
         "@param": [
@@ -562,7 +562,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns if the reference for the given property check should be removed\non dispose."
+            "body": "<p>Returns if the reference for the given property check should be removed\n on dispose.</p>"
           }
         ],
         "@param": [
@@ -629,7 +629,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Error method used by the property system to report errors."
+            "body": "<p>Error method used by the property system to report errors.</p>"
           }
         ],
         "@param": [
@@ -688,7 +688,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compiles a string builder object to a function, executes the function and\nreturns the return value."
+            "body": "<p>Compiles a string builder object to a function, executes the function and\n returns the return value.</p>"
           }
         ],
         "@param": [
@@ -762,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Takes a string builder object, converts it into a function, and installs it as\na property accessor"
+            "body": "<p>Takes a string builder object, converts it into a function, and installs it as\n a property accessor</p>"
           }
         ],
         "@param": [
@@ -829,7 +829,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates the optimized getter, installs it into the class prototype, and executes it\nSupported variants: get"
+            "body": "<p>Generates the optimized getter, installs it into the class prototype, and executes it\n Supported variants: get</p>"
           }
         ],
         "@param": [
@@ -889,7 +889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Installs a getter into the class prototype, without executing it\nSupported variants: get"
+            "body": "<p>Installs a getter into the class prototype, without executing it\n Supported variants: get</p>"
           }
         ],
         "@param": [
@@ -934,7 +934,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compiles a getter into a string builder array\nSupported variants: get"
+            "body": "<p>Compiles a getter into a string builder array\n Supported variants: get</p>"
           }
         ],
         "@param": [
@@ -987,7 +987,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generates the optimized setter\nSupported variants: set, reset, init, refresh, style, unstyle"
+            "body": "<p>Generates the optimized setter\n Supported variants: set, reset, init, refresh, style, unstyle</p>"
           }
         ],
         "@param": [
@@ -1054,7 +1054,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Installs a setter into the class prototype, without executing it\nSupported variants: set"
+            "body": "<p>Installs a setter into the class prototype, without executing it\n Supported variants: set</p>"
           }
         ],
         "@param": [
@@ -1107,7 +1107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compiles a setter into a string builder array\nSupported variants: set, setThemed, setRuntime, init"
+            "body": "<p>Compiles a setter into a string builder array\n Supported variants: set, setThemed, setRuntime, init</p>"
           }
         ],
         "@param": [
@@ -1167,7 +1167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the object to store the value for the given variant"
+            "body": "<p>Get the object to store the value for the given variant</p>"
           }
         ],
         "@param": [
@@ -1213,7 +1213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code for the equality check evaluation"
+            "body": "<p>Emit code for the equality check evaluation</p>"
           }
         ],
         "@param": [
@@ -1265,7 +1265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to check the arguments preconditions"
+            "body": "<p>Emit code to check the arguments preconditions</p>"
           }
         ],
         "@param": [
@@ -1324,7 +1324,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to apply the \"validate\" and \"transform\" config keys."
+            "body": "<p>Emit code to apply the \"validate\" and \"transform\" config keys.</p>"
           }
         ],
         "@param": [
@@ -1376,7 +1376,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code, which returns if the incoming value equals the current value."
+            "body": "<p>Emit code, which returns if the incoming value equals the current value.</p>"
           }
         ],
         "@param": [
@@ -1428,7 +1428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code, which performs validation of the incoming value according to\nthe \"nullable\", \"check\" and \"inheritable\" config keys."
+            "body": "<p>Emit code, which performs validation of the incoming value according to\n the \"nullable\", \"check\" and \"inheritable\" config keys.</p>"
           }
         ],
         "@signature": [
@@ -1493,7 +1493,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to store the incoming value"
+            "body": "<p>Emit code to store the incoming value</p>"
           }
         ],
         "@param": [
@@ -1545,7 +1545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to store the incoming value and compute the \"old\" and \"computed\"\nvalues."
+            "body": "<p>Emit code to store the incoming value and compute the \"old\" and \"computed\"\n values.</p>"
           }
         ],
         "@param": [
@@ -1604,7 +1604,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to compute the \"old\" value."
+            "body": "<p>Emit code to compute the \"old\" value.</p>"
           }
         ],
         "@param": [
@@ -1649,7 +1649,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to store the value of an inheritable property"
+            "body": "<p>Emit code to store the value of an inheritable property</p>"
           }
         ],
         "@param": [
@@ -1701,7 +1701,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to normalize the old and incoming values from undefined to\n<code>null</code>."
+            "body": "<p>Emit code to normalize the old and incoming values from undefined to\n <code>null</code>.</p>"
           }
         ],
         "@param": [
@@ -1753,7 +1753,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emit code to call the apply method and fire the change event"
+            "body": "<p>Emit code to call the apply method and fire the change event</p>"
           }
         ],
         "@param": [

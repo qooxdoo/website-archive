@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Common base class for all native events (DOM events, IO events, ...)."
+          "body": "<p>Common base class for all native events (DOM events, IO events, …).</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the fields of the event. The event must be initialized before\nit can be dispatched."
+            "body": "<p>Initialize the fields of the event. The event must be initialized before\n it can be dispatched.</p>"
           }
         ],
         "@param": [
@@ -77,18 +77,18 @@
           },
           {
             "name": "@param",
-            "body": "canBubble {Boolean?false} Whether or not the event is a bubbling event.\nIf the event is bubbling, the bubbling can be stopped using\n{@link qx.event.type.Event#stopPropagation}",
+            "body": "canBubble {Boolean?false} Whether or not the event is a bubbling event.\n     If the event is bubbling, the bubbling can be stopped using\n     {@link qx.event.type.Event#stopPropagation}",
             "paramName": "canBubble",
-            "description": " Whether or not the event is a bubbling event.\nIf the event is bubbling, the bubbling can be stopped using\n{@link qx.event.type.Event#stopPropagation}",
+            "description": " Whether or not the event is a bubbling event.\n     If the event is bubbling, the bubbling can be stopped using\n     {@link qx.event.type.Event#stopPropagation}",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "cancelable {Boolean?false} Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link #preventDefault}",
+            "body": "cancelable {Boolean?false} Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link #preventDefault}",
             "paramName": "cancelable",
-            "description": " Whether or not an event can have its default\naction prevented. The default action can either be the browser's\ndefault action of a native event (e.g. open the context menu on a\nright click) or the default action of a qooxdoo class (e.g. close\nthe window widget). The default action can be prevented by calling\n{@link #preventDefault}",
+            "description": " Whether or not an event can have its default\n     action prevented. The default action can either be the browser's\n     default action of a native event (e.g. open the context menu on a\n     right click) or the default action of a qooxdoo class (e.g. close\n     the window widget). The default action can be prevented by calling\n     {@link #preventDefault}",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -125,15 +125,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "body": "embryo {qx.event.type.Event?null} Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "paramName": "embryo",
-            "description": " Optional event class, which will\nbe configured using the data of this event instance. The event must be\nan instance of this event class. If the value is <code>null</code>,\na new pooled instance is created.",
+            "description": " Optional event class, which will\n     be configured using the data of this event instance. The event must be\n     an instance of this event class. If the value is <code>null</code>,\n     a new pooled instance is created.",
             "optional": true,
             "defaultValue": "null",
             "type": "qx.event.type.Event"
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clone the native browser event"
+            "body": "<p>Clone the native browser event</p>"
           }
         ],
         "@param": [
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Prevent browser default behavior, e.g. opening the context menu, ..."
+            "body": "<p>Prevent browser default behavior, e.g. opening the context menu, …</p>"
           }
         ]
       },
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the native browser event object of this event."
+            "body": "<p>Get the native browser event object of this event.</p>"
           }
         ],
         "@return": [
@@ -273,7 +273,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the event's return value. If the return value is set in a\nbeforeunload event, the user will be asked by the browser, whether\nhe really wants to leave the page. The return string will be displayed in\nthe message box."
+            "body": "<p>Sets the event's return value. If the return value is set in a\n beforeunload event, the user will be asked by the browser, whether\n he really wants to leave the page. The return string will be displayed in\n the message box.</p>"
           }
         ],
         "@param": [
@@ -306,7 +306,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieves the event's return value."
+            "body": "<p>Retrieves the event's return value.</p>"
           }
         ],
         "@return": [

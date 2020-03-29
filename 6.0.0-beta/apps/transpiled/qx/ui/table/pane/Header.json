@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Shows the header of a table."
+          "body": "<p>Shows the header of a table.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 38,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 47,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -136,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the TablePaneScroller this header belongs to."
+            "body": "<p>Returns the TablePaneScroller this header belongs to.</p>"
           }
         ],
         "@return": [
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the table this header belongs to."
+            "body": "<p>Returns the table this header belongs to.</p>"
           }
         ],
         "@return": [
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the blocker of the header."
+            "body": "<p>Returns the blocker of the header.</p>"
           }
         ],
         "@return": [
@@ -226,7 +226,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called the column order has changed."
+            "body": "<p>Event handler. Called the column order has changed.</p>"
           }
         ]
       },
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the pane model has changed."
+            "body": "<p>Event handler. Called when the pane model has changed.</p>"
           }
         ]
       },
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the table model meta data has changed."
+            "body": "<p>Event handler. Called when the table model meta data has changed.</p>"
           }
         ]
       },
@@ -292,29 +292,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the column width. This overrides the width from the column model."
+            "body": "<p>Sets the column width. This overrides the width from the column model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer}\nThe column to change the width for.",
+            "body": "col {Integer}\n   The column to change the width for.",
             "paramName": "col",
-            "description": "\nThe column to change the width for.",
+            "description": "\n   The column to change the width for.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe new width.",
+            "body": "width {Integer}\n   The new width.",
             "paramName": "width",
-            "description": "\nThe new width.",
+            "description": "\n   The new width.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "isPointerAction {Boolean}\n<i>true</i> if the column width is being changed as a result of a\npointer drag in the header; false or undefined otherwise.",
+            "body": "isPointerAction {Boolean}\n   <i>true</i> if the column width is being changed as a result of a\n   pointer drag in the header; false or undefined otherwise.",
             "paramName": "isPointerAction",
-            "description": "\n<i>true</i> if the column width is being changed as a result of a\npointer drag in the header; false or undefined otherwise.",
+            "description": "\n   <i>true</i> if the column width is being changed as a result of a\n   pointer drag in the header; false or undefined otherwise.",
             "type": "Boolean"
           }
         ]
@@ -337,15 +337,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the column the pointer is currently over."
+            "body": "<p>Sets the column the pointer is currently over.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer} the model index of the column the pointer is currently over or\nnull if the pointer is over no column.",
+            "body": "col {Integer} the model index of the column the pointer is currently over or\n      null if the pointer is over no column.",
             "paramName": "col",
-            "description": " the model index of the column the pointer is currently over or\nnull if the pointer is over no column.",
+            "description": " the model index of the column the pointer is currently over or\n      null if the pointer is over no column.",
             "type": "Integer"
           }
         ]
@@ -368,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the header widget for the given column"
+            "body": "<p>Get the header widget for the given column</p>"
           }
         ],
         "@param": [
@@ -407,7 +407,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows the feedback shown while a column is moved by the user."
+            "body": "<p>Shows the feedback shown while a column is moved by the user.</p>"
           }
         ],
         "@param": [
@@ -420,9 +420,9 @@
           },
           {
             "name": "@param",
-            "body": "x {Integer} the x position the left side of the feedback should have\n(in pixels, relative to the left side of the header).",
+            "body": "x {Integer} the x position the left side of the feedback should have\n      (in pixels, relative to the left side of the header).",
             "paramName": "x",
-            "description": " the x position the left side of the feedback should have\n(in pixels, relative to the left side of the header).",
+            "description": " the x position the left side of the feedback should have\n      (in pixels, relative to the left side of the header).",
             "type": "Integer"
           }
         ]
@@ -445,7 +445,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Hides the feedback shown while a column is moved by the user."
+            "body": "<p>Hides the feedback shown while a column is moved by the user.</p>"
           }
         ]
       },
@@ -467,15 +467,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the column move feedback is currently shown."
+            "body": "<p>Returns whether the column move feedback is currently shown.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> whether the column move feedback is\ncurrently shown, <code>false</code> otherwise.",
+            "body": "{Boolean} <code>true</code> whether the column move feedback is\n    currently shown, <code>false</code> otherwise.",
             "type": "Boolean",
-            "description": " <code>true</code> whether the column move feedback is\ncurrently shown, <code>false</code> otherwise."
+            "description": " <code>true</code> whether the column move feedback is\n    currently shown, <code>false</code> otherwise."
           }
         ]
       },
@@ -497,15 +497,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the content of the header."
+            "body": "<p>Updates the content of the header.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "completeUpdate {Boolean} if true a complete update is performed. On a\ncomplete update all header widgets are recreated.",
+            "body": "completeUpdate {Boolean} if true a complete update is performed. On a\n      complete update all header widgets are recreated.",
             "paramName": "completeUpdate",
-            "description": " if true a complete update is performed. On a\ncomplete update all header widgets are recreated.",
+            "description": " if true a complete update is performed. On a\n      complete update all header widgets are recreated.",
             "type": "Boolean"
           }
         ]
@@ -528,7 +528,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cleans up all header cells."
+            "body": "<p>Cleans up all header cells.</p>"
           }
         ]
       },
@@ -4024,7 +4024,7 @@
     "location": {
       "start": {
         "line": 365,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 369,
@@ -4035,7 +4035,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

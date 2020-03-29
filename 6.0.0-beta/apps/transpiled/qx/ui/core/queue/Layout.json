@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The layout queue manages all widgets, which need a recalculation of their\nlayout. The {@link #flush} method computes the layout of all queued widgets\nand their dependent widgets."
+          "body": "<p>The layout queue manages all widgets, which need a recalculation of their\n layout. The {@link #flush} method computes the layout of all queued widgets\n and their dependent widgets.</p>"
         }
       ]
     }
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Nesting level cache *"
+            "body": "<p>Nesting level cache *</p>"
           }
         ]
       },
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the widget from the internal queue. Normally only used\nduring interims disposes of one or a few widgets."
+            "body": "<p>Clears the widget from the internal queue. Normally only used\n during interims disposes of one or a few widgets.</p>"
           }
         ],
         "@param": [
@@ -128,7 +128,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark a widget's layout as invalid and add its layout root to\nthe queue.\n\nShould only be used by {@link qx.ui.core.Widget}."
+            "body": "<p>Mark a widget's layout as invalid and add its layout root to\n the queue.\n Should only be used by {@link qx.ui.core.Widget}.</p>"
           }
         ],
         "@param": [
@@ -159,7 +159,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the queue has scheduled changes for a widget.\nNote that the layout parent can have changes scheduled that\naffect the children widgets."
+            "body": "<p>Check whether the queue has scheduled changes for a widget.\n Note that the layout parent can have changes scheduled that\n affect the children widgets.</p>"
           }
         ],
         "@param": [
@@ -198,7 +198,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the layout of all widgets, which layout is marked as invalid.\n\nThis is used exclusively by the {@link qx.ui.core.queue.Manager}."
+            "body": "<p>Update the layout of all widgets, which layout is marked as invalid.\n This is used exclusively by the {@link qx.ui.core.queue.Manager}.</p>"
           }
         ]
       },
@@ -220,7 +220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's nesting level. Top level widgets have a nesting level\nof <code>0</code>."
+            "body": "<p>Get the widget's nesting level. Top level widgets have a nesting level\n of <code>0</code>.</p>"
           }
         ],
         "@param": [
@@ -259,15 +259,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Group widget by their nesting level."
+            "body": "<p>Group widget by their nesting level.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} A sparse array. Each entry of the array contains a widget\nmap with all widgets of the same level as the array index.",
+            "body": "{Map[]} A sparse array. Each entry of the array contains a widget\n     map with all widgets of the same level as the array index.",
             "type": "Map[]",
-            "description": " A sparse array. Each entry of the array contains a widget\nmap with all widgets of the same level as the array index."
+            "description": " A sparse array. Each entry of the array contains a widget\n     map with all widgets of the same level as the array index."
           }
         ]
       },
@@ -289,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute all layout roots of the given widgets. Layout roots are either\nroot widgets or widgets, which preferred size has not changed by the\nlayout changes of its children.\n\nThis function returns the roots ordered by their nesting factors. The\nlayout with the largest nesting level comes first."
+            "body": "<p>Compute all layout roots of the given widgets. Layout roots are either\n root widgets or widgets, which preferred size has not changed by the\n layout changes of its children.\n This function returns the roots ordered by their nesting factors. The\n layout with the largest nesting level comes first.</p>"
           }
         ],
         "@return": [

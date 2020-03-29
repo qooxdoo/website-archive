@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Function \"renderer\" for Progressive.\nThis is a renderer that simply calls the function provided by the data\nelement."
+          "body": "<p>Function \"renderer\" for Progressive.\n This is a renderer that simply calls the function provided by the data\n element.</p>"
         }
       ]
     }
@@ -47,22 +47,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "state {qx.ui.progressive.State}\nData relevant to the current rendering session.",
+            "body": "state {qx.ui.progressive.State}\n   Data relevant to the current rendering session.",
             "paramName": "state",
-            "description": "\nData relevant to the current rendering session.",
+            "description": "\n   Data relevant to the current rendering session.",
             "type": "qx.ui.progressive.State"
           },
           {
             "name": "@param",
-            "body": "element {Object}\nAn object containing at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "body": "element {Object}\n   An object containing at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "paramName": "element",
-            "description": "\nAn object containing at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "description": "\n   An object containing at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "type": "Object"
           }
         ]

@@ -21,15 +21,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "***********************************************************************\n\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "The GUI definition of the API viewer.\n\nThe connections between the GUI components are established in\nthe {@link Controller}."
+          "body": "<p>The GUI definition of the API viewer.\n The connections between the GUI components are established in\n the {@link Controller}.</p>"
         }
       ],
       "@asset": [
@@ -67,7 +67,7 @@
     "location": {
       "start": {
         "line": 54,
-        "column": 4
+        "column": 16
       },
       "end": {
         "line": 85,
@@ -78,7 +78,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -155,7 +155,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the button view widget on the left"
+            "body": "<p>Creates the button view widget on the left</p>"
           }
         ],
         "@param": [
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the tool bar"
+            "body": "<p>Creates the tool bar</p>"
           }
         ],
         "@return": [
@@ -231,7 +231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for the overflow handling. It is responsible for returning a\ncorresponding menu item for the given toolbar item."
+            "body": "<p>Helper for the overflow handling. It is responsible for returning a\n corresponding menu item for the given toolbar item.</p>"
           }
         ],
         "@param": [
@@ -270,7 +270,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create the detail Frame and adds the Class-, Package and Loader-views to it."
+            "body": "<p>Create the detail Frame and adds the Class-, Package and Loader-views to it.</p>"
           }
         ],
         "@return": [
@@ -300,7 +300,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the main frame at the right"
+            "body": "<p>Creates the main frame at the right</p>"
           }
         ],
         "@param": [
@@ -346,7 +346,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the vertical splitter and populates the split panes"
+            "body": "<p>Creates the vertical splitter and populates the split panes</p>"
           }
         ],
         "@param": [
@@ -392,7 +392,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the application header."
+            "body": "<p>Creates the application header.</p>"
           }
         ]
       },
@@ -414,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focusses the search view's text field."
+            "body": "<p>Focusses the search view's text field.</p>"
           }
         ]
       },
@@ -3910,7 +3910,7 @@
     "location": {
       "start": {
         "line": 440,
-        "column": 4
+        "column": 15
       },
       "end": {
         "line": 443,
@@ -3921,7 +3921,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

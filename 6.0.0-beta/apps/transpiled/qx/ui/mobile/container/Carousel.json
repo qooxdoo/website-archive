@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Creates a Carousel widget.\nA carousel is a widget which can switch between several sub pages {@link  qx.ui.mobile.container.Composite}.\nA page switch is triggered by a swipe to left, for next page, or a swipe to right for\nprevious page.\n\nA carousel shows by default a pagination indicator at the bottom of the carousel.\nThis pagination indicator can be hidden by property <code>showPagination</code>.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\n\nvar carousel = new qx.ui.mobile.container.Carousel();\nvar carouselPage1 = new qx.ui.mobile.container.Composite();\nvar carouselPage2 = new qx.ui.mobile.container.Composite();\n\ncarouselPage1.add(new qx.ui.mobile.basic.Label(\"This is a carousel. Please swipe left.\"));\ncarouselPage2.add(new qx.ui.mobile.basic.Label(\"Now swipe right.\"));\n\ncarousel.add(carouselPage1);\ncarousel.add(carouselPage2);\n</pre>"
+          "body": "<p>Creates a Carousel widget.\n A carousel is a widget which can switch between several sub pages {@link  qx.ui.mobile.container.Composite}.\n A page switch is triggered by a swipe to left, for next page, or a swipe to right for\n previous page.\n A carousel shows by default a pagination indicator at the bottom of the carousel.\n This pagination indicator can be hidden by property <code>showPagination</code>.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n  var carousel = new qx.ui.mobile.container.Carousel();\n  var carouselPage1 = new qx.ui.mobile.container.Composite();\n  var carouselPage2 = new qx.ui.mobile.container.Composite();\n  carouselPage1.add(new qx.ui.mobile.basic.Label(\"This is a carousel. Please swipe left.\"));\n  carouselPage2.add(new qx.ui.mobile.basic.Label(\"Now swipe right.\"));\n  carousel.add(carouselPage1);\n  carousel.add(carouselPage2);\n </pre>"
         }
       ]
     }
@@ -37,7 +37,7 @@
     "location": {
       "start": {
         "line": 61,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 106,
@@ -48,7 +48,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -84,7 +84,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Property for setting visibility of pagination indicator"
+            "body": "<p>Property for setting visibility of pagination indicator</p>"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines whether the carousel should scroll back to first or last page\nwhen the start/end of carousel pages is reached"
+            "body": "<p>Defines whether the carousel should scroll back to first or last page\n when the start/end of carousel pages is reached</p>"
           }
         ]
       },
@@ -164,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Defines the height of the carousel. If value is equal to <code>null</code>\nthe height is set to <code>100%</code>."
+            "body": "<p>Defines the height of the carousel. If value is equal to <code>null</code>\n the height is set to <code>100%</code>.</p>"
           }
         ]
       },
@@ -192,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The current visible page index."
+            "body": "<p>The current visible page index.</p>"
           }
         ]
       },
@@ -219,7 +219,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Duration of the carousel page transition."
+            "body": "<p>Duration of the carousel page transition.</p>"
           }
         ]
       },
@@ -466,11 +466,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
-            "body": "Adds a page to the end of the carousel."
+            "body": "<p>Adds a page to the end of the carousel.</p>"
           }
         ],
         "@param": [
@@ -505,7 +505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a carousel page from carousel identified by its index."
+            "body": "<p>Removes a carousel page from carousel identified by its index.</p>"
           }
         ],
         "@param": [
@@ -544,7 +544,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -570,7 +570,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the carousel to next page."
+            "body": "<p>Scrolls the carousel to next page.</p>"
           }
         ]
       },
@@ -592,7 +592,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the carousel to previous page."
+            "body": "<p>Scrolls the carousel to previous page.</p>"
           }
         ]
       },
@@ -614,7 +614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current page count of this carousel."
+            "body": "<p>Returns the current page count of this carousel.</p>"
           }
         ],
         "@return": [
@@ -644,7 +644,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the carousel to the page with the given pageIndex."
+            "body": "<p>Scrolls the carousel to the page with the given pageIndex.</p>"
           }
         ],
         "@param": [
@@ -687,7 +687,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Manages the the scroll loop. First fades out carousel scroller >>\nwaits till fading is done >> scrolls to pageIndex >> waits till scrolling is done\n>> fades scroller in."
+            "body": "<p>Manages the the scroll loop. First fades out carousel scroller &gt;&gt;\n waits till fading is done &gt;&gt; scrolls to pageIndex &gt;&gt; waits till scrolling is done</p>\n<blockquote>\n  <blockquote>\n    <p>fades scroller in.</p>\n  </blockquote>\n</blockquote>"
           }
         ]
       },
@@ -709,7 +709,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>transitionEnd</code> event on carouselScroller."
+            "body": "<p>Event handler for <code>transitionEnd</code> event on carouselScroller.</p>"
           }
         ]
       },
@@ -731,7 +731,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for a paginationLabel."
+            "body": "<p>Factory method for a paginationLabel.</p>"
           }
         ],
         "@return": [
@@ -761,7 +761,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Changes the opacity of the carouselScroller element."
+            "body": "<p>Changes the opacity of the carouselScroller element.</p>"
           }
         ],
         "@param": [
@@ -792,7 +792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Called when showPagination property is changed.\nManages <code>show()</code> and <code>hide()</code> of pagination container."
+            "body": "<p>Called when showPagination property is changed.\n Manages <code>show()</code> and <code>hide()</code> of pagination container.</p>"
           }
         ]
       },
@@ -817,7 +817,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles a tap on paginationLabel."
+            "body": "<p>Handles a tap on paginationLabel.</p>"
           }
         ]
       },
@@ -839,7 +839,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the layout of the carousel the carousel scroller and its pages."
+            "body": "<p>Updates the layout of the carousel the carousel scroller and its pages.</p>"
           }
         ]
       },
@@ -864,7 +864,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Synchronizes the positions of the scroller to the current shown page index."
+            "body": "<p>Synchronizes the positions of the scroller to the current shown page index.</p>"
           }
         ]
       },
@@ -886,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles window resize, device orientatonChange or page appear events."
+            "body": "<p>Handles window resize, device orientatonChange or page appear events.</p>"
           }
         ]
       },
@@ -908,7 +908,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current horizontal position of the carousel scrolling container."
+            "body": "<p>Returns the current horizontal position of the carousel scrolling container.</p>"
           }
         ],
         "@return": [
@@ -938,7 +938,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>pointerdown</code> events."
+            "body": "<p>Event handler for <code>pointerdown</code> events.</p>"
           }
         ],
         "@param": [
@@ -969,7 +969,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for <code>track</code> events."
+            "body": "<p>Event handler for <code>track</code> events.</p>"
           }
         ],
         "@param": [
@@ -1000,7 +1000,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>pointerup</code> event on carousel scroller."
+            "body": "<p>Handler for <code>pointerup</code> event on carousel scroller.</p>"
           }
         ],
         "@param": [
@@ -1031,7 +1031,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for swipe event on carousel scroller."
+            "body": "<p>Handler for swipe event on carousel scroller.</p>"
           }
         ],
         "@param": [
@@ -1062,7 +1062,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the duration the transition will need till the next carousel\nsnap point is reached."
+            "body": "<p>Calculates the duration the transition will need till the next carousel\n snap point is reached.</p>"
           }
         ],
         "@param": [
@@ -1108,7 +1108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the native scroll event on the carousel container.\nThis is needed for preventing \"scrollIntoView\" method."
+            "body": "<p>Handles the native scroll event on the carousel container.\n This is needed for preventing \"scrollIntoView\" method.</p>"
           }
         ],
         "@param": [
@@ -1139,7 +1139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Applies the CSS property \"transitionDuration\" to the carouselScroller."
+            "body": "<p>Applies the CSS property \"transitionDuration\" to the carouselScroller.</p>"
           }
         ],
         "@param": [
@@ -1170,7 +1170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Snaps carouselScroller offset to a carouselPage.\nIt determines which carouselPage is the nearest and moves\ncarouselScrollers offset till nearest carouselPage's left border is aligned to carousel's left border."
+            "body": "<p>Snaps carouselScroller offset to a carouselPage.\n It determines which carouselPage is the nearest and moves\n carouselScrollers offset till nearest carouselPage's left border is aligned to carousel's left border.</p>"
           }
         ]
       },
@@ -1192,7 +1192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the pagination indicator of this carousel.\nRemoves the active state from from paginationLabel with oldActiveIndex,\nAdds actives state to paginationLabel new ActiveIndex."
+            "body": "<p>Updates the pagination indicator of this carousel.\n Removes the active state from from paginationLabel with oldActiveIndex,\n Adds actives state to paginationLabel new ActiveIndex.</p>"
           }
         ],
         "@param": [
@@ -1223,7 +1223,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Assign new position of carousel scrolling container."
+            "body": "<p>Assign new position of carousel scrolling container.</p>"
           }
         ],
         "@param": [
@@ -1254,7 +1254,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all listeners."
+            "body": "<p>Remove all listeners.</p>"
           }
         ]
       },
@@ -1291,7 +1291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the height of the container element."
+            "body": "<p>Sets the height of the container element.</p>"
           }
         ],
         "@param": [
@@ -1317,7 +1317,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the width of the container element."
+            "body": "<p>Sets the width of the container element.</p>"
           }
         ],
         "@param": [
@@ -1433,15 +1433,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.Widget[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -1458,7 +1458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -1483,7 +1483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.</p>"
           }
         ],
         "@param": [
@@ -1498,9 +1498,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       }
@@ -1517,7 +1517,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index"
+            "body": "<p>Add a child widget at the specified index</p>"
           }
         ],
         "@param": [
@@ -1559,7 +1559,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget"
+            "body": "<p>Add a widget before another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -1601,7 +1601,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget"
+            "body": "<p>Add a widget after another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -1643,7 +1643,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -1669,7 +1669,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index."
+            "body": "<p>Remove the widget at the specified index.</p>"
           }
         ],
         "@param": [
@@ -1695,15 +1695,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set a layout manager for the widget. A a layout manager can only be connected\nwith one widget. Reset the connection with a previous widget first, if you\nlike to use it in another widget instead."
+            "body": "<p>Set a layout manager for the widget. A a layout manager can only be connected\n with one widget. Reset the connection with a previous widget first, if you\n like to use it in another widget instead.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n<code>null</code> to reset the layout.",
+            "body": "layout {qx.ui.mobile.layout.Abstract} The new layout or\n     <code>null</code> to reset the layout.",
             "paramName": "layout",
-            "description": " The new layout or\n<code>null</code> to reset the layout.",
+            "description": " The new layout or\n     <code>null</code> to reset the layout.",
             "type": "qx.ui.mobile.layout.Abstract"
           }
         ]
@@ -1721,7 +1721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the widget's layout manager."
+            "body": "<p>Get the widget's layout manager.</p>"
           }
         ],
         "@return": [
@@ -1746,7 +1746,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1788,7 +1788,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1844,7 +1844,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1893,7 +1893,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1956,7 +1956,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -3477,13 +3477,14 @@
     "location": {
       "start": {
         "line": 722,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 732,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The Flash widget embeds the HMTL Flash element"
+          "body": "<p>The Flash widget embeds the HMTL Flash element</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 33,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 68,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Constructs a flash widget."
+          "body": "<p>Constructs a flash widget.</p>"
         }
       ],
       "@param": [
@@ -85,7 +85,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the flash object still is loading.\n\nThe loading action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired when the flash object still is loading.\n The loading action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the flash object has been loaded.\n\nThe loaded action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired after the flash object has been loaded.\n The loaded action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -129,7 +129,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired after the flash object has got a timeout.\n\nThe timeout action can be prevented by calling\n{@link qx.event.type.Event#preventDefault} on the event object"
+            "body": "<p>Fired after the flash object has got a timeout.\n The timeout action can be prevented by calling\n {@link qx.event.type.Event#preventDefault} on the event object</p>"
           }
         ]
       },
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The URL of the Flash movie."
+            "body": "<p>The URL of the Flash movie.</p>"
           }
         ]
       },
@@ -177,7 +177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The unique Flash movie id."
+            "body": "<p>The unique Flash movie id.</p>"
           }
         ]
       },
@@ -201,7 +201,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the quality attribute for the Flash movie."
+            "body": "<p>Set the quality attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -236,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the scale attribute for the Flash movie."
+            "body": "<p>Set the scale attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the wmode attribute for the Flash movie."
+            "body": "<p>Set the wmode attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -299,7 +299,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the play attribute for the Flash movie."
+            "body": "<p>Set the play attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -325,7 +325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the loop attribute for the Flash movie."
+            "body": "<p>Set the loop attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -351,7 +351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the mayscript attribute for the Flash movie."
+            "body": "<p>Set the mayscript attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -377,7 +377,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the menu attribute for the Flash movie."
+            "body": "<p>Set the menu attribute for the Flash movie.</p>"
           }
         ]
       },
@@ -403,7 +403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set allow script access"
+            "body": "<p>Set allow script access</p>"
           }
         ]
       },
@@ -435,7 +435,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enable/disable live connection"
+            "body": "<p>Enable/disable live connection</p>"
           }
         ]
       },
@@ -463,7 +463,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the 'FlashVars' to pass variables to the Flash movie."
+            "body": "<p>Set the 'FlashVars' to pass variables to the Flash movie.</p>"
           }
         ]
       },
@@ -489,7 +489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A timeout when trying to load the flash source."
+            "body": "<p>A timeout when trying to load the flash source.</p>"
           }
         ]
       },
@@ -544,11 +544,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC WIDGET API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PUBLIC WIDGET API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the DOM element of the Flash movie.\n\nNote: If you call the method before the widget is rendered, it will\nalways return <code>null</code>. Therefore call the method after\nthe {@link #appear} event is fired."
+            "body": "<p>Returns the DOM element of the Flash movie.\n Note: If you call the method before the widget is rendered, it will\n always return <code>null</code>. Therefore call the method after\n the {@link #appear} event is fired.</p>"
           }
         ],
         "@return": [
@@ -578,15 +578,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the movie is loaded."
+            "body": "<p>Checks if the movie is loaded.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> When the movie is completely loaded,\notherwise <code>false</code>.",
+            "body": "{Boolean} <code>true</code> When the movie is completely loaded,\n   otherwise <code>false</code>.",
             "type": "Boolean",
-            "description": " <code>true</code> When the movie is completely loaded,\notherwise <code>false</code>."
+            "description": " <code>true</code> When the movie is completely loaded,\n   otherwise <code>false</code>."
           }
         ]
       },
@@ -608,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current loaded state from the Flash movie."
+            "body": "<p>Returns the current loaded state from the Flash movie.</p>"
           }
         ],
         "@return": [
@@ -638,7 +638,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -672,7 +672,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks the current loaded state and fires one of the defined events:\n{@link #loading}, {@link #loaded} or {@link #timeout}.\n\nNote the {@link #timeout} event is fired when the check reached the\ndefined {@link #loadTimeout}."
+            "body": "<p>Checks the current loaded state and fires one of the defined events:\n {@link #loading}, {@link #loaded} or {@link #timeout}.\n Note the {@link #timeout} event is fired when the check reached the\n defined {@link #loadTimeout}.</p>"
           }
         ]
       },
@@ -694,11 +694,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -723,7 +723,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -748,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -773,7 +773,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -798,7 +798,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -823,7 +823,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -848,7 +848,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -873,7 +873,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -898,7 +898,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -923,7 +923,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -948,7 +948,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -973,7 +973,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -998,11 +998,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n HELPER METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the attribute for the Flash DOM element."
+            "body": "<p>Set the attribute for the Flash DOM element.</p>"
           }
         ],
         "@param": [
@@ -1015,9 +1015,9 @@
           },
           {
             "name": "@param",
-            "body": "value {String?null} The value for the attribute, <code>null</code>\nif the attribute should be removed from the DOM element.",
+            "body": "value {String?null} The value for the attribute, <code>null</code>\n    if the attribute should be removed from the DOM element.",
             "paramName": "value",
-            "description": " The value for the attribute, <code>null</code>\nif the attribute should be removed from the DOM element.",
+            "description": " The value for the attribute, <code>null</code>\n    if the attribute should be removed from the DOM element.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"

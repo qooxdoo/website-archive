@@ -31,11 +31,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The TextArea is a multi-line text input field."
+          "body": "<p>The TextArea is a multi-line text input field.</p>"
         }
       ]
     }
@@ -45,7 +45,7 @@
     "location": {
       "start": {
         "line": 48,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 57,
@@ -56,7 +56,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -195,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -229,7 +229,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Synchronizes the elements.scrollHeight and its height.\nNeeded for making textArea scrollable."
+            "body": "<p>Synchronizes the elements.scrollHeight and its height.\n Needed for making textArea scrollable.</p>"
           }
         ],
         "@param": [
@@ -260,7 +260,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the parent scroll container of this widget."
+            "body": "<p>Returns the parent scroll container of this widget.</p>"
           }
         ],
         "@return": [
@@ -287,11 +287,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALUE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALUE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the field model value. Should also update the UI."
+            "body": "<p>Sets the field model value. Should also update the UI.</p>"
           }
         ],
         "@param": [
@@ -309,9 +309,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{null|Error} Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field).",
+            "body": "{null|Error} Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field).",
             "type": "null|Error",
-            "description": " Should return an error when the type of\nmodel value is not compatible with the implementing class (the concrete field)."
+            "description": " Should return an error when the type of\n  model value is not compatible with the implementing class (the concrete field)."
           }
         ]
       }
@@ -337,7 +337,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a consistent and up-to-date model value.\n\nNote: returned value can also be a promise of type <code>Promise&lt;*|null&gt;</code>."
+            "body": "<p>Returns a consistent and up-to-date model value.\n Note: returned value can also be a promise of type <code>Promise&amp;lt;*|null&amp;gt;</code>.</p>"
           }
         ],
         "@return": [
@@ -363,11 +363,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nENABLED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ENABLED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the enabled state of the widget."
+            "body": "<p>Set the enabled state of the widget.</p>"
           }
         ],
         "@param": [
@@ -394,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set enabled state."
+            "body": "<p>Return the current set enabled state.</p>"
           }
         ],
         "@return": [
@@ -420,11 +420,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the required state of a widget."
+            "body": "<p>Sets the required state of a widget.</p>"
           }
         ],
         "@param": [
@@ -451,7 +451,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current required state of the widget."
+            "body": "<p>Return the current required state of the widget.</p>"
           }
         ],
         "@return": [
@@ -477,11 +477,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALID PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  VALID PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the valid state of the widget."
+            "body": "<p>Sets the valid state of the widget.</p>"
           }
         ],
         "@param": [
@@ -508,7 +508,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the valid state of the widget."
+            "body": "<p>Returns the valid state of the widget.</p>"
           }
         ],
         "@return": [
@@ -534,11 +534,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message of the widget."
+            "body": "<p>Sets the invalid message of the widget.</p>"
           }
         ],
         "@param": [
@@ -565,7 +565,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message of the widget."
+            "body": "<p>Returns the invalid message of the widget.</p>"
           }
         ],
         "@return": [
@@ -591,11 +591,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  REQUIRED INVALID MESSAGE PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets the invalid message if required of the widget."
+            "body": "<p>Sets the invalid message if required of the widget.</p>"
           }
         ],
         "@param": [
@@ -622,7 +622,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the invalid message if required of the widget."
+            "body": "<p>Returns the invalid message if required of the widget.</p>"
           }
         ],
         "@return": [
@@ -648,7 +648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the representative data for the item."
+            "body": "<p>Set the representative data for the item.</p>"
           }
         ],
         "@param": [
@@ -675,7 +675,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the representative data for the item"
+            "body": "<p>Returns the representative data for the item</p>"
           }
         ],
         "@return": [
@@ -710,7 +710,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts the incoming value."
+            "body": "<p>Converts the incoming value.</p>"
           }
         ],
         "@param": [
@@ -762,7 +762,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether this widget has focus or not."
+            "body": "<p>Returns whether this widget has focus or not.</p>"
           }
         ],
         "@return": [
@@ -787,7 +787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #changeValue} event occurs."
+            "body": "<p>Event handler. Called when the {@link #changeValue} event occurs.</p>"
           }
         ],
         "@param": [
@@ -813,7 +813,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the {@link #input} event occurs."
+            "body": "<p>Event handler. Called when the {@link #input} event occurs.</p>"
           }
         ],
         "@param": [
@@ -839,7 +839,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the caret position of this widget."
+            "body": "<p>Returns the caret position of this widget.</p>"
           }
         ],
         "@return": [
@@ -864,7 +864,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the caret position on this widget."
+            "body": "<p>Sets the caret position on this widget.</p>"
           }
         ],
         "@param": [
@@ -890,7 +890,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the {@link #changeValue} event."
+            "body": "<p>Fires the {@link #changeValue} event.</p>"
           }
         ],
         "@param": [
@@ -1255,7 +1255,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1386,7 +1386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a state to the element"
+            "body": "<p>Adds a state to the element</p>"
           }
         ],
         "@param": [
@@ -1412,7 +1412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the element has the state passed as argument"
+            "body": "<p>Checks whether the element has the state passed as argument</p>"
           }
         ],
         "@param": [
@@ -1446,7 +1446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a state from the element"
+            "body": "<p>Removes a state from the element</p>"
           }
         ],
         "@param": [
@@ -1472,7 +1472,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replaces a state of the element with a new state.\nIf the element doesn't have the state to be removed, then th new state will\njust be added."
+            "body": "<p>Replaces a state of the element with a new state.\n If the element doesn't have the state to be removed, then th new state will\n just be added.</p>"
           }
         ],
         "@param": [
@@ -2496,13 +2496,14 @@
     "location": {
       "start": {
         "line": 125,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 132,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

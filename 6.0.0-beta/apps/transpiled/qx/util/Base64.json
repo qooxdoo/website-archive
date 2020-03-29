@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAdrian Olaru (adrianolaru)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Adrian Olaru (adrianolaru)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Base64 encoder"
+          "body": "<p>Base64 encoder</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Characters allowed in a Base 64 encoded string"
+            "body": "<p>Characters allowed in a Base 64 encoded string</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Encode a string using base64 encoding (http://en.wikipedia.org/wiki/Base64)."
+            "body": "<p>Encode a string using base64 encoding (http://en.wikipedia.org/wiki/Base64).</p>"
           }
         ],
         "@param": [
@@ -82,9 +82,9 @@
           },
           {
             "name": "@param",
-            "body": "is8bit {Boolean?} Whether the character set is 8-bit, not\nmulti-byte.  If this parameter is not provided, the character set is\ndetermined from the 'document' object.",
+            "body": "is8bit {Boolean?} Whether the character set is 8-bit, not\n   multi-byte.  If this parameter is not provided, the character set is\n   determined from the 'document' object.",
             "paramName": "is8bit",
-            "description": " Whether the character set is 8-bit, not\nmulti-byte.  If this parameter is not provided, the character set is\ndetermined from the 'document' object.",
+            "description": " Whether the character set is 8-bit, not\n   multi-byte.  If this parameter is not provided, the character set is\n   determined from the 'document' object.",
             "optional": true,
             "type": "Boolean"
           }
@@ -116,7 +116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds to output array the UTF-8 bytes needed to represent the character (http://en.wikipedia.org/wiki/UTF8)"
+            "body": "<p>Adds to output array the UTF-8 bytes needed to represent the character (http://en.wikipedia.org/wiki/UTF8)</p>"
           }
         ],
         "@param": [
@@ -161,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a String from an array of bytes, with special treatment\nif the bytes are UTF-8 bytes (http://en.wikipedia.org/wiki/UTF8)"
+            "body": "<p>Returns a String from an array of bytes, with special treatment\n if the bytes are UTF-8 bytes (http://en.wikipedia.org/wiki/UTF8)</p>"
           }
         ],
         "@param": [
@@ -207,7 +207,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decode a base64 string (http://en.wikipedia.org/wiki/Base64)."
+            "body": "<p>Decode a base64 string (http://en.wikipedia.org/wiki/Base64).</p>"
           }
         ],
         "@param": [
@@ -220,9 +220,9 @@
           },
           {
             "name": "@param",
-            "body": "is8bit {Boolean?} Whether the character set is 8-bit, not\nmulti-byte.  If this parameter is not provided, the character set is\ndetermined from the 'document' object.",
+            "body": "is8bit {Boolean?} Whether the character set is 8-bit, not\n   multi-byte.  If this parameter is not provided, the character set is\n   determined from the 'document' object.",
             "paramName": "is8bit",
-            "description": " Whether the character set is 8-bit, not\nmulti-byte.  If this parameter is not provided, the character set is\ndetermined from the 'document' object.",
+            "description": " Whether the character set is 8-bit, not\n   multi-byte.  If this parameter is not provided, the character set is\n   determined from the 'document' object.",
             "optional": true,
             "type": "Boolean"
           }

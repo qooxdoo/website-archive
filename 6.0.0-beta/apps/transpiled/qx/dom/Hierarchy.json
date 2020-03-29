@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nPrototype JS\nhttp://www.prototypejs.org/\nVersion 1.5\n\nCopyright:\n(c) 2006-2007, Prototype Core Team\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\nAuthors:\nPrototype Core Team\n\n----------------------------------------------------------------------\n\nCopyright (c) 2005-2008 Sam Stephenson\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without restriction,\nincluding without limitation the rights to use, copy, modify, merge,\npublish, distribute, sublicense, and/or sell copies of the Software,\nand to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n   ======================================================================\n   This class contains code based on the following work:\n Prototype JS\n     http://www.prototypejs.org/\n     Version 1.5\n     Copyright:\n       (c) 2006-2007, Prototype Core Team\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n     Authors:\n Prototype Core Team</p>\n<hr />\n<pre><code> Copyright (c) 2005-2008 Sam Stephenson\n Permission is hereby granted, free of charge, to any person\n obtaining a copy of this software and associated documentation\n files (the \"Software\"), to deal in the Software without restriction,\n including without limitation the rights to use, copy, modify, merge,\n publish, distribute, sublicense, and/or sell copies of the Software,\n and to permit persons to whom the Software is furnished to do so,\n subject to the following conditions:\n THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\n HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\n WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n DEALINGS IN THE SOFTWARE.\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Methods to operate on nodes and elements on a DOM tree. This contains\nspecial getters to query for child nodes, siblings, etc. This class also\nsupports to operate on one element and reorganize the content with\nthe insertion of new HTML or nodes."
+          "body": "<p>Methods to operate on nodes and elements on a DOM tree. This contains\n special getters to query for child nodes, siblings, etc. This class also\n supports to operate on one element and reorganize the content with\n the insertion of new HTML or nodes.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the DOM index of the given node"
+            "body": "<p>Returns the DOM index of the given node</p>"
           }
         ],
         "@param": [
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the DOM index of the given element (ignoring non-elements)"
+            "body": "<p>Returns the DOM index of the given element (ignoring non-elements)</p>"
           }
         ],
         "@param": [
@@ -125,7 +125,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the next element to the supplied element\n\n\"nextSibling\" is not good enough as it might return a text or comment element"
+            "body": "<p>Return the next element to the supplied element\n \"nextSibling\" is not good enough as it might return a text or comment element</p>"
           }
         ],
         "@param": [
@@ -164,7 +164,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the previous element to the supplied element\n\n\"previousSibling\" is not good enough as it might return a text or comment element"
+            "body": "<p>Return the previous element to the supplied element\n \"previousSibling\" is not good enough as it might return a text or comment element</p>"
           }
         ],
         "@param": [
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the first element contains the second one\n\nUses native non-standard contains() in Internet Explorer,\nOpera and Webkit (supported since Safari 3.0 beta)"
+            "body": "<p>Whether the first element contains the second one\n Uses native non-standard contains() in Internet Explorer,\n Opera and Webkit (supported since Safari 3.0 beta)</p>"
           }
         ],
         "@param": [
@@ -249,7 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the element is inserted into the document\nfor which it was created."
+            "body": "<p>Whether the element is inserted into the document\n for which it was created.</p>"
           }
         ],
         "@param": [
@@ -264,9 +264,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the element is inserted\ninto the document.",
+            "body": "{Boolean} <code>true</code> when the element is inserted\n    into the document.",
             "type": "Boolean",
-            "description": " <code>true</code> when the element is inserted\ninto the document."
+            "description": " <code>true</code> when the element is inserted\n    into the document."
           }
         ]
       },
@@ -288,7 +288,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if <code>element</code> is a descendant of <code>ancestor</code>."
+            "body": "<p>Checks if <code>element</code> is a descendant of <code>ancestor</code>.</p>"
           }
         ],
         "@param": [
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the common parent element of two given elements. Returns\n<code>null</code> when no common element has been found.\n\nUses native non-standard contains() in Opera and Internet Explorer"
+            "body": "<p>Get the common parent element of two given elements. Returns\n <code>null</code> when no common element has been found.\n Uses native non-standard contains() in Opera and Internet Explorer</p>"
           }
         ],
         "@param": [
@@ -380,7 +380,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all of element's ancestors and returns them as an array of\nelements."
+            "body": "<p>Collects all of element's ancestors and returns them as an array of\n elements.</p>"
           }
         ],
         "@param": [
@@ -419,7 +419,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns element's children."
+            "body": "<p>Returns element's children.</p>"
           }
         ],
         "@param": [
@@ -458,7 +458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all of element's descendants (deep) and returns them as an array\nof elements."
+            "body": "<p>Collects all of element's descendants (deep) and returns them as an array\n of elements.</p>"
           }
         ],
         "@param": [
@@ -497,7 +497,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the first child that is an element. This is opposed to firstChild DOM\nproperty which will return any node (whitespace in most usual cases)."
+            "body": "<p>Returns the first child that is an element. This is opposed to firstChild DOM\n property which will return any node (whitespace in most usual cases).</p>"
           }
         ],
         "@param": [
@@ -536,7 +536,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the last child that is an element. This is opposed to lastChild DOM\nproperty which will return any node (whitespace in most usual cases)."
+            "body": "<p>Returns the last child that is an element. This is opposed to lastChild DOM\n property which will return any node (whitespace in most usual cases).</p>"
           }
         ],
         "@param": [
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all of element's previous siblings and returns them as an array of elements."
+            "body": "<p>Collects all of element's previous siblings and returns them as an array of elements.</p>"
           }
         ],
         "@param": [
@@ -614,7 +614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all of element's next siblings and returns them as an array of\nelements."
+            "body": "<p>Collects all of element's next siblings and returns them as an array of\n elements.</p>"
           }
         ],
         "@param": [
@@ -653,7 +653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Recursively collects elements whose relationship is specified by\nproperty.  <code>property</code> has to be a property (a method won't\ndo!) of element that points to a single DOM node. Returns an array of\nelements."
+            "body": "<p>Recursively collects elements whose relationship is specified by\n property.  <code>property</code> has to be a property (a method won't\n do!) of element that points to a single DOM node. Returns an array of\n elements.</p>"
           }
         ],
         "@param": [
@@ -699,7 +699,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collects all of element's siblings and returns them as an array of elements."
+            "body": "<p>Collects all of element's siblings and returns them as an array of elements.</p>"
           }
         ],
         "@param": [
@@ -738,7 +738,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the given element is empty.\nInspired by Base2 (Dean Edwards)"
+            "body": "<p>Whether the given element is empty.\n Inspired by Base2 (Dean Edwards)</p>"
           }
         ],
         "@param": [
@@ -777,7 +777,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all of element's text nodes which contain only whitespace"
+            "body": "<p>Removes all of element's text nodes which contain only whitespace</p>"
           }
         ],
         "@param": [

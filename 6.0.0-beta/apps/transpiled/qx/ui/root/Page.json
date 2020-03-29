@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This widget provides a root widget for popups and tooltips if qooxdoo is used\ninside a traditional HTML page. Widgets placed into a page will overlay the\nHTML content.\n\nFor this reason the widget's layout is initialized with an instance of\n{@link qx.ui.layout.Basic}. The widget's layout cannot be changed.\n\nThe page widget does not support paddings and decorators with insets.\n\nNote: This widget does not support decorations!\n\nIf you want to place widgets inside existing DOM elements\nuse {@link qx.ui.root.Inline}."
+          "body": "<p>This widget provides a root widget for popups and tooltips if qooxdoo is used\n inside a traditional HTML page. Widgets placed into a page will overlay the\n HTML content.\n For this reason the widget's layout is initialized with an instance of\n {@link qx.ui.layout.Basic}. The widget's layout cannot be changed.\n The page widget does not support paddings and decorators with insets.\n Note: This widget does not support decorations!\n If you want to place widgets inside existing DOM elements\n use {@link qx.ui.root.Inline}.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 52,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 79,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -108,7 +108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -142,15 +142,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} The map with the preferred width/height and the allowed\nminimum and maximum values.",
+            "body": "{Map} The map with the preferred width/height and the allowed\n   minimum and maximum values.",
             "type": "Map",
-            "description": " The map with the preferred width/height and the allowed\nminimum and maximum values."
+            "description": " The map with the preferred width/height and the allowed\n   minimum and maximum values."
           }
         ]
       },
@@ -177,7 +177,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adjust html element size on layout resizes."
+            "body": "<p>Adjust html element size on layout resizes.</p>"
           }
         ],
         "@param": [
@@ -208,7 +208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the configured layout supports a maximized window\ne.g. is a Canvas."
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -4073,7 +4073,7 @@
     "location": {
       "start": {
         "line": 188,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 190,
@@ -4084,7 +4084,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

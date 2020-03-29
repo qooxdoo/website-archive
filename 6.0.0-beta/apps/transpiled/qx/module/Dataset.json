@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRomeo Kenfack (rkenfack)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Romeo Kenfack (rkenfack)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Module for handling of HTML5 data-* attributes"
+          "body": "<p>Module for handling of HTML5 data-* attributes</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets an HTML \"data-*\" attribute on each item in the collection"
+            "body": "<p>Sets an HTML \"data-*\" attribute on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the value of the given HTML \"data-*\" attribute for the first item in the collection"
+            "body": "<p>Returns the value of the given HTML \"data-*\" attribute for the first item in the collection</p>"
           }
         ],
         "@attach": [
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map containing all the HTML \"data-*\" attributes of the specified element"
+            "body": "<p>Returns a map containing all the HTML \"data-*\" attributes of the specified element</p>"
           }
         ],
         "@attach": [
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if any element in the collection has a \"data-*\" attribute"
+            "body": "<p>Checks if any element in the collection has a \"data-*\" attribute</p>"
           }
         ],
         "@return": [
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an HTML \"data-*\" attribute on each item in the collection"
+            "body": "<p>Remove an HTML \"data-*\" attribute on each item in the collection</p>"
           }
         ],
         "@attach": [
@@ -245,13 +245,14 @@
     "location": {
       "start": {
         "line": 103,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 107,
         "column": 4
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

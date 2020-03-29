@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Data Model for Progressive renderer."
+          "body": "<p>Data Model for Progressive renderer.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 27,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 32,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__elements": {
@@ -73,15 +74,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add elements to be progressively rendered.  Each element must be an\nobject which contains at least two members: renderer (the renderer\nname) and data."
+            "body": "<p>Add elements to be progressively rendered.  Each element must be an\n object which contains at least two members: renderer (the renderer\n name) and data.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "elems {Array}\nAn array of elements to be added to the element queue",
+            "body": "elems {Array}\n   An array of elements to be added to the element queue",
             "paramName": "elems",
-            "description": "\nAn array of elements to be added to the element queue",
+            "description": "\n   An array of elements to be added to the element queue",
             "type": "Array"
           }
         ]
@@ -104,15 +105,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a single element to be progressively rendered.  The element must\nbe an object which contains at least two members: renderer (the\nrenderer name) and data."
+            "body": "<p>Add a single element to be progressively rendered.  The element must\n be an object which contains at least two members: renderer (the\n renderer name) and data.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "elem {var}\nAn element to be added to the element queue",
+            "body": "elem {var}\n   An element to be added to the element queue",
             "paramName": "elem",
-            "description": "\nAn element to be added to the element queue",
+            "description": "\n   An element to be added to the element queue",
             "type": "var"
           }
         ]
@@ -135,7 +136,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -169,15 +170,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Object}\nThe returned object must provide at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>",
+            "body": "{Object}\n   The returned object must provide at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>",
             "type": "Object",
-            "description": "\nThe returned object must provide at least the following members:\n<dl>\n<dt>\nrenderer</dt>\n<dd>\nThe name of a renderer.  That name is used by {@link\nqx.ui.progressive.Progressive} to select the renderer to be used\nto render this element.  The name should match one provided to\n{@link qx.ui.progressive.Progressive#addRenderer}.\n</dd>\n\n<dt>\ndata\n</dt>\n<dd>\nThe data to be passed to the renderer.  The data may be of any\ntype that the renderer knows how to render.\n</dd>\n</dl>"
+            "description": "\n   The returned object must provide at least the following members:\n   <dl>\n     <dt>\n       renderer</dt>\n     <dd>\n       The name of a renderer.  That name is used by {@link\n       qx.ui.progressive.Progressive} to select the renderer to be used\n       to render this element.  The name should match one provided to\n       {@link qx.ui.progressive.Progressive#addRenderer}.\n     </dd>\n     <dt>\n       data\n     </dt>\n     <dd>\n       The data to be passed to the renderer.  The data may be of any\n       type that the renderer knows how to render.\n     </dd>\n   </dl>"
           }
         ]
       },
@@ -313,13 +314,14 @@
     "location": {
       "start": {
         "line": 98,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 100,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

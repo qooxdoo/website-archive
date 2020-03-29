@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The HoverButton is an {@link qx.ui.basic.Atom}, which fires repeatedly\nexecute events while the pointer is over the widget.\n\nThe rate at which the execute event is fired accelerates is the pointer keeps\ninside of the widget. The initial delay and the interval time can be set using\nthe properties {@link #firstInterval} and {@link #interval}. The\n{@link #execute} events will be fired in a shorter amount of time if the pointer\nremains over the widget, until the min {@link #minTimer} is reached.\nThe {@link #timerDecrease} property sets the amount of milliseconds which will\ndecreased after every firing.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar button = new qx.ui.form.HoverButton(\"Hello World\");\n\nbutton.addListener(\"execute\", function(e) {\nalert(\"Button is hovered\");\n}, this);\n\nthis.getRoot.add(button);\n</pre>\n\nThis example creates a button with the label \"Hello World\" and attaches an\nevent listener to the {@link #execute} event.\n\n*External Documentation*\n\n<a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/hoverbutton.html' target='_blank'>\nDocumentation of this widget in the qooxdoo manual.</a>"
+          "body": "<p>The HoverButton is an {@link qx.ui.basic.Atom}, which fires repeatedly\n execute events while the pointer is over the widget.\n The rate at which the execute event is fired accelerates is the pointer keeps\n inside of the widget. The initial delay and the interval time can be set using\n the properties {@link #firstInterval} and {@link #interval}. The\n {@link #execute} events will be fired in a shorter amount of time if the pointer\n remains over the widget, until the min {@link #minTimer} is reached.\n The {@link #timerDecrease} property sets the amount of milliseconds which will\n decreased after every firing.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var button = new qx.ui.form.HoverButton(\"Hello World\");\n   button.addListener(\"execute\", function(e) {\n     alert(\"Button is hovered\");\n   }, this);\n   this.getRoot.add(button);\n </pre>\n<p>This example creates a button with the label \"Hello World\" and attaches an\n event listener to the {@link #execute} event.\n<em>External Documentation</em>\n <a href='http://manual.qooxdoo.org/${qxversion}/pages/widget/hoverbutton.html' target='_blank'>\n Documentation of this widget in the qooxdoo manual.</a></p>"
         }
       ]
     }
@@ -39,7 +39,7 @@
     "location": {
       "start": {
         "line": 63,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 72,
@@ -89,7 +89,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -119,7 +119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval used after the first run of the timer. Usually a smaller value\nthan the \"firstInterval\" property value to get a faster reaction."
+            "body": "<p>Interval used after the first run of the timer. Usually a smaller value\n than the \"firstInterval\" property value to get a faster reaction.</p>"
           }
         ]
       },
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Interval used for the first run of the timer. Usually a greater value\nthan the \"interval\" property value to a little delayed reaction at the first\ntime."
+            "body": "<p>Interval used for the first run of the timer. Usually a greater value\n than the \"interval\" property value to a little delayed reaction at the first\n time.</p>"
           }
         ]
       },
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This configures the minimum value for the timer interval."
+            "body": "<p>This configures the minimum value for the timer interval.</p>"
           }
         ]
       },
@@ -194,7 +194,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Decrease of the timer on each interval (for the next interval) until minTimer reached."
+            "body": "<p>Decrease of the timer on each interval (for the next interval) until minTimer reached.</p>"
           }
         ]
       },
@@ -243,7 +243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Start timer on pointer over"
+            "body": "<p>Start timer on pointer over</p>"
           }
         ],
         "@param": [
@@ -274,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stop timer on pointer out"
+            "body": "<p>Stop timer on pointer out</p>"
           }
         ],
         "@param": [
@@ -305,7 +305,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire execute event on timer interval event"
+            "body": "<p>Fire execute event on timer interval event</p>"
           }
         ]
       },
@@ -325,11 +325,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMMAND PROPERTY\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMMAND PROPERTY\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the command of this executable."
+            "body": "<p>Set the command of this executable.</p>"
           }
         ],
         "@param": [
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the current set command of this executable."
+            "body": "<p>Return the current set command of this executable.</p>"
           }
         ],
         "@return": [
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the execute event of the command."
+            "body": "<p>Handler for the execute event of the command.</p>"
           }
         ],
         "@param": [
@@ -4653,13 +4653,14 @@
     "location": {
       "start": {
         "line": 179,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 181,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

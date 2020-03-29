@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nAlexander Steitz (aback)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Alexander Steitz (aback)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is a date picker widget used to combine an input element with a calendar widget\nto select a date. The calendar itself is opened as popup to save visual space.\n\n<h2>Markup</h2>\nEach Date Picker widget is connected to an existing input element.\n\n<h2>CSS Classes</h2>\n<table>\n<thead>\n<tr>\n<td>Class Name</td>\n<td>Applied to</td>\n<td>Description</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>qx-datepicker</code></td>\n<td>Input element</td>\n<td>Identifies the date picker widget</td>\n</tr>\n<tr>\n<td><code>qx-datepicker-icon</code></td>\n<td>Icon element</td>\n<td>Identifies the (if configured) image element to open the date picker</td>\n</tr>\n</tbody>\n</table>"
+          "body": "<p>This is a date picker widget used to combine an input element with a calendar widget\n to select a date. The calendar itself is opened as popup to save visual space.\n </p>\n<h2>Markup</h2>\n<p>Each Date Picker widget is connected to an existing input element.\n </p>\n<h2>CSS Classes</h2>\n<table>\n   <thead>\n     <tr>\n       <td>Class Name</td>\n       <td>Applied to</td>\n       <td>Description</td>\n     </tr>\n   </thead>\n   <tbody>\n     <tr>\n       <td><code>qx-datepicker</code></td>\n       <td>Input element</td>\n       <td>Identifies the date picker widget</td>\n     </tr>\n     <tr>\n       <td><code>qx-datepicker-icon</code></td>\n       <td>Icon element</td>\n       <td>Identifies the (if configured) image element to open the date picker</td>\n     </tr>\n   </tbody>\n </table>"
         }
       ],
       "@require": [
@@ -59,7 +59,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "List of valid positions to check against"
+            "body": "<p>List of valid positions to check against</p>"
           }
         ]
       },
@@ -81,7 +81,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "*format*\n\nFunction which is provided with a JavaScript Date object instance. You can provide\nan own format function to manipulate the value which is set to the associated input element.\n\nDefault value:\n<pre>function(date) {\nreturn date.toLocaleDateString();\n}</pre>\n\n*readonly*\n\nBoolean value to control if the connected input element is read-only.\n\nDefault value:\n<pre>true</pre>\n\n*icon*\n\nPath to an icon which will be placed next to the input element as additional opener. If configured\na necessary <code>img</code> element is created and equipped with the <code>qx-datepicker-icon</code>\nCSS class to style it.\n\nDefault value:\n<pre>null</pre>\n\n*mode*\n\nWhich control should trigger showing the date picker.\nPossible values are <code>input</code>, <code>icon</code>, <code>both</code>.\n\nDefault value:\n<pre>input</pre>\n\n*position*\n\nPosition of the calendar popup from the point of view of the <code>INPUT</code> element.\nPossible values are\n\n* <code>top-left</code>\n* <code>top-center</code>\n* <code>top-right</code>\n* <code>bottom-left</code>\n* <code>bottom-center</code>\n* <code>bottom-right</code>\n* <code>left-top</code>\n* <code>left-middle</code>\n* <code>left-bottom</code>\n* <code>right-top</code>\n* <code>right-middle</code>\n* <code>right-bottom</code>\n\nDefault value:\n<pre>bottom-left</pre>"
+            "body": "<p><em>format</em>\n Function which is provided with a JavaScript Date object instance. You can provide\n an own format function to manipulate the value which is set to the associated input element.\n Default value:\n </p>\n<pre>function(date) {\n        return date.toLocaleDateString();\n      }</pre>\n<p><em>readonly</em>\n Boolean value to control if the connected input element is read-only.\n Default value:\n </p>\n<pre>true</pre>\n<p><em>icon</em>\n Path to an icon which will be placed next to the input element as additional opener. If configured\n a necessary <code>img</code> element is created and equipped with the <code>qx-datepicker-icon</code>\n CSS class to style it.\n Default value:\n </p>\n<pre>null</pre>\n<p><em>mode</em>\n Which control should trigger showing the date picker.\n Possible values are <code>input</code>, <code>icon</code>, <code>both</code>.\n Default value:\n </p>\n<pre>input</pre>\n<p><em>position</em>\n Position of the calendar popup from the point of view of the <code>INPUT</code> element.\n Possible values are</p>\n<ul>\n<li><code>top-left</code></li>\n<li><code>top-center</code></li>\n<li><code>top-right</code></li>\n<li><code>bottom-left</code></li>\n<li><code>bottom-center</code></li>\n<li><code>bottom-right</code></li>\n<li><code>left-top</code></li>\n<li><code>left-middle</code></li>\n<li><code>left-bottom</code></li>\n<li><code>right-top</code></li>\n<li><code>right-middle</code></li>\n<li><p><code>right-bottom</code>\nDefault value:</p></li>\n</ul>\n<pre>bottom-left</pre>"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\nDate Picker widgets. Therefore, an initialization process needs to be done which\ncan be configured with some parameter."
+            "body": "<p>Factory method which converts the current collection into a collection of\n Date Picker widgets. Therefore, an initialization process needs to be done which\n can be configured with some parameter.</p>"
           }
         ],
         "@param": [
@@ -140,13 +140,14 @@
     "location": {
       "start": {
         "line": 147,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 149,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "_calendarId": {
@@ -206,7 +207,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the associated calendar widget"
+            "body": "<p>Get the associated calendar widget</p>"
           }
         ],
         "@return": [
@@ -236,11 +237,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
-            "body": "Initializes the date picker widget"
+            "body": "<p>Initializes the date picker widget</p>"
           }
         ],
         "@param": [
@@ -283,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -317,7 +318,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -367,7 +368,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener which handles clicks/taps on the associated input element and\nopens / hides the calendar."
+            "body": "<p>Listener which handles clicks/taps on the associated input element and\n opens / hides the calendar.</p>"
           }
         ],
         "@param": [
@@ -398,7 +399,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stop tap events from reaching the body so the calendar won't close"
+            "body": "<p>Stop tap events from reaching the body so the calendar won't close</p>"
           }
         ],
         "@param": [
@@ -429,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener to the body element to be able to hide the calendar if the user clicks\nor taps outside the calendar."
+            "body": "<p>Listener to the body element to be able to hide the calendar if the user clicks\n or taps outside the calendar.</p>"
           }
         ],
         "@param": [
@@ -460,7 +461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listens to value selection of the calendar, Whenever the user selected a day\nwe write it back to the input element and hide the calendar.\n\nThe format of the date can be controlled with the 'format' config function"
+            "body": "<p>Listens to value selection of the calendar, Whenever the user selected a day\n we write it back to the input element and hide the calendar.\n The format of the date can be controlled with the 'format' config function</p>"
           }
         ],
         "@param": [
@@ -491,7 +492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to set the readonly status on the input element"
+            "body": "<p>Helper method to set the readonly status on the input element</p>"
           }
         ],
         "@param": [
@@ -522,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to add / remove an icon next to the input element"
+            "body": "<p>Helper method to add / remove an icon next to the input element</p>"
           }
         ],
         "@param": [
@@ -553,7 +554,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method to add a listener to the connected input element\nif the configured mode is set."
+            "body": "<p>Helper method to add a listener to the connected input element\n if the configured mode is set.</p>"
           }
         ],
         "@param": [
@@ -584,7 +585,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -609,13 +610,14 @@
     "location": {
       "start": {
         "line": 413,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 420,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

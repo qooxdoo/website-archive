@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin contains the methods needed to implement a loader that will\ncreate a suite of unit tests from a given namespace and run it directly or\nprovide the necessary information to a more advanced runner application"
+          "body": "<p>This mixin contains the methods needed to implement a loader that will\n create a suite of unit tests from a given namespace and run it directly or\n provide the necessary information to a more advanced runner application</p>"
         }
       ]
     }
@@ -56,7 +56,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Parses the url parameters and tries to find the classes to test.\nThe pattern is like <code>index.html?testclass=qx.test</code>"
+            "body": "<p>Parses the url parameters and tries to find the classes to test.\n The pattern is like <code>index.html?testclass=qx.test</code></p>"
           }
         ],
         "@return": [
@@ -86,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the top level namespace of the test cases to test. All classes\nbelow this namespace extending {@link TestCase} will be tested."
+            "body": "<p>Sets the top level namespace of the test cases to test. All classes\n below this namespace extending {@link TestCase} will be tested.</p>"
           }
         ],
         "@param": [
@@ -117,7 +117,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Run all tests and export the results to JSUnit"
+            "body": "<p>Run all tests and export the results to JSUnit</p>"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Run tests as standalone application"
+            "body": "<p>Run tests as standalone application</p>"
           }
         ]
       },
@@ -161,7 +161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of test descriptions"
+            "body": "<p>Get a list of test descriptions</p>"
           }
         ],
         "@return": [
@@ -191,7 +191,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Runs exactly one test from the test suite"
+            "body": "<p>Runs exactly one test from the test suite</p>"
           }
         ],
         "@param": [
@@ -236,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Runs all tests inside of the given namespace"
+            "body": "<p>Runs all tests inside of the given namespace</p>"
           }
         ],
         "@param": [

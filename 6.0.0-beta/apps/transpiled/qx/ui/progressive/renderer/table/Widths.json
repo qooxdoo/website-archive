@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Column width array for a whole set of columns"
+          "body": "<p>Column width array for a whole set of columns</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 30,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 41,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "numColumns {Integer}\nThe number of columns being used.",
+          "body": "numColumns {Integer}\n   The number of columns being used.",
           "paramName": "numColumns",
-          "description": "\nThe number of columns being used.",
+          "description": "\n   The number of columns being used.",
           "type": "Integer"
         }
       ]
@@ -90,15 +90,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the array of column data."
+            "body": "<p>Get the array of column data.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Array}\nArray of column data",
+            "body": "{Array}\n   Array of column data",
             "type": "Array",
-            "description": "\nArray of column data"
+            "description": "\n   Array of column data"
           }
         ]
       },
@@ -120,22 +120,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the width, minimum width and/or maximum width of a column at one\ntime."
+            "body": "<p>Set the width, minimum width and/or maximum width of a column at one\n time.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column number whose attributes are being set.",
+            "body": "column {Integer}\n   The column number whose attributes are being set.",
             "paramName": "column",
-            "description": "\nThe column number whose attributes are being set.",
+            "description": "\n   The column number whose attributes are being set.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "map {Map}\nAn object with any or all of the three members, \"width\", \"minWidth\",\n\"maxWidth\".  The property values are as described for {@link\n#setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\nrespectively.",
+            "body": "map {Map}\n   An object with any or all of the three members, \"width\", \"minWidth\",\n   \"maxWidth\".  The property values are as described for {@link\n   #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\n   respectively.",
             "paramName": "map",
-            "description": "\nAn object with any or all of the three members, \"width\", \"minWidth\",\n\"maxWidth\".  The property values are as described for {@link\n#setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\nrespectively.",
+            "description": "\n   An object with any or all of the three members, \"width\", \"minWidth\",\n   \"maxWidth\".  The property values are as described for {@link\n   #setWidth}, {@link #setMinWidth} and {@link #setMaxWidth}\n   respectively.",
             "type": "Map"
           }
         ]
@@ -163,7 +163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the width of a column."
+            "body": "<p>Set the width of a column.</p>"
           }
         ],
         "@param": [
@@ -176,9 +176,9 @@
           },
           {
             "name": "@param",
-            "body": "width {Integer|String}\nThe width of the specified column.  The width may be specified as\ninteger number of pixels (e.g. 100), a string representing percentage\nof the inner width of the Table (e.g. \"25%\"), or a string\nrepresenting a flex width (e.g. \"1*\").",
+            "body": "width {Integer|String}\n   The width of the specified column.  The width may be specified as\n   integer number of pixels (e.g. 100), a string representing percentage\n   of the inner width of the Table (e.g. \"25%\"), or a string\n   representing a flex width (e.g. \"1*\").",
             "paramName": "width",
-            "description": "\nThe width of the specified column.  The width may be specified as\ninteger number of pixels (e.g. 100), a string representing percentage\nof the inner width of the Table (e.g. \"25%\"), or a string\nrepresenting a flex width (e.g. \"1*\").",
+            "description": "\n   The width of the specified column.  The width may be specified as\n   integer number of pixels (e.g. 100), a string representing percentage\n   of the inner width of the Table (e.g. \"25%\"), or a string\n   representing a flex width (e.g. \"1*\").",
             "type": [
               "Integer",
               "String"
@@ -188,9 +188,9 @@
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -212,31 +212,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the minimum width of a column."
+            "body": "<p>Set the minimum width of a column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column whose minimum width is to be set",
+            "body": "column {Integer}\n   The column whose minimum width is to be set",
             "paramName": "column",
-            "description": "\nThe column whose minimum width is to be set",
+            "description": "\n   The column whose minimum width is to be set",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe minimum width of the specified column.",
+            "body": "width {Integer}\n   The minimum width of the specified column.",
             "paramName": "width",
-            "description": "\nThe minimum width of the specified column.",
+            "description": "\n   The minimum width of the specified column.",
             "type": "Integer"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },
@@ -258,31 +258,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the maximum width of a column."
+            "body": "<p>Set the maximum width of a column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "column {Integer}\nThe column whose maximum width is to be set",
+            "body": "column {Integer}\n   The column whose maximum width is to be set",
             "paramName": "column",
-            "description": "\nThe column whose maximum width is to be set",
+            "description": "\n   The column whose maximum width is to be set",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe maximum width of the specified column.",
+            "body": "width {Integer}\n   The maximum width of the specified column.",
             "paramName": "width",
-            "description": "\nThe maximum width of the specified column.",
+            "description": "\n   The maximum width of the specified column.",
             "type": "Integer"
           }
         ],
         "@throws": [
           {
             "name": "@throws",
-            "body": "{Error}\nError is thrown if the provided column number is out of the range.",
+            "body": "{Error}\n   Error is thrown if the provided column number is out of the range.",
             "type": "Error",
-            "description": "\nError is thrown if the provided column number is out of the range."
+            "description": "\n   Error is thrown if the provided column number is out of the range."
           }
         ]
       },

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 29,
+        "line": 27,
         "column": 0
       },
       "end": {
-        "line": 980,
+        "line": 978,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThe Pane provides a window of a larger virtual grid.\n\nThe actual rendering is performed by one or several layers ({@link ILayer}.\nThe pane computes, which cells of the virtual area is visible and instructs\nthe layers to render these cells."
+          "body": "<p>The Pane provides a window of a larger virtual grid.\n The actual rendering is performed by one or several layers ({@link ILayer}.\n The pane computes, which cells of the virtual area is visible and instructs\n the layers to render these cells.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 40,
-        "column": 2
+        "line": 38,
+        "column": 14
       },
       "end": {
-        "line": 75,
+        "line": 73,
         "column": 3
       }
     },
@@ -93,11 +93,11 @@
     "cellTap": {
       "location": {
         "start": {
-          "line": 81,
+          "line": 79,
           "column": 4
         },
         "end": {
-          "line": 81,
+          "line": 79,
           "column": 44
         }
       },
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a cell is tapped."
+            "body": "<p>Fired if a cell is tapped.</p>"
           }
         ]
       },
@@ -115,11 +115,11 @@
     "cellContextmenu": {
       "location": {
         "start": {
-          "line": 84,
+          "line": 82,
           "column": 4
         },
         "end": {
-          "line": 84,
+          "line": 82,
           "column": 52
         }
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a cell is right-clicked."
+            "body": "<p>Fired if a cell is right-clicked.</p>"
           }
         ]
       },
@@ -137,11 +137,11 @@
     "cellDbltap": {
       "location": {
         "start": {
-          "line": 87,
+          "line": 85,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 85,
           "column": 47
         }
       },
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if a cell is double-tapped."
+            "body": "<p>Fired if a cell is double-tapped.</p>"
           }
         ]
       },
@@ -159,11 +159,11 @@
     "update": {
       "location": {
         "start": {
-          "line": 90,
+          "line": 88,
           "column": 4
         },
         "end": {
-          "line": 90,
+          "line": 88,
           "column": 34
         }
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired on resize of either the container or the (virtual) content."
+            "body": "<p>Fired on resize of either the container or the (virtual) content.</p>"
           }
         ]
       },
@@ -181,11 +181,11 @@
     "scrollX": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 93,
+          "line": 91,
           "column": 34
         }
       },
@@ -193,7 +193,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the pane is scrolled horizontally."
+            "body": "<p>Fired if the pane is scrolled horizontally.</p>"
           }
         ]
       },
@@ -203,11 +203,11 @@
     "scrollY": {
       "location": {
         "start": {
-          "line": 96,
+          "line": 94,
           "column": 4
         },
         "end": {
-          "line": 96,
+          "line": 94,
           "column": 34
         }
       },
@@ -215,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired if the pane is scrolled vertically."
+            "body": "<p>Fired if the pane is scrolled vertically.</p>"
           }
         ]
       },
@@ -227,11 +227,11 @@
     "width": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 105,
           "column": 5
         }
       },
@@ -239,7 +239,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -256,11 +256,11 @@
     "height": {
       "location": {
         "start": {
-          "line": 111,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 113,
           "column": 5
         }
       },
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -287,11 +287,11 @@
     "__rowConfig": {
       "location": {
         "start": {
-          "line": 121,
+          "line": 119,
           "column": 4
         },
         "end": {
-          "line": 121,
+          "line": 119,
           "column": 22
         }
       },
@@ -301,11 +301,11 @@
     "__columnConfig": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 120,
           "column": 25
         }
       },
@@ -315,11 +315,11 @@
     "__scrollTop": {
       "location": {
         "start": {
-          "line": 123,
+          "line": 121,
           "column": 4
         },
         "end": {
-          "line": 123,
+          "line": 121,
           "column": 22
         }
       },
@@ -329,11 +329,11 @@
     "__scrollLeft": {
       "location": {
         "start": {
-          "line": 124,
+          "line": 122,
           "column": 4
         },
         "end": {
-          "line": 124,
+          "line": 122,
           "column": 23
         }
       },
@@ -343,11 +343,11 @@
     "__paneHeight": {
       "location": {
         "start": {
-          "line": 125,
+          "line": 123,
           "column": 4
         },
         "end": {
-          "line": 125,
+          "line": 123,
           "column": 23
         }
       },
@@ -357,11 +357,11 @@
     "__paneWidth": {
       "location": {
         "start": {
-          "line": 126,
+          "line": 124,
           "column": 4
         },
         "end": {
-          "line": 126,
+          "line": 124,
           "column": 22
         }
       },
@@ -371,11 +371,11 @@
     "__layerWindow": {
       "location": {
         "start": {
-          "line": 127,
+          "line": 125,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 125,
           "column": 24
         }
       },
@@ -385,11 +385,11 @@
     "__jobs": {
       "location": {
         "start": {
-          "line": 128,
+          "line": 126,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 126,
           "column": 17
         }
       },
@@ -399,11 +399,11 @@
     "__layerContainer": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 127,
           "column": 4
         },
         "end": {
-          "line": 129,
+          "line": 127,
           "column": 27
         }
       },
@@ -413,11 +413,11 @@
     "__layers": {
       "location": {
         "start": {
-          "line": 130,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 128,
           "column": 19
         }
       },
@@ -427,11 +427,11 @@
     "__dontFireUpdate": {
       "location": {
         "start": {
-          "line": 131,
+          "line": 129,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 129,
           "column": 27
         }
       },
@@ -441,11 +441,11 @@
     "__columnSizes": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 132,
+          "line": 130,
           "column": 24
         }
       },
@@ -455,11 +455,11 @@
     "__rowSizes": {
       "location": {
         "start": {
-          "line": 133,
+          "line": 131,
           "column": 4
         },
         "end": {
-          "line": 133,
+          "line": 131,
           "column": 21
         }
       },
@@ -469,11 +469,11 @@
     "__pointerDownCoords": {
       "location": {
         "start": {
-          "line": 134,
+          "line": 132,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 132,
           "column": 30
         }
       },
@@ -483,11 +483,11 @@
     "getRowConfig": {
       "location": {
         "start": {
-          "line": 149,
+          "line": 147,
           "column": 4
         },
         "end": {
-          "line": 151,
+          "line": 149,
           "column": 5
         }
       },
@@ -495,11 +495,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nACCESSOR METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  ACCESSOR METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the axis object, which defines the row numbers and the row sizes."
+            "body": "<p>Get the axis object, which defines the row numbers and the row sizes.</p>"
           }
         ],
         "@return": [
@@ -517,11 +517,11 @@
     "getColumnConfig": {
       "location": {
         "start": {
-          "line": 159,
+          "line": 157,
           "column": 4
         },
         "end": {
-          "line": 161,
+          "line": 159,
           "column": 5
         }
       },
@@ -529,7 +529,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the axis object, which defines the column numbers and the column sizes."
+            "body": "<p>Get the axis object, which defines the column numbers and the column sizes.</p>"
           }
         ],
         "@return": [
@@ -547,11 +547,11 @@
     "getChildren": {
       "location": {
         "start": {
-          "line": 176,
+          "line": 174,
           "column": 4
         },
         "end": {
-          "line": 178,
+          "line": 176,
           "column": 5
         }
       },
@@ -559,11 +559,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYER MANAGEMENT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYER MANAGEMENT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns an array containing the layer container."
+            "body": "<p>Returns an array containing the layer container.</p>"
           }
         ],
         "@return": [
@@ -581,11 +581,11 @@
     "addLayer": {
       "location": {
         "start": {
-          "line": 186,
+          "line": 184,
           "column": 4
         },
         "end": {
-          "line": 195,
+          "line": 193,
           "column": 5
         }
       },
@@ -593,7 +593,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a layer to the layer container."
+            "body": "<p>Add a layer to the layer container.</p>"
           }
         ],
         "@param": [
@@ -612,11 +612,11 @@
     "getLayers": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 205,
+          "line": 203,
           "column": 5
         }
       },
@@ -624,7 +624,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all layers."
+            "body": "<p>Get a list of all layers.</p>"
           }
         ],
         "@return": [
@@ -642,11 +642,11 @@
     "getVisibleLayers": {
       "location": {
         "start": {
-          "line": 213,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 224,
+          "line": 222,
           "column": 5
         }
       },
@@ -654,7 +654,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all visible layers."
+            "body": "<p>Get a list of all visible layers.</p>"
           }
         ],
         "@return": [
@@ -672,11 +672,11 @@
     "getScrollMaxX": {
       "location": {
         "start": {
-          "line": 239,
+          "line": 237,
           "column": 4
         },
         "end": {
-          "line": 248,
+          "line": 246,
           "column": 5
         }
       },
@@ -684,11 +684,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "The maximum horizontal scroll position."
+            "body": "<p>The maximum horizontal scroll position.</p>"
           }
         ],
         "@return": [
@@ -706,11 +706,11 @@
     "getScrollMaxY": {
       "location": {
         "start": {
-          "line": 256,
+          "line": 254,
           "column": 4
         },
         "end": {
-          "line": 265,
+          "line": 263,
           "column": 5
         }
       },
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The maximum vertical scroll position."
+            "body": "<p>The maximum vertical scroll position.</p>"
           }
         ],
         "@return": [
@@ -736,11 +736,11 @@
     "setScrollY": {
       "location": {
         "start": {
-          "line": 273,
+          "line": 271,
           "column": 4
         },
         "end": {
-          "line": 290,
+          "line": 288,
           "column": 5
         }
       },
@@ -748,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the content to the given left coordinate."
+            "body": "<p>Scrolls the content to the given left coordinate.</p>"
           }
         ],
         "@param": [
@@ -767,11 +767,11 @@
     "getScrollY": {
       "location": {
         "start": {
-          "line": 298,
+          "line": 296,
           "column": 4
         },
         "end": {
-          "line": 300,
+          "line": 298,
           "column": 5
         }
       },
@@ -779,7 +779,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the vertical scroll offset."
+            "body": "<p>Returns the vertical scroll offset.</p>"
           }
         ],
         "@return": [
@@ -797,11 +797,11 @@
     "setScrollX": {
       "location": {
         "start": {
-          "line": 308,
+          "line": 306,
           "column": 4
         },
         "end": {
-          "line": 326,
+          "line": 324,
           "column": 5
         }
       },
@@ -809,7 +809,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the content to the given top coordinate."
+            "body": "<p>Scrolls the content to the given top coordinate.</p>"
           }
         ],
         "@param": [
@@ -828,11 +828,11 @@
     "getScrollX": {
       "location": {
         "start": {
-          "line": 334,
+          "line": 332,
           "column": 4
         },
         "end": {
-          "line": 336,
+          "line": 334,
           "column": 5
         }
       },
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the horizontal scroll offset."
+            "body": "<p>Returns the horizontal scroll offset.</p>"
           }
         ],
         "@return": [
@@ -858,11 +858,11 @@
     "getScrollSize": {
       "location": {
         "start": {
-          "line": 345,
+          "line": 343,
           "column": 4
         },
         "end": {
-          "line": 351,
+          "line": 349,
           "column": 5
         }
       },
@@ -870,15 +870,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The (virtual) size of the content."
+            "body": "<p>The (virtual) size of the content.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Size of the content (keys: <code>width</code> and\n<code>height</code>).",
+            "body": "{Map} Size of the content (keys: <code>width</code> and\n     <code>height</code>).",
             "type": "Map",
-            "description": " Size of the content (keys: <code>width</code> and\n<code>height</code>)."
+            "description": " Size of the content (keys: <code>width</code> and\n     <code>height</code>)."
           }
         ]
       },
@@ -888,11 +888,11 @@
     "scrollRowIntoView": {
       "location": {
         "start": {
-          "line": 366,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 390,
+          "line": 388,
           "column": 5
         }
       },
@@ -900,11 +900,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSCROLL INTO VIEW SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  SCROLL INTO VIEW SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Scrolls a row into the visible area of the pane."
+            "body": "<p>Scrolls a row into the visible area of the pane.</p>"
           }
         ],
         "@param": [
@@ -923,11 +923,11 @@
     "scrollColumnIntoView": {
       "location": {
         "start": {
-          "line": 398,
+          "line": 396,
           "column": 4
         },
         "end": {
-          "line": 422,
+          "line": 420,
           "column": 5
         }
       },
@@ -935,7 +935,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls a column into the visible area of the pane."
+            "body": "<p>Scrolls a column into the visible area of the pane.</p>"
           }
         ],
         "@param": [
@@ -954,11 +954,11 @@
     "scrollCellIntoView": {
       "location": {
         "start": {
-          "line": 431,
+          "line": 429,
           "column": 4
         },
         "end": {
-          "line": 448,
+          "line": 446,
           "column": 5
         }
       },
@@ -966,7 +966,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls a grid cell into the visible area of the pane."
+            "body": "<p>Scrolls a grid cell into the visible area of the pane.</p>"
           }
         ],
         "@param": [
@@ -992,11 +992,11 @@
     "getCellAtPosition": {
       "location": {
         "start": {
-          "line": 472,
+          "line": 470,
           "column": 4
         },
         "end": {
-          "line": 503,
+          "line": 501,
           "column": 5
         }
       },
@@ -1004,35 +1004,35 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCELL SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CELL SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Get the grid cell at the given absolute document coordinates. This method\ncan be used to convert the pointer position returned by\n{@link qx.event.type.Pointer#getDocumentLeft} and\n{@link qx.event.type.Pointer#getDocumentLeft} into cell coordinates."
+            "body": "<p>Get the grid cell at the given absolute document coordinates. This method\n can be used to convert the pointer position returned by\n {@link qx.event.type.Pointer#getDocumentLeft} and\n {@link qx.event.type.Pointer#getDocumentLeft} into cell coordinates.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "documentX {Integer} The x coordinate relative to the viewport\norigin.",
+            "body": "documentX {Integer} The x coordinate relative to the viewport\n    origin.",
             "paramName": "documentX",
-            "description": " The x coordinate relative to the viewport\norigin.",
+            "description": " The x coordinate relative to the viewport\n    origin.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "documentY {Integer} The y coordinate relative to the viewport\norigin.",
+            "body": "documentY {Integer} The y coordinate relative to the viewport\n    origin.",
             "paramName": "documentY",
-            "description": " The y coordinate relative to the viewport\norigin.",
+            "description": " The y coordinate relative to the viewport\n    origin.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map|null} A map containing the <code>row</code> and <code>column</code>\nof the found cell. If the coordinate is outside of the pane's bounds\nor there is no cell at the coordinate <code>null</code> is returned.",
+            "body": "{Map|null} A map containing the <code>row</code> and <code>column</code>\n    of the found cell. If the coordinate is outside of the pane's bounds\n    or there is no cell at the coordinate <code>null</code> is returned.",
             "type": "Map|null",
-            "description": " A map containing the <code>row</code> and <code>column</code>\nof the found cell. If the coordinate is outside of the pane's bounds\nor there is no cell at the coordinate <code>null</code> is returned."
+            "description": " A map containing the <code>row</code> and <code>column</code>\n    of the found cell. If the coordinate is outside of the pane's bounds\n    or there is no cell at the coordinate <code>null</code> is returned."
           }
         ]
       },
@@ -1042,11 +1042,11 @@
     "prefetchX": {
       "location": {
         "start": {
-          "line": 527,
+          "line": 525,
           "column": 4
         },
         "end": {
-          "line": 557,
+          "line": 555,
           "column": 5
         }
       },
@@ -1054,40 +1054,40 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPREFETCH SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PREFETCH SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Increase the layers width beyond the needed width to improve\nhorizontal scrolling. The layers are only resized if invisible parts\nleft/right of the pane window are smaller than minLeft/minRight."
+            "body": "<p>Increase the layers width beyond the needed width to improve\n horizontal scrolling. The layers are only resized if invisible parts\n left/right of the pane window are smaller than minLeft/minRight.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "minLeft {Integer} Only prefetch if the invisible part left of the\npane window if smaller than this (pixel) value.",
+            "body": "minLeft {Integer} Only prefetch if the invisible part left of the\n    pane window if smaller than this (pixel) value.",
             "paramName": "minLeft",
-            "description": " Only prefetch if the invisible part left of the\npane window if smaller than this (pixel) value.",
+            "description": " Only prefetch if the invisible part left of the\n    pane window if smaller than this (pixel) value.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "maxLeft {Integer} The amount of pixel the layers should reach\nleft of the pane window.",
+            "body": "maxLeft {Integer} The amount of pixel the layers should reach\n    left of the pane window.",
             "paramName": "maxLeft",
-            "description": " The amount of pixel the layers should reach\nleft of the pane window.",
+            "description": " The amount of pixel the layers should reach\n    left of the pane window.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "minRight {Integer} Only prefetch if the invisible part right of the\npane window if smaller than this (pixel) value.",
+            "body": "minRight {Integer} Only prefetch if the invisible part right of the\n    pane window if smaller than this (pixel) value.",
             "paramName": "minRight",
-            "description": " Only prefetch if the invisible part right of the\npane window if smaller than this (pixel) value.",
+            "description": " Only prefetch if the invisible part right of the\n    pane window if smaller than this (pixel) value.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "maxRight {Integer} The amount of pixel the layers should reach\nright of the pane window.",
+            "body": "maxRight {Integer} The amount of pixel the layers should reach\n    right of the pane window.",
             "paramName": "maxRight",
-            "description": " The amount of pixel the layers should reach\nright of the pane window.",
+            "description": " The amount of pixel the layers should reach\n    right of the pane window.",
             "type": "Integer"
           }
         ]
@@ -1098,11 +1098,11 @@
     "prefetchY": {
       "location": {
         "start": {
-          "line": 574,
+          "line": 572,
           "column": 4
         },
         "end": {
-          "line": 604,
+          "line": 602,
           "column": 5
         }
       },
@@ -1110,36 +1110,36 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Increase the layers height beyond the needed height to improve\nvertical scrolling. The layers are only resized if invisible parts\nabove/below the pane window are smaller than minAbove/minBelow."
+            "body": "<p>Increase the layers height beyond the needed height to improve\n vertical scrolling. The layers are only resized if invisible parts\n above/below the pane window are smaller than minAbove/minBelow.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "minAbove {Integer} Only prefetch if the invisible part above the\npane window if smaller than this (pixel) value.",
+            "body": "minAbove {Integer} Only prefetch if the invisible part above the\n    pane window if smaller than this (pixel) value.",
             "paramName": "minAbove",
-            "description": " Only prefetch if the invisible part above the\npane window if smaller than this (pixel) value.",
+            "description": " Only prefetch if the invisible part above the\n    pane window if smaller than this (pixel) value.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "maxAbove {Integer} The amount of pixel the layers should reach\nabove the pane window.",
+            "body": "maxAbove {Integer} The amount of pixel the layers should reach\n    above the pane window.",
             "paramName": "maxAbove",
-            "description": " The amount of pixel the layers should reach\nabove the pane window.",
+            "description": " The amount of pixel the layers should reach\n    above the pane window.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "minBelow {Integer} Only prefetch if the invisible part below the\npane window if smaller than this (pixel) value.",
+            "body": "minBelow {Integer} Only prefetch if the invisible part below the\n    pane window if smaller than this (pixel) value.",
             "paramName": "minBelow",
-            "description": " Only prefetch if the invisible part below the\npane window if smaller than this (pixel) value.",
+            "description": " Only prefetch if the invisible part below the\n    pane window if smaller than this (pixel) value.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "maxBelow {Integer} The amount of pixel the layers should reach\nbelow the pane window.",
+            "body": "maxBelow {Integer} The amount of pixel the layers should reach\n    below the pane window.",
             "paramName": "maxBelow",
-            "description": " The amount of pixel the layers should reach\nbelow the pane window.",
+            "description": " The amount of pixel the layers should reach\n    below the pane window.",
             "type": "Integer"
           }
         ]
@@ -1150,11 +1150,11 @@
     "_onResize": {
       "location": {
         "start": {
-          "line": 619,
+          "line": 617,
           "column": 4
         },
         "end": {
-          "line": 628,
+          "line": 626,
           "column": 5
         }
       },
@@ -1162,11 +1162,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT LISTENER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT LISTENER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Resize event handler.\n\nUpdates the visible window."
+            "body": "<p>Resize event handler.\n Updates the visible window.</p>"
           }
         ]
       },
@@ -1176,11 +1176,11 @@
     "_onAppear": {
       "location": {
         "start": {
-          "line": 634,
+          "line": 632,
           "column": 4
         },
         "end": {
-          "line": 636,
+          "line": 634,
           "column": 5
         }
       },
@@ -1188,7 +1188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resize event handler. Do a full update on first appear."
+            "body": "<p>Resize event handler. Do a full update on first appear.</p>"
           }
         ]
       },
@@ -1198,11 +1198,11 @@
     "_onPointerDown": {
       "location": {
         "start": {
-          "line": 643,
+          "line": 641,
           "column": 4
         },
         "end": {
-          "line": 645,
+          "line": 643,
           "column": 5
         }
       },
@@ -1210,7 +1210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for pointer down. Remembers cell position to prevent pointer event when cell position change."
+            "body": "<p>Event listener for pointer down. Remembers cell position to prevent pointer event when cell position change.</p>"
           }
         ],
         "@param": [
@@ -1229,11 +1229,11 @@
     "_onTap": {
       "location": {
         "start": {
-          "line": 652,
+          "line": 650,
           "column": 4
         },
         "end": {
-          "line": 654,
+          "line": 652,
           "column": 5
         }
       },
@@ -1241,7 +1241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for pointer taps. Fires an cellTap event."
+            "body": "<p>Event listener for pointer taps. Fires an cellTap event.</p>"
           }
         ],
         "@param": [
@@ -1260,11 +1260,11 @@
     "_onContextmenu": {
       "location": {
         "start": {
-          "line": 662,
+          "line": 660,
           "column": 4
         },
         "end": {
-          "line": 664,
+          "line": 662,
           "column": 5
         }
       },
@@ -1272,7 +1272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for context menu taps. Fires an cellContextmenu event."
+            "body": "<p>Event listener for context menu taps. Fires an cellContextmenu event.</p>"
           }
         ],
         "@param": [
@@ -1291,11 +1291,11 @@
     "_onDbltap": {
       "location": {
         "start": {
-          "line": 672,
+          "line": 670,
           "column": 4
         },
         "end": {
-          "line": 674,
+          "line": 672,
           "column": 5
         }
       },
@@ -1303,7 +1303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event listener for double taps. Fires an cellDbltap event."
+            "body": "<p>Event listener for double taps. Fires an cellDbltap event.</p>"
           }
         ],
         "@param": [
@@ -1322,11 +1322,11 @@
     "_checkScrollBounds": {
       "location": {
         "start": {
-          "line": 681,
+          "line": 679,
           "column": 4
         },
         "end": {
-          "line": 696,
+          "line": 694,
           "column": 5
         }
       },
@@ -1334,7 +1334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fixed scrollbar position whenever it is out of range\nit can happen when removing an item from the list reducing\nthe max value for scrollY #8976"
+            "body": "<p>Fixed scrollbar position whenever it is out of range\n it can happen when removing an item from the list reducing\n the max value for scrollY #8976</p>"
           }
         ]
       },
@@ -1344,11 +1344,11 @@
     "__handlePointerCellEvent": {
       "location": {
         "start": {
-          "line": 705,
+          "line": 703,
           "column": 4
         },
         "end": {
-          "line": 722,
+          "line": 720,
           "column": 5
         }
       },
@@ -1356,7 +1356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Converts a pointer event into a cell event and fires the cell event if the\npointer is over a cell."
+            "body": "<p>Converts a pointer event into a cell event and fires the cell event if the\n pointer is over a cell.</p>"
           }
         ],
         "@param": [
@@ -1382,11 +1382,11 @@
     "syncWidget": {
       "location": {
         "start": {
-          "line": 733,
+          "line": 731,
           "column": 4
         },
         "end": {
-          "line": 743,
+          "line": 741,
           "column": 5
         }
       },
@@ -1394,11 +1394,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPANE UPDATE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PANE UPDATE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1421,11 +1421,11 @@
     "_setLayerWindow": {
       "location": {
         "start": {
-          "line": 762,
+          "line": 760,
           "column": 4
         },
         "end": {
-          "line": 827,
+          "line": 825,
           "column": 5
         }
       },
@@ -1433,7 +1433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the size of the layers to contain the cells at the pixel position\n\"left/right\" up to \"left+minHeight/right+minHeight\". The offset of the\nlayer container is adjusted to respect the pane's scroll top and scroll\nleft values."
+            "body": "<p>Sets the size of the layers to contain the cells at the pixel position\n \"left/right\" up to \"left+minHeight/right+minHeight\". The offset of the\n layer container is adjusted to respect the pane's scroll top and scroll\n left values.</p>"
           }
         ],
         "@param": [
@@ -1460,23 +1460,23 @@
           },
           {
             "name": "@param",
-            "body": "minWidth {Integer} The minimum end coordinate of the layers will\nbe larger than <code>left+minWidth</code>.",
+            "body": "minWidth {Integer} The minimum end coordinate of the layers will\n    be larger than <code>left+minWidth</code>.",
             "paramName": "minWidth",
-            "description": " The minimum end coordinate of the layers will\nbe larger than <code>left+minWidth</code>.",
+            "description": " The minimum end coordinate of the layers will\n    be larger than <code>left+minWidth</code>.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "minHeight {Integer} The minimum end coordinate of the layers will\nbe larger than <code>top+minHeight</code>.",
+            "body": "minHeight {Integer} The minimum end coordinate of the layers will\n    be larger than <code>top+minHeight</code>.",
             "paramName": "minHeight",
-            "description": " The minimum end coordinate of the layers will\nbe larger than <code>top+minHeight</code>.",
+            "description": " The minimum end coordinate of the layers will\n    be larger than <code>top+minHeight</code>.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "doFullUpdate {Boolean?false} Whether a full update on the layer\nshould be performed of if only the layer window should be updated.",
+            "body": "doFullUpdate {Boolean?false} Whether a full update on the layer\n    should be performed of if only the layer window should be updated.",
             "paramName": "doFullUpdate",
-            "description": " Whether a full update on the layer\nshould be performed of if only the layer window should be updated.",
+            "description": " Whether a full update on the layer\n    should be performed of if only the layer window should be updated.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1489,11 +1489,11 @@
     "__checkPaneResize": {
       "location": {
         "start": {
-          "line": 835,
+          "line": 833,
           "column": 4
         },
         "end": {
-          "line": 851,
+          "line": 849,
           "column": 5
         }
       },
@@ -1501,7 +1501,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the pane was resized and fire an {@link #update} event if\nit was."
+            "body": "<p>Check whether the pane was resized and fire an {@link #update} event if\n it was.</p>"
           }
         ]
       },
@@ -1511,11 +1511,11 @@
     "fullUpdate": {
       "location": {
         "start": {
-          "line": 857,
+          "line": 855,
           "column": 4
         },
         "end": {
-          "line": 861,
+          "line": 859,
           "column": 5
         }
       },
@@ -1523,7 +1523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedule a full update on all visible layers."
+            "body": "<p>Schedule a full update on all visible layers.</p>"
           }
         ]
       },
@@ -1533,11 +1533,11 @@
     "isUpdatePending": {
       "location": {
         "start": {
-          "line": 869,
+          "line": 867,
           "column": 4
         },
         "end": {
-          "line": 871,
+          "line": 869,
           "column": 5
         }
       },
@@ -1545,7 +1545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a full update is scheduled."
+            "body": "<p>Whether a full update is scheduled.</p>"
           }
         ],
         "@return": [
@@ -1563,11 +1563,11 @@
     "_fullUpdate": {
       "location": {
         "start": {
-          "line": 878,
+          "line": 876,
           "column": 4
         },
         "end": {
-          "line": 903,
+          "line": 901,
           "column": 5
         }
       },
@@ -1575,7 +1575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Perform a full update on all visible layers. All cached data will be\ndiscarded."
+            "body": "<p>Perform a full update on all visible layers. All cached data will be\n discarded.</p>"
           }
         ]
       },
@@ -1585,11 +1585,11 @@
     "_deferredUpdateScrollPosition": {
       "location": {
         "start": {
-          "line": 910,
+          "line": 908,
           "column": 4
         },
         "end": {
-          "line": 914,
+          "line": 912,
           "column": 5
         }
       },
@@ -1597,7 +1597,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedule an update the visible window of the grid according to the top\nand left scroll positions."
+            "body": "<p>Schedule an update the visible window of the grid according to the top\n and left scroll positions.</p>"
           }
         ]
       },
@@ -1607,11 +1607,11 @@
     "_updateScrollPosition": {
       "location": {
         "start": {
-          "line": 921,
+          "line": 919,
           "column": 4
         },
         "end": {
-          "line": 969,
+          "line": 967,
           "column": 5
         }
       },
@@ -1619,7 +1619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the visible window of the grid according to the top and left scroll\npositions."
+            "body": "<p>Update the visible window of the grid according to the top and left scroll\n positions.</p>"
           }
         ]
       },
@@ -5114,14 +5114,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 973,
-        "column": 2
+        "line": 971,
+        "column": 13
       },
       "end": {
-        "line": 979,
+        "line": 977,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

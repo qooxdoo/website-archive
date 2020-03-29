@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Event handler Interface.\n\nAll custom event handler like mouse or keyboard event handler must implement\nthis interface."
+          "body": "<p>Event handler Interface.\n All custom event handler like mouse or keyboard event handler must implement\n this interface.</p>"
         }
       ]
     }
@@ -161,15 +161,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the event handler can handle events of the given type. If the\nevent handler class has a static variable called <code>IGNORE_CAN_HANDLE</code>\nwith the value <code>true</code> this function is not called. Whether the\nhandler can handle the event is them only determined by the static variables\n<code>SUPPORTED_TYPES</code> and <code>TARGET_CHECK</code>."
+            "body": "<p>Whether the event handler can handle events of the given type. If the\n event handler class has a static variable called <code>IGNORE_CAN_HANDLE</code>\n with the value <code>true</code> this function is not called. Whether the\n handler can handle the event is them only determined by the static variables\n <code>SUPPORTED_TYPES</code> and <code>TARGET_CHECK</code>.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -183,9 +183,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -207,15 +207,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is called each time an event listener, for one of the\nsupported events, is added using {@link qx.event.Manager#addListener}."
+            "body": "<p>This method is called each time an event listener, for one of the\n supported events, is added using {@link qx.event.Manager#addListener}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -227,9 +227,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]
@@ -252,15 +252,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method is called each time an event listener, for one of the\nsupported events, is removed by using {@link qx.event.Manager#removeListener}\nand no other event listener is listening on this type."
+            "body": "<p>This method is called each time an event listener, for one of the\n supported events, is removed by using {@link qx.event.Manager#removeListener}\n and no other event listener is listening on this type.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -272,9 +272,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ]

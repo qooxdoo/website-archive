@@ -12,11 +12,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 43,
+        "line": 42,
         "column": 0
       },
       "end": {
-        "line": 340,
+        "line": 339,
         "column": 3
       }
     },
@@ -24,11 +24,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nUnify Project\n\nHomepage:\nhttp://unify-project.org\n\nCopyright:\n2009-2010 Deutsche Telekom AG, Germany, http://telekom.com\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n   ======================================================================\n   This class contains code based on the following work:\n Unify Project\n     Homepage:\n       http://unify-project.org\n     Copyright:\n       2009-2010 Deutsche Telekom AG, Germany, http://telekom.com\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL - NOT READY FOR PRODUCTION\n\nThis class provides support for HTML5 transition and animation events.\nCurrently only WebKit and Firefox are supported.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>This class provides support for HTML5 transition and animation events.\n Currently only WebKit and Firefox are supported.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -37,11 +37,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 62,
-        "column": 2
+        "line": 61,
+        "column": 14
       },
       "end": {
-        "line": 68,
+        "line": 67,
         "column": 3
       }
     },
@@ -49,11 +49,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Create a new instance"
+          "body": "<p>Create a new instance</p>"
         }
       ],
       "@param": [
@@ -71,11 +71,11 @@
     "PRIORITY": {
       "location": {
         "start": {
-          "line": 82,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 82,
+          "line": 81,
           "column": 52
         }
       },
@@ -99,11 +99,11 @@
     "SUPPORTED_TYPES": {
       "location": {
         "start": {
-          "line": 85,
+          "line": 84,
           "column": 4
         },
         "end": {
-          "line": 91,
+          "line": 90,
           "column": 5
         }
       },
@@ -127,11 +127,11 @@
     "TARGET_CHECK": {
       "location": {
         "start": {
-          "line": 94,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 94,
+          "line": 93,
           "column": 56
         }
       },
@@ -155,11 +155,11 @@
     "IGNORE_CAN_HANDLE": {
       "location": {
         "start": {
-          "line": 97,
+          "line": 96,
           "column": 4
         },
         "end": {
-          "line": 97,
+          "line": 96,
           "column": 28
         }
       },
@@ -183,11 +183,11 @@
     "TYPE_TO_NATIVE": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 99,
           "column": 25
         }
       },
@@ -195,7 +195,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping of supported event types to native event types"
+            "body": "<p>Mapping of supported event types to native event types</p>"
           }
         ]
       },
@@ -205,11 +205,11 @@
     "NATIVE_TO_TYPE": {
       "location": {
         "start": {
-          "line": 103,
+          "line": 102,
           "column": 4
         },
         "end": {
-          "line": 103,
+          "line": 102,
           "column": 25
         }
       },
@@ -217,7 +217,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping of native event types to supported event types"
+            "body": "<p>Mapping of native event types to supported event types</p>"
           }
         ]
       },
@@ -229,11 +229,11 @@
     "__onEventWrapper": {
       "location": {
         "start": {
-          "line": 118,
+          "line": 117,
           "column": 4
         },
         "end": {
-          "line": 118,
+          "line": 117,
           "column": 27
         }
       },
@@ -243,11 +243,11 @@
     "__registeredEvents": {
       "location": {
         "start": {
-          "line": 119,
+          "line": 118,
           "column": 4
         },
         "end": {
-          "line": 119,
+          "line": 118,
           "column": 29
         }
       },
@@ -257,11 +257,11 @@
     "canHandleEvent": {
       "location": {
         "start": {
-          "line": 129,
+          "line": 128,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 130,
           "column": 5
         }
       },
@@ -269,19 +269,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -295,9 +295,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} Whether the event handler can handle events of the\ngiven type.",
+            "body": "{Boolean} Whether the event handler can handle events of the\n     given type.",
             "type": "Boolean",
-            "description": " Whether the event handler can handle events of the\ngiven type."
+            "description": " Whether the event handler can handle events of the\n     given type."
           }
         ]
       },
@@ -311,11 +311,11 @@
     "registerEvent": {
       "location": {
         "start": {
-          "line": 146,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 193,
           "column": 6
         }
       },
@@ -323,19 +323,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           },
           {
             "name": "@description",
-            "body": "This method is called each time an event listener, for one of the\nsupported events, is added using {@link qx.event.Manager#addListener}."
+            "body": "<p>This method is called each time an event listener, for one of the\n supported events, is added using {@link qx.event.Manager#addListener}.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target to, which the event handler should\nbe attached",
+            "body": "target {var} The target to, which the event handler should\n     be attached",
             "paramName": "target",
-            "description": " The target to, which the event handler should\nbe attached",
+            "description": " The target to, which the event handler should\n     be attached",
             "type": "var"
           },
           {
@@ -347,9 +347,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ],
@@ -366,11 +366,11 @@
     "unregisterEvent": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 209,
           "column": 4
         },
         "end": {
-          "line": 264,
+          "line": 263,
           "column": 6
         }
       },
@@ -378,19 +378,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           },
           {
             "name": "@description",
-            "body": "This method is called each time an event listener, for one of the\nsupported events, is removed by using {@link qx.event.Manager#removeListener}\nand no other event listener is listening on this type."
+            "body": "<p>This method is called each time an event listener, for one of the\n supported events, is removed by using {@link qx.event.Manager#removeListener}\n and no other event listener is listening on this type.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "target {var} The target from, which the event handler should\nbe removed",
+            "body": "target {var} The target from, which the event handler should\n     be removed",
             "paramName": "target",
-            "description": " The target from, which the event handler should\nbe removed",
+            "description": " The target from, which the event handler should\n     be removed",
             "type": "var"
           },
           {
@@ -402,9 +402,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "body": "capture {Boolean} Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event.",
+            "description": " Whether to attach the event to the\n         capturing phase or the bubbling phase of the event.",
             "type": "Boolean"
           }
         ],
@@ -421,11 +421,11 @@
     "_onNative": {
       "location": {
         "start": {
-          "line": 280,
+          "line": 279,
           "column": 4
         },
         "end": {
-          "line": 282,
+          "line": 281,
           "column": 6
         }
       },
@@ -433,11 +433,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT-HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT-HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Global handler for the transition event."
+            "body": "<p>Global handler for the transition event.</p>"
           }
         ],
         "@signature": [
@@ -583,11 +583,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 295,
-        "column": 2
+        "line": 294,
+        "column": 13
       },
       "end": {
-        "line": 309,
+        "line": 308,
         "column": 3
       }
     },
@@ -595,7 +595,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -603,11 +603,11 @@
   "defer": {
     "location": {
       "start": {
-        "line": 321,
-        "column": 2
+        "line": 320,
+        "column": 10
       },
       "end": {
-        "line": 339,
+        "line": 338,
         "column": 3
       }
     },
@@ -615,7 +615,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDEFER\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DEFER\n**********************************************************************\n</code></pre>"
         }
       ]
     }

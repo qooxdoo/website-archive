@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Query JSONP services using the script element. Requests may be cross-origin.\n\nConfiguration of the request is done with properties. Events are fired for\nvarious states in the life cycle of a request, such as \"success\". Request\ndata is transparently processed.\n\nFor an introduction to JSONP, please refer to\n<a href=\"http://ajaxian.com/archives/jsonp-json-with-padding\">Ajaxian.com</a>.\n\nHere is how to request a JSON file from a REST service and listen to\nthe \"success\" event:\n\n<pre class=\"javascript\">\nvar req = new qx.io.request.Jsonp();\nreq.setUrl(\"http://feeds.delicious.com/v2/json/popular\");\n\n// Some services have a fixed callback name\n// req.setCallbackName(\"callback\");\n\nreq.addListener(\"success\", function(e) {\nvar req = e.getTarget();\n\n// HTTP status code indicating success, e.g. 200\nreq.getStatus();\n\n// \"success\"\nreq.getPhase();\n\n// JSON response\nreq.getResponse();\n}, this);\n\n// Send request\nreq.send();\n</pre>\n\nSome noteable features:\n\n* Abstraction of low-level request\n* Convenient setup using properties\n* Fine-grained events\n* Symbolic phases\n* Transparent processing of request data\n* Stream-lined authentication\n* Flexible callback handling\n* Cross-origin requests\n\nIn order to debug requests, set the environment flag\n<code>qx.debug.io</code>.\n\nInternally uses {@link qx.bom.request.Jsonp}."
+          "body": "<p>Query JSONP services using the script element. Requests may be cross-origin.\n Configuration of the request is done with properties. Events are fired for\n various states in the life cycle of a request, such as \"success\". Request\n data is transparently processed.\n For an introduction to JSONP, please refer to\n <a href=\"http://ajaxian.com/archives/jsonp-json-with-padding\">Ajaxian.com</a>.\n Here is how to request a JSON file from a REST service and listen to\n the \"success\" event:\n </p>\n<pre class=\"javascript\">\n var req = new qx.io.request.Jsonp();\n req.setUrl(\"http://feeds.delicious.com/v2/json/popular\");\n\n\n req.addListener(\"success\", function(e) {\n   var req = e.getTarget();\n\n   req.getStatus();\n\n   req.getPhase();\n\n   req.getResponse();\n }, this);\n\n req.send();\n </pre>\n<p>Some noteable features:</p>\n<ul>\n<li>Abstraction of low-level request</li>\n<li>Convenient setup using properties</li>\n<li>Fine-grained events</li>\n<li>Symbolic phases</li>\n<li>Transparent processing of request data</li>\n<li>Stream-lined authentication</li>\n<li>Flexible callback handling</li>\n<li>Cross-origin requests\nIn order to debug requests, set the environment flag\n<code>qx.debug.io</code>.\nInternally uses {@link qx.bom.request.Jsonp}.</li>\n</ul>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error and data has been received."
+            "body": "<p>Fired when request completes without error and data has been received.</p>"
           }
         ]
       },
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error.\n\nEvery request receiving a response completes without error. This means\nthat even for responses that do not call the callback, a \"load\" event\nis fired. If you are only interested in the JSON data received, consider\nlistening to the {@link #success} event instead."
+            "body": "<p>Fired when request completes without error.\n Every request receiving a response completes without error. This means\n that even for responses that do not call the callback, a \"load\" event\n is fired. If you are only interested in the JSON data received, consider\n listening to the {@link #success} event instead.</p>"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request completes without error but no data was received.\n\nThe underlying script transport does not know the HTTP status of the\nresponse. However, if the callback was not called (no data received)\nan erroneous status (500) is assigned to the transport’s status\nproperty.\n\nNote: If you receive an unexpected \"statusError\", check that the JSONP\nservice accepts arbitrary callback names given as the \"callback\"\nparameter. In case the service expects another parameter for the callback\nname, use {@link #setCallbackParam}. Should the service respond with a\nhard-coded callback, set a custom callback name with\n{@link #setCallbackName}."
+            "body": "<p>Fired when request completes without error but no data was received.\n The underlying script transport does not know the HTTP status of the\n response. However, if the callback was not called (no data received)\n an erroneous status (500) is assigned to the transport’s status\n property.\n Note: If you receive an unexpected \"statusError\", check that the JSONP\n service accepts arbitrary callback names given as the \"callback\"\n parameter. In case the service expects another parameter for the callback\n name, use {@link #setCallbackParam}. Should the service respond with a\n hard-coded callback, set a custom callback name with\n {@link #setCallbackName}.</p>"
           }
         ]
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to allow request to be answered from cache.\n\nAllowed values:\n\n* <code>true</code>: Allow caching (Default)\n* <code>false</code>: Prohibit caching. Appends nocache parameter to URL."
+            "body": "<p>Whether to allow request to be answered from cache.\n Allowed values:</p>\n<ul>\n<li><code>true</code>: Allow caching (Default)</li>\n<li><code>false</code>: Prohibit caching. Appends nocache parameter to URL.</li>\n</ul>"
           }
         ]
       },
@@ -142,11 +142,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCONFIGURE TRANSPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CONFIGURE TRANSPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Create JSONP transport."
+            "body": "<p>Create JSONP transport.</p>"
           }
         ],
         "@return": [
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get configured URL.\n\nAppend request data to URL. Also append random string\nto URL if required by value of {@link #cache}."
+            "body": "<p>Get configured URL.\n Append request data to URL. Also append random string\n to URL if required by value of {@link #cache}.</p>"
           }
         ],
         "@return": [
@@ -214,7 +214,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the transport’s responseJson property.\n\nSee {@link qx.bom.request.Jsonp}."
+            "body": "<p>Return the transport’s responseJson property.\n See {@link qx.bom.request.Jsonp}.</p>"
           }
         ],
         "@return": [
@@ -248,11 +248,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCALLBACK MANAGEMENT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CALLBACK MANAGEMENT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set callback parameter.\n\nSee {@link qx.bom.request.Jsonp#setCallbackParam}."
+            "body": "<p>Set callback parameter.\n See {@link qx.bom.request.Jsonp#setCallbackParam}.</p>"
           }
         ],
         "@param": [
@@ -283,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set callback name.\n\nSee {@link qx.bom.request.Jsonp#setCallbackName}."
+            "body": "<p>Set callback name.\n See {@link qx.bom.request.Jsonp#setCallbackName}.</p>"
           }
         ],
         "@param": [

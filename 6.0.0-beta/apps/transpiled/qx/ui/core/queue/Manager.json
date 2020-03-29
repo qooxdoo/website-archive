@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class performs the auto flush of all layout relevant queues."
+          "body": "<p>This class performs the auto flush of all layout relevant queues.</p>"
         }
       ],
       "@require": [
@@ -193,15 +193,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Schedule a deferred flush of all queues."
+            "body": "<p>Schedule a deferred flush of all queues.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "job {String} The job, which should be performed. Valid values are\n<code>layout</code>, <code>decoration</code> and <code>element</code>.",
+            "body": "job {String} The job, which should be performed. Valid values are\n     <code>layout</code>, <code>decoration</code> and <code>element</code>.",
             "paramName": "job",
-            "description": " The job, which should be performed. Valid values are\n<code>layout</code>, <code>decoration</code> and <code>element</code>.",
+            "description": " The job, which should be performed. Valid values are\n     <code>layout</code>, <code>decoration</code> and <code>element</code>.",
             "type": "String"
           }
         ]
@@ -224,7 +224,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flush all layout queues in the correct order. This function is called\ndeferred if {@link #scheduleFlush} is called."
+            "body": "<p>Flush all layout queues in the correct order. This function is called\n deferred if {@link #scheduleFlush} is called.</p>"
           }
         ]
       },
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the callback code. If the callback throws an error the current\nflush is cleaned up and rescheduled. The finally code is called after the\ncallback even if it has thrown an exception."
+            "body": "<p>Executes the callback code. If the callback throws an error the current\n flush is cleaned up and rescheduled. The finally code is called after the\n callback even if it has thrown an exception.</p>"
           }
         ],
         "@signature": [
@@ -290,7 +290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler used on touch devices to prevent the queue from manipulating\nthe dom during the touch - mouse - ... event sequence. Usually, iOS\ndevices fire a click event 300ms after the touchend event. So using\n500ms should be a good value to be on the save side. This is necessary\ndue to the fact that the event chain is stopped if a manipulation in\nthe DOM is done."
+            "body": "<p>Handler used on touch devices to prevent the queue from manipulating\n the dom during the touch - mouse - … event sequence. Usually, iOS\n devices fire a click event 300ms after the touchend event. So using\n 500ms should be a good value to be on the save side. This is necessary\n due to the fact that the event chain is stopped if a manipulation in\n the DOM is done.</p>"
           }
         ],
         "@param": [
@@ -311,7 +311,7 @@
     "location": {
       "start": {
         "line": 292,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 304,
@@ -322,7 +322,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

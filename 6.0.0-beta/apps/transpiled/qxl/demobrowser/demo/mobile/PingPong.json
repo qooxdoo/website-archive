@@ -21,7 +21,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\ntbtz (Tino Butz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n tbtz (Tino Butz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
@@ -37,7 +37,7 @@
       "@require": [
         {
           "name": "@require",
-          "body": "(qx.bom.Element) // mark as load-time dependency so that the required\nevent dispatcher is loaded before listeners are registered"
+          "body": "qx.bom.Element"
         }
       ]
     }
@@ -213,7 +213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method contains the initial application code and gets called\nduring startup of the application"
+            "body": "<p>This method contains the initial application code and gets called\n during startup of the application</p>"
           }
         ]
       },
@@ -240,7 +240,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nGAME CONTROLL\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  GAME CONTROLL\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -290,7 +290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nHELPER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  HELPER\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },
@@ -326,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBUILDING BLOCKS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  BUILDING BLOCKS\n---------------------------------------------------------------------------\n</code></pre>"
           }
         ]
       },

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nStefan Kloiber (skloiber)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Stefan Kloiber (skloiber)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Shows the search pane."
+          "body": "<p>Shows the search pane.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 34,
-        "column": 4
+        "column": 16
       },
       "end": {
         "line": 47,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a search operation has finished"
+            "body": "<p>Fired when a search operation has finished</p>"
           }
         ]
       },
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Enters a term into the search box and selects the\nfirst result"
+            "body": "<p>Enters a term into the search box and selects the\n first result</p>"
           }
         ],
         "@param": [
@@ -206,7 +206,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Generate the search form."
+            "body": "<p>Generate the search form.</p>"
           }
         ]
       },
@@ -228,7 +228,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Execute the search query."
+            "body": "<p>Execute the search query.</p>"
           }
         ],
         "@param": [
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Validation"
+            "body": "<p>Validation</p>"
           }
         ],
         "@param": [
@@ -290,7 +290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the output"
+            "body": "<p>Sets the output</p>"
           }
         ],
         "@param": [
@@ -328,7 +328,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the type passed as argument is in the filter list or not"
+            "body": "<p>Checks whether the type passed as argument is in the filter list or not</p>"
           }
         ],
         "@param": [
@@ -359,7 +359,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set data for the listview"
+            "body": "<p>Set data for the listview</p>"
           }
         ],
         "@param": [
@@ -390,7 +390,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sort elements in order of type"
+            "body": "<p>Sort elements in order of type</p>"
           }
         ],
         "@param": [
@@ -428,7 +428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Load the api index"
+            "body": "<p>Load the api index</p>"
           }
         ],
         "@lint": [
@@ -456,7 +456,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Display information in the detail frame"
+            "body": "<p>Display information in the detail frame</p>"
           }
         ]
       },
@@ -3994,7 +3994,7 @@
     "location": {
       "start": {
         "line": 664,
-        "column": 4
+        "column": 15
       },
       "end": {
         "line": 669,
@@ -4005,7 +4005,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

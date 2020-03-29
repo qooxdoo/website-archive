@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is mainly a convenience wrapper for DOM elements to\nqooxdoo's event system."
+          "body": "<p>This class is mainly a convenience wrapper for DOM elements to\n qooxdoo's event system.</p>"
         }
       ],
       "@require": [
@@ -93,11 +93,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENTS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENTS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Add an event listener to a DOM element. The event listener is passed an\ninstance of {@link Event} containing all relevant information\nabout the event as parameter."
+            "body": "<p>Add an event listener to a DOM element. The event listener is passed an\n instance of {@link Event} containing all relevant information\n about the event as parameter.</p>"
           }
         ],
         "@param": [
@@ -124,27 +124,27 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener. When not given, the corresponding dispatcher\nusually falls back to a default, which is the target\nby convention. Note this is not a strict requirement, i.e.\ncustom dispatchers can follow a different strategy.",
+            "description": " Reference to the 'this' variable inside\n         the event listener. When not given, the corresponding dispatcher\n         usually falls back to a default, which is the target\n         by convention. Note this is not a strict requirement, i.e.\n         custom dispatchers can follow a different strategy.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "body": "capture {Boolean} Whether to attach the event to the\n       capturing phase or the bubbling phase of the event. The default is\n       to attach the event handler to the bubbling phase.",
             "paramName": "capture",
-            "description": " Whether to attach the event to the\ncapturing phase or the bubbling phase of the event. The default is\nto attach the event handler to the bubbling phase.",
+            "description": " Whether to attach the event to the\n       capturing phase or the bubbling phase of the event. The default is\n       to attach the event handler to the bubbling phase.",
             "type": "Boolean"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String} An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method.",
+            "body": "{String} An opaque id, which can be used to remove the event listener\n       using the {@link #removeListenerById} method.",
             "type": "qx.bom.String",
-            "description": " An opaque id, which can be used to remove the event listener\nusing the {@link #removeListenerById} method."
+            "description": " An opaque id, which can be used to remove the event listener\n       using the {@link #removeListenerById} method."
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an event listener from a from DOM node.\n\nNote: All registered event listeners will automatically be removed from\nthe DOM at page unload so it is not necessary to detach events yourself."
+            "body": "<p>Remove an event listener from a from DOM node.\n Note: All registered event listeners will automatically be removed from\n   the DOM at page unload so it is not necessary to detach events yourself.</p>"
           }
         ],
         "@param": [
@@ -193,18 +193,18 @@
           },
           {
             "name": "@param",
-            "body": "self {Object ? null} Reference to the 'this' variable inside\nthe event listener.",
+            "body": "self {Object ? null} Reference to the 'this' variable inside\n         the event listener.",
             "paramName": "self",
-            "description": " Reference to the 'this' variable inside\nthe event listener.",
+            "description": " Reference to the 'this' variable inside\n         the event listener.",
             "optional": true,
             "defaultValue": "null",
             "type": "Object"
           },
           {
             "name": "@param",
-            "body": "capture {Boolean} Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean} Whether to remove the event listener of\n       the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to remove the event listener of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to remove the event listener of\n       the bubbling or of the capturing phase.",
             "type": "Boolean"
           }
         ],
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an event listener from an event target by an id returned by\n{@link #addListener}"
+            "body": "<p>Removes an event listener from an event target by an id returned by\n {@link #addListener}</p>"
           }
         ],
         "@param": [
@@ -281,7 +281,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether there are one or more listeners for an event type\nregistered at the element."
+            "body": "<p>Check whether there are one or more listeners for an event type\n registered at the element.</p>"
           }
         ],
         "@param": [
@@ -301,9 +301,9 @@
           },
           {
             "name": "@param",
-            "body": "capture {Boolean ? false} Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "body": "capture {Boolean ? false} Whether to check for listeners of\n       the bubbling or of the capturing phase.",
             "paramName": "capture",
-            "description": " Whether to check for listeners of\nthe bubbling or of the capturing phase.",
+            "description": " Whether to check for listeners of\n       the bubbling or of the capturing phase.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -336,7 +336,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Focuses the given element. The element needs to have a positive <code>tabIndex</code> value."
+            "body": "<p>Focuses the given element. The element needs to have a positive <code>tabIndex</code> value.</p>"
           }
         ],
         "@param": [
@@ -367,7 +367,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Blurs the given element"
+            "body": "<p>Blurs the given element</p>"
           }
         ],
         "@param": [
@@ -398,7 +398,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Activates the given element. The active element receives all key board events."
+            "body": "<p>Activates the given element. The active element receives all key board events.</p>"
           }
         ],
         "@param": [
@@ -429,7 +429,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deactivates the given element. The active element receives all key board events."
+            "body": "<p>Deactivates the given element. The active element receives all key board events.</p>"
           }
         ],
         "@param": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Captures the given element"
+            "body": "<p>Captures the given element</p>"
           }
         ],
         "@param": [
@@ -473,9 +473,9 @@
           },
           {
             "name": "@param",
-            "body": "containerCapture {Boolean?true} If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "body": "containerCapture {Boolean?true} If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "paramName": "containerCapture",
-            "description": " If true all events originating in\nthe container are captured. If false events originating in the container\nare not captured.",
+            "description": " If true all events originating in\n   the container are captured. If false events originating in the container\n   are not captured.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -500,7 +500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Releases the given element (from a previous {@link #capture} call)"
+            "body": "<p>Releases the given element (from a previous {@link #capture} call)</p>"
           }
         ],
         "@param": [
@@ -531,11 +531,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nUTILS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  UTILS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Clone given DOM element. May optionally clone all attached\nevents (recursively) as well."
+            "body": "<p>Clone given DOM element. May optionally clone all attached\n events (recursively) as well.</p>"
           }
         ],
         "@param": [

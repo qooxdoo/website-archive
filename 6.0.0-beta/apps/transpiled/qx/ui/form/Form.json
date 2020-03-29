@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The form object is responsible for managing form items. For that, it takes\nadvantage of two existing qooxdoo classes.\nThe {@link qx.ui.form.Resetter} is used for resetting and the\n{@link qx.ui.form.validation.Manager} is used for all validation purposes.\n\nThe view code can be found in the used renderer ({@link qx.ui.form.renderer})."
+          "body": "<p>The form object is responsible for managing form items. For that, it takes\n advantage of two existing qooxdoo classes.\n The {@link qx.ui.form.Resetter} is used for resetting and the\n {@link qx.ui.form.validation.Manager} is used for all validation purposes.\n The view code can be found in the used renderer ({@link qx.ui.form.renderer}).</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 32,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 41,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "change": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired as soon as something changes in the form."
+            "body": "<p>Fired as soon as something changes in the form.</p>"
           }
         ]
       },
@@ -167,11 +168,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nADD\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   ADD\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Adds a form item to the form including its internal\n{@link qx.ui.form.validation.Manager} and {@link qx.ui.form.Resetter}.\n\n*Hint:* The order of all add calls represent the order in the layout."
+            "body": "<p>Adds a form item to the form including its internal\n {@link qx.ui.form.validation.Manager} and {@link qx.ui.form.Resetter}.\n<em>Hint:</em> The order of all add calls represent the order in the layout.</p>"
           }
         ],
         "@param": [
@@ -191,9 +192,9 @@
           },
           {
             "name": "@param",
-            "body": "validator {Function | qx.ui.form.validation.AsyncValidator ? null}\nThe validator which is used by the validation\n{@link qx.ui.form.validation.Manager}.",
+            "body": "validator {Function | qx.ui.form.validation.AsyncValidator ? null}\n   The validator which is used by the validation\n   {@link qx.ui.form.validation.Manager}.",
             "paramName": "validator",
-            "description": "\nThe validator which is used by the validation\n{@link qx.ui.form.validation.Manager}.",
+            "description": "\n   The validator which is used by the validation\n   {@link qx.ui.form.validation.Manager}.",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -203,9 +204,9 @@
           },
           {
             "name": "@param",
-            "body": "name {String?null} The name which is used by the data binding\ncontroller {@link qx.data.controller.Form}.",
+            "body": "name {String?null} The name which is used by the data binding\n   controller {@link qx.data.controller.Form}.",
             "paramName": "name",
-            "description": " The name which is used by the data binding\ncontroller {@link qx.data.controller.Form}.",
+            "description": " The name which is used by the data binding\n   controller {@link qx.data.controller.Form}.",
             "optional": true,
             "defaultValue": "null",
             "type": "String"
@@ -221,9 +222,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?null} An additional map containing custom data which\nwill be available in your form renderer specific to the added item.",
+            "body": "options {Map?null} An additional map containing custom data which\n   will be available in your form renderer specific to the added item.",
             "paramName": "options",
-            "description": " An additional map containing custom data which\nwill be available in your form renderer specific to the added item.",
+            "description": " An additional map containing custom data which\n   will be available in your form renderer specific to the added item.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -248,7 +249,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a group header to the form.\n\n*Hint:* The order of all add calls represent the order in the layout."
+            "body": "<p>Adds a group header to the form.\n<em>Hint:</em> The order of all add calls represent the order in the layout.</p>"
           }
         ],
         "@param": [
@@ -261,9 +262,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?null} A special set of custom data which will be\ngiven to the renderer.",
+            "body": "options {Map?null} A special set of custom data which will be\n   given to the renderer.",
             "paramName": "options",
-            "description": " A special set of custom data which will be\ngiven to the renderer.",
+            "description": " A special set of custom data which will be\n   given to the renderer.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -288,7 +289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a button to the form.\n\n*Hint:* The order of all add calls represent the order in the layout."
+            "body": "<p>Adds a button to the form.\n<em>Hint:</em> The order of all add calls represent the order in the layout.</p>"
           }
         ],
         "@param": [
@@ -301,9 +302,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map?null} An additional map containing custom data which\nwill be available in your form renderer specific to the added button.",
+            "body": "options {Map?null} An additional map containing custom data which\n   will be available in your form renderer specific to the added button.",
             "paramName": "options",
-            "description": " An additional map containing custom data which\nwill be available in your form renderer specific to the added button.",
+            "description": " An additional map containing custom data which\n   will be available in your form renderer specific to the added button.",
             "optional": true,
             "defaultValue": "null",
             "type": "Map"
@@ -328,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether something has already been added."
+            "body": "<p>Returns whether something has already been added.</p>"
           }
         ],
         "@return": [
@@ -358,11 +359,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nREMOVE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   REMOVE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Removes the given item from the form."
+            "body": "<p>Removes the given item from the form.</p>"
           }
         ],
         "@param": [
@@ -401,7 +402,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given group header from the form. All items in the group will be moved to\nanother group (usually the previous group). If there is more than one group with\nthe same title, only the first group will be removed."
+            "body": "<p>Removes the given group header from the form. All items in the group will be moved to\n another group (usually the previous group). If there is more than one group with\n the same title, only the first group will be removed.</p>"
           }
         ],
         "@param": [
@@ -440,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the given button from the form."
+            "body": "<p>Removes the given button from the form.</p>"
           }
         ],
         "@param": [
@@ -479,7 +480,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all added items as a map."
+            "body": "<p>Returns all added items as a map.</p>"
           }
         ],
         "@return": [
@@ -509,7 +510,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return an item by name."
+            "body": "<p>Return an item by name.</p>"
           }
         ],
         "@param": [
@@ -548,11 +549,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRESET SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   RESET SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Resets the form. This means reseting all form items and the validation."
+            "body": "<p>Resets the form. This means reseting all form items and the validation.</p>"
           }
         ],
         "@param": [
@@ -588,7 +589,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Redefines the values used for resetting. It calls\n{@link qx.ui.form.Resetter#redefine} to get that."
+            "body": "<p>Redefines the values used for resetting. It calls\n {@link qx.ui.form.Resetter#redefine} to get that.</p>"
           }
         ]
       },
@@ -610,7 +611,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Redefines the value used for resetting of the given item. It calls\n{@link qx.ui.form.Resetter#redefineItem} to get that."
+            "body": "<p>Redefines the value used for resetting of the given item. It calls\n {@link qx.ui.form.Resetter#redefineItem} to get that.</p>"
           }
         ],
         "@param": [
@@ -641,11 +642,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nVALIDATION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   VALIDATION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Validates the form using the\n{@link qx.ui.form.validation.Manager#validate} method."
+            "body": "<p>Validates the form using the\n {@link qx.ui.form.validation.Manager#validate} method.</p>"
           }
         ],
         "@return": [
@@ -675,7 +676,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internally used validation manager. If you want to do some\nenhanced validation tasks, you need to use the validation manager."
+            "body": "<p>Returns the internally used validation manager. If you want to do some\n enhanced validation tasks, you need to use the validation manager.</p>"
           }
         ],
         "@return": [
@@ -705,11 +706,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nRENDERER SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   RENDERER SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Accessor method for the renderer which returns all added items in a\narray containing a map of all items:\n{title: title, items: [], labels: [], names: []}"
+            "body": "<p>Accessor method for the renderer which returns all added items in a\n array containing a map of all items:\n {title: title, items: [], labels: [], names: []}</p>"
           }
         ],
         "@return": [
@@ -745,7 +746,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Accessor method for the renderer which returns all added buttons in an\narray."
+            "body": "<p>Accessor method for the renderer which returns all added buttons in an\n array.</p>"
           }
         ],
         "@return": [
@@ -781,7 +782,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Accessor method for the renderer which returns all added options for\nthe buttons in an array."
+            "body": "<p>Accessor method for the renderer which returns all added options for\n the buttons in an array.</p>"
           }
         ],
         "@return": [
@@ -817,11 +818,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   INTERNAL\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Creates and returns the used validation manager."
+            "body": "<p>Creates and returns the used validation manager.</p>"
           }
         ],
         "@return": [
@@ -851,7 +852,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates and returns the used resetter."
+            "body": "<p>Creates and returns the used resetter.</p>"
           }
         ],
         "@return": [
@@ -991,7 +992,7 @@
     "location": {
       "start": {
         "line": 451,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 457,
@@ -1002,7 +1003,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

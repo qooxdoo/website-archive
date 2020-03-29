@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This is the base collection for all widgets and offers a good foundation\nfor all widgets including enabled state handling, config and template storage\nand event handling to name a few key features."
+          "body": "<p>This is the base collection for all widgets and offers a good foundation\n for all widgets including enabled state handling, config and template storage\n and event handling to name a few key features.</p>"
         }
       ],
       "@require": [
@@ -69,7 +69,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for the widget which converts a standard\ncollection into a collection of widgets."
+            "body": "<p>Factory method for the widget which converts a standard\n collection into a collection of widgets.</p>"
           }
         ],
         "@return": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new collection from the given argument. This can either be an\nHTML string, a single DOM element or an array of elements"
+            "body": "<p>Creates a new collection from the given argument. This can either be an\n HTML string, a single DOM element or an array of elements</p>"
           }
         ],
         "@param": [
@@ -150,15 +150,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fetches elements with a data attribute named <code>data-qx-class</code>\ncontaining the class name of the desired widget and initializes them as\nwidgets."
+            "body": "<p>Fetches elements with a data attribute named <code>data-qx-class</code>\n containing the class name of the desired widget and initializes them as\n widgets.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "selector {String?} Optional selector expression or filter function to\nrestrict the list of elements",
+            "body": "selector {String?} Optional selector expression or filter function to\n restrict the list of elements",
             "paramName": "selector",
-            "description": " Optional selector expression or filter function to\nrestrict the list of elements",
+            "description": " Optional selector expression or filter function to\n restrict the list of elements",
             "optional": true,
             "type": "String"
           }
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a wrapper Array that maps the widget API available on\nthe first item in the current collection to all items in the\ncollection."
+            "body": "<p>Returns a wrapper Array that maps the widget API available on\n the first item in the current collection to all items in the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -214,13 +214,14 @@
     "location": {
       "start": {
         "line": 106,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 112,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__cssPrefix": {
@@ -252,7 +253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Responsible for initializing of the widget. This checks for the data attribute\nnamed <code>data-qx-class</code> and initializes the widget if necessary."
+            "body": "<p>Responsible for initializing of the widget. This checks for the data attribute\n named <code>data-qx-class</code> and initializes the widget if necessary.</p>"
           }
         ],
         "@return": [
@@ -282,7 +283,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the proper CSS prefix for the current widget. This prefix is\nbased on the current classname."
+            "body": "<p>Return the proper CSS prefix for the current widget. This prefix is\n based on the current classname.</p>"
           }
         ],
         "@return": [
@@ -312,7 +313,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Changes the enabled state of the current collection, which means all\nwidgets in the collection. This sets the disabled attribute on the\nelements and all its children."
+            "body": "<p>Changes the enabled state of the current collection, which means all\n widgets in the collection. This sets the disabled attribute on the\n elements and all its children.</p>"
           }
         ],
         "@param": [
@@ -351,7 +352,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns weather the first widget in the collection is enabled or not."
+            "body": "<p>Returns weather the first widget in the collection is enabled or not.</p>"
           }
         ],
         "@return": [
@@ -381,7 +382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the widget-specific templates. The available templates can\nbe found in the documentation of the corresponding widget. The templates\nwill be rendered using\n<a href='https://github.com/janl/mustache.js/'>mustache.js</a>.\n\nPlease keep in mind to call {@link #render} after you change any\ntemplate or config setting."
+            "body": "<p>Setter for the widget-specific templates. The available templates can\n be found in the documentation of the corresponding widget. The templates\n will be rendered using\n <a href='https://github.com/janl/mustache.js/'>mustache.js</a>.\n Please keep in mind to call {@link #render} after you change any\n template or config setting.</p>"
           }
         ],
         "@param": [
@@ -427,7 +428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the widget-specific config. The available config settings can\nbe found in the documentation of the corresponding widget. Each config\nsetting can be set in the markup as data-attribute, prefixed with\n<code>data-qx</code> e.g. <code>data-qx-length=\"5\"</code>.\n\nPlease keep in mind to call {@link #render} after you change any\ntemplate or config setting."
+            "body": "<p>Setter for the widget-specific config. The available config settings can\n be found in the documentation of the corresponding widget. Each config\n setting can be set in the markup as data-attribute, prefixed with\n <code>data-qx</code> e.g. <code>data-qx-length=\"5\"</code>.\n Please keep in mind to call {@link #render} after you change any\n template or config setting.</p>"
           }
         ],
         "@param": [
@@ -473,7 +474,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to set either config or template values."
+            "body": "<p>Helper to set either config or template values.</p>"
           }
         ],
         "@param": [
@@ -526,7 +527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the used template. This includes custom templates\nas the default templates defined by the widgets."
+            "body": "<p>Returns the used template. This includes custom templates\n as the default templates defined by the widgets.</p>"
           }
         ],
         "@param": [
@@ -565,7 +566,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the config setting currently in use for the given widget.\nThis can either be the user set config value, the value set in\nthe markup via data-attribute, the widgets default config value or\n<code>undefined</code>, if non is set."
+            "body": "<p>Returns the config setting currently in use for the given widget.\n This can either be the user set config value, the value set in\n the markup via data-attribute, the widgets default config value or\n <code>undefined</code>, if non is set.</p>"
           }
         ],
         "@param": [
@@ -604,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for querying the values for templates and configs. In the\ncase of a config value, the method also reads the corresponding data-attribute\nfor possible values."
+            "body": "<p>Internal helper for querying the values for templates and configs. In the\n case of a config value, the method also reads the corresponding data-attribute\n for possible values.</p>"
           }
         ],
         "@param": [
@@ -650,7 +651,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The render method is responsible for applying changed config\nand template settings. This method is usually overridden and specified\nby the subclassing widgets like the slider or tabs."
+            "body": "<p>The render method is responsible for applying changed config\n and template settings. This method is usually overridden and specified\n by the subclassing widgets like the slider or tabs.</p>"
           }
         ],
         "@return": [
@@ -680,7 +681,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose the widget, making sure all objects are ready for\ngarbage collection. This mainly means deleting connections to the\nDOM including event listeners."
+            "body": "<p>Dispose the widget, making sure all objects are ready for\n garbage collection. This mainly means deleting connections to the\n DOM including event listeners.</p>"
           }
         ],
         "@return": [
@@ -704,13 +705,14 @@
     "location": {
       "start": {
         "line": 340,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 348,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.website.Button",

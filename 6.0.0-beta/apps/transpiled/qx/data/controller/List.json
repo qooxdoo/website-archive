@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<h2>List Controller</h2>\n\n*General idea*\nThe list controller is responsible for synchronizing every list like widget\nwith a data array. It does not matter if the array contains atomic values\nlike strings of complete objects where one property holds the value for\nthe label and another property holds the icon url. You can even use converters\nthat make the label show a text corresponding to the icon, by binding both\nlabel and icon to the same model property and converting one of them.\n\n*Features*\n\n* Synchronize the model and the target\n* Label and icon are bindable\n* Takes care of the selection\n* Passes on the options used by {@link qx.data.SingleValueBinding#bind}\n\n*Usage*\n\nAs model, only {@link qx.data.Array}s do work. The currently supported\ntargets are\n\n* {@link qx.ui.form.SelectBox}\n* {@link qx.ui.form.List}\n* {@link qx.ui.form.ComboBox}\n\nAll the properties like model, target or any property path is bindable.\nEspecially the model is nice to bind to another selection for example.\nThe controller itself can only work if it has a model and a target set. The\nrest of the properties may be empty.\n\n*Cross reference*\n\n* If you want to bind single values, use {@link qx.data.controller.Object}\n* If you want to bind a tree widget, use {@link qx.data.controller.Tree}\n* If you want to bind a form widget, use {@link qx.data.controller.Form}"
+          "body": "<h2>List Controller</h2>\n<p><em>General idea</em>\n The list controller is responsible for synchronizing every list like widget\n with a data array. It does not matter if the array contains atomic values\n like strings of complete objects where one property holds the value for\n the label and another property holds the icon url. You can even use converters\n that make the label show a text corresponding to the icon, by binding both\n label and icon to the same model property and converting one of them.\n<em>Features</em></p>\n<ul>\n<li>Synchronize the model and the target</li>\n<li>Label and icon are bindable</li>\n<li>Takes care of the selection</li>\n<li>Passes on the options used by {@link qx.data.SingleValueBinding#bind}\n<em>Usage</em>\nAs model, only {@link qx.data.Array}s do work. The currently supported\ntargets are</li>\n<li>{@link qx.ui.form.SelectBox}</li>\n<li>{@link qx.ui.form.List}</li>\n<li>{@link qx.ui.form.ComboBox}\nAll the properties like model, target or any property path is bindable.\nEspecially the model is nice to bind to another selection for example.\nThe controller itself can only work if it has a model and a target set. The\nrest of the properties may be empty.\n<em>Cross reference</em></li>\n<li>If you want to bind single values, use {@link qx.data.controller.Object}</li>\n<li>If you want to bind a tree widget, use {@link qx.data.controller.Tree}</li>\n<li>If you want to bind a form widget, use {@link qx.data.controller.Form}</li>\n</ul>"
         }
       ]
     }
@@ -39,7 +39,7 @@
     "location": {
       "start": {
         "line": 80,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 102,
@@ -50,7 +50,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -69,18 +69,18 @@
         },
         {
           "name": "@param",
-          "body": "target {qx.ui.core.Widget?null} The widget which should show the\nListItems.",
+          "body": "target {qx.ui.core.Widget?null} The widget which should show the\n   ListItems.",
           "paramName": "target",
-          "description": " The widget which should show the\nListItems.",
+          "description": " The widget which should show the\n   ListItems.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.ui.core.Widget"
         },
         {
           "name": "@param",
-          "body": "labelPath {String?null} If the model contains objects, the labelPath\nis the path reference to the property in these objects which should be\nshown as label.",
+          "body": "labelPath {String?null} If the model contains objects, the labelPath\n   is the path reference to the property in these objects which should be\n   shown as label.",
           "paramName": "labelPath",
-          "description": " If the model contains objects, the labelPath\nis the path reference to the property in these objects which should be\nshown as label.",
+          "description": " If the model contains objects, the labelPath\n   is the path reference to the property in these objects which should be\n   shown as label.",
           "optional": true,
           "defaultValue": "null",
           "type": "String"
@@ -104,7 +104,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Data array containing the data which should be shown in the list."
+            "body": "<p>Data array containing the data which should be shown in the list.</p>"
           }
         ]
       },
@@ -131,7 +131,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The target widget which should show the data."
+            "body": "<p>The target widget which should show the data.</p>"
           }
         ]
       },
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The path to the property which holds the information that should be\nshown as a label. This is only needed if objects are stored in the model."
+            "body": "<p>The path to the property which holds the information that should be\n shown as a label. This is only needed if objects are stored in the model.</p>"
           }
         ]
       },
@@ -183,7 +183,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The path to the property which holds the information that should be\nshown as an icon. This is only needed if objects are stored in the model\nand if the icon should be shown."
+            "body": "<p>The path to the property which holds the information that should be\n shown as an icon. This is only needed if objects are stored in the model\n and if the icon should be shown.</p>"
           }
         ]
       },
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the label binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the label binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ]
       },
@@ -234,7 +234,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the icon binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the icon binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation object, which can have one or more functions defined by the\n{@link IControllerDelegate} interface."
+            "body": "<p>Delegation object, which can have one or more functions defined by the\n {@link IControllerDelegate} interface.</p>"
           }
         ]
       },
@@ -285,7 +285,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a special \"null\" value is included in the list"
+            "body": "<p>Whether a special \"null\" value is included in the list</p>"
           }
         ]
       },
@@ -314,7 +314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Title for the special null value entry"
+            "body": "<p>Title for the special null value entry</p>"
           }
         ]
       },
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Icon for the special null value entry"
+            "body": "<p>Icon for the special null value entry</p>"
           }
         ]
       },
@@ -394,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "private members"
+            "body": "<p>private members</p>"
           }
         ]
       },
@@ -500,11 +500,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPUBLIC API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   PUBLIC API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Updates the filter and the target. This could be used if the filter\nuses an additional parameter which changes the filter result."
+            "body": "<p>Updates the filter and the target. This could be used if the filter\n uses an additional parameter which changes the filter result.</p>"
           }
         ]
       },
@@ -526,11 +526,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "If a new delegate is set, it applies the stored configuration for the\nlist items to the already created list items once."
+            "body": "<p>If a new delegate is set, it applies the stored configuration for the\n list items to the already created list items once.</p>"
           }
         ],
         "@param": [
@@ -577,7 +577,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the icon options has been changed.\nIt invokes a renewing of all set bindings."
+            "body": "<p>Apply-method which will be called if the icon options has been changed.\n It invokes a renewing of all set bindings.</p>"
           }
         ],
         "@param": [
@@ -624,7 +624,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the label options has been changed.\nIt invokes a renewing of all set bindings."
+            "body": "<p>Apply-method which will be called if the label options has been changed.\n It invokes a renewing of all set bindings.</p>"
           }
         ],
         "@param": [
@@ -671,7 +671,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the icon path has been changed.\nIt invokes a renewing of all set bindings."
+            "body": "<p>Apply-method which will be called if the icon path has been changed.\n It invokes a renewing of all set bindings.</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the label path has been changed.\nIt invokes a renewing of all set bindings."
+            "body": "<p>Apply-method which will be called if the label path has been changed.\n It invokes a renewing of all set bindings.</p>"
           }
         ],
         "@param": [
@@ -765,7 +765,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply method for the `allowNull` property"
+            "body": "<p>Apply method for the <code>allowNull</code> property</p>"
           }
         ]
       },
@@ -790,7 +790,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply method for the `allowNull` property"
+            "body": "<p>Apply method for the <code>allowNull</code> property</p>"
           }
         ]
       },
@@ -815,7 +815,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply method for the `allowNull` property"
+            "body": "<p>Apply method for the <code>allowNull</code> property</p>"
           }
         ]
       },
@@ -840,7 +840,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Refreshes the model, uses when the model and target are not changing but the appearance\nand bindings may need to be updated"
+            "body": "<p>Refreshes the model, uses when the model and target are not changing but the appearance\n and bindings may need to be updated</p>"
           }
         ]
       },
@@ -862,7 +862,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the model has been changed. It\nremoves all the listeners from the old model and adds the needed\nlisteners to the new model. It also invokes the initial filling of the\ntarget widgets if there is a target set."
+            "body": "<p>Apply-method which will be called if the model has been changed. It\n removes all the listeners from the old model and adds the needed\n listeners to the new model. It also invokes the initial filling of the\n target widgets if there is a target set.</p>"
           }
         ],
         "@param": [
@@ -909,7 +909,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called if the target has been changed.\nWhen the target changes, every binding needs to be reset and the old\ntarget needs to be cleaned up. If there is a model, the target will be\nfilled with the data of the model."
+            "body": "<p>Apply-method which will be called if the target has been changed.\n When the target changes, every binding needs to be reset and the old\n target needs to be cleaned up. If there is a model, the target will be\n filled with the data of the model.</p>"
           }
         ],
         "@param": [
@@ -956,11 +956,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the change event of the model. If the model changes,\nOnly the selection needs to be changed. The change of the data will\nbe done by the binding."
+            "body": "<p>Event handler for the change event of the model. If the model changes,\n Only the selection needs to be changed. The change of the data will\n be done by the binding.</p>"
           }
         ]
       },
@@ -982,7 +982,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the changeModel of the model. Updates the controller."
+            "body": "<p>Event handler for the changeModel of the model. Updates the controller.</p>"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal method used to sync the selection. The controller uses the\nwidget queue to schedule the selection update. An asynchronous handling of\nthe selection is needed because the bindings (event listeners for the\nbinding) need to be executed before the selection is updated."
+            "body": "<p>Internal method used to sync the selection. The controller uses the\n widget queue to schedule the selection update. An asynchronous handling of\n the selection is needed because the bindings (event listeners for the\n binding) need to be executed before the selection is updated.</p>"
           }
         ],
         "@internal": [
@@ -1032,7 +1032,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the changeLength of the model. If the length changes\nof the model, either ListItems need to be removed or added to the target."
+            "body": "<p>Event handler for the changeLength of the model. If the length changes\n of the model, either ListItems need to be removed or added to the target.</p>"
           }
         ]
       },
@@ -1054,7 +1054,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method which removes and adds the change listener of the\ncontroller to the model. This is sometimes necessary to ensure that the\nlistener of the controller is executed as the last listener of the chain."
+            "body": "<p>Helper method which removes and adds the change listener of the\n controller to the model. This is sometimes necessary to ensure that the\n listener of the controller is executed as the last listener of the chain.</p>"
           }
         ]
       },
@@ -1076,11 +1076,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nITEM HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   ITEM HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Creates a ListItem and delegates the configure method if a delegate is\nset and the needed function (configureItem) is available."
+            "body": "<p>Creates a ListItem and delegates the configure method if a delegate is\n set and the needed function (configureItem) is available.</p>"
           }
         ],
         "@return": [
@@ -1110,7 +1110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to add ListItems to the target including the creation\nof the binding."
+            "body": "<p>Internal helper to add ListItems to the target including the creation\n of the binding.</p>"
           }
         ],
         "@param": [
@@ -1141,7 +1141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to remove ListItems from the target. Also the binding\nwill be removed properly."
+            "body": "<p>Internal helper to remove ListItems from the target. Also the binding\n will be removed properly.</p>"
           }
         ]
       },
@@ -1163,15 +1163,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all models currently visible by the list. This method is only\nuseful if you use the filter via the {@link #delegate}."
+            "body": "<p>Returns all models currently visible by the list. This method is only\n useful if you use the filter via the {@link #delegate}.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.data.Array} A new data array container all the models\nwhich representation items are currently visible.",
+            "body": "{qx.data.Array} A new data array container all the models\n   which representation items are currently visible.",
             "type": "qx.data.Array",
-            "description": " A new data array container all the models\nwhich representation items are currently visible."
+            "description": " A new data array container all the models\n   which representation items are currently visible."
           }
         ]
       },
@@ -1193,19 +1193,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBINDING STUFF\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   BINDING STUFF\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Sets up the binding for the given ListItem and index."
+            "body": "<p>Sets up the binding for the given ListItem and index.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.form.ListItem} The internally created and used\nListItem.",
+            "body": "item {qx.ui.form.ListItem} The internally created and used\n   ListItem.",
             "paramName": "item",
-            "description": " The internally created and used\nListItem.",
+            "description": " The internally created and used\n   ListItem.",
             "type": "qx.ui.form.ListItem"
           },
           {
@@ -1235,15 +1235,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding the default properties (label, icon and model)\nfrom the model to the target widget.\n\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding the default properties (label, icon and model)\n from the model to the target widget.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {qx.ui.form.ListItem} The internally created and used\nListItem.",
+            "body": "item {qx.ui.form.ListItem} The internally created and used\n   ListItem.",
             "paramName": "item",
-            "description": " The internally created and used\nListItem.",
+            "description": " The internally created and used\n   ListItem.",
             "type": "qx.ui.form.ListItem"
           },
           {
@@ -1273,15 +1273,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the model to the target\nwidget.\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the model to the target\n widget.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePath {String | null} The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "body": "sourcePath {String | null} The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "paramName": "sourcePath",
-            "description": " The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "description": " The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "type": [
               "String",
               "null"
@@ -1289,16 +1289,16 @@
           },
           {
             "name": "@param",
-            "body": "targetProperty {String} The name of the property in the target\nwidget.",
+            "body": "targetProperty {String} The name of the property in the target\n   widget.",
             "paramName": "targetProperty",
-            "description": " The name of the property in the target\nwidget.",
+            "description": " The name of the property in the target\n   widget.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "options {Map | null} The options used by\n{@link qx.data.SingleValueBinding#bind} to use for the binding.",
+            "body": "options {Map | null} The options used by\n   {@link qx.data.SingleValueBinding#bind} to use for the binding.",
             "paramName": "options",
-            "description": " The options used by\n{@link qx.data.SingleValueBinding#bind} to use for the binding.",
+            "description": " The options used by\n   {@link qx.data.SingleValueBinding#bind} to use for the binding.",
             "type": [
               "Map",
               "null"
@@ -1338,7 +1338,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for binding a given property from the target widget to\nthe model.\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper-Method for binding a given property from the target widget to\n the model.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -1361,9 +1361,9 @@
           },
           {
             "name": "@param",
-            "body": "options {Map | null} The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "body": "options {Map | null} The options to use by\n   {@link qx.data.SingleValueBinding#bind} for the binding.",
             "paramName": "options",
-            "description": " The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "description": " The options to use by\n   {@link qx.data.SingleValueBinding#bind} for the binding.",
             "type": [
               "Map",
               "null"
@@ -1403,7 +1403,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method which will be called on the invoke of every binding. It takes\ncare of the selection on the change of the binding."
+            "body": "<p>Method which will be called on the invoke of every binding. It takes\n care of the selection on the change of the binding.</p>"
           }
         ],
         "@param": [
@@ -1448,15 +1448,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method to remove the binding of the given item."
+            "body": "<p>Internal helper method to remove the binding of the given item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "item {Number} The item of which the binding which should\nbe removed.",
+            "body": "item {Number} The item of which the binding which should\n   be removed.",
             "paramName": "item",
-            "description": " The item of which the binding which should\nbe removed.",
+            "description": " The item of which the binding which should\n   be removed.",
             "type": "Number"
           }
         ]
@@ -1479,7 +1479,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method to renew all set bindings."
+            "body": "<p>Internal helper method to renew all set bindings.</p>"
           }
         ]
       },
@@ -1501,11 +1501,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDELEGATE HELPER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   DELEGATE HELPER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate It checks if a configureItem\nis set end invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate It checks if a configureItem\n is set end invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1543,7 +1543,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate It checks if a bindItem\nis set end invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate It checks if a bindItem\n is set end invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1581,7 +1581,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate It checks if a createItem\nis set end invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate It checks if a createItem\n is set end invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1619,7 +1619,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-Method for setting the filter. It removes all bindings,\ncheck if the length has changed and adds or removes the items in the\ntarget. After that, the bindings will be set up again and the selection\nwill be updated."
+            "body": "<p>Apply-Method for setting the filter. It removes all bindings,\n check if the length has changed and adds or removes the items in the\n target. After that, the bindings will be set up again and the selection\n will be updated.</p>"
           }
         ],
         "@param": [
@@ -1663,7 +1663,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This helper is responsible for removing the filter and setting the\ncontroller to a valid state without a filtering."
+            "body": "<p>This helper is responsible for removing the filter and setting the\n controller to a valid state without a filtering.</p>"
           }
         ]
       },
@@ -1685,11 +1685,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLOOKUP STUFF\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   LOOKUP STUFF\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper-Method which builds up the index lookup for the filter feature.\nIf no filter is set, the lookup table will be a 1:1 mapping."
+            "body": "<p>Helper-Method which builds up the index lookup for the filter feature.\n If no filter is set, the lookup table will be a 1:1 mapping.</p>"
           }
         ]
       },
@@ -1711,7 +1711,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Function for accessing the lookup table."
+            "body": "<p>Function for accessing the lookup table.</p>"
           }
         ],
         "@param": [
@@ -1813,7 +1813,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "setValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>setValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@param": [
@@ -1850,7 +1850,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "getValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@return": [
@@ -1884,11 +1884,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Apply-method for setting a new selection array. Only the change listener\nwill be removed from the old array and added to the new."
+            "body": "<p>Apply-method for setting a new selection array. Only the change listener\n will be removed from the old array and added to the new.</p>"
           }
         ],
         "@param": [
@@ -1942,11 +1942,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSELECTION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   SELECTION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method which should be called by the classes including this\nMixin when the target changes."
+            "body": "<p>Helper method which should be called by the classes including this\n Mixin when the target changes.</p>"
           }
         ],
         "@param": [
@@ -1994,7 +1994,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-method returning true, if the target supports multi selection."
+            "body": "<p>Helper-method returning true, if the target supports multi selection.</p>"
           }
         ],
         "@return": [
@@ -2019,7 +2019,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-method returning true, if the target supports single selection."
+            "body": "<p>Helper-method returning true, if the target supports single selection.</p>"
           }
         ],
         "@return": [
@@ -2044,7 +2044,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for selecting an item in the target. The item to select\nis defined by a given model item."
+            "body": "<p>Internal helper for selecting an item in the target. The item to select\n is defined by a given model item.</p>"
           }
         ],
         "@param": [
@@ -2070,7 +2070,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list item storing the given model in its model property."
+            "body": "<p>Returns the list item storing the given model in its model property.</p>"
           }
         ],
         "@param": [
@@ -2122,7 +2122,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for checking the state of the selection modification.\n{@link #_startSelectionModification}\n{@link #_endSelectionModification}"
+            "body": "<p>Helper-Method for checking the state of the selection modification.\n {@link #<em>startSelectionModification}\n {@link #</em>endSelectionModification}</p>"
           }
         ],
         "@return": [
@@ -2944,7 +2944,7 @@
     "location": {
       "start": {
         "line": 1097,
-        "column": 3
+        "column": 14
       },
       "end": {
         "line": 1103,
@@ -2955,7 +2955,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

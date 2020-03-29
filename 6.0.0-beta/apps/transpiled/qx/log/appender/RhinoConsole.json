@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006-2010 1&1 Internet AG, Germany, http://www.1and1.org\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDaniel Wagner (d_wagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006-2010 1&amp;1 Internet AG, Germany, http://www.1and1.org\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Daniel Wagner (d_wagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Log appender for qooxdoo applications running in Mozilla Rhino. Writes log\nmessages to STDOUT/STDERR."
+          "body": "<p>Log appender for qooxdoo applications running in Mozilla Rhino. Writes log\n messages to STDOUT/STDERR.</p>"
         }
       ],
       "@ignore": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "java.lang.System.out"
+            "body": "<p>java.lang.System.out</p>"
           }
         ]
       },
@@ -75,7 +75,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "java.lang.System.err"
+            "body": "<p>java.lang.System.err</p>"
           }
         ]
       },
@@ -97,7 +97,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Writes a message to the shell. Errors will be sent to STDERR, everything\nelse goes to STDOUT"
+            "body": "<p>Writes a message to the shell. Errors will be sent to STDERR, everything\n else goes to STDOUT</p>"
           }
         ],
         "@param": [
@@ -135,7 +135,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a debug message"
+            "body": "<p>Logs a debug message</p>"
           }
         ],
         "@param": [
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an info message"
+            "body": "<p>Logs an info message</p>"
           }
         ],
         "@param": [
@@ -197,7 +197,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a warning message"
+            "body": "<p>Logs a warning message</p>"
           }
         ],
         "@param": [
@@ -228,7 +228,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message"
+            "body": "<p>Logs an error message</p>"
           }
         ],
         "@param": [
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Process a log entry object from qooxdoo's logging system."
+            "body": "<p>Process a log entry object from qooxdoo's logging system.</p>"
           }
         ],
         "@param": [
@@ -280,13 +280,14 @@
     "location": {
       "start": {
         "line": 115,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 121,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

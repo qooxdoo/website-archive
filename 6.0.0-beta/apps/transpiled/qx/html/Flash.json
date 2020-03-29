@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nChristian Hagendorn (chris_schmidt)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Christian Hagendorn (chris_schmidt)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Managed wrapper for the HTML Flash tag.\n\nNOTE: Instances of this class must be disposed of after use"
+          "body": "<p>Managed wrapper for the HTML Flash tag.\n NOTE: Instances of this class must be disposed of after use</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 44,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 51,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -56,18 +56,18 @@
       "@param": [
         {
           "name": "@param",
-          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "body": "styles {Map?null} optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "paramName": "styles",
-          "description": " optional map of CSS styles, where the key is the name\nof the style and the value is the value to use.",
+          "description": " optional map of CSS styles, where the key is the name\n    of the style and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
         },
         {
           "name": "@param",
-          "body": "attributes {Map?null} optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "body": "attributes {Map?null} optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "paramName": "attributes",
-          "description": " optional map of element attributes, where the\nkey is the name of the attribute and the value is the value to use.",
+          "description": " optional map of element attributes, where the\n    key is the name of the attribute and the value is the value to use.",
           "optional": true,
           "defaultValue": "null",
           "type": "Map"
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -237,7 +237,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the DOM Flash movie with all needed attributes and\n<code>FlashVars</code>."
+            "body": "<p>Creates the DOM Flash movie with all needed attributes and\n <code>FlashVars</code>.</p>"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the URL from the Flash movie to display."
+            "body": "<p>Set the URL from the Flash movie to display.</p>"
           }
         ],
         "@param": [
@@ -290,7 +290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the URL from the Flash movie to display."
+            "body": "<p>Set the URL from the Flash movie to display.</p>"
           }
         ],
         "@param": [
@@ -321,15 +321,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the <code>FlashVars</code> for the Flash movie."
+            "body": "<p>Returns the <code>FlashVars</code> for the Flash movie.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map with key/value pairs for passing\n<code>FlashVars</code>}",
+            "body": "{Map} Map with key/value pairs for passing\n    <code>FlashVars</code>}",
             "type": "Map",
-            "description": " Map with key/value pairs for passing\n<code>FlashVars</code>}"
+            "description": " Map with key/value pairs for passing\n    <code>FlashVars</code>}"
           }
         ]
       },
@@ -351,15 +351,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the <code>FlashVars</code> to pass variables to the Flash movie."
+            "body": "<p>Set the <code>FlashVars</code> to pass variables to the Flash movie.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {Map} Map with key/value pairs for passing\n<code>FlashVars</code>",
+            "body": "value {Map} Map with key/value pairs for passing\n    <code>FlashVars</code>",
             "paramName": "value",
-            "description": " Map with key/value pairs for passing\n<code>FlashVars</code>",
+            "description": " Map with key/value pairs for passing\n    <code>FlashVars</code>",
             "type": "Map"
           }
         ]
@@ -382,7 +382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the attributes for the Flash DOM element."
+            "body": "<p>Returns the attributes for the Flash DOM element.</p>"
           }
         ],
         "@return": [
@@ -412,7 +412,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set an attribute for the Flash DOM element."
+            "body": "<p>Set an attribute for the Flash DOM element.</p>"
           }
         ],
         "@param": [
@@ -458,7 +458,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the params for the Flash DOM element."
+            "body": "<p>Returns the params for the Flash DOM element.</p>"
           }
         ],
         "@return": [
@@ -488,7 +488,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the param for the Flash DOM element, also called attribute."
+            "body": "<p>Set the param for the Flash DOM element, also called attribute.</p>"
           }
         ],
         "@param": [
@@ -530,7 +530,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the created DOM Flash movie."
+            "body": "<p>Return the created DOM Flash movie.</p>"
           }
         ],
         "@return": [
@@ -670,7 +670,7 @@
     "location": {
       "start": {
         "line": 252,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 259,
@@ -681,7 +681,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

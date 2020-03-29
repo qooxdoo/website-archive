@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Listens for (native or synthetic) pointer events and fires events\nfor gestures like \"tap\" or \"swipe\""
+          "body": "<p>Listens for (native or synthetic) pointer events and fires events\n for gestures like \"tap\" or \"swipe\"</p>"
         }
       ]
     }
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "values are educated guesses"
+            "body": "<p>values are educated guesses</p>"
           },
           {
             "name": "@description",
@@ -137,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "values are educated guesses"
+            "body": "<p>values are educated guesses</p>"
           },
           {
             "name": "@description",
@@ -162,7 +162,7 @@
         },
         "end": {
           "line": 50,
-          "column": 22
+          "column": 70
         }
       },
       "jsdoc": {
@@ -203,7 +203,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Maximum time between two tap events that will still trigger a\ndbltap event."
+            "body": "{Integer} Maximum time between two tap events that will still trigger a\n dbltap event."
           }
         ]
       },
@@ -231,7 +231,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Factor which is used for adapting the delta of the mouse wheel\nevent to the roll events,"
+            "body": "{Integer} Factor which is used for adapting the delta of the mouse wheel\n event to the roll events,"
           }
         ]
       },
@@ -259,7 +259,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Factor which is used for adapting the delta of the touchpad gesture\nevent to the roll events,"
+            "body": "{Integer} Factor which is used for adapting the delta of the touchpad gesture\n event to the roll events,"
           }
         ]
       },
@@ -287,7 +287,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Minimum number of wheel events to receive during the\nTOUCHPAD_WHEEL_EVENTS_PERIOD to detect a touchpad."
+            "body": "{Integer} Minimum number of wheel events to receive during the\n TOUCHPAD_WHEEL_EVENTS_PERIOD to detect a touchpad."
           }
         ]
       },
@@ -315,7 +315,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Period (in ms) during which the wheel events are counted in order\nto detect a touchpad."
+            "body": "{Integer} Period (in ms) during which the wheel events are counted in order\n to detect a touchpad."
           }
         ]
       },
@@ -343,7 +343,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Timeout (in ms) after which the touchpad detection is reset if no wheel\nevents are received in the meantime."
+            "body": "{Integer} Timeout (in ms) after which the touchpad detection is reset if no wheel\n events are received in the meantime."
           }
         ]
       },
@@ -355,7 +355,7 @@
     "location": {
       "start": {
         "line": 94,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 103,
@@ -379,9 +379,9 @@
         },
         {
           "name": "@param",
-          "body": "emitter {qx.event.Emitter?} Event emitter (used if dispatchEvent\nis not supported, e.g. in IE8)",
+          "body": "emitter {qx.event.Emitter?} Event emitter (used if dispatchEvent\n is not supported, e.g. in IE8)",
           "paramName": "emitter",
-          "description": " Event emitter (used if dispatchEvent\nis not supported, e.g. in IE8)",
+          "description": " Event emitter (used if dispatchEvent\n is not supported, e.g. in IE8)",
           "optional": true,
           "type": "qx.event.Emitter"
         }
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Register pointer event listeners"
+            "body": "<p>Register pointer event listeners</p>"
           }
         ]
       },
@@ -664,7 +664,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove native pointer event listeners."
+            "body": "<p>Remove native pointer event listeners.</p>"
           }
         ]
       },
@@ -686,7 +686,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a gesture was made and fires the gesture event."
+            "body": "<p>Checks if a gesture was made and fires the gesture event.</p>"
           }
         ],
         "@param": [
@@ -735,7 +735,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for gesture start."
+            "body": "<p>Helper method for gesture start.</p>"
           }
         ],
         "@param": [
@@ -773,7 +773,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for gesture move."
+            "body": "<p>Helper method for gesture move.</p>"
           }
         ],
         "@param": [
@@ -811,7 +811,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if a DOM element located between the target of a gesture\nevent and the element this handler is attached to has a gesture\nhandler of its own."
+            "body": "<p>Checks if a DOM element located between the target of a gesture\n event and the element this handler is attached to has a gesture\n handler of its own.</p>"
           }
         ],
         "@param": [
@@ -850,7 +850,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for gesture end."
+            "body": "<p>Helper method for gesture end.</p>"
           }
         ],
         "@param": [
@@ -888,7 +888,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the momentum scrolling currently running."
+            "body": "<p>Stops the momentum scrolling currently running.</p>"
           }
         ],
         "@param": [
@@ -919,7 +919,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cancels the gesture if running."
+            "body": "<p>Cancels the gesture if running.</p>"
           }
         ],
         "@param": [
@@ -950,7 +950,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Update the target of a running gesture. This is used in virtual widgets\nwhen the DOM element changes."
+            "body": "<p>Update the target of a running gesture. This is used in virtual widgets\n when the DOM element changes.</p>"
           }
         ],
         "@param": [
@@ -994,7 +994,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method which will be called recursively to provide a momentum scrolling."
+            "body": "<p>Method which will be called recursively to provide a momentum scrolling.</p>"
           }
         ],
         "@param": [
@@ -1054,7 +1054,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the angle of the primary and secondary pointer."
+            "body": "<p>Calculates the angle of the primary and secondary pointer.</p>"
           }
         ],
         "@return": [
@@ -1084,7 +1084,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scaling distance between two pointers."
+            "body": "<p>Calculates the scaling distance between two pointers.</p>"
           }
         ],
         "@return": [
@@ -1114,7 +1114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the distance between the x/y coordinates of DOM event\nexceeds TAP_MAX_DISTANCE and returns the result."
+            "body": "<p>Checks if the distance between the x/y coordinates of DOM event\n exceeds TAP<em>MAX</em>DISTANCE and returns the result.</p>"
           }
         ],
         "@param": [
@@ -1153,7 +1153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the distance between the x1/y1 and x2/y2 is\nbelow the TAP_MAX_DISTANCE and returns the result."
+            "body": "<p>Checks if the distance between the x1/y1 and x2/y2 is\n below the TAP<em>MAX</em>DISTANCE and returns the result.</p>"
           }
         ],
         "@param": [
@@ -1220,7 +1220,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the delta coordinates in relation to the position on <code>pointerstart</code> event."
+            "body": "<p>Calculates the delta coordinates in relation to the position on <code>pointerstart</code> event.</p>"
           }
         ],
         "@param": [
@@ -1259,7 +1259,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire a gesture event with the given parameters"
+            "body": "<p>Fire a gesture event with the given parameters</p>"
           }
         ],
         "@param": [
@@ -1314,7 +1314,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fire \"tap\" and \"dbltap\" events after a native \"dblclick\"\nevent to fix IE 8's broken mouse event sequence."
+            "body": "<p>Fire \"tap\" and \"dbltap\" events after a native \"dblclick\"\n event to fix IE 8's broken mouse event sequence.</p>"
           }
         ],
         "@param": [
@@ -1345,7 +1345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the swipe gesture when the user performed a swipe."
+            "body": "<p>Returns the swipe gesture when the user performed a swipe.</p>"
           }
         ],
         "@param": [
@@ -1391,7 +1391,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a track event."
+            "body": "<p>Fires a track event.</p>"
           }
         ],
         "@param": [
@@ -1436,7 +1436,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a roll event."
+            "body": "<p>Fires a roll event.</p>"
           }
         ],
         "@param": [
@@ -1481,7 +1481,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Triggers the adaptative roll scrolling."
+            "body": "<p>Triggers the adaptative roll scrolling.</p>"
           }
         ],
         "@param": [
@@ -1512,7 +1512,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Ends touch pad detection process."
+            "body": "<p>Ends touch pad detection process.</p>"
           }
         ]
       },
@@ -1534,7 +1534,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Is touchpad detection enabled ? Default implementation activates it only for Mac OS after Sierra (>= 10.12)."
+            "body": "<p>Is touchpad detection enabled ? Default implementation activates it only for Mac OS after Sierra (&gt;= 10.12).</p>"
           }
         ],
         "@return": [
@@ -1570,7 +1570,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a roll event after determining the roll factor to apply. Mac OS Sierra (10.12+)\nintroduces a lot more wheel events fired from the trackpad, so the roll factor to be applied\nhas to be reduced in order to make the scrolling less sensitive."
+            "body": "<p>Fires a roll event after determining the roll factor to apply. Mac OS Sierra (10.12+)\n introduces a lot more wheel events fired from the trackpad, so the roll factor to be applied\n has to be reduced in order to make the scrolling less sensitive.</p>"
           }
         ],
         "@param": [
@@ -1615,7 +1615,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a rotate event."
+            "body": "<p>Fires a rotate event.</p>"
           }
         ],
         "@param": [
@@ -1653,7 +1653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires a pinch event."
+            "body": "<p>Fires a pinch event.</p>"
           }
         ],
         "@param": [
@@ -1691,7 +1691,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fires the long tap event."
+            "body": "<p>Fires the long tap event.</p>"
           }
         ],
         "@param": [
@@ -1729,7 +1729,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops the time for the long tap event."
+            "body": "<p>Stops the time for the long tap event.</p>"
           }
         ],
         "@param": [
@@ -1760,7 +1760,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose the current instance"
+            "body": "<p>Dispose the current instance</p>"
           }
         ]
       },

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A simple table model that provides an API for changing the model data."
+          "body": "<p>A simple table model that provides an API for changing the model data.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 27,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 38,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "caseSensitiveSorting": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether sorting should be case sensitive"
+            "body": "<p>Whether sorting should be case sensitive</p>"
           }
         ]
       },
@@ -102,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default ascending sort method to use if no custom method has been\nprovided."
+            "body": "<p>Default ascending sort method to use if no custom method has been\n provided.</p>"
           }
         ],
         "@param": [
@@ -155,7 +156,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as the Default ascending sort method but using case insensitivity"
+            "body": "<p>Same as the Default ascending sort method but using case insensitivity</p>"
           }
         ],
         "@param": [
@@ -208,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default descending sort method to use if no custom method has been\nprovided."
+            "body": "<p>Default descending sort method to use if no custom method has been\n provided.</p>"
           }
         ],
         "@param": [
@@ -261,7 +262,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Same as the Default descending sort method but using case insensitivity"
+            "body": "<p>Same as the Default descending sort method but using case insensitivity</p>"
           }
         ],
         "@param": [
@@ -400,7 +401,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -415,9 +416,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Object} the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only.",
+            "body": "{Object} the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only.",
             "type": "Object",
-            "description": " the row data as an object or null if the model does not support row data\nobjects. The details on the object returned are determined by the model\nimplementation only."
+            "description": " the row data as an object or null if the model does not support row data\n                    objects. The details on the object returned are determined by the model\n                    implementation only."
           }
         ]
       },
@@ -444,7 +445,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of one row as map containing the column IDs as key and\nthe cell values as value. Also the meta data is included."
+            "body": "<p>Returns the data of one row as map containing the column IDs as key and\n the cell values as value. Also the meta data is included.</p>"
           }
         ],
         "@param": [
@@ -483,7 +484,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the whole data as an array of maps.\n\nNote: Individual items are retrieved by {@link #getRowDataAsMap}."
+            "body": "<p>Gets the whole data as an array of maps.\n Note: Individual items are retrieved by {@link #getRowDataAsMap}.</p>"
           }
         ],
         "@return": [
@@ -513,7 +514,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets all columns editable or not editable."
+            "body": "<p>Sets all columns editable or not editable.</p>"
           }
         ],
         "@param": [
@@ -544,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a column is editable."
+            "body": "<p>Sets whether a column is editable.</p>"
           }
         ],
         "@param": [
@@ -582,7 +583,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -626,7 +627,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a column is sortable."
+            "body": "<p>Sets whether a column is sortable.</p>"
           }
         ],
         "@param": [
@@ -664,7 +665,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -708,7 +709,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -751,22 +752,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Specify the methods to use for ascending and descending sorts of a\nparticular column."
+            "body": "<p>Specify the methods to use for ascending and descending sorts of a\n particular column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "columnIndex {Integer}\nThe index of the column for which the sort methods are being\nprovided.",
+            "body": "columnIndex {Integer}\n   The index of the column for which the sort methods are being\n   provided.",
             "paramName": "columnIndex",
-            "description": "\nThe index of the column for which the sort methods are being\nprovided.",
+            "description": "\n   The index of the column for which the sort methods are being\n   provided.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "compare {Function|Map}\nIf provided as a Function, this is the comparator function to sort in\nascending order. It takes three parameters: the two arrays of row data,\nrow1 and row2, being compared and the column index sorting was requested\nfor.\n\nFor backwards compatability, user-supplied compare functions may still\ntake only two parameters, the two arrays of row data, row1 and row2,\nbeing compared and obtain the column index as arguments.callee.columnIndex.\nThis is deprecated, however, as arguments.callee is disallowed in ES5 strict\nmode and ES6.\n\nThe comparator function must return 1, 0 or -1, when the column in row1\nis greater than, equal to, or less than, respectively, the column in\nrow2.\n\nIf this parameter is a Map, it shall have two properties: \"ascending\"\nand \"descending\". The property value of each is a comparator\nfunction, as described above.\n\nIf only the \"ascending\" function is provided (i.e. this parameter is\na Function, not a Map), then the \"descending\" function is built\ndynamically by passing the two parameters to the \"ascending\" function\nin reversed order. <i>Use of a dynamically-built \"descending\" function\ngenerates at least one extra function call for each row in the table,\nand possibly many more. If the table is expected to have more than\nabout 1000 rows, you will likely want to provide a map with a custom\n\"descending\" sort function as well as the \"ascending\" one.</i>",
+            "body": "compare {Function|Map}\n   If provided as a Function, this is the comparator function to sort in\n   ascending order. It takes three parameters: the two arrays of row data,\n   row1 and row2, being compared and the column index sorting was requested\n   for.\n   For backwards compatability, user-supplied compare functions may still\n   take only two parameters, the two arrays of row data, row1 and row2,\n   being compared and obtain the column index as arguments.callee.columnIndex.\n   This is deprecated, however, as arguments.callee is disallowed in ES5 strict\n   mode and ES6.\n   The comparator function must return 1, 0 or -1, when the column in row1\n   is greater than, equal to, or less than, respectively, the column in\n   row2.\n   If this parameter is a Map, it shall have two properties: \"ascending\"\n   and \"descending\". The property value of each is a comparator\n   function, as described above.\n   If only the \"ascending\" function is provided (i.e. this parameter is\n   a Function, not a Map), then the \"descending\" function is built\n   dynamically by passing the two parameters to the \"ascending\" function\n   in reversed order. <i>Use of a dynamically-built \"descending\" function\n   generates at least one extra function call for each row in the table,\n   and possibly many more. If the table is expected to have more than\n   about 1000 rows, you will likely want to provide a map with a custom\n   \"descending\" sort function as well as the \"ascending\" one.</i>",
             "paramName": "compare",
-            "description": "\nIf provided as a Function, this is the comparator function to sort in\nascending order. It takes three parameters: the two arrays of row data,\nrow1 and row2, being compared and the column index sorting was requested\nfor.\n\nFor backwards compatability, user-supplied compare functions may still\ntake only two parameters, the two arrays of row data, row1 and row2,\nbeing compared and obtain the column index as arguments.callee.columnIndex.\nThis is deprecated, however, as arguments.callee is disallowed in ES5 strict\nmode and ES6.\n\nThe comparator function must return 1, 0 or -1, when the column in row1\nis greater than, equal to, or less than, respectively, the column in\nrow2.\n\nIf this parameter is a Map, it shall have two properties: \"ascending\"\nand \"descending\". The property value of each is a comparator\nfunction, as described above.\n\nIf only the \"ascending\" function is provided (i.e. this parameter is\na Function, not a Map), then the \"descending\" function is built\ndynamically by passing the two parameters to the \"ascending\" function\nin reversed order. <i>Use of a dynamically-built \"descending\" function\ngenerates at least one extra function call for each row in the table,\nand possibly many more. If the table is expected to have more than\nabout 1000 rows, you will likely want to provide a map with a custom\n\"descending\" sort function as well as the \"ascending\" one.</i>",
+            "description": "\n   If provided as a Function, this is the comparator function to sort in\n   ascending order. It takes three parameters: the two arrays of row data,\n   row1 and row2, being compared and the column index sorting was requested\n   for.\n   For backwards compatability, user-supplied compare functions may still\n   take only two parameters, the two arrays of row data, row1 and row2,\n   being compared and obtain the column index as arguments.callee.columnIndex.\n   This is deprecated, however, as arguments.callee is disallowed in ES5 strict\n   mode and ES6.\n   The comparator function must return 1, 0 or -1, when the column in row1\n   is greater than, equal to, or less than, respectively, the column in\n   row2.\n   If this parameter is a Map, it shall have two properties: \"ascending\"\n   and \"descending\". The property value of each is a comparator\n   function, as described above.\n   If only the \"ascending\" function is provided (i.e. this parameter is\n   a Function, not a Map), then the \"descending\" function is built\n   dynamically by passing the two parameters to the \"ascending\" function\n   in reversed order. <i>Use of a dynamically-built \"descending\" function\n   generates at least one extra function call for each row in the table,\n   and possibly many more. If the table is expected to have more than\n   about 1000 rows, you will likely want to provide a map with a custom\n   \"descending\" sort function as well as the \"ascending\" one.</i>",
             "type": [
               "Function",
               "Map"
@@ -792,24 +793,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the sortMethod(s) for a table column."
+            "body": "<p>Returns the sortMethod(s) for a table column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "columnIndex {Integer} The index of the column for which the sort\nmethods are being  provided.",
+            "body": "columnIndex {Integer} The index of the column for which the sort\n   methods are being  provided.",
             "paramName": "columnIndex",
-            "description": " The index of the column for which the sort\nmethods are being  provided.",
+            "description": " The index of the column for which the sort\n   methods are being  provided.",
             "type": "Integer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} a map with the two properties \"ascending\"\nand \"descending\" for the specified column.\nThe property value of each is a comparator function, as described\nin {@link #setSortMethods}.",
+            "body": "{Map} a map with the two properties \"ascending\"\n   and \"descending\" for the specified column.\n   The property value of each is a comparator function, as described\n   in {@link #setSortMethods}.",
             "type": "Map",
-            "description": " a map with the two properties \"ascending\"\nand \"descending\" for the specified column.\nThe property value of each is a comparator function, as described\nin {@link #setSortMethods}."
+            "description": " a map with the two properties \"ascending\"\n   and \"descending\" for the specified column.\n   The property value of each is a comparator function, as described\n   in {@link #setSortMethods}."
           }
         ]
       },
@@ -831,7 +832,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the sorting."
+            "body": "<p>Clears the sorting.</p>"
           }
         ]
       },
@@ -853,7 +854,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -888,7 +889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the sort column index\n\nWARNING: This should be called only by subclasses with intimate\nknowledge of what they are doing!"
+            "body": "<p>Set the sort column index\n WARNING: This should be called only by subclasses with intimate\n          knowledge of what they are doing!</p>"
           }
         ],
         "@param": [
@@ -919,7 +920,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -954,15 +955,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set whether to sort in ascending order or not.\n\nWARNING: This should be called only by subclasses with intimate\nknowledge of what they are doing!"
+            "body": "<p>Set whether to sort in ascending order or not.\n WARNING: This should be called only by subclasses with intimate\n          knowledge of what they are doing!</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "ascending {Boolean}\n<i>true</i> for an ascending sort;\n<i> false</i> for a descending sort.",
+            "body": "ascending {Boolean}\n   <i>true</i> for an ascending sort;\n   <i> false</i> for a descending sort.",
             "paramName": "ascending",
-            "description": "\n<i>true</i> for an ascending sort;\n<i> false</i> for a descending sort.",
+            "description": "\n   <i>true</i> for an ascending sort;\n   <i> false</i> for a descending sort.",
             "type": "Boolean"
           }
         ]
@@ -985,7 +986,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -1020,7 +1021,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1063,7 +1064,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1113,15 +1114,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the whole data in a bulk."
+            "body": "<p>Sets the whole data in a bulk.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowArr {var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "rowArr {var[][]} An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "paramName": "rowArr",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "description": " An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "type": "var[][]"
           },
           {
@@ -1153,15 +1154,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data of this model.\n\nWarning: Do not alter this array! If you want to change the data use\n{@link #setData}, {@link #setDataAsMapArray} or {@link #setValue} instead."
+            "body": "<p>Returns the data of this model.\n Warning: Do not alter this array! If you want to change the data use\n {@link #setData}, {@link #setDataAsMapArray} or {@link #setValue} instead.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "{var[][]} An array containing an array for each row. Each\n           row-array contains the values in that row in the order of the columns\n           in this model.",
             "type": "var[][]",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model."
+            "description": " An array containing an array for each row. Each\n           row-array contains the values in that row in the order of the columns\n           in this model."
           }
         ]
       },
@@ -1183,22 +1184,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the whole data in a bulk."
+            "body": "<p>Sets the whole data in a bulk.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "mapArr {Map[]} An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "body": "mapArr {Map[]} An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "paramName": "mapArr",
-            "description": " An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "description": " An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "type": "Map[]"
           },
           {
             "name": "@param",
-            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "paramName": "rememberMaps",
-            "description": " Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "description": " Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1232,22 +1233,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds some rows to the model.\n\nWarning: The given array will be altered!"
+            "body": "<p>Adds some rows to the model.\n Warning: The given array will be altered!</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowArr {var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "rowArr {var[][]} An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "paramName": "rowArr",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "description": " An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "type": "var[][]"
           },
           {
             "name": "@param",
-            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\n          the rows are appended to the end.",
             "paramName": "startIndex",
-            "description": " The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "description": " The index where to insert the new rows. If null,\n          the rows are appended to the end.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
@@ -1281,31 +1282,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds some rows to the model.\n\nWarning: The given array (mapArr) will be altered!"
+            "body": "<p>Adds some rows to the model.\n Warning: The given array (mapArr) will be altered!</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "mapArr {Map[]} An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "body": "mapArr {Map[]} An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "paramName": "mapArr",
-            "description": " An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "description": " An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "type": "Map[]"
           },
           {
             "name": "@param",
-            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\n        the rows are appended to the end.",
             "paramName": "startIndex",
-            "description": " The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "description": " The index where to insert the new rows. If null,\n        the rows are appended to the end.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "paramName": "rememberMaps",
-            "description": " Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "description": " Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1339,22 +1340,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets rows in the model. The rows overwrite the old rows starting at\n<code>startIndex</code> to <code>startIndex+rowArr.length</code>.\n\nWarning: The given array will be altered!"
+            "body": "<p>Sets rows in the model. The rows overwrite the old rows starting at\n <code>startIndex</code> to <code>startIndex+rowArr.length</code>.\n Warning: The given array will be altered!</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rowArr {var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "rowArr {var[][]} An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "paramName": "rowArr",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "description": " An array containing an array for each row. Each\n          row-array contains the values in that row in the order of the columns\n          in this model.",
             "type": "var[][]"
           },
           {
             "name": "@param",
-            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\nthe rows are set from the beginning (0).",
+            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\n          the rows are set from the beginning (0).",
             "paramName": "startIndex",
-            "description": " The index where to insert the new rows. If null,\nthe rows are set from the beginning (0).",
+            "description": " The index where to insert the new rows. If null,\n          the rows are set from the beginning (0).",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
@@ -1388,31 +1389,31 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set rows in the model. The rows overwrite the old rows starting at\n<code>startIndex</code> to <code>startIndex+rowArr.length</code>.\n\nWarning: The given array (mapArr) will be altered!"
+            "body": "<p>Set rows in the model. The rows overwrite the old rows starting at\n <code>startIndex</code> to <code>startIndex+rowArr.length</code>.\n Warning: The given array (mapArr) will be altered!</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "mapArr {Map[]} An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "body": "mapArr {Map[]} An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "paramName": "mapArr",
-            "description": " An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "description": " An array containing a map for each row. Each\n        row-map contains the column IDs as key and the cell values as value.",
             "type": "Map[]"
           },
           {
             "name": "@param",
-            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "body": "startIndex {Integer ? null} The index where to insert the new rows. If null,\n        the rows are appended to the end.",
             "paramName": "startIndex",
-            "description": " The index where to insert the new rows. If null,\nthe rows are appended to the end.",
+            "description": " The index where to insert the new rows. If null,\n        the rows are appended to the end.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "paramName": "rememberMaps",
-            "description": " Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "description": " Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1446,7 +1447,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes some rows from the model."
+            "body": "<p>Removes some rows from the model.</p>"
           }
         ],
         "@param": [
@@ -1493,22 +1494,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates an array of maps to an array of arrays."
+            "body": "<p>Creates an array of maps to an array of arrays.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "mapArr {Map[]} An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "body": "mapArr {Map[]} An array containing a map for each row. Each\n          row-map contains the column IDs as key and the cell values as value.",
             "paramName": "mapArr",
-            "description": " An array containing a map for each row. Each\nrow-map contains the column IDs as key and the cell values as value.",
+            "description": " An array containing a map for each row. Each\n          row-map contains the column IDs as key and the cell values as value.",
             "type": "Map[]"
           },
           {
             "name": "@param",
-            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "body": "rememberMaps {Boolean ? false} Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "paramName": "rememberMaps",
-            "description": " Whether to remember the original maps.\nIf true {@link #getRowData} will return the original map.",
+            "description": " Whether to remember the original maps.\n        If true {@link #getRowData} will return the original map.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1517,9 +1518,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{var[][]} An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model.",
+            "body": "{var[][]} An array containing an array for each row. Each\n           row-array contains the values in that row in the order of the columns\n           in this model.",
             "type": "var[][]",
-            "description": " An array containing an array for each row. Each\nrow-array contains the values in that row in the order of the columns\nin this model."
+            "description": " An array containing an array for each row. Each\n           row-array contains the values in that row in the order of the columns\n           in this model."
           }
         ]
       },
@@ -1741,13 +1742,14 @@
     "location": {
       "start": {
         "line": 777,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 781,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.table.model.Filtered"

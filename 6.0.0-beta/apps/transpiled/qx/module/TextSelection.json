@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Text selection manipulation module"
+          "body": "<p>Text selection manipulation module</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given DOM node is a text input field or textarea"
+            "body": "<p>Checks if the given DOM node is a text input field or textarea</p>"
           }
         ],
         "@param": [
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the first text child node of the given element"
+            "body": "<p>Returns the first text child node of the given element</p>"
           }
         ],
         "@param": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the text selection of the first element."
+            "body": "<p>Get the text selection of the first element.</p>"
           }
         ],
         "@return": [
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the length of the text selection of the first element."
+            "body": "<p>Get the length of the text selection of the first element.</p>"
           }
         ],
         "@return": [
@@ -205,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the start of the text selection of the first element."
+            "body": "<p>Get the start of the text selection of the first element.</p>"
           }
         ],
         "@return": [
@@ -241,7 +241,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the end of the text selection of the first element."
+            "body": "<p>Get the end of the text selection of the first element.</p>"
           }
         ],
         "@return": [
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the text selection of the first element in the collection\nwith the given start and end value.\nIf no end value is passed the selection will extend to the end."
+            "body": "<p>Set the text selection of the first element in the collection\n with the given start and end value.\n If no end value is passed the selection will extend to the end.</p>"
           }
         ],
         "@param": [
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the text selection of all elements."
+            "body": "<p>Clears the text selection of all elements.</p>"
           }
         ],
         "@return": [
@@ -355,13 +355,14 @@
     "location": {
       "start": {
         "line": 184,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 186,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

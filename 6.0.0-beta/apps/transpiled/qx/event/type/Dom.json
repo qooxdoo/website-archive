@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nAndreas Ecker (ecker)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Andreas Ecker (ecker)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Common base class for all DOM events."
+          "body": "<p>Common base class for all DOM events.</p>"
         }
       ]
     }
@@ -245,7 +245,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -295,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return in a bit map, which modifier keys are pressed. The constants\n{@link #SHIFT_MASK}, {@link #CTRL_MASK}, {@link #ALT_MASK},\n{@link #META_MASK} and {@link #CAPSLOCK_MASK} define the bit positions\nof the corresponding keys."
+            "body": "<p>Return in a bit map, which modifier keys are pressed. The constants\n {@link #SHIFT<em>MASK}, {@link #CTRL</em>MASK}, {@link #ALT<em>MASK},\n {@link #META</em>MASK} and {@link #CAPSLOCK_MASK} define the bit positions\n of the corresponding keys.</p>"
           }
         ],
         "@return": [
@@ -325,7 +325,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return in a bit map, which lock keys are pressed. The constants\n{@link #CAPSLOCK_MASK}, {@link #NUMLOCK_MASK}, and {@link #SCROLLLOCK_MASK}\ndefine the bit positions of the corresponding keys."
+            "body": "<p>Return in a bit map, which lock keys are pressed. The constants\n {@link #CAPSLOCK<em>MASK}, {@link #NUMLOCK</em>MASK}, and {@link #SCROLLLOCK_MASK}\n define the bit positions of the corresponding keys.</p>"
           }
         ],
         "@return": [
@@ -355,7 +355,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the ctrl key is pressed."
+            "body": "<p>Returns whether the ctrl key is pressed.</p>"
           }
         ],
         "@return": [
@@ -385,7 +385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the shift key is pressed."
+            "body": "<p>Returns whether the shift key is pressed.</p>"
           }
         ],
         "@return": [
@@ -415,7 +415,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the alt key is pressed."
+            "body": "<p>Returns whether the alt key is pressed.</p>"
           }
         ],
         "@return": [
@@ -445,7 +445,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the meta key is pressed."
+            "body": "<p>Returns whether the meta key is pressed.</p>"
           }
         ],
         "@return": [
@@ -475,7 +475,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the caps-lock modifier is active"
+            "body": "<p>Returns whether the caps-lock modifier is active</p>"
           }
         ],
         "@return": [
@@ -505,7 +505,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the num-lock modifier is active"
+            "body": "<p>Returns whether the num-lock modifier is active</p>"
           }
         ],
         "@return": [
@@ -535,7 +535,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the scroll-lock modifier is active"
+            "body": "<p>Returns whether the scroll-lock modifier is active</p>"
           }
         ],
         "@return": [
@@ -565,15 +565,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the ctrl key or (on the Mac) the command key is pressed."
+            "body": "<p>Returns whether the ctrl key or (on the Mac) the command key is pressed.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> if the command key is pressed on the Mac\nor the ctrl key is pressed on another system.",
+            "body": "{Boolean} <code>true</code> if the command key is pressed on the Mac\n           or the ctrl key is pressed on another system.",
             "type": "Boolean",
-            "description": " <code>true</code> if the command key is pressed on the Mac\nor the ctrl key is pressed on another system."
+            "description": " <code>true</code> if the command key is pressed on the Mac\n           or the ctrl key is pressed on another system."
           }
         ]
       },

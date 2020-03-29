@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 557,
+        "line": 555,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThemeable Cell renderer.\n\nThis cell renderer can be styled by an appearance theme."
+          "body": "<p>Themeable Cell renderer.\n This cell renderer can be styled by an appearance theme.</p>"
         }
       ]
     }
@@ -34,24 +34,25 @@
   "construct": {
     "location": {
       "start": {
-        "line": 31,
-        "column": 2
+        "line": 29,
+        "column": 14
       },
       "end": {
-        "line": 49,
+        "line": 47,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "appearance": {
       "location": {
         "start": {
-          "line": 64,
+          "line": 62,
           "column": 4
         },
         "end": {
-          "line": 69,
+          "line": 67,
           "column": 5
         }
       },
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The appearance ID. This ID is used to identify the appearance theme\nentry to use for this cell."
+            "body": "<p>The appearance ID. This ID is used to identify the appearance theme\n entry to use for this cell.</p>"
           }
         ]
       },
@@ -73,11 +74,11 @@
     "backgroundColor": {
       "location": {
         "start": {
-          "line": 73,
+          "line": 71,
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 77,
           "column": 5
         }
       },
@@ -85,7 +86,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The cell's background color"
+            "body": "<p>The cell's background color</p>"
           }
         ]
       },
@@ -100,11 +101,11 @@
     "textColor": {
       "location": {
         "start": {
-          "line": 83,
+          "line": 81,
           "column": 4
         },
         "end": {
-          "line": 89,
+          "line": 87,
           "column": 5
         }
       },
@@ -112,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The cell's text color"
+            "body": "<p>The cell's text color</p>"
           }
         ]
       },
@@ -127,11 +128,11 @@
     "textAlign": {
       "location": {
         "start": {
-          "line": 93,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 97,
           "column": 5
         }
       },
@@ -139,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The text alignment of the cell's content"
+            "body": "<p>The text alignment of the cell's content</p>"
           }
         ]
       },
@@ -159,11 +160,11 @@
     "font": {
       "location": {
         "start": {
-          "line": 106,
+          "line": 104,
           "column": 4
         },
         "end": {
-          "line": 112,
+          "line": 110,
           "column": 5
         }
       },
@@ -171,7 +172,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The cell's font. The value is either a font name defined in the font\ntheme or an instance of {@link qx.bom.Font}."
+            "body": "<p>The cell's font. The value is either a font name defined in the font\n theme or an instance of {@link qx.bom.Font}.</p>"
           }
         ]
       },
@@ -186,11 +187,11 @@
     "paddingTop": {
       "location": {
         "start": {
-          "line": 122,
+          "line": 120,
           "column": 4
         },
         "end": {
-          "line": 128,
+          "line": 126,
           "column": 5
         }
       },
@@ -198,11 +199,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nPADDING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  PADDING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Padding of the widget (top)"
+            "body": "<p>Padding of the widget (top)</p>"
           }
         ]
       },
@@ -217,11 +218,11 @@
     "paddingRight": {
       "location": {
         "start": {
-          "line": 132,
+          "line": 130,
           "column": 4
         },
         "end": {
-          "line": 138,
+          "line": 136,
           "column": 5
         }
       },
@@ -229,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (right)"
+            "body": "<p>Padding of the widget (right)</p>"
           }
         ]
       },
@@ -244,11 +245,11 @@
     "paddingBottom": {
       "location": {
         "start": {
-          "line": 142,
+          "line": 140,
           "column": 4
         },
         "end": {
-          "line": 148,
+          "line": 146,
           "column": 5
         }
       },
@@ -256,7 +257,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (bottom)"
+            "body": "<p>Padding of the widget (bottom)</p>"
           }
         ]
       },
@@ -271,11 +272,11 @@
     "paddingLeft": {
       "location": {
         "start": {
-          "line": 152,
+          "line": 150,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 156,
           "column": 5
         }
       },
@@ -283,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Padding of the widget (left)"
+            "body": "<p>Padding of the widget (left)</p>"
           }
         ]
       },
@@ -298,11 +299,11 @@
     "padding": {
       "location": {
         "start": {
-          "line": 170,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 175,
+          "line": 173,
           "column": 5
         }
       },
@@ -310,7 +311,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The 'padding' property is a shorthand property for setting 'paddingTop',\n'paddingRight', 'paddingBottom' and 'paddingLeft' at the same time.\n\nIf four values are specified they apply to top, right, bottom and left\nrespectively. If there is only one value, it applies to all sides, if\nthere are two or three, the missing values are taken from the opposite\nside."
+            "body": "<p>The 'padding' property is a shorthand property for setting 'paddingTop',\n 'paddingRight', 'paddingBottom' and 'paddingLeft' at the same time.\n If four values are specified they apply to top, right, bottom and left\n respectively. If there is only one value, it applies to all sides, if\n there are two or three, the missing values are taken from the opposite\n side.</p>"
           }
         ]
       },
@@ -345,11 +346,11 @@
     "__themableProperties": {
       "location": {
         "start": {
-          "line": 189,
+          "line": 187,
           "column": 4
         },
         "end": {
-          "line": 189,
+          "line": 187,
           "column": 31
         }
       },
@@ -373,11 +374,11 @@
     "__statesKey": {
       "location": {
         "start": {
-          "line": 192,
+          "line": 190,
           "column": 4
         },
         "end": {
-          "line": 192,
+          "line": 190,
           "column": 22
         }
       },
@@ -401,11 +402,11 @@
     "__states": {
       "location": {
         "start": {
-          "line": 194,
+          "line": 192,
           "column": 4
         },
         "end": {
-          "line": 194,
+          "line": 192,
           "column": 19
         }
       },
@@ -415,11 +416,11 @@
     "__themeValues": {
       "location": {
         "start": {
-          "line": 196,
+          "line": 194,
           "column": 4
         },
         "end": {
-          "line": 196,
+          "line": 194,
           "column": 24
         }
       },
@@ -429,11 +430,11 @@
     "__themeStyles": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 197,
+          "line": 195,
           "column": 24
         }
       },
@@ -443,11 +444,11 @@
     "__userStyles": {
       "location": {
         "start": {
-          "line": 198,
+          "line": 196,
           "column": 4
         },
         "end": {
-          "line": 198,
+          "line": 196,
           "column": 23
         }
       },
@@ -457,11 +458,11 @@
     "__userPaddings": {
       "location": {
         "start": {
-          "line": 200,
+          "line": 198,
           "column": 4
         },
         "end": {
-          "line": 200,
+          "line": 198,
           "column": 25
         }
       },
@@ -471,11 +472,11 @@
     "__themePaddings": {
       "location": {
         "start": {
-          "line": 201,
+          "line": 199,
           "column": 4
         },
         "end": {
-          "line": 201,
+          "line": 199,
           "column": 26
         }
       },
@@ -485,11 +486,11 @@
     "__isThemed": {
       "location": {
         "start": {
-          "line": 203,
+          "line": 201,
           "column": 4
         },
         "end": {
-          "line": 203,
+          "line": 201,
           "column": 22
         }
       },
@@ -499,11 +500,11 @@
     "__stylesheet": {
       "location": {
         "start": {
-          "line": 204,
+          "line": 202,
           "column": 4
         },
         "end": {
-          "line": 204,
+          "line": 202,
           "column": 23
         }
       },
@@ -513,11 +514,11 @@
     "__initializeThemableProperties": {
       "location": {
         "start": {
-          "line": 210,
+          "line": 208,
           "column": 4
         },
         "end": {
-          "line": 228,
+          "line": 226,
           "column": 5
         }
       },
@@ -525,7 +526,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Collect all themable properties, which are not CSS properties"
+            "body": "<p>Collect all themable properties, which are not CSS properties</p>"
           }
         ]
       },
@@ -535,11 +536,11 @@
     "_getCssProperties": {
       "location": {
         "start": {
-          "line": 236,
+          "line": 234,
           "column": 4
         },
         "end": {
-          "line": 242,
+          "line": 240,
           "column": 5
         }
       },
@@ -547,7 +548,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all properties, which should be applied as CSS styles."
+            "body": "<p>Get a list of all properties, which should be applied as CSS styles.</p>"
           }
         ],
         "@return": [
@@ -565,11 +566,11 @@
     "_applyAppearance": {
       "location": {
         "start": {
-          "line": 246,
+          "line": 244,
           "column": 4
         },
         "end": {
-          "line": 251,
+          "line": 249,
           "column": 5
         }
       },
@@ -577,7 +578,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -590,11 +591,11 @@
     "_getValue": {
       "location": {
         "start": {
-          "line": 260,
+          "line": 258,
           "column": 4
         },
         "end": {
-          "line": 267,
+          "line": 265,
           "column": 5
         }
       },
@@ -602,7 +603,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute the value of the given property"
+            "body": "<p>Compute the value of the given property</p>"
           }
         ],
         "@param": [
@@ -629,11 +630,11 @@
     "_storeStyle": {
       "location": {
         "start": {
-          "line": 278,
+          "line": 276,
           "column": 4
         },
         "end": {
-          "line": 293,
+          "line": 291,
           "column": 5
         }
       },
@@ -641,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Store a properties computed style string either in the user or in the\ntheme values. User values will be applied as inline styles, while theme\nvalues are stored in a stylesheet."
+            "body": "<p>Store a properties computed style string either in the user or in the\n theme values. User values will be applied as inline styles, while theme\n values are stored in a stylesheet.</p>"
           }
         ],
         "@param": [
@@ -667,11 +668,11 @@
     "_applyBackgroundColor": {
       "location": {
         "start": {
-          "line": 297,
+          "line": 295,
           "column": 4
         },
         "end": {
-          "line": 305,
+          "line": 303,
           "column": 5
         }
       },
@@ -679,7 +680,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -692,11 +693,11 @@
     "_applyTextColor": {
       "location": {
         "start": {
-          "line": 309,
+          "line": 307,
           "column": 4
         },
         "end": {
-          "line": 317,
+          "line": 315,
           "column": 5
         }
       },
@@ -704,7 +705,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -717,11 +718,11 @@
     "_applyTextAlign": {
       "location": {
         "start": {
-          "line": 321,
+          "line": 319,
           "column": 4
         },
         "end": {
-          "line": 329,
+          "line": 327,
           "column": 5
         }
       },
@@ -729,7 +730,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -742,11 +743,11 @@
     "_applyFont": {
       "location": {
         "start": {
-          "line": 333,
+          "line": 331,
           "column": 4
         },
         "end": {
-          "line": 342,
+          "line": 340,
           "column": 5
         }
       },
@@ -754,7 +755,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -767,11 +768,11 @@
     "_applyPadding": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 344,
           "column": 4
         },
         "end": {
-          "line": 368,
+          "line": 366,
           "column": 5
         }
       },
@@ -779,7 +780,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -795,11 +796,11 @@
     "getCellProperties": {
       "location": {
         "start": {
-          "line": 379,
+          "line": 377,
           "column": 4
         },
         "end": {
-          "line": 389,
+          "line": 387,
           "column": 5
         }
       },
@@ -807,11 +808,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMPLEMENT CELL API\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  IMPLEMENT CELL API\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -824,9 +825,9 @@
           },
           {
             "name": "@param",
-            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "body": "states {Map} The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "paramName": "states",
-            "description": " The states set on the cell (e.g. <i>selected</i>,\n<i>focused</i>, <i>editable</i>).",
+            "description": " The states set on the cell (e.g. <i>selected</i>,\n <i>focused</i>, <i>editable</i>).",
             "type": "Map"
           }
         ],
@@ -850,11 +851,11 @@
     "getAttributes": {
       "location": {
         "start": {
-          "line": 393,
+          "line": 391,
           "column": 4
         },
         "end": {
-          "line": 395,
+          "line": 393,
           "column": 5
         }
       },
@@ -862,7 +863,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -884,9 +885,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} Compiled string of cell attributes. e.g.\n<code>'tabIndex=\"1\" readonly=\"false\"'</code>",
+            "body": "{String} Compiled string of cell attributes. e.g.\n   <code>'tabIndex=\"1\" readonly=\"false\"'</code>",
             "type": "qx.ui.virtual.cell.String",
-            "description": " Compiled string of cell attributes. e.g.\n<code>'tabIndex=\"1\" readonly=\"false\"'</code>"
+            "description": " Compiled string of cell attributes. e.g.\n   <code>'tabIndex=\"1\" readonly=\"false\"'</code>"
           }
         ]
       },
@@ -900,11 +901,11 @@
     "getContent": {
       "location": {
         "start": {
-          "line": 399,
+          "line": 397,
           "column": 4
         },
         "end": {
-          "line": 401,
+          "line": 399,
           "column": 5
         }
       },
@@ -912,7 +913,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -950,11 +951,11 @@
     "getCssClasses": {
       "location": {
         "start": {
-          "line": 405,
+          "line": 403,
           "column": 4
         },
         "end": {
-          "line": 409,
+          "line": 407,
           "column": 5
         }
       },
@@ -962,7 +963,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1000,11 +1001,11 @@
     "__setStates": {
       "location": {
         "start": {
-          "line": 418,
+          "line": 416,
           "column": 4
         },
         "end": {
-          "line": 443,
+          "line": 441,
           "column": 5
         }
       },
@@ -1012,7 +1013,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the cell states and set the correct CSS class for the given state\ncombination"
+            "body": "<p>Set the cell states and set the correct CSS class for the given state\n combination</p>"
           }
         ],
         "@param": [
@@ -1031,11 +1032,11 @@
     "__clearThemedPropertyValues": {
       "location": {
         "start": {
-          "line": 449,
+          "line": 447,
           "column": 4
         },
         "end": {
-          "line": 456,
+          "line": 454,
           "column": 5
         }
       },
@@ -1043,7 +1044,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the themed value from all CSS properties"
+            "body": "<p>Remove the themed value from all CSS properties</p>"
           }
         ]
       },
@@ -1053,11 +1054,11 @@
     "__updateThemeableProperties": {
       "location": {
         "start": {
-          "line": 464,
+          "line": 462,
           "column": 4
         },
         "end": {
-          "line": 482,
+          "line": 480,
           "column": 5
         }
       },
@@ -1065,7 +1066,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the new themed value for all CSS properties given the set of states"
+            "body": "<p>Set the new themed value for all CSS properties given the set of states</p>"
           }
         ],
         "@param": [
@@ -1084,11 +1085,11 @@
     "__computeCssClassForStates": {
       "location": {
         "start": {
-          "line": 488,
+          "line": 486,
           "column": 4
         },
         "end": {
-          "line": 492,
+          "line": 490,
           "column": 5
         }
       },
@@ -1096,7 +1097,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute a CSS class for the current values of all CSS properties"
+            "body": "<p>Compute a CSS class for the current values of all CSS properties</p>"
           }
         ]
       },
@@ -1106,11 +1107,11 @@
     "__cacheThemedValues": {
       "location": {
         "start": {
-          "line": 498,
+          "line": 496,
           "column": 4
         },
         "end": {
-          "line": 513,
+          "line": 511,
           "column": 5
         }
       },
@@ -1118,7 +1119,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Cache the themed values for the current state combination"
+            "body": "<p>Cache the themed values for the current state combination</p>"
           }
         ]
       },
@@ -1128,11 +1129,11 @@
     "__applyThemeValues": {
       "location": {
         "start": {
-          "line": 519,
+          "line": 517,
           "column": 4
         },
         "end": {
-          "line": 526,
+          "line": 524,
           "column": 5
         }
       },
@@ -1140,7 +1141,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply the themed values to the properties"
+            "body": "<p>Apply the themed values to the properties</p>"
           }
         ]
       },
@@ -1150,11 +1151,11 @@
     "getStyles": {
       "location": {
         "start": {
-          "line": 530,
+          "line": 528,
           "column": 4
         },
         "end": {
-          "line": 532,
+          "line": 530,
           "column": 5
         }
       },
@@ -1162,7 +1163,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1184,9 +1185,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} Compiled string of CSS styles. e.g.\n<code>'color=\"red; padding: 10px'</code>",
+            "body": "{String} Compiled string of CSS styles. e.g.\n   <code>'color=\"red; padding: 10px'</code>",
             "type": "qx.ui.virtual.cell.String",
-            "description": " Compiled string of CSS styles. e.g.\n<code>'color=\"red; padding: 10px'</code>"
+            "description": " Compiled string of CSS styles. e.g.\n   <code>'color=\"red; padding: 10px'</code>"
           }
         ]
       },
@@ -1200,11 +1201,11 @@
     "getInsets": {
       "location": {
         "start": {
-          "line": 536,
+          "line": 534,
           "column": 4
         },
         "end": {
-          "line": 547,
+          "line": 545,
           "column": 5
         }
       },
@@ -1212,7 +1213,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -1234,9 +1235,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer[]} An array containing the sum of horizontal insets at index\n<code>0</code> and the sum of vertical insets at index <code>1</code>.",
+            "body": "{Integer[]} An array containing the sum of horizontal insets at index\n   <code>0</code> and the sum of vertical insets at index <code>1</code>.",
             "type": "Integer[]",
-            "description": " An array containing the sum of horizontal insets at index\n<code>0</code> and the sum of vertical insets at index <code>1</code>."
+            "description": " An array containing the sum of horizontal insets at index\n   <code>0</code> and the sum of vertical insets at index <code>1</code>."
           }
         ]
       },
@@ -2031,14 +2032,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 551,
-        "column": 2
+        "line": 549,
+        "column": 13
       },
       "end": {
-        "line": 556,
+        "line": 554,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": [
     "qx.ui.virtual.cell.AbstractImage",

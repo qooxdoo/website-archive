@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMustafa Sak (msak)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Mustafa Sak (msak)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Provides scrolling ability during drag session to the widget."
+          "body": "<p>Provides scrolling ability during drag session to the widget.</p>"
         }
       ]
     }
@@ -37,13 +37,14 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 34,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "_widget": {
@@ -75,15 +76,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the root widget whose children will have scroll on drag session\nbehavior. Widget was set on constructor or will be application root by\ndefault."
+            "body": "<p>Returns the root widget whose children will have scroll on drag session\n behavior. Widget was set on constructor or will be application root by\n default.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget} The root widget whose children will have\nscroll on drag session",
+            "body": "{qx.ui.core.Widget} The root widget whose children will have\n scroll on drag session",
             "type": "qx.ui.core.Widget",
-            "description": " The root widget whose children will have\nscroll on drag session"
+            "description": " The root widget whose children will have\n scroll on drag session"
           }
         ]
       },
@@ -102,7 +103,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds the first scrollable parent (in the parent chain)."
+            "body": "<p>Finds the first scrollable parent (in the parent chain).</p>"
           }
         ],
         "@param": [
@@ -136,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is scrollable."
+            "body": "<p>Whether the widget is scrollable.</p>"
           }
         ],
         "@param": [
@@ -170,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the bounds of the given scrollable."
+            "body": "<p>Gets the bounds of the given scrollable.</p>"
           }
         ],
         "@param": [
@@ -204,7 +205,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the edge type or null if the pointer isn't within one of the thresholds."
+            "body": "<p>Gets the edge type or null if the pointer isn't within one of the thresholds.</p>"
           }
         ],
         "@param": [
@@ -252,7 +253,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the axis ('x' or 'y') by the edge type."
+            "body": "<p>Gets the axis ('x' or 'y') by the edge type.</p>"
           }
         ],
         "@param": [
@@ -294,7 +295,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the threshold amount by edge type."
+            "body": "<p>Gets the threshold amount by edge type.</p>"
           }
         ],
         "@param": [
@@ -328,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is visible."
+            "body": "<p>Whether the scrollbar is visible.</p>"
           }
         ],
         "@param": [
@@ -369,7 +370,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the scrollbar is exceeding it's maximum position."
+            "body": "<p>Whether the scrollbar is exceeding it's maximum position.</p>"
           }
         ],
         "@param": [
@@ -417,7 +418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the threshold exceedance (which may be negative)."
+            "body": "<p>Calculates the threshold exceedance (which may be negative).</p>"
           }
         ],
         "@param": [
@@ -458,7 +459,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Calculates the scroll amount (which may be negative).\nThe amount is influenced by the scrollbar size (bigger = faster)\nthe exceedanceAmount (bigger = faster) and the slowDownFactor."
+            "body": "<p>Calculates the scroll amount (which may be negative).\n The amount is influenced by the scrollbar size (bigger = faster)\n the exceedanceAmount (bigger = faster) and the slowDownFactor.</p>"
           }
         ],
         "@param": [
@@ -499,7 +500,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the given scrollable on the given axis for the given amount."
+            "body": "<p>Scrolls the given scrollable on the given axis for the given amount.</p>"
           }
         ],
         "@param": [
@@ -539,11 +540,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\nEVENT HANDLERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Event handler for the drag event."
+            "body": "<p>Event handler for the drag event.</p>"
           }
         ],
         "@param": [
@@ -569,7 +570,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the dragend event."
+            "body": "<p>Event handler for the dragend event.</p>"
           }
         ],
         "@param": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A set of methods which may be used to retrieve various siblings of nodes."
+          "body": "<p>A set of methods which may be used to retrieve various siblings of nodes.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the first child of the specified node."
+            "body": "<p>Get the first child of the specified node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node for which the first child is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node for which the first child is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node for which the first child is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node for which the first child is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -65,9 +65,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe node id of the first child.",
+            "body": "{Integer}\n   The node id of the first child.",
             "type": "Integer",
-            "description": "\nThe node id of the first child."
+            "description": "\n   The node id of the first child."
           }
         ]
       },
@@ -89,15 +89,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the last child of the specified node."
+            "body": "<p>Get the last child of the specified node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node for which the last child is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node for which the last child is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node for which the last child is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node for which the last child is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -107,9 +107,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe node id of the last child.",
+            "body": "{Integer}\n   The node id of the last child.",
             "type": "Integer",
-            "description": "\nThe node id of the last child."
+            "description": "\n   The node id of the last child."
           }
         ]
       },
@@ -131,15 +131,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the next sibling of the specified node."
+            "body": "<p>Get the next sibling of the specified node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node for which the next sibling is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node for which the next sibling is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node for which the next sibling is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node for which the next sibling is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -149,9 +149,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe node id of the next sibling.",
+            "body": "{Integer}\n   The node id of the next sibling.",
             "type": "Integer",
-            "description": "\nThe node id of the next sibling."
+            "description": "\n   The node id of the next sibling."
           }
         ]
       },
@@ -173,15 +173,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the previous sibling of the specified node."
+            "body": "<p>Get the previous sibling of the specified node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeReference {Object | Integer}\nThe node for which the previous sibling is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "body": "nodeReference {Object | Integer}\n   The node for which the previous sibling is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "paramName": "nodeReference",
-            "description": "\nThe node for which the previous sibling is desired.  The node can be\nrepresented either by the node object, or the node id (as would have\nbeen returned by addBranch(), addLeaf(), etc.)",
+            "description": "\n   The node for which the previous sibling is desired.  The node can be\n   represented either by the node object, or the node id (as would have\n   been returned by addBranch(), addLeaf(), etc.)",
             "type": [
               "Object",
               "Integer"
@@ -191,9 +191,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer}\nThe node id of the previous sibling.",
+            "body": "{Integer}\n   The node id of the previous sibling.",
             "type": "Integer",
-            "description": "\nThe node id of the previous sibling."
+            "description": "\n   The node id of the previous sibling."
           }
         ]
       },

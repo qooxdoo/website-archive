@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 27,
+        "line": 25,
         "column": 0
       },
       "end": {
-        "line": 449,
+        "line": 447,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThe CellSpanManager manages cells, which span several rows or columns.\n\nIt provides functionality to compute, which spanning cells are visible\nin a given view port and how they have to be placed."
+          "body": "<p>The CellSpanManager manages cells, which span several rows or columns.\n It provides functionality to compute, which spanning cells are visible\n in a given view port and how they have to be placed.</p>"
         }
       ]
     }
@@ -34,11 +34,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 37,
-        "column": 2
+        "line": 35,
+        "column": 14
       },
       "end": {
-        "line": 56,
+        "line": 54,
         "column": 3
       }
     },
@@ -52,16 +52,16 @@
       "@param": [
         {
           "name": "@param",
-          "body": "rowConfig {qx.ui.virtual.core.Axis} The row configuration of the pane\nin which the cells will be rendered",
+          "body": "rowConfig {qx.ui.virtual.core.Axis} The row configuration of the pane\n    in which the cells will be rendered",
           "paramName": "rowConfig",
-          "description": " The row configuration of the pane\nin which the cells will be rendered",
+          "description": " The row configuration of the pane\n    in which the cells will be rendered",
           "type": "qx.ui.virtual.core.Axis"
         },
         {
           "name": "@param",
-          "body": "columnConfig {qx.ui.virtual.core.Axis} The column configuration of the pane\nin which the cells will be rendered",
+          "body": "columnConfig {qx.ui.virtual.core.Axis} The column configuration of the pane\n    in which the cells will be rendered",
           "paramName": "columnConfig",
-          "description": " The column configuration of the pane\nin which the cells will be rendered",
+          "description": " The column configuration of the pane\n    in which the cells will be rendered",
           "type": "qx.ui.virtual.core.Axis"
         }
       ]
@@ -71,11 +71,11 @@
     "addCell": {
       "location": {
         "start": {
-          "line": 77,
+          "line": 75,
           "column": 4
         },
         "end": {
-          "line": 87,
+          "line": 85,
           "column": 5
         }
       },
@@ -83,15 +83,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a spanning cell to the manager."
+            "body": "<p>Add a spanning cell to the manager.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} Unique id for the cell definition. This id is required\nfor removing the cell from the manager",
+            "body": "id {String} Unique id for the cell definition. This id is required\n    for removing the cell from the manager",
             "paramName": "id",
-            "description": " Unique id for the cell definition. This id is required\nfor removing the cell from the manager",
+            "description": " Unique id for the cell definition. This id is required\n    for removing the cell from the manager",
             "type": "String"
           },
           {
@@ -130,11 +130,11 @@
     "removeCell": {
       "location": {
         "start": {
-          "line": 95,
+          "line": 93,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 97,
           "column": 5
         }
       },
@@ -142,7 +142,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a cell from the manager"
+            "body": "<p>Remove a cell from the manager</p>"
           }
         ],
         "@param": [
@@ -161,11 +161,11 @@
     "_invalidateSortCache": {
       "location": {
         "start": {
-          "line": 105,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 107,
+          "line": 105,
           "column": 5
         }
       },
@@ -173,7 +173,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invalidate the sort cache"
+            "body": "<p>Invalidate the sort cache</p>"
           }
         ]
       },
@@ -183,11 +183,11 @@
     "_getSortedCells": {
       "location": {
         "start": {
-          "line": 117,
+          "line": 115,
           "column": 4
         },
         "end": {
-          "line": 127,
+          "line": 125,
           "column": 5
         }
       },
@@ -195,15 +195,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the cell array sorted by the given key (ascending)"
+            "body": "<p>Get the cell array sorted by the given key (ascending)</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "key {String} The sort key. One of <code>firstRow</code>,\n<code>lastRow</code>, <code>firstColumn</code> or <code>lastColumn</code>",
+            "body": "key {String} The sort key. One of <code>firstRow</code>,\n     <code>lastRow</code>, <code>firstColumn</code> or <code>lastColumn</code>",
             "paramName": "key",
-            "description": " The sort key. One of <code>firstRow</code>,\n<code>lastRow</code>, <code>firstColumn</code> or <code>lastColumn</code>",
+            "description": " The sort key. One of <code>firstRow</code>,\n     <code>lastRow</code>, <code>firstColumn</code> or <code>lastColumn</code>",
             "type": "String"
           }
         ],
@@ -222,11 +222,11 @@
     "_findCellsInRange": {
       "location": {
         "start": {
-          "line": 140,
+          "line": 138,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 181,
           "column": 5
         }
       },
@@ -234,7 +234,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Finds all cells with a sort key within the given range.\n\nComplexity: O(log n)"
+            "body": "<p>Finds all cells with a sort key within the given range.\n Complexity: O(log n)</p>"
           }
         ],
         "@param": [
@@ -275,11 +275,11 @@
     "findCellsInWindow": {
       "location": {
         "start": {
-          "line": 197,
+          "line": 195,
           "column": 4
         },
         "end": {
-          "line": 232,
+          "line": 230,
           "column": 5
         }
       },
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Find all cells, which are visible in the given grid window."
+            "body": "<p>Find all cells, which are visible in the given grid window.</p>"
           }
         ],
         "@param": [
@@ -323,9 +323,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[]} The array of found cell descriptions. A cell description\ncontains the keys <code>firstRow</code>, <code>lastRow</code>,\n<code>firstColumn</code> or <code>lastColumn</code>",
+            "body": "{Map[]} The array of found cell descriptions. A cell description\n    contains the keys <code>firstRow</code>, <code>lastRow</code>,\n    <code>firstColumn</code> or <code>lastColumn</code>",
             "type": "Map[]",
-            "description": " The array of found cell descriptions. A cell description\ncontains the keys <code>firstRow</code>, <code>lastRow</code>,\n<code>firstColumn</code> or <code>lastColumn</code>"
+            "description": " The array of found cell descriptions. A cell description\n    contains the keys <code>firstRow</code>, <code>lastRow</code>,\n    <code>firstColumn</code> or <code>lastColumn</code>"
           }
         ]
       },
@@ -335,11 +335,11 @@
     "__intersectionAsArray": {
       "location": {
         "start": {
-          "line": 243,
+          "line": 241,
           "column": 4
         },
         "end": {
-          "line": 253,
+          "line": 251,
           "column": 5
         }
       },
@@ -347,7 +347,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the intersection of two maps as an array. The objects intersect if\nthey have the same keys."
+            "body": "<p>Return the intersection of two maps as an array. The objects intersect if\n they have the same keys.</p>"
           }
         ],
         "@param": [
@@ -381,11 +381,11 @@
     "_onRowConfigChange": {
       "location": {
         "start": {
-          "line": 261,
+          "line": 259,
           "column": 4
         },
         "end": {
-          "line": 263,
+          "line": 261,
           "column": 5
         }
       },
@@ -393,7 +393,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for row configuration changes"
+            "body": "<p>Event handler for row configuration changes</p>"
           }
         ],
         "@param": [
@@ -412,11 +412,11 @@
     "_onColumnConfigChange": {
       "location": {
         "start": {
-          "line": 271,
+          "line": 269,
           "column": 4
         },
         "end": {
-          "line": 273,
+          "line": 271,
           "column": 5
         }
       },
@@ -424,7 +424,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for column configuration changes"
+            "body": "<p>Event handler for column configuration changes</p>"
           }
         ],
         "@param": [
@@ -443,11 +443,11 @@
     "_invalidatePositionCache": {
       "location": {
         "start": {
-          "line": 279,
+          "line": 277,
           "column": 4
         },
         "end": {
-          "line": 283,
+          "line": 281,
           "column": 5
         }
       },
@@ -455,7 +455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invalidates the row/column position cache"
+            "body": "<p>Invalidates the row/column position cache</p>"
           }
         ]
       },
@@ -465,11 +465,11 @@
     "_getRowPosition": {
       "location": {
         "start": {
-          "line": 292,
+          "line": 290,
           "column": 4
         },
         "end": {
-          "line": 301,
+          "line": 299,
           "column": 5
         }
       },
@@ -477,7 +477,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the pixel start position of the given row"
+            "body": "<p>Get the pixel start position of the given row</p>"
           }
         ],
         "@param": [
@@ -504,11 +504,11 @@
     "_getColumnPosition": {
       "location": {
         "start": {
-          "line": 310,
+          "line": 308,
           "column": 4
         },
         "end": {
-          "line": 319,
+          "line": 317,
           "column": 5
         }
       },
@@ -516,7 +516,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the pixel start position of the given column"
+            "body": "<p>Get the pixel start position of the given column</p>"
           }
         ],
         "@param": [
@@ -543,11 +543,11 @@
     "_getSingleCellBounds": {
       "location": {
         "start": {
-          "line": 332,
+          "line": 330,
           "column": 4
         },
         "end": {
-          "line": 360,
+          "line": 358,
           "column": 5
         }
       },
@@ -555,15 +555,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the bounds of a single cell"
+            "body": "<p>Get the bounds of a single cell</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cell {Map} the cell description as returned by\n{@link #findCellsInWindow} to get the bounds for",
+            "body": "cell {Map} the cell description as returned by\n    {@link #findCellsInWindow} to get the bounds for",
             "paramName": "cell",
-            "description": " the cell description as returned by\n{@link #findCellsInWindow} to get the bounds for",
+            "description": " the cell description as returned by\n    {@link #findCellsInWindow} to get the bounds for",
             "type": "Map"
           },
           {
@@ -584,9 +584,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Boundaries map with the keys <code>left</code>,\n<code>top</code>, <code>width</code> and <code>height</code>",
+            "body": "{Map} Boundaries map with the keys <code>left</code>,\n <code>top</code>, <code>width</code> and <code>height</code>",
             "type": "Map",
-            "description": " Boundaries map with the keys <code>left</code>,\n<code>top</code>, <code>width</code> and <code>height</code>"
+            "description": " Boundaries map with the keys <code>left</code>,\n <code>top</code>, <code>width</code> and <code>height</code>"
           }
         ]
       },
@@ -596,11 +596,11 @@
     "getCellBounds": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 369,
           "column": 4
         },
         "end": {
-          "line": 381,
+          "line": 379,
           "column": 5
         }
       },
@@ -608,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the bounds of a list of cells as returned by {@link #findCellsInWindow}"
+            "body": "<p>Get the bounds of a list of cells as returned by {@link #findCellsInWindow}</p>"
           }
         ],
         "@param": [
@@ -649,11 +649,11 @@
     "computeCellSpanMap": {
       "location": {
         "start": {
-          "line": 397,
+          "line": 395,
           "column": 4
         },
         "end": {
-          "line": 437,
+          "line": 435,
           "column": 5
         }
       },
@@ -661,15 +661,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Compute a bitmap, which marks for each visible cell, whether the cell\nis covered by a spanning cell."
+            "body": "<p>Compute a bitmap, which marks for each visible cell, whether the cell\n is covered by a spanning cell.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cells {Map[]} Array of cell descriptions as returned by\n{@link #findCellsInWindow}.",
+            "body": "cells {Map[]} Array of cell descriptions as returned by\n     {@link #findCellsInWindow}.",
             "paramName": "cells",
-            "description": " Array of cell descriptions as returned by\n{@link #findCellsInWindow}.",
+            "description": " Array of cell descriptions as returned by\n     {@link #findCellsInWindow}.",
             "type": "Map[]"
           },
           {
@@ -704,9 +704,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map[][]} Two dimensional array, which contains a <code>1</code>\nfor each visible cell, which is covered by a spanned cell.",
+            "body": "{Map[][]} Two dimensional array, which contains a <code>1</code>\n    for each visible cell, which is covered by a spanned cell.",
             "type": "Map[][]",
-            "description": " Two dimensional array, which contains a <code>1</code>\nfor each visible cell, which is covered by a spanned cell."
+            "description": " Two dimensional array, which contains a <code>1</code>\n    for each visible cell, which is covered by a spanned cell."
           }
         ]
       },
@@ -837,14 +837,15 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 441,
-        "column": 2
+        "line": 439,
+        "column": 13
       },
       "end": {
-        "line": 448,
+        "line": 446,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

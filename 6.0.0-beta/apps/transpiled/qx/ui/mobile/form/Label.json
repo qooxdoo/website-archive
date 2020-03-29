@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nChristopher Zuendorf (czuendorf)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Christopher Zuendorf (czuendorf)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The label widget displays a text or HTML content in form context.\n\nIt uses the html tag <label>, for making it possible to set the\n\"for\" attribute.\n\nThe \"for\" attribute specifies which form element a label is bound to.\nA tap on the label is forwarded to the bound element.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar checkBox = new qx.ui.mobile.form.CheckBox();\nvar label = new qx.ui.mobile.form.Label(\"Label for CheckBox\");\n\nlabel.setLabelFor(checkBox.getId());\n\nthis.getRoot().add(label);\nthis.getRoot().add(checkBox);\n</pre>\n\nThis example create a widget to display the label."
+          "body": "<p>The label widget displays a text or HTML content in form context.\n It uses the html tag <label>, for making it possible to set the\n \"for\" attribute.\n The \"for\" attribute specifies which form element a label is bound to.\n A tap on the label is forwarded to the bound element.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var checkBox = new qx.ui.mobile.form.CheckBox();\n   var label = new qx.ui.mobile.form.Label(\"Label for CheckBox\");\n   label.setLabelFor(checkBox.getId());\n   this.getRoot().add(label);\n   this.getRoot().add(checkBox);\n </pre>\n<p>This example create a widget to display the label.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 59,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 78,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -82,7 +82,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Text or HTML content to display"
+            "body": "<p>Text or HTML content to display</p>"
           }
         ]
       },
@@ -137,7 +137,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Controls whether text wrap is activated or not."
+            "body": "<p>Controls whether text wrap is activated or not.</p>"
           }
         ]
       },
@@ -208,7 +208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -242,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -267,7 +267,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -292,7 +292,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for the <code>changeEnabled</code> event on the target."
+            "body": "<p>Event handler for the <code>changeEnabled</code> event on the target.</p>"
           }
         ],
         "@param": [
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the \"for\" attribute of this label.\nThe \"for\" attribute specifies which form element a label is bound to."
+            "body": "<p>Setter for the \"for\" attribute of this label.\n The \"for\" attribute specifies which form element a label is bound to.</p>"
           }
         ],
         "@param": [
@@ -354,7 +354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for <code>tap</code> event on the Label. This event will be delegated to target widget."
+            "body": "<p>Handler for <code>tap</code> event on the Label. This event will be delegated to target widget.</p>"
           }
         ],
         "@param": [
@@ -385,7 +385,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1617,13 +1617,14 @@
     "location": {
       "start": {
         "line": 245,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 255,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

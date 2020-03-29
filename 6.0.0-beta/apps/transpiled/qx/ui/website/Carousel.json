@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2014-2015 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2014-2015 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A carousel is a widget which can switch between several sub pages {@link qx.ui.website.Widget}.\nA page switch is triggered by a swipe to left, for next page, or a swipe to right for\nprevious page. Pages can also be switched by dragging.\n\nA carousel shows by default a pagination indicator at the bottom of the carousel."
+          "body": "<p>A carousel is a widget which can switch between several sub pages {@link qx.ui.website.Widget}.\n A page switch is triggered by a swipe to left, for next page, or a swipe to right for\n previous page. Pages can also be switched by dragging.\n A carousel shows by default a pagination indicator at the bottom of the carousel.</p>"
         }
       ],
       "@require": [
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method which converts the current collection into a collection of\nCarousel widgets."
+            "body": "<p>Factory method which converts the current collection into a collection of\n Carousel widgets.</p>"
           }
         ],
         "@return": [
@@ -105,13 +105,14 @@
     "location": {
       "start": {
         "line": 59,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 61,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "members": {
     "__active": {
@@ -241,7 +242,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -303,7 +304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets one of the Carousel's pages as active, meaning it will be\nvisible."
+            "body": "<p>Sets one of the Carousel's pages as active, meaning it will be\n visible.</p>"
           }
         ],
         "@param": [
@@ -334,7 +335,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the currently active (i.e. visible) page"
+            "body": "<p>Returns the currently active (i.e. visible) page</p>"
           }
         ],
         "@return": [
@@ -364,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the carousel to the next page."
+            "body": "<p>Scrolls the carousel to the next page.</p>"
           }
         ],
         "@return": [
@@ -394,7 +395,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scrolls the carousel to the previous page."
+            "body": "<p>Scrolls the carousel to the previous page.</p>"
           }
         ],
         "@return": [
@@ -424,7 +425,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a page to the Carousel. Updates the pagination,\nscroll position, active property and the sizing."
+            "body": "<p>Adds a page to the Carousel. Updates the pagination,\n scroll position, active property and the sizing.</p>"
           }
         ],
         "@param": [
@@ -455,7 +456,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes a page from the Carousel. Updates the pagination,\nscroll position, active property and the sizing."
+            "body": "<p>Removes a page from the Carousel. Updates the pagination,\n scroll position, active property and the sizing.</p>"
           }
         ],
         "@param": [
@@ -486,7 +487,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the order, scroll position and pagination."
+            "body": "<p>Updates the order, scroll position and pagination.</p>"
           }
         ]
       },
@@ -508,7 +509,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the CSS order property of the flexbox layout.\nThe active page should be the second in order with a order property of '0'.\nThe page left to the active has the order property set to '-1' and is the\nonly one on the left side. All other pages get increasing order numbers and\nare aligned on the right side."
+            "body": "<p>Updates the CSS order property of the flexbox layout.\n The active page should be the second in order with a order property of '0'.\n The page left to the active has the order property set to '-1' and is the\n only one on the left side. All other pages get increasing order numbers and\n are aligned on the right side.</p>"
           }
         ],
         "@return": [
@@ -538,7 +539,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the width of the container and the pages."
+            "body": "<p>Updates the width of the container and the pages.</p>"
           }
         ]
       },
@@ -560,7 +561,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for trackstart. It saves the initial scroll position and\ncancels any running animation."
+            "body": "<p>Handler for trackstart. It saves the initial scroll position and\n cancels any running animation.</p>"
           }
         ]
       },
@@ -582,7 +583,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Track handler which updates the scroll position."
+            "body": "<p>Track handler which updates the scroll position.</p>"
           }
         ],
         "@param": [
@@ -613,7 +614,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "TrackEnd handler for enabling the scroll events."
+            "body": "<p>TrackEnd handler for enabling the scroll events.</p>"
           }
         ]
       },
@@ -635,7 +636,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Swipe handler which triggers page changes based on the\nvelocity and the direction."
+            "body": "<p>Swipe handler which triggers page changes based on the\n velocity and the direction.</p>"
           }
         ],
         "@param": [
@@ -666,7 +667,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory method for a paginationLabel."
+            "body": "<p>Factory method for a paginationLabel.</p>"
           }
         ],
         "@return": [
@@ -696,7 +697,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the tap on pagination labels and changes to the desired page."
+            "body": "<p>Handles the tap on pagination labels and changes to the desired page.</p>"
           }
         ],
         "@param": [
@@ -727,7 +728,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the pagination indicator of this carousel.\nAdds the 'active' CSS class to the currently visible page's\npagination button."
+            "body": "<p>Updates the pagination indicator of this carousel.\n Adds the 'active' CSS class to the currently visible page's\n pagination button.</p>"
           }
         ]
       },
@@ -749,7 +750,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resize handler. It updates the sizes, snap points and scroll position."
+            "body": "<p>Resize handler. It updates the sizes, snap points and scroll position.</p>"
           }
         ]
       },
@@ -771,7 +772,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Animates using CSS translations to the given left position."
+            "body": "<p>Animates using CSS translations to the given left position.</p>"
           }
         ],
         "@param": [
@@ -802,7 +803,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the given order on the given collection."
+            "body": "<p>Sets the given order on the given collection.</p>"
           }
         ],
         "@param": [
@@ -843,7 +844,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the order css property of the given collection."
+            "body": "<p>Returns the order css property of the given collection.</p>"
           }
         ],
         "@param": [
@@ -882,7 +883,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a collection of all pages."
+            "body": "<p>Returns a collection of all pages.</p>"
           }
         ],
         "@return": [
@@ -912,7 +913,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the current left position."
+            "body": "<p>Returns the current left position.</p>"
           }
         ],
         "@return": [
@@ -942,7 +943,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -967,13 +968,14 @@
     "location": {
       "start": {
         "line": 680,
-        "column": 2
+        "column": 9
       },
       "end": {
         "line": 682,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

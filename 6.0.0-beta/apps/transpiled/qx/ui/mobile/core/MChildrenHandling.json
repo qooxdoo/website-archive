@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin exposes all basic methods to manage widget children as public methods.\nIt can only be included into instances of {@link Widget}.\n\nTo optimize the method calls the including widget should call the method\n{@link #remap} in its defer function. This will map the protected\nmethods to the public ones and save one method call for each function."
+          "body": "<p>This mixin exposes all basic methods to manage widget children as public methods.\n It can only be included into instances of {@link Widget}.\n To optimize the method calls the including widget should call the method\n {@link #remap} in its defer function. This will map the protected\n methods to the public ones and save one method call for each function.</p>"
         }
       ]
     }
@@ -47,15 +47,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.Widget[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.Widget[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       },
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.</p>"
           }
         ],
         "@param": [
@@ -122,9 +122,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       },
@@ -146,7 +146,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget."
+            "body": "<p>Adds a new child widget.</p>"
           }
         ],
         "@param": [
@@ -186,7 +186,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index"
+            "body": "<p>Add a child widget at the specified index</p>"
           }
         ],
         "@param": [
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget"
+            "body": "<p>Add a widget before another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -280,7 +280,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget"
+            "body": "<p>Add a widget after another already inserted widget</p>"
           }
         ],
         "@param": [
@@ -327,7 +327,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index."
+            "body": "<p>Remove the widget at the specified index.</p>"
           }
         ],
         "@param": [
@@ -389,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ]
       },
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mapping of protected methods to public.\nThis omits an additional function call when using these methods. Call\nthis methods in the defer block of the including class."
+            "body": "<p>Mapping of protected methods to public.\n This omits an additional function call when using these methods. Call\n this methods in the defer block of the including class.</p>"
           }
         ],
         "@param": [

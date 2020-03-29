@@ -27,11 +27,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The desktop is a widget, which can act as container for windows. It can be\nused to define a clipping region for internal windows e.g. to create\nan MDI like application."
+          "body": "<p>The desktop is a widget, which can act as container for windows. It can be\n used to define a clipping region for internal windows e.g. to create\n an MDI like application.</p>"
         }
       ]
     }
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 40,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 50,
@@ -58,9 +58,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "windowManager {qx.ui.window.IWindowManager} The window manager to use for the desktop.\nIf not provided, an instance of {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS} is used.",
+          "body": "windowManager {qx.ui.window.IWindowManager} The window manager to use for the desktop.\n    If not provided, an instance of {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS} is used.",
           "paramName": "windowManager",
-          "description": " The window manager to use for the desktop.\nIf not provided, an instance of {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS} is used.",
+          "description": " The window manager to use for the desktop.\n    If not provided, an instance of {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS} is used.",
           "type": "qx.ui.window.IWindowManager"
         }
       ]
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the desktop's window manager"
+            "body": "<p>Sets the desktop's window manager</p>"
           }
         ],
         "@param": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all windows added to the desktop (including hidden windows)"
+            "body": "<p>Get a list of all windows added to the desktop (including hidden windows)</p>"
           }
         ],
         "@return": [
@@ -130,7 +130,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the configured layout supports a maximized window\ne.g. is a Canvas."
+            "body": "<p>Whether the configured layout supports a maximized window\n e.g. is a Canvas.</p>"
           }
         ],
         "@return": [
@@ -155,15 +155,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block direct child widgets with a zIndex below <code>zIndex</code>"
+            "body": "<p>Block direct child widgets with a zIndex below <code>zIndex</code></p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "zIndex {Integer} All child widgets with a zIndex below this value\nwill be blocked",
+            "body": "zIndex {Integer} All child widgets with a zIndex below this value\n     will be blocked",
             "paramName": "zIndex",
-            "description": " All child widgets with a zIndex below this value\nwill be blocked",
+            "description": " All child widgets with a zIndex below this value\n     will be blocked",
             "type": "Integer"
           }
         ]
@@ -190,7 +190,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget is currently blocked"
+            "body": "<p>Whether the widget is currently blocked</p>"
           }
         ],
         "@return": [
@@ -215,15 +215,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the children list"
+            "body": "<p>Returns the children list</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\nreference types, please do not modify them in-place)",
+            "body": "{qx.ui.core.LayoutItem[]} The children array (Arrays are\n   reference types, please do not modify them in-place)",
             "type": "qx.ui.core.LayoutItem[]",
-            "description": " The children array (Arrays are\nreference types, please do not modify them in-place)"
+            "description": " The children array (Arrays are\n   reference types, please do not modify them in-place)"
           }
         ]
       }
@@ -240,7 +240,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the widget contains children."
+            "body": "<p>Whether the widget contains children.</p>"
           }
         ],
         "@return": [
@@ -265,7 +265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index position of the given widget if it is\na child widget. Otherwise it returns <code>-1</code>.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Returns the index position of the given widget if it is\n a child widget. Otherwise it returns <code>-1</code>.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -280,9 +280,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer} The index position or <code>-1</code> when\nthe given widget is no child of this layout.",
+            "body": "{Integer} The index position or <code>-1</code> when\n   the given widget is no child of this layout.",
             "type": "Integer",
-            "description": " The index position or <code>-1</code> when\nthe given widget is no child of this layout."
+            "description": " The index position or <code>-1</code> when\n   the given widget is no child of this layout."
           }
         ]
       }
@@ -299,7 +299,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds a new child widget.\n\nThe supported keys of the layout options map depend on the layout manager\nused to position the widget. The options are documented in the class\ndocumentation of each layout manager {@link qx.ui.layout}."
+            "body": "<p>Adds a new child widget.\n The supported keys of the layout options map depend on the layout manager\n used to position the widget. The options are documented in the class\n documentation of each layout manager {@link qx.ui.layout}.</p>"
           }
         ],
         "@param": [
@@ -334,7 +334,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a child widget at the specified index\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a child widget at the specified index\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -376,7 +376,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget before another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget before another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -418,7 +418,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a widget after another already inserted widget\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Add a widget after another already inserted widget\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given child widget."
+            "body": "<p>Remove the given child widget.</p>"
           }
         ],
         "@param": [
@@ -486,7 +486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the widget at the specified index.\n\nThis method works on the widget's children list. Some layout managers\n(e.g. {@link qx.ui.layout.HBox}) use the children order as additional\nlayout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\nignore the children order for the layout process."
+            "body": "<p>Remove the widget at the specified index.\n This method works on the widget's children list. Some layout managers\n (e.g. {@link qx.ui.layout.HBox}) use the children order as additional\n layout information. Other layout manager (e.g. {@link qx.ui.layout.Grid})\n ignore the children order for the layout process.</p>"
           }
         ],
         "@param": [
@@ -520,7 +520,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all children."
+            "body": "<p>Remove all children.</p>"
           }
         ],
         "@return": [
@@ -545,7 +545,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the desktop's window manager. Each desktop must have a window manager.\nIf none is configured the default window manager {@link qx.ui.window.Window#DEFAULT_MANAGER_CLASS}\nis used."
+            "body": "<p>Get the desktop's window manager. Each desktop must have a window manager.\n If none is configured the default window manager {@link qx.ui.window.Window#DEFAULT<em>MANAGER</em>CLASS}\n is used.</p>"
           }
         ],
         "@return": [
@@ -570,7 +570,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called if one of the managed windows changes its active\nstate."
+            "body": "<p>Event handler. Called if one of the managed windows changes its active\n state.</p>"
           }
         ],
         "@param": [
@@ -605,7 +605,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called if one of the managed windows changes its modality"
+            "body": "<p>Event handler. Called if one of the managed windows changes its modality</p>"
           }
         ],
         "@param": [
@@ -640,7 +640,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overrides the method {@link qx.ui.core.Widget#_afterAddChild}"
+            "body": "<p>Overrides the method {@link qx.ui.core.Widget#_afterAddChild}</p>"
           }
         ],
         "@param": [
@@ -666,7 +666,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the case, when a window is added to the desktop."
+            "body": "<p>Handles the case, when a window is added to the desktop.</p>"
           }
         ],
         "@param": [
@@ -692,7 +692,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Overrides the method {@link qx.ui.core.Widget#_afterRemoveChild}"
+            "body": "<p>Overrides the method {@link qx.ui.core.Widget#_afterRemoveChild}</p>"
           }
         ],
         "@param": [
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handles the case, when a window is removed from the desktop."
+            "body": "<p>Handles the case, when a window is removed from the desktop.</p>"
           }
         ],
         "@param": [
@@ -810,7 +810,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Template method for creating the blocker item."
+            "body": "<p>Template method for creating the blocker item.</p>"
           }
         ],
         "@return": [
@@ -871,7 +871,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the blocker"
+            "body": "<p>Get the blocker</p>"
           }
         ],
         "@return": [

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Wrapper for a part as defined in the config file. This class knows about all\npackages the part depends on and provides functionality to load the part."
+          "body": "<p>Wrapper for a part as defined in the config file. This class knows about all\n packages the part depends on and provides functionality to load the part.</p>"
         }
       ],
       "@internal": [
@@ -41,7 +41,7 @@
     "location": {
       "start": {
         "line": 34,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 49,
@@ -58,9 +58,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "name {String} Name of the part as defined in the config file at\ncompile time.",
+          "body": "name {String} Name of the part as defined in the config file at\n    compile time.",
           "paramName": "name",
-          "description": " Name of the part as defined in the config file at\ncompile time.",
+          "description": " Name of the part as defined in the config file at\n    compile time.",
           "type": "String"
         },
         {
@@ -152,7 +152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the ready state of the part. The value is one of\n<ul>\n<li>\n<b>initialized</b>: The part is initialized. The {@link #load}\nmethod has not yet been called\n</li>\n<li><b>loading</b>: The part is still loading.</li>\n<li><b>complete</b>: The part has been loaded successfully</li>\n</li>"
+            "body": "<p>Get the ready state of the part. The value is one of\n <ul>\n <li>\n   <b>initialized</b>: The part is initialized. The {@link #load}\n   method has not yet been called\n </li>\n <li><b>loading</b>: The part is still loading.</li>\n <li><b>complete</b>: The part has been loaded successfully</li>\n </li></p>"
           }
         ],
         "@return": [
@@ -182,7 +182,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The part name as defined in the config file"
+            "body": "<p>The part name as defined in the config file</p>"
           }
         ],
         "@return": [
@@ -212,7 +212,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for testing purposes."
+            "body": "<p>Internal helper for testing purposes.</p>"
           }
         ],
         "@internal": [
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method for preloading this part.\nEmpty implementation! Regular parts can not be preloaded."
+            "body": "<p>Method for preloading this part.\n Empty implementation! Regular parts can not be preloaded.</p>"
           }
         ],
         "@param": [
@@ -287,7 +287,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Loads the part asynchronously. The callback is called after the part and\nits dependencies are fully loaded. If the part is already loaded the\ncallback is called immediately."
+            "body": "<p>Loads the part asynchronously. The callback is called after the part and\n its dependencies are fully loaded. If the part is already loaded the\n callback is called immediately.</p>"
           }
         ],
         "@internal": [
@@ -333,7 +333,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for appending a listener for this part."
+            "body": "<p>Helper for appending a listener for this part.</p>"
           }
         ],
         "@param": [
@@ -354,9 +354,9 @@
           },
           {
             "name": "@param",
-            "body": "part {qx.io.part.Part|qx.io.part.ClosurePart} The part to listen\nto.",
+            "body": "part {qx.io.part.Part|qx.io.part.ClosurePart} The part to listen\n   to.",
             "paramName": "part",
-            "description": " The part to listen\nto.",
+            "description": " The part to listen\n   to.",
             "type": [
               "qx.io.part.Part",
               "qx.io.part.ClosurePart"
@@ -382,7 +382,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for marking the part as complete."
+            "body": "<p>Helper for marking the part as complete.</p>"
           }
         ],
         "@param": [
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method used to start up the application in case not all parts\nnecessary to initialize the application are in the boot part. [BUG #3793]"
+            "body": "<p>Method used to start up the application in case not all parts\n necessary to initialize the application are in the boot part. [BUG #3793]</p>"
           }
         ]
       },
@@ -435,15 +435,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper for checking if the part is loaded completely."
+            "body": "<p>Helper for checking if the part is loaded completely.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The function to be called if the part has\nbeen loaded completely.",
+            "body": "callback {Function} The function to be called if the part has\n   been loaded completely.",
             "paramName": "callback",
-            "description": " The function to be called if the part has\nbeen loaded completely.",
+            "description": " The function to be called if the part has\n   been loaded completely.",
             "type": "Function"
           },
           {

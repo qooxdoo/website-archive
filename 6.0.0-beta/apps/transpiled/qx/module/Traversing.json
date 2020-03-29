@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2011-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\nDaniel Wagner (danielwagner)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2011-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n Daniel Wagner (danielwagner)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "DOM traversal module"
+          "body": "<p>DOM traversal module</p>"
         }
       ],
       "@require": [
@@ -71,7 +71,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "String attributes used to determine if two DOM nodes are equal\nas defined in <a href=\"http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-isEqualNode\">\nDOM Level 3</a>"
+            "body": "<p>String attributes used to determine if two DOM nodes are equal\n as defined in <a href=\"http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-isEqualNode\">\n DOM Level 3</a></p>"
           }
         ]
       },
@@ -93,7 +93,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for getAncestors and getAncestorsUntil"
+            "body": "<p>Internal helper for getAncestors and getAncestorsUntil</p>"
           }
         ],
         "@attach": [
@@ -105,9 +105,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "selector {String} Selector that indicates where to stop including\nancestor elements",
+            "body": "selector {String} Selector that indicates where to stop including\n ancestor elements",
             "paramName": "selector",
-            "description": " Selector that indicates where to stop including\nancestor elements",
+            "description": " Selector that indicates where to stop including\n ancestor elements",
             "type": "String"
           },
           {
@@ -153,7 +153,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper which returns the element from the given argument. If it's a collection,\nit returns it's first child. If it's a string, it tries to use the string\nas selector and returns the first child of the new collection."
+            "body": "<p>Helper which returns the element from the given argument. If it's a collection,\n it returns it's first child. If it's a string, it tries to use the string\n as selector and returns the first child of the new collection.</p>"
           }
         ],
         "@param": [
@@ -172,9 +172,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Node|var} If a node can be extracted, the node element will be return.\nIf not, at given argument will be returned.",
+            "body": "{Node|var} If a node can be extracted, the node element will be return.\n   If not, at given argument will be returned.",
             "type": "Node|var",
-            "description": " If a node can be extracted, the node element will be return.\nIf not, at given argument will be returned."
+            "description": " If a node can be extracted, the node element will be return.\n   If not, at given argument will be returned."
           }
         ]
       },
@@ -196,7 +196,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper that attempts to convert the given argument into a DOM node"
+            "body": "<p>Helper that attempts to convert the given argument into a DOM node</p>"
           }
         ],
         "@param": [
@@ -235,7 +235,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a map containing the given DOM node's attribute names\nand values"
+            "body": "<p>Returns a map containing the given DOM node's attribute names\n and values</p>"
           }
         ],
         "@param": [
@@ -274,7 +274,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper function that iterates over a set of items and applies the given\nqx.dom.Hierarchy method to each entry, storing the results in a new Array.\nDuplicates are removed and the items are filtered if a selector is\nprovided."
+            "body": "<p>Helper function that iterates over a set of items and applies the given\n qx.dom.Hierarchy method to each entry, storing the results in a new Array.\n Duplicates are removed and the items are filtered if a selector is\n provided.</p>"
           }
         ],
         "@attach": [
@@ -300,9 +300,9 @@
           },
           {
             "name": "@param",
-            "body": "selector {String?} Optional selector that elements to be included\nmust match",
+            "body": "selector {String?} Optional selector that elements to be included\n must match",
             "paramName": "selector",
-            "description": " Optional selector that elements to be included\nmust match",
+            "description": " Optional selector that elements to be included\n must match",
             "optional": true,
             "type": "String"
           }
@@ -340,7 +340,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given object is a DOM element"
+            "body": "<p>Checks if the given object is a DOM element</p>"
           }
         ],
         "@attachStatic": [
@@ -389,7 +389,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given object is a DOM node"
+            "body": "<p>Checks if the given object is a DOM node</p>"
           }
         ],
         "@attachStatic": [
@@ -438,7 +438,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the node has the given node name"
+            "body": "<p>Whether the node has the given node name</p>"
           }
         ],
         "@attachStatic": [
@@ -494,7 +494,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given object is a DOM document object"
+            "body": "<p>Checks if the given object is a DOM document object</p>"
           }
         ],
         "@attachStatic": [
@@ -506,9 +506,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node {Object|qxWeb} Object to check. If the value is a qxWeb\ncollection, isDocument will check the first item.",
+            "body": "node {Object|qxWeb} Object to check. If the value is a qxWeb\n collection, isDocument will check the first item.",
             "paramName": "node",
-            "description": " Object to check. If the value is a qxWeb\ncollection, isDocument will check the first item.",
+            "description": " Object to check. If the value is a qxWeb\n collection, isDocument will check the first item.",
             "type": [
               "Object",
               "qxWeb"
@@ -542,7 +542,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given object is a DOM document fragment object"
+            "body": "<p>Checks if the given object is a DOM document fragment object</p>"
           }
         ],
         "@attachStatic": [
@@ -554,9 +554,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "node {Object|qxWeb} Object to check. If the value is a qxWeb\ncollection, isDocumentFragment will check the first item.",
+            "body": "node {Object|qxWeb} Object to check. If the value is a qxWeb\n collection, isDocumentFragment will check the first item.",
             "paramName": "node",
-            "description": " Object to check. If the value is a qxWeb\ncollection, isDocumentFragment will check the first item.",
+            "description": " Object to check. If the value is a qxWeb\n collection, isDocumentFragment will check the first item.",
             "type": [
               "Object",
               "qxWeb"
@@ -590,7 +590,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the DOM2 <code>defaultView</code> (window) for the given node."
+            "body": "<p>Returns the DOM2 <code>defaultView</code> (window) for the given node.</p>"
           }
         ],
         "@attachStatic": [
@@ -641,7 +641,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks whether the given object is a DOM text node"
+            "body": "<p>Checks whether the given object is a DOM text node</p>"
           }
         ],
         "@attachStatic": [
@@ -686,7 +686,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the given object is a browser window object."
+            "body": "<p>Check whether the given object is a browser window object.</p>"
           }
         ],
         "@attachStatic": [
@@ -698,9 +698,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "obj {Object|qxWeb} the object to be tested. If the value\nis a qxWeb collection, isDocument will check the first item.",
+            "body": "obj {Object|qxWeb} the object to be tested. If the value\n is a qxWeb collection, isDocument will check the first item.",
             "paramName": "obj",
-            "description": " the object to be tested. If the value\nis a qxWeb collection, isDocument will check the first item.",
+            "description": " the object to be tested. If the value\n is a qxWeb collection, isDocument will check the first item.",
             "type": [
               "Object",
               "qxWeb"
@@ -734,7 +734,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the owner document of the given node"
+            "body": "<p>Returns the owner document of the given node</p>"
           }
         ],
         "@attachStatic": [
@@ -783,7 +783,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the DOM node's name as a lowercase string"
+            "body": "<p>Get the DOM node's name as a lowercase string</p>"
           }
         ],
         "@attachStatic": [
@@ -832,7 +832,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the text content of a node where the node type may be one of\nNODE_ELEMENT, NODE_ATTRIBUTE, NODE_TEXT, NODE_CDATA"
+            "body": "<p>Returns the text content of a node where the node type may be one of\n NODE<em>ELEMENT, NODE</em>ATTRIBUTE, NODE<em>TEXT, NODE</em>CDATA</p>"
           }
         ],
         "@attachStatic": [
@@ -844,9 +844,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "selector {Node|String|qxWeb} the node from where the search should start. If the\nnode has subnodes the text contents are recursively retrieved and joined",
+            "body": "selector {Node|String|qxWeb} the node from where the search should start. If the\n node has subnodes the text contents are recursively retrieved and joined",
             "paramName": "selector",
-            "description": " the node from where the search should start. If the\nnode has subnodes the text contents are recursively retrieved and joined",
+            "description": " the node from where the search should start. If the\n node has subnodes the text contents are recursively retrieved and joined",
             "type": [
               "Node",
               "String",
@@ -857,9 +857,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} the joined text content of the given node or null if not\nappropriate.",
+            "body": "{String} the joined text content of the given node or null if not\n appropriate.",
             "type": "String",
-            "description": " the joined text content of the given node or null if not\nappropriate."
+            "description": " the joined text content of the given node or null if not\n appropriate."
           }
         ]
       },
@@ -881,7 +881,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if the given node is a block node"
+            "body": "<p>Checks if the given node is a block node</p>"
           }
         ],
         "@attachStatic": [
@@ -930,7 +930,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Determines if two DOM nodes are equal as defined in the\n<a href=\"http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-isEqualNode\">DOM Level 3 isEqualNode spec</a>.\nAlso works in legacy browsers without native <em>isEqualNode</em> support."
+            "body": "<p>Determines if two DOM nodes are equal as defined in the\n <a href=\"http://www.w3.org/TR/DOM-Level-3-Core/core.html#Node3-isEqualNode\">DOM Level 3 isEqualNode spec</a>.\n Also works in legacy browsers without native <em>isEqualNode</em> support.</p>"
           }
         ],
         "@attachStatic": [
@@ -1014,7 +1014,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an element to the collection"
+            "body": "<p>Adds an element to the collection</p>"
           }
         ],
         "@attach": [
@@ -1026,9 +1026,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "el {Element|qxWeb} DOM element to add to the collection.\nIf a collection is given, only the first element will be added",
+            "body": "el {Element|qxWeb} DOM element to add to the collection.\n If a collection is given, only the first element will be added",
             "paramName": "el",
-            "description": " DOM element to add to the collection.\nIf a collection is given, only the first element will be added",
+            "description": " DOM element to add to the collection.\n If a collection is given, only the first element will be added",
             "type": [
               "Element",
               "qxWeb"
@@ -1062,7 +1062,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a set of elements containing all of the unique immediate children of\neach of the matched set of elements.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a set of elements containing all of the unique immediate children of\n each of the matched set of elements.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1109,7 +1109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Executes the provided callback function once for each item in the\ncollection."
+            "body": "<p>Executes the provided callback function once for each item in the\n collection.</p>"
           }
         ],
         "@attach": [
@@ -1121,9 +1121,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "fn {Function} Callback function which is called with two parameters\n<ul>\n<li>current item - DOM node</li>\n<li>current index - Number</li>\n</ul>",
+            "body": "fn {Function} Callback function which is called with two parameters\n <ul>\n  <li>current item - DOM node</li>\n  <li>current index - Number</li>\n </ul>",
             "paramName": "fn",
-            "description": " Callback function which is called with two parameters\n<ul>\n<li>current item - DOM node</li>\n<li>current index - Number</li>\n</ul>",
+            "description": " Callback function which is called with two parameters\n <ul>\n  <li>current item - DOM node</li>\n  <li>current index - Number</li>\n </ul>",
             "type": "Function"
           },
           {
@@ -1161,7 +1161,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a set of elements containing the parent of each element in the\ncollection.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a set of elements containing the parent of each element in the\n collection.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1208,7 +1208,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if any element of the current collection is child of any element of a given\nparent collection."
+            "body": "<p>Checks if any element of the current collection is child of any element of a given\n parent collection.</p>"
           }
         ],
         "@attach": [
@@ -1256,7 +1256,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a set of elements containing all ancestors of each element in the\ncollection.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a set of elements containing all ancestors of each element in the\n collection.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1303,7 +1303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a set of elements containing all ancestors of each element in the\ncollection, up to (but not including) the element matched by the provided\nselector.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a set of elements containing all ancestors of each element in the\n collection, up to (but not including) the element matched by the provided\n selector.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1315,9 +1315,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "selector {String} Selector that indicates where to stop including\nancestor elements",
+            "body": "selector {String} Selector that indicates where to stop including\n ancestor elements",
             "paramName": "selector",
-            "description": " Selector that indicates where to stop including\nancestor elements",
+            "description": " Selector that indicates where to stop including\n ancestor elements",
             "type": "String"
           },
           {
@@ -1357,7 +1357,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a set containing the closest matching ancestor for each item in\nthe collection.\nIf the item itself matches, it is added to the new set. Otherwise, the\nitem's parent chain will be traversed until a match is found."
+            "body": "<p>Gets a set containing the closest matching ancestor for each item in\n the collection.\n If the item itself matches, it is added to the new set. Otherwise, the\n item's parent chain will be traversed until a match is found.</p>"
           }
         ],
         "@attach": [
@@ -1402,7 +1402,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Searches the child elements of each item in the collection and returns\na new collection containing the children that match the provided selector"
+            "body": "<p>Searches the child elements of each item in the collection and returns\n a new collection containing the children that match the provided selector</p>"
           }
         ],
         "@attach": [
@@ -1414,9 +1414,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "selector {String} Selector expression to match the child elements\nagainst",
+            "body": "selector {String} Selector expression to match the child elements\n against",
             "paramName": "selector",
-            "description": " Selector expression to match the child elements\nagainst",
+            "description": " Selector expression to match the child elements\n against",
             "type": "String"
           }
         ],
@@ -1447,7 +1447,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a new set of elements containing the child nodes of each item in the\ncurrent set."
+            "body": "<p>Gets a new set of elements containing the child nodes of each item in the\n current set.</p>"
           }
         ],
         "@attach": [
@@ -1483,7 +1483,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Checks if at least one element in the collection passes the provided\nfilter. This can be either a selector expression or a filter\nfunction"
+            "body": "<p>Checks if at least one element in the collection passes the provided\n filter. This can be either a selector expression or a filter\n function</p>"
           }
         ],
         "@attach": [
@@ -1531,7 +1531,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reduce the set of matched elements to a single element."
+            "body": "<p>Reduce the set of matched elements to a single element.</p>"
           }
         ],
         "@attach": [
@@ -1576,7 +1576,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reduces the collection to the first element."
+            "body": "<p>Reduces the collection to the first element.</p>"
           }
         ],
         "@attach": [
@@ -1612,7 +1612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reduces the collection to the last element."
+            "body": "<p>Reduces the collection to the last element.</p>"
           }
         ],
         "@attach": [
@@ -1648,7 +1648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing only the elements that have descendants\nmatching the given selector"
+            "body": "<p>Gets a collection containing only the elements that have descendants\n matching the given selector</p>"
           }
         ],
         "@attach": [
@@ -1693,7 +1693,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new collection containing only those nodes that\ncontain the given element. Also accepts a qxWeb\ncollection or an Array of elements. In those cases, the first element\nin the list is used."
+            "body": "<p>Returns a new collection containing only those nodes that\n contain the given element. Also accepts a qxWeb\n collection or an Array of elements. In those cases, the first element\n in the list is used.</p>"
           }
         ],
         "@attach": [
@@ -1746,7 +1746,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing the next sibling element of each item in\nthe current set.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a collection containing the next sibling element of each item in\n the current set.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1792,7 +1792,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing all following sibling elements of each\nitem in the current set.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a collection containing all following sibling elements of each\n item in the current set.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1838,7 +1838,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing the following sibling elements of each\nitem in the current set up to but not including any element that matches\nthe given selector."
+            "body": "<p>Gets a collection containing the following sibling elements of each\n item in the current set up to but not including any element that matches\n the given selector.</p>"
           }
         ],
         "@attach": [
@@ -1884,7 +1884,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing the previous sibling element of each item in\nthe current set.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a collection containing the previous sibling element of each item in\n the current set.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1930,7 +1930,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing all preceding sibling elements of each\nitem in the current set.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a collection containing all preceding sibling elements of each\n item in the current set.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -1976,7 +1976,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing the preceding sibling elements of each\nitem in the current set up to but not including any element that matches\nthe given selector."
+            "body": "<p>Gets a collection containing the preceding sibling elements of each\n item in the current set up to but not including any element that matches\n the given selector.</p>"
           }
         ],
         "@attach": [
@@ -2022,7 +2022,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a collection containing all sibling elements of the items in the\ncurrent set.\nThis set can be filtered with an optional expression that will cause only\nelements matching the selector to be collected."
+            "body": "<p>Gets a collection containing all sibling elements of the items in the\n current set.\n This set can be filtered with an optional expression that will cause only\n elements matching the selector to be collected.</p>"
           }
         ],
         "@attach": [
@@ -2068,7 +2068,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove elements from the collection that do not pass the given filter.\nThis can be either a selector expression or a filter function"
+            "body": "<p>Remove elements from the collection that do not pass the given filter.\n This can be either a selector expression or a filter function</p>"
           }
         ],
         "@attach": [
@@ -2116,7 +2116,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets a new collection containing the offset parent of each item in the\ncurrent set."
+            "body": "<p>Gets a new collection containing the offset parent of each item in the\n current set.</p>"
           }
         ],
         "@attach": [
@@ -2152,7 +2152,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether the first element in the collection is inserted into\nthe document for which it was created."
+            "body": "<p>Whether the first element in the collection is inserted into\n the document for which it was created.</p>"
           }
         ],
         "@attach": [
@@ -2164,9 +2164,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Boolean} <code>true</code> when the element is inserted\ninto the document.",
+            "body": "{Boolean} <code>true</code> when the element is inserted\n    into the document.",
             "type": "Boolean",
-            "description": " <code>true</code> when the element is inserted\ninto the document."
+            "description": " <code>true</code> when the element is inserted\n    into the document."
           }
         ]
       },
@@ -2178,13 +2178,14 @@
     "location": {
       "start": {
         "line": 920,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 926,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

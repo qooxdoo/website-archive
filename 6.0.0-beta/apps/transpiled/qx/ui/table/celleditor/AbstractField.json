@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "An abstract cell editor factory creating text/password/spinner/... fields."
+          "body": "<p>An abstract cell editor factory creating text/password/spinner/… fields.</p>"
         }
       ]
     }
@@ -52,7 +52,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "function that validates the result\nthe function will be called with the new value and the old value and is\nsupposed to return the value that is set as the table value."
+            "body": "<p>function that validates the result\n the function will be called with the new value and the old value and is\n supposed to return the value that is set as the table value.</p>"
           }
         ]
       },
@@ -95,7 +95,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Factory to create the editor widget"
+            "body": "<p>Factory to create the editor widget</p>"
           }
         ],
         "@return": [
@@ -125,15 +125,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map} A map containing the information about the cell to\ncreate.",
+            "body": "cellInfo {Map} A map containing the information about the cell to\n      create.",
             "paramName": "cellInfo",
-            "description": " A map containing the information about the cell to\ncreate.",
+            "description": " A map containing the information about the cell to\n      create.",
             "type": "Map"
           }
         ],
@@ -168,15 +168,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "interface implementation"
+            "body": "<p>interface implementation</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n{@link #createCellEditor}.",
+            "body": "cellEditor {qx.ui.core.Widget} The cell editor formally created by\n      {@link #createCellEditor}.",
             "paramName": "cellEditor",
-            "description": " The cell editor formally created by\n{@link #createCellEditor}.",
+            "description": " The cell editor formally created by\n      {@link #createCellEditor}.",
             "type": "qx.ui.core.Widget"
           }
         ],

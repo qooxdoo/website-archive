@@ -13,7 +13,7 @@
         "column": 0
       },
       "end": {
-        "line": 768,
+        "line": 808,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A model that contains all meta data about columns, such as width, renderer,\nvisibility and order."
+          "body": "<p>A model that contains all meta data about columns, such as width, renderer,\n visibility and order.</p>"
         }
       ],
       "@see": [
@@ -41,13 +41,14 @@
     "location": {
       "start": {
         "line": 30,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 36,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "events": {
     "widthChanged": {
@@ -65,7 +66,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the width of a column has changed. The data property of the event is\na map having the following attributes:\n<ul>\n<li>col: The model index of the column the width of which has changed.</li>\n<li>newWidth: The new width of the column in pixels.</li>\n<li>oldWidth: The old width of the column in pixels.</li>\n</ul>"
+            "body": "<p>Fired when the width of a column has changed. The data property of the event is\n a map having the following attributes:\n </p>\n<ul>\n   <li>col: The model index of the column the width of which has changed.</li>\n   <li>newWidth: The new width of the column in pixels.</li>\n   <li>oldWidth: The old width of the column in pixels.</li>\n </ul>"
           }
         ]
       },
@@ -87,7 +88,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the visibility of a column has changed. This event is equal to\n\"visibilityChanged\", but is fired right before."
+            "body": "<p>Fired when the visibility of a column has changed. This event is equal to\n \"visibilityChanged\", but is fired right before.</p>"
           }
         ]
       },
@@ -109,7 +110,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the visibility of a column has changed. The data property of the\nevent is a map having the following attributes:\n<ul>\n<li>col: The model index of the column the visibility of which has changed.</li>\n<li>visible: Whether the column is now visible.</li>\n</ul>"
+            "body": "<p>Fired when the visibility of a column has changed. The data property of the\n event is a map having the following attributes:\n </p>\n<ul>\n   <li>col: The model index of the column the visibility of which has changed.</li>\n   <li>visible: Whether the column is now visible.</li>\n </ul>"
           }
         ]
       },
@@ -131,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the column order has changed. The data property of the\nevent is a map having the following attributes:\n<ul>\n<li>col: The model index of the column that was moved.</li>\n<li>fromOverXPos: The old overall x position of the column.</li>\n<li>toOverXPos: The new overall x position of the column.</li>\n</ul>"
+            "body": "<p>Fired when the column order has changed. The data property of the\n event is a map having the following attributes:\n </p>\n<ul>\n   <li>col: The model index of the column that was moved.</li>\n   <li>fromOverXPos: The old overall x position of the column.</li>\n   <li>toOverXPos: The new overall x position of the column.</li>\n </ul>"
           }
         ]
       },
@@ -153,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the cell renderer of a column has changed.\nThe data property of the event is a map having the following attributes:\n<ul>\n<li>col: The model index of the column that was moved.</li>\n</ul>"
+            "body": "<p>Fired when the cell renderer of a column has changed.\n The data property of the event is a map having the following attributes:\n </p>\n<ul>\n   <li>col: The model index of the column that was moved.</li>\n </ul>"
           }
         ]
       },
@@ -403,22 +404,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initializes the column model."
+            "body": "<p>Initializes the column model.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "colCount {Integer}\nThe number of columns the model should have.",
+            "body": "colCount {Integer}\n   The number of columns the model should have.",
             "paramName": "colCount",
-            "description": "\nThe number of columns the model should have.",
+            "description": "\n   The number of columns the model should have.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "table {qx.ui.table.Table}\nThe table to which this column model is attached.",
+            "body": "table {qx.ui.table.Table}\n   The table to which this column model is attached.",
             "paramName": "table",
-            "description": "\nThe table to which this column model is attached.",
+            "description": "\n   The table to which this column model is attached.",
             "type": "qx.ui.table.Table"
           }
         ]
@@ -441,7 +442,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return the array of visible columns"
+            "body": "<p>Return the array of visible columns</p>"
           }
         ],
         "@return": [
@@ -471,29 +472,29 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the width of a column."
+            "body": "<p>Sets the width of a column.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "col {Integer}\nThe model index of the column.",
+            "body": "col {Integer}\n   The model index of the column.",
             "paramName": "col",
-            "description": "\nThe model index of the column.",
+            "description": "\n   The model index of the column.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "width {Integer}\nThe new width the column should get in pixels.",
+            "body": "width {Integer}\n   The new width the column should get in pixels.",
             "paramName": "width",
-            "description": "\nThe new width the column should get in pixels.",
+            "description": "\n   The new width the column should get in pixels.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "isPointerAction {Boolean}\n<i>true</i> if the column width is being changed as a result of a\npointer drag in the header; false or undefined otherwise.",
+            "body": "isPointerAction {Boolean}\n   <i>true</i> if the column width is being changed as a result of a\n   pointer drag in the header; false or undefined otherwise.",
             "paramName": "isPointerAction",
-            "description": "\n<i>true</i> if the column width is being changed as a result of a\npointer drag in the header; false or undefined otherwise.",
+            "description": "\n   <i>true</i> if the column width is being changed as a result of a\n   pointer drag in the header; false or undefined otherwise.",
             "type": "Boolean"
           }
         ]
@@ -516,7 +517,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the width of a column."
+            "body": "<p>Returns the width of a column.</p>"
           }
         ],
         "@param": [
@@ -543,11 +544,11 @@
     "setHeaderCellRenderer": {
       "location": {
         "start": {
-          "line": 299,
+          "line": 301,
           "column": 4
         },
         "end": {
-          "line": 315,
+          "line": 319,
           "column": 5
         }
       },
@@ -555,7 +556,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the header renderer of a column."
+            "body": "<p>Sets the header renderer of a column. Use setHeaderCellRenderers\n instead of this method if you want to set the header renderer of many\n columns.</p>"
           }
         ],
         "@param": [
@@ -568,10 +569,41 @@
           },
           {
             "name": "@param",
-            "body": "renderer {qx.ui.table.IHeaderRenderer} the new header renderer the column\nshould get.",
+            "body": "renderer {qx.ui.table.IHeaderRenderer} the new header renderer the column\n      should get.",
             "paramName": "renderer",
-            "description": " the new header renderer the column\nshould get.",
+            "description": " the new header renderer the column\n      should get.",
             "type": "qx.ui.table.IHeaderRenderer"
+          }
+        ]
+      },
+      "type": "function",
+      "access": "public"
+    },
+    "setHeaderCellRenderers": {
+      "location": {
+        "start": {
+          "line": 335,
+          "column": 4
+        },
+        "end": {
+          "line": 356,
+          "column": 5
+        }
+      },
+      "jsdoc": {
+        "@description": [
+          {
+            "name": "@description",
+            "body": "<p>Sets the header renderer of one or more columns. Use this method, in\n favor of setHeaderCellRenderer, if you want to set the header renderer\n of many columns. This method fires the \"headerCellRendererChanged\"\n event only once, after setting all renderers, whereas\n setHeaderCellRenderer fires it for each changed renderer which can be\n slow with many columns.</p>"
+          }
+        ],
+        "@param": [
+          {
+            "name": "@param",
+            "body": "renderers {Map}\n   Map, where the keys are column numbers and values are the renderers,\n   implementing qx.ui.table.IHeaderRenderer, of the the new header\n   renderers for that column",
+            "paramName": "renderers",
+            "description": "\n   Map, where the keys are column numbers and values are the renderers,\n   implementing qx.ui.table.IHeaderRenderer, of the the new header\n   renderers for that column",
+            "type": "Map"
           }
         ]
       },
@@ -581,11 +613,11 @@
     "getHeaderCellRenderer": {
       "location": {
         "start": {
-          "line": 324,
+          "line": 364,
           "column": 4
         },
         "end": {
-          "line": 333,
+          "line": 373,
           "column": 5
         }
       },
@@ -593,7 +625,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the header renderer of a column."
+            "body": "<p>Returns the header renderer of a column.</p>"
           }
         ],
         "@param": [
@@ -620,11 +652,11 @@
     "setDataCellRenderer": {
       "location": {
         "start": {
-          "line": 346,
+          "line": 386,
           "column": 4
         },
         "end": {
-          "line": 362,
+          "line": 402,
           "column": 5
         }
       },
@@ -632,7 +664,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the data renderer of a column."
+            "body": "<p>Sets the data renderer of a column.</p>"
           }
         ],
         "@param": [
@@ -645,18 +677,18 @@
           },
           {
             "name": "@param",
-            "body": "renderer {qx.ui.table.ICellRenderer} the new data renderer\nthe column should get.",
+            "body": "renderer {qx.ui.table.ICellRenderer} the new data renderer\n   the column should get.",
             "paramName": "renderer",
-            "description": " the new data renderer\nthe column should get.",
+            "description": " the new data renderer\n   the column should get.",
             "type": "qx.ui.table.ICellRenderer"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.ui.table.ICellRenderer?null} If an old renderer was set and\nit was not the default renderer, the old renderer is returned for\npooling or disposing.",
+            "body": "{qx.ui.table.ICellRenderer?null} If an old renderer was set and\n   it was not the default renderer, the old renderer is returned for\n   pooling or disposing.",
             "type": "qx.ui.table.ICellRenderer?null",
-            "description": " If an old renderer was set and\nit was not the default renderer, the old renderer is returned for\npooling or disposing."
+            "description": " If an old renderer was set and\n   it was not the default renderer, the old renderer is returned for\n   pooling or disposing."
           }
         ]
       },
@@ -666,11 +698,11 @@
     "getDataCellRenderer": {
       "location": {
         "start": {
-          "line": 371,
+          "line": 411,
           "column": 4
         },
         "end": {
-          "line": 380,
+          "line": 420,
           "column": 5
         }
       },
@@ -678,7 +710,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data renderer of a column."
+            "body": "<p>Returns the data renderer of a column.</p>"
           }
         ],
         "@param": [
@@ -705,11 +737,11 @@
     "setCellEditorFactory": {
       "location": {
         "start": {
-          "line": 389,
+          "line": 429,
           "column": 4
         },
         "end": {
-          "line": 407,
+          "line": 447,
           "column": 5
         }
       },
@@ -717,7 +749,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the cell editor factory of a column."
+            "body": "<p>Sets the cell editor factory of a column.</p>"
           }
         ],
         "@param": [
@@ -743,11 +775,11 @@
     "getCellEditorFactory": {
       "location": {
         "start": {
-          "line": 416,
+          "line": 456,
           "column": 4
         },
         "end": {
-          "line": 425,
+          "line": 465,
           "column": 5
         }
       },
@@ -755,7 +787,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the cell editor factory of a column."
+            "body": "<p>Returns the cell editor factory of a column.</p>"
           }
         ],
         "@param": [
@@ -782,11 +814,11 @@
     "_getColToXPosMap": {
       "location": {
         "start": {
-          "line": 438,
+          "line": 478,
           "column": 4
         },
         "end": {
-          "line": 458,
+          "line": 498,
           "column": 5
         }
       },
@@ -794,7 +826,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the map that translates model indexes to x positions.\n\nThe returned map contains for a model index (int) a map having two\nproperties: overX (the overall x position of the column, int) and\nvisX (the visible x position of the column, int). visX is missing for\nhidden columns."
+            "body": "<p>Returns the map that translates model indexes to x positions.\n The returned map contains for a model index (int) a map having two\n properties: overX (the overall x position of the column, int) and\n visX (the visible x position of the column, int). visX is missing for\n hidden columns.</p>"
           }
         ],
         "@return": [
@@ -812,11 +844,11 @@
     "getVisibleColumnCount": {
       "location": {
         "start": {
-          "line": 466,
+          "line": 506,
           "column": 4
         },
         "end": {
-          "line": 468,
+          "line": 508,
           "column": 5
         }
       },
@@ -824,7 +856,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the number of visible columns."
+            "body": "<p>Returns the number of visible columns.</p>"
           }
         ],
         "@return": [
@@ -842,11 +874,11 @@
     "getVisibleColumnAtX": {
       "location": {
         "start": {
-          "line": 477,
+          "line": 517,
           "column": 4
         },
         "end": {
-          "line": 484,
+          "line": 524,
           "column": 5
         }
       },
@@ -854,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the model index of a column at a certain visible x position."
+            "body": "<p>Returns the model index of a column at a certain visible x position.</p>"
           }
         ],
         "@param": [
@@ -881,11 +913,11 @@
     "getVisibleX": {
       "location": {
         "start": {
-          "line": 493,
+          "line": 533,
           "column": 4
         },
         "end": {
-          "line": 500,
+          "line": 540,
           "column": 5
         }
       },
@@ -893,7 +925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the visible x position of a column."
+            "body": "<p>Returns the visible x position of a column.</p>"
           }
         ],
         "@param": [
@@ -920,11 +952,11 @@
     "getOverallColumnCount": {
       "location": {
         "start": {
-          "line": 508,
+          "line": 548,
           "column": 4
         },
         "end": {
-          "line": 510,
+          "line": 550,
           "column": 5
         }
       },
@@ -932,7 +964,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the overall number of columns (including hidden columns)."
+            "body": "<p>Returns the overall number of columns (including hidden columns).</p>"
           }
         ],
         "@return": [
@@ -950,11 +982,11 @@
     "getOverallColumnAtX": {
       "location": {
         "start": {
-          "line": 519,
+          "line": 559,
           "column": 4
         },
         "end": {
-          "line": 526,
+          "line": 566,
           "column": 5
         }
       },
@@ -962,7 +994,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the model index of a column at a certain overall x position."
+            "body": "<p>Returns the model index of a column at a certain overall x position.</p>"
           }
         ],
         "@param": [
@@ -989,11 +1021,11 @@
     "getOverallX": {
       "location": {
         "start": {
-          "line": 535,
+          "line": 575,
           "column": 4
         },
         "end": {
-          "line": 542,
+          "line": 582,
           "column": 5
         }
       },
@@ -1001,7 +1033,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the overall x position of a column."
+            "body": "<p>Returns the overall x position of a column.</p>"
           }
         ],
         "@param": [
@@ -1028,11 +1060,11 @@
     "isColumnVisible": {
       "location": {
         "start": {
-          "line": 551,
+          "line": 591,
           "column": 4
         },
         "end": {
-          "line": 558,
+          "line": 598,
           "column": 5
         }
       },
@@ -1040,7 +1072,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether a certain column is visible."
+            "body": "<p>Returns whether a certain column is visible.</p>"
           }
         ],
         "@param": [
@@ -1067,11 +1099,11 @@
     "setColumnVisible": {
       "location": {
         "start": {
-          "line": 567,
+          "line": 607,
           "column": 4
         },
         "end": {
-          "line": 633,
+          "line": 673,
           "column": 5
         }
       },
@@ -1079,7 +1111,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets whether a certain column is visible."
+            "body": "<p>Sets whether a certain column is visible.</p>"
           }
         ],
         "@param": [
@@ -1105,11 +1137,11 @@
     "moveColumn": {
       "location": {
         "start": {
-          "line": 643,
+          "line": 683,
           "column": 4
         },
         "end": {
-          "line": 680,
+          "line": 720,
           "column": 5
         }
       },
@@ -1117,7 +1149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Moves a column."
+            "body": "<p>Moves a column.</p>"
           }
         ],
         "@param": [
@@ -1130,9 +1162,9 @@
           },
           {
             "name": "@param",
-            "body": "toOverXPos {Integer} the overall x position of where the column should be\nmoved to.",
+            "body": "toOverXPos {Integer} the overall x position of where the column should be\n      moved to.",
             "paramName": "toOverXPos",
-            "description": " the overall x position of where the column should be\nmoved to.",
+            "description": " the overall x position of where the column should be\n      moved to.",
             "type": "Integer"
           }
         ]
@@ -1143,11 +1175,11 @@
     "setColumnsOrder": {
       "location": {
         "start": {
-          "line": 692,
+          "line": 732,
           "column": 4
         },
         "end": {
-          "line": 738,
+          "line": 778,
           "column": 5
         }
       },
@@ -1155,15 +1187,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reorders all columns to new overall positions. Will fire one \"orderChanged\" event\nwithout data afterwards"
+            "body": "<p>Reorders all columns to new overall positions. Will fire one \"orderChanged\" event\n without data afterwards</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "newPositions {Integer[]} Array mapping the index of a column in table model to its wanted overall\nposition on screen (both zero based). If the table models holds\ncol0, col1, col2 and col3 and you give [1,3,2,0], the new column order\nwill be col3, col0, col2, col1",
+            "body": "newPositions {Integer[]} Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col3, col0, col2, col1",
             "paramName": "newPositions",
-            "description": " Array mapping the index of a column in table model to its wanted overall\nposition on screen (both zero based). If the table models holds\ncol0, col1, col2 and col3 and you give [1,3,2,0], the new column order\nwill be col3, col0, col2, col1",
+            "description": " Array mapping the index of a column in table model to its wanted overall\n                            position on screen (both zero based). If the table models holds\n                            col0, col1, col2 and col3 and you give [1,3,2,0], the new column order\n                            will be col3, col0, col2, col1",
             "type": "Integer[]"
           }
         ]
@@ -1295,11 +1327,11 @@
   "destruct": {
     "location": {
       "start": {
-        "line": 750,
-        "column": 2
+        "line": 790,
+        "column": 13
       },
       "end": {
-        "line": 767,
+        "line": 807,
         "column": 3
       }
     },
@@ -1307,7 +1339,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

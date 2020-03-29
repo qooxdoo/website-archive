@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 26,
+        "line": 24,
         "column": 0
       },
       "end": {
-        "line": 68,
+        "line": 66,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDavid Perez Carmona (david-perez)\nJonathan Weiß (jonathan_rass)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n David Perez Carmona (david-perez)\n Jonathan Weiß (jonathan_rass)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nA cell event instance contains all data for pointer events related to cells in\na pane."
+          "body": "<p>A cell event instance contains all data for pointer events related to cells in\n a pane.</p>"
         }
       ]
     }
@@ -35,11 +35,11 @@
     "row": {
       "location": {
         "start": {
-          "line": 34,
+          "line": 32,
           "column": 4
         },
         "end": {
-          "line": 38,
+          "line": 36,
           "column": 5
         }
       },
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table row of the event target."
+            "body": "<p>The table row of the event target.</p>"
           }
         ]
       },
@@ -60,11 +60,11 @@
     "column": {
       "location": {
         "start": {
-          "line": 41,
+          "line": 39,
           "column": 4
         },
         "end": {
-          "line": 45,
+          "line": 43,
           "column": 5
         }
       },
@@ -72,7 +72,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The table column of the event target."
+            "body": "<p>The table column of the event target.</p>"
           }
         ]
       },
@@ -103,11 +103,11 @@
     "init": {
       "location": {
         "start": {
-          "line": 59,
+          "line": 57,
           "column": 5
         },
         "end": {
-          "line": 66,
+          "line": 64,
           "column": 6
         }
       },
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Initialize the event."
+            "body": "<p>Initialize the event.</p>"
           }
         ],
         "@param": [

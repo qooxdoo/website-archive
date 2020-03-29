@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This table example shows how to use a modal window for a cell editor.\nAlthough this is a very simple one, cell editors using modal windows\ncan be as sophisticated as one likes, so are useful for when a cell's\ndata is composed of many discrete parts that could be edited\nindividually. In this example, the \"A number\" column is editable."
+          "body": "<p>This table example shows how to use a modal window for a cell editor.\n Although this is a very simple one, cell editors using modal windows\n can be as sophisticated as one likes, so are useful for when a cell's\n data is composed of many discrete parts that could be edited\n individually. In this example, the \"A number\" column is editable.</p>"
         }
       ],
       "@tag": [

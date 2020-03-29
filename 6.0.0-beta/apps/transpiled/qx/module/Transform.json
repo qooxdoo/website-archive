@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This class is responsible for applying CSS3 transforms to the collection.\nThe implementation is mostly a cross browser wrapper for applying the\ntransforms.\nThe API is keep to the spec as close as possible.\n\nhttp://www.w3.org/TR/css3-3d-transforms/"
+          "body": "<p>This class is responsible for applying CSS3 transforms to the collection.\n The implementation is mostly a cross browser wrapper for applying the\n transforms.\n The API is keep to the spec as close as possible.\n http://www.w3.org/TR/css3-3d-transforms/</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method to apply multiple transforms at once to the given element. It\ntakes a map containing the transforms you want to apply plus the values\ne.g.<code>{scale: 2, rotate: \"5deg\"}</code>.\nThe values can be either singular, which means a single value will\nbe added to the CSS. If you give an array, the values will be split up\nand each array entry will be used for the X, Y or Z dimension in that\norder e.g. <code>{scale: [2, 0.5]}</code> will result in a element\ndouble the size in X direction and half the size in Y direction.\nMake sure your browser supports all transformations you apply."
+            "body": "<p>Method to apply multiple transforms at once to the given element. It\n takes a map containing the transforms you want to apply plus the values\n e.g.<code>{scale: 2, rotate: \"5deg\"}</code>.\n The values can be either singular, which means a single value will\n be added to the CSS. If you give an array, the values will be split up\n and each array entry will be used for the X, Y or Z dimension in that\n order e.g. <code>{scale: [2, 0.5]}</code> will result in a element\n double the size in X direction and half the size in Y direction.\n Make sure your browser supports all transformations you apply.</p>"
           }
         ],
         "@attach": [
@@ -92,7 +92,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translates by the given value. For further details, take\na look at the {@link #transform} method."
+            "body": "<p>Translates by the given value. For further details, take\n a look at the {@link #transform} method.</p>"
           }
         ],
         "@attach": [
@@ -140,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Scales by the given value. For further details, take\na look at the {@link #transform} method."
+            "body": "<p>Scales by the given value. For further details, take\n a look at the {@link #transform} method.</p>"
           }
         ],
         "@attach": [
@@ -188,7 +188,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Rotates by the given value. For further details, take\na look at the {@link #transform} method."
+            "body": "<p>Rotates by the given value. For further details, take\n a look at the {@link #transform} method.</p>"
           }
         ],
         "@attach": [
@@ -236,7 +236,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Skews by the given value. For further details, take\na look at the {@link #transform} method."
+            "body": "<p>Skews by the given value. For further details, take\n a look at the {@link #transform} method.</p>"
           }
         ],
         "@attach": [
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the transform-origin property.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#transform-origin-property"
+            "body": "<p>Sets the transform-origin property.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#transform-origin-property</p>"
           }
         ],
         "@attach": [
@@ -296,9 +296,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "value {String} CSS position values like <code>50% 50%</code> or\n<code>left top</code>.",
+            "body": "value {String} CSS position values like <code>50% 50%</code> or\n   <code>left top</code>.",
             "paramName": "value",
-            "description": " CSS position values like <code>50% 50%</code> or\n<code>left top</code>.",
+            "description": " CSS position values like <code>50% 50%</code> or\n   <code>left top</code>.",
             "type": "String"
           }
         ],
@@ -329,7 +329,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the transform-origin property of the first element.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#transform-origin-property"
+            "body": "<p>Returns the transform-origin property of the first element.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#transform-origin-property</p>"
           }
         ],
         "@attach": [
@@ -341,9 +341,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The set property, e.g. <code>50% 50%</code> or null,\nof the collection is empty.",
+            "body": "{String} The set property, e.g. <code>50% 50%</code> or null,\n   of the collection is empty.",
             "type": "String",
-            "description": " The set property, e.g. <code>50% 50%</code> or null,\nof the collection is empty."
+            "description": " The set property, e.g. <code>50% 50%</code> or null,\n   of the collection is empty."
           }
         ]
       },
@@ -365,7 +365,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the transform-style property.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#transform-style-property"
+            "body": "<p>Sets the transform-style property.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#transform-style-property</p>"
           }
         ],
         "@attach": [
@@ -410,7 +410,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the transform-style property of the first element.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#transform-style-property"
+            "body": "<p>Returns the transform-style property of the first element.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#transform-style-property</p>"
           }
         ],
         "@attach": [
@@ -422,9 +422,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} The set property, either <code>flat</code> or\n<code>preserve-3d</code>.",
+            "body": "{String} The set property, either <code>flat</code> or\n   <code>preserve-3d</code>.",
             "type": "String",
-            "description": " The set property, either <code>flat</code> or\n<code>preserve-3d</code>."
+            "description": " The set property, either <code>flat</code> or\n   <code>preserve-3d</code>."
           }
         ]
       },
@@ -446,7 +446,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the perspective property.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#perspective-property"
+            "body": "<p>Sets the perspective property.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#perspective-property</p>"
           }
         ],
         "@attach": [
@@ -458,9 +458,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "value {Number} The perspective layer. Numbers between 100\nand 5000 give the best results.",
+            "body": "value {Number} The perspective layer. Numbers between 100\n   and 5000 give the best results.",
             "paramName": "value",
-            "description": " The perspective layer. Numbers between 100\nand 5000 give the best results.",
+            "description": " The perspective layer. Numbers between 100\n   and 5000 give the best results.",
             "type": "Number"
           }
         ],
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the perspective property of the first element.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#perspective-property"
+            "body": "<p>Returns the perspective property of the first element.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#perspective-property</p>"
           }
         ],
         "@attach": [
@@ -527,7 +527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the perspective-origin property.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#perspective-origin-property"
+            "body": "<p>Sets the perspective-origin property.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#perspective-origin-property</p>"
           }
         ],
         "@attach": [
@@ -539,9 +539,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "value {String} CSS position values like <code>50% 50%</code> or\n<code>left top</code>.",
+            "body": "value {String} CSS position values like <code>50% 50%</code> or\n   <code>left top</code>.",
             "paramName": "value",
-            "description": " CSS position values like <code>50% 50%</code> or\n<code>left top</code>.",
+            "description": " CSS position values like <code>50% 50%</code> or\n   <code>left top</code>.",
             "type": "String"
           }
         ],
@@ -572,7 +572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the perspective-origin property of the first element.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#perspective-origin-property"
+            "body": "<p>Returns the perspective-origin property of the first element.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#perspective-origin-property</p>"
           }
         ],
         "@attach": [
@@ -608,7 +608,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the backface-visibility property.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#backface-visibility-property"
+            "body": "<p>Sets the backface-visibility property.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#backface-visibility-property</p>"
           }
         ],
         "@attach": [
@@ -653,7 +653,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the backface-visibility property of the first element.\n\nSpec: http://www.w3.org/TR/css3-3d-transforms/#backface-visibility-property"
+            "body": "<p>Returns the backface-visibility property of the first element.\n Spec: http://www.w3.org/TR/css3-3d-transforms/#backface-visibility-property</p>"
           }
         ],
         "@attach": [
@@ -679,13 +679,14 @@
     "location": {
       "start": {
         "line": 277,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 279,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

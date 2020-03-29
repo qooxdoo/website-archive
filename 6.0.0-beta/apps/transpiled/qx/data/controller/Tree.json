@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "<h2>Tree Controller</h2>\n\n*General idea*\n\nThe tree controller is the controller made for the {@link qx.ui.tree.Tree}\nwidget in qooxdoo. Therefore, it is responsible for creating and adding the\ntree folders to the tree given as target.\n\n*Features*\n\n* Synchronize the model and the target\n* Label and icon are bindable\n* Takes care of the selection\n* Passes on the options used by {@link qx.data.SingleValueBinding#bind}\n\n*Usage*\n\nAs model, you can use every qooxdoo widget structure having one property,\nwhich is a data array holding the children of the current node. There can\nbe as many additional as you like.\nYou need to specify a model, a target, a child path and a label path to\nmake the controller work.\n\n*Cross reference*\n\n* If you want to bind single values, use {@link qx.data.controller.Object}\n* If you want to bind a list like widget, use {@link qx.data.controller.List}\n* If you want to bin a form widget, use {@link qx.data.controller.Form}"
+          "body": "<h2>Tree Controller</h2>\n<p><em>General idea</em>\n The tree controller is the controller made for the {@link qx.ui.tree.Tree}\n widget in qooxdoo. Therefore, it is responsible for creating and adding the\n tree folders to the tree given as target.\n<em>Features</em></p>\n<ul>\n<li>Synchronize the model and the target</li>\n<li>Label and icon are bindable</li>\n<li>Takes care of the selection</li>\n<li>Passes on the options used by {@link qx.data.SingleValueBinding#bind}\n<em>Usage</em>\nAs model, you can use every qooxdoo widget structure having one property,\nwhich is a data array holding the children of the current node. There can\nbe as many additional as you like.\nYou need to specify a model, a target, a child path and a label path to\nmake the controller work.\n<em>Cross reference</em></li>\n<li>If you want to bind single values, use {@link qx.data.controller.Object}</li>\n<li>If you want to bind a list like widget, use {@link qx.data.controller.List}</li>\n<li>If you want to bin a form widget, use {@link qx.data.controller.Form}</li>\n</ul>"
         }
       ]
     }
@@ -39,7 +39,7 @@
     "location": {
       "start": {
         "line": 74,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 96,
@@ -50,7 +50,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -60,9 +60,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "model {qx.core.Object?null} The root element of the model, which holds\nthe data.",
+          "body": "model {qx.core.Object?null} The root element of the model, which holds\n   the data.",
           "paramName": "model",
-          "description": " The root element of the model, which holds\nthe data.",
+          "description": " The root element of the model, which holds\n   the data.",
           "optional": true,
           "defaultValue": "null",
           "type": "qx.core.Object"
@@ -78,18 +78,18 @@
         },
         {
           "name": "@param",
-          "body": "childPath {String?null} The name of the property in the model, which\nholds the data array containing the children.",
+          "body": "childPath {String?null} The name of the property in the model, which\n   holds the data array containing the children.",
           "paramName": "childPath",
-          "description": " The name of the property in the model, which\nholds the data array containing the children.",
+          "description": " The name of the property in the model, which\n   holds the data array containing the children.",
           "optional": true,
           "defaultValue": "null",
           "type": "String"
         },
         {
           "name": "@param",
-          "body": "labelPath {String?null} The name of the property in the model,\nwhich holds the value to be displayed as the label of the tree items.",
+          "body": "labelPath {String?null} The name of the property in the model,\n   which holds the value to be displayed as the label of the tree items.",
           "paramName": "labelPath",
-          "description": " The name of the property in the model,\nwhich holds the value to be displayed as the label of the tree items.",
+          "description": " The name of the property in the model,\n   which holds the value to be displayed as the label of the tree items.",
           "optional": true,
           "defaultValue": "null",
           "type": "String"
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The root element of the data."
+            "body": "<p>The root element of the data.</p>"
           }
         ]
       },
@@ -140,7 +140,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The tree to bind the data to."
+            "body": "<p>The tree to bind the data to.</p>"
           }
         ]
       },
@@ -166,7 +166,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the property, where the children are stored in the model."
+            "body": "<p>The name of the property, where the children are stored in the model.</p>"
           }
         ]
       },
@@ -192,7 +192,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the property, where the value for the tree folders label\nis stored in the model classes."
+            "body": "<p>The name of the property, where the value for the tree folders label\n is stored in the model classes.</p>"
           }
         ]
       },
@@ -218,7 +218,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The name of the property, where the source for the tree folders icon\nis stored in the model classes."
+            "body": "<p>The name of the property, where the source for the tree folders icon\n is stored in the model classes.</p>"
           }
         ]
       },
@@ -244,7 +244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the label binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the label binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ]
       },
@@ -269,7 +269,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A map containing the options for the icon binding. The possible keys\ncan be found in the {@link qx.data.SingleValueBinding} documentation."
+            "body": "<p>A map containing the options for the icon binding. The possible keys\n can be found in the {@link qx.data.SingleValueBinding} documentation.</p>"
           }
         ]
       },
@@ -294,7 +294,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Delegation object, which can have one ore more function defined by the\n{@link IControllerDelegate} interface."
+            "body": "<p>Delegation object, which can have one ore more function defined by the\n {@link IControllerDelegate} interface.</p>"
           }
         ]
       },
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "private members"
+            "body": "<p>private members</p>"
           }
         ]
       },
@@ -409,11 +409,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "If a new delegate is set, it applies the stored configuration for the\ntree folder to the already created folders once."
+            "body": "<p>If a new delegate is set, it applies the stored configuration for the\n tree folder to the already created folders once.</p>"
           }
         ],
         "@param": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the icon options had been\nchanged. This method will invoke a renewing of all bindings."
+            "body": "<p>Apply-method which will be called after the icon options had been\n changed. This method will invoke a renewing of all bindings.</p>"
           }
         ],
         "@param": [
@@ -507,7 +507,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the label options had been\nchanged. This method will invoke a renewing of all bindings."
+            "body": "<p>Apply-method which will be called after the label options had been\n changed. This method will invoke a renewing of all bindings.</p>"
           }
         ],
         "@param": [
@@ -554,7 +554,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the target had been\nchanged. This method will clean up the old tree and will initially\nbuild up the new tree containing the data from the model."
+            "body": "<p>Apply-method which will be called after the target had been\n changed. This method will clean up the old tree and will initially\n build up the new tree containing the data from the model.</p>"
           }
         ],
         "@param": [
@@ -601,7 +601,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the model had been\nchanged. This method invoke a new building of the tree."
+            "body": "<p>Apply-method which will be called after the model had been\n changed. This method invoke a new building of the tree.</p>"
           }
         ],
         "@param": [
@@ -648,7 +648,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the child path had been\nchanged. This method invoke a new building of the tree."
+            "body": "<p>Apply-method which will be called after the child path had been\n changed. This method invoke a new building of the tree.</p>"
           }
         ],
         "@param": [
@@ -695,7 +695,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the icon path had been\nchanged. This method invoke a new building of the tree."
+            "body": "<p>Apply-method which will be called after the icon path had been\n changed. This method invoke a new building of the tree.</p>"
           }
         ],
         "@param": [
@@ -742,7 +742,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply-method which will be called after the label path had been\nchanged. This method invoke a new building of the tree."
+            "body": "<p>Apply-method which will be called after the label path had been\n changed. This method invoke a new building of the tree.</p>"
           }
         ],
         "@param": [
@@ -789,11 +789,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler function handling the change of a length of a children array.\nThis method invokes a rebuild of the corresponding subtree."
+            "body": "<p>Handler function handling the change of a length of a children array.\n This method invokes a rebuild of the corresponding subtree.</p>"
           }
         ],
         "@param": [
@@ -824,7 +824,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler function taking care of the changes of the children array itself."
+            "body": "<p>Handler function taking care of the changes of the children array itself.</p>"
           }
         ],
         "@param": [
@@ -855,11 +855,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nITEM HANDLING\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   ITEM HANDLING\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Creates a TreeFolder and delegates the configure method if a delegate is\nset and the needed function (configureItem) is available."
+            "body": "<p>Creates a TreeFolder and delegates the configure method if a delegate is\n set and the needed function (configureItem) is available.</p>"
           }
         ],
         "@return": [
@@ -889,7 +889,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper function to build up the tree corresponding to the data\nstored in the model. This function creates the root node and hands the\nrecursive creation of all subtrees to the {#__updateTreeChildren}\nfunction."
+            "body": "<p>Internal helper function to build up the tree corresponding to the data\n stored in the model. This function creates the root node and hands the\n recursive creation of all subtrees to the {#__updateTreeChildren}\n function.</p>"
           }
         ]
       },
@@ -911,22 +911,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Main method building up the tree folders corresponding to the given\nmodel node. The new created subtree will be added to the given tree node."
+            "body": "<p>Main method building up the tree folders corresponding to the given\n model node. The new created subtree will be added to the given tree node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "rootNode {qx.ui.tree.TreeFolder} The tree folder to add the new\ncreated subtree.",
+            "body": "rootNode {qx.ui.tree.TreeFolder} The tree folder to add the new\n   created subtree.",
             "paramName": "rootNode",
-            "description": " The tree folder to add the new\ncreated subtree.",
+            "description": " The tree folder to add the new\n   created subtree.",
             "type": "qx.ui.tree.TreeFolder"
           },
           {
             "name": "@param",
-            "body": "modelNode {qx.core.Object} The model nodes which represent the\ndata in the current subtree.",
+            "body": "modelNode {qx.core.Object} The model nodes which represent the\n   data in the current subtree.",
             "paramName": "modelNode",
-            "description": " The model nodes which represent the\ndata in the current subtree.",
+            "description": " The model nodes which represent the\n   data in the current subtree.",
             "type": "qx.core.Object"
           }
         ]
@@ -949,7 +949,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all folders and bindings for the current set target."
+            "body": "<p>Removes all folders and bindings for the current set target.</p>"
           }
         ],
         "@param": [
@@ -980,7 +980,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all child folders of the given tree node. Also removes all\nbindings for the removed folders."
+            "body": "<p>Removes all child folders of the given tree node. Also removes all\n bindings for the removed folders.</p>"
           }
         ],
         "@param": [
@@ -1011,7 +1011,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method removing the given folder form the given root\nnode. All set bindings will be removed and the old tree folder will be\ndestroyed."
+            "body": "<p>Internal helper method removing the given folder form the given root\n node. All set bindings will be removed and the old tree folder will be\n destroyed.</p>"
           }
         ],
         "@param": [
@@ -1024,9 +1024,9 @@
           },
           {
             "name": "@param",
-            "body": "rootNode {qx.ui.tree.core.AbstractTreeItem} The folder holding the\ntreeFolder.",
+            "body": "rootNode {qx.ui.tree.core.AbstractTreeItem} The folder holding the\n   treeFolder.",
             "paramName": "rootNode",
-            "description": " The folder holding the\ntreeFolder.",
+            "description": " The folder holding the\n   treeFolder.",
             "type": "qx.ui.tree.core.AbstractTreeItem"
           }
         ]
@@ -1049,19 +1049,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nBINDING STUFF\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   BINDING STUFF\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method for binding a given property from the model to the target\nwidget.\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper method for binding a given property from the model to the target\n widget.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "sourcePath {String | null} The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "body": "sourcePath {String | null} The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "paramName": "sourcePath",
-            "description": " The path to the property in the model.\nIf you use an empty string, the whole model item will be bound.",
+            "description": " The path to the property in the model.\n   If you use an empty string, the whole model item will be bound.",
             "type": [
               "String",
               "null"
@@ -1069,16 +1069,16 @@
           },
           {
             "name": "@param",
-            "body": "targetPath {String} The name of the property in the target\nwidget.",
+            "body": "targetPath {String} The name of the property in the target\n   widget.",
             "paramName": "targetPath",
-            "description": " The name of the property in the target\nwidget.",
+            "description": " The name of the property in the target\n   widget.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "options {Map | null} The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "body": "options {Map | null} The options to use by\n  {@link qx.data.SingleValueBinding#bind} for the binding.",
             "paramName": "options",
-            "description": " The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "description": " The options to use by\n  {@link qx.data.SingleValueBinding#bind} for the binding.",
             "type": [
               "Map",
               "null"
@@ -1118,7 +1118,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for binding a given property from the target widget to\nthe model.\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper method for binding a given property from the target widget to\n the model.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
@@ -1134,16 +1134,16 @@
           },
           {
             "name": "@param",
-            "body": "sourcePath {String} The name of the property in the target\nwidget.",
+            "body": "sourcePath {String} The name of the property in the target\n   widget.",
             "paramName": "sourcePath",
-            "description": " The name of the property in the target\nwidget.",
+            "description": " The name of the property in the target\n   widget.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "options {Map | null} The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "body": "options {Map | null} The options to use by\n   {@link qx.data.SingleValueBinding#bind} for the binding.",
             "paramName": "options",
-            "description": " The options to use by\n{@link qx.data.SingleValueBinding#bind} for the binding.",
+            "description": " The options to use by\n   {@link qx.data.SingleValueBinding#bind} for the binding.",
             "type": [
               "Map",
               "null"
@@ -1183,15 +1183,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for binding the default properties (label and icon) from\nthe model to the target widget.\n\nThis method should only be called in the\n{@link qx.data.controller.IControllerDelegate#bindItem} function\nimplemented by the {@link #delegate} property."
+            "body": "<p>Helper method for binding the default properties (label and icon) from\n the model to the target widget.\n This method should only be called in the\n {@link qx.data.controller.IControllerDelegate#bindItem} function\n implemented by the {@link #delegate} property.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "treeNode {qx.ui.tree.core.AbstractTreeItem} The tree node\ncorresponding to the model node.",
+            "body": "treeNode {qx.ui.tree.core.AbstractTreeItem} The tree node\n   corresponding to the model node.",
             "paramName": "treeNode",
-            "description": " The tree node\ncorresponding to the model node.",
+            "description": " The tree node\n   corresponding to the model node.",
             "type": "qx.ui.tree.core.AbstractTreeItem"
           },
           {
@@ -1221,7 +1221,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method renewing all bindings with the currently saved options and\npaths."
+            "body": "<p>Helper method renewing all bindings with the currently saved options and\n paths.</p>"
           }
         ]
       },
@@ -1243,7 +1243,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method adding the right bindings from the given\nmodelNode to the given treeNode."
+            "body": "<p>Internal helper method adding the right bindings from the given\n modelNode to the given treeNode.</p>"
           }
         ],
         "@param": [
@@ -1256,9 +1256,9 @@
           },
           {
             "name": "@param",
-            "body": "treeNode {qx.ui.tree.TreeFolder} The corresponding tree folder\nto the model node.",
+            "body": "treeNode {qx.ui.tree.TreeFolder} The corresponding tree folder\n   to the model node.",
             "paramName": "treeNode",
-            "description": " The corresponding tree folder\nto the model node.",
+            "description": " The corresponding tree folder\n   to the model node.",
             "type": "qx.ui.tree.TreeFolder"
           }
         ]
@@ -1281,15 +1281,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper method for removing bindings for a given model node."
+            "body": "<p>Internal helper method for removing bindings for a given model node.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "modelNode {qx.core.Object} the model node for which the bindings\nshould be removed.",
+            "body": "modelNode {qx.core.Object} the model node for which the bindings\n   should be removed.",
             "paramName": "modelNode",
-            "description": " the model node for which the bindings\nshould be removed.",
+            "description": " the model node for which the bindings\n   should be removed.",
             "type": "qx.core.Object"
           }
         ]
@@ -1312,11 +1312,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDELEGATE HELPER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   DELEGATE HELPER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate It checks if a configureItem\nis set end invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate It checks if a configureItem\n is set end invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1354,7 +1354,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate. It checks if a createItem\nis set and invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate. It checks if a createItem\n is set and invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1392,7 +1392,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper method for applying the delegate It checks if a bindItem\nis set end invokes the initial process to apply the given function."
+            "body": "<p>Helper method for applying the delegate It checks if a bindItem\n is set end invokes the initial process to apply the given function.</p>"
           }
         ],
         "@param": [
@@ -1428,7 +1428,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Setter for the selection."
+            "body": "<p>Setter for the selection.</p>"
           }
         ],
         "@param": [
@@ -1455,7 +1455,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Getter for the selection list."
+            "body": "<p>Getter for the selection list.</p>"
           }
         ],
         "@return": [
@@ -1490,7 +1490,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "setValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>setValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@param": [
@@ -1527,7 +1527,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "getValue implements part of the {@link qx.ui.form.IField} interface."
+            "body": "<p>getValue implements part of the {@link qx.ui.form.IField} interface.</p>"
           }
         ],
         "@return": [
@@ -1561,11 +1561,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAPPLY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   APPLY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Apply-method for setting a new selection array. Only the change listener\nwill be removed from the old array and added to the new."
+            "body": "<p>Apply-method for setting a new selection array. Only the change listener\n will be removed from the old array and added to the new.</p>"
           }
         ],
         "@param": [
@@ -1619,11 +1619,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSELECTION\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   SELECTION\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Helper method which should be called by the classes including this\nMixin when the target changes."
+            "body": "<p>Helper method which should be called by the classes including this\n Mixin when the target changes.</p>"
           }
         ],
         "@param": [
@@ -1671,7 +1671,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-method returning true, if the target supports multi selection."
+            "body": "<p>Helper-method returning true, if the target supports multi selection.</p>"
           }
         ],
         "@return": [
@@ -1696,7 +1696,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-method returning true, if the target supports single selection."
+            "body": "<p>Helper-method returning true, if the target supports single selection.</p>"
           }
         ],
         "@return": [
@@ -1721,7 +1721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper for selecting an item in the target. The item to select\nis defined by a given model item."
+            "body": "<p>Internal helper for selecting an item in the target. The item to select\n is defined by a given model item.</p>"
           }
         ],
         "@param": [
@@ -1747,7 +1747,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list item storing the given model in its model property."
+            "body": "<p>Returns the list item storing the given model in its model property.</p>"
           }
         ],
         "@param": [
@@ -1799,7 +1799,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper-Method for checking the state of the selection modification.\n{@link #_startSelectionModification}\n{@link #_endSelectionModification}"
+            "body": "<p>Helper-Method for checking the state of the selection modification.\n {@link #<em>startSelectionModification}\n {@link #</em>endSelectionModification}</p>"
           }
         ],
         "@return": [
@@ -2465,7 +2465,7 @@
     "location": {
       "start": {
         "line": 930,
-        "column": 3
+        "column": 14
       },
       "end": {
         "line": 938,
@@ -2476,7 +2476,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\n\n======================================================================\n\nThis class contains code based on the following work:\n\nPrototype JS\nhttp://www.prototypejs.org/\nVersion 1.5\n\nCopyright:\n(c) 2006-2007, Prototype Core Team\n\nLicense:\nMIT: http://www.opensource.org/licenses/mit-license.php\n\nAuthors:\nPrototype Core Team\n\n----------------------------------------------------------------------\n\nCopyright (c) 2005-2008 Sam Stephenson\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without restriction,\nincluding without limitation the rights to use, copy, modify, merge,\npublish, distribute, sublicense, and/or sell copies of the Software,\nand to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\nDEALINGS IN THE SOFTWARE.\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n   ======================================================================\n   This class contains code based on the following work:\n Prototype JS\n     http://www.prototypejs.org/\n     Version 1.5\n     Copyright:\n       (c) 2006-2007, Prototype Core Team\n     License:\n       MIT: http://www.opensource.org/licenses/mit-license.php\n     Authors:\n Prototype Core Team</p>\n<hr />\n<pre><code> Copyright (c) 2005-2008 Sam Stephenson\n Permission is hereby granted, free of charge, to any person\n obtaining a copy of this software and associated documentation\n files (the \"Software\"), to deal in the Software without restriction,\n including without limitation the rights to use, copy, modify, merge,\n publish, distribute, sublicense, and/or sell copies of the Software,\n and to permit persons to whom the Software is furnished to do so,\n subject to the following conditions:\n THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\n HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\n WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n DEALINGS IN THE SOFTWARE.\n*****************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
-          "body": "Style querying and modification of HTML elements.\n\nAutomatically normalizes cross-browser differences for setting and reading\nCSS attributes. Optimized for performance."
+          "body": "<p>Style querying and modification of HTML elements.\n Automatically normalizes cross-browser differences for setting and reading\n CSS attributes. Optimized for performance.</p>"
         }
       ],
       "@require": [
@@ -149,7 +149,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Detect vendor specific properties."
+            "body": "<p>Detect vendor specific properties.</p>"
           }
         ]
       },
@@ -171,7 +171,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the (possibly vendor-prefixed) name of a style property and stores\nit to avoid multiple checks."
+            "body": "<p>Gets the (possibly vendor-prefixed) name of a style property and stores\n it to avoid multiple checks.</p>"
           }
         ],
         "@param": [
@@ -186,9 +186,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String|null} The client-specific name of the property, or\n<code>null</code> if it's not supported.",
+            "body": "{String|null} The client-specific name of the property, or\n <code>null</code> if it's not supported.",
             "type": "String|null",
-            "description": " The client-specific name of the property, or\n<code>null</code> if it's not supported."
+            "description": " The client-specific name of the property, or\n <code>null</code> if it's not supported."
           }
         ]
       },
@@ -210,7 +210,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mshtml has proprietary pixel* properties for locations and dimensions\nwhich return the pixel value. Used by getComputed() in mshtml variant."
+            "body": "<p>Mshtml has proprietary pixel* properties for locations and dimensions\n which return the pixel value. Used by getComputed() in mshtml variant.</p>"
           }
         ],
         "@internal": [
@@ -238,7 +238,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a special class is available for the processing of this style."
+            "body": "<p>Whether a special class is available for the processing of this style.</p>"
           }
         ],
         "@internal": [
@@ -266,11 +266,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCOMPILE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  COMPILE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Compiles the given styles into a string which can be used to\nconcat a HTML string for innerHTML usage."
+            "body": "<p>Compiles the given styles into a string which can be used to\n concat a HTML string for innerHTML usage.</p>"
           }
         ],
         "@param": [
@@ -309,11 +309,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCSS TEXT SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CSS TEXT SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Set the full CSS content of the style attribute"
+            "body": "<p>Set the full CSS content of the style attribute</p>"
           }
         ],
         "@param": [
@@ -351,7 +351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the full content of the style attribute."
+            "body": "<p>Returns the full content of the style attribute.</p>"
           }
         ],
         "@param": [
@@ -396,11 +396,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nSTYLE ATTRIBUTE SUPPORT\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  STYLE ATTRIBUTE SUPPORT\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Checks whether the browser supports the given CSS property."
+            "body": "<p>Checks whether the browser supports the given CSS property.</p>"
           }
         ],
         "@param": [
@@ -445,7 +445,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Computed value of a style property. Compared to the cascaded style,\nthis one also interprets the values e.g. translates <code>em</code> units to\n<code>px</code>."
+            "body": "{Integer} Computed value of a style property. Compared to the cascaded style,\n this one also interprets the values e.g. translates <code>em</code> units to\n <code>px</code>."
           }
         ]
       },
@@ -501,7 +501,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Integer} Local value of a style property. Ignores inheritance cascade.\nDoes not interpret values."
+            "body": "{Integer} Local value of a style property. Ignores inheritance cascade.\n   Does not interpret values."
           }
         ]
       },
@@ -523,7 +523,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets the value of a style property"
+            "body": "<p>Sets the value of a style property</p>"
           }
         ],
         "@param": [
@@ -550,9 +550,9 @@
           },
           {
             "name": "@param",
-            "body": "smart {Boolean?true} Whether the implementation should automatically use\nspecial implementations for some properties",
+            "body": "smart {Boolean?true} Whether the implementation should automatically use\n    special implementations for some properties",
             "paramName": "smart",
-            "description": " Whether the implementation should automatically use\nspecial implementations for some properties",
+            "description": " Whether the implementation should automatically use\n    special implementations for some properties",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -577,7 +577,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Convenience method to modify a set of styles at once."
+            "body": "<p>Convenience method to modify a set of styles at once.</p>"
           }
         ],
         "@param": [
@@ -590,16 +590,16 @@
           },
           {
             "name": "@param",
-            "body": "styles {Map} a map where the key is the name of the property\nand the value is the value to use.",
+            "body": "styles {Map} a map where the key is the name of the property\n    and the value is the value to use.",
             "paramName": "styles",
-            "description": " a map where the key is the name of the property\nand the value is the value to use.",
+            "description": " a map where the key is the name of the property\n    and the value is the value to use.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "smart {Boolean?true} Whether the implementation should automatically use\nspecial implementations for some properties",
+            "body": "smart {Boolean?true} Whether the implementation should automatically use\n    special implementations for some properties",
             "paramName": "smart",
-            "description": " Whether the implementation should automatically use\nspecial implementations for some properties",
+            "description": " Whether the implementation should automatically use\n    special implementations for some properties",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -624,7 +624,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resets the value of a style property"
+            "body": "<p>Resets the value of a style property</p>"
           }
         ],
         "@param": [
@@ -644,9 +644,9 @@
           },
           {
             "name": "@param",
-            "body": "smart {Boolean?true} Whether the implementation should automatically use\nspecial implementations for some properties",
+            "body": "smart {Boolean?true} Whether the implementation should automatically use\n    special implementations for some properties",
             "paramName": "smart",
-            "description": " Whether the implementation should automatically use\nspecial implementations for some properties",
+            "description": " Whether the implementation should automatically use\n    special implementations for some properties",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -671,7 +671,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Gets the value of a style property.\n\n*Computed*\n\nReturns the computed value of a style property. Compared to the cascaded style,\nthis one also interprets the values e.g. translates <code>em</code> units to\n<code>px</code>.\n\n*Cascaded*\n\nReturns the cascaded value of a style property.\n\n*Local*\n\nIgnores inheritance cascade. Does not interpret values."
+            "body": "<p>Gets the value of a style property.\n<em>Computed</em>\n Returns the computed value of a style property. Compared to the cascaded style,\n this one also interprets the values e.g. translates <code>em</code> units to\n <code>px</code>.\n<em>Cascaded</em>\n Returns the cascaded value of a style property.\n<em>Local</em>\n Ignores inheritance cascade. Does not interpret values.</p>"
           }
         ],
         "@signature": [
@@ -697,16 +697,16 @@
           },
           {
             "name": "@param",
-            "body": "mode {Number} Choose one of the modes {@link #COMPUTED_MODE}, {@link #CASCADED_MODE},\n{@link #LOCAL_MODE}. The computed mode is the default one.",
+            "body": "mode {Number} Choose one of the modes {@link #COMPUTED_MODE}, {@link #CASCADED_MODE},\n   {@link #LOCAL_MODE}. The computed mode is the default one.",
             "paramName": "mode",
-            "description": " Choose one of the modes {@link #COMPUTED_MODE}, {@link #CASCADED_MODE},\n{@link #LOCAL_MODE}. The computed mode is the default one.",
+            "description": " Choose one of the modes {@link #COMPUTED_MODE}, {@link #CASCADED_MODE},\n   {@link #LOCAL_MODE}. The computed mode is the default one.",
             "type": "Number"
           },
           {
             "name": "@param",
-            "body": "smart {Boolean?true} Whether the implementation should automatically use\nspecial implementations for some properties",
+            "body": "smart {Boolean?true} Whether the implementation should automatically use\n    special implementations for some properties",
             "paramName": "smart",
-            "description": " Whether the implementation should automatically use\nspecial implementations for some properties",
+            "description": " Whether the implementation should automatically use\n    special implementations for some properties",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -729,13 +729,14 @@
     "location": {
       "start": {
         "line": 536,
-        "column": 2
+        "column": 10
       },
       "end": {
         "line": 538,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

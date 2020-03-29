@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table Cell Renderer for Progressive."
+          "body": "<p>Table Cell Renderer for Progressive.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 29,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 32,
@@ -67,24 +67,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe HTML content to be added to the cell div.",
+            "body": "{String}\n   The HTML content to be added to the cell div.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe HTML content to be added to the cell div."
+            "description": "\n   The HTML content to be added to the cell div."
           }
         ]
       },
@@ -110,24 +110,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Formats a value in a reasonably predictable fashion."
+            "body": "<p>Formats a value in a reasonably predictable fashion.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "value {var}\nThe value to be formatted",
+            "body": "value {var}\n   The value to be formatted",
             "paramName": "value",
-            "description": "\nThe value to be formatted",
+            "description": "\n   The value to be formatted",
             "type": "var"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\n<ul>\n<li>\nNumbers are formatted with two fractional digits.\n</li>\n<li>\nDates are formatted in the default format of\n{@link qx.util.format.DateFormat}.\n</li>\n<li>\nAny type not otherwise handled, including String values, are\nsimply returned unaltered.\n</li>\n</ul>",
+            "body": "{String}\n <ul>\n   <li>\n     Numbers are formatted with two fractional digits.\n   </li>\n   <li>\n     Dates are formatted in the default format of\n     {@link qx.util.format.DateFormat}.\n   </li>\n   <li>\n     Any type not otherwise handled, including String values, are\n     simply returned unaltered.\n   </li>\n </ul>",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\n<ul>\n<li>\nNumbers are formatted with two fractional digits.\n</li>\n<li>\nDates are formatted in the default format of\n{@link qx.util.format.DateFormat}.\n</li>\n<li>\nAny type not otherwise handled, including String values, are\nsimply returned unaltered.\n</li>\n</ul>"
+            "description": "\n <ul>\n   <li>\n     Numbers are formatted with two fractional digits.\n   </li>\n   <li>\n     Dates are formatted in the default format of\n     {@link qx.util.format.DateFormat}.\n   </li>\n   <li>\n     Any type not otherwise handled, including String values, are\n     simply returned unaltered.\n   </li>\n </ul>"
           }
         ]
       },

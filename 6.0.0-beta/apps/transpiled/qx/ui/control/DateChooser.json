@@ -28,11 +28,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A *date chooser* is a small calendar including a navigation bar to switch the shown\nmonth. It includes a column for the calendar week and shows one month. Selecting\na date is as easy as tapping on it.\n\nTo be conform with all form widgets, the {@link qx.ui.form.IForm} interface\nis implemented.\n\nThe following example creates and adds a date chooser to the root element.\nA listener alerts the user if a new date is selected.\n\n<pre class='javascript'>\nvar chooser = new qx.ui.control.DateChooser();\nthis.getRoot().add(chooser, { left : 20, top: 20});\n\nchooser.addListener(\"changeValue\", function(e) {\nalert(e.getData());\n});\n</pre>\n\nAdditionally to a selection event an execute event is available which is\nfired by doubletap or tapping the space / enter key. With this event you\ncan for example save the selection and close the date chooser."
+          "body": "<p>A <em>date chooser</em> is a small calendar including a navigation bar to switch the shown\n month. It includes a column for the calendar week and shows one month. Selecting\n a date is as easy as tapping on it.\n To be conform with all form widgets, the {@link qx.ui.form.IForm} interface\n is implemented.\n The following example creates and adds a date chooser to the root element.\n A listener alerts the user if a new date is selected.\n </p>\n<pre class='javascript'>\n var chooser = new qx.ui.control.DateChooser();\n this.getRoot().add(chooser, { left : 20, top: 20});\n chooser.addListener(\"changeValue\", function(e) {\n   alert(e.getData());\n });\n </pre>\n<p>Additionally to a selection event an execute event is available which is\n fired by doubletap or tapping the space / enter key. With this event you\n can for example save the selection and close the date chooser.</p>"
         }
       ],
       "@childControl": [
@@ -142,7 +142,7 @@
     "location": {
       "start": {
         "line": 84,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 117,
@@ -153,7 +153,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         },
         {
           "name": "@description",
@@ -163,9 +163,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "date {Date ? null} The initial date to show. If <code>null</code>\nthe current day (today) is shown.",
+          "body": "date {Date ? null} The initial date to show. If <code>null</code>\n the current day (today) is shown.",
           "paramName": "date",
-          "description": " The initial date to show. If <code>null</code>\nthe current day (today) is shown.",
+          "description": " The initial date to show. If <code>null</code>\n the current day (today) is shown.",
           "optional": true,
           "defaultValue": "null",
           "type": "Date"
@@ -275,7 +275,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -304,7 +304,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -333,7 +333,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -362,7 +362,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The currently shown month. 0 = january, 1 = february, and so on."
+            "body": "<p>The currently shown month. 0 = january, 1 = february, and so on.</p>"
           }
         ]
       },
@@ -388,7 +388,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The currently shown year."
+            "body": "<p>The currently shown year.</p>"
           }
         ]
       },
@@ -414,7 +414,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The date value of the widget."
+            "body": "<p>The date value of the widget.</p>"
           }
         ]
       },
@@ -541,7 +541,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           },
           {
             "name": "@description",
@@ -573,26 +573,26 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nWIDGET INTERNALS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  WIDGET INTERNALS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "id {String} ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "body": "id {String} ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "paramName": "id",
-            "description": " ID of the child control. If a # is used, the id is\nthe part in front of the #.",
+            "description": " ID of the child control. If a # is used, the id is\n   the part in front of the #.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "hash {String?undefined} If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "body": "hash {String?undefined} If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "paramName": "hash",
-            "description": " If a child control name contains a #,\nall text following the # will be the hash argument.",
+            "description": " If a child control name contains a #,\n   all text following the # will be the hash argument.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "String"
@@ -629,7 +629,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "apply methods"
+            "body": "<p>apply methods</p>"
           }
         ]
       },
@@ -654,11 +654,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nEVENT HANDLER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  EVENT HANDLER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Handler which stops the propagation of the tap event if\nthe navigation bar or calendar headers will be tapped."
+            "body": "<p>Handler which stops the propagation of the tap event if\n the navigation bar or calendar headers will be tapped.</p>"
           }
         ],
         "@param": [
@@ -689,7 +689,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a navigation button has been tapped."
+            "body": "<p>Event handler. Called when a navigation button has been tapped.</p>"
           }
         ],
         "@param": [
@@ -720,7 +720,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a day has been tapped."
+            "body": "<p>Event handler. Called when a day has been tapped.</p>"
           }
         ],
         "@param": [
@@ -751,7 +751,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a day has been double-tapped."
+            "body": "<p>Event handler. Called when a day has been double-tapped.</p>"
           }
         ]
       },
@@ -773,7 +773,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when a key was pressed."
+            "body": "<p>Event handler. Called when a key was pressed.</p>"
           }
         ],
         "@param": [
@@ -804,24 +804,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Shows a certain month."
+            "body": "<p>Shows a certain month.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "month {Integer ? null} the month to show (0 = january). If not set\nthe month will remain the same.",
+            "body": "month {Integer ? null} the month to show (0 = january). If not set\n      the month will remain the same.",
             "paramName": "month",
-            "description": " the month to show (0 = january). If not set\nthe month will remain the same.",
+            "description": " the month to show (0 = january). If not set\n      the month will remain the same.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "year {Integer ? null} the year to show. If not set the year will\nremain the same.",
+            "body": "year {Integer ? null} the year to show. If not set the year will\n      remain the same.",
             "paramName": "year",
-            "description": " the year to show. If not set the year will\nremain the same.",
+            "description": " the year to show. If not set the year will\n      remain the same.",
             "optional": true,
             "defaultValue": "null",
             "type": "Integer"
@@ -846,7 +846,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Used to handle the key events."
+            "body": "<p>Event handler. Used to handle the key events.</p>"
           }
         ],
         "@param": [
@@ -877,7 +877,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the date pane."
+            "body": "<p>Updates the date pane.</p>"
           }
         ]
       },
@@ -1265,7 +1265,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the execute event of the command."
+            "body": "<p>Handler for the execute event of the command.</p>"
           }
         ],
         "@param": [
@@ -1326,7 +1326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Locale change event handler"
+            "body": "<p>Locale change event handler</p>"
           }
         ],
         "@signature": [
@@ -1474,7 +1474,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message\nMark the message for translation."
+            "body": "<p>Translate a message\n Mark the message for translation.</p>"
           }
         ],
         "@param": [
@@ -1516,7 +1516,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1572,7 +1572,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a message with translation hint\nMark the messages for translation."
+            "body": "<p>Translate a message with translation hint\n Mark the messages for translation.</p>"
           }
         ],
         "@param": [
@@ -1621,7 +1621,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Translate a plural message with translation hint\nMark the messages for translation.\n\nDepending on the third argument the plural or the singular form is chosen."
+            "body": "<p>Translate a plural message with translation hint\n Mark the messages for translation.\n Depending on the third argument the plural or the singular form is chosen.</p>"
           }
         ],
         "@param": [
@@ -1684,7 +1684,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Mark the message for translation but return the original message."
+            "body": "<p>Mark the message for translation but return the original message.</p>"
           }
         ],
         "@param": [
@@ -5508,7 +5508,7 @@
     "location": {
       "start": {
         "line": 763,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 770,
@@ -5519,7 +5519,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

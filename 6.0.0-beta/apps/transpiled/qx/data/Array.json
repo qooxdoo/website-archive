@@ -25,11 +25,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The data array is a special array used in the data binding context of\nqooxdoo. It does not extend the native array of JavaScript but its a wrapper\nfor it. All the native methods are included in the implementation and it\nalso fires events if the content or the length of the array changes in\nany way. Also the <code>.length</code> property is available on the array.\n\nThis class does not need to be disposed, unless you set the autoDisposeItems\nproperty to true and want the items to be disposed."
+          "body": "<p>The data array is a special array used in the data binding context of\n qooxdoo. It does not extend the native array of JavaScript but its a wrapper\n for it. All the native methods are included in the implementation and it\n also fires events if the content or the length of the array changes in\n any way. Also the <code>.length</code> property is available on the array.\n This class does not need to be disposed, unless you set the autoDisposeItems\n property to true and want the items to be disposed.</p>"
         }
       ]
     }
@@ -39,7 +39,7 @@
     "location": {
       "start": {
         "line": 47,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 88,
@@ -50,15 +50,15 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Creates a new instance of an array."
+          "body": "<p>Creates a new instance of an array.</p>"
         }
       ],
       "@param": [
         {
           "name": "@param",
-          "body": "param {var} The parameter can be some types.<br/>\nWithout a parameter a new blank array will be created.<br/>\nIf there is more than one parameter is given, the parameter will be\nadded directly to the new array.<br/>\nIf the parameter is a number, a new Array with the given length will be\ncreated.<br/>\nIf the parameter is a JavaScript array, a new array containing the given\nelements will be created.",
+          "body": "param {var} The parameter can be some types.<br/>\n   Without a parameter a new blank array will be created.<br/>\n   If there is more than one parameter is given, the parameter will be\n   added directly to the new array.<br/>\n   If the parameter is a number, a new Array with the given length will be\n   created.<br/>\n   If the parameter is a JavaScript array, a new array containing the given\n   elements will be created.",
           "paramName": "param",
-          "description": " The parameter can be some types.<br/>\nWithout a parameter a new blank array will be created.<br/>\nIf there is more than one parameter is given, the parameter will be\nadded directly to the new array.<br/>\nIf the parameter is a number, a new Array with the given length will be\ncreated.<br/>\nIf the parameter is a JavaScript array, a new array containing the given\nelements will be created.",
+          "description": " The parameter can be some types.<br/>\n   Without a parameter a new blank array will be created.<br/>\n   If there is more than one parameter is given, the parameter will be\n   added directly to the new array.<br/>\n   If the parameter is a number, a new Array with the given length will be\n   created.<br/>\n   If the parameter is a JavaScript array, a new array containing the given\n   elements will be created.",
           "type": "var"
         }
       ]
@@ -80,7 +80,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Flag to set the dispose behavior of the array. If the property is set to\n<code>true</code>, the array will dispose its content on dispose, too."
+            "body": "<p>Flag to set the dispose behavior of the array. If the property is set to\n <code>true</code>, the array will dispose its content on dispose, too.</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The change event which will be fired if there is a change in the array.\nThe data contains a map with five key value pairs:\n<li>start: The start index of the change.</li>\n<li>end: The end index of the change.</li>\n<li>type: The type of the change as a String. This can be 'add',\n'remove', 'order' or 'add/remove'</li>\n<li>added: The items which has been added (as a JavaScript array)</li>\n<li>removed: The items which has been removed (as a JavaScript array)</li>"
+            "body": "<p>The change event which will be fired if there is a change in the array.\n The data contains a map with five key value pairs:\n <li>start: The start index of the change.</li>\n <li>end: The end index of the change.</li>\n <li>type: The type of the change as a String. This can be 'add',\n 'remove', 'order' or 'add/remove'</li>\n <li>added: The items which has been added (as a JavaScript array)</li>\n <li>removed: The items which has been removed (as a JavaScript array)</li></p>"
           }
         ]
       },
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The changeLength event will be fired every time the length of the\narray changes."
+            "body": "<p>The changeLength event will be fired every time the length of the\n array changes.</p>"
           }
         ]
       },
@@ -169,7 +169,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "private members"
+            "body": "<p>private members</p>"
           }
         ]
       },
@@ -191,15 +191,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Concatenates the current and the given array into a new one."
+            "body": "<p>Concatenates the current and the given array into a new one.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "array {qx.data.Array|Array} The javaScript array which should be concatenated\nto the current array.",
+            "body": "array {qx.data.Array|Array} The javaScript array which should be concatenated\n   to the current array.",
             "paramName": "array",
-            "description": " The javaScript array which should be concatenated\nto the current array.",
+            "description": " The javaScript array which should be concatenated\n   to the current array.",
             "type": [
               "qx.data.Array",
               "Array"
@@ -209,9 +209,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.data.Array} A new array containing the values of both former\narrays.",
+            "body": "{qx.data.Array} A new array containing the values of both former\n   arrays.",
             "type": "qx.data.Array",
-            "description": " A new array containing the values of both former\narrays."
+            "description": " A new array containing the values of both former\n   arrays."
           }
         ]
       },
@@ -233,15 +233,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the array as a string using the given connector string to\nconnect the values."
+            "body": "<p>Returns the array as a string using the given connector string to\n connect the values.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "connector {String} the string which should be used to past in\nbetween of the array values.",
+            "body": "connector {String} the string which should be used to past in\n  between of the array values.",
             "paramName": "connector",
-            "description": " the string which should be used to past in\nbetween of the array values.",
+            "description": " the string which should be used to past in\n  between of the array values.",
             "type": "String"
           }
         ],
@@ -272,7 +272,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes and returns the last element of the array.\nAn change event will be fired."
+            "body": "<p>Removes and returns the last element of the array.\n An change event will be fired.</p>"
           }
         ],
         "@return": [
@@ -302,15 +302,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds an element at the end of the array."
+            "body": "<p>Adds an element at the end of the array.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} Multiple elements. Every element will be added to\nthe end of the array. An change event will be fired.",
+            "body": "varargs {var} Multiple elements. Every element will be added to\n   the end of the array. An change event will be fired.",
             "paramName": "varargs",
-            "description": " Multiple elements. Every element will be added to\nthe end of the array. An change event will be fired.",
+            "description": " Multiple elements. Every element will be added to\n   the end of the array. An change event will be fired.",
             "type": "var"
           }
         ],
@@ -341,7 +341,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Reverses the order of the array. An change event will be fired."
+            "body": "<p>Reverses the order of the array. An change event will be fired.</p>"
           }
         ]
       },
@@ -363,7 +363,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the first element of the array and returns it. An change event\nwill be fired."
+            "body": "<p>Removes the first element of the array and returns it. An change event\n will be fired.</p>"
           }
         ],
         "@return": [
@@ -393,7 +393,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns a new array based on the range specified by the parameters."
+            "body": "<p>Returns a new array based on the range specified by the parameters.</p>"
           }
         ],
         "@param": [
@@ -406,9 +406,9 @@
           },
           {
             "name": "@param",
-            "body": "to {Number?null} The zero-based end index. <code>slice</code> extracts\nup to but not including <code>to</code>. If omitted, slice extracts to the\nend of the array.",
+            "body": "to {Number?null} The zero-based end index. <code>slice</code> extracts\n   up to but not including <code>to</code>. If omitted, slice extracts to the\n   end of the array.",
             "paramName": "to",
-            "description": " The zero-based end index. <code>slice</code> extracts\nup to but not including <code>to</code>. If omitted, slice extracts to the\nend of the array.",
+            "description": " The zero-based end index. <code>slice</code> extracts\n   up to but not including <code>to</code>. If omitted, slice extracts to the\n   end of the array.",
             "optional": true,
             "defaultValue": "null",
             "type": "Number"
@@ -441,7 +441,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Method to remove and add new elements to the array. A change event\nwill be fired for every removal or addition unless the array is\nidentical before and after splicing."
+            "body": "<p>Method to remove and add new elements to the array. A change event\n will be fired for every removal or addition unless the array is\n identical before and after splicing.</p>"
           }
         ],
         "@param": [
@@ -454,25 +454,25 @@
           },
           {
             "name": "@param",
-            "body": "amount {Integer} Defines number of elements which will be removed\nat the given position.",
+            "body": "amount {Integer} Defines number of elements which will be removed\n   at the given position.",
             "paramName": "amount",
-            "description": " Defines number of elements which will be removed\nat the given position.",
+            "description": " Defines number of elements which will be removed\n   at the given position.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "varargs {var} All following parameters will be added at the given\nposition to the array.",
+            "body": "varargs {var} All following parameters will be added at the given\n   position to the array.",
             "paramName": "varargs",
-            "description": " All following parameters will be added at the given\nposition to the array.",
+            "description": " All following parameters will be added at the given\n   position to the array.",
             "type": "var"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.data.Array} An data array containing the removed elements.\nKeep in to dispose this one, even if you don't use it!",
+            "body": "{qx.data.Array} An data array containing the removed elements.\n   Keep in to dispose this one, even if you don't use it!",
             "type": "qx.data.Array",
-            "description": " An data array containing the removed elements.\nKeep in to dispose this one, even if you don't use it!"
+            "description": " An data array containing the removed elements.\n   Keep in to dispose this one, even if you don't use it!"
           }
         ]
       },
@@ -498,7 +498,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Efficiently replaces the array with the contents of src; this will suppress the\nchange event if the array contents are the same, and will make sure that only\none change event is fired"
+            "body": "<p>Efficiently replaces the array with the contents of src; this will suppress the\n change event if the array contents are the same, and will make sure that only\n one change event is fired</p>"
           }
         ],
         "@param": [
@@ -532,15 +532,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sorts the array. If a function is given, this will be used to\ncompare the items. <code>changeBubble</code> event will only be fired,\nif sorting result differs from original array."
+            "body": "<p>Sorts the array. If a function is given, this will be used to\n compare the items. <code>changeBubble</code> event will only be fired,\n if sorting result differs from original array.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "func {Function} A compare function comparing two parameters and\nshould return a number.",
+            "body": "func {Function} A compare function comparing two parameters and\n   should return a number.",
             "paramName": "func",
-            "description": " A compare function comparing two parameters and\nshould return a number.",
+            "description": " A compare function comparing two parameters and\n   should return a number.",
             "type": "Function"
           }
         ]
@@ -563,7 +563,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Adds the given items to the beginning of the array. For every element,\na change event will be fired."
+            "body": "<p>Adds the given items to the beginning of the array. For every element,\n a change event will be fired.</p>"
           }
         ],
         "@param": [
@@ -602,7 +602,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the list data as native array. Beware of the fact that the\ninternal representation will be returned and any manipulation of that\ncan cause a misbehavior of the array. This method should only be used for\ndebugging purposes."
+            "body": "<p>Returns the list data as native array. Beware of the fact that the\n internal representation will be returned and any manipulation of that\n can cause a misbehavior of the array. This method should only be used for\n debugging purposes.</p>"
           }
         ],
         "@return": [
@@ -636,7 +636,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replacement function for the getting of the array value.\narray[0] should be array.getItem(0)."
+            "body": "<p>Replacement function for the getting of the array value.\n array[0] should be array.getItem(0).</p>"
           }
         ],
         "@param": [
@@ -679,7 +679,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Replacement function for the setting of an array value.\narray[0] = \"a\" should be array.setItem(0, \"a\").\nA change event will be fired if the value changes. Setting the same\nvalue again will not lead to a change event."
+            "body": "<p>Replacement function for the setting of an array value.\n array[0] = \"a\" should be array.setItem(0, \"a\").\n A change event will be fired if the value changes. Setting the same\n value again will not lead to a change event.</p>"
           }
         ],
         "@param": [
@@ -721,7 +721,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "This method returns the current length stored under .length on each\narray."
+            "body": "<p>This method returns the current length stored under .length on each\n array.</p>"
           }
         ],
         "@return": [
@@ -755,7 +755,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the index of the item in the array. If the item is not in the\narray, -1 will be returned."
+            "body": "<p>Returns the index of the item in the array. If the item is not in the\n array, -1 will be returned.</p>"
           }
         ],
         "@param": [
@@ -794,7 +794,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the last index of the item in the array. If the item is not in the\narray, -1 will be returned."
+            "body": "<p>Returns the last index of the item in the array. If the item is not in the\n array, -1 will be returned.</p>"
           }
         ],
         "@param": [
@@ -833,11 +833,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nIMPLEMENTATION OF THE QX.LANG.ARRAY METHODS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n   IMPLEMENTATION OF THE QX.LANG.ARRAY METHODS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Check if the given item is in the current array."
+            "body": "<p>Check if the given item is in the current array.</p>"
           }
         ],
         "@deprecated": [
@@ -886,7 +886,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check if the given item is in the current array."
+            "body": "<p>Check if the given item is in the current array.</p>"
           }
         ],
         "@param": [
@@ -925,7 +925,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Return a copy of the given arr"
+            "body": "<p>Return a copy of the given arr</p>"
           }
         ],
         "@return": [
@@ -955,7 +955,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element at a given position."
+            "body": "<p>Insert an element at a given position.</p>"
           }
         ],
         "@param": [
@@ -993,7 +993,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an item into the array before a given item."
+            "body": "<p>Insert an item into the array before a given item.</p>"
           }
         ],
         "@param": [
@@ -1031,7 +1031,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Insert an element into the array after a given item."
+            "body": "<p>Insert an element into the array after a given item.</p>"
           }
         ],
         "@param": [
@@ -1069,7 +1069,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove an element from the array at the given index."
+            "body": "<p>Remove an element from the array at the given index.</p>"
           }
         ],
         "@param": [
@@ -1108,7 +1108,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove all elements from the array."
+            "body": "<p>Remove all elements from the array.</p>"
           }
         ],
         "@return": [
@@ -1138,15 +1138,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Append the items of the given array."
+            "body": "<p>Append the items of the given array.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "array {Array|qx.data.IListData} The items of this array will\nbe appended.",
+            "body": "array {Array|qx.data.IListData} The items of this array will\n be appended.",
             "paramName": "array",
-            "description": " The items of this array will\nbe appended.",
+            "description": " The items of this array will\n be appended.",
             "type": [
               "Array",
               "qx.data.IListData"
@@ -1180,7 +1180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes all elements which are listed in the array."
+            "body": "<p>Removes all elements which are listed in the array.</p>"
           }
         ],
         "@param": [
@@ -1211,7 +1211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove the given item."
+            "body": "<p>Remove the given item.</p>"
           }
         ],
         "@param": [
@@ -1250,7 +1250,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check whether the given array has the same content as this.\nChecks only the equality of the arrays' content."
+            "body": "<p>Check whether the given array has the same content as this.\n Checks only the equality of the arrays' content.</p>"
           }
         ],
         "@param": [
@@ -1289,7 +1289,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the sum of all values in the array. Supports\nnumeric values only."
+            "body": "<p>Returns the sum of all values in the array. Supports\n numeric values only.</p>"
           }
         ],
         "@return": [
@@ -1319,15 +1319,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the highest value in the given array.\nSupports numeric values only."
+            "body": "<p>Returns the highest value in the given array.\n Supports numeric values only.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Number | null} The highest of all values or undefined if the\narray is empty.",
+            "body": "{Number | null} The highest of all values or undefined if the\n   array is empty.",
             "type": "Number | null",
-            "description": " The highest of all values or undefined if the\narray is empty."
+            "description": " The highest of all values or undefined if the\n   array is empty."
           }
         ]
       },
@@ -1349,15 +1349,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the lowest value in the array. Supports\nnumeric values only."
+            "body": "<p>Returns the lowest value in the array. Supports\n numeric values only.</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Number | null} The lowest of all values or undefined\nif the array is empty.",
+            "body": "{Number | null} The lowest of all values or undefined\n   if the array is empty.",
             "type": "Number | null",
-            "description": " The lowest of all values or undefined\nif the array is empty."
+            "description": " The lowest of all values or undefined\n   if the array is empty."
           }
         ]
       },
@@ -1379,15 +1379,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invokes the given function for every item in the array."
+            "body": "<p>Invokes the given function for every item in the array.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The function which will be call for every\nitem in the array. It will be invoked with three parameters:\nthe item, the index and the array itself.",
+            "body": "callback {Function} The function which will be call for every\n   item in the array. It will be invoked with three parameters:\n   the item, the index and the array itself.",
             "paramName": "callback",
-            "description": " The function which will be call for every\nitem in the array. It will be invoked with three parameters:\nthe item, the index and the array itself.",
+            "description": " The function which will be call for every\n   item in the array. It will be invoked with three parameters:\n   the item, the index and the array itself.",
             "type": "Function"
           },
           {
@@ -1418,19 +1418,19 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nAdditional JS1.6 methods\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  Additional JS1.6 methods\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Creates a new array with all elements that pass the test implemented by\nthe provided function. It returns a new data array instance so make sure\nto think about disposing it."
+            "body": "<p>Creates a new array with all elements that pass the test implemented by\n the provided function. It returns a new data array instance so make sure\n to think about disposing it.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
@@ -1446,9 +1446,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{qx.data.Array} A new array instance containing only the items\nwhich passed the test.",
+            "body": "{qx.data.Array} A new array instance containing only the items\n  which passed the test.",
             "type": "qx.data.Array",
-            "description": " A new array instance containing only the items\nwhich passed the test."
+            "description": " A new array instance containing only the items\n  which passed the test."
           }
         ]
       },
@@ -1470,15 +1470,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates a new array with the results of calling a provided function on every\nelement in this array. It returns a new data array instance so make sure\nto think about disposing it."
+            "body": "<p>Creates a new array with the results of calling a provided function on every\n element in this array. It returns a new data array instance so make sure\n to think about disposing it.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The mapping function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The mapping function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The mapping function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The mapping function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
@@ -1518,15 +1518,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tests whether any element in the array passes the test implemented by the\nprovided function."
+            "body": "<p>Tests whether any element in the array passes the test implemented by the\n provided function.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
@@ -1566,15 +1566,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Tests whether every element in the array passes the test implemented by the\nprovided function."
+            "body": "<p>Tests whether every element in the array passes the test implemented by the\n provided function.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The test function, which will be executed for every\nitem in the array. The function will have three arguments.\n<li><code>item</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The test function, which will be executed for every\n   item in the array. The function will have three arguments.\n   <li><code>item</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
@@ -1614,22 +1614,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply a function against an accumulator and each value of the array\n(from left-to-right) as to reduce it to a single value."
+            "body": "<p>Apply a function against an accumulator and each value of the array\n (from left-to-right) as to reduce it to a single value.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The accumulator function, which will be\nexecuted for every item in the array. The function will have four arguments.\n<li><code>previousItem</code>: the previous item</li>\n<li><code>currentItem</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The accumulator function, which will be\n   executed for every item in the array. The function will have four arguments.\n   <li><code>previousItem</code>: the previous item</li>\n   <li><code>currentItem</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The accumulator function, which will be\nexecuted for every item in the array. The function will have four arguments.\n<li><code>previousItem</code>: the previous item</li>\n<li><code>currentItem</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The accumulator function, which will be\n   executed for every item in the array. The function will have four arguments.\n   <li><code>previousItem</code>: the previous item</li>\n   <li><code>currentItem</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "initValue {var?undefined} Object to use as the first argument to the first\ncall of the callback.",
+            "body": "initValue {var?undefined} Object to use as the first argument to the first\n   call of the callback.",
             "paramName": "initValue",
-            "description": " Object to use as the first argument to the first\ncall of the callback.",
+            "description": " Object to use as the first argument to the first\n   call of the callback.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "var"
@@ -1662,22 +1662,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply a function against an accumulator and each value of the array\n(from right-to-left) as to reduce it to a single value."
+            "body": "<p>Apply a function against an accumulator and each value of the array\n (from right-to-left) as to reduce it to a single value.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} The accumulator function, which will be\nexecuted for every item in the array. The function will have four arguments.\n<li><code>previousItem</code>: the previous item</li>\n<li><code>currentItem</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "body": "callback {Function} The accumulator function, which will be\n   executed for every item in the array. The function will have four arguments.\n   <li><code>previousItem</code>: the previous item</li>\n   <li><code>currentItem</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "paramName": "callback",
-            "description": " The accumulator function, which will be\nexecuted for every item in the array. The function will have four arguments.\n<li><code>previousItem</code>: the previous item</li>\n<li><code>currentItem</code>: the current item in the array</li>\n<li><code>index</code>: the index of the current item</li>\n<li><code>array</code>: The native array instance, NOT the data array instance.</li>",
+            "description": " The accumulator function, which will be\n   executed for every item in the array. The function will have four arguments.\n   <li><code>previousItem</code>: the previous item</li>\n   <li><code>currentItem</code>: the current item in the array</li>\n   <li><code>index</code>: the index of the current item</li>\n   <li><code>array</code>: The native array instance, NOT the data array instance.</li>",
             "type": "Function"
           },
           {
             "name": "@param",
-            "body": "initValue {var?undefined} Object to use as the first argument to the first\ncall of the callback.",
+            "body": "initValue {var?undefined} Object to use as the first argument to the first\n   call of the callback.",
             "paramName": "initValue",
-            "description": " Object to use as the first argument to the first\ncall of the callback.",
+            "description": " Object to use as the first argument to the first\n   call of the callback.",
             "optional": true,
             "defaultValue": "undefined",
             "type": "var"
@@ -1710,11 +1710,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nINTERNAL HELPERS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  INTERNAL HELPERS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Internal function which updates the length property of the array.\nEvery time the length will be updated, a {@link #changeLength} data\nevent will be fired."
+            "body": "<p>Internal function which updates the length property of the array.\n Every time the length will be updated, a {@link #changeLength} data\n event will be fired.</p>"
           }
         ]
       },
@@ -1736,7 +1736,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to update the event propagation for a range of items."
+            "body": "<p>Helper to update the event propagation for a range of items.</p>"
           }
         ],
         "@param": [
@@ -1771,7 +1771,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Apply function for every property created with the\n{@link qx.data.marshal.Json} marshaler. It fires and\n{@link #changeBubble} event on every change. It also adds the chaining\nlistener if possible which is necessary for the bubbling of the events."
+            "body": "<p>Apply function for every property created with the\n {@link qx.data.marshal.Json} marshaler. It fires and\n {@link #changeBubble} event on every change. It also adds the chaining\n listener if possible which is necessary for the bubbling of the events.</p>"
           }
         ],
         "@param": [
@@ -1811,7 +1811,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Registers for the given parameters the changeBubble listener, if\npossible. It also removes the old listener, if an old item with\na changeBubble event is given."
+            "body": "<p>Registers for the given parameters the changeBubble listener, if\n possible. It also removes the old listener, if an old item with\n a changeBubble event is given.</p>"
           }
         ],
         "@param": [
@@ -1851,7 +1851,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Listener responsible for formating the name and firing the change event\nfor the changed property."
+            "body": "<p>Listener responsible for formating the name and firing the change event\n for the changed property.</p>"
           }
         ],
         "@param": [
@@ -1864,9 +1864,9 @@
           },
           {
             "name": "@param",
-            "body": "e {qx.event.type.Data} The date event fired by the property\nchange.",
+            "body": "e {qx.event.type.Data} The date event fired by the property\n   change.",
             "paramName": "e",
-            "description": " The date event fired by the property\nchange.",
+            "description": " The date event fired by the property\n   change.",
             "type": "qx.event.type.Data"
           }
         ]
@@ -2087,7 +2087,7 @@
     "location": {
       "start": {
         "line": 1121,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 1133,
@@ -2098,7 +2098,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2010 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2010 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Primitives for building trees and tree nodes.\n\nThe methods in this mixin are included directly in the SimpleTreeDataModel\nbut are also useful for other types of trees (not TreeVirtual) that need\nsimilar tree and node creation."
+          "body": "<p>Primitives for building trees and tree nodes.\n The methods in this mixin are included directly in the SimpleTreeDataModel\n but are also useful for other types of trees (not TreeVirtual) that need\n similar tree and node creation.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Primitive types of tree nodes"
+            "body": "<p>Primitive types of tree nodes</p>"
           }
         ]
       },
@@ -69,15 +69,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a node to the tree.\n\nNOTE: This method is for <b>internal use</b> and should not be called by\nusers of this class. There is no guarantee that the interface to this\nmethod will remain unchanged over time."
+            "body": "<p>Add a node to the tree.\n NOTE: This method is for <b>internal use</b> and should not be called by\n       users of this class. There is no guarantee that the interface to this\n       method will remain unchanged over time.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "nodeArr {Array|Map}\nThe array to which new nodes are to be added. See, however, the\nnodeId parameter. If nodeId values will be provided, then nodeArr can\nbe a map. The traditional TreeVirtual does not provide node ids, and\npasses an array for this parameter.",
+            "body": "nodeArr {Array|Map}\n   The array to which new nodes are to be added. See, however, the\n   nodeId parameter. If nodeId values will be provided, then nodeArr can\n   be a map. The traditional TreeVirtual does not provide node ids, and\n   passes an array for this parameter.",
             "paramName": "nodeArr",
-            "description": "\nThe array to which new nodes are to be added. See, however, the\nnodeId parameter. If nodeId values will be provided, then nodeArr can\nbe a map. The traditional TreeVirtual does not provide node ids, and\npasses an array for this parameter.",
+            "description": "\n   The array to which new nodes are to be added. See, however, the\n   nodeId parameter. If nodeId values will be provided, then nodeArr can\n   be a map. The traditional TreeVirtual does not provide node ids, and\n   passes an array for this parameter.",
             "type": [
               "Array",
               "Map"
@@ -85,58 +85,58 @@
           },
           {
             "name": "@param",
-            "body": "parentNodeId {Integer}\nThe node id of the parent of the node being added",
+            "body": "parentNodeId {Integer}\n   The node id of the parent of the node being added",
             "paramName": "parentNodeId",
-            "description": "\nThe node id of the parent of the node being added",
+            "description": "\n   The node id of the parent of the node being added",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "label {String}\nThe string to display as the label for this node",
+            "body": "label {String}\n   The string to display as the label for this node",
             "paramName": "label",
-            "description": "\nThe string to display as the label for this node",
+            "description": "\n   The string to display as the label for this node",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "bOpened {Boolean}\n<i>true</i> if the tree should be rendered in its opened state;\n<i>false</i> otherwise.",
+            "body": "bOpened {Boolean}\n   <i>true</i> if the tree should be rendered in its opened state;\n   <i>false</i> otherwise.",
             "paramName": "bOpened",
-            "description": "\n<i>true</i> if the tree should be rendered in its opened state;\n<i>false</i> otherwise.",
+            "description": "\n   <i>true</i> if the tree should be rendered in its opened state;\n   <i>false</i> otherwise.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "bHideOpenCloseButton {Boolean}\n<i>true</i> if the open/close button should be hidden (not displayed);\n</i>false</i> to display the open/close button for this node.",
+            "body": "bHideOpenCloseButton {Boolean}\n   <i>true</i> if the open/close button should be hidden (not displayed);\n   </i>false</i> to display the open/close button for this node.",
             "paramName": "bHideOpenCloseButton",
-            "description": "\n<i>true</i> if the open/close button should be hidden (not displayed);\n</i>false</i> to display the open/close button for this node.",
+            "description": "\n   <i>true</i> if the open/close button should be hidden (not displayed);\n   </i>false</i> to display the open/close button for this node.",
             "type": "Boolean"
           },
           {
             "name": "@param",
-            "body": "type {Integer}\nThe type of node being added.  The type determines whether children\nmay be added, and determines the default icons to use.  This\nparameter must be one of the following values:\n<dl>\n<dt>qx.ui.treevirtual.MTreePrimitive.Type.BRANCH</dt>\n<dd>\nThis node is a branch.  A branch node may have children.\n</dd>\n<dt>qx.ui.treevirtual.MTreePrimitive.Type.LEAF</dt>\n<dd>\nThis node is a leaf, and may not have children\n</dd>\n</dl>",
+            "body": "type {Integer}\n   The type of node being added.  The type determines whether children\n   may be added, and determines the default icons to use.  This\n   parameter must be one of the following values:\n   <dl>\n     <dt>qx.ui.treevirtual.MTreePrimitive.Type.BRANCH</dt>\n     <dd>\n       This node is a branch.  A branch node may have children.\n     </dd>\n     <dt>qx.ui.treevirtual.MTreePrimitive.Type.LEAF</dt>\n     <dd>\n       This node is a leaf, and may not have children\n     </dd>\n   </dl>",
             "paramName": "type",
-            "description": "\nThe type of node being added.  The type determines whether children\nmay be added, and determines the default icons to use.  This\nparameter must be one of the following values:\n<dl>\n<dt>qx.ui.treevirtual.MTreePrimitive.Type.BRANCH</dt>\n<dd>\nThis node is a branch.  A branch node may have children.\n</dd>\n<dt>qx.ui.treevirtual.MTreePrimitive.Type.LEAF</dt>\n<dd>\nThis node is a leaf, and may not have children\n</dd>\n</dl>",
+            "description": "\n   The type of node being added.  The type determines whether children\n   may be added, and determines the default icons to use.  This\n   parameter must be one of the following values:\n   <dl>\n     <dt>qx.ui.treevirtual.MTreePrimitive.Type.BRANCH</dt>\n     <dd>\n       This node is a branch.  A branch node may have children.\n     </dd>\n     <dt>qx.ui.treevirtual.MTreePrimitive.Type.LEAF</dt>\n     <dd>\n       This node is a leaf, and may not have children\n     </dd>\n   </dl>",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "icon {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "body": "icon {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "paramName": "icon",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is not a selected node.",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is not a selected node.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "iconSelected {String}\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.\n<p>\nNOTE: As of 13 Mar 2009, this feature is disabled by default, by\nvirtue of the fact that the tree's \"alwaysUpdateCells\" property\nhas a setting of 'false' now instead of 'true'. Setting this\nproperty to true allows the icon to change upon selection, but\ncauses problems such as single clicks not always selecting a\nrow, and, in IE, double click operations failing\ncompletely. (For more information, see bugs 605 and 2021.) To\nre-enable the option to have an unique icon that is displayed\nwhen the node is selected, issue\n<code>tree.setAlwaysUpdateCells(true);</code>",
+            "body": "iconSelected {String}\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.\n   <p>\n   NOTE: As of 13 Mar 2009, this feature is disabled by default, by\n         virtue of the fact that the tree's \"alwaysUpdateCells\" property\n         has a setting of 'false' now instead of 'true'. Setting this\n         property to true allows the icon to change upon selection, but\n         causes problems such as single clicks not always selecting a\n         row, and, in IE, double click operations failing\n         completely. (For more information, see bugs 605 and 2021.) To\n         re-enable the option to have an unique icon that is displayed\n         when the node is selected, issue\n         <code>tree.setAlwaysUpdateCells(true);</code>",
             "paramName": "iconSelected",
-            "description": "\nThe relative (subject to alias expansion) or full path of the icon to\ndisplay for this node when it is a selected node.\n<p>\nNOTE: As of 13 Mar 2009, this feature is disabled by default, by\nvirtue of the fact that the tree's \"alwaysUpdateCells\" property\nhas a setting of 'false' now instead of 'true'. Setting this\nproperty to true allows the icon to change upon selection, but\ncauses problems such as single clicks not always selecting a\nrow, and, in IE, double click operations failing\ncompletely. (For more information, see bugs 605 and 2021.) To\nre-enable the option to have an unique icon that is displayed\nwhen the node is selected, issue\n<code>tree.setAlwaysUpdateCells(true);</code>",
+            "description": "\n   The relative (subject to alias expansion) or full path of the icon to\n   display for this node when it is a selected node.\n   <p>\n   NOTE: As of 13 Mar 2009, this feature is disabled by default, by\n         virtue of the fact that the tree's \"alwaysUpdateCells\" property\n         has a setting of 'false' now instead of 'true'. Setting this\n         property to true allows the icon to change upon selection, but\n         causes problems such as single clicks not always selecting a\n         row, and, in IE, double click operations failing\n         completely. (For more information, see bugs 605 and 2021.) To\n         re-enable the option to have an unique icon that is displayed\n         when the node is selected, issue\n         <code>tree.setAlwaysUpdateCells(true);</code>",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "nodeId {Integer?}\nThe requested node id for this new node. If not provided, nodeArr\nwill be assumed to be an array, not a map, and the next available\nindex of the array will be used. If it is provided, then nodeArr may\nbe either an array or a map.",
+            "body": "nodeId {Integer?}\n   The requested node id for this new node. If not provided, nodeArr\n   will be assumed to be an array, not a map, and the next available\n   index of the array will be used. If it is provided, then nodeArr may\n   be either an array or a map.",
             "paramName": "nodeId",
-            "description": "\nThe requested node id for this new node. If not provided, nodeArr\nwill be assumed to be an array, not a map, and the next available\nindex of the array will be used. If it is provided, then nodeArr may\nbe either an array or a map.",
+            "description": "\n   The requested node id for this new node. If not provided, nodeArr\n   will be assumed to be an array, not a map, and the next available\n   index of the array will be used. If it is provided, then nodeArr may\n   be either an array or a map.",
             "optional": true,
             "type": "Integer"
           }
@@ -182,15 +182,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "An empty tree contains only this one node"
+            "body": "<p>An empty tree contains only this one node</p>"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nReturns a root node with all relevant fields filled.",
+            "body": "{Map}\n   Returns a root node with all relevant fields filled.",
             "type": "Map",
-            "description": "\nReturns a root node with all relevant fields filled."
+            "description": "\n   Returns a root node with all relevant fields filled."
           }
         ]
       },

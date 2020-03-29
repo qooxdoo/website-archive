@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n2008 Derrell Lipman\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTil Schneider (til132)\nCarsten Lergenmueller (carstenl)\nDerrell Lipman (derrell)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n     2008 Derrell Lipman\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Til Schneider (til132)\n Carsten Lergenmueller (carstenl)\n Derrell Lipman (derrell)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Table Cell Boolean Renderer."
+          "body": "<p>Table Cell Boolean Renderer.</p>"
         }
       ]
     }
@@ -35,13 +35,14 @@
     "location": {
       "start": {
         "line": 30,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "properties": {
     "allowToggle": {
@@ -59,7 +60,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether to add code which will toggle the checkbox on/off.  (There is\nnot yet code here to generate an event when this occurs, so it's not\nyet very useful.)"
+            "body": "<p>Whether to add code which will toggle the checkbox on/off.  (There is\n not yet code here to generate an event when this occurs, so it's not\n yet very useful.)</p>"
           }
         ]
       },
@@ -214,7 +215,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resolve the boolean images using the alias and resource manager."
+            "body": "<p>Resolve the boolean images using the alias and resource manager.</p>"
           }
         ]
       },
@@ -236,24 +237,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Map}\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "body": "cellInfo {Map}\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "paramName": "cellInfo",
-            "description": "\nInformation about the cell being renderered, including:\n<ul>\n<li>state</li>\n<li>rowDiv</li>\n<li>stylesheet</li>\n<li>element</li>\n<li>dataIndex</li>\n<li>cellData</li>\n<li>height</li>\n</ul>",
+            "description": "\n   Information about the cell being renderered, including:\n   <ul>\n     <li>state</li>\n     <li>rowDiv</li>\n     <li>stylesheet</li>\n     <li>element</li>\n     <li>dataIndex</li>\n     <li>cellData</li>\n     <li>height</li>\n   </ul>",
             "type": "Map"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{Map}\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>",
+            "body": "{Map}\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>",
             "type": "Map",
-            "description": "\nThe returned map should contain at least the <i>url</i> field, but\nmay contain any others of these:\n\n<dl>\n<dt>\nurl\n</dt>\n<dd>\nThe URL of the image to be displayed\n</dd>\n\n<dt>\nimageWidth\n</dt>\n<dd>\nThe width at which the image should be displayed\n</dd>\n\n<dt>\nimageHeight\n</dt>\n<dd>\nThe height at which the image should be displayed\n</dd>\n\n<dt>\nextras\n</dt>\n<dd>\nAny extra attributes to be include in the 'image' tag.\n</dd>\n</dl>"
+            "description": "\n   The returned map should contain at least the <i>url</i> field, but\n   may contain any others of these:\n   <dl>\n     <dt>\n       url\n     </dt>\n     <dd>\n       The URL of the image to be displayed\n     </dd>\n     <dt>\n       imageWidth\n     </dt>\n     <dd>\n       The width at which the image should be displayed\n     </dd>\n     <dt>\n       imageHeight\n     </dt>\n     <dd>\n       The height at which the image should be displayed\n     </dd>\n     <dt>\n       extras\n     </dt>\n     <dd>\n       Any extra attributes to be include in the 'image' tag.\n     </dd>\n   </dl>"
           }
         ]
       },
@@ -279,24 +280,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "cellInfo {Object}\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "body": "cellInfo {Object}\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "paramName": "cellInfo",
-            "description": "\nSee {@link qx.ui.progressive.renderer.table.cell.Abstract} class\ndescription for details",
+            "description": "\n   See {@link qx.ui.progressive.renderer.table.cell.Abstract} class\n   description for details",
             "type": "Object"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nThe style characteristics to be applied to this cell.",
+            "body": "{String}\n   The style characteristics to be applied to this cell.",
             "type": "qx.ui.progressive.renderer.table.cell.String",
-            "description": "\nThe style characteristics to be applied to this cell."
+            "description": "\n   The style characteristics to be applied to this cell."
           }
         ]
       },
@@ -523,13 +524,14 @@
     "location": {
       "start": {
         "line": 191,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 200,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

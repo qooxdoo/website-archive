@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2007-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2007-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "A TestSuite is a collection of test functions, classes and other test suites,\nwhich should be run together."
+          "body": "<p>A TestSuite is a collection of test functions, classes and other test suites,\n which should be run together.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 33,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 42,
@@ -52,9 +52,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "testClassOrNamespace {var} Either a string with the name of the test\nclass or test namespace or a reference to the test class or namespace.\nAll test in the given class/namespace will be added to the suite.",
+          "body": "testClassOrNamespace {var} Either a string with the name of the test\n    class or test namespace or a reference to the test class or namespace.\n    All test in the given class/namespace will be added to the suite.",
           "paramName": "testClassOrNamespace",
-          "description": " Either a string with the name of the test\nclass or test namespace or a reference to the test class or namespace.\nAll test in the given class/namespace will be added to the suite.",
+          "description": " Either a string with the name of the test\n    class or test namespace or a reference to the test class or namespace.\n    All test in the given class/namespace will be added to the suite.",
           "type": "var"
         }
       ]
@@ -76,7 +76,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a test class or namespace to the suite"
+            "body": "<p>Add a test class or namespace to the suite</p>"
           }
         ],
         "@lint": [
@@ -88,9 +88,9 @@
         "@param": [
           {
             "name": "@param",
-            "body": "testClassOrNamespace {var} Either a string with the name of the test\nclass or test namespace or a reference to the test class or namespace.\nAll test in the given class/namespace will be added to the suite.",
+            "body": "testClassOrNamespace {var} Either a string with the name of the test\n    class or test namespace or a reference to the test class or namespace.\n    All test in the given class/namespace will be added to the suite.",
             "paramName": "testClassOrNamespace",
-            "description": " Either a string with the name of the test\nclass or test namespace or a reference to the test class or namespace.\nAll test in the given class/namespace will be added to the suite.",
+            "description": " Either a string with the name of the test\n    class or test namespace or a reference to the test class or namespace.\n    All test in the given class/namespace will be added to the suite.",
             "type": "var"
           }
         ]
@@ -113,7 +113,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add all tests from the given namespace to the suite"
+            "body": "<p>Add all tests from the given namespace to the suite</p>"
           }
         ],
         "@param": [
@@ -144,7 +144,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Add a test class to the suite"
+            "body": "<p>Add a test class to the suite</p>"
           }
         ],
         "@param": [
@@ -175,7 +175,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a list of all test classes in the suite"
+            "body": "<p>Get a list of all test classes in the suite</p>"
           }
         ],
         "@return": [

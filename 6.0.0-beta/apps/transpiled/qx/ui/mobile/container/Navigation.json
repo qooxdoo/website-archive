@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTino Butz (tbtz)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tino Butz (tbtz)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "The navigation controller includes already a {@link qx.ui.mobile.navigationbar.NavigationBar}\nand a {@link qx.ui.mobile.container.Composite} container with a {@link qx.ui.mobile.layout.Card} layout.\nAll widgets that implement the {@link qx.ui.mobile.container.INavigation}\ninterface can be added to the container. The added widget provide the title\nwidget and the left/right container, which will be automatically merged into\nnavigation bar.\n\n*Example*\n\nHere is a little example of how to use the widget.\n\n<pre class='javascript'>\nvar container = new qx.ui.mobile.container.Navigation();\nthis.getRoot(container);\nvar page = new qx.ui.mobile.page.NavigationPage();\ncontainer.add(page);\npage.show();\n</pre>"
+          "body": "<p>The navigation controller includes already a {@link qx.ui.mobile.navigationbar.NavigationBar}\n and a {@link qx.ui.mobile.container.Composite} container with a {@link qx.ui.mobile.layout.Card} layout.\n All widgets that implement the {@link qx.ui.mobile.container.INavigation}\n interface can be added to the container. The added widget provide the title\n widget and the left/right container, which will be automatically merged into\n navigation bar.\n<em>Example</em>\n Here is a little example of how to use the widget.\n </p>\n<pre class='javascript'>\n   var container = new qx.ui.mobile.container.Navigation();\n   this.getRoot(container);\n   var page = new qx.ui.mobile.page.NavigationPage();\n   container.add(page);\n   page.show();\n </pre>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 50,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 61,
@@ -46,7 +46,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nCONSTRUCTOR\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n CONSTRUCTOR\n**********************************************************************\n</code></pre>"
         }
       ]
     }
@@ -67,7 +67,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ]
       },
@@ -114,7 +114,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when the navigation bar gets updated"
+            "body": "<p>Fired when the navigation bar gets updated</p>"
           }
         ]
       },
@@ -180,7 +180,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -225,7 +225,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@param": [
@@ -261,7 +261,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the content container. Add all your widgets to this container."
+            "body": "<p>Returns the content container. Add all your widgets to this container.</p>"
           }
         ],
         "@return": [
@@ -291,7 +291,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the assigned card layout."
+            "body": "<p>Returns the assigned card layout.</p>"
           }
         ],
         "@return": [
@@ -326,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the navigation bar."
+            "body": "<p>Returns the navigation bar.</p>"
           }
         ],
         "@return": [
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the content container."
+            "body": "<p>Creates the content container.</p>"
           }
         ],
         "@return": [
@@ -386,7 +386,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the \"animationStart\" event on the layout."
+            "body": "<p>Handler for the \"animationStart\" event on the layout.</p>"
           }
         ]
       },
@@ -408,7 +408,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Handler for the \"animationEnd\" event on the layout."
+            "body": "<p>Handler for the \"animationEnd\" event on the layout.</p>"
           }
         ]
       },
@@ -430,7 +430,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler. Called when the \"updateLayout\" event occurs."
+            "body": "<p>Event handler. Called when the \"updateLayout\" event occurs.</p>"
           }
         ],
         "@param": [
@@ -461,7 +461,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Updates the navigation bar depending on the set widget."
+            "body": "<p>Updates the navigation bar depending on the set widget.</p>"
           }
         ],
         "@param": [
@@ -492,7 +492,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Creates the navigation bar."
+            "body": "<p>Creates the navigation bar.</p>"
           }
         ],
         "@return": [
@@ -1561,13 +1561,14 @@
     "location": {
       "start": {
         "line": 256,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 263,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin blocks events and can be included into all widgets.\n\nThe {@link #block} and {@link #unblock} methods provided by this mixin can be used\nto block any event from the widget. When blocked,\nthe blocker widget overlays the widget to block, including the padding area.\n\nThe ({@link #blockContent} method can be used to block child widgets with a\nzIndex below a certain value."
+          "body": "<p>This mixin blocks events and can be included into all widgets.\n The {@link #block} and {@link #unblock} methods provided by this mixin can be used\n to block any event from the widget. When blocked,\n the blocker widget overlays the widget to block, including the padding area.\n The ({@link #blockContent} method can be used to block child widgets with a\n zIndex below a certain value.</p>"
         }
       ]
     }
@@ -77,7 +77,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Template method for creating the blocker item."
+            "body": "<p>Template method for creating the blocker item.</p>"
           }
         ],
         "@return": [
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -132,7 +132,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block all events from this widget by placing a transparent overlay widget,\nwhich receives all events, exactly over the widget."
+            "body": "<p>Block all events from this widget by placing a transparent overlay widget,\n which receives all events, exactly over the widget.</p>"
           }
         ]
       },
@@ -179,7 +179,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the widget is blocked."
+            "body": "<p>Returns whether the widget is blocked.</p>"
           }
         ],
         "@return": [
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblock the widget blocked by {@link #block}, but it takes care of\nthe amount of {@link #block} calls. The blocker is only removed if\nthe number of {@link #unblock} calls is identical to {@link #block} calls."
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it takes care of\n the amount of {@link #block} calls. The blocker is only removed if\n the number of {@link #unblock} calls is identical to {@link #block} calls.</p>"
           }
         ]
       },
@@ -231,7 +231,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Unblock the widget blocked by {@link #block}, but it doesn't take care of\nthe amount of {@link #block} calls. The blocker is directly removed."
+            "body": "<p>Unblock the widget blocked by {@link #block}, but it doesn't take care of\n the amount of {@link #block} calls. The blocker is directly removed.</p>"
           }
         ]
       },
@@ -253,15 +253,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Block direct child widgets with a zIndex below <code>zIndex</code>"
+            "body": "<p>Block direct child widgets with a zIndex below <code>zIndex</code></p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "zIndex {Integer} All child widgets with a zIndex below this value\nwill be blocked",
+            "body": "zIndex {Integer} All child widgets with a zIndex below this value\n     will be blocked",
             "paramName": "zIndex",
-            "description": " All child widgets with a zIndex below this value\nwill be blocked",
+            "description": " All child widgets with a zIndex below this value\n     will be blocked",
             "type": "Integer"
           }
         ]
@@ -284,7 +284,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the blocker"
+            "body": "<p>Get the blocker</p>"
           }
         ],
         "@return": [
@@ -436,13 +436,14 @@
     "location": {
       "start": {
         "line": 151,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 153,
         "column": 3
       }
-    }
+    },
+    "jsdoc": {}
   },
   "descendants": []
 }

@@ -9,11 +9,11 @@
   "clazz": {
     "location": {
       "start": {
-        "line": 52,
+        "line": 51,
         "column": 0
       },
       "end": {
-        "line": 185,
+        "line": 184,
         "column": 3
       }
     },
@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2014 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nCajus Pollmeier (cajus)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2014 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Cajus Pollmeier (cajus)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "EXPERIMENTAL!\n\nThis class offers a constant API over the Fullscreen Spec:\nhttp://www.w3.org/TR/fullscreen/\n\nIt forwards all the browsers support if supported.\n\n*Example*\n\n<pre class=\"javascript\">\nvar fs = qx.bom.FullScreen.getInstance();\n\nvar button = new qx.ui.form.Button(\"Toggle fullscreen\");\nbutton.addListener(\"execute\", function() {\nif (fs.isFullScreen()) {\nfs.cancel();\n} else {\nfs.request();\n}\n});\n\n// Enable button if toggling is supported\nbutton.setEnabled(qx.core.Environment.get(\"html.fullscreen\"));\n\n</pre>\n\n*Note*\n\nA fullscreen request will only be handled from within an interactive\nevent handler. So there is most likely a mouse or key event involved\nto trigger it properly."
+          "body": "<p>This class offers a constant API over the Fullscreen Spec:\n http://www.w3.org/TR/fullscreen/\n It forwards all the browsers support if supported.\n<em>Example</em>\n </p>\n<pre class=\"javascript\">\n var fs = qx.bom.FullScreen.getInstance();\n var button = new qx.ui.form.Button(\"Toggle fullscreen\");\n button.addListener(\"execute\", function() {\n   if (fs.isFullScreen()) {\n     fs.cancel();\n   } else {\n     fs.request();\n   }\n });\n\n button.setEnabled(qx.core.Environment.get(\"html.fullscreen\"));\n </pre>\n<p><em>Note</em>\n A fullscreen request will only be handled from within an interactive\n event handler. So there is most likely a mouse or key event involved\n to trigger it properly.</p>"
         }
       ]
     }
@@ -35,11 +35,11 @@
     "getInstance": {
       "location": {
         "start": {
-          "line": 62,
+          "line": 61,
           "column": 4
         },
         "end": {
-          "line": 67,
+          "line": 66,
           "column": 5
         }
       },
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get an instance of the FullScreen object using the default document."
+            "body": "<p>Get an instance of the FullScreen object using the default document.</p>"
           }
         ],
         "@return": [
@@ -66,11 +66,11 @@
   "construct": {
     "location": {
       "start": {
-        "line": 75,
-        "column": 2
+        "line": 74,
+        "column": 14
       },
       "end": {
-        "line": 85,
+        "line": 84,
         "column": 3
       }
     },
@@ -97,11 +97,11 @@
     "change": {
       "location": {
         "start": {
-          "line": 92,
+          "line": 91,
           "column": 4
         },
         "end": {
-          "line": 92,
+          "line": 91,
           "column": 22
         }
       },
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "The change event for the fullscreen mode."
+            "body": "<p>The change event for the fullscreen mode.</p>"
           }
         ]
       },
@@ -121,11 +121,11 @@
     "__doc": {
       "location": {
         "start": {
-          "line": 98,
+          "line": 97,
           "column": 4
         },
         "end": {
-          "line": 98,
+          "line": 97,
           "column": 16
         }
       },
@@ -135,11 +135,11 @@
     "__fullscreenElementAttr": {
       "location": {
         "start": {
-          "line": 99,
+          "line": 98,
           "column": 4
         },
         "end": {
-          "line": 99,
+          "line": 98,
           "column": 49
         }
       },
@@ -149,11 +149,11 @@
     "__requestMethodName": {
       "location": {
         "start": {
-          "line": 100,
+          "line": 99,
           "column": 4
         },
         "end": {
-          "line": 100,
+          "line": 99,
           "column": 45
         }
       },
@@ -163,11 +163,11 @@
     "__cancelMethodName": {
       "location": {
         "start": {
-          "line": 101,
+          "line": 100,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 100,
           "column": 43
         }
       },
@@ -177,11 +177,11 @@
     "__eventName": {
       "location": {
         "start": {
-          "line": 102,
+          "line": 101,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 101,
           "column": 36
         }
       },
@@ -191,11 +191,11 @@
     "__checkAttributeNames": {
       "location": {
         "start": {
-          "line": 110,
+          "line": 109,
           "column": 4
         },
         "end": {
-          "line": 146,
+          "line": 145,
           "column": 5
         }
       },
@@ -203,7 +203,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper to feature check the attribute names and the event name.\nAs the event can not be detected using the on<name> attribute, we need\nto guess the event name by checking for the hidden attribute."
+            "body": "<p>Internal helper to feature check the attribute names and the event name.\n As the event can not be detected using the on<name> attribute, we need\n to guess the event name by checking for the hidden attribute.</p>"
           }
         ]
       },
@@ -213,11 +213,11 @@
     "isFullScreen": {
       "location": {
         "start": {
-          "line": 155,
+          "line": 154,
           "column": 4
         },
         "end": {
-          "line": 158,
+          "line": 157,
           "column": 5
         }
       },
@@ -225,7 +225,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns whether the page is shown in fullscreen mode or not. If we\ncan not detect it, <code>false</code> will always be returned."
+            "body": "<p>Returns whether the page is shown in fullscreen mode or not. If we\n can not detect it, <code>false</code> will always be returned.</p>"
           }
         ],
         "@return": [
@@ -243,11 +243,11 @@
     "request": {
       "location": {
         "start": {
-          "line": 169,
+          "line": 168,
           "column": 4
         },
         "end": {
-          "line": 173,
+          "line": 172,
           "column": 5
         }
       },
@@ -255,7 +255,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Request the page to be shown in fullscreen mode. Note that this\nis only possible when called from within an interactive event\nhandler.\n\nIt's also worth a note that the user may deny fullscreen mode,\nso there is no guarantee that it really worked."
+            "body": "<p>Request the page to be shown in fullscreen mode. Note that this\n is only possible when called from within an interactive event\n handler.\n It's also worth a note that the user may deny fullscreen mode,\n so there is no guarantee that it really worked.</p>"
           }
         ]
       },
@@ -265,11 +265,11 @@
     "cancel": {
       "location": {
         "start": {
-          "line": 179,
+          "line": 178,
           "column": 4
         },
         "end": {
-          "line": 183,
+          "line": 182,
           "column": 5
         }
       },
@@ -277,7 +277,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "End the fullscreen mode."
+            "body": "<p>End the fullscreen mode.</p>"
           }
         ]
       },

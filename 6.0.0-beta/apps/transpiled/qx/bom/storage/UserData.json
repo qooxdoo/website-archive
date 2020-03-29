@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Fallback storage implementation usable in IE browsers. It is recommended to use\nthese implementation only in IE < 8 because IE >= 8 supports\n{@link qx.bom.storage.Web}."
+          "body": "<p>Fallback storage implementation usable in IE browsers. It is recommended to use\n these implementation only in IE < 8 because IE >= 8 supports\n {@link qx.bom.storage.Web}.</p>"
         }
       ],
       "@require": [
@@ -105,7 +105,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "global id used as key for the storage"
+            "body": "<p>global id used as key for the storage</p>"
           }
         ]
       },
@@ -127,7 +127,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an instance of {@link qx.bom.storage.UserData} used to store\ndata persistent."
+            "body": "<p>Returns an instance of {@link qx.bom.storage.UserData} used to store\n data persistent.</p>"
           }
         ],
         "@return": [
@@ -157,7 +157,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns an instance of {@link qx.bom.storage.UserData} used to store\ndata persistent."
+            "body": "<p>Returns an instance of {@link qx.bom.storage.UserData} used to store\n data persistent.</p>"
           }
         ],
         "@return": [
@@ -177,7 +177,7 @@
     "location": {
       "start": {
         "line": 73,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 98,
@@ -188,7 +188,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "Create a new instance. Usually, you should take the static\naccessors to get your instance."
+          "body": "<p>Create a new instance. Usually, you should take the static\n accessors to get your instance.</p>"
         }
       ],
       "@param": [
@@ -246,7 +246,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "storage which holds the key and the value"
+            "body": "<p>storage which holds the key and the value</p>"
           }
         ]
       },
@@ -268,7 +268,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "reference store which holds the key and the key used to store"
+            "body": "<p>reference store which holds the key and the key used to store</p>"
           }
         ]
       },
@@ -290,7 +290,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the map used to keep a in memory copy of the stored data."
+            "body": "<p>Returns the map used to keep a in memory copy of the stored data.</p>"
           }
         ],
         "@return": [
@@ -326,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the amount of key-value pairs stored."
+            "body": "<p>Returns the amount of key-value pairs stored.</p>"
           }
         ],
         "@return": [
@@ -356,7 +356,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Store an item in the storage."
+            "body": "<p>Store an item in the storage.</p>"
           }
         ],
         "@param": [
@@ -394,7 +394,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the stored item."
+            "body": "<p>Returns the stored item.</p>"
           }
         ],
         "@param": [
@@ -433,7 +433,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes an item form the storage."
+            "body": "<p>Removes an item form the storage.</p>"
           }
         ],
         "@param": [
@@ -464,7 +464,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Deletes every stored item in the storage."
+            "body": "<p>Deletes every stored item in the storage.</p>"
           }
         ]
       },
@@ -486,7 +486,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the named key at the given index."
+            "body": "<p>Returns the named key at the given index.</p>"
           }
         ],
         "@param": [
@@ -525,15 +525,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper to access every stored item."
+            "body": "<p>Helper to access every stored item.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "body": "callback {Function} A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "paramName": "callback",
-            "description": " A function which will be called for every item.\nThe function will have two arguments, first the key and second the value\nof the stored data.",
+            "description": " A function which will be called for every item.\n   The function will have two arguments, first the key and second the value\n    of the stored data.",
             "type": "Function"
           },
           {

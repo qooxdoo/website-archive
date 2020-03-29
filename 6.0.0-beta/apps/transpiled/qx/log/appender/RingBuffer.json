@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2006 STZ-IDA, Germany, http://www.stz-ida.de\n2009 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nCarsten Lergenmueller (carstenl)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2006 STZ-IDA, Germany, http://www.stz-ida.de\n     2009 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Carsten Lergenmueller (carstenl)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "An appender that writes all messages to a memory container. The messages\ncan be retrieved later, f. i. when an error dialog pops up and the question\narises what actions have caused the error.\n\nA mark feature also exists which can be used to remember a point in time.\nWhen retrieving log events, it is possible to get only those events\nafter the marked time. This is useful if data from the buffer is extracted\nand f. i. sent to a logging system. Whenever this happens, a mark() call\ncan be used so that the next extraction will only get new data."
+          "body": "<p>An appender that writes all messages to a memory container. The messages\n can be retrieved later, f. i. when an error dialog pops up and the question\n arises what actions have caused the error.\n A mark feature also exists which can be used to remember a point in time.\n When retrieving log events, it is possible to get only those events\n after the marked time. This is useful if data from the buffer is extracted\n and f. i. sent to a logging system. Whenever this happens, a mark() call\n can be used so that the next extraction will only get new data.</p>"
         }
       ]
     }
@@ -35,7 +35,7 @@
     "location": {
       "start": {
         "line": 39,
-        "column": 2
+        "column": 14
       },
       "end": {
         "line": 41,
@@ -78,7 +78,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set the maximum number of messages to hold. If null the number of\nmessages is not limited.\n\nWarning: Changing this property will clear the events logged so far."
+            "body": "<p>Set the maximum number of messages to hold. If null the number of\n messages is not limited.\n Warning: Changing this property will clear the events logged so far.</p>"
           }
         ],
         "@param": [
@@ -109,7 +109,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get the maximum number of messages to hold"
+            "body": "<p>Get the maximum number of messages to hold</p>"
           }
         ],
         "@return": [
@@ -139,7 +139,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Processes a single log entry"
+            "body": "<p>Processes a single log entry</p>"
           }
         ],
         "@param": [
@@ -170,7 +170,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns all stored log events"
+            "body": "<p>Returns all stored log events</p>"
           }
         ],
         "@return": [
@@ -200,22 +200,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns log events which have been logged previously."
+            "body": "<p>Returns log events which have been logged previously.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "count {Integer} The number of events to retrieve. If there are\nmore events than the given count, the oldest ones will not be returned.",
+            "body": "count {Integer} The number of events to retrieve. If there are\n    more events than the given count, the oldest ones will not be returned.",
             "paramName": "count",
-            "description": " The number of events to retrieve. If there are\nmore events than the given count, the oldest ones will not be returned.",
+            "description": " The number of events to retrieve. If there are\n    more events than the given count, the oldest ones will not be returned.",
             "type": "Integer"
           },
           {
             "name": "@param",
-            "body": "startingFromMark {Boolean ? false} If true, only entries since the last call to mark()\nwill be returned",
+            "body": "startingFromMark {Boolean ? false} If true, only entries since the last call to mark()\n                                           will be returned",
             "paramName": "startingFromMark",
-            "description": " If true, only entries since the last call to mark()\nwill be returned",
+            "description": " If true, only entries since the last call to mark()\n                                           will be returned",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -248,7 +248,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Clears the log history"
+            "body": "<p>Clears the log history</p>"
           }
         ]
       },

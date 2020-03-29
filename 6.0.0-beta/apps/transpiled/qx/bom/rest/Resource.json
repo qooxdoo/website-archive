@@ -23,11 +23,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2013 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nRichard Sternagel (rsternagel)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2013 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Richard Sternagel (rsternagel)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Client-side wrapper of a REST resource.\n\nEach instance represents a resource in terms of REST. A number of actions\n(usually HTTP methods) unique to the resource can be defined and invoked.\nA resource with its actions is configured declaratively by passing a resource\ndescription to the constructor, or programmatically using {@link #map}.\n\nEach action is associated to a route. A route is a combination of method,\nURL pattern and optional parameter constraints.\n\nAn action is invoked by calling a method with the same name. When a URL\npattern of a route contains positional parameters, those parameters must be\npassed when invoking the associated action. Also, constraints defined in the\nroute must be satisfied.\n\nWhen an action is invoked, a request is configured according to the associated\nroute, is passed the URL parameters, request body data, and finally send.\nWhat kind of request is send can be configured by overwriting {@link #_getRequest}.\n\nNo constraints on the action's name or the scope of the URLs are imposed. However,\nif you want to follow RESTful design patterns it is recommended to name actions\nthe same as the HTTP action.\n\nStrictly speaking, the <code>photos</code> instance represents two distinct resources\nand could therefore just as well mapped to two distinct resources (for instance,\nnamed photos and photosTagged). What style to choose depends on the kind of data\nreturned. For instance, it seems sensible to stick with one resource if the filter\nonly limits the result set (i.e. the individual results have the same properties).\n\nIn order to respond to successful (or erroneous) invocations of actions,\neither listen to the generic \"success\" or \"error\" event and get the action\nfrom the event data, or listen to action specific events defined at runtime.\nAction specific events follow the pattern \"&lt;action&gt;Success\" and\n\"&lt;action&gt;Error\", e.g. \"indexSuccess\"."
+          "body": "<p>Client-side wrapper of a REST resource.\n Each instance represents a resource in terms of REST. A number of actions\n (usually HTTP methods) unique to the resource can be defined and invoked.\n A resource with its actions is configured declaratively by passing a resource\n description to the constructor, or programmatically using {@link #map}.\n Each action is associated to a route. A route is a combination of method,\n URL pattern and optional parameter constraints.\n An action is invoked by calling a method with the same name. When a URL\n pattern of a route contains positional parameters, those parameters must be\n passed when invoking the associated action. Also, constraints defined in the\n route must be satisfied.\n When an action is invoked, a request is configured according to the associated\n route, is passed the URL parameters, request body data, and finally send.\n What kind of request is send can be configured by overwriting {@link #_getRequest}.\n No constraints on the action's name or the scope of the URLs are imposed. However,\n if you want to follow RESTful design patterns it is recommended to name actions\n the same as the HTTP action.\n Strictly speaking, the <code>photos</code> instance represents two distinct resources\n and could therefore just as well mapped to two distinct resources (for instance,\n named photos and photosTagged). What style to choose depends on the kind of data\n returned. For instance, it seems sensible to stick with one resource if the filter\n only limits the result set (i.e. the individual results have the same properties).\n In order to respond to successful (or erroneous) invocations of actions,\n either listen to the generic \"success\" or \"error\" event and get the action\n from the event data, or listen to action specific events defined at runtime.\n Action specific events follow the pattern \"&lt;action&gt;Success\" and\n \"&lt;action&gt;Error\", e.g. \"indexSuccess\".</p>"
         }
       ],
       "@group": [
@@ -49,7 +49,7 @@
     "location": {
       "start": {
         "line": 72,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 90,
@@ -66,9 +66,9 @@
       "@param": [
         {
           "name": "@param",
-          "body": "description {Map?} Each key of the map is interpreted as\n<code>action</code> name. The value associated to the key must be a map\nwith the properties <code>method</code> and <code>url</code>.\n<code>check</code> is optional. Also see {@link #map}.",
+          "body": "description {Map?} Each key of the map is interpreted as\n  <code>action</code> name. The value associated to the key must be a map\n  with the properties <code>method</code> and <code>url</code>.\n  <code>check</code> is optional. Also see {@link #map}.",
           "paramName": "description",
-          "description": " Each key of the map is interpreted as\n<code>action</code> name. The value associated to the key must be a map\nwith the properties <code>method</code> and <code>url</code>.\n<code>check</code> is optional. Also see {@link #map}.",
+          "description": " Each key of the map is interpreted as\n  <code>action</code> name. The value associated to the key must be a map\n  with the properties <code>method</code> and <code>url</code>.\n  <code>check</code> is optional. Also see {@link #map}.",
           "optional": true,
           "type": "Map"
         }
@@ -101,7 +101,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when any request was successful.\n\nThe action the successful request is associated to, as well as the\nrequest itself, can be retrieved from the event’s properties.\nAdditionally, an action specific event is fired that follows the pattern\n\"<action>Success\", e.g. \"indexSuccess\"."
+            "body": "<p>Fired when any request was successful.\n The action the successful request is associated to, as well as the\n request itself, can be retrieved from the event’s properties.\n Additionally, an action specific event is fired that follows the pattern\n \"<action>Success\", e.g. \"indexSuccess\".</p>"
           }
         ]
       },
@@ -123,7 +123,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when request associated to action given in prefix was successful.\n\nFor example, \"indexSuccess\" is fired when <code>index()</code> was\nsuccessful."
+            "body": "<p>Fired when request associated to action given in prefix was successful.\n For example, \"indexSuccess\" is fired when <code>index()</code> was\n successful.</p>"
           }
         ]
       },
@@ -145,7 +145,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when any request fails.\n\nThe action the failed request is associated to, as well as the\nrequest itself, can be retrieved from the event’s properties.\nAdditionally, an action specific event is fired that follows the pattern\n\"<action>Error\", e.g. \"indexError\"."
+            "body": "<p>Fired when any request fails.\n The action the failed request is associated to, as well as the\n request itself, can be retrieved from the event’s properties.\n Additionally, an action specific event is fired that follows the pattern\n \"<action>Error\", e.g. \"indexError\".</p>"
           }
         ]
       },
@@ -167,7 +167,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when any request associated to action given in prefix fails.\n\nFor example, \"indexError\" is fired when <code>index()</code> failed."
+            "body": "<p>Fired when any request associated to action given in prefix fails.\n For example, \"indexError\" is fired when <code>index()</code> failed.</p>"
           }
         ]
       },
@@ -189,7 +189,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a request is sent to the given endpoint."
+            "body": "<p>Fired when a request is sent to the given endpoint.</p>"
           }
         ]
       },
@@ -211,7 +211,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when any request associated to action is sent to the given endpoint.\n\nFor example, \"indexSent\" is fired when <code>index()</code> was\ncalled."
+            "body": "<p>Fired when any request associated to action is sent to the given endpoint.\n For example, \"indexSent\" is fired when <code>index()</code> was\n called.</p>"
           }
         ]
       },
@@ -233,7 +233,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when a request is started to the given endpoint. This moment is right after the request\nwas opened and send."
+            "body": "<p>Fired when a request is started to the given endpoint. This moment is right after the request\n was opened and send.</p>"
           }
         ]
       },
@@ -255,7 +255,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Fired when any request associated to action is started to the given endpoint. This moment is\nright after the request was opened and send.\n\nFor example, \"indexStarted\" is fired when <code>index()</code> was called."
+            "body": "<p>Fired when any request associated to action is started to the given endpoint. This moment is\n right after the request was opened and send.\n For example, \"indexStarted\" is fired when <code>index()</code> was called.</p>"
           }
         ]
       },
@@ -279,7 +279,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Number of milliseconds below a long-poll request is considered immediate and\nsubject to throttling checks."
+            "body": "<p>Number of milliseconds below a long-poll request is considered immediate and\n subject to throttling checks.</p>"
           }
         ]
       },
@@ -301,7 +301,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Number of immediate long-poll responses accepted before throttling takes place."
+            "body": "<p>Number of immediate long-poll responses accepted before throttling takes place.</p>"
           }
         ]
       },
@@ -323,7 +323,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "A symbol used in checks to declare required parameter."
+            "body": "<p>A symbol used in checks to declare required parameter.</p>"
           }
         ]
       },
@@ -345,7 +345,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get placeholders from URL."
+            "body": "<p>Get placeholders from URL.</p>"
           }
         ],
         "@param": [
@@ -530,7 +530,7 @@
           },
           {
             "name": "@description",
-            "body": "Request"
+            "body": "<p>Request</p>"
           },
           {
             "name": "@description",
@@ -538,7 +538,7 @@
           },
           {
             "name": "@description",
-            "body": "Set a request factory function to switch the request implementation.\nThe created requests have to implement {@link qx.io.request.AbstractRequest}."
+            "body": "<p>Set a request factory function to switch the request implementation.\n The created requests have to implement {@link qx.io.request.AbstractRequest}.</p>"
           }
         ],
         "@param": [
@@ -575,7 +575,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets request callbacks for 'onsuccess', 'onfail' and 'onloadend'."
+            "body": "<p>Sets request callbacks for 'onsuccess', 'onfail' and 'onloadend'.</p>"
           }
         ],
         "@param": [
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Provides the request callbacks for 'onsuccess', 'onfail' and 'onloadend'."
+            "body": "<p>Provides the request callbacks for 'onsuccess', 'onfail' and 'onloadend'.</p>"
           }
         ],
         "@return": [
@@ -642,7 +642,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Retrieve the currently stored request objects for an action."
+            "body": "<p>Retrieve the currently stored request objects for an action.</p>"
           }
         ],
         "@param": [
@@ -687,15 +687,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure request."
+            "body": "<p>Configure request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "callback {Function} Function called before request is send.\nReceives request, action, params and data.",
+            "body": "callback {Function} Function called before request is send.\n   Receives request, action, params and data.",
             "paramName": "callback",
-            "description": " Function called before request is send.\nReceives request, action, params and data.",
+            "description": " Function called before request is send.\n   Receives request, action, params and data.",
             "type": "Function"
           }
         ]
@@ -718,7 +718,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get request.\n\nMay be overridden to change type of request."
+            "body": "<p>Get request.\n May be overridden to change type of request.</p>"
           }
         ],
         "@return": [
@@ -748,7 +748,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Create request."
+            "body": "<p>Create request.</p>"
           }
         ],
         "@param": [
@@ -791,7 +791,7 @@
           },
           {
             "name": "@description",
-            "body": "Routes and actions"
+            "body": "<p>Routes and actions</p>"
           },
           {
             "name": "@description",
@@ -799,7 +799,7 @@
           },
           {
             "name": "@description",
-            "body": "Map action to combination of method and URL pattern."
+            "body": "<p>Map action to combination of method and URL pattern.</p>"
           }
         ],
         "@param": [
@@ -819,16 +819,16 @@
           },
           {
             "name": "@param",
-            "body": "url {String} URL to configure request with. May contain positional\nparameters (<code>{param}</code>) that are replaced by values given when the action\nis invoked. Parameters are optional, unless a check is defined. A default\nvalue can be provided (<code>{param=default}</code>).",
+            "body": "url {String} URL to configure request with. May contain positional\n   parameters (<code>{param}</code>) that are replaced by values given when the action\n   is invoked. Parameters are optional, unless a check is defined. A default\n   value can be provided (<code>{param=default}</code>).",
             "paramName": "url",
-            "description": " URL to configure request with. May contain positional\nparameters (<code>{param}</code>) that are replaced by values given when the action\nis invoked. Parameters are optional, unless a check is defined. A default\nvalue can be provided (<code>{param=default}</code>).",
+            "description": " URL to configure request with. May contain positional\n   parameters (<code>{param}</code>) that are replaced by values given when the action\n   is invoked. Parameters are optional, unless a check is defined. A default\n   value can be provided (<code>{param=default}</code>).",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "check {Map?} Map defining parameter constraints, where the key is\nthe URL parameter and the value a regular expression (to match string) or\n<code>qx.bom.rest.Resource.REQUIRED</code> (to verify existence).",
+            "body": "check {Map?} Map defining parameter constraints, where the key is\n   the URL parameter and the value a regular expression (to match string) or\n   <code>qx.bom.rest.Resource.REQUIRED</code> (to verify existence).",
             "paramName": "check",
-            "description": " Map defining parameter constraints, where the key is\nthe URL parameter and the value a regular expression (to match string) or\n<code>qx.bom.rest.Resource.REQUIRED</code> (to verify existence).",
+            "description": " Map defining parameter constraints, where the key is\n   the URL parameter and the value a regular expression (to match string) or\n   <code>qx.bom.rest.Resource.REQUIRED</code> (to verify existence).",
             "optional": true,
             "type": "Map"
           }
@@ -852,7 +852,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Invoke action with parameters.\n\nInternally called by actions dynamically created.\n\nMay be overridden to customize action and parameter handling."
+            "body": "<p>Invoke action with parameters.\n Internally called by actions dynamically created.\n May be overridden to customize action and parameter handling.</p>"
           }
         ],
         "@lint": [
@@ -871,16 +871,16 @@
           },
           {
             "name": "@param",
-            "body": "params {Map} Map of parameters inserted into URL when a matching\npositional parameter is found.",
+            "body": "params {Map} Map of parameters inserted into URL when a matching\n  positional parameter is found.",
             "paramName": "params",
-            "description": " Map of parameters inserted into URL when a matching\npositional parameter is found.",
+            "description": " Map of parameters inserted into URL when a matching\n  positional parameter is found.",
             "type": "Map"
           },
           {
             "name": "@param",
-            "body": "data {Map|String} Data to be send as part of the request.\nSee {@link qx.bom.request.SimpleXhr#getRequestData}.\nSee {@link qx.io.request.AbstractRequest#requestData}.",
+            "body": "data {Map|String} Data to be send as part of the request.\n  See {@link qx.bom.request.SimpleXhr#getRequestData}.\n  See {@link qx.io.request.AbstractRequest#requestData}.",
             "paramName": "data",
-            "description": " Data to be send as part of the request.\nSee {@link qx.bom.request.SimpleXhr#getRequestData}.\nSee {@link qx.io.request.AbstractRequest#requestData}.",
+            "description": " Data to be send as part of the request.\n  See {@link qx.bom.request.SimpleXhr#getRequestData}.\n  See {@link qx.io.request.AbstractRequest#requestData}.",
             "type": [
               "Map",
               "String"
@@ -914,7 +914,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Set base URL.\n\nThe base URL is prepended to the URLs given in the description.\nChanges affect all future invocations."
+            "body": "<p>Set base URL.\n The base URL is prepended to the URLs given in the description.\n Changes affect all future invocations.</p>"
           }
         ],
         "@param": [
@@ -945,7 +945,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Check parameters."
+            "body": "<p>Check parameters.</p>"
           }
         ],
         "@param": [
@@ -983,7 +983,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Configure request."
+            "body": "<p>Configure request.</p>"
           }
         ],
         "@param": [
@@ -1031,7 +1031,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Serialize data to JSON when content type indicates."
+            "body": "<p>Serialize data to JSON when content type indicates.</p>"
           }
         ],
         "@param": [
@@ -1079,19 +1079,13 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Abort action."
+            "body": "<p>Abort action.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {String|Number} Action of which all invocations to abort\n(when string), or a single invocation of an action to abort (when number)",
-            "paramName": "varargs",
-            "description": " Action of which all invocations to abort\n(when string), or a single invocation of an action to abort (when number)",
-            "type": [
-              "String",
-              "Number"
-            ]
+            "body": "when string), or a single invocation of an action to abort (when number"
           }
         ]
       },
@@ -1113,7 +1107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Resend request associated to action.\n\nReplays parameters given when action was invoked originally."
+            "body": "<p>Resend request associated to action.\n Replays parameters given when action was invoked originally.</p>"
           }
         ],
         "@param": [
@@ -1144,7 +1138,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Periodically invoke action.\n\nReplays parameters given when action was invoked originally. When the\naction was not yet invoked and requires parameters, parameters must be\ngiven.\n\nPlease note that IE tends to cache overly aggressive. One work-around is\nto disable caching on the client side by configuring the request with\n<code>setCache(false)</code>. If you control the server, a better\nwork-around is to include appropriate headers to explicitly control\ncaching. This way you still avoid requests that can be correctly answered\nfrom cache (e.g. when nothing has changed since the last poll). Please\nrefer to <a href=\"http://www.mnot.net/javascript/xmlhttprequest/cache.html\">\nXMLHttpRequest Caching Test</a> for available options."
+            "body": "<p>Periodically invoke action.\n Replays parameters given when action was invoked originally. When the\n action was not yet invoked and requires parameters, parameters must be\n given.\n Please note that IE tends to cache overly aggressive. One work-around is\n to disable caching on the client side by configuring the request with\n <code>setCache(false)</code>. If you control the server, a better\n work-around is to include appropriate headers to explicitly control\n caching. This way you still avoid requests that can be correctly answered\n from cache (e.g. when nothing has changed since the last poll). Please\n refer to <a href=\"http://www.mnot.net/javascript/xmlhttprequest/cache.html\">\n XMLHttpRequest Caching Test</a> for available options.</p>"
           }
         ],
         "@lint": [
@@ -1178,9 +1172,9 @@
           },
           {
             "name": "@param",
-            "body": "immediately {Boolean?false} <code>true</code>, if the poll should\ninvoke a call immediately.",
+            "body": "immediately {Boolean?false} <code>true</code>, if the poll should\n   invoke a call immediately.",
             "paramName": "immediately",
-            "description": " <code>true</code>, if the poll should\ninvoke a call immediately.",
+            "description": " <code>true</code>, if the poll should\n   invoke a call immediately.",
             "optional": true,
             "defaultValue": "false",
             "type": "Boolean"
@@ -1205,7 +1199,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Start a poll process."
+            "body": "<p>Start a poll process.</p>"
           }
         ],
         "@param": [
@@ -1250,7 +1244,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Stops a poll process by the associated action."
+            "body": "<p>Stops a poll process by the associated action.</p>"
           }
         ],
         "@param": [
@@ -1281,7 +1275,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Restarts a poll process by the associated action."
+            "body": "<p>Restarts a poll process by the associated action.</p>"
           }
         ],
         "@param": [
@@ -1312,7 +1306,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Long-poll action.\n\nUse Ajax long-polling to continuously fetch a resource as soon as the\nserver signals new data. The server determines when new data is available,\nwhile the client keeps open a request. Requires configuration on the\nserver side. Basically, the server must not close a connection until\nnew data is available. For a high level introduction to long-polling,\nrefer to <a href=\"http://en.wikipedia.org/wiki/Comet_(programming)#Ajax_with_long_polling\">\nAjax with long polling</a>.\n\nUses {@link #refresh} internally. Make sure you understand the\nimplications of IE's tendency to cache overly aggressive.\n\nNote no interval is given on the client side."
+            "body": "<p>Long-poll action.\n Use Ajax long-polling to continuously fetch a resource as soon as the\n server signals new data. The server determines when new data is available,\n while the client keeps open a request. Requires configuration on the\n server side. Basically, the server must not close a connection until\n new data is available. For a high level introduction to long-polling,\n refer to <a href=\"http://en.wikipedia.org/wiki/Comet_(programming)#Ajax_with_long_polling\">\n Ajax with long polling</a>.\n Uses {@link #refresh} internally. Make sure you understand the\n implications of IE's tendency to cache overly aggressive.\n Note no interval is given on the client side.</p>"
           }
         ],
         "@lint": [
@@ -1333,9 +1327,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{String} Id of handler responsible for long-polling. To stop\npolling, remove handler using {@link qx.core.Object#removeListenerById}.",
+            "body": "{String} Id of handler responsible for long-polling. To stop\n  polling, remove handler using {@link qx.core.Object#removeListenerById}.",
             "type": "String",
-            "description": " Id of handler responsible for long-polling. To stop\npolling, remove handler using {@link qx.core.Object#removeListenerById}."
+            "description": " Id of handler responsible for long-polling. To stop\n  polling, remove handler using {@link qx.core.Object#removeListenerById}."
           }
         ]
       },
@@ -1357,7 +1351,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get request configuration for action and parameters.\n\nThis is were placeholders are replaced with parameters."
+            "body": "<p>Get request configuration for action and parameters.\n This is were placeholders are replaced with parameters.</p>"
           }
         ],
         "@param": [
@@ -1379,9 +1373,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} Map of configuration settings. Has the properties\n<code>method</code>, <code>url</code> and <code>check</code>.",
+            "body": "{Map} Map of configuration settings. Has the properties\n   <code>method</code>, <code>url</code> and <code>check</code>.",
             "type": "Map",
-            "description": " Map of configuration settings. Has the properties\n<code>method</code>, <code>url</code> and <code>check</code>."
+            "description": " Map of configuration settings. Has the properties\n   <code>method</code>, <code>url</code> and <code>check</code>."
           }
         ]
       },
@@ -1403,7 +1397,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override to adjust the throttle limit."
+            "body": "<p>Override to adjust the throttle limit.</p>"
           }
         ],
         "@return": [
@@ -1433,7 +1427,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Override to adjust the throttle count."
+            "body": "<p>Override to adjust the throttle count.</p>"
           }
         ],
         "@return": [
@@ -1463,7 +1457,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Map actions from description.\n\nAllows to decoratively define routes."
+            "body": "<p>Map actions from description.\n Allows to decoratively define routes.</p>"
           }
         ],
         "@param": [
@@ -1494,7 +1488,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Declare event at runtime."
+            "body": "<p>Declare event at runtime.</p>"
           }
         ],
         "@param": [
@@ -1525,11 +1519,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nDISPOSER\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  DISPOSER\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns true if the object is disposed."
+            "body": "<p>Returns true if the object is disposed.</p>"
           }
         ],
         "@return": [
@@ -1559,7 +1553,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Dispose this object"
+            "body": "<p>Dispose this object</p>"
           }
         ]
       },
@@ -1585,7 +1579,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Destructs the Resource.\n\nAll created requests, routes and pollTimers will be disposed."
+            "body": "<p>Destructs the Resource.\n All created requests, routes and pollTimers will be disposed.</p>"
           }
         ]
       },

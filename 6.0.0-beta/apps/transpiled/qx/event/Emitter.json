@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2012 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (wittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2012 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (wittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Basic implementation for an event emitter. This supplies a basic and\nminimalistic event mechanism."
+          "body": "<p>Basic implementation for an event emitter. This supplies a basic and\n minimalistic event mechanism.</p>"
         }
       ]
     }
@@ -47,7 +47,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Static storage for all event listener"
+            "body": "<p>Static storage for all event listener</p>"
           }
         ]
       },
@@ -99,7 +99,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach a listener to the event emitter. The given <code>name</code>\nwill define the type of event. Handing in a <code>'*'</code> will\nlisten to all events emitted by the event emitter."
+            "body": "<p>Attach a listener to the event emitter. The given <code>name</code>\n will define the type of event. Handing in a <code>'*'</code> will\n listen to all events emitted by the event emitter.</p>"
           }
         ],
         "@param": [
@@ -154,7 +154,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Attach a listener to the event emitter which will be executed only once.\nThe given <code>name</code> will define the type of event. Handing in a\n<code>'*'</code> will listen to all events emitted by the event emitter."
+            "body": "<p>Attach a listener to the event emitter which will be executed only once.\n The given <code>name</code> will define the type of event. Handing in a\n <code>'*'</code> will listen to all events emitted by the event emitter.</p>"
           }
         ],
         "@param": [
@@ -209,7 +209,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Remove a listener from the event emitter. The given <code>name</code>\nwill define the type of event."
+            "body": "<p>Remove a listener from the event emitter. The given <code>name</code>\n will define the type of event.</p>"
           }
         ],
         "@param": [
@@ -240,9 +240,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer|null} The listener's id if it was removed or\n<code>null</code> if it wasn't found",
+            "body": "{Integer|null} The listener's id if it was removed or\n <code>null</code> if it wasn't found",
             "type": "Integer|null",
-            "description": " The listener's id if it was removed or\n<code>null</code> if it wasn't found"
+            "description": " The listener's id if it was removed or\n <code>null</code> if it wasn't found"
           }
         ]
       },
@@ -264,7 +264,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Removes the listener identified by the given <code>id</code>. The id\nwill be return on attaching the listener and can be stored for removing."
+            "body": "<p>Removes the listener identified by the given <code>id</code>. The id\n will be return on attaching the listener and can be stored for removing.</p>"
           }
         ],
         "@param": [
@@ -279,9 +279,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Integer|null} The listener's id if it was removed or\n<code>null</code> if it wasn't found",
+            "body": "{Integer|null} The listener's id if it was removed or\n <code>null</code> if it wasn't found",
             "type": "Integer|null",
-            "description": " The listener's id if it was removed or\n<code>null</code> if it wasn't found"
+            "description": " The listener's id if it was removed or\n <code>null</code> if it wasn't found"
           }
         ]
       },
@@ -303,7 +303,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Alternative for {@link #on}."
+            "body": "<p>Alternative for {@link #on}.</p>"
           }
         ],
         "@param": [
@@ -358,7 +358,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Alternative for {@link #once}."
+            "body": "<p>Alternative for {@link #once}.</p>"
           }
         ],
         "@param": [
@@ -413,7 +413,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Alternative for {@link #off}."
+            "body": "<p>Alternative for {@link #off}.</p>"
           }
         ],
         "@param": [
@@ -460,7 +460,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Alternative for {@link #offById}."
+            "body": "<p>Alternative for {@link #offById}.</p>"
           }
         ],
         "@param": [
@@ -491,7 +491,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Emits an event with the given name. The data will be passed\nto the listener."
+            "body": "<p>Emits an event with the given name. The data will be passed\n to the listener.</p>"
           }
         ],
         "@param": [
@@ -531,7 +531,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the internal attached listener."
+            "body": "<p>Returns the internal attached listener.</p>"
           }
         ],
         "@internal": [
@@ -543,9 +543,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Map} A map which has the event name as key. The values are\narrays containing a map with 'listener' and 'ctx'.",
+            "body": "{Map} A map which has the event name as key. The values are\n   arrays containing a map with 'listener' and 'ctx'.",
             "type": "Map",
-            "description": " A map which has the event name as key. The values are\narrays containing a map with 'listener' and 'ctx'."
+            "description": " A map which has the event name as key. The values are\n   arrays containing a map with 'listener' and 'ctx'."
           }
         ]
       },
@@ -567,7 +567,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Returns the data entry for a given event id. If the entry could\nnot be found, undefined will be returned."
+            "body": "<p>Returns the data entry for a given event id. If the entry could\n not be found, undefined will be returned.</p>"
           }
         ],
         "@internal": [
@@ -612,7 +612,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Internal helper which will return the storage for the given name."
+            "body": "<p>Internal helper which will return the storage for the given name.</p>"
           }
         ],
         "@param": [
@@ -627,9 +627,9 @@
         "@return": [
           {
             "name": "@return",
-            "body": "{Array} An array which is the storage for the listener and\nthe given event name.",
+            "body": "{Array} An array which is the storage for the listener and\n   the given event name.",
             "type": "Array",
-            "description": " An array which is the storage for the listener and\nthe given event name."
+            "description": " An array which is the storage for the listener and\n   the given event name."
           }
         ]
       },

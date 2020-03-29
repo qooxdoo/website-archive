@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "This mixin offers the basic logging features offered by {@link qx.log.Logger}."
+          "body": "<p>This mixin offers the basic logging features offered by {@link qx.log.Logger}.</p>"
         }
       ]
     }
@@ -75,15 +75,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a debug message."
+            "body": "<p>Logs a debug message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -106,15 +106,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an info message."
+            "body": "<p>Logs an info message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -137,15 +137,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs a warning message."
+            "body": "<p>Logs a warning message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -168,15 +168,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message."
+            "body": "<p>Logs an error message.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -199,15 +199,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Logs an error message with the current stack trace"
+            "body": "<p>Logs an error message with the current stack trace</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "varargs {var} The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "body": "varargs {var} The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "paramName": "varargs",
-            "description": " The item(s) to log. Any number of arguments is\nsupported. If an argument is not a string, the object dump will be\nlogged.",
+            "description": " The item(s) to log. Any number of arguments is\n supported. If an argument is not a string, the object dump will be\n logged.",
             "type": "var"
           }
         ]
@@ -230,7 +230,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Helper that calls the appropriate logger function with the current object\nand any number of items."
+            "body": "<p>Helper that calls the appropriate logger function with the current object\n and any number of items.</p>"
           }
         ],
         "@param": [

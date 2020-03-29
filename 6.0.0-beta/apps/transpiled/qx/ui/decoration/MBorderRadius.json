@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2010 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nMartin Wittemann (martinwittemann)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2010 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Martin Wittemann (martinwittemann)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Mixin for the border radius CSS property.\nThis mixin is usually used by {@link qx.ui.decoration.Decorator}.\n\nKeep in mind that this is not supported by all browsers:\n\n* Firefox 3,5+\n* IE9+\n* Safari 3.0+\n* Opera 10.5+\n* Chrome 4.0+"
+          "body": "<p>Mixin for the border radius CSS property.\n This mixin is usually used by {@link qx.ui.decoration.Decorator}.\n Keep in mind that this is not supported by all browsers:</p>\n<ul>\n<li>Firefox 3,5+</li>\n<li>IE9+</li>\n<li>Safari 3.0+</li>\n<li>Opera 10.5+</li>\n<li>Chrome 4.0+</li>\n</ul>"
         }
       ]
     }
@@ -84,7 +84,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Takes a styles map and adds the border radius styles in place to the\ngiven map. This is the needed behavior for\n{@link qx.ui.decoration.Decorator}."
+            "body": "<p>Takes a styles map and adds the border radius styles in place to the\n given map. This is the needed behavior for\n {@link qx.ui.decoration.Decorator}.</p>"
           }
         ],
         "@param": [
@@ -115,7 +115,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "property apply"
+            "body": "<p>property apply</p>"
           }
         ]
       },

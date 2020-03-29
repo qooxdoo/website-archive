@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2008 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nSebastian Werner (wpbasti)\nFabian Jakobs (fjakobs)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2008 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Sebastian Werner (wpbasti)\n Fabian Jakobs (fjakobs)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Layouter used by the qooxdoo menu's to render their buttons"
+          "body": "<p>Layouter used by the qooxdoo menu's to render their buttons</p>"
         }
       ],
       "@internal": [
@@ -53,7 +53,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Spacing between each cell on the menu buttons"
+            "body": "<p>Spacing between each cell on the menu buttons</p>"
           }
         ]
       },
@@ -79,7 +79,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Whether a column and which column should automatically span\nwhen the following cell is empty. Spanning may be disabled\nthrough setting this property to <code>null</code>."
+            "body": "<p>Whether a column and which column should automatically span\n when the following cell is empty. Spanning may be disabled\n through setting this property to <code>null</code>.</p>"
           }
         ]
       },
@@ -107,7 +107,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default icon column width if no icons are rendered"
+            "body": "<p>Default icon column width if no icons are rendered</p>"
           }
         ]
       },
@@ -134,7 +134,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Default arrow column width if no sub menus are rendered"
+            "body": "<p>Default arrow column width if no sub menus are rendered</p>"
           }
         ]
       },
@@ -177,11 +177,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nLAYOUT INTERFACE\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  LAYOUT INTERFACE\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "overridden"
+            "body": "<p>overridden</p>"
           }
         ],
         "@return": [
@@ -216,11 +216,11 @@
         "@description": [
           {
             "name": "@description",
-            "body": "---------------------------------------------------------------------------\nCUSTOM ADDONS\n---------------------------------------------------------------------------"
+            "body": "<pre><code>---------------------------------------------------------------------------\n  CUSTOM ADDONS\n---------------------------------------------------------------------------\n</code></pre>"
           },
           {
             "name": "@description",
-            "body": "Returns the column sizes detected during the pre-layout phase"
+            "body": "<p>Returns the column sizes detected during the pre-layout phase</p>"
           }
         ],
         "@return": [
@@ -954,7 +954,7 @@
     "location": {
       "start": {
         "line": 190,
-        "column": 2
+        "column": 13
       },
       "end": {
         "line": 192,
@@ -965,7 +965,7 @@
       "@description": [
         {
           "name": "@description",
-          "body": "****************************************************************************\nDESTRUCT\n****************************************************************************"
+          "body": "<pre><code>**********************************************************************\n  DESTRUCT\n**********************************************************************\n</code></pre>"
         }
       ]
     }

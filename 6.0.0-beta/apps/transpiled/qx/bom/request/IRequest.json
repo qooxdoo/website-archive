@@ -21,11 +21,11 @@
       "@description": [
         {
           "name": "@description",
-          "body": "***********************************************************************\n\nqooxdoo - the new era of web development\n\nhttp://qooxdoo.org\n\nCopyright:\n2004-2011 1&1 Internet AG, Germany, http://www.1und1.de\n\nLicense:\nMIT: https://opensource.org/licenses/MIT\nSee the LICENSE file in the project's top-level directory for details.\n\nAuthors:\nTristan Koch (tristankoch)\n\n***********************************************************************"
+          "body": "<pre><code>*****************************************************************\n</code></pre>\n<p>qooxdoo - the new era of web development\n   http://qooxdoo.org\n   Copyright:\n     2004-2011 1&amp;1 Internet AG, Germany, http://www.1und1.de\n   License:\n     MIT: https://opensource.org/licenses/MIT\n     See the LICENSE file in the project's top-level directory for details.\n   Authors:\n Tristan Koch (tristankoch)\n    <strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong><strong><em></em></em></strong><strong><em><em></em></strong></em>*</p>"
         },
         {
           "name": "@description",
-          "body": "Interface of a low-level transport compatible with\n{@link qx.io.request.AbstractRequest}.\n\nBased on interface specified in\n<a href=\"http://www.w3.org/TR/XMLHttpRequest/\">XmlHttpRequest</a>. Also\nborrows some methods as described in\n<a href=\"http://www.w3.org/TR/XMLHttpRequest2/\">XmlHttpRequest2</a>."
+          "body": "<p>Interface of a low-level transport compatible with\n {@link qx.io.request.AbstractRequest}.\n Based on interface specified in\n <a href=\"http://www.w3.org/TR/XMLHttpRequest/\">XmlHttpRequest</a>. Also\n borrows some methods as described in\n <a href=\"http://www.w3.org/TR/XMLHttpRequest2/\">XmlHttpRequest2</a>.</p>"
         }
       ]
     }
@@ -51,11 +51,11 @@
           },
           {
             "name": "@description",
-            "body": "Properties"
+            "body": "<p>Properties</p>"
           },
           {
             "name": "@description",
-            "body": "Plain JavaScript"
+            "body": "<p>(Plain JavaScript)</p>"
           },
           {
             "name": "@description",
@@ -97,7 +97,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Number} Ready state.\n\nStates can be:\nUNSENT:           0,\nOPENED:           1,\nHEADERS_RECEIVED: 2,\nLOADING:          3,\nDONE:             4"
+            "body": "{Number} Ready state.\n States can be:\n UNSENT:           0,\n OPENED:           1,\n HEADERS_RECEIVED: 2,\n LOADING:          3,\n DONE:             4"
           }
         ]
       },
@@ -209,7 +209,7 @@
         "@type": [
           {
             "name": "@type",
-            "body": "{Number} Timeout limit in milliseconds.\n\n0 (default) means no timeout."
+            "body": "{Number} Timeout limit in milliseconds.\n 0 (default) means no timeout."
           }
         ]
       },
@@ -235,7 +235,7 @@
           },
           {
             "name": "@description",
-            "body": "Methods"
+            "body": "<p>Methods</p>"
           },
           {
             "name": "@description",
@@ -243,29 +243,29 @@
           },
           {
             "name": "@description",
-            "body": "Initializes (prepares) request."
+            "body": "<p>Initializes (prepares) request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "method {String}\nThe method to use.",
+            "body": "method {String}\n  The method to use.",
             "paramName": "method",
-            "description": "\nThe method to use.",
+            "description": "\n  The method to use.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "url {String}\nThe URL to which to send the request.",
+            "body": "url {String}\n  The URL to which to send the request.",
             "paramName": "url",
-            "description": "\nThe URL to which to send the request.",
+            "description": "\n  The URL to which to send the request.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "async {Boolean?true}\nWhether or not to perform the operation asynchronously.",
+            "body": "async {Boolean?true}\n  Whether or not to perform the operation asynchronously.",
             "paramName": "async",
-            "description": "\nWhether or not to perform the operation asynchronously.",
+            "description": "\n  Whether or not to perform the operation asynchronously.",
             "optional": true,
             "defaultValue": "true",
             "type": "Boolean"
@@ -290,15 +290,15 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sends request."
+            "body": "<p>Sends request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "data {String|Document?null}\nOptional data to send.",
+            "body": "data {String|Document?null}\n  Optional data to send.",
             "paramName": "data",
-            "description": "\nOptional data to send.",
+            "description": "\n  Optional data to send.",
             "optional": true,
             "defaultValue": "null",
             "type": [
@@ -326,7 +326,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Abort request"
+            "body": "<p>Abort request</p>"
           }
         ]
       },
@@ -348,7 +348,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get all response headers from response."
+            "body": "<p>Get all response headers from response.</p>"
           }
         ],
         "@return": [
@@ -378,24 +378,24 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Get a single response header from response."
+            "body": "<p>Get a single response header from response.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "header {String}\nKey of the header to get the value from.",
+            "body": "header {String}\n  Key of the header to get the value from.",
             "paramName": "header",
-            "description": "\nKey of the header to get the value from.",
+            "description": "\n  Key of the header to get the value from.",
             "type": "String"
           }
         ],
         "@return": [
           {
             "name": "@return",
-            "body": "{String}\nResponse header.",
+            "body": "{String}\n  Response header.",
             "type": "String",
-            "description": "\nResponse header."
+            "description": "\n  Response header."
           }
         ]
       },
@@ -417,22 +417,22 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Sets a request header to be used by the request."
+            "body": "<p>Sets a request header to be used by the request.</p>"
           }
         ],
         "@param": [
           {
             "name": "@param",
-            "body": "key {String}\nThe name of the header whose value is to be set.",
+            "body": "key {String}\n  The name of the header whose value is to be set.",
             "paramName": "key",
-            "description": "\nThe name of the header whose value is to be set.",
+            "description": "\n  The name of the header whose value is to be set.",
             "type": "String"
           },
           {
             "name": "@param",
-            "body": "value {String}\nThe value to set as the body of the header.",
+            "body": "value {String}\n  The value to set as the body of the header.",
             "paramName": "value",
-            "description": "\nThe value to set as the body of the header.",
+            "description": "\n  The value to set as the body of the header.",
             "type": "String"
           }
         ]
@@ -459,7 +459,7 @@
           },
           {
             "name": "@description",
-            "body": "Handlers"
+            "body": "<p>Handlers</p>"
           },
           {
             "name": "@description",
@@ -467,7 +467,7 @@
           },
           {
             "name": "@description",
-            "body": "Event handler for event fired at every state change."
+            "body": "<p>Event handler for event fired at every state change.</p>"
           }
         ]
       },
@@ -489,7 +489,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for event fired on successful retrieval."
+            "body": "<p>Event handler for event fired on successful retrieval.</p>"
           }
         ]
       },
@@ -511,7 +511,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for event fired on retrieval."
+            "body": "<p>Event handler for event fired on retrieval.</p>"
           }
         ]
       },
@@ -533,7 +533,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for event fired on a network error."
+            "body": "<p>Event handler for event fired on a network error.</p>"
           }
         ]
       },
@@ -555,7 +555,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for event fired when request is aborted."
+            "body": "<p>Event handler for event fired when request is aborted.</p>"
           }
         ]
       },
@@ -577,7 +577,7 @@
         "@description": [
           {
             "name": "@description",
-            "body": "Event handler for event fired when timeout interval has passed."
+            "body": "<p>Event handler for event fired when timeout interval has passed.</p>"
           }
         ]
       },
