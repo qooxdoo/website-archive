@@ -6504,6 +6504,84 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/16/mimetypes/archive.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/executable.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/media-audio.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/media-image.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/media-video.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-calendar.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-contact.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-document.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-illustration.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-presentation.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/office-spreadsheet.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/text-html.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/mimetypes/text-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/16/places/folder-open.png": [
       16,
       16,
@@ -6625,84 +6703,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/status/security-medium.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/archive.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/executable.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/media-audio.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/media-image.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/media-video.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-calendar.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-contact.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-document.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-illustration.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-presentation.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/office-spreadsheet.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/text-html.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/mimetypes/text-plain.png": [
       16,
       16,
       "png",
