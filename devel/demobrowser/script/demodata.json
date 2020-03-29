@@ -3,20 +3,6 @@
         "classname": "animation",
         "tests": [
             {
-                "name": "Animation.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get",
-                    "qx.bom.element.Animation.animate",
-                    "qx.core.Environment.get"
-                ],
-                "title": "Animation",
-                "nr": 0
-            },
-            {
                 "name": "Animation_3d.html",
                 "tags": [
                     "noPlayground",
@@ -76,6 +62,20 @@
                     "qx.Class.define"
                 ],
                 "title": "Timing",
+                "nr": 0
+            },
+            {
+                "name": "Animation.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get",
+                    "qx.bom.element.Animation.animate",
+                    "qx.core.Environment.get"
+                ],
+                "title": "Animation",
                 "nr": 0
             }
         ]
@@ -1048,38 +1048,6 @@
                 "nr": 0
             },
             {
-                "name": "TreeController.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.tree.Tree",
-                    "qx.data.controller.Tree",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "TreeController",
-                "nr": 0
-            },
-            {
-                "name": "Tree_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.tree.Tree",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.data.controller.Tree"
-                ],
-                "title": "Tree Columns",
-                "nr": "Columns"
-            },
-            {
                 "name": "SelectBox.html",
                 "tags": [
                     "databinding",
@@ -1100,15 +1068,17 @@
                 "nr": 0
             },
             {
-                "name": "Service.html",
+                "name": "Tree_Columns.html",
                 "tags": [
-                    "showcase",
-                    "databinding",
-                    "noPlayground",
-                    "qx.Class.define"
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.tree.Tree",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.data.controller.Tree"
                 ],
-                "title": "Service",
-                "nr": 0
+                "title": "Tree Columns",
+                "nr": "Columns"
             },
             {
                 "name": "SingleValueBinding.html",
@@ -1144,6 +1114,36 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "SingleValueBinding",
+                "nr": 0
+            },
+            {
+                "name": "Service.html",
+                "tags": [
+                    "showcase",
+                    "databinding",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Service",
+                "nr": 0
+            },
+            {
+                "name": "TreeController.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.tree.Tree",
+                    "qx.data.controller.Tree",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "TreeController",
                 "nr": 0
             }
         ]
@@ -3883,32 +3883,6 @@
                 "nr": 0
             },
             {
-                "name": "Tree_Columns.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.tree.VirtualTree",
-                    "qx.data.marshal.Json.createModel"
-                ],
-                "title": "Tree Columns",
-                "nr": "Columns"
-            },
-            {
-                "name": "Tree_Dynamic.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.data.marshal.Json.createModel",
-                    "qx.ui.tree.VirtualTree",
-                    "qx.event.Timer.once",
-                    "qx.data.marshal.Json.createModel"
-                ],
-                "title": "Tree Dynamic",
-                "nr": "Dynamic"
-            },
-            {
                 "name": "Tree.html",
                 "tags": [
                     "qx.Class.define",
@@ -3944,6 +3918,32 @@
                 ],
                 "title": "Tree",
                 "nr": 0
+            },
+            {
+                "name": "Tree_Columns.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.tree.VirtualTree",
+                    "qx.data.marshal.Json.createModel"
+                ],
+                "title": "Tree Columns",
+                "nr": "Columns"
+            },
+            {
+                "name": "Tree_Dynamic.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.data.marshal.Json.createModel",
+                    "qx.ui.tree.VirtualTree",
+                    "qx.event.Timer.once",
+                    "qx.data.marshal.Json.createModel"
+                ],
+                "title": "Tree Dynamic",
+                "nr": "Dynamic"
             }
         ]
     },
