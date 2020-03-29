@@ -1644,16 +1644,16 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
-      35,
-      11,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/colorselector/huesaturation-field.jpg": [
       256,
       256,
       "jpg",
+      "qx"
+    ],
+    "qx/decoration/Simple/colorselector/brightness-handle.gif": [
+      35,
+      11,
+      "gif",
       "qx"
     ],
     "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
@@ -9096,6 +9096,12 @@ qx.$$packageData['0'] = {
       "woff",
       "qx"
     ],
+    "qx/test/webfonts/yanonekaffeesatz-regular-webfont.eot": [
+      null,
+      null,
+      "eot",
+      "qx"
+    ],
     "qx/test/webfonts/yanonekaffeesatz-regular-webfont.ttf": [
       null,
       null,
@@ -9106,12 +9112,6 @@ qx.$$packageData['0'] = {
       null,
       null,
       "woff",
-      "qx"
-    ],
-    "qx/test/webfonts/yanonekaffeesatz-regular-webfont.eot": [
-      null,
-      null,
-      "eot",
       "qx"
     ],
     "qx/test/xmlhttp/404.php": [

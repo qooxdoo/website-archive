@@ -3,7 +3,7 @@
   "libraries": [
     "qx",
     "qxl.playground",
-    "qxl.logpane",
+    "qxl.versionlabel",
     "qxl.demobrowser",
     "qxl.apiviewer",
     "qxl.widgetbrowser",
@@ -11,7 +11,7 @@
     "qxl.mobileshowcase",
     "qxl.datademo",
     "qxl.testtapper",
-    "qxl.versionlabel"
+    "qxl.logpane"
   ],
   "parts": [
     {
