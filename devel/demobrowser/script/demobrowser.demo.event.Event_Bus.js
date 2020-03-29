@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.9985209cc1a4.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.event.Event_Bus.c109105025b6.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2525,9 +2525,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2768,16 +2767,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4466,6 +4455,17 @@ else {H.catch=I;}
 ;}
 ;}
 })}});}
+)();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
@@ -10086,8 +10086,8 @@ else {bp[i]=bq;}
 ,unsubscribe:function(o,n,p){return this.getInstance().unsubscribe(o,n,p);}
 ,dispatch:function(q){return this.getInstance().dispatch.apply(this.getInstance(),arguments);}
 ,dispatchByName:function(name,r){return this.getInstance().dispatchByName.apply(this.getInstance(),arguments);}
-},construct:function(){this.__yL={};}
-,members:{__yL:null,getSubscriptions:function(){return this.__yL;}
+},construct:function(){this.__yO={};}
+,members:{__yO:null,getSubscriptions:function(){return this.__yO;}
 ,subscribe:function(t,s,v){if(!t||typeof s!=a){this.error(d+[t,s,v]);return false;}
 ;var u=this.getSubscriptions();if(this.checkSubscription(t)){if(this.checkSubscription(t,s,v)){this.warn(e+t);return false;}
 ;u[t].push({subscriber:s,context:v||null});return true;}
@@ -10106,14 +10106,14 @@ else {if(!D){D=null;}
 while(i);}
 ;}
 ;return false;}
-,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__yM(G[K],L);I=true;}
+,dispatch:function(L){var G=this.getSubscriptions();var H=L.getName();var I=false;for(var K in G){var J=K.indexOf(c);if(J>-1){if(J===0||K.substr(0,J)===H.substr(0,J)){this.__yP(G[K],L);I=true;}
 ;}
-else {if(K===H){this.__yM(G[H],L);I=true;}
+else {if(K===H){this.__yP(G[H],L);I=true;}
 ;}
 ;}
 ;return I;}
 ,dispatchByName:function(name,N){var M=new qx.event.message.Message(name,N);var O=this.dispatch(M);M.dispose();M=null;return O;}
-,__yM:function(Q,P){Q=Q.slice();for(var i=0;i<Q.length;i++ ){var S=Q[i].subscriber;var R=Q[i].context;if(R&&R.isDisposed){if(R.isDisposed()){Q.splice(i,1);i-- ;}
+,__yP:function(Q,P){Q=Q.slice();for(var i=0;i<Q.length;i++ ){var S=Q[i].subscriber;var R=Q[i].context;if(R&&R.isDisposed){if(R.isDisposed()){Q.splice(i,1);i-- ;}
 else {S.call(R,P);}
 ;}
 else {S.call(R,P);}

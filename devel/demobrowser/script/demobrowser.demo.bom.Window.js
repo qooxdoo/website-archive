@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Window.b73757e8bd74.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Window.b53e795143ed.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2525,9 +2525,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2768,16 +2767,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4467,6 +4456,17 @@ else {H.catch=I;}
 ;}
 })}});}
 )();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
+)();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
 ,getData:function(){return this.__dH;}
@@ -4932,31 +4932,31 @@ else {this.set(M,name,null);}
 ;}
 }});}
 )();
-(function(){var a="no",b="px",c="qx.bom.Window",d="Cross-Domain Scripting problem: Could not resize window!",e="' is not supported for native windows.",f="interval",g="dialogWidth",h="resizable",i=":",j="yes",k="dialogTop",l="qxNativeWindow",m="Cross-Domain Scripting problem: Could not move window!",n="",o="Option '",p="javascript:/",q="dialogLeft",r="dialogHeight",s="' is not supported for modal windows.",t='load',u="scrollbars",v="=",w=";",x="scroll",y=",";qx.Class.define(c,{statics:{__nh:null,__vd:null,__eg:null,__ve:{"top":k,left:q,width:g,height:r,scrollbars:x,resizable:h},__vf:{"top":1,left:1,width:1,height:1,dependent:1,resizable:1,status:1,location:1,menubar:1,scrollbars:1,toolbar:1},__vg:function(){return window.showModalDialog!=null;}
+(function(){var a="no",b="px",c="qx.bom.Window",d="Cross-Domain Scripting problem: Could not resize window!",e="' is not supported for native windows.",f="interval",g="dialogWidth",h="resizable",i=":",j="yes",k="dialogTop",l="qxNativeWindow",m="Cross-Domain Scripting problem: Could not move window!",n="",o="Option '",p="javascript:/",q="dialogLeft",r="dialogHeight",s="' is not supported for modal windows.",t='load',u="scrollbars",v="=",w=";",x="scroll",y=",";qx.Class.define(c,{statics:{__nh:null,__vg:null,__eg:null,__vh:{"top":k,left:q,width:g,height:r,scrollbars:x,resizable:h},__vi:{"top":1,left:1,width:1,height:1,dependent:1,resizable:1,status:1,location:1,menubar:1,scrollbars:1,toolbar:1},__vj:function(){return window.showModalDialog!=null;}
 ,open:function(z,name,I,E,A,D,self){var C=null;if(z==null){z=p;}
 ;if(name==null){name=l+new Date().getTime();}
 ;if(A==null){A=true;}
-;var H=this.__vh(I,E&&A);if(E){if(this.__vg()&&A){C=window.showModalDialog(z,[window.self],H);}
-else {this.getBlocker().block();if(this.__eg==null){this.__eg=new qx.event.Timer(500);this.__eg.addListener(f,this.__vi,this);}
-;this.__vd=window.open(z,name,H);this.__eg.restart();C=this.__vd;}
+;var H=this.__vk(I,E&&A);if(E){if(this.__vj()&&A){C=window.showModalDialog(z,[window.self],H);}
+else {this.getBlocker().block();if(this.__eg==null){this.__eg=new qx.event.Timer(500);this.__eg.addListener(f,this.__vl,this);}
+;this.__vg=window.open(z,name,H);this.__eg.restart();C=this.__vg;}
 ;}
 else {C=window.open(z,name,H);}
 ;if(C&&D&&(D instanceof Function)){var F=self||C;var B=qx.lang.Function.bind(D,F);var G=function(){B();qx.bom.Event.removeNativeListener(C,t,G);}
 ;qx.bom.Event.addNativeListener(C,t,G);}
 ;return C;}
-,__vh:function(L,P){var N;var K;var O=[];if(P&&this.__vg()){for(var M in L){if(qx.bom.Window.__ve[M]){var J=n;if(M!=u&&M!=h){J=b;}
-;K=qx.bom.Window.__ve[M]+i+L[M]+J;O.push(K);}
+,__vk:function(L,P){var N;var K;var O=[];if(P&&this.__vj()){for(var M in L){if(qx.bom.Window.__vh[M]){var J=n;if(M!=u&&M!=h){J=b;}
+;K=qx.bom.Window.__vh[M]+i+L[M]+J;O.push(K);}
 else {qx.log.Logger.warn(o+M+s);}
 ;}
 ;N=O.join(w);}
-else {for(var M in L){if(qx.bom.Window.__vf[M]){if(qx.lang.Type.isBoolean(L[M])){K=M+v+(L[M]?j:a);}
+else {for(var M in L){if(qx.bom.Window.__vi[M]){if(qx.lang.Type.isBoolean(L[M])){K=M+v+(L[M]?j:a);}
 else {K=M+v+L[M];}
 ;O.push(K);}
 else {qx.log.Logger.warn(o+M+e);}
 ;}
 ;N=O.join(y);}
 ;return N;}
-,__vi:function(){if(this.isClosed(this.__vd)){this.getBlocker().unblock();this.__eg.stop();}
+,__vl:function(){if(this.isClosed(this.__vg)){this.getBlocker().unblock();this.__eg.stop();}
 ;}
 ,getBlocker:function(){if(this.__nh==null){this.__nh=new qx.bom.Blocker;}
 ;return this.__nh;}

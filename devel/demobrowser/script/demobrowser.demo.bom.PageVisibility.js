@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.95f7fa8448c5.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.PageVisibility.4085bae0d1b0.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2525,9 +2525,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2768,16 +2767,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4467,6 +4456,17 @@ else {H.catch=I;}
 ;}
 })}});}
 )();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
+)();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
 ,getData:function(){return this.__dH;}
@@ -4698,17 +4698,17 @@ catch(w){return;}
 )();
 (function(){var a="change",b="visibilityState",c="visibilitychange",d="visible",f="Hidden",g="qx.bom.PageVisibility",h="Event",j="VisibilityState",k="hidden";qx.Bootstrap.define(g,{extend:qx.event.Emitter,statics:{getInstance:function(){if(!this.$$instance){this.$$instance=new qx.bom.PageVisibility();}
 ;return this.$$instance;}
-},construct:function(document){this.__nL=document||window.document;this.__yY();var self=this;qx.bom.Event.addNativeListener(this.__nL,this.__iq,function(e){self.emit(a,e);}
+},construct:function(document){this.__nL=document||window.document;this.__uQ();var self=this;qx.bom.Event.addNativeListener(this.__nL,this.__iq,function(e){self.emit(a,e);}
 );}
-,events:{"change":h},members:{__nL:null,__yW:null,__yX:null,__iq:null,__yY:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__nL[m]!=undefined){this.__yW=m;this.__iq=l[i].toLowerCase()+c;break;}
+,events:{"change":h},members:{__nL:null,__uO:null,__uP:null,__iq:null,__uQ:function(){var l=qx.bom.Style.VENDOR_PREFIXES;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+f;if(this.__nL[m]!=undefined){this.__uO=m;this.__iq=l[i].toLowerCase()+c;break;}
 ;}
-;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__nL[m]!=undefined){this.__yX=m;break;}
+;for(var i=0;i<l.length;i++ ){var m=l[i].toLowerCase()+j;if(this.__nL[m]!=undefined){this.__uP=m;break;}
 ;}
-;if(this.__yW==null){this.__yW=k;this.__iq=c;}
-;if(this.__yX==null){this.__yX=b;}
+;if(this.__uO==null){this.__uO=k;this.__iq=c;}
+;if(this.__uP==null){this.__uP=b;}
 ;}
-,isHidden:function(){return !!this.__nL[this.__yW];}
-,getVisibilityState:function(){return this.__nL[this.__yX]||d;}
+,isHidden:function(){return !!this.__nL[this.__uO];}
+,getVisibilityState:function(){return this.__nL[this.__uP]||d;}
 }});}
 )();
 (function(){var b="'!",c="function",d='Invalid include in theme "',e="fonts",f="appearances",g='The configuration key "',h="Mixin theme is not a valid theme!",j='" is not allowed!',k="icons",m="You can only define one theme category per file! Invalid theme: ",n="string",o="decorations",p="other",q="Found base flag in entry '",r="qx.debug",s='Invalid patch in theme "',t="widgets",u="[Theme ",v="borders",w="' are not compatible '",x="The mixins '",y='": ',z="' of theme '",A='" is invalid: ',B='Invalid extend in theme "',C='Invalid type of key "',D='The key "',E='"!',F="]",G='"! The value needs to be a map!',H='"! The type of the key must be "',I="undefined",J='The type of the key "',K="qx.Theme",L='The content of a meta theme must reference to other themes. The value for "',M='" inside the meta block is wrong.',N='" in theme "',O="colors",P='Invalid key "',Q='"! The value is undefined/null!',R="Theme",S="meta",T='" is not allowed inside a meta theme block.',U="'. Base flags are not allowed for themes without a valid super theme!",V="object";qx.Bootstrap.define(K,{statics:{define:function(name,X){if(!X){var X={};}

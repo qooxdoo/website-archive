@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Placeholder.0266232c3d3e.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.bom.Placeholder.6c1f053d586e.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2525,9 +2525,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2768,16 +2767,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4466,6 +4455,17 @@ else {H.catch=I;}
 ;}
 ;}
 })}});}
+)();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
@@ -6486,16 +6486,16 @@ catch(bj){}
 )();
 (function(){var a="text",b="<label>",c="font-size",d="px",e="css.placeholder",f="font-variant",g="inline",h="css.pointerevents",j="auto",k="cursor",l="font-family",m="padding-right",n="text-align",o="placeholder",p="padding-left",q="font-weight",r="#989898",s="$qx_placeholder",t="",u="INPUT",v="TEXTAREA",w="keyup",x="display",y="padding-top",z="none",A="z-index",B="qx.module.Placeholder",C="tagName",D="hidden",E="padding-bottom",F="tap",G="absolute",H="font-style",I="input[placeholder], textarea[placeholder]";qx.Bootstrap.define(B,{statics:{PLACEHOLDER_NAME:s,update:function(){if(!qxWeb.env.get(e)){qxWeb(I).updatePlaceholder();}
 ;}
-,__uO:function(N){var O=N.getAttribute(o);var K=N.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);var M=N.getStyle(A);var J=parseInt(N.getStyle(p))+2*parseInt(N.getStyle(m));var L=parseInt(N.getStyle(y))+2*parseInt(N.getStyle(E));K.setHtml(O).setStyles({display:N.getValue()==t?g:z,zIndex:M==j?1:M+1,textAlign:N.getStyle(n),width:(N.getWidth()-J-4)+d,height:(N.getHeight()-L-4)+d,left:N.getPosition().left+d,top:N.getPosition().top+d,fontFamily:N.getStyle(l),fontStyle:N.getStyle(H),fontVariant:N.getStyle(f),fontWeight:N.getStyle(q),fontSize:N.getStyle(c),paddingTop:(parseInt(N.getStyle(y))+2)+d,paddingRight:(parseInt(N.getStyle(m))+2)+d,paddingBottom:(parseInt(N.getStyle(E))+2)+d,paddingLeft:(parseInt(N.getStyle(p))+2)+d});}
-,__uP:function(P){var Q=qxWeb.create(b).setStyles({position:G,color:r,overflow:D,pointerEvents:z});P.setProperty(qx.module.Placeholder.PLACEHOLDER_NAME,Q);P.on(w,function(R){var S=R.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);S.setStyle(x,R.getValue()==t?g:z);}
+,__uR:function(N){var O=N.getAttribute(o);var K=N.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);var M=N.getStyle(A);var J=parseInt(N.getStyle(p))+2*parseInt(N.getStyle(m));var L=parseInt(N.getStyle(y))+2*parseInt(N.getStyle(E));K.setHtml(O).setStyles({display:N.getValue()==t?g:z,zIndex:M==j?1:M+1,textAlign:N.getStyle(n),width:(N.getWidth()-J-4)+d,height:(N.getHeight()-L-4)+d,left:N.getPosition().left+d,top:N.getPosition().top+d,fontFamily:N.getStyle(l),fontStyle:N.getStyle(H),fontVariant:N.getStyle(f),fontWeight:N.getStyle(q),fontSize:N.getStyle(c),paddingTop:(parseInt(N.getStyle(y))+2)+d,paddingRight:(parseInt(N.getStyle(m))+2)+d,paddingBottom:(parseInt(N.getStyle(E))+2)+d,paddingLeft:(parseInt(N.getStyle(p))+2)+d});}
+,__uS:function(P){var Q=qxWeb.create(b).setStyles({position:G,color:r,overflow:D,pointerEvents:z});P.setProperty(qx.module.Placeholder.PLACEHOLDER_NAME,Q);P.on(w,function(R){var S=R.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);S.setStyle(x,R.getValue()==t?g:z);}
 .bind(this,P));if(!qxWeb.env.get(h)){Q.setStyle(k,a).on(F,function(T){T.focus();}
 .bind(this,P));}
 ;return Q;}
 },members:{updatePlaceholder:function(){if(!qxWeb.env.get(e)){for(var i=0;i<this.length;i++ ){var W=qxWeb(this[i]);var ba=W.getAttribute(o);var Y=W.getProperty(C);if(!ba||(Y!=v&&Y!=u)){continue;}
-;var U=W.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);if(!U){U=qx.module.Placeholder.__uP(W);}
+;var U=W.getProperty(qx.module.Placeholder.PLACEHOLDER_NAME);if(!U){U=qx.module.Placeholder.__uS(W);}
 ;var V=W.isRendered();var X=U.isRendered();if(V&&!X){W.before(U);}
 else if(!V&&X){U.remove();return this;}
-;qx.module.Placeholder.__uO(W);}
+;qx.module.Placeholder.__uR(W);}
 ;}
 ;return this;}
 },defer:function(bb){qxWeb.$attachAll(this,o);}

@@ -247,6 +247,15 @@
                 "nr": 0
             },
             {
+                "name": "Dimension.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Dimension",
+                "nr": 0
+            },
+            {
                 "name": "Environment.html",
                 "tags": [
                     "noPlayground",
@@ -261,15 +270,6 @@
                     "qx.lang.Json.stringify"
                 ],
                 "title": "Environment",
-                "nr": 0
-            },
-            {
-                "name": "Dimension.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Dimension",
                 "nr": 0
             },
             {
@@ -1145,182 +1145,6 @@
                 ],
                 "title": "Tree Columns",
                 "nr": "Columns"
-            }
-        ]
-    },
-    {
-        "classname": "event",
-        "tests": [
-            {
-                "name": "ElementResize.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener"
-                ],
-                "title": "ElementResize",
-                "nr": 0
-            },
-            {
-                "name": "Event.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.ui.command.Command",
-                    "qx.ui.command.Command",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.removeListener"
-                ],
-                "title": "Event",
-                "nr": 0
-            },
-            {
-                "name": "Event_Bubbling.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener"
-                ],
-                "title": "Event Bubbling",
-                "nr": "Bubbling"
-            },
-            {
-                "name": "Event_Bus.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once",
-                    "qx.event.Timer.once"
-                ],
-                "title": "Event Bus",
-                "nr": "Bus"
-            },
-            {
-                "name": "Event_Iframe.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Iframe.create",
-                    "qx.event.Registration.addListener",
-                    "qx.bom.Iframe.getDocument",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.removeListener"
-                ],
-                "title": "Event Iframe",
-                "nr": "Iframe"
-            },
-            {
-                "name": "Focus.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener",
-                    "qx.core.Environment.get",
-                    "qx.core.Environment.get"
-                ],
-                "title": "Focus",
-                "nr": 0
-            },
-            {
-                "name": "KeyEvent.html",
-                "tags": [
-                    "noPlayground",
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener"
-                ],
-                "title": "KeyEvent",
-                "nr": 0
-            },
-            {
-                "name": "KeyEvent_LowLevel.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.bom.Event.addNativeListener",
-                    "qx.lang.Function.bind",
-                    "qx.bom.Event.preventDefault"
-                ],
-                "title": "KeyEvent LowLevel",
-                "nr": "LowLevel"
-            },
-            {
-                "name": "MouseEvent.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.capture",
-                    "qx.bom.Element.releaseCapture",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.removeListener"
-                ],
-                "title": "MouseEvent",
-                "nr": 0
-            },
-            {
-                "name": "MouseEvent_LowLevel.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.lang.Function.bind",
-                    "qx.bom.Event.addNativeListener",
-                    "qx.bom.Event.addNativeListener",
-                    "qx.bom.Event.getTarget",
-                    "qx.bom.Event.addNativeListener",
-                    "qx.bom.Event.removeNativeListener",
-                    "qx.bom.Event.preventDefault",
-                    "qx.bom.Event.getTarget",
-                    "qx.bom.Event.getRelatedTarget"
-                ],
-                "title": "MouseEvent LowLevel",
-                "nr": "LowLevel"
-            },
-            {
-                "name": "PointerEvent.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.capture",
-                    "qx.bom.Element.releaseCapture",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.addListener",
-                    "qx.bom.Element.removeListener"
-                ],
-                "title": "PointerEvent",
-                "nr": 0
             }
         ]
     },
@@ -2568,20 +2392,6 @@
                 "nr": 0
             },
             {
-                "name": "Maps.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Maps",
-                "nr": 0
-            },
-            {
                 "name": "Localization.html",
                 "tags": [
                     "showcase",
@@ -2651,6 +2461,20 @@
                     "qx.locale.Manager.getInstance"
                 ],
                 "title": "Localization",
+                "nr": 0
+            },
+            {
+                "name": "Maps.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Maps",
                 "nr": 0
             },
             {
@@ -2955,85 +2779,178 @@
         ]
     },
     {
-        "classname": "treevirtual",
+        "classname": "event",
         "tests": [
             {
-                "name": "TreeVirtual.html",
+                "name": "ElementResize.html",
                 "tags": [
+                    "noPlayground",
                     "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
+                    "qx.bom.Element.addListener"
                 ],
-                "title": "TreeVirtual",
+                "title": "ElementResize",
                 "nr": 0
             },
             {
-                "name": "TreeVirtual_Events.html",
+                "name": "Event.html",
                 "tags": [
+                    "noPlayground",
                     "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.treevirtual.TreeVirtual"
+                    "qx.event.Registration.addListener",
+                    "qx.ui.command.Command",
+                    "qx.ui.command.Command",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.removeListener"
                 ],
-                "title": "TreeVirtual Events",
-                "nr": "Events"
-            },
-            {
-                "name": "TreeVirtual_Filter.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.lang.Function.bind"
-                ],
-                "title": "TreeVirtual Filter",
-                "nr": "Filter"
-            },
-            {
-                "name": "TreeVirtual_Multiple_Columns.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.TextField",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox",
-                    "qx.ui.form.CheckBox"
-                ],
-                "title": "TreeVirtual Multiple_Columns",
+                "title": "Event",
                 "nr": 0
             },
             {
-                "name": "TreeVirtual_Selections.html",
+                "name": "Event_Bubbling.html",
                 "tags": [
+                    "noPlayground",
                     "qx.Class.define",
-                    "qx.Class.include",
-                    "qx.ui.container.Composite",
-                    "qx.ui.treevirtual.TreeVirtual",
-                    "qx.ui.groupbox.GroupBox",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Atom",
-                    "qx.ui.form.SelectBox",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem",
-                    "qx.ui.form.ListItem"
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener"
                 ],
-                "title": "TreeVirtual Selections",
-                "nr": "Selections"
+                "title": "Event Bubbling",
+                "nr": "Bubbling"
+            },
+            {
+                "name": "Event_Bus.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once",
+                    "qx.event.Timer.once"
+                ],
+                "title": "Event Bus",
+                "nr": "Bus"
+            },
+            {
+                "name": "Event_Iframe.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Iframe.create",
+                    "qx.event.Registration.addListener",
+                    "qx.bom.Iframe.getDocument",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.removeListener"
+                ],
+                "title": "Event Iframe",
+                "nr": "Iframe"
+            },
+            {
+                "name": "Focus.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener",
+                    "qx.core.Environment.get",
+                    "qx.core.Environment.get"
+                ],
+                "title": "Focus",
+                "nr": 0
+            },
+            {
+                "name": "KeyEvent.html",
+                "tags": [
+                    "noPlayground",
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.bom.Element.addListener"
+                ],
+                "title": "KeyEvent",
+                "nr": 0
+            },
+            {
+                "name": "KeyEvent_LowLevel.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.bom.Event.addNativeListener",
+                    "qx.lang.Function.bind",
+                    "qx.bom.Event.preventDefault"
+                ],
+                "title": "KeyEvent LowLevel",
+                "nr": "LowLevel"
+            },
+            {
+                "name": "MouseEvent.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.capture",
+                    "qx.bom.Element.releaseCapture",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.removeListener"
+                ],
+                "title": "MouseEvent",
+                "nr": 0
+            },
+            {
+                "name": "MouseEvent_LowLevel.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.lang.Function.bind",
+                    "qx.bom.Event.addNativeListener",
+                    "qx.bom.Event.addNativeListener",
+                    "qx.bom.Event.getTarget",
+                    "qx.bom.Event.addNativeListener",
+                    "qx.bom.Event.removeNativeListener",
+                    "qx.bom.Event.preventDefault",
+                    "qx.bom.Event.getTarget",
+                    "qx.bom.Event.getRelatedTarget"
+                ],
+                "title": "MouseEvent LowLevel",
+                "nr": "LowLevel"
+            },
+            {
+                "name": "PointerEvent.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.capture",
+                    "qx.bom.Element.releaseCapture",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.addListener",
+                    "qx.bom.Element.removeListener"
+                ],
+                "title": "PointerEvent",
+                "nr": 0
             }
         ]
     },
@@ -3087,20 +3004,6 @@
                 "nr": 0
             },
             {
-                "name": "Cursor.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.Grid",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "Cursor",
-                "nr": 0
-            },
-            {
                 "name": "CommandGroupManager.html",
                 "tags": [
                     "qx.Class.define",
@@ -3120,6 +3023,20 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "CommandGroupManager",
+                "nr": 0
+            },
+            {
+                "name": "Cursor.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.Grid",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "Cursor",
                 "nr": 0
             },
             {
@@ -3166,6 +3083,20 @@
                     "qx.ui.core.Widget.contains"
                 ],
                 "title": "DragDrop",
+                "nr": 0
+            },
+            {
+                "name": "FiniteStateMachine.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.core.Environment.get",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Image",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Image"
+                ],
+                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -3225,20 +3156,6 @@
                     "qx.ui.basic.Label"
                 ],
                 "title": "FormInvalids",
-                "nr": 0
-            },
-            {
-                "name": "FiniteStateMachine.html",
-                "tags": [
-                    "qx.Class.define",
-                    "qx.core.Environment.get",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.basic.Image",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Image"
-                ],
-                "title": "FiniteStateMachine",
                 "nr": 0
             },
             {
@@ -3481,6 +3398,89 @@
                 ],
                 "title": "WebFonts",
                 "nr": 0
+            }
+        ]
+    },
+    {
+        "classname": "treevirtual",
+        "tests": [
+            {
+                "name": "TreeVirtual.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Events.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.treevirtual.TreeVirtual"
+                ],
+                "title": "TreeVirtual Events",
+                "nr": "Events"
+            },
+            {
+                "name": "TreeVirtual_Filter.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.lang.Function.bind"
+                ],
+                "title": "TreeVirtual Filter",
+                "nr": "Filter"
+            },
+            {
+                "name": "TreeVirtual_Multiple_Columns.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox",
+                    "qx.ui.form.CheckBox"
+                ],
+                "title": "TreeVirtual Multiple_Columns",
+                "nr": 0
+            },
+            {
+                "name": "TreeVirtual_Selections.html",
+                "tags": [
+                    "qx.Class.define",
+                    "qx.Class.include",
+                    "qx.ui.container.Composite",
+                    "qx.ui.treevirtual.TreeVirtual",
+                    "qx.ui.groupbox.GroupBox",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Atom",
+                    "qx.ui.form.SelectBox",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem",
+                    "qx.ui.form.ListItem"
+                ],
+                "title": "TreeVirtual Selections",
+                "nr": "Selections"
             }
         ]
     },

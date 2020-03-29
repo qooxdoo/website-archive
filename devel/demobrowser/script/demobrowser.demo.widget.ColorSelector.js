@@ -20,7 +20,7 @@ qx.$$g = {}
 
 qx.$$loader = {
   parts : {"boot":[0]},
-  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorSelector.93fb66bf48fb.js"]}},
+  packages : {"0":{"uris":["__out__:demobrowser.demo.widget.ColorSelector.fc05d4d8e710.js"]}},
   urisBefore : [],
   cssBefore : [],
   boot : "boot",
@@ -2525,9 +2525,8 @@ else {throw new Error(this.classname+i);}
 ;return true;}
 }});}
 )();
-(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
+(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
+,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a=", object=",b="function",c="qx.core.Object",d='#',e="qx.core.MObjectId",f='/',g="_applyQxObjectId",h="Cannot register an object with ID '",i="' because it is already owned by another object this=",j="Cannot register an object that has no ID, obj=",k=", obj=",l="_applyQxOwner",m="' because that ID is already in use, this=",n="Cannot discard object by reference because it is not a Qooxdoo object, please remove it using the original ID; object=",o="Cannot discard owned objects based on a path",p="string",q="Please use API methods to change owner, not the property",r="Cannot discard object because it is not owned by this, this=";qx.Mixin.define(e,{properties:{qxOwner:{init:null,check:c,nullable:true,apply:l},qxObjectId:{init:null,check:function(s){return s===null||(typeof s==p&&s.indexOf(f)<0);}
@@ -2768,16 +2767,6 @@ else {Q=[qx.ui.container.Composite,qx.ui.container.Scroll,qx.ui.container.SlideB
 ;for(var i=0,l=Q.length;i<l;i++ ){if(typeof Q[i]!==b&&qx.Class.isSubClassOf(R.constructor,Q[i])){return true;}
 ;}
 ;return false;}
-}});}
-)();
-(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
-,registerEvent:function(f,e,d){}
-,unregisterEvent:function(i,h,g){}
-},defer:function(j){qx.event.Registration.addHandler(j);}
-});}
-)();
-(function(){var a="qx.event.IEventDispatcher";qx.Interface.define(a,{members:{canDispatchEvent:function(c,event,b){this.assertInstance(event,qx.event.type.Event);this.assertString(b);}
-,dispatchEvent:function(e,event,d){this.assertInstance(event,qx.event.type.Event);this.assertString(d);}
 }});}
 )();
 (function(){var a="Cannot stop propagation on a non bubbling event: ",b=".promise not supported because qx.promise==false",c=".getPromises not supported because qx.promise==false",d="qx.debug",e="Invalid argument value 'cancelable'.",f="Cannot prevent default action on a non cancelable event: ",g=".addPromise not supported because qx.promise==false",h="Invalid argument value 'canBubble'.",i="qx.event.type.Event",j="qx.promise";qx.Class.define(i,{extend:qx.core.Object,statics:{CAPTURING_PHASE:1,AT_TARGET:2,BUBBLING_PHASE:3},members:{_promises:null,init:function(l,k){if(qx.core.Environment.get(d)){if(l!==undefined){qx.core.Assert.assertBoolean(l,h);}
@@ -4466,6 +4455,17 @@ else {H.catch=I;}
 ;}
 ;}
 })}});}
+)();
+(function(){var a="qx.event.IEventHandler";qx.Interface.define(a,{statics:{TARGET_DOMNODE:1,TARGET_WINDOW:2,TARGET_OBJECT:4,TARGET_DOCUMENT:8},members:{canHandleEvent:function(c,b){}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+}});}
+)();
+(function(){var a="qx.event.handler.Object";qx.Class.define(a,{extend:qx.core.Object,implement:qx.event.IEventHandler,statics:{PRIORITY:qx.event.Registration.PRIORITY_LAST,SUPPORTED_TYPES:null,TARGET_CHECK:qx.event.IEventHandler.TARGET_OBJECT,IGNORE_CAN_HANDLE:false},members:{canHandleEvent:function(c,b){return qx.Class.supportsEvent(c.constructor,b);}
+,registerEvent:function(f,e,d){}
+,unregisterEvent:function(i,h,g){}
+},defer:function(j){qx.event.Registration.addHandler(j);}
+});}
 )();
 (function(){var a="qx.event.type.Data";qx.Class.define(a,{extend:qx.event.type.Event,members:{__dH:null,__dI:null,init:function(c,d,b){qx.event.type.Event.prototype.init.call(this,false,b);this.__dH=c;this.__dI=d;return this;}
 ,clone:function(e){var f=qx.event.type.Event.prototype.clone.call(this,e);f.__dH=this.__dH;f.__dI=this.__dI;return f;}
@@ -11249,7 +11249,7 @@ else {this.initValue();}
 ;this.addListener(A,function(e){N.fireNonBubblingEvent(A,qx.event.type.Focus);}
 ,this);this.addListener(C,function(e){N.fireNonBubblingEvent(C,qx.event.type.Focus);}
 ,this);}
-,properties:{appearance:{refine:true,init:B},focusable:{refine:true,init:true},singleStep:{check:E,init:1},pageStep:{check:E,init:10},minimum:{check:E,apply:u,init:0,event:J},value:{check:D,nullable:true,apply:o,init:0,event:f},maximum:{check:E,apply:G,init:100,event:I},wrap:{check:b,init:false,apply:d},editable:{check:b,init:true,apply:c},numberFormat:{check:v,apply:K,nullable:true},allowShrinkY:{refine:true,init:false}},members:{__yN:null,__yO:false,__yP:false,_createChildControlImpl:function(T,S){var R;switch(T){case t:R=new qx.ui.form.TextField();R.setFilter(this._getFilterRegExp());R.addState(l);R.setWidth(40);R.setFocusable(false);R.addListener(f,this._onTextChange,this);this._add(R,{column:0,row:0,rowSpan:2});break;case y:R=new qx.ui.form.RepeatButton();R.addState(l);R.setFocusable(false);R.addListener(k,this._countUp,this);this._add(R,{column:1,row:0});break;case q:R=new qx.ui.form.RepeatButton();R.addState(l);R.setFocusable(false);R.addListener(k,this._countDown,this);this._add(R,{column:1,row:1});break;};return R||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,T);}
+,properties:{appearance:{refine:true,init:B},focusable:{refine:true,init:true},singleStep:{check:E,init:1},pageStep:{check:E,init:10},minimum:{check:E,apply:u,init:0,event:J},value:{check:D,nullable:true,apply:o,init:0,event:f},maximum:{check:E,apply:G,init:100,event:I},wrap:{check:b,init:false,apply:d},editable:{check:b,init:true,apply:c},numberFormat:{check:v,apply:K,nullable:true},allowShrinkY:{refine:true,init:false}},members:{__yQ:null,__yR:false,__yS:false,_createChildControlImpl:function(T,S){var R;switch(T){case t:R=new qx.ui.form.TextField();R.setFilter(this._getFilterRegExp());R.addState(l);R.setWidth(40);R.setFocusable(false);R.addListener(f,this._onTextChange,this);this._add(R,{column:0,row:0,rowSpan:2});break;case y:R=new qx.ui.form.RepeatButton();R.addState(l);R.setFocusable(false);R.addListener(k,this._countUp,this);this._add(R,{column:1,row:0});break;case q:R=new qx.ui.form.RepeatButton();R.addState(l);R.setFocusable(false);R.addListener(k,this._countDown,this);this._add(R,{column:1,row:1});break;};return R||qx.ui.core.Widget.prototype._createChildControlImpl.call(this,T);}
 ,_getFilterRegExp:function(){var V,ba,X;if(this.getNumberFormat()!==null){X=this.getNumberFormat().getLocale();}
 else {X=qx.locale.Manager.getInstance().getLocale();}
 ;V=qx.locale.Number.getDecimalSeparator(X);ba=qx.locale.Number.getGroupSeparator(X);var Y=r;var W=r;if(this.getNumberFormat()!==null){Y=this.getNumberFormat().getPrefix()||r;W=this.getNumberFormat().getPostfix()||r;}
@@ -11265,7 +11265,7 @@ else {this._updateButtons();}
 ;}
 ,_applyEnabled:function(bh,bg){qx.ui.core.Widget.prototype._applyEnabled.call(this,bh,bg);this._updateButtons();}
 ,_checkValue:function(bi){return typeof bi===s&&bi>=this.getMinimum()&&bi<=this.getMaximum();}
-,_applyValue:function(bl,bk){var bj=this.getChildControl(t);this._updateButtons();this.__yN=bl;if(bl!==null){if(this.getNumberFormat()){bj.setValue(this.getNumberFormat().format(bl));}
+,_applyValue:function(bl,bk){var bj=this.getChildControl(t);this._updateButtons();this.__yQ=bl;if(bl!==null){if(this.getNumberFormat()){bj.setValue(this.getNumberFormat().format(bl));}
 else {bj.setValue(bl+r);}
 ;}
 else {bj.setValue(r);}
@@ -11275,7 +11275,7 @@ else {bj.setValue(r);}
 ,_applyWrap:function(bq,bp){this._updateButtons();}
 ,_applyNumberFormat:function(bt,bs){var br=this.getChildControl(t);br.setFilter(this._getFilterRegExp());if(bs){bs.removeListener(H,this._onChangeNumberFormat,this);}
 ;var bu=this.getNumberFormat();if(bu!==null){bu.addListener(H,this._onChangeNumberFormat,this);}
-;this._applyValue(this.__yN,undefined);}
+;this._applyValue(this.__yQ,undefined);}
 ,_getContentPaddingTarget:function(){return this.getChildControl(t);}
 ,_updateButtons:function(){var bw=this.getChildControl(y);var bv=this.getChildControl(q);var bx=this.getValue();if(!this.getEnabled()){bw.setEnabled(false);bv.setEnabled(false);}
 else {if(this.getWrap()){bw.setEnabled(true);bv.setEnabled(true);}
@@ -11286,8 +11286,8 @@ else {bv.setEnabled(false);}
 ;}
 ;}
 ;}
-,_onKeyDown:function(e){switch(e.getKeyIdentifier()){case a:this.__yO=true;case p:this.getChildControl(y).press();break;case m:this.__yP=true;case h:this.getChildControl(q).press();break;default:return;};e.stopPropagation();e.preventDefault();}
-,_onKeyUp:function(e){switch(e.getKeyIdentifier()){case a:this.getChildControl(y).release();this.__yO=false;break;case p:this.getChildControl(y).release();break;case m:this.getChildControl(q).release();this.__yP=false;break;case h:this.getChildControl(q).release();break;};}
+,_onKeyDown:function(e){switch(e.getKeyIdentifier()){case a:this.__yR=true;case p:this.getChildControl(y).press();break;case m:this.__yS=true;case h:this.getChildControl(q).press();break;default:return;};e.stopPropagation();e.preventDefault();}
+,_onKeyUp:function(e){switch(e.getKeyIdentifier()){case a:this.getChildControl(y).release();this.__yR=false;break;case p:this.getChildControl(y).release();break;case m:this.getChildControl(q).release();this.__yS=false;break;case h:this.getChildControl(q).release();break;};}
 ,_onRoll:function(e){if(e.getPointerType()!=F){return;}
 ;var by=e.getDelta().y;if(by<0){this._countUp();}
 else if(by>0){this._countDown();}
@@ -11298,20 +11298,20 @@ catch(bB){}
 ;if(bA===undefined){bA=parseFloat(bz.getValue());}
 ;if(!isNaN(bA)){if(bA>this.getMaximum()){bA=this.getMaximum();}
 else if(bA<this.getMinimum()){bA=this.getMinimum();}
-;if(bA===this.__yN){this._applyValue(this.__yN);}
+;if(bA===this.__yQ){this._applyValue(this.__yQ);}
 else {this.setValue(bA);}
 ;}
-else {this._applyValue(this.__yN,undefined);}
+else {this._applyValue(this.__yQ,undefined);}
 ;}
 ,_onChangeLocale:function(bD){if(this.getNumberFormat()!==null){this.setNumberFormat(this.getNumberFormat());var bC=this.getChildControl(t);bC.setFilter(this._getFilterRegExp());bC.setValue(this.getNumberFormat().format(this.getValue()));}
 ;}
 ,_onChangeNumberFormat:function(bF){var bE=this.getChildControl(t);bE.setFilter(this._getFilterRegExp());bE.setValue(this.getNumberFormat().format(this.getValue()));}
-,_countUp:function(){if(this.__yO){var bH=this.getValue()+this.getPageStep();}
+,_countUp:function(){if(this.__yR){var bH=this.getValue()+this.getPageStep();}
 else {var bH=this.getValue()+this.getSingleStep();}
 ;if(this.getWrap()){if(bH>this.getMaximum()){var bG=this.getMaximum()-bH;bH=this.getMinimum()-bG-1;}
 ;}
 ;this.gotoValue(bH);}
-,_countDown:function(){if(this.__yP){var bJ=this.getValue()-this.getPageStep();}
+,_countDown:function(){if(this.__yS){var bJ=this.getValue()-this.getPageStep();}
 else {var bJ=this.getValue()-this.getSingleStep();}
 ;if(this.getWrap()){if(bJ<this.getMinimum()){var bI=this.getMinimum()+bJ;bJ=this.getMaximum()+bI+1;}
 ;}

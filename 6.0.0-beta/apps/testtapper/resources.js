@@ -2406,12 +2406,6 @@ qx.$$packageData['0'] = {
       "woff",
       "qx"
     ],
-    "qx/test/webfonts/yanonekaffeesatz-regular-webfont.eot": [
-      null,
-      null,
-      "eot",
-      "qx"
-    ],
     "qx/test/webfonts/yanonekaffeesatz-regular-webfont.ttf": [
       null,
       null,
@@ -2422,6 +2416,12 @@ qx.$$packageData['0'] = {
       null,
       null,
       "woff",
+      "qx"
+    ],
+    "qx/test/webfonts/yanonekaffeesatz-regular-webfont.eot": [
+      null,
+      null,
+      "eot",
       "qx"
     ],
     "qx/test/xmlhttp/404.php": [
