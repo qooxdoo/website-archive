@@ -52,7 +52,6 @@
       };
 
       var lmap = {
-        "http://www.qooxdoo.org/devel/playground" : "http://www.qooxdoo.org/apps/playground",
         "http://www.qooxdoo.org/downloads" : "https://github.com/qooxdoo/qooxdoo/releases",
         "http://www.qooxdoo.org/docs" : "http://www.qooxdoo.org/current",
         "http://www.qooxdoo.org/current/demos.html" : "http://www.qooxdoo.org/current/demo.html",
@@ -72,6 +71,7 @@
       );
       newHref = newHref.replace(/\/apiviewer$/,'/api/');
       newHref = newHref.replace(/\/apiviewer\//,'/api/');
+      newHref = newHref.replace(/\/devel\/playground/,'/apps/playground');
       newHref = newHref.replace(
           /^(.+)$/,
           function ( match,p1 ){
