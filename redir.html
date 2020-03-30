@@ -7,9 +7,10 @@
     <script>
     function redir () {
       var hash = window.location.hash;
+	  var path = window.location.pathname;
       var m;
       var q = "http://www.qooxdoo.org";
-      if (m = hash.match(/^\/devel\/playground/)){
+      if (m = path.match(/^\/devel\/playground/)){
         return q + "/apps/playground/";
       }
       	  
