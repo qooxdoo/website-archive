@@ -1902,13 +1902,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/address-book-new.png": [
+    "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/application-exit.png": [
+    "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
       "png",

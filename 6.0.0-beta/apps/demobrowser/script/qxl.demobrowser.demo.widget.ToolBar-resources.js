@@ -1902,13 +1902,13 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/address-book-new.png": [
+    "qx/icon/Oxygen/16/actions/application-exit.png": [
       16,
       16,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/16/actions/application-exit.png": [
+    "qx/icon/Oxygen/16/actions/address-book-new.png": [
       16,
       16,
       "png",
@@ -2526,13 +2526,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/address-book-new.png": [
+    "qx/icon/Oxygen/22/actions/application-exit.png": [
       22,
       22,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/22/actions/application-exit.png": [
+    "qx/icon/Oxygen/22/actions/address-book-new.png": [
       22,
       22,
       "png",
@@ -3480,13 +3480,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/list-remove.png": [
+    "qx/icon/Oxygen/32/actions/mail-forward.png": [
       32,
       32,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/32/actions/mail-forward.png": [
+    "qx/icon/Oxygen/32/actions/list-remove.png": [
       32,
       32,
       "png",
@@ -3738,13 +3738,13 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/48/actions/address-book-new.png": [
+    "qx/icon/Oxygen/48/actions/application-exit.png": [
       48,
       48,
       "png",
       "qx"
     ],
-    "qx/icon/Oxygen/48/actions/application-exit.png": [
+    "qx/icon/Oxygen/48/actions/address-book-new.png": [
       48,
       48,
       "png",
@@ -6396,6 +6396,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/48/actions/format-text-italic.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/48/actions/format-text-strikethrough.png": [
       48,
       48,
@@ -6451,12 +6457,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/go-top.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/48/actions/format-text-italic.png": [
       48,
       48,
       "png",

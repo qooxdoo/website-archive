@@ -10,8 +10,8 @@
     "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
-    "qxl.testtapper",
-    "qxl.logpane"
+    "qxl.logpane",
+    "qxl.testtapper"
   ],
   "parts": [
     {
