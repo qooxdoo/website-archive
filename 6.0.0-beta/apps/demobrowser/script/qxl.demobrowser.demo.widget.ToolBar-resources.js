@@ -1638,30 +1638,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/cursors/alias.gif": [
-      19,
-      15,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/copy.gif": [
-      19,
-      15,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/move.gif": [
-      13,
-      9,
-      "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/cursors/nodrop.gif": [
-      20,
-      20,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Simple/colorselector/brightness-field.png": [
       19,
       256,
@@ -1683,6 +1659,30 @@ qx.$$packageData['0'] = {
     "qx/decoration/Simple/colorselector/huesaturation-handle.gif": [
       11,
       11,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/alias.gif": [
+      19,
+      15,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/copy.gif": [
+      19,
+      15,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/move.gif": [
+      13,
+      9,
+      "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/cursors/nodrop.gif": [
+      20,
+      20,
       "gif",
       "qx"
     ],
@@ -6396,12 +6396,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/48/actions/format-text-italic.png": [
-      48,
-      48,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/48/actions/format-text-strikethrough.png": [
       48,
       48,
@@ -6457,6 +6451,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/48/actions/go-top.png": [
+      48,
+      48,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/48/actions/format-text-italic.png": [
       48,
       48,
       "png",
