@@ -1722,48 +1722,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/decoration/Simple/table/ascending-invert.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/ascending.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/boolean-false.png": [
-      11,
-      11,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/boolean-true.png": [
-      11,
-      11,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/descending-invert.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/descending.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/select-column-order.png": [
-      10,
-      9,
-      "png",
-      "qx"
-    ],
     "qx/decoration/Simple/tabview/close.gif": [
       10,
       9,
@@ -1900,6 +1858,48 @@ qx.$$packageData['0'] = {
       8,
       9,
       "gif",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/ascending-invert.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/ascending.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/boolean-false.png": [
+      11,
+      11,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/boolean-true.png": [
+      11,
+      11,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/descending-invert.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/descending.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/select-column-order.png": [
+      10,
+      9,
+      "png",
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/address-book-new.png": [
@@ -2269,12 +2269,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/mail-mark-junk.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/mail-mark-read.png": [
       16,
       16,
       "png",
@@ -3247,6 +3241,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/status/security-medium.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Oxygen/16/actions/mail-mark-read.png": [
       16,
       16,
       "png",
@@ -6444,66 +6444,6 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
-    "qx/icon/Tango/16/emotes/face-angel.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-kiss.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-laugh.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-plain.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-raspberry.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-sad.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-smile-big.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-smile.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/16/emotes/face-surprise.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
     "qx/icon/Tango/16/mimetypes/archive.png": [
       16,
       16,
@@ -6703,6 +6643,66 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/16/status/security-medium.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-angel.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-embarrassed.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-kiss.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-laugh.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-plain.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-raspberry.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-sad.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-smile-big.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-smile.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/16/emotes/face-surprise.png": [
       16,
       16,
       "png",
