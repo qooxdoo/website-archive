@@ -5,13 +5,13 @@
     "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
+    "qxl.demobrowser",
+    "qxl.apiviewer",
     "qxl.widgetbrowser",
     "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
-    "qxl.testtapper",
-    "qxl.demobrowser",
-    "qxl.apiviewer"
+    "qxl.testtapper"
   ],
   "parts": [
     {
@@ -1601,7 +1601,7 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.15"
+        "version": "1.0.1"
       },
       "qx": {
         "name": "qooxdoo framework",
@@ -1688,20 +1688,15 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.3"
+        "version": "1.0.0"
       },
       "qxl.versionlabel": {
         "name": "versionlabel",
         "summary": "version label for qooxdoo demo apps",
         "description": "",
         "license": "MIT",
-        "authors": [
-          {
-            "name": "First Author (uid)",
-            "email": "first.author@some.domain"
-          }
-        ],
-        "version": "1.0.0-beta.3"
+        "version": "1.0.0",
+        "authors": []
       },
       "qxl.datademo": {
         "name": "datademo",
@@ -1719,7 +1714,7 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.2"
+        "version": "1.0.0"
       },
       "qxl.formdemo": {
         "name": "formdemo",
@@ -1737,7 +1732,7 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.1"
+        "version": "1.0.0"
       }
     },
     "true": true,
@@ -1766,7 +1761,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20200326-1746",
+    "qx.compilerVersion": "1.0.0-beta.20200407-1351",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,

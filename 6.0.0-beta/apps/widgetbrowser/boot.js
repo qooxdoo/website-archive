@@ -69,7 +69,7 @@ var envinfo = {
       "homepage": "http://demo.qooxdoo.org/current/widgetbrowser",
       "license": "MIT",
       "authors": [],
-      "version": "1.0.0-beta.0"
+      "version": "1.0.0"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -141,13 +141,8 @@ var envinfo = {
       "summary": "version label for qooxdoo demo apps",
       "description": "",
       "license": "MIT",
-      "authors": [
-        {
-          "name": "First Author (uid)",
-          "email": "first.author@some.domain"
-        }
-      ],
-      "version": "1.0.0-beta.3"
+      "version": "1.0.0",
+      "authors": []
     },
     "qxl.formdemo": {
       "name": "formdemo",
@@ -165,7 +160,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.1"
+      "version": "1.0.0"
     }
   },
   "true": true,
@@ -194,7 +189,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20200326-1746",
+  "qx.compilerVersion": "1.0.0-beta.20200407-1351",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/",
   "qx.headless": false,
@@ -231,6 +226,14 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
+  "qxl.demobrowser": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.apiviewer": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.widgetbrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -248,14 +251,6 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../resource"
   },
   "qxl.testtapper": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.demobrowser": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.apiviewer": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }

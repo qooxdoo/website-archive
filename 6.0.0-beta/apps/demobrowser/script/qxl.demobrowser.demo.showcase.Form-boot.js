@@ -90,7 +90,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.15"
+      "version": "1.0.1"
     },
     "qx": {
       "name": "qooxdoo framework",
@@ -173,7 +173,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.1"
+      "version": "1.0.0"
     }
   },
   "qx.allowUrlVariants": true,

@@ -5,13 +5,13 @@
     "qxl.playground",
     "qxl.logpane",
     "qxl.versionlabel",
+    "qxl.demobrowser",
+    "qxl.apiviewer",
     "qxl.widgetbrowser",
     "qxl.formdemo",
     "qxl.mobileshowcase",
     "qxl.datademo",
-    "qxl.testtapper",
-    "qxl.demobrowser",
-    "qxl.apiviewer"
+    "qxl.testtapper"
   ],
   "parts": [
     {
@@ -1173,7 +1173,7 @@
             "email": "tobi@oetiker.ch"
           }
         ],
-        "version": "0.5.0",
+        "version": "0.5.1",
         "sourceViewUri": "https://github.com/qooxdoo/qxl.testtapper/blob/%{qxGitBranch}/source/class/%{classFilePath}#L%{lineNumber}"
       },
       "qx": {
@@ -1261,7 +1261,7 @@
             "email": "Henner DOT Kollmann AT gmx DOT de"
           }
         ],
-        "version": "1.0.0-beta.3"
+        "version": "1.0.0"
       }
     },
     "true": true,
@@ -1290,7 +1290,7 @@
     "qx.promise": true,
     "qx.promise.warnings": true,
     "qx.promise.longStackTraces": true,
-    "qx.compilerVersion": "1.0.0-beta.20200326-1746",
+    "qx.compilerVersion": "1.0.0-beta.20200407-1351",
     "qx.serve.appspath": "/apps/",
     "qx.serve.docspath": "/",
     "qx.headless": false,

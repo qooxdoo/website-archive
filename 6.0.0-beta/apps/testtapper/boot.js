@@ -78,7 +78,7 @@ var envinfo = {
           "email": "tobi@oetiker.ch"
         }
       ],
-      "version": "0.5.0",
+      "version": "0.5.1",
       "sourceViewUri": "https://github.com/qooxdoo/qxl.testtapper/blob//source/class/#L"
     },
     "qx": {
@@ -166,7 +166,7 @@ var envinfo = {
           "email": "Henner DOT Kollmann AT gmx DOT de"
         }
       ],
-      "version": "1.0.0-beta.3"
+      "version": "1.0.0"
     }
   },
   "true": true,
@@ -195,7 +195,7 @@ var envinfo = {
   "qx.promise": true,
   "qx.promise.warnings": true,
   "qx.promise.longStackTraces": true,
-  "qx.compilerVersion": "1.0.0-beta.20200326-1746",
+  "qx.compilerVersion": "1.0.0-beta.20200407-1351",
   "qx.serve.appspath": "/apps/",
   "qx.serve.docspath": "/",
   "qx.headless": false,
@@ -233,6 +233,14 @@ var libinfo = {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   },
+  "qxl.demobrowser": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
+  "qxl.apiviewer": {
+    "sourceUri": qx.$$appRoot + ".",
+    "resourceUri": qx.$$appRoot + "../resource"
+  },
   "qxl.widgetbrowser": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
@@ -250,14 +258,6 @@ var libinfo = {
     "resourceUri": qx.$$appRoot + "../resource"
   },
   "qxl.testtapper": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.demobrowser": {
-    "sourceUri": qx.$$appRoot + ".",
-    "resourceUri": qx.$$appRoot + "../resource"
-  },
-  "qxl.apiviewer": {
     "sourceUri": qx.$$appRoot + ".",
     "resourceUri": qx.$$appRoot + "../resource"
   }
