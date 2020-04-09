@@ -1031,20 +1031,50 @@
                 "nr": 0
             },
             {
-                "name": "SearchAsYouType.html",
+                "name": "SingleValueBinding.html",
                 "tags": [
                     "noPlayground",
+                    "single value binding",
                     "databinding",
-                    "filter",
                     "qx.Class.define",
-                    "qx.data.Array",
-                    "qx.ui.container.Composite",
+                    "qx.ui.basic.Label",
                     "qx.ui.form.TextField",
-                    "qx.ui.form.List",
-                    "qx.data.controller.List",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Slider",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.Slider",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.data.Array",
+                    "qx.ui.form.Button",
+                    "qx.ui.form.Button",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.form.TextField",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
+                    "qx.ui.basic.Label",
                     "qx.ui.basic.Label"
                 ],
-                "title": "SearchAsYouType",
+                "title": "SingleValueBinding",
+                "nr": 0
+            },
+            {
+                "name": "Service.html",
+                "tags": [
+                    "showcase",
+                    "databinding",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Service",
                 "nr": 0
             },
             {
@@ -1080,6 +1110,23 @@
                 "nr": "Columns"
             },
             {
+                "name": "SearchAsYouType.html",
+                "tags": [
+                    "noPlayground",
+                    "databinding",
+                    "filter",
+                    "qx.Class.define",
+                    "qx.data.Array",
+                    "qx.ui.container.Composite",
+                    "qx.ui.form.TextField",
+                    "qx.ui.form.List",
+                    "qx.data.controller.List",
+                    "qx.ui.basic.Label"
+                ],
+                "title": "SearchAsYouType",
+                "nr": 0
+            },
+            {
                 "name": "SelectBox.html",
                 "tags": [
                     "databinding",
@@ -1098,69 +1145,12 @@
                 ],
                 "title": "SelectBox",
                 "nr": 0
-            },
-            {
-                "name": "Service.html",
-                "tags": [
-                    "showcase",
-                    "databinding",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Service",
-                "nr": 0
-            },
-            {
-                "name": "SingleValueBinding.html",
-                "tags": [
-                    "noPlayground",
-                    "single value binding",
-                    "databinding",
-                    "qx.Class.define",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Slider",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.Slider",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.data.Array",
-                    "qx.ui.form.Button",
-                    "qx.ui.form.Button",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.form.TextField",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label",
-                    "qx.ui.basic.Label"
-                ],
-                "title": "SingleValueBinding",
-                "nr": 0
             }
         ]
     },
     {
         "classname": "event",
         "tests": [
-            {
-                "name": "ElementResize.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.bom.Element.addListener"
-                ],
-                "title": "ElementResize",
-                "nr": 0
-            },
             {
                 "name": "Event.html",
                 "tags": [
@@ -1185,15 +1175,14 @@
                 "nr": 0
             },
             {
-                "name": "Event_Bubbling.html",
+                "name": "ElementResize.html",
                 "tags": [
                     "noPlayground",
                     "qx.Class.define",
-                    "qx.event.Registration.addListener",
-                    "qx.event.Registration.addListener"
+                    "qx.bom.Element.addListener"
                 ],
-                "title": "Event Bubbling",
-                "nr": "Bubbling"
+                "title": "ElementResize",
+                "nr": 0
             },
             {
                 "name": "Event_Bus.html",
@@ -1207,6 +1196,17 @@
                 ],
                 "title": "Event Bus",
                 "nr": "Bus"
+            },
+            {
+                "name": "Event_Bubbling.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.event.Registration.addListener",
+                    "qx.event.Registration.addListener"
+                ],
+                "title": "Event Bubbling",
+                "nr": "Bubbling"
             },
             {
                 "name": "Event_Iframe.html",
@@ -1893,6 +1893,20 @@
                 "nr": "NegativeMargin"
             },
             {
+                "name": "HBox_Reversed.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.layout.HBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "HBox Reversed",
+                "nr": "Reversed"
+            },
+            {
                 "name": "HBox_Percent.html",
                 "tags": [
                     "noPlayground",
@@ -1926,20 +1940,6 @@
                 ],
                 "title": "HBox Percent",
                 "nr": "Percent"
-            },
-            {
-                "name": "HBox_Reversed.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.layout.HBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "HBox Reversed",
-                "nr": "Reversed"
             },
             {
                 "name": "HBox_Separator.html",
@@ -2159,40 +2159,6 @@
                 "nr": "Flex"
             },
             {
-                "name": "VBox_Margin.html",
-                "tags": [
-                    "noPlayground",
-                    "qx.Class.define",
-                    "qx.ui.container.Scroll",
-                    "qx.ui.container.Composite",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.container.Composite",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "VBox Margin",
-                "nr": "Margin"
-            },
-            {
                 "name": "VBox_NegativeMargin.html",
                 "tags": [
                     "noPlayground",
@@ -2237,6 +2203,40 @@
                 ],
                 "title": "VBox NegativeMargin",
                 "nr": "NegativeMargin"
+            },
+            {
+                "name": "VBox_Margin.html",
+                "tags": [
+                    "noPlayground",
+                    "qx.Class.define",
+                    "qx.ui.container.Scroll",
+                    "qx.ui.container.Composite",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.container.Composite",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "VBox Margin",
+                "nr": "Margin"
             },
             {
                 "name": "VBox_Percent.html",
@@ -2541,16 +2541,6 @@
                 "nr": 0
             },
             {
-                "name": "Form.html",
-                "tags": [
-                    "showcase",
-                    "noPlayground",
-                    "qx.Class.define"
-                ],
-                "title": "Form",
-                "nr": 0
-            },
-            {
                 "name": "IconFont.html",
                 "tags": [
                     "showcase",
@@ -2566,6 +2556,16 @@
                     "qx.Theme.include"
                 ],
                 "title": "IconFont",
+                "nr": 0
+            },
+            {
+                "name": "Form.html",
+                "tags": [
+                    "showcase",
+                    "noPlayground",
+                    "qx.Class.define"
+                ],
+                "title": "Form",
                 "nr": 0
             },
             {
@@ -2641,20 +2641,6 @@
                 "nr": 0
             },
             {
-                "name": "Maps.html",
-                "tags": [
-                    "showcase",
-                    "qx.Class.define",
-                    "qx.ui.container.Composite",
-                    "qx.ui.layout.VBox",
-                    "qx.ui.basic.Label",
-                    "qx.ui.core.Widget",
-                    "qx.ui.core.Widget"
-                ],
-                "title": "Maps",
-                "nr": 0
-            },
-            {
                 "name": "Translation.html",
                 "tags": [
                     "showcase",
@@ -2706,6 +2692,20 @@
                     "qx.ui.form.ListItem"
                 ],
                 "title": "Translation",
+                "nr": 0
+            },
+            {
+                "name": "Maps.html",
+                "tags": [
+                    "showcase",
+                    "qx.Class.define",
+                    "qx.ui.container.Composite",
+                    "qx.ui.layout.VBox",
+                    "qx.ui.basic.Label",
+                    "qx.ui.core.Widget",
+                    "qx.ui.core.Widget"
+                ],
+                "title": "Maps",
                 "nr": 0
             }
         ]

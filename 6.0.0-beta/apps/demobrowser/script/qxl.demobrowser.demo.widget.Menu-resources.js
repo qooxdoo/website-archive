@@ -462,12 +462,6 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
-    "qx/decoration/Classic/arrows/previous-invert.gif": [
-      4,
-      7,
-      "gif",
-      "qx"
-    ],
     "qx/decoration/Classic/arrows/previous.gif": [
       4,
       7,
@@ -850,6 +844,12 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
+      "qx"
+    ],
+    "qx/decoration/Classic/arrows/previous-invert.gif": [
+      4,
+      7,
+      "gif",
       "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-hovered-invalid.png": [
@@ -1722,6 +1722,48 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/decoration/Simple/table/ascending-invert.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/ascending.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/boolean-false.png": [
+      11,
+      11,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/boolean-true.png": [
+      11,
+      11,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/descending-invert.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/descending.png": [
+      10,
+      10,
+      "png",
+      "qx"
+    ],
+    "qx/decoration/Simple/table/select-column-order.png": [
+      10,
+      9,
+      "png",
+      "qx"
+    ],
     "qx/decoration/Simple/tabview/close.gif": [
       10,
       9,
@@ -1858,48 +1900,6 @@ qx.$$packageData['0'] = {
       8,
       9,
       "gif",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/ascending-invert.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/ascending.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/boolean-false.png": [
-      11,
-      11,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/boolean-true.png": [
-      11,
-      11,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/descending-invert.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/descending.png": [
-      10,
-      10,
-      "png",
-      "qx"
-    ],
-    "qx/decoration/Simple/table/select-column-order.png": [
-      10,
-      9,
-      "png",
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/address-book-new.png": [
@@ -2274,6 +2274,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Oxygen/16/actions/mail-mark-read.png": [
+      16,
+      16,
+      "png",
+      "qx"
+    ],
     "qx/icon/Oxygen/16/actions/mail-mark-unread.png": [
       16,
       16,
@@ -2479,12 +2485,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Oxygen/16/actions/zoom-out.png": [
-      16,
-      16,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Oxygen/16/actions/mail-mark-read.png": [
       16,
       16,
       "png",
