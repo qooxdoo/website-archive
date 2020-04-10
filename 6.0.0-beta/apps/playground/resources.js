@@ -462,6 +462,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Classic/arrows/previous-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Classic/arrows/previous.gif": [
       4,
       7,
@@ -844,12 +850,6 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/arrows/previous-invert.gif": [
-      4,
-      7,
-      "gif",
       "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-hovered-invalid.png": [
@@ -2484,6 +2484,12 @@ qx.$$packageData['0'] = {
       "png",
       "qx"
     ],
+    "qx/icon/Tango/22/actions/system-run.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
     "qx/icon/Tango/22/actions/system-search.png": [
       22,
       22,
@@ -2509,6 +2515,12 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/view-restore.png": [
+      22,
+      22,
+      "png",
+      "qx"
+    ],
+    "qx/icon/Tango/22/actions/view-sort-ascending.png": [
       22,
       22,
       "png",
@@ -2551,18 +2563,6 @@ qx.$$packageData['0'] = {
       "qx"
     ],
     "qx/icon/Tango/22/actions/zoom-out.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/system-run.png": [
-      22,
-      22,
-      "png",
-      "qx"
-    ],
-    "qx/icon/Tango/22/actions/view-sort-ascending.png": [
       22,
       22,
       "png",

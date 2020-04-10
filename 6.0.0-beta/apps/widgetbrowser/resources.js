@@ -462,6 +462,12 @@ qx.$$packageData['0'] = {
       "gif",
       "qx"
     ],
+    "qx/decoration/Classic/arrows/previous-invert.gif": [
+      4,
+      7,
+      "gif",
+      "qx"
+    ],
     "qx/decoration/Classic/arrows/previous.gif": [
       4,
       7,
@@ -844,12 +850,6 @@ qx.$$packageData['0'] = {
       14,
       14,
       "png",
-      "qx"
-    ],
-    "qx/decoration/Classic/arrows/previous-invert.gif": [
-      4,
-      7,
-      "gif",
       "qx"
     ],
     "qx/decoration/Classic/form/radiobutton-hovered-invalid.png": [
