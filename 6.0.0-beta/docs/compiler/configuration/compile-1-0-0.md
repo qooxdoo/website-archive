@@ -24,6 +24,7 @@ most applications will require one.
 | [environment](#environment)                   | `object`   | Optional     | No       | compile.json Schema (this schema) |
 | [eslintConfig](#eslintconfig)                 | `object`   | Optional     | No       | compile.json Schema (this schema) |
 | [exclude](#exclude)                           | `string[]` | Optional     | No       | compile.json Schema (this schema) |
+| [i18nAsParts](#i18nasparts)                   | `boolean`  | Optional     | No       | compile.json Schema (this schema) |
 | [ignores](#ignores)                           | `string[]` | Optional     | No       | compile.json Schema (this schema) |
 | [include](#include)                           | `string[]` | Optional     | No       | compile.json Schema (this schema) |
 | [jsx](#jsx)                                   | `object`   | Optional     | No       | compile.json Schema (this schema) |
@@ -552,6 +553,20 @@ All items must be of the type: `string`
 ```json
 "qx.util.format.NumberFormat"
 ```
+
+## i18nAsParts
+
+Whether to store locales and translations as individual parts, which are manually loaded on demand by the application
+
+`i18nAsParts`
+
+- is optional
+- type: `boolean`
+- defined in this schema
+
+### i18nAsParts Type
+
+`boolean`
 
 ## ignores
 
