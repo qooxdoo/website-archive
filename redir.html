@@ -7,21 +7,25 @@
     <script>
     function redir () {
       var hash = window.location.hash;
-	  var path = window.location.pathname;
+      var path = window.location.pathname;
       var m;
-      var q = "http://www.qooxdoo.org";
-      if (m = path.match(/^\/devel\/playground/)){
-        return q + "/apps/playground/";
+      var q = "https://archive.qooxdoo.org";
+      if (m = path.match(/^#playground(\/[^\/]*)?/)){
+	var v = m[1];
+	if (!v){
+	    return "https://qooxdoo.org/apps/playground";
+	}
+        return q + v + "/playground/";
       }
       	  
       if (m = hash.match(/^#api(\/[^\/]*)?/)){
-        var v = m[1] || '/current';
+        var v = m[1];
+	if (!v){
+	    return "https://qooxdoo.org/apps/apiviewer";
+	}
         return q + v + "/apiviewer/";
       }
-      if (m = hash.match(/^#playground(\/[^\/]*)?/)){
-        var v = m[1] || '/current';
-        return q + v+"/playground/";
-      }
+      
       if (m = hash.match(/^#bugs(?:\/show_bug.cgi\?id=(\d+))?/)){
          var v = m[1];
          if (v){
