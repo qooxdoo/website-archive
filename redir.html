@@ -25,14 +25,6 @@
 	}
         return q + v + "/apiviewer/";
       }
-      
-      if (m = hash.match(/^#bugs(?:\/show_bug.cgi\?id=(\d+))?/)){
-         var v = m[1];
-         if (v){
-            return "https://github.com/qooxdoo/qooxdoo/issues?utf8=%E2%9C%93&q=is%3Aissue%20in%3Atitle%20%20bz%23" + v;
-         }
-         return "https://github.com/qooxdoo/qooxdoo/issues"; 
-      }
       return "/";
     }   
     window.location.href = redir();
