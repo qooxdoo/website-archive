@@ -57,6 +57,11 @@
         "http://www.qooxdoo.org/current/demos.html" : "http://www.qooxdoo.org/current/demo.html",
         "http://www.qooxdoo.org/demos" : "http://www.qooxdoo.org/current/demo.html",
         "http://www.qooxdoo.org/community" : "https://gitter.im/qooxdoo/qooxdoo"
+        "https://qooxdoo.org/downloads" : "https://github.com/qooxdoo/qooxdoo/releases",
+        "https://qooxdoo.org/docs" : "http://www.qooxdoo.org/current",
+        "https://qooxdoo.org/current/demos.html" : "http://www.qooxdoo.org/current/demo.html",
+        "https://qooxdoo.org/demos" : "http://www.qooxdoo.org/current/demo.html",
+        "https://qooxdoo.org/community" : "https://gitter.im/qooxdoo/qooxdoo"
       };
       
       var href = window.location.href;
@@ -69,9 +74,6 @@
               return match;
           }
       );
-      newHref = newHref.replace(/\/apiviewer$/,'/api/');
-      newHref = newHref.replace(/\/apiviewer\//,'/api/');
-      newHref = newHref.replace(/\/devel\/playground/,'/apps/playground');
       newHref = newHref.replace(
           /^(.+)$/,
           function ( match,p1 ){
